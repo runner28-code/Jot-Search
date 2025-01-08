@@ -12,6 +12,7 @@ import * as ROUTES from '../../routes';
 
 export default function SideNav({ userType }) {
   const { pathname } = useLocation();
+  const hiddenPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage, ROUTES.resetPassword, ROUTES.accountRecovery ];
   if ( hiddenPages.includes(pathname) ) {
     return null;
   }
@@ -26,5 +27,4 @@ export default function SideNav({ userType }) {
   return (
     <aside className='w-125 min-w-125 h-full bg-white border-midGrey border border-solid rounded-2xl ml-10 mt-18 vw-1280:ml-20 vw-1280:mr-24'>
       { renderChoices(userType) }
-    </aside>
   )

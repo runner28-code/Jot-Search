@@ -9,7 +9,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 
 export default function ResultContainer(props) {
-  const {
     results,
     loading,
     type,
@@ -46,6 +45,7 @@ export default function ResultContainer(props) {
       href={`/${pluralizedType}`}
       text={`View All ${capitalizedType}`}
     />;
+  }
 
   return (
     <div className='w-full'>

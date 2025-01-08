@@ -73,7 +73,6 @@ export default function MobileLayout(props) {
             {/* Employement Type */}
             <div className='w-1/2 flex items-center'>
               <img
-                src={clockIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.employmentType}</p>
             </div>
@@ -85,7 +84,6 @@ export default function MobileLayout(props) {
               <img
                 src={salaryIcon}
                 className='h-11 mr-5' />
-// Temp comment
               <p className='text-textBlack text-xs'>{salaryString}</p>
             </div>
           </div>

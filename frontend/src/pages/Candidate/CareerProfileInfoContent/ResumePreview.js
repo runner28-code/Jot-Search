@@ -22,7 +22,6 @@ const ResumePreview = ({ resumeUrl }) => {
   const prevButtonDisabled = page === 1;
   const nextButtonDisabled = page === pdfDocument?.numPages;
 
-// Temp comment
   return (
     <div className='border border-grey300 border-2 rounded-lg'>
       {!pdfDocument && <LoadingSpinner />}

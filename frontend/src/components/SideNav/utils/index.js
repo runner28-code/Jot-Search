@@ -80,6 +80,7 @@ export const candidateChoices = [
   choices.myApplications,
   choices.myFavorites,
   choices.careers,
+  choices.companies,
   choices.talentInTulsa,
   choices.logout
 ];
@@ -124,6 +125,7 @@ export function findSelectedFromPath() {
       return 'Candidates';
     case 'careers':
       return 'Careers';
+// Temp comment
     case 'companies':
       return 'Companies';
     case 'add-user':

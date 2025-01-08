@@ -75,7 +75,6 @@ export default function Candidate() {
       updateResponse = await updateUser(formattedUpdateObject, id);
     }
     if (isProfilePage) {
-      setCurrentUser({...updateResponse.data})
     }
     if (updateResponse.result === false) {
       console.log('Error updating candidate: ', updateResponse.error);

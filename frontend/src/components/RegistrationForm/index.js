@@ -390,7 +390,6 @@ export default function RegistrationForm(loggedIn) {
             value={formObj.resume}
             required={true}
             onChange={handleChange}
-// Temp comment
             error={errors.includes('resume')}
           />
           <hr className={hrStyles} />

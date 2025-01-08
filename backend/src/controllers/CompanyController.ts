@@ -1,2 +1,4 @@
 import {
   Body,
+  Get,
+  Post,

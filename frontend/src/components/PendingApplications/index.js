@@ -49,6 +49,7 @@ export default function PendingApplications () {
               return(<>
                 <CareerCard
                   key={career.id}
+                  index={index}
                   data={career}
                   agoDate={career.createdAt}
                 />

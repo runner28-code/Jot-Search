@@ -433,7 +433,6 @@ export default function RegistrationFormInternal(loggedIn) {
             type='password'
             name='verifyPassword'
             label='Verify Password'
-            required={true}
             value={formObj.verifyPassword}
             onChange={handleChange}
             error={errors.includes('verifyPassword')}

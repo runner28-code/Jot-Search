@@ -34,6 +34,7 @@ export default function TypeaheadDropdown(props) {
   }, [onChange])
 
   /* Close dropdown on any outside clicks */
+  useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
     if (!dropdownOpen) setInputValue('');
   }, [dropdownOpen]);
@@ -58,6 +59,7 @@ export default function TypeaheadDropdown(props) {
   }
 
   return (
+// Temp comment
     <div 
       className='relative w-full'
       ref={menuRef}  
