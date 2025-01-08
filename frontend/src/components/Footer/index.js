@@ -1,0 +1,203 @@
+import { Link } from 'react-router-dom';
+import * as ROUTES from '../../routes';
+import intulsaLogo from '../../assets/images/intulsa-logo-white-small.svg';
+import intulsaTalentLogo from '../../assets/images/intulsa-talent-white-small.svg';
+import intulsaBusinessLogo from '../../assets/images/inTulsa-business-logo-web-white.svg';
+
+import intulsaFooterWhite from '../../assets/images/talent-intulsa-white-small.svg';
+import inTulsaFooter from '../../assets/images/intulsa-talent-network.svg';
+
+// Social Icons
+import linkedin from '../../assets/icons/social/social_linkedin_grey.svg';
+import twitter from '../../assets/icons/social/social_twitter.svg';
+import facebook from '../../assets/icons/social/social_facebook.svg';
+import instagram from '../../assets/icons/social/social_instagram.svg';
+import youtube from '../../assets/icons/social/social_youtube.svg';
+import useWindowDimensions from '../../hooks/windowDimensions';
+
+const socialIconStyle = 'w-18 h-18 ml-8';
+const socialIconStyleMobile = '';
+
+export default function Footer() {
+
+  const { width } = useWindowDimensions();
+
+  if( width <= 990 ) {
+    return (<>
+      <div className='flex py-24 px-[5%] items-center justify-center space-x-10 bg-royalBlue'>
+        <a href={ROUTES.linkedin}>
+          <img
+            src={linkedin}
+            className={socialIconStyleMobile}
+          />
+        </a>
+        <a href={ROUTES.twitter}>
+          <img
+            src={twitter}
+            className={socialIconStyleMobile}
+          />
+        </a>
+        <a href={ROUTES.facebook}>
+          <img
+            src={facebook}
+            className={socialIconStyleMobile}
+          />
+        </a>
+        <a href={ROUTES.instagram}>
+          <img
+            src={instagram}
+            className={socialIconStyleMobile}
+          />
+        </a>
+        <a href={ROUTES.youtube}>
+          <img
+            src={youtube}
+            className={socialIconStyleMobile}
+          />
+        </a>
+      </div>
+      <NavFooterMobile />
+      <div
+        id='footer'
+        className='flex flex-col'
+      >
+        { width >= 990 ? <SocialStyles /> : <SocialStylesMobile />}
+        {/* Copyright / Privacy Policy / TOS */}
+        <div className='flex justify-center items-center bg-legal-bg h-28'>
+          {/* TODO: Change anchor tag links to correct Privacy Policy and TOS links */}
+          <div className='text-grey w-1/2 text-xs text-center'>
+            <span>© 2022 Talent inTulsa initiatives, LLC. All rights reserved | </span>
+            <a
+              href={ROUTES.privacyPolicy}
+              className='underline'
+              target='_blank'
+              rel='noreferrer'
+            >
+                Privacy Policy
+            </a>
+            <span> | </span>
+            <a
+              href={ROUTES.termsOfService}
+              className='underline'
+              target='_blank'
+              rel='noreferrer'
+            >
+                Terms of Service
+            </a>
+          </div>
+        </div>
+      </div>
+    </>)
+  }
+
+  return (<>
+    <NavFooter />
+    <div className='flex py-24 px-[15%] items-center justify-center bg-royalBlue'>
+      <img
+        src={intulsaFooterWhite}
+        className='w-56 h-auto mr-18'
+      />
+      <a href={ROUTES.linkedin}>
+        <img
+          src={linkedin}
+          className={socialIconStyle}
+        />
+      </a>
+      <a href={ROUTES.twitter}>
+        <img
+          src={twitter}
+          className={socialIconStyle}
+        />
+      </a>
+      <a href={ROUTES.facebook}>
+        <img
+          src={facebook}
+          className={socialIconStyle}
+        />
+      </a>
+      <a href={ROUTES.instagram}>
+        <img
+          src={instagram}
+          className={socialIconStyle}
+        />
+      </a>
+      <a href={ROUTES.youtube}>
+        <img
+          src={youtube}
+          className={socialIconStyle}
+        />
+      </a>
+    </div>
+    <div
+      id='footer'
+      className='flex flex-col'
+    >
+      {/* Social Links */}
+      <div className='bg-midGrey flex justify-center items-center'>
+        <div className='flex flex-col vw-900:flex-row justify-center items-center gap-[36px] vw-900:gap-[96px] w-full px-24 py-24'>
+          {/* Dicover the InTulsa Network */}
+          <p className='font-spaceGrotesk text-lightGrey'>DISCOVER THE INTULSA NETWORK</p>
+          {/* Links Container */}
+          <div className='flex flex-col vw-640:flex-row gap-[35px] vw-1024:gap-[96px]'>
+            <a
+              href='https://intulsa.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                src={intulsaLogo}
+                alt='Intulsa'
+                className='w-auto h-auto'
+              />
+            </a>
+            <a
+              href='https://talent.intulsa.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                src={intulsaTalentLogo}
+                alt='Intulsa Talent'
+                className='w-auto h-auto'
+              />
+            </a>
+            <a
+              href='https://business.intulsa.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                src={intulsaBusinessLogo}
+                alt='Intulsa Logo'
+                className='w-auto h-auto'
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      {/* Copyright / Privacy Policy / TOS */}
+      <div className='flex justify-center items-center bg-legal-bg h-28'>
+        {/* TODO: Change anchor tag links to correct Privacy Policy and TOS links */}
+        <div className='text-grey w-1/2 text-xs text-center'>
+          <span>© 2022 Talent inTulsa initiatives, LLC. All rights reserved | </span>
+          <a
+            href={ROUTES.privacyPolicy}
+            className='underline'
+            target='_blank'
+            rel='noreferrer'
+          >
+              Privacy Policy
+          </a>
+          <span> | </span>
+          <a
+            href={ROUTES.termsOfService}
+            className='underline'
+            target='_blank'
+            rel='noreferrer'
+          >
+              Terms of Service
+          </a>
+        </div>
+      </div>
+    </div>
+  </>)

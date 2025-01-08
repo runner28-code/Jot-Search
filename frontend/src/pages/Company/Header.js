@@ -1,0 +1,93 @@
+import PropTypes from 'prop-types';
+
+// import FeaturedTag from '../../components/FeaturedTag';
+import useWindowDimensions from '../../hooks/windowDimensions';
+import FavoriteButton from '../../features/ResultCard/FavoriteButton';
+import { useGetJobs } from '../../hooks/queries/useGetJobs';
+import LoadingSpinner from '../../components/LoadingSpinner';
+
+
+// Icons
+import PlacePin from '../../assets/icons/placepin.svg';
+import LinkedIn from '../../assets/icons/linkedin-circle.svg';
+import Globe from '../../assets/icons/globe.svg';
+import Triangle from '../../assets/icons/triangle.svg';
+import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+import { FaUsers } from 'react-icons/fa';
+import { BsBuilding } from 'react-icons/bs';
+
+function HeaderContent({ companyData }) {
+  const { width } = useWindowDimensions();
+  const headerRowStyles = 'flex mb-8 flex-row justify-between flex-wrap';
+  const headerIconStyles = 'h-12 w-10 mr-3 fill-midGrey';
+  const headerRowTextStyles = 'text-md text-textBlack ';
+  const headerGroupStyles = 'flex items-center basis-1/2 my-4';
+  const headerGroupStylesDesktop = 'flex items-center basis-1/3 my-4';
+  const headerTitle = 'text-h4 font-spaceGrotesk font-semibold basis-2/3';
+  const headerTitleDesktop = 'text-h4 font-spaceGrotesk font-semibold basis-2/3 flex items-center'
+  return (
+    <>
+      { renderDesktopLogo(companyData.logo, companyData.name ) }
+      <div className='grow p-6'>
+        <div className='flex flex-wrap items-center mb-4'>
+          { renderCompanyLogo(companyData.logo, companyData.name) }
+          <FillerIcon />
+          <h4 className={ ( width >= 1280 ) ? headerTitleDesktop : headerTitle }>
+            {companyData.name}
+          </h4>
+        </div>
+        <div>
+          { renderBusinessSector(companyData.businessSectorList, 'text-lg font-spaceGrotesk text-royalBlue mb-8') }
+        </div>
+        <div className={headerRowStyles}>
+          <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
+            <img
+              src={PlacePin}
+              className={headerIconStyles}
+            />
+            <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
+          </div>
+          <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
+            <CareerIcon
+              className={headerIconStyles}
+            />
+            <OpenCareers
+              styles={headerRowTextStyles}
+              companyId={companyData.id}
+            />
+          </div>
+          <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
+            <FaUsers
+              className={headerIconStyles}
+            />
+            <p className={headerRowTextStyles}>{companyData.numEmployees} Employees</p>
+          </div>
+          <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
+            <img
+              src={LinkedIn}
+              className={headerIconStyles}
+            />
+            { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }
+          </div>
+          <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
+            <img
+              src={Globe}
+              className={headerIconStyles}
+            />
+            { renderCompanyWebsite(companyData.companyURL, headerRowTextStyles) }
+          </div>
+          <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
+            <img
+              src={Triangle}
+              className={headerIconStyles}
+            />
+            { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
+          </div>
+        </div>
+
+        <FavoriteButton
+          type={'company'}
+          data={companyData} />
+      </div>
+    </>
+  )
