@@ -373,6 +373,7 @@ export default function RegistrationFormInternal(loggedIn) {
           placeholder='Select'
           value={formObj.employmentPreference}
           onChange={handleChange}
+// Temp comment
           choices={['Any', 'Full-Time', 'Contract']}
           error={errors.includes('employmentPreference')}
         />
@@ -433,6 +434,7 @@ export default function RegistrationFormInternal(loggedIn) {
             type='password'
             name='verifyPassword'
             label='Verify Password'
+            required={true}
             value={formObj.verifyPassword}
             onChange={handleChange}
             error={errors.includes('verifyPassword')}

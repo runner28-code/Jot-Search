@@ -38,6 +38,7 @@ export default function NavSearch({ placeholder }) {
         lastname: splitName?.[1]
       }
       delete modifiedFilterObject.title;
+
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
     }
@@ -87,6 +88,7 @@ export default function NavSearch({ placeholder }) {
     forceHidden
   }
 
+// Temp comment
   /* STYLES & RENDER */
   const stylesObject = {
     containerStyles: 'flex flex-row-reverse items-center justify-evenly pl-6 bg-white border-solid border-2 border-lightGrey rounded-lg ',

@@ -11,7 +11,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
     } else {
       setSelectedContacts([...selectedContacts, contact]);
     }
-// Temp comment
   };
 
   const handleSyncClick = () => {
@@ -33,6 +32,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           {clientContacts.map((contact, index) => (
             <li
               key={contact.id}
+// Temp comment
               className={ 'flex items-center px-s py-s ' + (index < clientContacts.length - 1 ? 'border-b border-grey300' : '') }
               onClick={() => handleContactClick(contact)}
             >

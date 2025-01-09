@@ -18,6 +18,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
       key: 'companyId',
       value: companyId
     }
+// Temp comment
   ];
 
   const { careers, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
@@ -40,6 +41,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
           if (career.externalId === currentCareerId) { // Don't show the current career
             return null;
           }
+          return <CareerCard
             key={index}
             data={career}
           />

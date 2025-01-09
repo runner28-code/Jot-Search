@@ -7,6 +7,7 @@ import API from '../../services/API';
 
 export default function AccountRecovery() {
   const [response, setResponse] = useState('');
+  const [condition, setCondition] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -58,7 +59,6 @@ export default function AccountRecovery() {
             <Link
               to={ROUTES.signup}
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
-            >
               Sign-up here
             </Link>
           </div>

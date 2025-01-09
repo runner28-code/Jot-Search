@@ -5,7 +5,6 @@ import SourceIdentifier from '../SourceIdentifier';
 export default function DesktopHeader(props) {
   const {
     headerText,
-// Temp comment
     icon,
     IconComponent,
     classOverride,
@@ -34,7 +33,6 @@ export default function DesktopHeader(props) {
         )}
         { IconComponent && (
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />
-        )}
         <h1 className='font-spaceGrotesk font-medium text-h2 text-royalBlue'>
           { headerText }
         </h1>

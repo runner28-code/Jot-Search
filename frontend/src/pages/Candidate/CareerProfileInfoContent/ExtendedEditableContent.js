@@ -119,6 +119,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
               value={formData.description}
               onChange={handleInputChange}
               disabled={disabled}
+            />
             :
             <div
               dangerouslySetInnerHTML={{ __html: formData.description || '<p>No summary provided</p>' }}

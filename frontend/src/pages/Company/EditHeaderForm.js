@@ -7,6 +7,7 @@ import { appendPathToBaseUrl } from '../../services/API';
 
 export default function EditHeaderForm({ candidateData, handleCandidateUpdate, setEditMode, iconStyles }) {
   const [formData, setFormData] = useState({
+// Temp comment
     id: candidateData.id,
     avatar: candidateData.avatar,
     companyName: candidateData.companyName,
@@ -130,6 +131,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               </label>
               <input 
                 type='text'
+                onChange={handleInputChange}
                 id='address1'
                 name='address1'
                 value={formData.address1}

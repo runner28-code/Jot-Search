@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { uploadFile } from '../../../services/API';
 
 export default function EditResumeForm({ handleChange }) {
@@ -9,7 +8,6 @@ export default function EditResumeForm({ handleChange }) {
       target: {
         name: e.target.name,
         value: newResumePath,
-// Temp comment
       },
     };
     handleChange( fakeEvent );

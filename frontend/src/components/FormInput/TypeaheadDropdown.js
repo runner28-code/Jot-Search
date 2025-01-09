@@ -59,7 +59,6 @@ export default function TypeaheadDropdown(props) {
   }
 
   return (
-// Temp comment
     <div 
       className='relative w-full'
       ref={menuRef}  

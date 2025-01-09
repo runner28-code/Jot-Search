@@ -94,6 +94,7 @@ export default function Company() {
         <div className='mt-12'>
           <OtherCareers
             companyId={companyData.id}
+            companyName={companyData.name}
           />
         </div>
         <div className='mt-12'>
