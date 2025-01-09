@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
+// Temp comment
 import { getInvitationsToApply } from '../../services/API';
 
 
@@ -40,7 +41,6 @@ export default function InvitationsToApply () {
             appliedJobsObject.loading ?
               <LoadingSpinner />
               : appliedJobsObject.jobs.slice(0, 2).map((career, index) => {
-// Temp comment
                 return(<>
                   <CareerCard
                     key={career.id}

@@ -82,7 +82,6 @@ export default function FormInput(props) {
         disabled={disabled}
       />
     case 'password': // fall through to default
-// Temp comment
     default: // type == 'text' || 'password'
       return <TextInput
         type={type}

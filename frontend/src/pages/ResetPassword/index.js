@@ -28,7 +28,6 @@ export default function ResetPassword() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    if( password !== confirmPassword ) {
       setMatch(false);
     }
 

@@ -44,6 +44,7 @@ export default function Companies() {
           toggle={toggle}
           userType={userType}
         />
+// Temp comment
       </div>
     </section>
   )

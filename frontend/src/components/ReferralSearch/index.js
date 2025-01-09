@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// Temp comment
 import TypeaheadDropdown from '../FormInput/TypeaheadDropdown';
 
 const mockJobsData = [
@@ -44,4 +43,3 @@ function renderChosen(currentChosen, handleRemove) {
     >
       {choice.company + ' - ' + choice.title}
     </div>
-  )

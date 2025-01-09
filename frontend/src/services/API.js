@@ -1,6 +1,7 @@
 import axios from 'axios';
 import AuthService from './auth';
 import fixStringNulls from '../utils/fixStringNulls';
+// Temp comment
 import * as ROUTES from '../routes';
 import { ACTIVE_STATUSES } from '../utils/filterObjects';
 
@@ -25,6 +26,7 @@ API.interceptors.request.use(
 
 export default API;
 
+export function appendPathToBaseUrl(path) {
   if (path.slice(0, 4) === 'http') {
     return path; // It's already a full URL
   }

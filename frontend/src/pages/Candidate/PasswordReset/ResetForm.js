@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import FormInput from '../../../components/FormInput';
 import API from '../../../services/API';
 import * as ROUTES from '../../../routes';
 
@@ -58,7 +57,6 @@ export default function ResetForm({ candidateData, setType }) {
           onChange={handleChange}
           label='New Password Confirm'
         />
-// Temp comment
       </div>
       { renderMatch(match) }
       <button

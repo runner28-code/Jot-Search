@@ -69,7 +69,6 @@ export default function NavSearch({ placeholder }) {
   useEffect( () => {
     setSearchTerm('');
   }, [location]);
-
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
     setForceHidden(true);
@@ -88,7 +87,6 @@ export default function NavSearch({ placeholder }) {
     forceHidden
   }
 
-// Temp comment
   /* STYLES & RENDER */
   const stylesObject = {
     containerStyles: 'flex flex-row-reverse items-center justify-evenly pl-6 bg-white border-solid border-2 border-lightGrey rounded-lg ',

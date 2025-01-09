@@ -35,6 +35,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   }
 
   function handleSearchChange(searchTerm) {
+    handleFilterChange('title', searchTerm);
   }
 
   const containerStyles = ' flex w-11/12 px-8 py-2 flex-col items-center w-380 bg-gradient-to-b from-aquaBlue to-royalBlue rounded-2xl absolute top-[90%]';

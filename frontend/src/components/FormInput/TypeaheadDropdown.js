@@ -75,7 +75,6 @@ export default function TypeaheadDropdown(props) {
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
         disabled={disabled}
-      />
       { renderDropdown(dropdownType, dropdownOpen, filteredChoices, currentChosen, handleChoiceClick) }
     </div>
   )

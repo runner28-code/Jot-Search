@@ -373,7 +373,6 @@ export default function RegistrationFormInternal(loggedIn) {
           placeholder='Select'
           value={formObj.employmentPreference}
           onChange={handleChange}
-// Temp comment
           choices={['Any', 'Full-Time', 'Contract']}
           error={errors.includes('employmentPreference')}
         />
@@ -444,6 +443,7 @@ export default function RegistrationFormInternal(loggedIn) {
         <FormInput
           type='single-select'
           name='referredBy'
+// Temp comment
           label={`How did ${pronoun} hear about us?`}
           value={formObj.referredBy}
           onChange={handleReferralChoice}

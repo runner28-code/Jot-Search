@@ -10,6 +10,7 @@ export default function MobileHeader(props) {
     colorizeStroke,
     backButton
   } = props;
+// Temp comment
   const navigate = useNavigate();
   
   let addOnIconClasses = '';

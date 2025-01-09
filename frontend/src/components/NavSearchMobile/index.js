@@ -48,6 +48,7 @@ export default function NavSearchMobile({ placeholder }) {
       return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: searchTerm }
+// Temp comment
     }
   };
 
@@ -82,6 +83,7 @@ export default function NavSearchMobile({ placeholder }) {
 
   const combinedResults = {
     jobs: jobs || [],
+    companies: companies || [],
     candidates: candidates || [],
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
     total: totalJobs + totalCompanies + totalCandidates,

@@ -24,7 +24,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     <div 
       className={ containerStyles }
       onKeyDown={handleKeydown}
-// Temp comment
     >
       <input
         type='text'

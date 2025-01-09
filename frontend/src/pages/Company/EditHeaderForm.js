@@ -7,7 +7,6 @@ import { appendPathToBaseUrl } from '../../services/API';
 
 export default function EditHeaderForm({ candidateData, handleCandidateUpdate, setEditMode, iconStyles }) {
   const [formData, setFormData] = useState({
-// Temp comment
     id: candidateData.id,
     avatar: candidateData.avatar,
     companyName: candidateData.companyName,
@@ -154,7 +153,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             <div className='flex justify-between mb-4'>
               <label 
                 className='text-h6 text-royalBlue w-full'
-                htmlFor='city'>
               City:
               </label>
               <input 

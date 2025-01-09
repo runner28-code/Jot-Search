@@ -17,7 +17,7 @@ export default function FileInput({type, name, label, placeholder, required, val
       <input 
         className={`hidden ${disabled ? 'disabled cursor-not-allowed' : ''}`}
         type={type}
-        name={name}
+        id={name}
         onChange={(e) => onChange(name, e.target.files[0])}
         ref={inputRef}
         disabled={disabled}
