@@ -76,7 +76,9 @@ export default function ExpertiseLinks() {
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Finance' }}
+// Temp comment
         >
+          <img
             src={financeIcon}
             alt='Finance Icon'
             className={iconStyles}

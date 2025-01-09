@@ -27,7 +27,6 @@ const checkboxFilters = [
   'Actively Looking',
 ];
 
-// Temp comment
 export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
@@ -81,6 +80,7 @@ export default function CandidateFilterLayout(props) {
         >
           Clear All
         </button>
+// Temp comment
       </div>
     </div>
   );

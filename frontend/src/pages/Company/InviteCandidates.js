@@ -78,6 +78,7 @@ export default function InviteCandidates({ company }) {
             console.log({res})
             if(res.result){
               setSelected([])
+// Temp comment
             }
           }}
           disabled={selected.length === 0 || isSendingCandidates}
@@ -85,7 +86,6 @@ export default function InviteCandidates({ company }) {
           <MailIcon className='inline-block mr-2' />
           Send Now
         </button>
-// Temp comment
         <button 
           onClick={() => setSelected([])} 
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>

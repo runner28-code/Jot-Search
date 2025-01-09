@@ -443,7 +443,6 @@ export default function RegistrationFormInternal(loggedIn) {
         <FormInput
           type='single-select'
           name='referredBy'
-// Temp comment
           label={`How did ${pronoun} hear about us?`}
           value={formObj.referredBy}
           onChange={handleReferralChoice}

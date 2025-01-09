@@ -68,6 +68,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     dataToSubmit.roles = formData.roles.join(', ');
     if (formData.expertise) {
       dataToSubmit.categoryId = categories.find(category => category.name === formData.expertise).id;
+// Temp comment
       delete dataToSubmit.expertise;
     }
 

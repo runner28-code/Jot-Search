@@ -67,6 +67,7 @@ export const candidateFilterObject = {
   ],
   'Open to Relocation': [
     'Any',
+// Temp comment
     'Yes',
     'No'
   ],
@@ -89,6 +90,7 @@ export const candidateFilterObject = {
     'No'
   ],
   'Actively Looking': [
+    'Any',
     'Yes',
     'No'
   ],

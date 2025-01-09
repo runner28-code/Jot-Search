@@ -28,7 +28,6 @@ export default function CareerFilterLayout(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
-    clearFilters,
   } = props;
 
   const dropdownFilterObject = {};
@@ -63,7 +62,6 @@ export default function CareerFilterLayout(props) {
         >
           Clear All
         </button>
-// Temp comment
       </div>
     </div>
   );

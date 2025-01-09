@@ -10,3 +10,4 @@ import {
 } from "../utils/BullhornCrud";
 import fs from "fs";
 import { checkForJobFilter, sleep } from "../utils";
+import db from "../utils/db";

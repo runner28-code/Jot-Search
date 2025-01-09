@@ -28,6 +28,7 @@ const parseBullhornCandidateToUser = (data) => {
         phone: data.phone || data.workPhone || data.mobile,
         status: data.status,
         username: data.username,
+        companyName: data.companyName,
         companyURL: data.companyURL,
         revenue: data.salary,
         dateFounded: data.dateAdded,
@@ -35,7 +36,6 @@ const parseBullhornCandidateToUser = (data) => {
         experience: data.experience,
         hourlyRate: data.hourlyRate,
         willRelocate: data.willRelocate,
-        ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,
         disability: data.disability,
     };

@@ -32,7 +32,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
             <CareerIcon />
             <p className='ml-4'>Careers</p>
           </Link>
-// Temp comment
           <Link
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }
             to={ROUTES.companies}

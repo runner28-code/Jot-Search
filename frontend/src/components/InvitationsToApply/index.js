@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
-// Temp comment
 import { getInvitationsToApply } from '../../services/API';
 
 
@@ -14,7 +13,6 @@ export default function InvitationsToApply () {
     loading: true
   });
 
-  useEffect( async () => {
     const appliedJobs = await getInvitationsToApply(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {

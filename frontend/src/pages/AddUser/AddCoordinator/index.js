@@ -114,6 +114,7 @@ export default function AddCoordinator() {
         <label className={labelStyles}>Last Name</label>
         <input
           type='text'
+          className={submissionObject.errors.lastname ? invalidInputStyles : validInputStyles += addInputStyles}
           name='lastname'
           placeholder='Last Name'
           value={formObject.lastname}

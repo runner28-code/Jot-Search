@@ -3,6 +3,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 // TODO: Terms of Service?
 export default function SignUp() {
+
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {
@@ -32,6 +33,7 @@ export default function SignUp() {
     <main className='-mt-28 bg-signup-page-hero bg-contain bg-no-repeat'>
       <div className='pt-40 flex flex-col justify-center items-center'>
         <div className='relative h-24 w-26 mb-15'>
+// Temp comment
           <div className='absolute top-0 right-0 h-9 w-9 bg-magenta' />
           <div className='absolute bottom-0 left-0 h-14 w-14 bg-cyan' />
         </div>

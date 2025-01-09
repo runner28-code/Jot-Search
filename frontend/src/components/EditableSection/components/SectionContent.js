@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import UnlabeledContent from './UnlabeledContent';
 import Property from './Property';
 
@@ -15,5 +14,4 @@ export default function SectionContent({ contentObject }) {
       contentText={contentString} 
       propertyName={propertyName}
     />
-  }
   return renderMultipleProperties(contentObject);

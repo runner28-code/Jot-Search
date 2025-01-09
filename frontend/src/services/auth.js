@@ -54,7 +54,6 @@ class AuthService {
     return email;
   }
 
-// Temp comment
   logout() {
     this.clearStorage();
     window.location.assign('/landing-page');
@@ -103,7 +102,6 @@ class AuthService {
       savedJobs.splice(savedJobs.indexOf(jobID), 1);
     }
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
-  }
 
   getSavedJobIDs() {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];

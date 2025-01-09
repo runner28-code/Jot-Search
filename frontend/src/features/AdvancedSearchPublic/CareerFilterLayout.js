@@ -26,7 +26,6 @@ export default function CareerFilterLayout(props) {
     filterObject,
     handleFilterChange,
     searchTerm,
-// Temp comment
     setSearchTerm,
     handleSearchClick,
     clearFilters,

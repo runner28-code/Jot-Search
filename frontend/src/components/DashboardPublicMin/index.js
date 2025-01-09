@@ -47,7 +47,6 @@ export default function DashboardPublicMin({type}) {
         <div className='flex items-center basis-11/12 justify-center'>
           <Link
             className={type === 'careers' ? buttonStylesLeft + active : buttonStylesLeft }
-// Temp comment
             to={ROUTES.careers}
           >
             <CareerIcon />
@@ -57,6 +56,7 @@ export default function DashboardPublicMin({type}) {
             className={type === 'company' ? buttonStylesRight + active : buttonStylesRight }
             to={ROUTES.companies}
           >
+// Temp comment
             <CompanyIcon />
             <p className='ml-4'>Companies</p>
           </Link>
