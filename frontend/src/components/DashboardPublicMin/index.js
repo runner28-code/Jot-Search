@@ -56,7 +56,6 @@ export default function DashboardPublicMin({type}) {
             className={type === 'company' ? buttonStylesRight + active : buttonStylesRight }
             to={ROUTES.companies}
           >
-// Temp comment
             <CompanyIcon />
             <p className='ml-4'>Companies</p>
           </Link>

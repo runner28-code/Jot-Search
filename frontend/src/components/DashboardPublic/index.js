@@ -43,8 +43,6 @@ export default function DashboardPublic({togglePassState}) {
             to={ROUTES.companies}
           >
             <CompanyIcon />
-            <p className='ml-4'>Companies</p>
-// Temp comment
           </Link>
         </div>
         <div className='ml-12'>

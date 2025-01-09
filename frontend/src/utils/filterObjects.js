@@ -67,7 +67,6 @@ export const candidateFilterObject = {
   ],
   'Open to Relocation': [
     'Any',
-// Temp comment
     'Yes',
     'No'
   ],
@@ -76,6 +75,7 @@ export const candidateFilterObject = {
     'Remote',
     'On Site',
     'Hybrid'
+// Temp comment
   ],
   'Employment Type': [
     'Any',

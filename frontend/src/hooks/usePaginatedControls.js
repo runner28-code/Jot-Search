@@ -116,7 +116,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
         endCount={endCount} 
         total={total}             
       />
-      }
     </nav>
   )
 

@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
+// Temp comment
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 import searchWhite from '../../assets/images/search-white.webp';
@@ -98,6 +99,7 @@ export default function NavSearch({ placeholder }) {
   return (
     <div className='relative'>
       <div ref={menuRef} >
+        <NavSearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }

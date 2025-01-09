@@ -18,7 +18,6 @@ export default function Login() {
     });
 
     if ( res.data.result ) {
-      AuthService.login(res.data.token);
     } else {
       setError(res.data.error);
     }
@@ -66,6 +65,7 @@ export default function Login() {
           <FormInput
             type='password'
             name='password'
+            label='Password'
           />
           <div className='flex justify-between items-center vw-640:items-end mb-22 gap-[10px]'>
             <button

@@ -6,3 +6,8 @@ import { COORDINATOR, ROLES } from "../utils/constant";
 import { genUUID, isExistByCondition, justifyData } from "../utils";
 import config from '../config';
 
+import db from "../utils/db";
+
+import { User as dbUser, History as dbHistory } from "prisma/prisma-client";
+import {
+  checkPassword,

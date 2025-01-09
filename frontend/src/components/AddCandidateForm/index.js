@@ -148,6 +148,7 @@ export default function RegistrationForm() {
     <form 
       className={containerStyles} 
       onSubmit={handleSubmit}>
+      { renderHeader(addType) }
       <div className={midpointFlex}>
         <div className={flexWidth}>
           <FormInput
@@ -234,6 +235,7 @@ export default function RegistrationForm() {
             onChange={handleChange}
             choices={['Any', 'Remote', 'On Site', 'Hybrid']}
             error={errors.includes('workspace')}
+// Temp comment
           />
           <FormInput
             type='text'

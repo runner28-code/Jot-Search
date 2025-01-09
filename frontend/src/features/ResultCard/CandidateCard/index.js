@@ -39,7 +39,6 @@ export default function CandidateCard({ data, disableLink }) {
               className='rounded-full'
             />
           </div>
-// Temp comment
           <NewLeadLabel status={data.status} />
         </div>
         {/* Main Content */}
@@ -84,7 +83,6 @@ export default function CandidateCard({ data, disableLink }) {
             label='Relocation'
             value={data.willRelocate}
           />
-          {/* Skill List */}
           <div className='flex flex-wrap gap-m mt-[18px]'>
             { renderSkills(data.skills) }
           </div>

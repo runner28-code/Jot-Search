@@ -75,7 +75,6 @@ export const choices = {
 
 // Map choices to appropriate icons
 export const candidateChoices = [
-  choices.dashboard,
   choices.profile,
   choices.myApplications,
   choices.myFavorites,
