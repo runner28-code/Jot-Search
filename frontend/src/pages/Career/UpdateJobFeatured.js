@@ -9,7 +9,6 @@ export const UpdateJobFeatured = ({ job }) => {
 
 
   const enabledButtonStyle = 'bg-green text-white'
-  const disabledButtonStyle = 'bg-grey300'
 
   const buttonStyles = toggled ? enabledButtonStyle : disabledButtonStyle
 

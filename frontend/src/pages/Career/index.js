@@ -10,7 +10,6 @@ import AuthService from '../../services/auth';
 import urlDecode from '../../utils/urlDecode';
 import { buildCareerAddress, calculatePostingAge, buildSalaryString } from '../../utils/formatFunctions';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import Flag from '../../assets/icons/flag.svg';
 import PageHeader from '../../components/PageHeader';
@@ -29,7 +28,6 @@ export default function CareerPage() {
   const [careerData, setCareerData] = useState({});
 
   useEffect(async () => {
-    const career = await getJobById(id);
     // Decode url encoded properties on career
     career.title = urlDecode(career.title);
     career.description = urlDecode(career.description);

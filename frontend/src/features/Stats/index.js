@@ -40,7 +40,6 @@ export default function Stats({ userType }) {
     if (userType === 'company') {
       const result = await getCompanyQuickStats(duration);
       setStats({
-        'Active Careers Posts': { ...result.activeCareersPosts },
         'Recommended Candidates': { ...result.recommendedCandidates },
         'Introductions Requests': { ...result.introductionsRequests },
         'Company Favorites': { ...result.companyFavorites },
@@ -74,7 +73,6 @@ export default function Stats({ userType }) {
             handleFilterChange={handleFilterChange}
           />
         </div>
-// Temp comment
       </div>
       <div className='flex flex-wrap'>
         {Object.entries(stats).map(([stat, value]) => {

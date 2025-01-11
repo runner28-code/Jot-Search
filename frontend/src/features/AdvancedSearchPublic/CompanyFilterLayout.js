@@ -17,12 +17,12 @@ export default function CompanyFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
+// Temp comment
           placeholder='Search Companies'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
         <button
           className='text-white text-sm whitespace-nowrap'
-// Temp comment
           onClick={clearFilters}
         >
           Clear All

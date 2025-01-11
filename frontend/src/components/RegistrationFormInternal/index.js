@@ -243,6 +243,7 @@ export default function RegistrationFormInternal(loggedIn) {
             value={formObj.phone}
             onChange={handleChange}
             error={errors.includes('phone')}
+          />
         </div>
         <div className={twocol}>
           <FormInput
@@ -405,7 +406,6 @@ export default function RegistrationFormInternal(loggedIn) {
           label='LinkedIn Profile link with https:// prefix'
           error={errors.includes('linkedin')}
         />
-        {/* File input for resume */}
         <FormInput
           type='file'
           name='resume'

@@ -8,5 +8,4 @@ export type Company = {
     annualRevenue?: string,
     billingAddress_address1?: string,
     billingAddress_address2?: string,
-    billingAddress_city?: string,
     billingAddress_state?: string,

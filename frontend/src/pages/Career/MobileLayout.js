@@ -116,7 +116,6 @@ export default function MobileLayout(props) {
             datasource={careerData.datasource}
             careerId={careerData.id}
             applicationUrl={careerData.application_path || careerData.url}
-          />
         }
         <button
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'

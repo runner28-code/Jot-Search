@@ -19,6 +19,7 @@ import {
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
+// Temp comment
 import { useLocation } from 'react-router-dom';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -31,7 +32,6 @@ const availableTabChoicesByUserType = {
   candidate: ['jobs', 'companies'],
   guest: ['jobs', 'companies'],
 }
-// Temp comment
 
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
