@@ -20,3 +20,8 @@ export class BullhornService {
   public static client: BullhornService | null = null;
   private auth_code = null;
   private access_token = null;
+  private refresh_token = null;
+  private restUrl = null;
+  private corpToken = null;
+  private oauth_url = "https://auth.bullhornstaffing.com/oauth";
+  private api_base_url = "https://rest.bullhornstaffing.com/rest-services";

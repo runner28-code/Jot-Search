@@ -38,6 +38,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               <input
                 type='checkbox'
                 id={contact.id}
+// Temp comment
                 name={contact.id}
                 checked={selectedContacts.includes(contact)}
                 className='w-12 h-12 mr-12'

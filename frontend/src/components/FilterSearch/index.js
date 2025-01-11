@@ -6,9 +6,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   function handleChange(e) {
     setSearchTerm(e.target.value);
   }
-
   function handleKeydown(e) {
-// Temp comment
     if (e.keyCode === 13) {
       handleSearchClick();
     }

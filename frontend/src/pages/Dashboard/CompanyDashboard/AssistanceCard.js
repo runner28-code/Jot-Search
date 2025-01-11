@@ -19,7 +19,6 @@ export default function AssistanceCard() {
           <li className='list-disc ml-8'>Update company profile</li>
           <li className='list-disc ml-8'>Create a new active career post</li>
           <li className='list-disc ml-8'>etc...</li>
-          <hr className='max-w-300 mt-6' />
         </ul>
       </div>
       {/* Button */}
@@ -28,7 +27,6 @@ export default function AssistanceCard() {
         className='mt-10 mb-6 inline-block border-2 border-royalBlue px-xl py-[15.5px] leading-[1.37]  text-royalBlue text-ml rounded-lg'
         target='_blank'
         rel='noopener noreferrer'
-// Temp comment
       >
         Make a request
       </a>

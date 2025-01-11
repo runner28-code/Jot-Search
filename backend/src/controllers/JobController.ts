@@ -8,3 +8,5 @@ import {
   Put,
   Delete,
   QueryParam,
+  JsonController,
+  Authorized,

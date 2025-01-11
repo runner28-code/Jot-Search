@@ -9,3 +9,6 @@ const job_filter_exclude_keys = [
   "admissions",
   "admitting",
   "adult",
+  "advocacy",
+  "advocate",
+  "aircraft",

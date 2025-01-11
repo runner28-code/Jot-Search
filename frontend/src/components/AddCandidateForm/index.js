@@ -32,7 +32,6 @@ const defaultState = {
   password: '',
   verifyPassword: '',
 };
-export default function RegistrationForm() {
   const {categories} = useContext(CategoryContext);
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
@@ -235,7 +234,6 @@ export default function RegistrationForm() {
             onChange={handleChange}
             choices={['Any', 'Remote', 'On Site', 'Hybrid']}
             error={errors.includes('workspace')}
-// Temp comment
           />
           <FormInput
             type='text'

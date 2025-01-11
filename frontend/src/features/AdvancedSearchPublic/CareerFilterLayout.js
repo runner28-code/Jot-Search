@@ -38,6 +38,7 @@ export default function CareerFilterLayout(props) {
     });
   } else {
     dropdownFilters.forEach(filter => {
+// Temp comment
       dropdownFilterObject[filter] = filterObject[filter];
     });
   }
@@ -54,7 +55,6 @@ export default function CareerFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
-// Temp comment
           placeholder='Search Careers'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />

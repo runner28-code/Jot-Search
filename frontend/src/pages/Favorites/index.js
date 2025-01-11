@@ -1,4 +1,3 @@
-// Temp comment
 import { useState } from 'react'
 
 import AuthService from '../../services/auth';
@@ -15,7 +14,6 @@ function renderTabs(role, activeTab, setActiveTab) {
     return null;
   }
   return (
-    <TabContainer
       activeTab={activeTab}
       setActiveTab={setActiveTab}
       tabChoices={['careers', 'companies']}

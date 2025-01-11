@@ -21,5 +21,4 @@ export default function CompanyResults({ companies }) {
       })}
       <hr className='w-full border-black50% mt-6 mb-2' />
     </>
-// Temp comment
   )

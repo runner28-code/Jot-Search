@@ -25,7 +25,6 @@ export const stateCodeMap = {
   Connecticut: 'CT',
   Delaware: 'DE',
   Florida: 'FL',
-// Temp comment
   Georgia: 'GA',
   Hawaii: 'HI',
   Idaho: 'ID',
@@ -65,6 +64,7 @@ export const stateCodeMap = {
   Virginia: 'VA',
   Washington: 'WA',
   'West Virginia': 'WV',
+// Temp comment
   Wisconsin: 'WI',
   Wyoming: 'WY',
 };

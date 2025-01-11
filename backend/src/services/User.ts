@@ -10,4 +10,9 @@ import db from "../utils/db";
 
 import { User as dbUser, History as dbHistory } from "prisma/prisma-client";
 import {
+  encryptPassword,
   checkPassword,
+  clearPassword,
+} from "../utils/password";
+import {
+  sendUpdateUserNotification,

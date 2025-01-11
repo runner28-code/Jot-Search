@@ -7,3 +7,6 @@ import {
   JsonController,
   Authorized,
   CurrentUser,
+  Patch,
+} from "routing-controllers";
+import { saveCandidate, getSavedCandidates } from "../services/Candidate";

@@ -43,12 +43,10 @@ export default function PendingApplications () {
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
           appliedJobsObject.loading ?
-            <LoadingSpinner />
             :
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
               return(<>
                 <CareerCard
-// Temp comment
                   key={career.id}
                   index={index}
                   data={career}

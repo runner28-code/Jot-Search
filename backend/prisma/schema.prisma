@@ -15,3 +15,7 @@ model Application {
 
   jobId String
   job   Job    @relation("jobApplications", fields: [jobId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

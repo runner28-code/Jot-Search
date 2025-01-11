@@ -66,7 +66,6 @@ function HeaderContent({ companyData }) {
             <img
               src={LinkedIn}
               className={headerIconStyles}
-            />
             { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
@@ -77,6 +76,7 @@ function HeaderContent({ companyData }) {
             { renderCompanyWebsite(companyData.companyURL, headerRowTextStyles) }
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
+            <img
               src={Triangle}
               className={headerIconStyles}
             />

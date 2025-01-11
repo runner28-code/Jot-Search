@@ -4,6 +4,7 @@ import TimeframeFilter from '../../components/TimeframeFilter';
 import { BsArrowUpSquare, BsArrowDownSquare } from 'react-icons/bs';
 import { getCompanyQuickStats, getCoordinatorQuickStats } from '../../services/API';
 
+const statFilterChoices = [
   'Today',
   'Last 7 Days',
   'Last 14 Days',
@@ -39,6 +40,7 @@ export default function Stats({ userType }) {
     if (userType === 'company') {
       const result = await getCompanyQuickStats(duration);
       setStats({
+// Temp comment
         'Active Careers Posts': { ...result.activeCareersPosts },
         'Recommended Candidates': { ...result.recommendedCandidates },
         'Introductions Requests': { ...result.introductionsRequests },

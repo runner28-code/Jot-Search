@@ -56,7 +56,6 @@ export default function InviteCandidates({ company }) {
 
       {isSendingCandidates && <div className="text-center">Sending Invitations...</div>}
       {successfullySentCandidates && <div className="text-center">Invitations Sent!</div>}
-// Temp comment
 
       <SelectedValues />
 

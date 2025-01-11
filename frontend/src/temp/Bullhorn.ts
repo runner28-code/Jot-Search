@@ -5,3 +5,5 @@ export type Company = {
     address_address2?: string,
     address_city?: string,
     address_state?: string,
+    address_zip?: string,
+    annualRevenue?: string,

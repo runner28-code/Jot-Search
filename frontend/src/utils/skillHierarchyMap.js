@@ -7,3 +7,5 @@ export const expertises = [
   'Sales & Biz Dev',
 ];
 
+export const roles = {
+  'Finance': [

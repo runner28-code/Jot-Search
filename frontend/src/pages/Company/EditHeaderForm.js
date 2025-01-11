@@ -40,6 +40,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     <>
       <div className='flex flex-col mr-12'>
         {/* Avatar */}
+        <img
           className='w-100 h-100'
           src={avatarUrl}
           alt='Candidate Avatar' />
@@ -118,7 +119,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           <div className='flex items-center'>
             <MdLocationOn
               className={iconStyles + 'fill-royalBlue'} />
-            <h2 className='text-h6 text-royalBlue'>Location</h2>
           </div>
           <div className='flex flex-col'>
             <div className='flex justify-between mb-4'>

@@ -18,6 +18,7 @@ export default function Login() {
     });
 
     if ( res.data.result ) {
+      AuthService.login(res.data.token);
     } else {
       setError(res.data.error);
     }

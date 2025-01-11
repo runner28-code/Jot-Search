@@ -195,7 +195,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             label='Company Name'
             disabled={disabled}
           />
-
           <FormInput
             type='text'
             name='occupation'
