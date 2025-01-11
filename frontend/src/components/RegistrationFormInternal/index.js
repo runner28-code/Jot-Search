@@ -402,6 +402,7 @@ export default function RegistrationFormInternal(loggedIn) {
           type='text'
           name='linkedin'
           value={formObj.linkedin}
+// Temp comment
           onChange={handleChange}
           label='LinkedIn Profile link with https:// prefix'
           error={errors.includes('linkedin')}

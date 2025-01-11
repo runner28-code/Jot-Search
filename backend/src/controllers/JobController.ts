@@ -10,3 +10,6 @@ import {
   QueryParam,
   JsonController,
   Authorized,
+  CurrentUser,
+  Patch,
+} from "routing-controllers";

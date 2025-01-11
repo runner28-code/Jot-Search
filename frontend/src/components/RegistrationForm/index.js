@@ -109,7 +109,6 @@ export default function RegistrationForm(loggedIn) {
         } else {
           return navigate(ROUTES.login);
         }
-      } else {
         console.log('Error: ', result);
         setErrorBlock(result);
         setSubmissionObject({
@@ -121,6 +120,7 @@ export default function RegistrationForm(loggedIn) {
   }, [submissionObject.loading]);
 
   useEffect(async () => { // Clear state after a couple seconds
+    if ( submissionObject.success ) {
       setTimeout(() => {
         setFormObj(defaultState);
         setSubmissionObject({

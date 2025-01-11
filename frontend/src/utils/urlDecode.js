@@ -1,3 +1,4 @@
+export default function urlDecode(decodeString) {
   if ( !decodeString ) {
     return '';
   }

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { FaRegUserCircle as CandidateIcon } from 'react-icons/fa';
-import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
 
 export default function CandidateResults({ candidates }) {
@@ -19,6 +18,7 @@ export default function CandidateResults({ candidates }) {
             candidate={candidate} 
             key={candidate.id} />
         )
+      })}
       <hr className='w-full border-black50% mt-6 mb-2' />
     </>
   )

@@ -4,3 +4,5 @@ import {
   Body,
   Get,
   Post,
+  Put,
+  Delete,

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+// Temp comment
 // import FeaturedTag from '../../components/FeaturedTag';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
@@ -21,7 +22,6 @@ function HeaderContent({ companyData }) {
   return (
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
-// Temp comment
       <div className='grow p-2'>
         <div className='flex flex-wrap items-center mb-4'>
           <div className='basis-2/6'>

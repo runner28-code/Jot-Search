@@ -23,5 +23,6 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
         <span className={stylesObject.spanStyles}>{choice}</span>
       </Link>
       <hr className={stylesObject.hrStyles} />
+// Temp comment
     </div>
   )

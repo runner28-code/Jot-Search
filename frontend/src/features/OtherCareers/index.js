@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { useState } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CareerCard from '../ResultCard/CareerCard';

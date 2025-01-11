@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-// Temp comment
 import PhoneInput from 'react-phone-number-input/input';
 
 export default function TextInput({type, name, placeholder, label, value, required, onChange, baseStyles, disabled}) {

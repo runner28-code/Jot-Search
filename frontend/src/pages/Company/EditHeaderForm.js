@@ -119,6 +119,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           <div className='flex items-center'>
             <MdLocationOn
               className={iconStyles + 'fill-royalBlue'} />
+            <h2 className='text-h6 text-royalBlue'>Location</h2>
           </div>
           <div className='flex flex-col'>
             <div className='flex justify-between mb-4'>

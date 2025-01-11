@@ -10,7 +10,6 @@ import {
   Logout,
   Profile,
 } from './pages';
-// Temp comment
 import AuthService from './services/auth';
 import * as ROUTES from './routes';
 
@@ -49,7 +48,6 @@ export default function Auth() {
           path={ROUTES.candidates}
           element={<Candidates />} />
         <Route
-          path={ROUTES.addUser}
           element={<AddUser />} />
       </Routes>
     </div>

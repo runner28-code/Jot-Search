@@ -16,3 +16,7 @@ import {
 } from "../utils/password";
 import {
   sendUpdateUserNotification,
+  sendNewUserNotification,
+  sendResetPassword,
+} from "./EmailService";
+import { CreateJwtToken } from "../utils/jwtUtils";

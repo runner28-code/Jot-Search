@@ -12,7 +12,6 @@ import DashboardCandidate from '../../components/DashboardCandidate';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 import AuthService from '../../services/auth';
-
 export default function Careers() {
   let userType = AuthService.getUserRole();
   const loggedIn = AuthService.loggedIn();
@@ -25,7 +24,6 @@ export default function Careers() {
     setToggle(toggle => !toggle);
   }
   return (
-// Temp comment
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
         loggedIn={loggedIn}

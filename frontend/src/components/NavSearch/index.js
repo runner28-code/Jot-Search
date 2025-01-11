@@ -99,7 +99,6 @@ export default function NavSearch({ placeholder }) {
     <div className='relative'>
       <div ref={menuRef} >
         <NavSearchBar
-          searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }
           alternateStylesObject={ stylesObject } 

@@ -46,7 +46,6 @@ export default function DesktopHeader(props) {
           className='text-md text-royalBlue underline mt-6'
           onClick={() => navigate(-1)}
         >
-          {'< Go Back'}
         </button>
       )}
     </div>
