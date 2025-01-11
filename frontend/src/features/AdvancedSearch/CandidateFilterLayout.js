@@ -3,7 +3,6 @@ import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 import { skills } from '../../utils/skillHierarchyMap';
-import FormInput from '../../components/FormInput';
 
 const dropdownFiltersCoord = [
   'Category',
@@ -88,6 +87,7 @@ export default function CandidateFilterLayout(props) {
         />
       </div>
       <div className='flex flex-wrap gap-xxl-4'>
+        {renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange)}
       </div>
       <div className='flex justify-between items-center gap-[65px]'>
         <FilterSearch

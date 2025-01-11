@@ -55,7 +55,6 @@ function HeaderContent({ companyData }) {
               styles={headerRowTextStyles}
               companyId={companyData.id}
             />
-          </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <FaUsers
               className={headerIconStyles}

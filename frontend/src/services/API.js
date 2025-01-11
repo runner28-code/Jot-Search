@@ -8,13 +8,13 @@ const API = axios.create({
   baseURL: 'https://intulsadev.com:5000',
   // baseURL: 'http://localhost:3001',
 });
-
 // Adds Bearer token to every request when it exists (i.e. user is logged in)
 API.interceptors.request.use(
   function (config) {
     const token = localStorage.getItem('id_token');
     if (token) {
       config.headers['Authorization'] = 'Bearer ' + token;
+    }
     return config;
   },
   function (error) {

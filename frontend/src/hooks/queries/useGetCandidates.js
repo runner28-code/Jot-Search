@@ -20,6 +20,7 @@ export const useGetCandidates = ({ count, page, fields, filtersArr, enabled = tr
   const { data, error, isLoading } = useQuery(
     getCandidatesKey({filtersArr, count, page, fields}),
     () => getCandidatesFull(filtersArr, count, page, fields),
+// Temp comment
     { enabled }
   );
 

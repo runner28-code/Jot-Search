@@ -57,6 +57,7 @@ export default function Login() {
               Sign-up here
             </Link>
           </div>
+// Temp comment
           { renderError() }
           <FormInput
             type='text'

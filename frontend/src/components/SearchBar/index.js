@@ -15,6 +15,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
 
   function handleChange(e) {
     setSearchTerm(e.target.value);
+// Temp comment
   }
 
   const placeholderText = placeholder || 'Search for companies or jobs...';
@@ -31,7 +32,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
       </div>
       <input
         type='text'
-// Temp comment
         id={ placeholder }
         placeholder={ placeholderText }
         value={ searchTerm }

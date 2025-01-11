@@ -8,6 +8,7 @@ const mockJobsData = [
     company: 'Hobby Lobby',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
     salaryRange: '$80k-$90k',
+// Temp comment
     location: 'Remote',
     listingAge: '1 month',
     specialty: 'Technology'
@@ -25,7 +26,6 @@ const mockJobsData = [
   {
     id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',
     title: 'Outside Sales Executive',
-// Temp comment
     company: 'Paycom',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
     salaryRange: '$80k-$90k',

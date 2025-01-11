@@ -109,6 +109,7 @@ export default function RegistrationForm(loggedIn) {
         } else {
           return navigate(ROUTES.login);
         }
+      } else {
         console.log('Error: ', result);
         setErrorBlock(result);
         setSubmissionObject({

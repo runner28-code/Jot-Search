@@ -85,6 +85,7 @@ export default function RegistrationForm() {
         setErrorBlock(result);
         setSubmissionObject({
           loading: false,
+// Temp comment
           success: false,
         });
       }

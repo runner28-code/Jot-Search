@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+// Temp comment
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';

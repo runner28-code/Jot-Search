@@ -32,7 +32,6 @@ export default function CandidateCard({ data, disableLink }) {
         disableLink={disableLink}
       >
         {/* Card Image and New Lead Label */}
-// Temp comment
         <div className='flex flex-col items-center gap-m mr-20'>
           <div className='h-48 w-48 flex justify-center items-center'>
             <img

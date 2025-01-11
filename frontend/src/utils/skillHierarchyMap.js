@@ -1,7 +1,6 @@
 export const expertises = [
   'Finance',
   'Marketing',
-// Temp comment
   'Operations',
   'Other',
   'Software & Engineering',

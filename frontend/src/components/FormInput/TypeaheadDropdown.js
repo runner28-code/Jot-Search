@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import ChoiceTag from '../ChoiceTag';
@@ -22,6 +21,7 @@ export default function TypeaheadDropdown(props) {
   const [inputValue, setInputValue] = useState('');
   const [filteredChoices, setFilteredChoices] = useState(choices);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
   const handleChoiceClick = useCallback((choice) => {

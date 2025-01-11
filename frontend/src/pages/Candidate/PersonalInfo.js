@@ -104,6 +104,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
           { !editMode && renderEditIcon(candidateData, setEditMode)}
         </div>
         
+        <div className='w-full px-l'>
           <div className='vw-1280:flex flex-col'>
             <div className='vw-1280:flex gap-12'>
               <label
@@ -139,7 +140,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   required
                   disabled={disabled}
                 />
-              </label>
             </div>
             <div className='vw-1280:flex gap-12'>
               <label
