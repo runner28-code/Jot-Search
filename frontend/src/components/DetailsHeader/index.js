@@ -19,7 +19,6 @@ export default function DetailsHeader({ type, source }) {
       Icon = CareerIcon;
       break;
   }
-// Temp comment
   const titleCasedType = type.charAt(0).toUpperCase() + type.slice(1);
   let headerText
   if ( type === 'company') {

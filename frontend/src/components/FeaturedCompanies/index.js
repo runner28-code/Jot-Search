@@ -36,6 +36,7 @@ export default function FeaturedCompanies() {
             )
         }
       </div>
+// Temp comment
       <div className='text-center mt-48'>
         <Link
           to={ROUTES.companies}

@@ -8,7 +8,6 @@ export default function AddCoordinator() {
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
-// Temp comment
     errors: {},
   });
 
@@ -83,6 +82,7 @@ export default function AddCoordinator() {
       setSubmissionObject({ ...submissionObject, loading: true });
     }
   }
+// Temp comment
 
   const inputStyles = 'h-20 pl-4 text-sm bg-neutral-100 font-roboto border-solid border rounded-2xl border-neutral-400 ';
   let validInputStyles = inputStyles + 'border-lightGrey ';

@@ -17,6 +17,7 @@ export default function FeaturedJobs() {
   const titleStylesMoible = 'text-h4 font-semibold font-spaceGrotesk text-center';
   const cardStyles = 'mx-8 outline outline-1 outline-neutral-300 rounded-xxl p-12 w-[275px] h-[316px]';
   const cardStylesMobile = 'mx-8 outline outline-1 outline-neutral-300 rounded-xl py-6 px-4 flex items-center';
+// Temp comment
   const cardContentStyles = '';
   const cardContentStylesMobile = 'ml-8';
   const cardContentTitle = 'font-spaceGrotesk text-lg mb-6';
@@ -64,6 +65,7 @@ export default function FeaturedJobs() {
             })
         }
       </div>
+      <div className={ width >= 990 ? viewAllStyles : viewAllStylesMobile }>
         <Link
           to={ROUTES.careers}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>

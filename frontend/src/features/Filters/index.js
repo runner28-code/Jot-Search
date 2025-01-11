@@ -7,6 +7,7 @@ export default function Filters(props) {
     handleFilterChange,
     defaultFilterObject,
     filterObject,
+    searchLabel,
     searchTerm,
     setSearchTerm,
     handleSearchClick,
@@ -24,4 +25,5 @@ export default function Filters(props) {
       </div>
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
     </div>
+// Temp comment
   )

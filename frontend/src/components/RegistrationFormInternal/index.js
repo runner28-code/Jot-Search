@@ -243,7 +243,6 @@ export default function RegistrationFormInternal(loggedIn) {
             value={formObj.phone}
             onChange={handleChange}
             error={errors.includes('phone')}
-          />
         </div>
         <div className={twocol}>
           <FormInput

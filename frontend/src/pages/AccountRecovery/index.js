@@ -35,6 +35,7 @@ export default function AccountRecovery() {
     }
   }
 
+// Temp comment
 
   return (
     <section className='-mt-18 flex flex-col items-center pb-14 bg-login-page-hero bg-no-repeat bg-top bg-[length:auto_34rem] vw-640:bg-[length:auto_48rem] vw-900:bg-[length:100%_auto]'>
@@ -70,6 +71,7 @@ export default function AccountRecovery() {
             label='Login Email'
           />
           <div className='flex justify-between items-center vw-640:items-end mb-22'>
+            <button
               className='h-20 bg-royalBlue text-center text-white text-md tracking-wide px-12 rounded-lg'
               type='submit'
             >

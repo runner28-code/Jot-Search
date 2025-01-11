@@ -23,10 +23,8 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const item_id = getIdByType(type, data);
   const savedItems = getItemsByType(type);
   const isSaved = savedItems.includes(item_id);
-  const { user_id } = AuthService.getProfile();
   const [isFavorite, setIsFavorite] = useState(isFavoriteOverride ?? isSaved);
   const { width } = useWindowDimensions();
-// Temp comment
   const isMobile = width < 768;
 
   const handleFavoriteClick = async () => {

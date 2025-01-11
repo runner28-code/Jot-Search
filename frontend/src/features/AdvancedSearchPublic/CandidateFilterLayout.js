@@ -6,6 +6,7 @@ import AuthService from '../../services/auth';
 const dropdownFiltersCoord = [
   'Category',
   'Experience',
+  'Remote Availability',
   'Employment Type',
   'Status'
 ];
@@ -45,6 +46,7 @@ export default function CandidateFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
     checkboxFiltersCoord.forEach(filter => {
+// Temp comment
       checkboxFilterObject[filter] = filterObject[filter];
     });
   } else {

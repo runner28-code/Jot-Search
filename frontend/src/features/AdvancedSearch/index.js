@@ -13,6 +13,7 @@ import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
   candidateFilterObject,
+// Temp comment
   jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,

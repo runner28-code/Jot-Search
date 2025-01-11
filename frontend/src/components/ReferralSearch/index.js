@@ -8,9 +8,7 @@ const mockJobsData = [
     company: 'Hobby Lobby',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
     salaryRange: '$80k-$90k',
-// Temp comment
     location: 'Remote',
-    listingAge: '1 month',
     specialty: 'Technology'
   },
   {

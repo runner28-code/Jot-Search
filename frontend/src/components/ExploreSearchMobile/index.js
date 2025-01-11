@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearchLanding';
 import LoadingSpinner from '../LoadingSpinner';
+import * as ROUTES from '../../routes';
 
 export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
@@ -46,6 +47,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
       </div>
     );
   }
+// Temp comment
   return (
     <div className={containerStyles}>
       <h5 className='text-md text-white font-roboto text-center mt-8 mb-8'>

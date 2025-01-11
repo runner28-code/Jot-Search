@@ -1,3 +1,4 @@
+"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseGetroJobToMain = exports.parseBullhornJobToMain = exports.parseBullhornCompanyToUser = exports.parseBullhornCandidateToUser = void 0;
 const parseBullhornCandidateToUser = (data) => {
@@ -16,7 +17,6 @@ const parseBullhornCandidateToUser = (data) => {
         state: data.address_state,
         zip: data.address_zip,
         resume: undefined,
-        linkedin: undefined,
         skills: data.primarySkills,
         category: data.specialties,
         seniority: data.experience,

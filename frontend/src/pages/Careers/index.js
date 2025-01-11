@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-// Temp comment
 import PageHeader from '../../components/PageHeader';
 import PageHeaderCandidate from '../../components/PageHeaderCandidate';
 import AdvancedSearch from '../../features/AdvancedSearch';
@@ -38,6 +37,7 @@ export default function Careers() {
           : !loggedIn ? 'px-[15%]' 
             : '' 
         }
+// Temp comment
       >
         <RenderAdvancedSearch
           loggedIn={loggedIn}
