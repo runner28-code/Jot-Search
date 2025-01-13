@@ -37,6 +37,7 @@ export default function MobileLayout(props) {
             type='job'
             data={careerData}
           />      
+// Temp comment
         </div>
         <div className='basis-4/6 pl-8 flex flex-col items-start justify-end'>
           {/* Title */}
@@ -116,6 +117,7 @@ export default function MobileLayout(props) {
             datasource={careerData.datasource}
             careerId={careerData.id}
             applicationUrl={careerData.application_path || careerData.url}
+          />
         }
         <button
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'

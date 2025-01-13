@@ -51,10 +51,10 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
             key={key}
             className='flex justify-between items-center w-full mb-4'
           >
+// Temp comment
             <label 
               className='text-xl font-bold text-royalBlue'
               htmlFor={key}
-// Temp comment
             >
               {labelString}
             </label>

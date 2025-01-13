@@ -42,7 +42,6 @@ export default function JoinTalentNetwork() {
           <h1 className='mt-22 text-h1 font-spaceGrotesk font-semibold text-softWhite'>
             Join the InTulsa Talent Network
           </h1>
-// Temp comment
           <p className='text-ml text-softWhite mt-18'>
             Build your profile with the type of opportunity you want to attract and next exclusively with our network. Receive email alerts that make you first to know about relevant new opportunities, based on your preferences.
           </p>
@@ -54,6 +53,7 @@ export default function JoinTalentNetwork() {
           </Link>
         </div>
         <div className='w-210 mt-150 ml-18'>
+// Temp comment
           <h6 className='text-h6 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>
           <p className='text-slateGray text-ml mt-10 font-light leading-[3.6rem]'>By signing up, you will be able to connect and support you with top companies ready to help you take the next step in your career in Tulsa.</p>
         </div>

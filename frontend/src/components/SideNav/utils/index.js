@@ -37,7 +37,6 @@ export const choices = {
     link: ROUTES.companies,
   },
   candidates: {
-    label: 'Candidates',
     icon: CandidatesIcon,
     link: ROUTES.candidates,
   },
@@ -62,6 +61,7 @@ export const choices = {
     link: ROUTES.activeCareers,
   },
   talentInTulsa: {
+    label: 'Talent.InTulsa.com',
     icon: ContactIcon,
     link: ROUTES.talentInTulsa,
   },

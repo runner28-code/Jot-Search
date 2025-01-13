@@ -5,7 +5,6 @@ import Dropdown from '../../components/UniversalDropdown';
 import FormInput from '../../components/FormInput';
 import { SwitchButton } from './PreferenceItem';
 import { FiEdit } from 'react-icons/fi';
-import useWindowDimensions from '../../hooks/windowDimensions';
 import {
   ethnicityChoices,
   genderChoices,

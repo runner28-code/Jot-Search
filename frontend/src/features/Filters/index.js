@@ -2,11 +2,13 @@ import PropTypes from 'prop-types';
 import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
 
+// Temp comment
 export default function Filters(props) {
   const {
     handleFilterChange,
     defaultFilterObject,
     filterObject,
+    searchLabel,
     searchTerm,
     setSearchTerm,
     handleSearchClick,

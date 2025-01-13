@@ -81,7 +81,6 @@ export default function AddCoordinator() {
     } else {
       setSubmissionObject({ ...submissionObject, loading: true });
     }
-// Temp comment
   }
 
   const inputStyles = 'h-20 pl-4 text-sm bg-neutral-100 font-roboto border-solid border rounded-2xl border-neutral-400 ';

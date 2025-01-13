@@ -44,7 +44,6 @@ export default function DesktopHeader(props) {
       { backButton && (
         <button
           className='text-md text-royalBlue underline mt-6'
-          onClick={() => navigate(-1)}
         >
           {'< Go Back'}
         </button>

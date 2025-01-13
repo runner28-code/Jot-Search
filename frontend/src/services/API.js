@@ -9,6 +9,7 @@ const API = axios.create({
   // baseURL: 'http://localhost:3001',
 });
 
+// Temp comment
 // Adds Bearer token to every request when it exists (i.e. user is logged in)
 API.interceptors.request.use(
   function (config) {
@@ -25,6 +26,7 @@ API.interceptors.request.use(
 
 export default API;
 
+export function appendPathToBaseUrl(path) {
   if (path.slice(0, 4) === 'http') {
     return path; // It's already a full URL
   }

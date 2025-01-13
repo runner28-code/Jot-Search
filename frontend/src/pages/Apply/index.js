@@ -17,7 +17,6 @@ import {
   defaultCareerState,
   renderButtonOrLoading,
   formatApplicationObject,
-// Temp comment
   updateCandidateIfNeeded,
   Checkbox
 } from './utils';

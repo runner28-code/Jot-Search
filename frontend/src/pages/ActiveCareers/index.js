@@ -8,7 +8,6 @@ import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import {
   buildSearchFilters
-// Temp comment
 } from '../../utils/filterObjects';
 import AuthService from '../../services/auth';
 
@@ -61,7 +60,6 @@ export default function ActiveCareers() {
         loading={isLoading}
         type={ RESULT_CONTAINER_TYPE }
         active={true}
-      />
       <PaginatedControls />
     </section>
   )

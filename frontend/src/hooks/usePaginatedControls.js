@@ -68,7 +68,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
               key={page}
               page={page}
               active={true}
-              setPage={setPage}
             >
               {page}
             </PaginationButton>

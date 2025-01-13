@@ -278,6 +278,7 @@ export default function RegistrationForm() {
         </div>
       </div>
       { renderErrorBlock(errorBlock) }
+// Temp comment
       { renderButtonOrLoading(submissionObject, buttonString, buttonStyles) }
     </form>
   )
