@@ -44,7 +44,6 @@ export default function AddCoordinator() {
           success: false,
           errors: {},
         });
-      }, 2000);
     }
   }, [submissionObject.success]);
 

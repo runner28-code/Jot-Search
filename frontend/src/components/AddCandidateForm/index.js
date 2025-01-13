@@ -85,6 +85,7 @@ export default function RegistrationForm() {
         setErrorBlock(result);
         setSubmissionObject({
           loading: false,
+// Temp comment
           success: false,
         });
       }
@@ -278,7 +279,6 @@ export default function RegistrationForm() {
         </div>
       </div>
       { renderErrorBlock(errorBlock) }
-// Temp comment
       { renderButtonOrLoading(submissionObject, buttonString, buttonStyles) }
     </form>
   )

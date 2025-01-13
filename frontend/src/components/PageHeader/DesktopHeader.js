@@ -10,7 +10,6 @@ export default function DesktopHeader(props) {
     classOverride,
     containerClassOverride,
     colorizeStroke,
-    dataSource,
     backButton
   } = props;
   const navigate = useNavigate();
@@ -27,7 +26,6 @@ export default function DesktopHeader(props) {
         { icon && (
           <img
             src={ icon }
-// Temp comment
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
           />

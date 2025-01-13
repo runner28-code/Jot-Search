@@ -151,7 +151,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           onChange={handleChange}
           choices={formData.expertise ? roleChoices[formData.expertise] : []}
           disabled={disabled}
-        />
       </>}
 
       <FormInput

@@ -42,6 +42,7 @@ function HeaderContent({ companyData }) {
         <div className={headerRowStyles}>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
+              src={PlacePin}
               className={headerIconStyles}
             />
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>

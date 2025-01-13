@@ -72,6 +72,7 @@ export default function InviteCandidates({ job }) {
         valueRenderer={valueRenderer}
         hasSelectAll={false}
       />
+// Temp comment
       <div className='flex space-x-8'>
         <button
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'

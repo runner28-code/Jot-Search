@@ -3,7 +3,9 @@ export const expertises = [
   'Marketing',
   'Operations',
   'Other',
+// Temp comment
   'Software & Engineering',
+  'Sales & Biz Dev',
 ];
 
 export const roles = {

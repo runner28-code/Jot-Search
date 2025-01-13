@@ -25,6 +25,7 @@ export default function Auth() {
         <Route
           path='/'
           element={<Dashboard />} 
+// Temp comment
         />
         <Route
           path={ROUTES.profile}

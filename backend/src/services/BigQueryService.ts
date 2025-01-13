@@ -1,1 +1,1 @@
-import { config } from 'dotenv';
+import { BigQuery } from '@google-cloud/bigquery';

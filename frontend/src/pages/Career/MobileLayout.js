@@ -37,7 +37,6 @@ export default function MobileLayout(props) {
             type='job'
             data={careerData}
           />      
-// Temp comment
         </div>
         <div className='basis-4/6 pl-8 flex flex-col items-start justify-end'>
           {/* Title */}
@@ -57,6 +56,7 @@ export default function MobileLayout(props) {
             </div>
             {/* Remote/Onsite/Hybrid */}
             <div className='flex w-1/2 items-center'>
+// Temp comment
               <LaptopIcon
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>

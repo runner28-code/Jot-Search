@@ -41,6 +41,7 @@ export default function FormInput(props) {
     case 'file':
       return <FileInput
         type={type}
+// Temp comment
         name={name}
         label={label}
         placeholder={placeholder}

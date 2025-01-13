@@ -67,6 +67,7 @@ export default function InviteCandidates({ company }) {
         labelledBy="Select"
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
+// Temp comment
         hasSelectAll={false}
       />
       <div className='flex space-x-8'>

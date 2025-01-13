@@ -1,3 +1,4 @@
+export const COORDINATOR = 'coordinator';
 export const CANDIDATE = 'candidate';
 export const COMPANY = 'company';
 export const ROLES = [COORDINATOR, CANDIDATE, COMPANY];

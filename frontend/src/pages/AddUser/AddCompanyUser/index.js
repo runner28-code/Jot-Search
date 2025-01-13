@@ -82,6 +82,7 @@ export default function AddCompanyUser() {
           )}
           {selectedCompany && (
             <CompanyContactList
+              clientContacts={clientContacts}
               isLoadingContacts={isLoadingContacts}
               selectedCompany={selectedCompany}
             />

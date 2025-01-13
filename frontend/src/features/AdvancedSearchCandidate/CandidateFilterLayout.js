@@ -54,6 +54,7 @@ export default function CandidateFilterLayout(props) {
     });
     checkboxFilters.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
+    });
   }
 
 
@@ -80,5 +81,6 @@ export default function CandidateFilterLayout(props) {
           Clear All
         </button>
       </div>
+// Temp comment
     </div>
   );

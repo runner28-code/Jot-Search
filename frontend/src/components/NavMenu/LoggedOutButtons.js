@@ -11,10 +11,10 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
   return (<>
     <Link 
       to={ROUTES.login}
+// Temp comment
       onClick={handleOptionClick}
       className={linkStyles}
     >
-// Temp comment
       <MdLogin className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Login</span>
     </Link>

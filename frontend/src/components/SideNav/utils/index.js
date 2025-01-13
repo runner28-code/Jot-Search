@@ -37,6 +37,7 @@ export const choices = {
     link: ROUTES.companies,
   },
   candidates: {
+    label: 'Candidates',
     icon: CandidatesIcon,
     link: ROUTES.candidates,
   },
