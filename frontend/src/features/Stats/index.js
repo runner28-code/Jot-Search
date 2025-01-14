@@ -46,7 +46,6 @@ export default function Stats({ userType }) {
         'Company Favorites': { ...result.companyFavorites },
         'Active Career Post Favorites': { ...result.activeCareerPostFavorites },
         'Application Invitations Sent': { ...result.applicationInvitationsSent }                
-// Temp comment
       })
     }
     if (userType === 'coordinator') {
@@ -54,7 +53,6 @@ export default function Stats({ userType }) {
       setStats({
         'Total Companies': { ...result.totalCompanies },
         'Total Open Jobs': { ...result.totalOpenJobs },
-        'Total Candidates': { ...result.totalCandidates },
         'Applications Submitted': { ...result.applicationsSubmitted },
         'Company Request Introductions': { ...result.companyRequestIntroductions },          
       })

@@ -6,3 +6,4 @@ import {
   Post,
   Put,
   Delete,
+  QueryParam,

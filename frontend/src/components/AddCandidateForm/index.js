@@ -43,6 +43,7 @@ export default function RegistrationForm() {
   });
 
   const navigate = useNavigate();
+// Temp comment
   const location = useLocation();
 
   useEffect(async () => { // Submit data
@@ -85,7 +86,6 @@ export default function RegistrationForm() {
         setErrorBlock(result);
         setSubmissionObject({
           loading: false,
-// Temp comment
           success: false,
         });
       }

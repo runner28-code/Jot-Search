@@ -7,7 +7,6 @@ import {
   saveCompanies,
   saveBullhornJobs,
   saveLeads,
-} from "../utils/BullhornCrud";
 import fs from "fs";
 import { checkForJobFilter, sleep } from "../utils";
 import db from "../utils/db";
@@ -34,3 +33,7 @@ export class BullhornService {
     }
     return BullhornService.client;
   }
+
+  async init(invalid = true): Promise<boolean> {
+    if (!invalid) {
+      const cookie: any = await this.getCookie();

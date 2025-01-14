@@ -15,6 +15,7 @@ import { useGetJobs } from '../../hooks/queries/useGetJobs';
 export default function InviteToCareer({ candidate }) {
   const { jobs, isLoading } = useGetJobs({ filtersArr: buildSearchFilters({...defaultJobFilterState}), 
     count: 10000
+// Temp comment
   });
 
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
@@ -86,6 +87,7 @@ export default function InviteToCareer({ candidate }) {
         >
           <MailIcon className='inline-block mr-2' />
           Send Now
+        </button>
         <button 
           onClick={() => setSelected([])} 
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>

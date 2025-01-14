@@ -1,4 +1,3 @@
-import axios from 'axios';
 import config from "../config";
 import queryString from 'query-string';
 import { getCompanies, saveCompanies, saveJobs, saveMembers } from '../utils/GetroCrud';
@@ -8,3 +7,5 @@ import { checkForJobFilter, sleep } from '../utils';
 export class GetroService {
     public static client: GetroService | null = null;
     private email = config.getroEmail || '';
+    private password = config.getroPassword || '';
+    private api_base_url_v1 = 'https://api.getro.com/api/v1';

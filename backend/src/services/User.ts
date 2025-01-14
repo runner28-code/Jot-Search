@@ -21,3 +21,5 @@ import {
 } from "./EmailService";
 import { CreateJwtToken } from "../utils/jwtUtils";
 
+const isNullOrEmpty = (value: any) => {
+  return !value || (value && !`${value}`.trim());

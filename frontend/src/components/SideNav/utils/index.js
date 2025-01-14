@@ -72,6 +72,7 @@ export const choices = {
     link: ROUTES.logout,
   },
 }
+// Temp comment
 
 // Map choices to appropriate icons
 export const candidateChoices = [

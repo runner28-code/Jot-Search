@@ -5,6 +5,7 @@ exports.COORDINATOR = 'coordinator';
 exports.CANDIDATE = 'candidate';
 exports.COMPANY = 'company';
 exports.ROLES = [exports.COORDINATOR, exports.CANDIDATE, exports.COMPANY];
+const job_filter_exclude_keys = [
     "academic",
     "adjudication",
     "admissions",
@@ -15,3 +16,5 @@ exports.ROLES = [exports.COORDINATOR, exports.CANDIDATE, exports.COMPANY];
     "aircraft",
     "alumni",
     "americorps",
+    "analyzer tech",
+    "anestesia",

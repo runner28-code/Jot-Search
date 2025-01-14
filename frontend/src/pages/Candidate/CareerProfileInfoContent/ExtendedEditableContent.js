@@ -151,6 +151,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           onChange={handleChange}
           choices={formData.expertise ? roleChoices[formData.expertise] : []}
           disabled={disabled}
+        />
       </>}
 
       <FormInput
@@ -214,7 +215,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         </div>
 
         <div className="flex space-x-4 items-center justify-start">
-          {(formData.resume && !editMode) && (
             <div>
               <p>Resume</p>
               <ResumePreview resumeUrl={resumeUrl} />

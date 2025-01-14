@@ -21,7 +21,6 @@ function HeaderContent({ companyData }) {
   return (
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
-// Temp comment
       <div className='grow p-2'>
         <div className='flex flex-wrap items-center mb-4'>
           <div className='basis-2/6'>
