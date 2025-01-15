@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
@@ -32,6 +33,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           </div>
 
           {/* Posting age */}
+// Temp comment
           <div className='border-1 border-t border-gray-300 py-4 mt-4 justify-self-end'>
             <p className='text-grey-700 opacity-50'>{agoText} {postingAge}</p>
           </div>

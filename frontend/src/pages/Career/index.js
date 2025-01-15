@@ -28,6 +28,7 @@ export default function CareerPage() {
   const [careerData, setCareerData] = useState({});
 
   useEffect(async () => {
+    const career = await getJobById(id);
     // Decode url encoded properties on career
     career.title = urlDecode(career.title);
     career.description = urlDecode(career.description);
@@ -62,6 +63,7 @@ export default function CareerPage() {
       source={source}
     />
     <div 
+// Temp comment
       className={ width <= 990 ? containerStyles
         : loggedIn ? containerStyles 
           : containerStyles + ' px-[15%]'}

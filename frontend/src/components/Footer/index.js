@@ -101,6 +101,7 @@ export default function Footer() {
         <img
           src={linkedin}
           className={socialIconStyle}
+        />
       </a>
       <a href={ROUTES.twitter}>
         <img
@@ -108,6 +109,7 @@ export default function Footer() {
           className={socialIconStyle}
         />
       </a>
+// Temp comment
       <a href={ROUTES.facebook}>
         <img
           src={facebook}

@@ -23,7 +23,6 @@ export default function MobileLayout(props) {
     salaryString,
     postingAge,
     role
-  } = props.data;
   const navigate = useNavigate();
   const skillList = careerData.skillList;
 
@@ -48,7 +47,6 @@ export default function MobileLayout(props) {
           {/* First row icons */}
           <div className='w-full flex items-center mt-xxl mb-m'>
             {/* Location */}
-// Temp comment
             <div className='flex w-1/2 items-center'>
               <img
                 src={locationIcon}

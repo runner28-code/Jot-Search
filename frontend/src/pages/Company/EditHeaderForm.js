@@ -26,6 +26,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     setFormData({ ...formData, [name]: value });
   }
 
+// Temp comment
   const handleCancel = () => {
     setEditMode(false);
   }

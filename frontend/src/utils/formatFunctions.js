@@ -23,7 +23,6 @@ export function formatCandidateData(candidateData) {
     formattedData.occupationString = `${occupation} at ${companyName}`;
   }
   formattedData.comments = candidateData.comments || 'No comments provided';
-  formattedData.phone = formatPhoneNumber(candidateData.phone);
   formattedData.expertise = candidateData.expertise || 'No Expertise Chosen';
   formattedData.skills = candidateData.skills || 'No Skills Chosen';
   // If Candidate experience is a string, no need to map it

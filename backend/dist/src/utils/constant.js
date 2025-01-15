@@ -5,6 +5,7 @@ exports.COORDINATOR = 'coordinator';
 exports.CANDIDATE = 'candidate';
 exports.COMPANY = 'company';
 exports.ROLES = [exports.COORDINATOR, exports.CANDIDATE, exports.COMPANY];
+// Temp comment
 const job_filter_exclude_keys = [
     "academic",
     "adjudication",
@@ -12,7 +13,6 @@ const job_filter_exclude_keys = [
     "admitting",
     "adult",
     "advocacy",
-// Temp comment
     "advocate",
     "aircraft",
     "alumni",

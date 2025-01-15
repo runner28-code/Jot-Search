@@ -5,6 +5,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import featuredIcon from '../../assets/icons/pyramid.svg';
+import { getAppliedJobs } from '../../services/API';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function PendingApplications () {
@@ -59,7 +60,6 @@ export default function PendingApplications () {
           <div className='flex gap-[10px] items-center px-m py-xxs bg-searchGreen rounded-full'>
             <img
               src={featuredIcon}
-              alt='intulsa' />
             <p className='text-sm font-bold text-white'>InTulsa Featured</p>
           </div>
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Apply to an InTulsa Featured Career!</h3>

@@ -244,7 +244,6 @@ export default function RegistrationForm() {
           />
           <FormInput
             type='text'
-// Temp comment
             name='referredBy'
             placeholder={`How did ${pronoun} hear about us?`} 
             value={formObj.referredBy}
@@ -256,6 +255,7 @@ export default function RegistrationForm() {
             type='file'
             name='resumeFile'
             placeholder='Upload Resume'
+// Temp comment
             value={formObj.resumeFile}
             onChange={handleChange}
             error={errors.includes('resumeFile')}

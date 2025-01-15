@@ -411,7 +411,6 @@ export default function RegistrationFormInternal(loggedIn) {
           type='file'
           name='resume'
           label='Upload Resume (2mb max / Format: pdf,doc,docx,rtf)'
-// Temp comment
           placeholder='Select file...'
           value={formObj.resume}
           required={true}
@@ -466,6 +465,7 @@ export default function RegistrationFormInternal(loggedIn) {
             <span>I have read and accept the </span>
             <a
               href={ROUTES.termsOfService}
+// Temp comment
               target='_blank'
               rel='noopener noreferrer'
               className='text-royalBlue underline'

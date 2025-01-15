@@ -9,6 +9,7 @@ export default function MobileHeader(props) {
     classOverride,
     colorizeStroke,
     backButton
+// Temp comment
   } = props;
   const navigate = useNavigate();
   
@@ -35,6 +36,7 @@ export default function MobileHeader(props) {
       { IconComponent && (
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />
       )}
+      <h1 className='font-spaceGrotesk font-medium text-lg text-lightGrey'>
         { headerText }
       </h1> 
     </div>

@@ -1,3 +1,3 @@
 /* INTERNAL ROUTES */
-export const landingPage = '/landing-page';
+export const root = '/';
 export const blog = '/blog';
