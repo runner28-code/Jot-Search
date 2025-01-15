@@ -38,7 +38,6 @@ export const choices = {
   },
   candidates: {
     label: 'Candidates',
-    icon: CandidatesIcon,
     link: ROUTES.candidates,
   },
   myApplications: {
@@ -124,7 +123,6 @@ export function findSelectedFromPath() {
     case 'candidates':
       return 'Candidates';
     case 'careers':
-// Temp comment
       return 'Careers';
     case 'companies':
       return 'Companies';

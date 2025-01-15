@@ -4,6 +4,7 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
   return (
     <select 
       className={ inputStyles + ' cursor-pointer ' }
+// Temp comment
       name={ name }
       value={ currentChosen }
       onChange={ handleChange }
@@ -26,5 +27,4 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
         )
       })}
     </select>
-// Temp comment
   )

@@ -39,6 +39,7 @@ export default function AddCoordinator() {
     if (submissionObject.success) {
       setTimeout(() => {
         setFormObject(defaultState);
+// Temp comment
         setSubmissionObject({
           loading: false,
           success: false,
@@ -136,6 +137,7 @@ export default function AddCoordinator() {
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.email}</p>
       </div>
       <div className={inputContainer + ' hidden vw-900:flex'}></div>
+      <div className={inputContainer}>
         {/* Password */}
         <label className={labelStyles}>Password</label>
         <input

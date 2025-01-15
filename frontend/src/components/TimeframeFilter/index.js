@@ -25,7 +25,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         choices={choices} 
         handleChoiceClick={handleChoiceClick} 
       />
-    )
   }
 
   // Used to close dropdown when clicking outside of it

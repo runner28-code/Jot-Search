@@ -8,6 +8,7 @@ import AuthService from '../../services/auth';
 
 export default function Login() {
   const [error, setError] = useState('');
+// Temp comment
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -22,6 +23,7 @@ export default function Login() {
     } else {
       setError(res.data.error);
     }
+  };
 
   const renderError = () => {
     if ( error ) {

@@ -9,6 +9,7 @@ export function formatCandidateData(candidateData) {
   if (formattedData.sourceTable === 'Candidate') {
     formattedData.address1 = candidateData.address_address1 || '';
     formattedData.address2 = candidateData.address_address2 || '';
+    formattedData.city = candidateData.address_city || '';
     formattedData.state = candidateData.address_state || '';
     formattedData.zip = candidateData.address_zip || '';
   }
@@ -19,7 +20,6 @@ export function formatCandidateData(candidateData) {
   } else {
     const occupation = candidateData.occupation || 'N/A';
     const companyName = candidateData.companyName || 'N/A';
-    formattedData.occupationString = `${occupation} at ${companyName}`;
   }
   formattedData.comments = candidateData.comments || 'No comments provided';
   formattedData.phone = formatPhoneNumber(candidateData.phone);

@@ -4,4 +4,3 @@ export const saveCandidate = async (
   candidateId: string,
   companyUserId: string
 ) => {
-  try {

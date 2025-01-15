@@ -38,6 +38,7 @@ export default function TypeaheadDropdown(props) {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
     if (!dropdownOpen) setInputValue('');
   }, [dropdownOpen]);
+// Temp comment
   
   /* Filter choices based on input */
   useEffect(() => {
@@ -62,7 +63,6 @@ export default function TypeaheadDropdown(props) {
     <div 
       className='relative w-full'
       ref={menuRef}  
-// Temp comment
     >
       { renderLabel(name, label, required) }
       <input 

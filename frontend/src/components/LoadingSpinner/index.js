@@ -1,4 +1,3 @@
-// Temp comment
 import { TailSpin as LoaderSpinner } from 'react-loader-spinner';
 import PropTypes from 'prop-types';
 

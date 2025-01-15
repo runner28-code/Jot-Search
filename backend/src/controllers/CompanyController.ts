@@ -4,6 +4,7 @@ import {
   Post,
   Put,
   QueryParam,
+  JsonController,
   Authorized,
   CurrentUser,
 } from "routing-controllers";

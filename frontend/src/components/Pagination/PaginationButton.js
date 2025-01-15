@@ -14,4 +14,3 @@ export const PaginationButton = ({ page, disabled, prefetchFunc, active, setPage
     >
       {children}
     </button>
-  );

@@ -108,13 +108,13 @@ export default function ResetPassword() {
             </Link>
           </div>
           { renderMatch() }
-// Temp comment
           { renderSuccess() }
           { renderError() }
           <label className={labelStyle}>Set Password</label>
           <input
             className={inputStyle}
             id='password'
+// Temp comment
             type='password'
             name='password'
             onChange={handlePassword}

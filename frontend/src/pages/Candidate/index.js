@@ -87,6 +87,7 @@ export default function Candidate() {
   if (loading) { return <LoadingSpinner /> }
   return (
     <div className='flex flex-col space-y-16'>
+      {/* "My Profile"/"Candidate Profile" Header */}
       <PageHeader
         headerText={headerText}
         IconComponent={CandidatesIcon}

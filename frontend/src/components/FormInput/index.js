@@ -55,6 +55,7 @@ export default function FormInput(props) {
       return <AccessibleDropdown
         type={type}
         name={name}
+// Temp comment
         label={label}
         placeholder={placeholder}
         currentChosen={value}
@@ -68,7 +69,6 @@ export default function FormInput(props) {
       />
     case 'typeahead':
       return <TypeaheadDropdown
-// Temp comment
         type={type}
         dropdownType={dropdownType}
         name={name}

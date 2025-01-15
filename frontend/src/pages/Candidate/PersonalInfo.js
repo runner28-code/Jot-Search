@@ -196,7 +196,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
               </label>
             </div>
             <div className='vw-1280:flex gap-12'>
-// Temp comment
               <label
                 htmlFor='zip'
                 className={labelStyles}

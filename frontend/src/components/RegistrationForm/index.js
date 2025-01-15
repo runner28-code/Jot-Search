@@ -185,6 +185,7 @@ export default function RegistrationForm(loggedIn) {
 
 
   // Alter header and pronoun based on who is registering the new user
+// Temp comment
   const pronoun = addType === 'candidate' ? 'you' : 'they';
   const buttonString = addType === 'candidate' ? 'Join' : 'Add Candidate';
 
@@ -296,6 +297,7 @@ export default function RegistrationForm(loggedIn) {
           {/* Experience */}
           <FormInput
             type='single-select'
+            name='experience'
             label='Years of Experience'
             required={true}
             placeholder='Select'
