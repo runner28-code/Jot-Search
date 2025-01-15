@@ -9,7 +9,6 @@ export function formatCandidateData(candidateData) {
   if (formattedData.sourceTable === 'Candidate') {
     formattedData.address1 = candidateData.address_address1 || '';
     formattedData.address2 = candidateData.address_address2 || '';
-    formattedData.city = candidateData.address_city || '';
     formattedData.state = candidateData.address_state || '';
     formattedData.zip = candidateData.address_zip || '';
   }
@@ -23,6 +22,7 @@ export function formatCandidateData(candidateData) {
     formattedData.occupationString = `${occupation} at ${companyName}`;
   }
   formattedData.comments = candidateData.comments || 'No comments provided';
+  formattedData.phone = formatPhoneNumber(candidateData.phone);
   formattedData.expertise = candidateData.expertise || 'No Expertise Chosen';
   formattedData.skills = candidateData.skills || 'No Skills Chosen';
   // If Candidate experience is a string, no need to map it

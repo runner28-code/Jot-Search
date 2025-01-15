@@ -14,7 +14,6 @@ export default function ExpertiseLinks() {
   return (
     <section className='mt-100 mb-54 flex flex-col items-center'>
       <h4 className='text-h4 font-spaceGrotesk font-semibold text-darkGray'>
-        Browse Opportunities by Career Expertise
       </h4>
       <div className='mt-20 flex'>
         {/* Software & Engineering */}

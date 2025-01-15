@@ -26,7 +26,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     setFormData({ ...formData, [name]: value });
   }
 
-// Temp comment
   const handleCancel = () => {
     setEditMode(false);
   }
@@ -210,6 +209,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             onChange={handleInputChange}
             id='phone'
             value={formData.phone}
+// Temp comment
             className={inputStyles + 'ml-10 text-h6'} />
         </div>
         {/* Email */}

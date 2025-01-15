@@ -75,7 +75,6 @@ export default function NavSearch({ placeholder }) {
     setForceHidden(true);
   };
 
-// Temp comment
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
@@ -106,7 +105,6 @@ export default function NavSearch({ placeholder }) {
           alternateStylesObject={ stylesObject } 
           setIsOpen={ setIsOpen }
           isOpen={ isOpen }
-        />
       </div>
       { renderResultsContainer( combinedResults, searchTerm ) }
     </div>

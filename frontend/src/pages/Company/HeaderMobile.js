@@ -5,6 +5,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
+// Temp comment
 
 
 // Icons
@@ -12,6 +13,7 @@ import PlacePin from '../../assets/icons/placepin.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding } from 'react-icons/bs';
 
+function HeaderContent({ companyData }) {
   const headerIconStyles = 'h-6 w-6 mr-3 fill-midGrey';
   const headerRowTextStyles = 'text-xs text-textBlack ';
   const headerGroupStyles = 'flex items-center flex-row basis-1/2 my-4';

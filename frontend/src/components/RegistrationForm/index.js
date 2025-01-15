@@ -296,7 +296,6 @@ export default function RegistrationForm(loggedIn) {
           {/* Experience */}
           <FormInput
             type='single-select'
-            name='experience'
             label='Years of Experience'
             required={true}
             placeholder='Select'

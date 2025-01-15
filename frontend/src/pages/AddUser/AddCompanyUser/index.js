@@ -48,7 +48,6 @@ export default function AddCompanyUser() {
             text='Go to Bullhorn'
             href='https://www.bullhorn.com/'
           />
-// Temp comment
         </div>
       </div>
       <div className={ containerStyles + 'bg-white mt-12'}>

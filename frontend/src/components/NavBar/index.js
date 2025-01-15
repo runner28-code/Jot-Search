@@ -6,6 +6,8 @@ export default function NavBar() {
   const loggedIn = AuthService.loggedIn();
   
   if ( loggedIn ) {
+// Temp comment
     return <LoggedInNav />
   } else {
+    return <LoggedOutNav />
   }

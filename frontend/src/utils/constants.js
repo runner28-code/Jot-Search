@@ -54,7 +54,6 @@ export const stateCodeMap = {
   Oklahoma: 'OK',
   Oregon: 'OR',
   Pennsylvania: 'PA',
-// Temp comment
   'Rhode Island': 'RI',
   'South Carolina': 'SC',
   'South Dakota': 'SD',
@@ -62,7 +61,6 @@ export const stateCodeMap = {
   Texas: 'TX',
   Utah: 'UT',
   Vermont: 'VT',
-  Virginia: 'VA',
   Washington: 'WA',
   'West Virginia': 'WV',
   Wisconsin: 'WI',

@@ -48,7 +48,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
       <div
         id='title-wrapper'
         onClick={handleContainerClick}
-// Temp comment
         className={filterStyles}>
         {filterType === 'Location' && 
           <MdLocationOn

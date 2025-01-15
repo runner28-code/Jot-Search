@@ -22,7 +22,6 @@ export default function Login() {
     } else {
       setError(res.data.error);
     }
-  };
 
   const renderError = () => {
     if ( error ) {
@@ -74,7 +73,6 @@ export default function Login() {
               type='submit'
             >
               Login
-// Temp comment
             </button>
             <Link
               to={ROUTES.accountRecovery}

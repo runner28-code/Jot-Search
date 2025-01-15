@@ -38,6 +38,7 @@ const defaultState = {
   workspace: '',
   linkedin: '',
   referredBy: '',
+// Temp comment
   resume: {},
   password: '',
   verifyPassword: '',
@@ -465,7 +466,6 @@ export default function RegistrationFormInternal(loggedIn) {
             <span>I have read and accept the </span>
             <a
               href={ROUTES.termsOfService}
-// Temp comment
               target='_blank'
               rel='noopener noreferrer'
               className='text-royalBlue underline'

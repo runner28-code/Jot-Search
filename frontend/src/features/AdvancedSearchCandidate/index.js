@@ -8,7 +8,6 @@ import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
-// Temp comment
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
 import {
@@ -41,7 +40,6 @@ function useTabState(disabledTabs, userType, pathname) {
       case '/companies':
         return useState('companies');
       case '/careers':
-      default:
         return useState('jobs');
     }
   }

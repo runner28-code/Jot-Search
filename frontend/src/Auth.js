@@ -6,6 +6,7 @@ import {
   Candidate,
   Candidates,
   Dashboard,
+  Favorites,
   Logout,
   Profile,
 } from './pages';

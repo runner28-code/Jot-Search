@@ -3,6 +3,7 @@ import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
 
 class AuthService {
   getProfile() {
+    if ( !this.loggedIn() ) {
       return null;
     }
     return decode(this.getToken());

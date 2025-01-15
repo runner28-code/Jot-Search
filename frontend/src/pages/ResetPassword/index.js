@@ -108,6 +108,7 @@ export default function ResetPassword() {
             </Link>
           </div>
           { renderMatch() }
+// Temp comment
           { renderSuccess() }
           { renderError() }
           <label className={labelStyle}>Set Password</label>

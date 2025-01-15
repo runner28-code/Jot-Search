@@ -1,3 +1,4 @@
+// Temp comment
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import * as ROUTES from '../../routes';
@@ -7,6 +8,7 @@ export default function JoinTalentNetwork() {
 
   const { width } = useWindowDimensions();
 
+  if( width <= 990 ) {
     return (<>
       {/* Join Hero and call-to-action */}
       <section className='relative h-200 bg-join-hero bg-cover bg-center mb-[600px]'>
