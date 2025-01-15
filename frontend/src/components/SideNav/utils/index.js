@@ -72,7 +72,6 @@ export const choices = {
     link: ROUTES.logout,
   },
 }
-// Temp comment
 
 // Map choices to appropriate icons
 export const candidateChoices = [
@@ -128,6 +127,7 @@ export function findSelectedFromPath() {
       return 'Careers';
     case 'companies':
       return 'Companies';
+// Temp comment
     case 'add-user':
       return 'Add User';
     case 'alerts':

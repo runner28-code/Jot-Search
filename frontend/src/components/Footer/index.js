@@ -5,6 +5,7 @@ import intulsaTalentLogo from '../../assets/images/intulsa-talent-white-small.sv
 import intulsaBusinessLogo from '../../assets/images/inTulsa-business-logo-web-white.svg';
 
 import intulsaFooterWhite from '../../assets/images/talent-intulsa-white-small.svg';
+import inTulsaFooter from '../../assets/images/intulsa-talent-network.svg';
 
 // Social Icons
 import linkedin from '../../assets/icons/social/social_linkedin_grey.svg';
@@ -100,7 +101,6 @@ export default function Footer() {
         <img
           src={linkedin}
           className={socialIconStyle}
-        />
       </a>
       <a href={ROUTES.twitter}>
         <img

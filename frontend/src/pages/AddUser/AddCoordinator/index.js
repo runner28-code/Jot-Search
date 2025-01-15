@@ -123,6 +123,7 @@ export default function AddCoordinator() {
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.lastname}</p>
       </div>
       <div className={inputContainer}>
+        {/* Email */}
         <label className={labelStyles}>Email</label>
         <input
           type='text'
@@ -159,7 +160,6 @@ export default function AddCoordinator() {
           value={formObject.verifyPassword}
           onChange={handleInputChange}
         />
-        <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.verifyPassword}</p>
       </div>
       {/* Add Button / Loading Spinner */}
       <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk mt-12 w-full'>{JSON.stringify(submissionObject.errors.submit)}</p>

@@ -17,6 +17,7 @@ export default function FormInput(props) {
     name,
     label,
     placeholder,
+    value,
     required,
     onChange,
     choices,
@@ -64,7 +65,6 @@ export default function FormInput(props) {
         stylesObject={stylesObject}
         showDropdownArrow={true}
         disabled={disabled}
-      />
     case 'typeahead':
       return <TypeaheadDropdown
         type={type}

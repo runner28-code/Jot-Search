@@ -5,6 +5,7 @@ import {
   FiChevronLeft as BackIcon,
   FiChevronRight as NextIcon,
 } from 'react-icons/fi';
+import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const ResumePreview = ({ resumeUrl }) => {
   const [page, setPage] = useState(1);
@@ -20,6 +21,7 @@ const ResumePreview = ({ resumeUrl }) => {
   const buttonStylesDisabled = 'w-15 h-15 opacity-50';
   const prevButtonDisabled = page === 1;
   const nextButtonDisabled = page === pdfDocument?.numPages;
+// Temp comment
 
   return (
     <div className='border border-grey300 border-2 rounded-lg'>

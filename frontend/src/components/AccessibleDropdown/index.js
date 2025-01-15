@@ -44,7 +44,6 @@ export default function AccessibleDropdown(props) {
   return (
     <div>
       { renderLabel(name, label, required) }
-// Temp comment
       <Wrapper
         className={ `${containerStyles} ${disabled ? 'disabled cursor-not-allowed' : ''}`}
         onSelection={ handleSelection }

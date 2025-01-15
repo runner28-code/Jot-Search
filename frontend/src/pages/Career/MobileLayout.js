@@ -11,7 +11,6 @@ import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { apply as applyRoute } from '../../routes';
 import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
-// Temp comment
 
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-xl text-charcoal mb-4 ';
 const hrStyles = 'mb-10 border-midGrey ';
@@ -49,6 +48,7 @@ export default function MobileLayout(props) {
           {/* First row icons */}
           <div className='w-full flex items-center mt-xxl mb-m'>
             {/* Location */}
+// Temp comment
             <div className='flex w-1/2 items-center'>
               <img
                 src={locationIcon}

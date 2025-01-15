@@ -1,6 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../..';
-// Temp comment
 import { getSavedCandidates } from '../../services/API';
 
 export const prefetchCandidates = async ({userId, count, page}) => {
@@ -13,4 +12,3 @@ export const useGetSavedCandidates = ({ count, page, userId, enabled = true }) =
     { enabled }
   );
 
-  return { savedCandidates: data, total: data?.total || 0, error, isLoading };

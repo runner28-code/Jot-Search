@@ -30,5 +30,4 @@ const renderError = (error) => {
     </div> )
   } else {
     return null;
-// Temp comment
   }

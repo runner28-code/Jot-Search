@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import PhoneInput from 'react-phone-number-input/input';
 
+export default function TextInput({type, name, placeholder, label, value, required, onChange, baseStyles, disabled}) {
   function handleChange(e) {
     if ( name !== 'phone' ) {
       onChange(name, e.target.value);
@@ -9,6 +10,7 @@ import PhoneInput from 'react-phone-number-input/input';
     }
   }
 
+// Temp comment
   return (
     <div className='w-full'>
       { renderLabel( label, required, name ) }

@@ -1,3 +1,4 @@
+import * as ROUTES from '../../routes';
 
 export default function BusinessBooming() {
   return (
@@ -13,7 +14,6 @@ export default function BusinessBooming() {
           className='flex items-center justify-center bg-white text-sm mt-12 py-8 rounded-lg w-3/5'
         >
           <span className='text-orangeHeroOverlay'>Learn About Tulsa</span>
-        </a>
       </div>
       <div className='h-96 bg-tulsa-hero bg-cover'></div>
     </section>

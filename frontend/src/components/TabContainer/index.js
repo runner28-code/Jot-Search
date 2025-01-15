@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLocked, absolute = true }) {
+// Temp comment
 
   const absoluteStyles = absolute ? 'absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2' : ''
   return (
@@ -8,7 +9,6 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
       { tabChoices.map(choice => {
         return <TabButton
           key={choice}
-// Temp comment
           choice={choice}
           activeTab={activeTab}
           setActiveTab={setActiveTab}

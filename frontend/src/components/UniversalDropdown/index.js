@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 
 export default function UniversalDropdown({ inputStyles, optionStyles, name, choices, currentChosen, handleChange, multiselect, noDefault, disabled }) { 
-// Temp comment
   return (
     <select 
       className={ inputStyles + ' cursor-pointer ' }
       name={ name }
       value={ currentChosen }
+// Temp comment
       onChange={ handleChange }
       multiple={ !!multiselect }
       required

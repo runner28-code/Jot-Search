@@ -15,7 +15,6 @@ import { useGetJobs } from '../../hooks/queries/useGetJobs';
 export default function InviteToCareer({ candidate }) {
   const { jobs, isLoading } = useGetJobs({ filtersArr: buildSearchFilters({...defaultJobFilterState}), 
     count: 10000
-// Temp comment
   });
 
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
@@ -60,7 +59,6 @@ export default function InviteToCareer({ candidate }) {
       {isSendingJob && <div className="text-center">Sending Invitations...</div>}
       {successfullySentJob && <div className="text-center">Invitations Sent!</div>}
 
-      <SelectedValues />
 
       <MultiSelect
         isLoading={isLoading}

@@ -28,6 +28,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     )
   }
 
+  // Used to close dropdown when clicking outside of it
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setShowDropdown);
   }, [showDropdown]);
@@ -45,7 +46,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         className={ wrapperStyles }>
         <p
           id='title'
-          className='Desktop-Body-textBody-paragraph-2 text-charcoal'>{ timeframe }</p>
         <img 
           className='w-6 mr-7'
           src={ chevronDownGray }

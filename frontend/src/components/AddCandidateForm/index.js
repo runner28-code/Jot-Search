@@ -43,7 +43,6 @@ export default function RegistrationForm() {
   });
 
   const navigate = useNavigate();
-// Temp comment
   const location = useLocation();
 
   useEffect(async () => { // Submit data
@@ -245,6 +244,7 @@ export default function RegistrationForm() {
           />
           <FormInput
             type='text'
+// Temp comment
             name='referredBy'
             placeholder={`How did ${pronoun} hear about us?`} 
             value={formObj.referredBy}
