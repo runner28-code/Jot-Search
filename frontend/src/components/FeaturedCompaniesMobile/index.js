@@ -13,7 +13,6 @@ export default function FeaturedCompaniesMobile() {
       key: 'status',
       value: 'active'
     }
-// Temp comment
   ];
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});

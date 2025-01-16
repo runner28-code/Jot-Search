@@ -44,7 +44,6 @@ export default function CompanyCard({ data }) {
         </div>
         <div className='grow'>
           {/* Title */}
-          <div className='flex'>
             <CompanyIcon className='w-8 h-8 mr-6 fill-royalBlue ' />
             <h6 className='text-xl font-spaceGrotesk font-semibold text-charcoal leading-none'>{data.name}</h6>
           </div>
@@ -82,7 +81,6 @@ export default function CompanyCard({ data }) {
             <div className='w-1/3 flex items-center'>
               <img
                 src={websiteIcon}
-// Temp comment
                 className='h-8 mr-5 ml-1' />
               <a
                 href='#'

@@ -115,7 +115,6 @@ export default function Footer() {
           className={socialIconStyle}
         />
       </a>
-      <a href={ROUTES.instagram}>
         <img
           src={instagram}
           className={socialIconStyle}
@@ -154,7 +153,6 @@ export default function Footer() {
               href='https://talent.intulsa.com/'
               target='_blank'
               rel='noopener noreferrer'
-// Temp comment
             >
               <img
                 src={intulsaTalentLogo}

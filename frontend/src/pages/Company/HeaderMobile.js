@@ -30,7 +30,6 @@ function HeaderContent({ companyData }) {
           <div className='basis-4/6'>
             <h4 className={ headerTitle }>
               {companyData.name}
-// Temp comment
             </h4>
             <div className='flex items-center'>
               <div className={ headerGroupStyles }>
@@ -54,6 +53,7 @@ function HeaderContent({ companyData }) {
         </div>
 
         <FavoriteButton
+// Temp comment
           type={'company'}
           data={companyData} />
       </div>

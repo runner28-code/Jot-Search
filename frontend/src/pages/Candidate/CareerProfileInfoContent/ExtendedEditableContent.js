@@ -35,7 +35,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     workspace: candidateData?.workspace || '',
     experience: candidateData?.experience || '',
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
-// Temp comment
     linkedin: candidateData?.linkedin || '',
     resume: candidateData?.resume || '',
   });

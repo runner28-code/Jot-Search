@@ -18,6 +18,5 @@ const job_filter_exclude_keys = [
     "americorps",
     "analyzer tech",
     "anestesia",
-    "animal",
     "animal control",
     "aquatics",

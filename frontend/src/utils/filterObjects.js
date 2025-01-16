@@ -93,6 +93,7 @@ export const candidateFilterObject = {
     'Yes',
     'No'
   ],
+  'Degree': [
     'Any',
     ...educationChoices
   ],
@@ -122,6 +123,7 @@ export const defaultCandidateFilterState = {
 
 /* UTIL FUNCTIONS */
 export function buildSearchFilters(filterObject) {
+// Temp comment
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = [];
   Object.keys(filterObject).forEach(key => {

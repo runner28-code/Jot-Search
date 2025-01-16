@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 
 export default function Checkbox({ id, checked, onChange, styles }) {

@@ -12,6 +12,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
   const filtersArr = [
     {
       key: 'status',
+      value: ['Active', 'Open']
     },
     {
       key: 'companyId',

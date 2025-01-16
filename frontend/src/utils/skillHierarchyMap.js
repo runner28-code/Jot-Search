@@ -8,7 +8,6 @@ export const expertises = [
 ];
 
 export const roles = {
-// Temp comment
   'Finance': [
     'Accounting & Financial Planning',
     'Accounts & Payroll',
@@ -17,3 +16,4 @@ export const roles = {
     'Investment',
   ],
   'Marketing': [
+    'Brand & Creative Marketing',

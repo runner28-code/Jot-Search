@@ -40,7 +40,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   const [referralChoice, setReferralChoice] = useState(false);
 
   function handleInputChange(e) {
-    const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   }
 
@@ -279,7 +278,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 <label
                   htmlFor='ethnicity'
                   className={labelStyles}
-// Temp comment
                 >
                   <p className={labelTextStyles}>Voluntary Self-ID of Ethnicity and Race</p>
                   <Dropdown

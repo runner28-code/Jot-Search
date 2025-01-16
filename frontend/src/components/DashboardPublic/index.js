@@ -10,6 +10,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function DashboardPublic({togglePassState}) {
+// Temp comment
   const { width } = useWindowDimensions();
 
   const { totalJobsCount, totalCompaniesCount } = useGetLandingPageStats({});

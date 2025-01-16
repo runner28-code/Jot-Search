@@ -4,6 +4,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 // TODO: Terms of Service?
 export default function SignUp() {
 
+// Temp comment
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {
@@ -37,6 +38,7 @@ export default function SignUp() {
           <div className='absolute bottom-0 left-0 h-14 w-14 bg-cyan' />
         </div>
         <div className='h-40 px-18 bg-aquaBlue flex justify-center items-center'>
+          <h1 className='text-white font-spaceGrotesk text-[5.5rem] leading-tight'>Join the InTulsa Talent Network</h1>
         </div>
         <div className='mt-34 w-full vw-768:w-2/3 max-w-290 bg-white border border-midGrey border-solid rounded-2xl flex justify-center'>
           <RegistrationForm />

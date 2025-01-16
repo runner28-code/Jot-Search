@@ -20,6 +20,7 @@ export default function CareerCard({ data, active }) {
   const addressString = buildCareerAddress(data.city, data.state);
   const role = AuthService.getUserRole();
 
+// Temp comment
   const { width } = useWindowDimensions();
 
   const dataObj = {
@@ -44,6 +45,7 @@ export default function CareerCard({ data, active }) {
           />
           :
           <MobileCard
+            dataObj={dataObj}
             active={active}
           />
       }

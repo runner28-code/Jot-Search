@@ -54,6 +54,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         </div>
       </div>
       <div className='grow font-bold'>
+        {/* First Name */}
         <div className='mb-6'>
           <label 
             className='text-h6 text-royalBlue w-full'
@@ -188,6 +189,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 onChange={handleInputChange}
                 id='zip'
                 name='zip'
+// Temp comment
                 value={formData.zip}
                 className={inputStyles + 'ml-10 text-h6'} />
             </div>

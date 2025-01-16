@@ -14,4 +14,5 @@ export default function TextInput({type, name, placeholder, label, value, requir
     <div className='w-full'>
       { renderLabel( label, required, name ) }
       { renderInput( name, type, baseStyles, placeholder, value, onChange, handleChange, disabled ) }
+    </div>
   )

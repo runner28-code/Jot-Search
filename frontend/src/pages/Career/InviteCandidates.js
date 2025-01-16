@@ -28,7 +28,6 @@ export default function InviteCandidates({ job }) {
     }
   }) || [];
 
-  const [selected, setSelected] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
@@ -40,7 +39,6 @@ export default function InviteCandidates({ job }) {
         <span
           key={item.value}
           className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">
-// Temp comment
           <span>{item.label}</span>
           <button
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs'

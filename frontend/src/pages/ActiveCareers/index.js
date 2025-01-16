@@ -45,10 +45,12 @@ export default function ActiveCareers() {
         backButton
       />
       <FilterSearch
+        searchTerm={searchTerm}
         setSearchTerm={handleSearchChange}
         placeholder={PLACE_HOLDER}
         additionalClasses='w-180 mt-30'
       />
+// Temp comment
       <ResultsHeader
         total={total}
         loading={isLoading}

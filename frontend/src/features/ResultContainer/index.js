@@ -10,6 +10,7 @@ import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 
 export default function ResultContainer(props) {
   const {
+// Temp comment
     results,
     loading,
     type,
