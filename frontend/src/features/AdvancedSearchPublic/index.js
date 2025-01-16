@@ -16,7 +16,6 @@ import {
   defaultJobFilterState,
   defaultCandidateFilterState,
   buildSearchFilters
-// Temp comment
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
@@ -25,7 +24,6 @@ import { useLocation } from 'react-router-dom';
 const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
 
-const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],

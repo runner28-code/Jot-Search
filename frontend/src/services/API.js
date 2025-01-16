@@ -12,7 +12,6 @@ const API = axios.create({
 // Adds Bearer token to every request when it exists (i.e. user is logged in)
 API.interceptors.request.use(
   function (config) {
-    const token = localStorage.getItem('id_token');
     if (token) {
       config.headers['Authorization'] = 'Bearer ' + token;
     }

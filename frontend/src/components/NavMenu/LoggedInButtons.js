@@ -8,7 +8,6 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
   const linkStyles = stylesObject.baseLinkStyles + ' vw-1280:rounded-tl-xl';
   return (<>
     <Link 
-      to={ROUTES.profile}
       onClick={handleOptionClick}
       className={linkStyles}
     >

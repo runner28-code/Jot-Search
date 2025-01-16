@@ -14,7 +14,6 @@ import {
   Apply
 } from './pages';
 import { NavBar, Footer, SideNav } from './components';
-import AuthService from './services/auth';
 
 function App() {
   let userRole = AuthService.getUserRole();
@@ -27,7 +26,6 @@ function App() {
         <div 
           className='grow min-h-280 pb-18'>
           <Routes>
-// Temp comment
             <Route
               path={ROUTES.signup}
               element={<SignUp />} />

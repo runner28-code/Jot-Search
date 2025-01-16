@@ -1,6 +1,5 @@
 import { Navigate } from 'react-router-dom';
 import headerIcon from '../../assets/icons/user-folder.png';
-// Temp comment
 import PageHeader from '../../components/PageHeader';
 import AdvancedSearch from '../../features/AdvancedSearch';
 import AuthService from '../../services/auth';
@@ -19,5 +18,4 @@ export default function Candidates() {
         icon={headerIcon}
       />
       <AdvancedSearch disabledTabs />
-    </section>
   )

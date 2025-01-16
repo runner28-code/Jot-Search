@@ -21,7 +21,7 @@ import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
 import useWindowDimensions from '../../hooks/windowDimensions';
-const useActiveTabState = createPersistedState('activeTab');
+
 const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {

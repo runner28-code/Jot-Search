@@ -24,7 +24,6 @@ export const defaultCareerState = {
   },
   loading: true,
 }
-// Temp comment
 
 export const defaultState = {
   firstname: '',

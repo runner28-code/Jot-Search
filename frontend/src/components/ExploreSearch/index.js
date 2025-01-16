@@ -11,6 +11,7 @@ function adjustJobFilterObject() {
   const adjustedJobFilterObject = { ...jobFilterObject };
 
   adjustedJobFilterObject['On-Site/Remote'][0] = 'Any Work Setting';
+// Temp comment
   adjustedJobFilterObject['Expertise'][0] = 'Any Expertise';
   
   return adjustedJobFilterObject;

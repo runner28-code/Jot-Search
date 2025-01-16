@@ -23,6 +23,7 @@ export default function FeaturedCompaniesMobile() {
       <h2 className='text-h5 text-center font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
       <div className='flex flex-wrap mt-8 justify-center'>
         {
+          isLoading ?
             <LoadingSpinner />
             :
             companies.map((company, index) =>

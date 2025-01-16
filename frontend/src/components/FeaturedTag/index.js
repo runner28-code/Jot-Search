@@ -6,7 +6,6 @@ export default function FeaturedTag ({ hide, addClass }) {
   const allClasses = classes += addClass;
   if( hide ) {
     return null;
-// Temp comment
   }
   return (
     <span className={ allClasses }>
@@ -16,5 +15,4 @@ export default function FeaturedTag ({ hide, addClass }) {
         alt='featured icon'
       />
       InTulsa Featured
-    </span>
   )

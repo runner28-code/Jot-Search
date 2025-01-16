@@ -32,6 +32,7 @@ export const choices = {
     link: ROUTES.careers,
   },
   companies: {
+    label: 'Companies',
     icon: CompanyIcon,
     link: ROUTES.companies,
   },
@@ -79,7 +80,6 @@ export const candidateChoices = [
   choices.myApplications,
   choices.myFavorites,
   choices.careers,
-  choices.companies,
   choices.talentInTulsa,
   choices.logout
 ];

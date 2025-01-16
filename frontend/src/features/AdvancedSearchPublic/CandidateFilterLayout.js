@@ -5,7 +5,6 @@ import AuthService from '../../services/auth';
 
 const dropdownFiltersCoord = [
   'Category',
-  'Experience',
   'Remote Availability',
   'Employment Type',
   'Status'
@@ -34,7 +33,6 @@ export default function CandidateFilterLayout(props) {
     handleFilterChange,
     searchTerm,
     setSearchTerm,
-// Temp comment
     handleSearchClick,
     clearFilters,
   } = props;

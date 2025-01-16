@@ -14,3 +14,5 @@ export const roles = {
     'Corporate Finance',
     'Banking',
     'Investment',
+  ],
+  'Marketing': [

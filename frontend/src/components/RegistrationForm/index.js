@@ -53,7 +53,6 @@ export default function RegistrationForm(loggedIn) {
   const [errorBlock, setErrorBlock] = useState('');
   const [referralChoice, setReferralChoice] = useState(false);
   const [commObj, setCommObj] = useState(defaultCommunity);
-// Temp comment
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
@@ -402,7 +401,6 @@ export default function RegistrationForm(loggedIn) {
             value={formObj.password}
             onChange={handleChange}
             error={errors.includes('password')}
-          />
           <FormInput
             type='password'
             name='verifyPassword'

@@ -7,3 +7,4 @@ import {
   Put,
   Delete,
   QueryParam,
+  UploadedFile,

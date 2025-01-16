@@ -1,4 +1,3 @@
-import {
   Body,
   Get,
   Post,
@@ -15,3 +14,5 @@ import { User } from "../types/User";
 import { COMPANY } from "../utils/constant";
 
 import db from "../utils/db";
+
+import { JobFilter, USER_FILTER } from "../utils/FieldMatch";

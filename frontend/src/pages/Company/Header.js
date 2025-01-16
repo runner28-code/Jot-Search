@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 // import FeaturedTag from '../../components/FeaturedTag';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
@@ -20,6 +21,7 @@ function HeaderContent({ companyData }) {
   const headerRowStyles = 'flex mb-8 flex-row justify-between flex-wrap';
   const headerIconStyles = 'h-12 w-10 mr-3 fill-midGrey';
   const headerRowTextStyles = 'text-md text-textBlack ';
+// Temp comment
   const headerGroupStyles = 'flex items-center basis-1/2 my-4';
   const headerGroupStylesDesktop = 'flex items-center basis-1/3 my-4';
   const headerTitle = 'text-h4 font-spaceGrotesk font-semibold basis-2/3';

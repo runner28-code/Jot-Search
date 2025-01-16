@@ -24,6 +24,7 @@ export default function ResetPassword() {
   }
 
 
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -142,7 +143,6 @@ export default function ResetPassword() {
           href='mailto:help@intulsa.com'
           className='text-sm vw-640:text-ml text-royalBlue underline'
         >
-          help@intulsa.com
         </a>
       </div>
     </section>
