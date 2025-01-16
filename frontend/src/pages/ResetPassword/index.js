@@ -24,7 +24,6 @@ export default function ResetPassword() {
   }
 
 
-
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -114,7 +113,6 @@ export default function ResetPassword() {
           <input
             className={inputStyle}
             id='password'
-// Temp comment
             type='password'
             name='password'
             onChange={handlePassword}

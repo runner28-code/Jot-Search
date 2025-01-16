@@ -53,6 +53,7 @@ export default function RegistrationForm(loggedIn) {
   const [errorBlock, setErrorBlock] = useState('');
   const [referralChoice, setReferralChoice] = useState(false);
   const [commObj, setCommObj] = useState(defaultCommunity);
+// Temp comment
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
@@ -185,7 +186,6 @@ export default function RegistrationForm(loggedIn) {
 
 
   // Alter header and pronoun based on who is registering the new user
-// Temp comment
   const pronoun = addType === 'candidate' ? 'you' : 'they';
   const buttonString = addType === 'candidate' ? 'Join' : 'Add Candidate';
 

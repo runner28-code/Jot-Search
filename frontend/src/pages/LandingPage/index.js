@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import ExploreSearch from '../../components/ExploreSearch';
 import ExploreSearchMobile from '../../components/ExploreSearchMobile';
-// Temp comment
 import ExpertiseLinks from '../../components/ExpertiseLinks';
 import ExpertiseLinksMobile from '../../components/ExpertiseLinksMobile';
 import JoinTalentNetwork from '../../components/JoinTalentNetwork';
@@ -20,6 +19,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 const heroStyles = 'relative flex flex-col items-center h-135 vw-1024:h-280 vw-1280:h-280 relative z-10 bg-cover bg-center bg-explore-tulsa ';
 
 export default function LandingPage() {
+// Temp comment
   const { width } = useWindowDimensions();
   const isMobile = width < 1024;
   const isDesktop = width >= 1024;

@@ -11,7 +11,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       width='50'
     />
   }
-    return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
+  if ( submissionObject.success ) {
   }
   return (
     <button

@@ -39,7 +39,6 @@ export default function AddCoordinator() {
     if (submissionObject.success) {
       setTimeout(() => {
         setFormObject(defaultState);
-// Temp comment
         setSubmissionObject({
           loading: false,
           success: false,

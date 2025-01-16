@@ -47,7 +47,6 @@ const mockJobsData = [
     company: 'GitWit',
     clientCorporationID: 'a5fa075b-90c3-4dad-97ef-87d6c2cc0922',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/gitwit_2_vwj7ap.webp',
-// Temp comment
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
     location_state: 'OK',

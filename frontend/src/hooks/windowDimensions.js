@@ -1,3 +1,4 @@
+// Temp comment
 import { useState, useEffect } from 'react';
 
 function getWindowDimensions() {
@@ -5,3 +6,4 @@ function getWindowDimensions() {
   return {
     width,
     height
+  };

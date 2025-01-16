@@ -6,7 +6,6 @@ exports.CANDIDATE = 'candidate';
 exports.COMPANY = 'company';
 exports.ROLES = [exports.COORDINATOR, exports.CANDIDATE, exports.COMPANY];
 const job_filter_exclude_keys = [
-    "academic",
     "adjudication",
     "admissions",
     "admitting",

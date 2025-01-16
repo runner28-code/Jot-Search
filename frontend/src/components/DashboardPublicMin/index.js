@@ -55,6 +55,7 @@ export default function DashboardPublicMin({type}) {
           <Link
             className={type === 'company' ? buttonStylesRight + active : buttonStylesRight }
             to={ROUTES.companies}
+          >
             <CompanyIcon />
             <p className='ml-4'>Companies</p>
           </Link>

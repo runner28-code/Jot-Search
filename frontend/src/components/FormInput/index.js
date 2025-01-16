@@ -55,7 +55,6 @@ export default function FormInput(props) {
       return <AccessibleDropdown
         type={type}
         name={name}
-// Temp comment
         label={label}
         placeholder={placeholder}
         currentChosen={value}
@@ -86,6 +85,7 @@ export default function FormInput(props) {
     default: // type == 'text' || 'password'
       return <TextInput
         type={type}
+// Temp comment
         name={name}
         label={label}
         required={required}

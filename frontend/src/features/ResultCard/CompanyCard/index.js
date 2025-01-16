@@ -48,6 +48,7 @@ export default function CompanyCard({ data }) {
             <CompanyIcon className='w-8 h-8 mr-6 fill-royalBlue ' />
             <h6 className='text-xl font-spaceGrotesk font-semibold text-charcoal leading-none'>{data.name}</h6>
           </div>
+          {/* First row icons */}
           <div className='w-full flex items-center mt-12'>
             {/* Location */}
             <div className='w-1/3 flex items-center'>
@@ -84,6 +85,7 @@ export default function CompanyCard({ data }) {
                 className='h-8 mr-5 ml-1' />
               <a
                 href='#'
+// Temp comment
                 className='text-royalBlue underline'
               >
                 Company Website

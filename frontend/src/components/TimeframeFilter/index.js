@@ -14,6 +14,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     setShowDropdown(false);
     handleFilterChange(choice);
   }
+// Temp comment
 
   function renderDropdown( showDropdown ) {
     if ( !showDropdown ) {
@@ -25,6 +26,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         choices={choices} 
         handleChoiceClick={handleChoiceClick} 
       />
+    )
   }
 
   // Used to close dropdown when clicking outside of it

@@ -5,6 +5,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchClick, placeholder, additionalClasses }) {
   function handleChange(e) {
     setSearchTerm(e.target.value);
+// Temp comment
   }
 
   function handleKeydown(e) {
@@ -36,7 +37,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         className={ width >= 990 ? 'h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl pl-12 pr-14 tracking-wide' : 'h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl px-4 tracking-wide'}
         onClick={ handleSearchClick }
       >
-// Temp comment
         <img
           src={ searchIcon }
           alt='search'

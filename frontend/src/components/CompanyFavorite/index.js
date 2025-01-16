@@ -6,6 +6,7 @@ import AuthService from '../../services/auth';
 import CompanyCard from '../../features/ResultCard/CompactCompanyCard';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 
 export default function CareerFavorite () {
 
@@ -32,6 +33,7 @@ export default function CareerFavorite () {
                   index={index}
                   data={company}
                   agoDate={company.agoDate}
+                />
               </>)
             })
         }

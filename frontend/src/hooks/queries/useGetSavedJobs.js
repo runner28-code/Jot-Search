@@ -9,6 +9,7 @@ export const useGetSavedJobs = ({ count, page, userId, enabled = true }) => {
   const { data, error, isLoading } = useQuery(
     getJobsKey({userId, count, page}),
     () => getSavedJobs(userId, count, page),
+    { enabled }
   );
 
   return { savedJobs: data, total: data?.total || 0, error, isLoading };

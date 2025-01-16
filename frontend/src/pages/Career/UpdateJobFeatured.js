@@ -46,7 +46,6 @@ export const UpdateJobFeatured = ({ job }) => {
         </button>
       
         <label 
-          htmlFor='featured' 
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured
         </label>

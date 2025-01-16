@@ -32,12 +32,12 @@ export const choices = {
     link: ROUTES.careers,
   },
   companies: {
-    label: 'Companies',
     icon: CompanyIcon,
     link: ROUTES.companies,
   },
   candidates: {
     label: 'Candidates',
+    icon: CandidatesIcon,
     link: ROUTES.candidates,
   },
   myApplications: {

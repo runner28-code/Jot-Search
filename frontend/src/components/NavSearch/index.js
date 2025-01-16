@@ -49,7 +49,6 @@ export default function NavSearch({ placeholder }) {
       return { filterKey: 'name', filterValue: searchTerm }
     }
   };
-
   const [isOpen, setIsOpen] = useState(false);
 
   const { jobs, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('jobs'), count: NUM_ITEMS_PER_TYPE, page: 1, enabled: isOpen });

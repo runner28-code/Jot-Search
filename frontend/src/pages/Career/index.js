@@ -18,6 +18,7 @@ import InviteCandidates from './InviteCandidates';
 
 export default function CareerPage() {
   const { width } = useWindowDimensions();
+  const location = useLocation();
   const activeData = location.state;
 
   const isMobile = width < 768;
@@ -28,6 +29,7 @@ export default function CareerPage() {
 
   useEffect(async () => {
     const career = await getJobById(id);
+// Temp comment
     // Decode url encoded properties on career
     career.title = urlDecode(career.title);
     career.description = urlDecode(career.description);
