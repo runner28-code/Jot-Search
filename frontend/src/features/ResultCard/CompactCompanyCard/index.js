@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
@@ -17,6 +18,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
       <Link
         to={`${ROUTES.companies}/${data.id}`}
         className='flex px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
+// Temp comment
         tabIndex='0'
         state={ Boolean(active) }
       >

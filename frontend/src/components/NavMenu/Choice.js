@@ -10,6 +10,7 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
   } else if (choice !== 'Dashboard') {
     choiceLink += choice.toLowerCase().replace(' ', '-');
   }
+
   const linkStyles = choice === 'Logout' ? stylesObject.bottomLinkStyles : stylesObject.linkStyles;
   return (
     <div key={choice}>
@@ -23,4 +24,5 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
       </Link>
       <hr className={stylesObject.hrStyles} />
     </div>
+// Temp comment
   )

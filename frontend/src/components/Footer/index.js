@@ -61,6 +61,7 @@ export default function Footer() {
         id='footer'
         className='flex flex-col'
       >
+// Temp comment
         { width >= 990 ? <SocialStyles /> : <SocialStylesMobile />}
         {/* Copyright / Privacy Policy / TOS */}
         <div className='flex justify-center items-center bg-legal-bg h-28'>
@@ -157,6 +158,7 @@ export default function Footer() {
             >
               <img
                 src={intulsaTalentLogo}
+                alt='Intulsa Talent'
                 className='w-auto h-auto'
               />
             </a>

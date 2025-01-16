@@ -32,7 +32,6 @@ export default function TypeaheadDropdown(props) {
       onChange(name, currentChosen.filter(item => item !== choice));
     }
   }, [onChange])
-// Temp comment
 
   /* Close dropdown on any outside clicks */
   useEffect(() => {
@@ -47,6 +46,7 @@ export default function TypeaheadDropdown(props) {
     }
   }, [inputValue]);
 
+// Temp comment
   function handleInputChange(event) {
     setInputValue(event.target.value);
   }

@@ -16,7 +16,6 @@ import {
   jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,
-// Temp comment
   buildSearchFilters
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
@@ -28,7 +27,6 @@ const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'careers', 'companies'],
-  company: ['careers', 'candidates' ],
   candidate: ['careers', 'companies'],
   guest: ['careers', 'companies'],
 }

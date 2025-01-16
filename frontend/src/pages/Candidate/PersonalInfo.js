@@ -90,6 +90,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
 
   function onSubmit(e) {
     e.preventDefault();
+  }
 
   const isSourceUserTable = candidateData.sourceTable
 
@@ -176,7 +177,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
               </label>
             </div>
             <div className='vw-1280:flex gap-12'>
-              <label
                 htmlFor='address1'
                 className={labelStyles}
               >

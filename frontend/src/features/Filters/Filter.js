@@ -36,6 +36,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setShowDropdown);
   }, [showDropdown]);
+
   const dropdownBorder = showDropdown ? ' border-2 rounded-t-lg' : ' border-2 rounded-lg';
   const filterStyles = 'flex justify-between items-center pl-[18px] pr-s py-[9px] border-lightGrey bg-white cursor-pointer w-full ' + dropdownBorder;
   const containerStyles = 'relative grow flex-[1_1_30%]';
@@ -63,6 +64,5 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
         />
 
       </div>
-      { renderDropdown( showDropdown, choices, handleChoiceClick ) }
     </div>
   )

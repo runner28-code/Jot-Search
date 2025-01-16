@@ -62,11 +62,9 @@ export const candidateFilterObject = {
     ...expertises
   ],
   'Experience': [
-    'Any',
     ...experienceValues
   ],
   'Open to Relocation': [
-// Temp comment
     'Any',
     'Yes',
     'No'

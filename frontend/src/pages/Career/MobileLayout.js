@@ -16,12 +16,12 @@ const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-xl text-charco
 const hrStyles = 'mb-10 border-midGrey ';
 
 export default function MobileLayout(props) {
-// Temp comment
   const {
     careerData,
     categoryString,
     addressString,
     salaryString,
+// Temp comment
     postingAge,
     role
   } = props.data;

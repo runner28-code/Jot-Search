@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 import Dropdown from '../../components/UniversalDropdown/index';
-// Temp comment
 import { useState } from 'react';
 
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charcoal mb-m ';
@@ -20,7 +19,6 @@ export const UpdateJobStatus = ({ job }) => {
         <h4 className={sectionHeaderStyles}>Career Status</h4>
         {isLoading && <p>Loading...</p>}
         {isSuccess && <p>Success!</p>}
-        <Dropdown 
           choices={[
             'Active',
             'Inactive',

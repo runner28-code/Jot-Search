@@ -240,7 +240,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
                   disabled={disabled}
                 />
                 <UploadIcon className='h-16 w-16 fill-gray-600' />
-                <p>Upload</p>
               </label>
             </div>
           )}
