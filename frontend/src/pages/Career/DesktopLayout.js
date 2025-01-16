@@ -21,7 +21,6 @@ export default function DesktopLayout(props) {
     careerData,
     categoryString,
     addressString,
-    salaryString,
     postingAge,
     role,
   } = props.data;

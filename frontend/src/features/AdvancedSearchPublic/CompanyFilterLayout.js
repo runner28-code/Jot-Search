@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 export default function CompanyFilterLayout(props) {
   const {
@@ -26,6 +25,7 @@ export default function CompanyFilterLayout(props) {
           onClick={clearFilters}
         >
           Clear All
+// Temp comment
         </button>
       </div>
     </div>

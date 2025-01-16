@@ -35,6 +35,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     workspace: candidateData?.workspace || '',
     experience: candidateData?.experience || '',
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
+// Temp comment
     linkedin: candidateData?.linkedin || '',
     resume: candidateData?.resume || '',
   });
@@ -240,6 +241,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
                   disabled={disabled}
                 />
                 <UploadIcon className='h-16 w-16 fill-gray-600' />
+                <p>Upload</p>
               </label>
             </div>
           )}

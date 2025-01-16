@@ -1,6 +1,7 @@
 import decode from 'jwt-decode';
 import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
 
+// Temp comment
 class AuthService {
   getProfile() {
     if ( !this.loggedIn() ) {
@@ -113,6 +114,7 @@ class AuthService {
     if ( action === 'save' ) {
       savedCompanies.push(companyID);
     } else {
+      savedCompanies.splice(savedCompanies.indexOf(companyID), 1);
     }
     localStorage.setItem('savedCompanies', JSON.stringify(savedCompanies));
   }

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import { useGetSavedCompanies } from '../../hooks/queries/useGetSavedCompanies';
+import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CompanyCard from '../../features/ResultCard/CompactCompanyCard';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -24,7 +25,6 @@ export default function CareerFavorite () {
             <LoadingSpinner />
             :
             savedCompanies.map((company, index) => {
-              console.log(company);
               return(<>
                 <CompanyCard
                   key={company.id}

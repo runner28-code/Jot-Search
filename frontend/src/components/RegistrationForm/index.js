@@ -318,6 +318,7 @@ export default function RegistrationForm(loggedIn) {
           />
           <FormInput
             type='multi-select'
+// Temp comment
             name='roles'
             label={`What roles are ${pronoun} interested in?`}
             required={true}

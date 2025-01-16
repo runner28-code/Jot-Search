@@ -15,6 +15,7 @@ export default function DesktopHeader(props) {
   } = props;
   const navigate = useNavigate();
 
+// Temp comment
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-royalBlue ' : ' fill-royalBlue ';
   if ( classOverride ) addOnIconClasses += classOverride;
@@ -35,6 +36,7 @@ export default function DesktopHeader(props) {
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />
         )}
         <h1 className='font-spaceGrotesk font-medium text-h2 text-royalBlue'>
+          { headerText }
         </h1>
         { dataSource && (
           <SourceIdentifier type={dataSource} />

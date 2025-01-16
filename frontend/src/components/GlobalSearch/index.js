@@ -76,6 +76,7 @@ export default function GlobalSearch({ placeholder }) {
 
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
+// Temp comment
   }, [closeDropdown]);
   
   /* STYLES & RENDER */

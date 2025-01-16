@@ -62,6 +62,7 @@ export const candidateFilterObject = {
     ...expertises
   ],
   'Experience': [
+    'Any',
     ...experienceValues
   ],
   'Open to Relocation': [
@@ -92,7 +93,6 @@ export const candidateFilterObject = {
     'Yes',
     'No'
   ],
-  'Degree': [
     'Any',
     ...educationChoices
   ],

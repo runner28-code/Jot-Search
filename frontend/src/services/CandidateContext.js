@@ -99,7 +99,6 @@ const mockCandidateData = [
 
 export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
-// Temp comment
 
 const CandidateProvider = ({children}) => {
   const [candidates, setCandidates] = useState(mockCandidateData);
@@ -117,6 +116,7 @@ const CandidateProvider = ({children}) => {
     setCandidates(value);
   }
 
+// Temp comment
   const handleCandidateUpdate = (updatedValues) => {
     const currentCandidateData = candidates.find(candidate => candidate.id === updatedValues.id);
     const updatedCandidate = { ...currentCandidateData, ...updatedValues };

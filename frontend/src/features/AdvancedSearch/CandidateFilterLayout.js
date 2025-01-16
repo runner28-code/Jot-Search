@@ -30,7 +30,6 @@ const checkboxFilters = [
   'Open to Relocation',
   'Actively Looking',
 ];
-// Temp comment
 
 export default function CandidateFilterLayout(props) {
   const {
@@ -58,6 +57,7 @@ export default function CandidateFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
     checkboxFilters.forEach(filter => {
+// Temp comment
       checkboxFilterObject[filter] = filterObject[filter];
     });
   }

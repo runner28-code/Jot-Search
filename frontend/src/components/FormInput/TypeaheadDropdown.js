@@ -46,7 +46,6 @@ export default function TypeaheadDropdown(props) {
     }
   }, [inputValue]);
 
-// Temp comment
   function handleInputChange(event) {
     setInputValue(event.target.value);
   }

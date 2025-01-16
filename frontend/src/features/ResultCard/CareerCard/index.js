@@ -38,14 +38,12 @@ export default function CareerCard({ data, active }) {
     >
       {
         width > 768 ?
-// Temp comment
           <DesktopCard
             dataObj={dataObj}
             active={active}
           />
           :
           <MobileCard
-            dataObj={dataObj}
             active={active}
           />
       }

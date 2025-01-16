@@ -25,6 +25,7 @@ export default function InviteCandidates({ company }) {
     }
   }) || [];
   
+// Temp comment
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();
