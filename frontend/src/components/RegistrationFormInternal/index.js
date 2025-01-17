@@ -165,6 +165,7 @@ export default function RegistrationFormInternal(loggedIn) {
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
       setReferralChoice(true);
+    }
     if( value !== 'Community Partner' ) {
       setReferralChoice(false);
       setCommObj({

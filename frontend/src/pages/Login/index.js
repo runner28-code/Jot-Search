@@ -15,7 +15,6 @@ export default function Login() {
     const res = await API.post(ROUTES.APIlogin, {
       email: email.value,
       password: password.value,
-    });
 
     if ( res.data.result ) {
       AuthService.login(res.data.token);

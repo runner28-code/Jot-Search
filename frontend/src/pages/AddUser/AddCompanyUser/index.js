@@ -40,7 +40,6 @@ export default function AddCompanyUser() {
         <p className={paragraphStyles}><strong>Reminder:</strong> please identify the company point of contact to associate to the company in Getro.</p>
         <div className='flex mt-8'>
           <ExternalLink
-            text='Go to Getro'
             href='https://www.getro.com/'
             addClass='mr-8'
           />

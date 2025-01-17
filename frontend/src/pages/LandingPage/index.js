@@ -44,7 +44,6 @@ export default function LandingPage() {
       {/* Featured Companies */}
       { isDesktop ? <FeaturedCompanies /> : <FeaturedCompaniesMobile />}
       { isDesktop && <JoinTalentNetwork /> }
-// Temp comment
       { isDesktop ? <BusinessBooming /> : <BusinessBoomingMobile />}
     </main>
   )

@@ -9,7 +9,6 @@ datasource db {
 
 model Application {
   id String @id @default(uuid())
-
   userId String
   user   User   @relation("userApplications", fields: [userId], references: [id])
 

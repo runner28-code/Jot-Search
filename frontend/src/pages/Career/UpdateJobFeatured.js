@@ -52,4 +52,3 @@ export const UpdateJobFeatured = ({ job }) => {
         </label>
       </div>
     </div>
-  )

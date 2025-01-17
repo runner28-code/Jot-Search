@@ -9,6 +9,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 
 export default function ResultContainer(props) {
+// Temp comment
   const {
     results,
     loading,
@@ -28,6 +29,7 @@ export default function ResultContainer(props) {
 
   function renderHeader() {
     if ( !header ) {
+      return null;
     }
 
     return <h5 className={resultsHeaderStyles}>{header}</h5>;

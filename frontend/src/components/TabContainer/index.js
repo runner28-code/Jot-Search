@@ -14,5 +14,4 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
           isLocked={isLocked}
         />
       })}
-    </div>
   )

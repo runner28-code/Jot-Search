@@ -87,6 +87,7 @@ export default function FormInput(props) {
         type={type}
         name={name}
         label={label}
+        required={required}
         placeholder={placeholder}
         value={value}
         onChange={onChange}

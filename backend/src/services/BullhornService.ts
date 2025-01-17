@@ -15,6 +15,5 @@ import { User } from "../types/User";
 import { Job } from "prisma/prisma-client";
 import { sendEmail } from "./EmailService";
 import { JOB_FIELDS } from "../utils/constant";
-
 export class BullhornService {
   public static client: BullhornService | null = null;

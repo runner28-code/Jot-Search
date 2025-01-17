@@ -4,6 +4,7 @@ import { getCategories } from './API';
 
 export const CategoryContext = createContext();
 
+const CategoryProvider = ({children}) => {
   const [categories, setCategories] = useState([]);
 
   useEffect( async () => {
@@ -16,5 +17,4 @@ export const CategoryContext = createContext();
   return (
     <CategoryContext.Provider value={{ categories }}>
       {children}
-    </CategoryContext.Provider>
   )

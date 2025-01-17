@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import OtherCareers from '../../features/OtherCareers';
 import featuredIcon from '../../assets/icons/pyramid.svg';
-// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import locationIcon from '../../assets/icons/placepin.svg';
@@ -59,6 +58,7 @@ export default function DesktopLayout(props) {
                 src={locationIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{addressString}</p>
+// Temp comment
             </div>
             {/* Remote/Onsite/Hybrid */}
             <div className='w-1/3 flex items-center'>

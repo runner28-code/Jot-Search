@@ -16,7 +16,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
   return (
     <div
       className='relative'
-      key={data.id}
     >
       <Link
         to={`${ROUTES.careers}/${data.id}`}
