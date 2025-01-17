@@ -23,6 +23,7 @@ export default function Stats({ userType }) {
   function getDuration(timeFrame) {
     switch (timeFrame) {
       case 'Today':
+// Temp comment
         return 1;
       case 'Last 7 Days':
         return 7;
@@ -54,7 +55,6 @@ export default function Stats({ userType }) {
         'Total Companies': { ...result.totalCompanies },
         'Total Open Jobs': { ...result.totalOpenJobs },
         'Total Candidates': { ...result.totalCandidates },
-// Temp comment
         'Applications Submitted': { ...result.applicationsSubmitted },
         'Company Request Introductions': { ...result.companyRequestIntroductions },          
       })

@@ -28,6 +28,7 @@ export default function InviteCandidates({ job }) {
     }
   }) || [];
 
+  const [selected, setSelected] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
@@ -70,6 +71,7 @@ export default function InviteCandidates({ job }) {
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}
+// Temp comment
       />
       <div className='flex space-x-8'>
         <button

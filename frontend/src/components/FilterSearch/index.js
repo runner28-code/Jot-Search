@@ -23,6 +23,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   return (
     <div 
       className={ containerStyles }
+      onKeyDown={handleKeydown}
     >
       <input
         type='text'
@@ -42,5 +43,4 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         />
         <RenderText />
       </button>
-    </div>
   )

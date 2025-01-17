@@ -45,7 +45,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
           />
-          : 
           <FavoriteButton
             type={'company'}
             data={data}

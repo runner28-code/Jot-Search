@@ -115,6 +115,7 @@ export default function Footer() {
           className={socialIconStyle}
         />
       </a>
+      <a href={ROUTES.instagram}>
         <img
           src={instagram}
           className={socialIconStyle}

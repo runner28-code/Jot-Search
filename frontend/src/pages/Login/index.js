@@ -93,4 +93,5 @@ export default function Login() {
           </a>
         </div>
       </div>
+    </section>
   )

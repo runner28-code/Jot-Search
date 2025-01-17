@@ -20,3 +20,4 @@ const job_filter_exclude_keys = [
   "animal control",
   "aquatics",
   "art",
+  "assembler",

@@ -54,6 +54,5 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           Synch
         </button>
       </>)}
-// Temp comment
     </div>
   )

@@ -10,7 +10,6 @@ import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 
 export default function ResultContainer(props) {
   const {
-// Temp comment
     results,
     loading,
     type,
@@ -29,7 +28,6 @@ export default function ResultContainer(props) {
 
   function renderHeader() {
     if ( !header ) {
-      return null;
     }
 
     return <h5 className={resultsHeaderStyles}>{header}</h5>;

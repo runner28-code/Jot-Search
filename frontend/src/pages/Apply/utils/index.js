@@ -1,6 +1,5 @@
 import { updateUser, uploadFile } from '../../../services/API';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../../utils/dbFieldMapping';
-import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 import PropTypes from 'prop-types';
 
@@ -39,6 +38,7 @@ export const defaultState = {
   disability: '',
   veteran: '',
   loading: true
+}
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
   function handleChange(e) {

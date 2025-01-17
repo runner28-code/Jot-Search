@@ -28,9 +28,9 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         className={ inputStyles }
         placeholder={ placeholderString }
         value={ searchTerm }
+// Temp comment
         onChange={ handleChange }
       />
-// Temp comment
       <button
         className='h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl pl-8 pr-14 tracking-wide'
         onClick={ handleSearchClick }

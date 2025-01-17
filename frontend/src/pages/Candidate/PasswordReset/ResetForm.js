@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import FormInput from '../../../components/FormInput';
+// Temp comment
 import API from '../../../services/API';
 import * as ROUTES from '../../../routes';
 
@@ -37,7 +38,6 @@ export default function ResetForm({ candidateData, setType }) {
   function handleChange(name, value) {
     setFormData({
       ...formData,
-// Temp comment
       [name]: value,
     });
   }

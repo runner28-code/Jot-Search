@@ -57,7 +57,6 @@ export default function CandidateFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
     checkboxFilters.forEach(filter => {
-      checkboxFilterObject[filter] = filterObject[filter];
     });
   }
 
@@ -102,7 +101,6 @@ export default function CandidateFilterLayout(props) {
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
         >
-// Temp comment
           Clear All
         </button>
       </div>

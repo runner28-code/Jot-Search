@@ -36,6 +36,7 @@ export const choices = {
     icon: CompanyIcon,
     link: ROUTES.companies,
   },
+// Temp comment
   candidates: {
     label: 'Candidates',
     icon: CandidatesIcon,
@@ -98,6 +99,7 @@ export const coordinatorChoices = [
   choices.careers,
   choices.companies,
   choices.addUser,
+  choices.logout
 ];
 export const guestChoices = [
   choices.careers,

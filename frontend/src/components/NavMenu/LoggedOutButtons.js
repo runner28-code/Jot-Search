@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import { MdLogin } from 'react-icons/md';
 import { FaUserEdit } from 'react-icons/fa';
@@ -14,6 +13,7 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
       onClick={handleOptionClick}
       className={linkStyles}
     >
+      <MdLogin className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Login</span>
     </Link>
     <hr className={stylesObject.hrStyles} />
