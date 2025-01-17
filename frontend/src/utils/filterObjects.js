@@ -80,7 +80,6 @@ export const candidateFilterObject = {
     'Any',
     'Full-Time',
     'Part-Time',
-// Temp comment
     'Contract',
     'Contract to Hire',
   ],
@@ -117,7 +116,6 @@ Object.keys(candidateFilterObject).forEach(key => {
   convertedCandidateFilters[key] = candidateFilterObject[key][0];
 });
 
-export const defaultCandidateFilterState = {
   firstname: '',
   ...convertedCandidateFilters
 };

@@ -49,6 +49,7 @@ const ResumePreview = ({ resumeUrl }) => {
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>
+// Temp comment
           </ul>
         </nav>
       )}

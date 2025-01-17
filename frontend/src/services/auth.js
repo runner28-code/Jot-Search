@@ -95,7 +95,6 @@ class AuthService {
   }
 
   toggleSavedJob(jobID, action) {
-// Temp comment
     const savedJobs = this.getSavedJobIDs();
     if ( action === 'save' ) {
       savedJobs.push(jobID);

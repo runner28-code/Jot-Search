@@ -10,7 +10,6 @@ import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCo
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
-import {
   candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
@@ -28,6 +27,7 @@ const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
+  guest: ['jobs', 'companies'],
 }
 
 function useTabState(disabledTabs, userType, pathname) {

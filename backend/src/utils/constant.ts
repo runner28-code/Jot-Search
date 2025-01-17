@@ -21,3 +21,7 @@ const job_filter_exclude_keys = [
   "aquatics",
   "art",
   "assembler",
+  "assembly technician",
+  "asset",
+  "athlete",
+  "athletic",

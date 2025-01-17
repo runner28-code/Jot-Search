@@ -17,7 +17,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
     console.log('syncing contacts', selectedContacts);
   }
 
-  return (
     <div className='flex flex-col items-start pt-8'>
       {/* Loading */}
       {isLoadingContacts && <LoadingSpinner />}

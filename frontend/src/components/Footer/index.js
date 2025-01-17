@@ -156,7 +156,6 @@ export default function Footer() {
               rel='noopener noreferrer'
             >
               <img
-                src={intulsaTalentLogo}
                 alt='Intulsa Talent'
                 className='w-auto h-auto'
               />

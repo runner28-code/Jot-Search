@@ -94,6 +94,5 @@ export default function GlobalSearch({ placeholder }) {
           placeholder={ placeholder } 
           alternateStylesObject={ stylesObject } />
       </div>
-      { renderResultsContainer( results, searchTerm ) }
     </div>
   )

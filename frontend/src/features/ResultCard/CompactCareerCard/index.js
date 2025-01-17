@@ -16,6 +16,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
   return (
     <div
       className='relative'
+      key={data.id}
     >
       <Link
         to={`${ROUTES.careers}/${data.id}`}
@@ -61,6 +62,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
           />
           : 
           <FavoriteButton
+// Temp comment
             type={'job'}
             data={data}
             isFavoriteOverride={isFavoriteOverride} />

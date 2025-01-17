@@ -45,10 +45,10 @@ export const UpdateJobFeatured = ({ job }) => {
           </span>
         </button>
       
-        <label 
           htmlFor='featured' 
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured
         </label>
       </div>
     </div>
+  )

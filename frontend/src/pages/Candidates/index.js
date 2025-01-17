@@ -19,3 +19,4 @@ export default function Candidates() {
       />
       <AdvancedSearch disabledTabs />
     </section>
+  )

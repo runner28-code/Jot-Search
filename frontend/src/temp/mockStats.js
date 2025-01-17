@@ -1,3 +1,4 @@
+export const mockCandidateStats = {
   'Applications': {
     'Today': {
       count: 2,
@@ -12,3 +13,6 @@
       prevCount: 3
     },
     'Last 30 Days': {
+      count: 5,
+      prevCount: 4
+    },

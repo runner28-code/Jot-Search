@@ -1,5 +1,4 @@
 import axios from 'axios';
-import config from "../config";
 import queryString from 'query-string';
 import { getCompanies, saveCompanies, saveJobs, saveMembers } from '../utils/GetroCrud';
 import { saveBullhornJobs } from '../utils/BullhornCrud';
@@ -10,4 +9,7 @@ export class GetroService {
     private email = config.getroEmail || '';
     private password = config.getroPassword || '';
     private api_base_url_v1 = 'https://api.getro.com/api/v1';
+    private api_base_url_v2 = 'https://api.getro.com/v2';
     private networkId = null;
+
+    public static async getClient() {

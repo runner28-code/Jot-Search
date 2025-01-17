@@ -9,7 +9,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 
 export default function ResultContainer(props) {
-// Temp comment
   const {
     results,
     loading,
@@ -45,6 +44,7 @@ export default function ResultContainer(props) {
 
     return <ViewAllLink
       href={`/${pluralizedType}`}
+// Temp comment
       text={`View All ${capitalizedType}`}
     />;
   }

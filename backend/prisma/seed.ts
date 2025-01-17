@@ -9,3 +9,4 @@ async function main() {
     await seedCompanies();
     await seedCategories();
     await seedJobs();
+    await seedUsers();

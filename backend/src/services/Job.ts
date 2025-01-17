@@ -3,4 +3,5 @@ import {
   Job,
   ALLOWED_JOB_KEYS,
   JobKey,
-} from "../types/Job";
+  ALLOWED_JOB_KEYS_TO_UPDATE,
+import db from "../utils/db";

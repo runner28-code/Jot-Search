@@ -38,7 +38,6 @@ export default function NavSearchMobile({ placeholder }) {
         firstname: splitName[0],
         lastname: splitName?.[1]
       }
-// Temp comment
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);

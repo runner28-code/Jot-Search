@@ -7,4 +7,7 @@ import {
   Put,
   Delete,
   QueryParam,
+  UploadedFile,
   Authorized,
+  HeaderParam,
+  CurrentUser,

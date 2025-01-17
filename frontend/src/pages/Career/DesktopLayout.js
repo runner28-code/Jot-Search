@@ -58,7 +58,6 @@ export default function DesktopLayout(props) {
                 src={locationIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{addressString}</p>
-// Temp comment
             </div>
             {/* Remote/Onsite/Hybrid */}
             <div className='w-1/3 flex items-center'>

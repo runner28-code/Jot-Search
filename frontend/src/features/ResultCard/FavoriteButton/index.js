@@ -7,13 +7,13 @@ import { saveJob, saveCompany, saveCandidate } from '../../../services/API';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 
 const VALID_TYPES = ['job', 'company', 'candidate'];
+// Temp comment
 
 export default function FavoriteButton({ type, data, addClass, isFavoriteOverride = null }) {
   const role = AuthService.getUserRole();
   if ( !AuthService.loggedIn() || role === 'coordinator' ) {
     return null;
   }
-// Temp comment
   // Return conditions
   const invalidType = !VALID_TYPES.includes(type);
   const isInactiveJob = (type === 'job' && data.status !== 'Active');

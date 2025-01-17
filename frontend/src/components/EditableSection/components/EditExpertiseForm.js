@@ -8,7 +8,6 @@ export default function EditExpertiseForm({ expertise, handleChange }) {
     <>
       <Dropdown
         name='expertise'
-// Temp comment
         choices={expertiseChoices}
         currentChosen={expertise}
         handleChange={handleChange}

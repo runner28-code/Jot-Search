@@ -123,4 +123,5 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
   return {
     PaginatedControls,
     page,
+    setPage,
   }

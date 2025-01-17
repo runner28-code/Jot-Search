@@ -9,6 +9,7 @@ datasource db {
 
 model Application {
   id String @id @default(uuid())
+
   userId String
   user   User   @relation("userApplications", fields: [userId], references: [id])
 
@@ -32,4 +33,9 @@ model Category {
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  users User[] @relation("userCategory")
+  jobs  Job[]  @relation("jobCategory")
+  candidates Candidate[] @relation("candidateCategory")
+}
 
