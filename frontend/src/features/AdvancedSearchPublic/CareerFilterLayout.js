@@ -25,6 +25,7 @@ export default function CareerFilterLayout(props) {
     defaultFilterObject,
     filterObject,
     handleFilterChange,
+    searchTerm,
     setSearchTerm,
     handleSearchClick,
     clearFilters,
@@ -38,7 +39,6 @@ export default function CareerFilterLayout(props) {
   } else {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
-    });
   }
 
   const buttonStyles = 'text-white text-sm whitespace-nowrap';

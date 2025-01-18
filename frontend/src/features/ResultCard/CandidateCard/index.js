@@ -60,14 +60,12 @@ export default function CandidateCard({ data, disableLink }) {
                 src={linkedinIcon}
                 className='h-8 mr-5' />
               <span className='text-charcoal'>
-// Temp comment
                 LinkedIn
               </span>
             </div>
             {/* Location */}
             <div className='w-1/3 flex items-center'>
               <img
-                src={locationIcon}
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{addressString}</p>
             </div>

@@ -54,6 +54,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
         type='checkbox'
         name='useExistingResume'
         className='h-8 w-8 ml-2'
+        checked={useExistingResume}
         onChange={handleChange}
       />
       <p className='text-md ml-2'>Use existing resume</p>

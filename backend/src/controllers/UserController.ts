@@ -6,8 +6,9 @@ import {
   Post,
   Put,
   Delete,
-  QueryParam,
   UploadedFile,
   Authorized,
   HeaderParam,
   CurrentUser,
+  QueryParams,
+} from "routing-controllers";

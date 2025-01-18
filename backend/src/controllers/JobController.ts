@@ -23,3 +23,6 @@ import {
   FilterOption,
   Job,
   FilterBody,
+  JobSearchByFilterResponse,
+  JobSearchByID,
+  DataSource,

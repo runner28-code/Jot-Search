@@ -267,6 +267,7 @@ export default function RegistrationForm() {
             onChange={handleChange}
             error={errors.includes('password')}
           />
+// Temp comment
           <FormInput
             type='password'
             name='verifyPassword'

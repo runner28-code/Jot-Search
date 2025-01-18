@@ -11,3 +11,4 @@ async function main() {
     await seedJobs();
     await seedUsers();
     console.log("Done🎉");
+  } catch (err) {

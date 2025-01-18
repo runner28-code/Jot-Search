@@ -82,6 +82,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   const labelStyles = 'w-full';
   const labelTextStyles = 'text-xs vw-768:text-base text-charcoal leading-8 mt-8 ';
   const inputStyles = 'disabled:disabled disabled:cursor-not-allowed block w-full bg-lightGrey leading-8 text-sm vw-768:text-base border border-solid border-charcoal rounded-xl px-4 py-s mt-2 cursor-pointer disabled:bg-grey300 disabled:cursor-not-allowed ';
+
   async function submitData() {
     handleCandidateUpdate(formData)
     setEditMode(false);

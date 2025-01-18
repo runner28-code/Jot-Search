@@ -1,5 +1,4 @@
 import moment from "moment";
-import { User, USERKEYS, USER_TABLE } from "../types/User";
 import { BigQueryService } from "./BigQueryService";
 import { DATASET_BULLHORN, DATASET_MAIN, Tables } from "../types/Common";
 import { COORDINATOR, ROLES } from "../utils/constant";
@@ -40,3 +39,7 @@ const validateUser = ({
 }: User) => {
   try {
     if (isNullOrEmpty(firstname) || isNullOrEmpty(lastname))
+      return "firstname and lastname is required";
+    if (isNullOrEmpty(email)) return "email is invalid";
+    if (ROLES.find((r) => r === role) === null)
+      return `role is invalid, it should be one in [${ROLES.join(", ")}]`;

@@ -58,7 +58,6 @@ export default function ActiveCareers() {
       <ResultContainer
         results={jobs}
         loading={isLoading}
-// Temp comment
         type={ RESULT_CONTAINER_TYPE }
         active={true}
       />

@@ -24,6 +24,7 @@ export default function MobileLayout(props) {
     postingAge,
     role
   } = props.data;
+// Temp comment
   const navigate = useNavigate();
   const skillList = careerData.skillList;
 
@@ -113,6 +114,7 @@ export default function MobileLayout(props) {
       <div className='flex mt-6'>
         { (role === 'candidate' || role === 'guest') && 
           <ApplyButton
+            datasource={careerData.datasource}
             careerId={careerData.id}
             applicationUrl={careerData.application_path || careerData.url}
           />

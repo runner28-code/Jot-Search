@@ -18,3 +18,6 @@ import {
   Job,
   FilterBody,
   DataSource,
+  Tables,
+  Company,
+  CompanySearchByID,

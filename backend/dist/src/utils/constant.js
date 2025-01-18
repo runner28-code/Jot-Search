@@ -26,3 +26,6 @@ const job_filter_exclude_keys = [
     "assembly technician",
     "asset",
     "athlete",
+    "athletic",
+    "attorney",
+    "auto",

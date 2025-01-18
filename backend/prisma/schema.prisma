@@ -41,3 +41,8 @@ model Category {
 
 model History {
   id       String  @id @default(uuid())
+  table    String
+  recordId String
+  column   String
+  oldValue String?
+  newValue String?

@@ -1,4 +1,5 @@
 export const expertises = [
+  'Finance',
   'Marketing',
   'Operations',
   'Other',
@@ -20,3 +21,6 @@ export const roles = {
     'Digital Marketing',
     'Generalist Marketing',
     'Graphic and Motion Design',
+    'PR & Communications',
+    'Product Marketing & Design'
+  ],

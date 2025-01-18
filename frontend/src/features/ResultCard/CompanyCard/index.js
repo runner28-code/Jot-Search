@@ -50,7 +50,6 @@ export default function CompanyCard({ data }) {
           </div>
           {/* First row icons */}
           <div className='w-full flex items-center mt-12'>
-            {/* Location */}
             <div className='w-1/3 flex items-center'>
               <img
                 src={locationIcon}
@@ -90,6 +89,7 @@ export default function CompanyCard({ data }) {
                 Company Website
               </a>
             </div>
+          </div>
         </div>
       </Link>
       <FavoriteButton

@@ -20,7 +20,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     }
   ];
 
-  const { careers, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
   const prefetchFunc = (page) => {
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
   }
@@ -41,7 +40,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
             return null;
           }
           return <CareerCard
-// Temp comment
             key={index}
             data={career}
           />

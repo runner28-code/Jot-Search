@@ -72,7 +72,6 @@ function HeaderContent({ companyData }) {
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={Globe}
-// Temp comment
               className={headerIconStyles}
             />
             { renderCompanyWebsite(companyData.companyURL, headerRowTextStyles) }

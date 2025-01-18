@@ -12,6 +12,7 @@ export default function CompanyFilterLayout(props) {
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex items-center gap-[65px]'>
+// Temp comment
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
@@ -26,4 +27,5 @@ export default function CompanyFilterLayout(props) {
           Clear All
         </button>
       </div>
+    </div>
   );
