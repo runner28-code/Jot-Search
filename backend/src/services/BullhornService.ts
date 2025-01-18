@@ -51,3 +51,6 @@ export class BullhornService {
           this.access_token &&
           this.refresh_token &&
           this.BhRestToken &&
+          this.restUrl
+        )
+          return true;

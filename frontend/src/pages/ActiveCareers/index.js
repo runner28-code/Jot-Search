@@ -31,7 +31,6 @@ export default function ActiveCareers() {
   const { jobs, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
 
   const prefetchFunc = (page) => {
-// Temp comment
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
   }
 
@@ -51,6 +50,7 @@ export default function ActiveCareers() {
         placeholder={PLACE_HOLDER}
         additionalClasses='w-180 mt-30'
       />
+// Temp comment
       <ResultsHeader
         total={total}
         loading={isLoading}

@@ -33,3 +33,4 @@ const job_filter_exclude_keys = [
   "bailiff",
   "barback",
   "bartender",
+  "baseball",

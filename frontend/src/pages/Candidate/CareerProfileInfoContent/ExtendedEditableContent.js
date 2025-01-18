@@ -127,7 +127,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             />
         }
       </label>
-
       {isSourceUserTable && <>
         <FormInput
           type='single-select'
@@ -241,6 +240,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
                 />
                 <UploadIcon className='h-16 w-16 fill-gray-600' />
                 <p>Upload</p>
+              </label>
             </div>
           )}
         </div>

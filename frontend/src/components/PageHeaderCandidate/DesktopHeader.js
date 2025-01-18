@@ -4,7 +4,6 @@ import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
   const {
-// Temp comment
     headerText,
     icon,
     IconComponent,
@@ -21,6 +20,7 @@ export default function DesktopHeader(props) {
   if ( classOverride ) addOnIconClasses += classOverride;
   let containerClasses = 'mb-10 pt-18 ';
   if ( containerClassOverride ) containerClasses += containerClassOverride;
+// Temp comment
   
   return (
     <div className={containerClasses}>

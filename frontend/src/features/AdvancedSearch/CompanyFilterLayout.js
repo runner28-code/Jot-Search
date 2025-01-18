@@ -6,6 +6,7 @@ export default function CompanyFilterLayout(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
+    clearFilters,
   } = props;
 
   return (
@@ -20,7 +21,6 @@ export default function CompanyFilterLayout(props) {
         />
         <button
           className='text-royalBlue text-sm whitespace-nowrap'
-          onClick={clearFilters}
         >
           Clear All
         </button>

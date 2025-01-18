@@ -5,6 +5,7 @@ import {
   Get,
   Post,
   Put,
+  Delete,
   QueryParam,
   UploadedFile,
   Authorized,
@@ -13,3 +14,4 @@ import {
   QueryParams,
 } from "routing-controllers";
 import { BullhornService } from "../services/BullhornService";
+import { sendVerification } from "../services/EmailService";

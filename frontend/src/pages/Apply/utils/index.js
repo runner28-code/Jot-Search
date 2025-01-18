@@ -3,7 +3,6 @@ import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 import PropTypes from 'prop-types';
-
 export const ethnicityChoices = Object.values(ethnicityMap);
 export const genderChoices = Object.values(genderMap);
 export const veteranStatusChoices = Object.values(veteranStatusMap);

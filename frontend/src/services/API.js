@@ -3,6 +3,7 @@ import AuthService from './auth';
 import fixStringNulls from '../utils/fixStringNulls';
 import * as ROUTES from '../routes';
 import { ACTIVE_STATUSES } from '../utils/filterObjects';
+
 const API = axios.create({
   baseURL: 'https://intulsadev.com:5000',
   // baseURL: 'http://localhost:3001',
@@ -33,5 +34,6 @@ export function appendPathToBaseUrl(path) {
 
 /* FETCH FUNCTIONS */
 //* CANDIDATES
+// Temp comment
 export async function getCandidates(filtersArr, count, page) {
   return (await getCandidatesFull(filtersArr, count, page)).candidates;

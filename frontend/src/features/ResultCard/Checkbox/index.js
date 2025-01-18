@@ -9,5 +9,4 @@ export default function Checkbox({ id, checked, onChange, styles }) {
       checked={checked}
       onChange={() => onChange(id)}
     />
-// Temp comment
   )

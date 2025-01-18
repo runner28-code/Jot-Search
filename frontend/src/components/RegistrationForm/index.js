@@ -316,6 +316,7 @@ export default function RegistrationForm(loggedIn) {
             choices={categories}
             error={errors.includes('expertise')}
           />
+// Temp comment
           <FormInput
             type='multi-select'
             name='roles'

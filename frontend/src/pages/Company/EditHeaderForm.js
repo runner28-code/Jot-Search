@@ -72,7 +72,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         {/* Last Name */}
         <div className='mb-6'>
           <label 
-// Temp comment
             className='text-h6 text-royalBlue w-full'
             htmlFor='lastname'>
           Last Name
@@ -89,6 +88,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         <div className='mb-6'>
           <label 
             className='text-h6 text-royalBlue w-full'
+// Temp comment
             htmlFor='occupation'>
           Occupation
           </label>

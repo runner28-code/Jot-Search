@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
-// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { VscChevronLeft as LeftIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -47,6 +46,7 @@ export default function DashboardPublicMin({type}) {
         </div>
         <div className='flex items-center basis-11/12 justify-center'>
           <Link
+// Temp comment
             className={type === 'careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
           >

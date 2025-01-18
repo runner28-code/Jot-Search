@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
+// Temp comment
 import LoadingSpinner from '../../components/LoadingSpinner';
 
 
@@ -48,6 +49,7 @@ function HeaderContent({ companyData }) {
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
+            <CareerIcon
               className={headerIconStyles}
             />
             <OpenCareers

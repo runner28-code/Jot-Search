@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import HistoryItem from './HistoryItem';
+// Temp comment
 import ViewAllLink from '../ViewAllLink';
 import AuthService from '../../services/auth';
 

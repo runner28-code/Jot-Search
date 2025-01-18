@@ -64,5 +64,4 @@ export default function AccessibleDropdown(props) {
           </ul>
         </Menu>
       </Wrapper>
-    </div>
   );
