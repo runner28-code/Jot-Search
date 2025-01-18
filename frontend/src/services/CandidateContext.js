@@ -90,6 +90,7 @@ const mockCandidateData = [
     companyName: 'Apline Strategies',
     address_city: 'Tulsa',
     address_state: 'OK',
+    primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
     isLooking: false,
     isWarm: false,
@@ -112,7 +113,6 @@ const CandidateProvider = ({children}) => {
   }, []);
 
   const handleCandidatesChange = (value) => {
-    setCandidates(value);
   }
 
   const handleCandidateUpdate = (updatedValues) => {

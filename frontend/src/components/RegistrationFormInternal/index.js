@@ -138,7 +138,6 @@ export default function RegistrationFormInternal(loggedIn) {
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
     setErrors([]);
-// Temp comment
     setFormObj({
       ...formObj,
       firstName: firstName.value,
@@ -292,6 +291,7 @@ export default function RegistrationFormInternal(loggedIn) {
           type='text'
           name='country'
           label='Country'
+// Temp comment
           required={true}
           value={formObj.country}
           onChange={handleChange}

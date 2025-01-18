@@ -80,7 +80,6 @@ class AuthService {
       localStorage.setItem('savedJobs', JSON.stringify([]));
       localStorage.setItem('savedCompanies', JSON.stringify([]));
     }
-  }
 
   async refreshSavedCandidates() {
     try {

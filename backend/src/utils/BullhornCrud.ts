@@ -17,7 +17,6 @@ export const saveCompanies = async (companies: any[]) => {
   // const result = await db.company.findMany({
   //   where: {
   //     companyURL: {
-  //       not: null
   //     }
   //   }
   // });

@@ -3,4 +3,3 @@ name: Dev - ECS Deployment
 on:
   push:
     branches:
-      - dev

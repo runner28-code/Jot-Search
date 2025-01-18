@@ -94,7 +94,6 @@ export default function RegistrationForm() {
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
       setTimeout(() => {
-        setFormObj(defaultState);
         setSubmissionObject({
           loading: false,
           success: false,
@@ -193,7 +192,6 @@ export default function RegistrationForm() {
             name='skills'
             placeholder='Please select at least 3 skills' 
             value={formObj.skills}
-// Temp comment
             onChange={handleChange}
             choices={skillChoices}
             error={errors.includes('skills')}

@@ -18,6 +18,7 @@ import * as ROUTES from '../../../routes';
 export const choices = {
   dashboard: {
     label: 'My Dashboard',
+    icon: DashboardIcon,
     link: ROUTES.dashboard,
   },
   profile: {
@@ -61,6 +62,7 @@ export const choices = {
     link: ROUTES.activeCareers,
   },
   talentInTulsa: {
+// Temp comment
     label: 'Talent.InTulsa.com',
     icon: ContactIcon,
     link: ROUTES.talentInTulsa,

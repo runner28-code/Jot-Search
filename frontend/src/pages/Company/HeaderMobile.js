@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 // import FeaturedTag from '../../components/FeaturedTag';
-import useWindowDimensions from '../../hooks/windowDimensions';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -31,7 +30,6 @@ function HeaderContent({ companyData }) {
             <h4 className={ headerTitle }>
               {companyData.name}
             </h4>
-// Temp comment
             <div className='flex items-center'>
               <div className={ headerGroupStyles }>
                 <img
