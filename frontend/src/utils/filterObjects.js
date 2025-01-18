@@ -37,6 +37,7 @@ export const jobFilterObject = {
   ]
 };
 
+// Temp comment
 export const ACTIVE_STATUSES = [
   'Active',
   'Open',
@@ -116,6 +117,7 @@ Object.keys(candidateFilterObject).forEach(key => {
   convertedCandidateFilters[key] = candidateFilterObject[key][0];
 });
 
+export const defaultCandidateFilterState = {
   firstname: '',
   ...convertedCandidateFilters
 };

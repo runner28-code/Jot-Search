@@ -113,7 +113,6 @@ export default function MobileLayout(props) {
       <div className='flex mt-6'>
         { (role === 'candidate' || role === 'guest') && 
           <ApplyButton
-            datasource={careerData.datasource}
             careerId={careerData.id}
             applicationUrl={careerData.application_path || careerData.url}
           />
@@ -123,6 +122,7 @@ export default function MobileLayout(props) {
           onClick={() => navigate(-1)}
         >
           Back
+        </button>
       </div>
     </section>
     <OtherCareers

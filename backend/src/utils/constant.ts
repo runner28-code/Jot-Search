@@ -25,3 +25,4 @@ const job_filter_exclude_keys = [
   "asset",
   "athlete",
   "athletic",
+  "athletics",

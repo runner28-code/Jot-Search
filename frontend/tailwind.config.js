@@ -12,3 +12,4 @@ module.exports = {
         'spin-reverse': 'spin-reverse .175s linear forwards'
       },
       keyframes: {
+        'spin': {

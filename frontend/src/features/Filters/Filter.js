@@ -55,7 +55,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
             color='lightGray'
           />}
         <p
-// Temp comment
           id='title'
           className='text-md text-black70%'>{ selected }</p>
         <img

@@ -28,3 +28,8 @@ export class BullhornService {
   private api_base_url = "https://rest.bullhornstaffing.com/rest-services";
 
   public static async getClient() {
+    if (BullhornService.client === null) {
+      BullhornService.client = new BullhornService();
+      await BullhornService.client.init(false);
+    }
+    return BullhornService.client;

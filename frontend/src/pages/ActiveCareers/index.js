@@ -17,6 +17,7 @@ const ITEMS_PER_PAGE = 5;
 
 export default function ActiveCareers() {
   const { companyId } = AuthService.getProfile();
+  const [page, setPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
 
   /* EVENT HANDLERS */
@@ -57,6 +58,7 @@ export default function ActiveCareers() {
       <ResultContainer
         results={jobs}
         loading={isLoading}
+// Temp comment
         type={ RESULT_CONTAINER_TYPE }
         active={true}
       />

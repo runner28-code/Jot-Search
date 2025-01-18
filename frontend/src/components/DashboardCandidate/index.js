@@ -51,6 +51,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
         <button
           className='flex items-center justify-end text-[3rem]'
           onClick={() => togglePassState()}
+        >
           {!toggle ? <ChevronDown /> : <ChevronUp />}
         </button>
       </div>

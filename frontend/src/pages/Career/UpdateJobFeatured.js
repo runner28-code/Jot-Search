@@ -33,7 +33,6 @@ export const UpdateJobFeatured = ({ job }) => {
           onClick={async() => {
             const { result } = await saveJob({ featured: !toggled, id: job.id })
 
-            // TODO: Replace with react-query refetch
             if(result) {
               window.location.reload()
             }
@@ -45,6 +44,7 @@ export const UpdateJobFeatured = ({ job }) => {
           </span>
         </button>
       
+        <label 
           htmlFor='featured' 
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured

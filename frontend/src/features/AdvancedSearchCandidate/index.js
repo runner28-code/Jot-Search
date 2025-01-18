@@ -13,10 +13,8 @@ import { useIsMount } from '../../hooks/useIsMount';
 import {
   candidateFilterObject,
   jobFilterObject,
-  defaultJobFilterState,
   defaultCandidateFilterState,
   buildSearchFilters
-// Temp comment
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';

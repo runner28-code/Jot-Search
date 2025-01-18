@@ -60,6 +60,7 @@ export default function CandidateCard({ data, disableLink }) {
                 src={linkedinIcon}
                 className='h-8 mr-5' />
               <span className='text-charcoal'>
+// Temp comment
                 LinkedIn
               </span>
             </div>

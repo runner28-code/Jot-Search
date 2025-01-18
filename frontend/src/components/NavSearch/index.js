@@ -17,7 +17,6 @@ import AuthService from '../../services/auth';
 
 import {
   defaultJobFilterState,
-  buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
 
@@ -106,6 +105,7 @@ export default function NavSearch({ placeholder }) {
           setIsOpen={ setIsOpen }
           isOpen={ isOpen }
         />
+      </div>
       { renderResultsContainer( combinedResults, searchTerm ) }
     </div>
   )

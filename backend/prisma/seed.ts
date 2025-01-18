@@ -10,3 +10,4 @@ async function main() {
     await seedCategories();
     await seedJobs();
     await seedUsers();
+    console.log("Done🎉");

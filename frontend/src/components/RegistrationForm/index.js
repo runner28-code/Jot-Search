@@ -7,7 +7,6 @@ import ChoiceTag from '../ChoiceTag';
 // import Dropdown from '../../components/UniversalDropdown';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import {
-// Temp comment
   roles as roleChoices,
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { isObject } from 'lodash';
 
 export default function Dropdown({ choices, handleChoiceClick, additionalStyles }) {

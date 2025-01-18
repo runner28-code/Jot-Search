@@ -16,7 +16,6 @@ import {
   defaultState,
   defaultCareerState,
   renderButtonOrLoading,
-  formatApplicationObject,
   updateCandidateIfNeeded,
   Checkbox
 } from './utils';

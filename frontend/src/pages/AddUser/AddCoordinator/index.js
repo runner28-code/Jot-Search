@@ -44,7 +44,6 @@ export default function AddCoordinator() {
           success: false,
           errors: {},
         });
-// Temp comment
       }, 2000);
     }
   }, [submissionObject.success]);
@@ -144,7 +143,6 @@ export default function AddCoordinator() {
           type='password'
           className={submissionObject.errors.password ? invalidInputStyles : validInputStyles}
           name='password'
-          placeholder='Password'
           value={formObject.password}
           onChange={handleInputChange}
         />

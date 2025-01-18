@@ -81,7 +81,6 @@ export default function DesktopLayout(props) {
                 src={clockIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{careerData.employmentType}</p>
-            </div>
             {/* Salary */}
             <div className='w-1/2 flex items-center pr-4'>
               <img

@@ -5,4 +5,3 @@ export const saveApplication = async (job: string, candidate: string) => {
     console.log("applying");
     console.log({ job, candidate });
     const existing = await db.application.findFirst({
-      where: {

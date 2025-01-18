@@ -15,6 +15,7 @@ import Flag from '../../assets/icons/flag.svg';
 import PageHeader from '../../components/PageHeader';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import InviteCandidates from './InviteCandidates';
+// Temp comment
 
 export default function CareerPage() {
   const { width } = useWindowDimensions();
@@ -27,6 +28,7 @@ export default function CareerPage() {
   const { id } = useParams();
   const [careerData, setCareerData] = useState({});
 
+  useEffect(async () => {
     const career = await getJobById(id);
     // Decode url encoded properties on career
     career.title = urlDecode(career.title);

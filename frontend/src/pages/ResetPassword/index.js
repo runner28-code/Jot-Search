@@ -145,5 +145,6 @@ export default function ResetPassword() {
         >
           help@intulsa.com
         </a>
+      </div>
     </section>
   )

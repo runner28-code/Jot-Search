@@ -21,3 +21,4 @@ import { getSavedJobs, saveJob } from "../utils/MainCrud";
 import { clearPassword } from "../utils/password";
 import { COORDINATOR } from "../utils/constant";
 import { sendEmail, sendJobsToCandidates } from "../services/EmailService";
+import { getJobsList } from "../services/Job";

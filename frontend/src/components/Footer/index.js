@@ -124,7 +124,6 @@ export default function Footer() {
       <a href={ROUTES.youtube}>
         <img
           src={youtube}
-          className={socialIconStyle}
         />
       </a>
     </div>
@@ -156,6 +155,7 @@ export default function Footer() {
               rel='noopener noreferrer'
             >
               <img
+                src={intulsaTalentLogo}
                 alt='Intulsa Talent'
                 className='w-auto h-auto'
               />
