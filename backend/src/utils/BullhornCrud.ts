@@ -19,3 +19,5 @@ export const saveCompanies = async (companies: any[]) => {
   //     companyURL: {
   //       not: null
   //     }
+  //   }
+  // });

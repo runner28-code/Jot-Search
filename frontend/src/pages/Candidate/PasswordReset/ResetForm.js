@@ -23,7 +23,6 @@ export default function ResetForm({ candidateData, setType }) {
       setMatch(true);
       const { password } = event.target;
       const res = await API.post(ROUTES.APIResetPassword, {
-// Temp comment
         new_password: password.value,
       });
 
@@ -46,7 +45,6 @@ export default function ResetForm({ candidateData, setType }) {
     <div>
       <div className='w-140'>
         <FormInput
-          type='text'
           name='password'
           value={formData.password}
           onChange={handleChange}

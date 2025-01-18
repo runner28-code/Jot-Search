@@ -25,6 +25,7 @@ export default function CandidateCard({ data, disableLink }) {
   return (
     <div
       className='relative w-full'
+// Temp comment
       key={data.id}
     >
       <LinkWrapper 
@@ -66,6 +67,7 @@ export default function CandidateCard({ data, disableLink }) {
             {/* Location */}
             <div className='w-1/3 flex items-center'>
               <img
+                src={locationIcon}
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{addressString}</p>
             </div>

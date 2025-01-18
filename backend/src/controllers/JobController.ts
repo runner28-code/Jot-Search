@@ -26,3 +26,6 @@ import {
   JobSearchByFilterResponse,
   JobSearchByID,
   DataSource,
+  Tables,
+  ApplyResponse,
+  GetSavedJobsResponse,

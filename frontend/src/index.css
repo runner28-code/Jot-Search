@@ -7,6 +7,7 @@
 
 /* Vanilla CSS */
 * {
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Adjust root font-size so 1rem = 10px for easier calculation */

@@ -40,7 +40,6 @@ export const jobFilterObject = {
 export const ACTIVE_STATUSES = [
   'Active',
   'Open',
-// Temp comment
   'Passive'
 ]
 

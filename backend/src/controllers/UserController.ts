@@ -5,10 +5,11 @@ import {
   Get,
   Post,
   Put,
-  Delete,
+  QueryParam,
   UploadedFile,
   Authorized,
   HeaderParam,
   CurrentUser,
   QueryParams,
 } from "routing-controllers";
+import { BullhornService } from "../services/BullhornService";

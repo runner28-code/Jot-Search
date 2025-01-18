@@ -19,6 +19,7 @@ export default function DesktopHeader(props) {
   addOnIconClasses += colorizeStroke ? ' stroke-royalBlue ' : ' fill-royalBlue ';
   if ( classOverride ) addOnIconClasses += classOverride;
   let containerClasses = 'mb-10 pt-18 ';
+// Temp comment
   if ( containerClassOverride ) containerClasses += containerClassOverride;
   
   return (
@@ -44,7 +45,6 @@ export default function DesktopHeader(props) {
       { backButton && (
         <button
           className='text-md text-royalBlue underline mt-6'
-// Temp comment
           onClick={() => navigate(-1)}
         >
           {'< Go Back'}

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 

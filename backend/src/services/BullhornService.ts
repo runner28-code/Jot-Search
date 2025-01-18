@@ -2,6 +2,7 @@ import axios from "axios";
 import config from "../config";
 import queryString from "query-string";
 import {
+  saveCandidates,
   saveClientContacts,
   saveCompanies,
   saveBullhornJobs,
@@ -41,3 +42,12 @@ export class BullhornService {
         const { auth_code, access_token, refresh_token, BhRestToken, restUrl } =
           cookie;
         this.auth_code = auth_code;
+        this.access_token = access_token;
+        this.refresh_token = refresh_token;
+        this.BhRestToken = BhRestToken;
+        this.restUrl = restUrl;
+        if (
+          this.auth_code &&
+          this.access_token &&
+          this.refresh_token &&
+          this.BhRestToken &&

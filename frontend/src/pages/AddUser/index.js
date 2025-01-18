@@ -17,6 +17,7 @@ export default function AddUser() {
   const [formType, setFormType] = useState('Candidate');
   function handleDropdownChange(e) {
     setFormType(e.target.value);
+// Temp comment
   }
 
   const defaultContainer = 'bg-white border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12';

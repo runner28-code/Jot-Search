@@ -21,3 +21,6 @@ import {
   Tables,
   Company,
   CompanySearchByID,
+  CompanySearchByFilterResponse,
+  DATASET_MAIN,
+  ApplyResponse,

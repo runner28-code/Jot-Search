@@ -87,7 +87,6 @@ export const CareerContext = createContext();
 const CareerProvider = ({children}) => {
   const [careers, setCareers] = useState(mockJobsData);
 
-  const handleCareersChange = (value) => {
     setCareers(value);
   }
 
@@ -95,3 +94,4 @@ const CareerProvider = ({children}) => {
     <CareerContext.Provider value={{ careers, handleCareersChange }}>
       {children}
     </CareerContext.Provider>
+  )

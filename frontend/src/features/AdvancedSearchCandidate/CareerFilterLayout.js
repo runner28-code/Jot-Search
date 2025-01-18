@@ -15,7 +15,6 @@ const dropdownFilters = [
 const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',
-  'Years Experience'
 ]
 
 export default function CareerFilterLayout(props) {
@@ -48,6 +47,7 @@ export default function CareerFilterLayout(props) {
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap'>
         <FilterSearch
+          searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Careers'

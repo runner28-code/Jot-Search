@@ -25,6 +25,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     address1: candidateData.address1 || '',
     address2: candidateData.address2 || '',
     city: candidateData.city || '',
+    state: candidateData.state || '',
     zip: candidateData.zip || '',
     phone: candidateData.phone || '',
     categoryId: candidateData.categoryId || null,
@@ -240,7 +241,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
                 />
                 <UploadIcon className='h-16 w-16 fill-gray-600' />
                 <p>Upload</p>
-              </label>
             </div>
           )}
         </div>

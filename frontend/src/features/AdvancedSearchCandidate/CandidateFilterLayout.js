@@ -19,7 +19,6 @@ const dropdownFilters = [
 ];
 const checkboxFiltersCoord = [
   'Open to Relocation',
-  'Authorized to work in the US',
 ];
 const checkboxFilters = [
   'Authorized to work in the US',
@@ -58,6 +57,7 @@ export default function CandidateFilterLayout(props) {
   }
 
 
+  return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }

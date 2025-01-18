@@ -1,8 +1,8 @@
 import Candidate from '../Candidate'
 
 export default function Profile() {
-// Temp comment
   return (
+// Temp comment
     <>
       <Candidate />
     </>

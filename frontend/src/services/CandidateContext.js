@@ -1,5 +1,4 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 
 import AuthService from './auth';
@@ -79,6 +78,7 @@ const mockCandidateData = [
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
     isLooking: false,
+// Temp comment
     isWarm: false,
   },
   {
