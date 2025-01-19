@@ -11,7 +11,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
     const fakeEvent = {
       target: {
         name: inputName,
-        value: newValues.join(', '),
       },
     };
     handleChange(fakeEvent);
@@ -32,3 +31,4 @@ export default function EditSkillsForm({ skills, handleChange }) {
       baseStyles={baseStyles}
       inputHeight={inputHeight}
     />
+  </>

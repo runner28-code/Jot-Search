@@ -44,7 +44,6 @@ export default function CareerFilterLayout(props) {
   const buttonStylesCareer = 'text-white text-sm whitespace-nowrap';
   return (
     <div className='flex flex-col gap-xxl-4'>
-// Temp comment
       <div className='flex flex-wrap gap-xxl-4'>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
       </div>
@@ -53,7 +52,6 @@ export default function CareerFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
-          placeholder='Search name, title, active careers'
           additionalClasses='w-1/2'
         />
         <button

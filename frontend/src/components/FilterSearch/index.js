@@ -26,7 +26,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
       onKeyDown={handleKeydown}
     >
       <input
-// Temp comment
         type='text'
         className={ inputStyles }
         placeholder={ placeholderString }

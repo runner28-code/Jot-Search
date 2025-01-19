@@ -15,7 +15,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import AuthService from '../../services/auth';
 
 export default function Companies() {
-// Temp comment
   const { width } = useWindowDimensions();
   let userType = AuthService.getUserRole();
   const loggedIn = AuthService.loggedIn();
@@ -23,6 +22,7 @@ export default function Companies() {
   const sectionStylesLog = 'vw-990:ml-10 vw-990:mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
   const sectionStyles = '';
 
+// Temp comment
   function togglePassState() {
     setToggle(toggle => !toggle);
   }

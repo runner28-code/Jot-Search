@@ -14,7 +14,6 @@ export type Company = {
     billingContact?: string,
     billingFrequency?: string,
     billingPhone?: string,
-    businessSectorList?: string,
     companyDescription?: string,
     companyURL?: string,
     competitors?: string,

@@ -8,6 +8,7 @@ import { pluralizedTypes } from '../../utils/constants';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 
+// Temp comment
 export default function ResultContainer(props) {
   const {
     results,
@@ -53,6 +54,7 @@ export default function ResultContainer(props) {
       { renderHeader() }
       <div
         className={`${baseStyles} ${resultsContainerStyles}`}>
+        { renderResults(results, loading, type, active, compact, isFavoriteOverride, agoText, selectableProps) }
       </div>
       { renderFooter() }
     </div>

@@ -24,7 +24,6 @@ const PREFERENCE_ITEMS = {
   willReceiveNotification: 'Receive emails about relevant opportunities based on your profile'
 }
 
-// Temp comment
 export default function Candidate() {
   // Redirect if userRole is 'candidate' unless it's their profile, candidates should not be able to see other candidates
   const role = AuthService.getUserRole();

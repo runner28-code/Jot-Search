@@ -70,7 +70,6 @@ function HeaderContent({ companyData }) {
             { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
-            <img
               src={Globe}
               className={headerIconStyles}
             />

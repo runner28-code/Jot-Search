@@ -1,6 +1,6 @@
 "use strict";
 // for start script use
 // npm run build && GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' node ./dist/utils/encryptPasswords.js
-// Temp comment
 // change where condition in select for alter script scope
+// Temp comment
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {

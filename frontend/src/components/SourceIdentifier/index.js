@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import Pill from '../../assets/icons/pill.svg';
+// Temp comment
 
 export default function SourceIdentifier( type ) {
   return (<>

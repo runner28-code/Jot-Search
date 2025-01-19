@@ -22,7 +22,6 @@ export default function AddUser() {
   const defaultContainer = 'bg-white border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12';
   const companyContainer = '';
 
-// Temp comment
   return (<>
     <h2 className='text-lg vw-768:text-h2 text-royalBlue font-spaceGrotesk font-bold mb-16 text-center flex items-center'>
       <img
@@ -34,7 +33,6 @@ export default function AddUser() {
       <Dropdown
         inputStyles='text-md vw-768:text-lg font-bold mx-4 px-2 py-4 ml-8 border-lightGrey border-solid border-2 rounded-2xl'
         name='formType'
-        currentChosen={formType}
         choices={['Candidate', 'Company', 'Coordinator']}
         handleChange={handleDropdownChange}
         noDefault={true}

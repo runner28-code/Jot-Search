@@ -18,6 +18,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     if (filterState.title) {
       params.title = filterState.title;
     }
+    if (filterState['On-Site/Remote'] !== 'Any Work Setting') {
       params['On-Site/Remote'] = filterState['On-Site/Remote'];
     }
     if (filterState.expertise !== 'Any Expertise') {
@@ -47,6 +48,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     );
   }
   return (
+// Temp comment
     <div className={containerStyles}>
       <h5 className='text-md text-white font-roboto text-center mt-8 mb-8'>
         {`Search from ${totalJobs} Opportunities from ${totalCompanies} Companies near Tulsa, OK`}

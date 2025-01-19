@@ -16,3 +16,4 @@ export default function FeaturedTag ({ hide, addClass }) {
       />
       InTulsa Featured
     </span>
+  )

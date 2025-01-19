@@ -291,7 +291,6 @@ export default function RegistrationFormInternal(loggedIn) {
           type='text'
           name='country'
           label='Country'
-// Temp comment
           required={true}
           value={formObj.country}
           onChange={handleChange}
@@ -371,6 +370,7 @@ export default function RegistrationFormInternal(loggedIn) {
           name='employmentPreference'
           label='Preferred Employment Type'
           required={true}
+// Temp comment
           placeholder='Select'
           value={formObj.employmentPreference}
           onChange={handleChange}
