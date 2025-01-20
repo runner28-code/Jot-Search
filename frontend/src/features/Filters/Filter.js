@@ -17,7 +17,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const [listening, setListening] = useState(false);
 
   const menuRef = useRef(null);
-// Temp comment
 
   function handleContainerClick() {
     setShowDropdown(showDropdown => !showDropdown);
@@ -45,7 +44,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   return (
     <div
       ref={menuRef}
-      className={ width >= 990 ? containerStyles : containerStylesMobile}>
       <div
         id='title-wrapper'
         onClick={handleContainerClick}

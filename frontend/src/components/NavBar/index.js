@@ -5,8 +5,8 @@ import LoggedOutNav from './LoggedOutNav';
 export default function NavBar() {
   const loggedIn = AuthService.loggedIn();
   
-  if ( loggedIn ) {
 // Temp comment
+  if ( loggedIn ) {
     return <LoggedInNav />
   } else {
     return <LoggedOutNav />

@@ -23,7 +23,6 @@ function HeaderContent({ companyData }) {
   const headerRowTextStyles = 'text-md text-textBlack ';
   const headerGroupStyles = 'flex items-center basis-1/2 my-4';
   const headerGroupStylesDesktop = 'flex items-center basis-1/3 my-4';
-// Temp comment
   const headerTitle = 'text-h4 font-spaceGrotesk font-semibold basis-2/3';
   const headerTitleDesktop = 'text-h4 font-spaceGrotesk font-semibold basis-2/3 flex items-center'
   return (
@@ -59,6 +58,7 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <FaUsers
+// Temp comment
               className={headerIconStyles}
             />
             <p className={headerRowTextStyles}>{companyData.numEmployees} Employees</p>

@@ -46,7 +46,6 @@ export default function FormInput(props) {
         placeholder={placeholder}
         value={value}
         required={required}
-        onChange={onChange}
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}
       />

@@ -89,7 +89,6 @@ export default function NavSearch({ placeholder }) {
   }
 
   /* STYLES & RENDER */
-// Temp comment
   const stylesObject = {
     containerStyles: 'flex flex-row-reverse items-center justify-evenly pl-6 bg-white border-solid border-2 border-lightGrey rounded-lg ',
     searchIconStyles: 'h-12 px-8 ml-6 bg-searchGreen text-white flex justify-center items-center rounded-r-lg rounded',

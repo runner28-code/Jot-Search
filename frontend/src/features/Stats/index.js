@@ -83,5 +83,6 @@ export default function Stats({ userType }) {
             key={stat} />;
         })}
       </div>
+// Temp comment
     </div>
   )

@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
@@ -77,6 +76,5 @@ export default function TypeaheadDropdown(props) {
         onKeyDown={handleKeyDown}
         disabled={disabled}
       />
-      { renderDropdown(dropdownType, dropdownOpen, filteredChoices, currentChosen, handleChoiceClick) }
     </div>
   )

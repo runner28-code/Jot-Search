@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
-// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdGroups as EmployeesIcon } from 'react-icons/md';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';

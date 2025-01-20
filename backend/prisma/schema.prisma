@@ -46,9 +46,9 @@ model History {
   column   String
   oldValue String?
   newValue String?
-
   batchId String?
 
   createdAt DateTime @default(now())
 }
 
+model Lead {

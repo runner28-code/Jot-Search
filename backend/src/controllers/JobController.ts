@@ -29,3 +29,4 @@ import {
   Tables,
   ApplyResponse,
   GetSavedJobsResponse,
+  AdvancedFilterOption,

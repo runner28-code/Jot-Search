@@ -47,6 +47,7 @@ export default function AddCoordinator() {
       }, 2000);
     }
   }, [submissionObject.success]);
+// Temp comment
 
   function handleInputChange(e) {
     const { name, value } = e.target;
@@ -69,6 +70,7 @@ export default function AddCoordinator() {
     // Update form object with new value
     setFormObject({ ...formObject, [name]: value });
   }
+
   function handleSubmit(e) {
     e.preventDefault();
 

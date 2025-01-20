@@ -21,3 +21,4 @@ export const mockCandidateStats = {
       prevCount: 7
     }
   },
+  'Invitations': {

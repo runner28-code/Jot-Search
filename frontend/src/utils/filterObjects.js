@@ -108,11 +108,11 @@ export const candidateFilterObject = {
   'Skills': [
     ...skills
   ],
-// Temp comment
 };
 
 // Create default filter state based on filterObject
 const convertedCandidateFilters = {};
+// Temp comment
 Object.keys(candidateFilterObject).forEach(key => {
   convertedCandidateFilters[key] = candidateFilterObject[key][0];
 });

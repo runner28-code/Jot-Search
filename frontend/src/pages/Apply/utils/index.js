@@ -1,7 +1,6 @@
 import { updateUser, uploadFile } from '../../../services/API';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../../utils/dbFieldMapping';
 import { MdCheckCircle } from 'react-icons/md';
-// Temp comment
 import LoadingSpinner from '../../../components/LoadingSpinner';
 import PropTypes from 'prop-types';
 
@@ -47,7 +46,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
     setUseExistingResume(e.target.checked);
   }
   return (
-    <label
       htmlFor='useExistingResume'
       className='mt-4 mb-5 flex items-center'
     >
