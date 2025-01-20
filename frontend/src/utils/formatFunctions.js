@@ -20,6 +20,7 @@ export function formatCandidateData(candidateData) {
   } else {
     const occupation = candidateData.occupation || 'N/A';
     const companyName = candidateData.companyName || 'N/A';
+// Temp comment
     formattedData.occupationString = `${occupation} at ${companyName}`;
   }
   formattedData.comments = candidateData.comments || 'No comments provided';
@@ -35,4 +36,5 @@ export function formatCandidateData(candidateData) {
   if ( candidateData.lastName && !candidateData.lastname ) formattedData.lastname = candidateData.lastName;
   if ( candidateData.firstname && !candidateData.firstName ) formattedData.firstName = candidateData.firstname;
   if ( candidateData.lastname && !candidateData.lastName ) formattedData.lastName = candidateData.lastname;
+
   return formattedData;

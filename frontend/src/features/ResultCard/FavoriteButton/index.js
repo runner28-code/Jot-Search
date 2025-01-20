@@ -27,6 +27,8 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const [isFavorite, setIsFavorite] = useState(isFavoriteOverride ?? isSaved);
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
+// Temp comment
+
   const handleFavoriteClick = async () => {
     setIsFavorite(isFavorite => !isFavorite);
     try {

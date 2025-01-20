@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
+// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdGroups as EmployeesIcon } from 'react-icons/md';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -17,7 +18,6 @@ export default function CompanyCard({ data }) {
   const addressString = buildCompanyAddress(data);
   const employeeString = data.numEmployees ? `${data.numEmployees} Employees` : 'N/A';
 
-// Temp comment
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
   if ( isMobile ) {

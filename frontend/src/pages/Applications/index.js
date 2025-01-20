@@ -35,7 +35,6 @@ export default function Applications() {
   function handleCheckClick(careerId) {
     if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
-// Temp comment
     } else {
       setSelectedApplications([...selectedApplications, careerId]);
     }

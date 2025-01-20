@@ -173,7 +173,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           label='Work Setting Preference'
           required={true}
           placeholder='Select'
-// Temp comment
           value={formData.workspace}
           onChange={handleChange}
           choices={['Any', 'Remote', 'On Site', 'Hybrid']}

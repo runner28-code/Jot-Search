@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
@@ -7,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
+// Temp comment
         'spin': 'spin .175s linear forwards',
         'spin-reverse': 'spin-reverse .175s linear forwards'
       },

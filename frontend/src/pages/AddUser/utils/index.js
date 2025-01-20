@@ -5,7 +5,7 @@ export function validateInput(name, value, errors, password) {
   if ( name === 'email' ) {
     const validEmail = /\S+@\S+\.\S+/.test(value);
     if ( !validEmail ) {
-    } else {
+      newErrors[name] = 'Please enter a valid email address';
       newErrors[name] = '';
     }
     return newErrors;

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { uploadFile } from '../../../services/API';
 
 export default function EditResumeForm({ handleChange }) {
@@ -28,7 +29,6 @@ export default function EditResumeForm({ handleChange }) {
         name='resume'
         id='resume'
         onChange={handleFileSubmit}
-// Temp comment
       />
     </div>
   )

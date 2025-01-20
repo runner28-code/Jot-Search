@@ -43,6 +43,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           <Checkbox
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}
+// Temp comment
             onChange={selectableProps.handleClick}
           />
           : 

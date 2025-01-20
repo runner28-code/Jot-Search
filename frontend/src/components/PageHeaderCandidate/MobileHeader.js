@@ -8,6 +8,7 @@ export default function MobileHeader(props) {
     classOverride,
     colorizeStroke,
   } = props;
+  
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
   if ( classOverride ) addOnIconClasses += classOverride;
@@ -21,7 +22,6 @@ export default function MobileHeader(props) {
         />
       )}
       { IconComponent && (
-        <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />
       )}
       <h1 className='font-spaceGrotesk font-medium text-lg text-lightGrey'>
         { headerText }

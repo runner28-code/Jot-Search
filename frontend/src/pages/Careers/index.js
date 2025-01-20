@@ -23,7 +23,6 @@ export default function Careers() {
 
   function togglePassState() {
     setToggle(toggle => !toggle);
-  }
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
@@ -33,7 +32,6 @@ export default function Careers() {
         toggle={toggle}
       />
       <div 
-// Temp comment
         className={width <= 990 && !loggedIn ? 'px-[5%]' 
           : !loggedIn ? 'px-[15%]' 
             : '' 

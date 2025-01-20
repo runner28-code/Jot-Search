@@ -93,7 +93,6 @@ export const companyChoices = [
   choices.logout
 ];
 export const coordinatorChoices = [
-// Temp comment
   choices.dashboard,
   choices.candidates,
   choices.careers,

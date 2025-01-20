@@ -1,4 +1,4 @@
-import DocViewer, { DocViewerRenderers } from 'react-doc-viewer';
+import PropTypes from 'prop-types';
 import API from '../../../services/API';
 export default function UnlabeledContent({ contentText, propertyName }) {
   if ( propertyName === 'resume' ) {

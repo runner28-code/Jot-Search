@@ -36,7 +36,6 @@ export default function CandidateFilterLayout(props) {
     defaultFilterObject,
     filterObject,
     handleFilterChange,
-// Temp comment
     searchTerm,
     setSearchTerm,
     handleSearchClick,
@@ -75,7 +74,6 @@ export default function CandidateFilterLayout(props) {
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
-        {renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange)}
         <FormInput
           type='typeahead'
           dropdownType='tags'
