@@ -25,7 +25,6 @@ import {
   FilterBody,
   JobSearchByFilterResponse,
   JobSearchByID,
-  DataSource,
   Tables,
   ApplyResponse,
   GetSavedJobsResponse,

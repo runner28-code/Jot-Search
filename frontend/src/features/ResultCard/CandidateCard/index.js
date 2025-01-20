@@ -25,7 +25,6 @@ export default function CandidateCard({ data, disableLink }) {
   return (
     <div
       className='relative w-full'
-      key={data.id}
     >
       <LinkWrapper 
         link={link}

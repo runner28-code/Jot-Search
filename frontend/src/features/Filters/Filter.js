@@ -24,6 +24,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   function handleChoiceClick(choice) {
     setShowDropdown(false);
     setSelected(choice);
+// Temp comment
     handleFilterChange(filterType, choice);
   }
 
@@ -56,6 +57,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
           />}
         <p
           id='title'
+          className='text-md text-black70%'>{ selected }</p>
         <img
           src={downChevron}
           alt='open'

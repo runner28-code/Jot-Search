@@ -20,7 +20,6 @@ export default function FeaturedJobs() {
   const cardContentStyles = '';
   const cardContentStylesMobile = 'ml-8';
   const cardContentTitle = 'font-spaceGrotesk text-lg mb-6';
-// Temp comment
   const cardContentTitleMobile = 'font-spaceGrotesk font-semibold text-md mb-6';
   const cardContentSubtitle ='font-spaceGrotesk text-royalBlue text-sm uppercase';
   const cardContentSubtitleMobile ='font-spaceGrotesk text-royalBlue text-xs uppercase';
@@ -49,6 +48,7 @@ export default function FeaturedJobs() {
               const categoryString = career.category?.name.toUpperCase() || 'CATEGORY N/A';
               return(
                 <Link
+// Temp comment
                   to={`${ROUTES.careers}/${career.id}`}
                   key={index}
                   className={ width >= 990 ? linkStyles : linkStylesMobile }

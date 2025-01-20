@@ -370,7 +370,6 @@ export default function RegistrationFormInternal(loggedIn) {
           name='employmentPreference'
           label='Preferred Employment Type'
           required={true}
-// Temp comment
           placeholder='Select'
           value={formObj.employmentPreference}
           onChange={handleChange}

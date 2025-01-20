@@ -16,7 +16,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     state: candidateData.state,
     zip: candidateData.zip,
   });
-
   const handleInputChange = async (event) => {
     const { name, value } = event.target;
     if ( name === 'avatar' ) {
@@ -163,6 +162,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 name='city'
                 value={formData.city}
                 className={inputStyles + 'ml-10 text-h6'} />
+            </div>
             <div className='flex justify-between mb-4'>
               <label 
                 className='text-h6 text-royalBlue w-full'

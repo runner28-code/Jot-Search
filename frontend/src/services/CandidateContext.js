@@ -68,6 +68,7 @@ const mockCandidateData = [
   {
     id: 'ec0d90fb-f73c-4d4c-9e13-d720a14440f5',
     firstName: 'Donnie',
+    lastName: 'Kim',
     linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/donnie_1_l00n0o.webp', // Missing from Bullhorn Schema
     occupation: 'Softwware Engineer',

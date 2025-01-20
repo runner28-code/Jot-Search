@@ -22,6 +22,7 @@ export default function MobileLayout(props) {
     addressString,
     salaryString,
     postingAge,
+// Temp comment
     role
   } = props.data;
   const navigate = useNavigate();

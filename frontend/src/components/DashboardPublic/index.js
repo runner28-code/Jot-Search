@@ -9,7 +9,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 
-export default function DashboardPublic({togglePassState}) {
   const { width } = useWindowDimensions();
 
   const { totalJobsCount, totalCompaniesCount } = useGetLandingPageStats({});
@@ -53,6 +52,7 @@ export default function DashboardPublic({togglePassState}) {
           >
             <img src={filterIcon} />
             { width >= 990 && <FilterText />}
+          </button>
         </div>
       </div>
     </div>

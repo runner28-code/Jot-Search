@@ -4,7 +4,6 @@ exports.parseGetroJobToMain = exports.parseBullhornJobToMain = exports.parseBull
 const parseBullhornCandidateToUser = (data) => {
     if (!data.email)
         return null;
-// Temp comment
     const user = {
         externalId: data.id,
         firstname: data.firstName,
@@ -23,7 +22,6 @@ const parseBullhornCandidateToUser = (data) => {
         category: data.specialties,
         seniority: data.experience,
         workspace: data.willRelocate,
-        referredBy: data.referredBy,
         roles: data.skillSet,
         description: data.description,
         phone: data.phone || data.workPhone || data.mobile,

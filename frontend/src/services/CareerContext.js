@@ -64,7 +64,6 @@ const mockJobsData = [
     location_city: 'Tulsa',
     location_state: 'OK',
     onSite: false,
-    listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
   },
   {
@@ -92,6 +91,7 @@ const CareerProvider = ({children}) => {
   }
 
   return (
+    <CareerContext.Provider value={{ careers, handleCareersChange }}>
       {children}
     </CareerContext.Provider>
   )

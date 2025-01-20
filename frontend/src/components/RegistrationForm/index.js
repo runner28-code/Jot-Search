@@ -25,7 +25,6 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 const defaultState = {
   phone: '',
   expertise: '',
-// Temp comment
   address1: '',
   city: '',
   state: '',
@@ -96,7 +95,6 @@ export default function RegistrationForm(loggedIn) {
       formObj.resume = resumeResponse;
 
       // Format formObj
-      const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);

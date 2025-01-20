@@ -93,6 +93,7 @@ export const companyChoices = [
   choices.logout
 ];
 export const coordinatorChoices = [
+// Temp comment
   choices.dashboard,
   choices.candidates,
   choices.careers,
@@ -126,6 +127,7 @@ export function findSelectedFromPath() {
     case 'careers':
       return 'Careers';
     case 'companies':
+      return 'Companies';
     case 'add-user':
       return 'Add User';
     case 'alerts':

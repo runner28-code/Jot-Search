@@ -23,7 +23,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
       className={ styleObject.containerStyles }
       htmlFor={ placeholder }
     >
-// Temp comment
       <div className={ styleObject.searchIconStyles }>
         <img
           src={ searchWhite }
@@ -36,6 +35,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
         placeholder={ placeholderText }
         value={ searchTerm }
         onChange={ handleChange }
+// Temp comment
         className={ styleObject.inputStyles } />
     </label>
   )

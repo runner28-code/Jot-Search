@@ -6,6 +6,7 @@ export default function DesktopHeader(props) {
   const {
     headerText,
     icon,
+// Temp comment
     IconComponent,
     classOverride,
     containerClassOverride,
@@ -14,7 +15,6 @@ export default function DesktopHeader(props) {
     backButton
   } = props;
   const navigate = useNavigate();
-// Temp comment
 
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-royalBlue ' : ' fill-royalBlue ';

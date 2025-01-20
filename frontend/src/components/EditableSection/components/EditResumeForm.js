@@ -28,6 +28,7 @@ export default function EditResumeForm({ handleChange }) {
         name='resume'
         id='resume'
         onChange={handleFileSubmit}
+// Temp comment
       />
     </div>
   )

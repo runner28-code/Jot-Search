@@ -75,6 +75,7 @@ export default function DesktopLayout(props) {
           </div>
           {/* Second row icons */}
           <div className='w-full flex items-center mt-xl'>
+// Temp comment
             {/* Employment Type */}
             <div className='w-1/3 flex items-center'>
               <img

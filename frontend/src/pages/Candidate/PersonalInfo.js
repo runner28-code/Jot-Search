@@ -103,7 +103,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
           <h3 className='text-h5 font-medium mb-15 text-black70% font-spaceGrotesk'>Personal Info</h3>
           { !editMode && renderEditIcon(candidateData, setEditMode)}
         </div>
-        
         <div className='w-full px-l'>
           <div className='vw-1280:flex flex-col'>
             <div className='vw-1280:flex gap-12'>

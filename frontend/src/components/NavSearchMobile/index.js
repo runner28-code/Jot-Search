@@ -21,6 +21,7 @@ import {
   buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
+
 const NUM_ITEMS_PER_TYPE = 5
 
 export default function NavSearchMobile({ placeholder }) {
@@ -45,6 +46,7 @@ export default function NavSearchMobile({ placeholder }) {
     else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
       return { filtersArr: searchFilters };
+// Temp comment
     } else {
       return { filterKey: 'name', filterValue: searchTerm }
     }
