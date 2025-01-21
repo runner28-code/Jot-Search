@@ -28,3 +28,4 @@ import e from "express";
 
 @JsonController("/api/candidate")
 export class CandidateController {
+  @Authorized()

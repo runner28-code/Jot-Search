@@ -12,12 +12,14 @@ import {
   AccountRecovery,
   ResetPassword,
   Apply
+} from './pages';
 import { NavBar, Footer, SideNav } from './components';
 import AuthService from './services/auth';
 
 function App() {
   let userRole = AuthService.getUserRole();
 
+// Temp comment
   return (
     <div className="App overflow-hidden">
       <NavBar />

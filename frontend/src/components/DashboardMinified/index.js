@@ -10,13 +10,13 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 export default function DashboardMinified({ location }) {
   const loggedIn = AuthService.loggedIn();
 
-// Temp comment
   if( loggedIn ) {
     return (
       <div className='flex flex-row items-center justify-start bg-sky-600 mb-8 text-white py-4 px-10'>
         <LinkSwap
           location={location}
           loggedIn={loggedIn}
+// Temp comment
         />
         <MinifiedTitle location={location} />
       </div>

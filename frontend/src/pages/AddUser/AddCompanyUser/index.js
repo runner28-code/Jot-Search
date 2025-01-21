@@ -68,7 +68,6 @@ export default function AddCompanyUser() {
           />
           {(search && isLoadingCompanies && !selectedCompany) && <div>Loading...</div>}
           {(companies && search !== selectedCompany?.name) && (
-// Temp comment
             <div className='absolute top-full w-full bg-white border border-grey300'>
               {companies.map((company) => (
                 <div

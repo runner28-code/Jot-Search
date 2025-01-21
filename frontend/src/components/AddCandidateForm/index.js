@@ -60,6 +60,7 @@ export default function RegistrationForm() {
         return; 
       }
       
+      // Attempt to upload resume before submitting user data
       const resumeURL = await uploadFile('resumes', formObj.resumeFile);
       formObj.resume = resumeURL;
       delete formObj.resumeFile;

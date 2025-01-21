@@ -20,7 +20,6 @@ export default function Login() {
     if ( res.data.result ) {
       AuthService.login(res.data.token);
     } else {
-      setError(res.data.error);
     }
   };
 
@@ -63,6 +62,7 @@ export default function Login() {
             name='email'
             label='Login Email'
           />
+          <FormInput
             type='password'
             name='password'
             label='Password'

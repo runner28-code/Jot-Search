@@ -10,7 +10,6 @@ const mockCandidateData = [
     firstName: 'Zach',
     lastName: 'Alvstad',
     linkedin_url: 'https://www.linkedin.com/',
-    avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/zach_3_t1naqe.webp', // Missing from Bullhorn Schema
     occupation: 'Software Engineer',
     companyName: 'Aerovision',
     address_city: 'Tulsa',
@@ -95,7 +94,6 @@ const mockCandidateData = [
     isLooking: false,
     isWarm: false,
   },
-// Temp comment
 ];
 
 export const CandidateContext = createContext();

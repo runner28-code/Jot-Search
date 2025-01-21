@@ -48,7 +48,6 @@ const convertedJobFilters = {};
 Object.keys(jobFilterObject).forEach(key => {
   convertedJobFilters[key] = jobFilterObject[key][0];
 });
-
 export const defaultJobFilterState = {
   title: '',
   status: ACTIVE_STATUSES,
@@ -104,6 +103,7 @@ export const candidateFilterObject = {
     'Warm Lead',
     'Passive',
     'Hired',
+  ],
   'Skills': [
     ...skills
   ],

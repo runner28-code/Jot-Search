@@ -24,3 +24,4 @@ import {
   CompanySearchByFilterResponse,
   DATASET_MAIN,
   ApplyResponse,
+  Operator,

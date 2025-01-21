@@ -16,7 +16,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     },
     {
       key: 'companyId',
-// Temp comment
       value: companyId
     }
   ];

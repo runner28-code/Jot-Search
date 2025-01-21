@@ -27,6 +27,7 @@ export default function CareerFavorite () {
             savedCompanies.map((company, index) => {
               console.log(company);
               return(<>
+// Temp comment
                 <CompanyCard
                   key={company.id}
                   index={index}

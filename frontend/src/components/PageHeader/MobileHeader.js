@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 
 export default function MobileHeader(props) {
   const {
-// Temp comment
     headerText,
     icon,
     IconComponent,
@@ -29,6 +28,7 @@ export default function MobileHeader(props) {
       { icon && (
         <img
           src={ icon }
+// Temp comment
           alt='header icon'
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />

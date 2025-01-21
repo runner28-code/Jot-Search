@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link, useLocation } from 'react-router-dom';
 import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageStats';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';

@@ -9,6 +9,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
+import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding } from 'react-icons/bs';
 
 function HeaderContent({ companyData }) {
@@ -38,7 +39,6 @@ function HeaderContent({ companyData }) {
                 />
                 <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
               </div>
-              <div className={ headerGroupStyles }>
                 <CareerIcon
                   className={headerIconStyles}
                 />
