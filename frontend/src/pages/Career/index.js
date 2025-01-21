@@ -59,7 +59,6 @@ export default function CareerPage() {
   return (<>
     <RenderHeader
       loggedIn={loggedIn}
-      role={role}
       source={source}
     />
     <div 

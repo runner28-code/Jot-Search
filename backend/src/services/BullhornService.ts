@@ -17,6 +17,7 @@ import { sendEmail } from "./EmailService";
 import { JOB_FIELDS } from "../utils/constant";
 
 export class BullhornService {
+  public static client: BullhornService | null = null;
   private auth_code = null;
   private access_token = null;
   private refresh_token = null;
@@ -50,7 +51,6 @@ export class BullhornService {
           this.access_token &&
           this.refresh_token &&
           this.BhRestToken &&
-          this.restUrl
         )
           return true;
       }

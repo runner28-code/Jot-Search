@@ -6,7 +6,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import postingAgeIcon from '../../../assets/icons/calendar.svg';
 import clockIcon from '../../../assets/icons/clock.svg';
-// Temp comment
 import salaryIcon from '../../../assets/icons/salary.svg';
 import featuredIcon from '../../../assets/icons/pyramid.svg';
 import locationIcon from '../../../assets/icons/placepin.svg';
@@ -52,5 +51,4 @@ export default function CareerCard({ data, active }) {
       <FavoriteButton
         type={'job'}
         data={data} />
-    </div>
   )

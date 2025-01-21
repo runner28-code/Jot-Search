@@ -21,6 +21,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   }
 
   function handlePropertyChange(property, value) {
+// Temp comment
     setContentObject({ ...contentObject, [property]: value });
   }
 

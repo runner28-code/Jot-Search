@@ -47,7 +47,6 @@ export default function AddCoordinator() {
       }, 2000);
     }
   }, [submissionObject.success]);
-// Temp comment
 
   function handleInputChange(e) {
     const { name, value } = e.target;
@@ -112,7 +111,6 @@ export default function AddCoordinator() {
       </div>
       <div className={inputContainer}>
         {/* Last Name */}
-        <label className={labelStyles}>Last Name</label>
         <input
           type='text'
           className={submissionObject.errors.lastname ? invalidInputStyles : validInputStyles += addInputStyles}

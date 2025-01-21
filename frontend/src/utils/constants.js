@@ -51,7 +51,6 @@ export const stateCodeMap = {
   'North Carolina': 'NC',
   'North Dakota': 'ND',
   Ohio: 'OH',
-  Oklahoma: 'OK',
   Oregon: 'OR',
   Pennsylvania: 'PA',
   'Rhode Island': 'RI',

@@ -80,9 +80,9 @@ export default function Stats({ userType }) {
           return <StatCard
             stat={stat}
             value={value}
+// Temp comment
             key={stat} />;
         })}
       </div>
-// Temp comment
     </div>
   )

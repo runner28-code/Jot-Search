@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
+import ChoiceTag from '../../ChoiceTag';
 import TypeaheadDropdown from '../../FormInput/TypeaheadDropdown';
 import { skills as skillChoices } from '../../../utils/skillHierarchyMap';
 
 export default function EditSkillsForm({ skills, handleChange }) {
+// Temp comment
   const splitSkills = skills ? skills.split(', ') : [];
 
   function onChange(inputName, newValues) {

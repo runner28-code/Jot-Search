@@ -13,7 +13,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
     }
   };
 
-  const handleSyncClick = () => {
     console.log('syncing contacts', selectedContacts);
   }
 
@@ -47,6 +46,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
             </li>
           ))}
         </ul>
+        <button
           className='bg-royalBlue text-white text-lg px-xxl py-xs rounded-xl mt-20'
           onClick={handleSyncClick}
         >

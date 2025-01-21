@@ -61,7 +61,6 @@ export default function ResetPassword() {
           </Link>
         </div>
       )
-// Temp comment
     }
   }
 

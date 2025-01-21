@@ -38,7 +38,6 @@ export const jobFilterObject = {
 };
 
 export const ACTIVE_STATUSES = [
-  'Active',
   'Open',
   'Passive'
 ]
@@ -112,7 +111,6 @@ export const candidateFilterObject = {
 
 // Create default filter state based on filterObject
 const convertedCandidateFilters = {};
-// Temp comment
 Object.keys(candidateFilterObject).forEach(key => {
   convertedCandidateFilters[key] = candidateFilterObject[key][0];
 });

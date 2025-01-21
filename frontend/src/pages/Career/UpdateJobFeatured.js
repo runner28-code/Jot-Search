@@ -31,7 +31,6 @@ export const UpdateJobFeatured = ({ job }) => {
           role="switch"
           aria-checked={toggled}
           onClick={async() => {
-// Temp comment
             const { result } = await saveJob({ featured: !toggled, id: job.id })
 
             // TODO: Replace with react-query refetch
@@ -48,6 +47,7 @@ export const UpdateJobFeatured = ({ job }) => {
       
         <label 
           htmlFor='featured' 
+// Temp comment
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured
         </label>

@@ -88,5 +88,6 @@ export default function AddCompanyUser() {
             />
           )}
         </div>
+      </div>
     </div>
   )

@@ -30,6 +30,7 @@ export function appendPathToBaseUrl(path) {
     return path; // It's already a full URL
   }
   return API.defaults.baseURL + path;
+// Temp comment
 }
 
 /* FETCH FUNCTIONS */

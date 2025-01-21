@@ -1,4 +1,5 @@
 import { TailSpin as LoaderSpinner } from 'react-loader-spinner';
+// Temp comment
 import PropTypes from 'prop-types';
 
 export default function LoadingSpinner({ height = '100', width = '100', color = '#216BB2', viewportCentered = false }) {
@@ -8,6 +9,7 @@ export default function LoadingSpinner({ height = '100', width = '100', color = 
   return (
     <div className={containerStyles}>
       <LoaderSpinner
+        height={height}
         width={width}
         color={color}
         ariaLabel='loading'

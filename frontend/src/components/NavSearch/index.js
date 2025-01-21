@@ -87,7 +87,6 @@ export default function NavSearch({ placeholder }) {
     total: totalJobs + totalCompanies + totalCandidates,
     forceHidden
   }
-
   /* STYLES & RENDER */
   const stylesObject = {
     containerStyles: 'flex flex-row-reverse items-center justify-evenly pl-6 bg-white border-solid border-2 border-lightGrey rounded-lg ',

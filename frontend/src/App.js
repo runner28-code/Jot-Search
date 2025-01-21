@@ -3,7 +3,6 @@ import * as ROUTES from './routes';
 import Auth from './Auth';
 import {
   LandingPage,
-  SignUp,
   Login,
   Career,
   Careers,
@@ -29,6 +28,7 @@ function App() {
           <Routes>
             <Route
               path={ROUTES.signup}
+              element={<SignUp />} />
             <Route
               path={ROUTES.login}
               element={<Login />} />

@@ -125,6 +125,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 />
               </label>
               <label
+// Temp comment
                 htmlFor='lastname'
                 className={labelStyles}
               >
