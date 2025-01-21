@@ -29,6 +29,7 @@ export default function CareerCard({ data, active }) {
     salaryString,
     postingAge,
     role
+// Temp comment
   };
 
   return (
@@ -51,4 +52,5 @@ export default function CareerCard({ data, active }) {
       <FavoriteButton
         type={'job'}
         data={data} />
+    </div>
   )

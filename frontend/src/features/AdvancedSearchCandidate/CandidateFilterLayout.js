@@ -8,7 +8,6 @@ const dropdownFiltersCoord = [
   'Experience',
   'Remote Availability',
   'Employment Type',
-// Temp comment
   'Status'
 ];
 

@@ -19,7 +19,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
       params.title = filterState.title;
     }
     if (filterState['On-Site/Remote'] !== 'Any Work Setting') {
-      params['On-Site/Remote'] = filterState['On-Site/Remote'];
     }
     if (filterState.expertise !== 'Any Expertise') {
       params.expertise = filterState.expertise;

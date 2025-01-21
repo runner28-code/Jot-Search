@@ -83,6 +83,6 @@ export default function ExpertiseLinks() {
             className={iconStyles}
           />
           <span className={textStyles}>Finance</span>
-      </div>
+        </Link>
     </section>
   )

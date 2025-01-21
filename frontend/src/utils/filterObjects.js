@@ -38,6 +38,7 @@ export const jobFilterObject = {
 };
 
 export const ACTIVE_STATUSES = [
+  'Active',
   'Open',
   'Passive'
 ]
@@ -103,7 +104,6 @@ export const candidateFilterObject = {
     'Warm Lead',
     'Passive',
     'Hired',
-  ],
   'Skills': [
     ...skills
   ],

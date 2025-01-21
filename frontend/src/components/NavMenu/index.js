@@ -15,10 +15,8 @@ export default function NavMenu() {
   }
 
   function handleOptionClick(e) {
-// Temp comment
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {
-      AuthService.logout();
     }
   }
 

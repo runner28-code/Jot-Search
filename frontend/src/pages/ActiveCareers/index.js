@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import PageHeader from '../../components/PageHeader';
-// Temp comment
 import ResultsHeader from '../../components/ResultsHeader';
 import FilterSearch from '../../components/FilterSearch';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -33,6 +32,7 @@ export default function ActiveCareers() {
 
   const prefetchFunc = (page) => {
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
+// Temp comment
   }
 
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });

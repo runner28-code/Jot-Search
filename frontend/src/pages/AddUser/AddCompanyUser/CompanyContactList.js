@@ -13,6 +13,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
     }
   };
 
+  const handleSyncClick = () => {
     console.log('syncing contacts', selectedContacts);
   }
 
@@ -32,6 +33,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
             <li
               key={contact.id}
               className={ 'flex items-center px-s py-s ' + (index < clientContacts.length - 1 ? 'border-b border-grey300' : '') }
+// Temp comment
               onClick={() => handleContactClick(contact)}
             >
               <input

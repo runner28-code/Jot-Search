@@ -22,7 +22,9 @@ export default function Careers() {
   const { width } = useWindowDimensions();
 
   function togglePassState() {
+    setToggle(toggle => !toggle);
   }
+// Temp comment
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader

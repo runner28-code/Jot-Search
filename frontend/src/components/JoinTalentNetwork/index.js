@@ -5,9 +5,11 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function JoinTalentNetwork() {
 
+  const { width } = useWindowDimensions();
 
   if( width <= 990 ) {
     return (<>
+// Temp comment
       {/* Join Hero and call-to-action */}
       <section className='relative h-200 bg-join-hero bg-cover bg-center mb-[600px]'>
         <div className='justify-center w-11/12 mx-[5%] absolute -bottom-[100%]'>

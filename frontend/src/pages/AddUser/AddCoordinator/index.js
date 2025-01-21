@@ -58,7 +58,6 @@ export default function AddCoordinator() {
       submissionObject.errors,
       formObject.password
     );
-
     // Add errors to state if there are any
     if (Object.keys(newErrors).length > 0) {
       setSubmissionObject({
@@ -111,6 +110,7 @@ export default function AddCoordinator() {
       </div>
       <div className={inputContainer}>
         {/* Last Name */}
+        <label className={labelStyles}>Last Name</label>
         <input
           type='text'
           className={submissionObject.errors.lastname ? invalidInputStyles : validInputStyles += addInputStyles}

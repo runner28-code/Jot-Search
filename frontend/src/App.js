@@ -3,6 +3,7 @@ import * as ROUTES from './routes';
 import Auth from './Auth';
 import {
   LandingPage,
+  SignUp,
   Login,
   Career,
   Careers,
@@ -11,7 +12,6 @@ import {
   AccountRecovery,
   ResetPassword,
   Apply
-} from './pages';
 import { NavBar, Footer, SideNav } from './components';
 import AuthService from './services/auth';
 

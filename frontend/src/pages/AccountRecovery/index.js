@@ -24,12 +24,14 @@ export default function AccountRecovery() {
   };
   function setType(response, condition) {
     setCondition(condition);
+// Temp comment
     setResponse(response);
   }
 
   function renderResponse () {
     const successStyle = 'mb-4 text-success';
     const errorStyle = 'mb-4 text-error';
+    if( response ) {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )
     }
   }

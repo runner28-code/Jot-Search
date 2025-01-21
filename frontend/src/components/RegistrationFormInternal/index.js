@@ -126,6 +126,7 @@ export default function RegistrationFormInternal(loggedIn) {
       setTimeout(() => {
         setFormObj(defaultState);
         setSubmissionObject({
+          loading: false,
           success: false,
         });
       }, 2000);

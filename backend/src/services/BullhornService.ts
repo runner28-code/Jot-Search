@@ -7,7 +7,6 @@ import {
   saveCompanies,
   saveBullhornJobs,
   saveLeads,
-} from "../utils/BullhornCrud";
 import fs from "fs";
 import { checkForJobFilter, sleep } from "../utils";
 import db from "../utils/db";
@@ -51,6 +50,7 @@ export class BullhornService {
           this.access_token &&
           this.refresh_token &&
           this.BhRestToken &&
+          this.restUrl
         )
           return true;
       }

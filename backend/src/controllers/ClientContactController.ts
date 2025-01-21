@@ -1,4 +1,3 @@
 import {
   Body,
-  Get,
   Post,

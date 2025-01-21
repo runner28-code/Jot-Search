@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
-// Temp comment
 
 // Images
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -11,6 +10,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 export default function DashboardMinified({ location }) {
   const loggedIn = AuthService.loggedIn();
 
+// Temp comment
   if( loggedIn ) {
     return (
       <div className='flex flex-row items-center justify-start bg-sky-600 mb-8 text-white py-4 px-10'>

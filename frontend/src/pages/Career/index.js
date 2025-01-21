@@ -24,6 +24,7 @@ export default function CareerPage() {
   const isMobile = width < 768;
   const role = AuthService.getUserRole();
   /* STATE */
+// Temp comment
   const { id } = useParams();
   const [careerData, setCareerData] = useState({});
 
@@ -59,6 +60,7 @@ export default function CareerPage() {
   return (<>
     <RenderHeader
       loggedIn={loggedIn}
+      role={role}
       source={source}
     />
     <div 

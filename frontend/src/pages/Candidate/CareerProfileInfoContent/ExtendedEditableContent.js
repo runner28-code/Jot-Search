@@ -109,7 +109,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       <label
         htmlFor='description'
         className='block my-10'
-// Temp comment
       >
         <p>My Summary</p>
         {
@@ -231,6 +230,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
                 htmlFor='resume'
                 className={'cursor-pointer flex flex-col rounded-lg items-center justify-center p-4 w-100 h-100 bg-white! border-dashed border-grey300 border-1.5'}
               >
+// Temp comment
                 <input
                   type='file'
                   name='resume'

@@ -1,6 +1,7 @@
 export const mockCandidateStats = {
   'Applications': {
     'Today': {
+      count: 2,
       prevCount: 1
     },
     'Last 7 Days': {
@@ -18,6 +19,7 @@ export const mockCandidateStats = {
     'Last 90 Days': {
       count: 6,
       prevCount: 7
+// Temp comment
     }
   },
   'Invitations': {

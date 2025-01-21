@@ -95,6 +95,7 @@ const mockCandidateData = [
     isLooking: false,
     isWarm: false,
   },
+// Temp comment
 ];
 
 export const CandidateContext = createContext();

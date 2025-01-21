@@ -18,7 +18,6 @@ export default function FeaturedJobs() {
   const cardStyles = 'mx-8 outline outline-1 outline-neutral-300 rounded-xxl p-12 w-[275px] h-[316px]';
   const cardStylesMobile = 'mx-8 outline outline-1 outline-neutral-300 rounded-xl py-6 px-4 flex items-center';
   const cardContentStyles = '';
-  const cardContentStylesMobile = 'ml-8';
   const cardContentTitle = 'font-spaceGrotesk text-lg mb-6';
   const cardContentTitleMobile = 'font-spaceGrotesk font-semibold text-md mb-6';
   const cardContentSubtitle ='font-spaceGrotesk text-royalBlue text-sm uppercase';
@@ -58,7 +57,6 @@ export default function FeaturedJobs() {
                       <h5 className={ width >= 990 ? cardContentTitle : cardContentTitleMobile }>{career.title}</h5>
                       <p className={ width >= 990 ? cardContentSubtitle : cardContentSubtitleMobile }>{categoryString}</p>
                     </div>
-// Temp comment
                   </div>
                 </Link>
               )

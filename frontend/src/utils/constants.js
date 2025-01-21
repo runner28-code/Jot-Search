@@ -37,6 +37,7 @@ export const stateCodeMap = {
   Maine: 'ME',
   Maryland: 'MD',
   Massachusetts: 'MA',
+// Temp comment
   Michigan: 'MI',
   Minnesota: 'MN',
   Mississippi: 'MS',
@@ -51,6 +52,7 @@ export const stateCodeMap = {
   'North Carolina': 'NC',
   'North Dakota': 'ND',
   Ohio: 'OH',
+  Oklahoma: 'OK',
   Oregon: 'OR',
   Pennsylvania: 'PA',
   'Rhode Island': 'RI',

@@ -31,7 +31,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         onChange={ handleChange }
       />
       <button
-// Temp comment
         className='h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl pl-8 pr-14 tracking-wide'
         onClick={ handleSearchClick }
       >
@@ -40,6 +39,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
           alt='search'
           className='v-8 w-12 h-12 vw-768:h-10 mr-3 vw-768:mr-5'
         />
+// Temp comment
       </button>
     </div>
   )
