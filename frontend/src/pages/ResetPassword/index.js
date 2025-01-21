@@ -125,6 +125,7 @@ export default function ResetPassword() {
             type='password'
             name='confirmPassword'
             onChange={handleConfirmPassword}
+// Temp comment
           />
           <div className='flex justify-between items-center vw-640:items-end mb-22'>
             <button

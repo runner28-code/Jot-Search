@@ -53,3 +53,7 @@ model History {
 }
 
 model Lead {
+  id                    String    @id @default(uuid())
+  externalId            String?
+  address_address1      String?
+  address_address2      String?

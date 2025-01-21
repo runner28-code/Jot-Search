@@ -5,3 +5,4 @@ export type User = {
   lastname?: string;
   gender?: string;
   email: string;
+  password?: string;

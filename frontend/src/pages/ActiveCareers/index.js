@@ -28,6 +28,7 @@ export default function ActiveCareers() {
 
   const filtersArr = buildSearchFilters({ title: searchTerm, companyId, status: ['Active', 'Open'] });
 
+  const { jobs, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
 
   const prefetchFunc = (page) => {
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
@@ -39,7 +40,6 @@ export default function ActiveCareers() {
     <section>
       <PageHeader
         headerText='Active Careers'
-        IconComponent={CareerIcon}
         classOverride='h-18 w-18'
         backButton
       />

@@ -16,6 +16,7 @@ export default function InviteCandidates({ job }) {
     })),
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
+// Temp comment
   });
 
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
@@ -60,6 +61,7 @@ export default function InviteCandidates({ job }) {
       {isSendingJob && <div className="text-center">Sending Invitations...</div>}
       {successfullySentJob && <div className="text-center">Invitations Sent!</div>}
 
+      <SelectedValues />
 
       <MultiSelect
         isLoading={isLoading}

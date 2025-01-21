@@ -8,7 +8,6 @@ import { FiUserPlus as AddUserIcon } from 'react-icons/fi';
 import {
   MdLogout as LogoutIcon,
   MdStars as FavoritesIcon
-// Temp comment
 } from 'react-icons/md';
 import {
   RiFolderUserLine as CandidatesIcon,

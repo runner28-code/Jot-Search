@@ -17,6 +17,7 @@ import { sendEmail } from "./EmailService";
 import { JOB_FIELDS } from "../utils/constant";
 
 export class BullhornService {
+  public static client: BullhornService | null = null;
   private auth_code = null;
   private access_token = null;
   private refresh_token = null;
@@ -57,3 +58,10 @@ export class BullhornService {
     }
     if (await this.getAuthCode()) {
       if (await this.getAccessToken()) return await this.login();
+    }
+    return false;
+  }
+
+  async getCookie() {
+    const targetFile = __dirname + "/../config/cookie.json";
+    return new Promise((resolve) => {

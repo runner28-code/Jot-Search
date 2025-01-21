@@ -29,7 +29,6 @@ const ResumePreview = ({ resumeUrl }) => {
         ref={canvasRef}
         className='rounded-lg'
       />
-// Temp comment
       {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>
           <ul className="flex justify-between">

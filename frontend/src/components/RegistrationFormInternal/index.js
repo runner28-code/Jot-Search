@@ -337,7 +337,6 @@ export default function RegistrationFormInternal(loggedIn) {
           placeholder='Select'
           value={formObj.roles}
           onChange={handleChange}
-// Temp comment
           choices={formObj.expertise ? roleChoices[formObj.expertise] : []}
           error={errors.includes('roles')}
         />

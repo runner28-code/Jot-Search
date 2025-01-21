@@ -4,3 +4,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Style Guide
 - TailwindCSS for styling
+    - Base `rem` is set to 10px for easy calculation

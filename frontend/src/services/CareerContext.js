@@ -76,7 +76,6 @@ const mockJobsData = [
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
     location_state: 'OK',
-// Temp comment
     onSite: true,
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
@@ -92,6 +91,7 @@ const CareerProvider = ({children}) => {
     setCareers(value);
   }
 
+// Temp comment
   return (
     <CareerContext.Provider value={{ careers, handleCareersChange }}>
       {children}

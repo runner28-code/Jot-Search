@@ -107,9 +107,9 @@ export default function Company() {
         </div>
         <RenderInvite
           loggedIn={loggedIn}
-// Temp comment
           companyData={companyData}
         />
+// Temp comment
       </div>
     </div>
   )

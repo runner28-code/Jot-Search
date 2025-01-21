@@ -158,6 +158,7 @@ export default function AddCoordinator() {
           name='verifyPassword'
           placeholder='Verify Password'
           value={formObject.verifyPassword}
+          onChange={handleInputChange}
         />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.verifyPassword}</p>
       </div>

@@ -206,6 +206,7 @@ export default function RegistrationForm(loggedIn) {
       onSubmit={handleSubmit}>
       { renderHeader(addType) }
       <div className={midpointFlex}>
+// Temp comment
         <div className={flexWidth}>
           <FormInput
             type='text'

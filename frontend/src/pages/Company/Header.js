@@ -34,7 +34,6 @@ function HeaderContent({ companyData }) {
           <FillerIcon />
           <h4 className={ ( width >= 1280 ) ? headerTitleDesktop : headerTitle }>
             {companyData.name}
-// Temp comment
           </h4>
         </div>
         <div>

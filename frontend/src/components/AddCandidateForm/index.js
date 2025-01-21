@@ -223,7 +223,6 @@ export default function RegistrationForm() {
             name='employmentPreference'
             placeholder='Preferred Employment Type' 
             value={formObj.employmentPreference}
-            onChange={handleChange}
             choices={['Any', 'Full-Time', 'Contract']}
             error={errors.includes('employmentPreference')}
           />

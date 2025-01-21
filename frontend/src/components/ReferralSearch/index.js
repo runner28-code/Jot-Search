@@ -33,6 +33,7 @@ const mockJobsData = [
     specialty: 'Sales & Biz Dev'
   },
 ];
+
 function renderChosen(currentChosen, handleRemove) {
   return currentChosen.map(choice =>
     <div 

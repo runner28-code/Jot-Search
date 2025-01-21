@@ -5,3 +5,4 @@ CREATE TABLE "Candidate" (
     "certifications" TEXT,
     "comments" TEXT,
     "companyName" TEXT,
+    "companyURL" TEXT,

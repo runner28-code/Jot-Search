@@ -19,7 +19,6 @@ const PREFERENCE_ITEMS = {
 }
 
 export default function PersonalInfo({role, candidateData, handleCandidateUpdate}) {
-// Temp comment
   if ( role === 'company' ) {
     return null;
   }
@@ -38,6 +37,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
 
   const [editMode, setEditMode] = useState(false);
 
+// Temp comment
   const [referralChoice, setReferralChoice] = useState(false);
 
   function handleInputChange(e) {
