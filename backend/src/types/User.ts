@@ -6,3 +6,4 @@ export type User = {
   gender?: string;
   email: string;
   password?: string;
+  role: string;

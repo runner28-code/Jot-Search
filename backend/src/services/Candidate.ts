@@ -7,3 +7,4 @@ export const saveCandidate = async (
   try {
     const existing = await db.user.findFirst({
       where: {
+        AND: {

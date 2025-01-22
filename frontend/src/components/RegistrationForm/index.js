@@ -329,7 +329,6 @@ export default function RegistrationForm(loggedIn) {
           />
           <FormInput
             type='typeahead'
-// Temp comment
             dropdownType='tags'
             name='skills'
             label='Your skills (select at least 3)'

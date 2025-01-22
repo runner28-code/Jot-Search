@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
-import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { VscChevronDown as ChevronDown } from 'react-icons/vsc';
 import { VscChevronUp as ChevronUp } from 'react-icons/vsc';
 import filterIcon from '../../assets/icons/filter-toggle.svg';
@@ -34,7 +33,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
           </Link>
           <Link
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }
-// Temp comment
             to={ROUTES.companies}
           >
             <CompanyIcon />

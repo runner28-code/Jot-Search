@@ -29,7 +29,6 @@ function HeaderContent({ companyData }) {
           </div>
           <div className='basis-4/6'>
             <h4 className={ headerTitle }>
-// Temp comment
               {companyData.name}
             </h4>
             <div className='flex items-center'>
@@ -43,6 +42,7 @@ function HeaderContent({ companyData }) {
               <div className={ headerGroupStyles }>
                 <CareerIcon
                   className={headerIconStyles}
+// Temp comment
                 />
                 <OpenCareers
                   styles={headerRowTextStyles}

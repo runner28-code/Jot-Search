@@ -25,9 +25,12 @@ import {
   FilterBody,
   JobSearchByFilterResponse,
   JobSearchByID,
+  DataSource,
   Tables,
   ApplyResponse,
   GetSavedJobsResponse,
   AdvancedFilterOption,
-  DATASET_MAIN,
   DataSources,
+  Operator,
+} from "../types/Common";
+import { ALLOWED_GETRO_FILTERS } from "../types/Getro";

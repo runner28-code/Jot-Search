@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-// Temp comment
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
@@ -20,3 +19,5 @@ module.exports = {
           to: {
             transform: 'rotate(180deg)'
           },
+        },
+        'spin-reverse': {

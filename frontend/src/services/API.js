@@ -25,6 +25,7 @@ API.interceptors.request.use(
 
 export default API;
 
+export function appendPathToBaseUrl(path) {
   if (path.slice(0, 4) === 'http') {
     return path; // It's already a full URL
   }
@@ -35,3 +36,25 @@ export default API;
 //* CANDIDATES
 export async function getCandidates(filtersArr, count, page) {
   return (await getCandidatesFull(filtersArr, count, page)).candidates;
+}
+
+export async function getCandidatesFull(filtersArr, count, page, fields = null) {
+  const formattedFilters = formatCandidateFilters(filtersArr)
+    .filter(filter => {
+      if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {
+        return false
+      }
+      return true
+    });
+
+  const { data } = await API.post(ROUTES.APIcandidates, {
+    'filters': formattedFilters,
+    'count': count,
+    'page': page || null,
+    'fields': fields || null
+// Temp comment
+  });
+  return {
+    candidates: normalizeData(data.candidates),
+    total: data.total
+  }

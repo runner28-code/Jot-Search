@@ -125,7 +125,6 @@ export default function Footer() {
         <img
           src={youtube}
           className={socialIconStyle}
-// Temp comment
         />
       </a>
     </div>

@@ -24,3 +24,5 @@ export const saveCompanies = async (companies: any[]) => {
   // for (const item of result) {
   //   await db.company.update({
   //     where: {
+  //       id: item.id,
+  //     },

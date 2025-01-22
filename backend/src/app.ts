@@ -9,3 +9,4 @@ import { NextFunction } from "connect";
 import { VerifyJwtToken } from "./utils/jwtUtils";
 import { findUserByEmail } from "./services/User";
 import { genUUID } from "./utils";
+import fs from "fs";

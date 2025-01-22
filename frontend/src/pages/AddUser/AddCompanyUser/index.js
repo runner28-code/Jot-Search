@@ -21,7 +21,6 @@ export default function AddCompanyUser() {
     setSearch(company.name);
   }
 
-  const paragraphStyles = 'opacity-70 mb-8';
   let titleStyles = 'font-spaceGrotesk items-center text-md vw-900:text-xl mb-8 ';
   let containerStyles = 'border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12 px-6 vw-900:px-14 ';
 
@@ -51,7 +50,6 @@ export default function AddCompanyUser() {
         </div>
       </div>
       <div className={ containerStyles + 'bg-white mt-12'}>
-// Temp comment
         <h2 className={ titleStyles }>Step 2: Assign Company Contact(s)</h2>
         <label className='opacity-70 text-sm'>Company Name</label>
         <div className='relative'>

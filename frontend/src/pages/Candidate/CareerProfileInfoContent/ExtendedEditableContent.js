@@ -201,7 +201,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             name='occupation'
             value={formData.occupation}
             onChange={handleChange}
-            label='Occupation'
             disabled={disabled}
           />
           <FormInput

@@ -5,3 +5,4 @@
     "containerDefinitions": [
         {
             "name": "intulsa-backend-container-dev", 
+            "image": "site-backend:dev", 

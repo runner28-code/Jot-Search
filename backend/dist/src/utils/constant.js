@@ -23,11 +23,11 @@ const job_filter_exclude_keys = [
     "aquatics",
     "art",
     "assembler",
+// Temp comment
     "assembly technician",
     "asset",
     "athlete",
     "athletic",
-// Temp comment
     "athletics",
     "attorney",
     "auto",
@@ -38,3 +38,6 @@ const job_filter_exclude_keys = [
     "bartender",
     "baseball",
     "beauty",
+    "behavior",
+    "behavior coach",
+    "bilingual",

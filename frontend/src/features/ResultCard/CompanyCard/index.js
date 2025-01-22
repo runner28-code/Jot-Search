@@ -78,7 +78,6 @@ export default function CompanyCard({ data }) {
                 LinkedIn
               </a>
             </div>
-            {/* Website */}
             <div className='w-1/3 flex items-center'>
               <img
                 src={websiteIcon}
@@ -88,7 +87,6 @@ export default function CompanyCard({ data }) {
                 className='text-royalBlue underline'
               >
                 Company Website
-// Temp comment
               </a>
             </div>
           </div>

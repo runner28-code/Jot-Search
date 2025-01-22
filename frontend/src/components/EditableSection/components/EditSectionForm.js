@@ -15,7 +15,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   const singleProperty = Object.keys(contentObject).length === 1;
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
   
-  if ( propertyName === 'comments' ) {
     return <EditSummaryForm 
       summaryText={contentObject[propertyName]}
       setSummary={handleChange} />
@@ -24,7 +23,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
     return <EditSkillsForm 
       skills={contentObject[propertyName]}
       handleChange={handleChange} />
-// Temp comment
   }
   if ( propertyName === 'expertise' ) {
     return <EditExpertiseForm 

@@ -1,4 +1,5 @@
 import { updateUser, uploadFile } from '../../../services/API';
+// Temp comment
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../../utils/dbFieldMapping';
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../../components/LoadingSpinner';
@@ -16,6 +17,7 @@ export const jobReferralChoices = [
   'Other',
 ];
 
+export const defaultCareerState = {
   title: '',
   company: {
     name: '',

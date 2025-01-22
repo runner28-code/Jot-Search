@@ -16,6 +16,7 @@ export default function PendingApplications () {
     filteredJobs: [],
     loading: true
   });
+
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
@@ -70,6 +71,7 @@ export default function PendingApplications () {
           </Link>
         </div>
       </div>
+// Temp comment
       <div className='pt-24'>
         <Link
           to={ROUTES.applications}

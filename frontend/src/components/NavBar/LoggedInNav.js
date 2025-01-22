@@ -1,3 +1,4 @@
+// Temp comment
 import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
@@ -9,7 +10,6 @@ import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import {
-// Temp comment
   candidateChoices,
   companyChoices,
   coordinatorChoices,

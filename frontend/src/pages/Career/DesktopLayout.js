@@ -101,7 +101,6 @@ export default function DesktopLayout(props) {
       </div>
 
       {/* Coordinator Status */}
-      {
         role === 'coordinator' && (
           <div className='flex flex-col space-y-8'>
             <UpdateJobStatus job={careerData} />

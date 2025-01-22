@@ -12,6 +12,7 @@ import fs from "fs";
 import { checkForJobFilter, sleep } from "../utils";
 import db from "../utils/db";
 import { User } from "../types/User";
+import { Job } from "prisma/prisma-client";
 import { sendEmail } from "./EmailService";
 import { JOB_FIELDS } from "../utils/constant";
 
@@ -64,3 +65,11 @@ export class BullhornService {
   async getCookie() {
     const targetFile = __dirname + "/../config/cookie.json";
     return new Promise((resolve) => {
+      fs.readFile(targetFile, async function (err, data) {
+        if (err) {
+          return resolve(null);
+        }
+        let cookies = JSON.parse(data.toString());
+        return resolve(cookies);
+      });
+    });

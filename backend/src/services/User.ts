@@ -43,7 +43,6 @@ const validateUser = ({
       return "firstname and lastname is required";
     if (isNullOrEmpty(email)) return "email is invalid";
     if (ROLES.find((r) => r === role) === null)
-      return `role is invalid, it should be one in [${ROLES.join(", ")}]`;
     if (isNullOrEmpty(password)) return "password is required";
     // if (isNullOrEmpty(resume))
     //     return 'resume is required';
@@ -52,3 +51,7 @@ const validateUser = ({
     // if (isNullOrEmpty(skills))
     //     return 'skill is required';
     // if (isNullOrEmpty(category))
+    //     return 'category is required';
+  } catch (error) {
+    return "something is wrong, please check params";
+  }

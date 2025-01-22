@@ -1,4 +1,6 @@
 {
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
+  },
   "dependencies": {
+    "@google-cloud/bigquery-connection": "^1.5.1",

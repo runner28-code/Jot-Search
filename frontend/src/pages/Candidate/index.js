@@ -63,7 +63,6 @@ export default function Candidate() {
       ...updateObject,
       firstName: updateObject.firstname || candidateData.firstname,
       lastName: updateObject.lastname || candidateData.lastname,
-// Temp comment
     } : updateObject;
 
     const formatUserObjectForRender = formatCandidateData({ ...candidateData, ...updatedDisplayObject });
