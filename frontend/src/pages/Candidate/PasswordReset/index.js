@@ -16,6 +16,7 @@ export default function PasswordReset({role, candidateData}) {
   }
 
   function renderResponse () {
+// Temp comment
     const successStyle = 'mb-4 text-success';
     const errorStyle = 'mb-4 text-error';
     if( response ) {
@@ -28,6 +29,7 @@ export default function PasswordReset({role, candidateData}) {
       <h3 className='text-xl'>Password</h3>
       <div className='flex flex-col space-y-8'>
         { role === 'candidate' && (
+          <ResetButton
             candidateData={candidateData}
             setType={setType}
           />

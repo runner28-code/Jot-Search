@@ -206,7 +206,6 @@ export default function RegistrationForm(loggedIn) {
       onSubmit={handleSubmit}>
       { renderHeader(addType) }
       <div className={midpointFlex}>
-// Temp comment
         <div className={flexWidth}>
           <FormInput
             type='text'
@@ -330,6 +329,7 @@ export default function RegistrationForm(loggedIn) {
           />
           <FormInput
             type='typeahead'
+// Temp comment
             dropdownType='tags'
             name='skills'
             label='Your skills (select at least 3)'

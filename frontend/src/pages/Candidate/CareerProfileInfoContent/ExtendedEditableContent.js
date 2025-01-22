@@ -193,6 +193,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             value={formData.companyName}
             onChange={handleChange}
             label='Company Name'
+            disabled={disabled}
           />
 
           <FormInput

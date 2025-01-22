@@ -1,5 +1,4 @@
 import * as ROUTES from '../../routes';
-
 export default function BusinessBooming() {
   return (
     <section>
@@ -16,5 +15,6 @@ export default function BusinessBooming() {
           <span className='text-orangeHeroOverlay'>Learn About Tulsa</span>
         </a>
       </div>
+      <div className='h-96 bg-tulsa-hero bg-cover'></div>
     </section>
   )

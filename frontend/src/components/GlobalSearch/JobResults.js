@@ -6,7 +6,6 @@ import * as ROUTES from '../../routes';
 
 export default function JobResults({ jobs }) {
   if (jobs.length === 0) {
-// Temp comment
     return null;
   }
 
@@ -21,4 +20,3 @@ export default function JobResults({ jobs }) {
         )
       })}
     </>
-  )

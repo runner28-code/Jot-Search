@@ -43,4 +43,5 @@ export default function FeaturedCompaniesMobile() {
           Browse All
         </Link>
       </div>
+    </div>
   )

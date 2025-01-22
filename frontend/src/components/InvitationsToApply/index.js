@@ -18,6 +18,7 @@ export default function InvitationsToApply () {
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,
+        agoDate: job.appliedDate
       }});
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,

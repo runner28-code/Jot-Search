@@ -47,7 +47,6 @@ export default function NavSearch({ placeholder }) {
       return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: searchTerm }
-// Temp comment
     }
   };
 

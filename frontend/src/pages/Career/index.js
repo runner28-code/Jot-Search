@@ -43,7 +43,6 @@ export default function CareerPage() {
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
   const postingAge = calculatePostingAge(careerData.createdAt);
   const data = {
-// Temp comment
     careerData,
     categoryString,
     addressString,
@@ -64,7 +63,6 @@ export default function CareerPage() {
       source={source}
     />
     <div 
-      className={ width <= 990 ? containerStyles
         : loggedIn ? containerStyles 
           : containerStyles + ' px-[15%]'}
     >

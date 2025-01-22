@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-// Temp comment
 exports.parseGetroJobToMain = exports.parseBullhornJobToMain = exports.parseBullhornCompanyToUser = exports.parseBullhornCandidateToUser = void 0;
 const parseBullhornCandidateToUser = (data) => {
     if (!data.email)
@@ -22,6 +21,7 @@ const parseBullhornCandidateToUser = (data) => {
         skills: data.primarySkills,
         category: data.specialties,
         seniority: data.experience,
+// Temp comment
         workspace: data.willRelocate,
         referredBy: data.referredBy,
         roles: data.skillSet,

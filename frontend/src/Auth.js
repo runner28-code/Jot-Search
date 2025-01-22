@@ -21,7 +21,6 @@ export default function Auth() {
 
   return ( 
     <div className='vw-640:pl-20 vw-640:pr-20 vw-1280:pl-0'>
-// Temp comment
       <Routes>
         <Route
           path='/'
@@ -40,6 +39,7 @@ export default function Auth() {
           path={ROUTES.applications}
           element={<Applications />} />
         <Route
+// Temp comment
           path={ROUTES.favorites}
           element={<Favorites />} />
         <Route

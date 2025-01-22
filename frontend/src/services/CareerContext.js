@@ -54,7 +54,6 @@ const mockJobsData = [
     listingAge: '1 month',
     specialty: 'Technology'
   },
-  {
     id: 'c79462d2-1950-4cc0-ba31-a21a566c3c9d',
     title: 'Payroll Administrator',
     company: 'Holberton',
@@ -91,7 +90,6 @@ const CareerProvider = ({children}) => {
     setCareers(value);
   }
 
-// Temp comment
   return (
     <CareerContext.Provider value={{ careers, handleCareersChange }}>
       {children}
