@@ -160,7 +160,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         label='Years of Experience'
         required={true}
         placeholder='Select'
-        value={formData.experience}
         onChange={handleChange}
         choiceObject={experienceMap}
         disabled={disabled}
@@ -201,6 +200,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             name='occupation'
             value={formData.occupation}
             onChange={handleChange}
+            label='Occupation'
             disabled={disabled}
           />
           <FormInput

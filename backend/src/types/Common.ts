@@ -5,6 +5,7 @@ import {
   Company as BullhornCompany,
 } from "../types/Bullhorn";
 import { Job as GetroJob, Company as GetroCompany } from "../types/Getro";
+import { Category } from "./Category";
 import { User } from "./User";
 
 export enum Tables {

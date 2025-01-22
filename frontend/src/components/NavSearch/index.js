@@ -9,7 +9,6 @@ import searchWhite from '../../assets/images/search-white.webp';
 import searchGray from '../../assets/images/search-gray.svg';
 
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
-// Temp comment
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
@@ -33,6 +32,7 @@ export default function NavSearch({ placeholder }) {
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
+// Temp comment
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
         firstname: splitName[0],

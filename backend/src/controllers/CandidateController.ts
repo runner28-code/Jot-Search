@@ -19,7 +19,6 @@ import db from "../utils/db";
 import { JobFilter, USER_FILTER } from "../utils/FieldMatch";
 import { getSavedJobs, saveJob } from "../utils/MainCrud";
 import { clearPassword } from "../utils/password";
-import { COORDINATOR } from "../utils/constant";
 import { sendEmail, sendJobsToCandidates } from "../services/EmailService";
 import { getJobsList } from "../services/Job";
 import { normalizeFilters } from "./JobController";

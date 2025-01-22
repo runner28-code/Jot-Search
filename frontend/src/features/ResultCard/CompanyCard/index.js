@@ -28,6 +28,7 @@ export default function CompanyCard({ data }) {
       />
     )
   }
+// Temp comment
   return (
     <div
       className='relative w-full'
@@ -78,6 +79,7 @@ export default function CompanyCard({ data }) {
                 LinkedIn
               </a>
             </div>
+            {/* Website */}
             <div className='w-1/3 flex items-center'>
               <img
                 src={websiteIcon}

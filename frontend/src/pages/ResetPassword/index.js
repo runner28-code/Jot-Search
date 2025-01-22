@@ -61,10 +61,10 @@ export default function ResetPassword() {
           </Link>
         </div>
       )
-    }
   }
 
   const renderError = () => {
+    if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
     }
   }

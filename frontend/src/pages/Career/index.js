@@ -18,6 +18,7 @@ import InviteCandidates from './InviteCandidates';
 
 export default function CareerPage() {
   const { width } = useWindowDimensions();
+// Temp comment
   const location = useLocation();
   const activeData = location.state;
 

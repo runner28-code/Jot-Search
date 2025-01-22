@@ -52,7 +52,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
     'count': count,
     'page': page || null,
     'fields': fields || null
-// Temp comment
   });
   return {
     candidates: normalizeData(data.candidates),

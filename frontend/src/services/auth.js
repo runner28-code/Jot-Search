@@ -1,5 +1,6 @@
 import decode from 'jwt-decode';
 import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
+
 class AuthService {
   getProfile() {
     if ( !this.loggedIn() ) {
@@ -44,6 +45,7 @@ class AuthService {
     if ( role === 'candidate' ) {
       await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
+// Temp comment
       await this.refreshSavedCandidates();
     }
     window.location.assign('/');

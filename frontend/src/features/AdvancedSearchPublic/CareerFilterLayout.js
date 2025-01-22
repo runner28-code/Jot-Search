@@ -39,7 +39,6 @@ export default function CareerFilterLayout(props) {
   } else {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
-// Temp comment
     });
   }
 
@@ -52,7 +51,6 @@ export default function CareerFilterLayout(props) {
       </div>
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[65px]'}>
         <FilterSearch
-          searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Careers'
