@@ -31,7 +31,6 @@ export class CandidateController {
   @Authorized()
   @Get("/savedJobs")
   async savedJobs(@QueryParam("candidate") candidate: string) {
-    return await getSavedJobs(candidate);
   }
 
   @Authorized()

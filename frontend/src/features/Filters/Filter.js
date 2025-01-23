@@ -23,7 +23,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   }
   function handleChoiceClick(choice) {
     setShowDropdown(false);
-// Temp comment
     setSelected(choice);
     handleFilterChange(filterType, choice);
   }
@@ -58,6 +57,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
         <p
           id='title'
           className='text-md text-black70%'>{ selected }</p>
+// Temp comment
         <img
           src={downChevron}
           alt='open'

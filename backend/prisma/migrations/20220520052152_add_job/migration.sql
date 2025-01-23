@@ -1,1 +1,1 @@
-CREATE TABLE "Job" (
+-- CreateTable

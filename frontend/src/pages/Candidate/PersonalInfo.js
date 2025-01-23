@@ -255,6 +255,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
             choices={referralChoices}
             disabled={disabled}
           />
+          { renderCommunity(referralChoice, formData, handleCommunityChoice, communityChoices) }
           { isSourceUserTable !== 'Candidate' && (
             <div className='vw-1280:flex flex-col'>
               <h3 className='text-xl'>Equal Opportunity Employer Voluntary Self-Identification Form</h3>

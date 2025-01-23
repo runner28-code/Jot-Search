@@ -1,5 +1,6 @@
 import { updateUser, uploadFile } from '../../../services/API';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../../utils/dbFieldMapping';
+// Temp comment
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 import PropTypes from 'prop-types';
@@ -35,7 +36,6 @@ export const defaultState = {
   newResume: {},
   ethnicity: '',
   gender: '',
-// Temp comment
   workAuthorized: '',
   disability: '',
   veteran: '',

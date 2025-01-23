@@ -161,6 +161,7 @@ export default function RegistrationFormInternal(loggedIn) {
       [name]: value,
     });
   }
+
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
       setReferralChoice(true);

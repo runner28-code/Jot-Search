@@ -24,7 +24,6 @@ API.interceptors.request.use(
 );
 
 export default API;
-
 export function appendPathToBaseUrl(path) {
   if (path.slice(0, 4) === 'http') {
     return path; // It's already a full URL
@@ -33,7 +32,6 @@ export function appendPathToBaseUrl(path) {
 }
 
 /* FETCH FUNCTIONS */
-// Temp comment
 //* CANDIDATES
 export async function getCandidates(filtersArr, count, page) {
   return (await getCandidatesFull(filtersArr, count, page)).candidates;

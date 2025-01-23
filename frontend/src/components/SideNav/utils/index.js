@@ -102,7 +102,6 @@ export const coordinatorChoices = [
 ];
 export const guestChoices = [
   choices.careers,
-  choices.companies,
 ];
 
 export function findSelectedFromPath() {

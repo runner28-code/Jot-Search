@@ -21,7 +21,6 @@ const dropDownFiltersCandidate = [
 export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
   const { width } = useWindowDimensions();
-  const {
     defaultFilterObject,
     filterObject,
     handleFilterChange,
@@ -56,7 +55,6 @@ export default function CareerFilterLayout(props) {
         />
       </div>
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[25px]'}>
-// Temp comment
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }

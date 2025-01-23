@@ -20,6 +20,7 @@ import {
   DataSource,
   Tables,
   Company,
+  CompanySearchByID,
   CompanySearchByFilterResponse,
   DATASET_MAIN,
   ApplyResponse,

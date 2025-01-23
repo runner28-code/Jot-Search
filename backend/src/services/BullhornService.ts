@@ -76,3 +76,4 @@ export class BullhornService {
   }
 
   async setCookie(data: any) {
+    const targetFile = __dirname + "/../config/cookie.json";
