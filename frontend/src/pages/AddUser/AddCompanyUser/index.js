@@ -8,6 +8,7 @@ import CompanyContactList from './CompanyContactList';
 
 const ITEMS_PER_PAGE = 10;
 
+// Temp comment
 export default function AddCompanyUser() {
   const [search, setSearch] = useState('');
   const [selectedCompany, setSelectedCompany] = useState(null);
@@ -75,6 +76,7 @@ export default function AddCompanyUser() {
                   className='border-b border-grey300 px-4 py-4 cursor-pointer hover:bg-royalBlue hover:text-white'
                   onClick={() => handleCompanyClick(company)}
                 >
+                  {company.name}
                 </div>
               ))}
             </div>

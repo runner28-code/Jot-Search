@@ -2,7 +2,6 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import PhoneInput from 'react-phone-number-input/input'
 import Dropdown from '../../components/UniversalDropdown';
-import FormInput from '../../components/FormInput';
 import { SwitchButton } from './PreferenceItem';
 import { FiEdit } from 'react-icons/fi';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -99,7 +98,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   return (
     <div className='mb-9 border rounded-2xl bg-white p-12'>
       <form onSubmit={onSubmit}>
-// Temp comment
         <div className='flex justify-between items-center'>
           <h3 className='text-h5 font-medium mb-15 text-black70% font-spaceGrotesk'>Personal Info</h3>
           { !editMode && renderEditIcon(candidateData, setEditMode)}

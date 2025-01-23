@@ -5,7 +5,6 @@ import {
   Put,
   QueryParam,
   JsonController,
-  Authorized,
   CurrentUser,
 } from "routing-controllers";
 import { BigQueryService } from "../services/BigQueryService";
@@ -29,3 +28,4 @@ import {
 import { User } from "../types/User";
 import { getDataSource, getFilterConditions } from "../utils";
 import db from "../utils/db";
+

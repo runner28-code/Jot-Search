@@ -3,7 +3,6 @@ export type Company = {
     address_address1?: string,
     address_address2?: string,
     address_city?: string,
-    address_state?: string,
     address_zip?: string,
     annualRevenue?: string,
     billingAddress_address1?: string,
@@ -26,3 +25,4 @@ export type Company = {
     customTextBlock1_5?: string,
     dateFounded?: string,
     dateLastModified?: string,
+    externalID?: string,

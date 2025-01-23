@@ -73,6 +73,7 @@ export default function AddCoordinator() {
   function handleSubmit(e) {
     e.preventDefault();
 
+// Temp comment
     // Check errors and set state appropriately
     const errors = validateObject(formObject);
     if (Object.keys(errors).length > 0) {

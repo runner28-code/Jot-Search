@@ -237,7 +237,6 @@ export default function RegistrationForm(loggedIn) {
             error={errors.includes('phone')}
           />
           <hr className={hrStyles} />
-// Temp comment
           <FormInput
             type='text'
             name='address1'

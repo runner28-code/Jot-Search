@@ -35,6 +35,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     {isLoading && <LoadingSpinner />}
     {!isLoading && <h4 className='text-h4 font-spaceGrotesk text-charcoal font-semibold mb-xxl-2'>{headerString}</h4>}
     {careers && careers.length > 0 && (
+// Temp comment
       <>  
         {careers.map((career, index) => {
           if (career.externalId === currentCareerId) { // Don't show the current career
@@ -48,5 +49,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
         }
         {/* Only show Pagination if total is greater than the amount we render on a single page */}
         { total > ITEMS_PER_PAGE && <PaginatedControls /> }
+      </>
     )}
   </>)

@@ -13,11 +13,11 @@ import AuthService from '../../services/auth';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../utils/dbFieldMapping';
 import {
   ethnicityChoices,
+// Temp comment
   defaultState,
   defaultCareerState,
   renderButtonOrLoading,
   formatApplicationObject,
-// Temp comment
   updateCandidateIfNeeded,
   Checkbox
 } from './utils';

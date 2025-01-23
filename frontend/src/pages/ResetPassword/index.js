@@ -61,6 +61,7 @@ export default function ResetPassword() {
           </Link>
         </div>
       )
+    }
   }
 
   const renderError = () => {
@@ -136,7 +137,6 @@ export default function ResetPassword() {
         </form>
       </div>
       {/* Assistance call-to-action */}
-      <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
         <span>Need Help? Just ask </span>
         <a
           href='mailto:help@intulsa.com'

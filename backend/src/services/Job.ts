@@ -10,3 +10,4 @@ import db from "../utils/db";
 export const createJob = async (job: Job) => {
   try {
     const jobError = validateJob(job);
+    if (jobError) {

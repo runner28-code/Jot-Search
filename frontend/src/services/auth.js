@@ -45,7 +45,6 @@ class AuthService {
     if ( role === 'candidate' ) {
       await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
-// Temp comment
       await this.refreshSavedCandidates();
     }
     window.location.assign('/');

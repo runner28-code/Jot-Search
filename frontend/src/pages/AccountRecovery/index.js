@@ -77,6 +77,7 @@ export default function AccountRecovery() {
               Get New Password
             </button>
           </div>
+        </form>
       </div>
       {/* Assistance call-to-action */}
       <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>

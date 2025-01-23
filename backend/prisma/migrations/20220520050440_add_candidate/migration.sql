@@ -1,3 +1,4 @@
+-- CreateTable
 CREATE TABLE "Candidate" (
     "id" TEXT NOT NULL,
     "address" TEXT,
@@ -5,3 +6,4 @@ CREATE TABLE "Candidate" (
     "comments" TEXT,
     "companyName" TEXT,
     "companyURL" TEXT,
+    "customInt6" TEXT,

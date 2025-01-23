@@ -28,6 +28,7 @@ export default function DesktopHeader(props) {
           <img
             src={ icon }
             alt='header icon'
+// Temp comment
             className={ 'h-16 ' + addOnIconClasses }
           />
         )}
@@ -40,7 +41,6 @@ export default function DesktopHeader(props) {
         { dataSource && (
           <SourceIdentifier type={dataSource} />
         )}
-// Temp comment
       </div>
       { backButton && (
         <button

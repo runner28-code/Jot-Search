@@ -30,7 +30,9 @@ import {
   ApplyResponse,
   GetSavedJobsResponse,
   AdvancedFilterOption,
+  DATASET_MAIN,
   DataSources,
   Operator,
 } from "../types/Common";
 import { ALLOWED_GETRO_FILTERS } from "../types/Getro";
+import { ALLOWED_JOB_KEYS, JobKey } from "../types/Job";

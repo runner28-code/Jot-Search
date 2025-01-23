@@ -11,6 +11,7 @@ const statFilterChoices = [
   'Last 30 Days',
   'Last 90 Days'
 ];
+// Temp comment
 
 export default function Stats({ userType }) {
   const [timeframe, setTimeframe] = useState(statFilterChoices[3]);
@@ -76,6 +77,7 @@ export default function Stats({ userType }) {
         </div>
       </div>
       <div className='flex flex-wrap'>
+        {Object.entries(stats).map(([stat, value]) => {
           return <StatCard
             stat={stat}
             value={value}

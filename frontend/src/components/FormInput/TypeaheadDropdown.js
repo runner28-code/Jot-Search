@@ -5,6 +5,7 @@ import ChoiceTag from '../ChoiceTag';
 import ChoiceListItem from '../ChoiceListItem';
 
 export default function TypeaheadDropdown(props) {
+// Temp comment
   const {
     type, 
     dropdownType, 
@@ -34,6 +35,7 @@ export default function TypeaheadDropdown(props) {
   }, [onChange])
 
   /* Close dropdown on any outside clicks */
+  useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
     if (!dropdownOpen) setInputValue('');
   }, [dropdownOpen]);
