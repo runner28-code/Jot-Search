@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-// Temp comment
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany }) => {
@@ -34,6 +33,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
             <li
               key={contact.id}
               className={ 'flex items-center px-s py-s ' + (index < clientContacts.length - 1 ? 'border-b border-grey300' : '') }
+// Temp comment
               onClick={() => handleContactClick(contact)}
             >
               <input

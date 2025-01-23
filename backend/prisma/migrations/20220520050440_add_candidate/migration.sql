@@ -5,5 +5,4 @@ CREATE TABLE "Candidate" (
     "certifications" TEXT,
     "comments" TEXT,
     "companyName" TEXT,
-    "companyURL" TEXT,
     "customInt6" TEXT,

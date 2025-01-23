@@ -19,7 +19,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
       value: companyId
     }
   ];
-
   const { careers, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
   const prefetchFunc = (page) => {
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
@@ -35,7 +34,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     {isLoading && <LoadingSpinner />}
     {!isLoading && <h4 className='text-h4 font-spaceGrotesk text-charcoal font-semibold mb-xxl-2'>{headerString}</h4>}
     {careers && careers.length > 0 && (
-// Temp comment
       <>  
         {careers.map((career, index) => {
           if (career.externalId === currentCareerId) { // Don't show the current career

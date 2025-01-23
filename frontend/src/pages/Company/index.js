@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// Temp comment
 import { useParams, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -49,6 +48,7 @@ export default function Company() {
   companyData.employeeString = companyData.numEmployees ? `${companyData.numEmployees} Employees` : 'N/A';
   companyData.fundingString = companyData.funding === 'not applicable' ? 'Funding N/A' : companyData.funding;
   companyData.description = companyData.getro_description ? companyData.getro_description : companyData.bh_description;
+// Temp comment
 
   const loggedIn = AuthService.loggedIn();
 

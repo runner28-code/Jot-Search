@@ -5,7 +5,6 @@ import ChoiceTag from '../ChoiceTag';
 import ChoiceListItem from '../ChoiceListItem';
 
 export default function TypeaheadDropdown(props) {
-// Temp comment
   const {
     type, 
     dropdownType, 

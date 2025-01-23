@@ -12,7 +12,6 @@ export default function Applications() {
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
-    filteredJobs: [],
     loading: true
   });
   const [selectedApplications, setSelectedApplications] = useState([]);
@@ -65,6 +64,7 @@ export default function Applications() {
         <button
           className='text-royalBlue underline'
           onClick={removeSelectedApplications}
+        >
           Remove Selections
         </button>
         <ResultContainer

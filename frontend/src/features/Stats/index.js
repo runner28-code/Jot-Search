@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import TimeframeFilter from '../../components/TimeframeFilter';
-import { BsArrowUpSquare, BsArrowDownSquare } from 'react-icons/bs';
 import { getCompanyQuickStats, getCoordinatorQuickStats } from '../../services/API';
 
 const statFilterChoices = [
@@ -11,7 +10,6 @@ const statFilterChoices = [
   'Last 30 Days',
   'Last 90 Days'
 ];
-// Temp comment
 
 export default function Stats({ userType }) {
   const [timeframe, setTimeframe] = useState(statFilterChoices[3]);

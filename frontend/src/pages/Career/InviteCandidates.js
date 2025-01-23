@@ -24,6 +24,7 @@ export default function InviteCandidates({ job }) {
     return {
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
       value: candidate.id,
+      candidate
     }
   }) || [];
 
@@ -75,7 +76,6 @@ export default function InviteCandidates({ job }) {
         <button
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
           onClick={async () => {
-            console.log({ selected })
             const res = await sendJobsToCandidates({ jobIds: [job.id], candidateIds: selected.map((option) => option.value) })
             console.log({ res })
             if (res.result) {

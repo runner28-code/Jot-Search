@@ -68,7 +68,6 @@ export default function GlobalSearch({ placeholder }) {
   useEffect( () => {
     setSearchTerm('');
   }, [location]);
-
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
     setResults({ ...results, forceHidden: true });

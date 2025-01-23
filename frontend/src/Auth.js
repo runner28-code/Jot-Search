@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-// Temp comment
 import {
   ActiveCareers,
   AddUser,

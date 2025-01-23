@@ -161,7 +161,6 @@ export default function RegistrationFormInternal(loggedIn) {
       [name]: value,
     });
   }
-
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
       setReferralChoice(true);
@@ -269,6 +268,7 @@ export default function RegistrationFormInternal(loggedIn) {
         <div className={twocol}>
           <FormInput
             type='text'
+            name='state'
             label='State (Abbreviated)'
             required={true}
             value={formObj.state}

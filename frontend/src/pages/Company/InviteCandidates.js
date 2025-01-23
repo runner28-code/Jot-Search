@@ -28,7 +28,6 @@ export default function InviteCandidates({ company }) {
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();
-    setSelected(selected.filter(item => item.value !== value))
   }
 
   const SelectedValues = () => {
@@ -65,6 +64,7 @@ export default function InviteCandidates({ company }) {
         value={selected}
         onChange={setSelected}
         labelledBy="Select"
+        ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}
       />

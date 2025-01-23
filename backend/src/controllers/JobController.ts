@@ -7,7 +7,6 @@ import {
   Post,
   Put,
   Delete,
-  QueryParam,
   JsonController,
   Authorized,
   CurrentUser,

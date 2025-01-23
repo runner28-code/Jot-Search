@@ -83,6 +83,7 @@ export default function NavSearchMobile({ placeholder }) {
   const combinedResults = {
     jobs: jobs || [],
     companies: companies || [],
+// Temp comment
     candidates: candidates || [],
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
     total: totalJobs + totalCompanies + totalCandidates,
@@ -100,6 +101,7 @@ export default function NavSearchMobile({ placeholder }) {
     <div>
       <div ref={menuRef} >
         <NavSearchBar
+          searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }
           alternateStylesObject={ stylesObject } 

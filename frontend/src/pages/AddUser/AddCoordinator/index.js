@@ -73,7 +73,6 @@ export default function AddCoordinator() {
   function handleSubmit(e) {
     e.preventDefault();
 
-// Temp comment
     // Check errors and set state appropriately
     const errors = validateObject(formObject);
     if (Object.keys(errors).length > 0) {
@@ -135,7 +134,6 @@ export default function AddCoordinator() {
           onChange={handleInputChange}
         />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.email}</p>
-      </div>
       <div className={inputContainer + ' hidden vw-900:flex'}></div>
       <div className={inputContainer}>
         {/* Password */}

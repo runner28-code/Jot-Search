@@ -30,12 +30,12 @@ const mockJobsData = [
     salaryRange: '$80k-$90k',
     location: 'Remote',
     listingAge: '1 month',
+// Temp comment
     specialty: 'Sales & Biz Dev'
   },
 ];
 
 function renderChosen(currentChosen, handleRemove) {
-// Temp comment
   return currentChosen.map(choice =>
     <div 
       key={choice.id}

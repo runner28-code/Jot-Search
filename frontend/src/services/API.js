@@ -33,6 +33,7 @@ export function appendPathToBaseUrl(path) {
 }
 
 /* FETCH FUNCTIONS */
+// Temp comment
 //* CANDIDATES
 export async function getCandidates(filtersArr, count, page) {
   return (await getCandidatesFull(filtersArr, count, page)).candidates;
@@ -55,6 +56,5 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
   });
   return {
     candidates: normalizeData(data.candidates),
-// Temp comment
     total: data.total
   }

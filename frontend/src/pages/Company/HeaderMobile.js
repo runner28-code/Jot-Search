@@ -22,7 +22,6 @@ function HeaderContent({ companyData }) {
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-2'>
-// Temp comment
         <div className='flex flex-wrap items-center mb-4'>
           <div className='basis-2/6'>
             { renderCompanyLogo(companyData.logo, companyData.name) }
@@ -46,7 +45,6 @@ function HeaderContent({ companyData }) {
                 />
                 <OpenCareers
                   styles={headerRowTextStyles}
-                  companyId={companyData.id}
                 />
               </div> 
             </div>

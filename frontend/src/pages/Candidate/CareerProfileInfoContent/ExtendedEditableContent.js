@@ -219,7 +219,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             <div>
               <p>Resume</p>
               <ResumePreview resumeUrl={resumeUrl} />
-            </div>
           )}
 
           {editMode && (
