@@ -2,7 +2,7 @@ import express, { Request, Response, Router } from "express";
 import "reflect-metadata";
 import dotenv from "dotenv";
 import { Action, useExpressServer } from "routing-controllers";
-import bodyParser from "body-parser";
+import path from "path";
 import cors from "cors";
 import { NextFunction } from "connect";
 import { VerifyJwtToken } from "./utils/jwtUtils";

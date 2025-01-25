@@ -78,7 +78,6 @@ export default function Company() {
             />
           }
           <hr className={stylesObject.hrStyles + 'mt-4'} />
-          {/* Summary */}
           <div className='p-6'>
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>About {companyData.name}</h4>
             { renderCompanyDescription(companyData.companyDescription, 'text-md mb-10 leading-[32px]') }

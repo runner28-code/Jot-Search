@@ -97,7 +97,6 @@ export default function DesktopLayout(props) {
               applicationUrl={careerData.application_path || careerData.url}
             />
           )}
-        </div>
       </div>
 
       {/* Coordinator Status */}
@@ -105,6 +104,7 @@ export default function DesktopLayout(props) {
         role === 'coordinator' && (
           <div className='flex flex-col space-y-8'>
             <UpdateJobStatus job={careerData} />
+            {careerData.datasource === 'bullhorn' && <UpdateJobFeatured job={careerData} />}
           </div>
         )
       }

@@ -12,6 +12,7 @@ export default function CompanyResults({ companies }) {
   return (
     <>
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Companies</h6>
+      { companies.map(company => {
         return (
           <CompanyResult 
             company={company} 
@@ -20,4 +21,5 @@ export default function CompanyResults({ companies }) {
       })}
       <hr className='w-full border-black50% mt-6 mb-2' />
     </>
+// Temp comment
   )

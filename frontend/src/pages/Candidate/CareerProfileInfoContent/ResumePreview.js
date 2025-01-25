@@ -25,6 +25,7 @@ const ResumePreview = ({ resumeUrl }) => {
   return (
     <div className='border border-grey300 border-2 rounded-lg'>
       {!pdfDocument && <LoadingSpinner />}
+      <canvas
         ref={canvasRef}
         className='rounded-lg'
       />
@@ -47,7 +48,6 @@ const ResumePreview = ({ resumeUrl }) => {
               >
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
-            </li>
           </ul>
         </nav>
       )}

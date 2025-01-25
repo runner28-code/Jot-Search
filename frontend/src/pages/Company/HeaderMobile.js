@@ -43,8 +43,8 @@ function HeaderContent({ companyData }) {
                 <CareerIcon
                   className={headerIconStyles}
                 />
-                <OpenCareers
 // Temp comment
+                <OpenCareers
                   styles={headerRowTextStyles}
                   companyId={companyData.id}
                 />

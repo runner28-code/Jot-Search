@@ -14,7 +14,6 @@ export default function FeaturedCompanies() {
       value: 'active'
     }
   ];
-// Temp comment
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
@@ -44,5 +43,6 @@ export default function FeaturedCompanies() {
           Browse All
         </Link>
       </div>
+// Temp comment
     </div>
   )

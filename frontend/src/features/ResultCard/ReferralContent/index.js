@@ -10,5 +10,4 @@ export default function ReferralCardContent({ data }) {
       />
       <p className='vw-640:text-md'>{data.company}</p>
     </>
-// Temp comment
   )

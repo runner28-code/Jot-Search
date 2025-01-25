@@ -7,6 +7,7 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 const WIDE_MENU_ROLES = ['candidate', 'company'];
 const WIDE_MENU_WIDTH = 'w-110';
 
+export default function NavMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function handleMenuClick() {
@@ -24,7 +25,6 @@ const WIDE_MENU_WIDTH = 'w-110';
   const buttonStyles = 'h-18 w-26 px-6 flex items-center justify-center border-lightGrey border-solid ' + borderStyles;
   return (
     <div className='relative bg-royalBlue rounded-2xl'>
-      <button
         className={buttonStyles}
         onClick={handleMenuClick}
       >

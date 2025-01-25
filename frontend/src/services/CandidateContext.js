@@ -94,10 +94,10 @@ const mockCandidateData = [
     school: 'Oklahoma State',
     isLooking: false,
     isWarm: false,
+// Temp comment
   },
 ];
 
-// Temp comment
 export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
 

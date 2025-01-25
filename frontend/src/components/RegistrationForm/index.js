@@ -311,7 +311,6 @@ export default function RegistrationForm(loggedIn) {
             label='Expertise'
             required={true}
             placeholder='Select'
-// Temp comment
             value={formObj.expertise}
             onChange={handleChange}
             choices={categories}

@@ -22,7 +22,6 @@ import {
   DATASET_GETRO,
   FilterOption,
   Job,
-  FilterBody,
   JobSearchByFilterResponse,
   JobSearchByID,
   DataSource,

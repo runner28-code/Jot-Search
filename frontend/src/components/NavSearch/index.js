@@ -66,6 +66,7 @@ export default function NavSearch({ placeholder }) {
   }
 
   /* Clear state on page change */
+  useEffect( () => {
     setSearchTerm('');
   }, [location]);
 
@@ -77,7 +78,6 @@ export default function NavSearch({ placeholder }) {
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
-
   const combinedResults = {
     jobs: jobs || [],
     companies: companies || [],

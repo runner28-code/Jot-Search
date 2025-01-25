@@ -15,6 +15,7 @@ export default function MobileHeader(props) {
   return (
     <div className='flex items-center border-b-2 border-white pl-l py-s bg-royalBlue'>
       { icon && (
+// Temp comment
         <img
           src={ icon }
           alt='header icon'

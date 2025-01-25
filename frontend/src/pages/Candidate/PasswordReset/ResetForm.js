@@ -5,6 +5,7 @@ import API from '../../../services/API';
 import * as ROUTES from '../../../routes';
 
 export default function ResetForm({ candidateData, setType }) {
+  const [formData, setFormData] = useState({
     id: candidateData.id,
     password: '',
     passwordConfirm: '',
@@ -50,6 +51,7 @@ export default function ResetForm({ candidateData, setType }) {
           onChange={handleChange}
           label='New Password'
         />
+// Temp comment
         <FormInput
           type='text'
           name='passwordConfirm'
