@@ -18,6 +18,7 @@ import AuthService from '../../services/auth';
 import {
   defaultJobFilterState,
   buildSearchFilters,
+  defaultCandidateFilterState
 } from '../../utils/filterObjects';
 
 const NUM_ITEMS_PER_TYPE = 5
@@ -65,7 +66,6 @@ export default function NavSearch({ placeholder }) {
   }
 
   /* Clear state on page change */
-  useEffect( () => {
     setSearchTerm('');
   }, [location]);
 

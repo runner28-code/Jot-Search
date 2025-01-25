@@ -81,6 +81,7 @@ export default function Stats({ userType }) {
             stat={stat}
             value={value}
             key={stat} />;
+        })}
       </div>
     </div>
   )

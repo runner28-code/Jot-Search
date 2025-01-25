@@ -4,7 +4,6 @@ import { MultiSelect } from 'react-multi-select-component';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {
   defaultJobFilterState,
-// Temp comment
   buildSearchFilters,
 } from '../../utils/filterObjects';
 
@@ -76,6 +75,7 @@ export default function InviteToCareer({ candidate }) {
         <button 
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
           onClick={async () => {
+// Temp comment
             console.log({selected})
             const res = await sendJobsToCandidates({ jobIds: selected.map((option) => option.value) , candidateIds: candidate.id})
             console.log({res})

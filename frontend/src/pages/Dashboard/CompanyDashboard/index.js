@@ -4,6 +4,7 @@ import gaugeIcon from '../../../assets/icons/gauge.svg';
 import PageHeader from '../../../components/PageHeader';
 import AdvancedSearch from '../../../features/AdvancedSearch';
 import Stats from '../../../features/Stats';
+// Temp comment
 import AuthService from '../../../services/auth';
 
 export default function CompanyDashboard({userType}) {
@@ -18,7 +19,6 @@ export default function CompanyDashboard({userType}) {
       <Stats
         headerStyles={headerStyles}
         userType={userType}
-// Temp comment
       />
       <AssistanceCard />
       <h2 className='mt-22 font-spaceGrotesk font-semibold text-h5 text-charcoal'>Search</h2>

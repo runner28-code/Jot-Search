@@ -80,6 +80,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
 
   const avatarUrl = appendPathToBaseUrl(formData.avatar);
   const resumeUrl = formData.resume ? appendPathToBaseUrl(formData.resume) : null;
+  const inputStyles = `border-midGrey border-solid border rounded-2xl pl-4 bg-lightGrey ${disabledStyles} `;
   return (<>
     {/* Avatar */}
     {isSourceUserTable && <div className='flex flex-col mr-12'>

@@ -233,6 +233,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           <MdCancel 
             className='w-24 h-24 cursor-pointer fill-rose-500'
             onClick={handleCancel} />
+// Temp comment
           <MdCheckCircle 
             className='w-24 h-24 cursor-pointer fill-emerald-500'
             onClick={handleSubmit} />

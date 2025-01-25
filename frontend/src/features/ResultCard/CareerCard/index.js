@@ -27,12 +27,12 @@ export default function CareerCard({ data, active }) {
     categoryString,
     addressString,
     salaryString,
-// Temp comment
     postingAge,
     role
   };
 
   return (
+// Temp comment
     <div
       className='relative w-full'
       key={data.id}

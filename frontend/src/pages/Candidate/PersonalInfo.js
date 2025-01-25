@@ -165,7 +165,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 className={labelStyles}
               >
                 <p className={labelTextStyles}>Phone</p>
-                <PhoneInput
                   name='phone'
                   international
                   withCountryCallingCode

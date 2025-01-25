@@ -152,7 +152,6 @@ export default function AddCoordinator() {
       <div className={inputContainer}>
         {/* Verify Password */}
         <label className={labelStyles}>Verify Password</label>
-// Temp comment
         <input
           type='password'
           className={submissionObject.errors.verifyPassword ? invalidInputStyles : validInputStyles}

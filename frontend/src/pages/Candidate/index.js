@@ -72,6 +72,7 @@ export default function Candidate() {
       const convertedCandidateObject = convertUserToCandidate(updateObject);
       updateResponse = await updateCandidate(convertedCandidateObject, id);
     } else {
+// Temp comment
       updateResponse = await updateUser(formattedUpdateObject, id);
     }
     if (isProfilePage) {

@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import OtherCareers from '../../features/OtherCareers';
@@ -106,7 +105,6 @@ export default function DesktopLayout(props) {
         role === 'coordinator' && (
           <div className='flex flex-col space-y-8'>
             <UpdateJobStatus job={careerData} />
-            {careerData.datasource === 'bullhorn' && <UpdateJobFeatured job={careerData} />}
           </div>
         )
       }

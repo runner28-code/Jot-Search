@@ -97,6 +97,7 @@ const mockCandidateData = [
   },
 ];
 
+// Temp comment
 export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
 
@@ -107,6 +108,7 @@ const CandidateProvider = ({children}) => {
   useEffect(() => {
     if (currentUser?.user_id) {
       getCandidateById(currentUser.user_id).then(user => {
+        setCurrentUser(user);
       })
     }
   }, []);

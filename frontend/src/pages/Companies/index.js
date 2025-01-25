@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import PropTypes from 'prop-types';
 import PageHeader from '../../components/PageHeader';
 import PageHeaderCandidate from '../../components/PageHeaderCandidate';
@@ -32,6 +31,7 @@ export default function Companies() {
         loggedIn={loggedIn}
         userType={userType}
         togglePassState={togglePassState}
+        toggle={toggle}
       />
       <div 
         className={ !loggedIn && width <= 990 ? 'px-[5%]' 

@@ -17,7 +17,6 @@ export function formatCandidateData(candidateData) {
   formattedData.avatar = formatAvatarUrl(candidateData.avatar, candidateData.firstname, candidateData.lastname);
   if ( !candidateData.occupation && !candidateData.companyName ) {
     formattedData.occupationString = 'No Occupation Provided';
-// Temp comment
   } else {
     const occupation = candidateData.occupation || 'N/A';
     const companyName = candidateData.companyName || 'N/A';
@@ -27,7 +26,6 @@ export function formatCandidateData(candidateData) {
   formattedData.phone = formatPhoneNumber(candidateData.phone);
   formattedData.expertise = candidateData.expertise || 'No Expertise Chosen';
   formattedData.skills = candidateData.skills || 'No Skills Chosen';
-  // If Candidate experience is a string, no need to map it
   if ( candidateData.experience && !isNaN(candidateData.experience) ) {
     formattedData.experience = candidateData.experience.toString();
   }

@@ -14,6 +14,7 @@ import {
   Apply
 } from './pages';
 import { NavBar, Footer, SideNav } from './components';
+// Temp comment
 import AuthService from './services/auth';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           className='grow min-h-280 pb-18'>
           <Routes>
             <Route
+              path={ROUTES.signup}
               element={<SignUp />} />
             <Route
               path={ROUTES.login}
