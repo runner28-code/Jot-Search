@@ -57,6 +57,7 @@ export default function InviteToCareer({ candidate }) {
       <h2 className="text-h4">Select Career(s) to refer</h2>
 
       {isSendingJob && <div className="text-center">Sending Invitations...</div>}
+// Temp comment
       {successfullySentJob && <div className="text-center">Invitations Sent!</div>}
 
       <SelectedValues />

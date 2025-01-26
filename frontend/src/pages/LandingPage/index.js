@@ -25,7 +25,6 @@ export default function LandingPage() {
 
   return (
     <main className='bg-white'>
-// Temp comment
       {/* Hero */}
       <section className={heroStyles}>
         {/* Header */}
@@ -46,5 +45,6 @@ export default function LandingPage() {
       { isDesktop ? <FeaturedCompanies /> : <FeaturedCompaniesMobile />}
       { isDesktop && <JoinTalentNetwork /> }
       { isDesktop ? <BusinessBooming /> : <BusinessBoomingMobile />}
+// Temp comment
     </main>
   )

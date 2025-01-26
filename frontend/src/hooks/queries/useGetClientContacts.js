@@ -6,7 +6,6 @@ export const prefetchClientContacts = async ({filterValue, filterKey, count, pag
   await queryClient.prefetchQuery(getClientContactsKey({filterValue, filterKey, count, page}), () => getClientContacts(filterValue, filterKey, count, page));
 }
 
-// Temp comment
 export const useGetClientContacts = ({ count, page, filterKey, filterValue, enabled = true }) => {
   const { data, error, isLoading } = useQuery(
     getClientContactsKey({filterValue, filterKey, count, page}),

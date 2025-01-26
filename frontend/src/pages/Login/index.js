@@ -91,6 +91,7 @@ export default function Login() {
           >
             help@intulsa.com
           </a>
+        </div>
       </div>
     </section>
   )

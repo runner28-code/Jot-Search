@@ -19,9 +19,9 @@ import { GetroService } from "../services/GetroService";
 import { createJob, getAppliedJobsByUser, updateJob } from "../services/Job";
 import {
   DATASET_BULLHORN,
-  DATASET_GETRO,
   FilterOption,
   Job,
+  FilterBody,
   JobSearchByFilterResponse,
   JobSearchByID,
   DataSource,

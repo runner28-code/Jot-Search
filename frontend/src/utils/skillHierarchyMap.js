@@ -5,3 +5,4 @@ export const expertises = [
   'Other',
   'Software & Engineering',
   'Sales & Biz Dev',
+];

@@ -25,6 +25,7 @@ export default function NavMenu() {
   const buttonStyles = 'h-18 w-26 px-6 flex items-center justify-center border-lightGrey border-solid ' + borderStyles;
   return (
     <div className='relative bg-royalBlue rounded-2xl'>
+      <button
         className={buttonStyles}
         onClick={handleMenuClick}
       >
@@ -32,6 +33,7 @@ export default function NavMenu() {
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
+// Temp comment
         </div>
       </button>
       <Menu

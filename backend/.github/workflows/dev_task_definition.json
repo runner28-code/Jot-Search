@@ -5,4 +5,5 @@
     "containerDefinitions": [
         {
             "name": "intulsa-backend-container-dev", 
+            "image": "site-backend:dev", 
             "cpu": 1024, 

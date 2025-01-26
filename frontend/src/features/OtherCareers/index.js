@@ -9,7 +9,6 @@ const ITEMS_PER_PAGE = 5;
 
 export default function OtherCareers({ companyId, companyName, currentCareerId }) {
   const [page, setPage] = useState(1);
-// Temp comment
   const filtersArr = [
     {
       key: 'status',
@@ -28,7 +27,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
 
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });
 
-  const matchingCareerFound = (careers && careers.length > 0) && careers.some(job => job.externalId === currentCareerId);
   const adjustedTotal = matchingCareerFound ? total - 1 : total || 0;
   const headerString = adjustedTotal + (companyName ? ` Other Careers open at ${companyName}` : ' Other open careers');
 

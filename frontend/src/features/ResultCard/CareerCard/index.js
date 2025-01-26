@@ -12,7 +12,6 @@ import locationIcon from '../../../assets/icons/placepin.svg';
 import { buildCareerAddress, buildSalaryString, calculatePostingAge } from '../../../utils/formatFunctions';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 import AuthService from '../../../services/auth';
-// Temp comment
 
 export default function CareerCard({ data, active }) {
   const categoryString = data.category?.name.toUpperCase() || 'CATEGORY N/A';
@@ -32,7 +31,6 @@ export default function CareerCard({ data, active }) {
     role
   };
 
-  return (
     <div
       className='relative w-full'
       key={data.id}

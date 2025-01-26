@@ -27,6 +27,7 @@ const ResumePreview = ({ resumeUrl }) => {
       {!pdfDocument && <LoadingSpinner />}
       <canvas
         ref={canvasRef}
+// Temp comment
         className='rounded-lg'
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
@@ -48,6 +49,7 @@ const ResumePreview = ({ resumeUrl }) => {
               >
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
+            </li>
           </ul>
         </nav>
       )}

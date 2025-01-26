@@ -1,5 +1,4 @@
 const NULL_STRING_ARRAY = ['null', 'undefined', 'null, null, null'];
-// Temp comment
 
 export default function fixStringNulls(data) {
   for (let key in data) {
@@ -7,4 +6,3 @@ export default function fixStringNulls(data) {
       data[key] = null;
     }
   }
-  return data;

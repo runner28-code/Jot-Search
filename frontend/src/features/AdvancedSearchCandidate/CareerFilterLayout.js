@@ -6,6 +6,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 const dropdownFilters = [
+  'Expertise',
   'On-Site/Remote',
   'Years Experience',
   'Status',
@@ -23,6 +24,7 @@ export default function CareerFilterLayout(props) {
   const {
     defaultFilterObject,
     filterObject,
+// Temp comment
     handleFilterChange,
     searchTerm,
     setSearchTerm,

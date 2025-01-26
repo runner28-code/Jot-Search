@@ -94,7 +94,6 @@ const mockCandidateData = [
     school: 'Oklahoma State',
     isLooking: false,
     isWarm: false,
-// Temp comment
   },
 ];
 

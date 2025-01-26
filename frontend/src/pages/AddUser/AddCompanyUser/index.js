@@ -48,7 +48,6 @@ export default function AddCompanyUser() {
             text='Go to Bullhorn'
             href='https://www.bullhorn.com/'
           />
-        </div>
       </div>
       <div className={ containerStyles + 'bg-white mt-12'}>
         <h2 className={ titleStyles }>Step 2: Assign Company Contact(s)</h2>

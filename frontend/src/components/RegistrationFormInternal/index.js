@@ -76,7 +76,6 @@ export default function RegistrationFormInternal(loggedIn) {
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({
-// Temp comment
           loading: false,
           success: false,
         });
@@ -432,7 +431,6 @@ export default function RegistrationFormInternal(loggedIn) {
           <div className={spacer}></div>
           <FormInput
             type='password'
-            name='verifyPassword'
             label='Verify Password'
             required={true}
             value={formObj.verifyPassword}

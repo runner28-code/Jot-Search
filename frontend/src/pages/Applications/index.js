@@ -19,7 +19,6 @@ export default function Applications() {
 
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);
-// Temp comment
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,
@@ -45,7 +44,6 @@ export default function Applications() {
     const currentHiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
     const newHiddenApplications = [...currentHiddenApplications, ...selectedApplications];
     localStorage.setItem('hiddenApplications', JSON.stringify(newHiddenApplications));
-    setSelectedApplications([]);
     setAppliedJobsObject({
       ...appliedJobsObject,
       filteredJobs: appliedJobsObject.jobs.filter(job => !newHiddenApplications.includes(job.id))

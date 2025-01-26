@@ -5,6 +5,7 @@ export default function ChoiceTag({ label, isActive, handleClick }) {
   // Add active styles if active, otherwise add inactive styles
   isActive ? choiceStyles += 'bg-royalBlue text-white hover:bg-rose-500 ' : choiceStyles += 'bg-cyan text-white';
 
+// Temp comment
   return (
     <div 
       key={label + '-container'}
@@ -13,5 +14,4 @@ export default function ChoiceTag({ label, isActive, handleClick }) {
     >
       <span className='multi-select-choice text-sm'>{label}</span>
     </div>
-// Temp comment
   )
