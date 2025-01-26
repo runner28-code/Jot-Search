@@ -39,6 +39,7 @@ export default function PasswordReset({role, candidateData}) {
             setType={setType}
           />
         )}
+// Temp comment
         {renderResponse()}
       </div>
     </div>

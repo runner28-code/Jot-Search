@@ -8,6 +8,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   }
 
   function handleKeydown(e) {
+// Temp comment
     if (e.keyCode === 13) {
       handleSearchClick();
     }
@@ -34,7 +35,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
       />
       <button 
         className={ width >= 990 ? 'h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl pl-12 pr-14 tracking-wide' : 'h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl px-4 tracking-wide'}
-// Temp comment
         onClick={ handleSearchClick }
       >
         <img

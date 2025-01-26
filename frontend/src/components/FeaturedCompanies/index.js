@@ -20,7 +20,6 @@ export default function FeaturedCompanies() {
   return(
     <div className='py-48 px-[20%] flex flex-col items-center'>
       { renderColorShapes() }
-      <h2 className='text-h4 font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
       <div className='flex flex-wrap mt-8'>
         {
           isLoading ?
@@ -32,6 +31,7 @@ export default function FeaturedCompanies() {
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'
                 key={index}>
                 { renderLogo(company.logo) }
+              </Link>
             )
         }
       </div>

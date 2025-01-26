@@ -80,7 +80,6 @@ export default function MobileLayout(props) {
           </div>
           {/* Third row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
-// Temp comment
             {/* Salary */}
             <div className='w-1/2 flex items-center pr-4'>
               <img
@@ -90,6 +89,7 @@ export default function MobileLayout(props) {
             </div>
           </div>
         </div>
+// Temp comment
 
         {/* Coordinator Status */}
         {

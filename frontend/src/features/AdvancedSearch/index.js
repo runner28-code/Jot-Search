@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import ResultContainer from '../../features/ResultContainer';
 import ResultsHeader from '../../components/ResultsHeader';
@@ -18,6 +17,7 @@ import {
   defaultJobFilterState,
   defaultCandidateFilterState,
   buildSearchFilters
+// Temp comment
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';

@@ -56,3 +56,4 @@ const validateUser = ({
   } catch (error) {
     return "something is wrong, please check params";
   }
+  return false;

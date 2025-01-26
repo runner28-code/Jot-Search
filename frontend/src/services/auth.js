@@ -12,6 +12,7 @@ class AuthService {
   getUserRole() {
     let role = 'guest';
     if (this.loggedIn()) {
+// Temp comment
       role = this.getProfile().role;
     }
     return role;
@@ -118,6 +119,7 @@ class AuthService {
     localStorage.setItem('savedCompanies', JSON.stringify(savedCompanies));
   }
 
+  getSavedCompanyIDs() {
     return JSON.parse(localStorage.getItem('savedCompanies')) || [];
   }
 

@@ -1,3 +1,4 @@
+// Temp comment
 const expertiseObjectArr = JSON.parse(localStorage.getItem('categories')) || [];
 const expertises = expertiseObjectArr.map(expertise => expertise.name).sort();
 import { experienceMap, educationChoices } from './dbFieldMapping';

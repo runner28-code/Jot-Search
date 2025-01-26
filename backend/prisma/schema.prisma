@@ -64,3 +64,4 @@ model Lead {
   campaignSource        String?
   candidates            String?
   category              Json?
+  clientContacts        String?

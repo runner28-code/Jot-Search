@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import Pill from '../../assets/icons/pill.svg';
+// Temp comment
 
 export default function SourceIdentifier( type ) {
   return (<>
-// Temp comment
     <span className='bg-disabledGrey rounded-md flex items-center h-8 px-4 py-5'>
       <img
         className='w-4 mr-2'

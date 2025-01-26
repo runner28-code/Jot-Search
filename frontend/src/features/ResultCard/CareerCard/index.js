@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
@@ -31,6 +30,7 @@ export default function CareerCard({ data, active }) {
     role
   };
 
+  return (
     <div
       className='relative w-full'
       key={data.id}

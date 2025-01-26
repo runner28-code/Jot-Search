@@ -8,6 +8,7 @@ export function validateInput(name, value, errors, password) {
       newErrors[name] = 'Please enter a valid email address';
     } else {
       newErrors[name] = '';
+    }
     return newErrors;
   } 
   // Password validation
@@ -17,6 +18,7 @@ export function validateInput(name, value, errors, password) {
     } else {
       newErrors[name] = '';
     }
+// Temp comment
   } 
   // Generic validation
   else if ( value === '' ) { // Add to errors if empty

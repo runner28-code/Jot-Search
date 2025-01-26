@@ -138,6 +138,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   onChange={handleInputChange}
                   className={inputStyles}
                   required
+                  disabled={disabled}
                 />
               </label>
             </div>

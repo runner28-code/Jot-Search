@@ -11,6 +11,7 @@ import OtherCareers from '../../features/OtherCareers';
 import DetailsHeader from '../../components/DetailsHeader';
 import InviteCandidates from './InviteCandidates';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
+import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
@@ -102,6 +103,7 @@ export default function Company() {
             onClick={() => navigate(-1)}
           >
           Back
+// Temp comment
           </button>
         </div>
         <RenderInvite
