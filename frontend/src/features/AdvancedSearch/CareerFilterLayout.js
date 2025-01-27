@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { renderDropdownFilters } from '../Filters';
-// Temp comment
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
@@ -36,7 +35,6 @@ export default function CareerFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
   } else {
-    dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
   }

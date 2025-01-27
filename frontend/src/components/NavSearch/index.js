@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
+import JobResults from './JobResults';
 import searchWhite from '../../assets/images/search-white.webp';
 import searchGray from '../../assets/images/search-gray.svg';
 
@@ -98,7 +99,6 @@ export default function NavSearch({ placeholder }) {
     <div className='relative'>
       <div ref={menuRef} >
         <NavSearchBar
-          searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }
           alternateStylesObject={ stylesObject } 

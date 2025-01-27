@@ -67,7 +67,6 @@ export default function CareerPage() {
         : loggedIn ? containerStyles 
           : containerStyles + ' px-[15%]'}
     >
-      { renderNotification(activeData, careerData) }
       {
         isMobile ?
           <MobileLayout data={data} /> :

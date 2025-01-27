@@ -38,6 +38,7 @@ export default function LandingPage() {
       </section>
       {/* Browse Opportunities by Expertise */}
       { renderExpertiseLinks() }
+      { isMobile && <JoinTalentNetwork /> }
       {/* Featured Jobs */}
       <FeaturedJobs />
       {/* Featured Companies */}

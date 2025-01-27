@@ -11,7 +11,6 @@ export default function CareerFavorite () {
 
   const { user_id } = AuthService.getProfile();
   const { savedJobs, isLoading } = useGetSavedJobs({userId: user_id});
-// Temp comment
   const { width } = useWindowDimensions();
 
   return(
@@ -24,6 +23,7 @@ export default function CareerFavorite () {
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
           isLoading ?
+// Temp comment
             <LoadingSpinner />
             :
             savedJobs.map((career, index) => {

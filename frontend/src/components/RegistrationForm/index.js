@@ -95,7 +95,6 @@ export default function RegistrationForm(loggedIn) {
       formObj.resume = resumeResponse;
 
       // Format formObj
-      const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
@@ -397,6 +396,7 @@ export default function RegistrationForm(loggedIn) {
             type='password'
             name='password'
             label='Password'
+            required={true}
             value={formObj.password}
             onChange={handleChange}
             error={errors.includes('password')}

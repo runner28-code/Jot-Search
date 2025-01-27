@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { appendPathToBaseUrl } from '../../../services/API';
 import ResumePreview from './ResumePreview';
 
 export default function MinifiedCompanyView({ candidateData }) {
-// Temp comment
   const resumeUrl = candidateData.resume ? appendPathToBaseUrl(candidateData.resume) : null;
   return (
     <div>

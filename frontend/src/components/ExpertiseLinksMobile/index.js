@@ -49,6 +49,7 @@ export default function ExpertiseLinksMobile() {
         <Link
           to={ROUTES.careers}
           className={linkStyles}
+// Temp comment
           state={{ Expertise: 'Marketing' }}
         >
           <img
@@ -86,5 +87,4 @@ export default function ExpertiseLinksMobile() {
         </Link>
       </div>
     </section>
-// Temp comment
   )

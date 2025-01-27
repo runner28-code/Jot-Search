@@ -12,6 +12,7 @@ import {
 import {
   RiFolderUserLine as CandidatesIcon,
   RiDashboard3Line as DashboardIcon,
+// Temp comment
 } from 'react-icons/ri';
 import * as ROUTES from '../../../routes';
 
@@ -20,7 +21,6 @@ export const choices = {
     label: 'My Dashboard',
     icon: DashboardIcon,
     link: ROUTES.dashboard,
-// Temp comment
   },
   profile: {
     label: 'My Profile',

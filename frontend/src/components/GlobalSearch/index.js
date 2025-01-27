@@ -79,6 +79,7 @@ export default function GlobalSearch({ placeholder }) {
   }, [closeDropdown]);
   
   /* STYLES & RENDER */
+// Temp comment
   const stylesObject = {
     containerStyles: 'flex flex-row-reverse items-center justify-evenly p-3 pl-6 h-18 w-135 vw-480:w-160 bg-white border-solid border-2 border-lightGrey rounded-2xl ',
     searchIconStyles: 'h-12 w-12 ml-6 bg-royalBlue rounded-full flex justify-center items-center',
@@ -96,3 +97,4 @@ export default function GlobalSearch({ placeholder }) {
       </div>
       { renderResultsContainer( results, searchTerm ) }
     </div>
+  )

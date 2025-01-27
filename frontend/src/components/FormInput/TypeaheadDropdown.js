@@ -37,6 +37,7 @@ export default function TypeaheadDropdown(props) {
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
     if (!dropdownOpen) setInputValue('');
+  }, [dropdownOpen]);
   
   /* Filter choices based on input */
   useEffect(() => {
@@ -50,7 +51,6 @@ export default function TypeaheadDropdown(props) {
   }
 
   function handleListClick() {
-    setDropdownOpen(dropdownOpen => !dropdownOpen);
   }
 
   function handleKeyDown() {

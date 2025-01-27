@@ -1,4 +1,5 @@
 import axios from 'axios';
+import config from "../config";
 import queryString from 'query-string';
 import { getCompanies, saveCompanies, saveJobs, saveMembers } from '../utils/GetroCrud';
 import { saveBullhornJobs } from '../utils/BullhornCrud';
@@ -13,3 +14,4 @@ export class GetroService {
     private networkId = null;
 
     public static async getClient() {
+        if (GetroService.client === null) {

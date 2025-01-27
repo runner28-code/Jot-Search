@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import FormInput from '../../../components/FormInput';
 import API from '../../../services/API';
@@ -18,7 +19,6 @@ export default function ResetForm({ candidateData, setType }) {
       setMatch(false);
     }
 
-    if( formData.password === formData.confirmPassword ) {
       setMatch(true);
       const { password } = event.target;
       const res = await API.post(ROUTES.APIResetPassword, {

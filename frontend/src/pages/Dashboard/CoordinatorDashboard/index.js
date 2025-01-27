@@ -7,10 +7,12 @@ import gaugeIcon from '../../../assets/icons/gauge.svg';
 export default function CoordinatorDashboard({ userType }) {
   return (
     <>
+// Temp comment
       <PageHeader
         headerText={`Coordinator Dashboard`}
         icon={gaugeIcon}
       />
+      <Stats userType={userType} />
       <AdvancedSearch />
     </>
   )

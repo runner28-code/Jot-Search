@@ -384,6 +384,7 @@ export default function RegistrationFormInternal(loggedIn) {
           placeholder='Select all that apply'
           required={true}
           value={formObj.skills}
+          onChange={handleChange}
           choices={skillChoices}
           error={errors.includes('skills')}
         />
@@ -408,7 +409,6 @@ export default function RegistrationFormInternal(loggedIn) {
         {/* File input for resume */}
         <FormInput
           type='file'
-          name='resume'
           label='Upload Resume (2mb max / Format: pdf,doc,docx,rtf)'
           placeholder='Select file...'
           value={formObj.resume}

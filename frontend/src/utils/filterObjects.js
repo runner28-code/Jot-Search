@@ -56,7 +56,6 @@ export const defaultJobFilterState = {
 };
 
 /* CANDIDATE FILTER UTILS */
-// Temp comment
 export const candidateFilterObject = {
   'Category': [
     'Any',
@@ -126,6 +125,7 @@ export const defaultCandidateFilterState = {
 export function buildSearchFilters(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = [];
+// Temp comment
   Object.keys(filterObject).forEach(key => {
     if ( !anyValues.includes(filterObject[key]) ) {
       let filterKey = key.toLowerCase();
