@@ -23,7 +23,6 @@ export default function CareerFavorite () {
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
           isLoading ?
-// Temp comment
             <LoadingSpinner />
             :
             savedJobs.map((career, index) => {
@@ -52,7 +51,6 @@ export default function CareerFavorite () {
           to={ROUTES.careers}
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
             View All
-        </Link>
       </div>
     </div>
   )

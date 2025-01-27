@@ -11,7 +11,6 @@ export default function TypeaheadDropdown(props) {
     disabled,
     name, 
     label,
-    required,
     placeholder, 
     choices, 
     currentChosen, 
@@ -51,6 +50,7 @@ export default function TypeaheadDropdown(props) {
   }
 
   function handleListClick() {
+    setDropdownOpen(dropdownOpen => !dropdownOpen);
   }
 
   function handleKeyDown() {

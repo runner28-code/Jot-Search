@@ -10,11 +10,11 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
     <Link 
       to={ROUTES.profile}
       onClick={handleOptionClick}
+      className={linkStyles}
     >
       <ProfileIcon className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Profile</span>
     </Link>
-    <hr className={stylesObject.hrStyles} />
     <div 
       id='logout'
       onClick={handleOptionClick}

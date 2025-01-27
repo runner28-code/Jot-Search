@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 export default function ChoiceTag({ label, isActive, handleClick }) {
   let choiceStyles = 'inline-block px-4 py-1 mx-2 my-1.5 rounded-2xl cursor-pointer ';

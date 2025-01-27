@@ -43,6 +43,7 @@ export default function AddCoordinator() {
           loading: false,
           success: false,
           errors: {},
+// Temp comment
         });
       }, 2000);
     }
@@ -128,7 +129,6 @@ export default function AddCoordinator() {
         <input
           type='text'
           className={submissionObject.errors.email ? invalidInputStyles : validInputStyles}
-// Temp comment
           name='email'
           placeholder='Email'
           value={formObject.email}

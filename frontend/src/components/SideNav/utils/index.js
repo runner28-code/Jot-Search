@@ -12,7 +12,6 @@ import {
 import {
   RiFolderUserLine as CandidatesIcon,
   RiDashboard3Line as DashboardIcon,
-// Temp comment
 } from 'react-icons/ri';
 import * as ROUTES from '../../../routes';
 

@@ -11,7 +11,6 @@ model Application {
   id String @id @default(uuid())
 
   userId String
-  user   User   @relation("userApplications", fields: [userId], references: [id])
 
   jobId String
   job   Job    @relation("jobApplications", fields: [jobId], references: [id])

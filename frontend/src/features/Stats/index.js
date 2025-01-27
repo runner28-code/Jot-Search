@@ -48,6 +48,7 @@ export default function Stats({ userType }) {
         'Application Invitations Sent': { ...result.applicationInvitationsSent }                
       })
     }
+// Temp comment
     if (userType === 'coordinator') {
       const result = await getCoordinatorQuickStats(duration);
       setStats({

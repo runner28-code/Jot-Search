@@ -102,6 +102,7 @@ export default function Candidate() {
           disableLink
         />
       }
+// Temp comment
       {/* My Preferences (Candidate Only) */}
       {isProfilePage &&
         <div className='px-4'>
@@ -121,7 +122,6 @@ export default function Candidate() {
               toggled={!!candidateData.willReceiveNotification}
               fieldName='willReceiveNotification'
               label={PREFERENCE_ITEMS.willReceiveNotification}
-// Temp comment
               onUpdate={handleCandidateUpdate} />
           </div>
         </div>

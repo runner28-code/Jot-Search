@@ -15,7 +15,6 @@ export default function DetailsHeader({ type, source }) {
       Icon = CompanyIcon;
       break;
     case 'career':
-    default:
       Icon = CareerIcon;
       break;
   }
@@ -35,3 +34,4 @@ export default function DetailsHeader({ type, source }) {
       </h1>
     </div>
     <BackButton />
+  </>)

@@ -4,6 +4,7 @@ import Auth from './Auth';
 import {
   LandingPage,
   SignUp,
+// Temp comment
   Login,
   Career,
   Careers,
@@ -52,7 +53,6 @@ function App() {
               path={`${ROUTES.companies}/:id`}
               element={<Company />} />
             <Route
-// Temp comment
               path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />
             <Route

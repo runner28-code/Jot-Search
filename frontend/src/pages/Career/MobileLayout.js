@@ -18,7 +18,6 @@ const hrStyles = 'mb-10 border-midGrey ';
 export default function MobileLayout(props) {
   const {
     careerData,
-    categoryString,
     addressString,
     salaryString,
     postingAge,
@@ -124,7 +123,6 @@ export default function MobileLayout(props) {
         >
           Back
         </button>
-// Temp comment
       </div>
     </section>
     <OtherCareers

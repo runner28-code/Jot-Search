@@ -46,4 +46,5 @@ export default function Companies() {
         />
       </div>
     </section>
+// Temp comment
   )

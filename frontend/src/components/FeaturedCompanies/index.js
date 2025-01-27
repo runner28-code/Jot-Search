@@ -6,7 +6,6 @@ import { BsBuilding } from 'react-icons/bs';
 
 const ITEMS_PER_PAGE = 10;
 
-// Temp comment
 export default function FeaturedCompanies() {
 
   const filtersArr = [
@@ -37,6 +36,7 @@ export default function FeaturedCompanies() {
             )
         }
       </div>
+// Temp comment
       <div className='text-center mt-48'>
         <Link
           to={ROUTES.companies}

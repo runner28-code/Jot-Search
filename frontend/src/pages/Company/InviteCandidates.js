@@ -63,6 +63,7 @@ export default function InviteCandidates({ company }) {
         isLoading={isLoading}
         options={candidateOptions}
         value={selected}
+        onChange={setSelected}
         labelledBy="Select"
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
@@ -81,7 +82,6 @@ export default function InviteCandidates({ company }) {
           }}
           disabled={selected.length === 0 || isSendingCandidates}
         >
-          <MailIcon className='inline-block mr-2' />
           Send Now
         </button>
         <button 

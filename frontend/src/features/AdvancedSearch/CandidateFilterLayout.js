@@ -19,6 +19,7 @@ const dropdownFilters = [
   'Experience',
   'Remote Availability',
   'Employment Type',
+// Temp comment
 ];
 const checkboxFiltersCoord = [
   'Authorized to work in the US',
@@ -43,6 +44,7 @@ export default function CandidateFilterLayout(props) {
   } = props;
   let userRole = AuthService.getUserRole();
 
+  const dropdownFilterObject = {};
   const checkboxFilterObject = {};
   if (userRole === 'coordinator') {
     dropdownFiltersCoord.forEach(filter => {

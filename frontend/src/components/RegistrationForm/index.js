@@ -95,6 +95,7 @@ export default function RegistrationForm(loggedIn) {
       formObj.resume = resumeResponse;
 
       // Format formObj
+      const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
@@ -262,6 +263,7 @@ export default function RegistrationForm(loggedIn) {
             value={formObj.state}
             onChange={handleChange}
             error={errors.includes('state')}
+// Temp comment
           />
           <FormInput
             type='text'
