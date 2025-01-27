@@ -10,6 +10,7 @@ import {
 } from "./parseEntities";
 import db from "./db";
 import { Candidate as DbCandidate } from "prisma/prisma-client";
+
 export const saveCompanies = async (companies: any[]) => {
   // Update existing database to remove https and unneccessary route path.
   // Keep it for now.

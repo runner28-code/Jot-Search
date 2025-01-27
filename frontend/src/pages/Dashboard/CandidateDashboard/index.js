@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import Home from '../../../assets/icons/home.svg';
 import AdvancedSearch from '../../../features/AdvancedSearch';
 import CareerFavorite from '../../../components/CareerFavorite';
+// Temp comment
 import CompanyFavorite from '../../../components/CompanyFavorite';
 import PendingApplications from '../../../components/PendingApplications';
 import InvitationsToApply from '../../../components/InvitationsToApply';
@@ -20,6 +21,7 @@ export default function CandidateDashboard() {
       <div className='px-4'>
         <InvitationsToApply />
         <PendingApplications />
+        <CareerFavorite />
         <CompanyFavorite />
         <h1 className={headerStyles}>Search</h1>
         <AdvancedSearch />

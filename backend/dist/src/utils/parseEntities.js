@@ -27,6 +27,7 @@ const parseBullhornCandidateToUser = (data) => {
         description: data.description,
         phone: data.phone || data.workPhone || data.mobile,
         status: data.status,
+// Temp comment
         username: data.username,
         companyName: data.companyName,
         companyURL: data.companyURL,

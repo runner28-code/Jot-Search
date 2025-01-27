@@ -41,6 +41,7 @@ export default function FormInput(props) {
     case 'file':
       return <FileInput
         type={type}
+        name={name}
         label={label}
         placeholder={placeholder}
         value={value}

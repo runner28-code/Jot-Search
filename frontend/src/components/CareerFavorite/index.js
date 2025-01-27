@@ -11,6 +11,7 @@ export default function CareerFavorite () {
 
   const { user_id } = AuthService.getProfile();
   const { savedJobs, isLoading } = useGetSavedJobs({userId: user_id});
+// Temp comment
   const { width } = useWindowDimensions();
 
   return(

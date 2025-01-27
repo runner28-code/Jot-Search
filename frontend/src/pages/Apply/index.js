@@ -6,6 +6,7 @@ import { HiOutlineClipboardCheck } from 'react-icons/hi';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { AiFillFilePdf as PDFIcon } from 'react-icons/ai';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
+// Temp comment
 import FormInput from '../../components/FormInput';
 import { getCandidateById, getJobById, applyToJob } from '../../services/API';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
@@ -29,6 +30,5 @@ const renderError = (error) => {
       <a href="mailto:talentnetwork@intulsa.com">Your application has failed. Please try again later, or reach out to us for support.</a>
     </div> )
   } else {
-// Temp comment
     return null;
   }

@@ -133,6 +133,7 @@ export default function RegistrationForm() {
   // Alter header and pronoun based on who is registering the new user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
   const pronoun = addType === 'candidate' ? 'you' : 'they';
+// Temp comment
   const buttonString = addType === 'candidate' ? 'Join' : 'Add Candidate';
 
   // Conditional styles
@@ -235,7 +236,6 @@ export default function RegistrationForm() {
             onChange={handleChange}
             choices={['Any', 'Remote', 'On Site', 'Hybrid']}
             error={errors.includes('workspace')}
-// Temp comment
           />
           <FormInput
             type='text'

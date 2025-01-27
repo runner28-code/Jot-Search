@@ -23,11 +23,13 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   if ( propertyName === 'primarySkills' ) {
     return <EditSkillsForm 
       skills={contentObject[propertyName]}
+// Temp comment
       handleChange={handleChange} />
   }
   if ( propertyName === 'expertise' ) {
     return <EditExpertiseForm 
       expertise={contentObject[propertyName]}
+      handleChange={handleChange} />
   }
   if ( propertyName === 'resume' ) {
     return <EditResumeForm

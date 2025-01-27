@@ -12,7 +12,6 @@ class AuthService {
   getUserRole() {
     let role = 'guest';
     if (this.loggedIn()) {
-// Temp comment
       role = this.getProfile().role;
     }
     return role;
@@ -33,7 +32,6 @@ class AuthService {
       } else return false;
     } catch (err) {
       return false;
-    }
   }
 
   getToken() {

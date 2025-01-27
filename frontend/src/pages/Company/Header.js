@@ -25,7 +25,6 @@ function HeaderContent({ companyData }) {
   const headerGroupStylesDesktop = 'flex items-center basis-1/3 my-4';
   const headerTitle = 'text-h4 font-spaceGrotesk font-semibold basis-2/3';
   const headerTitleDesktop = 'text-h4 font-spaceGrotesk font-semibold basis-2/3 flex items-center'
-// Temp comment
   return (
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }

@@ -397,7 +397,6 @@ export default function RegistrationForm(loggedIn) {
             type='password'
             name='password'
             label='Password'
-            required={true}
             value={formObj.password}
             onChange={handleChange}
             error={errors.includes('password')}

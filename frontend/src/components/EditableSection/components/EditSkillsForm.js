@@ -26,7 +26,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
       dropdownType='tags'
       name='primarySkills'
       placeholder='Add/Remove Skills'
-// Temp comment
       choices={skillChoices}
       currentChosen={splitSkills}
       onChange={onChange}

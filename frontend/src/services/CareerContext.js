@@ -18,6 +18,7 @@ const mockJobsData = [
   {
     id: 'b25cf8b7-e171-4049-8e67-701b7b7b81c3',
     title: 'Software Engineer',
+    company: 'Kum N Go',
     clientCorporationID: '3b7bf6bc-16de-4014-92d6-d1cbee1bc4d5',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/kumgo_2_eqbzbl.webp',
     salaryRange: '$80k-$90k',
@@ -86,6 +87,7 @@ export const CareerContext = createContext();
 const CareerProvider = ({children}) => {
   const [careers, setCareers] = useState(mockJobsData);
 
+// Temp comment
   const handleCareersChange = (value) => {
     setCareers(value);
   }
