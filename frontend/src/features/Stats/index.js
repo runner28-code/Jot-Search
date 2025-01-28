@@ -68,6 +68,7 @@ export default function Stats({ userType }) {
           id='dropdown-container'
           className='relative'
         >
+          <TimeframeFilter
             choices={statFilterChoices}
             timeframe={timeframe}
             handleFilterChange={handleFilterChange}

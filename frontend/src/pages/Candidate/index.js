@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useEffect } from 'react';
 import { useLocation, Navigate } from 'react-router-dom';
 import CareerProfileInfo from './CareerProfileInfo';

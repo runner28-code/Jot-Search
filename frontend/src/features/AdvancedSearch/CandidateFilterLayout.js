@@ -67,6 +67,7 @@ export default function CandidateFilterLayout(props) {
       handleFilterChange('skills', skills.filter(s => s !== skill))
     } else {
       handleFilterChange('skills', [...skills, skill])
+    }
   }
   console.log(filterObject)
 
@@ -96,7 +97,6 @@ export default function CandidateFilterLayout(props) {
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
-        />
         <button
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}

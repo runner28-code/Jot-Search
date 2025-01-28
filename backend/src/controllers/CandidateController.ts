@@ -35,3 +35,4 @@ export class CandidateController {
   }
 
   @Authorized()
+  @Get("/search")

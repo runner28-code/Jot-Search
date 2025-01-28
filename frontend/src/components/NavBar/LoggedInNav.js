@@ -1,3 +1,4 @@
+// Temp comment
 import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
@@ -18,6 +19,7 @@ import {
 import { useCandidateContext } from '../../services/CandidateContext';
 
 export default function NavBar() {
+  const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {
     return <NavBarLayout />

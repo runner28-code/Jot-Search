@@ -42,3 +42,4 @@ const job_filter_exclude_keys = [
   "bim",
   "bingo",
   "biologist",
+  "biomed",

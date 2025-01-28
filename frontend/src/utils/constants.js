@@ -42,7 +42,6 @@ export const stateCodeMap = {
   Mississippi: 'MS',
   Missouri: 'MO',
   Montana: 'MT',
-  Nebraska: 'NE',
   Nevada: 'NV',
   'New Hampshire': 'NH',
   'New Jersey': 'NJ',
@@ -55,7 +54,6 @@ export const stateCodeMap = {
   Oregon: 'OR',
   Pennsylvania: 'PA',
   'Rhode Island': 'RI',
-// Temp comment
   'South Carolina': 'SC',
   'South Dakota': 'SD',
   Tennessee: 'TN',

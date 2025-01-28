@@ -10,3 +10,4 @@ import { User } from "./User";
 
 export enum Tables {
   COMPANIES = "Companies",
+  JOBS = "Jobs",

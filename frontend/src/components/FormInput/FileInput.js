@@ -23,5 +23,4 @@ export default function FileInput({type, name, label, placeholder, required, val
         ref={inputRef}
         disabled={disabled}
       />
-    </div>
   )

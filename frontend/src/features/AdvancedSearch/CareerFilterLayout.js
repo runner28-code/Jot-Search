@@ -20,7 +20,6 @@ export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
 
   const {
-    defaultFilterObject,
     filterObject,
     handleFilterChange,
     searchTerm,

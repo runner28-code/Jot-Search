@@ -128,6 +128,7 @@ export default function AddCoordinator() {
         <input
           type='text'
           className={submissionObject.errors.email ? invalidInputStyles : validInputStyles}
+// Temp comment
           name='email'
           placeholder='Email'
           value={formObject.email}

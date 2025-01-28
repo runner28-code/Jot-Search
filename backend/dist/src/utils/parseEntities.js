@@ -15,7 +15,6 @@ const parseBullhornCandidateToUser = (data) => {
         address2: data.address_address2,
         city: data.address_city,
         state: data.address_state,
-        zip: data.address_zip,
         resume: undefined,
         linkedin: undefined,
         skills: data.primarySkills,
@@ -36,7 +35,6 @@ const parseBullhornCandidateToUser = (data) => {
         experience: data.experience,
         hourlyRate: data.hourlyRate,
         willRelocate: data.willRelocate,
-// Temp comment
         ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,
         disability: data.disability,

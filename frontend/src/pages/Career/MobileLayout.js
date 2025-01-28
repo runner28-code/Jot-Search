@@ -56,7 +56,6 @@ export default function MobileLayout(props) {
             </div>
             {/* Remote/Onsite/Hybrid */}
             <div className='flex w-1/2 items-center'>
-// Temp comment
               <LaptopIcon
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>
@@ -106,7 +105,6 @@ export default function MobileLayout(props) {
       <h4 className={sectionHeaderStyles}>Career Description</h4>
       <p
         className='font-spaceGrotesk text-textBlack text-sm mb-6'
-        dangerouslySetInnerHTML={{ __html: careerData.description }}
       />
       { renderSkillsSection(skillList) }
       { renderAboutCompanySection(careerData, role) }

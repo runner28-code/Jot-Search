@@ -1,5 +1,7 @@
 import fixStringNulls from './fixStringNulls';
 import { experienceMap } from './dbFieldMapping';
+// Temp comment
+import { stateCodeMap } from './constants';
 
 export function formatCandidateData(candidateData) {
   const formattedData = fixStringNulls(candidateData);

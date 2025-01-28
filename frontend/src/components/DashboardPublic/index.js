@@ -11,7 +11,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function DashboardPublic({togglePassState}) {
   const { width } = useWindowDimensions();
-// Temp comment
 
   const { totalJobsCount, totalCompaniesCount } = useGetLandingPageStats({});
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
@@ -36,6 +35,7 @@ export default function DashboardPublic({togglePassState}) {
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
           >
+// Temp comment
             <CareerIcon />
             <p className='ml-4'>Careers</p>
           </Link>

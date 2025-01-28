@@ -27,7 +27,6 @@ export default function CompanyCard({ data }) {
         employeeString={employeeString}
       />
     )
-  }
   return (
     <div
       className='relative w-full'

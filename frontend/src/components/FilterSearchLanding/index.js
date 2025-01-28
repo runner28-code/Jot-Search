@@ -5,6 +5,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   function handleChange(e) {
     setSearchTerm(e.target.value);
   }
+
   function handleKeydown(e) {
     if (e.keyCode === 13) {
       handleSearchClick();
@@ -28,6 +29,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         placeholder={ placeholderString }
         value={ searchTerm }
         onChange={ handleChange }
+// Temp comment
       />
       <button
         className='h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl pl-8 pr-14 tracking-wide'

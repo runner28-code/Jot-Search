@@ -33,6 +33,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
       [name]: value,
     });
   }
+
   function handleSearchChange(searchTerm) {
     handleFilterChange('title', searchTerm);
   }

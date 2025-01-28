@@ -15,3 +15,4 @@ export class GetroService {
 
     public static async getClient() {
         if (GetroService.client === null) {
+            GetroService.client = new GetroService();
