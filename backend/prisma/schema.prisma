@@ -66,3 +66,9 @@ model Lead {
   category              Json?
   clientContacts        String?
   clientCorporation     Json?
+  comments              String?
+  companyName           String?
+  companyURL            String?
+  conversionSource      String?
+  dateAdded             DateTime?
+  dateLastComment       DateTime?

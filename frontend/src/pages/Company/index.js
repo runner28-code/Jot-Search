@@ -16,7 +16,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function Company() {
-// Temp comment
   const { width } = useWindowDimensions();
   const { id } = useParams();
   const [companyData, setCompanyData] = useState({});

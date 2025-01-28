@@ -13,7 +13,6 @@ export default function AccountRecovery() {
     event.preventDefault();
     const { email } = event.target;
     const res = await API.post(ROUTES.APIaccountRecovery, {
-// Temp comment
       email: email.value
     });
 
@@ -68,6 +67,7 @@ export default function AccountRecovery() {
           <FormInput
             type='email'
             name='email'
+// Temp comment
             label='Login Email'
           />
           <div className='flex justify-between items-center vw-640:items-end mb-22'>

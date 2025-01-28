@@ -5,3 +5,4 @@ export type Company = {
     crunchbase_url?: string;
     description?: string;
     domain?: string;
+    facebook_url?: string;

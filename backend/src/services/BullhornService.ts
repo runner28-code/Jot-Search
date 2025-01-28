@@ -73,6 +73,7 @@ export class BullhornService {
         return resolve(cookies);
       });
     });
+  }
 
   async setCookie(data: any) {
     const targetFile = __dirname + "/../config/cookie.json";
@@ -80,3 +81,11 @@ export class BullhornService {
       // Try saving the file.
       fs.writeFile(targetFile, JSON.stringify(data), { flag: "w+" }, (err) => {
         if (err) reject(err);
+        else {
+          resolve(targetFile);
+        }
+      });
+    });
+  }
+
+  async getAuthCode(): Promise<boolean> {

@@ -56,6 +56,7 @@ export default function InviteToCareer({ candidate }) {
     <section className="flex flex-col space-y-8 bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4">
       <h2 className="text-h4">Select Career(s) to refer</h2>
 
+      {isSendingJob && <div className="text-center">Sending Invitations...</div>}
       {successfullySentJob && <div className="text-center">Invitations Sent!</div>}
 
       <SelectedValues />

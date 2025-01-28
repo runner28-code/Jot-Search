@@ -1,6 +1,5 @@
 import { Dictionary } from "typed-two-way-map";
 import config from "../config";
-import {
   Job as BullhornJob,
   Company as BullhornCompany,
 } from "../types/Bullhorn";
@@ -11,3 +10,4 @@ import { User } from "./User";
 export enum Tables {
   COMPANIES = "Companies",
   JOBS = "Jobs",
+  USER = "User",

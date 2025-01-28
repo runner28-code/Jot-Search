@@ -22,3 +22,5 @@ module.exports = {
         },
         'spin-reverse': {
           from: {
+            transform: 'rotate(180deg)'
+          },

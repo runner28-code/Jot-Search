@@ -9,7 +9,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
     if (selectedContacts.includes(contact)) {
       setSelectedContacts(selectedContacts.filter((c) => c !== contact));
     } else {
-    }
+      setSelectedContacts([...selectedContacts, contact]);
   };
 
   const handleSyncClick = () => {

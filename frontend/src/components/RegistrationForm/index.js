@@ -87,7 +87,6 @@ export default function RegistrationForm(loggedIn) {
         setErrors(['resume']);
         setErrorBlock('There was an error uploading your resume.');
         setSubmissionObject({
-// Temp comment
           loading: false,
           success: false,
         });
@@ -104,6 +103,7 @@ export default function RegistrationForm(loggedIn) {
         // Set success to true if on add-user page, navigate user to login if not
         if ( addType === 'coordinator' ) {
           return setSubmissionObject({
+// Temp comment
             loading: false,
             success: true,
           })

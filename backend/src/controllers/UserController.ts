@@ -4,7 +4,6 @@ import {
   Body,
   Get,
   Post,
-  Put,
   Delete,
   QueryParam,
   UploadedFile,
@@ -19,3 +18,5 @@ import {
   register,
   login,
   update,
+  recovery,
+  getStats,

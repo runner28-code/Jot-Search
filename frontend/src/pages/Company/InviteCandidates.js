@@ -4,10 +4,10 @@ import { MultiSelect } from 'react-multi-select-component';
 import { appendPathToBaseUrl } from '../../services/API';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 
+// Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
 
-export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
     filtersArr: [],
     count: 10000,

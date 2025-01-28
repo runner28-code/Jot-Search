@@ -216,6 +216,7 @@ export default function RegistrationForm() {
             value={formObj.experience}
             onChange={handleChange}
             choiceObject={experienceMap}
+            error={errors.includes('experience')}
           />
           <FormInput
             type='single-select'

@@ -1,4 +1,3 @@
-// Temp comment
 import decode from 'jwt-decode';
 import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
 
@@ -6,7 +5,6 @@ class AuthService {
   getProfile() {
     if ( !this.loggedIn() ) {
       return null;
-    }
     return decode(this.getToken());
   }
 

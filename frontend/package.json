@@ -3,3 +3,4 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3",

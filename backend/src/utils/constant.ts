@@ -43,3 +43,6 @@ const job_filter_exclude_keys = [
   "bingo",
   "biologist",
   "biomed",
+  "blender",
+  "body repair",
+  "breakfast",
