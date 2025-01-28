@@ -19,7 +19,6 @@ const dropdownFilters = [
   'Experience',
   'Remote Availability',
   'Employment Type',
-// Temp comment
 ];
 const checkboxFiltersCoord = [
   'Authorized to work in the US',
@@ -75,6 +74,7 @@ export default function CandidateFilterLayout(props) {
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
+// Temp comment
         {renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange)}
         <FormInput
           type='typeahead'

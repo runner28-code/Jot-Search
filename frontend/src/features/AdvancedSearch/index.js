@@ -29,7 +29,9 @@ const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'careers', 'companies'],
   company: ['careers', 'candidates' ],
   candidate: ['careers', 'companies'],
+  guest: ['careers', 'companies'],
 }
+// Temp comment
 
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {

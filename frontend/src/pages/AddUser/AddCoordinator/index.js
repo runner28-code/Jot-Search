@@ -43,7 +43,6 @@ export default function AddCoordinator() {
           loading: false,
           success: false,
           errors: {},
-// Temp comment
         });
       }, 2000);
     }

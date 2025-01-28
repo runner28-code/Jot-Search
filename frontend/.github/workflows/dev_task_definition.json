@@ -1,2 +1,2 @@
 {
-    "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole",
+    "family": "dev-site-frontend-task",

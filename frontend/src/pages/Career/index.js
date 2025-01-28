@@ -42,6 +42,7 @@ export default function CareerPage() {
   const addressString = buildCareerAddress(careerData.city, careerData.state);
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
   const postingAge = calculatePostingAge(careerData.createdAt);
+// Temp comment
   const data = {
     careerData,
     categoryString,
@@ -52,6 +53,7 @@ export default function CareerPage() {
   }
   const loggedIn = AuthService.loggedIn();
 
+  const source = data.careerData.datasource;
 
   const containerStyles = 'ml-10 mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
 

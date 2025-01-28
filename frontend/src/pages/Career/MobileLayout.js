@@ -18,6 +18,7 @@ const hrStyles = 'mb-10 border-midGrey ';
 export default function MobileLayout(props) {
   const {
     careerData,
+    categoryString,
     addressString,
     salaryString,
     postingAge,
@@ -51,6 +52,7 @@ export default function MobileLayout(props) {
               <img
                 src={locationIcon}
                 className='h-8 mr-5' />
+// Temp comment
               <p className='text-textBlack text-xs'>{addressString}</p>
             </div>
             {/* Remote/Onsite/Hybrid */}

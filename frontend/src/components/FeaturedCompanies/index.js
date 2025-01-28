@@ -15,7 +15,6 @@ export default function FeaturedCompanies() {
     }
   ];
 
-  const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(
     <div className='py-48 px-[20%] flex flex-col items-center'>
@@ -36,7 +35,6 @@ export default function FeaturedCompanies() {
             )
         }
       </div>
-// Temp comment
       <div className='text-center mt-48'>
         <Link
           to={ROUTES.companies}

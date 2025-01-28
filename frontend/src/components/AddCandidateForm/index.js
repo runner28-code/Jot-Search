@@ -41,7 +41,6 @@ export default function RegistrationForm() {
     loading: false,
     success: false,
   });
-
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -273,7 +272,6 @@ export default function RegistrationForm() {
             placeholder='Verify Password' 
             value={formObj.verifyPassword}
             onChange={handleChange}
-// Temp comment
             error={errors.includes('verifyPassword')}
           />
         </div>

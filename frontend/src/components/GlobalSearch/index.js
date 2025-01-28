@@ -37,6 +37,7 @@ export default function GlobalSearch({ placeholder }) {
     debounce( handleDebounce, 300 ),
     []
   );
+
   async function handleDebounce( searchTerm ) {
     if ( searchTerm === '' ) {
       return setResults({

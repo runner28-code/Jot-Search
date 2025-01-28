@@ -102,7 +102,6 @@ export default function Candidate() {
           disableLink
         />
       }
-// Temp comment
       {/* My Preferences (Candidate Only) */}
       {isProfilePage &&
         <div className='px-4'>

@@ -13,6 +13,7 @@ const ResumePreview = ({ resumeUrl }) => {
 
   const { pdfDocument } = usePdf({
     file: resumeUrl,
+    page,
     canvasRef,
   });
 
@@ -48,6 +49,7 @@ const ResumePreview = ({ resumeUrl }) => {
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>
+// Temp comment
           </ul>
         </nav>
       )}
