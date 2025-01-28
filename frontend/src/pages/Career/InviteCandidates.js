@@ -62,7 +62,6 @@ export default function InviteCandidates({ job }) {
 
       <SelectedValues />
 
-      <MultiSelect
         isLoading={isLoading}
         options={candidateOptions}
         value={selected}

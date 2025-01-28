@@ -67,14 +67,12 @@ export default function CandidateFilterLayout(props) {
       handleFilterChange('skills', skills.filter(s => s !== skill))
     } else {
       handleFilterChange('skills', [...skills, skill])
-    }
   }
   console.log(filterObject)
 
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
-// Temp comment
         {renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange)}
         <FormInput
           type='typeahead'

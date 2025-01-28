@@ -20,7 +20,6 @@ export default function CareerCard({ data, active }) {
   const addressString = buildCareerAddress(data.city, data.state);
   const role = AuthService.getUserRole();
 
-  const { width } = useWindowDimensions();
 
   const dataObj = {
     data,
@@ -47,6 +46,7 @@ export default function CareerCard({ data, active }) {
             dataObj={dataObj}
             active={active}
           />
+      }
       <FavoriteButton
         type={'job'}
         data={data} />

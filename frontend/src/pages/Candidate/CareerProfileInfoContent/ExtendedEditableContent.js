@@ -250,6 +250,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
 
       {editMode && <div className='w-full flex justify-end gap-l mt-16'>
         <button
+          onClick={handleCancel}
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Cancel</button>
         <button
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'

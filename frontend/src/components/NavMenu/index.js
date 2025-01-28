@@ -28,12 +28,12 @@ export default function NavMenu() {
       <button
         className={buttonStyles}
         onClick={handleMenuClick}
+      >
         <div className='w-8 h-8 flex flex-col justify-between'>
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
         </div>
-      </button>
       <Menu
         key={menuOpen}
         menuOpen={menuOpen}

@@ -29,6 +29,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         type='text'
         className={ inputStyles }
         placeholder={ placeholderString }
+        value={ searchTerm }
         onChange={ handleChange }
       />
       <button 

@@ -47,7 +47,6 @@ export default function AccountRecovery() {
         {/* Header */}
         <div className='flex justify-center items-center bg-aquaBlue py-2 px-9 vw-1280:py-6 vw-1280:px-36 mt-12 vw-1280:mt-16'>
           <h1 className='font-spaceGrotesk text-white text-xl vw-768:text-h5 vw-1280:text-h2'>InTulsa Talent Network</h1>
-        </div>
         {/* Login Form */}
         <form
           className='w-[84%] vw-640:w-250 rounded-3xl border border-midGrey border-solid bg-white mt-22 px-16 vw-1280:px-24'
@@ -57,7 +56,6 @@ export default function AccountRecovery() {
           <div className='flex vw-640:justify-center items-center mb-12 mt-12'>
             <span className='text-sm vw-640:text-ml text-charcoal vw-640:mx-3'>Need an Account?</span>
             <Link
-// Temp comment
               to={ROUTES.signup}
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
             >

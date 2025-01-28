@@ -1,12 +1,10 @@
 import { Link, useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
   guestChoices,
   findSelectedFromPath
-// Temp comment
 } from './utils';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';

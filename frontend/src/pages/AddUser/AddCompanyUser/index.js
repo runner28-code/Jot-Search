@@ -7,7 +7,6 @@ import { useGetClientContacts } from '../../../hooks/queries/useGetClientContact
 import CompanyContactList from './CompanyContactList';
 
 const ITEMS_PER_PAGE = 10;
-// Temp comment
 
 export default function AddCompanyUser() {
   const [search, setSearch] = useState('');
@@ -18,6 +17,7 @@ export default function AddCompanyUser() {
   const { clientContacts, isLoading: isLoadingContacts } = useGetClientContacts({ filterKey: 'clientCorporation', filterValue: selectedCompanyId, count: 50, enabled: !!selectedCompany });
 
   function handleCompanyClick(company) {
+// Temp comment
     setSelectedCompany(company);
     setSearch(company.name);
   }

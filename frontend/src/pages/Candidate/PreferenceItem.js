@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }) => {
   const { width } = useWindowDimensions();
   return (
     <div className='flex flex-col mt-5'>
@@ -9,6 +10,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
           fieldName={fieldName}
           label={label}
           toggled={toggled}
+// Temp comment
           onToggle={onUpdate}
           disabled={disabled}
         />

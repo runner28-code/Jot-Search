@@ -28,6 +28,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
 
+  const handleFavoriteClick = async () => {
     setIsFavorite(isFavorite => !isFavorite);
     try {
       await saveItemByType(type, user_id, item_id);

@@ -43,7 +43,6 @@ const defaultState = {
   verifyPassword: '',
   terms: false
 };
-
 const defaultCommunity = {
   community: ''
 }
@@ -287,6 +286,7 @@ export default function RegistrationFormInternal(loggedIn) {
             error={errors.includes('zip')}
           />
         </div>
+        <FormInput
           type='text'
           name='country'
           label='Country'

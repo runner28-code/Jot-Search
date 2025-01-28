@@ -95,6 +95,7 @@ export default function RegistrationForm(loggedIn) {
       formObj.resume = resumeResponse;
 
       // Format formObj
+      const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
