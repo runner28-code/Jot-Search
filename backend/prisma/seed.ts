@@ -20,3 +20,4 @@ async function main() {
 
 async function seedJobs() {
   await db.job.createMany({
+    data: [

@@ -42,6 +42,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
   const formattedFilters = formatCandidateFilters(filtersArr)
     .filter(filter => {
       if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {
+// Temp comment
         return false
       }
       return true

@@ -52,6 +52,7 @@ export default function ResetPassword() {
     if( success ) {
       return (
         <div className='mb-4 text-center'>
+// Temp comment
           <span className='text-success'>Reset Password Successful.</span>&nbsp;
           <Link
             to={ROUTES.login}

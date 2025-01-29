@@ -38,7 +38,6 @@ export const stateCodeMap = {
   Maryland: 'MD',
   Massachusetts: 'MA',
   Michigan: 'MI',
-// Temp comment
   Minnesota: 'MN',
   Mississippi: 'MS',
   Missouri: 'MO',

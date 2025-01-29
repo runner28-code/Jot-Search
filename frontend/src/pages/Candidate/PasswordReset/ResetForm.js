@@ -50,7 +50,6 @@ export default function ResetForm({ candidateData, setType }) {
           value={formData.password}
           onChange={handleChange}
           label='New Password'
-        />
         <FormInput
           type='text'
           name='passwordConfirm'
@@ -62,6 +61,7 @@ export default function ResetForm({ candidateData, setType }) {
       { renderMatch(match) }
       <button
         className='h-20 w-150 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
+        onClick={handleSubmit}
       >
         Reset Password
       </button>

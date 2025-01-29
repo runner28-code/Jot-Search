@@ -72,3 +72,4 @@ model Lead {
   conversionSource      String?
   dateAdded             DateTime?
   dateLastComment       DateTime?
+  dateLastModified      DateTime?

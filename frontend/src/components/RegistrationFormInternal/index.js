@@ -301,7 +301,6 @@ export default function RegistrationFormInternal(loggedIn) {
         <div className='my-8'>
           <label className='block text-textBlack mb-2.5'>Open to Relocation? *
           </label>
-// Temp comment
           <div
             className="md:w-18 md:h-9 w-12 h-8 mt-4 flex items-center bg-lightGrey rounded-full p-1 cursor-pointer border border-solid border-midGrey"
             onClick={() => {

@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
@@ -17,6 +16,7 @@ import {
   findSelectedFromPath
 } from '../SideNav/utils';
 import { useCandidateContext } from '../../services/CandidateContext';
+// Temp comment
 
 export default function NavBar() {
   const { width } = useWindowDimensions();

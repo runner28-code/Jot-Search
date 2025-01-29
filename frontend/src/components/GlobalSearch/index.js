@@ -39,7 +39,6 @@ export default function GlobalSearch({ placeholder }) {
   );
 
   async function handleDebounce( searchTerm ) {
-// Temp comment
     if ( searchTerm === '' ) {
       return setResults({
         jobs: [],

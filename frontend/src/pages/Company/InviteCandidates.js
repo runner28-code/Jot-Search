@@ -8,6 +8,7 @@ import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
 
+export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
     filtersArr: [],
     count: 10000,
@@ -60,6 +61,7 @@ import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandi
 
       <MultiSelect
         isLoading={isLoading}
+// Temp comment
         options={candidateOptions}
         value={selected}
         onChange={setSelected}

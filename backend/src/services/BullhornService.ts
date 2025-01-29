@@ -64,7 +64,6 @@ export class BullhornService {
 
   async getCookie() {
     const targetFile = __dirname + "/../config/cookie.json";
-    return new Promise((resolve) => {
       fs.readFile(targetFile, async function (err, data) {
         if (err) {
           return resolve(null);
@@ -89,3 +88,6 @@ export class BullhornService {
   }
 
   async getAuthCode(): Promise<boolean> {
+    console.log("\n***** getAuthCode *****");
+    const query = queryString.stringify(
+      {

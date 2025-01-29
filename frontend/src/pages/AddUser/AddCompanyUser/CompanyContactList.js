@@ -10,6 +10,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
       setSelectedContacts(selectedContacts.filter((c) => c !== contact));
     } else {
       setSelectedContacts([...selectedContacts, contact]);
+    }
   };
 
   const handleSyncClick = () => {
@@ -47,7 +48,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           ))}
         </ul>
         <button
-          className='bg-royalBlue text-white text-lg px-xxl py-xs rounded-xl mt-20'
           onClick={handleSyncClick}
         >
           Synch

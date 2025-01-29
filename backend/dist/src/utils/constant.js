@@ -4,7 +4,6 @@ exports.JOB_FIELDS = exports.CITY_INCLUDE_KEYS_REGEX = exports.JOB_EXCLUDE_KEYS_
 exports.COORDINATOR = 'coordinator';
 exports.CANDIDATE = 'candidate';
 exports.COMPANY = 'company';
-// Temp comment
 exports.ROLES = [exports.COORDINATOR, exports.CANDIDATE, exports.COMPANY];
 const job_filter_exclude_keys = [
     "academic",
@@ -18,7 +17,6 @@ const job_filter_exclude_keys = [
     "alumni",
     "americorps",
     "analyzer tech",
-    "anestesia",
     "animal",
     "animal control",
     "aquatics",
@@ -47,3 +45,4 @@ const job_filter_exclude_keys = [
     "biologist",
     "biomed",
     "blender",
+    "body repair",

@@ -5,6 +5,7 @@ class AuthService {
   getProfile() {
     if ( !this.loggedIn() ) {
       return null;
+    }
     return decode(this.getToken());
   }
 
@@ -28,7 +29,6 @@ class AuthService {
       if (decoded.exp < Date.now() / 1000) {
         this.clearStorage();
         return true;
-      } else return false;
     } catch (err) {
       return false;
     }

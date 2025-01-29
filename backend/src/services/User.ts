@@ -52,6 +52,7 @@ const validateUser = ({
     // if (isNullOrEmpty(skills))
     //     return 'skill is required';
     // if (isNullOrEmpty(category))
+    //     return 'category is required';
   } catch (error) {
     return "something is wrong, please check params";
   }
@@ -61,3 +62,4 @@ const validateUser = ({
 export const register = async (data: User) => {
   try {
     console.log("registering...");
+    const validate = validateUser(data);

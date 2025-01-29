@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
+import ChoicesContainer from './ChoicesContainer';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 const WIDE_MENU_ROLES = ['candidate', 'company'];
@@ -28,7 +29,6 @@ export default function NavMenu() {
         className={buttonStyles}
         onClick={handleMenuClick}
       >
-        <div className='w-8 h-8 flex flex-col justify-between'>
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>

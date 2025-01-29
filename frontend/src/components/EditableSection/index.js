@@ -20,6 +20,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
     setEditMode(false);
   }
 
+  function handlePropertyChange(property, value) {
     setContentObject({ ...contentObject, [property]: value });
   }
 

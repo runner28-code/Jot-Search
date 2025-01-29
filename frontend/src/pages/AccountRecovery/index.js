@@ -41,7 +41,6 @@ export default function AccountRecovery() {
       <div className='w-full flex flex-col items-center'>
         {/* Shapes */}
         <div className='relative h-24 w-26 mt-20 vw-900:mt-26 vw-1280:mt-34'>
-          <div className='absolute top-0 right-0 h-9 w-9 bg-orangeHeroOverlay' />
           <div className='absolute bottom-0 left-0 h-14 w-14 bg-magenta' />
         </div>
         {/* Header */}
@@ -67,7 +66,6 @@ export default function AccountRecovery() {
           <FormInput
             type='email'
             name='email'
-// Temp comment
             label='Login Email'
           />
           <div className='flex justify-between items-center vw-640:items-end mb-22'>
