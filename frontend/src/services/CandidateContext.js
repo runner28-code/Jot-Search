@@ -82,7 +82,6 @@ const mockCandidateData = [
   },
   {
     id: '1ea36da6-8819-4617-8c09-5df46f1reg78',
-// Temp comment
     firstName: 'Lawrence',
     lastName: 'MacAlpine',
     linkedin_url: 'https://www.linkedin.com/',

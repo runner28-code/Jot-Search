@@ -34,7 +34,6 @@ export default function Auth() {
           element={<Logout />} />
         <Route
           path={`${ROUTES.candidates}/:id`}
-// Temp comment
           element={<Candidate />} />
         <Route
           path={ROUTES.applications}

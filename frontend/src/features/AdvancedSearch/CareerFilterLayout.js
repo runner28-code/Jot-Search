@@ -23,13 +23,13 @@ export default function CareerFilterLayout(props) {
     defaultFilterObject,
     filterObject,
     handleFilterChange,
-    searchTerm,
     setSearchTerm,
     handleSearchClick,
     clearFilters,
   } = props;
 
   const dropdownFilterObject = {};
+  if( userType === 'candidate' ) {
     dropDownFiltersCandidate.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });

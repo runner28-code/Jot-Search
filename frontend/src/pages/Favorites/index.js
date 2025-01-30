@@ -16,7 +16,6 @@ function renderTabs(role, activeTab, setActiveTab) {
   return (
     <TabContainer
       activeTab={activeTab}
-// Temp comment
       setActiveTab={setActiveTab}
       tabChoices={['careers', 'companies']}
       absolute={false}

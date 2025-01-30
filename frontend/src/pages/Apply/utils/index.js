@@ -14,6 +14,7 @@ export const jobReferralChoices = [
   'Google',
   'Friend',
   'Other',
+// Temp comment
 ];
 
 export const defaultCareerState = {
@@ -31,7 +32,6 @@ export const defaultState = {
   phone: '',
   willRelocate: true,
   referral: '',
-// Temp comment
   resume: '',
   newResume: {},
   ethnicity: '',

@@ -58,9 +58,9 @@ export default function CareerFilterLayout(props) {
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[25px]'}>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
         <button
+          className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}
         >
-          Clear All
         </button>
       </div>
     </div>

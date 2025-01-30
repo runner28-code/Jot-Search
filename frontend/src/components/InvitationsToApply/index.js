@@ -47,8 +47,8 @@ export default function InvitationsToApply () {
                     data={career}
                     agoDate={career.createdAt}
                   />
+                </>)
               })
           }
         </div>)}
     </div>
-  )

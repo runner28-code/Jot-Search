@@ -1,3 +1,4 @@
+// Temp comment
 import { useState } from 'react';
 import PageHeader from '../../components/PageHeader';
 import ResultsHeader from '../../components/ResultsHeader';
@@ -24,7 +25,6 @@ export default function ActiveCareers() {
   function handleSearchChange( searchTerm ) {
     setSearchTerm(searchTerm);
     setPage(1);
-// Temp comment
   }
 
   const filtersArr = buildSearchFilters({ title: searchTerm, companyId, status: ['Active', 'Open'] });

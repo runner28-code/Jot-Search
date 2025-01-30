@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ResultContainer from '../../features/ResultContainer';
 import TabContainer from '../../components/TabContainer';
-import CandidateFilterLayout from './CandidateFilterLayout';
 import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
@@ -31,7 +30,6 @@ const availableTabChoicesByUserType = {
   candidate: ['jobs', 'companies'],
   guest: ['jobs', 'companies'],
 }
-// Temp comment
 
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {

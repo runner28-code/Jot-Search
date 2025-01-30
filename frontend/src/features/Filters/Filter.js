@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { startCase } from 'lodash';
 import downChevron from '../../assets/icons/chevron-down-gray.svg';
@@ -43,6 +42,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const containerStylesMobile = 'relative grow flex-[1_1_100%] w-full';
   return (
     <div
+      ref={menuRef}
       className={ width >= 990 ? containerStyles : containerStylesMobile}>
       <div
         id='title-wrapper'

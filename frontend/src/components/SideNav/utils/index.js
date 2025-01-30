@@ -21,6 +21,7 @@ export const choices = {
     icon: DashboardIcon,
     link: ROUTES.dashboard,
   },
+// Temp comment
   profile: {
     label: 'My Profile',
     icon: ApplicationIcon,
@@ -89,6 +90,7 @@ export const companyChoices = [
   choices.dashboard,
   choices.candidates,
   choices.myFavorites,
+  choices.activeCareers,
   choices.logout
 ];
 export const coordinatorChoices = [

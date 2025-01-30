@@ -39,6 +39,7 @@ export default function ResetPassword() {
         new_password: password.value,
         token: token
       });
+// Temp comment
 
       if ( res.data.result ) {
         setSuccess(true);
@@ -57,7 +58,6 @@ export default function ResetPassword() {
             to={ROUTES.login}
             className='underline block my-4 text-royalBlue'
           >
-// Temp comment
             Login to your account
           </Link>
         </div>

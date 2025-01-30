@@ -37,7 +37,6 @@ export default function ResultContainer(props) {
   function renderFooter() {
     if ( !limit ) {
       return null;
-    }
 
     let pluralizedType = pluralizedTypes[type];
     const capitalizedType = pluralizedType.charAt(0).toUpperCase() + pluralizedType.slice(1);
@@ -52,7 +51,6 @@ export default function ResultContainer(props) {
     <div className='w-full'>
       { renderHeader() }
       <div
-// Temp comment
         className={`${baseStyles} ${resultsContainerStyles}`}>
         { renderResults(results, loading, type, active, compact, isFavoriteOverride, agoText, selectableProps) }
       </div>

@@ -39,7 +39,6 @@ export default function FormInput(props) {
   };
   switch (type) {
     case 'file':
-      return <FileInput
         type={type}
         name={name}
         label={label}
@@ -51,7 +50,6 @@ export default function FormInput(props) {
         disabled={disabled}
       />
     case 'single-select': // fall through
-// Temp comment
     case 'multi-select':
       return <AccessibleDropdown
         type={type}

@@ -37,6 +37,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         onClick={ handleSearchClick }
       >
         <img
+// Temp comment
           src={ searchIcon }
           alt='search'
           className={ width >= 990 ? 'v-8 vw-768:w-10 h-8 vw-768:h-10 mr-3 vw-768:mr-5' : 'h-12' }

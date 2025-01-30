@@ -283,7 +283,6 @@ export default function RegistrationFormInternal(loggedIn) {
             label='Zip / Postal Code'
             required={true}
             value={formObj.zip}
-            onChange={handleChange}
             error={errors.includes('zip')}
           />
         </div>

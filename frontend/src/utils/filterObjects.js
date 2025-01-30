@@ -59,6 +59,7 @@ export const defaultJobFilterState = {
 export const candidateFilterObject = {
   'Category': [
     'Any',
+    ...expertises
   ],
   'Experience': [
     'Any',

@@ -25,6 +25,7 @@ export default function Companies() {
   function togglePassState() {
     setToggle(toggle => !toggle);
   }
+
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
@@ -42,7 +43,6 @@ export default function Companies() {
           loggedIn={loggedIn}
           toggle={toggle}
           userType={userType}
-        />
       </div>
     </section>
   )
