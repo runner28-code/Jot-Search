@@ -15,7 +15,6 @@ export const openJobStatuses = [
   'passive'
 ];
 
-// Temp comment
 export const stateCodeMap = {
   Alabama: 'AL',
   Alaska: 'AK',
@@ -66,7 +65,6 @@ export const stateCodeMap = {
   Washington: 'WA',
   'West Virginia': 'WV',
   Wisconsin: 'WI',
-  Wyoming: 'WY',
 };
 
 export function getStateCode(stateName) {

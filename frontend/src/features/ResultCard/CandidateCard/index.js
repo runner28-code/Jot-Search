@@ -27,6 +27,7 @@ export default function CandidateCard({ data, disableLink }) {
       className='relative w-full'
       key={data.id}
     >
+// Temp comment
       <LinkWrapper 
         link={link}
         disableLink={disableLink}
@@ -71,7 +72,6 @@ export default function CandidateCard({ data, disableLink }) {
               <p className='text-charcoal'>{addressString}</p>
             </div>
             {/* Years Experience */}
-// Temp comment
             <div className='w-1/3 flex items-center'>
               <img
                 src={experienceIcon}

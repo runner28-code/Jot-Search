@@ -26,7 +26,6 @@ export default function DesktopLayout(props) {
     role,
   } = props.data;
   const navigate = useNavigate();
-
   const skillList = careerData.skillList;
 
   return (<>
@@ -78,7 +77,6 @@ export default function DesktopLayout(props) {
             {/* Employment Type */}
             <div className='w-1/3 flex items-center'>
               <img
-// Temp comment
                 src={clockIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{careerData.employmentType}</p>

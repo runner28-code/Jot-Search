@@ -17,7 +17,6 @@ export function validateInput(name, value, errors, password) {
       newErrors[name] = 'Passwords do not match';
     } else {
       newErrors[name] = '';
-// Temp comment
     }
   } 
   // Generic validation

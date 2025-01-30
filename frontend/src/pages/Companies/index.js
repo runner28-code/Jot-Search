@@ -25,7 +25,6 @@ export default function Companies() {
   function togglePassState() {
     setToggle(toggle => !toggle);
   }
-
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader

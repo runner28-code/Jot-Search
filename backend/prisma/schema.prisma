@@ -75,3 +75,4 @@ model Lead {
   dateLastModified      DateTime?
   dateLastVisited       DateTime?
   description           String?
+  division              String?

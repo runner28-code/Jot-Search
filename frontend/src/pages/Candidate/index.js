@@ -74,7 +74,6 @@ export default function Candidate() {
     } else {
       updateResponse = await updateUser(formattedUpdateObject, id);
     }
-// Temp comment
     if (isProfilePage) {
       setCurrentUser({...updateResponse.data})
     }

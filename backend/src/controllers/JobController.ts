@@ -7,6 +7,7 @@ import {
   Post,
   Put,
   Delete,
+  QueryParam,
   JsonController,
   Authorized,
   CurrentUser,
@@ -14,7 +15,6 @@ import {
 } from "routing-controllers";
 import { Dictionary } from "typed-two-way-map";
 import { BigQueryService } from "../services/BigQueryService";
-import { GetroService } from "../services/GetroService";
 import { createJob, getAppliedJobsByUser, updateJob } from "../services/Job";
 import {
   DATASET_BULLHORN,

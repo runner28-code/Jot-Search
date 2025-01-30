@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
@@ -65,7 +64,6 @@ export default function CandidateFilterLayout(props) {
   const toggleSkills = (skill) => {
     const skills = filterObject.skills ?? []
     if (skills.includes(skill)) {
-      handleFilterChange('skills', skills.filter(s => s !== skill))
     } else {
       handleFilterChange('skills', [...skills, skill])
     }

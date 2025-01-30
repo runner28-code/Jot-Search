@@ -11,12 +11,10 @@ export default function FeaturedCompaniesMobile() {
   const filtersArr = [
     {
       key: 'status',
-      value: 'active'
     }
   ];
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
-// Temp comment
 
   return(
     <div className='py-48 px-[5%] flex flex-col items-center'>

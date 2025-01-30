@@ -15,7 +15,6 @@ export default function PasswordReset({role, candidateData}) {
     setResponse(response);
   }
 
-  function renderResponse () {
     const successStyle = 'mb-4 text-success';
     const errorStyle = 'mb-4 text-error';
     if( response ) {
@@ -38,6 +37,7 @@ export default function PasswordReset({role, candidateData}) {
             candidateData={candidateData}
             setType={setType}
           />
+        )}
         {renderResponse()}
       </div>
     </div>

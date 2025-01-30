@@ -39,6 +39,7 @@ export class BullhornService {
     if (!invalid) {
       const cookie: any = await this.getCookie();
       if (cookie !== null) {
+        const { auth_code, access_token, refresh_token, BhRestToken, restUrl } =
           cookie;
         this.auth_code = auth_code;
         this.access_token = access_token;
@@ -94,3 +95,5 @@ export class BullhornService {
         client_id: config.bullhornClientID,
         response_type: "code",
         action: "Login",
+        username: config.bullhornApiUsername,
+        password: config.bullhornApiPassword,

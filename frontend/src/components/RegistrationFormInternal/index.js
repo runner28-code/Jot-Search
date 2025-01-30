@@ -424,7 +424,6 @@ export default function RegistrationFormInternal(loggedIn) {
             name='password'
             label='Password'
             required={true}
-// Temp comment
             value={formObj.password}
             onChange={handleChange}
             error={errors.includes('password')}

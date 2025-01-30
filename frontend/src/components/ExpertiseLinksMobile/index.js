@@ -53,6 +53,7 @@ export default function ExpertiseLinksMobile() {
         >
           <img
             src={marketingIcon}
+            alt='Marketing Icon'
             className={iconStyles}
           />
           <span className={textStyles}>Marketing</span>
@@ -82,7 +83,6 @@ export default function ExpertiseLinksMobile() {
             className={iconStyles}
           />
           <span className={textStyles}>Finance</span>
-        </Link>
       </div>
     </section>
   )

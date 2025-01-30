@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 
+// Temp comment
 export const UpdateJobFeatured = ({ job }) => {
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
 
@@ -18,7 +19,6 @@ export const UpdateJobFeatured = ({ job }) => {
 
   const toggleStyles = toggled ? enabledToggleStyles : disabledToggleStyles
 
-// Temp comment
   return (
     <div className='flex flex-col'>
       {isLoading && <p>Loading...</p>}

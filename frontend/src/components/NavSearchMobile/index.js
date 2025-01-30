@@ -99,7 +99,6 @@ export default function NavSearchMobile({ placeholder }) {
   return (
     <div>
       <div ref={menuRef} >
-// Temp comment
         <NavSearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
@@ -108,7 +107,6 @@ export default function NavSearchMobile({ placeholder }) {
           setIsOpen={ setIsOpen }
           isOpen={ isOpen }
         />
-      </div>
       { renderResultsContainer( combinedResults, searchTerm ) }
     </div>
   )

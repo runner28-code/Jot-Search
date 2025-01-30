@@ -1,4 +1,3 @@
-// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -8,6 +7,7 @@ import { BsBuilding } from 'react-icons/bs';
 const ITEMS_PER_PAGE = 10;
 
 export default function FeaturedCompanies() {
+// Temp comment
 
   const filtersArr = [
     {

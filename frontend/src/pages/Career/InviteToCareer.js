@@ -62,7 +62,6 @@ export default function InviteToCareer({ candidate }) {
       <SelectedValues />
 
       <MultiSelect
-        isLoading={isLoading}
         options={jobOptions}
         value={selected}
         onChange={setSelected}
@@ -80,7 +79,6 @@ export default function InviteToCareer({ candidate }) {
             console.log({res})
             if(res.result){
               setSelected([])
-// Temp comment
             }
           }}
           disabled={selected.length === 0 || isSendingJob}

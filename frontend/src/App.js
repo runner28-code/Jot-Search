@@ -65,7 +65,6 @@ function App() {
               element={<Navigate to={ROUTES.landingPage} />}
             />
           </Routes>
-        </div>
       </main>
       <Footer />
     </div>

@@ -59,7 +59,6 @@ export default function DashboardPublicMin({type}) {
             <CompanyIcon />
             <p className='ml-4'>Companies</p>
           </Link>
-// Temp comment
         </div>
       </div>
     </div>

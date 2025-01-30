@@ -5,6 +5,7 @@ import favoriteIconFilled from '../../../assets/icons/Favorite-filled.svg';
 import AuthService from '../../../services/auth';
 import { saveJob, saveCompany, saveCandidate } from '../../../services/API';
 import useWindowDimensions from '../../../hooks/windowDimensions';
+
 const VALID_TYPES = ['job', 'company', 'candidate'];
 
 export default function FavoriteButton({ type, data, addClass, isFavoriteOverride = null }) {
@@ -17,6 +18,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const isInactiveJob = (type === 'job' && data.status !== 'Active');
   if ( !isFavoriteOverride && (invalidType || isInactiveJob) ) {
     return null;
+// Temp comment
   }
 
   const item_id = getIdByType(type, data);

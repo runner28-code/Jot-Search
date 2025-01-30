@@ -10,8 +10,8 @@ import salaryIcon from '../../../assets/icons/salary.svg';
 import featuredIcon from '../../../assets/icons/pyramid.svg';
 import locationIcon from '../../../assets/icons/placepin.svg';
 import { buildCareerAddress, buildSalaryString, calculatePostingAge } from '../../../utils/formatFunctions';
+import useWindowDimensions from '../../../hooks/windowDimensions';
 import AuthService from '../../../services/auth';
-
 export default function CareerCard({ data, active }) {
   const categoryString = data.category?.name.toUpperCase() || 'CATEGORY N/A';
   const salaryString = buildSalaryString(data.salary, data.salaryUnit)

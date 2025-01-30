@@ -27,6 +27,7 @@ export default API;
 
 export function appendPathToBaseUrl(path) {
   if (path.slice(0, 4) === 'http') {
+// Temp comment
     return path; // It's already a full URL
   }
   return API.defaults.baseURL + path;
