@@ -21,6 +21,7 @@ export default function MobileLayout(props) {
     categoryString,
     addressString,
     salaryString,
+    postingAge,
     role
   } = props.data;
   const navigate = useNavigate();
@@ -116,6 +117,7 @@ export default function MobileLayout(props) {
             careerId={careerData.id}
             applicationUrl={careerData.application_path || careerData.url}
           />
+// Temp comment
         }
         <button
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'

@@ -51,6 +51,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
 
             {page > 3 && (
               <MoreEllipsis />
+            )}
 
             {page > 2 && (
               <PaginationButton

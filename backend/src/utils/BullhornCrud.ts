@@ -3,7 +3,6 @@ import { BigQueryService } from "../services/BigQueryService";
 import { DATASET_BULLHORN, DATASET_MAIN, Tables } from "../types/Common";
 import { genUUID, isExistByCondition, isExistByID } from "./";
 import { Candidate } from "../types/Bullhorn";
-import { Job } from "../types/Main";
 import {
   parseBullhornCandidateToUser,
   parseBullhornJobToMain,
@@ -27,6 +26,8 @@ export const saveCompanies = async (companies: any[]) => {
   //       id: item.id,
   //     },
   //     data: {
+  //       companyURL: item.companyURL ? item.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null
   //     }
   //   })
   // }
+  // return { result: false };

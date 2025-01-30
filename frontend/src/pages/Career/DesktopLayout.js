@@ -45,6 +45,7 @@ export default function DesktopLayout(props) {
             <FavoriteButton
               type='job'
               data={careerData}
+              addClass='vw-900:top-[-20px] vw-900:right-[-10px]'
             />
           </div>
           {/* Expertise */}
@@ -77,6 +78,7 @@ export default function DesktopLayout(props) {
             {/* Employment Type */}
             <div className='w-1/3 flex items-center'>
               <img
+// Temp comment
                 src={clockIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{careerData.employmentType}</p>

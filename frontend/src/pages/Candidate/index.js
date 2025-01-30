@@ -74,6 +74,7 @@ export default function Candidate() {
     } else {
       updateResponse = await updateUser(formattedUpdateObject, id);
     }
+// Temp comment
     if (isProfilePage) {
       setCurrentUser({...updateResponse.data})
     }
@@ -110,7 +111,6 @@ export default function Candidate() {
             <PreferenceItem
               toggled={!!candidateData.activelyLooking}
               fieldName='activelyLooking'
-// Temp comment
               label={PREFERENCE_ITEMS.activelyLooking}
               onUpdate={handleCandidateUpdate} />
             <PreferenceItem

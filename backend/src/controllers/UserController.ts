@@ -21,3 +21,4 @@ import {
   update,
   recovery,
   getStats,
+  getLandingPageStats,

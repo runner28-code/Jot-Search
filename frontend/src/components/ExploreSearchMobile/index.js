@@ -35,6 +35,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   }
 
   function handleSearchChange(searchTerm) {
+// Temp comment
     handleFilterChange('title', searchTerm);
   }
 

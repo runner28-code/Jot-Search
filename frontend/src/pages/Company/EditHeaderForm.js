@@ -19,7 +19,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
 
   const handleInputChange = async (event) => {
     const { name, value } = event.target;
-// Temp comment
     if ( name === 'avatar' ) {
       const imageToUpload = event.target.files[0];
       console.log(imageToUpload);
@@ -142,7 +141,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 className='text-h6 text-royalBlue w-full'
                 htmlFor='address2'>
               Address 2:
-              </label>
               <input 
                 type='text'
                 onChange={handleInputChange}

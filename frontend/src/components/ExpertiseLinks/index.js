@@ -52,6 +52,7 @@ export default function ExpertiseLinks() {
           state={{ Expertise: 'Marketing' }}
         >
           <img
+// Temp comment
             src={marketingIcon}
             alt='Marketing Icon'
             className={iconStyles}
@@ -65,6 +66,7 @@ export default function ExpertiseLinks() {
           state={{ Expertise: 'Operations' }}
         >
           <img
+            src={operationsIcon}
             alt='Operations Icon'
             className={iconStyles}
           />

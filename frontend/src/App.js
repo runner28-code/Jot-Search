@@ -9,6 +9,7 @@ import {
   Careers,
   Company,
   Companies,
+  AccountRecovery,
   ResetPassword,
   Apply
 } from './pages';

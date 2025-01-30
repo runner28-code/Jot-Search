@@ -18,7 +18,6 @@ import db from "../utils/db";
 
 import { JobFilter, USER_FILTER } from "../utils/FieldMatch";
 import { getSavedJobs, saveJob } from "../utils/MainCrud";
-import { clearPassword } from "../utils/password";
 import { COORDINATOR } from "../utils/constant";
 import { sendEmail, sendJobsToCandidates } from "../services/EmailService";
 import { getJobsList } from "../services/Job";
@@ -40,3 +39,4 @@ export class CandidateController {
     try {
       const user = await db.user.findFirst({
         where: {
+          id,

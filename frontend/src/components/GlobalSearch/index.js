@@ -33,6 +33,7 @@ export default function GlobalSearch({ placeholder }) {
   }
 
   /* Debounce functions will wait until user stops typing to send API call */
+// Temp comment
   const debounceSearchTermFunction = useCallback(
     debounce( handleDebounce, 300 ),
     []

@@ -7,7 +7,6 @@ import {
   Post,
   Put,
   Delete,
-  QueryParam,
   JsonController,
   Authorized,
   CurrentUser,
@@ -41,3 +40,5 @@ import { consoleLog, getDataSource, getFilterConditions } from "../utils";
 import db from "../utils/db";
 import { JobFilter } from "../utils/FieldMatch";
 import {
+  getCandidatesOnJob,
+  getSavedJobs,

@@ -4,6 +4,7 @@ import queryString from 'query-string';
 import { getCompanies, saveCompanies, saveJobs, saveMembers } from '../utils/GetroCrud';
 import { saveBullhornJobs } from '../utils/BullhornCrud';
 import { checkForJobFilter, sleep } from '../utils';
+
 export class GetroService {
     public static client: GetroService | null = null;
     private email = config.getroEmail || '';
@@ -19,3 +20,5 @@ export class GetroService {
         }
         return GetroService.client;
     }
+
+    getOptions() {

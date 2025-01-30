@@ -118,7 +118,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   id='firstname'
                   placeholder='First Name'
                   value={formData.firstname}
-// Temp comment
                   onChange={handleInputChange}
                   className={inputStyles}
                   required

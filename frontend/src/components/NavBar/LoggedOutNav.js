@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
-// Temp comment
 import linkedin_grey from '../../assets/images/social_linkedin_grey.svg';
 import GlobalSearch from '../GlobalSearch';
 import NavMenu from '../NavMenu';
@@ -9,6 +8,7 @@ import AuthService from '../../services/auth';
 import NavSearch from '../NavSearch';
 import NavSearchMobile from '../NavSearchMobile';
 import * as ROUTES from '../../routes';
+// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function NavBar() {
