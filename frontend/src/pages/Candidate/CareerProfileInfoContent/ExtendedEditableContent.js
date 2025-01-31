@@ -178,6 +178,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           choices={['Any', 'Remote', 'On Site', 'Hybrid']}
           disabled={disabled}
         />
+// Temp comment
 
         <SkillsInput
           value={formData.skills}
@@ -192,7 +193,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             name='companyName'
             value={formData.companyName}
             onChange={handleChange}
-// Temp comment
             label='Company Name'
             disabled={disabled}
           />

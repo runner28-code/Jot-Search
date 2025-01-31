@@ -4,6 +4,7 @@ import queryString from "query-string";
 import {
   saveCandidates,
   saveClientContacts,
+  saveCompanies,
   saveBullhornJobs,
   saveLeads,
 } from "../utils/BullhornCrud";
@@ -96,3 +97,7 @@ export class BullhornService {
         action: "Login",
         username: config.bullhornApiUsername,
         password: config.bullhornApiPassword,
+      },
+      { encode: false }
+    );
+    const url = `${this.oauth_url}/authorize?${query}`;

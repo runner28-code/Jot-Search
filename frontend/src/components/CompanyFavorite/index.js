@@ -25,7 +25,6 @@ export default function CareerFavorite () {
             <LoadingSpinner />
             :
             savedCompanies.map((company, index) => {
-// Temp comment
               console.log(company);
               return(<>
                 <CompanyCard

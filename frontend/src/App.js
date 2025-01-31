@@ -1,10 +1,10 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-// Temp comment
 import * as ROUTES from './routes';
 import Auth from './Auth';
 import {
   LandingPage,
   SignUp,
+// Temp comment
   Login,
   Career,
   Careers,

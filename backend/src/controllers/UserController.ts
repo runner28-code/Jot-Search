@@ -22,3 +22,4 @@ import {
   recovery,
   getStats,
   getLandingPageStats,
+  findUserByEmail,

@@ -201,6 +201,7 @@ export default function RegistrationFormInternal(loggedIn) {
   const relocateClass = ' transform translate-x-5';
   const twocol = 'flex';
   const spacer = 'w-24';
+  const titleStyles = 'text-xl font-spaceGrotesk font-semibold mb-8';
 
   return (
     <form

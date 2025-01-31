@@ -1,5 +1,4 @@
 -- CreateTable
-CREATE TABLE "Candidate" (
     "id" TEXT NOT NULL,
     "address" TEXT,
     "certifications" TEXT,
@@ -8,3 +7,4 @@ CREATE TABLE "Candidate" (
     "companyURL" TEXT,
     "customInt6" TEXT,
     "dateAdded" TIMESTAMP(3),
+    "dateAvailable" TIMESTAMP(3),

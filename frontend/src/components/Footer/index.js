@@ -12,6 +12,7 @@ import linkedin from '../../assets/icons/social/social_linkedin_grey.svg';
 import twitter from '../../assets/icons/social/social_twitter.svg';
 import facebook from '../../assets/icons/social/social_facebook.svg';
 import instagram from '../../assets/icons/social/social_instagram.svg';
+import youtube from '../../assets/icons/social/social_youtube.svg';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 const socialIconStyle = 'w-18 h-18 ml-8';
@@ -146,7 +147,6 @@ export default function Footer() {
               <img
                 src={intulsaLogo}
                 alt='Intulsa'
-                className='w-auto h-auto'
               />
             </a>
             <a

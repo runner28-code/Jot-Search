@@ -75,7 +75,6 @@ export default function Login() {
             >
               Login
             </button>
-            <Link
               to={ROUTES.accountRecovery}
               className='text-royalBlue text-sm vw-640:text-ml underline'>
               Forgot Password?
@@ -87,6 +86,7 @@ export default function Login() {
           <span>Need Help? Just ask </span>
           <a
             href='mailto:help@intulsa.com'
+            className='text-sm vw-640:text-ml text-royalBlue underline'
           >
             help@intulsa.com
           </a>

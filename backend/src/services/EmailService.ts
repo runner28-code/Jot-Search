@@ -10,3 +10,4 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
   let message = { from, to, subject, html };
   const msg = { ...message, text: 'iDENTIFY'};
 
+  try {

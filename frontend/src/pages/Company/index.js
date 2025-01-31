@@ -13,7 +13,6 @@ import InviteCandidates from './InviteCandidates';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 
 export default function Company() {
@@ -55,7 +54,6 @@ export default function Company() {
   const navigate = useNavigate();
 
   if (loading) { return <LoadingSpinner /> }
-  return (
     <div className={ loggedIn ? 'vw-1280:pr-12 mx-[5%]' : ''}>
       <RenderHeader
         type='company'

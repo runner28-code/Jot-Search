@@ -41,7 +41,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
                 name={contact.id}
                 checked={selectedContacts.includes(contact)}
                 className='w-12 h-12 mr-12'
-              />
               <span className='text-md mr-12 w-100'>{contact.name}</span>
               <span>{contact.email}</span>
             </li>

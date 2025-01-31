@@ -24,7 +24,6 @@ const job_filter_exclude_keys = [
   "assembly technician",
   "asset",
   "athlete",
-  "athletic",
   "athletics",
   "attorney",
   "auto",
@@ -49,3 +48,5 @@ const job_filter_exclude_keys = [
   "budget",
   "builder",
   "building",
+  "buyer",
+  "cafeteria",

@@ -14,9 +14,11 @@ async function main() {
   } catch (err) {
     console.error("Error during seed...❌");
     console.error(err);
+    throw err;
   }
 }
 
 async function seedJobs() {
   await db.job.createMany({
     data: [
+      {

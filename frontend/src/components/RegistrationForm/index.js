@@ -256,6 +256,7 @@ export default function RegistrationForm(loggedIn) {
             error={errors.includes('city')}
           />
           <FormInput
+            type='text'
             name='state'
             label='State (Abbreviated)'
             required={true}

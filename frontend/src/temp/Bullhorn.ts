@@ -32,3 +32,5 @@ export type Company = {
     funding?: string,
     industryList?: string,
     invoiceFormat?: string,
+    name?: string,
+    notes?: string,

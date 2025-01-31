@@ -27,7 +27,6 @@ export default function CompanyCard({ data }) {
         employeeString={employeeString}
       />
     )
-// Temp comment
   }
   return (
     <div

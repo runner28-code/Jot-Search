@@ -76,3 +76,6 @@ model Lead {
   dateLastVisited       DateTime?
   description           String?
   division              String?
+  email                 String?
+  email2                String?
+  email3                String?

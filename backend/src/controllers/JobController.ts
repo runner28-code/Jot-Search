@@ -21,6 +21,7 @@ import {
   DATASET_BULLHORN,
   DATASET_GETRO,
   FilterOption,
+  Job,
   FilterBody,
   JobSearchByFilterResponse,
   JobSearchByID,
@@ -42,3 +43,5 @@ import { JobFilter } from "../utils/FieldMatch";
 import {
   getCandidatesOnJob,
   getSavedJobs,
+  saveApplication,
+  saveJob,

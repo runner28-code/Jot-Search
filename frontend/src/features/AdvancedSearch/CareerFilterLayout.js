@@ -5,7 +5,6 @@ import AuthService from '../../services/auth';
 
 const dropdownFilters = [
   'Expertise',
-// Temp comment
   'On-Site/Remote',
   'Years Experience',
   'Status',

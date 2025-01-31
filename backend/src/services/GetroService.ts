@@ -23,3 +23,4 @@ export class GetroService {
 
     getOptions() {
         return {
+            headers: {

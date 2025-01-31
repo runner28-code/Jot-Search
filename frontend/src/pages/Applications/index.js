@@ -52,7 +52,6 @@ export default function Applications() {
   }
 
   const { width } = useWindowDimensions();
-// Temp comment
   return (
     <section>
       <PageHeader

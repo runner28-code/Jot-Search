@@ -8,6 +8,7 @@ import {
   parseBullhornCandidateToUser,
   parseBullhornJobToMain,
 } from "./parseEntities";
+import db from "./db";
 import { Candidate as DbCandidate } from "prisma/prisma-client";
 
 export const saveCompanies = async (companies: any[]) => {
@@ -31,3 +32,4 @@ export const saveCompanies = async (companies: any[]) => {
   //   })
   // }
   // return { result: false };
+

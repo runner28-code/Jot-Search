@@ -48,6 +48,7 @@ export default function InviteCandidates({ job }) {
       ))}
     </div>)
   }
+// Temp comment
 
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>
@@ -82,6 +83,7 @@ export default function InviteCandidates({ job }) {
             if (res.result) {
               setSelected([])
             }
+          }}
           disabled={selected.length === 0 || isSendingJob}
         >
           <MailIcon className='inline-block mr-2' />

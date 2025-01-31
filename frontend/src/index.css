@@ -19,3 +19,4 @@ body {
   font-size: 1.6rem;
 }
 
+input[type="text"].placeholder-spaceGrotesk::placeholder {

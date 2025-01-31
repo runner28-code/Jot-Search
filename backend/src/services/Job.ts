@@ -12,3 +12,5 @@ export const createJob = async (job: Job) => {
     const jobError = validateJob(job);
     if (jobError) {
       throw new Error(jobError);
+    }
+

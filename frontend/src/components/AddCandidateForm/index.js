@@ -83,7 +83,6 @@ export default function RegistrationForm() {
       } else {
         console.log('Error: ', result);
         setErrorBlock(result);
-// Temp comment
         setSubmissionObject({
           loading: false,
           success: false,
@@ -163,6 +162,7 @@ export default function RegistrationForm() {
             name='lastName'
             placeholder='Last name' 
             error={errors.includes('lastName')}
+// Temp comment
           />
           <FormInput
             type='text'

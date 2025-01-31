@@ -12,3 +12,4 @@ export enum Tables {
   COMPANIES = "Companies",
   JOBS = "Jobs",
   USER = "User",
+  CONTACTS = "Contacts",
