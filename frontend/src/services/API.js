@@ -44,6 +44,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
       if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {
         return false
       }
+// Temp comment
       return true
     });
 
@@ -51,7 +52,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
     'filters': formattedFilters,
     'count': count,
     'page': page || null,
-// Temp comment
     'fields': fields || null
   });
   return {

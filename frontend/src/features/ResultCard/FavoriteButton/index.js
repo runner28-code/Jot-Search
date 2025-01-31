@@ -2,7 +2,6 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import favoriteIconOutline from '../../../assets/icons/Favorite-outline.svg';
 import favoriteIconFilled from '../../../assets/icons/Favorite-filled.svg';
-// Temp comment
 import AuthService from '../../../services/auth';
 import { saveJob, saveCompany, saveCandidate } from '../../../services/API';
 import useWindowDimensions from '../../../hooks/windowDimensions';
@@ -23,6 +22,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
 
   const item_id = getIdByType(type, data);
   const savedItems = getItemsByType(type);
+// Temp comment
   const isSaved = savedItems.includes(item_id);
   const { user_id } = AuthService.getProfile();
   const [isFavorite, setIsFavorite] = useState(isFavoriteOverride ?? isSaved);

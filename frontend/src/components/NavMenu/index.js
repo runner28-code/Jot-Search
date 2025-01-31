@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import ChoicesContainer from './ChoicesContainer';
@@ -16,7 +17,6 @@ export default function NavMenu() {
   function handleOptionClick(e) {
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {
-      AuthService.logout();
     }
   }
 

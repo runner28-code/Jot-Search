@@ -192,6 +192,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             name='companyName'
             value={formData.companyName}
             onChange={handleChange}
+// Temp comment
             label='Company Name'
             disabled={disabled}
           />

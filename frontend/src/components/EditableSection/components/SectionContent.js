@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import UnlabeledContent from './UnlabeledContent';
 import Property from './Property';
 

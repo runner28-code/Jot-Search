@@ -37,6 +37,7 @@ export default function ResultContainer(props) {
   function renderFooter() {
     if ( !limit ) {
       return null;
+    }
 
     let pluralizedType = pluralizedTypes[type];
     const capitalizedType = pluralizedType.charAt(0).toUpperCase() + pluralizedType.slice(1);
@@ -56,4 +57,3 @@ export default function ResultContainer(props) {
       </div>
       { renderFooter() }
     </div>
-  )

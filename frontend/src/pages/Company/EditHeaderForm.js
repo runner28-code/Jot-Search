@@ -114,7 +114,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             value={formData.companyName}
             className={inputStyles + 'text-h6 w-full'} />
         </div>
-// Temp comment
         {/* Address */}
         <div className='mb-10'>
           <div className='flex items-center'>
@@ -172,7 +171,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               State:
               </label>
               <input 
-                type='text'
                 onChange={handleInputChange}
                 id='state'
                 name='state'

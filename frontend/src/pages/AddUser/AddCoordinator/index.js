@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+// Temp comment
 import { renderButtonOrLoading } from '../../../components/RegistrationForm/utils';
 import { registerUser } from '../../../services/API';
 import { validateInput } from '../utils';

@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearchLanding';
 import LoadingSpinner from '../LoadingSpinner';
 import * as ROUTES from '../../routes';
-
 export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
   const [filterState, setFilterState] = useState({
@@ -41,6 +40,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   const containerStyles = ' flex w-11/12 px-8 py-2 flex-col items-center w-380 bg-gradient-to-b from-aquaBlue to-royalBlue rounded-2xl absolute top-[90%]';
 
   if ( loading ) {
+    return (
       <div className={containerStyles}>
         <LoadingSpinner color='#FDFDFD' />
       </div>

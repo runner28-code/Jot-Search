@@ -16,7 +16,6 @@ const ResumePreview = ({ resumeUrl }) => {
     page,
     canvasRef,
   });
-// Temp comment
 
   const buttonStyles = 'w-15 h-15 ';
   const buttonStylesDisabled = 'w-15 h-15 opacity-50';
@@ -31,6 +30,7 @@ const ResumePreview = ({ resumeUrl }) => {
         className='rounded-lg'
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
+// Temp comment
         <nav>
           <ul className="flex justify-between">
             <li className="previous">

@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import { useState, useRef, useEffect } from 'react';
 import checkmarkIcon from '../../assets/images/checkmark.png';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
