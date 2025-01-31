@@ -96,10 +96,10 @@ export default function MobileLayout(props) {
             <div className='flex flex-col space-y-8'>
               <UpdateJobStatus job={careerData} />
               <UpdateJobFeatured job={careerData} />
+            </div>
           )
         }
       </div>
-      <hr className={hrStyles} />
       {/* Job Description */}
       <h4 className={sectionHeaderStyles}>Career Description</h4>
       <p

@@ -147,6 +147,7 @@ export default function Footer() {
               <img
                 src={intulsaLogo}
                 alt='Intulsa'
+                className='w-auto h-auto'
               />
             </a>
             <a

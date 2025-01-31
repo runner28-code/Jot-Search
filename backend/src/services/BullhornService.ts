@@ -33,7 +33,6 @@ export class BullhornService {
       await BullhornService.client.init(false);
     }
     return BullhornService.client;
-  }
 
   async init(invalid = true): Promise<boolean> {
     if (!invalid) {

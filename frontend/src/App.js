@@ -4,7 +4,6 @@ import Auth from './Auth';
 import {
   LandingPage,
   SignUp,
-// Temp comment
   Login,
   Career,
   Careers,
@@ -65,7 +64,6 @@ function App() {
               path="*"
               element={<Navigate to={ROUTES.landingPage} />}
             />
-          </Routes>
         </div>
       </main>
       <Footer />

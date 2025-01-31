@@ -1,1 +1,1 @@
-  id?: string;
+export type Category = {

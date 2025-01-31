@@ -124,6 +124,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             <div
               dangerouslySetInnerHTML={{ __html: formData.description || '<p>No summary provided</p>' }}
               className={`${inputStyles} text-black70% p-6`}
+// Temp comment
             />
         }
       </label>
@@ -178,7 +179,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           choices={['Any', 'Remote', 'On Site', 'Hybrid']}
           disabled={disabled}
         />
-// Temp comment
 
         <SkillsInput
           value={formData.skills}

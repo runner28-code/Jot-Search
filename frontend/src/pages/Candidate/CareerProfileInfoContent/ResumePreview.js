@@ -23,12 +23,12 @@ const ResumePreview = ({ resumeUrl }) => {
   const nextButtonDisabled = page === pdfDocument?.numPages;
 
   return (
-    <div className='border border-grey300 border-2 rounded-lg'>
       {!pdfDocument && <LoadingSpinner />}
       <canvas
         ref={canvasRef}
         className='rounded-lg'
       />
+      {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>
           <ul className="flex justify-between">
             <li className="previous">

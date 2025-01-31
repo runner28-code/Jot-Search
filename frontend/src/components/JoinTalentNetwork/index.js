@@ -18,6 +18,7 @@ export default function JoinTalentNetwork() {
             </h1>
             <p className='text-sm leading-[3rem] text-softWhite mt-8'>
               Build your profile with the type of opportunity you want to attract and next exclusively with our network. Receive email alerts that make you first to know about relevant new opportunities, based on your preferences.
+            </p>
             <Link
               to={ROUTES.signup}
               className='flex items-center justify-center h-28 w-112 bg-buttonLightBlue mt-12 px-18 rounded-lg'
@@ -34,7 +35,6 @@ export default function JoinTalentNetwork() {
     </>)
   }
   return (<>
-    {/* Join Hero and call-to-action */}
     <section className='relative h-300 bg-join-hero bg-cover bg-center'>
       <div className='absolute -bottom-100 flex justify-center w-full px-40'>
         <div className='h-240 w-230 px-24 mr-18 flex flex-col rounded-3xl bg-royalBlue'>

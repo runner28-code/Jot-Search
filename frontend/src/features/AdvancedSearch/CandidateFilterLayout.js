@@ -46,7 +46,6 @@ export default function CandidateFilterLayout(props) {
   const dropdownFilterObject = {};
   const checkboxFilterObject = {};
   if (userRole === 'coordinator') {
-    dropdownFiltersCoord.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
     checkboxFiltersCoord.forEach(filter => {
@@ -82,7 +81,6 @@ export default function CandidateFilterLayout(props) {
           label='Your skills (select at least 3)'
           placeholder='Select all that apply'
           required={true}
-// Temp comment
           value={filterObject.skills}
           onChange={toggleSkills}
           choices={skills}

@@ -49,7 +49,6 @@ export const stateCodeMap = {
   'New Mexico': 'NM',
   'New York': 'NY',
   'North Carolina': 'NC',
-// Temp comment
   'North Dakota': 'ND',
   Ohio: 'OH',
   Oklahoma: 'OK',

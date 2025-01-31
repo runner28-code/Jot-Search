@@ -12,6 +12,7 @@ export default function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email, password } = event.target;
+// Temp comment
     const res = await API.post(ROUTES.APIlogin, {
       email: email.value,
       password: password.value,
@@ -75,6 +76,7 @@ export default function Login() {
             >
               Login
             </button>
+            <Link
               to={ROUTES.accountRecovery}
               className='text-royalBlue text-sm vw-640:text-ml underline'>
               Forgot Password?

@@ -12,6 +12,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
 
   return (
     <div
+      className='relative'
       key={data.id}
     >
       <Link
@@ -28,7 +29,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
 
           {/* Title */}
           <div className='flex'>
-            <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.name}</h6>
           </div>
 
           {/* Posting age */}

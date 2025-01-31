@@ -183,6 +183,7 @@ export default function RegistrationForm(loggedIn) {
     setReferralChoice(false);
   }
 
+// Temp comment
 
   // Alter header and pronoun based on who is registering the new user
   const pronoun = addType === 'candidate' ? 'you' : 'they';

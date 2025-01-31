@@ -23,6 +23,7 @@ export const mockCandidateStats = {
   },
   'Invitations': {
     'Today': {
+      count: 3,
       prevCount: 2
     },
     'Last 7 Days': {

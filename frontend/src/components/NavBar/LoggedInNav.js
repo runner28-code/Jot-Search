@@ -22,5 +22,5 @@ export default function NavBar() {
 
   if ( width < 1280 ) {
     return <NavBarLayout />
+  } else {
     return <DesktopNavBarLayout />
-  }

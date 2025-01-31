@@ -96,5 +96,4 @@ export default function GlobalSearch({ placeholder }) {
       </div>
       { renderResultsContainer( results, searchTerm ) }
     </div>
-// Temp comment
   )

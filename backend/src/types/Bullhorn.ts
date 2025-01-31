@@ -33,3 +33,4 @@ export type Company = {
     invoiceFormat?: string,
     name?: string,
     notes?: string,
+    numEmployees?: string,

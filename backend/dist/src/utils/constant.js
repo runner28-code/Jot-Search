@@ -19,6 +19,7 @@ const job_filter_exclude_keys = [
     "analyzer tech",
     "anestesia",
     "animal",
+// Temp comment
     "animal control",
     "aquatics",
     "art",
@@ -33,7 +34,6 @@ const job_filter_exclude_keys = [
     "automation technician",
     "automotive",
     "bailiff",
-// Temp comment
     "barback",
     "bartender",
     "baseball",
