@@ -6,5 +6,5 @@ export type User = {
   gender?: string;
   email: string;
   password?: string;
-  address1?: string;
+  role: string;
   address2?: string;

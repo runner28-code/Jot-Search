@@ -22,7 +22,6 @@ const checkboxFiltersCoord = [
   'Authorized to work in the US',
 ];
 const checkboxFilters = [
-  'Authorized to work in the US',
   'Open to Relocation',
   'Actively Looking',
 ];

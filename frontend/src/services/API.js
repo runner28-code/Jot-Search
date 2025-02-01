@@ -20,7 +20,6 @@ API.interceptors.request.use(
   },
   function (error) {
     return Promise.reject(error);
-  }
 );
 
 export default API;
@@ -43,7 +42,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
     .filter(filter => {
       if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {
         return false
-// Temp comment
       }
       return true
     });

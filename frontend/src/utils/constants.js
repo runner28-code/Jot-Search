@@ -59,6 +59,7 @@ export const stateCodeMap = {
   'South Dakota': 'SD',
   Tennessee: 'TN',
   Texas: 'TX',
+  Utah: 'UT',
   Vermont: 'VT',
   Virginia: 'VA',
   Washington: 'WA',

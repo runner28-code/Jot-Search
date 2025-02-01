@@ -19,6 +19,7 @@ export default function NavMenu() {
     if ( e.currentTarget.id === 'logout' ) {
       AuthService.logout();
     }
+  }
 
   const borderStyles = menuOpen ? 'border-t-2 border-l-2 border-r-2 rounded-t-2xl' : 'border-2 rounded-2xl'
   const buttonStyles = 'h-18 w-26 px-6 flex items-center justify-center border-lightGrey border-solid ' + borderStyles;
@@ -37,6 +38,7 @@ export default function NavMenu() {
       <Menu
         key={menuOpen}
         menuOpen={menuOpen}
+// Temp comment
         handleOptionClick={handleOptionClick}
         setMenuOpen={setMenuOpen} />
     </div>

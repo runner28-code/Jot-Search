@@ -263,7 +263,6 @@ export default function RegistrationForm() {
             type='password'
             name='password'
             placeholder='Password' 
-            value={formObj.password}
             onChange={handleChange}
             error={errors.includes('password')}
           />

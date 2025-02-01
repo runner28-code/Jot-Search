@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 // import FormInput from '../../components/FormInput';
@@ -107,6 +106,7 @@ export default function ResetPassword() {
             >
               Sign-up here
             </Link>
+// Temp comment
           </div>
           { renderMatch() }
           { renderSuccess() }

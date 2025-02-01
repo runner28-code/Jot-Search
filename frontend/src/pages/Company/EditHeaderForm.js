@@ -11,6 +11,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     avatar: candidateData.avatar,
     companyName: candidateData.companyName,
     address1: candidateData.address1,
+    address2: candidateData.address2,
     city: candidateData.city,
     state: candidateData.state,
     zip: candidateData.zip,
@@ -24,7 +25,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     }
     setFormData({ ...formData, [name]: value });
   }
-
   const handleCancel = () => {
     setEditMode(false);
   }

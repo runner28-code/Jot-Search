@@ -44,7 +44,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         id='title-wrapper'
         onClick={() => setShowDropdown(showDropdown => !showDropdown)}
         className={ wrapperStyles }>
-        <p
           id='title'
           className='Desktop-Body-textBody-paragraph-2 text-charcoal'>{ timeframe }</p>
         <img 

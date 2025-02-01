@@ -56,7 +56,6 @@ export const defaultJobFilterState = {
 };
 
 /* CANDIDATE FILTER UTILS */
-export const candidateFilterObject = {
   'Category': [
     'Any',
     ...expertises
@@ -131,7 +130,6 @@ export function buildSearchFilters(filterObject) {
       if ( key === 'On-Site/Remote' ) {
         filterKey = 'onSite';
       } else if ( key === 'companyId' ) {
-// Temp comment
         filterKey = 'companyId';
       }
       searchFilters.push({

@@ -8,6 +8,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 
 
 // Icons
+// Temp comment
 import PlacePin from '../../assets/icons/placepin.svg';
 import LinkedIn from '../../assets/icons/linkedin-circle.svg';
 import Globe from '../../assets/icons/globe.svg';

@@ -10,7 +10,6 @@ import LoadingSpinner from '../../../components/LoadingSpinner';
 const ResumePreview = ({ resumeUrl }) => {
   const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
-// Temp comment
 
   const { pdfDocument } = usePdf({
     file: resumeUrl,
@@ -41,6 +40,7 @@ const ResumePreview = ({ resumeUrl }) => {
                 <BackIcon className={prevButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>
+// Temp comment
             <li>Page {page} of {pdfDocument.numPages}</li>
             <li className="next">
               <button

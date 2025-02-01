@@ -6,6 +6,7 @@ import { COORDINATOR, ROLES } from "../utils/constant";
 import { genUUID, isExistByCondition, justifyData } from "../utils";
 import config from '../config';
 
+import db from "../utils/db";
 
 import { User as dbUser, History as dbHistory } from "prisma/prisma-client";
 import {
@@ -39,7 +40,6 @@ const validateUser = ({
 }: User) => {
   try {
     if (isNullOrEmpty(firstname) || isNullOrEmpty(lastname))
-      return "firstname and lastname is required";
     if (isNullOrEmpty(email)) return "email is invalid";
     if (ROLES.find((r) => r === role) === null)
       return `role is invalid, it should be one in [${ROLES.join(", ")}]`;

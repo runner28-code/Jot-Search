@@ -43,6 +43,7 @@ export default function AccessibleDropdown(props) {
   const closeMenuOnSelect = type === MULTI_SELECT ? false : true;
   return (
     <div>
+// Temp comment
       { renderLabel(name, label, required) }
       <Wrapper
         className={ `${containerStyles} ${disabled ? 'disabled cursor-not-allowed' : ''}`}

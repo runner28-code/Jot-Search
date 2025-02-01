@@ -29,6 +29,7 @@ export default function MobileHeader(props) {
         <img
           src={ icon }
           alt='header icon'
+          className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
       )}
       { IconComponent && (

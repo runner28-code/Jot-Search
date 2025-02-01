@@ -31,9 +31,11 @@ const mockJobsData = [
     location: 'Remote',
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
+// Temp comment
   },
 ];
 
+function renderChosen(currentChosen, handleRemove) {
   return currentChosen.map(choice =>
     <div 
       key={choice.id}

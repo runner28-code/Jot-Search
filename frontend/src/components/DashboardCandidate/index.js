@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -54,5 +53,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
         >
           {!toggle ? <ChevronDown /> : <ChevronUp />}
         </button>
+      </div>
     </div>
   </>)

@@ -8,6 +8,7 @@ export const UpdateJobFeatured = ({ job }) => {
   const toggled = job.featured
 
 
+// Temp comment
   const enabledButtonStyle = 'bg-green text-white'
   const disabledButtonStyle = 'bg-grey300'
 
@@ -20,7 +21,6 @@ export const UpdateJobFeatured = ({ job }) => {
 
   return (
     <div className='flex flex-col'>
-// Temp comment
       {isLoading && <p>Loading...</p>}
       {isSuccess && <p>Success!</p>}
       
