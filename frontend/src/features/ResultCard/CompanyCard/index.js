@@ -72,7 +72,6 @@ export default function CompanyCard({ data }) {
                 src={linkedinIcon}
                 className='h-8 mr-5' />
               <a
-                href='#'
                 className='text-royalBlue underline'
               >
                 LinkedIn
@@ -97,3 +96,4 @@ export default function CompanyCard({ data }) {
         type={'company'}
         data={data} />
     </div>
+  )

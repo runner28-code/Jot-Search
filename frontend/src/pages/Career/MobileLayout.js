@@ -23,7 +23,6 @@ export default function MobileLayout(props) {
     salaryString,
     postingAge,
     role
-  } = props.data;
   const navigate = useNavigate();
   const skillList = careerData.skillList;
 
@@ -100,6 +99,7 @@ export default function MobileLayout(props) {
           )
         }
       </div>
+      <hr className={hrStyles} />
       {/* Job Description */}
       <h4 className={sectionHeaderStyles}>Career Description</h4>
       <p

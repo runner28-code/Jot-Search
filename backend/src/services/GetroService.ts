@@ -24,3 +24,4 @@ export class GetroService {
     getOptions() {
         return {
             headers: {
+                'X-User-Email': this.email,

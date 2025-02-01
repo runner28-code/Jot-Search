@@ -64,6 +64,7 @@ function App() {
               path="*"
               element={<Navigate to={ROUTES.landingPage} />}
             />
+          </Routes>
         </div>
       </main>
       <Footer />

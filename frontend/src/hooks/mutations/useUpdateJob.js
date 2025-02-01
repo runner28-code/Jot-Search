@@ -1,7 +1,7 @@
 import { useMutation } from '@tanstack/react-query'
+// Temp comment
 import { updateJob } from '../../services/API'
 
-// Temp comment
 export const useUpdateJob = () => {
   const mutation = useMutation(updateJob)
 

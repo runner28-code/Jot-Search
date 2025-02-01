@@ -19,7 +19,6 @@ const job_filter_exclude_keys = [
     "analyzer tech",
     "anestesia",
     "animal",
-// Temp comment
     "animal control",
     "aquatics",
     "art",

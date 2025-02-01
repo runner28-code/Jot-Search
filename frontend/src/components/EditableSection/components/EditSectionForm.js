@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { startCase } from 'lodash';
 import EditSummaryForm from './EditSummaryForm';
 import EditSkillsForm from './EditSkillsForm';
 import EditExpertiseForm from './EditExpertiseForm';
@@ -57,6 +58,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               {labelString}
             </label>
             <input 
+// Temp comment
               className='w-100 text-xl border-lightGrey border-solid border-2 rounded-2xl px-4 py-2'
               key={key}
               name={key}

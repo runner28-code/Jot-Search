@@ -5,7 +5,6 @@ import CareerCard from '../ResultCard/CareerCard';
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 
-const ITEMS_PER_PAGE = 5;
 
 export default function OtherCareers({ companyId, companyName, currentCareerId }) {
   const [page, setPage] = useState(1);
@@ -22,7 +21,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
 
   const { careers, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
   const prefetchFunc = (page) => {
-// Temp comment
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
   }
 

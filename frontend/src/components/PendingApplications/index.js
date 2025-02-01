@@ -29,6 +29,7 @@ export default function PendingApplications () {
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
       loading: false
+    });
   }, []);
 
   const { width } = useWindowDimensions();

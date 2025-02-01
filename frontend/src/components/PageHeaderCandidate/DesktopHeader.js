@@ -5,7 +5,6 @@ import SourceIdentifier from '../SourceIdentifier';
 export default function DesktopHeader(props) {
   const {
     headerText,
-    icon,
     IconComponent,
     classOverride,
     containerClassOverride,

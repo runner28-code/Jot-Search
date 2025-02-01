@@ -83,7 +83,6 @@ export const candidateChoices = [
   choices.companies,
   choices.talentInTulsa,
   choices.logout
-// Temp comment
 ];
 
 export const companyChoices = [

@@ -22,6 +22,7 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         handleCandidateUpdate={handleCandidateUpdate}
         setEditMode={setEditMode}
         iconStyles={iconStyles}
+        editMode={editMode}
         role={role}
       />
     </>

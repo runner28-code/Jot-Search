@@ -20,6 +20,7 @@ export default function MobileHeader(props) {
       { backButton && (
         <button
           className='text-s bg-cyan font-semibold text-white rounded-2xl px-5 py-2 mr-xl font-spaceGrotesk'
+          onClick={() => navigate(-1)}
         >
           {'< Back'}
         </button>
@@ -28,7 +29,6 @@ export default function MobileHeader(props) {
         <img
           src={ icon }
           alt='header icon'
-          className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
       )}
       { IconComponent && (
