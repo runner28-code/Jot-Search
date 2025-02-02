@@ -14,3 +14,4 @@ export const createJob = async (job: Job) => {
       throw new Error(jobError);
     }
 
+    const sanitizedJob = sanitizeJob(job) as any;

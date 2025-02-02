@@ -34,3 +34,5 @@ export type Company = {
     name?: string,
     notes?: string,
     numEmployees?: string,
+    numOffices?: string,
+    ownerShip?: string,

@@ -360,6 +360,7 @@ export default function RegistrationForm(loggedIn) {
             error={errors.includes('linkedin')}
           />
           <FormInput
+            type='single-select'
             name='employmentPreference'
             label='Preferred Employment Type'
             required={true}
@@ -395,6 +396,7 @@ export default function RegistrationForm(loggedIn) {
           <FormInput
             type='password'
             name='password'
+// Temp comment
             label='Password'
             required={true}
             value={formObj.password}

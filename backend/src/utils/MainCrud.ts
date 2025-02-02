@@ -13,3 +13,4 @@ export const saveApplication = async (job: string, candidate: string) => {
     if (!existing) {
       const app = await db.application.create({
         data: {
+          user: {

@@ -5,3 +5,4 @@ exports.JobFilter = {
     bullhorn: {
         jobs_id: "jobs.id",
         title: "title",
+        skill: "skillList",

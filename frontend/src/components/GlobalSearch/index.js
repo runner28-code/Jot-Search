@@ -78,7 +78,6 @@ export default function GlobalSearch({ placeholder }) {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
   
-// Temp comment
   /* STYLES & RENDER */
   const stylesObject = {
     containerStyles: 'flex flex-row-reverse items-center justify-evenly p-3 pl-6 h-18 w-135 vw-480:w-160 bg-white border-solid border-2 border-lightGrey rounded-2xl ',

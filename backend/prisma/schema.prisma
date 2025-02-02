@@ -79,3 +79,9 @@ model Lead {
   email                 String?
   email2                String?
   email3                String?
+  fax                   String?
+  fax2                  String?
+  fax3                  String?
+  firstName             String?
+  isAnonymized          Boolean?
+  isDayLightSavingsTime Boolean?

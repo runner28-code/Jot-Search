@@ -29,14 +29,12 @@ function HeaderContent({ companyData }) {
           </div>
           <div className='basis-4/6'>
             <h4 className={ headerTitle }>
-              {companyData.name}
             </h4>
             <div className='flex items-center'>
               <div className={ headerGroupStyles }>
                 <img
                   src={PlacePin}
                   className={headerIconStyles}
-// Temp comment
                 />
                 <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
               </div>

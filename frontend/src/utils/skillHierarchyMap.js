@@ -11,7 +11,6 @@ export const roles = {
   'Finance': [
     'Accounting & Financial Planning',
     'Accounts & Payroll',
-    'Corporate Finance',
     'Banking',
     'Investment',
   ],
@@ -28,4 +27,9 @@ export const roles = {
     'Business Operations & Strategy',
     'Client Success and Customer Service',
     'Operations Generalist',
+    'Project and Program Management',
     'Administration',
+    'Executive Assistant',
+    'Recruiting',
+    'People Operations',
+    'Human Resources',

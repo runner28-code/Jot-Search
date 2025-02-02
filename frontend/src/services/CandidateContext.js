@@ -7,7 +7,6 @@ import { getCandidateById } from './API';
 const mockCandidateData = [
   {
     id: 'cb4f35ed-db88-410f-beb0-a6a449135f75',
-    firstName: 'Zach',
     lastName: 'Alvstad',
     linkedin_url: 'https://www.linkedin.com/',
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/zach_3_t1naqe.webp', // Missing from Bullhorn Schema
@@ -24,7 +23,6 @@ const mockCandidateData = [
     id: 'b5a00114-1d3d-40f3-afb9-fc542fa22af6',
     firstName: 'Lee',
     lastName: 'Easton',
-// Temp comment
     linkedin_url: 'https://www.linkedin.com/',
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lee_5_swk4qj.webp', // Missing from Bullhorn Schema
     occupation: 'Owner / President',

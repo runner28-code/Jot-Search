@@ -39,6 +39,7 @@ function App() {
             <Route
               path={ROUTES.careers}
               element={<Careers />} />
+            <Route
               path={ROUTES.companies}
               element={<Companies />} />
             <Route

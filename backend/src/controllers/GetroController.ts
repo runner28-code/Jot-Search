@@ -1,2 +1,1 @@
-import { Controller, Param, Body, Get, Post, Put, Delete, QueryParam, Authorized } from 'routing-controllers';
 import { GetroService } from '../services/GetroService';

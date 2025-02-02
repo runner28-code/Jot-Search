@@ -9,7 +9,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
 
   function handleKeydown(e) {
     if (e.keyCode === 13) {
-// Temp comment
       handleSearchClick();
     }
   }
@@ -25,7 +24,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     <div 
       className={ containerStyles }
       onKeyDown={handleKeydown}
-    >
       <input
         type='text'
         className={ inputStyles }

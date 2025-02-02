@@ -10,6 +10,7 @@ import {
   QueryParam,
   JsonController,
   Authorized,
+  CurrentUser,
   Patch,
 } from "routing-controllers";
 import { Dictionary } from "typed-two-way-map";
@@ -44,3 +45,6 @@ import {
   getSavedJobs,
   saveApplication,
   saveJob,
+} from "../utils/MainCrud";
+
+import { BullhornService } from "../services/BullhornService";

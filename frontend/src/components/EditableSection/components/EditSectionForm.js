@@ -13,6 +13,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
     handlePropertyChange(e.target.name, e.target.value);
   }
   const singleProperty = Object.keys(contentObject).length === 1;
+// Temp comment
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
   
   if ( propertyName === 'comments' ) {
@@ -57,7 +58,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
             >
               {labelString}
             </label>
-// Temp comment
             <input 
               className='w-100 text-xl border-lightGrey border-solid border-2 rounded-2xl px-4 py-2'
               key={key}

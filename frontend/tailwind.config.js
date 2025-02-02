@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   content: [
@@ -25,3 +26,5 @@ module.exports = {
           },
           to: {
             transform: 'rotate(0deg)'
+          },
+        },

@@ -159,6 +159,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         name='experience'
         label='Years of Experience'
         required={true}
+// Temp comment
         placeholder='Select'
         value={formData.experience}
         onChange={handleChange}

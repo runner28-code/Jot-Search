@@ -16,6 +16,7 @@ export default function PendingApplications () {
     filteredJobs: [],
     loading: true
   });
+// Temp comment
 
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);

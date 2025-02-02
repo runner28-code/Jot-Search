@@ -34,6 +34,7 @@ export default function Auth() {
           element={<Logout />} />
         <Route
           path={`${ROUTES.candidates}/:id`}
+          element={<Candidate />} />
         <Route
           path={ROUTES.applications}
           element={<Applications />} />
@@ -42,6 +43,7 @@ export default function Auth() {
           element={<Favorites />} />
         <Route
           path={ROUTES.activeCareers}
+// Temp comment
           element={<ActiveCareers />} />
         <Route
           path={ROUTES.candidates}

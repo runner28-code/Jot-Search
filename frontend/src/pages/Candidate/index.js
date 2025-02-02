@@ -19,7 +19,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 const PREFERENCE_ITEMS = {
   activelyLooking: 'I\'m actively looking for a job',
-  openToGetIntro: 'I\'m open to getting introductions from companies',
   willRelocate: 'I\'m willing to relocate to Tulsa OK',
   willReceiveNotification: 'Receive emails about relevant opportunities based on your profile'
 }
@@ -127,7 +126,6 @@ export default function Candidate() {
       }
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}
       <div className='px-4'>
-// Temp comment
         <div className='border rounded-2xl bg-white p-15 relative'>
           <CareerProfileInfo
             role={role}

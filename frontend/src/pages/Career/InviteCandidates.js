@@ -20,6 +20,7 @@ export default function InviteCandidates({ job }) {
 
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
+  const candidateOptions = candidates?.map(candidate => {
     return {
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
       value: candidate.id,
@@ -57,7 +58,6 @@ export default function InviteCandidates({ job }) {
       <h2 className="text-h4">Send Candidates Invitations to apply to career</h2>
 
       {isSendingJob && <div className="text-center">Sending Invitations...</div>}
-      {successfullySentJob && <div className="text-center">Invitations Sent!</div>}
 
       <SelectedValues />
 

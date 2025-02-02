@@ -8,6 +8,7 @@ import {
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {
+// Temp comment
   inputValidation,
   formatFormObj,
   renderButtonOrLoading,
@@ -263,6 +264,7 @@ export default function RegistrationForm() {
             type='password'
             name='password'
             placeholder='Password' 
+            value={formObj.password}
             onChange={handleChange}
             error={errors.includes('password')}
           />

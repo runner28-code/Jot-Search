@@ -75,7 +75,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
             }
 
             {page < totalPages - 1 && (
-              <PaginationButton
                 key={page + 1}
                 page={page + 1}
                 setPage={setPage}
@@ -111,6 +110,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
           {'>'}
         </PaginationButton>}
       </div>
+      {!isLoading && <PaginationCounts 
         startCount={startCount} 
         endCount={endCount} 
         total={total}             

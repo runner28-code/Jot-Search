@@ -298,7 +298,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   className={labelStyles}
                 >
                   <p className={labelTextStyles}>Voluntary Self-ID of Veteran Status</p>
-// Temp comment
                   <Dropdown
                     name='veteran'
                     choices={ veteranStatusChoices }

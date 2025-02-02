@@ -8,7 +8,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 
 
 // Icons
-// Temp comment
 import PlacePin from '../../assets/icons/placepin.svg';
 import LinkedIn from '../../assets/icons/linkedin-circle.svg';
 import Globe from '../../assets/icons/globe.svg';
@@ -46,6 +45,7 @@ function HeaderContent({ companyData }) {
               src={PlacePin}
               className={headerIconStyles}
             />
+// Temp comment
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>

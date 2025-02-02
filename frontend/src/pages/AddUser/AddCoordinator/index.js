@@ -11,7 +11,6 @@ export default function AddCoordinator() {
     errors: {},
   });
 
-  // Submit form data when submissionObject.loading is set to true
   useEffect(async () => {
     if (submissionObject.loading) {
       const formObjectCopy = { ...formObject };
@@ -145,6 +144,7 @@ export default function AddCoordinator() {
           name='password'
           placeholder='Password'
           value={formObject.password}
+          onChange={handleInputChange}
         />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.password}</p>
       </div>

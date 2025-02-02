@@ -21,6 +21,7 @@ import {
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
 
+// Temp comment
 const NUM_ITEMS_PER_TYPE = 5
 
 export default function NavSearch({ placeholder }) {
@@ -71,6 +72,7 @@ export default function NavSearch({ placeholder }) {
   }, [location]);
 
   /* Close dropdown on any outside clicks */
+  const closeDropdown = () => {
     setForceHidden(true);
   };
 

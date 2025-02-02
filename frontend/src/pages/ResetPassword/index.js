@@ -106,7 +106,6 @@ export default function ResetPassword() {
             >
               Sign-up here
             </Link>
-// Temp comment
           </div>
           { renderMatch() }
           { renderSuccess() }

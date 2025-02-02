@@ -23,3 +23,5 @@ import {
   getStats,
   getLandingPageStats,
   findUserByEmail,
+  getCompanyDashboardStats,
+  getCoordinatorDashboardStats,

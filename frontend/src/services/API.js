@@ -20,6 +20,7 @@ API.interceptors.request.use(
   },
   function (error) {
     return Promise.reject(error);
+  }
 );
 
 export default API;
@@ -56,3 +57,12 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
     candidates: normalizeData(data.candidates),
     total: data.total
   }
+}
+
+export async function getCandidateById(id) {
+  const { data } = await API.get(ROUTES.APIcandidates, {
+    params: {
+      id
+    }
+  });
+  return normalizeData(data.candidate);

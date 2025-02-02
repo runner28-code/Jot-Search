@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import FilterSearch from '../../components/FilterSearch';
 
 export default function CompanyFilterLayout(props) {
   const {
@@ -25,5 +26,6 @@ export default function CompanyFilterLayout(props) {
           Clear All
         </button>
       </div>
+// Temp comment
     </div>
   );

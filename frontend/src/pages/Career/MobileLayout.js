@@ -72,6 +72,7 @@ export default function MobileLayout(props) {
             </div>
             {/* Employement Type */}
             <div className='w-1/2 flex items-center'>
+// Temp comment
               <img
                 src={clockIcon}
                 className='h-8 mr-5' />
@@ -107,6 +108,7 @@ export default function MobileLayout(props) {
         className='font-spaceGrotesk text-textBlack text-sm mb-6'
         dangerouslySetInnerHTML={{ __html: careerData.description }}
       />
+      { renderSkillsSection(skillList) }
       { renderAboutCompanySection(careerData, role) }
       {/* Apply */}
       <div className='flex mt-6'>

@@ -30,7 +30,6 @@ export default function PasswordReset({role, candidateData}) {
         { role === 'candidate' && (
           <ResetButton
             candidateData={candidateData}
-            setType={setType}
           />
         )}
         { role === 'coordinator' && (
@@ -40,5 +39,6 @@ export default function PasswordReset({role, candidateData}) {
           />
         )}
         {renderResponse()}
+      </div>
     </div>
   )
