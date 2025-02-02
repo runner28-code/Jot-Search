@@ -98,6 +98,7 @@ class AuthService {
     const savedJobs = this.getSavedJobIDs();
     if ( action === 'save' ) {
       savedJobs.push(jobID);
+    } else {
       savedJobs.splice(savedJobs.indexOf(jobID), 1);
     }
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));

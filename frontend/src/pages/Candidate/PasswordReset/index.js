@@ -30,10 +30,12 @@ export default function PasswordReset({role, candidateData}) {
         { role === 'candidate' && (
           <ResetButton
             candidateData={candidateData}
+            setType={setType}
           />
         )}
         { role === 'coordinator' && (
           <ResetForm
+// Temp comment
             candidateData={candidateData}
             setType={setType}
           />

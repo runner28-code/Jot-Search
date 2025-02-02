@@ -3,7 +3,6 @@ import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import eyeCon from '../../../assets/icons/eye-con.svg'; // Get it? eyeCon instead of icon? It's funny.
-// Temp comment
 import linkedinIcon from '../../../assets/icons/linkedin-circle.svg';
 import locationIcon from '../../../assets/icons/placepin.svg';
 import experienceIcon from '../../../assets/icons/star-banner.svg';
@@ -42,7 +41,6 @@ export default function CandidateCard({ data, disableLink }) {
           </div>
           <NewLeadLabel status={data.status} />
         </div>
-        {/* Main Content */}
         <div className='relative grow'>
           {/* Name and Active Status */}
           <div className='flex gap-s items-center'>

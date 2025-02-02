@@ -396,7 +396,6 @@ export default function RegistrationForm(loggedIn) {
           <FormInput
             type='password'
             name='password'
-// Temp comment
             label='Password'
             required={true}
             value={formObj.password}

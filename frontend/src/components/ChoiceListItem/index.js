@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import ReferralCardContent from '../../features/ResultCard/ReferralContent';
 
 function renderHorizontalRule(isLastItem) {
-// Temp comment
   if (isLastItem) {
+// Temp comment
     return null;
   }
   return <hr className='w-full' />;

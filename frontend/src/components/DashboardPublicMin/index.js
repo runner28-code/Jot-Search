@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import * as ROUTES from '../../routes';
+// Temp comment
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { VscChevronLeft as LeftIcon } from 'react-icons/vsc';
@@ -48,6 +49,7 @@ export default function DashboardPublicMin({type}) {
           <Link
             className={type === 'careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
+          >
             <CareerIcon />
             <p className='ml-4'>Careers</p>
           </Link>

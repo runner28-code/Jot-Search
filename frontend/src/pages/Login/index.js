@@ -87,7 +87,6 @@ export default function Login() {
           <span>Need Help? Just ask </span>
           <a
             href='mailto:help@intulsa.com'
-            className='text-sm vw-640:text-ml text-royalBlue underline'
           >
             help@intulsa.com
           </a>

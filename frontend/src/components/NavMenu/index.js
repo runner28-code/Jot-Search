@@ -5,6 +5,7 @@ import ChoicesContainer from './ChoicesContainer';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 const WIDE_MENU_ROLES = ['candidate', 'company'];
+const WIDE_MENU_WIDTH = 'w-110';
 
 export default function NavMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,6 +33,7 @@ export default function NavMenu() {
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
+// Temp comment
         </div>
       </button>
       <Menu

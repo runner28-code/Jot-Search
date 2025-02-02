@@ -33,6 +33,7 @@ export default function MobileLayout(props) {
       <div className='flex flex-row flex-wrap items-start'>
         <div className='basis-2/6'>
           { renderLogo(careerData.company_logo) }
+// Temp comment
           <FavoriteButton
             type='job'
             data={careerData}
@@ -72,7 +73,6 @@ export default function MobileLayout(props) {
             </div>
             {/* Employement Type */}
             <div className='w-1/2 flex items-center'>
-// Temp comment
               <img
                 src={clockIcon}
                 className='h-8 mr-5' />

@@ -45,7 +45,6 @@ function HeaderContent({ companyData }) {
               src={PlacePin}
               className={headerIconStyles}
             />
-// Temp comment
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
@@ -65,7 +64,6 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
-              src={LinkedIn}
               className={headerIconStyles}
             />
             { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }

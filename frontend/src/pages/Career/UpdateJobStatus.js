@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 import Dropdown from '../../components/UniversalDropdown/index';

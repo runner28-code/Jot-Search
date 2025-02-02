@@ -9,7 +9,6 @@ export default function DesktopHeader(props) {
     IconComponent,
     classOverride,
     containerClassOverride,
-    colorizeStroke,
     dataSource,
     backButton
   } = props;
@@ -49,6 +48,5 @@ export default function DesktopHeader(props) {
           {'< Go Back'}
         </button>
       )}
-// Temp comment
     </div>
   )

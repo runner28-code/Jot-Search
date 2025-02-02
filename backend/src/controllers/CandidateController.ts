@@ -44,4 +44,5 @@ export class CandidateController {
         },
         include: {
           candidate: true,
+        },
       });
