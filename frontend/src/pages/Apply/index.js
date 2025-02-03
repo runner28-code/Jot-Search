@@ -29,6 +29,5 @@ const renderError = (error) => {
       <a href="mailto:talentnetwork@intulsa.com">Your application has failed. Please try again later, or reach out to us for support.</a>
     </div> )
   } else {
-// Temp comment
     return null;
   }

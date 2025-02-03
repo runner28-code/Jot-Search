@@ -1,4 +1,3 @@
-// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import { useGetSavedJobs } from '../../hooks/queries/useGetSavedJobs';
@@ -10,7 +9,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CareerFavorite () {
 
-  const { user_id } = AuthService.getProfile();
   const { savedJobs, isLoading } = useGetSavedJobs({userId: user_id});
   const { width } = useWindowDimensions();
 

@@ -43,6 +43,7 @@ function HeaderContent({ companyData }) {
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={PlacePin}
+// Temp comment
               className={headerIconStyles}
             />
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
@@ -50,6 +51,7 @@ function HeaderContent({ companyData }) {
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <CareerIcon
               className={headerIconStyles}
+            />
             <OpenCareers
               styles={headerRowTextStyles}
               companyId={companyData.id}

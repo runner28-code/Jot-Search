@@ -33,7 +33,6 @@ export default function CareerPage() {
     career.title = urlDecode(career.title);
     career.description = urlDecode(career.description);
 
-    setCareerData({ ...career });
   }, []);
 
   if ( !careerData.id ) { return <LoadingSpinner /> }

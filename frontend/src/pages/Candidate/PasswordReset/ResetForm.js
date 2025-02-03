@@ -36,6 +36,7 @@ export default function ResetForm({ candidateData, setType }) {
 
   function handleChange(name, value) {
     setFormData({
+      ...formData,
       [name]: value,
     });
   }
@@ -43,7 +44,6 @@ export default function ResetForm({ candidateData, setType }) {
   return (
     <div>
       <div className='w-140'>
-        <FormInput
           type='text'
           name='password'
           value={formData.password}

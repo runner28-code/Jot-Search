@@ -60,7 +60,6 @@ export default function CompanyCard({ data }) {
             <OpenCareers companyId={data.id} />
             {/* Number of Employees */}
             <div className='w-1/3 flex items-center'>
-// Temp comment
               <EmployeesIcon className='fill-midGrey h-11 w-12 mr-6' />
               <p className='text-textBlack'>{employeeString}</p>
             </div>
@@ -75,6 +74,7 @@ export default function CompanyCard({ data }) {
               <a
                 href='#'
                 className='text-royalBlue underline'
+// Temp comment
               >
                 LinkedIn
               </a>

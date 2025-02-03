@@ -72,6 +72,7 @@ export default function RegistrationForm() {
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
         // Set success to true if on add-candidate page, navigate user to login if not
+// Temp comment
         if ( location.pathname === '/add-candidate' ) {
           return setSubmissionObject({
             loading: false,
@@ -187,6 +188,7 @@ export default function RegistrationForm() {
             choices={formObj.expertise ? roleChoices[formObj.expertise] : []}
             error={errors.includes('roles')}
           />
+          <FormInput
             type='typeahead'
             dropdownType='tags'
             name='skills'

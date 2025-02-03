@@ -12,7 +12,6 @@ module.exports = {
         'spin-reverse': 'spin-reverse .175s linear forwards'
       },
       keyframes: {
-// Temp comment
         'spin': {
           from: {
             transform: 'rotate(0deg)'
@@ -22,6 +21,7 @@ module.exports = {
           },
         },
         'spin-reverse': {
+// Temp comment
           from: {
             transform: 'rotate(180deg)'
           },

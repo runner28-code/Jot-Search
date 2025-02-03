@@ -9,7 +9,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function Filter({ filterType, choices, chosen, handleFilterChange }) {
-  const { width } = useWindowDimensions();
   const formattedFilterType = filterType === 'On-Site/Remote' ? filterType : startCase(filterType);
   const initialValue = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
   const [showDropdown, setShowDropdown] = useState(false);
@@ -29,6 +28,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
 
   useEffect(() => {
     const value = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
+    setSelected(value);
   }, [chosen]);
 
   // Used to close dropdown when clicking outside of it

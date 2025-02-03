@@ -4,7 +4,6 @@ import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
-  guestChoices,
   findSelectedFromPath
 } from './utils';
 import useWindowDimensions from '../../hooks/windowDimensions';

@@ -7,7 +7,6 @@ import {
   Candidates,
   Dashboard,
   Favorites,
-// Temp comment
   Logout,
   Profile,
 } from './pages';

@@ -16,6 +16,7 @@ const dropdownFilters = [
   'Experience',
   'Remote Availability',
   'Employment Type',
+// Temp comment
 ];
 const checkboxFiltersCoord = [
   'Open to Relocation',

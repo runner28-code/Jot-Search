@@ -194,6 +194,7 @@ export default function Footer() {
             className='underline'
             target='_blank'
             rel='noreferrer'
+          >
               Terms of Service
           </a>
         </div>

@@ -30,7 +30,6 @@ const validateUser = ({
   lastname,
   email,
   password,
-  role,
   city = "",
   state = "",
   resume,

@@ -37,7 +37,6 @@ export default function InviteToCareer({ candidate }) {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (
         <span 
-// Temp comment
           key={item.value} 
           className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">
           <span>{item.label}</span>
@@ -53,7 +52,6 @@ export default function InviteToCareer({ candidate }) {
     return <div>{isLoading ? 'Loading Careers' : 'Select Careers'}</div>
   }
   
-  return (
     <section className="flex flex-col space-y-8 bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4">
       <h2 className="text-h4">Select Career(s) to refer</h2>
 

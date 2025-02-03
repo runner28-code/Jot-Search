@@ -40,7 +40,6 @@ export default function FormInput(props) {
   switch (type) {
     case 'file':
       return <FileInput
-// Temp comment
         type={type}
         name={name}
         label={label}
@@ -94,5 +93,4 @@ export default function FormInput(props) {
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}
-      />
   }

@@ -64,7 +64,6 @@ export default function GlobalSearch({ placeholder }) {
     setResults( resultsObject );
   }
 
-// Temp comment
   /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');

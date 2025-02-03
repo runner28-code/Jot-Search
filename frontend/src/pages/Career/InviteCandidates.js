@@ -73,6 +73,7 @@ export default function InviteCandidates({ job }) {
         hasSelectAll={false}
       />
       <div className='flex space-x-8'>
+// Temp comment
         <button
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
           onClick={async () => {
@@ -88,7 +89,6 @@ export default function InviteCandidates({ job }) {
           <MailIcon className='inline-block mr-2' />
           Send Now
         </button>
-// Temp comment
         <button
           onClick={() => setSelected([])}
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>

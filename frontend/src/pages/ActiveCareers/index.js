@@ -26,7 +26,6 @@ export default function ActiveCareers() {
     setPage(1);
   }
 
-// Temp comment
   const filtersArr = buildSearchFilters({ title: searchTerm, companyId, status: ['Active', 'Open'] });
 
   const { jobs, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
@@ -55,7 +54,6 @@ export default function ActiveCareers() {
         total={total}
         loading={isLoading}
         type={RESULT_CONTAINER_TYPE}
-      />
       <ResultContainer
         results={jobs}
         loading={isLoading}

@@ -50,7 +50,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
           <div 
             key={key}
             className='flex justify-between items-center w-full mb-4'
-          >
             <label 
               className='text-xl font-bold text-royalBlue'
               htmlFor={key}
