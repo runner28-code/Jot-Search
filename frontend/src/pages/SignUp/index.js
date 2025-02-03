@@ -6,7 +6,6 @@ export default function SignUp() {
 
   const { width } = useWindowDimensions();
 
-// Temp comment
   if( width <= 990 ) {
     return (
       <main className='pb-24'>

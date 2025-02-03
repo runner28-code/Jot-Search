@@ -120,6 +120,7 @@ const CandidateProvider = ({children}) => {
     const currentCandidateData = candidates.find(candidate => candidate.id === updatedValues.id);
     const updatedCandidate = { ...currentCandidateData, ...updatedValues };
 
+    const filteredCandidates = candidates.filter(candidate => candidate.id !== updatedValues.id);
     setCandidates([...filteredCandidates, updatedCandidate]);
   }
 

@@ -12,7 +12,6 @@ import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
-  guestChoices,
   findSelectedFromPath
 } from '../SideNav/utils';
 import { useCandidateContext } from '../../services/CandidateContext';

@@ -50,7 +50,6 @@ function HeaderContent({ companyData }) {
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <CareerIcon
               className={headerIconStyles}
-            />
             <OpenCareers
               styles={headerRowTextStyles}
               companyId={companyData.id}
@@ -64,6 +63,7 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
+              src={LinkedIn}
               className={headerIconStyles}
             />
             { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }

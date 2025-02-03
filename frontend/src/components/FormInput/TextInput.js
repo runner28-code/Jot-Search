@@ -12,6 +12,7 @@ export default function TextInput({type, name, placeholder, label, value, requir
 
   return (
     <div className='w-full'>
+// Temp comment
       { renderLabel( label, required, name ) }
       { renderInput( name, type, baseStyles, placeholder, value, onChange, handleChange, disabled ) }
     </div>

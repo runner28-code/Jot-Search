@@ -18,7 +18,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     containerStyles += additionalClasses;
   }
   const placeholderString = placeholder || 'Keywords';
-// Temp comment
   return (
     <div
       className={ containerStyles }
@@ -36,6 +35,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         onClick={ handleSearchClick }
       >
         <img
+// Temp comment
           src={ searchIcon }
           alt='search'
           className='v-8 w-12 h-12 vw-768:h-10 mr-3 vw-768:mr-5'

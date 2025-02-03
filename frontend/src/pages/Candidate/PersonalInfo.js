@@ -128,6 +128,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 htmlFor='lastname'
                 className={labelStyles}
               >
+// Temp comment
                 <p className={labelTextStyles}>Last Name</p>
                 <input
                   type='text'
@@ -202,6 +203,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
               >
                 <p className={labelTextStyles}>Zip/Postal Code</p>
                 <input
+                  type='text'
                   name='zip'
                   id='zip'
                   placeholder='Zip/Postal Code'

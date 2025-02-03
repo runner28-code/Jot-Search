@@ -25,7 +25,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const isSaved = savedItems.includes(item_id);
   const { user_id } = AuthService.getProfile();
   const [isFavorite, setIsFavorite] = useState(isFavoriteOverride ?? isSaved);
-// Temp comment
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
 
@@ -46,6 +45,5 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
     <img
       src={ isFavorite ? favoriteIconFilled : favoriteIconOutline }
       className={addClass ? styles + addClass : styles}
-      onClick={handleFavoriteClick}
     />
   )

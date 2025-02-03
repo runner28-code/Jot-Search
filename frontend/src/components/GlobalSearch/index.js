@@ -64,6 +64,7 @@ export default function GlobalSearch({ placeholder }) {
     setResults( resultsObject );
   }
 
+// Temp comment
   /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');
@@ -74,7 +75,6 @@ export default function GlobalSearch({ placeholder }) {
     setResults({ ...results, forceHidden: true });
   };
 
-// Temp comment
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);

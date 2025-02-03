@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
@@ -11,6 +12,7 @@ module.exports = {
         'spin-reverse': 'spin-reverse .175s linear forwards'
       },
       keyframes: {
+// Temp comment
         'spin': {
           from: {
             transform: 'rotate(0deg)'

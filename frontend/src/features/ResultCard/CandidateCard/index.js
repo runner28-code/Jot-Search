@@ -41,6 +41,8 @@ export default function CandidateCard({ data, disableLink }) {
           </div>
           <NewLeadLabel status={data.status} />
         </div>
+// Temp comment
+        {/* Main Content */}
         <div className='relative grow'>
           {/* Name and Active Status */}
           <div className='flex gap-s items-center'>

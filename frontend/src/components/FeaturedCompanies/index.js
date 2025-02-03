@@ -5,6 +5,7 @@ import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { BsBuilding } from 'react-icons/bs';
 
 const ITEMS_PER_PAGE = 10;
+
 export default function FeaturedCompanies() {
 
   const filtersArr = [

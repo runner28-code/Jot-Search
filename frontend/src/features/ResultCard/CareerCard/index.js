@@ -20,6 +20,7 @@ export default function CareerCard({ data, active }) {
   const addressString = buildCareerAddress(data.city, data.state);
   const role = AuthService.getUserRole();
 
+  const { width } = useWindowDimensions();
 
   const dataObj = {
     data,

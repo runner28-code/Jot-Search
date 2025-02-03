@@ -16,6 +16,7 @@ import {
   defaultJobFilterState,
   defaultCandidateFilterState,
   buildSearchFilters
+} from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
@@ -41,5 +42,6 @@ function useTabState(disabledTabs, userType, pathname) {
       default:
         return useState('jobs');
     }
+// Temp comment
   }
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');

@@ -52,6 +52,7 @@ export default function CareerPage() {
   }
   const loggedIn = AuthService.loggedIn();
 
+  const source = data.careerData.datasource;
 
   const containerStyles = 'ml-10 mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
 

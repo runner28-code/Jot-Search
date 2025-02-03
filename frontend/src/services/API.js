@@ -1,7 +1,6 @@
 import axios from 'axios';
 import AuthService from './auth';
 import fixStringNulls from '../utils/fixStringNulls';
-// Temp comment
 import * as ROUTES from '../routes';
 import { ACTIVE_STATUSES } from '../utils/filterObjects';
 

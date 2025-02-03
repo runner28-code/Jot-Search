@@ -35,7 +35,6 @@ export default function Login() {
       <div className='w-full flex flex-col items-center'>
         {/* Shapes */}
         <div className='relative h-24 w-26 mt-20 vw-900:mt-26 vw-1280:mt-34'>
-          <div className='absolute top-0 right-0 h-9 w-9 bg-orangeHeroOverlay' />
           <div className='absolute bottom-0 left-0 h-14 w-14 bg-magenta' />
         </div>
         {/* Header */}
@@ -87,6 +86,7 @@ export default function Login() {
           <span>Need Help? Just ask </span>
           <a
             href='mailto:help@intulsa.com'
+            className='text-sm vw-640:text-ml text-royalBlue underline'
           >
             help@intulsa.com
           </a>
