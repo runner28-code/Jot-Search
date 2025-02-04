@@ -76,7 +76,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   function handlePhoneInputChange(value) {
     setFormData({ ...formData, phone: value });
   }
-// Temp comment
 
   const disabled = !editMode;
   

@@ -93,6 +93,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           </label>
           <input 
             type='text'
+            onChange={handleInputChange}
             id='occupation' 
             name='occupation' 
             value={formData.occupation}
@@ -228,6 +229,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className={inputStyles + 'ml-10 text-h6'} />
         </div>
         {/* Cancel/Save Buttons */}
+// Temp comment
         <div className='flex justify-evenly mt-8'>
           <MdCancel 
             className='w-24 h-24 cursor-pointer fill-rose-500'

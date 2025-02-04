@@ -4,7 +4,6 @@ import fixStringNulls from '../utils/fixStringNulls';
 import * as ROUTES from '../routes';
 import { ACTIVE_STATUSES } from '../utils/filterObjects';
 
-const API = axios.create({
   baseURL: 'https://intulsadev.com:5000',
   // baseURL: 'http://localhost:3001',
 });
@@ -47,6 +46,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
       return true
     });
 
+  const { data } = await API.post(ROUTES.APIcandidates, {
     'filters': formattedFilters,
     'count': count,
     'page': page || null,

@@ -58,7 +58,6 @@ export default function ExpertiseLinks() {
           />
           <span className={textStyles}>Marketing</span>
         </Link>
-// Temp comment
         {/* Operations */}
         <Link
           to={ROUTES.careers}

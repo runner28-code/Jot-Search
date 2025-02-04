@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { appendPathToBaseUrl } from '../../services/API';
@@ -73,7 +72,6 @@ export default function InviteCandidates({ job }) {
         hasSelectAll={false}
       />
       <div className='flex space-x-8'>
-// Temp comment
         <button
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
           onClick={async () => {

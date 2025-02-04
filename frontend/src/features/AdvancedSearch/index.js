@@ -44,5 +44,4 @@ function useTabState(disabledTabs, userType, pathname) {
         return useState('careers');
     }
   }
-// Temp comment
   return useActiveTabState(userType === 'candidate' ? 'careers' : 'candidates');

@@ -42,7 +42,6 @@ export default function CompanyCard({ data }) {
         <div className='h-48 w-48 p-4 mr-16 flex justify-center items-center border border-solid border-smokeGray'>
           { renderCardImage(data) }
         </div>
-        <div className='grow'>
           {/* Title */}
           <div className='flex'>
             <CompanyIcon className='w-8 h-8 mr-6 fill-royalBlue ' />
@@ -74,7 +73,6 @@ export default function CompanyCard({ data }) {
               <a
                 href='#'
                 className='text-royalBlue underline'
-// Temp comment
               >
                 LinkedIn
               </a>

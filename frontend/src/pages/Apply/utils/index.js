@@ -11,6 +11,7 @@ export const disabilityChoices = Object.values(disabilityMap);
 export const jobReferralChoices = [
   'LinkedIn',
   'Indeed',
+// Temp comment
   'Google',
   'Friend',
   'Other',
@@ -50,7 +51,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
       htmlFor='useExistingResume'
       className='mt-4 mb-5 flex items-center'
     >
-// Temp comment
       <input
         type='checkbox'
         name='useExistingResume'

@@ -161,7 +161,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         required={true}
         placeholder='Select'
         value={formData.experience}
-// Temp comment
         onChange={handleChange}
         choiceObject={experienceMap}
         disabled={disabled}
@@ -212,6 +211,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             onChange={handleChange}
             label='LinkedIn Profile link with https:// prefix'
             disabled={disabled}
+// Temp comment
           />
         </div>
 

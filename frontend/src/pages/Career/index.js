@@ -24,6 +24,7 @@ export default function CareerPage() {
   const isMobile = width < 768;
   const role = AuthService.getUserRole();
   /* STATE */
+// Temp comment
   const { id } = useParams();
   const [careerData, setCareerData] = useState({});
 
@@ -33,6 +34,7 @@ export default function CareerPage() {
     career.title = urlDecode(career.title);
     career.description = urlDecode(career.description);
 
+    setCareerData({ ...career });
   }, []);
 
   if ( !careerData.id ) { return <LoadingSpinner /> }

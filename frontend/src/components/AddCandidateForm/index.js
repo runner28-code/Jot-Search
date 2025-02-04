@@ -48,6 +48,7 @@ export default function RegistrationForm() {
   useEffect(async () => { // Submit data
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
+// Temp comment
       // Validation
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
@@ -72,7 +73,6 @@ export default function RegistrationForm() {
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
         // Set success to true if on add-candidate page, navigate user to login if not
-// Temp comment
         if ( location.pathname === '/add-candidate' ) {
           return setSubmissionObject({
             loading: false,

@@ -54,6 +54,7 @@ export default function ActiveCareers() {
         total={total}
         loading={isLoading}
         type={RESULT_CONTAINER_TYPE}
+      />
       <ResultContainer
         results={jobs}
         loading={isLoading}

@@ -22,6 +22,7 @@ export default function GlobalSearch({ placeholder }) {
     forceHidden: true
   });
   // State and ref to listen for outside clicks
+// Temp comment
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
