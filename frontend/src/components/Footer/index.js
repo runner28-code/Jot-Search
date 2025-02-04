@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
-// Temp comment
 import intulsaLogo from '../../assets/images/intulsa-logo-white-small.svg';
 import intulsaTalentLogo from '../../assets/images/intulsa-talent-white-small.svg';
 import intulsaBusinessLogo from '../../assets/images/inTulsa-business-logo-web-white.svg';
@@ -48,6 +47,7 @@ export default function Footer() {
           <img
             src={instagram}
             className={socialIconStyleMobile}
+// Temp comment
           />
         </a>
         <a href={ROUTES.youtube}>

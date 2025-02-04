@@ -47,6 +47,7 @@ export default function NavSearchMobile({ placeholder }) {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
       return { filtersArr: searchFilters };
     } else {
+      return { filterKey: 'name', filterValue: searchTerm }
     }
   };
 
@@ -68,6 +69,7 @@ export default function NavSearchMobile({ placeholder }) {
   /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');
+// Temp comment
   }, [location]);
 
   /* Close dropdown on any outside clicks */

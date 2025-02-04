@@ -1,3 +1,4 @@
+// Temp comment
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { FaRegUserCircle as CandidateIcon } from 'react-icons/fa';
@@ -12,7 +13,6 @@ export default function CandidateResults({ candidates }) {
 
   return (
     <>
-// Temp comment
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Candidates</h6>
       { candidates.map(candidate => {
         return (

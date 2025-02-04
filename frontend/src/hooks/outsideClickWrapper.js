@@ -1,4 +1,3 @@
-// Temp comment
 export default function listenForOutsideClicks(listening, setListening, menuRef, setIsOpen) {
   if (listening) return;
   if (!menuRef.current) return;

@@ -27,6 +27,7 @@ export default function FormInput(props) {
   } = props;
 
   let componentStyles = inputStyles;
+// Temp comment
   componentStyles += (error ? errorBorder : regularBorder);
   componentStyles += disabled ? 'bg-grey300 cursor-not-allowed ' : 'bg-lightGrey ';
 
@@ -60,7 +61,6 @@ export default function FormInput(props) {
         currentChosen={value}
         required={required}
         onChange={onChange}
-// Temp comment
         choices={choices}
         choiceObject={choiceObject}
         stylesObject={stylesObject}

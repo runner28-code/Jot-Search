@@ -133,7 +133,6 @@ export default function RegistrationForm(loggedIn) {
   }, [submissionObject.success])
 
   async function handleSubmit(event) {
-// Temp comment
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
@@ -342,6 +341,7 @@ export default function RegistrationForm(loggedIn) {
           />
           <div className='bg-lightGrey flex flex-wrap pl-4 py-9 mt-8 mb-16 w-full'>
             {formObj.skills.length > 0 ? formObj.skills.map(skill =>
+// Temp comment
               <ChoiceTag
                 key={skill}
                 label={skill}

@@ -9,6 +9,7 @@ import clockIcon from '../../assets/icons/clock.svg';
 import postingAgeIcon from '../../assets/icons/calendar.svg';
 import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
+// Temp comment
 import { apply as applyRoute } from '../../routes';
 import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';

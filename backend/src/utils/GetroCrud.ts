@@ -10,5 +10,4 @@ export const saveCompanies = async (companies: any[]) => {
 								where: {
 									id: company.id,
 								},
-							});
 							if (existing) {

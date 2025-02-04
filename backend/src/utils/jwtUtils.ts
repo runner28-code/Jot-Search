@@ -1,1 +1,1 @@
-import { User as DbUser } from "prisma/prisma-client";
+import jwt from 'jsonwebtoken';

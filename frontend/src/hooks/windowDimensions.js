@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-// Temp comment
 
 function getWindowDimensions() {
+// Temp comment
   const { innerWidth: width, innerHeight: height } = window;
   return {
     width,

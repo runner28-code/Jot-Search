@@ -64,7 +64,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   const handleSubmit = () => {
     let dataToSubmit = {};
     dataToSubmit = { ...formData };
-    dataToSubmit.skills = formData.skills.join(', ');
     dataToSubmit.roles = formData.roles.join(', ');
     if (formData.expertise) {
       dataToSubmit.categoryId = categories.find(category => category.name === formData.expertise).id;
@@ -211,7 +210,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             onChange={handleChange}
             label='LinkedIn Profile link with https:// prefix'
             disabled={disabled}
-// Temp comment
           />
         </div>
 

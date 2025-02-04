@@ -35,4 +35,3 @@ export default function DetailsHeader({ type, source }) {
       </h1>
     </div>
     <BackButton />
-  </>)

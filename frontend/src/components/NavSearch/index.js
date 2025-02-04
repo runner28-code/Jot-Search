@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
-// Temp comment
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
@@ -100,7 +99,6 @@ export default function NavSearch({ placeholder }) {
     <div className='relative'>
       <div ref={menuRef} >
         <NavSearchBar
-          searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }
           alternateStylesObject={ stylesObject } 

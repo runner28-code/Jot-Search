@@ -26,6 +26,7 @@ const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
+  coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
   guest: ['jobs', 'companies'],

@@ -463,7 +463,6 @@ export default function RegistrationFormInternal(loggedIn) {
           />
           <p>
             <span>I have read and accept the </span>
-// Temp comment
             <a
               href={ROUTES.termsOfService}
               target='_blank'

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import PageHeader from '../../components/PageHeader';
 import {BsClipboardCheck} from 'react-icons/bs';
 import ResultContainer from '../../features/ResultContainer';
+// Temp comment
 import { getAppliedJobs } from '../../services/API';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -42,7 +43,6 @@ export default function Applications() {
 
   function removeSelectedApplications() {
     const currentHiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
-// Temp comment
     const newHiddenApplications = [...currentHiddenApplications, ...selectedApplications];
     localStorage.setItem('hiddenApplications', JSON.stringify(newHiddenApplications));
     setSelectedApplications([]);

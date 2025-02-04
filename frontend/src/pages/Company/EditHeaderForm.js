@@ -34,7 +34,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     setEditMode(false);
   }
   
-  const avatarUrl = appendPathToBaseUrl(formData.avatar);
   const inputStyles = 'border-lightGrey border-solid border-2 rounded-2xl pl-4 ';
   return (
     <>
@@ -229,7 +228,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className={inputStyles + 'ml-10 text-h6'} />
         </div>
         {/* Cancel/Save Buttons */}
-// Temp comment
         <div className='flex justify-evenly mt-8'>
           <MdCancel 
             className='w-24 h-24 cursor-pointer fill-rose-500'

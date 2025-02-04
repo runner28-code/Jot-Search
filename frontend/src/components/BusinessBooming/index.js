@@ -1,4 +1,5 @@
 import * as ROUTES from '../../routes';
+// Temp comment
 
 export default function BusinessBooming() {
   return (
@@ -18,7 +19,6 @@ export default function BusinessBooming() {
         {/* Shapes */}
         <div className='absolute bottom-36 -right-18 h-40 w-40 bg-blueSquare2/95' />
         <div className='absolute bottom-80 -right-72 h-36 w-36 bg-blueSquare/95' />
-// Temp comment
       </div>
     </section>
   )

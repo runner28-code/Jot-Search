@@ -12,6 +12,7 @@ export default function DesktopHeader(props) {
     colorizeStroke,
     dataSource,
     backButton
+// Temp comment
   } = props;
   const navigate = useNavigate();
 
@@ -29,7 +30,6 @@ export default function DesktopHeader(props) {
             src={ icon }
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
-// Temp comment
           />
         )}
         { IconComponent && (

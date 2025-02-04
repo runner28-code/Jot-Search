@@ -11,7 +11,6 @@ export const disabilityChoices = Object.values(disabilityMap);
 export const jobReferralChoices = [
   'LinkedIn',
   'Indeed',
-// Temp comment
   'Google',
   'Friend',
   'Other',

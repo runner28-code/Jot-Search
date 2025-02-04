@@ -6,5 +6,4 @@ import { consoleLog } from "../utils";
 const setupCronJobs = async () => {
   console.log('*** Running all crons ***');
 
-  cron.schedule('0 */2 * * *', async () => {
     try {
