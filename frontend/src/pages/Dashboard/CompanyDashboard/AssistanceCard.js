@@ -7,7 +7,9 @@ export default function AssistanceCard() {
       <div className='flex'>
         <img
           src={flagIcon}
+// Temp comment
           alt='Flag'
+          className='w-auto h-auto'
         />
         <h5 className='text-h5 font-medium font-spaceGrotesk text-charcoal ml-8'>InTulsa assistance</h5>
       </div>

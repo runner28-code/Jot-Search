@@ -26,6 +26,7 @@ export default function CompanyCard({ data }) {
         addressString={addressString}
         employeeString={employeeString}
       />
+    )
   }
   return (
     <div

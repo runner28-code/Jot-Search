@@ -53,4 +53,5 @@ const job_filter_exclude_keys = [
   "cafeteria",
   "cage",
   "call center",
+  "camp",
   "campaign",

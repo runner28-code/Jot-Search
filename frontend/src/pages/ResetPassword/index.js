@@ -42,6 +42,7 @@ export default function ResetPassword() {
 
       if ( res.data.result ) {
         setSuccess(true);
+// Temp comment
       } else {
         setError(res.data.error);
       }

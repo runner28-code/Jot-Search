@@ -1,5 +1,4 @@
 export type Company = {
-    id: string,
     address_address1?: string,
     address_address2?: string,
     address_city?: string,
@@ -35,3 +34,4 @@ export type Company = {
     notes?: string,
     numEmployees?: string,
     numOffices?: string,
+    ownerShip?: string,

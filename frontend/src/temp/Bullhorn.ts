@@ -26,6 +26,7 @@ export type Company = {
     customText1_20?: string,
     customTextBlock1_5?: string,
     dateFounded?: string,
+    dateLastModified?: string,
     externalID?: string,
     feeArrangement?: string,
     funding?: string,

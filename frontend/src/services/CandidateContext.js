@@ -54,8 +54,10 @@ const mockCandidateData = [
     id: '04bd7f2a-2bcf-4d37-9f9b-3dbb8dd91672',
     firstName: 'Curtis',
     lastName: 'Kline',
+    linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/curtis_2_qs35yb.webp', // Missing from Bullhorn Schema
     occupation: 'Tech Consultant',
+// Temp comment
     companyName: 'Aerovision',
     address_city: 'Tulsa',
     address_state: 'OK',

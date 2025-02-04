@@ -269,7 +269,6 @@ export default function RegistrationForm(loggedIn) {
             name='zip'
             label='Zip / Postal Code'
             required={true}
-            value={formObj.zip}
             onChange={handleChange}
             error={errors.includes('zip')}
           />
@@ -341,7 +340,6 @@ export default function RegistrationForm(loggedIn) {
           />
           <div className='bg-lightGrey flex flex-wrap pl-4 py-9 mt-8 mb-16 w-full'>
             {formObj.skills.length > 0 ? formObj.skills.map(skill =>
-// Temp comment
               <ChoiceTag
                 key={skill}
                 label={skill}

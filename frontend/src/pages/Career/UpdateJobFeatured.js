@@ -51,4 +51,5 @@ export const UpdateJobFeatured = ({ job }) => {
           inTulsa Featured
         </label>
       </div>
+    </div>
   )

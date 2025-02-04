@@ -56,6 +56,7 @@ export default function Candidate() {
       }
       if (updateObject[key] !== candidateData[key]) {
         formattedUpdateObject[key] = updateObject[key];
+// Temp comment
       }
     });
 

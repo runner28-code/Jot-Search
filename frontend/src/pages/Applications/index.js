@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import PageHeader from '../../components/PageHeader';
 import {BsClipboardCheck} from 'react-icons/bs';
 import ResultContainer from '../../features/ResultContainer';
-// Temp comment
 import { getAppliedJobs } from '../../services/API';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -68,6 +67,7 @@ export default function Applications() {
           onClick={removeSelectedApplications}
         >
           Remove Selections
+// Temp comment
         </button>
         <ResultContainer
           containerClass={ width >= 990 ? 'grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}
