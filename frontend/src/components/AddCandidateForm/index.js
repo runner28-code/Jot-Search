@@ -201,6 +201,7 @@ export default function RegistrationForm() {
             {formObj.skills.length > 0 ? formObj.skills.map(skill => 
               <ChoiceTag
                 key={skill}
+                label={skill}
                 isActive={true}
                 handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}
               />
@@ -220,7 +221,6 @@ export default function RegistrationForm() {
           <FormInput
             type='single-select'
             name='employmentPreference'
-            placeholder='Preferred Employment Type' 
             value={formObj.employmentPreference}
             onChange={handleChange}
             choices={['Any', 'Full-Time', 'Contract']}

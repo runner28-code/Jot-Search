@@ -3,7 +3,6 @@ import * as ROUTES from '../../../routes';
 import API from '../../../services/API';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 
-// Temp comment
 
 export default function ResetButton({ candidateData, setType }) {
   const { width } = useWindowDimensions();
@@ -22,6 +21,7 @@ export default function ResetButton({ candidateData, setType }) {
   };
   if( width <= 990 ) {
     return (
+// Temp comment
       <button
         className='h-20 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
         onClick={handleSubmit}

@@ -4,3 +4,4 @@ import {
   Post,
   QueryParam,
   JsonController,
+  Authorized,

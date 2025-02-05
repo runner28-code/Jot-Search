@@ -17,7 +17,6 @@ import { BullhornService } from "../services/BullhornService";
 import { sendVerification } from "../services/EmailService";
 import {
   register,
-  login,
   update,
   recovery,
   getStats,
@@ -26,3 +25,4 @@ import {
   getCompanyDashboardStats,
   getCoordinatorDashboardStats,
 } from "../services/User";
+

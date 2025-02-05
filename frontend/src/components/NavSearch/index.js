@@ -19,6 +19,7 @@ import {
   defaultJobFilterState,
   buildSearchFilters,
   defaultCandidateFilterState
+} from '../../utils/filterObjects';
 
 const NUM_ITEMS_PER_TYPE = 5
 

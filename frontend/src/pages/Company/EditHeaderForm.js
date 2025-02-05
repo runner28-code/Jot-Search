@@ -127,6 +127,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 className='text-h6 text-royalBlue w-full'
                 htmlFor='address1'>
               Address 1:
+              </label>
               <input 
                 type='text'
                 onChange={handleInputChange}
@@ -194,6 +195,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           </div>
         </div>
         {/* Phone */}
+// Temp comment
         <div className='flex items-center justify-between mb-4'>
           <label
             className='text-h6 text-royalBlue flex items-center'

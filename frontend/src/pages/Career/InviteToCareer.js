@@ -24,7 +24,6 @@ export default function InviteToCareer({ candidate }) {
       label: job.title,
       value: job.id,
       job
-    }
   }) || [];
   
   const [ selected, setSelected ] = useState([]);
@@ -64,7 +63,6 @@ export default function InviteToCareer({ candidate }) {
       <MultiSelect
         isLoading={isLoading}
         options={jobOptions}
-// Temp comment
         value={selected}
         onChange={setSelected}
         labelledBy="Select"

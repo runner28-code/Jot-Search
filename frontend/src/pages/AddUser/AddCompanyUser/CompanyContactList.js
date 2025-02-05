@@ -21,7 +21,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
     <div className='flex flex-col items-start pt-8'>
       {/* Loading */}
       {isLoadingContacts && <LoadingSpinner />}
-// Temp comment
       {/* No results */}
       {!isLoadingContacts && clientContacts?.length === 0 && (
         <p className='opacity-70 text-sm'>No contacts found for {selectedCompany?.name}</p>
@@ -43,7 +42,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
                 checked={selectedContacts.includes(contact)}
                 className='w-12 h-12 mr-12'
               />
-              <span className='text-md mr-12 w-100'>{contact.name}</span>
               <span>{contact.email}</span>
             </li>
           ))}

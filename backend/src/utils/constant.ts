@@ -12,7 +12,6 @@ const job_filter_exclude_keys = [
   "advocacy",
   "advocate",
   "aircraft",
-  "alumni",
   "americorps",
   "analyzer tech",
   "anestesia",
@@ -58,3 +57,4 @@ const job_filter_exclude_keys = [
   "cancer",
   "canvasser",
   "care",
+  "care coordinator",

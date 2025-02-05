@@ -17,6 +17,7 @@ const hrStyles = 'mb-10 border-midGrey ';
 
 export default function MobileLayout(props) {
   const {
+    careerData,
     categoryString,
     addressString,
     salaryString,

@@ -42,3 +42,4 @@ import { normalizeFilters } from "./JobController";
 
 @JsonController("/api/company")
 export class CompanyController {
+  @Get("/search")

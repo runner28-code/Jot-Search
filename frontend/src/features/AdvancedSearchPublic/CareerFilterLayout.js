@@ -32,6 +32,7 @@ export default function CareerFilterLayout(props) {
   } = props;
 
   const dropdownFilterObject = {};
+  if( userType === 'candidate' ) {
     dropDownFiltersCandidate.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
@@ -63,5 +64,4 @@ export default function CareerFilterLayout(props) {
           Clear All
         </button>
       </div>
-    </div>
   );

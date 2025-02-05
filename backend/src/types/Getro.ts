@@ -10,3 +10,4 @@ export type Company = {
   instagram_url?: string;
   jobs_count?: string;
   linkedin_url?: string;
+  logo_url?: string;

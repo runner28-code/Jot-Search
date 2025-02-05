@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 
 export default function ChoiceTag({ label, isActive, handleClick }) {

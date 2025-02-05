@@ -2,9 +2,9 @@ import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import checkmarkIcon from '../../assets/images/checkmark.png';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
-// Temp comment
 
 const MULTI_SELECT = 'multi-select';
+// Temp comment
 const SINGLE_SELECT = 'single-select';
 const YEARS_OF_EXPERIENCE = 'yearsExperience';
 

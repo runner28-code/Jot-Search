@@ -21,4 +21,3 @@ function isTodayOrYesterday(dateObj) {
     }
   }
 
-  return returnObj;

@@ -7,7 +7,6 @@ import { FiEdit } from 'react-icons/fi';
 import { MdCancel, MdCheckCircle } from 'react-icons/md';
 
 export default function EditableSection({ entityID, header, contentObjectProp, handleContentUpdate, headerStyles }) {
-// Temp comment
   const [contentObject, setContentObject] = useState(contentObjectProp);
   const [editMode, setEditMode] = useState(false);
 
@@ -24,7 +23,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   function handlePropertyChange(property, value) {
     setContentObject({ ...contentObject, [property]: value });
   }
-
   return (
     <section className='relative mb-14'>
       <div>

@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearchLanding';
 import LoadingSpinner from '../LoadingSpinner';
 import * as ROUTES from '../../routes';
-
 export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
   const [filterState, setFilterState] = useState({
@@ -52,7 +51,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
       <h5 className='text-md text-white font-roboto text-center mt-8 mb-8'>
         {`Search from ${totalJobs} Opportunities from ${totalCompanies} Companies near Tulsa, OK`}
       </h5>
-// Temp comment
       <FilterSearch
         searchTerm={ filterState.title }
         setSearchTerm={ handleSearchChange }

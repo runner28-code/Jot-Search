@@ -89,3 +89,5 @@ model Lead {
   lastName              String?
   leadSource            String?
   massMailOptOut        Boolean?
+  middleName            String?
+  mobile                String?

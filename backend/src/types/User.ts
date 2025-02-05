@@ -1,3 +1,4 @@
+export type User = {
   id?: string;
   externalId?: string;
   firstname?: string;
@@ -9,3 +10,4 @@
   address1?: string;
   address2?: string;
   city?: string;
+  state?: string;

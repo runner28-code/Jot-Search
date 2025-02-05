@@ -4,7 +4,6 @@ import AdvancedSearch from '../../../features/AdvancedSearch';
 import CareerFavorite from '../../../components/CareerFavorite';
 import CompanyFavorite from '../../../components/CompanyFavorite';
 import PendingApplications from '../../../components/PendingApplications';
-// Temp comment
 import InvitationsToApply from '../../../components/InvitationsToApply';
 
 export default function CandidateDashboard() {
@@ -12,6 +11,7 @@ export default function CandidateDashboard() {
   return (
     <>
       <div className='flex items-center justify-start mb-12 pt-8 px-4'>
+// Temp comment
         <img
           src={Home}
           alt='Home Icon'
