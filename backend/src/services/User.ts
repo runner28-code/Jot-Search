@@ -72,3 +72,6 @@ export const register = async (data: User) => {
     const existing = await isExistUser("email", user.email);
 
     if (existing) {
+      console.log("user exists");
+      return {
+        result: false,

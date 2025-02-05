@@ -1,4 +1,3 @@
-export type User = {
   id?: string;
   externalId?: string;
   firstname?: string;
@@ -6,6 +5,7 @@ export type User = {
   gender?: string;
   email: string;
   password?: string;
+  role: string;
   address1?: string;
   address2?: string;
   city?: string;

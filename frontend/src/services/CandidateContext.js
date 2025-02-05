@@ -25,7 +25,6 @@ const mockCandidateData = [
     firstName: 'Lee',
     lastName: 'Easton',
     linkedin_url: 'https://www.linkedin.com/',
-    avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lee_5_swk4qj.webp', // Missing from Bullhorn Schema
     occupation: 'Owner / President',
     companyName: 'Aerovision',
     address_city: 'Tulsa',
@@ -57,7 +56,6 @@ const mockCandidateData = [
     linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/curtis_2_qs35yb.webp', // Missing from Bullhorn Schema
     occupation: 'Tech Consultant',
-// Temp comment
     companyName: 'Aerovision',
     address_city: 'Tulsa',
     address_state: 'OK',

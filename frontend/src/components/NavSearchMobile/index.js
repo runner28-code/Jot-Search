@@ -100,6 +100,7 @@ export default function NavSearchMobile({ placeholder }) {
     <div>
       <div ref={menuRef} >
         <NavSearchBar
+// Temp comment
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }

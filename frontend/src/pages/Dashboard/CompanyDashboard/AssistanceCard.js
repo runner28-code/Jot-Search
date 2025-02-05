@@ -7,7 +7,6 @@ export default function AssistanceCard() {
       <div className='flex'>
         <img
           src={flagIcon}
-// Temp comment
           alt='Flag'
           className='w-auto h-auto'
         />

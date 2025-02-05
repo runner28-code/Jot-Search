@@ -7,7 +7,6 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import Dropdown from '../../components/FilterDropdown';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-
 export default function Filter({ filterType, choices, chosen, handleFilterChange }) {
   const { width } = useWindowDimensions();
   const formattedFilterType = filterType === 'On-Site/Remote' ? filterType : startCase(filterType);
@@ -57,6 +56,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
         <p
           id='title'
           className='text-md text-black70%'>{ selected }</p>
+        <img
           src={downChevron}
           alt='open'
           className='w-6 h-4'

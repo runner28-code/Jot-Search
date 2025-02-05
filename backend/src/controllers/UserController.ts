@@ -25,3 +25,4 @@ import {
   findUserByEmail,
   getCompanyDashboardStats,
   getCoordinatorDashboardStats,
+} from "../services/User";

@@ -41,7 +41,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   const containerStyles = ' flex w-11/12 px-8 py-2 flex-col items-center w-380 bg-gradient-to-b from-aquaBlue to-royalBlue rounded-2xl absolute top-[90%]';
 
   if ( loading ) {
-// Temp comment
     return (
       <div className={containerStyles}>
         <LoadingSpinner color='#FDFDFD' />
@@ -53,6 +52,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
       <h5 className='text-md text-white font-roboto text-center mt-8 mb-8'>
         {`Search from ${totalJobs} Opportunities from ${totalCompanies} Companies near Tulsa, OK`}
       </h5>
+// Temp comment
       <FilterSearch
         searchTerm={ filterState.title }
         setSearchTerm={ handleSearchChange }

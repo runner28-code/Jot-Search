@@ -14,3 +14,4 @@ export const saveApplication = async (job: string, candidate: string) => {
       const app = await db.application.create({
         data: {
           user: {
+            connect: {

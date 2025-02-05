@@ -36,7 +36,6 @@ import {
 } from "../types/Common";
 import { ALLOWED_GETRO_FILTERS } from "../types/Getro";
 import { ALLOWED_JOB_KEYS, JobKey } from "../types/Job";
-import { User } from "../types/User";
 import { consoleLog, getDataSource, getFilterConditions } from "../utils";
 import db from "../utils/db";
 import { JobFilter } from "../utils/FieldMatch";
@@ -48,3 +47,6 @@ import {
 } from "../utils/MainCrud";
 
 import { BullhornService } from "../services/BullhornService";
+
+@JsonController("/api/job")
+export class JobController {

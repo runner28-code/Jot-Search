@@ -48,7 +48,6 @@ export const choices = {
   },
   myFavorites: {
     label: 'My Favorites',
-    icon: FavoritesIcon,
     link: ROUTES.favorites,
   },
   addUser: {
@@ -97,6 +96,7 @@ export const coordinatorChoices = [
   choices.candidates,
   choices.careers,
   choices.companies,
+  choices.addUser,
   choices.logout
 ];
 export const guestChoices = [

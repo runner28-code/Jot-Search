@@ -85,3 +85,7 @@ model Lead {
   firstName             String?
   isAnonymized          Boolean?
   isDayLightSavingsTime Boolean?
+  isDeleted             Boolean?
+  lastName              String?
+  leadSource            String?
+  massMailOptOut        Boolean?

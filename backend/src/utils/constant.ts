@@ -55,3 +55,6 @@ const job_filter_exclude_keys = [
   "call center",
   "camp",
   "campaign",
+  "cancer",
+  "canvasser",
+  "care",

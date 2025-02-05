@@ -9,6 +9,7 @@ const job_filter_exclude_keys = [
     "academic",
     "adjudication",
     "admissions",
+// Temp comment
     "admitting",
     "adult",
     "advocacy",
@@ -55,3 +56,6 @@ const job_filter_exclude_keys = [
     "cafeteria",
     "cage",
     "call center",
+    "camp",
+    "campaign",
+    "cancer",

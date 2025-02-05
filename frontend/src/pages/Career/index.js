@@ -57,7 +57,6 @@ export default function CareerPage() {
   const containerStyles = 'ml-10 mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
 
   return (<>
-// Temp comment
     <RenderHeader
       loggedIn={loggedIn}
       role={role}

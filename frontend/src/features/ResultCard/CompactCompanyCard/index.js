@@ -9,7 +9,6 @@ import {  calculatePostingAge } from '../../../utils/formatFunctions';
 
 export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOverride = null, agoText = 'Saved', selectableProps = null }) {
   const postingAge = calculatePostingAge(agoDate);
-
   return (
     <div
       className='relative'

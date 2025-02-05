@@ -15,7 +15,6 @@ export default function AccountRecovery() {
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email.value
     });
-
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {
@@ -49,6 +48,7 @@ export default function AccountRecovery() {
           <h1 className='font-spaceGrotesk text-white text-xl vw-768:text-h5 vw-1280:text-h2'>InTulsa Talent Network</h1>
         </div>
         {/* Login Form */}
+        <form
           className='w-[84%] vw-640:w-250 rounded-3xl border border-midGrey border-solid bg-white mt-22 px-16 vw-1280:px-24'
           onSubmit={(e) => handleSubmit(e)}
         >

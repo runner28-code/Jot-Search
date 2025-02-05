@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import ResultContainer from '../../features/ResultContainer';
 import TabContainer from '../../components/TabContainer';
 import CandidateFilterLayout from './CandidateFilterLayout';
-// Temp comment
 import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
@@ -25,7 +24,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
-
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],

@@ -1,5 +1,5 @@
-// Temp comment
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../routes';
 
 import PropTypes from 'prop-types';

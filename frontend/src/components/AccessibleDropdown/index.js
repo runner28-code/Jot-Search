@@ -10,6 +10,7 @@ export default function AccessibleDropdown(props) {
   const {
     type,
     name,
+    label,
     placeholder,
     required,
     onChange,

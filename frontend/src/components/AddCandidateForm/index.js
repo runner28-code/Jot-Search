@@ -103,7 +103,6 @@ export default function RegistrationForm() {
     }
   }, [submissionObject.success])
 
-// Temp comment
   async function handleSubmit(event) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
@@ -202,7 +201,6 @@ export default function RegistrationForm() {
             {formObj.skills.length > 0 ? formObj.skills.map(skill => 
               <ChoiceTag
                 key={skill}
-                label={skill}
                 isActive={true}
                 handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}
               />

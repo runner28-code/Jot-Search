@@ -5,3 +5,4 @@ CREATE TABLE "UserTalentCollection" (
     "collection_id" INTEGER,
     "status" TEXT,
     "approved_at" TEXT,
+    "approved_by" TEXT,

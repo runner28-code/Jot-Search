@@ -23,7 +23,6 @@ export default function InviteCandidates({ company }) {
       value: candidate.id,
       candidate
     }
-// Temp comment
   }) || [];
   
   const [ selected, setSelected ] = useState([]);
@@ -44,6 +43,7 @@ export default function InviteCandidates({ company }) {
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
       ))}
+// Temp comment
     </div>)
   }
 

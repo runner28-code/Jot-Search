@@ -20,4 +20,4 @@ body {
 }
 
 input[type="text"].placeholder-spaceGrotesk::placeholder {
-  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;

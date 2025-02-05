@@ -35,3 +35,6 @@ export const roles = {
     'People Operations',
     'Human Resources',
     'IT',
+    'Entrepreneurship'
+  ],
+  'Other': [
