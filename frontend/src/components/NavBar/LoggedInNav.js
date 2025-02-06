@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
 import chevronDownBlue from '../../assets/images/down-chevron-blue.svg';
 import NavSearch from '../NavSearch';
+// Temp comment
 import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -15,7 +16,6 @@ import {
   guestChoices,
   findSelectedFromPath
 } from '../SideNav/utils';
-// Temp comment
 import { useCandidateContext } from '../../services/CandidateContext';
 
 export default function NavBar() {

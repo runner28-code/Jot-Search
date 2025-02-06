@@ -24,6 +24,7 @@ export default function InviteToCareer({ candidate }) {
       label: job.title,
       value: job.id,
       job
+    }
   }) || [];
   
   const [ selected, setSelected ] = useState([]);
@@ -66,7 +67,6 @@ export default function InviteToCareer({ candidate }) {
         value={selected}
         onChange={setSelected}
         labelledBy="Select"
-        ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}
       />

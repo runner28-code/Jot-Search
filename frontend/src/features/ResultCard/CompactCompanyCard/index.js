@@ -27,7 +27,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             { renderCardImage(data) }
           </div>
 
-          {/* Title */}
           <div className='flex'>
             <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.name}</h6>
           </div>
@@ -49,7 +48,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           <FavoriteButton
             type={'company'}
             data={data}
-// Temp comment
             isFavoriteOverride={isFavoriteOverride} />
       }
     </div>

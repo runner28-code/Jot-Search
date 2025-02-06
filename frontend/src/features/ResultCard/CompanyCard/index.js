@@ -13,7 +13,6 @@ import useWindowDimensions from '../../../hooks/windowDimensions';
 import { useGetJobs } from '../../../hooks/queries/useGetJobs';
 
 export default function CompanyCard({ data }) {
-// Temp comment
   // Format state if not state code. 'Oklahoma' -> 'OK'
   const addressString = buildCompanyAddress(data);
   const employeeString = data.numEmployees ? `${data.numEmployees} Employees` : 'N/A';
@@ -23,6 +22,7 @@ export default function CompanyCard({ data }) {
   if ( isMobile ) {
     return (
       <MobileCard
+// Temp comment
         data={data}
         addressString={addressString}
         employeeString={employeeString}

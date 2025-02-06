@@ -18,7 +18,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
   const active = ' bg-royalBlue';
-  if( width >= 990 ) {
     return null;
   }
   return (<>

@@ -4,6 +4,7 @@ import { MultiSelect } from 'react-multi-select-component';
 import { appendPathToBaseUrl } from '../../services/API';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 
+// Temp comment
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
@@ -68,6 +69,7 @@ export default function InviteCandidates({ company }) {
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}
+      />
       <div className='flex space-x-8'>
         <button 
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'

@@ -48,6 +48,7 @@ export default function NavSearch({ placeholder }) {
     } else {
       return { filterKey: 'name', filterValue: searchTerm }
     }
+// Temp comment
   };
 
   const [isOpen, setIsOpen] = useState(false);

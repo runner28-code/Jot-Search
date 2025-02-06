@@ -68,6 +68,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             name='name'
             value={formData.name}
             className={inputStyles + 'text-h6 w-full'} />
+// Temp comment
         </div>
         {/* Last Name */}
         <div className='mb-6'>
@@ -195,7 +196,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           </div>
         </div>
         {/* Phone */}
-// Temp comment
         <div className='flex items-center justify-between mb-4'>
           <label
             className='text-h6 text-royalBlue flex items-center'

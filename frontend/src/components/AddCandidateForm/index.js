@@ -79,6 +79,7 @@ export default function RegistrationForm() {
           })
         } else {
           return navigate(ROUTES.login);
+// Temp comment
         }
       } else {
         console.log('Error: ', result);
@@ -221,6 +222,7 @@ export default function RegistrationForm() {
           <FormInput
             type='single-select'
             name='employmentPreference'
+            placeholder='Preferred Employment Type' 
             value={formObj.employmentPreference}
             onChange={handleChange}
             choices={['Any', 'Full-Time', 'Contract']}

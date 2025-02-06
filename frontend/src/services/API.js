@@ -29,7 +29,6 @@ export function appendPathToBaseUrl(path) {
   if (path.slice(0, 4) === 'http') {
     return path; // It's already a full URL
   }
-  return API.defaults.baseURL + path;
 }
 
 /* FETCH FUNCTIONS */
@@ -52,7 +51,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
     'count': count,
     'page': page || null,
     'fields': fields || null
-// Temp comment
   });
   return {
     candidates: normalizeData(data.candidates),

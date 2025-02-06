@@ -17,6 +17,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 
+// Temp comment
 const PREFERENCE_ITEMS = {
   activelyLooking: 'I\'m actively looking for a job',
   openToGetIntro: 'I\'m open to getting introductions from companies',

@@ -18,7 +18,6 @@ export default function SideNav({ userType }) {
   }
 
   if( userType === 'guest' ) {
-// Temp comment
     return null;
   }
   const { width } = useWindowDimensions();
