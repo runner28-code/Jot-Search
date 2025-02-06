@@ -5,7 +5,6 @@ class AuthService {
   getProfile() {
     if ( !this.loggedIn() ) {
       return null;
-// Temp comment
     }
     return decode(this.getToken());
   }
@@ -122,7 +121,6 @@ class AuthService {
   getSavedCompanyIDs() {
     return JSON.parse(localStorage.getItem('savedCompanies')) || [];
   }
-
   toggleSavedCandidate(candidateID, action) {
     const savedCandidates = this.getSavedCandidateIDs();
     if ( action === 'save' ) {

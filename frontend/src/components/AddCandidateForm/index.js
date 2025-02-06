@@ -79,7 +79,6 @@ export default function RegistrationForm() {
           })
         } else {
           return navigate(ROUTES.login);
-// Temp comment
         }
       } else {
         console.log('Error: ', result);
@@ -231,7 +230,6 @@ export default function RegistrationForm() {
           <FormInput
             type='single-select'
             name='workspace'
-            placeholder='Work Setting Preference (Remote, Office)' 
             value={formObj.workspace}
             onChange={handleChange}
             choices={['Any', 'Remote', 'On Site', 'Hybrid']}

@@ -7,7 +7,6 @@ export type Company = {
     address_zip?: string,
     annualRevenue?: string,
     billingAddress_address1?: string,
-    billingAddress_address2?: string,
     billingAddress_city?: string,
     billingAddress_state?: string,
     billingAddress_zip?: string,
@@ -38,3 +37,4 @@ export type Company = {
     ownerShip?: string,
     phone?: string,
     revenue?: string,
+    status?: string,

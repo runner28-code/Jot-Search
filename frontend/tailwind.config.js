@@ -21,6 +21,7 @@ module.exports = {
           },
         },
         'spin-reverse': {
+// Temp comment
           from: {
             transform: 'rotate(180deg)'
           },

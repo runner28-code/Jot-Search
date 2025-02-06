@@ -15,4 +15,3 @@ export const createJob = async (job: Job) => {
     }
 
     const sanitizedJob = sanitizeJob(job) as any;
-

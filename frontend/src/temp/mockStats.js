@@ -19,7 +19,6 @@ export const mockCandidateStats = {
     'Last 90 Days': {
       count: 6,
       prevCount: 7
-    }
   },
   'Invitations': {
     'Today': {

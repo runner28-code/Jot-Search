@@ -20,7 +20,6 @@ export default function Company() {
   const { id } = useParams();
   const [companyData, setCompanyData] = useState({});
   const [loading, setLoading] = useState(true);
-
   useEffect(async () => {
     const companyFromApi = await getCompanyById(id);
     setCompanyData(companyFromApi.company);
@@ -93,7 +92,6 @@ export default function Company() {
         </div>
         <div className='mt-12'>
           <OtherCareers
-// Temp comment
             companyId={companyData.id}
             companyName={companyData.name}
           />

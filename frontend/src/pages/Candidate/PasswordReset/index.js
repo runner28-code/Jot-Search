@@ -38,7 +38,7 @@ export default function PasswordReset({role, candidateData}) {
             candidateData={candidateData}
             setType={setType}
           />
-        )}
         {renderResponse()}
       </div>
+    </div>
   )

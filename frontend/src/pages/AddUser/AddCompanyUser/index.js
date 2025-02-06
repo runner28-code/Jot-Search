@@ -57,6 +57,7 @@ export default function AddCompanyUser() {
           <input
             type='text'
             id='companylookup'
+// Temp comment
             placeholder='Company lookup'
             value={search}
             onChange={(e) => setSearch(e.target.value)}

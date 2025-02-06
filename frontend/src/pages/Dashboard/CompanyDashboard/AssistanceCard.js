@@ -1,5 +1,4 @@
 import flagIcon from '../../../assets/icons/flag.svg';
-// Temp comment
 
 export default function AssistanceCard() {
   return (
@@ -23,6 +22,7 @@ export default function AssistanceCard() {
           <hr className='max-w-300 mt-6' />
         </ul>
       </div>
+// Temp comment
       {/* Button */}
       <a
         href='mailto:talentnetwork@intulsa.com?subject=Talent Network Assistance'

@@ -45,7 +45,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
   function handleChange(e) {
     setUseExistingResume(e.target.checked);
   }
-// Temp comment
   return (
     <label
       htmlFor='useExistingResume'

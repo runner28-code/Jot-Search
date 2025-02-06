@@ -100,6 +100,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     <div className='mb-9 border rounded-2xl bg-white p-12'>
       <form onSubmit={onSubmit}>
         <div className='flex justify-between items-center'>
+          <h3 className='text-h5 font-medium mb-15 text-black70% font-spaceGrotesk'>Personal Info</h3>
           { !editMode && renderEditIcon(candidateData, setEditMode)}
         </div>
         

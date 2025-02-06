@@ -78,7 +78,6 @@ export default function MobileLayout(props) {
               <p className='text-textBlack text-xs'>{careerData.employmentType}</p>
             </div>
           </div>
-// Temp comment
           {/* Third row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
             {/* Salary */}

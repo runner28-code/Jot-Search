@@ -25,6 +25,7 @@ export default function CareerFavorite () {
           isLoading ?
             <LoadingSpinner />
             :
+            savedJobs.map((career, index) => {
               return(<>
                 <CareerCard
                   key={career.id}
@@ -39,7 +40,6 @@ export default function CareerFavorite () {
           <CareerIcon className='w-32 h-32 fill-royalBlue' />
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Find Careers to Favorite</h3>
           <Link
-            to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
           </Link>

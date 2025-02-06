@@ -67,6 +67,7 @@ export default function InviteCandidates({ job }) {
         options={candidateOptions}
         value={selected}
         onChange={setSelected}
+        labelledBy="Select"
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}

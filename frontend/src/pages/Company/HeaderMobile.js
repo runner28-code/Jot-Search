@@ -9,6 +9,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
+// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding } from 'react-icons/bs';
 

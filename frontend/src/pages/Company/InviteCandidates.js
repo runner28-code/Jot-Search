@@ -4,7 +4,6 @@ import { MultiSelect } from 'react-multi-select-component';
 import { appendPathToBaseUrl } from '../../services/API';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 
-// Temp comment
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
@@ -87,6 +86,7 @@ export default function InviteCandidates({ company }) {
           Send Now
         </button>
         <button 
+// Temp comment
           onClick={() => setSelected([])} 
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>
       </div>

@@ -71,7 +71,6 @@ export default function CandidateCard({ data, disableLink }) {
               <p className='text-charcoal'>{addressString}</p>
             </div>
             {/* Years Experience */}
-            <div className='w-1/3 flex items-center'>
               <img
                 src={experienceIcon}
                 className='h-8 mr-5' />
@@ -81,7 +80,6 @@ export default function CandidateCard({ data, disableLink }) {
           {/* Relocation */}
           <InfoLabel
             label='Relocation'
-// Temp comment
             value={data.willRelocate}
           />
           {/* Skill List */}
