@@ -23,12 +23,12 @@ export default function FeaturedCompaniesMobile() {
       <h2 className='text-h5 text-center font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
       <div className='flex flex-wrap mt-8 justify-center'>
         {
-// Temp comment
           isLoading ?
             <LoadingSpinner />
             :
             companies.map((company, index) =>
               <Link
+// Temp comment
                 to={`${ROUTES.companies}/${company.id}`}
                 className='my-8 outline outline-2 outline-neutral-100 p-8 w-32 mx-2'
                 key={index}>

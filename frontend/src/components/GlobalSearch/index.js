@@ -21,7 +21,6 @@ export default function GlobalSearch({ placeholder }) {
     loading: false,
     forceHidden: true
   });
-// Temp comment
   // State and ref to listen for outside clicks
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
@@ -94,7 +93,6 @@ export default function GlobalSearch({ placeholder }) {
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder } 
           alternateStylesObject={ stylesObject } />
-      </div>
       { renderResultsContainer( results, searchTerm ) }
     </div>
   )

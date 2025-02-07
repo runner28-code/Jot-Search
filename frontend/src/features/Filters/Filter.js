@@ -31,7 +31,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
     const value = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
     setSelected(value);
   }, [chosen]);
-
   // Used to close dropdown when clicking outside of it
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setShowDropdown);

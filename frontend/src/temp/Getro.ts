@@ -7,4 +7,4 @@ export type Company = {
     domain?: string;
     facebook_url?: string;
     founded?: string;
-    instagram_url?: string;
+    jobs_count?: string;

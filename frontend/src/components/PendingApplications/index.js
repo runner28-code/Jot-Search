@@ -13,7 +13,6 @@ export default function PendingApplications () {
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
-// Temp comment
     filteredJobs: [],
     loading: true
   });
@@ -78,6 +77,5 @@ export default function PendingApplications () {
           class='outline outline-2 outline-white text-white font-roboto py-8 px-14 rounded-lg text-md'>
             View All
         </Link>
-      </div>
     </div>
   )

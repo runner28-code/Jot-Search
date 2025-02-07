@@ -33,6 +33,5 @@ export default function DetailsHeader({ type, source }) {
         {headerText}
         { renderSourceIdentifier(source) }
       </h1>
-    </div>
     <BackButton />
   </>)

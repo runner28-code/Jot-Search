@@ -3,7 +3,6 @@ import {
   Get,
   Post,
   Put,
-  QueryParam,
   JsonController,
   Authorized,
   CurrentUser,
@@ -16,6 +15,7 @@ import {
   DATASET_GETRO,
   FilterOption,
   Job,
+  FilterBody,
   DataSource,
   Tables,
   Company,
@@ -44,3 +44,4 @@ export class CompanyController {
   @Get("/search")
   async searchJobByID(
     @QueryParam("id") id: string
+  ): Promise<CompanySearchByID> {

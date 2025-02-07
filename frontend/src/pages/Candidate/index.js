@@ -45,7 +45,6 @@ export default function Candidate() {
     setCandidateData(formattedCandidate);
     setLoading(false);
   }, []);
-// Temp comment
 
   async function handleCandidateUpdate(updateObject) {
     console.log('candidateData', candidateData);
@@ -139,7 +138,6 @@ export default function Candidate() {
         }
         {/* Personal Info (Candidate and Coordinator) */}
         <PersonalInfo
-          role={role}
           candidateData={candidateData}
           handleCandidateUpdate={handleCandidateUpdate} />
         {/* Password Reset (Candidate and Coordinator) */}

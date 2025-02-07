@@ -35,6 +35,7 @@ const job_filter_exclude_keys = [
     "bailiff",
     "barback",
     "bartender",
+// Temp comment
     "baseball",
     "beauty",
     "behavior",
@@ -42,7 +43,6 @@ const job_filter_exclude_keys = [
     "bilingual",
     "billing",
     "bim",
-// Temp comment
     "bingo",
     "biologist",
     "biomed",
@@ -62,3 +62,5 @@ const job_filter_exclude_keys = [
     "canvasser",
     "care",
     "care coordinator",
+    "career coach",
+    "career navigator",

@@ -8,7 +8,6 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
 
   const user = {
     externalId: data.id,
-    firstname: data.firstName,
     lastname: data.lastName,
     gender: data.gender,
     email: data.email,

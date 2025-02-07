@@ -30,6 +30,7 @@ export default function InviteToCareer({ candidate }) {
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();
+// Temp comment
     setSelected(selected.filter(item => item.value !== value))
   }
 
@@ -81,6 +82,7 @@ export default function InviteToCareer({ candidate }) {
             if(res.result){
               setSelected([])
             }
+          }}
           disabled={selected.length === 0 || isSendingJob}
         >
           <MailIcon className='inline-block mr-2' />

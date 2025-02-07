@@ -36,6 +36,7 @@ export default function CareerPage() {
     setCareerData({ ...career });
   }, []);
 
+  if ( !careerData.id ) { return <LoadingSpinner /> }
 
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';
   const addressString = buildCareerAddress(careerData.city, careerData.state);

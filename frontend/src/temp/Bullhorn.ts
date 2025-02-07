@@ -41,3 +41,4 @@ export type Company = {
     revenue?: string,
     status?: string,
     taxRate?: string,
+    tickerSymbol?: string,

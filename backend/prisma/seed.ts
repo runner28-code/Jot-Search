@@ -10,8 +10,8 @@ async function main() {
     await seedCategories();
     await seedJobs();
     await seedUsers();
+    console.log("Done🎉");
   } catch (err) {
-    console.error("Error during seed...❌");
     console.error(err);
     throw err;
   }
@@ -26,3 +26,4 @@ async function seedJobs() {
 
         address1: "123 Job St",
         city: "Tulsa",
+        state: "OK",

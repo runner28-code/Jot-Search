@@ -13,10 +13,12 @@ function renderTabs(role, activeTab, setActiveTab) {
   if (role !== 'candidate') {
     return null;
   }
+  return (
     <TabContainer
       activeTab={activeTab}
       setActiveTab={setActiveTab}
       tabChoices={['careers', 'companies']}
       absolute={false}
+// Temp comment
     />
   )

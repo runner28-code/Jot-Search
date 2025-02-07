@@ -62,3 +62,4 @@ const job_filter_exclude_keys = [
   "career coach",
   "career navigator",
   "carpenter",
+  "case management",

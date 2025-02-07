@@ -38,6 +38,7 @@ class AuthService {
   getToken() {
     return localStorage.getItem('id_token');
   }
+// Temp comment
 
   async login(idToken) {
     localStorage.setItem('id_token', idToken);
@@ -45,6 +46,7 @@ class AuthService {
     if ( role === 'candidate' ) {
       await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
+      await this.refreshSavedCandidates();
     }
     window.location.assign('/');
   }

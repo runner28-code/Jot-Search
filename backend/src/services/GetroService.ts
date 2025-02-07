@@ -32,3 +32,5 @@ export class GetroService {
         };
     };
 
+    async checkAuth(): Promise<boolean> {
+        if (this.networkId) return true;

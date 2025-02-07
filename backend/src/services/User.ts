@@ -40,6 +40,7 @@ const validateUser = ({
 }: User) => {
   try {
     if (isNullOrEmpty(firstname) || isNullOrEmpty(lastname))
+      return "firstname and lastname is required";
     if (isNullOrEmpty(email)) return "email is invalid";
     if (ROLES.find((r) => r === role) === null)
       return `role is invalid, it should be one in [${ROLES.join(", ")}]`;
@@ -68,7 +69,6 @@ export const register = async (data: User) => {
     }
 
     const user = justifyData(data, USERKEYS);
-    const existing = await isExistUser("email", user.email);
 
     if (existing) {
       console.log("user exists");
@@ -79,3 +79,5 @@ export const register = async (data: User) => {
     }
 
     const savingData = {
+      data: {
+        ...data,

@@ -40,3 +40,4 @@ export const saveCompanies = async (companies: any[]) => {
     "notes",
     "dateAdded",
     "dateLastModified",
+  ];
