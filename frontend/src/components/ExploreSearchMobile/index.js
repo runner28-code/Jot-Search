@@ -44,12 +44,12 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     return (
       <div className={containerStyles}>
         <LoadingSpinner color='#FDFDFD' />
-      </div>
     );
   }
   return (
     <div className={containerStyles}>
       <h5 className='text-md text-white font-roboto text-center mt-8 mb-8'>
+        {`Search from ${totalJobs} Opportunities from ${totalCompanies} Companies near Tulsa, OK`}
       </h5>
       <FilterSearch
         searchTerm={ filterState.title }

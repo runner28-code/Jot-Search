@@ -24,6 +24,7 @@ export default function AccountRecovery() {
   };
   function setType(response, condition) {
     setCondition(condition);
+    setResponse(response);
   }
 
   function renderResponse () {
@@ -86,6 +87,7 @@ export default function AccountRecovery() {
           className='text-sm vw-640:text-ml text-royalBlue underline'
         >
           help@intulsa.com
+// Temp comment
         </a>
       </div>
     </section>

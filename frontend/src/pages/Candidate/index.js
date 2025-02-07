@@ -132,12 +132,14 @@ export default function Candidate() {
             role={role}
             candidateData={candidateData}
             handleCandidateUpdate={handleCandidateUpdate} />
+// Temp comment
         </div>
         {role === 'coordinator' && 
           <InviteToCareer candidate={candidateData} />
         }
         {/* Personal Info (Candidate and Coordinator) */}
         <PersonalInfo
+          role={role}
           candidateData={candidateData}
           handleCandidateUpdate={handleCandidateUpdate} />
         {/* Password Reset (Candidate and Coordinator) */}

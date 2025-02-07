@@ -7,7 +7,6 @@ import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
-// Temp comment
 
 export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
@@ -73,7 +72,6 @@ export default function InviteCandidates({ company }) {
       <div className='flex space-x-8'>
         <button 
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
-          onClick={async () => {
             console.log({selected})
             const res = await sendCandidatesToCompanies({ companyIds: [company.id], candidateIds: selected.map((option) => option.value) })
             console.log({res})

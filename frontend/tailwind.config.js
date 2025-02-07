@@ -10,6 +10,7 @@ module.exports = {
       animation: {
         'spin': 'spin .175s linear forwards',
         'spin-reverse': 'spin-reverse .175s linear forwards'
+      },
       keyframes: {
         'spin': {
           from: {
@@ -32,3 +33,4 @@ module.exports = {
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
       colors: {
+        // Main Brand Colors

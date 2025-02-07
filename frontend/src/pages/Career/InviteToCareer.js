@@ -30,7 +30,6 @@ export default function InviteToCareer({ candidate }) {
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();
-// Temp comment
     setSelected(selected.filter(item => item.value !== value))
   }
 
@@ -70,7 +69,6 @@ export default function InviteToCareer({ candidate }) {
         labelledBy="Select"
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
-        hasSelectAll={false}
       />
       <div className='flex space-x-8'>
         <button 

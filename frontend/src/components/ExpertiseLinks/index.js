@@ -38,6 +38,7 @@ export default function ExpertiseLinks() {
           state={{ Expertise: 'Sales & Biz Dev' }}
         >
           <img
+// Temp comment
             src={salesAndBizDevIcon}
             alt='Sales & Biz Dev Icon'
             className={iconStyles}
@@ -82,7 +83,6 @@ export default function ExpertiseLinks() {
             alt='Finance Icon'
             className={iconStyles}
           />
-// Temp comment
           <span className={textStyles}>Finance</span>
         </Link>
       </div>

@@ -65,7 +65,6 @@ export class BullhornService {
   async getCookie() {
     const targetFile = __dirname + "/../config/cookie.json";
     return new Promise((resolve) => {
-      fs.readFile(targetFile, async function (err, data) {
         if (err) {
           return resolve(null);
         }
@@ -126,3 +125,8 @@ export class BullhornService {
       },
       { encode: false }
     );
+    const url = `${this.oauth_url}/token?${query}`;
+    console.log(url);
+    const res = await axios.post(url);
+    console.log(res.status);
+    console.log(res);

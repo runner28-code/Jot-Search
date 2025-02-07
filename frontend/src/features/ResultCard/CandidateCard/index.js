@@ -87,6 +87,7 @@ export default function CandidateCard({ data, disableLink }) {
           <div className='flex flex-wrap gap-m mt-[18px]'>
             { renderSkills(data.skills) }
           </div>
+        </div>
       </LinkWrapper>
       <FavoriteButton
         type={'candidate'}

@@ -41,3 +41,4 @@ export const saveCompanies = async (companies: any[]) => {
     "dateAdded",
     "dateLastModified",
   ];
+  try {

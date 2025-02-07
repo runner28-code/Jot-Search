@@ -24,7 +24,6 @@ export default function DesktopHeader(props) {
   return (
     <div className={containerClasses}>
       <div className='flex gap-8 items-center'>
-// Temp comment
         { icon && (
           <img
             src={ icon }

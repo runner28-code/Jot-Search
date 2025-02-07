@@ -16,6 +16,8 @@ export default function CandidateResults({ candidates }) {
       { candidates.map(candidate => {
         return (
           <CandidateResult 
+            candidate={candidate} 
+// Temp comment
             key={candidate.id} />
         )
       })}

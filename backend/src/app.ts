@@ -16,3 +16,4 @@ import { IncomingForm } from "formidable"
 dotenv.config();
 
 let s3: any;
+try {

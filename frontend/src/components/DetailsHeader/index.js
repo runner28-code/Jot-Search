@@ -20,7 +20,6 @@ export default function DetailsHeader({ type, source }) {
       break;
   }
   const titleCasedType = type.charAt(0).toUpperCase() + type.slice(1);
-  let headerText
   if ( type === 'company') {
     headerText = 'Company Profile';
   }else { 
@@ -33,5 +32,6 @@ export default function DetailsHeader({ type, source }) {
         {headerText}
         { renderSourceIdentifier(source) }
       </h1>
+    </div>
     <BackButton />
   </>)

@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
 import chevronDownBlue from '../../assets/images/down-chevron-blue.svg';
@@ -21,7 +20,6 @@ export default function NavBar() {
   const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {
-// Temp comment
     return <NavBarLayout />
   } else {
     return <DesktopNavBarLayout />

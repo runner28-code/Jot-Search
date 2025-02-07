@@ -9,3 +9,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     - Declare variables for reused styles
         - Leave trailing spaces for chaining styles
             ```
+            const linkStyles = 'hover:text-royalBlue mt-3 ';

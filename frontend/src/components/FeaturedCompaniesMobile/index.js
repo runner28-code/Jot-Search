@@ -28,7 +28,6 @@ export default function FeaturedCompaniesMobile() {
             :
             companies.map((company, index) =>
               <Link
-// Temp comment
                 to={`${ROUTES.companies}/${company.id}`}
                 className='my-8 outline outline-2 outline-neutral-100 p-8 w-32 mx-2'
                 key={index}>
@@ -39,7 +38,6 @@ export default function FeaturedCompaniesMobile() {
       </div>
       <div className='text-center mt-24'>
         <Link
-          to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
         </Link>

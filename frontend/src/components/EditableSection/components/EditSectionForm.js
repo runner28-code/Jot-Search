@@ -41,7 +41,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         const labelString = `${capitalizedKey}:`;
         if ( key === 'email' ) {
           return <Property
-// Temp comment
             key={key}
             name={key}
             value={value}

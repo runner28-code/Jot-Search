@@ -16,7 +16,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   }
 
   function handleCancel() {
-// Temp comment
     setContentObject(contentObjectProp);
     setEditMode(false);
   }
@@ -32,5 +31,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
         { renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCancel) }
       </div>
       { renderTextOrInputs(editMode, contentObject, handlePropertyChange) }
+// Temp comment
     </section>
   )
