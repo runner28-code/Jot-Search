@@ -10,7 +10,6 @@ async function main() {
     await seedCategories();
     await seedJobs();
     await seedUsers();
-    console.log("Done🎉");
   } catch (err) {
     console.error("Error during seed...❌");
     console.error(err);
@@ -26,3 +25,4 @@ async function seedJobs() {
         companyId: (await db.company.findFirst())?.id,
 
         address1: "123 Job St",
+        city: "Tulsa",

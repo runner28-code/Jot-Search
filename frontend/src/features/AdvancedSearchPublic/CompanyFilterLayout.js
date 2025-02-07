@@ -7,7 +7,6 @@ export default function CompanyFilterLayout(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
-// Temp comment
     clearFilters,
   } = props;
   const { width } = useWindowDimensions();
@@ -26,6 +25,7 @@ export default function CompanyFilterLayout(props) {
           onClick={clearFilters}
         >
           Clear All
+// Temp comment
         </button>
       </div>
     </div>

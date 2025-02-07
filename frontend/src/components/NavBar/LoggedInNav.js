@@ -7,7 +7,6 @@ import NavSearch from '../NavSearch';
 import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import {
   candidateChoices,

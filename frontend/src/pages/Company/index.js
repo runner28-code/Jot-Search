@@ -20,6 +20,7 @@ export default function Company() {
   const { id } = useParams();
   const [companyData, setCompanyData] = useState({});
   const [loading, setLoading] = useState(true);
+
   useEffect(async () => {
     const companyFromApi = await getCompanyById(id);
     setCompanyData(companyFromApi.company);

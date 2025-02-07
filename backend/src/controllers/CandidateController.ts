@@ -6,7 +6,7 @@ import {
   QueryParam,
   JsonController,
   Authorized,
-  Patch,
+  CurrentUser,
 } from "routing-controllers";
 import { saveCandidate, getSavedCandidates } from "../services/Candidate";
 import { FilterBody } from "../types/Common";
@@ -49,3 +49,5 @@ export class CandidateController {
       let candidate;
       if (user) {
         const {
+          password,
+          candidate: userCandidate,

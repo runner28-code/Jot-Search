@@ -13,3 +13,4 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
   try {
       await sendgrid.send(msg);
   } catch (error) {
+      console.log(error);

@@ -45,6 +45,7 @@ export const choices = {
     label: 'My Applications',
     icon: ApplicationIcon,
     link: ROUTES.applications,
+// Temp comment
   },
   myFavorites: {
     label: 'My Favorites',

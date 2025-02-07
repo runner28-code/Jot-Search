@@ -1,1 +1,1 @@
--- CreateTable
+CREATE TABLE "CompanyCandidateInvites" (

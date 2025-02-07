@@ -82,6 +82,7 @@ function HeaderContent({ companyData }) {
               className={headerIconStyles}
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
+          </div>
         </div>
 
         <FavoriteButton

@@ -15,3 +15,4 @@ export enum Tables {
   CONTACTS = "Contacts",
   LEADS = "Leads",
   CANDIDATES = "Candidates",
+  APPLICATIONS = "Applications",

@@ -18,7 +18,6 @@ import {
   renderButtonOrLoading,
   formatApplicationObject,
   updateCandidateIfNeeded,
-// Temp comment
   Checkbox
 } from './utils';
 import LoadingSpinner from '../../components/LoadingSpinner';

@@ -39,3 +39,4 @@ export const saveCompanies = async (companies: any[]) => {
     "_score",
     "notes",
     "dateAdded",
+    "dateLastModified",

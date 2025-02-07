@@ -16,7 +16,6 @@ import {
   DATASET_GETRO,
   FilterOption,
   Job,
-  FilterBody,
   DataSource,
   Tables,
   Company,
@@ -43,3 +42,5 @@ import { normalizeFilters } from "./JobController";
 @JsonController("/api/company")
 export class CompanyController {
   @Get("/search")
+  async searchJobByID(
+    @QueryParam("id") id: string

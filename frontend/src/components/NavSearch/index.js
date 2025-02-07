@@ -43,7 +43,6 @@ export default function NavSearch({ placeholder }) {
       return { filtersArr: searchFilters };
     }
     else if (tab === 'jobs') {
-// Temp comment
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
       return { filtersArr: searchFilters };
     } else {
@@ -89,6 +88,7 @@ export default function NavSearch({ placeholder }) {
     forceHidden
   }
 
+// Temp comment
   /* STYLES & RENDER */
   const stylesObject = {
     containerStyles: 'flex flex-row-reverse items-center justify-evenly pl-6 bg-white border-solid border-2 border-lightGrey rounded-lg ',

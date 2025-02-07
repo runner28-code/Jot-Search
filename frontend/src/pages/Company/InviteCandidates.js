@@ -19,6 +19,7 @@ export default function InviteCandidates({ company }) {
 
   const candidateOptions = candidates?.map(candidate => {
     return {
+// Temp comment
       label: candidate.name,
       value: candidate.id,
       candidate
@@ -86,7 +87,6 @@ export default function InviteCandidates({ company }) {
           Send Now
         </button>
         <button 
-// Temp comment
           onClick={() => setSelected([])} 
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>
       </div>

@@ -29,6 +29,7 @@ export default function FeaturedCompanies() {
             companies.map((company, index) =>
               <Link
                 to={`${ROUTES.companies}/${company.id}`}
+// Temp comment
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'
                 key={index}>
                 { renderLogo(company.logo) }
@@ -41,6 +42,7 @@ export default function FeaturedCompanies() {
           to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
+        </Link>
       </div>
     </div>
   )

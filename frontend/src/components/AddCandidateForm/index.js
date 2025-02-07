@@ -230,6 +230,7 @@ export default function RegistrationForm() {
           <FormInput
             type='single-select'
             name='workspace'
+            placeholder='Work Setting Preference (Remote, Office)' 
             value={formObj.workspace}
             onChange={handleChange}
             choices={['Any', 'Remote', 'On Site', 'Hybrid']}
@@ -267,7 +268,6 @@ export default function RegistrationForm() {
             error={errors.includes('password')}
           />
           <FormInput
-            type='password'
             name='verifyPassword'
             placeholder='Verify Password' 
             value={formObj.verifyPassword}

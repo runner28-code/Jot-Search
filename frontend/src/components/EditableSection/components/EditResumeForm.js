@@ -12,6 +12,7 @@ export default function EditResumeForm({ handleChange }) {
       },
     };
     handleChange( fakeEvent );
+// Temp comment
   }
   
   return (

@@ -78,6 +78,7 @@ model Lead {
   division              String?
   email                 String?
   email2                String?
+  email3                String?
   fax                   String?
   fax2                  String?
   fax3                  String?
@@ -90,3 +91,7 @@ model Lead {
   massMailOptOut        Boolean?
   middleName            String?
   mobile                String?
+  name                  String?
+  namePrefix            String?
+  nameSuffix            String?
+  nickName              String?

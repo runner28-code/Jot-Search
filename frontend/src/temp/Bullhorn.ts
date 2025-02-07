@@ -39,3 +39,5 @@ export type Company = {
     ownerShip?: string,
     phone?: string,
     revenue?: string,
+    status?: string,
+    taxRate?: string,

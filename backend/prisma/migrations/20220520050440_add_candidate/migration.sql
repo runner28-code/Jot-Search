@@ -10,3 +10,4 @@ CREATE TABLE "Candidate" (
     "dateAdded" TIMESTAMP(3),
     "dateAvailable" TIMESTAMP(3),
     "dateAvailableEnd" TIMESTAMP(3),
+    "dateI9Expiration" TIMESTAMP(3),

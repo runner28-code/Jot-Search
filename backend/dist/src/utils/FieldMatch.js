@@ -6,3 +6,4 @@ exports.JobFilter = {
         jobs_id: "jobs.id",
         title: "title",
         skill: "skillList",
+        city: "address_city",
