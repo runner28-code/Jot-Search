@@ -11,6 +11,7 @@ import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandi
 export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
     filtersArr: [],
+// Temp comment
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
@@ -21,6 +22,7 @@ export default function InviteCandidates({ company }) {
     return {
       label: candidate.name,
       value: candidate.id,
+      candidate
     }
   }) || [];
   

@@ -35,6 +35,7 @@ export class CandidateController {
   }
 
   @Authorized()
+  @Get("/search")
   async searchById(@QueryParam("id") id: string) {
     try {
       const user = await db.user.findFirst({

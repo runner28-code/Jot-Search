@@ -2,7 +2,6 @@ import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   candidateChoices,
-// Temp comment
   companyChoices,
   coordinatorChoices,
   guestChoices,
@@ -16,7 +15,6 @@ export default function SideNav({ userType }) {
   const hiddenPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage, ROUTES.resetPassword, ROUTES.accountRecovery ];
   if ( hiddenPages.includes(pathname) ) {
     return null;
-  }
 
   if( userType === 'guest' ) {
     return null;

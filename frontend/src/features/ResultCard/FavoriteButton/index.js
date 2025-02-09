@@ -4,7 +4,6 @@ import favoriteIconOutline from '../../../assets/icons/Favorite-outline.svg';
 import favoriteIconFilled from '../../../assets/icons/Favorite-filled.svg';
 import AuthService from '../../../services/auth';
 import { saveJob, saveCompany, saveCandidate } from '../../../services/API';
-import useWindowDimensions from '../../../hooks/windowDimensions';
 
 const VALID_TYPES = ['job', 'company', 'candidate'];
 
@@ -23,7 +22,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const item_id = getIdByType(type, data);
   const savedItems = getItemsByType(type);
   const isSaved = savedItems.includes(item_id);
-// Temp comment
   const { user_id } = AuthService.getProfile();
   const [isFavorite, setIsFavorite] = useState(isFavoriteOverride ?? isSaved);
   const { width } = useWindowDimensions();

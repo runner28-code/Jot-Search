@@ -3,7 +3,6 @@ import TypeaheadDropdown from '../FormInput/TypeaheadDropdown';
 
 const mockJobsData = [
   {
-// Temp comment
     id: '1ea36da6-8819-4617-8c09-5df46f1e4d07',
     title: 'Data Scientist',
     company: 'Hobby Lobby',

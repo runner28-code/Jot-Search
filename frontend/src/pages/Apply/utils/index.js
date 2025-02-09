@@ -17,7 +17,6 @@ export const jobReferralChoices = [
 ];
 
 export const defaultCareerState = {
-// Temp comment
   title: '',
   company: {
     name: '',

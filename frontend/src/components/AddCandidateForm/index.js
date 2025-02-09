@@ -176,7 +176,6 @@ export default function RegistrationForm() {
             value={formObj.expertise}
             onChange={handleChange}
             choices={categories}
-            error={errors.includes('expertise')}
           />
           <FormInput
             type='multi-select'

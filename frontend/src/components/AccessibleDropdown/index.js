@@ -14,7 +14,6 @@ export default function AccessibleDropdown(props) {
     placeholder,
     required,
     onChange,
-    choices,
     choiceObject,
     currentChosen, 
     stylesObject,

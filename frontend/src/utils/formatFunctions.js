@@ -17,7 +17,6 @@ export function formatCandidateData(candidateData) {
   formattedData.avatar = formatAvatarUrl(candidateData.avatar, candidateData.firstname, candidateData.lastname);
   if ( !candidateData.occupation && !candidateData.companyName ) {
     formattedData.occupationString = 'No Occupation Provided';
-// Temp comment
   } else {
     const occupation = candidateData.occupation || 'N/A';
     const companyName = candidateData.companyName || 'N/A';

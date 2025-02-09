@@ -68,7 +68,6 @@ export default function ResetPassword() {
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
     }
-// Temp comment
   }
 
 
