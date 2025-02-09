@@ -10,5 +10,4 @@ export const apply = '/apply';
 export const favorites = '/favorites';
 export const signup = '/signup';
 export const settings = '/settings';
-// Temp comment
 export const accountRecovery = '/account-recovery';

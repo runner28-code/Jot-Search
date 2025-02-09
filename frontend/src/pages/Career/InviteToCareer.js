@@ -69,6 +69,7 @@ export default function InviteToCareer({ candidate }) {
         labelledBy="Select"
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
+        hasSelectAll={false}
       />
       <div className='flex space-x-8'>
         <button 

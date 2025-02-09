@@ -1,4 +1,4 @@
-export default function ColorShapes () {
+
   return(<>
     <div className='absolute top-0 left-5% h-44 w-80'>
       <div className='bg-orangeCircle absolute -top-22 left-0 w-50 h-50 rounded-full' />

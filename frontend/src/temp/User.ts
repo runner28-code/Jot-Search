@@ -1,1 +1,1 @@
-    firstname: string;
+export type User = {

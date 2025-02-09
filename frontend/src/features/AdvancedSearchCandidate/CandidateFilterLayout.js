@@ -17,7 +17,6 @@ const dropdownFilters = [
   'Remote Availability',
   'Employment Type',
 ];
-const checkboxFiltersCoord = [
   'Open to Relocation',
   'Authorized to work in the US',
 ];
@@ -69,7 +68,6 @@ export default function CandidateFilterLayout(props) {
       <div className='flex justify-between items-center gap-[65px]'>
         <FilterSearch
           searchTerm={searchTerm}
-// Temp comment
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'

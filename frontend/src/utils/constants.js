@@ -4,6 +4,7 @@ export const pluralizedTypes = {
   company: 'companies',
   companies: 'companies',
   career: 'careers',
+// Temp comment
   job: 'careers', // jobs and careers get swapped around a lot from DB to DOM, but all pluralizations of job so far expect an output of 'careers' to match front-end design
   jobs: 'careers',
 }
@@ -51,6 +52,7 @@ export const stateCodeMap = {
   'North Carolina': 'NC',
   'North Dakota': 'ND',
   Ohio: 'OH',
+  Oklahoma: 'OK',
   Oregon: 'OR',
   Pennsylvania: 'PA',
   'Rhode Island': 'RI',

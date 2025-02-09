@@ -35,6 +35,7 @@ export const jobFilterObject = {
     'Waiting for inTake',
     'On-Deck',
   ]
+};
 
 export const ACTIVE_STATUSES = [
   'Active',

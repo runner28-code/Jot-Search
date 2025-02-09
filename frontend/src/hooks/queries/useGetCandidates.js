@@ -19,6 +19,7 @@ export const useGetCandidates = ({ count, page, fields, filtersArr, enabled = tr
   formatFilters(filtersArr)
   const { data, error, isLoading } = useQuery(
     getCandidatesKey({filtersArr, count, page, fields}),
+    () => getCandidatesFull(filtersArr, count, page, fields),
     { enabled }
   );
 

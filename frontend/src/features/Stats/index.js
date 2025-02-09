@@ -28,7 +28,6 @@ export default function Stats({ userType }) {
         return 7;
       case 'Last 14 Days':
         return 14;
-      case 'Last 90 Days':
         return 90;
       default:
         return 30

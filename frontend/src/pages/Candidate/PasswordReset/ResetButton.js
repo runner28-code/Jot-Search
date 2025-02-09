@@ -8,6 +8,7 @@ export default function ResetButton({ candidateData, setType }) {
   const { width } = useWindowDimensions();
   const handleSubmit = async (event) => {
     event.preventDefault();
+// Temp comment
     const { email } = candidateData;
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email
@@ -30,6 +31,7 @@ export default function ResetButton({ candidateData, setType }) {
     )
   }
   return (
+    <button
       className='h-20 w-150 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
       onClick={handleSubmit}
     >

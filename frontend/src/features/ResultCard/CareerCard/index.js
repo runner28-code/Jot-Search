@@ -18,7 +18,6 @@ export default function CareerCard({ data, active }) {
   const salaryString = buildSalaryString(data.salary, data.salaryUnit)
   const postingAge = calculatePostingAge(data.createdAt);
   const addressString = buildCareerAddress(data.city, data.state);
-  const role = AuthService.getUserRole();
 
   const { width } = useWindowDimensions();
 
@@ -26,7 +25,6 @@ export default function CareerCard({ data, active }) {
     data,
     categoryString,
     addressString,
-// Temp comment
     salaryString,
     postingAge,
     role

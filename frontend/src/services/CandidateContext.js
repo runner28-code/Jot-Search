@@ -49,7 +49,6 @@ const mockCandidateData = [
     school: 'Oklahoma',
     isLooking: false,
     isWarm: false,
-  },
   {
     id: '04bd7f2a-2bcf-4d37-9f9b-3dbb8dd91672',
     firstName: 'Curtis',
@@ -115,6 +114,7 @@ const CandidateProvider = ({children}) => {
   const handleCandidatesChange = (value) => {
     setCandidates(value);
   }
+
   const handleCandidateUpdate = (updatedValues) => {
     const currentCandidateData = candidates.find(candidate => candidate.id === updatedValues.id);
     const updatedCandidate = { ...currentCandidateData, ...updatedValues };

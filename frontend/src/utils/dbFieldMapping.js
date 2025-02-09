@@ -6,5 +6,4 @@ export const disabilityMap = {
   R: 'I need a reasonable accomodation to perform the essential function of my remote work',
   N: 'None of the above'
 };
-
 export const veteranStatusMap = {

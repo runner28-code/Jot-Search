@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
-import OtherCareers from '../../features/OtherCareers';
 import featuredIcon from '../../assets/icons/pyramid.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
@@ -34,7 +33,6 @@ export default function DesktopLayout(props) {
       {/* Header */}
       <div className='flex items-start'>
         <div>
-// Temp comment
           {renderLogo(careerData.company_logo)}
           <sub className='text-xxs text-zinc-700 font-roboto'>{careerData.clientCorporation}</sub>
         </div>

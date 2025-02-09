@@ -4,7 +4,6 @@ import * as ROUTES from '../../routes';
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import TypeTabs from '../../components/TypeTabs';
-// Temp comment
 
 // Hooks
 import useWindowDimensions from '../../hooks/windowDimensions';

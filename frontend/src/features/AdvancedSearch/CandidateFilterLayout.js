@@ -88,6 +88,7 @@ export default function CandidateFilterLayout(props) {
         />
       </div>
       <div className='flex flex-wrap gap-xxl-4'>
+// Temp comment
         {renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange)}
       </div>
       <div className='flex justify-between items-center gap-[65px]'>

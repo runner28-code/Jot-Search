@@ -21,6 +21,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   if( width >= 990 ) {
     return null;
   }
+  return (<>
     <div className='bg-sky-500 border-b-2 border-white flex items-start justify-start text-white flex-col px-6 py-8'>
       <div className='flex items-center'>
         <div className='flex items-center'>
@@ -51,7 +52,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
           className='flex items-center justify-end text-[3rem]'
           onClick={() => togglePassState()}
         >
-          {!toggle ? <ChevronDown /> : <ChevronUp />}
         </button>
       </div>
     </div>

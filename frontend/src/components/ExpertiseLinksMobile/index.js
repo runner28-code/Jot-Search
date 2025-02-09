@@ -23,6 +23,7 @@ export default function ExpertiseLinksMobile() {
           className={linkStyles}
           state={{ Expertise: 'Software & Engineering' }}
         >
+// Temp comment
           <img
             src={softwareEngineeringIcon}
             alt='Software Engineering Icon'
@@ -51,6 +52,7 @@ export default function ExpertiseLinksMobile() {
           className={linkStyles}
           state={{ Expertise: 'Marketing' }}
         >
+          <img
             src={marketingIcon}
             alt='Marketing Icon'
             className={iconStyles}
