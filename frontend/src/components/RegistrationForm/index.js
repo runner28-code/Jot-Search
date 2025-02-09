@@ -364,6 +364,7 @@ export default function RegistrationForm(loggedIn) {
             name='employmentPreference'
             label='Preferred Employment Type'
             required={true}
+            placeholder='Select'
             value={formObj.employmentPreference}
             onChange={handleChange}
             choices={['Any', 'Full-Time', 'Contract']}

@@ -8,6 +8,7 @@ import { FiUserPlus as AddUserIcon } from 'react-icons/fi';
 import {
   MdLogout as LogoutIcon,
   MdStars as FavoritesIcon
+} from 'react-icons/md';
 import {
   RiFolderUserLine as CandidatesIcon,
   RiDashboard3Line as DashboardIcon,
@@ -118,7 +119,6 @@ export function findSelectedFromPath() {
       return 'Saved Companies';
     case 'saved-candidates':
       return 'Saved Candidates';
-    case 'active-careers':
       return 'Active Careers';
     case 'candidates':
       return 'Candidates';

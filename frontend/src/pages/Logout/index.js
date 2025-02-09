@@ -1,4 +1,4 @@
-import useComponentWillMount from '../../hooks/useComponentWillMount';
+import AuthService from '../../services/auth';
 
 export default function Logout() {
   useComponentWillMount(() => AuthService.logout());

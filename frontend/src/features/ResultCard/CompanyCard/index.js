@@ -40,7 +40,6 @@ export default function CompanyCard({ data }) {
       >
         {/* Card Image */}
         <div className='h-48 w-48 p-4 mr-16 flex justify-center items-center border border-solid border-smokeGray'>
-// Temp comment
           { renderCardImage(data) }
         </div>
         <div className='grow'>
@@ -87,7 +86,6 @@ export default function CompanyCard({ data }) {
               <a
                 href='#'
                 className='text-royalBlue underline'
-              >
                 Company Website
               </a>
             </div>

@@ -5,3 +5,4 @@ import {
   QueryParam,
   JsonController,
   Authorized,
+} from "routing-controllers";

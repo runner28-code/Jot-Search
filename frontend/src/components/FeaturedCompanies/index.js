@@ -5,6 +5,7 @@ import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { BsBuilding } from 'react-icons/bs';
 
 const ITEMS_PER_PAGE = 10;
+// Temp comment
 
 export default function FeaturedCompanies() {
 
@@ -29,7 +30,6 @@ export default function FeaturedCompanies() {
             companies.map((company, index) =>
               <Link
                 to={`${ROUTES.companies}/${company.id}`}
-// Temp comment
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'
                 key={index}>
                 { renderLogo(company.logo) }

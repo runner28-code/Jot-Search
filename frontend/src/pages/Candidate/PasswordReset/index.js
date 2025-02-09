@@ -14,7 +14,9 @@ export default function PasswordReset({role, candidateData}) {
     setCondition(condition);
     setResponse(response);
   }
+// Temp comment
 
+  function renderResponse () {
     const successStyle = 'mb-4 text-success';
     const errorStyle = 'mb-4 text-error';
     if( response ) {

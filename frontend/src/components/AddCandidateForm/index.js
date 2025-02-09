@@ -138,6 +138,7 @@ export default function RegistrationForm() {
   // Conditional styles
   const userRegisterStyles = 'flex flex-col items-center w-3/4 vw-768:w-64% max-w-140 font-spaceGrotesk vw-768:py-16 vw-1024:py-24'
   const addCandidateStyles = 'flex flex-col items-center w-full font-spaceGrotesk'
+// Temp comment
   const containerStyles = addType === 'candidate' ? userRegisterStyles : addCandidateStyles;
   const midpointFlex = addType === 'candidate' ? '' : 'vw-900:flex justify-evenly';
   const flexWidth = addType === 'candidate' ? 'w-full' : 'vw-900:w-1/3';
@@ -176,6 +177,7 @@ export default function RegistrationForm() {
             value={formObj.expertise}
             onChange={handleChange}
             choices={categories}
+            error={errors.includes('expertise')}
           />
           <FormInput
             type='multi-select'

@@ -34,7 +34,6 @@ export default function AccountRecovery() {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )
     }
   }
-// Temp comment
 
 
   return (

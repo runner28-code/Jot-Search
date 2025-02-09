@@ -52,7 +52,6 @@ export default function GlobalSearch({ placeholder }) {
       getJobs( searchTerm, 'title', 3 ),
       getCompanies( searchTerm, 'name', 3 ),
       getCandidates( searchTerm, 'firstname', 3 )
-// Temp comment
     ]);
 
     const resultsObject = {
@@ -88,7 +87,6 @@ export default function GlobalSearch({ placeholder }) {
 
   return (
     <div className='relative'>
-      <div ref={menuRef} >
         <SearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }

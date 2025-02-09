@@ -14,7 +14,6 @@ API.interceptors.request.use(
   function (config) {
     const token = localStorage.getItem('id_token');
     if (token) {
-// Temp comment
       config.headers['Authorization'] = 'Bearer ' + token;
     }
     return config;

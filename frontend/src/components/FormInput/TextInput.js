@@ -8,6 +8,7 @@ export default function TextInput({type, name, placeholder, label, value, requir
     } else {
       onChange(name, e);
     }
+  }
 
   return (
     <div className='w-full'>

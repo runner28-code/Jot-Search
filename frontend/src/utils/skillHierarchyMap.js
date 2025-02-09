@@ -38,7 +38,6 @@ export const roles = {
     'Entrepreneurship'
   ],
   'Other': [
-// Temp comment
     'Education',
     'Healthcare',
     'Legal',

@@ -4,13 +4,13 @@ import * as ROUTES from '../../routes';
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import TypeTabs from '../../components/TypeTabs';
-// Temp comment
 
 // Hooks
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // Images
 import filterIcon from '../../assets/images/filter-toggle.svg';
+// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
 

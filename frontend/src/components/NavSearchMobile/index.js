@@ -76,7 +76,6 @@ export default function NavSearchMobile({ placeholder }) {
     setForceHidden(true);
   };
 
-  useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
 

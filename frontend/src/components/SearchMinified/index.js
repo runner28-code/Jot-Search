@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 
-// Temp comment
 // Images
 import searchWhite from '../../assets/icons/search-gray.svg';
 
