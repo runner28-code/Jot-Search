@@ -9,6 +9,7 @@ export default function EditResumeForm({ handleChange }) {
       target: {
         name: e.target.name,
         value: newResumePath,
+      },
     };
     handleChange( fakeEvent );
   }
@@ -17,7 +18,6 @@ export default function EditResumeForm({ handleChange }) {
     <div className='flex flex-col'>
       <label
         className='text-h5 font-bold text-royalBlue'
-        htmlFor='resume'
       >
         Upload New Resume:
       </label>

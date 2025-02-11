@@ -23,6 +23,7 @@ export default function CareerPage() {
 
   const isMobile = width < 768;
   const role = AuthService.getUserRole();
+  /* STATE */
   const { id } = useParams();
   const [careerData, setCareerData] = useState({});
 

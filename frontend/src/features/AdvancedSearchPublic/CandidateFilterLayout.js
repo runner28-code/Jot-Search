@@ -79,6 +79,7 @@ export default function CandidateFilterLayout(props) {
           onClick={clearFilters}
         >
           Clear All
+// Temp comment
         </button>
       </div>
     </div>

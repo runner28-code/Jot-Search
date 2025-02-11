@@ -12,12 +12,12 @@ import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
-  guestChoices,
   findSelectedFromPath
 } from '../SideNav/utils';
 import { useCandidateContext } from '../../services/CandidateContext';
 
 export default function NavBar() {
+  const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {
     return <NavBarLayout />

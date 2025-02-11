@@ -21,7 +21,7 @@ import { getSavedJobs, saveJob } from "../utils/MainCrud";
 import { clearPassword } from "../utils/password";
 import { COORDINATOR } from "../utils/constant";
 import { sendEmail, sendJobsToCandidates } from "../services/EmailService";
-import { normalizeFilters } from "./JobController";
+import { getJobsList } from "../services/Job";
 import { Dictionary } from "typed-two-way-map";
 import e from "express";
 

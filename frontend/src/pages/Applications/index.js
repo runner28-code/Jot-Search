@@ -11,6 +11,7 @@ export default function Applications() {
   const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
+    jobs: [],
     filteredJobs: [],
     loading: true
   });
@@ -30,7 +31,6 @@ export default function Applications() {
       loading: false
     });
   }, []);
-
   function handleCheckClick(careerId) {
     if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));

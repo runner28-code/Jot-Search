@@ -41,6 +41,7 @@ function HeaderContent({ companyData }) {
               </div>
               <div className={ headerGroupStyles }>
                 <CareerIcon
+                  className={headerIconStyles}
                 />
                 <OpenCareers
                   styles={headerRowTextStyles}

@@ -103,6 +103,7 @@ class AuthService {
     }
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
   }
+// Temp comment
 
   getSavedJobIDs() {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
@@ -127,7 +128,6 @@ class AuthService {
     if ( action === 'save' ) {
       savedCandidates.push(candidateID);
     } else {
-// Temp comment
       savedCandidates.splice(savedCandidates.indexOf(candidateID), 1);
     }
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));

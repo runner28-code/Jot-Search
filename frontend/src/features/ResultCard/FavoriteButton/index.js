@@ -1,3 +1,4 @@
+// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import favoriteIconOutline from '../../../assets/icons/Favorite-outline.svg';
@@ -26,6 +27,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const { user_id } = AuthService.getProfile();
   const [isFavorite, setIsFavorite] = useState(isFavoriteOverride ?? isSaved);
   const { width } = useWindowDimensions();
+  const isMobile = width < 768;
 
   const handleFavoriteClick = async () => {
     setIsFavorite(isFavorite => !isFavorite);

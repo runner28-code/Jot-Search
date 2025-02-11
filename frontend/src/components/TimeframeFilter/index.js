@@ -21,6 +21,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     }
   
     return (
+// Temp comment
       <Dropdown 
         choices={choices} 
         handleChoiceClick={handleChoiceClick} 
@@ -50,6 +51,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         <img 
           className='w-6 mr-7'
           src={ chevronDownGray }
+          alt='chevron down'  
         />
       </div>
       { renderDropdown( showDropdown ) }

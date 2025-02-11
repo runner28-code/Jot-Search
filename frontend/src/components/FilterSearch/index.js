@@ -10,11 +10,9 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   function handleKeydown(e) {
     if (e.keyCode === 13) {
       handleSearchClick();
-    }
   }
   
   let containerStyles = 'flex items-center rounded-2xl h-[56px] ';
-// Temp comment
   let inputStyles = 'h-full w-full border-midGrey border-solid border-y-2 border-l-2 rounded-l-2xl pl-5 vw-768:pl-10 text-midGrey text-md tracking-wide ';
   if (additionalClasses) {
     containerStyles += additionalClasses;

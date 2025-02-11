@@ -11,7 +11,6 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
     choiceLink += choice.toLowerCase().replace(' ', '-');
   }
 
-  const linkStyles = choice === 'Logout' ? stylesObject.bottomLinkStyles : stylesObject.linkStyles;
   return (
     <div key={choice}>
       <Link 
@@ -20,6 +19,7 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
         onClick={handleOptionClick}
       >
         <Icon className={stylesObject.iconStyles} />
+        <span className={stylesObject.spanStyles}>{choice}</span>
       </Link>
       <hr className={stylesObject.hrStyles} />
     </div>

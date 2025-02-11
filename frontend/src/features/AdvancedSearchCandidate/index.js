@@ -18,7 +18,6 @@ import {
   buildSearchFilters
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
-// Temp comment
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -42,7 +41,6 @@ function useTabState(disabledTabs, userType, pathname) {
         return useState('companies');
       case '/careers':
       default:
-        return useState('jobs');
     }
   }
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');

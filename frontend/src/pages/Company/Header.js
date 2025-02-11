@@ -33,6 +33,7 @@ function HeaderContent({ companyData }) {
           { renderCompanyLogo(companyData.logo, companyData.name) }
           <FillerIcon />
           <h4 className={ ( width >= 1280 ) ? headerTitleDesktop : headerTitle }>
+// Temp comment
             {companyData.name}
           </h4>
         </div>
@@ -45,7 +46,6 @@ function HeaderContent({ companyData }) {
               src={PlacePin}
               className={headerIconStyles}
             />
-// Temp comment
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>

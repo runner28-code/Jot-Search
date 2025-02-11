@@ -109,6 +109,7 @@ export default function RegistrationForm() {
     setErrorBlock('');
     setErrors([]);
     setFormObj({
+      ...formObj,
       firstName: firstName.value,
       lastName: lastName.value,
       email: email.value,

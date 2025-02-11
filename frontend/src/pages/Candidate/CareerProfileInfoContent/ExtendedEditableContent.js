@@ -203,7 +203,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             onChange={handleChange}
             label='Occupation'
             disabled={disabled}
-          />
           <FormInput
             type='text'
             name='linkedin'

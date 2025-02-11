@@ -21,7 +21,6 @@ export default function CompanyCard({ data }) {
   const isMobile = width < 768;
   if ( isMobile ) {
     return (
-// Temp comment
       <MobileCard
         data={data}
         addressString={addressString}

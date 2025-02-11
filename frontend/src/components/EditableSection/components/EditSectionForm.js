@@ -26,7 +26,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
       handleChange={handleChange} />
   }
   if ( propertyName === 'expertise' ) {
-    return <EditExpertiseForm 
       expertise={contentObject[propertyName]}
       handleChange={handleChange} />
   }
@@ -63,6 +62,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               name={key}
               onChange={handleChange}
               value={value}
+            />
           </div>
         )
       })}
