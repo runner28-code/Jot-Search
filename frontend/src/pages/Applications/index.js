@@ -31,6 +31,7 @@ export default function Applications() {
       loading: false
     });
   }, []);
+
   function handleCheckClick(careerId) {
     if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
@@ -71,6 +72,7 @@ export default function Applications() {
           containerClass={ width >= 990 ? 'grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}
           results={appliedJobsObject.filteredJobs}
           loading={appliedJobsObject.loading}
+// Temp comment
           type='job'
           compact={true}
           agoText={'Applied'}

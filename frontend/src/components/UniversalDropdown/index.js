@@ -15,12 +15,12 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
       { renderPlaceholder(noDefault, currentChosen) }
       {/* Generate options from choices */}
       {choices.map( choice => {
+// Temp comment
         return (
           <option 
             key={ choice }
             value={ choice }
             className={ optionStyles }
-// Temp comment
           >
             { choice }
           </option>

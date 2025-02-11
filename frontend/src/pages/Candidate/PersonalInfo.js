@@ -119,6 +119,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   placeholder='First Name'
                   value={formData.firstname}
                   onChange={handleInputChange}
+                  className={inputStyles}
                   required
                   disabled={disabled}
                 />
@@ -263,7 +264,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   htmlFor='gender'
                   className={labelStyles}
                 >
-                  <p className={labelTextStyles}>Voluntary Self-ID of Gender</p>
                   <Dropdown
                     name='gender'
                     choices={ genderChoices }

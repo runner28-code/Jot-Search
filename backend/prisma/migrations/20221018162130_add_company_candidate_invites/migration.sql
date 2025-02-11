@@ -1,1 +1,1 @@
-CREATE TABLE "CompanyCandidateInvites" (
+-- CreateTable

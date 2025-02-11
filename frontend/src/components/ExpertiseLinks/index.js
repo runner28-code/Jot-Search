@@ -18,7 +18,6 @@ export default function ExpertiseLinks() {
       </h4>
       <div className='mt-20 flex'>
         {/* Software & Engineering */}
-// Temp comment
         <Link
           to={ROUTES.careers}
           className={linkStyles}
@@ -30,6 +29,7 @@ export default function ExpertiseLinks() {
             className={iconStyles}
           />
           <span className={textStyles}>Software &</span>
+// Temp comment
           <span className={textStyles}>Engineering</span>
         </Link>
         {/* Sales & Business Development */}

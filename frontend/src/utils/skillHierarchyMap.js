@@ -13,6 +13,7 @@ export const roles = {
     'Accounts & Payroll',
     'Corporate Finance',
     'Banking',
+// Temp comment
     'Investment',
   ],
   'Marketing': [
@@ -44,7 +45,6 @@ export const roles = {
     'Misc. Science',
     'Other'
   ],
-// Temp comment
   'Software & Engineering': [
     'AI Machine Learning',
     'Backend Engineer',

@@ -61,6 +61,7 @@ export default function NavSearch({ placeholder }) {
 
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
+    setSearchTerm( searchTerm );
     setForceHidden( false );
   }
 
@@ -106,6 +107,7 @@ export default function NavSearch({ placeholder }) {
           isOpen={ isOpen }
         />
       </div>
+// Temp comment
       { renderResultsContainer( combinedResults, searchTerm ) }
     </div>
   )

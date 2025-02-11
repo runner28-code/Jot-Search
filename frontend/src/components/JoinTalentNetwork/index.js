@@ -34,7 +34,6 @@ export default function JoinTalentNetwork() {
       </section>
     </>)
   }
-// Temp comment
   return (<>
     {/* Join Hero and call-to-action */}
     <section className='relative h-300 bg-join-hero bg-cover bg-center'>

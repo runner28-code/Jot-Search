@@ -34,6 +34,7 @@ export default function Stats({ userType }) {
         return 30
     }
   }
+// Temp comment
 
   useEffect(async() => {
     const duration = getDuration(timeframe)
@@ -75,6 +76,7 @@ export default function Stats({ userType }) {
           />
         </div>
       </div>
+      <div className='flex flex-wrap'>
         {Object.entries(stats).map(([stat, value]) => {
           return <StatCard
             stat={stat}

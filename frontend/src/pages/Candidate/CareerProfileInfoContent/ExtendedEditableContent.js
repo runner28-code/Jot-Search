@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react';
 import { CategoryContext } from '../../../services/CategoryContext';
 import PropTypes from 'prop-types';
+// Temp comment
 import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
 import FormInput from '../../../components/FormInput';
 import {
@@ -133,7 +134,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           type='single-select'
           name='expertise'
           label='Expertise'
-// Temp comment
           required={true}
           placeholder='Select'
           value={formData.expertise}

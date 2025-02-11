@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import ExploreSearch from '../../components/ExploreSearch';
-import ExploreSearchMobile from '../../components/ExploreSearchMobile';
 import ExpertiseLinks from '../../components/ExpertiseLinks';
 import ExpertiseLinksMobile from '../../components/ExpertiseLinksMobile';
 import JoinTalentNetwork from '../../components/JoinTalentNetwork';
@@ -31,7 +30,6 @@ export default function LandingPage() {
         <div className='mt-34 vw-1024:mt-60 flex flex-col items-center'>
           { renderLocation() }
           <p className='text-white font-spaceGrotesk font-semibold w-2/3 vw-1024:w-full text-[35.2px] vw-1024:text-[72px] text-center'>{'Find a Career You\'ll Love'}</p>
-// Temp comment
           { renderColorShapes() }
           { renderJoinTalent() }
         </div>

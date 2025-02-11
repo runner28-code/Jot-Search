@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import urlDecode from '../../utils/urlDecode';
@@ -19,5 +20,4 @@ export default function CompanyResults({ companies }) {
         )
       })}
       <hr className='w-full border-black50% mt-6 mb-2' />
-    </>
   )

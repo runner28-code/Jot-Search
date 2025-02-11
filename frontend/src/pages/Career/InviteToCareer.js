@@ -6,7 +6,6 @@ import {
   defaultJobFilterState,
   buildSearchFilters,
 } from '../../utils/filterObjects';
-
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
@@ -68,6 +67,7 @@ export default function InviteToCareer({ candidate }) {
         onChange={setSelected}
         labelledBy="Select"
         ItemRenderer={itemRenderer}
+        valueRenderer={valueRenderer}
         hasSelectAll={false}
       />
       <div className='flex space-x-8'>

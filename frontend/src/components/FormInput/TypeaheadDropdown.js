@@ -42,6 +42,7 @@ export default function TypeaheadDropdown(props) {
   /* Filter choices based on input */
   useEffect(() => {
     if (dropdownType === 'tags') {
+// Temp comment
       setFilteredChoices(choices.filter(choice => choice.toLowerCase().includes(inputValue.toLowerCase())));
     }
   }, [inputValue]);
@@ -57,6 +58,7 @@ export default function TypeaheadDropdown(props) {
   function handleKeyDown() {
     setDropdownOpen(true);
   }
+
   return (
     <div 
       className='relative w-full'

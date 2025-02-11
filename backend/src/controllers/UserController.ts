@@ -8,7 +8,6 @@ import {
   Delete,
   QueryParam,
   UploadedFile,
-  Authorized,
   HeaderParam,
   CurrentUser,
   QueryParams,

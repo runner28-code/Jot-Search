@@ -31,6 +31,7 @@ export default function DesktopHeader(props) {
             className={ 'h-16 ' + addOnIconClasses }
           />
         )}
+// Temp comment
         { IconComponent && (
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />
         )}
@@ -40,6 +41,7 @@ export default function DesktopHeader(props) {
         { dataSource && (
           <SourceIdentifier type={dataSource} />
         )}
+      </div>
       { backButton && (
         <button
           className='text-md text-royalBlue underline mt-6'
