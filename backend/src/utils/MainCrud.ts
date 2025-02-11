@@ -7,7 +7,6 @@ export const saveApplication = async (job: string, candidate: string) => {
     const existing = await db.application.findFirst({
       where: {
         jobId: job,
-        userId: candidate,
       },
     });
     if (!existing) {
@@ -15,4 +14,5 @@ export const saveApplication = async (job: string, candidate: string) => {
         data: {
           user: {
             connect: {
+              id: candidate,
             },

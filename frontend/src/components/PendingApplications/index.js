@@ -38,7 +38,6 @@ export default function PendingApplications () {
       <div className='relative w-24 mb-8'>
         <div className='bg-red-500 w-12 h-12' />
         <div className='bg-orangeSquare  top-[-20px] right-[5px] absolute w-6 h-6' />
-// Temp comment
       </div>
       <h2 className='font-spaceGrotesk text-h5 text-white mb-8 text-center'>My Pending Applications</h2>
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
@@ -55,6 +54,7 @@ export default function PendingApplications () {
                   agoDate={career.createdAt}
                 />
               </>)
+// Temp comment
             })
         }
         <div className='flex items-center text-center flex-col justify-center px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white rounded-3xl outline-dashed outline-neutral-300 bg-gray-200'>

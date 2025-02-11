@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import CandidateCard from '../ResultCard/CandidateCard';
 import CompactCareerCard from '../ResultCard/CompactCareerCard';
 import CareerCard from '../ResultCard/CareerCard';

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 
 // import FeaturedTag from '../../components/FeaturedTag';
 import useWindowDimensions from '../../hooks/windowDimensions';

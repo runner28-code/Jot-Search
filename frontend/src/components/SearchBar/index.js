@@ -24,6 +24,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
       htmlFor={ placeholder }
     >
       <div className={ styleObject.searchIconStyles }>
+// Temp comment
         <img
           src={ searchWhite }
           alt='search icon'

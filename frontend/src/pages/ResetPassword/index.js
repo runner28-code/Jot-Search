@@ -24,6 +24,7 @@ export default function ResetPassword() {
   }
 
 
+// Temp comment
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -60,6 +61,7 @@ export default function ResetPassword() {
             Login to your account
           </Link>
         </div>
+      )
     }
   }
 

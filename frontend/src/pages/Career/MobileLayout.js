@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import OtherCareers from '../../features/OtherCareers';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import locationIcon from '../../assets/icons/placepin.svg';
 import clockIcon from '../../assets/icons/clock.svg';
 import postingAgeIcon from '../../assets/icons/calendar.svg';
@@ -60,7 +61,6 @@ export default function MobileLayout(props) {
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>
             </div>
           </div>
-          {/* Second row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
             {/* Posting age */}
             <div className='w-1/2 flex items-center pr-4'>

@@ -114,6 +114,7 @@ export class BullhornService {
     }
     return false;
   }
+
   async getAccessToken(): Promise<boolean> {
     console.log("\n***** getAccessToken *****");
     const query = queryString.stringify(

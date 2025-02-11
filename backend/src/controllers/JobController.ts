@@ -48,7 +48,6 @@ import {
 } from "../utils/MainCrud";
 
 import { BullhornService } from "../services/BullhornService";
-
 @JsonController("/api/job")
 export class JobController {
   @Get("/search")

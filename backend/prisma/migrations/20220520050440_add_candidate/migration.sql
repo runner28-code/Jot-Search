@@ -4,7 +4,6 @@ CREATE TABLE "Candidate" (
     "address" TEXT,
     "certifications" TEXT,
     "comments" TEXT,
-    "companyName" TEXT,
     "companyURL" TEXT,
     "customInt6" TEXT,
     "dateAdded" TIMESTAMP(3),

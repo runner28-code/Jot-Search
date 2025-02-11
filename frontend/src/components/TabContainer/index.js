@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 
-// Temp comment
 export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLocked, absolute = true }) {
 
   const absoluteStyles = absolute ? 'absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2' : ''
@@ -11,6 +10,7 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
           key={choice}
           choice={choice}
           activeTab={activeTab}
+// Temp comment
           setActiveTab={setActiveTab}
           isLocked={isLocked}
         />

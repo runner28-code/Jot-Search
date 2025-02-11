@@ -10,7 +10,6 @@ import Property from './Property';
 
 export default function EditSectionForm({ contentObject, handlePropertyChange }) {
   function handleChange(e) {
-// Temp comment
     handlePropertyChange(e.target.name, e.target.value);
   }
   const singleProperty = Object.keys(contentObject).length === 1;
@@ -56,6 +55,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               className='text-xl font-bold text-royalBlue'
               htmlFor={key}
             >
+// Temp comment
               {labelString}
             </label>
             <input 

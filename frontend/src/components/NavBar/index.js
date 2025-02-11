@@ -1,4 +1,4 @@
-import LoggedInNav from './LoggedInNav';
+import AuthService from '../../services/auth';
 import LoggedOutNav from './LoggedOutNav';
 
 export default function NavBar() {

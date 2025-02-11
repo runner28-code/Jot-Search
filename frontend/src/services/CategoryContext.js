@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
+// Temp comment
 import PropTypes from 'prop-types';
 import { getCategories } from './API';
 
@@ -14,7 +15,6 @@ const CategoryProvider = ({children}) => {
     setCategories(categoriesFromAPI);
   }, [])
   
-// Temp comment
   return (
     <CategoryContext.Provider value={{ categories }}>
       {children}

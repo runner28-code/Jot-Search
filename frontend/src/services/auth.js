@@ -34,7 +34,6 @@ class AuthService {
       return false;
     }
   }
-// Temp comment
 
   getToken() {
     return localStorage.getItem('id_token');

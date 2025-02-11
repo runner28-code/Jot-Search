@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
@@ -13,6 +14,7 @@ export default function DesktopHeader(props) {
     backButton
   } = props;
   const navigate = useNavigate();
+// Temp comment
 
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-royalBlue ' : ' fill-royalBlue ';

@@ -13,6 +13,7 @@ export default function InvitationsToApply () {
     loading: true
   });
 
+  useEffect( async () => {
     const appliedJobs = await getInvitationsToApply(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
@@ -41,7 +42,6 @@ export default function InvitationsToApply () {
               : appliedJobsObject.jobs.slice(0, 2).map((career, index) => {
                 return(<>
                   <CareerCard
-                    key={career.id}
                     index={index}
                     data={career}
                     agoDate={career.createdAt}

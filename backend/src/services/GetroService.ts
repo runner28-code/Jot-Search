@@ -7,6 +7,7 @@ import { checkForJobFilter, sleep } from '../utils';
 
 export class GetroService {
     public static client: GetroService | null = null;
+    private email = config.getroEmail || '';
     private password = config.getroPassword || '';
     private api_base_url_v1 = 'https://api.getro.com/api/v1';
     private api_base_url_v2 = 'https://api.getro.com/v2';
@@ -24,7 +25,6 @@ export class GetroService {
         return {
             headers: {
                 'X-User-Email': this.email,
-                'X-User-Token': this.password,
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             }

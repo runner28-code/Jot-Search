@@ -20,6 +20,7 @@ export default function Filters(props) {
   }
   return (
     <div className={filterContainerStyles}>
+// Temp comment
       <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}
       </div>

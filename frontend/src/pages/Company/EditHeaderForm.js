@@ -70,7 +70,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className={inputStyles + 'text-h6 w-full'} />
         </div>
         {/* Last Name */}
-        <div className='mb-6'>
           <label 
             className='text-h6 text-royalBlue w-full'
             htmlFor='lastname'>
