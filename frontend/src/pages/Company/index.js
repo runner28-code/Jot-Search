@@ -53,6 +53,7 @@ export default function Company() {
 
   const navigate = useNavigate();
 
+// Temp comment
   if (loading) { return <LoadingSpinner /> }
   return (
     <div className={ loggedIn ? 'vw-1280:pr-12 mx-[5%]' : ''}>

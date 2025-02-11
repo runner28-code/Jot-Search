@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+// Temp comment
 import PropTypes from 'prop-types';
 import ResultContainer from '../../features/ResultContainer';
 import TabContainer from '../../components/TabContainer';
@@ -41,6 +42,7 @@ function useTabState(disabledTabs, userType, pathname) {
         return useState('companies');
       case '/careers':
       default:
+        return useState('jobs');
     }
   }
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');

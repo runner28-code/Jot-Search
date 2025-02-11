@@ -9,6 +9,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import {
   ethnicityChoices,
   genderChoices,
+  veteranStatusChoices
 } from '../Apply/utils';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
@@ -118,7 +119,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   placeholder='First Name'
                   value={formData.firstname}
                   onChange={handleInputChange}
-                  className={inputStyles}
                   required
                   disabled={disabled}
                 />

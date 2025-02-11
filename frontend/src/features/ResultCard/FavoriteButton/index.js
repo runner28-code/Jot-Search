@@ -1,4 +1,3 @@
-// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import favoriteIconOutline from '../../../assets/icons/Favorite-outline.svg';

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import FormInput from '../../../components/FormInput';
 import API from '../../../services/API';
+// Temp comment
 import * as ROUTES from '../../../routes';
 
 export default function ResetForm({ candidateData, setType }) {
@@ -27,6 +28,7 @@ export default function ResetForm({ candidateData, setType }) {
       });
 
       if ( res.data.result ) {
+        setType('Password Reset Successfully', true);
       } else {
         setType(res.data.error, false);
       }

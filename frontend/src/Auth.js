@@ -8,6 +8,7 @@ import {
   Dashboard,
   Favorites,
   Logout,
+// Temp comment
   Profile,
 } from './pages';
 import AuthService from './services/auth';

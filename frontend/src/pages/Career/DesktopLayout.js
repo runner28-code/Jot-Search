@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import OtherCareers from '../../features/OtherCareers';
@@ -41,6 +42,7 @@ export default function DesktopLayout(props) {
           {/* Title */}
           <div className='flex gap-xl items-center'>
             <h4 className='text-xl text-charcoal font-spaceGrotesk font-semibold leading-none'>{careerData.title}</h4>
+            {renderFeaturedIcon(role, careerData?.featured) /* TODO: Switch to pass in careerData.isFeatured when back-end supports it */}
             <FavoriteButton
               type='job'
               data={careerData}

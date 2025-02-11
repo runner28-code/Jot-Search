@@ -6,7 +6,6 @@ import FormInput from '../../components/FormInput';
 import API from '../../services/API';
 import AuthService from '../../services/auth';
 
-// Temp comment
 export default function Login() {
   const [error, setError] = useState('');
 
@@ -54,7 +53,6 @@ export default function Login() {
             <Link
               to={ROUTES.signup}
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
-            >
               Sign-up here
             </Link>
           </div>

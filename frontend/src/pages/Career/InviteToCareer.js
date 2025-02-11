@@ -68,7 +68,6 @@ export default function InviteToCareer({ candidate }) {
         onChange={setSelected}
         labelledBy="Select"
         ItemRenderer={itemRenderer}
-        valueRenderer={valueRenderer}
         hasSelectAll={false}
       />
       <div className='flex space-x-8'>

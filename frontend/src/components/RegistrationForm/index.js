@@ -345,6 +345,7 @@ export default function RegistrationForm(loggedIn) {
                 key={skill}
                 label={skill}
                 isActive={true}
+                handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}
               />
             ) : <p className='text-midGrey text-md'>No skills selected</p>}
           </div>
@@ -412,6 +413,7 @@ export default function RegistrationForm(loggedIn) {
           />
           <hr className={hrStyles} />
           <FormInput
+// Temp comment
             type='single-select'
             name='referredBy'
             label={`How did ${pronoun} hear about us?`}

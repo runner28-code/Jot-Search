@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from './routes';
 import Auth from './Auth';
 import {
@@ -20,6 +21,7 @@ function App() {
   let userRole = AuthService.getUserRole();
 
   return (
+    <div className="App overflow-hidden">
       <NavBar />
       <main className='bg-lightGrey pt-30 vw-1280:pt-44 vw-1280:flex'>
         <SideNav userType={userRole} />

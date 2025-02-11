@@ -69,6 +69,7 @@ export class BullhornService {
         if (err) {
           return resolve(null);
         }
+        let cookies = JSON.parse(data.toString());
         return resolve(cookies);
       });
     });

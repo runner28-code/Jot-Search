@@ -103,7 +103,6 @@ class AuthService {
     }
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
   }
-// Temp comment
 
   getSavedJobIDs() {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];

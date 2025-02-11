@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }) => {
@@ -13,6 +12,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           toggled={toggled}
           onToggle={onUpdate}
           disabled={disabled}
+// Temp comment
         />
         <label 
           htmlFor='featured' 

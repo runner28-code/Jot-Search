@@ -57,7 +57,6 @@ export default function TypeaheadDropdown(props) {
   function handleKeyDown() {
     setDropdownOpen(true);
   }
-
   return (
     <div 
       className='relative w-full'

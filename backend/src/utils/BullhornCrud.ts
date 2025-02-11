@@ -25,7 +25,6 @@ export const saveCompanies = async (companies: any[]) => {
   //   await db.company.update({
   //     where: {
   //       id: item.id,
-  //     },
   //     data: {
   //       companyURL: item.companyURL ? item.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null
   //     }

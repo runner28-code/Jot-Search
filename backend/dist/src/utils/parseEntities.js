@@ -18,6 +18,7 @@ const parseBullhornCandidateToUser = (data) => {
         zip: data.address_zip,
         resume: undefined,
         linkedin: undefined,
+        skills: data.primarySkills,
         category: data.specialties,
         seniority: data.experience,
         workspace: data.willRelocate,

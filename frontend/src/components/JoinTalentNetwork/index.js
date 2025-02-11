@@ -9,6 +9,7 @@ export default function JoinTalentNetwork() {
 
   if( width <= 990 ) {
     return (<>
+      {/* Join Hero and call-to-action */}
       <section className='relative h-200 bg-join-hero bg-cover bg-center mb-[600px]'>
         <div className='justify-center w-11/12 mx-[5%] absolute -bottom-[100%]'>
           <div className='px-12 py-12 flex flex-col rounded-3xl bg-royalBlue'>
@@ -33,6 +34,7 @@ export default function JoinTalentNetwork() {
       </section>
     </>)
   }
+// Temp comment
   return (<>
     {/* Join Hero and call-to-action */}
     <section className='relative h-300 bg-join-hero bg-cover bg-center'>

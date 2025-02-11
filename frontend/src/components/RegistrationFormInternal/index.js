@@ -81,6 +81,7 @@ export default function RegistrationFormInternal(loggedIn) {
         });
         return;
       }
+
       // Attempt to upload resume before submitting user data
       const resumeResponse = await uploadFile('resumes', formObj.resume);
       if ( resumeResponse.result === false ) {
@@ -126,6 +127,7 @@ export default function RegistrationFormInternal(loggedIn) {
         setFormObj(defaultState);
         setSubmissionObject({
           loading: false,
+// Temp comment
           success: false,
         });
       }, 2000);

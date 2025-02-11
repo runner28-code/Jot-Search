@@ -33,6 +33,7 @@ export const UpdateJobStatus = ({ job }) => {
           optionStyles={'text-lg'}
           placeholder={'TP Career Status'}
           handleChange={async(e) => {
+            const { res } = await saveJob({ status: e.target.value, id: updatedJob.id })
             setUpdatedJob(res);
           }}
         />

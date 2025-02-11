@@ -20,6 +20,4 @@ function isTodayOrYesterday(dateObj) {
       returnObj.isYesterday = true;
     }
   }
-
-// Temp comment
   return returnObj;

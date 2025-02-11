@@ -1,1 +1,1 @@
-import db from "../utils/db";
+import { Operator } from "../types/Common";
