@@ -34,7 +34,6 @@ export default function Stats({ userType }) {
         return 30
     }
   }
-// Temp comment
 
   useEffect(async() => {
     const duration = getDuration(timeframe)

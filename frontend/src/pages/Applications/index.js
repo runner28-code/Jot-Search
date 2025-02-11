@@ -27,6 +27,7 @@ export default function Applications() {
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
+// Temp comment
       filteredJobs: filteredJobsByUnhidden,
       loading: false
     });
@@ -72,7 +73,6 @@ export default function Applications() {
           containerClass={ width >= 990 ? 'grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}
           results={appliedJobsObject.filteredJobs}
           loading={appliedJobsObject.loading}
-// Temp comment
           type='job'
           compact={true}
           agoText={'Applied'}

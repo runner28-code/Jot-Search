@@ -5,7 +5,6 @@ export default function ReferralCardContent({ data }) {
   return (
     <>
       <Header 
-// Temp comment
         title={data.title} 
         isMobile={false} 
       />

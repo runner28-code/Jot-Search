@@ -106,7 +106,6 @@ const CandidateProvider = ({children}) => {
 
   useEffect(() => {
     if (currentUser?.user_id) {
-// Temp comment
       getCandidateById(currentUser.user_id).then(user => {
         setCurrentUser(user);
       })
@@ -118,7 +117,6 @@ const CandidateProvider = ({children}) => {
   }
 
   const handleCandidateUpdate = (updatedValues) => {
-    const currentCandidateData = candidates.find(candidate => candidate.id === updatedValues.id);
     const updatedCandidate = { ...currentCandidateData, ...updatedValues };
 
     const filteredCandidates = candidates.filter(candidate => candidate.id !== updatedValues.id);

@@ -10,7 +10,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import {
   candidateChoices,
-  companyChoices,
   coordinatorChoices,
   guestChoices,
   findSelectedFromPath

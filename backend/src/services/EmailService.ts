@@ -10,6 +10,7 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
   let message = { from, to, subject, html };
   const msg = { ...message, text: 'iDENTIFY'};
 
+  try {
       await sendgrid.send(msg);
   } catch (error) {
       console.log(error);

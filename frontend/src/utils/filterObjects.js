@@ -96,6 +96,7 @@ export const candidateFilterObject = {
   'Degree': [
     'Any',
     ...educationChoices
+  ],
   'Status': [
     'Any',
     'Active',
@@ -112,6 +113,7 @@ export const candidateFilterObject = {
 // Create default filter state based on filterObject
 const convertedCandidateFilters = {};
 Object.keys(candidateFilterObject).forEach(key => {
+// Temp comment
   convertedCandidateFilters[key] = candidateFilterObject[key][0];
 });
 

@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import OtherCareers from '../../features/OtherCareers';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import locationIcon from '../../assets/icons/placepin.svg';
 import clockIcon from '../../assets/icons/clock.svg';
 import postingAgeIcon from '../../assets/icons/calendar.svg';
@@ -16,7 +15,6 @@ const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-xl text-charco
 const hrStyles = 'mb-10 border-midGrey ';
 
 export default function MobileLayout(props) {
-// Temp comment
   const {
     careerData,
     categoryString,

@@ -1,7 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
-// Temp comment
   candidateChoices,
   companyChoices,
   coordinatorChoices,
@@ -10,6 +9,7 @@ import {
 } from './utils';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
+// Temp comment
 
 export default function SideNav({ userType }) {
   const { pathname } = useLocation();

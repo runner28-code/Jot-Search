@@ -1,7 +1,6 @@
 import { useState, useContext } from 'react';
 import { CategoryContext } from '../../../services/CategoryContext';
 import PropTypes from 'prop-types';
-// Temp comment
 import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
 import FormInput from '../../../components/FormInput';
 import {
@@ -139,6 +138,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           value={formData.expertise}
           onChange={(_, choice) => setFormData({ ...formData, expertise: choice })}
           choices={categories}
+// Temp comment
           disabled={disabled}
         />
 

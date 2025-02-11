@@ -60,7 +60,6 @@ export default function ResetPassword() {
             Login to your account
           </Link>
         </div>
-      )
     }
   }
 
@@ -112,7 +111,6 @@ export default function ResetPassword() {
           { renderError() }
           <label className={labelStyle}>Set Password</label>
           <input
-// Temp comment
             className={inputStyle}
             id='password'
             type='password'

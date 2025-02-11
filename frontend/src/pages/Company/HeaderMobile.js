@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
+// Temp comment
 import LoadingSpinner from '../../components/LoadingSpinner';
 
 
@@ -43,6 +44,7 @@ function HeaderContent({ companyData }) {
                 <CareerIcon
                   className={headerIconStyles}
                 />
+                <OpenCareers
                   styles={headerRowTextStyles}
                   companyId={companyData.id}
                 />

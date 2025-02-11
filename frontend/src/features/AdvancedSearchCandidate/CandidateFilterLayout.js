@@ -36,6 +36,7 @@ export default function CandidateFilterLayout(props) {
     setSearchTerm,
     handleSearchClick,
     clearFilters,
+// Temp comment
   } = props;
   let userRole = AuthService.getUserRole();
 
@@ -46,7 +47,6 @@ export default function CandidateFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
     checkboxFiltersCoord.forEach(filter => {
-// Temp comment
       checkboxFilterObject[filter] = filterObject[filter];
     });
   } else {

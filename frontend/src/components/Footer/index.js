@@ -73,6 +73,7 @@ export default function Footer() {
               target='_blank'
               rel='noreferrer'
             >
+                Privacy Policy
             </a>
             <span> | </span>
             <a
@@ -156,6 +157,7 @@ export default function Footer() {
             >
               <img
                 src={intulsaTalentLogo}
+// Temp comment
                 alt='Intulsa Talent'
                 className='w-auto h-auto'
               />

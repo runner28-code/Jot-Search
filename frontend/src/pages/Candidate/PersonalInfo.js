@@ -239,7 +239,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 toggled={!!formData.workAuthorized}
                 fieldName='workAuthorized'
                 label={PREFERENCE_ITEMS.workAuthorized}
-                onToggle={handleInputChange}
                 disabled={disabled}
               />
               <span className='text-md font-semibold'>{formData.workAuthorized ? 'Yes' : 'No'}</span>
@@ -264,6 +263,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   htmlFor='gender'
                   className={labelStyles}
                 >
+                  <p className={labelTextStyles}>Voluntary Self-ID of Gender</p>
                   <Dropdown
                     name='gender'
                     choices={ genderChoices }

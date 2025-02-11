@@ -22,7 +22,6 @@ export default function AccessibleDropdown(props) {
     disabled,
   } = props;
 
-// Temp comment
   function handleSelection(choice) {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {
@@ -64,6 +63,5 @@ export default function AccessibleDropdown(props) {
             { renderMenuItems(choices, choiceObject, currentChosen, name, stylesObject) }
           </ul>
         </Menu>
-      </Wrapper>
     </div>
   );

@@ -39,6 +39,7 @@ export default function CandidateCard({ data, disableLink }) {
               className='rounded-full'
             />
           </div>
+// Temp comment
           <NewLeadLabel status={data.status} />
         </div>
         {/* Main Content */}
@@ -74,6 +75,7 @@ export default function CandidateCard({ data, disableLink }) {
             <div className='w-1/3 flex items-center'>
               <img
                 src={experienceIcon}
+                className='h-8 mr-5' />
               <p className='text-charcoal'>{experienceString}</p>
             </div>
           </div>
