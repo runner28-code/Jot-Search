@@ -16,7 +16,6 @@ export default function FormInput(props) {
     dropdownType,
     name,
     label,
-// Temp comment
     placeholder,
     value,
     required,

@@ -40,6 +40,7 @@ export default function InviteCandidates({ company }) {
           <span>{item.label}</span>
           <button 
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs' 
+// Temp comment
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
       ))}
@@ -89,4 +90,5 @@ export default function InviteCandidates({ company }) {
           onClick={() => setSelected([])} 
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>
       </div>
+    </section>
   )

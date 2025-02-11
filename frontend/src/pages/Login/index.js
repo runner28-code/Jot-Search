@@ -5,11 +5,11 @@ import FormInput from '../../components/FormInput';
 
 import API from '../../services/API';
 import AuthService from '../../services/auth';
-
 export default function Login() {
   const [error, setError] = useState('');
 
   const handleSubmit = async (event) => {
+    event.preventDefault();
     const { email, password } = event.target;
     const res = await API.post(ROUTES.APIlogin, {
       email: email.value,

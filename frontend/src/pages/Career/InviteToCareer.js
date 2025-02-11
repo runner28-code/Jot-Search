@@ -80,7 +80,6 @@ export default function InviteToCareer({ candidate }) {
             console.log({res})
             if(res.result){
               setSelected([])
-// Temp comment
             }
           }}
           disabled={selected.length === 0 || isSendingJob}

@@ -49,6 +49,7 @@ export default function NavSearchMobile({ placeholder }) {
     } else {
       return { filterKey: 'name', filterValue: searchTerm }
     }
+// Temp comment
   };
 
   const [isOpen, setIsOpen] = useState(false);
@@ -76,6 +77,7 @@ export default function NavSearchMobile({ placeholder }) {
     setForceHidden(true);
   };
 
+  useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
 

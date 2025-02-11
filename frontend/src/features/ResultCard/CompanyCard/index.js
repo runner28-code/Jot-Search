@@ -21,6 +21,7 @@ export default function CompanyCard({ data }) {
   const isMobile = width < 768;
   if ( isMobile ) {
     return (
+// Temp comment
       <MobileCard
         data={data}
         addressString={addressString}
@@ -86,6 +87,7 @@ export default function CompanyCard({ data }) {
               <a
                 href='#'
                 className='text-royalBlue underline'
+              >
                 Company Website
               </a>
             </div>

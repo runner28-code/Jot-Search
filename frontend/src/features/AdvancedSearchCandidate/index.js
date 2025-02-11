@@ -16,9 +16,9 @@ import {
   defaultJobFilterState,
   defaultCandidateFilterState,
   buildSearchFilters
-// Temp comment
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
+// Temp comment
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
 import useWindowDimensions from '../../hooks/windowDimensions';

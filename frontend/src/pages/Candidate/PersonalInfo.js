@@ -212,7 +212,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   required
                   disabled={disabled}
                 />
-// Temp comment
               </label>
               <label
                 htmlFor='city'
