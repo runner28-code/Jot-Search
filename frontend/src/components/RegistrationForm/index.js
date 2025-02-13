@@ -360,6 +360,7 @@ export default function RegistrationForm(loggedIn) {
             error={errors.includes('linkedin')}
           />
           <FormInput
+            type='single-select'
             name='employmentPreference'
             label='Preferred Employment Type'
             required={true}

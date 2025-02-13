@@ -63,6 +63,7 @@ export default function AddCoordinator() {
     if (Object.keys(newErrors).length > 0) {
       setSubmissionObject({
         ...submissionObject,
+        errors: newErrors,
       });
     }
     // Update form object with new value

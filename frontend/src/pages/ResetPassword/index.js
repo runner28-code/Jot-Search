@@ -44,7 +44,6 @@ export default function ResetPassword() {
         setSuccess(true);
       } else {
         setError(res.data.error);
-      }
     }
   };
 
@@ -56,6 +55,7 @@ export default function ResetPassword() {
           <Link
             to={ROUTES.login}
             className='underline block my-4 text-royalBlue'
+          >
             Login to your account
           </Link>
         </div>

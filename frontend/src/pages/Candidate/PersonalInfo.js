@@ -110,6 +110,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
               <label
                 htmlFor='firstname'
                 className={labelStyles}
+              >
                 <p className={labelTextStyles}>First Name</p>
                 <input
                   type='text'

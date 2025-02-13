@@ -15,3 +15,4 @@ export const saveCompanies = async (companies: any[]) => {
 								console.log(`Company with ID: ${company.id} exists`);
 								return -1;
 							}
+			

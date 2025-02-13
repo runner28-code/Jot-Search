@@ -57,3 +57,4 @@ export class CandidateController {
         candidate = {
           ...(userCandidate || {}),
           ...returnableUserData,
+        };

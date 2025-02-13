@@ -13,6 +13,7 @@ import { checkForJobFilter, sleep } from "../utils";
 import db from "../utils/db";
 import { User } from "../types/User";
 import { Job } from "prisma/prisma-client";
+import { sendEmail } from "./EmailService";
 import { JOB_FIELDS } from "../utils/constant";
 
 export class BullhornService {
@@ -117,7 +118,6 @@ export class BullhornService {
   async getAccessToken(): Promise<boolean> {
     console.log("\n***** getAccessToken *****");
     const query = queryString.stringify(
-      {
         grant_type: "authorization_code",
         client_id: config.bullhornClientID,
         client_secret: config.bullhornClientSecret,
@@ -136,3 +136,5 @@ export class BullhornService {
       this.access_token = access_token;
       this.refresh_token = refresh_token;
       console.log("Access Token: ", this.access_token);
+      console.log("Refresh Token: ", this.refresh_token);
+      return true;

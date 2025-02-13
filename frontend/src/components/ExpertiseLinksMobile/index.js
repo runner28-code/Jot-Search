@@ -78,6 +78,7 @@ export default function ExpertiseLinksMobile() {
           state={{ Expertise: 'Finance' }}
         >
           <img
+// Temp comment
             src={financeIcon}
             alt='Finance Icon'
             className={iconStyles}

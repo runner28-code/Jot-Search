@@ -45,3 +45,4 @@ export type Company = {
     workWeekStart?: string,
     address_country_id?: string,
     datedAdded?: string,
+};

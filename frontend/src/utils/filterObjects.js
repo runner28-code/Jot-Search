@@ -75,7 +75,6 @@ export const candidateFilterObject = {
     'Remote',
     'On Site',
     'Hybrid'
-  ],
   'Employment Type': [
     'Any',
     'Full-Time',

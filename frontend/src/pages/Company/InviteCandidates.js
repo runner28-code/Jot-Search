@@ -15,6 +15,7 @@ export default function InviteCandidates({ company }) {
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
 
+// Temp comment
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
 
   const candidateOptions = candidates?.map(candidate => {
@@ -61,6 +62,7 @@ export default function InviteCandidates({ company }) {
 
       <MultiSelect
         isLoading={isLoading}
+        options={candidateOptions}
         value={selected}
         onChange={setSelected}
         labelledBy="Select"

@@ -243,7 +243,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
                 <p>Upload</p>
               </label>
             </div>
-          )}
         </div>
       </>}
 

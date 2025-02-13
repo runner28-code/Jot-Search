@@ -12,3 +12,4 @@ export type User = {
   city?: string;
   state?: string;
   zip?: string;
+  resume?: string;

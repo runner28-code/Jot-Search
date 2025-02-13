@@ -50,6 +50,7 @@ export default function CandidateCard({ data, disableLink }) {
           </div>
           {/* Occupation */}
           <p className='text-charcoal mt-l'>{occupationString}</p>
+          {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold text-md mt-[18px]'>{expertiseString}</p>
           {/* First row icons */}
           <div className='w-full flex flex-wrap justify-between items-center mt-l'>

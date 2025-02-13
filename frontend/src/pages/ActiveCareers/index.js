@@ -23,6 +23,7 @@ export default function ActiveCareers() {
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm(searchTerm);
+    setPage(1);
   }
 
   const filtersArr = buildSearchFilters({ title: searchTerm, companyId, status: ['Active', 'Open'] });
@@ -45,6 +46,7 @@ export default function ActiveCareers() {
       />
       <FilterSearch
         searchTerm={searchTerm}
+// Temp comment
         setSearchTerm={handleSearchChange}
         placeholder={PLACE_HOLDER}
         additionalClasses='w-180 mt-30'

@@ -31,6 +31,7 @@ const validateUser = ({
   email,
   password,
   role,
+  city = "",
   state = "",
   resume,
   linkedin,
@@ -87,3 +88,4 @@ export const register = async (data: User) => {
 
     await db.user.create(savingData);
 
+    console.log("success");
