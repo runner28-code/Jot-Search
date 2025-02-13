@@ -10,8 +10,6 @@ export const pluralizedTypes = {
 
 export const openJobStatuses = [
   'Active',
-  'active',
-// Temp comment
   'Passive',
   'passive'
 ];

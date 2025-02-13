@@ -33,7 +33,6 @@ const availableTabChoicesByUserType = {
 }
 
 function useTabState(disabledTabs, userType, pathname) {
-  if (disabledTabs) {
     switch (pathname) {
       case '/candidates':
         return useState('candidates');

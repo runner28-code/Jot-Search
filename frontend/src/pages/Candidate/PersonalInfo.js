@@ -310,7 +310,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
               </div>
             </div>
           )}
-        </div>
         {editMode && <div className='w-full flex justify-end gap-l mt-16'>
           <button 
             onClick={() => setEditMode(false)} 

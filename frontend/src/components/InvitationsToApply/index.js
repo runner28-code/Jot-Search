@@ -42,6 +42,7 @@ export default function InvitationsToApply () {
               : appliedJobsObject.jobs.slice(0, 2).map((career, index) => {
                 return(<>
                   <CareerCard
+                    key={career.id}
                     index={index}
                     data={career}
                     agoDate={career.createdAt}
@@ -49,6 +50,5 @@ export default function InvitationsToApply () {
                 </>)
               })
           }
-        </div>)}
     </div>
   )

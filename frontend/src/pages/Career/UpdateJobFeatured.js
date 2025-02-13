@@ -38,7 +38,6 @@ export const UpdateJobFeatured = ({ job }) => {
               window.location.reload()
             }
           }}>
-// Temp comment
           <span className="sr-only">inTulsa Featured</span>
           <span 
             aria-hidden="true" 
@@ -47,7 +46,6 @@ export const UpdateJobFeatured = ({ job }) => {
         </button>
       
         <label 
-          htmlFor='featured' 
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured
         </label>

@@ -22,10 +22,10 @@ export default function TypeaheadDropdown(props) {
   const [inputValue, setInputValue] = useState('');
   const [filteredChoices, setFilteredChoices] = useState(choices);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-// Temp comment
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
+// Temp comment
   const handleChoiceClick = useCallback((choice) => {
     if (!currentChosen.includes(choice)) {
       onChange(name, [...currentChosen, choice]);

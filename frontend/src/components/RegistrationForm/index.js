@@ -368,6 +368,7 @@ export default function RegistrationForm(loggedIn) {
             value={formObj.employmentPreference}
             onChange={handleChange}
             choices={['Any', 'Full-Time', 'Contract']}
+            error={errors.includes('employmentPreference')}
           />
           <FormInput
             type='single-select'

@@ -6,10 +6,10 @@ import AdvancedSearch from '../../features/AdvancedSearch';
 import AdvancedSearchPublic from '../../features/AdvancedSearchPublic';
 import AdvancedSearchCandidate from '../../features/AdvancedSearchCandidate';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-// Temp comment
 import { MdSearch as SearchIcon } from 'react-icons/md';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import Dashboard from '../../components/DashboardPublic';
+// Temp comment
 import DashboardCandidate from '../../components/DashboardCandidate';
 import useWindowDimensions from '../../hooks/windowDimensions';
 

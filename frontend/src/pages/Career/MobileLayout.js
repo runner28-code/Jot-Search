@@ -61,6 +61,7 @@ export default function MobileLayout(props) {
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>
             </div>
           </div>
+          {/* Second row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
             {/* Posting age */}
             <div className='w-1/2 flex items-center pr-4'>
@@ -68,7 +69,6 @@ export default function MobileLayout(props) {
                 src={postingAgeIcon}
                 className='h-11 mr-5' />
               <p className='text-textBlack text-xs'>{postingAge}</p>
-            </div>
             {/* Employement Type */}
             <div className='w-1/2 flex items-center'>
               <img

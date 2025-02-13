@@ -36,7 +36,6 @@ const job_filter_exclude_keys = [
   "baseball",
   "beauty",
   "behavior",
-  "behavior coach",
   "bilingual",
   "billing",
   "bim",

@@ -20,7 +20,6 @@ import {
   login,
   update,
   recovery,
-  getStats,
   getLandingPageStats,
   findUserByEmail,
   getCompanyDashboardStats,

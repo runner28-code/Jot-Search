@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 const mockJobsData = [
   {
     id: '1ea36da6-8819-4617-8c09-5df46f1reg78',
+    title: 'Database Administrator',
     company: 'Hobby Lobby', // ! Not in schema yet
     clientCorporationID: '05dbac7b-bf38-47ce-a8e1-d13ceebd8ee8',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
@@ -54,6 +55,7 @@ const mockJobsData = [
     specialty: 'Technology'
   },
   {
+// Temp comment
     id: 'c79462d2-1950-4cc0-ba31-a21a566c3c9d',
     title: 'Payroll Administrator',
     company: 'Holberton',

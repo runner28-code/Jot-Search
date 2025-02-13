@@ -17,6 +17,7 @@ export const jobFilterObject = {
     'Hybrid',
     'Off-Site',
   ],
+  'Years Experience': [
     'Any',
     ...experienceValues
   ],
@@ -88,7 +89,6 @@ export const candidateFilterObject = {
     'No'
   ],
   'Actively Looking': [
-    'Any',
     'Yes',
     'No'
   ],

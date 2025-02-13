@@ -43,6 +43,7 @@ export const choices = {
   },
   myApplications: {
     label: 'My Applications',
+    icon: ApplicationIcon,
     link: ROUTES.applications,
   },
   myFavorites: {
@@ -73,7 +74,6 @@ export const choices = {
 }
 
 // Map choices to appropriate icons
-export const candidateChoices = [
   choices.dashboard,
   choices.profile,
   choices.myApplications,

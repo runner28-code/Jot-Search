@@ -25,6 +25,7 @@ export default function CompanyCard({ data }) {
         data={data}
         addressString={addressString}
         employeeString={employeeString}
+// Temp comment
       />
     )
   }

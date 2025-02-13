@@ -16,6 +16,7 @@ import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageSta
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // Styles
+const heroStyles = 'relative flex flex-col items-center h-135 vw-1024:h-280 vw-1280:h-280 relative z-10 bg-cover bg-center bg-explore-tulsa ';
 
 export default function LandingPage() {
   const { width } = useWindowDimensions();
@@ -30,7 +31,6 @@ export default function LandingPage() {
         <div className='mt-34 vw-1024:mt-60 flex flex-col items-center'>
           { renderLocation() }
           <p className='text-white font-spaceGrotesk font-semibold w-2/3 vw-1024:w-full text-[35.2px] vw-1024:text-[72px] text-center'>{'Find a Career You\'ll Love'}</p>
-          { renderColorShapes() }
           { renderJoinTalent() }
         </div>
         { renderSearch() }
