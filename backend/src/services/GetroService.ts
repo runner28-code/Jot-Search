@@ -6,6 +6,7 @@ import { saveBullhornJobs } from '../utils/BullhornCrud';
 import { checkForJobFilter, sleep } from '../utils';
 
 export class GetroService {
+    public static client: GetroService | null = null;
     private email = config.getroEmail || '';
     private password = config.getroPassword || '';
     private api_base_url_v1 = 'https://api.getro.com/api/v1';

@@ -31,7 +31,6 @@ export default function InviteToCareer({ candidate }) {
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
-// Temp comment
   }
 
   const SelectedValues = () => {
@@ -81,6 +80,7 @@ export default function InviteToCareer({ candidate }) {
             console.log({res})
             if(res.result){
               setSelected([])
+// Temp comment
             }
           }}
           disabled={selected.length === 0 || isSendingJob}

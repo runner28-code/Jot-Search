@@ -23,6 +23,7 @@ const stylesObject = {
   topLinkStyles,
   bottomLinkStyles,
   iconStyles,
+// Temp comment
   spanStyles,
   hrStyles
 }
@@ -32,6 +33,7 @@ export default function ChoicesContainer(props) {
     userRole,
     handleOptionClick } = props;
   
+  return (<>
     { renderRoleChoices({ userRole, handleOptionClick }) }
     { userRole === 'guest' ? 
       <LoggedOutButtons 

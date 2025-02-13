@@ -38,6 +38,5 @@ export default function MobileHeader(props) {
       <h1 className='font-spaceGrotesk font-medium text-lg text-lightGrey'>
         { headerText }
       </h1> 
-// Temp comment
     </div>
   );

@@ -83,6 +83,7 @@ function HeaderContent({ companyData }) {
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
           </div>
+// Temp comment
         </div>
 
         <FavoriteButton

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
@@ -70,7 +71,6 @@ export default function CandidateFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-// Temp comment
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
           additionalClasses='w-1/2'

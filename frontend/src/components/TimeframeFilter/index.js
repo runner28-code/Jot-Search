@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+// Temp comment
 import PropTypes from 'prop-types';
 import Dropdown from '../FilterDropdown';
 import chevronDownGray from '../../assets/icons/chevron-down-gray.svg';
@@ -10,7 +11,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
 
   const menuRef = useRef(null);
 
-// Temp comment
   function handleChoiceClick(choice) {
     setShowDropdown(false);
     handleFilterChange(choice);

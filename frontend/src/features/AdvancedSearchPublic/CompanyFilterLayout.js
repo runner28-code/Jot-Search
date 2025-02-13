@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 export default function CompanyFilterLayout(props) {
   const {
@@ -9,7 +8,6 @@ export default function CompanyFilterLayout(props) {
     setSearchTerm,
     handleSearchClick,
     clearFilters,
-  } = props;
   const { width } = useWindowDimensions();
   return (
     <div className='flex flex-col gap-xxl-4'>

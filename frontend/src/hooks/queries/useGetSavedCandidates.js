@@ -6,7 +6,7 @@ export const prefetchCandidates = async ({userId, count, page}) => {
   await queryClient.prefetchQuery(getCandidatesKey({userId, count, page}), () => getSavedCandidates(userId, count, page));
 }
 export const useGetSavedCandidates = ({ count, page, userId, enabled = true }) => {
-    getCandidatesKey({userId, count, page}),
+  const { data, error, isLoading } = useQuery(
     () => getSavedCandidates(userId, count, page),
     { enabled }
   );

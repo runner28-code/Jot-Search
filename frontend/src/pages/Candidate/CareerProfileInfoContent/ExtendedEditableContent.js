@@ -127,6 +127,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             />
         }
       </label>
+
       {isSourceUserTable && <>
         <FormInput
           type='single-select'

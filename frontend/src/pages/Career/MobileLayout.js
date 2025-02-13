@@ -69,6 +69,7 @@ export default function MobileLayout(props) {
                 src={postingAgeIcon}
                 className='h-11 mr-5' />
               <p className='text-textBlack text-xs'>{postingAge}</p>
+            </div>
             {/* Employement Type */}
             <div className='w-1/2 flex items-center'>
               <img
@@ -117,6 +118,7 @@ export default function MobileLayout(props) {
             applicationUrl={careerData.application_path || careerData.url}
           />
         }
+// Temp comment
         <button
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
           onClick={() => navigate(-1)}

@@ -25,7 +25,6 @@ export default function TypeaheadDropdown(props) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
-// Temp comment
   const handleChoiceClick = useCallback((choice) => {
     if (!currentChosen.includes(choice)) {
       onChange(name, [...currentChosen, choice]);
@@ -64,7 +63,6 @@ export default function TypeaheadDropdown(props) {
       className='relative w-full'
       ref={menuRef}  
     >
-      { renderLabel(name, label, required) }
       <input 
         type={type}
         name={name}

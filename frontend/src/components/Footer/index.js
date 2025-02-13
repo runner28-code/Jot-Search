@@ -146,6 +146,7 @@ export default function Footer() {
             >
               <img
                 src={intulsaLogo}
+// Temp comment
                 alt='Intulsa'
                 className='w-auto h-auto'
               />

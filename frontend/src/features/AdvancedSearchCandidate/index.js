@@ -9,7 +9,6 @@ import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
-// Temp comment
 import { useIsMount } from '../../hooks/useIsMount';
 import {
   candidateFilterObject,
@@ -18,7 +17,6 @@ import {
   defaultCandidateFilterState,
   buildSearchFilters
 } from '../../utils/filterObjects';
-import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
 import useWindowDimensions from '../../hooks/windowDimensions';

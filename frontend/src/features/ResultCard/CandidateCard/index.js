@@ -29,6 +29,7 @@ export default function CandidateCard({ data, disableLink }) {
     >
       <LinkWrapper 
         link={link}
+        disableLink={disableLink}
       >
         {/* Card Image and New Lead Label */}
         <div className='flex flex-col items-center gap-m mr-20'>

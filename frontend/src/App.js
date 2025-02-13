@@ -47,6 +47,7 @@ function App() {
               element={<Career />} />
             <Route
               path={`${ROUTES.apply}/:id`}
+              element={<Apply />} />
             <Route
               path={`${ROUTES.companies}/:id`}
               element={<Company />} />

@@ -25,6 +25,7 @@ API.interceptors.request.use(
 
 export default API;
 
+// Temp comment
 export function appendPathToBaseUrl(path) {
   if (path.slice(0, 4) === 'http') {
     return path; // It's already a full URL
@@ -39,7 +40,6 @@ export async function getCandidates(filtersArr, count, page) {
 }
 
 export async function getCandidatesFull(filtersArr, count, page, fields = null) {
-// Temp comment
   const formattedFilters = formatCandidateFilters(filtersArr)
     .filter(filter => {
       if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {

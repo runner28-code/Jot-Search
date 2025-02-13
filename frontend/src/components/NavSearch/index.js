@@ -76,7 +76,6 @@ export default function NavSearch({ placeholder }) {
   };
 
   useEffect(() => {
-    listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
 
   const combinedResults = {
@@ -101,6 +100,7 @@ export default function NavSearch({ placeholder }) {
         <NavSearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
+          placeholder={ placeholder }
           alternateStylesObject={ stylesObject } 
           setIsOpen={ setIsOpen }
           isOpen={ isOpen }

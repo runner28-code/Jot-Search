@@ -5,4 +5,3 @@
 
 */
 -- AlterTable
-ALTER TABLE "Candidate" DROP COLUMN "externalID",

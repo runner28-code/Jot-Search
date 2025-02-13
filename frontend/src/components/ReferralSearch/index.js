@@ -3,7 +3,6 @@ import TypeaheadDropdown from '../FormInput/TypeaheadDropdown';
 
 const mockJobsData = [
   {
-// Temp comment
     id: '1ea36da6-8819-4617-8c09-5df46f1e4d07',
     title: 'Data Scientist',
     company: 'Hobby Lobby',
@@ -19,7 +18,6 @@ const mockJobsData = [
     company: 'OSU',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/osu-logo_clipped_rev_1_3_kkpczy.webp',
     salaryRange: '$80k-$90k',
-    location: 'Tulsa, OK',
     listingAge: '1 month',
     specialty: 'Technology'
   },

@@ -13,13 +13,13 @@ import {
   CurrentUser,
   QueryParams,
 } from "routing-controllers";
-import { BullhornService } from "../services/BullhornService";
 import { sendVerification } from "../services/EmailService";
 import {
   register,
   login,
   update,
   recovery,
+  getStats,
   getLandingPageStats,
   findUserByEmail,
   getCompanyDashboardStats,

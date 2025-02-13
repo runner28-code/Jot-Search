@@ -17,7 +17,6 @@ import AuthService from '../../services/auth';
 
 
 import {
-  defaultJobFilterState,
   buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
@@ -72,6 +71,7 @@ export default function NavSearchMobile({ placeholder }) {
   }, [location]);
 
   /* Close dropdown on any outside clicks */
+  const closeDropdown = () => {
     setForceHidden(true);
   };
 

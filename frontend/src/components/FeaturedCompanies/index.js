@@ -12,7 +12,6 @@ export default function FeaturedCompanies() {
     {
       key: 'status',
       value: 'active'
-    }
   ];
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
@@ -40,6 +39,7 @@ export default function FeaturedCompanies() {
         <Link
           to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
+          Browse All
         </Link>
       </div>
     </div>
