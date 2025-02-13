@@ -8,7 +8,6 @@ import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
-// Temp comment
 import {
   candidateChoices,
   companyChoices,
@@ -23,6 +22,5 @@ export default function NavBar() {
 
   if ( width < 1280 ) {
     return <NavBarLayout />
-  } else {
     return <DesktopNavBarLayout />
   }

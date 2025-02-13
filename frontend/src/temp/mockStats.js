@@ -10,7 +10,6 @@ export const mockCandidateStats = {
     },
     'Last 14 Days': {
       count: 4,
-// Temp comment
       prevCount: 3
     },
     'Last 30 Days': {
@@ -45,4 +44,5 @@ export const mockCandidateStats = {
     }
   },
   'Jobs Saved': {
+// Temp comment
     'Today': {

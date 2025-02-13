@@ -20,6 +20,7 @@ export default function AccountRecovery() {
       setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);
+    }
   };
   function setType(response, condition) {
     setCondition(condition);
@@ -28,6 +29,7 @@ export default function AccountRecovery() {
 
   function renderResponse () {
     const successStyle = 'mb-4 text-success';
+// Temp comment
     const errorStyle = 'mb-4 text-error';
     if( response ) {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )

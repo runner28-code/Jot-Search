@@ -8,4 +8,4 @@ export type Company = {
     facebook_url?: string;
     founded?: string;
     instagram_url?: string;
-    linkedin_url?: string;
+    jobs_count?: string;

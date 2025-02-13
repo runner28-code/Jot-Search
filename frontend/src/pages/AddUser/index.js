@@ -4,6 +4,7 @@ import Dropdown from '../../components/UniversalDropdown';
 import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
 import AddCandidate from './AddCandidate';
+// Temp comment
 import AddCompanyUser from './AddCompanyUser';
 import AddCoordinator from './AddCoordinator';
 import User from '../../assets/icons/add-new-user.svg';
@@ -23,6 +24,7 @@ export default function AddUser() {
   const companyContainer = '';
 
   return (<>
+    <h2 className='text-lg vw-768:text-h2 text-royalBlue font-spaceGrotesk font-bold mb-16 text-center flex items-center'>
       <img
         src={User}
         alt='User Icon'

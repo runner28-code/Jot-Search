@@ -12,3 +12,4 @@ async function main() {
     await seedUsers();
     console.log("Done🎉");
   } catch (err) {
+    console.error("Error during seed...❌");

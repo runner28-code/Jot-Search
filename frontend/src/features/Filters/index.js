@@ -7,6 +7,7 @@ export default function Filters(props) {
     handleFilterChange,
     defaultFilterObject,
     filterObject,
+// Temp comment
     searchLabel,
     searchTerm,
     setSearchTerm,
@@ -24,6 +25,5 @@ export default function Filters(props) {
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}
       </div>
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
-// Temp comment
     </div>
   )

@@ -7,6 +7,7 @@ import useWindowDimensions from '../../../hooks/windowDimensions';
 export default function ResetButton({ candidateData, setType }) {
   const { width } = useWindowDimensions();
   const handleSubmit = async (event) => {
+// Temp comment
     event.preventDefault();
     const { email } = candidateData;
     const res = await API.post(ROUTES.APIaccountRecovery, {
@@ -21,6 +22,7 @@ export default function ResetButton({ candidateData, setType }) {
   };
   if( width <= 990 ) {
     return (
+      <button
         className='h-20 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
         onClick={handleSubmit}
       >

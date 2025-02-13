@@ -65,9 +65,7 @@ function App() {
               element={<Navigate to={ROUTES.landingPage} />}
             />
           </Routes>
-// Temp comment
         </div>
       </main>
       <Footer />
-    </div>
   );

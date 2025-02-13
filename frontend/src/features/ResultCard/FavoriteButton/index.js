@@ -9,7 +9,6 @@ import useWindowDimensions from '../../../hooks/windowDimensions';
 const VALID_TYPES = ['job', 'company', 'candidate'];
 
 export default function FavoriteButton({ type, data, addClass, isFavoriteOverride = null }) {
-// Temp comment
   const role = AuthService.getUserRole();
   if ( !AuthService.loggedIn() || role === 'coordinator' ) {
     return null;
@@ -36,7 +35,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
     } catch (error) {
       console.log(error);
       setIsFavorite(isFavorite => isFavorite);
-    }
   }
 
   let styles = 'absolute flex justify-center items-center cursor-pointer ';

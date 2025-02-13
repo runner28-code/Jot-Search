@@ -181,7 +181,6 @@ export default function RegistrationFormInternal(loggedIn) {
       ...formObj,
       referredBy: value
     })
-    setReferralChoice(false);
   }
 
 

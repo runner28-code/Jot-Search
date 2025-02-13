@@ -11,6 +11,7 @@ export function formatCandidateData(candidateData) {
     formattedData.address2 = candidateData.address_address2 || '';
     formattedData.city = candidateData.address_city || '';
     formattedData.state = candidateData.address_state || '';
+// Temp comment
     formattedData.zip = candidateData.address_zip || '';
   }
   formattedData.address = buildCandidateAddress(candidateData);
@@ -26,6 +27,7 @@ export function formatCandidateData(candidateData) {
   formattedData.phone = formatPhoneNumber(candidateData.phone);
   formattedData.expertise = candidateData.expertise || 'No Expertise Chosen';
   formattedData.skills = candidateData.skills || 'No Skills Chosen';
+  // If Candidate experience is a string, no need to map it
   if ( candidateData.experience && !isNaN(candidateData.experience) ) {
     formattedData.experience = candidateData.experience.toString();
   }

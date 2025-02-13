@@ -155,7 +155,6 @@ export default function AddCoordinator() {
         <input
           type='password'
           className={submissionObject.errors.verifyPassword ? invalidInputStyles : validInputStyles}
-          name='verifyPassword'
           placeholder='Verify Password'
           value={formObject.verifyPassword}
           onChange={handleInputChange}

@@ -15,7 +15,6 @@ export default function InviteCandidates({ company }) {
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
 
-// Temp comment
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
 
   const candidateOptions = candidates?.map(candidate => {
@@ -77,6 +76,7 @@ export default function InviteCandidates({ company }) {
             console.log({selected})
             const res = await sendCandidatesToCompanies({ companyIds: [company.id], candidateIds: selected.map((option) => option.value) })
             console.log({res})
+// Temp comment
             if(res.result){
               setSelected([])
             }

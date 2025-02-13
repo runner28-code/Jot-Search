@@ -44,6 +44,7 @@ export default function ResetPassword() {
         setSuccess(true);
       } else {
         setError(res.data.error);
+      }
     }
   };
 
@@ -134,7 +135,6 @@ export default function ResetPassword() {
             </button>
           </div>
         </form>
-      </div>
       {/* Assistance call-to-action */}
       <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
         <span>Need Help? Just ask </span>

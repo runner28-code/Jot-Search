@@ -12,6 +12,7 @@ export const jobReferralChoices = [
   'LinkedIn',
   'Indeed',
   'Google',
+  'Friend',
   'Other',
 ];
 
@@ -19,7 +20,6 @@ export const defaultCareerState = {
   title: '',
   company: {
     name: '',
-    logo: '',
   },
   loading: true,
 }
