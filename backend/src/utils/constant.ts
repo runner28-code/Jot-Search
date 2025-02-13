@@ -65,3 +65,6 @@ const job_filter_exclude_keys = [
   "case management",
   "case manager",
   "cashier",
+  "casino",
+  "chef",
+  "chemical",

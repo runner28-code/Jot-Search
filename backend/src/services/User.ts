@@ -31,7 +31,6 @@ const validateUser = ({
   email,
   password,
   role,
-  city = "",
   state = "",
   resume,
   linkedin,
@@ -71,6 +70,7 @@ export const register = async (data: User) => {
     const user = justifyData(data, USERKEYS);
     const existing = await isExistUser("email", user.email);
 
+    if (existing) {
       console.log("user exists");
       return {
         result: false,
@@ -84,3 +84,6 @@ export const register = async (data: User) => {
         password: encryptPassword(user.password),
       } as any,
     }
+
+    await db.user.create(savingData);
+

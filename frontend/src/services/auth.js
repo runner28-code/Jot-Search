@@ -62,6 +62,7 @@ class AuthService {
   clearStorage() {
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
+// Temp comment
     localStorage.removeItem('savedJobs');
     localStorage.removeItem('savedCompanies');
     localStorage.removeItem('savedCandidates');
@@ -109,6 +110,7 @@ class AuthService {
   }
 
   toggleSavedCompany(companyID, action) {
+    const savedCompanies = this.getSavedCompanyIDs();
     if ( action === 'save' ) {
       savedCompanies.push(companyID);
     } else {

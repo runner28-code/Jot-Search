@@ -17,6 +17,7 @@ import AuthService from '../../services/auth';
 
 
 import {
+  defaultJobFilterState,
   buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';

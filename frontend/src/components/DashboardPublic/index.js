@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageStats';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
-// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import filterIcon from '../../assets/icons/filter-toggle.svg';
 import * as ROUTES from '../../routes';
@@ -20,6 +19,7 @@ export default function DashboardPublic({togglePassState}) {
   const location = useLocation().pathname;
   const active = ' bg-royalBlue';
 
+// Temp comment
   const careerTitle = totalJobsCount + ' Open Careers';
   const companyTitle = totalCompaniesCount  + ' Companies';
 

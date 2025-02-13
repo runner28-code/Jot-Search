@@ -13,6 +13,7 @@ import {
   CurrentUser,
   QueryParams,
 } from "routing-controllers";
+import { BullhornService } from "../services/BullhornService";
 import { sendVerification } from "../services/EmailService";
 import {
   register,
@@ -29,3 +30,4 @@ import {
 import { User, USER_TABLE } from "../types/User";
 
 import { COORDINATOR, CANDIDATE, COMPANY, ROLES } from "../utils/constant";
+

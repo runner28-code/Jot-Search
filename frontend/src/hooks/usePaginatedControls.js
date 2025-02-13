@@ -97,7 +97,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
               prefetchFunc={prefetchFunc}
             >
               {totalPages}
-// Temp comment
             </PaginationButton>
           </>   
                 

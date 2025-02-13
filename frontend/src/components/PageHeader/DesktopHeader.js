@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import SourceIdentifier from '../SourceIdentifier';
 
-export default function DesktopHeader(props) {
   const {
     headerText,
     icon,
@@ -49,4 +48,5 @@ export default function DesktopHeader(props) {
           {'< Go Back'}
         </button>
       )}
+    </div>
   )

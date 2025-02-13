@@ -76,14 +76,12 @@ function HeaderContent({ companyData }) {
             />
             { renderCompanyWebsite(companyData.companyURL, headerRowTextStyles) }
           </div>
-          <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={Triangle}
               className={headerIconStyles}
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
           </div>
-// Temp comment
         </div>
 
         <FavoriteButton

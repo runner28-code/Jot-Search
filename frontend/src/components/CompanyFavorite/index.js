@@ -41,9 +41,11 @@ export default function CareerFavorite () {
           <h3 className='text-md text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Find Companies to Favorite</h3>
           <Link
             to={ROUTES.careers}
+// Temp comment
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
           </Link>
+        </div>
       </div>
       <div className='pt-24'>
         <Link

@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
@@ -59,7 +58,6 @@ export default function CandidateFilterLayout(props) {
   }
 
 
-  return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }

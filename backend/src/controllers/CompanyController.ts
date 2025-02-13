@@ -47,3 +47,6 @@ export class CompanyController {
     @QueryParam("id") id: string
   ): Promise<CompanySearchByID> {
     const datasource = getDataSource(id);
+    if (datasource === DataSource.BULLHORN) {
+      const company = await this.getCompanyByIdFromBullhorn(id);
+      return {

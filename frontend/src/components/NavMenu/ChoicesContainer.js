@@ -23,7 +23,6 @@ const stylesObject = {
   topLinkStyles,
   bottomLinkStyles,
   iconStyles,
-// Temp comment
   spanStyles,
   hrStyles
 }

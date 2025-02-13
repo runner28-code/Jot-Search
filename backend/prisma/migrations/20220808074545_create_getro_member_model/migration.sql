@@ -7,3 +7,4 @@ CREATE TABLE "UserTalentCollection" (
     "approved_at" TEXT,
     "approved_by" TEXT,
     "created_at" TEXT,
+    "updated_at" TEXT,

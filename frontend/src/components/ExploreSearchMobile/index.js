@@ -8,7 +8,6 @@ import * as ROUTES from '../../routes';
 export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
   const [filterState, setFilterState] = useState({
-// Temp comment
     title: '',
     'On-Site/Remote': 'Any Work Setting',
     expertise: 'Any Expertise',
@@ -50,7 +49,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   }
   return (
     <div className={containerStyles}>
-      <h5 className='text-md text-white font-roboto text-center mt-8 mb-8'>
         {`Search from ${totalJobs} Opportunities from ${totalCompanies} Companies near Tulsa, OK`}
       </h5>
       <FilterSearch

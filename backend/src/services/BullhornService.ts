@@ -13,7 +13,6 @@ import { checkForJobFilter, sleep } from "../utils";
 import db from "../utils/db";
 import { User } from "../types/User";
 import { Job } from "prisma/prisma-client";
-import { sendEmail } from "./EmailService";
 import { JOB_FIELDS } from "../utils/constant";
 
 export class BullhornService {
@@ -131,3 +130,9 @@ export class BullhornService {
     const res = await axios.post(url);
     console.log(res.status);
     console.log(res);
+    console.log("============================ \n");
+    if (res.status === 200) {
+      const { access_token, refresh_token } = res.data;
+      this.access_token = access_token;
+      this.refresh_token = refresh_token;
+      console.log("Access Token: ", this.access_token);

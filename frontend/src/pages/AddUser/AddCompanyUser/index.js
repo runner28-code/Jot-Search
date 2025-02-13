@@ -76,6 +76,7 @@ export default function AddCompanyUser() {
                   onClick={() => handleCompanyClick(company)}
                 >
                   {company.name}
+                </div>
               ))}
             </div>
           )}

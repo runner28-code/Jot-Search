@@ -15,8 +15,8 @@ import {
   candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
-// Temp comment
   defaultCandidateFilterState,
+// Temp comment
   buildSearchFilters
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';

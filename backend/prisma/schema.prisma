@@ -100,3 +100,7 @@ model Lead {
   occupation            String?
   owner                 Json?
   ownerCorporation      String?
+  pager                 String?
+  phone                 String?
+  phone2                String?
+  phone3                String?

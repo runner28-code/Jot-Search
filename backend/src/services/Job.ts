@@ -18,3 +18,4 @@ export const createJob = async (job: Job) => {
 
     const newJob = await db.job.create({
       data: {
+        ...sanitizedJob,
