@@ -57,7 +57,6 @@ export default function Applications() {
       <PageHeader
         headerText='My InTulsa Featured Applications'
         IconComponent={BsClipboardCheck}
-// Temp comment
       />
       <div className='px-8'>
         <p className='Desktop-Body-textBody-paragraph-2 text-charcoal my-m'>
@@ -79,6 +78,7 @@ export default function Applications() {
           selectableProps={{
             selectable: true,
             selected: selectedApplications,
+// Temp comment
             handleClick: handleCheckClick
           }}
         />

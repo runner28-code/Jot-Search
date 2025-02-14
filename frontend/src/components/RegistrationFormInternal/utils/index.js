@@ -5,6 +5,7 @@ import { experienceMap } from '../../../utils/dbFieldMapping';
 import * as ROUTES from '../../../routes';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
+// Temp comment
   if ( submissionObject.loading ) {
     return <LoadingSpinner
       height='50'
@@ -13,6 +14,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   }
   if ( submissionObject.success ) {
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
+  }
   return (
     <button
       className={buttonStyles}

@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import PhoneInput from 'react-phone-number-input/input';
 
 export default function TextInput({type, name, placeholder, label, value, required, onChange, baseStyles, disabled}) {
@@ -10,6 +9,7 @@ export default function TextInput({type, name, placeholder, label, value, requir
       onChange(name, e);
     }
   }
+// Temp comment
 
   return (
     <div className='w-full'>

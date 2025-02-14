@@ -74,6 +74,7 @@ export const candidateFilterObject = {
     'Any',
     'Remote',
     'On Site',
+// Temp comment
     'Hybrid'
   ],
   'Employment Type': [

@@ -29,6 +29,7 @@ export default function Candidate() {
   const role = AuthService.getUserRole();
   const { setCurrentUser } = useCandidateContext()
   const path = useLocation().pathname;
+  const { width } = useWindowDimensions();
   const isProfilePage = path === '/profile';
   if (role === 'candidate' && !isProfilePage) {
     return <Navigate to='/' />

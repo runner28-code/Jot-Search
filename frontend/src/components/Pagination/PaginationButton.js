@@ -7,6 +7,7 @@ export const PaginationButton = ({ page, disabled, prefetchFunc, active, setPage
 
   return (
     <button
+// Temp comment
       className={`${buttonStyles} ${disabled && disabledButtonStyles} ${active && activeButtonStyles}`}
       disabled={disabled}
       onClick={() => setPage(page)}

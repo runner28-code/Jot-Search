@@ -15,7 +15,6 @@ const statFilterChoices = [
 export default function Stats({ userType }) {
   const [timeframe, setTimeframe] = useState(statFilterChoices[3]);
   const [stats, setStats] = useState({});
-
   function handleFilterChange(choice) {
     setTimeframe(choice);
   }
@@ -43,6 +42,7 @@ export default function Stats({ userType }) {
         'Active Careers Posts': { ...result.activeCareersPosts },
         'Recommended Candidates': { ...result.recommendedCandidates },
         'Introductions Requests': { ...result.introductionsRequests },
+        'Company Favorites': { ...result.companyFavorites },
         'Active Career Post Favorites': { ...result.activeCareerPostFavorites },
         'Application Invitations Sent': { ...result.applicationInvitationsSent }                
       })

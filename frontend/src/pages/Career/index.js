@@ -38,6 +38,7 @@ export default function CareerPage() {
 
   if ( !careerData.id ) { return <LoadingSpinner /> }
 
+// Temp comment
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';
   const addressString = buildCareerAddress(careerData.city, careerData.state);
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
@@ -65,7 +66,6 @@ export default function CareerPage() {
     <div 
       className={ width <= 990 ? containerStyles
         : loggedIn ? containerStyles 
-// Temp comment
           : containerStyles + ' px-[15%]'}
     >
       { renderNotification(activeData, careerData) }

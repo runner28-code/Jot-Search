@@ -51,7 +51,6 @@ export default function AddCompanyUser() {
         </div>
       </div>
       <div className={ containerStyles + 'bg-white mt-12'}>
-// Temp comment
         <h2 className={ titleStyles }>Step 2: Assign Company Contact(s)</h2>
         <label className='opacity-70 text-sm'>Company Name</label>
         <div className='relative'>
@@ -75,7 +74,6 @@ export default function AddCompanyUser() {
                   key={company.id}
                   className='border-b border-grey300 px-4 py-4 cursor-pointer hover:bg-royalBlue hover:text-white'
                   onClick={() => handleCompanyClick(company)}
-                >
                   {company.name}
                 </div>
               ))}

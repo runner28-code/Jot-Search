@@ -24,6 +24,5 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
       className={stylesObject.bottomLinkStyles}
     >
       <FaUserEdit className={stylesObject.iconStyles} />
-      <span className={stylesObject.spanStyles}>Signup</span>
     </Link>
   </>)

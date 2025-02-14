@@ -6,4 +6,3 @@ CREATE TABLE "Lead" (
     "address_city" TEXT,
     "address_state" TEXT,
     "address_zip" TEXT,
-    "address_country_id" TEXT,

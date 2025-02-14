@@ -44,5 +44,4 @@ export const mockCandidateStats = {
     }
   },
   'Jobs Saved': {
-// Temp comment
     'Today': {

@@ -60,7 +60,6 @@ export default function NavSearch({ placeholder }) {
   const menuRef = useRef(null);
 
   /* EVENT HANDLERS */
-// Temp comment
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setForceHidden( false );

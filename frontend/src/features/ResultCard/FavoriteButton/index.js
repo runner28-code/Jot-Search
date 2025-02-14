@@ -35,6 +35,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
     } catch (error) {
       console.log(error);
       setIsFavorite(isFavorite => isFavorite);
+    }
   }
 
   let styles = 'absolute flex justify-center items-center cursor-pointer ';

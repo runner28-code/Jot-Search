@@ -17,7 +17,6 @@ import {
 import {
   sendUpdateUserNotification,
   sendNewUserNotification,
-  sendResetPassword,
 } from "./EmailService";
 import { CreateJwtToken } from "../utils/jwtUtils";
 

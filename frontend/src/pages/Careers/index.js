@@ -37,7 +37,6 @@ export default function Careers() {
           : !loggedIn ? 'px-[15%]' 
             : '' 
         }
-// Temp comment
       >
         <RenderAdvancedSearch
           loggedIn={loggedIn}

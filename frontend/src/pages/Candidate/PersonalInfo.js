@@ -138,7 +138,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   onChange={handleInputChange}
                   className={inputStyles}
                   required
-                  disabled={disabled}
                 />
               </label>
             </div>
@@ -298,6 +297,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   className={labelStyles}
                 >
                   <p className={labelTextStyles}>Voluntary Self-ID of Veteran Status</p>
+                  <Dropdown
                     name='veteran'
                     choices={ veteranStatusChoices }
                     currentChosen={ formData.veteran }
