@@ -52,6 +52,7 @@ export default function CareerFilterLayout(props) {
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[65px]'}>
         <FilterSearch
           searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Careers'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}

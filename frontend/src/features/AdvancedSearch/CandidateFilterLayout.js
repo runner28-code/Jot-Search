@@ -76,7 +76,6 @@ export default function CandidateFilterLayout(props) {
       <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange)}
         <FormInput
-// Temp comment
           type='typeahead'
           dropdownType='tags'
           name='skills'

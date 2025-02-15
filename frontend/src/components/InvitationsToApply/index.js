@@ -9,12 +9,12 @@ export default function InvitationsToApply () {
   const profile = AuthService.getProfile();
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
+// Temp comment
     filteredJobs: [],
     loading: true
   });
 
   useEffect( async () => {
-// Temp comment
     const appliedJobs = await getInvitationsToApply(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {

@@ -5,10 +5,8 @@ export default function AssistanceCard() {
     <div className='w-full bg-white border border-disabledGrey rounded-2xl px-xxl-3 py-xxl-2'>
       {/* Header */}
       <div className='flex'>
-// Temp comment
         <img
           src={flagIcon}
-          alt='Flag'
           className='w-auto h-auto'
         />
         <h5 className='text-h5 font-medium font-spaceGrotesk text-charcoal ml-8'>InTulsa assistance</h5>

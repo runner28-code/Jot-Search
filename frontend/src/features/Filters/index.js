@@ -3,6 +3,7 @@ import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
 
 export default function Filters(props) {
+// Temp comment
   const {
     handleFilterChange,
     defaultFilterObject,

@@ -44,6 +44,7 @@ function App() {
               element={<Companies />} />
             <Route
               path={`${ROUTES.careers}/:id`}
+// Temp comment
               element={<Career />} />
             <Route
               path={`${ROUTES.apply}/:id`}

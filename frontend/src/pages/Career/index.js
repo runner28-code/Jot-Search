@@ -13,6 +13,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import Flag from '../../assets/icons/flag.svg';
 import PageHeader from '../../components/PageHeader';
+// Temp comment
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import InviteCandidates from './InviteCandidates';
 
@@ -38,7 +39,6 @@ export default function CareerPage() {
 
   if ( !careerData.id ) { return <LoadingSpinner /> }
 
-// Temp comment
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';
   const addressString = buildCareerAddress(careerData.city, careerData.state);
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);

@@ -4,7 +4,6 @@ import ResultContainer from '../../features/ResultContainer';
 import TabContainer from '../../components/TabContainer';
 import CandidateFilterLayout from './CandidateFilterLayout';
 import CompanyFilterLayout from './CompanyFilterLayout';
-import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
@@ -32,7 +31,6 @@ const availableTabChoicesByUserType = {
   guest: ['jobs', 'companies'],
 }
 
-// Temp comment
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
     switch (pathname) {
