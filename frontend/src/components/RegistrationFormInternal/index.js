@@ -409,7 +409,6 @@ export default function RegistrationFormInternal(loggedIn) {
         {/* File input for resume */}
         <FormInput
           type='file'
-// Temp comment
           name='resume'
           label='Upload Resume (2mb max / Format: pdf,doc,docx,rtf)'
           placeholder='Select file...'

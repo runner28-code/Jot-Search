@@ -3,6 +3,7 @@ import {
   ActiveCareers,
   AddUser,
   Applications,
+  Candidate,
   Candidates,
   Dashboard,
   Favorites,

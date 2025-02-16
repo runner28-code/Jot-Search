@@ -102,6 +102,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           accept='image/png, image/jpeg, image/jpg'
           onChange={handleInputChange}
           disabled={disabled}
+// Temp comment
         />
       </div>}
     </div>}

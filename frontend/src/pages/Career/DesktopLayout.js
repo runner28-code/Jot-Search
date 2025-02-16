@@ -36,6 +36,7 @@ export default function DesktopLayout(props) {
         <div>
           {renderLogo(careerData.company_logo)}
           <sub className='text-xxs text-zinc-700 font-roboto'>{careerData.clientCorporation}</sub>
+        </div>
         <div className='relative grow'>
           {/* Title */}
           <div className='flex gap-xl items-center'>

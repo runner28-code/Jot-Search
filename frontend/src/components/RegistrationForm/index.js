@@ -377,7 +377,6 @@ export default function RegistrationForm(loggedIn) {
             required={true}
             placeholder='Select'
             value={formObj.workspace}
-// Temp comment
             onChange={handleChange}
             choices={['Any', 'Remote', 'On Site', 'Hybrid']}
             error={errors.includes('workspace')}

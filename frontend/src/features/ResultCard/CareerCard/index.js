@@ -23,7 +23,6 @@ export default function CareerCard({ data, active }) {
   const { width } = useWindowDimensions();
 
   const dataObj = {
-    data,
     categoryString,
     addressString,
     salaryString,

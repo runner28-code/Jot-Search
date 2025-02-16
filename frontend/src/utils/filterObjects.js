@@ -2,7 +2,6 @@ const expertiseObjectArr = JSON.parse(localStorage.getItem('categories')) || [];
 const expertises = expertiseObjectArr.map(expertise => expertise.name).sort();
 import { experienceMap, educationChoices } from './dbFieldMapping';
 import { skills } from './skillHierarchyMap';
-// Temp comment
 const experienceValues = Object.values(experienceMap).filter(val => val !== null);
 
 /* JOB FILTER UTILS */
@@ -139,5 +138,4 @@ export function buildSearchFilters(filterObject) {
         value: filterObject[key],
       });
     }
-  });
   return searchFilters

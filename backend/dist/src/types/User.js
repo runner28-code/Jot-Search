@@ -1,4 +1,4 @@
 "use strict";
-exports.USER_TABLE = exports.USERKEYS = exports.IUSER = void 0;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.IUSER = {
     id: "",

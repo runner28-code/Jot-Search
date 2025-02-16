@@ -26,6 +26,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
       <div className='flex items-center'>
         <div className='flex items-center'>
           <Link
+            className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
           >
             <CareerIcon />
@@ -46,7 +47,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
         <img src={filterIcon} />
         Search and Filter
       </div>
-      <div className='basis-1/6'>
         <button
           className='flex items-center justify-end text-[3rem]'
           onClick={() => togglePassState()}

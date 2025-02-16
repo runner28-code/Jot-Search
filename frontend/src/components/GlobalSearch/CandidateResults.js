@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { FaRegUserCircle as CandidateIcon } from 'react-icons/fa';
 import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
-// Temp comment
 
 export default function CandidateResults({ candidates }) {
   const role = AuthService.getUserRole();

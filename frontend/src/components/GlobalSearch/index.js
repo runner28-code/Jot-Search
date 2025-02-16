@@ -62,6 +62,7 @@ export default function GlobalSearch({ placeholder }) {
     };
 
     setResults( resultsObject );
+  }
 
   /* Clear state on page change */
   useEffect( () => {

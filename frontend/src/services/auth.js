@@ -9,7 +9,6 @@ class AuthService {
     return decode(this.getToken());
   }
 
-  getUserRole() {
     let role = 'guest';
     if (this.loggedIn()) {
       role = this.getProfile().role;

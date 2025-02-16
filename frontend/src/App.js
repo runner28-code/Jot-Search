@@ -11,6 +11,7 @@ import {
   Companies,
   AccountRecovery,
   ResetPassword,
+  Apply
 } from './pages';
 import { NavBar, Footer, SideNav } from './components';
 import AuthService from './services/auth';
@@ -50,7 +51,6 @@ function App() {
             <Route
               path={`${ROUTES.companies}/:id`}
               element={<Company />} />
-            <Route
               path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />
             <Route
