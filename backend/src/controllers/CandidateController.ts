@@ -58,3 +58,4 @@ export class CandidateController {
           ...(userCandidate || {}),
           ...returnableUserData,
         };
+      } else {

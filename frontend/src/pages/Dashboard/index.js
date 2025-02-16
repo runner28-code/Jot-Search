@@ -6,11 +6,11 @@ import CoordinatorDashboard from './CoordinatorDashboard';
 import AuthService from '../../services/auth';
 
 export default function Dashboard() {
-// Temp comment
   let userType = AuthService.getUserRole();
 
   return (
     <main>
       <DashboardType userType={userType} />
     </main>
+// Temp comment
   )

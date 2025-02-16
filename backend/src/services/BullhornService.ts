@@ -139,3 +139,5 @@ export class BullhornService {
       console.log("Access Token: ", this.access_token);
       console.log("Refresh Token: ", this.refresh_token);
       return true;
+    }
+    return await this.getNewAccessToken();

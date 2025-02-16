@@ -60,3 +60,4 @@ export class JobController {
         },
         include: {
           getroJobInfo: true,
+          company: true,

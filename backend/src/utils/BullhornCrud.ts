@@ -1,7 +1,6 @@
 import { User } from "../types/User";
 import { BigQueryService } from "../services/BigQueryService";
 import { DATASET_BULLHORN, DATASET_MAIN, Tables } from "../types/Common";
-import { genUUID, isExistByCondition, isExistByID } from "./";
 import { Candidate } from "../types/Bullhorn";
 import { Job } from "../types/Main";
 import {
@@ -41,6 +40,8 @@ export const saveCompanies = async (companies: any[]) => {
     "dateAdded",
     "dateLastModified",
   ];
+  try {
     for (const company of companies) {
       try {
         console.log(`Savng company with ID = ${company.id}`, company);
+        const address = await db.address.create({

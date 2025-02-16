@@ -367,7 +367,6 @@ export default function RegistrationFormInternal(loggedIn) {
         {/* Employment Preference */}
         <FormInput
           type='single-select'
-          name='employmentPreference'
           label='Preferred Employment Type'
           required={true}
           placeholder='Select'

@@ -62,6 +62,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               key={key}
               name={key}
               onChange={handleChange}
+// Temp comment
               value={value}
             />
           </div>

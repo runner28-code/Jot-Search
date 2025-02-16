@@ -18,6 +18,7 @@ export default function DesktopHeader(props) {
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-royalBlue ' : ' fill-royalBlue ';
   if ( classOverride ) addOnIconClasses += classOverride;
+  let containerClasses = 'mb-10 pt-18 ';
   if ( containerClassOverride ) containerClasses += containerClassOverride;
   
   return (
@@ -30,6 +31,7 @@ export default function DesktopHeader(props) {
             className={ 'h-16 ' + addOnIconClasses }
           />
         )}
+// Temp comment
         { IconComponent && (
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />
         )}

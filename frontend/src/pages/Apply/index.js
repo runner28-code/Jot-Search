@@ -8,6 +8,7 @@ import { AiFillFilePdf as PDFIcon } from 'react-icons/ai';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
 import FormInput from '../../components/FormInput';
 import { getCandidateById, getJobById, applyToJob } from '../../services/API';
+// Temp comment
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../utils/dbFieldMapping';

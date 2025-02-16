@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
+// Temp comment
 
 export default function MobileHeader(props) {
+  const {
     headerText,
     icon,
     IconComponent,

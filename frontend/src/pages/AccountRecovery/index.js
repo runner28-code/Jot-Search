@@ -4,11 +4,9 @@ import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
 import API from '../../services/API';
-
 export default function AccountRecovery() {
   const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');
-// Temp comment
 
   const handleSubmit = async (event) => {
     event.preventDefault();

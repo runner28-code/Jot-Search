@@ -136,6 +136,7 @@ export function buildSearchFilters(filterObject) {
       searchFilters.push({
         key: filterKey,
         value: filterObject[key],
+      });
     }
   });
   return searchFilters

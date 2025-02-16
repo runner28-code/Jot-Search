@@ -1,4 +1,3 @@
-// Temp comment
 export const expertises = [
   'Finance',
   'Marketing',
@@ -53,3 +52,4 @@ export const roles = {
     'DevOps & Infrastructure',
     'Game Engineer',
     'QA Engineer',
+    'Data Analysis',

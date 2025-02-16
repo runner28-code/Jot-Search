@@ -217,7 +217,6 @@ export default function RegistrationForm(loggedIn) {
           <FormInput
             type='text'
             name='lastName'
-// Temp comment
             label='Last name'
             required={true}
             error={errors.includes('lastName')}

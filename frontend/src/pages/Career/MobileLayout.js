@@ -6,7 +6,6 @@ import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import locationIcon from '../../assets/icons/placepin.svg';
 import clockIcon from '../../assets/icons/clock.svg';
 import postingAgeIcon from '../../assets/icons/calendar.svg';
-// Temp comment
 import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { apply as applyRoute } from '../../routes';
@@ -27,7 +26,6 @@ export default function MobileLayout(props) {
   } = props.data;
   const navigate = useNavigate();
   const skillList = careerData.skillList;
-
   return (<>
     <section className='relative bg-white max-w-400 px-xl py-xxl border-2 border-disabled border-solid rounded-3xl mb-26'>
       {/* Header */}

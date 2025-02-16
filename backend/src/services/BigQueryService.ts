@@ -8,3 +8,4 @@ export class BigQueryService {
     public static client: BigQuery | null = null;
 
     public static getClient() {
+        if (BigQueryService.client === null) {

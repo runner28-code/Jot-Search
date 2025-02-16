@@ -46,7 +46,6 @@ export default function FeaturedJobs() {
             :
             jobs.map((career, index) => {
               const categoryString = career.category?.name.toUpperCase() || 'CATEGORY N/A';
-// Temp comment
               return(
                 <Link
                   to={`${ROUTES.careers}/${career.id}`}

@@ -125,7 +125,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
               dangerouslySetInnerHTML={{ __html: formData.description || '<p>No summary provided</p>' }}
               className={`${inputStyles} text-black70% p-6`}
             />
-// Temp comment
         }
       </label>
 
@@ -136,6 +135,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           label='Expertise'
           required={true}
           placeholder='Select'
+// Temp comment
           value={formData.expertise}
           onChange={(_, choice) => setFormData({ ...formData, expertise: choice })}
           choices={categories}

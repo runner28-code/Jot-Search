@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -10,7 +11,6 @@ export default function DashboardPublicMin({type}) {
 
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
-  const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const active = ' bg-royalBlue';
   const { width } = useWindowDimensions();
 

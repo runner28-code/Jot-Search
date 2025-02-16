@@ -10,7 +10,6 @@ const ITEMS_PER_PAGE = 5;
 export default function OtherCareers({ companyId, companyName, currentCareerId }) {
   const [page, setPage] = useState(1);
   const filtersArr = [
-    {
       key: 'status',
       value: ['Active', 'Open']
     },
@@ -25,6 +24,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
   }
 
+  const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });
 
   const matchingCareerFound = (careers && careers.length > 0) && careers.some(job => job.externalId === currentCareerId);
   const adjustedTotal = matchingCareerFound ? total - 1 : total || 0;

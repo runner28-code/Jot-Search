@@ -106,3 +106,4 @@ model Lead {
   phone3                String?
   preferredContact      String?
   primarySkills         String?
+  priority              String?
