@@ -49,7 +49,6 @@ const defaultCommunity = {
 }
 export default function RegistrationFormInternal(loggedIn) {
   const {categories} = useContext(CategoryContext);
-// Temp comment
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
@@ -410,6 +409,7 @@ export default function RegistrationFormInternal(loggedIn) {
         {/* File input for resume */}
         <FormInput
           type='file'
+// Temp comment
           name='resume'
           label='Upload Resume (2mb max / Format: pdf,doc,docx,rtf)'
           placeholder='Select file...'

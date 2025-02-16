@@ -11,7 +11,6 @@ import {
   Companies,
   AccountRecovery,
   ResetPassword,
-  Apply
 } from './pages';
 import { NavBar, Footer, SideNav } from './components';
 import AuthService from './services/auth';
@@ -44,7 +43,6 @@ function App() {
               element={<Companies />} />
             <Route
               path={`${ROUTES.careers}/:id`}
-// Temp comment
               element={<Career />} />
             <Route
               path={`${ROUTES.apply}/:id`}

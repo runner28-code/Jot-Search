@@ -26,7 +26,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
       <input
         type='text'
         className={ inputStyles }
-        placeholder={ placeholderString }
         value={ searchTerm }
         onChange={ handleChange }
       />
@@ -40,6 +39,5 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
           className='v-8 w-12 h-12 vw-768:h-10 mr-3 vw-768:mr-5'
         />
       </button>
-// Temp comment
     </div>
   )

@@ -86,7 +86,6 @@ export default function Footer() {
             </a>
           </div>
         </div>
-// Temp comment
       </div>
     </>)
   }

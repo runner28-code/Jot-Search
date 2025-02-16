@@ -352,7 +352,6 @@ export default function RegistrationForm(loggedIn) {
         </div>
         <div className={flexWidth}>
           <FormInput
-// Temp comment
             type='text'
             name='linkedin'
             value={formObj.linkedin}
@@ -378,6 +377,7 @@ export default function RegistrationForm(loggedIn) {
             required={true}
             placeholder='Select'
             value={formObj.workspace}
+// Temp comment
             onChange={handleChange}
             choices={['Any', 'Remote', 'On Site', 'Hybrid']}
             error={errors.includes('workspace')}

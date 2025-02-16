@@ -44,7 +44,6 @@ export default function MobileLayout(props) {
           {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold mt-s'>{categoryString}</p>
         </div>
-// Temp comment
         <div className='basis-full'>
           {/* First row icons */}
           <div className='w-full flex items-center mt-xxl mb-m'>

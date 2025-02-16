@@ -1,2 +1,1 @@
-# intulsa-aerovision-be
 

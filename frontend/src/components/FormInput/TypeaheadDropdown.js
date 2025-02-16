@@ -44,6 +44,7 @@ export default function TypeaheadDropdown(props) {
     if (dropdownType === 'tags') {
       setFilteredChoices(choices.filter(choice => choice.toLowerCase().includes(inputValue.toLowerCase())));
     }
+// Temp comment
   }, [inputValue]);
 
   function handleInputChange(event) {
@@ -70,6 +71,7 @@ export default function TypeaheadDropdown(props) {
         id={name}
         placeholder={placeholder}
         value={inputValue}
+        className={baseStyles + inputHeight + 'mb-0'}
         onClick={handleListClick}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../../components/LoadingSpinner';
+// Temp comment
 import Header from './Header';
 import HeaderMobile from './HeaderMobile';
 import { getCompanyById } from '../../services/API';
@@ -83,6 +84,7 @@ export default function Company() {
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>About {companyData.name}</h4>
             { renderCompanyDescription(companyData.companyDescription, 'text-md mb-10 leading-[32px]') }
           </div>
+          { renderSectorList(companyData, width, stylesObject) } 
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Funding */}
           <div className='p-6'>

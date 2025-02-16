@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { appendPathToBaseUrl } from '../../../services/API';
 import ResumePreview from './ResumePreview';
 

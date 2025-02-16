@@ -29,13 +29,13 @@ export default function DesktopLayout(props) {
 
   const skillList = careerData.skillList;
 
+  return (<>
     <section className='relative bg-white px-xxl-3 py-xxl-2 border-2 border-disabled border-solid rounded-3xl mb-xxl-4'>
       {/* Header */}
       <div className='flex items-start'>
         <div>
           {renderLogo(careerData.company_logo)}
           <sub className='text-xxs text-zinc-700 font-roboto'>{careerData.clientCorporation}</sub>
-        </div>
         <div className='relative grow'>
           {/* Title */}
           <div className='flex gap-xl items-center'>
