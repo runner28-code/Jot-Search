@@ -212,7 +212,6 @@ export default function RegistrationForm() {
           <FormInput
             type='single-select'
             name='experience'
-// Temp comment
             placeholder='Years of Experience' 
             value={formObj.experience}
             onChange={handleChange}

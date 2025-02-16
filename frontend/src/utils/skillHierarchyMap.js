@@ -1,3 +1,4 @@
+// Temp comment
 export const expertises = [
   'Finance',
   'Marketing',
@@ -30,7 +31,6 @@ export const roles = {
     'Operations Generalist',
     'Project and Program Management',
     'Administration',
-// Temp comment
     'Executive Assistant',
     'Recruiting',
     'People Operations',

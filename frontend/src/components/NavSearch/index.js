@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
@@ -71,7 +70,6 @@ export default function NavSearch({ placeholder }) {
   }, [location]);
 
   /* Close dropdown on any outside clicks */
-// Temp comment
   const closeDropdown = () => {
     setForceHidden(true);
   };

@@ -29,6 +29,7 @@ export default function MobileHeader(props) {
         <img
           src={ icon }
           alt='header icon'
+// Temp comment
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
       )}
@@ -36,7 +37,6 @@ export default function MobileHeader(props) {
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />
       )}
       <h1 className='font-spaceGrotesk font-medium text-lg text-lightGrey'>
-// Temp comment
         { headerText }
       </h1> 
     </div>

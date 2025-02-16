@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
+import PropTypes from 'prop-types';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -45,6 +46,7 @@ export default function FeaturedJobs() {
             :
             jobs.map((career, index) => {
               const categoryString = career.category?.name.toUpperCase() || 'CATEGORY N/A';
+// Temp comment
               return(
                 <Link
                   to={`${ROUTES.careers}/${career.id}`}

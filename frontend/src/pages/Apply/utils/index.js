@@ -38,6 +38,7 @@ export const defaultState = {
   workAuthorized: '',
   disability: '',
   veteran: '',
+// Temp comment
   loading: true
 }
 

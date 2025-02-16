@@ -40,6 +40,7 @@ export default function Candidate() {
   const [loading, setLoading] = useState(true);
 
   useEffect(async () => {
+    const candidate = await getCandidateById(id);
     const formattedCandidate = formatCandidateData({ id, ...candidate });
     setCandidateData(formattedCandidate);
     setLoading(false);
@@ -125,7 +126,6 @@ export default function Candidate() {
         </div>
       }
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}
-      <div className='px-4'>
         <div className='border rounded-2xl bg-white p-15 relative'>
           <CareerProfileInfo
             role={role}

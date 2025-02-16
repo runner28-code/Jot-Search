@@ -16,3 +16,5 @@ async function main() {
     console.error(err);
     throw err;
   }
+}
+

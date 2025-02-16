@@ -9,6 +9,7 @@ class AuthService {
     return decode(this.getToken());
   }
 
+  getUserRole() {
     let role = 'guest';
     if (this.loggedIn()) {
       role = this.getProfile().role;
@@ -122,7 +123,6 @@ class AuthService {
   }
 
   toggleSavedCandidate(candidateID, action) {
-    const savedCandidates = this.getSavedCandidateIDs();
     if ( action === 'save' ) {
       savedCandidates.push(candidateID);
     } else {

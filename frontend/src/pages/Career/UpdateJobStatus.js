@@ -37,6 +37,5 @@ export const UpdateJobStatus = ({ job }) => {
             setUpdatedJob(res);
           }}
         />
-      </div>
     </div>
   )

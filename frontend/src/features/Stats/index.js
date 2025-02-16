@@ -34,11 +34,11 @@ export default function Stats({ userType }) {
         return 30
     }
   }
+// Temp comment
 
   useEffect(async() => {
     const duration = getDuration(timeframe)
     if (userType === 'company') {
-// Temp comment
       const result = await getCompanyQuickStats(duration);
       setStats({
         'Active Careers Posts': { ...result.activeCareersPosts },
