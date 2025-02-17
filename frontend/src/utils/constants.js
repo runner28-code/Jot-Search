@@ -30,6 +30,7 @@ export const stateCodeMap = {
   Idaho: 'ID',
   Illinois: 'IL',
   Indiana: 'IN',
+  Iowa: 'IA',
   Kansas: 'KS',
   Kentucky: 'KY',
   Louisiana: 'LA',

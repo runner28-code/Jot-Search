@@ -40,7 +40,6 @@ export default function JoinTalentNetwork() {
       <div className='absolute -bottom-100 flex justify-center w-full px-40'>
         <div className='h-240 w-230 px-24 mr-18 flex flex-col rounded-3xl bg-royalBlue'>
           <h1 className='mt-22 text-h1 font-spaceGrotesk font-semibold text-softWhite'>
-// Temp comment
             Join the InTulsa Talent Network
           </h1>
           <p className='text-ml text-softWhite mt-18'>
@@ -53,7 +52,6 @@ export default function JoinTalentNetwork() {
             <span className='text-softWhite text-ml'>Create an account</span>
           </Link>
         </div>
-        <div className='w-210 mt-150 ml-18'>
           <h6 className='text-h6 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>
           <p className='text-slateGray text-ml mt-10 font-light leading-[3.6rem]'>By signing up, you will be able to connect and support you with top companies ready to help you take the next step in your career in Tulsa.</p>
         </div>

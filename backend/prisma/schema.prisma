@@ -77,7 +77,6 @@ model Lead {
   description           String?
   division              String?
   email                 String?
-  email2                String?
   email3                String?
   fax                   String?
   fax2                  String?
@@ -107,3 +106,4 @@ model Lead {
   preferredContact      String?
   primarySkills         String?
   priority              String?
+  referredByPerson      String?

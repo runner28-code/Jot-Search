@@ -53,3 +53,4 @@ export const roles = {
     'Game Engineer',
     'QA Engineer',
     'Data Analysis',
+    'Systems Engineer',

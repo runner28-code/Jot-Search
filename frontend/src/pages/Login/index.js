@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
-// Temp comment
 import API from '../../services/API';
 import AuthService from '../../services/auth';
 
@@ -54,7 +53,6 @@ export default function Login() {
             <Link
               to={ROUTES.signup}
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
-            >
               Sign-up here
             </Link>
           </div>

@@ -7,6 +7,7 @@ import ChoiceTag from '../ChoiceTag';
 // import Dropdown from '../../components/UniversalDropdown';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import {
+// Temp comment
   roles as roleChoices,
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
@@ -367,6 +368,7 @@ export default function RegistrationFormInternal(loggedIn) {
         {/* Employment Preference */}
         <FormInput
           type='single-select'
+          name='employmentPreference'
           label='Preferred Employment Type'
           required={true}
           placeholder='Select'

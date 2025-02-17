@@ -14,7 +14,6 @@ const ResumePreview = ({ resumeUrl }) => {
   const { pdfDocument } = usePdf({
     file: resumeUrl,
     page,
-// Temp comment
     canvasRef,
   });
 
@@ -44,6 +43,7 @@ const ResumePreview = ({ resumeUrl }) => {
             <li>Page {page} of {pdfDocument.numPages}</li>
             <li className="next">
               <button
+// Temp comment
                 disabled={nextButtonDisabled}
                 onClick={() => setPage(page + 1)}
               >

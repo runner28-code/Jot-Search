@@ -27,11 +27,11 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
       )}
       {/* Results */}
       {!isLoadingContacts && clientContacts?.length > 0 && (<>
+// Temp comment
         <p className='opacity-70 text-sm'>Select the contact(s) you would like to add from {selectedCompany?.name}</p>
         <ul className='border-y border-grey300 mt-2 w-full'>
           {clientContacts.map((contact, index) => (
             <li
-// Temp comment
               key={contact.id}
               className={ 'flex items-center px-s py-s ' + (index < clientContacts.length - 1 ? 'border-b border-grey300' : '') }
               onClick={() => handleContactClick(contact)}

@@ -17,6 +17,7 @@ module.exports = {
             transform: 'rotate(0deg)'
           },
           to: {
+            transform: 'rotate(180deg)'
           },
         },
         'spin-reverse': {
@@ -35,3 +36,4 @@ module.exports = {
         // Main Brand Colors
         royalBlue: '#176AB9',
         aquaBlue: '#0E97CA',
+        cyan: '#1ECADB',

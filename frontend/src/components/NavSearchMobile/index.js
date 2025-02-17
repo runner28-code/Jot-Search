@@ -27,7 +27,6 @@ const NUM_ITEMS_PER_TYPE = 5
 export default function NavSearchMobile({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
-  const [forceHidden, setForceHidden] = useState(false);
   const userType = AuthService.getUserRole();
 
   const getFiltersByTab = (tab) => {
@@ -60,6 +59,7 @@ export default function NavSearchMobile({ placeholder }) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
+  /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setForceHidden( false );

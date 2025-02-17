@@ -10,7 +10,6 @@ import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandi
 
 export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
-    filtersArr: [],
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
@@ -84,7 +83,6 @@ export default function InviteCandidates({ company }) {
         >
           <MailIcon className='inline-block mr-2' />
           Send Now
-// Temp comment
         </button>
         <button 
           onClick={() => setSelected([])} 

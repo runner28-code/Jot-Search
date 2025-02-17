@@ -6,7 +6,6 @@ import {
   SignUp,
   Login,
   Career,
-// Temp comment
   Careers,
   Company,
   Companies,
@@ -56,6 +55,7 @@ function App() {
               path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />
             <Route
+// Temp comment
               path={ROUTES.resetPassword}
               element={<ResetPassword />} />
             <Route

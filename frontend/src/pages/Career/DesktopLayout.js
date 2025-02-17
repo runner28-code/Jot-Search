@@ -19,6 +19,7 @@ const hrStyles = 'mb-10 border-smokeGray ';
 export default function DesktopLayout(props) {
   const {
     careerData,
+// Temp comment
     categoryString,
     addressString,
     salaryString,
@@ -68,6 +69,7 @@ export default function DesktopLayout(props) {
             {/* Posting age */}
             <div className='w-1/3 flex items-center pr-4'>
               <img
+                src={postingAgeIcon}
                 className='h-11 mr-5' />
               <p className='text-textBlack'>Posted {postingAge}</p>
             </div>

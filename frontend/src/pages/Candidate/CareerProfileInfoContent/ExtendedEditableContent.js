@@ -135,7 +135,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           label='Expertise'
           required={true}
           placeholder='Select'
-// Temp comment
           value={formData.expertise}
           onChange={(_, choice) => setFormData({ ...formData, expertise: choice })}
           choices={categories}

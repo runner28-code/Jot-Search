@@ -26,6 +26,7 @@ export default function MobileLayout(props) {
   } = props.data;
   const navigate = useNavigate();
   const skillList = careerData.skillList;
+
   return (<>
     <section className='relative bg-white max-w-400 px-xl py-xxl border-2 border-disabled border-solid rounded-3xl mb-26'>
       {/* Header */}
@@ -68,7 +69,6 @@ export default function MobileLayout(props) {
                 src={postingAgeIcon}
                 className='h-11 mr-5' />
               <p className='text-textBlack text-xs'>{postingAge}</p>
-            </div>
             {/* Employement Type */}
             <div className='w-1/2 flex items-center'>
               <img

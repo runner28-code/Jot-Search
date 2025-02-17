@@ -26,6 +26,7 @@ export default function Companies() {
     setToggle(toggle => !toggle);
   }
 
+  return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
         loggedIn={loggedIn}

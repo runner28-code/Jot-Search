@@ -65,6 +65,7 @@ export default function NavSearch({ placeholder }) {
     setForceHidden( false );
   }
 
+// Temp comment
   /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');

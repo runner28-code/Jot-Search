@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
@@ -10,6 +11,7 @@ import {
   formatAvatarUrl,
   formatYearsExperience,
   buildOccupationString,
+// Temp comment
 } from '../../../utils/formatFunctions';
 
 export default function CandidateCard({ data, disableLink }) {

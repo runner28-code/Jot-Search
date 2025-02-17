@@ -141,3 +141,4 @@ export class BullhornService {
       return true;
     }
     return await this.getNewAccessToken();
+  }

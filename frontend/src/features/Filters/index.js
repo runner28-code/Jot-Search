@@ -12,14 +12,12 @@ export default function Filters(props) {
     setSearchTerm,
     handleSearchClick,
     marginBottom
-  } = props;
 
   let filterContainerStyles = 'flex flex-col justify-between gap-xxl-4 pb-9 vw-768:px-14 ';
   if (marginBottom) {
     filterContainerStyles += `mb-${marginBottom} `;
   }
   return (
-// Temp comment
     <div className={filterContainerStyles}>
       <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}

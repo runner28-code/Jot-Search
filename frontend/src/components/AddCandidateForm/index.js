@@ -246,7 +246,6 @@ export default function RegistrationForm() {
             type='text'
             name='referredBy'
             placeholder={`How did ${pronoun} hear about us?`} 
-            value={formObj.referredBy}
             onChange={handleChange}
             error={errors.includes('referredBy')}
           />
@@ -262,6 +261,7 @@ export default function RegistrationForm() {
           <FormInput
             type='password'
             name='password'
+            placeholder='Password' 
             value={formObj.password}
             onChange={handleChange}
             error={errors.includes('password')}
