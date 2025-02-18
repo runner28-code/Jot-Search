@@ -38,6 +38,7 @@ import {
 import { COORDINATOR } from "../utils/constant";
 import { sendCandidatesToEmployers } from "../services/EmailService";
 import { getCandidatesList } from "../services/Candidate";
+import { normalizeFilters } from "./JobController";
 
 @JsonController("/api/company")
 export class CompanyController {
@@ -50,3 +51,4 @@ export class CompanyController {
       const company = await this.getCompanyByIdFromBullhorn(id);
       return {
         company,
+        source: datasource,

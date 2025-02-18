@@ -18,7 +18,6 @@ export const saveCompanies = async (companies: any[]) => {
   //   where: {
   //     companyURL: {
   //       not: null
-  //     }
   //   }
   // });
   // for (const item of result) {

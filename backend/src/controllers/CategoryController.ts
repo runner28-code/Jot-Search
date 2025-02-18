@@ -7,3 +7,4 @@ import {
 } from "routing-controllers";
 import { getCategoriesByFilter } from "../services/Category";
 import {
+  CategoryByIdResponse,

@@ -39,3 +39,4 @@ export class GetroService {
         throw 'Auth failed';
     }
     async getNetworkID(): Promise<boolean> {
+        try {

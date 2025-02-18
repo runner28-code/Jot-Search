@@ -66,6 +66,7 @@ function HeaderContent({ companyData }) {
             <img
               src={LinkedIn}
               className={headerIconStyles}
+// Temp comment
             />
             { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }
           </div>

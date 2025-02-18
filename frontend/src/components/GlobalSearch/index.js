@@ -29,7 +29,6 @@ export default function GlobalSearch({ placeholder }) {
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setResults({ ...results, loading: true, forceHidden: false });
-    debounceSearchTermFunction( searchTerm );
   }
 
   /* Debounce functions will wait until user stops typing to send API call */
@@ -40,6 +39,7 @@ export default function GlobalSearch({ placeholder }) {
 
   async function handleDebounce( searchTerm ) {
     if ( searchTerm === '' ) {
+      return setResults({
         jobs: [],
         companies: [],
         candidates: []

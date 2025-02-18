@@ -38,6 +38,7 @@ export default function Applications() {
     } else {
       setSelectedApplications([...selectedApplications, careerId]);
     }
+  }
 
   function removeSelectedApplications() {
     const currentHiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
@@ -49,7 +50,6 @@ export default function Applications() {
       filteredJobs: appliedJobsObject.jobs.filter(job => !newHiddenApplications.includes(job.id))
     });
   }
-
   const { width } = useWindowDimensions();
   return (
     <section>

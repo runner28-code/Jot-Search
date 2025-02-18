@@ -124,6 +124,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           <div className='flex flex-col'>
             <div className='flex justify-between mb-4'>
               <label 
+                className='text-h6 text-royalBlue w-full'
                 htmlFor='address1'>
               Address 1:
               </label>

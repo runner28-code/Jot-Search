@@ -26,7 +26,6 @@ model Category {
   dateAdded   DateTime?
   description String?
   enabled     Boolean   @default(true)
-  externalID  Int?      @unique
   occupation  String?
   type        String?
   score       Float?    @map("_score")
@@ -77,6 +76,7 @@ model Lead {
   description           String?
   division              String?
   email                 String?
+  email2                String?
   email3                String?
   fax                   String?
   fax2                  String?

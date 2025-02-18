@@ -11,7 +11,6 @@ import {
   formatAvatarUrl,
   formatYearsExperience,
   buildOccupationString,
-// Temp comment
 } from '../../../utils/formatFunctions';
 
 export default function CandidateCard({ data, disableLink }) {
@@ -86,6 +85,7 @@ export default function CandidateCard({ data, disableLink }) {
           />
           {/* Skill List */}
           <div className='flex flex-wrap gap-m mt-[18px]'>
+// Temp comment
             { renderSkills(data.skills) }
           </div>
         </div>

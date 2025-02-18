@@ -110,5 +110,4 @@ export default function Company() {
           companyData={companyData}
         />
       </div>
-    </div>
   )

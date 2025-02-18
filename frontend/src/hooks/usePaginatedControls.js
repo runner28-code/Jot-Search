@@ -39,6 +39,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
               </PaginationButton>
             )})) : (
           <>
+// Temp comment
             <PaginationButton
               key={1}
               active={page === 1}
@@ -119,7 +120,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
       }
     </nav>
   )
-// Temp comment
 
   return {
     PaginatedControls,

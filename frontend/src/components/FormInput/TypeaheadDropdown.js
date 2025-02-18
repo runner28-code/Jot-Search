@@ -27,7 +27,6 @@ export default function TypeaheadDropdown(props) {
 
   const handleChoiceClick = useCallback((choice) => {
     if (!currentChosen.includes(choice)) {
-// Temp comment
       onChange(name, [...currentChosen, choice]);
     } else {
       onChange(name, currentChosen.filter(item => item !== choice));
@@ -65,6 +64,7 @@ export default function TypeaheadDropdown(props) {
       ref={menuRef}  
     >
       { renderLabel(name, label, required) }
+// Temp comment
       <input 
         type={type}
         name={name}

@@ -11,6 +11,7 @@ export default function FeaturedCompaniesMobile() {
   const filtersArr = [
     {
       key: 'status',
+// Temp comment
       value: 'active'
     }
   ];
@@ -27,6 +28,7 @@ export default function FeaturedCompaniesMobile() {
             <LoadingSpinner />
             :
             companies.map((company, index) =>
+              <Link
                 to={`${ROUTES.companies}/${company.id}`}
                 className='my-8 outline outline-2 outline-neutral-100 p-8 w-32 mx-2'
                 key={index}>

@@ -8,3 +8,4 @@ export const saveCompany = async (company: string, candidate: string) => {
         id: candidate,
         savedCompanies: {
           some: {
+            id: company,

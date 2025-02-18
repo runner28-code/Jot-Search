@@ -80,11 +80,11 @@ export default function AddCompanyUser() {
               ))}
             </div>
           )}
-// Temp comment
           {selectedCompany && (
             <CompanyContactList
               clientContacts={clientContacts}
               isLoadingContacts={isLoadingContacts}
+// Temp comment
               selectedCompany={selectedCompany}
             />
           )}

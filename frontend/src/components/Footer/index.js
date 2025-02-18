@@ -130,7 +130,6 @@ export default function Footer() {
     </div>
     <div
       id='footer'
-      className='flex flex-col'
     >
       {/* Social Links */}
       <div className='bg-midGrey flex justify-center items-center'>

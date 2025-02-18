@@ -60,9 +60,11 @@ export default function InviteToCareer({ candidate }) {
       {successfullySentJob && <div className="text-center">Invitations Sent!</div>}
 
       <SelectedValues />
+
       <MultiSelect
         isLoading={isLoading}
         options={jobOptions}
+// Temp comment
         value={selected}
         onChange={setSelected}
         labelledBy="Select"

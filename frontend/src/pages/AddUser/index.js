@@ -20,7 +20,6 @@ export default function AddUser() {
   }
 
   const defaultContainer = 'bg-white border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12';
-// Temp comment
   const companyContainer = '';
 
   return (<>
