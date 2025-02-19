@@ -85,7 +85,6 @@ export default function CandidateCard({ data, disableLink }) {
           />
           {/* Skill List */}
           <div className='flex flex-wrap gap-m mt-[18px]'>
-// Temp comment
             { renderSkills(data.skills) }
           </div>
         </div>

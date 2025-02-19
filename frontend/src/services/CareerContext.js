@@ -1,7 +1,6 @@
 import { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
 
-// Temp comment
 const mockJobsData = [
   {
     id: '1ea36da6-8819-4617-8c09-5df46f1reg78',
@@ -13,6 +12,7 @@ const mockJobsData = [
     location_city: 'Tulsa',
     location_state: 'OK',
     onSite: true,
+// Temp comment
     listingAge: '1 month',
     specialty: 'Technology'
   },

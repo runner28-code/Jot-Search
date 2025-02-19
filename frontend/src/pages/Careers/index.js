@@ -5,7 +5,6 @@ import PageHeaderCandidate from '../../components/PageHeaderCandidate';
 import AdvancedSearch from '../../features/AdvancedSearch';
 import AdvancedSearchPublic from '../../features/AdvancedSearchPublic';
 import AdvancedSearchCandidate from '../../features/AdvancedSearchCandidate';
-// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdSearch as SearchIcon } from 'react-icons/md';
 import Dashboard from '../../components/DashboardPublic';
@@ -44,6 +43,7 @@ export default function Careers() {
           toggle={toggle}
           userType={userType}
         />
+// Temp comment
       </div>
     </section>
   )

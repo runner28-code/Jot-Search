@@ -25,6 +25,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
     setShowDropdown(false);
     setSelected(choice);
     handleFilterChange(filterType, choice);
+  }
 
   useEffect(() => {
     const value = chosen && chosen !== 'Any' ? chosen : formattedFilterType;

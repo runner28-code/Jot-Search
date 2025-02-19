@@ -4,7 +4,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CompanyFilterLayout(props) {
   const {
-    searchTerm,
     setSearchTerm,
     handleSearchClick,
     clearFilters,
@@ -16,7 +15,6 @@ export default function CompanyFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-// Temp comment
           handleSearchClick={handleSearchClick}
           placeholder='Search Companies'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}

@@ -56,6 +56,7 @@ export class CandidateController {
         } = user;
         candidate = {
           ...(userCandidate || {}),
+          ...returnableUserData,
         };
       } else {
         candidate = await db.candidate.findFirst({

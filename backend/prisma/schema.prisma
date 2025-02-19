@@ -26,6 +26,7 @@ model Category {
   dateAdded   DateTime?
   description String?
   enabled     Boolean   @default(true)
+  externalID  Int?      @unique
   occupation  String?
   type        String?
   score       Float?    @map("_score")

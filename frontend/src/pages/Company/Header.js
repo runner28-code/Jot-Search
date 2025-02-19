@@ -66,7 +66,6 @@ function HeaderContent({ companyData }) {
             <img
               src={LinkedIn}
               className={headerIconStyles}
-// Temp comment
             />
             { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }
           </div>
@@ -79,7 +78,6 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
-              src={Triangle}
               className={headerIconStyles}
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }

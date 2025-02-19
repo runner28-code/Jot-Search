@@ -11,7 +11,6 @@ export default function FeaturedCompaniesMobile() {
   const filtersArr = [
     {
       key: 'status',
-// Temp comment
       value: 'active'
     }
   ];
@@ -25,6 +24,7 @@ export default function FeaturedCompaniesMobile() {
       <div className='flex flex-wrap mt-8 justify-center'>
         {
           isLoading ?
+// Temp comment
             <LoadingSpinner />
             :
             companies.map((company, index) =>

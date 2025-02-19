@@ -79,7 +79,6 @@ export const register = async (data: User) => {
       };
     }
 
-    const savingData = {
       data: {
         ...data,
         password: encryptPassword(user.password),

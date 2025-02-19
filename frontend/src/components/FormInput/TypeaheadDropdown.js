@@ -40,6 +40,7 @@ export default function TypeaheadDropdown(props) {
   }, [dropdownOpen]);
   
   /* Filter choices based on input */
+// Temp comment
   useEffect(() => {
     if (dropdownType === 'tags') {
       setFilteredChoices(choices.filter(choice => choice.toLowerCase().includes(inputValue.toLowerCase())));
@@ -64,7 +65,6 @@ export default function TypeaheadDropdown(props) {
       ref={menuRef}  
     >
       { renderLabel(name, label, required) }
-// Temp comment
       <input 
         type={type}
         name={name}

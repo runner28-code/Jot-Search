@@ -47,7 +47,6 @@ const job_filter_exclude_keys = [
   "body repair",
   "breakfast",
   "budget",
-  "builder",
   "building",
   "buyer",
   "cafeteria",

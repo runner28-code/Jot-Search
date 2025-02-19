@@ -80,6 +80,7 @@ export default function Footer() {
               href={ROUTES.termsOfService}
               className='underline'
               target='_blank'
+// Temp comment
               rel='noreferrer'
             >
                 Terms of Service
@@ -130,6 +131,7 @@ export default function Footer() {
     </div>
     <div
       id='footer'
+      className='flex flex-col'
     >
       {/* Social Links */}
       <div className='bg-midGrey flex justify-center items-center'>

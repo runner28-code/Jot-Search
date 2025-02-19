@@ -209,6 +209,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   value={formData.zip}
                   onChange={handleInputChange}
                   className={inputStyles}
+                  required
                   disabled={disabled}
                 />
               </label>

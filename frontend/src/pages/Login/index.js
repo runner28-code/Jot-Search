@@ -28,7 +28,6 @@ export default function Login() {
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
     }
-// Temp comment
   }
 
   return (
@@ -60,7 +59,6 @@ export default function Login() {
           </div>
           { renderError() }
           <FormInput
-            type='text'
             name='email'
             label='Login Email'
           />

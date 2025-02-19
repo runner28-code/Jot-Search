@@ -19,7 +19,6 @@ export default function CareerFavorite () {
         <div className='bg-pinkSquare bg-cyan-400 top-[-20px] right-[5px] absolute w-6 h-6' />
       </div>
       <h2 className='font-spaceGrotesk text-h5 text-zinc-500 mb-8 text-center'>My Company Favorites</h2>
-      <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
           isLoading ?
             <LoadingSpinner />
@@ -40,6 +39,7 @@ export default function CareerFavorite () {
           <CompanyIcon className='w-32 h-32 fill-royalBlue' />
           <h3 className='text-md text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Find Companies to Favorite</h3>
           <Link
+            to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
           </Link>

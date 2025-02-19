@@ -15,7 +15,7 @@ export default function BusinessBooming() {
         >
           <span className='text-orangeHeroOverlay tracking-wide'>Learn More About Tulsa</span>
         </a>
-        <div className='absolute bottom-36 -right-18 h-40 w-40 bg-blueSquare2/95' />
+        {/* Shapes */}
         <div className='absolute bottom-80 -right-72 h-36 w-36 bg-blueSquare/95' />
       </div>
     </section>

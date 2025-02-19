@@ -5,12 +5,10 @@ import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
 
 export default function CandidateResults({ candidates }) {
-// Temp comment
   const role = AuthService.getUserRole();
   if (candidates.length === 0 || role === 'candidate') {
     return null;
   }
-
   return (
     <>
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Candidates</h6>
