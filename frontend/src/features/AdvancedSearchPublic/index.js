@@ -11,7 +11,6 @@ import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGet
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
 import {
-// Temp comment
   candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
@@ -33,6 +32,7 @@ const availableTabChoicesByUserType = {
 }
 
 function useTabState(disabledTabs, userType, pathname) {
+// Temp comment
   if (disabledTabs) {
     switch (pathname) {
       case '/candidates':

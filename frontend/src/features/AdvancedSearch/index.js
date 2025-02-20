@@ -15,6 +15,7 @@ import {
   candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
+  defaultCandidateFilterState,
   buildSearchFilters
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
@@ -39,6 +40,7 @@ function useTabState(disabledTabs, userType, pathname) {
       case '/companies':
         return useState('companies');
       case '/careers':
+// Temp comment
       default:
         return useState('careers');
     }

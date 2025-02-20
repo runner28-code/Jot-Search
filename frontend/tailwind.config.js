@@ -17,10 +17,10 @@ module.exports = {
             transform: 'rotate(0deg)'
           },
           to: {
-            transform: 'rotate(180deg)'
           },
         },
         'spin-reverse': {
+          from: {
             transform: 'rotate(180deg)'
           },
           to: {

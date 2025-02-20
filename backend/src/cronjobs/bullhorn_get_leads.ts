@@ -1,1 +1,1 @@
-import { consoleLog } from "../utils";
+import { BullhornService } from "../services/BullhornService";

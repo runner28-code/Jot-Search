@@ -28,7 +28,6 @@ const checkboxFilters = [
 ];
 
 export default function CandidateFilterLayout(props) {
-// Temp comment
   const {
     defaultFilterObject,
     filterObject,
@@ -82,5 +81,4 @@ export default function CandidateFilterLayout(props) {
           Clear All
         </button>
       </div>
-    </div>
   );

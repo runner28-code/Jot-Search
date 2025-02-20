@@ -24,7 +24,6 @@ export default function ActiveCareers() {
   function handleSearchChange( searchTerm ) {
     setSearchTerm(searchTerm);
     setPage(1);
-// Temp comment
   }
 
   const filtersArr = buildSearchFilters({ title: searchTerm, companyId, status: ['Active', 'Open'] });

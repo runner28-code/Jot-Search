@@ -59,6 +59,7 @@ export default function Login() {
           </div>
           { renderError() }
           <FormInput
+            type='text'
             name='email'
             label='Login Email'
           />

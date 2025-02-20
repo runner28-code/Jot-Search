@@ -93,6 +93,7 @@ export class BullhornService {
     const query = queryString.stringify(
       {
         client_id: config.bullhornClientID,
+        response_type: "code",
         action: "Login",
         username: config.bullhornApiUsername,
         password: config.bullhornApiPassword,

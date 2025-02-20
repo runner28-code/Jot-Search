@@ -1,6 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import {
-// Temp comment
   ActiveCareers,
   AddUser,
   Applications,
@@ -32,6 +31,7 @@ export default function Auth() {
           element={<Profile />} />
         <Route
           path={ROUTES.logout}
+// Temp comment
           element={<Logout />} />
         <Route
           path={`${ROUTES.candidates}/:id`}

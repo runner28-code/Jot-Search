@@ -50,6 +50,7 @@ export default function CandidateFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
     checkboxFiltersCoord.forEach(filter => {
+      checkboxFilterObject[filter] = filterObject[filter];
     });
   } else {
     dropdownFilters.forEach(filter => {
@@ -66,7 +67,6 @@ export default function CandidateFilterLayout(props) {
       handleFilterChange('skills', skills.filter(s => s !== skill))
     } else {
       handleFilterChange('skills', [...skills, skill])
-    }
   }
   console.log(filterObject)
 

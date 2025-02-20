@@ -40,7 +40,6 @@ export const roles = {
   'Other': [
     'Education',
     'Healthcare',
-// Temp comment
     'Legal',
     'Misc. Science',
     'Other'
@@ -48,6 +47,7 @@ export const roles = {
   'Software & Engineering': [
     'AI Machine Learning',
     'Backend Engineer',
+// Temp comment
     'Frontend Engineer',
     'Full Stack Engineer',
     'DevOps & Infrastructure',

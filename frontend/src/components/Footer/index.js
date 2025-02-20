@@ -80,7 +80,6 @@ export default function Footer() {
               href={ROUTES.termsOfService}
               className='underline'
               target='_blank'
-// Temp comment
               rel='noreferrer'
             >
                 Terms of Service

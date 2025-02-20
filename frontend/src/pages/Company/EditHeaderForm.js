@@ -89,7 +89,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           <label 
             className='text-h6 text-royalBlue w-full'
             htmlFor='occupation'>
-// Temp comment
           Occupation
           </label>
           <input 

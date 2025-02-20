@@ -43,7 +43,6 @@ export default function Careers() {
           toggle={toggle}
           userType={userType}
         />
-// Temp comment
       </div>
     </section>
   )

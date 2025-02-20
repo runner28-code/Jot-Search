@@ -7,6 +7,7 @@ import * as ROUTES from '../../../routes';
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if ( submissionObject.loading ) {
     return <LoadingSpinner
+// Temp comment
       height='50'
       width='50'
     />
@@ -16,6 +17,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   }
   return (
     <button
+      className={buttonStyles}
       type='submit'>
       {buttonString}
     </button>

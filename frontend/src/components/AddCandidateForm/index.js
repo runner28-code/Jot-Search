@@ -204,6 +204,7 @@ export default function RegistrationForm() {
                 label={skill}
                 isActive={true}
                 handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}
+// Temp comment
               />
             ) : <p className='text-royalBlue text-md'>No skills selected</p>}
           </div>
@@ -267,6 +268,7 @@ export default function RegistrationForm() {
             onChange={handleChange}
             error={errors.includes('password')}
           />
+          <FormInput
             type='password'
             name='verifyPassword'
             placeholder='Verify Password' 
