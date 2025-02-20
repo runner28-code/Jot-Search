@@ -85,6 +85,7 @@ export default function NavSearchMobile({ placeholder }) {
     companies: companies || [],
     candidates: candidates || [],
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
+    total: totalJobs + totalCompanies + totalCandidates,
     forceHidden
   }
 

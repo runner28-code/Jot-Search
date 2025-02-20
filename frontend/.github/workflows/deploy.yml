@@ -1,2 +1,2 @@
-on:
+name: Dev - EC2 Instance Deployment
   push:

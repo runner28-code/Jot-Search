@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Flag from '../../../assets/icons/flag.svg';
-// Temp comment
 import Search from '../../../assets/icons/search-gray.svg';
 import { useGetCompanies } from '../../../hooks/queries/useGetCompanies';
 import { useGetClientContacts } from '../../../hooks/queries/useGetClientContacts';
@@ -21,7 +20,6 @@ export default function AddCompanyUser() {
     setSelectedCompany(company);
     setSearch(company.name);
   }
-
   const paragraphStyles = 'opacity-70 mb-8';
   let titleStyles = 'font-spaceGrotesk items-center text-md vw-900:text-xl mb-8 ';
   let containerStyles = 'border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12 px-6 vw-900:px-14 ';

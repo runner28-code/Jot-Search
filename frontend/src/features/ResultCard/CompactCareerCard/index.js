@@ -7,6 +7,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {BsClipboardCheck} from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
 import { calculatePostingAge } from '../../../utils/formatFunctions';
+
 export default function CompactCareerCard({ data, active, agoDate, isFavoriteOverride = null, selectableProps = null }) {
   const postingAge = calculatePostingAge(agoDate);
 
@@ -30,7 +31,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
           </div>
           <p className='text-sm text-zinc-700 font-roboto mt-8'>{ data.company?.name }</p>
 
-          {/* Title */}
           <div className='flex grow'>
             <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.title}</h6>
           </div>

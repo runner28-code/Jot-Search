@@ -126,7 +126,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
               className={`${inputStyles} text-black70% p-6`}
             />
         }
-// Temp comment
       </label>
 
       {isSourceUserTable && <>

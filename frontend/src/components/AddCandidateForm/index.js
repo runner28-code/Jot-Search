@@ -143,6 +143,7 @@ export default function RegistrationForm() {
   const flexWidth = addType === 'candidate' ? 'w-full' : 'vw-900:w-1/3';
   const buttonBaseStyles = 'h-20 bg-royalBlue text-center text-white my-4 ';
   const buttonStyles = buttonBaseStyles + (addType === 'candidate' ? 'w-full ' : 'w-100 ');
+
   return (
     <form 
       className={containerStyles} 

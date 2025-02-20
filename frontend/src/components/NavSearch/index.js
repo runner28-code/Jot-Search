@@ -80,7 +80,6 @@ export default function NavSearch({ placeholder }) {
   }, [closeDropdown]);
 
   const combinedResults = {
-    jobs: jobs || [],
     companies: companies || [],
     candidates: candidates || [],
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),

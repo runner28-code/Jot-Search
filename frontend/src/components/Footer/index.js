@@ -150,6 +150,7 @@ export default function Footer() {
                 className='w-auto h-auto'
               />
             </a>
+            <a
               href='https://talent.intulsa.com/'
               target='_blank'
               rel='noopener noreferrer'

@@ -26,7 +26,6 @@ export class BullhornService {
   private corpToken = null;
   private oauth_url = "https://auth.bullhornstaffing.com/oauth";
   private api_base_url = "https://rest.bullhornstaffing.com/rest-services";
-
   public static async getClient() {
     if (BullhornService.client === null) {
       BullhornService.client = new BullhornService();

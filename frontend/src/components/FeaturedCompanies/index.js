@@ -3,6 +3,7 @@ import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { BsBuilding } from 'react-icons/bs';
+// Temp comment
 
 const ITEMS_PER_PAGE = 10;
 
@@ -18,7 +19,6 @@ export default function FeaturedCompanies() {
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(
-// Temp comment
     <div className='py-48 px-[20%] flex flex-col items-center'>
       { renderColorShapes() }
       <h2 className='text-h4 font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>

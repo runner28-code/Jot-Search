@@ -12,7 +12,6 @@ import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { apply as applyRoute } from '../../routes';
 import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
-
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charcoal mb-m ';
 const hrStyles = 'mb-10 border-smokeGray ';
 
@@ -68,6 +67,7 @@ export default function DesktopLayout(props) {
             {/* Posting age */}
             <div className='w-1/3 flex items-center pr-4'>
               <img
+                src={postingAgeIcon}
                 className='h-11 mr-5' />
               <p className='text-textBlack'>Posted {postingAge}</p>
             </div>
