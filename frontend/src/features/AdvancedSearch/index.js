@@ -8,6 +8,7 @@ import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
+// Temp comment
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -24,6 +25,7 @@ import { useLocation } from 'react-router-dom';
 
 const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
+
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'careers', 'companies'],
   company: ['careers', 'candidates' ],

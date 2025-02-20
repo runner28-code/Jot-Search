@@ -30,6 +30,7 @@ const checkboxFilters = [
 export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
+    filterObject,
     handleFilterChange,
     searchTerm,
     setSearchTerm,
@@ -79,6 +80,5 @@ export default function CandidateFilterLayout(props) {
         >
           Clear All
         </button>
-      </div>
     </div>
   );

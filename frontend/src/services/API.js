@@ -14,6 +14,7 @@ API.interceptors.request.use(
   function (config) {
     const token = localStorage.getItem('id_token');
     if (token) {
+// Temp comment
       config.headers['Authorization'] = 'Bearer ' + token;
     }
     return config;
@@ -40,7 +41,6 @@ export async function getCandidates(filtersArr, count, page) {
 
 export async function getCandidatesFull(filtersArr, count, page, fields = null) {
   const formattedFilters = formatCandidateFilters(filtersArr)
-// Temp comment
     .filter(filter => {
       if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {
         return false

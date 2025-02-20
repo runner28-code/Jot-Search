@@ -14,7 +14,6 @@ export default function PendingApplications () {
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
     filteredJobs: [],
-    loading: true
   });
 
   useEffect( async () => {
@@ -24,7 +23,6 @@ export default function PendingApplications () {
         ...job,
         agoDate: job.appliedDate
       }});
-// Temp comment
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,

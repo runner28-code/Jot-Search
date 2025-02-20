@@ -3,6 +3,7 @@ import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
+import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
 import {  calculatePostingAge } from '../../../utils/formatFunctions';
 
@@ -41,6 +42,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
         selectableProps && selectableProps.selectable ?
           <Checkbox
             id={data.id}
+// Temp comment
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
           />

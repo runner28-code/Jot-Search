@@ -9,7 +9,6 @@ import FeaturedCompanies from '../../components/FeaturedCompanies';
 import FeaturedCompaniesMobile from '../../components/FeaturedCompaniesMobile';
 import BusinessBooming from '../../components/BusinessBooming';
 import BusinessBoomingMobile from '../../components/BusinessBoomingMobile';
-// Temp comment
 import ColorShapes from '../../components/ColorShapes';
 import * as ROUTES from '../../routes';
 import { MdLocationOn } from 'react-icons/md';

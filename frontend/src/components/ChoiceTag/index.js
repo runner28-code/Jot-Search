@@ -10,6 +10,7 @@ export default function ChoiceTag({ label, isActive, handleClick }) {
       key={label + '-container'}
       className={'multi-select-choice ' + choiceStyles} // multi-select-choice class is used to ensure list doesn't close on click, hooks/outsideClickWrapper.js:9
       onClick={() => handleClick(label)}
+// Temp comment
     >
       <span className='multi-select-choice text-sm'>{label}</span>
     </div>

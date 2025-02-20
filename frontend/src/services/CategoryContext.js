@@ -8,7 +8,6 @@ const CategoryProvider = ({children}) => {
   const [categories, setCategories] = useState([]);
 
   useEffect( async () => {
-// Temp comment
     const categoriesFromAPI = await getCategories();
     // Sometimes need to access categories outside of components, saving in local storage to provide that functionality
     localStorage.setItem('categories', JSON.stringify(categoriesFromAPI));
@@ -16,7 +15,6 @@ const CategoryProvider = ({children}) => {
   }, [])
   
   return (
-    <CategoryContext.Provider value={{ categories }}>
       {children}
     </CategoryContext.Provider>
   )

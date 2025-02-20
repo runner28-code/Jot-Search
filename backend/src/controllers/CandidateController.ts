@@ -16,6 +16,7 @@ import { COMPANY } from "../utils/constant";
 
 import db from "../utils/db";
 
+import { JobFilter, USER_FILTER } from "../utils/FieldMatch";
 import { getSavedJobs, saveJob } from "../utils/MainCrud";
 import { clearPassword } from "../utils/password";
 import { COORDINATOR } from "../utils/constant";

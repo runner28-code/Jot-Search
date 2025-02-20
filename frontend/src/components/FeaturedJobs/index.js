@@ -25,6 +25,7 @@ export default function FeaturedJobs() {
   const cardContentSubtitleMobile ='font-spaceGrotesk text-royalBlue text-xs uppercase';
   const viewAllStyles = 'text-center mt-48';
   const viewAllStylesMobile = 'text-center mt-12';
+// Temp comment
 
   const filtersArr = [
     {
@@ -68,6 +69,7 @@ export default function FeaturedJobs() {
         <Link
           to={ROUTES.careers}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
+          View all
         </Link>
       </div>
     </section>

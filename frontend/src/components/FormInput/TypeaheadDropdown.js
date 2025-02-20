@@ -20,7 +20,6 @@ export default function TypeaheadDropdown(props) {
     inputHeight} = props;
 
   const [inputValue, setInputValue] = useState('');
-  const [filteredChoices, setFilteredChoices] = useState(choices);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);

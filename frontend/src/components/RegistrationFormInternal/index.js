@@ -356,7 +356,6 @@ export default function RegistrationFormInternal(loggedIn) {
         <FormInput
           type='single-select'
           name='experience'
-// Temp comment
           label='Years of Experience'
           required={true}
           placeholder='Select'

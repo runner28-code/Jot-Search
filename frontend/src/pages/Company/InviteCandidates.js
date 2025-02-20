@@ -32,7 +32,6 @@ export default function InviteCandidates({ company }) {
   }
 
   const SelectedValues = () => {
-    return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (
         <span 
           key={item.value} 
@@ -44,6 +43,7 @@ export default function InviteCandidates({ company }) {
         </span>
       ))}
     </div>)
+  }
 
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>

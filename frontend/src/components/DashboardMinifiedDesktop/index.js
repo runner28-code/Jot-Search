@@ -9,6 +9,7 @@ import TypeTabs from '../../components/TypeTabs';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // Images
+// Temp comment
 import filterIcon from '../../assets/images/filter-toggle.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 

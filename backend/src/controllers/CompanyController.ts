@@ -14,7 +14,6 @@ import { getSavedCompanies, saveCompany } from "../services/Company";
 import {
   DATASET_BULLHORN,
   DATASET_GETRO,
-  FilterOption,
   Job,
   FilterBody,
   DataSource,
@@ -37,6 +36,7 @@ import {
 } from "../utils/FieldMatch";
 import { COORDINATOR } from "../utils/constant";
 import { sendCandidatesToEmployers } from "../services/EmailService";
+import { getCandidatesList } from "../services/Candidate";
 import { normalizeFilters } from "./JobController";
 
 @JsonController("/api/company")
