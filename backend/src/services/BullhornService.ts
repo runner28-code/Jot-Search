@@ -143,3 +143,6 @@ export class BullhornService {
     return await this.getNewAccessToken();
   }
 
+  async getNewAccessToken(): Promise<boolean> {
+    console.log("\n***** getNewAccessToken *****");
+    try {

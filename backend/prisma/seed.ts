@@ -15,9 +15,12 @@ async function main() {
     console.error("Error during seed...❌");
     console.error(err);
     throw err;
+  }
 }
 
 async function seedJobs() {
   await db.job.createMany({
     data: [
       {
+        title: "Senior Software Engineer",
+        companyId: (await db.company.findFirst())?.id,

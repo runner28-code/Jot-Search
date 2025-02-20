@@ -4,7 +4,6 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import ChoiceTag from '../ChoiceTag';
 import ChoiceListItem from '../ChoiceListItem';
 
-export default function TypeaheadDropdown(props) {
   const {
     type, 
     dropdownType, 
@@ -31,7 +30,6 @@ export default function TypeaheadDropdown(props) {
     } else {
       onChange(name, currentChosen.filter(item => item !== choice));
     }
-// Temp comment
   }, [onChange])
 
   /* Close dropdown on any outside clicks */

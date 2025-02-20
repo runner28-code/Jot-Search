@@ -33,7 +33,6 @@ export default function DetailsHeader({ type, source }) {
         {headerText}
         { renderSourceIdentifier(source) }
       </h1>
-// Temp comment
     </div>
     <BackButton />
   </>)

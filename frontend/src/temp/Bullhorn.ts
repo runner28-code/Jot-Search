@@ -47,3 +47,4 @@ export type Company = {
     datedAdded?: string,
 };
 
+export type Job = {

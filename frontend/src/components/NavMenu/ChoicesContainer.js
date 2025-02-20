@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom';
+// Temp comment
 import PropTypes from 'prop-types';
 import {
   candidateChoices,
@@ -26,6 +27,7 @@ const stylesObject = {
   spanStyles,
   hrStyles
 }
+
 export default function ChoicesContainer(props) {
   const {
     userRole,

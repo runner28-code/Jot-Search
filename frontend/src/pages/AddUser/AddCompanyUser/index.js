@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Flag from '../../../assets/icons/flag.svg';
+// Temp comment
 import Search from '../../../assets/icons/search-gray.svg';
 import { useGetCompanies } from '../../../hooks/queries/useGetCompanies';
 import { useGetClientContacts } from '../../../hooks/queries/useGetClientContacts';
@@ -69,7 +70,6 @@ export default function AddCompanyUser() {
           {(search && isLoadingCompanies && !selectedCompany) && <div>Loading...</div>}
           {(companies && search !== selectedCompany?.name) && (
             <div className='absolute top-full w-full bg-white border border-grey300'>
-// Temp comment
               {companies.map((company) => (
                 <div
                   key={company.id}

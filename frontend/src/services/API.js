@@ -59,6 +59,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
   }
 }
 
+export async function getCandidateById(id) {
   const { data } = await API.get(ROUTES.APIcandidates, {
     params: {
       id

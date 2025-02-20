@@ -32,3 +32,4 @@ import { User, USER_TABLE } from "../types/User";
 import { COORDINATOR, CANDIDATE, COMPANY, ROLES } from "../utils/constant";
 
 import { CreateJwtToken, VerifyJwtToken } from "../utils/jwtUtils";
+import { User as DbUser } from "prisma/prisma-client";

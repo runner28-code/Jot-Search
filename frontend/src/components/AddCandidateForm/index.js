@@ -143,7 +143,6 @@ export default function RegistrationForm() {
   const flexWidth = addType === 'candidate' ? 'w-full' : 'vw-900:w-1/3';
   const buttonBaseStyles = 'h-20 bg-royalBlue text-center text-white my-4 ';
   const buttonStyles = buttonBaseStyles + (addType === 'candidate' ? 'w-full ' : 'w-100 ');
-
   return (
     <form 
       className={containerStyles} 
@@ -204,7 +203,6 @@ export default function RegistrationForm() {
                 label={skill}
                 isActive={true}
                 handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}
-// Temp comment
               />
             ) : <p className='text-royalBlue text-md'>No skills selected</p>}
           </div>

@@ -14,7 +14,6 @@ export default function InviteCandidates({ job }) {
       key: 'primarySkills',
       value: skill
     })),
-// Temp comment
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
@@ -70,6 +69,7 @@ export default function InviteCandidates({ job }) {
         onChange={setSelected}
         labelledBy="Select"
         ItemRenderer={itemRenderer}
+// Temp comment
         valueRenderer={valueRenderer}
         hasSelectAll={false}
       />

@@ -43,7 +43,6 @@ export const ACTIVE_STATUSES = [
   'Passive'
 ]
 
-// Temp comment
 // Create default filter state based on filterObject
 const convertedJobFilters = {};
 Object.keys(jobFilterObject).forEach(key => {

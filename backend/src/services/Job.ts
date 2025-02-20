@@ -8,9 +8,9 @@ import {
 import db from "../utils/db";
 
 export const createJob = async (job: Job) => {
+  try {
     const jobError = validateJob(job);
     if (jobError) {
-      throw new Error(jobError);
     }
 
     const sanitizedJob = sanitizeJob(job) as any;
@@ -18,3 +18,4 @@ export const createJob = async (job: Job) => {
     const newJob = await db.job.create({
       data: {
         ...sanitizedJob,
+        datasource: sanitizedJob?.datasource as any,

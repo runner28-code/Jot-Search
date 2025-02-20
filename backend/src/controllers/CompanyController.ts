@@ -52,3 +52,4 @@ export class CompanyController {
       return {
         company,
         source: datasource,
+      };

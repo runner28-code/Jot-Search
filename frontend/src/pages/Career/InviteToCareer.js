@@ -8,6 +8,7 @@ import {
 } from '../../utils/filterObjects';
 
 // Images
+// Temp comment
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
@@ -59,7 +60,6 @@ export default function InviteToCareer({ candidate }) {
       {isSendingJob && <div className="text-center">Sending Invitations...</div>}
       {successfullySentJob && <div className="text-center">Invitations Sent!</div>}
 
-// Temp comment
       <SelectedValues />
 
       <MultiSelect

@@ -9,6 +9,7 @@ export function validateInput(name, value, errors, password) {
     } else {
       newErrors[name] = '';
     }
+    return newErrors;
   } 
   // Password validation
   else if ( name === 'verifyPassword' ) {
@@ -18,7 +19,6 @@ export function validateInput(name, value, errors, password) {
       newErrors[name] = '';
     }
   } 
-  // Generic validation
   else if ( value === '' ) { // Add to errors if empty
     const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1);
     newErrors[name] = `${capitalizedName} is required`;

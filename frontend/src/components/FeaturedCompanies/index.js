@@ -18,6 +18,7 @@ export default function FeaturedCompanies() {
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(
+// Temp comment
     <div className='py-48 px-[20%] flex flex-col items-center'>
       { renderColorShapes() }
       <h2 className='text-h4 font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
@@ -37,7 +38,6 @@ export default function FeaturedCompanies() {
         }
       </div>
       <div className='text-center mt-48'>
-// Temp comment
         <Link
           to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>

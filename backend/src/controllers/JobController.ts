@@ -62,3 +62,4 @@ export class JobController {
           getroJobInfo: true,
           company: true,
         },
+      });

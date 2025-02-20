@@ -86,6 +86,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   async function submitData() {
     handleCandidateUpdate(formData)
     setEditMode(false);
+// Temp comment
   }
 
   function onSubmit(e) {
@@ -112,6 +113,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 className={labelStyles}
               >
                 <p className={labelTextStyles}>First Name</p>
+                <input
                   type='text'
                   name='firstname'
                   id='firstname'

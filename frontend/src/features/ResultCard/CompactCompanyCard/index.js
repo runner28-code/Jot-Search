@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
-import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
@@ -37,7 +36,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             <p className='text-grey-700 opacity-50'>{agoText} {postingAge}</p>
           </div>
         </div>
-// Temp comment
       </Link>
       {
         selectableProps && selectableProps.selectable ?
