@@ -89,7 +89,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         src={avatarUrl}
         alt='Candidate Avatar'
         title={`${formData.firstname} ${formData.lastname}`}
-// Temp comment
       />
       {editMode && <div className='mb-4 flex flex-col'>
         <label

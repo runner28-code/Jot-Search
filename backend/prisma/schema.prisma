@@ -78,6 +78,7 @@ model Lead {
   division              String?
   email                 String?
   email2                String?
+  email3                String?
   fax                   String?
   fax2                  String?
   fax3                  String?
@@ -115,7 +116,6 @@ model Lead {
   skillSet              String?
   smsOptIn              Boolean?
   specialties           String?
-  status                String?
   timeZoneOffsetEST     Int?
   type                  String?
   willRelocate          Boolean?

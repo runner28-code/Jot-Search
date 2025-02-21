@@ -14,4 +14,3 @@ export type Company = {
   name?: string;
   ocp_search_status?: string;
   scraping_enabled?: string;
-  slug?: string;

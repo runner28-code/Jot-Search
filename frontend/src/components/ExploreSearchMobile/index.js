@@ -12,7 +12,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     'On-Site/Remote': 'Any Work Setting',
     expertise: 'Any Expertise',
   });
-
   function handleSearchClick() {
     const params = {};
     if (filterState.title) {
@@ -55,6 +54,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
       <FilterSearch
         searchTerm={ filterState.title }
         setSearchTerm={ handleSearchChange }
+        handleSearchClick={ handleSearchClick }
         placeholder='Search careers or companies'
         additionalClasses='mb-8'
       />

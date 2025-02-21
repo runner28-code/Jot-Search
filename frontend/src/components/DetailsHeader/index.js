@@ -12,7 +12,6 @@ export default function DetailsHeader({ type, source }) {
       Icon = CandidatesIcon;
       break;
     case 'company':
-      Icon = CompanyIcon;
       break;
     case 'career':
     default:

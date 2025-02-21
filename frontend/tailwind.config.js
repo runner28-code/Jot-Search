@@ -6,6 +6,7 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
+// Temp comment
     extend: {
       animation: {
         'spin': 'spin .175s linear forwards',
@@ -30,7 +31,6 @@ module.exports = {
         },
       },
       boxShadow: {
-// Temp comment
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
       colors: {

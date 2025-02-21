@@ -47,6 +47,7 @@ export default function CareerCard({ data, active }) {
             dataObj={dataObj}
             active={active}
           />
+      }
       <FavoriteButton
         type={'job'}
         data={data} />

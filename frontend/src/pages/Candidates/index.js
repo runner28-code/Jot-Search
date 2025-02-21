@@ -7,7 +7,6 @@ import AuthService from '../../services/auth';
 export default function Candidates() {
   // Redirect if userRole is 'candidate', candidates should not be able to see other candidates
   const { role } = AuthService.getProfile();
-  if (role === 'candidate') {
     return <Navigate to='/' />
   }
 
@@ -15,6 +14,7 @@ export default function Candidates() {
     <section className='mr-20'>
       <PageHeader
         headerText='Candidates List'
+        icon={headerIcon}
       />
       <AdvancedSearch disabledTabs />
     </section>

@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import AuthService from './auth';
 import { getCandidateById } from './API';
 
-const mockCandidateData = [
   {
     id: 'cb4f35ed-db88-410f-beb0-a6a449135f75',
     firstName: 'Zach',
@@ -103,7 +102,6 @@ export const useCandidateContext = () => useContext(CandidateContext)
 const CandidateProvider = ({children}) => {
   const [candidates, setCandidates] = useState(mockCandidateData);
   const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
-// Temp comment
 
   useEffect(() => {
     if (currentUser?.user_id) {

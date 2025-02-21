@@ -15,7 +15,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
       value: ['Active', 'Open']
     },
     {
-      key: 'companyId',
       value: companyId
     }
   ];
@@ -43,7 +42,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
           return <CareerCard
             key={index}
             data={career}
-// Temp comment
           />
         })
         }

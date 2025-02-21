@@ -15,6 +15,7 @@ import {
 
 export default function CandidateCard({ data, disableLink }) {
   const avatarUrl = formatAvatarUrl(data.avatar, data.firstName, data.lastName);
+// Temp comment
   const nameString = data.firstName + ' ' + data.lastName;
   const experienceString = formatYearsExperience(data.experienceYears, data.experience);
   const addressString = buildCandidateAddress(data);
@@ -34,6 +35,7 @@ export default function CandidateCard({ data, disableLink }) {
         {/* Card Image and New Lead Label */}
         <div className='flex flex-col items-center gap-m mr-20'>
           <div className='h-48 w-48 flex justify-center items-center'>
+            <img
               src={avatarUrl}
               className='rounded-full'
             />

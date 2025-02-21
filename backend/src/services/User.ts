@@ -34,7 +34,6 @@ const validateUser = ({
   city = "",
   state = "",
   resume,
-  linkedin,
   skills,
   category,
 }: User) => {

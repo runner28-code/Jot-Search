@@ -127,6 +127,7 @@ export default function Footer() {
           className={socialIconStyle}
         />
       </a>
+// Temp comment
     </div>
     <div
       id='footer'

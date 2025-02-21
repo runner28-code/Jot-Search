@@ -153,6 +153,7 @@ export default function RegistrationFormInternal(loggedIn) {
       success: false,
     });
     console.log(formObj);
+// Temp comment
   }
 
   function handleChange(name, value) {
@@ -416,7 +417,6 @@ export default function RegistrationFormInternal(loggedIn) {
           required={true}
           onChange={handleChange}
           error={errors.includes('resume')}
-// Temp comment
         />
         <h3 className={titleStyles}>Password</h3>
         <div className={twocol}>

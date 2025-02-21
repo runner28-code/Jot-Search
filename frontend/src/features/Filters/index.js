@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
+
 export default function Filters(props) {
   const {
     handleFilterChange,
@@ -10,6 +11,7 @@ export default function Filters(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
+// Temp comment
     marginBottom
   } = props;
 

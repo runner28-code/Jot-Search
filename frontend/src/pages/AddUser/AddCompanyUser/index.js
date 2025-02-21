@@ -56,7 +56,6 @@ export default function AddCompanyUser() {
         <div className='relative'>
           <input
             type='text'
-            id='companylookup'
             placeholder='Company lookup'
             value={search}
             onChange={(e) => setSearch(e.target.value)}

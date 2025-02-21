@@ -12,6 +12,7 @@ import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
 import {
   candidateFilterObject,
+  jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,
   buildSearchFilters
@@ -38,7 +39,6 @@ function useTabState(disabledTabs, userType, pathname) {
         return useState('candidates');
       case '/companies':
         return useState('companies');
-      case '/careers':
       default:
         return useState('jobs');
     }

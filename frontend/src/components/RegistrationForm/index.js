@@ -302,7 +302,6 @@ export default function RegistrationForm(loggedIn) {
             placeholder='Select'
             value={formObj.experience}
             onChange={handleChange}
-            choiceObject={experienceMap}
             error={errors.includes('experience')}
           />
           <FormInput

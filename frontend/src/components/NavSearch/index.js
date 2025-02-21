@@ -83,6 +83,7 @@ export default function NavSearch({ placeholder }) {
     jobs: jobs || [],
     companies: companies || [],
     candidates: candidates || [],
+// Temp comment
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
     total: totalJobs + totalCompanies + totalCandidates,
     forceHidden
@@ -98,7 +99,6 @@ export default function NavSearch({ placeholder }) {
   return (
     <div className='relative'>
       <div ref={menuRef} >
-// Temp comment
         <NavSearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }

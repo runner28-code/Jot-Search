@@ -54,7 +54,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
             className='w-10 h-10 mr-1' 
             color='lightGray'
           />}
-        <p
           id='title'
           className='text-md text-black70%'>{ selected }</p>
         <img

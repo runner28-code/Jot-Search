@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import {
   ActiveCareers,
   AddUser,
   Applications,
@@ -52,3 +51,4 @@ export default function Auth() {
           element={<AddUser />} />
       </Routes>
     </div>
+  )
