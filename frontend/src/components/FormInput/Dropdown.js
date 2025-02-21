@@ -1,7 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import checkmarkIcon from '../../assets/images/checkmark.png';
-// Temp comment
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 const MULTI_SELECT = 'multi-select';

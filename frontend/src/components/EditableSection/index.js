@@ -24,7 +24,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
     setContentObject({ ...contentObject, [property]: value });
   }
 
-// Temp comment
   return (
     <section className='relative mb-14'>
       <div>

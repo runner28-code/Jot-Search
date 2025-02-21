@@ -14,3 +14,4 @@ CREATE TABLE "Candidate" (
     "dateLastComment" TIMESTAMP(3),
     "dateLastModified" TIMESTAMP(3),
     "dateNextCall" TIMESTAMP(3),
+    "dateOfBirth" TEXT,

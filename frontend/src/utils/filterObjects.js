@@ -32,7 +32,6 @@ export const jobFilterObject = {
     'Active',
     'Hired',
     'Advertising Only',
-    'Waiting for inTake',
     'On-Deck',
   ]
 };
@@ -107,6 +106,7 @@ export const candidateFilterObject = {
   ],
   'Skills': [
     ...skills
+  ],
 };
 
 // Create default filter state based on filterObject

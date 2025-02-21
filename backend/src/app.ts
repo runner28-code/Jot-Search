@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import { Action, useExpressServer } from "routing-controllers";
 import path from "path";
 import bodyParser from "body-parser";
+import cors from "cors";
 import { NextFunction } from "connect";
 import { VerifyJwtToken } from "./utils/jwtUtils";
 import { findUserByEmail } from "./services/User";
@@ -19,3 +20,4 @@ try {
   s3 = new AWS.S3({
   accessKeyId: process.env.S3_ACCESS_KEY,
   secretAccessKey: process.env.S3_SECRET_KEY,
+  endpoint: process.env.S3_ENDPOINT,

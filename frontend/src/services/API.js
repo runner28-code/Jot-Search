@@ -41,6 +41,7 @@ export async function getCandidates(filtersArr, count, page) {
 export async function getCandidatesFull(filtersArr, count, page, fields = null) {
   const formattedFilters = formatCandidateFilters(filtersArr)
     .filter(filter => {
+      if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {
         return false
       }
       return true
@@ -58,6 +59,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
   }
 }
 
+// Temp comment
 export async function getCandidateById(id) {
   const { data } = await API.get(ROUTES.APIcandidates, {
     params: {

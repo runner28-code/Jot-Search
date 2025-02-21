@@ -1,4 +1,3 @@
-export const expertises = [
   'Finance',
   'Marketing',
   'Operations',
@@ -60,3 +59,5 @@ export const roles = {
     'Engineering Management',
     'Other Engineers'
   ],
+  'Sales & Biz Dev': [
+    'Customer Success & Account Management',

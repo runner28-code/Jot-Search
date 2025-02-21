@@ -12,7 +12,6 @@ import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
 import {
   candidateFilterObject,
-// Temp comment
   jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,
@@ -30,6 +29,7 @@ const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
+// Temp comment
   guest: ['jobs', 'companies'],
 }
 

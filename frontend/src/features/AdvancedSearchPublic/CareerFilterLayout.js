@@ -5,7 +5,6 @@ import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
-const dropdownFilters = [
   'Expertise',
   'On-Site/Remote',
   'Years Experience',

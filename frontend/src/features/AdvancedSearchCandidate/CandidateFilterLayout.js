@@ -25,6 +25,7 @@ const checkboxFilters = [
   'Authorized to work in the US',
   'Open to Relocation',
   'Actively Looking',
+// Temp comment
 ];
 
 export default function CandidateFilterLayout(props) {
@@ -34,7 +35,6 @@ export default function CandidateFilterLayout(props) {
     handleFilterChange,
     searchTerm,
     setSearchTerm,
-// Temp comment
     handleSearchClick,
     clearFilters,
   } = props;

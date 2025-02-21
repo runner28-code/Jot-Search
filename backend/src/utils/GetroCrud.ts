@@ -17,3 +17,4 @@ export const saveCompanies = async (companies: any[]) => {
 							}
 			
 							const companyData = { ...company };
+			

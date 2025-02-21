@@ -9,3 +9,4 @@ CREATE TABLE "UserTalentCollection" (
     "created_at" TEXT,
     "updated_at" TEXT,
     "declined_by" TEXT,
+    "declined_at" TEXT,

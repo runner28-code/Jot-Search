@@ -21,3 +21,4 @@ export const createJob = async (job: Job) => {
         ...sanitizedJob,
         datasource: sanitizedJob?.datasource as any,
       },
+    });

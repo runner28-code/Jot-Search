@@ -1,4 +1,3 @@
--- CreateTable
 CREATE TABLE "Lead" (
     "id" TEXT NOT NULL,
     "address_address1" TEXT,
@@ -8,3 +7,4 @@ CREATE TABLE "Lead" (
     "address_zip" TEXT,
     "address_country_id" TEXT,
     "campaignSource" TEXT,
+    "candidates" TEXT,

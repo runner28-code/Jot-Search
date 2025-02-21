@@ -2,7 +2,6 @@ import RegistrationForm from '../../components/RegistrationForm';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // TODO: Terms of Service?
-export default function SignUp() {
 
   const { width } = useWindowDimensions();
 
@@ -29,6 +28,7 @@ export default function SignUp() {
     )
   }
 
+  return (
     <main className='-mt-28 bg-signup-page-hero bg-contain bg-no-repeat'>
       <div className='pt-40 flex flex-col justify-center items-center'>
         <div className='relative h-24 w-26 mb-15'>

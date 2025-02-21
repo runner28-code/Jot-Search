@@ -95,7 +95,9 @@ export const register = async (data: User) => {
     }
 
     return { result: true };
-  } catch (error) {
     console.error(error);
     return { result: false, error };
   }
+};
+
+export const update = async (parent_id: string, role: string, data: any) => {

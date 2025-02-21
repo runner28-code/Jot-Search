@@ -14,3 +14,4 @@ export type User = {
   zip?: string;
   resume?: string;
   avatar?: string;
+  linkedin?: string;

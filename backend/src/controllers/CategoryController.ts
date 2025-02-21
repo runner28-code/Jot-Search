@@ -8,3 +8,4 @@ import {
 import { getCategoriesByFilter } from "../services/Category";
 import {
   CategoryByIdResponse,
+  CategorySearchByFilterResponse,

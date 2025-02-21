@@ -73,7 +73,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
 
     handleCandidateUpdate(dataToSubmit);
     setEditMode(false);
-// Temp comment
   }
 
   const disabled = !editMode

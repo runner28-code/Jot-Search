@@ -51,7 +51,6 @@ export default function Company() {
 
   const loggedIn = AuthService.loggedIn();
 
-// Temp comment
   const navigate = useNavigate();
 
   if (loading) { return <LoadingSpinner /> }
