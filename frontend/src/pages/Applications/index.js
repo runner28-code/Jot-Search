@@ -82,4 +82,5 @@ export default function Applications() {
           }}
         />
       </div>
+    </section>
   )

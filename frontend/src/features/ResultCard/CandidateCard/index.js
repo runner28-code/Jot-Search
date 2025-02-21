@@ -34,7 +34,6 @@ export default function CandidateCard({ data, disableLink }) {
         {/* Card Image and New Lead Label */}
         <div className='flex flex-col items-center gap-m mr-20'>
           <div className='h-48 w-48 flex justify-center items-center'>
-            <img
               src={avatarUrl}
               className='rounded-full'
             />
@@ -87,6 +86,7 @@ export default function CandidateCard({ data, disableLink }) {
           <div className='flex flex-wrap gap-m mt-[18px]'>
             { renderSkills(data.skills) }
           </div>
+        </div>
       </LinkWrapper>
       <FavoriteButton
         type={'candidate'}

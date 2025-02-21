@@ -367,7 +367,6 @@ export default function RegistrationForm(loggedIn) {
             placeholder='Select'
             value={formObj.employmentPreference}
             onChange={handleChange}
-// Temp comment
             choices={['Any', 'Full-Time', 'Contract']}
             error={errors.includes('employmentPreference')}
           />

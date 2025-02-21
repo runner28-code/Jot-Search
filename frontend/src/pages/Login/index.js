@@ -78,7 +78,7 @@ export default function Login() {
             <Link
               to={ROUTES.accountRecovery}
               className='text-royalBlue text-sm vw-640:text-ml underline'>
-            </Link>
+              Forgot Password?
           </div>
         </form>
         {/* Assistance call-to-action */}

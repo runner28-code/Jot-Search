@@ -8,6 +8,7 @@ async function main() {
     await seedCandidates();
     await seedCompanies();
     await seedCategories();
+    await seedJobs();
     await seedUsers();
     console.log("Done🎉");
   } catch (err) {
@@ -28,3 +29,4 @@ async function seedJobs() {
         city: "Tulsa",
         state: "OK",
         zip: "74008",
+        salary: 160000,

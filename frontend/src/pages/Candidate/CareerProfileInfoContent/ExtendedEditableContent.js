@@ -89,6 +89,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         src={avatarUrl}
         alt='Candidate Avatar'
         title={`${formData.firstname} ${formData.lastname}`}
+// Temp comment
       />
       {editMode && <div className='mb-4 flex flex-col'>
         <label
@@ -143,6 +144,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
 
         <FormInput
           type='multi-select'
+          name='roles'
           label={`What roles are you interested in?`}
           required={true}
           placeholder='Select'

@@ -19,7 +19,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
 
   return (
     <div className='flex flex-col items-start pt-8'>
-// Temp comment
       {/* Loading */}
       {isLoadingContacts && <LoadingSpinner />}
       {/* No results */}
@@ -28,7 +27,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
       )}
       {/* Results */}
       {!isLoadingContacts && clientContacts?.length > 0 && (<>
-        <p className='opacity-70 text-sm'>Select the contact(s) you would like to add from {selectedCompany?.name}</p>
         <ul className='border-y border-grey300 mt-2 w-full'>
           {clientContacts.map((contact, index) => (
             <li
