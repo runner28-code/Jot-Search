@@ -24,6 +24,7 @@ API.interceptors.request.use(
 );
 
 export default API;
+// Temp comment
 
 export function appendPathToBaseUrl(path) {
   if (path.slice(0, 4) === 'http') {
@@ -59,7 +60,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
   }
 }
 
-// Temp comment
 export async function getCandidateById(id) {
   const { data } = await API.get(ROUTES.APIcandidates, {
     params: {

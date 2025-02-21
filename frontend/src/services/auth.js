@@ -32,7 +32,6 @@ class AuthService {
       } else return false;
     } catch (err) {
       return false;
-// Temp comment
     }
   }
 

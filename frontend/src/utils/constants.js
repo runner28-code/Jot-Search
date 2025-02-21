@@ -9,7 +9,6 @@ export const pluralizedTypes = {
 }
 
 export const openJobStatuses = [
-// Temp comment
   'Active',
   'active',
   'Passive',
@@ -57,7 +56,6 @@ export const stateCodeMap = {
   Pennsylvania: 'PA',
   'Rhode Island': 'RI',
   'South Carolina': 'SC',
-  'South Dakota': 'SD',
   Tennessee: 'TN',
   Texas: 'TX',
   Utah: 'UT',

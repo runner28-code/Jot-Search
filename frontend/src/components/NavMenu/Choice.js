@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 
@@ -22,5 +23,6 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
         <span className={stylesObject.spanStyles}>{choice}</span>
       </Link>
       <hr className={stylesObject.hrStyles} />
+// Temp comment
     </div>
   )

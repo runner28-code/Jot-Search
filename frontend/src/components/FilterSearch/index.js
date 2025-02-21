@@ -27,6 +27,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     >
       <input
         type='text'
+// Temp comment
         className={ inputStyles }
         placeholder={ placeholderString }
         value={ searchTerm }
@@ -38,7 +39,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
       >
         <img
           src={ searchIcon }
-// Temp comment
           alt='search'
           className={ width >= 990 ? 'v-8 vw-768:w-10 h-8 vw-768:h-10 mr-3 vw-768:mr-5' : 'h-12' }
         />

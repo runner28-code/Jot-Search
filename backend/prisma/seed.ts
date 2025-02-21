@@ -8,7 +8,6 @@ async function main() {
     await seedCandidates();
     await seedCompanies();
     await seedCategories();
-    await seedJobs();
     await seedUsers();
     console.log("Done🎉");
   } catch (err) {

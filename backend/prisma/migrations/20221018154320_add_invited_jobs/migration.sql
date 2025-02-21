@@ -1,2 +1,1 @@
--- CreateTable
 CREATE TABLE "CandidateJobInvites" (

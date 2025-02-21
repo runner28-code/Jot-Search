@@ -98,6 +98,7 @@ export class BullhornService {
         username: config.bullhornApiUsername,
         password: config.bullhornApiPassword,
       },
+      { encode: false }
     );
     const url = `${this.oauth_url}/authorize?${query}`;
     console.log("url =", url);

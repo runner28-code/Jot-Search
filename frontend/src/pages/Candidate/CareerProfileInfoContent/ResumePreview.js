@@ -13,7 +13,6 @@ const ResumePreview = ({ resumeUrl }) => {
 
   const { pdfDocument } = usePdf({
     file: resumeUrl,
-    page,
     canvasRef,
   });
 
@@ -38,6 +37,7 @@ const ResumePreview = ({ resumeUrl }) => {
                 onClick={() => setPage(page - 1)}
               >
                 <BackIcon className={prevButtonDisabled ? buttonStylesDisabled : buttonStyles} />
+              </button>
             </li>
             <li>Page {page} of {pdfDocument.numPages}</li>
             <li className="next">

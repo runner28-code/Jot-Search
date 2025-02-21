@@ -50,12 +50,12 @@ export default function AddCoordinator() {
 
   function handleInputChange(e) {
     const { name, value } = e.target;
-
     // Error checking
     const newErrors = validateInput(
       name,
       value,
       submissionObject.errors,
+      formObject.password
     );
 
     // Add errors to state if there are any

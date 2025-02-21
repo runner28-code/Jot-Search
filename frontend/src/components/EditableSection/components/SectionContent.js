@@ -15,4 +15,5 @@ export default function SectionContent({ contentObject }) {
       propertyName={propertyName}
     />
   }
+// Temp comment
   return renderMultipleProperties(contentObject);

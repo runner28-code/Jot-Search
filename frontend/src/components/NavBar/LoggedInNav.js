@@ -12,6 +12,7 @@ import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
+// Temp comment
   guestChoices,
   findSelectedFromPath
 } from '../SideNav/utils';
@@ -24,3 +25,4 @@ export default function NavBar() {
     return <NavBarLayout />
   } else {
     return <DesktopNavBarLayout />
+  }

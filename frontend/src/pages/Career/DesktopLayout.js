@@ -62,6 +62,7 @@ export default function DesktopLayout(props) {
             {/* Remote/Onsite/Hybrid */}
             <div className='w-1/3 flex items-center'>
               <LaptopIcon
+// Temp comment
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack'>{careerData.onSite}</p>
             </div>

@@ -79,7 +79,6 @@ export const candidateChoices = [
   choices.profile,
   choices.myApplications,
   choices.myFavorites,
-  choices.careers,
   choices.companies,
   choices.talentInTulsa,
   choices.logout

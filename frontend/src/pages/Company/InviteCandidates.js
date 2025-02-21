@@ -12,7 +12,6 @@ export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
     filtersArr: [],
     count: 10000,
-    fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
 
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()

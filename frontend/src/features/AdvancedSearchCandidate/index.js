@@ -29,7 +29,6 @@ const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
-// Temp comment
   guest: ['jobs', 'companies'],
 }
 

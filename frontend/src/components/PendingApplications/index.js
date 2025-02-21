@@ -31,7 +31,6 @@ export default function PendingApplications () {
       loading: false
     });
   }, []);
-
   const { width } = useWindowDimensions();
   return(
     <div className='flex items-center flex-col justify-center bg-royalBlue rounded-lg py-24 px-12 vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
@@ -55,7 +54,6 @@ export default function PendingApplications () {
                 />
               </>)
             })
-// Temp comment
         }
         <div className='flex items-center text-center flex-col justify-center px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white rounded-3xl outline-dashed outline-neutral-300 bg-gray-200'>
           <div className='flex gap-[10px] items-center px-m py-xxs bg-searchGreen rounded-full'>

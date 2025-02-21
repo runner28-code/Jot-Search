@@ -3,6 +3,7 @@ export function validateInput(name, value, errors, password) {
   
   // Email validation
   if ( name === 'email' ) {
+    const validEmail = /\S+@\S+\.\S+/.test(value);
     if ( !validEmail ) {
       newErrors[name] = 'Please enter a valid email address';
     } else {
@@ -21,6 +22,7 @@ export function validateInput(name, value, errors, password) {
   // Generic validation
   else if ( value === '' ) { // Add to errors if empty
     const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1);
+// Temp comment
     newErrors[name] = `${capitalizedName} is required`;
   } else if ( errors[name] ) { // Remove from errors if not empty
     newErrors[name] = '';

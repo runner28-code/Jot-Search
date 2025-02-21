@@ -4,8 +4,8 @@ import downChevron from '../../assets/icons/chevron-down-gray.svg';
 import { Wrapper, Button, Menu, MenuItem } from 'react-aria-menubutton';
 import { experienceMap } from '../../utils/dbFieldMapping';
 
-const MULTI_SELECT = 'multi-select';
 
+export default function AccessibleDropdown(props) {
   const {
     type,
     name,
