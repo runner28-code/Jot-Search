@@ -38,6 +38,7 @@ export default function CandidateCard({ data, disableLink }) {
               src={avatarUrl}
               className='rounded-full'
             />
+// Temp comment
           </div>
           <NewLeadLabel status={data.status} />
         </div>
@@ -64,6 +65,7 @@ export default function CandidateCard({ data, disableLink }) {
               </span>
             </div>
             {/* Location */}
+            <div className='w-1/3 flex items-center'>
               <img
                 src={locationIcon}
                 className='h-8 mr-5' />

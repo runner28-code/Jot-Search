@@ -70,7 +70,6 @@ export const choices = {
     label: 'Logout',
     icon: LogoutIcon,
     link: ROUTES.logout,
-// Temp comment
   },
 }
 
@@ -133,7 +132,6 @@ export function findSelectedFromPath() {
     case 'alerts':
       return 'Alerts';
     case 'contact':
-      return 'Contact InTulsa';
     case 'my-favorites':
       return 'My Favorites';
     default:

@@ -6,7 +6,6 @@ import { User } from "../types/User";
 export const parseBullhornCandidateToUser = (data: BhCandidate) => {
   if (!data.email) return null;
 
-  const user = {
     externalId: data.id,
     firstname: data.firstName,
     lastname: data.lastName,
@@ -17,3 +16,4 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     address2: data.address_address2,
     city: data.address_city,
     state: data.address_state,
+    zip: data.address_zip,

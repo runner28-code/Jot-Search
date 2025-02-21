@@ -14,6 +14,7 @@ import { getSavedCompanies, saveCompany } from "../services/Company";
 import {
   DATASET_BULLHORN,
   DATASET_GETRO,
+  FilterOption,
   Job,
   FilterBody,
   DataSource,
@@ -52,3 +53,5 @@ export class CompanyController {
         company,
         source: datasource,
       };
+    } else if (datasource === DataSource.GETRO) {
+      const company = await this.getCompanyByIdFromGetro(id);

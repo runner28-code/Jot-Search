@@ -37,3 +37,5 @@ module.exports = {
         royalBlue: '#176AB9',
         aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
+        'legal-bg': '#23242D',
+        // Neutrals

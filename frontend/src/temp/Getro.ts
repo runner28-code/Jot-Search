@@ -1,6 +1,7 @@
 export type Company = {
     id: string;
     angellist_url?: string;
+    approx_employees?: string;
     crunchbase_url?: string;
     description?: string;
     domain?: string;
@@ -9,3 +10,4 @@ export type Company = {
     instagram_url?: string;
     jobs_count?: string;
     linkedin_url?: string;
+    logo_url?: string;

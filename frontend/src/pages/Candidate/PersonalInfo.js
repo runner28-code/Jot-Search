@@ -202,6 +202,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
               >
                 <p className={labelTextStyles}>Zip/Postal Code</p>
                 <input
+                  type='text'
                   name='zip'
                   id='zip'
                   placeholder='Zip/Postal Code'

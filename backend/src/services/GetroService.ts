@@ -16,7 +16,6 @@ export class GetroService {
     public static async getClient() {
         if (GetroService.client === null) {
             GetroService.client = new GetroService();
-            await GetroService.client.getNetworkID();
         }
         return GetroService.client;
     }
@@ -29,6 +28,7 @@ export class GetroService {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             }
+        };
     };
 
     async checkAuth(): Promise<boolean> {
@@ -40,3 +40,5 @@ export class GetroService {
     async getNetworkID(): Promise<boolean> {
         try {
             console.log('\n***** getNetworkID *****');
+            const url = `${this.api_base_url_v2}/networks`;
+

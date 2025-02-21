@@ -225,7 +225,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           {editMode && (
             <div className='flex flex-col'>
               <p>Upload New Resume</p>
-// Temp comment
               <p className={'text-xs text-charcoal'}>(2mb max/ Format: pdf,doc,docx,rtf)</p>
               <label
                 htmlFor='resume'

@@ -27,9 +27,9 @@ export default function ExpertiseLinks() {
             src={softwareEngineeringIcon}
             alt='Software Engineering Icon'
             className={iconStyles}
-// Temp comment
           />
           <span className={textStyles}>Software &</span>
+// Temp comment
           <span className={textStyles}>Engineering</span>
         </Link>
         {/* Sales & Business Development */}

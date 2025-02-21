@@ -47,3 +47,5 @@ export const mockCandidateStats = {
     'Today': {
       count: 3,
       prevCount: 1
+    },
+    'Last 7 Days': {

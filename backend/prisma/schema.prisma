@@ -110,3 +110,8 @@ model Lead {
   referredByPerson      String?
   reportToPerson        String?
   role                  String?
+  salary                BigInt?
+  salaryLow             BigInt?
+  secondarySkills       String?
+  skillSet              String?
+  smsOptIn              Boolean?

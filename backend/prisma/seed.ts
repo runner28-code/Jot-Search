@@ -11,7 +11,6 @@ async function main() {
     await seedJobs();
     await seedUsers();
     console.log("Done🎉");
-  } catch (err) {
     console.error("Error during seed...❌");
     console.error(err);
     throw err;
@@ -24,3 +23,5 @@ async function seedJobs() {
       {
         title: "Senior Software Engineer",
         companyId: (await db.company.findFirst())?.id,
+
+        address1: "123 Job St",

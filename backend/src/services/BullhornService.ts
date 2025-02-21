@@ -146,3 +146,9 @@ export class BullhornService {
   async getNewAccessToken(): Promise<boolean> {
     console.log("\n***** getNewAccessToken *****");
     try {
+      const query = queryString.stringify(
+        {
+          grant_type: "refresh_token",
+          client_id: config.bullhornClientID,
+          client_secret: config.bullhornClientSecret,
+          refresh_token: this.refresh_token,

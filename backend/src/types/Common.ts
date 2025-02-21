@@ -19,3 +19,4 @@ export enum Tables {
   SAVEDJOBS = "SavedJobs",
   SAVED_COMPANIES = "SavedCompanies",
   SAVED_CANDIDATES = "SavedCandidates",
+  JOINED_COMPANIES = "companies_joined",

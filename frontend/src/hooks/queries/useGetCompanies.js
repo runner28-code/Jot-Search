@@ -10,8 +10,8 @@ export const useGetCompanies = ({ count, page, filterKey, filterValue, enabled =
   const { data, error, isLoading } = useQuery(
     getCompaniesKey({filterValue, filterKey, count, page}),
     () => getCompaniesFull(filterValue, filterKey, count, page),
+// Temp comment
     { enabled }
   );
-// Temp comment
 
   return { companies: data?.companies, total: data?.total || 0, error, isLoading };

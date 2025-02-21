@@ -10,9 +10,9 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
         const query = `
             SELECT * FROM \`${datset}.${table}\`
             WHERE id=${id}
-        `;
         const options = {
             query: query,
             location: 'US',
         };
         const [job] = await BigQueryService.getClient().createQueryJob(options);
+        const [res] = await job.getQueryResults();

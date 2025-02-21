@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import SourceIdentifier from '../SourceIdentifier';
 
+// Temp comment
 export default function DesktopHeader(props) {
   const {
     headerText,
@@ -25,6 +26,7 @@ export default function DesktopHeader(props) {
     <div className={containerClasses}>
       <div className='flex gap-8 items-center'>
         { icon && (
+          <img
             src={ icon }
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
