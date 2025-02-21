@@ -13,7 +13,6 @@ model Application {
   userId String
   user   User   @relation("userApplications", fields: [userId], references: [id])
 
-  jobId String
   job   Job    @relation("jobApplications", fields: [jobId], references: [id])
 
   createdAt DateTime @default(now())
@@ -115,3 +114,5 @@ model Lead {
   secondarySkills       String?
   skillSet              String?
   smsOptIn              Boolean?
+  specialties           String?
+  status                String?

@@ -66,3 +66,4 @@ export class JobController {
 
       let getroCompany
       if (job?.company?.companyURL) {
+        getroCompany = await db.getroCompany.findFirst({

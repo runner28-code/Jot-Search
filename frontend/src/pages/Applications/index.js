@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import PageHeader from '../../components/PageHeader';
 import {BsClipboardCheck} from 'react-icons/bs';
 import ResultContainer from '../../features/ResultContainer';
-// Temp comment
 import { getAppliedJobs } from '../../services/API';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -21,7 +20,6 @@ export default function Applications() {
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
-      return {
         ...job,
         agoDate: job.appliedDate
       }});

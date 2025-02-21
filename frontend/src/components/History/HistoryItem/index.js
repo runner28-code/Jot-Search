@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 function isTodayOrYesterday(dateObj) {
   let returnObj = {
-// Temp comment
     isToday: false,
     isYesterday: false
   }

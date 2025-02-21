@@ -103,6 +103,7 @@ export default function NavSearchMobile({ placeholder }) {
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }
+// Temp comment
           alternateStylesObject={ stylesObject } 
           setIsOpen={ setIsOpen }
           isOpen={ isOpen }

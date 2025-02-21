@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Vanilla CSS */
 * {
-  font-family: 'Roboto', sans-serif;
 }
 
 /* Adjust root font-size so 1rem = 10px for easier calculation */

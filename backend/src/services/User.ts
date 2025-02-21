@@ -97,3 +97,5 @@ export const register = async (data: User) => {
     return { result: true };
   } catch (error) {
     console.error(error);
+    return { result: false, error };
+  }

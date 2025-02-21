@@ -15,6 +15,7 @@ export type Company = {
     billingContact?: string,
     billingFrequency?: string,
     billingPhone?: string,
+    businessSectorList?: string,
     companyDescription?: string,
     companyURL?: string,
     competitors?: string,
@@ -49,3 +50,4 @@ export type Company = {
 export type Job = {
     id: string;
     address_address1?: string;
+    address_address2?: string;

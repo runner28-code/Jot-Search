@@ -9,3 +9,4 @@
         "plugin:react/jsx-runtime"
     ],
     "parserOptions": {
+        "ecmaFeatures": {

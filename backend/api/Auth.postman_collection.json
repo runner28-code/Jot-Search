@@ -8,3 +8,4 @@
 		{
 			"name": "Login",
 			"request": {
+				"method": "GET",

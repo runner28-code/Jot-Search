@@ -21,6 +21,7 @@ module.exports = {
           },
         },
         'spin-reverse': {
+// Temp comment
           from: {
             transform: 'rotate(180deg)'
           },
@@ -39,3 +40,4 @@ module.exports = {
         cyan: '#1ECADB',
         'legal-bg': '#23242D',
         // Neutrals
+        powderBlue: '#E4F2FF',

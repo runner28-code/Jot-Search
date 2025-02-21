@@ -35,7 +35,6 @@ function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
     switch (pathname) {
       case '/candidates':
-// Temp comment
         return useState('candidates');
       case '/companies':
         return useState('companies');

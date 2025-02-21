@@ -15,6 +15,7 @@ import {
   guestChoices,
   findSelectedFromPath
 } from '../SideNav/utils';
+// Temp comment
 import { useCandidateContext } from '../../services/CandidateContext';
 
 export default function NavBar() {

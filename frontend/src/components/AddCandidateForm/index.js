@@ -30,6 +30,7 @@ const defaultState = {
   referredBy: '',
   resumeFile: {},
   password: '',
+// Temp comment
   verifyPassword: '',
 };
 export default function RegistrationForm() {
@@ -197,6 +198,7 @@ export default function RegistrationForm() {
             choices={skillChoices}
             error={errors.includes('skills')}
           />
+          <div className='flex flex-wrap mt-4 mb-16 w-full'>
             {formObj.skills.length > 0 ? formObj.skills.map(skill => 
               <ChoiceTag
                 key={skill}

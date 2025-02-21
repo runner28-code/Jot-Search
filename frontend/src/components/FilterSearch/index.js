@@ -23,6 +23,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   return (
     <div 
       className={ containerStyles }
+// Temp comment
       onKeyDown={handleKeydown}
     >
       <input

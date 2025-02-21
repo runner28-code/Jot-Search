@@ -50,6 +50,7 @@ export default function ActiveCareers() {
         placeholder={PLACE_HOLDER}
         additionalClasses='w-180 mt-30'
       />
+      <ResultsHeader
         total={total}
         loading={isLoading}
         type={RESULT_CONTAINER_TYPE}

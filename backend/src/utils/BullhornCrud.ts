@@ -49,3 +49,4 @@ export const saveCompanies = async (companies: any[]) => {
           data: company.address,
         });
         const existing = await db.company.findFirst({
+          where: {

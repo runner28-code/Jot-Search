@@ -63,3 +63,4 @@ export class CandidateController {
           where: {
             id,
           },
+        });

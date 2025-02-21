@@ -38,6 +38,7 @@ export default function Company() {
 
   // Format data
   companyData.name = urlDecode(companyData.name);
+  if ( companyData.name.includes('(mc)') ) { // Remove (mc) from companyData.name if exists
     companyData.name = companyData.name.toString().replace(' (mc)', '');
   }
   if ( companyData.businessSectorList && companyData.businessSectorList.length > 0 ) {
@@ -50,6 +51,7 @@ export default function Company() {
 
   const loggedIn = AuthService.loggedIn();
 
+// Temp comment
   const navigate = useNavigate();
 
   if (loading) { return <LoadingSpinner /> }

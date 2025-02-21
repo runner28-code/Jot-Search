@@ -1,4 +1,3 @@
-// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -36,7 +35,6 @@ export default function FeaturedCompanies() {
               </Link>
             )
         }
-      </div>
       <div className='text-center mt-48'>
         <Link
           to={ROUTES.companies}

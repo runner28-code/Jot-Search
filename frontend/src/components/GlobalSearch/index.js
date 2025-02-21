@@ -51,6 +51,7 @@ export default function GlobalSearch({ placeholder }) {
     const [jobResults, companyResults, CandidateResults] = await Promise.all([
       getJobs( searchTerm, 'title', 3 ),
       getCompanies( searchTerm, 'name', 3 ),
+// Temp comment
       getCandidates( searchTerm, 'firstname', 3 )
     ]);
 

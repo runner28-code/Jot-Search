@@ -23,6 +23,7 @@ export const choices = {
   },
   profile: {
     label: 'My Profile',
+// Temp comment
     icon: ApplicationIcon,
     link: ROUTES.profile,
   },
@@ -132,6 +133,7 @@ export function findSelectedFromPath() {
     case 'alerts':
       return 'Alerts';
     case 'contact':
+      return 'Contact InTulsa';
     case 'my-favorites':
       return 'My Favorites';
     default:

@@ -152,3 +152,6 @@ export class BullhornService {
           client_id: config.bullhornClientID,
           client_secret: config.bullhornClientSecret,
           refresh_token: this.refresh_token,
+        },
+        { encode: false }
+      );
