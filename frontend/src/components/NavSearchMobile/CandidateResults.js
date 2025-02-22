@@ -9,6 +9,7 @@ export default function CandidateResults({ candidates }) {
   if (candidates.length === 0 || role === 'candidate') {
     return null;
   }
+// Temp comment
 
   return (
     <>

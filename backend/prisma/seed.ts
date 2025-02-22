@@ -30,3 +30,4 @@ async function seedJobs() {
         state: "OK",
         zip: "74008",
         salary: 160000,
+        employmentType: "fulltime",

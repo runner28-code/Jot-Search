@@ -116,7 +116,9 @@ model Lead {
   skillSet              String?
   smsOptIn              Boolean?
   specialties           String?
+  status                String?
   timeZoneOffsetEST     Int?
   type                  String?
   willRelocate          Boolean?
   createdAt             DateTime  @default(now())
+}

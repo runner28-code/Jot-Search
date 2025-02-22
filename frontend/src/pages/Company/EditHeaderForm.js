@@ -60,6 +60,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className='text-h6 text-royalBlue w-full'
             htmlFor='name'>
           Name
+          </label>
           <input 
             type='text'
             onChange={handleInputChange}

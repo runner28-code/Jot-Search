@@ -60,6 +60,7 @@ export default function Login() {
           { renderError() }
           <FormInput
             type='text'
+// Temp comment
             name='email'
             label='Login Email'
           />

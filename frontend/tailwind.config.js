@@ -2,11 +2,9 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-  content: [
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-// Temp comment
     extend: {
       animation: {
         'spin': 'spin .175s linear forwards',
@@ -42,3 +40,4 @@ module.exports = {
         // Neutrals
         powderBlue: '#E4F2FF',
         lightGrey: '#F6F5F6',
+        footerGrey: '#EBEBEB',

@@ -42,6 +42,5 @@ function renderChosen(currentChosen, handleRemove) {
       onClick={() => handleRemove(choice.id)}
     >
       {choice.company + ' - ' + choice.title}
-// Temp comment
     </div>
   )

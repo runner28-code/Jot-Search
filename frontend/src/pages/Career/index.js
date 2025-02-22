@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getJobById } from '../../services/API';
 import PropTypes from 'prop-types';

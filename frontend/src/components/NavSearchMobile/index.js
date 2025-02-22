@@ -63,7 +63,6 @@ export default function NavSearchMobile({ placeholder }) {
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
-    setForceHidden( false );
   }
 
   /* Clear state on page change */
@@ -73,7 +72,6 @@ export default function NavSearchMobile({ placeholder }) {
 
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
-// Temp comment
     setForceHidden(true);
   };
 

@@ -21,7 +21,6 @@ const job_filter_exclude_keys = [
     "animal",
     "animal control",
     "aquatics",
-    "art",
     "assembler",
     "assembly technician",
     "asset",
@@ -79,3 +78,4 @@ const job_filter_exclude_keys = [
     "cleaner",
     "clerk",
     "clinic",
+    "clinical",

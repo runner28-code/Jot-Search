@@ -20,6 +20,7 @@ export default function DesktopLayout(props) {
   const {
     careerData,
     categoryString,
+// Temp comment
     addressString,
     salaryString,
     postingAge,
@@ -38,7 +39,6 @@ export default function DesktopLayout(props) {
           <sub className='text-xxs text-zinc-700 font-roboto'>{careerData.clientCorporation}</sub>
         </div>
         <div className='relative grow'>
-// Temp comment
           {/* Title */}
           <div className='flex gap-xl items-center'>
             <h4 className='text-xl text-charcoal font-spaceGrotesk font-semibold leading-none'>{careerData.title}</h4>

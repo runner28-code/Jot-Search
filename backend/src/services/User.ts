@@ -34,6 +34,7 @@ const validateUser = ({
   city = "",
   state = "",
   resume,
+  linkedin,
   skills,
   category,
 }: User) => {
@@ -92,7 +93,6 @@ export const register = async (data: User) => {
     if (process.env && process.env.FRONTEND_URL) {
       await sendNewUserNotification(user.email, user.firstname || "");
     }
-
     return { result: true };
   } catch (error) {
     console.error(error);
@@ -101,3 +101,4 @@ export const register = async (data: User) => {
 };
 
 export const update = async (parent_id: string, role: string, data: any) => {
+  try {

@@ -302,6 +302,7 @@ export default function RegistrationForm(loggedIn) {
             placeholder='Select'
             value={formObj.experience}
             onChange={handleChange}
+            choiceObject={experienceMap}
             error={errors.includes('experience')}
           />
           <FormInput
@@ -350,7 +351,6 @@ export default function RegistrationForm(loggedIn) {
           </div>
         </div>
         <div className={flexWidth}>
-          <FormInput
             type='text'
             name='linkedin'
             value={formObj.linkedin}

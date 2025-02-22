@@ -57,5 +57,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
         checked={useExistingResume}
         onChange={handleChange}
       />
+      <p className='text-md ml-2'>Use existing resume</p>
     </label>
   )

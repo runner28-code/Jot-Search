@@ -111,6 +111,7 @@ export default function Candidate() {
               toggled={!!candidateData.activelyLooking}
               fieldName='activelyLooking'
               label={PREFERENCE_ITEMS.activelyLooking}
+              onUpdate={handleCandidateUpdate} />
             <PreferenceItem
               toggled={!!candidateData.willRelocate}
               fieldName='willRelocate'

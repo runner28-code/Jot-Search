@@ -36,3 +36,4 @@ import { User as DbUser } from "prisma/prisma-client";
 import db from "../utils/db";
 
 @Controller()
+export class UserController {

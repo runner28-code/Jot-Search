@@ -11,7 +11,6 @@ export default function Filters(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
-// Temp comment
     marginBottom
   } = props;
 

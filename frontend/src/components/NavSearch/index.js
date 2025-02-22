@@ -83,7 +83,6 @@ export default function NavSearch({ placeholder }) {
     jobs: jobs || [],
     companies: companies || [],
     candidates: candidates || [],
-// Temp comment
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
     total: totalJobs + totalCompanies + totalCandidates,
     forceHidden

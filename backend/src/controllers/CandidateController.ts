@@ -66,3 +66,4 @@ export class CandidateController {
         });
       }
 
+      return {

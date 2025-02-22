@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import AuthService from './auth';
 import { getCandidateById } from './API';
 
+const mockCandidateData = [
   {
     id: 'cb4f35ed-db88-410f-beb0-a6a449135f75',
     firstName: 'Zach',
@@ -42,7 +43,6 @@ import { getCandidateById } from './API';
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/rachel_2_fekvfg.webp', // Missing from Bullhorn Schema
     occupation: 'Project Manager',
     companyName: 'Aerovision',
-    address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma',

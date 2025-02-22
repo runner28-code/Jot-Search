@@ -5,7 +5,6 @@
 #     branches:
 #       - main
 
-# env:
 #   AWS_REGION: 'us-east-1'
 #   ECR_REPOSITORY: 'site-backend'
 #   ECS_SERVICE: 'intulsa-backend-service-prod'

@@ -4,7 +4,6 @@ export const saveCandidate = async (
   candidateId: string,
   companyUserId: string
 ) => {
-  try {
     const existing = await db.user.findFirst({
       where: {
         AND: {
@@ -14,3 +13,4 @@ export const saveCandidate = async (
               id: candidateId,
             },
           },
+        },

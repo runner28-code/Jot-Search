@@ -80,7 +80,6 @@ function HeaderContent({ companyData }) {
             <img
               src={Triangle}
               className={headerIconStyles}
-            />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
           </div>
         </div>

@@ -159,3 +159,5 @@ export class BullhornService {
       console.log("access token url: ", url);
       const res = await axios.post(url);
       console.log(res.status);
+      if (res.status === 200) {
+        const { access_token, refresh_token } = res.data;

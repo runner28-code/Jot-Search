@@ -8,7 +8,6 @@ export default function PasswordReset({role, candidateData}) {
     return null;
   }
   const [response, setResponse] = useState('');
-// Temp comment
   const [condition, setCondition] = useState('');
 
   function setType(response, condition) {
@@ -20,6 +19,7 @@ export default function PasswordReset({role, candidateData}) {
     const successStyle = 'mb-4 text-success';
     const errorStyle = 'mb-4 text-error';
     if( response ) {
+// Temp comment
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )
     }
   }
