@@ -10,3 +10,4 @@
     ],
     "parserOptions": {
         "ecmaFeatures": {
+            "jsx": true

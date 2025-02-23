@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { getJobById } from '../../services/API';
 import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
-import MobileLayout from './MobileLayout';
 import DesktopLayout from './DesktopLayout';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
@@ -63,7 +62,6 @@ export default function CareerPage() {
       source={source}
     />
     <div 
-// Temp comment
       className={ width <= 990 ? containerStyles
         : loggedIn ? containerStyles 
           : containerStyles + ' px-[15%]'}

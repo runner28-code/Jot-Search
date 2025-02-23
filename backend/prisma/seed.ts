@@ -9,7 +9,6 @@ async function main() {
     await seedCompanies();
     await seedCategories();
     await seedJobs();
-    await seedUsers();
     console.log("Done🎉");
   } catch (err) {
     console.error("Error during seed...❌");
@@ -32,3 +31,4 @@ async function seedJobs() {
         salary: 160000,
         employmentType: "fulltime",
         onSite: "On-Site",
+        description: "Come join our rockstar team for good money and team",

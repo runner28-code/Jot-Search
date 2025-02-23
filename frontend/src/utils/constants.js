@@ -28,7 +28,7 @@ export const stateCodeMap = {
   Georgia: 'GA',
   Hawaii: 'HI',
   Idaho: 'ID',
-  Indiana: 'IN',
+  Illinois: 'IL',
   Iowa: 'IA',
   Kansas: 'KS',
   Kentucky: 'KY',

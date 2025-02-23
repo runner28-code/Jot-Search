@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 
 export default function UniversalDropdown({ inputStyles, optionStyles, name, choices, currentChosen, handleChange, multiselect, noDefault, disabled }) { 
   return (
@@ -16,7 +17,6 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
       {/* Generate options from choices */}
       {choices.map( choice => {
         return (
-// Temp comment
           <option 
             key={ choice }
             value={ choice }

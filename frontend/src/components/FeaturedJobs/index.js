@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import PropTypes from 'prop-types';
+// Temp comment
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -9,7 +10,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 const ITEMS_PER_PAGE = 4;
 
 export default function FeaturedJobs() {
-// Temp comment
   const { width } = useWindowDimensions();
 
   const linkStyles = '';

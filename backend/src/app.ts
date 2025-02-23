@@ -2,6 +2,7 @@ import express, { Request, Response, Router } from "express";
 import "reflect-metadata";
 import dotenv from "dotenv";
 import { Action, useExpressServer } from "routing-controllers";
+import path from "path";
 import bodyParser from "body-parser";
 import cors from "cors";
 import { NextFunction } from "connect";
@@ -20,3 +21,4 @@ try {
   accessKeyId: process.env.S3_ACCESS_KEY,
   secretAccessKey: process.env.S3_SECRET_KEY,
   endpoint: process.env.S3_ENDPOINT,
+  s3ForcePathStyle: true,

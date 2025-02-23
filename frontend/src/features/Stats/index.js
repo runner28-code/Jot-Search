@@ -39,7 +39,6 @@ export default function Stats({ userType }) {
     const duration = getDuration(timeframe)
     if (userType === 'company') {
       const result = await getCompanyQuickStats(duration);
-// Temp comment
       setStats({
         'Active Careers Posts': { ...result.activeCareersPosts },
         'Recommended Candidates': { ...result.recommendedCandidates },
@@ -71,7 +70,6 @@ export default function Stats({ userType }) {
         >
           <TimeframeFilter
             choices={statFilterChoices}
-            timeframe={timeframe}
             handleFilterChange={handleFilterChange}
           />
         </div>

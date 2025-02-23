@@ -29,6 +29,7 @@ export default function CareerCard({ data, active }) {
     salaryString,
     postingAge,
     role
+  };
 
   return (
     <div
@@ -45,6 +46,7 @@ export default function CareerCard({ data, active }) {
           <MobileCard
             dataObj={dataObj}
             active={active}
+// Temp comment
           />
       }
       <FavoriteButton

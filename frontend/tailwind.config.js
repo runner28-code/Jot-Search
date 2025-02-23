@@ -29,6 +29,7 @@ module.exports = {
           },
         },
       },
+// Temp comment
       boxShadow: {
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
@@ -42,3 +43,4 @@ module.exports = {
         powderBlue: '#E4F2FF',
         lightGrey: '#F6F5F6',
         footerGrey: '#EBEBEB',
+        grey300: '#D0D5DD',

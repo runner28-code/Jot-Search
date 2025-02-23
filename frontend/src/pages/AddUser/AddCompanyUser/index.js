@@ -27,7 +27,6 @@ export default function AddCompanyUser() {
 
   return (
     <div className='flex flex-col'>
-// Temp comment
       <div className={ containerStyles + 'bg-sky-100'}>
         <h2 className={ titleStyles + 'text-royalBlue flex'}>
           <img

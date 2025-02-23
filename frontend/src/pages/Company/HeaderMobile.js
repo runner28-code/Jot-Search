@@ -19,7 +19,6 @@ function HeaderContent({ companyData }) {
   const headerTitle = 'text-[2.5rem] font-spaceGrotesk font-semibold basis-2/3';
   console.log(companyData);
   return (
-    <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-2'>
         <div className='flex flex-wrap items-center mb-4'>
@@ -44,6 +43,7 @@ function HeaderContent({ companyData }) {
                   className={headerIconStyles}
                 />
                 <OpenCareers
+                  styles={headerRowTextStyles}
                   companyId={companyData.id}
                 />
               </div> 

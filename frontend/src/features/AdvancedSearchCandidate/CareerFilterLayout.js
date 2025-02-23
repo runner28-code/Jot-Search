@@ -39,7 +39,6 @@ export default function CareerFilterLayout(props) {
   } else {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
-    });
   }
 
   const buttonStyles = 'text-white text-sm whitespace-nowrap';
@@ -52,6 +51,7 @@ export default function CareerFilterLayout(props) {
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Careers'
+          additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
       </div>
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[25px]'}>

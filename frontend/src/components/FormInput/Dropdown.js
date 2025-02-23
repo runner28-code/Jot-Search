@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import checkmarkIcon from '../../assets/images/checkmark.png';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';

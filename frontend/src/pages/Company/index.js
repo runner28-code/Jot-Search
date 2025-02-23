@@ -15,7 +15,6 @@ import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
-export default function Company() {
   const { width } = useWindowDimensions();
   const { id } = useParams();
   const [companyData, setCompanyData] = useState({});
@@ -60,7 +59,6 @@ export default function Company() {
         type='company'
         loggedIn={loggedIn}
       />
-// Temp comment
       <div 
         className={ width <= 990 ? 'px-[5%]'
           : !loggedIn ? 'px-[15%]' 

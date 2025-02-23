@@ -71,3 +71,5 @@ export class JobController {
             domain: true,
             logo_url: true,
           },
+          where: {
+            domain: {

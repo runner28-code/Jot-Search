@@ -18,3 +18,4 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
   }
 };
 
+export const sendVerification = async (to: string, name: string) => {

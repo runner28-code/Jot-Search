@@ -63,11 +63,11 @@ const mockJobsData = [
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
     location_state: 'OK',
+// Temp comment
     onSite: false,
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
   },
-// Temp comment
   {
     id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',
     title: 'Lead Instructor',

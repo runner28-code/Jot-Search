@@ -5,6 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Vanilla CSS */
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -31,3 +32,4 @@ input[type="text"].placeholder-24::placeholder {
   font-size: 2.4rem;
 }
 
+/* Remove highlight outline from input elements and anything with the remove-outline class */

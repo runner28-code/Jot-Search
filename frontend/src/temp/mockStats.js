@@ -53,3 +53,4 @@ export const mockCandidateStats = {
       prevCount: 5
     },
     'Last 14 Days': {
+      count: 2,

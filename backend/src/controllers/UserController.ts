@@ -22,6 +22,7 @@ import {
   recovery,
   getStats,
   getLandingPageStats,
+  findUserByEmail,
   getCompanyDashboardStats,
   getCoordinatorDashboardStats,
 } from "../services/User";
@@ -36,3 +37,4 @@ import db from "../utils/db";
 
 @Controller()
 export class UserController {
+  @Post("/login")
