@@ -24,7 +24,6 @@ export function formatCandidateData(candidateData) {
   }
   formattedData.comments = candidateData.comments || 'No comments provided';
   formattedData.phone = formatPhoneNumber(candidateData.phone);
-  formattedData.expertise = candidateData.expertise || 'No Expertise Chosen';
   formattedData.skills = candidateData.skills || 'No Skills Chosen';
   // If Candidate experience is a string, no need to map it
   if ( candidateData.experience && !isNaN(candidateData.experience) ) {
@@ -33,6 +32,7 @@ export function formatCandidateData(candidateData) {
   // User table has firstname and lastname, Candidate table has firstName and lastName, make sure both exist until we normalize the tables
   if ( candidateData.firstName && !candidateData.firstname ) formattedData.firstname = candidateData.firstName;
   if ( candidateData.lastName && !candidateData.lastname ) formattedData.lastname = candidateData.lastName;
+  if ( candidateData.firstname && !candidateData.firstName ) formattedData.firstName = candidateData.firstname;
   if ( candidateData.lastname && !candidateData.lastName ) formattedData.lastName = candidateData.lastname;
 
   return formattedData;

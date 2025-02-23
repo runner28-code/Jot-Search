@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 const plugin = require('tailwindcss/plugin')
 
-// Temp comment
 module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}',

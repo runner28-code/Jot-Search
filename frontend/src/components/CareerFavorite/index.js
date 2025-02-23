@@ -43,6 +43,7 @@ export default function CareerFavorite () {
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
+          </Link>
         </div>
       </div>
       <div className='pt-24'>
@@ -51,6 +52,7 @@ export default function CareerFavorite () {
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
             View All
         </Link>
+// Temp comment
       </div>
     </div>
   )

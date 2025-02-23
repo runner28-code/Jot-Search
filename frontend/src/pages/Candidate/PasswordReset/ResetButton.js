@@ -26,7 +26,6 @@ export default function ResetButton({ candidateData, setType }) {
         onClick={handleSubmit}
       >
       Request Password Reset
-      </button>
     )
   }
   return (

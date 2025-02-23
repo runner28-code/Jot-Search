@@ -71,9 +71,11 @@ export default function TypeaheadDropdown(props) {
         placeholder={placeholder}
         value={inputValue}
         className={baseStyles + inputHeight + 'mb-0'}
+        onClick={handleListClick}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
         disabled={disabled}
+// Temp comment
       />
       { renderDropdown(dropdownType, dropdownOpen, filteredChoices, currentChosen, handleChoiceClick) }
     </div>

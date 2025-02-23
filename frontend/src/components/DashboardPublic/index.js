@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageStats';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+import filterIcon from '../../assets/icons/filter-toggle.svg';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -28,6 +29,7 @@ export default function DashboardPublic({togglePassState}) {
         <div className='bg-blueSquare bg-pink-500 absolute mx-auto left-0 right-[-35px] top-[-35px] w-6 h-6' />
       </div>
       <h1 className={ width >= 990 ? 'text-[42px] font-spaceGrotesk' : 'text-[32px] font-spaceGrotesk'}>{location === '/careers' ? careerTitle : companyTitle}</h1>
+// Temp comment
       <div className='flex items-center  mt-12'>
         <div className='flex items-center'>
           <Link

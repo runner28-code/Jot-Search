@@ -27,7 +27,6 @@ export default function SignUp() {
         </div>
       </main>      
     )
-// Temp comment
   }
 
   return (
@@ -44,5 +43,4 @@ export default function SignUp() {
           <RegistrationForm />
         </div>
       </div>
-    </main>
   )

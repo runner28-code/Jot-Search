@@ -1,4 +1,3 @@
-// Temp comment
 const expertiseObjectArr = JSON.parse(localStorage.getItem('categories')) || [];
 const expertises = expertiseObjectArr.map(expertise => expertise.name).sort();
 import { experienceMap, educationChoices } from './dbFieldMapping';
@@ -50,6 +49,7 @@ Object.keys(jobFilterObject).forEach(key => {
   convertedJobFilters[key] = jobFilterObject[key][0];
 });
 
+// Temp comment
 export const defaultJobFilterState = {
   title: '',
   status: ACTIVE_STATUSES,

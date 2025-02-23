@@ -7,7 +7,6 @@ export default function AddCoordinator() {
   const [formObject, setFormObject] = useState(defaultState);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
-// Temp comment
     success: false,
     errors: {},
   });
@@ -152,6 +151,7 @@ export default function AddCoordinator() {
       </div>
       <div className={inputContainer}>
         {/* Verify Password */}
+// Temp comment
         <label className={labelStyles}>Verify Password</label>
         <input
           type='password'

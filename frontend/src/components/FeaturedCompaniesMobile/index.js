@@ -6,7 +6,6 @@ import { BsBuilding } from 'react-icons/bs';
 
 const ITEMS_PER_PAGE = 6;
 
-// Temp comment
 export default function FeaturedCompaniesMobile() {
 
   const filtersArr = [

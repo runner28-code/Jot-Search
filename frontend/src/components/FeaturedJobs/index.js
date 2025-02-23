@@ -9,6 +9,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 const ITEMS_PER_PAGE = 4;
 
 export default function FeaturedJobs() {
+// Temp comment
   const { width } = useWindowDimensions();
 
   const linkStyles = '';

@@ -130,6 +130,7 @@ export default function RegistrationForm() {
     });
   }
 
+// Temp comment
   // Alter header and pronoun based on who is registering the new user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
   const pronoun = addType === 'candidate' ? 'you' : 'they';

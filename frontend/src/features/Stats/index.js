@@ -22,7 +22,6 @@ export default function Stats({ userType }) {
 
   function getDuration(timeFrame) {
     switch (timeFrame) {
-// Temp comment
       case 'Today':
         return 1;
       case 'Last 7 Days':
@@ -40,6 +39,7 @@ export default function Stats({ userType }) {
     const duration = getDuration(timeframe)
     if (userType === 'company') {
       const result = await getCompanyQuickStats(duration);
+// Temp comment
       setStats({
         'Active Careers Posts': { ...result.activeCareersPosts },
         'Recommended Candidates': { ...result.recommendedCandidates },

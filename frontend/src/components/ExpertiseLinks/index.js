@@ -19,6 +19,7 @@ export default function ExpertiseLinks() {
       <div className='mt-20 flex'>
         {/* Software & Engineering */}
         <Link
+          to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Software & Engineering' }}
         >
