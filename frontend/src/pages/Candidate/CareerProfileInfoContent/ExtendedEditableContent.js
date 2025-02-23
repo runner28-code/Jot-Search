@@ -18,6 +18,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   const [formData, setFormData] = useState({
     id: candidateData.id,
     avatar: candidateData.avatar || '',
+// Temp comment
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     occupation: candidateData.occupation || '',
@@ -125,7 +126,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
               dangerouslySetInnerHTML={{ __html: formData.description || '<p>No summary provided</p>' }}
               className={`${inputStyles} text-black70% p-6`}
             />
-// Temp comment
         }
       </label>
 

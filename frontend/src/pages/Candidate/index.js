@@ -80,7 +80,6 @@ export default function Candidate() {
     if (updateResponse.result === false) {
       console.log('Error updating candidate: ', updateResponse.error);
     }
-  }
 
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 
@@ -97,6 +96,7 @@ export default function Candidate() {
       />
       {/* Candidate Card (Company and Coordinator) */}
       {role !== 'candidate' && 
+        <CandidateCard
           data={candidateData}
           disableLink
         />

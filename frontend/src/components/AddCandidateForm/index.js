@@ -76,6 +76,7 @@ export default function RegistrationForm() {
           return setSubmissionObject({
             loading: false,
             success: true,
+// Temp comment
           })
         } else {
           return navigate(ROUTES.login);
@@ -270,6 +271,7 @@ export default function RegistrationForm() {
           <FormInput
             type='password'
             name='verifyPassword'
+            placeholder='Verify Password' 
             value={formObj.verifyPassword}
             onChange={handleChange}
             error={errors.includes('verifyPassword')}

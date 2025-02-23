@@ -17,7 +17,6 @@ export default function Login() {
       password: password.value,
     });
 
-// Temp comment
     if ( res.data.result ) {
       AuthService.login(res.data.token);
     } else {
@@ -67,7 +66,6 @@ export default function Login() {
           <FormInput
             type='password'
             name='password'
-            label='Password'
           />
           <div className='flex justify-between items-center vw-640:items-end mb-22 gap-[10px]'>
             <button

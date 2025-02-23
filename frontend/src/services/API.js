@@ -14,6 +14,7 @@ API.interceptors.request.use(
   function (config) {
     const token = localStorage.getItem('id_token');
     if (token) {
+      config.headers['Authorization'] = 'Bearer ' + token;
     }
     return config;
   },
@@ -38,7 +39,6 @@ export async function getCandidates(filtersArr, count, page) {
 }
 
 export async function getCandidatesFull(filtersArr, count, page, fields = null) {
-  const formattedFilters = formatCandidateFilters(filtersArr)
     .filter(filter => {
       if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {
         return false

@@ -101,7 +101,6 @@ export default function NavSearch({ placeholder }) {
         <NavSearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
-// Temp comment
           placeholder={ placeholder }
           alternateStylesObject={ stylesObject } 
           setIsOpen={ setIsOpen }

@@ -13,7 +13,6 @@ export default function InviteCandidates({ job }) {
     filtersArr: job.skillList?.map(skill => ({
       key: 'primarySkills',
       value: skill
-    })),
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
@@ -45,6 +44,7 @@ export default function InviteCandidates({ job }) {
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs'
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
+      ))}
     </div>)
   }
 

@@ -40,7 +40,6 @@ export const jobFilterObject = {
 export const ACTIVE_STATUSES = [
   'Active',
   'Open',
-  'Passive'
 ]
 
 // Create default filter state based on filterObject

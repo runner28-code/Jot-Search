@@ -217,7 +217,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 htmlFor='city'
                 className={labelStyles}
               >
-// Temp comment
                 <p className={labelTextStyles}>City</p>
                 <input
                   type='text'

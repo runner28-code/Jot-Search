@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+// Temp comment
 import ExploreSearch from '../../components/ExploreSearch';
 import ExploreSearchMobile from '../../components/ExploreSearchMobile';
 import ExpertiseLinks from '../../components/ExpertiseLinks';
@@ -7,6 +8,7 @@ import JoinTalentNetwork from '../../components/JoinTalentNetwork';
 import FeaturedJobs from '../../components/FeaturedJobs';
 import FeaturedCompanies from '../../components/FeaturedCompanies';
 import FeaturedCompaniesMobile from '../../components/FeaturedCompaniesMobile';
+import BusinessBooming from '../../components/BusinessBooming';
 import BusinessBoomingMobile from '../../components/BusinessBoomingMobile';
 import ColorShapes from '../../components/ColorShapes';
 import * as ROUTES from '../../routes';

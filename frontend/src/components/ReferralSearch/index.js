@@ -27,7 +27,6 @@ const mockJobsData = [
     title: 'Outside Sales Executive',
     company: 'Paycom',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
-// Temp comment
     salaryRange: '$80k-$90k',
     location: 'Remote',
     listingAge: '1 month',
@@ -35,6 +34,7 @@ const mockJobsData = [
   },
 ];
 
+// Temp comment
 function renderChosen(currentChosen, handleRemove) {
   return currentChosen.map(choice =>
     <div 

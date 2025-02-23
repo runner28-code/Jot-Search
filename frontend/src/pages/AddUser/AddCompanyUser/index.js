@@ -43,7 +43,6 @@ export default function AddCompanyUser() {
             text='Go to Getro'
             href='https://www.getro.com/'
             addClass='mr-8'
-// Temp comment
           />
           <ExternalLink
             text='Go to Bullhorn'
