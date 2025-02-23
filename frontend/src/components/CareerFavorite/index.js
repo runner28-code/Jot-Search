@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import * as ROUTES from '../../routes';
 import { useGetSavedJobs } from '../../hooks/queries/useGetSavedJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
@@ -27,7 +26,6 @@ export default function CareerFavorite () {
             :
             savedJobs.map((career, index) => {
               return(<>
-// Temp comment
                 <CareerCard
                   key={career.id}
                   index={index}

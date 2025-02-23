@@ -19,7 +19,6 @@ import {
   FilterBody,
   DataSource,
   Tables,
-  Company,
   CompanySearchByID,
   CompanySearchByFilterResponse,
   DATASET_MAIN,

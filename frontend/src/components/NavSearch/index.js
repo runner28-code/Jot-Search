@@ -81,6 +81,7 @@ export default function NavSearch({ placeholder }) {
 
   const combinedResults = {
     jobs: jobs || [],
+    companies: companies || [],
     candidates: candidates || [],
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
     total: totalJobs + totalCompanies + totalCandidates,
@@ -100,6 +101,7 @@ export default function NavSearch({ placeholder }) {
         <NavSearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
+// Temp comment
           placeholder={ placeholder }
           alternateStylesObject={ stylesObject } 
           setIsOpen={ setIsOpen }

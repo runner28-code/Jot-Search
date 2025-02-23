@@ -106,6 +106,7 @@ const CandidateProvider = ({children}) => {
 
   useEffect(() => {
     if (currentUser?.user_id) {
+      getCandidateById(currentUser.user_id).then(user => {
         setCurrentUser(user);
       })
     }

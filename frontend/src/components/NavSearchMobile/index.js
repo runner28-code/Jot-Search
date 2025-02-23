@@ -70,6 +70,7 @@ export default function NavSearchMobile({ placeholder }) {
   useEffect( () => {
     setSearchTerm('');
   }, [location]);
+// Temp comment
 
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
@@ -81,7 +82,6 @@ export default function NavSearchMobile({ placeholder }) {
   }, [closeDropdown]);
 
   const combinedResults = {
-// Temp comment
     jobs: jobs || [],
     companies: companies || [],
     candidates: candidates || [],

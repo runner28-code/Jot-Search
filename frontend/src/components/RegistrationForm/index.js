@@ -284,6 +284,7 @@ export default function RegistrationForm(loggedIn) {
                 setRelocate(!relocate);
               }}
             >
+              {/* Switch */}
               <div
                 className={
                   'bg-royalBlue md:w-6 md:h-6 h-5 w-5 rounded-full shadow-md transform duration-300 ease-in-out' +

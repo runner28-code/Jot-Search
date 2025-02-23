@@ -20,7 +20,6 @@ export default function GlobalSearch({ placeholder }) {
     candidates: [],
     loading: false,
     forceHidden: true
-// Temp comment
   });
   // State and ref to listen for outside clicks
   const [listening, setListening] = useState(false);
@@ -70,7 +69,6 @@ export default function GlobalSearch({ placeholder }) {
     setSearchTerm('');
   }, [location]);
 
-  /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
     setResults({ ...results, forceHidden: true });
   };

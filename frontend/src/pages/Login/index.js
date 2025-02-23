@@ -17,6 +17,7 @@ export default function Login() {
       password: password.value,
     });
 
+// Temp comment
     if ( res.data.result ) {
       AuthService.login(res.data.token);
     } else {

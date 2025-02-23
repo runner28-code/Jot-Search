@@ -35,6 +35,7 @@ export default function Footer() {
           <img
             src={twitter}
             className={socialIconStyleMobile}
+// Temp comment
           />
         </a>
         <a href={ROUTES.facebook}>
@@ -123,7 +124,6 @@ export default function Footer() {
       </a>
       <a href={ROUTES.youtube}>
         <img
-// Temp comment
           src={youtube}
           className={socialIconStyle}
         />

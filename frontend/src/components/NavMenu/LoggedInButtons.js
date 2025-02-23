@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
+import { MdLogout } from 'react-icons/md';
 import { FiEdit as ProfileIcon } from 'react-icons/fi';
 
 export default function LoggedInButtons({ handleOptionClick, stylesObject }) {

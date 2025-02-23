@@ -5,6 +5,7 @@ module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
   ],
+  theme: {
     extend: {
       animation: {
         'spin': 'spin .175s linear forwards',
@@ -24,7 +25,6 @@ module.exports = {
             transform: 'rotate(180deg)'
           },
           to: {
-            transform: 'rotate(0deg)'
           },
         },
       },

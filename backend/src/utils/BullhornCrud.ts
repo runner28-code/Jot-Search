@@ -35,6 +35,7 @@ export const saveCompanies = async (companies: any[]) => {
 
   const expludeFields = [
     "address",
+    "billingAddress",
     "_score",
     "notes",
     "dateAdded",
@@ -44,7 +45,6 @@ export const saveCompanies = async (companies: any[]) => {
     for (const company of companies) {
       try {
         console.log(`Savng company with ID = ${company.id}`, company);
-        const address = await db.address.create({
           data: company.address,
         });
         const existing = await db.company.findFirst({

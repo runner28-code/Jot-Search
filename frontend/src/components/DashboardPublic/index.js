@@ -32,9 +32,9 @@ export default function DashboardPublic({togglePassState}) {
       <div className='flex items-center  mt-12'>
         <div className='flex items-center'>
           <Link
-// Temp comment
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
+// Temp comment
           >
             <CareerIcon />
             <p className='ml-4'>Careers</p>

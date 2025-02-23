@@ -41,7 +41,6 @@ export default function Candidate() {
 
   useEffect(async () => {
     const candidate = await getCandidateById(id);
-// Temp comment
     const formattedCandidate = formatCandidateData({ id, ...candidate });
     setCandidateData(formattedCandidate);
     setLoading(false);
@@ -98,7 +97,6 @@ export default function Candidate() {
       />
       {/* Candidate Card (Company and Coordinator) */}
       {role !== 'candidate' && 
-        <CandidateCard
           data={candidateData}
           disableLink
         />

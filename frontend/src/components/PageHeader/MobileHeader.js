@@ -8,7 +8,6 @@ export default function MobileHeader(props) {
     IconComponent,
     classOverride,
     colorizeStroke,
-// Temp comment
     backButton
   } = props;
   const navigate = useNavigate();
@@ -33,6 +32,7 @@ export default function MobileHeader(props) {
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
       )}
+// Temp comment
       { IconComponent && (
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />
       )}

@@ -34,3 +34,4 @@ async function seedJobs() {
         onSite: "On-Site",
         description: "Come join our rockstar team for good money and team",
         datasource: Datasource.main as any,
+        status: "active",

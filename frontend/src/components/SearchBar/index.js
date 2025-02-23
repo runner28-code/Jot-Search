@@ -14,14 +14,12 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
   }
 
   function handleChange(e) {
-// Temp comment
     setSearchTerm(e.target.value);
   }
 
   const placeholderText = placeholder || 'Search for companies or jobs...';
   return (
     <label 
-      className={ styleObject.containerStyles }
       htmlFor={ placeholder }
     >
       <div className={ styleObject.searchIconStyles }>

@@ -61,6 +61,7 @@ export const choices = {
     icon: CareerIcon,
     link: ROUTES.activeCareers,
   },
+  talentInTulsa: {
     label: 'Talent.InTulsa.com',
     icon: ContactIcon,
     link: ROUTES.talentInTulsa,

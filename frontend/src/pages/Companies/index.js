@@ -1,3 +1,4 @@
+// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import PageHeader from '../../components/PageHeader';
@@ -43,6 +44,7 @@ export default function Companies() {
           loggedIn={loggedIn}
           toggle={toggle}
           userType={userType}
+        />
       </div>
     </section>
   )

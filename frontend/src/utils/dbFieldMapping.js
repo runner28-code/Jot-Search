@@ -7,3 +7,4 @@ export const disabilityMap = {
   N: 'None of the above'
 };
 
+export const veteranStatusMap = {

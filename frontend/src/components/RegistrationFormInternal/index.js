@@ -45,6 +45,7 @@ const defaultState = {
 };
 
 const defaultCommunity = {
+// Temp comment
   community: ''
 }
 export default function RegistrationFormInternal(loggedIn) {

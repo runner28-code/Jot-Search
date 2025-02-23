@@ -19,6 +19,7 @@ function HeaderContent({ companyData }) {
   const headerTitle = 'text-[2.5rem] font-spaceGrotesk font-semibold basis-2/3';
   console.log(companyData);
   return (
+    <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-2'>
         <div className='flex flex-wrap items-center mb-4'>
@@ -29,7 +30,6 @@ function HeaderContent({ companyData }) {
           <div className='basis-4/6'>
             <h4 className={ headerTitle }>
               {companyData.name}
-            </h4>
             <div className='flex items-center'>
               <div className={ headerGroupStyles }>
                 <img

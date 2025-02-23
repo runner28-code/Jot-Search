@@ -26,7 +26,6 @@ export default function FeaturedJobs() {
   const viewAllStyles = 'text-center mt-48';
   const viewAllStylesMobile = 'text-center mt-12';
 
-  const filtersArr = [
     {
       key: 'featured',
       value: true
@@ -35,6 +34,7 @@ export default function FeaturedJobs() {
 
   const { jobs, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE});
 
+  return(
     <section className='py-48 bg-neutral-100 flex flex-col flex-wrap items-center'>
       { renderColorShapes() }
       <h2 className={ width >= 990 ? titleStyles : titleStylesMoible }>Featured Opportunities</h2>

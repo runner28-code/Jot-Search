@@ -4,7 +4,6 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import ChoiceTag from '../ChoiceTag';
 import ChoiceListItem from '../ChoiceListItem';
 
-export default function TypeaheadDropdown(props) {
   const {
     type, 
     dropdownType, 
@@ -38,7 +37,6 @@ export default function TypeaheadDropdown(props) {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
     if (!dropdownOpen) setInputValue('');
   }, [dropdownOpen]);
-// Temp comment
   
   /* Filter choices based on input */
   useEffect(() => {
