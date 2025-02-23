@@ -55,6 +55,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
       </div>
       <div className='grow font-bold'>
         {/* First Name */}
+        <div className='mb-6'>
           <label 
             className='text-h6 text-royalBlue w-full'
             htmlFor='name'>

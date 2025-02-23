@@ -18,7 +18,6 @@ export default function EditResumeForm({ handleChange }) {
     <div className='flex flex-col'>
       <label
         className='text-h5 font-bold text-royalBlue'
-        htmlFor='resume'
       >
         Upload New Resume:
       </label>
@@ -26,6 +25,7 @@ export default function EditResumeForm({ handleChange }) {
         type='file'
         className='w-100 vw-480:w-120 vw-640:w-140 border-lightGrey border-2 border-solid rounded-2xl p-4 vw-480:text-lg h-24'
         name='resume'
+        id='resume'
         onChange={handleFileSubmit}
       />
     </div>

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 
 export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }) => {
   const { width } = useWindowDimensions();
@@ -14,6 +15,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           disabled={disabled}
         />
         <label 
+          htmlFor='featured' 
           className={ width >= 990 ? 'text-lg font-roboto text-black70%' : 'text-sm font-roboto text-black70%'}>
           {label}
         </label>

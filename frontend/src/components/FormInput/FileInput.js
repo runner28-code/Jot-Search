@@ -1,3 +1,4 @@
+// Temp comment
 import { useRef } from 'react';
 import PropTypes from 'prop-types';
 
@@ -17,6 +18,7 @@ export default function FileInput({type, name, label, placeholder, required, val
       <input 
         className={`hidden ${disabled ? 'disabled cursor-not-allowed' : ''}`}
         type={type}
+        id={name}
         name={name}
         onChange={(e) => onChange(name, e.target.files[0])}
         ref={inputRef}

@@ -14,6 +14,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
   }
 
   function handleChange(e) {
+// Temp comment
     setSearchTerm(e.target.value);
   }
 

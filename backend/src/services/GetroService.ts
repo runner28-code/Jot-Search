@@ -48,3 +48,4 @@ export class GetroService {
 
             if (res.status === 200) {
                 const { items } = res.data;
+                if (items.length > 0) {

@@ -106,7 +106,6 @@ const CandidateProvider = ({children}) => {
 
   useEffect(() => {
     if (currentUser?.user_id) {
-      getCandidateById(currentUser.user_id).then(user => {
         setCurrentUser(user);
       })
     }
@@ -128,3 +127,4 @@ const CandidateProvider = ({children}) => {
     <CandidateContext.Provider value={{ candidates, currentUser, setCurrentUser, handleCandidatesChange, handleCandidateUpdate }}>
       {children}
     </CandidateContext.Provider>
+  )

@@ -12,7 +12,6 @@ export default function Applications() {
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
-// Temp comment
     filteredJobs: [],
     loading: true
   });

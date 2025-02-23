@@ -12,7 +12,6 @@ export type Company = {
     billingAddress_city?: string,
     billingAddress_state?: string,
     billingAddress_zip?: string,
-    billingContact?: string,
     billingFrequency?: string,
     billingPhone?: string,
     businessSectorList?: string,
@@ -32,6 +31,7 @@ export type Company = {
     funding?: string,
     industryList?: string,
     invoiceFormat?: string,
+    name?: string,
     notes?: string,
     numEmployees?: string,
     numOffices?: string,
@@ -54,3 +54,4 @@ export type Job = {
     address_state?: string;
     address_zip?: string;
     address_country_id?: string;
+    benefits?: string;

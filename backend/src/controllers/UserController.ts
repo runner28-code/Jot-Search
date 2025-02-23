@@ -38,3 +38,4 @@ import db from "../utils/db";
 @Controller()
 export class UserController {
   @Post("/login")
+  async login(@Body() body: { email: string; password: string }) {

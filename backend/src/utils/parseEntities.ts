@@ -20,3 +20,4 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     zip: data.address_zip,
     resume: undefined,
     linkedin: undefined,
+    skills: data.primarySkills,

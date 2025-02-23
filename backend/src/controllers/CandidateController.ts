@@ -41,7 +41,6 @@ export class CandidateController {
       const user = await db.user.findFirst({
         where: {
           id,
-        },
         include: {
           candidate: true,
         },
@@ -68,4 +67,6 @@ export class CandidateController {
 
       return {
         candidate: clearPassword(candidate),
+        message: !candidate ? "No user with given ID" : undefined,
       };
+    } catch (error) {

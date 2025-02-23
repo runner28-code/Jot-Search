@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import Home from '../../../assets/icons/home.svg';
 import AdvancedSearch from '../../../features/AdvancedSearch';
 import CareerFavorite from '../../../components/CareerFavorite';
@@ -14,6 +15,7 @@ export default function CandidateDashboard() {
         <img
           src={Home}
           alt='Home Icon'
+        />
         <h1 className='ml-8 text-royalBlue text-lg vw-1280:text-[32px] font-spaceGrotesk'>My Dashboard</h1>
       </div>
       <div className='px-4'>

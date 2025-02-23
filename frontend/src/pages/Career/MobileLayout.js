@@ -50,6 +50,7 @@ export default function MobileLayout(props) {
             {/* Location */}
             <div className='flex w-1/2 items-center'>
               <img
+                src={locationIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack text-xs'>{addressString}</p>
             </div>
@@ -88,7 +89,6 @@ export default function MobileLayout(props) {
             </div>
           </div>
         </div>
-
         {/* Coordinator Status */}
         {
           role === 'coordinator' && (

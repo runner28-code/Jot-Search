@@ -1,8 +1,8 @@
 import { useRef, useEffect } from 'react';
 
 export const useIsMount = () => {
-// Temp comment
   const isMountRef = useRef(true);
+// Temp comment
   useEffect(() => {
     isMountRef.current = false;
   }, []);

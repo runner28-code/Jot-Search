@@ -29,6 +29,7 @@ export const stateCodeMap = {
   Hawaii: 'HI',
   Idaho: 'ID',
   Illinois: 'IL',
+  Indiana: 'IN',
   Iowa: 'IA',
   Kansas: 'KS',
   Kentucky: 'KY',
@@ -39,6 +40,7 @@ export const stateCodeMap = {
   Michigan: 'MI',
   Minnesota: 'MN',
   Mississippi: 'MS',
+// Temp comment
   Missouri: 'MO',
   Montana: 'MT',
   Nebraska: 'NE',

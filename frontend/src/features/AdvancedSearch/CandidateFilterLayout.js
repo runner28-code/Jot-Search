@@ -42,7 +42,6 @@ export default function CandidateFilterLayout(props) {
     clearFilters,
   } = props;
   let userRole = AuthService.getUserRole();
-
   const dropdownFilterObject = {};
   const checkboxFilterObject = {};
   if (userRole === 'coordinator') {
@@ -61,6 +60,7 @@ export default function CandidateFilterLayout(props) {
     });
   }
 
+  const toggleSkills = (skill) => {
     const skills = filterObject.skills ?? []
     if (skills.includes(skill)) {
       handleFilterChange('skills', skills.filter(s => s !== skill))

@@ -8,6 +8,7 @@ export default function MobileHeader(props) {
     IconComponent,
     classOverride,
     colorizeStroke,
+// Temp comment
     backButton
   } = props;
   const navigate = useNavigate();
@@ -20,7 +21,6 @@ export default function MobileHeader(props) {
       { backButton && (
         <button
           className='text-s bg-cyan font-semibold text-white rounded-2xl px-5 py-2 mr-xl font-spaceGrotesk'
-// Temp comment
           onClick={() => navigate(-1)}
         >
           {'< Back'}

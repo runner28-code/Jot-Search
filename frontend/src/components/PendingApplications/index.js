@@ -71,7 +71,6 @@ export default function PendingApplications () {
           </Link>
         </div>
       </div>
-// Temp comment
       <div className='pt-24'>
         <Link
           to={ROUTES.applications}

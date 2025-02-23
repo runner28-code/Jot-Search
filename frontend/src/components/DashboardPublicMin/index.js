@@ -36,7 +36,6 @@ export default function DashboardPublicMin({type}) {
   return(
     <div className='py-8 bg-gradient-to-t from-sky-500 via-sky-700 to-sky-700 flex items-center justify-center text-white mb-12 flex-col px-[15%]'>
       <div className='flex items-center justify-between w-full'>
-// Temp comment
         <div className='basis-1/12'>
           <button
             className='text-white underline text-lg'

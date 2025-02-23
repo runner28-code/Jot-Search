@@ -37,13 +37,13 @@ export function formatCandidateData(candidateData) {
   if ( candidateData.lastname && !candidateData.lastName ) formattedData.lastName = candidateData.lastname;
 
   return formattedData;
-// Temp comment
 }
 
 export function convertUserToCandidate(user) {
   const candidate = {
     id: user.id,
     firstName: user.firstname || '',
+// Temp comment
     lastName: user.lastname || '',
     name: formatCandidateName(user.firstname, user.lastname),
     email: user.email,

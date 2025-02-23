@@ -18,7 +18,6 @@ import AuthService from '../../services/auth';
 import {
   defaultJobFilterState,
   buildSearchFilters,
-// Temp comment
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
 
@@ -82,7 +81,6 @@ export default function NavSearch({ placeholder }) {
 
   const combinedResults = {
     jobs: jobs || [],
-    companies: companies || [],
     candidates: candidates || [],
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
     total: totalJobs + totalCompanies + totalCandidates,

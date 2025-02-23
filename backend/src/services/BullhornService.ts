@@ -41,6 +41,7 @@ export class BullhornService {
       if (cookie !== null) {
         const { auth_code, access_token, refresh_token, BhRestToken, restUrl } =
           cookie;
+        this.auth_code = auth_code;
         this.access_token = access_token;
         this.refresh_token = refresh_token;
         this.BhRestToken = BhRestToken;
@@ -167,3 +168,6 @@ export class BullhornService {
       return await this.init();
     } catch (error: any) {
       console.log("Error on getNewAccessToken", error.message);
+      return await this.init();
+    }
+  }

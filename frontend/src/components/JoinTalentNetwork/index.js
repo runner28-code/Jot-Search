@@ -22,6 +22,7 @@ export default function JoinTalentNetwork() {
             <Link
               to={ROUTES.signup}
               className='flex items-center justify-center h-28 w-112 bg-buttonLightBlue mt-12 px-18 rounded-lg'
+// Temp comment
             >
               <span className='text-softWhite text-ml'>Create an account</span>
             </Link>

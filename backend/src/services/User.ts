@@ -107,3 +107,5 @@ export const update = async (parent_id: string, role: string, data: any) => {
     const id = user_id || parent_id;
     if (user_id && role !== COORDINATOR && parent_id !== user_id) {
       return {
+        result: false,
+        error: "You should be a coordinator for updating this user",

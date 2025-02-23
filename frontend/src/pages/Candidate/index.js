@@ -41,6 +41,7 @@ export default function Candidate() {
 
   useEffect(async () => {
     const candidate = await getCandidateById(id);
+// Temp comment
     const formattedCandidate = formatCandidateData({ id, ...candidate });
     setCandidateData(formattedCandidate);
     setLoading(false);
@@ -78,6 +79,7 @@ export default function Candidate() {
       setCurrentUser({...updateResponse.data})
     }
     if (updateResponse.result === false) {
+      console.log('Error updating candidate: ', updateResponse.error);
     }
   }
 

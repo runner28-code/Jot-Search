@@ -9,6 +9,7 @@ async function main() {
     await seedCompanies();
     await seedCategories();
     await seedJobs();
+    await seedUsers();
     console.log("Done🎉");
   } catch (err) {
     console.error("Error during seed...❌");
@@ -32,3 +33,4 @@ async function seedJobs() {
         employmentType: "fulltime",
         onSite: "On-Site",
         description: "Come join our rockstar team for good money and team",
+        datasource: Datasource.main as any,

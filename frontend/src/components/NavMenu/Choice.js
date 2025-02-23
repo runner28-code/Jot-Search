@@ -4,6 +4,7 @@ import * as ROUTES from '../../routes';
 
 export default function Choice({ choice, Icon, handleOptionClick, stylesObject }) {
   
+  let choiceLink = '/';
   if (choice === 'My Account') {
     choiceLink = ROUTES.profile;
   } else if (choice !== 'Dashboard') {
@@ -22,5 +23,4 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
         <span className={stylesObject.spanStyles}>{choice}</span>
       </Link>
       <hr className={stylesObject.hrStyles} />
-    </div>
   )

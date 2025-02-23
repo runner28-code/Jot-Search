@@ -73,3 +73,4 @@ export class JobController {
           },
           where: {
             domain: {
+              in: job?.company?.companyURL
