@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
@@ -9,7 +10,6 @@ import {  calculatePostingAge } from '../../../utils/formatFunctions';
 
 export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOverride = null, agoText = 'Saved', selectableProps = null }) {
   const postingAge = calculatePostingAge(agoDate);
-// Temp comment
 
   return (
     <div

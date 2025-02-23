@@ -58,7 +58,6 @@ export default function AddCoordinator() {
       submissionObject.errors,
       formObject.password
     );
-// Temp comment
 
     // Add errors to state if there are any
     if (Object.keys(newErrors).length > 0) {

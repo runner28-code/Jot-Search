@@ -171,7 +171,6 @@ export default function Footer() {
                 alt='Intulsa Logo'
                 className='w-auto h-auto'
               />
-            </a>
           </div>
         </div>
       </div>

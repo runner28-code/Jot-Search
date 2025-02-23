@@ -58,7 +58,6 @@ function App() {
               path={ROUTES.resetPassword}
               element={<ResetPassword />} />
             <Route
-              path={ROUTES.root + '*'}
               element={<Auth />} />
             <Route
               path="*"

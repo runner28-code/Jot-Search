@@ -6,8 +6,8 @@ import searchWhite from '../../assets/icons/search-gray.svg';
 export default function SearchMinified ({ imgClass }) {
 
   const classes = imgClass += 'w-8 h-8 ';
-
 // Temp comment
+
   return (<>
     <img
       src={ searchWhite }

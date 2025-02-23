@@ -11,7 +11,7 @@ export default function HideButton({ type, data, setIsHidden }) {
   
   async function handleClick() {
     setIsHidden(true);
-    await toggleHideJob(data.id);
+  }
 
   return (
     <BiHide 

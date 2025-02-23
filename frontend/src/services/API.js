@@ -1,6 +1,5 @@
 import axios from 'axios';
 import AuthService from './auth';
-import fixStringNulls from '../utils/fixStringNulls';
 import * as ROUTES from '../routes';
 import { ACTIVE_STATUSES } from '../utils/filterObjects';
 
@@ -71,4 +70,11 @@ export async function getCandidateById(id) {
 export async function updateUser(newData, id) { // id is optional, if no id is passed it will update the user attached to the auth token
   const body = id ? { id, ...newData } : newData;
   const { data } = await API.post(ROUTES.APIuserUpdate, body);
+  return normalizeData(data);
+}
+
+export async function updateCandidate(newData, id) {
+  console.log({ newData, id })
+  const body = { ...newData, id };
+  const { data } = await API.post(ROUTES.APIcandidateUpdate, body);
   return normalizeData(data);

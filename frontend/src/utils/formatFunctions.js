@@ -9,7 +9,6 @@ export function formatCandidateData(candidateData) {
   if (formattedData.sourceTable === 'Candidate') {
     formattedData.address1 = candidateData.address_address1 || '';
     formattedData.address2 = candidateData.address_address2 || '';
-// Temp comment
     formattedData.city = candidateData.address_city || '';
     formattedData.state = candidateData.address_state || '';
     formattedData.zip = candidateData.address_zip || '';
@@ -17,7 +16,6 @@ export function formatCandidateData(candidateData) {
   formattedData.address = buildCandidateAddress(candidateData);
   formattedData.avatar = formatAvatarUrl(candidateData.avatar, candidateData.firstname, candidateData.lastname);
   if ( !candidateData.occupation && !candidateData.companyName ) {
-    formattedData.occupationString = 'No Occupation Provided';
   } else {
     const occupation = candidateData.occupation || 'N/A';
     const companyName = candidateData.companyName || 'N/A';

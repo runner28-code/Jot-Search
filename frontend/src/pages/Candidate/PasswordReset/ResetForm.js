@@ -30,6 +30,7 @@ export default function ResetForm({ candidateData, setType }) {
         setType('Password Reset Successfully', true);
       } else {
         setType(res.data.error, false);
+      }
     }
   };
 

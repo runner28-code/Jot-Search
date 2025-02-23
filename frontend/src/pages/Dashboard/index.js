@@ -1,3 +1,4 @@
+// Temp comment
 import { Navigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import CandidateDashboard from './CandidateDashboard';

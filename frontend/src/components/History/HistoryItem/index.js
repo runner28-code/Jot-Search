@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -7,6 +6,7 @@ function isTodayOrYesterday(dateObj) {
     isToday: false,
     isYesterday: false
   }
+// Temp comment
 
   const today = new Date();
   const sameYear = today.getFullYear() === dateObj.getFullYear();

@@ -60,7 +60,6 @@ export default function Login() {
           { renderError() }
           <FormInput
             type='text'
-// Temp comment
             name='email'
             label='Login Email'
           />
@@ -75,6 +74,7 @@ export default function Login() {
               type='submit'
             >
               Login
+// Temp comment
             </button>
             <Link
               to={ROUTES.accountRecovery}

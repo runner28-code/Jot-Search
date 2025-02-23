@@ -44,6 +44,7 @@ function HeaderContent({ companyData }) {
             <img
               src={PlacePin}
               className={headerIconStyles}
+// Temp comment
             />
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
           </div>
@@ -80,6 +81,7 @@ function HeaderContent({ companyData }) {
             <img
               src={Triangle}
               className={headerIconStyles}
+            />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
           </div>
         </div>

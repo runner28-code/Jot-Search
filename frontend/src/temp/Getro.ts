@@ -11,3 +11,4 @@ export type Company = {
     jobs_count?: string;
     linkedin_url?: string;
     logo_url?: string;
+    name?: string;

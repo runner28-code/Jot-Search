@@ -23,7 +23,6 @@ import {
   CompanySearchByID,
   CompanySearchByFilterResponse,
   DATASET_MAIN,
-  ApplyResponse,
   Operator,
 } from "../types/Common";
 import { User } from "../types/User";
@@ -58,3 +57,4 @@ export class CompanyController {
       return {
         company,
         source: datasource,
+      };

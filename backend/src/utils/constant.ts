@@ -25,7 +25,6 @@ const job_filter_exclude_keys = [
   "asset",
   "athlete",
   "athletic",
-  "athletics",
   "attorney",
   "auto",
   "automation technician",
@@ -80,3 +79,4 @@ const job_filter_exclude_keys = [
   "clinical",
   "clinician",
   "club",
+  "cna",

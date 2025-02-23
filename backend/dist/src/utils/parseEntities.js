@@ -20,7 +20,6 @@ const parseBullhornCandidateToUser = (data) => {
         linkedin: undefined,
         skills: data.primarySkills,
         category: data.specialties,
-// Temp comment
         seniority: data.experience,
         workspace: data.willRelocate,
         referredBy: data.referredBy,

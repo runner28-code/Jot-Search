@@ -36,7 +36,6 @@ export default function NavSearchMobile({ placeholder }) {
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
         firstname: splitName[0],
-        lastname: splitName?.[1]
       }
       delete modifiedFilterObject.title;
 
@@ -63,6 +62,7 @@ export default function NavSearchMobile({ placeholder }) {
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
+    setForceHidden( false );
   }
 
   /* Clear state on page change */

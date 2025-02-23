@@ -10,10 +10,12 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import {
   candidateChoices,
+  companyChoices,
   coordinatorChoices,
   guestChoices,
   findSelectedFromPath
 } from '../SideNav/utils';
+// Temp comment
 import { useCandidateContext } from '../../services/CandidateContext';
 
 export default function NavBar() {

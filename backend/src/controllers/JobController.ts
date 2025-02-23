@@ -70,3 +70,4 @@ export class JobController {
           select: {
             domain: true,
             logo_url: true,
+          },

@@ -233,7 +233,6 @@ export default function RegistrationForm(loggedIn) {
             name='phone'
             label='Phone'
             value={formObj.phone}
-            onChange={handleChange}
             error={errors.includes('phone')}
           />
           <hr className={hrStyles} />
@@ -351,6 +350,7 @@ export default function RegistrationForm(loggedIn) {
           </div>
         </div>
         <div className={flexWidth}>
+          <FormInput
             type='text'
             name='linkedin'
             value={formObj.linkedin}

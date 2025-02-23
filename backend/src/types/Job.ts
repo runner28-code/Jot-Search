@@ -1,5 +1,4 @@
 import { Datasource } from "@prisma/client";
-
 export type Job = {
   id?: string;
   externalId?: string;
@@ -8,3 +7,4 @@ export type Job = {
   address2?: string;
   city?: string;
   state?: string;
+  zip?: string;

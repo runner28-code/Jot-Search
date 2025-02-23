@@ -406,7 +406,6 @@ export default function RegistrationFormInternal(loggedIn) {
           label='LinkedIn Profile link with https:// prefix'
           error={errors.includes('linkedin')}
         />
-// Temp comment
         {/* File input for resume */}
         <FormInput
           type='file'
