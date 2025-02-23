@@ -104,7 +104,6 @@ export default function MobileLayout(props) {
       {/* Job Description */}
       <h4 className={sectionHeaderStyles}>Career Description</h4>
       <p
-// Temp comment
         className='font-spaceGrotesk text-textBlack text-sm mb-6'
         dangerouslySetInnerHTML={{ __html: careerData.description }}
       />

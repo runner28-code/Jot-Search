@@ -59,7 +59,6 @@ export default function NavSearch({ placeholder }) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
-  /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setForceHidden( false );
@@ -86,7 +85,6 @@ export default function NavSearch({ placeholder }) {
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
     total: totalJobs + totalCompanies + totalCandidates,
     forceHidden
-// Temp comment
   }
 
   /* STYLES & RENDER */

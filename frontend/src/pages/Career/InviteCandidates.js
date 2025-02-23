@@ -81,6 +81,7 @@ export default function InviteCandidates({ job }) {
             console.log({ res })
             if (res.result) {
               setSelected([])
+            }
           }}
           disabled={selected.length === 0 || isSendingJob}
         >

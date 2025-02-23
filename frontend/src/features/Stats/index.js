@@ -22,6 +22,7 @@ export default function Stats({ userType }) {
 
   function getDuration(timeFrame) {
     switch (timeFrame) {
+// Temp comment
       case 'Today':
         return 1;
       case 'Last 7 Days':

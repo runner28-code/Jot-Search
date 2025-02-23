@@ -70,7 +70,6 @@ export default function InviteToCareer({ candidate }) {
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}
-// Temp comment
       />
       <div className='flex space-x-8'>
         <button 

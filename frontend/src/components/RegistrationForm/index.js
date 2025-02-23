@@ -233,6 +233,7 @@ export default function RegistrationForm(loggedIn) {
             name='phone'
             label='Phone'
             value={formObj.phone}
+            onChange={handleChange}
             error={errors.includes('phone')}
           />
           <hr className={hrStyles} />

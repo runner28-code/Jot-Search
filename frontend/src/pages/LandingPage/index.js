@@ -8,6 +8,7 @@ import FeaturedJobs from '../../components/FeaturedJobs';
 import FeaturedCompanies from '../../components/FeaturedCompanies';
 import FeaturedCompaniesMobile from '../../components/FeaturedCompaniesMobile';
 import BusinessBooming from '../../components/BusinessBooming';
+import BusinessBoomingMobile from '../../components/BusinessBoomingMobile';
 import ColorShapes from '../../components/ColorShapes';
 import * as ROUTES from '../../routes';
 import { MdLocationOn } from 'react-icons/md';
@@ -19,7 +20,6 @@ const heroStyles = 'relative flex flex-col items-center h-135 vw-1024:h-280 vw-1
 
 export default function LandingPage() {
   const { width } = useWindowDimensions();
-  const isMobile = width < 1024;
   const isDesktop = width >= 1024;
 
   return (

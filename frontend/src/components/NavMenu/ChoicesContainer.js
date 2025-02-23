@@ -5,6 +5,7 @@ import {
   companyChoices,
   coordinatorChoices,
   guestChoices
+// Temp comment
 } from '../SideNav/utils';
 import Choice from './Choice';
 import LoggedOutButtons from './LoggedOutButtons';
@@ -29,7 +30,6 @@ const stylesObject = {
 
 export default function ChoicesContainer(props) {
   const {
-// Temp comment
     userRole,
     handleOptionClick } = props;
   

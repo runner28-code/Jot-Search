@@ -7,6 +7,7 @@ import {
   guestChoices,
   findSelectedFromPath
 } from './utils';
+// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
 
@@ -21,7 +22,6 @@ export default function SideNav({ userType }) {
     return null;
   }
   const { width } = useWindowDimensions();
-// Temp comment
   if ( width < 1280 ) {
     return null;
   }

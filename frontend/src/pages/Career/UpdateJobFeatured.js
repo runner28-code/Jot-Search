@@ -35,7 +35,6 @@ export const UpdateJobFeatured = ({ job }) => {
 
             // TODO: Replace with react-query refetch
             if(result) {
-              window.location.reload()
             }
           }}>
           <span className="sr-only">inTulsa Featured</span>

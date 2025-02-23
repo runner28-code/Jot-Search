@@ -33,7 +33,6 @@ const job_filter_exclude_keys = [
     "automation technician",
     "automotive",
     "bailiff",
-    "barback",
     "bartender",
     "baseball",
     "beauty",
