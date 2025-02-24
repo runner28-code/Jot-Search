@@ -120,6 +120,8 @@ export default function ResetPassword() {
           />
           <label className={labelStyle}>Confirm Password</label>
           <input
+// Temp comment
+            className={inputStyle}
             id='confirmPassword'
             type='password'
             name='confirmPassword'

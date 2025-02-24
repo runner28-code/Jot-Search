@@ -20,6 +20,7 @@ export const saveCompanies = async (companies: any[]) => {
   //       not: null
   //     }
   //   }
+  // });
   // for (const item of result) {
   //   await db.company.update({
   //     where: {

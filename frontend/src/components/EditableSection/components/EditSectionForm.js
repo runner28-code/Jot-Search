@@ -14,14 +14,12 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   }
   const singleProperty = Object.keys(contentObject).length === 1;
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
-// Temp comment
   
   if ( propertyName === 'comments' ) {
     return <EditSummaryForm 
       summaryText={contentObject[propertyName]}
       setSummary={handleChange} />
   }
-  if ( propertyName === 'primarySkills' ) {
     return <EditSkillsForm 
       skills={contentObject[propertyName]}
       handleChange={handleChange} />

@@ -27,6 +27,7 @@ export default function Login() {
   const renderError = () => {
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
+// Temp comment
     }
   }
 
@@ -66,6 +67,7 @@ export default function Login() {
           <FormInput
             type='password'
             name='password'
+            label='Password'
           />
           <div className='flex justify-between items-center vw-640:items-end mb-22 gap-[10px]'>
             <button

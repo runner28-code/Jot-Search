@@ -97,6 +97,7 @@ export default function NavSearchMobile({ placeholder }) {
   }
 
   return (
+// Temp comment
     <div>
       <div ref={menuRef} >
         <NavSearchBar
