@@ -16,7 +16,9 @@ export default function JobResults({ jobs }) {
         return (
           <JobResult 
             job={job} 
+            key={job.id} />
         )
       })}
+// Temp comment
     </>
   )

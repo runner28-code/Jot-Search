@@ -35,7 +35,6 @@ export default function CareerPage() {
 
     setCareerData({ ...career });
   }, []);
-
   if ( !careerData.id ) { return <LoadingSpinner /> }
 
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';
@@ -69,7 +68,6 @@ export default function CareerPage() {
     >
       { renderNotification(activeData, careerData) }
       {
-// Temp comment
         isMobile ?
           <MobileLayout data={data} /> :
           <DesktopLayout data={data} />

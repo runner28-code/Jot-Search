@@ -20,6 +20,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
       summaryText={contentObject[propertyName]}
       setSummary={handleChange} />
   }
+  if ( propertyName === 'primarySkills' ) {
     return <EditSkillsForm 
       skills={contentObject[propertyName]}
       handleChange={handleChange} />
@@ -42,6 +43,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
           return <Property
             key={key}
             name={key}
+// Temp comment
             value={value}
           />
         }

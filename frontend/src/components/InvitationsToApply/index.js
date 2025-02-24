@@ -21,7 +21,6 @@ export default function InvitationsToApply () {
         agoDate: job.appliedDate
       }});
     setAppliedJobsObject({
-// Temp comment
       jobs: appliedJobsWithDate,
       loading: false
     });
@@ -46,6 +45,7 @@ export default function InvitationsToApply () {
                     key={career.id}
                     index={index}
                     data={career}
+// Temp comment
                     agoDate={career.createdAt}
                   />
                 </>)

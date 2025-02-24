@@ -7,12 +7,12 @@ export const login = '/login';
 export const logout = '/logout';
 export const profile = '/profile';
 export const apply = '/apply';
-// Temp comment
 export const favorites = '/favorites';
 export const signup = '/signup';
 export const settings = '/settings';
 export const accountRecovery = '/account-recovery';
 export const resetPassword = '/reset-password';
+// Temp comment
 
 // Dashboard routes
 export const dashboard = '/';

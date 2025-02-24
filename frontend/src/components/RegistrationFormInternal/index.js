@@ -209,6 +209,7 @@ export default function RegistrationFormInternal(loggedIn) {
       onSubmit={handleSubmit}>
       { renderHeader(addType) }
       <div className={midpointFlex}>
+        <h3 className={titleStyles}>Personal Info</h3>
         <div className={twocol}>
           <FormInput
             type='text'

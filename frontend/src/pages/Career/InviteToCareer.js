@@ -44,13 +44,13 @@ export default function InviteToCareer({ candidate }) {
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs' 
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
-// Temp comment
       ))}
     </div>)
   }
 
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Careers' : 'Select Careers'}</div>
+// Temp comment
   }
   
   return (

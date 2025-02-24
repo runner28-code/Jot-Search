@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import TimeframeFilter from '../../components/TimeframeFilter';
 import { BsArrowUpSquare, BsArrowDownSquare } from 'react-icons/bs';
 import { getCompanyQuickStats, getCoordinatorQuickStats } from '../../services/API';
-
 const statFilterChoices = [
   'Today',
   'Last 7 Days',
@@ -44,6 +43,7 @@ export default function Stats({ userType }) {
         'Recommended Candidates': { ...result.recommendedCandidates },
         'Introductions Requests': { ...result.introductionsRequests },
         'Company Favorites': { ...result.companyFavorites },
+        'Active Career Post Favorites': { ...result.activeCareerPostFavorites },
         'Application Invitations Sent': { ...result.applicationInvitationsSent }                
       })
     }

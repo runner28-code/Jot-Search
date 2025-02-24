@@ -21,7 +21,6 @@ export default function Auth() {
 
   return ( 
     <div className='vw-640:pl-20 vw-640:pr-20 vw-1280:pl-0'>
-      <Routes>
         <Route
           path='/'
           element={<Dashboard />} 
@@ -29,6 +28,7 @@ export default function Auth() {
         <Route
           path={ROUTES.profile}
           element={<Profile />} />
+        <Route
           path={ROUTES.logout}
           element={<Logout />} />
         <Route

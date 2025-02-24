@@ -13,7 +13,9 @@ export const jobReferralChoices = [
   'Indeed',
   'Google',
   'Friend',
+  'Other',
 ];
+// Temp comment
 
 export const defaultCareerState = {
   title: '',

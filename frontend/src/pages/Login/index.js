@@ -27,7 +27,6 @@ export default function Login() {
   const renderError = () => {
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
-// Temp comment
     }
   }
 
@@ -74,7 +73,6 @@ export default function Login() {
               className='h-20 vw-640:h-24 bg-royalBlue text-center text-white text-xl tracking-wide px-14 rounded-lg'
               type='submit'
             >
-              Login
             </button>
             <Link
               to={ROUTES.accountRecovery}

@@ -144,6 +144,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
             </div>
             <div className='vw-1280:flex gap-12'>
               <label
+// Temp comment
                 htmlFor='email'
                 className={labelStyles}
               >

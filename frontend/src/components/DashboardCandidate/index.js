@@ -23,7 +23,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   }
   return (<>
     <div className='bg-sky-500 border-b-2 border-white flex items-start justify-start text-white flex-col px-6 py-8'>
-      <div className='flex items-center'>
         <div className='flex items-center'>
           <Link
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
@@ -43,6 +42,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
       </div>
     </div>
     <div className='bg-sky-500 flex py-8 px-6 items-center text-white font-roboto'>
+      <div className='flex items-center justify-start basis-5/6 gap-[10px]'>
         <img src={filterIcon} />
         Search and Filter
       </div>

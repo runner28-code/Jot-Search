@@ -22,7 +22,6 @@ export default function MobileLayout(props) {
     addressString,
     salaryString,
     postingAge,
-    role
   } = props.data;
   const navigate = useNavigate();
   const skillList = careerData.skillList;

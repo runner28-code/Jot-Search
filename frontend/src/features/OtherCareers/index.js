@@ -13,6 +13,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     {
       key: 'status',
       value: ['Active', 'Open']
+// Temp comment
     },
     {
       key: 'companyId',
@@ -45,7 +46,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
             data={career}
           />
         })
-// Temp comment
         }
         {/* Only show Pagination if total is greater than the amount we render on a single page */}
         { total > ITEMS_PER_PAGE && <PaginatedControls /> }
