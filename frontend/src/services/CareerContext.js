@@ -1,4 +1,5 @@
 import { createContext, useState } from 'react';
+import PropTypes from 'prop-types';
 
 const mockJobsData = [
   {
@@ -53,7 +54,6 @@ const mockJobsData = [
     listingAge: '1 month',
     specialty: 'Technology'
   },
-  {
     id: 'c79462d2-1950-4cc0-ba31-a21a566c3c9d',
     title: 'Payroll Administrator',
     company: 'Holberton',

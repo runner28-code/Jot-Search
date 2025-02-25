@@ -47,7 +47,9 @@ export function convertUserToCandidate(user) {
     name: formatCandidateName(user.firstname, user.lastname),
     email: user.email,
     phone: user.phone,
+    description: user.description,
     experience: user.experience?.parseInt() || 1,
+// Temp comment
     address_address1: user.address1 || '',
     address_address2: user.address2 || '',
     address_city: user.city || '',

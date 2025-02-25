@@ -16,6 +16,6 @@ export default function NavBar() {
   if ( width < 1280 ) {
     return <MobileNavBarLayout />
   } else {
-// Temp comment
     return <DesktopNavBarLayout />
+// Temp comment
   }

@@ -18,10 +18,10 @@ const hrStyles = 'mb-10 border-midGrey ';
 export default function MobileLayout(props) {
   const {
     careerData,
-    categoryString,
     addressString,
     salaryString,
     postingAge,
+    role
   } = props.data;
   const navigate = useNavigate();
   const skillList = careerData.skillList;

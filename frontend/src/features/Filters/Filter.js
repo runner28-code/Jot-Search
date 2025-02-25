@@ -28,6 +28,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   }
 
   useEffect(() => {
+// Temp comment
     const value = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
     setSelected(value);
   }, [chosen]);
@@ -44,6 +45,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   return (
     <div
       ref={menuRef}
+      className={ width >= 990 ? containerStyles : containerStylesMobile}>
       <div
         id='title-wrapper'
         onClick={handleContainerClick}

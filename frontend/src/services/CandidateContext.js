@@ -128,4 +128,5 @@ const CandidateProvider = ({children}) => {
     <CandidateContext.Provider value={{ candidates, currentUser, setCurrentUser, handleCandidatesChange, handleCandidateUpdate }}>
       {children}
     </CandidateContext.Provider>
+// Temp comment
   )

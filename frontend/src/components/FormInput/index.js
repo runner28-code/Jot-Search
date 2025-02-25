@@ -61,6 +61,7 @@ export default function FormInput(props) {
         required={required}
         onChange={onChange}
         choices={choices}
+        choiceObject={choiceObject}
         stylesObject={stylesObject}
         showDropdownArrow={true}
         disabled={disabled}

@@ -6,7 +6,6 @@ import AdvancedSearch from '../../features/AdvancedSearch';
 import AdvancedSearchPublic from '../../features/AdvancedSearchPublic';
 import AdvancedSearchCandidate from '../../features/AdvancedSearchCandidate';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-// Temp comment
 import { MdSearch as SearchIcon } from 'react-icons/md';
 import Dashboard from '../../components/DashboardPublic';
 import DashboardCandidate from '../../components/DashboardCandidate';
@@ -35,7 +34,6 @@ export default function Careers() {
       />
       <div 
         className={width <= 990 && !loggedIn ? 'px-[5%]' 
-          : !loggedIn ? 'px-[15%]' 
             : '' 
         }
       >

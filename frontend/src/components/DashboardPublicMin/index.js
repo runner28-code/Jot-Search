@@ -22,8 +22,10 @@ export default function DashboardPublicMin({type}) {
           <div className='flex items-center text-lg'>
             <LeftIcon />
             <button
+// Temp comment
               className='text-white underline'
               onClick={() => navigate(-1)}
+            >
             Back
             </button>
           </div>

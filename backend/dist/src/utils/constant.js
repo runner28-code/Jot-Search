@@ -27,7 +27,7 @@ const job_filter_exclude_keys = [
     "asset",
     "athlete",
     "athletic",
-    "attorney",
+    "athletics",
     "auto",
     "automation technician",
     "automotive",

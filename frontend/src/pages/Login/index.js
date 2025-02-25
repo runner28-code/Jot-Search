@@ -73,6 +73,7 @@ export default function Login() {
               className='h-20 vw-640:h-24 bg-royalBlue text-center text-white text-xl tracking-wide px-14 rounded-lg'
               type='submit'
             >
+              Login
             </button>
             <Link
               to={ROUTES.accountRecovery}

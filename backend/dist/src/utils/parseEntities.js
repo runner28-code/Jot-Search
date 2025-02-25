@@ -11,6 +11,7 @@ const parseBullhornCandidateToUser = (data) => {
         gender: data.gender,
         email: data.email,
         role: "candidate",
+// Temp comment
         address1: data.address_address1,
         address2: data.address_address2,
         city: data.address_city,
@@ -20,6 +21,7 @@ const parseBullhornCandidateToUser = (data) => {
         linkedin: undefined,
         skills: data.primarySkills,
         category: data.specialties,
+        seniority: data.experience,
         workspace: data.willRelocate,
         referredBy: data.referredBy,
         roles: data.skillSet,

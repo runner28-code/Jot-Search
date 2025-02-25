@@ -13,7 +13,6 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
-import AuthService from '../../services/auth';
 
 
 import {
@@ -75,6 +74,7 @@ export default function NavSearchMobile({ placeholder }) {
   const closeDropdown = () => {
     setForceHidden(true);
   };
+
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);

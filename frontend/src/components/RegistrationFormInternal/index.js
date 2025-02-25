@@ -467,7 +467,6 @@ export default function RegistrationFormInternal(loggedIn) {
               href={ROUTES.termsOfService}
               target='_blank'
               rel='noopener noreferrer'
-              className='text-royalBlue underline'
             >
               Terms and Conditions
             </a>

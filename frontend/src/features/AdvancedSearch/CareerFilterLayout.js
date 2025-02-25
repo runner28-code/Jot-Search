@@ -29,6 +29,7 @@ export default function CareerFilterLayout(props) {
     clearFilters,
   } = props;
 
+  const dropdownFilterObject = {};
   if( userType === 'candidate' ) {
     dropDownFiltersCandidate.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
@@ -51,6 +52,7 @@ export default function CareerFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
+// Temp comment
           placeholder='Search name, title, active careers'
           additionalClasses='w-1/2'
         />

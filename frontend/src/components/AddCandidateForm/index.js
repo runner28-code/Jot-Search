@@ -168,6 +168,7 @@ export default function RegistrationForm() {
             name='email'
             placeholder='Email' 
             error={errors.includes('email')}
+          />
           <FormInput
             type='single-select'
             name='expertise'
@@ -266,7 +267,6 @@ export default function RegistrationForm() {
             onChange={handleChange}
             error={errors.includes('password')}
           />
-          <FormInput
             type='password'
             name='verifyPassword'
             placeholder='Verify Password' 
