@@ -9,6 +9,7 @@ import {
   Delete,
   QueryParam,
   JsonController,
+  Authorized,
   CurrentUser,
   Patch,
 } from "routing-controllers";

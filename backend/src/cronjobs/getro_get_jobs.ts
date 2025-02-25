@@ -1,1 +1,1 @@
-import { consoleLog } from "../utils";
+import { GetroService } from "../services/GetroService";

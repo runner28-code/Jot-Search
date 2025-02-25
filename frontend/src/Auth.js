@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import {
   ActiveCareers,
   AddUser,
   Applications,
@@ -20,6 +19,7 @@ export default function Auth() {
   }
 
   return ( 
+    <div className='vw-640:pl-20 vw-640:pr-20 vw-1280:pl-0'>
       <Routes>
         <Route
           path='/'

@@ -60,7 +60,6 @@ export default function AccessibleDropdown(props) {
             name={ name }
             className={ listStyles }
           >
-            { renderMenuItems(choices, choiceObject, currentChosen, name, stylesObject) }
           </ul>
         </Menu>
       </Wrapper>

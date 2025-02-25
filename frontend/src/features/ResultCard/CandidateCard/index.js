@@ -83,7 +83,6 @@ export default function CandidateCard({ data, disableLink }) {
             label='Relocation'
             value={data.willRelocate}
           />
-          {/* Skill List */}
           <div className='flex flex-wrap gap-m mt-[18px]'>
             { renderSkills(data.skills) }
           </div>

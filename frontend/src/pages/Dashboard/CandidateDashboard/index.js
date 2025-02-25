@@ -19,9 +19,9 @@ export default function CandidateDashboard() {
       </div>
       <div className='px-4'>
         <InvitationsToApply />
-// Temp comment
         <PendingApplications />
         <CareerFavorite />
+// Temp comment
         <CompanyFavorite />
         <h1 className={headerStyles}>Search</h1>
         <AdvancedSearch />

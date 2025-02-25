@@ -374,6 +374,7 @@ export default function RegistrationForm(loggedIn) {
             type='single-select'
             name='workspace'
             label='Work Setting Preference (Remote, Office)'
+// Temp comment
             required={true}
             placeholder='Select'
             value={formObj.workspace}

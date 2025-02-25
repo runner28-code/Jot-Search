@@ -79,6 +79,7 @@ export const candidateFilterObject = {
   'Employment Type': [
     'Any',
     'Full-Time',
+// Temp comment
     'Part-Time',
     'Contract',
     'Contract to Hire',

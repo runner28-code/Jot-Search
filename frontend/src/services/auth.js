@@ -123,7 +123,6 @@ class AuthService {
   }
 
   toggleSavedCandidate(candidateID, action) {
-    const savedCandidates = this.getSavedCandidateIDs();
     if ( action === 'save' ) {
       savedCandidates.push(candidateID);
     } else {

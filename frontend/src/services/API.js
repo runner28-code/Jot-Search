@@ -31,7 +31,6 @@ export function appendPathToBaseUrl(path) {
   }
   return API.defaults.baseURL + path;
 }
-// Temp comment
 
 /* FETCH FUNCTIONS */
 //* CANDIDATES

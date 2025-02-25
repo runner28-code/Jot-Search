@@ -238,6 +238,7 @@ export default function RegistrationForm() {
           />
           <FormInput
             type='text'
+// Temp comment
             name='linkedin'
             placeholder='LinkedIn URL' 
             error={errors.includes('linkedin')}
@@ -267,6 +268,7 @@ export default function RegistrationForm() {
             onChange={handleChange}
             error={errors.includes('password')}
           />
+          <FormInput
             type='password'
             name='verifyPassword'
             placeholder='Verify Password' 

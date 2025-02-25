@@ -1,3 +1,3 @@
 import jwt from 'jsonwebtoken';
-import config from '../config';
+import { User as DbUser } from "prisma/prisma-client";
 

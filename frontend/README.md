@@ -1,5 +1,4 @@
 # InTulsa Client
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Style Guide
@@ -9,6 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     - Declare variables for reused styles
         - Leave trailing spaces for chaining styles
             ```
+            const linkStyles = 'hover:text-royalBlue mt-3 ';
             const linkColor = 'text-slateGray ';
 
             className={linkStyles + linkColorHeader} instead of className={linkStyles + ' ' + linkColorHeader}

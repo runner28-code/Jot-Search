@@ -28,7 +28,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   }
 
   useEffect(() => {
-// Temp comment
     const value = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
     setSelected(value);
   }, [chosen]);

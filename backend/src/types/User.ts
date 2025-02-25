@@ -11,7 +11,7 @@ export type User = {
   address2?: string;
   city?: string;
   state?: string;
-  zip?: string;
   resume?: string;
+  avatar?: string;
   linkedin?: string;
   skills?: string;

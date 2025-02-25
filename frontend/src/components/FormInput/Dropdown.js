@@ -12,7 +12,6 @@ function renderActiveIcon(choice, currentChosen) {
     return(
       <img 
         src={checkmarkIcon} 
-        alt="checkmark" 
         className="w-8 h-8 mr-2" />
     )
   }

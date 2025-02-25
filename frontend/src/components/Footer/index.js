@@ -56,6 +56,7 @@ export default function Footer() {
           />
         </a>
       </div>
+      <NavFooterMobile />
       <div
         id='footer'
         className='flex flex-col'
