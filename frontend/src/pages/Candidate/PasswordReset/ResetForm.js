@@ -38,7 +38,6 @@ export default function ResetForm({ candidateData, setType }) {
     setFormData({
       ...formData,
       [name]: value,
-    });
   }
 
   return (
@@ -65,5 +64,6 @@ export default function ResetForm({ candidateData, setType }) {
         onClick={handleSubmit}
       >
         Reset Password
+      </button>
     </div>
   )

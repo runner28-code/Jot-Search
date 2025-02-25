@@ -31,6 +31,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   }
   const handleSubmit = () => {
     handleCandidateUpdate(formData);
+    setEditMode(false);
   }
   
   const avatarUrl = appendPathToBaseUrl(formData.avatar);
@@ -56,6 +57,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         {/* First Name */}
         <div className='mb-6'>
           <label 
+// Temp comment
             className='text-h6 text-royalBlue w-full'
             htmlFor='name'>
           Name

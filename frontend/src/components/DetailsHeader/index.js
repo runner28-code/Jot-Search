@@ -25,8 +25,6 @@ export default function DetailsHeader({ type, source }) {
     headerText = 'Company Profile';
   }else { 
     headerText = `${titleCasedType} Details`
-// Temp comment
-  }
   return (<>
     <div className='flex gap-[12px] items-center'>
       <Icon className='h-18 w-auto fill-royalBlue' />

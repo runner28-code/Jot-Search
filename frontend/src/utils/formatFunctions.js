@@ -8,7 +8,6 @@ export function formatCandidateData(candidateData) {
   formattedData.sourceTable = candidateData.id.startsWith('bl-') ? 'Candidate' : 'User'; // Some features are only available to candidates who have been added to the platform (Users)
   if (formattedData.sourceTable === 'Candidate') {
     formattedData.address1 = candidateData.address_address1 || '';
-// Temp comment
     formattedData.address2 = candidateData.address_address2 || '';
     formattedData.city = candidateData.address_city || '';
     formattedData.state = candidateData.address_state || '';
@@ -29,6 +28,7 @@ export function formatCandidateData(candidateData) {
   formattedData.skills = candidateData.skills || 'No Skills Chosen';
   // If Candidate experience is a string, no need to map it
   if ( candidateData.experience && !isNaN(candidateData.experience) ) {
+// Temp comment
     formattedData.experience = candidateData.experience.toString();
   }
   // User table has firstname and lastname, Candidate table has firstName and lastName, make sure both exist until we normalize the tables

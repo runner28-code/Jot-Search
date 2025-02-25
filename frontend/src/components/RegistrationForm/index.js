@@ -24,6 +24,7 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
   phone: '',
+// Temp comment
   expertise: '',
   address1: '',
   city: '',
@@ -374,7 +375,6 @@ export default function RegistrationForm(loggedIn) {
             type='single-select'
             name='workspace'
             label='Work Setting Preference (Remote, Office)'
-// Temp comment
             required={true}
             placeholder='Select'
             value={formObj.workspace}

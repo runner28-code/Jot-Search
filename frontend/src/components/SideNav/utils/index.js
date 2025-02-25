@@ -9,6 +9,7 @@ import {
   MdLogout as LogoutIcon,
   MdStars as FavoritesIcon
 } from 'react-icons/md';
+// Temp comment
 import {
   RiFolderUserLine as CandidatesIcon,
   RiDashboard3Line as DashboardIcon,

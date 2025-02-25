@@ -262,6 +262,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
               <div className='vw-1280:flex gap-12'>
                 <label
                   htmlFor='gender'
+                  className={labelStyles}
                 >
                   <p className={labelTextStyles}>Voluntary Self-ID of Gender</p>
                   <Dropdown

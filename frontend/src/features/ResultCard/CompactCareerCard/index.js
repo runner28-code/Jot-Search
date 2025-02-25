@@ -41,6 +41,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             <BsClipboardCheck className='fill-midGrey h-14 w-12' />
             { isApplicationPage ?
               <div>
+                <p className='text-midGrey'>Applied</p>
                 <p className='text-midGrey text-xs'>{applicationAge}</p>
               </div>
               :
@@ -53,7 +54,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
         </div>
       </Link>
       {
-        selectableProps && selectableProps.selectable ?
           <Checkbox
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}

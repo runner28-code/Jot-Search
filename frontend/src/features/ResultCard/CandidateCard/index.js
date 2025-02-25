@@ -13,6 +13,7 @@ import {
   buildOccupationString,
 } from '../../../utils/formatFunctions';
 
+// Temp comment
 export default function CandidateCard({ data, disableLink }) {
   const avatarUrl = formatAvatarUrl(data.avatar, data.firstName, data.lastName);
   const nameString = data.firstName + ' ' + data.lastName;
@@ -83,6 +84,7 @@ export default function CandidateCard({ data, disableLink }) {
             label='Relocation'
             value={data.willRelocate}
           />
+          {/* Skill List */}
           <div className='flex flex-wrap gap-m mt-[18px]'>
             { renderSkills(data.skills) }
           </div>

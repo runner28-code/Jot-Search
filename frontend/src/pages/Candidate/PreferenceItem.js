@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }) => {
+// Temp comment
   const { width } = useWindowDimensions();
   return (
     <div className='flex flex-col mt-5'>
       <div className='flex space-x-16'>
         <SwitchButton
           fieldName={fieldName}
-// Temp comment
           label={label}
           toggled={toggled}
           onToggle={onUpdate}

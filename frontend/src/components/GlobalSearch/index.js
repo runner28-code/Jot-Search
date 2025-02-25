@@ -52,7 +52,6 @@ export default function GlobalSearch({ placeholder }) {
       getJobs( searchTerm, 'title', 3 ),
       getCompanies( searchTerm, 'name', 3 ),
       getCandidates( searchTerm, 'firstname', 3 )
-    ]);
 
     const resultsObject = {
       jobs: jobResults && jobResults.length ? jobResults : [],

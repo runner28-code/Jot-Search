@@ -23,6 +23,7 @@ export default function ExpertiseLinks() {
           className={linkStyles}
           state={{ Expertise: 'Software & Engineering' }}
         >
+          <img
             src={softwareEngineeringIcon}
             alt='Software Engineering Icon'
             className={iconStyles}

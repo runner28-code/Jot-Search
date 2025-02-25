@@ -6,6 +6,7 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
+    extend: {
       animation: {
         'spin': 'spin .175s linear forwards',
         'spin-reverse': 'spin-reverse .175s linear forwards'
@@ -18,7 +19,6 @@ module.exports = {
           to: {
             transform: 'rotate(180deg)'
           },
-        },
         'spin-reverse': {
           from: {
             transform: 'rotate(180deg)'

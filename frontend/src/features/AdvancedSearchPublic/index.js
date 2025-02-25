@@ -19,8 +19,8 @@ import {
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
-// Temp comment
 import { useLocation } from 'react-router-dom';
+// Temp comment
 
 const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;

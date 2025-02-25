@@ -7,7 +7,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 const ITEMS_PER_PAGE = 4;
-// Temp comment
 
 export default function FeaturedJobs() {
   const { width } = useWindowDimensions();
@@ -63,7 +62,6 @@ export default function FeaturedJobs() {
                 </Link>
               )
             })
-        }
       </div>
       <div className={ width >= 990 ? viewAllStyles : viewAllStylesMobile }>
         <Link

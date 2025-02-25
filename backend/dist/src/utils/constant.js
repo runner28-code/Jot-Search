@@ -20,7 +20,6 @@ const job_filter_exclude_keys = [
     "anestesia",
     "animal",
     "animal control",
-    "aquatics",
     "art",
     "assembler",
     "assembly technician",

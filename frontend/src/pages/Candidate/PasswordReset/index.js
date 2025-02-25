@@ -1,3 +1,4 @@
+// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import ResetButton from './ResetButton';
@@ -28,7 +29,6 @@ export default function PasswordReset({role, candidateData}) {
       <h3 className='text-xl'>Password</h3>
       <div className='flex flex-col space-y-8'>
         { role === 'candidate' && (
-// Temp comment
           <ResetButton
             candidateData={candidateData}
             setType={setType}

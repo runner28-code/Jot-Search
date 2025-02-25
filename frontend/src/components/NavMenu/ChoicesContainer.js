@@ -30,8 +30,8 @@ const stylesObject = {
 export default function ChoicesContainer(props) {
   const {
     userRole,
-// Temp comment
     handleOptionClick } = props;
+// Temp comment
   
   return (<>
     { renderRoleChoices({ userRole, handleOptionClick }) }

@@ -30,7 +30,6 @@ const defaultState = {
   referredBy: '',
   resumeFile: {},
   password: '',
-  verifyPassword: '',
 };
 export default function RegistrationForm() {
   const {categories} = useContext(CategoryContext);
@@ -238,7 +237,6 @@ export default function RegistrationForm() {
           />
           <FormInput
             type='text'
-// Temp comment
             name='linkedin'
             placeholder='LinkedIn URL' 
             error={errors.includes('linkedin')}

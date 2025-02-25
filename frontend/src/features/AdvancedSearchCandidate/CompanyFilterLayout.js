@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 export default function CompanyFilterLayout(props) {
   const {
+// Temp comment
     searchTerm,
     setSearchTerm,
     handleSearchClick,

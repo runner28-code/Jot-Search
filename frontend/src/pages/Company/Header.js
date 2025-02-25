@@ -69,7 +69,6 @@ function HeaderContent({ companyData }) {
             />
             { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }
           </div>
-          <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={Globe}
               className={headerIconStyles}
@@ -113,7 +112,6 @@ HeaderContent.propTypes = {
 export default function Header({ companyData }) {
   return (
     <>
-// Temp comment
       <section className='flex w-full mb-10 px-4'>
         <HeaderContent companyData={companyData} />
       </section>
