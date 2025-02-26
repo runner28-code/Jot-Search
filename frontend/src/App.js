@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-// Temp comment
 import * as ROUTES from './routes';
 import Auth from './Auth';
 import {
@@ -33,7 +32,6 @@ function App() {
               element={<SignUp />} />
             <Route
               path={ROUTES.login}
-              element={<Login />} />
             <Route
               path={ROUTES.landingPage}
               element={<LandingPage />} />

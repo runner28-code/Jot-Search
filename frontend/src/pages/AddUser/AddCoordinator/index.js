@@ -132,7 +132,6 @@ export default function AddCoordinator() {
           placeholder='Email'
           value={formObject.email}
           onChange={handleInputChange}
-// Temp comment
         />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.email}</p>
       </div>

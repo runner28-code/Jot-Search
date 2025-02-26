@@ -30,7 +30,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
         <p className='opacity-70 text-sm'>Select the contact(s) you would like to add from {selectedCompany?.name}</p>
         <ul className='border-y border-grey300 mt-2 w-full'>
           {clientContacts.map((contact, index) => (
-            <li
               key={contact.id}
               className={ 'flex items-center px-s py-s ' + (index < clientContacts.length - 1 ? 'border-b border-grey300' : '') }
               onClick={() => handleContactClick(contact)}
@@ -38,6 +37,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               <input
                 type='checkbox'
                 id={contact.id}
+                name={contact.id}
                 checked={selectedContacts.includes(contact)}
                 className='w-12 h-12 mr-12'
               />

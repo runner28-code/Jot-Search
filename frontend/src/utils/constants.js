@@ -1,5 +1,4 @@
 export const pluralizedTypes = {
-  candidate: 'candidates',
   candidates: 'candidates',
   company: 'companies',
   companies: 'companies',
@@ -62,7 +61,6 @@ export const stateCodeMap = {
   Utah: 'UT',
   Vermont: 'VT',
   Virginia: 'VA',
-// Temp comment
   Washington: 'WA',
   'West Virginia': 'WV',
   Wisconsin: 'WI',

@@ -17,8 +17,8 @@ export default function CompanyResults({ companies }) {
           <CompanyResult 
             company={company} 
             key={company.id} />
-// Temp comment
         )
+// Temp comment
       })}
       <hr className='w-full border-black50% mt-6 mb-2' />
     </>

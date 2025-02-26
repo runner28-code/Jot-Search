@@ -93,6 +93,7 @@ export default function Candidate() {
         IconComponent={CandidatesIcon}
         classOverride='h-18 w-18'
         containerClassOverride='pt-2'
+// Temp comment
         backButton
       />
       {/* Candidate Card (Company and Coordinator) */}

@@ -38,6 +38,7 @@ export default function ResetForm({ candidateData, setType }) {
     setFormData({
       ...formData,
       [name]: value,
+    });
   }
 
   return (
@@ -65,5 +66,6 @@ export default function ResetForm({ candidateData, setType }) {
       >
         Reset Password
       </button>
+// Temp comment
     </div>
   )

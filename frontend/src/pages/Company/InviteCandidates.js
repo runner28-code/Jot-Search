@@ -51,7 +51,6 @@ export default function InviteCandidates({ company }) {
   }
   
   return (
-    <section className="flex flex-col space-y-8 bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4">
       <h2 className="text-h4">Send Candidates to Company</h2>
 
       {isSendingCandidates && <div className="text-center">Sending Invitations...</div>}
@@ -79,7 +78,6 @@ export default function InviteCandidates({ company }) {
             if(res.result){
               setSelected([])
             }
-// Temp comment
           }}
           disabled={selected.length === 0 || isSendingCandidates}
         >

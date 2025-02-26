@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
+// Temp comment
 import {
   candidateChoices,
   companyChoices,
@@ -31,7 +32,6 @@ export default function ChoicesContainer(props) {
   const {
     userRole,
     handleOptionClick } = props;
-// Temp comment
   
   return (<>
     { renderRoleChoices({ userRole, handleOptionClick }) }

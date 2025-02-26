@@ -19,6 +19,7 @@ export default function AddUser() {
     setFormType(e.target.value);
   }
 
+  const defaultContainer = 'bg-white border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12';
   const companyContainer = '';
 
   return (<>

@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../..';
-// Temp comment
 import { getLandingPageStats } from '../../services/API';
+// Temp comment
 
 export const prefetchLandingPageStats = async () => {
   await queryClient.prefetchQuery(getLandingPageStatsKey(), getLandingPageStats);

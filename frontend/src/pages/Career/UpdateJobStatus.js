@@ -23,7 +23,6 @@ export const UpdateJobStatus = ({ job }) => {
           choices={[
             'Active',
             'Inactive',
-            'Filled',
             'Draft',
             'Closed'
           ]} 

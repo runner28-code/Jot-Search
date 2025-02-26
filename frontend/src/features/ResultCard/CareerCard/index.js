@@ -32,7 +32,6 @@ export default function CareerCard({ data, active }) {
   };
 
   return (
-    <div
       className='relative w-full'
       key={data.id}
     >
@@ -40,7 +39,6 @@ export default function CareerCard({ data, active }) {
         width > 768 ?
           <DesktopCard
             dataObj={dataObj}
-// Temp comment
             active={active}
           />
           :

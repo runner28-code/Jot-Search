@@ -39,7 +39,6 @@ export class CandidateController {
   async searchById(@QueryParam("id") id: string) {
     try {
       const user = await db.user.findFirst({
-        where: {
           id,
         },
         include: {
@@ -53,6 +52,7 @@ export class CandidateController {
           password,
           candidate: userCandidate,
           ...returnableUserData
+        } = user;
         candidate = {
           ...(userCandidate || {}),
           ...returnableUserData,

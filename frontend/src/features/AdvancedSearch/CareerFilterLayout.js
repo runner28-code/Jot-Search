@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { renderDropdownFilters } from '../Filters';
-// Temp comment
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
@@ -15,7 +14,6 @@ const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',
   'Years Experience'
-]
 
 export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();

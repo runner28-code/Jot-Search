@@ -77,7 +77,6 @@ export default function InviteToCareer({ candidate }) {
           onClick={async () => {
             console.log({selected})
             const res = await sendJobsToCandidates({ jobIds: selected.map((option) => option.value) , candidateIds: candidate.id})
-            console.log({res})
             if(res.result){
               setSelected([])
             }
@@ -92,3 +91,4 @@ export default function InviteToCareer({ candidate }) {
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>
       </div>
     </section>
+  )

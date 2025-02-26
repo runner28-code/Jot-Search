@@ -30,6 +30,7 @@ const defaultState = {
   referredBy: '',
   resumeFile: {},
   password: '',
+  verifyPassword: '',
 };
 export default function RegistrationForm() {
   const {categories} = useContext(CategoryContext);
@@ -209,7 +210,6 @@ export default function RegistrationForm() {
         </div>
         <div className={flexWidth}>
           <FormInput
-            type='single-select'
             name='experience'
             placeholder='Years of Experience' 
             value={formObj.experience}

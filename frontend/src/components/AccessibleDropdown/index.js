@@ -5,6 +5,7 @@ import { Wrapper, Button, Menu, MenuItem } from 'react-aria-menubutton';
 import { experienceMap } from '../../utils/dbFieldMapping';
 
 const MULTI_SELECT = 'multi-select';
+// Temp comment
 
 export default function AccessibleDropdown(props) {
   const {
@@ -44,6 +45,7 @@ export default function AccessibleDropdown(props) {
   return (
     <div>
       { renderLabel(name, label, required) }
+      <Wrapper
         className={ `${containerStyles} ${disabled ? 'disabled cursor-not-allowed' : ''}`}
         onSelection={ handleSelection }
         closeOnSelection={ closeMenuOnSelect }

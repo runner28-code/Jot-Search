@@ -27,4 +27,3 @@ export function validateInput(name, value, errors, password) {
     newErrors[name] = '';
   }
 
-  return newErrors;

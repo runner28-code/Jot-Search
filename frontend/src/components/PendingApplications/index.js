@@ -11,7 +11,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function PendingApplications () {
   const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
-  const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
     filteredJobs: [],
     loading: true
@@ -21,7 +20,6 @@ export default function PendingApplications () {
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
-// Temp comment
         ...job,
         agoDate: job.appliedDate
       }});
