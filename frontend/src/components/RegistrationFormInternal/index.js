@@ -334,6 +334,7 @@ export default function RegistrationFormInternal(loggedIn) {
           name='roles'
           label={`What roles are ${pronoun} interested in?`}
           required={true}
+          placeholder='Select'
           value={formObj.roles}
           onChange={handleChange}
           choices={formObj.expertise ? roleChoices[formObj.expertise] : []}

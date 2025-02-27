@@ -66,6 +66,5 @@ export default function ResetForm({ candidateData, setType }) {
       >
         Reset Password
       </button>
-// Temp comment
     </div>
   )

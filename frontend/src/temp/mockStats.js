@@ -20,12 +20,12 @@ export const mockCandidateStats = {
       count: 6,
       prevCount: 7
     }
+// Temp comment
   },
   'Invitations': {
     'Today': {
       count: 3,
       prevCount: 2
-// Temp comment
     },
     'Last 7 Days': {
       count: 4,

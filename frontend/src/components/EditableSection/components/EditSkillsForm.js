@@ -24,7 +24,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
     <TypeaheadDropdown
       type='typeahead'
       dropdownType='tags'
-// Temp comment
       name='primarySkills'
       placeholder='Add/Remove Skills'
       choices={skillChoices}

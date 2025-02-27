@@ -87,7 +87,6 @@ export default function DesktopLayout(props) {
               <img
                 src={salaryIcon}
                 className='h-11 mr-5' />
-              <p className='text-textBlack'>{salaryString}</p>
             </div>
           </div>
           {(role === 'candidate' || role === 'guest') && (
@@ -100,7 +99,6 @@ export default function DesktopLayout(props) {
         </div>
       </div>
 
-// Temp comment
       {/* Coordinator Status */}
       {
         role === 'coordinator' && (

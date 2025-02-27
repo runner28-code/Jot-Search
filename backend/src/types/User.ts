@@ -7,7 +7,6 @@ export type User = {
   email: string;
   password?: string;
   role: string;
-  address1?: string;
   address2?: string;
   city?: string;
   state?: string;

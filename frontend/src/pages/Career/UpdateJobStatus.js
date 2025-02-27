@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 import Dropdown from '../../components/UniversalDropdown/index';
@@ -23,6 +24,7 @@ export const UpdateJobStatus = ({ job }) => {
           choices={[
             'Active',
             'Inactive',
+            'Filled',
             'Draft',
             'Closed'
           ]} 

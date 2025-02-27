@@ -76,9 +76,7 @@ const job_filter_exclude_keys = [
     "claims",
     "class",
     "classroom",
-// Temp comment
     "cleaner",
-    "clerk",
     "clinic",
     "clinical",
     "clinician",

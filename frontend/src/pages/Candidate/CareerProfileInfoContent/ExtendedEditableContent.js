@@ -143,6 +143,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
 
         <FormInput
           type='multi-select'
+          name='roles'
           label={`What roles are you interested in?`}
           required={true}
           placeholder='Select'

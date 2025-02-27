@@ -4,7 +4,7 @@ import {
   JsonController,
   Post,
   QueryParam,
-import { getCategoriesByFilter } from "../services/Category";
+} from "routing-controllers";
 import {
   CategoryByIdResponse,
   CategorySearchByFilterResponse,

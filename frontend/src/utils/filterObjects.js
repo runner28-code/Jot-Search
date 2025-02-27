@@ -108,6 +108,7 @@ export const candidateFilterObject = {
   'Skills': [
     ...skills
   ],
+};
 
 // Create default filter state based on filterObject
 const convertedCandidateFilters = {};

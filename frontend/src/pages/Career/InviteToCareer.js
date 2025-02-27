@@ -69,7 +69,6 @@ export default function InviteToCareer({ candidate }) {
         labelledBy="Select"
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
-        hasSelectAll={false}
       />
       <div className='flex space-x-8'>
         <button 
@@ -77,6 +76,7 @@ export default function InviteToCareer({ candidate }) {
           onClick={async () => {
             console.log({selected})
             const res = await sendJobsToCandidates({ jobIds: selected.map((option) => option.value) , candidateIds: candidate.id})
+            console.log({res})
             if(res.result){
               setSelected([])
             }

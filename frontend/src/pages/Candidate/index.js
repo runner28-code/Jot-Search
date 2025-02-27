@@ -93,7 +93,6 @@ export default function Candidate() {
         IconComponent={CandidatesIcon}
         classOverride='h-18 w-18'
         containerClassOverride='pt-2'
-// Temp comment
         backButton
       />
       {/* Candidate Card (Company and Coordinator) */}
@@ -113,7 +112,6 @@ export default function Candidate() {
               fieldName='activelyLooking'
               label={PREFERENCE_ITEMS.activelyLooking}
               onUpdate={handleCandidateUpdate} />
-            <PreferenceItem
               toggled={!!candidateData.willRelocate}
               fieldName='willRelocate'
               label={PREFERENCE_ITEMS.willRelocate}

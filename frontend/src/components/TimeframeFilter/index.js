@@ -26,6 +26,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         handleChoiceClick={handleChoiceClick} 
       />
     )
+  }
 
   // Used to close dropdown when clicking outside of it
   useEffect(() => {

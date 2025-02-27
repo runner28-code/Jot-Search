@@ -32,7 +32,7 @@ export default function CareerCard({ data, active }) {
   };
 
   return (
-      className='relative w-full'
+    <div
       key={data.id}
     >
       {

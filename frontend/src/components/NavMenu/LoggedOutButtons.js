@@ -7,7 +7,6 @@ import * as ROUTES from '../../routes';
 export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
   const { pathname } = useLocation();
   const forceShowPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage ];
-  const linkStyles = forceShowPages.includes(pathname) ? stylesObject.baseLinkStyles : stylesObject.topLinkStyles;
   return (<>
     <Link 
       to={ROUTES.login}
@@ -20,7 +19,6 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
     <hr className={stylesObject.hrStyles} />
     <Link 
       to={ROUTES.signup}
-// Temp comment
       onClick={handleOptionClick}
       className={stylesObject.bottomLinkStyles}
     >
