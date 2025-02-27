@@ -1,5 +1,4 @@
 import fixStringNulls from './fixStringNulls';
-// Temp comment
 import { experienceMap } from './dbFieldMapping';
 import { stateCodeMap } from './constants';
 

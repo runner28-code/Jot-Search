@@ -53,6 +53,7 @@ export default function Login() {
             <Link
               to={ROUTES.signup}
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
+            >
               Sign-up here
             </Link>
           </div>
@@ -69,7 +70,6 @@ export default function Login() {
           />
           <div className='flex justify-between items-center vw-640:items-end mb-22 gap-[10px]'>
             <button
-              className='h-20 vw-640:h-24 bg-royalBlue text-center text-white text-xl tracking-wide px-14 rounded-lg'
               type='submit'
             >
               Login

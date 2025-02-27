@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
-  coordinatorChoices,
   guestChoices
 } from '../SideNav/utils';
 import Choice from './Choice';
@@ -22,6 +21,7 @@ const stylesObject = {
   baseLinkStyles,
   topLinkStyles,
   bottomLinkStyles,
+  iconStyles,
   spanStyles,
   hrStyles
 }

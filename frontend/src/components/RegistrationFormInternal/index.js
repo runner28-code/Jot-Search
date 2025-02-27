@@ -376,6 +376,7 @@ export default function RegistrationFormInternal(loggedIn) {
           choices={['Any', 'Full-Time', 'Contract']}
           error={errors.includes('employmentPreference')}
         />
+// Temp comment
         <FormInput
           type='typeahead'
           dropdownType='tags'
@@ -471,6 +472,7 @@ export default function RegistrationFormInternal(loggedIn) {
             >
               Terms and Conditions
             </a>
+          </p>
         </div>
       </div>
       { renderErrorBlock(errorBlock) }

@@ -96,7 +96,6 @@ class AuthService {
 
   toggleSavedJob(jobID, action) {
     const savedJobs = this.getSavedJobIDs();
-    if ( action === 'save' ) {
       savedJobs.push(jobID);
     } else {
       savedJobs.splice(savedJobs.indexOf(jobID), 1);

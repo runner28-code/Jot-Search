@@ -40,7 +40,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     <div
       ref={menuRef}
       className='relative'>
-// Temp comment
       <div
         id='title-wrapper'
         onClick={() => setShowDropdown(showDropdown => !showDropdown)}

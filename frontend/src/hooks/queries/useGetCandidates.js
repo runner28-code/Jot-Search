@@ -1,3 +1,4 @@
+import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../..';
 import { getCandidatesFull } from '../../services/API';
 
@@ -18,6 +19,7 @@ export const useGetCandidates = ({ count, page, fields, filtersArr, enabled = tr
   formatFilters(filtersArr)
   const { data, error, isLoading } = useQuery(
     getCandidatesKey({filtersArr, count, page, fields}),
+// Temp comment
     () => getCandidatesFull(filtersArr, count, page, fields),
     { enabled }
   );

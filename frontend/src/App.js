@@ -21,7 +21,6 @@ function App() {
 
   return (
     <div className="App overflow-hidden">
-// Temp comment
       <NavBar />
       <main className='bg-lightGrey pt-30 vw-1280:pt-44 vw-1280:flex'>
         <SideNav userType={userRole} />
@@ -53,7 +52,6 @@ function App() {
               path={`${ROUTES.companies}/:id`}
               element={<Company />} />
             <Route
-              path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />
             <Route
               path={ROUTES.resetPassword}

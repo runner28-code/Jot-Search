@@ -63,6 +63,7 @@ export const register = async (data: User) => {
   try {
     console.log("registering...");
     const validate = validateUser(data);
+    if (validate) {
       console.log("failed validation", validate);
       return { result: false, error: validate };
     }

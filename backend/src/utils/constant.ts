@@ -56,6 +56,7 @@ const job_filter_exclude_keys = [
   "camp",
   "campaign",
   "cancer",
+  "canvasser",
   "care",
   "care coordinator",
   "career coach",

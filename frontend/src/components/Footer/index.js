@@ -133,7 +133,6 @@ export default function Footer() {
       className='flex flex-col'
     >
       {/* Social Links */}
-// Temp comment
       <div className='bg-midGrey flex justify-center items-center'>
         <div className='flex flex-col vw-900:flex-row justify-center items-center gap-[36px] vw-900:gap-[96px] w-full px-24 py-24'>
           {/* Dicover the InTulsa Network */}
@@ -179,6 +178,7 @@ export default function Footer() {
       {/* Copyright / Privacy Policy / TOS */}
       <div className='flex justify-center items-center bg-legal-bg h-28'>
         {/* TODO: Change anchor tag links to correct Privacy Policy and TOS links */}
+// Temp comment
         <div className='text-grey w-1/2 text-xs text-center'>
           <span>© 2022 Talent inTulsa initiatives, LLC. All rights reserved | </span>
           <a

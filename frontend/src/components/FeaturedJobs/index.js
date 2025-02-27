@@ -40,6 +40,7 @@ export default function FeaturedJobs() {
       { renderColorShapes() }
       <h2 className={ width >= 990 ? titleStyles : titleStylesMoible }>Featured Opportunities</h2>
       <div className='flex mt-12 flex-wrap'>
+        {
           isLoading ?
             <LoadingSpinner />
             :
@@ -50,6 +51,7 @@ export default function FeaturedJobs() {
                   to={`${ROUTES.careers}/${career.id}`}
                   key={index}
                   className={ width >= 990 ? linkStyles : linkStylesMobile }
+// Temp comment
                 >
                   <div className={ width >= 990 ? cardStyles : cardStylesMobile }>
                     { width >= 990 ? <RenderImage image={career.logo} /> : <RenderImageMobile image={career.logo} />}

@@ -93,7 +93,6 @@ export default function AddCoordinator() {
   const buttonString = 'Create Coordinator';
   return (
     <form
-      className='flex flex-row flex-wrap items-center w-full vw-900:px-15 py-8 3vw-1280:ml-10'
       onSubmit={handleSubmit}
     >
       <div className={inputContainer}>
@@ -133,6 +132,7 @@ export default function AddCoordinator() {
           value={formObject.email}
           onChange={handleInputChange}
         />
+        <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.email}</p>
       </div>
       <div className={inputContainer + ' hidden vw-900:flex'}></div>
       <div className={inputContainer}>

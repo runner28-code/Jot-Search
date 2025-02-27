@@ -62,6 +62,7 @@ export default function NavSearchMobile({ placeholder }) {
 
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
+// Temp comment
     setSearchTerm( searchTerm );
     setForceHidden( false );
   }
@@ -82,6 +83,7 @@ export default function NavSearchMobile({ placeholder }) {
 
   const combinedResults = {
     jobs: jobs || [],
+    companies: companies || [],
     candidates: candidates || [],
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
     total: totalJobs + totalCompanies + totalCandidates,

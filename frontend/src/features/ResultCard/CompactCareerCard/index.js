@@ -1,6 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
-import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
