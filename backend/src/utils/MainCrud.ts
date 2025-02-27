@@ -23,3 +23,4 @@ export const saveApplication = async (job: string, candidate: string) => {
               id: job,
             },
           }
+        },

@@ -18,7 +18,6 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
         return (
           <option 
             key={ choice }
-            value={ choice }
             className={ optionStyles }
           >
             { choice }

@@ -71,6 +71,7 @@ export default function Stats({ userType }) {
           <TimeframeFilter
             choices={statFilterChoices}
             timeframe={timeframe}
+            handleFilterChange={handleFilterChange}
           />
         </div>
       </div>

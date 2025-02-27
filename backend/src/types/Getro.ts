@@ -16,3 +16,4 @@ export type Company = {
   scraping_enabled?: string;
   slug?: string;
   status?: string;
+  topics?: string;

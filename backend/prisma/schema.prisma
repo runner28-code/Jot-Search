@@ -81,7 +81,6 @@ model Lead {
   email3                String?
   fax                   String?
   fax2                  String?
-  fax3                  String?
   firstName             String?
   isAnonymized          Boolean?
   isDayLightSavingsTime Boolean?
@@ -130,3 +129,6 @@ model ClientContact {
   address_city       String?
   address_state      String?
   address_zip        String?
+  address_country_id Int?
+  category           String?
+  certifications     String?

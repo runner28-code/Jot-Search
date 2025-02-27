@@ -24,6 +24,7 @@ export default function Auth() {
       <Routes>
         <Route
           path='/'
+// Temp comment
           element={<Dashboard />} 
         />
         <Route

@@ -1,3 +1,4 @@
+// Temp comment
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../..';
 import { getSavedJobs } from '../../services/API';
@@ -10,5 +11,6 @@ export const useGetSavedJobs = ({ count, page, userId, enabled = true }) => {
     getJobsKey({userId, count, page}),
     () => getSavedJobs(userId, count, page),
     { enabled }
+  );
 
   return { savedJobs: data, total: data?.total || 0, error, isLoading };

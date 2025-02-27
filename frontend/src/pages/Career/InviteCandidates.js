@@ -30,7 +30,6 @@ export default function InviteCandidates({ job }) {
 
   const [selected, setSelected] = useState([]);
   const deleteItem = (e, value) => {
-// Temp comment
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }
@@ -60,6 +59,7 @@ export default function InviteCandidates({ job }) {
 
       {isSendingJob && <div className="text-center">Sending Invitations...</div>}
       {successfullySentJob && <div className="text-center">Invitations Sent!</div>}
+// Temp comment
 
       <SelectedValues />
 

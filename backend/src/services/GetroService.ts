@@ -16,6 +16,7 @@ export class GetroService {
     public static async getClient() {
         if (GetroService.client === null) {
             GetroService.client = new GetroService();
+            await GetroService.client.getNetworkID();
         }
         return GetroService.client;
     }
@@ -48,3 +49,4 @@ export class GetroService {
             if (res.status === 200) {
                 const { items } = res.data;
                 if (items.length > 0) {
+                    this.networkId = items[0].id;

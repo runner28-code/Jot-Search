@@ -93,6 +93,7 @@ export default function AddCoordinator() {
   const buttonString = 'Create Coordinator';
   return (
     <form
+      className='flex flex-row flex-wrap items-center w-full vw-900:px-15 py-8 3vw-1280:ml-10'
       onSubmit={handleSubmit}
     >
       <div className={inputContainer}>

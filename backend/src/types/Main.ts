@@ -4,3 +4,4 @@ export type Application = {
     job: string;
     appliedOn: string;
 }
+

@@ -9,7 +9,6 @@ import {  calculatePostingAge } from '../../../utils/formatFunctions';
 
 export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOverride = null, agoText = 'Saved', selectableProps = null }) {
   const postingAge = calculatePostingAge(agoDate);
-
   return (
     <div
       className='relative'
@@ -32,7 +31,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.name}</h6>
           </div>
 
-// Temp comment
           {/* Posting age */}
           <div className='border-1 border-t border-gray-300 py-4 mt-4 justify-self-end'>
             <p className='text-grey-700 opacity-50'>{agoText} {postingAge}</p>

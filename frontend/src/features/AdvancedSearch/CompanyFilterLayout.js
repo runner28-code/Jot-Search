@@ -4,11 +4,9 @@ import FilterSearch from '../../components/FilterSearch';
 export default function CompanyFilterLayout(props) {
   const {
     searchTerm,
-// Temp comment
     setSearchTerm,
     handleSearchClick,
     clearFilters,
-  } = props;
 
   return (
     <div className='flex flex-col gap-xxl-4'>

@@ -1,6 +1,5 @@
 export const expertises = [
   'Finance',
-  'Marketing',
   'Operations',
   'Other',
   'Software & Engineering',
@@ -67,3 +66,5 @@ export const roles = {
   ],
 };
 
+export const skills = [
+  '.NET',

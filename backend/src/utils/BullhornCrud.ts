@@ -22,6 +22,7 @@ export const saveCompanies = async (companies: any[]) => {
   //   }
   // });
   // for (const item of result) {
+  //   await db.company.update({
   //     where: {
   //       id: item.id,
   //     },
@@ -54,3 +55,5 @@ export const saveCompanies = async (companies: any[]) => {
         });
         if (existing) {
           console.log(`Company with ID: ${company.id} exists`);
+          return -1;
+        }

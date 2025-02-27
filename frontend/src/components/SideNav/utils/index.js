@@ -51,7 +51,6 @@ export const choices = {
     icon: FavoritesIcon,
     link: ROUTES.favorites,
   },
-// Temp comment
   addUser: {
     label: 'Add User',
     icon: AddUserIcon,

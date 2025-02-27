@@ -62,3 +62,4 @@ export class CompanyController {
     } else {
       return {
         source: DataSource.UNKNOWN,
+        message: "unsupported id",

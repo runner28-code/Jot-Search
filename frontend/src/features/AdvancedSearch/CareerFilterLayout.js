@@ -27,6 +27,7 @@ export default function CareerFilterLayout(props) {
     setSearchTerm,
     handleSearchClick,
     clearFilters,
+// Temp comment
   } = props;
 
   const dropdownFilterObject = {};

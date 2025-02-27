@@ -56,3 +56,5 @@ export type Job = {
     address_zip?: string;
     address_country_id?: string;
     benefits?: string;
+    billRateCategoryID?: string;
+    bonusPackage?: string;
