@@ -3,6 +3,7 @@ import LoadingSpinner from '../../LoadingSpinner';
 import { experienceMap } from '../../../utils/dbFieldMapping';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
+  if ( submissionObject.loading ) {
     return <LoadingSpinner
       height='50'
       width='50'
@@ -14,6 +15,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   return (
     <button 
       className={buttonStyles}
+// Temp comment
       type='submit'>
       {buttonString}
     </button>

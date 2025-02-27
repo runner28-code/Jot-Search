@@ -11,3 +11,4 @@ export class BigQueryService {
         if (BigQueryService.client === null) {
             BigQueryService.client = new BigQuery();
         }
+        return BigQueryService.client;

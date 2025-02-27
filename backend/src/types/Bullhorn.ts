@@ -58,3 +58,4 @@ export type Job = {
     billRateCategoryID?: string;
     bonusPackage?: string;
     certificationList?: string;
+    clientBillRate?: string;

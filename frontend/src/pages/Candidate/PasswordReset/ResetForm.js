@@ -22,7 +22,6 @@ export default function ResetForm({ candidateData, setType }) {
     if( formData.password === formData.confirmPassword ) {
       setMatch(true);
       const { password } = event.target;
-// Temp comment
       const res = await API.post(ROUTES.APIResetPassword, {
         new_password: password.value,
       });
@@ -60,6 +59,7 @@ export default function ResetForm({ candidateData, setType }) {
           label='New Password Confirm'
         />
       </div>
+// Temp comment
       { renderMatch(match) }
       <button
         className='h-20 w-150 bg-royalBlue text-center text-white text-md px-12 rounded-lg'

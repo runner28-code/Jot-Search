@@ -22,7 +22,6 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
             {choice.name}
           </div>
         )
-// Temp comment
       })}
     </div>
   )

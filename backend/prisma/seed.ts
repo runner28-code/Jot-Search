@@ -36,3 +36,5 @@ async function seedJobs() {
         datasource: Datasource.main as any,
         status: "active",
         categoryId: (await db.category.findFirst({
+          where: { name: "Software & Engineering" },
+        }))!.id,

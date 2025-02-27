@@ -16,3 +16,4 @@ export type User = {
   avatar?: string;
   linkedin?: string;
   skills?: string;
+  category?: string;

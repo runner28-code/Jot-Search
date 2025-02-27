@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 
 export default function MobileHeader(props) {
   const {
@@ -27,4 +26,5 @@ export default function MobileHeader(props) {
       <h1 className='font-spaceGrotesk font-medium text-lg text-lightGrey'>
         { headerText }
       </h1> 
+    </div>
   );

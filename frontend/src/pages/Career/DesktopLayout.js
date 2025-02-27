@@ -22,7 +22,6 @@ export default function DesktopLayout(props) {
     categoryString,
     addressString,
     salaryString,
-// Temp comment
     postingAge,
     role,
   } = props.data;

@@ -40,7 +40,6 @@ function renderChosen(currentChosen, handleRemove) {
       key={choice.id}
       className='bg-royalBlue text-white py-2 px-4 rounded-lg mr-2 cursor-pointer hover:bg-rose-500'
       onClick={() => handleRemove(choice.id)}
-// Temp comment
     >
       {choice.company + ' - ' + choice.title}
     </div>

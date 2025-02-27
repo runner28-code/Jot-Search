@@ -70,7 +70,6 @@ export default function Candidate() {
     let updateResponse = null;
     if (candidateData.sourceTable === 'Candidate') {
       const convertedCandidateObject = convertUserToCandidate(updateObject);
-// Temp comment
       updateResponse = await updateCandidate(convertedCandidateObject, id);
     } else {
       updateResponse = await updateUser(formattedUpdateObject, id);

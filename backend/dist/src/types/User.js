@@ -6,3 +6,4 @@ exports.IUSER = {
     externalId: "",
     firstname: "",
     lastname: "",
+    gender: "",

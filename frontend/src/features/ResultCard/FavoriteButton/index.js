@@ -1,4 +1,3 @@
-// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import favoriteIconOutline from '../../../assets/icons/Favorite-outline.svg';
@@ -13,6 +12,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const role = AuthService.getUserRole();
   if ( !AuthService.loggedIn() || role === 'coordinator' ) {
     return null;
+// Temp comment
   }
   // Return conditions
   const invalidType = !VALID_TYPES.includes(type);

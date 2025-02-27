@@ -11,3 +11,4 @@
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
+        },

@@ -212,7 +212,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             label='LinkedIn Profile link with https:// prefix'
             disabled={disabled}
           />
-        </div>
 
         <div className="flex space-x-4 items-center justify-start">
           {(formData.resume && !editMode) && (

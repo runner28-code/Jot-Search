@@ -76,3 +76,6 @@ export class JobController {
               in: job?.company?.companyURL
             }
           }
+        })
+      }
+

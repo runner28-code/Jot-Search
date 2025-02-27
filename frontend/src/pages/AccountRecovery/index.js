@@ -37,7 +37,6 @@ export default function AccountRecovery() {
 
 
   return (
-// Temp comment
     <section className='-mt-18 flex flex-col items-center pb-14 bg-login-page-hero bg-no-repeat bg-top bg-[length:auto_34rem] vw-640:bg-[length:auto_48rem] vw-900:bg-[length:100%_auto]'>
       <div className='w-full flex flex-col items-center'>
         {/* Shapes */}
@@ -85,7 +84,6 @@ export default function AccountRecovery() {
         <span>Need Help? Just ask </span>
         <a
           href='mailto:help@intulsa.com'
-          className='text-sm vw-640:text-ml text-royalBlue underline'
         >
           help@intulsa.com
         </a>

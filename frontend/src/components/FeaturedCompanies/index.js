@@ -43,6 +43,5 @@ export default function FeaturedCompanies() {
           Browse All
         </Link>
       </div>
-// Temp comment
     </div>
   )

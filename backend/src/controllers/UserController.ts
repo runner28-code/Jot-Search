@@ -40,3 +40,4 @@ export class UserController {
   @Post("/login")
   async login(@Body() body: { email: string; password: string }) {
     const { email, password } = body;
+    const { result, error, ...data } = await login(email, password);

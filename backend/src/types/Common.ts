@@ -23,3 +23,4 @@ export enum Tables {
   JOINED_CANDIDATES = "candidates_joined",
   CATEGORIES = "Categories",
 }
+

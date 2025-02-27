@@ -11,9 +11,9 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function PendingApplications () {
   const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
-// Temp comment
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
+// Temp comment
     filteredJobs: [],
     loading: true
   });

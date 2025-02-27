@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
@@ -77,7 +78,6 @@ export default function Login() {
             </button>
             <Link
               to={ROUTES.accountRecovery}
-// Temp comment
               className='text-royalBlue text-sm vw-640:text-ml underline'>
               Forgot Password?
             </Link>

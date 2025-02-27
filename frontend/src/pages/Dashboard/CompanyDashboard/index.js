@@ -13,7 +13,6 @@ export default function CompanyDashboard({userType}) {
     <>
       <PageHeader
         headerText={profile.firstname + ' Dashboard'}
-// Temp comment
         icon={gaugeIcon}
       />
       <Stats
@@ -23,5 +22,4 @@ export default function CompanyDashboard({userType}) {
       <AssistanceCard />
       <h2 className='mt-22 font-spaceGrotesk font-semibold text-h5 text-charcoal'>Search</h2>
       <AdvancedSearch />
-    </>
   )
