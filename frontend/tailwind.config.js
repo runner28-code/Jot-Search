@@ -17,7 +17,6 @@ module.exports = {
             transform: 'rotate(0deg)'
           },
           to: {
-// Temp comment
             transform: 'rotate(180deg)'
           },
         },
@@ -28,7 +27,6 @@ module.exports = {
           to: {
             transform: 'rotate(0deg)'
           },
-        },
       },
       boxShadow: {
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',

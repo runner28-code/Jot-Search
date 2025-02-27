@@ -107,6 +107,7 @@ export default function AddCoordinator() {
           value={formObject.firstname}
           onChange={handleInputChange}
         />
+        <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.firstname}</p>
       </div>
       <div className={inputContainer}>
         {/* Last Name */}
@@ -132,7 +133,6 @@ export default function AddCoordinator() {
           value={formObject.email}
           onChange={handleInputChange}
         />
-        <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.email}</p>
       </div>
       <div className={inputContainer + ' hidden vw-900:flex'}></div>
       <div className={inputContainer}>

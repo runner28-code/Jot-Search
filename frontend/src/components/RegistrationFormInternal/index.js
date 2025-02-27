@@ -471,7 +471,6 @@ export default function RegistrationFormInternal(loggedIn) {
             >
               Terms and Conditions
             </a>
-          </p>
         </div>
       </div>
       { renderErrorBlock(errorBlock) }

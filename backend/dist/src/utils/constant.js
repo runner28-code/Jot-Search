@@ -23,6 +23,7 @@ const job_filter_exclude_keys = [
     "aquatics",
     "art",
     "assembler",
+// Temp comment
     "assembly technician",
     "asset",
     "athlete",
@@ -77,6 +78,7 @@ const job_filter_exclude_keys = [
     "class",
     "classroom",
     "cleaner",
+    "clerk",
     "clinic",
     "clinical",
     "clinician",

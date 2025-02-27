@@ -21,6 +21,7 @@ export const UpdateJobFeatured = ({ job }) => {
   return (
     <div className='flex flex-col'>
       {isLoading && <p>Loading...</p>}
+      {isSuccess && <p>Success!</p>}
       
       <div className='flex space-x-16'>
         <button
@@ -32,6 +33,7 @@ export const UpdateJobFeatured = ({ job }) => {
           onClick={async() => {
             const { result } = await saveJob({ featured: !toggled, id: job.id })
 
+// Temp comment
             // TODO: Replace with react-query refetch
             if(result) {
               window.location.reload()

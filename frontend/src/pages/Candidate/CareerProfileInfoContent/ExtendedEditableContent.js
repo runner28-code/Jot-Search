@@ -184,6 +184,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           onChange={handleChange}
           choices={skillChoices || []}
           disabled={disabled}
+// Temp comment
         />
 
         <div className='pt-16'>

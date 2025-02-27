@@ -5,6 +5,7 @@ import ResetForm from './ResetForm';
 
 export default function PasswordReset({role, candidateData}) {
   if ( role === 'company' || candidateData.sourceTable !== 'User' ) {
+// Temp comment
     return null;
   }
   const [response, setResponse] = useState('');
@@ -17,6 +18,7 @@ export default function PasswordReset({role, candidateData}) {
 
   function renderResponse () {
     const successStyle = 'mb-4 text-success';
+    const errorStyle = 'mb-4 text-error';
     if( response ) {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )
     }

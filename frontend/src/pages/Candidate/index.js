@@ -78,7 +78,6 @@ export default function Candidate() {
       setCurrentUser({...updateResponse.data})
     }
     if (updateResponse.result === false) {
-      console.log('Error updating candidate: ', updateResponse.error);
     }
   }
 
@@ -112,6 +111,7 @@ export default function Candidate() {
               fieldName='activelyLooking'
               label={PREFERENCE_ITEMS.activelyLooking}
               onUpdate={handleCandidateUpdate} />
+            <PreferenceItem
               toggled={!!candidateData.willRelocate}
               fieldName='willRelocate'
               label={PREFERENCE_ITEMS.willRelocate}

@@ -68,6 +68,7 @@ export default function NavSearchMobile({ placeholder }) {
 
   /* Clear state on page change */
   useEffect( () => {
+    setSearchTerm('');
   }, [location]);
 
   /* Close dropdown on any outside clicks */
@@ -81,7 +82,6 @@ export default function NavSearchMobile({ placeholder }) {
 
   const combinedResults = {
     jobs: jobs || [],
-    companies: companies || [],
     candidates: candidates || [],
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
     total: totalJobs + totalCompanies + totalCandidates,

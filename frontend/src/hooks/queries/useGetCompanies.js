@@ -1,5 +1,3 @@
-import { useQuery } from '@tanstack/react-query';
-// Temp comment
 import { queryClient } from '../..';
 import { getCompaniesFull } from '../../services/API';
 

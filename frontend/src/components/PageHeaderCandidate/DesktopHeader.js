@@ -21,7 +21,6 @@ export default function DesktopHeader(props) {
   let containerClasses = 'mb-10 pt-18 ';
   if ( containerClassOverride ) containerClasses += containerClassOverride;
   
-// Temp comment
   return (
     <div className={containerClasses}>
       <div className='flex gap-8 items-center'>
@@ -41,6 +40,7 @@ export default function DesktopHeader(props) {
         { dataSource && (
           <SourceIdentifier type={dataSource} />
         )}
+// Temp comment
       </div>
       { backButton && (
         <button

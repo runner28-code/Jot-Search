@@ -18,6 +18,7 @@ const mockJobsData = [
   {
     id: 'b25cf8b7-e171-4049-8e67-701b7b7b81c3',
     title: 'Software Engineer',
+// Temp comment
     company: 'Kum N Go',
     clientCorporationID: '3b7bf6bc-16de-4014-92d6-d1cbee1bc4d5',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/kumgo_2_eqbzbl.webp',
@@ -67,6 +68,7 @@ const mockJobsData = [
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
   },
+  {
     id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',
     title: 'Lead Instructor',
     company: 'Paycom', // ! Not in schema yet
