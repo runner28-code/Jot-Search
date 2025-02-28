@@ -10,6 +10,7 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
   }
   const viewAllHref = `/candidates/history/${id}`;
   return (<>
+    <section className='mb-24'>
       <h4 className={headerStyles}>History</h4>
       {historyArr.map(historyObj => (
         <HistoryItem 

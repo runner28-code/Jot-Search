@@ -10,6 +10,7 @@ const job_filter_exclude_keys = [
     "adjudication",
     "admissions",
     "admitting",
+    "adult",
     "advocacy",
     "advocate",
     "aircraft",
@@ -62,6 +63,7 @@ const job_filter_exclude_keys = [
     "care coordinator",
     "career coach",
     "career navigator",
+// Temp comment
     "carpenter",
     "case management",
     "case manager",
@@ -90,3 +92,5 @@ const job_filter_exclude_keys = [
     "construction",
     "controller",
     "cook",
+    "copywriter",
+    "corporate card",

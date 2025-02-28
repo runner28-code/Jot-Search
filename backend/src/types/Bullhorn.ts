@@ -34,7 +34,6 @@ export type Company = {
     name?: string,
     notes?: string,
     numEmployees?: string,
-    numOffices?: string,
     ownerShip?: string,
     phone?: string,
     revenue?: string,
@@ -47,6 +46,7 @@ export type Company = {
 };
 
 export type Job = {
+    id: string;
     address_address1?: string;
     address_address2?: string;
     address_city?: string;
@@ -60,3 +60,4 @@ export type Job = {
     clientBillRate?: string;
     clientContact?: string;
     clientCorporationID?: string;
+    date_added?: string;

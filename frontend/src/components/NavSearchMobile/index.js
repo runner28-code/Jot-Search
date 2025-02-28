@@ -5,7 +5,6 @@ import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
-// Temp comment
 import { VscClose as CloseIcon } from 'react-icons/vsc';
 import searchGray from '../../assets/images/search-gray.svg';
 import searchWhite from '../../assets/images/search-white.webp';
@@ -73,6 +72,7 @@ export default function NavSearchMobile({ placeholder }) {
   }, [location]);
 
   /* Close dropdown on any outside clicks */
+// Temp comment
   const closeDropdown = () => {
     setForceHidden(true);
   };

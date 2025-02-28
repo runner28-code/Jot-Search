@@ -14,3 +14,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
             className={linkStyles + linkColorHeader} instead of className={linkStyles + ' ' + linkColorHeader}
             ```
+- No multi-line ternary operators

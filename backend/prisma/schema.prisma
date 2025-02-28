@@ -139,3 +139,6 @@ model ClientContact {
   dateLastModified   DateTime?
   dateLastVisit      DateTime?
   description        String?
+  desiredCategories  String?
+  desiredSkills      String?
+  desiredSpecialties String?

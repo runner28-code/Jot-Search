@@ -114,7 +114,6 @@ export default function AddCoordinator() {
         <label className={labelStyles}>Last Name</label>
         <input
           type='text'
-// Temp comment
           className={submissionObject.errors.lastname ? invalidInputStyles : validInputStyles += addInputStyles}
           name='lastname'
           placeholder='Last Name'
@@ -152,6 +151,7 @@ export default function AddCoordinator() {
       </div>
       <div className={inputContainer}>
         {/* Verify Password */}
+// Temp comment
         <label className={labelStyles}>Verify Password</label>
         <input
           type='password'

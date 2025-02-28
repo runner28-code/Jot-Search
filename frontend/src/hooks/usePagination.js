@@ -8,7 +8,6 @@ export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
   const endCount = baseEndCount > total ? total : baseEndCount;
  
   const nextPage = () => setPage(prevPage => {
-// Temp comment
     return prevPage === totalPages ? prevPage : prevPage + 1;
   });
   const prevPage = () => setPage(prevPage => {

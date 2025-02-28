@@ -118,6 +118,7 @@ export class BullhornService {
   async getAccessToken(): Promise<boolean> {
     console.log("\n***** getAccessToken *****");
     const query = queryString.stringify(
+      {
         grant_type: "authorization_code",
         client_id: config.bullhornClientID,
         client_secret: config.bullhornClientSecret,
@@ -183,3 +184,8 @@ export class BullhornService {
           },
           { encode: false }
         );
+        const url = `${this.api_base_url}/login?${query}`;
+        const res = await axios.post(url);
+        if (res.status === 200) {
+          const { BhRestToken, restUrl } = res.data;
+          this.BhRestToken = BhRestToken;

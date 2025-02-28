@@ -7,7 +7,6 @@ import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 
 const ITEMS_PER_PAGE = 5;
 
-// Temp comment
 export default function OtherCareers({ companyId, companyName, currentCareerId }) {
   const [page, setPage] = useState(1);
   const filtersArr = [
@@ -18,7 +17,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     {
       key: 'companyId',
       value: companyId
-    }
   ];
 
   const { careers, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});

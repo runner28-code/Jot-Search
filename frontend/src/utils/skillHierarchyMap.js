@@ -63,7 +63,6 @@ export const roles = {
   'Sales & Biz Dev': [
     'Customer Success & Account Management',
     'Sales & BizDev',
-    'Sales Leaderships & Management'
   ],
 };
 
@@ -73,3 +72,4 @@ export const skills = [
   'Account Reconciliation',
   'Accounting',
   'Accounts Payable',
+  'Accounts Receivable',

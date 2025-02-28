@@ -42,6 +42,7 @@ export const defaultState = {
 }
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
+  function handleChange(e) {
     setUseExistingResume(e.target.checked);
   }
   return (

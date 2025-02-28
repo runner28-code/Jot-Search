@@ -184,6 +184,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           onChange={handleChange}
           choices={skillChoices || []}
           disabled={disabled}
+        />
 
         <div className='pt-16'>
           <FormInput

@@ -67,6 +67,7 @@ export const candidateFilterObject = {
   ],
   'Open to Relocation': [
     'Any',
+    'Yes',
     'No'
   ],
   'Remote Availability': [

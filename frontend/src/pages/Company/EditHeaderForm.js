@@ -53,7 +53,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           />
         </div>
       </div>
-      <div className='grow font-bold'>
         {/* First Name */}
         <div className='mb-6'>
           <label 
@@ -112,6 +111,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             id='companyName' 
             name='companyName' 
             value={formData.companyName}
+            className={inputStyles + 'text-h6 w-full'} />
         </div>
         {/* Address */}
         <div className='mb-10'>

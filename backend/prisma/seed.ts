@@ -39,3 +39,4 @@ async function seedJobs() {
           where: { name: "Software & Engineering" },
         }))!.id,
       },
+      {

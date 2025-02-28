@@ -34,7 +34,6 @@ export type Company = {
     invoiceFormat?: string,
     name?: string,
     notes?: string,
-    numEmployees?: string,
     numOffices?: string,
     ownerShip?: string,
     phone?: string,
@@ -47,6 +46,7 @@ export type Company = {
     datedAdded?: string,
 };
 
+export type Job = {
     id: string;
     address_address1?: string;
     address_address2?: string;
@@ -60,3 +60,4 @@ export type Company = {
     certificationList?: string;
     clientBillRate?: string;
     clientContact?: string;
+    clientCorporationID?: string;

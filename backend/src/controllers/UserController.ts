@@ -42,3 +42,4 @@ export class UserController {
     const { email, password } = body;
     const { result, error, ...data } = await login(email, password);
 
+    if (result) {

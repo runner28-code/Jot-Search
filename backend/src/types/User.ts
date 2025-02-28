@@ -17,3 +17,4 @@ export type User = {
   linkedin?: string;
   skills?: string;
   category?: string;
+  categoryId?: string | number;

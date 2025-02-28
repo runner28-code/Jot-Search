@@ -13,7 +13,6 @@ export const openJobStatuses = [
   'active',
   'Passive',
   'passive'
-// Temp comment
 ];
 
 export const stateCodeMap = {
@@ -23,6 +22,7 @@ export const stateCodeMap = {
   Arkansas: 'AR',
   California: 'CA',
   Colorado: 'CO',
+// Temp comment
   Connecticut: 'CT',
   Delaware: 'DE',
   Florida: 'FL',

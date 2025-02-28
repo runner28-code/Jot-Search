@@ -10,3 +10,4 @@ export const disabilityMap = {
 export const veteranStatusMap = {
   U: 'I prefer not to say',
   A: 'I have applied for membership in the uniformed service',
+  R: 'I am present memeber of the uniformed service',

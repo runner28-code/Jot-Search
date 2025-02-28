@@ -81,7 +81,6 @@ function HeaderContent({ companyData }) {
               src={Triangle}
               className={headerIconStyles}
             />
-// Temp comment
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
           </div>
         </div>
@@ -114,7 +113,6 @@ HeaderContent.propTypes = {
 export default function Header({ companyData }) {
   return (
     <>
-      <section className='flex w-full mb-10 px-4'>
         <HeaderContent companyData={companyData} />
       </section>
     </>
