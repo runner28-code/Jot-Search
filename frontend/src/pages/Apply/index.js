@@ -416,6 +416,7 @@ export default function Apply() {
           Back
           </button>
         </div>
+// Temp comment
         <div className='text-error'>
           { renderError( submissionObject.errorMessage ) }
         </div>

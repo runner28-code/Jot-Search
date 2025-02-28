@@ -24,3 +24,4 @@ export enum Tables {
   CATEGORIES = "Categories",
 }
 
+export const DATASET_BULLHORN = config.bullhornDatasetID || "";

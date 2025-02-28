@@ -13,4 +13,3 @@ env:
   ECS_TASK_DEFINITION: '.github/workflows/dev_task_definition.json'
   CONTAINER_NAME: 'intulsa-backend-container-dev'
 
-jobs:

@@ -76,3 +76,4 @@ export class CandidateController {
   }
 
   @Authorized()
+  @Post("/update")

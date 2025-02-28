@@ -114,6 +114,7 @@ export default function AddCoordinator() {
         <label className={labelStyles}>Last Name</label>
         <input
           type='text'
+// Temp comment
           className={submissionObject.errors.lastname ? invalidInputStyles : validInputStyles += addInputStyles}
           name='lastname'
           placeholder='Last Name'

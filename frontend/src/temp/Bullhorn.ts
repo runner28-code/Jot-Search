@@ -47,7 +47,6 @@ export type Company = {
     datedAdded?: string,
 };
 
-export type Job = {
     id: string;
     address_address1?: string;
     address_address2?: string;
@@ -60,3 +59,4 @@ export type Job = {
     bonusPackage?: string;
     certificationList?: string;
     clientBillRate?: string;
+    clientContact?: string;

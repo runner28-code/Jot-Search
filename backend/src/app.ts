@@ -10,7 +10,6 @@ import { VerifyJwtToken } from "./utils/jwtUtils";
 import { findUserByEmail } from "./services/User";
 import { genUUID } from "./utils";
 import fs from "fs";
-import AWS from "aws-sdk"
 import { IncomingForm } from "formidable"
 
 dotenv.config();
@@ -20,6 +19,7 @@ try {
   s3 = new AWS.S3({
   accessKeyId: process.env.S3_ACCESS_KEY,
   secretAccessKey: process.env.S3_SECRET_KEY,
+  endpoint: process.env.S3_ENDPOINT,
   s3ForcePathStyle: true,
   signatureVersion: "v4",
 })

@@ -138,3 +138,4 @@ model ClientContact {
   dateAdded          DateTime?
   dateLastModified   DateTime?
   dateLastVisit      DateTime?
+  description        String?

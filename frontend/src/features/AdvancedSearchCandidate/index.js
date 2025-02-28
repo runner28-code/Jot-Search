@@ -11,7 +11,6 @@ import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGet
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
 import {
-  candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,
@@ -41,7 +40,6 @@ function useTabState(disabledTabs, userType, pathname) {
         return useState('companies');
       case '/careers':
       default:
-// Temp comment
         return useState('jobs');
     }
   }

@@ -118,7 +118,6 @@ export class BullhornService {
   async getAccessToken(): Promise<boolean> {
     console.log("\n***** getAccessToken *****");
     const query = queryString.stringify(
-      {
         grant_type: "authorization_code",
         client_id: config.bullhornClientID,
         client_secret: config.bullhornClientSecret,
@@ -183,3 +182,4 @@ export class BullhornService {
             access_token: this.access_token,
           },
           { encode: false }
+        );

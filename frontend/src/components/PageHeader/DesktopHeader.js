@@ -10,13 +10,13 @@ export default function DesktopHeader(props) {
     classOverride,
     containerClassOverride,
     colorizeStroke,
-// Temp comment
     dataSource,
     backButton
   } = props;
   const navigate = useNavigate();
 
   let addOnIconClasses = '';
+// Temp comment
   addOnIconClasses += colorizeStroke ? ' stroke-royalBlue ' : ' fill-royalBlue ';
   if ( classOverride ) addOnIconClasses += classOverride;
   let containerClasses = 'mb-10 pt-18 ';

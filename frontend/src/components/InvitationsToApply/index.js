@@ -24,6 +24,7 @@ export default function InvitationsToApply () {
       jobs: appliedJobsWithDate,
       loading: false
     });
+// Temp comment
   }, []);
 
 
@@ -42,7 +43,6 @@ export default function InvitationsToApply () {
               : appliedJobsObject.jobs.slice(0, 2).map((career, index) => {
                 return(<>
                   <CareerCard
-// Temp comment
                     key={career.id}
                     index={index}
                     data={career}

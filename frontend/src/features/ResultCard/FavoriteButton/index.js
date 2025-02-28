@@ -12,7 +12,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const role = AuthService.getUserRole();
   if ( !AuthService.loggedIn() || role === 'coordinator' ) {
     return null;
-// Temp comment
   }
   // Return conditions
   const invalidType = !VALID_TYPES.includes(type);

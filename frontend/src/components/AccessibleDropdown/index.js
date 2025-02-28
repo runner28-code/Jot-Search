@@ -22,7 +22,6 @@ export default function AccessibleDropdown(props) {
     disabled,
   } = props;
 
-  function handleSelection(choice) {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {
         onChange(name, currentChosen.filter(item => item !== choice));
@@ -45,6 +44,7 @@ export default function AccessibleDropdown(props) {
     <div>
       { renderLabel(name, label, required) }
       <Wrapper
+        className={ `${containerStyles} ${disabled ? 'disabled cursor-not-allowed' : ''}`}
         onSelection={ handleSelection }
         closeOnSelection={ closeMenuOnSelect }
       >

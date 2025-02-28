@@ -4,7 +4,6 @@ import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 import PropTypes from 'prop-types';
 
-// Temp comment
 export const ethnicityChoices = Object.values(ethnicityMap);
 export const genderChoices = Object.values(genderMap);
 export const veteranStatusChoices = Object.values(veteranStatusMap);
@@ -43,7 +42,6 @@ export const defaultState = {
 }
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
-  function handleChange(e) {
     setUseExistingResume(e.target.checked);
   }
   return (

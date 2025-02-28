@@ -11,7 +11,6 @@ export default function Applications() {
   const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
-    jobs: [],
     filteredJobs: [],
     loading: true
   });
@@ -75,6 +74,7 @@ export default function Applications() {
           type='job'
           compact={true}
           agoText={'Applied'}
+          selectableProps={{
             selectable: true,
             selected: selectedApplications,
             handleClick: handleCheckClick

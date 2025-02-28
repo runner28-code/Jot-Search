@@ -31,6 +31,7 @@ module.exports = {
       },
       boxShadow: {
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
+// Temp comment
       },
       colors: {
         // Main Brand Colors
@@ -47,3 +48,4 @@ module.exports = {
         midGrey: '#94949D',
         grey: '#EBEBEB',
         charcoal: '#3C3C4B',
+        // Utility

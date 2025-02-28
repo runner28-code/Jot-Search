@@ -3,7 +3,6 @@ import {
   Controller,
   Param,
   Body,
-  Get,
   Post,
   Put,
   Delete,
@@ -79,3 +78,4 @@ export class JobController {
         })
       }
 
+      if (job && job.company && getroCompany) {

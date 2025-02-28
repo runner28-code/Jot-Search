@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { MdCheckCircle } from 'react-icons/md';
-// Temp comment
 import LoadingSpinner from '../../LoadingSpinner';
 import { experienceMap } from '../../../utils/dbFieldMapping';
+// Temp comment
 import * as ROUTES from '../../../routes';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
