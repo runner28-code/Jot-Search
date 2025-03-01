@@ -75,7 +75,6 @@ export default function MobileLayout(props) {
               <img
                 src={clockIcon}
                 className='h-8 mr-5' />
-              <p className='text-textBlack text-xs'>{careerData.employmentType}</p>
             </div>
           </div>
           {/* Third row icons */}

@@ -19,7 +19,6 @@ import {
   register,
   login,
   update,
-  recovery,
   getStats,
   getLandingPageStats,
   findUserByEmail,

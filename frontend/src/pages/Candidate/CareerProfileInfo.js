@@ -1,3 +1,4 @@
+// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import CareerProfileInfoContent from './CareerProfileInfoContent';
@@ -22,6 +23,7 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         handleCandidateUpdate={handleCandidateUpdate}
         setEditMode={setEditMode}
         iconStyles={iconStyles}
+        editMode={editMode}
         role={role}
       />
     </>

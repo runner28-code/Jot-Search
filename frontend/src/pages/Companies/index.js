@@ -12,7 +12,6 @@ import Dashboard from '../../components/DashboardPublic';
 import DashboardCandidate from '../../components/DashboardCandidate';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-// Temp comment
 import AuthService from '../../services/auth';
 
 export default function Companies() {
@@ -35,6 +34,7 @@ export default function Companies() {
         togglePassState={togglePassState}
         toggle={toggle}
       />
+// Temp comment
       <div 
         className={ !loggedIn && width <= 990 ? 'px-[5%]' 
           : !loggedIn ? 'px-[15%]' 

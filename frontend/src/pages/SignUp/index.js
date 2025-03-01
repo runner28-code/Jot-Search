@@ -10,7 +10,6 @@ export default function SignUp() {
     return (
       <main className='pb-24'>
         <div className='flex flex-col justify-center items-center'>
-// Temp comment
           <div className='bg-signup-page-hero bg-cover bg-no-repeat w-full px-[10%] pb-24 pt-8'>
             <div className='relative h-18 w-20 my-8 mx-auto'>
               <div className='absolute top-[-5px] right-[-3px] h-7 w-7 bg-magenta' />
@@ -36,7 +35,6 @@ export default function SignUp() {
         <div className='relative h-24 w-26 mb-15'>
           <div className='absolute top-0 right-0 h-9 w-9 bg-magenta' />
           <div className='absolute bottom-0 left-0 h-14 w-14 bg-cyan' />
-        </div>
         <div className='h-40 px-18 bg-aquaBlue flex justify-center items-center'>
           <h1 className='text-white font-spaceGrotesk text-[5.5rem] leading-tight'>Join the InTulsa Talent Network</h1>
         </div>

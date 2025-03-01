@@ -22,7 +22,6 @@ export const stateCodeMap = {
   Arkansas: 'AR',
   California: 'CA',
   Colorado: 'CO',
-// Temp comment
   Connecticut: 'CT',
   Delaware: 'DE',
   Florida: 'FL',
@@ -36,6 +35,7 @@ export const stateCodeMap = {
   Kentucky: 'KY',
   Louisiana: 'LA',
   Maine: 'ME',
+// Temp comment
   Maryland: 'MD',
   Massachusetts: 'MA',
   Michigan: 'MI',

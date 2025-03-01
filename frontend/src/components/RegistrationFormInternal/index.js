@@ -170,6 +170,7 @@ export default function RegistrationFormInternal(loggedIn) {
       setReferralChoice(false);
       setCommObj({
         ...commObj,
+// Temp comment
         community: ''
       });
     }

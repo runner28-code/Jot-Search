@@ -5,7 +5,6 @@ import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
 import AddCandidate from './AddCandidate';
 import AddCompanyUser from './AddCompanyUser';
-import AddCoordinator from './AddCoordinator';
 import User from '../../assets/icons/add-new-user.svg';
 
 export default function AddUser() {
@@ -40,6 +39,7 @@ export default function AddUser() {
       />
     </h2>
     <div className={formType != 'Company' ? defaultContainer : companyContainer }>
+      <div className='flex w-full px-8 vw-1280:px-0 3vw-1280:ml-10'>
         { renderFormByType(formType) }
       </div>
     </div>

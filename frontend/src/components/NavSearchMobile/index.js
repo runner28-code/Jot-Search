@@ -49,7 +49,6 @@ export default function NavSearchMobile({ placeholder }) {
     } else {
       return { filterKey: 'name', filterValue: searchTerm }
     }
-  };
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -72,7 +71,6 @@ export default function NavSearchMobile({ placeholder }) {
   }, [location]);
 
   /* Close dropdown on any outside clicks */
-// Temp comment
   const closeDropdown = () => {
     setForceHidden(true);
   };

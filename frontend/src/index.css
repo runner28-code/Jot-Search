@@ -8,7 +8,6 @@
 /* Vanilla CSS */
 * {
   font-family: 'Roboto', sans-serif;
-}
 
 /* Adjust root font-size so 1rem = 10px for easier calculation */
 html {
@@ -31,6 +30,7 @@ input[type="text"].placeholder-18::placeholder {
 input[type="text"].placeholder-24::placeholder {
   font-size: 2.4rem;
 }
+
 /* Remove highlight outline from input elements and anything with the remove-outline class */
 input:focus,
 select:focus,

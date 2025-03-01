@@ -229,6 +229,7 @@ export default function RegistrationForm() {
           />
           <FormInput
             type='single-select'
+            name='workspace'
             placeholder='Work Setting Preference (Remote, Office)' 
             value={formObj.workspace}
             onChange={handleChange}

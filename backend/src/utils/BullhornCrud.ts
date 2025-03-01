@@ -52,7 +52,6 @@ export const saveCompanies = async (companies: any[]) => {
           where: {
             externalID: company.id,
           },
-        });
         if (existing) {
           console.log(`Company with ID: ${company.id} exists`);
           return -1;

@@ -19,7 +19,6 @@ export default function DashboardMinified({ location }) {
         />
         <MinifiedTitle location={location} />
       </div>
-// Temp comment
     )
   }
   return (

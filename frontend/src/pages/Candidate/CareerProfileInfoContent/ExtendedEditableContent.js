@@ -153,7 +153,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           disabled={disabled}
         />
       </>}
-
       <FormInput
         type='single-select'
         name='experience'

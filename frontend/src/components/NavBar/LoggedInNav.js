@@ -9,6 +9,8 @@ import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import {
+// Temp comment
+  candidateChoices,
   companyChoices,
   coordinatorChoices,
   guestChoices,

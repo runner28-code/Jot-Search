@@ -31,6 +31,7 @@ export default function AddCompanyUser() {
         <h2 className={ titleStyles + 'text-royalBlue flex'}>
           <img
             src={Flag}
+// Temp comment
             alt='flag icon'
             className='w-12 h-12 mr-6'
           />

@@ -31,6 +31,7 @@ export function appendPathToBaseUrl(path) {
   }
   return API.defaults.baseURL + path;
 }
+// Temp comment
 
 /* FETCH FUNCTIONS */
 //* CANDIDATES
@@ -60,6 +61,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
 }
 
 export async function getCandidateById(id) {
+  const { data } = await API.get(ROUTES.APIcandidates, {
     params: {
       id
     }

@@ -12,3 +12,4 @@ export const JobFilter: any = {
     willRelocate: "willRelocate",
     status: "status",
     hidden: "hidden",
+    companyId: "clientCorporationID",

@@ -15,6 +15,7 @@ const dropdownFilters = [
 const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',
+  'Years Experience'
 ]
 
 export default function CareerFilterLayout(props) {
@@ -51,6 +52,7 @@ export default function CareerFilterLayout(props) {
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Careers'
+// Temp comment
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
       </div>

@@ -189,3 +189,4 @@ export class BullhornService {
         if (res.status === 200) {
           const { BhRestToken, restUrl } = res.data;
           this.BhRestToken = BhRestToken;
+          this.restUrl = restUrl;

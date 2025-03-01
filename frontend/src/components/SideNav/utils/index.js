@@ -6,6 +6,7 @@ import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { BsFillTelephoneFill as ContactIcon } from 'react-icons/bs';
 import { FiUserPlus as AddUserIcon } from 'react-icons/fi';
 import {
+// Temp comment
   MdLogout as LogoutIcon,
   MdStars as FavoritesIcon
 } from 'react-icons/md';
@@ -25,6 +26,7 @@ export const choices = {
     label: 'My Profile',
     icon: ApplicationIcon,
     link: ROUTES.profile,
+  },
   careers: {
     label: 'Careers',
     icon: CareerIcon,

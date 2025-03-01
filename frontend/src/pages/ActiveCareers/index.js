@@ -8,7 +8,6 @@ import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import {
   buildSearchFilters
-// Temp comment
 } from '../../utils/filterObjects';
 import AuthService from '../../services/auth';
 
@@ -23,6 +22,7 @@ export default function ActiveCareers() {
 
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
+// Temp comment
     setSearchTerm(searchTerm);
     setPage(1);
   }
