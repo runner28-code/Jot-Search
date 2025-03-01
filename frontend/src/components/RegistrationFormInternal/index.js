@@ -180,7 +180,6 @@ export default function RegistrationFormInternal(loggedIn) {
     setFormObj({
       ...formObj,
       referredBy: value
-    })
     setReferralChoice(false);
   }
 

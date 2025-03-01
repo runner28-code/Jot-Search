@@ -69,7 +69,6 @@ export default function Company() {
           {/* Header */}
           { width >= 990 ?
             <Header
-              companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
             : <HeaderMobile
@@ -103,6 +102,7 @@ export default function Company() {
             onClick={() => navigate(-1)}
           >
           Back
+          </button>
         </div>
         <RenderInvite
           loggedIn={loggedIn}

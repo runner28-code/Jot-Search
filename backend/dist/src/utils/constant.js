@@ -71,7 +71,6 @@ const job_filter_exclude_keys = [
     "chef",
     "chemical",
     "chemist",
-// Temp comment
     "child",
     "circulation",
     "claims",

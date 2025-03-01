@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { isObject } from 'lodash';
 
 export default function Dropdown({ choices, handleChoiceClick, additionalStyles }) {
@@ -19,6 +18,7 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
             onClick={() => handleChoiceClick(choice.id)}
             className={choiceStyles}
             key={choice.id}>
+            {choice.name}
           </div>
         )
       })}

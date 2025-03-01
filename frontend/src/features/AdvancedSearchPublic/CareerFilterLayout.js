@@ -6,7 +6,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 const dropdownFilters = [
-// Temp comment
   'Expertise',
   'On-Site/Remote',
   'Years Experience',

@@ -10,4 +10,3 @@ exports.JobFilter = {
         employmentType: "employmentType",
         onSite: "onSite",
         yearsRequired: "yearsRequired",
-        willRelocate: "willRelocate",

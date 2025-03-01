@@ -30,7 +30,6 @@ export const defaultState = {
   lastname: '',
   phone: '',
   willRelocate: true,
-// Temp comment
   referral: '',
   resume: '',
   newResume: {},

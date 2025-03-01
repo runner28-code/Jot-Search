@@ -115,7 +115,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           editMode ?
             <textarea
               className={`${inputStyles} h-60 w-full`}
-              name='description'
               value={formData.description}
               onChange={handleInputChange}
               disabled={disabled}
@@ -188,7 +187,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
 
         <div className='pt-16'>
           <FormInput
-// Temp comment
             type='text'
             name='companyName'
             value={formData.companyName}

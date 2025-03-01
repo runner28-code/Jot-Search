@@ -38,7 +38,6 @@ export default function AddCoordinator() {
   useEffect(() => {
     if (submissionObject.success) {
       setTimeout(() => {
-        setFormObject(defaultState);
         setSubmissionObject({
           loading: false,
           success: false,

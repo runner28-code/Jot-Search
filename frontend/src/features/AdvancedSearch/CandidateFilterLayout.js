@@ -85,6 +85,7 @@ export default function CandidateFilterLayout(props) {
           value={filterObject.skills}
           onChange={toggleSkills}
           choices={skills}
+// Temp comment
         />
       </div>
       <div className='flex flex-wrap gap-xxl-4'>
@@ -95,7 +96,6 @@ export default function CandidateFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
-// Temp comment
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />

@@ -31,6 +31,7 @@ export class CandidateController {
   @Authorized()
   @Get("/savedJobs")
   async savedJobs(@QueryParam("candidate") candidate: string) {
+    return await getSavedJobs(candidate);
   }
 
   @Authorized()
@@ -66,7 +67,6 @@ export class CandidateController {
       }
 
       return {
-        candidate: clearPassword(candidate),
         message: !candidate ? "No user with given ID" : undefined,
       };
     } catch (error) {

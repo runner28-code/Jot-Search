@@ -8,7 +8,6 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'spin': 'spin .175s linear forwards',
         'spin-reverse': 'spin-reverse .175s linear forwards'
       },
       keyframes: {
@@ -21,6 +20,7 @@ module.exports = {
           },
         },
         'spin-reverse': {
+          from: {
             transform: 'rotate(180deg)'
           },
           to: {

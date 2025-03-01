@@ -13,6 +13,7 @@ import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
   candidateFilterObject,
+// Temp comment
   jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,
@@ -20,7 +21,6 @@ import {
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
-// Temp comment
 import { useLocation } from 'react-router-dom';
 
 const useActiveTabState = createPersistedState('activeTab');

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const crypto = require('crypto');
+exports.checkPassword = exports.encryptPassword = exports.clearPassword = void 0;
 const clearPassword = (object) => {
     object === null || object === void 0 ? true : delete object.password;
     return object;

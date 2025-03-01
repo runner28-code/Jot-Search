@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import ExploreSearch from '../../components/ExploreSearch';
+// Temp comment
 import ExploreSearchMobile from '../../components/ExploreSearchMobile';
 import ExpertiseLinks from '../../components/ExpertiseLinks';
 import ExpertiseLinksMobile from '../../components/ExpertiseLinksMobile';
@@ -22,6 +23,7 @@ export default function LandingPage() {
   const { width } = useWindowDimensions();
   const isMobile = width < 1024;
   const isDesktop = width >= 1024;
+
   return (
     <main className='bg-white'>
       {/* Hero */}

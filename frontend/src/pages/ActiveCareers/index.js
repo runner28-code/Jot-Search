@@ -25,6 +25,7 @@ export default function ActiveCareers() {
     setSearchTerm(searchTerm);
     setPage(1);
   }
+// Temp comment
 
   const filtersArr = buildSearchFilters({ title: searchTerm, companyId, status: ['Active', 'Open'] });
 
@@ -43,7 +44,6 @@ export default function ActiveCareers() {
         IconComponent={CareerIcon}
         classOverride='h-18 w-18'
         backButton
-// Temp comment
       />
       <FilterSearch
         searchTerm={searchTerm}
