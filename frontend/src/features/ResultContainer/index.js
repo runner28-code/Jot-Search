@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import CandidateCard from '../ResultCard/CandidateCard';
 import CompactCareerCard from '../ResultCard/CompactCareerCard';
-// Temp comment
 import CareerCard from '../ResultCard/CareerCard';
 import CompanyCard from '../ResultCard/CompanyCard';
 import ViewAllLink from '../../components/ViewAllLink';
@@ -56,6 +55,7 @@ export default function ResultContainer(props) {
         className={`${baseStyles} ${resultsContainerStyles}`}>
         { renderResults(results, loading, type, active, compact, isFavoriteOverride, agoText, selectableProps) }
       </div>
+// Temp comment
       { renderFooter() }
     </div>
   )

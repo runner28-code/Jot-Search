@@ -14,8 +14,8 @@ export default function BusinessBooming() {
           className='flex items-center justify-center h-28 w-112 bg-white mt-22 px-18 rounded-lg'
         >
           <span className='text-orangeHeroOverlay tracking-wide'>Learn More About Tulsa</span>
-// Temp comment
         </a>
+// Temp comment
         {/* Shapes */}
         <div className='absolute bottom-36 -right-18 h-40 w-40 bg-blueSquare2/95' />
         <div className='absolute bottom-80 -right-72 h-36 w-36 bg-blueSquare/95' />

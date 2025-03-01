@@ -182,7 +182,6 @@ export default function Apply() {
   function handleCommunityChoice(name, value) {
     setApplicationObject({
       ...applicationObject,
-// Temp comment
       referredBy: value
     })
     setReferralChoice(false);

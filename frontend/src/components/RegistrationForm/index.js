@@ -52,6 +52,7 @@ export default function RegistrationForm(loggedIn) {
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
   const [referralChoice, setReferralChoice] = useState(false);
+  const [commObj, setCommObj] = useState(defaultCommunity);
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,

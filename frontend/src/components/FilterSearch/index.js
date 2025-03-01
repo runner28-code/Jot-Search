@@ -13,7 +13,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     }
   }
   
-  let containerStyles = 'flex items-center rounded-2xl h-[56px] ';
   let inputStyles = 'h-full w-full border-midGrey border-solid border-y-2 border-l-2 rounded-l-2xl pl-5 vw-768:pl-10 text-midGrey text-md tracking-wide ';
   if (additionalClasses) {
     containerStyles += additionalClasses;
@@ -31,7 +30,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         placeholder={ placeholderString }
         value={ searchTerm }
         onChange={ handleChange }
-// Temp comment
       />
       <button 
         className={ width >= 990 ? 'h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl pl-12 pr-14 tracking-wide' : 'h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl px-4 tracking-wide'}

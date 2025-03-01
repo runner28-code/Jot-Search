@@ -27,7 +27,6 @@ export class GetroService {
                 'X-User-Email': this.email,
                 'X-User-Token': this.password,
                 'Content-Type': 'application/json',
-                'Accept': 'application/json'
             }
         };
     };
@@ -39,18 +38,3 @@ export class GetroService {
         throw 'Auth failed';
     }
     async getNetworkID(): Promise<boolean> {
-        try {
-            console.log('\n***** getNetworkID *****');
-            const url = `${this.api_base_url_v2}/networks`;
-
-            const res = await axios.get(url, this.getOptions());
-            await sleep(2000); // https://developers.getro.com/#rate-limit
-
-            if (res.status === 200) {
-                const { items } = res.data;
-                if (items.length > 0) {
-                    this.networkId = items[0].id;
-                } else {
-                    return false;
-                }
-                console.log('Network ID: ', this.networkId);

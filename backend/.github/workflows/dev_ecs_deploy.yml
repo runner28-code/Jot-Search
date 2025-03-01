@@ -3,7 +3,6 @@ name: Dev - ECS Deployment
 on:
   push:
     branches:
-      - dev
 
 env:
   AWS_REGION: 'us-east-1'
@@ -13,3 +12,4 @@ env:
   ECS_TASK_DEFINITION: '.github/workflows/dev_task_definition.json'
   CONTAINER_NAME: 'intulsa-backend-container-dev'
 
+jobs:

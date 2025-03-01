@@ -153,6 +153,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           disabled={disabled}
         />
       </>}
+
       <FormInput
         type='single-select'
         name='experience'
@@ -187,6 +188,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
 
         <div className='pt-16'>
           <FormInput
+// Temp comment
             type='text'
             name='companyName'
             value={formData.companyName}

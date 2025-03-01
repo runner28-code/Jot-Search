@@ -127,6 +127,7 @@ export default function RegistrationForm() {
     setFormObj({
       ...formObj,
       [name]: value,
+// Temp comment
     });
   }
 

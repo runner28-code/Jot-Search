@@ -8,7 +8,6 @@ const MULTI_SELECT = 'multi-select';
 
 export default function AccessibleDropdown(props) {
   const {
-    type,
     name,
     label,
     placeholder,
@@ -50,6 +49,7 @@ export default function AccessibleDropdown(props) {
         closeOnSelection={ closeMenuOnSelect }
       >
         <Button
+          className={ `${buttonStyles} ${disabled ? 'disabled cursor-not-allowed' : ''}` }
           disabled={disabled}>
           <span>{ buttonText(name, placeholder, currentChosen) }</span>
           { renderDropdownArrow(showDropdownArrow) }

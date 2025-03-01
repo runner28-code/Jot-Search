@@ -47,7 +47,6 @@ const validateUser = ({
     if (isNullOrEmpty(password)) return "password is required";
     // if (isNullOrEmpty(resume))
     //     return 'resume is required';
-    // if (isNullOrEmpty(linkedin))
     //     return 'linkedin is required';
     // if (isNullOrEmpty(skills))
     //     return 'skill is required';

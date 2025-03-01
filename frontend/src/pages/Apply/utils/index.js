@@ -30,6 +30,7 @@ export const defaultState = {
   lastname: '',
   phone: '',
   willRelocate: true,
+// Temp comment
   referral: '',
   resume: '',
   newResume: {},
@@ -45,6 +46,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
   function handleChange(e) {
     setUseExistingResume(e.target.checked);
   }
+  return (
     <label
       htmlFor='useExistingResume'
       className='mt-4 mb-5 flex items-center'

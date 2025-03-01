@@ -17,7 +17,6 @@ async function main() {
     throw err;
   }
 }
-
 async function seedJobs() {
   await db.job.createMany({
     data: [

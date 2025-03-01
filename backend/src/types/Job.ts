@@ -9,4 +9,3 @@ export type Job = {
   city?: string;
   state?: string;
   zip?: string;
-  country_id?: string;

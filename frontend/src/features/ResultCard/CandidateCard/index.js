@@ -50,6 +50,7 @@ export default function CandidateCard({ data, disableLink }) {
           </div>
           {/* Occupation */}
           <p className='text-charcoal mt-l'>{occupationString}</p>
+// Temp comment
           {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold text-md mt-[18px]'>{expertiseString}</p>
           {/* First row icons */}
@@ -84,6 +85,7 @@ export default function CandidateCard({ data, disableLink }) {
             value={data.willRelocate}
           />
           {/* Skill List */}
+          <div className='flex flex-wrap gap-m mt-[18px]'>
             { renderSkills(data.skills) }
           </div>
         </div>

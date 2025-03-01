@@ -5,9 +5,7 @@ export default function ReferralCardContent({ data }) {
   return (
     <>
       <Header 
-// Temp comment
         title={data.title} 
-        isMobile={false} 
       />
       <p className='vw-640:text-md'>{data.company}</p>
     </>

@@ -14,7 +14,6 @@ import {
   Patch,
 } from "routing-controllers";
 import { Dictionary } from "typed-two-way-map";
-import { BigQueryService } from "../services/BigQueryService";
 import { GetroService } from "../services/GetroService";
 import { createJob, getAppliedJobsByUser, updateJob } from "../services/Job";
 import {

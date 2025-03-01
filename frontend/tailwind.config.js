@@ -21,7 +21,6 @@ module.exports = {
           },
         },
         'spin-reverse': {
-          from: {
             transform: 'rotate(180deg)'
           },
           to: {
@@ -45,7 +44,6 @@ module.exports = {
         grey300: '#D0D5DD',
         grey700: '#344054',
         midGrey: '#94949D',
-// Temp comment
         grey: '#EBEBEB',
         charcoal: '#3C3C4B',
         // Utility
