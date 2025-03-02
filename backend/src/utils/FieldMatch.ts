@@ -7,7 +7,7 @@ export const JobFilter: any = {
     skill: "skillList",
     city: "address_city",
     employmentType: "employmentType",
-    yearsRequired: "yearsRequired",
+    onSite: "onSite",
     willRelocate: "willRelocate",
     status: "status",
     hidden: "hidden",

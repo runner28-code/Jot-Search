@@ -82,3 +82,5 @@ export class JobController {
       if (job && job.company && getroCompany) {
         job.company.logo = getroCompany.logo_url;
       }
+
+      if (job) {

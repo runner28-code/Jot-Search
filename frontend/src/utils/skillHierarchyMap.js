@@ -26,6 +26,7 @@ export const roles = {
   ],
   'Operations': [
     'Business Operations & Strategy',
+    'Client Success and Customer Service',
     'Operations Generalist',
     'Project and Program Management',
     'Administration',
@@ -39,7 +40,6 @@ export const roles = {
   'Other': [
     'Education',
     'Healthcare',
-    'Legal',
     'Misc. Science',
     'Other'
   ],
@@ -74,3 +74,5 @@ export const skills = [
   'Accounts Payable',
   'Accounts Receivable',
   'Admissions',
+  'Adobe',
+  'Adobe InDesign',

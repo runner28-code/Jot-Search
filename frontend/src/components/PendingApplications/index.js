@@ -42,6 +42,7 @@ export default function PendingApplications () {
       <h2 className='font-spaceGrotesk text-h5 text-white mb-8 text-center'>My Pending Applications</h2>
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
+          appliedJobsObject.loading ?
             <LoadingSpinner />
             :
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
@@ -78,4 +79,5 @@ export default function PendingApplications () {
         </Link>
       </div>
     </div>
+// Temp comment
   )

@@ -10,3 +10,4 @@ export type Job = {
   state?: string;
   zip?: string;
   country_id?: string;
+  employmentType?: string;

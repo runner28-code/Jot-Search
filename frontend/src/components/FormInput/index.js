@@ -24,7 +24,6 @@ export default function FormInput(props) {
     choiceObject,
     error,
     disabled
-// Temp comment
   } = props;
 
   let componentStyles = inputStyles;

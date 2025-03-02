@@ -12,3 +12,4 @@
         "ecmaFeatures": {
             "jsx": true
         },
+        "ecmaVersion": "latest",

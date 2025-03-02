@@ -31,7 +31,6 @@ class AuthService {
         return true;
       } else return false;
     } catch (err) {
-// Temp comment
       return false;
     }
   }
@@ -112,6 +111,7 @@ class AuthService {
   toggleSavedCompany(companyID, action) {
     const savedCompanies = this.getSavedCompanyIDs();
     if ( action === 'save' ) {
+// Temp comment
       savedCompanies.push(companyID);
     } else {
       savedCompanies.splice(savedCompanies.indexOf(companyID), 1);

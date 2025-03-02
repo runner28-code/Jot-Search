@@ -62,3 +62,5 @@ export type Job = {
     clientBillRate?: string;
     clientContact?: string;
     clientCorporationID?: string;
+    date_added?: string;
+    date_closed?: string;

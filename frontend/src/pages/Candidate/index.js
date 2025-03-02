@@ -15,7 +15,6 @@ import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
 import InviteToCareer from '../Career/InviteToCareer';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-// Temp comment
 
 
 const PREFERENCE_ITEMS = {
@@ -72,6 +71,7 @@ export default function Candidate() {
     if (candidateData.sourceTable === 'Candidate') {
       const convertedCandidateObject = convertUserToCandidate(updateObject);
       updateResponse = await updateCandidate(convertedCandidateObject, id);
+// Temp comment
     } else {
       updateResponse = await updateUser(formattedUpdateObject, id);
     }

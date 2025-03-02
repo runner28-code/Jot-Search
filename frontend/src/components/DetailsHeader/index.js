@@ -8,6 +8,7 @@ import BackButton from '../BackButton';
 export default function DetailsHeader({ type, source }) {
   let Icon = undefined;
   switch(type) {
+// Temp comment
     case 'candidate':
       Icon = CandidatesIcon;
       break;
@@ -22,6 +23,7 @@ export default function DetailsHeader({ type, source }) {
   const titleCasedType = type.charAt(0).toUpperCase() + type.slice(1);
   let headerText
   if ( type === 'company') {
+    headerText = 'Company Profile';
   }else { 
     headerText = `${titleCasedType} Details`
   }

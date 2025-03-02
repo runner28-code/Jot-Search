@@ -12,3 +12,4 @@ export class BigQueryService {
             BigQueryService.client = new BigQuery();
         }
         return BigQueryService.client;
+    }

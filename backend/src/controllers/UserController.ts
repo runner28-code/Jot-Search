@@ -43,3 +43,4 @@ export class UserController {
     const { result, error, ...data } = await login(email, password);
 
     if (result) {
+      const token = CreateJwtToken(data);

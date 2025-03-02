@@ -15,7 +15,6 @@ import * as ROUTES from './routes';
 
 
 export default function Auth() {
-// Temp comment
   if (!AuthService.loggedIn()) {
     return <Navigate to={ROUTES.landingPage} />
   }
@@ -40,7 +39,6 @@ export default function Auth() {
           path={ROUTES.applications}
           element={<Applications />} />
         <Route
-          path={ROUTES.favorites}
           element={<Favorites />} />
         <Route
           path={ROUTES.activeCareers}

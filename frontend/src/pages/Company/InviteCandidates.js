@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { appendPathToBaseUrl } from '../../services/API';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
-
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
@@ -34,7 +33,6 @@ export default function InviteCandidates({ company }) {
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (
-// Temp comment
         <span 
           key={item.value} 
           className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">

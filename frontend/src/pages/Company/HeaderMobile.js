@@ -15,7 +15,6 @@ import { BsBuilding } from 'react-icons/bs';
 function HeaderContent({ companyData }) {
   const headerIconStyles = 'h-6 w-6 mr-3 fill-midGrey';
   const headerRowTextStyles = 'text-xs text-textBlack ';
-// Temp comment
   const headerGroupStyles = 'flex items-center flex-row basis-1/2 my-4';
   const headerTitle = 'text-[2.5rem] font-spaceGrotesk font-semibold basis-2/3';
   console.log(companyData);
@@ -34,7 +33,6 @@ function HeaderContent({ companyData }) {
             </h4>
             <div className='flex items-center'>
               <div className={ headerGroupStyles }>
-                <img
                   src={PlacePin}
                   className={headerIconStyles}
                 />

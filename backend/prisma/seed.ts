@@ -40,3 +40,5 @@ async function seedJobs() {
         }))!.id,
       },
       {
+        title: "Junior Software Engineer",
+        companyId: (await db.company.findFirst())?.id,

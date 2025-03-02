@@ -9,6 +9,7 @@ const MULTI_SELECT = 'multi-select';
 export default function AccessibleDropdown(props) {
   const {
     type,
+// Temp comment
     name,
     label,
     placeholder,
@@ -43,6 +44,7 @@ export default function AccessibleDropdown(props) {
   const closeMenuOnSelect = type === MULTI_SELECT ? false : true;
   return (
     <div>
+      { renderLabel(name, label, required) }
       <Wrapper
         className={ `${containerStyles} ${disabled ? 'disabled cursor-not-allowed' : ''}`}
         onSelection={ handleSelection }

@@ -91,7 +91,6 @@ export default function MobileLayout(props) {
         </div>
 
         {/* Coordinator Status */}
-        {
           role === 'coordinator' && (
             <div className='flex flex-col space-y-8'>
               <UpdateJobStatus job={careerData} />
@@ -105,6 +104,7 @@ export default function MobileLayout(props) {
       <h4 className={sectionHeaderStyles}>Career Description</h4>
       <p
         className='font-spaceGrotesk text-textBlack text-sm mb-6'
+        dangerouslySetInnerHTML={{ __html: careerData.description }}
       />
       { renderSkillsSection(skillList) }
       { renderAboutCompanySection(careerData, role) }

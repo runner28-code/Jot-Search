@@ -190,3 +190,8 @@ export class BullhornService {
           const { BhRestToken, restUrl } = res.data;
           this.BhRestToken = BhRestToken;
           this.restUrl = restUrl;
+          this.corpToken = restUrl.split("/")[4];
+          console.log("BhRestToken: ", this.BhRestToken);
+          console.log("restUrl: ", this.restUrl);
+          console.log("corpToken: ", this.corpToken);
+

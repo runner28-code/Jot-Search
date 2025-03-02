@@ -120,3 +120,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
       };
     }
 
+    const existing: dbUser | null = await isExistUserFull("id", id);
+    if (!existing) {
+      return {
+        result: false,

@@ -25,3 +25,4 @@ try {
   signatureVersion: "v4",
 })
 } catch (error) {
+  console.error(error)

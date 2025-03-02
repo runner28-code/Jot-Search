@@ -46,6 +46,7 @@ const mockJobsData = [
     title: 'Project Manager',
     company: 'GitWit',
     clientCorporationID: 'a5fa075b-90c3-4dad-97ef-87d6c2cc0922',
+// Temp comment
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/gitwit_2_vwj7ap.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
@@ -58,7 +59,6 @@ const mockJobsData = [
     id: 'c79462d2-1950-4cc0-ba31-a21a566c3c9d',
     title: 'Payroll Administrator',
     company: 'Holberton',
-// Temp comment
     clientCorporationID: '36534b9b-c225-4a59-9286-8d4203d582db',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/holberton_clipped_rev_1_2_oefmoi.webp',
     salaryRange: '$80k-$90k',
