@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { appendPathToBaseUrl } from '../../services/API';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
+
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
@@ -73,7 +74,6 @@ export default function InviteCandidates({ company }) {
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
           onClick={async () => {
             console.log({selected})
-            const res = await sendCandidatesToCompanies({ companyIds: [company.id], candidateIds: selected.map((option) => option.value) })
             console.log({res})
             if(res.result){
               setSelected([])

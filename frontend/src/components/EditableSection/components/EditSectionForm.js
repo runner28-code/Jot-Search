@@ -11,6 +11,7 @@ import Property from './Property';
 export default function EditSectionForm({ contentObject, handlePropertyChange }) {
   function handleChange(e) {
     handlePropertyChange(e.target.name, e.target.value);
+// Temp comment
   }
   const singleProperty = Object.keys(contentObject).length === 1;
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';

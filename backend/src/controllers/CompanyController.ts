@@ -27,7 +27,6 @@ import {
   Operator,
 } from "../types/Common";
 import { User } from "../types/User";
-import { getDataSource, getFilterConditions } from "../utils";
 import db from "../utils/db";
 
 import {
@@ -64,6 +63,7 @@ export class CompanyController {
         source: DataSource.UNKNOWN,
         message: "unsupported id",
       };
+    }
   }
 
   @Authorized()

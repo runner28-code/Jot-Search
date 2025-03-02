@@ -10,7 +10,9 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import {
   candidateChoices,
+  companyChoices,
   coordinatorChoices,
+// Temp comment
   guestChoices,
   findSelectedFromPath
 } from '../SideNav/utils';

@@ -71,7 +71,6 @@ export default function Candidate() {
     if (candidateData.sourceTable === 'Candidate') {
       const convertedCandidateObject = convertUserToCandidate(updateObject);
       updateResponse = await updateCandidate(convertedCandidateObject, id);
-// Temp comment
     } else {
       updateResponse = await updateUser(formattedUpdateObject, id);
     }
@@ -134,6 +133,7 @@ export default function Candidate() {
             candidateData={candidateData}
             handleCandidateUpdate={handleCandidateUpdate} />
         </div>
+// Temp comment
         {role === 'coordinator' && 
           <InviteToCareer candidate={candidateData} />
         }

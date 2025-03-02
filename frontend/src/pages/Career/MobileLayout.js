@@ -12,7 +12,6 @@ import { apply as applyRoute } from '../../routes';
 import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
 
-const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-xl text-charcoal mb-4 ';
 const hrStyles = 'mb-10 border-midGrey ';
 
 export default function MobileLayout(props) {
@@ -91,6 +90,7 @@ export default function MobileLayout(props) {
         </div>
 
         {/* Coordinator Status */}
+        {
           role === 'coordinator' && (
             <div className='flex flex-col space-y-8'>
               <UpdateJobStatus job={careerData} />

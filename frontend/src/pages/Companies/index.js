@@ -42,7 +42,6 @@ export default function Companies() {
         <RenderAdvancedSearch
           loggedIn={loggedIn}
           toggle={toggle}
-          userType={userType}
         />
       </div>
     </section>

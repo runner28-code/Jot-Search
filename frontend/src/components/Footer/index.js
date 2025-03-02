@@ -31,7 +31,6 @@ export default function Footer() {
             className={socialIconStyleMobile}
           />
         </a>
-// Temp comment
         <a href={ROUTES.twitter}>
           <img
             src={twitter}
@@ -84,6 +83,7 @@ export default function Footer() {
               rel='noreferrer'
             >
                 Terms of Service
+// Temp comment
             </a>
           </div>
         </div>

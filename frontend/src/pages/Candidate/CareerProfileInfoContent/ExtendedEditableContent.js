@@ -180,7 +180,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         />
 
         <SkillsInput
-          value={formData.skills}
           onChange={handleChange}
           choices={skillChoices || []}
           disabled={disabled}

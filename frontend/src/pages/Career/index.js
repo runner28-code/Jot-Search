@@ -14,7 +14,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import Flag from '../../assets/icons/flag.svg';
 import PageHeader from '../../components/PageHeader';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
-// Temp comment
 import InviteCandidates from './InviteCandidates';
 
 export default function CareerPage() {

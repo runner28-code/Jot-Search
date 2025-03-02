@@ -1,3 +1,4 @@
+// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Flag from '../../../assets/icons/flag.svg';
@@ -67,6 +68,7 @@ export default function AddCompanyUser() {
             className='absolute right-6 top-6 h-10 w-10 vw-900:h-12 vw-900:w-12'
           />
           {(search && isLoadingCompanies && !selectedCompany) && <div>Loading...</div>}
+          {(companies && search !== selectedCompany?.name) && (
             <div className='absolute top-full w-full bg-white border border-grey300'>
               {companies.map((company) => (
                 <div

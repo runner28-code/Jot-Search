@@ -24,7 +24,6 @@ export default function DesktopLayout(props) {
     salaryString,
     postingAge,
     role,
-  } = props.data;
   const navigate = useNavigate();
 
   const skillList = careerData.skillList;
@@ -65,6 +64,7 @@ export default function DesktopLayout(props) {
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack'>{careerData.onSite}</p>
             </div>
+            {/* Posting age */}
             <div className='w-1/3 flex items-center pr-4'>
               <img
                 src={postingAgeIcon}

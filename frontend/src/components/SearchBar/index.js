@@ -13,6 +13,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
     styleObject.containerStyles += `mb-${marginBottom} `;
   }
 
+  function handleChange(e) {
     setSearchTerm(e.target.value);
   }
 

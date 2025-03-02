@@ -58,7 +58,6 @@ export default function CandidateCard({ data, disableLink }) {
             <div className='w-1/3 flex items-center'>
               <img
                 src={linkedinIcon}
-                className='h-8 mr-5' />
               <span className='text-charcoal'>
                 LinkedIn
               </span>
@@ -80,6 +79,7 @@ export default function CandidateCard({ data, disableLink }) {
           </div>
           {/* Relocation */}
           <InfoLabel
+            label='Relocation'
             value={data.willRelocate}
           />
           {/* Skill List */}

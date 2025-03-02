@@ -111,7 +111,6 @@ class AuthService {
   toggleSavedCompany(companyID, action) {
     const savedCompanies = this.getSavedCompanyIDs();
     if ( action === 'save' ) {
-// Temp comment
       savedCompanies.push(companyID);
     } else {
       savedCompanies.splice(savedCompanies.indexOf(companyID), 1);
@@ -129,7 +128,6 @@ class AuthService {
       savedCandidates.push(candidateID);
     } else {
       savedCandidates.splice(savedCandidates.indexOf(candidateID), 1);
-    }
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
   }
 

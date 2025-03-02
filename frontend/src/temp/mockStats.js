@@ -21,6 +21,7 @@ export const mockCandidateStats = {
       prevCount: 7
     }
   },
+// Temp comment
   'Invitations': {
     'Today': {
       count: 3,
@@ -61,6 +62,5 @@ export const mockCandidateStats = {
       prevCount: 2
     },
     'Last 90 Days': {
-// Temp comment
       count: 4,
       prevCount: 2

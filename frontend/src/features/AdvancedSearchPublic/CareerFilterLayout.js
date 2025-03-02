@@ -25,7 +25,6 @@ export default function CareerFilterLayout(props) {
     defaultFilterObject,
     filterObject,
     handleFilterChange,
-// Temp comment
     searchTerm,
     setSearchTerm,
     handleSearchClick,
@@ -37,7 +36,6 @@ export default function CareerFilterLayout(props) {
     dropDownFiltersCandidate.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
-  } else {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
