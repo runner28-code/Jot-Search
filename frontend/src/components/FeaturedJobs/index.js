@@ -24,7 +24,6 @@ export default function FeaturedJobs() {
   const cardContentSubtitle ='font-spaceGrotesk text-royalBlue text-sm uppercase';
   const cardContentSubtitleMobile ='font-spaceGrotesk text-royalBlue text-xs uppercase';
   const viewAllStyles = 'text-center mt-48';
-// Temp comment
   const viewAllStylesMobile = 'text-center mt-12';
 
   const filtersArr = [
@@ -32,6 +31,7 @@ export default function FeaturedJobs() {
       key: 'featured',
       value: true
     }
+// Temp comment
   ];
 
   const { jobs, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE});

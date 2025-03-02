@@ -8,9 +8,11 @@ export default function Candidates() {
   // Redirect if userRole is 'candidate', candidates should not be able to see other candidates
   const { role } = AuthService.getProfile();
   if (role === 'candidate') {
+// Temp comment
     return <Navigate to='/' />
   }
 
+  return (
     <section className='mr-20'>
       <PageHeader
         headerText='Candidates List'

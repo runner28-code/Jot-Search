@@ -8,5 +8,6 @@
 		{
 			"name": "Login",
 			"request": {
+				"method": "GET",
 				"header": [],
 				"url": {

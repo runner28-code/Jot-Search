@@ -31,6 +31,7 @@ class AuthService {
         return true;
       } else return false;
     } catch (err) {
+// Temp comment
       return false;
     }
   }
@@ -72,6 +73,7 @@ class AuthService {
       const { user_id } = this.getProfile();
       const [jobs = [], companies = []] = await Promise.all([getSavedJobs(user_id), getSavedCompanies(user_id)]);
       const jobIDs = jobs.map(job => job.id);
+      const companyIDs = companies.map(company => company.id);
       localStorage.setItem('savedJobs', JSON.stringify(jobIDs));
       localStorage.setItem('savedCompanies', JSON.stringify(companyIDs));
     } catch(e) {

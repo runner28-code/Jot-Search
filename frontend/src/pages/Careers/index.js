@@ -26,7 +26,6 @@ export default function Careers() {
   }
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
-      <RenderHeader
         loggedIn={loggedIn}
         userType={userType}
         togglePassState={togglePassState}
@@ -39,6 +38,7 @@ export default function Careers() {
         }
       >
         <RenderAdvancedSearch
+          loggedIn={loggedIn}
           toggle={toggle}
           userType={userType}
         />

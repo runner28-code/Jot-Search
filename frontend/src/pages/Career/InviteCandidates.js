@@ -18,10 +18,10 @@ export default function InviteCandidates({ job }) {
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
 
-  const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
   const candidateOptions = candidates?.map(candidate => {
     return {
+      label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
       value: candidate.id,
       candidate
     }

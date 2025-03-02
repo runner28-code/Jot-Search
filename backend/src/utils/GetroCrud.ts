@@ -21,4 +21,3 @@ export const saveCompanies = async (companies: any[]) => {
 							Object.keys(companyData).forEach((key) => {
 								if (expludeFields.includes(key)) {
 									delete companyData[key];
-								}

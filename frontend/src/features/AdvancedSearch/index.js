@@ -13,7 +13,6 @@ import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
   candidateFilterObject,
-// Temp comment
   jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,
@@ -33,7 +32,6 @@ const availableTabChoicesByUserType = {
   guest: ['careers', 'companies'],
 }
 
-function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
     switch (pathname) {
       case '/candidates':
