@@ -50,6 +50,7 @@ function App() {
               element={<Apply />} />
             <Route
               path={`${ROUTES.companies}/:id`}
+              element={<Company />} />
             <Route
               path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />

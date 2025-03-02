@@ -9,6 +9,7 @@ export default function JoinTalentNetwork() {
 
   if( width <= 990 ) {
     return (<>
+// Temp comment
       {/* Join Hero and call-to-action */}
       <section className='relative h-200 bg-join-hero bg-cover bg-center mb-[600px]'>
         <div className='justify-center w-11/12 mx-[5%] absolute -bottom-[100%]'>
@@ -21,7 +22,6 @@ export default function JoinTalentNetwork() {
             </p>
             <Link
               to={ROUTES.signup}
-// Temp comment
               className='flex items-center justify-center h-28 w-112 bg-buttonLightBlue mt-12 px-18 rounded-lg'
             >
               <span className='text-softWhite text-ml'>Create an account</span>

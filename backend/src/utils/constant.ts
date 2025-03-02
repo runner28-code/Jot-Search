@@ -82,7 +82,6 @@ const job_filter_exclude_keys = [
   "club",
   "cna",
   "collection",
-  "collector",
   "college",
   "compliance",
   "composition",

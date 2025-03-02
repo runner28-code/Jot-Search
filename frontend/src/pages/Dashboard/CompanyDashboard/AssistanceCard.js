@@ -11,7 +11,6 @@ export default function AssistanceCard() {
           className='w-auto h-auto'
         />
         <h5 className='text-h5 font-medium font-spaceGrotesk text-charcoal ml-8'>InTulsa assistance</h5>
-// Temp comment
       </div>
       {/* Body */}
       <div className='text-black70%'>
@@ -29,6 +28,7 @@ export default function AssistanceCard() {
         className='mt-10 mb-6 inline-block border-2 border-royalBlue px-xl py-[15.5px] leading-[1.37]  text-royalBlue text-ml rounded-lg'
         target='_blank'
         rel='noopener noreferrer'
+// Temp comment
       >
         Make a request
       </a>

@@ -14,6 +14,7 @@ API.interceptors.request.use(
   function (config) {
     const token = localStorage.getItem('id_token');
     if (token) {
+      config.headers['Authorization'] = 'Bearer ' + token;
     }
     return config;
   },
@@ -44,7 +45,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
         return false
       }
       return true
-    });
 
   const { data } = await API.post(ROUTES.APIcandidates, {
     'filters': formattedFilters,

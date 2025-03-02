@@ -26,8 +26,10 @@ export default function CompanyCard({ data }) {
         addressString={addressString}
         employeeString={employeeString}
       />
+// Temp comment
     )
   }
+  return (
     <div
       className='relative w-full'
       key={data.id}

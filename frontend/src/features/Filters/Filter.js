@@ -7,7 +7,6 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import Dropdown from '../../components/FilterDropdown';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-// Temp comment
 
 export default function Filter({ filterType, choices, chosen, handleFilterChange }) {
   const { width } = useWindowDimensions();

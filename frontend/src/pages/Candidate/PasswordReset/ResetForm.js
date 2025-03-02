@@ -18,6 +18,7 @@ export default function ResetForm({ candidateData, setType }) {
     if( formData.password !== formData.confirmPassword ) {
       setMatch(false);
     }
+
     if( formData.password === formData.confirmPassword ) {
       setMatch(true);
       const { password } = event.target;
@@ -47,7 +48,6 @@ export default function ResetForm({ candidateData, setType }) {
           type='text'
           name='password'
           value={formData.password}
-          onChange={handleChange}
           label='New Password'
         />
         <FormInput

@@ -88,6 +88,7 @@ export default function AddCoordinator() {
   let invalidInputStyles = inputStyles + 'border-rose-500 ';
   const labelStyles = 'opacity-70 text-xs';
   const addInputStyles = ' w-full';
+// Temp comment
   const inputContainer = 'w-full vw-900:w-6/12 vw-900:pr-8 flex flex-col mb-12';
   const buttonStyles = 'w-100 text-md bg-royalBlue font-semibold text-white rounded-2xl px-6 py-8 font-spaceGrotesk';
   const buttonString = 'Create Coordinator';
@@ -140,7 +141,6 @@ export default function AddCoordinator() {
         {/* Password */}
         <label className={labelStyles}>Password</label>
         <input
-// Temp comment
           type='password'
           className={submissionObject.errors.password ? invalidInputStyles : validInputStyles}
           name='password'

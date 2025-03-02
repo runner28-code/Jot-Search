@@ -83,7 +83,6 @@ export default function Footer() {
               rel='noreferrer'
             >
                 Terms of Service
-// Temp comment
             </a>
           </div>
         </div>

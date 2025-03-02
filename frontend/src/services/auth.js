@@ -26,7 +26,6 @@ class AuthService {
   isTokenExpired(token) {
     try {
       const decoded = decode(token);
-      if (decoded.exp < Date.now() / 1000) {
         this.clearStorage();
         return true;
       } else return false;
@@ -128,6 +127,7 @@ class AuthService {
       savedCandidates.push(candidateID);
     } else {
       savedCandidates.splice(savedCandidates.indexOf(candidateID), 1);
+    }
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
   }
 

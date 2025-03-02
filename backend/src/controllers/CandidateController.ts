@@ -24,7 +24,6 @@ import { sendEmail, sendJobsToCandidates } from "../services/EmailService";
 import { getJobsList } from "../services/Job";
 import { normalizeFilters } from "./JobController";
 import { Dictionary } from "typed-two-way-map";
-import e from "express";
 
 @JsonController("/api/candidate")
 export class CandidateController {

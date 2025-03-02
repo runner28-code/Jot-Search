@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
 import linkedin_grey from '../../assets/images/social_linkedin_grey.svg';
+// Temp comment
 import GlobalSearch from '../GlobalSearch';
 import NavMenu from '../NavMenu';
 import { HiOutlineExternalLink } from 'react-icons/hi';
@@ -14,6 +15,7 @@ export default function NavBar() {
   const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {
+    return <MobileNavBarLayout />
   } else {
     return <DesktopNavBarLayout />
   }

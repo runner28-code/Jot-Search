@@ -94,7 +94,6 @@ model Lead {
   name                  String?
   namePrefix            String?
   nameSuffix            String?
-  nickName              String?
   notes                 Json?
   numEmployees          Int?
   occupation            String?
