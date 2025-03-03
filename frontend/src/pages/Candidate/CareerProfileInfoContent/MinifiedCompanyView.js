@@ -8,7 +8,6 @@ export default function MinifiedCompanyView({ candidateData }) {
     <div>
       <p className='text-lg text-black70% font-spaceGrotesk mb-2'>Description</p>
       <div
-// Temp comment
         dangerouslySetInnerHTML={{__html: candidateData.description || 'None listed'}}
         className='text-black70%'
       />

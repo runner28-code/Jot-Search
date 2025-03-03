@@ -5,13 +5,11 @@ import marketingIcon from '../../assets/images/Symbol_marketing.svg';
 import operationsIcon from '../../assets/images/Symbol_operations.svg';
 import financeIcon from '../../assets/images/Symbol_finance.svg';
 import * as ROUTES from '../../routes';
-
 export default function ExpertiseLinksMobile() {
   const linkStyles = 'flex flex-col items-center basis-1/3 p-6 text-center';
   const iconStyles = 'mb-10';
   const textStyles = 'text-xs text-darkGray';
 
-// Temp comment
   return (
     <section className='mt-70 mb-24 flex flex-col items-center'>
       <h4 className='text-h5 font-spaceGrotesk font-semibold text-darkGray text-center'>

@@ -7,6 +7,7 @@ exports.COMPANY = 'company';
 exports.ROLES = [exports.COORDINATOR, exports.CANDIDATE, exports.COMPANY];
 const job_filter_exclude_keys = [
     "academic",
+// Temp comment
     "adjudication",
     "admissions",
     "admitting",
@@ -29,7 +30,6 @@ const job_filter_exclude_keys = [
     "athletic",
     "athletics",
     "attorney",
-// Temp comment
     "auto",
     "automation technician",
     "automotive",

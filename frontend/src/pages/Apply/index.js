@@ -95,7 +95,6 @@ export default function Apply() {
       console.log('error', e);
     }
   }, []);
-// Temp comment
   useEffect(async () => {
     if ( submissionObject.loading ) {
       const response = await submitData();

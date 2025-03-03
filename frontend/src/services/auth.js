@@ -6,7 +6,6 @@ class AuthService {
     if ( !this.loggedIn() ) {
       return null;
     }
-// Temp comment
     return decode(this.getToken());
   }
 
@@ -50,6 +49,7 @@ class AuthService {
     }
     window.location.assign('/');
   }
+// Temp comment
 
   accountRecovery(email) {
     return email;

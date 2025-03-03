@@ -13,7 +13,6 @@ export default function DesktopHeader(props) {
     dataSource,
     backButton
   } = props;
-// Temp comment
   const navigate = useNavigate();
 
   let addOnIconClasses = '';
@@ -26,7 +25,6 @@ export default function DesktopHeader(props) {
     <div className={containerClasses}>
       <div className='flex gap-8 items-center'>
         { icon && (
-          <img
             src={ icon }
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }

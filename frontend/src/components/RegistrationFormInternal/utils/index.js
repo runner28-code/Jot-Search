@@ -1,4 +1,3 @@
-// Temp comment
 import { Link } from 'react-router-dom';
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../LoadingSpinner';

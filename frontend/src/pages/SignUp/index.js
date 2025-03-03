@@ -12,6 +12,7 @@ export default function SignUp() {
         <div className='flex flex-col justify-center items-center'>
           <div className='bg-signup-page-hero bg-cover bg-no-repeat w-full px-[10%] pb-24 pt-8'>
             <div className='relative h-18 w-20 my-8 mx-auto'>
+              <div className='absolute top-[-5px] right-[-3px] h-7 w-7 bg-magenta' />
               <div className='absolute bottom-0 left-0 h-12 w-12 bg-cyan' />
             </div>
             <div className='py-6 px-18 mb-18 bg-aquaBlue flex justify-center items-center'>
@@ -29,7 +30,6 @@ export default function SignUp() {
   }
 
   return (
-    <main className='-mt-28 bg-signup-page-hero bg-contain bg-no-repeat'>
       <div className='pt-40 flex flex-col justify-center items-center'>
         <div className='relative h-24 w-26 mb-15'>
           <div className='absolute top-0 right-0 h-9 w-9 bg-magenta' />

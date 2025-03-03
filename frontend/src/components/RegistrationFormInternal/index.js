@@ -248,6 +248,7 @@ export default function RegistrationFormInternal(loggedIn) {
         <div className={twocol}>
           <FormInput
             type='text'
+// Temp comment
             name='address1'
             label='Address'
             required={true}

@@ -108,6 +108,7 @@ export default function Footer() {
           src={twitter}
           className={socialIconStyle}
         />
+      </a>
       <a href={ROUTES.facebook}>
         <img
           src={facebook}

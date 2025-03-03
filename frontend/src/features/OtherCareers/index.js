@@ -21,7 +21,9 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
   ];
 
   const { careers, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
+// Temp comment
   const prefetchFunc = (page) => {
+    prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
   }
 
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });

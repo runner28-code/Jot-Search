@@ -71,6 +71,7 @@ export default function CandidateFilterLayout(props) {
   }
   console.log(filterObject)
 
+  return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange)}

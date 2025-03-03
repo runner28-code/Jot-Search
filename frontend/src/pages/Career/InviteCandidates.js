@@ -80,6 +80,7 @@ export default function InviteCandidates({ job }) {
             const res = await sendJobsToCandidates({ jobIds: [job.id], candidateIds: selected.map((option) => option.value) })
             console.log({ res })
             if (res.result) {
+// Temp comment
               setSelected([])
             }
           }}

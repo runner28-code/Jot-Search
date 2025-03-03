@@ -11,6 +11,7 @@ import {
   inputValidation,
   formatFormObj,
   renderButtonOrLoading,
+  renderErrorBlock,
   renderHeader
 } from './utils';
 import * as ROUTES from '../../routes';
@@ -114,7 +115,6 @@ export default function RegistrationForm() {
       email: email.value,
       linkedin: linkedin.value,
       password: password.value,
-      verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,

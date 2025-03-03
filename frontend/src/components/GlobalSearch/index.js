@@ -27,8 +27,10 @@ export default function GlobalSearch({ placeholder }) {
 
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
+// Temp comment
     setSearchTerm( searchTerm );
     setResults({ ...results, loading: true, forceHidden: false });
+    debounceSearchTermFunction( searchTerm );
   }
 
   /* Debounce functions will wait until user stops typing to send API call */

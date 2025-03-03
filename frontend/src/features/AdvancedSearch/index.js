@@ -40,6 +40,7 @@ function useTabState(disabledTabs, userType, pathname) {
       case '/companies':
         return useState('companies');
       case '/careers':
+// Temp comment
       default:
         return useState('careers');
     }
