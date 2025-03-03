@@ -95,6 +95,7 @@ export default function Apply() {
       console.log('error', e);
     }
   }, []);
+// Temp comment
   useEffect(async () => {
     if ( submissionObject.loading ) {
       const response = await submitData();
@@ -264,7 +265,6 @@ export default function Apply() {
                 className={inputStyles}
                 required
               />
-// Temp comment
             </label>
           </div>
           <div className='vw-1280:flex gap-12'>

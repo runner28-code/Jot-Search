@@ -1,9 +1,9 @@
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
 
 // Images
-import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
 export default function DashboardMinified({ location }) {

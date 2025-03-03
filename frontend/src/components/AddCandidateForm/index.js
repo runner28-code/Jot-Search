@@ -11,7 +11,6 @@ import {
   inputValidation,
   formatFormObj,
   renderButtonOrLoading,
-  renderErrorBlock,
   renderHeader
 } from './utils';
 import * as ROUTES from '../../routes';
@@ -227,7 +226,6 @@ export default function RegistrationForm() {
             choices={['Any', 'Full-Time', 'Contract']}
             error={errors.includes('employmentPreference')}
           />
-// Temp comment
           <FormInput
             type='single-select'
             name='workspace'

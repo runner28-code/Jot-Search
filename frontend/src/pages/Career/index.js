@@ -18,7 +18,6 @@ import InviteCandidates from './InviteCandidates';
 
 export default function CareerPage() {
   const { width } = useWindowDimensions();
-  const location = useLocation();
   const activeData = location.state;
 
   const isMobile = width < 768;

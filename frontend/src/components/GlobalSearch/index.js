@@ -29,7 +29,6 @@ export default function GlobalSearch({ placeholder }) {
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setResults({ ...results, loading: true, forceHidden: false });
-    debounceSearchTermFunction( searchTerm );
   }
 
   /* Debounce functions will wait until user stops typing to send API call */
@@ -95,6 +94,5 @@ export default function GlobalSearch({ placeholder }) {
           alternateStylesObject={ stylesObject } />
       </div>
       { renderResultsContainer( results, searchTerm ) }
-// Temp comment
     </div>
   )

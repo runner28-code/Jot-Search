@@ -40,7 +40,6 @@ function HeaderContent({ companyData }) {
           { renderBusinessSector(companyData.businessSectorList, 'text-lg font-spaceGrotesk text-royalBlue mb-8') }
         </div>
         <div className={headerRowStyles}>
-          <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={PlacePin}
               className={headerIconStyles}
@@ -109,6 +108,7 @@ HeaderContent.propTypes = {
     numEmployees: PropTypes.number,
   })
 }
+
 export default function Header({ companyData }) {
   return (
     <>

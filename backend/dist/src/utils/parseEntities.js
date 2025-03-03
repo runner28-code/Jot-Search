@@ -13,7 +13,6 @@ const parseBullhornCandidateToUser = (data) => {
         role: "candidate",
         address1: data.address_address1,
         address2: data.address_address2,
-        city: data.address_city,
         state: data.address_state,
         zip: data.address_zip,
         resume: undefined,
@@ -33,7 +32,6 @@ const parseBullhornCandidateToUser = (data) => {
         revenue: data.salary,
         dateFounded: data.dateAdded,
         employeeType: data.employeeType,
-// Temp comment
         experience: data.experience,
         hourlyRate: data.hourlyRate,
         willRelocate: data.willRelocate,

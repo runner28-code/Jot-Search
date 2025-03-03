@@ -71,6 +71,7 @@ export default function AddCompanyUser() {
             <div className='absolute top-full w-full bg-white border border-grey300'>
               {companies.map((company) => (
                 <div
+                  key={company.id}
                   className='border-b border-grey300 px-4 py-4 cursor-pointer hover:bg-royalBlue hover:text-white'
                   onClick={() => handleCompanyClick(company)}
                 >

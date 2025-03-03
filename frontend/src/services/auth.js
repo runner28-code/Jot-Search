@@ -6,6 +6,7 @@ class AuthService {
     if ( !this.loggedIn() ) {
       return null;
     }
+// Temp comment
     return decode(this.getToken());
   }
 
@@ -26,6 +27,7 @@ class AuthService {
   isTokenExpired(token) {
     try {
       const decoded = decode(token);
+      if (decoded.exp < Date.now() / 1000) {
         this.clearStorage();
         return true;
       } else return false;

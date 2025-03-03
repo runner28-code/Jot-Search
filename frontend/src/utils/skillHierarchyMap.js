@@ -28,7 +28,6 @@ export const roles = {
     'Business Operations & Strategy',
     'Client Success and Customer Service',
     'Operations Generalist',
-    'Project and Program Management',
     'Administration',
     'Executive Assistant',
     'Recruiting',
@@ -41,7 +40,6 @@ export const roles = {
     'Education',
     'Healthcare',
     'Legal',
-// Temp comment
     'Misc. Science',
     'Other'
   ],
