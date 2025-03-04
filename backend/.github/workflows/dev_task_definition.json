@@ -4,6 +4,7 @@
     "networkMode": "awsvpc", 
     "containerDefinitions": [
         {
+            "name": "intulsa-backend-container-dev", 
             "image": "site-backend:dev", 
             "cpu": 1024, 
             "memory": 2048, 
@@ -17,3 +18,4 @@
             "essential": true,
             "logConfiguration": { 
                 "logDriver": "awslogs",
+                "options": { 

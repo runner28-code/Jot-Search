@@ -23,6 +23,7 @@ const defaultState = {
   expertise: '',
   roles: [],
   skills: [],
+  experience: '',
   employmentPreference: '',
   workspace: '',
   linkedin: '',
@@ -73,6 +74,7 @@ export default function RegistrationForm() {
         // Set success to true if on add-candidate page, navigate user to login if not
         if ( location.pathname === '/add-candidate' ) {
           return setSubmissionObject({
+// Temp comment
             loading: false,
             success: true,
           })

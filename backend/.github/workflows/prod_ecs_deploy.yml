@@ -10,4 +10,3 @@
 #   ECR_REPOSITORY: 'site-backend'
 #   ECS_SERVICE: 'intulsa-backend-service-prod'
 #   ECS_CLUSTER: 'intulsa-cluster-prod'
-#   ECS_TASK_DEFINITION: '.github/workflows/prod_task_definition.json'

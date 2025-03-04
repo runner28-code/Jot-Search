@@ -19,6 +19,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
         to={`${ROUTES.companies}/${data.id}`}
         className='flex px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
         tabIndex='0'
+// Temp comment
         state={ Boolean(active) }
       >
         {/* Card Image */}
@@ -44,6 +45,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
+          />
           : 
           <FavoriteButton
             type={'company'}

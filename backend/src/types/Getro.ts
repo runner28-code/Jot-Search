@@ -9,6 +9,7 @@ export type Company = {
   founded?: string;
   instagram_url?: string;
   jobs_count?: string;
+  linkedin_url?: string;
   logo_url?: string;
   name?: string;
   ocp_search_status?: string;
@@ -18,3 +19,4 @@ export type Company = {
   topics?: string;
   twitter_url?: string;
   url?: string;
+  website_url?: string;

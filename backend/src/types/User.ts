@@ -19,3 +19,4 @@ export type User = {
   category?: string;
   categoryId?: string | number;
   seniority?: string;
+  workspace?: string;

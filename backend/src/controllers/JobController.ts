@@ -87,3 +87,6 @@ export class JobController {
         return {
           job: {
             ...(job?.getroJobInfo || {}),
+            ...job,
+            clientCorporation: job.company?.name,
+            company_logo: getroCompany?.logo_url

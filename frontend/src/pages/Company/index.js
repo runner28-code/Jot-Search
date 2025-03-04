@@ -72,7 +72,6 @@ export default function Company() {
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
-            : <HeaderMobile
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
@@ -110,4 +109,5 @@ export default function Company() {
           companyData={companyData}
         />
       </div>
+    </div>
   )

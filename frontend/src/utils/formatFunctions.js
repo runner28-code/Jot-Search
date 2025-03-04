@@ -41,7 +41,6 @@ export function formatCandidateData(candidateData) {
 
 export function convertUserToCandidate(user) {
   const candidate = {
-// Temp comment
     id: user.id,
     firstName: user.firstname || '',
     lastName: user.lastname || '',

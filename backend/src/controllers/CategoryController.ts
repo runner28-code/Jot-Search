@@ -3,7 +3,6 @@ import {
   Get,
   JsonController,
   Post,
-  QueryParam,
 } from "routing-controllers";
 import { getCategoriesByFilter } from "../services/Category";
 import {
@@ -11,3 +10,4 @@ import {
   CategorySearchByFilterResponse,
   FilterBody,
 } from "../types/Common";
+

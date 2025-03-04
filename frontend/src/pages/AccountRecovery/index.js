@@ -13,7 +13,6 @@ export default function AccountRecovery() {
     event.preventDefault();
     const { email } = event.target;
     const res = await API.post(ROUTES.APIaccountRecovery, {
-      email: email.value
     });
 
     if ( res.data.result ) {
@@ -28,7 +27,6 @@ export default function AccountRecovery() {
   }
 
   function renderResponse () {
-// Temp comment
     const successStyle = 'mb-4 text-success';
     const errorStyle = 'mb-4 text-error';
     if( response ) {

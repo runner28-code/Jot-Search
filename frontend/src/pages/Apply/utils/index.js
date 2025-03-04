@@ -13,7 +13,6 @@ export const jobReferralChoices = [
   'Indeed',
   'Google',
   'Friend',
-  'Other',
 ];
 
 export const defaultCareerState = {

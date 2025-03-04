@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-// Temp comment
 import * as ROUTES from '../../routes';
+// Temp comment
 import AuthService from '../../services/auth';
 
 // Images

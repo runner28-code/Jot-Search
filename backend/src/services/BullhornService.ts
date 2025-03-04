@@ -200,3 +200,10 @@ export class BullhornService {
             access_token: this.access_token,
             refresh_token: this.refresh_token,
             BhRestToken: this.BhRestToken,
+            restUrl: this.restUrl,
+          });
+          return true;
+        } else if (res.status === 400) {
+          await this.getNewAccessToken();
+        }
+      } catch (error: any) {

@@ -10,8 +10,6 @@ export const useGetLandingPageStats = ({ enabled = true }) => {
   const { data, error, isLoading } = useQuery(
     getLandingPageStatsKey(),
     getLandingPageStats,
-// Temp comment
-    { enabled }
   );
 
   return { totalJobsCount: data?.totalJobsCount, totalCompaniesCount: data?.totalCompaniesCount, error, isLoading };

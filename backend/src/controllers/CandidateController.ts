@@ -83,3 +83,6 @@ export class CandidateController {
   ) {
     try {
       console.log({ body });
+      const { id, ...data } = body;
+
+      if (authUser.role !== COORDINATOR) {

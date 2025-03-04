@@ -34,7 +34,6 @@ const availableTabChoicesByUserType = {
 
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
-// Temp comment
     switch (pathname) {
       case '/candidates':
         return useState('candidates');
@@ -46,3 +45,169 @@ function useTabState(disabledTabs, userType, pathname) {
     }
   }
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');
+}
+
+export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
+  const { width } = useWindowDimensions();
+  const userType = AuthService.getUserRole();
+  const { pathname, state } = useLocation();
+  const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
+  const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
+  if (state) {
+    if (state.title) initialFilterState.title = state.title;
+    if (state.expertise) initialFilterState.Expertise = state.expertise;
+    if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
+  }
+
+  const [filterObject, setFilterObject] = useState(initialFilterState);
+  const [page, setPage] = useState(1);
+
+  /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
+  const getFiltersByTab = (tab) => {
+    if (tab === 'candidates') {
+      const modifiedFilterObject = {
+        ...filterObject,
+        firstname: filterObject.title
+      }
+      delete modifiedFilterObject.title;
+
+      const searchFilters = buildSearchFilters(modifiedFilterObject);
+      return { filtersArr: searchFilters };
+
+    } else if (tab === 'jobs') {
+      const searchFilters = buildSearchFilters(filterObject);
+      return { filtersArr: searchFilters };
+    } else {
+      return { filterKey: 'name', filterValue: filterObject.title }
+    }
+  };
+
+
+  const { jobs, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'jobs' });
+  const { companies, total: totalCompanies, isLoading: isLoadingCompanies } = useGetCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'companies' });
+  const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'candidates' });
+
+  /* CLEAR SEARCH TERM ON TAB SWITCH */
+  const isMount = useIsMount();
+  useEffect(() => {
+    if (isMount) {
+      return;
+    }
+    setFilterObject({ ...filterObject, title: '' });
+    setPage(1);
+  }, [activeTab]);
+
+  useEffect(() => {
+    const newState = { ...initialFilterState, ...state };
+    if (state) {
+      newState.title = state.title || '';
+      newState.Expertise = state.Expertise || 'Any';
+      newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
+    }
+    setFilterObject(newState);
+  }, [state]);
+
+  function handleFilterChange(filterType, choice) {
+    setFilterObject({
+      ...filterObject,
+      [filterType]: choice
+    });
+    setPage(1);
+  }
+
+  function handleSearchChange(searchTerm) {
+    setFilterObject({ ...filterObject, title: searchTerm });
+    setPage(1);
+  }
+  function handleSearchClick() {
+    setPage(1);
+  }
+
+  function handleTabChange(tabChoice) {
+    if (tabChoice === 'jobs') {
+      setFilterObject(defaultJobFilterState);
+    } else if (tabChoice === 'candidates') {
+      setFilterObject(defaultCandidateFilterState);
+    }
+    setActiveTab(tabChoice);
+    setPage(1);
+  }
+
+  function clearFilters() {
+    setFilterObject(initialFilterState);
+    setPage(1);
+  }
+
+  // eslint-disable-next-line no-unused-vars
+  const { Status, ...publicDropdownFilters } = jobFilterObject;
+  const propsByTab = {
+    jobs: {
+      filterTemplate: publicDropdownFilters,
+      activeResults: jobs,
+      totalResults: totalJobs,
+      isLoading: isLoadingJobs,
+      prefetchFunc: (page) => prefetchJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page })
+    },
+    candidates: {
+      filterTemplate: candidateFilterObject,
+      activeResults: candidates,
+      totalResults: totalCandidates,
+      isLoading: isLoadingCandidates,
+      prefetchFunc: (page) => prefetchCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page })
+    },
+    companies: {
+      filterTemplate: {},
+      activeResults: companies,
+      totalResults: totalCompanies,
+      isLoading: isLoadingCompanies,
+      prefetchFunc: (page) => prefetchCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page })
+    }
+  }
+
+  const { filterTemplate, activeResults, totalResults, isLoading, prefetchFunc } = propsByTab[activeTab];
+
+  const filterProps = {
+    handleFilterChange: handleFilterChange,
+    defaultFilterObject: filterTemplate,
+    filterObject: filterObject,
+    searchTerm: filterObject.title,
+    setSearchTerm: handleSearchChange,
+    handleSearchClick: handleSearchClick,
+    clearFilters: clearFilters,
+  };
+  const { PaginatedControls } = usePaginatedControls({ page, setPage, total: totalResults, itemsPerPage: ITEMS_PER_PAGE, prefetchFunc });
+  return (
+    <div className='w-full'>
+      <div className={ !toggle ? 'hidden' : 'relative'}>
+        <div className='relative w-full max-w-400 bg-sky-500 text-white border border-disabledGrey pt-12 px-xxl-4 pb-xxl'>
+          { /* Silence is bliss */}
+          <div className='hidden'>
+            <TabContainer
+              tabChoices={availableTabChoicesByUserType[userType]}
+              activeTab={activeTab}
+              setActiveTab={handleTabChange}
+              isLocked={!!disabledTabs}
+            />
+          </div>
+          <FilterLayout
+            activeTab={activeTab}
+            filterProps={filterProps}
+          />
+        </div>
+      </div>
+      <div className={ width >= 990 ? 'vw-990:px-0' : 'px-[5%] vw-990:px-0'}>
+// Temp comment
+        <ResultsHeader
+          total={totalResults}
+          type={activeTab}
+          loading={isLoading}
+        />
+        <ResultContainer
+          key={activeResults}
+          results={activeResults}
+          type={activeTab}
+          loading={isLoading} />
+        <PaginatedControls />
+      </div>
+    </div>
+  )

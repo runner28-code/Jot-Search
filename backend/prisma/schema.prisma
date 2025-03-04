@@ -43,6 +43,7 @@ model History {
   id       String  @id @default(uuid())
   table    String
   recordId String
+  column   String
   oldValue String?
   newValue String?
 
@@ -150,3 +151,8 @@ model ClientContact {
   fax2               String?
   fax3               String?
   firstName          String?
+  isAnonymized       Boolean?
+  isDayLightSavings  Boolean?
+  isDeleted          Boolean?
+  lastName           String?
+  leads              String?

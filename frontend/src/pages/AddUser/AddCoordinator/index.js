@@ -117,7 +117,6 @@ export default function AddCoordinator() {
           className={submissionObject.errors.lastname ? invalidInputStyles : validInputStyles += addInputStyles}
           name='lastname'
           placeholder='Last Name'
-          value={formObject.lastname}
           onChange={handleInputChange}
         />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.lastname}</p>

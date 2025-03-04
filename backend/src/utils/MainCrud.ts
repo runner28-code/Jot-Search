@@ -10,6 +10,7 @@ export const saveApplication = async (job: string, candidate: string) => {
         userId: candidate,
       },
     });
+    if (!existing) {
       const app = await db.application.create({
         data: {
           user: {
@@ -22,7 +23,7 @@ export const saveApplication = async (job: string, candidate: string) => {
               id: job,
             },
           }
-        },
       });
 
       console.log({ app });
+

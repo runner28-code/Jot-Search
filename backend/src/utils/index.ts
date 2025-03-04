@@ -15,3 +15,5 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
             query: query,
             location: 'US',
         };
+        const [job] = await BigQueryService.getClient().createQueryJob(options);
+        const [res] = await job.getQueryResults();

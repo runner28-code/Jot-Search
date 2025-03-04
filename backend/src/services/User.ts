@@ -127,3 +127,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
         error: `User with id=${id} doesn't exist`,
       };
     }
+
+    if (user.password) {
+      user.password = encryptPassword(user.password);
+    }

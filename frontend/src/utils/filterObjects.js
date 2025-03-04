@@ -122,6 +122,7 @@ export const defaultCandidateFilterState = {
 };
 
 /* UTIL FUNCTIONS */
+export function buildSearchFilters(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = [];
   Object.keys(filterObject).forEach(key => {

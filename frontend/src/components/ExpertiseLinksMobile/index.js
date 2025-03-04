@@ -55,6 +55,7 @@ export default function ExpertiseLinksMobile() {
             src={marketingIcon}
             alt='Marketing Icon'
             className={iconStyles}
+          />
           <span className={textStyles}>Marketing</span>
         </Link>
         {/* Operations */}

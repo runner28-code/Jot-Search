@@ -26,7 +26,6 @@ export const saveCompanies = async (companies: any[]) => {
   //     where: {
   //       id: item.id,
   //     },
-  //     data: {
   //       companyURL: item.companyURL ? item.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null
   //     }
   //   })
@@ -65,3 +64,5 @@ export const saveCompanies = async (companies: any[]) => {
 
         Object.keys(companyData).forEach((key) => {
           if (expludeFields.includes(key)) {
+            delete companyData[key];
+          }

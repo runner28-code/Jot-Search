@@ -14,6 +14,7 @@ const ResumePreview = ({ resumeUrl }) => {
   const { pdfDocument } = usePdf({
     file: resumeUrl,
     page,
+    canvasRef,
   });
 
   const buttonStyles = 'w-15 h-15 ';

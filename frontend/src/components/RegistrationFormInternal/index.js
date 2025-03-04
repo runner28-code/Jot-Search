@@ -377,7 +377,6 @@ export default function RegistrationFormInternal(loggedIn) {
           error={errors.includes('employmentPreference')}
         />
         <FormInput
-// Temp comment
           type='typeahead'
           dropdownType='tags'
           name='skills'
