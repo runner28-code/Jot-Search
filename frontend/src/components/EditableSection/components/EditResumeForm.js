@@ -30,4 +30,3 @@ export default function EditResumeForm({ handleChange }) {
         onChange={handleFileSubmit}
       />
     </div>
-  )

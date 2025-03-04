@@ -77,3 +77,5 @@ export const skills = [
   'Admissions',
   'Adobe',
   'Adobe InDesign',
+  'Adobe XD',
+  'Advanced Excel',

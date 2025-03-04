@@ -377,6 +377,7 @@ export default function RegistrationFormInternal(loggedIn) {
           error={errors.includes('employmentPreference')}
         />
         <FormInput
+// Temp comment
           type='typeahead'
           dropdownType='tags'
           name='skills'
@@ -452,6 +453,7 @@ export default function RegistrationFormInternal(loggedIn) {
         />
         { renderCommunity(referralChoice, commObj, handleCommunityChoice, communityChoices) }
         {/* Terms and Conditions */}
+        <div className={`flex items-center mb-6 ${errors.includes('terms') ? 'border-rose-500 border-solid border rounded-md p-2' : ''}`}>
           <input
             type='checkbox'
             name='terms'

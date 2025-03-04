@@ -6,3 +6,4 @@ CREATE TABLE "User" (
     "email" TEXT NOT NULL,
     "password" TEXT NOT NULL,
     "role" TEXT,
+    "city" TEXT,

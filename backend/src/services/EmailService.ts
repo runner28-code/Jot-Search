@@ -22,3 +22,4 @@ export const sendVerification = async (to: string, name: string) => {
   try {
     const base_url = config.frontendUrl || 'http://localhost:3000';
     await sendEmail(to, 'Welcome to inTulsa!', 'register-verification', {
+      url: `${base_url}/verify`,

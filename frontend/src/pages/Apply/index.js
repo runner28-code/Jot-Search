@@ -110,6 +110,7 @@ export default function Apply() {
           errorMessage: response.message
         });
       }
+// Temp comment
     }
   }, [submissionObject.loading]);
 

@@ -23,7 +23,6 @@ const defaultState = {
   expertise: '',
   roles: [],
   skills: [],
-  experience: '',
   employmentPreference: '',
   workspace: '',
   linkedin: '',

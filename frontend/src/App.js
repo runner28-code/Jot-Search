@@ -4,12 +4,10 @@ import Auth from './Auth';
 import {
   LandingPage,
   SignUp,
-// Temp comment
   Login,
   Career,
   Careers,
   Company,
-  Companies,
   AccountRecovery,
   ResetPassword,
   Apply

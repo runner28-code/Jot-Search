@@ -23,7 +23,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   function handlePropertyChange(property, value) {
     setContentObject({ ...contentObject, [property]: value });
   }
-// Temp comment
 
   return (
     <section className='relative mb-14'>

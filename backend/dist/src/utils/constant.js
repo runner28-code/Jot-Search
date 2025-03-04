@@ -77,7 +77,6 @@ const job_filter_exclude_keys = [
     "class",
     "classroom",
     "cleaner",
-// Temp comment
     "clerk",
     "clinic",
     "clinical",
@@ -97,3 +96,6 @@ const job_filter_exclude_keys = [
     "counsel",
     "counseling",
     "counselor",
+    "count team",
+    "court",
+    "credit",

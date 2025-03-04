@@ -14,6 +14,7 @@ export default function DesktopHeader(props) {
     backButton
   } = props;
   const navigate = useNavigate();
+// Temp comment
 
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-royalBlue ' : ' fill-royalBlue ';
@@ -37,7 +38,6 @@ export default function DesktopHeader(props) {
         <h1 className='font-spaceGrotesk font-medium text-h2 text-royalBlue'>
           { headerText }
         </h1>
-// Temp comment
         { dataSource && (
           <SourceIdentifier type={dataSource} />
         )}

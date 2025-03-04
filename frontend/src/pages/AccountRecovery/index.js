@@ -28,6 +28,7 @@ export default function AccountRecovery() {
   }
 
   function renderResponse () {
+// Temp comment
     const successStyle = 'mb-4 text-success';
     const errorStyle = 'mb-4 text-error';
     if( response ) {
@@ -46,6 +47,7 @@ export default function AccountRecovery() {
         </div>
         {/* Header */}
         <div className='flex justify-center items-center bg-aquaBlue py-2 px-9 vw-1280:py-6 vw-1280:px-36 mt-12 vw-1280:mt-16'>
+          <h1 className='font-spaceGrotesk text-white text-xl vw-768:text-h5 vw-1280:text-h2'>InTulsa Talent Network</h1>
         </div>
         {/* Login Form */}
         <form

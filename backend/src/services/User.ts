@@ -124,3 +124,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
     if (!existing) {
       return {
         result: false,
+        error: `User with id=${id} doesn't exist`,
+      };
+    }

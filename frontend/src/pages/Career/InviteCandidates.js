@@ -55,6 +55,7 @@ export default function InviteCandidates({ job }) {
 
   return (
     <section className="flex flex-col space-y-8 bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4">
+// Temp comment
       <h2 className="text-h4">Send Candidates Invitations to apply to career</h2>
 
       {isSendingJob && <div className="text-center">Sending Invitations...</div>}
@@ -80,6 +81,7 @@ export default function InviteCandidates({ job }) {
             const res = await sendJobsToCandidates({ jobIds: [job.id], candidateIds: selected.map((option) => option.value) })
             console.log({ res })
             if (res.result) {
+              setSelected([])
             }
           }}
           disabled={selected.length === 0 || isSendingJob}

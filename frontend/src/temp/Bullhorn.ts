@@ -33,6 +33,7 @@ export type Company = {
     industryList?: string,
     invoiceFormat?: string,
     name?: string,
+    notes?: string,
     numEmployees?: string,
     numOffices?: string,
     ownerShip?: string,
@@ -63,3 +64,5 @@ export type Job = {
     clientCorporationID?: string;
     date_added?: string;
     date_closed?: string;
+    date_end?: string;
+    date_last_exported?: string;

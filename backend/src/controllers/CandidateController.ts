@@ -2,6 +2,7 @@ import {
   Body,
   Get,
   Post,
+  Put,
   QueryParam,
   JsonController,
   Authorized,
@@ -80,3 +81,5 @@ export class CandidateController {
     @CurrentUser() authUser: User,
     @Body() body: any
   ) {
+    try {
+      console.log({ body });

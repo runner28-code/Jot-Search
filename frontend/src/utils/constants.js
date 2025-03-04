@@ -69,3 +69,4 @@ export const stateCodeMap = {
 };
 
 export function getStateCode(stateName) {
+  return stateCodeMap[stateName];

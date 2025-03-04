@@ -39,9 +39,9 @@ export function formatCandidateData(candidateData) {
   return formattedData;
 }
 
-// Temp comment
 export function convertUserToCandidate(user) {
   const candidate = {
+// Temp comment
     id: user.id,
     firstName: user.firstname || '',
     lastName: user.lastname || '',

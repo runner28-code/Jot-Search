@@ -84,3 +84,6 @@ export class JobController {
       }
 
       if (job) {
+        return {
+          job: {
+            ...(job?.getroJobInfo || {}),

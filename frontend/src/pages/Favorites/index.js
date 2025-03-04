@@ -6,6 +6,7 @@ import { useGetSavedJobs } from '../../hooks/queries/useGetSavedJobs';
 import { useGetSavedCompanies } from '../../hooks/queries/useGetSavedCompanies';
 import { useGetSavedCandidates } from '../../hooks/queries/useGetSavedCandidates';
 import ResultContainer from '../../features/ResultContainer';
+import TabContainer from '../../components/TabContainer';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 function renderTabs(role, activeTab, setActiveTab) {
@@ -16,6 +17,7 @@ function renderTabs(role, activeTab, setActiveTab) {
     <TabContainer
       activeTab={activeTab}
       setActiveTab={setActiveTab}
+// Temp comment
       tabChoices={['careers', 'companies']}
       absolute={false}
     />

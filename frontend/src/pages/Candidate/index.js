@@ -147,4 +147,5 @@ export default function Candidate() {
           candidateData={candidateData}
         />
       </div>
+    </div>
   )

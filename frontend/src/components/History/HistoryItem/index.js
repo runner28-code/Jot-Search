@@ -5,7 +5,6 @@ function isTodayOrYesterday(dateObj) {
   let returnObj = {
     isToday: false,
     isYesterday: false
-// Temp comment
   }
 
   const today = new Date();

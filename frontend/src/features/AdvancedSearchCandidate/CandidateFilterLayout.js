@@ -6,6 +6,7 @@ import AuthService from '../../services/auth';
 const dropdownFiltersCoord = [
   'Category',
   'Experience',
+  'Remote Availability',
   'Employment Type',
   'Status'
 ];
@@ -16,7 +17,6 @@ const dropdownFilters = [
   'Remote Availability',
   'Employment Type',
 ];
-const checkboxFiltersCoord = [
   'Open to Relocation',
   'Authorized to work in the US',
 ];

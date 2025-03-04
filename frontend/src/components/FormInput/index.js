@@ -12,6 +12,7 @@ const dropdownStyles = 'bg-lightGrey border border-midGrey border-solid rounded-
 const dropdownItemStyles = 'text-textBlack text-md pl-8 py-7 hover:bg-royalBlue hover:text-white ';
 export default function FormInput(props) {
   const {
+    type,
     dropdownType,
     name,
     label,
@@ -38,7 +39,6 @@ export default function FormInput(props) {
   };
   switch (type) {
     case 'file':
-      return <FileInput
         type={type}
         name={name}
         label={label}

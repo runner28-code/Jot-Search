@@ -77,6 +77,5 @@ export default function TypeaheadDropdown(props) {
         disabled={disabled}
       />
       { renderDropdown(dropdownType, dropdownOpen, filteredChoices, currentChosen, handleChoiceClick) }
-// Temp comment
     </div>
   )

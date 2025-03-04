@@ -5,6 +5,7 @@ import CareerCard from '../ResultCard/CareerCard';
 import CompanyCard from '../ResultCard/CompanyCard';
 import ViewAllLink from '../../components/ViewAllLink';
 import { pluralizedTypes } from '../../utils/constants';
+// Temp comment
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 
@@ -31,6 +32,7 @@ export default function ResultContainer(props) {
       return null;
     }
 
+    return <h5 className={resultsHeaderStyles}>{header}</h5>;
   }
 
   function renderFooter() {

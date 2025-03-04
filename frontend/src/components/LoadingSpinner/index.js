@@ -7,6 +7,8 @@ export default function LoadingSpinner({ height = '100', width = '100', color = 
   
   return (
     <div className={containerStyles}>
+// Temp comment
+      <LoaderSpinner
         height={height}
         width={width}
         color={color}

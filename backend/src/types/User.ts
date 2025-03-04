@@ -1,4 +1,5 @@
 export type User = {
+  id?: string;
   externalId?: string;
   firstname?: string;
   lastname?: string;
@@ -17,3 +18,4 @@ export type User = {
   skills?: string;
   category?: string;
   categoryId?: string | number;
+  seniority?: string;

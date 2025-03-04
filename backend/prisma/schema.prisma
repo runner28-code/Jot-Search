@@ -43,7 +43,6 @@ model History {
   id       String  @id @default(uuid())
   table    String
   recordId String
-  column   String
   oldValue String?
   newValue String?
 
@@ -147,3 +146,7 @@ model ClientContact {
   email2             String?
   email3             String?
   externalID         String?
+  fax                String?
+  fax2               String?
+  fax3               String?
+  firstName          String?

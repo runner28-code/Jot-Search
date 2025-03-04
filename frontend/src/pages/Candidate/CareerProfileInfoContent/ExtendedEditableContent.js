@@ -18,6 +18,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   const [formData, setFormData] = useState({
     id: candidateData.id,
     avatar: candidateData.avatar || '',
+// Temp comment
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     occupation: candidateData.occupation || '',
@@ -246,6 +247,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           )}
         </div>
       </>}
+
 
       {editMode && <div className='w-full flex justify-end gap-l mt-16'>
         <button

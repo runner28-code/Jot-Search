@@ -27,6 +27,7 @@ export default function AddUser() {
       <img
         src={User}
         alt='User Icon'
+// Temp comment
         className='w-12 h-12 vw-768:w-24 vw-768:h-24 mr-8'
       />
       <span>Add new</span>
@@ -39,6 +40,7 @@ export default function AddUser() {
         noDefault={true}
       />
     </h2>
+    <div className={formType != 'Company' ? defaultContainer : companyContainer }>
       <div className='flex w-full px-8 vw-1280:px-0 3vw-1280:ml-10'>
         { renderFormByType(formType) }
       </div>

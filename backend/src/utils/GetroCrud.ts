@@ -22,3 +22,4 @@ export const saveCompanies = async (companies: any[]) => {
 								if (expludeFields.includes(key)) {
 									delete companyData[key];
 								}
+							});
