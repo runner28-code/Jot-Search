@@ -18,7 +18,6 @@ import * as ROUTES from '../../../routes';
 export const choices = {
   dashboard: {
     label: 'My Dashboard',
-// Temp comment
     icon: DashboardIcon,
     link: ROUTES.dashboard,
   },
@@ -120,7 +119,6 @@ export function findSelectedFromPath() {
       return 'Saved Companies';
     case 'saved-candidates':
       return 'Saved Candidates';
-    case 'active-careers':
       return 'Active Careers';
     case 'candidates':
       return 'Candidates';

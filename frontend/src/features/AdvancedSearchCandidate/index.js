@@ -196,7 +196,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
         </div>
       </div>
       <div className={ width >= 990 ? 'vw-990:px-0' : 'px-[5%] vw-990:px-0'}>
-// Temp comment
         <ResultsHeader
           total={totalResults}
           type={activeTab}

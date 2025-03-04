@@ -65,5 +65,4 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
 
       </div>
       { renderDropdown( showDropdown, choices, handleChoiceClick ) }
-    </div>
   )

@@ -105,7 +105,6 @@ export default function NavSearch({ placeholder }) {
           alternateStylesObject={ stylesObject } 
           setIsOpen={ setIsOpen }
           isOpen={ isOpen }
-        />
       </div>
       { renderResultsContainer( combinedResults, searchTerm ) }
     </div>

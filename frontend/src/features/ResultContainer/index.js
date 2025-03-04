@@ -28,6 +28,7 @@ export default function ResultContainer(props) {
 
   function renderHeader() {
     if ( !header ) {
+// Temp comment
       return null;
     }
 

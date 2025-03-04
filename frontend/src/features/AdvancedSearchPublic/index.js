@@ -204,5 +204,4 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
         type={activeTab}
         loading={isLoading} />
       <PaginatedControls />
-    </div>
   )

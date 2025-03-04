@@ -13,7 +13,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   }
 
   let containerStyles = 'flex items-center rounded-2xl h-[56px] ';
-// Temp comment
   let inputStyles = 'h-full w-full border-midGrey border-solid border-y-2 border-l-2 rounded-l-2xl pl-5 vw-768:pl-10 text-midGrey text-md tracking-wide placeholder:text-xs ';
   if (additionalClasses) {
     containerStyles += additionalClasses;
@@ -27,6 +26,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
       <input
         type='text'
         className={ inputStyles }
+// Temp comment
         placeholder={ placeholderString }
         value={ searchTerm }
         onChange={ handleChange }

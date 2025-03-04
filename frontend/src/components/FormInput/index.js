@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import TextInput from './TextInput';
 import FileInput from './FileInput';
 import AccessibleDropdown from '../AccessibleDropdown';

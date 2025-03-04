@@ -228,7 +228,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             value={formData.email}
             className={inputStyles + 'ml-10 text-h6'} />
         </div>
-        {/* Cancel/Save Buttons */}
         <div className='flex justify-evenly mt-8'>
           <MdCancel 
             className='w-24 h-24 cursor-pointer fill-rose-500'
@@ -236,7 +235,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           <MdCheckCircle 
             className='w-24 h-24 cursor-pointer fill-emerald-500'
             onClick={handleSubmit} />
-// Temp comment
         </div>
       </div>
     </>

@@ -16,6 +16,7 @@ import InviteToCareer from '../Career/InviteToCareer';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
+
 const PREFERENCE_ITEMS = {
   activelyLooking: 'I\'m actively looking for a job',
   openToGetIntro: 'I\'m open to getting introductions from companies',
@@ -134,7 +135,6 @@ export default function Candidate() {
         </div>
         {role === 'coordinator' && 
           <InviteToCareer candidate={candidateData} />
-        }
         {/* Personal Info (Candidate and Coordinator) */}
         <PersonalInfo
           role={role}

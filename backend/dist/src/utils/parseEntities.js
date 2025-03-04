@@ -25,6 +25,7 @@ const parseBullhornCandidateToUser = (data) => {
         referredBy: data.referredBy,
         roles: data.skillSet,
         description: data.description,
+        phone: data.phone || data.workPhone || data.mobile,
         status: data.status,
         username: data.username,
         companyName: data.companyName,

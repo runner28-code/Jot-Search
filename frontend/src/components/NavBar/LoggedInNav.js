@@ -42,12 +42,10 @@ function NavBarLayout() {
         <div className='flex items-center font-spaceGrotesk'>
           <div className='mr-8'>
             { renderNavSearch() }
-          </div>
           {/* Dropdown Menu */}
           <DropdownMenu />
         </div>
       </div>
       {/* Nav Search */}
     </nav>
-// Temp comment
   )

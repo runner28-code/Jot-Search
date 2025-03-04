@@ -74,7 +74,6 @@ export default function RegistrationForm() {
         // Set success to true if on add-candidate page, navigate user to login if not
         if ( location.pathname === '/add-candidate' ) {
           return setSubmissionObject({
-// Temp comment
             loading: false,
             success: true,
           })
@@ -133,7 +132,6 @@ export default function RegistrationForm() {
 
   // Alter header and pronoun based on who is registering the new user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
-  const pronoun = addType === 'candidate' ? 'you' : 'they';
   const buttonString = addType === 'candidate' ? 'Join' : 'Add Candidate';
 
   // Conditional styles

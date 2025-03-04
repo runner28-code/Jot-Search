@@ -5,12 +5,12 @@ import {
   LandingPage,
   SignUp,
   Login,
-  Career,
   Careers,
   Company,
   Companies,
   AccountRecovery,
   ResetPassword,
+  Apply
 } from './pages';
 import { NavBar, Footer, SideNav } from './components';
 import AuthService from './services/auth';

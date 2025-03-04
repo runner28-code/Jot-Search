@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
 export default function MobileHeader(props) {
-// Temp comment
   const {
     headerText,
     icon,
@@ -35,6 +34,7 @@ export default function MobileHeader(props) {
       )}
       { IconComponent && (
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />
+// Temp comment
       )}
       <h1 className='font-spaceGrotesk font-medium text-lg text-lightGrey'>
         { headerText }

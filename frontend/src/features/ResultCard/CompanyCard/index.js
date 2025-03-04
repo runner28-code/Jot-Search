@@ -12,7 +12,6 @@ import { buildCompanyAddress } from '../../../utils/formatFunctions';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 import { useGetJobs } from '../../../hooks/queries/useGetJobs';
 
-// Temp comment
 export default function CompanyCard({ data }) {
   // Format state if not state code. 'Oklahoma' -> 'OK'
   const addressString = buildCompanyAddress(data);

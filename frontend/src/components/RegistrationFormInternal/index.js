@@ -382,7 +382,6 @@ export default function RegistrationFormInternal(loggedIn) {
           name='skills'
           label='Your skills (select at least 3)'
           placeholder='Select all that apply'
-          required={true}
           value={formObj.skills}
           onChange={handleChange}
           choices={skillChoices}

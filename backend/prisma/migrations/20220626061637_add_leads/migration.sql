@@ -8,5 +8,6 @@ CREATE TABLE "Lead" (
     "address_zip" TEXT,
     "address_country_id" TEXT,
     "campaignSource" TEXT,
+    "candidates" TEXT,
     "category" TEXT,
     "clientContacts" TEXT,

@@ -7,10 +7,10 @@ import ResultContainer from '../../features/ResultContainer';
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import {
+// Temp comment
   buildSearchFilters
 } from '../../utils/filterObjects';
 import AuthService from '../../services/auth';
-// Temp comment
 
 const PLACE_HOLDER = 'Search active job title';
 const RESULT_CONTAINER_TYPE = 'active careers';

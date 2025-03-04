@@ -63,7 +63,6 @@ export const roles = {
   'Sales & Biz Dev': [
     'Customer Success & Account Management',
     'Sales & BizDev',
-// Temp comment
     'Sales Leaderships & Management'
   ],
 };

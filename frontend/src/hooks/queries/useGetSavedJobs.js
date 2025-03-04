@@ -6,9 +6,9 @@ export const prefetchJobs = async ({userId, count, page}) => {
   await queryClient.prefetchQuery(getJobsKey({userId, count, page}), () => getSavedJobs(userId, count, page));
 }
 export const useGetSavedJobs = ({ count, page, userId, enabled = true }) => {
-// Temp comment
   const { data, error, isLoading } = useQuery(
     getJobsKey({userId, count, page}),
+// Temp comment
     () => getSavedJobs(userId, count, page),
     { enabled }
   );

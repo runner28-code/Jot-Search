@@ -16,7 +16,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function Company() {
-  const { width } = useWindowDimensions();
   const { id } = useParams();
   const [companyData, setCompanyData] = useState({});
   const [loading, setLoading] = useState(true);
@@ -72,6 +71,7 @@ export default function Company() {
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
+            : <HeaderMobile
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />

@@ -29,7 +29,6 @@ export default function DesktopLayout(props) {
 
   const skillList = careerData.skillList;
 
-  return (<>
     <section className='relative bg-white px-xxl-3 py-xxl-2 border-2 border-disabled border-solid rounded-3xl mb-xxl-4'>
       {/* Header */}
       <div className='flex items-start'>
@@ -46,6 +45,7 @@ export default function DesktopLayout(props) {
               type='job'
               data={careerData}
               addClass='vw-900:top-[-20px] vw-900:right-[-10px]'
+            />
           </div>
           {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold mt-xl'>{categoryString}</p>
