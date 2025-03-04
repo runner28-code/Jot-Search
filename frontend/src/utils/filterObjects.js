@@ -54,6 +54,7 @@ export const defaultJobFilterState = {
   status: ACTIVE_STATUSES,
   ...convertedJobFilters
 };
+
 /* CANDIDATE FILTER UTILS */
 export const candidateFilterObject = {
   'Category': [
@@ -121,7 +122,6 @@ export const defaultCandidateFilterState = {
 };
 
 /* UTIL FUNCTIONS */
-export function buildSearchFilters(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = [];
   Object.keys(filterObject).forEach(key => {

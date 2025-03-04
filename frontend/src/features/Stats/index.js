@@ -58,7 +58,6 @@ export default function Stats({ userType }) {
         'Company Request Introductions': { ...result.companyRequestIntroductions },          
       })
     }
-  }, [timeframe])
 
   return (
     <div className='mb-20 vw-640:mb-30 w-full bg-aquaBlue rounded-3xl border border-disabledGrey pt-14 px-12 pb-11'>

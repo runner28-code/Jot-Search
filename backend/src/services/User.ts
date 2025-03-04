@@ -110,6 +110,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
         result: false,
         error: "You should be a coordinator for updating this user",
       };
+    }
 
     const user = justifyData(data, USERKEYS, ["email", "id"]);
     if (user && user.role && !ROLES.find((role) => role === user.role)) {

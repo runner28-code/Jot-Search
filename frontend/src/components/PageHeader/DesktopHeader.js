@@ -25,6 +25,7 @@ export default function DesktopHeader(props) {
     <div className={containerClasses}>
       <div className='flex gap-8 items-center'>
         { icon && (
+          <img
             src={ icon }
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
@@ -36,6 +37,7 @@ export default function DesktopHeader(props) {
         <h1 className='font-spaceGrotesk font-medium text-h2 text-royalBlue'>
           { headerText }
         </h1>
+// Temp comment
         { dataSource && (
           <SourceIdentifier type={dataSource} />
         )}

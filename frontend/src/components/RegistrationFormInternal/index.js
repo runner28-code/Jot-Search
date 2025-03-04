@@ -248,7 +248,6 @@ export default function RegistrationFormInternal(loggedIn) {
         <div className={twocol}>
           <FormInput
             type='text'
-// Temp comment
             name='address1'
             label='Address'
             required={true}
@@ -453,7 +452,6 @@ export default function RegistrationFormInternal(loggedIn) {
         />
         { renderCommunity(referralChoice, commObj, handleCommunityChoice, communityChoices) }
         {/* Terms and Conditions */}
-        <div className={`flex items-center mb-6 ${errors.includes('terms') ? 'border-rose-500 border-solid border rounded-md p-2' : ''}`}>
           <input
             type='checkbox'
             name='terms'

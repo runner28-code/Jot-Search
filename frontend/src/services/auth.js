@@ -46,10 +46,8 @@ class AuthService {
       await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
       await this.refreshSavedCandidates();
-    }
     window.location.assign('/');
   }
-// Temp comment
 
   accountRecovery(email) {
     return email;

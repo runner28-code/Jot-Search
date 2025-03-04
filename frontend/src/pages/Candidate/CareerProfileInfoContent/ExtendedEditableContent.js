@@ -247,7 +247,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         </div>
       </>}
 
-
       {editMode && <div className='w-full flex justify-end gap-l mt-16'>
         <button
           onClick={handleCancel}

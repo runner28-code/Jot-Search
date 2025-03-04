@@ -105,6 +105,7 @@ export default function ResetPassword() {
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
             >
               Sign-up here
+            </Link>
           </div>
           { renderMatch() }
           { renderSuccess() }
@@ -140,7 +141,6 @@ export default function ResetPassword() {
         <span>Need Help? Just ask </span>
         <a
           href='mailto:help@intulsa.com'
-          className='text-sm vw-640:text-ml text-royalBlue underline'
         >
           help@intulsa.com
         </a>

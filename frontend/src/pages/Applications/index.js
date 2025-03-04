@@ -59,7 +59,6 @@ export default function Applications() {
         IconComponent={BsClipboardCheck}
       />
       <div className='px-8'>
-// Temp comment
         <p className='Desktop-Body-textBody-paragraph-2 text-charcoal my-m'>
           Please note: Only InTulsa Featured Career postings applications can be shown (Sent or Closed status).
         </p>

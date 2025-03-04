@@ -59,6 +59,7 @@ function HeaderContent({ companyData }) {
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <FaUsers
               className={headerIconStyles}
+            />
             <p className={headerRowTextStyles}>{companyData.numEmployees} Employees</p>
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
@@ -92,7 +93,6 @@ function HeaderContent({ companyData }) {
   )
 }
 
-HeaderContent.propTypes = {
   companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
