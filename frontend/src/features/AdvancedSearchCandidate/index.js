@@ -102,7 +102,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (state) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
-// Temp comment
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
     }
     setFilterObject(newState);
@@ -199,7 +198,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       <div className={ width >= 990 ? 'vw-990:px-0' : 'px-[5%] vw-990:px-0'}>
         <ResultsHeader
           total={totalResults}
-          type={activeTab}
           loading={isLoading}
         />
         <ResultContainer

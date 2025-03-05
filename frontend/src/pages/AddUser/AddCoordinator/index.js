@@ -77,7 +77,6 @@ export default function AddCoordinator() {
     const errors = validateObject(formObject);
     if (Object.keys(errors).length > 0) {
       setSubmissionObject({ ...submissionObject, errors: errors });
-// Temp comment
       return;
     } else {
       setSubmissionObject({ ...submissionObject, loading: true });
@@ -165,6 +164,7 @@ export default function AddCoordinator() {
       </div>
       {/* Add Button / Loading Spinner */}
       <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk mt-12 w-full'>{JSON.stringify(submissionObject.errors.submit)}</p>
+// Temp comment
       <div className='flex flex-col mx-auto vw-900:mx-0 vw-900:flex-row vw-900:mt-8'>
         {renderButtonOrLoading(submissionObject, buttonString, buttonStyles)}
       </div>

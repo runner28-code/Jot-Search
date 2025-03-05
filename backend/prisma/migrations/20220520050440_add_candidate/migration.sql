@@ -11,7 +11,6 @@ CREATE TABLE "Candidate" (
     "dateAvailable" TIMESTAMP(3),
     "dateAvailableEnd" TIMESTAMP(3),
     "dateI9Expiration" TIMESTAMP(3),
-    "dateLastComment" TIMESTAMP(3),
     "dateLastModified" TIMESTAMP(3),
     "dateNextCall" TIMESTAMP(3),
     "dateOfBirth" TEXT,
@@ -19,3 +18,4 @@ CREATE TABLE "Candidate" (
     "dayRateLow" TEXT,
     "degreeList" TEXT,
     "description" TEXT,
+    "desiredLocations" TEXT,

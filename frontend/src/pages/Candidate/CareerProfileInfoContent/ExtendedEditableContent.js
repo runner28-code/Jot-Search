@@ -258,6 +258,5 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         >
           <span>Save</span>
         </button>
-      </div>}
     </div>
   </>)

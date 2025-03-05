@@ -29,7 +29,6 @@ export default function AccountRecovery() {
 
   function renderResponse () {
     const successStyle = 'mb-4 text-success';
-// Temp comment
     const errorStyle = 'mb-4 text-error';
     if( response ) {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )

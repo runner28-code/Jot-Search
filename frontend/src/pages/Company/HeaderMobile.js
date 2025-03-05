@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 // import FeaturedTag from '../../components/FeaturedTag';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
@@ -47,7 +48,6 @@ function HeaderContent({ companyData }) {
                   companyId={companyData.id}
                 />
               </div> 
-            </div>
           </div>
         </div>
 

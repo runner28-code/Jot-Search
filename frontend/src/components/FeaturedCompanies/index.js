@@ -25,7 +25,6 @@ export default function FeaturedCompanies() {
         {
           isLoading ?
             <LoadingSpinner />
-// Temp comment
             :
             companies.map((company, index) =>
               <Link
@@ -40,6 +39,7 @@ export default function FeaturedCompanies() {
       <div className='text-center mt-48'>
         <Link
           to={ROUTES.companies}
+// Temp comment
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
         </Link>

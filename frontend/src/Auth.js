@@ -48,7 +48,7 @@ export default function Auth() {
           path={ROUTES.candidates}
           element={<Candidates />} />
         <Route
-          path={ROUTES.addUser}
           element={<AddUser />} />
       </Routes>
+    </div>
   )

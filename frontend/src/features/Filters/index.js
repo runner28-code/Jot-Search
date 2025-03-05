@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
-
 export default function Filters(props) {
   const {
     handleFilterChange,
@@ -25,5 +24,4 @@ export default function Filters(props) {
       </div>
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
     </div>
-// Temp comment
   )

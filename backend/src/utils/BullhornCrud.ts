@@ -58,7 +58,6 @@ export const saveCompanies = async (companies: any[]) => {
           return -1;
         }
 
-        const companyData = {
           addressId: address.id,
           ...company
         };
@@ -67,3 +66,5 @@ export const saveCompanies = async (companies: any[]) => {
           if (expludeFields.includes(key)) {
             delete companyData[key];
           }
+        });
+

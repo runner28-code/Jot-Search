@@ -11,6 +11,7 @@ export default function PasswordReset({role, candidateData}) {
   const [condition, setCondition] = useState('');
 
   function setType(response, condition) {
+    setCondition(condition);
     setResponse(response);
   }
 
@@ -30,6 +31,7 @@ export default function PasswordReset({role, candidateData}) {
           <ResetButton
             candidateData={candidateData}
             setType={setType}
+// Temp comment
           />
         )}
         { role === 'coordinator' && (

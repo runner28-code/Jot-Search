@@ -35,6 +35,7 @@ export default function CandidateCard({ data, disableLink }) {
         <div className='flex flex-col items-center gap-m mr-20'>
           <div className='h-48 w-48 flex justify-center items-center'>
             <img
+// Temp comment
               src={avatarUrl}
               className='rounded-full'
             />
@@ -49,7 +50,6 @@ export default function CandidateCard({ data, disableLink }) {
             { renderActiveStatus(data) }
           </div>
           {/* Occupation */}
-// Temp comment
           <p className='text-charcoal mt-l'>{occupationString}</p>
           {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold text-md mt-[18px]'>{expertiseString}</p>

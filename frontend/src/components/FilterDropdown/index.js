@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { isObject } from 'lodash';
+// Temp comment
 
 export default function Dropdown({ choices, handleChoiceClick, additionalStyles }) {
   const objectifiedChoices = isObject(choices[0]) ? choices : choices.map(choice => ({
@@ -20,6 +21,7 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
             className={choiceStyles}
             key={choice.id}>
             {choice.name}
+          </div>
         )
       })}
     </div>

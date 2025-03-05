@@ -13,3 +13,4 @@
             "jsx": true
         },
         "ecmaVersion": "latest",
+        "sourceType": "module"

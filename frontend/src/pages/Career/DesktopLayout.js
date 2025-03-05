@@ -55,6 +55,7 @@ export default function DesktopLayout(props) {
             {/* Location */}
             <div className='w-1/3 flex items-center'>
               <img
+                src={locationIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{addressString}</p>
             </div>
@@ -85,6 +86,7 @@ export default function DesktopLayout(props) {
             <div className='w-1/2 flex items-center pr-4'>
               <img
                 src={salaryIcon}
+// Temp comment
                 className='h-11 mr-5' />
               <p className='text-textBlack'>{salaryString}</p>
             </div>

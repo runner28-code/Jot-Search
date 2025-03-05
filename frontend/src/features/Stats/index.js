@@ -55,8 +55,8 @@ export default function Stats({ userType }) {
         'Total Open Jobs': { ...result.totalOpenJobs },
         'Total Candidates': { ...result.totalCandidates },
         'Applications Submitted': { ...result.applicationsSubmitted },
-        'Company Request Introductions': { ...result.companyRequestIntroductions },          
       })
+    }
   }, [timeframe])
 
   return (

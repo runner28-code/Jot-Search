@@ -1,4 +1,4 @@
-{
+    "family": "dev-site-backend-task", 
     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole", 
     "networkMode": "awsvpc", 
     "containerDefinitions": [
@@ -18,3 +18,4 @@
             "logConfiguration": { 
                 "logDriver": "awslogs",
                 "options": { 
+                   "awslogs-group" : "/ecs/dev-site-backend-task",

@@ -86,3 +86,5 @@ export class CandidateController {
       const { id, ...data } = body;
 
       if (authUser.role !== COORDINATOR) {
+        return { message: "You are not authorized to update candidate", result: false };
+      }

@@ -342,7 +342,6 @@ export default function Apply() {
               className={labelStyles}
             >
               <p className={labelTextStyles}>Pronouns</p>
-              <input
                 type='text'
                 name='pronouns'
                 placeholder='Pronouns'

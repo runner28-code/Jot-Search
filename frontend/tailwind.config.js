@@ -35,6 +35,7 @@ module.exports = {
       colors: {
         // Main Brand Colors
         royalBlue: '#176AB9',
+        aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
         'legal-bg': '#23242D',
         // Neutrals
@@ -51,5 +52,7 @@ module.exports = {
         success: '#2EA248',
         error: '#DE5454',
         warning: '#F4D12E',
+// Temp comment
         disabledGrey: '#C9C9CE',
         magenta: '#EB4A87',
+        // Colors included in design but not in Web Style Guide

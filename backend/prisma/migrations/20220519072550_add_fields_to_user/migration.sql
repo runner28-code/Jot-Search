@@ -1,3 +1,4 @@
+-- AlterTable
 ALTER TABLE "User" ADD COLUMN     "_score" DOUBLE PRECISION,
 ADD COLUMN     "billingContact" TEXT,
 ADD COLUMN     "billingFrequency" TEXT,
@@ -10,3 +11,4 @@ ADD COLUMN     "culture" TEXT,
 ADD COLUMN     "customDate1" TIMESTAMP(3),
 ADD COLUMN     "customDate2" TIMESTAMP(3),
 ADD COLUMN     "customDate3" TIMESTAMP(3),
+ADD COLUMN     "customFloat1" DOUBLE PRECISION,

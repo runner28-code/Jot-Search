@@ -64,7 +64,6 @@ export default function InviteCandidates({ company }) {
         options={candidateOptions}
         value={selected}
         onChange={setSelected}
-// Temp comment
         labelledBy="Select"
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}

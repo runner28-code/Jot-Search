@@ -58,7 +58,6 @@ export class CompanyController {
       return {
         company,
         source: datasource,
-      };
     } else {
       return {
         source: DataSource.UNKNOWN,
@@ -75,3 +74,5 @@ export class CompanyController {
   ): Promise<ApplyResponse> {
     return await saveCompany(body.company, body.candidate! || authUser.id!);
   }
+
+  @Authorized()

@@ -11,3 +11,4 @@ CREATE TABLE "Lead" (
     "candidates" TEXT,
     "category" TEXT,
     "clientContacts" TEXT,
+    "clientCorporation" TEXT,

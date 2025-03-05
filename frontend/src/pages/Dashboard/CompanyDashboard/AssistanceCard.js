@@ -6,6 +6,7 @@ export default function AssistanceCard() {
       {/* Header */}
       <div className='flex'>
         <img
+          src={flagIcon}
           alt='Flag'
           className='w-auto h-auto'
         />
