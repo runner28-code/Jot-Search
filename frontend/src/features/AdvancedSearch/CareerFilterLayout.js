@@ -61,6 +61,5 @@ export default function CareerFilterLayout(props) {
         >
           Clear All
         </button>
-      </div>
     </div>
   );

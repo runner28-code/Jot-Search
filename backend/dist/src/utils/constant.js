@@ -54,7 +54,6 @@ const job_filter_exclude_keys = [
     "buyer",
     "cafeteria",
     "cage",
-// Temp comment
     "call center",
     "camp",
     "campaign",
@@ -95,7 +94,6 @@ const job_filter_exclude_keys = [
     "copywriter",
     "corporate card",
     "counsel",
-    "counseling",
     "counselor",
     "count team",
     "court",

@@ -87,7 +87,6 @@ const job_filter_exclude_keys = [
   "compliance",
   "composition",
   "construction",
-  "controller",
   "cook",
   "copywriter",
   "corporate card",

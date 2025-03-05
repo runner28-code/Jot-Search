@@ -132,6 +132,7 @@ export default function RegistrationForm() {
 
   // Alter header and pronoun based on who is registering the new user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
+  const pronoun = addType === 'candidate' ? 'you' : 'they';
   const buttonString = addType === 'candidate' ? 'Join' : 'Add Candidate';
 
   // Conditional styles
@@ -209,7 +210,6 @@ export default function RegistrationForm() {
         </div>
         <div className={flexWidth}>
           <FormInput
-            type='single-select'
             name='experience'
             placeholder='Years of Experience' 
             value={formObj.experience}

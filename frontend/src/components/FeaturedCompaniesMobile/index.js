@@ -10,7 +10,6 @@ export default function FeaturedCompaniesMobile() {
 
   const filtersArr = [
     {
-// Temp comment
       key: 'status',
       value: 'active'
     }

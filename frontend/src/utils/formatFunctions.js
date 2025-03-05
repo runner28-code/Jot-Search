@@ -21,6 +21,7 @@ export function formatCandidateData(candidateData) {
     const occupation = candidateData.occupation || 'N/A';
     const companyName = candidateData.companyName || 'N/A';
     formattedData.occupationString = `${occupation} at ${companyName}`;
+// Temp comment
   }
   formattedData.comments = candidateData.comments || 'No comments provided';
   formattedData.phone = formatPhoneNumber(candidateData.phone);
@@ -42,7 +43,6 @@ export function formatCandidateData(candidateData) {
 export function convertUserToCandidate(user) {
   const candidate = {
     id: user.id,
-// Temp comment
     firstName: user.firstname || '',
     lastName: user.lastname || '',
     name: formatCandidateName(user.firstname, user.lastname),

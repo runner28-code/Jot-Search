@@ -74,7 +74,6 @@ function HeaderContent({ companyData }) {
               src={Globe}
               className={headerIconStyles}
             />
-            { renderCompanyWebsite(companyData.companyURL, headerRowTextStyles) }
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img

@@ -111,7 +111,6 @@ model Lead {
   reportToPerson        String?
   role                  String?
   salary                BigInt?
-  salaryLow             BigInt?
   secondarySkills       String?
   skillSet              String?
   smsOptIn              Boolean?

@@ -8,7 +8,6 @@ class AuthService {
     }
     return decode(this.getToken());
   }
-
   getUserRole() {
     let role = 'guest';
     if (this.loggedIn()) {
@@ -101,6 +100,7 @@ class AuthService {
     } else {
       savedJobs.splice(savedJobs.indexOf(jobID), 1);
     }
+    localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
   }
 
   getSavedJobIDs() {

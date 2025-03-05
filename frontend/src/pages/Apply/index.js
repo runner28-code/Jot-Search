@@ -323,7 +323,6 @@ export default function Apply() {
               optionValue={ applicationObject.authorizedInUs }
             />
             <Checkbox 
-// Temp comment
               name='authorizedInUs'
               attribute='No'
               setOptionValue={ () => setApplicationObject({...applicationObject, authorizedInUs: false }) }

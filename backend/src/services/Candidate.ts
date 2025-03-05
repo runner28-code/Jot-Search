@@ -9,7 +9,6 @@ export const saveCandidate = async (
       where: {
         AND: {
           id: companyUserId,
-          savedCandidates: {
             some: {
               id: candidateId,
             },

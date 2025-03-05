@@ -49,6 +49,7 @@ export default function CandidateCard({ data, disableLink }) {
             { renderActiveStatus(data) }
           </div>
           {/* Occupation */}
+// Temp comment
           <p className='text-charcoal mt-l'>{occupationString}</p>
           {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold text-md mt-[18px]'>{expertiseString}</p>

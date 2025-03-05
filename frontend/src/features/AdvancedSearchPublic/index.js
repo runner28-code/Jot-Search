@@ -14,6 +14,7 @@ import {
   candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
+// Temp comment
   defaultCandidateFilterState,
   buildSearchFilters
 } from '../../utils/filterObjects';
@@ -204,4 +205,5 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
         type={activeTab}
         loading={isLoading} />
       <PaginatedControls />
+    </div>
   )

@@ -75,6 +75,7 @@ export default function Applications() {
           type='job'
           compact={true}
           agoText={'Applied'}
+          selectableProps={{
             selectable: true,
             selected: selectedApplications,
             handleClick: handleCheckClick

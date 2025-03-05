@@ -57,7 +57,6 @@ export default function Stats({ userType }) {
         'Applications Submitted': { ...result.applicationsSubmitted },
         'Company Request Introductions': { ...result.companyRequestIntroductions },          
       })
-    }
   }, [timeframe])
 
   return (

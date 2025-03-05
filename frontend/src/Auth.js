@@ -51,5 +51,4 @@ export default function Auth() {
           path={ROUTES.addUser}
           element={<AddUser />} />
       </Routes>
-    </div>
   )

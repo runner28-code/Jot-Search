@@ -12,7 +12,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
   const filtersArr = [
     {
       key: 'status',
-// Temp comment
       value: ['Active', 'Open']
     },
     {
@@ -41,7 +40,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
           if (career.externalId === currentCareerId) { // Don't show the current career
             return null;
           }
-          return <CareerCard
             key={index}
             data={career}
           />

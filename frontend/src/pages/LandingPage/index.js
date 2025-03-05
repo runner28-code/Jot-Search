@@ -3,6 +3,7 @@ import ExploreSearch from '../../components/ExploreSearch';
 import ExploreSearchMobile from '../../components/ExploreSearchMobile';
 import ExpertiseLinks from '../../components/ExpertiseLinks';
 import ExpertiseLinksMobile from '../../components/ExpertiseLinksMobile';
+import JoinTalentNetwork from '../../components/JoinTalentNetwork';
 import FeaturedJobs from '../../components/FeaturedJobs';
 import FeaturedCompanies from '../../components/FeaturedCompanies';
 import FeaturedCompaniesMobile from '../../components/FeaturedCompaniesMobile';
@@ -35,7 +36,6 @@ export default function LandingPage() {
         </div>
         { renderSearch() }
       </section>
-      {/* Browse Opportunities by Expertise */}
       { renderExpertiseLinks() }
       { isMobile && <JoinTalentNetwork /> }
       {/* Featured Jobs */}
