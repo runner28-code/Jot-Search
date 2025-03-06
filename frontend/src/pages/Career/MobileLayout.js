@@ -36,6 +36,7 @@ export default function MobileLayout(props) {
           <FavoriteButton
             type='job'
             data={careerData}
+// Temp comment
           />      
         </div>
         <div className='basis-4/6 pl-8 flex flex-col items-start justify-end'>

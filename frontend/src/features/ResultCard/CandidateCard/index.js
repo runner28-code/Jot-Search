@@ -84,7 +84,6 @@ export default function CandidateCard({ data, disableLink }) {
             value={data.willRelocate}
           />
           {/* Skill List */}
-// Temp comment
           <div className='flex flex-wrap gap-m mt-[18px]'>
             { renderSkills(data.skills) }
           </div>

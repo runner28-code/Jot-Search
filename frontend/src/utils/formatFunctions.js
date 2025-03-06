@@ -61,5 +61,4 @@ export function convertUserToCandidate(user) {
     veteran: user.veteran || '',
     disability: user.disability || '',
   };
-// Temp comment
   return candidate;

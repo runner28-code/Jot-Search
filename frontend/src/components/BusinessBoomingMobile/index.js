@@ -1,6 +1,6 @@
 import * as ROUTES from '../../routes';
 
-  return (
+export default function BusinessBooming() {
     <section>
       <div className='relative w-full h-full bg-orangeHeroOverlay/90 p-12 '>
         <p className='text-white font-spaceGrotesk font-semibold text-lg'>Business is Booming.</p>

@@ -19,6 +19,7 @@ export default function FormInput(props) {
     placeholder,
     value,
     required,
+// Temp comment
     onChange,
     choices,
     choiceObject,
@@ -48,6 +49,7 @@ export default function FormInput(props) {
         required={required}
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}
+        disabled={disabled}
       />
     case 'single-select': // fall through
     case 'multi-select':

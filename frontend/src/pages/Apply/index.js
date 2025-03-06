@@ -66,7 +66,6 @@ export default function Apply() {
         getCandidateById(user_id),
       ]);
       if ( candidateData.workAuthorized === true ) {
-        candidateData.workAuthorized = 'Yes';
       } else {
         candidateData.workAuthorized = 'No';
       }
@@ -416,6 +415,7 @@ export default function Apply() {
           Back
           </button>
         </div>
+        <div className='text-error'>
           { renderError( submissionObject.errorMessage ) }
         </div>
       </div>

@@ -57,6 +57,7 @@ export const stateCodeMap = {
   'Rhode Island': 'RI',
   'South Carolina': 'SC',
   'South Dakota': 'SD',
+  Tennessee: 'TN',
   Texas: 'TX',
   Utah: 'UT',
   Vermont: 'VT',

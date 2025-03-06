@@ -28,6 +28,7 @@ const checkboxFilters = [
 ];
 
 export default function CandidateFilterLayout(props) {
+  const {
     defaultFilterObject,
     filterObject,
     handleFilterChange,
@@ -50,7 +51,6 @@ export default function CandidateFilterLayout(props) {
   } else {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
-    });
     checkboxFilters.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
     });

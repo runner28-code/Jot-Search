@@ -16,7 +16,6 @@ import AuthService from '../../services/auth';
 
 const PREFERENCE_ITEMS = {
   workAuthorized: 'Are you legally authorized to work in the US on a fulltime basis for any employer?',
-// Temp comment
 }
 
 export default function PersonalInfo({role, candidateData, handleCandidateUpdate}) {
@@ -41,5 +40,4 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   const [referralChoice, setReferralChoice] = useState(false);
 
   function handleInputChange(e) {
-    const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });

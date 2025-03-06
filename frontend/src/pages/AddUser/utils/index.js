@@ -1,5 +1,4 @@
 export function validateInput(name, value, errors, password) {
-// Temp comment
   const newErrors = { ...errors };
   
   // Email validation

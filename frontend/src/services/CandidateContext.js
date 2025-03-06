@@ -44,7 +44,6 @@ const mockCandidateData = [
     occupation: 'Project Manager',
     companyName: 'Aerovision',
     address_city: 'Tulsa',
-// Temp comment
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma',
@@ -125,7 +124,6 @@ const CandidateProvider = ({children}) => {
     setCandidates([...filteredCandidates, updatedCandidate]);
   }
 
-  return (
     <CandidateContext.Provider value={{ candidates, currentUser, setCurrentUser, handleCandidatesChange, handleCandidateUpdate }}>
       {children}
     </CandidateContext.Provider>

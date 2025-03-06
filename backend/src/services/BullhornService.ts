@@ -60,6 +60,7 @@ export class BullhornService {
       if (await this.getAccessToken()) return await this.login();
     }
     return false;
+  }
 
   async getCookie() {
     const targetFile = __dirname + "/../config/cookie.json";
@@ -103,7 +104,6 @@ export class BullhornService {
     console.log("url =", url);
     const res = await axios.get(url);
     if (res.status === 200) {
-      const path = res.request.path;
       console.log("path =", path);
       this.auth_code = path
         .slice(7, path.indexOf("&client"))

@@ -9,6 +9,7 @@ const ITEMS_PER_PAGE = 5;
 
 export default function OtherCareers({ companyId, companyName, currentCareerId }) {
   const [page, setPage] = useState(1);
+// Temp comment
   const filtersArr = [
     {
       key: 'status',
@@ -17,6 +18,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     {
       key: 'companyId',
       value: companyId
+    }
   ];
 
   const { careers, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
