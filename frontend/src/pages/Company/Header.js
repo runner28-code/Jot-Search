@@ -6,6 +6,7 @@ import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
 
+// Temp comment
 
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
@@ -73,7 +74,6 @@ function HeaderContent({ companyData }) {
             <img
               src={Globe}
               className={headerIconStyles}
-// Temp comment
             />
             { renderCompanyWebsite(companyData.companyURL, headerRowTextStyles) }
           </div>

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-// Temp comment
 import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
@@ -18,6 +17,7 @@ export default function FeaturedCompaniesMobile() {
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
+// Temp comment
   return(
     <div className='py-48 px-[5%] flex flex-col items-center'>
       { renderColorShapes() }

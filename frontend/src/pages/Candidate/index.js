@@ -73,7 +73,6 @@ export default function Candidate() {
       updateResponse = await updateCandidate(convertedCandidateObject, id);
     } else {
       updateResponse = await updateUser(formattedUpdateObject, id);
-    }
     if (isProfilePage) {
       setCurrentUser({...updateResponse.data})
     }

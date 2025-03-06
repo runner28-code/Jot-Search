@@ -33,6 +33,7 @@ export class CandidateController {
   async savedJobs(@QueryParam("candidate") candidate: string) {
     return await getSavedJobs(candidate);
   }
+
   @Authorized()
   @Get("/search")
   async searchById(@QueryParam("id") id: string) {

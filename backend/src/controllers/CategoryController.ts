@@ -11,4 +11,3 @@ import {
   CategorySearchByFilterResponse,
   FilterBody,
 } from "../types/Common";
-

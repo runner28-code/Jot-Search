@@ -10,4 +10,5 @@ CREATE TABLE "Lead" (
     "campaignSource" TEXT,
     "candidates" TEXT,
     "category" TEXT,
+    "clientContacts" TEXT,
     "clientCorporation" TEXT,

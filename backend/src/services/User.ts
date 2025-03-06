@@ -58,7 +58,6 @@ const validateUser = ({
   }
   return false;
 };
-
 export const register = async (data: User) => {
   try {
     console.log("registering...");

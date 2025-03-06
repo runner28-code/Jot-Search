@@ -19,6 +19,7 @@ const dropDownFiltersCandidate = [
 ]
 
 export default function CareerFilterLayout(props) {
+// Temp comment
   let userType = AuthService.getUserRole();
   const { width } = useWindowDimensions();
   const {
@@ -59,6 +60,7 @@ export default function CareerFilterLayout(props) {
         />
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
+          onClick={clearFilters}
         >
           Clear All
         </button>

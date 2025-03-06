@@ -22,7 +22,6 @@ export class BullhornService {
   private access_token = null;
   private refresh_token = null;
   private BhRestToken = null;
-  private restUrl = null;
   private corpToken = null;
   private oauth_url = "https://auth.bullhornstaffing.com/oauth";
   private api_base_url = "https://rest.bullhornstaffing.com/rest-services";
@@ -133,6 +132,7 @@ export class BullhornService {
     console.log(res);
     console.log("============================ \n");
     if (res.status === 200) {
+      const { access_token, refresh_token } = res.data;
       this.access_token = access_token;
       this.refresh_token = refresh_token;
       console.log("Access Token: ", this.access_token);

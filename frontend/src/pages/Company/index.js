@@ -21,7 +21,6 @@ export default function Company() {
   const [companyData, setCompanyData] = useState({});
   const [loading, setLoading] = useState(true);
 
-// Temp comment
   useEffect(async () => {
     const companyFromApi = await getCompanyById(id);
     setCompanyData(companyFromApi.company);

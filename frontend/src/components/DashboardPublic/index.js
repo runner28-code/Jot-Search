@@ -8,6 +8,7 @@ import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
+
 export default function DashboardPublic({togglePassState}) {
   const { width } = useWindowDimensions();
 
@@ -38,7 +39,6 @@ export default function DashboardPublic({togglePassState}) {
             <p className='ml-4'>Careers</p>
           </Link>
           <Link
-            className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }
             to={ROUTES.companies}
           >
             <CompanyIcon />

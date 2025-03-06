@@ -45,6 +45,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         onClick={() => setShowDropdown(showDropdown => !showDropdown)}
         className={ wrapperStyles }>
         <p
+// Temp comment
           id='title'
           className='Desktop-Body-textBody-paragraph-2 text-charcoal'>{ timeframe }</p>
         <img 
@@ -54,4 +55,5 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         />
       </div>
       { renderDropdown( showDropdown ) }
+    </div>
   )

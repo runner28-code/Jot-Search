@@ -48,7 +48,6 @@ export const roles = {
     'AI Machine Learning',
     'Backend Engineer',
     'Frontend Engineer',
-    'Full Stack Engineer',
     'DevOps & Infrastructure',
     'Game Engineer',
     'QA Engineer',

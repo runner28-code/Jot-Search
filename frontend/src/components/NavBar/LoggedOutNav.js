@@ -11,7 +11,6 @@ import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function NavBar() {
-// Temp comment
   const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {

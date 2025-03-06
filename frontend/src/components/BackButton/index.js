@@ -10,4 +10,3 @@ export default function BackButton() {
     >
       {'< Go Back'}
     </button>
-  )

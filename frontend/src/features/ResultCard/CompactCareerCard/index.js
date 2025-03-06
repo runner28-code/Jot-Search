@@ -56,6 +56,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
       {
         selectableProps && selectableProps.selectable ?
           <Checkbox
+// Temp comment
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
@@ -63,7 +64,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
           : 
           <FavoriteButton
             type={'job'}
-// Temp comment
             data={data}
             isFavoriteOverride={isFavoriteOverride} />
       }

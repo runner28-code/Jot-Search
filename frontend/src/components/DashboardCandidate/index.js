@@ -38,7 +38,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
           >
             <CompanyIcon />
             <p className='ml-4'>Companies</p>
-// Temp comment
           </Link>
         </div>
       </div>

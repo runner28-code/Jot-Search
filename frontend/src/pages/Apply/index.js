@@ -402,7 +402,6 @@ export default function Apply() {
               <UploadIcon className='h-16 w-16 fill-gray-600' />
               <p>Upload</p>
             </label>
-          </div>
 
             
           {/* { originalObject.resume && renderUseExistingResumeCheckbox( useExistingResume, setUseExistingResume) } */}
@@ -421,3 +420,4 @@ export default function Apply() {
         </div>
       </div>
     </form>
+  </>)

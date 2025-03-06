@@ -66,7 +66,6 @@ export default function DesktopLayout(props) {
               <p className='text-textBlack'>{careerData.onSite}</p>
             </div>
             {/* Posting age */}
-// Temp comment
             <div className='w-1/3 flex items-center pr-4'>
               <img
                 src={postingAgeIcon}
@@ -94,7 +93,6 @@ export default function DesktopLayout(props) {
           {(role === 'candidate' || role === 'guest') && (
             <ApplyButton
               datasource={careerData.datasource}
-              careerId={careerData.id}
               applicationUrl={careerData.application_path || careerData.url}
             />
           )}

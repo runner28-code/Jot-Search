@@ -5,7 +5,6 @@ import LoadingSpinner from '../../../components/LoadingSpinner';
 import PropTypes from 'prop-types';
 
 export const ethnicityChoices = Object.values(ethnicityMap);
-export const genderChoices = Object.values(genderMap);
 export const veteranStatusChoices = Object.values(veteranStatusMap);
 export const disabilityChoices = Object.values(disabilityMap);
 export const jobReferralChoices = [
@@ -32,6 +31,7 @@ export const defaultState = {
   willRelocate: true,
   referral: '',
   resume: '',
+  newResume: {},
   ethnicity: '',
   gender: '',
   workAuthorized: '',

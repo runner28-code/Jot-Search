@@ -19,7 +19,6 @@ export default function CandidateCard({ data, disableLink }) {
   const experienceString = formatYearsExperience(data.experienceYears, data.experience);
   const addressString = buildCandidateAddress(data);
   const expertiseString = data.expertise ? data.expertise : 'No expertise listed';
-  const occupationString = buildOccupationString(data.occupation, data.companyName);
   const link = data.user ? `${ROUTES.candidates}/${data.user.id}` : `${ROUTES.candidates}/${data.id}`
 
   return (
@@ -37,6 +36,7 @@ export default function CandidateCard({ data, disableLink }) {
             <img
               src={avatarUrl}
               className='rounded-full'
+            />
           </div>
           <NewLeadLabel status={data.status} />
         </div>
