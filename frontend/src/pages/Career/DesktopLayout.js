@@ -18,6 +18,7 @@ const hrStyles = 'mb-10 border-smokeGray ';
 
 export default function DesktopLayout(props) {
   const {
+// Temp comment
     careerData,
     categoryString,
     addressString,
@@ -86,7 +87,6 @@ export default function DesktopLayout(props) {
             <div className='w-1/2 flex items-center pr-4'>
               <img
                 src={salaryIcon}
-// Temp comment
                 className='h-11 mr-5' />
               <p className='text-textBlack'>{salaryString}</p>
             </div>

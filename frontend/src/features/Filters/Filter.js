@@ -25,6 +25,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
     setShowDropdown(false);
     setSelected(choice);
     handleFilterChange(filterType, choice);
+// Temp comment
   }
 
   useEffect(() => {
@@ -59,7 +60,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
           className='text-md text-black70%'>{ selected }</p>
         <img
           src={downChevron}
-// Temp comment
           alt='open'
           className='w-6 h-4'
         />

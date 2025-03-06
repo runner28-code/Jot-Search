@@ -102,7 +102,6 @@ class AuthService {
       savedJobs.splice(savedJobs.indexOf(jobID), 1);
     }
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
-  }
 
   getSavedJobIDs() {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];

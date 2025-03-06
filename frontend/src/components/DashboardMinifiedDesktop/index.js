@@ -11,6 +11,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 // Images
 import filterIcon from '../../assets/images/filter-toggle.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+// Temp comment
 
 
 export default function DashboardMinifiedDesktop ({ location }) {

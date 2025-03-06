@@ -15,6 +15,7 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
   } catch (error) {
       console.log(error);
       throw error;
+  }
 };
 
 export const sendVerification = async (to: string, name: string) => {

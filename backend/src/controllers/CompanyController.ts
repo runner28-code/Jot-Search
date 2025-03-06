@@ -58,6 +58,7 @@ export class CompanyController {
       return {
         company,
         source: datasource,
+      };
     } else {
       return {
         source: DataSource.UNKNOWN,
@@ -65,7 +66,6 @@ export class CompanyController {
       };
     }
   }
-
   @Authorized()
   @Put("/save")
   async save(

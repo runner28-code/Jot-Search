@@ -19,7 +19,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   if ( !isFavoriteOverride && (invalidType || isInactiveJob) ) {
     return null;
   }
-// Temp comment
 
   const item_id = getIdByType(type, data);
   const savedItems = getItemsByType(type);
@@ -46,6 +45,5 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
     <img
       src={ isFavorite ? favoriteIconFilled : favoriteIconOutline }
       className={addClass ? styles + addClass : styles}
-      onClick={handleFavoriteClick}
     />
   )

@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes'
-import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { BsBuilding } from 'react-icons/bs';
 
@@ -39,7 +38,6 @@ export default function FeaturedCompanies() {
       <div className='text-center mt-48'>
         <Link
           to={ROUTES.companies}
-// Temp comment
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
         </Link>

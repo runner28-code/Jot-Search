@@ -21,7 +21,6 @@ export default function DetailsHeader({ type, source }) {
   }
   const titleCasedType = type.charAt(0).toUpperCase() + type.slice(1);
   let headerText
-// Temp comment
   if ( type === 'company') {
     headerText = 'Company Profile';
   }else { 

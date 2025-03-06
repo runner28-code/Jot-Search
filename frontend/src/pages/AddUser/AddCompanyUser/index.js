@@ -33,6 +33,7 @@ export default function AddCompanyUser() {
             src={Flag}
             alt='flag icon'
             className='w-12 h-12 mr-6'
+          />
           Step 1: Add Company in Getro or Bullhorn
         </h2>
         <p className={paragraphStyles}>At the moment it not possible to add companies in this system. Company profile data is currently pulled from Getro database due to technical limitations.</p>
@@ -70,6 +71,7 @@ export default function AddCompanyUser() {
             <div className='absolute top-full w-full bg-white border border-grey300'>
               {companies.map((company) => (
                 <div
+// Temp comment
                   key={company.id}
                   className='border-b border-grey300 px-4 py-4 cursor-pointer hover:bg-royalBlue hover:text-white'
                   onClick={() => handleCompanyClick(company)}

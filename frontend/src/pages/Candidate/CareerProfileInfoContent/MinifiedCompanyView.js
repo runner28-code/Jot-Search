@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import { appendPathToBaseUrl } from '../../../services/API';
 import ResumePreview from './ResumePreview';
@@ -17,3 +18,4 @@ export default function MinifiedCompanyView({ candidateData }) {
       </div>
         : <p>None provided</p>}
     </div>
+  )
