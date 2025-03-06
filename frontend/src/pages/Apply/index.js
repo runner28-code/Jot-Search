@@ -66,6 +66,7 @@ export default function Apply() {
         getCandidateById(user_id),
       ]);
       if ( candidateData.workAuthorized === true ) {
+        candidateData.workAuthorized = 'Yes';
       } else {
         candidateData.workAuthorized = 'No';
       }
@@ -152,7 +153,6 @@ export default function Apply() {
       ...applicationObject,
       [name]: value,
     });
-  }
 
   function handlePhoneInputChange(value) {
     setApplicationObject({ ...applicationObject, phone: value });

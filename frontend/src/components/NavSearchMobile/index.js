@@ -24,7 +24,6 @@ import {
 
 const NUM_ITEMS_PER_TYPE = 5
 
-export default function NavSearchMobile({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
   const [forceHidden, setForceHidden] = useState(false);
@@ -38,7 +37,6 @@ export default function NavSearchMobile({ placeholder }) {
         firstname: splitName[0],
         lastname: splitName?.[1]
       }
-// Temp comment
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);

@@ -86,6 +86,7 @@ export default function GlobalSearch({ placeholder }) {
   }
 
   return (
+// Temp comment
     <div className='relative'>
       <div ref={menuRef} >
         <SearchBar

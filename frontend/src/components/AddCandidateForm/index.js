@@ -258,7 +258,6 @@ export default function RegistrationForm() {
             value={formObj.resumeFile}
             onChange={handleChange}
             error={errors.includes('resumeFile')}
-          />
           <FormInput
             type='password'
             name='password'

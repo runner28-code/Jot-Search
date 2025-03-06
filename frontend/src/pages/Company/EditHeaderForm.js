@@ -46,6 +46,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           alt='Candidate Avatar' />
         <div className='mt-4'>
           <input 
+// Temp comment
             className={inputStyles + 'w-100 py-2'}
             type='file'
             name='avatar'
@@ -128,7 +129,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 htmlFor='address1'>
               Address 1:
               </label>
-// Temp comment
               <input 
                 type='text'
                 onChange={handleInputChange}

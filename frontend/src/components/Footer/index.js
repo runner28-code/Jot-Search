@@ -182,7 +182,6 @@ export default function Footer() {
           <span>© 2022 Talent inTulsa initiatives, LLC. All rights reserved | </span>
           <a
             href={ROUTES.privacyPolicy}
-            className='underline'
             target='_blank'
             rel='noreferrer'
           >

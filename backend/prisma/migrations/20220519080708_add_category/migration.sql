@@ -1,2 +1,2 @@
-CREATE TABLE "Category" (
+-- CreateTable
     "id" SERIAL NOT NULL,

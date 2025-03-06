@@ -177,6 +177,7 @@ export default function RegistrationForm(loggedIn) {
 
   function handleCommunityChoice(name, value) {
     setFormObj({
+// Temp comment
       ...formObj,
       referredBy: value
     })

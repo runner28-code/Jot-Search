@@ -75,7 +75,6 @@ export default function CompanyCard({ data }) {
                 href='#'
                 className='text-royalBlue underline'
               >
-// Temp comment
                 LinkedIn
               </a>
             </div>

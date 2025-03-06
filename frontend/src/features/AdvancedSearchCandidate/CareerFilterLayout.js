@@ -46,7 +46,6 @@ export default function CareerFilterLayout(props) {
   const buttonStylesCareer = 'text-white text-sm whitespace-nowrap';
   return (
     <div className='flex flex-col gap-xxl-4'>
-// Temp comment
       <div className='flex flex-wrap'>
         <FilterSearch
           searchTerm={searchTerm}
@@ -63,7 +62,6 @@ export default function CareerFilterLayout(props) {
           onClick={clearFilters}
         >
           Clear All
-        </button>
       </div>
     </div>
   );

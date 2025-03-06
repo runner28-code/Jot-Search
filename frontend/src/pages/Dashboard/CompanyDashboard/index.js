@@ -12,9 +12,9 @@ export default function CompanyDashboard({userType}) {
   return (
     <>
       <PageHeader
-// Temp comment
         headerText={profile.firstname + ' Dashboard'}
         icon={gaugeIcon}
+// Temp comment
       />
       <Stats
         headerStyles={headerStyles}

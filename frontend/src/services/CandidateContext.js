@@ -124,6 +124,7 @@ const CandidateProvider = ({children}) => {
     setCandidates([...filteredCandidates, updatedCandidate]);
   }
 
+  return (
     <CandidateContext.Provider value={{ candidates, currentUser, setCurrentUser, handleCandidatesChange, handleCandidateUpdate }}>
       {children}
     </CandidateContext.Provider>

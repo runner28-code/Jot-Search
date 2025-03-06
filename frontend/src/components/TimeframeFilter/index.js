@@ -23,6 +23,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     return (
       <Dropdown 
         choices={choices} 
+        handleChoiceClick={handleChoiceClick} 
       />
     )
   }
@@ -36,6 +37,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   const wrapperStyles = dynamicStyles + 'flex justify-between items-center pl-6 h-20 border-midGrey w-100 vw-400:w-114 cursor-pointer bg-white ';
   
   return (
+// Temp comment
     <div
       ref={menuRef}
       className='relative'>

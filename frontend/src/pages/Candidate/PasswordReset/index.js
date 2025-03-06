@@ -1,4 +1,3 @@
-// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import ResetButton from './ResetButton';
@@ -17,7 +16,6 @@ export default function PasswordReset({role, candidateData}) {
   }
 
   function renderResponse () {
-    const successStyle = 'mb-4 text-success';
     const errorStyle = 'mb-4 text-error';
     if( response ) {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )

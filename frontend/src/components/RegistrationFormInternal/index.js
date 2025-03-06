@@ -416,6 +416,7 @@ export default function RegistrationFormInternal(loggedIn) {
           required={true}
           onChange={handleChange}
           error={errors.includes('resume')}
+        />
         <h3 className={titleStyles}>Password</h3>
         <div className={twocol}>
           <FormInput
@@ -447,7 +448,6 @@ export default function RegistrationFormInternal(loggedIn) {
           onChange={handleReferralChoice}
           required={true}
           choices={referralChoices}
-          error={errors.includes('referredBy')}
         />
         { renderCommunity(referralChoice, commObj, handleCommunityChoice, communityChoices) }
         {/* Terms and Conditions */}

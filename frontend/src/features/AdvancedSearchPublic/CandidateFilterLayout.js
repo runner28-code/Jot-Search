@@ -10,7 +10,6 @@ const dropdownFiltersCoord = [
   'Employment Type',
   'Status'
 ];
-
 const dropdownFilters = [
   'Category',
   'Experience',
@@ -51,6 +50,7 @@ export default function CandidateFilterLayout(props) {
   } else {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
+    });
     checkboxFilters.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
     });
