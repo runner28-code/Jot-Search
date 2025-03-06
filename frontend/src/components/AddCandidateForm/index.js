@@ -70,7 +70,6 @@ export default function RegistrationForm() {
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
-      if ( result === true ) {
         // Set success to true if on add-candidate page, navigate user to login if not
         if ( location.pathname === '/add-candidate' ) {
           return setSubmissionObject({
@@ -258,6 +257,7 @@ export default function RegistrationForm() {
             value={formObj.resumeFile}
             onChange={handleChange}
             error={errors.includes('resumeFile')}
+          />
           <FormInput
             type='password'
             name='password'

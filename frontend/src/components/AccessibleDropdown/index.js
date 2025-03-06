@@ -12,7 +12,6 @@ export default function AccessibleDropdown(props) {
     name,
     label,
     placeholder,
-// Temp comment
     required,
     onChange,
     choices,
@@ -62,6 +61,7 @@ export default function AccessibleDropdown(props) {
             className={ listStyles }
           >
             { renderMenuItems(choices, choiceObject, currentChosen, name, stylesObject) }
+// Temp comment
           </ul>
         </Menu>
       </Wrapper>

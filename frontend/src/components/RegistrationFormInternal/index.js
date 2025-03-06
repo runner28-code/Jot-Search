@@ -448,6 +448,7 @@ export default function RegistrationFormInternal(loggedIn) {
           onChange={handleReferralChoice}
           required={true}
           choices={referralChoices}
+          error={errors.includes('referredBy')}
         />
         { renderCommunity(referralChoice, commObj, handleCommunityChoice, communityChoices) }
         {/* Terms and Conditions */}

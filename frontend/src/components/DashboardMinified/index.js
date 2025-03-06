@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import * as ROUTES from '../../routes';
+import { Link } from 'react-router-dom';
 import AuthService from '../../services/auth';
 
 // Images

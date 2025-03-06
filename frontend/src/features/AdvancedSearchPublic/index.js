@@ -133,7 +133,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
 
   function clearFilters() {
     setFilterObject(initialFilterState);
-    setPage(1);
   }
 
   // eslint-disable-next-line no-unused-vars
@@ -196,7 +195,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       <ResultsHeader
         total={totalResults}
         type={activeTab}
-// Temp comment
         loading={isLoading}
       />
       <ResultContainer

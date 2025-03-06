@@ -35,7 +35,6 @@ export default function TypeaheadDropdown(props) {
 
   /* Close dropdown on any outside clicks */
   useEffect(() => {
-    listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
     if (!dropdownOpen) setInputValue('');
   }, [dropdownOpen]);
   

@@ -153,6 +153,7 @@ export default function Apply() {
       ...applicationObject,
       [name]: value,
     });
+  }
 
   function handlePhoneInputChange(value) {
     setApplicationObject({ ...applicationObject, phone: value });
@@ -420,4 +421,3 @@ export default function Apply() {
         </div>
       </div>
     </form>
-  </>)

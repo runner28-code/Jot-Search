@@ -25,7 +25,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
       skills={contentObject[propertyName]}
       handleChange={handleChange} />
   }
-// Temp comment
   if ( propertyName === 'expertise' ) {
     return <EditExpertiseForm 
       expertise={contentObject[propertyName]}

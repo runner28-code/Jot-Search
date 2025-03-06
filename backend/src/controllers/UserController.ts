@@ -21,6 +21,7 @@ import {
   update,
   recovery,
   getStats,
+  getLandingPageStats,
   findUserByEmail,
   getCompanyDashboardStats,
   getCoordinatorDashboardStats,

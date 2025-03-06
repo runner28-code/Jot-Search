@@ -73,6 +73,7 @@ function HeaderContent({ companyData }) {
             <img
               src={Globe}
               className={headerIconStyles}
+// Temp comment
             />
             { renderCompanyWebsite(companyData.companyURL, headerRowTextStyles) }
           </div>

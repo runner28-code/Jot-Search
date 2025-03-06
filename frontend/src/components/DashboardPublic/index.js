@@ -8,7 +8,6 @@ import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
-
 export default function DashboardPublic({togglePassState}) {
   const { width } = useWindowDimensions();
 
@@ -54,7 +53,6 @@ export default function DashboardPublic({togglePassState}) {
             <img src={filterIcon} />
             { width >= 990 && <FilterText />}
           </button>
-// Temp comment
         </div>
       </div>
     </div>

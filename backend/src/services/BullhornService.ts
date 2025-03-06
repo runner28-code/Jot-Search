@@ -55,6 +55,7 @@ export class BullhornService {
         )
           return true;
       }
+    }
     if (await this.getAuthCode()) {
       if (await this.getAccessToken()) return await this.login();
     }
@@ -132,7 +133,6 @@ export class BullhornService {
     console.log(res);
     console.log("============================ \n");
     if (res.status === 200) {
-      const { access_token, refresh_token } = res.data;
       this.access_token = access_token;
       this.refresh_token = refresh_token;
       console.log("Access Token: ", this.access_token);

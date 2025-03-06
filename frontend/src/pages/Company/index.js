@@ -21,6 +21,7 @@ export default function Company() {
   const [companyData, setCompanyData] = useState({});
   const [loading, setLoading] = useState(true);
 
+// Temp comment
   useEffect(async () => {
     const companyFromApi = await getCompanyById(id);
     setCompanyData(companyFromApi.company);
@@ -37,7 +38,6 @@ export default function Company() {
   }
 
   // Format data
-// Temp comment
   companyData.name = urlDecode(companyData.name);
   if ( companyData.name.includes('(mc)') ) { // Remove (mc) from companyData.name if exists
     companyData.name = companyData.name.toString().replace(' (mc)', '');

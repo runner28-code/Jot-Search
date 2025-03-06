@@ -28,11 +28,11 @@ import e from "express";
 
 @JsonController("/api/candidate")
 export class CandidateController {
+  @Authorized()
   @Get("/savedJobs")
   async savedJobs(@QueryParam("candidate") candidate: string) {
     return await getSavedJobs(candidate);
   }
-
   @Authorized()
   @Get("/search")
   async searchById(@QueryParam("id") id: string) {

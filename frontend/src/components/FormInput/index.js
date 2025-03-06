@@ -36,7 +36,6 @@ export default function FormInput(props) {
     inputWidth: 'w-full',
     listStyles: dropdownStyles,
     listItemStyles: dropdownItemStyles
-// Temp comment
   };
   switch (type) {
     case 'file':

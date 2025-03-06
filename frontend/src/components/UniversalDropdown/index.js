@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 export default function UniversalDropdown({ inputStyles, optionStyles, name, choices, currentChosen, handleChange, multiselect, noDefault, disabled }) { 
   return (
@@ -10,7 +11,6 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
       required
       disabled={ disabled }
     >
-      {/* Placeholder Option */}
       { renderPlaceholder(noDefault, currentChosen) }
       {/* Generate options from choices */}
       {choices.map( choice => {

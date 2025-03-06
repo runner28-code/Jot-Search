@@ -66,6 +66,7 @@ export default function DesktopLayout(props) {
               <p className='text-textBlack'>{careerData.onSite}</p>
             </div>
             {/* Posting age */}
+// Temp comment
             <div className='w-1/3 flex items-center pr-4'>
               <img
                 src={postingAgeIcon}
@@ -81,6 +82,7 @@ export default function DesktopLayout(props) {
                 src={clockIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{careerData.employmentType}</p>
+            </div>
             {/* Salary */}
             <div className='w-1/2 flex items-center pr-4'>
               <img
