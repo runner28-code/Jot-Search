@@ -260,7 +260,6 @@ export default function RegistrationForm() {
             error={errors.includes('resumeFile')}
           />
           <FormInput
-            type='password'
             name='password'
             placeholder='Password' 
             value={formObj.password}

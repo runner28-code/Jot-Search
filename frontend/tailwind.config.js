@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       animation: {
         'spin': 'spin .175s linear forwards',
+// Temp comment
         'spin-reverse': 'spin-reverse .175s linear forwards'
       },
       keyframes: {

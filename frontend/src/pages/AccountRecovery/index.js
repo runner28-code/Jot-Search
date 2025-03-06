@@ -36,7 +36,6 @@ export default function AccountRecovery() {
   }
 
 
-// Temp comment
   return (
     <section className='-mt-18 flex flex-col items-center pb-14 bg-login-page-hero bg-no-repeat bg-top bg-[length:auto_34rem] vw-640:bg-[length:auto_48rem] vw-900:bg-[length:100%_auto]'>
       <div className='w-full flex flex-col items-center'>
@@ -52,6 +51,7 @@ export default function AccountRecovery() {
         {/* Login Form */}
         <form
           className='w-[84%] vw-640:w-250 rounded-3xl border border-midGrey border-solid bg-white mt-22 px-16 vw-1280:px-24'
+// Temp comment
           onSubmit={(e) => handleSubmit(e)}
         >
           <h4 className='w-full text-xl vw-640:text-h4 text-charcoal font-spaceGrotesk font-semibold mt-14 text-center'>Account Recovery</h4>

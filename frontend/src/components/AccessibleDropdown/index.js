@@ -8,7 +8,6 @@ const MULTI_SELECT = 'multi-select';
 
 export default function AccessibleDropdown(props) {
   const {
-// Temp comment
     type,
     name,
     label,

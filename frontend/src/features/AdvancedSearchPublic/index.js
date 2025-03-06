@@ -100,6 +100,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     if (state) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
+      newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
     }
     setFilterObject(newState);
   }, [state]);

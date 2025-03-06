@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import * as ROUTES from '../../../routes';
 import API from '../../../services/API';
@@ -34,7 +35,6 @@ export default function ResetButton({ candidateData, setType }) {
       className='h-20 w-150 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
       onClick={handleSubmit}
     >
-// Temp comment
       Request Password Reset
     </button>
   )

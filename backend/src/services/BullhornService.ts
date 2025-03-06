@@ -60,7 +60,6 @@ export class BullhornService {
       if (await this.getAccessToken()) return await this.login();
     }
     return false;
-  }
 
   async getCookie() {
     const targetFile = __dirname + "/../config/cookie.json";

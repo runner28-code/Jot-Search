@@ -18,7 +18,6 @@ const hrStyles = 'mb-10 border-smokeGray ';
 
 export default function DesktopLayout(props) {
   const {
-// Temp comment
     careerData,
     categoryString,
     addressString,

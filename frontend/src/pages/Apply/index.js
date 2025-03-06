@@ -416,7 +416,6 @@ export default function Apply() {
           Back
           </button>
         </div>
-        <div className='text-error'>
           { renderError( submissionObject.errorMessage ) }
         </div>
       </div>

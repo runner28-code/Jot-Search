@@ -22,7 +22,6 @@ API.interceptors.request.use(
     return Promise.reject(error);
   }
 );
-
 export default API;
 
 export function appendPathToBaseUrl(path) {
@@ -46,7 +45,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
       }
       return true
     });
-// Temp comment
 
   const { data } = await API.post(ROUTES.APIcandidates, {
     'filters': formattedFilters,

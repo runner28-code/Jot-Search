@@ -9,9 +9,7 @@ export default function CompanyFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
-  const { width } = useWindowDimensions();
   return (
-// Temp comment
     <div className='flex flex-col gap-xxl-4'>
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[25px]'}>
         <FilterSearch

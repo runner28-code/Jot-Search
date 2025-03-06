@@ -1,5 +1,6 @@
 import RegistrationForm from '../../components/RegistrationForm';
 import useWindowDimensions from '../../hooks/windowDimensions';
+
 // TODO: Terms of Service?
 export default function SignUp() {
 
@@ -27,6 +28,7 @@ export default function SignUp() {
       </main>      
     )
   }
+// Temp comment
 
   return (
     <main className='-mt-28 bg-signup-page-hero bg-contain bg-no-repeat'>

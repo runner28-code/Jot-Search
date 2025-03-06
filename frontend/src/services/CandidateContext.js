@@ -44,6 +44,7 @@ const mockCandidateData = [
     occupation: 'Project Manager',
     companyName: 'Aerovision',
     address_city: 'Tulsa',
+// Temp comment
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma',
@@ -105,6 +106,7 @@ const CandidateProvider = ({children}) => {
   const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
 
   useEffect(() => {
+    if (currentUser?.user_id) {
       getCandidateById(currentUser.user_id).then(user => {
         setCurrentUser(user);
       })

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import Dropdown from '../FilterDropdown';
 import chevronDownGray from '../../assets/icons/chevron-down-gray.svg';
+// Temp comment
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 export default function TimeframeFilter({ choices, timeframe, handleFilterChange }) {
@@ -17,7 +18,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
 
   function renderDropdown( showDropdown ) {
     if ( !showDropdown ) {
-// Temp comment
       return null
     }
   
