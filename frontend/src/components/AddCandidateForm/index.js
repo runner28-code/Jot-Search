@@ -187,6 +187,7 @@ export default function RegistrationForm() {
             choices={formObj.expertise ? roleChoices[formObj.expertise] : []}
             error={errors.includes('roles')}
           />
+          <FormInput
             type='typeahead'
             dropdownType='tags'
             name='skills'

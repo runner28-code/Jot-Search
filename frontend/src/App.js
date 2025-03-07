@@ -67,6 +67,5 @@ function App() {
           </Routes>
         </div>
       </main>
-      <Footer />
     </div>
   );

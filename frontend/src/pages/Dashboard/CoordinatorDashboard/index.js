@@ -9,8 +9,6 @@ export default function CoordinatorDashboard({ userType }) {
     <>
       <PageHeader
         headerText={`Coordinator Dashboard`}
-// Temp comment
-        icon={gaugeIcon}
       />
       <Stats userType={userType} />
       <AdvancedSearch />

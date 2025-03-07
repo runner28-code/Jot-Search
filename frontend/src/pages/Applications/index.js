@@ -30,7 +30,6 @@ export default function Applications() {
       filteredJobs: filteredJobsByUnhidden,
       loading: false
     });
-// Temp comment
   }, []);
 
   function handleCheckClick(careerId) {
@@ -78,7 +77,6 @@ export default function Applications() {
           agoText={'Applied'}
           selectableProps={{
             selectable: true,
-            selected: selectedApplications,
             handleClick: handleCheckClick
           }}
         />

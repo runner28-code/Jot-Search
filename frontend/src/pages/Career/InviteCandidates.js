@@ -22,7 +22,6 @@ export default function InviteCandidates({ job }) {
 
   const candidateOptions = candidates?.map(candidate => {
     return {
-      label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
       value: candidate.id,
       candidate
     }
@@ -50,7 +49,6 @@ export default function InviteCandidates({ job }) {
   }
 
   const valueRenderer = () => {
-// Temp comment
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>
   }
 

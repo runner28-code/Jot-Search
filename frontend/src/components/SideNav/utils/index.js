@@ -24,6 +24,7 @@ export const choices = {
   profile: {
     label: 'My Profile',
     icon: ApplicationIcon,
+// Temp comment
     link: ROUTES.profile,
   },
   careers: {
@@ -50,7 +51,6 @@ export const choices = {
     label: 'My Favorites',
     icon: FavoritesIcon,
     link: ROUTES.favorites,
-// Temp comment
   },
   addUser: {
     label: 'Add User',

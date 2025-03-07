@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import HistoryItem from './HistoryItem';
 import ViewAllLink from '../ViewAllLink';
+import AuthService from '../../services/auth';
 
 export default function History({ historyArr, id, headerStyles, hrStyles }) {
   const userRole = AuthService.getUserRole();
@@ -17,6 +18,7 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
           historyObj={historyObj} />
       ))}
       <ViewAllLink 
+// Temp comment
         href={viewAllHref} 
         text='View Full History' />
     </section>

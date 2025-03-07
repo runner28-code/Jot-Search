@@ -43,5 +43,4 @@ function renderChosen(currentChosen, handleRemove) {
     >
       {choice.company + ' - ' + choice.title}
     </div>
-// Temp comment
   )

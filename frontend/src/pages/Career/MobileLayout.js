@@ -19,6 +19,7 @@ export default function MobileLayout(props) {
   const {
     careerData,
     categoryString,
+    addressString,
     salaryString,
     postingAge,
     role

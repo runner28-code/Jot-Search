@@ -86,6 +86,7 @@ export class BullhornService {
         }
       });
     });
+  }
 
   async getAuthCode(): Promise<boolean> {
     console.log("\n***** getAuthCode *****");

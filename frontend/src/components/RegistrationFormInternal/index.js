@@ -99,7 +99,6 @@ export default function RegistrationFormInternal(loggedIn) {
       const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
-      const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
         // Set success to true if on add-user page, navigate user to login if not
         if ( addType === 'coordinator' ) {
@@ -333,7 +332,6 @@ export default function RegistrationFormInternal(loggedIn) {
           type='multi-select'
           name='roles'
           label={`What roles are ${pronoun} interested in?`}
-// Temp comment
           required={true}
           placeholder='Select'
           value={formObj.roles}

@@ -57,3 +57,4 @@ function HeaderContent({ companyData }) {
           data={companyData} />
       </div>
     </>
+  )

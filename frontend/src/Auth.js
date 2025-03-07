@@ -11,7 +11,6 @@ import {
   Profile,
 } from './pages';
 import AuthService from './services/auth';
-// Temp comment
 import * as ROUTES from './routes';
 
 

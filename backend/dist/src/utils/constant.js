@@ -34,6 +34,7 @@ const job_filter_exclude_keys = [
     "automotive",
     "bailiff",
     "barback",
+    "bartender",
     "baseball",
     "beauty",
     "behavior",

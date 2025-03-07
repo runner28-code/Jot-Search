@@ -146,6 +146,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       activeResults: jobs,
       totalResults: totalJobs,
       isLoading: isLoadingJobs,
+      prefetchFunc: (page) => prefetchJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page })
     },
     candidates: {
       filterTemplate: candidateFilterObject,

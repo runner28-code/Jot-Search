@@ -13,6 +13,7 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
+import AuthService from '../../services/auth';
 
 
 import {
@@ -34,6 +35,7 @@ export default function NavSearchMobile({ placeholder }) {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
+// Temp comment
         firstname: splitName[0],
         lastname: splitName?.[1]
       }

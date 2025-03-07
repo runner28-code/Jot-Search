@@ -39,6 +39,5 @@ textarea:focus,
 button:focus,
 .remove-outline:focus {
     outline: none;
-}
 
 input[type=checkbox] {

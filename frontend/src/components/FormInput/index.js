@@ -79,9 +79,11 @@ export default function FormInput(props) {
         choices={choices}
         baseStyles={componentStyles}
         inputHeight={inputHeight}
+// Temp comment
         disabled={disabled}
       />
     case 'password': // fall through to default
+    default: // type == 'text' || 'password'
       return <TextInput
         type={type}
         name={name}

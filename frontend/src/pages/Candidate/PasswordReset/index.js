@@ -21,6 +21,7 @@ export default function PasswordReset({role, candidateData}) {
     if( response ) {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )
     }
+// Temp comment
   }
 
   return (
