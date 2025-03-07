@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
-import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { BsBuilding } from 'react-icons/bs';
 
 const ITEMS_PER_PAGE = 6;
@@ -34,6 +33,7 @@ export default function FeaturedCompaniesMobile() {
                 { renderLogo(company.logo) }
               </Link>
             )
+        }
       </div>
       <div className='text-center mt-24'>
         <Link

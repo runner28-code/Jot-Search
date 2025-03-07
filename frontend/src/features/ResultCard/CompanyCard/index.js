@@ -30,7 +30,6 @@ export default function CompanyCard({ data }) {
   }
   return (
     <div
-// Temp comment
       className='relative w-full'
       key={data.id}
     >
@@ -84,7 +83,6 @@ export default function CompanyCard({ data }) {
               <img
                 src={websiteIcon}
                 className='h-8 mr-5 ml-1' />
-              <a
                 href='#'
                 className='text-royalBlue underline'
               >

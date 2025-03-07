@@ -42,6 +42,7 @@ export default function CareerFavorite () {
           <Link
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
+// Temp comment
               Browse All
           </Link>
         </div>
@@ -54,5 +55,4 @@ export default function CareerFavorite () {
         </Link>
       </div>
     </div>
-// Temp comment
   )

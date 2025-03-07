@@ -447,6 +447,7 @@ export default function RegistrationFormInternal(loggedIn) {
           value={formObj.referredBy}
           onChange={handleReferralChoice}
           required={true}
+// Temp comment
           choices={referralChoices}
           error={errors.includes('referredBy')}
         />

@@ -15,6 +15,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     handleFilterChange(choice);
   }
 
+// Temp comment
   function renderDropdown( showDropdown ) {
     if ( !showDropdown ) {
       return null
@@ -22,6 +23,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   
     return (
       <Dropdown 
+        choices={choices} 
         handleChoiceClick={handleChoiceClick} 
       />
     )

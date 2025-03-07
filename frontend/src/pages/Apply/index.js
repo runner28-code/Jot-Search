@@ -232,7 +232,6 @@ export default function Apply() {
       {/* Form Inputs */}
       <div className='w-full px-l'>
         <div className='vw-1280:flex flex-col'>
-          <div className='vw-1280:flex gap-12'>
             <label
               htmlFor='firstname'
               className={labelStyles}
@@ -275,7 +274,6 @@ export default function Apply() {
               <input
                 type='text'
                 name='email'
-// Temp comment
                 id='email'
                 placeholder='Email'
                 value={applicationObject.email}

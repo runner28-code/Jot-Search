@@ -13,6 +13,7 @@ export type User = {
   state?: string;
   zip?: string;
   resume?: string;
+  avatar?: string;
   linkedin?: string;
   skills?: string;
   category?: string;

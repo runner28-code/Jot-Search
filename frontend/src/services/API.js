@@ -5,7 +5,6 @@ import * as ROUTES from '../routes';
 import { ACTIVE_STATUSES } from '../utils/filterObjects';
 
 const API = axios.create({
-  baseURL: 'https://intulsadev.com:5000',
   // baseURL: 'http://localhost:3001',
 });
 
@@ -74,6 +73,7 @@ export async function updateUser(newData, id) { // id is optional, if no id is p
   return normalizeData(data);
 }
 
+export async function updateCandidate(newData, id) {
   console.log({ newData, id })
   const body = { ...newData, id };
   const { data } = await API.post(ROUTES.APIcandidateUpdate, body);

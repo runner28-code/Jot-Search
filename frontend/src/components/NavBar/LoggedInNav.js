@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { Link, useNavigate } from 'react-router-dom';
 import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
 import chevronDownBlue from '../../assets/images/down-chevron-blue.svg';
 import NavSearch from '../NavSearch';
@@ -32,6 +33,7 @@ function NavBarLayout() {
       <div className='h-30 px-8 flex justify-between items-center'>
         <Link to={ROUTES.root}>
           <img
+// Temp comment
             className='my-8 w-3/4'
             src={inTulsaLogoText}
             alt='logo'

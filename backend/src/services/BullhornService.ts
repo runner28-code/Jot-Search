@@ -130,6 +130,7 @@ export class BullhornService {
     console.log(url);
     const res = await axios.post(url);
     console.log(res.status);
+    console.log(res);
     console.log("============================ \n");
     if (res.status === 200) {
       const { access_token, refresh_token } = res.data;
@@ -201,7 +202,6 @@ export class BullhornService {
             BhRestToken: this.BhRestToken,
             restUrl: this.restUrl,
           });
-          return true;
         } else if (res.status === 400) {
           await this.getNewAccessToken();
         }

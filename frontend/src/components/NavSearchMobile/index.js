@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
-// Temp comment
 import JobResults from './JobResults';
 import { VscClose as CloseIcon } from 'react-icons/vsc';
 import searchGray from '../../assets/images/search-gray.svg';
@@ -22,6 +21,7 @@ import {
   buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
+// Temp comment
 
 const NUM_ITEMS_PER_TYPE = 5
 

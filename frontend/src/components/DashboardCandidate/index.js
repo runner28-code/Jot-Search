@@ -14,6 +14,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   const { width } = useWindowDimensions();
 
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
+  const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
   const active = ' bg-royalBlue';
@@ -42,7 +43,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
       </div>
     </div>
     <div className='bg-sky-500 flex py-8 px-6 items-center text-white font-roboto'>
-      <div className='flex items-center justify-start basis-5/6 gap-[10px]'>
         <img src={filterIcon} />
         Search and Filter
       </div>

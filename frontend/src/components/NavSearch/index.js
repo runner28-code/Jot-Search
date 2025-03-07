@@ -30,6 +30,7 @@ export default function NavSearch({ placeholder }) {
   const userType = AuthService.getUserRole();
 
   const getFiltersByTab = (tab) => {
+// Temp comment
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {
@@ -61,7 +62,6 @@ export default function NavSearch({ placeholder }) {
 
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
-// Temp comment
     setSearchTerm( searchTerm );
     setForceHidden( false );
   }

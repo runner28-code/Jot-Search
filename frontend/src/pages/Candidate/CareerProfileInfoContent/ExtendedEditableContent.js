@@ -133,6 +133,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           type='single-select'
           name='expertise'
           label='Expertise'
+// Temp comment
           required={true}
           placeholder='Select'
           value={formData.expertise}
@@ -212,7 +213,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             label='LinkedIn Profile link with https:// prefix'
             disabled={disabled}
           />
-// Temp comment
         </div>
 
         <div className="flex space-x-4 items-center justify-start">

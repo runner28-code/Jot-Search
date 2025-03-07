@@ -37,6 +37,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
           </div>
 
           {/* Posting/Application age */}
+// Temp comment
           <div className='flex items-center gap-xs border-1 border-t border-gray-300 py-4 mt-4 justify-self-end'>
             <BsClipboardCheck className='fill-midGrey h-14 w-12' />
             { isApplicationPage ?

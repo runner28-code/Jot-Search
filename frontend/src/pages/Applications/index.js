@@ -23,6 +23,7 @@ export default function Applications() {
       return {
         ...job,
         agoDate: job.appliedDate
+// Temp comment
       }});
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
@@ -50,6 +51,7 @@ export default function Applications() {
       filteredJobs: appliedJobsObject.jobs.filter(job => !newHiddenApplications.includes(job.id))
     });
   }
+
   const { width } = useWindowDimensions();
   return (
     <section>

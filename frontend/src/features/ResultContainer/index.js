@@ -57,3 +57,4 @@ export default function ResultContainer(props) {
       </div>
       { renderFooter() }
     </div>
+  )

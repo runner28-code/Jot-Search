@@ -13,6 +13,7 @@ const job_filter_exclude_keys = [
     "adult",
     "advocacy",
     "advocate",
+    "aircraft",
     "alumni",
     "americorps",
     "analyzer tech",
@@ -35,6 +36,7 @@ const job_filter_exclude_keys = [
     "barback",
     "bartender",
     "baseball",
+// Temp comment
     "beauty",
     "behavior",
     "behavior coach",

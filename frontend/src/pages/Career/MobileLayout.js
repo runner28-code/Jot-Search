@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import OtherCareers from '../../features/OtherCareers';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';

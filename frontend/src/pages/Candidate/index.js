@@ -115,6 +115,7 @@ export default function Candidate() {
             <PreferenceItem
               toggled={!!candidateData.willRelocate}
               fieldName='willRelocate'
+// Temp comment
               label={PREFERENCE_ITEMS.willRelocate}
               onUpdate={handleCandidateUpdate} />
             <PreferenceItem
@@ -133,7 +134,6 @@ export default function Candidate() {
             candidateData={candidateData}
             handleCandidateUpdate={handleCandidateUpdate} />
         </div>
-// Temp comment
         {role === 'coordinator' && 
           <InviteToCareer candidate={candidateData} />
         }
