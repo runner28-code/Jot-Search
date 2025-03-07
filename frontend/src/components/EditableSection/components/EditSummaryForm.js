@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-// Temp comment
 export default function EditSummaryForm({ summaryText, setSummary }) {
   return <textarea 
+// Temp comment
     className='w-full h-96 text-xl resize-none border-lightGrey border-solid border-2 rounded-2xl p-4'
     name='comments'
     onChange={setSummary}

@@ -40,12 +40,12 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     <div
       ref={menuRef}
       className='relative'>
+// Temp comment
       <div
         id='title-wrapper'
         onClick={() => setShowDropdown(showDropdown => !showDropdown)}
         className={ wrapperStyles }>
         <p
-// Temp comment
           id='title'
           className='Desktop-Body-textBody-paragraph-2 text-charcoal'>{ timeframe }</p>
         <img 

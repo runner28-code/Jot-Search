@@ -29,6 +29,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         type='text'
         className={ inputStyles }
         placeholder={ placeholderString }
+// Temp comment
         value={ searchTerm }
         onChange={ handleChange }
       />
@@ -42,7 +43,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
           className={ width >= 990 ? 'v-8 vw-768:w-10 h-8 vw-768:h-10 mr-3 vw-768:mr-5' : 'h-12' }
         />
         <RenderText />
-// Temp comment
       </button>
     </div>
   )

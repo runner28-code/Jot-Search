@@ -17,8 +17,8 @@ export default function FormInput(props) {
     name,
     label,
     placeholder,
-    value,
 // Temp comment
+    value,
     required,
     onChange,
     choices,

@@ -21,6 +21,7 @@ export default function CareerCard({ data, active }) {
   const role = AuthService.getUserRole();
 
   const { width } = useWindowDimensions();
+
   const dataObj = {
     data,
     categoryString,

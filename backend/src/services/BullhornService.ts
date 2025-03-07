@@ -22,6 +22,7 @@ export class BullhornService {
   private access_token = null;
   private refresh_token = null;
   private BhRestToken = null;
+  private restUrl = null;
   private corpToken = null;
   private oauth_url = "https://auth.bullhornstaffing.com/oauth";
   private api_base_url = "https://rest.bullhornstaffing.com/rest-services";
@@ -69,7 +70,6 @@ export class BullhornService {
           return resolve(null);
         }
         let cookies = JSON.parse(data.toString());
-        return resolve(cookies);
       });
     });
   }

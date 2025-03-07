@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import * as ROUTES from './routes';
 import Auth from './Auth';
 import {
   LandingPage,
@@ -41,6 +40,7 @@ function App() {
               element={<Careers />} />
             <Route
               path={ROUTES.companies}
+              element={<Companies />} />
             <Route
               path={`${ROUTES.careers}/:id`}
               element={<Career />} />

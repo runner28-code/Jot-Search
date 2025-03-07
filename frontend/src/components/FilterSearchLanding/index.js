@@ -20,6 +20,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   const placeholderString = placeholder || 'Keywords';
   return (
     <div
+// Temp comment
       className={ containerStyles }
       onKeyDown={handleKeydown}
     >

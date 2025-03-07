@@ -32,7 +32,6 @@ export default function PendingApplications () {
     });
   }, []);
 
-  const { width } = useWindowDimensions();
   return(
     <div className='flex items-center flex-col justify-center bg-royalBlue rounded-lg py-24 px-12 vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
       <div className='relative w-24 mb-8'>
@@ -61,7 +60,6 @@ export default function PendingApplications () {
             <img
               src={featuredIcon}
               alt='intulsa' />
-// Temp comment
             <p className='text-sm font-bold text-white'>InTulsa Featured</p>
           </div>
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Apply to an InTulsa Featured Career!</h3>

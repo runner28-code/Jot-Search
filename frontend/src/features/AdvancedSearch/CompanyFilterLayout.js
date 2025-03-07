@@ -7,6 +7,7 @@ export default function CompanyFilterLayout(props) {
     setSearchTerm,
     handleSearchClick,
     clearFilters,
+  } = props;
 
   return (
     <div className='flex flex-col gap-xxl-4'>

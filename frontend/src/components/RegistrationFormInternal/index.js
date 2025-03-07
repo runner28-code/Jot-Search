@@ -154,7 +154,6 @@ export default function RegistrationFormInternal(loggedIn) {
     });
     console.log(formObj);
   }
-
   function handleChange(name, value) {
     setFormObj({
       ...formObj,
@@ -200,6 +199,7 @@ export default function RegistrationFormInternal(loggedIn) {
   const hrStyles = 'mb-15 border-medGray border border-solid';
   const relocateClass = ' transform translate-x-5';
   const twocol = 'flex';
+  const spacer = 'w-24';
   const titleStyles = 'text-xl font-spaceGrotesk font-semibold mb-8';
 
   return (

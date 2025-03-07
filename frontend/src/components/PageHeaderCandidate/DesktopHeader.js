@@ -6,6 +6,8 @@ export default function DesktopHeader(props) {
   const {
     headerText,
     icon,
+    IconComponent,
+// Temp comment
     classOverride,
     containerClassOverride,
     colorizeStroke,

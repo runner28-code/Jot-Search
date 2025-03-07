@@ -41,7 +41,6 @@ export default function Footer() {
           <img
             src={facebook}
             className={socialIconStyleMobile}
-          />
         </a>
         <a href={ROUTES.instagram}>
           <img
@@ -199,4 +198,5 @@ export default function Footer() {
           </a>
         </div>
       </div>
+    </div>
   </>)

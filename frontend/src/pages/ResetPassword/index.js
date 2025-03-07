@@ -74,7 +74,6 @@ export default function ResetPassword() {
   const renderMatch = () => {
     if( match === false ) {
       return ( <div className='text-error mb-4'>Passwords don&apos;t match</div> )
-// Temp comment
     }
   }
 
@@ -131,7 +130,6 @@ export default function ResetPassword() {
             <button
               className='h-20 bg-royalBlue text-center text-white text-md tracking-wide px-12 rounded-lg'
               type='submit'
-            >
               Get New Password
             </button>
           </div>

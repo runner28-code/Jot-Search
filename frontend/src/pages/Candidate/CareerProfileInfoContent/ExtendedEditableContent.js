@@ -53,7 +53,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       const pluralizedFolderName = name + 's';
       const newPath = await uploadFile(pluralizedFolderName, fileToUpload);
       console.log(newPath);
-      return setFormData({ ...formData, [name]: newPath });
     }
     setFormData({ ...formData, [name]: value });
   }

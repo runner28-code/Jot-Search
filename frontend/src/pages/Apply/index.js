@@ -181,7 +181,6 @@ export default function Apply() {
 
   function handleCommunityChoice(name, value) {
     setApplicationObject({
-      ...applicationObject,
       referredBy: value
     })
     setReferralChoice(false);
@@ -402,6 +401,7 @@ export default function Apply() {
               <UploadIcon className='h-16 w-16 fill-gray-600' />
               <p>Upload</p>
             </label>
+          </div>
 
             
           {/* { originalObject.resume && renderUseExistingResumeCheckbox( useExistingResume, setUseExistingResume) } */}

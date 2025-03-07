@@ -18,7 +18,6 @@ export const jobFilterObject = {
     'Off-Site',
   ],
   'Years Experience': [
-    'Any',
     ...experienceValues
   ],
   'Status': [
@@ -122,7 +121,6 @@ export const defaultCandidateFilterState = {
 };
 
 /* UTIL FUNCTIONS */
-// Temp comment
 export function buildSearchFilters(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = [];

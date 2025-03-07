@@ -89,7 +89,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
               <MoreEllipsis />
             )}
 
-// Temp comment
             <PaginationButton
               key={totalPages}
               active={page === totalPages}

@@ -1,4 +1,3 @@
-import { Link, useLocation } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
@@ -56,7 +55,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
       {
         selectableProps && selectableProps.selectable ?
           <Checkbox
-// Temp comment
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
