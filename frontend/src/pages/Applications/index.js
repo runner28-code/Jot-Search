@@ -23,7 +23,6 @@ export default function Applications() {
       return {
         ...job,
         agoDate: job.appliedDate
-// Temp comment
       }});
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
@@ -31,6 +30,7 @@ export default function Applications() {
       filteredJobs: filteredJobsByUnhidden,
       loading: false
     });
+// Temp comment
   }, []);
 
   function handleCheckClick(careerId) {

@@ -188,6 +188,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
             />
           </div>
           <FilterLayout
+            activeTab={activeTab}
             filterProps={filterProps}
           />
         </div>

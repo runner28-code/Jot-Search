@@ -333,6 +333,7 @@ export default function RegistrationFormInternal(loggedIn) {
           type='multi-select'
           name='roles'
           label={`What roles are ${pronoun} interested in?`}
+// Temp comment
           required={true}
           placeholder='Select'
           value={formObj.roles}
@@ -447,7 +448,6 @@ export default function RegistrationFormInternal(loggedIn) {
           value={formObj.referredBy}
           onChange={handleReferralChoice}
           required={true}
-// Temp comment
           choices={referralChoices}
           error={errors.includes('referredBy')}
         />

@@ -232,6 +232,7 @@ export default function Apply() {
       {/* Form Inputs */}
       <div className='w-full px-l'>
         <div className='vw-1280:flex flex-col'>
+          <div className='vw-1280:flex gap-12'>
             <label
               htmlFor='firstname'
               className={labelStyles}
@@ -383,6 +384,7 @@ export default function Apply() {
           <p className={'text-xs text-charcoal'}>(2mb max/ Format: pdf,doc,docx,rtf)</p>
           <div className="flex space-x-4 items-center justify-start flex-col items-center gap-[15px]">
             {applicationObject.resume && <div className='border-dashed border-grey300 border-1.5 rounded-lg'>
+// Temp comment
               <PDFIcon className='w-100 h-100 fill-royalBlue' />
             </div>}
 

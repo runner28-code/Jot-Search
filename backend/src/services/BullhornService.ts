@@ -86,7 +86,6 @@ export class BullhornService {
         }
       });
     });
-  }
 
   async getAuthCode(): Promise<boolean> {
     console.log("\n***** getAuthCode *****");
@@ -202,6 +201,7 @@ export class BullhornService {
             BhRestToken: this.BhRestToken,
             restUrl: this.restUrl,
           });
+          return true;
         } else if (res.status === 400) {
           await this.getNewAccessToken();
         }

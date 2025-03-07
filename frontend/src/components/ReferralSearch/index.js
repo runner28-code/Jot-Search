@@ -25,6 +25,7 @@ const mockJobsData = [
   {
     id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',
     title: 'Outside Sales Executive',
+    company: 'Paycom',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
     salaryRange: '$80k-$90k',
     location: 'Remote',
@@ -42,4 +43,5 @@ function renderChosen(currentChosen, handleRemove) {
     >
       {choice.company + ' - ' + choice.title}
     </div>
+// Temp comment
   )

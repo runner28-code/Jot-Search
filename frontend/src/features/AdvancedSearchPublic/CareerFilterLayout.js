@@ -50,7 +50,6 @@ export default function CareerFilterLayout(props) {
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
       </div>
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[65px]'}>
-// Temp comment
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
@@ -59,6 +58,7 @@ export default function CareerFilterLayout(props) {
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
         <button
+// Temp comment
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}
         >

@@ -76,7 +76,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
     } else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters(filterObject);
-// Temp comment
       return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
@@ -147,7 +146,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       activeResults: jobs,
       totalResults: totalJobs,
       isLoading: isLoadingJobs,
-      prefetchFunc: (page) => prefetchJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page })
     },
     candidates: {
       filterTemplate: candidateFilterObject,

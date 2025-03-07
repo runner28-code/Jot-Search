@@ -133,7 +133,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           type='single-select'
           name='expertise'
           label='Expertise'
-// Temp comment
           required={true}
           placeholder='Select'
           value={formData.expertise}

@@ -34,9 +34,7 @@ const job_filter_exclude_keys = [
     "automotive",
     "bailiff",
     "barback",
-    "bartender",
     "baseball",
-// Temp comment
     "beauty",
     "behavior",
     "behavior coach",

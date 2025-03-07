@@ -24,6 +24,7 @@ export default function DesktopHeader(props) {
   return (
     <div className={containerClasses}>
       <div className='flex gap-8 items-center'>
+        { icon && (
           <img
             src={ icon }
             alt='header icon'
@@ -38,7 +39,6 @@ export default function DesktopHeader(props) {
         </h1>
         { dataSource && (
           <SourceIdentifier type={dataSource} />
-        )}
       </div>
       { backButton && (
         <button

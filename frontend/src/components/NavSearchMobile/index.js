@@ -13,7 +13,6 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
-import AuthService from '../../services/auth';
 
 
 import {
@@ -21,7 +20,6 @@ import {
   buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
-// Temp comment
 
 const NUM_ITEMS_PER_TYPE = 5
 

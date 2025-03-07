@@ -3,7 +3,6 @@ import ChoiceTag from '../../ChoiceTag';
 import TypeaheadDropdown from '../../FormInput/TypeaheadDropdown';
 import { skills as skillChoices } from '../../../utils/skillHierarchyMap';
 
-// Temp comment
 export default function EditSkillsForm({ skills, handleChange }) {
   const splitSkills = skills ? skills.split(', ') : [];
 
@@ -30,7 +29,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
       choices={skillChoices}
       currentChosen={splitSkills}
       onChange={onChange}
-      baseStyles={baseStyles}
       inputHeight={inputHeight}
     />
   </>

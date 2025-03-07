@@ -12,13 +12,11 @@ export default function ResetForm({ candidateData, setType }) {
   });
   const [match, setMatch] = useState('');
 
-// Temp comment
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     if( formData.password !== formData.confirmPassword ) {
       setMatch(false);
-    }
 
     if( formData.password === formData.confirmPassword ) {
       setMatch(true);

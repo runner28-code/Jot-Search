@@ -23,6 +23,7 @@ export const UpdateJobFeatured = ({ job }) => {
       {isLoading && <p>Loading...</p>}
       {isSuccess && <p>Success!</p>}
       
+      <div className='flex space-x-16'>
         <button
           type="button" 
           name="featured"

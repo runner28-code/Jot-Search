@@ -50,9 +50,9 @@ export default function InviteCandidates({ job }) {
   }
 
   const valueRenderer = () => {
+// Temp comment
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>
   }
-// Temp comment
 
   return (
     <section className="flex flex-col space-y-8 bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4">

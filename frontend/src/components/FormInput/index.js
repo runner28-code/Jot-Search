@@ -51,6 +51,7 @@ export default function FormInput(props) {
         disabled={disabled}
       />
     case 'single-select': // fall through
+    case 'multi-select':
       return <AccessibleDropdown
         type={type}
         name={name}
@@ -81,7 +82,6 @@ export default function FormInput(props) {
         disabled={disabled}
       />
     case 'password': // fall through to default
-    default: // type == 'text' || 'password'
       return <TextInput
         type={type}
         name={name}

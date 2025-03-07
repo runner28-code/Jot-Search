@@ -4,7 +4,6 @@ import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
-// Temp comment
   guestChoices
 } from '../SideNav/utils';
 import Choice from './Choice';
@@ -20,7 +19,6 @@ const hrStyles = 'border-royalBlue ';
 const iconStyles = 'w-12 h-12 mr-4 ';
 
 const stylesObject = {
-  baseLinkStyles,
   topLinkStyles,
   bottomLinkStyles,
   iconStyles,

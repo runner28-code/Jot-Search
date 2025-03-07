@@ -10,6 +10,7 @@ export const saveCandidate = async (
         AND: {
           id: companyUserId,
           savedCandidates: {
+            some: {
               id: candidateId,
             },
           },
