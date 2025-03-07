@@ -13,7 +13,6 @@ const job_filter_exclude_keys = [
     "adult",
     "advocacy",
     "advocate",
-    "aircraft",
     "alumni",
     "americorps",
     "analyzer tech",

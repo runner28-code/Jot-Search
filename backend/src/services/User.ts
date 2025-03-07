@@ -33,7 +33,6 @@ const validateUser = ({
   role,
   city = "",
   state = "",
-  resume,
   linkedin,
   skills,
   category,
@@ -64,6 +63,7 @@ export const register = async (data: User) => {
     console.log("registering...");
     const validate = validateUser(data);
     if (validate) {
+      console.log("failed validation", validate);
       return { result: false, error: validate };
     }
 

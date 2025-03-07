@@ -36,11 +36,13 @@ export default function Footer() {
             src={twitter}
             className={socialIconStyleMobile}
           />
+// Temp comment
         </a>
         <a href={ROUTES.facebook}>
           <img
             src={facebook}
             className={socialIconStyleMobile}
+          />
         </a>
         <a href={ROUTES.instagram}>
           <img

@@ -69,7 +69,6 @@ export const choices = {
   logout: {
     label: 'Logout',
     icon: LogoutIcon,
-    link: ROUTES.logout,
   },
 }
 

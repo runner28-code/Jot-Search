@@ -9,7 +9,6 @@ async function main() {
     await seedCompanies();
     await seedCategories();
     await seedJobs();
-    await seedUsers();
     console.log("Done🎉");
   } catch (err) {
     console.error("Error during seed...❌");

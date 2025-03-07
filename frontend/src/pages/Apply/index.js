@@ -181,6 +181,7 @@ export default function Apply() {
 
   function handleCommunityChoice(name, value) {
     setApplicationObject({
+      ...applicationObject,
       referredBy: value
     })
     setReferralChoice(false);
@@ -274,6 +275,7 @@ export default function Apply() {
               <input
                 type='text'
                 name='email'
+// Temp comment
                 id='email'
                 placeholder='Email'
                 value={applicationObject.email}

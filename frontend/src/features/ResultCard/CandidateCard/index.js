@@ -59,7 +59,6 @@ export default function CandidateCard({ data, disableLink }) {
               <img
                 src={linkedinIcon}
                 className='h-8 mr-5' />
-              <span className='text-charcoal'>
                 LinkedIn
               </span>
             </div>
@@ -73,7 +72,6 @@ export default function CandidateCard({ data, disableLink }) {
             {/* Years Experience */}
             <div className='w-1/3 flex items-center'>
               <img
-// Temp comment
                 src={experienceIcon}
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{experienceString}</p>

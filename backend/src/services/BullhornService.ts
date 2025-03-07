@@ -70,6 +70,7 @@ export class BullhornService {
           return resolve(null);
         }
         let cookies = JSON.parse(data.toString());
+        return resolve(cookies);
       });
     });
   }
@@ -129,7 +130,6 @@ export class BullhornService {
     console.log(url);
     const res = await axios.post(url);
     console.log(res.status);
-    console.log(res);
     console.log("============================ \n");
     if (res.status === 200) {
       const { access_token, refresh_token } = res.data;

@@ -1,8 +1,10 @@
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../LoadingSpinner';
 import { experienceMap } from '../../../utils/dbFieldMapping';
+
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if ( submissionObject.loading ) {
+// Temp comment
     return <LoadingSpinner
       height='50'
       width='50'

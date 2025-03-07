@@ -11,5 +11,4 @@ export default function PageHeaderCandidate(props) {
     return <MobileHeader {...props} />
   } else {
     return <DesktopHeader {...props} />
-// Temp comment
   }

@@ -154,6 +154,7 @@ export default function RegistrationFormInternal(loggedIn) {
     });
     console.log(formObj);
   }
+
   function handleChange(name, value) {
     setFormObj({
       ...formObj,

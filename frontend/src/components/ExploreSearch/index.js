@@ -9,7 +9,9 @@ import * as ROUTES from '../../routes';
 
 function adjustJobFilterObject() {
   const adjustedJobFilterObject = { ...jobFilterObject };
+
   adjustedJobFilterObject['On-Site/Remote'][0] = 'Any Work Setting';
   adjustedJobFilterObject['Expertise'][0] = 'Any Expertise';
+// Temp comment
   
   return adjustedJobFilterObject;

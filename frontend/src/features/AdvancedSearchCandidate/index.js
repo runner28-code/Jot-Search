@@ -139,7 +139,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   }
 
   // eslint-disable-next-line no-unused-vars
-  const { Status, ...publicDropdownFilters } = jobFilterObject;
   const propsByTab = {
     jobs: {
       filterTemplate: publicDropdownFilters,

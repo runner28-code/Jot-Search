@@ -8,6 +8,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   }
 
   function handleKeydown(e) {
+// Temp comment
     if (e.keyCode === 13) {
       handleSearchClick();
     }
@@ -29,7 +30,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         type='text'
         className={ inputStyles }
         placeholder={ placeholderString }
-// Temp comment
         value={ searchTerm }
         onChange={ handleChange }
       />

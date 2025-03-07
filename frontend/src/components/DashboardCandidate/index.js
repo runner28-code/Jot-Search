@@ -14,7 +14,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   const { width } = useWindowDimensions();
 
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
-  const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
   const active = ' bg-royalBlue';
@@ -30,6 +29,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
             to={ROUTES.careers}
           >
             <CareerIcon />
+            <p className='ml-4'>Careers</p>
           </Link>
           <Link
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }

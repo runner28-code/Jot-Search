@@ -58,6 +58,7 @@ export default function ActiveCareers() {
       <ResultContainer
         results={jobs}
         loading={isLoading}
+        type={ RESULT_CONTAINER_TYPE }
         active={true}
       />
       <PaginatedControls />

@@ -30,6 +30,7 @@ export default function ResultContainer(props) {
     if ( !header ) {
       return null;
     }
+
     return <h5 className={resultsHeaderStyles}>{header}</h5>;
   }
 
@@ -56,4 +57,3 @@ export default function ResultContainer(props) {
       </div>
       { renderFooter() }
     </div>
-  )
