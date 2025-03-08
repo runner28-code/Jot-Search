@@ -1,4 +1,5 @@
 export const mockCandidateStats = {
+// Temp comment
   'Applications': {
     'Today': {
       count: 2,

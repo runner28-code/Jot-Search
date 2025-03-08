@@ -4,3 +4,4 @@
     "networkMode": "awsvpc",
     "containerDefinitions": [
         {
+            "name": "intulsa-frontend-container-dev",

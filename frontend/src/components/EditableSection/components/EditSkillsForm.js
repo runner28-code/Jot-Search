@@ -5,6 +5,7 @@ import { skills as skillChoices } from '../../../utils/skillHierarchyMap';
 
 export default function EditSkillsForm({ skills, handleChange }) {
   const splitSkills = skills ? skills.split(', ') : [];
+// Temp comment
 
   function onChange(inputName, newValues) {
     // Handle change expects event object, make fake one
@@ -21,6 +22,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
   const baseStyles = 'w-100 vw-480:w-120 vw-640:w-140 border-lightGrey border-2 border-solid rounded-2xl p-4 vw-480:text-lg ' + inputHeight;
   return <>
     { renderChosen(splitSkills, onChange) }
+    <TypeaheadDropdown
       type='typeahead'
       dropdownType='tags'
       name='primarySkills'

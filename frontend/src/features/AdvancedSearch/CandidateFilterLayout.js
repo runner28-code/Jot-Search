@@ -75,7 +75,6 @@ export default function CandidateFilterLayout(props) {
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange)}
-        <FormInput
           type='typeahead'
           dropdownType='tags'
           name='skills'
@@ -93,7 +92,6 @@ export default function CandidateFilterLayout(props) {
       <div className='flex justify-between items-center gap-[65px]'>
         <FilterSearch
           searchTerm={searchTerm}
-// Temp comment
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'

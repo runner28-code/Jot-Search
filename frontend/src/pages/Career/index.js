@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getJobById } from '../../services/API';
@@ -45,7 +44,6 @@ export default function CareerPage() {
   const postingAge = calculatePostingAge(careerData.createdAt);
   const data = {
     careerData,
-    categoryString,
     addressString,
     salaryString,
     postingAge,

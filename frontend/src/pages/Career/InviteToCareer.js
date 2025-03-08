@@ -36,7 +36,6 @@ export default function InviteToCareer({ candidate }) {
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (
-        <span 
           key={item.value} 
           className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">
           <span>{item.label}</span>
@@ -72,7 +71,6 @@ export default function InviteToCareer({ candidate }) {
         hasSelectAll={false}
       />
       <div className='flex space-x-8'>
-// Temp comment
         <button 
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
           onClick={async () => {

@@ -243,7 +243,6 @@ export default function RegistrationForm() {
             error={errors.includes('linkedin')}
           />
           <FormInput
-// Temp comment
             type='text'
             name='referredBy'
             placeholder={`How did ${pronoun} hear about us?`} 

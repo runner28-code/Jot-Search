@@ -142,7 +142,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         />
 
         <FormInput
-// Temp comment
           type='multi-select'
           name='roles'
           label={`What roles are you interested in?`}

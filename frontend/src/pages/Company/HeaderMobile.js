@@ -6,6 +6,7 @@ import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
 
+// Temp comment
 
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
@@ -20,7 +21,6 @@ function HeaderContent({ companyData }) {
   console.log(companyData);
   return (
     <>
-// Temp comment
       { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-2'>
         <div className='flex flex-wrap items-center mb-4'>

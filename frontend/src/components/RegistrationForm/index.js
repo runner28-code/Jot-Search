@@ -381,6 +381,7 @@ export default function RegistrationForm(loggedIn) {
             choices={['Any', 'Remote', 'On Site', 'Hybrid']}
             error={errors.includes('workspace')}
           />
+          {/* File input for resume */}
           <FormInput
             type='file'
             name='resume'

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Flag from '../../../assets/icons/flag.svg';
+// Temp comment
 import Search from '../../../assets/icons/search-gray.svg';
 import { useGetCompanies } from '../../../hooks/queries/useGetCompanies';
 import { useGetClientContacts } from '../../../hooks/queries/useGetClientContacts';
@@ -54,6 +55,7 @@ export default function AddCompanyUser() {
         <h2 className={ titleStyles }>Step 2: Assign Company Contact(s)</h2>
         <label className='opacity-70 text-sm'>Company Name</label>
         <div className='relative'>
+          <input
             type='text'
             id='companylookup'
             placeholder='Company lookup'

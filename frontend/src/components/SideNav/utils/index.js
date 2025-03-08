@@ -1,3 +1,4 @@
+// Temp comment
 import { useLocation } from 'react-router-dom';
 // import { MdOutlineNotificationsActive as AlertIcon } from 'react-icons/md';
 import { ImProfile as ApplicationIcon } from 'react-icons/im';
@@ -125,6 +126,7 @@ export function findSelectedFromPath() {
       return 'Candidates';
     case 'careers':
       return 'Careers';
+    case 'companies':
       return 'Companies';
     case 'add-user':
       return 'Add User';

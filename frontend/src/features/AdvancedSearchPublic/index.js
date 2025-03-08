@@ -171,7 +171,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     searchTerm: filterObject.title,
     setSearchTerm: handleSearchChange,
     handleSearchClick: handleSearchClick,
-// Temp comment
     clearFilters: clearFilters,
   };
   const { PaginatedControls } = usePaginatedControls({ page, setPage, total: totalResults, itemsPerPage: ITEMS_PER_PAGE, prefetchFunc });
@@ -193,6 +192,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
             filterProps={filterProps}
           />
         </div>
+// Temp comment
       </div>
       <ResultsHeader
         total={totalResults}

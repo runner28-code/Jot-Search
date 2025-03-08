@@ -325,6 +325,7 @@ export default function RegistrationFormInternal(loggedIn) {
           placeholder='Select'
           value={formObj.expertise}
           onChange={handleChange}
+          choices={categories}
           error={errors.includes('expertise')}
         />
         {/* Roles */}

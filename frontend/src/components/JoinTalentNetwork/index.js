@@ -16,7 +16,6 @@ export default function JoinTalentNetwork() {
             <h1 className='text-h5 font-spaceGrotesk font-semibold text-softWhite'>
               Join the InTulsa Talent Network
             </h1>
-// Temp comment
             <p className='text-sm leading-[3rem] text-softWhite mt-8'>
               Build your profile with the type of opportunity you want to attract and next exclusively with our network. Receive email alerts that make you first to know about relevant new opportunities, based on your preferences.
             </p>
@@ -48,7 +47,6 @@ export default function JoinTalentNetwork() {
           </p>
           <Link
             to={ROUTES.signup}
-            className='flex items-center justify-center h-28 w-112 bg-buttonLightBlue mt-22 px-18 rounded-lg'
           >
             <span className='text-softWhite text-ml'>Create an account</span>
           </Link>

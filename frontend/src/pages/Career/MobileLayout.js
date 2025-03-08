@@ -80,6 +80,7 @@ export default function MobileLayout(props) {
           </div>
           {/* Third row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
+            {/* Salary */}
             <div className='w-1/2 flex items-center pr-4'>
               <img
                 src={salaryIcon}
@@ -122,6 +123,7 @@ export default function MobileLayout(props) {
           onClick={() => navigate(-1)}
         >
           Back
+// Temp comment
         </button>
       </div>
     </section>

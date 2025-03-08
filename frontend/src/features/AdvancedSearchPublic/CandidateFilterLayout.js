@@ -42,7 +42,6 @@ export default function CandidateFilterLayout(props) {
   const dropdownFilterObject = {};
   const checkboxFilterObject = {};
   if( userRole === 'coordinator' ) {
-    dropdownFiltersCoord.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
     checkboxFiltersCoord.forEach(filter => {
@@ -73,7 +72,6 @@ export default function CandidateFilterLayout(props) {
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
-// Temp comment
         />
         <button
           className='text-royalBlue text-sm whitespace-nowrap'

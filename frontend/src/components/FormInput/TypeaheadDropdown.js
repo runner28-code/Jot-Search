@@ -53,7 +53,6 @@ export default function TypeaheadDropdown(props) {
   function handleListClick() {
     setDropdownOpen(dropdownOpen => !dropdownOpen);
   }
-
   function handleKeyDown() {
     setDropdownOpen(true);
   }

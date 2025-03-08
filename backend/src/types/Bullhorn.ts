@@ -21,7 +21,6 @@ export type Company = {
     culture?: string,
     customDate1_3?: string,
     customFloat1_3?: string,
-    customInt1_3?: string,
     customText1_20?: string,
     customTextBlock1_5?: string,
     dateFounded?: string,
@@ -66,6 +65,7 @@ export type Job = {
     date_end?: string;
     date_last_exported?: string;
     date_last_modified?: string;
+    date_last_published?: string;
     degreeList?: string;
     description?: string;
     durationWeeks?: string;

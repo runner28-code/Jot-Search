@@ -8,12 +8,10 @@ const SINGLE_SELECT = 'single-select';
 const YEARS_OF_EXPERIENCE = 'yearsExperience';
 
 function renderActiveIcon(choice, currentChosen) {
-// Temp comment
   if (choice === currentChosen || currentChosen.includes(choice)) {
     return(
       <img 
         src={checkmarkIcon} 
         alt="checkmark" 
         className="w-8 h-8 mr-2" />
-    )
   }
