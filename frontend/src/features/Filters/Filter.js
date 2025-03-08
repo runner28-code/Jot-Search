@@ -15,7 +15,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const [showDropdown, setShowDropdown] = useState(false);
   const [selected, setSelected] = useState(initialValue);
   const [listening, setListening] = useState(false);
-// Temp comment
 
   const menuRef = useRef(null);
 
@@ -63,7 +62,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
           alt='open'
           className='w-6 h-4'
         />
-
       </div>
       { renderDropdown( showDropdown, choices, handleChoiceClick ) }
     </div>

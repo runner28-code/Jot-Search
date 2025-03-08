@@ -60,6 +60,7 @@ export default function AddCoordinator() {
     );
 
     // Add errors to state if there are any
+// Temp comment
     if (Object.keys(newErrors).length > 0) {
       setSubmissionObject({
         ...submissionObject,

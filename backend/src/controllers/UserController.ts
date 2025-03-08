@@ -23,6 +23,7 @@ import {
   getStats,
   getLandingPageStats,
   findUserByEmail,
+  getCompanyDashboardStats,
   getCoordinatorDashboardStats,
 } from "../services/User";
 

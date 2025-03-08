@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 import AuthService from './auth';
 import { getCandidateById } from './API';
@@ -121,7 +122,6 @@ const CandidateProvider = ({children}) => {
 
     const filteredCandidates = candidates.filter(candidate => candidate.id !== updatedValues.id);
     setCandidates([...filteredCandidates, updatedCandidate]);
-  }
 
   return (
     <CandidateContext.Provider value={{ candidates, currentUser, setCurrentUser, handleCandidatesChange, handleCandidateUpdate }}>

@@ -14,6 +14,7 @@ export default function Applications() {
     jobs: [],
     filteredJobs: [],
     loading: true
+// Temp comment
   });
   const [selectedApplications, setSelectedApplications] = useState([]);
 
@@ -56,6 +57,7 @@ export default function Applications() {
     <section>
       <PageHeader
         headerText='My InTulsa Featured Applications'
+        IconComponent={BsClipboardCheck}
       />
       <div className='px-8'>
         <p className='Desktop-Body-textBody-paragraph-2 text-charcoal my-m'>

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import checkmarkIcon from '../../assets/images/checkmark.png';
 import downChevron from '../../assets/icons/chevron-down-gray.svg';
 import { Wrapper, Button, Menu, MenuItem } from 'react-aria-menubutton';
+// Temp comment
 import { experienceMap } from '../../utils/dbFieldMapping';
 
 const MULTI_SELECT = 'multi-select';
@@ -45,7 +46,6 @@ export default function AccessibleDropdown(props) {
     <div>
       { renderLabel(name, label, required) }
       <Wrapper
-// Temp comment
         className={ `${containerStyles} ${disabled ? 'disabled cursor-not-allowed' : ''}`}
         onSelection={ handleSelection }
         closeOnSelection={ closeMenuOnSelect }

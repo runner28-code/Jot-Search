@@ -13,7 +13,6 @@ export default function PasswordReset({role, candidateData}) {
   function setType(response, condition) {
     setCondition(condition);
     setResponse(response);
-  }
 
   function renderResponse () {
     const successStyle = 'mb-4 text-success';
@@ -33,6 +32,7 @@ export default function PasswordReset({role, candidateData}) {
             setType={setType}
           />
         )}
+        { role === 'coordinator' && (
           <ResetForm
             candidateData={candidateData}
             setType={setType}

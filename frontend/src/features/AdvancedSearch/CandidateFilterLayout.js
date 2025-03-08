@@ -27,6 +27,7 @@ const checkboxFiltersCoord = [
 ];
 const checkboxFilters = [
   'Authorized to work in the US',
+  'Open to Relocation',
   'Actively Looking',
 ];
 
@@ -39,7 +40,6 @@ export default function CandidateFilterLayout(props) {
     setSearchTerm,
     handleSearchClick,
     clearFilters,
-  } = props;
   let userRole = AuthService.getUserRole();
 
   const dropdownFilterObject = {};

@@ -7,7 +7,6 @@ import {
   skills as skillChoices,
   roles as roleChoices,
 } from '../../../utils/skillHierarchyMap';
-import { experienceMap } from '../../../utils/dbFieldMapping';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
 import ResumePreview from './ResumePreview';
 
@@ -74,7 +73,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     handleCandidateUpdate(dataToSubmit);
     setEditMode(false);
   }
-// Temp comment
 
   const disabled = !editMode
   const disabledStyles = disabled ? 'disabled cursor-not-allowed bg-grey300' : '';

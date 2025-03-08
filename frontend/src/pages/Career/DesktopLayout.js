@@ -75,7 +75,6 @@ export default function DesktopLayout(props) {
           </div>
           {/* Second row icons */}
           <div className='w-full flex items-center mt-xl'>
-            {/* Employment Type */}
             <div className='w-1/3 flex items-center'>
               <img
                 src={clockIcon}
@@ -106,7 +105,6 @@ export default function DesktopLayout(props) {
           <div className='flex flex-col space-y-8'>
             <UpdateJobStatus job={careerData} />
             {careerData.datasource === 'bullhorn' && <UpdateJobFeatured job={careerData} />}
-// Temp comment
           </div>
         )
       }

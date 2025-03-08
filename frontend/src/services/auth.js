@@ -58,6 +58,7 @@ class AuthService {
     this.clearStorage();
     window.location.assign('/landing-page');
   }
+// Temp comment
 
   clearStorage() {
     // Clear user token and profile data from localStorage

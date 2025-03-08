@@ -10,7 +10,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
 
   const PaginatedControls = () => total && total > itemsPerPage && (
     <nav 
-// Temp comment
       className={navStyles} 
       aria-label="Pagination"
     >
@@ -95,7 +94,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
               active={page === totalPages}
               page={totalPages}
               setPage={setPage}
-              prefetchFunc={prefetchFunc}
             >
               {totalPages}
             </PaginationButton>
