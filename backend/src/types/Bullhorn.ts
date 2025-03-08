@@ -34,6 +34,7 @@ export type Company = {
     name?: string,
     notes?: string,
     numEmployees?: string,
+    numOffices?: string,
     ownerShip?: string,
     phone?: string,
     revenue?: string,
@@ -58,7 +59,6 @@ export type Job = {
     bonusPackage?: string;
     certificationList?: string;
     clientBillRate?: string;
-    clientContact?: string;
     clientCorporationID?: string;
     date_added?: string;
     date_closed?: string;
@@ -69,3 +69,4 @@ export type Job = {
     degreeList?: string;
     description?: string;
     durationWeeks?: string;
+    educationDegree?: string;

@@ -212,3 +212,6 @@ export class BullhornService {
         retryNo++;
         console.log("\nxxxxx login failed: retrying now");
       }
+    }
+    return false;
+  }

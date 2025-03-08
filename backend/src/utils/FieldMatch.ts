@@ -14,3 +14,4 @@ export const JobFilter: any = {
     hidden: "hidden",
     companyId: "clientCorporationID",
   },
+  main: {

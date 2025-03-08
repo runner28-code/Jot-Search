@@ -53,7 +53,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
   const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
-  if (state) {
     if (state.title) initialFilterState.title = state.title;
     if (state.expertise) initialFilterState.Expertise = state.expertise;
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
@@ -182,6 +181,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
         <div className='relative w-full max-w-400 bg-sky-500 text-white border border-disabledGrey pt-12 px-xxl-4 pb-xxl'>
           { /* Silence is bliss */}
           <div className='hidden'>
+            <TabContainer
               tabChoices={availableTabChoicesByUserType[userType]}
               activeTab={activeTab}
               setActiveTab={handleTabChange}

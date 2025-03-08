@@ -89,3 +89,4 @@ export class CandidateController {
         return { message: "You are not authorized to update candidate", result: false };
       }
 
+      const candidate = await db.candidate.findFirst({

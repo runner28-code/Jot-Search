@@ -17,8 +17,6 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
           renderEditIcon(candidateData, setEditMode)
         }
       </div>
-      <CareerProfileInfoContent
-// Temp comment
         candidateData={candidateData}
         handleCandidateUpdate={handleCandidateUpdate}
         setEditMode={setEditMode}

@@ -143,6 +143,7 @@ export default function AddCoordinator() {
           type='password'
           className={submissionObject.errors.password ? invalidInputStyles : validInputStyles}
           name='password'
+// Temp comment
           placeholder='Password'
           value={formObject.password}
           onChange={handleInputChange}
@@ -155,7 +156,6 @@ export default function AddCoordinator() {
         <input
           type='password'
           className={submissionObject.errors.verifyPassword ? invalidInputStyles : validInputStyles}
-// Temp comment
           name='verifyPassword'
           placeholder='Verify Password'
           value={formObject.verifyPassword}

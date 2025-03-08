@@ -22,6 +22,7 @@ import {
   recovery,
   getStats,
   getLandingPageStats,
+  findUserByEmail,
   getCompanyDashboardStats,
   getCoordinatorDashboardStats,
 } from "../services/User";
@@ -43,7 +44,6 @@ export class UserController {
 
     if (result) {
       const token = CreateJwtToken(data);
-      return {
         result,
         token,
       };

@@ -13,7 +13,6 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
   try {
       await sendgrid.send(msg);
   } catch (error) {
-      console.log(error);
       throw error;
   }
 };
@@ -24,3 +23,4 @@ export const sendVerification = async (to: string, name: string) => {
     await sendEmail(to, 'Welcome to inTulsa!', 'register-verification', {
       url: `${base_url}/verify`,
       firstName: name,
+    });

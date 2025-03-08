@@ -10,8 +10,6 @@ const YEARS_OF_EXPERIENCE = 'yearsExperience';
 function renderActiveIcon(choice, currentChosen) {
   if (choice === currentChosen || currentChosen.includes(choice)) {
     return(
-// Temp comment
-      <img 
         src={checkmarkIcon} 
         alt="checkmark" 
         className="w-8 h-8 mr-2" />

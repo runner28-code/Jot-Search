@@ -77,7 +77,6 @@ export default function NavSearch({ placeholder }) {
 
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
-// Temp comment
   }, [closeDropdown]);
 
   const combinedResults = {

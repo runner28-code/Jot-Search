@@ -16,6 +16,7 @@ export type Company = {
     billingFrequency?: string,
     billingPhone?: string,
     businessSectorList?: string,
+    companyDescription?: string,
     companyURL?: string,
     competitors?: string,
     culture?: string,
@@ -69,3 +70,4 @@ export type Job = {
     date_last_published?: string;
     degreeList?: string;
     description?: string;
+    durationWeeks?: string;

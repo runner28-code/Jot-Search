@@ -66,6 +66,7 @@ export const roles = {
     'Sales Leaderships & Management'
   ],
 };
+
 export const skills = [
   '.NET',
   'Account Management',
@@ -83,3 +84,4 @@ export const skills = [
   'Agile',
   'AI',
   'AJAX',
+  'Analyst',

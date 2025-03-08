@@ -58,7 +58,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
     total: data.total
   }
 }
-// Temp comment
 
 export async function getCandidateById(id) {
   const { data } = await API.get(ROUTES.APIcandidates, {
@@ -66,7 +65,6 @@ export async function getCandidateById(id) {
       id
     }
   });
-  return normalizeData(data.candidate);
 }
 
 export async function updateUser(newData, id) { // id is optional, if no id is passed it will update the user attached to the auth token

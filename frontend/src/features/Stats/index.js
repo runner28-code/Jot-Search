@@ -45,7 +45,6 @@ export default function Stats({ userType }) {
         'Introductions Requests': { ...result.introductionsRequests },
         'Company Favorites': { ...result.companyFavorites },
         'Active Career Post Favorites': { ...result.activeCareerPostFavorites },
-        'Application Invitations Sent': { ...result.applicationInvitationsSent }                
       })
     }
     if (userType === 'coordinator') {

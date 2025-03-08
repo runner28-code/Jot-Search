@@ -4,4 +4,3 @@
 //     "networkMode": "awsvpc",
 //     "containerDefinitions": [
 //         {
-//             "name": "intulsa-backend-container-prod",

@@ -28,3 +28,4 @@ try {
   console.error(error)
 }
 
+const uploadToS3 = async(req: any, res: any) => {
