@@ -24,7 +24,6 @@ export default function JoinTalentNetwork() {
               className='flex items-center justify-center h-28 w-112 bg-buttonLightBlue mt-12 px-18 rounded-lg'
             >
               <span className='text-softWhite text-ml'>Create an account</span>
-// Temp comment
             </Link>
           </div>
           <div className='mt-8 px-[5%]'>
@@ -42,6 +41,7 @@ export default function JoinTalentNetwork() {
         <div className='h-240 w-230 px-24 mr-18 flex flex-col rounded-3xl bg-royalBlue'>
           <h1 className='mt-22 text-h1 font-spaceGrotesk font-semibold text-softWhite'>
             Join the InTulsa Talent Network
+// Temp comment
           </h1>
           <p className='text-ml text-softWhite mt-18'>
             Build your profile with the type of opportunity you want to attract and next exclusively with our network. Receive email alerts that make you first to know about relevant new opportunities, based on your preferences.

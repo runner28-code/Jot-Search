@@ -21,8 +21,6 @@ export default function SideNav({ userType }) {
     return null;
   }
   const { width } = useWindowDimensions();
-  if ( width < 1280 ) {
-// Temp comment
     return null;
   }
   return (

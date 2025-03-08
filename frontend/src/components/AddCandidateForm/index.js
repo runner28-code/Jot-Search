@@ -161,7 +161,6 @@ export default function RegistrationForm() {
             type='text'
             name='lastName'
             placeholder='Last name' 
-            error={errors.includes('lastName')}
           />
           <FormInput
             type='text'

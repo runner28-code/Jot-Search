@@ -29,7 +29,6 @@ export default function NavMenu() {
         className={buttonStyles}
         onClick={handleMenuClick}
       >
-// Temp comment
         <div className='w-8 h-8 flex flex-col justify-between'>
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
@@ -37,6 +36,7 @@ export default function NavMenu() {
         </div>
       </button>
       <Menu
+// Temp comment
         key={menuOpen}
         menuOpen={menuOpen}
         handleOptionClick={handleOptionClick}

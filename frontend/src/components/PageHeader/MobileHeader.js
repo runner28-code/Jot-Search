@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import { useNavigate } from 'react-router-dom';
 
 export default function MobileHeader(props) {

@@ -182,7 +182,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
         <div className='relative w-full max-w-400 bg-sky-500 text-white border border-disabledGrey pt-12 px-xxl-4 pb-xxl'>
           { /* Silence is bliss */}
           <div className='hidden'>
-            <TabContainer
               tabChoices={availableTabChoicesByUserType[userType]}
               activeTab={activeTab}
               setActiveTab={handleTabChange}

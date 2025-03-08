@@ -13,6 +13,7 @@ export default function DashboardPublic({togglePassState}) {
   const { width } = useWindowDimensions();
 
   const { totalJobsCount, totalCompaniesCount } = useGetLandingPageStats({});
+  const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
@@ -32,6 +33,7 @@ export default function DashboardPublic({togglePassState}) {
         <div className='flex items-center'>
           <Link
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
+// Temp comment
             to={ROUTES.careers}
           >
             <CareerIcon />

@@ -22,8 +22,8 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
             className={ optionStyles }
           >
             { choice }
-          </option>
 // Temp comment
+          </option>
         )
       })}
     </select>

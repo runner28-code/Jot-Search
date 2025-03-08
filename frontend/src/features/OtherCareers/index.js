@@ -44,7 +44,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
             key={index}
             data={career}
           />
-// Temp comment
         })
         }
         {/* Only show Pagination if total is greater than the amount we render on a single page */}

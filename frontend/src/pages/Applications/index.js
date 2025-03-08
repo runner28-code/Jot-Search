@@ -27,7 +27,6 @@ export default function Applications() {
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
-      filteredJobs: filteredJobsByUnhidden,
       loading: false
     });
   }, []);
@@ -77,6 +76,7 @@ export default function Applications() {
           agoText={'Applied'}
           selectableProps={{
             selectable: true,
+            selected: selectedApplications,
             handleClick: handleCheckClick
           }}
         />

@@ -64,7 +64,6 @@ export default function ResetPassword() {
     }
   }
 
-// Temp comment
   const renderError = () => {
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )

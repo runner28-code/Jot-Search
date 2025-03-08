@@ -25,7 +25,6 @@ export const saveApplication = async (job: string, candidate: string) => {
           }
         },
       });
-
       console.log({ app });
 
       return {

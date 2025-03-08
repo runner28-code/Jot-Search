@@ -12,7 +12,7 @@ export default function JobResults({ jobs }) {
   return (
     <>
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Careers</h6>
-        return (
+      { jobs.map(job => {
           <JobResult 
             job={job} 
             key={job.id} />

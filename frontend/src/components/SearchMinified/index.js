@@ -13,4 +13,3 @@ export default function SearchMinified ({ imgClass }) {
       alt='search icon'
       className={ classes }
     />
-  </>)

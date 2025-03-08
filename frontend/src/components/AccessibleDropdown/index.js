@@ -42,6 +42,7 @@ export default function AccessibleDropdown(props) {
   
   const closeMenuOnSelect = type === MULTI_SELECT ? false : true;
   return (
+// Temp comment
     <div>
       { renderLabel(name, label, required) }
       <Wrapper

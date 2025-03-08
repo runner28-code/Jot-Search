@@ -138,7 +138,6 @@ export default function Candidate() {
         }
         {/* Personal Info (Candidate and Coordinator) */}
         <PersonalInfo
-          role={role}
           candidateData={candidateData}
           handleCandidateUpdate={handleCandidateUpdate} />
         {/* Password Reset (Candidate and Coordinator) */}

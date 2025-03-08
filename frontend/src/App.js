@@ -34,6 +34,7 @@ function App() {
               path={ROUTES.login}
               element={<Login />} />
             <Route
+// Temp comment
               path={ROUTES.landingPage}
               element={<LandingPage />} />
             <Route
@@ -67,5 +68,6 @@ function App() {
           </Routes>
         </div>
       </main>
+      <Footer />
     </div>
   );

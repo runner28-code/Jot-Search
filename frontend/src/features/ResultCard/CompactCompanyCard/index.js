@@ -46,6 +46,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             onChange={selectableProps.handleClick}
           />
           : 
+          <FavoriteButton
             type={'company'}
             data={data}
             isFavoriteOverride={isFavoriteOverride} />

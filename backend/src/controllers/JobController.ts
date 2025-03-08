@@ -5,6 +5,7 @@ import {
   Body,
   Get,
   Post,
+  Put,
   Delete,
   QueryParam,
   JsonController,
