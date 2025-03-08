@@ -1,3 +1,4 @@
+// Temp comment
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getJobById } from '../../services/API';
@@ -16,6 +17,7 @@ import PageHeader from '../../components/PageHeader';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import InviteCandidates from './InviteCandidates';
 
+export default function CareerPage() {
   const { width } = useWindowDimensions();
   const location = useLocation();
   const activeData = location.state;

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
@@ -93,6 +92,5 @@ export default function Login() {
           </a>
         </div>
       </div>
-// Temp comment
     </section>
   )

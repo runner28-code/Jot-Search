@@ -59,6 +59,5 @@ export function convertUserToCandidate(user) {
     gender: user.gender || '',
     ethnicity: user.ethnicity || '',
     veteran: user.veteran || '',
-    disability: user.disability || '',
   };
   return candidate;

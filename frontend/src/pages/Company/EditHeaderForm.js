@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { MdLocationOn, MdCancel, MdCheckCircle } from 'react-icons/md';
 import PropTypes from 'prop-types';
-import { FaPhoneAlt } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { appendPathToBaseUrl } from '../../services/API';
 

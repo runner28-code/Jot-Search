@@ -78,7 +78,6 @@ export const register = async (data: User) => {
         error: `User with ${user.email} exists`,
       };
     }
-
     const savingData = {
       data: {
         ...data,

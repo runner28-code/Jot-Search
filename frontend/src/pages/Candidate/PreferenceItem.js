@@ -6,12 +6,12 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
   return (
     <div className='flex flex-col mt-5'>
       <div className='flex space-x-16'>
+// Temp comment
         <SwitchButton
           fieldName={fieldName}
           label={label}
           toggled={toggled}
           onToggle={onUpdate}
-// Temp comment
           disabled={disabled}
         />
         <label 

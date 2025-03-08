@@ -42,7 +42,6 @@ const job_filter_exclude_keys = [
     "bilingual",
     "billing",
     "bim",
-// Temp comment
     "bingo",
     "biologist",
     "biomed",

@@ -42,7 +42,6 @@ export default function GlobalSearch({ placeholder }) {
     if ( searchTerm === '' ) {
       return setResults({
         jobs: [],
-        companies: [],
         candidates: []
       });
     }
@@ -67,6 +66,7 @@ export default function GlobalSearch({ placeholder }) {
   /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');
+  }, [location]);
 
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {

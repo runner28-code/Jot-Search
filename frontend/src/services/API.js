@@ -65,6 +65,7 @@ export async function getCandidateById(id) {
       id
     }
   });
+  return normalizeData(data.candidate);
 }
 
 export async function updateUser(newData, id) { // id is optional, if no id is passed it will update the user attached to the auth token

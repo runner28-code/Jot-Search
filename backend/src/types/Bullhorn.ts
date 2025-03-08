@@ -59,13 +59,13 @@ export type Job = {
     bonusPackage?: string;
     certificationList?: string;
     clientBillRate?: string;
+    clientContact?: string;
     clientCorporationID?: string;
     date_added?: string;
     date_closed?: string;
     date_end?: string;
     date_last_exported?: string;
     date_last_modified?: string;
-    date_last_published?: string;
     degreeList?: string;
     description?: string;
     durationWeeks?: string;

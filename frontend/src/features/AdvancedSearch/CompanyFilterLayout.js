@@ -8,6 +8,7 @@ export default function CompanyFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
+
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex items-center gap-[65px]'>

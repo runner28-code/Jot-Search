@@ -57,7 +57,6 @@ export default function CandidateFilterLayout(props) {
     });
   }
 
-// Temp comment
 
   return (
     <div className='flex flex-col gap-xxl-4'>
@@ -83,4 +82,5 @@ export default function CandidateFilterLayout(props) {
         </button>
       </div>
     </div>
+// Temp comment
   );

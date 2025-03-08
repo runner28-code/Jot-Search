@@ -28,7 +28,6 @@ export class GetroService {
                 'X-User-Token': this.password,
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
-            }
         };
     };
 
@@ -36,6 +35,7 @@ export class GetroService {
         if (this.networkId) return true;
         const authRes = await this.getNetworkID();
         if (authRes) return true;
+        throw 'Auth failed';
     }
     async getNetworkID(): Promise<boolean> {
         try {

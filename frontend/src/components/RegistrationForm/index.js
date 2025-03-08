@@ -126,6 +126,7 @@ export default function RegistrationForm(loggedIn) {
         setFormObj(defaultState);
         setSubmissionObject({
           loading: false,
+          success: false,
         });
       }, 2000);
     }
@@ -380,7 +381,6 @@ export default function RegistrationForm(loggedIn) {
             choices={['Any', 'Remote', 'On Site', 'Hybrid']}
             error={errors.includes('workspace')}
           />
-          {/* File input for resume */}
           <FormInput
             type='file'
             name='resume'

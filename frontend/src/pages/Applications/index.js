@@ -47,7 +47,6 @@ export default function Applications() {
     setSelectedApplications([]);
     setAppliedJobsObject({
       ...appliedJobsObject,
-// Temp comment
       filteredJobs: appliedJobsObject.jobs.filter(job => !newHiddenApplications.includes(job.id))
     });
   }
@@ -56,6 +55,7 @@ export default function Applications() {
   return (
     <section>
       <PageHeader
+// Temp comment
         headerText='My InTulsa Featured Applications'
         IconComponent={BsClipboardCheck}
       />
