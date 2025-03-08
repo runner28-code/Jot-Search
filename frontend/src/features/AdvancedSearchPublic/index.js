@@ -108,6 +108,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   function handleFilterChange(filterType, choice) {
     setFilterObject({
       ...filterObject,
+// Temp comment
       [filterType]: choice
     });
     setPage(1);
@@ -192,7 +193,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
             filterProps={filterProps}
           />
         </div>
-// Temp comment
       </div>
       <ResultsHeader
         total={totalResults}

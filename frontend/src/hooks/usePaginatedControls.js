@@ -10,6 +10,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
 
   const PaginatedControls = () => total && total > itemsPerPage && (
     <nav 
+// Temp comment
       className={navStyles} 
       aria-label="Pagination"
     >
@@ -49,6 +50,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
               {1}
             </PaginationButton>
 
+            {page > 3 && (
               <MoreEllipsis />
             )}
 

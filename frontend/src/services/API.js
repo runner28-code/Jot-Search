@@ -19,7 +19,6 @@ API.interceptors.request.use(
     return config;
   },
   function (error) {
-    return Promise.reject(error);
   }
 );
 
@@ -76,7 +75,6 @@ export async function updateUser(newData, id) { // id is optional, if no id is p
 
 export async function updateCandidate(newData, id) {
   console.log({ newData, id })
-// Temp comment
   const body = { ...newData, id };
   const { data } = await API.post(ROUTES.APIcandidateUpdate, body);
   return normalizeData(data);
@@ -85,3 +83,17 @@ export async function updateCandidate(newData, id) {
 export async function getSavedCandidates() {
   const { data } = await API.get(ROUTES.APIsavedCandidates);
   return normalizeData(data.candidates);
+}
+
+export async function saveCandidate(userId, candidateId) {
+  const { data } = await API.put(ROUTES.APItoggleSaveCandidate, {
+    'company': userId,
+    'candidate': candidateId,
+  });
+
+  if (data.messsage === 'saved candidate') {
+    AuthService.toggleSavedCandidate(candidateId, 'save');
+  } else {
+    AuthService.toggleSavedCandidate(candidateId, 'unsave');
+  }
+  return normalizeData(data);

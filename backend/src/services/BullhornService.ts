@@ -215,3 +215,8 @@ export class BullhornService {
     }
     return false;
   }
+
+  async getCompanies(
+    testMode = false,
+    count = 50,
+    sort = "-dateAdded"

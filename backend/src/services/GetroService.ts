@@ -57,3 +57,5 @@ export class GetroService {
                 return true;
             }
         } catch (error) {
+            console.log(error);
+        }

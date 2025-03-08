@@ -5,7 +5,6 @@ exports.COORDINATOR = 'coordinator';
 exports.CANDIDATE = 'candidate';
 exports.COMPANY = 'company';
 exports.ROLES = [exports.COORDINATOR, exports.CANDIDATE, exports.COMPANY];
-const job_filter_exclude_keys = [
     "academic",
     "adjudication",
     "admissions",
@@ -94,6 +93,7 @@ const job_filter_exclude_keys = [
     "copywriter",
     "corporate card",
     "counsel",
+    "counseling",
     "counselor",
     "count team",
     "court",
@@ -105,3 +105,5 @@ const job_filter_exclude_keys = [
     "crossing guard",
     "culinary",
     "custodial",
+    "custodian",
+    "customer pick-up",

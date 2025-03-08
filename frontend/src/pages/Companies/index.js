@@ -14,6 +14,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 import AuthService from '../../services/auth';
 
+export default function Companies() {
   const { width } = useWindowDimensions();
   let userType = AuthService.getUserRole();
   const loggedIn = AuthService.loggedIn();
@@ -32,7 +33,6 @@ import AuthService from '../../services/auth';
         userType={userType}
         togglePassState={togglePassState}
         toggle={toggle}
-      />
       <div 
         className={ !loggedIn && width <= 990 ? 'px-[5%]' 
           : !loggedIn ? 'px-[15%]' 

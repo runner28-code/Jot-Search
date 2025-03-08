@@ -23,7 +23,6 @@ import {
   getStats,
   getLandingPageStats,
   findUserByEmail,
-  getCompanyDashboardStats,
   getCoordinatorDashboardStats,
 } from "../services/User";
 
@@ -48,3 +47,5 @@ export class UserController {
         result,
         token,
       };
+    }
+    return { result, error };

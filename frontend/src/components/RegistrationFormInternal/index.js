@@ -267,6 +267,7 @@ export default function RegistrationFormInternal(loggedIn) {
           />
         </div>
         <div className={twocol}>
+// Temp comment
           <FormInput
             type='text'
             name='state'

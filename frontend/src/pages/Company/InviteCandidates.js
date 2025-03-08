@@ -77,6 +77,7 @@ export default function InviteCandidates({ company }) {
             const res = await sendCandidatesToCompanies({ companyIds: [company.id], candidateIds: selected.map((option) => option.value) })
             console.log({res})
             if(res.result){
+              setSelected([])
             }
           }}
           disabled={selected.length === 0 || isSendingCandidates}

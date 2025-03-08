@@ -70,3 +70,4 @@ export const saveCompanies = async (companies: any[]) => {
         });
 
         companyData.companyURL = companyData.companyURL ? companyData.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null;
+

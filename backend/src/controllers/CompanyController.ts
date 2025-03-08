@@ -60,13 +60,13 @@ export class CompanyController {
         source: datasource,
       };
     } else {
+      return {
         source: DataSource.UNKNOWN,
         message: "unsupported id",
       };
     }
   }
 
-  @Authorized()
   @Put("/save")
   async save(
     @CurrentUser() authUser: User,
@@ -77,3 +77,4 @@ export class CompanyController {
 
   @Authorized()
   @Put("/send_candidates_to_employers")
+  async send_candidates_to_employers(

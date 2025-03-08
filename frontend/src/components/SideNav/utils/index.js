@@ -1,4 +1,3 @@
-// Temp comment
 import { useLocation } from 'react-router-dom';
 // import { MdOutlineNotificationsActive as AlertIcon } from 'react-icons/md';
 import { ImProfile as ApplicationIcon } from 'react-icons/im';
@@ -54,6 +53,7 @@ export const choices = {
   },
   addUser: {
     label: 'Add User',
+// Temp comment
     icon: AddUserIcon,
     link: ROUTES.addUser,
   },

@@ -9,7 +9,6 @@ export default function FileInput({type, name, label, placeholder, required, val
       e.preventDefault();
       inputRef.current.click();
     }
-  }
 
   return (
     <div>
@@ -17,7 +16,6 @@ export default function FileInput({type, name, label, placeholder, required, val
       <input 
         className={`hidden ${disabled ? 'disabled cursor-not-allowed' : ''}`}
         type={type}
-// Temp comment
         id={name}
         name={name}
         onChange={(e) => onChange(name, e.target.files[0])}

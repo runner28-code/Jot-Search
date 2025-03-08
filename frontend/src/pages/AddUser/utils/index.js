@@ -7,11 +7,9 @@ export function validateInput(name, value, errors, password) {
     if ( !validEmail ) {
       newErrors[name] = 'Please enter a valid email address';
     } else {
-      newErrors[name] = '';
     }
     return newErrors;
   } 
-// Temp comment
   // Password validation
   else if ( name === 'verifyPassword' ) {
     if ( value !== password ) {

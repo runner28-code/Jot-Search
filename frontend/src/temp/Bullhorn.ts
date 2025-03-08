@@ -71,3 +71,4 @@ export type Job = {
     degreeList?: string;
     description?: string;
     durationWeeks?: string;
+    educationDegree?: string;

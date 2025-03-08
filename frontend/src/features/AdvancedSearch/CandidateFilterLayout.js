@@ -27,7 +27,6 @@ const checkboxFiltersCoord = [
 ];
 const checkboxFilters = [
   'Authorized to work in the US',
-  'Open to Relocation',
   'Actively Looking',
 ];
 
@@ -75,6 +74,7 @@ export default function CandidateFilterLayout(props) {
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange)}
+        <FormInput
           type='typeahead'
           dropdownType='tags'
           name='skills'

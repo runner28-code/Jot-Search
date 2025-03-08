@@ -26,7 +26,6 @@ export default function NavMenu() {
   return (
     <div className='relative bg-royalBlue rounded-2xl'>
       <button
-// Temp comment
         className={buttonStyles}
         onClick={handleMenuClick}
       >

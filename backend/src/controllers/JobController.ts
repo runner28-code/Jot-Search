@@ -93,3 +93,5 @@ export class JobController {
           },
         };
       } else {
+        return null;
+      }

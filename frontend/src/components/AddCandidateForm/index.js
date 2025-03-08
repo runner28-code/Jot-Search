@@ -9,7 +9,6 @@ import {
 } from '../../utils/skillHierarchyMap';
 import {
   inputValidation,
-  formatFormObj,
   renderButtonOrLoading,
   renderErrorBlock,
   renderHeader

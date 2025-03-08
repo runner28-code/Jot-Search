@@ -30,3 +30,4 @@ export const createJob = async (job: Job) => {
   } catch (err) {
     console.error(err);
     return {
+      result: false,
