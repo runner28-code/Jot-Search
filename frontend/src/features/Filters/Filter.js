@@ -62,6 +62,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
           alt='open'
           className='w-6 h-4'
         />
+
       </div>
       { renderDropdown( showDropdown, choices, handleChoiceClick ) }
     </div>

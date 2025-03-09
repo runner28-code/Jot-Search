@@ -60,7 +60,6 @@ export const choices = {
     label: 'Active Careers',
     icon: CareerIcon,
     link: ROUTES.activeCareers,
-// Temp comment
   },
   talentInTulsa: {
     label: 'Talent.InTulsa.com',
@@ -129,7 +128,6 @@ export function findSelectedFromPath() {
     case 'companies':
       return 'Companies';
     case 'add-user':
-      return 'Add User';
     case 'alerts':
       return 'Alerts';
     case 'contact':

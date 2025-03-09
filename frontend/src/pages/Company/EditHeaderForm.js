@@ -48,7 +48,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           <input 
             className={inputStyles + 'w-100 py-2'}
             type='file'
-            name='avatar'
             onChange={handleInputChange}
           />
         </div>
@@ -121,6 +120,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               className={iconStyles + 'fill-royalBlue'} />
             <h2 className='text-h6 text-royalBlue'>Location</h2>
           </div>
+          <div className='flex flex-col'>
             <div className='flex justify-between mb-4'>
               <label 
                 className='text-h6 text-royalBlue w-full'

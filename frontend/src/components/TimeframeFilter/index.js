@@ -20,7 +20,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
       return null
     }
   
-// Temp comment
     return (
       <Dropdown 
         choices={choices} 

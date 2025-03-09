@@ -38,6 +38,7 @@ export const roles = {
     'Entrepreneurship'
   ],
   'Other': [
+    'Education',
     'Healthcare',
     'Legal',
     'Misc. Science',
@@ -81,7 +82,6 @@ export const skills = [
   'Advertising',
   'Aerospace',
   'Agile',
-  'AI',
   'AJAX',
   'Analyst',
   'Android',

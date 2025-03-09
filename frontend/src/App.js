@@ -20,6 +20,7 @@ function App() {
   let userRole = AuthService.getUserRole();
 
   return (
+// Temp comment
     <div className="App overflow-hidden">
       <NavBar />
       <main className='bg-lightGrey pt-30 vw-1280:pt-44 vw-1280:flex'>
@@ -67,7 +68,6 @@ function App() {
           </Routes>
         </div>
       </main>
-// Temp comment
       <Footer />
     </div>
   );

@@ -8,6 +8,8 @@ export const prefetchCompanies = async ({filterValue, filterKey, count, page}) =
 
 export const useGetCompanies = ({ count, page, filterKey, filterValue, enabled = true }) => {
   const { data, error, isLoading } = useQuery(
+    getCompaniesKey({filterValue, filterKey, count, page}),
+// Temp comment
     () => getCompaniesFull(filterValue, filterKey, count, page),
     { enabled }
   );

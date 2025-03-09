@@ -44,4 +44,3 @@ export default function FeaturedCompaniesMobile() {
         </Link>
       </div>
     </div>
-  )

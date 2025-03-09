@@ -59,7 +59,6 @@ export default function ActiveCareers() {
         results={jobs}
         loading={isLoading}
         type={ RESULT_CONTAINER_TYPE }
-// Temp comment
         active={true}
       />
       <PaginatedControls />

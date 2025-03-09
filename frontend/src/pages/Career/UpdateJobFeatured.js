@@ -17,7 +17,6 @@ export const UpdateJobFeatured = ({ job }) => {
   const disabledToggleStyles = 'translate-x-0'
 
   const toggleStyles = toggled ? enabledToggleStyles : disabledToggleStyles
-
   return (
     <div className='flex flex-col'>
       {isLoading && <p>Loading...</p>}
@@ -43,7 +42,6 @@ export const UpdateJobFeatured = ({ job }) => {
             aria-hidden="true" 
             className={`${toggleStyles} pointer-events-none inline-block h-10 w-10 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out`}>
           </span>
-// Temp comment
         </button>
       
         <label 

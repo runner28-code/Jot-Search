@@ -19,7 +19,6 @@ const mockJobsData = [
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/osu-logo_clipped_rev_1_3_kkpczy.webp',
     salaryRange: '$80k-$90k',
     location: 'Tulsa, OK',
-// Temp comment
     listingAge: '1 month',
     specialty: 'Technology'
   },
@@ -31,7 +30,6 @@ const mockJobsData = [
     salaryRange: '$80k-$90k',
     location: 'Remote',
     listingAge: '1 month',
-    specialty: 'Sales & Biz Dev'
   },
 ];
 

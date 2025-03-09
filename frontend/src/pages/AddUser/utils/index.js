@@ -1,5 +1,6 @@
 export function validateInput(name, value, errors, password) {
   const newErrors = { ...errors };
+  
   // Email validation
   if ( name === 'email' ) {
     const validEmail = /\S+@\S+\.\S+/.test(value);
@@ -16,7 +17,6 @@ export function validateInput(name, value, errors, password) {
       newErrors[name] = 'Passwords do not match';
     } else {
       newErrors[name] = '';
-    }
   } 
   // Generic validation
   else if ( value === '' ) { // Add to errors if empty

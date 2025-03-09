@@ -1,3 +1,4 @@
+// Temp comment
 import { updateUser, uploadFile } from '../../../services/API';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../../utils/dbFieldMapping';
 import { MdCheckCircle } from 'react-icons/md';
@@ -17,6 +18,7 @@ export const jobReferralChoices = [
 ];
 
 export const defaultCareerState = {
+  title: '',
   company: {
     name: '',
     logo: '',

@@ -13,7 +13,6 @@ const dropdownFilters = [
 ];
 
 const dropDownFiltersCandidate = [
-  'Expertise',
   'On-Site/Remote',
   'Years Experience'
 ]
@@ -39,7 +38,6 @@ export default function CareerFilterLayout(props) {
   } else {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
-// Temp comment
     });
   }
 

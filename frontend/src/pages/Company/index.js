@@ -60,7 +60,6 @@ export default function Company() {
         type='company'
         loggedIn={loggedIn}
       />
-      <div 
         className={ width <= 990 ? 'px-[5%]'
           : !loggedIn ? 'px-[15%]' 
             : ''}
@@ -108,6 +107,7 @@ export default function Company() {
         <RenderInvite
           loggedIn={loggedIn}
           companyData={companyData}
+        />
       </div>
     </div>
   )

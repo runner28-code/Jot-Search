@@ -8,3 +8,4 @@ import { BigQueryService } from "../services/BigQueryService";
 import { DATASET_MAIN, Tables } from "../types/Common";
 
 (async () => {
+    try {
