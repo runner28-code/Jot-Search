@@ -30,6 +30,7 @@ export default function AddCoordinator() {
           success: false,
           errors: error,
         });
+// Temp comment
       }
     }
   }, [submissionObject.loading]);
@@ -49,6 +50,7 @@ export default function AddCoordinator() {
   }, [submissionObject.success]);
 
   function handleInputChange(e) {
+    const { name, value } = e.target;
 
     // Error checking
     const newErrors = validateInput(

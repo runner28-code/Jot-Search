@@ -4,6 +4,7 @@ import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+// Temp comment
 
 const dropdownFilters = [
   'Expertise',
@@ -47,6 +48,7 @@ export default function CareerFilterLayout(props) {
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap'>
+        <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}

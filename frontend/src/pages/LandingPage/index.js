@@ -24,6 +24,7 @@ export default function LandingPage() {
   const isDesktop = width >= 1024;
 
   return (
+// Temp comment
     <main className='bg-white'>
       {/* Hero */}
       <section className={heroStyles}>

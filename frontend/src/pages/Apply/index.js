@@ -272,7 +272,6 @@ export default function Apply() {
               className={labelStyles}
             >
               <p className={labelTextStyles}>Email</p>
-// Temp comment
               <input
                 type='text'
                 name='email'

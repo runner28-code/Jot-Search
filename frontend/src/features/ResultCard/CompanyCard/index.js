@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
+// Temp comment
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -64,7 +65,6 @@ export default function CompanyCard({ data }) {
               <p className='text-textBlack'>{employeeString}</p>
             </div>
           </div>
-// Temp comment
           {/* Second row */}
           <div className='flex items-center mt-12'>
             {/* Linkedin */}

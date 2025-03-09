@@ -32,6 +32,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   const handleSubmit = () => {
     handleCandidateUpdate(formData);
     setEditMode(false);
+// Temp comment
   }
   
   const avatarUrl = appendPathToBaseUrl(formData.avatar);
@@ -54,6 +55,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         </div>
       </div>
       <div className='grow font-bold'>
+        {/* First Name */}
         <div className='mb-6'>
           <label 
             className='text-h6 text-royalBlue w-full'

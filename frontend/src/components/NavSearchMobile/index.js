@@ -15,7 +15,6 @@ import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 import AuthService from '../../services/auth';
 
-
 import {
   defaultJobFilterState,
   buildSearchFilters,

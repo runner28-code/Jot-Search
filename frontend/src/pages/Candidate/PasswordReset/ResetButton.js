@@ -3,6 +3,7 @@ import * as ROUTES from '../../../routes';
 import API from '../../../services/API';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 
+
 export default function ResetButton({ candidateData, setType }) {
   const { width } = useWindowDimensions();
   const handleSubmit = async (event) => {
@@ -12,7 +13,6 @@ export default function ResetButton({ candidateData, setType }) {
       email: email
     });
 
-    if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);

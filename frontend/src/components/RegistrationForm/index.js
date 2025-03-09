@@ -90,7 +90,6 @@ export default function RegistrationForm(loggedIn) {
           loading: false,
           success: false,
         });
-        return;
       }
       formObj.resume = resumeResponse;
 
@@ -369,7 +368,6 @@ export default function RegistrationForm(loggedIn) {
             onChange={handleChange}
             choices={['Any', 'Full-Time', 'Contract']}
             error={errors.includes('employmentPreference')}
-// Temp comment
           />
           <FormInput
             type='single-select'

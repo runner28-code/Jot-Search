@@ -39,6 +39,7 @@ export default function ResetForm({ candidateData, setType }) {
       ...formData,
       [name]: value,
     });
+// Temp comment
   }
 
   return (
@@ -59,7 +60,6 @@ export default function ResetForm({ candidateData, setType }) {
           label='New Password Confirm'
         />
       </div>
-// Temp comment
       { renderMatch(match) }
       <button
         className='h-20 w-150 bg-royalBlue text-center text-white text-md px-12 rounded-lg'

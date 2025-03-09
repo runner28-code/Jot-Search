@@ -34,13 +34,11 @@ export default function FeaturedCompaniesMobile() {
                 { renderLogo(company.logo) }
               </Link>
             )
-        }
       </div>
       <div className='text-center mt-24'>
         <Link
           to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
-// Temp comment
           Browse All
         </Link>
       </div>

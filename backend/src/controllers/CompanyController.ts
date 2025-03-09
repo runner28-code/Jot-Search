@@ -70,6 +70,7 @@ export class CompanyController {
   @Authorized()
   @Put("/save")
   async save(
+    @CurrentUser() authUser: User,
     @Body() body: { company: string; candidate?: string }
   ): Promise<ApplyResponse> {
     return await saveCompany(body.company, body.candidate! || authUser.id!);

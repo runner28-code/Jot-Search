@@ -37,7 +37,6 @@ module.exports = {
         royalBlue: '#176AB9',
         aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
-// Temp comment
         'legal-bg': '#23242D',
         // Neutrals
         powderBlue: '#E4F2FF',

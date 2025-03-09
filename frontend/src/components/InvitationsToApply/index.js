@@ -32,6 +32,7 @@ export default function InvitationsToApply () {
       <div className='relative w-24 mb-8'>
         <div className='bg-purple-700 w-12 h-12' />
         <div className='bg-yellowSquare  top-[-20px] right-[5px] absolute w-6 h-6' />
+// Temp comment
       </div>
       <h2 className='font-spaceGrotesk text-h5 text-zinc-500 mb-8'>Latest Invitations To Apply</h2>
       {!appliedJobsObject.loading && !appliedJobsObject.jobs?.length ? <span className='text-center font-spaceGrotesk text-zinc-500 text-xl'>No invitations to apply</span> :
@@ -52,3 +53,4 @@ export default function InvitationsToApply () {
           }
         </div>)}
     </div>
+  )

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import PageHeader from '../../components/PageHeader';
 import PageHeaderCandidate from '../../components/PageHeaderCandidate';
 import AdvancedSearch from '../../features/AdvancedSearch';
+// Temp comment
 import AdvancedSearchPublic from '../../features/AdvancedSearchPublic';
 import AdvancedSearchCandidate from '../../features/AdvancedSearchCandidate';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -29,6 +30,7 @@ export default function Companies() {
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
+        loggedIn={loggedIn}
         userType={userType}
         togglePassState={togglePassState}
         toggle={toggle}

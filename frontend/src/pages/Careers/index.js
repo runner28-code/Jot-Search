@@ -30,6 +30,7 @@ export default function Careers() {
         loggedIn={loggedIn}
         userType={userType}
         togglePassState={togglePassState}
+// Temp comment
         toggle={toggle}
       />
       <div 
@@ -40,7 +41,6 @@ export default function Careers() {
       >
         <RenderAdvancedSearch
           loggedIn={loggedIn}
-// Temp comment
           toggle={toggle}
           userType={userType}
         />

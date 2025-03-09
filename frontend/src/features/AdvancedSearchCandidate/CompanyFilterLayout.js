@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-export default function CompanyFilterLayout(props) {
   const {
     searchTerm,
     setSearchTerm,
@@ -17,6 +16,7 @@ export default function CompanyFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
+          placeholder='Search Companies'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
         <button

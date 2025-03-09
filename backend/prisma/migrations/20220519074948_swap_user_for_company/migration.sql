@@ -20,5 +20,4 @@ ALTER TABLE "User" DROP CONSTRAINT "User_departmentId_fkey";
 DROP TABLE "User";
 
 -- CreateTable
-CREATE TABLE "Company" (
     "id" TEXT NOT NULL,
