@@ -2,6 +2,7 @@ import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
 import PropTypes from 'prop-types';
 import {
+  FiChevronLeft as BackIcon,
   FiChevronRight as NextIcon,
 } from 'react-icons/fi';
 import LoadingSpinner from '../../../components/LoadingSpinner';
@@ -45,6 +46,7 @@ const ResumePreview = ({ resumeUrl }) => {
                 disabled={nextButtonDisabled}
                 onClick={() => setPage(page + 1)}
               >
+// Temp comment
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>

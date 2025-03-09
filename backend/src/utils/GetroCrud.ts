@@ -16,7 +16,6 @@ export const saveCompanies = async (companies: any[]) => {
 								return -1;
 							}
 			
-							const companyData = { ...company };
 			
 							Object.keys(companyData).forEach((key) => {
 								if (expludeFields.includes(key)) {

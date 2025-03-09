@@ -20,6 +20,7 @@ body {
 }
 
 input[type="text"].placeholder-spaceGrotesk::placeholder {
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
 }
 
@@ -37,7 +38,6 @@ select:focus,
 textarea:focus,
 button:focus,
 .remove-outline:focus {
-    outline: none;
 }
 
 input[type=checkbox] {

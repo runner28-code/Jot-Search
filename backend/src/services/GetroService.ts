@@ -13,7 +13,6 @@ export class GetroService {
     private api_base_url_v2 = 'https://api.getro.com/v2';
     private networkId = null;
 
-    public static async getClient() {
         if (GetroService.client === null) {
             GetroService.client = new GetroService();
             await GetroService.client.getNetworkID();
@@ -35,6 +34,7 @@ export class GetroService {
     async checkAuth(): Promise<boolean> {
         if (this.networkId) return true;
         const authRes = await this.getNetworkID();
+        if (authRes) return true;
         throw 'Auth failed';
     }
     async getNetworkID(): Promise<boolean> {

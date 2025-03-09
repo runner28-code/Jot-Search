@@ -78,7 +78,6 @@ export default function Candidate() {
       setCurrentUser({...updateResponse.data})
     }
     if (updateResponse.result === false) {
-// Temp comment
       console.log('Error updating candidate: ', updateResponse.error);
     }
   }

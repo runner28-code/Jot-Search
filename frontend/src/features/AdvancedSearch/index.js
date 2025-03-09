@@ -24,10 +24,10 @@ import { useLocation } from 'react-router-dom';
 
 const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
-// Temp comment
 
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'careers', 'companies'],
+// Temp comment
   company: ['careers', 'candidates' ],
   candidate: ['careers', 'companies'],
   guest: ['careers', 'companies'],

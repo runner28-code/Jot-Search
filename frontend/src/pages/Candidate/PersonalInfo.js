@@ -10,7 +10,6 @@ import {
   ethnicityChoices,
   genderChoices,
   veteranStatusChoices
-// Temp comment
 } from '../Apply/utils';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';

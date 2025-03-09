@@ -21,7 +21,6 @@ export default function Stats({ userType }) {
   }
 
   function getDuration(timeFrame) {
-// Temp comment
     switch (timeFrame) {
       case 'Today':
         return 1;
@@ -74,7 +73,6 @@ export default function Stats({ userType }) {
             timeframe={timeframe}
             handleFilterChange={handleFilterChange}
           />
-        </div>
       </div>
       <div className='flex flex-wrap'>
         {Object.entries(stats).map(([stat, value]) => {

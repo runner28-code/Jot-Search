@@ -83,7 +83,6 @@ export const register = async (data: User) => {
       data: {
         ...data,
         password: encryptPassword(user.password),
-      } as any,
     }
 
     await db.user.create(savingData);
@@ -135,6 +134,8 @@ export const update = async (parent_id: string, role: string, data: any) => {
     if (existing.externalId) {
       try {
         // TODO: add bullhorn api update here
+      } catch (error) {
         console.error("Could not update user in bullhorn", error);
       }
     }
+

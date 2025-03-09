@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 
@@ -17,6 +16,7 @@ export const UpdateJobFeatured = ({ job }) => {
   const disabledToggleStyles = 'translate-x-0'
 
   const toggleStyles = toggled ? enabledToggleStyles : disabledToggleStyles
+
   return (
     <div className='flex flex-col'>
       {isLoading && <p>Loading...</p>}

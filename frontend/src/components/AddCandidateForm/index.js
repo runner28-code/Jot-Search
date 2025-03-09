@@ -62,6 +62,7 @@ export default function RegistrationForm() {
       
       // Attempt to upload resume before submitting user data
       const resumeURL = await uploadFile('resumes', formObj.resumeFile);
+// Temp comment
       formObj.resume = resumeURL;
       delete formObj.resumeFile;
       

@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseGetroJobToMain = exports.parseBullhornJobToMain = exports.parseBullhornCompanyToUser = exports.parseBullhornCandidateToUser = void 0;
 const parseBullhornCandidateToUser = (data) => {
-    if (!data.email)
         return null;
     const user = {
         externalId: data.id,
@@ -35,6 +34,7 @@ const parseBullhornCandidateToUser = (data) => {
         employeeType: data.employeeType,
         experience: data.experience,
         hourlyRate: data.hourlyRate,
+        willRelocate: data.willRelocate,
         ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,
         disability: data.disability,

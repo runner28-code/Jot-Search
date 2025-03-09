@@ -16,7 +16,6 @@ export const roles = {
     'Investment',
   ],
   'Marketing': [
-    'Brand & Creative Marketing',
     'Content Marketing & Design',
     'Digital Marketing',
     'Generalist Marketing',
@@ -82,6 +81,7 @@ export const skills = [
   'Advertising',
   'Aerospace',
   'Agile',
+  'AI',
   'AJAX',
   'Analyst',
   'Android',

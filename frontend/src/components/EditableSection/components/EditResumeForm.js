@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { uploadFile } from '../../../services/API';
-
 export default function EditResumeForm({ handleChange }) {
   async function handleFileSubmit(e) {
     const file = e.target.files[0];
@@ -9,7 +8,6 @@ export default function EditResumeForm({ handleChange }) {
       target: {
         name: e.target.name,
         value: newResumePath,
-// Temp comment
       },
     };
     handleChange( fakeEvent );

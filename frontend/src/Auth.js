@@ -12,6 +12,7 @@ import {
 } from './pages';
 import AuthService from './services/auth';
 import * as ROUTES from './routes';
+// Temp comment
 
 
 export default function Auth() {
@@ -24,6 +25,7 @@ export default function Auth() {
       <Routes>
         <Route
           path='/'
+          element={<Dashboard />} 
         />
         <Route
           path={ROUTES.profile}

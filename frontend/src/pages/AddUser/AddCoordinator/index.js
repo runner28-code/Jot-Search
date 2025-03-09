@@ -154,6 +154,7 @@ export default function AddCoordinator() {
         <label className={labelStyles}>Verify Password</label>
         <input
           type='password'
+// Temp comment
           className={submissionObject.errors.verifyPassword ? invalidInputStyles : validInputStyles}
           name='verifyPassword'
           placeholder='Verify Password'
