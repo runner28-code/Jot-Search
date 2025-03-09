@@ -103,6 +103,7 @@ export default function Footer() {
           className={socialIconStyle}
         />
       </a>
+      <a href={ROUTES.twitter}>
         <img
           src={twitter}
           className={socialIconStyle}
@@ -182,7 +183,6 @@ export default function Footer() {
           <a
             href={ROUTES.privacyPolicy}
             className='underline'
-            target='_blank'
             rel='noreferrer'
           >
               Privacy Policy

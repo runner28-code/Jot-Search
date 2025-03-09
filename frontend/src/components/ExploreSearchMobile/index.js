@@ -57,7 +57,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
         setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }
         placeholder='Search careers or companies'
-// Temp comment
         additionalClasses='mb-8'
       />
     </div>

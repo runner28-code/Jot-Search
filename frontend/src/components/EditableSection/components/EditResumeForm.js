@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { uploadFile } from '../../../services/API';
+
 export default function EditResumeForm({ handleChange }) {
   async function handleFileSubmit(e) {
     const file = e.target.files[0];
@@ -12,7 +13,6 @@ export default function EditResumeForm({ handleChange }) {
     };
     handleChange( fakeEvent );
   }
-  
   return (
     <div className='flex flex-col'>
       <label

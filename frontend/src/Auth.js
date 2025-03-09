@@ -12,7 +12,6 @@ import {
 } from './pages';
 import AuthService from './services/auth';
 import * as ROUTES from './routes';
-// Temp comment
 
 
 export default function Auth() {
@@ -21,7 +20,6 @@ export default function Auth() {
   }
 
   return ( 
-    <div className='vw-640:pl-20 vw-640:pr-20 vw-1280:pl-0'>
       <Routes>
         <Route
           path='/'

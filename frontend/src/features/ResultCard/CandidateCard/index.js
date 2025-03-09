@@ -40,7 +40,6 @@ export default function CandidateCard({ data, disableLink }) {
             />
           </div>
           <NewLeadLabel status={data.status} />
-// Temp comment
         </div>
         {/* Main Content */}
         <div className='relative grow'>
@@ -91,7 +90,6 @@ export default function CandidateCard({ data, disableLink }) {
         </div>
       </LinkWrapper>
       <FavoriteButton
-        type={'candidate'}
         data={data} />
     </div>
   )

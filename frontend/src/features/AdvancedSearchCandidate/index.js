@@ -92,6 +92,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   useEffect(() => {
     if (isMount) {
       return;
+    }
     setFilterObject({ ...filterObject, title: '' });
     setPage(1);
   }, [activeTab]);
@@ -193,6 +194,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
             filterProps={filterProps}
           />
         </div>
+// Temp comment
       </div>
       <div className={ width >= 990 ? 'vw-990:px-0' : 'px-[5%] vw-990:px-0'}>
         <ResultsHeader

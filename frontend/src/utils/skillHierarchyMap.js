@@ -10,12 +10,12 @@ export const expertises = [
 export const roles = {
   'Finance': [
     'Accounting & Financial Planning',
-    'Accounts & Payroll',
     'Corporate Finance',
     'Banking',
     'Investment',
   ],
   'Marketing': [
+    'Brand & Creative Marketing',
     'Content Marketing & Design',
     'Digital Marketing',
     'Generalist Marketing',

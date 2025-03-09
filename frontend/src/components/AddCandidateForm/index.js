@@ -62,7 +62,6 @@ export default function RegistrationForm() {
       
       // Attempt to upload resume before submitting user data
       const resumeURL = await uploadFile('resumes', formObj.resumeFile);
-// Temp comment
       formObj.resume = resumeURL;
       delete formObj.resumeFile;
       
@@ -73,7 +72,6 @@ export default function RegistrationForm() {
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
         // Set success to true if on add-candidate page, navigate user to login if not
-        if ( location.pathname === '/add-candidate' ) {
           return setSubmissionObject({
             loading: false,
             success: true,

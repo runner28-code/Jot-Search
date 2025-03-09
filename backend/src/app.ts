@@ -24,7 +24,6 @@ try {
   s3ForcePathStyle: true,
   signatureVersion: "v4",
 })
-} catch (error) {
   console.error(error)
 }
 

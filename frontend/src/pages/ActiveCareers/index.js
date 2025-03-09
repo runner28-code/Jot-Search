@@ -7,6 +7,7 @@ import ResultContainer from '../../features/ResultContainer';
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import {
+  buildSearchFilters
 } from '../../utils/filterObjects';
 import AuthService from '../../services/auth';
 
@@ -52,7 +53,6 @@ export default function ActiveCareers() {
       <ResultsHeader
         total={total}
         loading={isLoading}
-        type={RESULT_CONTAINER_TYPE}
       />
       <ResultContainer
         results={jobs}

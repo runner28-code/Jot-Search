@@ -12,4 +12,3 @@ import {
   FilterBody,
 } from "../types/Common";
 
-@JsonController("/api/category")

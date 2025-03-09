@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearch';
 import AccessibleDropdown from '../AccessibleDropdown';
 import LoadingSpinner from '../LoadingSpinner';
-import * as ROUTES from '../../routes';
+import { jobFilterObject } from '../../utils/filterObjects';
 
 function adjustJobFilterObject() {
   const adjustedJobFilterObject = { ...jobFilterObject };

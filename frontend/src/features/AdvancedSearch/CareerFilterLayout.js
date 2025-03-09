@@ -10,6 +10,7 @@ const dropdownFilters = [
   'Status',
 ];
 
+// Temp comment
 const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',

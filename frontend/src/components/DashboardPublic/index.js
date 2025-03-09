@@ -18,7 +18,6 @@ export default function DashboardPublic({togglePassState}) {
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
   const active = ' bg-royalBlue';
-
   const careerTitle = totalJobsCount + ' Open Careers';
   const companyTitle = totalCompaniesCount  + ' Companies';
 
@@ -35,7 +34,6 @@ export default function DashboardPublic({togglePassState}) {
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
           >
-// Temp comment
             <CareerIcon />
             <p className='ml-4'>Careers</p>
           </Link>

@@ -18,6 +18,7 @@ import {
   defaultCandidateFilterState,
   buildSearchFilters
 } from '../../utils/filterObjects';
+// Temp comment
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
@@ -27,7 +28,6 @@ const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'careers', 'companies'],
-// Temp comment
   company: ['careers', 'candidates' ],
   candidate: ['careers', 'companies'],
   guest: ['careers', 'companies'],

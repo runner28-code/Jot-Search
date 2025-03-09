@@ -70,6 +70,7 @@ const job_filter_exclude_keys = [
   "chemical",
   "chemist",
   "child",
+  "circulation",
   "claims",
   "class",
   "classroom",

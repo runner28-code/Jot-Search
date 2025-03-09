@@ -36,6 +36,7 @@ export function appendPathToBaseUrl(path) {
 //* CANDIDATES
 export async function getCandidates(filtersArr, count, page) {
   return (await getCandidatesFull(filtersArr, count, page)).candidates;
+// Temp comment
 }
 
 export async function getCandidatesFull(filtersArr, count, page, fields = null) {
@@ -54,6 +55,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
     'fields': fields || null
   });
   return {
+    candidates: normalizeData(data.candidates),
     total: data.total
   }
 }
