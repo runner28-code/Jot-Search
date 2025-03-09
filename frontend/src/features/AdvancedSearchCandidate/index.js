@@ -194,7 +194,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
             filterProps={filterProps}
           />
         </div>
-// Temp comment
       </div>
       <div className={ width >= 990 ? 'vw-990:px-0' : 'px-[5%] vw-990:px-0'}>
         <ResultsHeader

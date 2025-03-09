@@ -2,7 +2,6 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Flag from '../../../assets/icons/flag.svg';
 import Search from '../../../assets/icons/search-gray.svg';
-// Temp comment
 import { useGetCompanies } from '../../../hooks/queries/useGetCompanies';
 import { useGetClientContacts } from '../../../hooks/queries/useGetClientContacts';
 import CompanyContactList from './CompanyContactList';
@@ -27,7 +26,6 @@ export default function AddCompanyUser() {
   let containerStyles = 'border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12 px-6 vw-900:px-14 ';
 
   return (
-    <div className='flex flex-col'>
       <div className={ containerStyles + 'bg-sky-100'}>
         <h2 className={ titleStyles + 'text-royalBlue flex'}>
           <img

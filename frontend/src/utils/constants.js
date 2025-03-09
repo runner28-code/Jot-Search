@@ -69,5 +69,4 @@ export const stateCodeMap = {
 };
 
 export function getStateCode(stateName) {
-// Temp comment
   return stateCodeMap[stateName];

@@ -25,3 +25,4 @@ export const sendVerification = async (to: string, name: string) => {
       url: `${base_url}/verify`,
       firstName: name,
     });
+    return true;

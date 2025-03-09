@@ -186,6 +186,7 @@ export default function Apply() {
     })
     setReferralChoice(false);
   }
+
   const labelStyles = 'w-full';
   const labelTextStyles = 'text-xs vw-768:text-base text-charcoal leading-8 mt-8 ';
   const inputStyles = 'block w-full bg-lightGrey leading-8 text-sm vw-768:text-base border border-solid border-charcoal rounded-xl px-4 py-s mt-2 cursor-pointer disabled:bg-midGrey disabled:cursor-not-allowed ';
@@ -271,6 +272,7 @@ export default function Apply() {
               className={labelStyles}
             >
               <p className={labelTextStyles}>Email</p>
+// Temp comment
               <input
                 type='text'
                 name='email'

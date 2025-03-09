@@ -41,6 +41,7 @@ export default function SignUp() {
         </div>
         <div className='mt-34 w-full vw-768:w-2/3 max-w-290 bg-white border border-midGrey border-solid rounded-2xl flex justify-center'>
           <RegistrationForm />
+        </div>
       </div>
     </main>
   )

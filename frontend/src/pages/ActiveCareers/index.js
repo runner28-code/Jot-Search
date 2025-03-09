@@ -16,6 +16,7 @@ const RESULT_CONTAINER_TYPE = 'active careers';
 const ITEMS_PER_PAGE = 5;
 
 export default function ActiveCareers() {
+// Temp comment
   const { companyId } = AuthService.getProfile();
   const [page, setPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
@@ -53,6 +54,7 @@ export default function ActiveCareers() {
       <ResultsHeader
         total={total}
         loading={isLoading}
+        type={RESULT_CONTAINER_TYPE}
       />
       <ResultContainer
         results={jobs}

@@ -12,3 +12,4 @@ export type Job = {
   country_id?: string;
   employmentType?: string;
   title?: string;
+  willRelocate?: string;

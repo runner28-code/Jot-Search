@@ -33,6 +33,7 @@ function App() {
             <Route
               path={ROUTES.login}
               element={<Login />} />
+            <Route
               path={ROUTES.landingPage}
               element={<LandingPage />} />
             <Route

@@ -7,6 +7,7 @@ export type User = {
   email: string;
   password?: string;
   role: string;
+  address1?: string;
   address2?: string;
   city?: string;
   state?: string;
@@ -20,3 +21,4 @@ export type User = {
   seniority?: string;
   workspace?: string;
   referredBy?: string;
+  roles?: string;

@@ -9,7 +9,6 @@ import { buildCandidateAddress } from '../../utils/formatFunctions';
 import urlDecode from '../../utils/urlDecode';
 import OtherCareers from '../../features/OtherCareers';
 import DetailsHeader from '../../components/DetailsHeader';
-// Temp comment
 import InviteCandidates from './InviteCandidates';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import AuthService from '../../services/auth';
@@ -91,7 +90,6 @@ export default function Company() {
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>Funding</h4>
             { renderCompanyDescription(companyData.funding, 'text-md mb-10 leading-[32px]') }
           </div>          
-        </div>
         <div className='mt-12'>
           <OtherCareers
             companyId={companyData.id}

@@ -33,6 +33,7 @@ export default function FeaturedCompanies() {
                 key={index}>
                 { renderLogo(company.logo) }
               </Link>
+// Temp comment
             )
         }
       </div>
@@ -42,5 +43,6 @@ export default function FeaturedCompanies() {
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
         </Link>
+      </div>
     </div>
   )

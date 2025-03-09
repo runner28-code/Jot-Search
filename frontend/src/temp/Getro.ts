@@ -3,6 +3,7 @@ export type Company = {
     angellist_url?: string;
     approx_employees?: string;
     crunchbase_url?: string;
+    description?: string;
     domain?: string;
     facebook_url?: string;
     founded?: string;
@@ -15,3 +16,4 @@ export type Company = {
     scraping_enabled?: string;
     slug?: string;
     status?: string;
+    topics?: string;

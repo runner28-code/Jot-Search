@@ -115,6 +115,7 @@ export default function RegistrationFormInternal(loggedIn) {
         setErrorBlock(result);
         setSubmissionObject({
           loading: false,
+          success: false,
         });
       }
     }
@@ -400,6 +401,7 @@ export default function RegistrationFormInternal(loggedIn) {
         <FormInput
           type='text'
           name='linkedin'
+// Temp comment
           value={formObj.linkedin}
           onChange={handleChange}
           label='LinkedIn Profile link with https:// prefix'

@@ -92,3 +92,5 @@ export class CandidateController {
       const candidate = await db.candidate.findFirst({
         where: {
           id,
+        },
+      });

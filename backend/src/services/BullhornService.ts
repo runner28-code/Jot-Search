@@ -220,3 +220,9 @@ export class BullhornService {
     testMode = false,
     count = 50,
     sort = "-dateAdded"
+  ): Promise<any> {
+    console.log("\n***** getAllCompanies *****");
+    let offset = 0;
+    let total = 100000;
+    let repeatErr = 0;
+

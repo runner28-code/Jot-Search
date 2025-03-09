@@ -47,7 +47,6 @@ export default function CareerFilterLayout(props) {
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap'>
-        <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
@@ -63,5 +62,6 @@ export default function CareerFilterLayout(props) {
         >
           Clear All
         </button>
+      </div>
     </div>
   );

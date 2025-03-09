@@ -41,6 +41,7 @@ export type Company = {
     revenue?: string,
     status?: string,
     taxRate?: string,
+    tickerSymbol?: string,
     workWeekStart?: string,
     address_country_id?: string,
     datedAdded?: string,
@@ -51,7 +52,6 @@ export type Job = {
     address_address1?: string;
     address_address2?: string;
     address_city?: string;
-    address_state?: string;
     address_zip?: string;
     address_country_id?: string;
     benefits?: string;
@@ -72,3 +72,5 @@ export type Job = {
     durationWeeks?: string;
     educationDegree?: string;
     employmentType?: string;
+    externalID?: string;
+    feeArrangement?: string;

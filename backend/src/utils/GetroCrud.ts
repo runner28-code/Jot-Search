@@ -14,10 +14,10 @@ export const saveCompanies = async (companies: any[]) => {
 							if (existing) {
 								console.log(`Company with ID: ${company.id} exists`);
 								return -1;
+							}
 			
 							const companyData = { ...company };
 			
-							Object.keys(companyData).forEach((key) => {
 								if (expludeFields.includes(key)) {
 									delete companyData[key];
 								}

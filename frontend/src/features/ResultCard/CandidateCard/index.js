@@ -55,7 +55,6 @@ export default function CandidateCard({ data, disableLink }) {
           {/* First row icons */}
           <div className='w-full flex flex-wrap justify-between items-center mt-l'>
             {/* Linkedin */}
-            <div className='w-1/3 flex items-center'>
               <img
                 src={linkedinIcon}
                 className='h-8 mr-5' />
@@ -90,6 +89,53 @@ export default function CandidateCard({ data, disableLink }) {
         </div>
       </LinkWrapper>
       <FavoriteButton
+        type={'candidate'}
         data={data} />
     </div>
+  )
+}
+
+CandidateCard.propTypes = {
+  data: PropTypes.shape({
+    id: PropTypes.string,
+    avatar: PropTypes.string,
+    city: PropTypes.string,
+    companyName: PropTypes.string,
+    experienceYears: PropTypes.string,
+    experience: PropTypes.number,
+    expertise: PropTypes.string,
+    firstName: PropTypes.string,
+    lastName: PropTypes.string,
+    occupation: PropTypes.string,
+    skills: PropTypes.string,
+    state: PropTypes.string,
+    status: PropTypes.string,
+    userDateAdded: PropTypes.string,
+    workspace: PropTypes.string,
+    willRelocate: PropTypes.bool,
+    user: PropTypes.object,
+  }).isRequired,
+  disableLink: PropTypes.bool,
+}
+
+// Disables link and interactivity if disableLink is true
+function LinkWrapper({ children, link, disableLink }) {
+  const baseStyles = 'w-full flex mb-xl px-xxl-2 py-xxl-3 bg-white border border-disabled border-solid rounded-2xl remove-outline ';
+  if ( disableLink ) {
+    return (
+      <div className={baseStyles}>
+        {children}
+      </div>
+    );
+  }
+
+  const linkStyles = baseStyles + 'cursor-pointer hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
+  return (
+    <Link 
+      to={link}
+      className={linkStyles}
+      tabIndex='0'
+    >
+      {children}
+    </Link>
   )

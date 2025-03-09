@@ -46,6 +46,7 @@ export default function JoinTalentNetwork() {
             Build your profile with the type of opportunity you want to attract and next exclusively with our network. Receive email alerts that make you first to know about relevant new opportunities, based on your preferences.
           </p>
           <Link
+// Temp comment
             to={ROUTES.signup}
             className='flex items-center justify-center h-28 w-112 bg-buttonLightBlue mt-22 px-18 rounded-lg'
           >

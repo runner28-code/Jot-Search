@@ -37,10 +37,12 @@ module.exports = {
         royalBlue: '#176AB9',
         aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
+// Temp comment
         'legal-bg': '#23242D',
         // Neutrals
         powderBlue: '#E4F2FF',
         lightGrey: '#F6F5F6',
+        footerGrey: '#EBEBEB',
         grey300: '#D0D5DD',
         grey700: '#344054',
         midGrey: '#94949D',
@@ -56,3 +58,5 @@ module.exports = {
         // Colors included in design but not in Web Style Guide
         orangeCircle: '#ED8623',
         orangeHeroOverlay: '#F2871F',
+        'blue-bg': '#E7F0F8',
+        buttonLightBlue: '#00CADB',

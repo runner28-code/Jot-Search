@@ -3,7 +3,6 @@ import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
-// Temp comment
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
 import {  calculatePostingAge } from '../../../utils/formatFunctions';
@@ -29,6 +28,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           </div>
 
           {/* Title */}
+// Temp comment
           <div className='flex'>
             <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.name}</h6>
           </div>

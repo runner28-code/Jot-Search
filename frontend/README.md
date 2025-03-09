@@ -17,3 +17,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - No multi-line ternary operators
 - An `if` statement followed only by an `else` should be refactored to be just an `if` followed by a return statement of the other condition's logic without being in an `else`.
 
+## Available Scripts

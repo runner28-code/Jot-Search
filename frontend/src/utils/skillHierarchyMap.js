@@ -10,6 +10,7 @@ export const expertises = [
 export const roles = {
   'Finance': [
     'Accounting & Financial Planning',
+    'Accounts & Payroll',
     'Corporate Finance',
     'Banking',
     'Investment',
@@ -17,7 +18,6 @@ export const roles = {
   'Marketing': [
     'Brand & Creative Marketing',
     'Content Marketing & Design',
-    'Digital Marketing',
     'Generalist Marketing',
     'Graphic and Motion Design',
     'PR & Communications',
@@ -86,3 +86,6 @@ export const skills = [
   'Analyst',
   'Android',
   'Angular',
+  'Animation',
+  'API',
+  'AR/VR',

@@ -11,5 +11,7 @@ export const saveCompany = async (company: string, candidate: string) => {
             id: company,
           },
         },
+      },
     });
 
+    console.log({ existing });

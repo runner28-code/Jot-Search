@@ -31,7 +31,6 @@ const checkboxFilters = [
   'Actively Looking',
 ];
 
-// Temp comment
 export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
@@ -44,7 +43,6 @@ export default function CandidateFilterLayout(props) {
   } = props;
   let userRole = AuthService.getUserRole();
 
-  const dropdownFilterObject = {};
   const checkboxFilterObject = {};
   if (userRole === 'coordinator') {
     dropdownFiltersCoord.forEach(filter => {

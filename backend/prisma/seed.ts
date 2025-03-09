@@ -40,6 +40,7 @@ async function seedJobs() {
         }))!.id,
       },
       {
+        title: "Junior Software Engineer",
         companyId: (await db.company.findFirst())?.id,
 
         address1: "123 Job St",
@@ -47,3 +48,5 @@ async function seedJobs() {
         state: "OK",
         zip: "74008",
         salary: 80000,
+        employmentType: "fulltime",
+        onSite: "Hybrid",

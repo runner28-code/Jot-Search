@@ -37,6 +37,7 @@ export class GetroService {
         const authRes = await this.getNetworkID();
         if (authRes) return true;
         throw 'Auth failed';
+    }
     async getNetworkID(): Promise<boolean> {
         try {
             console.log('\n***** getNetworkID *****');
@@ -58,3 +59,6 @@ export class GetroService {
         } catch (error) {
             console.log(error);
         }
+        return false;
+    };
+

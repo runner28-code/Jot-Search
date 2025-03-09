@@ -27,3 +27,4 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     referredBy: data.referredBy,
     roles: data.skillSet,
 
+    description: data.description,

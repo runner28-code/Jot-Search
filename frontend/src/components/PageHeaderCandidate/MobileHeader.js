@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 
 export default function MobileHeader(props) {
   const {
@@ -7,7 +6,6 @@ export default function MobileHeader(props) {
     icon,
     IconComponent,
     classOverride,
-    colorizeStroke,
   } = props;
   
   let addOnIconClasses = '';
