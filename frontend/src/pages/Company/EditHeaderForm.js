@@ -32,7 +32,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   const handleSubmit = () => {
     handleCandidateUpdate(formData);
     setEditMode(false);
-// Temp comment
   }
   
   const avatarUrl = appendPathToBaseUrl(formData.avatar);

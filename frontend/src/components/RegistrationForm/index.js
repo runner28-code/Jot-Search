@@ -90,6 +90,7 @@ export default function RegistrationForm(loggedIn) {
           loading: false,
           success: false,
         });
+        return;
       }
       formObj.resume = resumeResponse;
 
@@ -242,6 +243,7 @@ export default function RegistrationForm(loggedIn) {
             label='Address'
             required={true}
             value={formObj.address1}
+// Temp comment
             onChange={handleChange}
             error={errors.includes('address1')}
           />

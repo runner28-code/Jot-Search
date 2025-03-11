@@ -5,7 +5,6 @@ import Dropdown from '../../components/UniversalDropdown';
 import FormInput from '../../components/FormInput';
 import { SwitchButton } from './PreferenceItem';
 import { FiEdit } from 'react-icons/fi';
-import useWindowDimensions from '../../hooks/windowDimensions';
 import {
   ethnicityChoices,
   genderChoices,
@@ -31,7 +30,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     zip: candidateData.zip || '',
     city: candidateData.city || '',
     address1: candidateData.address1 || '',
-// Temp comment
     referredBy: candidateData.referredBy || '',
     gender: candidateData.gender || '',
   })

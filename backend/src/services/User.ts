@@ -75,7 +75,6 @@ export const register = async (data: User) => {
       console.log("user exists");
       return {
         result: false,
-        error: `User with ${user.email} exists`,
       };
     }
 
@@ -143,3 +142,4 @@ export const update = async (parent_id: string, role: string, data: any) => {
     const updated = await db.user.update({
       where: {
         id: existing.id,
+      },

@@ -73,3 +73,4 @@ export const saveCompanies = async (companies: any[]) => {
 
         const newCompany = await db.company.create({
           data: companyData,
+        });

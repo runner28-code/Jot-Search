@@ -17,9 +17,9 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
       {choices.map( choice => {
         return (
           <option 
+            key={ choice }
             value={ choice }
             className={ optionStyles }
-          >
             { choice }
           </option>
         )

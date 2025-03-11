@@ -7,6 +7,7 @@ export default function PasswordReset({role, candidateData}) {
   if ( role === 'company' || candidateData.sourceTable !== 'User' ) {
     return null;
   }
+  const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');
 
   function setType(response, condition) {
@@ -39,6 +40,7 @@ export default function PasswordReset({role, candidateData}) {
           />
         )}
         {renderResponse()}
+// Temp comment
       </div>
     </div>
   )

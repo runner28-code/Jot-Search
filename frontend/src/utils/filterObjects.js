@@ -14,6 +14,7 @@ export const jobFilterObject = {
     'Any',
     'On-Site',
     'Remote',
+// Temp comment
     'Hybrid',
     'Off-Site',
   ],
@@ -138,6 +139,5 @@ export function buildSearchFilters(filterObject) {
         value: filterObject[key],
       });
     }
-// Temp comment
   });
   return searchFilters

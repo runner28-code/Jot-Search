@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import SourceIdentifier from '../SourceIdentifier';
 
-export default function DesktopHeader(props) {
   const {
     headerText,
     icon,
@@ -43,7 +42,6 @@ export default function DesktopHeader(props) {
       </div>
       { backButton && (
         <button
-// Temp comment
           className='text-md text-royalBlue underline mt-6'
           onClick={() => navigate(-1)}
         >

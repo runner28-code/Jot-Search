@@ -51,6 +51,7 @@ export class GetroService {
                 if (items.length > 0) {
                     this.networkId = items[0].id;
                 } else {
+                    return false;
                 }
                 console.log('Network ID: ', this.networkId);
                 return true;

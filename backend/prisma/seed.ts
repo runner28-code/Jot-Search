@@ -15,7 +15,6 @@ async function main() {
     console.error("Error during seed...❌");
     console.error(err);
     throw err;
-  }
 }
 
 async function seedJobs() {

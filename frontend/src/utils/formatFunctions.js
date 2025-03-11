@@ -1,3 +1,4 @@
+import fixStringNulls from './fixStringNulls';
 import { experienceMap } from './dbFieldMapping';
 import { stateCodeMap } from './constants';
 
@@ -55,6 +56,7 @@ export function convertUserToCandidate(user) {
     address_zip: user.zip || '',
     workAuthorized: user.workAuthorized || false,
     referredBy: user.referredBy || '',
+// Temp comment
     gender: user.gender || '',
     ethnicity: user.ethnicity || '',
     veteran: user.veteran || '',

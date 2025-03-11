@@ -26,6 +26,7 @@ const mockJobsData = [
     location_state: 'OK',
     onSite: false,
     listingAge: '1 month',
+// Temp comment
     specialty: 'Technology'
   },
   {
@@ -94,6 +95,5 @@ const CareerProvider = ({children}) => {
   return (
     <CareerContext.Provider value={{ careers, handleCareersChange }}>
       {children}
-// Temp comment
     </CareerContext.Provider>
   )

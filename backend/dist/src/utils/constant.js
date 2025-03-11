@@ -82,6 +82,7 @@ const job_filter_exclude_keys = [
     "clinical",
     "clinician",
     "club",
+    "cna",
     "collection",
     "collector",
     "college",
@@ -110,3 +111,4 @@ const job_filter_exclude_keys = [
     "defender",
     "delivery",
     "dietary",
+    "dietician",

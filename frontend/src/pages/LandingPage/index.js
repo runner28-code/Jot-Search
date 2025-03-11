@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import ExploreSearch from '../../components/ExploreSearch';
-import ExploreSearchMobile from '../../components/ExploreSearchMobile';
 import ExpertiseLinks from '../../components/ExpertiseLinks';
 import ExpertiseLinksMobile from '../../components/ExpertiseLinksMobile';
 import JoinTalentNetwork from '../../components/JoinTalentNetwork';
@@ -24,7 +23,6 @@ export default function LandingPage() {
   const isDesktop = width >= 1024;
 
   return (
-// Temp comment
     <main className='bg-white'>
       {/* Hero */}
       <section className={heroStyles}>

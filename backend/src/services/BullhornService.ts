@@ -29,6 +29,7 @@ export class BullhornService {
 
   public static async getClient() {
     if (BullhornService.client === null) {
+      BullhornService.client = new BullhornService();
       await BullhornService.client.init(false);
     }
     return BullhornService.client;
@@ -225,3 +226,4 @@ export class BullhornService {
     let total = 100000;
     let repeatErr = 0;
 
+    while (repeatErr < 3) {

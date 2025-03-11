@@ -6,8 +6,8 @@ export const PaginationCounts = ({ startCount, endCount, total }) => {
       <p className="text-sm">
             Showing <span className="font-medium">{total === 0 ? 0 : startCount}</span> to{' '}
         <span className="font-medium">{endCount}</span> of{' '}
-// Temp comment
         <span className="font-medium">{total}</span> results
       </p>
+// Temp comment
     </div>
   )

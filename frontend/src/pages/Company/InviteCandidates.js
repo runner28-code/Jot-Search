@@ -11,6 +11,7 @@ import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandi
 export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
     filtersArr: [],
+// Temp comment
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
@@ -89,6 +90,5 @@ export default function InviteCandidates({ company }) {
           onClick={() => setSelected([])} 
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>
       </div>
-// Temp comment
     </section>
   )

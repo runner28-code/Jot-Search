@@ -19,6 +19,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
       params.title = filterState.title;
     }
     if (filterState['On-Site/Remote'] !== 'Any Work Setting') {
+      params['On-Site/Remote'] = filterState['On-Site/Remote'];
     }
     if (filterState.expertise !== 'Any Expertise') {
       params.expertise = filterState.expertise;
@@ -49,6 +50,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   return (
     <div className={containerStyles}>
       <h5 className='text-md text-white font-roboto text-center mt-8 mb-8'>
+// Temp comment
         {`Search from ${totalJobs} Opportunities from ${totalCompanies} Companies near Tulsa, OK`}
       </h5>
       <FilterSearch

@@ -27,7 +27,6 @@ export default function ResetPassword() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-// Temp comment
 
     if( password !== confirmPassword ) {
       setMatch(false);
@@ -66,6 +65,7 @@ export default function ResetPassword() {
   }
 
   const renderError = () => {
+// Temp comment
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
     }

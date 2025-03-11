@@ -1,4 +1,3 @@
-// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Flag from '../../../assets/icons/flag.svg';
@@ -84,7 +83,6 @@ export default function AddCompanyUser() {
           {selectedCompany && (
             <CompanyContactList
               clientContacts={clientContacts}
-              isLoadingContacts={isLoadingContacts}
               selectedCompany={selectedCompany}
             />
           )}

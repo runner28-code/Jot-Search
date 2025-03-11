@@ -5,7 +5,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function JoinTalentNetwork() {
 
-// Temp comment
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {

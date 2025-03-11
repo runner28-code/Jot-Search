@@ -26,11 +26,11 @@ export default function AddCoordinator() {
       } else {
         const error = { submit: data.error }
         setSubmissionObject({
+// Temp comment
           loading: false,
           success: false,
           errors: error,
         });
-// Temp comment
       }
     }
   }, [submissionObject.loading]);

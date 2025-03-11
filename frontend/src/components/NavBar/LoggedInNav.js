@@ -5,7 +5,6 @@ import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
 import chevronDownBlue from '../../assets/images/down-chevron-blue.svg';
 import NavSearch from '../NavSearch';
 import * as ROUTES from '../../routes';
-// Temp comment
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
@@ -50,4 +49,3 @@ function NavBarLayout() {
       </div>
       {/* Nav Search */}
     </nav>
-  )
