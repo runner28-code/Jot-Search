@@ -51,6 +51,7 @@ export const saveCompanies = async (companies: any[]) => {
         const existing = await db.company.findFirst({
           where: {
             externalID: company.id,
+          },
         });
         if (existing) {
           console.log(`Company with ID: ${company.id} exists`);
@@ -73,4 +74,3 @@ export const saveCompanies = async (companies: any[]) => {
         const newCompany = await db.company.create({
           data: companyData,
         });
-

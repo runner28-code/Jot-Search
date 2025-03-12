@@ -14,6 +14,7 @@ export const UpdateJobStatus = ({ job }) => {
   return (
     <div className='py-8 flex flex-col'>
       <hr className={`${hrStyles} bg-smokeGray h-2`} />
+
       <div className='flex flex-col'>
         <h4 className={sectionHeaderStyles}>Career Status</h4>
         {isLoading && <p>Loading...</p>}
@@ -34,6 +35,7 @@ export const UpdateJobStatus = ({ job }) => {
           handleChange={async(e) => {
             const { res } = await saveJob({ status: e.target.value, id: updatedJob.id })
             setUpdatedJob(res);
+// Temp comment
           }}
         />
       </div>

@@ -10,6 +10,7 @@ export default function Filters(props) {
     searchLabel,
     searchTerm,
     setSearchTerm,
+    handleSearchClick,
     marginBottom
   } = props;
 

@@ -124,7 +124,6 @@ const CandidateProvider = ({children}) => {
     setCandidates([...filteredCandidates, updatedCandidate]);
   }
 
-// Temp comment
   return (
     <CandidateContext.Provider value={{ candidates, currentUser, setCurrentUser, handleCandidatesChange, handleCandidateUpdate }}>
       {children}

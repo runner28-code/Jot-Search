@@ -22,6 +22,7 @@ function App() {
   return (
     <div className="App overflow-hidden">
       <NavBar />
+      <main className='bg-lightGrey pt-30 vw-1280:pt-44 vw-1280:flex'>
         <SideNav userType={userRole} />
         <div 
           className='grow min-h-280 pb-18'>
@@ -50,7 +51,6 @@ function App() {
             <Route
               path={`${ROUTES.companies}/:id`}
               element={<Company />} />
-            <Route
               path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />
             <Route

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {
-  defaultJobFilterState,
   buildSearchFilters,
 } from '../../utils/filterObjects';
 
@@ -50,7 +49,6 @@ export default function InviteToCareer({ candidate }) {
 
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Careers' : 'Select Careers'}</div>
-// Temp comment
   }
   
   return (

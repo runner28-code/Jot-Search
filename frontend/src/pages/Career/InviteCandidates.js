@@ -25,6 +25,7 @@ export default function InviteCandidates({ job }) {
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
       value: candidate.id,
       candidate
+    }
   }) || [];
 
   const [selected, setSelected] = useState([]);
@@ -66,6 +67,7 @@ export default function InviteCandidates({ job }) {
         options={candidateOptions}
         value={selected}
         onChange={setSelected}
+// Temp comment
         labelledBy="Select"
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}

@@ -5,7 +5,6 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-// Temp comment
     window.scrollTo(0, 0);
   }, [pathname]);
 

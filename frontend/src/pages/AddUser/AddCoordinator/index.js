@@ -20,6 +20,7 @@ export default function AddCoordinator() {
       if (data.result === true) {
         setSubmissionObject({
           loading: false,
+// Temp comment
           success: true,
           errors: {},
         });
@@ -122,7 +123,6 @@ export default function AddCoordinator() {
         />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.lastname}</p>
       </div>
-// Temp comment
       <div className={inputContainer}>
         {/* Email */}
         <label className={labelStyles}>Email</label>

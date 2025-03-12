@@ -13,6 +13,7 @@ export function formatCandidateData(candidateData) {
     formattedData.state = candidateData.address_state || '';
     formattedData.zip = candidateData.address_zip || '';
   }
+  formattedData.address = buildCandidateAddress(candidateData);
   formattedData.avatar = formatAvatarUrl(candidateData.avatar, candidateData.firstname, candidateData.lastname);
   if ( !candidateData.occupation && !candidateData.companyName ) {
     formattedData.occupationString = 'No Occupation Provided';
@@ -54,6 +55,7 @@ export function convertUserToCandidate(user) {
     address_state: user.state || '',
     address_zip: user.zip || '',
     workAuthorized: user.workAuthorized || false,
+// Temp comment
     referredBy: user.referredBy || '',
     gender: user.gender || '',
     ethnicity: user.ethnicity || '',

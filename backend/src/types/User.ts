@@ -16,7 +16,6 @@ export type User = {
   avatar?: string;
   linkedin?: string;
   skills?: string;
-  category?: string;
   categoryId?: string | number;
   seniority?: string;
   workspace?: string;

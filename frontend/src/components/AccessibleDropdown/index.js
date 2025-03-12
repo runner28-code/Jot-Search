@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import checkmarkIcon from '../../assets/images/checkmark.png';
 import downChevron from '../../assets/icons/chevron-down-gray.svg';
@@ -29,7 +28,6 @@ export default function AccessibleDropdown(props) {
         onChange(name, currentChosen.filter(item => item !== choice));
       } else {
         onChange(name, [...currentChosen, choice]);
-      }
     } else { // single select
       onChange(name, choice);
     }

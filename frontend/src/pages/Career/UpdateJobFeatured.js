@@ -4,6 +4,7 @@ import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 
 export const UpdateJobFeatured = ({ job }) => {
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
+
   const toggled = job.featured
 
 
@@ -21,7 +22,6 @@ export const UpdateJobFeatured = ({ job }) => {
     <div className='flex flex-col'>
       {isLoading && <p>Loading...</p>}
       {isSuccess && <p>Success!</p>}
-      
       <div className='flex space-x-16'>
         <button
           type="button" 

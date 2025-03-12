@@ -75,7 +75,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     } else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
-// Temp comment
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
     }
@@ -134,7 +133,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
 
   function clearFilters() {
     setFilterObject(initialFilterState);
-    setPage(1);
   }
 
   // eslint-disable-next-line no-unused-vars

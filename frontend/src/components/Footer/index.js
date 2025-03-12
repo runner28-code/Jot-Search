@@ -69,7 +69,6 @@ export default function Footer() {
             <span>© 2022 Talent inTulsa initiatives, LLC. All rights reserved | </span>
             <a
               href={ROUTES.privacyPolicy}
-// Temp comment
               className='underline'
               target='_blank'
               rel='noreferrer'
@@ -129,6 +128,7 @@ export default function Footer() {
         />
       </a>
     </div>
+// Temp comment
     <div
       id='footer'
       className='flex flex-col'

@@ -11,6 +11,7 @@ import urlDecode from '../../utils/urlDecode';
 import { buildCareerAddress, calculatePostingAge, buildSalaryString } from '../../utils/formatFunctions';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+// Temp comment
 import Flag from '../../assets/icons/flag.svg';
 import PageHeader from '../../components/PageHeader';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
@@ -71,7 +72,6 @@ export default function CareerPage() {
       {
         isMobile ?
           <MobileLayout data={data} /> :
-// Temp comment
           <DesktopLayout data={data} />
       }
       {

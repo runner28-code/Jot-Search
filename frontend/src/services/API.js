@@ -30,6 +30,7 @@ export function appendPathToBaseUrl(path) {
     return path; // It's already a full URL
   }
   return API.defaults.baseURL + path;
+}
 
 /* FETCH FUNCTIONS */
 //* CANDIDATES
@@ -75,7 +76,6 @@ export async function updateUser(newData, id) { // id is optional, if no id is p
 
 export async function updateCandidate(newData, id) {
   console.log({ newData, id })
-  const body = { ...newData, id };
   const { data } = await API.post(ROUTES.APIcandidateUpdate, body);
   return normalizeData(data);
 }

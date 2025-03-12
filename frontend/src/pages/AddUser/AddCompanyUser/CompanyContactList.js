@@ -6,7 +6,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
   const [selectedContacts, setSelectedContacts] = useState([]);
 
   const handleContactClick = (contact) => {
-    if (selectedContacts.includes(contact)) {
       setSelectedContacts(selectedContacts.filter((c) => c !== contact));
     } else {
       setSelectedContacts([...selectedContacts, contact]);
@@ -36,6 +35,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               onClick={() => handleContactClick(contact)}
             >
               <input
+                type='checkbox'
                 id={contact.id}
                 name={contact.id}
                 checked={selectedContacts.includes(contact)}
