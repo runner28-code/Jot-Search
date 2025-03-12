@@ -7,6 +7,7 @@ import NavSearch from '../NavSearch';
 import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
+import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import {
   candidateChoices,
   companyChoices,
@@ -33,7 +34,6 @@ function NavBarLayout() {
         <Link to={ROUTES.root}>
           <img
             className='my-8 w-3/4'
-            src={inTulsaLogoText}
             alt='logo'
           />
         </Link>

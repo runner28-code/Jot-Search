@@ -8,7 +8,6 @@ export const ethnicityChoices = Object.values(ethnicityMap);
 export const genderChoices = Object.values(genderMap);
 export const veteranStatusChoices = Object.values(veteranStatusMap);
 export const disabilityChoices = Object.values(disabilityMap);
-export const jobReferralChoices = [
   'LinkedIn',
   'Indeed',
   'Google',
@@ -25,6 +24,7 @@ export const defaultCareerState = {
   loading: true,
 }
 
+export const defaultState = {
   firstname: '',
   lastname: '',
   phone: '',

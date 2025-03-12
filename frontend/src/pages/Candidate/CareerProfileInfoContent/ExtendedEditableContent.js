@@ -52,7 +52,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       const fileToUpload = event.target.files[0];
       const pluralizedFolderName = name + 's';
       const newPath = await uploadFile(pluralizedFolderName, fileToUpload);
-// Temp comment
       console.log(newPath);
       return setFormData({ ...formData, [name]: newPath });
     }
@@ -149,6 +148,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           required={true}
           placeholder='Select'
           value={formData.roles || []}
+// Temp comment
           onChange={handleChange}
           choices={formData.expertise ? roleChoices[formData.expertise] : []}
           disabled={disabled}

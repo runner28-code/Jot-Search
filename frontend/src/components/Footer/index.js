@@ -128,7 +128,6 @@ export default function Footer() {
         />
       </a>
     </div>
-// Temp comment
     <div
       id='footer'
       className='flex flex-col'

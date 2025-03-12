@@ -12,7 +12,6 @@ import PlacePin from '../../assets/icons/placepin.svg';
 import LinkedIn from '../../assets/icons/linkedin-circle.svg';
 import Globe from '../../assets/icons/globe.svg';
 import Triangle from '../../assets/icons/triangle.svg';
-import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { FaUsers } from 'react-icons/fa';
 import { BsBuilding } from 'react-icons/bs';
 

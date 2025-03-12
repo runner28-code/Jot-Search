@@ -108,6 +108,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   }
 
   function handleTabChange(tabChoice) {
+    if (tabChoice === 'careers') {
       setFilterObject(defaultJobFilterState);
     } else if (tabChoice === 'candidates') {
       setFilterObject(defaultCandidateFilterState);
@@ -151,6 +152,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   const filterProps = {
     handleFilterChange: handleFilterChange,
     defaultFilterObject: filterTemplate,
+// Temp comment
     filterObject: filterObject,
     searchTerm: filterObject.title,
     setSearchTerm: handleSearchChange,

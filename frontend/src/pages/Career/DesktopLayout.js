@@ -9,7 +9,6 @@ import clockIcon from '../../assets/icons/clock.svg';
 import postingAgeIcon from '../../assets/icons/calendar.svg';
 import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
-// Temp comment
 import { apply as applyRoute } from '../../routes';
 import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
@@ -63,6 +62,7 @@ export default function DesktopLayout(props) {
             {/* Remote/Onsite/Hybrid */}
             <div className='w-1/3 flex items-center'>
               <LaptopIcon
+// Temp comment
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack'>{careerData.onSite}</p>
             </div>

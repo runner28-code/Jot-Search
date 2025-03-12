@@ -22,7 +22,6 @@ export default function DesktopHeader(props) {
   if ( containerClassOverride ) containerClasses += containerClassOverride;
   
   return (
-// Temp comment
     <div className={containerClasses}>
       <div className='flex gap-8 items-center'>
         { icon && (
@@ -46,6 +45,7 @@ export default function DesktopHeader(props) {
         <button
           className='text-md text-royalBlue underline mt-6'
           onClick={() => navigate(-1)}
+// Temp comment
         >
           {'< Go Back'}
         </button>

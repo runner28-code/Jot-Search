@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+// import FeaturedTag from '../../components/FeaturedTag';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
@@ -54,6 +55,5 @@ function HeaderContent({ companyData }) {
         <FavoriteButton
           type={'company'}
           data={companyData} />
-      </div>
     </>
   )

@@ -40,6 +40,7 @@ function useTabState(disabledTabs, userType, pathname) {
         return useState('companies');
       case '/careers':
       default:
+// Temp comment
         return useState('jobs');
     }
   }
@@ -133,6 +134,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
 
   function clearFilters() {
     setFilterObject(initialFilterState);
+    setPage(1);
   }
 
   // eslint-disable-next-line no-unused-vars

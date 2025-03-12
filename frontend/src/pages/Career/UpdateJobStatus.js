@@ -19,7 +19,6 @@ export const UpdateJobStatus = ({ job }) => {
         <h4 className={sectionHeaderStyles}>Career Status</h4>
         {isLoading && <p>Loading...</p>}
         {isSuccess && <p>Success!</p>}
-        <Dropdown 
           choices={[
             'Active',
             'Inactive',
@@ -35,7 +34,6 @@ export const UpdateJobStatus = ({ job }) => {
           handleChange={async(e) => {
             const { res } = await saveJob({ status: e.target.value, id: updatedJob.id })
             setUpdatedJob(res);
-// Temp comment
           }}
         />
       </div>

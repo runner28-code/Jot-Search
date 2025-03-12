@@ -48,6 +48,7 @@ export default function RegistrationForm() {
   useEffect(async () => { // Submit data
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
+      // Validation
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
@@ -129,6 +130,7 @@ export default function RegistrationForm() {
     });
   }
 
+// Temp comment
   // Alter header and pronoun based on who is registering the new user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
   const pronoun = addType === 'candidate' ? 'you' : 'they';

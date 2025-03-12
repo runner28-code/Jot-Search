@@ -19,6 +19,7 @@ import { GetroService } from "../services/GetroService";
 import { createJob, getAppliedJobsByUser, updateJob } from "../services/Job";
 import {
   DATASET_BULLHORN,
+  DATASET_GETRO,
   FilterOption,
   Job,
   FilterBody,
@@ -85,7 +86,6 @@ export class JobController {
       if (job) {
         return {
           job: {
-            ...(job?.getroJobInfo || {}),
             ...job,
             clientCorporation: job.company?.name,
             company_logo: getroCompany?.logo_url

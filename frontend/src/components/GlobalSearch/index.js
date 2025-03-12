@@ -90,6 +90,7 @@ export default function GlobalSearch({ placeholder }) {
       <div ref={menuRef} >
         <SearchBar
           searchTerm={ searchTerm }
+          setSearchTerm={ handleSearchChange }
           placeholder={ placeholder } 
           alternateStylesObject={ stylesObject } />
       </div>

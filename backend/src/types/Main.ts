@@ -4,5 +4,6 @@ export type Application = {
     job: string;
     appliedOn: string;
 }
+
 export type SavedJob = {
     id: string;

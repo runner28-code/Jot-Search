@@ -20,7 +20,6 @@ export default function AddCoordinator() {
       if (data.result === true) {
         setSubmissionObject({
           loading: false,
-// Temp comment
           success: true,
           errors: {},
         });
@@ -75,6 +74,7 @@ export default function AddCoordinator() {
     e.preventDefault();
 
     // Check errors and set state appropriately
+// Temp comment
     const errors = validateObject(formObject);
     if (Object.keys(errors).length > 0) {
       setSubmissionObject({ ...submissionObject, errors: errors });

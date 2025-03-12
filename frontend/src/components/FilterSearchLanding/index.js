@@ -22,6 +22,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     <div
       className={ containerStyles }
       onKeyDown={handleKeydown}
+    >
       <input
         type='text'
         className={ inputStyles }
