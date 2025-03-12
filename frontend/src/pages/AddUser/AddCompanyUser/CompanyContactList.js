@@ -36,7 +36,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               onClick={() => handleContactClick(contact)}
             >
               <input
-                type='checkbox'
                 id={contact.id}
                 name={contact.id}
                 checked={selectedContacts.includes(contact)}

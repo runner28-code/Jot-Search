@@ -25,7 +25,6 @@ export default function InviteCandidates({ job }) {
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
       value: candidate.id,
       candidate
-    }
   }) || [];
 
   const [selected, setSelected] = useState([]);
@@ -68,6 +67,7 @@ export default function InviteCandidates({ job }) {
         value={selected}
         onChange={setSelected}
         labelledBy="Select"
+        ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}
       />

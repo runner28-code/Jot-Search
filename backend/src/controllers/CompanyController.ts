@@ -82,3 +82,5 @@ export class CompanyController {
     @CurrentUser() authUser: User,
     @Body() body: { candidates_ids: string[], employers_emails: string[] }
   ): Promise<any> {
+    if (authUser.role !== COORDINATOR) {
+      return {

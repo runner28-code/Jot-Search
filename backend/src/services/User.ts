@@ -38,7 +38,6 @@ const validateUser = ({
   skills,
   category,
 }: User) => {
-  try {
     if (isNullOrEmpty(firstname) || isNullOrEmpty(lastname))
       return "firstname and lastname is required";
     if (isNullOrEmpty(email)) return "email is invalid";
@@ -128,6 +127,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
       };
     }
 
+    if (user.password) {
       user.password = encryptPassword(user.password);
     }
 
@@ -143,3 +143,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
       where: {
         id: existing.id,
       },
+      data: user,
+    });
+

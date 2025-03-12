@@ -13,7 +13,6 @@ export function formatCandidateData(candidateData) {
     formattedData.state = candidateData.address_state || '';
     formattedData.zip = candidateData.address_zip || '';
   }
-  formattedData.address = buildCandidateAddress(candidateData);
   formattedData.avatar = formatAvatarUrl(candidateData.avatar, candidateData.firstname, candidateData.lastname);
   if ( !candidateData.occupation && !candidateData.companyName ) {
     formattedData.occupationString = 'No Occupation Provided';
@@ -34,7 +33,6 @@ export function formatCandidateData(candidateData) {
   if ( candidateData.firstName && !candidateData.firstname ) formattedData.firstname = candidateData.firstName;
   if ( candidateData.lastName && !candidateData.lastname ) formattedData.lastname = candidateData.lastName;
   if ( candidateData.firstname && !candidateData.firstName ) formattedData.firstName = candidateData.firstname;
-// Temp comment
   if ( candidateData.lastname && !candidateData.lastName ) formattedData.lastName = candidateData.lastname;
 
   return formattedData;

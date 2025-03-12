@@ -6,6 +6,7 @@ import AuthService from '../../services/auth';
 import CompanyCard from '../../features/ResultCard/CompactCompanyCard';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import useWindowDimensions from '../../hooks/windowDimensions';
+
 export default function CareerFavorite () {
 
   const { user_id } = AuthService.getProfile();
@@ -30,6 +31,7 @@ export default function CareerFavorite () {
                   key={company.id}
                   index={index}
                   data={company}
+// Temp comment
                   agoDate={company.agoDate}
                 />
               </>)

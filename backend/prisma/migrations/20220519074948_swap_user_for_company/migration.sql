@@ -22,3 +22,4 @@ DROP TABLE "User";
 -- CreateTable
 CREATE TABLE "Company" (
     "id" TEXT NOT NULL,
+    "name" TEXT NOT NULL,

@@ -17,3 +17,4 @@ CREATE TABLE "Candidate" (
     "dateOfBirth" TEXT,
     "dayRate" TEXT,
     "dayRateLow" TEXT,
+    "degreeList" TEXT,

@@ -14,7 +14,6 @@ export default function NavMenu() {
     setMenuOpen(menuOpen => !menuOpen);
   }
 
-// Temp comment
   function handleOptionClick(e) {
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {
@@ -26,7 +25,6 @@ export default function NavMenu() {
   const buttonStyles = 'h-18 w-26 px-6 flex items-center justify-center border-lightGrey border-solid ' + borderStyles;
   return (
     <div className='relative bg-royalBlue rounded-2xl'>
-      <button
         className={buttonStyles}
         onClick={handleMenuClick}
       >

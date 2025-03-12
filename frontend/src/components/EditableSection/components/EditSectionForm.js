@@ -16,7 +16,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
   
   if ( propertyName === 'comments' ) {
-    return <EditSummaryForm 
       summaryText={contentObject[propertyName]}
       setSummary={handleChange} />
   }
@@ -55,6 +54,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               className='text-xl font-bold text-royalBlue'
               htmlFor={key}
             >
+              {labelString}
             </label>
             <input 
               className='w-100 text-xl border-lightGrey border-solid border-2 rounded-2xl px-4 py-2'

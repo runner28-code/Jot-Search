@@ -98,3 +98,6 @@ export class JobController {
     } catch (err) {
       console.error(err);
       return null;
+    }
+  }
+

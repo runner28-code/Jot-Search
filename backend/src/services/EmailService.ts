@@ -26,3 +26,4 @@ export const sendVerification = async (to: string, name: string) => {
       firstName: name,
     });
     return true;
+  } catch (error: any) {

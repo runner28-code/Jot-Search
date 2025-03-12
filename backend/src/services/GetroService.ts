@@ -62,3 +62,22 @@ export class GetroService {
         return false;
     };
 
+    async getCompanies(testMode = false, per_page = 30): Promise<any> {
+        console.log('\n***** getCompanies *****');
+        let page = 1;
+        let repeatErr = 0;
+
+        while (repeatErr < 3) {
+            try {
+                await this.checkAuth();
+                const query = queryString.stringify({
+                    per_page,
+                    page,
+                    detailed: true
+                });
+                const url = `${this.api_base_url_v1}/collections/${this.networkId}/organizations?${query}`;
+
+                const res = await axios.get(url, this.getOptions());
+                await sleep(2000); // https://developers.getro.com/#rate-limit
+
+                if (res.status === 200) {

@@ -36,7 +36,6 @@ input[type="text"].placeholder-24::placeholder {
 input:focus,
 select:focus,
 textarea:focus,
-button:focus,
 .remove-outline:focus {
     outline: none;
 }
@@ -45,3 +44,4 @@ input[type=checkbox] {
   accent-color: #2ea248;
 }
 
+/* Tailwind Component Classes */

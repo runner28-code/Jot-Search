@@ -8,3 +8,4 @@ CREATE TABLE "User" (
     "role" TEXT,
     "city" TEXT,
     "state" TEXT,
+    "resume" TEXT,

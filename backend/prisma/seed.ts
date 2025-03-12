@@ -50,3 +50,4 @@ async function seedJobs() {
         salary: 80000,
         employmentType: "fulltime",
         onSite: "Hybrid",
+        description: "Come join our rockstar team for good money and learning",

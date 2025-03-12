@@ -39,7 +39,6 @@ export type Company = {
     phone?: string,
     revenue?: string,
     status?: string,
-    taxRate?: string,
     tickerSymbol?: string,
     workWeekStart?: string,
     address_country_id?: string,
@@ -75,3 +74,5 @@ export type Job = {
     externalID?: string;
     feeArrangement?: string;
     hoursOfOperation?: string;
+    hoursPerWeek?: string;
+    interviews?: string;

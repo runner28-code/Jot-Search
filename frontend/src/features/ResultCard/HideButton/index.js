@@ -13,6 +13,7 @@ export default function HideButton({ type, data, setIsHidden }) {
     setIsHidden(true);
     await toggleHideJob(data.id);
   }
+// Temp comment
 
   return (
     <BiHide 

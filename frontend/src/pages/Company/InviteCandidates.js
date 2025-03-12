@@ -76,7 +76,6 @@ export default function InviteCandidates({ company }) {
             console.log({selected})
             const res = await sendCandidatesToCompanies({ companyIds: [company.id], candidateIds: selected.map((option) => option.value) })
             console.log({res})
-// Temp comment
             if(res.result){
               setSelected([])
             }

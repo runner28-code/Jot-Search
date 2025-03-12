@@ -12,3 +12,4 @@ export default function Dashboard() {
     <main>
       <DashboardType userType={userType} />
     </main>
+  )

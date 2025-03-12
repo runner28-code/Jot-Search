@@ -10,7 +10,6 @@ module.exports = {
       animation: {
         'spin': 'spin .175s linear forwards',
         'spin-reverse': 'spin-reverse .175s linear forwards'
-      },
       keyframes: {
         'spin': {
           from: {
@@ -59,3 +58,4 @@ module.exports = {
         orangeHeroOverlay: '#F2871F',
         'blue-bg': '#E7F0F8',
         buttonLightBlue: '#00CADB',
+        'blue70%': '#216bb2b3',

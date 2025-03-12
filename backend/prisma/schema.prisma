@@ -30,6 +30,7 @@ model Category {
   occupation  String?
   type        String?
   score       Float?    @map("_score")
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -65,7 +66,6 @@ model Lead {
   category              Json?
   clientContacts        String?
   clientCorporation     Json?
-  comments              String?
   companyName           String?
   companyURL            String?
   conversionSource      String?
@@ -170,3 +170,7 @@ model ClientContact {
   phone              String?
   phone2             String?
   phone3             String?
+  preferredContact   String?
+  skills             String?
+  source             String?
+  createdAt          DateTime  @default(now())
