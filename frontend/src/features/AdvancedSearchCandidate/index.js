@@ -130,7 +130,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       setFilterObject(defaultCandidateFilterState);
     }
     setActiveTab(tabChoice);
-    setPage(1);
   }
 
   function clearFilters() {

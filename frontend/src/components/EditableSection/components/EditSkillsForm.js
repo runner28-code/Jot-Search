@@ -11,7 +11,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
     const fakeEvent = {
       target: {
         name: inputName,
-// Temp comment
         value: newValues.join(', '),
       },
     };

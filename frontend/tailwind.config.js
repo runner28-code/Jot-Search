@@ -32,7 +32,6 @@ module.exports = {
       boxShadow: {
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
-// Temp comment
       colors: {
         // Main Brand Colors
         royalBlue: '#176AB9',

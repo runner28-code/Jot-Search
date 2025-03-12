@@ -58,7 +58,6 @@ export default function Candidate() {
         formattedUpdateObject[key] = updateObject[key];
       }
     });
-// Temp comment
 
     const updatedDisplayObject = candidateData.sourceTable === 'Candidate' ? {
       ...updateObject,

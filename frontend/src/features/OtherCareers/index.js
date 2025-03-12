@@ -41,7 +41,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
             return null;
           }
           return <CareerCard
-            key={index}
             data={career}
           />
         })

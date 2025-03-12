@@ -75,6 +75,7 @@ export const register = async (data: User) => {
       console.log("user exists");
       return {
         result: false,
+        error: `User with ${user.email} exists`,
       };
     }
 
@@ -127,7 +128,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
       };
     }
 
-    if (user.password) {
       user.password = encryptPassword(user.password);
     }
 

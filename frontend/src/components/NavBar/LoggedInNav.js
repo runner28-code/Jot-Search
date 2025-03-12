@@ -49,3 +49,4 @@ function NavBarLayout() {
       </div>
       {/* Nav Search */}
     </nav>
+  )

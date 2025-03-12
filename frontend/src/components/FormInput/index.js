@@ -22,7 +22,6 @@ export default function FormInput(props) {
     onChange,
     choices,
     choiceObject,
-    error,
     disabled
   } = props;
 

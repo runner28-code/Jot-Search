@@ -16,3 +16,4 @@ CREATE TABLE "Candidate" (
     "dateNextCall" TIMESTAMP(3),
     "dateOfBirth" TEXT,
     "dayRate" TEXT,
+    "dayRateLow" TEXT,

@@ -243,7 +243,6 @@ export default function RegistrationForm(loggedIn) {
             label='Address'
             required={true}
             value={formObj.address1}
-// Temp comment
             onChange={handleChange}
             error={errors.includes('address1')}
           />

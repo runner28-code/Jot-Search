@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import ChoicesContainer from './ChoicesContainer';
-// Temp comment
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 const WIDE_MENU_ROLES = ['candidate', 'company'];
@@ -15,6 +14,7 @@ export default function NavMenu() {
     setMenuOpen(menuOpen => !menuOpen);
   }
 
+// Temp comment
   function handleOptionClick(e) {
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {

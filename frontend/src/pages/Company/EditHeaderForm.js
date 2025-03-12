@@ -185,7 +185,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               Zip:
               </label>
               <input 
-                type='text'
                 onChange={handleInputChange}
                 id='zip'
                 name='zip'

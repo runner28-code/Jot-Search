@@ -6,7 +6,6 @@ import AuthService from '../../services/auth';
 import CompanyCard from '../../features/ResultCard/CompactCompanyCard';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import useWindowDimensions from '../../hooks/windowDimensions';
-
 export default function CareerFavorite () {
 
   const { user_id } = AuthService.getProfile();
@@ -19,7 +18,6 @@ export default function CareerFavorite () {
         <div className='bg-pinkSquare bg-cyan-400 top-[-20px] right-[5px] absolute w-6 h-6' />
       </div>
       <h2 className='font-spaceGrotesk text-h5 text-zinc-500 mb-8 text-center'>My Company Favorites</h2>
-// Temp comment
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
           isLoading ?

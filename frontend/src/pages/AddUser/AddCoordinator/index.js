@@ -26,7 +26,6 @@ export default function AddCoordinator() {
       } else {
         const error = { submit: data.error }
         setSubmissionObject({
-// Temp comment
           loading: false,
           success: false,
           errors: error,
@@ -141,7 +140,6 @@ export default function AddCoordinator() {
         {/* Password */}
         <label className={labelStyles}>Password</label>
         <input
-          type='password'
           className={submissionObject.errors.password ? invalidInputStyles : validInputStyles}
           name='password'
           placeholder='Password'

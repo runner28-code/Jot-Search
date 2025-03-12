@@ -11,7 +11,6 @@ import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandi
 export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
     filtersArr: [],
-// Temp comment
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
@@ -77,6 +76,7 @@ export default function InviteCandidates({ company }) {
             console.log({selected})
             const res = await sendCandidatesToCompanies({ companyIds: [company.id], candidateIds: selected.map((option) => option.value) })
             console.log({res})
+// Temp comment
             if(res.result){
               setSelected([])
             }

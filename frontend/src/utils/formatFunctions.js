@@ -34,6 +34,7 @@ export function formatCandidateData(candidateData) {
   if ( candidateData.firstName && !candidateData.firstname ) formattedData.firstname = candidateData.firstName;
   if ( candidateData.lastName && !candidateData.lastname ) formattedData.lastname = candidateData.lastName;
   if ( candidateData.firstname && !candidateData.firstName ) formattedData.firstName = candidateData.firstname;
+// Temp comment
   if ( candidateData.lastname && !candidateData.lastName ) formattedData.lastName = candidateData.lastname;
 
   return formattedData;
@@ -56,7 +57,6 @@ export function convertUserToCandidate(user) {
     address_zip: user.zip || '',
     workAuthorized: user.workAuthorized || false,
     referredBy: user.referredBy || '',
-// Temp comment
     gender: user.gender || '',
     ethnicity: user.ethnicity || '',
     veteran: user.veteran || '',

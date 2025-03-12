@@ -7,7 +7,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function PageHeaderCandidate(props) {
   const { width } = useWindowDimensions();
 
-    return <MobileHeader {...props} />
+  if ( width < 1280 ) {
   } else {
     return <DesktopHeader {...props} />
   }

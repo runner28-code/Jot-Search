@@ -75,7 +75,6 @@ export default function AdvancedSearch({ disabledTabs }) {
     } else if (tab === 'careers') {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
-// Temp comment
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
     }
@@ -155,7 +154,6 @@ export default function AdvancedSearch({ disabledTabs }) {
     defaultFilterObject: filterTemplate,
     filterObject: filterObject,
     searchTerm: filterObject.title,
-    setSearchTerm: handleSearchChange,
     handleSearchClick: handleSearchClick,
     clearFilters: clearFilters
   };
