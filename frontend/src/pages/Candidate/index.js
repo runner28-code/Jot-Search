@@ -38,7 +38,6 @@ export default function Candidate() {
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;
   const [candidateData, setCandidateData] = useState({});
   const [loading, setLoading] = useState(true);
-// Temp comment
 
   useEffect(async () => {
     const candidate = await getCandidateById(id);
@@ -90,6 +89,7 @@ export default function Candidate() {
     <div className='flex flex-col space-y-16'>
       {/* "My Profile"/"Candidate Profile" Header */}
       <PageHeader
+// Temp comment
         headerText={headerText}
         IconComponent={CandidatesIcon}
         classOverride='h-18 w-18'

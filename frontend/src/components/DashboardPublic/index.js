@@ -48,7 +48,6 @@ export default function DashboardPublic({togglePassState}) {
         </div>
         <div className='ml-12'>
           <button
-// Temp comment
             className='flex items-center flex-row'
             onClick={() => togglePassState()}
           >

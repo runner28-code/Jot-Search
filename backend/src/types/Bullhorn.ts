@@ -32,7 +32,6 @@ export type Company = {
     industryList?: string,
     invoiceFormat?: string,
     name?: string,
-    notes?: string,
     numEmployees?: string,
     numOffices?: string,
     ownerShip?: string,
@@ -49,6 +48,7 @@ export type Company = {
 export type Job = {
     id: string;
     address_address1?: string;
+    address_address2?: string;
     address_city?: string;
     address_state?: string;
     address_zip?: string;
@@ -76,3 +76,4 @@ export type Job = {
     hoursOfOperation?: string;
     hoursPerWeek?: string;
     interviews?: string;
+    isClientEditable?: string;

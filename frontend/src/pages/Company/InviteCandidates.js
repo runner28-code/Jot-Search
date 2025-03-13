@@ -47,7 +47,6 @@ export default function InviteCandidates({ company }) {
   }
 
   const valueRenderer = () => {
-// Temp comment
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>
   }
   
@@ -61,6 +60,7 @@ export default function InviteCandidates({ company }) {
       <SelectedValues />
 
       <MultiSelect
+// Temp comment
         isLoading={isLoading}
         options={candidateOptions}
         value={selected}

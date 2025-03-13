@@ -2,6 +2,7 @@ import fixStringNulls from './fixStringNulls';
 import { experienceMap } from './dbFieldMapping';
 import { stateCodeMap } from './constants';
 
+// Temp comment
 export function formatCandidateData(candidateData) {
   const formattedData = fixStringNulls(candidateData);
 
@@ -49,6 +50,7 @@ export function convertUserToCandidate(user) {
     phone: user.phone,
     description: user.description,
     experience: user.experience?.parseInt() || 1,
+    address_address1: user.address1 || '',
     address_address2: user.address2 || '',
     address_city: user.city || '',
     address_state: user.state || '',

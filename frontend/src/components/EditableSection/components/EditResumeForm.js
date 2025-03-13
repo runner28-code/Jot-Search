@@ -29,4 +29,5 @@ export default function EditResumeForm({ handleChange }) {
         id='resume'
         onChange={handleFileSubmit}
       />
+    </div>
   )

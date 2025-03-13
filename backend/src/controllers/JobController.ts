@@ -45,7 +45,6 @@ import {
   getSavedJobs,
   saveApplication,
   saveJob,
-} from "../utils/MainCrud";
 
 import { BullhornService } from "../services/BullhornService";
 
@@ -101,3 +100,5 @@ export class JobController {
     }
   }
 
+  @Post("/run-job")
+  async runJob(@Body() body: any) {

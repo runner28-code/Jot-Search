@@ -171,7 +171,10 @@ model ClientContact {
   phone              String?
   phone2             String?
   phone3             String?
-  preferredContact   String?
   skills             String?
   source             String?
   createdAt          DateTime  @default(now())
+}
+
+model Company {
+  id            String  @id @default(uuid())

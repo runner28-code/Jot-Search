@@ -76,6 +76,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
     } else {
+      return { filterKey: 'name', filterValue: filterObject.title }
     }
   };
 
@@ -190,7 +191,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
             activeTab={activeTab}
             filterProps={filterProps}
           />
-        </div>
       </div>
       <ResultsHeader
         total={totalResults}

@@ -168,7 +168,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
 
       {isSourceUserTable && <>
         <FormInput
-          type='single-select'
           name='workspace'
           label='Work Setting Preference'
           required={true}

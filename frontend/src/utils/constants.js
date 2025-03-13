@@ -1,5 +1,4 @@
 export const pluralizedTypes = {
-  candidate: 'candidates',
   candidates: 'candidates',
   company: 'companies',
   companies: 'companies',

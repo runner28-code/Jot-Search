@@ -115,3 +115,5 @@ const job_filter_exclude_keys = [
     "dinner",
     "dishwasher",
     "dispatcher",
+    "distribution assistant",
+    "doctor",

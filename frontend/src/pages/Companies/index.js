@@ -9,6 +9,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdSearch as SearchIcon } from 'react-icons/md';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import Dashboard from '../../components/DashboardPublic';
+// Temp comment
 import DashboardCandidate from '../../components/DashboardCandidate';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -21,7 +22,6 @@ export default function Companies() {
   const [toggle, setToggle] = useState(false);
   const sectionStylesLog = 'vw-990:ml-10 vw-990:mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
   const sectionStyles = '';
-// Temp comment
 
   function togglePassState() {
     setToggle(toggle => !toggle);

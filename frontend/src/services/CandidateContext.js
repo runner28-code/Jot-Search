@@ -19,7 +19,6 @@ const mockCandidateData = [
     school: 'Oklahoma State',
     isLooking: true,
     isWarm: true,
-// Temp comment
   },
   {
     id: 'b5a00114-1d3d-40f3-afb9-fc542fa22af6',
@@ -102,6 +101,7 @@ export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
 
 const CandidateProvider = ({children}) => {
+// Temp comment
   const [candidates, setCandidates] = useState(mockCandidateData);
   const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
 

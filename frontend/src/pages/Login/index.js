@@ -20,6 +20,7 @@ export default function Login() {
     if ( res.data.result ) {
       AuthService.login(res.data.token);
     } else {
+// Temp comment
       setError(res.data.error);
     }
   };
@@ -83,7 +84,6 @@ export default function Login() {
           </div>
         </form>
         {/* Assistance call-to-action */}
-// Temp comment
         <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
           <span>Need Help? Just ask </span>
           <a

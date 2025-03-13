@@ -49,7 +49,6 @@ export default function AddCompanyUser() {
             href='https://www.bullhorn.com/'
           />
         </div>
-// Temp comment
       </div>
       <div className={ containerStyles + 'bg-white mt-12'}>
         <h2 className={ titleStyles }>Step 2: Assign Company Contact(s)</h2>

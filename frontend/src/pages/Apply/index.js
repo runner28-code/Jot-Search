@@ -216,6 +216,7 @@ export default function Apply() {
               src={career.company.logo}
               alt={`${career.company.name} logo`}
               className='object-contain w-full h-full'
+            />
             :
             <CareerIcon className='object-contain w-full h-full fill-royalBlue' />
           }

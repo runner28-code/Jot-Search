@@ -164,6 +164,7 @@ export default function RegistrationForm() {
             error={errors.includes('lastName')}
           />
           <FormInput
+            type='text'
             name='email'
             placeholder='Email' 
             error={errors.includes('email')}
@@ -176,7 +177,6 @@ export default function RegistrationForm() {
             onChange={handleChange}
             choices={categories}
             error={errors.includes('expertise')}
-          />
           <FormInput
             type='multi-select'
             name='roles'

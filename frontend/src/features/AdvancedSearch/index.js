@@ -28,7 +28,6 @@ const ITEMS_PER_PAGE = 5;
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'careers', 'companies'],
   company: ['careers', 'candidates' ],
-  candidate: ['careers', 'companies'],
   guest: ['careers', 'companies'],
 }
 
@@ -162,7 +161,6 @@ export default function AdvancedSearch({ disabledTabs }) {
 
   const containerStyles = 'relative w-full max-w-400 bg-grey rounded-2xl border border-disabledGrey pt-28 px-xxl-4 pb-xxl';
   const containerStylesCandidate = 'relative w-full max-w-400 bg-sky-600 text-white rounded-2xl border border-disabledGrey pt-28 px-xxl-4 pb-xxl';
-// Temp comment
   const { width } = useWindowDimensions();
   return (
     <div className={ width >= 990 ? 'w-full pt-14' : 'w-full pt-14 px-8'}>

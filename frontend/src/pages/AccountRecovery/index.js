@@ -88,7 +88,6 @@ export default function AccountRecovery() {
         >
           help@intulsa.com
         </a>
-// Temp comment
       </div>
     </section>
   )

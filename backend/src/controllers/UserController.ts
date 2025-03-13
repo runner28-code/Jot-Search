@@ -53,3 +53,5 @@ export class UserController {
   }
 
   /**
+   * No-auth route for register page
+   * @param user 

@@ -440,7 +440,6 @@ export default function RegistrationFormInternal(loggedIn) {
           />
         </div>
         <hr className={hrStyles} />
-// Temp comment
         <FormInput
           type='single-select'
           name='referredBy'

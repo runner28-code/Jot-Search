@@ -48,34 +48,3 @@ export default function TypeaheadDropdown(props) {
 
   function handleInputChange(event) {
     setInputValue(event.target.value);
-  }
-
-  function handleListClick() {
-    setDropdownOpen(dropdownOpen => !dropdownOpen);
-  }
-
-  function handleKeyDown() {
-    setDropdownOpen(true);
-  }
-
-  return (
-    <div 
-      className='relative w-full'
-      ref={menuRef}  
-    >
-      { renderLabel(name, label, required) }
-      <input 
-        type={type}
-        name={name}
-        id={name}
-        placeholder={placeholder}
-        value={inputValue}
-        className={baseStyles + inputHeight + 'mb-0'}
-        onClick={handleListClick}
-        onChange={handleInputChange}
-        onKeyDown={handleKeyDown}
-        disabled={disabled}
-      />
-      { renderDropdown(dropdownType, dropdownOpen, filteredChoices, currentChosen, handleChoiceClick) }
-    </div>
-  )

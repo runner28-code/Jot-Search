@@ -8,7 +8,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
   const handleContactClick = (contact) => {
     if (selectedContacts.includes(contact)) {
       setSelectedContacts(selectedContacts.filter((c) => c !== contact));
-// Temp comment
     } else {
       setSelectedContacts([...selectedContacts, contact]);
     }
@@ -39,7 +38,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               <input
                 type='checkbox'
                 id={contact.id}
-                name={contact.id}
                 checked={selectedContacts.includes(contact)}
                 className='w-12 h-12 mr-12'
               />

@@ -1,5 +1,4 @@
 import { Datasource } from "@prisma/client";
-import db from "../src/utils/db";
 
 async function main() {
   try {
@@ -51,3 +50,5 @@ async function seedJobs() {
         employmentType: "fulltime",
         onSite: "Hybrid",
         description: "Come join our rockstar team for good money and learning",
+        datasource: Datasource.bullhorn as any,
+        status: "active",
