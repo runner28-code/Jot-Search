@@ -90,5 +90,4 @@ export const skills = [
   'Animation',
   'API',
   'AR/VR',
-  'Art',
   'Art Direction',

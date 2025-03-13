@@ -27,7 +27,6 @@ module.exports = {
           to: {
             transform: 'rotate(0deg)'
           },
-// Temp comment
         },
       },
       boxShadow: {

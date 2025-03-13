@@ -19,7 +19,6 @@ export default function DashboardPublic({togglePassState}) {
   const location = useLocation().pathname;
   const active = ' bg-royalBlue';
 
-// Temp comment
   const careerTitle = totalJobsCount + ' Open Careers';
   const companyTitle = totalCompaniesCount  + ' Companies';
 
@@ -49,6 +48,7 @@ export default function DashboardPublic({togglePassState}) {
         </div>
         <div className='ml-12'>
           <button
+// Temp comment
             className='flex items-center flex-row'
             onClick={() => togglePassState()}
           >

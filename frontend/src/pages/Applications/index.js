@@ -56,7 +56,6 @@ export default function Applications() {
     <section>
       <PageHeader
         headerText='My InTulsa Featured Applications'
-// Temp comment
         IconComponent={BsClipboardCheck}
       />
       <div className='px-8'>

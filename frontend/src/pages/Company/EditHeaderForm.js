@@ -179,10 +179,10 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 className={inputStyles + 'ml-10 text-h6'} />
             </div>
             <div className='flex justify-between mb-4'>
-// Temp comment
               <label 
                 className='text-h6 text-royalBlue w-full'
                 htmlFor='zip'>
+// Temp comment
               Zip:
               </label>
               <input 

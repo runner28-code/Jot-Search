@@ -152,7 +152,6 @@ export default function AdvancedSearch({ disabledTabs }) {
   const filterProps = {
     handleFilterChange: handleFilterChange,
     defaultFilterObject: filterTemplate,
-// Temp comment
     filterObject: filterObject,
     searchTerm: filterObject.title,
     setSearchTerm: handleSearchChange,
@@ -163,6 +162,7 @@ export default function AdvancedSearch({ disabledTabs }) {
 
   const containerStyles = 'relative w-full max-w-400 bg-grey rounded-2xl border border-disabledGrey pt-28 px-xxl-4 pb-xxl';
   const containerStylesCandidate = 'relative w-full max-w-400 bg-sky-600 text-white rounded-2xl border border-disabledGrey pt-28 px-xxl-4 pb-xxl';
+// Temp comment
   const { width } = useWindowDimensions();
   return (
     <div className={ width >= 990 ? 'w-full pt-14' : 'w-full pt-14 px-8'}>

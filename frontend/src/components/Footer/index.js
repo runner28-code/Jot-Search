@@ -55,6 +55,7 @@ export default function Footer() {
             className={socialIconStyleMobile}
           />
         </a>
+// Temp comment
       </div>
       <NavFooterMobile />
       <div

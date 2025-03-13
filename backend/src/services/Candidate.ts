@@ -2,7 +2,6 @@ import db from "../utils/db";
 
 export const saveCandidate = async (
   candidateId: string,
-  companyUserId: string
 ) => {
   try {
     const existing = await db.user.findFirst({
@@ -17,6 +16,7 @@ export const saveCandidate = async (
         },
       },
     });
+
     if (!existing) {
       await db.user.update({
         where: {

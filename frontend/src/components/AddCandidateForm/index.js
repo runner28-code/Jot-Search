@@ -130,7 +130,6 @@ export default function RegistrationForm() {
     });
   }
 
-// Temp comment
   // Alter header and pronoun based on who is registering the new user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
   const pronoun = addType === 'candidate' ? 'you' : 'they';
@@ -165,7 +164,6 @@ export default function RegistrationForm() {
             error={errors.includes('lastName')}
           />
           <FormInput
-            type='text'
             name='email'
             placeholder='Email' 
             error={errors.includes('email')}

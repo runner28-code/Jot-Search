@@ -4,5 +4,4 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DataSource = exports.DATASET_MAIN = exports.DATASET_GETRO = exports.DATASET_BULLHORN = exports.Tables = void 0;
-// Temp comment
 const config_1 = __importDefault(require("../config"));

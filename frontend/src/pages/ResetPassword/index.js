@@ -30,6 +30,7 @@ export default function ResetPassword() {
 
     if( password !== confirmPassword ) {
       setMatch(false);
+    }
 
     if( password === confirmPassword ) {
       setMatch(true);
@@ -45,6 +46,7 @@ export default function ResetPassword() {
         setError(res.data.error);
       }
     }
+// Temp comment
   };
 
   const renderSuccess = () => {

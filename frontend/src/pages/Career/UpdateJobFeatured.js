@@ -24,6 +24,7 @@ export const UpdateJobFeatured = ({ job }) => {
       {isSuccess && <p>Success!</p>}
       
       <div className='flex space-x-16'>
+// Temp comment
         <button
           type="button" 
           name="featured"

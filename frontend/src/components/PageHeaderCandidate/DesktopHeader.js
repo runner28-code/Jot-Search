@@ -9,6 +9,7 @@ export default function DesktopHeader(props) {
     IconComponent,
     classOverride,
     containerClassOverride,
+    colorizeStroke,
     dataSource,
     backButton
   } = props;
@@ -42,6 +43,7 @@ export default function DesktopHeader(props) {
       </div>
       { backButton && (
         <button
+// Temp comment
           className='text-md text-royalBlue underline mt-6'
           onClick={() => navigate(-1)}
         >

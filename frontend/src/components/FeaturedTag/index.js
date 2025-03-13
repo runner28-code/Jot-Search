@@ -8,6 +8,7 @@ export default function FeaturedTag ({ hide, addClass }) {
     return null;
   }
   return (
+    <span className={ allClasses }>
       <img
         className='mr-6'
         src={pyramid}
