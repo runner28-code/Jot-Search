@@ -30,5 +30,4 @@ export default function AccessibleDropdown(props) {
         onChange(name, [...currentChosen, choice]);
       }
     } else { // single select
-      onChange(name, choice);
     }

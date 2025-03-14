@@ -23,7 +23,6 @@ export default function CareerPage() {
 
   const isMobile = width < 768;
   const role = AuthService.getUserRole();
-// Temp comment
   /* STATE */
   const { id } = useParams();
   const [careerData, setCareerData] = useState({});
@@ -78,5 +77,4 @@ export default function CareerPage() {
         role === 'coordinator' &&
         <InviteCandidates job={ careerData } />
       }
-    </div>
   </>)

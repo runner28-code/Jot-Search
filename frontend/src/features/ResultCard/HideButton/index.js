@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { BiHide } from 'react-icons/bi';
 import { toggleHideJob } from '../../../services/API';
 import AuthService from '../../../services/auth';
@@ -8,7 +7,6 @@ export default function HideButton({ type, data, setIsHidden }) {
   if ( role !== 'coordinator' || type !== 'job' ) {
     return null;
   }
-// Temp comment
   
   async function handleClick() {
     setIsHidden(true);

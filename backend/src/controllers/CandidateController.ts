@@ -46,7 +46,6 @@ export class CandidateController {
           candidate: true,
         },
       });
-
       let candidate;
       if (user) {
         const {

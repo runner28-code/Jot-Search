@@ -97,6 +97,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
 
   useEffect(() => {
     const newState = { ...initialFilterState, ...state };
+    if (state) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';

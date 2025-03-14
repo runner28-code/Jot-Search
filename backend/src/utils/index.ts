@@ -11,6 +11,7 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
             SELECT * FROM \`${datset}.${table}\`
             WHERE id=${id}
         `;
+        const options = {
             query: query,
             location: 'US',
         };

@@ -78,6 +78,7 @@ export default function InviteCandidates({ company }) {
             console.log({res})
             if(res.result){
               setSelected([])
+// Temp comment
             }
           }}
           disabled={selected.length === 0 || isSendingCandidates}

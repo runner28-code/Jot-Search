@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
+import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';

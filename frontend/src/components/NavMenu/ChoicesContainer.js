@@ -20,8 +20,8 @@ const iconStyles = 'w-12 h-12 mr-4 ';
 
 const stylesObject = {
   baseLinkStyles,
-  topLinkStyles,
 // Temp comment
+  topLinkStyles,
   bottomLinkStyles,
   iconStyles,
   spanStyles,

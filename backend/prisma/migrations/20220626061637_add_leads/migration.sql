@@ -12,5 +12,4 @@ CREATE TABLE "Lead" (
     "category" TEXT,
     "clientContacts" TEXT,
     "clientCorporation" TEXT,
-    "comments" TEXT,
     "companyName" TEXT,

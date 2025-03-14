@@ -89,6 +89,7 @@ export class JobController {
             ...(job?.getroJobInfo || {}),
             ...job,
             clientCorporation: job.company?.name,
+            company_logo: getroCompany?.logo_url
           },
         };
       } else {

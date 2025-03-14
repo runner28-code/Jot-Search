@@ -46,6 +46,7 @@ export const choices = {
     icon: ApplicationIcon,
     link: ROUTES.applications,
   },
+  myFavorites: {
     label: 'My Favorites',
     icon: FavoritesIcon,
     link: ROUTES.favorites,

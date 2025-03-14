@@ -40,7 +40,6 @@ module.exports = {
         'legal-bg': '#23242D',
         // Neutrals
         powderBlue: '#E4F2FF',
-        lightGrey: '#F6F5F6',
         footerGrey: '#EBEBEB',
         grey300: '#D0D5DD',
         grey700: '#344054',

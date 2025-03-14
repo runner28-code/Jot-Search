@@ -16,7 +16,6 @@ import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageSta
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // Styles
-const heroStyles = 'relative flex flex-col items-center h-135 vw-1024:h-280 vw-1280:h-280 relative z-10 bg-cover bg-center bg-explore-tulsa ';
 
 export default function LandingPage() {
   const { width } = useWindowDimensions();
@@ -40,6 +39,7 @@ export default function LandingPage() {
       { renderExpertiseLinks() }
       { isMobile && <JoinTalentNetwork /> }
       {/* Featured Jobs */}
+      <FeaturedJobs />
       {/* Featured Companies */}
       { isDesktop ? <FeaturedCompanies /> : <FeaturedCompaniesMobile />}
       { isDesktop && <JoinTalentNetwork /> }

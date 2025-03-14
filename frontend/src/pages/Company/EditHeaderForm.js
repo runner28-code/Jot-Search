@@ -7,6 +7,7 @@ import { appendPathToBaseUrl } from '../../services/API';
 
 export default function EditHeaderForm({ candidateData, handleCandidateUpdate, setEditMode, iconStyles }) {
   const [formData, setFormData] = useState({
+// Temp comment
     id: candidateData.id,
     avatar: candidateData.avatar,
     companyName: candidateData.companyName,
@@ -14,6 +15,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     address2: candidateData.address2,
     city: candidateData.city,
     state: candidateData.state,
+    zip: candidateData.zip,
   });
 
   const handleInputChange = async (event) => {
