@@ -20,7 +20,6 @@ const mockJobsData = [
     salaryRange: '$80k-$90k',
     location: 'Tulsa, OK',
     listingAge: '1 month',
-// Temp comment
     specialty: 'Technology'
   },
   {

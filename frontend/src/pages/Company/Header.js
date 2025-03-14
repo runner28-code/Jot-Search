@@ -29,7 +29,6 @@ function HeaderContent({ companyData }) {
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-6'>
-// Temp comment
         <div className='flex flex-wrap items-center mb-4'>
           { renderCompanyLogo(companyData.logo, companyData.name) }
           <FillerIcon />
@@ -51,7 +50,6 @@ function HeaderContent({ companyData }) {
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <CareerIcon
               className={headerIconStyles}
-            />
             <OpenCareers
               styles={headerRowTextStyles}
               companyId={companyData.id}

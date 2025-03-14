@@ -29,6 +29,7 @@ export default function InviteCandidates({ company }) {
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
+  }
 
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
@@ -67,7 +68,6 @@ export default function InviteCandidates({ company }) {
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}
-      />
       <div className='flex space-x-8'>
         <button 
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'

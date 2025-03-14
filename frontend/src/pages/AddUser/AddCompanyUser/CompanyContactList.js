@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany }) => {
   const [selectedContacts, setSelectedContacts] = useState([]);
@@ -51,7 +50,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           className='bg-royalBlue text-white text-lg px-xxl py-xs rounded-xl mt-20'
           onClick={handleSyncClick}
         >
-// Temp comment
           Synch
         </button>
       </>)}

@@ -241,7 +241,6 @@ export default function RegistrationForm(loggedIn) {
             type='text'
             name='address1'
             label='Address'
-            required={true}
             value={formObj.address1}
             onChange={handleChange}
             error={errors.includes('address1')}

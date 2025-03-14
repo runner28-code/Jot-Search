@@ -187,7 +187,6 @@ export default function Footer() {
             rel='noreferrer'
           >
               Privacy Policy
-          </a>
           <span> | </span>
           <a
             href={ROUTES.termsOfService}

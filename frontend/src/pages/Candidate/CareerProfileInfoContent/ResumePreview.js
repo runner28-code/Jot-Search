@@ -7,6 +7,7 @@ import {
 } from 'react-icons/fi';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
+// Temp comment
 const ResumePreview = ({ resumeUrl }) => {
   const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
@@ -44,7 +45,6 @@ const ResumePreview = ({ resumeUrl }) => {
             <li className="next">
               <button
                 disabled={nextButtonDisabled}
-// Temp comment
                 onClick={() => setPage(page + 1)}
               >
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />

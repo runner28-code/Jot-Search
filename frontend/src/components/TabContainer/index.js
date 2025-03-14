@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 
 export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLocked, absolute = true }) {
 
@@ -13,5 +12,6 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
           setActiveTab={setActiveTab}
           isLocked={isLocked}
         />
+      })}
     </div>
   )

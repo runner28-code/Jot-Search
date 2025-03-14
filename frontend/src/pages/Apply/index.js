@@ -98,7 +98,6 @@ export default function Apply() {
   useEffect(async () => {
     if ( submissionObject.loading ) {
       const response = await submitData();
-      if ( response.result === true ) {
         setSubmissionObject({
           loading: false,
           success: true,
@@ -389,6 +388,7 @@ export default function Apply() {
 
             <label
               htmlFor='newResume'
+              className={'cursor-pointer flex flex-col rounded-lg items-center justify-center p-4 w-100 h-100 bg-white! border-dashed border-grey300 border-1.5'}
             >
               <input
                 type='file'

@@ -42,7 +42,6 @@ export const defaultState = {
 }
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
-  function handleChange(e) {
     setUseExistingResume(e.target.checked);
   }
   return (
@@ -51,6 +50,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
       className='mt-4 mb-5 flex items-center'
     >
       <input
+        type='checkbox'
         name='useExistingResume'
         className='h-8 w-8 ml-2'
         checked={useExistingResume}

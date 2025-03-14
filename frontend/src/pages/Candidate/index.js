@@ -142,11 +142,9 @@ export default function Candidate() {
           candidateData={candidateData}
           handleCandidateUpdate={handleCandidateUpdate} />
         {/* Password Reset (Candidate and Coordinator) */}
-// Temp comment
         <PasswordReset
           role={role}
           candidateData={candidateData}
-        />
       </div>
     </div>
   )

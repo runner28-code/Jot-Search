@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import MobileHeader from './MobileHeader';
 import DesktopHeader from './DesktopHeader';
@@ -10,6 +11,5 @@ export default function PageHeader(props) {
   if ( width < 1280 ) {
     return <MobileHeader {...props} />
   } else {
-// Temp comment
     return <DesktopHeader {...props} />
   }

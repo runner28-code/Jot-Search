@@ -24,11 +24,13 @@ export default function DetailsHeader({ type, source }) {
   if ( type === 'company') {
     headerText = 'Company Profile';
   }else { 
+// Temp comment
     headerText = `${titleCasedType} Details`
   }
   return (<>
     <div className='flex gap-[12px] items-center'>
       <Icon className='h-18 w-auto fill-royalBlue' />
+      <h1 className='text-lg vw-480:text-h2 text-royalBlue font-spaceGrotesk font-bold flex items-center'>
         {headerText}
         { renderSourceIdentifier(source) }
       </h1>

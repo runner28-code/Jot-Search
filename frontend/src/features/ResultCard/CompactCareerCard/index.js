@@ -27,6 +27,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
         {/* Card Image */}
         <div className='flex flex-col space-y-4 h-full'>
           <div className='h-48 w-48 p-4 mr-18 flex justify-center items-center border border-solid border-smokeGray'>
+            { renderCardImage(data) }
           </div>
           <p className='text-sm text-zinc-700 font-roboto mt-8'>{ data.company?.name }</p>
 
@@ -48,6 +49,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
                 <p className='text-midGrey'>Posting Age</p>
                 <p className='text-midGrey text-xs'>{postingAge}</p>
               </div>
+// Temp comment
             }
           </div>
         </div>

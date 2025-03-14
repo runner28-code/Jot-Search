@@ -31,6 +31,7 @@ export const UpdateJobFeatured = ({ job }) => {
           role="switch"
           aria-checked={toggled}
           onClick={async() => {
+// Temp comment
             const { result } = await saveJob({ featured: !toggled, id: job.id })
 
             // TODO: Replace with react-query refetch
