@@ -56,7 +56,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       return setFormData({ ...formData, [name]: newPath });
     }
     setFormData({ ...formData, [name]: value });
-  }
 
   const handleCancel = () => {
     setEditMode(false);
@@ -157,6 +156,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       <FormInput
         type='single-select'
         name='experience'
+        label='Years of Experience'
         required={true}
         placeholder='Select'
         value={formData.experience}

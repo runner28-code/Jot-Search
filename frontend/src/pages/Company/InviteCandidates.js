@@ -29,7 +29,6 @@ export default function InviteCandidates({ company }) {
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
-  }
 
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
@@ -78,7 +77,6 @@ export default function InviteCandidates({ company }) {
             console.log({res})
             if(res.result){
               setSelected([])
-// Temp comment
             }
           }}
           disabled={selected.length === 0 || isSendingCandidates}

@@ -29,6 +29,7 @@ function HeaderContent({ companyData }) {
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-6'>
+// Temp comment
         <div className='flex flex-wrap items-center mb-4'>
           { renderCompanyLogo(companyData.logo, companyData.name) }
           <FillerIcon />

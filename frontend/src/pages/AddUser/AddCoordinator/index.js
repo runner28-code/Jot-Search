@@ -77,6 +77,7 @@ export default function AddCoordinator() {
     const errors = validateObject(formObject);
     if (Object.keys(errors).length > 0) {
       setSubmissionObject({ ...submissionObject, errors: errors });
+      return;
     } else {
       setSubmissionObject({ ...submissionObject, loading: true });
     }

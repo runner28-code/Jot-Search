@@ -118,6 +118,7 @@ export default function RegistrationForm() {
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
+      loading: true,
       success: false,
     });
   }

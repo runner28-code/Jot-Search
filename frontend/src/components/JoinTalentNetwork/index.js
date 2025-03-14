@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+export default function JoinTalentNetwork() {
 
   const { width } = useWindowDimensions();
 
@@ -20,6 +21,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
             </p>
             <Link
               to={ROUTES.signup}
+// Temp comment
               className='flex items-center justify-center h-28 w-112 bg-buttonLightBlue mt-12 px-18 rounded-lg'
             >
               <span className='text-softWhite text-ml'>Create an account</span>

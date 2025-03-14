@@ -347,7 +347,6 @@ export default function RegistrationForm(loggedIn) {
                 isActive={true}
                 handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}
               />
-// Temp comment
             ) : <p className='text-midGrey text-md'>No skills selected</p>}
           </div>
         </div>

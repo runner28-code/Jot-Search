@@ -10,7 +10,6 @@ export type Company = {
     billingAddress_address1?: string,
     billingAddress_address2?: string,
     billingAddress_city?: string,
-    billingAddress_state?: string,
     billingAddress_zip?: string,
     billingContact?: string,
     billingFrequency?: string,
@@ -56,6 +55,7 @@ export type Job = {
     address_zip?: string;
     address_country_id?: string;
     benefits?: string;
+    billRateCategoryID?: string;
     bonusPackage?: string;
     certificationList?: string;
     clientBillRate?: string;
@@ -77,3 +77,4 @@ export type Job = {
     hoursOfOperation?: string;
     hoursPerWeek?: string;
     interviews?: string;
+    isClientEditable?: string;

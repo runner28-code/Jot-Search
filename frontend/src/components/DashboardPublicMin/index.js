@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -40,7 +41,6 @@ export default function DashboardPublicMin({type}) {
             className='text-white underline text-lg'
             onClick={() => navigate(-1)}
           >
-          Back
           </button>
         </div>
         <div className='flex items-center basis-11/12 justify-center'>

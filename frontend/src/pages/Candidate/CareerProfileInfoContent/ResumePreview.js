@@ -22,6 +22,7 @@ const ResumePreview = ({ resumeUrl }) => {
   const prevButtonDisabled = page === 1;
   const nextButtonDisabled = page === pdfDocument?.numPages;
 
+  return (
     <div className='border border-grey300 border-2 rounded-lg'>
       {!pdfDocument && <LoadingSpinner />}
       <canvas
@@ -43,6 +44,7 @@ const ResumePreview = ({ resumeUrl }) => {
             <li className="next">
               <button
                 disabled={nextButtonDisabled}
+// Temp comment
                 onClick={() => setPage(page + 1)}
               >
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
