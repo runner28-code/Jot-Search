@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import ChoicesContainer from './ChoicesContainer';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
-// Temp comment
 
 const WIDE_MENU_ROLES = ['candidate', 'company'];
 const WIDE_MENU_WIDTH = 'w-110';

@@ -34,12 +34,12 @@ export default function LandingPage() {
           { renderColorShapes() }
           { renderJoinTalent() }
         </div>
+        { renderSearch() }
       </section>
       {/* Browse Opportunities by Expertise */}
       { renderExpertiseLinks() }
       { isMobile && <JoinTalentNetwork /> }
       {/* Featured Jobs */}
-      <FeaturedJobs />
       {/* Featured Companies */}
       { isDesktop ? <FeaturedCompanies /> : <FeaturedCompaniesMobile />}
       { isDesktop && <JoinTalentNetwork /> }

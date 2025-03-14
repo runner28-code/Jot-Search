@@ -38,7 +38,6 @@ export default function Stats({ userType }) {
   useEffect(async() => {
     const duration = getDuration(timeframe)
     if (userType === 'company') {
-      const result = await getCompanyQuickStats(duration);
       setStats({
         'Active Careers Posts': { ...result.activeCareersPosts },
         'Recommended Candidates': { ...result.recommendedCandidates },
@@ -76,6 +75,7 @@ export default function Stats({ userType }) {
         </div>
       </div>
       <div className='flex flex-wrap'>
+        {Object.entries(stats).map(([stat, value]) => {
           return <StatCard
             stat={stat}
             value={value}

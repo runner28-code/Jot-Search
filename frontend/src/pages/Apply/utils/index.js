@@ -1,3 +1,4 @@
+// Temp comment
 import { updateUser, uploadFile } from '../../../services/API';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../../utils/dbFieldMapping';
 import { MdCheckCircle } from 'react-icons/md';
@@ -51,7 +52,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
       className='mt-4 mb-5 flex items-center'
     >
       <input
-// Temp comment
         type='checkbox'
         name='useExistingResume'
         className='h-8 w-8 ml-2'

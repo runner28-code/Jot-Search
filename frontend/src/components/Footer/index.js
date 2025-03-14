@@ -176,7 +176,6 @@ export default function Footer() {
         </div>
       </div>
       {/* Copyright / Privacy Policy / TOS */}
-// Temp comment
       <div className='flex justify-center items-center bg-legal-bg h-28'>
         {/* TODO: Change anchor tag links to correct Privacy Policy and TOS links */}
         <div className='text-grey w-1/2 text-xs text-center'>

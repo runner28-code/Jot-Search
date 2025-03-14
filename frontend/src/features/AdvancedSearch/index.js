@@ -28,6 +28,7 @@ const ITEMS_PER_PAGE = 5;
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'careers', 'companies'],
   company: ['careers', 'candidates' ],
+  candidate: ['careers', 'companies'],
   guest: ['careers', 'companies'],
 }
 
@@ -165,6 +166,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   return (
     <div className={ width >= 990 ? 'w-full pt-14' : 'w-full pt-14 px-8'}>
       <div className={userType === 'candidate' && location.pathname === '/careers' ? containerStylesCandidate : containerStyles }>
+// Temp comment
         <TabContainer
           tabChoices={availableTabChoicesByUserType[userType]}
           activeTab={activeTab}

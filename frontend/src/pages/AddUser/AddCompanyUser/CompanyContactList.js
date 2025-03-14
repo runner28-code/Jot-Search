@@ -17,7 +17,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
     console.log('syncing contacts', selectedContacts);
   }
 
-  return (
     <div className='flex flex-col items-start pt-8'>
       {/* Loading */}
       {isLoadingContacts && <LoadingSpinner />}
@@ -38,6 +37,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               <input
                 type='checkbox'
                 id={contact.id}
+                name={contact.id}
                 checked={selectedContacts.includes(contact)}
                 className='w-12 h-12 mr-12'
               />

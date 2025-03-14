@@ -34,6 +34,7 @@ export default function Candidate() {
   if (role === 'candidate' && !isProfilePage) {
     return <Navigate to='/' />
   }
+// Temp comment
 
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;
   const [candidateData, setCandidateData] = useState({});
@@ -89,7 +90,6 @@ export default function Candidate() {
     <div className='flex flex-col space-y-16'>
       {/* "My Profile"/"Candidate Profile" Header */}
       <PageHeader
-// Temp comment
         headerText={headerText}
         IconComponent={CandidatesIcon}
         classOverride='h-18 w-18'

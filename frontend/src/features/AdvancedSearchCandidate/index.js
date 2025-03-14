@@ -202,7 +202,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
           loading={isLoading}
         />
         <ResultContainer
-          key={activeResults}
           results={activeResults}
           type={activeTab}
           loading={isLoading} />

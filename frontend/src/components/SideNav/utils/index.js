@@ -15,6 +15,7 @@ import {
 } from 'react-icons/ri';
 import * as ROUTES from '../../../routes';
 
+export const choices = {
   dashboard: {
     label: 'My Dashboard',
     icon: DashboardIcon,
@@ -45,7 +46,6 @@ import * as ROUTES from '../../../routes';
     icon: ApplicationIcon,
     link: ROUTES.applications,
   },
-  myFavorites: {
     label: 'My Favorites',
     icon: FavoritesIcon,
     link: ROUTES.favorites,

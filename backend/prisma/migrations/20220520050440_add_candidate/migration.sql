@@ -18,3 +18,4 @@ CREATE TABLE "Candidate" (
     "dayRate" TEXT,
     "dayRateLow" TEXT,
     "degreeList" TEXT,
+    "description" TEXT,

@@ -1,5 +1,4 @@
 import decode from 'jwt-decode';
-import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
 
 class AuthService {
   getProfile() {
@@ -18,7 +17,6 @@ class AuthService {
   }
 
   loggedIn() {
-// Temp comment
     // Checks if there is a saved token and it's still valid
     const token = this.getToken();
     return !!token && !this.isTokenExpired(token); // handwaiving here

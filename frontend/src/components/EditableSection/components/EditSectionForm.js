@@ -5,7 +5,6 @@ import EditSkillsForm from './EditSkillsForm';
 import EditExpertiseForm from './EditExpertiseForm';
 import EditResumeForm from './EditResumeForm';
 import Property from './Property';
-
 // const SECONDARY_FORM_TYPES = ['comments', 'primarySkills', 'expertise', 'resume'];
 
 export default function EditSectionForm({ contentObject, handlePropertyChange }) {
@@ -37,6 +36,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   return (
     <div className='flex flex-col justify-items-between w-140'>
       { Object.entries(contentObject).map(([key, value]) => {
+        const capitalizedKey = startCase(key);
         const labelString = `${capitalizedKey}:`;
         if ( key === 'email' ) {
           return <Property

@@ -177,6 +177,7 @@ export default function RegistrationForm() {
             onChange={handleChange}
             choices={categories}
             error={errors.includes('expertise')}
+          />
           <FormInput
             type='multi-select'
             name='roles'
@@ -215,6 +216,7 @@ export default function RegistrationForm() {
             value={formObj.experience}
             onChange={handleChange}
             choiceObject={experienceMap}
+// Temp comment
             error={errors.includes('experience')}
           />
           <FormInput

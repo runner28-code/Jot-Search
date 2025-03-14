@@ -45,6 +45,7 @@ import {
   getSavedJobs,
   saveApplication,
   saveJob,
+} from "../utils/MainCrud";
 
 import { BullhornService } from "../services/BullhornService";
 
@@ -88,7 +89,6 @@ export class JobController {
             ...(job?.getroJobInfo || {}),
             ...job,
             clientCorporation: job.company?.name,
-            company_logo: getroCompany?.logo_url
           },
         };
       } else {

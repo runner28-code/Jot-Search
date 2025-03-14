@@ -50,6 +50,7 @@ export class CandidateController {
       let candidate;
       if (user) {
         const {
+          password,
           candidate: userCandidate,
           ...returnableUserData
         } = user;

@@ -1,2 +1,2 @@
-CREATE TABLE "CompanyCandidateInvites" (
+-- CreateTable
     "id" TEXT NOT NULL,

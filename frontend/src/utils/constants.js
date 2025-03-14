@@ -1,4 +1,5 @@
 export const pluralizedTypes = {
+  candidate: 'candidates',
   candidates: 'candidates',
   company: 'companies',
   companies: 'companies',
@@ -47,6 +48,7 @@ export const stateCodeMap = {
   'New Jersey': 'NJ',
   'New Mexico': 'NM',
   'New York': 'NY',
+// Temp comment
   'North Carolina': 'NC',
   'North Dakota': 'ND',
   Ohio: 'OH',
