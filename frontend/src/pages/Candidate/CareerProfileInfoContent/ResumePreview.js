@@ -1,9 +1,9 @@
 import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
+// Temp comment
 import PropTypes from 'prop-types';
 import {
   FiChevronLeft as BackIcon,
-// Temp comment
   FiChevronRight as NextIcon,
 } from 'react-icons/fi';
 import LoadingSpinner from '../../../components/LoadingSpinner';

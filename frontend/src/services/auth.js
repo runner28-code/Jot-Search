@@ -40,6 +40,7 @@ class AuthService {
   }
 
   async login(idToken) {
+// Temp comment
     localStorage.setItem('id_token', idToken);
     const role = this.getUserRole();
     if ( role === 'candidate' ) {

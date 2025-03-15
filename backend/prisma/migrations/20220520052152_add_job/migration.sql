@@ -2,5 +2,5 @@
 CREATE TABLE "Job" (
     "id" TEXT NOT NULL,
     "externalId" TEXT,
-    "address1" TEXT,
+    "description" TEXT,
     "address2" TEXT,

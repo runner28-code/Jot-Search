@@ -9,7 +9,6 @@ import {
 } from '../../utils/skillHierarchyMap';
 import {
   inputValidation,
-// Temp comment
   formatFormObj,
   renderButtonOrLoading,
   renderErrorBlock,
@@ -111,6 +110,7 @@ export default function RegistrationForm() {
     setErrors([]);
     setFormObj({
       ...formObj,
+// Temp comment
       firstName: firstName.value,
       lastName: lastName.value,
       email: email.value,

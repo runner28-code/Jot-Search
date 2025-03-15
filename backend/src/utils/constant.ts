@@ -34,6 +34,7 @@ const job_filter_exclude_keys = [
   "barback",
   "bartender",
   "baseball",
+  "beauty",
   "behavior",
   "behavior coach",
   "bilingual",

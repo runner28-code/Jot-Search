@@ -152,7 +152,6 @@ export default function Apply() {
     setApplicationObject({
       ...applicationObject,
       [name]: value,
-// Temp comment
     });
   }
 
@@ -185,6 +184,7 @@ export default function Apply() {
       ...applicationObject,
       referredBy: value
     })
+// Temp comment
     setReferralChoice(false);
   }
 

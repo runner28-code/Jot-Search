@@ -63,6 +63,7 @@ export default function InviteCandidates({ company }) {
         isLoading={isLoading}
         options={candidateOptions}
         value={selected}
+        onChange={setSelected}
         labelledBy="Select"
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}

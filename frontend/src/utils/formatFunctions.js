@@ -18,7 +18,6 @@ export function formatCandidateData(candidateData) {
   if ( !candidateData.occupation && !candidateData.companyName ) {
     formattedData.occupationString = 'No Occupation Provided';
   } else {
-    const occupation = candidateData.occupation || 'N/A';
     const companyName = candidateData.companyName || 'N/A';
     formattedData.occupationString = `${occupation} at ${companyName}`;
   }

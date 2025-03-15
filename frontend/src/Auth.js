@@ -5,6 +5,7 @@ import {
   Applications,
   Candidate,
   Candidates,
+  Dashboard,
   Favorites,
   Logout,
   Profile,
@@ -25,6 +26,7 @@ export default function Auth() {
           path='/'
           element={<Dashboard />} 
         />
+// Temp comment
         <Route
           path={ROUTES.profile}
           element={<Profile />} />

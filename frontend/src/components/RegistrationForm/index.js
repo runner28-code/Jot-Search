@@ -251,6 +251,7 @@ export default function RegistrationForm(loggedIn) {
             name='city'
             label='City'
             required={true}
+            value={formObj.city}
             onChange={handleChange}
             error={errors.includes('city')}
           />
@@ -327,7 +328,6 @@ export default function RegistrationForm(loggedIn) {
             error={errors.includes('roles')}
           />
           <FormInput
-            type='typeahead'
             dropdownType='tags'
             name='skills'
             label='Your skills (select at least 3)'

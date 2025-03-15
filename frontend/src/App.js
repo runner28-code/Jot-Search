@@ -5,7 +5,6 @@ import {
   LandingPage,
   SignUp,
   Login,
-  Career,
   Careers,
   Company,
   Companies,
@@ -19,6 +18,7 @@ import AuthService from './services/auth';
 function App() {
   let userRole = AuthService.getUserRole();
 
+  return (
     <div className="App overflow-hidden">
       <NavBar />
       <main className='bg-lightGrey pt-30 vw-1280:pt-44 vw-1280:flex'>

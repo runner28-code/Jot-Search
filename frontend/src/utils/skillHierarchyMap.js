@@ -18,6 +18,7 @@ export const roles = {
   'Marketing': [
     'Brand & Creative Marketing',
     'Content Marketing & Design',
+    'Digital Marketing',
     'Generalist Marketing',
     'Graphic and Motion Design',
     'PR & Communications',
@@ -29,7 +30,6 @@ export const roles = {
     'Operations Generalist',
     'Project and Program Management',
     'Administration',
-    'Executive Assistant',
     'Recruiting',
     'People Operations',
     'Human Resources',

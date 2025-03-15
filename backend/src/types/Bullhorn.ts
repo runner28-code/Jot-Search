@@ -25,6 +25,7 @@ export type Company = {
     customText1_20?: string,
     customTextBlock1_5?: string,
     dateFounded?: string,
+    dateLastModified?: string,
     externalID?: string,
     feeArrangement?: string,
     funding?: string,
@@ -40,7 +41,6 @@ export type Company = {
     status?: string,
     taxRate?: string,
     tickerSymbol?: string,
-    workWeekStart?: string,
     address_country_id?: string,
     datedAdded?: string,
 };

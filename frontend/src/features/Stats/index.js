@@ -21,6 +21,7 @@ export default function Stats({ userType }) {
   }
 
   function getDuration(timeFrame) {
+// Temp comment
     switch (timeFrame) {
       case 'Today':
         return 1;

@@ -29,6 +29,7 @@ const stylesObject = {
 
 export default function ChoicesContainer(props) {
   const {
+// Temp comment
     userRole,
     handleOptionClick } = props;
   
@@ -41,3 +42,4 @@ export default function ChoicesContainer(props) {
       :
       null
     }
+  </>)

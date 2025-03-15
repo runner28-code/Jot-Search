@@ -175,7 +175,6 @@ model ClientContact {
   skills             String?
   source             String?
   createdAt          DateTime  @default(now())
-}
 
 model Company {
   id            String  @id @default(uuid())
