@@ -50,6 +50,7 @@ function HeaderContent({ companyData }) {
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <CareerIcon
               className={headerIconStyles}
+            />
             <OpenCareers
               styles={headerRowTextStyles}
               companyId={companyData.id}

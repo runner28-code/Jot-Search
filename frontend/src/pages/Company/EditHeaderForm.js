@@ -160,6 +160,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 type='text'
                 onChange={handleInputChange}
                 id='city'
+                name='city'
                 value={formData.city}
                 className={inputStyles + 'ml-10 text-h6'} />
             </div>
@@ -233,6 +234,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className='w-24 h-24 cursor-pointer fill-rose-500'
             onClick={handleCancel} />
           <MdCheckCircle 
+// Temp comment
             className='w-24 h-24 cursor-pointer fill-emerald-500'
             onClick={handleSubmit} />
         </div>

@@ -63,11 +63,11 @@ export default function InviteCandidates({ company }) {
         isLoading={isLoading}
         options={candidateOptions}
         value={selected}
-        onChange={setSelected}
         labelledBy="Select"
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}
+      />
       <div className='flex space-x-8'>
         <button 
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'

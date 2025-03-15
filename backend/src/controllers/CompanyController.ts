@@ -86,3 +86,6 @@ export class CompanyController {
       return {
         result: false,
         error: "You should be a coordinator for sending candidates to employers",
+      };
+    }
+    try {

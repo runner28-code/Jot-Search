@@ -2,7 +2,6 @@ export type User = {
   id?: string;
   externalId?: string;
   firstname?: string;
-  lastname?: string;
   gender?: string;
   email: string;
   password?: string;
@@ -15,6 +14,7 @@ export type User = {
   resume?: string;
   avatar?: string;
   linkedin?: string;
+  skills?: string;
   category?: string;
   categoryId?: string | number;
   seniority?: string;
@@ -22,3 +22,4 @@ export type User = {
   referredBy?: string;
   roles?: string;
 
+  description?: string;

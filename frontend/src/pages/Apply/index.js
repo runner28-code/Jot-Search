@@ -98,6 +98,7 @@ export default function Apply() {
   useEffect(async () => {
     if ( submissionObject.loading ) {
       const response = await submitData();
+      if ( response.result === true ) {
         setSubmissionObject({
           loading: false,
           success: true,
@@ -151,6 +152,7 @@ export default function Apply() {
     setApplicationObject({
       ...applicationObject,
       [name]: value,
+// Temp comment
     });
   }
 

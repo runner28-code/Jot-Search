@@ -81,3 +81,4 @@ export class GetroService {
                 await sleep(2000); // https://developers.getro.com/#rate-limit
 
                 if (res.status === 200) {
+                    const { items, meta: { total: total } } = res.data;

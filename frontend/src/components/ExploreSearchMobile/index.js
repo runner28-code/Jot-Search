@@ -7,7 +7,6 @@ import * as ROUTES from '../../routes';
 
 export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
-  const [filterState, setFilterState] = useState({
     title: '',
     'On-Site/Remote': 'Any Work Setting',
     expertise: 'Any Expertise',

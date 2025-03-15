@@ -16,6 +16,7 @@ import { IncomingForm } from "formidable"
 dotenv.config();
 
 let s3: any;
+try {
   s3 = new AWS.S3({
   accessKeyId: process.env.S3_ACCESS_KEY,
   secretAccessKey: process.env.S3_SECRET_KEY,
@@ -31,3 +32,4 @@ const uploadToS3 = async(req: any, res: any) => {
   console.log("uploading to s3");
   if(!process.env.S3_BUCKET) {
     res.status(500).send("S3_BUCKET not set")
+    return

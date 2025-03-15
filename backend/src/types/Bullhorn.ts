@@ -6,6 +6,7 @@ export type Company = {
     address_state?: string,
     address_zip?: string,
     annualRevenue?: string,
+    billingAddress_address1?: string,
     billingAddress_address2?: string,
     billingAddress_city?: string,
     billingAddress_state?: string,
@@ -24,7 +25,6 @@ export type Company = {
     customText1_20?: string,
     customTextBlock1_5?: string,
     dateFounded?: string,
-    dateLastModified?: string,
     externalID?: string,
     feeArrangement?: string,
     funding?: string,
@@ -78,3 +78,5 @@ export type Job = {
     interviews?: string;
     isClientEditable?: string;
     isDeleted?: string;
+    isInterviewRequired?: string;
+    isJobcastPublished?: string;

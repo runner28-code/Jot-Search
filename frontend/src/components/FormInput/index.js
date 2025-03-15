@@ -10,6 +10,7 @@ const regularBorder = 'border-midGrey ';
 const errorBorder = 'border-rose-500 ';
 const dropdownStyles = 'bg-lightGrey border border-midGrey border-solid rounded-b-lg overflow-y-auto z-10 ';
 const dropdownItemStyles = 'text-textBlack text-md pl-8 py-7 hover:bg-royalBlue hover:text-white ';
+export default function FormInput(props) {
   const {
     type,
     dropdownType,
@@ -36,7 +37,6 @@ const dropdownItemStyles = 'text-textBlack text-md pl-8 py-7 hover:bg-royalBlue 
     listStyles: dropdownStyles,
     listItemStyles: dropdownItemStyles
   };
-  switch (type) {
     case 'file':
       return <FileInput
         type={type}

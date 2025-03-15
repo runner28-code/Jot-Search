@@ -15,7 +15,6 @@ API.interceptors.request.use(
     const token = localStorage.getItem('id_token');
     if (token) {
       config.headers['Authorization'] = 'Bearer ' + token;
-// Temp comment
     }
     return config;
   },
@@ -83,7 +82,6 @@ export async function updateCandidate(newData, id) {
 }
 
 export async function getSavedCandidates() {
-  const { data } = await API.get(ROUTES.APIsavedCandidates);
   return normalizeData(data.candidates);
 }
 

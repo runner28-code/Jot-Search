@@ -18,3 +18,4 @@ export type Company = {
     status?: string;
     topics?: string;
     twitter_url?: string;
+    url?: string;

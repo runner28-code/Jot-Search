@@ -2,6 +2,7 @@ import { Dictionary } from "typed-two-way-map";
 import config from "../config";
 import {
   Job as BullhornJob,
+  Company as BullhornCompany,
 } from "../types/Bullhorn";
 import { Job as GetroJob, Company as GetroCompany } from "../types/Getro";
 import { Category } from "./Category";
@@ -31,3 +32,4 @@ export const DATASET_MAIN = config.mainDatasetID || "";
 export enum DataSource {
   BULLHORN = "bullhorn",
   GETRO = "getro",
+  UNKNOWN = "unknown",

@@ -9,6 +9,7 @@ export default function Dashboard() {
   let userType = AuthService.getUserRole();
 
   return (
+    <main>
       <DashboardType userType={userType} />
     </main>
   )

@@ -47,3 +47,5 @@ input[type=checkbox] {
 
 /* Tailwind Component Classes */
 @layer components {
+  .Mobile-HeadersMobile-heading-xxlarge {
+    font-family: SpaceGrotesk;

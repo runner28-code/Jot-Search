@@ -18,7 +18,6 @@ export const roles = {
   'Marketing': [
     'Brand & Creative Marketing',
     'Content Marketing & Design',
-    'Digital Marketing',
     'Generalist Marketing',
     'Graphic and Motion Design',
     'PR & Communications',
@@ -53,7 +52,6 @@ export const roles = {
     'Game Engineer',
     'QA Engineer',
     'Data Analysis',
-// Temp comment
     'Systems Engineer',
     'Mobile Engineers',
     'Automation Engineer',
@@ -96,3 +94,6 @@ export const skills = [
   'Asset Management',
   'Associates Degree',
   'ATS',
+  'Auditing',
+  'Automation',
+  'AWS',

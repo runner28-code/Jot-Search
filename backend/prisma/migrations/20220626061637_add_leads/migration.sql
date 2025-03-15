@@ -14,3 +14,4 @@ CREATE TABLE "Lead" (
     "clientCorporation" TEXT,
     "comments" TEXT,
     "companyName" TEXT,
+    "companyURL" TEXT,

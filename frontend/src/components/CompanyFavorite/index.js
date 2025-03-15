@@ -10,7 +10,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function CareerFavorite () {
 
   const { user_id } = AuthService.getProfile();
-  const { savedCompanies, isLoading } = useGetSavedCompanies({userId: user_id});
   const { width } = useWindowDimensions();
   return(
     <div className='flex items-center flex-col justify-center bg-white rounded-lg py-24 px-12 vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
@@ -41,6 +40,7 @@ export default function CareerFavorite () {
           <h3 className='text-md text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Find Companies to Favorite</h3>
           <Link
             to={ROUTES.careers}
+            className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
           </Link>
         </div>

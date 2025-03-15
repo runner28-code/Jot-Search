@@ -151,3 +151,8 @@ export const update = async (parent_id: string, role: string, data: any) => {
       await addUserHistoryEntries({
         updatedUser: user,
         existingUser: existing,
+      });
+    } catch (err) {
+      console.log("could not add user history:", user);
+      console.log(err);
+    }

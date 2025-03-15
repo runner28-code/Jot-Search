@@ -74,7 +74,6 @@ export default function GlobalSearch({ placeholder }) {
     setResults({ ...results, forceHidden: true });
   };
 
-  useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
   

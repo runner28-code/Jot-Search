@@ -10,7 +10,6 @@ export type Company = {
   instagram_url?: string;
   jobs_count?: string;
   linkedin_url?: string;
-  logo_url?: string;
   name?: string;
   ocp_search_status?: string;
   scraping_enabled?: string;
@@ -23,3 +22,4 @@ export type Company = {
   managers?: string;
   network_id?: string;
   locations?: string;
+  collections?: string;

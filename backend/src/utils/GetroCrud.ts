@@ -28,3 +28,4 @@ export const saveCompanies = async (companies: any[]) => {
 								data: companyData,
 							});
 			
+							console.log(`Saved company with ID = ${company.id} successfully`);

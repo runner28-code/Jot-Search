@@ -1,4 +1,3 @@
-// Temp comment
 import { Navigate } from 'react-router-dom';
 import headerIcon from '../../assets/icons/user-folder.png';
 import PageHeader from '../../components/PageHeader';
@@ -7,7 +6,6 @@ import AuthService from '../../services/auth';
 
 export default function Candidates() {
   // Redirect if userRole is 'candidate', candidates should not be able to see other candidates
-  const { role } = AuthService.getProfile();
   if (role === 'candidate') {
     return <Navigate to='/' />
   }

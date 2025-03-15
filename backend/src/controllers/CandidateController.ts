@@ -50,12 +50,12 @@ export class CandidateController {
       let candidate;
       if (user) {
         const {
+          password,
           candidate: userCandidate,
           ...returnableUserData
         } = user;
         candidate = {
           ...(userCandidate || {}),
-          ...returnableUserData,
         };
       } else {
         candidate = await db.candidate.findFirst({
@@ -98,3 +98,6 @@ export class CandidateController {
         return { message: "No candidate with given ID", result: false };
       }
 
+      const updatedUser = await db.candidate.update({
+        where: {
+          id,

@@ -145,7 +145,6 @@ export default function AddCoordinator() {
           name='password'
           placeholder='Password'
           value={formObject.password}
-// Temp comment
           onChange={handleInputChange}
         />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.password}</p>

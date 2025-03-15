@@ -17,7 +17,6 @@ export default function CandidateCard({ data, disableLink }) {
   const avatarUrl = formatAvatarUrl(data.avatar, data.firstName, data.lastName);
   const nameString = data.firstName + ' ' + data.lastName;
   const experienceString = formatYearsExperience(data.experienceYears, data.experience);
-// Temp comment
   const addressString = buildCandidateAddress(data);
   const expertiseString = data.expertise ? data.expertise : 'No expertise listed';
   const occupationString = buildOccupationString(data.occupation, data.companyName);
@@ -121,6 +120,7 @@ CandidateCard.propTypes = {
 }
 
 // Disables link and interactivity if disableLink is true
+// Temp comment
 function LinkWrapper({ children, link, disableLink }) {
   const baseStyles = 'w-full flex mb-xl px-xxl-2 py-xxl-3 bg-white border border-disabled border-solid rounded-2xl remove-outline ';
   if ( disableLink ) {

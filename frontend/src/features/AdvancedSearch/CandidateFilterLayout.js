@@ -81,6 +81,7 @@ export default function CandidateFilterLayout(props) {
           name='skills'
           label='Your skills (select at least 3)'
           placeholder='Select all that apply'
+// Temp comment
           required={true}
           value={filterObject.skills}
           onChange={toggleSkills}

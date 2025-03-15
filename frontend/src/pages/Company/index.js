@@ -63,6 +63,7 @@ export default function Company() {
       <div 
         className={ width <= 990 ? 'px-[5%]'
           : !loggedIn ? 'px-[15%]' 
+// Temp comment
             : ''}
       >
         <div className={ width >= 990 ? 'bg-white p-16 mt-8 border-2 border-midGrey border-solid rounded-3xl relative' : 'bg-white p-4 mt-8 border-2 border-midGrey border-solid rounded-3xl relative'}>
@@ -81,7 +82,6 @@ export default function Company() {
           {/* Summary */}
           <div className='p-6'>
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>About {companyData.name}</h4>
-// Temp comment
             { renderCompanyDescription(companyData.companyDescription, 'text-md mb-10 leading-[32px]') }
           </div>
           { renderSectorList(companyData, width, stylesObject) } 
