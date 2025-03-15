@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import ResetButton from './ResetButton';
-import ResetForm from './ResetForm';
 
 export default function PasswordReset({role, candidateData}) {
   if ( role === 'company' || candidateData.sourceTable !== 'User' ) {
@@ -15,7 +14,6 @@ export default function PasswordReset({role, candidateData}) {
     setResponse(response);
   }
 
-// Temp comment
   function renderResponse () {
     const successStyle = 'mb-4 text-success';
     const errorStyle = 'mb-4 text-error';

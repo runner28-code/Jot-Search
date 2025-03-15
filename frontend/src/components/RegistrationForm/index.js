@@ -94,6 +94,7 @@ export default function RegistrationForm(loggedIn) {
       }
       formObj.resume = resumeResponse;
 
+// Temp comment
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
 
@@ -328,6 +329,7 @@ export default function RegistrationForm(loggedIn) {
             error={errors.includes('roles')}
           />
           <FormInput
+            type='typeahead'
             dropdownType='tags'
             name='skills'
             label='Your skills (select at least 3)'

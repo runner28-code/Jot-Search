@@ -28,7 +28,6 @@ function HeaderContent({ companyData }) {
   return (
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
-// Temp comment
       <div className='grow p-6'>
         <div className='flex flex-wrap items-center mb-4'>
           { renderCompanyLogo(companyData.logo, companyData.name) }
@@ -80,7 +79,6 @@ function HeaderContent({ companyData }) {
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={Triangle}
-              className={headerIconStyles}
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
           </div>

@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import searchIcon from '../../assets/images/search-icon.svg';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -24,6 +23,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   return (
     <div 
       className={ containerStyles }
+// Temp comment
       onKeyDown={handleKeydown}
     >
       <input

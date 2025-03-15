@@ -110,7 +110,6 @@ export default function RegistrationForm() {
     setErrors([]);
     setFormObj({
       ...formObj,
-// Temp comment
       firstName: firstName.value,
       lastName: lastName.value,
       email: email.value,
@@ -133,6 +132,7 @@ export default function RegistrationForm() {
 
   // Alter header and pronoun based on who is registering the new user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
+// Temp comment
   const pronoun = addType === 'candidate' ? 'you' : 'they';
   const buttonString = addType === 'candidate' ? 'Join' : 'Add Candidate';
 

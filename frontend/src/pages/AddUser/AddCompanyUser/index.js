@@ -33,7 +33,6 @@ export default function AddCompanyUser() {
             src={Flag}
             alt='flag icon'
             className='w-12 h-12 mr-6'
-          />
           Step 1: Add Company in Getro or Bullhorn
         </h2>
         <p className={paragraphStyles}>At the moment it not possible to add companies in this system. Company profile data is currently pulled from Getro database due to technical limitations.</p>

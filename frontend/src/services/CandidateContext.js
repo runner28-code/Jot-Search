@@ -115,6 +115,7 @@ const CandidateProvider = ({children}) => {
   const handleCandidatesChange = (value) => {
     setCandidates(value);
   }
+
   const handleCandidateUpdate = (updatedValues) => {
     const currentCandidateData = candidates.find(candidate => candidate.id === updatedValues.id);
     const updatedCandidate = { ...currentCandidateData, ...updatedValues };

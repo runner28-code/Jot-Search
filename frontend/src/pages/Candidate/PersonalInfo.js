@@ -29,7 +29,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     phone: candidateData.phone || '',
     workAuthorized: candidateData.workAuthorized,
     zip: candidateData.zip || '',
-// Temp comment
     city: candidateData.city || '',
     address1: candidateData.address1 || '',
     referredBy: candidateData.referredBy || '',

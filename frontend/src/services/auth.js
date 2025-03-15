@@ -17,6 +17,7 @@ class AuthService {
     return role;
   }
 
+// Temp comment
   loggedIn() {
     // Checks if there is a saved token and it's still valid
     const token = this.getToken();
@@ -40,7 +41,6 @@ class AuthService {
   }
 
   async login(idToken) {
-// Temp comment
     localStorage.setItem('id_token', idToken);
     const role = this.getUserRole();
     if ( role === 'candidate' ) {

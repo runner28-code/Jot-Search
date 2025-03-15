@@ -9,5 +9,4 @@ exports.IUSER = {
     gender: "",
     email: "",
     password: "",
-// Temp comment
     role: "",

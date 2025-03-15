@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
         'spin': 'spin .175s linear forwards',
         'spin-reverse': 'spin-reverse .175s linear forwards'
       },
@@ -34,7 +35,6 @@ module.exports = {
       colors: {
         // Main Brand Colors
         royalBlue: '#176AB9',
-        aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
         'legal-bg': '#23242D',
         // Neutrals

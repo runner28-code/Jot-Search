@@ -184,7 +184,6 @@ export default function Apply() {
       ...applicationObject,
       referredBy: value
     })
-// Temp comment
     setReferralChoice(false);
   }
 

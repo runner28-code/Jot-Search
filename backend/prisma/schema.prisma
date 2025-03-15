@@ -44,7 +44,6 @@ model History {
   table    String
   recordId String
   column   String
-  oldValue String?
   newValue String?
 
   batchId String?
@@ -175,6 +174,7 @@ model ClientContact {
   skills             String?
   source             String?
   createdAt          DateTime  @default(now())
+}
 
 model Company {
   id            String  @id @default(uuid())

@@ -47,6 +47,7 @@ export default function AddCoordinator() {
       }, 2000);
     }
   }, [submissionObject.success]);
+
   function handleInputChange(e) {
     const { name, value } = e.target;
 

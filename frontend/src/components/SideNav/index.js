@@ -9,6 +9,7 @@ import {
 } from './utils';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
+// Temp comment
 
 export default function SideNav({ userType }) {
   const { pathname } = useLocation();

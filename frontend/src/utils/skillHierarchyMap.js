@@ -30,6 +30,7 @@ export const roles = {
     'Operations Generalist',
     'Project and Program Management',
     'Administration',
+    'Executive Assistant',
     'Recruiting',
     'People Operations',
     'Human Resources',

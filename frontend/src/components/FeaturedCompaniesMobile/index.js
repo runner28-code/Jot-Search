@@ -21,6 +21,7 @@ export default function FeaturedCompaniesMobile() {
     <div className='py-48 px-[5%] flex flex-col items-center'>
       { renderColorShapes() }
       <h2 className='text-h5 text-center font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
+      <div className='flex flex-wrap mt-8 justify-center'>
         {
           isLoading ?
             <LoadingSpinner />

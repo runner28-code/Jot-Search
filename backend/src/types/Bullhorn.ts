@@ -41,6 +41,7 @@ export type Company = {
     status?: string,
     taxRate?: string,
     tickerSymbol?: string,
+    workWeekStart?: string,
     address_country_id?: string,
     datedAdded?: string,
 };
