@@ -17,7 +17,6 @@ API.interceptors.request.use(
       config.headers['Authorization'] = 'Bearer ' + token;
     }
     return config;
-  },
   function (error) {
     return Promise.reject(error);
   }
@@ -42,6 +41,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
   const formattedFilters = formatCandidateFilters(filtersArr)
     .filter(filter => {
       if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {
+        return false
       }
       return true
     });

@@ -109,7 +109,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   function handleFilterChange(filterType, choice) {
     setFilterObject({
-      ...filterObject,
       [filterType]: choice
     });
     setPage(1);
@@ -135,7 +134,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   function clearFilters() {
     setFilterObject(initialFilterState);
-// Temp comment
     setPage(1);
   }
 

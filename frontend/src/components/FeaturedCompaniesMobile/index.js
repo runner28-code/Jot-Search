@@ -9,7 +9,6 @@ const ITEMS_PER_PAGE = 6;
 export default function FeaturedCompaniesMobile() {
 
   const filtersArr = [
-    {
       key: 'status',
       value: 'active'
     }
@@ -34,7 +33,6 @@ export default function FeaturedCompaniesMobile() {
                 { renderLogo(company.logo) }
               </Link>
             )
-// Temp comment
         }
       </div>
       <div className='text-center mt-24'>

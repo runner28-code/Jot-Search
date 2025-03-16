@@ -29,14 +29,12 @@ const stylesObject = {
 
 export default function ChoicesContainer(props) {
   const {
-// Temp comment
     userRole,
     handleOptionClick } = props;
   
   return (<>
     { renderRoleChoices({ userRole, handleOptionClick }) }
     { userRole === 'guest' ? 
-      <LoggedOutButtons 
         handleOptionClick={handleOptionClick}
         stylesObject={stylesObject} /> 
       :

@@ -43,7 +43,6 @@ export default function InviteCandidates({ company }) {
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
       ))}
-    </div>)
   }
 
   const valueRenderer = () => {
@@ -82,6 +81,7 @@ export default function InviteCandidates({ company }) {
           }}
           disabled={selected.length === 0 || isSendingCandidates}
         >
+          <MailIcon className='inline-block mr-2' />
           Send Now
         </button>
         <button 

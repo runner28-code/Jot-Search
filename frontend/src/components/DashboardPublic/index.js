@@ -26,6 +26,7 @@ export default function DashboardPublic({togglePassState}) {
     <div className={ width >= 990 ? 'pt-24 pb-14 bg-gradient-to-t from-sky-500 via-sky-700 to-sky-700 flex items-center justify-center text-white mb-12 flex-col' : 'pt-24 pb-14 bg-gradient-to-t from-sky-500 via-sky-700 to-sky-700 flex items-center justify-center text-white mb-12 flex-col px-8'}>
       <div className='relative w-full h-8 w-full'>
         <div className='bg-blueSquare bg-amber-400 absolute mx-auto left-[-15px] bottom-0 right-0 w-12 h-12' />
+        <div className='bg-blueSquare bg-pink-500 absolute mx-auto left-0 right-[-35px] top-[-35px] w-6 h-6' />
       </div>
       <h1 className={ width >= 990 ? 'text-[42px] font-spaceGrotesk' : 'text-[32px] font-spaceGrotesk'}>{location === '/careers' ? careerTitle : companyTitle}</h1>
       <div className='flex items-center  mt-12'>
@@ -49,6 +50,7 @@ export default function DashboardPublic({togglePassState}) {
           <button
             className='flex items-center flex-row'
             onClick={() => togglePassState()}
+// Temp comment
           >
             <img src={filterIcon} />
             { width >= 990 && <FilterText />}

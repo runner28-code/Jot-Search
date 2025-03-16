@@ -30,6 +30,7 @@ const checkboxFilters = [
 export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
+// Temp comment
     filterObject,
     handleFilterChange,
     searchTerm,
@@ -49,6 +50,7 @@ export default function CandidateFilterLayout(props) {
       checkboxFilterObject[filter] = filterObject[filter];
     });
   } else {
+    dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
     checkboxFilters.forEach(filter => {

@@ -69,7 +69,6 @@ export default function ExpertiseLinks() {
             alt='Operations Icon'
             className={iconStyles}
           />
-// Temp comment
           <span className={textStyles}>Operations</span>
         </Link>
         {/* Finance */}

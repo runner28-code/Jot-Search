@@ -12,4 +12,3 @@ env:
   ECS_CLUSTER: 'intulsa-cluster-dev'
   ECS_TASK_DEFINITION: '.github/workflows/dev_task_definition.json'
   CONTAINER_NAME: 'intulsa-frontend-container-dev'
-

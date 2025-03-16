@@ -10,7 +10,6 @@ import {
 } from "routing-controllers";
 import { BigQueryService } from "../services/BigQueryService";
 import { BullhornService } from "../services/BullhornService";
-import { getSavedCompanies, saveCompany } from "../services/Company";
 import {
   DATASET_BULLHORN,
   DATASET_GETRO,
@@ -81,6 +80,7 @@ export class CompanyController {
   async send_candidates_to_employers(
     @CurrentUser() authUser: User,
     @Body() body: { candidates_ids: string[], employers_emails: string[] }
+  ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
       return {
         result: false,

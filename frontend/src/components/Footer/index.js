@@ -149,6 +149,7 @@ export default function Footer() {
                 alt='Intulsa'
                 className='w-auto h-auto'
               />
+// Temp comment
             </a>
             <a
               href='https://talent.intulsa.com/'

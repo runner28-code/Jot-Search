@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+// Temp comment
 import { useLocation, Navigate } from 'react-router-dom';
 import CareerProfileInfo from './CareerProfileInfo';
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -39,6 +40,7 @@ export default function Candidate() {
   const [candidateData, setCandidateData] = useState({});
   const [loading, setLoading] = useState(true);
 
+  useEffect(async () => {
     const candidate = await getCandidateById(id);
     const formattedCandidate = formatCandidateData({ id, ...candidate });
     setCandidateData(formattedCandidate);

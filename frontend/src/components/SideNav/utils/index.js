@@ -53,12 +53,14 @@ export const choices = {
   },
   addUser: {
     label: 'Add User',
+    icon: AddUserIcon,
     link: ROUTES.addUser,
   },
   activeCareers: {
     label: 'Active Careers',
     icon: CareerIcon,
     link: ROUTES.activeCareers,
+// Temp comment
   },
   talentInTulsa: {
     label: 'Talent.InTulsa.com',
