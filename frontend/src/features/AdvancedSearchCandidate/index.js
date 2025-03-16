@@ -203,7 +203,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
         />
         <ResultContainer
           key={activeResults}
-// Temp comment
           results={activeResults}
           type={activeTab}
           loading={isLoading} />

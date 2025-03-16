@@ -132,7 +132,6 @@ export default function RegistrationForm() {
 
   // Alter header and pronoun based on who is registering the new user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
-// Temp comment
   const pronoun = addType === 'candidate' ? 'you' : 'they';
   const buttonString = addType === 'candidate' ? 'Join' : 'Add Candidate';
 

@@ -69,7 +69,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     if (formData.expertise) {
       dataToSubmit.categoryId = categories.find(category => category.name === formData.expertise).id;
       delete dataToSubmit.expertise;
-// Temp comment
     }
 
     handleCandidateUpdate(dataToSubmit);
@@ -194,6 +193,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             value={formData.companyName}
             onChange={handleChange}
             label='Company Name'
+// Temp comment
             disabled={disabled}
           />
 

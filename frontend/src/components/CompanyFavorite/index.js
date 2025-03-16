@@ -29,7 +29,6 @@ export default function CareerFavorite () {
               return(<>
                 <CompanyCard
                   key={company.id}
-// Temp comment
                   index={index}
                   data={company}
                   agoDate={company.agoDate}

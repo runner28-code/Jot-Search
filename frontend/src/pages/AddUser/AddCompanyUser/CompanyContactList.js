@@ -42,6 +42,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
                 checked={selectedContacts.includes(contact)}
                 className='w-12 h-12 mr-12'
               />
+// Temp comment
               <span className='text-md mr-12 w-100'>{contact.name}</span>
               <span>{contact.email}</span>
             </li>

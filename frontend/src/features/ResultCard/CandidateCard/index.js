@@ -31,6 +31,7 @@ export default function CandidateCard({ data, disableLink }) {
         link={link}
         disableLink={disableLink}
       >
+        {/* Card Image and New Lead Label */}
         <div className='flex flex-col items-center gap-m mr-20'>
           <div className='h-48 w-48 flex justify-center items-center'>
             <img
@@ -104,6 +105,7 @@ CandidateCard.propTypes = {
     experienceYears: PropTypes.string,
     experience: PropTypes.number,
     expertise: PropTypes.string,
+// Temp comment
     firstName: PropTypes.string,
     lastName: PropTypes.string,
     occupation: PropTypes.string,

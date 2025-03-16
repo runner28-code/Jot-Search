@@ -19,11 +19,13 @@ export default function AccessibleDropdown(props) {
     currentChosen, 
     stylesObject,
     showDropdownArrow,
+    disabled,
   } = props;
 
   function handleSelection(choice) {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {
+// Temp comment
         onChange(name, currentChosen.filter(item => item !== choice));
       } else {
         onChange(name, [...currentChosen, choice]);

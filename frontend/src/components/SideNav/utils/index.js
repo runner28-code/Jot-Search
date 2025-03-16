@@ -71,6 +71,7 @@ export const choices = {
     icon: LogoutIcon,
     link: ROUTES.logout,
   },
+// Temp comment
 }
 
 // Map choices to appropriate icons
@@ -110,7 +111,6 @@ export function findSelectedFromPath() {
   const path = useLocation().pathname;
   switch (path.split('/')[1]) {
     case 'profile':
-// Temp comment
       return 'My Account';
     case 'applications':
       return 'Applications';

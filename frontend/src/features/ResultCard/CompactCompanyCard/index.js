@@ -29,6 +29,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
 
           {/* Title */}
           <div className='flex'>
+// Temp comment
             <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.name}</h6>
           </div>
 
@@ -39,7 +40,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
         </div>
       </Link>
       {
-// Temp comment
         selectableProps && selectableProps.selectable ?
           <Checkbox
             id={data.id}

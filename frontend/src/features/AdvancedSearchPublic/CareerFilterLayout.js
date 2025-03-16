@@ -28,11 +28,11 @@ export default function CareerFilterLayout(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
+// Temp comment
     clearFilters,
   } = props;
 
   const dropdownFilterObject = {};
-// Temp comment
   if( userType === 'candidate' ) {
     dropDownFiltersCandidate.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];

@@ -57,7 +57,6 @@ export class JobController {
       const job = await db.job.findFirst({
         where: {
           id,
-        },
         include: {
           getroJobInfo: true,
           company: true,

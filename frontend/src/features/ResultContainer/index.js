@@ -53,6 +53,7 @@ export default function ResultContainer(props) {
       { renderHeader() }
       <div
         className={`${baseStyles} ${resultsContainerStyles}`}>
+        { renderResults(results, loading, type, active, compact, isFavoriteOverride, agoText, selectableProps) }
       </div>
       { renderFooter() }
     </div>

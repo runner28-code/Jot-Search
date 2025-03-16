@@ -22,11 +22,11 @@ export default function CompanyFilterLayout(props) {
         />
         <button
           className='text-white text-sm whitespace-nowrap'
+// Temp comment
           onClick={clearFilters}
         >
           Clear All
         </button>
       </div>
-// Temp comment
     </div>
   );

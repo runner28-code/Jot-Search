@@ -14,6 +14,7 @@ export default function NavMenu() {
     setMenuOpen(menuOpen => !menuOpen);
   }
 
+// Temp comment
   function handleOptionClick(e) {
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {
@@ -37,6 +38,7 @@ export default function NavMenu() {
       </button>
       <Menu
         key={menuOpen}
+        menuOpen={menuOpen}
         handleOptionClick={handleOptionClick}
         setMenuOpen={setMenuOpen} />
     </div>

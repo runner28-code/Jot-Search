@@ -44,6 +44,7 @@ export default function InviteCandidates({ company }) {
         </span>
       ))}
     </div>)
+  }
 
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>

@@ -33,6 +33,7 @@ function HeaderContent({ companyData }) {
           { renderCompanyLogo(companyData.logo, companyData.name) }
           <FillerIcon />
           <h4 className={ ( width >= 1280 ) ? headerTitleDesktop : headerTitle }>
+// Temp comment
             {companyData.name}
           </h4>
         </div>
@@ -79,6 +80,7 @@ function HeaderContent({ companyData }) {
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={Triangle}
+              className={headerIconStyles}
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
           </div>

@@ -94,7 +94,6 @@ export default function RegistrationForm(loggedIn) {
       }
       formObj.resume = resumeResponse;
 
-// Temp comment
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
 
@@ -250,7 +249,6 @@ export default function RegistrationForm(loggedIn) {
           <FormInput
             type='text'
             name='city'
-            label='City'
             required={true}
             value={formObj.city}
             onChange={handleChange}

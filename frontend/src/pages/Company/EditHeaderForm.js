@@ -156,6 +156,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 htmlFor='city'>
               City:
               </label>
+              <input 
                 type='text'
                 onChange={handleInputChange}
                 id='city'

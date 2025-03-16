@@ -13,6 +13,7 @@ export default function FeaturedCompanies() {
       key: 'status',
       value: 'active'
     }
+  ];
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
@@ -33,7 +34,6 @@ export default function FeaturedCompanies() {
                 { renderLogo(company.logo) }
               </Link>
             )
-        }
       </div>
       <div className='text-center mt-48'>
         <Link
