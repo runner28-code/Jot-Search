@@ -51,6 +51,7 @@ export default function ResetForm({ candidateData, setType }) {
           onChange={handleChange}
           label='New Password'
         />
+// Temp comment
         <FormInput
           type='text'
           name='passwordConfirm'

@@ -3,6 +3,7 @@
 
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 /* Vanilla CSS */
 * {
@@ -48,3 +49,4 @@ input[type=checkbox] {
 @layer components {
   .Mobile-HeadersMobile-heading-xxlarge {
     font-family: SpaceGrotesk;
+    font-size: 35.2px;

@@ -102,3 +102,5 @@ export class CandidateController {
       const updatedUser = await db.candidate.update({
         where: {
           id,
+        },
+        data,

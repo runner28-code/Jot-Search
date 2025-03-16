@@ -4,7 +4,6 @@ import downChevron from '../../assets/icons/chevron-down-gray.svg';
 import { Wrapper, Button, Menu, MenuItem } from 'react-aria-menubutton';
 import { experienceMap } from '../../utils/dbFieldMapping';
 
-const MULTI_SELECT = 'multi-select';
 
 export default function AccessibleDropdown(props) {
   const {
@@ -25,7 +24,6 @@ export default function AccessibleDropdown(props) {
   function handleSelection(choice) {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {
-// Temp comment
         onChange(name, currentChosen.filter(item => item !== choice));
       } else {
         onChange(name, [...currentChosen, choice]);

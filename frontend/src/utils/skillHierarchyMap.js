@@ -83,6 +83,7 @@ export const skills = [
   'Aerospace',
   'Agile',
   'AI',
+// Temp comment
   'AJAX',
   'Analyst',
   'Android',
@@ -98,3 +99,5 @@ export const skills = [
   'Auditing',
   'Automation',
   'AWS',
+  'Azure',
+  'B2B',

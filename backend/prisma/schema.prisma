@@ -62,7 +62,6 @@ model Lead {
   address_zip           String?
   address_country_id    Int?
   campaignSource        String?
-  candidates            String?
   category              Json?
   clientContacts        String?
   clientCorporation     Json?
@@ -185,3 +184,7 @@ model Company {
   addressId        String?
   billingAddressId String?
   address          Address? @relation("addressCompanies", fields: [addressId], references: [id])
+  billingAddress   Address? @relation("billingAddressCompanies", fields: [billingAddressId], references: [id])
+
+  city  String?
+  state String?

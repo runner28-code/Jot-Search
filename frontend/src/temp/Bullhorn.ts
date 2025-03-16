@@ -81,3 +81,5 @@ export type Job = {
     isClientEditable?: string;
     isDeleted?: string;
     isInterviewRequired?: string;
+    isJobcastPublished?: string;
+    isOpen?: string;

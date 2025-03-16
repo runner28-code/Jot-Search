@@ -1,6 +1,4 @@
-// Temp comment
 import PropTypes from 'prop-types';
-import ChoiceTag from '../../ChoiceTag';
 import TypeaheadDropdown from '../../FormInput/TypeaheadDropdown';
 import { skills as skillChoices } from '../../../utils/skillHierarchyMap';
 

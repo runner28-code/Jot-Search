@@ -82,3 +82,4 @@ export class GetroService {
 
                 if (res.status === 200) {
                     const { items, meta: { total: total } } = res.data;
+                    if (!testMode) {

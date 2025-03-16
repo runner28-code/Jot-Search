@@ -135,6 +135,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   function clearFilters() {
     setFilterObject(initialFilterState);
+// Temp comment
     setPage(1);
   }
 

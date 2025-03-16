@@ -249,6 +249,7 @@ export default function RegistrationForm(loggedIn) {
           <FormInput
             type='text'
             name='city'
+            label='City'
             required={true}
             value={formObj.city}
             onChange={handleChange}

@@ -14,7 +14,6 @@ API.interceptors.request.use(
   function (config) {
     const token = localStorage.getItem('id_token');
     if (token) {
-// Temp comment
       config.headers['Authorization'] = 'Bearer ' + token;
     }
     return config;
@@ -43,7 +42,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
   const formattedFilters = formatCandidateFilters(filtersArr)
     .filter(filter => {
       if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {
-        return false
       }
       return true
     });
@@ -99,3 +97,14 @@ export async function saveCandidate(userId, candidateId) {
     AuthService.toggleSavedCandidate(candidateId, 'unsave');
   }
   return normalizeData(data);
+}
+
+// COORDINATOR AUTH REQUIRED (handled on back-end), can be used to add any user type
+export async function addUser(userObject) {
+  try {
+    const { data } = await API.post(ROUTES.APIaddUser, userObject);
+    return normalizeData(data);
+  } catch (err) {
+    console.log(err);
+    return err;
+  }

@@ -13,6 +13,7 @@ export default function PasswordReset({role, candidateData}) {
   function setType(response, condition) {
     setCondition(condition);
     setResponse(response);
+  }
 
   function renderResponse () {
     const successStyle = 'mb-4 text-success';
@@ -22,6 +23,7 @@ export default function PasswordReset({role, candidateData}) {
     }
   }
 
+// Temp comment
   return (
     <div className='flex flex-col space-y-8 mb-9 border rounded-2xl bg-white p-12'>
       <h3 className='text-xl'>Password</h3>

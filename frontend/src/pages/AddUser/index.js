@@ -19,6 +19,7 @@ export default function AddUser() {
     setFormType(e.target.value);
   }
 
+// Temp comment
   const defaultContainer = 'bg-white border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12';
   const companyContainer = '';
 
@@ -41,6 +42,7 @@ export default function AddUser() {
     </h2>
     <div className={formType != 'Company' ? defaultContainer : companyContainer }>
       <div className='flex w-full px-8 vw-1280:px-0 3vw-1280:ml-10'>
+        { renderFormByType(formType) }
       </div>
     </div>
   </>)

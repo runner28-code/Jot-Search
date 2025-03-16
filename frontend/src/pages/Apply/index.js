@@ -4,7 +4,6 @@ import PageHeader from '../../components/PageHeader';
 import PhoneInput from 'react-phone-number-input/input'
 import { HiOutlineClipboardCheck } from 'react-icons/hi';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-import { AiFillFilePdf as PDFIcon } from 'react-icons/ai';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
 import FormInput from '../../components/FormInput';
 import { getCandidateById, getJobById, applyToJob } from '../../services/API';
@@ -314,7 +313,6 @@ export default function Apply() {
           </div>
         </div>
         <div className="flex flex-col pt-16">
-// Temp comment
           <span>Are you legally authorized to work in the US on a fulltime basis for any employer?</span>
           <div className='flex space-x-16'>
             <Checkbox 

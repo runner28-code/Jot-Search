@@ -94,7 +94,6 @@ export default function DesktopLayout(props) {
             <ApplyButton
               datasource={careerData.datasource}
               careerId={careerData.id}
-              applicationUrl={careerData.application_path || careerData.url}
             />
           )}
         </div>

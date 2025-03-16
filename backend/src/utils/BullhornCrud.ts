@@ -49,6 +49,7 @@ export const saveCompanies = async (companies: any[]) => {
           data: company.address,
         });
         const existing = await db.company.findFirst({
+          where: {
             externalID: company.id,
           },
         });
@@ -79,3 +80,4 @@ export const saveCompanies = async (companies: any[]) => {
         console.log(error.message);
         console.log(`ERROR: while saving company with ID = ${company.id}`);
       }
+    }

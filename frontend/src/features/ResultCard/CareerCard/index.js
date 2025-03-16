@@ -21,6 +21,7 @@ export default function CareerCard({ data, active }) {
   const role = AuthService.getUserRole();
 
   const { width } = useWindowDimensions();
+
   const dataObj = {
     data,
     categoryString,
@@ -37,7 +38,6 @@ export default function CareerCard({ data, active }) {
     >
       {
         width > 768 ?
-          <DesktopCard
             dataObj={dataObj}
             active={active}
           />

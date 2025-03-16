@@ -16,3 +16,4 @@
         "sourceType": "module"
     },
     "plugins": [
+        "react"

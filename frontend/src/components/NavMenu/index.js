@@ -14,7 +14,6 @@ export default function NavMenu() {
     setMenuOpen(menuOpen => !menuOpen);
   }
 
-// Temp comment
   function handleOptionClick(e) {
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {
@@ -32,6 +31,7 @@ export default function NavMenu() {
       >
         <div className='w-8 h-8 flex flex-col justify-between'>
           <div className='border-white border-solid border-2'></div>
+// Temp comment
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
         </div>

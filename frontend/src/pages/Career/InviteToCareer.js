@@ -23,7 +23,6 @@ export default function InviteToCareer({ candidate }) {
     return {
       label: job.title,
       value: job.id,
-      job
     }
   }) || [];
   

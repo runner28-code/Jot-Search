@@ -64,3 +64,4 @@ module.exports = {
         blueSquare2: '#30BED3',
         indigoSquare: '#4A53A4',
         cyanSquare: '#1ECADB',
+        pinkSquare: '#EB4A87',

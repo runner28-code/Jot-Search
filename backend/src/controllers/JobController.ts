@@ -57,6 +57,7 @@ export class JobController {
       const job = await db.job.findFirst({
         where: {
           id,
+        },
         include: {
           getroJobInfo: true,
           company: true,
@@ -105,3 +106,6 @@ export class JobController {
     try {
       consoleLog("/// BULLHORN_GET_JOBS");
       await (await BullhornService.getClient()).getJobs(false, 50);
+      return { success: true };
+    } catch (error) {
+      consoleLog(error);

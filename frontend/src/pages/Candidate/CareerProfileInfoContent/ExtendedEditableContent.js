@@ -148,7 +148,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           required={true}
           placeholder='Select'
           value={formData.roles || []}
-          onChange={handleChange}
           choices={formData.expertise ? roleChoices[formData.expertise] : []}
           disabled={disabled}
         />
@@ -193,7 +192,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             value={formData.companyName}
             onChange={handleChange}
             label='Company Name'
-// Temp comment
             disabled={disabled}
           />
 

@@ -15,3 +15,5 @@ CREATE TABLE "UserTalentCollection" (
     "vouches_count" INTEGER,
     "questionnaire" TEXT,
     "approved_by_collection" BOOLEAN,
+    "source" TEXT,
+    "onboarding_reminder_sent_at" TEXT,
