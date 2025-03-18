@@ -23,6 +23,7 @@ export const saveCompanies = async (companies: any[]) => {
 									delete companyData[key];
 								}
 							});
+			
 							const newCompany = await db.getroCompany.create({
 								data: companyData,
 							});

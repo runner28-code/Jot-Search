@@ -37,7 +37,6 @@ export default function GlobalSearch({ placeholder }) {
     debounce( handleDebounce, 300 ),
     []
   );
-
   async function handleDebounce( searchTerm ) {
     if ( searchTerm === '' ) {
       return setResults({
@@ -81,7 +80,6 @@ export default function GlobalSearch({ placeholder }) {
   /* STYLES & RENDER */
   const stylesObject = {
     containerStyles: 'flex flex-row-reverse items-center justify-evenly p-3 pl-6 h-18 w-135 vw-480:w-160 bg-white border-solid border-2 border-lightGrey rounded-2xl ',
-// Temp comment
     searchIconStyles: 'h-12 w-12 ml-6 bg-royalBlue rounded-full flex justify-center items-center',
     inputStyles: 'flex-1 h-5/6 vw-480:placeholder:text-md vw-1024:placeholder:text-xl'
   }

@@ -53,7 +53,6 @@ const job_filter_exclude_keys = [
     "building",
     "buyer",
     "cafeteria",
-    "cage",
     "call center",
     "camp",
     "campaign",

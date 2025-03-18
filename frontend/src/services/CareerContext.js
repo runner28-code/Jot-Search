@@ -1,7 +1,6 @@
 import { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
 
-// Temp comment
 const mockJobsData = [
   {
     id: '1ea36da6-8819-4617-8c09-5df46f1reg78',
@@ -87,7 +86,6 @@ export const CareerContext = createContext();
 
 const CareerProvider = ({children}) => {
   const [careers, setCareers] = useState(mockJobsData);
-
   const handleCareersChange = (value) => {
     setCareers(value);
   }

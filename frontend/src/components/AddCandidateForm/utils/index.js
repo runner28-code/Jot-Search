@@ -6,6 +6,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   if ( submissionObject.loading ) {
     return <LoadingSpinner
       height='50'
+// Temp comment
       width='50'
     />
   }
@@ -18,3 +19,4 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       type='submit'>
       {buttonString}
     </button>
+  )

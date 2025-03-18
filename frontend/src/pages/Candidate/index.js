@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// Temp comment
 import { useLocation, Navigate } from 'react-router-dom';
 import CareerProfileInfo from './CareerProfileInfo';
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -130,7 +129,6 @@ export default function Candidate() {
       <div className='px-4'>
         <div className='border rounded-2xl bg-white p-15 relative'>
           <CareerProfileInfo
-            role={role}
             candidateData={candidateData}
             handleCandidateUpdate={handleCandidateUpdate} />
         </div>

@@ -70,7 +70,6 @@ export default function MobileLayout(props) {
                 className='h-11 mr-5' />
               <p className='text-textBlack text-xs'>{postingAge}</p>
             </div>
-// Temp comment
             {/* Employement Type */}
             <div className='w-1/2 flex items-center'>
               <img
@@ -91,6 +90,7 @@ export default function MobileLayout(props) {
           </div>
         </div>
 
+// Temp comment
         {/* Coordinator Status */}
         {
           role === 'coordinator' && (

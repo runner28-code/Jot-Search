@@ -14,7 +14,6 @@ import { BsBuilding } from 'react-icons/bs';
 
 function HeaderContent({ companyData }) {
   const headerIconStyles = 'h-6 w-6 mr-3 fill-midGrey';
-// Temp comment
   const headerRowTextStyles = 'text-xs text-textBlack ';
   const headerGroupStyles = 'flex items-center flex-row basis-1/2 my-4';
   const headerTitle = 'text-[2.5rem] font-spaceGrotesk font-semibold basis-2/3';
@@ -25,6 +24,7 @@ function HeaderContent({ companyData }) {
       <div className='grow p-2'>
         <div className='flex flex-wrap items-center mb-4'>
           <div className='basis-2/6'>
+// Temp comment
             { renderCompanyLogo(companyData.logo, companyData.name) }
             <FillerIcon />
           </div>

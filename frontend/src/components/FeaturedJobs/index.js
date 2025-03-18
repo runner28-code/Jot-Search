@@ -33,7 +33,6 @@ export default function FeaturedJobs() {
     }
   ];
 
-// Temp comment
   const { jobs, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(

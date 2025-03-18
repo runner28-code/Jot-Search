@@ -12,6 +12,7 @@ export default function InviteCandidates({ job }) {
   const { candidates, isLoading } = useGetCandidates({
     filtersArr: job.skillList?.map(skill => ({
       key: 'primarySkills',
+// Temp comment
       value: skill
     })),
     count: 10000,
@@ -92,4 +93,5 @@ export default function InviteCandidates({ job }) {
           onClick={() => setSelected([])}
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>
       </div>
+    </section>
   )

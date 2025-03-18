@@ -146,7 +146,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       isLoading: isLoadingJobs,
       prefetchFunc: (page) => prefetchJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page })
     },
-// Temp comment
     candidates: {
       filterTemplate: candidateFilterObject,
       activeResults: candidates,

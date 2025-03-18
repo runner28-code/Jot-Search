@@ -35,7 +35,6 @@ export default function InviteToCareer({ candidate }) {
 
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
-// Temp comment
       {selected?.map((item) => (
         <span 
           key={item.value} 
@@ -91,6 +90,5 @@ export default function InviteToCareer({ candidate }) {
         <button 
           onClick={() => setSelected([])} 
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>
-      </div>
     </section>
   )

@@ -91,7 +91,6 @@ export default function RegistrationForm(loggedIn) {
           success: false,
         });
         return;
-      }
       formObj.resume = resumeResponse;
 
       // Format formObj
@@ -436,7 +435,6 @@ export default function RegistrationForm(loggedIn) {
             <p>
               <span>I have read and accept the </span>
               <a
-// Temp comment
                 href={ROUTES.termsOfService}
                 target='_blank'
                 rel='noopener noreferrer'

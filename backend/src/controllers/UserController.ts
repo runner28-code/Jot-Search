@@ -1,5 +1,4 @@
 import {
-  Controller,
   Param,
   Body,
   Get,
@@ -42,6 +41,7 @@ export class UserController {
     const { email, password } = body;
     const { result, error, ...data } = await login(email, password);
 
+    if (result) {
       const token = CreateJwtToken(data);
       return {
         result,

@@ -10,7 +10,6 @@ export default function Candidates() {
   if (role === 'candidate') {
     return <Navigate to='/' />
   }
-// Temp comment
 
   return (
     <section className='mr-20'>
@@ -20,4 +19,3 @@ export default function Candidates() {
       />
       <AdvancedSearch disabledTabs />
     </section>
-  )
