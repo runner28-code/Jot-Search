@@ -26,6 +26,7 @@ const checkboxFilters = [
   'Open to Relocation',
   'Actively Looking',
 ];
+
 export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,

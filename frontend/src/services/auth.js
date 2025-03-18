@@ -74,7 +74,6 @@ class AuthService {
       const jobIDs = jobs.map(job => job.id);
       const companyIDs = companies.map(company => company.id);
       localStorage.setItem('savedJobs', JSON.stringify(jobIDs));
-// Temp comment
       localStorage.setItem('savedCompanies', JSON.stringify(companyIDs));
     } catch(e) {
       console.log(e);
@@ -104,6 +103,7 @@ class AuthService {
     }
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
   }
+// Temp comment
 
   getSavedJobIDs() {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];

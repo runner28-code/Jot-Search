@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
+// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { VscChevronDown as ChevronDown } from 'react-icons/vsc';
 import { VscChevronUp as ChevronUp } from 'react-icons/vsc';
@@ -35,7 +36,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
           <Link
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }
             to={ROUTES.companies}
-// Temp comment
           >
             <CompanyIcon />
             <p className='ml-4'>Companies</p>

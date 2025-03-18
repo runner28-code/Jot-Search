@@ -7,7 +7,6 @@ import { SwitchButton } from './PreferenceItem';
 import { FiEdit } from 'react-icons/fi';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
-// Temp comment
   ethnicityChoices,
   genderChoices,
   veteranStatusChoices
@@ -36,6 +35,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     gender: candidateData.gender || '',
   })
 
+// Temp comment
   const [editMode, setEditMode] = useState(false);
 
   const [referralChoice, setReferralChoice] = useState(false);

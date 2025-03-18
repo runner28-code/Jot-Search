@@ -40,7 +40,6 @@ export default function Auth() {
           element={<Applications />} />
         <Route
           path={ROUTES.favorites}
-          element={<Favorites />} />
         <Route
           path={ROUTES.activeCareers}
           element={<ActiveCareers />} />

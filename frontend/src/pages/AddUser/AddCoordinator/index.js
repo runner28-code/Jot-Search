@@ -156,7 +156,6 @@ export default function AddCoordinator() {
           type='password'
           className={submissionObject.errors.verifyPassword ? invalidInputStyles : validInputStyles}
           name='verifyPassword'
-// Temp comment
           placeholder='Verify Password'
           value={formObject.verifyPassword}
           onChange={handleInputChange}

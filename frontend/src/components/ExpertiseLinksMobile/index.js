@@ -17,7 +17,6 @@ export default function ExpertiseLinksMobile() {
         Browse Opportunities by Career Expertise
       </h4>
       <div className='mt-20 flex flex-wrap justify-center'>
-// Temp comment
         {/* Software & Engineering */}
         <Link
           to={ROUTES.careers}
@@ -58,7 +57,6 @@ export default function ExpertiseLinksMobile() {
             className={iconStyles}
           />
           <span className={textStyles}>Marketing</span>
-        </Link>
         {/* Operations */}
         <Link
           to={ROUTES.careers}

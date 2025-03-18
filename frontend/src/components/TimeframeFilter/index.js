@@ -51,7 +51,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
           className='w-6 mr-7'
           src={ chevronDownGray }
           alt='chevron down'  
-        />
       </div>
       { renderDropdown( showDropdown ) }
     </div>

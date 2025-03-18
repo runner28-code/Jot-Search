@@ -6,6 +6,7 @@ import Checkbox from '../Checkbox';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {BsClipboardCheck} from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
+// Temp comment
 import { calculatePostingAge } from '../../../utils/formatFunctions';
 
 export default function CompactCareerCard({ data, active, agoDate, isFavoriteOverride = null, selectableProps = null }) {
@@ -37,6 +38,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
           </div>
 
           {/* Posting/Application age */}
+          <div className='flex items-center gap-xs border-1 border-t border-gray-300 py-4 mt-4 justify-self-end'>
             <BsClipboardCheck className='fill-midGrey h-14 w-12' />
             { isApplicationPage ?
               <div>

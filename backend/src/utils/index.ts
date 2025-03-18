@@ -9,6 +9,7 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
     try {
         const query = `
             SELECT * FROM \`${datset}.${table}\`
+            WHERE id=${id}
         `;
         const options = {
             query: query,
@@ -16,15 +17,3 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
         };
         const [job] = await BigQueryService.getClient().createQueryJob(options);
         const [res] = await job.getQueryResults();
-
-        if (res && res.length > 0 && `'${res[0].id}'` === id) {
-            return true;
-        }
-        return false;
-    } catch (error) {
-        console.log(error);
-        return true;
-    }
-}
-
-export const isExistByCondition = async (condition: string, datset: string, table: string) => {

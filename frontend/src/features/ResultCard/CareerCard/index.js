@@ -49,8 +49,8 @@ export default function CareerCard({ data, active }) {
           />
       }
       <FavoriteButton
+// Temp comment
         type={'job'}
         data={data} />
-// Temp comment
     </div>
   )

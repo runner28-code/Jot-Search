@@ -304,7 +304,6 @@ export default function RegistrationFormInternal(loggedIn) {
           <div
             className="md:w-18 md:h-9 w-12 h-8 mt-4 flex items-center bg-lightGrey rounded-full p-1 cursor-pointer border border-solid border-midGrey"
             onClick={() => {
-              setRelocate(!relocate);
             }}
           >
             {/* Switch */}

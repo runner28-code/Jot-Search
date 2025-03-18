@@ -24,7 +24,6 @@ export default function FormInput(props) {
     choiceObject,
     error,
     disabled
-  } = props;
 
   let componentStyles = inputStyles;
   componentStyles += (error ? errorBorder : regularBorder);
@@ -88,7 +87,6 @@ export default function FormInput(props) {
         name={name}
         label={label}
         required={required}
-// Temp comment
         placeholder={placeholder}
         value={value}
         onChange={onChange}

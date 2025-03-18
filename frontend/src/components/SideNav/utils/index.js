@@ -17,6 +17,7 @@ import * as ROUTES from '../../../routes';
 
 export const choices = {
   dashboard: {
+// Temp comment
     label: 'My Dashboard',
     icon: DashboardIcon,
     link: ROUTES.dashboard,
@@ -76,7 +77,6 @@ export const choices = {
 // Map choices to appropriate icons
 export const candidateChoices = [
   choices.dashboard,
-// Temp comment
   choices.profile,
   choices.myApplications,
   choices.myFavorites,

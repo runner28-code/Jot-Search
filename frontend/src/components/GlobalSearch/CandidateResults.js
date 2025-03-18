@@ -6,6 +6,7 @@ import * as ROUTES from '../../routes';
 
 export default function CandidateResults({ candidates }) {
   const role = AuthService.getUserRole();
+  if (candidates.length === 0 || role === 'candidate') {
     return null;
   }
 
@@ -19,6 +20,5 @@ export default function CandidateResults({ candidates }) {
             key={candidate.id} />
         )
       })}
-      <hr className='w-full border-black50% mt-6 mb-2' />
     </>
   )

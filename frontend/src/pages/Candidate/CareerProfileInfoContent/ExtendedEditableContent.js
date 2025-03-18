@@ -162,6 +162,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         placeholder='Select'
         value={formData.experience}
         onChange={handleChange}
+// Temp comment
         choiceObject={experienceMap}
         disabled={disabled}
       />

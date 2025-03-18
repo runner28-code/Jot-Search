@@ -115,7 +115,6 @@ export default function Footer() {
           className={socialIconStyle}
         />
       </a>
-// Temp comment
       <a href={ROUTES.instagram}>
         <img
           src={instagram}
@@ -194,7 +193,6 @@ export default function Footer() {
             href={ROUTES.termsOfService}
             className='underline'
             target='_blank'
-            rel='noreferrer'
           >
               Terms of Service
           </a>

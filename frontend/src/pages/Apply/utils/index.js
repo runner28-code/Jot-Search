@@ -36,6 +36,7 @@ export const defaultState = {
   ethnicity: '',
   gender: '',
   workAuthorized: '',
+// Temp comment
   disability: '',
   veteran: '',
   loading: true
@@ -59,3 +60,4 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
       />
       <p className='text-md ml-2'>Use existing resume</p>
     </label>
+  )

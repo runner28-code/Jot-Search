@@ -57,7 +57,6 @@ const validateUser = ({
     return "something is wrong, please check params";
   }
   return false;
-};
 
 export const register = async (data: User) => {
   try {
@@ -150,6 +149,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
     try {
       await addUserHistoryEntries({
         updatedUser: user,
+        existingUser: existing,
       });
     } catch (err) {
       console.log("could not add user history:", user);

@@ -34,6 +34,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
     return <EditResumeForm
       handleChange={handleChange} />
   }
+// Temp comment
   return (
     <div className='flex flex-col justify-items-between w-140'>
       { Object.entries(contentObject).map(([key, value]) => {
@@ -65,6 +66,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               value={value}
             />
           </div>
+        )
       })}
     </div>
   )

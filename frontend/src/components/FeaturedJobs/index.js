@@ -12,6 +12,7 @@ export default function FeaturedJobs() {
   const { width } = useWindowDimensions();
 
   const linkStyles = '';
+  const linkStylesMobile = 'basis-full mb-8'
   const titleStyles = 'text-h4 font-semibold font-spaceGrotesk';
   const titleStylesMoible = 'text-h4 font-semibold font-spaceGrotesk text-center';
   const cardStyles = 'mx-8 outline outline-1 outline-neutral-300 rounded-xxl p-12 w-[275px] h-[316px]';
@@ -24,7 +25,6 @@ export default function FeaturedJobs() {
   const cardContentSubtitleMobile ='font-spaceGrotesk text-royalBlue text-xs uppercase';
   const viewAllStyles = 'text-center mt-48';
   const viewAllStylesMobile = 'text-center mt-12';
-
   const filtersArr = [
     {
       key: 'featured',

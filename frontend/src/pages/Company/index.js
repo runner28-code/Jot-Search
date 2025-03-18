@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import LoadingSpinner from '../../components/LoadingSpinner';
 import Header from './Header';
 import HeaderMobile from './HeaderMobile';
 import { getCompanyById } from '../../services/API';
@@ -42,6 +43,7 @@ export default function Company() {
   }
   if ( companyData.businessSectorList && companyData.businessSectorList.length > 0 ) {
     companyData.businessSectorList = companyData.businessSectorList.toString().replace(',', ', '); // Add space after commas
+// Temp comment
   }
   companyData.address = buildCandidateAddress(companyData);
   companyData.employeeString = companyData.numEmployees ? `${companyData.numEmployees} Employees` : 'N/A';

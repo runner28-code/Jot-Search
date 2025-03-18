@@ -65,6 +65,7 @@ export default function AddCompanyUser() {
             src={Search}
             alt='search icon'
             className='absolute right-6 top-6 h-10 w-10 vw-900:h-12 vw-900:w-12'
+// Temp comment
           />
           {(search && isLoadingCompanies && !selectedCompany) && <div>Loading...</div>}
           {(companies && search !== selectedCompany?.name) && (
@@ -77,7 +78,6 @@ export default function AddCompanyUser() {
                 >
                   {company.name}
                 </div>
-// Temp comment
               ))}
             </div>
           )}

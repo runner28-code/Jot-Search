@@ -8,7 +8,6 @@ import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
 
-// Temp comment
 export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
     filtersArr: [],
@@ -80,7 +79,6 @@ export default function InviteCandidates({ company }) {
             if(res.result){
               setSelected([])
             }
-          }}
           disabled={selected.length === 0 || isSendingCandidates}
         >
           <MailIcon className='inline-block mr-2' />

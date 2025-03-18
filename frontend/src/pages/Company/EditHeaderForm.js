@@ -9,6 +9,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   const [formData, setFormData] = useState({
     id: candidateData.id,
     avatar: candidateData.avatar,
+    companyName: candidateData.companyName,
     address1: candidateData.address1,
     address2: candidateData.address2,
     city: candidateData.city,
