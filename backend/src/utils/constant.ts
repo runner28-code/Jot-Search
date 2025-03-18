@@ -124,3 +124,5 @@ const job_filter_exclude_keys = [
   "economist",
   "economy",
   "edit",
+  "editor",
+  "educate",

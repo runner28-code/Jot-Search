@@ -22,3 +22,4 @@ const setupCronJobs = async () => {
       await (await BullhornService.getClient()).getJobs(false, 50);
     } catch (error) {
       consoleLog(error);
+    }

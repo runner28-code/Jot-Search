@@ -130,7 +130,6 @@ export default function RegistrationFormInternal(loggedIn) {
           success: false,
         });
       }, 2000);
-// Temp comment
     }
   }, [submissionObject.success])
 

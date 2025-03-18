@@ -106,6 +106,7 @@ model Lead {
   phone3                String?
   preferredContact      String?
   primarySkills         String?
+  priority              String?
   referredByPerson      String?
   reportToPerson        String?
   role                  String?
@@ -188,3 +189,6 @@ model Company {
 
   city  String?
   state String?
+
+  billingContact   String?
+  billingFrequency String?

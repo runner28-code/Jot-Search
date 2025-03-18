@@ -6,7 +6,6 @@ import SourceIdentifier from '../SourceIdentifier';
 import BackButton from '../BackButton';
 
 export default function DetailsHeader({ type, source }) {
-  let Icon = undefined;
   switch(type) {
     case 'candidate':
       Icon = CandidatesIcon;
@@ -26,6 +25,7 @@ export default function DetailsHeader({ type, source }) {
   }else { 
     headerText = `${titleCasedType} Details`
   }
+  return (<>
     <div className='flex gap-[12px] items-center'>
       <Icon className='h-18 w-auto fill-royalBlue' />
       <h1 className='text-lg vw-480:text-h2 text-royalBlue font-spaceGrotesk font-bold flex items-center'>

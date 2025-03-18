@@ -14,6 +14,7 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
       await sendgrid.send(msg);
   } catch (error) {
       console.log(error);
+      throw error;
   }
 };
 
@@ -28,3 +29,4 @@ export const sendVerification = async (to: string, name: string) => {
   } catch (error: any) {
     console.log('Error during sending invitation');
     console.log(error);
+    console.log(JSON.stringify(error.response.body));

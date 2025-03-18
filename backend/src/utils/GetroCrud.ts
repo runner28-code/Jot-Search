@@ -29,3 +29,4 @@ export const saveCompanies = async (companies: any[]) => {
 							});
 			
 							console.log(`Saved company with ID = ${company.id} successfully`);
+            } catch (error) {

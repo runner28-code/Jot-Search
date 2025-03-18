@@ -43,6 +43,7 @@ export const defaultState = {
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
   function handleChange(e) {
+    setUseExistingResume(e.target.checked);
   }
   return (
     <label
@@ -58,4 +59,3 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
       />
       <p className='text-md ml-2'>Use existing resume</p>
     </label>
-  )

@@ -109,3 +109,5 @@ export class JobController {
       return { success: true };
     } catch (error) {
       consoleLog(error);
+      return { success: false, error };
+    }

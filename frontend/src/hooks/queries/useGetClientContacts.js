@@ -13,3 +13,4 @@ export const useGetClientContacts = ({ count, page, filterKey, filterValue, enab
     { enabled }
   );
 
+  return { clientContacts: data, total: data?.length || 0, error, isLoading };

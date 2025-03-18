@@ -34,3 +34,4 @@ const uploadToS3 = async(req: any, res: any) => {
     res.status(500).send("S3_BUCKET not set")
     return
   }
+

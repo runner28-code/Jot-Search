@@ -4,7 +4,6 @@ export default function urlDecode(decodeString) {
   }
   let decodedString = decodeString;
   decodedString = decodedString.replace(/%20/g, ' ');
-// Temp comment
   decodedString = decodedString.replace(/%2C/g, ',');
   decodedString = decodedString.replace(/%2F/g, '/');
   decodedString = decodedString.replace(/%3A/g, ':');

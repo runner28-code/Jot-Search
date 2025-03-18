@@ -104,3 +104,6 @@ export class CandidateController {
           id,
         },
         data,
+      });
+
+      clearPassword(updatedUser);

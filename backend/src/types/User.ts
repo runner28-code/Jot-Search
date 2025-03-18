@@ -24,3 +24,4 @@ export type User = {
   roles?: string;
 
   description?: string;
+  phone?: string;

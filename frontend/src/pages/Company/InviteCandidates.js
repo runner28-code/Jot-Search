@@ -8,6 +8,7 @@ import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
 
+// Temp comment
 export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
     filtersArr: [],
@@ -90,3 +91,4 @@ export default function InviteCandidates({ company }) {
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>
       </div>
     </section>
+  )

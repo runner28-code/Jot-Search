@@ -6,7 +6,6 @@ import {
   QueryParam,
   JsonController,
   Authorized,
-  CurrentUser,
 } from "routing-controllers";
 import { BigQueryService } from "../services/BigQueryService";
 import { BullhornService } from "../services/BullhornService";
@@ -30,6 +29,7 @@ import { User } from "../types/User";
 import { getDataSource, getFilterConditions } from "../utils";
 import db from "../utils/db";
 
+import {
   CompanyFilter,
   CompanyFilterKey,
   JobFilter,
@@ -90,3 +90,4 @@ export class CompanyController {
     try {
       const candidates_list = await getCandidatesList(body.candidates_ids);
       return {
+        result: await sendCandidatesToEmployers(

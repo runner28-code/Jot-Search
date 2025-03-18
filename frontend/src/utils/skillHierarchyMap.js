@@ -13,7 +13,6 @@ export const roles = {
     'Accounts & Payroll',
     'Corporate Finance',
     'Banking',
-    'Investment',
   ],
   'Marketing': [
     'Brand & Creative Marketing',
@@ -88,6 +87,7 @@ export const skills = [
   'Android',
   'Angular',
   'Animation',
+  'API',
   'AR/VR',
   'Art',
   'Art Direction',
@@ -99,3 +99,5 @@ export const skills = [
   'AWS',
   'Azure',
   'B2B',
+  'Bachelor\'s Degree',
+  'Bachelors Degree',

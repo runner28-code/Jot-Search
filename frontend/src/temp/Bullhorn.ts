@@ -1,5 +1,6 @@
 
 export type Company = {
+    id: string,
     address_address1?: string,
     address_address2?: string,
     address_city?: string,
@@ -82,3 +83,4 @@ export type Job = {
     isInterviewRequired?: string;
     isJobcastPublished?: string;
     isOpen?: string;
+    isPublic?: string;

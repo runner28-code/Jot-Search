@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import LoadingSpinner from '../../components/LoadingSpinner';
 import Header from './Header';
 import HeaderMobile from './HeaderMobile';
 import { getCompanyById } from '../../services/API';
@@ -14,7 +13,6 @@ import DashboardPublicMin from '../../components/DashboardPublicMin';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-// Temp comment
 
 export default function Company() {
   const { width } = useWindowDimensions();

@@ -8,7 +8,6 @@
             "image": "site-backend:dev", 
             "cpu": 1024, 
             "memory": 2048, 
-            "portMappings": [
                 {
                     "containerPort": 5000, 
                     "hostPort": 5000, 
@@ -23,3 +22,4 @@
                    "awslogs-region": "us-east-1",
                    "awslogs-stream-prefix": "ecs"
                 }
+            },

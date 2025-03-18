@@ -3,7 +3,6 @@ import config from "../config";
 import queryString from "query-string";
 import {
   saveCandidates,
-  saveClientContacts,
   saveCompanies,
   saveBullhornJobs,
   saveLeads,
@@ -132,6 +131,7 @@ export class BullhornService {
     console.log(res.status);
     console.log(res);
     console.log("============================ \n");
+    if (res.status === 200) {
       const { access_token, refresh_token } = res.data;
       this.access_token = access_token;
       this.refresh_token = refresh_token;
@@ -249,3 +249,8 @@ export class BullhornService {
             "externalID",
             "feeArrangement",
             "funding",
+            "industryList",
+            "name",
+            "notes",
+            "numEmployees",
+            "numOffices",

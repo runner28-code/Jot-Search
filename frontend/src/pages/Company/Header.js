@@ -55,7 +55,6 @@ function HeaderContent({ companyData }) {
               styles={headerRowTextStyles}
               companyId={companyData.id}
             />
-          </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <FaUsers
               className={headerIconStyles}
@@ -117,4 +116,33 @@ export default function Header({ companyData }) {
         <HeaderContent companyData={companyData} />
       </section>
     </>
+  )
+}
+
+Header.propTypes = {
+  companyData: PropTypes.object.isRequired,
+  handleCompanyUpdate: PropTypes.func.isRequired
+}
+
+function renderCompanyLogo(logoUrl, name) {
+  const { width } = useWindowDimensions();
+  const logoStyles = 'my-auto object-contain';
+  if( width >= 1280 ) {
+    return null;
+  }
+  if (!logoUrl) {
+    return (
+      <div className='p-8 border border-slate-70/50 mr-8'>
+        <BsBuilding className={logoStyles} />
+      </div>
+    )
+  }
+  return (
+    <div className='p-8 border border-slate-70/50 mr-8'>
+      <img
+        className={logoStyles}
+        src={logoUrl}
+        alt={`${name} logo`}
+      />
+    </div>
   )

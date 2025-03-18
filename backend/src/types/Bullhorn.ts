@@ -60,7 +60,6 @@ export type Job = {
     certificationList?: string;
     clientBillRate?: string;
     clientContact?: string;
-    clientCorporationID?: string;
     date_added?: string;
     date_closed?: string;
     date_end?: string;
@@ -83,3 +82,4 @@ export type Job = {
     isJobcastPublished?: string;
     isOpen?: string;
     isPublic?: string;
+    location_address1?: string;

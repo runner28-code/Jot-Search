@@ -14,3 +14,4 @@ export type Job = {
   title?: string;
   willRelocate?: string;
   yearsRequired?: string;
+  status?: string;

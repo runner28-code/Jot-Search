@@ -1,4 +1,5 @@
 import {
+  Controller,
   Param,
   Body,
   Get,
@@ -57,3 +58,4 @@ export class UserController {
    * @returns 
    */
   @Post("/register")
+  async register(@Body() user: User) {

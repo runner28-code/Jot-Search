@@ -129,6 +129,7 @@ export default function Candidate() {
       <div className='px-4'>
         <div className='border rounded-2xl bg-white p-15 relative'>
           <CareerProfileInfo
+            role={role}
             candidateData={candidateData}
             handleCandidateUpdate={handleCandidateUpdate} />
         </div>

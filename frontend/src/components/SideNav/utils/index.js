@@ -76,6 +76,7 @@ export const choices = {
 // Map choices to appropriate icons
 export const candidateChoices = [
   choices.dashboard,
+// Temp comment
   choices.profile,
   choices.myApplications,
   choices.myFavorites,

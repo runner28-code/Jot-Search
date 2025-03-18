@@ -36,7 +36,6 @@ export default function CandidateFilterLayout(props) {
     defaultFilterObject,
     filterObject,
     handleFilterChange,
-// Temp comment
     searchTerm,
     setSearchTerm,
     handleSearchClick,

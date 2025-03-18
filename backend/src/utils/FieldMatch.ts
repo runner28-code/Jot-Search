@@ -17,3 +17,4 @@ export const JobFilter: any = {
   main: {
     id: "id",
     status: "status",
+    skillList: "skillList",

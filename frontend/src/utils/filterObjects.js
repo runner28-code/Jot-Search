@@ -59,7 +59,6 @@ export const defaultJobFilterState = {
 export const candidateFilterObject = {
   'Category': [
     'Any',
-// Temp comment
     ...expertises
   ],
   'Experience': [

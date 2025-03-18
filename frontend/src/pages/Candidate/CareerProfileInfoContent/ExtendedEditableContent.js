@@ -155,6 +155,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       </>}
 
       <FormInput
+        type='single-select'
         name='experience'
         label='Years of Experience'
         required={true}

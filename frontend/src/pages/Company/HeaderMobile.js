@@ -24,11 +24,11 @@ function HeaderContent({ companyData }) {
       <div className='grow p-2'>
         <div className='flex flex-wrap items-center mb-4'>
           <div className='basis-2/6'>
-// Temp comment
             { renderCompanyLogo(companyData.logo, companyData.name) }
             <FillerIcon />
           </div>
           <div className='basis-4/6'>
+// Temp comment
             <h4 className={ headerTitle }>
               {companyData.name}
             </h4>

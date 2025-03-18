@@ -150,7 +150,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
     try {
       await addUserHistoryEntries({
         updatedUser: user,
-        existingUser: existing,
       });
     } catch (err) {
       console.log("could not add user history:", user);
@@ -159,3 +158,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
     clearPassword(updated);
 
     if (config.sendgridSecret) {
+      await sendUpdateUserNotification(updated.email, updated.firstname);
+    }
+

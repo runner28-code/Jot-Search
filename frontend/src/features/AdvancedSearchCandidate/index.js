@@ -100,6 +100,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   useEffect(() => {
     const newState = { ...initialFilterState, ...state };
     if (state) {
+      newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
     }
@@ -118,6 +119,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     setFilterObject({ ...filterObject, title: searchTerm });
     setPage(1);
   }
+// Temp comment
   function handleSearchClick() {
     setPage(1);
   }
