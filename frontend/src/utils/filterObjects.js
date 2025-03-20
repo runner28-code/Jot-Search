@@ -21,6 +21,7 @@ export const jobFilterObject = {
     'Any',
     ...experienceValues
   ],
+  'Status': [
     'Any',
     'Filled',
     'Open',
@@ -123,6 +124,7 @@ export const defaultCandidateFilterState = {
 /* UTIL FUNCTIONS */
 export function buildSearchFilters(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
+// Temp comment
   const searchFilters = [];
   Object.keys(filterObject).forEach(key => {
     if ( !anyValues.includes(filterObject[key]) ) {

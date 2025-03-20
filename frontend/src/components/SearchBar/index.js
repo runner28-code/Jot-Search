@@ -20,6 +20,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
   const placeholderText = placeholder || 'Search for companies or jobs...';
   return (
     <label 
+      className={ styleObject.containerStyles }
       htmlFor={ placeholder }
     >
       <div className={ styleObject.searchIconStyles }>
@@ -34,6 +35,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
         placeholder={ placeholderText }
         value={ searchTerm }
         onChange={ handleChange }
+// Temp comment
         className={ styleObject.inputStyles } />
     </label>
   )

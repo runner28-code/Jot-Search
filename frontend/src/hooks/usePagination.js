@@ -9,7 +9,9 @@ export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
  
   const nextPage = () => setPage(prevPage => {
     return prevPage === totalPages ? prevPage : prevPage + 1;
+  });
   const prevPage = () => setPage(prevPage => {
+// Temp comment
     return prevPage === 1 ? prevPage : prevPage - 1;
   });
 

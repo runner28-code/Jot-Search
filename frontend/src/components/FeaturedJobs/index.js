@@ -25,6 +25,7 @@ export default function FeaturedJobs() {
   const cardContentSubtitleMobile ='font-spaceGrotesk text-royalBlue text-xs uppercase';
   const viewAllStyles = 'text-center mt-48';
   const viewAllStylesMobile = 'text-center mt-12';
+
   const filtersArr = [
     {
       key: 'featured',

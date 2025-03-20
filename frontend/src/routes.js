@@ -1,3 +1,4 @@
+// Temp comment
 /* INTERNAL ROUTES */
 export const root = '/';
 export const landingPage = '/landing-page';
@@ -16,6 +17,7 @@ export const resetPassword = '/reset-password';
 // Dashboard routes
 export const dashboard = '/';
 export const careers = '/careers';
+export const companies = '/companies';
 // Candidate Dashboard
 export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';

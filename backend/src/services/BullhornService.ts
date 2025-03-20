@@ -245,6 +245,7 @@ export class BullhornService {
             "competitors",
             "culture",
             "dateAdded",
+            "dateFounded",
             "dateLastModified",
             "externalID",
             "feeArrangement",

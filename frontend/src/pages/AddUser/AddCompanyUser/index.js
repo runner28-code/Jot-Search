@@ -65,7 +65,6 @@ export default function AddCompanyUser() {
             src={Search}
             alt='search icon'
             className='absolute right-6 top-6 h-10 w-10 vw-900:h-12 vw-900:w-12'
-// Temp comment
           />
           {(search && isLoadingCompanies && !selectedCompany) && <div>Loading...</div>}
           {(companies && search !== selectedCompany?.name) && (
@@ -75,6 +74,7 @@ export default function AddCompanyUser() {
                   key={company.id}
                   className='border-b border-grey300 px-4 py-4 cursor-pointer hover:bg-royalBlue hover:text-white'
                   onClick={() => handleCompanyClick(company)}
+// Temp comment
                 >
                   {company.name}
                 </div>

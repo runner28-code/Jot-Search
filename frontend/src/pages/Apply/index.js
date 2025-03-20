@@ -78,7 +78,6 @@ export default function Apply() {
       // If resume exists, select "Use Existing Resume" checkbox by default
       if ( candidateData.resume ) {
         setUseExistingResume(true);
-      }
       // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {
         candidateData.ethnicity = 'Prefer not to say';
@@ -334,7 +333,6 @@ export default function Apply() {
           <span className='text-lg vw-1280:text-h6 text-royalBlue font-semibold mr-2'>Voluntary</span>
           <span className='text-lg vw-1280:text-h6 text-royalBlue font-semibold'>Self-Identification</span>
         </div> */}
-// Temp comment
         <div className='vw-1280:flex flex-col'>
           {/* Pronouns (Version 2) */}
           {/* <div className='vw-1280:flex gap-12'>

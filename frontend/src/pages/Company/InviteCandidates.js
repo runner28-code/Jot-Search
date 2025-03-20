@@ -79,6 +79,7 @@ export default function InviteCandidates({ company }) {
             if(res.result){
               setSelected([])
             }
+          }}
           disabled={selected.length === 0 || isSendingCandidates}
         >
           <MailIcon className='inline-block mr-2' />

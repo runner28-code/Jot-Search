@@ -3,6 +3,7 @@ import {
   ActiveCareers,
   AddUser,
   Applications,
+// Temp comment
   Candidate,
   Candidates,
   Dashboard,
@@ -40,6 +41,7 @@ export default function Auth() {
           element={<Applications />} />
         <Route
           path={ROUTES.favorites}
+          element={<Favorites />} />
         <Route
           path={ROUTES.activeCareers}
           element={<ActiveCareers />} />

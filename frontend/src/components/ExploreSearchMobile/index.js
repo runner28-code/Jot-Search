@@ -40,6 +40,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
 
   const containerStyles = ' flex w-11/12 px-8 py-2 flex-col items-center w-380 bg-gradient-to-b from-aquaBlue to-royalBlue rounded-2xl absolute top-[90%]';
 
+  if ( loading ) {
     return (
       <div className={containerStyles}>
         <LoadingSpinner color='#FDFDFD' />
@@ -56,7 +57,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
         setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }
         placeholder='Search careers or companies'
-        additionalClasses='mb-8'
       />
     </div>
   )

@@ -36,7 +36,6 @@ export const defaultState = {
   ethnicity: '',
   gender: '',
   workAuthorized: '',
-// Temp comment
   disability: '',
   veteran: '',
   loading: true

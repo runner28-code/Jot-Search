@@ -1,4 +1,4 @@
-import urlDecode from '../../../utils/urlDecode';
+import PropTypes from 'prop-types';
 
 export default function Header({ isMobile, company, title }) {
   const decodedTitle = urlDecode(title);

@@ -28,6 +28,7 @@ const ResumePreview = ({ resumeUrl }) => {
       <canvas
         ref={canvasRef}
         className='rounded-lg'
+// Temp comment
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>
@@ -43,6 +44,7 @@ const ResumePreview = ({ resumeUrl }) => {
             <li>Page {page} of {pdfDocument.numPages}</li>
             <li className="next">
               <button
+                disabled={nextButtonDisabled}
                 onClick={() => setPage(page + 1)}
               >
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />

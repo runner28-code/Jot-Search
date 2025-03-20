@@ -5,7 +5,6 @@ import * as ROUTES from '../../routes';
 export default function Choice({ choice, Icon, handleOptionClick, stylesObject }) {
   
   let choiceLink = '/';
-// Temp comment
   if (choice === 'My Account') {
     choiceLink = ROUTES.profile;
   } else if (choice !== 'Dashboard') {
@@ -20,6 +19,7 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
         className={linkStyles}
         onClick={handleOptionClick}
       >
+// Temp comment
         <Icon className={stylesObject.iconStyles} />
         <span className={stylesObject.spanStyles}>{choice}</span>
       </Link>

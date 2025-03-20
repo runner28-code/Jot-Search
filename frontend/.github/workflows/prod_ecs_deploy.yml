@@ -1,4 +1,5 @@
 name: Prod - ECS Deployment
+
 on:
   push:
     branches:
@@ -8,7 +9,6 @@ env:
   AWS_REGION: 'us-east-1'
   ECR_REPOSITORY: 'site-frontend'
   ECS_SERVICE: 'intulsa-frontend-service-prod'
-  ECS_CLUSTER: 'intulsa-cluster-prod'
   ECS_TASK_DEFINITION: '.github/workflows/prod_task_definition.json'
   CONTAINER_NAME: 'intulsa-frontend-container-prod'
 

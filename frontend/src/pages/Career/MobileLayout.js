@@ -52,8 +52,6 @@ export default function MobileLayout(props) {
               <img
                 src={locationIcon}
                 className='h-8 mr-5' />
-              <p className='text-textBlack text-xs'>{addressString}</p>
-// Temp comment
             </div>
             {/* Remote/Onsite/Hybrid */}
             <div className='flex w-1/2 items-center'>

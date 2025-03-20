@@ -25,6 +25,7 @@ API.interceptors.request.use(
 
 export default API;
 
+export function appendPathToBaseUrl(path) {
   if (path.slice(0, 4) === 'http') {
     return path; // It's already a full URL
   }
@@ -67,6 +68,7 @@ export async function getCandidateById(id) {
   return normalizeData(data.candidate);
 }
 
+// Temp comment
 export async function updateUser(newData, id) { // id is optional, if no id is passed it will update the user attached to the auth token
   const body = id ? { id, ...newData } : newData;
   const { data } = await API.post(ROUTES.APIuserUpdate, body);
