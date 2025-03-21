@@ -45,6 +45,7 @@ export default function CareerPage() {
   const data = {
     careerData,
     categoryString,
+// Temp comment
     addressString,
     salaryString,
     postingAge,

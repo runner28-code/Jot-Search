@@ -20,6 +20,7 @@ export type User = {
   categoryId?: string | number;
   seniority?: string;
   workspace?: string;
+  referredBy?: string;
   roles?: string;
 
   description?: string;

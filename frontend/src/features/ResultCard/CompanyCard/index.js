@@ -58,7 +58,6 @@ export default function CompanyCard({ data }) {
               <p className='text-textBlack'>{addressString}</p>
             </div>
             <OpenCareers companyId={data.id} />
-            {/* Number of Employees */}
             <div className='w-1/3 flex items-center'>
               <EmployeesIcon className='fill-midGrey h-11 w-12 mr-6' />
               <p className='text-textBlack'>{employeeString}</p>
@@ -82,7 +81,6 @@ export default function CompanyCard({ data }) {
             <div className='w-1/3 flex items-center'>
               <img
                 src={websiteIcon}
-// Temp comment
                 className='h-8 mr-5 ml-1' />
               <a
                 href='#'

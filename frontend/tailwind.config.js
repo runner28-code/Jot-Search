@@ -55,6 +55,7 @@ module.exports = {
         disabledGrey: '#C9C9CE',
         magenta: '#EB4A87',
         // Colors included in design but not in Web Style Guide
+        orangeCircle: '#ED8623',
         orangeHeroOverlay: '#F2871F',
         'blue-bg': '#E7F0F8',
         buttonLightBlue: '#00CADB',

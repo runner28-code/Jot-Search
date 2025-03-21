@@ -12,6 +12,7 @@ import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGet
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
+// Temp comment
   candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
@@ -178,7 +179,6 @@ export default function AdvancedSearch({ disabledTabs }) {
         />
       </div>
       <div className={ width >= 990 ? 'vw-990:px-0' : 'px-[5%] vw-990:px-0'}>
-// Temp comment
         <ResultsHeader
           total={totalResults}
           type={activeTab}

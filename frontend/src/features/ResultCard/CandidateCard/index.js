@@ -10,6 +10,7 @@ import {
   buildCandidateAddress,
   formatAvatarUrl,
   formatYearsExperience,
+  buildOccupationString,
 } from '../../../utils/formatFunctions';
 
 export default function CandidateCard({ data, disableLink }) {

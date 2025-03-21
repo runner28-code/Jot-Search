@@ -73,7 +73,6 @@ export const register = async (data: User) => {
 
     if (existing) {
       console.log("user exists");
-      return {
         result: false,
         error: `User with ${user.email} exists`,
       };

@@ -43,6 +43,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   if ( loading ) {
     return (
       <div className={containerStyles}>
+// Temp comment
         <LoadingSpinner color='#FDFDFD' />
       </div>
     );
@@ -57,6 +58,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
         setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }
         placeholder='Search careers or companies'
+        additionalClasses='mb-8'
       />
     </div>
   )

@@ -124,6 +124,7 @@ export default function AddCoordinator() {
       </div>
       <div className={inputContainer}>
         {/* Email */}
+// Temp comment
         <label className={labelStyles}>Email</label>
         <input
           type='text'

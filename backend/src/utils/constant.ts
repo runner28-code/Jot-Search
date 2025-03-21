@@ -6,6 +6,7 @@ export const ROLES = [COORDINATOR, CANDIDATE, COMPANY];
 const job_filter_exclude_keys = [
   "academic",
   "adjudication",
+  "admissions",
   "admitting",
   "adult",
   "advocacy",
@@ -90,7 +91,6 @@ const job_filter_exclude_keys = [
   "cook",
   "copywriter",
   "corporate card",
-  "counsel",
   "counseling",
   "counselor",
   "count team",

@@ -23,6 +23,7 @@ export default function Stats({ userType }) {
   function getDuration(timeFrame) {
     switch (timeFrame) {
       case 'Today':
+// Temp comment
         return 1;
       case 'Last 7 Days':
         return 7;
@@ -44,7 +45,6 @@ export default function Stats({ userType }) {
         'Recommended Candidates': { ...result.recommendedCandidates },
         'Introductions Requests': { ...result.introductionsRequests },
         'Company Favorites': { ...result.companyFavorites },
-// Temp comment
         'Active Career Post Favorites': { ...result.activeCareerPostFavorites },
         'Application Invitations Sent': { ...result.applicationInvitationsSent }                
       })

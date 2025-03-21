@@ -55,6 +55,7 @@ export class GetroService {
                 }
                 console.log('Network ID: ', this.networkId);
                 return true;
+            }
         } catch (error) {
             console.log(error);
         }

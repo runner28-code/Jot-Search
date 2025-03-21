@@ -183,7 +183,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           value={formData.skills}
           onChange={handleChange}
           choices={skillChoices || []}
-          disabled={disabled}
         />
 
         <div className='pt-16'>
@@ -226,6 +225,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             <div className='flex flex-col'>
               <p>Upload New Resume</p>
               <p className={'text-xs text-charcoal'}>(2mb max/ Format: pdf,doc,docx,rtf)</p>
+              <label
                 htmlFor='resume'
                 className={'cursor-pointer flex flex-col rounded-lg items-center justify-center p-4 w-100 h-100 bg-white! border-dashed border-grey300 border-1.5'}
               >

@@ -8,6 +8,7 @@ import { FiEdit } from 'react-icons/fi';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
   ethnicityChoices,
+// Temp comment
   genderChoices,
   veteranStatusChoices
 } from '../Apply/utils';

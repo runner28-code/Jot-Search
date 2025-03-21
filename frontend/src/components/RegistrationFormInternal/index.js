@@ -10,7 +10,6 @@ import {
   roles as roleChoices,
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
-// Temp comment
 import {
   inputValidation,
   formatFormObj,
@@ -395,6 +394,7 @@ export default function RegistrationFormInternal(loggedIn) {
               key={skill}
               label={skill}
               isActive={true}
+// Temp comment
               handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}
             />
           ) : <p className='text-midGrey text-md'>No skills selected</p>}

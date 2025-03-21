@@ -35,6 +35,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   }
   
   const avatarUrl = appendPathToBaseUrl(formData.avatar);
+// Temp comment
   const inputStyles = 'border-lightGrey border-solid border-2 rounded-2xl pl-4 ';
   return (
     <>
@@ -65,6 +66,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             type='text'
             onChange={handleInputChange}
             id='name'
+            name='name'
             value={formData.name}
             className={inputStyles + 'text-h6 w-full'} />
         </div>

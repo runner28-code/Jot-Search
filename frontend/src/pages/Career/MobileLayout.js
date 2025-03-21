@@ -52,6 +52,7 @@ export default function MobileLayout(props) {
               <img
                 src={locationIcon}
                 className='h-8 mr-5' />
+              <p className='text-textBlack text-xs'>{addressString}</p>
             </div>
             {/* Remote/Onsite/Hybrid */}
             <div className='flex w-1/2 items-center'>
@@ -111,7 +112,6 @@ export default function MobileLayout(props) {
       {/* Apply */}
       <div className='flex mt-6'>
         { (role === 'candidate' || role === 'guest') && 
-          <ApplyButton
             datasource={careerData.datasource}
             careerId={careerData.id}
             applicationUrl={careerData.application_path || careerData.url}

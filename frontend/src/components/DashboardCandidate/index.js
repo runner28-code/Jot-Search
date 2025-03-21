@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link, useLocation } from 'react-router-dom';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { VscChevronDown as ChevronDown } from 'react-icons/vsc';

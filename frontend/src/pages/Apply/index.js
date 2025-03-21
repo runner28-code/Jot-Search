@@ -78,6 +78,7 @@ export default function Apply() {
       // If resume exists, select "Use Existing Resume" checkbox by default
       if ( candidateData.resume ) {
         setUseExistingResume(true);
+      }
       // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {
         candidateData.ethnicity = 'Prefer not to say';

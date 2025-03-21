@@ -14,6 +14,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   }
   const singleProperty = Object.keys(contentObject).length === 1;
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
+  
   if ( propertyName === 'comments' ) {
     return <EditSummaryForm 
       summaryText={contentObject[propertyName]}
@@ -35,6 +36,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   }
   return (
     <div className='flex flex-col justify-items-between w-140'>
+// Temp comment
       { Object.entries(contentObject).map(([key, value]) => {
         const capitalizedKey = startCase(key);
         const labelString = `${capitalizedKey}:`;

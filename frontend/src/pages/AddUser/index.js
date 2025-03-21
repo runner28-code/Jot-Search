@@ -15,7 +15,6 @@ export default function AddUser() {
   }
 
   const [formType, setFormType] = useState('Candidate');
-// Temp comment
   function handleDropdownChange(e) {
     setFormType(e.target.value);
   }

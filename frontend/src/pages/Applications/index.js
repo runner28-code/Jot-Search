@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import PageHeader from '../../components/PageHeader';
 import {BsClipboardCheck} from 'react-icons/bs';
-// Temp comment
 import ResultContainer from '../../features/ResultContainer';
 import { getAppliedJobs } from '../../services/API';
 import AuthService from '../../services/auth';
@@ -57,6 +56,7 @@ export default function Applications() {
     <section>
       <PageHeader
         headerText='My InTulsa Featured Applications'
+// Temp comment
         IconComponent={BsClipboardCheck}
       />
       <div className='px-8'>
