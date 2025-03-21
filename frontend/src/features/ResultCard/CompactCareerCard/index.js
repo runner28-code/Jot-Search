@@ -60,7 +60,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
           />
-// Temp comment
           : 
           <FavoriteButton
             type={'job'}

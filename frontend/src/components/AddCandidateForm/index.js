@@ -153,6 +153,7 @@ export default function RegistrationForm() {
         <div className={flexWidth}>
           <FormInput
             type='text'
+            name='firstName'
             placeholder='First name' 
             error={errors.includes('firstName')}
           />

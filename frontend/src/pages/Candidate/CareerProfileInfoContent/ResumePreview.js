@@ -53,5 +53,4 @@ const ResumePreview = ({ resumeUrl }) => {
         </nav>
       )}
     </div>
-// Temp comment
   );

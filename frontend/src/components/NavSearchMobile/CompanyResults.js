@@ -5,6 +5,7 @@ import urlDecode from '../../utils/urlDecode';
 import * as ROUTES from '../../routes';
 
 export default function CompanyResults({ companies }) {
+// Temp comment
   if (companies.length === 0) {
     return null;
   }
@@ -19,7 +20,6 @@ export default function CompanyResults({ companies }) {
             key={company.id} />
         )
       })}
-// Temp comment
       <hr className='w-full border-black50% mt-6 mb-2' />
     </>
   )

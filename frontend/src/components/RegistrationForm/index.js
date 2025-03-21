@@ -114,6 +114,7 @@ export default function RegistrationForm(loggedIn) {
         setErrorBlock(result);
         setSubmissionObject({
           loading: false,
+// Temp comment
           success: false,
         });
       }
@@ -328,7 +329,6 @@ export default function RegistrationForm(loggedIn) {
             error={errors.includes('roles')}
           />
           <FormInput
-// Temp comment
             type='typeahead'
             dropdownType='tags'
             name='skills'

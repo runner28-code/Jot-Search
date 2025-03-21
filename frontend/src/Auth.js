@@ -39,6 +39,7 @@ export default function Auth() {
           path={ROUTES.applications}
           element={<Applications />} />
         <Route
+          path={ROUTES.favorites}
           element={<Favorites />} />
         <Route
           path={ROUTES.activeCareers}
@@ -46,6 +47,7 @@ export default function Auth() {
         <Route
           path={ROUTES.candidates}
           element={<Candidates />} />
+// Temp comment
         <Route
           path={ROUTES.addUser}
           element={<AddUser />} />

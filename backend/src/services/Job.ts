@@ -26,7 +26,6 @@ export const createJob = async (job: Job) => {
     return {
       result: true,
       data: newJob,
-    };
   } catch (err) {
     console.error(err);
     return {

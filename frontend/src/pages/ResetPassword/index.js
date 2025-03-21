@@ -35,6 +35,7 @@ export default function ResetPassword() {
     if( password === confirmPassword ) {
       setMatch(true);
       const { password } = event.target;
+// Temp comment
       const res = await API.post(ROUTES.APIResetPassword, {
         new_password: password.value,
         token: token
@@ -108,6 +109,7 @@ export default function ResetPassword() {
             </Link>
           </div>
           { renderMatch() }
+          { renderSuccess() }
           { renderError() }
           <label className={labelStyle}>Set Password</label>
           <input

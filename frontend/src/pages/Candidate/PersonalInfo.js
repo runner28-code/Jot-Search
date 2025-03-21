@@ -6,7 +6,6 @@ import FormInput from '../../components/FormInput';
 import { SwitchButton } from './PreferenceItem';
 import { FiEdit } from 'react-icons/fi';
 import useWindowDimensions from '../../hooks/windowDimensions';
-import {
   ethnicityChoices,
   genderChoices,
   veteranStatusChoices
@@ -22,6 +21,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   if ( role === 'company' ) {
     return null;
   }
+  const [formData, setFormData] = useState({
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     email: candidateData.email || '',

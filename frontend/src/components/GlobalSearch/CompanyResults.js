@@ -6,6 +6,7 @@ import * as ROUTES from '../../routes';
 
 export default function CompanyResults({ companies }) {
   if (companies.length === 0) {
+// Temp comment
     return null;
   }
 
@@ -15,7 +16,6 @@ export default function CompanyResults({ companies }) {
       { companies.map(company => {
         return (
           <CompanyResult 
-// Temp comment
             company={company} 
             key={company.id} />
         )

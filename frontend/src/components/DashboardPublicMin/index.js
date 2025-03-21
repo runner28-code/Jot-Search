@@ -38,7 +38,6 @@ export default function DashboardPublicMin({type}) {
       <div className='flex items-center justify-between w-full'>
         <div className='basis-1/12'>
           <button
-// Temp comment
             className='text-white underline text-lg'
             onClick={() => navigate(-1)}
           >

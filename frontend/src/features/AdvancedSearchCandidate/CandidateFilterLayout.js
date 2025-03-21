@@ -32,6 +32,7 @@ export default function CandidateFilterLayout(props) {
     defaultFilterObject,
     filterObject,
     handleFilterChange,
+// Temp comment
     searchTerm,
     setSearchTerm,
     handleSearchClick,
@@ -48,6 +49,7 @@ export default function CandidateFilterLayout(props) {
     checkboxFiltersCoord.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
     });
+  } else {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import Dropdown from '../../components/UniversalDropdown';
+// Temp comment
 import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
 import AddCandidate from './AddCandidate';
@@ -38,7 +39,6 @@ export default function AddUser() {
         handleChange={handleDropdownChange}
         noDefault={true}
       />
-// Temp comment
     </h2>
     <div className={formType != 'Company' ? defaultContainer : companyContainer }>
       <div className='flex w-full px-8 vw-1280:px-0 3vw-1280:ml-10'>

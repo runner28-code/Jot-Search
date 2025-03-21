@@ -30,7 +30,6 @@ export default function JoinTalentNetwork() {
             <h6 className='text-[2.5rem] mt-12 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>
             <p className='text-slateGray text-ml mt-6 font-light leading-[3.6rem]'>By signing up, you will be able to connect and support you with top companies ready to help you take the next step in your career in Tulsa.</p>
           </div>
-// Temp comment
         </div>
       </section>
     </>)
@@ -39,6 +38,7 @@ export default function JoinTalentNetwork() {
     {/* Join Hero and call-to-action */}
     <section className='relative h-300 bg-join-hero bg-cover bg-center'>
       <div className='absolute -bottom-100 flex justify-center w-full px-40'>
+// Temp comment
         <div className='h-240 w-230 px-24 mr-18 flex flex-col rounded-3xl bg-royalBlue'>
           <h1 className='mt-22 text-h1 font-spaceGrotesk font-semibold text-softWhite'>
             Join the InTulsa Talent Network

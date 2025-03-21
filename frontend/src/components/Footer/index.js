@@ -189,7 +189,6 @@ export default function Footer() {
               Privacy Policy
           </a>
           <span> | </span>
-          <a
             href={ROUTES.termsOfService}
             className='underline'
             target='_blank'

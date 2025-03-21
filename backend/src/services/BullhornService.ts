@@ -172,6 +172,7 @@ export class BullhornService {
     }
   }
 
+  async login(): Promise<boolean> {
     console.log("\n***** login *****");
     let retryNo = 0;
     while (retryNo < 3) {
@@ -226,7 +227,6 @@ export class BullhornService {
     let repeatErr = 0;
 
     while (repeatErr < 3) {
-      console.log(`\nBullhorn_GET_COMPANY: ${total} / ${offset}`);
       try {
         const query = queryString.stringify({
           BhRestToken: this.BhRestToken,

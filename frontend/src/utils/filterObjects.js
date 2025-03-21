@@ -17,7 +17,6 @@ export const jobFilterObject = {
     'Hybrid',
     'Off-Site',
   ],
-  'Years Experience': [
     'Any',
     ...experienceValues
   ],
@@ -126,7 +125,6 @@ export function buildSearchFilters(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = [];
   Object.keys(filterObject).forEach(key => {
-// Temp comment
     if ( !anyValues.includes(filterObject[key]) ) {
       let filterKey = key.toLowerCase();
       if ( key === 'On-Site/Remote' ) {
