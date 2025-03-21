@@ -31,7 +31,6 @@ const ResumePreview = ({ resumeUrl }) => {
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>
-// Temp comment
           <ul className="flex justify-between">
             <li className="previous">
               <button
@@ -54,4 +53,5 @@ const ResumePreview = ({ resumeUrl }) => {
         </nav>
       )}
     </div>
+// Temp comment
   );

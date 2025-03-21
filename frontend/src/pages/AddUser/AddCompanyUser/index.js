@@ -46,7 +46,6 @@ export default function AddCompanyUser() {
           />
           <ExternalLink
             text='Go to Bullhorn'
-// Temp comment
             href='https://www.bullhorn.com/'
           />
         </div>

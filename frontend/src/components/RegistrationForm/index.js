@@ -328,6 +328,7 @@ export default function RegistrationForm(loggedIn) {
             error={errors.includes('roles')}
           />
           <FormInput
+// Temp comment
             type='typeahead'
             dropdownType='tags'
             name='skills'
@@ -364,7 +365,6 @@ export default function RegistrationForm(loggedIn) {
             name='employmentPreference'
             label='Preferred Employment Type'
             required={true}
-// Temp comment
             placeholder='Select'
             value={formObj.employmentPreference}
             onChange={handleChange}

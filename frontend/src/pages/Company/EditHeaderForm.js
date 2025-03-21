@@ -35,7 +35,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   }
   
   const avatarUrl = appendPathToBaseUrl(formData.avatar);
-// Temp comment
   const inputStyles = 'border-lightGrey border-solid border-2 rounded-2xl pl-4 ';
   return (
     <>

@@ -8,6 +8,7 @@ import {
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {
+  inputValidation,
   formatFormObj,
   renderButtonOrLoading,
   renderErrorBlock,
@@ -152,7 +153,6 @@ export default function RegistrationForm() {
         <div className={flexWidth}>
           <FormInput
             type='text'
-            name='firstName'
             placeholder='First name' 
             error={errors.includes('firstName')}
           />

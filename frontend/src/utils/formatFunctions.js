@@ -54,7 +54,6 @@ export function convertUserToCandidate(user) {
     address_city: user.city || '',
     address_state: user.state || '',
     address_zip: user.zip || '',
-    workAuthorized: user.workAuthorized || false,
     referredBy: user.referredBy || '',
     gender: user.gender || '',
     ethnicity: user.ethnicity || '',

@@ -183,6 +183,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           value={formData.skills}
           onChange={handleChange}
           choices={skillChoices || []}
+          disabled={disabled}
         />
 
         <div className='pt-16'>
@@ -190,7 +191,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             type='text'
             name='companyName'
             value={formData.companyName}
-            onChange={handleChange}
             label='Company Name'
             disabled={disabled}
           />

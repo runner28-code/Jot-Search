@@ -22,7 +22,6 @@ export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
   const { width } = useWindowDimensions();
   const {
-// Temp comment
     defaultFilterObject,
     filterObject,
     handleFilterChange,
@@ -39,6 +38,7 @@ export default function CareerFilterLayout(props) {
     });
   } else {
     dropdownFilters.forEach(filter => {
+// Temp comment
       dropdownFilterObject[filter] = filterObject[filter];
     });
   }

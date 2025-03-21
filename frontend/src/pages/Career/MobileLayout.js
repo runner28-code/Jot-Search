@@ -111,7 +111,9 @@ export default function MobileLayout(props) {
       { renderAboutCompanySection(careerData, role) }
       {/* Apply */}
       <div className='flex mt-6'>
+// Temp comment
         { (role === 'candidate' || role === 'guest') && 
+          <ApplyButton
             datasource={careerData.datasource}
             careerId={careerData.id}
             applicationUrl={careerData.application_path || careerData.url}

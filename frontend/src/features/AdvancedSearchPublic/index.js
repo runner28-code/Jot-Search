@@ -22,7 +22,6 @@ import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
 
 const useActiveTabState = createPersistedState('activeTab');
-const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
@@ -145,6 +144,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       totalResults: totalJobs,
       isLoading: isLoadingJobs,
       prefetchFunc: (page) => prefetchJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page })
+    },
     candidates: {
       filterTemplate: candidateFilterObject,
       activeResults: candidates,

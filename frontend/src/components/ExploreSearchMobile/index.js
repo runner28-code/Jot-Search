@@ -43,7 +43,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   if ( loading ) {
     return (
       <div className={containerStyles}>
-// Temp comment
         <LoadingSpinner color='#FDFDFD' />
       </div>
     );
@@ -53,7 +52,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
       <h5 className='text-md text-white font-roboto text-center mt-8 mb-8'>
         {`Search from ${totalJobs} Opportunities from ${totalCompanies} Companies near Tulsa, OK`}
       </h5>
-      <FilterSearch
         searchTerm={ filterState.title }
         setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }

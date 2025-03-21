@@ -17,3 +17,4 @@ export const veteranStatusMap = {
   N: 'None of the above'
 };
 
+export const genderMap = {

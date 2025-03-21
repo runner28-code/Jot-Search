@@ -298,6 +298,7 @@ export default function RegistrationFormInternal(loggedIn) {
         />
         <h3 className={titleStyles}>Career profile</h3>
         {/* Open to Relocation */}
+// Temp comment
         <div className='my-8'>
           <label className='block text-textBlack mb-2.5'>Open to Relocation? *
           </label>
@@ -394,7 +395,6 @@ export default function RegistrationFormInternal(loggedIn) {
               key={skill}
               label={skill}
               isActive={true}
-// Temp comment
               handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}
             />
           ) : <p className='text-midGrey text-md'>No skills selected</p>}

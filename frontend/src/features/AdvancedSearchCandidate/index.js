@@ -22,6 +22,7 @@ import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+// Temp comment
 const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
 

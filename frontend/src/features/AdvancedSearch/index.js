@@ -12,7 +12,6 @@ import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGet
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
-// Temp comment
   candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
@@ -26,6 +25,7 @@ import { useLocation } from 'react-router-dom';
 const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
 
+// Temp comment
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'careers', 'companies'],
   company: ['careers', 'candidates' ],

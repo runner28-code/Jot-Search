@@ -17,7 +17,6 @@ export default function ResetPassword() {
   const token = queryParams.get('token');
 
   const handlePassword = (event) => {
-// Temp comment
     setPassword(event.target.value);
   }
   const handleConfirmPassword = (event) => {
@@ -109,7 +108,6 @@ export default function ResetPassword() {
             </Link>
           </div>
           { renderMatch() }
-          { renderSuccess() }
           { renderError() }
           <label className={labelStyle}>Set Password</label>
           <input

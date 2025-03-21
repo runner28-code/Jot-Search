@@ -13,6 +13,7 @@ import LinkedIn from '../../assets/icons/linkedin-circle.svg';
 import Globe from '../../assets/icons/globe.svg';
 import Triangle from '../../assets/icons/triangle.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+// Temp comment
 import { FaUsers } from 'react-icons/fa';
 import { BsBuilding } from 'react-icons/bs';
 
@@ -58,7 +59,6 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <FaUsers
-// Temp comment
               className={headerIconStyles}
             />
             <p className={headerRowTextStyles}>{companyData.numEmployees} Employees</p>

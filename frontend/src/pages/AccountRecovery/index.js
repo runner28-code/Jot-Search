@@ -81,7 +81,6 @@ export default function AccountRecovery() {
       </div>
       {/* Assistance call-to-action */}
       <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
-// Temp comment
         <span>Need Help? Just ask </span>
         <a
           href='mailto:help@intulsa.com'

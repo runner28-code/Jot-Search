@@ -1,5 +1,4 @@
 import * as ROUTES from '../../routes';
-// Temp comment
 
 export default function BusinessBooming() {
   return (
@@ -12,6 +11,7 @@ export default function BusinessBooming() {
           href={ROUTES.lifeInTulsa}
           target='_blank'
           rel='noreferrer'
+// Temp comment
           className='flex items-center justify-center h-28 w-112 bg-white mt-22 px-18 rounded-lg'
         >
           <span className='text-orangeHeroOverlay tracking-wide'>Learn More About Tulsa</span>

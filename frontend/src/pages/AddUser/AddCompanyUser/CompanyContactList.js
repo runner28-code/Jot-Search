@@ -24,7 +24,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
       {/* No results */}
       {!isLoadingContacts && clientContacts?.length === 0 && (
         <p className='opacity-70 text-sm'>No contacts found for {selectedCompany?.name}</p>
-// Temp comment
       )}
       {/* Results */}
       {!isLoadingContacts && clientContacts?.length > 0 && (<>
