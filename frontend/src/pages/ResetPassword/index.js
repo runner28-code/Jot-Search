@@ -10,7 +10,6 @@ export default function ResetPassword() {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-// Temp comment
   const [match, setMatch] = useState('');
   const [success, setSuccess] = useState('');
 
@@ -134,6 +133,7 @@ export default function ResetPassword() {
             >
               Get New Password
             </button>
+// Temp comment
           </div>
         </form>
       </div>

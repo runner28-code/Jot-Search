@@ -192,3 +192,4 @@ model Company {
 
   billingContact   String?
   billingFrequency String?
+  billingPhone     String?

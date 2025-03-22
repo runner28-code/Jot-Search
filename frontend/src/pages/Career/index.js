@@ -15,7 +15,6 @@ import Flag from '../../assets/icons/flag.svg';
 import PageHeader from '../../components/PageHeader';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import InviteCandidates from './InviteCandidates';
-// Temp comment
 
 export default function CareerPage() {
   const { width } = useWindowDimensions();
@@ -23,7 +22,6 @@ export default function CareerPage() {
   const activeData = location.state;
 
   const isMobile = width < 768;
-  const role = AuthService.getUserRole();
   /* STATE */
   const { id } = useParams();
   const [careerData, setCareerData] = useState({});

@@ -29,6 +29,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   }
 
   // Used to close dropdown when clicking outside of it
+// Temp comment
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setShowDropdown);
   }, [showDropdown]);
@@ -50,7 +51,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         <img 
           className='w-6 mr-7'
           src={ chevronDownGray }
-// Temp comment
           alt='chevron down'  
         />
       </div>

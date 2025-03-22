@@ -6,7 +6,6 @@ import {
   saveClientContacts,
   saveCompanies,
   saveBullhornJobs,
-  saveLeads,
 } from "../utils/BullhornCrud";
 import fs from "fs";
 import { checkForJobFilter, sleep } from "../utils";

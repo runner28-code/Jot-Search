@@ -92,3 +92,4 @@ export class CompanyController {
       const candidates_list = await getCandidatesList(body.candidates_ids);
       return {
         result: await sendCandidatesToEmployers(
+          candidates_list,

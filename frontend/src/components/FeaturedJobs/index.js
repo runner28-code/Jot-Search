@@ -30,6 +30,7 @@ export default function FeaturedJobs() {
     {
       key: 'featured',
       value: true
+// Temp comment
     }
   ];
 
@@ -51,6 +52,7 @@ export default function FeaturedJobs() {
                   to={`${ROUTES.careers}/${career.id}`}
                   key={index}
                   className={ width >= 990 ? linkStyles : linkStylesMobile }
+                >
                   <div className={ width >= 990 ? cardStyles : cardStylesMobile }>
                     { width >= 990 ? <RenderImage image={career.logo} /> : <RenderImageMobile image={career.logo} />}
                     <div className={width >= 990 ? cardContentStyles : cardContentStylesMobile}>

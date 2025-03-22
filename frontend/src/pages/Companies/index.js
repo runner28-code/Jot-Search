@@ -23,7 +23,6 @@ export default function Companies() {
   const sectionStyles = '';
 
   function togglePassState() {
-// Temp comment
     setToggle(toggle => !toggle);
   }
 
@@ -41,7 +40,6 @@ export default function Companies() {
             : ''
         }>
         <RenderAdvancedSearch
-          loggedIn={loggedIn}
           toggle={toggle}
           userType={userType}
         />

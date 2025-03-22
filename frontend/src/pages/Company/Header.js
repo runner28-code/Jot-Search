@@ -17,7 +17,6 @@ import { FaUsers } from 'react-icons/fa';
 import { BsBuilding } from 'react-icons/bs';
 
 function HeaderContent({ companyData }) {
-// Temp comment
   const { width } = useWindowDimensions();
   const headerRowStyles = 'flex mb-8 flex-row justify-between flex-wrap';
   const headerIconStyles = 'h-12 w-10 mr-3 fill-midGrey';
@@ -39,6 +38,7 @@ function HeaderContent({ companyData }) {
         </div>
         <div>
           { renderBusinessSector(companyData.businessSectorList, 'text-lg font-spaceGrotesk text-royalBlue mb-8') }
+// Temp comment
         </div>
         <div className={headerRowStyles}>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>

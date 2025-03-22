@@ -67,7 +67,6 @@ const job_filter_exclude_keys = [
   "cashier",
   "casino",
   "chef",
-  "chemical",
   "chemist",
   "child",
   "circulation",
@@ -126,3 +125,4 @@ const job_filter_exclude_keys = [
   "edit",
   "editor",
   "educate",
+  "education",

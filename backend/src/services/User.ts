@@ -155,7 +155,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
     } catch (err) {
       console.log("could not add user history:", user);
       console.log(err);
-    }
     clearPassword(updated);
 
     if (config.sendgridSecret) {

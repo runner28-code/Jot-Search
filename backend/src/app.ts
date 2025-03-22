@@ -11,7 +11,6 @@ import { findUserByEmail } from "./services/User";
 import { genUUID } from "./utils";
 import fs from "fs";
 import AWS from "aws-sdk"
-import { IncomingForm } from "formidable"
 
 dotenv.config();
 
@@ -23,6 +22,7 @@ try {
   endpoint: process.env.S3_ENDPOINT,
   s3ForcePathStyle: true,
   signatureVersion: "v4",
+})
 } catch (error) {
   console.error(error)
 }

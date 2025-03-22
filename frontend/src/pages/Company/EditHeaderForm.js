@@ -185,6 +185,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               Zip:
               </label>
               <input 
+                type='text'
                 onChange={handleInputChange}
                 id='zip'
                 name='zip'
@@ -231,7 +232,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         <div className='flex justify-evenly mt-8'>
           <MdCancel 
             className='w-24 h-24 cursor-pointer fill-rose-500'
-            onClick={handleCancel} />
           <MdCheckCircle 
             className='w-24 h-24 cursor-pointer fill-emerald-500'
             onClick={handleSubmit} />

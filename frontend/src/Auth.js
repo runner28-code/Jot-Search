@@ -43,6 +43,7 @@ export default function Auth() {
           element={<Favorites />} />
         <Route
           path={ROUTES.activeCareers}
+// Temp comment
           element={<ActiveCareers />} />
         <Route
           path={ROUTES.candidates}

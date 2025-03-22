@@ -10,7 +10,6 @@ import searchGray from '../../assets/images/search-gray.svg';
 import searchWhite from '../../assets/images/search-white.webp';
 
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
-// Temp comment
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
@@ -29,7 +28,6 @@ export default function NavSearchMobile({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
   const [forceHidden, setForceHidden] = useState(false);
-  const userType = AuthService.getUserRole();
 
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
