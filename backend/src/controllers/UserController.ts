@@ -1,7 +1,6 @@
 import {
   Controller,
   Param,
-  Body,
   Get,
   Post,
   Put,
@@ -59,3 +58,4 @@ export class UserController {
    */
   @Post("/register")
   async register(@Body() user: User) {
+    let data = { ...user };

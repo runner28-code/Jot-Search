@@ -11,3 +11,4 @@ import { DATASET_MAIN, Tables } from "../types/Common";
     try {
         console.log('/// START ENCRYPT ALL PASSWORDS');
 
+        const query = `

@@ -117,3 +117,26 @@ export default function DesktopLayout(props) {
       currentCareerId={careerData.externalId}
     />
   </>)
+}
+
+DesktopLayout.propTypes = {
+  data: PropTypes.shape({
+    careerData: PropTypes.object.isRequired,
+    categoryString: PropTypes.string.isRequired,
+    role: PropTypes.string.isRequired,
+    addressString: PropTypes.string.isRequired,
+    postingAge: PropTypes.string.isRequired,
+    salaryString: PropTypes.string.isRequired,
+  }).isRequired
+}
+
+function renderLogo(logo) {
+  if (!logo) {
+    return <div className='w-48 h-48 flex justify-center items-center border border-smokeGray border-solid object-contain mr-10'>
+      <CareerIcon className='w-30 h-30 fill-royalBlue' />
+    </div>
+  }
+  return <img
+    src={logo}
+    className='w-48 h-48 object-contain mr-10'
+  />

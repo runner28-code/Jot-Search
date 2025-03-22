@@ -118,6 +118,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     setPage(1);
   }
   function handleSearchClick() {
+// Temp comment
     setPage(1);
   }
 
@@ -192,7 +193,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
             filterProps={filterProps}
           />
         </div>
-// Temp comment
       </div>
       <ResultsHeader
         total={totalResults}

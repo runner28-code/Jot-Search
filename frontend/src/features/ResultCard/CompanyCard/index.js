@@ -30,6 +30,7 @@ export default function CompanyCard({ data }) {
   }
   return (
     <div
+// Temp comment
       className='relative w-full'
       key={data.id}
     >

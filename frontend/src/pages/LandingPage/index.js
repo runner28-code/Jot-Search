@@ -4,6 +4,7 @@ import ExploreSearchMobile from '../../components/ExploreSearchMobile';
 import ExpertiseLinks from '../../components/ExpertiseLinks';
 import ExpertiseLinksMobile from '../../components/ExpertiseLinksMobile';
 import JoinTalentNetwork from '../../components/JoinTalentNetwork';
+// Temp comment
 import FeaturedJobs from '../../components/FeaturedJobs';
 import FeaturedCompanies from '../../components/FeaturedCompanies';
 import FeaturedCompaniesMobile from '../../components/FeaturedCompaniesMobile';

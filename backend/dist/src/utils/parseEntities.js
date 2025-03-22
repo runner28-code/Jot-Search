@@ -7,7 +7,6 @@ const parseBullhornCandidateToUser = (data) => {
     const user = {
         externalId: data.id,
         firstname: data.firstName,
-        lastname: data.lastName,
         gender: data.gender,
         email: data.email,
         role: "candidate",

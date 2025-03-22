@@ -295,6 +295,7 @@ export default function RegistrationForm(loggedIn) {
           </div>
           {/* Experience */}
           <FormInput
+// Temp comment
             type='single-select'
             name='experience'
             label='Years of Experience'

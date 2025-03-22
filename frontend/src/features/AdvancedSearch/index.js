@@ -143,6 +143,7 @@ export default function AdvancedSearch({ disabledTabs }) {
       totalResults: totalCompanies,
       isLoading: isLoadingCompanies,
       prefetchFunc: (page) => prefetchCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page })
+    }
   }
 
   const validActiveTab = activeTab === 'jobs' ? 'careers' : activeTab;

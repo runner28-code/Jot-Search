@@ -21,6 +21,6 @@ export type User = {
   seniority?: string;
   workspace?: string;
   referredBy?: string;
+  roles?: string;
 
-  description?: string;
   phone?: string;

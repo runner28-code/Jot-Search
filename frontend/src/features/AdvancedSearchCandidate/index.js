@@ -146,13 +146,13 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       activeResults: jobs,
       totalResults: totalJobs,
       isLoading: isLoadingJobs,
-// Temp comment
       prefetchFunc: (page) => prefetchJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page })
     },
     candidates: {
       filterTemplate: candidateFilterObject,
       activeResults: candidates,
       totalResults: totalCandidates,
+// Temp comment
       isLoading: isLoadingCandidates,
       prefetchFunc: (page) => prefetchCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page })
     },

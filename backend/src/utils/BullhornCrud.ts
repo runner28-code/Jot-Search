@@ -83,3 +83,4 @@ export const saveCompanies = async (companies: any[]) => {
     }
 
     return { result: true };
+  } catch (error: any) {

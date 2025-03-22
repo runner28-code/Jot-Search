@@ -17,6 +17,7 @@ export default function GlobalSearch({ placeholder }) {
   const [ results, setResults ] = useState({
     jobs: [],
     companies: [],
+    candidates: [],
     loading: false,
     forceHidden: true
   });
@@ -61,7 +62,6 @@ export default function GlobalSearch({ placeholder }) {
     };
 
     setResults( resultsObject );
-  }
 
   /* Clear state on page change */
   useEffect( () => {

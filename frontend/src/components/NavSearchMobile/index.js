@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
@@ -31,6 +30,7 @@ export default function NavSearchMobile({ placeholder }) {
   const userType = AuthService.getUserRole();
 
   const getFiltersByTab = (tab) => {
+    if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,

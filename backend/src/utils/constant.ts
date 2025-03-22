@@ -93,7 +93,6 @@ const job_filter_exclude_keys = [
   "corporate card",
   "counsel",
   "counseling",
-  "counselor",
   "count team",
   "court",
   "credit",
@@ -127,3 +126,4 @@ const job_filter_exclude_keys = [
   "editor",
   "educate",
   "education",
+  "educator",

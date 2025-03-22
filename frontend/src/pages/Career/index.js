@@ -20,6 +20,7 @@ export default function CareerPage() {
   const { width } = useWindowDimensions();
   const location = useLocation();
   const activeData = location.state;
+
   const isMobile = width < 768;
   const role = AuthService.getUserRole();
   /* STATE */
@@ -65,6 +66,7 @@ export default function CareerPage() {
       className={ width <= 990 ? containerStyles
         : loggedIn ? containerStyles 
           : containerStyles + ' px-[15%]'}
+// Temp comment
     >
       { renderNotification(activeData, careerData) }
       {

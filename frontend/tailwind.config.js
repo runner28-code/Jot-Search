@@ -2,6 +2,7 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
+// Temp comment
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
   ],
@@ -67,3 +68,4 @@ module.exports = {
         pinkSquare: '#EB4A87',
         orangeSquare: '#F2871F',
         darkBlue: '#001B3C',
+        yellowSquare: '#F4D12E',

@@ -38,12 +38,12 @@ export const roles = {
     'Entrepreneurship'
   ],
   'Other': [
+// Temp comment
     'Education',
     'Healthcare',
     'Legal',
     'Misc. Science',
     'Other'
-// Temp comment
   ],
   'Software & Engineering': [
     'AI Machine Learning',
@@ -103,3 +103,4 @@ export const skills = [
   'B2B',
   'Bachelor\'s Degree',
   'Bachelors Degree',
+  'Banking',

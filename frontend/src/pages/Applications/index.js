@@ -51,6 +51,7 @@ export default function Applications() {
     });
   }
 
+// Temp comment
   const { width } = useWindowDimensions();
   return (
     <section>

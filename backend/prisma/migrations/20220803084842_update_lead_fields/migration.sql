@@ -5,3 +5,4 @@
   - The `employmentPreference` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `address_country_id` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `category` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.
+  - The `clientCorporation` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.

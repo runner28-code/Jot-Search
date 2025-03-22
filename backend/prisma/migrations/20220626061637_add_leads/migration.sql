@@ -15,3 +15,4 @@ CREATE TABLE "Lead" (
     "comments" TEXT,
     "companyName" TEXT,
     "companyURL" TEXT,
+    "conversionSource" TEXT,

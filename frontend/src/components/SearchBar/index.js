@@ -36,6 +36,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
         value={ searchTerm }
         onChange={ handleChange }
         className={ styleObject.inputStyles } />
-    </label>
 // Temp comment
+    </label>
   )

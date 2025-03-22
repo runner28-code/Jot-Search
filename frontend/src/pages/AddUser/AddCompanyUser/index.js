@@ -22,6 +22,7 @@ export default function AddCompanyUser() {
   }
 
   const paragraphStyles = 'opacity-70 mb-8';
+  let titleStyles = 'font-spaceGrotesk items-center text-md vw-900:text-xl mb-8 ';
   let containerStyles = 'border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12 px-6 vw-900:px-14 ';
 
   return (
@@ -48,6 +49,7 @@ export default function AddCompanyUser() {
             href='https://www.bullhorn.com/'
           />
         </div>
+// Temp comment
       </div>
       <div className={ containerStyles + 'bg-white mt-12'}>
         <h2 className={ titleStyles }>Step 2: Assign Company Contact(s)</h2>

@@ -32,3 +32,4 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     status: data.status,
     username: data.username,
 
+    companyName: data.companyName,

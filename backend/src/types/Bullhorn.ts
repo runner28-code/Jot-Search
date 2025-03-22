@@ -84,3 +84,5 @@ export type Job = {
     isOpen?: string;
     isPublic?: string;
     location_address1?: string;
+    location_address2?: string;
+    location_city?: string;

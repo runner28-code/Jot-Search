@@ -20,3 +20,4 @@ jobs:
     environment: dev
 
     steps:
+    - name: Checkout

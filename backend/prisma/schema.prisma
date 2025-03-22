@@ -193,3 +193,5 @@ model Company {
   billingContact   String?
   billingFrequency String?
   billingPhone     String?
+
+  branchId String?

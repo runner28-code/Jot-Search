@@ -93,3 +93,4 @@ export class CompanyController {
       return {
         result: await sendCandidatesToEmployers(
           candidates_list,
+          body.employers_emails

@@ -255,3 +255,7 @@ export class BullhornService {
             "notes",
             "numEmployees",
             "numOffices",
+            "phone",
+            "status",
+            "taxRate",
+            "tickerSymbol",

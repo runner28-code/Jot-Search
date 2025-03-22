@@ -14,7 +14,6 @@ import AWS from "aws-sdk"
 import { IncomingForm } from "formidable"
 
 dotenv.config();
-
 let s3: any;
 try {
   s3 = new AWS.S3({
