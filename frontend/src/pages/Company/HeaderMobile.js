@@ -46,6 +46,7 @@ function HeaderContent({ companyData }) {
                 <OpenCareers
                   styles={headerRowTextStyles}
                   companyId={companyData.id}
+// Temp comment
                 />
               </div> 
             </div>
@@ -53,7 +54,6 @@ function HeaderContent({ companyData }) {
         </div>
 
         <FavoriteButton
-// Temp comment
           type={'company'}
           data={companyData} />
       </div>

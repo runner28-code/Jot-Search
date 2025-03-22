@@ -17,7 +17,6 @@ export default function GlobalSearch({ placeholder }) {
   const [ results, setResults ] = useState({
     jobs: [],
     companies: [],
-    candidates: [],
     loading: false,
     forceHidden: true
   });
@@ -46,6 +45,7 @@ export default function GlobalSearch({ placeholder }) {
         candidates: []
       });
     }
+
     // TODO: API: Candidates if role === 'company' || 'coordinator'
     const [jobResults, companyResults, CandidateResults] = await Promise.all([
       getJobs( searchTerm, 'title', 3 ),

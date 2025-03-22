@@ -35,12 +35,14 @@ export default function DashboardPublicMin({type}) {
 
   return(
     <div className='py-8 bg-gradient-to-t from-sky-500 via-sky-700 to-sky-700 flex items-center justify-center text-white mb-12 flex-col px-[15%]'>
+// Temp comment
       <div className='flex items-center justify-between w-full'>
         <div className='basis-1/12'>
           <button
             className='text-white underline text-lg'
             onClick={() => navigate(-1)}
           >
+          Back
           </button>
         </div>
         <div className='flex items-center basis-11/12 justify-center'>

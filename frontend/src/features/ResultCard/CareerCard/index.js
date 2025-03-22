@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -21,7 +22,6 @@ export default function CareerCard({ data, active }) {
 
   const { width } = useWindowDimensions();
 
-  const dataObj = {
     data,
     categoryString,
     addressString,

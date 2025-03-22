@@ -22,7 +22,6 @@ export default function AddCompanyUser() {
   }
 
   const paragraphStyles = 'opacity-70 mb-8';
-  let titleStyles = 'font-spaceGrotesk items-center text-md vw-900:text-xl mb-8 ';
   let containerStyles = 'border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12 px-6 vw-900:px-14 ';
 
   return (
@@ -34,7 +33,6 @@ export default function AddCompanyUser() {
             alt='flag icon'
             className='w-12 h-12 mr-6'
           />
-// Temp comment
           Step 1: Add Company in Getro or Bullhorn
         </h2>
         <p className={paragraphStyles}>At the moment it not possible to add companies in this system. Company profile data is currently pulled from Getro database due to technical limitations.</p>

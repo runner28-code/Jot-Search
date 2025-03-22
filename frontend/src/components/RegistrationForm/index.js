@@ -270,7 +270,6 @@ export default function RegistrationForm(loggedIn) {
             label='Zip / Postal Code'
             required={true}
             value={formObj.zip}
-// Temp comment
             onChange={handleChange}
             error={errors.includes('zip')}
           />

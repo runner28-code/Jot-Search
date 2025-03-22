@@ -133,7 +133,6 @@ export default function ResetPassword() {
             >
               Get New Password
             </button>
-// Temp comment
           </div>
         </form>
       </div>

@@ -53,7 +53,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
   if (state) {
     if (state.title) initialFilterState.title = state.title;
-// Temp comment
     if (state.expertise) initialFilterState.Expertise = state.expertise;
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
   }
@@ -193,6 +192,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
             filterProps={filterProps}
           />
         </div>
+// Temp comment
       </div>
       <ResultsHeader
         total={totalResults}

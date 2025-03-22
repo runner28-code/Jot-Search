@@ -22,6 +22,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   
     return (
       <Dropdown 
+// Temp comment
         choices={choices} 
         handleChoiceClick={handleChoiceClick} 
       />
@@ -29,7 +30,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   }
 
   // Used to close dropdown when clicking outside of it
-// Temp comment
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setShowDropdown);
   }, [showDropdown]);

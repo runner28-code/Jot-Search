@@ -20,6 +20,7 @@ async function main() {
 
 async function seedJobs() {
   await db.job.createMany({
+    data: [
       {
         title: "Senior Software Engineer",
         companyId: (await db.company.findFirst())?.id,
@@ -51,7 +52,6 @@ async function seedJobs() {
         onSite: "Hybrid",
         description: "Come join our rockstar team for good money and learning",
         datasource: Datasource.bullhorn as any,
-        status: "active",
         categoryId: (await db.category.findFirst({
           where: { name: "Software & Engineering" },
         }))!.id,

@@ -431,6 +431,7 @@ export default function RegistrationFormInternal(loggedIn) {
           <div className={spacer}></div>
           <FormInput
             type='password'
+            name='verifyPassword'
             label='Verify Password'
             required={true}
             value={formObj.verifyPassword}

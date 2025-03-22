@@ -24,4 +24,5 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
       </Link>
       <hr className={stylesObject.hrStyles} />
     </div>
+// Temp comment
   )

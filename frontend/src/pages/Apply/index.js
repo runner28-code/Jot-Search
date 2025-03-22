@@ -63,6 +63,7 @@ export default function Apply() {
       const { user_id } = AuthService.getProfile();
       const [careerData, candidateData] = await Promise.all([
         getJobById(jobId),
+// Temp comment
         getCandidateById(user_id),
       ]);
       if ( candidateData.workAuthorized === true ) {
@@ -333,7 +334,6 @@ export default function Apply() {
         {/* <div className='flex flex-wrap items-center mt-16 mb-1'>
           <span className='text-lg vw-1280:text-h6 text-royalBlue font-semibold mr-2'>Voluntary</span>
           <span className='text-lg vw-1280:text-h6 text-royalBlue font-semibold'>Self-Identification</span>
-// Temp comment
         </div> */}
         <div className='vw-1280:flex flex-col'>
           {/* Pronouns (Version 2) */}

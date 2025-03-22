@@ -38,7 +38,6 @@ function HeaderContent({ companyData }) {
         </div>
         <div>
           { renderBusinessSector(companyData.businessSectorList, 'text-lg font-spaceGrotesk text-royalBlue mb-8') }
-// Temp comment
         </div>
         <div className={headerRowStyles}>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
@@ -119,7 +118,6 @@ export default function Header({ companyData }) {
       </section>
     </>
   )
-}
 
 Header.propTypes = {
   companyData: PropTypes.object.isRequired,

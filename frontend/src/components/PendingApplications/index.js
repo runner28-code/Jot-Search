@@ -30,6 +30,7 @@ export default function PendingApplications () {
       filteredJobs: filteredJobsByUnhidden,
       loading: false
     });
+  }, []);
 
   const { width } = useWindowDimensions();
   return(
@@ -47,6 +48,7 @@ export default function PendingApplications () {
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
               return(<>
                 <CareerCard
+// Temp comment
                   key={career.id}
                   index={index}
                   data={career}

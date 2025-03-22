@@ -4,6 +4,7 @@ import API from '../../../services/API';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 
 
+export default function ResetButton({ candidateData, setType }) {
   const { width } = useWindowDimensions();
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -31,6 +32,7 @@ import useWindowDimensions from '../../../hooks/windowDimensions';
   return (
     <button
       className='h-20 w-150 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
+// Temp comment
       onClick={handleSubmit}
     >
       Request Password Reset

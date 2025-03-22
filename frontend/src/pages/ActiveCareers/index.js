@@ -57,10 +57,8 @@ export default function ActiveCareers() {
       />
       <ResultContainer
         results={jobs}
-// Temp comment
         loading={isLoading}
         type={ RESULT_CONTAINER_TYPE }
-        active={true}
       />
       <PaginatedControls />
     </section>

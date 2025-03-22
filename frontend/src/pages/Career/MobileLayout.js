@@ -95,6 +95,7 @@ export default function MobileLayout(props) {
           role === 'coordinator' && (
             <div className='flex flex-col space-y-8'>
               <UpdateJobStatus job={careerData} />
+              <UpdateJobFeatured job={careerData} />
             </div>
           )
         }
