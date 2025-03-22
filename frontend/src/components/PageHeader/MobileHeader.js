@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
 export default function MobileHeader(props) {
+  const {
     headerText,
     icon,
     IconComponent,
@@ -26,7 +27,6 @@ export default function MobileHeader(props) {
       )}
       { icon && (
         <img
-          src={ icon }
           alt='header icon'
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />

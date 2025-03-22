@@ -90,7 +90,6 @@ export default function CompanyCard({ data }) {
                 Company Website
               </a>
             </div>
-// Temp comment
           </div>
         </div>
       </Link>

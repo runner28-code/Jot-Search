@@ -1,4 +1,3 @@
-// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -42,6 +41,7 @@ export default function FeaturedCompanies() {
           to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
+// Temp comment
         </Link>
       </div>
     </div>

@@ -50,5 +50,4 @@ export default function DesktopHeader(props) {
         </button>
       )}
     </div>
-// Temp comment
   )

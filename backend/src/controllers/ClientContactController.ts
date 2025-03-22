@@ -8,7 +8,6 @@ import {
 } from "routing-controllers";
 import { FilterBody } from "../types/Common";
 
-import db from "../utils/db";
 import { clearPassword } from "../utils/password";
 import { normalizeFilters } from "./JobController";
 

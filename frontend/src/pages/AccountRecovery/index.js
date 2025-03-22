@@ -56,7 +56,6 @@ export default function AccountRecovery() {
           <h4 className='w-full text-xl vw-640:text-h4 text-charcoal font-spaceGrotesk font-semibold mt-14 text-center'>Account Recovery</h4>
           <div className='flex vw-640:justify-center items-center mb-12 mt-12'>
             <span className='text-sm vw-640:text-ml text-charcoal vw-640:mx-3'>Need an Account?</span>
-            <Link
               to={ROUTES.signup}
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
             >
@@ -74,7 +73,6 @@ export default function AccountRecovery() {
               className='h-20 bg-royalBlue text-center text-white text-md tracking-wide px-12 rounded-lg'
               type='submit'
             >
-// Temp comment
               Get New Password
             </button>
           </div>

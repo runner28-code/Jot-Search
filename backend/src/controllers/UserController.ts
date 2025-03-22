@@ -47,7 +47,6 @@ export class UserController {
       return {
         result,
         token,
-      };
     }
     return { result, error };
   }

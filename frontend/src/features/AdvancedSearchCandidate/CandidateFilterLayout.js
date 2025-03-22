@@ -27,12 +27,12 @@ const checkboxFilters = [
   'Actively Looking',
 ];
 
+// Temp comment
 export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
     filterObject,
     handleFilterChange,
-// Temp comment
     searchTerm,
     setSearchTerm,
     handleSearchClick,

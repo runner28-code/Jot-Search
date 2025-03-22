@@ -227,6 +227,7 @@ export class BullhornService {
     let repeatErr = 0;
 
     while (repeatErr < 3) {
+      console.log(`\nBullhorn_GET_COMPANY: ${total} / ${offset}`);
       try {
         const query = queryString.stringify({
           BhRestToken: this.BhRestToken,

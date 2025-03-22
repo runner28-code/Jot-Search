@@ -1,3 +1,4 @@
+import { User } from "../types/User";
 import { BigQueryService } from "../services/BigQueryService";
 import { DATASET_BULLHORN, DATASET_MAIN, Tables } from "../types/Common";
 import { genUUID, isExistByCondition, isExistByID } from "./";
@@ -49,7 +50,6 @@ export const saveCompanies = async (companies: any[]) => {
         });
         const existing = await db.company.findFirst({
           where: {
-            externalID: company.id,
           },
         });
         if (existing) {

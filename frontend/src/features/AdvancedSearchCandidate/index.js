@@ -117,7 +117,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   function handleSearchChange(searchTerm) {
     setFilterObject({ ...filterObject, title: searchTerm });
-    setPage(1);
   }
   function handleSearchClick() {
     setPage(1);

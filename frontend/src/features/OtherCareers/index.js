@@ -42,7 +42,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
           }
           return <CareerCard
             key={index}
-// Temp comment
             data={career}
           />
         })

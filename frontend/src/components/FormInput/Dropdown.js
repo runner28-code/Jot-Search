@@ -7,6 +7,7 @@ const MULTI_SELECT = 'multi-select';
 const SINGLE_SELECT = 'single-select';
 const YEARS_OF_EXPERIENCE = 'yearsExperience';
 
+// Temp comment
 function renderActiveIcon(choice, currentChosen) {
   if (choice === currentChosen || currentChosen.includes(choice)) {
     return(
