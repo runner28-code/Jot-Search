@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
@@ -9,7 +8,6 @@ import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
-import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,

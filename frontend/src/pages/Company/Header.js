@@ -58,6 +58,7 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <FaUsers
+              className={headerIconStyles}
             />
             <p className={headerRowTextStyles}>{companyData.numEmployees} Employees</p>
           </div>
@@ -104,7 +105,6 @@ HeaderContent.propTypes = {
     address: PropTypes.string,
     employeeString: PropTypes.string,
     city: PropTypes.string,
-    state: PropTypes.string,
     numEmployees: PropTypes.number,
   })
 }

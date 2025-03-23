@@ -24,7 +24,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   function handleChoiceClick(choice) {
     setShowDropdown(false);
     setSelected(choice);
-    handleFilterChange(filterType, choice);
   }
 
   useEffect(() => {

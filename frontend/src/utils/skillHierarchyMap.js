@@ -49,6 +49,7 @@ export const roles = {
     'Backend Engineer',
     'Frontend Engineer',
     'Full Stack Engineer',
+    'DevOps & Infrastructure',
     'Game Engineer',
     'QA Engineer',
     'Data Analysis',
@@ -76,6 +77,7 @@ export const skills = [
   'Admissions',
   'Adobe',
   'Adobe InDesign',
+// Temp comment
   'Adobe XD',
   'Advanced Excel',
   'Advertising',

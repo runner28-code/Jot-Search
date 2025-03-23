@@ -70,6 +70,7 @@ export const candidateFilterObject = {
     'Yes',
     'No'
   ],
+  'Remote Availability': [
     'Any',
     'Remote',
     'On Site',

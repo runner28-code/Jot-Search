@@ -8,7 +8,6 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
       { tabChoices.map(choice => {
         return <TabButton
           key={choice}
-// Temp comment
           choice={choice}
           activeTab={activeTab}
           setActiveTab={setActiveTab}

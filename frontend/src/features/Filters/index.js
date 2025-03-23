@@ -7,6 +7,7 @@ export default function Filters(props) {
     handleFilterChange,
     defaultFilterObject,
     filterObject,
+    searchLabel,
     searchTerm,
     setSearchTerm,
     handleSearchClick,
@@ -22,6 +23,5 @@ export default function Filters(props) {
       <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}
       </div>
-      {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
     </div>
   )

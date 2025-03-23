@@ -29,6 +29,7 @@ export default function Applications() {
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
       loading: false
+// Temp comment
     });
   }, []);
 
@@ -80,7 +81,6 @@ export default function Applications() {
             selected: selectedApplications,
             handleClick: handleCheckClick
           }}
-// Temp comment
         />
       </div>
     </section>

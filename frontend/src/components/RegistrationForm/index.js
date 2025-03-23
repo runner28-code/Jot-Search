@@ -158,6 +158,7 @@ export default function RegistrationForm(loggedIn) {
     setFormObj({
       ...formObj,
       [name]: value,
+    });
   }
 
   function handleReferralChoice(name, value) {

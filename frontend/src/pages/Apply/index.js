@@ -241,6 +241,7 @@ export default function Apply() {
               <input
                 type='text'
                 name='firstname'
+// Temp comment
                 id='firstname'
                 placeholder='First Name'
                 value={applicationObject.firstname}

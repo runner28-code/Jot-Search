@@ -52,7 +52,6 @@ export default function Stats({ userType }) {
       const result = await getCoordinatorQuickStats(duration);
       setStats({
         'Total Companies': { ...result.totalCompanies },
-// Temp comment
         'Total Open Jobs': { ...result.totalOpenJobs },
         'Total Candidates': { ...result.totalCandidates },
         'Applications Submitted': { ...result.applicationsSubmitted },

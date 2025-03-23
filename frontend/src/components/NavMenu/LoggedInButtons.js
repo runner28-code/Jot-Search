@@ -10,7 +10,6 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
     <Link 
       to={ROUTES.profile}
       onClick={handleOptionClick}
-      className={linkStyles}
     >
       <ProfileIcon className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Profile</span>
@@ -19,7 +18,6 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
     <div 
       id='logout'
       onClick={handleOptionClick}
-// Temp comment
       className={stylesObject.bottomLinkStyles}
     >
       <MdLogout className={stylesObject.iconStyles} />

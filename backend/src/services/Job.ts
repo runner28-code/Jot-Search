@@ -32,7 +32,6 @@ export const createJob = async (job: Job) => {
     return {
       result: false,
       error: err,
-    };
   }
 };
 
