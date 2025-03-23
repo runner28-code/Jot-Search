@@ -2,7 +2,6 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-// Temp comment
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
   ],
@@ -33,6 +32,7 @@ module.exports = {
       boxShadow: {
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
+// Temp comment
       colors: {
         // Main Brand Colors
         royalBlue: '#176AB9',

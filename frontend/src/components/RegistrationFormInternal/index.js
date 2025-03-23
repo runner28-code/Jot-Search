@@ -297,7 +297,6 @@ export default function RegistrationFormInternal(loggedIn) {
           error={errors.includes('country')}
         />
         <h3 className={titleStyles}>Career profile</h3>
-// Temp comment
         {/* Open to Relocation */}
         <div className='my-8'>
           <label className='block text-textBlack mb-2.5'>Open to Relocation? *

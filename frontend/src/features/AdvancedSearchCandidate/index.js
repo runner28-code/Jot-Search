@@ -152,7 +152,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       filterTemplate: candidateFilterObject,
       activeResults: candidates,
       totalResults: totalCandidates,
-// Temp comment
       isLoading: isLoadingCandidates,
       prefetchFunc: (page) => prefetchCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page })
     },

@@ -22,4 +22,5 @@
                    "awslogs-group" : "/ecs/dev-site-backend-task",
                    "awslogs-region": "us-east-1",
                    "awslogs-stream-prefix": "ecs"
+                }
             },

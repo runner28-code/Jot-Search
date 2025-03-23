@@ -22,3 +22,4 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
             return true;
         }
         return false;
+    } catch (error) {

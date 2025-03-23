@@ -6,7 +6,6 @@ export default function CompanyFilterLayout(props) {
   const {
     searchTerm,
     setSearchTerm,
-// Temp comment
     handleSearchClick,
     clearFilters,
   } = props;
@@ -29,4 +28,3 @@ export default function CompanyFilterLayout(props) {
         </button>
       </div>
     </div>
-  );

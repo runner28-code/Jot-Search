@@ -158,7 +158,6 @@ export default function RegistrationForm(loggedIn) {
     setFormObj({
       ...formObj,
       [name]: value,
-    });
   }
 
   function handleReferralChoice(name, value) {
@@ -295,7 +294,6 @@ export default function RegistrationForm(loggedIn) {
           </div>
           {/* Experience */}
           <FormInput
-// Temp comment
             type='single-select'
             name='experience'
             label='Years of Experience'

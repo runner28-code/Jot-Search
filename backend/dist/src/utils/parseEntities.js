@@ -7,6 +7,7 @@ const parseBullhornCandidateToUser = (data) => {
     const user = {
         externalId: data.id,
         firstname: data.firstName,
+        lastname: data.lastName,
         gender: data.gender,
         email: data.email,
         role: "candidate",
@@ -18,7 +19,6 @@ const parseBullhornCandidateToUser = (data) => {
         resume: undefined,
         linkedin: undefined,
         skills: data.primarySkills,
-        category: data.specialties,
         seniority: data.experience,
         workspace: data.willRelocate,
         referredBy: data.referredBy,

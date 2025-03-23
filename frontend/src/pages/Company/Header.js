@@ -58,7 +58,6 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <FaUsers
-              className={headerIconStyles}
             />
             <p className={headerRowTextStyles}>{companyData.numEmployees} Employees</p>
           </div>

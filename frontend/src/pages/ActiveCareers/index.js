@@ -49,7 +49,6 @@ export default function ActiveCareers() {
         setSearchTerm={handleSearchChange}
         placeholder={PLACE_HOLDER}
         additionalClasses='w-180 mt-30'
-      />
       <ResultsHeader
         total={total}
         loading={isLoading}

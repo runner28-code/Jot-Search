@@ -51,7 +51,6 @@ export default function Applications() {
     });
   }
 
-// Temp comment
   const { width } = useWindowDimensions();
   return (
     <section>
@@ -81,6 +80,7 @@ export default function Applications() {
             selected: selectedApplications,
             handleClick: handleCheckClick
           }}
+// Temp comment
         />
       </div>
     </section>

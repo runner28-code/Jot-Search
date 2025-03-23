@@ -17,6 +17,7 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
       <Link 
         to={choiceLink}
         className={linkStyles}
+// Temp comment
         onClick={handleOptionClick}
       >
         <Icon className={stylesObject.iconStyles} />

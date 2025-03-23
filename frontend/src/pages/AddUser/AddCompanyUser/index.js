@@ -39,6 +39,7 @@ export default function AddCompanyUser() {
         <p className={paragraphStyles}>At the moment it not possible to add companies in this system. Company profile data is currently pulled from Getro database due to technical limitations.</p>
         <p className={paragraphStyles}><strong>Reminder:</strong> please identify the company point of contact to associate to the company in Getro.</p>
         <div className='flex mt-8'>
+// Temp comment
           <ExternalLink
             text='Go to Getro'
             href='https://www.getro.com/'
@@ -49,7 +50,6 @@ export default function AddCompanyUser() {
             href='https://www.bullhorn.com/'
           />
         </div>
-// Temp comment
       </div>
       <div className={ containerStyles + 'bg-white mt-12'}>
         <h2 className={ titleStyles }>Step 2: Assign Company Contact(s)</h2>

@@ -11,7 +11,6 @@ export default function Login() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-// Temp comment
     const { email, password } = event.target;
     const res = await API.post(ROUTES.APIlogin, {
       email: email.value,
@@ -54,6 +53,7 @@ export default function Login() {
             <Link
               to={ROUTES.signup}
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
+// Temp comment
             >
               Sign-up here
             </Link>

@@ -3,7 +3,6 @@ import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { BsBuilding } from 'react-icons/bs';
-// Temp comment
 
 const ITEMS_PER_PAGE = 10;
 
@@ -41,7 +40,6 @@ export default function FeaturedCompanies() {
         <Link
           to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
-          Browse All
         </Link>
       </div>
     </div>

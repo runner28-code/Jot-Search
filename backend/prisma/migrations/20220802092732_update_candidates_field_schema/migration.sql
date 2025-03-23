@@ -10,3 +10,4 @@
   - The `numOwners` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `salary` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `salaryLow` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
+  - The `timeZoneOffsetEST` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
