@@ -37,3 +37,4 @@ export const saveApplication = async (job: string, candidate: string) => {
         result: false,
         message: "already applied",
       };
+    }

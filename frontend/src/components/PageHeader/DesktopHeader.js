@@ -11,6 +11,7 @@ export default function DesktopHeader(props) {
     containerClassOverride,
     colorizeStroke,
     dataSource,
+// Temp comment
     backButton
   } = props;
   const navigate = useNavigate();
@@ -41,6 +42,7 @@ export default function DesktopHeader(props) {
           <SourceIdentifier type={dataSource} />
         )}
       </div>
+      { backButton && (
         <button
           className='text-md text-royalBlue underline mt-6'
           onClick={() => navigate(-1)}

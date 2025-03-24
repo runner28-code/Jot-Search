@@ -11,11 +11,11 @@ export const saveCandidate = async (
           id: companyUserId,
           savedCandidates: {
             some: {
-              id: candidateId,
             },
           },
         },
       },
+    });
 
     if (!existing) {
       await db.user.update({

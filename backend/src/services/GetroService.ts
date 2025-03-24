@@ -73,6 +73,7 @@ export class GetroService {
                 const query = queryString.stringify({
                     per_page,
                     page,
+                    detailed: true
                 });
                 const url = `${this.api_base_url_v1}/collections/${this.networkId}/organizations?${query}`;
 
@@ -83,3 +84,4 @@ export class GetroService {
                     const { items, meta: { total: total } } = res.data;
                     if (!testMode) {
                         let result = [];
+                        for (const company of items) {

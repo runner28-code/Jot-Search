@@ -1,4 +1,3 @@
-// Temp comment
 import { Routes, Route, Navigate } from 'react-router-dom';
 import {
   ActiveCareers,

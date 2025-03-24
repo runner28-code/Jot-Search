@@ -39,7 +39,6 @@ export default function FormInput(props) {
   };
   switch (type) {
     case 'file':
-      return <FileInput
         type={type}
         name={name}
         label={label}
@@ -63,6 +62,7 @@ export default function FormInput(props) {
         choices={choices}
         choiceObject={choiceObject}
         stylesObject={stylesObject}
+        showDropdownArrow={true}
         disabled={disabled}
       />
     case 'typeahead':

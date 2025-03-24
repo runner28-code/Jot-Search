@@ -30,6 +30,7 @@ module.exports = {
         },
       },
       boxShadow: {
+// Temp comment
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
       colors: {
@@ -69,3 +70,4 @@ module.exports = {
         darkBlue: '#001B3C',
         yellowSquare: '#F4D12E',
         green: '#5CCC6E',
+        darkGreen: '#008000',

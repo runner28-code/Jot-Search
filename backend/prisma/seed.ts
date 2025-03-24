@@ -11,6 +11,7 @@ async function main() {
     await seedJobs();
     await seedUsers();
     console.log("Done🎉");
+  } catch (err) {
     console.error("Error during seed...❌");
     console.error(err);
     throw err;
@@ -30,7 +31,6 @@ async function seedJobs() {
         zip: "74008",
         salary: 160000,
         employmentType: "fulltime",
-        onSite: "On-Site",
         description: "Come join our rockstar team for good money and team",
         datasource: Datasource.main as any,
         status: "active",
@@ -58,3 +58,4 @@ async function seedJobs() {
       },
     ],
   });
+}

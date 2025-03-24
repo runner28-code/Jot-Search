@@ -264,3 +264,9 @@ export class BullhornService {
           query: "id:[* TO *]  AND NOT status:Archive",
           start: offset,
           count,
+          sort,
+        });
+        const url = `${this.restUrl}search/ClientCorporation?${query}`;
+        const res = await axios.get(url, {
+          headers: {
+            "Content-Type": "application/json",

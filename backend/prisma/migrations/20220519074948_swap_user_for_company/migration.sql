@@ -26,3 +26,4 @@ CREATE TABLE "Company" (
     "annualRevenue" BIGINT,
     "addressId" TEXT,
     "billingAddressId" TEXT,
+    "billingContact" TEXT,

@@ -45,7 +45,6 @@ export const roles = {
     'Other'
   ],
   'Software & Engineering': [
-    'AI Machine Learning',
     'Backend Engineer',
     'Frontend Engineer',
     'Full Stack Engineer',
@@ -105,3 +104,6 @@ export const skills = [
   'Banking',
   'Benefits',
   'Big 4',
+  'Bilingual',
+  'Blender',
+  'Bootstrap',

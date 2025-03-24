@@ -23,7 +23,6 @@ try {
   endpoint: process.env.S3_ENDPOINT,
   s3ForcePathStyle: true,
   signatureVersion: "v4",
-})
 } catch (error) {
   console.error(error)
 }
@@ -36,3 +35,4 @@ const uploadToS3 = async(req: any, res: any) => {
   }
 
   const form = new IncomingForm() as any
+  form.uploadDir = path.join(__dirname, "..", "uploads");

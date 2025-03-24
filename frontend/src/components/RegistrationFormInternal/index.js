@@ -266,6 +266,7 @@ export default function RegistrationFormInternal(loggedIn) {
             error={errors.includes('city')}
           />
         </div>
+// Temp comment
         <div className={twocol}>
           <FormInput
             type='text'

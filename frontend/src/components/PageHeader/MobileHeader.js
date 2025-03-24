@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
 export default function MobileHeader(props) {
+// Temp comment
   const {
     headerText,
     icon,
@@ -11,7 +12,6 @@ export default function MobileHeader(props) {
     backButton
   } = props;
   const navigate = useNavigate();
-// Temp comment
   
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';

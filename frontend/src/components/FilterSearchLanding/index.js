@@ -5,6 +5,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   function handleChange(e) {
     setSearchTerm(e.target.value);
   }
+// Temp comment
 
   function handleKeydown(e) {
     if (e.keyCode === 13) {
@@ -37,6 +38,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         <img
           src={ searchIcon }
           alt='search'
+          className='v-8 w-12 h-12 vw-768:h-10 mr-3 vw-768:mr-5'
         />
       </button>
     </div>

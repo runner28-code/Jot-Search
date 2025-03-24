@@ -77,7 +77,6 @@ export default function Applications() {
           agoText={'Applied'}
           selectableProps={{
             selectable: true,
-            selected: selectedApplications,
             handleClick: handleCheckClick
           }}
         />

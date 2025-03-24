@@ -218,7 +218,6 @@ export default function RegistrationForm(loggedIn) {
             type='text'
             name='lastName'
             label='Last name'
-            required={true}
             error={errors.includes('lastName')}
           />
           <FormInput

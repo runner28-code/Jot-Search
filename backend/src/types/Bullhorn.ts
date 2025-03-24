@@ -25,7 +25,6 @@ export type Company = {
     customText1_20?: string,
     customTextBlock1_5?: string,
     dateFounded?: string,
-    dateLastModified?: string,
     externalID?: string,
     feeArrangement?: string,
     funding?: string,
@@ -87,3 +86,5 @@ export type Job = {
     location_address2?: string;
     location_city?: string;
     location_state?: string;
+    location_state_id?: string;
+    location_state_name?: string;

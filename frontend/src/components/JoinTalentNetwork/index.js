@@ -52,6 +52,7 @@ export default function JoinTalentNetwork() {
             <span className='text-softWhite text-ml'>Create an account</span>
           </Link>
         </div>
+        <div className='w-210 mt-150 ml-18'>
           <h6 className='text-h6 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>
           <p className='text-slateGray text-ml mt-10 font-light leading-[3.6rem]'>By signing up, you will be able to connect and support you with top companies ready to help you take the next step in your career in Tulsa.</p>
         </div>

@@ -94,4 +94,7 @@ export class CompanyController {
         result: await sendCandidatesToEmployers(
           candidates_list,
           body.employers_emails
+        )
       }
+    } catch (error) {
+      return {

@@ -199,3 +199,7 @@ model Company {
 
   invitedCandidates CompanyCandidateInvites[]
 
+  businessSectorList String[]
+
+  companyDescription String?
+  companyURL         String?

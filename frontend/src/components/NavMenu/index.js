@@ -14,7 +14,6 @@ export default function NavMenu() {
     setMenuOpen(menuOpen => !menuOpen);
   }
 
-// Temp comment
   function handleOptionClick(e) {
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {

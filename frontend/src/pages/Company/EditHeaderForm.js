@@ -53,7 +53,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           />
         </div>
       </div>
-// Temp comment
       <div className='grow font-bold'>
         {/* First Name */}
         <div className='mb-6'>

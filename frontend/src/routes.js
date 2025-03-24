@@ -23,4 +23,6 @@ export const invitationsToApply = '/invitations-to-apply';
 export const savedCareers = '/saved-careers';
 export const savedCompanies = '/saved-companies';
 // Company Dashboard
+// Temp comment
 export const candidates = '/candidates';
+export const savedCandidates = '/saved-candidates';

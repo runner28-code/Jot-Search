@@ -37,7 +37,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   return (
     <div className='flex flex-col justify-items-between w-140'>
       { Object.entries(contentObject).map(([key, value]) => {
-        const capitalizedKey = startCase(key);
         const labelString = `${capitalizedKey}:`;
         if ( key === 'email' ) {
           return <Property
@@ -60,7 +59,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
             <input 
               className='w-100 text-xl border-lightGrey border-solid border-2 rounded-2xl px-4 py-2'
               key={key}
-// Temp comment
               name={key}
               onChange={handleChange}
               value={value}
