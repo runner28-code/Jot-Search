@@ -30,7 +30,6 @@ export default function Companies() {
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
         loggedIn={loggedIn}
-// Temp comment
         userType={userType}
         togglePassState={togglePassState}
         toggle={toggle}

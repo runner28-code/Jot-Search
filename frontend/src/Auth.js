@@ -1,3 +1,4 @@
+// Temp comment
 import { Routes, Route, Navigate } from 'react-router-dom';
 import {
   ActiveCareers,
@@ -15,7 +16,6 @@ import * as ROUTES from './routes';
 
 
 export default function Auth() {
-// Temp comment
   if (!AuthService.loggedIn()) {
     return <Navigate to={ROUTES.landingPage} />
   }

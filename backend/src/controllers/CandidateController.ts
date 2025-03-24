@@ -47,6 +47,7 @@ export class CandidateController {
         },
       });
 
+      let candidate;
       if (user) {
         const {
           password,
@@ -75,7 +76,6 @@ export class CandidateController {
   }
 
   @Authorized()
-  @Post("/update")
   async update(
     @CurrentUser() authUser: User,
     @Body() body: any
@@ -107,3 +107,5 @@ export class CandidateController {
 
       clearPassword(updatedUser);
 
+      return { message: "Candidate updated successfully", data: updatedUser, result: true };
+    } catch (error) {

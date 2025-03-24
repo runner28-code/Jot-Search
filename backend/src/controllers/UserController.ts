@@ -60,3 +60,4 @@ export class UserController {
   @Post("/register")
   async register(@Body() user: User) {
     let data = { ...user };
+

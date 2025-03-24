@@ -18,7 +18,6 @@ class AuthService {
   }
 
   loggedIn() {
-    // Checks if there is a saved token and it's still valid
     const token = this.getToken();
     return !!token && !this.isTokenExpired(token); // handwaiving here
   }
@@ -115,6 +114,7 @@ class AuthService {
     } else {
       savedCompanies.splice(savedCompanies.indexOf(companyID), 1);
     }
+    localStorage.setItem('savedCompanies', JSON.stringify(savedCompanies));
   }
 
   getSavedCompanyIDs() {

@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import searchIcon from '../../assets/images/search-icon.svg';
 
-// Temp comment
 export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchClick, placeholder, additionalClasses }) {
   function handleChange(e) {
     setSearchTerm(e.target.value);
@@ -38,7 +37,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         <img
           src={ searchIcon }
           alt='search'
-          className='v-8 w-12 h-12 vw-768:h-10 mr-3 vw-768:mr-5'
         />
       </button>
     </div>

@@ -27,6 +27,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
       name='primarySkills'
       placeholder='Add/Remove Skills'
       choices={skillChoices}
+// Temp comment
       currentChosen={splitSkills}
       onChange={onChange}
       baseStyles={baseStyles}

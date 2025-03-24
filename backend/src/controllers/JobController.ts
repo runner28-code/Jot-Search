@@ -113,3 +113,5 @@ export class JobController {
     }
   }
 
+  @Post("/search")
+  async searchByFilter(

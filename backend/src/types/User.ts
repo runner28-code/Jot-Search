@@ -25,3 +25,4 @@ export type User = {
 
   description?: string;
   phone?: string;
+  status?: string;

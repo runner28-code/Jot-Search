@@ -115,7 +115,6 @@ export default function ResetPassword() {
             className={inputStyle}
             id='password'
             type='password'
-// Temp comment
             name='password'
             onChange={handlePassword}
           />

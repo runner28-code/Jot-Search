@@ -15,9 +15,11 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         <h3 className='text-h5 font-medium mb-15 text-black70% font-spaceGrotesk'>Career Profile Info</h3>
         { (!editMode && role !== 'company') && 
           renderEditIcon(candidateData, setEditMode)
+// Temp comment
         }
       </div>
       <CareerProfileInfoContent
+        candidateData={candidateData}
         handleCandidateUpdate={handleCandidateUpdate}
         setEditMode={setEditMode}
         iconStyles={iconStyles}

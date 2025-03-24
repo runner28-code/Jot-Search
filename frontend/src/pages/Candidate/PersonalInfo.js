@@ -26,6 +26,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     email: candidateData.email || '',
+// Temp comment
     phone: candidateData.phone || '',
     workAuthorized: candidateData.workAuthorized,
     zip: candidateData.zip || '',
@@ -36,7 +37,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   })
 
   const [editMode, setEditMode] = useState(false);
-// Temp comment
 
   const [referralChoice, setReferralChoice] = useState(false);
 

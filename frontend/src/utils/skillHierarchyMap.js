@@ -77,7 +77,6 @@ export const skills = [
   'Admissions',
   'Adobe',
   'Adobe InDesign',
-// Temp comment
   'Adobe XD',
   'Advanced Excel',
   'Advertising',
@@ -104,3 +103,5 @@ export const skills = [
   'Bachelor\'s Degree',
   'Bachelors Degree',
   'Banking',
+  'Benefits',
+  'Big 4',

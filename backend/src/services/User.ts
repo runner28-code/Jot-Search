@@ -164,3 +164,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
 
     return { result: true, data: updated };
   } catch (error) {
+    console.error(error);
+    return { result: false, error };
+  }
+};

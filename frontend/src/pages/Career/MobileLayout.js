@@ -64,7 +64,6 @@ export default function MobileLayout(props) {
           {/* Second row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
             {/* Posting age */}
-// Temp comment
             <div className='w-1/2 flex items-center pr-4'>
               <img
                 src={postingAgeIcon}
@@ -129,7 +128,6 @@ export default function MobileLayout(props) {
     </section>
     <OtherCareers
       companyId={careerData.companyId}
-      companyName={careerData.clientCorporation}
       currentCareerId={careerData.externalId}
     />
   </>)

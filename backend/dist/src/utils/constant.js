@@ -108,6 +108,7 @@ const job_filter_exclude_keys = [
     "custodial",
     "custodian",
     "customer pick-up",
+// Temp comment
     "defender",
     "delivery",
     "dietary",
@@ -128,3 +129,5 @@ const job_filter_exclude_keys = [
     "edit",
     "editor",
     "educate",
+    "education",
+    "educator",

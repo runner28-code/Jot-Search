@@ -68,6 +68,7 @@ export type Job = {
     date_last_exported?: string;
     date_last_modified?: string;
     date_last_published?: string;
+    degreeList?: string;
     description?: string;
     durationWeeks?: string;
     educationDegree?: string;
@@ -85,3 +86,4 @@ export type Job = {
     isPublic?: string;
     location_address1?: string;
     location_address2?: string;
+    location_city?: string;

@@ -36,13 +36,11 @@ export default function Careers() {
         className={width <= 990 && !loggedIn ? 'px-[5%]' 
           : !loggedIn ? 'px-[15%]' 
             : '' 
-// Temp comment
         }
       >
         <RenderAdvancedSearch
           loggedIn={loggedIn}
           toggle={toggle}
-          userType={userType}
         />
       </div>
     </section>

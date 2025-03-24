@@ -32,6 +32,7 @@ export default function CareerPage() {
     // Decode url encoded properties on career
     career.title = urlDecode(career.title);
     career.description = urlDecode(career.description);
+
     setCareerData({ ...career });
   }, []);
 
@@ -43,7 +44,6 @@ export default function CareerPage() {
   const postingAge = calculatePostingAge(careerData.createdAt);
   const data = {
     careerData,
-    categoryString,
     addressString,
     salaryString,
     postingAge,

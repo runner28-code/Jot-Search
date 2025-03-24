@@ -5,3 +5,4 @@ CREATE TABLE "Job" (
     "description" TEXT,
     "address1" TEXT,
     "address2" TEXT,
+    "city" TEXT,

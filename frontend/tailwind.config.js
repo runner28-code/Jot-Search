@@ -68,3 +68,4 @@ module.exports = {
         orangeSquare: '#F2871F',
         darkBlue: '#001B3C',
         yellowSquare: '#F4D12E',
+        green: '#5CCC6E',

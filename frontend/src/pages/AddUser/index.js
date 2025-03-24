@@ -33,12 +33,10 @@ export default function AddUser() {
       <Dropdown
         inputStyles='text-md vw-768:text-lg font-bold mx-4 px-2 py-4 ml-8 border-lightGrey border-solid border-2 rounded-2xl'
         name='formType'
-// Temp comment
         currentChosen={formType}
         choices={['Candidate', 'Company', 'Coordinator']}
         handleChange={handleDropdownChange}
         noDefault={true}
-      />
     </h2>
     <div className={formType != 'Company' ? defaultContainer : companyContainer }>
       <div className='flex w-full px-8 vw-1280:px-0 3vw-1280:ml-10'>

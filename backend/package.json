@@ -3,6 +3,7 @@
     "seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
+    "@google-cloud/bigquery-connection": "^1.5.1",
     "@prisma/client": "^3.14.0",
     "@sendgrid/mail": "^7.6.2",
     "@types/cors": "^2.8.12",
@@ -15,3 +16,4 @@
     "class-transformer": "^0.5.1",
     "class-validator": "^0.13.2",
     "ejs": "^3.1.6",
+    "express": "^4.17.2",

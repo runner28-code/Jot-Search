@@ -35,3 +35,4 @@ const uploadToS3 = async(req: any, res: any) => {
     return
   }
 
+  const form = new IncomingForm() as any

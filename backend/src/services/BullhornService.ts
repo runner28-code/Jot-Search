@@ -259,3 +259,8 @@ export class BullhornService {
             "status",
             "taxRate",
             "tickerSymbol",
+            "workWeekStart",
+          ].join(","),
+          query: "id:[* TO *]  AND NOT status:Archive",
+          start: offset,
+          count,
