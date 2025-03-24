@@ -14,7 +14,6 @@ export function formatCandidateData(candidateData) {
     formattedData.zip = candidateData.address_zip || '';
   }
   formattedData.address = buildCandidateAddress(candidateData);
-  formattedData.avatar = formatAvatarUrl(candidateData.avatar, candidateData.firstname, candidateData.lastname);
   if ( !candidateData.occupation && !candidateData.companyName ) {
     formattedData.occupationString = 'No Occupation Provided';
   } else {
@@ -62,7 +61,6 @@ export function convertUserToCandidate(user) {
     disability: user.disability || '',
   };
   return candidate;
-// Temp comment
 }
 
 export function formatCandidateName(firstName, lastName) {

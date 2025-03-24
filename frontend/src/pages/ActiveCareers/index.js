@@ -53,7 +53,6 @@ export default function ActiveCareers() {
       <ResultsHeader
         total={total}
         loading={isLoading}
-// Temp comment
         type={RESULT_CONTAINER_TYPE}
       />
       <ResultContainer

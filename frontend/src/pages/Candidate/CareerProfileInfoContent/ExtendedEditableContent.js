@@ -200,7 +200,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             type='text'
             name='occupation'
             value={formData.occupation}
-// Temp comment
             onChange={handleChange}
             label='Occupation'
             disabled={disabled}

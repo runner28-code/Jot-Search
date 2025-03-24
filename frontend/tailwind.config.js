@@ -30,7 +30,6 @@ module.exports = {
         },
       },
       boxShadow: {
-// Temp comment
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
       colors: {
@@ -59,7 +58,6 @@ module.exports = {
         orangeCircle: '#ED8623',
         orangeHeroOverlay: '#F2871F',
         'blue-bg': '#E7F0F8',
-        buttonLightBlue: '#00CADB',
         'blue70%': '#216bb2b3',
         blueSquare: '#4A53A4',
         blueSquare2: '#30BED3',

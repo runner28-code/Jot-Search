@@ -68,7 +68,6 @@ export const saveCompanies = async (companies: any[]) => {
             delete companyData[key];
           }
         });
-
         companyData.companyURL = companyData.companyURL ? companyData.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null;
 
         const newCompany = await db.company.create({

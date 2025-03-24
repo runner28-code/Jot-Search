@@ -11,6 +11,7 @@ function renderActiveIcon(choice, currentChosen) {
   if (choice === currentChosen || currentChosen.includes(choice)) {
     return(
       <img 
+// Temp comment
         src={checkmarkIcon} 
         alt="checkmark" 
         className="w-8 h-8 mr-2" />

@@ -79,6 +79,7 @@ export default function CompanyCard({ data }) {
               </a>
             </div>
             {/* Website */}
+            <div className='w-1/3 flex items-center'>
               <img
                 src={websiteIcon}
                 className='h-8 mr-5 ml-1' />

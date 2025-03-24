@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
 
 // Images
@@ -26,5 +27,4 @@ export default function DashboardMinified({ location }) {
         location={location}
         loggedIn={loggedIn}
       />
-    </div>
   )

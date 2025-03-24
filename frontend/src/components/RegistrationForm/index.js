@@ -218,6 +218,7 @@ export default function RegistrationForm(loggedIn) {
             type='text'
             name='lastName'
             label='Last name'
+            required={true}
             error={errors.includes('lastName')}
           />
           <FormInput
@@ -351,6 +352,7 @@ export default function RegistrationForm(loggedIn) {
         </div>
         <div className={flexWidth}>
           <FormInput
+// Temp comment
             type='text'
             name='linkedin'
             value={formObj.linkedin}

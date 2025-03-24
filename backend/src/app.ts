@@ -23,6 +23,7 @@ try {
   endpoint: process.env.S3_ENDPOINT,
   s3ForcePathStyle: true,
   signatureVersion: "v4",
+})
 } catch (error) {
   console.error(error)
 }

@@ -206,6 +206,7 @@ export default function Apply() {
     <form
       onSubmit={handleSubmit}
       className='w-80% mx-auto bg-white border-lightGrey border-2 border-solid rounded-xl pt-24 pb-24 px-l vw-1280:w-90% vw-1280:mx-0 vw-1280:px-xxl-3 vw-1280:pt-xxl vw-1280:pb-xxl-4'
+    >
       {/* Form Header */}
       <div className='flex items-center mb-4 vw-1280:mb-xxl-4'>
         {/* Company Logo */}
@@ -410,7 +411,6 @@ export default function Apply() {
           { renderButtonOrLoading(submissionObject, 'Submit Application', 'w-full vw-1280:w-90 text-lg bg-royalBlue text-white rounded-xl px-4 py-xs') }
           <button
             className='px-xl py-xs border-2 border-royalBlue text-royalBlue rounded-xl text-md'
-            onClick={ () => navigate(-1) }
           >
           Back
           </button>

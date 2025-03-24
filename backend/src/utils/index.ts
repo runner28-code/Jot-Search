@@ -9,7 +9,6 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
     try {
         const query = `
             SELECT * FROM \`${datset}.${table}\`
-            WHERE id=${id}
         `;
         const options = {
             query: query,

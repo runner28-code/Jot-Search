@@ -128,7 +128,6 @@ export default function AddCoordinator() {
         <input
           type='text'
           className={submissionObject.errors.email ? invalidInputStyles : validInputStyles}
-          name='email'
           placeholder='Email'
           value={formObject.email}
           onChange={handleInputChange}

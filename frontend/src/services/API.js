@@ -4,6 +4,7 @@ import fixStringNulls from '../utils/fixStringNulls';
 import * as ROUTES from '../routes';
 import { ACTIVE_STATUSES } from '../utils/filterObjects';
 
+const API = axios.create({
   baseURL: 'https://intulsadev.com:5000',
   // baseURL: 'http://localhost:3001',
 });
