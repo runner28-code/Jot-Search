@@ -55,6 +55,7 @@ export default function Footer() {
             className={socialIconStyleMobile}
           />
         </a>
+      </div>
       <NavFooterMobile />
       <div
         id='footer'

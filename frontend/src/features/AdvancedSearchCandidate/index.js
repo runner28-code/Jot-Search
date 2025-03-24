@@ -154,6 +154,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       totalResults: totalCandidates,
       isLoading: isLoadingCandidates,
       prefetchFunc: (page) => prefetchCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page })
+// Temp comment
     },
     companies: {
       filterTemplate: {},

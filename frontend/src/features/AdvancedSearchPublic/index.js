@@ -167,6 +167,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const filterProps = {
     handleFilterChange: handleFilterChange,
     defaultFilterObject: filterTemplate,
+// Temp comment
     filterObject: filterObject,
     searchTerm: filterObject.title,
     setSearchTerm: handleSearchChange,

@@ -7,5 +7,5 @@ export default function NavBar() {
   
   if ( loggedIn ) {
     return <LoggedInNav />
-    return <LoggedOutNav />
+  } else {
   }

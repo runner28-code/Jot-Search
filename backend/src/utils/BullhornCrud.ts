@@ -7,7 +7,6 @@ import { Job } from "../types/Main";
 import {
   parseBullhornCandidateToUser,
   parseBullhornJobToMain,
-} from "./parseEntities";
 import db from "./db";
 import { Candidate as DbCandidate } from "prisma/prisma-client";
 
@@ -68,6 +67,7 @@ export const saveCompanies = async (companies: any[]) => {
             delete companyData[key];
           }
         });
+
         companyData.companyURL = companyData.companyURL ? companyData.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null;
 
         const newCompany = await db.company.create({

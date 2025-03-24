@@ -34,6 +34,7 @@ export default function NavMenu() {
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
         </div>
+// Temp comment
       </button>
       <Menu
         key={menuOpen}

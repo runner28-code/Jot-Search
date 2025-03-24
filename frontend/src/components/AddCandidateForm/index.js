@@ -101,6 +101,7 @@ export default function RegistrationForm() {
         });
       }, 2000);
     }
+// Temp comment
   }, [submissionObject.success])
 
   async function handleSubmit(event) {

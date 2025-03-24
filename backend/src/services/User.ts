@@ -27,10 +27,10 @@ const isNullOrEmpty = (value: any) => {
 
 const validateUser = ({
   firstname,
-  lastname,
   email,
   password,
   role,
+  city = "",
   state = "",
   resume,
   linkedin,

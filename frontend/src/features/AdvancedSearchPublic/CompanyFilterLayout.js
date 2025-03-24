@@ -8,6 +8,7 @@ export default function CompanyFilterLayout(props) {
     setSearchTerm,
     handleSearchClick,
     clearFilters,
+// Temp comment
   } = props;
   const { width } = useWindowDimensions();
   return (
@@ -28,3 +29,4 @@ export default function CompanyFilterLayout(props) {
         </button>
       </div>
     </div>
+  );

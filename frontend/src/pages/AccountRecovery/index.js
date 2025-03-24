@@ -72,7 +72,6 @@ export default function AccountRecovery() {
           <div className='flex justify-between items-center vw-640:items-end mb-22'>
             <button
               className='h-20 bg-royalBlue text-center text-white text-md tracking-wide px-12 rounded-lg'
-// Temp comment
               type='submit'
             >
               Get New Password

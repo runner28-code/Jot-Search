@@ -12,7 +12,6 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
-import AuthService from '../../services/auth';
 
 
 import {
@@ -29,6 +28,7 @@ export default function NavSearch({ placeholder }) {
   const [forceHidden, setForceHidden] = useState(false);
   const userType = AuthService.getUserRole();
 
+  const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {

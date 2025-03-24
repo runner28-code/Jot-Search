@@ -86,6 +86,7 @@ export class BullhornService {
         }
       });
     });
+  }
 
   async getAuthCode(): Promise<boolean> {
     console.log("\n***** getAuthCode *****");
@@ -264,7 +265,6 @@ export class BullhornService {
           start: offset,
           count,
           sort,
-        });
         const url = `${this.restUrl}search/ClientCorporation?${query}`;
         const res = await axios.get(url, {
           headers: {

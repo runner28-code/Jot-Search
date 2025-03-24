@@ -76,7 +76,6 @@ export default function ResetPassword() {
       return ( <div className='text-error mb-4'>Passwords don&apos;t match</div> )
     }
   }
-// Temp comment
 
   const inputStyle = 'placeholder-textBlack text-md text-textBlack bg-lightGrey w-full py-2 pl-2 pr-10 vw-640:pl-6 mb-16 border border-solid rounded-xl border-midGrey h-18 vw-640:h-24 ';
   const labelStyle = 'block text-charcoal text-xs vw-640:text-base ml-xxs mb-xs';
@@ -121,6 +120,7 @@ export default function ResetPassword() {
           />
           <label className={labelStyle}>Confirm Password</label>
           <input
+// Temp comment
             className={inputStyle}
             id='confirmPassword'
             type='password'

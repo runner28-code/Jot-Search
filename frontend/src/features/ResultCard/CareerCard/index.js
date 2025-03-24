@@ -29,6 +29,7 @@ export default function CareerCard({ data, active }) {
     salaryString,
     postingAge,
     role
+// Temp comment
   };
 
   return (

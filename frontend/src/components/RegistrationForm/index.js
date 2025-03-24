@@ -27,7 +27,6 @@ const defaultState = {
   expertise: '',
   address1: '',
   city: '',
-  state: '',
   zip: '',
   willRelocate: false,
   roles: [],
@@ -352,7 +351,6 @@ export default function RegistrationForm(loggedIn) {
         </div>
         <div className={flexWidth}>
           <FormInput
-// Temp comment
             type='text'
             name='linkedin'
             value={formObj.linkedin}

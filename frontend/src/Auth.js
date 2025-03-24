@@ -9,6 +9,7 @@ import {
   Favorites,
   Logout,
   Profile,
+// Temp comment
 } from './pages';
 import AuthService from './services/auth';
 import * as ROUTES from './routes';
@@ -26,7 +27,6 @@ export default function Auth() {
           path='/'
           element={<Dashboard />} 
         />
-// Temp comment
         <Route
           path={ROUTES.profile}
           element={<Profile />} />

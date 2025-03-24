@@ -411,6 +411,7 @@ export default function Apply() {
           { renderButtonOrLoading(submissionObject, 'Submit Application', 'w-full vw-1280:w-90 text-lg bg-royalBlue text-white rounded-xl px-4 py-xs') }
           <button
             className='px-xl py-xs border-2 border-royalBlue text-royalBlue rounded-xl text-md'
+            onClick={ () => navigate(-1) }
           >
           Back
           </button>
