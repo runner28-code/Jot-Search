@@ -7,7 +7,6 @@ import {
   guestChoices,
   findSelectedFromPath
 } from './utils';
-import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
 
 export default function SideNav({ userType }) {
@@ -24,7 +23,6 @@ export default function SideNav({ userType }) {
   if ( width < 1280 ) {
     return null;
   }
-// Temp comment
   return (
     <aside className='w-125 min-w-125 h-full bg-white border-midGrey border border-solid rounded-2xl ml-10 mt-18 vw-1280:ml-20 vw-1280:mr-24'>
       { renderChoices(userType) }

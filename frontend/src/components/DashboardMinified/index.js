@@ -10,7 +10,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 export default function DashboardMinified({ location }) {
   const loggedIn = AuthService.loggedIn();
 
-  if( loggedIn ) {
     return (
       <div className='flex flex-row items-center justify-start bg-sky-600 mb-8 text-white py-4 px-10'>
         <LinkSwap
@@ -25,7 +24,6 @@ export default function DashboardMinified({ location }) {
     <div className='flex items-start flex-col bg-gradient-to-t from-sky-700 via-sky-700 to-sky-500 mb-8 text-white py-4 px-10'>
       <LinkSwap
         location={location}
-// Temp comment
         loggedIn={loggedIn}
       />
     </div>

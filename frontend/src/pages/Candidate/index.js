@@ -109,6 +109,7 @@ export default function Candidate() {
             <h3 className={ width >= 990 ? 'text-h5 font-medium mb-15 text-black70% font-spaceGrotesk' : 'text-[2.5rem] font-medium mb-15 text-black70% font-spaceGrotesk'}>My Preferences</h3>
             <PreferenceItem
               toggled={!!candidateData.activelyLooking}
+              fieldName='activelyLooking'
               label={PREFERENCE_ITEMS.activelyLooking}
               onUpdate={handleCandidateUpdate} />
             <PreferenceItem
@@ -120,7 +121,6 @@ export default function Candidate() {
               toggled={!!candidateData.willReceiveNotification}
               fieldName='willReceiveNotification'
               label={PREFERENCE_ITEMS.willReceiveNotification}
-              onUpdate={handleCandidateUpdate} />
           </div>
         </div>
       }

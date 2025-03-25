@@ -30,6 +30,7 @@ const checkboxFilters = [
 export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
+    filterObject,
     handleFilterChange,
     searchTerm,
     setSearchTerm,
@@ -43,6 +44,7 @@ export default function CandidateFilterLayout(props) {
   if( userRole === 'coordinator' ) {
     dropdownFiltersCoord.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
+// Temp comment
     });
     checkboxFiltersCoord.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];

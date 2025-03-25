@@ -27,6 +27,7 @@ const defaultState = {
   expertise: '',
   address1: '',
   city: '',
+  state: '',
   zip: '',
   willRelocate: false,
   roles: [],
@@ -242,6 +243,7 @@ export default function RegistrationForm(loggedIn) {
             label='Address'
             required={true}
             value={formObj.address1}
+// Temp comment
             onChange={handleChange}
             error={errors.includes('address1')}
           />

@@ -93,6 +93,7 @@ export class CandidateController {
         where: {
           id,
         },
+      });
 
       if (!candidate) {
         return { message: "No candidate with given ID", result: false };

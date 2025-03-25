@@ -71,6 +71,7 @@ export const choices = {
     icon: LogoutIcon,
     link: ROUTES.logout,
   },
+}
 
 // Map choices to appropriate icons
 export const candidateChoices = [
@@ -80,6 +81,7 @@ export const candidateChoices = [
   choices.myFavorites,
   choices.careers,
   choices.companies,
+// Temp comment
   choices.talentInTulsa,
   choices.logout
 ];

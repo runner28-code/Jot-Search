@@ -53,6 +53,5 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
           alt='chevron down'  
         />
       </div>
-      { renderDropdown( showDropdown ) }
     </div>
   )

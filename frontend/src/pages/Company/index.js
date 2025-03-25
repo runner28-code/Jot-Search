@@ -23,7 +23,6 @@ export default function Company() {
 
   useEffect(async () => {
     const companyFromApi = await getCompanyById(id);
-// Temp comment
     setCompanyData(companyFromApi.company);
     setLoading(false);
   }, []);

@@ -13,6 +13,7 @@ import {
   companyChoices,
   coordinatorChoices,
   guestChoices,
+  findSelectedFromPath
 } from '../SideNav/utils';
 import { useCandidateContext } from '../../services/CandidateContext';
 
@@ -24,7 +25,6 @@ export default function NavBar() {
   } else {
     return <DesktopNavBarLayout />
   }
-}
 
 function NavBarLayout() {
   return (

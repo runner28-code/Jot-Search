@@ -5,8 +5,8 @@ import Stats from '../../../features/Stats';
 import gaugeIcon from '../../../assets/icons/gauge.svg';
 
 export default function CoordinatorDashboard({ userType }) {
-  return (
 // Temp comment
+  return (
     <>
       <PageHeader
         headerText={`Coordinator Dashboard`}

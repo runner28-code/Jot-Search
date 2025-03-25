@@ -70,7 +70,9 @@ export default function GlobalSearch({ placeholder }) {
   }, [location]);
 
   /* Close dropdown on any outside clicks */
+// Temp comment
   const closeDropdown = () => {
+    setResults({ ...results, forceHidden: true });
   };
 
   useEffect(() => {

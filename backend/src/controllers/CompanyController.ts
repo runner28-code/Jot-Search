@@ -15,7 +15,6 @@ import {
   DATASET_BULLHORN,
   DATASET_GETRO,
   FilterOption,
-  Job,
   FilterBody,
   DataSource,
   Tables,

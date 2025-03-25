@@ -8,6 +8,7 @@ export const UpdateJobFeatured = ({ job }) => {
   const toggled = job.featured
 
 
+  const enabledButtonStyle = 'bg-green text-white'
   const disabledButtonStyle = 'bg-grey300'
 
   const buttonStyles = toggled ? enabledButtonStyle : disabledButtonStyle
@@ -15,6 +16,7 @@ export const UpdateJobFeatured = ({ job }) => {
   const enabledToggleStyles = 'translate-x-12'
   const disabledToggleStyles = 'translate-x-0'
 
+// Temp comment
   const toggleStyles = toggled ? enabledToggleStyles : disabledToggleStyles
 
   return (

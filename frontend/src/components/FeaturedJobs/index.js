@@ -53,7 +53,6 @@ export default function FeaturedJobs() {
                   className={ width >= 990 ? linkStyles : linkStylesMobile }
                 >
                   <div className={ width >= 990 ? cardStyles : cardStylesMobile }>
-// Temp comment
                     { width >= 990 ? <RenderImage image={career.logo} /> : <RenderImageMobile image={career.logo} />}
                     <div className={width >= 990 ? cardContentStyles : cardContentStylesMobile}>
                       <h5 className={ width >= 990 ? cardContentTitle : cardContentTitleMobile }>{career.title}</h5>
@@ -65,7 +64,6 @@ export default function FeaturedJobs() {
             })
         }
       </div>
-      <div className={ width >= 990 ? viewAllStyles : viewAllStylesMobile }>
         <Link
           to={ROUTES.careers}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>

@@ -19,6 +19,7 @@ export const stateCodeMap = {
   Alabama: 'AL',
   Alaska: 'AK',
   Arizona: 'AZ',
+// Temp comment
   Arkansas: 'AR',
   California: 'CA',
   Colorado: 'CO',
@@ -33,7 +34,6 @@ export const stateCodeMap = {
   Iowa: 'IA',
   Kansas: 'KS',
   Kentucky: 'KY',
-// Temp comment
   Louisiana: 'LA',
   Maine: 'ME',
   Maryland: 'MD',

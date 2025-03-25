@@ -68,9 +68,9 @@ export default function ExpertiseLinks() {
             src={operationsIcon}
             alt='Operations Icon'
             className={iconStyles}
-          />
           <span className={textStyles}>Operations</span>
         </Link>
+        {/* Finance */}
         <Link
           to={ROUTES.careers}
           className={linkStyles}

@@ -77,12 +77,10 @@ export default function Stats({ userType }) {
       </div>
       <div className='flex flex-wrap'>
         {Object.entries(stats).map(([stat, value]) => {
-// Temp comment
           return <StatCard
             stat={stat}
             value={value}
             key={stat} />;
         })}
       </div>
-    </div>
   )
