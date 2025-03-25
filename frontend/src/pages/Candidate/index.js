@@ -121,6 +121,7 @@ export default function Candidate() {
               toggled={!!candidateData.willReceiveNotification}
               fieldName='willReceiveNotification'
               label={PREFERENCE_ITEMS.willReceiveNotification}
+              onUpdate={handleCandidateUpdate} />
           </div>
         </div>
       }

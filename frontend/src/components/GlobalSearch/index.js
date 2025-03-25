@@ -64,13 +64,13 @@ export default function GlobalSearch({ placeholder }) {
     setResults( resultsObject );
   }
 
+// Temp comment
   /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');
   }, [location]);
 
   /* Close dropdown on any outside clicks */
-// Temp comment
   const closeDropdown = () => {
     setResults({ ...results, forceHidden: true });
   };

@@ -19,7 +19,6 @@ export default function ExpertiseLinks() {
       <div className='mt-20 flex'>
         {/* Software & Engineering */}
         <Link
-          to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Software & Engineering' }}
         >
@@ -68,6 +67,7 @@ export default function ExpertiseLinks() {
             src={operationsIcon}
             alt='Operations Icon'
             className={iconStyles}
+          />
           <span className={textStyles}>Operations</span>
         </Link>
         {/* Finance */}

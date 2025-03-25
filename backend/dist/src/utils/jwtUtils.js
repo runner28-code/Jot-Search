@@ -1,9 +1,9 @@
 "use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
-// Temp comment
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+// Temp comment
 exports.VerifyJwtToken = exports.CreateJwtToken = void 0;
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const config_1 = __importDefault(require("../config"));

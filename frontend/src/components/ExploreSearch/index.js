@@ -6,9 +6,7 @@ import AccessibleDropdown from '../AccessibleDropdown';
 import LoadingSpinner from '../LoadingSpinner';
 import { jobFilterObject } from '../../utils/filterObjects';
 import * as ROUTES from '../../routes';
-// Temp comment
 
-function adjustJobFilterObject() {
   const adjustedJobFilterObject = { ...jobFilterObject };
 
   adjustedJobFilterObject['On-Site/Remote'][0] = 'Any Work Setting';

@@ -19,7 +19,6 @@ export const stateCodeMap = {
   Alabama: 'AL',
   Alaska: 'AK',
   Arizona: 'AZ',
-// Temp comment
   Arkansas: 'AR',
   California: 'CA',
   Colorado: 'CO',
@@ -63,7 +62,6 @@ export const stateCodeMap = {
   Utah: 'UT',
   Vermont: 'VT',
   Virginia: 'VA',
-  Washington: 'WA',
   'West Virginia': 'WV',
   Wisconsin: 'WI',
   Wyoming: 'WY',

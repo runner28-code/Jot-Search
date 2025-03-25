@@ -18,7 +18,6 @@ const PREFERENCE_ITEMS = {
   workAuthorized: 'Are you legally authorized to work in the US on a fulltime basis for any employer?',
 }
 
-// Temp comment
 export default function PersonalInfo({role, candidateData, handleCandidateUpdate}) {
   if ( role === 'company' ) {
     return null;
@@ -33,6 +32,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     city: candidateData.city || '',
     address1: candidateData.address1 || '',
     referredBy: candidateData.referredBy || '',
+// Temp comment
     gender: candidateData.gender || '',
   })
 

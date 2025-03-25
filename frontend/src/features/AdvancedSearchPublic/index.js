@@ -26,12 +26,10 @@ const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
-  company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
   guest: ['jobs', 'companies'],
 }
 
-// Temp comment
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
     switch (pathname) {

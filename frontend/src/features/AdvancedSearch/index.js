@@ -118,13 +118,13 @@ export default function AdvancedSearch({ disabledTabs }) {
   }
 
   function clearFilters() {
-    setFilterObject(initialFilterState);
     setPage(1);
   }
 
   const propsByTab = {
     careers: {
       filterTemplate: jobFilterObject,
+      activeResults: careers,
       totalResults: totalJobs,
       isLoading: isLoadingJobs,
       prefetchFunc: (page) => prefetchJobs({ ...getFiltersByTab('careers'), count: ITEMS_PER_PAGE, page })

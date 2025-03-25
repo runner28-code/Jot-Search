@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types';
 import { uploadFile } from '../../../services/API';
-// Temp comment
 
 export default function EditResumeForm({ handleChange }) {
   async function handleFileSubmit(e) {
-    const file = e.target.files[0];
     const newResumePath = await uploadFile('resumes', file);
     const fakeEvent = { // Handle change expects event but file inputs have no value property, faking it instead
       target: {

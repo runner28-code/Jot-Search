@@ -104,6 +104,7 @@ export default function AddCoordinator() {
           className={submissionObject.errors.firstname ? invalidInputStyles : validInputStyles += addInputStyles}
           name='firstname'
           placeholder='First Name'
+          value={formObject.firstname}
           onChange={handleInputChange}
         />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.firstname}</p>
@@ -111,6 +112,7 @@ export default function AddCoordinator() {
       <div className={inputContainer}>
         {/* Last Name */}
         <label className={labelStyles}>Last Name</label>
+// Temp comment
         <input
           type='text'
           className={submissionObject.errors.lastname ? invalidInputStyles : validInputStyles += addInputStyles}
