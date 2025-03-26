@@ -34,7 +34,6 @@ export default function NavMenu() {
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
         </div>
-      </button>
       <Menu
         key={menuOpen}
         menuOpen={menuOpen}

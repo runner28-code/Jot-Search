@@ -34,7 +34,6 @@ export default function AddCompanyUser() {
             alt='flag icon'
             className='w-12 h-12 mr-6'
           />
-          Step 1: Add Company in Getro or Bullhorn
         </h2>
         <p className={paragraphStyles}>At the moment it not possible to add companies in this system. Company profile data is currently pulled from Getro database due to technical limitations.</p>
         <p className={paragraphStyles}><strong>Reminder:</strong> please identify the company point of contact to associate to the company in Getro.</p>
@@ -62,7 +61,6 @@ export default function AddCompanyUser() {
             onChange={(e) => setSearch(e.target.value)}
             className='placeholder-textBlack text-md bg-lightGrey w-full remove-outline rounded-xl border border-solid border-2 border-netural-400 px-4 py-4 mt-2' />
           <img
-// Temp comment
             src={Search}
             alt='search icon'
             className='absolute right-6 top-6 h-10 w-10 vw-900:h-12 vw-900:w-12'

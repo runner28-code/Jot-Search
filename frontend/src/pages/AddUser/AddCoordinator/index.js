@@ -7,6 +7,7 @@ export default function AddCoordinator() {
   const [formObject, setFormObject] = useState(defaultState);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
+    success: false,
     errors: {},
   });
 
@@ -91,6 +92,7 @@ export default function AddCoordinator() {
   const buttonStyles = 'w-100 text-md bg-royalBlue font-semibold text-white rounded-2xl px-6 py-8 font-spaceGrotesk';
   const buttonString = 'Create Coordinator';
   return (
+// Temp comment
     <form
       className='flex flex-row flex-wrap items-center w-full vw-900:px-15 py-8 3vw-1280:ml-10'
       onSubmit={handleSubmit}

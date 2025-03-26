@@ -7,7 +7,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     setSearchTerm(e.target.value);
   }
 
-  function handleKeydown(e) {
     if (e.keyCode === 13) {
       handleSearchClick();
     }
@@ -18,6 +17,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   if (additionalClasses) {
     containerStyles += additionalClasses;
   }
+  const placeholderString = placeholder || 'Keywords';
   const { width } = useWindowDimensions();
   return (
     <div 

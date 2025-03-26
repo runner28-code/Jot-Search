@@ -269,7 +269,6 @@ export default function RegistrationFormInternal(loggedIn) {
         <div className={twocol}>
           <FormInput
             type='text'
-// Temp comment
             name='state'
             label='State (Abbreviated)'
             required={true}

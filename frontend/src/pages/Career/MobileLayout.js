@@ -10,7 +10,6 @@ import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { apply as applyRoute } from '../../routes';
 import { UpdateJobStatus } from './UpdateJobStatus';
-// Temp comment
 import { UpdateJobFeatured } from './UpdateJobFeatured';
 
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-xl text-charcoal mb-4 ';
@@ -42,6 +41,7 @@ export default function MobileLayout(props) {
         <div className='basis-4/6 pl-8 flex flex-col items-start justify-end'>
           {/* Title */}
           <h6 className='grow text-md text-legal-bg font-spaceGrotesk font-semibold leading-none my-2'>{careerData.title}</h6>
+// Temp comment
           {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold mt-s'>{categoryString}</p>
         </div>

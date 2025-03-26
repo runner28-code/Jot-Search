@@ -16,7 +16,6 @@ const dropDownFiltersCandidate = [
   'Years Experience'
 ]
 
-export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
 
   const {
@@ -25,6 +24,7 @@ export default function CareerFilterLayout(props) {
     handleFilterChange,
     searchTerm,
     setSearchTerm,
+    handleSearchClick,
     clearFilters,
   } = props;
 

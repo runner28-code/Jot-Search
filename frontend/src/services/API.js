@@ -32,6 +32,7 @@ export function appendPathToBaseUrl(path) {
   return API.defaults.baseURL + path;
 }
 
+// Temp comment
 /* FETCH FUNCTIONS */
 //* CANDIDATES
 export async function getCandidates(filtersArr, count, page) {
@@ -57,7 +58,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
     candidates: normalizeData(data.candidates),
     total: data.total
   }
-// Temp comment
 }
 
 export async function getCandidateById(id) {

@@ -5,4 +5,5 @@
 //     "containerDefinitions": [
 //         {
 //             "name": "intulsa-backend-container-prod",
+//             "image": "site-backend:prod",
 //             "cpu": 1024,

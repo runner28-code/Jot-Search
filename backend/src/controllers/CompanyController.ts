@@ -30,6 +30,7 @@ import { User } from "../types/User";
 import { getDataSource, getFilterConditions } from "../utils";
 import db from "../utils/db";
 
+import {
   CompanyFilter,
   CompanyFilterKey,
   JobFilter,
@@ -54,7 +55,6 @@ export class CompanyController {
       };
     } else if (datasource === DataSource.GETRO) {
       const company = await this.getCompanyByIdFromGetro(id);
-      return {
         company,
         source: datasource,
       };

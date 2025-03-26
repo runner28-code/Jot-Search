@@ -7,6 +7,7 @@ import linkedinIcon from '../../../assets/icons/linkedin-circle.svg';
 import locationIcon from '../../../assets/icons/placepin.svg';
 import experienceIcon from '../../../assets/icons/star-banner.svg';
 import {
+  buildCandidateAddress,
   formatAvatarUrl,
   formatYearsExperience,
   buildOccupationString,
@@ -132,6 +133,7 @@ function LinkWrapper({ children, link, disableLink }) {
   const linkStyles = baseStyles + 'cursor-pointer hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
   return (
     <Link 
+// Temp comment
       to={link}
       className={linkStyles}
       tabIndex='0'

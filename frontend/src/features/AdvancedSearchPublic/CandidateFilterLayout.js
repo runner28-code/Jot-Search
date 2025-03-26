@@ -9,6 +9,7 @@ const dropdownFiltersCoord = [
   'Remote Availability',
   'Employment Type',
   'Status'
+];
 
 const dropdownFilters = [
   'Category',
@@ -80,5 +81,4 @@ export default function CandidateFilterLayout(props) {
           Clear All
         </button>
       </div>
-    </div>
   );

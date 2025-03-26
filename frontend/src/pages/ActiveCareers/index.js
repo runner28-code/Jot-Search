@@ -30,7 +30,6 @@ export default function ActiveCareers() {
 
   const { jobs, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
 
-// Temp comment
   const prefetchFunc = (page) => {
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
   }

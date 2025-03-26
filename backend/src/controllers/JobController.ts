@@ -47,6 +47,7 @@ import {
   saveJob,
 } from "../utils/MainCrud";
 
+import { BullhornService } from "../services/BullhornService";
 
 @JsonController("/api/job")
 export class JobController {

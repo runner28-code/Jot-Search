@@ -31,6 +31,7 @@ const checkboxFilters = [
   'Actively Looking',
 ];
 
+export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
     filterObject,
@@ -38,7 +39,6 @@ const checkboxFilters = [
     searchTerm,
     setSearchTerm,
     handleSearchClick,
-    clearFilters,
   } = props;
   let userRole = AuthService.getUserRole();
 

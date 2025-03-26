@@ -34,7 +34,6 @@ export default function Applications() {
 
   function handleCheckClick(careerId) {
     if (selectedApplications.includes(careerId)) {
-// Temp comment
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
     } else {
       setSelectedApplications([...selectedApplications, careerId]);
@@ -54,7 +53,6 @@ export default function Applications() {
 
   const { width } = useWindowDimensions();
   return (
-    <section>
       <PageHeader
         headerText='My InTulsa Featured Applications'
         IconComponent={BsClipboardCheck}

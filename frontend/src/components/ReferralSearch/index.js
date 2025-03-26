@@ -8,7 +8,6 @@ const mockJobsData = [
     company: 'Hobby Lobby',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
     salaryRange: '$80k-$90k',
-// Temp comment
     location: 'Remote',
     listingAge: '1 month',
     specialty: 'Technology'
@@ -38,6 +37,7 @@ const mockJobsData = [
 function renderChosen(currentChosen, handleRemove) {
   return currentChosen.map(choice =>
     <div 
+// Temp comment
       key={choice.id}
       className='bg-royalBlue text-white py-2 px-4 rounded-lg mr-2 cursor-pointer hover:bg-rose-500'
       onClick={() => handleRemove(choice.id)}

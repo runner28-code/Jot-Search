@@ -241,7 +241,6 @@ export default function Apply() {
               <input
                 type='text'
                 name='firstname'
-                id='firstname'
                 placeholder='First Name'
                 value={applicationObject.firstname}
                 onChange={handleInputChange}

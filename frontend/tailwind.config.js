@@ -70,5 +70,4 @@ module.exports = {
         yellowSquare: '#F4D12E',
         green: '#5CCC6E',
         darkGreen: '#008000',
-// Temp comment
         softWhite: '#F6F5F6',

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
-// Temp comment
 
 import API from '../../services/API';
 
@@ -29,6 +28,7 @@ export default function AccountRecovery() {
   }
 
   function renderResponse () {
+// Temp comment
     const successStyle = 'mb-4 text-success';
     const errorStyle = 'mb-4 text-error';
     if( response ) {
