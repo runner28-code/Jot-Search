@@ -4,6 +4,5 @@
     "networkMode": "awsvpc",
     "containerDefinitions": [
         {
-            "name": "intulsa-frontend-container-prod",
             "image": "site-frontend:prod",
             "cpu": 1024,

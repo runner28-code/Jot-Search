@@ -47,7 +47,6 @@ import {
   saveJob,
 } from "../utils/MainCrud";
 
-import { BullhornService } from "../services/BullhornService";
 
 @JsonController("/api/job")
 export class JobController {
@@ -117,3 +116,5 @@ export class JobController {
   async searchByFilter(
     @Body() body: FilterBody & { datasource?: DataSources }
   ) {
+    try {
+      const { filters, fields, page, count, datasource } = body;

@@ -203,3 +203,6 @@ model Company {
 
   companyDescription String?
   companyURL         String?
+
+  // could condsolidate and enrich if needed
+  bh_description    String?

@@ -35,6 +35,7 @@ const validateUser = ({
   state = "",
   resume,
   linkedin,
+  skills,
   category,
 }: User) => {
   try {
@@ -170,3 +171,5 @@ export const update = async (parent_id: string, role: string, data: any) => {
 
 export const addUserHistoryEntries = async ({
   updatedUser,
+  existingUser,
+}: {

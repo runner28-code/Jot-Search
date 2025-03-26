@@ -108,7 +108,6 @@ export class BullhornService {
       console.log("path =", path);
       this.auth_code = path
         .slice(7, path.indexOf("&client"))
-        .replace("%25", "%");
       console.log("Auth Code: ", this.auth_code);
       return true;
     }
@@ -196,6 +195,7 @@ export class BullhornService {
           console.log("corpToken: ", this.corpToken);
 
           await this.setCookie({
+            auth_code: this.auth_code,
             access_token: this.access_token,
             refresh_token: this.refresh_token,
             BhRestToken: this.BhRestToken,
@@ -269,3 +269,6 @@ export class BullhornService {
         const res = await axios.get(url, {
           headers: {
             "Content-Type": "application/json",
+            Accept: "*/*",
+          },
+        });

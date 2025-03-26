@@ -39,6 +39,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   return (
     <>
       <div className='flex flex-col mr-12'>
+        {/* Avatar */}
         <img
           className='w-100 h-100'
           src={avatarUrl}

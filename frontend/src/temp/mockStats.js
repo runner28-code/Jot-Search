@@ -87,3 +87,5 @@ export const mockCandidateStats = {
       prevCount: 7
     }
   },
+}
+

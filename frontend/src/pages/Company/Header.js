@@ -6,7 +6,6 @@ import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
 
-
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
 import LinkedIn from '../../assets/icons/linkedin-circle.svg';

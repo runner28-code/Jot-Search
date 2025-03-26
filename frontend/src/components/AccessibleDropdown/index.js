@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import checkmarkIcon from '../../assets/images/checkmark.png';
 import downChevron from '../../assets/icons/chevron-down-gray.svg';
 import { Wrapper, Button, Menu, MenuItem } from 'react-aria-menubutton';
@@ -14,7 +13,6 @@ export default function AccessibleDropdown(props) {
     placeholder,
     required,
     onChange,
-// Temp comment
     choices,
     choiceObject,
     currentChosen, 

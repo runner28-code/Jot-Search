@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
+// Temp comment
 
 import API from '../../services/API';
 
@@ -20,6 +21,7 @@ export default function AccountRecovery() {
       setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);
+    }
   };
   function setType(response, condition) {
     setCondition(condition);

@@ -31,7 +31,6 @@ const checkboxFilters = [
   'Actively Looking',
 ];
 
-export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
     filterObject,
@@ -71,7 +70,6 @@ export default function CandidateFilterLayout(props) {
   }
   console.log(filterObject)
 
-// Temp comment
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>

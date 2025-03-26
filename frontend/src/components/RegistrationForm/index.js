@@ -309,6 +309,7 @@ export default function RegistrationForm(loggedIn) {
             type='single-select'
             name='expertise'
             label='Expertise'
+// Temp comment
             required={true}
             placeholder='Select'
             value={formObj.expertise}

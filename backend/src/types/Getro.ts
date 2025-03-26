@@ -23,6 +23,6 @@ export type Company = {
   managers?: string;
   network_id?: string;
   locations?: string;
-  collections?: string;
 };
 
+export type Job = {

@@ -24,6 +24,7 @@ export type Company = {
     customFloat1_3?: string,
     customInt1_3?: string,
     customText1_20?: string,
+    customTextBlock1_5?: string,
     dateFounded?: string,
     dateLastModified?: string,
     externalID?: string,
@@ -50,7 +51,6 @@ export type Job = {
     id: string;
     address_address1?: string;
     address_address2?: string;
-    address_city?: string;
     address_state?: string;
     address_zip?: string;
     address_country_id?: string;
@@ -88,3 +88,4 @@ export type Job = {
     location_city?: string;
     location_state?: string;
     location_state_id?: string;
+    location_state_name?: string;

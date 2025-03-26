@@ -38,6 +38,7 @@ export default function FormInput(props) {
     listItemStyles: dropdownItemStyles
   };
   switch (type) {
+// Temp comment
     case 'file':
       return <FileInput
         type={type}
@@ -85,7 +86,6 @@ export default function FormInput(props) {
     default: // type == 'text' || 'password'
       return <TextInput
         type={type}
-// Temp comment
         name={name}
         label={label}
         required={required}

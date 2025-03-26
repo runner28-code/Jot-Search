@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import * as ROUTES from '../../routes';
-// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function JoinTalentNetwork() {
@@ -12,6 +11,7 @@ export default function JoinTalentNetwork() {
     return (<>
       {/* Join Hero and call-to-action */}
       <section className='relative h-200 bg-join-hero bg-cover bg-center mb-[600px]'>
+// Temp comment
         <div className='justify-center w-11/12 mx-[5%] absolute -bottom-[100%]'>
           <div className='px-12 py-12 flex flex-col rounded-3xl bg-royalBlue'>
             <h1 className='text-h5 font-spaceGrotesk font-semibold text-softWhite'>

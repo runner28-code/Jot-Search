@@ -7,7 +7,6 @@ export default function AddCoordinator() {
   const [formObject, setFormObject] = useState(defaultState);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
-    success: false,
     errors: {},
   });
 
@@ -112,7 +111,6 @@ export default function AddCoordinator() {
       <div className={inputContainer}>
         {/* Last Name */}
         <label className={labelStyles}>Last Name</label>
-// Temp comment
         <input
           type='text'
           className={submissionObject.errors.lastname ? invalidInputStyles : validInputStyles += addInputStyles}

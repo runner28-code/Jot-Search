@@ -25,3 +25,4 @@ export const saveCandidate = async (
         },
         data: {
           savedCandidates: {
+            connect: {

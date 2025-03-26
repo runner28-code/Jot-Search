@@ -17,7 +17,6 @@ export const UpdateJobFeatured = ({ job }) => {
   const disabledToggleStyles = 'translate-x-0'
 
   const toggleStyles = toggled ? enabledToggleStyles : disabledToggleStyles
-// Temp comment
 
   return (
     <div className='flex flex-col'>
@@ -53,4 +52,3 @@ export const UpdateJobFeatured = ({ job }) => {
         </label>
       </div>
     </div>
-  )

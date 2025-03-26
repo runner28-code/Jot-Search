@@ -62,3 +62,4 @@ export class UserController {
     let data = { ...user };
 
     if (user.role === CANDIDATE) {
+      try {

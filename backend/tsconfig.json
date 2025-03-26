@@ -24,3 +24,4 @@
     // "useDefineForClassFields": true,                  /* Emit ECMAScript-standard-compliant class fields. */
 
     /* Modules */
+    "module": "commonjs",                                /* Specify what module code is generated. */

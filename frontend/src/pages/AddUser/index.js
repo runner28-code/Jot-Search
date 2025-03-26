@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
-import Dropdown from '../../components/UniversalDropdown';
 import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
 import AddCandidate from './AddCandidate';
@@ -26,6 +25,7 @@ export default function AddUser() {
     <h2 className='text-lg vw-768:text-h2 text-royalBlue font-spaceGrotesk font-bold mb-16 text-center flex items-center'>
       <img
         src={User}
+        alt='User Icon'
         className='w-12 h-12 vw-768:w-24 vw-768:h-24 mr-8'
       />
       <span>Add new</span>
