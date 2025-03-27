@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
+  coordinatorChoices,
   guestChoices,
   findSelectedFromPath
 } from './utils';
@@ -16,6 +17,7 @@ export default function SideNav({ userType }) {
     return null;
   }
 
+// Temp comment
   if( userType === 'guest' ) {
     return null;
   }

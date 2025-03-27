@@ -41,7 +41,6 @@ export default function MobileLayout(props) {
         <div className='basis-4/6 pl-8 flex flex-col items-start justify-end'>
           {/* Title */}
           <h6 className='grow text-md text-legal-bg font-spaceGrotesk font-semibold leading-none my-2'>{careerData.title}</h6>
-// Temp comment
           {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold mt-s'>{categoryString}</p>
         </div>
@@ -102,7 +101,6 @@ export default function MobileLayout(props) {
         }
       </div>
       <hr className={hrStyles} />
-      {/* Job Description */}
       <h4 className={sectionHeaderStyles}>Career Description</h4>
       <p
         className='font-spaceGrotesk text-textBlack text-sm mb-6'

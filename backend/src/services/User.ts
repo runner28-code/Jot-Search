@@ -9,6 +9,7 @@ import config from '../config';
 import db from "../utils/db";
 
 import { User as dbUser, History as dbHistory } from "prisma/prisma-client";
+import {
   encryptPassword,
   checkPassword,
   clearPassword,
@@ -172,3 +173,4 @@ export const addUserHistoryEntries = async ({
   updatedUser,
   existingUser,
 }: {
+  updatedUser: Partial<dbUser>;

@@ -32,7 +32,6 @@ export default function Company() {
     headerIconStyles: 'h-12 w-12 mr-3',
     headerRowTextStyles: 'text-xl font-bold text-black70%',
     sectionHeaderStyles: 'font-bold text-h4 text-black70% mb-12 ',
-    sectionHeaderStylesMobile: 'font-bold text-[3rem] text-black70% mb-2 ',
     hrStyles: 'mb-16 '
   }
 
@@ -50,6 +49,7 @@ export default function Company() {
   companyData.description = companyData.getro_description ? companyData.getro_description : companyData.bh_description;
 
   const loggedIn = AuthService.loggedIn();
+
   const navigate = useNavigate();
 
   if (loading) { return <LoadingSpinner /> }

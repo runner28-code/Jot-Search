@@ -106,7 +106,6 @@ export default function AdvancedSearch({ disabledTabs }) {
   function handleSearchClick() {
     setPage(1);
   }
-// Temp comment
 
   function handleTabChange(tabChoice) {
     if (tabChoice === 'careers') {
@@ -182,6 +181,7 @@ export default function AdvancedSearch({ disabledTabs }) {
         <ResultsHeader
           total={totalResults}
           type={activeTab}
+// Temp comment
           loading={isLoading}
         />
         <ResultContainer

@@ -71,3 +71,4 @@ module.exports = {
         green: '#5CCC6E',
         darkGreen: '#008000',
         softWhite: '#F6F5F6',
+        smokeGray: '#DDDDDD',

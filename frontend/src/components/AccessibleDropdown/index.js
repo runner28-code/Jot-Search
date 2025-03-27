@@ -17,9 +17,9 @@ export default function AccessibleDropdown(props) {
     choices,
     choiceObject,
     currentChosen, 
+    stylesObject,
     showDropdownArrow,
     disabled,
-  } = props;
 
   function handleSelection(choice) {
     if ( type === MULTI_SELECT ) {

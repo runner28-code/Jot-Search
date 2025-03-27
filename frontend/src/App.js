@@ -36,6 +36,7 @@ function App() {
             <Route
               path={ROUTES.landingPage}
               element={<LandingPage />} />
+// Temp comment
             <Route
               path={ROUTES.careers}
               element={<Careers />} />
@@ -47,7 +48,6 @@ function App() {
               element={<Career />} />
             <Route
               path={`${ROUTES.apply}/:id`}
-// Temp comment
               element={<Apply />} />
             <Route
               path={`${ROUTES.companies}/:id`}

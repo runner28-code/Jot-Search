@@ -57,7 +57,6 @@ export default function Apply() {
       setCareer(careerData);
       setOriginalObject(defaultState);
       setApplicationObject({ ...defaultState, loading: false });
-      return;
     }
     try {
       const { user_id } = AuthService.getProfile();
@@ -241,6 +240,7 @@ export default function Apply() {
               <input
                 type='text'
                 name='firstname'
+                id='firstname'
                 placeholder='First Name'
                 value={applicationObject.firstname}
                 onChange={handleInputChange}

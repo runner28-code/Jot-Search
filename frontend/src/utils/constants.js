@@ -54,7 +54,6 @@ export const stateCodeMap = {
   Oklahoma: 'OK',
   Oregon: 'OR',
   Pennsylvania: 'PA',
-// Temp comment
   'Rhode Island': 'RI',
   'South Carolina': 'SC',
   'South Dakota': 'SD',

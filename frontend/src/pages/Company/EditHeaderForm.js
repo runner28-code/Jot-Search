@@ -71,7 +71,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         </div>
         {/* Last Name */}
         <div className='mb-6'>
-// Temp comment
           <label 
             className='text-h6 text-royalBlue w-full'
             htmlFor='lastname'>

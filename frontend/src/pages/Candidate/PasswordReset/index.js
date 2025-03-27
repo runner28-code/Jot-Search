@@ -20,6 +20,7 @@ export default function PasswordReset({role, candidateData}) {
     const errorStyle = 'mb-4 text-error';
     if( response ) {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )
+// Temp comment
     }
   }
 
@@ -39,6 +40,7 @@ export default function PasswordReset({role, candidateData}) {
             setType={setType}
           />
         )}
+        {renderResponse()}
       </div>
     </div>
   )

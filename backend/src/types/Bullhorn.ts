@@ -89,4 +89,4 @@ export type Job = {
     location_state?: string;
     location_state_id?: string;
     location_state_name?: string;
-    location_zip?: string;
+    location_country_id?: string;

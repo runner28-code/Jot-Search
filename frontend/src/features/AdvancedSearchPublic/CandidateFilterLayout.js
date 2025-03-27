@@ -81,4 +81,5 @@ export default function CandidateFilterLayout(props) {
           Clear All
         </button>
       </div>
+    </div>
   );

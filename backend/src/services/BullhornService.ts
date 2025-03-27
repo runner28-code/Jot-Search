@@ -273,3 +273,5 @@ export class BullhornService {
             Accept: "*/*",
           },
         });
+        if (res.status === 200) {
+          const { data, count } = res.data;

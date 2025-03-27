@@ -62,6 +62,7 @@ export default function InviteCandidates({ company }) {
       <MultiSelect
         isLoading={isLoading}
         options={candidateOptions}
+// Temp comment
         value={selected}
         onChange={setSelected}
         labelledBy="Select"

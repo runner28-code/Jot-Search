@@ -55,11 +55,11 @@ export class CompanyController {
       };
     } else if (datasource === DataSource.GETRO) {
       const company = await this.getCompanyByIdFromGetro(id);
+      return {
         company,
         source: datasource,
       };
     } else {
-      return {
         source: DataSource.UNKNOWN,
         message: "unsupported id",
       };
@@ -98,3 +98,4 @@ export class CompanyController {
     } catch (error) {
       return {
         result: false,
+        error: "Please check email, email maybe invalid one",

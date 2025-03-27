@@ -135,3 +135,4 @@ const job_filter_exclude_keys = [
     "elementary",
     "emergency",
     "emergency response",
+    "engineering tec",

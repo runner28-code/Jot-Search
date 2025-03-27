@@ -46,7 +46,6 @@ export const roles = {
   ],
   'Software & Engineering': [
     'AI Machine Learning',
-// Temp comment
     'Backend Engineer',
     'Frontend Engineer',
     'Full Stack Engineer',
@@ -107,6 +106,8 @@ export const skills = [
   'Benefits',
   'Big 4',
   'Bilingual',
+// Temp comment
   'Blender',
   'Bootstrap',
   'Brand Awareness',
+  'Brand Development',

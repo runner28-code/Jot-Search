@@ -79,6 +79,7 @@ model Lead {
   email                 String?
   email2                String?
   email3                String?
+  fax                   String?
   fax2                  String?
   fax3                  String?
   firstName             String?
@@ -205,3 +206,4 @@ model Company {
 
   // could condsolidate and enrich if needed
   bh_description    String?
+  getro_description String?

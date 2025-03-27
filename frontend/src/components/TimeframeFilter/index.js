@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import Dropdown from '../FilterDropdown';
-import chevronDownGray from '../../assets/icons/chevron-down-gray.svg';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 export default function TimeframeFilter({ choices, timeframe, handleFilterChange }) {
@@ -41,7 +40,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
       ref={menuRef}
       className='relative'>
       <div
-// Temp comment
         id='title-wrapper'
         onClick={() => setShowDropdown(showDropdown => !showDropdown)}
         className={ wrapperStyles }>

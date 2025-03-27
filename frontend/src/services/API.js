@@ -32,7 +32,6 @@ export function appendPathToBaseUrl(path) {
   return API.defaults.baseURL + path;
 }
 
-// Temp comment
 /* FETCH FUNCTIONS */
 //* CANDIDATES
 export async function getCandidates(filtersArr, count, page) {
@@ -110,3 +109,12 @@ export async function addUser(userObject) {
     console.log(err);
     return err;
   }
+}
+
+export async function updateJob({ id, status, featured }) {
+  const { data } = await API.patch(ROUTES.APIjobBase, {
+    id,
+    status,
+    featured
+  });
+  return normalizeData(data);
