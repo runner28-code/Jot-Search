@@ -11,7 +11,6 @@ export default function FileInput({type, name, label, placeholder, required, val
     }
   }
 
-// Temp comment
   return (
     <div>
       { renderLabel( name, label, value, placeholder, required, handleKeyDown, baseStyles ) }

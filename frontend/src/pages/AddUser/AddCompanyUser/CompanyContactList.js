@@ -15,6 +15,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
 
   const handleSyncClick = () => {
     console.log('syncing contacts', selectedContacts);
+  }
 
   return (
     <div className='flex flex-col items-start pt-8'>
@@ -51,6 +52,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           onClick={handleSyncClick}
         >
           Synch
+// Temp comment
         </button>
       </>)}
     </div>

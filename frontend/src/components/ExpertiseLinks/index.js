@@ -65,6 +65,7 @@ export default function ExpertiseLinks() {
           state={{ Expertise: 'Operations' }}
         >
           <img
+            src={operationsIcon}
             alt='Operations Icon'
             className={iconStyles}
           />

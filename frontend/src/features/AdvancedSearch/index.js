@@ -181,7 +181,6 @@ export default function AdvancedSearch({ disabledTabs }) {
         <ResultsHeader
           total={totalResults}
           type={activeTab}
-// Temp comment
           loading={isLoading}
         />
         <ResultContainer

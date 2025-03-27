@@ -13,7 +13,6 @@ export const jobReferralChoices = [
   'Indeed',
   'Google',
   'Friend',
-// Temp comment
   'Other',
 ];
 
@@ -34,7 +33,6 @@ export const defaultState = {
   referral: '',
   resume: '',
   newResume: {},
-  ethnicity: '',
   gender: '',
   workAuthorized: '',
   disability: '',

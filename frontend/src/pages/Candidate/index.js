@@ -125,7 +125,6 @@ export default function Candidate() {
           </div>
         </div>
       }
-// Temp comment
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}
       <div className='px-4'>
         <div className='border rounded-2xl bg-white p-15 relative'>
@@ -145,6 +144,7 @@ export default function Candidate() {
         {/* Password Reset (Candidate and Coordinator) */}
         <PasswordReset
           role={role}
+// Temp comment
           candidateData={candidateData}
         />
       </div>

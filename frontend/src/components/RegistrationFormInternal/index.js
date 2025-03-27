@@ -440,6 +440,7 @@ export default function RegistrationFormInternal(loggedIn) {
           />
         </div>
         <hr className={hrStyles} />
+        <FormInput
           type='single-select'
           name='referredBy'
           label={`How did ${pronoun} hear about us?`}

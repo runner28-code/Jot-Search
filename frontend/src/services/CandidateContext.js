@@ -70,7 +70,6 @@ const mockCandidateData = [
     firstName: 'Donnie',
     lastName: 'Kim',
     linkedin_url: 'https://www.linkedin.com/',
-// Temp comment
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/donnie_1_l00n0o.webp', // Missing from Bullhorn Schema
     occupation: 'Softwware Engineer',
     companyName: 'Aerovision',
@@ -94,6 +93,7 @@ const mockCandidateData = [
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
     isLooking: false,
+// Temp comment
     isWarm: false,
   },
 ];

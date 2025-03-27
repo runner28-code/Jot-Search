@@ -99,6 +99,7 @@ export const skills = [
   'Automation',
   'AWS',
   'Azure',
+// Temp comment
   'B2B',
   'Bachelor\'s Degree',
   'Bachelors Degree',
@@ -106,8 +107,8 @@ export const skills = [
   'Benefits',
   'Big 4',
   'Bilingual',
-// Temp comment
   'Blender',
   'Bootstrap',
   'Brand Awareness',
   'Brand Development',
+  'Brand Marketing',

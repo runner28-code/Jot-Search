@@ -115,3 +115,4 @@ export class CandidateController {
     }
   }
 
+  @Authorized()

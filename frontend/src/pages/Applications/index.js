@@ -10,7 +10,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function Applications() {
   const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
-// Temp comment
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
     filteredJobs: [],
@@ -48,6 +47,7 @@ export default function Applications() {
     setSelectedApplications([]);
     setAppliedJobsObject({
       ...appliedJobsObject,
+// Temp comment
       filteredJobs: appliedJobsObject.jobs.filter(job => !newHiddenApplications.includes(job.id))
     });
   }

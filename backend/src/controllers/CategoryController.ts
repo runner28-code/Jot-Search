@@ -6,6 +6,7 @@ import {
   QueryParam,
 } from "routing-controllers";
 import { getCategoriesByFilter } from "../services/Category";
+import {
   CategoryByIdResponse,
   CategorySearchByFilterResponse,
   FilterBody,
@@ -15,3 +16,4 @@ import { getCategoriesByFilter } from "../services/Category";
 export class CategoryController {
   @Get("/search")
   async searchByID(
+    @QueryParam("id") id: string

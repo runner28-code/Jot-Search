@@ -31,6 +31,7 @@ export default function CompanyCard({ data }) {
   return (
     <div
       className='relative w-full'
+// Temp comment
       key={data.id}
     >
       <Link
@@ -45,7 +46,6 @@ export default function CompanyCard({ data }) {
         <div className='grow'>
           {/* Title */}
           <div className='flex'>
-// Temp comment
             <CompanyIcon className='w-8 h-8 mr-6 fill-royalBlue ' />
             <h6 className='text-xl font-spaceGrotesk font-semibold text-charcoal leading-none'>{data.name}</h6>
           </div>

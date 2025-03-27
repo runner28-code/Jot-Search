@@ -16,6 +16,7 @@ export default function FormInput(props) {
     dropdownType,
     name,
     label,
+// Temp comment
     placeholder,
     value,
     required,
@@ -69,7 +70,6 @@ export default function FormInput(props) {
     case 'typeahead':
       return <TypeaheadDropdown
         type={type}
-// Temp comment
         dropdownType={dropdownType}
         name={name}
         label={label}

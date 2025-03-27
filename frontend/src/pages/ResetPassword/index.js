@@ -70,7 +70,6 @@ export default function ResetPassword() {
     }
   }
 
-// Temp comment
 
   const renderMatch = () => {
     if( match === false ) {

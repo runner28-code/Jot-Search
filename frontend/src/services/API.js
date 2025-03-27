@@ -113,6 +113,7 @@ export async function addUser(userObject) {
 
 export async function updateJob({ id, status, featured }) {
   const { data } = await API.patch(ROUTES.APIjobBase, {
+// Temp comment
     id,
     status,
     featured

@@ -15,6 +15,7 @@ CREATE TABLE "Candidate" (
     "dateLastModified" TIMESTAMP(3),
     "dateNextCall" TIMESTAMP(3),
     "dateOfBirth" TEXT,
+    "dayRate" TEXT,
     "dayRateLow" TEXT,
     "degreeList" TEXT,
     "description" TEXT,
@@ -24,3 +25,4 @@ CREATE TABLE "Candidate" (
     "email" TEXT,
     "email2" TEXT,
     "email3" TEXT,
+    "employeeType" TEXT,

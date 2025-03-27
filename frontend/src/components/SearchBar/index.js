@@ -15,7 +15,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
 
   function handleChange(e) {
     setSearchTerm(e.target.value);
-  }
 
   const placeholderText = placeholder || 'Search for companies or jobs...';
   return (
@@ -37,3 +36,4 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
         onChange={ handleChange }
         className={ styleObject.inputStyles } />
     </label>
+  )

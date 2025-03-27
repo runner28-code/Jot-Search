@@ -2,6 +2,7 @@
 CREATE TABLE "UserTalentCollection" (
     "id" TEXT NOT NULL,
     "user_id" INTEGER,
+    "collection_id" INTEGER,
     "status" TEXT,
     "approved_at" TEXT,
     "approved_by" TEXT,
@@ -17,3 +18,4 @@ CREATE TABLE "UserTalentCollection" (
     "source" TEXT,
     "onboarding_reminder_sent_at" TEXT,
     "invited_by" TEXT,
+    "verified_by" TEXT,

@@ -25,6 +25,7 @@ async function seedJobs() {
         title: "Senior Software Engineer",
         companyId: (await db.company.findFirst())?.id,
 
+        address1: "123 Job St",
         city: "Tulsa",
         state: "OK",
         zip: "74008",
@@ -53,7 +54,6 @@ async function seedJobs() {
         datasource: Datasource.bullhorn as any,
         status: "active",
         categoryId: (await db.category.findFirst({
-          where: { name: "Software & Engineering" },
         }))!.id,
       },
     ],

@@ -4,3 +4,4 @@ export type Category = {
   description?: string;
   enabled?: boolean;
   name?: string;
+  occupation?: string;

@@ -22,7 +22,6 @@ export default function GlobalSearch({ placeholder }) {
     forceHidden: true
   });
   // State and ref to listen for outside clicks
-// Temp comment
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
@@ -72,7 +71,6 @@ export default function GlobalSearch({ placeholder }) {
 
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
-    setResults({ ...results, forceHidden: true });
   };
 
   useEffect(() => {

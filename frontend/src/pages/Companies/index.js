@@ -13,6 +13,7 @@ import DashboardCandidate from '../../components/DashboardCandidate';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 import AuthService from '../../services/auth';
+// Temp comment
 
 export default function Companies() {
   const { width } = useWindowDimensions();
@@ -37,7 +38,6 @@ export default function Companies() {
       <div 
         className={ !loggedIn && width <= 990 ? 'px-[5%]' 
           : !loggedIn ? 'px-[15%]' 
-// Temp comment
             : ''
         }>
         <RenderAdvancedSearch

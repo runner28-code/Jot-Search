@@ -128,7 +128,6 @@ export default function RegistrationForm() {
       ...formObj,
       [name]: value,
     });
-// Temp comment
   }
 
   // Alter header and pronoun based on who is registering the new user
@@ -253,7 +252,6 @@ export default function RegistrationForm() {
           />
           {/* File input for resume */}
           <FormInput
-            type='file'
             name='resumeFile'
             placeholder='Upload Resume'
             value={formObj.resumeFile}

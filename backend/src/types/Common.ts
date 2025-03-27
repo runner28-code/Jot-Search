@@ -34,7 +34,6 @@ export enum DataSource {
   GETRO = "getro",
   UNKNOWN = "unknown",
 }
-
 export type DataSources = "bullhorn" | "getro" | "main" | "all";
 
 export type Operator = "AND" | "OR";

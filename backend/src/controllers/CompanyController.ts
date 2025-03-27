@@ -60,6 +60,7 @@ export class CompanyController {
         source: datasource,
       };
     } else {
+      return {
         source: DataSource.UNKNOWN,
         message: "unsupported id",
       };
@@ -99,3 +100,4 @@ export class CompanyController {
       return {
         result: false,
         error: "Please check email, email maybe invalid one",
+      };

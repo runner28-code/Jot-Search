@@ -14,7 +14,6 @@ import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 import AuthService from '../../services/auth';
 
-// Temp comment
 
 import {
   defaultJobFilterState,
@@ -32,7 +31,6 @@ export default function NavSearch({ placeholder }) {
 
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
-      const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
         firstname: splitName[0],
