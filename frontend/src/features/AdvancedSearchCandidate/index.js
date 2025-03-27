@@ -24,6 +24,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
+// Temp comment
 
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
@@ -80,6 +81,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
     }
+  };
 
 
   const { jobs, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'jobs' });

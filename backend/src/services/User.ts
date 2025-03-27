@@ -46,6 +46,7 @@ const validateUser = ({
       return `role is invalid, it should be one in [${ROLES.join(", ")}]`;
     if (isNullOrEmpty(password)) return "password is required";
     // if (isNullOrEmpty(resume))
+    //     return 'resume is required';
     // if (isNullOrEmpty(linkedin))
     //     return 'linkedin is required';
     // if (isNullOrEmpty(skills))

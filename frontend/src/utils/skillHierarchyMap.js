@@ -33,7 +33,6 @@ export const roles = {
     'Executive Assistant',
     'Recruiting',
     'People Operations',
-    'Human Resources',
     'IT',
     'Entrepreneurship'
   ],
@@ -99,7 +98,6 @@ export const skills = [
   'Automation',
   'AWS',
   'Azure',
-// Temp comment
   'B2B',
   'Bachelor\'s Degree',
   'Bachelors Degree',

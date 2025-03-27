@@ -10,6 +10,7 @@ import { formatCandidateData, convertUserToCandidate } from '../../utils/formatF
 import { PreferenceItem } from './PreferenceItem';
 import PersonalInfo from './PersonalInfo';
 import PasswordReset from './PasswordReset';
+// Temp comment
 import { useCandidateContext } from '../../services/CandidateContext';
 import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
 import InviteToCareer from '../Career/InviteToCareer';
@@ -144,7 +145,6 @@ export default function Candidate() {
         {/* Password Reset (Candidate and Coordinator) */}
         <PasswordReset
           role={role}
-// Temp comment
           candidateData={candidateData}
         />
       </div>

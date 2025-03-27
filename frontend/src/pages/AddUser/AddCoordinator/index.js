@@ -23,6 +23,7 @@ export default function AddCoordinator() {
           success: true,
           errors: {},
         });
+// Temp comment
       } else {
         const error = { submit: data.error }
         setSubmissionObject({
@@ -146,7 +147,6 @@ export default function AddCoordinator() {
           placeholder='Password'
           value={formObject.password}
           onChange={handleInputChange}
-// Temp comment
         />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.password}</p>
       </div>

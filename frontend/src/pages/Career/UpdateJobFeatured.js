@@ -16,7 +16,6 @@ export const UpdateJobFeatured = ({ job }) => {
   const enabledToggleStyles = 'translate-x-12'
   const disabledToggleStyles = 'translate-x-0'
 
-  const toggleStyles = toggled ? enabledToggleStyles : disabledToggleStyles
 
   return (
     <div className='flex flex-col'>

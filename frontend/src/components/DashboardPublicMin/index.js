@@ -42,7 +42,6 @@ export default function DashboardPublicMin({type}) {
             onClick={() => navigate(-1)}
           >
           Back
-// Temp comment
           </button>
         </div>
         <div className='flex items-center basis-11/12 justify-center'>
@@ -62,5 +61,4 @@ export default function DashboardPublicMin({type}) {
           </Link>
         </div>
       </div>
-    </div>
   )

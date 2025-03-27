@@ -16,13 +16,13 @@ export default function AccessibleDropdown(props) {
     onChange,
     choices,
     choiceObject,
+// Temp comment
     currentChosen, 
     stylesObject,
     showDropdownArrow,
     disabled,
   } = props;
 
-// Temp comment
   function handleSelection(choice) {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {

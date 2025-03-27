@@ -314,7 +314,6 @@ export default function RegistrationFormInternal(loggedIn) {
                 (relocate ? relocateClass : null )
               }
             ></div>
-          </div>
         </div>
         {/* Expertise */}
         <FormInput

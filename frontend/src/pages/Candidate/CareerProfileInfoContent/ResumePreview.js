@@ -1,5 +1,4 @@
 import { useState, useRef } from 'react';
-// Temp comment
 import { usePdf } from '@mikecousins/react-pdf';
 import PropTypes from 'prop-types';
 import {

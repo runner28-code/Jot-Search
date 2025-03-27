@@ -21,7 +21,6 @@ const dropDownFiltersCandidate = [
 export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
   const { width } = useWindowDimensions();
-// Temp comment
   const {
     defaultFilterObject,
     filterObject,
@@ -32,6 +31,7 @@ export default function CareerFilterLayout(props) {
     clearFilters,
   } = props;
 
+// Temp comment
   const dropdownFilterObject = {};
   if( userType === 'candidate' ) {
     dropDownFiltersCandidate.forEach(filter => {

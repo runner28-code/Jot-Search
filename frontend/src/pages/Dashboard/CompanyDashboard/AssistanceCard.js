@@ -1,5 +1,4 @@
 import flagIcon from '../../../assets/icons/flag.svg';
-// Temp comment
 
 export default function AssistanceCard() {
   return (
@@ -31,6 +30,7 @@ export default function AssistanceCard() {
         rel='noopener noreferrer'
       >
         Make a request
+// Temp comment
       </a>
     </div>
   )

@@ -22,7 +22,6 @@ export type Company = {
     customDate1_3?: string,
     customFloat1_3?: string,
     customInt1_3?: string,
-    customText1_20?: string,
     customTextBlock1_5?: string,
     dateFounded?: string,
     dateLastModified?: string,

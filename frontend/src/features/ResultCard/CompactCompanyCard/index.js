@@ -22,7 +22,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
         state={ Boolean(active) }
       >
         {/* Card Image */}
-// Temp comment
         <div className='flex flex-col space-y-4 h-full'>
           <div className='h-48 w-48 p-4 mr-18 flex justify-center items-center border border-solid border-smokeGray'>
             { renderCardImage(data) }

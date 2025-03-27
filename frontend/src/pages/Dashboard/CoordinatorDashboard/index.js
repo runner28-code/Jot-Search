@@ -8,7 +8,6 @@ export default function CoordinatorDashboard({ userType }) {
   return (
     <>
       <PageHeader
-        headerText={`Coordinator Dashboard`}
         icon={gaugeIcon}
       />
       <Stats userType={userType} />

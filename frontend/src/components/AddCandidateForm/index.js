@@ -252,6 +252,7 @@ export default function RegistrationForm() {
           />
           {/* File input for resume */}
           <FormInput
+            type='file'
             name='resumeFile'
             placeholder='Upload Resume'
             value={formObj.resumeFile}

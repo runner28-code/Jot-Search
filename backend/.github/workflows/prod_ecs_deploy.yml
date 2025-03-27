@@ -3,7 +3,6 @@
 # on:
 #   push:
 #     branches:
-#       - main
 
 # env:
 #   AWS_REGION: 'us-east-1'
@@ -13,4 +12,5 @@
 #   ECS_TASK_DEFINITION: '.github/workflows/prod_task_definition.json'
 #   CONTAINER_NAME: 'intulsa-backend-container-prod'
 
+# jobs:
 #   deploy:

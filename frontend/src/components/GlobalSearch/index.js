@@ -71,6 +71,7 @@ export default function GlobalSearch({ placeholder }) {
 
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
+    setResults({ ...results, forceHidden: true });
   };
 
   useEffect(() => {
@@ -87,6 +88,7 @@ export default function GlobalSearch({ placeholder }) {
   return (
     <div className='relative'>
       <div ref={menuRef} >
+// Temp comment
         <SearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }

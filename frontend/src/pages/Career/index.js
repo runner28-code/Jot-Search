@@ -38,6 +38,7 @@ export default function CareerPage() {
 
   if ( !careerData.id ) { return <LoadingSpinner /> }
 
+// Temp comment
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';
   const addressString = buildCareerAddress(careerData.city, careerData.state);
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
@@ -56,6 +57,7 @@ export default function CareerPage() {
 
   const containerStyles = 'ml-10 mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
 
+  return (<>
     <RenderHeader
       loggedIn={loggedIn}
       role={role}

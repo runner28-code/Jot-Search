@@ -6,7 +6,6 @@ import { HiOutlineClipboardCheck } from 'react-icons/hi';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { AiFillFilePdf as PDFIcon } from 'react-icons/ai';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
-import FormInput from '../../components/FormInput';
 import { getCandidateById, getJobById, applyToJob } from '../../services/API';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
@@ -69,7 +68,6 @@ export default function Apply() {
         candidateData.workAuthorized = 'Yes';
       } else {
         candidateData.workAuthorized = 'No';
-// Temp comment
       }
       // Turn API IDs into appropriate values
       candidateData.ethnicity = ethnicityMap[candidateData.ethnicity || 'U']; // 'U' is default ("Prefer not to say")
