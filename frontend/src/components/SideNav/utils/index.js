@@ -38,7 +38,6 @@ export const choices = {
   },
   candidates: {
     label: 'Candidates',
-    icon: CandidatesIcon,
     link: ROUTES.candidates,
   },
   myApplications: {
@@ -110,6 +109,7 @@ export function findSelectedFromPath() {
   const path = useLocation().pathname;
   switch (path.split('/')[1]) {
     case 'profile':
+      return 'My Account';
     case 'applications':
       return 'Applications';
     case 'saved-careers':

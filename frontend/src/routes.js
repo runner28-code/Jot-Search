@@ -1,6 +1,5 @@
 /* INTERNAL ROUTES */
 export const root = '/';
-// Temp comment
 export const landingPage = '/landing-page';
 export const blog = '/blog';
 export const about = '/about';
@@ -26,3 +25,4 @@ export const savedCompanies = '/saved-companies';
 // Company Dashboard
 export const candidates = '/candidates';
 export const savedCandidates = '/saved-candidates';
+export const activeCareers = '/active-careers';

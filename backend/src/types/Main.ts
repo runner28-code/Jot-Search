@@ -5,5 +5,4 @@ export type Application = {
     appliedOn: string;
 }
 
-export type SavedJob = {
     id: string;

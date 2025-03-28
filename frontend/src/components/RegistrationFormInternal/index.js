@@ -158,6 +158,7 @@ export default function RegistrationFormInternal(loggedIn) {
   function handleChange(name, value) {
     setFormObj({
       ...formObj,
+// Temp comment
       [name]: value,
     });
   }
@@ -183,6 +184,7 @@ export default function RegistrationFormInternal(loggedIn) {
     })
     setReferralChoice(false);
   }
+
 
   // Alter header and pronoun based on who is registering the new user
   const pronoun = addType === 'candidate' ? 'you' : 'they';

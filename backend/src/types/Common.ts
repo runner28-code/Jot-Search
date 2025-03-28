@@ -38,3 +38,4 @@ export enum DataSource {
 export type DataSources = "bullhorn" | "getro" | "main" | "all";
 
 export type Operator = "AND" | "OR";
+

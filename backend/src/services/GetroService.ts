@@ -70,7 +70,6 @@ export class GetroService {
         while (repeatErr < 3) {
             try {
                 await this.checkAuth();
-                const query = queryString.stringify({
                     per_page,
                     page,
                     detailed: true
@@ -85,3 +84,5 @@ export class GetroService {
                     if (!testMode) {
                         let result = [];
                         for (const company of items) {
+                            const detail = await this.getCompanyDetail(company.slug);
+                            if (detail) {

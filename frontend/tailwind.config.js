@@ -23,7 +23,6 @@ module.exports = {
         'spin-reverse': {
           from: {
             transform: 'rotate(180deg)'
-          },
           to: {
             transform: 'rotate(0deg)'
           },
@@ -72,3 +71,5 @@ module.exports = {
         darkGreen: '#008000',
         softWhite: '#F6F5F6',
         smokeGray: '#DDDDDD',
+        medGray: '#707070',
+        slateGray: '#3C3C4B',

@@ -21,6 +21,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     if (filterState['On-Site/Remote'] !== 'Any Work Setting') {
       params['On-Site/Remote'] = filterState['On-Site/Remote'];
     }
+// Temp comment
     if (filterState.expertise !== 'Any Expertise') {
       params.expertise = filterState.expertise;
     }
@@ -54,7 +55,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
       </h5>
       <FilterSearch
         searchTerm={ filterState.title }
-// Temp comment
         setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }
         placeholder='Search careers or companies'

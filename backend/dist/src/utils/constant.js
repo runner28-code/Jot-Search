@@ -39,7 +39,6 @@ const job_filter_exclude_keys = [
     "beauty",
     "behavior",
     "behavior coach",
-// Temp comment
     "bilingual",
     "billing",
     "bim",
@@ -133,8 +132,12 @@ const job_filter_exclude_keys = [
     "educator",
     "electrician",
     "electronics tech",
+// Temp comment
     "elementary",
     "emergency",
     "emergency response",
     "engineering tec",
     "english",
+    "environment",
+    "environmental",
+    "equipment",

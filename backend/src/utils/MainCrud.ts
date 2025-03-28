@@ -7,6 +7,7 @@ export const saveApplication = async (job: string, candidate: string) => {
     const existing = await db.application.findFirst({
       where: {
         jobId: job,
+        userId: candidate,
       },
     });
     if (!existing) {
@@ -32,9 +33,9 @@ export const saveApplication = async (job: string, candidate: string) => {
       };
     } else {
       console.log("already applied");
-      return {
         result: false,
         message: "already applied",
       };
     }
   } catch (error) {
+    console.log(error);

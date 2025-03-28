@@ -1,10 +1,10 @@
 import { DATASET_BULLHORN, DATASET_GETRO, DATASET_MAIN } from "../types/Common";
 import {
   Job,
+  ALLOWED_JOB_KEYS,
   JobKey,
   ALLOWED_JOB_KEYS_TO_UPDATE,
 } from "../types/Job";
-import db from "../utils/db";
 
 export const createJob = async (job: Job) => {
   try {
@@ -38,3 +38,4 @@ export const createJob = async (job: Job) => {
 // TODO: Figure out what we want to make required
 const validateJob = (job: Job): string | undefined => {
   return undefined;
+};

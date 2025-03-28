@@ -15,6 +15,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
       className='relative'
       key={data.id}
     >
+// Temp comment
       <Link
         to={`${ROUTES.companies}/${data.id}`}
         className='flex px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
@@ -52,5 +53,4 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             isFavoriteOverride={isFavoriteOverride} />
       }
     </div>
-// Temp comment
   )

@@ -54,3 +54,10 @@ export class CompanyController {
         source: datasource,
       };
     } else if (datasource === DataSource.GETRO) {
+      const company = await this.getCompanyByIdFromGetro(id);
+      return {
+        company,
+        source: datasource,
+      };
+    } else {
+      return {

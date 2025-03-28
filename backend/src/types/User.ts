@@ -2,6 +2,7 @@ export type User = {
   id?: string;
   externalId?: string;
   firstname?: string;
+  lastname?: string;
   gender?: string;
   email: string;
   password?: string;
@@ -26,3 +27,4 @@ export type User = {
   phone?: string;
   status?: string;
   username?: string;
+  logo?: string;

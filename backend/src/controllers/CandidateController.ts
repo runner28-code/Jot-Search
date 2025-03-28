@@ -116,3 +116,5 @@ export class CandidateController {
   }
 
   @Authorized()
+  @Post("/search")
+  async searchByFilters(@Body() body: FilterBody) {

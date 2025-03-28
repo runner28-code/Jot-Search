@@ -3,6 +3,7 @@ import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 import PropTypes from 'prop-types';
+
 export const ethnicityChoices = Object.values(ethnicityMap);
 export const genderChoices = Object.values(genderMap);
 export const veteranStatusChoices = Object.values(veteranStatusMap);
@@ -51,7 +52,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
     >
       <input
         type='checkbox'
-        name='useExistingResume'
         className='h-8 w-8 ml-2'
         checked={useExistingResume}
         onChange={handleChange}

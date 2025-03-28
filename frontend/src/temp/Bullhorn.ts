@@ -39,7 +39,6 @@ export type Company = {
     ownerShip?: string,
     phone?: string,
     revenue?: string,
-    status?: string,
     taxRate?: string,
     tickerSymbol?: string,
     workWeekStart?: string,
@@ -92,3 +91,5 @@ export type Job = {
     location_state_name?: string;
     location_zip?: string;
     location_country_id?: string;
+    location_country_name?: string;
+    location_country_code?: string;

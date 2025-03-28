@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// Temp comment
 import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { appendPathToBaseUrl } from '../../services/API';
@@ -46,6 +47,7 @@ export default function InviteCandidates({ job }) {
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
       ))}
+    </div>)
   }
 
   const valueRenderer = () => {

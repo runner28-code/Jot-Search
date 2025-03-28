@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
@@ -16,7 +15,6 @@ import AuthService from '../../services/auth';
 
 
 import {
-// Temp comment
   defaultJobFilterState,
   buildSearchFilters,
   defaultCandidateFilterState

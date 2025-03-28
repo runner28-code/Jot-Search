@@ -27,13 +27,13 @@ export default function AddUser() {
       <img
         src={User}
         alt='User Icon'
-// Temp comment
         className='w-12 h-12 vw-768:w-24 vw-768:h-24 mr-8'
       />
       <span>Add new</span>
       <Dropdown
         inputStyles='text-md vw-768:text-lg font-bold mx-4 px-2 py-4 ml-8 border-lightGrey border-solid border-2 rounded-2xl'
         name='formType'
+// Temp comment
         currentChosen={formType}
         choices={['Candidate', 'Company', 'Coordinator']}
         handleChange={handleDropdownChange}

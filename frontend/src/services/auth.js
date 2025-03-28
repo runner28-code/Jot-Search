@@ -52,6 +52,7 @@ class AuthService {
 
   accountRecovery(email) {
     return email;
+// Temp comment
   }
 
   logout() {

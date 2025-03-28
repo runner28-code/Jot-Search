@@ -18,7 +18,6 @@ import {
 import { useCandidateContext } from '../../services/CandidateContext';
 
 export default function NavBar() {
-// Temp comment
   const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {
