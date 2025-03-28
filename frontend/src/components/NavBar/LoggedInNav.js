@@ -19,7 +19,6 @@ import { useCandidateContext } from '../../services/CandidateContext';
 
 export default function NavBar() {
   const { width } = useWindowDimensions();
-
   if ( width < 1280 ) {
     return <NavBarLayout />
   } else {

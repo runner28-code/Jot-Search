@@ -26,6 +26,7 @@ function HeaderContent({ companyData }) {
           <div className='basis-2/6'>
             { renderCompanyLogo(companyData.logo, companyData.name) }
             <FillerIcon />
+// Temp comment
           </div>
           <div className='basis-4/6'>
             <h4 className={ headerTitle }>

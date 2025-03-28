@@ -11,6 +11,7 @@ export default function CompanyDashboard({userType}) {
   const headerStyles = 'font-spaceGrotesk font-bold text-h1 text-royalBlue ';
   return (
     <>
+      <PageHeader
         headerText={profile.firstname + ' Dashboard'}
         icon={gaugeIcon}
       />
@@ -22,4 +23,3 @@ export default function CompanyDashboard({userType}) {
       <h2 className='mt-22 font-spaceGrotesk font-semibold text-h5 text-charcoal'>Search</h2>
       <AdvancedSearch />
     </>
-  )

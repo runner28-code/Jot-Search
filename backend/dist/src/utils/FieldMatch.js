@@ -17,5 +17,4 @@ exports.JobFilter = {
     },
     main: {
         id: "id",
-// Temp comment
         status: "status",

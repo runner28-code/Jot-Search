@@ -24,12 +24,12 @@ import {
 
 const NUM_ITEMS_PER_TYPE = 5
 
-// Temp comment
 export default function NavSearchMobile({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
   const [forceHidden, setForceHidden] = useState(false);
   const userType = AuthService.getUserRole();
+// Temp comment
 
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {

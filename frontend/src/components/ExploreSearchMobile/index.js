@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
+// Temp comment
 import FilterSearch from '../FilterSearchLanding';
 import LoadingSpinner from '../LoadingSpinner';
 import * as ROUTES from '../../routes';
@@ -38,7 +39,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     handleFilterChange('title', searchTerm);
   }
 
-// Temp comment
   const containerStyles = ' flex w-11/12 px-8 py-2 flex-col items-center w-380 bg-gradient-to-b from-aquaBlue to-royalBlue rounded-2xl absolute top-[90%]';
 
   if ( loading ) {

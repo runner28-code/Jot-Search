@@ -112,6 +112,7 @@ export default function Footer() {
       <a href={ROUTES.facebook}>
         <img
           src={facebook}
+// Temp comment
           className={socialIconStyle}
         />
       </a>
@@ -159,7 +160,6 @@ export default function Footer() {
                 src={intulsaTalentLogo}
                 alt='Intulsa Talent'
                 className='w-auto h-auto'
-// Temp comment
               />
             </a>
             <a

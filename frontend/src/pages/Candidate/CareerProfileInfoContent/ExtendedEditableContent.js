@@ -48,6 +48,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
 
   const handleInputChange = async (event) => {
     const { name, value } = event.target;
+    if (name === 'avatar' || name === 'resume') {
       const fileToUpload = event.target.files[0];
       const pluralizedFolderName = name + 's';
       const newPath = await uploadFile(pluralizedFolderName, fileToUpload);
@@ -158,7 +159,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         name='experience'
         label='Years of Experience'
         required={true}
-        placeholder='Select'
         value={formData.experience}
         onChange={handleChange}
         choiceObject={experienceMap}

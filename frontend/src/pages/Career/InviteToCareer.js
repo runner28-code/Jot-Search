@@ -6,7 +6,6 @@ import {
   defaultJobFilterState,
   buildSearchFilters,
 } from '../../utils/filterObjects';
-
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
@@ -38,7 +37,6 @@ export default function InviteToCareer({ candidate }) {
       {selected?.map((item) => (
         <span 
           key={item.value} 
-// Temp comment
           className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">
           <span>{item.label}</span>
           <button 

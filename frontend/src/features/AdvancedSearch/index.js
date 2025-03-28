@@ -96,7 +96,6 @@ export default function AdvancedSearch({ disabledTabs }) {
       ...filterObject,
       [filterType]: choice
     });
-    setPage(1);
   }
 
   function handleSearchChange(searchTerm) {
@@ -122,7 +121,6 @@ export default function AdvancedSearch({ disabledTabs }) {
     setPage(1);
   }
 
-// Temp comment
   const propsByTab = {
     careers: {
       filterTemplate: jobFilterObject,

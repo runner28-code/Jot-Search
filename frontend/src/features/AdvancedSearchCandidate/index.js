@@ -190,6 +190,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
             />
           </div>
           <FilterLayout
+            activeTab={activeTab}
             filterProps={filterProps}
           />
         </div>

@@ -366,7 +366,6 @@ export default function RegistrationFormInternal(loggedIn) {
         />
         {/* Employment Preference */}
         <FormInput
-// Temp comment
           type='single-select'
           name='employmentPreference'
           label='Preferred Employment Type'

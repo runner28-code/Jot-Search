@@ -16,6 +16,7 @@ import {
   DATASET_GETRO,
   FilterOption,
   Job,
+  FilterBody,
   DataSource,
   Tables,
   Company,
@@ -62,3 +63,6 @@ export class CompanyController {
       return {
         source: DataSource.UNKNOWN,
         message: "unsupported id",
+      };
+    }
+  }

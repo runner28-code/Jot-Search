@@ -23,6 +23,3 @@ const setupCronJobs = async () => {
     } catch (error) {
       consoleLog(error);
     }
-    consoleLog("/// CRON_JOB_ENDED: BULLHORN_GET_JOBS");
-  });
-

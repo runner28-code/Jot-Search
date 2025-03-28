@@ -70,13 +70,13 @@ export class CandidateController {
         candidate: clearPassword(candidate),
         message: !candidate ? "No user with given ID" : undefined,
       };
-    } catch (error) {
       return { message: error };
     }
   }
 
   @Authorized()
   @Post("/update")
+  async update(
     @CurrentUser() authUser: User,
     @Body() body: any
   ) {

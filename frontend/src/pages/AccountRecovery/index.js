@@ -28,7 +28,6 @@ export default function AccountRecovery() {
   }
 
   function renderResponse () {
-// Temp comment
     const successStyle = 'mb-4 text-success';
     const errorStyle = 'mb-4 text-error';
     if( response ) {

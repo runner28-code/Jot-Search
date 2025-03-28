@@ -100,7 +100,6 @@ const job_filter_exclude_keys = [
     "court",
     "credit",
     "crew",
-    "crew leader",
     "crime",
     "crisis",
     "crossing guard",
@@ -122,7 +121,6 @@ const job_filter_exclude_keys = [
     "donor",
     "drainage",
     "driver",
-// Temp comment
     "drug",
     "economist",
     "economy",
