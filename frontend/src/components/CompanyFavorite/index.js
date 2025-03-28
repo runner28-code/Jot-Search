@@ -23,7 +23,6 @@ export default function CareerFavorite () {
         {
           isLoading ?
             <LoadingSpinner />
-// Temp comment
             :
             savedCompanies.map((company, index) => {
               console.log(company);

@@ -49,6 +49,7 @@ export class UserController {
         token,
       };
     }
+    return { result, error };
   }
 
   /**

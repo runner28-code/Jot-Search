@@ -49,7 +49,6 @@ export default function ResultContainer(props) {
   }
 
   return (
-// Temp comment
     <div className='w-full'>
       { renderHeader() }
       <div

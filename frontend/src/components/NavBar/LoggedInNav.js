@@ -18,6 +18,7 @@ import {
 import { useCandidateContext } from '../../services/CandidateContext';
 
 export default function NavBar() {
+// Temp comment
   const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {
@@ -25,28 +26,3 @@ export default function NavBar() {
   } else {
     return <DesktopNavBarLayout />
   }
-}
-
-function NavBarLayout() {
-  return (
-    <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50 '>
-      <div className='h-30 px-8 flex justify-between items-center'>
-        <Link to={ROUTES.root}>
-          <img
-            className='my-8 w-3/4'
-            src={inTulsaLogoText}
-            alt='logo'
-          />
-        </Link>
-        {/* Nav Menu */}
-        <div className='flex items-center font-spaceGrotesk'>
-          <div className='mr-8'>
-            { renderNavSearch() }
-          </div>
-          {/* Dropdown Menu */}
-          <DropdownMenu />
-        </div>
-      </div>
-      {/* Nav Search */}
-    </nav>
-  )

@@ -19,6 +19,7 @@ export default function AddUser() {
     setFormType(e.target.value);
   }
 
+  const defaultContainer = 'bg-white border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12';
   const companyContainer = '';
 
   return (<>
@@ -26,6 +27,7 @@ export default function AddUser() {
       <img
         src={User}
         alt='User Icon'
+// Temp comment
         className='w-12 h-12 vw-768:w-24 vw-768:h-24 mr-8'
       />
       <span>Add new</span>

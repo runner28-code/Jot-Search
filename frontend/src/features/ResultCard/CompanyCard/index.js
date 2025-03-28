@@ -34,7 +34,6 @@ export default function CompanyCard({ data }) {
       key={data.id}
     >
       <Link
-// Temp comment
         to={`${ROUTES.companies}/${data.id}`}
         className='h-92 w-full flex mb-10 px-xxl-3 pt-xxl-3 cursor-pointer bg-white border border-midGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
         tabIndex='0'
@@ -55,7 +54,6 @@ export default function CompanyCard({ data }) {
             <div className='w-1/3 flex items-center'>
               <img
                 src={locationIcon}
-                className='h-8 mr-6 ml-1' />
               <p className='text-textBlack'>{addressString}</p>
             </div>
             <OpenCareers companyId={data.id} />

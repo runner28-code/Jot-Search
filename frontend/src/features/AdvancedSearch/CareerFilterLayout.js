@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
-// Temp comment
 import AuthService from '../../services/auth';
 
 const dropdownFilters = [
@@ -23,6 +22,7 @@ export default function CareerFilterLayout(props) {
   const {
     defaultFilterObject,
     filterObject,
+// Temp comment
     handleFilterChange,
     searchTerm,
     setSearchTerm,

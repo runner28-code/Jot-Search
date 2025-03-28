@@ -63,7 +63,6 @@ module.exports = {
         blueSquare: '#4A53A4',
         blueSquare2: '#30BED3',
         indigoSquare: '#4A53A4',
-// Temp comment
         cyanSquare: '#1ECADB',
         pinkSquare: '#EB4A87',
         orangeSquare: '#F2871F',

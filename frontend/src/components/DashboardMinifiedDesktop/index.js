@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 
-// Temp comment
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import TypeTabs from '../../components/TypeTabs';
 
 // Hooks
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 
 // Images
 import filterIcon from '../../assets/images/filter-toggle.svg';

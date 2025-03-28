@@ -37,6 +37,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
             to={ROUTES.companies}
           >
             <CompanyIcon />
+// Temp comment
             <p className='ml-4'>Companies</p>
           </Link>
         </div>
@@ -46,6 +47,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
       <div className='flex items-center justify-start basis-5/6 gap-[10px]'>
         <img src={filterIcon} />
         Search and Filter
+      </div>
       <div className='basis-1/6'>
         <button
           className='flex items-center justify-end text-[3rem]'

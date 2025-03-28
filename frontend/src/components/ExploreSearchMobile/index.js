@@ -54,6 +54,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
       </h5>
       <FilterSearch
         searchTerm={ filterState.title }
+// Temp comment
         setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }
         placeholder='Search careers or companies'

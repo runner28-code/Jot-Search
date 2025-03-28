@@ -16,12 +16,14 @@ import AuthService from '../../services/auth';
 
 
 import {
+// Temp comment
   defaultJobFilterState,
   buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
 
 const NUM_ITEMS_PER_TYPE = 5
+
 export default function NavSearch({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');

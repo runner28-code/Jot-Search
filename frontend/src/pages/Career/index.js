@@ -32,13 +32,11 @@ export default function CareerPage() {
     // Decode url encoded properties on career
     career.title = urlDecode(career.title);
     career.description = urlDecode(career.description);
-
     setCareerData({ ...career });
   }, []);
 
   if ( !careerData.id ) { return <LoadingSpinner /> }
 
-// Temp comment
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';
   const addressString = buildCareerAddress(careerData.city, careerData.state);
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);

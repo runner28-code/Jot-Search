@@ -55,6 +55,7 @@ export default function Applications() {
   return (
     <section>
       <PageHeader
+        headerText='My InTulsa Featured Applications'
         IconComponent={BsClipboardCheck}
       />
       <div className='px-8'>

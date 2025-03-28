@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
+// Temp comment
 import checkmarkIcon from '../../assets/images/checkmark.png';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
@@ -13,5 +14,6 @@ function renderActiveIcon(choice, currentChosen) {
       <img 
         src={checkmarkIcon} 
         alt="checkmark" 
+        className="w-8 h-8 mr-2" />
     )
   }

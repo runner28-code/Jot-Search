@@ -39,6 +39,7 @@ export const stateCodeMap = {
   Massachusetts: 'MA',
   Michigan: 'MI',
   Minnesota: 'MN',
+// Temp comment
   Mississippi: 'MS',
   Missouri: 'MO',
   Montana: 'MT',
@@ -67,7 +68,6 @@ export const stateCodeMap = {
   Wisconsin: 'WI',
   Wyoming: 'WY',
 };
-// Temp comment
 
 export function getStateCode(stateName) {
   return stateCodeMap[stateName];

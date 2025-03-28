@@ -24,7 +24,6 @@ export default function CareerFilterLayout(props) {
   const {
     defaultFilterObject,
     filterObject,
-// Temp comment
     handleFilterChange,
     searchTerm,
     setSearchTerm,
@@ -41,6 +40,7 @@ export default function CareerFilterLayout(props) {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
+// Temp comment
   }
 
   const buttonStyles = 'text-white text-sm whitespace-nowrap';

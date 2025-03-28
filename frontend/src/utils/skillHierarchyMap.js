@@ -33,6 +33,7 @@ export const roles = {
     'Executive Assistant',
     'Recruiting',
     'People Operations',
+    'Human Resources',
     'IT',
     'Entrepreneurship'
   ],
@@ -45,7 +46,6 @@ export const roles = {
   ],
   'Software & Engineering': [
     'AI Machine Learning',
-    'Backend Engineer',
     'Frontend Engineer',
     'Full Stack Engineer',
     'DevOps & Infrastructure',

@@ -26,7 +26,6 @@ export default function FeaturedJobs() {
   const viewAllStyles = 'text-center mt-48';
   const viewAllStylesMobile = 'text-center mt-12';
 
-// Temp comment
   const filtersArr = [
     {
       key: 'featured',
