@@ -22,7 +22,6 @@ const dropdownFilters = [
 ];
 const checkboxFiltersCoord = [
   'Authorized to work in the US',
-// Temp comment
   'Open to Relocation',
   'Actively Looking'
 ];
@@ -62,7 +61,6 @@ export default function CandidateFilterLayout(props) {
     });
   }
 
-  const toggleSkills = (skill) => {
     const skills = filterObject.skills ?? []
     if (skills.includes(skill)) {
       handleFilterChange('skills', skills.filter(s => s !== skill))

@@ -15,6 +15,7 @@ export default function ResultContainer(props) {
     type,
     limit,
     header, 
+    active,
     compact = false,
     isFavoriteOverride = null,
     agoText = null,
@@ -34,7 +35,6 @@ export default function ResultContainer(props) {
   }
 
   function renderFooter() {
-    if ( !limit ) {
       return null;
     }
 

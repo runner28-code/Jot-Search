@@ -67,6 +67,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,
+        firstname: filterObject.title
       }
       delete modifiedFilterObject.title;
 
@@ -189,7 +190,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
             />
           </div>
           <FilterLayout
-            activeTab={activeTab}
             filterProps={filterProps}
           />
         </div>

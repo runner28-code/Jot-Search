@@ -14,4 +14,3 @@ env:
   CONTAINER_NAME: 'intulsa-frontend-container-prod'
 
 jobs:
-  deploy:

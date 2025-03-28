@@ -10,10 +10,12 @@ exports.JobFilter = {
         employmentType: "employmentType",
         onSite: "onSite",
         yearsRequired: "yearsRequired",
+        willRelocate: "willRelocate",
         status: "status",
         hidden: "hidden",
         companyId: "clientCorporationID",
     },
     main: {
         id: "id",
+// Temp comment
         status: "status",

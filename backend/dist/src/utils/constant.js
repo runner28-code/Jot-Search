@@ -122,6 +122,7 @@ const job_filter_exclude_keys = [
     "donor",
     "drainage",
     "driver",
+// Temp comment
     "drug",
     "economist",
     "economy",
@@ -132,7 +133,6 @@ const job_filter_exclude_keys = [
     "educator",
     "electrician",
     "electronics tech",
-// Temp comment
     "elementary",
     "emergency",
     "emergency response",

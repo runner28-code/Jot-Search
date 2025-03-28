@@ -10,7 +10,6 @@ import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCo
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
-import {
   candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
@@ -191,7 +190,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
             activeTab={activeTab}
             filterProps={filterProps}
           />
-// Temp comment
         </div>
       </div>
       <ResultsHeader

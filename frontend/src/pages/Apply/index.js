@@ -91,6 +91,7 @@ export default function Apply() {
       setCareer({ ...careerData, loading: false });
       setOriginalObject(stateObject);
       setApplicationObject({ ...stateObject, loading: false });
+    } catch(e) {
       console.log('error', e);
     }
   }, []);

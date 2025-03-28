@@ -16,6 +16,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
   
   if ( propertyName === 'comments' ) {
+// Temp comment
     return <EditSummaryForm 
       summaryText={contentObject[propertyName]}
       setSummary={handleChange} />

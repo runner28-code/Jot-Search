@@ -23,6 +23,7 @@ module.exports = {
         'spin-reverse': {
           from: {
             transform: 'rotate(180deg)'
+          },
           to: {
             transform: 'rotate(0deg)'
           },
@@ -59,7 +60,6 @@ module.exports = {
         'blue-bg': '#E7F0F8',
         buttonLightBlue: '#00CADB',
         'blue70%': '#216bb2b3',
-        blueSquare: '#4A53A4',
         blueSquare2: '#30BED3',
         indigoSquare: '#4A53A4',
         cyanSquare: '#1ECADB',

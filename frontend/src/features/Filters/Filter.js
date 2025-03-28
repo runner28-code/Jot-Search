@@ -59,7 +59,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
           className='text-md text-black70%'>{ selected }</p>
         <img
           src={downChevron}
-// Temp comment
           alt='open'
           className='w-6 h-4'
         />

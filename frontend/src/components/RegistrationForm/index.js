@@ -232,7 +232,6 @@ export default function RegistrationForm(loggedIn) {
             type='text'
             name='phone'
             label='Phone'
-// Temp comment
             value={formObj.phone}
             onChange={handleChange}
             error={errors.includes('phone')}

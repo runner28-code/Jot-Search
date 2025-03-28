@@ -52,7 +52,6 @@ class AuthService {
 
   accountRecovery(email) {
     return email;
-// Temp comment
   }
 
   logout() {
@@ -106,6 +105,7 @@ class AuthService {
   }
 
   getSavedJobIDs() {
+// Temp comment
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }
 

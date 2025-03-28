@@ -10,6 +10,7 @@ const WIDE_MENU_WIDTH = 'w-110';
 export default function NavMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+// Temp comment
   function handleMenuClick() {
     setMenuOpen(menuOpen => !menuOpen);
   }
@@ -35,6 +36,7 @@ export default function NavMenu() {
           <div className='border-white border-solid border-2'></div>
         </div>
       </button>
+      <Menu
         key={menuOpen}
         menuOpen={menuOpen}
         handleOptionClick={handleOptionClick}

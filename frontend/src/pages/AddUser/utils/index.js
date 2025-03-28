@@ -11,7 +11,6 @@ export function validateInput(name, value, errors, password) {
     }
     return newErrors;
   } 
-// Temp comment
   // Password validation
   else if ( name === 'verifyPassword' ) {
     if ( value !== password ) {

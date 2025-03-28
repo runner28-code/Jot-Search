@@ -1,4 +1,3 @@
-// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import intulsaLogo from '../../assets/images/intulsa-logo-white-small.svg';
@@ -160,6 +159,7 @@ export default function Footer() {
                 src={intulsaTalentLogo}
                 alt='Intulsa Talent'
                 className='w-auto h-auto'
+// Temp comment
               />
             </a>
             <a

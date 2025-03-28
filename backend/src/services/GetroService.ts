@@ -24,7 +24,6 @@ export class GetroService {
     getOptions() {
         return {
             headers: {
-                'X-User-Email': this.email,
                 'X-User-Token': this.password,
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -70,6 +69,7 @@ export class GetroService {
         while (repeatErr < 3) {
             try {
                 await this.checkAuth();
+                const query = queryString.stringify({
                     per_page,
                     page,
                     detailed: true

@@ -10,6 +10,7 @@ export default function ExpertiseLinks() {
   const linkStyles = 'flex flex-col items-center mx-15';
   const iconStyles = 'w-54 h-54 mb-10';
   const textStyles = 'text-ml text-darkGray';
+
   return (
     <section className='mt-100 mb-54 flex flex-col items-center'>
       <h4 className='text-h4 font-spaceGrotesk font-semibold text-darkGray'>
@@ -27,6 +28,7 @@ export default function ExpertiseLinks() {
             alt='Software Engineering Icon'
             className={iconStyles}
           />
+// Temp comment
           <span className={textStyles}>Software &</span>
           <span className={textStyles}>Engineering</span>
         </Link>

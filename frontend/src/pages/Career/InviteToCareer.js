@@ -38,9 +38,9 @@ export default function InviteToCareer({ candidate }) {
       {selected?.map((item) => (
         <span 
           key={item.value} 
+// Temp comment
           className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">
           <span>{item.label}</span>
-// Temp comment
           <button 
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs' 
             onClick={(e) => deleteItem(e, item.value)}>X</button>

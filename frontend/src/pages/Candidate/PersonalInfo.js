@@ -36,6 +36,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   })
 
   const [editMode, setEditMode] = useState(false);
+// Temp comment
 
   const [referralChoice, setReferralChoice] = useState(false);
 
@@ -45,7 +46,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   }
 
   function handleChange(name, value) {
-// Temp comment
     setFormData({
       ...formData,
       [name]: value,

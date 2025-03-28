@@ -24,7 +24,6 @@ export default function MobileHeader(props) {
         >
           {'< Back'}
         </button>
-      )}
       { icon && (
         <img
           src={ icon }
