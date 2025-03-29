@@ -11,6 +11,7 @@ import searchWhite from '../../assets/images/search-white.webp';
 
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
+// Temp comment
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 import AuthService from '../../services/auth';
@@ -33,6 +34,7 @@ export default function NavSearchMobile({ placeholder }) {
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
+      const modifiedFilterObject = {
         ...defaultCandidateFilterState,
         firstname: splitName[0],
         lastname: splitName?.[1]

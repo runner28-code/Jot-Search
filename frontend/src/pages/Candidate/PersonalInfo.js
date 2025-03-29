@@ -6,7 +6,6 @@ import FormInput from '../../components/FormInput';
 import { SwitchButton } from './PreferenceItem';
 import { FiEdit } from 'react-icons/fi';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 import {
   ethnicityChoices,
   genderChoices,

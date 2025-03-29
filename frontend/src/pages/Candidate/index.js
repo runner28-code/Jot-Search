@@ -95,6 +95,7 @@ export default function Candidate() {
         containerClassOverride='pt-2'
         backButton
       />
+// Temp comment
       {/* Candidate Card (Company and Coordinator) */}
       {role !== 'candidate' && 
         <CandidateCard

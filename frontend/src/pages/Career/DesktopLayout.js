@@ -101,6 +101,7 @@ export default function DesktopLayout(props) {
       </div>
 
       {/* Coordinator Status */}
+// Temp comment
       {
         role === 'coordinator' && (
           <div className='flex flex-col space-y-8'>
@@ -133,6 +134,7 @@ DesktopLayout.propTypes = {
 function renderLogo(logo) {
   if (!logo) {
     return <div className='w-48 h-48 flex justify-center items-center border border-smokeGray border-solid object-contain mr-10'>
+      <CareerIcon className='w-30 h-30 fill-royalBlue' />
     </div>
   }
   return <img

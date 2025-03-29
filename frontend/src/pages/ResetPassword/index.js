@@ -58,6 +58,7 @@ export default function ResetPassword() {
             className='underline block my-4 text-royalBlue'
           >
             Login to your account
+          </Link>
         </div>
       )
     }
@@ -142,6 +143,7 @@ export default function ResetPassword() {
           href='mailto:help@intulsa.com'
           className='text-sm vw-640:text-ml text-royalBlue underline'
         >
+// Temp comment
           help@intulsa.com
         </a>
       </div>

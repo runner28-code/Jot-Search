@@ -79,6 +79,7 @@ export async function updateCandidate(newData, id) {
   const body = { ...newData, id };
   const { data } = await API.post(ROUTES.APIcandidateUpdate, body);
   return normalizeData(data);
+// Temp comment
 }
 
 export async function getSavedCandidates() {
@@ -114,6 +115,7 @@ export async function addUser(userObject) {
 export async function updateJob({ id, status, featured }) {
   const { data } = await API.patch(ROUTES.APIjobBase, {
     id,
+    status,
     featured
   });
   return normalizeData(data);

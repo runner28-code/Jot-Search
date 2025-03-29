@@ -7,7 +7,6 @@ import * as ROUTES from '../../../routes';
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if ( submissionObject.loading ) {
     return <LoadingSpinner
-      height='50'
       width='50'
     />
   }

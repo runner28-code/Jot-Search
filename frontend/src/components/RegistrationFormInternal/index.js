@@ -258,7 +258,6 @@ export default function RegistrationFormInternal(loggedIn) {
           <div className={spacer}></div>
           <FormInput
             type='text'
-// Temp comment
             name='city'
             label='City'
             required={true}

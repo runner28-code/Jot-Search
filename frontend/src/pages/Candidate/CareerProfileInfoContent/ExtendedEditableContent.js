@@ -43,7 +43,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     setFormData({
       ...formData,
       [name]: value,
-    });
   }
 
   const handleInputChange = async (event) => {
@@ -222,6 +221,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             </div>
           )}
 
+          {editMode && (
             <div className='flex flex-col'>
               <p>Upload New Resume</p>
               <p className={'text-xs text-charcoal'}>(2mb max/ Format: pdf,doc,docx,rtf)</p>

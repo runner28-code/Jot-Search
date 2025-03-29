@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-// Temp comment
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
@@ -25,6 +24,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
         {/* Card Image */}
         <div className='flex flex-col space-y-4 h-full'>
           <div className='h-48 w-48 p-4 mr-18 flex justify-center items-center border border-solid border-smokeGray'>
+// Temp comment
             { renderCardImage(data) }
           </div>
 

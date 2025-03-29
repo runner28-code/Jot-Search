@@ -137,6 +137,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     setFilterObject(initialFilterState);
     setPage(1);
   }
+// Temp comment
 
   // eslint-disable-next-line no-unused-vars
   const { Status, ...publicDropdownFilters } = jobFilterObject;

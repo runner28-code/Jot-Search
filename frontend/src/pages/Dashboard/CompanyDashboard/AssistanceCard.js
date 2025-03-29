@@ -10,6 +10,7 @@ export default function AssistanceCard() {
           alt='Flag'
           className='w-auto h-auto'
         />
+// Temp comment
         <h5 className='text-h5 font-medium font-spaceGrotesk text-charcoal ml-8'>InTulsa assistance</h5>
       </div>
       {/* Body */}
@@ -27,6 +28,7 @@ export default function AssistanceCard() {
         href='mailto:talentnetwork@intulsa.com?subject=Talent Network Assistance'
         className='mt-10 mb-6 inline-block border-2 border-royalBlue px-xl py-[15.5px] leading-[1.37]  text-royalBlue text-ml rounded-lg'
         target='_blank'
+        rel='noopener noreferrer'
       >
         Make a request
       </a>

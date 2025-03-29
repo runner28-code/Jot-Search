@@ -131,7 +131,6 @@ export default function AdvancedSearch({ disabledTabs }) {
       prefetchFunc: (page) => prefetchJobs({ ...getFiltersByTab('careers'), count: ITEMS_PER_PAGE, page })
     },
     candidates: {
-// Temp comment
       filterTemplate: candidateFilterObject,
       activeResults: candidates,
       totalResults: totalCandidates,

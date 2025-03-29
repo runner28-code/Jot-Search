@@ -18,12 +18,12 @@ const parseBullhornCandidateToUser = (data) => {
         zip: data.address_zip,
         resume: undefined,
         linkedin: undefined,
+// Temp comment
         skills: data.primarySkills,
         category: data.specialties,
         seniority: data.experience,
         workspace: data.willRelocate,
         referredBy: data.referredBy,
-// Temp comment
         roles: data.skillSet,
         description: data.description,
         phone: data.phone || data.workPhone || data.mobile,

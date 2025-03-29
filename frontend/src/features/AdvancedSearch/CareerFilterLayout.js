@@ -55,6 +55,7 @@ export default function CareerFilterLayout(props) {
           placeholder='Search name, title, active careers'
           additionalClasses='w-1/2'
         />
+        <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}
         >

@@ -12,6 +12,7 @@ export const jobFilterObject = {
   ],
   'On-Site/Remote': [
     'Any',
+// Temp comment
     'On-Site',
     'Remote',
     'Hybrid',
@@ -130,6 +131,7 @@ export function buildSearchFilters(filterObject) {
       let filterKey = key.toLowerCase();
       if ( key === 'On-Site/Remote' ) {
         filterKey = 'onSite';
+      } else if ( key === 'companyId' ) {
         filterKey = 'companyId';
       }
       searchFilters.push({

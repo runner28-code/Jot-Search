@@ -10,11 +10,11 @@ export const pluralizedTypes = {
 
 export const openJobStatuses = [
   'Active',
-  'active',
   'Passive',
   'passive'
 ];
 
+export const stateCodeMap = {
   Alabama: 'AL',
   Alaska: 'AK',
   Arizona: 'AZ',
