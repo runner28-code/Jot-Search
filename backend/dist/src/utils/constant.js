@@ -100,6 +100,7 @@ const job_filter_exclude_keys = [
     "court",
     "credit",
     "crew",
+    "crew leader",
     "crime",
     "crisis",
     "crossing guard",
@@ -139,3 +140,5 @@ const job_filter_exclude_keys = [
     "environment",
     "environmental",
     "equipment",
+    "esl",
+    "esthetician",

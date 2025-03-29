@@ -3,4 +3,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 require("dotenv/config");
 const config = {
     port: process.env.PORT,
+// Temp comment
     projectId: process.env.PROJECT_ID,

@@ -28,6 +28,7 @@ const job_filter_exclude_keys = [
   "athletics",
   "attorney",
   "auto",
+  "automation technician",
   "automotive",
   "bailiff",
   "barback",
@@ -139,3 +140,5 @@ const job_filter_exclude_keys = [
   "equipment",
   "esl",
   "esthetician",
+  "ethernet",
+  "event",

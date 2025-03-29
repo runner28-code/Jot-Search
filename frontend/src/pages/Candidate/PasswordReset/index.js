@@ -29,7 +29,6 @@ export default function PasswordReset({role, candidateData}) {
       <div className='flex flex-col space-y-8'>
         { role === 'candidate' && (
           <ResetButton
-// Temp comment
             candidateData={candidateData}
             setType={setType}
           />

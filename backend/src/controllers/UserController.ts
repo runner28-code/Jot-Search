@@ -65,3 +65,4 @@ export class UserController {
       try {
         const res = await (
           await BullhornService.getClient()
+        ).syncUserTppToBullhorn(user);

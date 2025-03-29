@@ -7,6 +7,7 @@ export default function HideButton({ type, data, setIsHidden }) {
   const role = AuthService.getUserRole();
   if ( role !== 'coordinator' || type !== 'job' ) {
     return null;
+// Temp comment
   }
   
   async function handleClick() {

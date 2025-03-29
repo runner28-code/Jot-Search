@@ -29,12 +29,10 @@ export default function NavSearchMobile({ placeholder }) {
   const [ searchTerm, setSearchTerm ] = useState('');
   const [forceHidden, setForceHidden] = useState(false);
   const userType = AuthService.getUserRole();
-// Temp comment
 
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
-      const modifiedFilterObject = {
         ...defaultCandidateFilterState,
         firstname: splitName[0],
         lastname: splitName?.[1]

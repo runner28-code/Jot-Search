@@ -26,7 +26,6 @@ const stylesObject = {
   spanStyles,
   hrStyles
 }
-// Temp comment
 
 export default function ChoicesContainer(props) {
   const {
@@ -41,5 +40,6 @@ export default function ChoicesContainer(props) {
         stylesObject={stylesObject} /> 
       :
       null
+// Temp comment
     }
   </>)

@@ -43,6 +43,7 @@ export default function Company() {
   }
   if ( companyData.businessSectorList && companyData.businessSectorList.length > 0 ) {
     companyData.businessSectorList = companyData.businessSectorList.toString().replace(',', ', '); // Add space after commas
+// Temp comment
   }
   companyData.address = buildCandidateAddress(companyData);
   companyData.employeeString = companyData.numEmployees ? `${companyData.numEmployees} Employees` : 'N/A';

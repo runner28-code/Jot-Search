@@ -66,3 +66,8 @@ export class CompanyController {
       };
     }
   }
+
+  @Authorized()
+  @Put("/save")
+  async save(
+    @CurrentUser() authUser: User,

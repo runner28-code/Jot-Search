@@ -26,7 +26,6 @@ export default function AddCompanyUser() {
   let containerStyles = 'border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12 px-6 vw-900:px-14 ';
 
   return (
-    <div className='flex flex-col'>
       <div className={ containerStyles + 'bg-sky-100'}>
         <h2 className={ titleStyles + 'text-royalBlue flex'}>
           <img

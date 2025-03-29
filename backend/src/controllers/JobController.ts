@@ -5,7 +5,6 @@ import {
   Body,
   Get,
   Post,
-  Put,
   Delete,
   QueryParam,
   JsonController,
@@ -123,3 +122,5 @@ export class JobController {
       const datasourceToEnum: Dictionary<Datasource> = {
         main: Datasource.main,
         bullhorn: Datasource.bullhorn,
+        getro: Datasource.getro,
+      };

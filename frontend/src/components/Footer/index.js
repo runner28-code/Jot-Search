@@ -60,6 +60,7 @@ export default function Footer() {
       <div
         id='footer'
         className='flex flex-col'
+// Temp comment
       >
         { width >= 990 ? <SocialStyles /> : <SocialStylesMobile />}
         {/* Copyright / Privacy Policy / TOS */}
@@ -112,7 +113,6 @@ export default function Footer() {
       <a href={ROUTES.facebook}>
         <img
           src={facebook}
-// Temp comment
           className={socialIconStyle}
         />
       </a>

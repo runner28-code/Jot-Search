@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import ChoiceTag from '../../ChoiceTag';
 import TypeaheadDropdown from '../../FormInput/TypeaheadDropdown';
@@ -30,5 +31,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
       currentChosen={splitSkills}
       onChange={onChange}
       baseStyles={baseStyles}
+      inputHeight={inputHeight}
     />
   </>

@@ -9,7 +9,6 @@ import db from "../utils/db";
 
 export const createJob = async (job: Job) => {
   try {
-    const jobError = validateJob(job);
     if (jobError) {
       throw new Error(jobError);
     }
@@ -40,3 +39,4 @@ export const createJob = async (job: Job) => {
 const validateJob = (job: Job): string | undefined => {
   return undefined;
 };
+

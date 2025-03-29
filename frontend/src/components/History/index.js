@@ -15,6 +15,7 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
       {historyArr.map(historyObj => (
         <HistoryItem 
           key={historyObj.id} 
+          historyObj={historyObj} />
       ))}
       <ViewAllLink 
         href={viewAllHref} 

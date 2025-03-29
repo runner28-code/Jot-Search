@@ -27,7 +27,6 @@ export const defaultCareerState = {
 
 export const defaultState = {
   firstname: '',
-// Temp comment
   lastname: '',
   phone: '',
   willRelocate: true,
@@ -54,6 +53,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
       <input
         type='checkbox'
         name='useExistingResume'
+// Temp comment
         className='h-8 w-8 ml-2'
         checked={useExistingResume}
         onChange={handleChange}

@@ -2,6 +2,7 @@
 CREATE TABLE "Lead" (
     "id" TEXT NOT NULL,
     "address_address1" TEXT,
+    "address_address2" TEXT,
     "address_city" TEXT,
     "address_state" TEXT,
     "address_zip" TEXT,
@@ -16,3 +17,4 @@ CREATE TABLE "Lead" (
     "companyURL" TEXT,
     "conversionSource" TEXT,
     "dateAdded" TIMESTAMP(3),
+    "dateLastComment" TIMESTAMP(3),

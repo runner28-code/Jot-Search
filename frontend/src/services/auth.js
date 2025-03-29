@@ -20,6 +20,7 @@ class AuthService {
   loggedIn() {
     // Checks if there is a saved token and it's still valid
     const token = this.getToken();
+    return !!token && !this.isTokenExpired(token); // handwaiving here
   }
 
   isTokenExpired(token) {
@@ -45,7 +46,6 @@ class AuthService {
       await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
       await this.refreshSavedCandidates();
-    }
     window.location.assign('/');
   }
 

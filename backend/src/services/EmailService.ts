@@ -33,3 +33,4 @@ export const sendVerification = async (to: string, name: string) => {
     throw error;
   }
 }
+

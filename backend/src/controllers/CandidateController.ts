@@ -70,6 +70,7 @@ export class CandidateController {
         candidate: clearPassword(candidate),
         message: !candidate ? "No user with given ID" : undefined,
       };
+    } catch (error) {
       return { message: error };
     }
   }
@@ -117,3 +118,5 @@ export class CandidateController {
   @Authorized()
   @Post("/search")
   async searchByFilters(@Body() body: FilterBody) {
+    try {
+      const { page, count, filters, fields } = body;

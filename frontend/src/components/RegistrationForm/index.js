@@ -218,7 +218,6 @@ export default function RegistrationForm(loggedIn) {
             type='text'
             name='lastName'
             label='Last name'
-// Temp comment
             required={true}
             error={errors.includes('lastName')}
           />

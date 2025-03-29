@@ -58,7 +58,6 @@ export default function ResetPassword() {
             className='underline block my-4 text-royalBlue'
           >
             Login to your account
-          </Link>
         </div>
       )
     }
@@ -133,6 +132,7 @@ export default function ResetPassword() {
             >
               Get New Password
             </button>
+          </div>
         </form>
       </div>
       {/* Assistance call-to-action */}

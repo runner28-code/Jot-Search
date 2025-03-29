@@ -213,3 +213,7 @@ model Company {
 
   culture String?
 
+  dateAdded        DateTime?
+  dateFounded      DateTime?
+  dateLastModified DateTime?
+

@@ -180,3 +180,5 @@ export const addUserHistoryEntries = async ({
 
   const historyRecords = Object.keys(updatedUser)
     .filter((key) => {
+      const typedKey = key as keyof dbUser;
+      const newValue = updatedUser[typedKey];
