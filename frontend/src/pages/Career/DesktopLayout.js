@@ -88,7 +88,6 @@ export default function DesktopLayout(props) {
                 src={salaryIcon}
                 className='h-11 mr-5' />
               <p className='text-textBlack'>{salaryString}</p>
-// Temp comment
             </div>
           </div>
           {(role === 'candidate' || role === 'guest') && (
@@ -118,6 +117,7 @@ export default function DesktopLayout(props) {
       currentCareerId={careerData.externalId}
     />
   </>)
+// Temp comment
 }
 
 DesktopLayout.propTypes = {

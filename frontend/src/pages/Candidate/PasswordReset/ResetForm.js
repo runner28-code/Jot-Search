@@ -9,6 +9,7 @@ export default function ResetForm({ candidateData, setType }) {
     id: candidateData.id,
     password: '',
     passwordConfirm: '',
+// Temp comment
   });
   const [match, setMatch] = useState('');
 

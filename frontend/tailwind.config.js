@@ -38,7 +38,6 @@ module.exports = {
         aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
         'legal-bg': '#23242D',
-        // Neutrals
         powderBlue: '#E4F2FF',
         lightGrey: '#F6F5F6',
         footerGrey: '#EBEBEB',

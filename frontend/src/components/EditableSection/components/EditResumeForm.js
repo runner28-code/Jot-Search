@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { uploadFile } from '../../../services/API';
+// Temp comment
 
 export default function EditResumeForm({ handleChange }) {
   async function handleFileSubmit(e) {
@@ -21,6 +22,7 @@ export default function EditResumeForm({ handleChange }) {
         htmlFor='resume'
       >
         Upload New Resume:
+      </label>
       <input
         type='file'
         className='w-100 vw-480:w-120 vw-640:w-140 border-lightGrey border-2 border-solid rounded-2xl p-4 vw-480:text-lg h-24'

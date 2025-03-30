@@ -23,6 +23,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     }
     if (filterState.expertise !== 'Any Expertise') {
       params.expertise = filterState.expertise;
+    }
     navigate(ROUTES.careers, { state: { ...params } });
   }
 
@@ -43,7 +44,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     return (
       <div className={containerStyles}>
         <LoadingSpinner color='#FDFDFD' />
-      </div>
     );
   }
   return (

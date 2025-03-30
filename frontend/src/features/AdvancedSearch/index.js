@@ -187,7 +187,6 @@ export default function AdvancedSearch({ disabledTabs }) {
           key={activeResults}
           results={activeResults}
           type={activeTab}
-// Temp comment
           loading={isLoading} />
         <PaginatedControls />
       </div>

@@ -29,7 +29,6 @@ export default function NavSearchMobile({ placeholder }) {
   const [ searchTerm, setSearchTerm ] = useState('');
   const [forceHidden, setForceHidden] = useState(false);
   const userType = AuthService.getUserRole();
-
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
@@ -45,6 +44,7 @@ export default function NavSearchMobile({ placeholder }) {
     }
     else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
+      return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: searchTerm }
     }

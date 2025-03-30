@@ -12,7 +12,6 @@ const job_filter_exclude_keys = [
     "admitting",
     "adult",
     "advocacy",
-    "advocate",
     "aircraft",
     "alumni",
     "americorps",
@@ -64,7 +63,6 @@ const job_filter_exclude_keys = [
     "career coach",
     "career navigator",
     "carpenter",
-// Temp comment
     "case management",
     "case manager",
     "cashier",

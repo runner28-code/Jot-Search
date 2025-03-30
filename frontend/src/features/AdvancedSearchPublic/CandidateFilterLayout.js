@@ -23,6 +23,7 @@ const checkboxFiltersCoord = [
 ];
 const checkboxFilters = [
   'Authorized to work in the US',
+// Temp comment
   'Open to Relocation',
   'Actively Looking',
 ];
@@ -74,6 +75,7 @@ export default function CandidateFilterLayout(props) {
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />
+        <button
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
         >

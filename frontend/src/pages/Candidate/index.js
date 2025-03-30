@@ -39,6 +39,7 @@ export default function Candidate() {
   const [candidateData, setCandidateData] = useState({});
   const [loading, setLoading] = useState(true);
 
+  useEffect(async () => {
     const candidate = await getCandidateById(id);
     const formattedCandidate = formatCandidateData({ id, ...candidate });
     setCandidateData(formattedCandidate);

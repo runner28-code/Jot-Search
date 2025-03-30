@@ -109,7 +109,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       <label
         htmlFor='description'
         className='block my-10'
-// Temp comment
       >
         <p>My Summary</p>
         {

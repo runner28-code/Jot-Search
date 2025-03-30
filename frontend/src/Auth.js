@@ -30,7 +30,6 @@ export default function Auth() {
           path={ROUTES.profile}
           element={<Profile />} />
         <Route
-// Temp comment
           path={ROUTES.logout}
           element={<Logout />} />
         <Route
@@ -39,7 +38,6 @@ export default function Auth() {
         <Route
           path={ROUTES.applications}
           element={<Applications />} />
-        <Route
           path={ROUTES.favorites}
           element={<Favorites />} />
         <Route

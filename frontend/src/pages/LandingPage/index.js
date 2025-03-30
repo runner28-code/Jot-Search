@@ -25,7 +25,6 @@ export default function LandingPage() {
 
   return (
     <main className='bg-white'>
-// Temp comment
       {/* Hero */}
       <section className={heroStyles}>
         {/* Header */}

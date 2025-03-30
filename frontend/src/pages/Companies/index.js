@@ -19,7 +19,6 @@ export default function Companies() {
   let userType = AuthService.getUserRole();
   const loggedIn = AuthService.loggedIn();
   const [toggle, setToggle] = useState(false);
-// Temp comment
   const sectionStylesLog = 'vw-990:ml-10 vw-990:mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
   const sectionStyles = '';
 
@@ -47,4 +46,3 @@ export default function Companies() {
         />
       </div>
     </section>
-  )

@@ -20,6 +20,7 @@ const dropdownFilters = [
   'Remote Availability',
   'Employment Type',
 ];
+// Temp comment
 const checkboxFiltersCoord = [
   'Authorized to work in the US',
   'Open to Relocation',
@@ -103,6 +104,7 @@ export default function CandidateFilterLayout(props) {
           onClick={clearFilters}
         >
           Clear All
+        </button>
       </div>
     </div>
   );

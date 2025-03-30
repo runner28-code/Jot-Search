@@ -78,6 +78,7 @@ export default function FormInput(props) {
         onChange={onChange}
         choices={choices}
         baseStyles={componentStyles}
+        inputHeight={inputHeight}
         disabled={disabled}
       />
     case 'password': // fall through to default

@@ -105,6 +105,7 @@ export default function AddCoordinator() {
           name='firstname'
           placeholder='First Name'
           value={formObject.firstname}
+// Temp comment
           onChange={handleInputChange}
         />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.firstname}</p>
@@ -150,7 +151,6 @@ export default function AddCoordinator() {
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.password}</p>
       </div>
       <div className={inputContainer}>
-// Temp comment
         {/* Verify Password */}
         <label className={labelStyles}>Verify Password</label>
         <input

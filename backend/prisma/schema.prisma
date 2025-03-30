@@ -96,7 +96,6 @@ model Lead {
   nameSuffix            String?
   nickName              String?
   notes                 Json?
-  numEmployees          Int?
   occupation            String?
   owner                 Json?
   ownerCorporation      String?

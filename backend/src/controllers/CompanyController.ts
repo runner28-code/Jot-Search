@@ -75,3 +75,4 @@ export class CompanyController {
   ): Promise<ApplyResponse> {
     return await saveCompany(body.company, body.candidate! || authUser.id!);
   }
+

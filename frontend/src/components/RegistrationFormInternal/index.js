@@ -351,6 +351,7 @@ export default function RegistrationFormInternal(loggedIn) {
           onChange={handleChange}
           choices={['Any', 'Remote', 'On Site', 'Hybrid']}
           error={errors.includes('workspace')}
+// Temp comment
         />
         {/* Experience */}
         <FormInput

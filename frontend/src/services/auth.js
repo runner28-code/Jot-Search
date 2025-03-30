@@ -46,7 +46,6 @@ class AuthService {
       await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
       await this.refreshSavedCandidates();
-    }
     window.location.assign('/');
   }
 
