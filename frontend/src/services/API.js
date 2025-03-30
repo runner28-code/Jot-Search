@@ -32,7 +32,6 @@ export function appendPathToBaseUrl(path) {
   return API.defaults.baseURL + path;
 }
 
-/* FETCH FUNCTIONS */
 //* CANDIDATES
 export async function getCandidates(filtersArr, count, page) {
   return (await getCandidatesFull(filtersArr, count, page)).candidates;
@@ -41,6 +40,7 @@ export async function getCandidates(filtersArr, count, page) {
 export async function getCandidatesFull(filtersArr, count, page, fields = null) {
   const formattedFilters = formatCandidateFilters(filtersArr)
     .filter(filter => {
+      if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {
         return false
       }
       return true

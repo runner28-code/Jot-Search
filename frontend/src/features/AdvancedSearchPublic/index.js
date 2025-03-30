@@ -71,6 +71,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
+
     } else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
@@ -167,7 +168,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     handleFilterChange: handleFilterChange,
     defaultFilterObject: filterTemplate,
     filterObject: filterObject,
-    searchTerm: filterObject.title,
     setSearchTerm: handleSearchChange,
     handleSearchClick: handleSearchClick,
     clearFilters: clearFilters,

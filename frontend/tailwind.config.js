@@ -38,6 +38,7 @@ module.exports = {
         aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
         'legal-bg': '#23242D',
+        // Neutrals
         powderBlue: '#E4F2FF',
         lightGrey: '#F6F5F6',
         footerGrey: '#EBEBEB',
@@ -45,7 +46,6 @@ module.exports = {
         grey700: '#344054',
         midGrey: '#94949D',
         grey: '#EBEBEB',
-        charcoal: '#3C3C4B',
         // Utility
         searchGreen: '#62CA71',
         success: '#2EA248',

@@ -18,6 +18,7 @@ export default function Stats({ userType }) {
 
   function handleFilterChange(choice) {
     setTimeframe(choice);
+  }
 
   function getDuration(timeFrame) {
     switch (timeFrame) {

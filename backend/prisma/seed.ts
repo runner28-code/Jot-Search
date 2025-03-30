@@ -6,6 +6,7 @@ async function main() {
     console.log("Seeding...🌱");
     // Some of these are dependent on each other, so we need to run them in order
     await seedCandidates();
+    await seedCompanies();
     await seedCategories();
     await seedJobs();
     await seedUsers();
@@ -63,3 +64,4 @@ async function seedJobs() {
 async function seedCandidates() {
   await db.candidate.createMany({
     data: [
+      {

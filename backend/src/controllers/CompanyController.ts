@@ -76,3 +76,6 @@ export class CompanyController {
     return await saveCompany(body.company, body.candidate! || authUser.id!);
   }
 
+  @Authorized()
+  @Put("/send_candidates_to_employers")
+  async send_candidates_to_employers(

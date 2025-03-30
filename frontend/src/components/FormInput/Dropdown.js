@@ -5,6 +5,7 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 const MULTI_SELECT = 'multi-select';
 const SINGLE_SELECT = 'single-select';
+// Temp comment
 const YEARS_OF_EXPERIENCE = 'yearsExperience';
 
 function renderActiveIcon(choice, currentChosen) {

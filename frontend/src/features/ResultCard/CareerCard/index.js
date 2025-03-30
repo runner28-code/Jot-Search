@@ -32,7 +32,6 @@ export default function CareerCard({ data, active }) {
   };
 
   return (
-    <div
       className='relative w-full'
       key={data.id}
     >
@@ -42,7 +41,6 @@ export default function CareerCard({ data, active }) {
             dataObj={dataObj}
             active={active}
           />
-// Temp comment
           :
           <MobileCard
             dataObj={dataObj}

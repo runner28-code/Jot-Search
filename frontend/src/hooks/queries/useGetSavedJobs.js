@@ -1,6 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../..';
-// Temp comment
 import { getSavedJobs } from '../../services/API';
 
 export const prefetchJobs = async ({userId, count, page}) => {
@@ -9,6 +8,7 @@ export const prefetchJobs = async ({userId, count, page}) => {
 export const useGetSavedJobs = ({ count, page, userId, enabled = true }) => {
   const { data, error, isLoading } = useQuery(
     getJobsKey({userId, count, page}),
+// Temp comment
     () => getSavedJobs(userId, count, page),
     { enabled }
   );

@@ -8,7 +8,6 @@ class AuthService {
     }
     return decode(this.getToken());
   }
-
   getUserRole() {
     let role = 'guest';
     if (this.loggedIn()) {
@@ -46,6 +45,7 @@ class AuthService {
       await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
       await this.refreshSavedCandidates();
+    }
     window.location.assign('/');
   }
 
