@@ -24,9 +24,9 @@ const ResumePreview = ({ resumeUrl }) => {
 
   return (
     <div className='border border-grey300 border-2 rounded-lg'>
-// Temp comment
       {!pdfDocument && <LoadingSpinner />}
       <canvas
+// Temp comment
         ref={canvasRef}
         className='rounded-lg'
       />

@@ -88,7 +88,6 @@ export default function CompanyCard({ data }) {
                 className='text-royalBlue underline'
               >
                 Company Website
-              </a>
             </div>
           </div>
         </div>

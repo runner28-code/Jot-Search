@@ -16,7 +16,6 @@ import * as ROUTES from './routes';
 
 export default function Auth() {
   if (!AuthService.loggedIn()) {
-// Temp comment
     return <Navigate to={ROUTES.landingPage} />
   }
 
@@ -31,6 +30,7 @@ export default function Auth() {
           path={ROUTES.profile}
           element={<Profile />} />
         <Route
+// Temp comment
           path={ROUTES.logout}
           element={<Logout />} />
         <Route

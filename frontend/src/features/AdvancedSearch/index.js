@@ -132,7 +132,6 @@ export default function AdvancedSearch({ disabledTabs }) {
     },
     candidates: {
       filterTemplate: candidateFilterObject,
-// Temp comment
       activeResults: candidates,
       totalResults: totalCandidates,
       isLoading: isLoadingCandidates,
@@ -188,6 +187,7 @@ export default function AdvancedSearch({ disabledTabs }) {
           key={activeResults}
           results={activeResults}
           type={activeTab}
+// Temp comment
           loading={isLoading} />
         <PaginatedControls />
       </div>

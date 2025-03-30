@@ -5,7 +5,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 const ITEMS_PER_PAGE = 4;
 
@@ -43,7 +42,6 @@ export default function FeaturedJobs() {
       <div className='flex mt-12 flex-wrap'>
         {
           isLoading ?
-            <LoadingSpinner />
             :
             jobs.map((career, index) => {
               const categoryString = career.category?.name.toUpperCase() || 'CATEGORY N/A';

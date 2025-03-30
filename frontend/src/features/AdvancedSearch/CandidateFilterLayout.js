@@ -30,6 +30,7 @@ const checkboxFilters = [
   'Open to Relocation',
   'Actively Looking',
 ];
+
 export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
@@ -102,7 +103,6 @@ export default function CandidateFilterLayout(props) {
           onClick={clearFilters}
         >
           Clear All
-        </button>
       </div>
     </div>
   );

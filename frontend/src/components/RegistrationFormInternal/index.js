@@ -293,7 +293,6 @@ export default function RegistrationFormInternal(loggedIn) {
           label='Country'
           required={true}
           value={formObj.country}
-// Temp comment
           onChange={handleChange}
           error={errors.includes('country')}
         />

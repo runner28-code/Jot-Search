@@ -44,6 +44,7 @@ export const ACTIVE_STATUSES = [
 ]
 
 // Create default filter state based on filterObject
+const convertedJobFilters = {};
 Object.keys(jobFilterObject).forEach(key => {
   convertedJobFilters[key] = jobFilterObject[key][0];
 });

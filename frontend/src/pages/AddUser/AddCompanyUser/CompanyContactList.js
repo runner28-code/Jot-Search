@@ -36,7 +36,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               onClick={() => handleContactClick(contact)}
             >
               <input
-// Temp comment
                 type='checkbox'
                 id={contact.id}
                 name={contact.id}
@@ -55,5 +54,4 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           Synch
         </button>
       </>)}
-    </div>
   )
