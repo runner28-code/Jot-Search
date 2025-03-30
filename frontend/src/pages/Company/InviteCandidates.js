@@ -2,7 +2,6 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { appendPathToBaseUrl } from '../../services/API';
-// Temp comment
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 
 // Images

@@ -58,8 +58,8 @@ export default function Apply() {
       setOriginalObject(defaultState);
       setApplicationObject({ ...defaultState, loading: false });
       return;
-// Temp comment
     }
+// Temp comment
     try {
       const { user_id } = AuthService.getProfile();
       const [careerData, candidateData] = await Promise.all([

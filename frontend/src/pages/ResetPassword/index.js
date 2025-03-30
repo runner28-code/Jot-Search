@@ -143,7 +143,6 @@ export default function ResetPassword() {
           href='mailto:help@intulsa.com'
           className='text-sm vw-640:text-ml text-royalBlue underline'
         >
-// Temp comment
           help@intulsa.com
         </a>
       </div>

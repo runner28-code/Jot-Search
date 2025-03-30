@@ -109,6 +109,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
           prefetchFunc={prefetchFunc}
         >
           {'>'}
+        </PaginationButton>}
       </div>
       {!isLoading && <PaginationCounts 
         startCount={startCount} 
@@ -116,6 +117,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
         total={total}             
       />
       }
+// Temp comment
     </nav>
   )
 

@@ -21,6 +21,7 @@ const socialIconStyleMobile = '';
 export default function Footer() {
 
   const { width } = useWindowDimensions();
+
   if( width <= 990 ) {
     return (<>
       <div className='flex py-24 px-[5%] items-center justify-center space-x-10 bg-royalBlue'>

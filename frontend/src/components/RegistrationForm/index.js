@@ -392,7 +392,6 @@ export default function RegistrationForm(loggedIn) {
             onChange={handleChange}
             error={errors.includes('resume')}
           />
-// Temp comment
           <hr className={hrStyles} />
           <FormInput
             type='password'

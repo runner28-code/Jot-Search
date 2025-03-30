@@ -19,5 +19,4 @@ export default function Candidates() {
       />
       <AdvancedSearch disabledTabs />
     </section>
-// Temp comment
   )

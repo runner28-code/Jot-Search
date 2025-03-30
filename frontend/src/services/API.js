@@ -79,7 +79,6 @@ export async function updateCandidate(newData, id) {
   const body = { ...newData, id };
   const { data } = await API.post(ROUTES.APIcandidateUpdate, body);
   return normalizeData(data);
-// Temp comment
 }
 
 export async function getSavedCandidates() {

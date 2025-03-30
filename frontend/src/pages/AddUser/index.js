@@ -8,7 +8,6 @@ import AddCompanyUser from './AddCompanyUser';
 import AddCoordinator from './AddCoordinator';
 import User from '../../assets/icons/add-new-user.svg';
 
-// Temp comment
 export default function AddUser() {
   // TODO: Add params to initiate with correct form when being routed from other page
   if ( AuthService.getUserRole() !== 'coordinator' ) {
@@ -24,6 +23,7 @@ export default function AddUser() {
   const companyContainer = '';
 
   return (<>
+// Temp comment
     <h2 className='text-lg vw-768:text-h2 text-royalBlue font-spaceGrotesk font-bold mb-16 text-center flex items-center'>
       <img
         src={User}

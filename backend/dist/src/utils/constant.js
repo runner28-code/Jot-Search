@@ -116,7 +116,6 @@ const job_filter_exclude_keys = [
     "dishwasher",
     "dispatcher",
     "distribution assistant",
-    "doctor",
     "donation",
     "donation",
     "donor",

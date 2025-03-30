@@ -11,7 +11,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"protocol": "http",
+					"raw": "http://45.77.69.204:5000/login?email=donnie@aerovision.io&password=123456",
 					"host": [
 						"45",
 						"77",

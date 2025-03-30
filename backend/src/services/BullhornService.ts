@@ -78,7 +78,6 @@ export class BullhornService {
   async setCookie(data: any) {
     const targetFile = __dirname + "/../config/cookie.json";
     return new Promise((resolve, reject) => {
-      // Try saving the file.
       fs.writeFile(targetFile, JSON.stringify(data), { flag: "w+" }, (err) => {
         if (err) reject(err);
         else {

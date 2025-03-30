@@ -39,7 +39,6 @@ export const roles = {
   ],
   'Other': [
     'Education',
-    'Healthcare',
     'Legal',
     'Misc. Science',
     'Other'
@@ -85,6 +84,7 @@ export const skills = [
   'AI',
   'AJAX',
   'Analyst',
+  'Android',
   'Angular',
   'Animation',
   'API',

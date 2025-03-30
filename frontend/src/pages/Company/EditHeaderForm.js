@@ -225,6 +225,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             type='text'
             onChange={handleInputChange}
             id='email'
+// Temp comment
             value={formData.email}
             className={inputStyles + 'ml-10 text-h6'} />
         </div>

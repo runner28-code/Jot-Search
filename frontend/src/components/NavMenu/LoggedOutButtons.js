@@ -20,6 +20,7 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
     <hr className={stylesObject.hrStyles} />
     <Link 
       to={ROUTES.signup}
+      onClick={handleOptionClick}
       className={stylesObject.bottomLinkStyles}
     >
       <FaUserEdit className={stylesObject.iconStyles} />

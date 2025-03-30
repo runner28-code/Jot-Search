@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import HistoryItem from './HistoryItem';
 import ViewAllLink from '../ViewAllLink';
@@ -22,5 +23,4 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
         text='View Full History' />
     </section>
     <hr className={hrStyles} />
-// Temp comment
   </>)

@@ -11,6 +11,7 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
   return (
     <>
       {/* Header and Edit Icon */}
+      <div className='flex flex-row justify-between items-center'>
         <h3 className='text-h5 font-medium mb-15 text-black70% font-spaceGrotesk'>Career Profile Info</h3>
         { (!editMode && role !== 'company') && 
           renderEditIcon(candidateData, setEditMode)
@@ -24,5 +25,4 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         editMode={editMode}
         role={role}
       />
-    </>
   )

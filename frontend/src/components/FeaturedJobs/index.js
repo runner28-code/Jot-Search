@@ -5,6 +5,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 
 const ITEMS_PER_PAGE = 4;
 
@@ -26,7 +27,6 @@ export default function FeaturedJobs() {
   const viewAllStyles = 'text-center mt-48';
   const viewAllStylesMobile = 'text-center mt-12';
 
-// Temp comment
   const filtersArr = [
     {
       key: 'featured',

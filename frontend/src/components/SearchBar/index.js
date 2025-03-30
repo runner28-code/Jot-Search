@@ -10,6 +10,7 @@ const defaultStylesObject = {
 export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject }) {
   const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
   if ( marginBottom ) {
+// Temp comment
     styleObject.containerStyles += `mb-${marginBottom} `;
   }
 
@@ -27,6 +28,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
         <img
           src={ searchWhite }
           alt='search icon'
+          className='h-2/3'/>
       </div>
       <input
         type='text'

@@ -132,6 +132,7 @@ export default function AdvancedSearch({ disabledTabs }) {
     },
     candidates: {
       filterTemplate: candidateFilterObject,
+// Temp comment
       activeResults: candidates,
       totalResults: totalCandidates,
       isLoading: isLoadingCandidates,
