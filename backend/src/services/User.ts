@@ -52,6 +52,7 @@ const validateUser = ({
     // if (isNullOrEmpty(skills))
     //     return 'skill is required';
     // if (isNullOrEmpty(category))
+    //     return 'category is required';
   } catch (error) {
     return "something is wrong, please check params";
   }
@@ -161,7 +162,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
       await sendUpdateUserNotification(updated.email, updated.firstname);
     }
 
-    return { result: true, data: updated };
   } catch (error) {
     console.error(error);
     return { result: false, error };

@@ -11,7 +11,6 @@ import Property from './Property';
 export default function EditSectionForm({ contentObject, handlePropertyChange }) {
   function handleChange(e) {
     handlePropertyChange(e.target.name, e.target.value);
-// Temp comment
   }
   const singleProperty = Object.keys(contentObject).length === 1;
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
@@ -41,6 +40,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         const capitalizedKey = startCase(key);
         const labelString = `${capitalizedKey}:`;
         if ( key === 'email' ) {
+// Temp comment
           return <Property
             key={key}
             name={key}

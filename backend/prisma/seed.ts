@@ -20,6 +20,7 @@ async function main() {
 
 async function seedJobs() {
   await db.job.createMany({
+    data: [
       {
         title: "Senior Software Engineer",
         companyId: (await db.company.findFirst())?.id,

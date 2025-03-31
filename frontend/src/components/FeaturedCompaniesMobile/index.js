@@ -12,7 +12,6 @@ export default function FeaturedCompaniesMobile() {
     {
       key: 'status',
       value: 'active'
-// Temp comment
     }
   ];
 
@@ -25,7 +24,6 @@ export default function FeaturedCompaniesMobile() {
       <div className='flex flex-wrap mt-8 justify-center'>
         {
           isLoading ?
-            <LoadingSpinner />
             :
             companies.map((company, index) =>
               <Link

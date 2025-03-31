@@ -34,7 +34,6 @@ module.exports = {
       },
       colors: {
         // Main Brand Colors
-        royalBlue: '#176AB9',
         aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
         'legal-bg': '#23242D',
@@ -46,6 +45,7 @@ module.exports = {
         grey700: '#344054',
         midGrey: '#94949D',
         grey: '#EBEBEB',
+        charcoal: '#3C3C4B',
         // Utility
         searchGreen: '#62CA71',
         success: '#2EA248',

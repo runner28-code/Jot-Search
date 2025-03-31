@@ -58,6 +58,7 @@ export function convertUserToCandidate(user) {
     referredBy: user.referredBy || '',
     gender: user.gender || '',
     ethnicity: user.ethnicity || '',
+// Temp comment
     veteran: user.veteran || '',
     disability: user.disability || '',
   };

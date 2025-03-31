@@ -65,6 +65,7 @@ const mockCandidateData = [
     isLooking: true,
     isWarm: false,
   },
+  {
     id: 'ec0d90fb-f73c-4d4c-9e13-d720a14440f5',
     firstName: 'Donnie',
     lastName: 'Kim',
@@ -92,7 +93,6 @@ const mockCandidateData = [
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
     isLooking: false,
-    isWarm: false,
   },
 ];
 

@@ -50,12 +50,14 @@ export default function Footer() {
           />
         </a>
         <a href={ROUTES.youtube}>
+          <img
             src={youtube}
             className={socialIconStyleMobile}
           />
         </a>
       </div>
       <NavFooterMobile />
+// Temp comment
       <div
         id='footer'
         className='flex flex-col'

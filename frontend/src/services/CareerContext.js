@@ -36,13 +36,13 @@ const mockJobsData = [
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/osu-logo_clipped_rev_1_3_kkpczy.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
+// Temp comment
     location_state: 'OK',
     onSite: true,
     listingAge: '1 month',
     specialty: 'Technology'
   },
   {
-// Temp comment
     id: '07caa54e-d5f4-4b2a-95a3-7eeca90c06f5',
     title: 'Project Manager',
     company: 'GitWit',

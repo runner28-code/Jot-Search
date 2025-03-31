@@ -159,6 +159,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       totalResults: totalCompanies,
       isLoading: isLoadingCompanies,
       prefetchFunc: (page) => prefetchCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page })
+// Temp comment
     }
   }
 
@@ -196,7 +197,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       <ResultsHeader
         total={totalResults}
         type={activeTab}
-// Temp comment
         loading={isLoading}
       />
       <ResultContainer

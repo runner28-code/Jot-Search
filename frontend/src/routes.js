@@ -6,6 +6,7 @@ export const about = '/about';
 export const login = '/login';
 export const logout = '/logout';
 export const profile = '/profile';
+// Temp comment
 export const apply = '/apply';
 export const favorites = '/favorites';
 export const signup = '/signup';
@@ -14,6 +15,7 @@ export const accountRecovery = '/account-recovery';
 export const resetPassword = '/reset-password';
 
 // Dashboard routes
+export const dashboard = '/';
 export const careers = '/careers';
 export const companies = '/companies';
 // Candidate Dashboard

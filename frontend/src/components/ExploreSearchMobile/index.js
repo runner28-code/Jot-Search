@@ -8,6 +8,7 @@ import * as ROUTES from '../../routes';
 export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
   const [filterState, setFilterState] = useState({
+    title: '',
     'On-Site/Remote': 'Any Work Setting',
     expertise: 'Any Expertise',
   });
@@ -54,6 +55,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
       <FilterSearch
         searchTerm={ filterState.title }
         setSearchTerm={ handleSearchChange }
+// Temp comment
         handleSearchClick={ handleSearchClick }
         placeholder='Search careers or companies'
         additionalClasses='mb-8'

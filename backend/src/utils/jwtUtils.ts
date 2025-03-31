@@ -3,4 +3,3 @@ import { User as DbUser } from "prisma/prisma-client";
 import config from '../config';
 
 export const CreateJwtToken = (data: any) => {
-  const token = jwt.sign(

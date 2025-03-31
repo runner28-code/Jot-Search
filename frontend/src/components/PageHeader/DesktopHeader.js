@@ -12,8 +12,8 @@ export default function DesktopHeader(props) {
     colorizeStroke,
     dataSource,
     backButton
-  } = props;
 // Temp comment
+  } = props;
   const navigate = useNavigate();
 
   let addOnIconClasses = '';

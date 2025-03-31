@@ -63,7 +63,6 @@ export default function Apply() {
       const { user_id } = AuthService.getProfile();
       const [careerData, candidateData] = await Promise.all([
         getJobById(jobId),
-        getCandidateById(user_id),
       ]);
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';

@@ -79,3 +79,4 @@ export class CompanyController {
   @Authorized()
   @Put("/send_candidates_to_employers")
   async send_candidates_to_employers(
+    @CurrentUser() authUser: User,

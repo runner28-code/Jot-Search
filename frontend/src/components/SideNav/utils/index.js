@@ -42,6 +42,7 @@ export const choices = {
     link: ROUTES.candidates,
   },
   myApplications: {
+// Temp comment
     label: 'My Applications',
     icon: ApplicationIcon,
     link: ROUTES.applications,
