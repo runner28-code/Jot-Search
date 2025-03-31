@@ -72,7 +72,6 @@ export class CandidateController {
       };
     } catch (error) {
       return { message: error };
-    }
   }
 
   @Authorized()

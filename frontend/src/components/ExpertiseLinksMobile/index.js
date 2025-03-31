@@ -14,7 +14,6 @@ export default function ExpertiseLinksMobile() {
   return (
     <section className='mt-70 mb-24 flex flex-col items-center'>
       <h4 className='text-h5 font-spaceGrotesk font-semibold text-darkGray text-center'>
-// Temp comment
         Browse Opportunities by Career Expertise
       </h4>
       <div className='mt-20 flex flex-wrap justify-center'>
@@ -80,7 +79,6 @@ export default function ExpertiseLinksMobile() {
         >
           <img
             src={financeIcon}
-            alt='Finance Icon'
             className={iconStyles}
           />
           <span className={textStyles}>Finance</span>

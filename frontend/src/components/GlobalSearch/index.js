@@ -53,7 +53,6 @@ export default function GlobalSearch({ placeholder }) {
       getCompanies( searchTerm, 'name', 3 ),
       getCandidates( searchTerm, 'firstname', 3 )
     ]);
-
     const resultsObject = {
       jobs: jobResults && jobResults.length ? jobResults : [],
       companies: companyResults && companyResults.length ? companyResults.slice(0, 3) : [], //!!! TODO: Get rid of slice when Donnie has count filter working for companies
@@ -85,6 +84,7 @@ export default function GlobalSearch({ placeholder }) {
     inputStyles: 'flex-1 h-5/6 vw-480:placeholder:text-md vw-1024:placeholder:text-xl'
   }
 
+  return (
     <div className='relative'>
       <div ref={menuRef} >
         <SearchBar

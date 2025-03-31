@@ -98,7 +98,6 @@ export default function CandidateCard({ data, disableLink }) {
 
 CandidateCard.propTypes = {
   data: PropTypes.shape({
-    id: PropTypes.string,
     avatar: PropTypes.string,
     city: PropTypes.string,
     companyName: PropTypes.string,
@@ -110,7 +109,6 @@ CandidateCard.propTypes = {
     occupation: PropTypes.string,
     skills: PropTypes.string,
     state: PropTypes.string,
-// Temp comment
     status: PropTypes.string,
     userDateAdded: PropTypes.string,
     workspace: PropTypes.string,

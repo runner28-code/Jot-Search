@@ -119,6 +119,7 @@ export default function ResetPassword() {
             onChange={handlePassword}
           />
           <label className={labelStyle}>Confirm Password</label>
+// Temp comment
           <input
             className={inputStyle}
             id='confirmPassword'

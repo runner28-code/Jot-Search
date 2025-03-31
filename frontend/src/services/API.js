@@ -32,6 +32,7 @@ export function appendPathToBaseUrl(path) {
   return API.defaults.baseURL + path;
 }
 
+/* FETCH FUNCTIONS */
 //* CANDIDATES
 export async function getCandidates(filtersArr, count, page) {
   return (await getCandidatesFull(filtersArr, count, page)).candidates;

@@ -190,6 +190,7 @@ export default function RegistrationForm() {
           <FormInput
             type='typeahead'
             dropdownType='tags'
+            name='skills'
             placeholder='Please select at least 3 skills' 
             value={formObj.skills}
             onChange={handleChange}

@@ -46,7 +46,6 @@ function useTabState(disabledTabs, userType, pathname) {
   }
   return useActiveTabState(userType === 'candidate' ? 'careers' : 'candidates');
 }
-// Temp comment
 
 export default function AdvancedSearch({ disabledTabs }) {
   const userType = AuthService.getUserRole();
@@ -100,7 +99,6 @@ export default function AdvancedSearch({ disabledTabs }) {
     setPage(1);
   }
 
-  function handleSearchChange(searchTerm) {
     setFilterObject({ ...filterObject, title: searchTerm });
     setPage(1);
   }

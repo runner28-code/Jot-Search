@@ -1,6 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-// Temp comment
 
 import AuthService from './auth';
 import { getCandidateById } from './API';
@@ -66,7 +65,6 @@ const mockCandidateData = [
     isLooking: true,
     isWarm: false,
   },
-  {
     id: 'ec0d90fb-f73c-4d4c-9e13-d720a14440f5',
     firstName: 'Donnie',
     lastName: 'Kim',

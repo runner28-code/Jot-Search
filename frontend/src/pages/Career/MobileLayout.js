@@ -31,7 +31,6 @@ export default function MobileLayout(props) {
     <section className='relative bg-white max-w-400 px-xl py-xxl border-2 border-disabled border-solid rounded-3xl mb-26'>
       {/* Header */}
       <div className='flex flex-row flex-wrap items-start'>
-// Temp comment
         <div className='basis-2/6'>
           { renderLogo(careerData.company_logo) }
           <FavoriteButton
@@ -61,6 +60,7 @@ export default function MobileLayout(props) {
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>
             </div>
+// Temp comment
           </div>
           {/* Second row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>

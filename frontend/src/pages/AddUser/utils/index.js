@@ -17,6 +17,7 @@ export function validateInput(name, value, errors, password) {
       newErrors[name] = 'Passwords do not match';
     } else {
       newErrors[name] = '';
+// Temp comment
     }
   } 
   // Generic validation
@@ -25,7 +26,6 @@ export function validateInput(name, value, errors, password) {
     newErrors[name] = `${capitalizedName} is required`;
   } else if ( errors[name] ) { // Remove from errors if not empty
     newErrors[name] = '';
-// Temp comment
   }
 
   return newErrors;

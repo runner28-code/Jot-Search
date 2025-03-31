@@ -1,11 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import checkmarkIcon from '../../assets/images/checkmark.png';
-import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 const MULTI_SELECT = 'multi-select';
 const SINGLE_SELECT = 'single-select';
-// Temp comment
 const YEARS_OF_EXPERIENCE = 'yearsExperience';
 
 function renderActiveIcon(choice, currentChosen) {

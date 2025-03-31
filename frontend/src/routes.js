@@ -14,7 +14,6 @@ export const accountRecovery = '/account-recovery';
 export const resetPassword = '/reset-password';
 
 // Dashboard routes
-export const dashboard = '/';
 export const careers = '/careers';
 export const companies = '/companies';
 // Candidate Dashboard

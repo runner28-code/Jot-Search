@@ -24,5 +24,6 @@
                    "awslogs-stream-prefix": "ecs"
                 }
             },
+            "environment": [
                 {
                     "name": "CHOKIDAR_USEPOLLING", 
