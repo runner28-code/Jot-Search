@@ -1,5 +1,5 @@
 name: Dev - EC2 Instance Deployment
-  push:
+on:
     branches: [ dev ]
 
 jobs:

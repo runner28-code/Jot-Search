@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
+// Temp comment
 
 export default function Choice({ choice, Icon, handleOptionClick, stylesObject }) {
   
@@ -12,6 +13,7 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
   }
 
   const linkStyles = choice === 'Logout' ? stylesObject.bottomLinkStyles : stylesObject.linkStyles;
+  return (
     <div key={choice}>
       <Link 
         to={choiceLink}

@@ -11,6 +11,7 @@ export const saveCandidate = async (
           id: companyUserId,
           savedCandidates: {
             some: {
+              id: candidateId,
             },
           },
         },
@@ -23,6 +24,5 @@ export const saveCandidate = async (
           id: companyUserId,
         },
         data: {
-          savedCandidates: {
             connect: {
               id: candidateId,

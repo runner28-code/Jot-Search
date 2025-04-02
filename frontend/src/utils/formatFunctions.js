@@ -68,5 +68,4 @@ export function formatCandidateName(firstName, lastName) {
   if ( !firstName && !lastName ) return '';
   if ( !firstName ) return lastName;
   if ( !lastName ) return firstName;
-// Temp comment
   return `${firstName} ${lastName}`;

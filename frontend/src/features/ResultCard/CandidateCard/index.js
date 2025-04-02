@@ -45,6 +45,7 @@ export default function CandidateCard({ data, disableLink }) {
         <div className='relative grow'>
           {/* Name and Active Status */}
           <div className='flex gap-s items-center'>
+// Temp comment
             <h5 className='text-h5 font-spaceGrotesk font-semibold text-charcoal leading-none'>{nameString}</h5>
             { renderActiveStatus(data) }
           </div>
@@ -70,7 +71,6 @@ export default function CandidateCard({ data, disableLink }) {
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{addressString}</p>
             </div>
-// Temp comment
             {/* Years Experience */}
             <div className='w-1/3 flex items-center'>
               <img

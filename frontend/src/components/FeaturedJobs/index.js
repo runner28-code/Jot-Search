@@ -6,7 +6,6 @@ import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-// Temp comment
 const ITEMS_PER_PAGE = 4;
 
 export default function FeaturedJobs() {
@@ -38,6 +37,7 @@ export default function FeaturedJobs() {
 
   return(
     <section className='py-48 bg-neutral-100 flex flex-col flex-wrap items-center'>
+// Temp comment
       { renderColorShapes() }
       <h2 className={ width >= 990 ? titleStyles : titleStylesMoible }>Featured Opportunities</h2>
       <div className='flex mt-12 flex-wrap'>

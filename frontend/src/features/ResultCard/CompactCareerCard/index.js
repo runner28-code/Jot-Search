@@ -6,7 +6,6 @@ import Checkbox from '../Checkbox';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {BsClipboardCheck} from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
-// Temp comment
 import { calculatePostingAge } from '../../../utils/formatFunctions';
 
 export default function CompactCareerCard({ data, active, agoDate, isFavoriteOverride = null, selectableProps = null }) {
@@ -60,6 +59,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
+// Temp comment
           />
           : 
           <FavoriteButton

@@ -4,7 +4,6 @@ import {
   AddUser,
   Applications,
   Candidate,
-  Candidates,
   Dashboard,
   Favorites,
   Logout,

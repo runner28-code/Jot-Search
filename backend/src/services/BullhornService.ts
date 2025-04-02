@@ -154,13 +154,13 @@ export class BullhornService {
           refresh_token: this.refresh_token,
         },
         { encode: false }
-      );
       const url = `${this.oauth_url}/token?${query}`;
       console.log("access token url: ", url);
       const res = await axios.post(url);
       console.log(res.status);
       if (res.status === 200) {
         const { access_token, refresh_token } = res.data;
+        this.access_token = access_token;
         this.refresh_token = refresh_token;
         return await this.login();
       }

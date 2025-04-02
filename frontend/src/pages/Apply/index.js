@@ -73,6 +73,8 @@ export default function Apply() {
       // Turn API IDs into appropriate values
       candidateData.ethnicity = ethnicityMap[candidateData.ethnicity || 'U']; // 'U' is default ("Prefer not to say")
       candidateData.gender = genderMap[candidateData.gender || 'U']; // 'U' is default ("Prefer not to say")
+      candidateData.disability = disabilityMap[candidateData.disability || 'U']; // 'U' is default ("Prefer not to say")
+// Temp comment
       candidateData.veteran = veteranStatusMap[candidateData.veteran || 'U']; // 'U' is default ("Prefer not to say")
       // If resume exists, select "Use Existing Resume" checkbox by default
       if ( candidateData.resume ) {

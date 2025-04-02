@@ -22,7 +22,6 @@ export default function FeaturedCompaniesMobile() {
       { renderColorShapes() }
       <h2 className='text-h5 text-center font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
       <div className='flex flex-wrap mt-8 justify-center'>
-        {
           isLoading ?
             <LoadingSpinner />
             :
@@ -37,7 +36,6 @@ export default function FeaturedCompaniesMobile() {
         }
       </div>
       <div className='text-center mt-24'>
-// Temp comment
         <Link
           to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>

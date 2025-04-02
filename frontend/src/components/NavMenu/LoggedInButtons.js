@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
+// Temp comment
 import { MdLogout } from 'react-icons/md';
 import { FiEdit as ProfileIcon } from 'react-icons/fi';
 
@@ -17,6 +18,7 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
     </Link>
     <hr className={stylesObject.hrStyles} />
     <div 
+      id='logout'
       onClick={handleOptionClick}
       className={stylesObject.bottomLinkStyles}
     >

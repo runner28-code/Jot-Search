@@ -383,7 +383,6 @@ export default function RegistrationFormInternal(loggedIn) {
           label='Your skills (select at least 3)'
           placeholder='Select all that apply'
           required={true}
-          value={formObj.skills}
           onChange={handleChange}
           choices={skillChoices}
           error={errors.includes('skills')}

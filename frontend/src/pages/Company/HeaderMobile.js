@@ -49,6 +49,7 @@ function HeaderContent({ companyData }) {
                 />
               </div> 
             </div>
+// Temp comment
           </div>
         </div>
 

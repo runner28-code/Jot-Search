@@ -1,4 +1,3 @@
-
 export type Company = {
     id: string,
     address_address1?: string,
@@ -94,3 +93,4 @@ export type Job = {
     location_country_id?: string;
     location_country_name?: string;
     location_country_code?: string;
+    markUpPercentage?: string;

@@ -121,6 +121,7 @@ model Lead {
   type                  String?
   willRelocate          Boolean?
   createdAt             DateTime  @default(now())
+}
 
 model ClientContact {
   id                 String    @id @default(uuid())

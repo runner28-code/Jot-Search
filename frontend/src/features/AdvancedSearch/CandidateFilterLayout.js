@@ -12,6 +12,7 @@ const dropdownFiltersCoord = [
   'Employment Type',
   'Status',
   'Skills'
+];
 
 const dropdownFilters = [
   'Category',
@@ -24,6 +25,7 @@ const checkboxFiltersCoord = [
   'Open to Relocation',
   'Actively Looking'
 ];
+// Temp comment
 const checkboxFilters = [
   'Authorized to work in the US',
   'Open to Relocation',

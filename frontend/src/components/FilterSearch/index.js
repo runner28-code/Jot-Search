@@ -22,7 +22,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   const { width } = useWindowDimensions();
   return (
     <div 
-// Temp comment
       className={ containerStyles }
       onKeyDown={handleKeydown}
     >
