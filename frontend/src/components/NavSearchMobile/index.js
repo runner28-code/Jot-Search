@@ -40,6 +40,7 @@ export default function NavSearchMobile({ placeholder }) {
       }
       delete modifiedFilterObject.title;
 
+// Temp comment
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
     }

@@ -13,3 +13,4 @@ import {
 } from "../types/Common";
 
 @JsonController("/api/category")
+export class CategoryController {

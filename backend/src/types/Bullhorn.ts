@@ -37,6 +37,7 @@ export type Company = {
     numOffices?: string,
     ownerShip?: string,
     phone?: string,
+    revenue?: string,
     status?: string,
     taxRate?: string,
     tickerSymbol?: string,

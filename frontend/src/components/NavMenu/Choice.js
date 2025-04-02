@@ -12,12 +12,12 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
   }
 
   const linkStyles = choice === 'Logout' ? stylesObject.bottomLinkStyles : stylesObject.linkStyles;
-  return (
     <div key={choice}>
       <Link 
         to={choiceLink}
         className={linkStyles}
         onClick={handleOptionClick}
+      >
         <Icon className={stylesObject.iconStyles} />
         <span className={stylesObject.spanStyles}>{choice}</span>
       </Link>

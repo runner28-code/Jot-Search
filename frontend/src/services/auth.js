@@ -44,7 +44,6 @@ class AuthService {
     const role = this.getUserRole();
     if ( role === 'candidate' ) {
       await this.refreshSavedJobAndCompanies();
-// Temp comment
     } else if ( role === 'company' ) {
       await this.refreshSavedCandidates();
     }
@@ -94,6 +93,7 @@ class AuthService {
       localStorage.setItem('savedCandidates', JSON.stringify([]));
     }
   }
+// Temp comment
 
   toggleSavedJob(jobID, action) {
     const savedJobs = this.getSavedJobIDs();

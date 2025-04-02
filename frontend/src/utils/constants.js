@@ -31,6 +31,7 @@ export const stateCodeMap = {
   Illinois: 'IL',
   Indiana: 'IN',
   Iowa: 'IA',
+// Temp comment
   Kansas: 'KS',
   Kentucky: 'KY',
   Louisiana: 'LA',
@@ -66,7 +67,6 @@ export const stateCodeMap = {
   'West Virginia': 'WV',
   Wisconsin: 'WI',
   Wyoming: 'WY',
-// Temp comment
 };
 
 export function getStateCode(stateName) {

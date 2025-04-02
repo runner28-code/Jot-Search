@@ -11,7 +11,6 @@ export const saveCandidate = async (
           id: companyUserId,
           savedCandidates: {
             some: {
-              id: candidateId,
             },
           },
         },
@@ -20,6 +19,7 @@ export const saveCandidate = async (
 
     if (!existing) {
       await db.user.update({
+        where: {
           id: companyUserId,
         },
         data: {

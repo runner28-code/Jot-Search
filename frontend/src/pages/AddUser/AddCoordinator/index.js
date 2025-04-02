@@ -160,7 +160,6 @@ export default function AddCoordinator() {
           value={formObject.verifyPassword}
           onChange={handleInputChange}
         />
-// Temp comment
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.verifyPassword}</p>
       </div>
       {/* Add Button / Loading Spinner */}

@@ -10,6 +10,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
     // Handle change expects event object, make fake one
     const fakeEvent = {
       target: {
+        name: inputName,
         value: newValues.join(', '),
       },
     };
@@ -30,5 +31,4 @@ export default function EditSkillsForm({ skills, handleChange }) {
       onChange={onChange}
       baseStyles={baseStyles}
       inputHeight={inputHeight}
-    />
   </>

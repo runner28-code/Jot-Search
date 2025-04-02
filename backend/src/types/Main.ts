@@ -7,3 +7,4 @@ export type Application = {
 
 export type SavedJob = {
     id: string;
+    candidate: string;

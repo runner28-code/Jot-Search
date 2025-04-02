@@ -11,6 +11,7 @@ export default function AssistanceCard() {
           className='w-auto h-auto'
         />
         <h5 className='text-h5 font-medium font-spaceGrotesk text-charcoal ml-8'>InTulsa assistance</h5>
+      </div>
       {/* Body */}
       <div className='text-black70%'>
         <p>Please email us to perform changes to your InTulsa Talent Network account</p>
@@ -20,7 +21,6 @@ export default function AssistanceCard() {
           <li className='list-disc ml-8'>etc...</li>
           <hr className='max-w-300 mt-6' />
         </ul>
-      </div>
       {/* Button */}
       <a
         href='mailto:talentnetwork@intulsa.com?subject=Talent Network Assistance'

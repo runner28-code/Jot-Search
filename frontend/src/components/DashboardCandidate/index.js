@@ -17,12 +17,12 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
-// Temp comment
   const active = ' bg-royalBlue';
   if( width >= 990 ) {
     return null;
   }
   return (<>
+// Temp comment
     <div className='bg-sky-500 border-b-2 border-white flex items-start justify-start text-white flex-col px-6 py-8'>
       <div className='flex items-center'>
         <div className='flex items-center'>

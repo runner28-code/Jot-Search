@@ -58,7 +58,6 @@ export function convertUserToCandidate(user) {
     referredBy: user.referredBy || '',
     gender: user.gender || '',
     ethnicity: user.ethnicity || '',
-// Temp comment
     veteran: user.veteran || '',
     disability: user.disability || '',
   };
@@ -69,4 +68,5 @@ export function formatCandidateName(firstName, lastName) {
   if ( !firstName && !lastName ) return '';
   if ( !firstName ) return lastName;
   if ( !lastName ) return firstName;
+// Temp comment
   return `${firstName} ${lastName}`;

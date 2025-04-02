@@ -4,5 +4,4 @@ CREATE TABLE "GetroCompany" (
     "approx_employees" INTEGER,
     "crunchbase_url" TEXT,
     "description" TEXT,
-    "domain" TEXT,
     "facebook_url" TEXT,
