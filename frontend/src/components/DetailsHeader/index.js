@@ -8,7 +8,6 @@ import BackButton from '../BackButton';
 export default function DetailsHeader({ type, source }) {
   let Icon = undefined;
   switch(type) {
-    case 'candidate':
       Icon = CandidatesIcon;
       break;
     case 'company':
@@ -19,6 +18,7 @@ export default function DetailsHeader({ type, source }) {
       Icon = CareerIcon;
       break;
   }
+  const titleCasedType = type.charAt(0).toUpperCase() + type.slice(1);
   let headerText
   if ( type === 'company') {
     headerText = 'Company Profile';

@@ -66,6 +66,7 @@ export default function Applications() {
           className='text-royalBlue underline'
           onClick={removeSelectedApplications}
         >
+          Remove Selections
         </button>
         <ResultContainer
           containerClass={ width >= 990 ? 'grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}

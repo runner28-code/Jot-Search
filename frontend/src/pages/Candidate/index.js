@@ -68,6 +68,7 @@ export default function Candidate() {
     const formatUserObjectForRender = formatCandidateData({ ...candidateData, ...updatedDisplayObject });
     setCandidateData(formatUserObjectForRender);
     let updateResponse = null;
+// Temp comment
     if (candidateData.sourceTable === 'Candidate') {
       const convertedCandidateObject = convertUserToCandidate(updateObject);
       updateResponse = await updateCandidate(convertedCandidateObject, id);

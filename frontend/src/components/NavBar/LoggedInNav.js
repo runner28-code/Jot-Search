@@ -26,6 +26,7 @@ export default function NavBar() {
     return <DesktopNavBarLayout />
   }
 }
+
 function NavBarLayout() {
   return (
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50 '>

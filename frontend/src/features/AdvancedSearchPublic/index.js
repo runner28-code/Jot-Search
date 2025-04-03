@@ -125,6 +125,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     if (tabChoice === 'jobs') {
       setFilterObject(defaultJobFilterState);
     } else if (tabChoice === 'candidates') {
+// Temp comment
       setFilterObject(defaultCandidateFilterState);
     }
     setActiveTab(tabChoice);
@@ -154,6 +155,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       prefetchFunc: (page) => prefetchCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page })
     },
     companies: {
+      filterTemplate: {},
       activeResults: companies,
       totalResults: totalCompanies,
       isLoading: isLoadingCompanies,

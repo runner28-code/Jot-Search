@@ -70,7 +70,6 @@ export default function RegistrationFormInternal(loggedIn) {
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
       // Validation
-      const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
@@ -383,6 +382,7 @@ export default function RegistrationFormInternal(loggedIn) {
           label='Your skills (select at least 3)'
           placeholder='Select all that apply'
           required={true}
+          value={formObj.skills}
           onChange={handleChange}
           choices={skillChoices}
           error={errors.includes('skills')}

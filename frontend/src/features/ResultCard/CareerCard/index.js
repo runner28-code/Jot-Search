@@ -36,6 +36,7 @@ export default function CareerCard({ data, active }) {
       className='relative w-full'
       key={data.id}
     >
+// Temp comment
       {
         width > 768 ?
           <DesktopCard

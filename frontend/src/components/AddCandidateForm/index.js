@@ -7,7 +7,6 @@ import {
   roles as roleChoices,
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
-import {
   inputValidation,
   formatFormObj,
   renderButtonOrLoading,
@@ -119,6 +118,7 @@ export default function RegistrationForm() {
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
+      success: false,
     });
   }
 

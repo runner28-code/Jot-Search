@@ -4,7 +4,6 @@ import FilterSearch from '../../components/FilterSearch';
 
 export default function Filters(props) {
   const {
-    handleFilterChange,
     defaultFilterObject,
     filterObject,
     searchLabel,

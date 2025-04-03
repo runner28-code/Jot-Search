@@ -32,11 +32,13 @@ export default function ResetPassword() {
       setMatch(false);
     }
 
+// Temp comment
     if( password === confirmPassword ) {
       setMatch(true);
       const { password } = event.target;
       const res = await API.post(ROUTES.APIResetPassword, {
         new_password: password.value,
+        token: token
       });
 
       if ( res.data.result ) {

@@ -68,6 +68,7 @@ export class CompanyController {
   }
 
   @Authorized()
+  @Put("/save")
   async save(
     @CurrentUser() authUser: User,
     @Body() body: { company: string; candidate?: string }
@@ -81,3 +82,4 @@ export class CompanyController {
     @CurrentUser() authUser: User,
     @Body() body: { candidates_ids: string[], employers_emails: string[] }
   ): Promise<any> {
+    if (authUser.role !== COORDINATOR) {

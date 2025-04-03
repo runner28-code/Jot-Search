@@ -74,7 +74,6 @@ export default function Apply() {
       candidateData.ethnicity = ethnicityMap[candidateData.ethnicity || 'U']; // 'U' is default ("Prefer not to say")
       candidateData.gender = genderMap[candidateData.gender || 'U']; // 'U' is default ("Prefer not to say")
       candidateData.disability = disabilityMap[candidateData.disability || 'U']; // 'U' is default ("Prefer not to say")
-// Temp comment
       candidateData.veteran = veteranStatusMap[candidateData.veteran || 'U']; // 'U' is default ("Prefer not to say")
       // If resume exists, select "Use Existing Resume" checkbox by default
       if ( candidateData.resume ) {
@@ -82,7 +81,6 @@ export default function Apply() {
       }
       // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {
-        candidateData.ethnicity = 'Prefer not to say';
       }
       const stateObject = {
         ...applicationObject,

@@ -132,6 +132,7 @@ export default function RegistrationForm(loggedIn) {
     }
   }, [submissionObject.success])
 
+// Temp comment
   async function handleSubmit(event) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
