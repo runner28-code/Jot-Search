@@ -40,7 +40,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const dropdownBorder = showDropdown ? ' border-2 rounded-t-lg' : ' border-2 rounded-lg';
   const filterStyles = 'flex justify-between items-center pl-[18px] pr-s py-[9px] border-lightGrey bg-white cursor-pointer w-full ' + dropdownBorder;
   const containerStyles = 'relative grow flex-[1_1_30%]';
-  const containerStylesMobile = 'relative grow flex-[1_1_100%] w-full';
   return (
     <div
       ref={menuRef}
@@ -53,6 +52,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
           <MdLocationOn
             className='w-10 h-10 mr-1' 
             color='lightGray'
+          />}
         <p
           id='title'
           className='text-md text-black70%'>{ selected }</p>

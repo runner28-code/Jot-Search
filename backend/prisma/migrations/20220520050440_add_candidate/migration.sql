@@ -29,3 +29,4 @@ CREATE TABLE "Candidate" (
     "employeePreference" TEXT,
     "ethnicity" TEXT,
     "experience" TEXT,
+    "externalID" TEXT,

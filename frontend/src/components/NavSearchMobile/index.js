@@ -18,7 +18,6 @@ import AuthService from '../../services/auth';
 
 import {
   defaultJobFilterState,
-  buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
 
@@ -60,7 +59,6 @@ export default function NavSearchMobile({ placeholder }) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
-// Temp comment
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );

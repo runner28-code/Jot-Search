@@ -5,6 +5,7 @@ import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { BsBuilding } from 'react-icons/bs';
 
 const ITEMS_PER_PAGE = 10;
+
 export default function FeaturedCompanies() {
 
   const filtersArr = [
@@ -15,7 +16,6 @@ export default function FeaturedCompanies() {
   ];
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
-
   return(
     <div className='py-48 px-[20%] flex flex-col items-center'>
       { renderColorShapes() }

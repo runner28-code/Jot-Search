@@ -64,6 +64,7 @@ const mockCandidateData = [
     school: 'Oklahoma State',
     isLooking: true,
     isWarm: false,
+  },
   {
     id: 'ec0d90fb-f73c-4d4c-9e13-d720a14440f5',
     firstName: 'Donnie',
@@ -121,7 +122,6 @@ const CandidateProvider = ({children}) => {
 
     const filteredCandidates = candidates.filter(candidate => candidate.id !== updatedValues.id);
     setCandidates([...filteredCandidates, updatedCandidate]);
-  }
 
   return (
     <CandidateContext.Provider value={{ candidates, currentUser, setCurrentUser, handleCandidatesChange, handleCandidateUpdate }}>

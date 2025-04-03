@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 function isTodayOrYesterday(dateObj) {
   let returnObj = {
+// Temp comment
     isToday: false,
     isYesterday: false
   }
@@ -10,6 +11,7 @@ function isTodayOrYesterday(dateObj) {
   const today = new Date();
   const sameYear = today.getFullYear() === dateObj.getFullYear();
   const sameMonth = sameYear && today.getMonth() === dateObj.getMonth();
+  const dayDifference = today.getDate() - dateObj.getDate();
   
   // if year and month are the same, check if today or yesterday
   if ( sameYear && sameMonth ) {

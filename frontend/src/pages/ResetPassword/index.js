@@ -132,7 +132,6 @@ export default function ResetPassword() {
               type='submit'
             >
               Get New Password
-            </button>
           </div>
         </form>
       </div>

@@ -16,3 +16,4 @@ import {
 export class CategoryController {
   @Get("/search")
   async searchByID(
+    @QueryParam("id") id: string

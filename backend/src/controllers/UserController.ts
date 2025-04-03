@@ -71,3 +71,4 @@ export class UserController {
           data = { ...data, externalId: res.changedEntityId };
         }
       } catch (error) {
+        console.error("error syncing to BH");

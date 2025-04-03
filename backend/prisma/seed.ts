@@ -69,3 +69,4 @@ async function seedCandidates() {
         address_address1: "123 Main St",
         occupation: "Programmer",
         address_city: "Tulsa",
+        address_state: "OK",

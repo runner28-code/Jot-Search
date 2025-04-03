@@ -7,7 +7,6 @@ CREATE TABLE "Lead" (
     "address_state" TEXT,
     "address_zip" TEXT,
     "address_country_id" TEXT,
-    "campaignSource" TEXT,
     "candidates" TEXT,
     "category" TEXT,
     "clientContacts" TEXT,
@@ -19,3 +18,4 @@ CREATE TABLE "Lead" (
     "dateAdded" TIMESTAMP(3),
     "dateLastComment" TIMESTAMP(3),
     "dateLastModified" TIMESTAMP(3),
+    "dateLastVisited" TIMESTAMP(3),

@@ -12,7 +12,6 @@ const job_filter_exclude_keys = [
     "admitting",
     "adult",
     "advocacy",
-    "advocate",
     "aircraft",
     "alumni",
     "americorps",
@@ -125,7 +124,6 @@ const job_filter_exclude_keys = [
     "drug",
     "economist",
     "economy",
-// Temp comment
     "edit",
     "editor",
     "educate",
@@ -152,3 +150,6 @@ const job_filter_exclude_keys = [
     "family",
     "field coach",
     "field service",
+    "financial aid",
+    "financial counselor",
+    "fire",

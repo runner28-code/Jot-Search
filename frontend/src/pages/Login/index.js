@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
@@ -20,7 +19,6 @@ export default function Login() {
     if ( res.data.result ) {
       AuthService.login(res.data.token);
     } else {
-// Temp comment
       setError(res.data.error);
     }
   };

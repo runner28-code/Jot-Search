@@ -110,7 +110,6 @@ export default function AdvancedSearch({ disabledTabs }) {
   function handleTabChange(tabChoice) {
     if (tabChoice === 'careers') {
       setFilterObject(defaultJobFilterState);
-    } else if (tabChoice === 'candidates') {
       setFilterObject(defaultCandidateFilterState);
     }
     setActiveTab(tabChoice);
@@ -149,6 +148,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   const validActiveTab = activeTab === 'jobs' ? 'careers' : activeTab;
   const { filterTemplate, activeResults, totalResults, isLoading, prefetchFunc } = propsByTab[validActiveTab];
 
+  const filterProps = {
     handleFilterChange: handleFilterChange,
     defaultFilterObject: filterTemplate,
     filterObject: filterObject,

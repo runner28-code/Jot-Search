@@ -24,7 +24,6 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
   phone: '',
-  expertise: '',
   address1: '',
   city: '',
   state: '',
@@ -405,6 +404,7 @@ export default function RegistrationForm(loggedIn) {
           <FormInput
             type='password'
             name='verifyPassword'
+            label='Verify Password'
             required={true}
             value={formObj.verifyPassword}
             onChange={handleChange}

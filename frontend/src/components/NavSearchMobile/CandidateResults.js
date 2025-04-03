@@ -4,6 +4,7 @@ import { FaRegUserCircle as CandidateIcon } from 'react-icons/fa';
 import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
 
+// Temp comment
 export default function CandidateResults({ candidates }) {
   const role = AuthService.getUserRole();
   if (candidates.length === 0 || role === 'candidate') {
@@ -14,7 +15,6 @@ export default function CandidateResults({ candidates }) {
     <>
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Candidates</h6>
       { candidates.map(candidate => {
-// Temp comment
         return (
           <CandidateResult 
             candidate={candidate} 

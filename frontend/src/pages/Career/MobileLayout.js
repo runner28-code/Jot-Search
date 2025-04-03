@@ -60,6 +60,7 @@ export default function MobileLayout(props) {
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>
             </div>
+          </div>
           {/* Second row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
             {/* Posting age */}

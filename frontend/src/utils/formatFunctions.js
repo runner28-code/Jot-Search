@@ -3,7 +3,6 @@ import { experienceMap } from './dbFieldMapping';
 import { stateCodeMap } from './constants';
 
 export function formatCandidateData(candidateData) {
-  const formattedData = fixStringNulls(candidateData);
 
   formattedData.sourceTable = candidateData.id.startsWith('bl-') ? 'Candidate' : 'User'; // Some features are only available to candidates who have been added to the platform (Users)
   if (formattedData.sourceTable === 'Candidate') {
@@ -35,7 +34,6 @@ export function formatCandidateData(candidateData) {
   if ( candidateData.lastName && !candidateData.lastname ) formattedData.lastname = candidateData.lastName;
   if ( candidateData.firstname && !candidateData.firstName ) formattedData.firstName = candidateData.firstname;
   if ( candidateData.lastname && !candidateData.lastName ) formattedData.lastName = candidateData.lastname;
-// Temp comment
 
   return formattedData;
 }

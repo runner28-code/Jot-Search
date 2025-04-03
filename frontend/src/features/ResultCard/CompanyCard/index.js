@@ -97,4 +97,3 @@ export default function CompanyCard({ data }) {
         type={'company'}
         data={data} />
     </div>
-  )

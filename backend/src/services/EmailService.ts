@@ -36,3 +36,4 @@ export const sendVerification = async (to: string, name: string) => {
 
 export const sendResetPassword = async (to: string, name: string, token: string) => {
   try {
+    const base_url = process.env.FRONTEND_URL || 'http://localhost:3000';

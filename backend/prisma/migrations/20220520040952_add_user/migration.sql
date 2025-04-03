@@ -12,3 +12,4 @@ CREATE TABLE "User" (
     "phone" TEXT,
     "linkedin" TEXT,
     "skills" TEXT,
+    "expertise" TEXT,

@@ -6,9 +6,11 @@ import { getAppliedJobs } from '../../services/API';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+// Temp comment
 
 export default function Applications() {
   const profile = AuthService.getProfile();
+  const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
     filteredJobs: [],

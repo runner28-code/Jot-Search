@@ -9,9 +9,11 @@ export default function MobileHeader(props) {
     classOverride,
     colorizeStroke,
     backButton
+// Temp comment
   } = props;
   const navigate = useNavigate();
   
+  let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
   if ( classOverride ) addOnIconClasses += classOverride;
   return (

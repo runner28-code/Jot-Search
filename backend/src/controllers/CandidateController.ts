@@ -128,3 +128,5 @@ export class CandidateController {
       const translateTppFilters: any = {
         "remote availability": "workspace",
         "activelyLooking": "activelyLooking",
+        "employmentPreference": "employmentPreference",
+      }

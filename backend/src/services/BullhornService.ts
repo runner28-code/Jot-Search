@@ -305,3 +305,9 @@ export class BullhornService {
   }
 
   async insertCompany(company: any): Promise<any> {
+    console.log("\n***** insertCompany *****");
+    try {
+      const query = queryString.stringify({
+        BhRestToken: this.BhRestToken,
+      });
+      const url = `${this.restUrl}entity/ClientCorporation?${query}`;

@@ -151,7 +151,6 @@ export default function AddCoordinator() {
       </div>
       <div className={inputContainer}>
         {/* Verify Password */}
-// Temp comment
         <label className={labelStyles}>Verify Password</label>
         <input
           type='password'

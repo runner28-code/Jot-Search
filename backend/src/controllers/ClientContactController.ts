@@ -16,3 +16,4 @@ import { normalizeFilters } from "./JobController";
 export class ClientContactController {
 
   @Authorized()
+  @Get("/search")

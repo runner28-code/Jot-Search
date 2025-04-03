@@ -1,3 +1,4 @@
+generator client {
   provider = "prisma-client-js"
 }
 
@@ -229,3 +230,8 @@ model Company {
   funding             String?
   industryList        String[]
 
+  invoiceFormat       String?
+  linkedinProfileName String?
+
+  notes        String?
+  numEmployees Int?

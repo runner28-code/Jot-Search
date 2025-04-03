@@ -38,7 +38,7 @@ export default function Companies() {
         className={ !loggedIn && width <= 990 ? 'px-[5%]' 
           : !loggedIn ? 'px-[15%]' 
             : ''
-        }>
+        <RenderAdvancedSearch
           loggedIn={loggedIn}
           toggle={toggle}
           userType={userType}

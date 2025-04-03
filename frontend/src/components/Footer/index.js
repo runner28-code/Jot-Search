@@ -103,6 +103,7 @@ export default function Footer() {
           className={socialIconStyle}
         />
       </a>
+      <a href={ROUTES.twitter}>
         <img
           src={twitter}
           className={socialIconStyle}
