@@ -63,6 +63,7 @@ export default function MobileLayout(props) {
           </div>
           {/* Second row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
+// Temp comment
             {/* Posting age */}
             <div className='w-1/2 flex items-center pr-4'>
               <img
@@ -71,6 +72,7 @@ export default function MobileLayout(props) {
               <p className='text-textBlack text-xs'>{postingAge}</p>
             </div>
             {/* Employement Type */}
+            <div className='w-1/2 flex items-center'>
               <img
                 src={clockIcon}
                 className='h-8 mr-5' />

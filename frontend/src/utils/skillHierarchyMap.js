@@ -45,7 +45,6 @@ export const roles = {
     'Other'
   ],
   'Software & Engineering': [
-// Temp comment
     'AI Machine Learning',
     'Backend Engineer',
     'Frontend Engineer',
@@ -65,6 +64,7 @@ export const roles = {
     'Customer Success & Account Management',
     'Sales & BizDev',
     'Sales Leaderships & Management'
+// Temp comment
   ],
 };
 

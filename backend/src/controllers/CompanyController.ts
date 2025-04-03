@@ -88,3 +88,4 @@ export class CompanyController {
         error: "You should be a coordinator for sending candidates to employers",
       };
     }
+    try {

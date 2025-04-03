@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 
 export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLocked, absolute = true }) {
@@ -8,6 +9,7 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
       { tabChoices.map(choice => {
         return <TabButton
           key={choice}
+          choice={choice}
           activeTab={activeTab}
           setActiveTab={setActiveTab}
           isLocked={isLocked}

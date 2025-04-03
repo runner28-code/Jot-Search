@@ -5,7 +5,6 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
     <select 
       className={ inputStyles + ' cursor-pointer ' }
       name={ name }
-      value={ currentChosen }
       onChange={ handleChange }
       multiple={ !!multiselect }
       required
@@ -22,6 +21,7 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
             className={ optionStyles }
           >
             { choice }
+          </option>
         )
       })}
     </select>

@@ -11,4 +11,3 @@ ALTER COLUMN "hidden" SET DEFAULT false;
 
 -- CreateTable
 CREATE TABLE "GetroJobInfo" (
-    "id" TEXT NOT NULL,

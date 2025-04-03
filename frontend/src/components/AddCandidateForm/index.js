@@ -14,7 +14,6 @@ import {
   renderErrorBlock,
   renderHeader
 } from './utils';
-import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
 import { experienceMap } from '../../utils/dbFieldMapping';
@@ -180,6 +179,7 @@ export default function RegistrationForm() {
           />
           <FormInput
             type='multi-select'
+            name='roles'
             placeholder={`What roles are ${pronoun} interested in?`}
             value={formObj.roles}
             onChange={handleChange}

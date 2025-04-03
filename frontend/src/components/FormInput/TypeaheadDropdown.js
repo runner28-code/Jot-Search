@@ -13,6 +13,7 @@ export default function TypeaheadDropdown(props) {
     label,
     required,
     placeholder, 
+// Temp comment
     choices, 
     currentChosen, 
     onChange, 
@@ -45,7 +46,6 @@ export default function TypeaheadDropdown(props) {
       setFilteredChoices(choices.filter(choice => choice.toLowerCase().includes(inputValue.toLowerCase())));
     }
   }, [inputValue]);
-// Temp comment
 
   function handleInputChange(event) {
     setInputValue(event.target.value);

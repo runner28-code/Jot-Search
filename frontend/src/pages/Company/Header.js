@@ -47,6 +47,7 @@ function HeaderContent({ companyData }) {
             />
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
           </div>
+// Temp comment
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <CareerIcon
               className={headerIconStyles}
@@ -105,6 +106,7 @@ HeaderContent.propTypes = {
     address: PropTypes.string,
     employeeString: PropTypes.string,
     city: PropTypes.string,
+    state: PropTypes.string,
     numEmployees: PropTypes.number,
   })
 }

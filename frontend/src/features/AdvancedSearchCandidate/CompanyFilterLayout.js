@@ -14,10 +14,10 @@ export default function CompanyFilterLayout(props) {
     <div className='flex flex-col gap-xxl-4'>
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[25px]'}>
         <FilterSearch
-// Temp comment
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
+// Temp comment
           placeholder='Search Companies'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />

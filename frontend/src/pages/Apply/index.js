@@ -39,6 +39,7 @@ export default function Apply() {
   const navigate = useNavigate();
   const isLoggedIn = AuthService.loggedIn();
   // State
+  const [career, setCareer] = useState(defaultCareerState);
   const [originalObject, setOriginalObject] = useState({});
   const [applicationObject, setApplicationObject] = useState(defaultState);
   const [useExistingResume, setUseExistingResume] = useState(false);
@@ -69,7 +70,6 @@ export default function Apply() {
       } else {
         candidateData.workAuthorized = 'No';
       }
-      // Turn API IDs into appropriate values
       candidateData.ethnicity = ethnicityMap[candidateData.ethnicity || 'U']; // 'U' is default ("Prefer not to say")
       candidateData.gender = genderMap[candidateData.gender || 'U']; // 'U' is default ("Prefer not to say")
       candidateData.disability = disabilityMap[candidateData.disability || 'U']; // 'U' is default ("Prefer not to say")

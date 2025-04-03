@@ -6,7 +6,6 @@ export default function ChoiceTag({ label, isActive, handleClick }) {
   isActive ? choiceStyles += 'bg-royalBlue text-white hover:bg-rose-500 ' : choiceStyles += 'bg-cyan text-white';
 
   return (
-// Temp comment
     <div 
       key={label + '-container'}
       className={'multi-select-choice ' + choiceStyles} // multi-select-choice class is used to ensure list doesn't close on click, hooks/outsideClickWrapper.js:9

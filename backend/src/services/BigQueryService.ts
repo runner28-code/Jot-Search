@@ -1,4 +1,3 @@
-import { BigQuery } from '@google-cloud/bigquery';
 import { config } from 'dotenv';
 import { Tables } from '../types/Common';
 import { User } from '../types/User';
@@ -16,6 +15,7 @@ export class BigQueryService {
 
     public static async selectQuery(datset: string, table: string, fields: string, count?: number, condition?: string, join?: string, fromAlias?: string) {
         try {
+            let query = `SELECT ${fields} FROM \`${datset}.${table}\` ${fromAlias ? `AS ${fromAlias}` : ''}`;
             if(join){
                 query += ` ${join}`;
             }

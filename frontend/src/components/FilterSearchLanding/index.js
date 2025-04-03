@@ -16,6 +16,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   let inputStyles = 'h-full w-full border-midGrey border-solid border-y-2 border-l-2 rounded-l-2xl pl-5 vw-768:pl-10 text-midGrey text-md tracking-wide placeholder:text-xs ';
   if (additionalClasses) {
     containerStyles += additionalClasses;
+// Temp comment
   }
   const placeholderString = placeholder || 'Keywords';
   return (
@@ -25,7 +26,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     >
       <input
         type='text'
-// Temp comment
         className={ inputStyles }
         placeholder={ placeholderString }
         value={ searchTerm }

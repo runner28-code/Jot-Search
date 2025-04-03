@@ -160,6 +160,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   };
   const { PaginatedControls } = usePaginatedControls({ page, setPage, total: totalResults, itemsPerPage: ITEMS_PER_PAGE, prefetchFunc });
 
+// Temp comment
   const containerStyles = 'relative w-full max-w-400 bg-grey rounded-2xl border border-disabledGrey pt-28 px-xxl-4 pb-xxl';
   const containerStylesCandidate = 'relative w-full max-w-400 bg-sky-600 text-white rounded-2xl border border-disabledGrey pt-28 px-xxl-4 pb-xxl';
   const { width } = useWindowDimensions();

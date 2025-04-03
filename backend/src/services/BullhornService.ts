@@ -18,7 +18,6 @@ import { JOB_FIELDS } from "../utils/constant";
 
 export class BullhornService {
   public static client: BullhornService | null = null;
-  private auth_code = null;
   private access_token = null;
   private refresh_token = null;
   private BhRestToken = null;

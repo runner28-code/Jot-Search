@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
@@ -51,6 +52,5 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             data={data}
             isFavoriteOverride={isFavoriteOverride} />
       }
-// Temp comment
     </div>
   )

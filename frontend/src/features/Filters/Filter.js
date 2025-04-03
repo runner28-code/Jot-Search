@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { startCase } from 'lodash';
@@ -58,6 +57,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
         <p
           id='title'
           className='text-md text-black70%'>{ selected }</p>
+// Temp comment
         <img
           src={downChevron}
           alt='open'

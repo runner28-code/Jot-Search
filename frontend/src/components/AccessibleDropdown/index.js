@@ -10,10 +10,10 @@ export default function AccessibleDropdown(props) {
   const {
     type,
     name,
-// Temp comment
     label,
     placeholder,
     required,
+// Temp comment
     onChange,
     choices,
     choiceObject,
