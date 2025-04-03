@@ -109,7 +109,6 @@ class AuthService {
   }
 
   toggleSavedCompany(companyID, action) {
-// Temp comment
     const savedCompanies = this.getSavedCompanyIDs();
     if ( action === 'save' ) {
       savedCompanies.push(companyID);

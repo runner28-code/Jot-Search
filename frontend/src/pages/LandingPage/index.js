@@ -22,6 +22,7 @@ export default function LandingPage() {
   const { width } = useWindowDimensions();
   const isMobile = width < 1024;
   const isDesktop = width >= 1024;
+
   return (
     <main className='bg-white'>
       {/* Hero */}
@@ -42,6 +43,7 @@ export default function LandingPage() {
       <FeaturedJobs />
       {/* Featured Companies */}
       { isDesktop ? <FeaturedCompanies /> : <FeaturedCompaniesMobile />}
+// Temp comment
       { isDesktop && <JoinTalentNetwork /> }
       { isDesktop ? <BusinessBooming /> : <BusinessBoomingMobile />}
     </main>

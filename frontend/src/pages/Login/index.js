@@ -16,7 +16,6 @@ export default function Login() {
       email: email.value,
       password: password.value,
     });
-
     if ( res.data.result ) {
       AuthService.login(res.data.token);
     } else {
@@ -65,7 +64,6 @@ export default function Login() {
           />
           <FormInput
             type='password'
-// Temp comment
             name='password'
             label='Password'
           />

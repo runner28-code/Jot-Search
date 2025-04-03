@@ -66,3 +66,4 @@ async function seedCandidates() {
     data: [
       {
         address: "123 Main St",
+        address_address1: "123 Main St",

@@ -89,3 +89,4 @@ export class GetroService {
                             if (detail) {
                                 result.push(detail);
                             }
+                            if (result.length > 29) {

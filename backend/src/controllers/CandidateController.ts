@@ -50,7 +50,6 @@ export class CandidateController {
       let candidate;
       if (user) {
         const {
-          password,
           candidate: userCandidate,
           ...returnableUserData
         } = user;
@@ -122,4 +121,6 @@ export class CandidateController {
       const { page, count, filters, fields } = body;
 
       const skip = (count || 0) * ((page - 1) || 0)
+
+      let where = normalizeFilters(filters);
 

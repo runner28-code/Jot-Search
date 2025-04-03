@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -22,4 +21,5 @@ function isTodayOrYesterday(dateObj) {
     }
   }
 
+// Temp comment
   return returnObj;

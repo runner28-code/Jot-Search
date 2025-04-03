@@ -18,6 +18,7 @@ import { JOB_FIELDS } from "../utils/constant";
 
 export class BullhornService {
   public static client: BullhornService | null = null;
+  private auth_code = null;
   private access_token = null;
   private refresh_token = null;
   private BhRestToken = null;
@@ -292,3 +293,9 @@ export class BullhornService {
         } else if (res.status === 404) {
           break;
         } else {
+          console.log(url);
+          throw "error";
+        }
+      } catch (error: any) {
+        console.log(error, "\nrepeatNumber =", repeatErr);
+        repeatErr++;

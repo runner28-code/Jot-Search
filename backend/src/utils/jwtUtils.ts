@@ -3,3 +3,4 @@ import config from '../config';
 
 export const CreateJwtToken = (data: any) => {
   const token = jwt.sign(
+    data,

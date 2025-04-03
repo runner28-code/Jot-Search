@@ -221,3 +221,7 @@ model Company {
   department   Department? @relation("departmentUsers", fields: [departmentId], references: [id])
 
   companyContacts User[] @relation("userCompany")
+
+  externalID String?
+
+  facebookProfileName String?

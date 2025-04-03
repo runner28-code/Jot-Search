@@ -98,7 +98,6 @@ export const register = async (data: User) => {
   } catch (error) {
     console.error(error);
     return { result: false, error };
-  }
 };
 
 export const update = async (parent_id: string, role: string, data: any) => {
@@ -186,3 +185,7 @@ export const addUserHistoryEntries = async ({
 
       return newValue !== oldValue;
     })
+    .map((key) => {
+      const typedKey = key as keyof dbUser;
+      return {
+        table: USER_TABLE,

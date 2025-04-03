@@ -14,6 +14,7 @@ import {
   renderErrorBlock,
   renderHeader
 } from './utils';
+import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
 import { experienceMap } from '../../utils/dbFieldMapping';
@@ -223,7 +224,6 @@ export default function RegistrationForm() {
             placeholder='Preferred Employment Type' 
             value={formObj.employmentPreference}
             onChange={handleChange}
-            choices={['Any', 'Full-Time', 'Contract']}
             error={errors.includes('employmentPreference')}
           />
           <FormInput

@@ -57,12 +57,12 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
         <p
           id='title'
           className='text-md text-black70%'>{ selected }</p>
-// Temp comment
         <img
           src={downChevron}
           alt='open'
           className='w-6 h-4'
         />
+// Temp comment
 
       </div>
       { renderDropdown( showDropdown, choices, handleChoiceClick ) }

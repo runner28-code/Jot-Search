@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
-// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import postingAgeIcon from '../../../assets/icons/calendar.svg';
@@ -14,6 +13,7 @@ import { buildCareerAddress, buildSalaryString, calculatePostingAge } from '../.
 import useWindowDimensions from '../../../hooks/windowDimensions';
 import AuthService from '../../../services/auth';
 
+// Temp comment
 export default function CareerCard({ data, active }) {
   const categoryString = data.category?.name.toUpperCase() || 'CATEGORY N/A';
   const salaryString = buildSalaryString(data.salary, data.salaryUnit)

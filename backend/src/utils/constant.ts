@@ -145,3 +145,6 @@ const job_filter_exclude_keys = [
   "exercise",
   "externship",
   "fabricator",
+  "faculty",
+  "family",
+  "field coach",

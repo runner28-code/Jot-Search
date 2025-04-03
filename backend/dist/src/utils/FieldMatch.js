@@ -18,3 +18,4 @@ exports.JobFilter = {
     main: {
         id: "id",
         status: "status",
+        skillList: "skillList",

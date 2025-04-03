@@ -41,3 +41,4 @@ const validateJob = (job: Job): string | undefined => {
   return undefined;
 };
 
+const sanitizeJob = (job: Job): Job => {

@@ -5,13 +5,13 @@ import { FaUserEdit } from 'react-icons/fa';
 import * as ROUTES from '../../routes';
 
 export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
+// Temp comment
   const { pathname } = useLocation();
   const forceShowPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage ];
   const linkStyles = forceShowPages.includes(pathname) ? stylesObject.baseLinkStyles : stylesObject.topLinkStyles;
   return (<>
     <Link 
       to={ROUTES.login}
-// Temp comment
       onClick={handleOptionClick}
       className={linkStyles}
     >

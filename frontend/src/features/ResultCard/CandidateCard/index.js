@@ -124,7 +124,6 @@ function LinkWrapper({ children, link, disableLink }) {
   const baseStyles = 'w-full flex mb-xl px-xxl-2 py-xxl-3 bg-white border border-disabled border-solid rounded-2xl remove-outline ';
   if ( disableLink ) {
     return (
-      <div className={baseStyles}>
         {children}
       </div>
     );

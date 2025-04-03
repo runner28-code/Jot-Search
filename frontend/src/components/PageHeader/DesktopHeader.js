@@ -4,6 +4,7 @@ import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
   const {
+    headerText,
     icon,
     IconComponent,
     classOverride,
@@ -49,4 +50,3 @@ export default function DesktopHeader(props) {
         </button>
       )}
     </div>
-  )

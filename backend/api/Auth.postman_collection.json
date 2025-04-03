@@ -3,6 +3,7 @@
 		"_postman_id": "ab4a0a4c-b4a9-4436-b84c-c9b634af9b86",
 		"name": "Auth",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
 	"item": [
 		{
 			"name": "Login",
@@ -17,3 +18,4 @@
 						"77",
 						"69",
 						"204"
+					],

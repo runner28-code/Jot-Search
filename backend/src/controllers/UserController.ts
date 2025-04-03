@@ -56,7 +56,6 @@ export class UserController {
    * No-auth route for register page
    * @param user 
    * @returns 
-   */
   @Post("/register")
   async register(@Body() user: User) {
     let data = { ...user };
@@ -68,3 +67,4 @@ export class UserController {
         ).syncUserTppToBullhorn(user);
         if (res && res.changedEntityId) {
           console.log("changedEntityId", res.changedEntityId);
+          data = { ...data, externalId: res.changedEntityId };

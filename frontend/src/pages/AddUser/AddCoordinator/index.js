@@ -6,7 +6,6 @@ import { validateInput } from '../utils';
 export default function AddCoordinator() {
   const [formObject, setFormObject] = useState(defaultState);
   const [submissionObject, setSubmissionObject] = useState({
-// Temp comment
     loading: false,
     success: false,
     errors: {},

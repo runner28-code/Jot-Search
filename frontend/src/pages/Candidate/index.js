@@ -89,7 +89,6 @@ export default function Candidate() {
     <div className='flex flex-col space-y-16'>
       {/* "My Profile"/"Candidate Profile" Header */}
       <PageHeader
-// Temp comment
         headerText={headerText}
         IconComponent={CandidatesIcon}
         classOverride='h-18 w-18'
@@ -129,6 +128,7 @@ export default function Candidate() {
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}
       <div className='px-4'>
         <div className='border rounded-2xl bg-white p-15 relative'>
+// Temp comment
           <CareerProfileInfo
             role={role}
             candidateData={candidateData}

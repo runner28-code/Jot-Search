@@ -112,6 +112,7 @@ export function findSelectedFromPath() {
     case 'profile':
       return 'My Account';
     case 'applications':
+      return 'Applications';
     case 'saved-careers':
       return 'Saved Careers';
     case 'saved-companies':
