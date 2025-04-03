@@ -7,6 +7,7 @@ import {
   roles as roleChoices,
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
+import {
   inputValidation,
   formatFormObj,
   renderButtonOrLoading,
@@ -179,7 +180,6 @@ export default function RegistrationForm() {
           />
           <FormInput
             type='multi-select'
-            name='roles'
             placeholder={`What roles are ${pronoun} interested in?`}
             value={formObj.roles}
             onChange={handleChange}

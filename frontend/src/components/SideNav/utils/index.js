@@ -94,6 +94,7 @@ export const companyChoices = [
 ];
 export const coordinatorChoices = [
   choices.dashboard,
+  choices.candidates,
   choices.careers,
   choices.companies,
   choices.addUser,
@@ -109,7 +110,6 @@ export function findSelectedFromPath() {
   const path = useLocation().pathname;
   switch (path.split('/')[1]) {
     case 'profile':
-      return 'My Account';
     case 'applications':
       return 'Applications';
     case 'saved-careers':

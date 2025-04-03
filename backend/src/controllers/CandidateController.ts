@@ -64,7 +64,6 @@ export class CandidateController {
             id,
           },
         });
-      }
 
       return {
         candidate: clearPassword(candidate),
@@ -120,3 +119,6 @@ export class CandidateController {
   async searchByFilters(@Body() body: FilterBody) {
     try {
       const { page, count, filters, fields } = body;
+
+      const skip = (count || 0) * ((page - 1) || 0)
+

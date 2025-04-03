@@ -287,3 +287,9 @@ export class BullhornService {
             const res = await saveCompanies(updatedData);
             if (res === -1) return -1;
           }
+          offset += count;
+          repeatErr = 0;
+          if (total <= offset) break;
+        } else if (res.status === 404) {
+          break;
+        } else {

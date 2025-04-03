@@ -28,6 +28,7 @@ export default function FeaturedJobs() {
 
   const filtersArr = [
     {
+      key: 'featured',
       value: true
     }
   ];

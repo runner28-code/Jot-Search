@@ -65,3 +65,4 @@ async function seedCandidates() {
   await db.candidate.createMany({
     data: [
       {
+        address: "123 Main St",

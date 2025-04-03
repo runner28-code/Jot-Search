@@ -146,6 +146,7 @@ export default function AdvancedSearch({ disabledTabs }) {
     }
   }
 
+  const validActiveTab = activeTab === 'jobs' ? 'careers' : activeTab;
   const { filterTemplate, activeResults, totalResults, isLoading, prefetchFunc } = propsByTab[validActiveTab];
 
   const filterProps = {

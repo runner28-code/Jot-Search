@@ -83,3 +83,8 @@ export class CompanyController {
     @Body() body: { candidates_ids: string[], employers_emails: string[] }
   ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
+      return {
+        result: false,
+        error: "You should be a coordinator for sending candidates to employers",
+      };
+    }

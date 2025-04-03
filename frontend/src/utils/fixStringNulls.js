@@ -6,4 +6,3 @@ export default function fixStringNulls(data) {
       data[key] = null;
     }
   }
-  return data;

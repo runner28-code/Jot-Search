@@ -52,7 +52,6 @@ export default function DashboardPublic({togglePassState}) {
             onClick={() => togglePassState()}
           >
             <img src={filterIcon} />
-            { width >= 990 && <FilterText />}
           </button>
         </div>
       </div>

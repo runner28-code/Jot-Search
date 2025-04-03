@@ -29,3 +29,4 @@ CREATE TABLE "Company" (
     "billingContact" TEXT,
     "billingFrequency" TEXT,
     "billingPhone" TEXT,
+    "branchId" TEXT,

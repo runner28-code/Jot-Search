@@ -13,6 +13,7 @@ import DashboardCandidate from '../../components/DashboardCandidate';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 import AuthService from '../../services/auth';
+
 export default function Companies() {
   const { width } = useWindowDimensions();
   let userType = AuthService.getUserRole();
@@ -39,6 +40,7 @@ export default function Companies() {
             : ''
         }>
         <RenderAdvancedSearch
+// Temp comment
           loggedIn={loggedIn}
           toggle={toggle}
           userType={userType}

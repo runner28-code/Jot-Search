@@ -16,3 +16,10 @@ function renderActiveIcon(choice, currentChosen) {
         className="w-8 h-8 mr-2" />
     )
   }
+}
+
+  if (index !== arrayLength - 1) {
+    return (
+      <hr className='border-royalBlue border-1.5 border-solid my-4' />
+    )
+  }

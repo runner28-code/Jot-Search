@@ -110,6 +110,7 @@ model Lead {
   referredByPerson      String?
   reportToPerson        String?
   role                  String?
+  salary                BigInt?
   salaryLow             BigInt?
   secondarySkills       String?
   skillSet              String?
@@ -216,3 +217,7 @@ model Company {
   dateFounded      DateTime?
   dateLastModified DateTime?
 
+  departmentId String?
+  department   Department? @relation("departmentUsers", fields: [departmentId], references: [id])
+
+  companyContacts User[] @relation("userCompany")

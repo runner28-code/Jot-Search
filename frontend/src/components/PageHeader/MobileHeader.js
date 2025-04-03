@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 export default function MobileHeader(props) {
   const {
     headerText,
-// Temp comment
     icon,
     IconComponent,
     classOverride,
@@ -25,6 +24,7 @@ export default function MobileHeader(props) {
         >
           {'< Back'}
         </button>
+// Temp comment
       )}
       { icon && (
         <img

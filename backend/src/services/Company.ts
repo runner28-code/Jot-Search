@@ -19,3 +19,4 @@ export const saveCompany = async (company: string, candidate: string) => {
     if (existing) {
       await db.user.update({
         where: {
+          id: candidate,

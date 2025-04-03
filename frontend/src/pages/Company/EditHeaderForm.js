@@ -32,6 +32,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   const handleSubmit = () => {
     handleCandidateUpdate(formData);
     setEditMode(false);
+  }
   
   const avatarUrl = appendPathToBaseUrl(formData.avatar);
   const inputStyles = 'border-lightGrey border-solid border-2 rounded-2xl pl-4 ';
@@ -47,6 +48,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           <input 
             className={inputStyles + 'w-100 py-2'}
             type='file'
+// Temp comment
             name='avatar'
             onChange={handleInputChange}
           />

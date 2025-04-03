@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
-// Temp comment
 import ChoicesContainer from './ChoicesContainer';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
@@ -32,6 +31,7 @@ export default function NavMenu() {
       >
         <div className='w-8 h-8 flex flex-col justify-between'>
           <div className='border-white border-solid border-2'></div>
+// Temp comment
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
         </div>

@@ -39,7 +39,6 @@ export default function Apply() {
   const navigate = useNavigate();
   const isLoggedIn = AuthService.loggedIn();
   // State
-  const [career, setCareer] = useState(defaultCareerState);
   const [originalObject, setOriginalObject] = useState({});
   const [applicationObject, setApplicationObject] = useState(defaultState);
   const [useExistingResume, setUseExistingResume] = useState(false);
@@ -81,6 +80,7 @@ export default function Apply() {
       }
       // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {
+        candidateData.ethnicity = 'Prefer not to say';
       }
       const stateObject = {
         ...applicationObject,

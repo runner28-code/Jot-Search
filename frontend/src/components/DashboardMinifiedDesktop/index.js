@@ -6,7 +6,6 @@ import AuthService from '../../services/auth';
 import TypeTabs from '../../components/TypeTabs';
 
 // Hooks
-// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // Images
@@ -22,6 +21,7 @@ export default function DashboardMinifiedDesktop ({ location }) {
     )
   }
   if( location === 'companies' ) {
+// Temp comment
     return (<>
       <h1>Companies</h1>
     </>)

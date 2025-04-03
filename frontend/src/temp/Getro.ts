@@ -3,11 +3,11 @@ export type Company = {
     angellist_url?: string;
     approx_employees?: string;
     crunchbase_url?: string;
+    description?: string;
     domain?: string;
     facebook_url?: string;
     founded?: string;
     instagram_url?: string;
-    jobs_count?: string;
     linkedin_url?: string;
     logo_url?: string;
     name?: string;
@@ -21,3 +21,4 @@ export type Company = {
     website_url?: string;
     managers?: string;
     network_id?: string;
+    locations?: string;

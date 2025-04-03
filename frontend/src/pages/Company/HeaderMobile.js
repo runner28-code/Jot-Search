@@ -53,8 +53,36 @@ function HeaderContent({ companyData }) {
         </div>
 
         <FavoriteButton
+// Temp comment
           type={'company'}
           data={companyData} />
       </div>
+    </>
+  )
+}
+
+HeaderContent.propTypes = {
+  companyData: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    logo: PropTypes.string,
+    businessSectorList: PropTypes.string,
+    linkedin_url: PropTypes.string,
+    companyURL: PropTypes.string,
+    industryList: PropTypes.array,
+    address: PropTypes.string,
+    employeeString: PropTypes.string,
+    city: PropTypes.string,
+    state: PropTypes.string,
+    numEmployees: PropTypes.number,
+  })
+}
+
+export default function HeaderMobile({ companyData }) {
+  return (
+    <>
+      <section className='flex w-full mb-10 px-4'>
+        <HeaderContent companyData={companyData} />
+      </section>
     </>
   )

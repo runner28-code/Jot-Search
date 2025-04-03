@@ -15,3 +15,4 @@ import { normalizeFilters } from "./JobController";
 @JsonController("/api/client-contact")
 export class ClientContactController {
 
+  @Authorized()

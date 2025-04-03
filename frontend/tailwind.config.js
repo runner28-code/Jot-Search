@@ -75,3 +75,5 @@ module.exports = {
         medGray: '#707070',
         slateGray: '#3C3C4B',
         charcoalGray: '#333332',
+        darkGray: '#292938',
+        'black70%': '#000000b3',

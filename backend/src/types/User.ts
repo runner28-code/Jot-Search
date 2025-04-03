@@ -28,3 +28,4 @@ export type User = {
   status?: string;
   username?: string;
   logo?: string;
+
