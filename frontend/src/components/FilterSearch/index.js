@@ -8,7 +8,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   }
 
   function handleKeydown(e) {
-// Temp comment
     if (e.keyCode === 13) {
       handleSearchClick();
     }
@@ -45,4 +44,5 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         <RenderText />
       </button>
     </div>
+// Temp comment
   )

@@ -1,4 +1,3 @@
-{
     "family": "prod-site-frontend-task",
     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
@@ -8,3 +7,4 @@
             "image": "site-frontend:prod",
             "cpu": 1024,
             "memory": 2048,
+            "portMappings": [

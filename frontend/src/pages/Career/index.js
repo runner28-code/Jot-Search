@@ -77,5 +77,4 @@ export default function CareerPage() {
         role === 'coordinator' &&
         <InviteCandidates job={ careerData } />
       }
-    </div>
   </>)

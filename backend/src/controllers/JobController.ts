@@ -130,3 +130,6 @@ export class JobController {
 
       const _filters = normalizeFilters(filters)
       const where: any = {
+        datasource: _datasource as any,
+        ..._filters,
+      }

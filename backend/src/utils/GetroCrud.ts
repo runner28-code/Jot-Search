@@ -1,5 +1,6 @@
 import db from "./db";
 
+export const saveCompanies = async (companies: any[]) => {
     const expludeFields = ['organization_careers_pages', 'managers', 'topics'];
     try {
         for (const company of companies) {
@@ -31,3 +32,5 @@ import db from "./db";
             } catch (error) {
                 console.log(error);
                 console.log(`ERROR: while saving company with ID = ${company.id}`);
+            }
+        };

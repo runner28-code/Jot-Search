@@ -7,7 +7,7 @@ export const saveCompany = async (company: string, candidate: string) => {
       where: {
         id: candidate,
         savedCompanies: {
-            id: company,
+          some: {
           },
         },
       },
@@ -19,3 +19,4 @@ export const saveCompany = async (company: string, candidate: string) => {
       await db.user.update({
         where: {
           id: candidate,
+        },

@@ -56,7 +56,6 @@ module.exports = {
         magenta: '#EB4A87',
         // Colors included in design but not in Web Style Guide
         orangeCircle: '#ED8623',
-// Temp comment
         orangeHeroOverlay: '#F2871F',
         'blue-bg': '#E7F0F8',
         buttonLightBlue: '#00CADB',
@@ -79,3 +78,5 @@ module.exports = {
         darkGray: '#292938',
         'black70%': '#000000b3',
         'black50%': '#00000080',
+      },
+      backgroundImage: {

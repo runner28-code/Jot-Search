@@ -16,7 +16,9 @@ export const JobFilter: any = {
   },
   main: {
     id: "id",
+    status: "status",
     skillList: "skillList",
     hidden: "hidden",
     employmentType: "employmentType",
     onSite: "onSite",
+    yearsRequired: "yearsRequired",

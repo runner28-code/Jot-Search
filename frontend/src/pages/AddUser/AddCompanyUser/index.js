@@ -41,7 +41,6 @@ export default function AddCompanyUser() {
         <div className='flex mt-8'>
           <ExternalLink
             text='Go to Getro'
-// Temp comment
             href='https://www.getro.com/'
             addClass='mr-8'
           />

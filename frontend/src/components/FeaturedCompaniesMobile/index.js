@@ -34,6 +34,7 @@ export default function FeaturedCompaniesMobile() {
                 { renderLogo(company.logo) }
               </Link>
             )
+        }
       </div>
       <div className='text-center mt-24'>
         <Link

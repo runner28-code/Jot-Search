@@ -1,5 +1,6 @@
 import db from "../utils/db";
 
+export const saveCandidate = async (
   candidateId: string,
   companyUserId: string
 ) => {
@@ -27,3 +28,4 @@ import db from "../utils/db";
             connect: {
               id: candidateId,
             },
+          },

@@ -224,6 +224,7 @@ export default function RegistrationForm() {
             placeholder='Preferred Employment Type' 
             value={formObj.employmentPreference}
             onChange={handleChange}
+            choices={['Any', 'Full-Time', 'Contract']}
             error={errors.includes('employmentPreference')}
           />
           <FormInput
@@ -251,7 +252,6 @@ export default function RegistrationForm() {
           />
           {/* File input for resume */}
           <FormInput
-            type='file'
             name='resumeFile'
             placeholder='Upload Resume'
             value={formObj.resumeFile}

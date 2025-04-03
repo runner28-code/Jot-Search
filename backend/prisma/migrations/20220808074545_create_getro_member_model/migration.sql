@@ -20,3 +20,4 @@ CREATE TABLE "UserTalentCollection" (
     "invited_by" TEXT,
     "verified_by" TEXT,
     "invitation_reminder_sent_at" TEXT,
+    "verified_at" TEXT,

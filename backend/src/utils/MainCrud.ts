@@ -42,3 +42,4 @@ export const saveApplication = async (job: string, candidate: string) => {
     console.log(error);
     return { result: false, message: error };
   }
+};

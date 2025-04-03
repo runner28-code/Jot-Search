@@ -134,7 +134,6 @@ export default function RegistrationForm(loggedIn) {
 
   async function handleSubmit(event) {
     event.preventDefault();
-// Temp comment
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
     setErrors([]);
@@ -406,7 +405,6 @@ export default function RegistrationForm(loggedIn) {
           <FormInput
             type='password'
             name='verifyPassword'
-            label='Verify Password'
             required={true}
             value={formObj.verifyPassword}
             onChange={handleChange}

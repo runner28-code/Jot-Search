@@ -53,7 +53,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
           <MdLocationOn
             className='w-10 h-10 mr-1' 
             color='lightGray'
-          />}
         <p
           id='title'
           className='text-md text-black70%'>{ selected }</p>
@@ -62,7 +61,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
           alt='open'
           className='w-6 h-4'
         />
-// Temp comment
 
       </div>
       { renderDropdown( showDropdown, choices, handleChoiceClick ) }

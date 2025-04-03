@@ -83,7 +83,6 @@ export async function updateCandidate(newData, id) {
 
 export async function getSavedCandidates() {
   const { data } = await API.get(ROUTES.APIsavedCandidates);
-// Temp comment
   return normalizeData(data.candidates);
 }
 
@@ -119,3 +118,8 @@ export async function updateJob({ id, status, featured }) {
     featured
   });
   return normalizeData(data);
+}
+
+//* COMPANIES
+export async function getCompanies(filterValue, filterKey, count, page) {
+  return (await getCompaniesFull(filterValue, filterKey, count, page)).companies;

@@ -16,9 +16,11 @@ export default function Login() {
       email: email.value,
       password: password.value,
     });
+
     if ( res.data.result ) {
       AuthService.login(res.data.token);
     } else {
+// Temp comment
       setError(res.data.error);
     }
   };

@@ -32,6 +32,7 @@ export default function CandidateCard({ data, disableLink }) {
         disableLink={disableLink}
       >
         {/* Card Image and New Lead Label */}
+// Temp comment
         <div className='flex flex-col items-center gap-m mr-20'>
           <div className='h-48 w-48 flex justify-center items-center'>
             <img
@@ -124,6 +125,7 @@ function LinkWrapper({ children, link, disableLink }) {
   const baseStyles = 'w-full flex mb-xl px-xxl-2 py-xxl-3 bg-white border border-disabled border-solid rounded-2xl remove-outline ';
   if ( disableLink ) {
     return (
+      <div className={baseStyles}>
         {children}
       </div>
     );

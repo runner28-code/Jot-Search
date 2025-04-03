@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import * as ROUTES from '../../../routes';
 import API from '../../../services/API';
+// Temp comment
 import useWindowDimensions from '../../../hooks/windowDimensions';
 
 
@@ -10,6 +11,7 @@ export default function ResetButton({ candidateData, setType }) {
     event.preventDefault();
     const { email } = candidateData;
     const res = await API.post(ROUTES.APIaccountRecovery, {
+      email: email
     });
 
     if ( res.data.result ) {

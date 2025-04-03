@@ -83,7 +83,6 @@ export default function Candidate() {
   }
 
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
-
   if (loading) { return <LoadingSpinner /> }
   return (
     <div className='flex flex-col space-y-16'>
@@ -128,7 +127,6 @@ export default function Candidate() {
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}
       <div className='px-4'>
         <div className='border rounded-2xl bg-white p-15 relative'>
-// Temp comment
           <CareerProfileInfo
             role={role}
             candidateData={candidateData}

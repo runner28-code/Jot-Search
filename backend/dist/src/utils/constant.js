@@ -9,6 +9,7 @@ const job_filter_exclude_keys = [
     "academic",
     "adjudication",
     "admissions",
+    "admitting",
     "adult",
     "advocacy",
     "advocate",
@@ -124,6 +125,7 @@ const job_filter_exclude_keys = [
     "drug",
     "economist",
     "economy",
+// Temp comment
     "edit",
     "editor",
     "educate",
@@ -147,3 +149,6 @@ const job_filter_exclude_keys = [
     "externship",
     "fabricator",
     "faculty",
+    "family",
+    "field coach",
+    "field service",

@@ -50,6 +50,7 @@ export class CandidateController {
       let candidate;
       if (user) {
         const {
+          password,
           candidate: userCandidate,
           ...returnableUserData
         } = user;
@@ -124,3 +125,6 @@ export class CandidateController {
 
       let where = normalizeFilters(filters);
 
+      const translateTppFilters: any = {
+        "remote availability": "workspace",
+        "activelyLooking": "activelyLooking",

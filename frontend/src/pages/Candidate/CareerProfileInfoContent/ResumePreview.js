@@ -42,6 +42,7 @@ const ResumePreview = ({ resumeUrl }) => {
             </li>
             <li>Page {page} of {pdfDocument.numPages}</li>
             <li className="next">
+// Temp comment
               <button
                 disabled={nextButtonDisabled}
                 onClick={() => setPage(page + 1)}
@@ -49,7 +50,6 @@ const ResumePreview = ({ resumeUrl }) => {
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>
-// Temp comment
           </ul>
         </nav>
       )}

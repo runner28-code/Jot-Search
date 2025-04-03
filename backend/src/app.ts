@@ -7,6 +7,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import { NextFunction } from "connect";
 import { VerifyJwtToken } from "./utils/jwtUtils";
+import { findUserByEmail } from "./services/User";
 import { genUUID } from "./utils";
 import fs from "fs";
 import AWS from "aws-sdk"
@@ -40,3 +41,4 @@ const uploadToS3 = async(req: any, res: any) => {
   form.parse(req, async (err: any, fields: any, files: any) => {
     const fileObject = await files.file
 
+    const buffer = fs.readFileSync(fileObject.filepath)

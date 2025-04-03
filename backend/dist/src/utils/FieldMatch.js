@@ -19,3 +19,4 @@ exports.JobFilter = {
         id: "id",
         status: "status",
         skillList: "skillList",
+        hidden: "hidden",

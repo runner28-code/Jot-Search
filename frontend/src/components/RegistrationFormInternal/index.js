@@ -132,7 +132,6 @@ export default function RegistrationFormInternal(loggedIn) {
       }, 2000);
     }
   }, [submissionObject.success])
-
   async function handleSubmit(event) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
@@ -287,6 +286,7 @@ export default function RegistrationFormInternal(loggedIn) {
             error={errors.includes('zip')}
           />
         </div>
+        <FormInput
           type='text'
           name='country'
           label='Country'

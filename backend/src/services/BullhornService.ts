@@ -299,3 +299,9 @@ export class BullhornService {
       } catch (error: any) {
         console.log(error, "\nrepeatNumber =", repeatErr);
         repeatErr++;
+        await this.getNewAccessToken();
+      }
+    }
+  }
+
+  async insertCompany(company: any): Promise<any> {

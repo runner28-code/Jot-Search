@@ -38,3 +38,4 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     dateFounded: data.dateAdded,
 
     employeeType: data.employeeType,
+    experience: data.experience,

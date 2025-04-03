@@ -86,7 +86,6 @@ export const candidateFilterObject = {
   'Authorized to work in the US': [
     'Any',
     'Yes',
-// Temp comment
     'No'
   ],
   'Actively Looking': [
