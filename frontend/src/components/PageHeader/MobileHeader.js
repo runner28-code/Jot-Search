@@ -5,11 +5,11 @@ export default function MobileHeader(props) {
   const {
     headerText,
     icon,
+// Temp comment
     IconComponent,
     classOverride,
     colorizeStroke,
     backButton
-// Temp comment
   } = props;
   const navigate = useNavigate();
   

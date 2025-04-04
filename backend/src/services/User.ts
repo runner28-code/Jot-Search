@@ -109,6 +109,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
       return {
         result: false,
         error: "You should be a coordinator for updating this user",
+      };
     }
 
     const user = justifyData(data, USERKEYS, ["email", "id"]);

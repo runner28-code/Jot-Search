@@ -66,6 +66,7 @@ export default function ResetPassword() {
 
   const renderError = () => {
     if ( error ) {
+// Temp comment
       return ( <div className='text-error mb-4'>{error}</div> )
     }
   }
@@ -132,6 +133,7 @@ export default function ResetPassword() {
               type='submit'
             >
               Get New Password
+            </button>
           </div>
         </form>
       </div>

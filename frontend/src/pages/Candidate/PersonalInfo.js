@@ -30,7 +30,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     workAuthorized: candidateData.workAuthorized,
     zip: candidateData.zip || '',
     city: candidateData.city || '',
-    address1: candidateData.address1 || '',
     referredBy: candidateData.referredBy || '',
     gender: candidateData.gender || '',
   })
@@ -41,6 +40,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
 
   function handleInputChange(e) {
     const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   }
 
   function handleChange(name, value) {

@@ -208,7 +208,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             type='text'
             onChange={handleInputChange}
             id='phone'
-// Temp comment
             value={formData.phone}
             className={inputStyles + 'ml-10 text-h6'} />
         </div>

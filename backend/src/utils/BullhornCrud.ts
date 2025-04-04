@@ -70,34 +70,3 @@ export const saveCompanies = async (companies: any[]) => {
         });
 
         companyData.companyURL = companyData.companyURL ? companyData.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null;
-
-        const newCompany = await db.company.create({
-          data: companyData,
-        });
-
-        console.log(`Saved company with ID = ${company.id} successfully`);
-      } catch (error: any) {
-        console.log(error.message);
-        console.log(`ERROR: while saving company with ID = ${company.id}`);
-      }
-    }
-
-    return { result: true };
-  } catch (error: any) {
-    console.log(error.message);
-    return { result: false, error };
-  }
-};
-
-export const saveBullhornJobs = async (jobs: any[]) => {
-  const excludeFields = [
-    "address",
-    "location",
-    "_score",
-    "publicDescription", //
-    "clientCorporation",
-    "dateAdded",
-    "dateClosed",
-    "date_end",
-    "dateLastExported",
-    "dateLastModified",

@@ -12,6 +12,7 @@ export const roles = {
     'Accounting & Financial Planning',
     'Accounts & Payroll',
     'Corporate Finance',
+    'Banking',
     'Investment',
   ],
   'Marketing': [
@@ -122,4 +123,3 @@ export const skills = [
   'Capital',
   'Change Management',
   'Chinese',
-  'CIA',

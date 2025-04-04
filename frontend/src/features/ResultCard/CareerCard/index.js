@@ -40,6 +40,7 @@ export default function CareerCard({ data, active }) {
         width > 768 ?
           <DesktopCard
             dataObj={dataObj}
+            active={active}
           />
           :
           <MobileCard
@@ -48,6 +49,7 @@ export default function CareerCard({ data, active }) {
           />
       }
       <FavoriteButton
+// Temp comment
         type={'job'}
         data={data} />
     </div>

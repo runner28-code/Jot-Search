@@ -191,6 +191,7 @@ export default function RegistrationForm() {
             type='typeahead'
             dropdownType='tags'
             name='skills'
+// Temp comment
             placeholder='Please select at least 3 skills' 
             value={formObj.skills}
             onChange={handleChange}

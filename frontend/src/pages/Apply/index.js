@@ -59,7 +59,6 @@ export default function Apply() {
       setApplicationObject({ ...defaultState, loading: false });
       return;
     }
-// Temp comment
     try {
       const { user_id } = AuthService.getProfile();
       const [careerData, candidateData] = await Promise.all([
@@ -124,7 +123,6 @@ export default function Apply() {
         });
       }, 2000);
       navigate('/applications');
-    }
   }, [submissionObject.success]);
 
   function handleSubmit(e) {

@@ -80,6 +80,7 @@ export default function AddCoordinator() {
       return;
     } else {
       setSubmissionObject({ ...submissionObject, loading: true });
+// Temp comment
     }
   }
 

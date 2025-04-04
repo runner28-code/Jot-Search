@@ -43,7 +43,6 @@ module.exports = {
         lightGrey: '#F6F5F6',
         footerGrey: '#EBEBEB',
         grey300: '#D0D5DD',
-        grey700: '#344054',
         midGrey: '#94949D',
         grey: '#EBEBEB',
         charcoal: '#3C3C4B',
@@ -81,5 +80,4 @@ module.exports = {
       },
       backgroundImage: {
         'tulsa-3': 'url(\'./assets/images/tulsa-3.webp\')',
-// Temp comment
         'tulsa-3-vert': 'url(\'./assets/images/tulsa-3-vert.webp\')',
