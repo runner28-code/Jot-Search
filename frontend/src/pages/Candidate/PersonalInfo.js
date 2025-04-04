@@ -30,6 +30,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     workAuthorized: candidateData.workAuthorized,
     zip: candidateData.zip || '',
     city: candidateData.city || '',
+    address1: candidateData.address1 || '',
     referredBy: candidateData.referredBy || '',
     gender: candidateData.gender || '',
   })

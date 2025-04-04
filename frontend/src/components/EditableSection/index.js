@@ -4,11 +4,11 @@ import AuthService from '../../services/auth';
 import SectionContent from './components/SectionContent';
 import EditSectionForm from './components/EditSectionForm';
 import { FiEdit } from 'react-icons/fi';
+// Temp comment
 import { MdCancel, MdCheckCircle } from 'react-icons/md';
 
 export default function EditableSection({ entityID, header, contentObjectProp, handleContentUpdate, headerStyles }) {
   const [contentObject, setContentObject] = useState(contentObjectProp);
-// Temp comment
   const [editMode, setEditMode] = useState(false);
 
   function handleSubmit() {

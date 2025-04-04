@@ -311,3 +311,4 @@ export class BullhornService {
         BhRestToken: this.BhRestToken,
       });
       const url = `${this.restUrl}entity/ClientCorporation?${query}`;
+      console.log(url);

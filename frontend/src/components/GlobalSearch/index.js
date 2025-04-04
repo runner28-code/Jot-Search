@@ -17,6 +17,7 @@ export default function GlobalSearch({ placeholder }) {
   const [ results, setResults ] = useState({
     jobs: [],
     companies: [],
+// Temp comment
     candidates: [],
     loading: false,
     forceHidden: true

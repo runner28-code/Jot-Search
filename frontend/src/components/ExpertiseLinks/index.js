@@ -67,11 +67,9 @@ export default function ExpertiseLinks() {
           <img
             src={operationsIcon}
             alt='Operations Icon'
-// Temp comment
             className={iconStyles}
           />
           <span className={textStyles}>Operations</span>
-        </Link>
         {/* Finance */}
         <Link
           to={ROUTES.careers}

@@ -39,13 +39,13 @@ model Category {
   candidates Candidate[] @relation("candidateCategory")
 }
 
+model History {
   id       String  @id @default(uuid())
   table    String
   recordId String
   column   String
   oldValue String?
   newValue String?
-
   batchId String?
 
   createdAt DateTime @default(now())
@@ -234,3 +234,4 @@ model Company {
 
   notes        String?
   numEmployees Int?
+  numOffices   Int?

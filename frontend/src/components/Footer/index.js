@@ -129,7 +129,6 @@ export default function Footer() {
       </a>
     </div>
     <div
-// Temp comment
       id='footer'
       className='flex flex-col'
     >
@@ -152,6 +151,7 @@ export default function Footer() {
               />
             </a>
             <a
+// Temp comment
               href='https://talent.intulsa.com/'
               target='_blank'
               rel='noopener noreferrer'
@@ -201,4 +201,99 @@ export default function Footer() {
         </div>
       </div>
     </div>
+  </>)
+}
+
+function NavFooter() {
+
+  const blueLinkStyle = 'text-md text-royalBlue font-spaceGrotesk font-semibold mb-8';
+  const linkStyle = 'text-md zinc-800 mb-4';
+  const addressLinkStyle = 'text-md text-zinc-700 mb-6';
+
+  return(<>
+    <div className='py-24 px-[10%] flex flex-wrap'>
+      <div className='flex flex-col basis-6/12'>
+        <img
+          src={inTulsaFooter}
+          className='w-[250px] h-auto mb-12'
+        />
+        <Link
+          to={ROUTES.signup}
+          className={blueLinkStyle}
+        >Create Account
+        </Link>
+        <Link
+          to={ROUTES.login}
+          className={blueLinkStyle}
+        >Login
+        </Link>
+        <a
+          href={ROUTES.mailToIntulsa}
+          className={addressLinkStyle}
+        >info@talentintulsa.com
+        </a>
+        <Address />
+      </div>
+      <div className='flex flex-col basis-3/12'>
+        <Link
+          to={ROUTES.landingPage}
+          className={linkStyle}
+        >Home
+        </Link>
+        <Link
+          to={ROUTES.careers}
+          className={linkStyle}
+        >Find Careers
+        </Link>
+        <Link
+          to={ROUTES.companies}
+          className={linkStyle}
+        >Browse Companies
+        </Link>
+        <a
+          href={ROUTES.intulsa}
+          className={linkStyle}
+        >Our Website
+        </a>
+      </div>
+      <div className='flex flex-col basis-3/12'>
+        <a
+          href="/careers"
+          className={linkStyle}
+        >
+          Software & Enginering Job Openings
+        </a>
+        <a
+          href="/careers"
+          className={linkStyle}
+        >
+          Sales & Business Developement Job Openings
+        </a>
+        <a
+          href="/careers"
+          className={linkStyle}
+        >
+          Operations Job Openings
+        </a>
+        <a
+          href="/careers"
+          className={linkStyle}
+        >
+          Marketing Job Openings
+        </a>
+        <a
+          href="/careers"
+          className={linkStyle}
+        >
+          Finance Job Openings
+        </a>
+        <a
+          href="/careers"
+          className={linkStyle}
+        >
+          Tulsa Jobs
+        </a>
+      </div>
+    </div>
+    <BackToTop />
   </>)

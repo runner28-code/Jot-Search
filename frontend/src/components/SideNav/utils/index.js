@@ -22,7 +22,6 @@ export const choices = {
     link: ROUTES.dashboard,
   },
   profile: {
-    label: 'My Profile',
     icon: ApplicationIcon,
     link: ROUTES.profile,
   },
@@ -77,6 +76,7 @@ export const choices = {
 export const candidateChoices = [
   choices.dashboard,
   choices.profile,
+  choices.myApplications,
   choices.myFavorites,
   choices.careers,
   choices.companies,

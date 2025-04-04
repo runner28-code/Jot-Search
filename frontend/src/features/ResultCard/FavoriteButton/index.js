@@ -27,7 +27,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const [isFavorite, setIsFavorite] = useState(isFavoriteOverride ?? isSaved);
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
-
   const handleFavoriteClick = async () => {
     setIsFavorite(isFavorite => !isFavorite);
     try {
@@ -35,6 +34,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
     } catch (error) {
       console.log(error);
       setIsFavorite(isFavorite => isFavorite);
+    }
   }
 
   let styles = 'absolute flex justify-center items-center cursor-pointer ';

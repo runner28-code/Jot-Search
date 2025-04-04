@@ -103,3 +103,4 @@ export type Job = {
     publishedZip?: string;
     reasonClosed?: string;
     reportTo?: string;
+    reportToClientContact?: string;

@@ -27,7 +27,6 @@ const NUM_ITEMS_PER_TYPE = 5
 export default function NavSearchMobile({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
-// Temp comment
   const [forceHidden, setForceHidden] = useState(false);
   const userType = AuthService.getUserRole();
 
@@ -35,6 +34,7 @@ export default function NavSearchMobile({ placeholder }) {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {
+// Temp comment
         ...defaultCandidateFilterState,
         firstname: splitName[0],
         lastname: splitName?.[1]

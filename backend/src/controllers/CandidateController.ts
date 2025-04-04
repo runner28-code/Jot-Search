@@ -51,7 +51,6 @@ export class CandidateController {
       if (user) {
         const {
           password,
-          candidate: userCandidate,
           ...returnableUserData
         } = user;
         candidate = {
@@ -65,6 +64,7 @@ export class CandidateController {
           },
         });
       }
+
       return {
         candidate: clearPassword(candidate),
         message: !candidate ? "No user with given ID" : undefined,
@@ -129,3 +129,4 @@ export class CandidateController {
         "activelyLooking": "activelyLooking",
         "employmentPreference": "employmentPreference",
       }
+

@@ -11,7 +11,6 @@ export default function ResetForm({ candidateData, setType }) {
     passwordConfirm: '',
   });
   const [match, setMatch] = useState('');
-
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -36,7 +35,6 @@ export default function ResetForm({ candidateData, setType }) {
 
   function handleChange(name, value) {
     setFormData({
-// Temp comment
       ...formData,
       [name]: value,
     });

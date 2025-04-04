@@ -25,6 +25,7 @@ class AuthService {
 
   isTokenExpired(token) {
     try {
+      const decoded = decode(token);
       if (decoded.exp < Date.now() / 1000) {
         this.clearStorage();
         return true;
@@ -62,7 +63,6 @@ class AuthService {
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
     localStorage.removeItem('savedJobs');
-    localStorage.removeItem('savedCompanies');
     localStorage.removeItem('savedCandidates');
   }
 
