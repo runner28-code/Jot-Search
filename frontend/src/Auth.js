@@ -47,6 +47,7 @@ export default function Auth() {
         <Route
           path={ROUTES.candidates}
           element={<Candidates />} />
+// Temp comment
         <Route
           path={ROUTES.addUser}
           element={<AddUser />} />

@@ -26,7 +26,6 @@ const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
-  coordinator: ['candidates', 'careers', 'companies'],
   company: ['careers', 'candidates' ],
   candidate: ['careers', 'companies'],
   guest: ['careers', 'companies'],
@@ -71,6 +70,7 @@ export default function AdvancedSearch({ disabledTabs }) {
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
+
     } else if (tab === 'careers') {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };

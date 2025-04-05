@@ -74,7 +74,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     handleCandidateUpdate(dataToSubmit);
     setEditMode(false);
   }
-// Temp comment
 
   const disabled = !editMode
   const disabledStyles = disabled ? 'disabled cursor-not-allowed bg-grey300' : '';
@@ -109,7 +108,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     <div className='grow text-black70% w-full'>
       <label
         htmlFor='description'
-        className='block my-10'
       >
         <p>My Summary</p>
         {

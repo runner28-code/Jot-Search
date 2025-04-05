@@ -23,6 +23,7 @@ export type Company = {
     customFloat1_3?: string,
     customInt1_3?: string,
     customText1_20?: string,
+    customTextBlock1_5?: string,
     dateFounded?: string,
     dateLastModified?: string,
     externalID?: string,
@@ -53,7 +54,6 @@ export type Job = {
     address_state?: string;
     address_zip?: string;
     address_country_id?: string;
-    benefits?: string;
     billRateCategoryID?: string;
     bonusPackage?: string;
     certificationList?: string;

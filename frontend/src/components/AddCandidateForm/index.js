@@ -232,6 +232,7 @@ export default function RegistrationForm() {
             name='workspace'
             placeholder='Work Setting Preference (Remote, Office)' 
             value={formObj.workspace}
+// Temp comment
             onChange={handleChange}
             choices={['Any', 'Remote', 'On Site', 'Hybrid']}
             error={errors.includes('workspace')}
@@ -243,7 +244,6 @@ export default function RegistrationForm() {
             error={errors.includes('linkedin')}
           />
           <FormInput
-// Temp comment
             type='text'
             name='referredBy'
             placeholder={`How did ${pronoun} hear about us?`} 

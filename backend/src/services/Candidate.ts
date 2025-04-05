@@ -1,7 +1,6 @@
 import db from "../utils/db";
 
 export const saveCandidate = async (
-  candidateId: string,
   companyUserId: string
 ) => {
   try {
@@ -10,6 +9,7 @@ export const saveCandidate = async (
         AND: {
           id: companyUserId,
           savedCandidates: {
+            some: {
               id: candidateId,
             },
           },

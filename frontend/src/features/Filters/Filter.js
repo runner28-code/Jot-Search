@@ -23,6 +23,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   }
   function handleChoiceClick(choice) {
     setShowDropdown(false);
+// Temp comment
     setSelected(choice);
     handleFilterChange(filterType, choice);
   }

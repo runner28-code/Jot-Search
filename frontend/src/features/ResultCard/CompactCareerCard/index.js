@@ -44,6 +44,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
                 <p className='text-midGrey'>Applied</p>
                 <p className='text-midGrey text-xs'>{applicationAge}</p>
               </div>
+// Temp comment
               :
               <div>
                 <p className='text-midGrey'>Posting Age</p>
@@ -52,6 +53,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             }
           </div>
         </div>
+      </Link>
       {
         selectableProps && selectableProps.selectable ?
           <Checkbox

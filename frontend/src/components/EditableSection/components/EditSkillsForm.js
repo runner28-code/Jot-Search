@@ -12,7 +12,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
       target: {
         name: inputName,
         value: newValues.join(', '),
-// Temp comment
       },
     };
     handleChange(fakeEvent);
@@ -24,6 +23,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
     { renderChosen(splitSkills, onChange) }
     <TypeaheadDropdown
       type='typeahead'
+// Temp comment
       dropdownType='tags'
       name='primarySkills'
       placeholder='Add/Remove Skills'

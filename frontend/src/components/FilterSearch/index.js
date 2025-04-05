@@ -19,7 +19,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     containerStyles += additionalClasses;
   }
   const placeholderString = placeholder || 'Keywords';
-// Temp comment
   const { width } = useWindowDimensions();
   return (
     <div 
@@ -35,7 +34,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
       />
       <button 
         className={ width >= 990 ? 'h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl pl-12 pr-14 tracking-wide' : 'h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl px-4 tracking-wide'}
-        onClick={ handleSearchClick }
       >
         <img
           src={ searchIcon }

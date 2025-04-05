@@ -12,6 +12,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           toggled={toggled}
           onToggle={onUpdate}
           disabled={disabled}
+// Temp comment
         />
         <label 
           htmlFor='featured' 

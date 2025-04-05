@@ -22,9 +22,9 @@ export default function ResultContainer(props) {
     containerClass = undefined,
     selectableProps = null,
   } = props;
-// Temp comment
   const resultsHeaderStyles = 'font-bold w-full text-xl mb-8 ';
   const baseStyles = 'w-full max-w-400 py-5'
+// Temp comment
   const resultsContainerStyles = containerClass || 'flex flex-col items-center justify-center ';
 
   function renderHeader() {

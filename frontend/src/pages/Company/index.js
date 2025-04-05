@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import Header from './Header';
-import HeaderMobile from './HeaderMobile';
 import { getCompanyById } from '../../services/API';
 import { buildCandidateAddress } from '../../utils/formatFunctions';
 import urlDecode from '../../utils/urlDecode';
@@ -65,7 +64,6 @@ export default function Company() {
           : !loggedIn ? 'px-[15%]' 
             : ''}
       >
-// Temp comment
         <div className={ width >= 990 ? 'bg-white p-16 mt-8 border-2 border-midGrey border-solid rounded-3xl relative' : 'bg-white p-4 mt-8 border-2 border-midGrey border-solid rounded-3xl relative'}>
           {/* Header */}
           { width >= 990 ?

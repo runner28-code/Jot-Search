@@ -33,6 +33,7 @@ const ResumePreview = ({ resumeUrl }) => {
         <nav>
           <ul className="flex justify-between">
             <li className="previous">
+              <button
                 disabled={prevButtonDisabled}
                 onClick={() => setPage(page - 1)}
               >
@@ -44,6 +45,7 @@ const ResumePreview = ({ resumeUrl }) => {
               <button
                 disabled={nextButtonDisabled}
                 onClick={() => setPage(page + 1)}
+// Temp comment
               >
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>

@@ -15,6 +15,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   return (
     <button 
       className={buttonStyles}
+// Temp comment
       type='submit'>
       {buttonString}
     </button>
