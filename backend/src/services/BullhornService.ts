@@ -312,3 +312,8 @@ export class BullhornService {
       });
       const url = `${this.restUrl}entity/ClientCorporation?${query}`;
       console.log(url);
+      const res = await axios.put(url, JSON.stringify(company), {
+        headers: {
+          "Content-Type": "application/json;charset=UTF-8",
+          Accept: "*/*",
+        },

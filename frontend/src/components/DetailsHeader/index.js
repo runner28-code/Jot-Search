@@ -15,7 +15,6 @@ export default function DetailsHeader({ type, source }) {
       Icon = CompanyIcon;
       break;
     case 'career':
-// Temp comment
     default:
       Icon = CareerIcon;
       break;
@@ -35,5 +34,6 @@ export default function DetailsHeader({ type, source }) {
         { renderSourceIdentifier(source) }
       </h1>
     </div>
+// Temp comment
     <BackButton />
   </>)

@@ -3,6 +3,7 @@ import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
 
 export default function Filters(props) {
+// Temp comment
   const {
     handleFilterChange,
     defaultFilterObject,
@@ -15,6 +16,7 @@ export default function Filters(props) {
   } = props;
 
   let filterContainerStyles = 'flex flex-col justify-between gap-xxl-4 pb-9 vw-768:px-14 ';
+  if (marginBottom) {
     filterContainerStyles += `mb-${marginBottom} `;
   }
   return (

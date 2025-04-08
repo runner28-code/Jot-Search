@@ -150,7 +150,6 @@ export default function Footer() {
                 className='w-auto h-auto'
               />
             </a>
-// Temp comment
             <a
               href='https://talent.intulsa.com/'
               target='_blank'

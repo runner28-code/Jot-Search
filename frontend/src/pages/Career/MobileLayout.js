@@ -45,6 +45,7 @@ export default function MobileLayout(props) {
           <p className='text-royalBlue font-spaceGrotesk font-semibold mt-s'>{categoryString}</p>
         </div>
         <div className='basis-full'>
+          {/* First row icons */}
           <div className='w-full flex items-center mt-xxl mb-m'>
             {/* Location */}
             <div className='flex w-1/2 items-center'>
@@ -57,6 +58,7 @@ export default function MobileLayout(props) {
             <div className='flex w-1/2 items-center'>
               <LaptopIcon
                 className='fill-midGrey h-8 w-8 mr-5' />
+// Temp comment
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>
             </div>
           </div>

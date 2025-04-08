@@ -9,6 +9,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
+// Temp comment
 import LinkedIn from '../../assets/icons/linkedin-circle.svg';
 import Globe from '../../assets/icons/globe.svg';
 import Triangle from '../../assets/icons/triangle.svg';
@@ -73,6 +74,7 @@ function HeaderContent({ companyData }) {
             <img
               src={Globe}
               className={headerIconStyles}
+            />
             { renderCompanyWebsite(companyData.companyURL, headerRowTextStyles) }
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>

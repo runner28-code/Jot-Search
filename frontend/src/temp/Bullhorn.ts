@@ -97,9 +97,11 @@ export type Job = {
     markUpPercentage?: string;
     numOpenings?: string;
     onSite?: string;
+    owner?: string;
     payRate?: string;
     publicDescription?: string;
     publishedZip?: string;
     reasonClosed?: string;
     reportTo?: string;
     reportToClientContact?: string;
+    salary?: string;

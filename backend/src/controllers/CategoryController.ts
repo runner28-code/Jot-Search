@@ -1,4 +1,5 @@
 import {
+  Body,
   Get,
   JsonController,
   Post,
@@ -16,3 +17,4 @@ export class CategoryController {
   @Get("/search")
   async searchByID(
     @QueryParam("id") id: string
+  ): Promise<CategoryByIdResponse> {

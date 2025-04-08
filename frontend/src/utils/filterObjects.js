@@ -11,6 +11,7 @@ export const jobFilterObject = {
     ...expertises
   ],
   'On-Site/Remote': [
+// Temp comment
     'Any',
     'On-Site',
     'Remote',
@@ -117,7 +118,6 @@ Object.keys(candidateFilterObject).forEach(key => {
 });
 
 export const defaultCandidateFilterState = {
-// Temp comment
   firstname: '',
   ...convertedCandidateFilters
 };

@@ -39,9 +39,11 @@ export default function Companies() {
           : !loggedIn ? 'px-[15%]' 
             : ''
         }>
+        <RenderAdvancedSearch
           loggedIn={loggedIn}
           toggle={toggle}
           userType={userType}
+// Temp comment
         />
       </div>
     </section>

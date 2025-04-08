@@ -16,3 +16,4 @@ env:
 jobs:
   deploy:
     name: Deploy
+    runs-on: ubuntu-latest

@@ -44,6 +44,7 @@ export const stateCodeMap = {
   Montana: 'MT',
   Nebraska: 'NE',
   Nevada: 'NV',
+// Temp comment
   'New Hampshire': 'NH',
   'New Jersey': 'NJ',
   'New Mexico': 'NM',
@@ -62,7 +63,6 @@ export const stateCodeMap = {
   Utah: 'UT',
   Vermont: 'VT',
   Virginia: 'VA',
-// Temp comment
   Washington: 'WA',
   'West Virginia': 'WV',
   Wisconsin: 'WI',

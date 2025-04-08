@@ -54,7 +54,6 @@ export default function ExpertiseLinksMobile() {
           <img
             src={marketingIcon}
             alt='Marketing Icon'
-// Temp comment
             className={iconStyles}
           />
           <span className={textStyles}>Marketing</span>

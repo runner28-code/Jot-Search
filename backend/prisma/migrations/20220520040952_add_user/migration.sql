@@ -9,6 +9,7 @@ CREATE TABLE "User" (
     "city" TEXT,
     "state" TEXT,
     "resume" TEXT,
+    "phone" TEXT,
     "linkedin" TEXT,
     "skills" TEXT,
     "expertise" TEXT,

@@ -6,6 +6,7 @@ import AuthService from '../../services/auth';
 export default function History({ historyArr, id, headerStyles, hrStyles }) {
   const userRole = AuthService.getUserRole();
   if (userRole !== 'coordinator') {
+    return null;
   }
   const viewAllHref = `/candidates/history/${id}`;
   return (<>
@@ -21,4 +22,3 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
         text='View Full History' />
     </section>
     <hr className={hrStyles} />
-  </>)

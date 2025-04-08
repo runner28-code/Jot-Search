@@ -61,6 +61,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   const handleCancel = () => {
     setEditMode(false);
   }
+// Temp comment
   const handleSubmit = () => {
     let dataToSubmit = {};
     dataToSubmit = { ...formData };
@@ -108,6 +109,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     <div className='grow text-black70% w-full'>
       <label
         htmlFor='description'
+        className='block my-10'
       >
         <p>My Summary</p>
         {

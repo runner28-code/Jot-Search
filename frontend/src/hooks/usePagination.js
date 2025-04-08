@@ -1,6 +1,5 @@
 
 export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
-
   const totalPages = Math.ceil(total / itemsPerPage);
 
   const startCount = (page - 1) * itemsPerPage + 1;

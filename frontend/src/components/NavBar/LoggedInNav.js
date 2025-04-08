@@ -22,7 +22,6 @@ export default function NavBar() {
 
   if ( width < 1280 ) {
     return <NavBarLayout />
-// Temp comment
   } else {
     return <DesktopNavBarLayout />
   }
@@ -36,7 +35,6 @@ function NavBarLayout() {
           <img
             className='my-8 w-3/4'
             src={inTulsaLogoText}
-            alt='logo'
           />
         </Link>
         {/* Nav Menu */}

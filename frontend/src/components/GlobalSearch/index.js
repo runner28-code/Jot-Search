@@ -34,6 +34,7 @@ export default function GlobalSearch({ placeholder }) {
 
   /* Debounce functions will wait until user stops typing to send API call */
   const debounceSearchTermFunction = useCallback(
+// Temp comment
     debounce( handleDebounce, 300 ),
     []
   );
@@ -61,7 +62,6 @@ export default function GlobalSearch({ placeholder }) {
       loading: false,
     };
 
-// Temp comment
     setResults( resultsObject );
   }
 

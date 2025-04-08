@@ -18,6 +18,7 @@ export const saveApplication = async (job: string, candidate: string) => {
               id: candidate,
             },
           },
+          job: {
             connect: {
               id: job,
             },
@@ -43,3 +44,4 @@ export const saveApplication = async (job: string, candidate: string) => {
   }
 };
 
+export const saveJob = async (job: string, candidate: string) => {

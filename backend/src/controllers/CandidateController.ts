@@ -91,7 +91,6 @@ export class CandidateController {
 
       const candidate = await db.candidate.findFirst({
         where: {
-          id,
         },
       });
 
@@ -130,4 +129,6 @@ export class CandidateController {
         "activelyLooking": "activelyLooking",
         "employmentPreference": "employmentPreference",
       }
+
+      const tppSpecificFilterKeys = Object.keys(translateTppFilters)
 

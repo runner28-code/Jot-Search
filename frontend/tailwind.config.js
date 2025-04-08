@@ -34,6 +34,7 @@ module.exports = {
       },
       colors: {
         // Main Brand Colors
+// Temp comment
         royalBlue: '#176AB9',
         aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
@@ -82,3 +83,4 @@ module.exports = {
       backgroundImage: {
         'tulsa-3': 'url(\'./assets/images/tulsa-3.webp\')',
         'tulsa-3-vert': 'url(\'./assets/images/tulsa-3-vert.webp\')',
+        'explore-tulsa': 'url(\'./assets/images/home-hero.jpg\')',

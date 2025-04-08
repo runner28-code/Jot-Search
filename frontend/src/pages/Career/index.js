@@ -23,7 +23,6 @@ export default function CareerPage() {
 
   const isMobile = width < 768;
   const role = AuthService.getUserRole();
-  /* STATE */
   const { id } = useParams();
   const [careerData, setCareerData] = useState({});
 
@@ -69,6 +68,7 @@ export default function CareerPage() {
     >
       { renderNotification(activeData, careerData) }
       {
+        isMobile ?
           <MobileLayout data={data} /> :
           <DesktopLayout data={data} />
       }

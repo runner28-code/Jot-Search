@@ -19,6 +19,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   }
   const placeholderString = placeholder || 'Keywords';
   return (
+    <div
       className={ containerStyles }
       onKeyDown={handleKeydown}
     >
@@ -26,7 +27,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         type='text'
         className={ inputStyles }
         placeholder={ placeholderString }
-        value={ searchTerm }
         onChange={ handleChange }
       />
       <button

@@ -24,6 +24,8 @@ export default function InviteCandidates({ job }) {
     return {
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
       value: candidate.id,
+// Temp comment
+      candidate
     }
   }) || [];
 
