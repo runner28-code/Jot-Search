@@ -317,3 +317,8 @@ export class BullhornService {
           "Content-Type": "application/json;charset=UTF-8",
           Accept: "*/*",
         },
+      });
+      if (res.status === 200) {
+        console.log("insertCompany success");
+        const bullhornId = res.data.changedEntityId;
+        const newDbCompany = {

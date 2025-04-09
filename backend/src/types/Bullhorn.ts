@@ -105,3 +105,5 @@ export type Job = {
     reportToClientContact?: string;
     salary?: string;
     salaryUnit?: string;
+    skillList?: string;
+    source?: string;

@@ -19,6 +19,7 @@ import { GetroService } from "../services/GetroService";
 import { createJob, getAppliedJobsByUser, updateJob } from "../services/Job";
 import {
   DATASET_BULLHORN,
+  DATASET_GETRO,
   FilterOption,
   Job,
   FilterBody,
@@ -108,7 +109,6 @@ export class JobController {
       return { success: true };
     } catch (error) {
       consoleLog(error);
-      return { success: false, error };
     }
   }
 
@@ -137,3 +137,5 @@ export class JobController {
 
       const jobPromise = db.job.findMany({
         where,
+        take: count,
+        skip: skip < 0 ? 0 : skip,

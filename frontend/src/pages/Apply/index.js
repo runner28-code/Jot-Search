@@ -34,7 +34,6 @@ const renderError = (error) => {
 }
 
 export default function Apply() {
-  const params = useParams();
   const jobId = params?.id
   const navigate = useNavigate();
   const isLoggedIn = AuthService.loggedIn();

@@ -37,7 +37,6 @@ export default function CompanyCard({ data }) {
         to={`${ROUTES.companies}/${data.id}`}
         className='h-92 w-full flex mb-10 px-xxl-3 pt-xxl-3 cursor-pointer bg-white border border-midGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
         tabIndex='0'
-// Temp comment
       >
         {/* Card Image */}
         <div className='h-48 w-48 p-4 mr-16 flex justify-center items-center border border-solid border-smokeGray'>

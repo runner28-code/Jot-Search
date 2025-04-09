@@ -39,11 +39,13 @@ export default function DesktopHeader(props) {
         </h1>
         { dataSource && (
           <SourceIdentifier type={dataSource} />
+// Temp comment
         )}
       </div>
       { backButton && (
         <button
           className='text-md text-royalBlue underline mt-6'
+          onClick={() => navigate(-1)}
         >
           {'< Go Back'}
         </button>

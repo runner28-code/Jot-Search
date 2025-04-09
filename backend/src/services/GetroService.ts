@@ -94,3 +94,5 @@ export class GetroService {
                                 result = [];
                             }
                         }
+                        await saveCompanies(result);
+                    }

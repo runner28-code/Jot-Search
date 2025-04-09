@@ -55,7 +55,6 @@ export class UserController {
   /**
    * No-auth route for register page
    * @param user 
-   * @returns 
    */
   @Post("/register")
   async register(@Body() user: User) {
@@ -73,3 +72,5 @@ export class UserController {
       } catch (error) {
         console.error("error syncing to BH");
         console.error(error);
+      }
+      const { result, error } = await register(data);

@@ -105,3 +105,6 @@ export class CompanyController {
   }
 
   @Authorized()
+  @Put()
+  async insert(
+    @Body() body: Company,

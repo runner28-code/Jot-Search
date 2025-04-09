@@ -27,7 +27,6 @@ export default function NavSearch({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
   const [forceHidden, setForceHidden] = useState(false);
-// Temp comment
   const userType = AuthService.getUserRole();
 
   const getFiltersByTab = (tab) => {

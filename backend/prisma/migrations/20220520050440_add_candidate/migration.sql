@@ -20,7 +20,6 @@ CREATE TABLE "Candidate" (
     "degreeList" TEXT,
     "description" TEXT,
     "desiredLocations" TEXT,
-    "disability" TEXT,
     "educationDegree" TEXT,
     "email" TEXT,
     "email2" TEXT,
@@ -30,3 +29,4 @@ CREATE TABLE "Candidate" (
     "ethnicity" TEXT,
     "experience" TEXT,
     "externalID" TEXT,
+    "fax" TEXT,

@@ -2,6 +2,7 @@ import {
   Body,
   Get,
   Post,
+  QueryParam,
   JsonController,
   Authorized,
 } from "routing-controllers";
@@ -16,3 +17,4 @@ export class ClientContactController {
 
   @Authorized()
   @Get("/search")
+  async searchById(@QueryParam("id") id: string) {

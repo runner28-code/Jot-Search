@@ -40,3 +40,4 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     employeeType: data.employeeType,
     experience: data.experience,
     hourlyRate: data.hourlyRate,
+    willRelocate: data.willRelocate,

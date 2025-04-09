@@ -34,7 +34,6 @@ export default function ResultContainer(props) {
     return <h5 className={resultsHeaderStyles}>{header}</h5>;
   }
 
-  function renderFooter() {
     if ( !limit ) {
       return null;
     }

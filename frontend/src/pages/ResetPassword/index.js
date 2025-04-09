@@ -111,6 +111,7 @@ export default function ResetPassword() {
           { renderSuccess() }
           { renderError() }
           <label className={labelStyle}>Set Password</label>
+          <input
             className={inputStyle}
             id='password'
             type='password'

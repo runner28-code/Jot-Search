@@ -21,7 +21,6 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
         if (res && res.length > 0 && `'${res[0].id}'` === id) {
             return true;
         }
-        return false;
     } catch (error) {
         console.log(error);
         return true;
@@ -36,3 +35,4 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
         `;
         const options = {
             query: query,
+            location: 'US',

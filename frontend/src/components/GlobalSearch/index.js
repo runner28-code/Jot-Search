@@ -34,7 +34,6 @@ export default function GlobalSearch({ placeholder }) {
 
   /* Debounce functions will wait until user stops typing to send API call */
   const debounceSearchTermFunction = useCallback(
-// Temp comment
     debounce( handleDebounce, 300 ),
     []
   );
@@ -85,7 +84,6 @@ export default function GlobalSearch({ placeholder }) {
     searchIconStyles: 'h-12 w-12 ml-6 bg-royalBlue rounded-full flex justify-center items-center',
     inputStyles: 'flex-1 h-5/6 vw-480:placeholder:text-md vw-1024:placeholder:text-xl'
   }
-
   return (
     <div className='relative'>
       <div ref={menuRef} >

@@ -26,7 +26,6 @@ export default function ExpertiseLinks() {
           <img
             src={softwareEngineeringIcon}
             alt='Software Engineering Icon'
-// Temp comment
             className={iconStyles}
           />
           <span className={textStyles}>Software &</span>
@@ -55,6 +54,7 @@ export default function ExpertiseLinks() {
           <img
             src={marketingIcon}
             alt='Marketing Icon'
+// Temp comment
             className={iconStyles}
           />
           <span className={textStyles}>Marketing</span>

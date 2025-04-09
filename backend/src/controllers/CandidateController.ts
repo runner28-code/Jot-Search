@@ -91,6 +91,7 @@ export class CandidateController {
 
       const candidate = await db.candidate.findFirst({
         where: {
+          id,
         },
       });
 
@@ -131,4 +132,6 @@ export class CandidateController {
       }
 
       const tppSpecificFilterKeys = Object.keys(translateTppFilters)
+
+      const bothTypesOfUserFilters = ["categoryId", "status", 'experience', 'firstName']
 

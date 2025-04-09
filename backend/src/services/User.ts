@@ -201,3 +201,7 @@ export const addUserHistoryEntries = async ({
             ? updatedUser[typedKey]?.toString()
             : null,
         batchId,
+      };
+    });
+
+  return await db.history.createMany({
