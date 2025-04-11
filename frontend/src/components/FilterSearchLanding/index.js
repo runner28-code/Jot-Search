@@ -33,9 +33,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
       <button
         className='h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl pl-8 pr-14 tracking-wide'
         onClick={ handleSearchClick }
-      >
         <img
-// Temp comment
           src={ searchIcon }
           alt='search'
           className='v-8 w-12 h-12 vw-768:h-10 mr-3 vw-768:mr-5'

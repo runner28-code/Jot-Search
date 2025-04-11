@@ -459,7 +459,6 @@ export default function RegistrationFormInternal(loggedIn) {
             id='terms'
             value={formObj.terms}
             onChange={(e) => handleChange(e.target.name, e.target.checked)}
-            className='mr-4 h-7 w-7'
           />
           <p>
             <span>I have read and accept the </span>

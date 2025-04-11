@@ -221,6 +221,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               className={iconStyles + 'fill-royalBlue'} />
               Email:
           </label>
+          <input 
             type='text'
             onChange={handleInputChange}
             id='email'

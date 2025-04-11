@@ -5,7 +5,6 @@ import FavoriteButton from '../FavoriteButton';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import postingAgeIcon from '../../../assets/icons/calendar.svg';
-// Temp comment
 import clockIcon from '../../../assets/icons/clock.svg';
 import salaryIcon from '../../../assets/icons/salary.svg';
 import featuredIcon from '../../../assets/icons/pyramid.svg';
@@ -38,7 +37,6 @@ export default function CareerCard({ data, active }) {
       key={data.id}
     >
       {
-        width > 768 ?
           <DesktopCard
             dataObj={dataObj}
             active={active}

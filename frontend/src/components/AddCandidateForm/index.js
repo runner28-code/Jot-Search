@@ -241,6 +241,7 @@ export default function RegistrationForm() {
             name='linkedin'
             placeholder='LinkedIn URL' 
             error={errors.includes('linkedin')}
+// Temp comment
           />
           <FormInput
             type='text'

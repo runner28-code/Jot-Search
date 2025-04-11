@@ -37,7 +37,6 @@ module.exports = {
         royalBlue: '#176AB9',
         aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
-        'legal-bg': '#23242D',
         // Neutrals
         powderBlue: '#E4F2FF',
         lightGrey: '#F6F5F6',
@@ -77,6 +76,7 @@ module.exports = {
         charcoalGray: '#333332',
         darkGray: '#292938',
         'black70%': '#000000b3',
+        'black50%': '#00000080',
       },
       backgroundImage: {
         'tulsa-3': 'url(\'./assets/images/tulsa-3.webp\')',

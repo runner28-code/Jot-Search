@@ -27,6 +27,7 @@ export default function PasswordReset({role, candidateData}) {
     <div className='flex flex-col space-y-8 mb-9 border rounded-2xl bg-white p-12'>
       <h3 className='text-xl'>Password</h3>
       <div className='flex flex-col space-y-8'>
+        { role === 'candidate' && (
           <ResetButton
             candidateData={candidateData}
             setType={setType}

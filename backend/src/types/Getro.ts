@@ -24,6 +24,7 @@ export type Company = {
   network_id?: string;
   locations?: string;
   collections?: string;
+};
 
 export type Job = {
   id: string;

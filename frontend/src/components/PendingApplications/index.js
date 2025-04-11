@@ -11,6 +11,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function PendingApplications () {
   const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
+// Temp comment
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
     filteredJobs: [],
@@ -41,7 +42,6 @@ export default function PendingApplications () {
       </div>
       <h2 className='font-spaceGrotesk text-h5 text-white mb-8 text-center'>My Pending Applications</h2>
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
-// Temp comment
         {
           appliedJobsObject.loading ?
             <LoadingSpinner />

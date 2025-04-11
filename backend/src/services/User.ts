@@ -87,6 +87,7 @@ export const register = async (data: User) => {
     }
 
     await db.user.create(savingData);
+
     console.log("success");
 
     if (process.env && process.env.FRONTEND_URL) {

@@ -67,7 +67,6 @@ export default function FeaturedJobs() {
       <div className={ width >= 990 ? viewAllStyles : viewAllStylesMobile }>
         <Link
           to={ROUTES.careers}
-// Temp comment
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           View all
         </Link>

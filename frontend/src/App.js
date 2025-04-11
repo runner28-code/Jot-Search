@@ -31,7 +31,6 @@ function App() {
               path={ROUTES.signup}
               element={<SignUp />} />
             <Route
-              path={ROUTES.login}
               element={<Login />} />
             <Route
               path={ROUTES.landingPage}

@@ -63,7 +63,6 @@ function HeaderContent({ companyData }) {
             <p className={headerRowTextStyles}>{companyData.numEmployees} Employees</p>
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
-// Temp comment
             <img
               src={LinkedIn}
               className={headerIconStyles}
@@ -96,7 +95,6 @@ function HeaderContent({ companyData }) {
 
 HeaderContent.propTypes = {
   companyData: PropTypes.shape({
-    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,
     businessSectorList: PropTypes.string,
