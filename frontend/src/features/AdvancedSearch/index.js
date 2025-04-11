@@ -151,7 +151,6 @@ export default function AdvancedSearch({ disabledTabs }) {
 
   const filterProps = {
     handleFilterChange: handleFilterChange,
-    defaultFilterObject: filterTemplate,
     filterObject: filterObject,
     searchTerm: filterObject.title,
     setSearchTerm: handleSearchChange,

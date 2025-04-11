@@ -21,7 +21,6 @@ export default function ResultContainer(props) {
     agoText = null,
     containerClass = undefined,
     selectableProps = null,
-  } = props;
   const resultsHeaderStyles = 'font-bold w-full text-xl mb-8 ';
   const baseStyles = 'w-full max-w-400 py-5'
   const resultsContainerStyles = containerClass || 'flex flex-col items-center justify-center ';
@@ -34,6 +33,7 @@ export default function ResultContainer(props) {
     return <h5 className={resultsHeaderStyles}>{header}</h5>;
   }
 
+  function renderFooter() {
     if ( !limit ) {
       return null;
     }

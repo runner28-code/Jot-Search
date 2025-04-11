@@ -40,7 +40,6 @@ export default function NavSearch({ placeholder }) {
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
-      return { filtersArr: searchFilters };
     }
     else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});

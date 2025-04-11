@@ -5,7 +5,6 @@ import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
 import FormInput from '../../../components/FormInput';
 import {
   skills as skillChoices,
-// Temp comment
   roles as roleChoices,
 } from '../../../utils/skillHierarchyMap';
 import { experienceMap } from '../../../utils/dbFieldMapping';

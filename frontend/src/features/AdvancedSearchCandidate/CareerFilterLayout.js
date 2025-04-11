@@ -43,6 +43,7 @@ export default function CareerFilterLayout(props) {
   }
 
   const buttonStyles = 'text-white text-sm whitespace-nowrap';
+// Temp comment
   const buttonStylesCareer = 'text-white text-sm whitespace-nowrap';
   return (
     <div className='flex flex-col gap-xxl-4'>
@@ -50,6 +51,7 @@ export default function CareerFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
+          handleSearchClick={handleSearchClick}
           placeholder='Search Careers'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />

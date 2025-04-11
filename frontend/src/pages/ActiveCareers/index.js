@@ -8,7 +8,6 @@ import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import {
   buildSearchFilters
-// Temp comment
 } from '../../utils/filterObjects';
 import AuthService from '../../services/auth';
 
@@ -47,6 +46,7 @@ export default function ActiveCareers() {
       />
       <FilterSearch
         searchTerm={searchTerm}
+// Temp comment
         setSearchTerm={handleSearchChange}
         placeholder={PLACE_HOLDER}
         additionalClasses='w-180 mt-30'

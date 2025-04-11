@@ -48,7 +48,6 @@ async function seedJobs() {
         state: "OK",
         zip: "74008",
         salary: 80000,
-        employmentType: "fulltime",
         onSite: "Hybrid",
         description: "Come join our rockstar team for good money and learning",
         datasource: Datasource.bullhorn as any,

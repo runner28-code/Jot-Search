@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
-// Temp comment
   coordinatorChoices,
   guestChoices
 } from '../SideNav/utils';

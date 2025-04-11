@@ -21,7 +21,6 @@ export default function CareerPage() {
   const location = useLocation();
   const activeData = location.state;
 
-// Temp comment
   const isMobile = width < 768;
   const role = AuthService.getUserRole();
   /* STATE */
@@ -50,6 +49,7 @@ export default function CareerPage() {
     salaryString,
     postingAge,
     role
+// Temp comment
   }
   const loggedIn = AuthService.loggedIn();
 

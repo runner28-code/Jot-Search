@@ -8,6 +8,7 @@ import locationIcon from '../../../assets/icons/placepin.svg';
 import experienceIcon from '../../../assets/icons/star-banner.svg';
 import {
   buildCandidateAddress,
+// Temp comment
   formatAvatarUrl,
   formatYearsExperience,
   buildOccupationString,

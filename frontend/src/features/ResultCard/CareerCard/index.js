@@ -5,6 +5,7 @@ import FavoriteButton from '../FavoriteButton';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import postingAgeIcon from '../../../assets/icons/calendar.svg';
+// Temp comment
 import clockIcon from '../../../assets/icons/clock.svg';
 import salaryIcon from '../../../assets/icons/salary.svg';
 import featuredIcon from '../../../assets/icons/pyramid.svg';

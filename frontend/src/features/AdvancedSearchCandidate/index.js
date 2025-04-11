@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import ResultContainer from '../../features/ResultContainer';
 import TabContainer from '../../components/TabContainer';
 import CandidateFilterLayout from './CandidateFilterLayout';
-// Temp comment
 import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
@@ -55,7 +54,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
   const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
   if (state) {
-    if (state.title) initialFilterState.title = state.title;
     if (state.expertise) initialFilterState.Expertise = state.expertise;
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
   }
