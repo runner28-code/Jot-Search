@@ -64,7 +64,6 @@ export class CompanyController {
         source: DataSource.UNKNOWN,
         message: "unsupported id",
       };
-    }
   }
 
   @Authorized()
@@ -104,7 +103,10 @@ export class CompanyController {
     }
   }
 
+  @Authorized()
   @Put()
   async insert(
     @Body() body: Company,
     @CurrentUser() authUser: User
+  ): Promise<any> {
+    if (authUser.role !== COORDINATOR) {

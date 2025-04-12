@@ -25,7 +25,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
       {!isLoadingContacts && clientContacts?.length === 0 && (
         <p className='opacity-70 text-sm'>No contacts found for {selectedCompany?.name}</p>
       )}
-// Temp comment
       {/* Results */}
       {!isLoadingContacts && clientContacts?.length > 0 && (<>
         <p className='opacity-70 text-sm'>Select the contact(s) you would like to add from {selectedCompany?.name}</p>
@@ -56,4 +55,3 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
         </button>
       </>)}
     </div>
-  )

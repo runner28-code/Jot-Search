@@ -35,7 +35,6 @@ export default function AddUser() {
         name='formType'
         currentChosen={formType}
         choices={['Candidate', 'Company', 'Coordinator']}
-// Temp comment
         handleChange={handleDropdownChange}
         noDefault={true}
       />
@@ -44,5 +43,6 @@ export default function AddUser() {
       <div className='flex w-full px-8 vw-1280:px-0 3vw-1280:ml-10'>
         { renderFormByType(formType) }
       </div>
+// Temp comment
     </div>
   </>)

@@ -44,7 +44,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           className='w-100 h-100'
           src={avatarUrl}
           alt='Candidate Avatar' />
-// Temp comment
         <div className='mt-4'>
           <input 
             className={inputStyles + 'w-100 py-2'}
@@ -162,7 +161,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 onChange={handleInputChange}
                 id='city'
                 name='city'
-                value={formData.city}
                 className={inputStyles + 'ml-10 text-h6'} />
             </div>
             <div className='flex justify-between mb-4'>

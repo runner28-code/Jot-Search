@@ -34,7 +34,6 @@ export const stateCodeMap = {
   Kansas: 'KS',
   Kentucky: 'KY',
   Louisiana: 'LA',
-  Maine: 'ME',
   Maryland: 'MD',
   Massachusetts: 'MA',
   Michigan: 'MI',
@@ -68,4 +67,5 @@ export const stateCodeMap = {
   Wyoming: 'WY',
 };
 
+export function getStateCode(stateName) {
   return stateCodeMap[stateName];

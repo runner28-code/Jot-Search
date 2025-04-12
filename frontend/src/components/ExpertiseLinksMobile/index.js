@@ -63,7 +63,6 @@ export default function ExpertiseLinksMobile() {
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Operations' }}
-// Temp comment
         >
           <img
             src={operationsIcon}

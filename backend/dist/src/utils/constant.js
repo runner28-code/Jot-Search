@@ -62,7 +62,6 @@ const job_filter_exclude_keys = [
     "care",
     "care coordinator",
     "career coach",
-// Temp comment
     "career navigator",
     "carpenter",
     "case management",
@@ -73,6 +72,7 @@ const job_filter_exclude_keys = [
     "chemical",
     "chemist",
     "child",
+// Temp comment
     "circulation",
     "claims",
     "class",
@@ -161,3 +161,4 @@ const job_filter_exclude_keys = [
     "foreperson",
     "forester",
     "forklift",
+    "fraud",

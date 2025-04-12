@@ -7,7 +7,6 @@ export const saveCompanies = async (companies: any[]) => {
             try {
 							console.log(`Savng company with ID = ${company.id}`);
 							const existing = await db.getroCompany.findFirst({
-								where: {
 									id: company.id,
 								},
 							});

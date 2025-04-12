@@ -205,3 +205,5 @@ export const addUserHistoryEntries = async ({
     });
 
   return await db.history.createMany({
+    data: historyRecords,
+  });

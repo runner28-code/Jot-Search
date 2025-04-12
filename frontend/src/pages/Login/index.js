@@ -5,7 +5,6 @@ import FormInput from '../../components/FormInput';
 
 import API from '../../services/API';
 import AuthService from '../../services/auth';
-// Temp comment
 
 export default function Login() {
   const [error, setError] = useState('');
@@ -78,6 +77,7 @@ export default function Login() {
             </button>
             <Link
               to={ROUTES.accountRecovery}
+// Temp comment
               className='text-royalBlue text-sm vw-640:text-ml underline'>
               Forgot Password?
             </Link>

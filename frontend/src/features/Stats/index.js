@@ -33,7 +33,6 @@ export default function Stats({ userType }) {
       default:
         return 30
     }
-// Temp comment
   }
 
   useEffect(async() => {
@@ -59,6 +58,7 @@ export default function Stats({ userType }) {
         'Company Request Introductions': { ...result.companyRequestIntroductions },          
       })
     }
+// Temp comment
   }, [timeframe])
 
   return (

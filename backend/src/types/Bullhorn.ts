@@ -93,6 +93,7 @@ export type Job = {
     location_country_id?: string;
     location_country_name?: string;
     location_country_code?: string;
+    markUpPercentage?: string;
     numOpenings?: string;
     onSite?: string;
     owner?: string;
@@ -106,3 +107,4 @@ export type Job = {
     salaryUnit?: string;
     skillList?: string;
     source?: string;
+    startDate?: string;

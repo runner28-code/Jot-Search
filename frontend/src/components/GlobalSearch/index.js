@@ -89,7 +89,6 @@ export default function GlobalSearch({ placeholder }) {
     <div className='relative'>
       <div ref={menuRef} >
         <SearchBar
-// Temp comment
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder } 

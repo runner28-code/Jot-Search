@@ -16,6 +16,7 @@ export default function BusinessBooming() {
           <span className='text-orangeHeroOverlay'>Learn About Tulsa</span>
         </a>
       </div>
+// Temp comment
       <div className='h-96 bg-tulsa-hero bg-cover'></div>
     </section>
   )

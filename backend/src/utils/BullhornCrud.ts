@@ -24,6 +24,7 @@ export const saveCompanies = async (companies: any[]) => {
   // for (const item of result) {
   //   await db.company.update({
   //     where: {
+  //       id: item.id,
   //     },
   //     data: {
   //       companyURL: item.companyURL ? item.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null
@@ -84,3 +85,6 @@ export const saveCompanies = async (companies: any[]) => {
     return { result: true };
   } catch (error: any) {
     console.log(error.message);
+    return { result: false, error };
+  }
+};

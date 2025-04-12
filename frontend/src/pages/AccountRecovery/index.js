@@ -67,7 +67,6 @@ export default function AccountRecovery() {
           <FormInput
             type='email'
             name='email'
-// Temp comment
             label='Login Email'
           />
           <div className='flex justify-between items-center vw-640:items-end mb-22'>
@@ -82,6 +81,7 @@ export default function AccountRecovery() {
       </div>
       {/* Assistance call-to-action */}
       <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
+// Temp comment
         <span>Need Help? Just ask </span>
         <a
           href='mailto:help@intulsa.com'

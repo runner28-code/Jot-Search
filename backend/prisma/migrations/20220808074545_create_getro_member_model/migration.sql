@@ -16,7 +16,6 @@ CREATE TABLE "UserTalentCollection" (
     "questionnaire" TEXT,
     "approved_by_collection" BOOLEAN,
     "source" TEXT,
-    "onboarding_reminder_sent_at" TEXT,
     "invited_by" TEXT,
     "verified_by" TEXT,
     "invitation_reminder_sent_at" TEXT,

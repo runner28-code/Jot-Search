@@ -322,3 +322,6 @@ export class BullhornService {
         console.log("insertCompany success");
         const bullhornId = res.data.changedEntityId;
         const newDbCompany = {
+          ...company,
+          id: `bl-${bullhornId}`,
+          address_address1: company.address?.address1 || null,

@@ -160,3 +160,5 @@ const job_filter_exclude_keys = [
   "forklift",
   "fraud",
   "front desk",
+  "garbage",
+  "garden",

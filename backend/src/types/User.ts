@@ -24,7 +24,6 @@ export type User = {
   roles?: string;
 
   description?: string;
-  phone?: string;
   status?: string;
   username?: string;
   logo?: string;

@@ -14,7 +14,6 @@ import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../
 import {
   ethnicityChoices,
   defaultState,
-// Temp comment
   defaultCareerState,
   renderButtonOrLoading,
   formatApplicationObject,

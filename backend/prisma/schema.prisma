@@ -243,3 +243,6 @@ model Company {
   revuenue String?
   status   String?
 
+  logo String?
+
+  taxRate       Float?

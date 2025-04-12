@@ -38,7 +38,6 @@ export default function Applications() {
     } else {
       setSelectedApplications([...selectedApplications, careerId]);
     }
-  }
 
   function removeSelectedApplications() {
     const currentHiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
@@ -53,7 +52,6 @@ export default function Applications() {
 
   const { width } = useWindowDimensions();
   return (
-// Temp comment
     <section>
       <PageHeader
         headerText='My InTulsa Featured Applications'

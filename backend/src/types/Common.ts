@@ -43,5 +43,4 @@ export type FilterOption = {
   key: string;
   value: string;
 };
-
 export type AdvancedFilterOption = {

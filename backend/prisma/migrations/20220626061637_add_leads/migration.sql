@@ -20,3 +20,4 @@ CREATE TABLE "Lead" (
     "dateLastComment" TIMESTAMP(3),
     "dateLastModified" TIMESTAMP(3),
     "dateLastVisited" TIMESTAMP(3),
+    "description" TEXT,

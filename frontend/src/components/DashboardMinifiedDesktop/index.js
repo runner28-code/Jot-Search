@@ -13,7 +13,6 @@ import filterIcon from '../../assets/images/filter-toggle.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
 
-export default function DashboardMinifiedDesktop ({ location }) {
 
   if( location === 'career' ) {
     return (
@@ -21,7 +20,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
     )
   }
   if( location === 'companies' ) {
-// Temp comment
     return (<>
       <h1>Companies</h1>
     </>)

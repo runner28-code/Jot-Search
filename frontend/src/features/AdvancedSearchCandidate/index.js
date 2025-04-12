@@ -59,7 +59,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
   }
 
-  const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */

@@ -18,3 +18,4 @@ export class CategoryController {
   async searchByID(
     @QueryParam("id") id: string
   ): Promise<CategoryByIdResponse> {
+    try {

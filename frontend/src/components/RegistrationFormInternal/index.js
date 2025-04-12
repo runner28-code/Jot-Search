@@ -94,6 +94,7 @@ export default function RegistrationFormInternal(loggedIn) {
         return;
       }
       formObj.resume = resumeResponse;
+
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
 
