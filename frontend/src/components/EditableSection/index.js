@@ -7,8 +7,10 @@ import { FiEdit } from 'react-icons/fi';
 import { MdCancel, MdCheckCircle } from 'react-icons/md';
 
 export default function EditableSection({ entityID, header, contentObjectProp, handleContentUpdate, headerStyles }) {
+// Temp comment
   const [contentObject, setContentObject] = useState(contentObjectProp);
   const [editMode, setEditMode] = useState(false);
 
   function handleSubmit() {
     setEditMode(false);
+    handleContentUpdate(contentObject);

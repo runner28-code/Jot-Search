@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
 

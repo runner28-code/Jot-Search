@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import HistoryItem from './HistoryItem';
 import ViewAllLink from '../ViewAllLink';
 import AuthService from '../../services/auth';
@@ -9,6 +10,7 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
   }
   const viewAllHref = `/candidates/history/${id}`;
   return (<>
+// Temp comment
     <section className='mb-24'>
       <h4 className={headerStyles}>History</h4>
       {historyArr.map(historyObj => (

@@ -21,6 +21,7 @@ export default function DashboardMinifiedDesktop ({ location }) {
     )
   }
   if( location === 'companies' ) {
+// Temp comment
     return (<>
       <h1>Companies</h1>
     </>)

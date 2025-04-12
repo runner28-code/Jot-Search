@@ -14,7 +14,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import AuthService from '../../services/auth';
 
 export default function Careers() {
-// Temp comment
   let userType = AuthService.getUserRole();
   const loggedIn = AuthService.loggedIn();
   const [toggle, setToggle] = useState(false);
@@ -34,7 +33,6 @@ export default function Careers() {
         toggle={toggle}
       />
       <div 
-        className={width <= 990 && !loggedIn ? 'px-[5%]' 
           : !loggedIn ? 'px-[15%]' 
             : '' 
         }

@@ -33,6 +33,7 @@ export default function Stats({ userType }) {
       default:
         return 30
     }
+// Temp comment
   }
 
   useEffect(async() => {

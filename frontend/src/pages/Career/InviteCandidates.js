@@ -6,6 +6,7 @@ import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
+// Temp comment
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
 
 export default function InviteCandidates({ job }) {

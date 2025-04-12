@@ -68,5 +68,4 @@ export const stateCodeMap = {
   Wyoming: 'WY',
 };
 
-export function getStateCode(stateName) {
   return stateCodeMap[stateName];

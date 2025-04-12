@@ -57,7 +57,6 @@ export default function CandidateFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
     checkboxFilters.forEach(filter => {
-// Temp comment
       checkboxFilterObject[filter] = filterObject[filter];
     });
   }

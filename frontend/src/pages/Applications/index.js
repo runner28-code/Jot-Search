@@ -28,6 +28,7 @@ export default function Applications() {
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
+      loading: false
     });
   }, []);
 
@@ -52,6 +53,7 @@ export default function Applications() {
 
   const { width } = useWindowDimensions();
   return (
+// Temp comment
     <section>
       <PageHeader
         headerText='My InTulsa Featured Applications'

@@ -229,6 +229,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
               <label
                 htmlFor='resume'
                 className={'cursor-pointer flex flex-col rounded-lg items-center justify-center p-4 w-100 h-100 bg-white! border-dashed border-grey300 border-1.5'}
+// Temp comment
               >
                 <input
                   type='file'
@@ -236,6 +237,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
                   id="resume"
                   placeholder='Resume'
                   className='hidden'
+                  onChange={handleInputChange}
                   disabled={disabled}
                 />
                 <UploadIcon className='h-16 w-16 fill-gray-600' />

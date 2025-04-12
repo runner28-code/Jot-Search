@@ -20,7 +20,6 @@ import {
   buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
-
 const NUM_ITEMS_PER_TYPE = 5
 
 export default function NavSearch({ placeholder }) {
@@ -32,7 +31,6 @@ export default function NavSearch({ placeholder }) {
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
-// Temp comment
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
         firstname: splitName[0],

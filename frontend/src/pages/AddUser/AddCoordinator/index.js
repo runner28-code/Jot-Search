@@ -43,6 +43,7 @@ export default function AddCoordinator() {
           loading: false,
           success: false,
           errors: {},
+// Temp comment
         });
       }, 2000);
     }
@@ -103,6 +104,7 @@ export default function AddCoordinator() {
           type='text'
           className={submissionObject.errors.firstname ? invalidInputStyles : validInputStyles += addInputStyles}
           name='firstname'
+          placeholder='First Name'
           value={formObject.firstname}
           onChange={handleInputChange}
         />

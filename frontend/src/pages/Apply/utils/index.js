@@ -14,7 +14,6 @@ export const jobReferralChoices = [
   'Google',
   'Friend',
   'Other',
-// Temp comment
 ];
 
 export const defaultCareerState = {

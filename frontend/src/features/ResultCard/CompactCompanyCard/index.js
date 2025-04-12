@@ -12,6 +12,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
 
   return (
     <div
+// Temp comment
       className='relative'
       key={data.id}
     >
@@ -49,7 +50,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           <FavoriteButton
             type={'company'}
             data={data}
-// Temp comment
             isFavoriteOverride={isFavoriteOverride} />
       }
     </div>

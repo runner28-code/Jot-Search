@@ -3,7 +3,6 @@ import { useState } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CareerCard from '../ResultCard/CareerCard';
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
-import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 
 const ITEMS_PER_PAGE = 5;
 

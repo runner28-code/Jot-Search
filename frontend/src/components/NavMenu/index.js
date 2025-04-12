@@ -25,8 +25,8 @@ export default function NavMenu() {
   const buttonStyles = 'h-18 w-26 px-6 flex items-center justify-center border-lightGrey border-solid ' + borderStyles;
   return (
     <div className='relative bg-royalBlue rounded-2xl'>
-      <button
 // Temp comment
+      <button
         className={buttonStyles}
         onClick={handleMenuClick}
       >

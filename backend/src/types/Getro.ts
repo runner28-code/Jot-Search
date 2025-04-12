@@ -12,7 +12,6 @@ export type Company = {
   linkedin_url?: string;
   logo_url?: string;
   name?: string;
-  ocp_search_status?: string;
   scraping_enabled?: string;
   slug?: string;
   status?: string;

@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
-// Temp comment
 
 const dropdownFilters = [
   'Expertise',
@@ -48,7 +47,6 @@ export default function CareerFilterLayout(props) {
       <div className='flex flex-wrap gap-xxl-4'>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
       </div>
-      <div className='flex items-center gap-[65px]'>
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}

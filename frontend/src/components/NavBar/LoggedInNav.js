@@ -12,6 +12,7 @@ import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
+  guestChoices,
   findSelectedFromPath
 } from '../SideNav/utils';
 import { useCandidateContext } from '../../services/CandidateContext';
@@ -42,6 +43,7 @@ function NavBarLayout() {
           <div className='mr-8'>
             { renderNavSearch() }
           </div>
+// Temp comment
           {/* Dropdown Menu */}
           <DropdownMenu />
         </div>

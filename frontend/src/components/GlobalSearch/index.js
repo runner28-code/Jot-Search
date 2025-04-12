@@ -64,6 +64,7 @@ export default function GlobalSearch({ placeholder }) {
     setResults( resultsObject );
   }
 
+  /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');
   }, [location]);
@@ -88,6 +89,7 @@ export default function GlobalSearch({ placeholder }) {
     <div className='relative'>
       <div ref={menuRef} >
         <SearchBar
+// Temp comment
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder } 

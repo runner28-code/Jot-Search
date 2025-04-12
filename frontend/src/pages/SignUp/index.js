@@ -7,7 +7,6 @@ export default function SignUp() {
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {
-// Temp comment
     return (
       <main className='pb-24'>
         <div className='flex flex-col justify-center items-center'>
@@ -30,7 +29,6 @@ export default function SignUp() {
     )
   }
 
-  return (
     <main className='-mt-28 bg-signup-page-hero bg-contain bg-no-repeat'>
       <div className='pt-40 flex flex-col justify-center items-center'>
         <div className='relative h-24 w-26 mb-15'>
