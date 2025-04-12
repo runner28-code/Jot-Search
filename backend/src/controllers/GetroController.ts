@@ -2,5 +2,5 @@ import { Controller, Param, Body, Get, Post, Put, Delete, QueryParam, Authorized
 import { GetroService } from '../services/GetroService';
 
 @Controller()
-  @Authorized()
+export class GetroController {
   @Get('/getro/companies')

@@ -37,6 +37,7 @@ export default function CareerCard({ data, active }) {
       key={data.id}
     >
       {
+        width > 768 ?
           <DesktopCard
             dataObj={dataObj}
             active={active}
@@ -47,7 +48,6 @@ export default function CareerCard({ data, active }) {
             active={active}
           />
       }
-      <FavoriteButton
         type={'job'}
         data={data} />
     </div>

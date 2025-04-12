@@ -72,7 +72,6 @@ export const candidateFilterObject = {
   ],
   'Remote Availability': [
     'Any',
-// Temp comment
     'Remote',
     'On Site',
     'Hybrid'
@@ -128,7 +127,6 @@ export function buildSearchFilters(filterObject) {
   const searchFilters = [];
   Object.keys(filterObject).forEach(key => {
     if ( !anyValues.includes(filterObject[key]) ) {
-      let filterKey = key.toLowerCase();
       if ( key === 'On-Site/Remote' ) {
         filterKey = 'onSite';
       } else if ( key === 'companyId' ) {

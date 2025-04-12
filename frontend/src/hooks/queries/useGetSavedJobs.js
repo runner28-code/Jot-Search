@@ -8,7 +8,7 @@ export const prefetchJobs = async ({userId, count, page}) => {
 export const useGetSavedJobs = ({ count, page, userId, enabled = true }) => {
   const { data, error, isLoading } = useQuery(
     getJobsKey({userId, count, page}),
-    { enabled }
+    () => getSavedJobs(userId, count, page),
   );
 
   return { savedJobs: data, total: data?.total || 0, error, isLoading };

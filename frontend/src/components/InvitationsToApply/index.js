@@ -5,6 +5,7 @@ import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import { getInvitationsToApply } from '../../services/API';
 
 
+export default function InvitationsToApply () {
   const profile = AuthService.getProfile();
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
@@ -35,7 +36,6 @@ import { getInvitationsToApply } from '../../services/API';
       <h2 className='font-spaceGrotesk text-h5 text-zinc-500 mb-8'>Latest Invitations To Apply</h2>
       {!appliedJobsObject.loading && !appliedJobsObject.jobs?.length ? <span className='text-center font-spaceGrotesk text-zinc-500 text-xl'>No invitations to apply</span> :
         (<div className='w-full max-w-400 py-5 grid grid-cols-3 gap-16'>
-          {
             appliedJobsObject.loading ?
               <LoadingSpinner />
               : appliedJobsObject.jobs.slice(0, 2).map((career, index) => {

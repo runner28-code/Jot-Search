@@ -89,6 +89,7 @@ export const mockCandidateStats = {
   },
 }
 
+// Temp comment
 export const mockCompanyStats = {
   'Active Career Posts': {
     'Today': {

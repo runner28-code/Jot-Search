@@ -35,6 +35,7 @@ export default function ExpertiseLinks() {
         <Link
           to={ROUTES.careers}
           className={linkStyles}
+          state={{ Expertise: 'Sales & Biz Dev' }}
         >
           <img
             src={salesAndBizDevIcon}

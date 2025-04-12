@@ -111,3 +111,4 @@ export default function Company() {
         />
       </div>
     </div>
+  )

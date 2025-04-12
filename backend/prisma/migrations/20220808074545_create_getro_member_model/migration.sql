@@ -6,6 +6,7 @@ CREATE TABLE "UserTalentCollection" (
     "status" TEXT,
     "approved_at" TEXT,
     "approved_by" TEXT,
+    "created_at" TEXT,
     "updated_at" TEXT,
     "declined_by" TEXT,
     "declined_at" TEXT,
@@ -20,4 +21,3 @@ CREATE TABLE "UserTalentCollection" (
     "verified_by" TEXT,
     "invitation_reminder_sent_at" TEXT,
     "verified_at" TEXT,
-    "visibility" TEXT,

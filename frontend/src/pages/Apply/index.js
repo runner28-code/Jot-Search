@@ -17,7 +17,6 @@ import {
   defaultCareerState,
   renderButtonOrLoading,
   formatApplicationObject,
-  updateCandidateIfNeeded,
   Checkbox
 } from './utils';
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -128,5 +127,4 @@ export default function Apply() {
 
   function handleSubmit(e) {
     e.preventDefault();
-// Temp comment
     setSubmissionObject({ loading: true });

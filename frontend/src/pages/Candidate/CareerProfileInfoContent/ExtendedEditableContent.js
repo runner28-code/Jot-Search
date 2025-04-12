@@ -236,7 +236,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
                   id="resume"
                   placeholder='Resume'
                   className='hidden'
-                  onChange={handleInputChange}
                   disabled={disabled}
                 />
                 <UploadIcon className='h-16 w-16 fill-gray-600' />

@@ -13,6 +13,7 @@ export default function CareerFavorite () {
   const { savedCompanies, isLoading } = useGetSavedCompanies({userId: user_id});
   const { width } = useWindowDimensions();
   return(
+// Temp comment
     <div className='flex items-center flex-col justify-center bg-white rounded-lg py-24 px-12 vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
       <div className='relative w-24 mb-8'>
         <div className='bg-indigoSquare w-12 h-12' />
@@ -51,6 +52,7 @@ export default function CareerFavorite () {
           to={ROUTES.careers}
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
             View All
+        </Link>
       </div>
     </div>
   )

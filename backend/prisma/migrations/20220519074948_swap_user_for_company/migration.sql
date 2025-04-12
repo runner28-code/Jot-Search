@@ -19,7 +19,6 @@ ALTER TABLE "User" DROP CONSTRAINT "User_departmentId_fkey";
 -- DropTable
 DROP TABLE "User";
 
--- CreateTable
 CREATE TABLE "Company" (
     "id" TEXT NOT NULL,
     "name" TEXT NOT NULL,
@@ -31,4 +30,5 @@ CREATE TABLE "Company" (
     "billingPhone" TEXT,
     "branchId" TEXT,
     "businessSectorList" TEXT[],
+    "companyDescription" TEXT,
     "companyURL" TEXT,
