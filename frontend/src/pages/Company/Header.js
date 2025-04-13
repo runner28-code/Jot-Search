@@ -106,7 +106,6 @@ HeaderContent.propTypes = {
     employeeString: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,
-    numEmployees: PropTypes.number,
   })
 }
 

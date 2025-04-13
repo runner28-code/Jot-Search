@@ -55,3 +55,4 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
         </button>
       </>)}
     </div>
+  )

@@ -25,7 +25,6 @@ input[type="text"].placeholder-spaceGrotesk::placeholder {
 }
 
 input[type="text"].placeholder-18::placeholder {
-  font-size: 1.8rem;
 }
 
 input[type="text"].placeholder-24::placeholder {
@@ -43,6 +42,7 @@ button:focus,
 
 input[type=checkbox] {
   accent-color: #2ea248;
+}
 
 /* Tailwind Component Classes */
 @layer components {

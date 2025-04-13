@@ -42,7 +42,6 @@ module.exports = {
         powderBlue: '#E4F2FF',
         lightGrey: '#F6F5F6',
         footerGrey: '#EBEBEB',
-// Temp comment
         grey300: '#D0D5DD',
         grey700: '#344054',
         midGrey: '#94949D',

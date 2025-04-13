@@ -59,6 +59,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
   }
 
+  const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
@@ -74,6 +75,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       return { filtersArr: searchFilters };
 
     } else if (tab === 'jobs') {
+// Temp comment
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
     } else {

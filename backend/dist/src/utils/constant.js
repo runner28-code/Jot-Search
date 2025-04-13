@@ -37,7 +37,6 @@ const job_filter_exclude_keys = [
     "bartender",
     "baseball",
     "beauty",
-    "behavior",
     "behavior coach",
     "bilingual",
     "billing",
@@ -72,7 +71,6 @@ const job_filter_exclude_keys = [
     "chemical",
     "chemist",
     "child",
-// Temp comment
     "circulation",
     "claims",
     "class",

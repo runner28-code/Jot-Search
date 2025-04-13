@@ -17,6 +17,7 @@ export default function DetailsHeader({ type, source }) {
     case 'career':
     default:
       Icon = CareerIcon;
+      break;
   }
   const titleCasedType = type.charAt(0).toUpperCase() + type.slice(1);
   let headerText
@@ -33,5 +34,6 @@ export default function DetailsHeader({ type, source }) {
         { renderSourceIdentifier(source) }
       </h1>
     </div>
+// Temp comment
     <BackButton />
   </>)

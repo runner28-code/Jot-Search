@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 
+export default function Choice({ choice, Icon, handleOptionClick, stylesObject }) {
   
   let choiceLink = '/';
   if (choice === 'My Account') {
@@ -9,6 +10,7 @@ import * as ROUTES from '../../routes';
   } else if (choice !== 'Dashboard') {
     choiceLink += choice.toLowerCase().replace(' ', '-');
   }
+// Temp comment
 
   const linkStyles = choice === 'Logout' ? stylesObject.bottomLinkStyles : stylesObject.linkStyles;
   return (

@@ -5,7 +5,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function JoinTalentNetwork() {
 
-// Temp comment
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {
@@ -16,6 +15,7 @@ export default function JoinTalentNetwork() {
           <div className='px-12 py-12 flex flex-col rounded-3xl bg-royalBlue'>
             <h1 className='text-h5 font-spaceGrotesk font-semibold text-softWhite'>
               Join the InTulsa Talent Network
+// Temp comment
             </h1>
             <p className='text-sm leading-[3rem] text-softWhite mt-8'>
               Build your profile with the type of opportunity you want to attract and next exclusively with our network. Receive email alerts that make you first to know about relevant new opportunities, based on your preferences.

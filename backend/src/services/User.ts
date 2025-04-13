@@ -69,7 +69,6 @@ export const register = async (data: User) => {
     }
 
     const user = justifyData(data, USERKEYS);
-    const existing = await isExistUser("email", user.email);
 
     if (existing) {
       console.log("user exists");

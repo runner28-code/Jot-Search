@@ -19,7 +19,6 @@ export default function InviteToCareer({ candidate }) {
 
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
-// Temp comment
   const jobOptions = jobs?.map(job => {
     return {
       label: job.title,

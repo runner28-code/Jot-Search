@@ -1,4 +1,3 @@
-export type User = {
   id?: string;
   externalId?: string;
   firstname?: string;
@@ -24,6 +23,7 @@ export type User = {
   roles?: string;
 
   description?: string;
+  phone?: string;
   status?: string;
   username?: string;
   logo?: string;

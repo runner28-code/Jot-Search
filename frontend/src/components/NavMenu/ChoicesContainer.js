@@ -37,9 +37,9 @@ export default function ChoicesContainer(props) {
     { userRole === 'guest' ? 
       <LoggedOutButtons 
         handleOptionClick={handleOptionClick}
-// Temp comment
         stylesObject={stylesObject} /> 
       :
       null
+// Temp comment
     }
   </>)

@@ -5,7 +5,9 @@ exports.JobFilter = {
     bullhorn: {
         jobs_id: "jobs.id",
         title: "title",
+        skill: "skillList",
         city: "address_city",
+// Temp comment
         employmentType: "employmentType",
         onSite: "onSite",
         yearsRequired: "yearsRequired",

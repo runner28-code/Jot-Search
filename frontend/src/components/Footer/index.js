@@ -27,7 +27,6 @@ export default function Footer() {
       <div className='flex py-24 px-[5%] items-center justify-center space-x-10 bg-royalBlue'>
         <a href={ROUTES.linkedin}>
           <img
-// Temp comment
             src={linkedin}
             className={socialIconStyleMobile}
           />
@@ -275,7 +274,6 @@ function NavFooter() {
         >
           Operations Job Openings
         </a>
-        <a
           href="/careers"
           className={linkStyle}
         >
