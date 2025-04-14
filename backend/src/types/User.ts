@@ -1,3 +1,4 @@
+export type User = {
   id?: string;
   externalId?: string;
   firstname?: string;
@@ -26,7 +27,6 @@
   phone?: string;
   status?: string;
   username?: string;
-  logo?: string;
 
   companyId?: string;
   companyName?: string;

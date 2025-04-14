@@ -16,7 +16,6 @@ import AuthService from '../../../services/auth';
 export default function CareerCard({ data, active }) {
   const categoryString = data.category?.name.toUpperCase() || 'CATEGORY N/A';
   const salaryString = buildSalaryString(data.salary, data.salaryUnit)
-// Temp comment
   const postingAge = calculatePostingAge(data.createdAt);
   const addressString = buildCareerAddress(data.city, data.state);
   const role = AuthService.getUserRole();
@@ -44,6 +43,7 @@ export default function CareerCard({ data, active }) {
             active={active}
           />
           :
+// Temp comment
           <MobileCard
             dataObj={dataObj}
             active={active}

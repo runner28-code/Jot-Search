@@ -1,3 +1,3 @@
-ALTER TABLE "User" ADD COLUMN     "departmentId" TEXT;
+-- AlterTable
 
 -- CreateTable

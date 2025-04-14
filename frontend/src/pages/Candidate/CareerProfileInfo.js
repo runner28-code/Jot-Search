@@ -5,6 +5,7 @@ import { FiEdit } from 'react-icons/fi';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 const iconStyles = 'w-12 h-12 mr-5 ';
+
 export default function CareerProfileInfo({ candidateData, handleCandidateUpdate, role }) {
   const [editMode, setEditMode] = useState(false);
   return (
@@ -13,6 +14,7 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
       <div className='flex flex-row justify-between items-center'>
         <h3 className='text-h5 font-medium mb-15 text-black70% font-spaceGrotesk'>Career Profile Info</h3>
         { (!editMode && role !== 'company') && 
+// Temp comment
           renderEditIcon(candidateData, setEditMode)
         }
       </div>

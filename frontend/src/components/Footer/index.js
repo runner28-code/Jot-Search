@@ -189,6 +189,7 @@ export default function Footer() {
               Privacy Policy
           </a>
           <span> | </span>
+// Temp comment
           <a
             href={ROUTES.termsOfService}
             className='underline'
@@ -274,6 +275,7 @@ function NavFooter() {
         >
           Operations Job Openings
         </a>
+        <a
           href="/careers"
           className={linkStyle}
         >

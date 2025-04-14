@@ -40,6 +40,7 @@ export const defaultState = {
   veteran: '',
   loading: true
 }
+// Temp comment
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
   function handleChange(e) {

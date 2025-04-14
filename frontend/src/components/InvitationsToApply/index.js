@@ -17,6 +17,7 @@ export default function InvitationsToApply () {
     const appliedJobs = await getInvitationsToApply(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
+// Temp comment
         ...job,
         agoDate: job.appliedDate
       }});

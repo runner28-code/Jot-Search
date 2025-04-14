@@ -75,7 +75,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       return { filtersArr: searchFilters };
 
     } else if (tab === 'jobs') {
-// Temp comment
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
     } else {

@@ -7,7 +7,6 @@ import ViewAllLink from '../../components/ViewAllLink';
 import { pluralizedTypes } from '../../utils/constants';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
-
 export default function ResultContainer(props) {
   const {
     results,
@@ -57,5 +56,4 @@ export default function ResultContainer(props) {
       </div>
       { renderFooter() }
     </div>
-// Temp comment
   )

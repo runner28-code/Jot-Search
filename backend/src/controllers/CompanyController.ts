@@ -10,6 +10,7 @@ import {
 } from "routing-controllers";
 import { BigQueryService } from "../services/BigQueryService";
 import { BullhornService } from "../services/BullhornService";
+import { getSavedCompanies, saveCompany } from "../services/Company";
 import {
   DATASET_BULLHORN,
   DATASET_GETRO,
@@ -90,7 +91,6 @@ export class CompanyController {
     try {
       const candidates_list = await getCandidatesList(body.candidates_ids);
       return {
-        result: await sendCandidatesToEmployers(
           candidates_list,
           body.employers_emails
         )

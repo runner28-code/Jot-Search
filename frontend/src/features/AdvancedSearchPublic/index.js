@@ -15,6 +15,7 @@ import {
   jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,
+// Temp comment
   buildSearchFilters
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
@@ -72,7 +73,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
 
-// Temp comment
     } else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };

@@ -8,7 +8,6 @@
 ALTER TABLE "Candidate" DROP COLUMN "externalID",
 ADD COLUMN     "externalId" TEXT;
 
--- CreateTable
 CREATE TABLE "ClientContact" (
     "id" TEXT NOT NULL,
     "address_address1" TEXT,
@@ -17,4 +16,5 @@ CREATE TABLE "ClientContact" (
     "address_state" TEXT,
     "address_zip" TEXT,
     "address_country_id" TEXT,
+    "category" TEXT,
     "certifications" TEXT,

@@ -64,6 +64,7 @@ export default function CareerPage() {
     />
     <div 
       className={ width <= 990 ? containerStyles
+        : loggedIn ? containerStyles 
           : containerStyles + ' px-[15%]'}
     >
       { renderNotification(activeData, careerData) }

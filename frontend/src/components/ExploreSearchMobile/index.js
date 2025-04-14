@@ -12,6 +12,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     'On-Site/Remote': 'Any Work Setting',
     expertise: 'Any Expertise',
   });
+// Temp comment
 
   function handleSearchClick() {
     const params = {};
@@ -59,4 +60,5 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
         placeholder='Search careers or companies'
         additionalClasses='mb-8'
       />
+    </div>
   )

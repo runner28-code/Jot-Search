@@ -99,7 +99,6 @@ export const candidateFilterObject = {
   ],
   'Status': [
     'Any',
-    'Active',
     'New Lead',
     'Warm Lead',
     'Passive',

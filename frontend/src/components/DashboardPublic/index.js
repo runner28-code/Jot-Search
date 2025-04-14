@@ -8,6 +8,7 @@ import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
+// Temp comment
 
 export default function DashboardPublic({togglePassState}) {
   const { width } = useWindowDimensions();
