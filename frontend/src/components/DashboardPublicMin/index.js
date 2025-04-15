@@ -41,7 +41,6 @@ export default function DashboardPublicMin({type}) {
             className='text-white underline text-lg'
             onClick={() => navigate(-1)}
           >
-// Temp comment
           Back
           </button>
         </div>

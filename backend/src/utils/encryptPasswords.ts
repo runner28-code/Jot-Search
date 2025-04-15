@@ -15,3 +15,4 @@ import { DATASET_MAIN, Tables } from "../types/Common";
             SELECT id,email,password FROM \`${DATASET_MAIN}.${Tables.USER}\`
             WHERE email='test9@email.com' or email='v.deserio3@outlook.com' or email='test2@email.com'
         `;
+        const options = {

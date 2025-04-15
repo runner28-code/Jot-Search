@@ -18,6 +18,7 @@ export default function FormInput(props) {
     label,
     placeholder,
     value,
+    required,
     onChange,
     choices,
     choiceObject,

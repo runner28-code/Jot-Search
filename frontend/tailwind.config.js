@@ -41,7 +41,6 @@ module.exports = {
         // Neutrals
         powderBlue: '#E4F2FF',
         lightGrey: '#F6F5F6',
-        footerGrey: '#EBEBEB',
         grey300: '#D0D5DD',
         grey700: '#344054',
         midGrey: '#94949D',
@@ -87,3 +86,4 @@ module.exports = {
         'tulsa-hero': 'url(\'./assets/images/lifeintulsa.jpg\')',
         'signup-page-hero': 'url(\'./assets/images/tulsanetwork.jpg\')',
         'login-page-hero': 'url(\'./assets/images/networklogin.jpg\')',
+      },

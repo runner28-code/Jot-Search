@@ -35,7 +35,6 @@ export default function CareerCard({ data, active }) {
     <div
       className='relative w-full'
       key={data.id}
-// Temp comment
     >
       {
         width > 768 ?

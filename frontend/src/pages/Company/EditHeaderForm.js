@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { MdLocationOn, MdCancel, MdCheckCircle } from 'react-icons/md';
 import PropTypes from 'prop-types';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
@@ -128,6 +127,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 htmlFor='address1'>
               Address 1:
               </label>
+              <input 
                 type='text'
                 onChange={handleInputChange}
                 id='address1'

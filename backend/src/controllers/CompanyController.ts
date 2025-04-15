@@ -86,7 +86,6 @@ export class CompanyController {
       return {
         result: false,
         error: "You should be a coordinator for sending candidates to employers",
-      };
     }
     try {
       const candidates_list = await getCandidatesList(body.candidates_ids);
@@ -113,3 +112,5 @@ export class CompanyController {
     if (authUser.role !== COORDINATOR) {
       return {
         result: false,
+        error: "You should be a coordinator for creating a company",
+      };

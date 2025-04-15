@@ -59,7 +59,6 @@ const job_filter_exclude_keys = [
   "canvasser",
   "care",
   "care coordinator",
-  "career coach",
   "career navigator",
   "carpenter",
   "case management",
@@ -164,3 +163,5 @@ const job_filter_exclude_keys = [
   "garden",
   "gardener",
   "gift stocker",
+  "giving",
+  "goods",

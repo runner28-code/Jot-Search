@@ -82,7 +82,6 @@ export const candidateChoices = [
   choices.careers,
   choices.companies,
   choices.talentInTulsa,
-  choices.logout
 ];
 
 export const companyChoices = [
@@ -96,7 +95,6 @@ export const coordinatorChoices = [
   choices.dashboard,
   choices.candidates,
   choices.careers,
-// Temp comment
   choices.companies,
   choices.addUser,
   choices.logout

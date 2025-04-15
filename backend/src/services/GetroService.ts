@@ -21,7 +21,6 @@ export class GetroService {
         return GetroService.client;
     }
 
-    getOptions() {
         return {
             headers: {
                 'X-User-Email': this.email,
@@ -85,6 +84,7 @@ export class GetroService {
                     if (!testMode) {
                         let result = [];
                         for (const company of items) {
+                            const detail = await this.getCompanyDetail(company.slug);
                             if (detail) {
                                 result.push(detail);
                             }

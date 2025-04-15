@@ -1,4 +1,3 @@
-// Temp comment
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { FaRegUserCircle as CandidateIcon } from 'react-icons/fa';
@@ -18,6 +17,7 @@ export default function CandidateResults({ candidates }) {
         return (
           <CandidateResult 
             candidate={candidate} 
+// Temp comment
             key={candidate.id} />
         )
       })}

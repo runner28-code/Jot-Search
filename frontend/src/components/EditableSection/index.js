@@ -11,4 +11,5 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   const [editMode, setEditMode] = useState(false);
 
   function handleSubmit() {
+    setEditMode(false);
     handleContentUpdate(contentObject);

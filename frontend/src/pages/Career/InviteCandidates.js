@@ -27,7 +27,6 @@ export default function InviteCandidates({ job }) {
       candidate
     }
   }) || [];
-// Temp comment
 
   const [selected, setSelected] = useState([]);
   const deleteItem = (e, value) => {

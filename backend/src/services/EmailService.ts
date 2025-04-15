@@ -2,7 +2,6 @@ import path from 'path';
 import ejs from 'ejs';
 import sendgrid from '@sendgrid/mail';
 import config from '../config';
-
 export const sendEmail = async (to: string|string[], subject: string, template: string, data: any) => {
   sendgrid.setApiKey(config.sendgridSecret || '');
   const from = config.mailSenderEmail || "donnie@aerovision.io";
@@ -39,3 +38,4 @@ export const sendResetPassword = async (to: string, name: string, token: string)
     const base_url = process.env.FRONTEND_URL || 'http://localhost:3000';
     await sendEmail(to, 'Reset your password!', 'reset-password', {
       url: `${base_url}/reset-password?token=${token}`,
+      name: name,

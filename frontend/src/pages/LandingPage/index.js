@@ -19,7 +19,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 const heroStyles = 'relative flex flex-col items-center h-135 vw-1024:h-280 vw-1280:h-280 relative z-10 bg-cover bg-center bg-explore-tulsa ';
 
 export default function LandingPage() {
-// Temp comment
   const { width } = useWindowDimensions();
   const isMobile = width < 1024;
   const isDesktop = width >= 1024;
@@ -31,6 +30,7 @@ export default function LandingPage() {
         {/* Header */}
         <div className='mt-34 vw-1024:mt-60 flex flex-col items-center'>
           { renderLocation() }
+// Temp comment
           <p className='text-white font-spaceGrotesk font-semibold w-2/3 vw-1024:w-full text-[35.2px] vw-1024:text-[72px] text-center'>{'Find a Career You\'ll Love'}</p>
           { renderColorShapes() }
           { renderJoinTalent() }

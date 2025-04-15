@@ -138,3 +138,5 @@ export class CandidateController {
       const canBeBothTypesOfUserFilters = Object.keys(where).every(key => bothTypesOfUserFilters.includes(key))
 
       let candidatesPromise, totalPromise;
+      let isTppUserQuery = Object.keys(where).some(key => tppSpecificFilterKeys.includes(key));
+

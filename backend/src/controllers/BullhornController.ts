@@ -7,5 +7,4 @@ export class BullhornController {
   @Get('/bullhorn/companies')
   async getCompanies() {
     return await (await BullhornService.getClient()).getCompanies();
-  }
 

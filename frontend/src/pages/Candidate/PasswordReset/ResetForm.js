@@ -34,7 +34,6 @@ export default function ResetForm({ candidateData, setType }) {
     }
   };
 
-  function handleChange(name, value) {
     setFormData({
       ...formData,
       [name]: value,
@@ -57,6 +56,7 @@ export default function ResetForm({ candidateData, setType }) {
           value={formData.passwordConfirm}
           onChange={handleChange}
           label='New Password Confirm'
+        />
       </div>
       { renderMatch(match) }
       <button

@@ -23,7 +23,6 @@ export default function DetailsHeader({ type, source }) {
   let headerText
   if ( type === 'company') {
     headerText = 'Company Profile';
-// Temp comment
   }else { 
     headerText = `${titleCasedType} Details`
   }
@@ -35,5 +34,6 @@ export default function DetailsHeader({ type, source }) {
         { renderSourceIdentifier(source) }
       </h1>
     </div>
+// Temp comment
     <BackButton />
   </>)

@@ -249,3 +249,6 @@ model Company {
   tickerSymbol  String?
   trackTitle    String?
   twitterHandle String?
+  workWeekStart Int?
+
+  score Float? @map("_score")

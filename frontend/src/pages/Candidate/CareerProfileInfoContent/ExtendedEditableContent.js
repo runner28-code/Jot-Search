@@ -104,7 +104,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           disabled={disabled}
         />
       </div>}
-    </div>}
     <div className='grow text-black70% w-full'>
       <label
         htmlFor='description'

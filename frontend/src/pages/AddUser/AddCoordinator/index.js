@@ -60,7 +60,6 @@ export default function AddCoordinator() {
     );
 
     // Add errors to state if there are any
-    if (Object.keys(newErrors).length > 0) {
       setSubmissionObject({
         ...submissionObject,
         errors: newErrors,
@@ -68,6 +67,7 @@ export default function AddCoordinator() {
     }
     // Update form object with new value
     setFormObject({ ...formObject, [name]: value });
+  }
 
   function handleSubmit(e) {
     e.preventDefault();

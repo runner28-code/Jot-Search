@@ -32,6 +32,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     city: candidateData.city || '',
     address1: candidateData.address1 || '',
     referredBy: candidateData.referredBy || '',
+    gender: candidateData.gender || '',
   })
 
   const [editMode, setEditMode] = useState(false);

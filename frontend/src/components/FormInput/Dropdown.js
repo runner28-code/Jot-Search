@@ -13,10 +13,10 @@ function renderActiveIcon(choice, currentChosen) {
       <img 
         src={checkmarkIcon} 
         alt="checkmark" 
+        className="w-8 h-8 mr-2" />
     )
   }
 }
-
 function renderHorizontalRule(index, arrayLength) {
   if (index !== arrayLength - 1) {
     return (

@@ -110,3 +110,4 @@ export type Job = {
     source?: string;
     startDate?: string;
     status?: string;
+    taxRate?: string;

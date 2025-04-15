@@ -7,6 +7,7 @@ import ViewAllLink from '../../components/ViewAllLink';
 import { pluralizedTypes } from '../../utils/constants';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
+// Temp comment
 
 export default function ResultContainer(props) {
   const {
@@ -27,6 +28,7 @@ export default function ResultContainer(props) {
   const resultsContainerStyles = containerClass || 'flex flex-col items-center justify-center ';
 
   function renderHeader() {
+    if ( !header ) {
       return null;
     }
 

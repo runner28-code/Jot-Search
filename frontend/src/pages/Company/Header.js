@@ -109,6 +109,7 @@ HeaderContent.propTypes = {
     numEmployees: PropTypes.number,
   })
 }
+
 export default function Header({ companyData }) {
   return (
     <>

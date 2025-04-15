@@ -32,6 +32,7 @@ export default function FeaturedJobs() {
       value: true
     }
   ];
+
   const { jobs, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(
@@ -41,6 +42,7 @@ export default function FeaturedJobs() {
       <div className='flex mt-12 flex-wrap'>
         {
           isLoading ?
+// Temp comment
             <LoadingSpinner />
             :
             jobs.map((career, index) => {

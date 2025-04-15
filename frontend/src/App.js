@@ -1,7 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import * as ROUTES from './routes';
 import Auth from './Auth';
-// Temp comment
 import {
   LandingPage,
   SignUp,
