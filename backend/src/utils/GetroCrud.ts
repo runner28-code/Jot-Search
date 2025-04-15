@@ -11,6 +11,7 @@ export const saveCompanies = async (companies: any[]) => {
 									id: company.id,
 								},
 							});
+							if (existing) {
 								console.log(`Company with ID: ${company.id} exists`);
 								return -1;
 							}
@@ -36,3 +37,4 @@ export const saveCompanies = async (companies: any[]) => {
 
         return { result: true };
     } catch (error) {
+        console.log(error);

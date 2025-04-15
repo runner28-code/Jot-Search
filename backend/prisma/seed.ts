@@ -73,3 +73,5 @@ async function seedCandidates() {
         address_zip: "74008",
         description: "Great candidate for everything",
         companyName: "Eddy's Everything",
+        companyURL: "eddyseverything.com",
+        firstName: "John",

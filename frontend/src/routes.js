@@ -30,3 +30,4 @@ export const companyQuickStats = '/company-stats';
 // Coordinator Dashboard
 export const addUser = '/add-user';
 export const alerts = '/alerts';
+

@@ -85,7 +85,6 @@ export class GetroService {
                     if (!testMode) {
                         let result = [];
                         for (const company of items) {
-                            const detail = await this.getCompanyDetail(company.slug);
                             if (detail) {
                                 result.push(detail);
                             }
@@ -96,3 +95,5 @@ export class GetroService {
                         }
                         await saveCompanies(result);
                     }
+                    console.log(`${total} / ${(page - 1) * per_page + items.length}`);
+                    page++;

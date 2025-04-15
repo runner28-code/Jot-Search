@@ -62,6 +62,7 @@ const validateUser = ({
 export const register = async (data: User) => {
   try {
     console.log("registering...");
+    const validate = validateUser(data);
     if (validate) {
       console.log("failed validation", validate);
       return { result: false, error: validate };
@@ -206,3 +207,6 @@ export const addUserHistoryEntries = async ({
   return await db.history.createMany({
     data: historyRecords,
   });
+};
+
+export const getUserById = async (id: string) => {

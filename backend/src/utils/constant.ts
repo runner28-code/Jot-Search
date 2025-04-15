@@ -162,3 +162,5 @@ const job_filter_exclude_keys = [
   "front desk",
   "garbage",
   "garden",
+  "gardener",
+  "gift stocker",

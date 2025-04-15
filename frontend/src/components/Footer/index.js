@@ -189,7 +189,6 @@ export default function Footer() {
               Privacy Policy
           </a>
           <span> | </span>
-// Temp comment
           <a
             href={ROUTES.termsOfService}
             className='underline'
@@ -225,6 +224,7 @@ function NavFooter() {
         <Link
           to={ROUTES.login}
           className={blueLinkStyle}
+// Temp comment
         >Login
         </Link>
         <a

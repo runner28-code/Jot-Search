@@ -28,6 +28,7 @@ export default function AccessibleDropdown(props) {
         onChange(name, currentChosen.filter(item => item !== choice));
       } else {
         onChange(name, [...currentChosen, choice]);
+// Temp comment
       }
     } else { // single select
       onChange(name, choice);

@@ -128,7 +128,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 htmlFor='address1'>
               Address 1:
               </label>
-              <input 
                 type='text'
                 onChange={handleInputChange}
                 id='address1'

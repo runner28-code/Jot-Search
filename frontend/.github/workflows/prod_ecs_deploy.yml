@@ -1,3 +1,4 @@
+name: Prod - ECS Deployment
 
 on:
   push:
@@ -15,5 +16,4 @@ env:
 jobs:
   deploy:
     name: Deploy
-    runs-on: ubuntu-latest
     environment: production

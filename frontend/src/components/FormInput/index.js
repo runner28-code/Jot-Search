@@ -13,13 +13,11 @@ const dropdownItemStyles = 'text-textBlack text-md pl-8 py-7 hover:bg-royalBlue 
 export default function FormInput(props) {
   const {
     type,
-// Temp comment
     dropdownType,
     name,
     label,
     placeholder,
     value,
-    required,
     onChange,
     choices,
     choiceObject,

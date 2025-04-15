@@ -136,3 +136,5 @@ export class CandidateController {
       const bothTypesOfUserFilters = ["categoryId", "status", 'experience', 'firstName']
 
       const canBeBothTypesOfUserFilters = Object.keys(where).every(key => bothTypesOfUserFilters.includes(key))
+
+      let candidatesPromise, totalPromise;

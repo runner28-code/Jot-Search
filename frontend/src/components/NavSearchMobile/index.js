@@ -2,14 +2,12 @@ import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
-// Temp comment
 import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 import { VscClose as CloseIcon } from 'react-icons/vsc';
 import searchGray from '../../assets/images/search-gray.svg';
 import searchWhite from '../../assets/images/search-white.webp';
-
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';

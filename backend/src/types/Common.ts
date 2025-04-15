@@ -45,3 +45,4 @@ export type FilterOption = {
 };
 
 export type AdvancedFilterOption = {
+  key: string;

@@ -31,7 +31,6 @@ export const saveCompanies = async (companies: any[]) => {
   //     }
   //   })
   // }
-  // return { result: false };
 
   const expludeFields = [
     "address",
@@ -76,6 +75,7 @@ export const saveCompanies = async (companies: any[]) => {
         });
 
         console.log(`Saved company with ID = ${company.id} successfully`);
+      } catch (error: any) {
         console.log(error.message);
         console.log(`ERROR: while saving company with ID = ${company.id}`);
       }
@@ -87,3 +87,6 @@ export const saveCompanies = async (companies: any[]) => {
     return { result: false, error };
   }
 };
+
+export const saveBullhornJobs = async (jobs: any[]) => {
+  const excludeFields = [

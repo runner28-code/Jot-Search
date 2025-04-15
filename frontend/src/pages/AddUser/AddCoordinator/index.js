@@ -32,7 +32,6 @@ export default function AddCoordinator() {
         });
       }
     }
-// Temp comment
   }, [submissionObject.loading]);
 
   // Clear form and success icon after 2 seconds
@@ -69,7 +68,6 @@ export default function AddCoordinator() {
     }
     // Update form object with new value
     setFormObject({ ...formObject, [name]: value });
-  }
 
   function handleSubmit(e) {
     e.preventDefault();

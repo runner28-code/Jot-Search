@@ -145,7 +145,6 @@ const job_filter_exclude_keys = [
     "ethernet",
     "event",
     "exercise",
-    "externship",
     "fabricator",
     "faculty",
     "family",
@@ -161,3 +160,5 @@ const job_filter_exclude_keys = [
     "forester",
     "forklift",
     "fraud",
+    "front desk",
+    "garbage",

@@ -39,7 +39,6 @@ module.exports = {
         cyan: '#1ECADB',
         'legal-bg': '#23242D',
         // Neutrals
-// Temp comment
         powderBlue: '#E4F2FF',
         lightGrey: '#F6F5F6',
         footerGrey: '#EBEBEB',
@@ -86,3 +85,5 @@ module.exports = {
         'explore-tulsa': 'url(\'./assets/images/home-hero.jpg\')',
         'join-hero': 'url(\'./assets/images/join-hero.jpg\')',
         'tulsa-hero': 'url(\'./assets/images/lifeintulsa.jpg\')',
+        'signup-page-hero': 'url(\'./assets/images/tulsanetwork.jpg\')',
+        'login-page-hero': 'url(\'./assets/images/networklogin.jpg\')',

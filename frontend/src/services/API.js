@@ -123,3 +123,20 @@ export async function updateJob({ id, status, featured }) {
 //* COMPANIES
 export async function getCompanies(filterValue, filterKey, count, page) {
   return (await getCompaniesFull(filterValue, filterKey, count, page)).companies;
+}
+
+export async function getCompaniesFull(filterValue, filterKey, count, page) {
+  const { data } = await API.post(ROUTES.APIcompanies, {
+    'filters': [
+      {
+        'key': filterKey || 'name',
+        'value': filterValue || '',
+      }
+    ],
+    'count': count || 5,
+    'page': page || null
+  });
+  return {
+    companies: normalizeData(data.companies),
+    total: data.total,
+  }

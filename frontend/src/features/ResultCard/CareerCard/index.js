@@ -35,6 +35,7 @@ export default function CareerCard({ data, active }) {
     <div
       className='relative w-full'
       key={data.id}
+// Temp comment
     >
       {
         width > 768 ?
@@ -43,7 +44,6 @@ export default function CareerCard({ data, active }) {
             active={active}
           />
           :
-// Temp comment
           <MobileCard
             dataObj={dataObj}
             active={active}

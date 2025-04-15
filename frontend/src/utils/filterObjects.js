@@ -99,6 +99,7 @@ export const candidateFilterObject = {
   ],
   'Status': [
     'Any',
+    'Active',
     'New Lead',
     'Warm Lead',
     'Passive',
@@ -106,6 +107,7 @@ export const candidateFilterObject = {
   ],
   'Skills': [
     ...skills
+// Temp comment
   ],
 };
 

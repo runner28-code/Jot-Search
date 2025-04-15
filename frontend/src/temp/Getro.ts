@@ -25,3 +25,4 @@ export type Company = {
     locations?: string;
     collections?: string;
 }
+

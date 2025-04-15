@@ -18,6 +18,7 @@ export const roles = {
   'Marketing': [
     'Brand & Creative Marketing',
     'Content Marketing & Design',
+    'Digital Marketing',
     'Generalist Marketing',
     'Graphic and Motion Design',
     'PR & Communications',
@@ -129,3 +130,5 @@ export const skills = [
   'Community and Culture',
   'Compensation',
   'Competitive Analysis',
+  'Compliance',
+  'CompTIA Network+',

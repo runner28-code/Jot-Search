@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import softwareEngineeringIcon from '../../assets/images/Symbol_softwareengineering.svg';
 import salesAndBizDevIcon from '../../assets/images/Symbol_Salesbizdev.svg';
 import marketingIcon from '../../assets/images/Symbol_marketing.svg';
+// Temp comment
 import operationsIcon from '../../assets/images/Symbol_operations.svg';
 import financeIcon from '../../assets/images/Symbol_finance.svg';
 import * as ROUTES from '../../routes';

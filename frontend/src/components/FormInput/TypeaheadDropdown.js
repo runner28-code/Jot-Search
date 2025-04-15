@@ -17,6 +17,7 @@ export default function TypeaheadDropdown(props) {
     currentChosen, 
     onChange, 
     baseStyles, 
+// Temp comment
     inputHeight} = props;
 
   const [inputValue, setInputValue] = useState('');

@@ -3,6 +3,7 @@ CREATE TABLE "UserTalentCollection" (
     "id" TEXT NOT NULL,
     "user_id" INTEGER,
     "collection_id" INTEGER,
+    "status" TEXT,
     "approved_at" TEXT,
     "approved_by" TEXT,
     "created_at" TEXT,
@@ -21,3 +22,4 @@ CREATE TABLE "UserTalentCollection" (
     "invitation_reminder_sent_at" TEXT,
     "verified_at" TEXT,
     "visibility" TEXT,
+    "hide_from_domains" TEXT[],

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { useNavigate } from 'react-router-dom';
 import SourceIdentifier from '../SourceIdentifier';
 
@@ -36,6 +37,7 @@ export default function DesktopHeader(props) {
         )}
         <h1 className='font-spaceGrotesk font-medium text-h2 text-royalBlue'>
           { headerText }
+        </h1>
         { dataSource && (
           <SourceIdentifier type={dataSource} />
         )}

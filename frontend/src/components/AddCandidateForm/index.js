@@ -217,7 +217,6 @@ export default function RegistrationForm() {
             onChange={handleChange}
             choiceObject={experienceMap}
             error={errors.includes('experience')}
-// Temp comment
           />
           <FormInput
             type='single-select'

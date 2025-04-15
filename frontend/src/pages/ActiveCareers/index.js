@@ -42,7 +42,6 @@ export default function ActiveCareers() {
         headerText='Active Careers'
         IconComponent={CareerIcon}
         classOverride='h-18 w-18'
-// Temp comment
         backButton
       />
       <FilterSearch

@@ -205,6 +205,7 @@ model Company {
   companyURL         String?
 
   // could condsolidate and enrich if needed
+  bh_description    String?
   getro_description String?
   description       String?
 
@@ -245,3 +246,6 @@ model Company {
   logo String?
 
   taxRate       Float?
+  tickerSymbol  String?
+  trackTitle    String?
+  twitterHandle String?

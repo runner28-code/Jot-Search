@@ -8,6 +8,7 @@ export type Job = {
   address2?: string;
   city?: string;
   state?: string;
+  zip?: string;
   country_id?: string;
   employmentType?: string;
   title?: string;
@@ -18,3 +19,4 @@ export type Job = {
   locations?: string;
   companyId?: string;
   interviews?: string;
+  onSite?: string;

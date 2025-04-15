@@ -91,6 +91,7 @@ export class CompanyController {
     try {
       const candidates_list = await getCandidatesList(body.candidates_ids);
       return {
+        result: await sendCandidatesToEmployers(
           candidates_list,
           body.employers_emails
         )
@@ -110,3 +111,5 @@ export class CompanyController {
     @CurrentUser() authUser: User
   ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
+      return {
+        result: false,
