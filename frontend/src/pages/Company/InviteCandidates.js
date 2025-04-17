@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { appendPathToBaseUrl } from '../../services/API';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
@@ -27,4 +28,3 @@ export default function InviteCandidates({ company }) {
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();
-    setSelected(selected.filter(item => item.value !== value))

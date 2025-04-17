@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
+// Temp comment
 
 export default function Filters(props) {
   const {
@@ -24,6 +25,5 @@ export default function Filters(props) {
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}
       </div>
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
-// Temp comment
     </div>
   )

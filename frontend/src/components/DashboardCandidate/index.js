@@ -27,6 +27,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
         <div className='flex items-center'>
           <Link
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
+// Temp comment
             to={ROUTES.careers}
           >
             <CareerIcon />
@@ -54,5 +55,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
         >
           {!toggle ? <ChevronDown /> : <ChevronUp />}
         </button>
+      </div>
     </div>
   </>)

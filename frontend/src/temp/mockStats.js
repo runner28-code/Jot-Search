@@ -95,17 +95,3 @@ export const mockCompanyStats = {
       count: 22,
       prevCount: 13
     },
-    'Last 7 Days': {
-      count: 31,
-      prevCount: 22
-    },
-    'Last 14 Days': {
-      count: 43,
-      prevCount: 32
-    },
-    'Last 30 Days': {
-      count: 53,
-      prevCount: 42
-    },
-    'Last 90 Days': {
-      count: 63,

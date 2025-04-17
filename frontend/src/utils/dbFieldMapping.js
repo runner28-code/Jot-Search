@@ -16,7 +16,6 @@ export const veteranStatusMap = {
   D: 'I am a veteran with a disability',
   N: 'None of the above'
 };
-// Temp comment
 
 export const genderMap = {
   U: 'Prefer not to say',

@@ -9,10 +9,10 @@ export const saveCompany = async (company: string, candidate: string) => {
         savedCompanies: {
           some: {
             id: company,
+          },
         },
       },
     });
-
     console.log({ existing });
 
     if (existing) {

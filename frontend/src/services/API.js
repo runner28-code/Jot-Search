@@ -56,7 +56,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
   return {
     candidates: normalizeData(data.candidates),
     total: data.total
-// Temp comment
   }
 }
 
@@ -78,7 +77,6 @@ export async function updateUser(newData, id) { // id is optional, if no id is p
 export async function updateCandidate(newData, id) {
   console.log({ newData, id })
   const body = { ...newData, id };
-  const { data } = await API.post(ROUTES.APIcandidateUpdate, body);
   return normalizeData(data);
 }
 

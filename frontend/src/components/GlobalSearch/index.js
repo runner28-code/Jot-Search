@@ -16,6 +16,7 @@ export default function GlobalSearch({ placeholder }) {
   const [ searchTerm, setSearchTerm ] = useState('');
   const [ results, setResults ] = useState({
     jobs: [],
+// Temp comment
     companies: [],
     candidates: [],
     loading: false,
@@ -29,7 +30,6 @@ export default function GlobalSearch({ placeholder }) {
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setResults({ ...results, loading: true, forceHidden: false });
-// Temp comment
     debounceSearchTermFunction( searchTerm );
   }
 

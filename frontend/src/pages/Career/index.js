@@ -31,7 +31,6 @@ export default function CareerPage() {
     const career = await getJobById(id);
     // Decode url encoded properties on career
     career.title = urlDecode(career.title);
-// Temp comment
     career.description = urlDecode(career.description);
 
     setCareerData({ ...career });
@@ -41,7 +40,6 @@ export default function CareerPage() {
 
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';
   const addressString = buildCareerAddress(careerData.city, careerData.state);
-  const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
   const postingAge = calculatePostingAge(careerData.createdAt);
   const data = {
     careerData,

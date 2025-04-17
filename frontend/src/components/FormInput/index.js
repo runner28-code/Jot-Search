@@ -57,7 +57,6 @@ export default function FormInput(props) {
         name={name}
         label={label}
         placeholder={placeholder}
-// Temp comment
         currentChosen={value}
         required={required}
         onChange={onChange}
@@ -80,6 +79,7 @@ export default function FormInput(props) {
         choices={choices}
         baseStyles={componentStyles}
         inputHeight={inputHeight}
+// Temp comment
         disabled={disabled}
       />
     case 'password': // fall through to default

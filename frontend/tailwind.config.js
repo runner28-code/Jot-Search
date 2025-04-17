@@ -85,7 +85,6 @@ module.exports = {
         'explore-tulsa': 'url(\'./assets/images/home-hero.jpg\')',
         'join-hero': 'url(\'./assets/images/join-hero.jpg\')',
         'tulsa-hero': 'url(\'./assets/images/lifeintulsa.jpg\')',
-// Temp comment
         'signup-page-hero': 'url(\'./assets/images/tulsanetwork.jpg\')',
         'login-page-hero': 'url(\'./assets/images/networklogin.jpg\')',
       },

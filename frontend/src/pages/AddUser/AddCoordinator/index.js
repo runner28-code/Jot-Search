@@ -78,7 +78,6 @@ export default function AddCoordinator() {
     if (Object.keys(errors).length > 0) {
       setSubmissionObject({ ...submissionObject, errors: errors });
       return;
-// Temp comment
     } else {
       setSubmissionObject({ ...submissionObject, loading: true });
     }

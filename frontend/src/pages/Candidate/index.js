@@ -90,6 +90,7 @@ export default function Candidate() {
       {/* "My Profile"/"Candidate Profile" Header */}
       <PageHeader
         headerText={headerText}
+// Temp comment
         IconComponent={CandidatesIcon}
         classOverride='h-18 w-18'
         containerClassOverride='pt-2'

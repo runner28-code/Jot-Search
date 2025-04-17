@@ -33,6 +33,7 @@ export default function MobileLayout(props) {
       <div className='flex flex-row flex-wrap items-start'>
         <div className='basis-2/6'>
           { renderLogo(careerData.company_logo) }
+          <FavoriteButton
             type='job'
             data={careerData}
           />      

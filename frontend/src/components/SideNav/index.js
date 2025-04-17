@@ -4,7 +4,6 @@ import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
-// Temp comment
   guestChoices,
   findSelectedFromPath
 } from './utils';
@@ -22,7 +21,6 @@ export default function SideNav({ userType }) {
     return null;
   }
   const { width } = useWindowDimensions();
-  if ( width < 1280 ) {
     return null;
   }
   return (

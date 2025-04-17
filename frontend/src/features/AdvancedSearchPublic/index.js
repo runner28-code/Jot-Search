@@ -18,7 +18,6 @@ import {
   buildSearchFilters
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
-// Temp comment
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
 
@@ -36,7 +35,6 @@ function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
     switch (pathname) {
       case '/candidates':
-        return useState('candidates');
       case '/companies':
         return useState('companies');
       case '/careers':

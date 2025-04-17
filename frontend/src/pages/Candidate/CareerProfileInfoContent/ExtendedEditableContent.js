@@ -180,6 +180,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         />
 
         <SkillsInput
+// Temp comment
           value={formData.skills}
           onChange={handleChange}
           choices={skillChoices || []}

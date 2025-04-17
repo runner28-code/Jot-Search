@@ -28,6 +28,7 @@ function HeaderContent({ companyData }) {
             <FillerIcon />
           </div>
           <div className='basis-4/6'>
+            <h4 className={ headerTitle }>
               {companyData.name}
             </h4>
             <div className='flex items-center'>

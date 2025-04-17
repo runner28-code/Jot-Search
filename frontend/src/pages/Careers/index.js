@@ -30,6 +30,7 @@ export default function Careers() {
         loggedIn={loggedIn}
         userType={userType}
         togglePassState={togglePassState}
+        toggle={toggle}
       />
       <div 
         className={width <= 990 && !loggedIn ? 'px-[5%]' 

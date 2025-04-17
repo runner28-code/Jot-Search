@@ -40,7 +40,6 @@ export class GetroService {
     }
     async getNetworkID(): Promise<boolean> {
         try {
-            console.log('\n***** getNetworkID *****');
             const url = `${this.api_base_url_v2}/networks`;
 
             const res = await axios.get(url, this.getOptions());

@@ -24,5 +24,4 @@ export default function FileInput({type, name, label, placeholder, required, val
         disabled={disabled}
       />
     </div>
-// Temp comment
   )

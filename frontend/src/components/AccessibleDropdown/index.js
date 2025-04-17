@@ -10,7 +10,6 @@ export default function AccessibleDropdown(props) {
   const {
     type,
     name,
-// Temp comment
     label,
     placeholder,
     required,
@@ -19,6 +18,7 @@ export default function AccessibleDropdown(props) {
     choiceObject,
     currentChosen, 
     stylesObject,
+// Temp comment
     showDropdownArrow,
     disabled,
   } = props;

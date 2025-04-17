@@ -1,5 +1,4 @@
 export type User = {
-  id?: string;
   externalId?: string;
   firstname?: string;
   lastname?: string;
@@ -20,6 +19,7 @@ export type User = {
   categoryId?: string | number;
   seniority?: string;
   workspace?: string;
+  referredBy?: string;
   roles?: string;
 
   description?: string;

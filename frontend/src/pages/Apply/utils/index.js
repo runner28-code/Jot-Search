@@ -21,7 +21,6 @@ export const defaultCareerState = {
   company: {
     name: '',
     logo: '',
-// Temp comment
   },
   loading: true,
 }
@@ -34,7 +33,6 @@ export const defaultState = {
   referral: '',
   resume: '',
   newResume: {},
-  ethnicity: '',
   gender: '',
   workAuthorized: '',
   disability: '',

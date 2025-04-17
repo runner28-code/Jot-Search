@@ -32,6 +32,7 @@ async function seedJobs() {
         salary: 160000,
         employmentType: "fulltime",
         onSite: "On-Site",
+        description: "Come join our rockstar team for good money and team",
         datasource: Datasource.main as any,
         status: "active",
         categoryId: (await db.category.findFirst({

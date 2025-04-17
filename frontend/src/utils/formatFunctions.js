@@ -11,6 +11,7 @@ export function formatCandidateData(candidateData) {
     formattedData.address2 = candidateData.address_address2 || '';
     formattedData.city = candidateData.address_city || '';
     formattedData.state = candidateData.address_state || '';
+// Temp comment
     formattedData.zip = candidateData.address_zip || '';
   }
   formattedData.address = buildCandidateAddress(candidateData);
@@ -68,5 +69,4 @@ export function formatCandidateName(firstName, lastName) {
   if ( !firstName && !lastName ) return '';
   if ( !firstName ) return lastName;
   if ( !lastName ) return firstName;
-// Temp comment
   return `${firstName} ${lastName}`;

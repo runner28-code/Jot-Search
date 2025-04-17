@@ -6,3 +6,4 @@ const config = {
   authSecret: process.env.AUTH_SECRET,
   fileUploadSize: process.env.FILE_UPLOAD_SIZE,
 
+  getroEmail: process.env.GETRO_EMAIL,

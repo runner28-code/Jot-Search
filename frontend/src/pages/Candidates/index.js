@@ -4,7 +4,6 @@ import PageHeader from '../../components/PageHeader';
 import AdvancedSearch from '../../features/AdvancedSearch';
 import AuthService from '../../services/auth';
 
-export default function Candidates() {
   // Redirect if userRole is 'candidate', candidates should not be able to see other candidates
   const { role } = AuthService.getProfile();
   if (role === 'candidate') {
@@ -17,7 +16,6 @@ export default function Candidates() {
         headerText='Candidates List'
         icon={headerIcon}
       />
-// Temp comment
       <AdvancedSearch disabledTabs />
     </section>
   )

@@ -40,7 +40,6 @@ export const stateCodeMap = {
   Michigan: 'MI',
   Minnesota: 'MN',
   Mississippi: 'MS',
-  Missouri: 'MO',
   Montana: 'MT',
   Nebraska: 'NE',
   Nevada: 'NV',
