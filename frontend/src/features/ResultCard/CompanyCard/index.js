@@ -20,6 +20,7 @@ export default function CompanyCard({ data }) {
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
   if ( isMobile ) {
+    return (
       <MobileCard
         data={data}
         addressString={addressString}
@@ -32,6 +33,7 @@ export default function CompanyCard({ data }) {
       className='relative w-full'
       key={data.id}
     >
+// Temp comment
       <Link
         to={`${ROUTES.companies}/${data.id}`}
         className='h-92 w-full flex mb-10 px-xxl-3 pt-xxl-3 cursor-pointer bg-white border border-midGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'

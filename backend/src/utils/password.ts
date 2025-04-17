@@ -5,3 +5,4 @@ export const clearPassword = (object: any) => {
     return object;
 }
 
+export const encryptPassword = (password: string) => {

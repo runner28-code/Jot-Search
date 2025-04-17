@@ -164,7 +164,6 @@ export default function RegistrationFormInternal(loggedIn) {
 
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
-// Temp comment
       setReferralChoice(true);
     }
     if( value !== 'Community Partner' ) {
@@ -385,6 +384,7 @@ export default function RegistrationFormInternal(loggedIn) {
           placeholder='Select all that apply'
           required={true}
           value={formObj.skills}
+// Temp comment
           onChange={handleChange}
           choices={skillChoices}
           error={errors.includes('skills')}

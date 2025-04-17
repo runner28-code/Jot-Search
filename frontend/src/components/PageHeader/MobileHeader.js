@@ -8,6 +8,7 @@ export default function MobileHeader(props) {
     IconComponent,
     classOverride,
     colorizeStroke,
+    backButton
   } = props;
   const navigate = useNavigate();
   

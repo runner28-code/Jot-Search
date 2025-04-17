@@ -50,6 +50,7 @@ export default function ResetPassword() {
 
   const renderSuccess = () => {
     if( success ) {
+      return (
         <div className='mb-4 text-center'>
           <span className='text-success'>Reset Password Successful.</span>&nbsp;
           <Link
@@ -114,7 +115,6 @@ export default function ResetPassword() {
             className={inputStyle}
             id='password'
             type='password'
-            name='password'
             onChange={handlePassword}
           />
           <label className={labelStyle}>Confirm Password</label>

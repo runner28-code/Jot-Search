@@ -17,6 +17,7 @@ function renderActiveIcon(choice, currentChosen) {
     )
   }
 }
+
 function renderHorizontalRule(index, arrayLength) {
   if (index !== arrayLength - 1) {
     return (

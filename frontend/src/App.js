@@ -61,6 +61,7 @@ function App() {
               path={ROUTES.root + '*'}
               element={<Auth />} />
             <Route
+// Temp comment
               path="*"
               element={<Navigate to={ROUTES.landingPage} />}
             />

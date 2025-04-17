@@ -7,7 +7,6 @@ import * as ROUTES from '../../routes';
 export default function JobResults({ jobs }) {
   if (jobs.length === 0) {
     return null;
-// Temp comment
   }
 
   return (
@@ -16,6 +15,7 @@ export default function JobResults({ jobs }) {
       { jobs.map(job => {
         return (
           <JobResult 
+// Temp comment
             job={job} 
             key={job.id} />
         )

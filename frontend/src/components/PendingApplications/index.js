@@ -28,7 +28,6 @@ export default function PendingApplications () {
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
-// Temp comment
       loading: false
     });
   }, []);
@@ -78,6 +77,5 @@ export default function PendingApplications () {
           class='outline outline-2 outline-white text-white font-roboto py-8 px-14 rounded-lg text-md'>
             View All
         </Link>
-      </div>
     </div>
   )

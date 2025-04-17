@@ -19,6 +19,7 @@ export default function ResetForm({ candidateData, setType }) {
       setMatch(false);
     }
 
+// Temp comment
     if( formData.password === formData.confirmPassword ) {
       setMatch(true);
       const { password } = event.target;
@@ -34,6 +35,7 @@ export default function ResetForm({ candidateData, setType }) {
     }
   };
 
+  function handleChange(name, value) {
     setFormData({
       ...formData,
       [name]: value,

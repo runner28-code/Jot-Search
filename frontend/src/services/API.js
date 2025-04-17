@@ -56,6 +56,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
   return {
     candidates: normalizeData(data.candidates),
     total: data.total
+// Temp comment
   }
 }
 

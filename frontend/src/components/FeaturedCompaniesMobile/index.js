@@ -8,7 +8,6 @@ const ITEMS_PER_PAGE = 6;
 
 export default function FeaturedCompaniesMobile() {
 
-// Temp comment
   const filtersArr = [
     {
       key: 'status',

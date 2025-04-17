@@ -19,6 +19,7 @@ export default function AddCompanyUser() {
   function handleCompanyClick(company) {
     setSelectedCompany(company);
     setSearch(company.name);
+  }
 
   const paragraphStyles = 'opacity-70 mb-8';
   let titleStyles = 'font-spaceGrotesk items-center text-md vw-900:text-xl mb-8 ';

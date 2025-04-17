@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 import { ImProfile as ApplicationIcon } from 'react-icons/im';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
-import { BsFillTelephoneFill as ContactIcon } from 'react-icons/bs';
 import { FiUserPlus as AddUserIcon } from 'react-icons/fi';
 import {
   MdLogout as LogoutIcon,
@@ -82,6 +81,7 @@ export const candidateChoices = [
   choices.careers,
   choices.companies,
   choices.talentInTulsa,
+  choices.logout
 ];
 
 export const companyChoices = [

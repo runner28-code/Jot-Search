@@ -108,7 +108,6 @@ class AuthService {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }
 
-// Temp comment
   toggleSavedCompany(companyID, action) {
     const savedCompanies = this.getSavedCompanyIDs();
     if ( action === 'save' ) {

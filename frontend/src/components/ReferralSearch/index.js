@@ -34,6 +34,7 @@ const mockJobsData = [
   },
 ];
 
+function renderChosen(currentChosen, handleRemove) {
   return currentChosen.map(choice =>
     <div 
       key={choice.id}

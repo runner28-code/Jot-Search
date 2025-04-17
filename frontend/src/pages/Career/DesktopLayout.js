@@ -55,6 +55,7 @@ export default function DesktopLayout(props) {
             {/* Location */}
             <div className='w-1/3 flex items-center'>
               <img
+// Temp comment
                 src={locationIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{addressString}</p>
@@ -78,6 +79,7 @@ export default function DesktopLayout(props) {
             {/* Employment Type */}
             <div className='w-1/3 flex items-center'>
               <img
+                src={clockIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{careerData.employmentType}</p>
             </div>

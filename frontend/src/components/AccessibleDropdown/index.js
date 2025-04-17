@@ -10,6 +10,7 @@ export default function AccessibleDropdown(props) {
   const {
     type,
     name,
+// Temp comment
     label,
     placeholder,
     required,
@@ -29,7 +30,6 @@ export default function AccessibleDropdown(props) {
       } else {
         onChange(name, [...currentChosen, choice]);
       }
-// Temp comment
     } else { // single select
       onChange(name, choice);
     }

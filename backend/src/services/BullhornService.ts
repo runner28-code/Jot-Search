@@ -284,7 +284,6 @@ export class BullhornService {
             competitors: d.competitors || []
           }));
           if (!testMode) {
-            const res = await saveCompanies(updatedData);
             if (res === -1) return -1;
           }
           offset += count;

@@ -4,7 +4,6 @@ import FilterSearch from '../../components/FilterSearch';
 
 export default function Filters(props) {
   const {
-// Temp comment
     handleFilterChange,
     defaultFilterObject,
     filterObject,
@@ -25,5 +24,6 @@ export default function Filters(props) {
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}
       </div>
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
+// Temp comment
     </div>
   )
