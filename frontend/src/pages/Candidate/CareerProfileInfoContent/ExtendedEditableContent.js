@@ -162,7 +162,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         placeholder='Select'
         value={formData.experience}
         onChange={handleChange}
-        choiceObject={experienceMap}
         disabled={disabled}
       />
 
@@ -180,7 +179,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         />
 
         <SkillsInput
-// Temp comment
           value={formData.skills}
           onChange={handleChange}
           choices={skillChoices || []}

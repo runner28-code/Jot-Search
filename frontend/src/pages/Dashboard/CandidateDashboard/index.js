@@ -22,7 +22,6 @@ export default function CandidateDashboard() {
         <PendingApplications />
         <CareerFavorite />
         <CompanyFavorite />
-        <h1 className={headerStyles}>Search</h1>
         <AdvancedSearch />
       </div>
     </>

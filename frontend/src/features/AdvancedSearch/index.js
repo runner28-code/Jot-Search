@@ -85,6 +85,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   const { companies, total: totalCompanies, isLoading: isLoadingCompanies } = useGetCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'companies' });
   const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'candidates' });
 
+  /* CLEAR SEARCH TERM ON TAB SWITCH */
   useEffect(() => {
     setFilterObject({ ...filterObject, title: '' });
     setPage(1);
@@ -137,6 +138,7 @@ export default function AdvancedSearch({ disabledTabs }) {
       prefetchFunc: (page) => prefetchCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page })
     },
     companies: {
+// Temp comment
       filterTemplate: {},
       activeResults: companies,
       totalResults: totalCompanies,

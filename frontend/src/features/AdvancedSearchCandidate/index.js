@@ -79,4 +79,3 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
-    }

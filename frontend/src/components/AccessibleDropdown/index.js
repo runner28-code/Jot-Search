@@ -18,7 +18,6 @@ export default function AccessibleDropdown(props) {
     choiceObject,
     currentChosen, 
     stylesObject,
-// Temp comment
     showDropdownArrow,
     disabled,
   } = props;

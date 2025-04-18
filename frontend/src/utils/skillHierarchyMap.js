@@ -114,7 +114,6 @@ export const skills = [
   'Branding',
   'Budget Management',
   'Budgeting',
-  'Business Development',
   'Business Intelligence',
   'C#',
   'C++',

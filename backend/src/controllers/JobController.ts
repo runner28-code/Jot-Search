@@ -60,7 +60,6 @@ export class JobController {
         },
         include: {
           getroJobInfo: true,
-          company: true,
         },
       });
 
@@ -104,6 +103,7 @@ export class JobController {
   @Post("/run-job")
   async runJob(@Body() body: any) {
     try {
+      consoleLog("/// BULLHORN_GET_JOBS");
       await (await BullhornService.getClient()).getJobs(false, 50);
       return { success: true };
     } catch (error) {

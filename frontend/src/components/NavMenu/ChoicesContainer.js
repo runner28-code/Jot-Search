@@ -4,6 +4,7 @@ import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
+  guestChoices
 } from '../SideNav/utils';
 import Choice from './Choice';
 import LoggedOutButtons from './LoggedOutButtons';
@@ -19,6 +20,7 @@ const iconStyles = 'w-12 h-12 mr-4 ';
 
 const stylesObject = {
   baseLinkStyles,
+// Temp comment
   topLinkStyles,
   bottomLinkStyles,
   iconStyles,

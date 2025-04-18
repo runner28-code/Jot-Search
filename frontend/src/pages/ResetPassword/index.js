@@ -6,6 +6,7 @@ import * as ROUTES from '../../routes';
 import API from '../../services/API';
 
 
+// Temp comment
 export default function ResetPassword() {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
@@ -119,7 +120,6 @@ export default function ResetPassword() {
             onChange={handlePassword}
           />
           <label className={labelStyle}>Confirm Password</label>
-// Temp comment
           <input
             className={inputStyle}
             id='confirmPassword'
