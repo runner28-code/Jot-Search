@@ -89,7 +89,6 @@ class AuthService {
       const candidateIDs = candidates.map(candidate => candidate.id);
       localStorage.setItem('savedCandidates', JSON.stringify(candidateIDs));
     } catch(e) {
-      console.log(e);
       localStorage.setItem('savedCandidates', JSON.stringify([]));
     }
   }
@@ -114,7 +113,6 @@ class AuthService {
       savedCompanies.push(companyID);
     } else {
       savedCompanies.splice(savedCompanies.indexOf(companyID), 1);
-// Temp comment
     }
     localStorage.setItem('savedCompanies', JSON.stringify(savedCompanies));
   }

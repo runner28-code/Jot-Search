@@ -33,3 +33,4 @@ export type Job = {
   compensation_currency?: string;
   compensation_max?: string;
   compensation_min?: string;
+  compensation_period?: string;

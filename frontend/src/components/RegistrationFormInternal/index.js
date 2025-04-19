@@ -276,7 +276,6 @@ export default function RegistrationFormInternal(loggedIn) {
             onChange={handleChange}
             error={errors.includes('state')}
           />
-          <div className={spacer}></div>
           <FormInput
             type='text'
             name='zip'

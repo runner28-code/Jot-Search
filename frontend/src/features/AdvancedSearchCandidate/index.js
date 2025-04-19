@@ -29,6 +29,7 @@ const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
+// Temp comment
   guest: ['jobs', 'companies'],
 }
 
@@ -79,3 +80,4 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
+    }

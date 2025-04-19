@@ -67,6 +67,7 @@ export default function RegistrationForm() {
       
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
+
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
@@ -271,7 +272,6 @@ export default function RegistrationForm() {
             name='verifyPassword'
             placeholder='Verify Password' 
             value={formObj.verifyPassword}
-            onChange={handleChange}
             error={errors.includes('verifyPassword')}
           />
         </div>

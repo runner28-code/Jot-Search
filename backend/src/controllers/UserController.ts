@@ -77,3 +77,4 @@ export class UserController {
       const { result, error } = await register(data);
       return {
         result,
+        error,

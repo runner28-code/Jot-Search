@@ -16,7 +16,6 @@ import {
 import { Dictionary } from "typed-two-way-map";
 import { BigQueryService } from "../services/BigQueryService";
 import { GetroService } from "../services/GetroService";
-import { createJob, getAppliedJobsByUser, updateJob } from "../services/Job";
 import {
   DATASET_BULLHORN,
   DATASET_GETRO,
@@ -60,6 +59,7 @@ export class JobController {
         },
         include: {
           getroJobInfo: true,
+          company: true,
         },
       });
 
@@ -144,3 +144,5 @@ export class JobController {
           category: true,
         },
         orderBy: [
+          {
+            externalId: "asc",

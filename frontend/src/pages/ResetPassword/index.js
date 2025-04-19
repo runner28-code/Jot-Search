@@ -6,7 +6,6 @@ import * as ROUTES from '../../routes';
 import API from '../../services/API';
 
 
-// Temp comment
 export default function ResetPassword() {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');

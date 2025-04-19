@@ -21,6 +21,7 @@ const job_filter_exclude_keys = [
   "aquatics",
   "art",
   "assembler",
+  "assembly technician",
   "asset",
   "athlete",
   "athletic",
@@ -165,3 +166,5 @@ const job_filter_exclude_keys = [
   "gift stocker",
   "giving",
   "goods",
+  "governance",
+  "grade",

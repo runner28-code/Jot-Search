@@ -31,7 +31,6 @@ export default function ExpertiseLinksMobile() {
           <span className={textStyles}>Software &</span>
           <span className={textStyles}>Engineering</span>
         </Link>
-// Temp comment
         {/* Sales & Business Development */}
         <Link
           to={ROUTES.careers}
@@ -65,6 +64,7 @@ export default function ExpertiseLinksMobile() {
           className={linkStyles}
           state={{ Expertise: 'Operations' }}
         >
+// Temp comment
           <img
             src={operationsIcon}
             alt='Operations Icon'

@@ -1,4 +1,5 @@
 const expertiseObjectArr = JSON.parse(localStorage.getItem('categories')) || [];
+const expertises = expertiseObjectArr.map(expertise => expertise.name).sort();
 import { experienceMap, educationChoices } from './dbFieldMapping';
 import { skills } from './skillHierarchyMap';
 const experienceValues = Object.values(experienceMap).filter(val => val !== null);

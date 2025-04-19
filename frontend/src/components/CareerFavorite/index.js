@@ -16,7 +16,6 @@ export default function CareerFavorite () {
   return(
     <div className='flex items-center flex-col justify-center bg-white rounded-lg py-24 px-12 vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
       <div className='relative w-24 mb-8'>
-// Temp comment
         <div className='bg-yellowSquare w-12 h-12' />
         <div className='bg-cyanSquare bg-cyan-400 top-[-20px] right-[5px] absolute w-6 h-6' />
       </div>

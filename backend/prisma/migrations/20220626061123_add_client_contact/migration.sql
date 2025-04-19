@@ -17,5 +17,4 @@ CREATE TABLE "ClientContact" (
     "address_state" TEXT,
     "address_zip" TEXT,
     "address_country_id" TEXT,
-    "category" TEXT,
     "certifications" TEXT,

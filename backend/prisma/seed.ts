@@ -12,7 +12,6 @@ async function main() {
     await seedUsers();
     console.log("Done🎉");
   } catch (err) {
-    console.error("Error during seed...❌");
     console.error(err);
     throw err;
   }
@@ -75,3 +74,4 @@ async function seedCandidates() {
         companyName: "Eddy's Everything",
         companyURL: "eddyseverything.com",
         firstName: "John",
+        lastName: "Smith",

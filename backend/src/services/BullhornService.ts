@@ -74,6 +74,7 @@ export class BullhornService {
       });
     });
   }
+
   async setCookie(data: any) {
     const targetFile = __dirname + "/../config/cookie.json";
     return new Promise((resolve, reject) => {
@@ -327,9 +328,12 @@ export class BullhornService {
           address_address2: company.address?.address2 || null,
           address_city: company.address?.city || null,
           address_state: company.address?.state || null,
-          address_zip: company.address?.zip || null,
           address_country_id: company.address?.countryID || null,
           billingAddress_address1: company.bllingAddress?.address1 || null,
           billingAddress_address2: company.bllingAddress?.address2 || null,
           billingAddress_city: company.bllingAddress?.city || null,
           billingAddress_state: company.bllingAddress?.state || null,
+          billingAddress_zip: company.bllingAddress?.zip || null,
+        };
+        await saveCompanies([newDbCompany]);
+        return {

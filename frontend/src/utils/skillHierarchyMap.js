@@ -114,6 +114,7 @@ export const skills = [
   'Branding',
   'Budget Management',
   'Budgeting',
+  'Business Development',
   'Business Intelligence',
   'C#',
   'C++',
@@ -133,3 +134,4 @@ export const skills = [
   'CompTIA Network+',
   'Consultative Sales',
   'Consulting',
+  'Consumer Market Research',

@@ -97,7 +97,6 @@ export type Job = {
     numOpenings?: string;
     onSite?: string;
     owner?: string;
-    payRate?: string;
     publicDescription?: string;
     publishedZip?: string;
     reasonClosed?: string;
@@ -111,3 +110,4 @@ export type Job = {
     status?: string;
     taxRate?: string;
     taxStatus?: string;
+    title?: string;

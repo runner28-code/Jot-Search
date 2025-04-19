@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
+  coordinatorChoices,
   guestChoices,
   findSelectedFromPath
 } from './utils';
@@ -21,6 +22,7 @@ export default function SideNav({ userType }) {
   }
   const { width } = useWindowDimensions();
   if ( width < 1280 ) {
+// Temp comment
     return null;
   }
   return (

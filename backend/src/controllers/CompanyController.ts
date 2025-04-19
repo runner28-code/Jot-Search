@@ -115,3 +115,5 @@ export class CompanyController {
         result: false,
         error: "You should be a coordinator for creating a company",
       };
+    }
+

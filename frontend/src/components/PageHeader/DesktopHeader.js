@@ -29,7 +29,6 @@ export default function DesktopHeader(props) {
             src={ icon }
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
-// Temp comment
           />
         )}
         { IconComponent && (
@@ -45,6 +44,7 @@ export default function DesktopHeader(props) {
       { backButton && (
         <button
           className='text-md text-royalBlue underline mt-6'
+// Temp comment
           onClick={() => navigate(-1)}
         >
           {'< Go Back'}

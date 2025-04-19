@@ -140,3 +140,5 @@ export class CandidateController {
       let candidatesPromise, totalPromise;
       let isTppUserQuery = Object.keys(where).some(key => tppSpecificFilterKeys.includes(key));
 
+
+      where = Object.keys(where).reduce((acc, key) => {

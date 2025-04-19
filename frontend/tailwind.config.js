@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
+        'spin': 'spin .175s linear forwards',
         'spin-reverse': 'spin-reverse .175s linear forwards'
       },
       keyframes: {
@@ -87,3 +88,4 @@ module.exports = {
         'signup-page-hero': 'url(\'./assets/images/tulsanetwork.jpg\')',
         'login-page-hero': 'url(\'./assets/images/networklogin.jpg\')',
       },
+      spacing: {

@@ -94,3 +94,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
     "address",
     "location",
     "_score",
+    "publicDescription", //
+    "clientCorporation",
+    "dateAdded",

@@ -90,6 +90,7 @@ export default function AddCoordinator() {
   const addInputStyles = ' w-full';
   const inputContainer = 'w-full vw-900:w-6/12 vw-900:pr-8 flex flex-col mb-12';
   const buttonStyles = 'w-100 text-md bg-royalBlue font-semibold text-white rounded-2xl px-6 py-8 font-spaceGrotesk';
+  const buttonString = 'Create Coordinator';
   return (
     <form
       className='flex flex-row flex-wrap items-center w-full vw-900:px-15 py-8 3vw-1280:ml-10'
@@ -102,7 +103,6 @@ export default function AddCoordinator() {
           type='text'
           className={submissionObject.errors.firstname ? invalidInputStyles : validInputStyles += addInputStyles}
           name='firstname'
-          placeholder='First Name'
           value={formObject.firstname}
           onChange={handleInputChange}
         />

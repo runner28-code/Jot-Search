@@ -29,6 +29,7 @@ const job_filter_exclude_keys = [
     "athletic",
     "athletics",
     "attorney",
+// Temp comment
     "auto",
     "automation technician",
     "automotive",
@@ -124,6 +125,7 @@ const job_filter_exclude_keys = [
     "driver",
     "drug",
     "economist",
+    "economy",
     "edit",
     "editor",
     "educate",
@@ -164,3 +166,5 @@ const job_filter_exclude_keys = [
     "garbage",
     "garden",
     "gardener",
+    "gift stocker",
+    "giving",
