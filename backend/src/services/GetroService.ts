@@ -100,3 +100,4 @@ export class GetroService {
                     page++;
                     repeatErr = 0;
                     if (items.length < per_page) break;
+                }

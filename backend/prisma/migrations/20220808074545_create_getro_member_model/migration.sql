@@ -23,3 +23,4 @@ CREATE TABLE "UserTalentCollection" (
     "verified_at" TEXT,
     "visibility" TEXT,
     "hide_from_domains" TEXT[],
+    "user_deleted" BOOLEAN,

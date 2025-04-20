@@ -12,6 +12,7 @@ CREATE TABLE "Lead" (
     "category" TEXT,
     "clientContacts" TEXT,
     "clientCorporation" TEXT,
+    "comments" TEXT,
     "companyName" TEXT,
     "companyURL" TEXT,
     "conversionSource" TEXT,
@@ -20,3 +21,4 @@ CREATE TABLE "Lead" (
     "dateLastModified" TIMESTAMP(3),
     "dateLastVisited" TIMESTAMP(3),
     "description" TEXT,
+    "division" TEXT,

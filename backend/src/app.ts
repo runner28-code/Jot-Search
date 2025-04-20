@@ -46,3 +46,4 @@ const uploadToS3 = async(req: any, res: any) => {
     const uuid = genUUID()
 
     const params = {
+      Key: uuid,

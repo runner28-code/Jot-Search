@@ -31,3 +31,4 @@ export const companyQuickStats = '/company-stats';
 export const addUser = '/add-user';
 export const alerts = '/alerts';
 
+export const careerSeekers = '/career-seeker';

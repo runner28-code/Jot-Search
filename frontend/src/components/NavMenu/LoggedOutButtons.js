@@ -20,7 +20,6 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
     <hr className={stylesObject.hrStyles} />
     <Link 
       to={ROUTES.signup}
-// Temp comment
       onClick={handleOptionClick}
       className={stylesObject.bottomLinkStyles}
     >

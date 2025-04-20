@@ -39,7 +39,6 @@ export const createJob = async (job: Job) => {
 // TODO: Figure out what we want to make required
 const validateJob = (job: Job): string | undefined => {
   return undefined;
-};
 
 const sanitizeJob = (job: Job): Job => {
   const newJob = { ...job };
@@ -48,3 +47,4 @@ const sanitizeJob = (job: Job): Job => {
     const typedKey = key as keyof Job;
     if (!ALLOWED_JOB_KEYS.has(typedKey)) {
       delete newJob[typedKey];
+    }

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import ResetButton from './ResetButton';
 import ResetForm from './ResetForm';
@@ -33,7 +32,6 @@ export default function PasswordReset({role, candidateData}) {
             candidateData={candidateData}
             setType={setType}
           />
-        )}
         { role === 'coordinator' && (
           <ResetForm
             candidateData={candidateData}

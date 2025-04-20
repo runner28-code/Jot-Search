@@ -23,7 +23,6 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     skills: data.primarySkills,
     category: data.specialties,
     seniority: data.experience,
-    workspace: data.willRelocate,
     referredBy: data.referredBy,
     roles: data.skillSet,
 
@@ -43,3 +42,4 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     willRelocate: data.willRelocate,
     ethnicity: data.ethnicity,
     workAuthorized: data.workAuthorized,
+    disability: data.disability,

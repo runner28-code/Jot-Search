@@ -272,6 +272,7 @@ export default function RegistrationForm() {
             name='verifyPassword'
             placeholder='Verify Password' 
             value={formObj.verifyPassword}
+            onChange={handleChange}
             error={errors.includes('verifyPassword')}
           />
         </div>

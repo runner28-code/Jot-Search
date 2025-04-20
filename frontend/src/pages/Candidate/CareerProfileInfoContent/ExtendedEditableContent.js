@@ -94,6 +94,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         <label
           htmlFor='avatar'
           className='text-black70% mb-1'
+        >Upload new profile image</label>
         <input
           className={inputStyles + 'bg-lightGrey h-24 w-100 py-6'}
           type='file'
@@ -126,7 +127,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             />
         }
       </label>
-
       {isSourceUserTable && <>
         <FormInput
           type='single-select'

@@ -66,6 +66,7 @@ export default function AddCoordinator() {
         errors: newErrors,
       });
     }
+// Temp comment
     // Update form object with new value
     setFormObject({ ...formObject, [name]: value });
   }
@@ -103,6 +104,7 @@ export default function AddCoordinator() {
           type='text'
           className={submissionObject.errors.firstname ? invalidInputStyles : validInputStyles += addInputStyles}
           name='firstname'
+          placeholder='First Name'
           value={formObject.firstname}
           onChange={handleInputChange}
         />

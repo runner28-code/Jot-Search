@@ -12,6 +12,7 @@ async function main() {
     await seedUsers();
     console.log("Done🎉");
   } catch (err) {
+    console.error("Error during seed...❌");
     console.error(err);
     throw err;
   }
@@ -75,3 +76,5 @@ async function seedCandidates() {
         companyURL: "eddyseverything.com",
         firstName: "John",
         lastName: "Smith",
+        phone: "123-456-7891",
+        email: "jsmithers@gmail.com",

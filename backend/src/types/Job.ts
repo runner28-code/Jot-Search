@@ -12,6 +12,7 @@ export type Job = {
   country_id?: string;
   employmentType?: string;
   title?: string;
+  willRelocate?: string;
   yearsRequired?: string;
   status?: string;
   skillList?: string;
@@ -19,3 +20,4 @@ export type Job = {
   companyId?: string;
   interviews?: string;
   onSite?: string;
+  salary?: string;

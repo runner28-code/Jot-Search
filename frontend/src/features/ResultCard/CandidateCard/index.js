@@ -140,3 +140,25 @@ function LinkWrapper({ children, link, disableLink }) {
       {children}
     </Link>
   )
+}
+
+LinkWrapper.propTypes = {
+  children: PropTypes.node.isRequired,
+  link: PropTypes.string.isRequired,
+  disableLink: PropTypes.bool,
+}
+
+function renderActiveStatus(candidate) {
+  if (candidate.activelyLooking || candidate.user?.activelyLooking) {
+    return (
+      <div className='flex items-center gap-[10px] px-s py-xxs bg-success rounded-full'>
+        <img
+          src={eyeCon}
+          className='w-[15px] h-[11px]'
+        />
+        <p className='text-white text-sm text-xxs'>Actively Looking</p>
+      </div>
+    )
+  }
+
+  return null;

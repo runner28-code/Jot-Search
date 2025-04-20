@@ -98,6 +98,7 @@ export default function MobileLayout(props) {
               <UpdateJobFeatured job={careerData} />
             </div>
           )
+        }
       </div>
       <hr className={hrStyles} />
       {/* Job Description */}
@@ -116,6 +117,7 @@ export default function MobileLayout(props) {
             careerId={careerData.id}
             applicationUrl={careerData.application_path || careerData.url}
           />
+// Temp comment
         }
         <button
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
@@ -131,3 +133,26 @@ export default function MobileLayout(props) {
       currentCareerId={careerData.externalId}
     />
   </>)
+}
+
+MobileLayout.propTypes = {
+  data: PropTypes.shape({
+    careerData: PropTypes.object.isRequired,
+    categoryString: PropTypes.string.isRequired,
+    role: PropTypes.string.isRequired,
+    postingAge: PropTypes.string.isRequired,
+    addressString: PropTypes.string.isRequired,
+    salaryString: PropTypes.string.isRequired,
+  }).isRequired
+}
+
+function renderLogo( logo ) {
+  if ( !logo ) {
+    return <div className='w-36 h-36 flex justify-center items-center border border-smokeGray border-solid object-contain mr-10'>
+      <CareerIcon className='w-24 h-24 fill-royalBlue' />
+    </div>
+  }
+  return <img
+    src={logo}
+    className='w-36 h-36 object-contain mr-10'
+  />

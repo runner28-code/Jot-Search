@@ -8,7 +8,6 @@ import FeaturedJobs from '../../components/FeaturedJobs';
 import FeaturedCompanies from '../../components/FeaturedCompanies';
 import FeaturedCompaniesMobile from '../../components/FeaturedCompaniesMobile';
 import BusinessBooming from '../../components/BusinessBooming';
-// Temp comment
 import BusinessBoomingMobile from '../../components/BusinessBoomingMobile';
 import ColorShapes from '../../components/ColorShapes';
 import * as ROUTES from '../../routes';
@@ -47,4 +46,26 @@ export default function LandingPage() {
       { isDesktop && <JoinTalentNetwork /> }
       { isDesktop ? <BusinessBooming /> : <BusinessBoomingMobile />}
     </main>
+  )
+}
+
+function renderSearch() {
+  const { width } = useWindowDimensions();
+  const { totalCompaniesCount, totalJobsCount, isLoading } = useGetLandingPageStats({});
+
+  if( width <= 1024 ) {
+    return (<>
+      <ExploreSearchMobile
+        totalJobs={totalJobsCount}
+        totalCompanies={totalCompaniesCount}
+        loading={isLoading}
+      />
+    </>)
+  }
+  return (
+    <ExploreSearch
+      totalJobs={totalJobsCount}
+      totalCompanies={totalCompaniesCount}
+      loading={isLoading}
+    />
   )

@@ -1,4 +1,3 @@
-import db from "../utils/db";
 
 export const saveCandidate = async (
   candidateId: string,
@@ -32,3 +31,4 @@ export const saveCandidate = async (
         },
       });
     } else {
+      await db.user.update({

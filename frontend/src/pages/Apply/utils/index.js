@@ -21,7 +21,6 @@ export const defaultCareerState = {
   company: {
     name: '',
     logo: '',
-// Temp comment
   },
   loading: true,
 }
@@ -40,6 +39,7 @@ export const defaultState = {
   disability: '',
   veteran: '',
   loading: true
+// Temp comment
 }
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {

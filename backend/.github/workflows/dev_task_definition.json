@@ -9,7 +9,6 @@
             "cpu": 1024, 
             "memory": 2048, 
             "portMappings": [
-                {
                     "containerPort": 5000, 
                     "hostPort": 5000, 
                     "protocol": "tcp"
@@ -22,6 +21,7 @@
                    "awslogs-group" : "/ecs/dev-site-backend-task",
                    "awslogs-region": "us-east-1",
                    "awslogs-stream-prefix": "ecs"
+                }
             },
             "environment": [
                 {
@@ -31,3 +31,4 @@
                 {
                     "name": "PORT", 
                     "value": "5000"
+                },

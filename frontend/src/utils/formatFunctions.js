@@ -2,7 +2,6 @@ import fixStringNulls from './fixStringNulls';
 import { experienceMap } from './dbFieldMapping';
 import { stateCodeMap } from './constants';
 
-export function formatCandidateData(candidateData) {
   const formattedData = fixStringNulls(candidateData);
 
   formattedData.sourceTable = candidateData.id.startsWith('bl-') ? 'Candidate' : 'User'; // Some features are only available to candidates who have been added to the platform (Users)
@@ -69,3 +68,10 @@ export function formatCandidateName(firstName, lastName) {
   if ( !firstName ) return lastName;
   if ( !lastName ) return firstName;
   return `${firstName} ${lastName}`;
+}
+
+export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
+  if ( avatarUrl ) {
+    return avatarUrl;
+  }
+  return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;

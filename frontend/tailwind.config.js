@@ -55,6 +55,7 @@ module.exports = {
         disabledGrey: '#C9C9CE',
         magenta: '#EB4A87',
         // Colors included in design but not in Web Style Guide
+// Temp comment
         orangeCircle: '#ED8623',
         orangeHeroOverlay: '#F2871F',
         'blue-bg': '#E7F0F8',
@@ -89,3 +90,4 @@ module.exports = {
         'login-page-hero': 'url(\'./assets/images/networklogin.jpg\')',
       },
       spacing: {
+        // Styleguide Spacing

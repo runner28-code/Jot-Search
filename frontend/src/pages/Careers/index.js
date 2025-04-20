@@ -25,6 +25,7 @@ export default function Careers() {
     setToggle(toggle => !toggle);
   }
   return (
+// Temp comment
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
         loggedIn={loggedIn}
@@ -41,7 +42,6 @@ export default function Careers() {
         <RenderAdvancedSearch
           loggedIn={loggedIn}
           toggle={toggle}
-// Temp comment
           userType={userType}
         />
       </div>

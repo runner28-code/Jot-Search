@@ -89,6 +89,7 @@ class AuthService {
       const candidateIDs = candidates.map(candidate => candidate.id);
       localStorage.setItem('savedCandidates', JSON.stringify(candidateIDs));
     } catch(e) {
+      console.log(e);
       localStorage.setItem('savedCandidates', JSON.stringify([]));
     }
   }

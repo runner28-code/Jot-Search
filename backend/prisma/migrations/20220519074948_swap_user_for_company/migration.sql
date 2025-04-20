@@ -24,6 +24,7 @@ CREATE TABLE "Company" (
     "id" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "annualRevenue" BIGINT,
+    "addressId" TEXT,
     "billingAddressId" TEXT,
     "billingContact" TEXT,
     "billingFrequency" TEXT,
@@ -33,3 +34,4 @@ CREATE TABLE "Company" (
     "companyDescription" TEXT,
     "companyURL" TEXT,
     "competitors" TEXT[],
+    "culture" TEXT,

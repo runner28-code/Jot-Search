@@ -39,3 +39,4 @@ export const saveCompanies = async (companies: any[]) => {
     } catch (error) {
         console.log(error);
         return { result: false, error };
+    }

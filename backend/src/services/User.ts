@@ -215,3 +215,6 @@ export const getUserById = async (id: string) => {
       where: {
         id,
       },
+    });
+    return { result: true, data: user };
+  } catch (error) {

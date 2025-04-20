@@ -73,7 +73,6 @@ model Lead {
   dateAdded             DateTime?
   dateLastComment       DateTime?
   dateLastModified      DateTime?
-  dateLastVisited       DateTime?
   description           String?
   division              String?
   email                 String?
@@ -164,6 +163,7 @@ model ClientContact {
   nickName           String?
   numEmployees       Int?
   occupation         String?
+  office             String?
   owner              String?
   pager              String?
   password           String?
@@ -254,3 +254,7 @@ model Company {
 
   // Start custom fields
   customDate1 DateTime?
+  customDate2 DateTime?
+  customDate3 DateTime?
+
+  customFloat1 Float?

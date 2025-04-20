@@ -22,3 +22,27 @@ function isTodayOrYesterday(dateObj) {
   }
 
   return returnObj;
+}
+
+function formatDateByDay(isToday, isYesterday, dateObj) {
+  const time = dateObj.toLocaleTimeString();
+  const timeWithoutSeconds = time.replace(/(.*)\D\d+/, '$1')
+  if ( isToday ) {
+    return `Today at ${timeWithoutSeconds}`;
+  } else if ( isYesterday ) {
+    return `Yesterday, ${timeWithoutSeconds}`;
+  } else {
+    const month = dateObj.toLocaleString('default', { month: 'long' });
+    const day = dateObj.getDate();
+
+      if (d > 3 && d < 21) return d + 'th';
+      switch (d % 10) {
+        case 1:  return d + 'st';
+        case 2:  return d + 'nd';
+        case 3:  return d + 'rd';
+        default: return d + 'th';
+      }
+    }
+
+    return `${month} ${concatenateOrdinal(day)}, ${timeWithoutSeconds}`;
+  }

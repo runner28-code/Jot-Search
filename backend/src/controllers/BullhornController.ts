@@ -9,3 +9,4 @@ export class BullhornController {
     return await (await BullhornService.getClient()).getCompanies();
   }
 
+  // @Authorized()
