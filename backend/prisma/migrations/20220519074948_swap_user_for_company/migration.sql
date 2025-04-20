@@ -25,7 +25,6 @@ CREATE TABLE "Company" (
     "name" TEXT NOT NULL,
     "annualRevenue" BIGINT,
     "addressId" TEXT,
-    "billingAddressId" TEXT,
     "billingContact" TEXT,
     "billingFrequency" TEXT,
     "billingPhone" TEXT,

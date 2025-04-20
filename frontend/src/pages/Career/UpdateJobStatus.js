@@ -10,7 +10,6 @@ const hrStyles = 'mb-10 border-smokeGray ';
 export const UpdateJobStatus = ({ job }) => {
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
   const [updatedJob, setUpdatedJob] = useState(job)
-
   return (
     <div className='py-8 flex flex-col'>
       <hr className={`${hrStyles} bg-smokeGray h-2`} />
@@ -35,7 +34,6 @@ export const UpdateJobStatus = ({ job }) => {
           handleChange={async(e) => {
             const { res } = await saveJob({ status: e.target.value, id: updatedJob.id })
             setUpdatedJob(res);
-// Temp comment
           }}
         />
       </div>

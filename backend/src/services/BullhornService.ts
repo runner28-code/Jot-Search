@@ -35,6 +35,7 @@ export class BullhornService {
     return BullhornService.client;
   }
 
+  async init(invalid = true): Promise<boolean> {
     if (!invalid) {
       const cookie: any = await this.getCookie();
       if (cookie !== null) {

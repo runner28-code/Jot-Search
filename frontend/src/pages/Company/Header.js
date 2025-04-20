@@ -64,7 +64,6 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
-              src={LinkedIn}
               className={headerIconStyles}
             />
             { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }
@@ -155,6 +154,7 @@ function renderDesktopLogo(logoUrl, name) {
   if( width < 1280 ) {
     return null;
   }
+  if (!logoUrl) {
     return (
       <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
         <BsBuilding className={logoStyles} />

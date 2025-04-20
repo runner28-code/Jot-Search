@@ -91,6 +91,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         title={`${formData.firstname} ${formData.lastname}`}
       />
       {editMode && <div className='mb-4 flex flex-col'>
+// Temp comment
         <label
           htmlFor='avatar'
           className='text-black70% mb-1'
@@ -171,6 +172,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           type='single-select'
           name='workspace'
           label='Work Setting Preference'
+          required={true}
           placeholder='Select'
           value={formData.workspace}
           onChange={handleChange}

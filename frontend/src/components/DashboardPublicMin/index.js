@@ -42,7 +42,6 @@ export default function DashboardPublicMin({type}) {
             onClick={() => navigate(-1)}
           >
           Back
-// Temp comment
           </button>
         </div>
         <div className='flex items-center basis-11/12 justify-center'>
@@ -58,7 +57,6 @@ export default function DashboardPublicMin({type}) {
             to={ROUTES.companies}
           >
             <CompanyIcon />
-            <p className='ml-4'>Companies</p>
           </Link>
         </div>
       </div>

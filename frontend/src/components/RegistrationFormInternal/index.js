@@ -92,6 +92,7 @@ export default function RegistrationFormInternal(loggedIn) {
           success: false,
         });
         return;
+      }
       formObj.resume = resumeResponse;
 
       // Format formObj

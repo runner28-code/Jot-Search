@@ -12,6 +12,7 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
+// Temp comment
 import AuthService from '../../services/auth';
 
 
@@ -60,7 +61,6 @@ export default function NavSearch({ placeholder }) {
   const menuRef = useRef(null);
 
   /* EVENT HANDLERS */
-// Temp comment
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setForceHidden( false );

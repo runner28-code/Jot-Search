@@ -40,7 +40,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     <>
       <div className='flex flex-col mr-12'>
         {/* Avatar */}
-        <img
           className='w-100 h-100'
           src={avatarUrl}
           alt='Candidate Avatar' />
@@ -100,7 +99,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className={inputStyles + 'text-h6 w-full'} />
         </div>
         {/* Company */}
-// Temp comment
         <div className='mb-6'>
           <label 
             className='text-h6 text-royalBlue w-full'

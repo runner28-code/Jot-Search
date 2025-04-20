@@ -79,6 +79,7 @@ export default function RegistrationForm() {
           })
         } else {
           return navigate(ROUTES.login);
+// Temp comment
         }
       } else {
         console.log('Error: ', result);

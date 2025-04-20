@@ -10,6 +10,7 @@ import { calculatePostingAge } from '../../../utils/formatFunctions';
 
 export default function CompactCareerCard({ data, active, agoDate, isFavoriteOverride = null, selectableProps = null }) {
   const postingAge = calculatePostingAge(agoDate);
+
   const isApplicationPage = useLocation().pathname === ROUTES.applications;
   const applicationAge = data.applications && data.applications.length > 0 ? calculatePostingAge(data.applications[0].createdAt) : 'N/A';
   return (
@@ -32,6 +33,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
 
           {/* Title */}
           <div className='flex grow'>
+// Temp comment
             <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.title}</h6>
           </div>
 

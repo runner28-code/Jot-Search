@@ -7,6 +7,7 @@ import {
   buildSearchFilters,
 } from '../../utils/filterObjects';
 
+// Temp comment
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
@@ -28,7 +29,6 @@ export default function InviteToCareer({ candidate }) {
   }) || [];
   
   const [ selected, setSelected ] = useState([]);
-// Temp comment
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))

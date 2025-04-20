@@ -26,6 +26,7 @@ API.interceptors.request.use(
 export default API;
 
 export function appendPathToBaseUrl(path) {
+// Temp comment
   if (path.slice(0, 4) === 'http') {
     return path; // It's already a full URL
   }
@@ -122,7 +123,6 @@ export async function updateJob({ id, status, featured }) {
 
 //* COMPANIES
 export async function getCompanies(filterValue, filterKey, count, page) {
-// Temp comment
   return (await getCompaniesFull(filterValue, filterKey, count, page)).companies;
 }
 
