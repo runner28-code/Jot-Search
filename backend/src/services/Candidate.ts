@@ -1,3 +1,4 @@
+import db from "../utils/db";
 
 export const saveCandidate = async (
   candidateId: string,
@@ -8,7 +9,6 @@ export const saveCandidate = async (
       where: {
         AND: {
           id: companyUserId,
-          savedCandidates: {
             some: {
               id: candidateId,
             },

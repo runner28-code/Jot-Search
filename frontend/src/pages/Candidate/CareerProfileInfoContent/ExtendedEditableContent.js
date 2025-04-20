@@ -127,6 +127,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
             />
         }
       </label>
+
       {isSourceUserTable && <>
         <FormInput
           type='single-select'
@@ -170,7 +171,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           type='single-select'
           name='workspace'
           label='Work Setting Preference'
-          required={true}
           placeholder='Select'
           value={formData.workspace}
           onChange={handleChange}

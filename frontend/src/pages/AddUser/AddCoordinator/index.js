@@ -56,7 +56,6 @@ export default function AddCoordinator() {
       name,
       value,
       submissionObject.errors,
-      formObject.password
     );
 
     // Add errors to state if there are any
@@ -66,7 +65,6 @@ export default function AddCoordinator() {
         errors: newErrors,
       });
     }
-// Temp comment
     // Update form object with new value
     setFormObject({ ...formObject, [name]: value });
   }

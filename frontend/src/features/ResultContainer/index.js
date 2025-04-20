@@ -29,6 +29,7 @@ export default function ResultContainer(props) {
   function renderHeader() {
     if ( !header ) {
       return null;
+// Temp comment
     }
 
     return <h5 className={resultsHeaderStyles}>{header}</h5>;
@@ -52,7 +53,6 @@ export default function ResultContainer(props) {
     <div className='w-full'>
       { renderHeader() }
       <div
-// Temp comment
         className={`${baseStyles} ${resultsContainerStyles}`}>
         { renderResults(results, loading, type, active, compact, isFavoriteOverride, agoText, selectableProps) }
       </div>

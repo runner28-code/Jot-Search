@@ -7,4 +7,3 @@ CREATE TABLE "Job" (
     "address2" TEXT,
     "city" TEXT,
     "state" TEXT,
-    "zip" TEXT,

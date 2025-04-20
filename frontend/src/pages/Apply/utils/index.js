@@ -13,6 +13,7 @@ export const jobReferralChoices = [
   'Indeed',
   'Google',
   'Friend',
+// Temp comment
   'Other',
 ];
 
@@ -39,7 +40,6 @@ export const defaultState = {
   disability: '',
   veteran: '',
   loading: true
-// Temp comment
 }
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {

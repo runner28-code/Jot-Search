@@ -44,4 +44,3 @@ export default function FeaturedCompanies() {
         </Link>
       </div>
     </div>
-  )

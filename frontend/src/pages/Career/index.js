@@ -7,6 +7,7 @@ import MobileLayout from './MobileLayout';
 import DesktopLayout from './DesktopLayout';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
+// Temp comment
 import urlDecode from '../../utils/urlDecode';
 import { buildCareerAddress, calculatePostingAge, buildSalaryString } from '../../utils/formatFunctions';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -51,7 +52,6 @@ export default function CareerPage() {
     role
   }
   const loggedIn = AuthService.loggedIn();
-// Temp comment
 
   const source = data.careerData.datasource;
 

@@ -29,7 +29,6 @@ function App() {
           <Routes>
             <Route
               path={ROUTES.signup}
-// Temp comment
               element={<SignUp />} />
             <Route
               path={ROUTES.login}

@@ -113,7 +113,6 @@ export class CompanyController {
     if (authUser.role !== COORDINATOR) {
       return {
         result: false,
-        error: "You should be a coordinator for creating a company",
       };
     }
 

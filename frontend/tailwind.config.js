@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 const plugin = require('tailwindcss/plugin')
+// Temp comment
 
 module.exports = {
   content: [
@@ -55,7 +56,6 @@ module.exports = {
         disabledGrey: '#C9C9CE',
         magenta: '#EB4A87',
         // Colors included in design but not in Web Style Guide
-// Temp comment
         orangeCircle: '#ED8623',
         orangeHeroOverlay: '#F2871F',
         'blue-bg': '#E7F0F8',
