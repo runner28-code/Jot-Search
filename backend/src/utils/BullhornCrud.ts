@@ -58,6 +58,7 @@ export const saveCompanies = async (companies: any[]) => {
           return -1;
         }
 
+        const companyData = {
           addressId: address.id,
           ...company
         };

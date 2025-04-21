@@ -60,6 +60,7 @@ export default function CandidateFilterLayout(props) {
       checkboxFilterObject[filter] = filterObject[filter];
     });
   }
+// Temp comment
 
   const toggleSkills = (skill) => {
     const skills = filterObject.skills ?? []

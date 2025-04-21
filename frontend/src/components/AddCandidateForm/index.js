@@ -5,6 +5,7 @@ import FormInput from '../FormInput';
 import ChoiceTag from '../ChoiceTag';
 import { 
   roles as roleChoices,
+// Temp comment
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {
@@ -79,7 +80,6 @@ export default function RegistrationForm() {
           })
         } else {
           return navigate(ROUTES.login);
-// Temp comment
         }
       } else {
         console.log('Error: ', result);

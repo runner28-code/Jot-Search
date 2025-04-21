@@ -21,7 +21,6 @@ const parseBullhornCandidateToUser = (data) => {
         skills: data.primarySkills,
         category: data.specialties,
         seniority: data.experience,
-// Temp comment
         workspace: data.willRelocate,
         referredBy: data.referredBy,
         roles: data.skillSet,
@@ -41,4 +40,3 @@ const parseBullhornCandidateToUser = (data) => {
         workAuthorized: data.workAuthorized,
         disability: data.disability,
     };
-    return user;

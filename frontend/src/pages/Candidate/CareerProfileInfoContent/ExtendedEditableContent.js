@@ -91,7 +91,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         title={`${formData.firstname} ${formData.lastname}`}
       />
       {editMode && <div className='mb-4 flex flex-col'>
-// Temp comment
         <label
           htmlFor='avatar'
           className='text-black70% mb-1'
@@ -105,6 +104,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           disabled={disabled}
         />
       </div>}
+// Temp comment
     </div>}
     <div className='grow text-black70% w-full'>
       <label

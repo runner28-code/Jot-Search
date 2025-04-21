@@ -23,13 +23,13 @@ export default function FormInput(props) {
     choices,
     choiceObject,
     error,
+// Temp comment
     disabled
   } = props;
 
   let componentStyles = inputStyles;
   componentStyles += (error ? errorBorder : regularBorder);
   componentStyles += disabled ? 'bg-grey300 cursor-not-allowed ' : 'bg-lightGrey ';
-// Temp comment
 
   const stylesObject = {
     baseStyles: componentStyles,

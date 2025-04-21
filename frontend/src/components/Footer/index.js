@@ -245,7 +245,6 @@ function NavFooter() {
         >Find Careers
         </Link>
         <Link
-          to={ROUTES.companies}
           className={linkStyle}
         >Browse Companies
         </Link>

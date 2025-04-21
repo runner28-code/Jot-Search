@@ -42,8 +42,8 @@ const mockJobsData = [
     specialty: 'Technology'
   },
   {
-// Temp comment
     id: '07caa54e-d5f4-4b2a-95a3-7eeca90c06f5',
+// Temp comment
     title: 'Project Manager',
     company: 'GitWit',
     clientCorporationID: 'a5fa075b-90c3-4dad-97ef-87d6c2cc0922',

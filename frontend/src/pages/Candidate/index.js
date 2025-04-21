@@ -117,7 +117,6 @@ export default function Candidate() {
               fieldName='willRelocate'
               label={PREFERENCE_ITEMS.willRelocate}
               onUpdate={handleCandidateUpdate} />
-// Temp comment
             <PreferenceItem
               toggled={!!candidateData.willReceiveNotification}
               fieldName='willReceiveNotification'
@@ -133,6 +132,7 @@ export default function Candidate() {
             role={role}
             candidateData={candidateData}
             handleCandidateUpdate={handleCandidateUpdate} />
+// Temp comment
         </div>
         {role === 'coordinator' && 
           <InviteToCareer candidate={candidateData} />

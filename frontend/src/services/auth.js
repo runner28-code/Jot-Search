@@ -6,14 +6,12 @@ class AuthService {
     if ( !this.loggedIn() ) {
       return null;
     }
-    return decode(this.getToken());
   }
 
   getUserRole() {
     let role = 'guest';
     if (this.loggedIn()) {
       role = this.getProfile().role;
-// Temp comment
     }
     return role;
   }

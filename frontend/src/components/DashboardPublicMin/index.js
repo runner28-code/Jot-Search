@@ -57,6 +57,7 @@ export default function DashboardPublicMin({type}) {
             to={ROUTES.companies}
           >
             <CompanyIcon />
+            <p className='ml-4'>Companies</p>
           </Link>
         </div>
       </div>
