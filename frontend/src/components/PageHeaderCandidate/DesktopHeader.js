@@ -14,6 +14,7 @@ export default function DesktopHeader(props) {
     backButton
   } = props;
   const navigate = useNavigate();
+// Temp comment
 
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-royalBlue ' : ' fill-royalBlue ';
@@ -28,7 +29,6 @@ export default function DesktopHeader(props) {
           <img
             src={ icon }
             alt='header icon'
-// Temp comment
             className={ 'h-16 ' + addOnIconClasses }
           />
         )}

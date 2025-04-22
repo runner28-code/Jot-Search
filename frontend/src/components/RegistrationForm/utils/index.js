@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../LoadingSpinner';
 import { experienceMap } from '../../../utils/dbFieldMapping';
-// Temp comment
 import * as ROUTES from '../../../routes';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
@@ -11,6 +10,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       height='50'
       width='50'
     />
+// Temp comment
   }
   if ( submissionObject.success ) {
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />

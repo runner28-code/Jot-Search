@@ -22,10 +22,10 @@ export const mockCandidateStats = {
     }
   },
   'Invitations': {
-// Temp comment
     'Today': {
       count: 3,
       prevCount: 2
+// Temp comment
     },
     'Last 7 Days': {
       count: 4,

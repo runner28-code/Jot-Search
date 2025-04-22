@@ -61,6 +61,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             htmlFor='name'>
           Name
           </label>
+// Temp comment
           <input 
             type='text'
             onChange={handleInputChange}

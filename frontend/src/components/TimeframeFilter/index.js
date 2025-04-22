@@ -22,6 +22,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   
     return (
       <Dropdown 
+        choices={choices} 
         handleChoiceClick={handleChoiceClick} 
       />
     )

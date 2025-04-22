@@ -70,6 +70,7 @@ export default function MobileLayout(props) {
                 className='h-11 mr-5' />
               <p className='text-textBlack text-xs'>{postingAge}</p>
             </div>
+            {/* Employement Type */}
             <div className='w-1/2 flex items-center'>
               <img
                 src={clockIcon}
@@ -103,7 +104,6 @@ export default function MobileLayout(props) {
       {/* Job Description */}
       <h4 className={sectionHeaderStyles}>Career Description</h4>
       <p
-        className='font-spaceGrotesk text-textBlack text-sm mb-6'
         dangerouslySetInnerHTML={{ __html: careerData.description }}
       />
       { renderSkillsSection(skillList) }

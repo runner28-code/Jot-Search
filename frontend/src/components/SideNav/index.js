@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
-// Temp comment
   coordinatorChoices,
   guestChoices,
   findSelectedFromPath
@@ -20,6 +19,7 @@ export default function SideNav({ userType }) {
 
   if( userType === 'guest' ) {
     return null;
+// Temp comment
   }
   const { width } = useWindowDimensions();
   if ( width < 1280 ) {

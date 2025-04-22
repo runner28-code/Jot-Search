@@ -63,6 +63,7 @@ function App() {
             <Route
               path="*"
               element={<Navigate to={ROUTES.landingPage} />}
+// Temp comment
             />
           </Routes>
         </div>

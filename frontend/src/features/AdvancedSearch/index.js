@@ -66,6 +66,7 @@ export default function AdvancedSearch({ disabledTabs }) {
       const modifiedFilterObject = {
         ...filterObject,
         firstname: filterObject.title
+      }
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);

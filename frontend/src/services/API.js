@@ -18,6 +18,7 @@ API.interceptors.request.use(
     }
     return config;
   },
+  function (error) {
     return Promise.reject(error);
   }
 );
@@ -50,6 +51,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
     'filters': formattedFilters,
     'count': count,
     'page': page || null,
+// Temp comment
     'fields': fields || null
   });
   return {

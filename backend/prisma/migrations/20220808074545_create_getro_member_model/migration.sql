@@ -22,4 +22,5 @@ CREATE TABLE "UserTalentCollection" (
     "invitation_reminder_sent_at" TEXT,
     "verified_at" TEXT,
     "visibility" TEXT,
+    "hide_from_domains" TEXT[],
     "user_deleted" BOOLEAN,

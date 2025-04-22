@@ -73,7 +73,6 @@ module.exports = {
         softWhite: '#F6F5F6',
         smokeGray: '#DDDDDD',
         medGray: '#707070',
-// Temp comment
         slateGray: '#3C3C4B',
         charcoalGray: '#333332',
         darkGray: '#292938',

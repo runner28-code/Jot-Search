@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { renderButtonOrLoading } from '../../../components/RegistrationForm/utils';
 import { registerUser } from '../../../services/API';
 import { validateInput } from '../utils';
+
 export default function AddCoordinator() {
   const [formObject, setFormObject] = useState(defaultState);
   const [submissionObject, setSubmissionObject] = useState({
@@ -148,6 +149,7 @@ export default function AddCoordinator() {
         />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.password}</p>
       </div>
+// Temp comment
       <div className={inputContainer}>
         {/* Verify Password */}
         <label className={labelStyles}>Verify Password</label>

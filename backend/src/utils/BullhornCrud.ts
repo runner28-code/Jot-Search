@@ -21,7 +21,6 @@ export const saveCompanies = async (companies: any[]) => {
   //     }
   //   }
   // });
-  // for (const item of result) {
   //   await db.company.update({
   //     where: {
   //       id: item.id,
@@ -81,6 +80,7 @@ export const saveCompanies = async (companies: any[]) => {
         console.log(`ERROR: while saving company with ID = ${company.id}`);
       }
     }
+
     return { result: true };
   } catch (error: any) {
     console.log(error.message);
@@ -99,3 +99,4 @@ export const saveBullhornJobs = async (jobs: any[]) => {
     "dateClosed",
     "date_end",
     "dateLastExported",
+    "dateLastModified",

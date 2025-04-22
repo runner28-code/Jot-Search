@@ -9,6 +9,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
+import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding } from 'react-icons/bs';
 
 function HeaderContent({ companyData }) {
@@ -26,7 +27,6 @@ function HeaderContent({ companyData }) {
             { renderCompanyLogo(companyData.logo, companyData.name) }
             <FillerIcon />
           </div>
-          <div className='basis-4/6'>
             <h4 className={ headerTitle }>
               {companyData.name}
             </h4>

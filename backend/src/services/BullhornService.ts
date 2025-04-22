@@ -333,6 +333,7 @@ export class BullhornService {
           billingAddress_address1: company.bllingAddress?.address1 || null,
           billingAddress_address2: company.bllingAddress?.address2 || null,
           billingAddress_city: company.bllingAddress?.city || null,
+          billingAddress_state: company.bllingAddress?.state || null,
           billingAddress_zip: company.bllingAddress?.zip || null,
         };
         await saveCompanies([newDbCompany]);

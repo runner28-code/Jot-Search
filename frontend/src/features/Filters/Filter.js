@@ -53,6 +53,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
           <MdLocationOn
             className='w-10 h-10 mr-1' 
             color='lightGray'
+// Temp comment
           />}
         <p
           id='title'

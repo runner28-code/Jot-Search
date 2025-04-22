@@ -76,6 +76,7 @@ export const skills = [
   'Accounts Receivable',
   'Admissions',
   'Adobe',
+  'Adobe InDesign',
   'Adobe XD',
   'Advanced Excel',
   'Advertising',

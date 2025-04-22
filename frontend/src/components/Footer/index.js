@@ -230,7 +230,6 @@ function NavFooter() {
           href={ROUTES.mailToIntulsa}
           className={addressLinkStyle}
         >info@talentintulsa.com
-// Temp comment
         </a>
         <Address />
       </div>
