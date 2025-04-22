@@ -50,7 +50,6 @@ const job_filter_exclude_keys = [
     "breakfast",
     "budget",
     "builder",
-// Temp comment
     "building",
     "buyer",
     "cafeteria",

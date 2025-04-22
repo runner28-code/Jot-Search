@@ -69,7 +69,6 @@ export class BullhornService {
         if (err) {
           return resolve(null);
         }
-        let cookies = JSON.parse(data.toString());
         return resolve(cookies);
       });
     });
@@ -316,6 +315,7 @@ export class BullhornService {
         headers: {
           "Content-Type": "application/json;charset=UTF-8",
           Accept: "*/*",
+        },
       });
       if (res.status === 200) {
         console.log("insertCompany success");

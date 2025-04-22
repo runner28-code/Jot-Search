@@ -51,6 +51,7 @@ function HeaderContent({ companyData }) {
             </div>
           </div>
         </div>
+
         <FavoriteButton
           type={'company'}
           data={companyData} />

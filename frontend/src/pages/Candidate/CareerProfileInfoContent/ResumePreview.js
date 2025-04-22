@@ -7,6 +7,7 @@ import {
 } from 'react-icons/fi';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
+const ResumePreview = ({ resumeUrl }) => {
   const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
 
@@ -27,6 +28,7 @@ import LoadingSpinner from '../../../components/LoadingSpinner';
       <canvas
         ref={canvasRef}
         className='rounded-lg'
+// Temp comment
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>

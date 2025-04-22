@@ -41,7 +41,6 @@ button:focus,
     outline: none;
 }
 
-input[type=checkbox] {
   accent-color: #2ea248;
 }
 

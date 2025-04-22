@@ -161,6 +161,7 @@ model ClientContact {
   name               String?
   namePrefix         String?
   nameSuffix         String?
+  nickName           String?
   numEmployees       Int?
   occupation         String?
   office             String?

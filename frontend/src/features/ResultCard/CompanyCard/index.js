@@ -60,10 +60,10 @@ export default function CompanyCard({ data }) {
             <OpenCareers companyId={data.id} />
             {/* Number of Employees */}
             <div className='w-1/3 flex items-center'>
-// Temp comment
               <EmployeesIcon className='fill-midGrey h-11 w-12 mr-6' />
               <p className='text-textBlack'>{employeeString}</p>
             </div>
+// Temp comment
           </div>
           {/* Second row */}
           <div className='flex items-center mt-12'>

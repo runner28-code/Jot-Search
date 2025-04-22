@@ -173,6 +173,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           label='Work Setting Preference'
           required={true}
           placeholder='Select'
+          value={formData.workspace}
           onChange={handleChange}
           choices={['Any', 'Remote', 'On Site', 'Hybrid']}
           disabled={disabled}

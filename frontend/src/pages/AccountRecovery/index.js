@@ -17,6 +17,7 @@ export default function AccountRecovery() {
     });
 
     if ( res.data.result ) {
+      setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);
     }
@@ -33,7 +34,6 @@ export default function AccountRecovery() {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )
     }
   }
-
 
   return (
     <section className='-mt-18 flex flex-col items-center pb-14 bg-login-page-hero bg-no-repeat bg-top bg-[length:auto_34rem] vw-640:bg-[length:auto_48rem] vw-900:bg-[length:100%_auto]'>

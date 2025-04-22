@@ -138,6 +138,7 @@ export default function AddCoordinator() {
       <div className={inputContainer + ' hidden vw-900:flex'}></div>
       <div className={inputContainer}>
         {/* Password */}
+// Temp comment
         <label className={labelStyles}>Password</label>
         <input
           type='password'
