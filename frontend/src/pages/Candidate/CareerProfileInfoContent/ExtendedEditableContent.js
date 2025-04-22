@@ -99,7 +99,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           className={inputStyles + 'bg-lightGrey h-24 w-100 py-6'}
           type='file'
           name='avatar'
-          accept='image/png, image/jpeg, image/jpg'
           onChange={handleInputChange}
           disabled={disabled}
         />

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import Flag from '../../../assets/icons/flag.svg';
 import Search from '../../../assets/icons/search-gray.svg';
 import { useGetCompanies } from '../../../hooks/queries/useGetCompanies';
 import { useGetClientContacts } from '../../../hooks/queries/useGetClientContacts';
-import CompanyContactList from './CompanyContactList';
 
 const ITEMS_PER_PAGE = 10;
 

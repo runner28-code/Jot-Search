@@ -30,6 +30,7 @@ const defaultState = {
   referredBy: '',
   resumeFile: {},
   password: '',
+// Temp comment
   verifyPassword: '',
 };
 export default function RegistrationForm() {
@@ -41,6 +42,7 @@ export default function RegistrationForm() {
     loading: false,
     success: false,
   });
+
   const navigate = useNavigate();
   const location = useLocation();
 

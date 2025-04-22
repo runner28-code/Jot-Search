@@ -39,6 +39,7 @@ function useTabState(disabledTabs, userType, pathname) {
         return useState('candidates');
       case '/companies':
         return useState('companies');
+      case '/careers':
       default:
         return useState('careers');
     }
@@ -65,7 +66,6 @@ export default function AdvancedSearch({ disabledTabs }) {
       const modifiedFilterObject = {
         ...filterObject,
         firstname: filterObject.title
-      }
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);

@@ -4,8 +4,8 @@ import Header from '../Header';
 export default function ReferralCardContent({ data }) {
   return (
     <>
-// Temp comment
       <Header 
+// Temp comment
         title={data.title} 
         isMobile={false} 
       />

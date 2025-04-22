@@ -39,6 +39,7 @@ export default function Auth() {
           path={ROUTES.applications}
           element={<Applications />} />
         <Route
+          path={ROUTES.favorites}
           element={<Favorites />} />
         <Route
           path={ROUTES.activeCareers}
@@ -50,5 +51,4 @@ export default function Auth() {
           path={ROUTES.addUser}
           element={<AddUser />} />
       </Routes>
-    </div>
   )

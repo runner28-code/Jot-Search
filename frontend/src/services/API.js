@@ -18,7 +18,6 @@ API.interceptors.request.use(
     }
     return config;
   },
-  function (error) {
     return Promise.reject(error);
   }
 );
@@ -82,7 +81,6 @@ export async function updateCandidate(newData, id) {
 }
 
 export async function getSavedCandidates() {
-// Temp comment
   const { data } = await API.get(ROUTES.APIsavedCandidates);
   return normalizeData(data.candidates);
 }

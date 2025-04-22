@@ -218,7 +218,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             htmlFor='email'
           >
             <IoIosMail
-// Temp comment
               className={iconStyles + 'fill-royalBlue'} />
               Email:
           </label>

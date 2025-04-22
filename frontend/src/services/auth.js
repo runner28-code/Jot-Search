@@ -37,6 +37,7 @@ class AuthService {
 
   getToken() {
     return localStorage.getItem('id_token');
+// Temp comment
   }
 
   async login(idToken) {
@@ -77,7 +78,6 @@ class AuthService {
       localStorage.setItem('savedCompanies', JSON.stringify(companyIDs));
     } catch(e) {
       console.log(e);
-// Temp comment
       localStorage.setItem('savedJobs', JSON.stringify([]));
       localStorage.setItem('savedCompanies', JSON.stringify([]));
     }

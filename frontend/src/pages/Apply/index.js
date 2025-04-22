@@ -7,7 +7,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { AiFillFilePdf as PDFIcon } from 'react-icons/ai';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
 import FormInput from '../../components/FormInput';
-import { getCandidateById, getJobById, applyToJob } from '../../services/API';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../utils/dbFieldMapping';
@@ -80,6 +79,7 @@ export default function Apply() {
         setUseExistingResume(true);
       }
       // Adding default as profile doesn't have ethnicity to default to
+      if( candidateData.ethnicity === undefined ) {
         candidateData.ethnicity = 'Prefer not to say';
       }
       const stateObject = {

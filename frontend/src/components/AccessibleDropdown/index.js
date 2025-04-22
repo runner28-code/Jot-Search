@@ -12,7 +12,6 @@ export default function AccessibleDropdown(props) {
     name,
     label,
     placeholder,
-// Temp comment
     required,
     onChange,
     choices,
@@ -34,7 +33,6 @@ export default function AccessibleDropdown(props) {
       onChange(name, choice);
     }
   }
-
   let containerStyles = 'relative ';
   containerStyles += stylesObject.marginBottom ? stylesObject.marginBottom : 'mb-16 ';
   let buttonStyles = buildButtonStyles(stylesObject, currentChosen, type);
