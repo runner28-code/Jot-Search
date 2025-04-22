@@ -132,7 +132,6 @@ export default function Candidate() {
             role={role}
             candidateData={candidateData}
             handleCandidateUpdate={handleCandidateUpdate} />
-// Temp comment
         </div>
         {role === 'coordinator' && 
           <InviteToCareer candidate={candidateData} />

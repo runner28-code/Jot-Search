@@ -6,6 +6,7 @@ class AuthService {
     if ( !this.loggedIn() ) {
       return null;
     }
+    return decode(this.getToken());
   }
 
   getUserRole() {

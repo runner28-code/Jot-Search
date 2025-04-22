@@ -1,7 +1,7 @@
 import Candidate from '../Candidate'
 
-// Temp comment
 export default function Profile() {
+// Temp comment
   return (
     <>
       <Candidate />

@@ -5,7 +5,6 @@ import LoadingSpinner from '../../../components/LoadingSpinner';
 import PropTypes from 'prop-types';
 
 export const ethnicityChoices = Object.values(ethnicityMap);
-// Temp comment
 export const genderChoices = Object.values(genderMap);
 export const veteranStatusChoices = Object.values(veteranStatusMap);
 export const disabilityChoices = Object.values(disabilityMap);
@@ -25,6 +24,7 @@ export const defaultCareerState = {
   },
   loading: true,
 }
+// Temp comment
 
 export const defaultState = {
   firstname: '',

@@ -8,7 +8,6 @@ export const UpdateJobFeatured = ({ job }) => {
   const toggled = job.featured
 
 
-  const enabledButtonStyle = 'bg-green text-white'
   const disabledButtonStyle = 'bg-grey300'
 
   const buttonStyles = toggled ? enabledButtonStyle : disabledButtonStyle
@@ -50,5 +49,6 @@ export const UpdateJobFeatured = ({ job }) => {
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured
         </label>
+      </div>
     </div>
   )

@@ -5,7 +5,6 @@ import {
   JobKey,
   ALLOWED_JOB_KEYS_TO_UPDATE,
 } from "../types/Job";
-import db from "../utils/db";
 
 export const createJob = async (job: Job) => {
   try {

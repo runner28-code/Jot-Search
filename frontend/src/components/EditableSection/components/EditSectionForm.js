@@ -7,6 +7,7 @@ import EditResumeForm from './EditResumeForm';
 import Property from './Property';
 
 // const SECONDARY_FORM_TYPES = ['comments', 'primarySkills', 'expertise', 'resume'];
+// Temp comment
 
 export default function EditSectionForm({ contentObject, handlePropertyChange }) {
   function handleChange(e) {
@@ -48,7 +49,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         }
         return (
           <div 
-// Temp comment
             key={key}
             className='flex justify-between items-center w-full mb-4'
           >

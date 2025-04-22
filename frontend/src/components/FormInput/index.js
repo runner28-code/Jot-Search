@@ -23,7 +23,6 @@ export default function FormInput(props) {
     choices,
     choiceObject,
     error,
-// Temp comment
     disabled
   } = props;
 

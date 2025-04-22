@@ -5,6 +5,7 @@ import {
   Applications,
   Candidate,
   Candidates,
+  Dashboard,
   Favorites,
   Logout,
   Profile,

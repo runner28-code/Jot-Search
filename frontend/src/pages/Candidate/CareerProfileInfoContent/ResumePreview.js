@@ -7,7 +7,6 @@ import {
 } from 'react-icons/fi';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
-const ResumePreview = ({ resumeUrl }) => {
   const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
 
@@ -39,7 +38,6 @@ const ResumePreview = ({ resumeUrl }) => {
               >
                 <BackIcon className={prevButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
-// Temp comment
             </li>
             <li>Page {page} of {pdfDocument.numPages}</li>
             <li className="next">

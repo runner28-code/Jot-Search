@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+// Temp comment
 import Dropdown from '../FilterDropdown';
 import chevronDownGray from '../../assets/icons/chevron-down-gray.svg';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
@@ -18,6 +19,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   function renderDropdown( showDropdown ) {
     if ( !showDropdown ) {
       return null
+    }
   
     return (
       <Dropdown 

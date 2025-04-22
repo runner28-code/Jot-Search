@@ -118,6 +118,7 @@ export default function DesktopLayout(props) {
     />
   </>)
 }
+
 DesktopLayout.propTypes = {
   data: PropTypes.shape({
     careerData: PropTypes.object.isRequired,

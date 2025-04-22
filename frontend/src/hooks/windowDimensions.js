@@ -5,3 +5,4 @@ function getWindowDimensions() {
   return {
     width,
     height
+  };

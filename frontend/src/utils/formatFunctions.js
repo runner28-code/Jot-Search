@@ -61,7 +61,6 @@ export function convertUserToCandidate(user) {
     veteran: user.veteran || '',
     disability: user.disability || '',
   };
-  return candidate;
 }
 
 export function formatCandidateName(firstName, lastName) {

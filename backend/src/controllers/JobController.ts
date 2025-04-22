@@ -34,6 +34,7 @@ import {
   DataSources,
   Operator,
 } from "../types/Common";
+import { ALLOWED_GETRO_FILTERS } from "../types/Getro";
 import { ALLOWED_JOB_KEYS, JobKey } from "../types/Job";
 import { User } from "../types/User";
 import { consoleLog, getDataSource, getFilterConditions } from "../utils";

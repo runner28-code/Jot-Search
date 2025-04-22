@@ -104,7 +104,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           disabled={disabled}
         />
       </div>}
-// Temp comment
     </div>}
     <div className='grow text-black70% w-full'>
       <label
@@ -174,7 +173,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           label='Work Setting Preference'
           required={true}
           placeholder='Select'
-          value={formData.workspace}
           onChange={handleChange}
           choices={['Any', 'Remote', 'On Site', 'Hybrid']}
           disabled={disabled}
