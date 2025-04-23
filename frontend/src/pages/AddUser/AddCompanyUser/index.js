@@ -72,7 +72,6 @@ export default function AddCompanyUser() {
               {companies.map((company) => (
                 <div
                   key={company.id}
-// Temp comment
                   className='border-b border-grey300 px-4 py-4 cursor-pointer hover:bg-royalBlue hover:text-white'
                   onClick={() => handleCompanyClick(company)}
                 >
@@ -89,6 +88,7 @@ export default function AddCompanyUser() {
             />
           )}
         </div>
+// Temp comment
       </div>
     </div>
   )

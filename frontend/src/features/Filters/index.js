@@ -11,7 +11,6 @@ export default function Filters(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
-    marginBottom
   } = props;
 
   let filterContainerStyles = 'flex flex-col justify-between gap-xxl-4 pb-9 vw-768:px-14 ';
@@ -20,7 +19,6 @@ export default function Filters(props) {
   }
   return (
     <div className={filterContainerStyles}>
-// Temp comment
       <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}
       </div>

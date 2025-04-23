@@ -101,3 +101,4 @@ export class GetroService {
                     repeatErr = 0;
                     if (items.length < per_page) break;
                 }
+            } catch (error) {

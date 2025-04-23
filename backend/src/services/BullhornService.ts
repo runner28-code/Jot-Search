@@ -344,3 +344,7 @@ export class BullhornService {
       } else {
         console.log("insertCompany failed");
         return {
+          result: false,
+          error: res.data.error,
+        };
+      }

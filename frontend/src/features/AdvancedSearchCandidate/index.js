@@ -66,6 +66,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const modifiedFilterObject = {
+        ...filterObject,
         firstname: filterObject.title
       }
       delete modifiedFilterObject.title;

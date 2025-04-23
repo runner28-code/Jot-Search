@@ -1,5 +1,6 @@
 import * as ROUTES from '../../routes';
 
+export default function BusinessBooming() {
   return (
     <section>
       <div className='relative w-full h-full bg-orangeHeroOverlay/90 p-12 '>
@@ -13,7 +14,6 @@ import * as ROUTES from '../../routes';
           className='flex items-center justify-center bg-white text-sm mt-12 py-8 rounded-lg w-3/5'
         >
           <span className='text-orangeHeroOverlay'>Learn About Tulsa</span>
-        </a>
       </div>
       <div className='h-96 bg-tulsa-hero bg-cover'></div>
     </section>

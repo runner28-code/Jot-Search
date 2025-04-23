@@ -118,7 +118,6 @@ export default function RegistrationFormInternal(loggedIn) {
           success: false,
         });
       }
-// Temp comment
     }
   }, [submissionObject.loading]);
 

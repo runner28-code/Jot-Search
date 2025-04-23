@@ -7,6 +7,7 @@ import * as ROUTES from '../../routes';
 export default function JobResults({ jobs }) {
   if (jobs.length === 0) {
     return null;
+// Temp comment
   }
 
   return (
@@ -17,6 +18,7 @@ export default function JobResults({ jobs }) {
           <JobResult 
             job={job} 
             key={job.id} />
+        )
       })}
     </>
   )

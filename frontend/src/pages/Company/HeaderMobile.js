@@ -27,6 +27,7 @@ function HeaderContent({ companyData }) {
             { renderCompanyLogo(companyData.logo, companyData.name) }
             <FillerIcon />
           </div>
+          <div className='basis-4/6'>
             <h4 className={ headerTitle }>
               {companyData.name}
             </h4>

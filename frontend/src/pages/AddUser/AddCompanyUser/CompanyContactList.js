@@ -37,7 +37,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
             >
               <input
                 type='checkbox'
-// Temp comment
                 id={contact.id}
                 name={contact.id}
                 checked={selectedContacts.includes(contact)}
@@ -54,6 +53,5 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
         >
           Synch
         </button>
-      </>)}
     </div>
   )

@@ -28,4 +28,3 @@ export default function DashboardMinified({ location }) {
         loggedIn={loggedIn}
       />
     </div>
-  )

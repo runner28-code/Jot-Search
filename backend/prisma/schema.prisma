@@ -259,3 +259,6 @@ model Company {
   customDate3 DateTime?
 
   customFloat1 Float?
+  customFloat2 Float?
+  customFloat3 Float?
+

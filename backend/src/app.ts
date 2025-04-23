@@ -47,3 +47,4 @@ const uploadToS3 = async(req: any, res: any) => {
 
     const params = {
       Key: uuid,
+      ContentType: fileObject.type,

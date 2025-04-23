@@ -149,6 +149,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
 
     try {
       await addUserHistoryEntries({
+        updatedUser: user,
         existingUser: existing,
       });
     } catch (err) {
@@ -217,3 +218,6 @@ export const getUserById = async (id: string) => {
     });
     return { result: true, data: user };
   } catch (error) {
+    return { result: false, error };
+  }
+};

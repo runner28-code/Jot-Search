@@ -59,7 +59,6 @@ export default function CandidateFilterLayout(props) {
 
 
   return (
-// Temp comment
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
@@ -72,6 +71,7 @@ export default function CandidateFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
+// Temp comment
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />

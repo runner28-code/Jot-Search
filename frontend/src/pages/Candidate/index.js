@@ -61,6 +61,7 @@ export default function Candidate() {
 
     const updatedDisplayObject = candidateData.sourceTable === 'Candidate' ? {
       ...updateObject,
+// Temp comment
       firstName: updateObject.firstname || candidateData.firstname,
       lastName: updateObject.lastname || candidateData.lastname,
     } : updateObject;

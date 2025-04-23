@@ -14,6 +14,7 @@ const CategoryProvider = ({children}) => {
     setCategories(categoriesFromAPI);
   }, [])
   
+  return (
     <CategoryContext.Provider value={{ categories }}>
       {children}
     </CategoryContext.Provider>

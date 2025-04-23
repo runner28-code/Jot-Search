@@ -22,7 +22,6 @@ export default function InvitationsToApply () {
       }});
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
-// Temp comment
       loading: false
     });
   }, []);
@@ -49,7 +48,6 @@ export default function InvitationsToApply () {
                     agoDate={career.createdAt}
                   />
                 </>)
-              })
           }
         </div>)}
     </div>

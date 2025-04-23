@@ -171,3 +171,5 @@ const job_filter_exclude_keys = [
   "graduate",
   "grants",
   "greenhouse",
+  "gutter installer",
+  "gym",

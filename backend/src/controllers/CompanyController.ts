@@ -105,7 +105,6 @@ export class CompanyController {
   }
 
   @Authorized()
-  @Put()
   async insert(
     @Body() body: Company,
     @CurrentUser() authUser: User
@@ -120,3 +119,5 @@ export class CompanyController {
     const bullhornService = new BullhornService();
     await bullhornService.init();
     return await bullhornService.insertCompany(body);
+  }
+

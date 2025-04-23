@@ -34,7 +34,6 @@ async function seedJobs() {
         onSite: "On-Site",
         description: "Come join our rockstar team for good money and team",
         datasource: Datasource.main as any,
-        status: "active",
         categoryId: (await db.category.findFirst({
           where: { name: "Software & Engineering" },
         }))!.id,
@@ -43,6 +42,7 @@ async function seedJobs() {
         title: "Junior Software Engineer",
         companyId: (await db.company.findFirst())?.id,
 
+        address1: "123 Job St",
         city: "Tulsa",
         state: "OK",
         zip: "74008",
@@ -77,3 +77,4 @@ async function seedCandidates() {
         lastName: "Smith",
         phone: "123-456-7891",
         email: "jsmithers@gmail.com",
+        comments: "He does everything!",

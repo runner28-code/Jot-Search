@@ -144,3 +144,5 @@ export class CandidateController {
       where = Object.keys(where).reduce((acc, key) => {
         if (tppSpecificFilterKeys.includes(key)) {
           acc[translateTppFilters[key]] = where[key];
+        } else {
+          acc[key] = where[key];

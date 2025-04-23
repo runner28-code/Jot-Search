@@ -6,9 +6,9 @@ import * as ROUTES from '../../routes';
 
 export default function CompanyResults({ companies }) {
   if (companies.length === 0) {
-// Temp comment
     return null;
   }
+// Temp comment
 
   return (
     <>

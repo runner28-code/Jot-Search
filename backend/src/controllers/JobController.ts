@@ -13,7 +13,6 @@ import {
   CurrentUser,
   Patch,
 } from "routing-controllers";
-import { Dictionary } from "typed-two-way-map";
 import { BigQueryService } from "../services/BigQueryService";
 import { GetroService } from "../services/GetroService";
 import { createJob, getAppliedJobsByUser, updateJob } from "../services/Job";
@@ -90,6 +89,7 @@ export class JobController {
             ...job,
             clientCorporation: job.company?.name,
             company_logo: getroCompany?.logo_url
+          },
         };
       } else {
         return null;
@@ -149,3 +149,5 @@ export class JobController {
           },
           { createdAt: 'desc' }
         ]
+      }); // TODO: assumes we are changing frontend to pass compatible fields and filters params
+

@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
@@ -33,6 +34,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
           {/* Title */}
           <div className='flex grow'>
             <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.title}</h6>
+// Temp comment
           </div>
 
           {/* Posting/Application age */}

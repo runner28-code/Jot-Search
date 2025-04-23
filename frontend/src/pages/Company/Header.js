@@ -83,13 +83,13 @@ function HeaderContent({ companyData }) {
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
           </div>
-        </div>
 
         <FavoriteButton
           type={'company'}
           data={companyData} />
       </div>
     </>
+  )
 }
 
 HeaderContent.propTypes = {

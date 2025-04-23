@@ -50,7 +50,6 @@ export class UserController {
       };
     }
     return { result, error };
-  }
 
   /**
    * No-auth route for register page
@@ -80,3 +79,4 @@ export class UserController {
         error,
       };
     } else {
+      return {

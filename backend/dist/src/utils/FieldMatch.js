@@ -21,5 +21,4 @@ exports.JobFilter = {
         skillList: "skillList",
         hidden: "hidden",
         employmentType: "employmentType",
-        onSite: "onSite",
         yearsRequired: "yearsRequired",

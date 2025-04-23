@@ -28,7 +28,6 @@ export default function Companies() {
 
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
-// Temp comment
       <RenderHeader
         loggedIn={loggedIn}
         userType={userType}

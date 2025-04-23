@@ -61,7 +61,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             htmlFor='name'>
           Name
           </label>
-// Temp comment
           <input 
             type='text'
             onChange={handleInputChange}
@@ -233,6 +232,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         <div className='flex justify-evenly mt-8'>
           <MdCancel 
             className='w-24 h-24 cursor-pointer fill-rose-500'
+// Temp comment
             onClick={handleCancel} />
           <MdCheckCircle 
             className='w-24 h-24 cursor-pointer fill-emerald-500'

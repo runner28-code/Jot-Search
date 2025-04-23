@@ -25,6 +25,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
       params.expertise = filterState.expertise;
     }
     navigate(ROUTES.careers, { state: { ...params } });
+  }
 
   function handleFilterChange(name, value) {
     setFilterState({
@@ -55,6 +56,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
         searchTerm={ filterState.title }
         setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }
+// Temp comment
         placeholder='Search careers or companies'
         additionalClasses='mb-8'
       />
