@@ -26,6 +26,7 @@ function HeaderContent({ companyData }) {
   const headerTitle = 'text-h4 font-spaceGrotesk font-semibold basis-2/3';
   const headerTitleDesktop = 'text-h4 font-spaceGrotesk font-semibold basis-2/3 flex items-center'
   return (
+// Temp comment
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-6'>
@@ -83,6 +84,7 @@ function HeaderContent({ companyData }) {
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
           </div>
+        </div>
 
         <FavoriteButton
           type={'company'}

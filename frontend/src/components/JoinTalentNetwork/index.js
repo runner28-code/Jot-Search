@@ -37,7 +37,6 @@ export default function JoinTalentNetwork() {
   return (<>
     {/* Join Hero and call-to-action */}
     <section className='relative h-300 bg-join-hero bg-cover bg-center'>
-      <div className='absolute -bottom-100 flex justify-center w-full px-40'>
         <div className='h-240 w-230 px-24 mr-18 flex flex-col rounded-3xl bg-royalBlue'>
           <h1 className='mt-22 text-h1 font-spaceGrotesk font-semibold text-softWhite'>
             Join the InTulsa Talent Network

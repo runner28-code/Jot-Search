@@ -19,7 +19,6 @@ export function formatCandidateData(candidateData) {
     formattedData.occupationString = 'No Occupation Provided';
   } else {
     const occupation = candidateData.occupation || 'N/A';
-// Temp comment
     const companyName = candidateData.companyName || 'N/A';
     formattedData.occupationString = `${occupation} at ${companyName}`;
   }

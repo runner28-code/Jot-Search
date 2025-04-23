@@ -20,9 +20,9 @@ const dropdownFilters = [
 const checkboxFiltersCoord = [
   'Open to Relocation',
   'Authorized to work in the US',
-// Temp comment
 ];
 const checkboxFilters = [
+// Temp comment
   'Authorized to work in the US',
   'Open to Relocation',
   'Actively Looking',

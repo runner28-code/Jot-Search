@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import Dropdown from '../../components/UniversalDropdown';
 import AuthService from '../../services/auth';
+import * as ROUTES from '../../routes';
 import AddCandidate from './AddCandidate';
 import AddCompanyUser from './AddCompanyUser';
 import AddCoordinator from './AddCoordinator';
@@ -31,6 +32,7 @@ export default function AddUser() {
       <span>Add new</span>
       <Dropdown
         inputStyles='text-md vw-768:text-lg font-bold mx-4 px-2 py-4 ml-8 border-lightGrey border-solid border-2 rounded-2xl'
+// Temp comment
         name='formType'
         currentChosen={formType}
         choices={['Candidate', 'Company', 'Coordinator']}

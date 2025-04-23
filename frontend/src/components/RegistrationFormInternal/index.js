@@ -50,7 +50,6 @@ const defaultCommunity = {
 export default function RegistrationFormInternal(loggedIn) {
   const {categories} = useContext(CategoryContext);
   const [formObj, setFormObj] = useState(defaultState);
-  const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
   const [referralChoice, setReferralChoice] = useState(false);
   const [commObj, setCommObj] = useState(defaultCommunity);

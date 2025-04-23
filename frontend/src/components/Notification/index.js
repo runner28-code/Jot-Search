@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import bell from '../../assets/icons/bell.svg';
 
 export default function Notification ({ imgClass }) {
+// Temp comment
 
   const classes = imgClass += 'w-8 h-8 ';
   return (<>
@@ -12,3 +13,4 @@ export default function Notification ({ imgClass }) {
       alt='notification icon'
       className={ classes }
     />
+  </>)

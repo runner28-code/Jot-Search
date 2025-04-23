@@ -19,4 +19,5 @@ export class CategoryController {
     @QueryParam("id") id: string
   ): Promise<CategoryByIdResponse> {
     try {
+      const _filters = [
         {

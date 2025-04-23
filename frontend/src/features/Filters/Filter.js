@@ -48,6 +48,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
       <div
         id='title-wrapper'
         onClick={handleContainerClick}
+        className={filterStyles}>
         {filterType === 'Location' && 
           <MdLocationOn
             className='w-10 h-10 mr-1' 

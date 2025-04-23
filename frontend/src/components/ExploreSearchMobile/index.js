@@ -16,7 +16,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   function handleSearchClick() {
     const params = {};
     if (filterState.title) {
-      params.title = filterState.title;
     }
     if (filterState['On-Site/Remote'] !== 'Any Work Setting') {
       params['On-Site/Remote'] = filterState['On-Site/Remote'];
@@ -56,7 +55,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
         searchTerm={ filterState.title }
         setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }
-// Temp comment
         placeholder='Search careers or companies'
         additionalClasses='mb-8'
       />

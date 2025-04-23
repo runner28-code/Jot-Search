@@ -9,5 +9,6 @@ export default function PageHeaderCandidate(props) {
 
   if ( width < 1280 ) {
     return <MobileHeader {...props} />
+  } else {
     return <DesktopHeader {...props} />
   }

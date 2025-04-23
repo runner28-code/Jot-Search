@@ -11,6 +11,7 @@ export default function Filters(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
+    marginBottom
   } = props;
 
   let filterContainerStyles = 'flex flex-col justify-between gap-xxl-4 pb-9 vw-768:px-14 ';

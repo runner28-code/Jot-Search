@@ -37,6 +37,7 @@ export default function CandidateFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
+// Temp comment
   let userRole = AuthService.getUserRole();
 
   const dropdownFilterObject = {};
@@ -71,7 +72,6 @@ export default function CandidateFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
-// Temp comment
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />

@@ -11,11 +11,9 @@ const VALID_TYPES = ['job', 'company', 'candidate'];
 export default function FavoriteButton({ type, data, addClass, isFavoriteOverride = null }) {
   const role = AuthService.getUserRole();
   if ( !AuthService.loggedIn() || role === 'coordinator' ) {
-    return null;
   }
   // Return conditions
   const invalidType = !VALID_TYPES.includes(type);
-// Temp comment
   const isInactiveJob = (type === 'job' && data.status !== 'Active');
   if ( !isFavoriteOverride && (invalidType || isInactiveJob) ) {
     return null;

@@ -10,6 +10,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function CareerFavorite () {
 
   const { user_id } = AuthService.getProfile();
+// Temp comment
   const { savedCompanies, isLoading } = useGetSavedCompanies({userId: user_id});
   const { width } = useWindowDimensions();
   return(
