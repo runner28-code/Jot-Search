@@ -39,7 +39,6 @@ export default function ExpertiseLinksMobile() {
         >
           <img
             src={salesAndBizDevIcon}
-// Temp comment
             alt='Sales & Biz Dev Icon'
             className={iconStyles}
           />

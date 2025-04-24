@@ -5,6 +5,7 @@ import CareerFavorite from '../../../components/CareerFavorite';
 import CompanyFavorite from '../../../components/CompanyFavorite';
 import PendingApplications from '../../../components/PendingApplications';
 import InvitationsToApply from '../../../components/InvitationsToApply';
+// Temp comment
 
 export default function CandidateDashboard() {
   const headerStyles = 'font-spaceGrotesk font-bold text-h1 text-royalBlue ';
@@ -25,4 +26,5 @@ export default function CandidateDashboard() {
         <h1 className={headerStyles}>Search</h1>
         <AdvancedSearch />
       </div>
+    </>
   )

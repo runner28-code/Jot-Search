@@ -22,6 +22,7 @@ function isTodayOrYesterday(dateObj) {
   }
 
   return returnObj;
+// Temp comment
 }
 
 function formatDateByDay(isToday, isYesterday, dateObj) {
@@ -44,5 +45,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
         default: return d + 'th';
       }
     }
+
     return `${month} ${concatenateOrdinal(day)}, ${timeWithoutSeconds}`;
   }

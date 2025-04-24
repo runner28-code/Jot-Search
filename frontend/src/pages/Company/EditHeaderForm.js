@@ -123,7 +123,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           </div>
           <div className='flex flex-col'>
             <div className='flex justify-between mb-4'>
-              <label 
                 className='text-h6 text-royalBlue w-full'
                 htmlFor='address1'>
               Address 1:
@@ -234,7 +233,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className='w-24 h-24 cursor-pointer fill-rose-500'
             onClick={handleCancel} />
           <MdCheckCircle 
-// Temp comment
             className='w-24 h-24 cursor-pointer fill-emerald-500'
             onClick={handleSubmit} />
         </div>

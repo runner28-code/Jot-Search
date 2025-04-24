@@ -80,6 +80,7 @@ export default function CandidateCard({ data, disableLink }) {
           </div>
           {/* Relocation */}
           <InfoLabel
+            label='Relocation'
             value={data.willRelocate}
           />
           {/* Skill List */}

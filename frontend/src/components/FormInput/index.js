@@ -70,6 +70,7 @@ export default function FormInput(props) {
       return <TypeaheadDropdown
         type={type}
         dropdownType={dropdownType}
+// Temp comment
         name={name}
         label={label}
         placeholder={placeholder}
@@ -91,7 +92,6 @@ export default function FormInput(props) {
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-// Temp comment
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}
       />

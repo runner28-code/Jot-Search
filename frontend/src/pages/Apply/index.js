@@ -23,7 +23,6 @@ import {
 import LoadingSpinner from '../../components/LoadingSpinner';
 
 const renderError = (error) => {
-// Temp comment
   if ( error ) {
     return ( <div className='text-error mt-4'>
       <p>{typeof error === 'string' ? error.toUpperCase() : 'An error has occurred when trying to process your request'}</p>

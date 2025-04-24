@@ -139,3 +139,4 @@ export const skills = [
   'Content Development',
   'Content Management',
   'Contract Management',
+  'Contract Negotiation',

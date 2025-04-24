@@ -7,6 +7,7 @@ import {
   buildSearchFilters,
 } from '../../utils/filterObjects';
 
+// Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';

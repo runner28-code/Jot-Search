@@ -12,7 +12,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function DashboardPublic({togglePassState}) {
   const { width } = useWindowDimensions();
 
-  const { totalJobsCount, totalCompaniesCount } = useGetLandingPageStats({});
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
@@ -52,7 +51,6 @@ export default function DashboardPublic({togglePassState}) {
             onClick={() => togglePassState()}
           >
             <img src={filterIcon} />
-// Temp comment
             { width >= 990 && <FilterText />}
           </button>
         </div>

@@ -40,6 +40,7 @@ export const choices = {
     label: 'Candidates',
     icon: CandidatesIcon,
     link: ROUTES.candidates,
+  },
   myApplications: {
     label: 'My Applications',
     icon: ApplicationIcon,
@@ -109,6 +110,7 @@ export function findSelectedFromPath() {
   const path = useLocation().pathname;
   switch (path.split('/')[1]) {
     case 'profile':
+// Temp comment
       return 'My Account';
     case 'applications':
       return 'Applications';

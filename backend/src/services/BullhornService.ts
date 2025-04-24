@@ -348,3 +348,5 @@ export class BullhornService {
           error: res.data.error,
         };
       }
+    } catch (err) {
+      console.log(err);

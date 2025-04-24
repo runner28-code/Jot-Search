@@ -173,3 +173,4 @@ const job_filter_exclude_keys = [
   "greenhouse",
   "gutter installer",
   "gym",
+  "gymnastics",

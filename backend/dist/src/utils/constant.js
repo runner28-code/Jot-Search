@@ -112,6 +112,7 @@ const job_filter_exclude_keys = [
     "delivery",
     "dietary",
     "dietician",
+    "dinner",
     "dishwasher",
     "dispatcher",
     "distribution assistant",
@@ -171,3 +172,4 @@ const job_filter_exclude_keys = [
     "grade",
     "graduate",
     "grants",
+    "greenhouse",

@@ -51,7 +51,6 @@ export class CandidateController {
       if (user) {
         const {
           password,
-          candidate: userCandidate,
           ...returnableUserData
         } = user;
         candidate = {
@@ -114,6 +113,7 @@ export class CandidateController {
       return { message: error, result: false };
     }
   }
+
   @Authorized()
   @Post("/search")
   async searchByFilters(@Body() body: FilterBody) {

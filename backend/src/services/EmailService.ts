@@ -41,3 +41,4 @@ export const sendResetPassword = async (to: string, name: string, token: string)
       url: `${base_url}/reset-password?token=${token}`,
       name: name,
     });
+    return true;

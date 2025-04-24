@@ -99,7 +99,6 @@ export default function Candidate() {
       {role !== 'candidate' && 
         <CandidateCard
           data={candidateData}
-          disableLink
         />
       }
       {/* My Preferences (Candidate Only) */}

@@ -91,3 +91,4 @@ module.exports = {
       spacing: {
         // Styleguide Spacing
         'xxs': '4px',
+        'xs': '8px',

@@ -9,7 +9,6 @@ import locationIcon from '../../../assets/icons/placepin.svg';
 import linkedinIcon from '../../../assets/icons/linkedin-circle.svg';
 import websiteIcon from '../../../assets/icons/globe.svg';
 import { buildCompanyAddress } from '../../../utils/formatFunctions';
-// Temp comment
 import useWindowDimensions from '../../../hooks/windowDimensions';
 import { useGetJobs } from '../../../hooks/queries/useGetJobs';
 
@@ -54,6 +53,7 @@ export default function CompanyCard({ data }) {
             {/* Location */}
             <div className='w-1/3 flex items-center'>
               <img
+// Temp comment
                 src={locationIcon}
                 className='h-8 mr-6 ml-1' />
               <p className='text-textBlack'>{addressString}</p>

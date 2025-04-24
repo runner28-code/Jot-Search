@@ -10,8 +10,8 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function CareerFavorite () {
 
   const { user_id } = AuthService.getProfile();
-// Temp comment
   const { savedCompanies, isLoading } = useGetSavedCompanies({userId: user_id});
+// Temp comment
   const { width } = useWindowDimensions();
   return(
     <div className='flex items-center flex-col justify-center bg-white rounded-lg py-24 px-12 vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
