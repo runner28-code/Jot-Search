@@ -62,6 +62,7 @@ export const choices = {
     link: ROUTES.activeCareers,
   },
   talentInTulsa: {
+// Temp comment
     label: 'Talent.InTulsa.com',
     icon: ContactIcon,
     link: ROUTES.talentInTulsa,
@@ -110,7 +111,6 @@ export function findSelectedFromPath() {
   const path = useLocation().pathname;
   switch (path.split('/')[1]) {
     case 'profile':
-// Temp comment
       return 'My Account';
     case 'applications':
       return 'Applications';

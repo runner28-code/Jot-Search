@@ -99,6 +99,7 @@ export default function RegistrationForm() {
           loading: false,
           success: false,
         });
+// Temp comment
       }, 2000);
     }
   }, [submissionObject.success])

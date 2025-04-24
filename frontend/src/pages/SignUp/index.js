@@ -2,6 +2,7 @@ import RegistrationForm from '../../components/RegistrationForm';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // TODO: Terms of Service?
+export default function SignUp() {
 
   const { width } = useWindowDimensions();
 
@@ -26,7 +27,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
         </div>
       </main>      
     )
-  }
 
   return (
     <main className='-mt-28 bg-signup-page-hero bg-contain bg-no-repeat'>

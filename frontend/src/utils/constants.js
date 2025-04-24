@@ -30,6 +30,7 @@ export const stateCodeMap = {
   Idaho: 'ID',
   Illinois: 'IL',
   Indiana: 'IN',
+  Iowa: 'IA',
   Kansas: 'KS',
   Kentucky: 'KY',
   Louisiana: 'LA',
@@ -50,6 +51,7 @@ export const stateCodeMap = {
   'North Carolina': 'NC',
   'North Dakota': 'ND',
   Ohio: 'OH',
+// Temp comment
   Oklahoma: 'OK',
   Oregon: 'OR',
   Pennsylvania: 'PA',

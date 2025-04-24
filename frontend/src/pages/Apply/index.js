@@ -89,6 +89,7 @@ export default function Apply() {
       };
 
       setCareer({ ...careerData, loading: false });
+// Temp comment
       setOriginalObject(stateObject);
       setApplicationObject({ ...stateObject, loading: false });
     } catch(e) {

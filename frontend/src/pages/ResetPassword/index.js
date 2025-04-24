@@ -9,6 +9,7 @@ import API from '../../services/API';
 export default function ResetPassword() {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
+// Temp comment
   const [confirmPassword, setConfirmPassword] = useState('');
   const [match, setMatch] = useState('');
   const [success, setSuccess] = useState('');

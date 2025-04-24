@@ -65,6 +65,7 @@ export class GetroService {
     async getCompanies(testMode = false, per_page = 30): Promise<any> {
         console.log('\n***** getCompanies *****');
         let page = 1;
+        let repeatErr = 0;
 
         while (repeatErr < 3) {
             try {

@@ -29,9 +29,9 @@ export default function Companies() {
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
-// Temp comment
         loggedIn={loggedIn}
         userType={userType}
+// Temp comment
         togglePassState={togglePassState}
         toggle={toggle}
       />

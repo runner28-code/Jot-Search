@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import { uploadFile } from '../../../services/API';
 
 export default function EditResumeForm({ handleChange }) {
@@ -13,7 +12,6 @@ export default function EditResumeForm({ handleChange }) {
       },
     };
     handleChange( fakeEvent );
-  }
   
   return (
     <div className='flex flex-col'>

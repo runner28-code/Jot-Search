@@ -19,6 +19,7 @@ export default function Auth() {
     return <Navigate to={ROUTES.landingPage} />
   }
 
+  return ( 
     <div className='vw-640:pl-20 vw-640:pr-20 vw-1280:pl-0'>
       <Routes>
         <Route
@@ -34,7 +35,6 @@ export default function Auth() {
         <Route
           path={`${ROUTES.candidates}/:id`}
           element={<Candidate />} />
-        <Route
           path={ROUTES.applications}
           element={<Applications />} />
         <Route

@@ -76,7 +76,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   }
 
   const disabled = !editMode
-  const disabledStyles = disabled ? 'disabled cursor-not-allowed bg-grey300' : '';
 
   const avatarUrl = appendPathToBaseUrl(formData.avatar);
   const resumeUrl = formData.resume ? appendPathToBaseUrl(formData.resume) : null;

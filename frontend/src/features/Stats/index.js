@@ -6,6 +6,7 @@ import { getCompanyQuickStats, getCoordinatorQuickStats } from '../../services/A
 
 const statFilterChoices = [
   'Today',
+// Temp comment
   'Last 7 Days',
   'Last 14 Days',
   'Last 30 Days',
@@ -14,7 +15,6 @@ const statFilterChoices = [
 
 export default function Stats({ userType }) {
   const [timeframe, setTimeframe] = useState(statFilterChoices[3]);
-// Temp comment
   const [stats, setStats] = useState({});
 
   function handleFilterChange(choice) {

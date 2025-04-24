@@ -152,7 +152,6 @@ const job_filter_exclude_keys = [
     "field coach",
     "field service",
     "financial aid",
-    "financial counselor",
     "fire",
     "fleet",
     "food",

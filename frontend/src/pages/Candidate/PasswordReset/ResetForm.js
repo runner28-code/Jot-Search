@@ -52,6 +52,7 @@ export default function ResetForm({ candidateData, setType }) {
           label='New Password'
         />
         <FormInput
+// Temp comment
           type='text'
           name='passwordConfirm'
           value={formData.passwordConfirm}
@@ -67,3 +68,4 @@ export default function ResetForm({ candidateData, setType }) {
         Reset Password
       </button>
     </div>
+  )

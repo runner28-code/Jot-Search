@@ -53,6 +53,7 @@ export default function DesktopLayout(props) {
           {/* First row icons */}
           <div className='w-full flex items-center mt-xl'>
             {/* Location */}
+            <div className='w-1/3 flex items-center'>
               <img
                 src={locationIcon}
                 className='h-8 mr-5' />

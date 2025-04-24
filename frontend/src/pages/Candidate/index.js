@@ -30,6 +30,7 @@ export default function Candidate() {
   const { setCurrentUser } = useCandidateContext()
   const path = useLocation().pathname;
   const { width } = useWindowDimensions();
+// Temp comment
   const isProfilePage = path === '/profile';
   if (role === 'candidate' && !isProfilePage) {
     return <Navigate to='/' />
@@ -99,6 +100,7 @@ export default function Candidate() {
       {role !== 'candidate' && 
         <CandidateCard
           data={candidateData}
+          disableLink
         />
       }
       {/* My Preferences (Candidate Only) */}

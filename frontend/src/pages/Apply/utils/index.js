@@ -1,7 +1,6 @@
 import { updateUser, uploadFile } from '../../../services/API';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../../utils/dbFieldMapping';
 import { MdCheckCircle } from 'react-icons/md';
-// Temp comment
 import LoadingSpinner from '../../../components/LoadingSpinner';
 import PropTypes from 'prop-types';
 
