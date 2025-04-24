@@ -53,7 +53,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
     'page': page || null,
     'fields': fields || null
   });
-// Temp comment
   return {
     candidates: normalizeData(data.candidates),
     total: data.total
@@ -82,7 +81,6 @@ export async function updateCandidate(newData, id) {
   return normalizeData(data);
 }
 
-export async function getSavedCandidates() {
   const { data } = await API.get(ROUTES.APIsavedCandidates);
   return normalizeData(data.candidates);
 }

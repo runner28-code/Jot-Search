@@ -1,4 +1,5 @@
 import {
+  Controller,
   Param,
   Body,
   Get,
@@ -80,3 +81,4 @@ export class UserController {
       };
     } else {
       return {
+        result: false,

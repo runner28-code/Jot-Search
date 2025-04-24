@@ -83,6 +83,7 @@ function HeaderContent({ companyData }) {
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
           </div>
+        </div>
 
         <FavoriteButton
           type={'company'}
@@ -128,6 +129,7 @@ function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'my-auto object-contain';
   if( width >= 1280 ) {
+// Temp comment
     return null;
   }
   if (!logoUrl) {

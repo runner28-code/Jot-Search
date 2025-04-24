@@ -264,3 +264,5 @@ model Company {
 
   customInt1 Int?
   customInt2 Int?
+  customInt3 Int?
+

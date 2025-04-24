@@ -25,6 +25,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
 
+const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
@@ -60,6 +61,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);
+// Temp comment
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {

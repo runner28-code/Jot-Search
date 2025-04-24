@@ -58,7 +58,6 @@ async function seedJobs() {
         }))!.id,
       },
     ],
-  });
 }
 
 async function seedCandidates() {
@@ -79,3 +78,4 @@ async function seedCandidates() {
         phone: "123-456-7891",
         email: "jsmithers@gmail.com",
         comments: "He does everything!",
+      },

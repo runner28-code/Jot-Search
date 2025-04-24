@@ -116,3 +116,4 @@ export type Job = {
     travelRequirements?: string;
     type?: string;
     willRelocate?: string;
+    yearsRequired?: string;

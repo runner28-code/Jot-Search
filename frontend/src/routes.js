@@ -25,6 +25,7 @@ export const savedCompanies = '/saved-companies';
 // Company Dashboard
 export const candidates = '/candidates';
 export const savedCandidates = '/saved-candidates';
+export const activeCareers = '/active-careers';
 export const companyQuickStats = '/company-stats';
 // Coordinator Dashboard
 export const addUser = '/add-user';

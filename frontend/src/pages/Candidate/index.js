@@ -5,7 +5,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import PageHeader from '../../components/PageHeader';
 import CandidateCard from '../../features/ResultCard/CandidateCard';
 import { getCandidateById, updateUser, updateCandidate } from '../../services/API';
-import AuthService from '../../services/auth';
 import { formatCandidateData, convertUserToCandidate } from '../../utils/formatFunctions';
 import { PreferenceItem } from './PreferenceItem';
 import PersonalInfo from './PersonalInfo';
@@ -147,6 +146,5 @@ export default function Candidate() {
           candidateData={candidateData}
         />
       </div>
-// Temp comment
     </div>
   )

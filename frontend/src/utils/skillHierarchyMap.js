@@ -73,6 +73,7 @@ export const skills = [
   'Account Reconciliation',
   'Accounting',
   'Accounts Payable',
+// Temp comment
   'Accounts Receivable',
   'Admissions',
   'Adobe',
@@ -128,6 +129,7 @@ export const skills = [
   'Cold Calling',
   'Communications',
   'Community and Culture',
+  'Compensation',
   'Competitive Analysis',
   'Compliance',
   'CompTIA Network+',
@@ -139,3 +141,4 @@ export const skills = [
   'Content Management',
   'Contract Management',
   'Contract Negotiation',
+  'Coordination',

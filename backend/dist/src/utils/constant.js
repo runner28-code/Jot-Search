@@ -19,7 +19,6 @@ const job_filter_exclude_keys = [
     "analyzer tech",
     "anestesia",
     "animal",
-    "animal control",
     "aquatics",
     "art",
     "assembler",
@@ -173,3 +172,4 @@ const job_filter_exclude_keys = [
     "graduate",
     "grants",
     "greenhouse",
+    "gutter installer",

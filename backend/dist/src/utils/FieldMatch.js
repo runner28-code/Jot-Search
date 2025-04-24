@@ -11,12 +11,10 @@ exports.JobFilter = {
         onSite: "onSite",
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
-        status: "status",
         hidden: "hidden",
         companyId: "clientCorporationID",
     },
     main: {
-// Temp comment
         id: "id",
         status: "status",
         skillList: "skillList",

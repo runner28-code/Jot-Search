@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
@@ -126,6 +127,7 @@ function LinkWrapper({ children, link, disableLink }) {
     return (
       <div className={baseStyles}>
         {children}
+      </div>
     );
   }
 

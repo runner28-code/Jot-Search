@@ -146,3 +146,4 @@ export class CandidateController {
           acc[translateTppFilters[key]] = where[key];
         } else {
           acc[key] = where[key];
+        }

@@ -3,6 +3,7 @@ import FilterSearch from '../../components/FilterSearch';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CompanyFilterLayout(props) {
+// Temp comment
   const {
     searchTerm,
     setSearchTerm,

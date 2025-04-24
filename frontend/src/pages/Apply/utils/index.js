@@ -39,7 +39,6 @@ export const defaultState = {
   disability: '',
   veteran: '',
   loading: true
-}
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
   function handleChange(e) {

@@ -109,6 +109,7 @@ const job_filter_exclude_keys = [
   "defender",
   "delivery",
   "dietary",
+  "dietician",
   "dinner",
   "dishwasher",
   "dispatcher",
@@ -173,3 +174,4 @@ const job_filter_exclude_keys = [
   "gutter installer",
   "gym",
   "gymnastics",
+  "health",

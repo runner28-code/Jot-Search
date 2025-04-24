@@ -7,7 +7,6 @@ import * as ROUTES from '../../routes';
 export default function CandidateResults({ candidates }) {
   const role = AuthService.getUserRole();
   if (candidates.length === 0 || role === 'candidate') {
-// Temp comment
     return null;
   }
 
@@ -17,6 +16,7 @@ export default function CandidateResults({ candidates }) {
       { candidates.map(candidate => {
         return (
           <CandidateResult 
+// Temp comment
             candidate={candidate} 
             key={candidate.id} />
         )

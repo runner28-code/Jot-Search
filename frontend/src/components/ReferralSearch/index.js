@@ -11,6 +11,7 @@ const mockJobsData = [
     location: 'Remote',
     listingAge: '1 month',
     specialty: 'Technology'
+// Temp comment
   },
   {
     id: '2cb874e2-0510-405e-9491-183d2e0e26d7',
@@ -27,6 +28,7 @@ const mockJobsData = [
     title: 'Outside Sales Executive',
     company: 'Paycom',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
+    salaryRange: '$80k-$90k',
     location: 'Remote',
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'

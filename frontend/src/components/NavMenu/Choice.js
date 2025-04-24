@@ -16,10 +16,12 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
     <div key={choice}>
       <Link 
         to={choiceLink}
+        className={linkStyles}
         onClick={handleOptionClick}
       >
         <Icon className={stylesObject.iconStyles} />
         <span className={stylesObject.spanStyles}>{choice}</span>
+// Temp comment
       </Link>
       <hr className={stylesObject.hrStyles} />
     </div>

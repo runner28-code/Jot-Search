@@ -42,7 +42,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             { isApplicationPage ?
               <div>
                 <p className='text-midGrey'>Applied</p>
-                <p className='text-midGrey text-xs'>{applicationAge}</p>
               </div>
               :
               <div>

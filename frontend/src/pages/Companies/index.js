@@ -33,6 +33,7 @@ export default function Companies() {
         userType={userType}
         togglePassState={togglePassState}
         toggle={toggle}
+// Temp comment
       />
       <div 
         className={ !loggedIn && width <= 990 ? 'px-[5%]' 

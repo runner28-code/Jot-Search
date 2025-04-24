@@ -79,6 +79,7 @@ export default function Applications() {
             selectable: true,
             selected: selectedApplications,
             handleClick: handleCheckClick
+          }}
         />
       </div>
     </section>

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import PhoneInput from 'react-phone-number-input/input'
 import Dropdown from '../../components/UniversalDropdown';
 import FormInput from '../../components/FormInput';
-// Temp comment
 import { SwitchButton } from './PreferenceItem';
 import { FiEdit } from 'react-icons/fi';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -21,7 +20,6 @@ const PREFERENCE_ITEMS = {
 
 export default function PersonalInfo({role, candidateData, handleCandidateUpdate}) {
   if ( role === 'company' ) {
-    return null;
   }
   const [formData, setFormData] = useState({
     firstname: candidateData.firstname || '',

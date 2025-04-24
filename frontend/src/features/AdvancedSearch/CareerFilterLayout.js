@@ -5,7 +5,6 @@ import AuthService from '../../services/auth';
 
 const dropdownFilters = [
   'Expertise',
-  'On-Site/Remote',
   'Years Experience',
   'Status',
 ];
@@ -15,7 +14,6 @@ const dropDownFiltersCandidate = [
   'On-Site/Remote',
   'Years Experience'
 ]
-// Temp comment
 
 export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();

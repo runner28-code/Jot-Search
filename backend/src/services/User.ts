@@ -222,3 +222,5 @@ export const getUserById = async (id: string) => {
   }
 };
 
+export const isExistUser = async (field: string, value: string) => {
+  try {

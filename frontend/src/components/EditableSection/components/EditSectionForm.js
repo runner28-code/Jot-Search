@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { startCase } from 'lodash';
+// Temp comment
 import EditSummaryForm from './EditSummaryForm';
 import EditSkillsForm from './EditSkillsForm';
 import EditExpertiseForm from './EditExpertiseForm';
@@ -27,7 +28,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   }
   if ( propertyName === 'expertise' ) {
     return <EditExpertiseForm 
-// Temp comment
       expertise={contentObject[propertyName]}
       handleChange={handleChange} />
   }

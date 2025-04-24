@@ -25,3 +25,4 @@ export const genderMap = {
   O: 'Other'
 };
 
+export const ethnicityMap = {

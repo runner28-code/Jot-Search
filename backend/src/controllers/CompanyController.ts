@@ -43,7 +43,6 @@ import { normalizeFilters } from "./JobController";
 @JsonController("/api/company")
 export class CompanyController {
   @Get("/search")
-  async searchJobByID(
     @QueryParam("id") id: string
   ): Promise<CompanySearchByID> {
     const datasource = getDataSource(id);
@@ -123,3 +122,4 @@ export class CompanyController {
   }
 
   @Authorized()
+  @Get("/saved")

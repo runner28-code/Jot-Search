@@ -21,6 +21,7 @@ export default function ResetForm({ candidateData, setType }) {
 
     if( formData.password === formData.confirmPassword ) {
       setMatch(true);
+// Temp comment
       const { password } = event.target;
       const res = await API.post(ROUTES.APIResetPassword, {
         new_password: password.value,
@@ -45,6 +46,7 @@ export default function ResetForm({ candidateData, setType }) {
     <div>
       <div className='w-140'>
         <FormInput
+          type='text'
           name='password'
           value={formData.password}
           onChange={handleChange}
