@@ -81,6 +81,7 @@ export class BullhornService {
       // Try saving the file.
       fs.writeFile(targetFile, JSON.stringify(data), { flag: "w+" }, (err) => {
         if (err) reject(err);
+        else {
           resolve(targetFile);
         }
       });

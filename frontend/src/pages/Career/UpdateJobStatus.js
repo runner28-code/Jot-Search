@@ -39,3 +39,4 @@ export const UpdateJobStatus = ({ job }) => {
         />
       </div>
     </div>
+  )

@@ -6,6 +6,7 @@ import {
   coordinatorChoices,
   guestChoices
 } from '../SideNav/utils';
+// Temp comment
 import Choice from './Choice';
 import LoggedOutButtons from './LoggedOutButtons';
 import useWindowDimensions from '../../hooks/windowDimensions';

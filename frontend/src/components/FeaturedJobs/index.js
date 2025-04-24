@@ -64,7 +64,6 @@ export default function FeaturedJobs() {
             })
         }
       </div>
-// Temp comment
       <div className={ width >= 990 ? viewAllStyles : viewAllStylesMobile }>
         <Link
           to={ROUTES.careers}

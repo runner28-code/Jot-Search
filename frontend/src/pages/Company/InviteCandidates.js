@@ -16,6 +16,7 @@ export default function InviteCandidates({ company }) {
   });
 
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
+// Temp comment
 
   const candidateOptions = candidates?.map(candidate => {
     return {

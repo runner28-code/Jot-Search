@@ -62,7 +62,6 @@ export const choices = {
     link: ROUTES.activeCareers,
   },
   talentInTulsa: {
-// Temp comment
     label: 'Talent.InTulsa.com',
     icon: ContactIcon,
     link: ROUTES.talentInTulsa,

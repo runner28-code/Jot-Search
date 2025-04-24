@@ -99,7 +99,6 @@ export default function RegistrationForm() {
           loading: false,
           success: false,
         });
-// Temp comment
       }, 2000);
     }
   }, [submissionObject.success])
@@ -279,6 +278,5 @@ export default function RegistrationForm() {
         </div>
       </div>
       { renderErrorBlock(errorBlock) }
-      { renderButtonOrLoading(submissionObject, buttonString, buttonStyles) }
     </form>
   )

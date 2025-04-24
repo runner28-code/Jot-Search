@@ -32,7 +32,6 @@ function HeaderContent({ companyData }) {
               {companyData.name}
             </h4>
             <div className='flex items-center'>
-              <div className={ headerGroupStyles }>
                 <img
                   src={PlacePin}
                   className={headerIconStyles}

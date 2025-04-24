@@ -67,6 +67,7 @@ export function convertUserToCandidate(user) {
 export function formatCandidateName(firstName, lastName) {
   if ( !firstName && !lastName ) return '';
   if ( !firstName ) return lastName;
+// Temp comment
   if ( !lastName ) return firstName;
   return `${firstName} ${lastName}`;
 }

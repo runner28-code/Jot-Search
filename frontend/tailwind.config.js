@@ -16,7 +16,6 @@ module.exports = {
           from: {
             transform: 'rotate(0deg)'
           },
-          to: {
             transform: 'rotate(180deg)'
           },
         },
@@ -61,6 +60,7 @@ module.exports = {
         buttonLightBlue: '#00CADB',
         'blue70%': '#216bb2b3',
         blueSquare: '#4A53A4',
+        blueSquare2: '#30BED3',
         indigoSquare: '#4A53A4',
         cyanSquare: '#1ECADB',
         pinkSquare: '#EB4A87',

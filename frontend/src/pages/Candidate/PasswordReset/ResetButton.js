@@ -6,7 +6,6 @@ import useWindowDimensions from '../../../hooks/windowDimensions';
 
 export default function ResetButton({ candidateData, setType }) {
   const { width } = useWindowDimensions();
-// Temp comment
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email } = candidateData;

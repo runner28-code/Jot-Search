@@ -128,7 +128,6 @@ export const skills = [
   'Cold Calling',
   'Communications',
   'Community and Culture',
-  'Compensation',
   'Competitive Analysis',
   'Compliance',
   'CompTIA Network+',

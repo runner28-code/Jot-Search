@@ -44,6 +44,7 @@ export default function Applications() {
     const currentHiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
     const newHiddenApplications = [...currentHiddenApplications, ...selectedApplications];
     localStorage.setItem('hiddenApplications', JSON.stringify(newHiddenApplications));
+    setSelectedApplications([]);
     setAppliedJobsObject({
       ...appliedJobsObject,
       filteredJobs: appliedJobsObject.jobs.filter(job => !newHiddenApplications.includes(job.id))
@@ -78,7 +79,6 @@ export default function Applications() {
             selectable: true,
             selected: selectedApplications,
             handleClick: handleCheckClick
-          }}
         />
       </div>
     </section>

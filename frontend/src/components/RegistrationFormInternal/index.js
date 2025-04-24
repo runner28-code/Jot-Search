@@ -77,6 +77,7 @@ export default function RegistrationFormInternal(loggedIn) {
         setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({
           loading: false,
+          success: false,
         });
         return;
       }

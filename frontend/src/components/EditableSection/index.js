@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// Temp comment
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import SectionContent from './components/SectionContent';
@@ -12,5 +13,4 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
 
   function handleSubmit() {
     setEditMode(false);
-// Temp comment
     handleContentUpdate(contentObject);

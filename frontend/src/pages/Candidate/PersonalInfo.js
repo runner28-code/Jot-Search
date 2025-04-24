@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import PhoneInput from 'react-phone-number-input/input'
 import Dropdown from '../../components/UniversalDropdown';
 import FormInput from '../../components/FormInput';
+// Temp comment
 import { SwitchButton } from './PreferenceItem';
 import { FiEdit } from 'react-icons/fi';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -47,4 +48,5 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   function handleChange(name, value) {
     setFormData({
       ...formData,
+      [name]: value,
     });

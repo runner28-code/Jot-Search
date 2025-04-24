@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
@@ -18,7 +19,6 @@ export default function MobileHeader(props) {
   return (
     <div className='flex items-center mb-10 pl-l py-s bg-royalBlue'>
       { backButton && (
-// Temp comment
         <button
           className='text-s bg-cyan font-semibold text-white rounded-2xl px-5 py-2 mr-xl font-spaceGrotesk'
           onClick={() => navigate(-1)}
