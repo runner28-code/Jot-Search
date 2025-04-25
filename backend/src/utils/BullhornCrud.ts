@@ -107,3 +107,4 @@ export const saveBullhornJobs = async (jobs: any[]) => {
   ];
   try {
     for (const job of jobs) {
+      try {

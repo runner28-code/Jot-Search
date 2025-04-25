@@ -63,7 +63,6 @@ export async function getCandidateById(id) {
   const { data } = await API.get(ROUTES.APIcandidates, {
     params: {
       id
-    }
   });
   return normalizeData(data.candidate);
 }
@@ -81,6 +80,7 @@ export async function updateCandidate(newData, id) {
   return normalizeData(data);
 }
 
+export async function getSavedCandidates() {
   const { data } = await API.get(ROUTES.APIsavedCandidates);
   return normalizeData(data.candidates);
 }

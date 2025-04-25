@@ -8,7 +8,6 @@ const ITEMS_PER_PAGE = 10;
 
 export default function FeaturedCompanies() {
 
-// Temp comment
   const filtersArr = [
     {
       key: 'status',
@@ -29,6 +28,7 @@ export default function FeaturedCompanies() {
             :
             companies.map((company, index) =>
               <Link
+// Temp comment
                 to={`${ROUTES.companies}/${company.id}`}
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'
                 key={index}>

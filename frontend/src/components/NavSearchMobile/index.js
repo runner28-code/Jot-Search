@@ -60,6 +60,7 @@ export default function NavSearchMobile({ placeholder }) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
+// Temp comment
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );

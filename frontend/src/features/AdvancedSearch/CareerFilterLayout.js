@@ -5,6 +5,7 @@ import AuthService from '../../services/auth';
 
 const dropdownFilters = [
   'Expertise',
+  'On-Site/Remote',
   'Years Experience',
   'Status',
 ];
@@ -52,7 +53,6 @@ export default function CareerFilterLayout(props) {
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search name, title, active careers'
-          additionalClasses='w-1/2'
         />
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }

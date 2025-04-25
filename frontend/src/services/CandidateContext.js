@@ -92,6 +92,7 @@ const mockCandidateData = [
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
+    isLooking: false,
     isWarm: false,
   },
 ];

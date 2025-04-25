@@ -25,7 +25,6 @@ export default function ActiveCareers() {
     setSearchTerm(searchTerm);
     setPage(1);
   }
-
   const filtersArr = buildSearchFilters({ title: searchTerm, companyId, status: ['Active', 'Open'] });
 
   const { jobs, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});

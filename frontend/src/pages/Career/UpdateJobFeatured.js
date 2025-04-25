@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
+
 export const UpdateJobFeatured = ({ job }) => {
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
 
@@ -8,6 +9,7 @@ export const UpdateJobFeatured = ({ job }) => {
 
 
   const enabledButtonStyle = 'bg-green text-white'
+// Temp comment
   const disabledButtonStyle = 'bg-grey300'
 
   const buttonStyles = toggled ? enabledButtonStyle : disabledButtonStyle

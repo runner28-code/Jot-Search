@@ -19,6 +19,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   if ( !isFavoriteOverride && (invalidType || isInactiveJob) ) {
     return null;
   }
+
   const item_id = getIdByType(type, data);
   const savedItems = getItemsByType(type);
   const isSaved = savedItems.includes(item_id);
@@ -30,7 +31,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const handleFavoriteClick = async () => {
     setIsFavorite(isFavorite => !isFavorite);
     try {
-      await saveItemByType(type, user_id, item_id);
     } catch (error) {
       console.log(error);
       setIsFavorite(isFavorite => isFavorite);

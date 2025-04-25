@@ -29,6 +29,7 @@ export type Company = {
     externalID?: string,
     feeArrangement?: string,
     funding?: string,
+    industryList?: string,
     invoiceFormat?: string,
     name?: string,
     notes?: string,

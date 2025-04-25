@@ -21,6 +21,7 @@ function HeaderContent({ companyData }) {
   return (
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
+      <div className='grow p-2'>
         <div className='flex flex-wrap items-center mb-4'>
           <div className='basis-2/6'>
             { renderCompanyLogo(companyData.logo, companyData.name) }
@@ -57,7 +58,6 @@ function HeaderContent({ companyData }) {
       </div>
     </>
   )
-}
 
 HeaderContent.propTypes = {
   companyData: PropTypes.shape({

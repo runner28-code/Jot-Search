@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLocked, absolute = true }) {
 
@@ -10,6 +11,7 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
           choice={choice}
           activeTab={activeTab}
           setActiveTab={setActiveTab}
+// Temp comment
           isLocked={isLocked}
         />
       })}

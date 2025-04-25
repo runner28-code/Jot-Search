@@ -20,8 +20,8 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
         onClick={handleOptionClick}
       >
         <Icon className={stylesObject.iconStyles} />
-        <span className={stylesObject.spanStyles}>{choice}</span>
 // Temp comment
+        <span className={stylesObject.spanStyles}>{choice}</span>
       </Link>
       <hr className={stylesObject.hrStyles} />
     </div>

@@ -19,7 +19,6 @@ export type Company = {
     topics?: string;
     twitter_url?: string;
     url?: string;
-    website_url?: string;
     managers?: string;
     network_id?: string;
     locations?: string;

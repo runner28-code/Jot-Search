@@ -42,7 +42,6 @@ export default function CareerCard({ data, active }) {
             dataObj={dataObj}
             active={active}
           />
-// Temp comment
           :
           <MobileCard
             dataObj={dataObj}

@@ -28,7 +28,6 @@ const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
-  guest: ['jobs', 'companies'],
 }
 
 function useTabState(disabledTabs, userType, pathname) {
@@ -57,7 +56,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
   }
 
-// Temp comment
   const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);
 

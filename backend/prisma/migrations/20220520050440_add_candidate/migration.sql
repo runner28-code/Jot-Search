@@ -14,6 +14,7 @@ CREATE TABLE "Candidate" (
     "dateLastComment" TIMESTAMP(3),
     "dateLastModified" TIMESTAMP(3),
     "dateNextCall" TIMESTAMP(3),
+    "dateOfBirth" TEXT,
     "dayRate" TEXT,
     "dayRateLow" TEXT,
     "degreeList" TEXT,
@@ -33,3 +34,4 @@ CREATE TABLE "Candidate" (
     "fax2" TEXT,
     "fax3" TEXT,
     "firstName" TEXT,
+    "lastName" TEXT,

@@ -147,3 +147,4 @@ export class CandidateController {
         } else {
           acc[key] = where[key];
         }
+        return acc;

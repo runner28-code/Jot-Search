@@ -39,6 +39,7 @@ const mockJobsData = [
     location_state: 'OK',
     onSite: true,
     listingAge: '1 month',
+    specialty: 'Technology'
   },
   {
     id: '07caa54e-d5f4-4b2a-95a3-7eeca90c06f5',
@@ -54,7 +55,6 @@ const mockJobsData = [
     specialty: 'Technology'
   },
   {
-    id: 'c79462d2-1950-4cc0-ba31-a21a566c3c9d',
     title: 'Payroll Administrator',
     company: 'Holberton',
     clientCorporationID: '36534b9b-c225-4a59-9286-8d4203d582db',

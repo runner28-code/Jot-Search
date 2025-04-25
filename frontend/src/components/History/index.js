@@ -10,7 +10,6 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
   }
   const viewAllHref = `/candidates/history/${id}`;
   return (<>
-// Temp comment
     <section className='mb-24'>
       <h4 className={headerStyles}>History</h4>
       {historyArr.map(historyObj => (
@@ -23,4 +22,5 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
         text='View Full History' />
     </section>
     <hr className={hrStyles} />
+// Temp comment
   </>)
