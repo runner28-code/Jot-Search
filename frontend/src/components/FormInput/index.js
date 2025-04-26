@@ -26,7 +26,6 @@ export default function FormInput(props) {
     disabled
   } = props;
 
-// Temp comment
   let componentStyles = inputStyles;
   componentStyles += (error ? errorBorder : regularBorder);
   componentStyles += disabled ? 'bg-grey300 cursor-not-allowed ' : 'bg-lightGrey ';

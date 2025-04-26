@@ -64,7 +64,6 @@ export const candidateFilterObject = {
   'Experience': [
     'Any',
     ...experienceValues
-  ],
   'Open to Relocation': [
     'Any',
     'Yes',

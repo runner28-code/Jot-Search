@@ -105,7 +105,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className='text-h6 text-royalBlue w-full'
             htmlFor='companyName'>
           Company
-          </label>
           <input 
             type='text'
             onChange={handleInputChange}
@@ -216,6 +215,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           <label
             className='text-h6 text-royalBlue flex items-center'
             htmlFor='email'
+          >
             <IoIosMail
               className={iconStyles + 'fill-royalBlue'} />
               Email:

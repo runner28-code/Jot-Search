@@ -20,7 +20,6 @@ const job_filter_exclude_keys = [
     "anestesia",
     "animal",
     "animal control",
-// Temp comment
     "aquatics",
     "art",
     "assembler",
@@ -84,7 +83,6 @@ const job_filter_exclude_keys = [
     "clinician",
     "club",
     "cna",
-    "collection",
     "collector",
     "college",
     "compliance",

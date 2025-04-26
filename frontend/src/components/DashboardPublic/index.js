@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageStats';
-// Temp comment
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import filterIcon from '../../assets/icons/filter-toggle.svg';

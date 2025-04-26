@@ -46,7 +46,6 @@ export default function Company() {
   }
   companyData.address = buildCandidateAddress(companyData);
   companyData.employeeString = companyData.numEmployees ? `${companyData.numEmployees} Employees` : 'N/A';
-// Temp comment
   companyData.fundingString = companyData.funding === 'not applicable' ? 'Funding N/A' : companyData.funding;
   companyData.description = companyData.getro_description ? companyData.getro_description : companyData.bh_description;
 
@@ -101,7 +100,6 @@ export default function Company() {
         <div className='mt-12'>
           <button
             className='border border-2 border-royalBlue text-royalBlue py-6 px-20 text-lg rounded-xl mb-12'
-            onClick={() => navigate(-1)}
           >
           Back
           </button>

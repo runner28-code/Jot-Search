@@ -17,7 +17,6 @@ export const resetPassword = '/reset-password';
 export const dashboard = '/';
 export const careers = '/careers';
 export const companies = '/companies';
-// Candidate Dashboard
 export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';
 export const savedCareers = '/saved-careers';
@@ -28,6 +27,7 @@ export const savedCandidates = '/saved-candidates';
 export const activeCareers = '/active-careers';
 export const companyQuickStats = '/company-stats';
 // Coordinator Dashboard
+export const addUser = '/add-user';
 export const alerts = '/alerts';
 
 export const careerSeekers = '/career-seeker';

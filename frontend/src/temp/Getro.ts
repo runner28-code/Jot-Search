@@ -26,4 +26,5 @@ export type Company = {
     collections?: string;
 }
 
+export type Job = {
     id: string;

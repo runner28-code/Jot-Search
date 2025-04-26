@@ -88,6 +88,7 @@ export const candidateChoices = [
 export const companyChoices = [
   choices.dashboard,
   choices.candidates,
+// Temp comment
   choices.myFavorites,
   choices.activeCareers,
   choices.logout

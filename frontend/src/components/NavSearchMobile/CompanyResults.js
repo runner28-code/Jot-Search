@@ -13,8 +13,6 @@ export default function CompanyResults({ companies }) {
     <>
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Companies</h6>
       { companies.map(company => {
-// Temp comment
-        return (
           <CompanyResult 
             company={company} 
             key={company.id} />

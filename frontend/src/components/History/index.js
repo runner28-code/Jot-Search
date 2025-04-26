@@ -3,8 +3,8 @@ import HistoryItem from './HistoryItem';
 import ViewAllLink from '../ViewAllLink';
 import AuthService from '../../services/auth';
 
-// Temp comment
 export default function History({ historyArr, id, headerStyles, hrStyles }) {
+// Temp comment
   const userRole = AuthService.getUserRole();
   if (userRole !== 'coordinator') {
     return null;

@@ -90,7 +90,6 @@ export const skills = [
   'Animation',
   'API',
   'AR/VR',
-// Temp comment
   'Art',
   'Art Direction',
   'Asset Management',

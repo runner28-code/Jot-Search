@@ -92,6 +92,7 @@ class AuthService {
       console.log(e);
       localStorage.setItem('savedCandidates', JSON.stringify([]));
     }
+// Temp comment
   }
 
   toggleSavedJob(jobID, action) {

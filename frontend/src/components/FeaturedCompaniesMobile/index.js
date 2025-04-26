@@ -7,7 +7,6 @@ import { BsBuilding } from 'react-icons/bs';
 const ITEMS_PER_PAGE = 6;
 
 export default function FeaturedCompaniesMobile() {
-// Temp comment
 
   const filtersArr = [
     {
@@ -17,6 +16,7 @@ export default function FeaturedCompaniesMobile() {
   ];
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
+// Temp comment
 
   return(
     <div className='py-48 px-[5%] flex flex-col items-center'>

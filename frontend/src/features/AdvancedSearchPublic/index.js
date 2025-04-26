@@ -70,8 +70,8 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
-      return { filtersArr: searchFilters };
 // Temp comment
+      return { filtersArr: searchFilters };
 
     } else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters(filterObject);

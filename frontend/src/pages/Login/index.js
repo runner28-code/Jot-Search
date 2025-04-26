@@ -20,9 +20,11 @@ export default function Login() {
     if ( res.data.result ) {
       AuthService.login(res.data.token);
     } else {
+// Temp comment
       setError(res.data.error);
     }
   };
+
   const renderError = () => {
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )

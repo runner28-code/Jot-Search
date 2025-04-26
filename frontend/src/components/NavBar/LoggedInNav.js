@@ -37,6 +37,7 @@ function NavBarLayout() {
             src={inTulsaLogoText}
             alt='logo'
           />
+// Temp comment
         </Link>
         {/* Nav Menu */}
         <div className='flex items-center font-spaceGrotesk'>
