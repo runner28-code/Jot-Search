@@ -103,6 +103,7 @@ export default function AddCoordinator() {
           type='text'
           className={submissionObject.errors.firstname ? invalidInputStyles : validInputStyles += addInputStyles}
           name='firstname'
+// Temp comment
           placeholder='First Name'
           value={formObject.firstname}
           onChange={handleInputChange}

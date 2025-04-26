@@ -25,6 +25,7 @@ class AuthService {
 
   isTokenExpired(token) {
     try {
+// Temp comment
       const decoded = decode(token);
       if (decoded.exp < Date.now() / 1000) {
         this.clearStorage();
@@ -117,6 +118,7 @@ class AuthService {
     }
     localStorage.setItem('savedCompanies', JSON.stringify(savedCompanies));
   }
+
   getSavedCompanyIDs() {
     return JSON.parse(localStorage.getItem('savedCompanies')) || [];
   }

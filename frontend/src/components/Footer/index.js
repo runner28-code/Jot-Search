@@ -98,7 +98,6 @@ export default function Footer() {
         className='w-56 h-auto mr-18'
       />
       <a href={ROUTES.linkedin}>
-        <img
           src={linkedin}
           className={socialIconStyle}
         />
@@ -274,6 +273,7 @@ function NavFooter() {
         >
           Operations Job Openings
         </a>
+        <a
           href="/careers"
           className={linkStyle}
         >

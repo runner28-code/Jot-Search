@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
+import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import ChoiceTag from '../ChoiceTag';
 import ChoiceListItem from '../ChoiceListItem';
 
@@ -24,6 +25,7 @@ export default function TypeaheadDropdown(props) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
+// Temp comment
   const handleChoiceClick = useCallback((choice) => {
     if (!currentChosen.includes(choice)) {
       onChange(name, [...currentChosen, choice]);

@@ -1,4 +1,4 @@
 -- CreateTable
-    "id" TEXT NOT NULL,
+CREATE TABLE "CompanyCandidateInvites" (
     "candidateId" TEXT NOT NULL,
     "companyId" TEXT NOT NULL,

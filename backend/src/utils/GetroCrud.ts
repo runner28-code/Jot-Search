@@ -40,5 +40,4 @@ export const saveCompanies = async (companies: any[]) => {
         console.log(error);
         return { result: false, error };
     }
-}
 

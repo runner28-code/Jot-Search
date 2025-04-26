@@ -4,6 +4,7 @@ import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 import { skills } from '../../utils/skillHierarchyMap';
 import FormInput from '../../components/FormInput';
+
 const dropdownFiltersCoord = [
   'Category',
   'Experience',
@@ -16,6 +17,7 @@ const dropdownFiltersCoord = [
 const dropdownFilters = [
   'Category',
   'Experience',
+// Temp comment
   'Remote Availability',
   'Employment Type',
 ];

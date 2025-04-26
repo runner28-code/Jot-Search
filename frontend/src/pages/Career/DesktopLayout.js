@@ -46,6 +46,7 @@ export default function DesktopLayout(props) {
               type='job'
               data={careerData}
               addClass='vw-900:top-[-20px] vw-900:right-[-10px]'
+            />
           </div>
           {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold mt-xl'>{categoryString}</p>

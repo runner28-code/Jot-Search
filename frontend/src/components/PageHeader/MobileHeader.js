@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 
 export default function MobileHeader(props) {
   const {
-// Temp comment
     headerText,
     icon,
     IconComponent,

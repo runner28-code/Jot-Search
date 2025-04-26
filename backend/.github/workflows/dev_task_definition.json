@@ -18,6 +18,7 @@
             "essential": true,
             "logConfiguration": { 
                 "logDriver": "awslogs",
+                "options": { 
                    "awslogs-group" : "/ecs/dev-site-backend-task",
                    "awslogs-region": "us-east-1",
                    "awslogs-stream-prefix": "ecs"
@@ -29,7 +30,6 @@
                     "value": "true"
                 },
                 {
-                    "name": "PORT", 
                     "value": "5000"
                 },
                 {

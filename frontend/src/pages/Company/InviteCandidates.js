@@ -6,6 +6,7 @@ import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
+// Temp comment
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
 
 export default function InviteCandidates({ company }) {
@@ -18,7 +19,6 @@ export default function InviteCandidates({ company }) {
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
 
   const candidateOptions = candidates?.map(candidate => {
-// Temp comment
     return {
       label: candidate.name,
       value: candidate.id,

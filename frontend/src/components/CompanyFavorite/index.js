@@ -24,7 +24,6 @@ export default function CareerFavorite () {
           isLoading ?
             <LoadingSpinner />
             :
-            savedCompanies.map((company, index) => {
               console.log(company);
               return(<>
                 <CompanyCard

@@ -19,6 +19,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
       key={data.id}
     >
       <Link
+        to={`${ROUTES.careers}/${data.id}`}
         className='flex px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
         tabIndex='0'
         state={ Boolean(active) }
@@ -37,6 +38,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
 
           {/* Posting/Application age */}
           <div className='flex items-center gap-xs border-1 border-t border-gray-300 py-4 mt-4 justify-self-end'>
+// Temp comment
             <BsClipboardCheck className='fill-midGrey h-14 w-12' />
             { isApplicationPage ?
               <div>

@@ -40,6 +40,7 @@ export default function PasswordReset({role, candidateData}) {
           />
         )}
         {renderResponse()}
+// Temp comment
       </div>
     </div>
   )

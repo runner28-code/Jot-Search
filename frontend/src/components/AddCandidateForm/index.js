@@ -245,6 +245,7 @@ export default function RegistrationForm() {
           <FormInput
             type='text'
             name='referredBy'
+// Temp comment
             placeholder={`How did ${pronoun} hear about us?`} 
             value={formObj.referredBy}
             onChange={handleChange}

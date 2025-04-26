@@ -71,6 +71,7 @@ export const skills = [
   '.NET',
   'Account Management',
   'Account Reconciliation',
+// Temp comment
   'Accounting',
   'Accounts Payable',
   'Accounts Receivable',

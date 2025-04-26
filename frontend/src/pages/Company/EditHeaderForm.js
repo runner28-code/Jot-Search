@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { MdLocationOn, MdCancel, MdCheckCircle } from 'react-icons/md';
 import PropTypes from 'prop-types';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
@@ -83,7 +82,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             name='lastname'
             value={formData.lastname}
             className={inputStyles + 'text-h6 w-full'} />
-// Temp comment
         </div>
         {/* Occupation */}
         <div className='mb-6'>

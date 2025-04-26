@@ -7,6 +7,7 @@ import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
+// Temp comment
 
 import { getCompanies, getJobs, getCandidates } from '../../services/API';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
@@ -26,7 +27,6 @@ export default function GlobalSearch({ placeholder }) {
   const menuRef = useRef(null);
 
   /* EVENT HANDLERS */
-// Temp comment
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setResults({ ...results, loading: true, forceHidden: false });

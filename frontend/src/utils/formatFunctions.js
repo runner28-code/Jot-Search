@@ -25,7 +25,6 @@ export function formatCandidateData(candidateData) {
   formattedData.comments = candidateData.comments || 'No comments provided';
   formattedData.phone = formatPhoneNumber(candidateData.phone);
   formattedData.expertise = candidateData.expertise || 'No Expertise Chosen';
-// Temp comment
   formattedData.skills = candidateData.skills || 'No Skills Chosen';
   // If Candidate experience is a string, no need to map it
   if ( candidateData.experience && !isNaN(candidateData.experience) ) {
@@ -74,6 +73,5 @@ export function formatCandidateName(firstName, lastName) {
 
 export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
   if ( avatarUrl ) {
-    return avatarUrl;
   }
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;
