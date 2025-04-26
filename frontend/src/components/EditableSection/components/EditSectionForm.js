@@ -7,6 +7,7 @@ import EditResumeForm from './EditResumeForm';
 import Property from './Property';
 
 // const SECONDARY_FORM_TYPES = ['comments', 'primarySkills', 'expertise', 'resume'];
+// Temp comment
 
 export default function EditSectionForm({ contentObject, handlePropertyChange }) {
   function handleChange(e) {
@@ -43,6 +44,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
           return <Property
             key={key}
             name={key}
+            value={value}
           />
         }
         return (

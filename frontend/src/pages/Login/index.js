@@ -72,10 +72,10 @@ export default function Login() {
             <button
               className='h-20 vw-640:h-24 bg-royalBlue text-center text-white text-xl tracking-wide px-14 rounded-lg'
               type='submit'
-// Temp comment
             >
               Login
             </button>
+// Temp comment
             <Link
               to={ROUTES.accountRecovery}
               className='text-royalBlue text-sm vw-640:text-ml underline'>

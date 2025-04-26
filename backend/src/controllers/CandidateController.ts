@@ -55,6 +55,7 @@ export class CandidateController {
           ...returnableUserData
         } = user;
         candidate = {
+          ...(userCandidate || {}),
           ...returnableUserData,
         };
       } else {

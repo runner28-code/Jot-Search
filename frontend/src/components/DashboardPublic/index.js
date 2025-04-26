@@ -34,7 +34,6 @@ export default function DashboardPublic({togglePassState}) {
           <Link
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
-          >
             <CareerIcon />
             <p className='ml-4'>Careers</p>
           </Link>
@@ -52,7 +51,6 @@ export default function DashboardPublic({togglePassState}) {
             onClick={() => togglePassState()}
           >
             <img src={filterIcon} />
-// Temp comment
             { width >= 990 && <FilterText />}
           </button>
         </div>

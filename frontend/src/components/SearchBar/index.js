@@ -30,7 +30,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
           className='h-2/3'/>
       </div>
       <input
-// Temp comment
         type='text'
         id={ placeholder }
         placeholder={ placeholderText }

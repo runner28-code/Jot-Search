@@ -35,7 +35,6 @@ export default function CareerCard({ data, active }) {
     <div
       className='relative w-full'
       key={data.id}
-    >
       {
         width > 768 ?
           <DesktopCard

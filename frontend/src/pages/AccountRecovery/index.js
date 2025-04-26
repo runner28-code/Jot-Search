@@ -13,7 +13,6 @@ export default function AccountRecovery() {
     event.preventDefault();
     const { email } = event.target;
     const res = await API.post(ROUTES.APIaccountRecovery, {
-// Temp comment
       email: email.value
     });
 
@@ -76,6 +75,7 @@ export default function AccountRecovery() {
               type='submit'
             >
               Get New Password
+// Temp comment
             </button>
           </div>
         </form>

@@ -29,7 +29,6 @@ export default function Candidate() {
   const role = AuthService.getUserRole();
   const { setCurrentUser } = useCandidateContext()
   const path = useLocation().pathname;
-// Temp comment
   const { width } = useWindowDimensions();
   const isProfilePage = path === '/profile';
   if (role === 'candidate' && !isProfilePage) {

@@ -7,3 +7,4 @@ const config = {
   fileUploadSize: process.env.FILE_UPLOAD_SIZE,
 
   getroEmail: process.env.GETRO_EMAIL,
+  getroPassword: process.env.GETRO_PASSWORD,

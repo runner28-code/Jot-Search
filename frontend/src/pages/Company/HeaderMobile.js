@@ -36,7 +36,6 @@ function HeaderContent({ companyData }) {
                 <img
                   src={PlacePin}
                   className={headerIconStyles}
-// Temp comment
                 />
                 <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
               </div>
@@ -57,7 +56,6 @@ function HeaderContent({ companyData }) {
           type={'company'}
           data={companyData} />
       </div>
-    </>
   )
 }
 

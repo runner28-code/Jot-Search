@@ -6,6 +6,7 @@ on:
       - dev
 
 env:
+  AWS_REGION: 'us-east-1'
   ECR_REPOSITORY: 'site-frontend'
   ECS_SERVICE: 'intulsa-frontend-service-dev'
   ECS_CLUSTER: 'intulsa-cluster-dev'

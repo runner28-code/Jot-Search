@@ -67,6 +67,7 @@ export default function RegistrationForm() {
       
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
+// Temp comment
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
@@ -245,7 +246,6 @@ export default function RegistrationForm() {
           <FormInput
             type='text'
             name='referredBy'
-// Temp comment
             placeholder={`How did ${pronoun} hear about us?`} 
             value={formObj.referredBy}
             onChange={handleChange}

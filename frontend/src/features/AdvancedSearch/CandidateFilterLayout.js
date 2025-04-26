@@ -17,7 +17,6 @@ const dropdownFiltersCoord = [
 const dropdownFilters = [
   'Category',
   'Experience',
-// Temp comment
   'Remote Availability',
   'Employment Type',
 ];
@@ -28,6 +27,7 @@ const checkboxFiltersCoord = [
 ];
 const checkboxFilters = [
   'Authorized to work in the US',
+// Temp comment
   'Open to Relocation',
   'Actively Looking',
 ];

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { MdLocationOn, MdCancel, MdCheckCircle } from 'react-icons/md';
 import PropTypes from 'prop-types';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
@@ -40,7 +41,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
       <div className='flex flex-col mr-12'>
         {/* Avatar */}
         <img
-          className='w-100 h-100'
           src={avatarUrl}
           alt='Candidate Avatar' />
         <div className='mt-4'>

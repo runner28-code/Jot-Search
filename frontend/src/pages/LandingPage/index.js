@@ -15,7 +15,6 @@ import { MdLocationOn } from 'react-icons/md';
 import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageStats';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-// Temp comment
 // Styles
 const heroStyles = 'relative flex flex-col items-center h-135 vw-1024:h-280 vw-1280:h-280 relative z-10 bg-cover bg-center bg-explore-tulsa ';
 
@@ -35,7 +34,6 @@ export default function LandingPage() {
           { renderColorShapes() }
           { renderJoinTalent() }
         </div>
-        { renderSearch() }
       </section>
       {/* Browse Opportunities by Expertise */}
       { renderExpertiseLinks() }

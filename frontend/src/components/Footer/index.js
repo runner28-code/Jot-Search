@@ -98,6 +98,7 @@ export default function Footer() {
         className='w-56 h-auto mr-18'
       />
       <a href={ROUTES.linkedin}>
+        <img
           src={linkedin}
           className={socialIconStyle}
         />

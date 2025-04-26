@@ -9,7 +9,6 @@ import * as ROUTES from '../../routes';
 export default function ExpertiseLinksMobile() {
   const linkStyles = 'flex flex-col items-center basis-1/3 p-6 text-center';
   const iconStyles = 'mb-10';
-// Temp comment
   const textStyles = 'text-xs text-darkGray';
 
   return (
@@ -47,6 +46,7 @@ export default function ExpertiseLinksMobile() {
           <span className={textStyles}>Development</span>
         </Link>
         {/* Marketing */}
+// Temp comment
         <Link
           to={ROUTES.careers}
           className={linkStyles}

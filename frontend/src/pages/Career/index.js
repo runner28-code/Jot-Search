@@ -62,7 +62,6 @@ export default function CareerPage() {
       role={role}
       source={source}
     />
-// Temp comment
     <div 
       className={ width <= 990 ? containerStyles
         : loggedIn ? containerStyles 

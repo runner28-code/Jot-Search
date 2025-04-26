@@ -1,6 +1,6 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import MinifiedCompanyView from './MinifiedCompanyView';
+// Temp comment
 import ExtendedEditableContent from './ExtendedEditableContent';
 
 export default function CareerProfileInfoContent(props) {

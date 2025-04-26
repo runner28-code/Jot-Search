@@ -127,6 +127,7 @@ DesktopLayout.propTypes = {
     addressString: PropTypes.string.isRequired,
     postingAge: PropTypes.string.isRequired,
     salaryString: PropTypes.string.isRequired,
+// Temp comment
   }).isRequired
 }
 

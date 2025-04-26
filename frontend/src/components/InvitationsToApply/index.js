@@ -10,6 +10,7 @@ export default function InvitationsToApply () {
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
     filteredJobs: [],
+// Temp comment
     loading: true
   });
 
@@ -50,5 +51,6 @@ export default function InvitationsToApply () {
                 </>)
               })
           }
+        </div>)}
     </div>
   )
