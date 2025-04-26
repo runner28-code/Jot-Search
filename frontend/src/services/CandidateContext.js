@@ -6,7 +6,6 @@ import { getCandidateById } from './API';
 
 const mockCandidateData = [
   {
-    id: 'cb4f35ed-db88-410f-beb0-a6a449135f75',
     firstName: 'Zach',
     lastName: 'Alvstad',
     linkedin_url: 'https://www.linkedin.com/',

@@ -49,6 +49,7 @@ export default function MobileLayout(props) {
           <div className='w-full flex items-center mt-xxl mb-m'>
             {/* Location */}
             <div className='flex w-1/2 items-center'>
+              <img
                 src={locationIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack text-xs'>{addressString}</p>
@@ -72,7 +73,6 @@ export default function MobileLayout(props) {
             {/* Employement Type */}
             <div className='w-1/2 flex items-center'>
               <img
-                src={clockIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.employmentType}</p>
             </div>

@@ -34,6 +34,7 @@ export default function Candidate() {
   if (role === 'candidate' && !isProfilePage) {
     return <Navigate to='/' />
   }
+// Temp comment
 
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;
   const [candidateData, setCandidateData] = useState({});
@@ -136,7 +137,6 @@ export default function Candidate() {
         {role === 'coordinator' && 
           <InviteToCareer candidate={candidateData} />
         }
-// Temp comment
         {/* Personal Info (Candidate and Coordinator) */}
         <PersonalInfo
           role={role}

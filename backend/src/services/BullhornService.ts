@@ -110,7 +110,6 @@ export class BullhornService {
         .slice(7, path.indexOf("&client"))
         .replace("%25", "%");
       console.log("Auth Code: ", this.auth_code);
-      return true;
     }
     return false;
   }

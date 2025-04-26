@@ -8,6 +8,7 @@ const dropdownFiltersCoord = [
   'Experience',
   'Remote Availability',
   'Employment Type',
+  'Status'
 ];
 
 const dropdownFilters = [
@@ -70,7 +71,6 @@ export default function CandidateFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
-          placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />
         <button

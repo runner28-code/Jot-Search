@@ -59,6 +59,7 @@ export class CompanyController {
         company,
         source: datasource,
       };
+    } else {
       return {
         source: DataSource.UNKNOWN,
         message: "unsupported id",
@@ -70,7 +71,6 @@ export class CompanyController {
   @Put("/save")
   async save(
     @CurrentUser() authUser: User,
-    @Body() body: { company: string; candidate?: string }
   ): Promise<ApplyResponse> {
     return await saveCompany(body.company, body.candidate! || authUser.id!);
   }

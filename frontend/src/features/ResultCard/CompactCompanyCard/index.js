@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
+// Temp comment
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
 import {  calculatePostingAge } from '../../../utils/formatFunctions';
 
@@ -11,7 +12,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
   const postingAge = calculatePostingAge(agoDate);
 
   return (
-// Temp comment
     <div
       className='relative'
       key={data.id}

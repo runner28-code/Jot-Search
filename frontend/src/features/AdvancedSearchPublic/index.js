@@ -28,6 +28,7 @@ const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
+  guest: ['jobs', 'companies'],
 }
 
 function useTabState(disabledTabs, userType, pathname) {
@@ -70,6 +71,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
+// Temp comment
 
     } else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters(filterObject);

@@ -58,6 +58,7 @@ function HeaderContent({ companyData }) {
       </div>
     </>
   )
+}
 
 HeaderContent.propTypes = {
   companyData: PropTypes.shape({

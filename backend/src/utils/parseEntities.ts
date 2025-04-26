@@ -22,6 +22,7 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     linkedin: undefined,
     skills: data.primarySkills,
     category: data.specialties,
+    seniority: data.experience,
     workspace: data.willRelocate,
     referredBy: data.referredBy,
     roles: data.skillSet,

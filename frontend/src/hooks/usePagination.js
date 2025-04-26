@@ -14,7 +14,6 @@ export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
     return prevPage === 1 ? prevPage : prevPage - 1;
   });
 
-  return {
     page,
     setPage,
     totalPages,
@@ -22,3 +21,4 @@ export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
     prevPage,
     startCount,
     endCount,
+  };

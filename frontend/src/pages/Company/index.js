@@ -16,6 +16,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function Company() {
+  const { width } = useWindowDimensions();
   const { id } = useParams();
   const [companyData, setCompanyData] = useState({});
   const [loading, setLoading] = useState(true);
@@ -45,6 +46,7 @@ export default function Company() {
   }
   companyData.address = buildCandidateAddress(companyData);
   companyData.employeeString = companyData.numEmployees ? `${companyData.numEmployees} Employees` : 'N/A';
+// Temp comment
   companyData.fundingString = companyData.funding === 'not applicable' ? 'Funding N/A' : companyData.funding;
   companyData.description = companyData.getro_description ? companyData.getro_description : companyData.bh_description;
 

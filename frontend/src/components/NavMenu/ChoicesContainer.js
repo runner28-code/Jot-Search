@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
+  coordinatorChoices,
   guestChoices
 } from '../SideNav/utils';
 import Choice from './Choice';
@@ -35,6 +36,7 @@ export default function ChoicesContainer(props) {
     { renderRoleChoices({ userRole, handleOptionClick }) }
     { userRole === 'guest' ? 
       <LoggedOutButtons 
+// Temp comment
         handleOptionClick={handleOptionClick}
         stylesObject={stylesObject} /> 
       :

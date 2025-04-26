@@ -55,6 +55,7 @@ const mockJobsData = [
     specialty: 'Technology'
   },
   {
+    id: 'c79462d2-1950-4cc0-ba31-a21a566c3c9d',
     title: 'Payroll Administrator',
     company: 'Holberton',
     clientCorporationID: '36534b9b-c225-4a59-9286-8d4203d582db',

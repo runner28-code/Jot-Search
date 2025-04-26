@@ -5,7 +5,6 @@ import {
   QueryParam,
   JsonController,
   Authorized,
-} from "routing-controllers";
 import { FilterBody } from "../types/Common";
 
 import db from "../utils/db";
@@ -16,5 +15,6 @@ import { normalizeFilters } from "./JobController";
 export class ClientContactController {
 
   @Authorized()
+  @Get("/search")
   async searchById(@QueryParam("id") id: string) {
     try {

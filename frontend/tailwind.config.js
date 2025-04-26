@@ -30,7 +30,6 @@ module.exports = {
         },
       },
       boxShadow: {
-// Temp comment
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
       colors: {

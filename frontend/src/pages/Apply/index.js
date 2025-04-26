@@ -113,6 +113,7 @@ export default function Apply() {
     }
   }, [submissionObject.loading]);
 
+// Temp comment
   useEffect(() => {
     if (submissionObject.success) {
       setTimeout(() => {

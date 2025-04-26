@@ -63,6 +63,7 @@ export async function getCandidateById(id) {
   const { data } = await API.get(ROUTES.APIcandidates, {
     params: {
       id
+    }
   });
   return normalizeData(data.candidate);
 }

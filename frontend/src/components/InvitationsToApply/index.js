@@ -22,7 +22,6 @@ export default function InvitationsToApply () {
       }});
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
-// Temp comment
       loading: false
     });
   }, []);
@@ -52,5 +51,4 @@ export default function InvitationsToApply () {
               })
           }
         </div>)}
-    </div>
   )

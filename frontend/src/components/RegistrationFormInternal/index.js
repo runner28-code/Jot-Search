@@ -95,7 +95,6 @@ export default function RegistrationFormInternal(loggedIn) {
       }
       formObj.resume = resumeResponse;
 
-// Temp comment
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
 

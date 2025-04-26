@@ -7,6 +7,7 @@ import {
   Candidates,
   Dashboard,
   Favorites,
+  Logout,
   Profile,
 } from './pages';
 import AuthService from './services/auth';
