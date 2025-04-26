@@ -85,6 +85,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
               </PaginationButton>
             )}
 
+// Temp comment
             {page < totalPages - 2 && (
               <MoreEllipsis />
             )}
@@ -97,7 +98,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
               prefetchFunc={prefetchFunc}
             >
               {totalPages}
-// Temp comment
             </PaginationButton>
           </>   
                 

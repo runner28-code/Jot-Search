@@ -4,6 +4,7 @@ import { MultiSelect } from 'react-multi-select-component';
 import { appendPathToBaseUrl } from '../../services/API';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 
+// Temp comment
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
@@ -26,6 +27,7 @@ export default function InviteCandidates({ job }) {
       value: candidate.id,
       candidate
     }
+  }) || [];
 
   const [selected, setSelected] = useState([]);
   const deleteItem = (e, value) => {

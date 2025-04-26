@@ -12,7 +12,6 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
       disabled={ disabled }
     >
       {/* Placeholder Option */}
-// Temp comment
       { renderPlaceholder(noDefault, currentChosen) }
       {/* Generate options from choices */}
       {choices.map( choice => {
@@ -20,6 +19,7 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
           <option 
             key={ choice }
             value={ choice }
+// Temp comment
             className={ optionStyles }
           >
             { choice }

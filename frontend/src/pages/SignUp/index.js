@@ -25,7 +25,6 @@ export default function SignUp() {
             </div>
           </div>
         </div>
-// Temp comment
       </main>      
     )
   }

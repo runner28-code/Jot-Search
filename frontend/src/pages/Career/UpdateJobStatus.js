@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
@@ -11,6 +12,7 @@ export const UpdateJobStatus = ({ job }) => {
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
   const [updatedJob, setUpdatedJob] = useState(job)
 
+  return (
     <div className='py-8 flex flex-col'>
       <hr className={`${hrStyles} bg-smokeGray h-2`} />
 

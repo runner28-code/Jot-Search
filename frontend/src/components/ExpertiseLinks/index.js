@@ -6,6 +6,7 @@ import operationsIcon from '../../assets/images/Symbol_operations.svg';
 import financeIcon from '../../assets/images/Symbol_finance.svg';
 import * as ROUTES from '../../routes';
 
+export default function ExpertiseLinks() {
   const linkStyles = 'flex flex-col items-center mx-15';
   const iconStyles = 'w-54 h-54 mb-10';
   const textStyles = 'text-ml text-darkGray';
@@ -49,6 +50,7 @@ import * as ROUTES from '../../routes';
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Marketing' }}
+// Temp comment
         >
           <img
             src={marketingIcon}

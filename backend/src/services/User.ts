@@ -57,7 +57,6 @@ const validateUser = ({
     return "something is wrong, please check params";
   }
   return false;
-};
 
 export const register = async (data: User) => {
   try {

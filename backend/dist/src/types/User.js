@@ -15,3 +15,4 @@ exports.IUSER = {
     city: "",
     state: "",
     zip: "",
+    resume: "",

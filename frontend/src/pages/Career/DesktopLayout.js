@@ -46,7 +46,6 @@ export default function DesktopLayout(props) {
               type='job'
               data={careerData}
               addClass='vw-900:top-[-20px] vw-900:right-[-10px]'
-            />
           </div>
           {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold mt-xl'>{categoryString}</p>
@@ -63,7 +62,6 @@ export default function DesktopLayout(props) {
             <div className='w-1/3 flex items-center'>
               <LaptopIcon
                 className='fill-midGrey h-8 w-8 mr-5' />
-// Temp comment
               <p className='text-textBlack'>{careerData.onSite}</p>
             </div>
             {/* Posting age */}

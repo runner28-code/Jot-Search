@@ -133,6 +133,7 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
         'value': filterValue || '',
       }
     ],
+    'count': count || 5,
     'page': page || null
   });
   return {

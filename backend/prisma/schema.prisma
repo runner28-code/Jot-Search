@@ -150,7 +150,6 @@ model ClientContact {
   fax                String?
   fax2               String?
   fax3               String?
-  firstName          String?
   isAnonymized       Boolean?
   isDayLightSavings  Boolean?
   isDeleted          Boolean?
@@ -204,6 +203,7 @@ model Company {
   companyDescription String?
   companyURL         String?
 
+  // could condsolidate and enrich if needed
   bh_description    String?
   getro_description String?
   description       String?

@@ -23,6 +23,7 @@ export const defaultCareerState = {
     logo: '',
   },
   loading: true,
+}
 
 export const defaultState = {
   firstname: '',

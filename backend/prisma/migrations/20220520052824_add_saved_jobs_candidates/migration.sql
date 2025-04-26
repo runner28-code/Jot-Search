@@ -8,4 +8,5 @@ CREATE TABLE "_userSavedJobs" (
 CREATE TABLE "_userSavedCandidates" (
     "A" TEXT NOT NULL,
     "B" TEXT NOT NULL
+);
 

@@ -57,6 +57,7 @@ export default function RegistrationFormInternal(loggedIn) {
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
+// Temp comment
     success: false,
   });
 
