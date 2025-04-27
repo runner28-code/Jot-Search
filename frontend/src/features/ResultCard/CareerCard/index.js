@@ -24,7 +24,6 @@ export default function CareerCard({ data, active }) {
 
   const dataObj = {
     data,
-    categoryString,
     addressString,
     salaryString,
     postingAge,

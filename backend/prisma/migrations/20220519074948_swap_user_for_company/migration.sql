@@ -36,3 +36,4 @@ CREATE TABLE "Company" (
     "competitors" TEXT[],
     "culture" TEXT,
     "dateAdded" TIMESTAMP(3),
+    "dateFounded" TIMESTAMP(3),

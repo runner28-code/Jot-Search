@@ -1,6 +1,5 @@
 {
     "family": "dev-site-frontend-task",
-    "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "containerDefinitions": [
         {
@@ -10,3 +9,4 @@
             "memory": 2048,
             "portMappings": [
                 {
+                    "containerPort": 3000,

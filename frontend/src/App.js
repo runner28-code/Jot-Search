@@ -34,7 +34,6 @@ function App() {
               path={ROUTES.login}
               element={<Login />} />
             <Route
-// Temp comment
               path={ROUTES.landingPage}
               element={<LandingPage />} />
             <Route
@@ -53,7 +52,6 @@ function App() {
               path={`${ROUTES.companies}/:id`}
               element={<Company />} />
             <Route
-              path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />
             <Route
               path={ROUTES.resetPassword}

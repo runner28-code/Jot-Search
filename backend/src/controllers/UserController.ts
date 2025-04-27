@@ -63,6 +63,7 @@ export class UserController {
 
     if (user.role === CANDIDATE) {
       try {
+        const res = await (
           await BullhornService.getClient()
         ).syncUserTppToBullhorn(user);
         if (res && res.changedEntityId) {
@@ -81,3 +82,4 @@ export class UserController {
     } else {
       return {
         result: false,
+        error: `Invalid user type specified for candidate-only register route: ${user.role}`,

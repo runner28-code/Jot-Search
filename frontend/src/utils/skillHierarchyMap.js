@@ -12,6 +12,7 @@ export const roles = {
     'Accounting & Financial Planning',
     'Accounts & Payroll',
     'Corporate Finance',
+// Temp comment
     'Banking',
     'Investment',
   ],
@@ -43,6 +44,7 @@ export const roles = {
     'Legal',
     'Misc. Science',
     'Other'
+  ],
   'Software & Engineering': [
     'AI Machine Learning',
     'Backend Engineer',
@@ -140,3 +142,5 @@ export const skills = [
   'Contract Management',
   'Contract Negotiation',
   'Coordination',
+  'Copy Editing',
+  'Copywriting',

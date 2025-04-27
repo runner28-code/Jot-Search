@@ -31,7 +31,6 @@ export default function DesktopHeader(props) {
             className={ 'h-16 ' + addOnIconClasses }
           />
         )}
-// Temp comment
         { IconComponent && (
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />
         )}

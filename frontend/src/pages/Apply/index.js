@@ -50,7 +50,6 @@ export default function Apply() {
     error: false,
     errorMessage: ''
   });
-// Temp comment
 
   useEffect(async () => {
     if ( !isLoggedIn ) {

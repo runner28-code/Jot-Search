@@ -266,3 +266,7 @@ model Company {
   customInt2 Int?
   customInt3 Int?
 
+  customText1  String?
+  customText2  String?
+  customText3  String?
+  customText4  String?

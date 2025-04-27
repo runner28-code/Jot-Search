@@ -21,7 +21,6 @@ export default function Login() {
       AuthService.login(res.data.token);
     } else {
       setError(res.data.error);
-// Temp comment
     }
   };
 

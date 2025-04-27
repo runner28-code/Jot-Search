@@ -11,6 +11,7 @@ import {
   JsonController,
   Authorized,
   CurrentUser,
+  Patch,
 } from "routing-controllers";
 import { Dictionary } from "typed-two-way-map";
 import { BigQueryService } from "../services/BigQueryService";
@@ -153,3 +154,5 @@ export class JobController {
 
       const totalPromise = db.job.count({
         where,
+      });
+

@@ -35,3 +35,4 @@ export type User = {
   companyURL?: string;
   numEmployees?: string;
   revenue?: string;
+  dateFounded?: string;

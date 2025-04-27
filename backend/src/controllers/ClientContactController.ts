@@ -15,6 +15,8 @@ import { normalizeFilters } from "./JobController";
 @JsonController("/api/client-contact")
 export class ClientContactController {
 
+  @Authorized()
   @Get("/search")
   async searchById(@QueryParam("id") id: string) {
     try {
+      const contact = await db.clientContact.findFirst({

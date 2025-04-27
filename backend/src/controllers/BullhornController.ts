@@ -4,7 +4,7 @@ import { BullhornService } from '../services/BullhornService';
 @Controller()
 export class BullhornController {
   // @Authorized()
-  async getCompanies() {
+  @Get('/bullhorn/companies')
     return await (await BullhornService.getClient()).getCompanies();
   }
 

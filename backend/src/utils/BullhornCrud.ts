@@ -30,6 +30,7 @@ export const saveCompanies = async (companies: any[]) => {
   //       companyURL: item.companyURL ? item.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null
   //     }
   //   })
+  // }
   // return { result: false };
 
   const expludeFields = [
@@ -71,7 +72,6 @@ export const saveCompanies = async (companies: any[]) => {
         companyData.companyURL = companyData.companyURL ? companyData.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null;
 
         const newCompany = await db.company.create({
-          data: companyData,
         });
 
         console.log(`Saved company with ID = ${company.id} successfully`);
@@ -108,3 +108,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
     for (const job of jobs) {
       try {
         console.log(`Savng job with ID = ${job.id}`);
+        const parsedJob = parseBullhornJobToMain(job);
+        if (parsedJob) {
+          // await migrateJobInTPP(parsedJob);

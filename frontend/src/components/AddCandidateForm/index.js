@@ -254,7 +254,6 @@ export default function RegistrationForm() {
           <FormInput
             type='file'
             name='resumeFile'
-            placeholder='Upload Resume'
             value={formObj.resumeFile}
             onChange={handleChange}
             error={errors.includes('resumeFile')}

@@ -80,3 +80,4 @@ async function seedCandidates() {
         email: "jsmithers@gmail.com",
         comments: "He does everything!",
       },
+      {

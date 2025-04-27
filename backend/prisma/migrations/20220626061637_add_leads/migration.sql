@@ -22,3 +22,4 @@ CREATE TABLE "Lead" (
     "dateLastVisited" TIMESTAMP(3),
     "description" TEXT,
     "division" TEXT,
+    "email" TEXT,

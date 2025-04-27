@@ -61,7 +61,6 @@ function HeaderContent({ companyData }) {
 }
 
 HeaderContent.propTypes = {
-// Temp comment
   companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,

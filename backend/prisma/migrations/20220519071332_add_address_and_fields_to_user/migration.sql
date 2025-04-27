@@ -1,2 +1,2 @@
 -- AlterTable
-ADD COLUMN     "annualRevenue" BIGINT,
+ALTER TABLE "User" ADD COLUMN     "addressId" TEXT,

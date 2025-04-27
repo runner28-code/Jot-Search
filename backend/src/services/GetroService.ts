@@ -18,6 +18,7 @@ export class GetroService {
             GetroService.client = new GetroService();
             await GetroService.client.getNetworkID();
         }
+        return GetroService.client;
     }
 
     getOptions() {
@@ -102,3 +103,5 @@ export class GetroService {
                 }
             } catch (error) {
                 console.log(error);
+                repeatErr++;
+            }

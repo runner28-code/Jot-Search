@@ -64,6 +64,7 @@ export class CandidateController {
             id,
           },
         });
+      }
 
       return {
         candidate: clearPassword(candidate),
@@ -147,3 +148,5 @@ export class CandidateController {
           acc[key] = where[key];
         }
         return acc;
+      }, {} as Dictionary<string>);
+

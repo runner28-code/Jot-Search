@@ -50,3 +50,4 @@ const sanitizeJob = (job: Job): Job => {
       delete newJob[typedKey];
     }
   });
+

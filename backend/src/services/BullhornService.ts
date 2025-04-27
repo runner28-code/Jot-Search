@@ -353,3 +353,8 @@ export class BullhornService {
       return {
         result: false,
         message: err,
+      };
+    }
+  }
+
+  async getJobs(

@@ -45,6 +45,7 @@ function HeaderContent({ companyData }) {
               src={PlacePin}
               className={headerIconStyles}
             />
+// Temp comment
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
@@ -125,6 +126,7 @@ Header.propTypes = {
   handleCompanyUpdate: PropTypes.func.isRequired
 }
 
+function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'my-auto object-contain';
   if( width >= 1280 ) {

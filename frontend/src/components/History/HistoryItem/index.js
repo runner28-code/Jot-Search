@@ -19,13 +19,11 @@ function isTodayOrYesterday(dateObj) {
     } else if ( dayDifference === 1 ) {
       returnObj.isYesterday = true;
     }
-// Temp comment
   }
 
   return returnObj;
 }
 
-function formatDateByDay(isToday, isYesterday, dateObj) {
   const time = dateObj.toLocaleTimeString();
   const timeWithoutSeconds = time.replace(/(.*)\D\d+/, '$1')
   if ( isToday ) {

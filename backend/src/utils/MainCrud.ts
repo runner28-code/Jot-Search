@@ -50,3 +50,4 @@ export const saveJob = async (job: string, candidate: string) => {
     const existing = await db.user.findFirst({
       include: {
         savedJobs: true,
+      },

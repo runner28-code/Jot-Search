@@ -43,6 +43,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           <Checkbox
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}
+            onChange={selectableProps.handleClick}
           />
           : 
           <FavoriteButton
@@ -50,5 +51,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             data={data}
             isFavoriteOverride={isFavoriteOverride} />
       }
+// Temp comment
     </div>
   )

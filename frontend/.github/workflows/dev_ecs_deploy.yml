@@ -1,3 +1,4 @@
+name: Dev - ECS Deployment
 
 on:
   push:
@@ -18,3 +19,4 @@ jobs:
     runs-on: ubuntu-latest
     environment: dev
 
+    steps:

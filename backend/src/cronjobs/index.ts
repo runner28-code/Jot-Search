@@ -32,3 +32,4 @@ const setupCronJobs = async () => {
       await (await BullhornService.getClient()).getClientContacts(false, 50);
     } catch (error) {
       consoleLog(error);
+    }

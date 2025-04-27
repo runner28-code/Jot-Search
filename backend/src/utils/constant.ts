@@ -175,3 +175,6 @@ const job_filter_exclude_keys = [
   "gym",
   "gymnastics",
   "health",
+  "historic",
+  "history",
+  "home care",

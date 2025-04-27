@@ -135,6 +135,7 @@ export default function MobileLayout(props) {
 }
 
 MobileLayout.propTypes = {
+// Temp comment
   data: PropTypes.shape({
     careerData: PropTypes.object.isRequired,
     categoryString: PropTypes.string.isRequired,

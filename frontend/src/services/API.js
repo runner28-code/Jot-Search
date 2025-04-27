@@ -20,6 +20,7 @@ API.interceptors.request.use(
   },
   function (error) {
     return Promise.reject(error);
+// Temp comment
   }
 );
 
@@ -139,3 +140,13 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
   return {
     companies: normalizeData(data.companies),
     total: data.total,
+  }
+}
+
+export async function getIndividualCompany(id) {
+  const {data} = await API.get(ROUTES.APIcompanies, {
+    params: {
+      id
+    }
+  });
+  return data.company

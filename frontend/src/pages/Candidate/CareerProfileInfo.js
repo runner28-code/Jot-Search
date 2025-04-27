@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import CareerProfileInfoContent from './CareerProfileInfoContent';
-// Temp comment
 import { FiEdit } from 'react-icons/fi';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -16,7 +15,6 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         <h3 className='text-h5 font-medium mb-15 text-black70% font-spaceGrotesk'>Career Profile Info</h3>
         { (!editMode && role !== 'company') && 
           renderEditIcon(candidateData, setEditMode)
-        }
       </div>
       <CareerProfileInfoContent
         candidateData={candidateData}

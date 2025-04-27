@@ -1,3 +1,4 @@
+import { useLocation } from 'react-router-dom';
 // import { MdOutlineNotificationsActive as AlertIcon } from 'react-icons/md';
 import { ImProfile as ApplicationIcon } from 'react-icons/im';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -26,6 +27,7 @@ export const choices = {
     link: ROUTES.profile,
   },
   careers: {
+// Temp comment
     label: 'Careers',
     icon: CareerIcon,
     link: ROUTES.careers,

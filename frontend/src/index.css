@@ -37,6 +37,7 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus,
+.remove-outline:focus {
     outline: none;
 }
 
@@ -70,3 +71,4 @@ input[type=checkbox] {
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
+    line-height: normal;

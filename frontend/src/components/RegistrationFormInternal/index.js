@@ -103,9 +103,7 @@ export default function RegistrationFormInternal(loggedIn) {
       if ( result === true ) {
         // Set success to true if on add-user page, navigate user to login if not
         if ( addType === 'coordinator' ) {
-// Temp comment
           return setSubmissionObject({
-            loading: false,
             success: true,
           })
         } else {

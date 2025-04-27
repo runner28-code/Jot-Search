@@ -143,7 +143,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
     const updated = await db.user.update({
       where: {
         id: existing.id,
-      },
       data: user,
     });
 
@@ -224,3 +223,6 @@ export const getUserById = async (id: string) => {
 
 export const isExistUser = async (field: string, value: string) => {
   try {
+    return (await isExistUserFull(field, value)) != null;
+  } catch (error) {
+    console.log(error);

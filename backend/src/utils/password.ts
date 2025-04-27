@@ -6,3 +6,4 @@ export const clearPassword = (object: any) => {
 }
 
 export const encryptPassword = (password: string) => {
+    const sr = crypto.randomBytes(12).toString('hex');
