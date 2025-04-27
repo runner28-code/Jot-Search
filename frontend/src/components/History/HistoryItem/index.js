@@ -19,6 +19,7 @@ function isTodayOrYesterday(dateObj) {
     } else if ( dayDifference === 1 ) {
       returnObj.isYesterday = true;
     }
+// Temp comment
   }
 
   return returnObj;

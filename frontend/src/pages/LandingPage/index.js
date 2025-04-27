@@ -34,6 +34,7 @@ export default function LandingPage() {
           { renderColorShapes() }
           { renderJoinTalent() }
         </div>
+        { renderSearch() }
       </section>
       {/* Browse Opportunities by Expertise */}
       { renderExpertiseLinks() }

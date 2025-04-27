@@ -99,7 +99,6 @@ const job_filter_exclude_keys = [
     "count team",
     "court",
     "credit",
-    "crew",
     "crew leader",
     "crime",
     "crisis",

@@ -56,10 +56,12 @@ function HeaderContent({ companyData }) {
           type={'company'}
           data={companyData} />
       </div>
+    </>
   )
 }
 
 HeaderContent.propTypes = {
+// Temp comment
   companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,

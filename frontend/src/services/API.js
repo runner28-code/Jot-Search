@@ -139,4 +139,3 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
   return {
     companies: normalizeData(data.companies),
     total: data.total,
-  }

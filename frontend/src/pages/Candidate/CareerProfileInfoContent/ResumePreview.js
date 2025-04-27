@@ -52,4 +52,5 @@ const ResumePreview = ({ resumeUrl }) => {
           </ul>
         </nav>
       )}
+    </div>
   );

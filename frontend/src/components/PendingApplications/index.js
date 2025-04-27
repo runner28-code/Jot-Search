@@ -18,7 +18,6 @@ export default function PendingApplications () {
   });
 
   useEffect( async () => {
-    const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,
@@ -43,6 +42,7 @@ export default function PendingApplications () {
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
           appliedJobsObject.loading ?
+            <LoadingSpinner />
             :
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
               return(<>

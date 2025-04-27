@@ -92,6 +92,7 @@ model Lead {
   middleName            String?
   mobile                String?
   name                  String?
+  namePrefix            String?
   nameSuffix            String?
   nickName              String?
   notes                 Json?

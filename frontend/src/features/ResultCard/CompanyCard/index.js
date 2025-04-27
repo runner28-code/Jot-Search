@@ -17,7 +17,6 @@ export default function CompanyCard({ data }) {
   const addressString = buildCompanyAddress(data);
   const employeeString = data.numEmployees ? `${data.numEmployees} Employees` : 'N/A';
 
-  const { width } = useWindowDimensions();
   const isMobile = width < 768;
   if ( isMobile ) {
     return (

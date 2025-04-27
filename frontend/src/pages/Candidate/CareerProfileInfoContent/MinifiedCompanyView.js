@@ -7,7 +7,7 @@ export default function MinifiedCompanyView({ candidateData }) {
   return (
     <div>
       <p className='text-lg text-black70% font-spaceGrotesk mb-2'>Description</p>
-        dangerouslySetInnerHTML={{__html: candidateData.description || 'None listed'}}
+      <div
         className='text-black70%'
       />
       <p className='text-lg text-black70% font-spaceGrotesk mt-6 mb-2'>Resume</p>

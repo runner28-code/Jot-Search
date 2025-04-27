@@ -7,4 +7,5 @@ CREATE TABLE "Application" (
     CONSTRAINT "Application_pkey" PRIMARY KEY ("id")
 );
 
+-- CreateTable
 CREATE TABLE "_userSavedCompanies" (

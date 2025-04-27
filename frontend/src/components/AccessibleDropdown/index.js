@@ -56,7 +56,6 @@ export default function AccessibleDropdown(props) {
           { renderDropdownArrow(showDropdownArrow) }
         </Button>
         <Menu>
-          <ul 
             name={ name }
             className={ listStyles }
           >

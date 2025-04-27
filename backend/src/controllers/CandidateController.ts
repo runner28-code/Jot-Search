@@ -64,7 +64,6 @@ export class CandidateController {
             id,
           },
         });
-      }
 
       return {
         candidate: clearPassword(candidate),

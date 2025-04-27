@@ -11,6 +11,7 @@ import {
   Profile,
 } from './pages';
 import AuthService from './services/auth';
+import * as ROUTES from './routes';
 
 
 export default function Auth() {

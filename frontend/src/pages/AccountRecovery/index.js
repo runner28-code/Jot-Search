@@ -75,7 +75,6 @@ export default function AccountRecovery() {
               type='submit'
             >
               Get New Password
-// Temp comment
             </button>
           </div>
         </form>

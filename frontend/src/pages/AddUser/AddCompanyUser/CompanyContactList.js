@@ -30,6 +30,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
         <p className='opacity-70 text-sm'>Select the contact(s) you would like to add from {selectedCompany?.name}</p>
         <ul className='border-y border-grey300 mt-2 w-full'>
           {clientContacts.map((contact, index) => (
+// Temp comment
             <li
               key={contact.id}
               className={ 'flex items-center px-s py-s ' + (index < clientContacts.length - 1 ? 'border-b border-grey300' : '') }
@@ -42,6 +43,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
                 checked={selectedContacts.includes(contact)}
                 className='w-12 h-12 mr-12'
               />
+              <span className='text-md mr-12 w-100'>{contact.name}</span>
               <span>{contact.email}</span>
             </li>
           ))}
