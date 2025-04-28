@@ -4,6 +4,7 @@ import { MultiSelect } from 'react-multi-select-component';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {
   defaultJobFilterState,
+// Temp comment
   buildSearchFilters,
 } from '../../utils/filterObjects';
 
@@ -24,7 +25,6 @@ export default function InviteToCareer({ candidate }) {
       label: job.title,
       value: job.id,
       job
-// Temp comment
     }
   }) || [];
   

@@ -176,6 +176,7 @@ export class BullhornService {
     console.log("\n***** login *****");
     let retryNo = 0;
     while (retryNo < 3) {
+      try {
         const query = queryString.stringify(
           {
             version: "*",

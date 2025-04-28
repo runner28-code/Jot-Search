@@ -27,6 +27,7 @@ export default function Auth() {
           element={<Dashboard />} 
         />
         <Route
+          path={ROUTES.profile}
           element={<Profile />} />
         <Route
           path={ROUTES.logout}
@@ -49,6 +50,5 @@ export default function Auth() {
         <Route
           path={ROUTES.addUser}
           element={<AddUser />} />
-      </Routes>
     </div>
   )

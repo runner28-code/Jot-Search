@@ -4,6 +4,7 @@ import ViewAllLink from '../ViewAllLink';
 import AuthService from '../../services/auth';
 
 export default function History({ historyArr, id, headerStyles, hrStyles }) {
+  const userRole = AuthService.getUserRole();
   if (userRole !== 'coordinator') {
     return null;
   }
@@ -20,5 +21,4 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
         href={viewAllHref} 
         text='View Full History' />
     </section>
-    <hr className={hrStyles} />
   </>)

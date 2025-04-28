@@ -38,10 +38,10 @@ export default function ExpertiseLinks() {
           state={{ Expertise: 'Sales & Biz Dev' }}
         >
           <img
+            src={salesAndBizDevIcon}
             alt='Sales & Biz Dev Icon'
             className={iconStyles}
           />
-          <span className={textStyles}>Sales & Business</span>
           <span className={textStyles}>Development</span>
         </Link>
         {/* Marketing */}

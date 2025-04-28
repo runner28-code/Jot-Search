@@ -51,7 +51,6 @@ export default function MobileLayout(props) {
             <div className='flex w-1/2 items-center'>
               <img
                 src={locationIcon}
-// Temp comment
                 className='h-8 mr-5' />
               <p className='text-textBlack text-xs'>{addressString}</p>
             </div>

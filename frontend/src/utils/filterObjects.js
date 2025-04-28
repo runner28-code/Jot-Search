@@ -97,7 +97,6 @@ export const candidateFilterObject = {
     'Any',
     ...educationChoices
   ],
-// Temp comment
   'Status': [
     'Any',
     'Active',
@@ -136,6 +135,7 @@ export function buildSearchFilters(filterObject) {
       }
       searchFilters.push({
         key: filterKey,
+// Temp comment
         value: filterObject[key],
       });
     }

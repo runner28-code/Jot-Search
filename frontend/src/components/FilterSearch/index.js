@@ -22,8 +22,8 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   const { width } = useWindowDimensions();
   return (
     <div 
+      className={ containerStyles }
       onKeyDown={handleKeydown}
-    >
       <input
         type='text'
         className={ inputStyles }

@@ -30,7 +30,6 @@ export const saveCompanies = async (companies: any[]) => {
   //       companyURL: item.companyURL ? item.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null
   //     }
   //   })
-  // }
   // return { result: false };
 
   const expludeFields = [

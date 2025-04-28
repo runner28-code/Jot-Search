@@ -23,7 +23,6 @@ export default function AccountRecovery() {
     }
   };
   function setType(response, condition) {
-    setCondition(condition);
     setResponse(response);
   }
 
@@ -71,7 +70,6 @@ export default function AccountRecovery() {
           />
           <div className='flex justify-between items-center vw-640:items-end mb-22'>
             <button
-// Temp comment
               className='h-20 bg-royalBlue text-center text-white text-md tracking-wide px-12 rounded-lg'
               type='submit'
             >

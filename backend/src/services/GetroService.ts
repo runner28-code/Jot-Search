@@ -9,6 +9,7 @@ export class GetroService {
     public static client: GetroService | null = null;
     private email = config.getroEmail || '';
     private password = config.getroPassword || '';
+    private api_base_url_v1 = 'https://api.getro.com/api/v1';
     private api_base_url_v2 = 'https://api.getro.com/v2';
     private networkId = null;
 
@@ -28,7 +29,6 @@ export class GetroService {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             }
-        };
     };
 
     async checkAuth(): Promise<boolean> {

@@ -80,6 +80,7 @@ function HeaderContent({ companyData }) {
             <img
               src={Triangle}
               className={headerIconStyles}
+// Temp comment
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
           </div>

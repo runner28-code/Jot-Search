@@ -126,6 +126,7 @@ export class CandidateController {
       let where = normalizeFilters(filters);
 
       const translateTppFilters: any = {
+        "remote availability": "workspace",
         "activelyLooking": "activelyLooking",
         "employmentPreference": "employmentPreference",
       }

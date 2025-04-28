@@ -258,7 +258,6 @@ model Company {
   customDate2 DateTime?
   customDate3 DateTime?
 
-  customFloat1 Float?
   customFloat2 Float?
   customFloat3 Float?
 

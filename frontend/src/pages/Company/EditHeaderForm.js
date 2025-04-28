@@ -39,6 +39,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   return (
     <>
       <div className='flex flex-col mr-12'>
+// Temp comment
         {/* Avatar */}
         <img
           className='w-100 h-100'
@@ -214,7 +215,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         {/* Email */}
         <div className='flex items-center justify-between mb-4'>
           <label
-// Temp comment
             className='text-h6 text-royalBlue flex items-center'
             htmlFor='email'
           >

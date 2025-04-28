@@ -51,7 +51,6 @@ export default function AddCompanyUser() {
         </div>
       </div>
       <div className={ containerStyles + 'bg-white mt-12'}>
-        <h2 className={ titleStyles }>Step 2: Assign Company Contact(s)</h2>
         <label className='opacity-70 text-sm'>Company Name</label>
         <div className='relative'>
           <input

@@ -95,7 +95,6 @@ export default function Apply() {
       console.log('error', e);
     }
   }, []);
-  useEffect(async () => {
     if ( submissionObject.loading ) {
       const response = await submitData();
       if ( response.result === true ) {
