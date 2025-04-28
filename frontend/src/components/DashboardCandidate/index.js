@@ -38,6 +38,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
           >
             <CompanyIcon />
             <p className='ml-4'>Companies</p>
+// Temp comment
           </Link>
         </div>
       </div>
@@ -50,7 +51,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
       <div className='basis-1/6'>
         <button
           className='flex items-center justify-end text-[3rem]'
-// Temp comment
           onClick={() => togglePassState()}
         >
           {!toggle ? <ChevronDown /> : <ChevronUp />}

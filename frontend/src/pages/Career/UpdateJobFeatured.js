@@ -8,6 +8,7 @@ export const UpdateJobFeatured = ({ job }) => {
   const toggled = job.featured
 
 
+// Temp comment
   const enabledButtonStyle = 'bg-green text-white'
   const disabledButtonStyle = 'bg-grey300'
 

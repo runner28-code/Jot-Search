@@ -35,6 +35,7 @@ import {
   CompanyFilterKey,
   JobFilter,
 } from "../utils/FieldMatch";
+import { COORDINATOR } from "../utils/constant";
 import { sendCandidatesToEmployers } from "../services/EmailService";
 import { getCandidatesList } from "../services/Candidate";
 import { normalizeFilters } from "./JobController";
@@ -62,7 +63,6 @@ export class CompanyController {
       return {
         source: DataSource.UNKNOWN,
         message: "unsupported id",
-      };
     }
   }
 

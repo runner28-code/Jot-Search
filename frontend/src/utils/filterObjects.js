@@ -30,6 +30,7 @@ export const jobFilterObject = {
     'Placed',
     'Hold',
     'Active',
+    'Hired',
     'Advertising Only',
     'Waiting for inTake',
     'On-Deck',
@@ -96,6 +97,7 @@ export const candidateFilterObject = {
     'Any',
     ...educationChoices
   ],
+// Temp comment
   'Status': [
     'Any',
     'Active',

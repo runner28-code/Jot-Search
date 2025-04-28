@@ -111,6 +111,7 @@ export class CandidateController {
       return { message: "Candidate updated successfully", data: updatedUser, result: true };
     } catch (error) {
       console.error(error)
+      return { message: error, result: false };
     }
   }
 
@@ -125,7 +126,6 @@ export class CandidateController {
       let where = normalizeFilters(filters);
 
       const translateTppFilters: any = {
-        "remote availability": "workspace",
         "activelyLooking": "activelyLooking",
         "employmentPreference": "employmentPreference",
       }

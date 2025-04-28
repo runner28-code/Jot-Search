@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { uploadFile } from '../../../services/API';
 
 export default function EditResumeForm({ handleChange }) {
@@ -28,5 +27,6 @@ export default function EditResumeForm({ handleChange }) {
         name='resume'
         id='resume'
         onChange={handleFileSubmit}
+      />
     </div>
   )

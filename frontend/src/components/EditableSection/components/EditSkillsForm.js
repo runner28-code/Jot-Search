@@ -12,6 +12,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
       target: {
         name: inputName,
         value: newValues.join(', '),
+// Temp comment
       },
     };
     handleChange(fakeEvent);
@@ -26,6 +27,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
       dropdownType='tags'
       name='primarySkills'
       placeholder='Add/Remove Skills'
+      choices={skillChoices}
       currentChosen={splitSkills}
       onChange={onChange}
       baseStyles={baseStyles}

@@ -6,4 +6,5 @@ CREATE TABLE "GetroCompany" (
     "description" TEXT,
     "domain" TEXT,
     "facebook_url" TEXT,
+    "founded" TEXT,
     "id" TEXT NOT NULL,

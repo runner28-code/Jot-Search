@@ -127,6 +127,7 @@ export default function Candidate() {
       }
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}
       <div className='px-4'>
+        <div className='border rounded-2xl bg-white p-15 relative'>
           <CareerProfileInfo
             role={role}
             candidateData={candidateData}

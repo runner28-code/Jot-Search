@@ -16,6 +16,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const [selected, setSelected] = useState(initialValue);
   const [listening, setListening] = useState(false);
 
+  const menuRef = useRef(null);
 
   function handleContainerClick() {
     setShowDropdown(showDropdown => !showDropdown);
@@ -34,7 +35,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   // Used to close dropdown when clicking outside of it
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setShowDropdown);
-  }, [showDropdown]);
 
   const dropdownBorder = showDropdown ? ' border-2 rounded-t-lg' : ' border-2 rounded-lg';
   const filterStyles = 'flex justify-between items-center pl-[18px] pr-s py-[9px] border-lightGrey bg-white cursor-pointer w-full ' + dropdownBorder;

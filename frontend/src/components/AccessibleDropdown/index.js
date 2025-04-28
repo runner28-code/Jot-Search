@@ -22,7 +22,6 @@ export default function AccessibleDropdown(props) {
     disabled,
   } = props;
 
-// Temp comment
   function handleSelection(choice) {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {
@@ -35,7 +34,6 @@ export default function AccessibleDropdown(props) {
     }
   }
 
-  let containerStyles = 'relative ';
   containerStyles += stylesObject.marginBottom ? stylesObject.marginBottom : 'mb-16 ';
   let buttonStyles = buildButtonStyles(stylesObject, currentChosen, type);
   let listStyles = 'absolute top-full w-full max-h-140 overflow-y-auto ';

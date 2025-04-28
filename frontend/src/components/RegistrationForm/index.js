@@ -14,6 +14,7 @@ import {
   inputValidation,
   formatFormObj,
   renderButtonOrLoading,
+// Temp comment
   renderErrorBlock,
   renderHeader
 } from './utils';
@@ -25,6 +26,7 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 const defaultState = {
   phone: '',
   expertise: '',
+  address1: '',
   city: '',
   state: '',
   zip: '',

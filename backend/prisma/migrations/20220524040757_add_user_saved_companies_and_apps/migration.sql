@@ -8,4 +8,3 @@ CREATE TABLE "Application" (
 );
 
 -- CreateTable
-CREATE TABLE "_userSavedCompanies" (

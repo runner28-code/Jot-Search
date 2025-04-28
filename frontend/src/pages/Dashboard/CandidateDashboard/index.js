@@ -7,7 +7,6 @@ import PendingApplications from '../../../components/PendingApplications';
 import InvitationsToApply from '../../../components/InvitationsToApply';
 
 export default function CandidateDashboard() {
-  const headerStyles = 'font-spaceGrotesk font-bold text-h1 text-royalBlue ';
   return (
     <>
       <div className='flex items-center justify-start mb-12 pt-8 px-4'>
@@ -26,5 +25,4 @@ export default function CandidateDashboard() {
         <AdvancedSearch />
       </div>
     </>
-// Temp comment
   )

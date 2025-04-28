@@ -11,6 +11,7 @@ import {
   Companies,
   AccountRecovery,
   ResetPassword,
+  Apply
 } from './pages';
 import { NavBar, Footer, SideNav } from './components';
 import AuthService from './services/auth';
@@ -26,7 +27,6 @@ function App() {
         <div 
           className='grow min-h-280 pb-18'>
           <Routes>
-            <Route
               path={ROUTES.signup}
               element={<SignUp />} />
             <Route

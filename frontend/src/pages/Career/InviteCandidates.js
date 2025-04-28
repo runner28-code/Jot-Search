@@ -10,7 +10,6 @@ import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCand
 
 export default function InviteCandidates({ job }) {
   const { candidates, isLoading } = useGetCandidates({
-    filtersArr: job.skillList?.map(skill => ({
       key: 'primarySkills',
       value: skill
     })),

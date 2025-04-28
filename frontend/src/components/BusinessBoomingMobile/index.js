@@ -18,4 +18,3 @@ export default function BusinessBooming() {
       </div>
       <div className='h-96 bg-tulsa-hero bg-cover'></div>
     </section>
-  )

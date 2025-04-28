@@ -82,7 +82,6 @@ export default function Login() {
             </Link>
           </div>
         </form>
-// Temp comment
         {/* Assistance call-to-action */}
         <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
           <span>Need Help? Just ask </span>

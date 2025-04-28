@@ -38,7 +38,6 @@ export async function getCandidates(filtersArr, count, page) {
   return (await getCandidatesFull(filtersArr, count, page)).candidates;
 }
 
-export async function getCandidatesFull(filtersArr, count, page, fields = null) {
   const formattedFilters = formatCandidateFilters(filtersArr)
     .filter(filter => {
       if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {
@@ -68,7 +67,6 @@ export async function getCandidateById(id) {
   return normalizeData(data.candidate);
 }
 
-// Temp comment
 export async function updateUser(newData, id) { // id is optional, if no id is passed it will update the user attached to the auth token
   const body = id ? { id, ...newData } : newData;
   const { data } = await API.post(ROUTES.APIuserUpdate, body);
