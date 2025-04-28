@@ -38,6 +38,7 @@ export const choices = {
   },
   candidates: {
     label: 'Candidates',
+// Temp comment
     icon: CandidatesIcon,
     link: ROUTES.candidates,
   },
@@ -83,6 +84,7 @@ export const candidateChoices = [
   choices.companies,
   choices.talentInTulsa,
   choices.logout
+];
 
 export const companyChoices = [
   choices.dashboard,

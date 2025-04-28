@@ -148,7 +148,6 @@ export default function Footer() {
                 src={intulsaLogo}
                 alt='Intulsa'
                 className='w-auto h-auto'
-              />
             </a>
             <a
               href='https://talent.intulsa.com/'
@@ -215,6 +214,7 @@ function NavFooter() {
         <img
           src={inTulsaFooter}
           className='w-[250px] h-auto mb-12'
+        />
         <Link
           to={ROUTES.signup}
           className={blueLinkStyle}

@@ -70,7 +70,6 @@ export default function ExpertiseLinksMobile() {
             className={iconStyles}
           />
           <span className={textStyles}>Operations</span>
-// Temp comment
         </Link>
         {/* Finance */}
         <Link

@@ -127,3 +127,4 @@ export class CompanyController {
   async savedCompanies(
     @CurrentUser() authUser: User,
     @QueryParam("candidate") candidate: string
+  ) {

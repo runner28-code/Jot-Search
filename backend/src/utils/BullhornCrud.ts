@@ -112,3 +112,4 @@ export const saveBullhornJobs = async (jobs: any[]) => {
         const parsedJob = parseBullhornJobToMain(job);
         if (parsedJob) {
           // await migrateJobInTPP(parsedJob);
+        }

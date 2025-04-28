@@ -88,7 +88,6 @@ export const skills = [
   'Android',
   'Angular',
   'Animation',
-  'API',
   'AR/VR',
   'Art',
   'Art Direction',
@@ -143,3 +142,4 @@ export const skills = [
   'Coordination',
   'Copy Editing',
   'Copywriting',
+  'Counseling',

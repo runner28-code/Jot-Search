@@ -11,3 +11,4 @@ export type SavedJob = {
     job: string;
 }
 
+export type Job = {

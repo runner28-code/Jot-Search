@@ -34,6 +34,7 @@ export default function TypeaheadDropdown(props) {
   }, [onChange])
 
   /* Close dropdown on any outside clicks */
+// Temp comment
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
     if (!dropdownOpen) setInputValue('');
@@ -44,6 +45,7 @@ export default function TypeaheadDropdown(props) {
     if (dropdownType === 'tags') {
       setFilteredChoices(choices.filter(choice => choice.toLowerCase().includes(inputValue.toLowerCase())));
     }
+  }, [inputValue]);
 
   function handleInputChange(event) {
     setInputValue(event.target.value);

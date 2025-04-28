@@ -7,6 +7,7 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
     id: choice,
   }));
   const { color, textColor } = additionalStyles;
+
   return (
     <div
       id='dropdown-wrapper'
@@ -18,6 +19,7 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
             onClick={() => handleChoiceClick(choice.id)}
             className={choiceStyles}
             key={choice.id}>
+// Temp comment
             {choice.name}
           </div>
         )

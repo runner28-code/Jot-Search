@@ -1,5 +1,6 @@
 import axios from "axios";
 import config from "../config";
+import queryString from "query-string";
 import {
   saveCandidates,
   saveClientContacts,
@@ -357,3 +358,4 @@ export class BullhornService {
   }
 
   async getJobs(
+    testMode = false,

@@ -227,3 +227,4 @@ export const isExistUser = async (field: string, value: string) => {
     return (await isExistUserFull(field, value)) != null;
   } catch (error) {
     console.log(error);
+    return true;

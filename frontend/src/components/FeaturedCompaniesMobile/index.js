@@ -9,13 +9,11 @@ const ITEMS_PER_PAGE = 6;
 export default function FeaturedCompaniesMobile() {
 
   const filtersArr = [
-    {
       key: 'status',
       value: 'active'
     }
   ];
 
-// Temp comment
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(

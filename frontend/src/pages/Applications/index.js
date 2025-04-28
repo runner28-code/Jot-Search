@@ -15,6 +15,7 @@ export default function Applications() {
     filteredJobs: [],
     loading: true
   });
+  const [selectedApplications, setSelectedApplications] = useState([]);
 
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);
@@ -63,7 +64,6 @@ export default function Applications() {
         </p>
         <button
           className='text-royalBlue underline'
-          onClick={removeSelectedApplications}
         >
           Remove Selections
         </button>

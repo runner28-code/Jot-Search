@@ -112,3 +112,17 @@ export default function Company() {
       </div>
     </div>
   )
+}
+Company.propTypes = {
+  companyDescription: PropTypes.string
+}
+
+function RenderHeader({type, loggedIn}) {
+  if( loggedIn ) {
+    return(<>
+      <DetailsHeader type='company' />
+    </>)
+  }
+  return (
+    <DashboardPublicMin type={type} />
+  )

@@ -6,4 +6,5 @@ CREATE TABLE "Job" (
     "address1" TEXT,
     "address2" TEXT,
     "city" TEXT,
+    "state" TEXT,
     "zip" TEXT,

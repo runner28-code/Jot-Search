@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import PageHeader from '../../components/PageHeader';
-// Temp comment
 import PageHeaderCandidate from '../../components/PageHeaderCandidate';
 import AdvancedSearch from '../../features/AdvancedSearch';
 import AdvancedSearchPublic from '../../features/AdvancedSearchPublic';
@@ -44,6 +43,5 @@ export default function Careers() {
           toggle={toggle}
           userType={userType}
         />
-      </div>
     </section>
   )

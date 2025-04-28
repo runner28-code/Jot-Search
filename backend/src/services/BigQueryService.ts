@@ -19,7 +19,6 @@ export class BigQueryService {
             let query = `SELECT ${fields} FROM \`${datset}.${table}\` ${fromAlias ? `AS ${fromAlias}` : ''}`;
             if(join){
                 query += ` ${join}`;
-            }
             if (condition) {
                 query = `
                     ${query}

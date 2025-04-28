@@ -41,7 +41,6 @@ export default function ActiveCareers() {
       <PageHeader
         headerText='Active Careers'
         IconComponent={CareerIcon}
-// Temp comment
         classOverride='h-18 w-18'
         backButton
       />

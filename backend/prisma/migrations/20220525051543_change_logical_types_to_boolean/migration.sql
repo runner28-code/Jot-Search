@@ -16,4 +16,5 @@
   - The `onSite` column on the `Job` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `isDeleted` column on the `Job` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `willRelocate` column on the `User` table would be dropped and recreated. This will lead to data loss if there is data in the column.
+  - The `workAuthorized` column on the `User` table would be dropped and recreated. This will lead to data loss if there is data in the column.
 

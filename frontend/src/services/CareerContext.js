@@ -73,10 +73,10 @@ const mockJobsData = [
     company: 'Paycom', // ! Not in schema yet
     clientCorporationID: 'b0eda365-79b5-4e2b-8674-642f09f56eb2',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
-// Temp comment
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
     location_state: 'OK',
+// Temp comment
     onSite: true,
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'

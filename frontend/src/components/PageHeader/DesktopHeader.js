@@ -7,6 +7,7 @@ export default function DesktopHeader(props) {
     headerText,
     icon,
     IconComponent,
+// Temp comment
     classOverride,
     containerClassOverride,
     colorizeStroke,
@@ -31,7 +32,6 @@ export default function DesktopHeader(props) {
             className={ 'h-16 ' + addOnIconClasses }
           />
         )}
-// Temp comment
         { IconComponent && (
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />
         )}
