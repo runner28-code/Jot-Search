@@ -155,4 +155,3 @@ export class JobController {
       const totalPromise = db.job.count({
         where,
       });
-

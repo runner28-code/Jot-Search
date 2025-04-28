@@ -44,7 +44,6 @@ class AuthService {
     const role = this.getUserRole();
     if ( role === 'candidate' ) {
       await this.refreshSavedJobAndCompanies();
-    } else if ( role === 'company' ) {
       await this.refreshSavedCandidates();
     }
     window.location.assign('/');

@@ -7,6 +7,5 @@ CREATE TABLE "_userSavedJobs" (
 -- CreateTable
 CREATE TABLE "_userSavedCandidates" (
     "A" TEXT NOT NULL,
-    "B" TEXT NOT NULL
 );
 

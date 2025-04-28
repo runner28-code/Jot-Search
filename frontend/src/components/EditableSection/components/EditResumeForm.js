@@ -10,6 +10,7 @@ export default function EditResumeForm({ handleChange }) {
         name: e.target.name,
         value: newResumePath,
       },
+    };
     handleChange( fakeEvent );
   }
   
@@ -27,6 +28,5 @@ export default function EditResumeForm({ handleChange }) {
         name='resume'
         id='resume'
         onChange={handleFileSubmit}
-      />
     </div>
   )

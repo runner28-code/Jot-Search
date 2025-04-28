@@ -148,6 +148,7 @@ export default function Footer() {
                 src={intulsaLogo}
                 alt='Intulsa'
                 className='w-auto h-auto'
+              />
             </a>
             <a
               href='https://talent.intulsa.com/'

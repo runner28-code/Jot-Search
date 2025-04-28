@@ -38,7 +38,6 @@ export default function Applications() {
     } else {
       setSelectedApplications([...selectedApplications, careerId]);
     }
-  }
 
   function removeSelectedApplications() {
     const currentHiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
@@ -64,6 +63,7 @@ export default function Applications() {
         </p>
         <button
           className='text-royalBlue underline'
+          onClick={removeSelectedApplications}
         >
           Remove Selections
         </button>

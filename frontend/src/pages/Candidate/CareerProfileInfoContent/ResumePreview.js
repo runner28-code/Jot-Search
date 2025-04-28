@@ -27,11 +27,13 @@ const ResumePreview = ({ resumeUrl }) => {
       {!pdfDocument && <LoadingSpinner />}
       <canvas
         ref={canvasRef}
+// Temp comment
         className='rounded-lg'
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>
           <ul className="flex justify-between">
+            <li className="previous">
               <button
                 disabled={prevButtonDisabled}
                 onClick={() => setPage(page - 1)}

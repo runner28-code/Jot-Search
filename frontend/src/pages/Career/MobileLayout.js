@@ -95,6 +95,7 @@ export default function MobileLayout(props) {
           role === 'coordinator' && (
             <div className='flex flex-col space-y-8'>
               <UpdateJobStatus job={careerData} />
+              <UpdateJobFeatured job={careerData} />
             </div>
           )
         }
@@ -153,4 +154,5 @@ function renderLogo( logo ) {
   return <img
     src={logo}
     className='w-36 h-36 object-contain mr-10'
+// Temp comment
   />

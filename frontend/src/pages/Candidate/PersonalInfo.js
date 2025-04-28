@@ -26,6 +26,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     email: candidateData.email || '',
+    phone: candidateData.phone || '',
     workAuthorized: candidateData.workAuthorized,
     zip: candidateData.zip || '',
     city: candidateData.city || '',
@@ -37,7 +38,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   const [editMode, setEditMode] = useState(false);
 
   const [referralChoice, setReferralChoice] = useState(false);
-
   function handleInputChange(e) {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });

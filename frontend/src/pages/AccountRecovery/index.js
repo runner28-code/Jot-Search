@@ -65,6 +65,7 @@ export default function AccountRecovery() {
           </div>
           { renderResponse() }
           <FormInput
+            type='email'
             name='email'
             label='Login Email'
           />

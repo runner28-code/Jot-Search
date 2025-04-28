@@ -38,7 +38,6 @@ export const choices = {
   },
   candidates: {
     label: 'Candidates',
-// Temp comment
     icon: CandidatesIcon,
     link: ROUTES.candidates,
   },
