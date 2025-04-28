@@ -87,7 +87,6 @@ model Lead {
   isDayLightSavingsTime Boolean?
   isDeleted             Boolean?
   lastName              String?
-  leadSource            String?
   massMailOptOut        Boolean?
   middleName            String?
   mobile                String?

@@ -36,7 +36,6 @@ export default function AddCompanyUser() {
           />
           Step 1: Add Company in Getro or Bullhorn
         </h2>
-// Temp comment
         <p className={paragraphStyles}>At the moment it not possible to add companies in this system. Company profile data is currently pulled from Getro database due to technical limitations.</p>
         <p className={paragraphStyles}><strong>Reminder:</strong> please identify the company point of contact to associate to the company in Getro.</p>
         <div className='flex mt-8'>
@@ -48,7 +47,6 @@ export default function AddCompanyUser() {
           <ExternalLink
             text='Go to Bullhorn'
             href='https://www.bullhorn.com/'
-          />
         </div>
       </div>
       <div className={ containerStyles + 'bg-white mt-12'}>

@@ -45,7 +45,6 @@ function HeaderContent({ companyData }) {
               src={PlacePin}
               className={headerIconStyles}
             />
-// Temp comment
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
@@ -168,6 +167,7 @@ function renderDesktopLogo(logoUrl, name) {
       <img
         className={logoStyles}
         src={logoUrl}
+// Temp comment
         alt={`${name} logo`}
       />
     </div>

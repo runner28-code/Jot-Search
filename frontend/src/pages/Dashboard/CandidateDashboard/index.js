@@ -11,6 +11,7 @@ export default function CandidateDashboard() {
   return (
     <>
       <div className='flex items-center justify-start mb-12 pt-8 px-4'>
+        <img
           src={Home}
           alt='Home Icon'
         />

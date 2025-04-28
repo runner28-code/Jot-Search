@@ -27,7 +27,6 @@ export const choices = {
     link: ROUTES.profile,
   },
   careers: {
-// Temp comment
     label: 'Careers',
     icon: CareerIcon,
     link: ROUTES.careers,
@@ -84,7 +83,6 @@ export const candidateChoices = [
   choices.companies,
   choices.talentInTulsa,
   choices.logout
-];
 
 export const companyChoices = [
   choices.dashboard,

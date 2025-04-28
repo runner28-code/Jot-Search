@@ -3,7 +3,6 @@ import searchIcon from '../../assets/images/search-icon.svg';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchClick, placeholder, additionalClasses }) {
-  function handleChange(e) {
     setSearchTerm(e.target.value);
   }
 
@@ -35,6 +34,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
       <button 
         className={ width >= 990 ? 'h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl pl-12 pr-14 tracking-wide' : 'h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl px-4 tracking-wide'}
         onClick={ handleSearchClick }
+      >
         <img
           src={ searchIcon }
           alt='search'

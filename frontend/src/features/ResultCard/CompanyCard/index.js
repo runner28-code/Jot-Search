@@ -29,7 +29,6 @@ export default function CompanyCard({ data }) {
     )
   }
   return (
-    <div
       className='relative w-full'
       key={data.id}
     >
@@ -75,7 +74,6 @@ export default function CompanyCard({ data }) {
                 href='#'
                 className='text-royalBlue underline'
               >
-// Temp comment
                 LinkedIn
               </a>
             </div>

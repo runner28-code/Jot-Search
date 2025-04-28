@@ -143,6 +143,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
     const updated = await db.user.update({
       where: {
         id: existing.id,
+      },
       data: user,
     });
 

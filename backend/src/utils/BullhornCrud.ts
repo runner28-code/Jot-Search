@@ -72,6 +72,7 @@ export const saveCompanies = async (companies: any[]) => {
         companyData.companyURL = companyData.companyURL ? companyData.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null;
 
         const newCompany = await db.company.create({
+          data: companyData,
         });
 
         console.log(`Saved company with ID = ${company.id} successfully`);

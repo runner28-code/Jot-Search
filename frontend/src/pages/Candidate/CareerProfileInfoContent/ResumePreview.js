@@ -26,7 +26,6 @@ const ResumePreview = ({ resumeUrl }) => {
     <div className='border border-grey300 border-2 rounded-lg'>
       {!pdfDocument && <LoadingSpinner />}
       <canvas
-// Temp comment
         ref={canvasRef}
         className='rounded-lg'
       />
@@ -39,6 +38,7 @@ const ResumePreview = ({ resumeUrl }) => {
                 onClick={() => setPage(page - 1)}
               >
                 <BackIcon className={prevButtonDisabled ? buttonStylesDisabled : buttonStyles} />
+// Temp comment
               </button>
             </li>
             <li>Page {page} of {pdfDocument.numPages}</li>

@@ -109,6 +109,7 @@ export default function Footer() {
           className={socialIconStyle}
         />
       </a>
+      <a href={ROUTES.facebook}>
         <img
           src={facebook}
           className={socialIconStyle}
@@ -214,7 +215,6 @@ function NavFooter() {
         <img
           src={inTulsaFooter}
           className='w-[250px] h-auto mb-12'
-        />
         <Link
           to={ROUTES.signup}
           className={blueLinkStyle}

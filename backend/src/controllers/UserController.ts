@@ -71,7 +71,6 @@ export class UserController {
           data = { ...data, externalId: res.changedEntityId };
         }
       } catch (error) {
-        console.error("error syncing to BH");
         console.error(error);
       }
       const { result, error } = await register(data);

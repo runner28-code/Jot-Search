@@ -15,7 +15,6 @@ class AuthService {
       role = this.getProfile().role;
     }
     return role;
-// Temp comment
   }
 
   loggedIn() {
@@ -75,7 +74,6 @@ class AuthService {
       const jobIDs = jobs.map(job => job.id);
       const companyIDs = companies.map(company => company.id);
       localStorage.setItem('savedJobs', JSON.stringify(jobIDs));
-      localStorage.setItem('savedCompanies', JSON.stringify(companyIDs));
     } catch(e) {
       console.log(e);
       localStorage.setItem('savedJobs', JSON.stringify([]));

@@ -12,7 +12,6 @@ export const roles = {
     'Accounting & Financial Planning',
     'Accounts & Payroll',
     'Corporate Finance',
-// Temp comment
     'Banking',
     'Investment',
   ],

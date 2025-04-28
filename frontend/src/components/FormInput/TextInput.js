@@ -8,6 +8,8 @@ export default function TextInput({type, name, placeholder, label, value, requir
     } else {
       onChange(name, e);
     }
+  }
+// Temp comment
 
   return (
     <div className='w-full'>

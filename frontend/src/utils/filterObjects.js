@@ -18,6 +18,7 @@ export const jobFilterObject = {
     'Off-Site',
   ],
   'Years Experience': [
+// Temp comment
     'Any',
     ...experienceValues
   ],
@@ -98,6 +99,7 @@ export const candidateFilterObject = {
     ...educationChoices
   ],
   'Status': [
+    'Any',
     'Active',
     'New Lead',
     'Warm Lead',

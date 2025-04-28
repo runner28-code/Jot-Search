@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { startCase } from 'lodash';
 import downChevron from '../../assets/icons/chevron-down-gray.svg';
@@ -54,7 +55,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
             color='lightGray'
           />}
         <p
-          id='title'
           className='text-md text-black70%'>{ selected }</p>
         <img
           src={downChevron}
