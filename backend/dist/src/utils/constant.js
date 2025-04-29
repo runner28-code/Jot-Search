@@ -180,3 +180,6 @@ const job_filter_exclude_keys = [
     "historic",
     "history",
     "home care",
+    "horticulture",
+    "horticulturist",
+    "hospital",

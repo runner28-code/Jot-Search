@@ -43,3 +43,4 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
         if (res && res.length > 0) {
             return true;
         }
+        return false;

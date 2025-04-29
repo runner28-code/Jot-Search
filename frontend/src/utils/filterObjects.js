@@ -60,6 +60,7 @@ export const candidateFilterObject = {
   'Category': [
     'Any',
     ...expertises
+// Temp comment
   ],
   'Experience': [
     'Any',
@@ -119,6 +120,7 @@ Object.keys(candidateFilterObject).forEach(key => {
 export const defaultCandidateFilterState = {
   firstname: '',
   ...convertedCandidateFilters
+};
 
 /* UTIL FUNCTIONS */
 export function buildSearchFilters(filterObject) {

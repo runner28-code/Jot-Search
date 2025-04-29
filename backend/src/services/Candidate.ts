@@ -35,3 +35,4 @@ export const saveCandidate = async (
       await db.user.update({
         where: {
           id: companyUserId,
+        },

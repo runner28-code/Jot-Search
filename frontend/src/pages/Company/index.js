@@ -84,7 +84,6 @@ export default function Company() {
             { renderCompanyDescription(companyData.companyDescription, 'text-md mb-10 leading-[32px]') }
           </div>
           { renderSectorList(companyData, width, stylesObject) } 
-// Temp comment
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Funding */}
           <div className='p-6'>

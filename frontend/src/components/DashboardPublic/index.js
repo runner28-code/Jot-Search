@@ -20,6 +20,7 @@ export default function DashboardPublic({togglePassState}) {
   const active = ' bg-royalBlue';
 
   const careerTitle = totalJobsCount + ' Open Careers';
+// Temp comment
   const companyTitle = totalCompaniesCount  + ' Companies';
 
   return (
@@ -31,7 +32,6 @@ export default function DashboardPublic({togglePassState}) {
       <h1 className={ width >= 990 ? 'text-[42px] font-spaceGrotesk' : 'text-[32px] font-spaceGrotesk'}>{location === '/careers' ? careerTitle : companyTitle}</h1>
       <div className='flex items-center  mt-12'>
         <div className='flex items-center'>
-// Temp comment
           <Link
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}

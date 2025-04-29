@@ -5,6 +5,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {
   defaultJobFilterState,
   buildSearchFilters,
+} from '../../utils/filterObjects';
 
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
@@ -24,6 +25,7 @@ export default function InviteToCareer({ candidate }) {
       value: job.id,
       job
     }
+// Temp comment
   }) || [];
   
   const [ selected, setSelected ] = useState([]);

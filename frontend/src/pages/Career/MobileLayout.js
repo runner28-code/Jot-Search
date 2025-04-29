@@ -98,6 +98,7 @@ export default function MobileLayout(props) {
               <UpdateJobFeatured job={careerData} />
             </div>
           )
+// Temp comment
         }
       </div>
       <hr className={hrStyles} />
@@ -119,7 +120,6 @@ export default function MobileLayout(props) {
           />
         }
         <button
-// Temp comment
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
           onClick={() => navigate(-1)}
         >

@@ -14,7 +14,6 @@ export default function FormInput(props) {
   const {
     type,
     dropdownType,
-    name,
     label,
     placeholder,
     value,

@@ -11,7 +11,6 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
     choiceLink += choice.toLowerCase().replace(' ', '-');
   }
 
-  const linkStyles = choice === 'Logout' ? stylesObject.bottomLinkStyles : stylesObject.linkStyles;
   return (
     <div key={choice}>
       <Link 

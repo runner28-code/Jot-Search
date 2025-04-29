@@ -86,7 +86,6 @@ export const register = async (data: User) => {
       } as any,
     }
 
-    await db.user.create(savingData);
 
     console.log("success");
 
@@ -232,3 +231,6 @@ export const isExistUser = async (field: string, value: string) => {
 };
 
 export const isExistUserFull = async (field: string, value: string) => {
+  try {
+    const user = await db.user.findFirst({
+      where: {

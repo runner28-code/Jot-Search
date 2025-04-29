@@ -13,6 +13,7 @@ const mockJobsData = [
     location_state: 'OK',
     onSite: true,
     listingAge: '1 month',
+    specialty: 'Technology'
   },
   {
     id: 'b25cf8b7-e171-4049-8e67-701b7b7b81c3',
@@ -45,7 +46,6 @@ const mockJobsData = [
     title: 'Project Manager',
     company: 'GitWit',
     clientCorporationID: 'a5fa075b-90c3-4dad-97ef-87d6c2cc0922',
-    logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/gitwit_2_vwj7ap.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
     location_state: 'OK',

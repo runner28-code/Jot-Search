@@ -47,10 +47,10 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
             </li>
           ))}
         </ul>
-        <button
           className='bg-royalBlue text-white text-lg px-xxl py-xs rounded-xl mt-20'
           onClick={handleSyncClick}
         >
+          Synch
         </button>
       </>)}
     </div>

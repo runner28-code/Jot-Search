@@ -123,7 +123,6 @@ export default function RegistrationFormInternal(loggedIn) {
 
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
-// Temp comment
       setTimeout(() => {
         setFormObj(defaultState);
         setSubmissionObject({
@@ -137,7 +136,6 @@ export default function RegistrationFormInternal(loggedIn) {
   async function handleSubmit(event) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
-    setErrorBlock('');
     setErrors([]);
     setFormObj({
       ...formObj,

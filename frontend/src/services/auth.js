@@ -93,7 +93,6 @@ class AuthService {
       localStorage.setItem('savedCandidates', JSON.stringify([]));
     }
   }
-// Temp comment
 
   toggleSavedJob(jobID, action) {
     const savedJobs = this.getSavedJobIDs();

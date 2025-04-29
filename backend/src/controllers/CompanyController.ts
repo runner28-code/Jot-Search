@@ -16,6 +16,7 @@ import {
   DATASET_GETRO,
   FilterOption,
   Job,
+  FilterBody,
   DataSource,
   Tables,
   Company,
@@ -130,3 +131,5 @@ export class CompanyController {
     return await getSavedCompanies(candidate || authUser.id!);
   }
 
+  async getCompanyByIdFromBullhorn(id: string): Promise<any> {
+    try {

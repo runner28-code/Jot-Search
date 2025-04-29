@@ -1,3 +1,4 @@
+// Temp comment
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import * as ROUTES from '../../routes';
@@ -30,7 +31,6 @@ export default function JoinTalentNetwork() {
             <h6 className='text-[2.5rem] mt-12 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>
             <p className='text-slateGray text-ml mt-6 font-light leading-[3.6rem]'>By signing up, you will be able to connect and support you with top companies ready to help you take the next step in your career in Tulsa.</p>
           </div>
-// Temp comment
         </div>
       </section>
     </>)

@@ -32,6 +32,7 @@ export default function NavMenu() {
         <div className='w-8 h-8 flex flex-col justify-between'>
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
+// Temp comment
           <div className='border-white border-solid border-2'></div>
         </div>
       </button>
@@ -40,4 +41,5 @@ export default function NavMenu() {
         menuOpen={menuOpen}
         handleOptionClick={handleOptionClick}
         setMenuOpen={setMenuOpen} />
+    </div>
   )

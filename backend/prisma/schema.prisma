@@ -275,3 +275,7 @@ model Company {
   customText7  String?
   customText8  String?
   customText9  String?
+  customText10 String?
+  customText11 String?
+  customText12 String?
+  customText13 String?

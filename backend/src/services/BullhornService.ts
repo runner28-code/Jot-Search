@@ -103,7 +103,6 @@ export class BullhornService {
     const url = `${this.oauth_url}/authorize?${query}`;
     console.log("url =", url);
     const res = await axios.get(url);
-    if (res.status === 200) {
       const path = res.request.path;
       console.log("path =", path);
       this.auth_code = path
@@ -364,3 +363,8 @@ export class BullhornService {
   ): Promise<any> {
     console.log("\n***** getJobs *****");
     let offset = 0;
+    let total = 100000;
+    let repeatErr = 0;
+
+    while (repeatErr < 3) {
+      console.log(`\nBullhorn_GET_JOBS: ${total} / ${offset}`);

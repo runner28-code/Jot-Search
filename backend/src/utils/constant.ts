@@ -181,3 +181,6 @@ const job_filter_exclude_keys = [
   "horticulture",
   "horticulturist",
   "hospital",
+  "hospitalist",
+  "house manager",
+  "housekeeper",

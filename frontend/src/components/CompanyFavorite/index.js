@@ -7,6 +7,7 @@ import CompanyCard from '../../features/ResultCard/CompactCompanyCard';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+export default function CareerFavorite () {
 
   const { user_id } = AuthService.getProfile();
   const { savedCompanies, isLoading } = useGetSavedCompanies({userId: user_id});
@@ -32,7 +33,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
                   data={company}
                   agoDate={company.agoDate}
                 />
-              </>)
             })
         }
         <div className='flex items-center text-center flex-col justify-center px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white rounded-3xl outline-dashed outline-neutral-300 bg-gray-200'>

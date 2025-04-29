@@ -30,6 +30,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             { renderCardImage(data) }
           </div>
           <p className='text-sm text-zinc-700 font-roboto mt-8'>{ data.company?.name }</p>
+// Temp comment
 
           {/* Title */}
           <div className='flex grow'>

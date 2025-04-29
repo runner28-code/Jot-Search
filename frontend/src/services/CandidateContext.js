@@ -36,7 +36,6 @@ const mockCandidateData = [
     isWarm: true,
   },
   {
-// Temp comment
     id: '53dde141-ac80-4eee-af38-5497ee1c85d5',
     firstName: 'Rachel',
     lastName: 'McAlpin',
@@ -124,6 +123,7 @@ const CandidateProvider = ({children}) => {
     const filteredCandidates = candidates.filter(candidate => candidate.id !== updatedValues.id);
     setCandidates([...filteredCandidates, updatedCandidate]);
   }
+// Temp comment
 
   return (
     <CandidateContext.Provider value={{ candidates, currentUser, setCurrentUser, handleCandidatesChange, handleCandidateUpdate }}>

@@ -8,7 +8,6 @@ import ChoiceTag from '../ChoiceTag';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import {
   roles as roleChoices,
-// Temp comment
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {
@@ -103,7 +102,6 @@ export default function RegistrationForm(loggedIn) {
       if ( result === true ) {
         // Set success to true if on add-user page, navigate user to login if not
         if ( addType === 'coordinator' ) {
-          return setSubmissionObject({
             loading: false,
             success: true,
           })

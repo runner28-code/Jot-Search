@@ -55,8 +55,10 @@ export default function NavSearch({ placeholder }) {
   const { jobs, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('jobs'), count: NUM_ITEMS_PER_TYPE, page: 1, enabled: isOpen });
   const { companies, total: totalCompanies, isLoading: isLoadingCompanies } = useGetCompanies({ ...getFiltersByTab('companies'), count: NUM_ITEMS_PER_TYPE, page: 1, enabled: isOpen });
   const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: NUM_ITEMS_PER_TYPE, page: 1, enabled: isOpen && userType === 'coordinator' });
+// Temp comment
   // State and ref to listen for outside clicks
   const [listening, setListening] = useState(false);
+  const menuRef = useRef(null);
 
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {

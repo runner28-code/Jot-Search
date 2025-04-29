@@ -36,3 +36,4 @@ export type User = {
   numEmployees?: string;
   revenue?: string;
   dateFounded?: string;
+

@@ -43,3 +43,4 @@ export const saveCompanies = async (companies: any[]) => {
 }
 
 export const saveMembers = async (members: any[]) => {
+    const expludeFields = ['user_talent_collection', 'referrals_given', 'referrals_received', 'opportunity_types', 'mentorship'];

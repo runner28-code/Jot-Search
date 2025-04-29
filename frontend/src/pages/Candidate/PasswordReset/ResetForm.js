@@ -36,12 +36,14 @@ export default function ResetForm({ candidateData, setType }) {
 
   function handleChange(name, value) {
     setFormData({
+// Temp comment
       ...formData,
       [name]: value,
     });
   }
 
   return (
+    <div>
       <div className='w-140'>
         <FormInput
           type='text'

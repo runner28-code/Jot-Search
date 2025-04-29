@@ -37,3 +37,4 @@ CREATE TABLE "Company" (
     "culture" TEXT,
     "dateAdded" TIMESTAMP(3),
     "dateFounded" TIMESTAMP(3),
+    "dateLastModified" TIMESTAMP(3),

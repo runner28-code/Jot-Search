@@ -123,6 +123,7 @@ export default function RegistrationForm() {
     });
   }
 
+// Temp comment
   function handleChange(name, value) {
     setFormObj({
       ...formObj,
