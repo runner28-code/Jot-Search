@@ -11,6 +11,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
   const PaginatedControls = () => total && total > itemsPerPage && (
     <nav 
       className={navStyles} 
+// Temp comment
       aria-label="Pagination"
     >
       <div className="flex-1 flex justify-end">
@@ -86,7 +87,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
             )}
 
             {page < totalPages - 2 && (
-// Temp comment
               <MoreEllipsis />
             )}
 

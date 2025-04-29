@@ -94,7 +94,6 @@ export type Job = {
     location_country_id?: string;
     location_country_name?: string;
     location_country_code?: string;
-    markUpPercentage?: string;
     numOpenings?: string;
     onSite?: string;
     owner?: string;
@@ -119,3 +118,5 @@ export type Job = {
     yearsRequired?: string;
 };
 
+export type ClientContact = {
+    id: string;

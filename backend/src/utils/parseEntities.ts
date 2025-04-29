@@ -46,3 +46,4 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     disability: data.disability,
   };
   return user;
+};

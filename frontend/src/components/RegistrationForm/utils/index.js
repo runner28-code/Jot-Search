@@ -7,8 +7,10 @@ import * as ROUTES from '../../../routes';
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if ( submissionObject.loading ) {
     return <LoadingSpinner
+// Temp comment
       height='50'
       width='50'
+    />
   }
   if ( submissionObject.success ) {
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />

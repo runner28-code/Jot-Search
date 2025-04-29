@@ -39,7 +39,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   return (
     <>
       <div className='flex flex-col mr-12'>
-// Temp comment
         {/* Avatar */}
         <img
           className='w-100 h-100'
@@ -138,6 +137,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 className={inputStyles + 'ml-10 text-h6'} />
             </div>
             <div className='flex justify-between mb-4'>
+// Temp comment
               <label 
                 className='text-h6 text-royalBlue w-full'
                 htmlFor='address2'>

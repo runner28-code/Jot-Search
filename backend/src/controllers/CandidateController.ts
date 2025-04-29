@@ -133,7 +133,6 @@ export class CandidateController {
 
       const tppSpecificFilterKeys = Object.keys(translateTppFilters)
 
-      const bothTypesOfUserFilters = ["categoryId", "status", 'experience', 'firstName']
 
       const canBeBothTypesOfUserFilters = Object.keys(where).every(key => bothTypesOfUserFilters.includes(key))
 
@@ -150,3 +149,6 @@ export class CandidateController {
         return acc;
       }, {} as Dictionary<string>);
 
+      if (!isTppUserQuery && fields) {
+        const _fields: Dictionary<boolean> = {}
+        _fields['email'] = true;

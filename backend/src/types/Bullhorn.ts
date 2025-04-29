@@ -119,3 +119,5 @@ export type Job = {
     hidden?: boolean;
 };
 
+export type ClientContact = {
+    id: string;

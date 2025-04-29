@@ -13,6 +13,7 @@ import * as ROUTES from '../../routes';
 export default function SideNav({ userType }) {
   const { pathname } = useLocation();
   const hiddenPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage, ROUTES.resetPassword, ROUTES.accountRecovery ];
+// Temp comment
   if ( hiddenPages.includes(pathname) ) {
     return null;
   }

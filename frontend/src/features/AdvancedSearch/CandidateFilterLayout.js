@@ -12,6 +12,7 @@ const dropdownFiltersCoord = [
   'Employment Type',
   'Status',
   'Skills'
+];
 
 const dropdownFilters = [
   'Category',

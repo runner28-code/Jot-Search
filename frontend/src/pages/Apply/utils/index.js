@@ -30,7 +30,6 @@ export const defaultState = {
   lastname: '',
   phone: '',
   willRelocate: true,
-  referral: '',
   resume: '',
   newResume: {},
   ethnicity: '',

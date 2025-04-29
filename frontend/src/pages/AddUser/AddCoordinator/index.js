@@ -18,7 +18,6 @@ export default function AddCoordinator() {
       delete formObjectCopy.verifyPassword;
       const data = await registerUser(formObjectCopy);
       if (data.result === true) {
-        setSubmissionObject({
           loading: false,
           success: true,
           errors: {},
@@ -53,6 +52,7 @@ export default function AddCoordinator() {
 
     // Error checking
     const newErrors = validateInput(
+      name,
       value,
       submissionObject.errors,
       formObject.password

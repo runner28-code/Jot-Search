@@ -60,6 +60,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
         <img
           src={downChevron}
           alt='open'
+          className='w-6 h-4'
         />
 
       </div>

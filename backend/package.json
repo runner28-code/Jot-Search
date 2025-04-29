@@ -9,7 +9,6 @@
     "@types/cors": "^2.8.12",
     "@types/ejs": "^3.1.0",
     "@types/jsonwebtoken": "^8.5.8",
-    "@types/node-cron": "^3.0.1",
     "@types/uuid": "^8.3.4",
     "aws-sdk": "^2.1250.0",
     "axios": "^0.25.0",
@@ -20,3 +19,4 @@
     "formidable": "^2.0.1",
     "fs": "^0.0.1-security",
     "moment": "^2.29.4",
+    "multer": "^1.4.4",

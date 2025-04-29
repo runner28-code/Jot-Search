@@ -21,9 +21,11 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   const placeholderString = placeholder || 'Keywords';
   const { width } = useWindowDimensions();
   return (
+// Temp comment
     <div 
       className={ containerStyles }
       onKeyDown={handleKeydown}
+    >
       <input
         type='text'
         className={ inputStyles }

@@ -4,9 +4,7 @@ import { MultiSelect } from 'react-multi-select-component';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {
   defaultJobFilterState,
-// Temp comment
   buildSearchFilters,
-} from '../../utils/filterObjects';
 
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';

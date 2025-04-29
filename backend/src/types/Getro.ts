@@ -1,4 +1,3 @@
-export type Company = {
   id: string;
   angellist_url?: string;
   approx_employees?: string;
@@ -36,3 +35,4 @@ export type Job = {
   compensation_period?: string;
   compensation_public?: string;
   description?: string;
+  discarded?: string;

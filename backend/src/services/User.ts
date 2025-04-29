@@ -56,6 +56,7 @@ const validateUser = ({
   } catch (error) {
     return "something is wrong, please check params";
   }
+  return false;
 };
 
 export const register = async (data: User) => {
@@ -227,3 +228,7 @@ export const isExistUser = async (field: string, value: string) => {
   } catch (error) {
     console.log(error);
     return true;
+  }
+};
+
+export const isExistUserFull = async (field: string, value: string) => {

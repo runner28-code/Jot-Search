@@ -359,3 +359,8 @@ export class BullhornService {
 
   async getJobs(
     testMode = false,
+    count = 1000,
+    sort = "-dateAdded"
+  ): Promise<any> {
+    console.log("\n***** getJobs *****");
+    let offset = 0;

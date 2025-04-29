@@ -8,3 +8,4 @@ CREATE TABLE "Job" (
     "city" TEXT,
     "state" TEXT,
     "zip" TEXT,
+    "country_id" TEXT,

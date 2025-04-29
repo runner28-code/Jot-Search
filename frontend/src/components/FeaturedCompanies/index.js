@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
@@ -8,6 +7,7 @@ const ITEMS_PER_PAGE = 10;
 
 export default function FeaturedCompanies() {
 
+  const filtersArr = [
     {
       key: 'status',
       value: 'active'

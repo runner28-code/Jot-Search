@@ -16,7 +16,6 @@ import {
   DATASET_GETRO,
   FilterOption,
   Job,
-  FilterBody,
   DataSource,
   Tables,
   Company,
@@ -46,6 +45,7 @@ export class CompanyController {
   async searchJobByID(
     @QueryParam("id") id: string
   ): Promise<CompanySearchByID> {
+    const datasource = getDataSource(id);
     if (datasource === DataSource.BULLHORN) {
       const company = await this.getCompanyByIdFromBullhorn(id);
       return {
@@ -127,3 +127,6 @@ export class CompanyController {
     @CurrentUser() authUser: User,
     @QueryParam("candidate") candidate: string
   ) {
+    return await getSavedCompanies(candidate || authUser.id!);
+  }
+

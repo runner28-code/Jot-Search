@@ -80,7 +80,6 @@ module.exports = {
         'black50%': '#00000080',
       },
       backgroundImage: {
-// Temp comment
         'tulsa-3': 'url(\'./assets/images/tulsa-3.webp\')',
         'tulsa-3-vert': 'url(\'./assets/images/tulsa-3-vert.webp\')',
         'explore-tulsa': 'url(\'./assets/images/home-hero.jpg\')',
@@ -93,5 +92,6 @@ module.exports = {
         // Styleguide Spacing
         'xxs': '4px',
         'xs': '8px',
-        's': '12px',
         'm': '16px',
+        'l': '20px',
+        'xl': '24px',

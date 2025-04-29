@@ -7,6 +7,7 @@ export const expertises = [
   'Sales & Biz Dev',
 ];
 
+export const roles = {
   'Finance': [
     'Accounting & Financial Planning',
     'Accounts & Payroll',
@@ -143,3 +144,5 @@ export const skills = [
   'Copy Editing',
   'Copywriting',
   'Counseling',
+  'CPA',
+  'CPG',

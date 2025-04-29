@@ -16,6 +16,7 @@
         "sourceType": "module"
     },
     "plugins": [
+        "react"
     ],
     "rules": {
         "indent": [
@@ -24,3 +25,4 @@
             { "SwitchCase": 1 }
         ],
         "quotes": [
+            "warn",

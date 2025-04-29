@@ -17,7 +17,6 @@ export const UpdateJobStatus = ({ job }) => {
 
       <div className='flex flex-col'>
         <h4 className={sectionHeaderStyles}>Career Status</h4>
-// Temp comment
         {isLoading && <p>Loading...</p>}
         {isSuccess && <p>Success!</p>}
         <Dropdown 
@@ -30,7 +29,6 @@ export const UpdateJobStatus = ({ job }) => {
           ]} 
           currentChosen={updatedJob.status}
           name='status'
-          inputStyles='w-100 vw-480:w-120 vw-640:w-140 border-lightGrey border-2 border-solid rounded-2xl p-4 vw-480:text-lg h-24 '
           optionStyles={'text-lg'}
           placeholder={'TP Career Status'}
           handleChange={async(e) => {

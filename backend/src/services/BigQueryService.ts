@@ -25,3 +25,4 @@ export class BigQueryService {
                     ${query}
                     WHERE ${condition}
                 `;
+            }

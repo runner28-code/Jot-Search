@@ -13,6 +13,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   if ( !AuthService.loggedIn() || role === 'coordinator' ) {
     return null;
   }
+// Temp comment
   // Return conditions
   const invalidType = !VALID_TYPES.includes(type);
   const isInactiveJob = (type === 'job' && data.status !== 'Active');

@@ -119,7 +119,6 @@ Object.keys(candidateFilterObject).forEach(key => {
 export const defaultCandidateFilterState = {
   firstname: '',
   ...convertedCandidateFilters
-};
 
 /* UTIL FUNCTIONS */
 export function buildSearchFilters(filterObject) {
@@ -135,7 +134,6 @@ export function buildSearchFilters(filterObject) {
       }
       searchFilters.push({
         key: filterKey,
-// Temp comment
         value: filterObject[key],
       });
     }

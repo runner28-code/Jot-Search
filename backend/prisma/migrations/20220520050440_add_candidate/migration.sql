@@ -35,3 +35,4 @@ CREATE TABLE "Candidate" (
     "fax3" TEXT,
     "firstName" TEXT,
     "lastName" TEXT,
+    "gender" TEXT,

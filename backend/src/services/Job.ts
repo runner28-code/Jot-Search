@@ -51,3 +51,4 @@ const sanitizeJob = (job: Job): Job => {
     }
   });
 
+  return newJob;

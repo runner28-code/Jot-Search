@@ -10,6 +10,7 @@ export default function ResetButton({ candidateData, setType }) {
     event.preventDefault();
     const { email } = candidateData;
     const res = await API.post(ROUTES.APIaccountRecovery, {
+      email: email
     });
 
     if ( res.data.result ) {
@@ -34,5 +35,6 @@ export default function ResetButton({ candidateData, setType }) {
       onClick={handleSubmit}
     >
       Request Password Reset
+// Temp comment
     </button>
   )

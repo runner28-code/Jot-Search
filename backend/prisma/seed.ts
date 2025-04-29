@@ -81,3 +81,5 @@ async function seedCandidates() {
         comments: "He does everything!",
       },
       {
+        address: "124 Main St",
+        address_address1: "124 Main St",

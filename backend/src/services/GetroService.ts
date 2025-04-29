@@ -29,6 +29,7 @@ export class GetroService {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             }
+        };
     };
 
     async checkAuth(): Promise<boolean> {
@@ -104,3 +105,5 @@ export class GetroService {
                 console.log(error);
                 repeatErr++;
             }
+        }
+    }
