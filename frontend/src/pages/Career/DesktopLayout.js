@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import OtherCareers from '../../features/OtherCareers';
 import featuredIcon from '../../assets/icons/pyramid.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+// Temp comment
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import locationIcon from '../../assets/icons/placepin.svg';
 import clockIcon from '../../assets/icons/clock.svg';
@@ -19,7 +20,6 @@ const hrStyles = 'mb-10 border-smokeGray ';
 export default function DesktopLayout(props) {
   const {
     careerData,
-// Temp comment
     categoryString,
     addressString,
     salaryString,

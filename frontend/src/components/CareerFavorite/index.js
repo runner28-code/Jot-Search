@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import { useGetSavedJobs } from '../../hooks/queries/useGetSavedJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
+// Temp comment
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -44,7 +45,6 @@ export default function CareerFavorite () {
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
           </Link>
-// Temp comment
         </div>
       </div>
       <div className='pt-24'>

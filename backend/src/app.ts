@@ -51,3 +51,4 @@ const uploadToS3 = async(req: any, res: any) => {
       Body: buffer,
       Bucket: process.env.S3_BUCKET,
     }
+

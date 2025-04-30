@@ -51,3 +51,4 @@ export type AdvancedFilterOption = {
 };
 
 export type FilterBody = {
+  filters?: any;

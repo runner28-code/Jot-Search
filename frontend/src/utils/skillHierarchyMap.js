@@ -148,3 +148,5 @@ export const skills = [
   'CPG',
   'Creative Writing',
   'CRM',
+  'CSM',
+  'CSS',

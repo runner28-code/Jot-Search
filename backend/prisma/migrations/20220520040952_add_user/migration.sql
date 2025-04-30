@@ -15,3 +15,4 @@ CREATE TABLE "User" (
     "expertise" TEXT,
     "experienceYears" TEXT,
     "workspace" TEXT,
+    "aboutUs" TEXT,

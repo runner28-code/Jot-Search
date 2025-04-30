@@ -98,7 +98,6 @@ export default function MobileLayout(props) {
               <UpdateJobFeatured job={careerData} />
             </div>
           )
-// Temp comment
         }
       </div>
       <hr className={hrStyles} />

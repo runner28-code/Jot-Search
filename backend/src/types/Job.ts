@@ -22,3 +22,4 @@ export type Job = {
   onSite?: string;
   salary?: string;
   salaryUnit?: string;
+  startDate?: string;

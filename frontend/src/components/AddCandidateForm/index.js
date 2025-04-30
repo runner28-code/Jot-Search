@@ -123,7 +123,6 @@ export default function RegistrationForm() {
     });
   }
 
-// Temp comment
   function handleChange(name, value) {
     setFormObj({
       ...formObj,
@@ -253,7 +252,6 @@ export default function RegistrationForm() {
           />
           {/* File input for resume */}
           <FormInput
-            type='file'
             name='resumeFile'
             placeholder='Upload Resume'
             value={formObj.resumeFile}

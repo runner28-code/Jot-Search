@@ -12,7 +12,6 @@ export default function DetailsHeader({ type, source }) {
       Icon = CandidatesIcon;
       break;
     case 'company':
-// Temp comment
       Icon = CompanyIcon;
       break;
     case 'career':
@@ -29,7 +28,6 @@ export default function DetailsHeader({ type, source }) {
   }
   return (<>
     <div className='flex gap-[12px] items-center'>
-      <Icon className='h-18 w-auto fill-royalBlue' />
       <h1 className='text-lg vw-480:text-h2 text-royalBlue font-spaceGrotesk font-bold flex items-center'>
         {headerText}
         { renderSourceIdentifier(source) }

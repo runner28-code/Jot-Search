@@ -60,7 +60,6 @@ export const candidateFilterObject = {
   'Category': [
     'Any',
     ...expertises
-// Temp comment
   ],
   'Experience': [
     'Any',

@@ -46,7 +46,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
       ref={menuRef}
       className={ width >= 990 ? containerStyles : containerStylesMobile}>
       <div
-        id='title-wrapper'
         onClick={handleContainerClick}
         className={filterStyles}>
         {filterType === 'Location' && 

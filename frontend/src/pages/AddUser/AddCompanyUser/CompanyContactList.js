@@ -22,7 +22,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
       {/* Loading */}
       {isLoadingContacts && <LoadingSpinner />}
       {/* No results */}
-      {!isLoadingContacts && clientContacts?.length === 0 && (
         <p className='opacity-70 text-sm'>No contacts found for {selectedCompany?.name}</p>
       )}
       {/* Results */}
@@ -47,6 +46,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
             </li>
           ))}
         </ul>
+        <button
           className='bg-royalBlue text-white text-lg px-xxl py-xs rounded-xl mt-20'
           onClick={handleSyncClick}
         >

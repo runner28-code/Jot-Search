@@ -108,3 +108,4 @@ export class GetroService {
         }
     }
 
+    async getCompanyDetail(slug: string): Promise<any> {

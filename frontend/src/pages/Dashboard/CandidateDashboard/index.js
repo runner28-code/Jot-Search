@@ -10,7 +10,6 @@ export default function CandidateDashboard() {
   const headerStyles = 'font-spaceGrotesk font-bold text-h1 text-royalBlue ';
   return (
     <>
-// Temp comment
       <div className='flex items-center justify-start mb-12 pt-8 px-4'>
         <img
           src={Home}
@@ -21,7 +20,6 @@ export default function CandidateDashboard() {
       <div className='px-4'>
         <InvitationsToApply />
         <PendingApplications />
-        <CareerFavorite />
         <CompanyFavorite />
         <h1 className={headerStyles}>Search</h1>
         <AdvancedSearch />

@@ -79,7 +79,6 @@ export default function RegistrationFormInternal(loggedIn) {
           loading: false,
           success: false,
         });
-        return;
       }
 
       // Attempt to upload resume before submitting user data
@@ -136,6 +135,7 @@ export default function RegistrationFormInternal(loggedIn) {
   async function handleSubmit(event) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
+    setErrorBlock('');
     setErrors([]);
     setFormObj({
       ...formObj,

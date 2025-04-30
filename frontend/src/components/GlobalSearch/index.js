@@ -7,7 +7,6 @@ import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
-
 import { getCompanies, getJobs, getCandidates } from '../../services/API';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
@@ -18,7 +17,6 @@ export default function GlobalSearch({ placeholder }) {
     jobs: [],
     companies: [],
     candidates: [],
-// Temp comment
     loading: false,
     forceHidden: true
   });

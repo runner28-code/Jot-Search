@@ -97,3 +97,4 @@ module.exports = {
         'l': '20px',
         'xl': '24px',
         'xxl': '28px',
+        'xxl-2': '32px',

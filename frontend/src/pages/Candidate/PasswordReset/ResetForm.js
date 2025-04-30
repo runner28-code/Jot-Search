@@ -26,6 +26,7 @@ export default function ResetForm({ candidateData, setType }) {
         new_password: password.value,
       });
 
+// Temp comment
       if ( res.data.result ) {
         setType('Password Reset Successfully', true);
       } else {
@@ -36,7 +37,6 @@ export default function ResetForm({ candidateData, setType }) {
 
   function handleChange(name, value) {
     setFormData({
-// Temp comment
       ...formData,
       [name]: value,
     });

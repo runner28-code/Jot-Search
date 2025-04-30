@@ -8,7 +8,6 @@ import useWindowDimensions from '../../../hooks/windowDimensions';
 
 const VALID_TYPES = ['job', 'company', 'candidate'];
 
-export default function FavoriteButton({ type, data, addClass, isFavoriteOverride = null }) {
   const role = AuthService.getUserRole();
   if ( !AuthService.loggedIn() || role === 'coordinator' ) {
     return null;
@@ -26,6 +25,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const { user_id } = AuthService.getProfile();
   const [isFavorite, setIsFavorite] = useState(isFavoriteOverride ?? isSaved);
   const { width } = useWindowDimensions();
+  const isMobile = width < 768;
 
   const handleFavoriteClick = async () => {
     setIsFavorite(isFavorite => !isFavorite);

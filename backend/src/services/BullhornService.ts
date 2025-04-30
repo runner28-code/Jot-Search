@@ -103,6 +103,7 @@ export class BullhornService {
     const url = `${this.oauth_url}/authorize?${query}`;
     console.log("url =", url);
     const res = await axios.get(url);
+    if (res.status === 200) {
       const path = res.request.path;
       console.log("path =", path);
       this.auth_code = path
@@ -368,3 +369,8 @@ export class BullhornService {
 
     while (repeatErr < 3) {
       console.log(`\nBullhorn_GET_JOBS: ${total} / ${offset}`);
+      try {
+        const query = queryString.stringify({
+          BhRestToken: this.BhRestToken,
+          fields: JOB_FIELDS.join(","),
+          query: "isDeleted: 0",

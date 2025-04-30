@@ -42,6 +42,7 @@ function HeaderContent({ companyData }) {
               <div className={ headerGroupStyles }>
                 <CareerIcon
                   className={headerIconStyles}
+// Temp comment
                 />
                 <OpenCareers
                   styles={headerRowTextStyles}
@@ -55,7 +56,6 @@ function HeaderContent({ companyData }) {
         <FavoriteButton
           type={'company'}
           data={companyData} />
-// Temp comment
       </div>
     </>
   )

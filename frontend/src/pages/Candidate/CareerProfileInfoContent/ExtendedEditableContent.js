@@ -29,7 +29,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     zip: candidateData.zip || '',
     phone: candidateData.phone || '',
     categoryId: candidateData.categoryId || null,
-    expertise: categories.find(category => category.id === candidateData.categoryId)?.name || '',
     roles: Array.isArray(candidateData.roles) ? candidateData.roles : (candidateData?.roles?.split(', ') || []),
     description: candidateData.description || '',
     workspace: candidateData?.workspace || '',
@@ -146,7 +145,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           name='roles'
           label={`What roles are you interested in?`}
           required={true}
-// Temp comment
           placeholder='Select'
           value={formData.roles || []}
           onChange={handleChange}

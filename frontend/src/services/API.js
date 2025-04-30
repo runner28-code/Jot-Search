@@ -15,6 +15,7 @@ API.interceptors.request.use(
     const token = localStorage.getItem('id_token');
     if (token) {
       config.headers['Authorization'] = 'Bearer ' + token;
+    }
     return config;
   },
   function (error) {
@@ -56,6 +57,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
     candidates: normalizeData(data.candidates),
     total: data.total
   }
+// Temp comment
 }
 
 export async function getCandidateById(id) {

@@ -36,3 +36,4 @@ CREATE TABLE "Candidate" (
     "firstName" TEXT,
     "lastName" TEXT,
     "gender" TEXT,
+    "hourlyRate" TEXT,

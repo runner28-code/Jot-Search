@@ -102,7 +102,6 @@ export default function AddCoordinator() {
         <input
           type='text'
           className={submissionObject.errors.firstname ? invalidInputStyles : validInputStyles += addInputStyles}
-          name='firstname'
           placeholder='First Name'
           value={formObject.firstname}
           onChange={handleInputChange}

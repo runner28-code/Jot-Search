@@ -18,7 +18,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     containerStyles += additionalClasses;
   }
   const placeholderString = placeholder || 'Keywords';
-// Temp comment
   return (
     <div
       className={ containerStyles }

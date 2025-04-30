@@ -1,5 +1,4 @@
 export type Company = {
-    id: string;
     angellist_url?: string;
     approx_employees?: string;
     crunchbase_url?: string;
@@ -29,3 +28,4 @@ export type Company = {
 export type Job = {
     id: string;
     application_method?: string;
+    application_path?: string;
