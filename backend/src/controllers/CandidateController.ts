@@ -88,6 +88,7 @@ export class CandidateController {
       if (authUser.role !== COORDINATOR) {
         return { message: "You are not authorized to update candidate", result: false };
       }
+
       const candidate = await db.candidate.findFirst({
         where: {
           id,

@@ -15,6 +15,7 @@ export const resetPassword = '/reset-password';
 
 // Dashboard routes
 export const dashboard = '/';
+export const careers = '/careers';
 export const companies = '/companies';
 // Candidate Dashboard
 export const applications = '/applications';
@@ -29,7 +30,6 @@ export const companyQuickStats = '/company-stats';
 // Coordinator Dashboard
 export const addUser = '/add-user';
 export const alerts = '/alerts';
-
 export const careerSeekers = '/career-seeker';
 export const softwareEngineering = '/software-engineering';
 export const salesBizDev = '/sales-business-development';

@@ -42,6 +42,7 @@ export function formatCandidateData(candidateData) {
 export function convertUserToCandidate(user) {
   const candidate = {
     id: user.id,
+    firstName: user.firstname || '',
     lastName: user.lastname || '',
     name: formatCandidateName(user.firstname, user.lastname),
     email: user.email,
@@ -49,7 +50,6 @@ export function convertUserToCandidate(user) {
     description: user.description,
     experience: user.experience?.parseInt() || 1,
     address_address1: user.address1 || '',
-    address_address2: user.address2 || '',
     address_city: user.city || '',
     address_state: user.state || '',
     address_zip: user.zip || '',

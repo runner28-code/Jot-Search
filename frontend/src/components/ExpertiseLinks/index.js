@@ -3,7 +3,6 @@ import softwareEngineeringIcon from '../../assets/images/Symbol_softwareengineer
 import salesAndBizDevIcon from '../../assets/images/Symbol_Salesbizdev.svg';
 import marketingIcon from '../../assets/images/Symbol_marketing.svg';
 import operationsIcon from '../../assets/images/Symbol_operations.svg';
-import financeIcon from '../../assets/images/Symbol_finance.svg';
 import * as ROUTES from '../../routes';
 
 export default function ExpertiseLinks() {
@@ -60,6 +59,7 @@ export default function ExpertiseLinks() {
         </Link>
         {/* Operations */}
         <Link
+          to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Operations' }}
         >

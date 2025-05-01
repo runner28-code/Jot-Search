@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
-  const {
     headerText,
     icon,
     IconComponent,

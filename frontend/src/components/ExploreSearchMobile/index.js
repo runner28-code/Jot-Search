@@ -44,7 +44,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     return (
       <div className={containerStyles}>
         <LoadingSpinner color='#FDFDFD' />
-      </div>
     );
   }
   return (

@@ -57,7 +57,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
     candidates: normalizeData(data.candidates),
     total: data.total
   }
-// Temp comment
 }
 
 export async function getCandidateById(id) {
@@ -120,7 +119,6 @@ export async function updateJob({ id, status, featured }) {
   });
   return normalizeData(data);
 }
-
 //* COMPANIES
 export async function getCompanies(filterValue, filterKey, count, page) {
   return (await getCompaniesFull(filterValue, filterKey, count, page)).companies;

@@ -25,10 +25,10 @@ export default function NavBar() {
   } else {
     return <DesktopNavBarLayout />
   }
-// Temp comment
 }
 
 function NavBarLayout() {
+// Temp comment
   return (
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50 '>
       <div className='h-30 px-8 flex justify-between items-center'>

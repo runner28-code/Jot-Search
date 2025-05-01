@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../routes';
 
-// Temp comment
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import TypeTabs from '../../components/TypeTabs';

@@ -22,6 +22,7 @@ import {
   recovery,
   getStats,
   getLandingPageStats,
+  findUserByEmail,
   getCompanyDashboardStats,
   getCoordinatorDashboardStats,
 } from "../services/User";
@@ -69,3 +70,5 @@ export class UserController {
           console.log("changedEntityId", res.changedEntityId);
           data = { ...data, externalId: res.changedEntityId };
         }
+      } catch (error) {
+        console.error("error syncing to BH");

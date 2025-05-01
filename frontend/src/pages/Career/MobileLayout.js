@@ -115,6 +115,7 @@ export default function MobileLayout(props) {
           <ApplyButton
             datasource={careerData.datasource}
             careerId={careerData.id}
+// Temp comment
             applicationUrl={careerData.application_path || careerData.url}
           />
         }

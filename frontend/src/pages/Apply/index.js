@@ -68,6 +68,7 @@ export default function Apply() {
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';
       } else {
+// Temp comment
         candidateData.workAuthorized = 'No';
       }
       // Turn API IDs into appropriate values

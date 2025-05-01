@@ -59,13 +59,13 @@ export const stateCodeMap = {
   'South Dakota': 'SD',
   Tennessee: 'TN',
   Texas: 'TX',
-  Utah: 'UT',
   Vermont: 'VT',
   Virginia: 'VA',
   Washington: 'WA',
   'West Virginia': 'WV',
   Wisconsin: 'WI',
   Wyoming: 'WY',
+};
 
 export function getStateCode(stateName) {
   return stateCodeMap[stateName];

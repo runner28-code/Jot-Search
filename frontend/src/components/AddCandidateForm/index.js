@@ -202,6 +202,7 @@ export default function RegistrationForm() {
               <ChoiceTag
                 key={skill}
                 label={skill}
+// Temp comment
                 isActive={true}
                 handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}
               />
@@ -252,6 +253,7 @@ export default function RegistrationForm() {
           />
           {/* File input for resume */}
           <FormInput
+            type='file'
             name='resumeFile'
             placeholder='Upload Resume'
             value={formObj.resumeFile}
