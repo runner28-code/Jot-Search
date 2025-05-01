@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { getCategories } from './API';
 
 export const CategoryContext = createContext();
+
 const CategoryProvider = ({children}) => {
   const [categories, setCategories] = useState([]);
-
   useEffect( async () => {
     const categoriesFromAPI = await getCategories();
     // Sometimes need to access categories outside of components, saving in local storage to provide that functionality

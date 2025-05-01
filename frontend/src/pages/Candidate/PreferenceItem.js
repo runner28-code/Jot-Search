@@ -5,7 +5,6 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
   const { width } = useWindowDimensions();
   return (
     <div className='flex flex-col mt-5'>
-// Temp comment
       <div className='flex space-x-16'>
         <SwitchButton
           fieldName={fieldName}

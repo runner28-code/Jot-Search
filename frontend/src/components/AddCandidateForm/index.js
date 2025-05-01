@@ -225,6 +225,7 @@ export default function RegistrationForm() {
             value={formObj.employmentPreference}
             onChange={handleChange}
             choices={['Any', 'Full-Time', 'Contract']}
+// Temp comment
             error={errors.includes('employmentPreference')}
           />
           <FormInput

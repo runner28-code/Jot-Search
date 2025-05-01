@@ -23,6 +23,7 @@ export const createJob = async (job: Job) => {
       },
     });
 
+    return {
       result: true,
       data: newJob,
     };

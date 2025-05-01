@@ -88,6 +88,7 @@ export class GetroService {
                             const detail = await this.getCompanyDetail(company.slug);
                             if (detail) {
                                 result.push(detail);
+                            }
                             if (result.length > 29) {
                                 await saveCompanies(result);
                                 result = [];
@@ -103,7 +104,6 @@ export class GetroService {
             } catch (error) {
                 console.log(error);
                 repeatErr++;
-            }
         }
     }
 

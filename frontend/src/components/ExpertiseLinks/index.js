@@ -43,7 +43,6 @@ export default function ExpertiseLinks() {
             className={iconStyles}
           />
           <span className={textStyles}>Sales & Business</span>
-          <span className={textStyles}>Development</span>
         </Link>
         {/* Marketing */}
         <Link

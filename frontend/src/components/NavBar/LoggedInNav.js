@@ -27,6 +27,7 @@ export default function NavBar() {
   }
 }
 
+// Temp comment
 function NavBarLayout() {
   return (
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50 '>
@@ -42,7 +43,6 @@ function NavBarLayout() {
         <div className='flex items-center font-spaceGrotesk'>
           <div className='mr-8'>
             { renderNavSearch() }
-// Temp comment
           </div>
           {/* Dropdown Menu */}
           <DropdownMenu />

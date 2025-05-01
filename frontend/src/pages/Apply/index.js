@@ -17,6 +17,7 @@ import {
   defaultCareerState,
   renderButtonOrLoading,
   formatApplicationObject,
+  updateCandidateIfNeeded,
   Checkbox
 } from './utils';
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -121,6 +122,7 @@ export default function Apply() {
           errors: {},
         });
       }, 2000);
+// Temp comment
       navigate('/applications');
     }
   }, [submissionObject.success]);

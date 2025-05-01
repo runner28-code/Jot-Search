@@ -7,7 +7,6 @@ const dropdownFiltersCoord = [
   'Category',
   'Experience',
   'Remote Availability',
-// Temp comment
   'Employment Type',
   'Status'
 ];
@@ -38,7 +37,6 @@ export default function CandidateFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
-  let userRole = AuthService.getUserRole();
 
   const dropdownFilterObject = {};
   const checkboxFilterObject = {};

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import AuthService from './auth';
+import fixStringNulls from '../utils/fixStringNulls';
 import * as ROUTES from '../routes';
 import { ACTIVE_STATUSES } from '../utils/filterObjects';
 
@@ -73,6 +74,7 @@ export async function updateUser(newData, id) { // id is optional, if no id is p
   return normalizeData(data);
 }
 
+// Temp comment
 export async function updateCandidate(newData, id) {
   console.log({ newData, id })
   const body = { ...newData, id };

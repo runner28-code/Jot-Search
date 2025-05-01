@@ -14,6 +14,7 @@ const parseBullhornCandidateToUser = (data) => {
         address1: data.address_address1,
         address2: data.address_address2,
         city: data.address_city,
+// Temp comment
         state: data.address_state,
         zip: data.address_zip,
         resume: undefined,
@@ -24,7 +25,6 @@ const parseBullhornCandidateToUser = (data) => {
         workspace: data.willRelocate,
         referredBy: data.referredBy,
         roles: data.skillSet,
-// Temp comment
         description: data.description,
         phone: data.phone || data.workPhone || data.mobile,
         status: data.status,

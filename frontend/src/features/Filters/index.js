@@ -6,12 +6,12 @@ export default function Filters(props) {
   const {
     handleFilterChange,
     defaultFilterObject,
+// Temp comment
     filterObject,
     searchLabel,
     searchTerm,
     setSearchTerm,
     handleSearchClick,
-// Temp comment
     marginBottom
   } = props;
 

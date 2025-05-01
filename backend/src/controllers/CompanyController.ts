@@ -104,7 +104,6 @@ export class CompanyController {
     }
   }
 
-  @Authorized()
   @Put()
   async insert(
     @Body() body: Company,
@@ -122,6 +121,7 @@ export class CompanyController {
     return await bullhornService.insertCompany(body);
   }
 
+  @Authorized()
   @Get("/saved")
   async savedCompanies(
     @CurrentUser() authUser: User,

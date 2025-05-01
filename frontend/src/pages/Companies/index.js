@@ -44,6 +44,5 @@ export default function Companies() {
           toggle={toggle}
           userType={userType}
         />
-      </div>
     </section>
   )

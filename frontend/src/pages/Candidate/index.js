@@ -32,7 +32,6 @@ export default function Candidate() {
   const { width } = useWindowDimensions();
   const isProfilePage = path === '/profile';
   if (role === 'candidate' && !isProfilePage) {
-    return <Navigate to='/' />
   }
 
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;
@@ -58,6 +57,7 @@ export default function Candidate() {
         formattedUpdateObject[key] = updateObject[key];
       }
     });
+
     const updatedDisplayObject = candidateData.sourceTable === 'Candidate' ? {
       ...updateObject,
       firstName: updateObject.firstname || candidateData.firstname,

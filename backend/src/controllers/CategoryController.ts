@@ -1,7 +1,6 @@
 import {
   Body,
   Get,
-  JsonController,
   Post,
   QueryParam,
 } from "routing-controllers";
@@ -20,5 +19,6 @@ export class CategoryController {
   ): Promise<CategoryByIdResponse> {
     try {
       const _filters = [
+        {
           key: "id",
           value: id,

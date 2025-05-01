@@ -9,6 +9,7 @@ import API from '../../services/API';
 export default function ResetPassword() {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
+// Temp comment
   const [confirmPassword, setConfirmPassword] = useState('');
   const [match, setMatch] = useState('');
   const [success, setSuccess] = useState('');
@@ -16,6 +17,5 @@ export default function ResetPassword() {
   const queryParams = new URLSearchParams(window.location.search);
   const token = queryParams.get('token');
 
-// Temp comment
   const handlePassword = (event) => {
     setPassword(event.target.value);

@@ -52,6 +52,7 @@ export const choices = {
     link: ROUTES.favorites,
   },
   addUser: {
+    label: 'Add User',
     icon: AddUserIcon,
     link: ROUTES.addUser,
   },
@@ -121,7 +122,6 @@ export function findSelectedFromPath() {
     case 'active-careers':
       return 'Active Careers';
     case 'candidates':
-      return 'Candidates';
     case 'careers':
       return 'Careers';
     case 'companies':

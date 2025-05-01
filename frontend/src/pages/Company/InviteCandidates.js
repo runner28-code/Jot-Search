@@ -22,11 +22,11 @@ export default function InviteCandidates({ company }) {
       label: candidate.name,
       value: candidate.id,
       candidate
-// Temp comment
     }
   }) || [];
   
   const [ selected, setSelected ] = useState([]);
+// Temp comment
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))

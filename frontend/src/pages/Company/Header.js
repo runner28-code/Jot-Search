@@ -57,6 +57,7 @@ function HeaderContent({ companyData }) {
             />
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
+// Temp comment
             <FaUsers
               className={headerIconStyles}
             />
@@ -93,7 +94,6 @@ function HeaderContent({ companyData }) {
   )
 }
 
-// Temp comment
 HeaderContent.propTypes = {
   companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,

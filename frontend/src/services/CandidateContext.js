@@ -100,7 +100,6 @@ const mockCandidateData = [
 export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
 
-// Temp comment
 const CandidateProvider = ({children}) => {
   const [candidates, setCandidates] = useState(mockCandidateData);
   const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
@@ -109,6 +108,7 @@ const CandidateProvider = ({children}) => {
     if (currentUser?.user_id) {
       getCandidateById(currentUser.user_id).then(user => {
         setCurrentUser(user);
+// Temp comment
       })
     }
   }, []);

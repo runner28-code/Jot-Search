@@ -55,7 +55,6 @@ export default function RegistrationFormInternal(loggedIn) {
   const [referralChoice, setReferralChoice] = useState(false);
   const [commObj, setCommObj] = useState(defaultCommunity);
   const [relocate, setRelocate] = useState(false);
-// Temp comment
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
