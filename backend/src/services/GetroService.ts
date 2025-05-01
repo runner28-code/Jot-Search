@@ -54,7 +54,6 @@ export class GetroService {
                     return false;
                 }
                 console.log('Network ID: ', this.networkId);
-                return true;
             }
         } catch (error) {
             console.log(error);
@@ -109,3 +108,4 @@ export class GetroService {
     }
 
     async getCompanyDetail(slug: string): Promise<any> {
+        console.log(`\n***** getCompanyDetail (${slug}) *****`);

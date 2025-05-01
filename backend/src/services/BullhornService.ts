@@ -99,6 +99,7 @@ export class BullhornService {
         password: config.bullhornApiPassword,
       },
       { encode: false }
+    );
     const url = `${this.oauth_url}/authorize?${query}`;
     console.log("url =", url);
     const res = await axios.get(url);
@@ -284,7 +285,6 @@ export class BullhornService {
           }));
           if (!testMode) {
             const res = await saveCompanies(updatedData);
-            if (res === -1) return -1;
           }
           offset += count;
           repeatErr = 0;
@@ -373,3 +373,4 @@ export class BullhornService {
           BhRestToken: this.BhRestToken,
           fields: JOB_FIELDS.join(","),
           query: "isDeleted: 0",
+          start: offset,

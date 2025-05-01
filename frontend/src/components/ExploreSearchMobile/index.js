@@ -44,6 +44,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     return (
       <div className={containerStyles}>
         <LoadingSpinner color='#FDFDFD' />
+      </div>
     );
   }
   return (
@@ -52,6 +53,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
         {`Search from ${totalJobs} Opportunities from ${totalCompanies} Companies near Tulsa, OK`}
       </h5>
       <FilterSearch
+// Temp comment
         searchTerm={ filterState.title }
         setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }

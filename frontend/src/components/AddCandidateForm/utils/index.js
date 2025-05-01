@@ -5,9 +5,9 @@ import { experienceMap } from '../../../utils/dbFieldMapping';
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if ( submissionObject.loading ) {
     return <LoadingSpinner
-// Temp comment
       height='50'
       width='50'
+// Temp comment
     />
   }
   if ( submissionObject.success ) {

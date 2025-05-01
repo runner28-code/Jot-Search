@@ -19,6 +19,7 @@ const mockJobsData = [
     id: 'b25cf8b7-e171-4049-8e67-701b7b7b81c3',
     title: 'Software Engineer',
     company: 'Kum N Go',
+    clientCorporationID: '3b7bf6bc-16de-4014-92d6-d1cbee1bc4d5',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/kumgo_2_eqbzbl.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
@@ -33,7 +34,6 @@ const mockJobsData = [
     company: 'OSU', // ! Not in schema yet
     clientCorporationID: 'd4c0d062-37cd-4691-b223-e09e75a638f9',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/osu-logo_clipped_rev_1_3_kkpczy.webp',
-    salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
     location_state: 'OK',
     onSite: true,

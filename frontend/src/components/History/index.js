@@ -8,7 +8,6 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
   if (userRole !== 'coordinator') {
     return null;
   }
-// Temp comment
   const viewAllHref = `/candidates/history/${id}`;
   return (<>
     <section className='mb-24'>
@@ -22,5 +21,6 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
         href={viewAllHref} 
         text='View Full History' />
     </section>
+// Temp comment
     <hr className={hrStyles} />
   </>)

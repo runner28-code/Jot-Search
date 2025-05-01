@@ -24,7 +24,6 @@ export default function ResetForm({ candidateData, setType }) {
       const { password } = event.target;
       const res = await API.post(ROUTES.APIResetPassword, {
         new_password: password.value,
-// Temp comment
       });
 
       if ( res.data.result ) {
@@ -45,7 +44,6 @@ export default function ResetForm({ candidateData, setType }) {
   return (
     <div>
       <div className='w-140'>
-        <FormInput
           type='text'
           name='password'
           value={formData.password}

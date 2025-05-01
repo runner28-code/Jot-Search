@@ -172,7 +172,6 @@ model ClientContact {
   phone2             String?
   phone3             String?
   preferredContact   String?
-  skills             String?
   source             String?
   createdAt          DateTime  @default(now())
 }
@@ -282,3 +281,4 @@ model Company {
   customText14 String?
   customText15 String?
   customText16 String?
+  customText17 String?

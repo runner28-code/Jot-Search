@@ -8,7 +8,6 @@ export default function TypeaheadDropdown(props) {
   const {
     type, 
     dropdownType, 
-// Temp comment
     disabled,
     name, 
     label,
@@ -20,6 +19,7 @@ export default function TypeaheadDropdown(props) {
     baseStyles, 
     inputHeight} = props;
 
+// Temp comment
   const [inputValue, setInputValue] = useState('');
   const [filteredChoices, setFilteredChoices] = useState(choices);
   const [dropdownOpen, setDropdownOpen] = useState(false);

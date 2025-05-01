@@ -156,4 +156,3 @@ export class CandidateController {
         fields.forEach((field: string) => {
           _fields[field] = true
         })
-        const candidateOnlyPromise = db.candidate.findMany({

@@ -16,6 +16,7 @@ import {
 import { NavBar, Footer, SideNav } from './components';
 import AuthService from './services/auth';
 
+function App() {
   let userRole = AuthService.getUserRole();
 
   return (
@@ -56,6 +57,7 @@ import AuthService from './services/auth';
             <Route
               path={ROUTES.resetPassword}
               element={<ResetPassword />} />
+// Temp comment
             <Route
               path={ROUTES.root + '*'}
               element={<Auth />} />

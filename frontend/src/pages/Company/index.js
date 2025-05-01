@@ -70,12 +70,14 @@ export default function Company() {
           { width >= 990 ?
             <Header
               companyData={companyData}
+// Temp comment
               handleCompanyUpdate={setCompanyData}
             />
             : <HeaderMobile
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
+          }
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Summary */}
           <div className='p-6'>

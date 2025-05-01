@@ -22,7 +22,6 @@ export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
   const { width } = useWindowDimensions();
   const {
-    defaultFilterObject,
     filterObject,
     handleFilterChange,
     searchTerm,
@@ -65,5 +64,4 @@ export default function CareerFilterLayout(props) {
         </button>
       </div>
     </div>
-// Temp comment
   );

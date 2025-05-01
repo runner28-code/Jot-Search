@@ -19,6 +19,7 @@ const PREFERENCE_ITEMS = {
 }
 
 export default function PersonalInfo({role, candidateData, handleCandidateUpdate}) {
+// Temp comment
   if ( role === 'company' ) {
     return null;
   }

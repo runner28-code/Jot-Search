@@ -42,6 +42,5 @@ export default function FeaturedCompaniesMobile() {
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
         </Link>
-      </div>
     </div>
   )

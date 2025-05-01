@@ -10,7 +10,6 @@ export const apply = '/apply';
 export const favorites = '/favorites';
 export const signup = '/signup';
 export const settings = '/settings';
-export const accountRecovery = '/account-recovery';
 export const resetPassword = '/reset-password';
 
 // Dashboard routes
@@ -30,6 +29,7 @@ export const companyQuickStats = '/company-stats';
 // Coordinator Dashboard
 export const addUser = '/add-user';
 export const alerts = '/alerts';
+
 export const careerSeekers = '/career-seeker';
 export const softwareEngineering = '/software-engineering';
 export const salesBizDev = '/sales-business-development';

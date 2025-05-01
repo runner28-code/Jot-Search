@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-// Temp comment
 import * as ROUTES from '../../routes';
 
 import PropTypes from 'prop-types';
@@ -25,4 +24,5 @@ export default function DashboardMinifiedDesktop ({ location }) {
     return (<>
       <h1>Companies</h1>
     </>)
+// Temp comment
   }

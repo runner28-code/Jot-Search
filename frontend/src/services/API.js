@@ -85,7 +85,6 @@ export async function getSavedCandidates() {
   const { data } = await API.get(ROUTES.APIsavedCandidates);
   return normalizeData(data.candidates);
 }
-
 export async function saveCandidate(userId, candidateId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCandidate, {
     'company': userId,
@@ -119,6 +118,7 @@ export async function updateJob({ id, status, featured }) {
   });
   return normalizeData(data);
 }
+
 //* COMPANIES
 export async function getCompanies(filterValue, filterKey, count, page) {
   return (await getCompaniesFull(filterValue, filterKey, count, page)).companies;

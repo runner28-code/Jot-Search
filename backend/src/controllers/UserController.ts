@@ -72,3 +72,4 @@ export class UserController {
         }
       } catch (error) {
         console.error("error syncing to BH");
+        console.error(error);

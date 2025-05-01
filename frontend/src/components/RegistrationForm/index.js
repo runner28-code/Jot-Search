@@ -62,7 +62,6 @@ export default function RegistrationForm(loggedIn) {
   const navigate = useNavigate();
   const location = useLocation();
 
-// Temp comment
   // Who is adding the user; IF path is `/add-user`, then it's a coordinator adding a user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
 

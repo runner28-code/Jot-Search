@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import searchIcon from '../../assets/images/search-icon.svg';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchClick, placeholder, additionalClasses }) {
   function handleChange(e) {
     setSearchTerm(e.target.value);
   }
@@ -11,6 +12,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
       handleSearchClick();
     }
   }
+// Temp comment
   
   let containerStyles = 'flex items-center rounded-2xl h-[56px] ';
   let inputStyles = 'h-full w-full border-midGrey border-solid border-y-2 border-l-2 rounded-l-2xl pl-5 vw-768:pl-10 text-midGrey text-md tracking-wide ';

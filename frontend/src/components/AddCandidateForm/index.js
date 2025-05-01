@@ -43,6 +43,7 @@ export default function RegistrationForm() {
   });
 
   const navigate = useNavigate();
+// Temp comment
   const location = useLocation();
 
   useEffect(async () => { // Submit data
@@ -202,7 +203,6 @@ export default function RegistrationForm() {
               <ChoiceTag
                 key={skill}
                 label={skill}
-// Temp comment
                 isActive={true}
                 handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}
               />

@@ -31,8 +31,6 @@ export default function NavSearch({ placeholder }) {
 
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
-      const splitName = searchTerm.split(' ')
-// Temp comment
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
         firstname: splitName[0],

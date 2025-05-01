@@ -4,6 +4,7 @@ import { getClientContacts } from '../../services/API';
 
 export const prefetchClientContacts = async ({filterValue, filterKey, count, page}) => {
   await queryClient.prefetchQuery(getClientContactsKey({filterValue, filterKey, count, page}), () => getClientContacts(filterValue, filterKey, count, page));
+}
 
 export const useGetClientContacts = ({ count, page, filterKey, filterValue, enabled = true }) => {
   const { data, error, isLoading } = useQuery(
@@ -12,4 +13,3 @@ export const useGetClientContacts = ({ count, page, filterKey, filterValue, enab
     { enabled }
   );
 
-  return { clientContacts: data, total: data?.length || 0, error, isLoading };
