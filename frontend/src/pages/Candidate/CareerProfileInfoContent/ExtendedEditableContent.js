@@ -138,7 +138,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           value={formData.expertise}
           onChange={(_, choice) => setFormData({ ...formData, expertise: choice })}
           choices={categories}
-        />
+          disabled={disabled}
 
         <FormInput
           type='multi-select'

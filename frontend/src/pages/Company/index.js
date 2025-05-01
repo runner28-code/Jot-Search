@@ -10,6 +10,7 @@ import urlDecode from '../../utils/urlDecode';
 import OtherCareers from '../../features/OtherCareers';
 import DetailsHeader from '../../components/DetailsHeader';
 import InviteCandidates from './InviteCandidates';
+// Temp comment
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -70,7 +71,6 @@ export default function Company() {
           { width >= 990 ?
             <Header
               companyData={companyData}
-// Temp comment
               handleCompanyUpdate={setCompanyData}
             />
             : <HeaderMobile

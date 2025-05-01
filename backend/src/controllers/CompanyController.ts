@@ -122,7 +122,6 @@ export class CompanyController {
     return await bullhornService.insertCompany(body);
   }
 
-  @Authorized()
   @Get("/saved")
   async savedCompanies(
     @CurrentUser() authUser: User,

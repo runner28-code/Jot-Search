@@ -1,6 +1,5 @@
 import { useRef } from 'react';
 import PropTypes from 'prop-types';
-
 export default function FileInput({type, name, label, placeholder, required, value, onChange, baseStyles, disabled}) {
   const inputRef = useRef(null);
 
@@ -13,6 +12,7 @@ export default function FileInput({type, name, label, placeholder, required, val
 
   return (
     <div>
+      { renderLabel( name, label, value, placeholder, required, handleKeyDown, baseStyles ) }
       <input 
         className={`hidden ${disabled ? 'disabled cursor-not-allowed' : ''}`}
         type={type}

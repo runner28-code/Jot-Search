@@ -8,7 +8,6 @@ export default function UnlabeledContent({ contentText, propertyName }) {
   return (
     <p 
       className='text-xl'
-// Temp comment
       dangerouslySetInnerHTML={ { __html: contentText } }
     />
   )

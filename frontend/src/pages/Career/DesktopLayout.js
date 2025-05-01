@@ -96,13 +96,13 @@ export default function DesktopLayout(props) {
               careerId={careerData.id}
               applicationUrl={careerData.application_path || careerData.url}
             />
-// Temp comment
           )}
         </div>
       </div>
 
       {/* Coordinator Status */}
       {
+// Temp comment
         role === 'coordinator' && (
           <div className='flex flex-col space-y-8'>
             <UpdateJobStatus job={careerData} />

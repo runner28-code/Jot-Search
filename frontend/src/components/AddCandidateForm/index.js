@@ -43,7 +43,6 @@ export default function RegistrationForm() {
   });
 
   const navigate = useNavigate();
-// Temp comment
   const location = useLocation();
 
   useEffect(async () => { // Submit data

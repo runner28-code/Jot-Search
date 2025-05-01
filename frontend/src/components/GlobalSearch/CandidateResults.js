@@ -17,10 +17,10 @@ export default function CandidateResults({ candidates }) {
         return (
           <CandidateResult 
             candidate={candidate} 
+// Temp comment
             key={candidate.id} />
         )
       })}
       <hr className='w-full border-black50% mt-6 mb-2' />
     </>
-// Temp comment
   )

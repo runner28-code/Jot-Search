@@ -7,6 +7,7 @@ const dropdownFiltersCoord = [
   'Category',
   'Experience',
   'Remote Availability',
+// Temp comment
   'Employment Type',
   'Status'
 ];
@@ -30,7 +31,6 @@ const checkboxFilters = [
 export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
-// Temp comment
     filterObject,
     handleFilterChange,
     searchTerm,

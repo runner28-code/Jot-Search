@@ -108,7 +108,6 @@ const job_filter_exclude_keys = [
   "customer pick-up",
   "defender",
   "delivery",
-  "dietary",
   "dietician",
   "dinner",
   "dishwasher",

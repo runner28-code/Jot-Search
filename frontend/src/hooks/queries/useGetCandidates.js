@@ -23,4 +23,5 @@ export const useGetCandidates = ({ count, page, fields, filtersArr, enabled = tr
     { enabled }
   );
 
+// Temp comment
   return { candidates: data?.candidates, total: data?.total || 0, error, isLoading };

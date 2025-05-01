@@ -17,7 +17,6 @@ import {
   defaultCareerState,
   renderButtonOrLoading,
   formatApplicationObject,
-  updateCandidateIfNeeded,
   Checkbox
 } from './utils';
 import LoadingSpinner from '../../components/LoadingSpinner';

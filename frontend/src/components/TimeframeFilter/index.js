@@ -9,6 +9,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   const [listening, setListening] = useState(false);
 
   const menuRef = useRef(null);
+
   function handleChoiceClick(choice) {
     setShowDropdown(false);
     handleFilterChange(choice);

@@ -23,7 +23,6 @@ function App() {
     <div className="App overflow-hidden">
       <NavBar />
       <main className='bg-lightGrey pt-30 vw-1280:pt-44 vw-1280:flex'>
-        <SideNav userType={userRole} />
         <div 
           className='grow min-h-280 pb-18'>
           <Routes>
@@ -57,7 +56,6 @@ function App() {
             <Route
               path={ROUTES.resetPassword}
               element={<ResetPassword />} />
-// Temp comment
             <Route
               path={ROUTES.root + '*'}
               element={<Auth />} />

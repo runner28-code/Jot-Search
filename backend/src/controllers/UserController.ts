@@ -69,7 +69,6 @@ export class UserController {
         if (res && res.changedEntityId) {
           console.log("changedEntityId", res.changedEntityId);
           data = { ...data, externalId: res.changedEntityId };
-        }
       } catch (error) {
         console.error("error syncing to BH");
         console.error(error);

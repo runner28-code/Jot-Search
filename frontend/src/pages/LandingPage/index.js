@@ -35,7 +35,6 @@ export default function LandingPage() {
           { renderJoinTalent() }
         </div>
         { renderSearch() }
-// Temp comment
       </section>
       {/* Browse Opportunities by Expertise */}
       { renderExpertiseLinks() }

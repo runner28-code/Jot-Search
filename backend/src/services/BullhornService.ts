@@ -273,7 +273,6 @@ export class BullhornService {
             Accept: "*/*",
           },
         });
-        if (res.status === 200) {
           const { data, count } = res.data;
           total = res.data.total;
           const updatedData = data.map((d: any) => ({
@@ -285,6 +284,7 @@ export class BullhornService {
           }));
           if (!testMode) {
             const res = await saveCompanies(updatedData);
+            if (res === -1) return -1;
           }
           offset += count;
           repeatErr = 0;

@@ -40,6 +40,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     <>
       <div className='flex flex-col mr-12'>
         {/* Avatar */}
+        <img
           className='w-100 h-100'
           src={avatarUrl}
           alt='Candidate Avatar' />
@@ -186,7 +187,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               <input 
                 type='text'
                 onChange={handleInputChange}
-                id='zip'
                 name='zip'
                 value={formData.zip}
                 className={inputStyles + 'ml-10 text-h6'} />

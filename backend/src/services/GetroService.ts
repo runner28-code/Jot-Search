@@ -54,6 +54,7 @@ export class GetroService {
                     return false;
                 }
                 console.log('Network ID: ', this.networkId);
+                return true;
             }
         } catch (error) {
             console.log(error);
@@ -87,7 +88,6 @@ export class GetroService {
                             const detail = await this.getCompanyDetail(company.slug);
                             if (detail) {
                                 result.push(detail);
-                            }
                             if (result.length > 29) {
                                 await saveCompanies(result);
                                 result = [];

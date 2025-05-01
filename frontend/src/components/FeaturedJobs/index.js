@@ -9,7 +9,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 const ITEMS_PER_PAGE = 4;
 
 export default function FeaturedJobs() {
-  const { width } = useWindowDimensions();
 
   const linkStyles = '';
   const linkStylesMobile = 'basis-full mb-8'
@@ -70,7 +69,6 @@ export default function FeaturedJobs() {
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           View all
         </Link>
-// Temp comment
       </div>
     </section>
   )
