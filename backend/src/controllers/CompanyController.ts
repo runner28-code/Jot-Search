@@ -22,7 +22,6 @@ import {
   Company,
   CompanySearchByID,
   CompanySearchByFilterResponse,
-  DATASET_MAIN,
   ApplyResponse,
   Operator,
 } from "../types/Common";
@@ -104,6 +103,7 @@ export class CompanyController {
     }
   }
 
+  @Authorized()
   @Put()
   async insert(
     @Body() body: Company,

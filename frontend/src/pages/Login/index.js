@@ -25,7 +25,6 @@ export default function Login() {
   };
 
   const renderError = () => {
-    if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
     }
   }
@@ -90,7 +89,6 @@ export default function Login() {
             className='text-sm vw-640:text-ml text-royalBlue underline'
           >
             help@intulsa.com
-// Temp comment
           </a>
         </div>
       </div>

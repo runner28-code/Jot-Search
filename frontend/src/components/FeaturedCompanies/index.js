@@ -34,6 +34,7 @@ export default function FeaturedCompanies() {
                 { renderLogo(company.logo) }
               </Link>
             )
+        }
       </div>
       <div className='text-center mt-48'>
         <Link

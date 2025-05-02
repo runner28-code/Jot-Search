@@ -32,6 +32,7 @@ export default function Candidate() {
   const { width } = useWindowDimensions();
   const isProfilePage = path === '/profile';
   if (role === 'candidate' && !isProfilePage) {
+    return <Navigate to='/' />
   }
 
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;
@@ -79,7 +80,6 @@ export default function Candidate() {
     if (updateResponse.result === false) {
       console.log('Error updating candidate: ', updateResponse.error);
     }
-  }
 
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 

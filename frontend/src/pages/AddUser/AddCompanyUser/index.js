@@ -16,6 +16,7 @@ export default function AddCompanyUser() {
   const { companies, isLoading: isLoadingCompanies } = useGetCompanies({ filterKey: 'name', filterValue: search, count: ITEMS_PER_PAGE, page: 1, enabled: !!search });
   const { clientContacts, isLoading: isLoadingContacts } = useGetClientContacts({ filterKey: 'clientCorporation', filterValue: selectedCompanyId, count: 50, enabled: !!selectedCompany });
 
+// Temp comment
   function handleCompanyClick(company) {
     setSelectedCompany(company);
     setSearch(company.name);
@@ -40,7 +41,6 @@ export default function AddCompanyUser() {
         <p className={paragraphStyles}><strong>Reminder:</strong> please identify the company point of contact to associate to the company in Getro.</p>
         <div className='flex mt-8'>
           <ExternalLink
-// Temp comment
             text='Go to Getro'
             href='https://www.getro.com/'
             addClass='mr-8'

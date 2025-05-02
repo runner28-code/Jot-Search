@@ -9,7 +9,6 @@ export const pluralizedTypes = {
 }
 
 export const openJobStatuses = [
-  'Active',
   'active',
   'Passive',
   'passive'
@@ -35,6 +34,7 @@ export const stateCodeMap = {
   Kentucky: 'KY',
   Louisiana: 'LA',
   Maine: 'ME',
+  Maryland: 'MD',
   Massachusetts: 'MA',
   Michigan: 'MI',
   Minnesota: 'MN',

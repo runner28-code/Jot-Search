@@ -26,7 +26,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         handleChoiceClick={handleChoiceClick} 
       />
     )
-// Temp comment
   }
 
   // Used to close dropdown when clicking outside of it
@@ -49,6 +48,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
           id='title'
           className='Desktop-Body-textBody-paragraph-2 text-charcoal'>{ timeframe }</p>
         <img 
+// Temp comment
           className='w-6 mr-7'
           src={ chevronDownGray }
           alt='chevron down'  

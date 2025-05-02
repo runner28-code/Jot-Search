@@ -202,7 +202,6 @@ export const addUserHistoryEntries = async ({
             : null,
         batchId,
       };
-    });
 
   return await db.history.createMany({
     data: historyRecords,

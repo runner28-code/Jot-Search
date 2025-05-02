@@ -7,7 +7,6 @@ import EditResumeForm from './EditResumeForm';
 import Property from './Property';
 
 // const SECONDARY_FORM_TYPES = ['comments', 'primarySkills', 'expertise', 'resume'];
-// Temp comment
 
 export default function EditSectionForm({ contentObject, handlePropertyChange }) {
   function handleChange(e) {
@@ -40,7 +39,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
       { Object.entries(contentObject).map(([key, value]) => {
         const capitalizedKey = startCase(key);
         const labelString = `${capitalizedKey}:`;
-        if ( key === 'email' ) {
           return <Property
             key={key}
             name={key}

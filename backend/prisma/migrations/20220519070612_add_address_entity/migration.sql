@@ -1,4 +1,4 @@
 -- CreateTable
-    "id" TEXT NOT NULL,
+CREATE TABLE "Address" (
     "address1" TEXT NOT NULL,
     "address2" TEXT,

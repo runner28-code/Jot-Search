@@ -126,7 +126,6 @@ class AuthService {
     const savedCandidates = this.getSavedCandidateIDs();
     if ( action === 'save' ) {
       savedCandidates.push(candidateID);
-    } else {
       savedCandidates.splice(savedCandidates.indexOf(candidateID), 1);
     }
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));

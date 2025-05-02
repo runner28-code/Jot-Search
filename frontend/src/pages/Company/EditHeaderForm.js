@@ -103,7 +103,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         <div className='mb-6'>
           <label 
             className='text-h6 text-royalBlue w-full'
-            htmlFor='companyName'>
           Company
           </label>
           <input 
@@ -187,6 +186,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               <input 
                 type='text'
                 onChange={handleInputChange}
+                id='zip'
                 name='zip'
                 value={formData.zip}
                 className={inputStyles + 'ml-10 text-h6'} />
