@@ -60,7 +60,6 @@ export default function Candidate() {
     });
 
     const updatedDisplayObject = candidateData.sourceTable === 'Candidate' ? {
-      ...updateObject,
       firstName: updateObject.firstname || candidateData.firstname,
       lastName: updateObject.lastname || candidateData.lastname,
     } : updateObject;
@@ -80,6 +79,7 @@ export default function Candidate() {
     if (updateResponse.result === false) {
       console.log('Error updating candidate: ', updateResponse.error);
     }
+  }
 
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 

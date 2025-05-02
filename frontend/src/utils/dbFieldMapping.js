@@ -1,3 +1,4 @@
+// Temp comment
 export const disabilityMap = {
   U: 'I prefer not to say',
   Y: 'I am a person with a disability',
@@ -11,7 +12,6 @@ export const veteranStatusMap = {
   U: 'I prefer not to say',
   A: 'I have applied for membership in the uniformed service',
   R: 'I am present memeber of the uniformed service',
-// Temp comment
   S: 'I am a past member of the uniformed service',
   O: 'I am obligated to serve in the uniformed service',
   D: 'I am a veteran with a disability',

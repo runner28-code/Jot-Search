@@ -144,7 +144,6 @@ export default function RegistrationForm() {
   const buttonBaseStyles = 'h-20 bg-royalBlue text-center text-white my-4 ';
   const buttonStyles = buttonBaseStyles + (addType === 'candidate' ? 'w-full ' : 'w-100 ');
 
-// Temp comment
   return (
     <form 
       className={containerStyles} 

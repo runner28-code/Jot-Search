@@ -5,7 +5,6 @@ import {
   Put,
   QueryParam,
   JsonController,
-  Authorized,
   CurrentUser,
 } from "routing-controllers";
 import { BigQueryService } from "../services/BigQueryService";
@@ -22,6 +21,7 @@ import {
   Company,
   CompanySearchByID,
   CompanySearchByFilterResponse,
+  DATASET_MAIN,
   ApplyResponse,
   Operator,
 } from "../types/Common";

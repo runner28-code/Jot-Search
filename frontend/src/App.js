@@ -54,6 +54,7 @@ function App() {
             <Route
               path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />
+// Temp comment
             <Route
               path={ROUTES.resetPassword}
               element={<ResetPassword />} />

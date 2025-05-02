@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { appendPathToBaseUrl } from '../../services/API';
@@ -31,5 +30,4 @@ export default function InviteCandidates({ job }) {
 
   const [selected, setSelected] = useState([]);
   const deleteItem = (e, value) => {
-    e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))

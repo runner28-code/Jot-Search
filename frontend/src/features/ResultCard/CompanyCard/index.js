@@ -78,6 +78,7 @@ export default function CompanyCard({ data }) {
                 LinkedIn
               </a>
             </div>
+// Temp comment
             {/* Website */}
             <div className='w-1/3 flex items-center'>
               <img

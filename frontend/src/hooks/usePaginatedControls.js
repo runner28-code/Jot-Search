@@ -110,7 +110,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
         >
           {'>'}
         </PaginationButton>}
-      </div>
       {!isLoading && <PaginationCounts 
         startCount={startCount} 
         endCount={endCount} 

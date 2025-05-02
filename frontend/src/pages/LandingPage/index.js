@@ -62,8 +62,10 @@ function renderSearch() {
       />
     </>)
   }
+// Temp comment
   return (
     <ExploreSearch
+      totalJobs={totalJobsCount}
       totalCompanies={totalCompaniesCount}
       loading={isLoading}
     />

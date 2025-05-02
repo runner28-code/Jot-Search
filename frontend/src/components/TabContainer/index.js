@@ -14,6 +14,5 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
           isLocked={isLocked}
         />
       })}
-// Temp comment
     </div>
   )

@@ -169,6 +169,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       {isSourceUserTable && <>
         <FormInput
           type='single-select'
+// Temp comment
           name='workspace'
           label='Work Setting Preference'
           required={true}
@@ -215,7 +216,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         </div>
 
         <div className="flex space-x-4 items-center justify-start">
-// Temp comment
           {(formData.resume && !editMode) && (
             <div>
               <p>Resume</p>

@@ -8,7 +8,6 @@ import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CareerFavorite () {
-
   const { user_id } = AuthService.getProfile();
   const { savedCompanies, isLoading } = useGetSavedCompanies({userId: user_id});
   const { width } = useWindowDimensions();
@@ -40,7 +39,6 @@ export default function CareerFavorite () {
           <CompanyIcon className='w-32 h-32 fill-royalBlue' />
           <h3 className='text-md text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Find Companies to Favorite</h3>
           <Link
-// Temp comment
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import favoriteIconOutline from '../../../assets/icons/Favorite-outline.svg';
-// Temp comment
 import favoriteIconFilled from '../../../assets/icons/Favorite-filled.svg';
 import AuthService from '../../../services/auth';
 import { saveJob, saveCompany, saveCandidate } from '../../../services/API';
@@ -20,6 +19,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   if ( !isFavoriteOverride && (invalidType || isInactiveJob) ) {
     return null;
   }
+// Temp comment
 
   const item_id = getIdByType(type, data);
   const savedItems = getItemsByType(type);

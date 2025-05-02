@@ -2,7 +2,6 @@ import axios from "axios";
 import config from "../config";
 import queryString from "query-string";
 import {
-  saveCandidates,
   saveClientContacts,
   saveCompanies,
   saveBullhornJobs,
@@ -176,6 +175,7 @@ export class BullhornService {
     console.log("\n***** login *****");
     let retryNo = 0;
     while (retryNo < 3) {
+      try {
         const query = queryString.stringify(
           {
             version: "*",

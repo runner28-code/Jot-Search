@@ -27,6 +27,7 @@ const renderError = (error) => {
     return ( <div className='text-error mt-4'>
       <p>{typeof error === 'string' ? error.toUpperCase() : 'An error has occurred when trying to process your request'}</p>
       <a href="mailto:talentnetwork@intulsa.com">Your application has failed. Please try again later, or reach out to us for support.</a>
+    </div> )
   } else {
     return null;
   }
@@ -36,6 +37,7 @@ export default function Apply() {
   const params = useParams();
   const jobId = params?.id
   const navigate = useNavigate();
+// Temp comment
   const isLoggedIn = AuthService.loggedIn();
   // State
   const [career, setCareer] = useState(defaultCareerState);

@@ -42,7 +42,6 @@ export default function ExpertiseLinks() {
             alt='Sales & Biz Dev Icon'
             className={iconStyles}
           />
-// Temp comment
           <span className={textStyles}>Sales & Business</span>
           <span className={textStyles}>Development</span>
         </Link>
@@ -54,7 +53,6 @@ export default function ExpertiseLinks() {
         >
           <img
             src={marketingIcon}
-            alt='Marketing Icon'
             className={iconStyles}
           />
           <span className={textStyles}>Marketing</span>

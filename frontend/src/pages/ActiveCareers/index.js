@@ -23,6 +23,7 @@ export default function ActiveCareers() {
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm(searchTerm);
+    setPage(1);
   }
 
   const filtersArr = buildSearchFilters({ title: searchTerm, companyId, status: ['Active', 'Open'] });

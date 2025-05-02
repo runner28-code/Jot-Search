@@ -165,6 +165,7 @@ export default function Footer() {
               href='https://business.intulsa.com/'
               target='_blank'
               rel='noopener noreferrer'
+            >
               <img
                 src={intulsaBusinessLogo}
                 alt='Intulsa Logo'

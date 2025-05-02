@@ -16,7 +16,6 @@ export default function ResetForm({ candidateData, setType }) {
     event.preventDefault();
 
     if( formData.password !== formData.confirmPassword ) {
-      setMatch(false);
     }
 
     if( formData.password === formData.confirmPassword ) {

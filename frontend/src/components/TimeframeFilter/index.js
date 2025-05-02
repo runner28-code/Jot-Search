@@ -10,6 +10,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
 
   const menuRef = useRef(null);
 
+// Temp comment
   function handleChoiceClick(choice) {
     setShowDropdown(false);
     handleFilterChange(choice);
@@ -48,7 +49,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
           id='title'
           className='Desktop-Body-textBody-paragraph-2 text-charcoal'>{ timeframe }</p>
         <img 
-// Temp comment
           className='w-6 mr-7'
           src={ chevronDownGray }
           alt='chevron down'  

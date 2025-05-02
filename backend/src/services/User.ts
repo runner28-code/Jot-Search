@@ -169,7 +169,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
   }
 };
 
-export const addUserHistoryEntries = async ({
   updatedUser,
   existingUser,
 }: {
@@ -202,6 +201,7 @@ export const addUserHistoryEntries = async ({
             : null,
         batchId,
       };
+    });
 
   return await db.history.createMany({
     data: historyRecords,

@@ -46,6 +46,7 @@ export default function Company() {
   }
   companyData.address = buildCandidateAddress(companyData);
   companyData.employeeString = companyData.numEmployees ? `${companyData.numEmployees} Employees` : 'N/A';
+  companyData.fundingString = companyData.funding === 'not applicable' ? 'Funding N/A' : companyData.funding;
   companyData.description = companyData.getro_description ? companyData.getro_description : companyData.bh_description;
 
   const loggedIn = AuthService.loggedIn();
@@ -119,7 +120,6 @@ Company.propTypes = {
 function RenderHeader({type, loggedIn}) {
   if( loggedIn ) {
     return(<>
-      <DetailsHeader type='company' />
     </>)
   }
   return (

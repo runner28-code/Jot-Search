@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { FaRegUserCircle as CandidateIcon } from 'react-icons/fa';
 import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
-// Temp comment
 
 export default function CandidateResults({ candidates }) {
   const role = AuthService.getUserRole();
@@ -17,7 +16,6 @@ export default function CandidateResults({ candidates }) {
       { candidates.map(candidate => {
         return (
           <CandidateResult 
-            candidate={candidate} 
             key={candidate.id} />
         )
       })}
