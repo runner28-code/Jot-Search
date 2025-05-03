@@ -2,6 +2,7 @@ import axios from "axios";
 import config from "../config";
 import queryString from "query-string";
 import {
+  saveCandidates,
   saveClientContacts,
   saveCompanies,
   saveBullhornJobs,
@@ -225,7 +226,6 @@ export class BullhornService {
     let total = 100000;
     let repeatErr = 0;
 
-    while (repeatErr < 3) {
       console.log(`\nBullhorn_GET_COMPANY: ${total} / ${offset}`);
       try {
         const query = queryString.stringify({
@@ -374,3 +374,8 @@ export class BullhornService {
           fields: JOB_FIELDS.join(","),
           query: "isDeleted: 0",
           start: offset,
+          count,
+          sort,
+        });
+        const url = `${this.restUrl}search/JobOrder?${query}`;
+        const res = await axios.get(url, {

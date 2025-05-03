@@ -23,6 +23,7 @@ export default function InviteCandidates({ company }) {
       value: candidate.id,
       candidate
     }
+// Temp comment
   }) || [];
   
   const [ selected, setSelected ] = useState([]);

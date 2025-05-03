@@ -7,3 +7,4 @@ export type Category = {
   occupation?: string;
   type?: string;
   _score?: number;
+};

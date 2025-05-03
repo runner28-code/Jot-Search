@@ -12,7 +12,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const { width } = useWindowDimensions();
   const formattedFilterType = filterType === 'On-Site/Remote' ? filterType : startCase(filterType);
   const initialValue = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
-  const [showDropdown, setShowDropdown] = useState(false);
   const [selected, setSelected] = useState(initialValue);
   const [listening, setListening] = useState(false);
 
@@ -36,6 +35,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setShowDropdown);
   }, [showDropdown]);
+
   const dropdownBorder = showDropdown ? ' border-2 rounded-t-lg' : ' border-2 rounded-lg';
   const filterStyles = 'flex justify-between items-center pl-[18px] pr-s py-[9px] border-lightGrey bg-white cursor-pointer w-full ' + dropdownBorder;
   const containerStyles = 'relative grow flex-[1_1_30%]';

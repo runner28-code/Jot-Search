@@ -18,6 +18,7 @@ export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
     page,
     setPage,
     totalPages,
+    nextPage,
     prevPage,
     startCount,
     endCount,

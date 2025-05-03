@@ -12,6 +12,7 @@ export const jobReferralChoices = [
   'LinkedIn',
   'Indeed',
   'Google',
+  'Friend',
   'Other',
 ];
 

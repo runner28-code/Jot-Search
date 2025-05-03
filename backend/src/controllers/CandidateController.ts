@@ -157,3 +157,5 @@ export class CandidateController {
           _fields[field] = true
         })
         const candidateOnlyPromise = db.candidate.findMany({
+          where,
+          skip: skip < 0 ? 0 : skip,

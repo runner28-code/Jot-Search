@@ -5,6 +5,7 @@ import {
   Put,
   QueryParam,
   JsonController,
+  Authorized,
   CurrentUser,
 } from "routing-controllers";
 import { BigQueryService } from "../services/BigQueryService";
@@ -134,3 +135,5 @@ export class CompanyController {
     try {
       const company = await db.company.findFirst({
         where: {
+          id: id,
+        },

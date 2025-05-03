@@ -22,7 +22,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
       {/* Loading */}
       {isLoadingContacts && <LoadingSpinner />}
       {/* No results */}
-// Temp comment
       {!isLoadingContacts && clientContacts?.length === 0 && (
         <p className='opacity-70 text-sm'>No contacts found for {selectedCompany?.name}</p>
       )}
@@ -49,6 +48,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           ))}
         </ul>
         <button
+// Temp comment
           className='bg-royalBlue text-white text-lg px-xxl py-xs rounded-xl mt-20'
           onClick={handleSyncClick}
         >

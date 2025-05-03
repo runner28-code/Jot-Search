@@ -39,7 +39,6 @@ export default function CompanyCard({ data }) {
         tabIndex='0'
       >
         {/* Card Image */}
-        <div className='h-48 w-48 p-4 mr-16 flex justify-center items-center border border-solid border-smokeGray'>
           { renderCardImage(data) }
         </div>
         <div className='grow'>
@@ -78,7 +77,6 @@ export default function CompanyCard({ data }) {
                 LinkedIn
               </a>
             </div>
-// Temp comment
             {/* Website */}
             <div className='w-1/3 flex items-center'>
               <img

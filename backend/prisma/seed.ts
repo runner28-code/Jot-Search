@@ -31,7 +31,7 @@ async function seedJobs() {
         zip: "74008",
         salary: 160000,
         employmentType: "fulltime",
-        onSite: "On-Site",
+        description: "Come join our rockstar team for good money and team",
         datasource: Datasource.main as any,
         status: "active",
         categoryId: (await db.category.findFirst({
@@ -84,3 +84,4 @@ async function seedCandidates() {
         address_address1: "124 Main St",
         occupation: "None",
         address_city: "Tulsa",
+        address_state: "OK",

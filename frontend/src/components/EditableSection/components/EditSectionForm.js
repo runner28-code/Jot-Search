@@ -28,7 +28,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   if ( propertyName === 'expertise' ) {
     return <EditExpertiseForm 
       expertise={contentObject[propertyName]}
-      handleChange={handleChange} />
   }
   if ( propertyName === 'resume' ) {
     return <EditResumeForm

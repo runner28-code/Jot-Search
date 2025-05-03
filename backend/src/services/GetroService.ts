@@ -45,7 +45,6 @@ export class GetroService {
 
             const res = await axios.get(url, this.getOptions());
             await sleep(2000); // https://developers.getro.com/#rate-limit
-
             if (res.status === 200) {
                 const { items } = res.data;
                 if (items.length > 0) {
@@ -56,6 +55,7 @@ export class GetroService {
                 console.log('Network ID: ', this.networkId);
                 return true;
             }
+        } catch (error) {
             console.log(error);
         }
         return false;
@@ -109,3 +109,4 @@ export class GetroService {
 
     async getCompanyDetail(slug: string): Promise<any> {
         console.log(`\n***** getCompanyDetail (${slug}) *****`);
+        const query = queryString.stringify({

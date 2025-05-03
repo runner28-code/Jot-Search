@@ -80,6 +80,7 @@ export const candidateChoices = [
   choices.myApplications,
   choices.myFavorites,
   choices.careers,
+// Temp comment
   choices.companies,
   choices.talentInTulsa,
   choices.logout

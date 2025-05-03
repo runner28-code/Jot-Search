@@ -160,7 +160,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         label='Years of Experience'
         required={true}
         placeholder='Select'
-        value={formData.experience}
         onChange={handleChange}
         choiceObject={experienceMap}
         disabled={disabled}
@@ -169,7 +168,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       {isSourceUserTable && <>
         <FormInput
           type='single-select'
-// Temp comment
           name='workspace'
           label='Work Setting Preference'
           required={true}

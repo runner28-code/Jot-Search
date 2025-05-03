@@ -117,6 +117,7 @@ export async function updateJob({ id, status, featured }) {
     status,
     featured
   });
+  return normalizeData(data);
 }
 
 //* COMPANIES
@@ -145,6 +146,5 @@ export async function getIndividualCompany(id) {
   const {data} = await API.get(ROUTES.APIcompanies, {
     params: {
       id
-    }
   });
   return data.company

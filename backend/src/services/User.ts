@@ -169,6 +169,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
   }
 };
 
+export const addUserHistoryEntries = async ({
   updatedUser,
   existingUser,
 }: {
@@ -237,3 +238,7 @@ export const isExistUserFull = async (field: string, value: string) => {
         [field]: value,
       },
     });
+
+    return user || null;
+  } catch (error) {
+    console.log(error);

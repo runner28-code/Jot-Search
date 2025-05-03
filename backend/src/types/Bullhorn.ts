@@ -108,7 +108,6 @@ export type Job = {
     skillList?: string;
     source?: string;
     startDate?: string;
-    status?: string;
     taxRate?: string;
     taxStatus?: string;
     title?: string;
@@ -125,3 +124,4 @@ export type ClientContact = {
     address_address2?: string;
     address_city?: string;
     address_state?: string;
+    address_zip?: string;

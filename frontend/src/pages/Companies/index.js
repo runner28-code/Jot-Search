@@ -15,7 +15,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import AuthService from '../../services/auth';
 
 export default function Companies() {
-// Temp comment
   const { width } = useWindowDimensions();
   let userType = AuthService.getUserRole();
   const loggedIn = AuthService.loggedIn();
@@ -45,6 +44,5 @@ export default function Companies() {
           toggle={toggle}
           userType={userType}
         />
-      </div>
     </section>
   )

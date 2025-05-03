@@ -6,6 +6,7 @@ import { Candidate } from "../types/Bullhorn";
 import { Job } from "../types/Main";
 import {
   parseBullhornCandidateToUser,
+  parseBullhornJobToMain,
 } from "./parseEntities";
 import db from "./db";
 import { Candidate as DbCandidate } from "prisma/prisma-client";
@@ -118,3 +119,5 @@ export const saveBullhornJobs = async (jobs: any[]) => {
             externalId: `bl-${job.id}`,
           },
         });
+
+        if (existing) {

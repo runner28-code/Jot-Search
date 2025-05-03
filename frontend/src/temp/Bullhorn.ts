@@ -76,7 +76,6 @@ export type Job = {
     externalID?: string;
     feeArrangement?: string;
     hoursOfOperation?: string;
-    hoursPerWeek?: string;
     interviews?: string;
     isClientEditable?: string;
     isDeleted?: string;
@@ -125,3 +124,4 @@ export type ClientContact = {
     certifications?: string;
     clientCorporation?: string;
     comments?: string;
+    dateAdded?: string;

@@ -163,3 +163,6 @@ export class JobController {
       const getroCompanies = await db.getroCompany.findMany({
         select: {
           domain: true,
+          logo_url: true,
+        },
+        where: {

@@ -1,6 +1,7 @@
 import { Dictionary } from "typed-two-way-map";
 import config from "../config";
 import {
+  Job as BullhornJob,
   Company as BullhornCompany,
 } from "../types/Bullhorn";
 import { Job as GetroJob, Company as GetroCompany } from "../types/Getro";
@@ -11,7 +12,6 @@ export enum Tables {
   COMPANIES = "Companies",
   JOBS = "Jobs",
   USER = "User",
-  CONTACTS = "Contacts",
   LEADS = "Leads",
   CANDIDATES = "Candidates",
   APPLICATIONS = "Applications",
@@ -51,3 +51,4 @@ export type AdvancedFilterOption = {
 
 export type FilterBody = {
   filters?: any;
+  fields: any;

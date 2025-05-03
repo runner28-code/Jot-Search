@@ -90,6 +90,7 @@ export default function MobileLayout(props) {
           </div>
         </div>
 
+// Temp comment
         {/* Coordinator Status */}
         {
           role === 'coordinator' && (
