@@ -67,7 +67,6 @@ export default function Apply() {
       ]);
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';
-      } else {
         candidateData.workAuthorized = 'No';
       }
       // Turn API IDs into appropriate values

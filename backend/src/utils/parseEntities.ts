@@ -48,4 +48,3 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
   return user;
 };
 
-export const parseBullhornCompanyToUser = (data: BhCandidate) => {

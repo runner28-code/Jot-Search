@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
 
 export default function Filters(props) {
@@ -18,7 +17,6 @@ export default function Filters(props) {
   if (marginBottom) {
     filterContainerStyles += `mb-${marginBottom} `;
   }
-// Temp comment
   return (
     <div className={filterContainerStyles}>
       <div className='flex flex-wrap gap-xxl-4'>

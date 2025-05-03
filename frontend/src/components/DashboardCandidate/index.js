@@ -5,7 +5,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { VscChevronDown as ChevronDown } from 'react-icons/vsc';
 import { VscChevronUp as ChevronUp } from 'react-icons/vsc';
 import filterIcon from '../../assets/icons/filter-toggle.svg';
-// Temp comment
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -28,6 +27,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
         <div className='flex items-center'>
           <Link
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
+// Temp comment
             to={ROUTES.careers}
           >
             <CareerIcon />

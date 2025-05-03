@@ -13,7 +13,6 @@ export default function DesktopHeader(props) {
     dataSource,
     backButton
   } = props;
-// Temp comment
   const navigate = useNavigate();
 
   let addOnIconClasses = '';
@@ -40,6 +39,7 @@ export default function DesktopHeader(props) {
         </h1>
         { dataSource && (
           <SourceIdentifier type={dataSource} />
+// Temp comment
         )}
       </div>
       { backButton && (

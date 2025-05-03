@@ -14,6 +14,7 @@ export default function ResultContainer(props) {
     loading,
     type,
     limit,
+    header, 
     active,
     compact = false,
     isFavoriteOverride = null,

@@ -2,6 +2,6 @@ import PropTypes from 'prop-types';
 import urlDecode from '../../../utils/urlDecode';
 
 export default function Header({ isMobile, company, title }) {
-  return (
+  const decodedTitle = urlDecode(title);
     <h4 className='text-md text-black70% font-bold vw-640:text-xl truncate'>{isMobile ? company: decodedTitle }</h4>
   )

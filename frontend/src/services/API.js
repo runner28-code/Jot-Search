@@ -146,5 +146,6 @@ export async function getIndividualCompany(id) {
   const {data} = await API.get(ROUTES.APIcompanies, {
     params: {
       id
+    }
   });
   return data.company

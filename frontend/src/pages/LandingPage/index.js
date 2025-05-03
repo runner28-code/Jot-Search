@@ -13,6 +13,7 @@ import ColorShapes from '../../components/ColorShapes';
 import * as ROUTES from '../../routes';
 import { MdLocationOn } from 'react-icons/md';
 import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageStats';
+// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // Styles
@@ -22,6 +23,7 @@ export default function LandingPage() {
   const { width } = useWindowDimensions();
   const isMobile = width < 1024;
   const isDesktop = width >= 1024;
+
   return (
     <main className='bg-white'>
       {/* Hero */}

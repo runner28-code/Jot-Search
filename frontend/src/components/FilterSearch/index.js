@@ -3,7 +3,6 @@ import searchIcon from '../../assets/images/search-icon.svg';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchClick, placeholder, additionalClasses }) {
-// Temp comment
   function handleChange(e) {
     setSearchTerm(e.target.value);
   }
@@ -20,6 +19,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     containerStyles += additionalClasses;
   }
   const placeholderString = placeholder || 'Keywords';
+// Temp comment
   const { width } = useWindowDimensions();
   return (
     <div 

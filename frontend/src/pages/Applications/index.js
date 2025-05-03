@@ -55,6 +55,7 @@ export default function Applications() {
   return (
     <section>
       <PageHeader
+// Temp comment
         headerText='My InTulsa Featured Applications'
         IconComponent={BsClipboardCheck}
       />
@@ -71,7 +72,6 @@ export default function Applications() {
         <ResultContainer
           containerClass={ width >= 990 ? 'grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}
           results={appliedJobsObject.filteredJobs}
-// Temp comment
           loading={appliedJobsObject.loading}
           type='job'
           compact={true}

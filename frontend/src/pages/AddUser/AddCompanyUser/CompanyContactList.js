@@ -31,7 +31,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
         <ul className='border-y border-grey300 mt-2 w-full'>
           {clientContacts.map((contact, index) => (
             <li
-              key={contact.id}
               className={ 'flex items-center px-s py-s ' + (index < clientContacts.length - 1 ? 'border-b border-grey300' : '') }
               onClick={() => handleContactClick(contact)}
             >
@@ -48,7 +47,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           ))}
         </ul>
         <button
-// Temp comment
           className='bg-royalBlue text-white text-lg px-xxl py-xs rounded-xl mt-20'
           onClick={handleSyncClick}
         >

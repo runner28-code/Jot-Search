@@ -2,7 +2,6 @@ import {
   Controller,
   Param,
   Body,
-  Get,
   Post,
   Put,
   Delete,

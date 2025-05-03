@@ -20,6 +20,7 @@ import {
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
+// Temp comment
 import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
@@ -61,6 +62,7 @@ export default function RegistrationForm(loggedIn) {
 
   const navigate = useNavigate();
   const location = useLocation();
+
   // Who is adding the user; IF path is `/add-user`, then it's a coordinator adding a user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
 

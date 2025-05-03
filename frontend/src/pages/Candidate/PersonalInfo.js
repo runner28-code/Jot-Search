@@ -45,6 +45,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   }
 
   function handleChange(name, value) {
+// Temp comment
     setFormData({
       ...formData,
       [name]: value,
