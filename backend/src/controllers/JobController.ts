@@ -74,6 +74,7 @@ export class JobController {
           where: {
             domain: {
               in: job?.company?.companyURL
+            }
           }
         })
       }
@@ -107,7 +108,6 @@ export class JobController {
       await (await BullhornService.getClient()).getJobs(false, 50);
       return { success: true };
     } catch (error) {
-      consoleLog(error);
       return { success: false, error };
     }
   }

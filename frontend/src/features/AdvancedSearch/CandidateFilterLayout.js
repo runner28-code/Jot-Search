@@ -37,7 +37,6 @@ export default function CandidateFilterLayout(props) {
     filterObject,
     handleFilterChange,
     searchTerm,
-    setSearchTerm,
     handleSearchClick,
     clearFilters,
   } = props;
@@ -104,5 +103,6 @@ export default function CandidateFilterLayout(props) {
         >
           Clear All
         </button>
+      </div>
     </div>
   );

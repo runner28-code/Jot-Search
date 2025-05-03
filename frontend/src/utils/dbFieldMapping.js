@@ -7,6 +7,7 @@ export const disabilityMap = {
   N: 'None of the above'
 };
 
+export const veteranStatusMap = {
   U: 'I prefer not to say',
   A: 'I have applied for membership in the uniformed service',
   R: 'I am present memeber of the uniformed service',
@@ -21,6 +22,7 @@ export const genderMap = {
   M: 'Male',
   F: 'Female',
   N: 'Non-Binary',
+// Temp comment
   O: 'Other'
 };
 

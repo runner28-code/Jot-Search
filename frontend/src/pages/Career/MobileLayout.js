@@ -71,6 +71,7 @@ export default function MobileLayout(props) {
               <p className='text-textBlack text-xs'>{postingAge}</p>
             </div>
             {/* Employement Type */}
+            <div className='w-1/2 flex items-center'>
               <img
                 src={clockIcon}
                 className='h-8 mr-5' />

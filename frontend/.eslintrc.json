@@ -6,7 +6,6 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:react/jsx-runtime"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -19,11 +18,3 @@
         "react"
     ],
     "rules": {
-        "indent": [
-            "warn",
-            2,
-            { "SwitchCase": 1 }
-        ],
-        "quotes": [
-            "warn",
-            "single",

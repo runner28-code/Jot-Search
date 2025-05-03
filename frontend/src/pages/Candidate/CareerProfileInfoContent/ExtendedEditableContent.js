@@ -67,7 +67,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     dataToSubmit.skills = formData.skills.join(', ');
     dataToSubmit.roles = formData.roles.join(', ');
     if (formData.expertise) {
-// Temp comment
       dataToSubmit.categoryId = categories.find(category => category.name === formData.expertise).id;
       delete dataToSubmit.expertise;
     }
@@ -142,7 +141,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           disabled={disabled}
         />
 
-        <FormInput
           type='multi-select'
           name='roles'
           label={`What roles are you interested in?`}

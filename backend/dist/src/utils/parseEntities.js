@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseGetroJobToMain = exports.parseBullhornJobToMain = exports.parseBullhornCompanyToUser = exports.parseBullhornCandidateToUser = void 0;
 const parseBullhornCandidateToUser = (data) => {
-// Temp comment
     if (!data.email)
         return null;
     const user = {
@@ -28,6 +27,7 @@ const parseBullhornCandidateToUser = (data) => {
         description: data.description,
         phone: data.phone || data.workPhone || data.mobile,
         status: data.status,
+// Temp comment
         username: data.username,
         companyName: data.companyName,
         companyURL: data.companyURL,

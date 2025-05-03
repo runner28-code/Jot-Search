@@ -6,6 +6,7 @@ export default function TextInput({type, name, placeholder, label, value, requir
     if ( name !== 'phone' ) {
       onChange(name, e.target.value);
     } else {
+// Temp comment
       onChange(name, e);
     }
   }
@@ -15,5 +16,4 @@ export default function TextInput({type, name, placeholder, label, value, requir
       { renderLabel( label, required, name ) }
       { renderInput( name, type, baseStyles, placeholder, value, onChange, handleChange, disabled ) }
     </div>
-// Temp comment
   )

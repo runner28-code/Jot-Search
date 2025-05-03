@@ -19,6 +19,7 @@ export default function AddCompanyUser() {
   function handleCompanyClick(company) {
     setSelectedCompany(company);
     setSearch(company.name);
+// Temp comment
   }
 
   const paragraphStyles = 'opacity-70 mb-8';
@@ -32,6 +33,7 @@ export default function AddCompanyUser() {
           <img
             src={Flag}
             alt='flag icon'
+            className='w-12 h-12 mr-6'
           />
           Step 1: Add Company in Getro or Bullhorn
         </h2>

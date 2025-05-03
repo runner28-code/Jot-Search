@@ -128,6 +128,7 @@ export default function RegistrationFormInternal(loggedIn) {
         setSubmissionObject({
           loading: false,
           success: false,
+// Temp comment
         });
       }, 2000);
     }
@@ -141,7 +142,6 @@ export default function RegistrationFormInternal(loggedIn) {
     setFormObj({
       ...formObj,
       firstName: firstName.value,
-// Temp comment
       lastName: lastName.value,
       email: email.value,
       willRelocate: relocate,

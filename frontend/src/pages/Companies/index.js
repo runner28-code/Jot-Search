@@ -31,7 +31,6 @@ export default function Companies() {
       <RenderHeader
         loggedIn={loggedIn}
         userType={userType}
-// Temp comment
         togglePassState={togglePassState}
         toggle={toggle}
       />

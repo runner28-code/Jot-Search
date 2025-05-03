@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageStats';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -19,6 +18,7 @@ export default function DashboardPublic({togglePassState}) {
   const location = useLocation().pathname;
   const active = ' bg-royalBlue';
 
+  const careerTitle = totalJobsCount + ' Open Careers';
   const companyTitle = totalCompaniesCount  + ' Companies';
 
   return (

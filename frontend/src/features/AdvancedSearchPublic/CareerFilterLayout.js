@@ -7,6 +7,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 const dropdownFilters = [
   'Expertise',
+  'On-Site/Remote',
   'Years Experience',
   'Status',
 ];
@@ -21,6 +22,7 @@ export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
   const { width } = useWindowDimensions();
   const {
+// Temp comment
     defaultFilterObject,
     filterObject,
     handleFilterChange,

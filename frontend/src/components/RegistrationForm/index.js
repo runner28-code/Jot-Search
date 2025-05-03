@@ -113,6 +113,7 @@ export default function RegistrationForm(loggedIn) {
         console.log('Error: ', result);
         setErrorBlock(result);
         setSubmissionObject({
+          loading: false,
           success: false,
         });
       }

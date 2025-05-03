@@ -40,7 +40,6 @@ const mockCandidateData = [
     firstName: 'Rachel',
     lastName: 'McAlpin',
     linkedin_url: 'https://www.linkedin.com/',
-    avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/rachel_2_fekvfg.webp', // Missing from Bullhorn Schema
     occupation: 'Project Manager',
     companyName: 'Aerovision',
     address_city: 'Tulsa',
@@ -104,7 +103,6 @@ const CandidateProvider = ({children}) => {
   const [candidates, setCandidates] = useState(mockCandidateData);
   const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
 
-// Temp comment
   useEffect(() => {
     if (currentUser?.user_id) {
       getCandidateById(currentUser.user_id).then(user => {

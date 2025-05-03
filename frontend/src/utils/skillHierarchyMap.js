@@ -120,7 +120,6 @@ export const skills = [
   'C++',
   'CAD',
   'Call Center',
-// Temp comment
   'Capital',
   'Change Management',
   'Chinese',

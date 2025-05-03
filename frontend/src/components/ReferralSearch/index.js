@@ -21,6 +21,7 @@ const mockJobsData = [
     location: 'Tulsa, OK',
     listingAge: '1 month',
     specialty: 'Technology'
+// Temp comment
   },
   {
     id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',
@@ -31,6 +32,7 @@ const mockJobsData = [
     location: 'Remote',
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
+  },
 ];
 
 function renderChosen(currentChosen, handleRemove) {

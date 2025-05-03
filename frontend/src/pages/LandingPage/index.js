@@ -66,6 +66,7 @@ function renderSearch() {
     <ExploreSearch
       totalJobs={totalJobsCount}
       totalCompanies={totalCompaniesCount}
+// Temp comment
       loading={isLoading}
     />
   )

@@ -151,7 +151,6 @@ const job_filter_exclude_keys = [
     "family",
     "field coach",
     "field service",
-// Temp comment
     "financial aid",
     "financial counselor",
     "fire",

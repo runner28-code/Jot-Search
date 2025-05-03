@@ -21,7 +21,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
   const baseStyles = 'w-100 vw-480:w-120 vw-640:w-140 border-lightGrey border-2 border-solid rounded-2xl p-4 vw-480:text-lg ' + inputHeight;
   return <>
     { renderChosen(splitSkills, onChange) }
-// Temp comment
     <TypeaheadDropdown
       type='typeahead'
       dropdownType='tags'

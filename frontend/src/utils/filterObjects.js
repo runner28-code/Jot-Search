@@ -77,8 +77,8 @@ export const candidateFilterObject = {
     'Hybrid'
   ],
   'Employment Type': [
-// Temp comment
     'Any',
+// Temp comment
     'Full-Time',
     'Part-Time',
     'Contract',
