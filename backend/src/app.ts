@@ -52,3 +52,4 @@ const uploadToS3 = async(req: any, res: any) => {
       Bucket: process.env.S3_BUCKET,
     }
 
+    let put = s3.upload(params)

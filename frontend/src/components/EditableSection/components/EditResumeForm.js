@@ -11,6 +11,7 @@ export default function EditResumeForm({ handleChange }) {
         value: newResumePath,
       },
     };
+    handleChange( fakeEvent );
   }
   
   return (

@@ -287,3 +287,5 @@ model Company {
   customText19 String?
   customText20 String?
 
+  customTextBlock1 String?
+  customTextBlock2 String?

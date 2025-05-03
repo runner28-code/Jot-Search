@@ -46,7 +46,6 @@ function useTabState(disabledTabs, userType, pathname) {
   }
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');
 }
-
 export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const { width } = useWindowDimensions();
   const userType = AuthService.getUserRole();
@@ -67,7 +66,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,
-// Temp comment
         firstname: filterObject.title
       }
       delete modifiedFilterObject.title;

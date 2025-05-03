@@ -20,7 +20,6 @@ import {
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
-// Temp comment
 import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
@@ -114,7 +113,6 @@ export default function RegistrationForm(loggedIn) {
         console.log('Error: ', result);
         setErrorBlock(result);
         setSubmissionObject({
-          loading: false,
           success: false,
         });
       }

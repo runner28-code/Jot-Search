@@ -17,3 +17,4 @@ export default function ResetPassword() {
   const token = queryParams.get('token');
 
   const handlePassword = (event) => {
+    setPassword(event.target.value);

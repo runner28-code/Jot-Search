@@ -137,6 +137,7 @@ const job_filter_exclude_keys = [
     "emergency response",
     "engineering tec",
     "english",
+    "environment",
     "environmental",
     "equipment",
     "esl",
@@ -150,6 +151,7 @@ const job_filter_exclude_keys = [
     "family",
     "field coach",
     "field service",
+// Temp comment
     "financial aid",
     "financial counselor",
     "fire",
@@ -187,3 +189,5 @@ const job_filter_exclude_keys = [
     "housekeeper",
     "housekeeping",
     "housing",
+    "humanities",
+    "hvac",

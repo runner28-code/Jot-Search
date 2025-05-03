@@ -126,3 +126,5 @@ export type ClientContact = {
     address_city?: string;
     address_state?: string;
     address_zip?: string;
+    address_country_id?: string;
+    category?: string;

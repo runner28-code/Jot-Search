@@ -2,6 +2,7 @@ import {
   Controller,
   Param,
   Body,
+  Get,
   Post,
   Put,
   Delete,
@@ -41,7 +42,6 @@ export class UserController {
     const { email, password } = body;
     const { result, error, ...data } = await login(email, password);
 
-    if (result) {
       const token = CreateJwtToken(data);
       return {
         result,
@@ -76,3 +76,5 @@ export class UserController {
       const { result, error } = await register(data);
       return {
         result,
+        error,
+      };

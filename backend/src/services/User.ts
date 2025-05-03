@@ -242,3 +242,5 @@ export const isExistUserFull = async (field: string, value: string) => {
     return user || null;
   } catch (error) {
     console.log(error);
+    return null;
+  }

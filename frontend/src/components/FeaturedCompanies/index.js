@@ -24,6 +24,7 @@ export default function FeaturedCompanies() {
       <div className='flex flex-wrap mt-8'>
         {
           isLoading ?
+// Temp comment
             <LoadingSpinner />
             :
             companies.map((company, index) =>
@@ -42,5 +43,6 @@ export default function FeaturedCompanies() {
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
         </Link>
+      </div>
     </div>
   )

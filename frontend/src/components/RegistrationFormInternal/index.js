@@ -112,6 +112,7 @@ export default function RegistrationFormInternal(loggedIn) {
         }
       } else {
         console.log('Error: ', result);
+        setErrorBlock(result);
         setSubmissionObject({
           loading: false,
           success: false,
@@ -140,6 +141,7 @@ export default function RegistrationFormInternal(loggedIn) {
     setFormObj({
       ...formObj,
       firstName: firstName.value,
+// Temp comment
       lastName: lastName.value,
       email: email.value,
       willRelocate: relocate,

@@ -6,7 +6,6 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-// Temp comment
     extend: {
       animation: {
         'spin': 'spin .175s linear forwards',
@@ -101,3 +100,4 @@ module.exports = {
         'xxl-2': '32px',
         'xxl-3': '36px',
         'xxl-4': '40px',
+        // General Spacing

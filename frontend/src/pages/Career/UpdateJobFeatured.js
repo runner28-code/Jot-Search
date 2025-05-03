@@ -9,7 +9,6 @@ export const UpdateJobFeatured = ({ job }) => {
 
 
   const enabledButtonStyle = 'bg-green text-white'
-// Temp comment
   const disabledButtonStyle = 'bg-grey300'
 
   const buttonStyles = toggled ? enabledButtonStyle : disabledButtonStyle
@@ -41,6 +40,7 @@ export const UpdateJobFeatured = ({ job }) => {
           }}>
           <span className="sr-only">inTulsa Featured</span>
           <span 
+// Temp comment
             aria-hidden="true" 
             className={`${toggleStyles} pointer-events-none inline-block h-10 w-10 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out`}>
           </span>

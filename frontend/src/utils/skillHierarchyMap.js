@@ -120,6 +120,7 @@ export const skills = [
   'C++',
   'CAD',
   'Call Center',
+// Temp comment
   'Capital',
   'Change Management',
   'Chinese',
@@ -133,7 +134,6 @@ export const skills = [
   'Compliance',
   'CompTIA Network+',
   'Consultative Sales',
-// Temp comment
   'Consulting',
   'Consumer Market Research',
   'Containers',
@@ -153,3 +153,5 @@ export const skills = [
   'CSS',
   'Curriculum Development',
   'Customer Experience',
+  'Customer Relations',
+  'Customer Service',

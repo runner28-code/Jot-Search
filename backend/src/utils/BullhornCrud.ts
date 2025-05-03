@@ -121,3 +121,5 @@ export const saveBullhornJobs = async (jobs: any[]) => {
         });
 
         if (existing) {
+          console.log(`Job with ID: ${job.id} exists`);
+          return -1;

@@ -157,6 +157,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               City:
               </label>
               <input 
+                type='text'
                 onChange={handleInputChange}
                 id='city'
                 name='city'
@@ -210,7 +211,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             value={formData.phone}
             className={inputStyles + 'ml-10 text-h6'} />
         </div>
-        {/* Email */}
         <div className='flex items-center justify-between mb-4'>
           <label
             className='text-h6 text-royalBlue flex items-center'

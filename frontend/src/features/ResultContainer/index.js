@@ -26,7 +26,6 @@ export default function ResultContainer(props) {
   const baseStyles = 'w-full max-w-400 py-5'
   const resultsContainerStyles = containerClass || 'flex flex-col items-center justify-center ';
 
-  function renderHeader() {
     if ( !header ) {
       return null;
     }

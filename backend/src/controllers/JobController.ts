@@ -74,7 +74,6 @@ export class JobController {
           where: {
             domain: {
               in: job?.company?.companyURL
-            }
           }
         })
       }
@@ -166,3 +165,4 @@ export class JobController {
           logo_url: true,
         },
         where: {
+          domain: {

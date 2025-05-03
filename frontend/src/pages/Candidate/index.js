@@ -35,6 +35,7 @@ export default function Candidate() {
     return <Navigate to='/' />
   }
 
+// Temp comment
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;
   const [candidateData, setCandidateData] = useState({});
   const [loading, setLoading] = useState(true);

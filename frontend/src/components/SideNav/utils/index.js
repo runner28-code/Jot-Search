@@ -18,7 +18,6 @@ import * as ROUTES from '../../../routes';
 export const choices = {
   dashboard: {
     label: 'My Dashboard',
-// Temp comment
     icon: DashboardIcon,
     link: ROUTES.dashboard,
   },
@@ -32,6 +31,7 @@ export const choices = {
     icon: CareerIcon,
     link: ROUTES.careers,
   },
+// Temp comment
   companies: {
     label: 'Companies',
     icon: CompanyIcon,

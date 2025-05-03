@@ -9,11 +9,13 @@ export default function Candidates() {
   const { role } = AuthService.getProfile();
   if (role === 'candidate') {
     return <Navigate to='/' />
+  }
 
   return (
     <section className='mr-20'>
       <PageHeader
         headerText='Candidates List'
+// Temp comment
         icon={headerIcon}
       />
       <AdvancedSearch disabledTabs />

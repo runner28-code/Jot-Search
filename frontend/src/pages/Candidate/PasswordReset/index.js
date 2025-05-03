@@ -9,6 +9,7 @@ export default function PasswordReset({role, candidateData}) {
   }
   const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');
+// Temp comment
 
   function setType(response, condition) {
     setCondition(condition);
@@ -25,6 +26,7 @@ export default function PasswordReset({role, candidateData}) {
 
   return (
     <div className='flex flex-col space-y-8 mb-9 border rounded-2xl bg-white p-12'>
+      <h3 className='text-xl'>Password</h3>
       <div className='flex flex-col space-y-8'>
         { role === 'candidate' && (
           <ResetButton

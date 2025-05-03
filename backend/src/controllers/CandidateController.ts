@@ -133,6 +133,7 @@ export class CandidateController {
 
       const tppSpecificFilterKeys = Object.keys(translateTppFilters)
 
+      const bothTypesOfUserFilters = ["categoryId", "status", 'experience', 'firstName']
 
       const canBeBothTypesOfUserFilters = Object.keys(where).every(key => bothTypesOfUserFilters.includes(key))
 
@@ -158,3 +159,5 @@ export class CandidateController {
         const candidateOnlyPromise = db.candidate.findMany({
           where,
           skip: skip < 0 ? 0 : skip,
+          take: count,
+          select: {

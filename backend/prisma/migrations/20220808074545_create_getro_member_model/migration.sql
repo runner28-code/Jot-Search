@@ -26,3 +26,4 @@ CREATE TABLE "UserTalentCollection" (
     "user_deleted" BOOLEAN,
     "is_company_admin" BOOLEAN,
     "is_network_admin" BOOLEAN,
+    "is_network_ambassador" BOOLEAN,

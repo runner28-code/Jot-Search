@@ -1,5 +1,6 @@
 -- CreateTable
 CREATE TABLE "Application" (
+    "id" TEXT NOT NULL,
     "userId" TEXT NOT NULL,
     "jobId" TEXT NOT NULL,
 
@@ -8,3 +9,4 @@ CREATE TABLE "Application" (
 
 -- CreateTable
 CREATE TABLE "_userSavedCompanies" (
+    "A" TEXT NOT NULL,

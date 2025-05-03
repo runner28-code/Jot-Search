@@ -9,4 +9,3 @@ var Tables;
 (function (Tables) {
     Tables["COMPANIES"] = "Companies";
     Tables["JOBS"] = "Jobs";
-    Tables["USER"] = "User";

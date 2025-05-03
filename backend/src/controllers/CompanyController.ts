@@ -137,3 +137,4 @@ export class CompanyController {
         where: {
           id: id,
         },
+      });

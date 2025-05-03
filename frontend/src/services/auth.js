@@ -51,7 +51,6 @@ class AuthService {
   }
 
   accountRecovery(email) {
-// Temp comment
     return email;
   }
 
@@ -134,5 +133,4 @@ class AuthService {
   }
 
   getSavedCandidateIDs() {
-    return JSON.parse(localStorage.getItem('savedCandidates')) || [];
   }

@@ -8,7 +8,6 @@ export const saveCompanies = async (companies: any[]) => {
 							console.log(`Savng company with ID = ${company.id}`);
 							const existing = await db.getroCompany.findFirst({
 								where: {
-									id: company.id,
 								},
 							});
 							if (existing) {
@@ -45,3 +44,4 @@ export const saveCompanies = async (companies: any[]) => {
 export const saveMembers = async (members: any[]) => {
     const expludeFields = ['user_talent_collection', 'referrals_given', 'referrals_received', 'opportunity_types', 'mentorship'];
     try {
+        for (const member of members) {
