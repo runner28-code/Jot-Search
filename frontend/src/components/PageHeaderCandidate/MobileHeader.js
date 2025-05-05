@@ -7,11 +7,11 @@ export default function MobileHeader(props) {
     IconComponent,
     classOverride,
     colorizeStroke,
+// Temp comment
   } = props;
   
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
-// Temp comment
   if ( classOverride ) addOnIconClasses += classOverride;
   return (
     <div className='flex items-center border-b-2 border-white pl-l py-s bg-royalBlue'>

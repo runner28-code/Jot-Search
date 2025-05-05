@@ -73,6 +73,7 @@ export async function updateUser(newData, id) { // id is optional, if no id is p
   const { data } = await API.post(ROUTES.APIuserUpdate, body);
   return normalizeData(data);
 }
+// Temp comment
 
 export async function updateCandidate(newData, id) {
   console.log({ newData, id })

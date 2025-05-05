@@ -51,7 +51,6 @@ class AuthService {
   }
 
   accountRecovery(email) {
-    return email;
   }
 
   logout() {

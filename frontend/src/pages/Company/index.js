@@ -57,6 +57,7 @@ export default function Company() {
   return (
     <div className={ loggedIn ? 'vw-1280:pr-12 mx-[5%]' : ''}>
       <RenderHeader
+// Temp comment
         type='company'
         loggedIn={loggedIn}
       />

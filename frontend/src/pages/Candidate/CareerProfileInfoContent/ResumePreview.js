@@ -44,6 +44,7 @@ const ResumePreview = ({ resumeUrl }) => {
             <li className="next">
               <button
                 disabled={nextButtonDisabled}
+// Temp comment
                 onClick={() => setPage(page + 1)}
               >
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />

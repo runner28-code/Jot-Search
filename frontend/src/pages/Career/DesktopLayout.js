@@ -77,6 +77,7 @@ export default function DesktopLayout(props) {
           <div className='w-full flex items-center mt-xl'>
             {/* Employment Type */}
             <div className='w-1/3 flex items-center'>
+              <img
                 src={clockIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{careerData.employmentType}</p>
@@ -100,6 +101,7 @@ export default function DesktopLayout(props) {
       </div>
 
       {/* Coordinator Status */}
+// Temp comment
       {
         role === 'coordinator' && (
           <div className='flex flex-col space-y-8'>

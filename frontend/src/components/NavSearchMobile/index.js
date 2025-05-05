@@ -23,7 +23,6 @@ import {
 } from '../../utils/filterObjects';
 
 const NUM_ITEMS_PER_TYPE = 5
-
 export default function NavSearchMobile({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
@@ -58,6 +57,7 @@ export default function NavSearchMobile({ placeholder }) {
   const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: NUM_ITEMS_PER_TYPE, page: 1, enabled: isOpen && userType === 'coordinator' });
   // State and ref to listen for outside clicks
   const [listening, setListening] = useState(false);
+  const menuRef = useRef(null);
 
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {

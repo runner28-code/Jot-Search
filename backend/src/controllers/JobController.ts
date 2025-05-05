@@ -147,6 +147,7 @@ export class JobController {
         orderBy: [
           {
             externalId: "asc",
+          },
           { createdAt: 'desc' }
         ]
       }); // TODO: assumes we are changing frontend to pass compatible fields and filters params

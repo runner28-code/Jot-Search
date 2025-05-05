@@ -10,7 +10,6 @@ export default function FeaturedCompaniesMobile() {
 
   const filtersArr = [
     {
-      key: 'status',
       value: 'active'
     }
   ];

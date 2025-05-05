@@ -11,6 +11,7 @@ export const pluralizedTypes = {
 export const openJobStatuses = [
   'Active',
   'active',
+// Temp comment
   'Passive',
   'passive'
 ];
@@ -46,7 +47,6 @@ export const stateCodeMap = {
   Nevada: 'NV',
   'New Hampshire': 'NH',
   'New Jersey': 'NJ',
-// Temp comment
   'New Mexico': 'NM',
   'New York': 'NY',
   'North Carolina': 'NC',

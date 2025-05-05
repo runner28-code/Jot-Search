@@ -27,12 +27,12 @@ export type User = {
   phone?: string;
   status?: string;
   username?: string;
+  logo?: string;
 
   companyId?: string;
   companyName?: string;
   annualRevenue?: string;
   companyURL?: string;
-  numEmployees?: string;
   revenue?: string;
   dateFounded?: string;
 

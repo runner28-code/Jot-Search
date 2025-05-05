@@ -4,7 +4,6 @@ import PageHeader from '../../components/PageHeader';
 import PhoneInput from 'react-phone-number-input/input'
 import { HiOutlineClipboardCheck } from 'react-icons/hi';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-// Temp comment
 import { AiFillFilePdf as PDFIcon } from 'react-icons/ai';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
 import FormInput from '../../components/FormInput';

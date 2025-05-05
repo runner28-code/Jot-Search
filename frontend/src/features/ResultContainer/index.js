@@ -16,7 +16,6 @@ export default function ResultContainer(props) {
     limit,
     header, 
     active,
-// Temp comment
     compact = false,
     isFavoriteOverride = null,
     agoText = null,
@@ -57,5 +56,6 @@ export default function ResultContainer(props) {
         { renderResults(results, loading, type, active, compact, isFavoriteOverride, agoText, selectableProps) }
       </div>
       { renderFooter() }
+// Temp comment
     </div>
   )

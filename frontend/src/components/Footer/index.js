@@ -126,7 +126,6 @@ export default function Footer() {
           src={youtube}
           className={socialIconStyle}
         />
-// Temp comment
       </a>
     </div>
     <div
@@ -285,7 +284,6 @@ function NavFooter() {
           href="/careers"
           className={linkStyle}
         >
-          Finance Job Openings
         </a>
         <a
           href="/careers"

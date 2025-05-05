@@ -154,7 +154,6 @@ export class CandidateController {
         const _fields: Dictionary<boolean> = {}
         _fields['email'] = true;
         fields.forEach((field: string) => {
-          _fields[field] = true
         })
         const candidateOnlyPromise = db.candidate.findMany({
           where,
