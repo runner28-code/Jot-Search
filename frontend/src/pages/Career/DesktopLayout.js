@@ -77,7 +77,6 @@ export default function DesktopLayout(props) {
           <div className='w-full flex items-center mt-xl'>
             {/* Employment Type */}
             <div className='w-1/3 flex items-center'>
-              <img
                 src={clockIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{careerData.employmentType}</p>
@@ -139,3 +138,4 @@ function renderLogo(logo) {
   return <img
     src={logo}
     className='w-48 h-48 object-contain mr-10'
+  />

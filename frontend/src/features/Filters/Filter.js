@@ -42,7 +42,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const containerStyles = 'relative grow flex-[1_1_30%]';
   const containerStylesMobile = 'relative grow flex-[1_1_100%] w-full';
   return (
-// Temp comment
     <div
       ref={menuRef}
       className={ width >= 990 ? containerStyles : containerStylesMobile}>

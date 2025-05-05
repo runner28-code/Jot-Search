@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charcoal mb-m ';
 const hrStyles = 'mb-10 border-smokeGray ';
+// Temp comment
 
 export const UpdateJobStatus = ({ job }) => {
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
@@ -15,7 +16,6 @@ export const UpdateJobStatus = ({ job }) => {
     <div className='py-8 flex flex-col'>
       <hr className={`${hrStyles} bg-smokeGray h-2`} />
 
-// Temp comment
       <div className='flex flex-col'>
         <h4 className={sectionHeaderStyles}>Career Status</h4>
         {isLoading && <p>Loading...</p>}

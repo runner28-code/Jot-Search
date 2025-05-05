@@ -46,6 +46,7 @@ export const stateCodeMap = {
   Nevada: 'NV',
   'New Hampshire': 'NH',
   'New Jersey': 'NJ',
+// Temp comment
   'New Mexico': 'NM',
   'New York': 'NY',
   'North Carolina': 'NC',

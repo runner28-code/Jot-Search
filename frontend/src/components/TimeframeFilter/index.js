@@ -38,7 +38,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   
   return (
     <div
-// Temp comment
       ref={menuRef}
       className='relative'>
       <div

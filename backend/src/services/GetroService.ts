@@ -62,6 +62,7 @@ export class GetroService {
         return false;
     };
 
+    async getCompanies(testMode = false, per_page = 30): Promise<any> {
         console.log('\n***** getCompanies *****');
         let page = 1;
         let repeatErr = 0;
@@ -82,7 +83,6 @@ export class GetroService {
                 if (res.status === 200) {
                     const { items, meta: { total: total } } = res.data;
                     if (!testMode) {
-                        let result = [];
                         for (const company of items) {
                             const detail = await this.getCompanyDetail(company.slug);
                             if (detail) {

@@ -19,7 +19,6 @@ export default function AddCompanyUser() {
   function handleCompanyClick(company) {
     setSelectedCompany(company);
     setSearch(company.name);
-// Temp comment
   }
 
   const paragraphStyles = 'opacity-70 mb-8';
@@ -65,6 +64,7 @@ export default function AddCompanyUser() {
           <img
             src={Search}
             alt='search icon'
+// Temp comment
             className='absolute right-6 top-6 h-10 w-10 vw-900:h-12 vw-900:w-12'
           />
           {(search && isLoadingCompanies && !selectedCompany) && <div>Loading...</div>}

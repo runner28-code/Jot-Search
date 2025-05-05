@@ -78,6 +78,7 @@ AccessibleDropdown.propTypes = {
   label: PropTypes.string,
   placeholder: PropTypes.string,
   required: PropTypes.bool,
+  onChange: PropTypes.func,
   choices: PropTypes.array,
   choiceObject: PropTypes.object,
   currentChosen: PropTypes.oneOfType([

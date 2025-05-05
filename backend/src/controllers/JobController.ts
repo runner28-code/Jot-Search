@@ -108,6 +108,7 @@ export class JobController {
       await (await BullhornService.getClient()).getJobs(false, 50);
       return { success: true };
     } catch (error) {
+      consoleLog(error);
       return { success: false, error };
     }
   }
@@ -146,7 +147,6 @@ export class JobController {
         orderBy: [
           {
             externalId: "asc",
-          },
           { createdAt: 'desc' }
         ]
       }); // TODO: assumes we are changing frontend to pass compatible fields and filters params
@@ -166,3 +166,4 @@ export class JobController {
         },
         where: {
           domain: {
+            in: companyURLs

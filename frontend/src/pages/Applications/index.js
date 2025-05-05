@@ -67,6 +67,7 @@ export default function Applications() {
           onClick={removeSelectedApplications}
         >
           Remove Selections
+// Temp comment
         </button>
         <ResultContainer
           containerClass={ width >= 990 ? 'grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}

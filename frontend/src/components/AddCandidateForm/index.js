@@ -91,7 +91,6 @@ export default function RegistrationForm() {
     }
   }, [submissionObject.loading]);
 
-// Temp comment
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
       setTimeout(() => {
@@ -198,6 +197,7 @@ export default function RegistrationForm() {
             choices={skillChoices}
             error={errors.includes('skills')}
           />
+// Temp comment
           <div className='flex flex-wrap mt-4 mb-16 w-full'>
             {formObj.skills.length > 0 ? formObj.skills.map(skill => 
               <ChoiceTag

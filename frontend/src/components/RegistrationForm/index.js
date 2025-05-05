@@ -129,6 +129,7 @@ export default function RegistrationForm(loggedIn) {
           success: false,
         });
       }, 2000);
+// Temp comment
     }
   }, [submissionObject.success])
 

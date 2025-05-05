@@ -112,7 +112,6 @@ export const mockCompanyStats = {
       prevCount: 72
     }
   },
-// Temp comment
   'Recommended Candidates': {
     'Today': {
       count: 12,

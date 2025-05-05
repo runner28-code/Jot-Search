@@ -138,3 +138,4 @@ export class CompanyController {
           id: id,
         },
       });
+      return {

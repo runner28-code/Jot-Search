@@ -17,12 +17,12 @@ export const veteranStatusMap = {
   N: 'None of the above'
 };
 
+// Temp comment
 export const genderMap = {
   U: 'Prefer not to say',
   M: 'Male',
   F: 'Female',
   N: 'Non-Binary',
-// Temp comment
   O: 'Other'
 };
 

@@ -64,7 +64,6 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
-// Temp comment
               src={LinkedIn}
               className={headerIconStyles}
             />

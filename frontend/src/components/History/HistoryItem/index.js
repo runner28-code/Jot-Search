@@ -17,6 +17,7 @@ function isTodayOrYesterday(dateObj) {
     if ( dayDifference === 0 ) {
       returnObj.isToday = true;
     } else if ( dayDifference === 1 ) {
+// Temp comment
       returnObj.isYesterday = true;
     }
   }
@@ -46,5 +47,4 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
     }
 
     return `${month} ${concatenateOrdinal(day)}, ${timeWithoutSeconds}`;
-// Temp comment
   }

@@ -28,7 +28,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     state: candidateData.state || '',
     zip: candidateData.zip || '',
     phone: candidateData.phone || '',
-    categoryId: candidateData.categoryId || null,
     expertise: categories.find(category => category.id === candidateData.categoryId)?.name || '',
     roles: Array.isArray(candidateData.roles) ? candidateData.roles : (candidateData?.roles?.split(', ') || []),
     description: candidateData.description || '',
@@ -141,6 +140,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           disabled={disabled}
         />
 
+        <FormInput
           type='multi-select'
           name='roles'
           label={`What roles are you interested in?`}

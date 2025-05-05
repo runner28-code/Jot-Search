@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import SourceIdentifier from '../SourceIdentifier';
-// Temp comment
 
 export default function DesktopHeader(props) {
   const {
@@ -22,7 +21,6 @@ export default function DesktopHeader(props) {
   let containerClasses = 'mb-10 pt-18 ';
   if ( containerClassOverride ) containerClasses += containerClassOverride;
   
-  return (
     <div className={containerClasses}>
       <div className='flex gap-8 items-center'>
         { icon && (

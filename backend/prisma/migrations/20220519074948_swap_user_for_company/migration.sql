@@ -23,7 +23,6 @@ DROP TABLE "User";
 CREATE TABLE "Company" (
     "id" TEXT NOT NULL,
     "name" TEXT NOT NULL,
-    "annualRevenue" BIGINT,
     "addressId" TEXT,
     "billingAddressId" TEXT,
     "billingContact" TEXT,

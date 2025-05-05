@@ -1,1 +1,1 @@
-CREATE TABLE "User" (
+-- CreateTable

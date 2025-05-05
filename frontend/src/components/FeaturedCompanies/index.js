@@ -8,7 +8,6 @@ const ITEMS_PER_PAGE = 10;
 
 export default function FeaturedCompanies() {
 
-  const filtersArr = [
     {
       key: 'status',
       value: 'active'

@@ -289,3 +289,4 @@ model Company {
 
   customTextBlock1 String?
   customTextBlock2 String?
+  customTextBlock3 String?

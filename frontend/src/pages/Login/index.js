@@ -62,6 +62,7 @@ export default function Login() {
             type='text'
             name='email'
             label='Login Email'
+// Temp comment
           />
           <FormInput
             type='password'
@@ -78,7 +79,6 @@ export default function Login() {
             <Link
               to={ROUTES.accountRecovery}
               className='text-royalBlue text-sm vw-640:text-ml underline'>
-// Temp comment
               Forgot Password?
             </Link>
           </div>
