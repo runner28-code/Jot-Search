@@ -11,6 +11,7 @@ import {
   Authorized,
   HeaderParam,
   CurrentUser,
+  QueryParams,
 } from "routing-controllers";
 import { BullhornService } from "../services/BullhornService";
 import { sendVerification } from "../services/EmailService";
@@ -79,3 +80,5 @@ export class UserController {
         error,
       };
     } else {
+      return {
+        result: false,

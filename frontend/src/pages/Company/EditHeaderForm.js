@@ -20,7 +20,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   const handleInputChange = async (event) => {
     const { name, value } = event.target;
     if ( name === 'avatar' ) {
-// Temp comment
       const imageToUpload = event.target.files[0];
       console.log(imageToUpload);
     }
@@ -228,6 +227,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             id='email'
             value={formData.email}
             className={inputStyles + 'ml-10 text-h6'} />
+// Temp comment
         </div>
         {/* Cancel/Save Buttons */}
         <div className='flex justify-evenly mt-8'>

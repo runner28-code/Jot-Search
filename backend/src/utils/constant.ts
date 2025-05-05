@@ -10,6 +10,7 @@ const job_filter_exclude_keys = [
   "admitting",
   "adult",
   "advocacy",
+  "advocate",
   "aircraft",
   "alumni",
   "americorps",
@@ -190,3 +191,4 @@ const job_filter_exclude_keys = [
   "i am awesome",
   "imaging",
   "impact coach",
+  "inspector",

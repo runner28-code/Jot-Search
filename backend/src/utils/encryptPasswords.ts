@@ -17,4 +17,3 @@ import { DATASET_MAIN, Tables } from "../types/Common";
         `;
         const options = {
           query: query,
-          location: "US",

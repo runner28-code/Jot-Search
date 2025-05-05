@@ -22,3 +22,4 @@ CREATE TABLE "ClientContact" (
     "clientCorporation" TEXT,
     "comments" TEXT,
     "dateAdded" TIMESTAMP(3),
+    "dateLastModified" TIMESTAMP(3),

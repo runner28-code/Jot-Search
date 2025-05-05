@@ -8,3 +8,4 @@ const config = {
 
   getroEmail: process.env.GETRO_EMAIL,
   getroPassword: process.env.GETRO_PASSWORD,
+

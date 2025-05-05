@@ -21,7 +21,6 @@ export type Company = {
     culture?: string,
     customDate1_3?: string,
     customFloat1_3?: string,
-    customInt1_3?: string,
     customText1_20?: string,
     customTextBlock1_5?: string,
     dateFounded?: string,
@@ -128,3 +127,4 @@ export type ClientContact = {
     address_zip?: string;
     address_country_id?: string;
     category?: string;
+    certifications?: string;

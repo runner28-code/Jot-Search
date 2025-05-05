@@ -10,6 +10,7 @@ const YEARS_OF_EXPERIENCE = 'yearsExperience';
 function renderActiveIcon(choice, currentChosen) {
   if (choice === currentChosen || currentChosen.includes(choice)) {
     return(
+      <img 
         src={checkmarkIcon} 
         alt="checkmark" 
         className="w-8 h-8 mr-2" />
@@ -17,7 +18,6 @@ function renderActiveIcon(choice, currentChosen) {
   }
 }
 
-function renderHorizontalRule(index, arrayLength) {
   if (index !== arrayLength - 1) {
     return (
       <hr className='border-royalBlue border-1.5 border-solid my-4' />

@@ -122,7 +122,6 @@ export const skills = [
   'Call Center',
   'Capital',
   'Change Management',
-  'Chinese',
   'CIA',
   'Cloud',
   'Cold Calling',
@@ -154,3 +153,4 @@ export const skills = [
   'Customer Experience',
   'Customer Relations',
   'Customer Service',
+  'Customer Success',

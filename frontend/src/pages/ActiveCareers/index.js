@@ -5,6 +5,7 @@ import FilterSearch from '../../components/FilterSearch';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import ResultContainer from '../../features/ResultContainer';
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
+import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import {
   buildSearchFilters
 } from '../../utils/filterObjects';
@@ -36,7 +37,6 @@ export default function ActiveCareers() {
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });
 
   return (
-    <section>
       <PageHeader
         headerText='Active Careers'
         IconComponent={CareerIcon}

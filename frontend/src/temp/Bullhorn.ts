@@ -128,3 +128,4 @@ export type ClientContact = {
     dateAdded?: string;
     dateLastModified?: string;
     dateLastVisit?: string;
+    description?: string;

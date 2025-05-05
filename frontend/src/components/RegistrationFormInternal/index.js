@@ -145,7 +145,6 @@ export default function RegistrationFormInternal(loggedIn) {
       email: email.value,
       willRelocate: relocate,
       linkedin: linkedin.value,
-// Temp comment
       password: password.value,
       verifyPassword: verifyPassword.value,
     });

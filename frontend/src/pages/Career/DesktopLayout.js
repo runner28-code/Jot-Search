@@ -101,7 +101,6 @@ export default function DesktopLayout(props) {
       </div>
 
       {/* Coordinator Status */}
-// Temp comment
       {
         role === 'coordinator' && (
           <div className='flex flex-col space-y-8'>
@@ -130,6 +129,7 @@ DesktopLayout.propTypes = {
     salaryString: PropTypes.string.isRequired,
   }).isRequired
 }
+// Temp comment
 
 function renderLogo(logo) {
   if (!logo) {
@@ -141,3 +141,19 @@ function renderLogo(logo) {
     src={logo}
     className='w-48 h-48 object-contain mr-10'
   />
+}
+
+function renderAboutCompanySection(careerData, companyName) {
+  if (!companyName) {
+    return null;
+  }
+  const headerString = `About ${companyName}`;
+  return (<>
+    <hr className={hrStyles} />
+    {/* About Company */}
+    <h4 className={sectionHeaderStyles}>{headerString}</h4>
+    <p
+      className='font-spaceGrotesk text-textBlack text-md mb-5'
+      dangerouslySetInnerHTML={{ __html: careerData.company?.description || 'No Company Description Available' }}
+    />
+  </>)

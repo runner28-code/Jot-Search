@@ -42,7 +42,6 @@ export type Operator = "AND" | "OR";
 export type FilterOption = {
   key: string;
   value: string;
-};
 
 export type AdvancedFilterOption = {
   key: string;
@@ -53,3 +52,4 @@ export type AdvancedFilterOption = {
 export type FilterBody = {
   filters?: any;
   fields: any;
+  page: number;

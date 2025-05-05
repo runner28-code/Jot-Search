@@ -56,6 +56,5 @@ export default function ResultContainer(props) {
         { renderResults(results, loading, type, active, compact, isFavoriteOverride, agoText, selectableProps) }
       </div>
       { renderFooter() }
-// Temp comment
     </div>
   )

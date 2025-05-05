@@ -11,6 +11,7 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import {
   candidateChoices,
   companyChoices,
+// Temp comment
   coordinatorChoices,
   guestChoices,
   findSelectedFromPath
@@ -28,6 +29,7 @@ export default function NavBar() {
 }
 
 function NavBarLayout() {
+  return (
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50 '>
       <div className='h-30 px-8 flex justify-between items-center'>
         <Link to={ROUTES.root}>

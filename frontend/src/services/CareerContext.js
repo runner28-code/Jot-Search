@@ -8,7 +8,6 @@ const mockJobsData = [
     company: 'Hobby Lobby', // ! Not in schema yet
     clientCorporationID: '05dbac7b-bf38-47ce-a8e1-d13ceebd8ee8',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
-// Temp comment
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
     location_state: 'OK',

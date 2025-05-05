@@ -284,6 +284,7 @@ function NavFooter() {
           href="/careers"
           className={linkStyle}
         >
+          Finance Job Openings
         </a>
         <a
           href="/careers"

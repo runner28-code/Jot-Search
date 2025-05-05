@@ -42,7 +42,6 @@ export default function AddCoordinator() {
         setSubmissionObject({
           loading: false,
           success: false,
-// Temp comment
           errors: {},
         });
       }, 2000);

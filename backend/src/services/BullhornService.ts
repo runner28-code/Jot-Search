@@ -135,7 +135,6 @@ export class BullhornService {
     if (res.status === 200) {
       const { access_token, refresh_token } = res.data;
       this.access_token = access_token;
-      this.refresh_token = refresh_token;
       console.log("Access Token: ", this.access_token);
       console.log("Refresh Token: ", this.refresh_token);
       return true;
@@ -384,3 +383,5 @@ export class BullhornService {
             "Content-Type": "application/json;charset=UTF-8",
             Accept: "*/*",
           },
+        });
+        console.log(url);

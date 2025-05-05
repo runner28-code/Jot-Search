@@ -168,3 +168,4 @@ export class JobController {
         where: {
           domain: {
             in: companyURLs
+          }

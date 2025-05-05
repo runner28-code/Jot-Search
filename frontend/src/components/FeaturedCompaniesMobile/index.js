@@ -10,6 +10,7 @@ export default function FeaturedCompaniesMobile() {
 
   const filtersArr = [
     {
+      key: 'status',
       value: 'active'
     }
   ];
@@ -21,6 +22,7 @@ export default function FeaturedCompaniesMobile() {
       { renderColorShapes() }
       <h2 className='text-h5 text-center font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
       <div className='flex flex-wrap mt-8 justify-center'>
+// Temp comment
         {
           isLoading ?
             <LoadingSpinner />

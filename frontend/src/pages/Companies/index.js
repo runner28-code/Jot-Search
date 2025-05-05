@@ -5,7 +5,6 @@ import PageHeaderCandidate from '../../components/PageHeaderCandidate';
 import AdvancedSearch from '../../features/AdvancedSearch';
 import AdvancedSearchPublic from '../../features/AdvancedSearchPublic';
 import AdvancedSearchCandidate from '../../features/AdvancedSearchCandidate';
-// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdSearch as SearchIcon } from 'react-icons/md';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -37,6 +36,7 @@ export default function Companies() {
       />
       <div 
         className={ !loggedIn && width <= 990 ? 'px-[5%]' 
+// Temp comment
           : !loggedIn ? 'px-[15%]' 
             : ''
         }>
