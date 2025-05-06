@@ -172,7 +172,6 @@ export default function RegistrationForm() {
           <FormInput
             type='single-select'
             name='expertise'
-// Temp comment
             placeholder='Expertise' 
             value={formObj.expertise}
             onChange={handleChange}
@@ -180,6 +179,7 @@ export default function RegistrationForm() {
             error={errors.includes('expertise')}
           />
           <FormInput
+// Temp comment
             type='multi-select'
             name='roles'
             placeholder={`What roles are ${pronoun} interested in?`}

@@ -169,3 +169,4 @@ export class JobController {
           domain: {
             in: companyURLs
           }
+        }

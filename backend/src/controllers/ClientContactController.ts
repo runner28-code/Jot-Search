@@ -3,6 +3,7 @@ import {
   Get,
   Post,
   QueryParam,
+  JsonController,
   Authorized,
 } from "routing-controllers";
 import { FilterBody } from "../types/Common";
@@ -20,3 +21,4 @@ export class ClientContactController {
     try {
       const contact = await db.clientContact.findFirst({
         where: {
+          id,

@@ -38,3 +38,4 @@ CREATE TABLE "Candidate" (
     "gender" TEXT,
     "hourlyRate" TEXT,
     "hourlyRateLow" TEXT,
+    "idOnFile" TEXT,

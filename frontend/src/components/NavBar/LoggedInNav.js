@@ -17,6 +17,7 @@ import {
 } from '../SideNav/utils';
 import { useCandidateContext } from '../../services/CandidateContext';
 
+export default function NavBar() {
   const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {
@@ -41,6 +42,7 @@ function NavBarLayout() {
         <div className='flex items-center font-spaceGrotesk'>
           <div className='mr-8'>
             { renderNavSearch() }
+// Temp comment
           </div>
           {/* Dropdown Menu */}
           <DropdownMenu />

@@ -55,3 +55,4 @@ const sanitizeJob = (job: Job): Job => {
 };
 
 export const getAppliedJobsByUser = async (userId: string) => {
+  try {

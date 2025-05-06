@@ -19,6 +19,7 @@ export default function AddCoordinator() {
       const data = await registerUser(formObjectCopy);
       if (data.result === true) {
         setSubmissionObject({
+          loading: false,
           success: true,
           errors: {},
         });
@@ -141,7 +142,6 @@ export default function AddCoordinator() {
         <input
           type='password'
           className={submissionObject.errors.password ? invalidInputStyles : validInputStyles}
-          name='password'
           placeholder='Password'
           value={formObject.password}
           onChange={handleInputChange}

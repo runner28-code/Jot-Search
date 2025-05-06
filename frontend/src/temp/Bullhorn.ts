@@ -129,3 +129,4 @@ export type ClientContact = {
     dateLastModified?: string;
     dateLastVisit?: string;
     description?: string;
+    desiredCategories?: string;

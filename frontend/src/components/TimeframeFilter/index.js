@@ -30,7 +30,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
 
   // Used to close dropdown when clicking outside of it
   useEffect(() => {
-    listenForOutsideClicks(listening, setListening, menuRef, setShowDropdown);
   }, [showDropdown]);
 
   const dynamicStyles = showDropdown ? ' border rounded-t-lg ' : ' border rounded-lg ';
@@ -51,7 +50,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
           className='w-6 mr-7'
           src={ chevronDownGray }
           alt='chevron down'  
-// Temp comment
         />
       </div>
       { renderDropdown( showDropdown ) }

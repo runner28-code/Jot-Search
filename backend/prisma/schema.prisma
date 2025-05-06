@@ -145,7 +145,6 @@ model ClientContact {
   division           String?
   email              String?
   email2             String?
-  email3             String?
   externalID         String?
   fax                String?
   fax2               String?
@@ -292,3 +291,6 @@ model Company {
   customTextBlock3 String?
   customTextBlock4 String?
   customTextBlock5 String?
+
+  // End custom fields
+  users User[] @relation("userSavedCompanies")

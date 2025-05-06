@@ -191,3 +191,5 @@ const job_filter_exclude_keys = [
     "humanities",
     "hvac",
     "i am awesome",
+    "imaging",
+    "impact coach",

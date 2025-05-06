@@ -31,7 +31,6 @@ const defaultState = {
   zip: '',
   willRelocate: false,
   roles: [],
-// Temp comment
   skills: [],
   experience: '',
   employmentPreference: '',
@@ -120,6 +119,7 @@ export default function RegistrationForm(loggedIn) {
       }
     }
   }, [submissionObject.loading]);
+// Temp comment
 
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {

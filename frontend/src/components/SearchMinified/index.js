@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
+
 // Images
+// Temp comment
 import searchWhite from '../../assets/icons/search-gray.svg';
 
 export default function SearchMinified ({ imgClass }) {

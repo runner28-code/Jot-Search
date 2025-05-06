@@ -162,3 +162,5 @@ export class CandidateController {
           take: count,
           select: {
             id: true,
+            ..._fields
+          },

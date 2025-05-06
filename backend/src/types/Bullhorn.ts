@@ -129,3 +129,4 @@ export type ClientContact = {
     address_country_id?: string;
     category?: string;
     certifications?: string;
+    clientCorporation?: string;

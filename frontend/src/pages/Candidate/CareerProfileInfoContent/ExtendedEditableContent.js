@@ -138,7 +138,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           value={formData.expertise}
           onChange={(_, choice) => setFormData({ ...formData, expertise: choice })}
           choices={categories}
-// Temp comment
           disabled={disabled}
         />
 
@@ -154,7 +153,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           disabled={disabled}
         />
       </>}
-
       <FormInput
         type='single-select'
         name='experience'

@@ -83,6 +83,7 @@ export default function CandidateFilterLayout(props) {
           placeholder='Select all that apply'
           required={true}
           value={filterObject.skills}
+// Temp comment
           onChange={toggleSkills}
           choices={skills}
         />

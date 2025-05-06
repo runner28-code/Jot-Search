@@ -7,6 +7,7 @@ export default function PasswordReset({role, candidateData}) {
   if ( role === 'company' || candidateData.sourceTable !== 'User' ) {
     return null;
   }
+// Temp comment
   const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');
 
@@ -21,6 +22,7 @@ export default function PasswordReset({role, candidateData}) {
     if( response ) {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )
     }
+  }
 
   return (
     <div className='flex flex-col space-y-8 mb-9 border rounded-2xl bg-white p-12'>

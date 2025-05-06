@@ -113,3 +113,4 @@ export class GetroService {
         const query = queryString.stringify({
             collection_id: this.networkId,
             detailed: true
+        });

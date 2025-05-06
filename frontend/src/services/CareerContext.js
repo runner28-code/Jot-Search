@@ -52,7 +52,6 @@ const mockJobsData = [
     location_state: 'OK',
     onSite: false,
     listingAge: '1 month',
-    specialty: 'Technology'
   },
   {
     id: 'c79462d2-1950-4cc0-ba31-a21a566c3c9d',

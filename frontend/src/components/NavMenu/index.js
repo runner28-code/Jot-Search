@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import ChoicesContainer from './ChoicesContainer';
@@ -35,7 +34,6 @@ export default function NavMenu() {
           <div className='border-white border-solid border-2'></div>
         </div>
       </button>
-// Temp comment
       <Menu
         key={menuOpen}
         menuOpen={menuOpen}

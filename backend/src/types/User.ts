@@ -39,3 +39,7 @@ export type User = {
 
   employeeType?: string;
   experience?: string;
+  hourlyRate?: string;
+  willRelocate?: string;
+  willReceiveNotification?: boolean;
+  ethnicity?: string;

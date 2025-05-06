@@ -4,7 +4,6 @@ import FormInput from '../../../components/FormInput';
 import API from '../../../services/API';
 import * as ROUTES from '../../../routes';
 
-export default function ResetForm({ candidateData, setType }) {
   const [formData, setFormData] = useState({
     id: candidateData.id,
     password: '',

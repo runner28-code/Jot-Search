@@ -28,6 +28,7 @@ export default function NavSearch({ placeholder }) {
   const [ searchTerm, setSearchTerm ] = useState('');
   const [forceHidden, setForceHidden] = useState(false);
   const userType = AuthService.getUserRole();
+
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')

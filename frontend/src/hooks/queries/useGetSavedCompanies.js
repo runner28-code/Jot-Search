@@ -1,4 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
+import { queryClient } from '../..';
 import { getSavedCompanies } from '../../services/API';
 
 export const prefetchSavedCompanies = async ({userId, count, page}) => {
@@ -10,5 +11,4 @@ export const useGetSavedCompanies = ({ count, page, userId, enabled = true }) =>
     () => getSavedCompanies(userId, count, page),
     { enabled }
   );
-
   return { savedCompanies: data, total: data?.total || 0, error, isLoading };

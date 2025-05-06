@@ -82,3 +82,5 @@ export class UserController {
     } else {
       return {
         result: false,
+        error: `Invalid user type specified for candidate-only register route: ${user.role}`,
+      }

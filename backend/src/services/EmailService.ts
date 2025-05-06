@@ -46,3 +46,4 @@ export const sendResetPassword = async (to: string, name: string, token: string)
     console.log('Error during sending invitation');
     console.log(error);
     console.log(JSON.stringify(error.response.body));
+    throw error;

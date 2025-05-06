@@ -124,3 +124,5 @@ export const saveBullhornJobs = async (jobs: any[]) => {
           console.log(`Job with ID: ${job.id} exists`);
           return -1;
         }
+        const jobData = { ...job };
+        Object.keys(jobData).forEach((key) => {

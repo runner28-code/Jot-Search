@@ -16,6 +16,7 @@ import PageHeader from '../../components/PageHeader';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import InviteCandidates from './InviteCandidates';
 
+export default function CareerPage() {
   const { width } = useWindowDimensions();
   const location = useLocation();
   const activeData = location.state;
@@ -59,7 +60,6 @@ import InviteCandidates from './InviteCandidates';
     <RenderHeader
       loggedIn={loggedIn}
       role={role}
-      source={source}
     />
     <div 
       className={ width <= 990 ? containerStyles
