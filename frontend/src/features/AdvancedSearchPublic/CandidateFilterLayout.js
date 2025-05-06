@@ -15,6 +15,7 @@ const dropdownFilters = [
   'Category',
   'Experience',
   'Remote Availability',
+  'Employment Type',
 ];
 const checkboxFiltersCoord = [
   'Open to Relocation',
@@ -34,6 +35,7 @@ export default function CandidateFilterLayout(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
+// Temp comment
     clearFilters,
   } = props;
   let userRole = AuthService.getUserRole();

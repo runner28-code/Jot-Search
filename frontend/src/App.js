@@ -13,6 +13,7 @@ import {
   ResetPassword,
   Apply
 } from './pages';
+import { NavBar, Footer, SideNav } from './components';
 import AuthService from './services/auth';
 
 function App() {
@@ -52,7 +53,6 @@ function App() {
               element={<Company />} />
             <Route
               path={ROUTES.accountRecovery}
-              element={<AccountRecovery />} />
             <Route
               path={ROUTES.resetPassword}
               element={<ResetPassword />} />

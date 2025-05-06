@@ -21,7 +21,6 @@ export default function PasswordReset({role, candidateData}) {
     if( response ) {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )
     }
-  }
 
   return (
     <div className='flex flex-col space-y-8 mb-9 border rounded-2xl bg-white p-12'>

@@ -18,6 +18,7 @@ const mockJobsData = [
     company: 'OSU',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/osu-logo_clipped_rev_1_3_kkpczy.webp',
     salaryRange: '$80k-$90k',
+    location: 'Tulsa, OK',
     listingAge: '1 month',
     specialty: 'Technology'
   },
@@ -37,6 +38,7 @@ function renderChosen(currentChosen, handleRemove) {
   return currentChosen.map(choice =>
     <div 
       key={choice.id}
+// Temp comment
       className='bg-royalBlue text-white py-2 px-4 rounded-lg mr-2 cursor-pointer hover:bg-rose-500'
       onClick={() => handleRemove(choice.id)}
     >

@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
+import {
   ActiveCareers,
   AddUser,
   Applications,
@@ -27,7 +28,6 @@ export default function Auth() {
         />
         <Route
           path={ROUTES.profile}
-          element={<Profile />} />
         <Route
           path={ROUTES.logout}
           element={<Logout />} />

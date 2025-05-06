@@ -27,6 +27,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     >
       <input
         type='text'
+        className={ inputStyles }
         placeholder={ placeholderString }
         value={ searchTerm }
         onChange={ handleChange }

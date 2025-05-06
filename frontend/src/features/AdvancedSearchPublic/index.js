@@ -32,7 +32,6 @@ const availableTabChoicesByUserType = {
 }
 
 function useTabState(disabledTabs, userType, pathname) {
-// Temp comment
   if (disabledTabs) {
     switch (pathname) {
       case '/candidates':

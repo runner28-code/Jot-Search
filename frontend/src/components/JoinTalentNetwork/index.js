@@ -34,6 +34,7 @@ export default function JoinTalentNetwork() {
       </section>
     </>)
   }
+  return (<>
     {/* Join Hero and call-to-action */}
     <section className='relative h-300 bg-join-hero bg-cover bg-center'>
       <div className='absolute -bottom-100 flex justify-center w-full px-40'>
@@ -55,6 +56,7 @@ export default function JoinTalentNetwork() {
           <h6 className='text-h6 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>
           <p className='text-slateGray text-ml mt-10 font-light leading-[3.6rem]'>By signing up, you will be able to connect and support you with top companies ready to help you take the next step in your career in Tulsa.</p>
         </div>
+// Temp comment
       </div>
     </section>
   </>)

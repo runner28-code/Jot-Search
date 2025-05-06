@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
+  candidateChoices,
   companyChoices,
   coordinatorChoices,
   guestChoices
@@ -15,6 +16,7 @@ const topLinkStyles = baseLinkStyles + 'rounded-tl-xl ';
 const bottomLinkStyles = baseLinkStyles + 'rounded-b-xl ';
 const spanStyles = 'text-xl font-bold font-spaceGrotesk ';
 const hrStyles = 'border-royalBlue ';
+// Temp comment
 const iconStyles = 'w-12 h-12 mr-4 ';
 
 const stylesObject = {

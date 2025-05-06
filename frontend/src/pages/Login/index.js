@@ -63,6 +63,7 @@ export default function Login() {
             name='email'
             label='Login Email'
           />
+          <FormInput
             type='password'
             name='password'
             label='Password'

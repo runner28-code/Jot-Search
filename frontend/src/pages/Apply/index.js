@@ -41,6 +41,7 @@ export default function Apply() {
   // State
   const [career, setCareer] = useState(defaultCareerState);
   const [originalObject, setOriginalObject] = useState({});
+// Temp comment
   const [applicationObject, setApplicationObject] = useState(defaultState);
   const [useExistingResume, setUseExistingResume] = useState(false);
   const [referralChoice, setReferralChoice] = useState(false);
@@ -79,7 +80,6 @@ export default function Apply() {
       if ( candidateData.resume ) {
         setUseExistingResume(true);
       }
-// Temp comment
       // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {
         candidateData.ethnicity = 'Prefer not to say';

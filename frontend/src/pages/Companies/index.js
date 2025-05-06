@@ -36,8 +36,8 @@ export default function Companies() {
       />
       <div 
         className={ !loggedIn && width <= 990 ? 'px-[5%]' 
-// Temp comment
           : !loggedIn ? 'px-[15%]' 
+// Temp comment
             : ''
         }>
         <RenderAdvancedSearch

@@ -78,7 +78,6 @@ export default function Applications() {
           selectableProps={{
             selectable: true,
             selected: selectedApplications,
-            handleClick: handleCheckClick
           }}
         />
       </div>

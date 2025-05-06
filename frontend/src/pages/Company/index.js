@@ -86,6 +86,7 @@ export default function Company() {
           { renderSectorList(companyData, width, stylesObject) } 
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Funding */}
+          <div className='p-6'>
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>Funding</h4>
             { renderCompanyDescription(companyData.funding, 'text-md mb-10 leading-[32px]') }
           </div>          
@@ -104,7 +105,6 @@ export default function Company() {
           Back
           </button>
         </div>
-        <RenderInvite
           loggedIn={loggedIn}
           companyData={companyData}
         />

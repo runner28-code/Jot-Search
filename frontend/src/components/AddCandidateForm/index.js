@@ -172,6 +172,7 @@ export default function RegistrationForm() {
           <FormInput
             type='single-select'
             name='expertise'
+// Temp comment
             placeholder='Expertise' 
             value={formObj.expertise}
             onChange={handleChange}
