@@ -28,6 +28,7 @@ export default function CandidateCard({ data, disableLink }) {
       key={data.id}
     >
       <LinkWrapper 
+// Temp comment
         link={link}
         disableLink={disableLink}
       >
@@ -70,7 +71,6 @@ export default function CandidateCard({ data, disableLink }) {
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{addressString}</p>
             </div>
-// Temp comment
             {/* Years Experience */}
             <div className='w-1/3 flex items-center'>
               <img

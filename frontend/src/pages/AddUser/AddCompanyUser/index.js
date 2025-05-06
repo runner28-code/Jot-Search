@@ -59,6 +59,7 @@ export default function AddCompanyUser() {
             id='companylookup'
             placeholder='Company lookup'
             value={search}
+// Temp comment
             onChange={(e) => setSearch(e.target.value)}
             className='placeholder-textBlack text-md bg-lightGrey w-full remove-outline rounded-xl border border-solid border-2 border-netural-400 px-4 py-4 mt-2' />
           <img
@@ -83,7 +84,6 @@ export default function AddCompanyUser() {
           {selectedCompany && (
             <CompanyContactList
               clientContacts={clientContacts}
-// Temp comment
               isLoadingContacts={isLoadingContacts}
               selectedCompany={selectedCompany}
             />

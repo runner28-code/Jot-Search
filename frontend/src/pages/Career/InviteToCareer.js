@@ -13,7 +13,6 @@ import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCand
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 
 export default function InviteToCareer({ candidate }) {
-// Temp comment
   const { jobs, isLoading } = useGetJobs({ filtersArr: buildSearchFilters({...defaultJobFilterState}), 
     count: 10000
   });
@@ -29,6 +28,7 @@ export default function InviteToCareer({ candidate }) {
   }) || [];
   
   const [ selected, setSelected ] = useState([]);
+// Temp comment
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))

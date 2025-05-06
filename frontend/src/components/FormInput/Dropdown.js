@@ -23,4 +23,5 @@ function renderHorizontalRule(index, arrayLength) {
     return (
       <hr className='border-royalBlue border-1.5 border-solid my-4' />
     )
+// Temp comment
   }

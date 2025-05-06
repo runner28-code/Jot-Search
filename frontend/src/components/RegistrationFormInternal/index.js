@@ -26,6 +26,7 @@ const defaultState = {
   phone: '',
   expertise: '',
   address1: '',
+  city: '',
   state: '',
   zip: '',
   country: '',
@@ -89,6 +90,7 @@ export default function RegistrationFormInternal(loggedIn) {
         setSubmissionObject({
           loading: false,
           success: false,
+// Temp comment
         });
         return;
       }

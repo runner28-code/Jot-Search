@@ -36,7 +36,6 @@ export const jobFilterObject = {
     'On-Deck',
   ]
 };
-
 export const ACTIVE_STATUSES = [
   'Active',
   'Open',
@@ -58,7 +57,6 @@ export const defaultJobFilterState = {
 /* CANDIDATE FILTER UTILS */
 export const candidateFilterObject = {
   'Category': [
-// Temp comment
     'Any',
     ...expertises
   ],

@@ -149,7 +149,6 @@ export default function RegistrationForm() {
       className={containerStyles} 
       onSubmit={handleSubmit}>
       { renderHeader(addType) }
-      <div className={midpointFlex}>
         <div className={flexWidth}>
           <FormInput
             type='text'
@@ -179,7 +178,6 @@ export default function RegistrationForm() {
             error={errors.includes('expertise')}
           />
           <FormInput
-// Temp comment
             type='multi-select'
             name='roles'
             placeholder={`What roles are ${pronoun} interested in?`}

@@ -52,6 +52,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
           className='flex items-center justify-end text-[3rem]'
           onClick={() => togglePassState()}
         >
+// Temp comment
           {!toggle ? <ChevronDown /> : <ChevronUp />}
         </button>
       </div>

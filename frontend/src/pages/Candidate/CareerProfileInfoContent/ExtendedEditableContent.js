@@ -111,7 +111,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         className='block my-10'
       >
         <p>My Summary</p>
-        {
           editMode ?
             <textarea
               className={`${inputStyles} h-60 w-full`}
@@ -153,6 +152,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
           disabled={disabled}
         />
       </>}
+
       <FormInput
         type='single-select'
         name='experience'

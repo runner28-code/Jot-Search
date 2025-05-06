@@ -10,6 +10,7 @@ export const veteranStatusChoices = Object.values(veteranStatusMap);
 export const disabilityChoices = Object.values(disabilityMap);
 export const jobReferralChoices = [
   'LinkedIn',
+  'Indeed',
   'Google',
   'Friend',
   'Other',
@@ -30,7 +31,6 @@ export const defaultState = {
   phone: '',
   willRelocate: true,
   referral: '',
-  resume: '',
   newResume: {},
   ethnicity: '',
   gender: '',

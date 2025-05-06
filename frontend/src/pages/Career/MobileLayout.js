@@ -110,6 +110,7 @@ export default function MobileLayout(props) {
       { renderSkillsSection(skillList) }
       { renderAboutCompanySection(careerData, role) }
       {/* Apply */}
+// Temp comment
       <div className='flex mt-6'>
         { (role === 'candidate' || role === 'guest') && 
           <ApplyButton
@@ -129,7 +130,6 @@ export default function MobileLayout(props) {
     <OtherCareers
       companyId={careerData.companyId}
       companyName={careerData.clientCorporation}
-// Temp comment
       currentCareerId={careerData.externalId}
     />
   </>)

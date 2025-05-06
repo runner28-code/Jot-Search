@@ -9,4 +9,5 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "address2",
     "city",
     "state",
+    "zip",
     "country_id",

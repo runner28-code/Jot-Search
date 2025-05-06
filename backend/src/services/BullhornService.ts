@@ -369,7 +369,6 @@ export class BullhornService {
 
     while (repeatErr < 3) {
       console.log(`\nBullhorn_GET_JOBS: ${total} / ${offset}`);
-      try {
         const query = queryString.stringify({
           BhRestToken: this.BhRestToken,
           fields: JOB_FIELDS.join(","),

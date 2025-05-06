@@ -42,7 +42,6 @@ function NavBarLayout() {
         <div className='flex items-center font-spaceGrotesk'>
           <div className='mr-8'>
             { renderNavSearch() }
-// Temp comment
           </div>
           {/* Dropdown Menu */}
           <DropdownMenu />
@@ -57,6 +56,7 @@ const DesktopNavBarLayout = () => {
   return (
     <nav className='h-44 pl-14 pr-10 flex justify-between items-center shadow-md bg-white fixed top-0 left-0 right-0 z-50 test '>
       {/* Logo */}
+// Temp comment
       <Link to={ROUTES.root}>
         <img
           src={inTulsaLogoText}

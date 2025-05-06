@@ -15,7 +15,6 @@ const mockJobsData = [
     listingAge: '1 month',
     specialty: 'Technology'
   },
-  {
     id: 'b25cf8b7-e171-4049-8e67-701b7b7b81c3',
     title: 'Software Engineer',
     company: 'Kum N Go',
@@ -52,6 +51,7 @@ const mockJobsData = [
     location_state: 'OK',
     onSite: false,
     listingAge: '1 month',
+    specialty: 'Technology'
   },
   {
     id: 'c79462d2-1950-4cc0-ba31-a21a566c3c9d',

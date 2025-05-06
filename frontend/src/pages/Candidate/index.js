@@ -69,7 +69,6 @@ export default function Candidate() {
     setCandidateData(formatUserObjectForRender);
     let updateResponse = null;
     if (candidateData.sourceTable === 'Candidate') {
-// Temp comment
       const convertedCandidateObject = convertUserToCandidate(updateObject);
       updateResponse = await updateCandidate(convertedCandidateObject, id);
     } else {
@@ -127,6 +126,7 @@ export default function Candidate() {
         </div>
       }
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}
+// Temp comment
       <div className='px-4'>
         <div className='border rounded-2xl bg-white p-15 relative'>
           <CareerProfileInfo

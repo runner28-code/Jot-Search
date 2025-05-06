@@ -3,7 +3,6 @@ import { startCase } from 'lodash';
 import EditSummaryForm from './EditSummaryForm';
 import EditSkillsForm from './EditSkillsForm';
 import EditExpertiseForm from './EditExpertiseForm';
-import EditResumeForm from './EditResumeForm';
 import Property from './Property';
 
 // const SECONDARY_FORM_TYPES = ['comments', 'primarySkills', 'expertise', 'resume'];
@@ -47,7 +46,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
           />
         }
         return (
-// Temp comment
           <div 
             key={key}
             className='flex justify-between items-center w-full mb-4'

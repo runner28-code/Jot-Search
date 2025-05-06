@@ -86,7 +86,6 @@ export default function DesktopLayout(props) {
             <div className='w-1/2 flex items-center pr-4'>
               <img
                 src={salaryIcon}
-// Temp comment
                 className='h-11 mr-5' />
               <p className='text-textBlack'>{salaryString}</p>
             </div>
@@ -120,7 +119,6 @@ export default function DesktopLayout(props) {
   </>)
 }
 
-DesktopLayout.propTypes = {
   data: PropTypes.shape({
     careerData: PropTypes.object.isRequired,
     categoryString: PropTypes.string.isRequired,

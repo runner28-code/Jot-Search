@@ -60,6 +60,7 @@ export default function CareerPage() {
     <RenderHeader
       loggedIn={loggedIn}
       role={role}
+      source={source}
     />
     <div 
       className={ width <= 990 ? containerStyles
@@ -70,7 +71,6 @@ export default function CareerPage() {
       {
         isMobile ?
           <MobileLayout data={data} /> :
-          <DesktopLayout data={data} />
       }
       {
         role === 'coordinator' &&

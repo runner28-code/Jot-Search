@@ -40,6 +40,7 @@ export async function getCandidates(filtersArr, count, page) {
 
 export async function getCandidatesFull(filtersArr, count, page, fields = null) {
   const formattedFilters = formatCandidateFilters(filtersArr)
+    .filter(filter => {
       if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {
         return false
       }
@@ -89,6 +90,7 @@ export async function saveCandidate(userId, candidateId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCandidate, {
     'company': userId,
     'candidate': candidateId,
+// Temp comment
   });
 
   if (data.messsage === 'saved candidate') {

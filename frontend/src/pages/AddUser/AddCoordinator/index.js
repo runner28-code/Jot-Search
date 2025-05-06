@@ -110,7 +110,6 @@ export default function AddCoordinator() {
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.firstname}</p>
       </div>
       <div className={inputContainer}>
-        {/* Last Name */}
         <label className={labelStyles}>Last Name</label>
         <input
           type='text'
@@ -142,6 +141,7 @@ export default function AddCoordinator() {
         <input
           type='password'
           className={submissionObject.errors.password ? invalidInputStyles : validInputStyles}
+          name='password'
           placeholder='Password'
           value={formObject.password}
           onChange={handleInputChange}

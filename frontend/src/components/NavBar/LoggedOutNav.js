@@ -11,6 +11,7 @@ import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function NavBar() {
+  const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {
     return <MobileNavBarLayout />

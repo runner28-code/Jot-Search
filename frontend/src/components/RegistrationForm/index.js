@@ -119,7 +119,6 @@ export default function RegistrationForm(loggedIn) {
       }
     }
   }, [submissionObject.loading]);
-// Temp comment
 
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
@@ -132,7 +131,6 @@ export default function RegistrationForm(loggedIn) {
       }, 2000);
     }
   }, [submissionObject.success])
-
   async function handleSubmit(event) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;

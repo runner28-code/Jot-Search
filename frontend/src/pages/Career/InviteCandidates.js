@@ -12,6 +12,7 @@ export default function InviteCandidates({ job }) {
   const { candidates, isLoading } = useGetCandidates({
     filtersArr: job.skillList?.map(skill => ({
       key: 'primarySkills',
+      value: skill
     })),
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
@@ -28,6 +29,5 @@ export default function InviteCandidates({ job }) {
   }) || [];
 
   const [selected, setSelected] = useState([]);
-  const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
