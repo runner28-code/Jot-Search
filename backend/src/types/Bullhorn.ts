@@ -131,3 +131,4 @@ export type ClientContact = {
     certifications?: string;
     clientCorporation?: string;
     comments?: string;
+    dateAdded?: string;

@@ -28,3 +28,4 @@ export const JobFilter: any = {
     isDeleted: "isDeleted",
     companyId: "companyId",
   },
+};

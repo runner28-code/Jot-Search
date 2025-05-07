@@ -86,6 +86,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     {isSourceUserTable && <div className='flex flex-col mr-12'>
       <img
         className='w-64 h-64 mb-16'
+// Temp comment
         src={avatarUrl}
         alt='Candidate Avatar'
         title={`${formData.firstname} ${formData.lastname}`}

@@ -11,7 +11,6 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import {
   candidateChoices,
   companyChoices,
-  coordinatorChoices,
   guestChoices,
   findSelectedFromPath
 } from '../SideNav/utils';

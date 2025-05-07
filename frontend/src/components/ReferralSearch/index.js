@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// Temp comment
 import TypeaheadDropdown from '../FormInput/TypeaheadDropdown';
 
 const mockJobsData = [

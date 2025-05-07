@@ -33,7 +33,6 @@ async function seedJobs() {
         employmentType: "fulltime",
         onSite: "On-Site",
         description: "Come join our rockstar team for good money and team",
-        datasource: Datasource.main as any,
         status: "active",
         categoryId: (await db.category.findFirst({
           where: { name: "Software & Engineering" },
@@ -74,6 +73,7 @@ async function seedCandidates() {
         description: "Great candidate for everything",
         companyName: "Eddy's Everything",
         companyURL: "eddyseverything.com",
+        firstName: "John",
         lastName: "Smith",
         phone: "123-456-7891",
         email: "jsmithers@gmail.com",
@@ -88,3 +88,4 @@ async function seedCandidates() {
         address_zip: "74008",
         description: "Ehh...",
         companyName: "Nowhere",
+        companyURL: "nowhere.com",

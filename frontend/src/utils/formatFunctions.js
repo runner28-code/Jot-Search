@@ -34,6 +34,7 @@ export function formatCandidateData(candidateData) {
   if ( candidateData.firstName && !candidateData.firstname ) formattedData.firstname = candidateData.firstName;
   if ( candidateData.lastName && !candidateData.lastname ) formattedData.lastname = candidateData.lastName;
   if ( candidateData.firstname && !candidateData.firstName ) formattedData.firstName = candidateData.firstname;
+  if ( candidateData.lastname && !candidateData.lastName ) formattedData.lastName = candidateData.lastname;
 
   return formattedData;
 }

@@ -6,5 +6,4 @@
 
 */
 -- AlterTable
-ALTER TABLE "Job" ADD COLUMN     "durationWeeks" INTEGER,
 ADD COLUMN     "hoursOfOperation" TEXT,

@@ -48,5 +48,6 @@ export default function DesktopHeader(props) {
         >
           {'< Go Back'}
         </button>
+      )}
     </div>
   )

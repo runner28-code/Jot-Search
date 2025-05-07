@@ -11,3 +11,4 @@ export class BullhornController {
 
   // @Authorized()
   @Get('/bullhorn/jobs')
+  async getJobs() {

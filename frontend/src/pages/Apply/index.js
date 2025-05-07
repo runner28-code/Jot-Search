@@ -44,6 +44,7 @@ export default function Apply() {
   const [applicationObject, setApplicationObject] = useState(defaultState);
   const [useExistingResume, setUseExistingResume] = useState(false);
   const [referralChoice, setReferralChoice] = useState(false);
+// Temp comment
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,

@@ -96,9 +96,12 @@ module.exports = {
         'm': '16px',
         'l': '20px',
         'xl': '24px',
+        'xxl': '28px',
         'xxl-2': '32px',
         'xxl-3': '36px',
         'xxl-4': '40px',
         // General Spacing
         '3.5%': '3.5%',
         '5%': '5%',
+        '9%': '9%',
+        '10%': '10%',

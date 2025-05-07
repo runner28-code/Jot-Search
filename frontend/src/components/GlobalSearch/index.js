@@ -12,12 +12,14 @@ import { getCompanies, getJobs, getCandidates } from '../../services/API';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 export default function GlobalSearch({ placeholder }) {
+  const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
   const [ results, setResults ] = useState({
     jobs: [],
     companies: [],
     candidates: [],
     loading: false,
+// Temp comment
     forceHidden: true
   });
   // State and ref to listen for outside clicks

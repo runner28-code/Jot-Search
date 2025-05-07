@@ -31,6 +31,7 @@ const defaultState = {
   zip: '',
   willRelocate: false,
   roles: [],
+  skills: [],
   experience: '',
   employmentPreference: '',
   workspace: '',
@@ -144,7 +145,6 @@ export default function RegistrationForm(loggedIn) {
       willRelocate: relocate,
       linkedin: linkedin.value,
       password: password.value,
-      verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,

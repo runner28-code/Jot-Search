@@ -107,6 +107,7 @@ export default function Candidate() {
         <div className='px-4'>
           <div className='border rounded-2xl bg-white p-12'>
             <h3 className={ width >= 990 ? 'text-h5 font-medium mb-15 text-black70% font-spaceGrotesk' : 'text-[2.5rem] font-medium mb-15 text-black70% font-spaceGrotesk'}>My Preferences</h3>
+// Temp comment
             <PreferenceItem
               toggled={!!candidateData.activelyLooking}
               fieldName='activelyLooking'

@@ -31,6 +31,7 @@ export default function CareerCard({ data, active }) {
     role
   };
 
+  return (
     <div
       className='relative w-full'
       key={data.id}

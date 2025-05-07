@@ -125,8 +125,10 @@ export type ClientContact = {
     certifications?: string;
     clientCorporation?: string;
     comments?: string;
+    dateAdded?: string;
     dateLastModified?: string;
     dateLastVisit?: string;
     description?: string;
     desiredCategories?: string;
     desiredSkills?: string;
+    desiredSpecialties?: string;

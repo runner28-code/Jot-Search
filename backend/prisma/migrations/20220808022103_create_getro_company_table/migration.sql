@@ -9,3 +9,4 @@ CREATE TABLE "GetroCompany" (
     "founded" TEXT,
     "id" TEXT NOT NULL,
     "instagram_url" TEXT,
+    "jobs_count" INTEGER,

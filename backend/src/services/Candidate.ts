@@ -38,3 +38,4 @@ export const saveCandidate = async (
         },
         data: {
           savedCandidates: {
+            disconnect: {

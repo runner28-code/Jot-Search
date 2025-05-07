@@ -15,10 +15,8 @@ export const veteranStatusMap = {
   O: 'I am obligated to serve in the uniformed service',
   D: 'I am a veteran with a disability',
   N: 'None of the above'
-};
 
 export const genderMap = {
-// Temp comment
   U: 'Prefer not to say',
   M: 'Male',
   F: 'Female',

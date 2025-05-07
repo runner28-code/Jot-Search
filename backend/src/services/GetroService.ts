@@ -115,3 +115,4 @@ export class GetroService {
             detailed: true
         });
         const url = `${this.api_base_url_v1}/organizations/${slug}?${query}`;
+

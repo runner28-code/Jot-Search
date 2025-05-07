@@ -10,7 +10,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
 
   const menuRef = useRef(null);
 
-  function handleChoiceClick(choice) {
     setShowDropdown(false);
     handleFilterChange(choice);
   }
@@ -19,6 +18,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     if ( !showDropdown ) {
       return null
     }
+  
     return (
       <Dropdown 
         choices={choices} 

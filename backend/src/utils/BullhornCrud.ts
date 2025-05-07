@@ -127,3 +127,5 @@ export const saveBullhornJobs = async (jobs: any[]) => {
         const jobData = { ...job };
         Object.keys(jobData).forEach((key) => {
           if (excludeFields.includes(key)) {
+            delete jobData[key];
+          }

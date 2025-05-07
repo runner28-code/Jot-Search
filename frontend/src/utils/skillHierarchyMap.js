@@ -34,7 +34,6 @@ export const roles = {
     'Recruiting',
     'People Operations',
     'Human Resources',
-    'IT',
     'Entrepreneurship'
   ],
   'Other': [
@@ -157,3 +156,5 @@ export const skills = [
   'Customer Success',
   'Customer Support',
   'Cyber',
+  'Cyber Security',
+  'Data Analytics',

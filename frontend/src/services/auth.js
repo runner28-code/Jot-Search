@@ -134,4 +134,5 @@ class AuthService {
 
   getSavedCandidateIDs() {
     return JSON.parse(localStorage.getItem('savedCandidates')) || [];
+// Temp comment
   }

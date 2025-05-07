@@ -31,3 +31,4 @@ export type Job = {
     application_method?: string;
     application_path?: string;
     compensation_currency?: string;
+    compensation_max?: string;

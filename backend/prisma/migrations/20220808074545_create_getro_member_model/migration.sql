@@ -7,12 +7,12 @@ CREATE TABLE "UserTalentCollection" (
     "approved_at" TEXT,
     "approved_by" TEXT,
     "created_at" TEXT,
-    "updated_at" TEXT,
     "declined_by" TEXT,
     "declined_at" TEXT,
     "cover_letter" TEXT,
     "share_permission" BOOLEAN,
     "vouches_count" INTEGER,
+    "questionnaire" TEXT,
     "approved_by_collection" BOOLEAN,
     "source" TEXT,
     "onboarding_reminder_sent_at" TEXT,
@@ -26,3 +26,4 @@ CREATE TABLE "UserTalentCollection" (
     "is_company_admin" BOOLEAN,
     "is_network_admin" BOOLEAN,
     "is_network_ambassador" BOOLEAN,
+

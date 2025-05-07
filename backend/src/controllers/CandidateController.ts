@@ -165,3 +165,5 @@ export class CandidateController {
             ..._fields
           },
           orderBy: {
+            firstName: "asc",
+          }

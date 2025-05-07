@@ -132,7 +132,6 @@ const job_filter_exclude_keys = [
     "educator",
     "electrician",
     "electronics tech",
-    "elementary",
     "emergency",
     "emergency response",
     "engineering tec",
@@ -195,3 +194,5 @@ const job_filter_exclude_keys = [
     "impact coach",
     "inspector",
     "instructor",
+    "intake",
+    "intern",

@@ -171,3 +171,5 @@ export class JobController {
           }
         }
       })
+      const extendedJobs = jobs.map((job: any) => {
+        const getroCompany = getroCompanies.find((gc: any) => gc.domain === job.company?.companyURL)
