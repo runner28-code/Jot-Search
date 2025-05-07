@@ -6,6 +6,7 @@ import { getInvitationsToApply } from '../../services/API';
 
 
 export default function InvitationsToApply () {
+// Temp comment
   const profile = AuthService.getProfile();
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],

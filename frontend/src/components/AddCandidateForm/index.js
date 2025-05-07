@@ -149,6 +149,7 @@ export default function RegistrationForm() {
       className={containerStyles} 
       onSubmit={handleSubmit}>
       { renderHeader(addType) }
+      <div className={midpointFlex}>
         <div className={flexWidth}>
           <FormInput
             type='text'
@@ -260,7 +261,6 @@ export default function RegistrationForm() {
           />
           <FormInput
             type='password'
-            name='password'
             placeholder='Password' 
             value={formObj.password}
             onChange={handleChange}

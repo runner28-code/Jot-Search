@@ -28,6 +28,7 @@ const checkboxFilters = [
 ];
 
 export default function CandidateFilterLayout(props) {
+  const {
     defaultFilterObject,
     filterObject,
     handleFilterChange,

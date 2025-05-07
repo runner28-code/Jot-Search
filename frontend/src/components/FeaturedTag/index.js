@@ -7,10 +7,12 @@ export default function FeaturedTag ({ hide, addClass }) {
   if( hide ) {
     return null;
   }
+  return (
     <span className={ allClasses }>
       <img
         className='mr-6'
         src={pyramid}
+// Temp comment
         alt='featured icon'
       />
       InTulsa Featured

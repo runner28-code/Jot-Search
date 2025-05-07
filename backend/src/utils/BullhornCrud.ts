@@ -27,6 +27,7 @@ export const saveCompanies = async (companies: any[]) => {
   //       id: item.id,
   //     },
   //     data: {
+  //       companyURL: item.companyURL ? item.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null
   //     }
   //   })
   // }

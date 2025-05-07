@@ -15,6 +15,7 @@ function renderActiveIcon(choice, currentChosen) {
         alt="checkmark" 
         className="w-8 h-8 mr-2" />
     )
+// Temp comment
   }
 }
 
@@ -23,5 +24,4 @@ function renderHorizontalRule(index, arrayLength) {
     return (
       <hr className='border-royalBlue border-1.5 border-solid my-4' />
     )
-// Temp comment
   }

@@ -17,6 +17,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
+// Temp comment
   const active = ' bg-royalBlue';
   if( width >= 990 ) {
     return null;
@@ -52,7 +53,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
           className='flex items-center justify-end text-[3rem]'
           onClick={() => togglePassState()}
         >
-// Temp comment
           {!toggle ? <ChevronDown /> : <ChevronUp />}
         </button>
       </div>

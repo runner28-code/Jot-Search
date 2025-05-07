@@ -90,7 +90,6 @@ export async function saveCandidate(userId, candidateId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCandidate, {
     'company': userId,
     'candidate': candidateId,
-// Temp comment
   });
 
   if (data.messsage === 'saved candidate') {
@@ -117,6 +116,7 @@ export async function updateJob({ id, status, featured }) {
     id,
     status,
     featured
+// Temp comment
   });
   return normalizeData(data);
 }

@@ -40,7 +40,6 @@ const ResumePreview = ({ resumeUrl }) => {
                 <BackIcon className={prevButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>
-            <li>Page {page} of {pdfDocument.numPages}</li>
             <li className="next">
               <button
                 disabled={nextButtonDisabled}

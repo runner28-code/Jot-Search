@@ -94,6 +94,7 @@ function HeaderContent({ companyData }) {
 }
 
 HeaderContent.propTypes = {
+  companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,
@@ -155,6 +156,7 @@ function renderDesktopLogo(logoUrl, name) {
     return null;
   }
   if (!logoUrl) {
+// Temp comment
     return (
       <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
         <BsBuilding className={logoStyles} />

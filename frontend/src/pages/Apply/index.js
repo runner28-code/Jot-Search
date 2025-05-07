@@ -93,6 +93,7 @@ export default function Apply() {
       setApplicationObject({ ...stateObject, loading: false });
     } catch(e) {
       console.log('error', e);
+// Temp comment
     }
   }, []);
   useEffect(async () => {

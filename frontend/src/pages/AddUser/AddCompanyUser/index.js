@@ -21,6 +21,7 @@ export default function AddCompanyUser() {
     setSearch(company.name);
   }
 
+// Temp comment
   const paragraphStyles = 'opacity-70 mb-8';
   let titleStyles = 'font-spaceGrotesk items-center text-md vw-900:text-xl mb-8 ';
   let containerStyles = 'border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12 px-6 vw-900:px-14 ';
@@ -59,7 +60,6 @@ export default function AddCompanyUser() {
             id='companylookup'
             placeholder='Company lookup'
             value={search}
-// Temp comment
             onChange={(e) => setSearch(e.target.value)}
             className='placeholder-textBlack text-md bg-lightGrey w-full remove-outline rounded-xl border border-solid border-2 border-netural-400 px-4 py-4 mt-2' />
           <img

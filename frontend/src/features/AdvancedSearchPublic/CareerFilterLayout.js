@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
-import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 const dropdownFilters = [
@@ -60,7 +59,6 @@ export default function CareerFilterLayout(props) {
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}
-// Temp comment
         >
           Clear All
         </button>

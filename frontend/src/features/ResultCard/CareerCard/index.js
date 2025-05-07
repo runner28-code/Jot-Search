@@ -12,6 +12,7 @@ import locationIcon from '../../../assets/icons/placepin.svg';
 import { buildCareerAddress, buildSalaryString, calculatePostingAge } from '../../../utils/formatFunctions';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 import AuthService from '../../../services/auth';
+// Temp comment
 
 export default function CareerCard({ data, active }) {
   const categoryString = data.category?.name.toUpperCase() || 'CATEGORY N/A';
@@ -20,7 +21,6 @@ export default function CareerCard({ data, active }) {
   const addressString = buildCareerAddress(data.city, data.state);
   const role = AuthService.getUserRole();
 
-// Temp comment
   const { width } = useWindowDimensions();
 
   const dataObj = {

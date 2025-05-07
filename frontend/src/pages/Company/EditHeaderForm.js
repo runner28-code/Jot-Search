@@ -191,7 +191,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 name='zip'
                 value={formData.zip}
                 className={inputStyles + 'ml-10 text-h6'} />
-            </div>
           </div>
         </div>
         {/* Phone */}

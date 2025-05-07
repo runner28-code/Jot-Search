@@ -36,6 +36,7 @@ export const jobFilterObject = {
     'On-Deck',
   ]
 };
+
 export const ACTIVE_STATUSES = [
   'Active',
   'Open',
