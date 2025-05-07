@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-// Temp comment
 import PropTypes from 'prop-types';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import urlDecode from '../../utils/urlDecode';
@@ -17,6 +16,7 @@ export default function JobResults({ jobs }) {
         return (
           <JobResult 
             job={job} 
+// Temp comment
             key={job.id} />
         )
       })}

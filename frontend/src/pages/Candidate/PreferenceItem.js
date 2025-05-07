@@ -20,4 +20,3 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
         </label>
       </div>
     </div>
-  )

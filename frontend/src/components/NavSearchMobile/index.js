@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
@@ -39,6 +38,7 @@ export default function NavSearchMobile({ placeholder }) {
         lastname: splitName?.[1]
       }
       delete modifiedFilterObject.title;
+
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
     }

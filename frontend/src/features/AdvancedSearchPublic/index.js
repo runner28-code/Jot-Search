@@ -51,6 +51,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
   const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
+// Temp comment
   if (state) {
     if (state.title) initialFilterState.title = state.title;
     if (state.expertise) initialFilterState.Expertise = state.expertise;

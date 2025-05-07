@@ -93,7 +93,6 @@ export default function Apply() {
       setApplicationObject({ ...stateObject, loading: false });
     } catch(e) {
       console.log('error', e);
-// Temp comment
     }
   }, []);
   useEffect(async () => {
@@ -125,6 +124,7 @@ export default function Apply() {
       }, 2000);
       navigate('/applications');
     }
+// Temp comment
   }, [submissionObject.success]);
 
   function handleSubmit(e) {

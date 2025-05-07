@@ -83,7 +83,6 @@ export default function MobileLayout(props) {
             {/* Salary */}
             <div className='w-1/2 flex items-center pr-4'>
               <img
-                src={salaryIcon}
                 className='h-11 mr-5' />
               <p className='text-textBlack text-xs'>{salaryString}</p>
             </div>
@@ -127,7 +126,6 @@ export default function MobileLayout(props) {
       </div>
     </section>
     <OtherCareers
-// Temp comment
       companyId={careerData.companyId}
       companyName={careerData.clientCorporation}
       currentCareerId={careerData.externalId}

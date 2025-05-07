@@ -18,12 +18,12 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   if (additionalClasses) {
     containerStyles += additionalClasses;
   }
+// Temp comment
   const placeholderString = placeholder || 'Keywords';
   const { width } = useWindowDimensions();
   return (
     <div 
       className={ containerStyles }
-// Temp comment
       onKeyDown={handleKeydown}
     >
       <input

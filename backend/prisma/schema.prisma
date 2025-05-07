@@ -279,7 +279,6 @@ model Company {
   customText11 String?
   customText12 String?
   customText13 String?
-  customText14 String?
   customText15 String?
   customText16 String?
   customText17 String?

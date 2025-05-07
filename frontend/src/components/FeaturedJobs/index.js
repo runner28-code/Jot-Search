@@ -71,4 +71,5 @@ export default function FeaturedJobs() {
           View all
         </Link>
       </div>
+    </section>
   )

@@ -77,7 +77,6 @@ export default function RegistrationFormInternal(loggedIn) {
         setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({
           loading: false,
-// Temp comment
           success: false,
         });
         return;
@@ -114,6 +113,7 @@ export default function RegistrationFormInternal(loggedIn) {
       } else {
         console.log('Error: ', result);
         setErrorBlock(result);
+// Temp comment
         setSubmissionObject({
           loading: false,
           success: false,

@@ -10,7 +10,6 @@ export default function TypeaheadDropdown(props) {
     dropdownType, 
     disabled,
     name, 
-// Temp comment
     label,
     required,
     placeholder, 
@@ -37,6 +36,7 @@ export default function TypeaheadDropdown(props) {
   /* Close dropdown on any outside clicks */
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
+// Temp comment
     if (!dropdownOpen) setInputValue('');
   }, [dropdownOpen]);
   

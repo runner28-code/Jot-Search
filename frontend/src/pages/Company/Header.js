@@ -149,6 +149,7 @@ function renderCompanyLogo(logoUrl, name) {
   )
 }
 
+// Temp comment
 function renderDesktopLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'object-contain w-full h-full';
@@ -156,7 +157,6 @@ function renderDesktopLogo(logoUrl, name) {
     return null;
   }
   if (!logoUrl) {
-// Temp comment
     return (
       <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
         <BsBuilding className={logoStyles} />

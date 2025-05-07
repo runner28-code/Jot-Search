@@ -7,7 +7,6 @@ on:
 
 env:
   AWS_REGION: 'us-east-1'
-  ECR_REPOSITORY: 'site-frontend'
   ECS_SERVICE: 'intulsa-frontend-service-prod'
   ECS_CLUSTER: 'intulsa-cluster-prod'
   ECS_TASK_DEFINITION: '.github/workflows/prod_task_definition.json'

@@ -11,7 +11,6 @@ export default function Filters(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
-// Temp comment
     marginBottom
   } = props;
 
@@ -24,6 +23,5 @@ export default function Filters(props) {
       <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}
       </div>
-      {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
     </div>
   )

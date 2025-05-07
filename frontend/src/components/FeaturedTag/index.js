@@ -12,7 +12,6 @@ export default function FeaturedTag ({ hide, addClass }) {
       <img
         className='mr-6'
         src={pyramid}
-// Temp comment
         alt='featured icon'
       />
       InTulsa Featured

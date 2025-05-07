@@ -47,7 +47,6 @@ export type FilterOption = {
 export type AdvancedFilterOption = {
   key: string;
   value: string | string[];
-  operator?: Operator;
 };
 
 export type FilterBody = {
