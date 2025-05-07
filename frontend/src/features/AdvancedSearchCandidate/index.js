@@ -53,6 +53,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
   const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
+  if (state) {
     if (state.title) initialFilterState.title = state.title;
     if (state.expertise) initialFilterState.Expertise = state.expertise;
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
@@ -79,3 +80,35 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
     }
+  };
+
+  const { jobs, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'jobs' });
+  const { companies, total: totalCompanies, isLoading: isLoadingCompanies } = useGetCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'companies' });
+  const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'candidates' });
+
+  /* CLEAR SEARCH TERM ON TAB SWITCH */
+  const isMount = useIsMount();
+  useEffect(() => {
+    if (isMount) {
+      return;
+    }
+    setFilterObject({ ...filterObject, title: '' });
+    setPage(1);
+  }, [activeTab]);
+
+  useEffect(() => {
+    const newState = { ...initialFilterState, ...state };
+    if (state) {
+      newState.title = state.title || '';
+      newState.Expertise = state.Expertise || 'Any';
+      newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
+    }
+    setFilterObject(newState);
+  }, [state]);
+
+  function handleFilterChange(filterType, choice) {
+    setFilterObject({
+      ...filterObject,
+      [filterType]: choice
+    });
+    setPage(1);

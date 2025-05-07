@@ -27,6 +27,7 @@ const mockCandidateData = [
     linkedin_url: 'https://www.linkedin.com/',
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lee_5_swk4qj.webp', // Missing from Bullhorn Schema
     occupation: 'Owner / President',
+    companyName: 'Aerovision',
     address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
@@ -111,7 +112,6 @@ const CandidateProvider = ({children}) => {
     }
   }, []);
 
-  const handleCandidatesChange = (value) => {
     setCandidates(value);
   }
 

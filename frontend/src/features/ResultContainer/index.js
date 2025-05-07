@@ -11,7 +11,6 @@ import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 export default function ResultContainer(props) {
   const {
     results,
-    loading,
     type,
     limit,
     header, 
@@ -43,7 +42,6 @@ export default function ResultContainer(props) {
     const capitalizedType = pluralizedType.charAt(0).toUpperCase() + pluralizedType.slice(1);
 
     return <ViewAllLink
-// Temp comment
       href={`/${pluralizedType}`}
       text={`View All ${capitalizedType}`}
     />;

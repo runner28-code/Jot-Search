@@ -390,3 +390,6 @@ export class BullhornService {
         if (res.status === 200) {
           const { data } = res.data;
           total = res.data.total;
+          this.saveJobFunc(data);
+          if (total <= offset) break;
+          offset += count;

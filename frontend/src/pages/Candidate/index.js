@@ -33,7 +33,6 @@ export default function Candidate() {
   const isProfilePage = path === '/profile';
   if (role === 'candidate' && !isProfilePage) {
     return <Navigate to='/' />
-// Temp comment
   }
 
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;

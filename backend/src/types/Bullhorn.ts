@@ -130,3 +130,4 @@ export type ClientContact = {
     category?: string;
     certifications?: string;
     clientCorporation?: string;
+    comments?: string;

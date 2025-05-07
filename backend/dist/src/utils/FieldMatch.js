@@ -11,6 +11,7 @@ exports.JobFilter = {
         onSite: "onSite",
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
+// Temp comment
         status: "status",
         hidden: "hidden",
         companyId: "clientCorporationID",
@@ -22,7 +23,6 @@ exports.JobFilter = {
         hidden: "hidden",
         employmentType: "employmentType",
         onSite: "onSite",
-// Temp comment
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
         city: "city",

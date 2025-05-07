@@ -8,7 +8,6 @@ import {
   Career,
   Careers,
   Company,
-  Companies,
   AccountRecovery,
   ResetPassword,
   Apply
@@ -60,7 +59,6 @@ function App() {
             <Route
               path={ROUTES.root + '*'}
               element={<Auth />} />
-// Temp comment
             <Route
               path="*"
               element={<Navigate to={ROUTES.landingPage} />}

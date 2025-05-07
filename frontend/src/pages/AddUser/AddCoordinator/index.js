@@ -126,7 +126,6 @@ export default function AddCoordinator() {
         {/* Email */}
         <label className={labelStyles}>Email</label>
         <input
-          type='text'
           className={submissionObject.errors.email ? invalidInputStyles : validInputStyles}
           name='email'
           placeholder='Email'

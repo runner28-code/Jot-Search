@@ -69,6 +69,7 @@ export const saveCompanies = async (companies: any[]) => {
           }
         });
 
+        companyData.companyURL = companyData.companyURL ? companyData.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null;
 
         const newCompany = await db.company.create({
           data: companyData,
@@ -125,3 +126,4 @@ export const saveBullhornJobs = async (jobs: any[]) => {
         }
         const jobData = { ...job };
         Object.keys(jobData).forEach((key) => {
+          if (excludeFields.includes(key)) {

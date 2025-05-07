@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 
 // import FeaturedTag from '../../components/FeaturedTag';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -64,7 +65,6 @@ HeaderContent.propTypes = {
   companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-// Temp comment
     logo: PropTypes.string,
     businessSectorList: PropTypes.string,
     linkedin_url: PropTypes.string,

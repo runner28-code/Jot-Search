@@ -141,3 +141,4 @@ export class CompanyController {
       return {
         company: company,
         result: true,
+      };

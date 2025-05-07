@@ -29,14 +29,12 @@ export default function TypeaheadDropdown(props) {
     if (!currentChosen.includes(choice)) {
       onChange(name, [...currentChosen, choice]);
     } else {
-      onChange(name, currentChosen.filter(item => item !== choice));
     }
   }, [onChange])
 
   /* Close dropdown on any outside clicks */
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
-// Temp comment
     if (!dropdownOpen) setInputValue('');
   }, [dropdownOpen]);
   

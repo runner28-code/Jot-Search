@@ -28,7 +28,6 @@ export const DATASET_BULLHORN = config.bullhornDatasetID || "";
 export const DATASET_GETRO = config.getroDatasetID || "";
 export const DATASET_MAIN = config.mainDatasetID || "";
 
-// Common
 export enum DataSource {
   BULLHORN = "bullhorn",
   GETRO = "getro",
@@ -47,9 +46,11 @@ export type FilterOption = {
 export type AdvancedFilterOption = {
   key: string;
   value: string | string[];
+  operator?: Operator;
 };
 
 export type FilterBody = {
   filters?: any;
   fields: any;
   page: number;
+  count: number;

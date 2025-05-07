@@ -1,3 +1,4 @@
+// Temp comment
 import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
 import PropTypes from 'prop-types';
@@ -29,6 +30,7 @@ const ResumePreview = ({ resumeUrl }) => {
         ref={canvasRef}
         className='rounded-lg'
       />
+      {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>
           <ul className="flex justify-between">
             <li className="previous">

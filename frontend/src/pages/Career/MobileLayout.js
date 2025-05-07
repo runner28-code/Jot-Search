@@ -83,12 +83,14 @@ export default function MobileLayout(props) {
             {/* Salary */}
             <div className='w-1/2 flex items-center pr-4'>
               <img
+                src={salaryIcon}
                 className='h-11 mr-5' />
               <p className='text-textBlack text-xs'>{salaryString}</p>
             </div>
           </div>
         </div>
 
+// Temp comment
         {/* Coordinator Status */}
         {
           role === 'coordinator' && (

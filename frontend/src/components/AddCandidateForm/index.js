@@ -129,6 +129,7 @@ export default function RegistrationForm() {
       [name]: value,
     });
   }
+
   // Alter header and pronoun based on who is registering the new user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
   const pronoun = addType === 'candidate' ? 'you' : 'they';
@@ -173,7 +174,6 @@ export default function RegistrationForm() {
             name='expertise'
             placeholder='Expertise' 
             value={formObj.expertise}
-            onChange={handleChange}
             choices={categories}
             error={errors.includes('expertise')}
           />
