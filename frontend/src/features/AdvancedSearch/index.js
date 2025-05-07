@@ -24,6 +24,7 @@ import { useLocation } from 'react-router-dom';
 
 const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
+// Temp comment
 
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'careers', 'companies'],
@@ -38,7 +39,6 @@ function useTabState(disabledTabs, userType, pathname) {
       case '/candidates':
         return useState('candidates');
       case '/companies':
-// Temp comment
         return useState('companies');
       case '/careers':
       default:

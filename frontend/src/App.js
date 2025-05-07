@@ -8,6 +8,7 @@ import {
   Career,
   Careers,
   Company,
+  Companies,
   AccountRecovery,
   ResetPassword,
   Apply

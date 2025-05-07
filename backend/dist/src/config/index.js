@@ -6,5 +6,4 @@ const config = {
     projectId: process.env.PROJECT_ID,
     authSecret: process.env.AUTH_SECRET,
     fileUploadSize: process.env.FILE_UPLOAD_SIZE,
-// Temp comment
     getroEmail: process.env.GETRO_EMAIL,

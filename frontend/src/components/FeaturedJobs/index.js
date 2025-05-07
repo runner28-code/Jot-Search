@@ -62,6 +62,7 @@ export default function FeaturedJobs() {
                 </Link>
               )
             })
+        }
       </div>
       <div className={ width >= 990 ? viewAllStyles : viewAllStylesMobile }>
         <Link

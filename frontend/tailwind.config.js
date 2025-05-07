@@ -49,6 +49,7 @@ module.exports = {
         charcoal: '#3C3C4B',
         // Utility
         searchGreen: '#62CA71',
+        success: '#2EA248',
         error: '#DE5454',
         warning: '#F4D12E',
         disabledGrey: '#C9C9CE',
@@ -95,7 +96,6 @@ module.exports = {
         'm': '16px',
         'l': '20px',
         'xl': '24px',
-        'xxl': '28px',
         'xxl-2': '32px',
         'xxl-3': '36px',
         'xxl-4': '40px',

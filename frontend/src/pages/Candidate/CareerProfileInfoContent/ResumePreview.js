@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
 import PropTypes from 'prop-types';
@@ -23,6 +22,7 @@ const ResumePreview = ({ resumeUrl }) => {
   const prevButtonDisabled = page === 1;
   const nextButtonDisabled = page === pdfDocument?.numPages;
 
+// Temp comment
   return (
     <div className='border border-grey300 border-2 rounded-lg'>
       {!pdfDocument && <LoadingSpinner />}

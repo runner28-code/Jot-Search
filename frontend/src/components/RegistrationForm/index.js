@@ -15,7 +15,6 @@ import {
   formatFormObj,
   renderButtonOrLoading,
   renderErrorBlock,
-// Temp comment
   renderHeader
 } from './utils';
 import * as ROUTES from '../../routes';
@@ -32,7 +31,6 @@ const defaultState = {
   zip: '',
   willRelocate: false,
   roles: [],
-  skills: [],
   experience: '',
   employmentPreference: '',
   workspace: '',

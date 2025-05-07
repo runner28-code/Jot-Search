@@ -113,7 +113,6 @@ export default function AddCoordinator() {
         {/* Last Name */}
         <label className={labelStyles}>Last Name</label>
         <input
-          type='text'
           className={submissionObject.errors.lastname ? invalidInputStyles : validInputStyles += addInputStyles}
           name='lastname'
           placeholder='Last Name'
@@ -126,6 +125,7 @@ export default function AddCoordinator() {
         {/* Email */}
         <label className={labelStyles}>Email</label>
         <input
+          type='text'
           className={submissionObject.errors.email ? invalidInputStyles : validInputStyles}
           name='email'
           placeholder='Email'

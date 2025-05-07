@@ -5,6 +5,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function JoinTalentNetwork() {
 
+// Temp comment
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {
@@ -56,7 +57,6 @@ export default function JoinTalentNetwork() {
           <h6 className='text-h6 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>
           <p className='text-slateGray text-ml mt-10 font-light leading-[3.6rem]'>By signing up, you will be able to connect and support you with top companies ready to help you take the next step in your career in Tulsa.</p>
         </div>
-// Temp comment
       </div>
     </section>
   </>)

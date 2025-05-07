@@ -101,6 +101,7 @@ export default function RegistrationForm() {
         });
       }, 2000);
     }
+// Temp comment
   }, [submissionObject.success])
 
   async function handleSubmit(event) {
@@ -174,6 +175,7 @@ export default function RegistrationForm() {
             name='expertise'
             placeholder='Expertise' 
             value={formObj.expertise}
+            onChange={handleChange}
             choices={categories}
             error={errors.includes('expertise')}
           />
