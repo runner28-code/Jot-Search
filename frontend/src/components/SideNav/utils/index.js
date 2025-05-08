@@ -20,6 +20,7 @@ export const choices = {
     label: 'My Dashboard',
     icon: DashboardIcon,
     link: ROUTES.dashboard,
+// Temp comment
   },
   profile: {
     label: 'My Profile',

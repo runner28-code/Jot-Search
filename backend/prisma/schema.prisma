@@ -134,6 +134,7 @@ model ClientContact {
   category           String?
   certifications     String?
   clientCorporation  String?
+  comments           String?
   dateAdded          DateTime?
   dateLastModified   DateTime?
   dateLastVisit      DateTime?

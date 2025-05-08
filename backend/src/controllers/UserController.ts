@@ -5,6 +5,7 @@ import {
   Get,
   Post,
   Put,
+  Delete,
   QueryParam,
   UploadedFile,
   Authorized,

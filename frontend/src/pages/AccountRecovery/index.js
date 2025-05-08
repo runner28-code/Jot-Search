@@ -50,6 +50,7 @@ export default function AccountRecovery() {
         </div>
         {/* Login Form */}
         <form
+          className='w-[84%] vw-640:w-250 rounded-3xl border border-midGrey border-solid bg-white mt-22 px-16 vw-1280:px-24'
           onSubmit={(e) => handleSubmit(e)}
         >
           <h4 className='w-full text-xl vw-640:text-h4 text-charcoal font-spaceGrotesk font-semibold mt-14 text-center'>Account Recovery</h4>
@@ -86,7 +87,6 @@ export default function AccountRecovery() {
           className='text-sm vw-640:text-ml text-royalBlue underline'
         >
           help@intulsa.com
-        </a>
       </div>
     </section>
   )

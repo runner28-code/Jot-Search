@@ -22,6 +22,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
 
   const item_id = getIdByType(type, data);
   const savedItems = getItemsByType(type);
+// Temp comment
   const isSaved = savedItems.includes(item_id);
   const { user_id } = AuthService.getProfile();
   const [isFavorite, setIsFavorite] = useState(isFavoriteOverride ?? isSaved);

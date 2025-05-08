@@ -47,7 +47,6 @@ export default function ResultContainer(props) {
       text={`View All ${capitalizedType}`}
     />;
   }
-// Temp comment
 
   return (
     <div className='w-full'>

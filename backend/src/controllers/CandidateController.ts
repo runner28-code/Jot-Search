@@ -51,6 +51,7 @@ export class CandidateController {
       if (user) {
         const {
           password,
+          candidate: userCandidate,
           ...returnableUserData
         } = user;
         candidate = {

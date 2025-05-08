@@ -83,5 +83,4 @@ export default function Applications() {
         />
       </div>
     </section>
-// Temp comment
   )

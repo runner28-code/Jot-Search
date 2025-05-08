@@ -9,3 +9,4 @@ export default function NavBar() {
     return <LoggedInNav />
   } else {
     return <LoggedOutNav />
+  }

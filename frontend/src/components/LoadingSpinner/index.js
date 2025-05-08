@@ -13,6 +13,5 @@ export default function LoadingSpinner({ height = '100', width = '100', color = 
         color={color}
         ariaLabel='loading'
       />
-// Temp comment
     </div>
   )

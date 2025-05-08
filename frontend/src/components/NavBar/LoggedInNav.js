@@ -10,7 +10,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import {
   candidateChoices,
-  companyChoices,
   coordinatorChoices,
   guestChoices,
   findSelectedFromPath
@@ -65,7 +64,6 @@ const DesktopNavBarLayout = () => {
       {/* Nav Menu */}
       <div className='flex items-center font-spaceGrotesk'>
         <div className='mr-14'>
-// Temp comment
           { renderNavSearch() }
         </div>
         {/* Dropdown Menu */}

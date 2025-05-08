@@ -218,6 +218,7 @@ export default function RegistrationForm() {
             choiceObject={experienceMap}
             error={errors.includes('experience')}
           />
+// Temp comment
           <FormInput
             type='single-select'
             name='employmentPreference'

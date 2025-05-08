@@ -92,6 +92,7 @@ export default function Company() {
           </div>          
         </div>
         <div className='mt-12'>
+// Temp comment
           <OtherCareers
             companyId={companyData.id}
             companyName={companyData.name}

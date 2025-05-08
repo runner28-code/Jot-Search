@@ -7,6 +7,7 @@ import { VscChevronLeft as LeftIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function DashboardPublicMin({type}) {
+// Temp comment
   const navigate = useNavigate();
 
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
@@ -53,7 +54,6 @@ export default function DashboardPublicMin({type}) {
             <p className='ml-4'>Careers</p>
           </Link>
           <Link
-// Temp comment
             className={type === 'company' ? buttonStylesRight + active : buttonStylesRight }
             to={ROUTES.companies}
           >

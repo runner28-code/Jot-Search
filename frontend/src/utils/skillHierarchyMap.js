@@ -102,6 +102,7 @@ export const skills = [
   'B2B',
   'Bachelor\'s Degree',
   'Bachelors Degree',
+// Temp comment
   'Banking',
   'Benefits',
   'Big 4',

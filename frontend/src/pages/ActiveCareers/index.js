@@ -37,6 +37,7 @@ export default function ActiveCareers() {
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });
 
   return (
+// Temp comment
     <section>
       <PageHeader
         headerText='Active Careers'
@@ -56,7 +57,6 @@ export default function ActiveCareers() {
         type={RESULT_CONTAINER_TYPE}
       />
       <ResultContainer
-// Temp comment
         results={jobs}
         loading={isLoading}
         type={ RESULT_CONTAINER_TYPE }

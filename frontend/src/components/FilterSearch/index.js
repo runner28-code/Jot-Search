@@ -17,10 +17,10 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   let inputStyles = 'h-full w-full border-midGrey border-solid border-y-2 border-l-2 rounded-l-2xl pl-5 vw-768:pl-10 text-midGrey text-md tracking-wide ';
   if (additionalClasses) {
     containerStyles += additionalClasses;
-  }
   const placeholderString = placeholder || 'Keywords';
   const { width } = useWindowDimensions();
   return (
+    <div 
       className={ containerStyles }
       onKeyDown={handleKeydown}
     >
