@@ -12,7 +12,6 @@ ADD COLUMN     "externalId" TEXT;
 CREATE TABLE "ClientContact" (
     "id" TEXT NOT NULL,
     "address_address1" TEXT,
-    "address_address2" TEXT,
     "address_city" TEXT,
     "address_state" TEXT,
     "address_zip" TEXT,
@@ -23,3 +22,4 @@ CREATE TABLE "ClientContact" (
     "comments" TEXT,
     "dateAdded" TIMESTAMP(3),
     "dateLastModified" TIMESTAMP(3),
+    "dateLastVisit" TIMESTAMP(3),

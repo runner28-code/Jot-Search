@@ -397,3 +397,9 @@ export class BullhornService {
         } else if (res.status === 404) {
           break;
         } else {
+          console.log(url);
+          throw "error";
+        }
+      } catch (error: any) {
+        console.log(error.message, "\nrepeatNumber =", repeatErr);
+        await this.getNewAccessToken();

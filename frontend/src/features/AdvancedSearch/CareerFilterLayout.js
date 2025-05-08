@@ -21,7 +21,6 @@ export default function CareerFilterLayout(props) {
 
   const {
     defaultFilterObject,
-    filterObject,
     handleFilterChange,
     searchTerm,
     setSearchTerm,
@@ -63,3 +62,4 @@ export default function CareerFilterLayout(props) {
         </button>
       </div>
     </div>
+  );

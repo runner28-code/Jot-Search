@@ -95,7 +95,6 @@ export default function DesktopLayout(props) {
               datasource={careerData.datasource}
               careerId={careerData.id}
               applicationUrl={careerData.application_path || careerData.url}
-// Temp comment
             />
           )}
         </div>

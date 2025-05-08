@@ -6,7 +6,6 @@ import SourceIdentifier from '../SourceIdentifier';
 import BackButton from '../BackButton';
 
 export default function DetailsHeader({ type, source }) {
-  let Icon = undefined;
   switch(type) {
     case 'candidate':
       Icon = CandidatesIcon;
@@ -25,7 +24,6 @@ export default function DetailsHeader({ type, source }) {
     headerText = 'Company Profile';
   }else { 
     headerText = `${titleCasedType} Details`
-// Temp comment
   }
   return (<>
     <div className='flex gap-[12px] items-center'>

@@ -19,7 +19,6 @@ export default function GlobalSearch({ placeholder }) {
     companies: [],
     candidates: [],
     loading: false,
-// Temp comment
     forceHidden: true
   });
   // State and ref to listen for outside clicks

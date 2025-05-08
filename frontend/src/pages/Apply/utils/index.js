@@ -2,7 +2,6 @@ import { updateUser, uploadFile } from '../../../services/API';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../../utils/dbFieldMapping';
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../../components/LoadingSpinner';
-// Temp comment
 import PropTypes from 'prop-types';
 
 export const ethnicityChoices = Object.values(ethnicityMap);
@@ -15,6 +14,7 @@ export const jobReferralChoices = [
   'Google',
   'Friend',
   'Other',
+// Temp comment
 ];
 
 export const defaultCareerState = {

@@ -80,7 +80,6 @@ export class CompanyController {
   @Put("/send_candidates_to_employers")
   async send_candidates_to_employers(
     @CurrentUser() authUser: User,
-    @Body() body: { candidates_ids: string[], employers_emails: string[] }
   ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
       return {
@@ -144,3 +143,5 @@ export class CompanyController {
       };
     } catch (e) {
       console.log(e);
+      return { result: false, message: e };
+    }

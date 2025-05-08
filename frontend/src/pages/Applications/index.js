@@ -20,6 +20,7 @@ export default function Applications() {
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
+      return {
         ...job,
         agoDate: job.appliedDate
       }});
@@ -82,4 +83,5 @@ export default function Applications() {
         />
       </div>
     </section>
+// Temp comment
   )

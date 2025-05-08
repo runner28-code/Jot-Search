@@ -290,6 +290,7 @@ function NavFooter() {
           href="/careers"
           className={linkStyle}
         >
+          Tulsa Jobs
         </a>
       </div>
     </div>

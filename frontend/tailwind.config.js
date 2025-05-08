@@ -76,6 +76,7 @@ module.exports = {
         slateGray: '#3C3C4B',
         charcoalGray: '#333332',
         darkGray: '#292938',
+// Temp comment
         'black70%': '#000000b3',
         'black50%': '#00000080',
       },
@@ -105,3 +106,4 @@ module.exports = {
         '5%': '5%',
         '9%': '9%',
         '10%': '10%',
+        '16%': '16%',

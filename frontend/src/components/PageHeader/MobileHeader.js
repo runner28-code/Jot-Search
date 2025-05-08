@@ -39,3 +39,4 @@ export default function MobileHeader(props) {
         { headerText }
       </h1> 
     </div>
+  );

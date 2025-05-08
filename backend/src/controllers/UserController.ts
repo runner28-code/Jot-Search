@@ -5,7 +5,6 @@ import {
   Get,
   Post,
   Put,
-  Delete,
   QueryParam,
   UploadedFile,
   Authorized,
@@ -87,3 +86,5 @@ export class UserController {
     }
   }
 
+  /**
+   * Coordinator-only route to add users depending on type

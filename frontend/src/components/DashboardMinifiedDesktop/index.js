@@ -1,4 +1,3 @@
-// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 
@@ -24,5 +23,4 @@ export default function DashboardMinifiedDesktop ({ location }) {
   if( location === 'companies' ) {
     return (<>
       <h1>Companies</h1>
-    </>)
   }

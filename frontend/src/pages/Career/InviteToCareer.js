@@ -21,7 +21,6 @@ export default function InviteToCareer({ candidate }) {
 
   const jobOptions = jobs?.map(job => {
     return {
-      label: job.title,
       value: job.id,
       job
     }
@@ -30,5 +29,4 @@ export default function InviteToCareer({ candidate }) {
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();
-// Temp comment
     setSelected(selected.filter(item => item.value !== value))

@@ -57,3 +57,4 @@ const sanitizeJob = (job: Job): Job => {
 export const getAppliedJobsByUser = async (userId: string) => {
   try {
     const jobs = await db.job.findMany({
+      where: {

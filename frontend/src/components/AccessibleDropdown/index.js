@@ -81,7 +81,6 @@ AccessibleDropdown.propTypes = {
   onChange: PropTypes.func,
   choices: PropTypes.array,
   choiceObject: PropTypes.object,
-// Temp comment
   currentChosen: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string)

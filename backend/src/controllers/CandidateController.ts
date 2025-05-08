@@ -51,7 +51,6 @@ export class CandidateController {
       if (user) {
         const {
           password,
-          candidate: userCandidate,
           ...returnableUserData
         } = user;
         candidate = {
@@ -167,3 +166,5 @@ export class CandidateController {
           orderBy: {
             firstName: "asc",
           }
+        });
+        const tppUserPromise = db.user.findMany({

@@ -253,3 +253,6 @@ export const login = async (email: string, password: string) => {
         email,
       },
     });
+
+    if (existingUser && checkPassword(existingUser.password, password)) {
+      return {

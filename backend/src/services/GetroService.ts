@@ -116,3 +116,5 @@ export class GetroService {
         });
         const url = `${this.api_base_url_v1}/organizations/${slug}?${query}`;
 
+        const res = await axios.get(url, this.getOptions());
+        await sleep(2000); // https://developers.getro.com/#rate-limit

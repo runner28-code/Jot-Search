@@ -26,3 +26,4 @@ exports.JobFilter = {
         willRelocate: "willRelocate",
         city: "city",
         state: "state",
+        isDeleted: "isDeleted",

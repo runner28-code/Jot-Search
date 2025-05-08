@@ -55,3 +55,4 @@ export type FilterBody = {
   fields: any;
   page: number;
   count: number;
+  operator?: Operator;

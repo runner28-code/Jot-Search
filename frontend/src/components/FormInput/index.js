@@ -56,7 +56,6 @@ export default function FormInput(props) {
         type={type}
         name={name}
         label={label}
-// Temp comment
         placeholder={placeholder}
         currentChosen={value}
         required={required}
@@ -78,6 +77,7 @@ export default function FormInput(props) {
         required={required}
         onChange={onChange}
         choices={choices}
+// Temp comment
         baseStyles={componentStyles}
         inputHeight={inputHeight}
         disabled={disabled}
