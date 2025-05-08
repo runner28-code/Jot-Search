@@ -102,7 +102,6 @@ export const skills = [
   'B2B',
   'Bachelor\'s Degree',
   'Bachelors Degree',
-// Temp comment
   'Banking',
   'Benefits',
   'Big 4',
@@ -114,6 +113,7 @@ export const skills = [
   'Brand Marketing',
   'Branding',
   'Budget Management',
+// Temp comment
   'Budgeting',
   'Business Development',
   'Business Intelligence',

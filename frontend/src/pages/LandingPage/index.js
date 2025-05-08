@@ -32,7 +32,6 @@ export default function LandingPage() {
           { renderLocation() }
           <p className='text-white font-spaceGrotesk font-semibold w-2/3 vw-1024:w-full text-[35.2px] vw-1024:text-[72px] text-center'>{'Find a Career You\'ll Love'}</p>
           { renderColorShapes() }
-          { renderJoinTalent() }
         </div>
         { renderSearch() }
       </section>
@@ -64,7 +63,6 @@ function renderSearch() {
   }
   return (
     <ExploreSearch
-// Temp comment
       totalJobs={totalJobsCount}
       totalCompanies={totalCompaniesCount}
       loading={isLoading}

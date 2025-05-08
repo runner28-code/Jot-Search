@@ -57,3 +57,4 @@ export const saveJob = async (job: string, candidate: string) => {
           savedJobs: {
             some: {
               id: job,
+            },

@@ -113,6 +113,7 @@ export const candidateFilterObject = {
 // Create default filter state based on filterObject
 const convertedCandidateFilters = {};
 Object.keys(candidateFilterObject).forEach(key => {
+  convertedCandidateFilters[key] = candidateFilterObject[key][0];
 });
 
 export const defaultCandidateFilterState = {
@@ -124,7 +125,6 @@ export const defaultCandidateFilterState = {
 export function buildSearchFilters(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = [];
-  Object.keys(filterObject).forEach(key => {
     if ( !anyValues.includes(filterObject[key]) ) {
       let filterKey = key.toLowerCase();
       if ( key === 'On-Site/Remote' ) {

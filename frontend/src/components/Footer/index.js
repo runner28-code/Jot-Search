@@ -159,6 +159,7 @@ export default function Footer() {
                 src={intulsaTalentLogo}
                 alt='Intulsa Talent'
                 className='w-auto h-auto'
+// Temp comment
               />
             </a>
             <a
@@ -197,6 +198,7 @@ export default function Footer() {
           >
               Terms of Service
           </a>
+        </div>
       </div>
     </div>
   </>)

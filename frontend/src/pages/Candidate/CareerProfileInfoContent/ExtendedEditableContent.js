@@ -163,7 +163,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
         value={formData.experience}
         onChange={handleChange}
         choiceObject={experienceMap}
-        disabled={disabled}
       />
 
       {isSourceUserTable && <>

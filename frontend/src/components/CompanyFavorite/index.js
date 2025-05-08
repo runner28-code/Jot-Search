@@ -25,7 +25,6 @@ export default function CareerFavorite () {
             <LoadingSpinner />
             :
             savedCompanies.map((company, index) => {
-// Temp comment
               console.log(company);
               return(<>
                 <CompanyCard
@@ -35,6 +34,7 @@ export default function CareerFavorite () {
                   agoDate={company.agoDate}
                 />
               </>)
+// Temp comment
             })
         }
         <div className='flex items-center text-center flex-col justify-center px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white rounded-3xl outline-dashed outline-neutral-300 bg-gray-200'>

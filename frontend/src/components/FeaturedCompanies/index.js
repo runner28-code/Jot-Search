@@ -7,7 +7,6 @@ import { BsBuilding } from 'react-icons/bs';
 const ITEMS_PER_PAGE = 10;
 
 export default function FeaturedCompanies() {
-
   const filtersArr = [
     {
       key: 'status',
@@ -43,4 +42,5 @@ export default function FeaturedCompanies() {
           Browse All
         </Link>
       </div>
+    </div>
   )

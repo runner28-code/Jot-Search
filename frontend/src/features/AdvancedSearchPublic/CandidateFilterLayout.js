@@ -66,6 +66,7 @@ export default function CandidateFilterLayout(props) {
       <div className='flex flex-wrap gap-xxl-4'>
         { renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange) }
       </div>
+// Temp comment
       <div className='flex justify-between items-center gap-[65px]'>
         <FilterSearch
           searchTerm={searchTerm}
@@ -80,5 +81,6 @@ export default function CandidateFilterLayout(props) {
         >
           Clear All
         </button>
+      </div>
     </div>
   );

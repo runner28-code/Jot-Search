@@ -14,7 +14,6 @@ export default function FeaturedCompaniesMobile() {
       value: 'active'
     }
   ];
-// Temp comment
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
@@ -36,6 +35,7 @@ export default function FeaturedCompaniesMobile() {
               </Link>
             )
         }
+// Temp comment
       </div>
       <div className='text-center mt-24'>
         <Link

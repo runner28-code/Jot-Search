@@ -41,3 +41,4 @@ CREATE TABLE "Company" (
     "departmentId" TEXT,
     "externalID" TEXT,
     "facebookProfileName" TEXT,
+    "fax" TEXT,

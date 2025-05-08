@@ -169,3 +169,4 @@ export class CandidateController {
           }
         });
         const tppUserPromise = db.user.findMany({
+          where,

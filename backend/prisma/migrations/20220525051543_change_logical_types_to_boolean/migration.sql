@@ -1,6 +1,5 @@
 /*
   Warnings:
-
   - The `idOnFile` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `isAnonymized` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `isDeleted` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
@@ -20,3 +19,4 @@
 
 */
 -- AlterTable
+ALTER TABLE "Candidate" DROP COLUMN "idOnFile",

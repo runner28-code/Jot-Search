@@ -1,4 +1,3 @@
-import {
   Body,
   Get,
   Post,
@@ -22,3 +21,4 @@ export class ClientContactController {
       const contact = await db.clientContact.findFirst({
         where: {
           id,
+        },

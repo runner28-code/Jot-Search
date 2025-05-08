@@ -256,3 +256,5 @@ export const login = async (email: string, password: string) => {
 
     if (existingUser && checkPassword(existingUser.password, password)) {
       return {
+        result: true,
+        ...clearPassword(existingUser),

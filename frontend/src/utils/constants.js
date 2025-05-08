@@ -11,7 +11,6 @@ export const pluralizedTypes = {
 export const openJobStatuses = [
   'Active',
   'active',
-// Temp comment
   'Passive',
   'passive'
 ];
@@ -41,6 +40,7 @@ export const stateCodeMap = {
   Michigan: 'MI',
   Minnesota: 'MN',
   Mississippi: 'MS',
+// Temp comment
   Missouri: 'MO',
   Montana: 'MT',
   Nebraska: 'NE',

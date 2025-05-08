@@ -18,6 +18,7 @@ function isTodayOrYesterday(dateObj) {
       returnObj.isToday = true;
     } else if ( dayDifference === 1 ) {
       returnObj.isYesterday = true;
+// Temp comment
     }
   }
 
@@ -29,7 +30,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
   const timeWithoutSeconds = time.replace(/(.*)\D\d+/, '$1')
   if ( isToday ) {
     return `Today at ${timeWithoutSeconds}`;
-// Temp comment
   } else if ( isYesterday ) {
     return `Yesterday, ${timeWithoutSeconds}`;
   } else {

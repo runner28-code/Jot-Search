@@ -75,7 +75,6 @@ export default function Company() {
             : <HeaderMobile
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
-            />
           }
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Summary */}
@@ -92,7 +91,6 @@ export default function Company() {
           </div>          
         </div>
         <div className='mt-12'>
-// Temp comment
           <OtherCareers
             companyId={companyData.id}
             companyName={companyData.name}

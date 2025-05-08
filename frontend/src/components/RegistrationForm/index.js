@@ -27,6 +27,7 @@ const defaultState = {
   expertise: '',
   address1: '',
   city: '',
+  state: '',
   zip: '',
   willRelocate: false,
   roles: [],

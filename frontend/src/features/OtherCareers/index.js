@@ -9,6 +9,7 @@ const ITEMS_PER_PAGE = 5;
 
 export default function OtherCareers({ companyId, companyName, currentCareerId }) {
   const [page, setPage] = useState(1);
+// Temp comment
   const filtersArr = [
     {
       key: 'status',
@@ -44,6 +45,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
             key={index}
             data={career}
           />
+        })
         }
         {/* Only show Pagination if total is greater than the amount we render on a single page */}
         { total > ITEMS_PER_PAGE && <PaginatedControls /> }

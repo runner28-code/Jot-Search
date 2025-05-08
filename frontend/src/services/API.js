@@ -117,6 +117,7 @@ export async function updateJob({ id, status, featured }) {
     status,
     featured
   });
+// Temp comment
   return normalizeData(data);
 }
 

@@ -5,5 +5,4 @@ function renderHorizontalRule(isLastItem) {
   if (isLastItem) {
     return null;
   }
-// Temp comment
   return <hr className='w-full' />;

@@ -1,3 +1,4 @@
+import "dotenv/config";
 
 const config = {
   port: process.env.PORT,
@@ -7,4 +8,3 @@ const config = {
 
   getroEmail: process.env.GETRO_EMAIL,
   getroPassword: process.env.GETRO_PASSWORD,
-

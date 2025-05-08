@@ -29,7 +29,6 @@ export type Company = {
     dateLastModified?: string,
     externalID?: string,
     feeArrangement?: string,
-    funding?: string,
     industryList?: string,
     invoiceFormat?: string,
     name?: string,
@@ -134,3 +133,4 @@ export type ClientContact = {
     desiredSpecialties?: string;
     division?: string;
     email?: string;
+    email2?: string;

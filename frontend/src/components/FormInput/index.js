@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import TextInput from './TextInput';
 import FileInput from './FileInput';
+import AccessibleDropdown from '../AccessibleDropdown';
 import TypeaheadDropdown from './TypeaheadDropdown';
 
 const inputStyles = 'placeholder-textBlack text-md text-textBlack w-full py-2 pl-2 pr-10 vw-640:pl-6 mb-16 border border-solid rounded-xl ';
