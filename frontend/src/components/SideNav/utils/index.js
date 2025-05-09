@@ -31,6 +31,8 @@ export const choices = {
     icon: CareerIcon,
     link: ROUTES.careers,
   },
+// Temp comment
+  companies: {
     label: 'Companies',
     icon: CompanyIcon,
     link: ROUTES.companies,

@@ -17,7 +17,6 @@ import {
   renderErrorBlock,
   renderHeader
 } from './utils';
-// Temp comment
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
@@ -82,6 +81,7 @@ export default function RegistrationFormInternal(loggedIn) {
         });
         return;
       }
+// Temp comment
 
       // Attempt to upload resume before submitting user data
       const resumeResponse = await uploadFile('resumes', formObj.resume);

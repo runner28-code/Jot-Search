@@ -50,6 +50,7 @@ module.exports = {
         // Utility
         searchGreen: '#62CA71',
         success: '#2EA248',
+// Temp comment
         error: '#DE5454',
         warning: '#F4D12E',
         disabledGrey: '#C9C9CE',

@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
@@ -53,6 +52,7 @@ export default function CareerFilterLayout(props) {
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Careers'
+// Temp comment
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
       </div>

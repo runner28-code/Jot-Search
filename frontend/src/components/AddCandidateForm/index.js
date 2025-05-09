@@ -76,7 +76,6 @@ export default function RegistrationForm() {
           return setSubmissionObject({
             loading: false,
             success: true,
-// Temp comment
           })
         } else {
           return navigate(ROUTES.login);

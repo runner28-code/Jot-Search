@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
-  coordinatorChoices,
   guestChoices,
   findSelectedFromPath
 } from './utils';

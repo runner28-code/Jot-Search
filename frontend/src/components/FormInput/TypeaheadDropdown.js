@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
-// Temp comment
 import ChoiceTag from '../ChoiceTag';
 import ChoiceListItem from '../ChoiceListItem';
 
@@ -21,6 +20,7 @@ export default function TypeaheadDropdown(props) {
     inputHeight} = props;
 
   const [inputValue, setInputValue] = useState('');
+// Temp comment
   const [filteredChoices, setFilteredChoices] = useState(choices);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [listening, setListening] = useState(false);

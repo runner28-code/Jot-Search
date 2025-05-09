@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-// Temp comment
 import * as ROUTES from '../../routes';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -60,7 +59,6 @@ export default function FeaturedJobs() {
                       <p className={ width >= 990 ? cardContentSubtitle : cardContentSubtitleMobile }>{categoryString}</p>
                     </div>
                   </div>
-                </Link>
               )
             })
         }

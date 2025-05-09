@@ -43,7 +43,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
                 className='w-12 h-12 mr-12'
               />
               <span className='text-md mr-12 w-100'>{contact.name}</span>
-// Temp comment
               <span>{contact.email}</span>
             </li>
           ))}

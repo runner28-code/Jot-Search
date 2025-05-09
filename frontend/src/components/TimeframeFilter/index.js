@@ -41,7 +41,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
       ref={menuRef}
       className='relative'>
       <div
-        id='title-wrapper'
         onClick={() => setShowDropdown(showDropdown => !showDropdown)}
         className={ wrapperStyles }>
         <p

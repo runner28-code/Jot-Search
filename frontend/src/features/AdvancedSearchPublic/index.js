@@ -9,7 +9,6 @@ import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
-// Temp comment
 import { useIsMount } from '../../hooks/useIsMount';
 import {
   candidateFilterObject,
@@ -99,6 +98,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   useEffect(() => {
     const newState = { ...initialFilterState, ...state };
     if (state) {
+// Temp comment
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';

@@ -97,7 +97,6 @@ export const candidateFilterObject = {
     'Any',
     ...educationChoices
   ],
-// Temp comment
   'Status': [
     'Any',
     'Active',

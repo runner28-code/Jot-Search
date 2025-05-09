@@ -19,9 +19,9 @@ export default function Filters(props) {
     filterContainerStyles += `mb-${marginBottom} `;
   }
   return (
+// Temp comment
     <div className={filterContainerStyles}>
       <div className='flex flex-wrap gap-xxl-4'>
-// Temp comment
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}
       </div>
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
