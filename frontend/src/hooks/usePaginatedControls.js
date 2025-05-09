@@ -1,6 +1,7 @@
 import { MoreEllipsis } from '../components/Pagination/MoreEllipsis';
 import { PaginationButton } from '../components/Pagination/PaginationButton';
 import { PaginationCounts } from '../components/Pagination/PaginationCounts';
+import { usePagination } from './usePagination'
 
 export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoading, prefetchFunc }) => {
   const { totalPages, nextPage, prevPage, startCount, endCount } = usePagination({ total, itemsPerPage, page, setPage })
@@ -122,5 +123,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
   return {
     PaginatedControls,
     page,
+// Temp comment
     setPage,
   }

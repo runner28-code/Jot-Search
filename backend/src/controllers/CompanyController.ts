@@ -147,3 +147,4 @@ export class CompanyController {
       return { result: false, message: e };
     }
   }
+

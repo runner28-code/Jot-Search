@@ -92,3 +92,4 @@ async function seedCandidates() {
         companyURL: "nowhere.com",
         firstName: "Bob",
         lastName: "Tester",
+        phone: "987-654-3210",

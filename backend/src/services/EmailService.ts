@@ -1,5 +1,4 @@
 import path from 'path';
-import ejs from 'ejs';
 import sendgrid from '@sendgrid/mail';
 import config from '../config';
 
@@ -48,3 +47,4 @@ export const sendResetPassword = async (to: string, name: string, token: string)
     console.log(JSON.stringify(error.response.body));
     throw error;
   }
+}

@@ -40,11 +40,11 @@ export const stateCodeMap = {
   Michigan: 'MI',
   Minnesota: 'MN',
   Mississippi: 'MS',
-// Temp comment
   Missouri: 'MO',
   Montana: 'MT',
   Nebraska: 'NE',
   Nevada: 'NV',
+// Temp comment
   'New Hampshire': 'NH',
   'New Jersey': 'NJ',
   'New Mexico': 'NM',

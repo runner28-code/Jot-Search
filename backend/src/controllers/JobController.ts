@@ -177,3 +177,4 @@ export class JobController {
           job.company.logo = getroCompany.logo_url
         }
         job.company_name = job.company?.name
+        job.company_logo = job.company?.logo

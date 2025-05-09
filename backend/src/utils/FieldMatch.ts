@@ -29,3 +29,4 @@ export const JobFilter: any = {
     companyId: "companyId",
   },
 };
+

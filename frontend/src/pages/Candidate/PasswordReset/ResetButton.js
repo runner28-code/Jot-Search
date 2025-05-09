@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import * as ROUTES from '../../../routes';
 import API from '../../../services/API';
-import useWindowDimensions from '../../../hooks/windowDimensions';
 
 
 export default function ResetButton({ candidateData, setType }) {
@@ -36,3 +35,4 @@ export default function ResetButton({ candidateData, setType }) {
     >
       Request Password Reset
     </button>
+  )

@@ -40,6 +40,7 @@ export default function NavSearch({ placeholder }) {
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
+// Temp comment
       return { filtersArr: searchFilters };
     }
     else if (tab === 'jobs') {

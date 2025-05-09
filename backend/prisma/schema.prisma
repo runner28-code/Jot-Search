@@ -306,3 +306,5 @@ model Address {
   id                      String    @id @default(uuid())
   address1                String?
   address2                String?
+  city                    String?
+  state                   String?

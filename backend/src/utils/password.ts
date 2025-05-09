@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 
-    delete object?.password;
+export const clearPassword = (object: any) => {
     return object;
 }
 

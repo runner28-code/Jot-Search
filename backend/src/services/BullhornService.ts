@@ -385,6 +385,7 @@ export class BullhornService {
             Accept: "*/*",
           },
         });
+        console.log(url);
         
         if (res.status === 200) {
           const { data } = res.data;
@@ -404,3 +405,6 @@ export class BullhornService {
         await this.getNewAccessToken();
         repeatErr++;
       }
+    }
+  }
+

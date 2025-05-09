@@ -68,6 +68,7 @@ export default function RegistrationForm() {
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
 
+      // Submit to backend
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
         // Set success to true if on add-candidate page, navigate user to login if not
@@ -75,6 +76,7 @@ export default function RegistrationForm() {
           return setSubmissionObject({
             loading: false,
             success: true,
+// Temp comment
           })
         } else {
           return navigate(ROUTES.login);

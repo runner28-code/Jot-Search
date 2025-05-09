@@ -17,6 +17,7 @@ import {
   renderErrorBlock,
   renderHeader
 } from './utils';
+// Temp comment
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
@@ -62,7 +63,6 @@ export default function RegistrationFormInternal(loggedIn) {
 
   const navigate = useNavigate();
   const location = useLocation();
-// Temp comment
 
   // Who is adding the user; IF path is `/add-user`, then it's a coordinator adding a user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';

@@ -31,7 +31,6 @@ export const choices = {
     icon: CareerIcon,
     link: ROUTES.careers,
   },
-  companies: {
     label: 'Companies',
     icon: CompanyIcon,
     link: ROUTES.companies,

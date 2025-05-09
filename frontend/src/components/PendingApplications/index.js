@@ -7,6 +7,7 @@ import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import featuredIcon from '../../assets/icons/pyramid.svg';
 import { getAppliedJobs } from '../../services/API';
 import useWindowDimensions from '../../hooks/windowDimensions';
+
 export default function PendingApplications () {
   const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
@@ -14,7 +15,6 @@ export default function PendingApplications () {
     jobs: [],
     filteredJobs: [],
     loading: true
-  });
 
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);

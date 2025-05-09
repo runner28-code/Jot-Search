@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import PropTypes from 'prop-types';
 
-// Temp comment
 export default function FileInput({type, name, label, placeholder, required, value, onChange, baseStyles, disabled}) {
   const inputRef = useRef(null);
 
@@ -20,6 +19,7 @@ export default function FileInput({type, name, label, placeholder, required, val
         type={type}
         id={name}
         name={name}
+// Temp comment
         onChange={(e) => onChange(name, e.target.files[0])}
         ref={inputRef}
         disabled={disabled}

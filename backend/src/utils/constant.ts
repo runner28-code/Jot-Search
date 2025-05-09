@@ -201,3 +201,5 @@ const job_filter_exclude_keys = [
   "inventory",
   "investigator",
   "jailer",
+  "janitor",
+  "janitorial",

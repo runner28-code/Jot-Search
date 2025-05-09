@@ -75,6 +75,7 @@ export default function Company() {
             : <HeaderMobile
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
+            />
           }
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Summary */}

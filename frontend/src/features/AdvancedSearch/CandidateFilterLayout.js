@@ -7,7 +7,6 @@ import FormInput from '../../components/FormInput';
 
 const dropdownFiltersCoord = [
   'Category',
-// Temp comment
   'Experience',
   'Remote Availability',
   'Employment Type',
@@ -33,6 +32,7 @@ const checkboxFilters = [
 ];
 
 export default function CandidateFilterLayout(props) {
+// Temp comment
   const {
     defaultFilterObject,
     filterObject,

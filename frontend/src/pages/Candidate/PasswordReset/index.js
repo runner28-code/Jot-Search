@@ -4,7 +4,6 @@ import ResetButton from './ResetButton';
 import ResetForm from './ResetForm';
 
 export default function PasswordReset({role, candidateData}) {
-// Temp comment
   if ( role === 'company' || candidateData.sourceTable !== 'User' ) {
     return null;
   }
@@ -34,6 +33,7 @@ export default function PasswordReset({role, candidateData}) {
             setType={setType}
           />
         )}
+// Temp comment
         { role === 'coordinator' && (
           <ResetForm
             candidateData={candidateData}

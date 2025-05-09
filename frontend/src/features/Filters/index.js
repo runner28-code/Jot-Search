@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
 
-// Temp comment
 export default function Filters(props) {
   const {
     handleFilterChange,
@@ -22,6 +21,7 @@ export default function Filters(props) {
   return (
     <div className={filterContainerStyles}>
       <div className='flex flex-wrap gap-xxl-4'>
+// Temp comment
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}
       </div>
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}

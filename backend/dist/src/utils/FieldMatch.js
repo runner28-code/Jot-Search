@@ -18,7 +18,6 @@ exports.JobFilter = {
     main: {
         id: "id",
         status: "status",
-        skillList: "skillList",
         hidden: "hidden",
         employmentType: "employmentType",
         onSite: "onSite",

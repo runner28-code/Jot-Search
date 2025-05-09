@@ -12,7 +12,6 @@ export default function NavMenu() {
 
   function handleMenuClick() {
     setMenuOpen(menuOpen => !menuOpen);
-  }
 
   function handleOptionClick(e) {
     setMenuOpen(false);
@@ -40,4 +39,5 @@ export default function NavMenu() {
         menuOpen={menuOpen}
         handleOptionClick={handleOptionClick}
         setMenuOpen={setMenuOpen} />
+    </div>
   )

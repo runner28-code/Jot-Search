@@ -40,7 +40,6 @@ export const createJob = async (job: Job) => {
 const validateJob = (job: Job): string | undefined => {
   return undefined;
 };
-
 const sanitizeJob = (job: Job): Job => {
   const newJob = { ...job };
 
@@ -58,3 +57,4 @@ export const getAppliedJobsByUser = async (userId: string) => {
   try {
     const jobs = await db.job.findMany({
       where: {
+        applications: {
