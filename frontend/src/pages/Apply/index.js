@@ -66,7 +66,6 @@ export default function Apply() {
         getCandidateById(user_id),
       ]);
       if ( candidateData.workAuthorized === true ) {
-// Temp comment
         candidateData.workAuthorized = 'Yes';
       } else {
         candidateData.workAuthorized = 'No';

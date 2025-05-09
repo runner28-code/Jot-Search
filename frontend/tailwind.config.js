@@ -50,7 +50,6 @@ module.exports = {
         // Utility
         searchGreen: '#62CA71',
         success: '#2EA248',
-// Temp comment
         error: '#DE5454',
         warning: '#F4D12E',
         disabledGrey: '#C9C9CE',
@@ -99,12 +98,3 @@ module.exports = {
         'xl': '24px',
         'xxl': '28px',
         'xxl-2': '32px',
-        'xxl-3': '36px',
-        'xxl-4': '40px',
-        // General Spacing
-        '3.5%': '3.5%',
-        '5%': '5%',
-        '9%': '9%',
-        '10%': '10%',
-        '16%': '16%',
-        '20%': '20%',

@@ -23,6 +23,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
       const imageToUpload = event.target.files[0];
       console.log(imageToUpload);
     }
+// Temp comment
     setFormData({ ...formData, [name]: value });
   }
 
@@ -143,6 +144,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               Address 2:
               </label>
               <input 
+                type='text'
                 onChange={handleInputChange}
                 id='address2'
                 name='address2'

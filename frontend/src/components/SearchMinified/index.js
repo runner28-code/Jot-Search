@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 // Images
+// Temp comment
 import searchWhite from '../../assets/icons/search-gray.svg';
 
 export default function SearchMinified ({ imgClass }) {
@@ -8,6 +9,7 @@ export default function SearchMinified ({ imgClass }) {
   const classes = imgClass += 'w-8 h-8 ';
 
   return (<>
+    <img
       src={ searchWhite }
       alt='search icon'
       className={ classes }

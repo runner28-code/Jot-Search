@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import * as ROUTES from '../../../routes';
 import API from '../../../services/API';
@@ -28,7 +27,6 @@ export default function ResetButton({ candidateData, setType }) {
       >
       Request Password Reset
       </button>
-    )
   }
   return (
     <button

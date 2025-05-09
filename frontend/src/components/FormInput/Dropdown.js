@@ -10,6 +10,7 @@ const YEARS_OF_EXPERIENCE = 'yearsExperience';
 function renderActiveIcon(choice, currentChosen) {
   if (choice === currentChosen || currentChosen.includes(choice)) {
     return(
+// Temp comment
       <img 
         src={checkmarkIcon} 
         alt="checkmark" 
@@ -19,6 +20,7 @@ function renderActiveIcon(choice, currentChosen) {
 }
 
 function renderHorizontalRule(index, arrayLength) {
+  if (index !== arrayLength - 1) {
     return (
       <hr className='border-royalBlue border-1.5 border-solid my-4' />
     )

@@ -22,7 +22,6 @@ export default function Login() {
     } else {
       setError(res.data.error);
     }
-// Temp comment
   };
 
   const renderError = () => {

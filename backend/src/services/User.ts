@@ -54,7 +54,6 @@ const validateUser = ({
     // if (isNullOrEmpty(category))
     //     return 'category is required';
   } catch (error) {
-    return "something is wrong, please check params";
   }
   return false;
 };

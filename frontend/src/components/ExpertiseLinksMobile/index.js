@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import softwareEngineeringIcon from '../../assets/images/Symbol_softwareengineering.svg';
 import salesAndBizDevIcon from '../../assets/images/Symbol_Salesbizdev.svg';
 import marketingIcon from '../../assets/images/Symbol_marketing.svg';
-import operationsIcon from '../../assets/images/Symbol_operations.svg';
 import financeIcon from '../../assets/images/Symbol_finance.svg';
 import * as ROUTES from '../../routes';
 
@@ -17,6 +16,7 @@ export default function ExpertiseLinksMobile() {
         Browse Opportunities by Career Expertise
       </h4>
       <div className='mt-20 flex flex-wrap justify-center'>
+        {/* Software & Engineering */}
         <Link
           to={ROUTES.careers}
           className={linkStyles}

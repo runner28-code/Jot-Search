@@ -136,7 +136,6 @@ const job_filter_exclude_keys = [
   "engineering tec",
   "english",
   "environment",
-  "environmental",
   "equipment",
   "esl",
   "esthetician",

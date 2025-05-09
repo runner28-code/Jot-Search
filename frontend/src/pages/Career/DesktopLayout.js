@@ -35,7 +35,6 @@ export default function DesktopLayout(props) {
       <div className='flex items-start'>
         <div>
           {renderLogo(careerData.company_logo)}
-          <sub className='text-xxs text-zinc-700 font-roboto'>{careerData.clientCorporation}</sub>
         </div>
         <div className='relative grow'>
           {/* Title */}
@@ -106,6 +105,7 @@ export default function DesktopLayout(props) {
           <div className='flex flex-col space-y-8'>
             <UpdateJobStatus job={careerData} />
             {careerData.datasource === 'bullhorn' && <UpdateJobFeatured job={careerData} />}
+          </div>
         )
       }
     </section>

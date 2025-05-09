@@ -24,7 +24,6 @@ export const roles = {
     'PR & Communications',
     'Product Marketing & Design'
   ],
-// Temp comment
   'Operations': [
     'Business Operations & Strategy',
     'Client Success and Customer Service',

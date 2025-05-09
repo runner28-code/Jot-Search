@@ -6,6 +6,7 @@ async function main() {
     console.log("Seeding...🌱");
     // Some of these are dependent on each other, so we need to run them in order
     await seedCandidates();
+    await seedCompanies();
     await seedCategories();
     await seedJobs();
     await seedUsers();
@@ -83,7 +84,6 @@ async function seedCandidates() {
         address: "124 Main St",
         address_address1: "124 Main St",
         occupation: "None",
-        address_city: "Tulsa",
         address_state: "OK",
         address_zip: "74008",
         description: "Ehh...",

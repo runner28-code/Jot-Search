@@ -35,6 +35,7 @@ export default function ActiveCareers() {
   }
 
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });
+
   return (
     <section>
       <PageHeader

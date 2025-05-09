@@ -36,6 +36,7 @@ export default function ResultContainer(props) {
 
   function renderFooter() {
     if ( !limit ) {
+      return null;
     }
 
     let pluralizedType = pluralizedTypes[type];
@@ -43,7 +44,6 @@ export default function ResultContainer(props) {
 
     return <ViewAllLink
       href={`/${pluralizedType}`}
-      text={`View All ${capitalizedType}`}
     />;
   }
 

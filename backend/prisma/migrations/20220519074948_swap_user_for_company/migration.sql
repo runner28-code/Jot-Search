@@ -37,6 +37,7 @@ CREATE TABLE "Company" (
     "culture" TEXT,
     "dateAdded" TIMESTAMP(3),
     "dateFounded" TIMESTAMP(3),
+    "dateLastModified" TIMESTAMP(3),
     "departmentId" TEXT,
     "externalID" TEXT,
     "facebookProfileName" TEXT,

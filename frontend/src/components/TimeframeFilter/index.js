@@ -25,7 +25,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         choices={choices} 
         handleChoiceClick={handleChoiceClick} 
       />
-    )
   }
 
   // Used to close dropdown when clicking outside of it
@@ -41,6 +40,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
       ref={menuRef}
       className='relative'>
       <div
+        id='title-wrapper'
         onClick={() => setShowDropdown(showDropdown => !showDropdown)}
         className={ wrapperStyles }>
         <p

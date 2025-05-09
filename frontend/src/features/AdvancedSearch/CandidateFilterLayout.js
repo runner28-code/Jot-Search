@@ -59,6 +59,7 @@ export default function CandidateFilterLayout(props) {
     checkboxFilters.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
     });
+// Temp comment
   }
 
   const toggleSkills = (skill) => {

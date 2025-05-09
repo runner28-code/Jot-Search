@@ -13,7 +13,9 @@ const CategoryProvider = ({children}) => {
     localStorage.setItem('categories', JSON.stringify(categoriesFromAPI));
     setCategories(categoriesFromAPI);
   }, [])
+  
   return (
+// Temp comment
     <CategoryContext.Provider value={{ categories }}>
       {children}
     </CategoryContext.Provider>
