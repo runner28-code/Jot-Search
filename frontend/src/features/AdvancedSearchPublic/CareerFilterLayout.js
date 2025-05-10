@@ -15,6 +15,7 @@ const dropdownFilters = [
 const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',
+// Temp comment
   'Years Experience'
 ]
 
@@ -56,7 +57,6 @@ export default function CareerFilterLayout(props) {
           handleSearchClick={handleSearchClick}
           placeholder='Search Careers'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
-// Temp comment
         />
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }

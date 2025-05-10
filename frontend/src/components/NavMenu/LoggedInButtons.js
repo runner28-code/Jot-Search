@@ -9,7 +9,6 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
   return (<>
     <Link 
       to={ROUTES.profile}
-      onClick={handleOptionClick}
       className={linkStyles}
     >
       <ProfileIcon className={stylesObject.iconStyles} />

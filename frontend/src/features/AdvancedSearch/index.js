@@ -37,7 +37,6 @@ function useTabState(disabledTabs, userType, pathname) {
     switch (pathname) {
       case '/candidates':
         return useState('candidates');
-      case '/companies':
         return useState('companies');
       case '/careers':
       default:
@@ -46,7 +45,6 @@ function useTabState(disabledTabs, userType, pathname) {
   }
   return useActiveTabState(userType === 'candidate' ? 'careers' : 'candidates');
 }
-// Temp comment
 
 export default function AdvancedSearch({ disabledTabs }) {
   const userType = AuthService.getUserRole();

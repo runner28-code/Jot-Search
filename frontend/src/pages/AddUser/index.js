@@ -37,7 +37,6 @@ export default function AddUser() {
         choices={['Candidate', 'Company', 'Coordinator']}
         handleChange={handleDropdownChange}
         noDefault={true}
-// Temp comment
       />
     </h2>
     <div className={formType != 'Company' ? defaultContainer : companyContainer }>

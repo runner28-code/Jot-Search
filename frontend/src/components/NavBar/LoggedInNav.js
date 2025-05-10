@@ -17,6 +17,7 @@ import {
 } from '../SideNav/utils';
 import { useCandidateContext } from '../../services/CandidateContext';
 
+export default function NavBar() {
   const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {
@@ -26,6 +27,7 @@ import { useCandidateContext } from '../../services/CandidateContext';
   }
 }
 
+// Temp comment
 function NavBarLayout() {
   return (
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50 '>

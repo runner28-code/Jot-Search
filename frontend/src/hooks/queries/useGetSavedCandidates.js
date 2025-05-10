@@ -1,4 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
+// Temp comment
 import { queryClient } from '../..';
 import { getSavedCandidates } from '../../services/API';
 
@@ -9,7 +10,6 @@ export const useGetSavedCandidates = ({ count, page, userId, enabled = true }) =
   const { data, error, isLoading } = useQuery(
     getCandidatesKey({userId, count, page}),
     () => getSavedCandidates(userId, count, page),
-// Temp comment
     { enabled }
   );
 

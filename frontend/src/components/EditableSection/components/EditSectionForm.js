@@ -44,8 +44,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
             key={key}
             name={key}
             value={value}
-// Temp comment
-          />
         }
         return (
           <div 

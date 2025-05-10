@@ -14,7 +14,6 @@ import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
 
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charcoal mb-m ';
-const hrStyles = 'mb-10 border-smokeGray ';
 
 export default function DesktopLayout(props) {
   const {
@@ -35,6 +34,7 @@ export default function DesktopLayout(props) {
       <div className='flex items-start'>
         <div>
           {renderLogo(careerData.company_logo)}
+          <sub className='text-xxs text-zinc-700 font-roboto'>{careerData.clientCorporation}</sub>
         </div>
         <div className='relative grow'>
           {/* Title */}

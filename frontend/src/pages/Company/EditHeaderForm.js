@@ -23,7 +23,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
       const imageToUpload = event.target.files[0];
       console.log(imageToUpload);
     }
-// Temp comment
     setFormData({ ...formData, [name]: value });
   }
 

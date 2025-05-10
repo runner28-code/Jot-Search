@@ -1,3 +1,4 @@
+// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../../../components/LoadingSpinner';
@@ -19,7 +20,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
 
   return (
     <div className='flex flex-col items-start pt-8'>
-// Temp comment
       {/* Loading */}
       {isLoadingContacts && <LoadingSpinner />}
       {/* No results */}

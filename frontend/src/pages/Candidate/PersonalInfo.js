@@ -2,7 +2,6 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import PhoneInput from 'react-phone-number-input/input'
 import Dropdown from '../../components/UniversalDropdown';
-import FormInput from '../../components/FormInput';
 import { SwitchButton } from './PreferenceItem';
 import { FiEdit } from 'react-icons/fi';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -17,7 +16,6 @@ import AuthService from '../../services/auth';
 const PREFERENCE_ITEMS = {
   workAuthorized: 'Are you legally authorized to work in the US on a fulltime basis for any employer?',
 }
-// Temp comment
 
 export default function PersonalInfo({role, candidateData, handleCandidateUpdate}) {
   if ( role === 'company' ) {

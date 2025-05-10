@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 export const ethnicityChoices = Object.values(ethnicityMap);
 export const genderChoices = Object.values(genderMap);
 export const veteranStatusChoices = Object.values(veteranStatusMap);
+export const disabilityChoices = Object.values(disabilityMap);
 export const jobReferralChoices = [
   'LinkedIn',
   'Indeed',
@@ -24,6 +25,7 @@ export const defaultCareerState = {
   loading: true,
 }
 
+// Temp comment
 export const defaultState = {
   firstname: '',
   lastname: '',

@@ -53,7 +53,6 @@ export default function AddCoordinator() {
 
     // Error checking
     const newErrors = validateInput(
-// Temp comment
       name,
       value,
       submissionObject.errors,
@@ -168,5 +167,4 @@ export default function AddCoordinator() {
       <div className='flex flex-col mx-auto vw-900:mx-0 vw-900:flex-row vw-900:mt-8'>
         {renderButtonOrLoading(submissionObject, buttonString, buttonStyles)}
       </div>
-    </form>
   )

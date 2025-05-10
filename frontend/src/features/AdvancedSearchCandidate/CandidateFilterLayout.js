@@ -3,7 +3,6 @@ import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
-const dropdownFiltersCoord = [
   'Category',
   'Experience',
   'Remote Availability',
@@ -19,7 +18,6 @@ const dropdownFilters = [
 ];
 const checkboxFiltersCoord = [
   'Open to Relocation',
-// Temp comment
   'Authorized to work in the US',
 ];
 const checkboxFilters = [

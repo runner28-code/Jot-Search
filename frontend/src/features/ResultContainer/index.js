@@ -44,6 +44,7 @@ export default function ResultContainer(props) {
 
     return <ViewAllLink
       href={`/${pluralizedType}`}
+      text={`View All ${capitalizedType}`}
     />;
   }
 

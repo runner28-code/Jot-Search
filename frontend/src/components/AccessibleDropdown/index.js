@@ -26,6 +26,7 @@ export default function AccessibleDropdown(props) {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {
         onChange(name, currentChosen.filter(item => item !== choice));
+      } else {
         onChange(name, [...currentChosen, choice]);
       }
     } else { // single select
@@ -79,7 +80,6 @@ AccessibleDropdown.propTypes = {
   required: PropTypes.bool,
   onChange: PropTypes.func,
   choices: PropTypes.array,
-  choiceObject: PropTypes.object,
   currentChosen: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string)

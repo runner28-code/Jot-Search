@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 require("dotenv/config");
 const config = {
-    projectId: process.env.PROJECT_ID,
+    port: process.env.PORT,
     authSecret: process.env.AUTH_SECRET,
     fileUploadSize: process.env.FILE_UPLOAD_SIZE,
     getroEmail: process.env.GETRO_EMAIL,
