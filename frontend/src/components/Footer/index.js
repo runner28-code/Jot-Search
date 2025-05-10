@@ -173,7 +173,6 @@ export default function Footer() {
               />
             </a>
           </div>
-// Temp comment
         </div>
       </div>
       {/* Copyright / Privacy Policy / TOS */}

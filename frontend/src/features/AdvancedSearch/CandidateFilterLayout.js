@@ -14,8 +14,10 @@ const dropdownFiltersCoord = [
   'Skills'
 ];
 
+const dropdownFilters = [
   'Category',
   'Experience',
+// Temp comment
   'Remote Availability',
   'Employment Type',
 ];

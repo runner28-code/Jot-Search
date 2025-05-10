@@ -6,7 +6,6 @@ export default function AssistanceCard() {
       {/* Header */}
       <div className='flex'>
         <img
-// Temp comment
           src={flagIcon}
           alt='Flag'
           className='w-auto h-auto'
@@ -26,6 +25,7 @@ export default function AssistanceCard() {
       {/* Button */}
       <a
         href='mailto:talentnetwork@intulsa.com?subject=Talent Network Assistance'
+// Temp comment
         className='mt-10 mb-6 inline-block border-2 border-royalBlue px-xl py-[15.5px] leading-[1.37]  text-royalBlue text-ml rounded-lg'
         target='_blank'
         rel='noopener noreferrer'

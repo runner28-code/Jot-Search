@@ -8,7 +8,9 @@ import AuthService from '../../services/auth';
 import NavSearch from '../NavSearch';
 import NavSearchMobile from '../NavSearchMobile';
 import * as ROUTES from '../../routes';
+// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
+
 export default function NavBar() {
   const { width } = useWindowDimensions();
 

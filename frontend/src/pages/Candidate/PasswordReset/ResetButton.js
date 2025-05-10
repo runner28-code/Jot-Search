@@ -3,7 +3,6 @@ import * as ROUTES from '../../../routes';
 import API from '../../../services/API';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 
-// Temp comment
 
 export default function ResetButton({ candidateData, setType }) {
   const { width } = useWindowDimensions();
@@ -11,7 +10,6 @@ export default function ResetButton({ candidateData, setType }) {
     event.preventDefault();
     const { email } = candidateData;
     const res = await API.post(ROUTES.APIaccountRecovery, {
-      email: email
     });
 
     if ( res.data.result ) {

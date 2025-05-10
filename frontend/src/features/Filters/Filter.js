@@ -20,7 +20,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
 
   function handleContainerClick() {
     setShowDropdown(showDropdown => !showDropdown);
-  }
   function handleChoiceClick(choice) {
     setShowDropdown(false);
     setSelected(choice);

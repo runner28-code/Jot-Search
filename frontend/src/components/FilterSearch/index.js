@@ -44,3 +44,4 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         <RenderText />
       </button>
     </div>
+  )

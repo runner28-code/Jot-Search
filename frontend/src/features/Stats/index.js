@@ -4,6 +4,7 @@ import TimeframeFilter from '../../components/TimeframeFilter';
 import { BsArrowUpSquare, BsArrowDownSquare } from 'react-icons/bs';
 import { getCompanyQuickStats, getCoordinatorQuickStats } from '../../services/API';
 
+const statFilterChoices = [
   'Today',
   'Last 7 Days',
   'Last 14 Days',
@@ -15,5 +16,6 @@ export default function Stats({ userType }) {
   const [timeframe, setTimeframe] = useState(statFilterChoices[3]);
   const [stats, setStats] = useState({});
 
+// Temp comment
   function handleFilterChange(choice) {
     setTimeframe(choice);

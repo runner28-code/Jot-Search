@@ -14,6 +14,7 @@ import AuthService from '../../services/auth';
 const PLACE_HOLDER = 'Search active job title';
 const RESULT_CONTAINER_TYPE = 'active careers';
 const ITEMS_PER_PAGE = 5;
+
 export default function ActiveCareers() {
   const { companyId } = AuthService.getProfile();
   const [page, setPage] = useState(1);
@@ -30,6 +31,7 @@ export default function ActiveCareers() {
   const { jobs, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
 
   const prefetchFunc = (page) => {
+// Temp comment
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
   }
 

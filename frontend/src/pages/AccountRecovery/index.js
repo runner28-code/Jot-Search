@@ -20,7 +20,6 @@ export default function AccountRecovery() {
       setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);
-// Temp comment
     }
   };
   function setType(response, condition) {

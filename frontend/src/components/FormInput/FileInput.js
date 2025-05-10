@@ -2,7 +2,6 @@ import { useRef } from 'react';
 import PropTypes from 'prop-types';
 
 export default function FileInput({type, name, label, placeholder, required, value, onChange, baseStyles, disabled}) {
-  const inputRef = useRef(null);
 
   function handleKeyDown(e) {
     if ( e.key === ' ' || e.key === 'Enter' ) {
@@ -21,7 +20,6 @@ export default function FileInput({type, name, label, placeholder, required, val
         name={name}
         onChange={(e) => onChange(name, e.target.files[0])}
         ref={inputRef}
-// Temp comment
         disabled={disabled}
       />
     </div>

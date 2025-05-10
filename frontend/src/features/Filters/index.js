@@ -8,7 +8,9 @@ export default function Filters(props) {
     defaultFilterObject,
     filterObject,
     searchLabel,
+// Temp comment
     searchTerm,
+    setSearchTerm,
     handleSearchClick,
     marginBottom
   } = props;

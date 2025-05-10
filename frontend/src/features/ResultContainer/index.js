@@ -37,6 +37,7 @@ export default function ResultContainer(props) {
   function renderFooter() {
     if ( !limit ) {
       return null;
+// Temp comment
     }
 
     let pluralizedType = pluralizedTypes[type];

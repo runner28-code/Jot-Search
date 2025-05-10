@@ -22,6 +22,7 @@ import {
 } from './utils';
 import LoadingSpinner from '../../components/LoadingSpinner';
 
+// Temp comment
 const renderError = (error) => {
   if ( error ) {
     return ( <div className='text-error mt-4'>

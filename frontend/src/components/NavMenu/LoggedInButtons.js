@@ -9,9 +9,11 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
   return (<>
     <Link 
       to={ROUTES.profile}
+      onClick={handleOptionClick}
       className={linkStyles}
     >
       <ProfileIcon className={stylesObject.iconStyles} />
+// Temp comment
       <span className={stylesObject.spanStyles}>Profile</span>
     </Link>
     <hr className={stylesObject.hrStyles} />

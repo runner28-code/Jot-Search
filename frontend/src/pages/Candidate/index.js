@@ -23,6 +23,7 @@ const PREFERENCE_ITEMS = {
   willRelocate: 'I\'m willing to relocate to Tulsa OK',
   willReceiveNotification: 'Receive emails about relevant opportunities based on your profile'
 }
+
 export default function Candidate() {
   // Redirect if userRole is 'candidate' unless it's their profile, candidates should not be able to see other candidates
   const role = AuthService.getUserRole();
@@ -90,7 +91,6 @@ export default function Candidate() {
       <PageHeader
         headerText={headerText}
         IconComponent={CandidatesIcon}
-        classOverride='h-18 w-18'
         containerClassOverride='pt-2'
         backButton
       />

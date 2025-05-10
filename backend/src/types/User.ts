@@ -4,7 +4,6 @@ export type User = {
   firstname?: string;
   lastname?: string;
   gender?: string;
-  email: string;
   password?: string;
   role: string;
   address1?: string;
@@ -33,6 +32,7 @@ export type User = {
   companyName?: string;
   annualRevenue?: string;
   companyURL?: string;
+  numEmployees?: string;
   revenue?: string;
   dateFounded?: string;
 

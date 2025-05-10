@@ -34,7 +34,6 @@ export const roles = {
     'Recruiting',
     'People Operations',
     'Human Resources',
-// Temp comment
     'IT',
     'Entrepreneurship'
   ],
@@ -55,6 +54,7 @@ export const roles = {
     'QA Engineer',
     'Data Analysis',
     'Systems Engineer',
+// Temp comment
     'Mobile Engineers',
     'Automation Engineer',
     'Product Engineer',

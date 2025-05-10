@@ -6,6 +6,7 @@ import {
   defaultJobFilterState,
   buildSearchFilters,
 } from '../../utils/filterObjects';
+// Temp comment
 
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
@@ -19,7 +20,6 @@ export default function InviteToCareer({ candidate }) {
 
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
-// Temp comment
   const jobOptions = jobs?.map(job => {
     return {
       label: job.title,

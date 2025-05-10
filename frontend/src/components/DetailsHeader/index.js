@@ -11,6 +11,7 @@ export default function DetailsHeader({ type, source }) {
     case 'candidate':
       Icon = CandidatesIcon;
       break;
+// Temp comment
     case 'company':
       Icon = CompanyIcon;
       break;
@@ -24,7 +25,6 @@ export default function DetailsHeader({ type, source }) {
   if ( type === 'company') {
     headerText = 'Company Profile';
   }else { 
-// Temp comment
     headerText = `${titleCasedType} Details`
   }
   return (<>

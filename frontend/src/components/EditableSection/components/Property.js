@@ -10,6 +10,5 @@ export default function Property({name, value}) {
         {labelString}
       </p>
       <span className='ml-4'>{value}</span>
-// Temp comment
     </div>
   )

@@ -47,6 +47,7 @@ export default function CandidateCard({ data, disableLink }) {
           <div className='flex gap-s items-center'>
             <h5 className='text-h5 font-spaceGrotesk font-semibold text-charcoal leading-none'>{nameString}</h5>
             { renderActiveStatus(data) }
+// Temp comment
           </div>
           {/* Occupation */}
           <p className='text-charcoal mt-l'>{occupationString}</p>
@@ -75,7 +76,6 @@ export default function CandidateCard({ data, disableLink }) {
               <img
                 src={experienceIcon}
                 className='h-8 mr-5' />
-// Temp comment
               <p className='text-charcoal'>{experienceString}</p>
             </div>
           </div>

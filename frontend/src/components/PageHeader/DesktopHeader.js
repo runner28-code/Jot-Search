@@ -14,6 +14,7 @@ export default function DesktopHeader(props) {
     backButton
   } = props;
   const navigate = useNavigate();
+
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-royalBlue ' : ' fill-royalBlue ';
   if ( classOverride ) addOnIconClasses += classOverride;

@@ -116,6 +116,7 @@ export const saveBullhornJobs = async (jobs: any[]) => {
 
         const existing = await db.job.findFirst({
           where: {
+            externalId: `bl-${job.id}`,
           },
         });
 

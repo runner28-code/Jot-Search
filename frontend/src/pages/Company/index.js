@@ -39,7 +39,6 @@ export default function Company() {
   // Format data
   companyData.name = urlDecode(companyData.name);
   if ( companyData.name.includes('(mc)') ) { // Remove (mc) from companyData.name if exists
-// Temp comment
     companyData.name = companyData.name.toString().replace(' (mc)', '');
   }
   if ( companyData.businessSectorList && companyData.businessSectorList.length > 0 ) {
@@ -84,6 +83,7 @@ export default function Company() {
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>About {companyData.name}</h4>
             { renderCompanyDescription(companyData.companyDescription, 'text-md mb-10 leading-[32px]') }
           </div>
+// Temp comment
           { renderSectorList(companyData, width, stylesObject) } 
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Funding */}
@@ -112,18 +112,4 @@ export default function Company() {
         />
       </div>
     </div>
-  )
-}
-Company.propTypes = {
-  companyDescription: PropTypes.string
-}
-
-function RenderHeader({type, loggedIn}) {
-  if( loggedIn ) {
-    return(<>
-      <DetailsHeader type='company' />
-    </>)
-  }
-  return (
-    <DashboardPublicMin type={type} />
   )
