@@ -14,6 +14,8 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
 
 export default function DashboardMinifiedDesktop ({ location }) {
+
+// Temp comment
   if( location === 'career' ) {
     return (
       <CareerHeader location={location} />

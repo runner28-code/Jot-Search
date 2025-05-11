@@ -67,6 +67,7 @@ export default function Apply() {
       ]);
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';
+// Temp comment
       } else {
         candidateData.workAuthorized = 'No';
       }

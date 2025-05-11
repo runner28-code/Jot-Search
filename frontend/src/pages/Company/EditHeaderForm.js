@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { appendPathToBaseUrl } from '../../services/API';
+// Temp comment
 
 export default function EditHeaderForm({ candidateData, handleCandidateUpdate, setEditMode, iconStyles }) {
   const [formData, setFormData] = useState({
@@ -207,7 +208,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           <input 
             type='text'
             onChange={handleInputChange}
-// Temp comment
             id='phone'
             value={formData.phone}
             className={inputStyles + 'ml-10 text-h6'} />

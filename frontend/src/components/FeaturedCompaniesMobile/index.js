@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
+// Temp comment
 import { BsBuilding } from 'react-icons/bs';
 
 const ITEMS_PER_PAGE = 6;
@@ -22,6 +23,7 @@ export default function FeaturedCompaniesMobile() {
       { renderColorShapes() }
       <h2 className='text-h5 text-center font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
       <div className='flex flex-wrap mt-8 justify-center'>
+        {
           isLoading ?
             <LoadingSpinner />
             :

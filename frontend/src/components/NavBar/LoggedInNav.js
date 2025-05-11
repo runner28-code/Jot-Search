@@ -23,7 +23,6 @@ export default function NavBar() {
   if ( width < 1280 ) {
     return <NavBarLayout />
   } else {
-    return <DesktopNavBarLayout />
   }
 }
 
@@ -71,4 +70,63 @@ const DesktopNavBarLayout = () => {
         <DropdownMenu />
       </div>
     </nav>
+  )
+}
+
+const DropdownMenu = () => {
+  const [ isOpen, setIsOpen ] = useState(false);
+  const [ firstRender, setFirstRender ] = useState(true);
+  const navigate = useNavigate();
+  const [listening, setListening] = useState(false);
+  const { currentUser } = useCandidateContext()
+  const menuRef = useRef(null);
+  const profile = AuthService.getProfile();
+  if ( !profile ) {
+    navigate(ROUTES.login);
+  }
+
+  const firstname = currentUser?.firstname || '';
+
+  const closeDropdown = () => {
+    setIsOpen(false);
+  }
+
+  useEffect(() => {
+    listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
+  }, [closeDropdown]);
+
+  const handleClick = () => {
+    setIsOpen(isOpen => !isOpen);
+    if ( firstRender ) {
+      setFirstRender(false);
+    }
+  }
+
+  let chevronStyles = 'h-5 w-7 mx-8 ';
+  if ( isOpen ) {
+    chevronStyles += 'animate-spin';
+  } else if ( !firstRender && !isOpen ) {
+    chevronStyles += 'animate-spin-reverse';
+  }
+  return (
+    <div
+      className='relative'
+      ref={menuRef}
+    >
+      <div
+        className='flex items-center bg-royalBlue-bg rounded-md cursor-pointer bg-sky-100 pr-3 pl-5 py-4 rounded-lg'
+        onClick={handleClick}
+      >
+        <span className='text-sm text-royalBlue'>{ firstname }</span>
+        <img
+          src={chevronDownBlue}
+          alt='chevron'
+          className={chevronStyles}
+        />
+      </div>
+      <DropdownContent
+        isOpen={isOpen}
+        handleClick={closeDropdown}
+      />
+    </div>
   )

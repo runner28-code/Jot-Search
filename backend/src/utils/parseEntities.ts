@@ -28,7 +28,6 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     roles: data.skillSet,
 
     description: data.description,
-    phone: data.phone || data.workPhone || data.mobile,
     status: data.status,
     username: data.username,
 
@@ -52,3 +51,4 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
   if (!data.email) return null;
 
   const user: User = {
+    externalId: data.id,

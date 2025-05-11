@@ -1,3 +1,4 @@
+export default function ColorShapes () {
 
   return(<>
     <div className='absolute top-0 left-5% h-44 w-80'>

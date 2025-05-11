@@ -15,7 +15,6 @@ const ResumePreview = ({ resumeUrl }) => {
     file: resumeUrl,
     page,
     canvasRef,
-// Temp comment
   });
 
   const buttonStyles = 'w-15 h-15 ';
@@ -47,7 +46,6 @@ const ResumePreview = ({ resumeUrl }) => {
                 disabled={nextButtonDisabled}
                 onClick={() => setPage(page + 1)}
               >
-                <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>
           </ul>

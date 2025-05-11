@@ -20,7 +20,6 @@ import {
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
-import useWindowDimensions from '../../hooks/windowDimensions';
 
 const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
@@ -55,7 +54,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
   if (state) {
     if (state.title) initialFilterState.title = state.title;
-// Temp comment
     if (state.expertise) initialFilterState.Expertise = state.expertise;
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
   }

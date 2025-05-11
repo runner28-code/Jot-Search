@@ -76,6 +76,7 @@ export default function CandidateCard({ data, disableLink }) {
                 src={experienceIcon}
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{experienceString}</p>
+            </div>
           </div>
           {/* Relocation */}
           <InfoLabel
@@ -124,7 +125,6 @@ function LinkWrapper({ children, link, disableLink }) {
   if ( disableLink ) {
     return (
       <div className={baseStyles}>
-        {children}
       </div>
     );
   }

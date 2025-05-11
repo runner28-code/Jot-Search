@@ -1,3 +1,4 @@
+-- CreateTable
 CREATE TABLE "Candidate" (
     "id" TEXT NOT NULL,
     "address" TEXT,
@@ -39,3 +40,6 @@ CREATE TABLE "Candidate" (
     "hourlyRateLow" TEXT,
     "idOnFile" TEXT,
     "isAnonymized" TEXT,
+    "isDeleted" TEXT,
+    "isEditable" TEXT,
+    "isExempt" TEXT,

@@ -132,3 +132,4 @@ export const saveBullhornJobs = async (jobs: any[]) => {
         });
 
         const newJob = await db.job.create({
+          data: jobData,

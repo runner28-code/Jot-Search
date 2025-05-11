@@ -91,6 +91,7 @@ export async function saveCandidate(userId, candidateId) {
     'company': userId,
     'candidate': candidateId,
   });
+
   if (data.messsage === 'saved candidate') {
     AuthService.toggleSavedCandidate(candidateId, 'save');
   } else {
@@ -110,6 +111,7 @@ export async function addUser(userObject) {
   }
 }
 
+// Temp comment
 export async function updateJob({ id, status, featured }) {
   const { data } = await API.patch(ROUTES.APIjobBase, {
     id,

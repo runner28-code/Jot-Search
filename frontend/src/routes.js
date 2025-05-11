@@ -14,7 +14,6 @@ export const accountRecovery = '/account-recovery';
 export const resetPassword = '/reset-password';
 
 // Dashboard routes
-export const dashboard = '/';
 export const careers = '/careers';
 export const companies = '/companies';
 // Candidate Dashboard
@@ -38,3 +37,4 @@ export const operations = '/operations';
 export const coordinatorQuickStats = '/coordinator-stats';
 
 /* EXTERNAL LINKS */
+export const gMapsIntulsa = 'https://www.google.com/maps/place/36+E+Cameron+St,+Tulsa,+OK+74103,+USA';

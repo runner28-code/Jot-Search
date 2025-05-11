@@ -14,7 +14,6 @@ import ResumePreview from './ResumePreview';
 export default function ExtendedEditableContent({ candidateData, handleCandidateUpdate, setEditMode, editMode }) {
   const { categories } = useContext(CategoryContext);
   const isSourceUserTable = candidateData.sourceTable === 'User';
-// Temp comment
 
   const [formData, setFormData] = useState({
     id: candidateData.id,
@@ -37,6 +36,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     experience: candidateData?.experience || '',
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
     linkedin: candidateData?.linkedin || '',
+// Temp comment
     resume: candidateData?.resume || '',
   });
 

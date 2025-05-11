@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 // import FeaturedTag from '../../components/FeaturedTag';
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';

@@ -23,6 +23,7 @@ export class BullhornService {
   private refresh_token = null;
   private BhRestToken = null;
   private restUrl = null;
+  private corpToken = null;
   private oauth_url = "https://auth.bullhornstaffing.com/oauth";
   private api_base_url = "https://rest.bullhornstaffing.com/rest-services";
 
@@ -341,7 +342,6 @@ export class BullhornService {
           newDbCompany,
         };
       } else {
-        console.log("insertCompany failed");
         return {
           result: false,
           error: res.data.error,
@@ -407,3 +407,5 @@ export class BullhornService {
     }
   }
 
+  makeListArray = (val: string | undefined) => {
+    if (!val) return [];

@@ -308,3 +308,5 @@ model Address {
   address2                String?
   city                    String?
   state                   String?
+  zip                     String?
+  timezone                String?

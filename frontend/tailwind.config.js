@@ -34,7 +34,6 @@ module.exports = {
       },
       colors: {
         // Main Brand Colors
-// Temp comment
         royalBlue: '#176AB9',
         aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
@@ -99,3 +98,5 @@ module.exports = {
         'xl': '24px',
         'xxl': '28px',
         'xxl-2': '32px',
+        'xxl-3': '36px',
+        'xxl-4': '40px',

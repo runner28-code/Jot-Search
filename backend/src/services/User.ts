@@ -186,7 +186,6 @@ export const addUserHistoryEntries = async ({
 
       return newValue !== oldValue;
     })
-    .map((key) => {
       const typedKey = key as keyof dbUser;
       return {
         table: USER_TABLE,
@@ -260,3 +259,4 @@ export const login = async (email: string, password: string) => {
         ...clearPassword(existingUser),
         companyId: existingUser.companyId,
         user_id: existingUser.id,
+      };

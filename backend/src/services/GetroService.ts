@@ -69,7 +69,6 @@ export class GetroService {
 
         while (repeatErr < 3) {
             try {
-                await this.checkAuth();
                 const query = queryString.stringify({
                     per_page,
                     page,
@@ -119,3 +118,4 @@ export class GetroService {
         const res = await axios.get(url, this.getOptions());
         await sleep(2000); // https://developers.getro.com/#rate-limit
 
+        if (res.status === 200) {

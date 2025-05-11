@@ -16,6 +16,7 @@ import { COMPANY } from "../utils/constant";
 
 import db from "../utils/db";
 
+import { JobFilter, USER_FILTER } from "../utils/FieldMatch";
 import { getSavedJobs, saveJob } from "../utils/MainCrud";
 import { clearPassword } from "../utils/password";
 import { COORDINATOR } from "../utils/constant";
@@ -170,3 +171,4 @@ export class CandidateController {
         const tppUserPromise = db.user.findMany({
           where,
           skip: skip < 0 ? 0 : skip,
+          take: count,

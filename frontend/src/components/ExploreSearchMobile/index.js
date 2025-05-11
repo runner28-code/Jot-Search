@@ -53,7 +53,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
         {`Search from ${totalJobs} Opportunities from ${totalCompanies} Companies near Tulsa, OK`}
       </h5>
       <FilterSearch
-        searchTerm={ filterState.title }
         setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }
         placeholder='Search careers or companies'

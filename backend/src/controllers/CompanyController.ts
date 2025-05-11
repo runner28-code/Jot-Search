@@ -148,3 +148,4 @@ export class CompanyController {
     }
   }
 
+  async getCompanyByIdFromGetro(id: string): Promise<any> {
