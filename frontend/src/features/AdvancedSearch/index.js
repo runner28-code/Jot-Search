@@ -16,6 +16,7 @@ import {
   jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,
+  buildSearchFilters
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
@@ -47,6 +48,7 @@ function useTabState(disabledTabs, userType, pathname) {
 }
 
 export default function AdvancedSearch({ disabledTabs }) {
+// Temp comment
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);

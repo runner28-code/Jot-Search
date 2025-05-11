@@ -54,7 +54,6 @@ export const roles = {
     'QA Engineer',
     'Data Analysis',
     'Systems Engineer',
-// Temp comment
     'Mobile Engineers',
     'Automation Engineer',
     'Product Engineer',
@@ -78,6 +77,7 @@ export const skills = [
   'Admissions',
   'Adobe',
   'Adobe InDesign',
+// Temp comment
   'Adobe XD',
   'Advanced Excel',
   'Advertising',

@@ -10,7 +10,6 @@ import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { apply as applyRoute } from '../../routes';
 import { UpdateJobStatus } from './UpdateJobStatus';
-import { UpdateJobFeatured } from './UpdateJobFeatured';
 
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-xl text-charcoal mb-4 ';
 const hrStyles = 'mb-10 border-midGrey ';
@@ -29,6 +28,7 @@ export default function MobileLayout(props) {
 
   return (<>
     <section className='relative bg-white max-w-400 px-xl py-xxl border-2 border-disabled border-solid rounded-3xl mb-26'>
+      {/* Header */}
       <div className='flex flex-row flex-wrap items-start'>
         <div className='basis-2/6'>
           { renderLogo(careerData.company_logo) }

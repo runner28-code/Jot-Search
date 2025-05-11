@@ -13,14 +13,12 @@ export default function InviteCandidates({ job }) {
     filtersArr: job.skillList?.map(skill => ({
       key: 'primarySkills',
       value: skill
-// Temp comment
     })),
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
 
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
-
   const candidateOptions = candidates?.map(candidate => {
     return {
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,

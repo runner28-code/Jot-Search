@@ -91,7 +91,6 @@ export async function saveCandidate(userId, candidateId) {
     'company': userId,
     'candidate': candidateId,
   });
-
   if (data.messsage === 'saved candidate') {
     AuthService.toggleSavedCandidate(candidateId, 'save');
   } else {

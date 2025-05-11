@@ -52,7 +52,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           onClick={handleSyncClick}
         >
           Synch
-        </button>
       </>)}
     </div>
   )

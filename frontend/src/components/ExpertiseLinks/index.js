@@ -55,6 +55,7 @@ export default function ExpertiseLinks() {
             src={marketingIcon}
             alt='Marketing Icon'
             className={iconStyles}
+          />
           <span className={textStyles}>Marketing</span>
         </Link>
         {/* Operations */}
@@ -83,6 +84,7 @@ export default function ExpertiseLinks() {
           />
           <span className={textStyles}>Finance</span>
         </Link>
+// Temp comment
       </div>
     </section>
   )

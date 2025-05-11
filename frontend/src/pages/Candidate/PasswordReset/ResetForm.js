@@ -57,7 +57,6 @@ export default function ResetForm({ candidateData, setType }) {
           value={formData.passwordConfirm}
           onChange={handleChange}
           label='New Password Confirm'
-// Temp comment
         />
       </div>
       { renderMatch(match) }
@@ -68,4 +67,3 @@ export default function ResetForm({ candidateData, setType }) {
         Reset Password
       </button>
     </div>
-  )

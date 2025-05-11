@@ -21,9 +21,11 @@ export default function GlobalSearch({ placeholder }) {
     loading: false,
     forceHidden: true
   });
+  // State and ref to listen for outside clicks
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
+// Temp comment
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );

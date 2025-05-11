@@ -23,7 +23,6 @@ export const defaultCareerState = {
     logo: '',
   },
   loading: true,
-// Temp comment
 }
 
 export const defaultState = {
