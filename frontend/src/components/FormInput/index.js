@@ -15,7 +15,6 @@ export default function FormInput(props) {
     type,
     dropdownType,
     name,
-    label,
     placeholder,
     value,
     required,

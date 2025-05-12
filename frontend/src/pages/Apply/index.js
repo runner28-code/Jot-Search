@@ -84,6 +84,7 @@ export default function Apply() {
         candidateData.ethnicity = 'Prefer not to say';
       }
       const stateObject = {
+        ...applicationObject,
         ...candidateData,
       };
 

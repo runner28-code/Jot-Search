@@ -261,6 +261,7 @@ export default function RegistrationForm() {
           />
           <FormInput
             type='password'
+            name='password'
             placeholder='Password' 
             value={formObj.password}
             onChange={handleChange}

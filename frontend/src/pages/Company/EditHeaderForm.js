@@ -82,7 +82,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             id='lastname'
             name='lastname'
             value={formData.lastname}
-            className={inputStyles + 'text-h6 w-full'} />
         </div>
         {/* Occupation */}
         <div className='mb-6'>

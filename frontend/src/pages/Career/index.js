@@ -84,7 +84,6 @@ CareerPage.propTypes = {
   active: PropTypes.bool
 }
 
-// Temp comment
 function renderNotification(activeData, careerData) {
   if( activeData ) {
     return (<>
@@ -93,6 +92,7 @@ function renderNotification(activeData, careerData) {
         content='Please contact your inTulsa coordinator to provide status updates or if you notive anything incorrect.'
         text='Write to talentnetwork@intulsa.com'
         email='talentnetwork@intulsa.com'
+// Temp comment
         company={careerData.clientCorporation}
         id={careerData.title}
         add='update request'

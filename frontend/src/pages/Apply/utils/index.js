@@ -15,7 +15,6 @@ export const jobReferralChoices = [
   'Friend',
   'Other',
 ];
-
 export const defaultCareerState = {
   title: '',
   company: {
@@ -33,7 +32,6 @@ export const defaultState = {
   referral: '',
   resume: '',
   newResume: {},
-// Temp comment
   ethnicity: '',
   gender: '',
   workAuthorized: '',

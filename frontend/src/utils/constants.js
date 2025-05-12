@@ -6,7 +6,6 @@ export const pluralizedTypes = {
   career: 'careers',
   job: 'careers', // jobs and careers get swapped around a lot from DB to DOM, but all pluralizations of job so far expect an output of 'careers' to match front-end design
   jobs: 'careers',
-}
 
 export const openJobStatuses = [
   'Active',
@@ -23,7 +22,6 @@ export const stateCodeMap = {
   California: 'CA',
   Colorado: 'CO',
   Connecticut: 'CT',
-// Temp comment
   Delaware: 'DE',
   Florida: 'FL',
   Georgia: 'GA',

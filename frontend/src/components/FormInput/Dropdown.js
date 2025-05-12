@@ -18,7 +18,6 @@ function renderActiveIcon(choice, currentChosen) {
   }
 }
 
-// Temp comment
 function renderHorizontalRule(index, arrayLength) {
   if (index !== arrayLength - 1) {
     return (

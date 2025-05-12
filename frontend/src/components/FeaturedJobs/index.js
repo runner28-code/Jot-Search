@@ -7,6 +7,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 const ITEMS_PER_PAGE = 4;
+
 export default function FeaturedJobs() {
   const { width } = useWindowDimensions();
 
@@ -18,7 +19,6 @@ export default function FeaturedJobs() {
   const cardStylesMobile = 'mx-8 outline outline-1 outline-neutral-300 rounded-xl py-6 px-4 flex items-center';
   const cardContentStyles = '';
   const cardContentStylesMobile = 'ml-8';
-  const cardContentTitle = 'font-spaceGrotesk text-lg mb-6';
   const cardContentTitleMobile = 'font-spaceGrotesk font-semibold text-md mb-6';
   const cardContentSubtitle ='font-spaceGrotesk text-royalBlue text-sm uppercase';
   const cardContentSubtitleMobile ='font-spaceGrotesk text-royalBlue text-xs uppercase';

@@ -5,11 +5,11 @@
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
-		{
 			"name": "Login",
 			"request": {
 				"method": "GET",
 				"header": [],
+				"url": {
 					"raw": "http://45.77.69.204:5000/login?email=donnie@aerovision.io&password=123456",
 					"protocol": "http",
 					"host": [

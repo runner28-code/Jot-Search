@@ -42,6 +42,7 @@ export const ACTIVE_STATUSES = [
   'Open',
   'Passive'
 ]
+// Temp comment
 
 // Create default filter state based on filterObject
 const convertedJobFilters = {};
@@ -139,5 +140,4 @@ export function buildSearchFilters(filterObject) {
       });
     }
   });
-// Temp comment
   return searchFilters

@@ -144,6 +144,7 @@ model ClientContact {
   desiredSpecialties String?
   division           String?
   email              String?
+  email2             String?
   email3             String?
   externalID         String?
   fax                String?

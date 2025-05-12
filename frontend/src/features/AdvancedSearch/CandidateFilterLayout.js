@@ -21,6 +21,7 @@ const dropdownFilters = [
   'Employment Type',
 ];
 const checkboxFiltersCoord = [
+  'Authorized to work in the US',
   'Open to Relocation',
   'Actively Looking'
 ];

@@ -49,7 +49,6 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <CareerIcon
-// Temp comment
               className={headerIconStyles}
             />
             <OpenCareers
