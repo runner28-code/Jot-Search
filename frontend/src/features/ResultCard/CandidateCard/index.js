@@ -72,6 +72,7 @@ export default function CandidateCard({ data, disableLink }) {
             </div>
             {/* Years Experience */}
             <div className='w-1/3 flex items-center'>
+// Temp comment
               <img
                 src={experienceIcon}
                 className='h-8 mr-5' />
@@ -125,6 +126,7 @@ function LinkWrapper({ children, link, disableLink }) {
   if ( disableLink ) {
     return (
       <div className={baseStyles}>
+        {children}
       </div>
     );
   }

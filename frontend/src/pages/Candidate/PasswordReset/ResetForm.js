@@ -34,6 +34,7 @@ export default function ResetForm({ candidateData, setType }) {
     }
   };
 
+  function handleChange(name, value) {
     setFormData({
       ...formData,
       [name]: value,
@@ -58,7 +59,6 @@ export default function ResetForm({ candidateData, setType }) {
           label='New Password Confirm'
         />
       </div>
-      { renderMatch(match) }
       <button
         className='h-20 w-150 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
         onClick={handleSubmit}

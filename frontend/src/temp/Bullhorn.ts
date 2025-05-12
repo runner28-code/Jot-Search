@@ -117,7 +117,6 @@ export type Job = {
     type?: string;
     willRelocate?: string;
     yearsRequired?: string;
-};
 
 export type ClientContact = {
     id: string;

@@ -49,6 +49,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
       ...formData,
       [name]: value,
     });
+// Temp comment
   }
 
   function handleReferralChoice(name, value) {

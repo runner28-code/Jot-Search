@@ -91,6 +91,7 @@ const CareerProvider = ({children}) => {
     setCareers(value);
   }
 
+  return (
     <CareerContext.Provider value={{ careers, handleCareersChange }}>
       {children}
     </CareerContext.Provider>

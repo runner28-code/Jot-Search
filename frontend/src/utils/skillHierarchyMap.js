@@ -6,7 +6,6 @@ export const expertises = [
   'Software & Engineering',
   'Sales & Biz Dev',
 ];
-// Temp comment
 
 export const roles = {
   'Finance': [
@@ -147,21 +146,3 @@ export const skills = [
   'Counseling',
   'CPA',
   'CPG',
-  'Creative Writing',
-  'CRM',
-  'CSM',
-  'CSS',
-  'Curriculum Development',
-  'Customer Experience',
-  'Customer Relations',
-  'Customer Service',
-  'Customer Success',
-  'Customer Support',
-  'Cyber',
-  'Cyber Security',
-  'Data Analytics',
-  'Data and Analytics',
-  'Data Management',
-  'Data Modeling',
-  'Data Transformation',
-  'Data Visualization',

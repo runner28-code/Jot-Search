@@ -121,7 +121,6 @@ function DesktopCard({ dataObj, active }) {
             <img
               src={postingAgeIcon}
               className='h-11 mr-5' />
-// Temp comment
             <p className='text-textBlack'>Posted {postingAge}</p>
           </div>
         </div>

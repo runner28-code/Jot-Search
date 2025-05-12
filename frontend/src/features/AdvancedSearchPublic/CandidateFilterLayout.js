@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
@@ -28,6 +27,7 @@ const checkboxFilters = [
   'Actively Looking',
 ];
 
+// Temp comment
 export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,

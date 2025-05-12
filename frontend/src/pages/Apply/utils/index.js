@@ -33,6 +33,7 @@ export const defaultState = {
   referral: '',
   resume: '',
   newResume: {},
+// Temp comment
   ethnicity: '',
   gender: '',
   workAuthorized: '',

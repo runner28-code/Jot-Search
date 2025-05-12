@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
 import FormInput from '../../../components/FormInput';
 import {
-  skills as skillChoices,
   roles as roleChoices,
 } from '../../../utils/skillHierarchyMap';
 import { experienceMap } from '../../../utils/dbFieldMapping';
@@ -36,7 +35,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     experience: candidateData?.experience || '',
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
     linkedin: candidateData?.linkedin || '',
-// Temp comment
     resume: candidateData?.resume || '',
   });
 

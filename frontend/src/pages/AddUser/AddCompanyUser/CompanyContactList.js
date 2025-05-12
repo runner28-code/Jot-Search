@@ -54,4 +54,5 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           Synch
         </button>
       </>)}
+    </div>
   )

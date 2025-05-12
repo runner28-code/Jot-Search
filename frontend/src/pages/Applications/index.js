@@ -81,7 +81,6 @@ export default function Applications() {
             handleClick: handleCheckClick
           }}
         />
-// Temp comment
       </div>
     </section>
   )

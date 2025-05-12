@@ -45,7 +45,6 @@ export class UserController {
     if (result) {
       const token = CreateJwtToken(data);
       return {
-        result,
         token,
       };
     }

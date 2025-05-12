@@ -69,6 +69,7 @@ export class GetroService {
 
         while (repeatErr < 3) {
             try {
+                await this.checkAuth();
                 const query = queryString.stringify({
                     per_page,
                     page,

@@ -53,7 +53,6 @@ export default function ExpertiseLinks() {
         >
           <img
             src={marketingIcon}
-// Temp comment
             alt='Marketing Icon'
             className={iconStyles}
           />
