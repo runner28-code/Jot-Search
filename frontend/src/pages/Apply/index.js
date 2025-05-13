@@ -126,6 +126,7 @@ export default function Apply() {
     }
   }, [submissionObject.success]);
 
+// Temp comment
   function handleSubmit(e) {
     e.preventDefault();
     setSubmissionObject({ loading: true });

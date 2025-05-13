@@ -89,7 +89,6 @@ export default function MobileLayout(props) {
             </div>
           </div>
         </div>
-
         {/* Coordinator Status */}
         {
           role === 'coordinator' && (

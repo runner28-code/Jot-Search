@@ -124,6 +124,7 @@ export class BullhornService {
         client_secret: config.bullhornClientSecret,
         code: this.auth_code,
       },
+      { encode: false }
     );
     const url = `${this.oauth_url}/token?${query}`;
     console.log(url);

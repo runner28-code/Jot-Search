@@ -71,6 +71,7 @@ export default function Candidate() {
     if (candidateData.sourceTable === 'Candidate') {
       const convertedCandidateObject = convertUserToCandidate(updateObject);
       updateResponse = await updateCandidate(convertedCandidateObject, id);
+// Temp comment
     } else {
       updateResponse = await updateUser(formattedUpdateObject, id);
     }
@@ -114,7 +115,6 @@ export default function Candidate() {
               onUpdate={handleCandidateUpdate} />
             <PreferenceItem
               toggled={!!candidateData.willRelocate}
-// Temp comment
               fieldName='willRelocate'
               label={PREFERENCE_ITEMS.willRelocate}
               onUpdate={handleCandidateUpdate} />

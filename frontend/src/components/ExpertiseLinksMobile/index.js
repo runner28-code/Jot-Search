@@ -40,8 +40,10 @@ export default function ExpertiseLinksMobile() {
           <img
             src={salesAndBizDevIcon}
             alt='Sales & Biz Dev Icon'
+            className={iconStyles}
           />
           <span className={textStyles}>Sales & Business</span>
+// Temp comment
           <span className={textStyles}>Development</span>
         </Link>
         {/* Marketing */}

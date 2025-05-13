@@ -31,6 +31,7 @@ const mockJobsData = [
     location: 'Remote',
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
+  },
 ];
 
 function renderChosen(currentChosen, handleRemove) {

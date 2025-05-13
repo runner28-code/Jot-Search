@@ -15,7 +15,6 @@ export default function Login() {
     const res = await API.post(ROUTES.APIlogin, {
       email: email.value,
       password: password.value,
-// Temp comment
     });
 
     if ( res.data.result ) {

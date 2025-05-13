@@ -42,7 +42,6 @@ export const ACTIVE_STATUSES = [
   'Open',
   'Passive'
 ]
-// Temp comment
 
 // Create default filter state based on filterObject
 const convertedJobFilters = {};
@@ -87,6 +86,7 @@ export const candidateFilterObject = {
   'Authorized to work in the US': [
     'Any',
     'Yes',
+// Temp comment
     'No'
   ],
   'Actively Looking': [

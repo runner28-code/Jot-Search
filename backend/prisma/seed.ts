@@ -58,6 +58,7 @@ async function seedJobs() {
         }))!.id,
       },
     ],
+  });
 }
 
 async function seedCandidates() {

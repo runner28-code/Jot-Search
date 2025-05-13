@@ -45,7 +45,6 @@ export const choices = {
     label: 'My Applications',
     icon: ApplicationIcon,
     link: ROUTES.applications,
-  },
   myFavorites: {
     label: 'My Favorites',
     icon: FavoritesIcon,
@@ -121,6 +120,7 @@ export function findSelectedFromPath() {
       return 'Saved Candidates';
     case 'active-careers':
       return 'Active Careers';
+    case 'candidates':
       return 'Candidates';
     case 'careers':
       return 'Careers';

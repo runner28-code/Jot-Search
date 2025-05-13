@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import LoadingSpinner from '../../components/LoadingSpinner';
 import CareerCard from '../ResultCard/CareerCard';
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
@@ -27,6 +26,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
 
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });
 
+  const matchingCareerFound = (careers && careers.length > 0) && careers.some(job => job.externalId === currentCareerId);
   const adjustedTotal = matchingCareerFound ? total - 1 : total || 0;
   const headerString = adjustedTotal + (companyName ? ` Other Careers open at ${companyName}` : ' Other open careers');
 

@@ -19,6 +19,7 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
       </div>
       <CareerProfileInfoContent
         candidateData={candidateData}
+// Temp comment
         handleCandidateUpdate={handleCandidateUpdate}
         setEditMode={setEditMode}
         iconStyles={iconStyles}

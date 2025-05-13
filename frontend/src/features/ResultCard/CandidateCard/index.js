@@ -31,6 +31,7 @@ export default function CandidateCard({ data, disableLink }) {
         link={link}
         disableLink={disableLink}
       >
+        {/* Card Image and New Lead Label */}
         <div className='flex flex-col items-center gap-m mr-20'>
           <div className='h-48 w-48 flex justify-center items-center'>
             <img
@@ -132,7 +133,6 @@ function LinkWrapper({ children, link, disableLink }) {
   const linkStyles = baseStyles + 'cursor-pointer hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
   return (
     <Link 
-      to={link}
       className={linkStyles}
       tabIndex='0'
     >
