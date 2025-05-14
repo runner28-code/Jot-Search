@@ -10,5 +10,6 @@ export const useGetSavedCompanies = ({ count, page, userId, enabled = true }) =>
     getCompaniesKey({userId, count, page}),
     () => getSavedCompanies(userId, count, page),
     { enabled }
+  );
 
   return { savedCompanies: data, total: data?.total || 0, error, isLoading };

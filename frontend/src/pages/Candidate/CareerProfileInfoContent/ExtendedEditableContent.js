@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
 import FormInput from '../../../components/FormInput';
 import {
-// Temp comment
   skills as skillChoices,
   roles as roleChoices,
 } from '../../../utils/skillHierarchyMap';

@@ -313,3 +313,6 @@ model Address {
   countryCode             String?
   countryName             String?
   countryID               Int?
+  addressCompanies        Company[] @relation("addressCompanies")
+  billingAddressCompanies Company[] @relation("billingAddressCompanies")
+

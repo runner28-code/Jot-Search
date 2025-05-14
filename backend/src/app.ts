@@ -57,3 +57,4 @@ const uploadToS3 = async(req: any, res: any) => {
     try {
       const response = await put.promise()
   
+      res.status(200).send({

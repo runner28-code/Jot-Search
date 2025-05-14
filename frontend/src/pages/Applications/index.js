@@ -21,6 +21,7 @@ export default function Applications() {
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
+// Temp comment
         ...job,
         agoDate: job.appliedDate
       }});
@@ -73,7 +74,6 @@ export default function Applications() {
           results={appliedJobsObject.filteredJobs}
           loading={appliedJobsObject.loading}
           type='job'
-// Temp comment
           compact={true}
           agoText={'Applied'}
           selectableProps={{

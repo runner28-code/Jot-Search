@@ -34,6 +34,7 @@ export default function DesktopLayout(props) {
       {/* Header */}
       <div className='flex items-start'>
         <div>
+// Temp comment
           {renderLogo(careerData.company_logo)}
           <sub className='text-xxs text-zinc-700 font-roboto'>{careerData.clientCorporation}</sub>
         </div>
@@ -94,6 +95,7 @@ export default function DesktopLayout(props) {
             <ApplyButton
               datasource={careerData.datasource}
               careerId={careerData.id}
+              applicationUrl={careerData.application_path || careerData.url}
             />
           )}
         </div>

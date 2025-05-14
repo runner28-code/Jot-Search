@@ -55,7 +55,6 @@ export class CandidateController {
           ...returnableUserData
         } = user;
         candidate = {
-          ...(userCandidate || {}),
           ...returnableUserData,
         };
       } else {
@@ -171,5 +170,8 @@ export class CandidateController {
         const tppUserPromise = db.user.findMany({
           where,
           skip: skip < 0 ? 0 : skip,
+          take: count,
           orderBy: {
             firstname: "asc",
+          }
+        });

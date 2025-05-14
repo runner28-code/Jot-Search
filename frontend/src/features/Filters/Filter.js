@@ -35,6 +35,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   // Used to close dropdown when clicking outside of it
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setShowDropdown);
+// Temp comment
   }, [showDropdown]);
 
   const dropdownBorder = showDropdown ? ' border-2 rounded-t-lg' : ' border-2 rounded-lg';

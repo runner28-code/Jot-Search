@@ -25,7 +25,6 @@ export default function CareerFavorite () {
           isLoading ?
             <LoadingSpinner />
             :
-            savedJobs.map((career, index) => {
               return(<>
                 <CareerCard
                   key={career.id}
@@ -49,6 +48,7 @@ export default function CareerFavorite () {
       <div className='pt-24'>
         <Link
           to={ROUTES.careers}
+          class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
             View All
         </Link>
       </div>

@@ -93,3 +93,5 @@ export class UserController {
    * @param user 
    * @returns 
    */
+  @Authorized()
+  @Post("/add-user")

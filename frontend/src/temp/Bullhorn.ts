@@ -56,7 +56,6 @@ export type Job = {
     address_zip?: string;
     address_country_id?: string;
     benefits?: string;
-    billRateCategoryID?: string;
     bonusPackage?: string;
     certificationList?: string;
     clientBillRate?: string;
@@ -138,3 +137,4 @@ export type ClientContact = {
     email3?: string;
     externalID?: string;
     fax?: string;
+    fax2?: string;

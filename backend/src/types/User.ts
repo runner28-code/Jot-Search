@@ -43,3 +43,4 @@ export type User = {
   willRelocate?: string;
   willReceiveNotification?: boolean;
   ethnicity?: string;
+  workAuthorized?: string;

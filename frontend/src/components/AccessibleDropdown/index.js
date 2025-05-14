@@ -68,6 +68,7 @@ export default function AccessibleDropdown(props) {
   );
 }
 
+AccessibleDropdown.defaultProps = {
   choices: [],
 };
 

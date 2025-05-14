@@ -30,3 +30,4 @@ export const ethnicityMap = {
   BL: 'Black or African American',
   NP: 'Native Hawaiian or other Pacific Islander',
   WH: 'White or Caucasian',
+  IA: 'Native American or Alaska Native',

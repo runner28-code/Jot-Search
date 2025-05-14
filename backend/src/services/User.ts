@@ -33,6 +33,7 @@ const validateUser = ({
   role,
   city = "",
   state = "",
+  resume,
   linkedin,
   skills,
   category,
@@ -158,7 +159,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
     clearPassword(updated);
 
     if (config.sendgridSecret) {
-      await sendUpdateUserNotification(updated.email, updated.firstname);
     }
 
     return { result: true, data: updated };
@@ -262,3 +262,6 @@ export const login = async (email: string, password: string) => {
       };
     } else {
       console.log("no existing user");
+      return { result: false, error: "wrong credential" };
+    }
+  } catch (error) {

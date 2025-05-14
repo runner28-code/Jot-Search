@@ -1,7 +1,6 @@
 -- CreateTable
 CREATE TABLE "Candidate" (
     "id" TEXT NOT NULL,
-    "address" TEXT,
     "certifications" TEXT,
     "comments" TEXT,
     "companyName" TEXT,
@@ -22,6 +21,7 @@ CREATE TABLE "Candidate" (
     "desiredLocations" TEXT,
     "disability" TEXT,
     "educationDegree" TEXT,
+    "email" TEXT,
     "email2" TEXT,
     "email3" TEXT,
     "employeeType" TEXT,

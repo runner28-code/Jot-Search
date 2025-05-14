@@ -414,3 +414,7 @@ export class BullhornService {
   };
 
   async saveJobFunc (data: any, testMode = false) {
+    const updatedData: Job[] = data.map((d: any) => {
+      const {
+        owner,
+        isClientEditable,

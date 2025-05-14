@@ -16,7 +16,6 @@ const dropdownFiltersCoord = [
 
 const dropdownFilters = [
   'Category',
-// Temp comment
   'Experience',
   'Remote Availability',
   'Employment Type',
@@ -78,6 +77,7 @@ export default function CandidateFilterLayout(props) {
         {renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange)}
         <FormInput
           type='typeahead'
+// Temp comment
           dropdownType='tags'
           name='skills'
           label='Your skills (select at least 3)'

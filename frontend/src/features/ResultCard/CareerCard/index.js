@@ -23,7 +23,6 @@ export default function CareerCard({ data, active }) {
   const { width } = useWindowDimensions();
 
   const dataObj = {
-// Temp comment
     data,
     categoryString,
     addressString,
@@ -47,6 +46,7 @@ export default function CareerCard({ data, active }) {
           <MobileCard
             dataObj={dataObj}
             active={active}
+// Temp comment
           />
       }
       <FavoriteButton

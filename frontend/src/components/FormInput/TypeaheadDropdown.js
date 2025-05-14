@@ -6,7 +6,6 @@ import ChoiceListItem from '../ChoiceListItem';
 
 export default function TypeaheadDropdown(props) {
   const {
-    type, 
     dropdownType, 
     disabled,
     name, 
@@ -26,7 +25,6 @@ export default function TypeaheadDropdown(props) {
   const menuRef = useRef(null);
 
   const handleChoiceClick = useCallback((choice) => {
-// Temp comment
     if (!currentChosen.includes(choice)) {
       onChange(name, [...currentChosen, choice]);
     } else {

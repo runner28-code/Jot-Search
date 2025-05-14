@@ -5,6 +5,7 @@ import FilterSearch from '../../components/FilterSearch';
 export default function Filters(props) {
   const {
     handleFilterChange,
+    defaultFilterObject,
     filterObject,
     searchLabel,
     searchTerm,
@@ -25,3 +26,27 @@ export default function Filters(props) {
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
     </div>
   )
+}
+
+Filters.propTypes = {
+  handleFilterChange: PropTypes.func,
+  marginBottom: PropTypes.string,
+  defaultFilterObject: PropTypes.object, // Shape changes significantly
+  filterObject: PropTypes.object, // Shape changes significantly
+  searchLabel: PropTypes.string,
+  searchTerm: PropTypes.string,
+  setSearchTerm: PropTypes.func,
+  handleSearchClick: PropTypes.func,
+}
+
+export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick) {
+  if (setSearchTerm) { // if provided a function, render search bar
+    return (
+      <FilterSearch
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        handleSearchClick={handleSearchClick}
+        placeholder={searchLabel}
+      />
+    )
+  }

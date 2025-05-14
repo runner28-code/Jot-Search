@@ -17,7 +17,6 @@ export const saveCandidate = async (
         },
       },
     });
-
     if (!existing) {
       await db.user.update({
         where: {
@@ -40,3 +39,4 @@ export const saveCandidate = async (
           savedCandidates: {
             disconnect: {
               id: candidateId,
+            },

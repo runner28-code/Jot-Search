@@ -111,7 +111,6 @@ const job_filter_exclude_keys = [
   "dietary",
   "dietician",
   "dinner",
-  "dishwasher",
   "dispatcher",
   "distribution assistant",
   "doctor",
@@ -206,3 +205,5 @@ const job_filter_exclude_keys = [
   "job coach",
   "jurisdiction",
   "justice",
+  "kfaq",
+  "kids",

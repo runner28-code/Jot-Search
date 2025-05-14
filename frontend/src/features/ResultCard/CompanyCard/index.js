@@ -84,7 +84,6 @@ export default function CompanyCard({ data }) {
                 src={websiteIcon}
                 className='h-8 mr-5 ml-1' />
               <a
-// Temp comment
                 href='#'
                 className='text-royalBlue underline'
               >

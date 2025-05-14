@@ -1,3 +1,4 @@
+import { Routes, Route, Navigate } from 'react-router-dom';
 import {
   ActiveCareers,
   AddUser,
@@ -36,7 +37,6 @@ export default function Auth() {
           element={<Candidate />} />
         <Route
           path={ROUTES.applications}
-          element={<Applications />} />
         <Route
           path={ROUTES.favorites}
           element={<Favorites />} />

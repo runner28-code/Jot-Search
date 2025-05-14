@@ -5,6 +5,7 @@ import {
   FiChevronLeft as BackIcon,
   FiChevronRight as NextIcon,
 } from 'react-icons/fi';
+// Temp comment
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const ResumePreview = ({ resumeUrl }) => {
@@ -16,7 +17,6 @@ const ResumePreview = ({ resumeUrl }) => {
     page,
     canvasRef,
   });
-// Temp comment
 
   const buttonStyles = 'w-15 h-15 ';
   const buttonStylesDisabled = 'w-15 h-15 opacity-50';

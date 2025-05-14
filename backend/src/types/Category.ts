@@ -8,3 +8,4 @@ export type Category = {
   type?: string;
   _score?: number;
 };
+

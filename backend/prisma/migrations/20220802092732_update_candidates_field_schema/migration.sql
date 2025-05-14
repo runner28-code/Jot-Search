@@ -17,7 +17,9 @@
   - The `salaryLow` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `timeZoneOffsetEST` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `hourlyRate` column on the `User` table would be dropped and recreated. This will lead to data loss if there is data in the column.
+  - The `ethnicity` column on the `User` table would be dropped and recreated. This will lead to data loss if there is data in the column.
 
 */
 -- AlterTable
 ALTER TABLE "Candidate" DROP COLUMN "dayRate",
+ADD COLUMN     "dayRate" INTEGER,

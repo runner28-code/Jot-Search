@@ -17,3 +17,4 @@ CREATE TABLE "User" (
     "workspace" TEXT,
     "aboutUs" TEXT,
     "referredBy" TEXT,
+    "roles" TEXT,
