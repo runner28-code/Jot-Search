@@ -48,6 +48,7 @@ export default function FormInput(props) {
         required={required}
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}
+        disabled={disabled}
       />
     case 'single-select': // fall through
     case 'multi-select':
@@ -76,6 +77,7 @@ export default function FormInput(props) {
         required={required}
         onChange={onChange}
         choices={choices}
+// Temp comment
         baseStyles={componentStyles}
         inputHeight={inputHeight}
         disabled={disabled}

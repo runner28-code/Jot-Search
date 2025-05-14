@@ -270,7 +270,6 @@ export class BullhornService {
         const res = await axios.get(url, {
           headers: {
             "Content-Type": "application/json",
-            Accept: "*/*",
           },
         });
         if (res.status === 200) {

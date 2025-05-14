@@ -1,3 +1,4 @@
+import db from "../utils/db";
 
 export const saveCandidate = async (
   candidateId: string,
@@ -22,7 +23,6 @@ export const saveCandidate = async (
         where: {
           id: companyUserId,
         },
-        data: {
           savedCandidates: {
             connect: {
               id: candidateId,

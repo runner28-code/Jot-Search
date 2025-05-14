@@ -81,7 +81,6 @@ export class CandidateController {
     @CurrentUser() authUser: User,
     @Body() body: any
   ) {
-    try {
       console.log({ body });
       const { id, ...data } = body;
 

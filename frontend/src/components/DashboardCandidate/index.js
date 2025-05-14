@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link, useLocation } from 'react-router-dom';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { VscChevronDown as ChevronDown } from 'react-icons/vsc';
@@ -20,6 +21,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   if( width >= 990 ) {
     return null;
   }
+// Temp comment
   return (<>
     <div className='bg-sky-500 border-b-2 border-white flex items-start justify-start text-white flex-col px-6 py-8'>
       <div className='flex items-center'>

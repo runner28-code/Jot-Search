@@ -206,7 +206,6 @@ model Company {
 
   // could condsolidate and enrich if needed
   bh_description    String?
-  getro_description String?
   description       String?
 
   competitors String[]

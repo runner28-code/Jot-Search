@@ -33,7 +33,6 @@ export default function Candidate() {
   const isProfilePage = path === '/profile';
   if (role === 'candidate' && !isProfilePage) {
     return <Navigate to='/' />
-  }
 
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;
   const [candidateData, setCandidateData] = useState({});
@@ -71,7 +70,6 @@ export default function Candidate() {
     if (candidateData.sourceTable === 'Candidate') {
       const convertedCandidateObject = convertUserToCandidate(updateObject);
       updateResponse = await updateCandidate(convertedCandidateObject, id);
-// Temp comment
     } else {
       updateResponse = await updateUser(formattedUpdateObject, id);
     }

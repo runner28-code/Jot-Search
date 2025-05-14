@@ -59,7 +59,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         {`Search from ${totalJobs} Opportunities from ${totalCompanies} Companies`}
       </h5>
       <FilterSearch
-// Temp comment
         searchTerm={ filterState.title }
         setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }

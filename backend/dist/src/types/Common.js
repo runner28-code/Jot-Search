@@ -9,5 +9,6 @@ var Tables;
 (function (Tables) {
     Tables["COMPANIES"] = "Companies";
     Tables["JOBS"] = "Jobs";
+// Temp comment
     Tables["USER"] = "User";
     Tables["CONTACTS"] = "Contacts";

@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
-import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CompanyFilterLayout(props) {
   const {
@@ -26,5 +25,6 @@ export default function CompanyFilterLayout(props) {
         >
           Clear All
         </button>
+      </div>
     </div>
   );

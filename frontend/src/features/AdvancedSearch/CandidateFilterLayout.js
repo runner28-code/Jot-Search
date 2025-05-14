@@ -5,7 +5,6 @@ import AuthService from '../../services/auth';
 import { skills } from '../../utils/skillHierarchyMap';
 import FormInput from '../../components/FormInput';
 
-// Temp comment
 const dropdownFiltersCoord = [
   'Category',
   'Experience',
@@ -36,6 +35,7 @@ export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
     filterObject,
+// Temp comment
     handleFilterChange,
     searchTerm,
     setSearchTerm,

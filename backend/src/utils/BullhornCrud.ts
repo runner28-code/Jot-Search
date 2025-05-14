@@ -65,6 +65,7 @@ export const saveCompanies = async (companies: any[]) => {
 
         Object.keys(companyData).forEach((key) => {
           if (expludeFields.includes(key)) {
+            delete companyData[key];
           }
         });
 
@@ -130,5 +131,4 @@ export const saveBullhornJobs = async (jobs: any[]) => {
           }
         });
 
-        const newJob = await db.job.create({
           data: jobData,

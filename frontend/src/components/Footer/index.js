@@ -108,6 +108,7 @@ export default function Footer() {
           src={twitter}
           className={socialIconStyle}
         />
+// Temp comment
       </a>
       <a href={ROUTES.facebook}>
         <img
@@ -167,6 +168,7 @@ export default function Footer() {
               rel='noopener noreferrer'
             >
               <img
+                src={intulsaBusinessLogo}
                 alt='Intulsa Logo'
                 className='w-auto h-auto'
               />
