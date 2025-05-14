@@ -94,6 +94,7 @@ export async function saveCandidate(userId, candidateId) {
 
   if (data.messsage === 'saved candidate') {
     AuthService.toggleSavedCandidate(candidateId, 'save');
+  } else {
     AuthService.toggleSavedCandidate(candidateId, 'unsave');
   }
   return normalizeData(data);
@@ -153,3 +154,13 @@ export async function getIndividualCompany(id) {
 export async function getCompanyById(id) {
   const company = await getIndividualCompany(id);
   return company;
+}
+
+export async function getClientContacts(filterValue, filterKey, count) {
+  const { data } = await API.post(ROUTES.APIclientContacts, {
+    'filters': {
+      [filterKey || 'clientCorporation']: filterValue || '',
+    },
+    'count': count
+  });
+  return normalizeData(data.clientContacts)

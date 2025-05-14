@@ -23,6 +23,7 @@ export default function CareerCard({ data, active }) {
   const { width } = useWindowDimensions();
 
   const dataObj = {
+// Temp comment
     data,
     categoryString,
     addressString,
@@ -56,7 +57,6 @@ export default function CareerCard({ data, active }) {
 }
 
 CareerCard.propTypes = {
-// Temp comment
   data: PropTypes.shape({
     id: PropTypes.string,
     city: PropTypes.string,

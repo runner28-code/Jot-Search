@@ -10,3 +10,4 @@ CREATE TABLE "Application" (
 -- CreateTable
 CREATE TABLE "_userSavedCompanies" (
     "A" TEXT NOT NULL,
+    "B" TEXT NOT NULL

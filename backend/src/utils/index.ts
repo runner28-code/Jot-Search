@@ -46,5 +46,7 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
         return false;
     } catch (error) {
         console.log(error);
+        return true;
     }
 }
+

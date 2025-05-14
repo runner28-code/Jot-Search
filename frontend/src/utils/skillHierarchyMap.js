@@ -4,6 +4,7 @@ export const expertises = [
   'Operations',
   'Other',
   'Software & Engineering',
+  'Sales & Biz Dev',
 ];
 
 export const roles = {
@@ -120,7 +121,6 @@ export const skills = [
   'CAD',
   'Call Center',
   'Capital',
-  'Change Management',
   'Chinese',
   'CIA',
   'Cloud',
@@ -147,3 +147,6 @@ export const skills = [
   'CPG',
   'Creative Writing',
   'CRM',
+  'CSM',
+  'CSS',
+  'Curriculum Development',

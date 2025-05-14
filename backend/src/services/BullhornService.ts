@@ -270,6 +270,7 @@ export class BullhornService {
         const res = await axios.get(url, {
           headers: {
             "Content-Type": "application/json",
+            Accept: "*/*",
           },
         });
         if (res.status === 200) {
@@ -409,3 +410,7 @@ export class BullhornService {
 
   makeListArray = (val: string | undefined) => {
     if (!val) return [];
+    return val?.toString().replace(", ", ",").split(",");
+  };
+
+  async saveJobFunc (data: any, testMode = false) {

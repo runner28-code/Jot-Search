@@ -36,7 +36,6 @@ const renderError = (error) => {
 export default function Apply() {
   const params = useParams();
   const jobId = params?.id
-// Temp comment
   const navigate = useNavigate();
   const isLoggedIn = AuthService.loggedIn();
   // State
@@ -44,7 +43,6 @@ export default function Apply() {
   const [originalObject, setOriginalObject] = useState({});
   const [applicationObject, setApplicationObject] = useState(defaultState);
   const [useExistingResume, setUseExistingResume] = useState(false);
-  const [referralChoice, setReferralChoice] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,

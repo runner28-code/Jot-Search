@@ -204,3 +204,5 @@ const job_filter_exclude_keys = [
   "janitor",
   "janitorial",
   "job coach",
+  "jurisdiction",
+  "justice",

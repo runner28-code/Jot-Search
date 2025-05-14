@@ -97,6 +97,7 @@ export type Job = {
     markUpPercentage?: string;
     numOpenings?: string;
     onSite?: string;
+    owner?: string;
     payRate?: string;
     publicDescription?: string;
     publishedZip?: string;
@@ -136,3 +137,4 @@ export type ClientContact = {
     email2?: string;
     email3?: string;
     externalID?: string;
+    fax?: string;

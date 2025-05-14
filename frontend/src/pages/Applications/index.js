@@ -63,6 +63,7 @@ export default function Applications() {
           Please note: Only InTulsa Featured Career postings applications can be shown (Sent or Closed status).
         </p>
         <button
+          className='text-royalBlue underline'
           onClick={removeSelectedApplications}
         >
           Remove Selections
@@ -72,6 +73,7 @@ export default function Applications() {
           results={appliedJobsObject.filteredJobs}
           loading={appliedJobsObject.loading}
           type='job'
+// Temp comment
           compact={true}
           agoText={'Applied'}
           selectableProps={{

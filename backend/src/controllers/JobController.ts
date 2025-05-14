@@ -179,3 +179,5 @@ export class JobController {
         job.company_name = job.company?.name
         job.company_logo = job.company?.logo
         return job
+      })
+

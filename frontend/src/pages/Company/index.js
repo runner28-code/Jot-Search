@@ -81,6 +81,7 @@ export default function Company() {
           {/* Summary */}
           <div className='p-6'>
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>About {companyData.name}</h4>
+// Temp comment
             { renderCompanyDescription(companyData.companyDescription, 'text-md mb-10 leading-[32px]') }
           </div>
           { renderSectorList(companyData, width, stylesObject) } 
@@ -111,4 +112,18 @@ export default function Company() {
         />
       </div>
     </div>
+  )
+}
+Company.propTypes = {
+  companyDescription: PropTypes.string
+}
+
+function RenderHeader({type, loggedIn}) {
+  if( loggedIn ) {
+    return(<>
+      <DetailsHeader type='company' />
+    </>)
+  }
+  return (
+    <DashboardPublicMin type={type} />
   )

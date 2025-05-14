@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
+// Temp comment
 import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
 import linkedin_grey from '../../assets/images/social_linkedin_grey.svg';
 import GlobalSearch from '../GlobalSearch';
 import NavMenu from '../NavMenu';
 import { HiOutlineExternalLink } from 'react-icons/hi';
-// Temp comment
 import AuthService from '../../services/auth';
 import NavSearch from '../NavSearch';
 import NavSearchMobile from '../NavSearchMobile';

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import ResultContainer from '../../features/ResultContainer';
 import TabContainer from '../../components/TabContainer';
@@ -106,6 +105,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     setFilterObject(newState);
   }, [state]);
 
+// Temp comment
   function handleFilterChange(filterType, choice) {
     setFilterObject({
       ...filterObject,

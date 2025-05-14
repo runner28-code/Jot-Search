@@ -33,7 +33,6 @@ const validateUser = ({
   role,
   city = "",
   state = "",
-  resume,
   linkedin,
   skills,
   category,
@@ -261,3 +260,5 @@ export const login = async (email: string, password: string) => {
         companyId: existingUser.companyId,
         user_id: existingUser.id,
       };
+    } else {
+      console.log("no existing user");

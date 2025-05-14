@@ -81,6 +81,7 @@ export class CandidateController {
     @CurrentUser() authUser: User,
     @Body() body: any
   ) {
+    try {
       console.log({ body });
       const { id, ...data } = body;
 
@@ -170,4 +171,5 @@ export class CandidateController {
         const tppUserPromise = db.user.findMany({
           where,
           skip: skip < 0 ? 0 : skip,
-          take: count,
+          orderBy: {
+            firstname: "asc",

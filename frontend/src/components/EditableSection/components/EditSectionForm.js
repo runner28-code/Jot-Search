@@ -8,6 +8,7 @@ import Property from './Property';
 
 // const SECONDARY_FORM_TYPES = ['comments', 'primarySkills', 'expertise', 'resume'];
 
+export default function EditSectionForm({ contentObject, handlePropertyChange }) {
   function handleChange(e) {
     handlePropertyChange(e.target.name, e.target.value);
   }
@@ -61,6 +62,7 @@ import Property from './Property';
               key={key}
               name={key}
               onChange={handleChange}
+// Temp comment
               value={value}
             />
           </div>

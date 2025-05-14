@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import * as ROUTES from '../../../routes';
-// Temp comment
 import API from '../../../services/API';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 
@@ -15,7 +14,6 @@ export default function ResetButton({ candidateData, setType }) {
     });
 
     if ( res.data.result ) {
-      setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);
     }

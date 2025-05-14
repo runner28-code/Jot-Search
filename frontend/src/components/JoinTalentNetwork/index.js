@@ -23,6 +23,7 @@ export default function JoinTalentNetwork() {
               to={ROUTES.signup}
               className='flex items-center justify-center h-28 w-112 bg-buttonLightBlue mt-12 px-18 rounded-lg'
             >
+              <span className='text-softWhite text-ml'>Create an account</span>
             </Link>
           </div>
           <div className='mt-8 px-[5%]'>
@@ -42,7 +43,6 @@ export default function JoinTalentNetwork() {
             Join the InTulsa Talent Network
           </h1>
           <p className='text-ml text-softWhite mt-18'>
-            Build your profile with the type of opportunity you want to attract and next exclusively with our network. Receive email alerts that make you first to know about relevant new opportunities, based on your preferences.
           </p>
           <Link
             to={ROUTES.signup}

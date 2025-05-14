@@ -42,3 +42,4 @@ CREATE TABLE "Company" (
     "externalID" TEXT,
     "facebookProfileName" TEXT,
     "fax" TEXT,
+    "feeArrangement" DOUBLE PRECISION,

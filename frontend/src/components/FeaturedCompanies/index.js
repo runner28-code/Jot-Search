@@ -16,7 +16,6 @@ export default function FeaturedCompanies() {
   ];
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
-// Temp comment
 
   return(
     <div className='py-48 px-[20%] flex flex-col items-center'>
@@ -33,6 +32,7 @@ export default function FeaturedCompanies() {
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'
                 key={index}>
                 { renderLogo(company.logo) }
+// Temp comment
               </Link>
             )
         }
