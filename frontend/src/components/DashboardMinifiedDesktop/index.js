@@ -9,7 +9,6 @@ import TypeTabs from '../../components/TypeTabs';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // Images
-// Temp comment
 import filterIcon from '../../assets/images/filter-toggle.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
@@ -20,7 +19,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
     return (
       <CareerHeader location={location} />
     )
-  }
   if( location === 'companies' ) {
     return (<>
       <h1>Companies</h1>

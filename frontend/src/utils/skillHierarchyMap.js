@@ -64,7 +64,6 @@ export const roles = {
     'Customer Success & Account Management',
     'Sales & BizDev',
     'Sales Leaderships & Management'
-// Temp comment
   ],
 };
 
@@ -135,7 +134,6 @@ export const skills = [
   'CompTIA Network+',
   'Consultative Sales',
   'Consulting',
-  'Consumer Market Research',
   'Containers',
   'Content Development',
   'Content Management',

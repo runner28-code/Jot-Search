@@ -11,5 +11,6 @@ export type SavedJob = {
     job: string;
 }
 
+export type Job = {
     id?: string;
     externalId?: string;

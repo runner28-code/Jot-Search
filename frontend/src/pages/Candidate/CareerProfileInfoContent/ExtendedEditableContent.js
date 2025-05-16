@@ -24,6 +24,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     companyName: candidateData.companyName || '',
     address1: candidateData.address1 || '',
     address2: candidateData.address2 || '',
+// Temp comment
     city: candidateData.city || '',
     state: candidateData.state || '',
     zip: candidateData.zip || '',
@@ -31,6 +32,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     categoryId: candidateData.categoryId || null,
     expertise: categories.find(category => category.id === candidateData.categoryId)?.name || '',
     roles: Array.isArray(candidateData.roles) ? candidateData.roles : (candidateData?.roles?.split(', ') || []),
+    description: candidateData.description || '',
     workspace: candidateData?.workspace || '',
     experience: candidateData?.experience || '',
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),

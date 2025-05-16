@@ -20,12 +20,14 @@ export default function InviteToCareer({ candidate }) {
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
   const jobOptions = jobs?.map(job => {
+    return {
       label: job.title,
       value: job.id,
       job
     }
   }) || [];
   
+// Temp comment
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();

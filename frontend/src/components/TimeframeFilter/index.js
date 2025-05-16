@@ -15,6 +15,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     handleFilterChange(choice);
   }
 
+  function renderDropdown( showDropdown ) {
     if ( !showDropdown ) {
       return null
     }

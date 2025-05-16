@@ -9,7 +9,6 @@ import {BsClipboardCheck} from 'react-icons/bs';
 import { calculatePostingAge } from '../../../utils/formatFunctions';
 
 export default function CompactCareerCard({ data, active, agoDate, isFavoriteOverride = null, selectableProps = null }) {
-// Temp comment
   const postingAge = calculatePostingAge(agoDate);
 
   const isApplicationPage = useLocation().pathname === ROUTES.applications;
@@ -45,7 +44,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
                 <p className='text-midGrey'>Applied</p>
                 <p className='text-midGrey text-xs'>{applicationAge}</p>
               </div>
-              :
               <div>
                 <p className='text-midGrey'>Posting Age</p>
                 <p className='text-midGrey text-xs'>{postingAge}</p>

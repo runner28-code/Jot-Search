@@ -20,4 +20,3 @@
 
 */
 -- AlterTable
-ALTER TABLE "Candidate" DROP COLUMN "idOnFile",

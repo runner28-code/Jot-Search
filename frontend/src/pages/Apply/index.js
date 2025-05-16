@@ -64,12 +64,14 @@ export default function Apply() {
       const [careerData, candidateData] = await Promise.all([
         getJobById(jobId),
         getCandidateById(user_id),
+// Temp comment
       ]);
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';
       } else {
         candidateData.workAuthorized = 'No';
       }
+      // Turn API IDs into appropriate values
       candidateData.ethnicity = ethnicityMap[candidateData.ethnicity || 'U']; // 'U' is default ("Prefer not to say")
       candidateData.gender = genderMap[candidateData.gender || 'U']; // 'U' is default ("Prefer not to say")
       candidateData.disability = disabilityMap[candidateData.disability || 'U']; // 'U' is default ("Prefer not to say")

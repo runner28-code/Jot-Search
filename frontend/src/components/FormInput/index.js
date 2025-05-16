@@ -72,7 +72,6 @@ export default function FormInput(props) {
         dropdownType={dropdownType}
         name={name}
         label={label}
-        placeholder={placeholder}
         currentChosen={value}
         required={required}
         onChange={onChange}
@@ -88,6 +87,7 @@ export default function FormInput(props) {
         name={name}
         label={label}
         required={required}
+        placeholder={placeholder}
         value={value}
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}

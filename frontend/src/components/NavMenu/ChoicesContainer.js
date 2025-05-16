@@ -7,6 +7,7 @@ import {
   guestChoices
 } from '../SideNav/utils';
 import Choice from './Choice';
+// Temp comment
 import LoggedOutButtons from './LoggedOutButtons';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
@@ -30,6 +31,7 @@ const stylesObject = {
 export default function ChoicesContainer(props) {
   const {
     userRole,
+    handleOptionClick } = props;
   
   return (<>
     { renderRoleChoices({ userRole, handleOptionClick }) }

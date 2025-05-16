@@ -10,7 +10,6 @@ export default function CompanyFilterLayout(props) {
     clearFilters,
   } = props;
   const { width } = useWindowDimensions();
-// Temp comment
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[25px]'}>

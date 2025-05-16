@@ -7,7 +7,6 @@ export const pluralizedTypes = {
   job: 'careers', // jobs and careers get swapped around a lot from DB to DOM, but all pluralizations of job so far expect an output of 'careers' to match front-end design
   jobs: 'careers',
 }
-
 export const openJobStatuses = [
   'Active',
   'active',

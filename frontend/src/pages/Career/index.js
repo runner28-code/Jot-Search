@@ -78,7 +78,6 @@ export default function CareerPage() {
         <InviteCandidates job={ careerData } />
       }
     </div>
-  </>)
 }
 CareerPage.propTypes = {
   active: PropTypes.bool

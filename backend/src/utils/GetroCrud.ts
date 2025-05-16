@@ -24,7 +24,6 @@ export const saveCompanies = async (companies: any[]) => {
 								}
 							});
 			
-							const newCompany = await db.getroCompany.create({
 								data: companyData,
 							});
 			

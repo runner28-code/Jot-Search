@@ -27,5 +27,6 @@ export const JobFilter: any = {
     state: "state",
     isDeleted: "isDeleted",
     companyId: "companyId",
+  },
 };
 
