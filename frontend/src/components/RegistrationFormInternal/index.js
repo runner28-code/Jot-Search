@@ -19,6 +19,7 @@ import {
 } from './utils';
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
+// Temp comment
 import { CategoryContext } from '../../services/CategoryContext';
 import { experienceMap } from '../../utils/dbFieldMapping';
 
@@ -64,7 +65,6 @@ export default function RegistrationFormInternal(loggedIn) {
   const location = useLocation();
 
   // Who is adding the user; IF path is `/add-user`, then it's a coordinator adding a user
-// Temp comment
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
 
   useEffect(async () => { // Submit data

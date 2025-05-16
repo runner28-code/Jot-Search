@@ -5,7 +5,6 @@ import {
   FiChevronLeft as BackIcon,
   FiChevronRight as NextIcon,
 } from 'react-icons/fi';
-// Temp comment
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const ResumePreview = ({ resumeUrl }) => {
@@ -31,7 +30,6 @@ const ResumePreview = ({ resumeUrl }) => {
         className='rounded-lg'
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
-        <nav>
           <ul className="flex justify-between">
             <li className="previous">
               <button

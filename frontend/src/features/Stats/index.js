@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import TimeframeFilter from '../../components/TimeframeFilter';
 import { BsArrowUpSquare, BsArrowDownSquare } from 'react-icons/bs';
 import { getCompanyQuickStats, getCoordinatorQuickStats } from '../../services/API';
+// Temp comment
 
 const statFilterChoices = [
   'Today',

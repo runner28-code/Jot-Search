@@ -4,7 +4,6 @@ require("dotenv/config");
 const config = {
     port: process.env.PORT,
     projectId: process.env.PROJECT_ID,
-// Temp comment
     authSecret: process.env.AUTH_SECRET,
     fileUploadSize: process.env.FILE_UPLOAD_SIZE,
     getroEmail: process.env.GETRO_EMAIL,

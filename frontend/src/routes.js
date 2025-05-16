@@ -4,7 +4,6 @@ export const landingPage = '/landing-page';
 export const blog = '/blog';
 export const about = '/about';
 export const login = '/login';
-export const logout = '/logout';
 export const profile = '/profile';
 export const apply = '/apply';
 export const favorites = '/favorites';
@@ -24,7 +23,6 @@ export const savedCareers = '/saved-careers';
 export const savedCompanies = '/saved-companies';
 // Company Dashboard
 export const candidates = '/candidates';
-// Temp comment
 export const savedCandidates = '/saved-candidates';
 export const activeCareers = '/active-careers';
 export const companyQuickStats = '/company-stats';

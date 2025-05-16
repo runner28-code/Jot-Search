@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 
 export default function ChoiceTag({ label, isActive, handleClick }) {
@@ -10,6 +9,7 @@ export default function ChoiceTag({ label, isActive, handleClick }) {
     <div 
       key={label + '-container'}
       className={'multi-select-choice ' + choiceStyles} // multi-select-choice class is used to ensure list doesn't close on click, hooks/outsideClickWrapper.js:9
+// Temp comment
       onClick={() => handleClick(label)}
     >
       <span className='multi-select-choice text-sm'>{label}</span>

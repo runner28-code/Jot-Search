@@ -159,6 +159,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
     clearPassword(updated);
 
     if (config.sendgridSecret) {
+      await sendUpdateUserNotification(updated.email, updated.firstname);
     }
 
     return { result: true, data: updated };

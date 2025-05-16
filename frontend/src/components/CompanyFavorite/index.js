@@ -44,7 +44,6 @@ export default function CareerFavorite () {
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
           </Link>
-        </div>
       </div>
       <div className='pt-24'>
         <Link

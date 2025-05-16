@@ -29,13 +29,13 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
 
   useEffect(() => {
     const value = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
+// Temp comment
     setSelected(value);
   }, [chosen]);
 
   // Used to close dropdown when clicking outside of it
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setShowDropdown);
-// Temp comment
   }, [showDropdown]);
 
   const dropdownBorder = showDropdown ? ' border-2 rounded-t-lg' : ' border-2 rounded-lg';

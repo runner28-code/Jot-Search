@@ -30,7 +30,7 @@ const stylesObject = {
 export default function ChoicesContainer(props) {
   const {
     userRole,
-    handleOptionClick } = props;
+  
   return (<>
     { renderRoleChoices({ userRole, handleOptionClick }) }
     { userRole === 'guest' ? 

@@ -1,5 +1,6 @@
 import {
   Body,
+  Get,
   JsonController,
   Post,
   QueryParam,
@@ -19,3 +20,4 @@ export class CategoryController {
   ): Promise<CategoryByIdResponse> {
     try {
       const _filters = [
+        {

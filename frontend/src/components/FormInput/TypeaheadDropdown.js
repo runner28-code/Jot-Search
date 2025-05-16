@@ -6,6 +6,7 @@ import ChoiceListItem from '../ChoiceListItem';
 
 export default function TypeaheadDropdown(props) {
   const {
+    type, 
     dropdownType, 
     disabled,
     name, 
@@ -29,7 +30,6 @@ export default function TypeaheadDropdown(props) {
       onChange(name, [...currentChosen, choice]);
     } else {
       onChange(name, currentChosen.filter(item => item !== choice));
-    }
   }, [onChange])
 
   /* Close dropdown on any outside clicks */

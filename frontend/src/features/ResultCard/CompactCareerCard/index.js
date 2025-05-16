@@ -9,6 +9,7 @@ import {BsClipboardCheck} from 'react-icons/bs';
 import { calculatePostingAge } from '../../../utils/formatFunctions';
 
 export default function CompactCareerCard({ data, active, agoDate, isFavoriteOverride = null, selectableProps = null }) {
+// Temp comment
   const postingAge = calculatePostingAge(agoDate);
 
   const isApplicationPage = useLocation().pathname === ROUTES.applications;
@@ -54,7 +55,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
         </div>
       </Link>
       {
-// Temp comment
         selectableProps && selectableProps.selectable ?
           <Checkbox
             id={data.id}

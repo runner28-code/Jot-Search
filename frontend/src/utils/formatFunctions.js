@@ -1,6 +1,5 @@
 import fixStringNulls from './fixStringNulls';
 import { experienceMap } from './dbFieldMapping';
-import { stateCodeMap } from './constants';
 
 export function formatCandidateData(candidateData) {
   const formattedData = fixStringNulls(candidateData);
@@ -42,6 +41,7 @@ export function formatCandidateData(candidateData) {
 export function convertUserToCandidate(user) {
   const candidate = {
     id: user.id,
+    firstName: user.firstname || '',
     lastName: user.lastname || '',
     name: formatCandidateName(user.firstname, user.lastname),
     email: user.email,

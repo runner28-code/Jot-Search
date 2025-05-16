@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -21,7 +20,6 @@ export default function InviteToCareer({ candidate }) {
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
   const jobOptions = jobs?.map(job => {
-    return {
       label: job.title,
       value: job.id,
       job

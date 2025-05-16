@@ -1,5 +1,4 @@
 import {
-  Body,
   Get,
   Post,
   Put,
@@ -126,29 +125,3 @@ export class CompanyController {
   @Get("/saved")
   async savedCompanies(
     @CurrentUser() authUser: User,
-    @QueryParam("candidate") candidate: string
-  ) {
-    return await getSavedCompanies(candidate || authUser.id!);
-  }
-
-  async getCompanyByIdFromBullhorn(id: string): Promise<any> {
-    try {
-      const company = await db.company.findFirst({
-        where: {
-          id: id,
-        },
-      });
-      return {
-        company: company,
-        result: true,
-      };
-    } catch (e) {
-      console.log(e);
-      return { result: false, message: e };
-    }
-  }
-
-  async getCompanyByIdFromGetro(id: string): Promise<any> {
-    try {
-      const company = await db.getroCompany.findFirst({
-        where: {

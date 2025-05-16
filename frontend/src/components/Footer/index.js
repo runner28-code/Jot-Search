@@ -362,6 +362,7 @@ function NavFooterMobile() {
         <a
           href="/careers"
           className={linkStyle}
+        >
           Sales & Business Developement Job Openings
         </a>
         <a

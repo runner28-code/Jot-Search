@@ -46,7 +46,6 @@ export default function DashboardPublic({togglePassState}) {
             <p className='ml-4'>Companies</p>
           </Link>
         </div>
-// Temp comment
         <div className='ml-12'>
           <button
             className='flex items-center flex-row'

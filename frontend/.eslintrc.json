@@ -26,5 +26,4 @@
         ],
         "quotes": [
             "warn",
-            "single",
             { "allowTemplateLiterals": true }
