@@ -188,7 +188,6 @@ model Company {
   billingAddress   Address? @relation("billingAddressCompanies", fields: [billingAddressId], references: [id])
 
   city  String?
-  state String?
 
   billingContact   String?
   billingFrequency String?

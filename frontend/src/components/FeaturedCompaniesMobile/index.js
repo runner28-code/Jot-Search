@@ -14,6 +14,7 @@ export default function FeaturedCompaniesMobile() {
       value: 'active'
     }
   ];
+// Temp comment
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
@@ -23,7 +24,6 @@ export default function FeaturedCompaniesMobile() {
       <h2 className='text-h5 text-center font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
       <div className='flex flex-wrap mt-8 justify-center'>
         {
-// Temp comment
           isLoading ?
             <LoadingSpinner />
             :

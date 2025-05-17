@@ -26,5 +26,6 @@ export default function DashboardMinified({ location }) {
       <LinkSwap
         location={location}
         loggedIn={loggedIn}
+      />
     </div>
   )

@@ -100,7 +100,6 @@ module.exports = {
         'xxl-2': '32px',
         'xxl-3': '36px',
         'xxl-4': '40px',
-// Temp comment
         // General Spacing
         '3.5%': '3.5%',
         '5%': '5%',

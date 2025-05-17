@@ -1,7 +1,6 @@
 export function validateInput(name, value, errors, password) {
   const newErrors = { ...errors };
   
-  // Email validation
   if ( name === 'email' ) {
     const validEmail = /\S+@\S+\.\S+/.test(value);
     if ( !validEmail ) {
@@ -26,4 +25,5 @@ export function validateInput(name, value, errors, password) {
   } else if ( errors[name] ) { // Remove from errors if not empty
     newErrors[name] = '';
   }
+
   return newErrors;

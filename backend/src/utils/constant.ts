@@ -102,7 +102,6 @@ const job_filter_exclude_keys = [
   "crime",
   "crisis",
   "crossing guard",
-  "culinary",
   "custodial",
   "custodian",
   "customer pick-up",

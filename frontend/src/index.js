@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import ReactDOM from 'react-dom';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 import { BrowserRouter } from 'react-router-dom';

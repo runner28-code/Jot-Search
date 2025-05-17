@@ -109,6 +109,7 @@ export class CompanyController {
   async insert(
     @Body() body: Company,
     @CurrentUser() authUser: User
+  ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
       return {
         result: false,

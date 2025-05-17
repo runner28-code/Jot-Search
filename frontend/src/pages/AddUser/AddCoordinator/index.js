@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { renderButtonOrLoading } from '../../../components/RegistrationForm/utils';
 import { registerUser } from '../../../services/API';
 import { validateInput } from '../utils';
+
 export default function AddCoordinator() {
   const [formObject, setFormObject] = useState(defaultState);
   const [submissionObject, setSubmissionObject] = useState({

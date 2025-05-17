@@ -21,7 +21,6 @@ DROP TABLE "User";
 
 -- CreateTable
 CREATE TABLE "Company" (
-    "id" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "annualRevenue" BIGINT,
     "addressId" TEXT,
@@ -41,4 +40,5 @@ CREATE TABLE "Company" (
     "departmentId" TEXT,
     "externalID" TEXT,
     "facebookProfileName" TEXT,
+    "fax" TEXT,
     "feeArrangement" DOUBLE PRECISION,

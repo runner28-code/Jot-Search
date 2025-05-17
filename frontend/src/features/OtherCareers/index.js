@@ -15,6 +15,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
       value: ['Active', 'Open']
     },
     {
+// Temp comment
       key: 'companyId',
       value: companyId
     }
@@ -22,6 +23,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
 
   const { careers, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
   const prefetchFunc = (page) => {
+    prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
   }
 
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });

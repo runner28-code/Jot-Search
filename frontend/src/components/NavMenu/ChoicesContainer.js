@@ -7,7 +7,6 @@ import {
   guestChoices
 } from '../SideNav/utils';
 import Choice from './Choice';
-// Temp comment
 import LoggedOutButtons from './LoggedOutButtons';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
@@ -24,7 +23,6 @@ const stylesObject = {
   topLinkStyles,
   bottomLinkStyles,
   iconStyles,
-  spanStyles,
   hrStyles
 }
 

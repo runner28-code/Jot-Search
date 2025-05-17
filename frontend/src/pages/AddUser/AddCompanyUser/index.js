@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import Flag from '../../../assets/icons/flag.svg';
 import Search from '../../../assets/icons/search-gray.svg';
 import { useGetCompanies } from '../../../hooks/queries/useGetCompanies';
 import { useGetClientContacts } from '../../../hooks/queries/useGetClientContacts';
@@ -28,6 +29,7 @@ export default function AddCompanyUser() {
     <div className='flex flex-col'>
       <div className={ containerStyles + 'bg-sky-100'}>
         <h2 className={ titleStyles + 'text-royalBlue flex'}>
+// Temp comment
           <img
             src={Flag}
             alt='flag icon'

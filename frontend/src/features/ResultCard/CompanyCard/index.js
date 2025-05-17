@@ -92,7 +92,6 @@ export default function CompanyCard({ data }) {
             </div>
           </div>
         </div>
-      </Link>
       <FavoriteButton
         type={'company'}
         data={data} />

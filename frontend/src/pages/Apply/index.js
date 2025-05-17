@@ -64,7 +64,6 @@ export default function Apply() {
       const [careerData, candidateData] = await Promise.all([
         getJobById(jobId),
         getCandidateById(user_id),
-// Temp comment
       ]);
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';
@@ -93,7 +92,6 @@ export default function Apply() {
       setOriginalObject(stateObject);
       setApplicationObject({ ...stateObject, loading: false });
     } catch(e) {
-      console.log('error', e);
     }
   }, []);
   useEffect(async () => {

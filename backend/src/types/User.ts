@@ -14,7 +14,6 @@ export type User = {
   zip?: string;
   resume?: string;
   avatar?: string;
-  linkedin?: string;
   skills?: string;
   category?: string;
   categoryId?: string | number;
@@ -34,6 +33,7 @@ export type User = {
   annualRevenue?: string;
   companyURL?: string;
   numEmployees?: string;
+  revenue?: string;
   dateFounded?: string;
 
   employeeType?: string;

@@ -5,6 +5,7 @@ import {
   Body,
   Get,
   Post,
+  Put,
   Delete,
   QueryParam,
   JsonController,
@@ -149,36 +150,3 @@ export class JobController {
           },
           { createdAt: 'desc' }
         ]
-      }); // TODO: assumes we are changing frontend to pass compatible fields and filters params
-
-      const totalPromise = db.job.count({
-        where,
-      });
-
-      const [jobs, total] = await Promise.all([jobPromise, totalPromise]);
-
-      const companyURLs = jobs.filter(job => job.company?.companyURL)
-        .map((job: any) => job.company.companyURL) as string[]
-      const getroCompanies = await db.getroCompany.findMany({
-        select: {
-          domain: true,
-          logo_url: true,
-        },
-        where: {
-          domain: {
-            in: companyURLs
-          }
-        }
-      })
-      const extendedJobs = jobs.map((job: any) => {
-        const getroCompany = getroCompanies.find((gc: any) => gc.domain === job.company?.companyURL)
-        if (getroCompany) {
-          job.company.logo = getroCompany.logo_url
-        }
-        job.company_name = job.company?.name
-        job.company_logo = job.company?.logo
-        return job
-      })
-
-      // console.log({ jobs });
-

@@ -247,6 +247,7 @@ export const isExistUserFull = async (field: string, value: string) => {
 };
 
 export const login = async (email: string, password: string) => {
+  try {
     const existingUser = await db.user.findFirst({
       where: {
         email,

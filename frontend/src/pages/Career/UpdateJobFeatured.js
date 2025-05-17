@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 
@@ -36,6 +35,7 @@ export const UpdateJobFeatured = ({ job }) => {
 
             // TODO: Replace with react-query refetch
             if(result) {
+// Temp comment
               window.location.reload()
             }
           }}>
