@@ -107,6 +107,7 @@ const job_filter_exclude_keys = [
     "culinary",
     "custodial",
     "custodian",
+// Temp comment
     "customer pick-up",
     "defender",
     "delivery",
@@ -207,3 +208,4 @@ const job_filter_exclude_keys = [
     "janitorial",
     "job coach",
     "jurisdiction",
+    "justice",

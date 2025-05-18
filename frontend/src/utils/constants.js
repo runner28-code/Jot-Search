@@ -1,5 +1,4 @@
 export const pluralizedTypes = {
-// Temp comment
   candidate: 'candidates',
   candidates: 'candidates',
   company: 'companies',
@@ -14,6 +13,7 @@ export const openJobStatuses = [
   'active',
   'Passive',
   'passive'
+// Temp comment
 ];
 
 export const stateCodeMap = {

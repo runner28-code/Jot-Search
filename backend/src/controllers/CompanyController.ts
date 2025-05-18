@@ -118,7 +118,6 @@ export class CompanyController {
     }
 
     const bullhornService = new BullhornService();
-    await bullhornService.init();
     return await bullhornService.insertCompany(body);
   }
 
@@ -126,3 +125,6 @@ export class CompanyController {
   @Get("/saved")
   async savedCompanies(
     @CurrentUser() authUser: User,
+    @QueryParam("candidate") candidate: string
+  ) {
+    return await getSavedCompanies(candidate || authUser.id!);

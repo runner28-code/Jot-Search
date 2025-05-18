@@ -418,3 +418,4 @@ export class BullhornService {
       const {
         owner,
         isClientEditable,
+        feeArrangement,

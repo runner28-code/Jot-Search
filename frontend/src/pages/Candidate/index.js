@@ -18,7 +18,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 const PREFERENCE_ITEMS = {
-// Temp comment
   activelyLooking: 'I\'m actively looking for a job',
   openToGetIntro: 'I\'m open to getting introductions from companies',
   willRelocate: 'I\'m willing to relocate to Tulsa OK',
@@ -30,7 +29,6 @@ export default function Candidate() {
   const role = AuthService.getUserRole();
   const { setCurrentUser } = useCandidateContext()
   const path = useLocation().pathname;
-  const { width } = useWindowDimensions();
   const isProfilePage = path === '/profile';
   if (role === 'candidate' && !isProfilePage) {
     return <Navigate to='/' />

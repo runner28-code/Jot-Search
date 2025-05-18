@@ -139,3 +139,4 @@ export type ClientContact = {
     desiredSkills?: string;
     desiredSpecialties?: string;
     division?: string;
+    email?: string;

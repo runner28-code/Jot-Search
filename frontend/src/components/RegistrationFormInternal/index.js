@@ -43,7 +43,6 @@ const defaultState = {
   verifyPassword: '',
   terms: false
 };
-
 const defaultCommunity = {
   community: ''
 }

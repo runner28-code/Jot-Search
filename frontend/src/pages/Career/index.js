@@ -40,7 +40,6 @@ export default function CareerPage() {
 
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';
   const addressString = buildCareerAddress(careerData.city, careerData.state);
-// Temp comment
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
   const postingAge = calculatePostingAge(careerData.createdAt);
   const data = {
@@ -81,7 +80,6 @@ export default function CareerPage() {
     </div>
   </>)
 }
-CareerPage.propTypes = {
   active: PropTypes.bool
 }
 

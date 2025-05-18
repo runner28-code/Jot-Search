@@ -14,6 +14,7 @@ export type Job = {
   title?: string;
   willRelocate?: string;
   yearsRequired?: string;
+  status?: string;
   skillList?: string;
   locations?: string;
   companyId?: string;
@@ -24,3 +25,4 @@ export type Job = {
   startDate?: string;
   type?: string;
   isDeleted?: string;
+  postedAt?: string;

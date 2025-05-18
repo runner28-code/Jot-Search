@@ -35,6 +35,7 @@ export default function LandingPage() {
           { renderJoinTalent() }
         </div>
         { renderSearch() }
+      </section>
       {/* Browse Opportunities by Expertise */}
       { renderExpertiseLinks() }
       { isMobile && <JoinTalentNetwork /> }
@@ -54,7 +55,6 @@ function renderSearch() {
 
   if( width <= 1024 ) {
     return (<>
-      <ExploreSearchMobile
         totalJobs={totalJobsCount}
         totalCompanies={totalCompaniesCount}
         loading={isLoading}

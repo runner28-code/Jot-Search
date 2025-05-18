@@ -1,5 +1,4 @@
 import { useQuery } from '@tanstack/react-query';
-import { queryClient } from '../..';
 import { getCompaniesFull } from '../../services/API';
 
 export const prefetchCompanies = async ({filterValue, filterKey, count, page}) => {

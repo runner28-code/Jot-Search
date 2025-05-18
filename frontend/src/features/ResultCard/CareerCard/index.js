@@ -68,6 +68,7 @@ CareerCard.propTypes = {
     salary: PropTypes.string,
     salaryUnit: PropTypes.string,
     createdAt: PropTypes.string,
+// Temp comment
     category: PropTypes.shape({
       id: PropTypes.number,
       name: PropTypes.string
@@ -119,7 +120,6 @@ function DesktopCard({ dataObj, active }) {
           {/* Posting age */}
           <div className='w-1/3 flex items-center pr-4'>
             <img
-// Temp comment
               src={postingAgeIcon}
               className='h-11 mr-5' />
             <p className='text-textBlack'>Posted {postingAge}</p>

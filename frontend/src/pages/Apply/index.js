@@ -92,6 +92,7 @@ export default function Apply() {
       setOriginalObject(stateObject);
       setApplicationObject({ ...stateObject, loading: false });
     } catch(e) {
+      console.log('error', e);
     }
   }, []);
   useEffect(async () => {

@@ -50,3 +50,4 @@ export const saveMembers = async (members: any[]) => {
                 console.log(`Savng Getro Member with ID = ${member.id}`);
                 const existing = await db.getroMember.findFirst({
 									where: {
+										id: member.id,

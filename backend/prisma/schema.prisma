@@ -73,7 +73,6 @@ model Lead {
   dateAdded             DateTime?
   dateLastComment       DateTime?
   dateLastModified      DateTime?
-  dateLastVisited       DateTime?
   description           String?
   division              String?
   email                 String?
@@ -188,6 +187,7 @@ model Company {
   billingAddress   Address? @relation("billingAddressCompanies", fields: [billingAddressId], references: [id])
 
   city  String?
+  state String?
 
   billingContact   String?
   billingFrequency String?

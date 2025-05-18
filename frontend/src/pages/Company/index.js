@@ -72,10 +72,12 @@ export default function Company() {
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
+            : <HeaderMobile
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
           }
+// Temp comment
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Summary */}
           <div className='p-6'>

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
 import chevronDownBlue from '../../assets/images/down-chevron-blue.svg';
+// Temp comment
 import NavSearch from '../NavSearch';
 import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
@@ -61,7 +62,6 @@ const DesktopNavBarLayout = () => {
           src={inTulsaLogoText}
           alt='logo'
         />
-// Temp comment
       </Link>
       {/* Nav Menu */}
       <div className='flex items-center font-spaceGrotesk'>
