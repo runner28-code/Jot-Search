@@ -13,7 +13,6 @@ export default function TypeaheadDropdown(props) {
     label,
     required,
     placeholder, 
-// Temp comment
     choices, 
     currentChosen, 
     onChange, 
@@ -42,7 +41,6 @@ export default function TypeaheadDropdown(props) {
   
   /* Filter choices based on input */
   useEffect(() => {
-    if (dropdownType === 'tags') {
       setFilteredChoices(choices.filter(choice => choice.toLowerCase().includes(inputValue.toLowerCase())));
     }
   }, [inputValue]);

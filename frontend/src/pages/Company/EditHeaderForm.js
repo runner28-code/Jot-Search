@@ -220,7 +220,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             <IoIosMail
               className={iconStyles + 'fill-royalBlue'} />
               Email:
-          </label>
           <input 
             type='text'
             onChange={handleInputChange}

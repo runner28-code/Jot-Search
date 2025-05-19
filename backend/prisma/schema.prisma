@@ -302,6 +302,7 @@ model Company {
   updatedAt DateTime @updatedAt
 }
 
+model Address {
   id                      String    @id @default(uuid())
   address1                String?
   address2                String?

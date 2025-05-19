@@ -23,7 +23,6 @@ import {
   CompanySearchByID,
   CompanySearchByFilterResponse,
   DATASET_MAIN,
-  ApplyResponse,
   Operator,
 } from "../types/Common";
 import { User } from "../types/User";
@@ -124,6 +123,7 @@ export class CompanyController {
 
   @Authorized()
   @Get("/saved")
+  async savedCompanies(
     @CurrentUser() authUser: User,
     @QueryParam("candidate") candidate: string
   ) {

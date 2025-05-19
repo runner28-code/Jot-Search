@@ -37,7 +37,6 @@ import {
 import { ALLOWED_GETRO_FILTERS } from "../types/Getro";
 import { ALLOWED_JOB_KEYS, JobKey } from "../types/Job";
 import { User } from "../types/User";
-import { consoleLog, getDataSource, getFilterConditions } from "../utils";
 import db from "../utils/db";
 import { JobFilter } from "../utils/FieldMatch";
 import {
@@ -117,6 +116,7 @@ export class JobController {
   async searchByFilter(
     @Body() body: FilterBody & { datasource?: DataSources }
   ) {
+    try {
       const { filters, fields, page, count, datasource } = body;
 
       const datasourceToEnum: Dictionary<Datasource> = {

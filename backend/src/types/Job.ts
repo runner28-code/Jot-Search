@@ -18,6 +18,7 @@ export type Job = {
   skillList?: string;
   locations?: string;
   companyId?: string;
+  interviews?: string;
   onSite?: string;
   salary?: string;
   salaryUnit?: string;

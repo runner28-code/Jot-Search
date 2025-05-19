@@ -10,11 +10,9 @@ export default function PasswordReset({role, candidateData}) {
   const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');
 
-// Temp comment
   function setType(response, condition) {
     setCondition(condition);
     setResponse(response);
-  }
 
   function renderResponse () {
     const successStyle = 'mb-4 text-success';

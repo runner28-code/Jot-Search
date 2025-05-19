@@ -12,7 +12,6 @@ export default function AddUser() {
   // TODO: Add params to initiate with correct form when being routed from other page
   if ( AuthService.getUserRole() !== 'coordinator' ) {
     return <Navigate to={ROUTES.root} />
-  }
 
   const [formType, setFormType] = useState('Candidate');
   function handleDropdownChange(e) {
@@ -27,7 +26,6 @@ export default function AddUser() {
       <img
         src={User}
         alt='User Icon'
-// Temp comment
         className='w-12 h-12 vw-768:w-24 vw-768:h-24 mr-8'
       />
       <span>Add new</span>

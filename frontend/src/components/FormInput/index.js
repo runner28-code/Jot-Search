@@ -34,7 +34,6 @@ export default function FormInput(props) {
     baseStyles: componentStyles,
     inputHeight: inputHeight,
     inputWidth: 'w-full',
-// Temp comment
     listStyles: dropdownStyles,
     listItemStyles: dropdownItemStyles
   };

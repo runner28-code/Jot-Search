@@ -44,7 +44,6 @@ const defaultState = {
   terms: false
 };
 
-const defaultCommunity = {
   community: ''
 }
 export default function RegistrationFormInternal(loggedIn) {
@@ -128,6 +127,7 @@ export default function RegistrationFormInternal(loggedIn) {
         setSubmissionObject({
           loading: false,
           success: false,
+        });
       }, 2000);
     }
   }, [submissionObject.success])

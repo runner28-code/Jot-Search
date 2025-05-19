@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// Temp comment
 import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { appendPathToBaseUrl } from '../../services/API';
@@ -15,7 +16,6 @@ export default function InviteCandidates({ company }) {
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
 
-// Temp comment
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
 
   const candidateOptions = candidates?.map(candidate => {

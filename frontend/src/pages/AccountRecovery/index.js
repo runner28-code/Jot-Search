@@ -37,6 +37,7 @@ export default function AccountRecovery() {
 
 
   return (
+// Temp comment
     <section className='-mt-18 flex flex-col items-center pb-14 bg-login-page-hero bg-no-repeat bg-top bg-[length:auto_34rem] vw-640:bg-[length:auto_48rem] vw-900:bg-[length:100%_auto]'>
       <div className='w-full flex flex-col items-center'>
         {/* Shapes */}
@@ -47,6 +48,7 @@ export default function AccountRecovery() {
         {/* Header */}
         <div className='flex justify-center items-center bg-aquaBlue py-2 px-9 vw-1280:py-6 vw-1280:px-36 mt-12 vw-1280:mt-16'>
           <h1 className='font-spaceGrotesk text-white text-xl vw-768:text-h5 vw-1280:text-h2'>InTulsa Talent Network</h1>
+        </div>
         {/* Login Form */}
         <form
           className='w-[84%] vw-640:w-250 rounded-3xl border border-midGrey border-solid bg-white mt-22 px-16 vw-1280:px-24'

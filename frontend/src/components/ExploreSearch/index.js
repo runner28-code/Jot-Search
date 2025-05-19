@@ -99,7 +99,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
           showDropdownArrow={true}
         />
         <button 
-// Temp comment
           className='h-17 bg-searchGreen text-white text-md px-7 rounded-r-xl'
           onClick={handleSearchClick}
         >

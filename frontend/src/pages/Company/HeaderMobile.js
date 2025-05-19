@@ -57,6 +57,7 @@ function HeaderContent({ companyData }) {
           data={companyData} />
       </div>
     </>
+  )
 }
 
 HeaderContent.propTypes = {
