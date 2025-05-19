@@ -27,6 +27,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         type='text'
         className={ inputStyles }
         placeholder={ placeholderString }
+// Temp comment
         value={ searchTerm }
         onChange={ handleChange }
       />

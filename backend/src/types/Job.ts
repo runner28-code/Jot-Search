@@ -25,3 +25,4 @@ export type Job = {
   startDate?: string;
   type?: string;
   isDeleted?: string;
+  postedAt?: string;

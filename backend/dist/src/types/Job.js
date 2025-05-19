@@ -11,4 +11,3 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "state",
     "zip",
     "country_id",
-    "employmentType",

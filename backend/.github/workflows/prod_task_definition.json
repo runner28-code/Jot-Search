@@ -1,3 +1,4 @@
+// {
 //     "family": "prod-site-backend-task",
 //     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole",
 //     "networkMode": "awsvpc",
@@ -10,5 +11,4 @@
 //             "portMappings": [
 //                 {
 //                     "containerPort": 5000,
-//                     "hostPort": 5000,
 //                     "protocol": "tcp"

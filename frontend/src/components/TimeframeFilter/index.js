@@ -38,6 +38,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   
   return (
     <div
+      ref={menuRef}
       className='relative'>
       <div
         id='title-wrapper'

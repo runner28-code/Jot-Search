@@ -6,12 +6,10 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   function handleChange(e) {
     setSearchTerm(e.target.value);
   }
-
   function handleKeydown(e) {
     if (e.keyCode === 13) {
       handleSearchClick();
     }
-// Temp comment
   }
   
   let containerStyles = 'flex items-center rounded-2xl h-[56px] ';

@@ -32,6 +32,7 @@ export default function AccountRecovery() {
     const errorStyle = 'mb-4 text-error';
     if( response ) {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )
+    }
   }
 
 
@@ -57,7 +58,6 @@ export default function AccountRecovery() {
             <span className='text-sm vw-640:text-ml text-charcoal vw-640:mx-3'>Need an Account?</span>
             <Link
               to={ROUTES.signup}
-              className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
             >
               Sign-up here
             </Link>

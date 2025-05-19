@@ -11,6 +11,7 @@ const ITEMS_PER_PAGE = 4;
 export default function FeaturedJobs() {
   const { width } = useWindowDimensions();
 
+  const linkStyles = '';
   const linkStylesMobile = 'basis-full mb-8'
   const titleStyles = 'text-h4 font-semibold font-spaceGrotesk';
   const titleStylesMoible = 'text-h4 font-semibold font-spaceGrotesk text-center';
@@ -21,6 +22,7 @@ export default function FeaturedJobs() {
   const cardContentTitle = 'font-spaceGrotesk text-lg mb-6';
   const cardContentTitleMobile = 'font-spaceGrotesk font-semibold text-md mb-6';
   const cardContentSubtitle ='font-spaceGrotesk text-royalBlue text-sm uppercase';
+// Temp comment
   const cardContentSubtitleMobile ='font-spaceGrotesk text-royalBlue text-xs uppercase';
   const viewAllStyles = 'text-center mt-48';
   const viewAllStylesMobile = 'text-center mt-12';

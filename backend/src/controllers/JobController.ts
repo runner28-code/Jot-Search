@@ -1,5 +1,4 @@
 import { Datasource, Prisma, PrismaClient } from "@prisma/client";
-import {
   Controller,
   Param,
   Body,
@@ -153,3 +152,6 @@ export class JobController {
       }); // TODO: assumes we are changing frontend to pass compatible fields and filters params
 
       const totalPromise = db.job.count({
+        where,
+      });
+

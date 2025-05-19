@@ -45,6 +45,7 @@ export default function Footer() {
         </a>
         <a href={ROUTES.instagram}>
           <img
+// Temp comment
             src={instagram}
             className={socialIconStyleMobile}
           />
@@ -91,6 +92,7 @@ export default function Footer() {
   }
 
   return (<>
+    <NavFooter />
     <div className='flex py-24 px-[15%] items-center justify-center bg-royalBlue'>
       <img
         src={intulsaFooterWhite}

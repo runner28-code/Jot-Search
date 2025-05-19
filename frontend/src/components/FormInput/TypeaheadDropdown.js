@@ -9,7 +9,6 @@ export default function TypeaheadDropdown(props) {
     type, 
     dropdownType, 
     disabled,
-    name, 
     label,
     required,
     placeholder, 
@@ -22,7 +21,6 @@ export default function TypeaheadDropdown(props) {
   const [inputValue, setInputValue] = useState('');
   const [filteredChoices, setFilteredChoices] = useState(choices);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-// Temp comment
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 

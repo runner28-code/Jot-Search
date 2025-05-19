@@ -147,6 +147,7 @@ const job_filter_exclude_keys = [
   "fabricator",
   "faculty",
   "family",
+  "field coach",
   "field service",
   "financial aid",
   "financial counselor",

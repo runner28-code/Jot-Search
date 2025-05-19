@@ -16,7 +16,6 @@ const job_filter_exclude_keys = [
     "aircraft",
     "alumni",
     "americorps",
-    "analyzer tech",
     "anestesia",
     "animal",
     "animal control",
@@ -165,7 +164,6 @@ const job_filter_exclude_keys = [
     "garbage",
     "garden",
     "gardener",
-// Temp comment
     "gift stocker",
     "giving",
     "goods",

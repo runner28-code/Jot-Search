@@ -43,7 +43,6 @@ export default function RegistrationForm() {
   });
 
   const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(async () => { // Submit data
     // If loading object has been set to 'submitted', validate object and submit
@@ -130,6 +129,7 @@ export default function RegistrationForm() {
     });
   }
 
+  // Alter header and pronoun based on who is registering the new user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
   const pronoun = addType === 'candidate' ? 'you' : 'they';
   const buttonString = addType === 'candidate' ? 'Join' : 'Add Candidate';

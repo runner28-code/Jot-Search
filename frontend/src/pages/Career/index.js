@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getJobById } from '../../services/API';
 import PropTypes from 'prop-types';
+// Temp comment
 import { useLocation } from 'react-router-dom';
 import MobileLayout from './MobileLayout';
 import DesktopLayout from './DesktopLayout';
@@ -41,7 +42,6 @@ export default function CareerPage() {
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';
   const addressString = buildCareerAddress(careerData.city, careerData.state);
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
-// Temp comment
   const postingAge = calculatePostingAge(careerData.createdAt);
   const data = {
     careerData,
