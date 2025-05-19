@@ -75,7 +75,6 @@ export class GetroService {
                     page,
                     detailed: true
                 });
-                const url = `${this.api_base_url_v1}/collections/${this.networkId}/organizations?${query}`;
 
                 const res = await axios.get(url, this.getOptions());
                 await sleep(2000); // https://developers.getro.com/#rate-limit

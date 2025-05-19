@@ -73,6 +73,7 @@ model Lead {
   dateAdded             DateTime?
   dateLastComment       DateTime?
   dateLastModified      DateTime?
+  dateLastVisited       DateTime?
   description           String?
   division              String?
   email                 String?

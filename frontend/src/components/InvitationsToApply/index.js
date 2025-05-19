@@ -38,6 +38,7 @@ export default function InvitationsToApply () {
         (<div className='w-full max-w-400 py-5 grid grid-cols-3 gap-16'>
           {
             appliedJobsObject.loading ?
+// Temp comment
               <LoadingSpinner />
               : appliedJobsObject.jobs.slice(0, 2).map((career, index) => {
                 return(<>

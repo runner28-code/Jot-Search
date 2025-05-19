@@ -1,9 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../..';
-import { getJobsFull } from '../../services/API';
 
 export const prefetchJobs = async ({filtersArr, count, operator, page}) => {
-// Temp comment
   await queryClient.prefetchQuery(getJobsKey({filtersArr, count, operator, page}), () => getJobsFull(filtersArr, count, operator, page));
 }
 

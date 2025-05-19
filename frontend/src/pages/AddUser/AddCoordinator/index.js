@@ -32,7 +32,6 @@ export default function AddCoordinator() {
         });
       }
     }
-  }, [submissionObject.loading]);
 
   // Clear form and success icon after 2 seconds
   useEffect(() => {
@@ -113,6 +112,7 @@ export default function AddCoordinator() {
         {/* Last Name */}
         <label className={labelStyles}>Last Name</label>
         <input
+          type='text'
           className={submissionObject.errors.lastname ? invalidInputStyles : validInputStyles += addInputStyles}
           name='lastname'
           placeholder='Last Name'

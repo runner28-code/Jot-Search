@@ -33,7 +33,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
             <li
               key={contact.id}
               className={ 'flex items-center px-s py-s ' + (index < clientContacts.length - 1 ? 'border-b border-grey300' : '') }
-              onClick={() => handleContactClick(contact)}
             >
               <input
                 type='checkbox'

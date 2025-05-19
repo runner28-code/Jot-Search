@@ -38,7 +38,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   const inputStyles = 'border-lightGrey border-solid border-2 rounded-2xl pl-4 ';
   return (
     <>
-      <div className='flex flex-col mr-12'>
         {/* Avatar */}
         <img
           className='w-100 h-100'

@@ -28,8 +28,3 @@ export type Company = {
 
 export type Job = {
     id: string;
-    application_method?: string;
-    application_path?: string;
-    compensation_currency?: string;
-    compensation_max?: string;
-    compensation_min?: string;

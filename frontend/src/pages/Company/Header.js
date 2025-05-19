@@ -65,7 +65,6 @@ function HeaderContent({ companyData }) {
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={LinkedIn}
-              className={headerIconStyles}
             />
             { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }
           </div>
@@ -133,7 +132,6 @@ function renderCompanyLogo(logoUrl, name) {
   }
   if (!logoUrl) {
     return (
-// Temp comment
       <div className='p-8 border border-slate-70/50 mr-8'>
         <BsBuilding className={logoStyles} />
       </div>

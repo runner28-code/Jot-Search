@@ -37,6 +37,7 @@ export default function NavSearchMobile({ placeholder }) {
         ...defaultCandidateFilterState,
         firstname: splitName[0],
         lastname: splitName?.[1]
+// Temp comment
       }
       delete modifiedFilterObject.title;
 
@@ -47,7 +48,6 @@ export default function NavSearchMobile({ placeholder }) {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
       return { filtersArr: searchFilters };
     } else {
-// Temp comment
       return { filterKey: 'name', filterValue: searchTerm }
     }
   };

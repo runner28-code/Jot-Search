@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
@@ -33,7 +32,6 @@ export default function AccountRecovery() {
     const errorStyle = 'mb-4 text-error';
     if( response ) {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )
-    }
   }
 
 

@@ -4,7 +4,6 @@ import { experienceMap, educationChoices } from './dbFieldMapping';
 import { skills } from './skillHierarchyMap';
 const experienceValues = Object.values(experienceMap).filter(val => val !== null);
 
-/* JOB FILTER UTILS */
 export const jobFilterObject = {
   'Expertise': [
     'Any',
@@ -127,6 +126,7 @@ export function buildSearchFilters(filterObject) {
   const searchFilters = [];
   Object.keys(filterObject).forEach(key => {
     if ( !anyValues.includes(filterObject[key]) ) {
+      let filterKey = key.toLowerCase();
       if ( key === 'On-Site/Remote' ) {
         filterKey = 'onSite';
       } else if ( key === 'companyId' ) {

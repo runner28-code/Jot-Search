@@ -58,6 +58,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (state.expertise) initialFilterState.Expertise = state.expertise;
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
   }
+// Temp comment
 
   const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);
@@ -104,6 +105,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       newState.Expertise = state.Expertise || 'Any';
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
     }
+    setFilterObject(newState);
   }, [state]);
 
   function handleFilterChange(filterType, choice) {

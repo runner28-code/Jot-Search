@@ -29,6 +29,7 @@ export default function Candidate() {
   const role = AuthService.getUserRole();
   const { setCurrentUser } = useCandidateContext()
   const path = useLocation().pathname;
+  const { width } = useWindowDimensions();
   const isProfilePage = path === '/profile';
   if (role === 'candidate' && !isProfilePage) {
     return <Navigate to='/' />
@@ -133,6 +134,7 @@ export default function Candidate() {
             handleCandidateUpdate={handleCandidateUpdate} />
         </div>
         {role === 'coordinator' && 
+// Temp comment
           <InviteToCareer candidate={candidateData} />
         }
         {/* Personal Info (Candidate and Coordinator) */}

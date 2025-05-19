@@ -50,6 +50,7 @@ export default function Applications() {
       filteredJobs: appliedJobsObject.jobs.filter(job => !newHiddenApplications.includes(job.id))
     });
   }
+// Temp comment
 
   const { width } = useWindowDimensions();
   return (
@@ -59,6 +60,7 @@ export default function Applications() {
         IconComponent={BsClipboardCheck}
       />
       <div className='px-8'>
+        <p className='Desktop-Body-textBody-paragraph-2 text-charcoal my-m'>
           Please note: Only InTulsa Featured Career postings applications can be shown (Sent or Closed status).
         </p>
         <button

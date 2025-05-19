@@ -91,7 +91,6 @@ export default function Footer() {
   }
 
   return (<>
-    <NavFooter />
     <div className='flex py-24 px-[15%] items-center justify-center bg-royalBlue'>
       <img
         src={intulsaFooterWhite}
@@ -351,7 +350,6 @@ function NavFooterMobile() {
           className={linkStyle}
         >Our Website
         </a>
-// Temp comment
       </div>
       <div className='flex flex-col basis-full mt-12'>
         <a
