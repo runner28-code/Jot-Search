@@ -78,7 +78,6 @@ export class CandidateController {
   @Authorized()
   @Post("/update")
   async update(
-    @CurrentUser() authUser: User,
     @Body() body: any
   ) {
     try {
@@ -176,3 +175,5 @@ export class CandidateController {
             firstname: "asc",
           }
         });
+        candidatesPromise = Promise.all([tppUserPromise, candidateOnlyPromise]).then(([tppUsers, candidates]) => {
+          // combine the two arrays

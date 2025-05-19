@@ -124,10 +124,13 @@ export class CompanyController {
 
   @Authorized()
   @Get("/saved")
-  async savedCompanies(
     @CurrentUser() authUser: User,
     @QueryParam("candidate") candidate: string
   ) {
     return await getSavedCompanies(candidate || authUser.id!);
   }
 
+  async getCompanyByIdFromBullhorn(id: string): Promise<any> {
+    try {
+      const company = await db.company.findFirst({
+        where: {

@@ -100,6 +100,7 @@ export default function AddCoordinator() {
         {/* First Name */}
         <label className={labelStyles}>First Name</label>
         <input
+          type='text'
           className={submissionObject.errors.firstname ? invalidInputStyles : validInputStyles += addInputStyles}
           name='firstname'
           placeholder='First Name'

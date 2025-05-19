@@ -302,7 +302,6 @@ model Company {
   updatedAt DateTime @updatedAt
 }
 
-model Address {
   id                      String    @id @default(uuid())
   address1                String?
   address2                String?
@@ -316,3 +315,6 @@ model Address {
   addressCompanies        Company[] @relation("addressCompanies")
   billingAddressCompanies Company[] @relation("billingAddressCompanies")
 
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getJobById } from '../../services/API';
 import PropTypes from 'prop-types';
-// Temp comment
 import { useLocation } from 'react-router-dom';
 import MobileLayout from './MobileLayout';
 import DesktopLayout from './DesktopLayout';
@@ -103,7 +102,6 @@ function renderNotification(activeData, careerData) {
         text='Notify Talent inTulsa by Email'
         email='talentnetwork@intulsa.com'
         company={careerData.clientCorporation}
-        id={careerData.title}
         add='filled'
       />
     </>)

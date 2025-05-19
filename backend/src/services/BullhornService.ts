@@ -73,6 +73,7 @@ export class BullhornService {
         return resolve(cookies);
       });
     });
+  }
 
   async setCookie(data: any) {
     const targetFile = __dirname + "/../config/cookie.json";
@@ -418,3 +419,7 @@ export class BullhornService {
         owner,
         isClientEditable,
         feeArrangement,
+        externalID,
+        clientContact,
+        id,
+        categories,

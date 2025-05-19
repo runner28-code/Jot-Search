@@ -50,3 +50,4 @@ export const sendResetPassword = async (to: string, name: string, token: string)
   }
 }
 
+export const sendCandidatesToEmployers = async (candidates: string[], employers_emails: string[]) => {

@@ -45,6 +45,7 @@ const defaultState = {
 
 const defaultCommunity = {
   community: ''
+}
 export default function RegistrationForm(loggedIn) {
   const {categories} = useContext(CategoryContext);
   const [formObj, setFormObj] = useState(defaultState);
@@ -102,7 +103,6 @@ export default function RegistrationForm(loggedIn) {
         // Set success to true if on add-user page, navigate user to login if not
         if ( addType === 'coordinator' ) {
           return setSubmissionObject({
-            loading: false,
             success: true,
           })
         } else {

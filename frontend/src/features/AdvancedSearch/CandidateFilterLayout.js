@@ -3,7 +3,6 @@ import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 import { skills } from '../../utils/skillHierarchyMap';
-import FormInput from '../../components/FormInput';
 
 const dropdownFiltersCoord = [
   'Category',
@@ -32,6 +31,7 @@ const checkboxFilters = [
 ];
 
 export default function CandidateFilterLayout(props) {
+  const {
     defaultFilterObject,
     filterObject,
     handleFilterChange,

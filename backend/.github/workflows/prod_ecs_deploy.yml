@@ -12,6 +12,7 @@
 #   ECS_CLUSTER: 'intulsa-cluster-prod'
 #   ECS_TASK_DEFINITION: '.github/workflows/prod_task_definition.json'
 #   CONTAINER_NAME: 'intulsa-backend-container-prod'
+
 # jobs:
 #   deploy:
 #     name: Deploy
@@ -22,3 +23,4 @@
 #     - name: Checkout
 #       uses: actions/checkout@v3
 
+#     - name: Configure AWS credentials

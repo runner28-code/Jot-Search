@@ -27,3 +27,4 @@ export type Company = {
 
 export type Job = {
     id: string;
+    application_method?: string;

@@ -114,7 +114,6 @@ export function findSelectedFromPath() {
     case 'applications':
       return 'Applications';
     case 'saved-careers':
-// Temp comment
       return 'Saved Careers';
     case 'saved-companies':
       return 'Saved Companies';
@@ -123,6 +122,7 @@ export function findSelectedFromPath() {
     case 'active-careers':
       return 'Active Careers';
     case 'candidates':
+// Temp comment
       return 'Candidates';
     case 'careers':
       return 'Careers';

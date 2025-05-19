@@ -1,4 +1,5 @@
 import { Datasource, Prisma, PrismaClient } from "@prisma/client";
+import {
   Controller,
   Param,
   Body,
@@ -116,7 +117,6 @@ export class JobController {
   async searchByFilter(
     @Body() body: FilterBody & { datasource?: DataSources }
   ) {
-    try {
       const { filters, fields, page, count, datasource } = body;
 
       const datasourceToEnum: Dictionary<Datasource> = {
@@ -155,3 +155,8 @@ export class JobController {
         where,
       });
 
+      const [jobs, total] = await Promise.all([jobPromise, totalPromise]);
+
+      const companyURLs = jobs.filter(job => job.company?.companyURL)
+        .map((job: any) => job.company.companyURL) as string[]
+      const getroCompanies = await db.getroCompany.findMany({

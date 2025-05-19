@@ -12,7 +12,6 @@ export const jobReferralChoices = [
   'LinkedIn',
   'Indeed',
   'Google',
-// Temp comment
   'Friend',
   'Other',
 ];

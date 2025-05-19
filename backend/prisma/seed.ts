@@ -38,7 +38,6 @@ async function seedJobs() {
         categoryId: (await db.category.findFirst({
           where: { name: "Software & Engineering" },
         }))!.id,
-      },
       {
         title: "Junior Software Engineer",
         companyId: (await db.company.findFirst())?.id,
@@ -95,3 +94,4 @@ async function seedCandidates() {
         phone: "987-654-3210",
         email: "bobtesting@gmail.com",
         comments: "He does nothing...",
+      },

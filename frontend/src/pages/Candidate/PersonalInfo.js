@@ -35,6 +35,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     gender: candidateData.gender || '',
   })
 
+// Temp comment
   const [editMode, setEditMode] = useState(false);
 
   const [referralChoice, setReferralChoice] = useState(false);
@@ -54,7 +55,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
       setReferralChoice(true);
-// Temp comment
     }
     if( value !== 'Community Partner' ) {
       setReferralChoice(false);

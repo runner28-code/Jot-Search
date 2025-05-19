@@ -28,5 +28,4 @@ export default function CompanyFilterLayout(props) {
         </button>
       </div>
     </div>
-// Temp comment
   );

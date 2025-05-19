@@ -52,7 +52,6 @@ export default function MobileLayout(props) {
               <img
                 src={locationIcon}
                 className='h-8 mr-5' />
-              <p className='text-textBlack text-xs'>{addressString}</p>
             </div>
             {/* Remote/Onsite/Hybrid */}
             <div className='flex w-1/2 items-center'>
@@ -121,7 +120,6 @@ export default function MobileLayout(props) {
         <button
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
           onClick={() => navigate(-1)}
-// Temp comment
         >
           Back
         </button>

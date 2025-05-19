@@ -23,7 +23,6 @@ const mockJobsData = [
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/kumgo_2_eqbzbl.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
-    location_state: 'OK',
     onSite: false,
     listingAge: '1 month',
     specialty: 'Technology'

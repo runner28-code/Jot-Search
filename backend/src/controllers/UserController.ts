@@ -95,3 +95,5 @@ export class UserController {
    */
   @Authorized()
   @Post("/add-user")
+  async addUser(@CurrentUser() authUser: User, @Body() user: User) {
+    let data = { ...user };

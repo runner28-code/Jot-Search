@@ -43,3 +43,4 @@ CREATE TABLE "Company" (
     "facebookProfileName" TEXT,
     "fax" TEXT,
     "feeArrangement" DOUBLE PRECISION,
+    "funding" TEXT,

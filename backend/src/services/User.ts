@@ -266,3 +266,6 @@ export const login = async (email: string, password: string) => {
       return { result: false, error: "wrong credential" };
     }
   } catch (error) {
+    console.log(error);
+    return { result: false, error };
+  }

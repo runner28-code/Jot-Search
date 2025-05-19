@@ -100,7 +100,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
     "dateClosed",
     "date_end",
     "dateLastExported",
-    "dateLastModified",
     "dateLastPublished",
     "startDate", //
     "skills",
@@ -136,3 +135,5 @@ export const saveBullhornJobs = async (jobs: any[]) => {
         });
 
         console.log(`Saved job with ID = ${job.externalId} successfully`);
+      } catch (error: any) {
+        console.log(error.message);

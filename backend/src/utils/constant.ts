@@ -208,3 +208,5 @@ const job_filter_exclude_keys = [
   "justice",
   "kfaq",
   "kids",
+  "kitchen",
+  "kotv",
