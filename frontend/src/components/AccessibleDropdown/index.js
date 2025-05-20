@@ -25,7 +25,6 @@ export default function AccessibleDropdown(props) {
   function handleSelection(choice) {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {
-// Temp comment
         onChange(name, currentChosen.filter(item => item !== choice));
       } else {
         onChange(name, [...currentChosen, choice]);
@@ -39,7 +38,6 @@ export default function AccessibleDropdown(props) {
   containerStyles += stylesObject.marginBottom ? stylesObject.marginBottom : 'mb-16 ';
   let buttonStyles = buildButtonStyles(stylesObject, currentChosen, type);
   let listStyles = 'absolute top-full w-full max-h-140 overflow-y-auto ';
-  listStyles += stylesObject.listStyles ? stylesObject.listStyles : 'bg-white font-bold px-10 py-8 z-10 shadow-resultCardShadow ';
   
   const closeMenuOnSelect = type === MULTI_SELECT ? false : true;
   return (

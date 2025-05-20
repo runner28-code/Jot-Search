@@ -27,3 +27,4 @@ CREATE TABLE "Lead" (
     "email3" TEXT,
     "fax" TEXT,
     "fax2" TEXT,
+    "fax3" TEXT,

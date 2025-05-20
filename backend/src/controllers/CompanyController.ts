@@ -23,6 +23,7 @@ import {
   CompanySearchByID,
   CompanySearchByFilterResponse,
   DATASET_MAIN,
+  ApplyResponse,
   Operator,
 } from "../types/Common";
 import { User } from "../types/User";
@@ -134,3 +135,5 @@ export class CompanyController {
     try {
       const company = await db.company.findFirst({
         where: {
+          id: id,
+        },

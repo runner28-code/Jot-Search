@@ -45,9 +45,9 @@ export default function ResetForm({ candidateData, setType }) {
     <div>
       <div className='w-140'>
         <FormInput
+// Temp comment
           type='text'
           name='password'
-// Temp comment
           value={formData.password}
           onChange={handleChange}
           label='New Password'

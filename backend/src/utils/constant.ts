@@ -72,6 +72,7 @@ const job_filter_exclude_keys = [
   "child",
   "circulation",
   "claims",
+  "class",
   "classroom",
   "cleaner",
   "clerk",
@@ -209,3 +210,4 @@ const job_filter_exclude_keys = [
   "kids",
   "kitchen",
   "kotv",
+  "kqcw",

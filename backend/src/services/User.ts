@@ -269,3 +269,4 @@ export const login = async (email: string, password: string) => {
     console.log(error);
     return { result: false, error };
   }
+};

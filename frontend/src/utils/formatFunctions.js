@@ -45,6 +45,7 @@ export function convertUserToCandidate(user) {
     firstName: user.firstname || '',
     lastName: user.lastname || '',
     name: formatCandidateName(user.firstname, user.lastname),
+    email: user.email,
     phone: user.phone,
     description: user.description,
     experience: user.experience?.parseInt() || 1,
@@ -75,3 +76,30 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
     return avatarUrl;
   }
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;
+}
+
+export function formatPhoneNumber(phoneNumberString) {
+  if ( !phoneNumberString ) {
+    return 'No Phone Number Provided';
+  }
+  let regex = /\+\d\s\(\d{3}\) \d{3}-\d{4}/i;
+  if ( regex.test(phoneNumberString) ) { // Already formatted correctly is regex passes
+    return phoneNumberString;
+  }
+  if ( phoneNumberString.includes('-') ) { // Reset dashes. Will re-add dashes in correct format
+    phoneNumberString = phoneNumberString.replace(/-/g, '');
+  }
+  if (phoneNumberString.length === 10) {
+    const areaCode = phoneNumberString.slice(0, 3);
+    const firstThree = phoneNumberString.slice(3, 6);
+    const lastFour = phoneNumberString.slice(6, 10);
+    return `(${areaCode}) ${firstThree}-${lastFour}`;
+  }
+  if ( phoneNumberString[0] === '+' ) {
+    const internationalCode = phoneNumberString.slice(0, 2);
+    const areaCode = phoneNumberString.slice(2, 5);
+    const firstThree = phoneNumberString.slice(5, 8);
+    const lastFour = phoneNumberString.slice(8, 12);
+    return `${internationalCode} (${areaCode}) ${firstThree}-${lastFour}`;
+  }
+  return phoneNumberString;

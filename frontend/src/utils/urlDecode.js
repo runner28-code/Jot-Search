@@ -1,5 +1,7 @@
 export default function urlDecode(decodeString) {
+// Temp comment
   if ( !decodeString ) {
+    return '';
   }
   let decodedString = decodeString;
   decodedString = decodedString.replace(/%20/g, ' ');

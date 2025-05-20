@@ -81,6 +81,7 @@ export default function Apply() {
       }
       // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {
+// Temp comment
         candidateData.ethnicity = 'Prefer not to say';
       }
       const stateObject = {

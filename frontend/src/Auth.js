@@ -4,6 +4,7 @@ import {
   AddUser,
   Applications,
   Candidate,
+  Candidates,
   Dashboard,
   Favorites,
   Logout,
@@ -22,6 +23,7 @@ export default function Auth() {
     <div className='vw-640:pl-20 vw-640:pr-20 vw-1280:pl-0'>
       <Routes>
         <Route
+// Temp comment
           path='/'
           element={<Dashboard />} 
         />

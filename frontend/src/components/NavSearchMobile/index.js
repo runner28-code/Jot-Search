@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
@@ -58,7 +59,6 @@ export default function NavSearchMobile({ placeholder }) {
   // State and ref to listen for outside clicks
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
-
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );

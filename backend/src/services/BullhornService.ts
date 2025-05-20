@@ -423,3 +423,4 @@ export class BullhornService {
         clientContact,
         id,
         categories,
+        ...otherData

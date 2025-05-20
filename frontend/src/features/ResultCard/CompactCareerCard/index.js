@@ -1,5 +1,4 @@
 import { Link, useLocation } from 'react-router-dom';
-// Temp comment
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
@@ -14,7 +13,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
 
   const isApplicationPage = useLocation().pathname === ROUTES.applications;
   const applicationAge = data.applications && data.applications.length > 0 ? calculatePostingAge(data.applications[0].createdAt) : 'N/A';
-  return (
     <div
       className='relative'
       key={data.id}

@@ -37,7 +37,6 @@ export default function AccountRecovery() {
 
 
   return (
-// Temp comment
     <section className='-mt-18 flex flex-col items-center pb-14 bg-login-page-hero bg-no-repeat bg-top bg-[length:auto_34rem] vw-640:bg-[length:auto_48rem] vw-900:bg-[length:100%_auto]'>
       <div className='w-full flex flex-col items-center'>
         {/* Shapes */}
@@ -56,7 +55,6 @@ export default function AccountRecovery() {
         >
           <h4 className='w-full text-xl vw-640:text-h4 text-charcoal font-spaceGrotesk font-semibold mt-14 text-center'>Account Recovery</h4>
           <div className='flex vw-640:justify-center items-center mb-12 mt-12'>
-            <span className='text-sm vw-640:text-ml text-charcoal vw-640:mx-3'>Need an Account?</span>
             <Link
               to={ROUTES.signup}
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'

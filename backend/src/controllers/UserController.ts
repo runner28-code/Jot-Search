@@ -54,6 +54,7 @@ export class UserController {
 
   /**
    * No-auth route for register page
+   * @param user 
    * @returns 
    */
   @Post("/register")

@@ -21,6 +21,7 @@ const PREFERENCE_ITEMS = {
 export default function PersonalInfo({role, candidateData, handleCandidateUpdate}) {
   if ( role === 'company' ) {
     return null;
+  }
   const [formData, setFormData] = useState({
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',

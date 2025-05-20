@@ -30,7 +30,6 @@ export const roles = {
     'Operations Generalist',
     'Project and Program Management',
     'Administration',
-// Temp comment
     'Executive Assistant',
     'Recruiting',
     'People Operations',
@@ -82,6 +81,7 @@ export const skills = [
   'Advanced Excel',
   'Advertising',
   'Aerospace',
+// Temp comment
   'Agile',
   'AI',
   'AJAX',
@@ -161,3 +161,4 @@ export const skills = [
   'Cyber Security',
   'Data Analytics',
   'Data and Analytics',
+  'Data Management',

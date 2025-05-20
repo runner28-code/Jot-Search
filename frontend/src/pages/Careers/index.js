@@ -9,6 +9,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdSearch as SearchIcon } from 'react-icons/md';
 import Dashboard from '../../components/DashboardPublic';
 import DashboardCandidate from '../../components/DashboardCandidate';
+import useWindowDimensions from '../../hooks/windowDimensions';
 
 import AuthService from '../../services/auth';
 
@@ -25,7 +26,6 @@ export default function Careers() {
   }
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
-      <RenderHeader
         loggedIn={loggedIn}
         userType={userType}
         togglePassState={togglePassState}

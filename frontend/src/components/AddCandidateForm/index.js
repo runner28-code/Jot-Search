@@ -247,7 +247,6 @@ export default function RegistrationForm() {
             name='referredBy'
             placeholder={`How did ${pronoun} hear about us?`} 
             value={formObj.referredBy}
-            onChange={handleChange}
             error={errors.includes('referredBy')}
           />
           {/* File input for resume */}

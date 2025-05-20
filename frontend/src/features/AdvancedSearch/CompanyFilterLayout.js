@@ -3,7 +3,6 @@ import FilterSearch from '../../components/FilterSearch';
 
 export default function CompanyFilterLayout(props) {
   const {
-// Temp comment
     searchTerm,
     setSearchTerm,
     handleSearchClick,
@@ -17,6 +16,7 @@ export default function CompanyFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
+// Temp comment
           placeholder='Search Companies'
           additionalClasses='w-1/2'
         />

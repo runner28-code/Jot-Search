@@ -6,7 +6,6 @@ export default function MobileHeader(props) {
     icon,
     IconComponent,
     classOverride,
-    colorizeStroke,
   } = props;
   
   let addOnIconClasses = '';
@@ -26,7 +25,6 @@ export default function MobileHeader(props) {
       )}
       <h1 className='font-spaceGrotesk font-medium text-lg text-lightGrey'>
         { headerText }
-// Temp comment
       </h1> 
     </div>
   );

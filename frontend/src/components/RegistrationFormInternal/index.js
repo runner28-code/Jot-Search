@@ -44,6 +44,7 @@ const defaultState = {
   terms: false
 };
 
+const defaultCommunity = {
   community: ''
 }
 export default function RegistrationFormInternal(loggedIn) {
