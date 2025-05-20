@@ -28,6 +28,7 @@ export default function Candidate() {
   // Redirect if userRole is 'candidate' unless it's their profile, candidates should not be able to see other candidates
   const role = AuthService.getUserRole();
   const { setCurrentUser } = useCandidateContext()
+  const path = useLocation().pathname;
   const { width } = useWindowDimensions();
   const isProfilePage = path === '/profile';
   if (role === 'candidate' && !isProfilePage) {
@@ -45,7 +46,6 @@ export default function Candidate() {
     setLoading(false);
   }, []);
 
-  async function handleCandidateUpdate(updateObject) {
     console.log('candidateData', candidateData);
     console.log('updateObject', updateObject);
     const formattedUpdateObject = {};

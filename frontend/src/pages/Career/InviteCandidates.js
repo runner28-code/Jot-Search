@@ -9,7 +9,6 @@ import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
 
 export default function InviteCandidates({ job }) {
-// Temp comment
   const { candidates, isLoading } = useGetCandidates({
     filtersArr: job.skillList?.map(skill => ({
       key: 'primarySkills',

@@ -51,7 +51,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const { width } = useWindowDimensions();
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();
-// Temp comment
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
   const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
   if (state) {
@@ -110,6 +109,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   function handleFilterChange(filterType, choice) {
     setFilterObject({
+// Temp comment
       ...filterObject,
       [filterType]: choice
     });

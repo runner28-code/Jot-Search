@@ -81,7 +81,6 @@ export const skills = [
   'Advanced Excel',
   'Advertising',
   'Aerospace',
-// Temp comment
   'Agile',
   'AI',
   'AJAX',

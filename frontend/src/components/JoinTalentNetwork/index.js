@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+// Temp comment
 import PropTypes from 'prop-types';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -6,6 +7,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function JoinTalentNetwork() {
 
   const { width } = useWindowDimensions();
+
   if( width <= 990 ) {
     return (<>
       {/* Join Hero and call-to-action */}

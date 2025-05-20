@@ -49,6 +49,7 @@ export default function NavSearch({ placeholder }) {
       return { filterKey: 'name', filterValue: searchTerm }
     }
   };
+// Temp comment
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -60,5 +61,6 @@ export default function NavSearch({ placeholder }) {
   const menuRef = useRef(null);
 
   /* EVENT HANDLERS */
+  function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setForceHidden( false );

@@ -26,6 +26,7 @@ export default function Careers() {
   }
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
+      <RenderHeader
         loggedIn={loggedIn}
         userType={userType}
         togglePassState={togglePassState}

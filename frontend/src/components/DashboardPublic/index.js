@@ -7,6 +7,7 @@ import filterIcon from '../../assets/icons/filter-toggle.svg';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+// Temp comment
 
 
 export default function DashboardPublic({togglePassState}) {
@@ -43,7 +44,6 @@ export default function DashboardPublic({togglePassState}) {
             to={ROUTES.companies}
           >
             <CompanyIcon />
-// Temp comment
             <p className='ml-4'>Companies</p>
           </Link>
         </div>

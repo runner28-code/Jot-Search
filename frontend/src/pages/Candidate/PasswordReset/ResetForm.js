@@ -7,6 +7,7 @@ import * as ROUTES from '../../../routes';
 export default function ResetForm({ candidateData, setType }) {
   const [formData, setFormData] = useState({
     id: candidateData.id,
+// Temp comment
     password: '',
     passwordConfirm: '',
   });
@@ -45,7 +46,6 @@ export default function ResetForm({ candidateData, setType }) {
     <div>
       <div className='w-140'>
         <FormInput
-// Temp comment
           type='text'
           name='password'
           value={formData.password}

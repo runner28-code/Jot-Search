@@ -25,7 +25,6 @@ module.exports = {
             transform: 'rotate(180deg)'
           },
           to: {
-// Temp comment
             transform: 'rotate(0deg)'
           },
         },
@@ -92,7 +91,6 @@ module.exports = {
       spacing: {
         // Styleguide Spacing
         'xxs': '4px',
-        'xs': '8px',
         's': '12px',
         'm': '16px',
         'l': '20px',

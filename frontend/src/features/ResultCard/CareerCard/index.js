@@ -44,7 +44,6 @@ export default function CareerCard({ data, active }) {
           />
           :
           <MobileCard
-// Temp comment
             dataObj={dataObj}
             active={active}
           />
@@ -74,7 +73,6 @@ CareerCard.propTypes = {
       name: PropTypes.string
     })
   }).isRequired,
-  index: PropTypes.number,
   active: PropTypes.bool,
 }
 

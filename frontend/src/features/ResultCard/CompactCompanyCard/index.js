@@ -48,6 +48,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           : 
           <FavoriteButton
             type={'company'}
+// Temp comment
             data={data}
             isFavoriteOverride={isFavoriteOverride} />
       }

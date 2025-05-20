@@ -42,3 +42,4 @@ CREATE TABLE "Candidate" (
     "isAnonymized" TEXT,
     "isDeleted" TEXT,
     "isEditable" TEXT,
+    "isExempt" TEXT,

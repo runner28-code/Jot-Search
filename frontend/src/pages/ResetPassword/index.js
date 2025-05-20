@@ -5,7 +5,6 @@ import * as ROUTES from '../../routes';
 
 import API from '../../services/API';
 
-
 export default function ResetPassword() {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
@@ -17,3 +16,4 @@ export default function ResetPassword() {
   const token = queryParams.get('token');
 
   const handlePassword = (event) => {
+    setPassword(event.target.value);

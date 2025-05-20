@@ -6,6 +6,7 @@ import FormInput from '../../components/FormInput';
 import API from '../../services/API';
 import AuthService from '../../services/auth';
 
+export default function Login() {
   const [error, setError] = useState('');
 
   const handleSubmit = async (event) => {
@@ -58,7 +59,6 @@ import AuthService from '../../services/auth';
           </div>
           { renderError() }
           <FormInput
-            type='text'
             name='email'
             label='Login Email'
           />
