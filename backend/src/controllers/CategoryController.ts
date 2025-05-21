@@ -23,3 +23,4 @@ export class CategoryController {
         {
           key: "id",
           value: id,
+        },

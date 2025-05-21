@@ -178,3 +178,4 @@ export class CandidateController {
         });
         candidatesPromise = Promise.all([tppUserPromise, candidateOnlyPromise]).then(([tppUsers, candidates]) => {
           // combine the two arrays
+          const typedUsers = tppUsers.map((user: any) => ({

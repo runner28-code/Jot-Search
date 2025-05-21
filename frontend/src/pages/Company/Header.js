@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 
 // import FeaturedTag from '../../components/FeaturedTag';
 import useWindowDimensions from '../../hooks/windowDimensions';

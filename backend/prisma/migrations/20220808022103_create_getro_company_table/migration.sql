@@ -2,7 +2,6 @@
 CREATE TABLE "GetroCompany" (
     "angellist_url" TEXT,
     "approx_employees" INTEGER,
-    "crunchbase_url" TEXT,
     "description" TEXT,
     "domain" TEXT,
     "facebook_url" TEXT,
@@ -10,3 +9,4 @@ CREATE TABLE "GetroCompany" (
     "id" TEXT NOT NULL,
     "instagram_url" TEXT,
     "jobs_count" INTEGER,
+    "linkedin_url" TEXT,

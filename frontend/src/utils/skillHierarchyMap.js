@@ -161,3 +161,5 @@ export const skills = [
   'Data Analytics',
   'Data and Analytics',
   'Data Management',
+  'Data Modeling',
+  'Data Transformation',

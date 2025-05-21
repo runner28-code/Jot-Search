@@ -45,5 +45,4 @@ export default function Companies() {
           userType={userType}
         />
       </div>
-    </section>
   )

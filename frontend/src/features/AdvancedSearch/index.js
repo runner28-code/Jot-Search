@@ -26,7 +26,6 @@ const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
-// Temp comment
   coordinator: ['candidates', 'careers', 'companies'],
   company: ['careers', 'candidates' ],
   candidate: ['careers', 'companies'],
@@ -48,6 +47,7 @@ function useTabState(disabledTabs, userType, pathname) {
   return useActiveTabState(userType === 'candidate' ? 'careers' : 'candidates');
 }
 
+// Temp comment
 export default function AdvancedSearch({ disabledTabs }) {
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();

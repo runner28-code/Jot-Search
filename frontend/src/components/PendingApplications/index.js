@@ -7,7 +7,6 @@ import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import featuredIcon from '../../assets/icons/pyramid.svg';
 import { getAppliedJobs } from '../../services/API';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 export default function PendingApplications () {
   const profile = AuthService.getProfile();
@@ -48,7 +47,6 @@ export default function PendingApplications () {
             :
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
               return(<>
-                <CareerCard
                   key={career.id}
                   index={index}
                   data={career}

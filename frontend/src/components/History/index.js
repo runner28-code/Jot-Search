@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import HistoryItem from './HistoryItem';
 import ViewAllLink from '../ViewAllLink';
 import AuthService from '../../services/auth';
@@ -8,6 +9,7 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
   if (userRole !== 'coordinator') {
     return null;
   }
+  const viewAllHref = `/candidates/history/${id}`;
   return (<>
     <section className='mb-24'>
       <h4 className={headerStyles}>History</h4>

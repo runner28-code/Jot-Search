@@ -47,7 +47,6 @@ function HeaderContent({ companyData }) {
                   styles={headerRowTextStyles}
                   companyId={companyData.id}
                 />
-// Temp comment
               </div> 
             </div>
           </div>

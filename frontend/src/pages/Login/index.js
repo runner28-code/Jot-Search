@@ -27,7 +27,6 @@ export default function Login() {
   const renderError = () => {
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
-    }
   }
 
   return (
@@ -59,6 +58,7 @@ export default function Login() {
           </div>
           { renderError() }
           <FormInput
+            type='text'
             name='email'
             label='Login Email'
           />

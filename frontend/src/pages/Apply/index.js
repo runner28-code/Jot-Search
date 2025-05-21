@@ -32,6 +32,7 @@ const renderError = (error) => {
     return null;
   }
 }
+
 export default function Apply() {
   const params = useParams();
   const jobId = params?.id
@@ -111,6 +112,7 @@ export default function Apply() {
       }
     }
   }, [submissionObject.loading]);
+// Temp comment
 
   useEffect(() => {
     if (submissionObject.success) {

@@ -5,6 +5,7 @@ class AuthService {
   getProfile() {
     if ( !this.loggedIn() ) {
       return null;
+    }
     return decode(this.getToken());
   }
 

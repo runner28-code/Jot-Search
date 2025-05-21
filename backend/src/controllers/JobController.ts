@@ -133,7 +133,6 @@ export class JobController {
         datasource: _datasource as any,
         ..._filters,
       }
-
       const skip = (count || 0) * ((page - 1) || 0)
 
       const jobPromise = db.job.findMany({
@@ -163,3 +162,7 @@ export class JobController {
       const getroCompanies = await db.getroCompany.findMany({
         select: {
           domain: true,
+          logo_url: true,
+        },
+        where: {
+          domain: {

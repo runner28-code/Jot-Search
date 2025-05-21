@@ -128,6 +128,7 @@ export default function Footer() {
         />
       </a>
     </div>
+    <div
       id='footer'
       className='flex flex-col'
     >

@@ -1,4 +1,3 @@
--- CreateTable
 CREATE TABLE "_userSavedJobs" (
     "A" TEXT NOT NULL,
     "B" TEXT NOT NULL
@@ -11,3 +10,4 @@ CREATE TABLE "_userSavedCandidates" (
 );
 
 -- CreateIndex
+CREATE UNIQUE INDEX "_userSavedJobs_AB_unique" ON "_userSavedJobs"("A", "B");
