@@ -3,7 +3,6 @@ import FilterSearch from '../../components/FilterSearch';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CompanyFilterLayout(props) {
-  const {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
@@ -24,6 +23,7 @@ export default function CompanyFilterLayout(props) {
           className='text-white text-sm whitespace-nowrap'
           onClick={clearFilters}
         >
+          Clear All
         </button>
       </div>
     </div>

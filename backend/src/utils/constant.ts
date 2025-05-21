@@ -195,6 +195,7 @@ const job_filter_exclude_keys = [
   "instructor",
   "intake",
   "intern",
+  "internal controls",
   "internship",
   "intervention",
   "inventory",

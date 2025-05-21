@@ -48,7 +48,6 @@ export class CompanyController {
   ): Promise<CompanySearchByID> {
     const datasource = getDataSource(id);
     if (datasource === DataSource.BULLHORN) {
-      const company = await this.getCompanyByIdFromBullhorn(id);
       return {
         company,
         source: datasource,

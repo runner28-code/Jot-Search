@@ -10,6 +10,7 @@ export default function ResetForm({ candidateData, setType }) {
     password: '',
     passwordConfirm: '',
   });
+// Temp comment
   const [match, setMatch] = useState('');
 
   const handleSubmit = async (event) => {

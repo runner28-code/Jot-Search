@@ -16,6 +16,7 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
         const choiceStyles = `bg-lightGrey w-full pl-4 pr-2 py-2 text-${textColor} Desktop-Body-textBody-paragraph hover:bg-royalBlue hover:text-white ` + color + (index === choices.length - 1 ? ' rounded-b-lg' : ' border-b border-solid border-midGrey');
         return (
           <div
+// Temp comment
             onClick={() => handleChoiceClick(choice.id)}
             className={choiceStyles}
             key={choice.id}>

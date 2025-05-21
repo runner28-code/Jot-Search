@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
@@ -15,6 +16,7 @@ export default function DashboardMinified({ location }) {
         <LinkSwap
           location={location}
           loggedIn={loggedIn}
+// Temp comment
         />
         <MinifiedTitle location={location} />
       </div>

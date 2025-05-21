@@ -79,7 +79,6 @@ export default function Apply() {
       if ( candidateData.resume ) {
         setUseExistingResume(true);
       }
-      // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {
         candidateData.ethnicity = 'Prefer not to say';
       }

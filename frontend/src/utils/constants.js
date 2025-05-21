@@ -32,7 +32,6 @@ export const stateCodeMap = {
   Indiana: 'IN',
   Iowa: 'IA',
   Kansas: 'KS',
-// Temp comment
   Kentucky: 'KY',
   Louisiana: 'LA',
   Maine: 'ME',
@@ -62,7 +61,6 @@ export const stateCodeMap = {
   Texas: 'TX',
   Utah: 'UT',
   Vermont: 'VT',
-  Virginia: 'VA',
   Washington: 'WA',
   'West Virginia': 'WV',
   Wisconsin: 'WI',

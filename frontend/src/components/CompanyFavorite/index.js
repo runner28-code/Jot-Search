@@ -31,7 +31,6 @@ export default function CareerFavorite () {
                   key={company.id}
                   index={index}
                   data={company}
-// Temp comment
                   agoDate={company.agoDate}
                 />
               </>)

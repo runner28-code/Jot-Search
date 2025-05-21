@@ -21,5 +21,6 @@ export class ClientContactController {
     try {
       const contact = await db.clientContact.findFirst({
         where: {
+          id,
         },
       });

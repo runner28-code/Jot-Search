@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import TextInput from './TextInput';
 import FileInput from './FileInput';
@@ -37,6 +36,7 @@ export default function FormInput(props) {
     inputWidth: 'w-full',
     listStyles: dropdownStyles,
     listItemStyles: dropdownItemStyles
+// Temp comment
   };
   switch (type) {
     case 'file':

@@ -28,6 +28,7 @@ export const choices = {
   },
   careers: {
     label: 'Careers',
+    icon: CareerIcon,
     link: ROUTES.careers,
   },
   companies: {
@@ -58,7 +59,6 @@ export const choices = {
   activeCareers: {
     label: 'Active Careers',
     icon: CareerIcon,
-    link: ROUTES.activeCareers,
   },
   talentInTulsa: {
     label: 'Talent.InTulsa.com',

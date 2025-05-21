@@ -76,7 +76,6 @@ export default function CandidateCard({ data, disableLink }) {
                 src={experienceIcon}
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{experienceString}</p>
-// Temp comment
             </div>
           </div>
           {/* Relocation */}

@@ -89,6 +89,7 @@ export default function AddCoordinator() {
   const labelStyles = 'opacity-70 text-xs';
   const addInputStyles = ' w-full';
   const inputContainer = 'w-full vw-900:w-6/12 vw-900:pr-8 flex flex-col mb-12';
+  const buttonStyles = 'w-100 text-md bg-royalBlue font-semibold text-white rounded-2xl px-6 py-8 font-spaceGrotesk';
   const buttonString = 'Create Coordinator';
   return (
     <form

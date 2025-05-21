@@ -20,6 +20,7 @@ export const jobFilterObject = {
   'Years Experience': [
     'Any',
     ...experienceValues
+  ],
   'Status': [
     'Any',
     'Filled',

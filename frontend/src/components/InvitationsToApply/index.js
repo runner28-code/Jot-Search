@@ -11,6 +11,7 @@ export default function InvitationsToApply () {
     jobs: [],
     filteredJobs: [],
     loading: true
+  });
 
   useEffect( async () => {
     const appliedJobs = await getInvitationsToApply(profile.user_id);
@@ -23,6 +24,7 @@ export default function InvitationsToApply () {
       jobs: appliedJobsWithDate,
       loading: false
     });
+// Temp comment
   }, []);
 
 

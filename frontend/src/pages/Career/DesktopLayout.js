@@ -25,7 +25,6 @@ export default function DesktopLayout(props) {
     postingAge,
     role,
   } = props.data;
-  const navigate = useNavigate();
 
   const skillList = careerData.skillList;
 
