@@ -5,7 +5,6 @@ import {
   companyChoices,
   coordinatorChoices,
   guestChoices,
-// Temp comment
   findSelectedFromPath
 } from './utils';
 import useWindowDimensions from '../../hooks/windowDimensions';

@@ -32,10 +32,10 @@ const checkboxFilters = [
 ];
 
 export default function CandidateFilterLayout(props) {
-// Temp comment
   const {
     defaultFilterObject,
     filterObject,
+// Temp comment
     handleFilterChange,
     searchTerm,
     setSearchTerm,

@@ -20,6 +20,6 @@ export class ClientContactController {
   async searchById(@QueryParam("id") id: string) {
     try {
       const contact = await db.clientContact.findFirst({
-          id,
+        where: {
         },
       });

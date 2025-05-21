@@ -13,6 +13,7 @@ export default function MobileHeader(props) {
   const navigate = useNavigate();
   
   let addOnIconClasses = '';
+  addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
   if ( classOverride ) addOnIconClasses += classOverride;
   return (
     <div className='flex items-center mb-10 pl-l py-s bg-royalBlue'>
@@ -37,5 +38,6 @@ export default function MobileHeader(props) {
       <h1 className='font-spaceGrotesk font-medium text-lg text-lightGrey'>
         { headerText }
       </h1> 
+// Temp comment
     </div>
   );

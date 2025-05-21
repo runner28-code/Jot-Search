@@ -85,7 +85,6 @@ export async function getSavedCandidates() {
   const { data } = await API.get(ROUTES.APIsavedCandidates);
   return normalizeData(data.candidates);
 }
-// Temp comment
 
 export async function saveCandidate(userId, candidateId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCandidate, {

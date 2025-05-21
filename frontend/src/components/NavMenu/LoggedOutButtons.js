@@ -8,6 +8,7 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
   const { pathname } = useLocation();
   const forceShowPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage ];
   const linkStyles = forceShowPages.includes(pathname) ? stylesObject.baseLinkStyles : stylesObject.topLinkStyles;
+// Temp comment
   return (<>
     <Link 
       to={ROUTES.login}

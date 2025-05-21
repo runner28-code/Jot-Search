@@ -73,6 +73,7 @@ export default function AccountRecovery() {
             <button
               className='h-20 bg-royalBlue text-center text-white text-md tracking-wide px-12 rounded-lg'
               type='submit'
+            >
               Get New Password
             </button>
           </div>
@@ -86,7 +87,6 @@ export default function AccountRecovery() {
           className='text-sm vw-640:text-ml text-royalBlue underline'
         >
           help@intulsa.com
-        </a>
       </div>
     </section>
   )

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
+// Temp comment
 
 export default function CompanyFilterLayout(props) {
   const {
@@ -16,7 +17,6 @@ export default function CompanyFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
-// Temp comment
           placeholder='Search Companies'
           additionalClasses='w-1/2'
         />

@@ -61,6 +61,7 @@ export default function RegistrationForm(loggedIn) {
 
   const navigate = useNavigate();
   const location = useLocation();
+// Temp comment
 
   // Who is adding the user; IF path is `/add-user`, then it's a coordinator adding a user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
@@ -146,6 +147,7 @@ export default function RegistrationForm(loggedIn) {
       linkedin: linkedin.value,
       password: password.value,
       verifyPassword: verifyPassword.value,
+    });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
       success: false,

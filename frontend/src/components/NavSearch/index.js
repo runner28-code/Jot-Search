@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
+import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 import searchWhite from '../../assets/images/search-white.webp';
@@ -61,4 +62,3 @@ export default function NavSearch({ placeholder }) {
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
-    setForceHidden( false );

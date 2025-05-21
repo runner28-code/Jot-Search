@@ -176,7 +176,6 @@ const job_filter_exclude_keys = [
     "gutter installer",
     "gym",
     "gymnastics",
-// Temp comment
     "health",
     "historic",
     "history",
@@ -210,6 +209,5 @@ const job_filter_exclude_keys = [
     "jurisdiction",
     "justice",
     "kfaq",
-    "kids",
     "kitchen",
     "kotv",

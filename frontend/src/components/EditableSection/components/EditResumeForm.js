@@ -19,7 +19,6 @@ export default function EditResumeForm({ handleChange }) {
       <label
         className='text-h5 font-bold text-royalBlue'
         htmlFor='resume'
-// Temp comment
       >
         Upload New Resume:
       </label>

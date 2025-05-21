@@ -133,6 +133,7 @@ export class JobController {
         datasource: _datasource as any,
         ..._filters,
       }
+
       const skip = (count || 0) * ((page - 1) || 0)
 
       const jobPromise = db.job.findMany({

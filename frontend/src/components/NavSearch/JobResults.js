@@ -4,6 +4,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import urlDecode from '../../utils/urlDecode';
 import * as ROUTES from '../../routes';
 
+// Temp comment
 export default function JobResults({ jobs }) {
   if (jobs.length === 0) {
     return null;
@@ -19,4 +20,5 @@ export default function JobResults({ jobs }) {
             key={job.id} />
         )
       })}
+    </>
   )

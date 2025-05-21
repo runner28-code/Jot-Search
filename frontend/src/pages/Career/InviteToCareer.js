@@ -25,7 +25,6 @@ export default function InviteToCareer({ candidate }) {
       value: job.id,
       job
     }
-  }) || [];
   
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {

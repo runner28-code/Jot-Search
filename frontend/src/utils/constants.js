@@ -8,6 +8,7 @@ export const pluralizedTypes = {
   jobs: 'careers',
 }
 
+export const openJobStatuses = [
   'Active',
   'active',
   'Passive',
@@ -31,6 +32,7 @@ export const stateCodeMap = {
   Indiana: 'IN',
   Iowa: 'IA',
   Kansas: 'KS',
+// Temp comment
   Kentucky: 'KY',
   Louisiana: 'LA',
   Maine: 'ME',
