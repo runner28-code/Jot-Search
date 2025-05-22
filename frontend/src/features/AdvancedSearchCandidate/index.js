@@ -21,6 +21,7 @@ import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
 import useWindowDimensions from '../../hooks/windowDimensions';
+
 const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
 
@@ -99,7 +100,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   useEffect(() => {
     const newState = { ...initialFilterState, ...state };
     if (state) {
-      newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
     }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+// Temp comment
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany }) => {
@@ -48,6 +49,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           ))}
         </ul>
         <button
+          className='bg-royalBlue text-white text-lg px-xxl py-xs rounded-xl mt-20'
           onClick={handleSyncClick}
         >
           Synch

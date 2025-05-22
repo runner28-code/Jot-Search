@@ -9,6 +9,7 @@ export const genderChoices = Object.values(genderMap);
 export const veteranStatusChoices = Object.values(veteranStatusMap);
 export const disabilityChoices = Object.values(disabilityMap);
 export const jobReferralChoices = [
+  'LinkedIn',
   'Indeed',
   'Google',
   'Friend',
@@ -37,6 +38,7 @@ export const defaultState = {
   workAuthorized: '',
   disability: '',
   veteran: '',
+// Temp comment
   loading: true
 }
 

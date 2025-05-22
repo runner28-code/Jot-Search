@@ -85,13 +85,13 @@ export default function Apply() {
       }
       const stateObject = {
         ...applicationObject,
+        ...candidateData,
       };
 
       setCareer({ ...careerData, loading: false });
       setOriginalObject(stateObject);
       setApplicationObject({ ...stateObject, loading: false });
     } catch(e) {
-      console.log('error', e);
     }
   }, []);
   useEffect(async () => {

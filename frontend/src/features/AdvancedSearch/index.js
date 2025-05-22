@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+// Temp comment
 import ResultContainer from '../../features/ResultContainer';
 import ResultsHeader from '../../components/ResultsHeader';
 import TabContainer from '../../components/TabContainer';
@@ -62,7 +63,6 @@ export default function AdvancedSearch({ disabledTabs }) {
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
-// Temp comment
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,

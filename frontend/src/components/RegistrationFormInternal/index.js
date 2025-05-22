@@ -43,6 +43,7 @@ const defaultState = {
   verifyPassword: '',
   terms: false
 };
+// Temp comment
 
 const defaultCommunity = {
   community: ''
@@ -124,7 +125,6 @@ export default function RegistrationFormInternal(loggedIn) {
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
       setTimeout(() => {
-// Temp comment
         setFormObj(defaultState);
         setSubmissionObject({
           loading: false,

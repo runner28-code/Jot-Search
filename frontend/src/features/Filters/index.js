@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
@@ -39,6 +38,7 @@ Filters.propTypes = {
   setSearchTerm: PropTypes.func,
   handleSearchClick: PropTypes.func,
 }
+// Temp comment
 
 export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick) {
   if (setSearchTerm) { // if provided a function, render search bar

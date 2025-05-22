@@ -43,7 +43,6 @@ export default function FormInput(props) {
         type={type}
         name={name}
         label={label}
-// Temp comment
         placeholder={placeholder}
         value={value}
         required={required}

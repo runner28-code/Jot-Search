@@ -26,6 +26,7 @@ export default function LandingPage() {
   return (
     <main className='bg-white'>
       {/* Hero */}
+      <section className={heroStyles}>
         {/* Header */}
         <div className='mt-34 vw-1024:mt-60 flex flex-col items-center'>
           { renderLocation() }

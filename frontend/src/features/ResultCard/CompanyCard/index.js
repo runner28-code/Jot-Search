@@ -41,7 +41,6 @@ export default function CompanyCard({ data }) {
         {/* Card Image */}
         <div className='h-48 w-48 p-4 mr-16 flex justify-center items-center border border-solid border-smokeGray'>
           { renderCardImage(data) }
-        </div>
         <div className='grow'>
           {/* Title */}
           <div className='flex'>
@@ -52,6 +51,7 @@ export default function CompanyCard({ data }) {
           <div className='w-full flex items-center mt-12'>
             {/* Location */}
             <div className='w-1/3 flex items-center'>
+              <img
                 src={locationIcon}
                 className='h-8 mr-6 ml-1' />
               <p className='text-textBlack'>{addressString}</p>

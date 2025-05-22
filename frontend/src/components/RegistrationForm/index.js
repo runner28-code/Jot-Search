@@ -23,6 +23,7 @@ import { CategoryContext } from '../../services/CategoryContext';
 import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
+  phone: '',
   expertise: '',
   address1: '',
   city: '',
@@ -38,6 +39,7 @@ const defaultState = {
   referredBy: '',
   resume: {},
   password: '',
+// Temp comment
   verifyPassword: '',
   terms: false
 };

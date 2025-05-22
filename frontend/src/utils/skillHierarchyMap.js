@@ -121,7 +121,6 @@ export const skills = [
   'CAD',
   'Call Center',
   'Capital',
-  'Change Management',
   'Chinese',
   'CIA',
   'Cloud',

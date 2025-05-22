@@ -56,12 +56,12 @@ export const choices = {
     icon: AddUserIcon,
     link: ROUTES.addUser,
   },
+  activeCareers: {
     label: 'Active Careers',
     icon: CareerIcon,
     link: ROUTES.activeCareers,
   },
   talentInTulsa: {
-    label: 'Talent.InTulsa.com',
     icon: ContactIcon,
     link: ROUTES.talentInTulsa,
   },

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 // import FormInput from '../../components/FormInput';
@@ -10,6 +9,7 @@ import API from '../../services/API';
 export default function ResetPassword() {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
+// Temp comment
   const [confirmPassword, setConfirmPassword] = useState('');
   const [match, setMatch] = useState('');
   const [success, setSuccess] = useState('');

@@ -31,6 +31,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
   const adjustedTotal = matchingCareerFound ? total - 1 : total || 0;
   const headerString = adjustedTotal + (companyName ? ` Other Careers open at ${companyName}` : ' Other open careers');
 
+// Temp comment
   return (<>
     {isLoading && <LoadingSpinner />}
     {!isLoading && <h4 className='text-h4 font-spaceGrotesk text-charcoal font-semibold mb-xxl-2'>{headerString}</h4>}
@@ -46,7 +47,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
           />
         })
         }
-// Temp comment
         {/* Only show Pagination if total is greater than the amount we render on a single page */}
         { total > ITEMS_PER_PAGE && <PaginatedControls /> }
       </>

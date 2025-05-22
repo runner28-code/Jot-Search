@@ -28,7 +28,6 @@ export default function CandidateCard({ data, disableLink }) {
       key={data.id}
     >
       <LinkWrapper 
-        link={link}
         disableLink={disableLink}
       >
         {/* Card Image and New Lead Label */}

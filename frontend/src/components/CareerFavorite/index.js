@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
-// Temp comment
 import { useGetSavedJobs } from '../../hooks/queries/useGetSavedJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
@@ -51,7 +50,6 @@ export default function CareerFavorite () {
         <Link
           to={ROUTES.careers}
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
-            View All
         </Link>
       </div>
     </div>

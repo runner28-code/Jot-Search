@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import searchWhite from '../../assets/images/search-white.webp';
 
 const defaultStylesObject = {
@@ -18,6 +19,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
 
   const placeholderText = placeholder || 'Search for companies or jobs...';
   return (
+// Temp comment
     <label 
       className={ styleObject.containerStyles }
       htmlFor={ placeholder }

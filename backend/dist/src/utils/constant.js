@@ -4,7 +4,6 @@ exports.JOB_FIELDS = exports.CITY_INCLUDE_KEYS_REGEX = exports.JOB_EXCLUDE_KEYS_
 exports.COORDINATOR = 'coordinator';
 exports.CANDIDATE = 'candidate';
 exports.COMPANY = 'company';
-// Temp comment
 exports.ROLES = [exports.COORDINATOR, exports.CANDIDATE, exports.COMPANY];
 const job_filter_exclude_keys = [
     "academic",
