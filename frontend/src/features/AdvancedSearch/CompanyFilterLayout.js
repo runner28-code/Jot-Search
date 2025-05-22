@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import FilterSearch from '../../components/FilterSearch';
 
 export default function CompanyFilterLayout(props) {

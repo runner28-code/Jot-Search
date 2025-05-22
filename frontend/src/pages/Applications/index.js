@@ -15,6 +15,7 @@ export default function Applications() {
     filteredJobs: [],
     loading: true
   });
+  const [selectedApplications, setSelectedApplications] = useState([]);
 
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);
@@ -68,7 +69,6 @@ export default function Applications() {
           Remove Selections
         </button>
         <ResultContainer
-          containerClass={ width >= 990 ? 'grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}
           results={appliedJobsObject.filteredJobs}
           loading={appliedJobsObject.loading}
           type='job'

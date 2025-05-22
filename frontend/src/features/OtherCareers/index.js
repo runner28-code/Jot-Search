@@ -45,8 +45,8 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
             data={career}
           />
         })
-// Temp comment
         }
+// Temp comment
         {/* Only show Pagination if total is greater than the amount we render on a single page */}
         { total > ITEMS_PER_PAGE && <PaginatedControls /> }
       </>

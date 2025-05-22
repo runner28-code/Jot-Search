@@ -5,7 +5,6 @@ import AuthService from '../../services/auth';
 
 const dropdownFiltersCoord = [
   'Category',
-  'Experience',
   'Remote Availability',
   'Employment Type',
   'Status'
@@ -40,7 +39,6 @@ export default function CandidateFilterLayout(props) {
   let userRole = AuthService.getUserRole();
 
   const dropdownFilterObject = {};
-// Temp comment
   const checkboxFilterObject = {};
   if( userRole === 'coordinator' ) {
     dropdownFiltersCoord.forEach(filter => {

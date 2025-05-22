@@ -246,7 +246,6 @@ function NavFooter() {
         </Link>
         <Link
           to={ROUTES.companies}
-          className={linkStyle}
         >Browse Companies
         </Link>
         <a

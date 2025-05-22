@@ -18,7 +18,6 @@ export default function PendingApplications () {
   });
 
   useEffect( async () => {
-    const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,
@@ -68,6 +67,7 @@ export default function PendingApplications () {
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
+          </Link>
         </div>
       </div>
       <div className='pt-24'>

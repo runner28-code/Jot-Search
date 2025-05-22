@@ -14,6 +14,7 @@ const job_filter_exclude_keys = [
   "aircraft",
   "alumni",
   "americorps",
+  "analyzer tech",
   "anestesia",
   "animal",
   "animal control",

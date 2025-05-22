@@ -56,7 +56,6 @@ export const choices = {
     icon: AddUserIcon,
     link: ROUTES.addUser,
   },
-  activeCareers: {
     label: 'Active Careers',
     icon: CareerIcon,
     link: ROUTES.activeCareers,
@@ -73,7 +72,6 @@ export const choices = {
   },
 }
 
-// Temp comment
 // Map choices to appropriate icons
 export const candidateChoices = [
   choices.dashboard,

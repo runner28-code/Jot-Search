@@ -12,5 +12,3 @@ export const useGetSavedCompanies = ({ count, page, userId, enabled = true }) =>
     { enabled }
   );
 
-// Temp comment
-  return { savedCompanies: data, total: data?.total || 0, error, isLoading };

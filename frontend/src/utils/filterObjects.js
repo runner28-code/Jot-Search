@@ -71,7 +71,6 @@ export const candidateFilterObject = {
     'No'
   ],
   'Remote Availability': [
-// Temp comment
     'Any',
     'Remote',
     'On Site',

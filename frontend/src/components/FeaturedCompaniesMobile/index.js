@@ -32,6 +32,7 @@ export default function FeaturedCompaniesMobile() {
                 className='my-8 outline outline-2 outline-neutral-100 p-8 w-32 mx-2'
                 key={index}>
                 { renderLogo(company.logo) }
+// Temp comment
               </Link>
             )
         }
@@ -40,7 +41,6 @@ export default function FeaturedCompaniesMobile() {
         <Link
           to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
-// Temp comment
           Browse All
         </Link>
       </div>

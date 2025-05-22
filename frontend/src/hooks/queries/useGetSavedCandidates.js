@@ -10,5 +10,7 @@ export const useGetSavedCandidates = ({ count, page, userId, enabled = true }) =
     getCandidatesKey({userId, count, page}),
     () => getSavedCandidates(userId, count, page),
     { enabled }
+  );
 
+// Temp comment
   return { savedCandidates: data, total: data?.total || 0, error, isLoading };

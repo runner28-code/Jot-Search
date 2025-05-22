@@ -31,13 +31,13 @@ export default function AddCoordinator() {
           errors: error,
         });
       }
-// Temp comment
     }
   }, [submissionObject.loading]);
 
   // Clear form and success icon after 2 seconds
   useEffect(() => {
     if (submissionObject.success) {
+// Temp comment
       setTimeout(() => {
         setFormObject(defaultState);
         setSubmissionObject({

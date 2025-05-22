@@ -44,11 +44,13 @@ export default function ResultContainer(props) {
 
     return <ViewAllLink
       href={`/${pluralizedType}`}
+      text={`View All ${capitalizedType}`}
     />;
   }
 
   return (
     <div className='w-full'>
+// Temp comment
       { renderHeader() }
       <div
         className={`${baseStyles} ${resultsContainerStyles}`}>

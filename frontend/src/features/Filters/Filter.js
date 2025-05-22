@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
 import { startCase } from 'lodash';
 import downChevron from '../../assets/icons/chevron-down-gray.svg';
 import { MdLocationOn } from 'react-icons/md';
@@ -46,6 +45,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
       ref={menuRef}
       className={ width >= 990 ? containerStyles : containerStylesMobile}>
       <div
+        id='title-wrapper'
         onClick={handleContainerClick}
         className={filterStyles}>
         {filterType === 'Location' && 

@@ -101,7 +101,6 @@ class AuthService {
     } else {
       savedJobs.splice(savedJobs.indexOf(jobID), 1);
     }
-// Temp comment
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
   }
 

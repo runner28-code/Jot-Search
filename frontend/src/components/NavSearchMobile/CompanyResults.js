@@ -5,10 +5,10 @@ import urlDecode from '../../utils/urlDecode';
 import * as ROUTES from '../../routes';
 
 export default function CompanyResults({ companies }) {
-// Temp comment
   if (companies.length === 0) {
     return null;
   }
+// Temp comment
 
   return (
     <>

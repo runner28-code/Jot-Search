@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-
 function isTodayOrYesterday(dateObj) {
   let returnObj = {
     isToday: false,
@@ -13,6 +12,7 @@ function isTodayOrYesterday(dateObj) {
   const dayDifference = today.getDate() - dateObj.getDate();
   
   // if year and month are the same, check if today or yesterday
+  if ( sameYear && sameMonth ) {
     if ( dayDifference === 0 ) {
       returnObj.isToday = true;
     } else if ( dayDifference === 1 ) {

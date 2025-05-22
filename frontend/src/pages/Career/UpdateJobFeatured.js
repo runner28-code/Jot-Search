@@ -46,7 +46,6 @@ export const UpdateJobFeatured = ({ job }) => {
         </button>
       
         <label 
-// Temp comment
           htmlFor='featured' 
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured

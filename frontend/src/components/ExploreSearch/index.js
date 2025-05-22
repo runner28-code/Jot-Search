@@ -8,6 +8,7 @@ import { jobFilterObject } from '../../utils/filterObjects';
 import * as ROUTES from '../../routes';
 
 function adjustJobFilterObject() {
+// Temp comment
   const adjustedJobFilterObject = { ...jobFilterObject };
 
   adjustedJobFilterObject['On-Site/Remote'][0] = 'Any Work Setting';
@@ -55,6 +56,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   }
   return (
     <div className={containerStyles}>
+      <h5 className='text-[3rem] text-white font-spaceGrotesk font-semibold text-center mt-18 mb-16'>
         {`Search from ${totalJobs} Opportunities from ${totalCompanies} Companies`}
       </h5>
       <FilterSearch

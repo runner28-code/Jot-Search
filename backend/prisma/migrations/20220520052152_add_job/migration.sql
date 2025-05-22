@@ -10,3 +10,4 @@ CREATE TABLE "Job" (
     "zip" TEXT,
     "country_id" TEXT,
     "employmentType" TEXT,
+    "title" TEXT,
