@@ -213,3 +213,5 @@ const job_filter_exclude_keys = [
   "kqcw",
   "lab",
   "laborer",
+  "lacrosse",
+  "lakes",

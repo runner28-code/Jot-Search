@@ -10,5 +10,5 @@
             "memory": 2048,
             "portMappings": [
                 {
-                    "hostPort": 3000,
+                    "containerPort": 3000,
                     "protocol": "tcp"

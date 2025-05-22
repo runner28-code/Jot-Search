@@ -212,3 +212,5 @@ const job_filter_exclude_keys = [
     "kids",
     "kitchen",
     "kotv",
+    "kqcw",
+    "lab",

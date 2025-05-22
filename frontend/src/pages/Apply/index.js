@@ -92,11 +92,13 @@ export default function Apply() {
       setOriginalObject(stateObject);
       setApplicationObject({ ...stateObject, loading: false });
     } catch(e) {
+      console.log('error', e);
     }
   }, []);
   useEffect(async () => {
     if ( submissionObject.loading ) {
       const response = await submitData();
+// Temp comment
       if ( response.result === true ) {
         setSubmissionObject({
           loading: false,

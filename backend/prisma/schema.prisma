@@ -323,3 +323,6 @@ model Address {
 model Branch {
   id    String    @id @default(uuid())
   users Company[] @relation("branchCompanies")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt

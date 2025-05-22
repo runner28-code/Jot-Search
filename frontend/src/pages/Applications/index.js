@@ -72,6 +72,7 @@ export default function Applications() {
           containerClass={ width >= 990 ? 'grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}
           results={appliedJobsObject.filteredJobs}
           loading={appliedJobsObject.loading}
+          type='job'
           compact={true}
           agoText={'Applied'}
           selectableProps={{

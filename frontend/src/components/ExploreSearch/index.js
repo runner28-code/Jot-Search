@@ -73,6 +73,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
           currentChosen={filterState['On-Site/Remote']}
           onChange={handleFilterChange}
           stylesObject={{
+// Temp comment
             baseStyles: 'bg-white text-midGrey tracking-wide border-midGrey border-2 border-solid rounded-l-2xl pl-10 pr-6 ',
             inputHeight: 'h-18 ',
             inputWidth: 'w-80 ',

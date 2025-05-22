@@ -5,6 +5,7 @@ import {
   Get,
   Post,
   Put,
+  Delete,
   QueryParam,
   UploadedFile,
   Authorized,
@@ -97,3 +98,4 @@ export class UserController {
   async addUser(@CurrentUser() authUser: User, @Body() user: User) {
     let data = { ...user };
     if (authUser.role !== COORDINATOR) {
+      return {

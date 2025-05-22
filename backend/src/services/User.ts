@@ -225,7 +225,6 @@ export const getUserById = async (id: string) => {
 export const isExistUser = async (field: string, value: string) => {
   try {
     return (await isExistUserFull(field, value)) != null;
-  } catch (error) {
     console.log(error);
     return true;
   }
@@ -272,3 +271,5 @@ export const login = async (email: string, password: string) => {
 };
 
 export const findUserByEmail = async (email: string) => {
+  try {
+    const user = await db.user.findFirst({

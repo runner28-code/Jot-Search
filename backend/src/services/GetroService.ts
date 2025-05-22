@@ -125,3 +125,4 @@ export class GetroService {
                 ...data,
                 id: `gt-${data.id}`,
                 collections: data.collections?.map((col: any) => col.id).join(' | ') || null,
+                locations: data.locations?.map((loc: any) => loc.name).join(' | ') || null,

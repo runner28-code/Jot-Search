@@ -1,4 +1,3 @@
-import { v4 as uuid4 } from 'uuid';
 import { Dictionary } from "typed-two-way-map";
 import config from '../config';
 import { BigQueryService } from "../services/BigQueryService";
@@ -51,3 +50,4 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
 }
 
 export const consoleLog = (message: any, newLine = true) =>{
+    console.log(`${newLine ? '\n' : ''}${message}`);

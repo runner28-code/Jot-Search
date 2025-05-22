@@ -28,6 +28,7 @@ export default function CandidateCard({ data, disableLink }) {
       key={data.id}
     >
       <LinkWrapper 
+        link={link}
         disableLink={disableLink}
       >
         {/* Card Image and New Lead Label */}
@@ -147,7 +148,6 @@ LinkWrapper.propTypes = {
   disableLink: PropTypes.bool,
 }
 
-function renderActiveStatus(candidate) {
   if (candidate.activelyLooking || candidate.user?.activelyLooking) {
     return (
       <div className='flex items-center gap-[10px] px-s py-xxs bg-success rounded-full'>

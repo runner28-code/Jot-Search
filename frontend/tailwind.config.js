@@ -48,9 +48,9 @@ module.exports = {
         grey: '#EBEBEB',
         charcoal: '#3C3C4B',
         // Utility
-        searchGreen: '#62CA71',
         success: '#2EA248',
         error: '#DE5454',
+        warning: '#F4D12E',
         disabledGrey: '#C9C9CE',
         magenta: '#EB4A87',
         // Colors included in design but not in Web Style Guide
@@ -108,3 +108,4 @@ module.exports = {
         '20%': '20%',
         '25%': '25%',
         '30%': '30%',
+        '35%': '35%',

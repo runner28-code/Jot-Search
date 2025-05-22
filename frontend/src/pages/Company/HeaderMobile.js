@@ -10,6 +10,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+import { BsBuilding } from 'react-icons/bs';
 
 function HeaderContent({ companyData }) {
   const headerIconStyles = 'h-6 w-6 mr-3 fill-midGrey';
@@ -21,6 +22,7 @@ function HeaderContent({ companyData }) {
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-2'>
+// Temp comment
         <div className='flex flex-wrap items-center mb-4'>
           <div className='basis-2/6'>
             { renderCompanyLogo(companyData.logo, companyData.name) }

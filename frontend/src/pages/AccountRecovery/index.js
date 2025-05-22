@@ -72,7 +72,6 @@ export default function AccountRecovery() {
           <div className='flex justify-between items-center vw-640:items-end mb-22'>
             <button
               className='h-20 bg-royalBlue text-center text-white text-md tracking-wide px-12 rounded-lg'
-// Temp comment
               type='submit'
             >
               Get New Password
@@ -83,6 +82,7 @@ export default function AccountRecovery() {
       {/* Assistance call-to-action */}
       <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
         <span>Need Help? Just ask </span>
+// Temp comment
         <a
           href='mailto:help@intulsa.com'
           className='text-sm vw-640:text-ml text-royalBlue underline'

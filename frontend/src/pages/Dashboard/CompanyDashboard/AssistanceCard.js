@@ -9,7 +9,6 @@ export default function AssistanceCard() {
           src={flagIcon}
           alt='Flag'
           className='w-auto h-auto'
-        />
         <h5 className='text-h5 font-medium font-spaceGrotesk text-charcoal ml-8'>InTulsa assistance</h5>
       </div>
       {/* Body */}
@@ -22,7 +21,6 @@ export default function AssistanceCard() {
           <hr className='max-w-300 mt-6' />
         </ul>
       </div>
-// Temp comment
       {/* Button */}
       <a
         href='mailto:talentnetwork@intulsa.com?subject=Talent Network Assistance'

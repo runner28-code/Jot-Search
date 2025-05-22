@@ -44,3 +44,4 @@ CREATE TABLE "Company" (
     "fax" TEXT,
     "feeArrangement" DOUBLE PRECISION,
     "funding" TEXT,
+    "industryList" TEXT[],

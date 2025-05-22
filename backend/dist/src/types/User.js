@@ -19,3 +19,4 @@ exports.IUSER = {
     avatar: "",
     linkedin: "",
     skills: "",
+    category: "",

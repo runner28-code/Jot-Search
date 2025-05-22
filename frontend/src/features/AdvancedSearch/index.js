@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-// Temp comment
 import ResultContainer from '../../features/ResultContainer';
 import ResultsHeader from '../../components/ResultsHeader';
 import TabContainer from '../../components/TabContainer';
@@ -55,6 +54,7 @@ export default function AdvancedSearch({ disabledTabs }) {
 
   const initialFilterState = activeTab === 'careers' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
   if (state && state.expertise) {
+// Temp comment
     initialFilterState.Expertise = state.expertise
   }
 

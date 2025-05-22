@@ -12,6 +12,7 @@ import Dashboard from '../../components/DashboardPublic';
 import DashboardCandidate from '../../components/DashboardCandidate';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+// Temp comment
 import AuthService from '../../services/auth';
 
 export default function Companies() {
@@ -29,7 +30,6 @@ export default function Companies() {
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
-// Temp comment
         loggedIn={loggedIn}
         userType={userType}
         togglePassState={togglePassState}

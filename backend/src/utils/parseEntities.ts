@@ -55,3 +55,4 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
     externalId: data.id,
     email: data.email,
     role: "candidate",
+    address1: data.address_address1,

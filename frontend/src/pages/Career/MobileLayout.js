@@ -111,7 +111,6 @@ export default function MobileLayout(props) {
       { renderAboutCompanySection(careerData, role) }
       {/* Apply */}
       <div className='flex mt-6'>
-        { (role === 'candidate' || role === 'guest') && 
           <ApplyButton
             datasource={careerData.datasource}
             careerId={careerData.id}

@@ -4,6 +4,7 @@ import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+
 const dropdownFilters = [
   'Expertise',
   'On-Site/Remote',
@@ -54,6 +55,7 @@ export default function CareerFilterLayout(props) {
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Careers'
+// Temp comment
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
         <button
