@@ -46,7 +46,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
       ref={menuRef}
       className={ width >= 990 ? containerStyles : containerStylesMobile}>
       <div
-        id='title-wrapper'
         onClick={handleContainerClick}
         className={filterStyles}>
         {filterType === 'Location' && 
@@ -58,7 +57,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
           id='title'
           className='text-md text-black70%'>{ selected }</p>
         <img
-// Temp comment
           src={downChevron}
           alt='open'
           className='w-6 h-4'

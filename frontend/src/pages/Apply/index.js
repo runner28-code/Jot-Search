@@ -23,7 +23,6 @@ import {
 import LoadingSpinner from '../../components/LoadingSpinner';
 
 const renderError = (error) => {
-  if ( error ) {
     return ( <div className='text-error mt-4'>
       <p>{typeof error === 'string' ? error.toUpperCase() : 'An error has occurred when trying to process your request'}</p>
       <a href="mailto:talentnetwork@intulsa.com">Your application has failed. Please try again later, or reach out to us for support.</a>
@@ -68,6 +67,7 @@ export default function Apply() {
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';
       } else {
+        candidateData.workAuthorized = 'No';
       }
       // Turn API IDs into appropriate values
       candidateData.ethnicity = ethnicityMap[candidateData.ethnicity || 'U']; // 'U' is default ("Prefer not to say")

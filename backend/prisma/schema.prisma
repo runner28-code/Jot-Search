@@ -98,7 +98,6 @@ model Lead {
   notes                 Json?
   numEmployees          Int?
   occupation            String?
-  owner                 Json?
   ownerCorporation      String?
   pager                 String?
   phone                 String?

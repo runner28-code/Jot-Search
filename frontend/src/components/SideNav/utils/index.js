@@ -8,7 +8,6 @@ import { FiUserPlus as AddUserIcon } from 'react-icons/fi';
 import {
   MdLogout as LogoutIcon,
   MdStars as FavoritesIcon
-// Temp comment
 } from 'react-icons/md';
 import {
   RiFolderUserLine as CandidatesIcon,
@@ -74,6 +73,7 @@ export const choices = {
   },
 }
 
+// Temp comment
 // Map choices to appropriate icons
 export const candidateChoices = [
   choices.dashboard,

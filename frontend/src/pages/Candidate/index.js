@@ -30,7 +30,6 @@ export default function Candidate() {
   const { setCurrentUser } = useCandidateContext()
   const path = useLocation().pathname;
   const { width } = useWindowDimensions();
-// Temp comment
   const isProfilePage = path === '/profile';
   if (role === 'candidate' && !isProfilePage) {
     return <Navigate to='/' />
@@ -114,7 +113,6 @@ export default function Candidate() {
               label={PREFERENCE_ITEMS.activelyLooking}
               onUpdate={handleCandidateUpdate} />
             <PreferenceItem
-              toggled={!!candidateData.willRelocate}
               fieldName='willRelocate'
               label={PREFERENCE_ITEMS.willRelocate}
               onUpdate={handleCandidateUpdate} />

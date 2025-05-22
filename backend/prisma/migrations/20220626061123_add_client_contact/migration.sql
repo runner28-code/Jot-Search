@@ -3,7 +3,6 @@
 
   - You are about to drop the column `externalID` on the `Candidate` table. All the data in the column will be lost.
 
-*/
 -- AlterTable
 ALTER TABLE "Candidate" DROP COLUMN "externalID",
 ADD COLUMN     "externalId" TEXT;
@@ -16,6 +15,7 @@ CREATE TABLE "ClientContact" (
     "address_city" TEXT,
     "address_state" TEXT,
     "address_zip" TEXT,
+    "address_country_id" TEXT,
     "category" TEXT,
     "certifications" TEXT,
     "clientCorporation" TEXT,

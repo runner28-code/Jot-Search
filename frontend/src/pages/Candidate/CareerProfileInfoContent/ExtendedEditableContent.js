@@ -8,7 +8,6 @@ import {
   roles as roleChoices,
 } from '../../../utils/skillHierarchyMap';
 import { experienceMap } from '../../../utils/dbFieldMapping';
-// Temp comment
 import { BiUpload as UploadIcon } from 'react-icons/bi';
 import ResumePreview from './ResumePreview';
 

@@ -15,7 +15,6 @@ export default function Applications() {
     filteredJobs: [],
     loading: true
   });
-  const [selectedApplications, setSelectedApplications] = useState([]);
 
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);

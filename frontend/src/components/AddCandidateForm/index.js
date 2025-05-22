@@ -31,6 +31,7 @@ const defaultState = {
   resumeFile: {},
   password: '',
   verifyPassword: '',
+};
 export default function RegistrationForm() {
   const {categories} = useContext(CategoryContext);
   const [formObj, setFormObj] = useState(defaultState);
@@ -270,7 +271,6 @@ export default function RegistrationForm() {
             type='password'
             name='verifyPassword'
             placeholder='Verify Password' 
-            value={formObj.verifyPassword}
             onChange={handleChange}
             error={errors.includes('verifyPassword')}
           />

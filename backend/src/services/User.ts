@@ -84,6 +84,7 @@ export const register = async (data: User) => {
         ...data,
         password: encryptPassword(user.password),
       } as any,
+    }
 
     await db.user.create(savingData);
 

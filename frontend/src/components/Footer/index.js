@@ -6,6 +6,7 @@ import intulsaBusinessLogo from '../../assets/images/inTulsa-business-logo-web-w
 
 import intulsaFooterWhite from '../../assets/images/talent-intulsa-white-small.svg';
 import inTulsaFooter from '../../assets/images/intulsa-talent-network.svg';
+
 // Social Icons
 import linkedin from '../../assets/icons/social/social_linkedin_grey.svg';
 import twitter from '../../assets/icons/social/social_twitter.svg';

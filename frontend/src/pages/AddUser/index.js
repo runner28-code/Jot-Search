@@ -9,6 +9,7 @@ import AddCoordinator from './AddCoordinator';
 import User from '../../assets/icons/add-new-user.svg';
 
 export default function AddUser() {
+  // TODO: Add params to initiate with correct form when being routed from other page
   if ( AuthService.getUserRole() !== 'coordinator' ) {
     return <Navigate to={ROUTES.root} />
   }
@@ -36,6 +37,7 @@ export default function AddUser() {
         choices={['Candidate', 'Company', 'Coordinator']}
         handleChange={handleDropdownChange}
         noDefault={true}
+// Temp comment
       />
     </h2>
     <div className={formType != 'Company' ? defaultContainer : companyContainer }>
