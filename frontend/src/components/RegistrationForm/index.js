@@ -13,7 +13,6 @@ import {
 import {
   inputValidation,
   formatFormObj,
-  renderButtonOrLoading,
   renderErrorBlock,
   renderHeader
 } from './utils';
@@ -80,6 +79,7 @@ export default function RegistrationForm(loggedIn) {
         });
         return;
       }
+
       // Attempt to upload resume before submitting user data
       const resumeResponse = await uploadFile('resumes', formObj.resume);
       if ( resumeResponse.result === false ) {

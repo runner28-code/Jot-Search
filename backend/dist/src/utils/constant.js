@@ -158,7 +158,6 @@ const job_filter_exclude_keys = [
     "food",
     "forensic",
     "foreperson",
-    "forester",
     "forklift",
     "fraud",
     "front desk",

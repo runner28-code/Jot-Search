@@ -24,7 +24,6 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
   phone: '',
-  expertise: '',
   address1: '',
   city: '',
   state: '',

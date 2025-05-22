@@ -267,7 +267,6 @@ export class BullhornService {
           sort,
         });
         const url = `${this.restUrl}search/ClientCorporation?${query}`;
-        const res = await axios.get(url, {
           headers: {
             "Content-Type": "application/json",
             Accept: "*/*",

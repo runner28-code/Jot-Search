@@ -10,7 +10,6 @@ export function formatCandidateData(candidateData) {
     formattedData.address1 = candidateData.address_address1 || '';
     formattedData.address2 = candidateData.address_address2 || '';
     formattedData.city = candidateData.address_city || '';
-    formattedData.state = candidateData.address_state || '';
     formattedData.zip = candidateData.address_zip || '';
   }
   formattedData.address = buildCandidateAddress(candidateData);

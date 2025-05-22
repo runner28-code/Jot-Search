@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import Home from '../../../assets/icons/home.svg';
 import AdvancedSearch from '../../../features/AdvancedSearch';
 import CareerFavorite from '../../../components/CareerFavorite';
 import CompanyFavorite from '../../../components/CompanyFavorite';
@@ -23,7 +22,6 @@ export default function CandidateDashboard() {
         <CareerFavorite />
         <CompanyFavorite />
         <h1 className={headerStyles}>Search</h1>
-// Temp comment
         <AdvancedSearch />
       </div>
     </>

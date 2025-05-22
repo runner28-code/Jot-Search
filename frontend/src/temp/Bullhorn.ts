@@ -18,7 +18,6 @@ export type Company = {
     businessSectorList?: string,
     companyDescription?: string,
     companyURL?: string,
-    competitors?: string,
     culture?: string,
     customDate1_3?: string,
     customFloat1_3?: string,

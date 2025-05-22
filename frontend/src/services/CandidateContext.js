@@ -19,6 +19,7 @@ const mockCandidateData = [
     school: 'Oklahoma State',
     isLooking: true,
     isWarm: true,
+// Temp comment
   },
   {
     id: 'b5a00114-1d3d-40f3-afb9-fc542fa22af6',
@@ -88,6 +89,7 @@ const mockCandidateData = [
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lawrence_1_szacre.webp', // Missing from Bullhorn Schema
     occupation: 'Compliance',
     companyName: 'Apline Strategies',
+    address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',

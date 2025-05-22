@@ -31,7 +31,6 @@ const defaultState = {
   resumeFile: {},
   password: '',
   verifyPassword: '',
-};
 export default function RegistrationForm() {
   const {categories} = useContext(CategoryContext);
   const [formObj, setFormObj] = useState(defaultState);

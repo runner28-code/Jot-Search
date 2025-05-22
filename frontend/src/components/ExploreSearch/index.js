@@ -67,6 +67,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
       />
       <div className='flex items-center mt-22'>
         <AccessibleDropdown
+// Temp comment
           type='single-select'
           name='On-Site/Remote'
           choices={filterObject['On-Site/Remote']}
@@ -96,6 +97,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
             listStyles: 'bg-white text-black70% border-midGrey border-2 border-solid ',
             listItemStyles: 'pl-6 pr-2 py-2 tracking-wide '
           }}
+          showDropdownArrow={true}
         />
         <button 
           className='h-17 bg-searchGreen text-white text-md px-7 rounded-r-xl'

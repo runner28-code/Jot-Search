@@ -68,7 +68,6 @@ export default function Apply() {
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';
       } else {
-        candidateData.workAuthorized = 'No';
       }
       // Turn API IDs into appropriate values
       candidateData.ethnicity = ethnicityMap[candidateData.ethnicity || 'U']; // 'U' is default ("Prefer not to say")
@@ -79,6 +78,7 @@ export default function Apply() {
       if ( candidateData.resume ) {
         setUseExistingResume(true);
       }
+      // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {
         candidateData.ethnicity = 'Prefer not to say';
       }

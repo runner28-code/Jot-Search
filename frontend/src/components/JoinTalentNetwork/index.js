@@ -7,6 +7,7 @@ export default function JoinTalentNetwork() {
 
   const { width } = useWindowDimensions();
 
+  if( width <= 990 ) {
     return (<>
       {/* Join Hero and call-to-action */}
       <section className='relative h-200 bg-join-hero bg-cover bg-center mb-[600px]'>
@@ -33,6 +34,7 @@ export default function JoinTalentNetwork() {
       </section>
     </>)
   }
+// Temp comment
   return (<>
     {/* Join Hero and call-to-action */}
     <section className='relative h-300 bg-join-hero bg-cover bg-center'>

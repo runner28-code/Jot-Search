@@ -60,7 +60,6 @@ CareerCard.propTypes = {
     id: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,
-    company_logo: PropTypes.string,
     role: PropTypes.string,
     title: PropTypes.string,
     employmentType: PropTypes.string,
@@ -107,7 +106,6 @@ function DesktopCard({ dataObj, active }) {
           <div className='w-1/3 flex items-center pr-4'>
             <img
               src={locationIcon}
-// Temp comment
               className='h-11 mr-5' />
             <p className='text-textBlack'>{addressString}</p>
           </div>
