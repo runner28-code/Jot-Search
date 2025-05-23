@@ -79,6 +79,7 @@ export class CompanyController {
   @Authorized()
   @Put("/send_candidates_to_employers")
   async send_candidates_to_employers(
+    @CurrentUser() authUser: User,
     @Body() body: { candidates_ids: string[], employers_emails: string[] }
   ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
@@ -147,3 +148,5 @@ export class CompanyController {
     }
   }
 
+  async getCompanyByIdFromGetro(id: string): Promise<any> {
+    try {

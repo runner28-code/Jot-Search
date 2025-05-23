@@ -28,3 +28,4 @@
             "warn",
             "single",
             { "allowTemplateLiterals": true }
+        ],

@@ -1,4 +1,4 @@
-import * as ROUTES from '../../../routes';
+import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';

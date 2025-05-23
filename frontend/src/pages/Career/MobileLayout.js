@@ -108,6 +108,7 @@ export default function MobileLayout(props) {
         dangerouslySetInnerHTML={{ __html: careerData.description }}
       />
       { renderSkillsSection(skillList) }
+// Temp comment
       { renderAboutCompanySection(careerData, role) }
       {/* Apply */}
       <div className='flex mt-6'>

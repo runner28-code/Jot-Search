@@ -5,13 +5,11 @@ const mockJobsData = [
   {
     id: '1ea36da6-8819-4617-8c09-5df46f1e4d07',
     title: 'Data Scientist',
-// Temp comment
     company: 'Hobby Lobby',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
     salaryRange: '$80k-$90k',
     location: 'Remote',
     listingAge: '1 month',
-    specialty: 'Technology'
   },
   {
     id: '2cb874e2-0510-405e-9491-183d2e0e26d7',

@@ -5,7 +5,6 @@ export type Company = {
     address_address2?: string,
     address_city?: string,
     address_state?: string,
-    address_zip?: string,
     annualRevenue?: string,
     billingAddress_address1?: string,
     billingAddress_address2?: string,
@@ -96,6 +95,7 @@ export type Job = {
     location_country_code?: string;
     markUpPercentage?: string;
     numOpenings?: string;
+    onSite?: string;
     owner?: string;
     payRate?: string;
     publicDescription?: string;
@@ -144,3 +144,4 @@ export type ClientContact = {
     isDayLightSavings?: string;
     isDeleted?: string;
     lastName?: string;
+    leads?: string;

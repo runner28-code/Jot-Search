@@ -375,7 +375,6 @@ export class BullhornService {
           fields: JOB_FIELDS.join(","),
           query: "isDeleted: 0",
           start: offset,
-          count,
           sort,
         });
         const url = `${this.restUrl}search/JobOrder?${query}`;
@@ -436,3 +435,5 @@ export class BullhornService {
         isPublic: Boolean(d.isPublic),
         externalId: `bl-${d.id}`,
         country_id: d.address?.countryID?.toString() || null,
+        address1: d.address?.address1 || null,
+        address2: d.address?.address2 || null,

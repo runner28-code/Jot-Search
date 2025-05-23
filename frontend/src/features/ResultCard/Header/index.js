@@ -1,7 +1,7 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import urlDecode from '../../../utils/urlDecode';
 
+// Temp comment
 export default function Header({ isMobile, company, title }) {
   const decodedTitle = urlDecode(title);
   return (

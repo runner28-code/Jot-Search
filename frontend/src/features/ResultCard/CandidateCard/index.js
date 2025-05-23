@@ -153,6 +153,7 @@ function renderActiveStatus(candidate) {
     return (
       <div className='flex items-center gap-[10px] px-s py-xxs bg-success rounded-full'>
         <img
+          src={eyeCon}
           className='w-[15px] h-[11px]'
         />
         <p className='text-white text-sm text-xxs'>Actively Looking</p>

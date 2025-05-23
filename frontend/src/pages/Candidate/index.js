@@ -49,6 +49,7 @@ export default function Candidate() {
   async function handleCandidateUpdate(updateObject) {
     console.log('candidateData', candidateData);
     console.log('updateObject', updateObject);
+// Temp comment
     const formattedUpdateObject = {};
     Object.keys(updateObject).forEach(key => {
       if (updateObject[key] === '') {
@@ -63,7 +64,6 @@ export default function Candidate() {
       ...updateObject,
       firstName: updateObject.firstname || candidateData.firstname,
       lastName: updateObject.lastname || candidateData.lastname,
-// Temp comment
     } : updateObject;
 
     const formatUserObjectForRender = formatCandidateData({ ...candidateData, ...updatedDisplayObject });

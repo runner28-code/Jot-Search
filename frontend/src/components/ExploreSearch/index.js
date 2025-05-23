@@ -47,7 +47,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   const containerStyles = ' absolute -bottom-76 h-144 flex flex-col items-center w-380 bg-gradient-to-b from-royalBlue to-aquaBlue rounded-2xl';
   
   if ( loading ) {
-// Temp comment
     return (
       <div className={containerStyles}>
         <LoadingSpinner color='#FDFDFD' />
@@ -102,6 +101,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         <button 
           className='h-17 bg-searchGreen text-white text-md px-7 rounded-r-xl'
           onClick={handleSearchClick}
+// Temp comment
         >
           Show me
         </button>

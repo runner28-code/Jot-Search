@@ -64,7 +64,6 @@ export type Job = {
     date_added?: string;
     date_closed?: string;
     date_end?: string;
-    date_last_exported?: string;
     date_last_modified?: string;
     date_last_published?: string;
     degreeList?: string;
@@ -122,6 +121,7 @@ export type Job = {
 export type ClientContact = {
     id: string;
     address_address1?: string;
+    address_address2?: string;
     address_city?: string;
     address_state?: string;
     address_zip?: string;
@@ -144,3 +144,4 @@ export type ClientContact = {
     externalID?: string;
     fax?: string;
     fax2?: string;
+    fax3?: string;

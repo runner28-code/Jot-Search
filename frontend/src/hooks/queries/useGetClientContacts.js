@@ -1,5 +1,4 @@
 import { useQuery } from '@tanstack/react-query';
-import { queryClient } from '../..';
 import { getClientContacts } from '../../services/API';
 
 export const prefetchClientContacts = async ({filterValue, filterKey, count, page}) => {

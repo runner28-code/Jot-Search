@@ -40,3 +40,4 @@ const parseBullhornCandidateToUser = (data) => {
         workAuthorized: data.workAuthorized,
         disability: data.disability,
     };
+    return user;

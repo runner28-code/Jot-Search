@@ -3,7 +3,6 @@ import { User as GtCandidate, Job as GtJob } from "../types/Getro";
 import { Job } from "../types/Main";
 import { User } from "../types/User";
 
-export const parseBullhornCandidateToUser = (data: BhCandidate) => {
   if (!data.email) return null;
 
   const user = {
@@ -56,3 +55,4 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
     email: data.email,
     role: "candidate",
     address1: data.address_address1,
+    address2: data.address_address2,
