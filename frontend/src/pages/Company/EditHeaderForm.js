@@ -49,7 +49,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className={inputStyles + 'w-100 py-2'}
             type='file'
             name='avatar'
-// Temp comment
             onChange={handleInputChange}
           />
         </div>

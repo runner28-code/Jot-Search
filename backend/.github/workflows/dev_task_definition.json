@@ -3,7 +3,6 @@
     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole", 
     "networkMode": "awsvpc", 
     "containerDefinitions": [
-        {
             "name": "intulsa-backend-container-dev", 
             "image": "site-backend:dev", 
             "cpu": 1024, 
@@ -25,6 +24,7 @@
                 }
             },
             "environment": [
+                {
                     "name": "CHOKIDAR_USEPOLLING", 
                     "value": "true"
                 },

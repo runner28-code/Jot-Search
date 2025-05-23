@@ -49,7 +49,6 @@ export default function Candidate() {
   async function handleCandidateUpdate(updateObject) {
     console.log('candidateData', candidateData);
     console.log('updateObject', updateObject);
-// Temp comment
     const formattedUpdateObject = {};
     Object.keys(updateObject).forEach(key => {
       if (updateObject[key] === '') {
@@ -58,7 +57,6 @@ export default function Candidate() {
       if (updateObject[key] !== candidateData[key]) {
         formattedUpdateObject[key] = updateObject[key];
       }
-    });
 
     const updatedDisplayObject = candidateData.sourceTable === 'Candidate' ? {
       ...updateObject,

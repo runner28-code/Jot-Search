@@ -23,7 +23,6 @@ export default function CompanyCard({ data }) {
     return (
       <MobileCard
         data={data}
-// Temp comment
         addressString={addressString}
         employeeString={employeeString}
       />

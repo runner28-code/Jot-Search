@@ -19,8 +19,8 @@ export default function DashboardMinifiedDesktop ({ location }) {
     return (
       <CareerHeader location={location} />
     )
+  }
   if( location === 'companies' ) {
     return (<>
       <h1>Companies</h1>
     </>)
-  }

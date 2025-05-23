@@ -11,7 +11,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
             ```
             const linkStyles = 'hover:text-royalBlue mt-3 ';
             const linkColor = 'text-slateGray ';
-
             className={linkStyles + linkColorHeader} instead of className={linkStyles + ' ' + linkColorHeader}
             ```
 - No multi-line ternary operators

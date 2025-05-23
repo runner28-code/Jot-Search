@@ -15,7 +15,6 @@ export default function SignUp() {
               <div className='absolute top-[-5px] right-[-3px] h-7 w-7 bg-magenta' />
               <div className='absolute bottom-0 left-0 h-12 w-12 bg-cyan' />
             </div>
-            <div className='py-6 px-18 mb-18 bg-aquaBlue flex justify-center items-center'>
               <h1 className='text-white font-spaceGrotesk text-[2rem] leading-tight'>InTulsa Talent Network</h1>
             </div>
           </div>
@@ -34,7 +33,6 @@ export default function SignUp() {
       <div className='pt-40 flex flex-col justify-center items-center'>
         <div className='relative h-24 w-26 mb-15'>
           <div className='absolute top-0 right-0 h-9 w-9 bg-magenta' />
-// Temp comment
           <div className='absolute bottom-0 left-0 h-14 w-14 bg-cyan' />
         </div>
         <div className='h-40 px-18 bg-aquaBlue flex justify-center items-center'>

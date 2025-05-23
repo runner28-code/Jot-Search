@@ -165,7 +165,6 @@ export class CandidateController {
             ..._fields
           },
           orderBy: {
-            firstName: "asc",
           }
         });
         const tppUserPromise = db.user.findMany({

@@ -89,7 +89,6 @@ module.exports = {
         'login-page-hero': 'url(\'./assets/images/networklogin.jpg\')',
       },
       spacing: {
-        // Styleguide Spacing
         'xxs': '4px',
         'xs': '8px',
         's': '12px',

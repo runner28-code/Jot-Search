@@ -375,6 +375,7 @@ export class BullhornService {
           fields: JOB_FIELDS.join(","),
           query: "isDeleted: 0",
           start: offset,
+          count,
           sort,
         });
         const url = `${this.restUrl}search/JobOrder?${query}`;

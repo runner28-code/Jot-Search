@@ -34,6 +34,7 @@ export const alerts = '/alerts';
 export const careerSeekers = '/career-seeker';
 export const softwareEngineering = '/software-engineering';
 export const salesBizDev = '/sales-business-development';
+// Temp comment
 export const operations = '/operations';
 export const coordinatorQuickStats = '/coordinator-stats';
 

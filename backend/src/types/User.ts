@@ -31,11 +31,11 @@ export type User = {
 
   companyId?: string;
   companyName?: string;
+  annualRevenue?: string;
   companyURL?: string;
   numEmployees?: string;
   revenue?: string;
   dateFounded?: string;
-
   employeeType?: string;
   experience?: string;
   hourlyRate?: string;
