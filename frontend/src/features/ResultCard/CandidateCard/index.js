@@ -148,6 +148,8 @@ LinkWrapper.propTypes = {
   disableLink: PropTypes.bool,
 }
 
+function renderActiveStatus(candidate) {
+// Temp comment
   if (candidate.activelyLooking || candidate.user?.activelyLooking) {
     return (
       <div className='flex items-center gap-[10px] px-s py-xxs bg-success rounded-full'>

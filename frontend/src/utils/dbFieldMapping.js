@@ -5,7 +5,6 @@ export const disabilityMap = {
   A: 'I can perform the essential functions of my remote work with a reasonable accomodation',
   R: 'I need a reasonable accomodation to perform the essential function of my remote work',
   N: 'None of the above'
-};
 
 export const veteranStatusMap = {
   U: 'I prefer not to say',
@@ -27,6 +26,7 @@ export const genderMap = {
 
 export const ethnicityMap = {
   U: 'Prefer not to say',
+  BL: 'Black or African American',
   NP: 'Native Hawaiian or other Pacific Islander',
   WH: 'White or Caucasian',
   IA: 'Native American or Alaska Native',

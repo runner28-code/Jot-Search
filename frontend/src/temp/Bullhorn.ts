@@ -144,3 +144,4 @@ export type ClientContact = {
     isAnonymized?: string;
     isDayLightSavings?: string;
     isDeleted?: string;
+    lastName?: string;

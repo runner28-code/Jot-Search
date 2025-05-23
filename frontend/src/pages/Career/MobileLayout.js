@@ -63,7 +63,6 @@ export default function MobileLayout(props) {
           </div>
           {/* Second row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
-            {/* Posting age */}
             <div className='w-1/2 flex items-center pr-4'>
               <img
                 src={postingAgeIcon}
@@ -111,6 +110,7 @@ export default function MobileLayout(props) {
       { renderAboutCompanySection(careerData, role) }
       {/* Apply */}
       <div className='flex mt-6'>
+        { (role === 'candidate' || role === 'guest') && 
           <ApplyButton
             datasource={careerData.datasource}
             careerId={careerData.id}

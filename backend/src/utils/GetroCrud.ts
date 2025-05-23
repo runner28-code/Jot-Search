@@ -52,3 +52,4 @@ export const saveMembers = async (members: any[]) => {
 									where: {
 										id: member.id,
 									},
+								});

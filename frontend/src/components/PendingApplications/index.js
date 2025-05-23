@@ -1,3 +1,4 @@
+// Temp comment
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
@@ -45,7 +46,6 @@ export default function PendingApplications () {
           appliedJobsObject.loading ?
             <LoadingSpinner />
             :
-// Temp comment
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
               return(<>
                 <CareerCard

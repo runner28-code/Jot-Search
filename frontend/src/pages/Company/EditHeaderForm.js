@@ -50,6 +50,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             type='file'
             name='avatar'
             onChange={handleInputChange}
+          />
         </div>
       </div>
       <div className='grow font-bold'>

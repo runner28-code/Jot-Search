@@ -1,5 +1,4 @@
 {
-    "env": {
         "browser": true,
         "es2021": true
     },
@@ -27,3 +26,4 @@
         "quotes": [
             "warn",
             "single",
+            { "allowTemplateLiterals": true }

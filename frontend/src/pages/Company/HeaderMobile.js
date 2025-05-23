@@ -22,7 +22,6 @@ function HeaderContent({ companyData }) {
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-2'>
-// Temp comment
         <div className='flex flex-wrap items-center mb-4'>
           <div className='basis-2/6'>
             { renderCompanyLogo(companyData.logo, companyData.name) }
@@ -37,7 +36,6 @@ function HeaderContent({ companyData }) {
                 <img
                   src={PlacePin}
                   className={headerIconStyles}
-                />
                 <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
               </div>
               <div className={ headerGroupStyles }>

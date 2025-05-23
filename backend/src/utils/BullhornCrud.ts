@@ -141,3 +141,4 @@ export const saveBullhornJobs = async (jobs: any[]) => {
         console.log(`ERROR: while saving job with ID = ${job.externalId}`);
       }
     }
+

@@ -42,7 +42,6 @@ export const roles = {
     'Healthcare',
     'Legal',
     'Misc. Science',
-    'Other'
   ],
   'Software & Engineering': [
     'AI Machine Learning',
@@ -147,6 +146,7 @@ export const skills = [
   'CPA',
   'CPG',
   'Creative Writing',
+  'CRM',
   'CSM',
   'CSS',
   'Curriculum Development',
@@ -165,3 +165,5 @@ export const skills = [
   'Data Visualization',
   'Database Design',
   'DEI',
+  'Demand Planning',
+  'Design',

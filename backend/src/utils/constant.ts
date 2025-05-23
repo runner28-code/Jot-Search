@@ -215,3 +215,5 @@ const job_filter_exclude_keys = [
   "laborer",
   "lacrosse",
   "lakes",
+  "landscape",
+  "language",

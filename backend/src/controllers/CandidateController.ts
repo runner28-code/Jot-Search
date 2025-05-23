@@ -181,3 +181,5 @@ export class CandidateController {
           const typedUsers = tppUsers.map((user: any) => ({
             ...user,
             type: "user"
+          }))
+

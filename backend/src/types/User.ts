@@ -44,3 +44,4 @@ export type User = {
   willReceiveNotification?: boolean;
   ethnicity?: string;
   workAuthorized?: string;
+  disability?: string;

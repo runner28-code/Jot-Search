@@ -62,3 +62,4 @@ export const getAppliedJobsByUser = async (userId: string) => {
           some: {
             userId,
           },
+        },

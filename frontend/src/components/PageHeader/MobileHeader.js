@@ -23,7 +23,6 @@ export default function MobileHeader(props) {
           onClick={() => navigate(-1)}
         >
           {'< Back'}
-        </button>
       )}
       { icon && (
         <img

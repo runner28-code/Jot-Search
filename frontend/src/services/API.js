@@ -105,7 +105,6 @@ export async function addUser(userObject) {
   try {
     const { data } = await API.post(ROUTES.APIaddUser, userObject);
     return normalizeData(data);
-// Temp comment
   } catch (err) {
     console.log(err);
     return err;

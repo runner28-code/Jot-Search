@@ -8,8 +8,8 @@ export default function Notification ({ imgClass }) {
   const classes = imgClass += 'w-8 h-8 ';
   return (<>
     <img
-// Temp comment
       src={ bell }
+// Temp comment
       alt='notification icon'
       className={ classes }
     />

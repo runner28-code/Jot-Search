@@ -12,6 +12,7 @@ import DetailsHeader from '../../components/DetailsHeader';
 import InviteCandidates from './InviteCandidates';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import AuthService from '../../services/auth';
+import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function Company() {

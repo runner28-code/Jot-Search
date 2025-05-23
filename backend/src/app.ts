@@ -27,7 +27,6 @@ try {
 } catch (error) {
   console.error(error)
 }
-
 const uploadToS3 = async(req: any, res: any) => {
   console.log("uploading to s3");
   if(!process.env.S3_BUCKET) {

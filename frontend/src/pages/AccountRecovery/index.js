@@ -58,6 +58,7 @@ export default function AccountRecovery() {
             <span className='text-sm vw-640:text-ml text-charcoal vw-640:mx-3'>Need an Account?</span>
             <Link
               to={ROUTES.signup}
+// Temp comment
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
             >
               Sign-up here
@@ -82,7 +83,6 @@ export default function AccountRecovery() {
       {/* Assistance call-to-action */}
       <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
         <span>Need Help? Just ask </span>
-// Temp comment
         <a
           href='mailto:help@intulsa.com'
           className='text-sm vw-640:text-ml text-royalBlue underline'

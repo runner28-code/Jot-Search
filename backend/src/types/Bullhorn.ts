@@ -144,3 +144,4 @@ export type ClientContact = {
     email3?: string;
     externalID?: string;
     fax?: string;
+    fax2?: string;

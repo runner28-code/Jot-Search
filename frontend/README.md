@@ -13,6 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
             const linkColor = 'text-slateGray ';
 
             className={linkStyles + linkColorHeader} instead of className={linkStyles + ' ' + linkColorHeader}
+            ```
 - No multi-line ternary operators
 - An `if` statement followed only by an `else` should be refactored to be just an `if` followed by a return statement of the other condition's logic without being in an `else`.
 
@@ -29,7 +30,6 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `npm test`
-
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 

@@ -48,6 +48,7 @@ module.exports = {
         grey: '#EBEBEB',
         charcoal: '#3C3C4B',
         // Utility
+        searchGreen: '#62CA71',
         success: '#2EA248',
         error: '#DE5454',
         warning: '#F4D12E',
@@ -109,3 +110,5 @@ module.exports = {
         '25%': '25%',
         '30%': '30%',
         '35%': '35%',
+        '40%': '40%',
+        '44%': '44%',

@@ -51,7 +51,6 @@ export const saveJob = async (job: string, candidate: string) => {
       include: {
         savedJobs: true,
       },
-      where: {
         AND: {
           id: candidate,
           savedJobs: {

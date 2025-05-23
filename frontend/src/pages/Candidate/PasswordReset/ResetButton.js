@@ -13,7 +13,6 @@ export default function ResetButton({ candidateData, setType }) {
       email: email
     });
 
-// Temp comment
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {

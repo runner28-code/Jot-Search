@@ -8,7 +8,6 @@ import { useGetSavedCandidates } from '../../hooks/queries/useGetSavedCandidates
 import ResultContainer from '../../features/ResultContainer';
 import TabContainer from '../../components/TabContainer';
 import useWindowDimensions from '../../hooks/windowDimensions';
-
 function renderTabs(role, activeTab, setActiveTab) {
   if (role !== 'candidate') {
     return null;
@@ -19,6 +18,5 @@ function renderTabs(role, activeTab, setActiveTab) {
       setActiveTab={setActiveTab}
       tabChoices={['careers', 'companies']}
       absolute={false}
-// Temp comment
     />
   )

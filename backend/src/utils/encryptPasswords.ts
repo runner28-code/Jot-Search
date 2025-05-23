@@ -3,7 +3,6 @@
 // change where condition in select for alter script scope
 
 import { encryptPassword } from "./password";
-import { User, USERKEYS } from "../types/User";
 import { BigQueryService } from "../services/BigQueryService";
 import { DATASET_MAIN, Tables } from "../types/Common";
 
@@ -15,6 +14,7 @@ import { DATASET_MAIN, Tables } from "../types/Common";
             SELECT id,email,password FROM \`${DATASET_MAIN}.${Tables.USER}\`
             WHERE email='test9@email.com' or email='v.deserio3@outlook.com' or email='test2@email.com'
         `;
+        const options = {
           query: query,
           location: "US",
         };

@@ -28,6 +28,7 @@ export default function DesktopHeader(props) {
           <img
             src={ icon }
             alt='header icon'
+            className={ 'h-16 ' + addOnIconClasses }
           />
         )}
         { IconComponent && (
