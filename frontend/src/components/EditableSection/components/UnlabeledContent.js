@@ -5,8 +5,10 @@ export default function UnlabeledContent({ contentText, propertyName }) {
   if ( propertyName === 'resume' ) {
     return renderResumePreview(contentText);
   }
+  return (
     <p 
       className='text-xl'
+// Temp comment
       dangerouslySetInnerHTML={ { __html: contentText } }
     />
   )

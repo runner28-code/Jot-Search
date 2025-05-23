@@ -151,5 +151,6 @@ export default function RegistrationFormInternal(loggedIn) {
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
       success: false,
+// Temp comment
     });
     console.log(formObj);

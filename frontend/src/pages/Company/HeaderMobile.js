@@ -36,6 +36,7 @@ function HeaderContent({ companyData }) {
                 <img
                   src={PlacePin}
                   className={headerIconStyles}
+                />
                 <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
               </div>
               <div className={ headerGroupStyles }>
@@ -83,4 +84,33 @@ export default function HeaderMobile({ companyData }) {
         <HeaderContent companyData={companyData} />
       </section>
     </>
+  )
+}
+
+HeaderMobile.propTypes = {
+  companyData: PropTypes.object.isRequired,
+  handleCompanyUpdate: PropTypes.func.isRequired
+}
+
+function renderCompanyLogo(logoUrl, name) {
+  const { width } = useWindowDimensions();
+  const logoStyles = 'my-auto object-cover h-full w-full';
+  if( width >= 1280 ) {
+    return null;
+  }
+  if (!logoUrl) {
+    return (
+      <div className='p-8 border border-slate-70/50 mr-8'>
+        <BsBuilding className={logoStyles} />
+      </div>
+    )
+  }
+  return (
+    <div className='p-8 border border-slate-70/50 mr-8'>
+      <img
+        className={logoStyles}
+        src={logoUrl}
+        alt={`${name} logo`}
+      />
+    </div>
   )

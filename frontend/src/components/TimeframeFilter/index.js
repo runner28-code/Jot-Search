@@ -13,7 +13,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   function handleChoiceClick(choice) {
     setShowDropdown(false);
     handleFilterChange(choice);
-  }
 
   function renderDropdown( showDropdown ) {
     if ( !showDropdown ) {
@@ -41,6 +40,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
       ref={menuRef}
       className='relative'>
       <div
+        id='title-wrapper'
         onClick={() => setShowDropdown(showDropdown => !showDropdown)}
         className={ wrapperStyles }>
         <p

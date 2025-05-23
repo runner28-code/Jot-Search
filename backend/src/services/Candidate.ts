@@ -42,3 +42,4 @@ export const saveCandidate = async (
               id: candidateId,
             },
           },
+        },

@@ -4,7 +4,6 @@ import {BsClipboardCheck} from 'react-icons/bs';
 import ResultContainer from '../../features/ResultContainer';
 import { getAppliedJobs } from '../../services/API';
 import AuthService from '../../services/auth';
-import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function Applications() {
@@ -54,7 +53,6 @@ export default function Applications() {
   const { width } = useWindowDimensions();
   return (
     <section>
-// Temp comment
       <PageHeader
         headerText='My InTulsa Featured Applications'
         IconComponent={BsClipboardCheck}

@@ -33,7 +33,6 @@ export const saveCompanies = async (companies: any[]) => {
   // }
   // return { result: false };
 
-  const expludeFields = [
     "address",
     "billingAddress",
     "_score",
@@ -142,3 +141,4 @@ export const saveBullhornJobs = async (jobs: any[]) => {
       }
     }
 
+    return { result: true };

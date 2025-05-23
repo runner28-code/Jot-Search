@@ -83,7 +83,6 @@ export class UserController {
       return {
         result: false,
         error: `Invalid user type specified for candidate-only register route: ${user.role}`,
-      }
     }
   }
 
@@ -100,3 +99,4 @@ export class UserController {
     if (authUser.role !== COORDINATOR) {
       return {
         result: false,
+        error: "Only coordinators can add other users",

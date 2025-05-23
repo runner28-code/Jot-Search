@@ -4,6 +4,7 @@ import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
+  guestChoices,
   findSelectedFromPath
 } from './utils';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -15,7 +16,6 @@ export default function SideNav({ userType }) {
   if ( hiddenPages.includes(pathname) ) {
     return null;
   }
-
   if( userType === 'guest' ) {
     return null;
   }

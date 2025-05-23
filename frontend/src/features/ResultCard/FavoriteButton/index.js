@@ -15,7 +15,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   }
   // Return conditions
   const invalidType = !VALID_TYPES.includes(type);
-// Temp comment
   const isInactiveJob = (type === 'job' && data.status !== 'Active');
   if ( !isFavoriteOverride && (invalidType || isInactiveJob) ) {
     return null;
@@ -23,7 +22,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
 
   const item_id = getIdByType(type, data);
   const savedItems = getItemsByType(type);
-  const isSaved = savedItems.includes(item_id);
   const { user_id } = AuthService.getProfile();
   const [isFavorite, setIsFavorite] = useState(isFavoriteOverride ?? isSaved);
   const { width } = useWindowDimensions();

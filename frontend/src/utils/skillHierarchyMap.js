@@ -42,6 +42,7 @@ export const roles = {
     'Healthcare',
     'Legal',
     'Misc. Science',
+    'Other'
   ],
   'Software & Engineering': [
     'AI Machine Learning',
@@ -167,3 +168,4 @@ export const skills = [
   'DEI',
   'Demand Planning',
   'Design',
+  'Desktop Support',

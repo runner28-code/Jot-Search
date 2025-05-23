@@ -14,8 +14,10 @@ export const UpdateJobStatus = ({ job }) => {
   return (
     <div className='py-8 flex flex-col'>
       <hr className={`${hrStyles} bg-smokeGray h-2`} />
+// Temp comment
 
       <div className='flex flex-col'>
+        <h4 className={sectionHeaderStyles}>Career Status</h4>
         {isLoading && <p>Loading...</p>}
         {isSuccess && <p>Success!</p>}
         <Dropdown 

@@ -20,6 +20,7 @@ API.interceptors.request.use(
   },
   function (error) {
     return Promise.reject(error);
+// Temp comment
   }
 );
 

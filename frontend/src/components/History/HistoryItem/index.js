@@ -21,6 +21,7 @@ function isTodayOrYesterday(dateObj) {
     }
   }
 
+  return returnObj;
 }
 
 function formatDateByDay(isToday, isYesterday, dateObj) {
