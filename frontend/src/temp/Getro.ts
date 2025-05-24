@@ -24,7 +24,6 @@ export type Company = {
     network_id?: string;
     locations?: string;
     collections?: string;
-}
 
 export type Job = {
     id: string;
@@ -32,3 +31,4 @@ export type Job = {
     application_path?: string;
     compensation_currency?: string;
     compensation_max?: string;
+    compensation_min?: string;

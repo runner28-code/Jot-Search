@@ -150,3 +150,5 @@ export class CompanyController {
 
   async getCompanyByIdFromGetro(id: string): Promise<any> {
     try {
+      const company = await db.getroCompany.findFirst({
+        where: {

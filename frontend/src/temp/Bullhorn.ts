@@ -146,3 +146,4 @@ export type ClientContact = {
     isDeleted?: string;
     lastName?: string;
     leads?: string;
+    middleName?: string;

@@ -438,3 +438,7 @@ export class BullhornService {
         country_id: d.address?.countryID?.toString() || null,
         address1: d.address?.address1 || null,
         address2: d.address?.address2 || null,
+        city: d.address?.city || null,
+        state: d.address?.state || null,
+        zip: d.address?.zip || null,
+        clientContactID: d.clientContact?.id.toString(),

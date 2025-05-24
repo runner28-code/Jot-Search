@@ -83,7 +83,6 @@ export async function updateCandidate(newData, id) {
 
 export async function getSavedCandidates() {
   const { data } = await API.get(ROUTES.APIsavedCandidates);
-  return normalizeData(data.candidates);
 }
 
 export async function saveCandidate(userId, candidateId) {
@@ -164,3 +163,18 @@ export async function getClientContacts(filterValue, filterKey, count) {
     'count': count
   });
   return normalizeData(data.clientContacts)
+}
+
+
+export async function saveCompany(candidateId, companyId) {
+  const { data } = await API.put(ROUTES.APItoggleSaveCompany, {
+    'company': companyId,
+    'candidate': candidateId,
+  });
+
+  if (data.messsage === 'saved company') {
+    AuthService.toggleSavedCompany(companyId, 'save');
+  } else {
+    AuthService.toggleSavedCompany(companyId, 'unsave');
+  }
+  return normalizeData(data);

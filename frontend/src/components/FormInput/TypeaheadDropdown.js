@@ -9,6 +9,7 @@ export default function TypeaheadDropdown(props) {
     type, 
     dropdownType, 
     disabled,
+    name, 
     label,
     required,
     placeholder, 
@@ -45,7 +46,6 @@ export default function TypeaheadDropdown(props) {
     }
   }, [inputValue]);
 
-  function handleInputChange(event) {
     setInputValue(event.target.value);
   }
 

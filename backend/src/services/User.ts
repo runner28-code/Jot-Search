@@ -279,3 +279,5 @@ export const findUserByEmail = async (email: string) => {
       },
     });
 
+    return user || null;
+  } catch (error) {

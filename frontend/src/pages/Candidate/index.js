@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation, Navigate } from 'react-router-dom';
+// Temp comment
 import CareerProfileInfo from './CareerProfileInfo';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import PageHeader from '../../components/PageHeader';
@@ -57,6 +58,7 @@ export default function Candidate() {
       if (updateObject[key] !== candidateData[key]) {
         formattedUpdateObject[key] = updateObject[key];
       }
+    });
 
     const updatedDisplayObject = candidateData.sourceTable === 'Candidate' ? {
       ...updateObject,

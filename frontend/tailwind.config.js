@@ -80,6 +80,7 @@ module.exports = {
         'black50%': '#00000080',
       },
       backgroundImage: {
+// Temp comment
         'tulsa-3': 'url(\'./assets/images/tulsa-3.webp\')',
         'tulsa-3-vert': 'url(\'./assets/images/tulsa-3-vert.webp\')',
         'explore-tulsa': 'url(\'./assets/images/home-hero.jpg\')',
@@ -89,6 +90,7 @@ module.exports = {
         'login-page-hero': 'url(\'./assets/images/networklogin.jpg\')',
       },
       spacing: {
+        // Styleguide Spacing
         'xxs': '4px',
         'xs': '8px',
         's': '12px',
@@ -112,3 +114,4 @@ module.exports = {
         '40%': '40%',
         '44%': '44%',
         '46%': '46%',
+        '52%': '52%',

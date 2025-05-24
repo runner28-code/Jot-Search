@@ -36,6 +36,7 @@ export const jobFilterObject = {
     'On-Deck',
   ]
 };
+// Temp comment
 
 export const ACTIVE_STATUSES = [
   'Active',
@@ -47,6 +48,7 @@ export const ACTIVE_STATUSES = [
 const convertedJobFilters = {};
 Object.keys(jobFilterObject).forEach(key => {
   convertedJobFilters[key] = jobFilterObject[key][0];
+});
 
 export const defaultJobFilterState = {
   title: '',

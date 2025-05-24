@@ -44,3 +44,4 @@ CREATE TABLE "Candidate" (
     "isEditable" TEXT,
     "isExempt" TEXT,
     "leads" TEXT,
+    "maritalStatus" TEXT,

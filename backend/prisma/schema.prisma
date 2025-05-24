@@ -331,3 +331,6 @@ model Branch {
 model Department {
   id    String    @id @default(uuid())
   name  String
+  users Company[] @relation("departmentUsers")
+
+  createdAt DateTime @default(now())

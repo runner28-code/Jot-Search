@@ -21,7 +21,6 @@ body {
 
 input[type="text"].placeholder-spaceGrotesk::placeholder {
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
 }
 
 input[type="text"].placeholder-18::placeholder {
@@ -89,3 +88,4 @@ input[type=checkbox] {
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
+    line-height: normal;

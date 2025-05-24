@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import searchIcon from '../../assets/images/search-icon.svg';
 
 export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchClick, placeholder, additionalClasses }) {
@@ -28,6 +27,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         type='text'
         className={ inputStyles }
         placeholder={ placeholderString }
+// Temp comment
         value={ searchTerm }
         onChange={ handleChange }
       />

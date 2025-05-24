@@ -9,6 +9,7 @@ import { VscClose as CloseIcon } from 'react-icons/vsc';
 import searchGray from '../../assets/images/search-gray.svg';
 import searchWhite from '../../assets/images/search-white.webp';
 
+// Temp comment
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';

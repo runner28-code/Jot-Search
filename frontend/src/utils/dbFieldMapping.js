@@ -32,3 +32,4 @@ export const ethnicityMap = {
   WH: 'White or Caucasian',
   IA: 'Native American or Alaska Native',
   HL: 'Hispanic or Latina/Latino or LatinX',
+  AS: 'Asian',

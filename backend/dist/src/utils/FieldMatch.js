@@ -20,7 +20,6 @@ exports.JobFilter = {
         status: "status",
         skillList: "skillList",
         hidden: "hidden",
-        employmentType: "employmentType",
         onSite: "onSite",
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
@@ -29,3 +28,4 @@ exports.JobFilter = {
         isDeleted: "isDeleted",
         companyId: "companyId",
     },
+};

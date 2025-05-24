@@ -12,7 +12,6 @@ export default function ExpertiseLinks() {
   const textStyles = 'text-ml text-darkGray';
 
   return (
-// Temp comment
     <section className='mt-100 mb-54 flex flex-col items-center'>
       <h4 className='text-h4 font-spaceGrotesk font-semibold text-darkGray'>
         Browse Opportunities by Career Expertise
@@ -70,7 +69,6 @@ export default function ExpertiseLinks() {
             alt='Operations Icon'
             className={iconStyles}
           />
-          <span className={textStyles}>Operations</span>
         </Link>
         {/* Finance */}
         <Link

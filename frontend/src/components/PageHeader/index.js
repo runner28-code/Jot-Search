@@ -1,4 +1,4 @@
-import MobileHeader from './MobileHeader';
+import PropTypes from 'prop-types';
 import DesktopHeader from './DesktopHeader';
 import useWindowDimensions from '../../hooks/windowDimensions';
 

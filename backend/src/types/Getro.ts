@@ -44,3 +44,4 @@ export type Job = {
   organization_id?: string;
   passes_filter?: string;
   posted_at?: string;
+  slug?: string;

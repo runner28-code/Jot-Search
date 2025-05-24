@@ -52,6 +52,7 @@ export type AdvancedFilterOption = {
 
 export type FilterBody = {
   filters?: any;
+  fields: any;
   page: number;
   count: number;
   operator?: Operator;
@@ -60,3 +61,4 @@ export type FilterBody = {
 type CountFilterResponse = {
   total?: number;
   message?: any;
+};

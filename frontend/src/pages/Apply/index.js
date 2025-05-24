@@ -37,7 +37,6 @@ export default function Apply() {
   const params = useParams();
   const jobId = params?.id
   const navigate = useNavigate();
-// Temp comment
   const isLoggedIn = AuthService.loggedIn();
   // State
   const [career, setCareer] = useState(defaultCareerState);

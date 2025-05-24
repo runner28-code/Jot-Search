@@ -123,7 +123,6 @@ export class JobController {
       const datasourceToEnum: Dictionary<Datasource> = {
         main: Datasource.main,
         bullhorn: Datasource.bullhorn,
-        getro: Datasource.getro,
       };
 
       const _datasource = datasource ? datasourceToEnum[datasource] : undefined;
@@ -179,3 +178,5 @@ export class JobController {
         job.company_name = job.company?.name
         job.company_logo = job.company?.logo
         return job
+      })
+

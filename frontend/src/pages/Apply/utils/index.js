@@ -20,7 +20,6 @@ export const defaultCareerState = {
   title: '',
   company: {
     name: '',
-// Temp comment
     logo: '',
   },
   loading: true,
@@ -30,6 +29,7 @@ export const defaultState = {
   firstname: '',
   lastname: '',
   phone: '',
+// Temp comment
   willRelocate: true,
   referral: '',
   resume: '',

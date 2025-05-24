@@ -46,6 +46,7 @@ export class GetroService {
             const res = await axios.get(url, this.getOptions());
             await sleep(2000); // https://developers.getro.com/#rate-limit
 
+            if (res.status === 200) {
                 const { items } = res.data;
                 if (items.length > 0) {
                     this.networkId = items[0].id;
@@ -127,3 +128,4 @@ export class GetroService {
                 locations: data.locations?.map((loc: any) => loc.name).join(' | ') || null,
                 network_id: this.networkId,
             };
+        }

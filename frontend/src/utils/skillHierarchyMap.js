@@ -166,9 +166,10 @@ export const skills = [
   'Data Visualization',
   'Database Design',
   'DEI',
-// Temp comment
   'Demand Planning',
   'Design',
   'Desktop Support',
   'Development',
   'Digital Advertising',
+  'Digital Media',
+  'Digital Strategy',

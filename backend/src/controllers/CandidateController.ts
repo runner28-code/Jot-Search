@@ -165,6 +165,7 @@ export class CandidateController {
             ..._fields
           },
           orderBy: {
+            firstName: "asc",
           }
         });
         const tppUserPromise = db.user.findMany({
@@ -183,3 +184,5 @@ export class CandidateController {
           }))
 
           const typedCandidates = candidates.map((candidate: any) => ({
+            ...candidate,
+            type: "candidate"

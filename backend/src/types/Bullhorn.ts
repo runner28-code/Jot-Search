@@ -146,3 +146,4 @@ export type ClientContact = {
     fax?: string;
     fax2?: string;
     fax3?: string;
+    firstName?: string;
