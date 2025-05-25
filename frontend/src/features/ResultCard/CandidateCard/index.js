@@ -59,7 +59,6 @@ export default function CandidateCard({ data, disableLink }) {
               <img
                 src={linkedinIcon}
                 className='h-8 mr-5' />
-              <span className='text-charcoal'>
                 LinkedIn
               </span>
             </div>
@@ -134,7 +133,6 @@ function LinkWrapper({ children, link, disableLink }) {
   return (
     <Link 
       to={link}
-// Temp comment
       className={linkStyles}
       tabIndex='0'
     >

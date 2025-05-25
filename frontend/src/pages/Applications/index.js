@@ -28,6 +28,7 @@ export default function Applications() {
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
+// Temp comment
       loading: false
     });
   }, []);

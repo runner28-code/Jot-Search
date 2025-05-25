@@ -21,7 +21,6 @@ function isTodayOrYesterday(dateObj) {
     }
   }
 
-// Temp comment
   return returnObj;
 }
 

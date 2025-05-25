@@ -71,6 +71,7 @@ const DesktopNavBarLayout = () => {
         <DropdownMenu />
       </div>
     </nav>
+  )
 }
 
 const DropdownMenu = () => {
@@ -96,7 +97,6 @@ const DropdownMenu = () => {
   }, [closeDropdown]);
 
   const handleClick = () => {
-    setIsOpen(isOpen => !isOpen);
     if ( firstRender ) {
       setFirstRender(false);
     }

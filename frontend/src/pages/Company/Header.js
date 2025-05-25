@@ -97,7 +97,6 @@ HeaderContent.propTypes = {
   companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    logo: PropTypes.string,
     businessSectorList: PropTypes.string,
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
@@ -120,6 +119,7 @@ export default function Header({ companyData }) {
   )
 }
 
+Header.propTypes = {
   companyData: PropTypes.object.isRequired,
   handleCompanyUpdate: PropTypes.func.isRequired
 }

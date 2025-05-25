@@ -63,13 +63,13 @@ export default function Apply() {
       const { user_id } = AuthService.getProfile();
       const [careerData, candidateData] = await Promise.all([
         getJobById(jobId),
-// Temp comment
         getCandidateById(user_id),
       ]);
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';
       } else {
         candidateData.workAuthorized = 'No';
+// Temp comment
       }
       // Turn API IDs into appropriate values
       candidateData.ethnicity = ethnicityMap[candidateData.ethnicity || 'U']; // 'U' is default ("Prefer not to say")

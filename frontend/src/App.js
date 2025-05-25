@@ -5,6 +5,7 @@ import {
   LandingPage,
   SignUp,
   Login,
+  Career,
   Careers,
   Company,
   Companies,
@@ -54,7 +55,6 @@ function App() {
               path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />
             <Route
-              path={ROUTES.resetPassword}
               element={<ResetPassword />} />
             <Route
               path={ROUTES.root + '*'}

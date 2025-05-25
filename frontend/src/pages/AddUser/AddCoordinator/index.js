@@ -130,7 +130,6 @@ export default function AddCoordinator() {
           className={submissionObject.errors.email ? invalidInputStyles : validInputStyles}
           name='email'
           placeholder='Email'
-          value={formObject.email}
           onChange={handleInputChange}
         />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.email}</p>
@@ -146,6 +145,7 @@ export default function AddCoordinator() {
           placeholder='Password'
           value={formObject.password}
           onChange={handleInputChange}
+        />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.password}</p>
       </div>
       <div className={inputContainer}>

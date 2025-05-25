@@ -1,2 +1,1 @@
-if commit.author_email == b"mobaddicts@hotmail.com":
     commit.author_name = b"Regi228"

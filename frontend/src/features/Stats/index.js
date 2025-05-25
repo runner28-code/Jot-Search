@@ -16,4 +16,5 @@ export default function Stats({ userType }) {
   const [timeframe, setTimeframe] = useState(statFilterChoices[3]);
   const [stats, setStats] = useState({});
 
+  function handleFilterChange(choice) {
     setTimeframe(choice);

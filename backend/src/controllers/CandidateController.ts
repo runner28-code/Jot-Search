@@ -77,7 +77,6 @@ export class CandidateController {
 
   @Authorized()
   @Post("/update")
-  async update(
     @CurrentUser() authUser: User,
     @Body() body: any
   ) {

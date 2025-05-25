@@ -59,6 +59,7 @@ export default function RegistrationForm(loggedIn) {
     success: false,
   });
 
+  const navigate = useNavigate();
   const location = useLocation();
 
   // Who is adding the user; IF path is `/add-user`, then it's a coordinator adding a user
@@ -68,6 +69,7 @@ export default function RegistrationForm(loggedIn) {
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
       // Validation
+// Temp comment
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {

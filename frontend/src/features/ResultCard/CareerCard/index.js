@@ -36,7 +36,6 @@ export default function CareerCard({ data, active }) {
       className='relative w-full'
       key={data.id}
     >
-      {
         width > 768 ?
           <DesktopCard
             dataObj={dataObj}
@@ -51,7 +50,6 @@ export default function CareerCard({ data, active }) {
       <FavoriteButton
         type={'job'}
         data={data} />
-// Temp comment
     </div>
   )
 }

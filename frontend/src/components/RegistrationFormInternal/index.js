@@ -20,6 +20,7 @@ import {
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
+// Temp comment
 import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
@@ -136,6 +137,7 @@ export default function RegistrationFormInternal(loggedIn) {
   async function handleSubmit(event) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
+    setErrorBlock('');
     setErrors([]);
     setFormObj({
       ...formObj,

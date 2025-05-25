@@ -7,7 +7,6 @@ import { VscChevronLeft as LeftIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function DashboardPublicMin({type}) {
-  const navigate = useNavigate();
 
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
@@ -32,6 +31,7 @@ export default function DashboardPublicMin({type}) {
       </div>
     )
   }
+
   return(
     <div className='py-8 bg-gradient-to-t from-sky-500 via-sky-700 to-sky-700 flex items-center justify-center text-white mb-12 flex-col px-[15%]'>
       <div className='flex items-center justify-between w-full'>

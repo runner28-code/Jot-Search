@@ -17,7 +17,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const [listening, setListening] = useState(false);
 
   const menuRef = useRef(null);
-// Temp comment
 
   function handleContainerClick() {
     setShowDropdown(showDropdown => !showDropdown);
@@ -62,7 +61,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
           src={downChevron}
           alt='open'
           className='w-6 h-4'
-        />
 
       </div>
       { renderDropdown( showDropdown, choices, handleChoiceClick ) }

@@ -19,6 +19,7 @@ export default function InviteCandidates({ company }) {
 
   const candidateOptions = candidates?.map(candidate => {
     return {
+      label: candidate.name,
       value: candidate.id,
       candidate
     }
