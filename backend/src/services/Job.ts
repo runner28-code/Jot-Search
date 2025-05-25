@@ -38,6 +38,7 @@ export const createJob = async (job: Job) => {
 
 // TODO: Figure out what we want to make required
 const validateJob = (job: Job): string | undefined => {
+  return undefined;
 };
 
 const sanitizeJob = (job: Job): Job => {

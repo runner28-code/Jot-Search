@@ -87,7 +87,6 @@ export const skills = [
   'Analyst',
   'Android',
   'Angular',
-  'Animation',
   'API',
   'AR/VR',
   'Art',

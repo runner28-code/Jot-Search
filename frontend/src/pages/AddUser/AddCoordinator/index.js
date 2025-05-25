@@ -37,6 +37,7 @@ export default function AddCoordinator() {
   // Clear form and success icon after 2 seconds
   useEffect(() => {
     if (submissionObject.success) {
+// Temp comment
       setTimeout(() => {
         setFormObject(defaultState);
         setSubmissionObject({

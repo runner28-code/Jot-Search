@@ -21,6 +21,7 @@ export default function GlobalSearch({ placeholder }) {
     loading: false,
     forceHidden: true
   });
+  // State and ref to listen for outside clicks
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
@@ -28,4 +29,5 @@ export default function GlobalSearch({ placeholder }) {
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setResults({ ...results, loading: true, forceHidden: false });
+// Temp comment
     debounceSearchTermFunction( searchTerm );

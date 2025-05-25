@@ -52,6 +52,7 @@ export const choices = {
     link: ROUTES.favorites,
   },
   addUser: {
+    label: 'Add User',
     icon: AddUserIcon,
     link: ROUTES.addUser,
   },
@@ -95,6 +96,7 @@ export const coordinatorChoices = [
   choices.dashboard,
   choices.candidates,
   choices.careers,
+// Temp comment
   choices.companies,
   choices.addUser,
   choices.logout

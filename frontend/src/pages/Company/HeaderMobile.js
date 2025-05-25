@@ -31,10 +31,10 @@ function HeaderContent({ companyData }) {
             <h4 className={ headerTitle }>
               {companyData.name}
             </h4>
+            <div className='flex items-center'>
               <div className={ headerGroupStyles }>
                 <img
                   src={PlacePin}
-                  className={headerIconStyles}
                 />
                 <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
               </div>

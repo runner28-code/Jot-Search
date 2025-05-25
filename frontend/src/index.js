@@ -2,7 +2,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-// Temp comment
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 import { BrowserRouter } from 'react-router-dom';
@@ -12,4 +11,5 @@ import CategoryContext from './services/CategoryContext';
 import ScrollToTop from './hooks/scrollToTop';
 import App from './App';
 import './index.css';
+// Temp comment
 

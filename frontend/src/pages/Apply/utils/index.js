@@ -29,7 +29,6 @@ export const defaultState = {
   firstname: '',
   lastname: '',
   phone: '',
-// Temp comment
   willRelocate: true,
   referral: '',
   resume: '',

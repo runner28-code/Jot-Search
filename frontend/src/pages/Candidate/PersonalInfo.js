@@ -10,6 +10,7 @@ import {
   ethnicityChoices,
   genderChoices,
   veteranStatusChoices
+} from '../Apply/utils';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
 
@@ -23,6 +24,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   }
   const [formData, setFormData] = useState({
     firstname: candidateData.firstname || '',
+// Temp comment
     lastname: candidateData.lastname || '',
     email: candidateData.email || '',
     phone: candidateData.phone || '',

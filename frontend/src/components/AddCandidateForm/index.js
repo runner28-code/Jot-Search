@@ -209,7 +209,6 @@ export default function RegistrationForm() {
           </div>
         </div>
         <div className={flexWidth}>
-          <FormInput
             type='single-select'
             name='experience'
             placeholder='Years of Experience' 

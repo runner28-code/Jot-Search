@@ -36,7 +36,6 @@ export const jobFilterObject = {
     'On-Deck',
   ]
 };
-// Temp comment
 
 export const ACTIVE_STATUSES = [
   'Active',
@@ -78,6 +77,7 @@ export const candidateFilterObject = {
     'Hybrid'
   ],
   'Employment Type': [
+// Temp comment
     'Any',
     'Full-Time',
     'Part-Time',

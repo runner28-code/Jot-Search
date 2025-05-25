@@ -10,7 +10,6 @@ import { MdSearch as SearchIcon } from 'react-icons/md';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import Dashboard from '../../components/DashboardPublic';
 import DashboardCandidate from '../../components/DashboardCandidate';
-import useWindowDimensions from '../../hooks/windowDimensions';
 
 import AuthService from '../../services/auth';
 
@@ -37,7 +36,6 @@ export default function Companies() {
       <div 
         className={ !loggedIn && width <= 990 ? 'px-[5%]' 
           : !loggedIn ? 'px-[15%]' 
-// Temp comment
             : ''
         }>
         <RenderAdvancedSearch

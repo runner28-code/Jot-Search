@@ -38,6 +38,7 @@ export type User = {
   dateFounded?: string;
 
   employeeType?: string;
+  experience?: string;
   hourlyRate?: string;
   willRelocate?: string;
   willReceiveNotification?: boolean;

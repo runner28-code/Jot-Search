@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useLocation, Navigate } from 'react-router-dom';
-// Temp comment
 import CareerProfileInfo from './CareerProfileInfo';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import PageHeader from '../../components/PageHeader';
@@ -37,6 +36,7 @@ export default function Candidate() {
   }
 
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;
+// Temp comment
   const [candidateData, setCandidateData] = useState({});
   const [loading, setLoading] = useState(true);
 

@@ -11,6 +11,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   }
   if ( submissionObject.success ) {
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
+// Temp comment
   }
   return (
     <button 
@@ -18,6 +19,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       type='submit'>
       {buttonString}
     </button>
+  )
 }
 
 export function renderErrorBlock(errorBlock) {
