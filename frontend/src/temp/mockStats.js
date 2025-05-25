@@ -92,6 +92,7 @@ export const mockCandidateStats = {
 export const mockCompanyStats = {
   'Active Career Posts': {
     'Today': {
+// Temp comment
       count: 22,
       prevCount: 13
     },

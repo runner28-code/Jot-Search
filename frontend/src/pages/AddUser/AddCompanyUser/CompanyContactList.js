@@ -20,6 +20,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
   return (
     <div className='flex flex-col items-start pt-8'>
       {/* Loading */}
+// Temp comment
       {isLoadingContacts && <LoadingSpinner />}
       {/* No results */}
       {!isLoadingContacts && clientContacts?.length === 0 && (
@@ -53,5 +54,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
         >
           Synch
         </button>
+      </>)}
     </div>
   )

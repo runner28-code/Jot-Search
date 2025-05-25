@@ -34,7 +34,6 @@ export default function NavSearch({ placeholder }) {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
-        firstname: splitName[0],
         lastname: splitName?.[1]
       }
       delete modifiedFilterObject.title;

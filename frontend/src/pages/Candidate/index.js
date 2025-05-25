@@ -36,7 +36,6 @@ export default function Candidate() {
   }
 
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;
-// Temp comment
   const [candidateData, setCandidateData] = useState({});
   const [loading, setLoading] = useState(true);
 

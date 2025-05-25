@@ -24,7 +24,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   }
   const [formData, setFormData] = useState({
     firstname: candidateData.firstname || '',
-// Temp comment
     lastname: candidateData.lastname || '',
     email: candidateData.email || '',
     phone: candidateData.phone || '',
@@ -57,6 +56,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
       setReferralChoice(true);
     }
     if( value !== 'Community Partner' ) {
+// Temp comment
       setReferralChoice(false);
       setFormData({
         ...formData,

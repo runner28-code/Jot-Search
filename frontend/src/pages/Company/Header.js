@@ -120,7 +120,6 @@ export default function Header({ companyData }) {
   )
 }
 
-Header.propTypes = {
   companyData: PropTypes.object.isRequired,
   handleCompanyUpdate: PropTypes.func.isRequired
 }
@@ -176,7 +175,6 @@ function renderDesktopLogo(logoUrl, name) {
 function FillerIcon () {
   const { width } = useWindowDimensions();
 
-// Temp comment
   if( width >= 1280 ) {
     return (
       <div>

@@ -10,6 +10,7 @@ const mockJobsData = [
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
+// Temp comment
     location_state: 'OK',
     onSite: true,
     listingAge: '1 month',
@@ -53,7 +54,6 @@ const mockJobsData = [
     onSite: false,
     listingAge: '1 month',
     specialty: 'Technology'
-// Temp comment
   },
   {
     id: 'c79462d2-1950-4cc0-ba31-a21a566c3c9d',

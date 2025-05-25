@@ -96,7 +96,6 @@ export const coordinatorChoices = [
   choices.dashboard,
   choices.candidates,
   choices.careers,
-// Temp comment
   choices.companies,
   choices.addUser,
   choices.logout

@@ -173,6 +173,7 @@ export class JobController {
       })
       const extendedJobs = jobs.map((job: any) => {
         const getroCompany = getroCompanies.find((gc: any) => gc.domain === job.company?.companyURL)
+        if (getroCompany) {
           job.company.logo = getroCompany.logo_url
         }
         job.company_name = job.company?.name
@@ -180,3 +181,4 @@ export class JobController {
         return job
       })
 
+      // console.log({ jobs });

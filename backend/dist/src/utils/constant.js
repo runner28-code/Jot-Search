@@ -100,7 +100,6 @@ const job_filter_exclude_keys = [
     "court",
     "credit",
     "crew",
-// Temp comment
     "crew leader",
     "crime",
     "crisis",
@@ -152,7 +151,6 @@ const job_filter_exclude_keys = [
     "family",
     "field coach",
     "field service",
-    "financial aid",
     "financial counselor",
     "fire",
     "fleet",

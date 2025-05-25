@@ -5,7 +5,6 @@ import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
-// Temp comment
 import {  calculatePostingAge } from '../../../utils/formatFunctions';
 
 export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOverride = null, agoText = 'Saved', selectableProps = null }) {
@@ -28,6 +27,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             { renderCardImage(data) }
           </div>
 
+// Temp comment
           {/* Title */}
           <div className='flex'>
             <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.name}</h6>

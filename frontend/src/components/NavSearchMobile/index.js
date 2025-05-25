@@ -69,6 +69,7 @@ export default function NavSearchMobile({ placeholder }) {
   /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');
+  }, [location]);
 
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {

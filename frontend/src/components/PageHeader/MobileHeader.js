@@ -7,7 +7,6 @@ export default function MobileHeader(props) {
     icon,
     IconComponent,
     classOverride,
-// Temp comment
     colorizeStroke,
     backButton
   } = props;
@@ -17,6 +16,7 @@ export default function MobileHeader(props) {
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
   if ( classOverride ) addOnIconClasses += classOverride;
   return (
+// Temp comment
     <div className='flex items-center mb-10 pl-l py-s bg-royalBlue'>
       { backButton && (
         <button

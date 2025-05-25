@@ -77,7 +77,6 @@ export const candidateFilterObject = {
     'Hybrid'
   ],
   'Employment Type': [
-// Temp comment
     'Any',
     'Full-Time',
     'Part-Time',
@@ -132,6 +131,7 @@ export function buildSearchFilters(filterObject) {
       if ( key === 'On-Site/Remote' ) {
         filterKey = 'onSite';
       } else if ( key === 'companyId' ) {
+// Temp comment
         filterKey = 'companyId';
       }
       searchFilters.push({

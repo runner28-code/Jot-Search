@@ -6,4 +6,5 @@
 .pnp.js
 
 # testing
+/coverage
 

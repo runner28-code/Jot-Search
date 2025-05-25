@@ -74,7 +74,6 @@ export default function CareerPage() {
           <DesktopLayout data={data} />
       }
       {
-// Temp comment
         role === 'coordinator' &&
         <InviteCandidates job={ careerData } />
       }

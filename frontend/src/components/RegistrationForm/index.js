@@ -59,7 +59,6 @@ export default function RegistrationForm(loggedIn) {
     success: false,
   });
 
-  const navigate = useNavigate();
   const location = useLocation();
 
   // Who is adding the user; IF path is `/add-user`, then it's a coordinator adding a user

@@ -5,12 +5,10 @@ import {
   LandingPage,
   SignUp,
   Login,
-  Career,
   Careers,
   Company,
   Companies,
   AccountRecovery,
-// Temp comment
   ResetPassword,
   Apply
 } from './pages';

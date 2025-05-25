@@ -37,7 +37,6 @@ export default function AddCoordinator() {
   // Clear form and success icon after 2 seconds
   useEffect(() => {
     if (submissionObject.success) {
-// Temp comment
       setTimeout(() => {
         setFormObject(defaultState);
         setSubmissionObject({
@@ -147,7 +146,6 @@ export default function AddCoordinator() {
           placeholder='Password'
           value={formObject.password}
           onChange={handleInputChange}
-        />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.password}</p>
       </div>
       <div className={inputContainer}>

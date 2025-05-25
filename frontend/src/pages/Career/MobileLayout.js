@@ -52,7 +52,6 @@ export default function MobileLayout(props) {
               <img
                 src={locationIcon}
                 className='h-8 mr-5' />
-// Temp comment
               <p className='text-textBlack text-xs'>{addressString}</p>
             </div>
             {/* Remote/Onsite/Hybrid */}
@@ -134,6 +133,7 @@ export default function MobileLayout(props) {
     />
   </>)
 }
+// Temp comment
 
 MobileLayout.propTypes = {
   data: PropTypes.shape({
