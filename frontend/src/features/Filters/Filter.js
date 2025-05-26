@@ -31,7 +31,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
     const value = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
     setSelected(value);
   }, [chosen]);
-// Temp comment
 
   // Used to close dropdown when clicking outside of it
   useEffect(() => {
@@ -52,6 +51,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
         className={filterStyles}>
         {filterType === 'Location' && 
           <MdLocationOn
+// Temp comment
             className='w-10 h-10 mr-1' 
             color='lightGray'
           />}

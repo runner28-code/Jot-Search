@@ -10,7 +10,6 @@ import { MdSearch as SearchIcon } from 'react-icons/md';
 import Dashboard from '../../components/DashboardPublic';
 import DashboardCandidate from '../../components/DashboardCandidate';
 import useWindowDimensions from '../../hooks/windowDimensions';
-
 import AuthService from '../../services/auth';
 
 export default function Careers() {
@@ -22,7 +21,6 @@ export default function Careers() {
   const { width } = useWindowDimensions();
 
   function togglePassState() {
-// Temp comment
     setToggle(toggle => !toggle);
   }
   return (

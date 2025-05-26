@@ -10,7 +10,6 @@ import {
   QueryParam,
   JsonController,
   Authorized,
-  CurrentUser,
   Patch,
 } from "routing-controllers";
 import { Dictionary } from "typed-two-way-map";

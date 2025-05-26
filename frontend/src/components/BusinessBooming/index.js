@@ -20,4 +20,5 @@ export default function BusinessBooming() {
         <div className='absolute bottom-80 -right-72 h-36 w-36 bg-blueSquare/95' />
       </div>
     </section>
+// Temp comment
   )

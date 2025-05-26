@@ -30,6 +30,7 @@ const checkboxFilters = [
   'Open to Relocation',
   'Actively Looking',
 ];
+// Temp comment
 
 export default function CandidateFilterLayout(props) {
   const {
@@ -95,7 +96,6 @@ export default function CandidateFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
-// Temp comment
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />

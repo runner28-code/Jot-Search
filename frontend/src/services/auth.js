@@ -33,6 +33,7 @@ class AuthService {
     } catch (err) {
       return false;
     }
+  }
 
   getToken() {
     return localStorage.getItem('id_token');
@@ -52,6 +53,7 @@ class AuthService {
   accountRecovery(email) {
     return email;
   }
+// Temp comment
 
   logout() {
     this.clearStorage();

@@ -187,6 +187,7 @@ export default function Footer() {
             rel='noreferrer'
           >
               Privacy Policy
+// Temp comment
           </a>
           <span> | </span>
           <a
@@ -272,6 +273,7 @@ function NavFooter() {
           href="/careers"
           className={linkStyle}
         >
+          Operations Job Openings
         </a>
         <a
           href="/careers"

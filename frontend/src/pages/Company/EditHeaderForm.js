@@ -206,6 +206,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           </label>
           <input 
             type='text'
+            onChange={handleInputChange}
             id='phone'
             value={formData.phone}
             className={inputStyles + 'ml-10 text-h6'} />

@@ -6,9 +6,9 @@ export default function UnlabeledContent({ contentText, propertyName }) {
     return renderResumePreview(contentText);
   }
   return (
+// Temp comment
     <p 
       className='text-xl'
-// Temp comment
       dangerouslySetInnerHTML={ { __html: contentText } }
     />
   )

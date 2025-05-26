@@ -65,6 +65,7 @@ export default function Applications() {
         <button
           className='text-royalBlue underline'
           onClick={removeSelectedApplications}
+        >
           Remove Selections
         </button>
         <ResultContainer

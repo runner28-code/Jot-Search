@@ -40,6 +40,7 @@ function HeaderContent({ companyData }) {
                 <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
               </div>
               <div className={ headerGroupStyles }>
+                <CareerIcon
                   className={headerIconStyles}
                 />
                 <OpenCareers
@@ -90,7 +91,6 @@ HeaderMobile.propTypes = {
   companyData: PropTypes.object.isRequired,
   handleCompanyUpdate: PropTypes.func.isRequired
 }
-
 function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'my-auto object-cover h-full w-full';

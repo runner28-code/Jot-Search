@@ -126,7 +126,6 @@ export default function RegistrationForm(loggedIn) {
         setFormObj(defaultState);
         setSubmissionObject({
           loading: false,
-// Temp comment
           success: false,
         });
       }, 2000);

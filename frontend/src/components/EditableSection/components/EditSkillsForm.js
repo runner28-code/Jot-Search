@@ -32,4 +32,3 @@ export default function EditSkillsForm({ skills, handleChange }) {
       baseStyles={baseStyles}
       inputHeight={inputHeight}
     />
-  </>

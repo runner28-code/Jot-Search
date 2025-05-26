@@ -161,7 +161,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
     if (config.sendgridSecret) {
       await sendUpdateUserNotification(updated.email, updated.firstname);
     }
-
     return { result: true, data: updated };
   } catch (error) {
     console.error(error);
@@ -210,6 +209,7 @@ export const addUserHistoryEntries = async ({
 };
 
 export const getUserById = async (id: string) => {
+  try {
     const user = await db.user.findFirst({
       where: {
         id,

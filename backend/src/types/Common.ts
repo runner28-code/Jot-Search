@@ -44,7 +44,6 @@ export type FilterOption = {
   value: string;
 };
 
-export type AdvancedFilterOption = {
   key: string;
   value: string | string[];
   operator?: Operator;

@@ -30,9 +30,9 @@ export default function InviteCandidates({ company }) {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }
-// Temp comment
 
   const SelectedValues = () => {
+// Temp comment
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (
         <span 

@@ -27,7 +27,6 @@ export default function FormInput(props) {
   } = props;
 
   let componentStyles = inputStyles;
-// Temp comment
   componentStyles += (error ? errorBorder : regularBorder);
   componentStyles += disabled ? 'bg-grey300 cursor-not-allowed ' : 'bg-lightGrey ';
 
@@ -38,6 +37,7 @@ export default function FormInput(props) {
     listStyles: dropdownStyles,
     listItemStyles: dropdownItemStyles
   };
+// Temp comment
   switch (type) {
     case 'file':
       return <FileInput

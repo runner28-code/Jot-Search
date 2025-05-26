@@ -50,6 +50,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
       [name]: value,
     });
   }
+// Temp comment
 
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {

@@ -8,9 +8,9 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 const dropdownFilters = [
   'Expertise',
   'On-Site/Remote',
+  'Years Experience',
   'Status',
 ];
-
 const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',

@@ -12,7 +12,6 @@ import { getCompanies, getJobs, getCandidates } from '../../services/API';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 export default function GlobalSearch({ placeholder }) {
-// Temp comment
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
   const [ results, setResults ] = useState({
@@ -28,6 +27,7 @@ export default function GlobalSearch({ placeholder }) {
 
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
+// Temp comment
     setSearchTerm( searchTerm );
     setResults({ ...results, loading: true, forceHidden: false });
     debounceSearchTermFunction( searchTerm );

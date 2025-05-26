@@ -75,6 +75,7 @@ export default function CompanyCard({ data }) {
                 href='#'
                 className='text-royalBlue underline'
               >
+                LinkedIn
               </a>
             </div>
             {/* Website */}

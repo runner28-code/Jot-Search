@@ -52,7 +52,6 @@ const mockCandidateData = [
   },
   {
     id: '04bd7f2a-2bcf-4d37-9f9b-3dbb8dd91672',
-// Temp comment
     firstName: 'Curtis',
     lastName: 'Kline',
     linkedin_url: 'https://www.linkedin.com/',

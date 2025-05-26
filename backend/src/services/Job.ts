@@ -33,7 +33,6 @@ export const createJob = async (job: Job) => {
       result: false,
       error: err,
     };
-  }
 };
 
 // TODO: Figure out what we want to make required
