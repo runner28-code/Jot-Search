@@ -61,6 +61,7 @@ const validateUser = ({
 
 export const register = async (data: User) => {
   try {
+    console.log("registering...");
     const validate = validateUser(data);
     if (validate) {
       console.log("failed validation", validate);
@@ -209,7 +210,6 @@ export const addUserHistoryEntries = async ({
 };
 
 export const getUserById = async (id: string) => {
-  try {
     const user = await db.user.findFirst({
       where: {
         id,

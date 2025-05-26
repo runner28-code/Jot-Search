@@ -50,6 +50,7 @@ export default function CandidateCard({ data, disableLink }) {
           </div>
           {/* Occupation */}
           <p className='text-charcoal mt-l'>{occupationString}</p>
+// Temp comment
           {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold text-md mt-[18px]'>{expertiseString}</p>
           {/* First row icons */}
@@ -59,6 +60,7 @@ export default function CandidateCard({ data, disableLink }) {
               <img
                 src={linkedinIcon}
                 className='h-8 mr-5' />
+              <span className='text-charcoal'>
                 LinkedIn
               </span>
             </div>

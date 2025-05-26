@@ -191,7 +191,6 @@ model Company {
   state String?
 
   billingContact   String?
-  billingFrequency String?
   billingPhone     String?
 
   branchId String?

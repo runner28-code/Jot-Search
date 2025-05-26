@@ -32,6 +32,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   }
   if ( propertyName === 'resume' ) {
     return <EditResumeForm
+// Temp comment
       handleChange={handleChange} />
   }
   return (
@@ -61,6 +62,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               className='w-100 text-xl border-lightGrey border-solid border-2 rounded-2xl px-4 py-2'
               key={key}
               name={key}
+              onChange={handleChange}
               value={value}
             />
           </div>

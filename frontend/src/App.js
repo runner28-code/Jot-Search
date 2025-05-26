@@ -49,12 +49,14 @@ function App() {
               path={`${ROUTES.apply}/:id`}
               element={<Apply />} />
             <Route
+// Temp comment
               path={`${ROUTES.companies}/:id`}
               element={<Company />} />
             <Route
               path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />
             <Route
+              path={ROUTES.resetPassword}
               element={<ResetPassword />} />
             <Route
               path={ROUTES.root + '*'}

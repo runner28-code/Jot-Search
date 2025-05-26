@@ -77,7 +77,6 @@ export default function AddCoordinator() {
     const errors = validateObject(formObject);
     if (Object.keys(errors).length > 0) {
       setSubmissionObject({ ...submissionObject, errors: errors });
-      return;
     } else {
       setSubmissionObject({ ...submissionObject, loading: true });
     }
@@ -130,6 +129,7 @@ export default function AddCoordinator() {
           className={submissionObject.errors.email ? invalidInputStyles : validInputStyles}
           name='email'
           placeholder='Email'
+          value={formObject.email}
           onChange={handleInputChange}
         />
         <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk'>{submissionObject.errors.email}</p>

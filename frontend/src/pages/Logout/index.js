@@ -1,6 +1,6 @@
 import AuthService from '../../services/auth';
 import useComponentWillMount from '../../hooks/useComponentWillMount';
 
-  useComponentWillMount(() => AuthService.logout());
+export default function Logout() {
 
   return null;

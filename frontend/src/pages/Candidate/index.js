@@ -91,6 +91,7 @@ export default function Candidate() {
       <PageHeader
         headerText={headerText}
         IconComponent={CandidatesIcon}
+        classOverride='h-18 w-18'
         containerClassOverride='pt-2'
         backButton
       />

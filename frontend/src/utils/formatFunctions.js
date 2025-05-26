@@ -92,7 +92,6 @@ export function formatPhoneNumber(phoneNumberString) {
   if (phoneNumberString.length === 10) {
     const areaCode = phoneNumberString.slice(0, 3);
     const firstThree = phoneNumberString.slice(3, 6);
-    const lastFour = phoneNumberString.slice(6, 10);
     return `(${areaCode}) ${firstThree}-${lastFour}`;
   }
   if ( phoneNumberString[0] === '+' ) {

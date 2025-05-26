@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
-import LoadingSpinner from '../../components/LoadingSpinner';
 
 
 // Icons
@@ -97,6 +96,7 @@ HeaderContent.propTypes = {
   companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
+    logo: PropTypes.string,
     businessSectorList: PropTypes.string,
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,

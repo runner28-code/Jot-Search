@@ -11,4 +11,5 @@ import CategoryContext from './services/CategoryContext';
 import ScrollToTop from './hooks/scrollToTop';
 import App from './App';
 import './index.css';
+// Temp comment
 

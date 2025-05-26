@@ -33,7 +33,6 @@ class AuthService {
     } catch (err) {
       return false;
     }
-  }
 
   getToken() {
     return localStorage.getItem('id_token');

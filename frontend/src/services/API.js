@@ -22,7 +22,6 @@ API.interceptors.request.use(
     return Promise.reject(error);
   }
 );
-// Temp comment
 
 export default API;
 

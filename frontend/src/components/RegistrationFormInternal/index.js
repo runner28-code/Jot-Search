@@ -20,7 +20,6 @@ import {
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
-// Temp comment
 import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
@@ -56,7 +55,6 @@ export default function RegistrationFormInternal(loggedIn) {
   const [referralChoice, setReferralChoice] = useState(false);
   const [commObj, setCommObj] = useState(defaultCommunity);
   const [relocate, setRelocate] = useState(false);
-  const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
   });

@@ -109,6 +109,7 @@ export const skills = [
   'Blender',
   'Bootstrap',
   'Brand Awareness',
+  'Brand Development',
   'Brand Marketing',
   'Branding',
   'Budget Management',
@@ -128,6 +129,7 @@ export const skills = [
   'Communications',
   'Community and Culture',
   'Compensation',
+// Temp comment
   'Competitive Analysis',
   'Compliance',
   'CompTIA Network+',

@@ -6,7 +6,6 @@ export default function Filters(props) {
   const {
     handleFilterChange,
     defaultFilterObject,
-// Temp comment
     filterObject,
     searchLabel,
     searchTerm,
@@ -49,5 +48,6 @@ export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handl
         handleSearchClick={handleSearchClick}
         placeholder={searchLabel}
       />
+// Temp comment
     )
   }

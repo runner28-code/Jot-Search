@@ -80,6 +80,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             type='text'
             onChange={handleInputChange}
             id='lastname'
+            name='lastname'
             value={formData.lastname}
             className={inputStyles + 'text-h6 w-full'} />
         </div>
@@ -205,7 +206,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           </label>
           <input 
             type='text'
-            onChange={handleInputChange}
             id='phone'
             value={formData.phone}
             className={inputStyles + 'ml-10 text-h6'} />

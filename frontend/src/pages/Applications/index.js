@@ -28,7 +28,6 @@ export default function Applications() {
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
-// Temp comment
       loading: false
     });
   }, []);
@@ -66,7 +65,6 @@ export default function Applications() {
         <button
           className='text-royalBlue underline'
           onClick={removeSelectedApplications}
-        >
           Remove Selections
         </button>
         <ResultContainer
