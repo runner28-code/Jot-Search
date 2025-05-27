@@ -4,7 +4,6 @@ import TypeaheadDropdown from '../FormInput/TypeaheadDropdown';
 const mockJobsData = [
   {
     id: '1ea36da6-8819-4617-8c09-5df46f1e4d07',
-    title: 'Data Scientist',
     company: 'Hobby Lobby',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
     salaryRange: '$80k-$90k',
@@ -22,7 +21,6 @@ const mockJobsData = [
     listingAge: '1 month',
     specialty: 'Technology'
   },
-// Temp comment
   {
     id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',
     title: 'Outside Sales Executive',

@@ -7,7 +7,6 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 const MULTI_SELECT = 'multi-select';
 
 export default function AccessibleDropdown(props) {
-  const {
     type,
     name,
     label,
@@ -56,6 +55,7 @@ export default function AccessibleDropdown(props) {
           { renderDropdownArrow(showDropdownArrow) }
         </Button>
         <Menu>
+          <ul 
             name={ name }
             className={ listStyles }
           >

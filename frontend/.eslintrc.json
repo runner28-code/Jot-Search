@@ -19,7 +19,6 @@
         "react"
     ],
     "rules": {
-        "indent": [
             "warn",
             2,
             { "SwitchCase": 1 }
@@ -29,3 +28,4 @@
             "single",
             { "allowTemplateLiterals": true }
         ],
+        "react/jsx-max-props-per-line": [

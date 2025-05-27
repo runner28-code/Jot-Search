@@ -61,3 +61,4 @@ const uploadToS3 = async(req: any, res: any) => {
         file: response.Location,
         result: true,
       })
+    } catch (e) {

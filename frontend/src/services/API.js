@@ -35,6 +35,7 @@ export function appendPathToBaseUrl(path) {
 /* FETCH FUNCTIONS */
 //* CANDIDATES
 export async function getCandidates(filtersArr, count, page) {
+  return (await getCandidatesFull(filtersArr, count, page)).candidates;
 }
 
 export async function getCandidatesFull(filtersArr, count, page, fields = null) {
@@ -167,6 +168,7 @@ export async function getClientContacts(filterValue, filterKey, count) {
 
 
 export async function saveCompany(candidateId, companyId) {
+// Temp comment
   const { data } = await API.put(ROUTES.APItoggleSaveCompany, {
     'company': companyId,
     'candidate': candidateId,

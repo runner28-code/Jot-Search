@@ -334,3 +334,6 @@ model Department {
   users Company[] @relation("departmentUsers")
 
   createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+

@@ -2,4 +2,4 @@
 CREATE TABLE "Address" (
     "id" TEXT NOT NULL,
     "address1" TEXT NOT NULL,
-    "city" TEXT NOT NULL,
+    "address2" TEXT,

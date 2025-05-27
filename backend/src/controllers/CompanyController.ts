@@ -152,3 +152,6 @@ export class CompanyController {
     try {
       const company = await db.getroCompany.findFirst({
         where: {
+          id: id,
+        },
+      });

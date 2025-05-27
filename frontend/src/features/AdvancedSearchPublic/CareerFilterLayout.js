@@ -11,6 +11,7 @@ const dropdownFilters = [
   'Years Experience',
   'Status',
 ];
+
 const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',
@@ -29,6 +30,7 @@ export default function CareerFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
+// Temp comment
 
   const dropdownFilterObject = {};
   if( userType === 'candidate' ) {

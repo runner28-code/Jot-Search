@@ -27,7 +27,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
     handleFilterChange(filterType, choice);
   }
 
-  useEffect(() => {
     const value = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
     setSelected(value);
   }, [chosen]);
@@ -51,7 +50,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
         className={filterStyles}>
         {filterType === 'Location' && 
           <MdLocationOn
-// Temp comment
             className='w-10 h-10 mr-1' 
             color='lightGray'
           />}

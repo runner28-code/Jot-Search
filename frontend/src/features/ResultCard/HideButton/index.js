@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { BiHide } from 'react-icons/bi';
-import { toggleHideJob } from '../../../services/API';
 import AuthService from '../../../services/auth';
 
 export default function HideButton({ type, data, setIsHidden }) {
@@ -13,7 +12,6 @@ export default function HideButton({ type, data, setIsHidden }) {
     setIsHidden(true);
     await toggleHideJob(data.id);
   }
-// Temp comment
 
   return (
     <BiHide 

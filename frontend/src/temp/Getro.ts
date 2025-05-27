@@ -25,6 +25,7 @@ export type Company = {
     locations?: string;
     collections?: string;
 }
+
 export type Job = {
     id: string;
     application_method?: string;
@@ -32,3 +33,4 @@ export type Job = {
     compensation_currency?: string;
     compensation_max?: string;
     compensation_min?: string;
+    compensation_period?: string;

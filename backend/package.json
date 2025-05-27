@@ -29,3 +29,4 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
+    "dev": "cp -R ./src/templates ./dist && export GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' && nodemon src/app.ts",

@@ -102,3 +102,4 @@ export class UserController {
         result: false,
         error: "Only coordinators can add other users",
       };
+    }

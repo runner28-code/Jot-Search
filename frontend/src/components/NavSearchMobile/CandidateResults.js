@@ -11,7 +11,6 @@ export default function CandidateResults({ candidates }) {
   }
 
   return (
-    <>
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Candidates</h6>
       { candidates.map(candidate => {
         return (
@@ -22,3 +21,4 @@ export default function CandidateResults({ candidates }) {
       })}
       <hr className='w-full border-black50% mt-6 mb-2' />
     </>
+  )

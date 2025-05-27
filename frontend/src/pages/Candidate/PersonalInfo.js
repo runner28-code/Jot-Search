@@ -50,7 +50,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
       [name]: value,
     });
   }
-// Temp comment
 
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
@@ -58,6 +57,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     }
     if( value !== 'Community Partner' ) {
       setReferralChoice(false);
+// Temp comment
       setFormData({
         ...formData,
         community: ''

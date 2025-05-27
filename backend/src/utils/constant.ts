@@ -220,3 +220,5 @@ const job_filter_exclude_keys = [
   "languages",
   "law",
   "lcsw",
+  "leak",
+  "learn",

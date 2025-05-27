@@ -38,6 +38,7 @@ export const roles = {
     'Entrepreneurship'
   ],
   'Other': [
+// Temp comment
     'Education',
     'Healthcare',
     'Legal',
@@ -173,3 +174,5 @@ export const skills = [
   'Digital Advertising',
   'Digital Media',
   'Digital Strategy',
+  'Direct Sales',
+  'Distribution',

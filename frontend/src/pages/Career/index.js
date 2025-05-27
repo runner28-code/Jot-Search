@@ -47,7 +47,6 @@ export default function CareerPage() {
     categoryString,
     addressString,
     salaryString,
-    postingAge,
     role
   }
   const loggedIn = AuthService.loggedIn();

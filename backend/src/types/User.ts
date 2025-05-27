@@ -45,3 +45,4 @@ export type User = {
   ethnicity?: string;
   workAuthorized?: string;
   disability?: string;
+  occupation?: string;

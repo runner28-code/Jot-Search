@@ -4,6 +4,7 @@ export const JobFilter: any = {
   bullhorn: {
     jobs_id: "jobs.id",
     title: "title",
+    skill: "skillList",
     city: "address_city",
     employmentType: "employmentType",
     onSite: "onSite",
@@ -29,5 +30,5 @@ export const JobFilter: any = {
   },
 };
 
-export type CompanyFilterKey = "bullhorn" | "getro" | "joined";
 
+export const CompanyFilter: TypedDictionary<

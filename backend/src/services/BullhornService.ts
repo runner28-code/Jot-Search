@@ -424,6 +424,7 @@ export class BullhornService {
         id,
         categories,
         ...otherData
+      } = d;
 
       const categoryId = d.categories?.total === 0 ? null : d.categories?.data[0].id;
 
@@ -441,3 +442,7 @@ export class BullhornService {
         state: d.address?.state || null,
         zip: d.address?.zip || null,
         clientContactID: d.clientContact?.id.toString(),
+        clientCorporationID: d.clientCorporation?.id.toString(),
+        interviews: d.interviews?.total || 0,
+        ownerID: d.owner?.id?.toString(),
+        dateAdded: d.dateAdded,

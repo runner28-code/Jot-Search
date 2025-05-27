@@ -108,6 +108,7 @@ export default function Footer() {
           src={twitter}
           className={socialIconStyle}
         />
+// Temp comment
       </a>
       <a href={ROUTES.facebook}>
         <img
@@ -187,7 +188,6 @@ export default function Footer() {
             rel='noreferrer'
           >
               Privacy Policy
-// Temp comment
           </a>
           <span> | </span>
           <a

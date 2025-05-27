@@ -28,3 +28,4 @@ CREATE TABLE "Lead" (
     "fax" TEXT,
     "fax2" TEXT,
     "fax3" TEXT,
+    "firstName" TEXT,

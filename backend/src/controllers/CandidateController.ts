@@ -131,7 +131,6 @@ export class CandidateController {
         "employmentPreference": "employmentPreference",
       }
 
-      const tppSpecificFilterKeys = Object.keys(translateTppFilters)
 
       const bothTypesOfUserFilters = ["categoryId", "status", 'experience', 'firstName']
 
@@ -186,3 +185,5 @@ export class CandidateController {
           const typedCandidates = candidates.map((candidate: any) => ({
             ...candidate,
             type: "candidate"
+          }))
+

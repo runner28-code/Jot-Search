@@ -91,6 +91,7 @@ HeaderMobile.propTypes = {
   companyData: PropTypes.object.isRequired,
   handleCompanyUpdate: PropTypes.func.isRequired
 }
+
 function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'my-auto object-cover h-full w-full';

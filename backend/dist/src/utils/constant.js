@@ -141,6 +141,7 @@ const job_filter_exclude_keys = [
     "environmental",
     "equipment",
     "esl",
+// Temp comment
     "esthetician",
     "ethernet",
     "event",
@@ -219,3 +220,5 @@ const job_filter_exclude_keys = [
     "lakes",
     "landscape",
     "language",
+    "languages",
+    "law",

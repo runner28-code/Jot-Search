@@ -161,6 +161,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
     if (config.sendgridSecret) {
       await sendUpdateUserNotification(updated.email, updated.firstname);
     }
+
     return { result: true, data: updated };
   } catch (error) {
     console.error(error);
@@ -189,7 +190,6 @@ export const addUserHistoryEntries = async ({
       const typedKey = key as keyof dbUser;
       return {
         table: USER_TABLE,
-        recordId: existingUser.id,
         column: key,
         oldValue:
           existingUser[typedKey] != null
@@ -280,3 +280,6 @@ export const findUserByEmail = async (email: string) => {
 
     return user || null;
   } catch (error) {
+    console.log(error);
+    return null;
+  }

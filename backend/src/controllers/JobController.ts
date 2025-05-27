@@ -10,6 +10,7 @@ import {
   QueryParam,
   JsonController,
   Authorized,
+  CurrentUser,
   Patch,
 } from "routing-controllers";
 import { Dictionary } from "typed-two-way-map";
@@ -176,8 +177,10 @@ export class JobController {
           job.company.logo = getroCompany.logo_url
         }
         job.company_name = job.company?.name
-        job.company_logo = job.company?.logo
         return job
       })
 
       // console.log({ jobs });
+
+      return {
+        jobs: extendedJobs,

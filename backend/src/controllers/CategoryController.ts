@@ -1,5 +1,6 @@
 import {
   Body,
+  Get,
   JsonController,
   Post,
   QueryParam,
@@ -25,3 +26,4 @@ export class CategoryController {
         },
       ];
 
+      const category = await getCategoriesByFilter(_filters, undefined, 1);
