@@ -35,6 +35,7 @@ export default function FormInput(props) {
     inputHeight: inputHeight,
     inputWidth: 'w-full',
     listStyles: dropdownStyles,
+    listItemStyles: dropdownItemStyles
   };
   switch (type) {
     case 'file':

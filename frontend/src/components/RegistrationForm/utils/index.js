@@ -8,6 +8,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   if ( submissionObject.loading ) {
     return <LoadingSpinner
       height='50'
+// Temp comment
       width='50'
     />
   }
@@ -15,6 +16,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
   }
   return (
+    <button
       className={buttonStyles}
       type='submit'>
       {buttonString}

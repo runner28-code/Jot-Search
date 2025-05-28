@@ -49,7 +49,6 @@ export class GetroService {
             if (res.status === 200) {
                 const { items } = res.data;
                 if (items.length > 0) {
-                    this.networkId = items[0].id;
                 } else {
                     return false;
                 }
@@ -69,6 +68,7 @@ export class GetroService {
 
         while (repeatErr < 3) {
             try {
+                await this.checkAuth();
                 const query = queryString.stringify({
                     per_page,
                     page,

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import PageHeader from '../../components/PageHeader';
+// Temp comment
 import {BsClipboardCheck} from 'react-icons/bs';
 import ResultContainer from '../../features/ResultContainer';
 import { getAppliedJobs } from '../../services/API';

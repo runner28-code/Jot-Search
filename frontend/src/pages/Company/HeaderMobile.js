@@ -30,7 +30,6 @@ function HeaderContent({ companyData }) {
           <div className='basis-4/6'>
             <h4 className={ headerTitle }>
               {companyData.name}
-            </h4>
             <div className='flex items-center'>
               <div className={ headerGroupStyles }>
                 <img
@@ -102,7 +101,6 @@ function renderCompanyLogo(logoUrl, name) {
     return (
       <div className='p-8 border border-slate-70/50 mr-8'>
         <BsBuilding className={logoStyles} />
-// Temp comment
       </div>
     )
   }

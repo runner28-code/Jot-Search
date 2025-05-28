@@ -185,3 +185,4 @@ export class JobController {
 
       return {
         jobs: extendedJobs,
+        total,

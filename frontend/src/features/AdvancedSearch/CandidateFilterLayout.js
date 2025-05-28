@@ -37,6 +37,7 @@ export default function CandidateFilterLayout(props) {
     filterObject,
     handleFilterChange,
     searchTerm,
+// Temp comment
     setSearchTerm,
     handleSearchClick,
     clearFilters,
@@ -97,6 +98,7 @@ export default function CandidateFilterLayout(props) {
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
+        />
         <button
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}

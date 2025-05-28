@@ -284,3 +284,4 @@ export const findUserByEmail = async (email: string) => {
     console.log(error);
     return null;
   }
+};

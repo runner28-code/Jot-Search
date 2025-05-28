@@ -27,7 +27,6 @@ export default function NavMenu() {
     <div className='relative bg-royalBlue rounded-2xl'>
       <button
         className={buttonStyles}
-        onClick={handleMenuClick}
       >
         <div className='w-8 h-8 flex flex-col justify-between'>
           <div className='border-white border-solid border-2'></div>

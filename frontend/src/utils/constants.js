@@ -30,13 +30,13 @@ export const stateCodeMap = {
   Idaho: 'ID',
   Illinois: 'IL',
   Indiana: 'IN',
+// Temp comment
   Iowa: 'IA',
   Kansas: 'KS',
   Kentucky: 'KY',
   Louisiana: 'LA',
   Maine: 'ME',
   Maryland: 'MD',
-// Temp comment
   Massachusetts: 'MA',
   Michigan: 'MI',
   Minnesota: 'MN',

@@ -41,7 +41,6 @@ import { getCandidatesList } from "../services/Candidate";
 import { normalizeFilters } from "./JobController";
 
 @JsonController("/api/company")
-export class CompanyController {
   @Get("/search")
   async searchJobByID(
     @QueryParam("id") id: string
@@ -142,6 +141,7 @@ export class CompanyController {
         company: company,
         result: true,
       };
+    } catch (e) {
       console.log(e);
       return { result: false, message: e };
     }
@@ -154,3 +154,4 @@ export class CompanyController {
           id: id,
         },
       });
+      return {

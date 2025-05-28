@@ -175,3 +175,4 @@ export const skills = [
   'Digital Strategy',
   'Direct Sales',
   'Distribution',
+  'Django',

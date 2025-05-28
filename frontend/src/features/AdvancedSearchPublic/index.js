@@ -105,7 +105,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     setFilterObject(newState);
   }, [state]);
 
-  function handleFilterChange(filterType, choice) {
     setFilterObject({
       ...filterObject,
       [filterType]: choice

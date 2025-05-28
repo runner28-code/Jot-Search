@@ -12,7 +12,6 @@ import {
   formatYearsExperience,
   buildOccupationString,
 } from '../../../utils/formatFunctions';
-// Temp comment
 
 export default function CandidateCard({ data, disableLink }) {
   const avatarUrl = formatAvatarUrl(data.avatar, data.firstName, data.lastName);

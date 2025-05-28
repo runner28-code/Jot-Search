@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+export default function CompanyFilterLayout(props) {
   const {
     searchTerm,
     setSearchTerm,
@@ -22,6 +23,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
         <button
           className='text-white text-sm whitespace-nowrap'
           onClick={clearFilters}
+// Temp comment
         >
           Clear All
         </button>

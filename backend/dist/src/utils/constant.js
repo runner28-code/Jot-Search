@@ -35,7 +35,6 @@ const job_filter_exclude_keys = [
     "bailiff",
     "barback",
     "bartender",
-    "baseball",
     "beauty",
     "behavior",
     "behavior coach",
@@ -65,7 +64,6 @@ const job_filter_exclude_keys = [
     "career navigator",
     "carpenter",
     "case management",
-// Temp comment
     "case manager",
     "cashier",
     "casino",
@@ -222,3 +220,4 @@ const job_filter_exclude_keys = [
     "language",
     "languages",
     "law",
+    "lcsw",

@@ -6,7 +6,6 @@ export default function CompanyFilterLayout(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
-// Temp comment
     clearFilters,
   } = props;
 
@@ -24,6 +23,7 @@ export default function CompanyFilterLayout(props) {
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
         >
+// Temp comment
           Clear All
         </button>
       </div>

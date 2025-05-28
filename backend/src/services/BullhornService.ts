@@ -301,7 +301,6 @@ export class BullhornService {
         repeatErr++;
         await this.getNewAccessToken();
       }
-    }
   }
 
   async insertCompany(company: any): Promise<any> {
@@ -418,6 +417,7 @@ export class BullhornService {
       const {
         owner,
         isClientEditable,
+        feeArrangement,
         externalID,
         clientContact,
         id,
@@ -445,3 +445,5 @@ export class BullhornService {
         interviews: d.interviews?.total || 0,
         ownerID: d.owner?.id?.toString(),
         dateAdded: d.dateAdded,
+        dateClosed: d.dateClosed,
+        dateEnd: d.date_end,
