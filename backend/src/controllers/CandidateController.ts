@@ -131,6 +131,7 @@ export class CandidateController {
         "employmentPreference": "employmentPreference",
       }
 
+      const tppSpecificFilterKeys = Object.keys(translateTppFilters)
 
       const bothTypesOfUserFilters = ["categoryId", "status", 'experience', 'firstName']
 

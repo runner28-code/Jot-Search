@@ -7,9 +7,7 @@ import { useState } from 'react';
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charcoal mb-m ';
 const hrStyles = 'mb-10 border-smokeGray ';
 
-export const UpdateJobStatus = ({ job }) => {
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
-// Temp comment
   const [updatedJob, setUpdatedJob] = useState(job)
 
   return (

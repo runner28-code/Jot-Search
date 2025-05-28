@@ -11,6 +11,7 @@ class AuthService {
 
   getUserRole() {
     let role = 'guest';
+    if (this.loggedIn()) {
       role = this.getProfile().role;
     }
     return role;

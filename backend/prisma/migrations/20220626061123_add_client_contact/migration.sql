@@ -19,7 +19,6 @@ CREATE TABLE "ClientContact" (
     "address_country_id" TEXT,
     "category" TEXT,
     "certifications" TEXT,
-    "clientCorporation" TEXT,
     "comments" TEXT,
     "dateAdded" TIMESTAMP(3),
     "dateLastModified" TIMESTAMP(3),

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import CareerProfileInfoContent from './CareerProfileInfoContent';
 import { FiEdit } from 'react-icons/fi';
 import AuthService from '../../services/auth';
-// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 const iconStyles = 'w-12 h-12 mr-5 ';
 
@@ -24,7 +23,6 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         setEditMode={setEditMode}
         iconStyles={iconStyles}
         editMode={editMode}
-        role={role}
       />
     </>
   )

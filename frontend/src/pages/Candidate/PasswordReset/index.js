@@ -40,6 +40,5 @@ export default function PasswordReset({role, candidateData}) {
           />
         )}
         {renderResponse()}
-      </div>
     </div>
   )

@@ -21,6 +21,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   const filterObject = adjustJobFilterObject();
   const [filterState, setFilterState] = useState({
     title: '',
+    'On-Site/Remote': 'Any Work Setting',
     'Expertise': 'Any Expertise',
   });
 
@@ -99,7 +100,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         />
         <button 
           className='h-17 bg-searchGreen text-white text-md px-7 rounded-r-xl'
-          onClick={handleSearchClick}
         >
           Show me
         </button>

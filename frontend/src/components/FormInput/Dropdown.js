@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import checkmarkIcon from '../../assets/images/checkmark.png';

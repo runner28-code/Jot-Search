@@ -1,6 +1,5 @@
 import { useState, useEffect, useContext } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-// Temp comment
 import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
 import ChoiceTag from '../ChoiceTag';
@@ -267,7 +266,6 @@ export default function RegistrationForm() {
             value={formObj.password}
             onChange={handleChange}
             error={errors.includes('password')}
-          />
           <FormInput
             type='password'
             name='verifyPassword'

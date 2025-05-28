@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import { useGetSavedCompanies } from '../../hooks/queries/useGetSavedCompanies';
-// Temp comment
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CompanyCard from '../../features/ResultCard/CompactCompanyCard';

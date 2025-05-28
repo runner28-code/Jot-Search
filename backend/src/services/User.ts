@@ -190,6 +190,7 @@ export const addUserHistoryEntries = async ({
       const typedKey = key as keyof dbUser;
       return {
         table: USER_TABLE,
+        recordId: existingUser.id,
         column: key,
         oldValue:
           existingUser[typedKey] != null

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { BiHide } from 'react-icons/bi';
-import AuthService from '../../../services/auth';
+import { toggleHideJob } from '../../../services/API';
 
 export default function HideButton({ type, data, setIsHidden }) {
   const role = AuthService.getUserRole();

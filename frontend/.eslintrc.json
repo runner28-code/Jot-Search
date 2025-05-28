@@ -19,10 +19,10 @@
         "react"
     ],
     "rules": {
+        "indent": [
             "warn",
             2,
             { "SwitchCase": 1 }
-        ],
         "quotes": [
             "warn",
             "single",

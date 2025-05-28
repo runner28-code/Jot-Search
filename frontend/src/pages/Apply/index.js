@@ -102,10 +102,8 @@ export default function Apply() {
         setSubmissionObject({
           loading: false,
           success: true,
-// Temp comment
         });
       } else {
-        setSubmissionObject({
           loading: false,
           error: true,
           errorMessage: response.message

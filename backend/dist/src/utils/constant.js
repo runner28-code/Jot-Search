@@ -65,6 +65,7 @@ const job_filter_exclude_keys = [
     "career navigator",
     "carpenter",
     "case management",
+// Temp comment
     "case manager",
     "cashier",
     "casino",
@@ -141,7 +142,6 @@ const job_filter_exclude_keys = [
     "environmental",
     "equipment",
     "esl",
-// Temp comment
     "esthetician",
     "ethernet",
     "event",

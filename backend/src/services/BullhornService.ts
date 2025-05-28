@@ -418,7 +418,6 @@ export class BullhornService {
       const {
         owner,
         isClientEditable,
-        feeArrangement,
         externalID,
         clientContact,
         id,

@@ -27,9 +27,7 @@ const mockJobsData = [
     onSite: false,
     listingAge: '1 month',
     specialty: 'Technology'
-// Temp comment
   },
-  {
     id: '2cb874e2-0510-405e-9491-183d2e0e26d7',
     title: 'Copywriter',
     company: 'OSU', // ! Not in schema yet
