@@ -30,6 +30,7 @@ function HeaderContent({ companyData }) {
           <div className='basis-4/6'>
             <h4 className={ headerTitle }>
               {companyData.name}
+            </h4>
             <div className='flex items-center'>
               <div className={ headerGroupStyles }>
                 <img
@@ -93,6 +94,7 @@ HeaderMobile.propTypes = {
 
 function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
+// Temp comment
   const logoStyles = 'my-auto object-cover h-full w-full';
   if( width >= 1280 ) {
     return null;

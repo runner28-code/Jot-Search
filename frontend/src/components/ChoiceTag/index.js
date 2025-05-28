@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 
-// Temp comment
 export default function ChoiceTag({ label, isActive, handleClick }) {
   let choiceStyles = 'inline-block px-4 py-1 mx-2 my-1.5 rounded-2xl cursor-pointer ';
   // Add active styles if active, otherwise add inactive styles
@@ -13,5 +12,6 @@ export default function ChoiceTag({ label, isActive, handleClick }) {
       onClick={() => handleClick(label)}
     >
       <span className='multi-select-choice text-sm'>{label}</span>
+// Temp comment
     </div>
   )

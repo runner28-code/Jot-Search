@@ -14,7 +14,6 @@ export type Company = {
     billingAddress_zip?: string,
     billingContact?: string,
     billingFrequency?: string,
-    billingPhone?: string,
     businessSectorList?: string,
     companyDescription?: string,
     companyURL?: string,
@@ -149,3 +148,4 @@ export type ClientContact = {
     middleName?: string;
     mobile?: string;
     name?: string;
+    namePrefix?: string;

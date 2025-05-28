@@ -16,12 +16,12 @@ export const prefetchAllSelectCandidates = async() => {
 }
 
 export const useGetCandidates = ({ count, page, fields, filtersArr, enabled = true }) => {
-// Temp comment
   formatFilters(filtersArr)
   const { data, error, isLoading } = useQuery(
     getCandidatesKey({filtersArr, count, page, fields}),
     () => getCandidatesFull(filtersArr, count, page, fields),
     { enabled }
+// Temp comment
   );
 
   return { candidates: data?.candidates, total: data?.total || 0, error, isLoading };

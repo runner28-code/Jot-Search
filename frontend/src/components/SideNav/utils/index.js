@@ -135,5 +135,6 @@ export function findSelectedFromPath() {
       return 'Contact InTulsa';
     case 'my-favorites':
       return 'My Favorites';
+    default:
       return 'Dashboard';
   }

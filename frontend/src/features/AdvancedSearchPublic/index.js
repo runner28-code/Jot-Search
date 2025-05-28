@@ -15,7 +15,6 @@ import {
   jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,
-  buildSearchFilters
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
@@ -105,6 +104,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     setFilterObject(newState);
   }, [state]);
 
+  function handleFilterChange(filterType, choice) {
     setFilterObject({
       ...filterObject,
       [filterType]: choice

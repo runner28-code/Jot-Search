@@ -4,6 +4,7 @@ import API from '../../../services/API';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 
 
+// Temp comment
 export default function ResetButton({ candidateData, setType }) {
   const { width } = useWindowDimensions();
   const handleSubmit = async (event) => {
@@ -16,6 +17,7 @@ export default function ResetButton({ candidateData, setType }) {
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {
+      setType(res.data.error, false);
     }
   };
   if( width <= 990 ) {

@@ -62,3 +62,4 @@ const uploadToS3 = async(req: any, res: any) => {
         result: true,
       })
     } catch (e) {
+      console.error("error", e);

@@ -9,7 +9,6 @@ export const UpdateJobFeatured = ({ job }) => {
 
 
   const enabledButtonStyle = 'bg-green text-white'
-// Temp comment
   const disabledButtonStyle = 'bg-grey300'
 
   const buttonStyles = toggled ? enabledButtonStyle : disabledButtonStyle
@@ -33,6 +32,7 @@ export const UpdateJobFeatured = ({ job }) => {
           aria-checked={toggled}
           onClick={async() => {
             const { result } = await saveJob({ featured: !toggled, id: job.id })
+// Temp comment
 
             // TODO: Replace with react-query refetch
             if(result) {

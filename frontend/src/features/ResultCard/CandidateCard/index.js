@@ -113,7 +113,6 @@ CandidateCard.propTypes = {
     status: PropTypes.string,
     userDateAdded: PropTypes.string,
     workspace: PropTypes.string,
-    willRelocate: PropTypes.bool,
     user: PropTypes.object,
   }).isRequired,
   disableLink: PropTypes.bool,

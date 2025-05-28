@@ -36,7 +36,6 @@ export default function CareerFilterLayout(props) {
     });
   } else {
     dropdownFilters.forEach(filter => {
-      dropdownFilterObject[filter] = filterObject[filter];
     });
   }
 

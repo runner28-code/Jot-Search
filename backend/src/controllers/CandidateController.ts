@@ -188,3 +188,4 @@ export class CandidateController {
             type: "candidate"
           }))
 
+          return [...typedUsers, ...typedCandidates]

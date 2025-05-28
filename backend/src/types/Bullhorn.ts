@@ -1,5 +1,4 @@
 export type Company = {
-    id: string,
     address_address1?: string,
     address_address2?: string,
     address_city?: string,
@@ -96,6 +95,7 @@ export type Job = {
     markUpPercentage?: string;
     numOpenings?: string;
     onSite?: string;
+    owner?: string;
     payRate?: string;
     publicDescription?: string;
     publishedZip?: string;
@@ -148,3 +148,4 @@ export type ClientContact = {
     firstName?: string;
     isAnonymized?: string;
     isDayLightSavings?: string;
+    isDeleted?: string;

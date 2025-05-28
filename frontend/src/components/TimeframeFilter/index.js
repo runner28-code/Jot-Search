@@ -11,6 +11,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   const menuRef = useRef(null);
 
   function handleChoiceClick(choice) {
+    setShowDropdown(false);
     handleFilterChange(choice);
   }
 
@@ -51,7 +52,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
           src={ chevronDownGray }
           alt='chevron down'  
         />
-      </div>
       { renderDropdown( showDropdown ) }
     </div>
   )

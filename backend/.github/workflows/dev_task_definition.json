@@ -14,7 +14,6 @@
                     "hostPort": 5000, 
                     "protocol": "tcp"
                 }
-            ], 
             "essential": true,
             "logConfiguration": { 
                 "logDriver": "awslogs",
@@ -43,3 +42,4 @@
                 },
                 {
                     "name": "DATASET_BULLHORN", 
+                    "value": "inTulsa_Bullhorn"

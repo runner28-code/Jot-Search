@@ -36,7 +36,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           <div className='border-1 border-t border-gray-300 py-4 mt-4 justify-self-end'>
             <p className='text-grey-700 opacity-50'>{agoText} {postingAge}</p>
           </div>
-        </div>
       </Link>
       {
         selectableProps && selectableProps.selectable ?

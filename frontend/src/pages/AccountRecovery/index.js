@@ -7,7 +7,6 @@ import API from '../../services/API';
 
 export default function AccountRecovery() {
   const [response, setResponse] = useState('');
-  const [condition, setCondition] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -24,7 +23,6 @@ export default function AccountRecovery() {
   };
   function setType(response, condition) {
     setCondition(condition);
-// Temp comment
     setResponse(response);
   }
 

@@ -76,6 +76,5 @@ export default function AdvancedSearch({ disabledTabs }) {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
     } else {
-// Temp comment
       return { filterKey: 'name', filterValue: filterObject.title }
     }

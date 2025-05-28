@@ -45,3 +45,4 @@ export type Job = {
   passes_filter?: string;
   posted_at?: string;
   slug?: string;
+  source?: string;

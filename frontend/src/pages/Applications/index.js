@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import PageHeader from '../../components/PageHeader';
-// Temp comment
 import {BsClipboardCheck} from 'react-icons/bs';
 import ResultContainer from '../../features/ResultContainer';
 import { getAppliedJobs } from '../../services/API';
@@ -19,6 +18,7 @@ export default function Applications() {
   const [selectedApplications, setSelectedApplications] = useState([]);
 
   useEffect( async () => {
+// Temp comment
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {

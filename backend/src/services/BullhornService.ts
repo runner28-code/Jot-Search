@@ -301,6 +301,7 @@ export class BullhornService {
         repeatErr++;
         await this.getNewAccessToken();
       }
+    }
   }
 
   async insertCompany(company: any): Promise<any> {
@@ -447,3 +448,5 @@ export class BullhornService {
         dateAdded: d.dateAdded,
         dateClosed: d.dateClosed,
         dateEnd: d.date_end,
+        dateLastExported: d.dateLastExported,
+        dateLastModified: d.dateLastModified,

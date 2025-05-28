@@ -165,6 +165,7 @@ export const skills = [
   'Data Transformation',
   'Data Visualization',
   'Database Design',
+// Temp comment
   'DEI',
   'Demand Planning',
   'Design',
@@ -176,3 +177,4 @@ export const skills = [
   'Direct Sales',
   'Distribution',
   'Django',
+  'Docker',

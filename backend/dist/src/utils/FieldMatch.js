@@ -17,14 +17,12 @@ exports.JobFilter = {
     },
     main: {
         id: "id",
-// Temp comment
         status: "status",
         skillList: "skillList",
         hidden: "hidden",
         employmentType: "employmentType",
         onSite: "onSite",
         yearsRequired: "yearsRequired",
-        willRelocate: "willRelocate",
         city: "city",
         state: "state",
         isDeleted: "isDeleted",

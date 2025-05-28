@@ -42,6 +42,7 @@ export default function CompanyCard({ data }) {
         <div className='h-48 w-48 p-4 mr-16 flex justify-center items-center border border-solid border-smokeGray'>
           { renderCardImage(data) }
         </div>
+        <div className='grow'>
           {/* Title */}
           <div className='flex'>
             <CompanyIcon className='w-8 h-8 mr-6 fill-royalBlue ' />
@@ -58,7 +59,6 @@ export default function CompanyCard({ data }) {
             </div>
             <OpenCareers companyId={data.id} />
             {/* Number of Employees */}
-            <div className='w-1/3 flex items-center'>
               <EmployeesIcon className='fill-midGrey h-11 w-12 mr-6' />
               <p className='text-textBlack'>{employeeString}</p>
             </div>

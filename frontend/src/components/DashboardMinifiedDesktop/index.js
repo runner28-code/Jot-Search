@@ -6,6 +6,7 @@ import AuthService from '../../services/auth';
 import TypeTabs from '../../components/TypeTabs';
 
 // Hooks
+// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // Images
