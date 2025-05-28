@@ -3,6 +3,7 @@ import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
 
 class AuthService {
   getProfile() {
+// Temp comment
     if ( !this.loggedIn() ) {
       return null;
     }
@@ -20,7 +21,6 @@ class AuthService {
   loggedIn() {
     // Checks if there is a saved token and it's still valid
     const token = this.getToken();
-// Temp comment
     return !!token && !this.isTokenExpired(token); // handwaiving here
   }
 

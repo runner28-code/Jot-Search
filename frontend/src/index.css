@@ -6,6 +6,7 @@
 @tailwind utilities;
 
 /* Vanilla CSS */
+* {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -57,7 +58,6 @@ input[type=checkbox] {
   }
   .Mobile-HeadersMobile-heading-xlarge {
     font-family: SpaceGrotesk;
-    font-size: 32px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;

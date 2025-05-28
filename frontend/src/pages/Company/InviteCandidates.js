@@ -12,6 +12,7 @@ export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
     filtersArr: [],
     count: 10000,
+// Temp comment
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
 

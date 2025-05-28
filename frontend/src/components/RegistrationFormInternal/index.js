@@ -65,7 +65,6 @@ export default function RegistrationFormInternal(loggedIn) {
 
   // Who is adding the user; IF path is `/add-user`, then it's a coordinator adding a user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
-
   useEffect(async () => { // Submit data
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
@@ -146,6 +145,7 @@ export default function RegistrationFormInternal(loggedIn) {
       willRelocate: relocate,
       linkedin: linkedin.value,
       password: password.value,
+      verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,

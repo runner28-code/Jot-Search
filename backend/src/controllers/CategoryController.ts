@@ -1,4 +1,5 @@
 import {
+  Body,
   Get,
   JsonController,
   Post,
@@ -21,7 +22,6 @@ export class CategoryController {
       const _filters = [
         {
           key: "id",
-          value: id,
         },
       ];
 

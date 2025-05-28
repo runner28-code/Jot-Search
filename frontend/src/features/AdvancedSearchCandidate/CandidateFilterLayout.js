@@ -16,7 +16,6 @@ const dropdownFilters = [
   'Experience',
   'Remote Availability',
   'Employment Type',
-// Temp comment
 ];
 const checkboxFiltersCoord = [
   'Open to Relocation',
@@ -72,7 +71,6 @@ export default function CandidateFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
-          placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />
         <button

@@ -1,5 +1,6 @@
 
 export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
+// Temp comment
 
   const totalPages = Math.ceil(total / itemsPerPage);
 
@@ -20,7 +21,6 @@ export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
     totalPages,
     nextPage,
     prevPage,
-// Temp comment
     startCount,
     endCount,
   };

@@ -8,7 +8,6 @@ import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
-
 export default function DashboardPublic({togglePassState}) {
   const { width } = useWindowDimensions();
 
@@ -33,6 +32,7 @@ export default function DashboardPublic({togglePassState}) {
         <div className='flex items-center'>
           <Link
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
+            to={ROUTES.careers}
           >
             <CareerIcon />
             <p className='ml-4'>Careers</p>

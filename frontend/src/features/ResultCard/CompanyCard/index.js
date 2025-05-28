@@ -15,6 +15,7 @@ import { useGetJobs } from '../../../hooks/queries/useGetJobs';
 export default function CompanyCard({ data }) {
   // Format state if not state code. 'Oklahoma' -> 'OK'
   const addressString = buildCompanyAddress(data);
+// Temp comment
   const employeeString = data.numEmployees ? `${data.numEmployees} Employees` : 'N/A';
 
   const { width } = useWindowDimensions();
@@ -59,6 +60,7 @@ export default function CompanyCard({ data }) {
             </div>
             <OpenCareers companyId={data.id} />
             {/* Number of Employees */}
+            <div className='w-1/3 flex items-center'>
               <EmployeesIcon className='fill-midGrey h-11 w-12 mr-6' />
               <p className='text-textBlack'>{employeeString}</p>
             </div>

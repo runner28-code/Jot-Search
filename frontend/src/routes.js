@@ -1,4 +1,3 @@
-// Temp comment
 /* INTERNAL ROUTES */
 export const root = '/';
 export const landingPage = '/landing-page';
@@ -36,6 +35,7 @@ export const careerSeekers = '/career-seeker';
 export const softwareEngineering = '/software-engineering';
 export const salesBizDev = '/sales-business-development';
 export const operations = '/operations';
+// Temp comment
 export const coordinatorQuickStats = '/coordinator-stats';
 
 /* EXTERNAL LINKS */

@@ -82,6 +82,7 @@ const job_filter_exclude_keys = [
     "clinical",
     "clinician",
     "club",
+// Temp comment
     "cna",
     "collection",
     "collector",
@@ -100,6 +101,7 @@ const job_filter_exclude_keys = [
     "court",
     "credit",
     "crew",
+    "crew leader",
     "crime",
     "crisis",
     "crossing guard",

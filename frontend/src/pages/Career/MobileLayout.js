@@ -15,6 +15,7 @@ import { UpdateJobFeatured } from './UpdateJobFeatured';
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-xl text-charcoal mb-4 ';
 const hrStyles = 'mb-10 border-midGrey ';
 
+export default function MobileLayout(props) {
   const {
     careerData,
     categoryString,

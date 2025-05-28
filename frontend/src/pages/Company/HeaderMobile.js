@@ -94,7 +94,6 @@ HeaderMobile.propTypes = {
 
 function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
-// Temp comment
   const logoStyles = 'my-auto object-cover h-full w-full';
   if( width >= 1280 ) {
     return null;

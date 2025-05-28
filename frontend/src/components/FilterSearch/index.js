@@ -13,7 +13,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     }
   }
   
-  let containerStyles = 'flex items-center rounded-2xl h-[56px] ';
   let inputStyles = 'h-full w-full border-midGrey border-solid border-y-2 border-l-2 rounded-l-2xl pl-5 vw-768:pl-10 text-midGrey text-md tracking-wide ';
   if (additionalClasses) {
     containerStyles += additionalClasses;
@@ -38,6 +37,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
       >
         <img
           src={ searchIcon }
+          alt='search'
           className={ width >= 990 ? 'v-8 vw-768:w-10 h-8 vw-768:h-10 mr-3 vw-768:mr-5' : 'h-12' }
         />
         <RenderText />
