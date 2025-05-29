@@ -193,6 +193,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 className={inputStyles + 'ml-10 text-h6'} />
             </div>
           </div>
+        </div>
         {/* Phone */}
         <div className='flex items-center justify-between mb-4'>
           <label

@@ -6,6 +6,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
   return (
     <div className='flex flex-col mt-5'>
       <div className='flex space-x-16'>
+// Temp comment
         <SwitchButton
           fieldName={fieldName}
           label={label}
@@ -14,6 +15,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           disabled={disabled}
         />
         <label 
+          htmlFor='featured' 
           className={ width >= 990 ? 'text-lg font-roboto text-black70%' : 'text-sm font-roboto text-black70%'}>
           {label}
         </label>

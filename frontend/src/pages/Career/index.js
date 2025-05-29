@@ -95,7 +95,6 @@ function renderNotification(activeData, careerData) {
         company={careerData.clientCorporation}
         id={careerData.title}
         add='update request'
-      />
       <Notification
         title='Did this platform help you fill the role below?'
         content='Please let us know by sending a message'

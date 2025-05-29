@@ -88,7 +88,6 @@ export const skills = [
   'Android',
   'Angular',
   'Animation',
-// Temp comment
   'API',
   'AR/VR',
   'Art',

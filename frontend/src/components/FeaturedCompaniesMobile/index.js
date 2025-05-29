@@ -24,6 +24,7 @@ export default function FeaturedCompaniesMobile() {
       <div className='flex flex-wrap mt-8 justify-center'>
         {
           isLoading ?
+// Temp comment
             <LoadingSpinner />
             :
             companies.map((company, index) =>
@@ -31,6 +32,7 @@ export default function FeaturedCompaniesMobile() {
                 to={`${ROUTES.companies}/${company.id}`}
                 className='my-8 outline outline-2 outline-neutral-100 p-8 w-32 mx-2'
                 key={index}>
+                { renderLogo(company.logo) }
               </Link>
             )
         }

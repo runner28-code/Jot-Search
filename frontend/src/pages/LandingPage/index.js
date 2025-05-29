@@ -67,5 +67,4 @@ function renderSearch() {
       totalJobs={totalJobsCount}
       totalCompanies={totalCompaniesCount}
       loading={isLoading}
-    />
   )

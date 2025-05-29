@@ -28,9 +28,9 @@ export const savedCandidates = '/saved-candidates';
 export const activeCareers = '/active-careers';
 export const companyQuickStats = '/company-stats';
 // Coordinator Dashboard
+// Temp comment
 export const addUser = '/add-user';
 export const alerts = '/alerts';
-// Temp comment
 
 export const careerSeekers = '/career-seeker';
 export const softwareEngineering = '/software-engineering';

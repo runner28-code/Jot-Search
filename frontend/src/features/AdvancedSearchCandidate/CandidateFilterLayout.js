@@ -71,6 +71,7 @@ export default function CandidateFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
+// Temp comment
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />
@@ -80,7 +81,6 @@ export default function CandidateFilterLayout(props) {
         >
           Clear All
         </button>
-// Temp comment
       </div>
     </div>
   );

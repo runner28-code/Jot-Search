@@ -78,7 +78,6 @@ export async function updateCandidate(newData, id) {
   console.log({ newData, id })
   const body = { ...newData, id };
   const { data } = await API.post(ROUTES.APIcandidateUpdate, body);
-// Temp comment
   return normalizeData(data);
 }
 
@@ -131,7 +130,6 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
     'filters': [
       {
         'key': filterKey || 'name',
-        'value': filterValue || '',
       }
     ],
     'count': count || 5,

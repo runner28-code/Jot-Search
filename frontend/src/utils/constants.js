@@ -12,7 +12,6 @@ export const openJobStatuses = [
   'Active',
   'active',
   'Passive',
-// Temp comment
   'passive'
 ];
 
@@ -20,7 +19,6 @@ export const stateCodeMap = {
   Alabama: 'AL',
   Alaska: 'AK',
   Arizona: 'AZ',
-  Arkansas: 'AR',
   California: 'CA',
   Colorado: 'CO',
   Connecticut: 'CT',

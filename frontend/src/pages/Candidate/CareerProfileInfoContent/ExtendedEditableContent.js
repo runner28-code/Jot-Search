@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useContext } from 'react';
 import { CategoryContext } from '../../../services/CategoryContext';
 import PropTypes from 'prop-types';
@@ -42,6 +41,5 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
 
   function handleChange(name, value) {
     setFormData({
-      ...formData,
       [name]: value,
     });

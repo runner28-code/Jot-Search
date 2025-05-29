@@ -18,7 +18,6 @@ export default function PendingApplications () {
   });
 
   useEffect( async () => {
-// Temp comment
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
@@ -29,7 +28,6 @@ export default function PendingApplications () {
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
-      loading: false
     });
   }, []);
 

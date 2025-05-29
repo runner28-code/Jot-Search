@@ -21,5 +21,4 @@
 */
 -- AlterTable
 ALTER TABLE "Candidate" DROP COLUMN "idOnFile",
-ADD COLUMN     "idOnFile" BOOLEAN,
 DROP COLUMN "isAnonymized",

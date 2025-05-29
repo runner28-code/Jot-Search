@@ -12,11 +12,13 @@ export default function CompanyFilterLayout(props) {
   const { width } = useWindowDimensions();
   return (
     <div className='flex flex-col gap-xxl-4'>
+// Temp comment
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[25px]'}>
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
+          placeholder='Search Companies'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
         <button

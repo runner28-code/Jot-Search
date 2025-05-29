@@ -89,7 +89,6 @@ export const candidateFilterObject = {
     'No'
   ],
   'Actively Looking': [
-    'Any',
     'Yes',
     'No'
   ],

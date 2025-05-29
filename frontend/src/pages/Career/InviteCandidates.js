@@ -21,7 +21,6 @@ export default function InviteCandidates({ job }) {
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
   const candidateOptions = candidates?.map(candidate => {
-// Temp comment
     return {
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
       value: candidate.id,

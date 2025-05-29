@@ -2,11 +2,13 @@ import PropTypes from 'prop-types';
 import { startCase } from 'lodash';
 import EditSummaryForm from './EditSummaryForm';
 import EditSkillsForm from './EditSkillsForm';
+// Temp comment
 import EditExpertiseForm from './EditExpertiseForm';
 import EditResumeForm from './EditResumeForm';
 import Property from './Property';
 
 // const SECONDARY_FORM_TYPES = ['comments', 'primarySkills', 'expertise', 'resume'];
+
 export default function EditSectionForm({ contentObject, handlePropertyChange }) {
   function handleChange(e) {
     handlePropertyChange(e.target.name, e.target.value);
