@@ -134,6 +134,7 @@ export const saveBullhornJobs = async (jobs: any[]) => {
         const newJob = await db.job.create({
           data: jobData,
         });
+
         console.log(`Saved job with ID = ${job.externalId} successfully`);
       } catch (error: any) {
         console.log(error.message);
@@ -146,3 +147,4 @@ export const saveBullhornJobs = async (jobs: any[]) => {
     console.log(error.message);
     return { result: false, error };
   }
+};

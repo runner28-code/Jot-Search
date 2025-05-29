@@ -14,7 +14,6 @@ import facebook from '../../assets/icons/social/social_facebook.svg';
 import instagram from '../../assets/icons/social/social_instagram.svg';
 import youtube from '../../assets/icons/social/social_youtube.svg';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 const socialIconStyle = 'w-18 h-18 ml-8';
 const socialIconStyleMobile = '';
@@ -300,7 +299,6 @@ function NavFooter() {
 }
 
 function NavFooterMobile() {
-
   const blueLinkStyle = 'text-sm text-royalBlue font-spaceGrotesk font-semibold mb-4';
   const linkStyle = 'text-sm zinc-800 mb-4';
   const addressLinkStyle = 'text-sm text-zinc-700 mb-6 mt-8';

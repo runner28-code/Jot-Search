@@ -340,3 +340,5 @@ model Department {
 enum Datasource {
   main
   bullhorn
+  getro
+}

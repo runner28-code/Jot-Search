@@ -67,7 +67,6 @@ export const stateCodeMap = {
   Wisconsin: 'WI',
   Wyoming: 'WY',
 };
-// Temp comment
 
 export function getStateCode(stateName) {
   return stateCodeMap[stateName];

@@ -8,7 +8,6 @@ import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
-// Temp comment
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -20,6 +19,7 @@ import {
   buildSearchFilters
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
+// Temp comment
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
 
@@ -79,3 +79,22 @@ export default function AdvancedSearch({ disabledTabs }) {
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
     }
+  };
+
+
+  const { careers, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('careers'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'careers' });
+  const { companies, total: totalCompanies, isLoading: isLoadingCompanies } = useGetCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'companies' });
+  const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'candidates' });
+
+  /* CLEAR SEARCH TERM ON TAB SWITCH */
+  useEffect(() => {
+    setFilterObject({ ...filterObject, title: '' });
+    setPage(1);
+  }, [activeTab]);
+
+  function handleFilterChange(filterType, choice) {
+    setFilterObject({
+      ...filterObject,
+      [filterType]: choice
+    });
+    setPage(1);

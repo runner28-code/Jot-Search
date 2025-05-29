@@ -18,7 +18,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   if (additionalClasses) {
     containerStyles += additionalClasses;
   }
-// Temp comment
   const placeholderString = placeholder || 'Keywords';
   const { width } = useWindowDimensions();
   return (
@@ -45,4 +44,5 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         <RenderText />
       </button>
     </div>
+// Temp comment
   )

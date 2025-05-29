@@ -100,11 +100,13 @@ class AuthService {
       savedJobs.push(jobID);
     } else {
       savedJobs.splice(savedJobs.indexOf(jobID), 1);
+    }
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
   }
 
   getSavedJobIDs() {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
+// Temp comment
   }
 
   toggleSavedCompany(companyID, action) {

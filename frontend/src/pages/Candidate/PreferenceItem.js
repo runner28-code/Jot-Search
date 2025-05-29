@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import useWindowDimensions from '../../hooks/windowDimensions';
 
 export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }) => {
   const { width } = useWindowDimensions();

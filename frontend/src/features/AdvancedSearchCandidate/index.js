@@ -95,7 +95,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     }
     setFilterObject({ ...filterObject, title: '' });
     setPage(1);
-// Temp comment
   }, [activeTab]);
 
   useEffect(() => {

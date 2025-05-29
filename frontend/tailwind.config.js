@@ -1,3 +1,4 @@
+// Temp comment
 /* eslint-disable no-undef */
 const plugin = require('tailwindcss/plugin')
 
@@ -56,7 +57,6 @@ module.exports = {
         magenta: '#EB4A87',
         // Colors included in design but not in Web Style Guide
         orangeCircle: '#ED8623',
-// Temp comment
         orangeHeroOverlay: '#F2871F',
         'blue-bg': '#E7F0F8',
         buttonLightBlue: '#00CADB',
@@ -118,3 +118,4 @@ module.exports = {
         '55%': '55%',
         '57%': '57%',
         '59%': '59%',
+        '64%': '64%',

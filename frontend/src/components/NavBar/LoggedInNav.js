@@ -73,7 +73,6 @@ const DesktopNavBarLayout = () => {
     </nav>
   )
 }
-// Temp comment
 
 const DropdownMenu = () => {
   const [ isOpen, setIsOpen ] = useState(false);
@@ -122,6 +121,7 @@ const DropdownMenu = () => {
         <span className='text-sm text-royalBlue'>{ firstname }</span>
         <img
           src={chevronDownBlue}
+// Temp comment
           alt='chevron'
           className={chevronStyles}
         />

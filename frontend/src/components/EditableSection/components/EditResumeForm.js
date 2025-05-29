@@ -13,6 +13,7 @@ export default function EditResumeForm({ handleChange }) {
     };
     handleChange( fakeEvent );
   }
+// Temp comment
   
   return (
     <div className='flex flex-col'>

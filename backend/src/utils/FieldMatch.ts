@@ -17,7 +17,6 @@ export const JobFilter: any = {
   main: {
     id: "id",
     status: "status",
-    skillList: "skillList",
     hidden: "hidden",
     employmentType: "employmentType",
     onSite: "onSite",
@@ -28,6 +27,7 @@ export const JobFilter: any = {
     isDeleted: "isDeleted",
     companyId: "companyId",
   },
+};
 
 export type CompanyFilterKey = "bullhorn" | "getro" | "joined";
 

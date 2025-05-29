@@ -60,5 +60,4 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
         additionalClasses='mb-8'
       />
     </div>
-// Temp comment
   )

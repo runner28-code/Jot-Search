@@ -63,7 +63,6 @@ export default function FormInput(props) {
         choices={choices}
         choiceObject={choiceObject}
         stylesObject={stylesObject}
-// Temp comment
         showDropdownArrow={true}
         disabled={disabled}
       />

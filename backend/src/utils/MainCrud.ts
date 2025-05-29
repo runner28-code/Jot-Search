@@ -64,3 +64,4 @@ export const saveJob = async (job: string, candidate: string) => {
     });
     if (!existing) {
       await db.user.update({
+        where: {

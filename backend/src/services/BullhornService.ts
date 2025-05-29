@@ -450,3 +450,6 @@ export class BullhornService {
         dateEnd: d.date_end,
         dateLastExported: d.dateLastExported,
         dateLastModified: d.dateLastModified,
+        dateLastPublished: d.dateLastPublished,
+        datasource: "bullhorn",
+        companyId: `bl-${d.clientCorporation?.id.toString()}`,

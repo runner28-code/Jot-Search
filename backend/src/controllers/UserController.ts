@@ -110,3 +110,4 @@ export class UserController {
         result: false,
         error: `Invalid role specified: ${user.role}`,
       };
+    }

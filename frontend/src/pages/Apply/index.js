@@ -21,6 +21,7 @@ import {
   Checkbox
 } from './utils';
 import LoadingSpinner from '../../components/LoadingSpinner';
+
 const renderError = (error) => {
   if ( error ) {
     return ( <div className='text-error mt-4'>
@@ -65,7 +66,6 @@ export default function Apply() {
         getCandidateById(user_id),
       ]);
       if ( candidateData.workAuthorized === true ) {
-        candidateData.workAuthorized = 'Yes';
       } else {
         candidateData.workAuthorized = 'No';
       }

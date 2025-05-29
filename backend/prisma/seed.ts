@@ -52,7 +52,6 @@ async function seedJobs() {
         onSite: "Hybrid",
         description: "Come join our rockstar team for good money and learning",
         datasource: Datasource.bullhorn as any,
-        status: "active",
         categoryId: (await db.category.findFirst({
           where: { name: "Software & Engineering" },
         }))!.id,
@@ -102,3 +101,4 @@ async function seedCandidates() {
 
 async function seedCategories() {
   await db.category.createMany({
+    data: [

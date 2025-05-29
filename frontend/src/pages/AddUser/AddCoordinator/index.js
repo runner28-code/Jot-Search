@@ -139,7 +139,6 @@ export default function AddCoordinator() {
       <div className={inputContainer}>
         {/* Password */}
         <label className={labelStyles}>Password</label>
-        <input
           type='password'
           className={submissionObject.errors.password ? invalidInputStyles : validInputStyles}
           name='password'

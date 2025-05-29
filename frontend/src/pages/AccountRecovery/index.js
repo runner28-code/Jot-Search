@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
@@ -59,7 +60,6 @@ export default function AccountRecovery() {
             <Link
               to={ROUTES.signup}
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
-// Temp comment
             >
               Sign-up here
             </Link>

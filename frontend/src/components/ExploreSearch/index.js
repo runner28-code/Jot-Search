@@ -31,7 +31,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     params['On-Site/Remote'] = filterState['On-Site/Remote'] !== 'Any Work Setting' ? filterState['On-Site/Remote'] : 'Any';
     params.Expertise = filterState.Expertise !== 'Any Expertise' ? filterState.Expertise : 'Any';
     navigate(ROUTES.careers, { state: { ...params } });
-  }
 
   function handleFilterChange(name, value) {
     setFilterState({
@@ -79,7 +78,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
             marginBottom: 'mb-0 ',
             listStyles: 'bg-white text-black70% border-midGrey border-2 border-solid ',
             listItemStyles: 'pl-6 pr-2 py-2 tracking-wide '
-// Temp comment
           }}
           showDropdownArrow={true}
         />

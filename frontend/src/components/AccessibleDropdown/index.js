@@ -27,7 +27,6 @@ export default function AccessibleDropdown(props) {
       if (currentChosen.includes(choice)) {
         onChange(name, currentChosen.filter(item => item !== choice));
       } else {
-// Temp comment
         onChange(name, [...currentChosen, choice]);
       }
     } else { // single select
@@ -103,3 +102,29 @@ function buildButtonStyles(stylesObject) {
   buttonStyles += stylesObject.baseStyles + stylesObject.inputHeight + stylesObject.inputWidth;
 
   return buttonStyles
+}
+
+function buttonText(name, placeholder, currentChosen) {
+  if ( !placeholder ) {
+    return currentChosen;
+  }
+  if ( name === 'experience' && currentChosen ) { // Grab value from experienceMap
+    if ( isNaN(currentChosen) ) {
+      return currentChosen + 'years';
+    }
+    const experience = isNaN(currentChosen) ? currentChosen : experienceMap[currentChosen];
+    return experience ? experience + ' years' : placeholder;
+  }
+
+  let buttonString = placeholder;
+  
+  if (currentChosen) {
+    if (Array.isArray(currentChosen) && currentChosen.length > 0) {
+      buttonString = currentChosen.join(', ');
+      buttonString = currentChosen;
+    }
+  } else { // no current chosen
+    return buttonString
+  }
+  
+  return buttonString;

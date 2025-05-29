@@ -77,6 +77,7 @@ export default function Company() {
               handleCompanyUpdate={setCompanyData}
             />
           }
+          <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Summary */}
           <div className='p-6'>
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>About {companyData.name}</h4>
@@ -102,7 +103,6 @@ export default function Company() {
             onClick={() => navigate(-1)}
           >
           Back
-          </button>
         </div>
         <RenderInvite
           loggedIn={loggedIn}

@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
 import ChoiceTag from '../ChoiceTag';
 import { 
-// Temp comment
   roles as roleChoices,
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
@@ -31,6 +30,7 @@ const defaultState = {
   referredBy: '',
   resumeFile: {},
   password: '',
+// Temp comment
   verifyPassword: '',
 };
 export default function RegistrationForm() {

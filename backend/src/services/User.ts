@@ -72,6 +72,7 @@ export const register = async (data: User) => {
     const existing = await isExistUser("email", user.email);
 
     if (existing) {
+      console.log("user exists");
       return {
         result: false,
         error: `User with ${user.email} exists`,
@@ -285,3 +286,5 @@ export const findUserByEmail = async (email: string) => {
   }
 };
 
+export const getCompanyDashboardStats = async (days: number) => {
+  try {

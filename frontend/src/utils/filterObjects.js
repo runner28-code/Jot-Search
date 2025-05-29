@@ -135,7 +135,6 @@ export function buildSearchFilters(filterObject) {
       }
       searchFilters.push({
         key: filterKey,
-// Temp comment
         value: filterObject[key],
       });
     }
