@@ -288,3 +288,5 @@ export const findUserByEmail = async (email: string) => {
 
 export const getCompanyDashboardStats = async (days: number) => {
   try {
+    let result = null;
+

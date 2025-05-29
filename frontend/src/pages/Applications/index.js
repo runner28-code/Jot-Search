@@ -14,8 +14,10 @@ export default function Applications() {
     jobs: [],
     filteredJobs: [],
     loading: true
+// Temp comment
   });
   const [selectedApplications, setSelectedApplications] = useState([]);
+
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {

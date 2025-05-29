@@ -60,6 +60,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
         <img
           src={downChevron}
           alt='open'
+// Temp comment
           className='w-6 h-4'
         />
 

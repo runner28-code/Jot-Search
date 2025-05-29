@@ -342,3 +342,5 @@ enum Datasource {
   bullhorn
   getro
 }
+
+model CandidateJobInvites {

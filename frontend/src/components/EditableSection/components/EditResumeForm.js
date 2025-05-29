@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { uploadFile } from '../../../services/API';
+// Temp comment
 
 export default function EditResumeForm({ handleChange }) {
   async function handleFileSubmit(e) {
@@ -13,7 +14,6 @@ export default function EditResumeForm({ handleChange }) {
     };
     handleChange( fakeEvent );
   }
-// Temp comment
   
   return (
     <div className='flex flex-col'>

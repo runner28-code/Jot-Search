@@ -82,6 +82,7 @@ const job_filter_exclude_keys = [
   "club",
   "cna",
   "collection",
+  "collector",
   "college",
   "compliance",
   "composition",
@@ -224,3 +225,5 @@ const job_filter_exclude_keys = [
   "leasing",
   "legal",
   "liberal arts",
+  "librarian",
+  "library",

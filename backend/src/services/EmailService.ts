@@ -54,3 +54,4 @@ export const sendCandidatesToEmployers = async (candidates: string[], employers_
   try {
     await sendEmail(employers_emails, 'List of candidates', 'list-of-candidates', {
       candidates: candidates,
+    });

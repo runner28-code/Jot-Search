@@ -8,6 +8,7 @@ const parseBullhornCandidateToUser = (data) => {
         externalId: data.id,
         firstname: data.firstName,
         lastname: data.lastName,
+// Temp comment
         gender: data.gender,
         email: data.email,
         role: "candidate",
@@ -24,7 +25,6 @@ const parseBullhornCandidateToUser = (data) => {
         workspace: data.willRelocate,
         referredBy: data.referredBy,
         roles: data.skillSet,
-// Temp comment
         description: data.description,
         phone: data.phone || data.workPhone || data.mobile,
         status: data.status,

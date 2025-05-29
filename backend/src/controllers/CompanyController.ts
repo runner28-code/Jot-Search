@@ -97,6 +97,7 @@ export class CompanyController {
         )
       }
     } catch (error) {
+      return {
         result: false,
         error: "Please check email, email maybe invalid one",
       };
@@ -158,3 +159,5 @@ export class CompanyController {
         company: company,
         result: true,
       };
+    } catch (e) {
+      console.log(e);

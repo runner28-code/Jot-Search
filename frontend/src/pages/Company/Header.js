@@ -132,7 +132,6 @@ function renderCompanyLogo(logoUrl, name) {
     return null;
   }
   if (!logoUrl) {
-// Temp comment
     return (
       <div className='p-8 border border-slate-70/50 mr-8'>
         <BsBuilding className={logoStyles} />

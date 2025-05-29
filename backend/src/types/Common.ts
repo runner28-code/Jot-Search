@@ -63,3 +63,4 @@ type CountFilterResponse = {
   message?: any;
 };
 
+// Job Types

@@ -103,6 +103,7 @@ export default function Company() {
             onClick={() => navigate(-1)}
           >
           Back
+          </button>
         </div>
         <RenderInvite
           loggedIn={loggedIn}

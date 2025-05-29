@@ -40,6 +40,7 @@ export class CandidateController {
     try {
       const user = await db.user.findFirst({
         where: {
+          id,
         },
         include: {
           candidate: true,
@@ -189,3 +190,4 @@ export class CandidateController {
 
           return [...typedUsers, ...typedCandidates]
         })
+      } else if (canBeBothTypesOfUserFilters) {

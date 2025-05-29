@@ -36,4 +36,3 @@ export default function ResetButton({ candidateData, setType }) {
     >
       Request Password Reset
     </button>
-  )

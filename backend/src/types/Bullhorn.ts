@@ -72,6 +72,7 @@ export type Job = {
     durationWeeks?: string;
     educationDegree?: string;
     employmentType?: string;
+    externalID?: string;
     feeArrangement?: string;
     hoursOfOperation?: string;
     hoursPerWeek?: string;
@@ -150,3 +151,4 @@ export type ClientContact = {
     isDayLightSavings?: string;
     isDeleted?: string;
     lastName?: string;
+    leads?: string;

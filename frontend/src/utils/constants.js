@@ -12,6 +12,7 @@ export const openJobStatuses = [
   'Active',
   'active',
   'Passive',
+// Temp comment
   'passive'
 ];
 

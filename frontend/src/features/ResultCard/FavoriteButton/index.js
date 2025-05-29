@@ -33,6 +33,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
     try {
       await saveItemByType(type, user_id, item_id);
     } catch (error) {
+      console.log(error);
       setIsFavorite(isFavorite => isFavorite);
     }
   }

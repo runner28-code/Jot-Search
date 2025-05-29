@@ -69,6 +69,7 @@ export default function AddCoordinator() {
     // Update form object with new value
     setFormObject({ ...formObject, [name]: value });
   }
+// Temp comment
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -139,6 +140,7 @@ export default function AddCoordinator() {
       <div className={inputContainer}>
         {/* Password */}
         <label className={labelStyles}>Password</label>
+        <input
           type='password'
           className={submissionObject.errors.password ? invalidInputStyles : validInputStyles}
           name='password'

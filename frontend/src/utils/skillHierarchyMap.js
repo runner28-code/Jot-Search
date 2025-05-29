@@ -88,6 +88,7 @@ export const skills = [
   'Android',
   'Angular',
   'Animation',
+// Temp comment
   'API',
   'AR/VR',
   'Art',
@@ -179,3 +180,4 @@ export const skills = [
   'Docker',
   'Dojo',
   'Drone',
+  'Dynamics NAV',

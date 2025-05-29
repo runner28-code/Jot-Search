@@ -66,6 +66,7 @@ export default function Apply() {
         getCandidateById(user_id),
       ]);
       if ( candidateData.workAuthorized === true ) {
+        candidateData.workAuthorized = 'Yes';
       } else {
         candidateData.workAuthorized = 'No';
       }

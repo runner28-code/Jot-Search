@@ -23,7 +23,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
   const { careers, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
   const prefetchFunc = (page) => {
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
-// Temp comment
   }
 
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });
@@ -39,7 +38,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
       <>  
         {careers.map((career, index) => {
           if (career.externalId === currentCareerId) { // Don't show the current career
-            return null;
           }
           return <CareerCard
             key={index}

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import Header from '../Header';
 
+export default function ReferralCardContent({ data }) {
   return (
     <>
       <Header 
@@ -8,5 +9,6 @@ import Header from '../Header';
         isMobile={false} 
       />
       <p className='vw-640:text-md'>{data.company}</p>
+// Temp comment
     </>
   )

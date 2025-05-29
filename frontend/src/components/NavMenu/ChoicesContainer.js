@@ -6,7 +6,6 @@ import {
   coordinatorChoices,
   guestChoices
 } from '../SideNav/utils';
-import Choice from './Choice';
 import LoggedOutButtons from './LoggedOutButtons';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
@@ -36,6 +35,7 @@ export default function ChoicesContainer(props) {
     { renderRoleChoices({ userRole, handleOptionClick }) }
     { userRole === 'guest' ? 
       <LoggedOutButtons 
+        handleOptionClick={handleOptionClick}
         stylesObject={stylesObject} /> 
       :
       null

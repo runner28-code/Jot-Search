@@ -30,6 +30,7 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
 
 export const isExistByCondition = async (condition: string, datset: string, table: string) => {
     try {
+        const query = `
             SELECT * FROM \`${datset}.${table}\`
             WHERE ${condition}
         `;
@@ -46,10 +47,10 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
     } catch (error) {
         console.log(error);
         return true;
-    }
 }
 
 export const consoleLog = (message: any, newLine = true) =>{
     console.log(`${newLine ? '\n' : ''}${message}`);
 }
 
+export const sleep = async (ms: number): Promise<void> => {

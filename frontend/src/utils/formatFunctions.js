@@ -102,3 +102,4 @@ export function formatPhoneNumber(phoneNumberString) {
     const lastFour = phoneNumberString.slice(8, 12);
     return `${internationalCode} (${areaCode}) ${firstThree}-${lastFour}`;
   }
+  return phoneNumberString;

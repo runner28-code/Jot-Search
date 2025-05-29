@@ -106,7 +106,6 @@ class AuthService {
 
   getSavedJobIDs() {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
-// Temp comment
   }
 
   toggleSavedCompany(companyID, action) {

@@ -367,7 +367,6 @@ export class BullhornService {
     let total = 100000;
     let repeatErr = 0;
 
-    while (repeatErr < 3) {
       console.log(`\nBullhorn_GET_JOBS: ${total} / ${offset}`);
       try {
         const query = queryString.stringify({
@@ -453,3 +452,5 @@ export class BullhornService {
         dateLastPublished: d.dateLastPublished,
         datasource: "bullhorn",
         companyId: `bl-${d.clientCorporation?.id.toString()}`,
+        categoryId: categoryId
+      };

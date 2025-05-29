@@ -1,3 +1,4 @@
+// Temp comment
 import { useState, useContext } from 'react';
 import { CategoryContext } from '../../../services/CategoryContext';
 import PropTypes from 'prop-types';
@@ -9,6 +10,7 @@ import {
 } from '../../../utils/skillHierarchyMap';
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
+import ResumePreview from './ResumePreview';
 
 export default function ExtendedEditableContent({ candidateData, handleCandidateUpdate, setEditMode, editMode }) {
   const { categories } = useContext(CategoryContext);

@@ -77,7 +77,6 @@ CareerCard.propTypes = {
   active: PropTypes.bool,
 }
 
-function DesktopCard({ dataObj, active }) {
   const { data, categoryString, addressString, salaryString, postingAge } = dataObj;
   return (
     <Link

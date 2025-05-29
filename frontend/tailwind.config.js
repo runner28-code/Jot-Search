@@ -1,4 +1,3 @@
-// Temp comment
 /* eslint-disable no-undef */
 const plugin = require('tailwindcss/plugin')
 
@@ -119,3 +118,4 @@ module.exports = {
         '57%': '57%',
         '59%': '59%',
         '64%': '64%',
+        '70%': '70%',
