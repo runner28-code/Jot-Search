@@ -46,6 +46,7 @@ export default function Company() {
   }
   companyData.address = buildCandidateAddress(companyData);
   companyData.employeeString = companyData.numEmployees ? `${companyData.numEmployees} Employees` : 'N/A';
+  companyData.fundingString = companyData.funding === 'not applicable' ? 'Funding N/A' : companyData.funding;
   companyData.description = companyData.getro_description ? companyData.getro_description : companyData.bh_description;
 
   const loggedIn = AuthService.loggedIn();
@@ -76,7 +77,6 @@ export default function Company() {
               handleCompanyUpdate={setCompanyData}
             />
           }
-          <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Summary */}
           <div className='p-6'>
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>About {companyData.name}</h4>

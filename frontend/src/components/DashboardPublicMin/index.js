@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import { Link, useNavigate } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -43,6 +42,7 @@ export default function DashboardPublicMin({type}) {
             onClick={() => navigate(-1)}
           >
           Back
+// Temp comment
           </button>
         </div>
         <div className='flex items-center basis-11/12 justify-center'>

@@ -43,6 +43,7 @@ export default function NavSearchMobile({ placeholder }) {
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
     }
+    else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
       return { filtersArr: searchFilters };
     } else {

@@ -21,7 +21,6 @@ import {
   Checkbox
 } from './utils';
 import LoadingSpinner from '../../components/LoadingSpinner';
-
 const renderError = (error) => {
   if ( error ) {
     return ( <div className='text-error mt-4'>

@@ -65,6 +65,7 @@ export default function RegistrationFormInternal(loggedIn) {
 
   // Who is adding the user; IF path is `/add-user`, then it's a coordinator adding a user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
+
   useEffect(async () => { // Submit data
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
@@ -121,7 +122,6 @@ export default function RegistrationFormInternal(loggedIn) {
   }, [submissionObject.loading]);
 
   useEffect(async () => { // Clear state after a couple seconds
-    if ( submissionObject.success ) {
       setTimeout(() => {
         setFormObj(defaultState);
         setSubmissionObject({

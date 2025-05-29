@@ -10,7 +10,6 @@ const parseBullhornCandidateToUser = (data) => {
         lastname: data.lastName,
         gender: data.gender,
         email: data.email,
-        role: "candidate",
         address1: data.address_address1,
         address2: data.address_address2,
         city: data.address_city,
@@ -38,7 +37,6 @@ const parseBullhornCandidateToUser = (data) => {
         willRelocate: data.willRelocate,
         ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,
-// Temp comment
         disability: data.disability,
     };
     return user;

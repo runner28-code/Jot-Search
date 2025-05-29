@@ -1,3 +1,4 @@
+"use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -6,7 +7,6 @@ exports.DataSource = exports.DATASET_MAIN = exports.DATASET_GETRO = exports.DATA
 const config_1 = __importDefault(require("../config"));
 var Tables;
 (function (Tables) {
-    Tables["COMPANIES"] = "Companies";
     Tables["JOBS"] = "Jobs";
     Tables["USER"] = "User";
     Tables["CONTACTS"] = "Contacts";

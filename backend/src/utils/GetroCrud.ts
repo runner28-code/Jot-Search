@@ -28,7 +28,6 @@ export const saveCompanies = async (companies: any[]) => {
 								data: companyData,
 							});
 			
-							console.log(`Saved company with ID = ${company.id} successfully`);
             } catch (error) {
                 console.log(error);
                 console.log(`ERROR: while saving company with ID = ${company.id}`);
@@ -50,6 +49,7 @@ export const saveMembers = async (members: any[]) => {
                 console.log(`Savng Getro Member with ID = ${member.id}`);
                 const existing = await db.getroMember.findFirst({
 									where: {
+										id: member.id,
 									},
 								});
 				

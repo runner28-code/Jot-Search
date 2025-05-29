@@ -39,13 +39,13 @@ export default function TypeaheadDropdown(props) {
     if (!dropdownOpen) setInputValue('');
   }, [dropdownOpen]);
   
-  /* Filter choices based on input */
   useEffect(() => {
     if (dropdownType === 'tags') {
       setFilteredChoices(choices.filter(choice => choice.toLowerCase().includes(inputValue.toLowerCase())));
     }
   }, [inputValue]);
 
+  function handleInputChange(event) {
     setInputValue(event.target.value);
   }
 

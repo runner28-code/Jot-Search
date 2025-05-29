@@ -14,6 +14,7 @@ import facebook from '../../assets/icons/social/social_facebook.svg';
 import instagram from '../../assets/icons/social/social_instagram.svg';
 import youtube from '../../assets/icons/social/social_youtube.svg';
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 
 const socialIconStyle = 'w-18 h-18 ml-8';
 const socialIconStyleMobile = '';
@@ -209,7 +210,6 @@ function NavFooter() {
   const linkStyle = 'text-md zinc-800 mb-4';
   const addressLinkStyle = 'text-md text-zinc-700 mb-6';
 
-// Temp comment
   return(<>
     <div className='py-24 px-[10%] flex flex-wrap'>
       <div className='flex flex-col basis-6/12'>

@@ -25,11 +25,9 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
         <div className='flex flex-col space-y-4 h-full'>
           <div className='h-48 w-48 p-4 mr-18 flex justify-center items-center border border-solid border-smokeGray'>
             { renderCardImage(data) }
-// Temp comment
           </div>
 
           {/* Title */}
-          <div className='flex'>
             <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.name}</h6>
           </div>
 

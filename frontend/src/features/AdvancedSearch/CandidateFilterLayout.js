@@ -19,7 +19,6 @@ const dropdownFilters = [
   'Experience',
   'Remote Availability',
   'Employment Type',
-// Temp comment
 ];
 const checkboxFiltersCoord = [
   'Authorized to work in the US',
@@ -98,6 +97,7 @@ export default function CandidateFilterLayout(props) {
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
+// Temp comment
         />
         <button
           className='text-royalBlue text-sm whitespace-nowrap'

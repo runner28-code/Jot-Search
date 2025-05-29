@@ -28,7 +28,6 @@ export const JobFilter: any = {
     isDeleted: "isDeleted",
     companyId: "companyId",
   },
-};
 
 export type CompanyFilterKey = "bullhorn" | "getro" | "joined";
 

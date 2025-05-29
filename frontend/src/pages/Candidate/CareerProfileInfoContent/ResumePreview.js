@@ -5,7 +5,6 @@ import {
   FiChevronLeft as BackIcon,
   FiChevronRight as NextIcon,
 } from 'react-icons/fi';
-// Temp comment
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const ResumePreview = ({ resumeUrl }) => {
@@ -50,7 +49,6 @@ const ResumePreview = ({ resumeUrl }) => {
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>
-          </ul>
         </nav>
       )}
     </div>

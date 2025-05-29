@@ -5,7 +5,6 @@ import FilterSearch from '../../components/FilterSearch';
 export default function Filters(props) {
   const {
     handleFilterChange,
-    defaultFilterObject,
     filterObject,
     searchLabel,
     searchTerm,
@@ -28,6 +27,7 @@ export default function Filters(props) {
   )
 }
 
+Filters.propTypes = {
   handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,
   defaultFilterObject: PropTypes.object, // Shape changes significantly

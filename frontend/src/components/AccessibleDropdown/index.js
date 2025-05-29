@@ -27,6 +27,7 @@ export default function AccessibleDropdown(props) {
       if (currentChosen.includes(choice)) {
         onChange(name, currentChosen.filter(item => item !== choice));
       } else {
+// Temp comment
         onChange(name, [...currentChosen, choice]);
       }
     } else { // single select
@@ -73,6 +74,7 @@ AccessibleDropdown.defaultProps = {
 };
 
 AccessibleDropdown.propTypes = {
+  type: PropTypes.string,
   name: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,

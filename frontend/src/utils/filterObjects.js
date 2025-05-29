@@ -127,7 +127,6 @@ export function buildSearchFilters(filterObject) {
   const searchFilters = [];
   Object.keys(filterObject).forEach(key => {
     if ( !anyValues.includes(filterObject[key]) ) {
-// Temp comment
       let filterKey = key.toLowerCase();
       if ( key === 'On-Site/Remote' ) {
         filterKey = 'onSite';
@@ -136,6 +135,7 @@ export function buildSearchFilters(filterObject) {
       }
       searchFilters.push({
         key: filterKey,
+// Temp comment
         value: filterObject[key],
       });
     }

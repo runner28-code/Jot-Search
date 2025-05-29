@@ -56,6 +56,7 @@ module.exports = {
         magenta: '#EB4A87',
         // Colors included in design but not in Web Style Guide
         orangeCircle: '#ED8623',
+// Temp comment
         orangeHeroOverlay: '#F2871F',
         'blue-bg': '#E7F0F8',
         buttonLightBlue: '#00CADB',
@@ -92,7 +93,6 @@ module.exports = {
         // Styleguide Spacing
         'xxs': '4px',
         'xs': '8px',
-// Temp comment
         's': '12px',
         'm': '16px',
         'l': '20px',

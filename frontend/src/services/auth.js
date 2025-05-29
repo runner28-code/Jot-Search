@@ -3,7 +3,6 @@ import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
 
 class AuthService {
   getProfile() {
-// Temp comment
     if ( !this.loggedIn() ) {
       return null;
     }
@@ -101,7 +100,6 @@ class AuthService {
       savedJobs.push(jobID);
     } else {
       savedJobs.splice(savedJobs.indexOf(jobID), 1);
-    }
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
   }
 

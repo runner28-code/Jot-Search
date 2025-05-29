@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import SectionContent from './components/SectionContent';
 import EditSectionForm from './components/EditSectionForm';
@@ -16,4 +15,5 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   }
 
   function handleCancel() {
+    setContentObject(contentObjectProp);
     setEditMode(false);

@@ -153,6 +153,7 @@ export class JobController {
       }); // TODO: assumes we are changing frontend to pass compatible fields and filters params
 
       const totalPromise = db.job.count({
+        where,
       });
 
       const [jobs, total] = await Promise.all([jobPromise, totalPromise]);

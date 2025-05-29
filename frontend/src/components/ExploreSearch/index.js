@@ -65,6 +65,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         placeholder='Job title or keywords'
         additionalClasses='w-[523px]'
       />
+      <div className='flex items-center mt-22'>
         <AccessibleDropdown
           type='single-select'
           name='On-Site/Remote'
@@ -78,6 +79,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
             marginBottom: 'mb-0 ',
             listStyles: 'bg-white text-black70% border-midGrey border-2 border-solid ',
             listItemStyles: 'pl-6 pr-2 py-2 tracking-wide '
+// Temp comment
           }}
           showDropdownArrow={true}
         />
