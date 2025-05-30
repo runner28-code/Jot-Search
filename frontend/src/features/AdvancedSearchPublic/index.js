@@ -8,7 +8,6 @@ import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
-// Temp comment
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
 import {
@@ -87,7 +86,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'candidates' });
 
   /* CLEAR SEARCH TERM ON TAB SWITCH */
-  const isMount = useIsMount();
   useEffect(() => {
     if (isMount) {
       return;

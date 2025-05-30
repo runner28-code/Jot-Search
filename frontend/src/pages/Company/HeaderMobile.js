@@ -51,7 +51,6 @@ function HeaderContent({ companyData }) {
             </div>
           </div>
         </div>
-// Temp comment
 
         <FavoriteButton
           type={'company'}
@@ -106,7 +105,6 @@ function renderCompanyLogo(logoUrl, name) {
       </div>
     )
   }
-  return (
     <div className='p-8 border border-slate-70/50 mr-8'>
       <img
         className={logoStyles}

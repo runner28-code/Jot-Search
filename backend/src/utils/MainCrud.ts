@@ -8,7 +8,6 @@ export const saveApplication = async (job: string, candidate: string) => {
       where: {
         jobId: job,
         userId: candidate,
-      },
     });
     if (!existing) {
       const app = await db.application.create({

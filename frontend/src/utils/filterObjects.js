@@ -38,6 +38,7 @@ export const jobFilterObject = {
 };
 
 export const ACTIVE_STATUSES = [
+// Temp comment
   'Active',
   'Open',
   'Passive'
@@ -89,6 +90,7 @@ export const candidateFilterObject = {
     'No'
   ],
   'Actively Looking': [
+    'Any',
     'Yes',
     'No'
   ],

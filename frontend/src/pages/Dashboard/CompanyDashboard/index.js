@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import AssistanceCard from './AssistanceCard';
 import gaugeIcon from '../../../assets/icons/gauge.svg';
@@ -7,6 +8,7 @@ import Stats from '../../../features/Stats';
 import AuthService from '../../../services/auth';
 
 export default function CompanyDashboard({userType}) {
+  const profile = AuthService.getProfile();
   const headerStyles = 'font-spaceGrotesk font-bold text-h1 text-royalBlue ';
   return (
     <>

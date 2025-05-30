@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 export default function MobileHeader(props) {
   const {
     headerText,
+// Temp comment
     icon,
     IconComponent,
     classOverride,
@@ -13,7 +14,6 @@ export default function MobileHeader(props) {
   const navigate = useNavigate();
   
   let addOnIconClasses = '';
-// Temp comment
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
   if ( classOverride ) addOnIconClasses += classOverride;
   return (

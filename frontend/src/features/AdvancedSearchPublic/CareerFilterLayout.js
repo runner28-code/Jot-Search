@@ -3,6 +3,7 @@ import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 
 
 const dropdownFilters = [
@@ -53,6 +54,7 @@ export default function CareerFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
+          handleSearchClick={handleSearchClick}
           placeholder='Search Careers'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />

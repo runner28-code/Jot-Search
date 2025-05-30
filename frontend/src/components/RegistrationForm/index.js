@@ -11,6 +11,7 @@ import {
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {
+// Temp comment
   inputValidation,
   formatFormObj,
   renderButtonOrLoading,
@@ -102,6 +103,7 @@ export default function RegistrationForm(loggedIn) {
       if ( result === true ) {
         // Set success to true if on add-user page, navigate user to login if not
         if ( addType === 'coordinator' ) {
+          return setSubmissionObject({
             loading: false,
             success: true,
           })

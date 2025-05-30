@@ -6,6 +6,7 @@ import eyeCon from '../../../assets/icons/eye-con.svg'; // Get it? eyeCon instea
 import linkedinIcon from '../../../assets/icons/linkedin-circle.svg';
 import locationIcon from '../../../assets/icons/placepin.svg';
 import experienceIcon from '../../../assets/icons/star-banner.svg';
+import {
   buildCandidateAddress,
   formatAvatarUrl,
   formatYearsExperience,
@@ -102,6 +103,7 @@ CandidateCard.propTypes = {
     city: PropTypes.string,
     companyName: PropTypes.string,
     experienceYears: PropTypes.string,
+// Temp comment
     experience: PropTypes.number,
     expertise: PropTypes.string,
     firstName: PropTypes.string,

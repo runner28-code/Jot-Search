@@ -130,6 +130,7 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
     'filters': [
       {
         'key': filterKey || 'name',
+        'value': filterValue || '',
       }
     ],
     'count': count || 5,

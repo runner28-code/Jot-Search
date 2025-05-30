@@ -35,6 +35,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
 
   function handleFilterChange(name, value) {
     setFilterState({
+// Temp comment
       ...filterState,
       [name]: value,
     });
@@ -105,6 +106,5 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
           Show me
         </button>
       </div>
-// Temp comment
     </div>
   )

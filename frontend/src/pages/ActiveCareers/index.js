@@ -44,7 +44,6 @@ export default function ActiveCareers() {
         classOverride='h-18 w-18'
         backButton
       />
-      <FilterSearch
         searchTerm={searchTerm}
         setSearchTerm={handleSearchChange}
         placeholder={PLACE_HOLDER}

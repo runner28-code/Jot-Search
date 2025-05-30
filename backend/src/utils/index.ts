@@ -48,7 +48,6 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
         console.log(error);
         return true;
     }
-}
 
 export const consoleLog = (message: any, newLine = true) =>{
     console.log(`${newLine ? '\n' : ''}${message}`);

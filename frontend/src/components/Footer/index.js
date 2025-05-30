@@ -90,7 +90,6 @@ export default function Footer() {
     </>)
   }
 
-// Temp comment
   return (<>
     <NavFooter />
     <div className='flex py-24 px-[15%] items-center justify-center bg-royalBlue'>
@@ -258,6 +257,7 @@ function NavFooter() {
       </div>
       <div className='flex flex-col basis-3/12'>
         <a
+// Temp comment
           href="/careers"
           className={linkStyle}
         >

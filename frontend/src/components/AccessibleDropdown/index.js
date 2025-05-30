@@ -117,6 +117,7 @@ function buttonText(name, placeholder, currentChosen) {
   }
 
   let buttonString = placeholder;
+  
   if (currentChosen) {
     if (Array.isArray(currentChosen) && currentChosen.length > 0) {
       buttonString = currentChosen.join(', ');

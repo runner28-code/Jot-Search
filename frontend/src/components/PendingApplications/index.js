@@ -28,6 +28,7 @@ export default function PendingApplications () {
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
+      loading: false
     });
   }, []);
 

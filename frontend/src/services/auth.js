@@ -8,7 +8,6 @@ class AuthService {
     }
     return decode(this.getToken());
   }
-// Temp comment
 
   getUserRole() {
     let role = 'guest';

@@ -125,7 +125,6 @@ export default function AddCoordinator() {
       <div className={inputContainer}>
         {/* Email */}
         <label className={labelStyles}>Email</label>
-// Temp comment
         <input
           type='text'
           className={submissionObject.errors.email ? invalidInputStyles : validInputStyles}

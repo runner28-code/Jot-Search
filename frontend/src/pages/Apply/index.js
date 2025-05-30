@@ -131,7 +131,6 @@ export default function Apply() {
     setSubmissionObject({ loading: true });
   }
 
-  async function submitData() {
     // Format object for API
     const formattedObject = await formatApplicationObject(applicationObject, useExistingResume);
     if ( isLoggedIn ) {
@@ -140,5 +139,4 @@ export default function Apply() {
     }
 
     const response = await applyToJob(jobId, formattedObject.id);
-// Temp comment
     return response
