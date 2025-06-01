@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 // import FormInput from '../../components/FormInput';
@@ -18,4 +17,5 @@ export default function ResetPassword() {
   const token = queryParams.get('token');
 
   const handlePassword = (event) => {
+// Temp comment
     setPassword(event.target.value);

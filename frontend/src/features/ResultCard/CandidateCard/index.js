@@ -103,7 +103,6 @@ CandidateCard.propTypes = {
     city: PropTypes.string,
     companyName: PropTypes.string,
     experienceYears: PropTypes.string,
-// Temp comment
     experience: PropTypes.number,
     expertise: PropTypes.string,
     firstName: PropTypes.string,

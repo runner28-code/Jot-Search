@@ -257,7 +257,6 @@ function NavFooter() {
       </div>
       <div className='flex flex-col basis-3/12'>
         <a
-// Temp comment
           href="/careers"
           className={linkStyle}
         >
@@ -302,7 +301,6 @@ function NavFooter() {
 function NavFooterMobile() {
 
   const blueLinkStyle = 'text-sm text-royalBlue font-spaceGrotesk font-semibold mb-4';
-  const linkStyle = 'text-sm zinc-800 mb-4';
   const addressLinkStyle = 'text-sm text-zinc-700 mb-6 mt-8';
 
   return(<>

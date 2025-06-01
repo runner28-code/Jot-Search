@@ -35,7 +35,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
 
   function handleFilterChange(name, value) {
     setFilterState({
-// Temp comment
       ...filterState,
       [name]: value,
     });
@@ -61,7 +60,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
       </h5>
       <FilterSearch
         searchTerm={ filterState.title }
-        setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }
         placeholder='Job title or keywords'
         additionalClasses='w-[523px]'

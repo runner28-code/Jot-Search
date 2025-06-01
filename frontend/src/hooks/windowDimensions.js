@@ -5,4 +5,5 @@ function getWindowDimensions() {
   return {
     width,
     height
+// Temp comment
   };

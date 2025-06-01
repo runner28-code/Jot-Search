@@ -147,7 +147,6 @@ export type ClientContact = {
     lastName?: string;
     leads?: string;
     middleName?: string;
-    mobile?: string;
     name?: string;
     namePrefix?: string;
     nameSuffix?: string;

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 function isTodayOrYesterday(dateObj) {
   let returnObj = {
     isToday: false,
-// Temp comment
     isYesterday: false
   }
 
@@ -33,7 +32,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
   } else if ( isYesterday ) {
     return `Yesterday, ${timeWithoutSeconds}`;
   } else {
-    const month = dateObj.toLocaleString('default', { month: 'long' });
     const day = dateObj.getDate();
 
     const concatenateOrdinal = function(d) {

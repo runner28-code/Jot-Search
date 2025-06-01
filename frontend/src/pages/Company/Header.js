@@ -146,7 +146,6 @@ function renderCompanyLogo(logoUrl, name) {
         alt={`${name} logo`}
       />
     </div>
-  )
 }
 
 function renderDesktopLogo(logoUrl, name) {
@@ -173,7 +172,6 @@ function renderDesktopLogo(logoUrl, name) {
   )
 }
 
-// Temp comment
 function FillerIcon () {
   const { width } = useWindowDimensions();
 

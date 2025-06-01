@@ -37,6 +37,7 @@ function useTabState(disabledTabs, userType, pathname) {
       case '/candidates':
         return useState('candidates');
       case '/companies':
+// Temp comment
         return useState('companies');
       case '/careers':
       default:
@@ -86,6 +87,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'candidates' });
 
   /* CLEAR SEARCH TERM ON TAB SWITCH */
+  const isMount = useIsMount();
   useEffect(() => {
     if (isMount) {
       return;

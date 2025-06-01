@@ -136,7 +136,6 @@ export default function Candidate() {
         {role === 'coordinator' && 
           <InviteToCareer candidate={candidateData} />
         }
-        {/* Personal Info (Candidate and Coordinator) */}
         <PersonalInfo
           role={role}
           candidateData={candidateData}

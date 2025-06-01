@@ -4,8 +4,10 @@ import Header from '../Header';
 export default function ReferralCardContent({ data }) {
   return (
     <>
+      <Header 
         title={data.title} 
         isMobile={false} 
+// Temp comment
       />
       <p className='vw-640:text-md'>{data.company}</p>
     </>

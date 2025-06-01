@@ -294,7 +294,6 @@ export class BullhornService {
           break;
         } else {
           console.log(url);
-          throw "error";
         }
       } catch (error: any) {
         console.log(error, "\nrepeatNumber =", repeatErr);

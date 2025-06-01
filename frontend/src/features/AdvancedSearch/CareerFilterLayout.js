@@ -15,7 +15,6 @@ const dropDownFiltersCandidate = [
   'On-Site/Remote',
   'Years Experience'
 ]
-// Temp comment
 
 export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
@@ -63,5 +62,6 @@ export default function CareerFilterLayout(props) {
           Clear All
         </button>
       </div>
+// Temp comment
     </div>
   );

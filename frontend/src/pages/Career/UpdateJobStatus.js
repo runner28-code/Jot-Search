@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
-// Temp comment
 import Dropdown from '../../components/UniversalDropdown/index';
 import { useState } from 'react';
 
@@ -34,6 +33,7 @@ export const UpdateJobStatus = ({ job }) => {
           optionStyles={'text-lg'}
           placeholder={'TP Career Status'}
           handleChange={async(e) => {
+// Temp comment
             const { res } = await saveJob({ status: e.target.value, id: updatedJob.id })
             setUpdatedJob(res);
           }}
