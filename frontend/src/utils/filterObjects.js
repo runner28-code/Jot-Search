@@ -84,7 +84,6 @@ export const candidateFilterObject = {
     'Contract to Hire',
   ],
   'Authorized to work in the US': [
-    'Any',
     'Yes',
     'No'
   ],

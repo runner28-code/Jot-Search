@@ -34,7 +34,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               key={contact.id}
               className={ 'flex items-center px-s py-s ' + (index < clientContacts.length - 1 ? 'border-b border-grey300' : '') }
               onClick={() => handleContactClick(contact)}
-// Temp comment
             >
               <input
                 type='checkbox'
@@ -47,7 +46,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               <span>{contact.email}</span>
             </li>
           ))}
-        </ul>
         <button
           className='bg-royalBlue text-white text-lg px-xxl py-xs rounded-xl mt-20'
           onClick={handleSyncClick}

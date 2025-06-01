@@ -54,7 +54,6 @@ export default function ExpertiseLinksMobile() {
           <img
             src={marketingIcon}
             alt='Marketing Icon'
-            className={iconStyles}
           />
           <span className={textStyles}>Marketing</span>
         </Link>
@@ -65,7 +64,6 @@ export default function ExpertiseLinksMobile() {
           state={{ Expertise: 'Operations' }}
         >
           <img
-// Temp comment
             src={operationsIcon}
             alt='Operations Icon'
             className={iconStyles}

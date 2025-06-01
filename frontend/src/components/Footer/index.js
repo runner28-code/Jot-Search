@@ -22,6 +22,7 @@ export default function Footer() {
 
   const { width } = useWindowDimensions();
 
+  if( width <= 990 ) {
     return (<>
       <div className='flex py-24 px-[5%] items-center justify-center space-x-10 bg-royalBlue'>
         <a href={ROUTES.linkedin}>
@@ -305,6 +306,7 @@ function NavFooterMobile() {
 
   return(<>
     <div className='py-24 px-[5%] flex flex-row flex-wrap'>
+// Temp comment
       <div className='basis-12/12'>
         <img
           src={inTulsaFooter}

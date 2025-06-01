@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+// Temp comment
 import TimeframeFilter from '../../components/TimeframeFilter';
 import { BsArrowUpSquare, BsArrowDownSquare } from 'react-icons/bs';
 import { getCompanyQuickStats, getCoordinatorQuickStats } from '../../services/API';
@@ -9,7 +10,6 @@ const statFilterChoices = [
   'Last 7 Days',
   'Last 14 Days',
   'Last 30 Days',
-// Temp comment
   'Last 90 Days'
 ];
 

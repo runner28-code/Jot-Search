@@ -76,6 +76,7 @@ export default function Candidate() {
     }
     if (isProfilePage) {
       setCurrentUser({...updateResponse.data})
+    }
     if (updateResponse.result === false) {
       console.log('Error updating candidate: ', updateResponse.error);
     }
@@ -115,7 +116,6 @@ export default function Candidate() {
               toggled={!!candidateData.willRelocate}
               fieldName='willRelocate'
               label={PREFERENCE_ITEMS.willRelocate}
-              onUpdate={handleCandidateUpdate} />
             <PreferenceItem
               toggled={!!candidateData.willReceiveNotification}
               fieldName='willReceiveNotification'

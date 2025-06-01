@@ -56,7 +56,6 @@ export default function Company() {
   if (loading) { return <LoadingSpinner /> }
   return (
     <div className={ loggedIn ? 'vw-1280:pr-12 mx-[5%]' : ''}>
-      <RenderHeader
         type='company'
         loggedIn={loggedIn}
       />
@@ -73,6 +72,7 @@ export default function Company() {
               handleCompanyUpdate={setCompanyData}
             />
             : <HeaderMobile
+              companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
           }

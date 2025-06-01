@@ -36,13 +36,13 @@ export const roles = {
     'Human Resources',
     'IT',
     'Entrepreneurship'
-  ],
   'Other': [
     'Education',
     'Healthcare',
     'Legal',
     'Misc. Science',
     'Other'
+  ],
   'Software & Engineering': [
     'AI Machine Learning',
     'Backend Engineer',

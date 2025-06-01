@@ -9,7 +9,6 @@ import {
   MdLogout as LogoutIcon,
   MdStars as FavoritesIcon
 } from 'react-icons/md';
-import {
   RiFolderUserLine as CandidatesIcon,
   RiDashboard3Line as DashboardIcon,
 } from 'react-icons/ri';
@@ -66,6 +65,7 @@ export const choices = {
     icon: ContactIcon,
     link: ROUTES.talentInTulsa,
   },
+  logout: {
     label: 'Logout',
     icon: LogoutIcon,
     link: ROUTES.logout,

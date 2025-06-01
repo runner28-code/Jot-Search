@@ -81,7 +81,6 @@ class AuthService {
       localStorage.setItem('savedCompanies', JSON.stringify([]));
     }
   }
-// Temp comment
 
   async refreshSavedCandidates() {
     try {
@@ -123,6 +122,7 @@ class AuthService {
     return JSON.parse(localStorage.getItem('savedCompanies')) || [];
   }
 
+// Temp comment
   toggleSavedCandidate(candidateID, action) {
     const savedCandidates = this.getSavedCandidateIDs();
     if ( action === 'save' ) {

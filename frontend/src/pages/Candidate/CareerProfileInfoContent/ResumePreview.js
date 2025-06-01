@@ -18,7 +18,6 @@ const ResumePreview = ({ resumeUrl }) => {
   });
 
   const buttonStyles = 'w-15 h-15 ';
-// Temp comment
   const buttonStylesDisabled = 'w-15 h-15 opacity-50';
   const prevButtonDisabled = page === 1;
   const nextButtonDisabled = page === pdfDocument?.numPages;

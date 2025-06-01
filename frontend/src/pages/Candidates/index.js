@@ -1,7 +1,6 @@
 import { Navigate } from 'react-router-dom';
 import headerIcon from '../../assets/icons/user-folder.png';
 import PageHeader from '../../components/PageHeader';
-import AdvancedSearch from '../../features/AdvancedSearch';
 import AuthService from '../../services/auth';
 
 export default function Candidates() {
@@ -11,6 +10,7 @@ export default function Candidates() {
     return <Navigate to='/' />
   }
 
+  return (
     <section className='mr-20'>
       <PageHeader
         headerText='Candidates List'

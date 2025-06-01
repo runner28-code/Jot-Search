@@ -5,11 +5,13 @@ import debounce from 'lodash/debounce';
 import SearchBar from '../SearchBar';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
+// Temp comment
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 
 import { getCompanies, getJobs, getCandidates } from '../../services/API';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
+
 export default function GlobalSearch({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');

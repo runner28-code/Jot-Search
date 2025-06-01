@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import AssistanceCard from './AssistanceCard';
 import gaugeIcon from '../../../assets/icons/gauge.svg';
@@ -19,7 +18,6 @@ export default function CompanyDashboard({userType}) {
       <Stats
         headerStyles={headerStyles}
         userType={userType}
-      />
       <AssistanceCard />
       <h2 className='mt-22 font-spaceGrotesk font-semibold text-h5 text-charcoal'>Search</h2>
       <AdvancedSearch />

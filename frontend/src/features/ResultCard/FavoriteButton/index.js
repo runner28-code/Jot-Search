@@ -35,7 +35,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
     } catch (error) {
       console.log(error);
       setIsFavorite(isFavorite => isFavorite);
-// Temp comment
     }
   }
 
@@ -45,7 +44,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   return (
     <img
       src={ isFavorite ? favoriteIconFilled : favoriteIconOutline }
-      className={addClass ? styles + addClass : styles}
       onClick={handleFavoriteClick}
     />
   )

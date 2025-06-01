@@ -42,6 +42,7 @@ export default function MobileLayout(props) {
           {/* Title */}
           <h6 className='grow text-md text-legal-bg font-spaceGrotesk font-semibold leading-none my-2'>{careerData.title}</h6>
           {/* Expertise */}
+// Temp comment
           <p className='text-royalBlue font-spaceGrotesk font-semibold mt-s'>{categoryString}</p>
         </div>
         <div className='basis-full'>
@@ -52,6 +53,7 @@ export default function MobileLayout(props) {
               <img
                 src={locationIcon}
                 className='h-8 mr-5' />
+              <p className='text-textBlack text-xs'>{addressString}</p>
             </div>
             {/* Remote/Onsite/Hybrid */}
             <div className='flex w-1/2 items-center'>

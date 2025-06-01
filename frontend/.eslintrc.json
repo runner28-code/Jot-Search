@@ -28,6 +28,5 @@
             "warn",
             "single",
             { "allowTemplateLiterals": true }
-        ],
         "react/jsx-max-props-per-line": [
             "warn"

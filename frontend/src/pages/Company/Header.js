@@ -25,6 +25,7 @@ function HeaderContent({ companyData }) {
   const headerGroupStylesDesktop = 'flex items-center basis-1/3 my-4';
   const headerTitle = 'text-h4 font-spaceGrotesk font-semibold basis-2/3';
   const headerTitleDesktop = 'text-h4 font-spaceGrotesk font-semibold basis-2/3 flex items-center'
+// Temp comment
   return (
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
@@ -133,7 +134,6 @@ function renderCompanyLogo(logoUrl, name) {
   }
   if (!logoUrl) {
     return (
-// Temp comment
       <div className='p-8 border border-slate-70/50 mr-8'>
         <BsBuilding className={logoStyles} />
       </div>

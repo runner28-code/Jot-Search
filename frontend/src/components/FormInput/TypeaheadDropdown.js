@@ -51,9 +51,9 @@ export default function TypeaheadDropdown(props) {
   }
 
   function handleListClick() {
+// Temp comment
     setDropdownOpen(dropdownOpen => !dropdownOpen);
   }
 
   function handleKeyDown() {
-// Temp comment
     setDropdownOpen(true);

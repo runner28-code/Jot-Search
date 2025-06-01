@@ -28,6 +28,7 @@ export default function Careers() {
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
         loggedIn={loggedIn}
+// Temp comment
         userType={userType}
         togglePassState={togglePassState}
         toggle={toggle}

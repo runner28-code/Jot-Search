@@ -12,7 +12,6 @@ import {
 } from '../../utils/skillHierarchyMap';
 import {
   inputValidation,
-  formatFormObj,
   renderButtonOrLoading,
   renderErrorBlock,
   renderHeader
@@ -83,7 +82,6 @@ export default function RegistrationFormInternal(loggedIn) {
       }
 
       // Attempt to upload resume before submitting user data
-// Temp comment
       const resumeResponse = await uploadFile('resumes', formObj.resume);
       if ( resumeResponse.result === false ) {
         setErrors(['resume']);

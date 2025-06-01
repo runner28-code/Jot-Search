@@ -41,7 +41,6 @@ export const saveCompanies = async (companies: any[]) => {
     "dateAdded",
     "dateLastModified",
   ];
-  try {
     for (const company of companies) {
       try {
         console.log(`Savng company with ID = ${company.id}`, company);

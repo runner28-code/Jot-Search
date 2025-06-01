@@ -9,7 +9,6 @@ export default function FileInput({type, name, label, placeholder, required, val
       e.preventDefault();
       inputRef.current.click();
     }
-  }
 
   return (
     <div>
@@ -23,6 +22,5 @@ export default function FileInput({type, name, label, placeholder, required, val
         ref={inputRef}
         disabled={disabled}
       />
-// Temp comment
     </div>
   )

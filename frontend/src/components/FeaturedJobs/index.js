@@ -59,6 +59,7 @@ export default function FeaturedJobs() {
                       <p className={ width >= 990 ? cardContentSubtitle : cardContentSubtitleMobile }>{categoryString}</p>
                     </div>
                   </div>
+                </Link>
               )
             })
         }

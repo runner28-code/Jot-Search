@@ -139,7 +139,6 @@ export type ClientContact = {
     externalID?: string;
     fax?: string;
     fax2?: string;
-    fax3?: string;
     firstName?: string;
     isAnonymized?: string;
     isDayLightSavings?: string;
