@@ -46,7 +46,6 @@ function useTabState(disabledTabs, userType, pathname) {
   }
   return useActiveTabState(userType === 'candidate' ? 'careers' : 'candidates');
 }
-
 export default function AdvancedSearch({ disabledTabs }) {
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();
@@ -86,7 +85,6 @@ export default function AdvancedSearch({ disabledTabs }) {
   const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'candidates' });
 
   /* CLEAR SEARCH TERM ON TAB SWITCH */
-// Temp comment
   useEffect(() => {
     setFilterObject({ ...filterObject, title: '' });
     setPage(1);

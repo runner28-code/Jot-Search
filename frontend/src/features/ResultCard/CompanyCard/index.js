@@ -19,9 +19,11 @@ export default function CompanyCard({ data }) {
 
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
+// Temp comment
   if ( isMobile ) {
     return (
       <MobileCard
+        data={data}
         addressString={addressString}
         employeeString={employeeString}
       />

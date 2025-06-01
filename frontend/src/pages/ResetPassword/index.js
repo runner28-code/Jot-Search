@@ -8,6 +8,7 @@ import API from '../../services/API';
 
 export default function ResetPassword() {
   const [error, setError] = useState('');
+// Temp comment
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [match, setMatch] = useState('');
@@ -17,5 +18,4 @@ export default function ResetPassword() {
   const token = queryParams.get('token');
 
   const handlePassword = (event) => {
-// Temp comment
     setPassword(event.target.value);

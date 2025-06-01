@@ -122,7 +122,6 @@ export default function RegistrationForm() {
       success: false,
     });
   }
-// Temp comment
 
   function handleChange(name, value) {
     setFormObj({
@@ -274,6 +273,7 @@ export default function RegistrationForm() {
             placeholder='Verify Password' 
             value={formObj.verifyPassword}
             onChange={handleChange}
+// Temp comment
             error={errors.includes('verifyPassword')}
           />
         </div>

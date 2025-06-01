@@ -33,6 +33,7 @@ export default function LandingPage() {
           <p className='text-white font-spaceGrotesk font-semibold w-2/3 vw-1024:w-full text-[35.2px] vw-1024:text-[72px] text-center'>{'Find a Career You\'ll Love'}</p>
           { renderColorShapes() }
           { renderJoinTalent() }
+        </div>
         { renderSearch() }
       </section>
       {/* Browse Opportunities by Expertise */}
@@ -56,6 +57,7 @@ function renderSearch() {
     return (<>
       <ExploreSearchMobile
         totalJobs={totalJobsCount}
+// Temp comment
         totalCompanies={totalCompaniesCount}
         loading={isLoading}
       />

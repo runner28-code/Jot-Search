@@ -139,5 +139,4 @@ export default function Apply() {
       updateCandidateIfNeeded(formattedObject, originalObject);
     }
 
-    const response = await applyToJob(jobId, formattedObject.id);
     return response

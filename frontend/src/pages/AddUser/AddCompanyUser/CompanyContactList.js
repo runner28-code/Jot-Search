@@ -23,7 +23,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
       {isLoadingContacts && <LoadingSpinner />}
       {/* No results */}
       {!isLoadingContacts && clientContacts?.length === 0 && (
-// Temp comment
         <p className='opacity-70 text-sm'>No contacts found for {selectedCompany?.name}</p>
       )}
       {/* Results */}
@@ -35,6 +34,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               key={contact.id}
               className={ 'flex items-center px-s py-s ' + (index < clientContacts.length - 1 ? 'border-b border-grey300' : '') }
               onClick={() => handleContactClick(contact)}
+// Temp comment
             >
               <input
                 type='checkbox'

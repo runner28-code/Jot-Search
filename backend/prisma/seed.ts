@@ -90,6 +90,7 @@ async function seedCandidates() {
         description: "Ehh...",
         companyName: "Nowhere",
         companyURL: "nowhere.com",
+        firstName: "Bob",
         lastName: "Tester",
         phone: "987-654-3210",
         email: "bobtesting@gmail.com",

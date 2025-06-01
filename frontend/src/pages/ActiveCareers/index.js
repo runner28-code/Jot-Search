@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import PageHeader from '../../components/PageHeader';
 import ResultsHeader from '../../components/ResultsHeader';
 import FilterSearch from '../../components/FilterSearch';
@@ -41,7 +40,6 @@ export default function ActiveCareers() {
       <PageHeader
         headerText='Active Careers'
         IconComponent={CareerIcon}
-// Temp comment
         classOverride='h-18 w-18'
         backButton
       />

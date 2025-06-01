@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import * as ROUTES from './routes';
 import Auth from './Auth';
 import {
   LandingPage,
@@ -44,7 +43,6 @@ function App() {
               element={<Companies />} />
             <Route
               path={`${ROUTES.careers}/:id`}
-// Temp comment
               element={<Career />} />
             <Route
               path={`${ROUTES.apply}/:id`}

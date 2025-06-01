@@ -47,7 +47,6 @@ const defaultState = {
 const defaultCommunity = {
   community: ''
 }
-// Temp comment
 export default function RegistrationFormInternal(loggedIn) {
   const {categories} = useContext(CategoryContext);
   const [formObj, setFormObj] = useState(defaultState);
@@ -84,6 +83,7 @@ export default function RegistrationFormInternal(loggedIn) {
       }
 
       // Attempt to upload resume before submitting user data
+// Temp comment
       const resumeResponse = await uploadFile('resumes', formObj.resume);
       if ( resumeResponse.result === false ) {
         setErrors(['resume']);

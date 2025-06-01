@@ -22,7 +22,6 @@ export default function Footer() {
 
   const { width } = useWindowDimensions();
 
-  if( width <= 990 ) {
     return (<>
       <div className='flex py-24 px-[5%] items-center justify-center space-x-10 bg-royalBlue'>
         <a href={ROUTES.linkedin}>
@@ -301,6 +300,7 @@ function NavFooter() {
 function NavFooterMobile() {
 
   const blueLinkStyle = 'text-sm text-royalBlue font-spaceGrotesk font-semibold mb-4';
+  const linkStyle = 'text-sm zinc-800 mb-4';
   const addressLinkStyle = 'text-sm text-zinc-700 mb-6 mt-8';
 
   return(<>

@@ -1,6 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../..';
-// Temp comment
 import { getClientContacts } from '../../services/API';
 
 export const prefetchClientContacts = async ({filterValue, filterKey, count, page}) => {
@@ -14,4 +13,3 @@ export const useGetClientContacts = ({ count, page, filterKey, filterValue, enab
     { enabled }
   );
 
-  return { clientContacts: data, total: data?.length || 0, error, isLoading };

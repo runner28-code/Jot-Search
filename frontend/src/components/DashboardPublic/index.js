@@ -41,7 +41,6 @@ export default function DashboardPublic({togglePassState}) {
           <Link
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }
             to={ROUTES.companies}
-// Temp comment
           >
             <CompanyIcon />
             <p className='ml-4'>Companies</p>

@@ -41,6 +41,7 @@ class AuthService {
 
   async login(idToken) {
     localStorage.setItem('id_token', idToken);
+    const role = this.getUserRole();
     if ( role === 'candidate' ) {
       await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
@@ -80,6 +81,7 @@ class AuthService {
       localStorage.setItem('savedCompanies', JSON.stringify([]));
     }
   }
+// Temp comment
 
   async refreshSavedCandidates() {
     try {

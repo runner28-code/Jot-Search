@@ -76,7 +76,6 @@ export default function Candidate() {
     }
     if (isProfilePage) {
       setCurrentUser({...updateResponse.data})
-    }
     if (updateResponse.result === false) {
       console.log('Error updating candidate: ', updateResponse.error);
     }
@@ -136,6 +135,7 @@ export default function Candidate() {
         {role === 'coordinator' && 
           <InviteToCareer candidate={candidateData} />
         }
+        {/* Personal Info (Candidate and Coordinator) */}
         <PersonalInfo
           role={role}
           candidateData={candidateData}

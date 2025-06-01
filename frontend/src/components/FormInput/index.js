@@ -10,7 +10,6 @@ const regularBorder = 'border-midGrey ';
 const errorBorder = 'border-rose-500 ';
 const dropdownStyles = 'bg-lightGrey border border-midGrey border-solid rounded-b-lg overflow-y-auto z-10 ';
 const dropdownItemStyles = 'text-textBlack text-md pl-8 py-7 hover:bg-royalBlue hover:text-white ';
-// Temp comment
 export default function FormInput(props) {
   const {
     type,
@@ -87,7 +86,6 @@ export default function FormInput(props) {
       return <TextInput
         type={type}
         name={name}
-        label={label}
         required={required}
         placeholder={placeholder}
         value={value}

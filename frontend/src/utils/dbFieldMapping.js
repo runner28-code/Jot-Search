@@ -1,4 +1,5 @@
 export const disabilityMap = {
+// Temp comment
   U: 'I prefer not to say',
   Y: 'I am a person with a disability',
   H: 'I am a person with a history of a disability',
@@ -32,4 +33,5 @@ export const ethnicityMap = {
   WH: 'White or Caucasian',
   IA: 'Native American or Alaska Native',
   HL: 'Hispanic or Latina/Latino or LatinX',
+  AS: 'Asian',
   M: 'Multiracial',

@@ -73,7 +73,6 @@ export default function Company() {
               handleCompanyUpdate={setCompanyData}
             />
             : <HeaderMobile
-              companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
           }

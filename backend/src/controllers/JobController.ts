@@ -192,3 +192,4 @@ export class JobController {
       console.error(error);
       return {
         message: error,
+      };
