@@ -151,7 +151,6 @@ export class CandidateController {
       }, {} as Dictionary<string>);
 
       if (!isTppUserQuery && fields) {
-        const _fields: Dictionary<boolean> = {}
         _fields['email'] = true;
         fields.forEach((field: string) => {
           _fields[field] = true

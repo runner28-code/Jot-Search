@@ -5,6 +5,7 @@ import {
   LandingPage,
   SignUp,
   Login,
+  Career,
   Careers,
   Company,
   Companies,

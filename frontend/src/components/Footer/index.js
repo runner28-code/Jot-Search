@@ -306,7 +306,6 @@ function NavFooterMobile() {
 
   return(<>
     <div className='py-24 px-[5%] flex flex-row flex-wrap'>
-// Temp comment
       <div className='basis-12/12'>
         <img
           src={inTulsaFooter}
@@ -332,7 +331,6 @@ function NavFooterMobile() {
         <Address />
       </div>
       <div className='flex flex-col basis-6/12 px-8'>
-        <Link
           to={ROUTES.landingPage}
           className={linkStyle}
         >Home

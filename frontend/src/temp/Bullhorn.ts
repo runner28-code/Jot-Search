@@ -103,7 +103,6 @@ export type Job = {
     publishedZip?: string;
     reasonClosed?: string;
     reportTo?: string;
-    reportToClientContact?: string;
     salary?: string;
     salaryUnit?: string;
     skillList?: string;
@@ -139,6 +138,7 @@ export type ClientContact = {
     externalID?: string;
     fax?: string;
     fax2?: string;
+    fax3?: string;
     firstName?: string;
     isAnonymized?: string;
     isDayLightSavings?: string;

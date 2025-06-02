@@ -30,6 +30,7 @@ CREATE TABLE "Company" (
     "billingFrequency" TEXT,
     "billingPhone" TEXT,
     "branchId" TEXT,
+    "businessSectorList" TEXT[],
     "companyDescription" TEXT,
     "companyURL" TEXT,
     "competitors" TEXT[],

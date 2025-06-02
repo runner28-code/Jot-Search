@@ -40,6 +40,7 @@ export default function CandidateFilterLayout(props) {
     setSearchTerm,
     handleSearchClick,
     clearFilters,
+  } = props;
   let userRole = AuthService.getUserRole();
 
   const dropdownFilterObject = {};
@@ -102,7 +103,6 @@ export default function CandidateFilterLayout(props) {
           onClick={clearFilters}
         >
           Clear All
-        </button>
       </div>
     </div>
   );

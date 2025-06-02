@@ -41,6 +41,7 @@ export const saveCompanies = async (companies: any[]) => {
     "dateAdded",
     "dateLastModified",
   ];
+  try {
     for (const company of companies) {
       try {
         console.log(`Savng company with ID = ${company.id}`, company);
@@ -64,7 +65,6 @@ export const saveCompanies = async (companies: any[]) => {
 
         Object.keys(companyData).forEach((key) => {
           if (expludeFields.includes(key)) {
-            delete companyData[key];
           }
         });
 

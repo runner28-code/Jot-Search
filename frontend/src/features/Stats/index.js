@@ -1,13 +1,11 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-// Temp comment
 import TimeframeFilter from '../../components/TimeframeFilter';
 import { BsArrowUpSquare, BsArrowDownSquare } from 'react-icons/bs';
 import { getCompanyQuickStats, getCoordinatorQuickStats } from '../../services/API';
 
 const statFilterChoices = [
   'Today',
-  'Last 7 Days',
   'Last 14 Days',
   'Last 30 Days',
   'Last 90 Days'

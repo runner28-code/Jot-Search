@@ -19,6 +19,7 @@ export const UpdateJobStatus = ({ job }) => {
         <h4 className={sectionHeaderStyles}>Career Status</h4>
         {isLoading && <p>Loading...</p>}
         {isSuccess && <p>Success!</p>}
+        <Dropdown 
           choices={[
             'Active',
             'Inactive',
@@ -36,6 +37,5 @@ export const UpdateJobStatus = ({ job }) => {
             setUpdatedJob(res);
           }}
         />
-      </div>
     </div>
   )

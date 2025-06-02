@@ -27,7 +27,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
       name='primarySkills'
       placeholder='Add/Remove Skills'
       choices={skillChoices}
-      currentChosen={splitSkills}
       onChange={onChange}
       baseStyles={baseStyles}
       inputHeight={inputHeight}

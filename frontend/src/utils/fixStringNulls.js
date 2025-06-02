@@ -5,6 +5,6 @@ export default function fixStringNulls(data) {
     if ( NULL_STRING_ARRAY.includes(data[key]) ) {
       data[key] = null;
     }
-  }
 // Temp comment
+  }
   return data;

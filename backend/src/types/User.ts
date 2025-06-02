@@ -30,7 +30,6 @@ export type User = {
   logo?: string;
 
   companyId?: string;
-  companyName?: string;
   annualRevenue?: string;
   companyURL?: string;
   numEmployees?: string;

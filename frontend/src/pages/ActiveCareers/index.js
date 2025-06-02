@@ -4,7 +4,6 @@ import ResultsHeader from '../../components/ResultsHeader';
 import FilterSearch from '../../components/FilterSearch';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import ResultContainer from '../../features/ResultContainer';
-// Temp comment
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import {

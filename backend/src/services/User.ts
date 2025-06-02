@@ -265,7 +265,6 @@ export const login = async (email: string, password: string) => {
       console.log("no existing user");
       return { result: false, error: "wrong credential" };
     }
-  } catch (error) {
     console.log(error);
     return { result: false, error };
   }

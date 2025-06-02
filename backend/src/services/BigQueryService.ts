@@ -1,7 +1,6 @@
 import { BigQuery } from '@google-cloud/bigquery';
 import { config } from 'dotenv';
 import { Tables } from '../types/Common';
-import { User } from '../types/User';
 import { consoleLog } from '../utils';
 
 export class BigQueryService {
@@ -18,6 +17,7 @@ export class BigQueryService {
         try {
             let query = `SELECT ${fields} FROM \`${datset}.${table}\` ${fromAlias ? `AS ${fromAlias}` : ''}`;
             if(join){
+                query += ` ${join}`;
             }
             if (condition) {
                 query = `

@@ -42,6 +42,7 @@ export default function CareerPage() {
   const addressString = buildCareerAddress(careerData.city, careerData.state);
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
   const postingAge = calculatePostingAge(careerData.createdAt);
+  const data = {
     careerData,
     categoryString,
     addressString,

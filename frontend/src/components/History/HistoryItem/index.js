@@ -5,6 +5,7 @@ function isTodayOrYesterday(dateObj) {
   let returnObj = {
     isToday: false,
     isYesterday: false
+// Temp comment
   }
 
   const today = new Date();
@@ -18,6 +19,7 @@ function isTodayOrYesterday(dateObj) {
       returnObj.isToday = true;
     } else if ( dayDifference === 1 ) {
       returnObj.isYesterday = true;
+    }
   }
 
   return returnObj;

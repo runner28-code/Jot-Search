@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default function ViewAllLink({ href, text }) {
   return (
-      to={ href }
+    <Link 
       className='text-md text-royalBlue font-bold'
     >
       {`${text} >`}

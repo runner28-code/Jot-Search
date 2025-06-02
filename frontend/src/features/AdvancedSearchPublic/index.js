@@ -99,7 +99,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     const newState = { ...initialFilterState, ...state };
     if (state) {
       newState.title = state.title || '';
-// Temp comment
       newState.Expertise = state.Expertise || 'Any';
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
     }
