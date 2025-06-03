@@ -331,6 +331,7 @@ function NavFooterMobile() {
         <Address />
       </div>
       <div className='flex flex-col basis-6/12 px-8'>
+        <Link
           to={ROUTES.landingPage}
           className={linkStyle}
         >Home

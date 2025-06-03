@@ -96,7 +96,6 @@ export default function RegistrationForm() {
       setTimeout(() => {
         setFormObj(defaultState);
         setSubmissionObject({
-// Temp comment
           loading: false,
           success: false,
         });
@@ -115,7 +114,6 @@ export default function RegistrationForm() {
       lastName: lastName.value,
       email: email.value,
       linkedin: linkedin.value,
-      password: password.value,
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect

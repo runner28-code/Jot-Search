@@ -98,6 +98,7 @@ export default function Apply() {
   useEffect(async () => {
     if ( submissionObject.loading ) {
       const response = await submitData();
+// Temp comment
       if ( response.result === true ) {
         setSubmissionObject({
           loading: false,

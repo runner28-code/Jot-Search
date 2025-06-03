@@ -130,6 +130,7 @@ function renderCompanyLogo(logoUrl, name) {
   const logoStyles = 'my-auto object-contain';
   if( width >= 1280 ) {
     return null;
+  }
   if (!logoUrl) {
     return (
       <div className='p-8 border border-slate-70/50 mr-8'>

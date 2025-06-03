@@ -19,6 +19,7 @@ import AuthService from './services/auth';
 function App() {
   let userRole = AuthService.getUserRole();
 
+// Temp comment
   return (
     <div className="App overflow-hidden">
       <NavBar />

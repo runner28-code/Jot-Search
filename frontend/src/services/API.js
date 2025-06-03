@@ -97,6 +97,7 @@ export async function saveCandidate(userId, candidateId) {
   } else {
     AuthService.toggleSavedCandidate(candidateId, 'unsave');
   }
+  return normalizeData(data);
 }
 
 // COORDINATOR AUTH REQUIRED (handled on back-end), can be used to add any user type

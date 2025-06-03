@@ -151,3 +151,4 @@ export default function RegistrationForm(loggedIn) {
       loading: true,
       success: false,
     });
+    console.log(formObj);

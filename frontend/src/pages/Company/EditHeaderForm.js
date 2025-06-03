@@ -150,7 +150,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 value={formData.address2}
                 className={inputStyles + 'ml-10 text-h6'} />
             </div>
-// Temp comment
             <div className='flex justify-between mb-4'>
               <label 
                 className='text-h6 text-royalBlue w-full'
@@ -199,6 +198,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         <div className='flex items-center justify-between mb-4'>
           <label
             className='text-h6 text-royalBlue flex items-center'
+// Temp comment
             htmlFor='phone'
           >
             <FaPhoneAlt

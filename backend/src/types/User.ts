@@ -30,6 +30,7 @@ export type User = {
   logo?: string;
 
   companyId?: string;
+  companyName?: string;
   annualRevenue?: string;
   companyURL?: string;
   numEmployees?: string;
@@ -40,7 +41,6 @@ export type User = {
   experience?: string;
   hourlyRate?: string;
   willRelocate?: string;
-  willReceiveNotification?: boolean;
   ethnicity?: string;
   workAuthorized?: string;
   disability?: string;

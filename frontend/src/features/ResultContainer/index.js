@@ -7,7 +7,6 @@ import ViewAllLink from '../../components/ViewAllLink';
 import { pluralizedTypes } from '../../utils/constants';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
-// Temp comment
 
 export default function ResultContainer(props) {
   const {
@@ -51,6 +50,7 @@ export default function ResultContainer(props) {
 
   return (
     <div className='w-full'>
+// Temp comment
       { renderHeader() }
       <div
         className={`${baseStyles} ${resultsContainerStyles}`}>

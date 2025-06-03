@@ -80,6 +80,7 @@ export class UserController {
         error,
       };
     } else {
+      return {
         result: false,
         error: `Invalid user type specified for candidate-only register route: ${user.role}`,
       }
@@ -87,7 +88,6 @@ export class UserController {
   }
 
   /**
-   * Coordinator-only route to add users depending on type
    * @param authUser 
    * @param user 
    * @returns 

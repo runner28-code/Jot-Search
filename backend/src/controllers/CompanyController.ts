@@ -110,6 +110,7 @@ export class CompanyController {
     @Body() body: Company,
     @CurrentUser() authUser: User
   ): Promise<any> {
+    if (authUser.role !== COORDINATOR) {
       return {
         result: false,
         error: "You should be a coordinator for creating a company",
@@ -160,3 +161,4 @@ export class CompanyController {
       };
     } catch (e) {
       console.log(e);
+      return { result: false, message: e };

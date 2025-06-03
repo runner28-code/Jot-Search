@@ -65,6 +65,7 @@ export const candidateFilterObject = {
     'Any',
     ...experienceValues
   ],
+  'Open to Relocation': [
     'Any',
     'Yes',
     'No'

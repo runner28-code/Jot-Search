@@ -84,7 +84,6 @@ export default function AddCompanyUser() {
             <CompanyContactList
               clientContacts={clientContacts}
               isLoadingContacts={isLoadingContacts}
-// Temp comment
               selectedCompany={selectedCompany}
             />
           )}

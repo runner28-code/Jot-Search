@@ -8,7 +8,6 @@ import {
 } from '../SideNav/utils';
 import Choice from './Choice';
 import LoggedOutButtons from './LoggedOutButtons';
-import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
 
 const baseLinkStyles = 'flex items-center w-full h-20 pl-6 bg-white hover:bg-royalBlue text-royalBlue hover:text-white cursor-pointer ';

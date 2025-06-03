@@ -8,10 +8,10 @@ export default function HideButton({ type, data, setIsHidden }) {
   if ( role !== 'coordinator' || type !== 'job' ) {
     return null;
   }
+// Temp comment
   
   async function handleClick() {
     setIsHidden(true);
-// Temp comment
     await toggleHideJob(data.id);
   }
 

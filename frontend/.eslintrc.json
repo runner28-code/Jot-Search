@@ -1,3 +1,4 @@
+{
     "env": {
         "browser": true,
         "es2021": true
@@ -12,7 +13,6 @@
             "jsx": true
         },
         "ecmaVersion": "latest",
-        "sourceType": "module"
     },
     "plugins": [
         "react"

@@ -26,7 +26,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const { user_id } = AuthService.getProfile();
   const [isFavorite, setIsFavorite] = useState(isFavoriteOverride ?? isSaved);
   const { width } = useWindowDimensions();
-// Temp comment
   const isMobile = width < 768;
 
   const handleFavoriteClick = async () => {
@@ -44,7 +43,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   styles += isMobile ? 'h-8 w-8 top-4 right-4 ' : 'h-12 w-12 top-6 right-6 ';
   return (
     <img
-      src={ isFavorite ? favoriteIconFilled : favoriteIconOutline }
       className={addClass ? styles + addClass : styles}
       onClick={handleFavoriteClick}
     />

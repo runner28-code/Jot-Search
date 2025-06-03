@@ -9,7 +9,6 @@ const mockJobsData = [
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
     salaryRange: '$80k-$90k',
     location: 'Remote',
-    listingAge: '1 month',
     specialty: 'Technology'
   },
   {
@@ -33,7 +32,6 @@ const mockJobsData = [
     specialty: 'Sales & Biz Dev'
   },
 ];
-// Temp comment
 
 function renderChosen(currentChosen, handleRemove) {
   return currentChosen.map(choice =>
