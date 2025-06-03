@@ -46,6 +46,7 @@ const uploadToS3 = async(req: any, res: any) => {
     const uuid = genUUID()
 
     const params = {
+      Key: uuid,
       ContentType: fileObject.type,
       Body: buffer,
       Bucket: process.env.S3_BUCKET,
@@ -62,3 +63,4 @@ const uploadToS3 = async(req: any, res: any) => {
       })
     } catch (e) {
       console.error("error", e);
+      res.status(500).send({

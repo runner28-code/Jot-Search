@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import TypeaheadDropdown from '../FormInput/TypeaheadDropdown';
+// Temp comment
 
 const mockJobsData = [
   {
@@ -9,6 +10,7 @@ const mockJobsData = [
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
     salaryRange: '$80k-$90k',
     location: 'Remote',
+    listingAge: '1 month',
     specialty: 'Technology'
   },
   {

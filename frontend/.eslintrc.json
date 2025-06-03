@@ -1,6 +1,5 @@
 {
     "env": {
-        "browser": true,
         "es2021": true
     },
     "extends": [
@@ -13,6 +12,7 @@
             "jsx": true
         },
         "ecmaVersion": "latest",
+        "sourceType": "module"
     },
     "plugins": [
         "react"
@@ -30,3 +30,4 @@
         ],
         "react/jsx-max-props-per-line": [
             "warn"
+        ],

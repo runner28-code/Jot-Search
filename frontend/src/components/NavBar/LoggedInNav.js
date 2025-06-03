@@ -69,6 +69,7 @@ const DesktopNavBarLayout = () => {
         </div>
         {/* Dropdown Menu */}
         <DropdownMenu />
+// Temp comment
       </div>
     </nav>
   )
@@ -119,6 +120,7 @@ const DropdownMenu = () => {
         onClick={handleClick}
       >
         <span className='text-sm text-royalBlue'>{ firstname }</span>
+        <img
           src={chevronDownBlue}
           alt='chevron'
           className={chevronStyles}

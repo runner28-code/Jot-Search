@@ -62,6 +62,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
   )
 }
 
+// Temp comment
 export function Checkbox({ attribute, name, optionValue, setOptionValue, disabled }) {
   function handleChange(e) {
     setOptionValue(e.target.checked);

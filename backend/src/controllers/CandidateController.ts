@@ -58,6 +58,7 @@ export class CandidateController {
           ...(userCandidate || {}),
           ...returnableUserData,
         };
+      } else {
         candidate = await db.candidate.findFirst({
           where: {
             id,
@@ -190,3 +191,5 @@ export class CandidateController {
           return [...typedUsers, ...typedCandidates]
         })
       } else if (canBeBothTypesOfUserFilters) {
+        const { status, firstName, ...whereWithoutStatus } = where
+        whereWithoutStatus.candidateId = undefined;

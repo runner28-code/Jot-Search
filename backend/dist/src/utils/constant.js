@@ -130,7 +130,6 @@ const job_filter_exclude_keys = [
     "educate",
     "education",
     "educator",
-// Temp comment
     "electrician",
     "electronics tech",
     "elementary",
@@ -227,3 +226,5 @@ const job_filter_exclude_keys = [
     "learn",
     "leasing",
     "legal",
+    "liberal arts",
+    "librarian",

@@ -8,4 +8,6 @@ const config = {
 
   getroEmail: process.env.GETRO_EMAIL,
   getroPassword: process.env.GETRO_PASSWORD,
+
   bullhornClientID: process.env.BULLHORN_CLIENT_ID,
+  bullhornClientSecret: process.env.BULLHORN_CLIENT_SECRET,

@@ -19,6 +19,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     containerStyles += additionalClasses;
   }
   const placeholderString = placeholder || 'Keywords';
+// Temp comment
   const { width } = useWindowDimensions();
   return (
     <div 

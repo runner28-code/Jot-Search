@@ -10,7 +10,6 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
 
   return (
     <div
-// Temp comment
       id='dropdown-wrapper'
       className={'absolute z-10 top-full w-full border-solid border-x border-b rounded-b-lg cursor-pointer border-' + color}>
       {objectifiedChoices.map((choice, index) => {
@@ -18,7 +17,6 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
         return (
           <div
             onClick={() => handleChoiceClick(choice.id)}
-            className={choiceStyles}
             key={choice.id}>
             {choice.name}
           </div>

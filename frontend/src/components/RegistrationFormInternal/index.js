@@ -106,6 +106,7 @@ export default function RegistrationFormInternal(loggedIn) {
           return setSubmissionObject({
             loading: false,
             success: true,
+          })
         } else {
           return navigate(ROUTES.login);
         }

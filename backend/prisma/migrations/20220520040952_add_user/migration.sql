@@ -19,3 +19,4 @@ CREATE TABLE "User" (
     "referredBy" TEXT,
     "roles" TEXT,
     "externalId" TEXT,
+    "gender" TEXT,

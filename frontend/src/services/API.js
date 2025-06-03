@@ -134,7 +134,6 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
       }
     ],
     'count': count || 5,
-    'page': page || null
   });
   return {
     companies: normalizeData(data.companies),

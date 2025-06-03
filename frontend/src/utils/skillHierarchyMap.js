@@ -55,7 +55,6 @@ export const roles = {
     'Data Analysis',
     'Systems Engineer',
     'Mobile Engineers',
-    'Automation Engineer',
     'Product Engineer',
     'Engineering Management',
     'Other Engineers'
@@ -144,6 +143,7 @@ export const skills = [
   'Copy Editing',
   'Copywriting',
   'Counseling',
+  'CPA',
   'CPG',
   'Creative Writing',
   'CRM',
@@ -179,3 +179,5 @@ export const skills = [
   'Dojo',
   'Drone',
   'Dynamics NAV',
+  'E-Commerce',
+  'Economic Development',

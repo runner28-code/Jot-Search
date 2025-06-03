@@ -114,6 +114,7 @@ export default function RegistrationForm() {
       lastName: lastName.value,
       email: email.value,
       linkedin: linkedin.value,
+      password: password.value,
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
@@ -218,7 +219,6 @@ export default function RegistrationForm() {
             error={errors.includes('experience')}
           />
           <FormInput
-            type='single-select'
             name='employmentPreference'
             placeholder='Preferred Employment Type' 
             value={formObj.employmentPreference}

@@ -32,7 +32,6 @@ export default function CareerCard({ data, active }) {
   };
 
   return (
-// Temp comment
     <div
       className='relative w-full'
       key={data.id}
@@ -63,7 +62,6 @@ CareerCard.propTypes = {
     state: PropTypes.string,
     company_logo: PropTypes.string,
     role: PropTypes.string,
-    title: PropTypes.string,
     employmentType: PropTypes.string,
     onSite: PropTypes.string,
     salary: PropTypes.string,

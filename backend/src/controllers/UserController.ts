@@ -88,6 +88,7 @@ export class UserController {
   }
 
   /**
+   * Coordinator-only route to add users depending on type
    * @param authUser 
    * @param user 
    * @returns 

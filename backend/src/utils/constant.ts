@@ -227,3 +227,4 @@ const job_filter_exclude_keys = [
   "liberal arts",
   "librarian",
   "library",
+  "license",

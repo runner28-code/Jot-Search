@@ -279,6 +279,7 @@ export const findUserByEmail = async (email: string) => {
       },
     });
 
+    return user || null;
   } catch (error) {
     console.log(error);
     return null;
@@ -289,3 +290,5 @@ export const getCompanyDashboardStats = async (days: number) => {
   try {
     let result = null;
 
+    const currentPeriodCommonQuery = {
+      createdAt: {

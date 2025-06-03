@@ -13,7 +13,6 @@ export default function ResultContainer(props) {
     results,
     loading,
     type,
-    limit,
     header, 
     active,
     compact = false,
@@ -50,7 +49,6 @@ export default function ResultContainer(props) {
 
   return (
     <div className='w-full'>
-// Temp comment
       { renderHeader() }
       <div
         className={`${baseStyles} ${resultsContainerStyles}`}>

@@ -383,6 +383,7 @@ export class BullhornService {
           headers: {
             "Content-Type": "application/json;charset=UTF-8",
             Accept: "*/*",
+          },
         });
         console.log(url);
         
@@ -454,3 +455,7 @@ export class BullhornService {
         companyId: `bl-${d.clientCorporation?.id.toString()}`,
         categoryId: categoryId
       };
+    });
+    if (!testMode) {
+      for (const job of updatedData) {
+        console.log("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
