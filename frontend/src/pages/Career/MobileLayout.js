@@ -129,7 +129,6 @@ export default function MobileLayout(props) {
     <OtherCareers
       companyId={careerData.companyId}
       companyName={careerData.clientCorporation}
-      currentCareerId={careerData.externalId}
     />
   </>)
 }

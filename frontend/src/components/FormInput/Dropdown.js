@@ -15,7 +15,6 @@ function renderActiveIcon(choice, currentChosen) {
         alt="checkmark" 
         className="w-8 h-8 mr-2" />
     )
-  }
 }
 
 function renderHorizontalRule(index, arrayLength) {

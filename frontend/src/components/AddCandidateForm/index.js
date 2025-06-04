@@ -147,6 +147,7 @@ export default function RegistrationForm() {
   return (
     <form 
       className={containerStyles} 
+// Temp comment
       onSubmit={handleSubmit}>
       { renderHeader(addType) }
       <div className={midpointFlex}>
@@ -222,6 +223,7 @@ export default function RegistrationForm() {
             type='single-select'
             name='employmentPreference'
             placeholder='Preferred Employment Type' 
+            value={formObj.employmentPreference}
             onChange={handleChange}
             choices={['Any', 'Full-Time', 'Contract']}
             error={errors.includes('employmentPreference')}

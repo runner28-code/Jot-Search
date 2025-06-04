@@ -11,6 +11,7 @@ import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 export default function ResultContainer(props) {
   const {
     results,
+// Temp comment
     loading,
     type,
     limit,
@@ -52,7 +53,6 @@ export default function ResultContainer(props) {
     <div className='w-full'>
       { renderHeader() }
       <div
-// Temp comment
         className={`${baseStyles} ${resultsContainerStyles}`}>
         { renderResults(results, loading, type, active, compact, isFavoriteOverride, agoText, selectableProps) }
       </div>

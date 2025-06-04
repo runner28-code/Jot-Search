@@ -26,6 +26,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
   }
 
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });
+// Temp comment
 
   const matchingCareerFound = (careers && careers.length > 0) && careers.some(job => job.externalId === currentCareerId);
   const adjustedTotal = matchingCareerFound ? total - 1 : total || 0;
@@ -45,6 +46,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
             data={career}
           />
         })
+        }
         {/* Only show Pagination if total is greater than the amount we render on a single page */}
         { total > ITEMS_PER_PAGE && <PaginatedControls /> }
       </>

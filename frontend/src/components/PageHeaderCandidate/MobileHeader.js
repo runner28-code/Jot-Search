@@ -8,6 +8,7 @@ export default function MobileHeader(props) {
     classOverride,
     colorizeStroke,
   } = props;
+  
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
   if ( classOverride ) addOnIconClasses += classOverride;
@@ -16,6 +17,7 @@ export default function MobileHeader(props) {
       { icon && (
         <img
           src={ icon }
+// Temp comment
           alt='header icon'
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />

@@ -30,6 +30,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
 
   const handleFavoriteClick = async () => {
     setIsFavorite(isFavorite => !isFavorite);
+// Temp comment
     try {
       await saveItemByType(type, user_id, item_id);
     } catch (error) {
@@ -45,5 +46,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
     <img
       src={ isFavorite ? favoriteIconFilled : favoriteIconOutline }
       className={addClass ? styles + addClass : styles}
+      onClick={handleFavoriteClick}
     />
   )

@@ -45,6 +45,7 @@ export default function CareerPage() {
   const data = {
     careerData,
     categoryString,
+// Temp comment
     addressString,
     salaryString,
     postingAge,
@@ -73,7 +74,6 @@ export default function CareerPage() {
           <MobileLayout data={data} /> :
           <DesktopLayout data={data} />
       }
-// Temp comment
       {
         role === 'coordinator' &&
         <InviteCandidates job={ careerData } />

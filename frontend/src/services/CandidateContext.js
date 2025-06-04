@@ -44,7 +44,6 @@ const mockCandidateData = [
     occupation: 'Project Manager',
     companyName: 'Aerovision',
     address_city: 'Tulsa',
-    address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma',
     isLooking: false,
@@ -112,6 +111,7 @@ const CandidateProvider = ({children}) => {
     }
   }, []);
 
+  const handleCandidatesChange = (value) => {
     setCandidates(value);
   }
 

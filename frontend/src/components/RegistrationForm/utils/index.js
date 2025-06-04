@@ -21,7 +21,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       {buttonString}
     </button>
   )
-}
 
 export function renderErrorBlock(errorBlock) {
 

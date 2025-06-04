@@ -193,3 +193,4 @@ export class CandidateController {
       } else if (canBeBothTypesOfUserFilters) {
         const { status, firstName, ...whereWithoutStatus } = where
         whereWithoutStatus.candidateId = undefined;
+        if (firstName) {

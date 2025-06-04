@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
@@ -66,7 +67,6 @@ export default function CompanyCard({ data }) {
           </div>
           {/* Second row */}
           <div className='flex items-center mt-12'>
-// Temp comment
             {/* Linkedin */}
             <div className='w-1/3 flex items-center'>
               <img

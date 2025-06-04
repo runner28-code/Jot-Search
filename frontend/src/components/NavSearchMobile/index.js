@@ -19,7 +19,6 @@ import AuthService from '../../services/auth';
 import {
   defaultJobFilterState,
   buildSearchFilters,
-// Temp comment
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
 
@@ -42,7 +41,6 @@ export default function NavSearchMobile({ placeholder }) {
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
-      return { filtersArr: searchFilters };
     }
     else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});

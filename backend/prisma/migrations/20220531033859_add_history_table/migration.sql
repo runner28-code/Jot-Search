@@ -1,3 +1,3 @@
 -- CreateTable
 CREATE TABLE "History" (
-    "table" TEXT NOT NULL,
+    "id" TEXT NOT NULL,

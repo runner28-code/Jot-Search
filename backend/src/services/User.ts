@@ -292,3 +292,4 @@ export const getCompanyDashboardStats = async (days: number) => {
 
     const currentPeriodCommonQuery = {
       createdAt: {
+        gte: moment().subtract(days - 1, 'days').startOf('day').toDate(),

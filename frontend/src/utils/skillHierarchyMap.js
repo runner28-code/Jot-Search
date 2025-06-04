@@ -173,7 +173,6 @@ export const skills = [
   'Digital Advertising',
   'Digital Media',
   'Digital Strategy',
-// Temp comment
   'Direct Sales',
   'Distribution',
   'Django',
@@ -183,3 +182,4 @@ export const skills = [
   'Dynamics NAV',
   'E-Commerce',
   'Economic Development',
+  'Editing',

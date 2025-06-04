@@ -31,6 +31,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     setFilterState({
       ...filterState,
       [name]: value,
+// Temp comment
     });
   }
 
@@ -49,7 +50,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   }
   return (
     <div className={containerStyles}>
-// Temp comment
       <h5 className='text-md text-white font-roboto text-center mt-8 mb-8'>
         {`Search from ${totalJobs} Opportunities from ${totalCompanies} Companies near Tulsa, OK`}
       </h5>

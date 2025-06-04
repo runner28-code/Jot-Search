@@ -75,7 +75,6 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
       <input
         type='checkbox'
         name={`${name}-${attribute}`}
-// Temp comment
         id={`${name}-${attribute}`}
         className='h-8 w-8 ml-2'
         checked={optionValue === true || optionValue === attribute}

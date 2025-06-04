@@ -51,7 +51,6 @@ export default function AddCompanyUser() {
         </div>
       </div>
       <div className={ containerStyles + 'bg-white mt-12'}>
-// Temp comment
         <h2 className={ titleStyles }>Step 2: Assign Company Contact(s)</h2>
         <label className='opacity-70 text-sm'>Company Name</label>
         <div className='relative'>
@@ -64,6 +63,7 @@ export default function AddCompanyUser() {
             className='placeholder-textBlack text-md bg-lightGrey w-full remove-outline rounded-xl border border-solid border-2 border-netural-400 px-4 py-4 mt-2' />
           <img
             src={Search}
+// Temp comment
             alt='search icon'
             className='absolute right-6 top-6 h-10 w-10 vw-900:h-12 vw-900:w-12'
           />

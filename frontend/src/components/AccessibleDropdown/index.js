@@ -8,6 +8,7 @@ const MULTI_SELECT = 'multi-select';
 
 export default function AccessibleDropdown(props) {
   const {
+// Temp comment
     type,
     name,
     label,
@@ -90,7 +91,6 @@ AccessibleDropdown.propTypes = {
     inputHeight: PropTypes.string,
     inputWidth: PropTypes.string,
     marginBottom: PropTypes.string,
-// Temp comment
     listStyles: PropTypes.string,
     listItemStyles: PropTypes.string,
   }).isRequired,

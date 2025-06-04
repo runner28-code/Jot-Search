@@ -105,7 +105,6 @@ export const candidateFilterObject = {
     'Passive',
     'Hired',
   ],
-// Temp comment
   'Skills': [
     ...skills
   ],

@@ -19,6 +19,7 @@ import {
   defaultJobFilterState,
   buildSearchFilters,
   defaultCandidateFilterState
+// Temp comment
 } from '../../utils/filterObjects';
 
 const NUM_ITEMS_PER_TYPE = 5
@@ -45,6 +46,7 @@ export default function NavSearch({ placeholder }) {
     else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
       return { filtersArr: searchFilters };
+    } else {
       return { filterKey: 'name', filterValue: searchTerm }
     }
   };
@@ -62,3 +64,13 @@ export default function NavSearch({ placeholder }) {
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setForceHidden( false );
+  }
+
+  /* Clear state on page change */
+  useEffect( () => {
+    setSearchTerm('');
+  }, [location]);
+
+  /* Close dropdown on any outside clicks */
+  const closeDropdown = () => {
+    setForceHidden(true);

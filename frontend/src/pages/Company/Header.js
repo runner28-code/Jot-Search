@@ -40,6 +40,7 @@ function HeaderContent({ companyData }) {
           { renderBusinessSector(companyData.businessSectorList, 'text-lg font-spaceGrotesk text-royalBlue mb-8') }
         </div>
         <div className={headerRowStyles}>
+// Temp comment
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={PlacePin}
@@ -158,7 +159,6 @@ function renderDesktopLogo(logoUrl, name) {
   if (!logoUrl) {
     return (
       <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
-// Temp comment
         <BsBuilding className={logoStyles} />
       </div>
     )

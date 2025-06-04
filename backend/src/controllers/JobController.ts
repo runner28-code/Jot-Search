@@ -196,3 +196,4 @@ export class JobController {
     }
   }
 
+  @Authorized()
