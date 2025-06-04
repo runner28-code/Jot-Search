@@ -78,7 +78,6 @@ export class UserController {
       return {
         result,
         error,
-      };
     } else {
       return {
         result: false,
@@ -111,3 +110,4 @@ export class UserController {
         error: `Invalid role specified: ${user.role}`,
       };
     }
+

@@ -141,3 +141,8 @@ export default function Apply() {
 
     const response = await applyToJob(jobId, formattedObject.id);
     return response
+  }
+
+  function handleInputChange(e) {
+    const { name, value } = e.target;
+    setApplicationObject({ ...applicationObject, [name]: value });

@@ -6,6 +6,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function JoinTalentNetwork() {
 
   const { width } = useWindowDimensions();
+
   if( width <= 990 ) {
     return (<>
       {/* Join Hero and call-to-action */}

@@ -20,7 +20,6 @@ export class CategoryController {
   ): Promise<CategoryByIdResponse> {
     try {
       const _filters = [
-        {
           key: "id",
           value: id,
         },
@@ -28,3 +27,4 @@ export class CategoryController {
 
       const category = await getCategoriesByFilter(_filters, undefined, 1);
 
+      return {

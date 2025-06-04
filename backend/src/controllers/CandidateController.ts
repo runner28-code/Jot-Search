@@ -178,7 +178,6 @@ export class CandidateController {
         });
         candidatesPromise = Promise.all([tppUserPromise, candidateOnlyPromise]).then(([tppUsers, candidates]) => {
           // combine the two arrays
-          const typedUsers = tppUsers.map((user: any) => ({
             ...user,
             type: "user"
           }))
@@ -194,3 +193,5 @@ export class CandidateController {
         const { status, firstName, ...whereWithoutStatus } = where
         whereWithoutStatus.candidateId = undefined;
         if (firstName) {
+          whereWithoutStatus.firstname = firstName
+        }

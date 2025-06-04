@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import Home from '../../../assets/icons/home.svg';
-// Temp comment
 import AdvancedSearch from '../../../features/AdvancedSearch';
 import CareerFavorite from '../../../components/CareerFavorite';
 import CompanyFavorite from '../../../components/CompanyFavorite';
 import PendingApplications from '../../../components/PendingApplications';
 import InvitationsToApply from '../../../components/InvitationsToApply';
+// Temp comment
 
 export default function CandidateDashboard() {
   const headerStyles = 'font-spaceGrotesk font-bold text-h1 text-royalBlue ';

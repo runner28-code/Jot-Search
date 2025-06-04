@@ -15,7 +15,6 @@ export default function PendingApplications () {
     jobs: [],
     filteredJobs: [],
     loading: true
-// Temp comment
   });
 
   useEffect( async () => {

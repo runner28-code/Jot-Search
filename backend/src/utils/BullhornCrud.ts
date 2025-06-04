@@ -151,3 +151,5 @@ export const saveBullhornJobs = async (jobs: any[]) => {
 
 export const saveClientContacts = async (contacts: any[]) => {
   const expludeFields = ["address", "location", "_score"];
+  try {
+    for (const contact of contacts) {

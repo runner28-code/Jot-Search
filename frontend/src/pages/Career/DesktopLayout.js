@@ -106,9 +106,11 @@ export default function DesktopLayout(props) {
           <div className='flex flex-col space-y-8'>
             <UpdateJobStatus job={careerData} />
             {careerData.datasource === 'bullhorn' && <UpdateJobFeatured job={careerData} />}
+          </div>
         )
       }
     </section>
+// Temp comment
     {renderDescription(role, navigate, careerData.clientCorporation, skillList, careerData)}
     <OtherCareers
       companyId={careerData.companyId}

@@ -72,6 +72,7 @@ const DesktopNavBarLayout = () => {
       </div>
     </nav>
   )
+}
 
 const DropdownMenu = () => {
   const [ isOpen, setIsOpen ] = useState(false);
@@ -89,44 +90,3 @@ const DropdownMenu = () => {
 
   const closeDropdown = () => {
     setIsOpen(false);
-  }
-
-  useEffect(() => {
-    listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
-  }, [closeDropdown]);
-
-  const handleClick = () => {
-    setIsOpen(isOpen => !isOpen);
-    if ( firstRender ) {
-      setFirstRender(false);
-    }
-  }
-
-  let chevronStyles = 'h-5 w-7 mx-8 ';
-  if ( isOpen ) {
-    chevronStyles += 'animate-spin';
-  } else if ( !firstRender && !isOpen ) {
-    chevronStyles += 'animate-spin-reverse';
-  }
-  return (
-    <div
-      className='relative'
-      ref={menuRef}
-    >
-      <div
-        className='flex items-center bg-royalBlue-bg rounded-md cursor-pointer bg-sky-100 pr-3 pl-5 py-4 rounded-lg'
-        onClick={handleClick}
-      >
-        <span className='text-sm text-royalBlue'>{ firstname }</span>
-        <img
-          src={chevronDownBlue}
-          alt='chevron'
-          className={chevronStyles}
-        />
-      </div>
-      <DropdownContent
-        isOpen={isOpen}
-        handleClick={closeDropdown}
-      />
-    </div>
-  )

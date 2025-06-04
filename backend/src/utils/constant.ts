@@ -229,3 +229,6 @@ const job_filter_exclude_keys = [
   "library",
   "license",
   "life enrichment",
+  "life science",
+  "life sciences",
+  "lifeguard",

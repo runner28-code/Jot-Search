@@ -45,3 +45,4 @@ export const saveCandidate = async (
         },
       });
     }
+    return {

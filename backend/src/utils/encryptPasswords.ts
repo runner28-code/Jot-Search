@@ -22,3 +22,4 @@ import { DATASET_MAIN, Tables } from "../types/Common";
         const [job] = await BigQueryService.getClient().createQueryJob(options);
         const [users] = await job.getQueryResults();
 
+        if (users && users.length ) {

@@ -27,3 +27,4 @@ CREATE TABLE "ClientContact" (
     "description" TEXT,
     "desiredCategories" TEXT,
     "desiredSkills" TEXT,
+    "desiredSpecialties" TEXT,

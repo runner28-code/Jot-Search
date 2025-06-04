@@ -15,6 +15,7 @@ import {
   candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
+// Temp comment
   defaultCandidateFilterState,
   buildSearchFilters
 } from '../../utils/filterObjects';
@@ -65,7 +66,6 @@ export default function AdvancedSearch({ disabledTabs }) {
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,
-// Temp comment
         firstname: filterObject.title
       }
       delete modifiedFilterObject.title;

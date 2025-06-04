@@ -187,7 +187,6 @@ export class JobController {
         jobs: extendedJobs,
         total,
         message: null,
-      };
     } catch (error) {
       console.error(error);
       return {
@@ -197,3 +196,6 @@ export class JobController {
   }
 
   @Authorized()
+  // TODO: Extract all of these query/filter logic into its own service
+  async getJobsByFilterFromMain(
+    filters: AdvancedFilterOption[] = [],

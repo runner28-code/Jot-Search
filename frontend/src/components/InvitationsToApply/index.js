@@ -19,6 +19,7 @@ export default function InvitationsToApply () {
       return {
         ...job,
         agoDate: job.appliedDate
+      }});
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       loading: false
@@ -40,7 +41,6 @@ export default function InvitationsToApply () {
               <LoadingSpinner />
               : appliedJobsObject.jobs.slice(0, 2).map((career, index) => {
                 return(<>
-                  <CareerCard
                     key={career.id}
                     index={index}
                     data={career}

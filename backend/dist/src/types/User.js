@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.USER_TABLE = exports.USERKEYS = exports.IUSER = void 0;
+exports.IUSER = {
     id: "",
     externalId: "",
     firstname: "",
@@ -12,7 +13,6 @@ exports.USER_TABLE = exports.USERKEYS = exports.IUSER = void 0;
     address1: "",
     address2: "",
     city: "",
-    state: "",
     zip: "",
     resume: "",
     avatar: "",

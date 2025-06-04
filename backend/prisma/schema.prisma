@@ -23,6 +23,7 @@ model Application {
 model Category {
   id          Int       @id @default(autoincrement())
   name        String    @unique
+  dateAdded   DateTime?
   description String?
   enabled     Boolean   @default(true)
   externalID  Int?      @unique
@@ -347,3 +348,7 @@ model CandidateJobInvites {
   candidateId String
   candidate   Candidate @relation(fields: [candidateId], references: [id])
   
+  jobId       String
+  job         Job       @relation(fields: [jobId], references: [id])
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt

@@ -1,4 +1,5 @@
 import { useState, useContext } from 'react';
+// Temp comment
 import { CategoryContext } from '../../../services/CategoryContext';
 import PropTypes from 'prop-types';
 import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
@@ -39,7 +40,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     resume: candidateData?.resume || '',
   });
 
-// Temp comment
   function handleChange(name, value) {
     setFormData({
       ...formData,

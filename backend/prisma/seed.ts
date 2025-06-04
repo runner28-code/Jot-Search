@@ -105,3 +105,4 @@ async function seedCategories() {
     data: [
       {
         name: "Finance",
+        enabled: true,

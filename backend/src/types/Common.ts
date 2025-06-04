@@ -64,3 +64,4 @@ type CountFilterResponse = {
 };
 
 // Job Types
+export type Job = BullhornJob | GetroJob;

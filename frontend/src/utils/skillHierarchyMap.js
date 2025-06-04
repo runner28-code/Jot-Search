@@ -71,6 +71,7 @@ export const skills = [
   '.NET',
   'Account Management',
   'Account Reconciliation',
+// Temp comment
   'Accounting',
   'Accounts Payable',
   'Accounts Receivable',
@@ -138,6 +139,7 @@ export const skills = [
   'Containers',
   'Content Development',
   'Content Management',
+  'Contract Management',
   'Contract Negotiation',
   'Coordination',
   'Copy Editing',
@@ -182,3 +184,5 @@ export const skills = [
   'E-Commerce',
   'Economic Development',
   'Editing',
+  'EdTech',
+  'Education',

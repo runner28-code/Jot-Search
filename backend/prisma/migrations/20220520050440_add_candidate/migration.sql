@@ -24,6 +24,7 @@ CREATE TABLE "Candidate" (
     "educationDegree" TEXT,
     "email" TEXT,
     "email2" TEXT,
+    "email3" TEXT,
     "employeeType" TEXT,
     "employeePreference" TEXT,
     "ethnicity" TEXT,
@@ -45,3 +46,4 @@ CREATE TABLE "Candidate" (
     "leads" TEXT,
     "maritalStatus" TEXT,
     "massMailOptOut" TEXT,
+    "middleName" TEXT,

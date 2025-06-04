@@ -34,7 +34,6 @@ export const UpdateJobFeatured = ({ job }) => {
             const { result } = await saveJob({ featured: !toggled, id: job.id })
 
             // TODO: Replace with react-query refetch
-// Temp comment
             if(result) {
               window.location.reload()
             }
@@ -48,7 +47,6 @@ export const UpdateJobFeatured = ({ job }) => {
       
         <label 
           htmlFor='featured' 
-          className='text-lg font-spaceGrotesk'>
           inTulsa Featured
         </label>
       </div>

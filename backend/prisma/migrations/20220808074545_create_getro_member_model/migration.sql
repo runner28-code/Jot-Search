@@ -32,3 +32,4 @@ CREATE TABLE "UserTalentCollection" (
 );
 
 -- CreateTable
+CREATE TABLE "GetroMember" (

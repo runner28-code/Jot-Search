@@ -52,7 +52,6 @@ export class BullhornService {
           this.refresh_token &&
           this.BhRestToken &&
           this.restUrl
-        )
           return true;
       }
     }
@@ -461,3 +460,8 @@ export class BullhornService {
         console.log("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         const res = await saveBullhornJobs([job]);
         if (res === -1) {
+          return;
+        }
+      }
+    }
+  }

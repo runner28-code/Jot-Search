@@ -154,3 +154,4 @@ export type ClientContact = {
     leads?: string;
     middleName?: string;
     mobile?: string;
+    name?: string;

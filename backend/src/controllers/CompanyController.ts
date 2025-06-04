@@ -150,7 +150,6 @@ export class CompanyController {
 
   async getCompanyByIdFromGetro(id: string): Promise<any> {
     try {
-      const company = await db.getroCompany.findFirst({
         where: {
           id: id,
         },
@@ -165,3 +164,5 @@ export class CompanyController {
     }
   }
 
+  @Authorized()
+  @Post("/sendCandidates")

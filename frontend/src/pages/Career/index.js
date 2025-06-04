@@ -65,6 +65,7 @@ export default function CareerPage() {
     <div 
       className={ width <= 990 ? containerStyles
         : loggedIn ? containerStyles 
+          : containerStyles + ' px-[15%]'}
     >
       { renderNotification(activeData, careerData) }
       {
@@ -86,7 +87,6 @@ CareerPage.propTypes = {
 function renderNotification(activeData, careerData) {
   if( activeData ) {
     return (<>
-      <Notification
         title='Need to update this posting?'
         content='Please contact your inTulsa coordinator to provide status updates or if you notive anything incorrect.'
         text='Write to talentnetwork@intulsa.com'

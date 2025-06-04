@@ -36,6 +36,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   })
 
   const [editMode, setEditMode] = useState(false);
+
   const [referralChoice, setReferralChoice] = useState(false);
 
   function handleInputChange(e) {
@@ -62,3 +63,10 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
       });
     }
     handleChange(name, value);
+  }
+
+  function handleCommunityChoice(name, value) {
+    setFormData({
+      referredBy: value
+    })
+    setReferralChoice(false);

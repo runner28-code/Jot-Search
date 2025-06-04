@@ -17,7 +17,6 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
       throw error;
   }
 };
-
 export const sendVerification = async (to: string, name: string) => {
   try {
     const base_url = config.frontendUrl || 'http://localhost:3000';
@@ -51,6 +50,8 @@ export const sendResetPassword = async (to: string, name: string, token: string)
 }
 
 export const sendCandidatesToEmployers = async (candidates: string[], employers_emails: string[]) => {
+  try {
     await sendEmail(employers_emails, 'List of candidates', 'list-of-candidates', {
       candidates: candidates,
     });
+    return true;
