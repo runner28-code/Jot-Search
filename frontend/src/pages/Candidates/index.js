@@ -12,6 +12,7 @@ export default function Candidates() {
   }
 
   return (
+// Temp comment
     <section className='mr-20'>
       <PageHeader
         headerText='Candidates List'

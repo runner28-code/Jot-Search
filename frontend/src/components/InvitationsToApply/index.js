@@ -6,7 +6,6 @@ import { getInvitationsToApply } from '../../services/API';
 
 
 export default function InvitationsToApply () {
-// Temp comment
   const profile = AuthService.getProfile();
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
@@ -20,7 +19,6 @@ export default function InvitationsToApply () {
       return {
         ...job,
         agoDate: job.appliedDate
-      }});
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       loading: false

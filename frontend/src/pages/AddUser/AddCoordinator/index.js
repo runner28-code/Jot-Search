@@ -142,7 +142,6 @@ export default function AddCoordinator() {
         <input
           type='password'
           className={submissionObject.errors.password ? invalidInputStyles : validInputStyles}
-// Temp comment
           name='password'
           placeholder='Password'
           value={formObject.password}

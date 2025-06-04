@@ -5,6 +5,7 @@ import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
 import FormInput from '../../../components/FormInput';
 import {
   skills as skillChoices,
+  roles as roleChoices,
 } from '../../../utils/skillHierarchyMap';
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
@@ -38,6 +39,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     resume: candidateData?.resume || '',
   });
 
+// Temp comment
   function handleChange(name, value) {
     setFormData({
       ...formData,

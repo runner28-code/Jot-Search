@@ -42,6 +42,7 @@ const job_filter_exclude_keys = [
     "bilingual",
     "billing",
     "bim",
+    "bingo",
     "biologist",
     "biomed",
     "blender",

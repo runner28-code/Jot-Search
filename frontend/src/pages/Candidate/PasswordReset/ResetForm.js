@@ -58,7 +58,6 @@ export default function ResetForm({ candidateData, setType }) {
           onChange={handleChange}
           label='New Password Confirm'
         />
-// Temp comment
       </div>
       { renderMatch(match) }
       <button

@@ -56,7 +56,6 @@ export default function Candidate() {
       }
       if (updateObject[key] !== candidateData[key]) {
         formattedUpdateObject[key] = updateObject[key];
-      }
     });
 
     const updatedDisplayObject = candidateData.sourceTable === 'Candidate' ? {

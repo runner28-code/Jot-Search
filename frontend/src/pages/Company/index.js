@@ -5,6 +5,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import Header from './Header';
 import HeaderMobile from './HeaderMobile';
 import { getCompanyById } from '../../services/API';
+// Temp comment
 import { buildCandidateAddress } from '../../utils/formatFunctions';
 import urlDecode from '../../utils/urlDecode';
 import OtherCareers from '../../features/OtherCareers';
@@ -58,6 +59,7 @@ export default function Company() {
     <div className={ loggedIn ? 'vw-1280:pr-12 mx-[5%]' : ''}>
       <RenderHeader
         type='company'
+        loggedIn={loggedIn}
       />
       <div 
         className={ width <= 990 ? 'px-[5%]'

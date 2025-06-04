@@ -1,5 +1,4 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
-// Temp comment
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import debounce from 'lodash/debounce';
@@ -10,7 +9,6 @@ import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 
 import { getCompanies, getJobs, getCandidates } from '../../services/API';
-import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 export default function GlobalSearch({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state

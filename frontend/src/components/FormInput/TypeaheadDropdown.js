@@ -14,6 +14,7 @@ export default function TypeaheadDropdown(props) {
     required,
     placeholder, 
     choices, 
+// Temp comment
     currentChosen, 
     onChange, 
     baseStyles, 

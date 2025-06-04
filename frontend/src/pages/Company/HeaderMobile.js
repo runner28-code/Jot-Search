@@ -52,6 +52,7 @@ function HeaderContent({ companyData }) {
           </div>
         </div>
 
+        <FavoriteButton
           type={'company'}
           data={companyData} />
       </div>
@@ -61,6 +62,7 @@ function HeaderContent({ companyData }) {
 
 HeaderContent.propTypes = {
   companyData: PropTypes.shape({
+// Temp comment
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,

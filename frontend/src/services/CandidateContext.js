@@ -5,7 +5,6 @@ import AuthService from './auth';
 import { getCandidateById } from './API';
 
 const mockCandidateData = [
-  {
     id: 'cb4f35ed-db88-410f-beb0-a6a449135f75',
     firstName: 'Zach',
     lastName: 'Alvstad',
@@ -92,7 +91,6 @@ const mockCandidateData = [
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
-// Temp comment
     isLooking: false,
     isWarm: false,
   },

@@ -15,7 +15,6 @@ import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
 
 const PREFERENCE_ITEMS = {
-// Temp comment
   workAuthorized: 'Are you legally authorized to work in the US on a fulltime basis for any employer?',
 }
 
@@ -37,7 +36,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   })
 
   const [editMode, setEditMode] = useState(false);
-
   const [referralChoice, setReferralChoice] = useState(false);
 
   function handleInputChange(e) {

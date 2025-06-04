@@ -38,7 +38,6 @@ export default function RegistrationForm() {
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
   const [submissionObject, setSubmissionObject] = useState({
-// Temp comment
     loading: false,
     success: false,
   });

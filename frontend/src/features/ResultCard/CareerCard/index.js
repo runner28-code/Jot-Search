@@ -84,7 +84,6 @@ function DesktopCard({ dataObj, active }) {
       to={`${ROUTES.careers}/${data.id}`}
       className='w-full flex mb-10 px-16 pt-16 pb-14 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
       tabIndex='0'
-      state={ active ? true : false }
     >
       {/* Card Image */}
       <div className='flex flex-col'>
@@ -136,7 +135,6 @@ function DesktopCard({ dataObj, active }) {
           {/* Salary */}
           <div className='w-1/3 flex items-center pr-4'>
             <img
-// Temp comment
               src={salaryIcon}
               className='h-11 mr-5' />
             <p className='text-textBlack'>{salaryString}</p>
