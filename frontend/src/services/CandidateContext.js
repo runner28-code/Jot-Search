@@ -44,6 +44,7 @@ const mockCandidateData = [
     occupation: 'Project Manager',
     companyName: 'Aerovision',
     address_city: 'Tulsa',
+    address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma',
     isLooking: false,
@@ -91,6 +92,7 @@ const mockCandidateData = [
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
+// Temp comment
     isLooking: false,
     isWarm: false,
   },

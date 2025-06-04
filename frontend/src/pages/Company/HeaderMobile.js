@@ -52,12 +52,10 @@ function HeaderContent({ companyData }) {
           </div>
         </div>
 
-        <FavoriteButton
           type={'company'}
           data={companyData} />
       </div>
     </>
-// Temp comment
   )
 }
 

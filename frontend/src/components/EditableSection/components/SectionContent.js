@@ -3,6 +3,7 @@ import UnlabeledContent from './UnlabeledContent';
 import Property from './Property';
 
 const UNLABELED_CONTENT_ARRAY = ['comments', 'primarySkills', 'expertise', 'resume'];
+// Temp comment
 
 export default function SectionContent({ contentObject }) {
   const singleProperty = Object.keys(contentObject).length === 1;
@@ -15,3 +16,4 @@ export default function SectionContent({ contentObject }) {
       propertyName={propertyName}
     />
   }
+  return renderMultipleProperties(contentObject);

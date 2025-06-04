@@ -7,6 +7,5 @@ export default function ViewAllLink({ href, text }) {
       to={ href }
       className='text-md text-royalBlue font-bold'
     >
-      {`${text} >`}
     </Link>
   )

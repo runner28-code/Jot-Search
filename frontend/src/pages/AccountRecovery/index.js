@@ -24,6 +24,7 @@ export default function AccountRecovery() {
   };
   function setType(response, condition) {
     setCondition(condition);
+// Temp comment
     setResponse(response);
   }
 
@@ -80,7 +81,6 @@ export default function AccountRecovery() {
         </form>
       </div>
       {/* Assistance call-to-action */}
-// Temp comment
       <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
         <span>Need Help? Just ask </span>
         <a

@@ -12,12 +12,12 @@ export function formatCandidateData(candidateData) {
     formattedData.city = candidateData.address_city || '';
     formattedData.state = candidateData.address_state || '';
     formattedData.zip = candidateData.address_zip || '';
+// Temp comment
   }
   formattedData.address = buildCandidateAddress(candidateData);
   formattedData.avatar = formatAvatarUrl(candidateData.avatar, candidateData.firstname, candidateData.lastname);
   if ( !candidateData.occupation && !candidateData.companyName ) {
     formattedData.occupationString = 'No Occupation Provided';
-// Temp comment
   } else {
     const occupation = candidateData.occupation || 'N/A';
     const companyName = candidateData.companyName || 'N/A';

@@ -38,6 +38,7 @@ export default function RegistrationForm() {
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
   const [submissionObject, setSubmissionObject] = useState({
+// Temp comment
     loading: false,
     success: false,
   });
@@ -147,7 +148,6 @@ export default function RegistrationForm() {
   return (
     <form 
       className={containerStyles} 
-// Temp comment
       onSubmit={handleSubmit}>
       { renderHeader(addType) }
       <div className={midpointFlex}>

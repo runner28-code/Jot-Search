@@ -11,3 +11,4 @@ export default function Property({name, value}) {
       </p>
       <span className='ml-4'>{value}</span>
     </div>
+  )

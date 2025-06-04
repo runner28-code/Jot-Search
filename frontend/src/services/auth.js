@@ -54,7 +54,6 @@ class AuthService {
     return email;
   }
 
-// Temp comment
   logout() {
     this.clearStorage();
     window.location.assign('/landing-page');
@@ -120,6 +119,7 @@ class AuthService {
   }
 
   getSavedCompanyIDs() {
+// Temp comment
     return JSON.parse(localStorage.getItem('savedCompanies')) || [];
   }
 

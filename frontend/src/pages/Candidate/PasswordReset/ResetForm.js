@@ -8,6 +8,7 @@ export default function ResetForm({ candidateData, setType }) {
   const [formData, setFormData] = useState({
     id: candidateData.id,
     password: '',
+    passwordConfirm: '',
   });
   const [match, setMatch] = useState('');
 
@@ -57,6 +58,7 @@ export default function ResetForm({ candidateData, setType }) {
           onChange={handleChange}
           label='New Password Confirm'
         />
+// Temp comment
       </div>
       { renderMatch(match) }
       <button

@@ -39,6 +39,7 @@ export default function Company() {
   // Format data
   companyData.name = urlDecode(companyData.name);
   if ( companyData.name.includes('(mc)') ) { // Remove (mc) from companyData.name if exists
+    companyData.name = companyData.name.toString().replace(' (mc)', '');
   }
   if ( companyData.businessSectorList && companyData.businessSectorList.length > 0 ) {
     companyData.businessSectorList = companyData.businessSectorList.toString().replace(',', ', '); // Add space after commas
@@ -57,7 +58,6 @@ export default function Company() {
     <div className={ loggedIn ? 'vw-1280:pr-12 mx-[5%]' : ''}>
       <RenderHeader
         type='company'
-        loggedIn={loggedIn}
       />
       <div 
         className={ width <= 990 ? 'px-[5%]'

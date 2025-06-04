@@ -311,7 +311,6 @@ function NavFooterMobile() {
           src={inTulsaFooter}
           className='h-auto mb-12 w-4/6'
         />
-// Temp comment
       </div>
       <div className='flex flex-col basis-6/12'>
         <Link

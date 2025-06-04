@@ -9,7 +9,6 @@ const ITEMS_PER_PAGE = 10;
 export default function FeaturedCompanies() {
 
   const filtersArr = [
-    {
       key: 'status',
       value: 'active'
     }
@@ -23,6 +22,7 @@ export default function FeaturedCompanies() {
       <h2 className='text-h4 font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
       <div className='flex flex-wrap mt-8'>
         {
+          isLoading ?
             <LoadingSpinner />
             :
             companies.map((company, index) =>
