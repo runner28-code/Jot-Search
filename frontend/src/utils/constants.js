@@ -29,7 +29,6 @@ export const stateCodeMap = {
   Hawaii: 'HI',
   Idaho: 'ID',
   Illinois: 'IL',
-  Indiana: 'IN',
   Iowa: 'IA',
   Kansas: 'KS',
   Kentucky: 'KY',

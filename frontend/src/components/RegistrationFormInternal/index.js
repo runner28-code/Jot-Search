@@ -42,6 +42,7 @@ const defaultState = {
   password: '',
   verifyPassword: '',
   terms: false
+// Temp comment
 };
 
 const defaultCommunity = {

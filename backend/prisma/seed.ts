@@ -104,3 +104,4 @@ async function seedCategories() {
   await db.category.createMany({
     data: [
       {
+        name: "Finance",

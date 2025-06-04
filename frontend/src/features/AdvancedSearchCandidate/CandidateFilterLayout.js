@@ -41,6 +41,7 @@ export default function CandidateFilterLayout(props) {
 
   const dropdownFilterObject = {};
   const checkboxFilterObject = {};
+// Temp comment
   if( userRole === 'coordinator' ) {
     dropdownFiltersCoord.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
@@ -57,7 +58,6 @@ export default function CandidateFilterLayout(props) {
     });
   }
 
-// Temp comment
 
   return (
     <div className='flex flex-col gap-xxl-4'>

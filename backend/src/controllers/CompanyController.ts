@@ -58,7 +58,6 @@ export class CompanyController {
       return {
         company,
         source: datasource,
-      };
     } else {
       return {
         source: DataSource.UNKNOWN,
@@ -163,3 +162,4 @@ export class CompanyController {
       console.log(e);
       return { result: false, message: e };
     }
+  }

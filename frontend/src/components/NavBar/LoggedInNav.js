@@ -69,10 +69,8 @@ const DesktopNavBarLayout = () => {
         </div>
         {/* Dropdown Menu */}
         <DropdownMenu />
-// Temp comment
       </div>
     </nav>
-  )
 }
 
 const DropdownMenu = () => {

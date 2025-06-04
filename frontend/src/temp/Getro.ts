@@ -35,3 +35,4 @@ export type Job = {
     compensation_min?: string;
     compensation_period?: string;
     compensation_public?: string;
+    description?: string;

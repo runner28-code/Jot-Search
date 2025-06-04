@@ -7,6 +7,7 @@ export default function AddCoordinator() {
   const [formObject, setFormObject] = useState(defaultState);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
+// Temp comment
     success: false,
     errors: {},
   });

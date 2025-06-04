@@ -93,6 +93,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           </label>
           <input 
             type='text'
+            onChange={handleInputChange}
             id='occupation' 
             name='occupation' 
             value={formData.occupation}

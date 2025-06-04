@@ -74,6 +74,7 @@ export default function AdvancedSearch({ disabledTabs }) {
 
     } else if (tab === 'careers') {
       const searchFilters = buildSearchFilters(filterObject);
+      return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
     }

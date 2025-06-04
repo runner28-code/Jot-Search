@@ -33,8 +33,8 @@ export default function FormInput(props) {
   const stylesObject = {
     baseStyles: componentStyles,
     inputHeight: inputHeight,
-// Temp comment
     inputWidth: 'w-full',
+// Temp comment
     listStyles: dropdownStyles,
     listItemStyles: dropdownItemStyles
   };

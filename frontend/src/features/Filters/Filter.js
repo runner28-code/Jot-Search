@@ -26,6 +26,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
     setSelected(choice);
     handleFilterChange(filterType, choice);
   }
+// Temp comment
 
   useEffect(() => {
     const value = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
@@ -64,7 +65,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
         />
 
       </div>
-// Temp comment
       { renderDropdown( showDropdown, choices, handleChoiceClick ) }
     </div>
   )

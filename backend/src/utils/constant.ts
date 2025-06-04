@@ -228,3 +228,4 @@ const job_filter_exclude_keys = [
   "librarian",
   "library",
   "license",
+  "life enrichment",

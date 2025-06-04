@@ -9,7 +9,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
-import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding } from 'react-icons/bs';
 
 function HeaderContent({ companyData }) {
@@ -93,6 +92,7 @@ HeaderMobile.propTypes = {
 }
 
 function renderCompanyLogo(logoUrl, name) {
+  const { width } = useWindowDimensions();
   const logoStyles = 'my-auto object-cover h-full w-full';
   if( width >= 1280 ) {
     return null;

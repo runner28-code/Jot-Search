@@ -4,7 +4,6 @@ import {BsClipboardCheck} from 'react-icons/bs';
 import ResultContainer from '../../features/ResultContainer';
 import { getAppliedJobs } from '../../services/API';
 import AuthService from '../../services/auth';
-// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
@@ -74,6 +73,7 @@ export default function Applications() {
           results={appliedJobsObject.filteredJobs}
           loading={appliedJobsObject.loading}
           type='job'
+// Temp comment
           compact={true}
           agoText={'Applied'}
           selectableProps={{

@@ -19,6 +19,7 @@ export default function CandidateCard({ data, disableLink }) {
   const experienceString = formatYearsExperience(data.experienceYears, data.experience);
   const addressString = buildCandidateAddress(data);
   const expertiseString = data.expertise ? data.expertise : 'No expertise listed';
+// Temp comment
   const occupationString = buildOccupationString(data.occupation, data.companyName);
   const link = data.user ? `${ROUTES.candidates}/${data.user.id}` : `${ROUTES.candidates}/${data.id}`
 
@@ -42,7 +43,6 @@ export default function CandidateCard({ data, disableLink }) {
           <NewLeadLabel status={data.status} />
         </div>
         {/* Main Content */}
-// Temp comment
         <div className='relative grow'>
           {/* Name and Active Status */}
           <div className='flex gap-s items-center'>

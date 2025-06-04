@@ -10,7 +10,6 @@ export default function Candidates() {
   if (role === 'candidate') {
     return <Navigate to='/' />
   }
-
   return (
     <section className='mr-20'>
       <PageHeader

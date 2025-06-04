@@ -13,7 +13,6 @@ export default function TypeaheadDropdown(props) {
     label,
     required,
     placeholder, 
-// Temp comment
     choices, 
     currentChosen, 
     onChange, 
@@ -27,7 +26,6 @@ export default function TypeaheadDropdown(props) {
   const menuRef = useRef(null);
 
   const handleChoiceClick = useCallback((choice) => {
-    if (!currentChosen.includes(choice)) {
       onChange(name, [...currentChosen, choice]);
     } else {
       onChange(name, currentChosen.filter(item => item !== choice));

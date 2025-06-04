@@ -22,7 +22,6 @@ export const createJob = async (job: Job) => {
         datasource: sanitizedJob?.datasource as any,
       },
     });
-
     return {
       result: true,
       data: newJob,
@@ -55,6 +54,7 @@ const sanitizeJob = (job: Job): Job => {
 };
 
 export const getAppliedJobsByUser = async (userId: string) => {
+  try {
     const jobs = await db.job.findMany({
       where: {
         applications: {

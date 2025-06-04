@@ -6,13 +6,11 @@ export default function DesktopHeader(props) {
   const {
     headerText,
     icon,
-    IconComponent,
     classOverride,
     containerClassOverride,
     colorizeStroke,
     dataSource,
     backButton
-// Temp comment
   } = props;
   const navigate = useNavigate();
 

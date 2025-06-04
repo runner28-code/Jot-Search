@@ -13,6 +13,7 @@ export default function ResultContainer(props) {
     results,
     loading,
     type,
+    limit,
     header, 
     active,
     compact = false,
@@ -51,6 +52,7 @@ export default function ResultContainer(props) {
     <div className='w-full'>
       { renderHeader() }
       <div
+// Temp comment
         className={`${baseStyles} ${resultsContainerStyles}`}>
         { renderResults(results, loading, type, active, compact, isFavoriteOverride, agoText, selectableProps) }
       </div>

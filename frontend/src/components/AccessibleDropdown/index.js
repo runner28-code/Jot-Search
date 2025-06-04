@@ -58,6 +58,7 @@ export default function AccessibleDropdown(props) {
         <Menu>
           <ul 
             name={ name }
+            className={ listStyles }
           >
             { renderMenuItems(choices, choiceObject, currentChosen, name, stylesObject) }
           </ul>
@@ -89,6 +90,7 @@ AccessibleDropdown.propTypes = {
     inputHeight: PropTypes.string,
     inputWidth: PropTypes.string,
     marginBottom: PropTypes.string,
+// Temp comment
     listStyles: PropTypes.string,
     listItemStyles: PropTypes.string,
   }).isRequired,

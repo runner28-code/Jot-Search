@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
@@ -20,7 +19,6 @@ export default function PendingApplications () {
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
-// Temp comment
       return {
         ...job,
         agoDate: job.appliedDate
