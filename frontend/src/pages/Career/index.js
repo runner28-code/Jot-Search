@@ -87,6 +87,7 @@ CareerPage.propTypes = {
 function renderNotification(activeData, careerData) {
   if( activeData ) {
     return (<>
+      <Notification
         title='Need to update this posting?'
         content='Please contact your inTulsa coordinator to provide status updates or if you notive anything incorrect.'
         text='Write to talentnetwork@intulsa.com'
@@ -101,7 +102,6 @@ function renderNotification(activeData, careerData) {
         text='Notify Talent inTulsa by Email'
         email='talentnetwork@intulsa.com'
         company={careerData.clientCorporation}
-        id={careerData.title}
         add='filled'
       />
     </>)

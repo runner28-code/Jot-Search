@@ -13,4 +13,3 @@
 # jobs:
 #   # This workflow contains a single job called "build"
 #   docker-deploy:
-#     # The type of runner that the job will run on

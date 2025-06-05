@@ -8,7 +8,6 @@ exports.JobFilter = {
         skill: "skillList",
         city: "address_city",
         employmentType: "employmentType",
-        onSite: "onSite",
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
         status: "status",
@@ -16,6 +15,7 @@ exports.JobFilter = {
         companyId: "clientCorporationID",
     },
     main: {
+        id: "id",
         status: "status",
         skillList: "skillList",
         hidden: "hidden",

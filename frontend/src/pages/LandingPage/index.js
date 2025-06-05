@@ -38,6 +38,7 @@ export default function LandingPage() {
       </section>
       {/* Browse Opportunities by Expertise */}
       { renderExpertiseLinks() }
+// Temp comment
       { isMobile && <JoinTalentNetwork /> }
       {/* Featured Jobs */}
       <FeaturedJobs />
@@ -51,7 +52,6 @@ export default function LandingPage() {
 
 function renderSearch() {
   const { width } = useWindowDimensions();
-// Temp comment
   const { totalCompaniesCount, totalJobsCount, isLoading } = useGetLandingPageStats({});
 
   if( width <= 1024 ) {

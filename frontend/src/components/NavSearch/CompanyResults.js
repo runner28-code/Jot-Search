@@ -10,6 +10,7 @@ export default function CompanyResults({ companies }) {
   }
 
   return (
+    <>
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Companies</h6>
       { companies.map(company => {
         return (
@@ -17,6 +18,7 @@ export default function CompanyResults({ companies }) {
             company={company} 
             key={company.id} />
         )
+// Temp comment
       })}
       <hr className='w-full border-black50% mt-6 mb-2' />
     </>

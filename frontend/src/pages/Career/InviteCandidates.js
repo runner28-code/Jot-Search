@@ -26,7 +26,6 @@ export default function InviteCandidates({ job }) {
       value: candidate.id,
       candidate
     }
-  }) || [];
 
   const [selected, setSelected] = useState([]);
   const deleteItem = (e, value) => {

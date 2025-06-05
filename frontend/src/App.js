@@ -10,6 +10,7 @@ import {
   Company,
   Companies,
   AccountRecovery,
+  ResetPassword,
   Apply
 } from './pages';
 import { NavBar, Footer, SideNav } from './components';

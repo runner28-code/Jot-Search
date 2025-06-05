@@ -29,6 +29,7 @@ export default function Auth() {
         <Route
           path={ROUTES.profile}
           element={<Profile />} />
+        <Route
           path={ROUTES.logout}
           element={<Logout />} />
         <Route
@@ -36,7 +37,6 @@ export default function Auth() {
           element={<Candidate />} />
         <Route
           path={ROUTES.applications}
-          element={<Applications />} />
         <Route
           path={ROUTES.favorites}
           element={<Favorites />} />

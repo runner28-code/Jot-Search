@@ -101,7 +101,6 @@ const job_filter_exclude_keys = [
   "crew leader",
   "crime",
   "crisis",
-  "crossing guard",
   "culinary",
   "custodial",
   "custodian",

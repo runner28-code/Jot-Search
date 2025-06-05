@@ -76,6 +76,7 @@ export default function RegistrationForm() {
           return setSubmissionObject({
             loading: false,
             success: true,
+// Temp comment
           })
         } else {
           return navigate(ROUTES.login);
@@ -248,6 +249,7 @@ export default function RegistrationForm() {
             placeholder={`How did ${pronoun} hear about us?`} 
             value={formObj.referredBy}
             onChange={handleChange}
+            error={errors.includes('referredBy')}
           />
           {/* File input for resume */}
           <FormInput
