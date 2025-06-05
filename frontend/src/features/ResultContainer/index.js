@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import CandidateCard from '../ResultCard/CandidateCard';
 import CompactCareerCard from '../ResultCard/CompactCareerCard';
 import CareerCard from '../ResultCard/CareerCard';
@@ -14,7 +13,6 @@ export default function ResultContainer(props) {
     loading,
     type,
     limit,
-// Temp comment
     header, 
     active,
     compact = false,

@@ -30,3 +30,4 @@ CREATE TABLE "Lead" (
     "fax3" TEXT,
     "firstName" TEXT,
     "isAnonymized" BOOLEAN,
+    "isDayLightSavingsTime" BOOLEAN,

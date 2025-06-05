@@ -186,3 +186,4 @@ export const skills = [
   'EdTech',
   'Education',
   'Electrical Engineering',
+  'Employee Communications',

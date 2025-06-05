@@ -47,3 +47,4 @@ export type User = {
   disability?: string;
   occupation?: string;
 
+  employmentPreference?: string;

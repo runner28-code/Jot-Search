@@ -232,3 +232,5 @@ const job_filter_exclude_keys = [
   "life science",
   "life sciences",
   "lifeguard",
+  "lift operator",
+  "lighting",

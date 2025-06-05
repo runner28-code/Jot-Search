@@ -196,3 +196,5 @@ export class CandidateController {
         if (firstName) {
           whereWithoutStatus.firstname = firstName
         }
+        const categoryId = where.categoryId;
+        if (categoryId) {

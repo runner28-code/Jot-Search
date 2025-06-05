@@ -4,12 +4,12 @@ import sendgrid from '@sendgrid/mail';
 import config from '../config';
 
 export const sendEmail = async (to: string|string[], subject: string, template: string, data: any) => {
+  sendgrid.setApiKey(config.sendgridSecret || '');
   const from = config.mailSenderEmail || "donnie@aerovision.io";
   const html = await ejs.renderFile<string>(path.join(__dirname, `../templates/${template}.ejs`), data);
   let message = { from, to, subject, html };
   const msg = { ...message, text: 'iDENTIFY'};
 
-  try {
       await sendgrid.send(msg);
   } catch (error) {
       console.log(error);
@@ -55,3 +55,4 @@ export const sendCandidatesToEmployers = async (candidates: string[], employers_
       candidates: candidates,
     });
     return true;
+  } catch (error: any) {

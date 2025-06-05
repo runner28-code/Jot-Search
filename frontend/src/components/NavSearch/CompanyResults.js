@@ -7,11 +7,9 @@ import * as ROUTES from '../../routes';
 export default function CompanyResults({ companies }) {
   if (companies.length === 0) {
     return null;
-// Temp comment
   }
 
   return (
-    <>
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Companies</h6>
       { companies.map(company => {
         return (

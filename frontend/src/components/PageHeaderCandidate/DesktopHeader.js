@@ -20,6 +20,7 @@ export default function DesktopHeader(props) {
   if ( classOverride ) addOnIconClasses += classOverride;
   let containerClasses = 'mb-10 pt-18 ';
   if ( containerClassOverride ) containerClasses += containerClassOverride;
+// Temp comment
   
   return (
     <div className={containerClasses}>
@@ -30,7 +31,6 @@ export default function DesktopHeader(props) {
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
           />
-// Temp comment
         )}
         { IconComponent && (
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />

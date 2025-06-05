@@ -21,6 +21,7 @@ export const companies = '/companies';
 export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';
 export const savedCareers = '/saved-careers';
+export const savedCompanies = '/saved-companies';
 // Company Dashboard
 export const candidates = '/candidates';
 export const savedCandidates = '/saved-candidates';
@@ -43,3 +44,4 @@ export const careersInTulsa = 'https://www.careers.intulsa.com/';
 export const exploreCareers = 'https://www.careers.intulsa.com/?utm_source=talentwebsite&amp;utm_medium=web&amp;utm_campaign=footer';
 export const joinTalentNetwork = 'https://www.jobs.intulsa.com/talent-network?utm_source=talentwebsite&amp;utm_medium=web&amp;utm_campaign=footer';
 export const intulsa = 'https://www.intulsa.com';
+export const tulsaRemote = 'https://www.tulsaremote.com';

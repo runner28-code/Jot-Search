@@ -167,3 +167,5 @@ export class CompanyController {
 
   @Authorized()
   @Post("/sendCandidates")
+  async sendCandidates(
+    @CurrentUser() authUser: User,

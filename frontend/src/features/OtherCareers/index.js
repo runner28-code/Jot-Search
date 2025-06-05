@@ -47,7 +47,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
         })
         }
         {/* Only show Pagination if total is greater than the amount we render on a single page */}
-// Temp comment
         { total > ITEMS_PER_PAGE && <PaginatedControls /> }
       </>
     )}

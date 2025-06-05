@@ -466,3 +466,7 @@ export class BullhornService {
       }
     }
   }
+
+  async getClientContacts(
+    testMode = false,
+    count = 50,

@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import TypeaheadDropdown from '../FormInput/TypeaheadDropdown';
 
-// Temp comment
 const mockJobsData = [
   {
     id: '1ea36da6-8819-4617-8c09-5df46f1e4d07',

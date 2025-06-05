@@ -10,7 +10,6 @@ import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCo
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
-// Temp comment
 import {
   candidateFilterObject,
   jobFilterObject,
@@ -49,6 +48,7 @@ function useTabState(disabledTabs, userType, pathname) {
 
 export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const userType = AuthService.getUserRole();
+// Temp comment
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
   const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };

@@ -15,6 +15,7 @@ export const UpdateJobFeatured = ({ job }) => {
 
   const enabledToggleStyles = 'translate-x-12'
   const disabledToggleStyles = 'translate-x-0'
+// Temp comment
 
   const toggleStyles = toggled ? enabledToggleStyles : disabledToggleStyles
 
@@ -41,7 +42,6 @@ export const UpdateJobFeatured = ({ job }) => {
           <span className="sr-only">inTulsa Featured</span>
           <span 
             aria-hidden="true" 
-// Temp comment
             className={`${toggleStyles} pointer-events-none inline-block h-10 w-10 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out`}>
           </span>
         </button>

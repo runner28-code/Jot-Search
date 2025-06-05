@@ -39,7 +39,6 @@ export const saveCompanies = async (companies: any[]) => {
     "_score",
     "notes",
     "dateAdded",
-    "dateLastModified",
   ];
   try {
     for (const company of companies) {
@@ -153,3 +152,4 @@ export const saveClientContacts = async (contacts: any[]) => {
   const expludeFields = ["address", "location", "_score"];
   try {
     for (const contact of contacts) {
+      try {

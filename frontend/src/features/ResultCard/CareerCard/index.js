@@ -26,6 +26,7 @@ export default function CareerCard({ data, active }) {
     data,
     categoryString,
     addressString,
+// Temp comment
     salaryString,
     postingAge,
     role
@@ -140,6 +141,7 @@ function DesktopCard({ dataObj, active }) {
               className='h-11 mr-5' />
             <p className='text-textBlack'>{salaryString}</p>
           </div>
+        </div>
       </div>
     </Link>
   )

@@ -169,7 +169,6 @@ function NewLeadLabel({ status }) {
     return (
       <div className='flex items-center justify-center gap-xxs border border-grey300 rounded-md py-[3px] px-xs'>
         <span className='bg-error h-[6px] w-[6px] rounded-full'></span>
-// Temp comment
         <p className='text-grey700 text-sm font-semibold'>New Lead</p>
       </div>
     )

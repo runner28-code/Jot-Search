@@ -9,3 +9,4 @@ jobs:
 
     steps:
       # need checkout before using docker-compose-remote-action
+      - uses: actions/checkout@v2

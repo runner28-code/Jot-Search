@@ -11,6 +11,7 @@ const ITEMS_PER_PAGE = 4;
 export default function FeaturedJobs() {
   const { width } = useWindowDimensions();
 
+  const linkStyles = '';
   const linkStylesMobile = 'basis-full mb-8'
   const titleStyles = 'text-h4 font-semibold font-spaceGrotesk';
   const titleStylesMoible = 'text-h4 font-semibold font-spaceGrotesk text-center';
@@ -46,6 +47,7 @@ export default function FeaturedJobs() {
             jobs.map((career, index) => {
               const categoryString = career.category?.name.toUpperCase() || 'CATEGORY N/A';
               return(
+// Temp comment
                 <Link
                   to={`${ROUTES.careers}/${career.id}`}
                   key={index}

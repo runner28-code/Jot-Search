@@ -42,6 +42,7 @@ export type Operator = "AND" | "OR";
 export type FilterOption = {
   key: string;
   value: string;
+};
 
 export type AdvancedFilterOption = {
   key: string;
@@ -64,3 +65,4 @@ type CountFilterResponse = {
 
 // Job Types
 export type Job = BullhornJob | GetroJob;
+export type JobSearchByID = {

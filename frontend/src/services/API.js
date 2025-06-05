@@ -8,7 +8,6 @@ const API = axios.create({
   baseURL: 'https://intulsadev.com:5000',
   // baseURL: 'http://localhost:3001',
 });
-// Temp comment
 
 // Adds Bearer token to every request when it exists (i.e. user is logged in)
 API.interceptors.request.use(
@@ -98,6 +97,7 @@ export async function saveCandidate(userId, candidateId) {
   } else {
     AuthService.toggleSavedCandidate(candidateId, 'unsave');
   }
+// Temp comment
   return normalizeData(data);
 }
 
@@ -180,3 +180,15 @@ export async function saveCompany(candidateId, companyId) {
     AuthService.toggleSavedCompany(companyId, 'unsave');
   }
   return normalizeData(data);
+}
+
+export async function getSavedCompanies(id, count = null, page = null) {
+  const params = id ? { candidate: id } : {}; // If no id is passed, will default to logged in user
+  const { data } = await API.get(ROUTES.APIsavedCompanies, {
+    params: {
+      count,
+      page,
+      ...params
+    }
+  });
+  return normalizeData(data.companies);

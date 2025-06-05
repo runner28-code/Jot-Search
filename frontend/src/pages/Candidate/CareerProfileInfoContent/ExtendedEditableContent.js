@@ -16,7 +16,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   const isSourceUserTable = candidateData.sourceTable === 'User';
 
   const [formData, setFormData] = useState({
-    id: candidateData.id,
     avatar: candidateData.avatar || '',
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',

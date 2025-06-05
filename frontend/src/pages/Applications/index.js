@@ -74,7 +74,6 @@ export default function Applications() {
           loading={appliedJobsObject.loading}
           type='job'
           compact={true}
-          agoText={'Applied'}
           selectableProps={{
             selectable: true,
             selected: selectedApplications,

@@ -24,6 +24,7 @@ export class BigQueryService {
                 query = `
                     ${query}
                     WHERE ${condition}
+                `;
             }
             if (count) {
                 query = `
@@ -32,3 +33,4 @@ export class BigQueryService {
                 `;
             }
             const options = {
+                query: query,

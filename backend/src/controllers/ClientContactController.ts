@@ -26,3 +26,4 @@ export class ClientContactController {
       });
 
       return {
+        contact: clearPassword(contact),

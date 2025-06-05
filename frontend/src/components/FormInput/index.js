@@ -21,6 +21,7 @@ export default function FormInput(props) {
     required,
     onChange,
     choices,
+// Temp comment
     choiceObject,
     error,
     disabled
@@ -85,6 +86,7 @@ export default function FormInput(props) {
     default: // type == 'text' || 'password'
       return <TextInput
         type={type}
+        name={name}
         label={label}
         required={required}
         placeholder={placeholder}

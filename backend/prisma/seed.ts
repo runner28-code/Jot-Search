@@ -106,3 +106,4 @@ async function seedCategories() {
       {
         name: "Finance",
         enabled: true,
+        externalID: 2000031,

@@ -43,7 +43,6 @@ export default function CareerPage() {
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
   const postingAge = calculatePostingAge(careerData.createdAt);
   const data = {
-    careerData,
     categoryString,
     addressString,
     salaryString,
@@ -83,6 +82,7 @@ export default function CareerPage() {
 CareerPage.propTypes = {
   active: PropTypes.bool
 }
+
 function renderNotification(activeData, careerData) {
   if( activeData ) {
     return (<>
