@@ -14,7 +14,6 @@ exports.JobFilter = {
         status: "status",
         hidden: "hidden",
         companyId: "clientCorporationID",
-    },
     main: {
         id: "id",
         status: "status",
@@ -26,7 +25,6 @@ exports.JobFilter = {
         willRelocate: "willRelocate",
         city: "city",
         state: "state",
-// Temp comment
         isDeleted: "isDeleted",
         companyId: "companyId",
     },

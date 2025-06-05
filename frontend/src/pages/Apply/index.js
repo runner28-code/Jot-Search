@@ -110,7 +110,6 @@ export default function Apply() {
           errorMessage: response.message
         });
       }
-    }
   }, [submissionObject.loading]);
 
   useEffect(() => {

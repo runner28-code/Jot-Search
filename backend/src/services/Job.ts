@@ -68,3 +68,4 @@ export const getAppliedJobsByUser = async (userId: string) => {
         company: true,
         applications: {
           where: {
+            userId,

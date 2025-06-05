@@ -25,7 +25,6 @@ export default function Companies() {
   function togglePassState() {
     setToggle(toggle => !toggle);
   }
-// Temp comment
 
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>

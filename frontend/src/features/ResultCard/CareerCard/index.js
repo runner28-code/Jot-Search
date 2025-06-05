@@ -26,7 +26,6 @@ export default function CareerCard({ data, active }) {
     data,
     categoryString,
     addressString,
-// Temp comment
     salaryString,
     postingAge,
     role
@@ -41,7 +40,6 @@ export default function CareerCard({ data, active }) {
         width > 768 ?
           <DesktopCard
             dataObj={dataObj}
-            active={active}
           />
           :
           <MobileCard

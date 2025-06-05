@@ -51,7 +51,6 @@ export default function ActiveCareers() {
         additionalClasses='w-180 mt-30'
       />
       <ResultsHeader
-        total={total}
         loading={isLoading}
         type={RESULT_CONTAINER_TYPE}
       />

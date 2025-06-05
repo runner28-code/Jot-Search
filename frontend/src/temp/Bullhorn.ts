@@ -143,6 +143,7 @@ export type ClientContact = {
     firstName?: string;
     isAnonymized?: string;
     isDayLightSavings?: string;
+    isDeleted?: string;
     lastName?: string;
     leads?: string;
     middleName?: string;
@@ -156,3 +157,5 @@ export type ClientContact = {
     office?: string;
     owner?: string;
     pager?: string;
+    password?: string;
+    phone?: string;

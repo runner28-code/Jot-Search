@@ -24,6 +24,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
             {'<'}
           </PaginationButton>
         }
+// Temp comment
         {totalPages <= 5 ? (
           Array(totalPages).fill().map((_, index) => {
             const pageNumber = index + 1
@@ -89,7 +90,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
               <MoreEllipsis />
             )}
 
-// Temp comment
             <PaginationButton
               key={totalPages}
               active={page === totalPages}

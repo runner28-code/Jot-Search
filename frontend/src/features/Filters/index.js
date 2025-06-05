@@ -7,7 +7,6 @@ export default function Filters(props) {
     handleFilterChange,
     defaultFilterObject,
     filterObject,
-    searchLabel,
     searchTerm,
     setSearchTerm,
     handleSearchClick,

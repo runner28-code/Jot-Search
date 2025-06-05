@@ -39,6 +39,7 @@ export const saveCompanies = async (companies: any[]) => {
     "_score",
     "notes",
     "dateAdded",
+    "dateLastModified",
   ];
   try {
     for (const company of companies) {
@@ -153,3 +154,5 @@ export const saveClientContacts = async (contacts: any[]) => {
   try {
     for (const contact of contacts) {
       try {
+        console.log(`\nSavng ClientContact with ID = ${contact.id}`);
+        const existing = await db.clientContact.findFirst({

@@ -48,7 +48,6 @@ const mockJobsData = [
     clientCorporationID: 'a5fa075b-90c3-4dad-97ef-87d6c2cc0922',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/gitwit_2_vwj7ap.webp',
     salaryRange: '$80k-$90k',
-    location_city: 'Tulsa',
     location_state: 'OK',
     onSite: false,
     listingAge: '1 month',
@@ -68,6 +67,7 @@ const mockJobsData = [
     specialty: 'Sales & Biz Dev'
   },
   {
+    id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',
     title: 'Lead Instructor',
     company: 'Paycom', // ! Not in schema yet
     clientCorporationID: 'b0eda365-79b5-4e2b-8674-642f09f56eb2',

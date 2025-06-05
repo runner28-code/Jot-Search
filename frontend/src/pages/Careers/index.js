@@ -43,6 +43,5 @@ export default function Careers() {
           toggle={toggle}
           userType={userType}
         />
-      </div>
     </section>
   )

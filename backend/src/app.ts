@@ -1,6 +1,5 @@
 import express, { Request, Response, Router } from "express";
 import "reflect-metadata";
-import dotenv from "dotenv";
 import { Action, useExpressServer } from "routing-controllers";
 import path from "path";
 import bodyParser from "body-parser";
@@ -65,3 +64,4 @@ const uploadToS3 = async(req: any, res: any) => {
       console.error("error", e);
       res.status(500).send({
         result: false,
+        error: e

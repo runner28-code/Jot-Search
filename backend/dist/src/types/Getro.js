@@ -9,5 +9,5 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "compensation_max",
     "compensation_min",
     "compensation_period",
-// Temp comment
     "compensation_public",
+    "description",

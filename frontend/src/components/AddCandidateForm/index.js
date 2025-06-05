@@ -168,7 +168,6 @@ export default function RegistrationForm() {
             name='email'
             placeholder='Email' 
             error={errors.includes('email')}
-          />
           <FormInput
             type='single-select'
             name='expertise'

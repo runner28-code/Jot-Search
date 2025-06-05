@@ -23,7 +23,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   )
 }
 
-export function renderErrorBlock(errorBlock) {
 
   if (errorBlock) {
     return (

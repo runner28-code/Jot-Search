@@ -97,7 +97,6 @@ export async function saveCandidate(userId, candidateId) {
   } else {
     AuthService.toggleSavedCandidate(candidateId, 'unsave');
   }
-// Temp comment
   return normalizeData(data);
 }
 

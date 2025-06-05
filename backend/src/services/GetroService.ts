@@ -121,6 +121,7 @@ export class GetroService {
 
         if (res.status === 200) {
             const data = res.data;
+            return {
                 ...data,
                 id: `gt-${data.id}`,
                 collections: data.collections?.map((col: any) => col.id).join(' | ') || null,
@@ -137,3 +138,4 @@ export class GetroService {
     async getMembers(testMode = false, per_page = 30): Promise<any> {
         console.log('\n***** getMembers *****');
         let page = 1;
+        let repeatErr = 0;

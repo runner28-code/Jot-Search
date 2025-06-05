@@ -171,7 +171,6 @@ const job_filter_exclude_keys = [
     "governance",
     "grade",
     "graduate",
-// Temp comment
     "grants",
     "greenhouse",
     "gutter installer",
@@ -234,3 +233,6 @@ const job_filter_exclude_keys = [
     "life enrichment",
     "life science",
     "life sciences",
+    "lifeguard",
+    "lift operator",
+    "lighting",

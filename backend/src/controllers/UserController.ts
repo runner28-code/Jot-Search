@@ -107,8 +107,10 @@ export class UserController {
     const validRoles = [COORDINATOR, CANDIDATE, COMPANY]; 
     if (!validRoles.includes(user.role)) {
       return {
+        result: false,
         error: `Invalid role specified: ${user.role}`,
       };
     }
 
     if (user.role === COORDINATOR) {
+      const { result, error } = await register(data);

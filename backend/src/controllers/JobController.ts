@@ -17,7 +17,6 @@ import { Dictionary } from "typed-two-way-map";
 import { BigQueryService } from "../services/BigQueryService";
 import { GetroService } from "../services/GetroService";
 import { createJob, getAppliedJobsByUser, updateJob } from "../services/Job";
-import {
   DATASET_BULLHORN,
   DATASET_GETRO,
   FilterOption,
@@ -202,3 +201,6 @@ export class JobController {
     filters: AdvancedFilterOption[] = [],
     fields: string[] | undefined,
     count: number | undefined,
+    operator: Operator = "OR"
+  ) {
+    const _filters = filters.filter((filter) =>

@@ -49,4 +49,3 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
         </div>)
       })}
     </div>
-  )

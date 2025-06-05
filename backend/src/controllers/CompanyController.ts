@@ -169,3 +169,5 @@ export class CompanyController {
   @Post("/sendCandidates")
   async sendCandidates(
     @CurrentUser() authUser: User,
+    @Body() body: { candidateIds: string[], companyIds: string[] }
+  ): Promise<any> {

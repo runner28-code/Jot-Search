@@ -92,7 +92,6 @@ module.exports = {
         // Styleguide Spacing
         'xxs': '4px',
         'xs': '8px',
-        's': '12px',
         'm': '16px',
         'l': '20px',
         'xl': '24px',
@@ -123,3 +122,5 @@ module.exports = {
         '90%': '90%',
         '14': '3.5rem',
         '15': '3.75rem',
+        '17': '4.25rem',
+        '18': '4.5rem',

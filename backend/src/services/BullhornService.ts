@@ -254,7 +254,6 @@ export class BullhornService {
             "name",
             "notes",
             "numEmployees",
-            "numOffices",
             "phone",
             "status",
             "taxRate",
@@ -470,3 +469,9 @@ export class BullhornService {
   async getClientContacts(
     testMode = false,
     count = 50,
+    sort = "-dateAdded"
+  ): Promise<any> {
+    console.log("\n***** getClientContacts *****");
+    let offset = 0;
+    let total = 100000;
+    let repeatErr = 0;
