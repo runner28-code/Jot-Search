@@ -7,7 +7,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 const dropdownFilters = [
   'Expertise',
-  'On-Site/Remote',
   'Years Experience',
   'Status',
 ];
@@ -60,6 +59,7 @@ export default function CareerFilterLayout(props) {
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}
+        >
           Clear All
         </button>
       </div>

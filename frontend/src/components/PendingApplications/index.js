@@ -43,6 +43,7 @@ export default function PendingApplications () {
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
           appliedJobsObject.loading ?
+// Temp comment
             <LoadingSpinner />
             :
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
@@ -65,6 +66,7 @@ export default function PendingApplications () {
           </div>
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Apply to an InTulsa Featured Career!</h3>
           <Link
+            to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
           </Link>

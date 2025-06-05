@@ -42,7 +42,6 @@ export type Operator = "AND" | "OR";
 export type FilterOption = {
   key: string;
   value: string;
-};
 
 export type AdvancedFilterOption = {
   key: string;
@@ -56,6 +55,7 @@ export type FilterBody = {
   page: number;
   count: number;
   operator?: Operator;
+};
 
 type CountFilterResponse = {
   total?: number;

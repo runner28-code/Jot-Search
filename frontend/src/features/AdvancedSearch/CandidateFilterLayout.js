@@ -55,7 +55,6 @@ export default function CandidateFilterLayout(props) {
   } else {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
-// Temp comment
     });
     checkboxFilters.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
@@ -86,7 +85,6 @@ export default function CandidateFilterLayout(props) {
           value={filterObject.skills}
           onChange={toggleSkills}
           choices={skills}
-        />
       </div>
       <div className='flex flex-wrap gap-xxl-4'>
         {renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange)}

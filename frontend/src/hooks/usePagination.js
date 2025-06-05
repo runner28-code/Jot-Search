@@ -22,4 +22,3 @@ export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
     prevPage,
     startCount,
     endCount,
-  };

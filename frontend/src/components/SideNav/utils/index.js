@@ -90,7 +90,6 @@ export const companyChoices = [
   choices.candidates,
   choices.myFavorites,
   choices.activeCareers,
-  choices.logout
 ];
 export const coordinatorChoices = [
   choices.dashboard,
@@ -133,6 +132,7 @@ export function findSelectedFromPath() {
       return 'Alerts';
     case 'contact':
       return 'Contact InTulsa';
+    case 'my-favorites':
       return 'My Favorites';
     default:
       return 'Dashboard';

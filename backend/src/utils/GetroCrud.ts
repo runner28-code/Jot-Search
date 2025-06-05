@@ -14,6 +14,7 @@ export const saveCompanies = async (companies: any[]) => {
 							if (existing) {
 								console.log(`Company with ID: ${company.id} exists`);
 								return -1;
+							}
 			
 							const companyData = { ...company };
 			
@@ -52,7 +53,6 @@ export const saveMembers = async (members: any[]) => {
 										id: member.id,
 									},
 								});
-				
 								if (existing) {
 									console.log(`Job with ID: ${member.id} exists`);
 									return -1;

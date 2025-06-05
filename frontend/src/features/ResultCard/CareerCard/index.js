@@ -92,6 +92,7 @@ function DesktopCard({ dataObj, active }) {
           { renderCardImage(data) }
         </div>
         <p className='text-sm text-zinc-700 font-roboto mt-8'>{ data.clientCorporation }</p>
+      </div>
       <div className='grow'>
         {/* Title */}
         <div className='flex'>
@@ -139,7 +140,6 @@ function DesktopCard({ dataObj, active }) {
               className='h-11 mr-5' />
             <p className='text-textBlack'>{salaryString}</p>
           </div>
-        </div>
       </div>
     </Link>
   )

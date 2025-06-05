@@ -182,6 +182,7 @@ model Company {
   name          String
   annualRevenue BigInt?
 
+  addressId        String?
   billingAddressId String?
   address          Address? @relation("addressCompanies", fields: [addressId], references: [id])
   billingAddress   Address? @relation("billingAddressCompanies", fields: [billingAddressId], references: [id])

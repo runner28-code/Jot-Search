@@ -186,6 +186,7 @@ export class JobController {
       return {
         jobs: extendedJobs,
         total,
+        message: null,
       };
     } catch (error) {
       console.error(error);

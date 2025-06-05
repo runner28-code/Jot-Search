@@ -10,6 +10,7 @@ export default function MobileHeader(props) {
     colorizeStroke,
     backButton
   } = props;
+  const navigate = useNavigate();
   
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
@@ -22,7 +23,6 @@ export default function MobileHeader(props) {
           onClick={() => navigate(-1)}
         >
           {'< Back'}
-        </button>
       )}
       { icon && (
         <img

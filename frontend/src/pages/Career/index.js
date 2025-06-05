@@ -83,7 +83,6 @@ export default function CareerPage() {
 CareerPage.propTypes = {
   active: PropTypes.bool
 }
-
 function renderNotification(activeData, careerData) {
   if( activeData ) {
     return (<>
@@ -102,6 +101,7 @@ function renderNotification(activeData, careerData) {
         text='Notify Talent inTulsa by Email'
         email='talentnetwork@intulsa.com'
         company={careerData.clientCorporation}
+        id={careerData.title}
         add='filled'
       />
     </>)

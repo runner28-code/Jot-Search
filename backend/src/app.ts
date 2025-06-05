@@ -23,7 +23,6 @@ try {
   endpoint: process.env.S3_ENDPOINT,
   s3ForcePathStyle: true,
   signatureVersion: "v4",
-})
 } catch (error) {
   console.error(error)
 }
@@ -45,6 +44,7 @@ const uploadToS3 = async(req: any, res: any) => {
 
     const uuid = genUUID()
 
+    const params = {
       Key: uuid,
       ContentType: fileObject.type,
       Body: buffer,

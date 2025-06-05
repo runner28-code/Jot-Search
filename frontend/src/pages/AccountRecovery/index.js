@@ -12,7 +12,6 @@ export default function AccountRecovery() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email } = event.target;
-    const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email.value
     });
 
@@ -79,7 +78,6 @@ export default function AccountRecovery() {
           </div>
         </form>
       </div>
-// Temp comment
       {/* Assistance call-to-action */}
       <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
         <span>Need Help? Just ask </span>

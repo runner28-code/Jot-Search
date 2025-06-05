@@ -18,7 +18,6 @@ export default function NavMenu() {
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {
       AuthService.logout();
-// Temp comment
     }
   }
 
@@ -31,7 +30,6 @@ export default function NavMenu() {
         onClick={handleMenuClick}
       >
         <div className='w-8 h-8 flex flex-col justify-between'>
-          <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
           <div className='border-white border-solid border-2'></div>
         </div>

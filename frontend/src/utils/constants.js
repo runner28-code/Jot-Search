@@ -26,7 +26,6 @@ export const stateCodeMap = {
   Delaware: 'DE',
   Florida: 'FL',
   Georgia: 'GA',
-  Hawaii: 'HI',
   Idaho: 'ID',
   Illinois: 'IL',
   Indiana: 'IN',
@@ -64,6 +63,7 @@ export const stateCodeMap = {
   Virginia: 'VA',
   Washington: 'WA',
   'West Virginia': 'WV',
+  Wisconsin: 'WI',
   Wyoming: 'WY',
 };
 

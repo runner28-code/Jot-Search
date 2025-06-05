@@ -28,6 +28,7 @@ export default function CareerFavorite () {
               console.log(company);
               return(<>
                 <CompanyCard
+                  key={company.id}
                   index={index}
                   data={company}
                   agoDate={company.agoDate}
@@ -49,7 +50,6 @@ export default function CareerFavorite () {
         <Link
           to={ROUTES.careers}
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
-            View All
         </Link>
       </div>
     </div>

@@ -85,7 +85,6 @@ export default function FormInput(props) {
     default: // type == 'text' || 'password'
       return <TextInput
         type={type}
-        name={name}
         label={label}
         required={required}
         placeholder={placeholder}
