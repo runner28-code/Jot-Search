@@ -5,7 +5,6 @@ import FavoriteButton from '../FavoriteButton';
 import eyeCon from '../../../assets/icons/eye-con.svg'; // Get it? eyeCon instead of icon? It's funny.
 import linkedinIcon from '../../../assets/icons/linkedin-circle.svg';
 import locationIcon from '../../../assets/icons/placepin.svg';
-import experienceIcon from '../../../assets/icons/star-banner.svg';
 import {
   buildCandidateAddress,
   formatAvatarUrl,
@@ -77,6 +76,7 @@ export default function CandidateCard({ data, disableLink }) {
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{experienceString}</p>
             </div>
+          </div>
           {/* Relocation */}
           <InfoLabel
             label='Relocation'

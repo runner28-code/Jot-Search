@@ -359,3 +359,4 @@ model CompanyCandidateInvites {
   candidateId String
   candidate   Candidate @relation(fields: [candidateId], references: [id])
   
+  companyId   String

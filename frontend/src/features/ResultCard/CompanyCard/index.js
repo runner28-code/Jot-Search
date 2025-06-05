@@ -40,6 +40,7 @@ export default function CompanyCard({ data }) {
       >
         {/* Card Image */}
         <div className='h-48 w-48 p-4 mr-16 flex justify-center items-center border border-solid border-smokeGray'>
+          { renderCardImage(data) }
         </div>
         <div className='grow'>
           {/* Title */}
@@ -66,6 +67,7 @@ export default function CompanyCard({ data }) {
           {/* Second row */}
           <div className='flex items-center mt-12'>
             {/* Linkedin */}
+// Temp comment
             <div className='w-1/3 flex items-center'>
               <img
                 src={linkedinIcon}

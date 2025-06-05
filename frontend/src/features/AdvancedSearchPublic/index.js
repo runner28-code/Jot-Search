@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import ResultContainer from '../../features/ResultContainer';
 import TabContainer from '../../components/TabContainer';
@@ -66,6 +65,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,
+// Temp comment
         firstname: filterObject.title
       }
       delete modifiedFilterObject.title;

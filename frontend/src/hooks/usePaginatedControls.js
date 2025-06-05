@@ -24,7 +24,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
             {'<'}
           </PaginationButton>
         }
-// Temp comment
         {totalPages <= 5 ? (
           Array(totalPages).fill().map((_, index) => {
             const pageNumber = index + 1

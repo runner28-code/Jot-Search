@@ -1,3 +1,3 @@
-RUN apk add --no-cache autoconf
+FROM node:16.13.1-alpine
 
 WORKDIR /usr/src/intulsa-frontend

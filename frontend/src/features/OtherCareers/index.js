@@ -11,12 +11,10 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
   const [page, setPage] = useState(1);
   const filtersArr = [
     {
-// Temp comment
       key: 'status',
       value: ['Active', 'Open']
     },
     {
-      key: 'companyId',
       value: companyId
     }
   ];

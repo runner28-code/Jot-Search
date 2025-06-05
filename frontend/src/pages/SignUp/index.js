@@ -43,5 +43,6 @@ export default function SignUp() {
           <RegistrationForm />
         </div>
       </div>
+// Temp comment
     </main>
   )

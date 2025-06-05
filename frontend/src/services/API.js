@@ -67,6 +67,7 @@ export async function getCandidateById(id) {
   });
   return normalizeData(data.candidate);
 }
+// Temp comment
 
 export async function updateUser(newData, id) { // id is optional, if no id is passed it will update the user attached to the auth token
   const body = id ? { id, ...newData } : newData;

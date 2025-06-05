@@ -254,6 +254,7 @@ export class BullhornService {
             "name",
             "notes",
             "numEmployees",
+            "numOffices",
             "phone",
             "status",
             "taxRate",
@@ -475,3 +476,4 @@ export class BullhornService {
     let offset = 0;
     let total = 100000;
     let repeatErr = 0;
+

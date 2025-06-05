@@ -55,6 +55,7 @@ export default function AddCoordinator() {
     const newErrors = validateInput(
       name,
       value,
+// Temp comment
       submissionObject.errors,
       formObject.password
     );
@@ -166,5 +167,6 @@ export default function AddCoordinator() {
       <p className='text-red-500 text-xs vw-768:text-sm font-spaceGrotesk mt-12 w-full'>{JSON.stringify(submissionObject.errors.submit)}</p>
       <div className='flex flex-col mx-auto vw-900:mx-0 vw-900:flex-row vw-900:mt-8'>
         {renderButtonOrLoading(submissionObject, buttonString, buttonStyles)}
+      </div>
     </form>
   )

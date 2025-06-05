@@ -20,8 +20,8 @@ export const UpdateJobStatus = ({ job }) => {
         {isLoading && <p>Loading...</p>}
         {isSuccess && <p>Success!</p>}
         <Dropdown 
-          choices={[
 // Temp comment
+          choices={[
             'Active',
             'Inactive',
             'Filled',

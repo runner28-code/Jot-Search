@@ -14,6 +14,7 @@ CREATE TABLE "ClientContact" (
     "address_address1" TEXT,
     "address_address2" TEXT,
     "address_city" TEXT,
+    "address_state" TEXT,
     "address_zip" TEXT,
     "address_country_id" TEXT,
     "category" TEXT,
@@ -26,4 +27,3 @@ CREATE TABLE "ClientContact" (
     "description" TEXT,
     "desiredCategories" TEXT,
     "desiredSkills" TEXT,
-    "desiredSpecialties" TEXT,

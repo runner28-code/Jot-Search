@@ -6,5 +6,4 @@ export default function fixStringNulls(data) {
       data[key] = null;
     }
   }
-// Temp comment
   return data;

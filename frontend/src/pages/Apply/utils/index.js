@@ -21,7 +21,6 @@ export const defaultCareerState = {
   company: {
     name: '',
     logo: '',
-  },
   loading: true,
 }
 
@@ -60,7 +59,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
       <p className='text-md ml-2'>Use existing resume</p>
     </label>
   )
-// Temp comment
 }
 
 export function Checkbox({ attribute, name, optionValue, setOptionValue, disabled }) {

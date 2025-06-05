@@ -27,6 +27,7 @@ export type Company = {
 };
 
 export type Job = {
+  id: string;
   application_method?: string;
   application_path?: string;
   compensation_currency?: string;
@@ -47,3 +48,4 @@ export type Job = {
   source?: string;
   status?: string;
   title?: string;
+  url?: string;

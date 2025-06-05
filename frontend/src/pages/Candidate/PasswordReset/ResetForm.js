@@ -43,6 +43,7 @@ export default function ResetForm({ candidateData, setType }) {
 
   return (
     <div>
+// Temp comment
       <div className='w-140'>
         <FormInput
           type='text'

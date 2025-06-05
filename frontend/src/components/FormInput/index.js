@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import TextInput from './TextInput';
 import FileInput from './FileInput';
+// Temp comment
 import AccessibleDropdown from '../AccessibleDropdown';
 import TypeaheadDropdown from './TypeaheadDropdown';
 
@@ -32,7 +33,6 @@ export default function FormInput(props) {
 
   const stylesObject = {
     baseStyles: componentStyles,
-// Temp comment
     inputHeight: inputHeight,
     inputWidth: 'w-full',
     listStyles: dropdownStyles,

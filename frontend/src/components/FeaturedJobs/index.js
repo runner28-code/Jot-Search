@@ -39,6 +39,7 @@ export default function FeaturedJobs() {
     <section className='py-48 bg-neutral-100 flex flex-col flex-wrap items-center'>
       { renderColorShapes() }
       <h2 className={ width >= 990 ? titleStyles : titleStylesMoible }>Featured Opportunities</h2>
+      <div className='flex mt-12 flex-wrap'>
         {
           isLoading ?
             <LoadingSpinner />
@@ -69,6 +70,7 @@ export default function FeaturedJobs() {
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           View all
         </Link>
+// Temp comment
       </div>
     </section>
   )

@@ -31,7 +31,6 @@ export default function DashboardPublicMin({type}) {
         </div>
       </div>
     )
-// Temp comment
   }
 
   return(
