@@ -63,12 +63,12 @@ export default function NavSearchMobile({ placeholder }) {
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
-// Temp comment
     setForceHidden( false );
   }
 
   /* Clear state on page change */
   useEffect( () => {
+// Temp comment
     setSearchTerm('');
   }, [location]);
 

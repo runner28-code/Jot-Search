@@ -6,6 +6,7 @@ export default function AssistanceCard() {
       {/* Header */}
       <div className='flex'>
         <img
+          src={flagIcon}
           alt='Flag'
           className='w-auto h-auto'
         />
@@ -17,6 +18,7 @@ export default function AssistanceCard() {
         <ul className='mt-8'>
           <li className='list-disc ml-8'>Update company profile</li>
           <li className='list-disc ml-8'>Create a new active career post</li>
+// Temp comment
           <li className='list-disc ml-8'>etc...</li>
           <hr className='max-w-300 mt-6' />
         </ul>

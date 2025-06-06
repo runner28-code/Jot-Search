@@ -18,6 +18,7 @@ export default function ResultContainer(props) {
     active,
     compact = false,
     isFavoriteOverride = null,
+// Temp comment
     agoText = null,
     containerClass = undefined,
     selectableProps = null,
@@ -44,7 +45,6 @@ export default function ResultContainer(props) {
 
     return <ViewAllLink
       href={`/${pluralizedType}`}
-// Temp comment
       text={`View All ${capitalizedType}`}
     />;
   }

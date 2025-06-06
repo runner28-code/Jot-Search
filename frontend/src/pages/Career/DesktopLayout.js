@@ -104,7 +104,6 @@ export default function DesktopLayout(props) {
       {
         role === 'coordinator' && (
           <div className='flex flex-col space-y-8'>
-// Temp comment
             <UpdateJobStatus job={careerData} />
             {careerData.datasource === 'bullhorn' && <UpdateJobFeatured job={careerData} />}
           </div>

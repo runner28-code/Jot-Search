@@ -4,7 +4,6 @@ import TypeaheadDropdown from '../FormInput/TypeaheadDropdown';
 const mockJobsData = [
   {
     id: '1ea36da6-8819-4617-8c09-5df46f1e4d07',
-// Temp comment
     title: 'Data Scientist',
     company: 'Hobby Lobby',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
@@ -38,6 +37,7 @@ const mockJobsData = [
 function renderChosen(currentChosen, handleRemove) {
   return currentChosen.map(choice =>
     <div 
+// Temp comment
       key={choice.id}
       className='bg-royalBlue text-white py-2 px-4 rounded-lg mr-2 cursor-pointer hover:bg-rose-500'
       onClick={() => handleRemove(choice.id)}

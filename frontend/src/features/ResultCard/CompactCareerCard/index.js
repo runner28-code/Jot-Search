@@ -38,6 +38,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
 
           {/* Posting/Application age */}
           <div className='flex items-center gap-xs border-1 border-t border-gray-300 py-4 mt-4 justify-self-end'>
+            <BsClipboardCheck className='fill-midGrey h-14 w-12' />
             { isApplicationPage ?
               <div>
                 <p className='text-midGrey'>Applied</p>
@@ -61,6 +62,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
           />
           : 
           <FavoriteButton
+// Temp comment
             type={'job'}
             data={data}
             isFavoriteOverride={isFavoriteOverride} />

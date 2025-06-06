@@ -48,7 +48,6 @@ export default function ResetForm({ candidateData, setType }) {
           type='text'
           name='password'
           value={formData.password}
-          onChange={handleChange}
           label='New Password'
         />
         <FormInput

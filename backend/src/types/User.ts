@@ -4,7 +4,6 @@ export type User = {
   firstname?: string;
   lastname?: string;
   gender?: string;
-  email: string;
   password?: string;
   role: string;
   address1?: string;
@@ -41,6 +40,7 @@ export type User = {
   experience?: string;
   hourlyRate?: string;
   willRelocate?: string;
+  willReceiveNotification?: boolean;
   ethnicity?: string;
   workAuthorized?: string;
   disability?: string;

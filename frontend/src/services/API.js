@@ -60,7 +60,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
 }
 
 export async function getCandidateById(id) {
-// Temp comment
   const { data } = await API.get(ROUTES.APIcandidates, {
     params: {
       id
@@ -96,6 +95,7 @@ export async function saveCandidate(userId, candidateId) {
   if (data.messsage === 'saved candidate') {
     AuthService.toggleSavedCandidate(candidateId, 'save');
   } else {
+// Temp comment
     AuthService.toggleSavedCandidate(candidateId, 'unsave');
   }
   return normalizeData(data);

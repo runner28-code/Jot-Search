@@ -4,7 +4,6 @@ import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
 const dropdownFiltersCoord = [
-// Temp comment
   'Category',
   'Experience',
   'Remote Availability',
@@ -59,6 +58,7 @@ export default function CandidateFilterLayout(props) {
   }
 
 
+// Temp comment
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>

@@ -9,6 +9,7 @@ import { getAppliedJobs } from '../../services/API';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function PendingApplications () {
+// Temp comment
   const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
@@ -63,7 +64,6 @@ export default function PendingApplications () {
               alt='intulsa' />
             <p className='text-sm font-bold text-white'>InTulsa Featured</p>
           </div>
-// Temp comment
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Apply to an InTulsa Featured Career!</h3>
           <Link
             to={ROUTES.careers}

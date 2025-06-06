@@ -60,7 +60,6 @@ export default function MobileLayout(props) {
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>
             </div>
-// Temp comment
           </div>
           {/* Second row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
@@ -97,6 +96,7 @@ export default function MobileLayout(props) {
             <div className='flex flex-col space-y-8'>
               <UpdateJobStatus job={careerData} />
               <UpdateJobFeatured job={careerData} />
+// Temp comment
             </div>
           )
         }
