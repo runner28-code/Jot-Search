@@ -159,3 +159,4 @@ export type ClientContact = {
     nameSuffix?: string;
     nickName?: string;
     numEmployees?: string;
+    occupation?: string;

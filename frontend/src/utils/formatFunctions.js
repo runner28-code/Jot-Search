@@ -44,6 +44,7 @@ export function convertUserToCandidate(user) {
     id: user.id,
     firstName: user.firstname || '',
     lastName: user.lastname || '',
+    name: formatCandidateName(user.firstname, user.lastname),
     email: user.email,
     phone: user.phone,
     description: user.description,
@@ -85,7 +86,6 @@ export function formatPhoneNumber(phoneNumberString) {
   if ( regex.test(phoneNumberString) ) { // Already formatted correctly is regex passes
     return phoneNumberString;
   }
-  if ( phoneNumberString.includes('-') ) { // Reset dashes. Will re-add dashes in correct format
     phoneNumberString = phoneNumberString.replace(/-/g, '');
   }
   if (phoneNumberString.length === 10) {

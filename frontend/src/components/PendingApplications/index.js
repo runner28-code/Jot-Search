@@ -56,12 +56,14 @@ export default function PendingApplications () {
               </>)
             })
         }
+        <div className='flex items-center text-center flex-col justify-center px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white rounded-3xl outline-dashed outline-neutral-300 bg-gray-200'>
           <div className='flex gap-[10px] items-center px-m py-xxs bg-searchGreen rounded-full'>
             <img
               src={featuredIcon}
               alt='intulsa' />
             <p className='text-sm font-bold text-white'>InTulsa Featured</p>
           </div>
+// Temp comment
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Apply to an InTulsa Featured Career!</h3>
           <Link
             to={ROUTES.careers}

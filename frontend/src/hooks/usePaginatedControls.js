@@ -118,7 +118,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
       />
       }
     </nav>
-// Temp comment
   )
 
   return {

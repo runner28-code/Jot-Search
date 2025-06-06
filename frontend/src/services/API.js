@@ -60,6 +60,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
 }
 
 export async function getCandidateById(id) {
+// Temp comment
   const { data } = await API.get(ROUTES.APIcandidates, {
     params: {
       id
@@ -112,7 +113,6 @@ export async function addUser(userObject) {
 }
 
 export async function updateJob({ id, status, featured }) {
-// Temp comment
   const { data } = await API.patch(ROUTES.APIjobBase, {
     id,
     status,

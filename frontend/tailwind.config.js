@@ -58,7 +58,6 @@ module.exports = {
         orangeCircle: '#ED8623',
         orangeHeroOverlay: '#F2871F',
         'blue-bg': '#E7F0F8',
-        buttonLightBlue: '#00CADB',
         'blue70%': '#216bb2b3',
         blueSquare: '#4A53A4',
         blueSquare2: '#30BED3',
@@ -125,3 +124,4 @@ module.exports = {
         '15': '3.75rem',
         '17': '4.25rem',
         '18': '4.5rem',
+        '19': '4.75rem',

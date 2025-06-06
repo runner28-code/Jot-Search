@@ -125,7 +125,6 @@ Header.propTypes = {
   handleCompanyUpdate: PropTypes.func.isRequired
 }
 
-function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'my-auto object-contain';
   if( width >= 1280 ) {
@@ -140,7 +139,6 @@ function renderCompanyLogo(logoUrl, name) {
   }
   return (
     <div className='p-8 border border-slate-70/50 mr-8'>
-// Temp comment
       <img
         className={logoStyles}
         src={logoUrl}

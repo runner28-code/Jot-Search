@@ -16,7 +16,6 @@ const dropdownFiltersCoord = [
 
 const dropdownFilters = [
   'Category',
-// Temp comment
   'Experience',
   'Remote Availability',
   'Employment Type',
@@ -98,7 +97,6 @@ export default function CandidateFilterLayout(props) {
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
-        />
         <button
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}

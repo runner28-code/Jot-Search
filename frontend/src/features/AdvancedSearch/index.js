@@ -93,6 +93,7 @@ export default function AdvancedSearch({ disabledTabs }) {
 
   function handleFilterChange(filterType, choice) {
     setFilterObject({
+// Temp comment
       ...filterObject,
       [filterType]: choice
     });

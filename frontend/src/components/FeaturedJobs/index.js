@@ -37,7 +37,6 @@ export default function FeaturedJobs() {
 
   return(
     <section className='py-48 bg-neutral-100 flex flex-col flex-wrap items-center'>
-// Temp comment
       { renderColorShapes() }
       <h2 className={ width >= 990 ? titleStyles : titleStylesMoible }>Featured Opportunities</h2>
       <div className='flex mt-12 flex-wrap'>
@@ -66,6 +65,7 @@ export default function FeaturedJobs() {
         }
       </div>
       <div className={ width >= 990 ? viewAllStyles : viewAllStylesMobile }>
+// Temp comment
         <Link
           to={ROUTES.careers}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>

@@ -18,6 +18,7 @@ dotenv.config();
 let s3: any;
 try {
   s3 = new AWS.S3({
+  accessKeyId: process.env.S3_ACCESS_KEY,
   secretAccessKey: process.env.S3_SECRET_KEY,
   endpoint: process.env.S3_ENDPOINT,
   s3ForcePathStyle: true,
@@ -65,3 +66,4 @@ const uploadToS3 = async(req: any, res: any) => {
       res.status(500).send({
         result: false,
         error: e
+      })

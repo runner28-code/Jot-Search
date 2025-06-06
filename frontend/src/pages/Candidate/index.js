@@ -141,7 +141,6 @@ export default function Candidate() {
           role={role}
           candidateData={candidateData}
           handleCandidateUpdate={handleCandidateUpdate} />
-// Temp comment
         {/* Password Reset (Candidate and Coordinator) */}
         <PasswordReset
           role={role}

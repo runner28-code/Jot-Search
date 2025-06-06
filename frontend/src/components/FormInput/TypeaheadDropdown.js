@@ -16,6 +16,7 @@ export default function TypeaheadDropdown(props) {
     choices, 
     currentChosen, 
     onChange, 
+    baseStyles, 
     inputHeight} = props;
 
   const [inputValue, setInputValue] = useState('');

@@ -200,7 +200,6 @@ export default function RegistrationForm() {
           <div className='flex flex-wrap mt-4 mb-16 w-full'>
             {formObj.skills.length > 0 ? formObj.skills.map(skill => 
               <ChoiceTag
-                key={skill}
                 label={skill}
                 isActive={true}
                 handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}

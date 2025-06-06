@@ -303,3 +303,6 @@ export const getCompanyDashboardStats = async (days: number) => {
     }
 
     const activeCareersPostsInCurrentPeriod = await db.job.count({
+      where: {
+        status: {
+          equals: 'active',

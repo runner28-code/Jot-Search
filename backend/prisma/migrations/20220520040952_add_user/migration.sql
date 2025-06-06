@@ -5,7 +5,6 @@ CREATE TABLE "User" (
     "lastName" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "password" TEXT NOT NULL,
-    "role" TEXT,
     "city" TEXT,
     "state" TEXT,
     "resume" TEXT,
@@ -20,3 +19,5 @@ CREATE TABLE "User" (
     "roles" TEXT,
     "externalId" TEXT,
     "gender" TEXT,
+    "address1" TEXT,
+    "address2" TEXT,

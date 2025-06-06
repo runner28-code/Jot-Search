@@ -128,7 +128,6 @@ const job_filter_exclude_keys = [
     "edit",
     "editor",
     "educate",
-// Temp comment
     "education",
     "educator",
     "electrician",
@@ -184,6 +183,7 @@ const job_filter_exclude_keys = [
     "horticulture",
     "horticulturist",
     "hospital",
+// Temp comment
     "hospitalist",
     "house manager",
     "housekeeper",
@@ -237,3 +237,5 @@ const job_filter_exclude_keys = [
     "lifeguard",
     "lift operator",
     "lighting",
+    "lpn",
+    "lunch",

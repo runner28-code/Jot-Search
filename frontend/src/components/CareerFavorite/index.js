@@ -6,7 +6,6 @@ import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
-
 export default function CareerFavorite () {
 
   const { user_id } = AuthService.getProfile();
@@ -49,7 +48,6 @@ export default function CareerFavorite () {
       <div className='pt-24'>
         <Link
           to={ROUTES.careers}
-// Temp comment
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
             View All
         </Link>

@@ -6,6 +6,7 @@ function isTodayOrYesterday(dateObj) {
     isToday: false,
     isYesterday: false
   }
+// Temp comment
 
   const today = new Date();
   const sameYear = today.getFullYear() === dateObj.getFullYear();
@@ -17,6 +18,7 @@ function isTodayOrYesterday(dateObj) {
     if ( dayDifference === 0 ) {
       returnObj.isToday = true;
     } else if ( dayDifference === 1 ) {
+      returnObj.isYesterday = true;
     }
   }
 

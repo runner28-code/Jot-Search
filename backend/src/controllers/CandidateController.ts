@@ -200,3 +200,5 @@ export class CandidateController {
         if (categoryId) {
           // change categoryId to category external id because in candidate table it is saved as externalID.
           const category = await db.category.findFirst({
+            where: {
+              id: categoryId

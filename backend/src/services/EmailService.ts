@@ -57,3 +57,4 @@ export const sendCandidatesToEmployers = async (candidates: string[], employers_
     });
     return true;
   } catch (error: any) {
+    console.log('Error during sending candidates list to employers');

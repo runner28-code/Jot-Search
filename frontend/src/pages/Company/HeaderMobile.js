@@ -70,6 +70,7 @@ HeaderContent.propTypes = {
     companyURL: PropTypes.string,
     industryList: PropTypes.array,
     address: PropTypes.string,
+    employeeString: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,
     numEmployees: PropTypes.number,

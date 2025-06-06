@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import AssistanceCard from './AssistanceCard';
+// Temp comment
 import gaugeIcon from '../../../assets/icons/gauge.svg';
 import PageHeader from '../../../components/PageHeader';
 import AdvancedSearch from '../../../features/AdvancedSearch';
@@ -11,6 +12,7 @@ export default function CompanyDashboard({userType}) {
   const headerStyles = 'font-spaceGrotesk font-bold text-h1 text-royalBlue ';
   return (
     <>
+      <PageHeader
         headerText={profile.firstname + ' Dashboard'}
         icon={gaugeIcon}
       />

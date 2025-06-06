@@ -78,7 +78,6 @@ export default function AccountRecovery() {
             </button>
           </div>
         </form>
-// Temp comment
       </div>
       {/* Assistance call-to-action */}
       <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>

@@ -1,5 +1,5 @@
 // Replace password string on line 6
-import { encryptPassword } from "./password";
+// Run script
 
 (async () => {
   console.log('/// START ENCRYPT PASSWORD');

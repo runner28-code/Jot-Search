@@ -92,7 +92,6 @@ class AuthService {
       console.log(e);
       localStorage.setItem('savedCandidates', JSON.stringify([]));
     }
-  }
 
   toggleSavedJob(jobID, action) {
     const savedJobs = this.getSavedJobIDs();

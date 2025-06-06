@@ -206,3 +206,5 @@ export class JobController {
   ) {
     const _filters = filters.filter((filter) =>
       ALLOWED_JOB_KEYS.has(filter.key as JobKey)
+    );
+

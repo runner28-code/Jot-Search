@@ -60,6 +60,7 @@ export default function MobileLayout(props) {
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>
             </div>
+// Temp comment
           </div>
           {/* Second row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
@@ -118,7 +119,6 @@ export default function MobileLayout(props) {
             applicationUrl={careerData.application_path || careerData.url}
           />
         }
-// Temp comment
         <button
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
           onClick={() => navigate(-1)}

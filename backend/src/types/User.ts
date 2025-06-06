@@ -25,6 +25,7 @@ export type User = {
 
   description?: string;
   phone?: string;
+  status?: string;
   username?: string;
   logo?: string;
 
@@ -40,10 +41,10 @@ export type User = {
   experience?: string;
   hourlyRate?: string;
   willRelocate?: string;
-  willReceiveNotification?: boolean;
   ethnicity?: string;
   workAuthorized?: string;
   disability?: string;
   occupation?: string;
 
   employmentPreference?: string;
+};

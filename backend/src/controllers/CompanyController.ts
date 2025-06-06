@@ -139,6 +139,7 @@ export class CompanyController {
         },
       });
       return {
+        company: company,
         result: true,
       };
     } catch (e) {
@@ -171,3 +172,5 @@ export class CompanyController {
     @Body() body: { candidateIds: string[], companyIds: string[] }
   ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
+      return {
+        result: false,
