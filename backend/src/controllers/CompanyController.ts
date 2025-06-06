@@ -139,7 +139,6 @@ export class CompanyController {
         },
       });
       return {
-        company: company,
         result: true,
       };
     } catch (e) {

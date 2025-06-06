@@ -5,10 +5,10 @@ import bell from '../../assets/icons/bell.svg';
 
 export default function Notification ({ imgClass }) {
 
+// Temp comment
   const classes = imgClass += 'w-8 h-8 ';
   return (<>
     <img
-// Temp comment
       src={ bell }
       alt='notification icon'
       className={ classes }

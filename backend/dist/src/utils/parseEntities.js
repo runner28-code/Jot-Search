@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseGetroJobToMain = exports.parseBullhornJobToMain = exports.parseBullhornCompanyToUser = exports.parseBullhornCandidateToUser = void 0;
 const parseBullhornCandidateToUser = (data) => {
-    if (!data.email)
         return null;
     const user = {
         externalId: data.id,
@@ -16,7 +15,6 @@ const parseBullhornCandidateToUser = (data) => {
         city: data.address_city,
         state: data.address_state,
         zip: data.address_zip,
-// Temp comment
         resume: undefined,
         linkedin: undefined,
         skills: data.primarySkills,

@@ -3,7 +3,6 @@ import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-import { MdGroups as EmployeesIcon } from 'react-icons/md';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import locationIcon from '../../../assets/icons/placepin.svg';
 import linkedinIcon from '../../../assets/icons/linkedin-circle.svg';
@@ -67,7 +66,6 @@ export default function CompanyCard({ data }) {
           {/* Second row */}
           <div className='flex items-center mt-12'>
             {/* Linkedin */}
-// Temp comment
             <div className='w-1/3 flex items-center'>
               <img
                 src={linkedinIcon}

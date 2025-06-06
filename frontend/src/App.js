@@ -38,7 +38,6 @@ function App() {
               element={<LandingPage />} />
             <Route
               path={ROUTES.careers}
-// Temp comment
               element={<Careers />} />
             <Route
               path={ROUTES.companies}
@@ -64,7 +63,6 @@ function App() {
             <Route
               path="*"
               element={<Navigate to={ROUTES.landingPage} />}
-            />
           </Routes>
         </div>
       </main>

@@ -3,6 +3,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 // TODO: Terms of Service?
 export default function SignUp() {
+// Temp comment
 
   const { width } = useWindowDimensions();
 
@@ -43,6 +44,5 @@ export default function SignUp() {
           <RegistrationForm />
         </div>
       </div>
-// Temp comment
     </main>
   )

@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
+// Temp comment
 import chevronDownBlue from '../../assets/images/down-chevron-blue.svg';
 import NavSearch from '../NavSearch';
 import * as ROUTES from '../../routes';
@@ -66,6 +67,7 @@ const DesktopNavBarLayout = () => {
       <div className='flex items-center font-spaceGrotesk'>
         <div className='mr-14'>
           { renderNavSearch() }
+        </div>
         {/* Dropdown Menu */}
         <DropdownMenu />
       </div>

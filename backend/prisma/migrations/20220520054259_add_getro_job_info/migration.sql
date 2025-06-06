@@ -17,5 +17,6 @@ CREATE TABLE "GetroJobInfo" (
     "compensation_currency" TEXT,
     "compensation_max" TEXT,
     "compensation_min" TEXT,
+    "compensation_period" TEXT,
     "compensation_public" TEXT,
     "description" TEXT,

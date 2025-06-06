@@ -3,7 +3,6 @@ import { useState } from 'react';
 import FormInput from '../../../components/FormInput';
 import API from '../../../services/API';
 import * as ROUTES from '../../../routes';
-
 export default function ResetForm({ candidateData, setType }) {
   const [formData, setFormData] = useState({
     id: candidateData.id,
@@ -43,7 +42,6 @@ export default function ResetForm({ candidateData, setType }) {
 
   return (
     <div>
-// Temp comment
       <div className='w-140'>
         <FormInput
           type='text'

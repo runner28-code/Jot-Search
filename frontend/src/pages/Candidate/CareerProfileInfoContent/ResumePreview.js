@@ -10,7 +10,6 @@ import LoadingSpinner from '../../../components/LoadingSpinner';
 const ResumePreview = ({ resumeUrl }) => {
   const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
-// Temp comment
 
   const { pdfDocument } = usePdf({
     file: resumeUrl,
@@ -31,6 +30,7 @@ const ResumePreview = ({ resumeUrl }) => {
         className='rounded-lg'
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
+// Temp comment
         <nav>
           <ul className="flex justify-between">
             <li className="previous">

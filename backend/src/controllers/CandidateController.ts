@@ -189,6 +189,7 @@ export class CandidateController {
           }))
 
           return [...typedUsers, ...typedCandidates]
+        })
       } else if (canBeBothTypesOfUserFilters) {
         const { status, firstName, ...whereWithoutStatus } = where
         whereWithoutStatus.candidateId = undefined;

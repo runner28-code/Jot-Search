@@ -5,7 +5,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {
   defaultJobFilterState,
   buildSearchFilters,
-} from '../../utils/filterObjects';
 
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';

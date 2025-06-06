@@ -22,6 +22,7 @@ export class GetroService {
     }
 
     getOptions() {
+        return {
             headers: {
                 'X-User-Email': this.email,
                 'X-User-Token': this.password,
@@ -135,6 +136,5 @@ export class GetroService {
      * getMemebers
      */
     async getMembers(testMode = false, per_page = 30): Promise<any> {
-        console.log('\n***** getMembers *****');
         let page = 1;
         let repeatErr = 0;

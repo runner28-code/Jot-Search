@@ -5,6 +5,7 @@ import FavoriteButton from '../FavoriteButton';
 import eyeCon from '../../../assets/icons/eye-con.svg'; // Get it? eyeCon instead of icon? It's funny.
 import linkedinIcon from '../../../assets/icons/linkedin-circle.svg';
 import locationIcon from '../../../assets/icons/placepin.svg';
+import experienceIcon from '../../../assets/icons/star-banner.svg';
 import {
   buildCandidateAddress,
   formatAvatarUrl,
@@ -22,7 +23,6 @@ export default function CandidateCard({ data, disableLink }) {
   const link = data.user ? `${ROUTES.candidates}/${data.user.id}` : `${ROUTES.candidates}/${data.id}`
 
   return (
-    <div
       className='relative w-full'
       key={data.id}
     >

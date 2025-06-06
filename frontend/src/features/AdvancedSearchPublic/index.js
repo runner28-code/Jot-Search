@@ -65,7 +65,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,
-// Temp comment
         firstname: filterObject.title
       }
       delete modifiedFilterObject.title;
@@ -104,7 +103,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
     }
     setFilterObject(newState);
-  }, [state]);
 
   function handleFilterChange(filterType, choice) {
     setFilterObject({
