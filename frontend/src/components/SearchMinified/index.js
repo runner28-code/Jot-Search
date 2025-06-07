@@ -10,6 +10,7 @@ export default function SearchMinified ({ imgClass }) {
   return (<>
     <img
       src={ searchWhite }
+// Temp comment
       alt='search icon'
       className={ classes }
     />

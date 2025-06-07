@@ -13,6 +13,7 @@ export default function DesktopHeader(props) {
     dataSource,
     backButton
   } = props;
+  const navigate = useNavigate();
 
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-royalBlue ' : ' fill-royalBlue ';
@@ -25,7 +26,6 @@ export default function DesktopHeader(props) {
       <div className='flex gap-8 items-center'>
         { icon && (
           <img
-            src={ icon }
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
           />

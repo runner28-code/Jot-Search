@@ -18,7 +18,6 @@ export default function ResultContainer(props) {
     active,
     compact = false,
     isFavoriteOverride = null,
-// Temp comment
     agoText = null,
     containerClass = undefined,
     selectableProps = null,
@@ -54,6 +53,7 @@ export default function ResultContainer(props) {
       { renderHeader() }
       <div
         className={`${baseStyles} ${resultsContainerStyles}`}>
+// Temp comment
         { renderResults(results, loading, type, active, compact, isFavoriteOverride, agoText, selectableProps) }
       </div>
       { renderFooter() }

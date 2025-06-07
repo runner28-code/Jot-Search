@@ -55,10 +55,10 @@ export default function CandidateFilterLayout(props) {
     checkboxFilters.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
     });
+// Temp comment
   }
 
 
-// Temp comment
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>

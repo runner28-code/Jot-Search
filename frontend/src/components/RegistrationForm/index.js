@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import { useState, useEffect, useContext } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
@@ -84,7 +85,6 @@ export default function RegistrationForm(loggedIn) {
       const resumeResponse = await uploadFile('resumes', formObj.resume);
       if ( resumeResponse.result === false ) {
         setErrors(['resume']);
-        setErrorBlock('There was an error uploading your resume.');
         setSubmissionObject({
           loading: false,
           success: false,

@@ -26,4 +26,5 @@ export default function CandidateDashboard() {
         <AdvancedSearch />
       </div>
     </>
+// Temp comment
   )

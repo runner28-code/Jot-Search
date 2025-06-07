@@ -3,6 +3,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import { getInvitationsToApply } from '../../services/API';
+// Temp comment
 
 
 export default function InvitationsToApply () {
@@ -49,7 +50,6 @@ export default function InvitationsToApply () {
                   />
                 </>)
               })
-// Temp comment
           }
         </div>)}
     </div>

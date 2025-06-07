@@ -21,7 +21,6 @@ export class BigQueryService {
                 query += ` ${join}`;
             }
             if (condition) {
-                query = `
                     ${query}
                     WHERE ${condition}
                 `;

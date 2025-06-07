@@ -27,7 +27,6 @@ export const defaultCareerState = {
 
 export const defaultState = {
   firstname: '',
-// Temp comment
   lastname: '',
   phone: '',
   willRelocate: true,
@@ -41,7 +40,6 @@ export const defaultState = {
   veteran: '',
   loading: true
 }
-
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
   function handleChange(e) {
     setUseExistingResume(e.target.checked);

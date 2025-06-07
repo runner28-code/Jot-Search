@@ -21,7 +21,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   const filterObject = adjustJobFilterObject();
   const [filterState, setFilterState] = useState({
     title: '',
-    'On-Site/Remote': 'Any Work Setting',
     'Expertise': 'Any Expertise',
   });
 
@@ -47,7 +46,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   const containerStyles = ' absolute -bottom-76 h-144 flex flex-col items-center w-380 bg-gradient-to-b from-royalBlue to-aquaBlue rounded-2xl';
   
   if ( loading ) {
-// Temp comment
     return (
       <div className={containerStyles}>
         <LoadingSpinner color='#FDFDFD' />

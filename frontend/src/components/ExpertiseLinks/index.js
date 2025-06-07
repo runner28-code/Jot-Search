@@ -70,11 +70,11 @@ export default function ExpertiseLinks() {
             className={iconStyles}
           />
           <span className={textStyles}>Operations</span>
-// Temp comment
         </Link>
         {/* Finance */}
         <Link
           to={ROUTES.careers}
+// Temp comment
           className={linkStyles}
           state={{ Expertise: 'Finance' }}
         >

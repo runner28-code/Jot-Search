@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+// Temp comment
 import ReactDOM from 'react-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
@@ -9,6 +10,7 @@ import CandidateContext from './services/CandidateContext';
 import CareerContext from './services/CareerContext';
 import CategoryContext from './services/CategoryContext';
 import ScrollToTop from './hooks/scrollToTop';
+import App from './App';
 import './index.css';
 
 export const queryClient = new QueryClient();

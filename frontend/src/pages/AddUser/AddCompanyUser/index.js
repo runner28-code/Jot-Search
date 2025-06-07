@@ -88,7 +88,6 @@ export default function AddCompanyUser() {
             />
           )}
         </div>
-// Temp comment
       </div>
     </div>
   )

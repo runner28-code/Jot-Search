@@ -91,6 +91,7 @@ export default function Apply() {
       setCareer({ ...careerData, loading: false });
       setOriginalObject(stateObject);
       setApplicationObject({ ...stateObject, loading: false });
+// Temp comment
     } catch(e) {
       console.log('error', e);
     }
@@ -123,6 +124,7 @@ export default function Apply() {
         });
       }, 2000);
       navigate('/applications');
+    }
   }, [submissionObject.success]);
 
   function handleSubmit(e) {

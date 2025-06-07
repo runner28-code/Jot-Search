@@ -11,6 +11,7 @@ import inTulsaFooter from '../../assets/images/intulsa-talent-network.svg';
 import linkedin from '../../assets/icons/social/social_linkedin_grey.svg';
 import twitter from '../../assets/icons/social/social_twitter.svg';
 import facebook from '../../assets/icons/social/social_facebook.svg';
+import instagram from '../../assets/icons/social/social_instagram.svg';
 import youtube from '../../assets/icons/social/social_youtube.svg';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -254,7 +255,6 @@ function NavFooter() {
         >Our Website
         </a>
       </div>
-      <div className='flex flex-col basis-3/12'>
         <a
           href="/careers"
           className={linkStyle}

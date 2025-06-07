@@ -9,7 +9,6 @@ module.exports = {
     extend: {
       animation: {
         'spin': 'spin .175s linear forwards',
-// Temp comment
         'spin-reverse': 'spin-reverse .175s linear forwards'
       },
       keyframes: {
@@ -49,6 +48,7 @@ module.exports = {
         grey: '#EBEBEB',
         charcoal: '#3C3C4B',
         // Utility
+// Temp comment
         searchGreen: '#62CA71',
         success: '#2EA248',
         error: '#DE5454',

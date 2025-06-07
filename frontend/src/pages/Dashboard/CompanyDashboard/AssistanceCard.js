@@ -10,7 +10,6 @@ export default function AssistanceCard() {
           alt='Flag'
           className='w-auto h-auto'
         />
-        <h5 className='text-h5 font-medium font-spaceGrotesk text-charcoal ml-8'>InTulsa assistance</h5>
       </div>
       {/* Body */}
       <div className='text-black70%'>
@@ -18,7 +17,6 @@ export default function AssistanceCard() {
         <ul className='mt-8'>
           <li className='list-disc ml-8'>Update company profile</li>
           <li className='list-disc ml-8'>Create a new active career post</li>
-// Temp comment
           <li className='list-disc ml-8'>etc...</li>
           <hr className='max-w-300 mt-6' />
         </ul>

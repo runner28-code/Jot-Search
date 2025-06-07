@@ -44,7 +44,6 @@ const job_filter_exclude_keys = [
     "bim",
     "bingo",
     "biologist",
-    "biomed",
     "blender",
     "body repair",
     "breakfast",
@@ -80,7 +79,6 @@ const job_filter_exclude_keys = [
     "clerk",
     "clinic",
     "clinical",
-// Temp comment
     "clinician",
     "club",
     "cna",

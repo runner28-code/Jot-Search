@@ -126,7 +126,6 @@ export type ClientContact = {
     clientCorporation?: string;
     comments?: string;
     dateAdded?: string;
-    dateLastModified?: string;
     dateLastVisit?: string;
     description?: string;
     desiredCategories?: string;

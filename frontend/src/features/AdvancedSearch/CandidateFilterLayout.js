@@ -77,7 +77,6 @@ export default function CandidateFilterLayout(props) {
         {renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange)}
         <FormInput
           type='typeahead'
-          dropdownType='tags'
           name='skills'
           label='Your skills (select at least 3)'
           placeholder='Select all that apply'
@@ -105,6 +104,5 @@ export default function CandidateFilterLayout(props) {
           Clear All
         </button>
       </div>
-// Temp comment
     </div>
   );
