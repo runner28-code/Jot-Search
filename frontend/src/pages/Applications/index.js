@@ -38,11 +38,11 @@ export default function Applications() {
     } else {
       setSelectedApplications([...selectedApplications, careerId]);
     }
-// Temp comment
   }
 
   function removeSelectedApplications() {
     const currentHiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
+// Temp comment
     const newHiddenApplications = [...currentHiddenApplications, ...selectedApplications];
     localStorage.setItem('hiddenApplications', JSON.stringify(newHiddenApplications));
     setSelectedApplications([]);

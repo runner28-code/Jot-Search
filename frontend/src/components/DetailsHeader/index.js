@@ -13,14 +13,12 @@ export default function DetailsHeader({ type, source }) {
       break;
     case 'company':
       Icon = CompanyIcon;
-      break;
     case 'career':
     default:
       Icon = CareerIcon;
       break;
   }
   const titleCasedType = type.charAt(0).toUpperCase() + type.slice(1);
-// Temp comment
   let headerText
   if ( type === 'company') {
     headerText = 'Company Profile';

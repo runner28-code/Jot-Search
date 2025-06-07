@@ -57,3 +57,4 @@ export const saveMembers = async (members: any[]) => {
 								if (existing) {
 									console.log(`Job with ID: ${member.id} exists`);
 									return -1;
+								}

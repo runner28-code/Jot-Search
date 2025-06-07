@@ -65,5 +65,5 @@ export default function ResetForm({ candidateData, setType }) {
         onClick={handleSubmit}
       >
         Reset Password
+      </button>
     </div>
-  )

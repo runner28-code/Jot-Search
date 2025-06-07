@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import { useGetSavedCompanies } from '../../hooks/queries/useGetSavedCompanies';
 import LoadingSpinner from '../../components/LoadingSpinner';
-// Temp comment
 import AuthService from '../../services/auth';
 import CompanyCard from '../../features/ResultCard/CompactCompanyCard';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -45,6 +44,7 @@ export default function CareerFavorite () {
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
           </Link>
+// Temp comment
         </div>
       </div>
       <div className='pt-24'>

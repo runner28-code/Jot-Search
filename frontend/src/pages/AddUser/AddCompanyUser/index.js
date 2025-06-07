@@ -29,6 +29,7 @@ export default function AddCompanyUser() {
     <div className='flex flex-col'>
       <div className={ containerStyles + 'bg-sky-100'}>
         <h2 className={ titleStyles + 'text-royalBlue flex'}>
+          <img
             src={Flag}
             alt='flag icon'
             className='w-12 h-12 mr-6'
@@ -58,6 +59,7 @@ export default function AddCompanyUser() {
             id='companylookup'
             placeholder='Company lookup'
             value={search}
+// Temp comment
             onChange={(e) => setSearch(e.target.value)}
             className='placeholder-textBlack text-md bg-lightGrey w-full remove-outline rounded-xl border border-solid border-2 border-netural-400 px-4 py-4 mt-2' />
           <img

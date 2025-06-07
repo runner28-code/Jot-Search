@@ -92,6 +92,7 @@ AccessibleDropdown.propTypes = {
     marginBottom: PropTypes.string,
     listStyles: PropTypes.string,
     listItemStyles: PropTypes.string,
+  }).isRequired,
   showDropdownArrow: PropTypes.bool,
   disabled: PropTypes.bool,
 }

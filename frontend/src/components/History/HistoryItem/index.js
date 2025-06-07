@@ -22,6 +22,7 @@ function isTodayOrYesterday(dateObj) {
   }
 
   return returnObj;
+}
 
 function formatDateByDay(isToday, isYesterday, dateObj) {
   const time = dateObj.toLocaleTimeString();
@@ -33,6 +34,7 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
   } else {
     const month = dateObj.toLocaleString('default', { month: 'long' });
     const day = dateObj.getDate();
+// Temp comment
 
     const concatenateOrdinal = function(d) {
       if (d > 3 && d < 21) return d + 'th';

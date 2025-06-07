@@ -206,6 +206,7 @@ export default function RegistrationForm() {
                 handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}
               />
             ) : <p className='text-royalBlue text-md'>No skills selected</p>}
+// Temp comment
           </div>
         </div>
         <div className={flexWidth}>

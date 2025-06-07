@@ -41,7 +41,6 @@ export const choices = {
     icon: CandidatesIcon,
     link: ROUTES.candidates,
   },
-  myApplications: {
     label: 'My Applications',
     icon: ApplicationIcon,
     link: ROUTES.applications,
@@ -70,6 +69,7 @@ export const choices = {
     label: 'Logout',
     icon: LogoutIcon,
     link: ROUTES.logout,
+  },
 }
 
 // Map choices to appropriate icons

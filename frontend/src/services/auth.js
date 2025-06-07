@@ -21,6 +21,7 @@ class AuthService {
     // Checks if there is a saved token and it's still valid
     const token = this.getToken();
     return !!token && !this.isTokenExpired(token); // handwaiving here
+// Temp comment
   }
 
   isTokenExpired(token) {
@@ -42,6 +43,7 @@ class AuthService {
   async login(idToken) {
     localStorage.setItem('id_token', idToken);
     const role = this.getUserRole();
+    if ( role === 'candidate' ) {
       await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
       await this.refreshSavedCandidates();

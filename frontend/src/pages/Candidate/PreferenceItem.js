@@ -14,6 +14,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           disabled={disabled}
         />
         <label 
+// Temp comment
           htmlFor='featured' 
           className={ width >= 990 ? 'text-lg font-roboto text-black70%' : 'text-sm font-roboto text-black70%'}>
           {label}

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import ChoiceTag from '../../ChoiceTag';
 import TypeaheadDropdown from '../../FormInput/TypeaheadDropdown';
 import { skills as skillChoices } from '../../../utils/skillHierarchyMap';
+
 export default function EditSkillsForm({ skills, handleChange }) {
   const splitSkills = skills ? skills.split(', ') : [];
 
@@ -14,7 +15,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
       },
     };
     handleChange(fakeEvent);
-  }
 
   const inputHeight = 'h-24 ';
   const baseStyles = 'w-100 vw-480:w-120 vw-640:w-140 border-lightGrey border-2 border-solid rounded-2xl p-4 vw-480:text-lg ' + inputHeight;

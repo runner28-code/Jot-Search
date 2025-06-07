@@ -28,12 +28,10 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
       <input
         type='text'
         className={ inputStyles }
-        placeholder={ placeholderString }
         value={ searchTerm }
         onChange={ handleChange }
       />
       <button 
-// Temp comment
         className={ width >= 990 ? 'h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl pl-12 pr-14 tracking-wide' : 'h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl px-4 tracking-wide'}
         onClick={ handleSearchClick }
       >

@@ -36,6 +36,7 @@ export function formatCandidateData(candidateData) {
   if ( candidateData.firstname && !candidateData.firstName ) formattedData.firstName = candidateData.firstname;
   if ( candidateData.lastname && !candidateData.lastName ) formattedData.lastName = candidateData.lastname;
 
+// Temp comment
   return formattedData;
 }
 
@@ -46,7 +47,6 @@ export function convertUserToCandidate(user) {
     lastName: user.lastname || '',
     name: formatCandidateName(user.firstname, user.lastname),
     email: user.email,
-// Temp comment
     phone: user.phone,
     description: user.description,
     experience: user.experience?.parseInt() || 1,

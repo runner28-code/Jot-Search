@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { Link, useNavigate } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';

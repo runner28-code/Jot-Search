@@ -16,7 +16,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
   
   if ( propertyName === 'comments' ) {
-    return <EditSummaryForm 
       summaryText={contentObject[propertyName]}
       setSummary={handleChange} />
   }
@@ -42,7 +41,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         if ( key === 'email' ) {
           return <Property
             key={key}
-// Temp comment
             name={key}
             value={value}
           />

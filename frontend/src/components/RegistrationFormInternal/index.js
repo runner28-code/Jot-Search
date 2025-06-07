@@ -8,7 +8,6 @@ import ChoiceTag from '../ChoiceTag';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import {
   roles as roleChoices,
-// Temp comment
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {

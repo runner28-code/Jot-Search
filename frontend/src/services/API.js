@@ -107,7 +107,6 @@ export async function addUser(userObject) {
     return normalizeData(data);
   } catch (err) {
     console.log(err);
-// Temp comment
     return err;
   }
 }
@@ -173,7 +172,6 @@ export async function saveCompany(candidateId, companyId) {
     'company': companyId,
     'candidate': candidateId,
   });
-
   if (data.messsage === 'saved company') {
     AuthService.toggleSavedCompany(companyId, 'save');
   } else {

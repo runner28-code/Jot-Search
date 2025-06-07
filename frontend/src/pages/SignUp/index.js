@@ -4,6 +4,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 // TODO: Terms of Service?
 export default function SignUp() {
 
+// Temp comment
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {
@@ -21,7 +22,6 @@ export default function SignUp() {
           </div>
           <div className='mt-48 w-full vw-768:w-2/3 max-w-290 flex justify-center'>
             <div className='w-10/12 bg-white p-12 outline outline-2 outline-neutral-300 rounded-xl mt-[-200px]'>
-// Temp comment
               <RegistrationForm />
             </div>
           </div>

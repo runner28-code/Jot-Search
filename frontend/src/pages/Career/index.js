@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getJobById } from '../../services/API';
@@ -64,6 +63,7 @@ export default function CareerPage() {
       source={source}
     />
     <div 
+// Temp comment
       className={ width <= 990 ? containerStyles
         : loggedIn ? containerStyles 
           : containerStyles + ' px-[15%]'}

@@ -124,5 +124,4 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
     PaginatedControls,
     page,
     setPage,
-// Temp comment
   }

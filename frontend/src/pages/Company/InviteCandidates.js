@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { appendPathToBaseUrl } from '../../services/API';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
-// Temp comment
 
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
@@ -25,7 +24,6 @@ export default function InviteCandidates({ company }) {
       candidate
     }
   }) || [];
-  
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();

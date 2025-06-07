@@ -16,3 +16,4 @@ export default function EditExpertiseForm({ expertise, handleChange }) {
         optionStyles={'text-lg'}
       />
     </>
+  )
