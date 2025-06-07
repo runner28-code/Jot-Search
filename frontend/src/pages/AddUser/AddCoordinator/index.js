@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { renderButtonOrLoading } from '../../../components/RegistrationForm/utils';
 import { registerUser } from '../../../services/API';
 import { validateInput } from '../utils';
+
 export default function AddCoordinator() {
   const [formObject, setFormObject] = useState(defaultState);
   const [submissionObject, setSubmissionObject] = useState({
@@ -136,7 +137,6 @@ export default function AddCoordinator() {
       </div>
       <div className={inputContainer + ' hidden vw-900:flex'}></div>
       <div className={inputContainer}>
-        {/* Password */}
         <label className={labelStyles}>Password</label>
         <input
           type='password'

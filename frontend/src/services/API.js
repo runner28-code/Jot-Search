@@ -107,6 +107,7 @@ export async function addUser(userObject) {
     return normalizeData(data);
   } catch (err) {
     console.log(err);
+// Temp comment
     return err;
   }
 }

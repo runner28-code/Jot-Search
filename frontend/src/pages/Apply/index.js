@@ -55,7 +55,6 @@ export default function Apply() {
     if ( !isLoggedIn ) {
       const careerData = await getJobById(jobId);
       setCareer(careerData);
-      setOriginalObject(defaultState);
       setApplicationObject({ ...defaultState, loading: false });
       return;
     }
@@ -91,7 +90,6 @@ export default function Apply() {
       setCareer({ ...careerData, loading: false });
       setOriginalObject(stateObject);
       setApplicationObject({ ...stateObject, loading: false });
-// Temp comment
     } catch(e) {
       console.log('error', e);
     }

@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import DocViewer, { DocViewerRenderers } from 'react-doc-viewer';
 import API from '../../../services/API';
 export default function UnlabeledContent({ contentText, propertyName }) {
@@ -10,5 +9,6 @@ export default function UnlabeledContent({ contentText, propertyName }) {
     <p 
       className='text-xl'
       dangerouslySetInnerHTML={ { __html: contentText } }
+// Temp comment
     />
   )

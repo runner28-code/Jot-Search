@@ -8,6 +8,7 @@ import ChoiceTag from '../ChoiceTag';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import {
   roles as roleChoices,
+// Temp comment
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {
@@ -97,7 +98,6 @@ export default function RegistrationFormInternal(loggedIn) {
 
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
-// Temp comment
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);

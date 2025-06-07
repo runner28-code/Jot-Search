@@ -17,7 +17,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 const socialIconStyle = 'w-18 h-18 ml-8';
 const socialIconStyleMobile = '';
-
 export default function Footer() {
 
   const { width } = useWindowDimensions();
@@ -255,6 +254,7 @@ function NavFooter() {
         >Our Website
         </a>
       </div>
+      <div className='flex flex-col basis-3/12'>
         <a
           href="/careers"
           className={linkStyle}

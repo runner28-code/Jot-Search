@@ -53,7 +53,6 @@ export default function ResultContainer(props) {
       { renderHeader() }
       <div
         className={`${baseStyles} ${resultsContainerStyles}`}>
-// Temp comment
         { renderResults(results, loading, type, active, compact, isFavoriteOverride, agoText, selectableProps) }
       </div>
       { renderFooter() }

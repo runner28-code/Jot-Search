@@ -78,7 +78,6 @@ export class UserController {
       return {
         result,
         error,
-      };
     } else {
       return {
         result: false,

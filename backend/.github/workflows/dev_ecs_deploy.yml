@@ -34,6 +34,7 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
 
+    - name: Add secrets to task definition
       uses: cschleiden/replace-tokens@v1
       with:
         files: ${{ env.ECS_TASK_DEFINITION }}

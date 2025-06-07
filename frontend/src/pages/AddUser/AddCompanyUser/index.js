@@ -29,7 +29,6 @@ export default function AddCompanyUser() {
     <div className='flex flex-col'>
       <div className={ containerStyles + 'bg-sky-100'}>
         <h2 className={ titleStyles + 'text-royalBlue flex'}>
-          <img
             src={Flag}
             alt='flag icon'
             className='w-12 h-12 mr-6'

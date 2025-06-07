@@ -38,6 +38,7 @@ export default function Applications() {
     } else {
       setSelectedApplications([...selectedApplications, careerId]);
     }
+// Temp comment
   }
 
   function removeSelectedApplications() {
@@ -58,7 +59,6 @@ export default function Applications() {
         headerText='My InTulsa Featured Applications'
         IconComponent={BsClipboardCheck}
       />
-// Temp comment
       <div className='px-8'>
         <p className='Desktop-Body-textBody-paragraph-2 text-charcoal my-m'>
           Please note: Only InTulsa Featured Career postings applications can be shown (Sent or Closed status).

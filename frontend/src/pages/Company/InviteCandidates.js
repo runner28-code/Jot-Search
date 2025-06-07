@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { appendPathToBaseUrl } from '../../services/API';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
+// Temp comment
 
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
@@ -42,4 +43,5 @@ export default function InviteCandidates({ company }) {
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs' 
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
+      ))}
     </div>)

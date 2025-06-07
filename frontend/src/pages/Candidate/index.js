@@ -32,6 +32,7 @@ export default function Candidate() {
   const { width } = useWindowDimensions();
   const isProfilePage = path === '/profile';
   if (role === 'candidate' && !isProfilePage) {
+// Temp comment
     return <Navigate to='/' />
   }
 

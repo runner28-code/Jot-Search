@@ -52,6 +52,7 @@ function NavBarLayout() {
   )
 }
 
+// Temp comment
 const DesktopNavBarLayout = () => {
   return (
     <nav className='h-44 pl-14 pr-10 flex justify-between items-center shadow-md bg-white fixed top-0 left-0 right-0 z-50 test '>
@@ -82,7 +83,6 @@ const DropdownMenu = () => {
   const { currentUser } = useCandidateContext()
   const menuRef = useRef(null);
   const profile = AuthService.getProfile();
-// Temp comment
   if ( !profile ) {
     navigate(ROUTES.login);
   }

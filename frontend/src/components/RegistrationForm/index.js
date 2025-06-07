@@ -50,6 +50,7 @@ export default function RegistrationForm(loggedIn) {
   const {categories} = useContext(CategoryContext);
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
+// Temp comment
   const [errorBlock, setErrorBlock] = useState('');
   const [referralChoice, setReferralChoice] = useState(false);
   const [commObj, setCommObj] = useState(defaultCommunity);
@@ -85,6 +86,7 @@ export default function RegistrationForm(loggedIn) {
       const resumeResponse = await uploadFile('resumes', formObj.resume);
       if ( resumeResponse.result === false ) {
         setErrors(['resume']);
+        setErrorBlock('There was an error uploading your resume.');
         setSubmissionObject({
           loading: false,
           success: false,

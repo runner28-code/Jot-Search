@@ -42,7 +42,6 @@ class AuthService {
   async login(idToken) {
     localStorage.setItem('id_token', idToken);
     const role = this.getUserRole();
-    if ( role === 'candidate' ) {
       await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
       await this.refreshSavedCandidates();
@@ -62,6 +61,7 @@ class AuthService {
   clearStorage() {
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
+    localStorage.removeItem('savedJobs');
     localStorage.removeItem('savedCompanies');
     localStorage.removeItem('savedCandidates');
   }

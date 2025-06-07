@@ -38,7 +38,6 @@ export const choices = {
   },
   candidates: {
     label: 'Candidates',
-// Temp comment
     icon: CandidatesIcon,
     link: ROUTES.candidates,
   },
@@ -71,7 +70,6 @@ export const choices = {
     label: 'Logout',
     icon: LogoutIcon,
     link: ROUTES.logout,
-  },
 }
 
 // Map choices to appropriate icons

@@ -62,6 +62,7 @@ export class CandidateController {
         candidate = await db.candidate.findFirst({
           where: {
             id,
+          },
         });
       }
 

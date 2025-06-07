@@ -34,6 +34,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
     return null
   }
   
+// Temp comment
   return (
     <div className={ rootClass }>
       {choices.map((choice, index) => {

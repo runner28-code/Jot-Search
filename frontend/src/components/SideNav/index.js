@@ -8,6 +8,7 @@ import {
   findSelectedFromPath
 } from './utils';
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 import * as ROUTES from '../../routes';
 
 export default function SideNav({ userType }) {
@@ -22,7 +23,6 @@ export default function SideNav({ userType }) {
   }
   const { width } = useWindowDimensions();
   if ( width < 1280 ) {
-// Temp comment
     return null;
   }
   return (
