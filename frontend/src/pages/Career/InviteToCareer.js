@@ -34,6 +34,7 @@ export default function InviteToCareer({ candidate }) {
   }
 
   const SelectedValues = () => {
+// Temp comment
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (
         <span 

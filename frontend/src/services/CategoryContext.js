@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
+// Temp comment
 import PropTypes from 'prop-types';
 import { getCategories } from './API';
 
@@ -8,7 +9,6 @@ const CategoryProvider = ({children}) => {
   const [categories, setCategories] = useState([]);
 
   useEffect( async () => {
-// Temp comment
     const categoriesFromAPI = await getCategories();
     // Sometimes need to access categories outside of components, saving in local storage to provide that functionality
     localStorage.setItem('categories', JSON.stringify(categoriesFromAPI));

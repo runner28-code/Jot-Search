@@ -13,7 +13,6 @@ class AuthService {
     let role = 'guest';
     if (this.loggedIn()) {
       role = this.getProfile().role;
-    }
     return role;
   }
 
@@ -80,6 +79,7 @@ class AuthService {
       localStorage.setItem('savedJobs', JSON.stringify([]));
       localStorage.setItem('savedCompanies', JSON.stringify([]));
     }
+  }
 
   async refreshSavedCandidates() {
     try {

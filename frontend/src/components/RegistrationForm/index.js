@@ -123,7 +123,6 @@ export default function RegistrationForm(loggedIn) {
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
       setTimeout(() => {
-        setFormObj(defaultState);
         setSubmissionObject({
           loading: false,
           success: false,
@@ -138,7 +137,6 @@ export default function RegistrationForm(loggedIn) {
     setErrorBlock('');
     setErrors([]);
     setFormObj({
-// Temp comment
       ...formObj,
       firstName: firstName.value,
       lastName: lastName.value,

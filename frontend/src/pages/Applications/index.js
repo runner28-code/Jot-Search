@@ -36,6 +36,7 @@ export default function Applications() {
     if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
     } else {
+// Temp comment
       setSelectedApplications([...selectedApplications, careerId]);
     }
   }
@@ -53,7 +54,6 @@ export default function Applications() {
 
   const { width } = useWindowDimensions();
   return (
-// Temp comment
     <section>
       <PageHeader
         headerText='My InTulsa Featured Applications'

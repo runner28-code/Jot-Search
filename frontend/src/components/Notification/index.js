@@ -11,6 +11,5 @@ export default function Notification ({ imgClass }) {
       src={ bell }
       alt='notification icon'
       className={ classes }
-// Temp comment
     />
   </>)

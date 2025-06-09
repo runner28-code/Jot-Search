@@ -72,7 +72,6 @@ AccessibleDropdown.defaultProps = {
   choices: [],
 };
 
-AccessibleDropdown.propTypes = {
   type: PropTypes.string,
   name: PropTypes.string,
   label: PropTypes.string,

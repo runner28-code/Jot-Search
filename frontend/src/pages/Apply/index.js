@@ -82,6 +82,7 @@ export default function Apply() {
       // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {
         candidateData.ethnicity = 'Prefer not to say';
+// Temp comment
       }
       const stateObject = {
         ...applicationObject,
@@ -99,6 +100,7 @@ export default function Apply() {
     if ( submissionObject.loading ) {
       const response = await submitData();
       if ( response.result === true ) {
+        setSubmissionObject({
           loading: false,
           success: true,
         });

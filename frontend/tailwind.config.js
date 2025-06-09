@@ -47,7 +47,6 @@ module.exports = {
         midGrey: '#94949D',
         grey: '#EBEBEB',
         charcoal: '#3C3C4B',
-// Temp comment
         // Utility
         searchGreen: '#62CA71',
         success: '#2EA248',
@@ -81,7 +80,6 @@ module.exports = {
         'black50%': '#00000080',
       },
       backgroundImage: {
-        'tulsa-3': 'url(\'./assets/images/tulsa-3.webp\')',
         'tulsa-3-vert': 'url(\'./assets/images/tulsa-3-vert.webp\')',
         'explore-tulsa': 'url(\'./assets/images/home-hero.jpg\')',
         'join-hero': 'url(\'./assets/images/join-hero.jpg\')',

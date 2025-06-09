@@ -60,6 +60,5 @@ export const getAppliedJobsByUser = async (userId: string) => {
       where: {
         applications: {
           some: {
-            userId,
           },
         },

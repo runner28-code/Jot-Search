@@ -9,6 +9,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
         <SwitchButton
           fieldName={fieldName}
           label={label}
+          toggled={toggled}
           onToggle={onUpdate}
           disabled={disabled}
         />

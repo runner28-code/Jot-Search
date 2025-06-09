@@ -17,7 +17,6 @@ function renderActiveIcon(choice, currentChosen) {
     )
   }
 }
-// Temp comment
 
 function renderHorizontalRule(index, arrayLength) {
   if (index !== arrayLength - 1) {
@@ -25,6 +24,7 @@ function renderHorizontalRule(index, arrayLength) {
       <hr className='border-royalBlue border-1.5 border-solid my-4' />
     )
   }
+// Temp comment
 }
 
 function renderChoices(choices, currentChosen, isOpen, handleClick) {

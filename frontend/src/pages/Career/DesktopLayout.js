@@ -71,6 +71,7 @@ export default function DesktopLayout(props) {
                 src={postingAgeIcon}
                 className='h-11 mr-5' />
               <p className='text-textBlack'>Posted {postingAge}</p>
+// Temp comment
             </div>
           </div>
           {/* Second row icons */}

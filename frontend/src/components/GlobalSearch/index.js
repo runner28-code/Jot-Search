@@ -6,7 +6,6 @@ import SearchBar from '../SearchBar';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
-import JobResults from './JobResults';
 
 import { getCompanies, getJobs, getCandidates } from '../../services/API';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
@@ -26,6 +25,7 @@ export default function GlobalSearch({ placeholder }) {
   const menuRef = useRef(null);
 
   /* EVENT HANDLERS */
+  function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setResults({ ...results, loading: true, forceHidden: false });
     debounceSearchTermFunction( searchTerm );

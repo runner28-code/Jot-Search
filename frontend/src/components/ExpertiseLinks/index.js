@@ -60,6 +60,7 @@ export default function ExpertiseLinks() {
         </Link>
         {/* Operations */}
         <Link
+// Temp comment
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Operations' }}
@@ -74,6 +75,7 @@ export default function ExpertiseLinks() {
         {/* Finance */}
         <Link
           to={ROUTES.careers}
+          className={linkStyles}
           state={{ Expertise: 'Finance' }}
         >
           <img

@@ -14,8 +14,8 @@ export default function NavBar() {
   const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {
-// Temp comment
     return <MobileNavBarLayout />
   } else {
     return <DesktopNavBarLayout />
+// Temp comment
   }

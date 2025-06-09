@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 export default function MobileHeader(props) {
-// Temp comment
   const {
     headerText,
     icon,
@@ -18,6 +17,7 @@ export default function MobileHeader(props) {
       { icon && (
         <img
           src={ icon }
+// Temp comment
           alt='header icon'
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
