@@ -1,4 +1,3 @@
-import { useState, useEffect, useContext } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
@@ -206,7 +205,6 @@ export default function RegistrationForm() {
                 handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}
               />
             ) : <p className='text-royalBlue text-md'>No skills selected</p>}
-// Temp comment
           </div>
         </div>
         <div className={flexWidth}>

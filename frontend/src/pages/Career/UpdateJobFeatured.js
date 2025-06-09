@@ -16,7 +16,6 @@ export const UpdateJobFeatured = ({ job }) => {
   const enabledToggleStyles = 'translate-x-12'
   const disabledToggleStyles = 'translate-x-0'
 
-  const toggleStyles = toggled ? enabledToggleStyles : disabledToggleStyles
 
   return (
     <div className='flex flex-col'>
@@ -25,6 +24,7 @@ export const UpdateJobFeatured = ({ job }) => {
       
       <div className='flex space-x-16'>
         <button
+          type="button" 
           name="featured"
           className={`${buttonStyles} relative inline-flex h-12 w-24 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none`}
           role="switch"

@@ -17,7 +17,6 @@ export default function DashboardMinified({ location }) {
           location={location}
           loggedIn={loggedIn}
         />
-        <MinifiedTitle location={location} />
       </div>
     )
   }

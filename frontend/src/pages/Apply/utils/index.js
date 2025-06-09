@@ -71,7 +71,6 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
     <label
       htmlFor={`${name}-${attribute}`}
       className='mt-4 mb-5 flex items-center text-black'
-// Temp comment
     >
       <input
         type='checkbox'
@@ -84,4 +83,5 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
       />
       <p className='text-md ml-2'>{attribute}</p>
     </label>
+// Temp comment
   )

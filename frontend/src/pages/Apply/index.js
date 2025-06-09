@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// Temp comment
 import { useParams, useNavigate } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import PhoneInput from 'react-phone-number-input/input'
@@ -100,7 +99,6 @@ export default function Apply() {
     if ( submissionObject.loading ) {
       const response = await submitData();
       if ( response.result === true ) {
-        setSubmissionObject({
           loading: false,
           success: true,
         });

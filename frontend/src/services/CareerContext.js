@@ -29,6 +29,7 @@ const mockJobsData = [
     specialty: 'Technology'
   },
   {
+    id: '2cb874e2-0510-405e-9491-183d2e0e26d7',
     title: 'Copywriter',
     company: 'OSU', // ! Not in schema yet
     clientCorporationID: 'd4c0d062-37cd-4691-b223-e09e75a638f9',

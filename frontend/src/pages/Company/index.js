@@ -21,6 +21,7 @@ export default function Company() {
   const [companyData, setCompanyData] = useState({});
   const [loading, setLoading] = useState(true);
 
+  useEffect(async () => {
     const companyFromApi = await getCompanyById(id);
     setCompanyData(companyFromApi.company);
     setLoading(false);
@@ -54,6 +55,7 @@ export default function Company() {
 
   if (loading) { return <LoadingSpinner /> }
   return (
+// Temp comment
     <div className={ loggedIn ? 'vw-1280:pr-12 mx-[5%]' : ''}>
       <RenderHeader
         type='company'

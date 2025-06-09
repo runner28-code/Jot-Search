@@ -91,7 +91,6 @@ export const register = async (data: User) => {
     console.log("success");
 
     if (process.env && process.env.FRONTEND_URL) {
-      await sendNewUserNotification(user.email, user.firstname || "");
     }
 
     return { result: true };

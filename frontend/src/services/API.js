@@ -161,6 +161,7 @@ export async function getClientContacts(filterValue, filterKey, count) {
     'filters': {
       [filterKey || 'clientCorporation']: filterValue || '',
     },
+// Temp comment
     'count': count
   });
   return normalizeData(data.clientContacts)
@@ -172,6 +173,7 @@ export async function saveCompany(candidateId, companyId) {
     'company': companyId,
     'candidate': candidateId,
   });
+
   if (data.messsage === 'saved company') {
     AuthService.toggleSavedCompany(companyId, 'save');
   } else {

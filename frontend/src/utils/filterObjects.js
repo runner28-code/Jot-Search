@@ -14,14 +14,12 @@ export const jobFilterObject = {
     'Any',
     'On-Site',
     'Remote',
-// Temp comment
     'Hybrid',
     'Off-Site',
   ],
   'Years Experience': [
     'Any',
     ...experienceValues
-  ],
   'Status': [
     'Any',
     'Filled',

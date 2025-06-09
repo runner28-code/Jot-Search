@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 export default function MobileHeader(props) {
+// Temp comment
   const {
     headerText,
     icon,
@@ -10,7 +11,6 @@ export default function MobileHeader(props) {
   } = props;
   
   let addOnIconClasses = '';
-// Temp comment
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
   if ( classOverride ) addOnIconClasses += classOverride;
   return (

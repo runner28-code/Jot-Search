@@ -36,7 +36,6 @@ export function formatCandidateData(candidateData) {
   if ( candidateData.firstname && !candidateData.firstName ) formattedData.firstName = candidateData.firstname;
   if ( candidateData.lastname && !candidateData.lastName ) formattedData.lastName = candidateData.lastname;
 
-// Temp comment
   return formattedData;
 }
 
@@ -93,6 +92,7 @@ export function formatPhoneNumber(phoneNumberString) {
   if (phoneNumberString.length === 10) {
     const areaCode = phoneNumberString.slice(0, 3);
     const firstThree = phoneNumberString.slice(3, 6);
+// Temp comment
     const lastFour = phoneNumberString.slice(6, 10);
     return `(${areaCode}) ${firstThree}-${lastFour}`;
   }

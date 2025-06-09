@@ -7,7 +7,6 @@ import CandidateFilterLayout from './CandidateFilterLayout';
 import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
-import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -43,7 +42,6 @@ function useTabState(disabledTabs, userType, pathname) {
       default:
         return useState('careers');
     }
-// Temp comment
   }
   return useActiveTabState(userType === 'candidate' ? 'careers' : 'candidates');
 }

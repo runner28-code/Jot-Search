@@ -10,7 +10,6 @@ export default function CompanyDashboard({userType}) {
   const profile = AuthService.getProfile();
   const headerStyles = 'font-spaceGrotesk font-bold text-h1 text-royalBlue ';
   return (
-// Temp comment
     <>
       <PageHeader
         headerText={profile.firstname + ' Dashboard'}
@@ -19,6 +18,7 @@ export default function CompanyDashboard({userType}) {
       <Stats
         headerStyles={headerStyles}
         userType={userType}
+// Temp comment
       />
       <AssistanceCard />
       <h2 className='mt-22 font-spaceGrotesk font-semibold text-h5 text-charcoal'>Search</h2>

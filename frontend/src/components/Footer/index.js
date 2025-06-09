@@ -193,7 +193,6 @@ export default function Footer() {
             href={ROUTES.termsOfService}
             className='underline'
             target='_blank'
-            rel='noreferrer'
           >
               Terms of Service
           </a>

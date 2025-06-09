@@ -21,7 +21,6 @@ class AuthService {
     // Checks if there is a saved token and it's still valid
     const token = this.getToken();
     return !!token && !this.isTokenExpired(token); // handwaiving here
-// Temp comment
   }
 
   isTokenExpired(token) {
@@ -81,7 +80,6 @@ class AuthService {
       localStorage.setItem('savedJobs', JSON.stringify([]));
       localStorage.setItem('savedCompanies', JSON.stringify([]));
     }
-  }
 
   async refreshSavedCandidates() {
     try {

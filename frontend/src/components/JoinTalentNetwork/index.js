@@ -29,6 +29,7 @@ export default function JoinTalentNetwork() {
           <div className='mt-8 px-[5%]'>
             <h6 className='text-[2.5rem] mt-12 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>
             <p className='text-slateGray text-ml mt-6 font-light leading-[3.6rem]'>By signing up, you will be able to connect and support you with top companies ready to help you take the next step in your career in Tulsa.</p>
+// Temp comment
           </div>
         </div>
       </section>
@@ -44,7 +45,6 @@ export default function JoinTalentNetwork() {
           </h1>
           <p className='text-ml text-softWhite mt-18'>
             Build your profile with the type of opportunity you want to attract and next exclusively with our network. Receive email alerts that make you first to know about relevant new opportunities, based on your preferences.
-// Temp comment
           </p>
           <Link
             to={ROUTES.signup}

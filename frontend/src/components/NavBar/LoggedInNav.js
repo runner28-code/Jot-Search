@@ -58,6 +58,8 @@ const DesktopNavBarLayout = () => {
       {/* Logo */}
       <Link to={ROUTES.root}>
         <img
+          src={inTulsaLogoText}
+// Temp comment
           alt='logo'
         />
       </Link>

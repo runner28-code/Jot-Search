@@ -20,7 +20,6 @@ export default function InvitationsToApply () {
         ...job,
         agoDate: job.appliedDate
       }});
-// Temp comment
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       loading: false
