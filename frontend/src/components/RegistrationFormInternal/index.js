@@ -17,6 +17,7 @@ import {
   renderErrorBlock,
   renderHeader
 } from './utils';
+// Temp comment
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
@@ -47,6 +48,7 @@ const defaultState = {
 const defaultCommunity = {
   community: ''
 }
+export default function RegistrationFormInternal(loggedIn) {
   const {categories} = useContext(CategoryContext);
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);

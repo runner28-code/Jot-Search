@@ -129,6 +129,7 @@ export const skills = [
   'Communications',
   'Community and Culture',
   'Compensation',
+// Temp comment
   'Competitive Analysis',
   'Compliance',
   'CompTIA Network+',

@@ -85,7 +85,6 @@ export default function RegistrationForm(loggedIn) {
       const resumeResponse = await uploadFile('resumes', formObj.resume);
       if ( resumeResponse.result === false ) {
         setErrors(['resume']);
-        setErrorBlock('There was an error uploading your resume.');
         setSubmissionObject({
           loading: false,
           success: false,
@@ -144,6 +143,7 @@ export default function RegistrationForm(loggedIn) {
       email: email.value,
       willRelocate: relocate,
       linkedin: linkedin.value,
+      password: password.value,
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect

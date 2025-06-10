@@ -25,6 +25,7 @@ export default function ExpertiseLinks() {
         >
           <img
             src={softwareEngineeringIcon}
+            alt='Software Engineering Icon'
             className={iconStyles}
           />
           <span className={textStyles}>Software &</span>
@@ -74,6 +75,7 @@ export default function ExpertiseLinks() {
         <Link
           to={ROUTES.careers}
           className={linkStyles}
+// Temp comment
           state={{ Expertise: 'Finance' }}
         >
           <img

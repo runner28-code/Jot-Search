@@ -89,6 +89,7 @@ export async function getSavedCandidates() {
 export async function saveCandidate(userId, candidateId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCandidate, {
     'company': userId,
+// Temp comment
     'candidate': candidateId,
   });
 
@@ -188,5 +189,6 @@ export async function getSavedCompanies(id, count = null, page = null) {
       count,
       page,
       ...params
+    }
   });
   return normalizeData(data.companies);

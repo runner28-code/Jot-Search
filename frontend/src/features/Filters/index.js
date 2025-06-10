@@ -7,7 +7,6 @@ export default function Filters(props) {
     handleFilterChange,
     defaultFilterObject,
     filterObject,
-// Temp comment
     searchLabel,
     searchTerm,
     setSearchTerm,
@@ -17,6 +16,7 @@ export default function Filters(props) {
 
   let filterContainerStyles = 'flex flex-col justify-between gap-xxl-4 pb-9 vw-768:px-14 ';
   if (marginBottom) {
+// Temp comment
     filterContainerStyles += `mb-${marginBottom} `;
   }
   return (

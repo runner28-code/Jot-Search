@@ -23,7 +23,6 @@ export default function CompanyFilterLayout(props) {
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
         >
-          Clear All
         </button>
       </div>
     </div>

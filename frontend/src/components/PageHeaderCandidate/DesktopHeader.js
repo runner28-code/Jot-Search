@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import SourceIdentifier from '../SourceIdentifier';
-// Temp comment
 
 export default function DesktopHeader(props) {
   const {

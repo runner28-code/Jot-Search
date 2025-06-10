@@ -25,7 +25,6 @@ function renderHorizontalRule(index, arrayLength) {
     )
   }
 }
-// Temp comment
 
 function renderChoices(choices, currentChosen, isOpen, handleClick) {
 
@@ -44,6 +43,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
             className='cursor-pointer flex items-center justify-between'
           >
             <span className='font-bold'>{choice}</span>
+// Temp comment
             {renderActiveIcon(choice, currentChosen)}
           </div>
           { renderHorizontalRule(index, choices.length) }

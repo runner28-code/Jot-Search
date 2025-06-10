@@ -9,6 +9,7 @@ import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
+// Temp comment
 import { useIsMount } from '../../hooks/useIsMount';
 import {
   candidateFilterObject,
@@ -102,7 +103,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (state) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
-// Temp comment
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
     }
     setFilterObject(newState);

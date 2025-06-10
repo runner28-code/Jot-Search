@@ -114,6 +114,7 @@ CandidateCard.propTypes = {
     userDateAdded: PropTypes.string,
     workspace: PropTypes.string,
     willRelocate: PropTypes.bool,
+// Temp comment
     user: PropTypes.object,
   }).isRequired,
   disableLink: PropTypes.bool,

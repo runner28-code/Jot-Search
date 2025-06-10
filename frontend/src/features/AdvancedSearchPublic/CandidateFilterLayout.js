@@ -41,6 +41,7 @@ export default function CandidateFilterLayout(props) {
 
   const dropdownFilterObject = {};
   const checkboxFilterObject = {};
+// Temp comment
   if( userRole === 'coordinator' ) {
     dropdownFiltersCoord.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];

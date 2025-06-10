@@ -35,6 +35,7 @@ async function seedJobs() {
         description: "Come join our rockstar team for good money and team",
         datasource: Datasource.main as any,
         status: "active",
+        categoryId: (await db.category.findFirst({
           where: { name: "Software & Engineering" },
         }))!.id,
       },

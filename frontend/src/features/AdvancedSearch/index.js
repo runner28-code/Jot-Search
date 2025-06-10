@@ -9,7 +9,6 @@ import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
-// Temp comment
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
@@ -59,6 +58,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   }
 
   const [filterObject, setFilterObject] = useState(initialFilterState);
+// Temp comment
   const [page, setPage] = useState(1);
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */

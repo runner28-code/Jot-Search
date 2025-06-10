@@ -112,6 +112,7 @@ export default function Footer() {
       <a href={ROUTES.facebook}>
         <img
           src={facebook}
+          className={socialIconStyle}
         />
       </a>
       <a href={ROUTES.instagram}>
@@ -298,6 +299,7 @@ function NavFooter() {
 }
 
 function NavFooterMobile() {
+// Temp comment
 
   const blueLinkStyle = 'text-sm text-royalBlue font-spaceGrotesk font-semibold mb-4';
   const linkStyle = 'text-sm zinc-800 mb-4';

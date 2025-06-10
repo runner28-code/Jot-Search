@@ -111,7 +111,6 @@ function DesktopCard({ dataObj, active }) {
             <p className='text-textBlack'>{addressString}</p>
           </div>
           {/* Remote/Onsite/Hybrid */}
-          <div className='w-1/3 flex items-center pr-4'>
             <LaptopIcon
               className='fill-midGrey h-11 w-8 mr-5' />
             <p className='text-textBlack'>{data.onSite}</p>

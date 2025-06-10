@@ -7,7 +7,6 @@ import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import locationIcon from '../../assets/icons/placepin.svg';
 import clockIcon from '../../assets/icons/clock.svg';
 import postingAgeIcon from '../../assets/icons/calendar.svg';
-import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { apply as applyRoute } from '../../routes';
 import { UpdateJobStatus } from './UpdateJobStatus';
@@ -75,7 +74,6 @@ export default function DesktopLayout(props) {
           </div>
           {/* Second row icons */}
           <div className='w-full flex items-center mt-xl'>
-// Temp comment
             {/* Employment Type */}
             <div className='w-1/3 flex items-center'>
               <img
