@@ -20,6 +20,7 @@ export const jobFilterObject = {
   'Years Experience': [
     'Any',
     ...experienceValues
+// Temp comment
   ],
   'Status': [
     'Any',
@@ -87,7 +88,6 @@ export const candidateFilterObject = {
     'Any',
     'Yes',
     'No'
-// Temp comment
   ],
   'Actively Looking': [
     'Any',

@@ -64,7 +64,6 @@ export default function Apply() {
       const [careerData, candidateData] = await Promise.all([
         getJobById(jobId),
         getCandidateById(user_id),
-      ]);
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';
       } else {
@@ -82,7 +81,6 @@ export default function Apply() {
       // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {
         candidateData.ethnicity = 'Prefer not to say';
-// Temp comment
       }
       const stateObject = {
         ...applicationObject,

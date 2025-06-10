@@ -157,3 +157,5 @@ export const saveClientContacts = async (contacts: any[]) => {
         console.log(`\nSavng ClientContact with ID = ${contact.id}`);
         const existing = await db.clientContact.findFirst({
           where: {
+            externalID: contact.id,
+          },

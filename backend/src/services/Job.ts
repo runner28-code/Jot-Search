@@ -42,7 +42,6 @@ const validateJob = (job: Job): string | undefined => {
 };
 
 const sanitizeJob = (job: Job): Job => {
-  const newJob = { ...job };
 
   Object.keys(newJob).forEach((key) => {
     const typedKey = key as keyof Job;
@@ -60,5 +59,8 @@ export const getAppliedJobsByUser = async (userId: string) => {
       where: {
         applications: {
           some: {
+            userId,
           },
         },
+      },
+      include: {

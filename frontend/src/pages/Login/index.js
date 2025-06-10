@@ -13,7 +13,6 @@ export default function Login() {
     event.preventDefault();
     const { email, password } = event.target;
     const res = await API.post(ROUTES.APIlogin, {
-      email: email.value,
       password: password.value,
     });
 

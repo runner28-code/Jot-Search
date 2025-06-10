@@ -66,7 +66,6 @@ export default function Company() {
             : ''}
       >
         <div className={ width >= 990 ? 'bg-white p-16 mt-8 border-2 border-midGrey border-solid rounded-3xl relative' : 'bg-white p-4 mt-8 border-2 border-midGrey border-solid rounded-3xl relative'}>
-// Temp comment
           {/* Header */}
           { width >= 990 ?
             <Header
@@ -101,7 +100,6 @@ export default function Company() {
         <div className='mt-12'>
           <button
             className='border border-2 border-royalBlue text-royalBlue py-6 px-20 text-lg rounded-xl mb-12'
-            onClick={() => navigate(-1)}
           >
           Back
           </button>

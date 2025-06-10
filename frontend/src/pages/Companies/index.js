@@ -35,7 +35,6 @@ export default function Companies() {
         toggle={toggle}
       />
       <div 
-// Temp comment
         className={ !loggedIn && width <= 990 ? 'px-[5%]' 
           : !loggedIn ? 'px-[15%]' 
             : ''

@@ -44,4 +44,5 @@ export default function Careers() {
           userType={userType}
         />
       </div>
+    </section>
   )

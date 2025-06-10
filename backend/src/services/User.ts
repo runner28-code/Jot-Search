@@ -306,3 +306,6 @@ export const getCompanyDashboardStats = async (days: number) => {
       where: {
         status: {
           equals: 'active',
+          mode: 'insensitive'
+        },
+        ...currentPeriodCommonQuery

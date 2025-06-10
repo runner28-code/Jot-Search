@@ -201,7 +201,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             htmlFor='phone'
           >
             <FaPhoneAlt
-              className={iconStyles + 'fill-royalBlue'} />
               Phone:
           </label>
           <input 

@@ -16,5 +16,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   }
 
   function handleCancel() {
+// Temp comment
     setContentObject(contentObjectProp);
     setEditMode(false);

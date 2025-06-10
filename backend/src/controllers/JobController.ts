@@ -123,6 +123,7 @@ export class JobController {
       const datasourceToEnum: Dictionary<Datasource> = {
         main: Datasource.main,
         bullhorn: Datasource.bullhorn,
+        getro: Datasource.getro,
       };
 
       const _datasource = datasource ? datasourceToEnum[datasource] : undefined;
@@ -207,3 +208,5 @@ export class JobController {
       ALLOWED_JOB_KEYS.has(filter.key as JobKey)
     );
 
+    const filteredFields = fields?.filter((field) =>
+      ALLOWED_JOB_KEYS.has(field as JobKey)

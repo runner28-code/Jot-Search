@@ -25,6 +25,7 @@ export default function NavBar() {
   } else {
     return <DesktopNavBarLayout />
   }
+// Temp comment
 }
 
 function NavBarLayout() {
@@ -32,7 +33,6 @@ function NavBarLayout() {
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50 '>
       <div className='h-30 px-8 flex justify-between items-center'>
         <Link to={ROUTES.root}>
-// Temp comment
           <img
             className='my-8 w-3/4'
             src={inTulsaLogoText}

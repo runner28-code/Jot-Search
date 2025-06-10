@@ -7,6 +7,7 @@ export default function Filters(props) {
     handleFilterChange,
     defaultFilterObject,
     filterObject,
+// Temp comment
     searchLabel,
     searchTerm,
     setSearchTerm,
@@ -41,6 +42,7 @@ Filters.propTypes = {
 
 export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick) {
   if (setSearchTerm) { // if provided a function, render search bar
+    return (
       <FilterSearch
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}

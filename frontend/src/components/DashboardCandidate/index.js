@@ -9,7 +9,6 @@ import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
-
 export default function DashboardCandidate({togglePassState, toggle}) {
   const { width } = useWindowDimensions();
 
@@ -30,7 +29,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
             to={ROUTES.careers}
           >
             <CareerIcon />
-// Temp comment
             <p className='ml-4'>Careers</p>
           </Link>
           <Link

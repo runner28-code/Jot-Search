@@ -21,7 +21,6 @@ export default function AddCompanyUser() {
     setSearch(company.name);
   }
 
-  const paragraphStyles = 'opacity-70 mb-8';
   let titleStyles = 'font-spaceGrotesk items-center text-md vw-900:text-xl mb-8 ';
   let containerStyles = 'border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12 px-6 vw-900:px-14 ';
 
@@ -62,6 +61,7 @@ export default function AddCompanyUser() {
             onChange={(e) => setSearch(e.target.value)}
             className='placeholder-textBlack text-md bg-lightGrey w-full remove-outline rounded-xl border border-solid border-2 border-netural-400 px-4 py-4 mt-2' />
           <img
+            src={Search}
             alt='search icon'
             className='absolute right-6 top-6 h-10 w-10 vw-900:h-12 vw-900:w-12'
           />

@@ -19,7 +19,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       className={buttonStyles}
       type='submit'>
       {buttonString}
-// Temp comment
     </button>
   )
 }

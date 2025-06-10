@@ -188,6 +188,5 @@ export async function getSavedCompanies(id, count = null, page = null) {
       count,
       page,
       ...params
-    }
   });
   return normalizeData(data.companies);

@@ -31,3 +31,4 @@ CREATE TABLE "Lead" (
     "firstName" TEXT,
     "isAnonymized" BOOLEAN,
     "isDayLightSavingsTime" BOOLEAN,
+    "isDeleted" BOOLEAN,

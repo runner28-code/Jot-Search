@@ -239,3 +239,6 @@ const job_filter_exclude_keys = [
   "machine operator",
   "machinist",
   "maintenance",
+  "mammographer",
+  "manufacturing",
+  "massage",

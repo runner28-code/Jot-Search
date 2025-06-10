@@ -123,6 +123,7 @@ export default function RegistrationForm(loggedIn) {
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
       setTimeout(() => {
+        setFormObj(defaultState);
         setSubmissionObject({
           loading: false,
           success: false,
@@ -143,7 +144,6 @@ export default function RegistrationForm(loggedIn) {
       email: email.value,
       willRelocate: relocate,
       linkedin: linkedin.value,
-      password: password.value,
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect

@@ -68,6 +68,7 @@ export type Job = {
     date_last_exported?: string;
     date_last_modified?: string;
     date_last_published?: string;
+    degreeList?: string;
     description?: string;
     durationWeeks?: string;
     educationDegree?: string;
@@ -136,7 +137,6 @@ export type ClientContact = {
     email2?: string;
     email3?: string;
     externalID?: string;
-    fax?: string;
     fax2?: string;
     fax3?: string;
     firstName?: string;
@@ -159,3 +159,5 @@ export type ClientContact = {
     password?: string;
     phone?: string;
     phone2?: string;
+    phone3?: string;
+    preferredContact?: string;

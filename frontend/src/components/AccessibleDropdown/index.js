@@ -35,6 +35,7 @@ export default function AccessibleDropdown(props) {
   }
 
   let containerStyles = 'relative ';
+// Temp comment
   containerStyles += stylesObject.marginBottom ? stylesObject.marginBottom : 'mb-16 ';
   let buttonStyles = buildButtonStyles(stylesObject, currentChosen, type);
   let listStyles = 'absolute top-full w-full max-h-140 overflow-y-auto ';
@@ -72,6 +73,7 @@ AccessibleDropdown.defaultProps = {
   choices: [],
 };
 
+AccessibleDropdown.propTypes = {
   type: PropTypes.string,
   name: PropTypes.string,
   label: PropTypes.string,

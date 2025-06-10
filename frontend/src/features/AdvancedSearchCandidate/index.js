@@ -102,6 +102,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (state) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
+// Temp comment
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
     }
     setFilterObject(newState);

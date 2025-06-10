@@ -58,3 +58,4 @@ export const saveMembers = async (members: any[]) => {
 									console.log(`Job with ID: ${member.id} exists`);
 									return -1;
 								}
+								const jobData = { ...member };

@@ -22,6 +22,7 @@ module.exports = {
         },
         'spin-reverse': {
           from: {
+// Temp comment
             transform: 'rotate(180deg)'
           },
           to: {
@@ -80,6 +81,7 @@ module.exports = {
         'black50%': '#00000080',
       },
       backgroundImage: {
+        'tulsa-3': 'url(\'./assets/images/tulsa-3.webp\')',
         'tulsa-3-vert': 'url(\'./assets/images/tulsa-3-vert.webp\')',
         'explore-tulsa': 'url(\'./assets/images/home-hero.jpg\')',
         'join-hero': 'url(\'./assets/images/join-hero.jpg\')',
@@ -125,3 +127,5 @@ module.exports = {
         '17': '4.25rem',
         '18': '4.5rem',
         '19': '4.75rem',
+        '22': '5.5rem',
+        '26': '6.5rem',

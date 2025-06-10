@@ -55,6 +55,7 @@ export type FilterBody = {
   fields: any;
   page: number;
   count: number;
+  operator?: Operator;
 };
 
 type CountFilterResponse = {
@@ -66,3 +67,4 @@ type CountFilterResponse = {
 export type Job = BullhornJob | GetroJob;
 export type JobSearchByID = {
   job?: Job;
+  source: DataSource;

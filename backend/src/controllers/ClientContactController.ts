@@ -20,9 +20,11 @@ export class ClientContactController {
   async searchById(@QueryParam("id") id: string) {
     try {
       const contact = await db.clientContact.findFirst({
+        where: {
           id,
         },
       });
 
       return {
         contact: clearPassword(contact),
+        message: !contact ? "No client contact with given ID" : undefined,
