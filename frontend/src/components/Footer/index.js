@@ -299,7 +299,6 @@ function NavFooter() {
 }
 
 function NavFooterMobile() {
-// Temp comment
 
   const blueLinkStyle = 'text-sm text-royalBlue font-spaceGrotesk font-semibold mb-4';
   const linkStyle = 'text-sm zinc-800 mb-4';
@@ -391,6 +390,5 @@ function NavFooterMobile() {
           Tulsa Jobs
         </a>
       </div>
-    </div>
     <BackToTop />
   </>)

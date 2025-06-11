@@ -34,7 +34,6 @@ const defaultState = {
 };
 export default function RegistrationForm() {
   const {categories} = useContext(CategoryContext);
-  const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
   const [submissionObject, setSubmissionObject] = useState({
@@ -112,6 +111,7 @@ export default function RegistrationForm() {
       ...formObj,
       firstName: firstName.value,
       lastName: lastName.value,
+      email: email.value,
       linkedin: linkedin.value,
       password: password.value,
       verifyPassword: verifyPassword.value,

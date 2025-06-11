@@ -13,6 +13,7 @@ function renderActiveIcon(choice, currentChosen) {
       <img 
         src={checkmarkIcon} 
         alt="checkmark" 
+// Temp comment
         className="w-8 h-8 mr-2" />
     )
   }
@@ -43,7 +44,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
             className='cursor-pointer flex items-center justify-between'
           >
             <span className='font-bold'>{choice}</span>
-// Temp comment
             {renderActiveIcon(choice, currentChosen)}
           </div>
           { renderHorizontalRule(index, choices.length) }

@@ -8,7 +8,6 @@ export const logout = '/logout';
 export const profile = '/profile';
 export const apply = '/apply';
 export const favorites = '/favorites';
-// Temp comment
 export const signup = '/signup';
 export const settings = '/settings';
 export const accountRecovery = '/account-recovery';
@@ -30,6 +29,7 @@ export const activeCareers = '/active-careers';
 export const companyQuickStats = '/company-stats';
 // Coordinator Dashboard
 export const addUser = '/add-user';
+// Temp comment
 export const alerts = '/alerts';
 
 export const careerSeekers = '/career-seeker';

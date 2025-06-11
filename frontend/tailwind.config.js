@@ -11,7 +11,6 @@ module.exports = {
         'spin': 'spin .175s linear forwards',
         'spin-reverse': 'spin-reverse .175s linear forwards'
       },
-      keyframes: {
         'spin': {
           from: {
             transform: 'rotate(0deg)'
@@ -82,7 +81,6 @@ module.exports = {
       backgroundImage: {
         'tulsa-3': 'url(\'./assets/images/tulsa-3.webp\')',
         'tulsa-3-vert': 'url(\'./assets/images/tulsa-3-vert.webp\')',
-// Temp comment
         'explore-tulsa': 'url(\'./assets/images/home-hero.jpg\')',
         'join-hero': 'url(\'./assets/images/join-hero.jpg\')',
         'tulsa-hero': 'url(\'./assets/images/lifeintulsa.jpg\')',

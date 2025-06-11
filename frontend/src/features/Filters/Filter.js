@@ -22,6 +22,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
     setShowDropdown(showDropdown => !showDropdown);
   }
   function handleChoiceClick(choice) {
+// Temp comment
     setShowDropdown(false);
     setSelected(choice);
     handleFilterChange(filterType, choice);
@@ -63,6 +64,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
           className='w-6 h-4'
         />
 
+      </div>
       { renderDropdown( showDropdown, choices, handleChoiceClick ) }
     </div>
   )

@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import HistoryItem from './HistoryItem';
 import ViewAllLink from '../ViewAllLink';
@@ -16,6 +17,7 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
         <HistoryItem 
           key={historyObj.id} 
           historyObj={historyObj} />
+      ))}
       <ViewAllLink 
         href={viewAllHref} 
         text='View Full History' />

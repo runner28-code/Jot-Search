@@ -58,7 +58,6 @@ export default function AdvancedSearch({ disabledTabs }) {
   }
 
   const [filterObject, setFilterObject] = useState(initialFilterState);
-// Temp comment
   const [page, setPage] = useState(1);
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */

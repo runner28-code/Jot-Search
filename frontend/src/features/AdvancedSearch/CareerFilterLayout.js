@@ -10,6 +10,7 @@ const dropdownFilters = [
   'Status',
 ];
 
+// Temp comment
 const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',
@@ -21,6 +22,7 @@ export default function CareerFilterLayout(props) {
 
   const {
     defaultFilterObject,
+    filterObject,
     handleFilterChange,
     searchTerm,
     setSearchTerm,

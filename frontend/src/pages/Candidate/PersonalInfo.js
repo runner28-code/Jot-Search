@@ -33,11 +33,11 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     address1: candidateData.address1 || '',
     referredBy: candidateData.referredBy || '',
     gender: candidateData.gender || '',
+  })
 
   const [editMode, setEditMode] = useState(false);
 
   const [referralChoice, setReferralChoice] = useState(false);
-
   function handleInputChange(e) {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });

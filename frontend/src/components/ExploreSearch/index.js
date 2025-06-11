@@ -104,7 +104,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         >
           Show me
         </button>
-// Temp comment
       </div>
     </div>
   )

@@ -71,6 +71,7 @@ export default function ExpertiseLinksMobile() {
           />
           <span className={textStyles}>Operations</span>
         </Link>
+        {/* Finance */}
         <Link
           to={ROUTES.careers}
           className={linkStyles}

@@ -81,6 +81,7 @@ export default function FormInput(props) {
         inputHeight={inputHeight}
         disabled={disabled}
       />
+// Temp comment
     case 'password': // fall through to default
     default: // type == 'text' || 'password'
       return <TextInput
@@ -89,6 +90,7 @@ export default function FormInput(props) {
         label={label}
         required={required}
         placeholder={placeholder}
+        value={value}
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}

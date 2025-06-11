@@ -14,9 +14,9 @@
 #   CONTAINER_NAME: 'intulsa-backend-container-prod'
 
 # jobs:
+#   deploy:
 #     name: Deploy
 #     runs-on: ubuntu-latest
-#     environment: prod
 
 #     steps:
 #     - name: Checkout

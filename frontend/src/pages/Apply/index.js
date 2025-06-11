@@ -44,7 +44,6 @@ export default function Apply() {
   const [applicationObject, setApplicationObject] = useState(defaultState);
   const [useExistingResume, setUseExistingResume] = useState(false);
   const [referralChoice, setReferralChoice] = useState(false);
-  const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
     error: false,
@@ -92,6 +91,7 @@ export default function Apply() {
       setOriginalObject(stateObject);
       setApplicationObject({ ...stateObject, loading: false });
     } catch(e) {
+      console.log('error', e);
     }
   }, []);
   useEffect(async () => {

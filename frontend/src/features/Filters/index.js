@@ -16,7 +16,6 @@ export default function Filters(props) {
 
   let filterContainerStyles = 'flex flex-col justify-between gap-xxl-4 pb-9 vw-768:px-14 ';
   if (marginBottom) {
-// Temp comment
     filterContainerStyles += `mb-${marginBottom} `;
   }
   return (
@@ -38,7 +37,6 @@ Filters.propTypes = {
   searchTerm: PropTypes.string,
   setSearchTerm: PropTypes.func,
   handleSearchClick: PropTypes.func,
-}
 
 export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick) {
   if (setSearchTerm) { // if provided a function, render search bar
