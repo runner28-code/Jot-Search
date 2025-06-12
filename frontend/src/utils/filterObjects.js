@@ -17,7 +17,6 @@ export const jobFilterObject = {
     'Hybrid',
     'Off-Site',
   ],
-  'Years Experience': [
     'Any',
     ...experienceValues
   ],

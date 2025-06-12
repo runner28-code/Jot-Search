@@ -110,3 +110,4 @@ async function seedCategories() {
       },
       {
         name: "Marketing",
+        enabled: true,

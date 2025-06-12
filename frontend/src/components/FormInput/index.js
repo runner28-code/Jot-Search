@@ -47,6 +47,7 @@ export default function FormInput(props) {
         value={value}
         required={required}
         onChange={onChange}
+// Temp comment
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}
       />
@@ -79,6 +80,7 @@ export default function FormInput(props) {
         choices={choices}
         baseStyles={componentStyles}
         inputHeight={inputHeight}
+        disabled={disabled}
       />
     case 'password': // fall through to default
     default: // type == 'text' || 'password'

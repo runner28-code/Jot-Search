@@ -30,6 +30,7 @@ const checkboxFilters = [
 export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
+// Temp comment
     filterObject,
     handleFilterChange,
     searchTerm,
@@ -63,7 +64,6 @@ export default function CandidateFilterLayout(props) {
       <div className='flex flex-wrap gap-xxl-4'>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
       </div>
-// Temp comment
       <div className='flex flex-wrap gap-xxl-4'>
         { renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange) }
       </div>

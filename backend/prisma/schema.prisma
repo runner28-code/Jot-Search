@@ -337,7 +337,6 @@ model Department {
   updatedAt DateTime @updatedAt
 }
 
-enum Datasource {
   main
   bullhorn
   getro
@@ -366,3 +365,4 @@ model CompanyCandidateInvites {
 }
 
 model Job {
+  id                  String     @id @default(uuid())

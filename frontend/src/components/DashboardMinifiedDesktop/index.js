@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../routes';
 
 import PropTypes from 'prop-types';
@@ -7,6 +8,7 @@ import TypeTabs from '../../components/TypeTabs';
 
 // Hooks
 import useWindowDimensions from '../../hooks/windowDimensions';
+
 // Images
 import filterIcon from '../../assets/images/filter-toggle.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';

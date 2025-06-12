@@ -32,7 +32,6 @@ input[type="text"].placeholder-24::placeholder {
   font-size: 2.4rem;
 }
 
-/* Remove highlight outline from input elements and anything with the remove-outline class */
 input:focus,
 select:focus,
 textarea:focus,
@@ -77,3 +76,6 @@ input[type=checkbox] {
   .HeadersH5-or-Heading-small-15rem {
     font-family: SpaceGrotesk;
     font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;

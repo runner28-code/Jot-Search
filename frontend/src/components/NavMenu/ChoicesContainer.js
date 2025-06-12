@@ -6,7 +6,7 @@ import {
   coordinatorChoices,
   guestChoices
 } from '../SideNav/utils';
-import LoggedOutButtons from './LoggedOutButtons';
+import Choice from './Choice';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
 

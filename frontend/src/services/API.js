@@ -30,7 +30,6 @@ export function appendPathToBaseUrl(path) {
     return path; // It's already a full URL
   }
   return API.defaults.baseURL + path;
-// Temp comment
 }
 
 /* FETCH FUNCTIONS */
@@ -84,6 +83,7 @@ export async function updateCandidate(newData, id) {
 
 export async function getSavedCandidates() {
   const { data } = await API.get(ROUTES.APIsavedCandidates);
+// Temp comment
   return normalizeData(data.candidates);
 }
 

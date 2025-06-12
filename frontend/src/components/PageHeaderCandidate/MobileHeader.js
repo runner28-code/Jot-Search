@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 
 export default function MobileHeader(props) {
   const {
@@ -12,6 +11,7 @@ export default function MobileHeader(props) {
   
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
+// Temp comment
   if ( classOverride ) addOnIconClasses += classOverride;
   return (
     <div className='flex items-center border-b-2 border-white pl-l py-s bg-royalBlue'>

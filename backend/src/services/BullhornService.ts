@@ -464,7 +464,6 @@ export class BullhornService {
           return;
         }
       }
-    }
   }
 
   async getClientContacts(
@@ -485,3 +484,4 @@ export class BullhornService {
           fields: [
             "id",
             "address",
+            "category",

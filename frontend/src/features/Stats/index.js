@@ -8,7 +8,6 @@ const statFilterChoices = [
   'Today',
   'Last 7 Days',
   'Last 14 Days',
-// Temp comment
   'Last 30 Days',
   'Last 90 Days'
 ];

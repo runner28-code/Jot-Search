@@ -42,6 +42,7 @@ export default function Apply() {
   const [career, setCareer] = useState(defaultCareerState);
   const [originalObject, setOriginalObject] = useState({});
   const [applicationObject, setApplicationObject] = useState(defaultState);
+// Temp comment
   const [useExistingResume, setUseExistingResume] = useState(false);
   const [referralChoice, setReferralChoice] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
@@ -93,6 +94,7 @@ export default function Apply() {
       setApplicationObject({ ...stateObject, loading: false });
     } catch(e) {
       console.log('error', e);
+    }
   }, []);
   useEffect(async () => {
     if ( submissionObject.loading ) {

@@ -39,7 +39,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
       [name]: value,
     });
   }
-// Temp comment
 
   function handleSearchChange(searchTerm) {
     handleFilterChange('title', searchTerm);

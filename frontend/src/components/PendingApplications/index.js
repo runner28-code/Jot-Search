@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import LoadingSpinner from '../../components/LoadingSpinner';
