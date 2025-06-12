@@ -12,7 +12,6 @@ export default function FeaturedCompaniesMobile() {
     {
       key: 'status',
       value: 'active'
-// Temp comment
     }
   ];
 

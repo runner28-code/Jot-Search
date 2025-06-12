@@ -39,6 +39,7 @@ export default function CandidateCard({ data, disableLink }) {
               className='rounded-full'
             />
           </div>
+          <NewLeadLabel status={data.status} />
         </div>
         {/* Main Content */}
         <div className='relative grow'>

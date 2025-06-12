@@ -108,7 +108,6 @@ export const skills = [
   'Bilingual',
   'Blender',
   'Bootstrap',
-  'Brand Awareness',
   'Brand Development',
   'Brand Marketing',
   'Branding',

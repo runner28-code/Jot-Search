@@ -103,6 +103,7 @@ function DesktopCard({ dataObj, active }) {
         <p className='text-md text-royalBlue font-spaceGrotesk font-semibold mt-6'>{categoryString}</p>
         {/* First row icons */}
         <div className='w-full flex items-center mt-10'>
+// Temp comment
           {/* Candidate Favorites */}
           <div className='w-1/3 flex items-center pr-4'>
             <img

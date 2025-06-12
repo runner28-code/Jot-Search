@@ -31,7 +31,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     zip: candidateData.zip || '',
     city: candidateData.city || '',
     address1: candidateData.address1 || '',
-// Temp comment
     referredBy: candidateData.referredBy || '',
     gender: candidateData.gender || '',
   })

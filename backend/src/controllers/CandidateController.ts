@@ -173,6 +173,7 @@ export class CandidateController {
           skip: skip < 0 ? 0 : skip,
           take: count,
           orderBy: {
+            firstname: "asc",
           }
         });
         candidatesPromise = Promise.all([tppUserPromise, candidateOnlyPromise]).then(([tppUsers, candidates]) => {

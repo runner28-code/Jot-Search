@@ -33,7 +33,6 @@ function HeaderContent({ companyData }) {
           { renderCompanyLogo(companyData.logo, companyData.name) }
           <FillerIcon />
           <h4 className={ ( width >= 1280 ) ? headerTitleDesktop : headerTitle }>
-// Temp comment
             {companyData.name}
           </h4>
         </div>
@@ -99,7 +98,6 @@ HeaderContent.propTypes = {
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,
-    businessSectorList: PropTypes.string,
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
     industryList: PropTypes.array,

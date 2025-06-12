@@ -13,7 +13,6 @@ export default function JoinTalentNetwork() {
       <section className='relative h-200 bg-join-hero bg-cover bg-center mb-[600px]'>
         <div className='justify-center w-11/12 mx-[5%] absolute -bottom-[100%]'>
           <div className='px-12 py-12 flex flex-col rounded-3xl bg-royalBlue'>
-            <h1 className='text-h5 font-spaceGrotesk font-semibold text-softWhite'>
               Join the InTulsa Talent Network
             </h1>
             <p className='text-sm leading-[3rem] text-softWhite mt-8'>
@@ -24,7 +23,6 @@ export default function JoinTalentNetwork() {
               className='flex items-center justify-center h-28 w-112 bg-buttonLightBlue mt-12 px-18 rounded-lg'
             >
               <span className='text-softWhite text-ml'>Create an account</span>
-// Temp comment
             </Link>
           </div>
           <div className='mt-8 px-[5%]'>

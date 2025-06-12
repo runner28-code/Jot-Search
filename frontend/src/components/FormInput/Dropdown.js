@@ -8,7 +8,6 @@ const SINGLE_SELECT = 'single-select';
 const YEARS_OF_EXPERIENCE = 'yearsExperience';
 
 function renderActiveIcon(choice, currentChosen) {
-// Temp comment
   if (choice === currentChosen || currentChosen.includes(choice)) {
     return(
       <img 
@@ -37,7 +36,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
   
   return (
     <div className={ rootClass }>
-      {choices.map((choice, index) => {
         return (<div key={choice + '-container'}>
           <div 
             onClick={() => handleClick(choice)}

@@ -26,4 +26,5 @@ export default function CompanyFilterLayout(props) {
           Clear All
         </button>
       </div>
+    </div>
   );

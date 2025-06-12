@@ -66,7 +66,7 @@ export default function CandidateFilterLayout(props) {
     if (skills.includes(skill)) {
       handleFilterChange('skills', skills.filter(s => s !== skill))
     } else {
-      handleFilterChange('skills', [...skills, skill])
+    }
   }
   console.log(filterObject)
 

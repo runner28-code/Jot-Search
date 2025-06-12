@@ -36,6 +36,7 @@ input[type="text"].placeholder-24::placeholder {
 input:focus,
 select:focus,
 textarea:focus,
+button:focus,
 .remove-outline:focus {
     outline: none;
 }
@@ -76,25 +77,3 @@ input[type=checkbox] {
   .HeadersH5-or-Heading-small-15rem {
     font-family: SpaceGrotesk;
     font-size: 24px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-  .Mobile-HeadersMobile-heading-medium {
-    font-family: SpaceGrotesk;
-    font-size: 21px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-  .Mobile-Body-textmobile-text-size-large-2 {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.6;

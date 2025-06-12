@@ -14,7 +14,6 @@ API.interceptors.request.use(
   function (config) {
     const token = localStorage.getItem('id_token');
     if (token) {
-// Temp comment
       config.headers['Authorization'] = 'Bearer ' + token;
     }
     return config;
@@ -31,6 +30,7 @@ export function appendPathToBaseUrl(path) {
     return path; // It's already a full URL
   }
   return API.defaults.baseURL + path;
+// Temp comment
 }
 
 /* FETCH FUNCTIONS */

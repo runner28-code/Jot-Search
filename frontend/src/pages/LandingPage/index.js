@@ -12,6 +12,7 @@ import BusinessBoomingMobile from '../../components/BusinessBoomingMobile';
 import ColorShapes from '../../components/ColorShapes';
 import * as ROUTES from '../../routes';
 import { MdLocationOn } from 'react-icons/md';
+// Temp comment
 import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageStats';
 import useWindowDimensions from '../../hooks/windowDimensions';
 

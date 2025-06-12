@@ -384,7 +384,6 @@ function NavFooterMobile() {
           Finance Job Openings
         </a>
         <a
-          href="/careers"
           className={linkStyle}
         >
           Tulsa Jobs

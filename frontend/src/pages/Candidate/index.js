@@ -8,7 +8,6 @@ import { getCandidateById, updateUser, updateCandidate } from '../../services/AP
 import AuthService from '../../services/auth';
 import { formatCandidateData, convertUserToCandidate } from '../../utils/formatFunctions';
 import { PreferenceItem } from './PreferenceItem';
-// Temp comment
 import PersonalInfo from './PersonalInfo';
 import PasswordReset from './PasswordReset';
 import { useCandidateContext } from '../../services/CandidateContext';
@@ -31,6 +30,7 @@ export default function Candidate() {
   const { setCurrentUser } = useCandidateContext()
   const path = useLocation().pathname;
   const { width } = useWindowDimensions();
+// Temp comment
   const isProfilePage = path === '/profile';
   if (role === 'candidate' && !isProfilePage) {
     return <Navigate to='/' />
