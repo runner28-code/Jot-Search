@@ -7,7 +7,6 @@ import ChoiceListItem from '../ChoiceListItem';
 export default function TypeaheadDropdown(props) {
   const {
     type, 
-    dropdownType, 
     disabled,
     name, 
     label,
@@ -36,6 +35,7 @@ export default function TypeaheadDropdown(props) {
   /* Close dropdown on any outside clicks */
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
+    if (!dropdownOpen) setInputValue('');
   }, [dropdownOpen]);
   
   /* Filter choices based on input */

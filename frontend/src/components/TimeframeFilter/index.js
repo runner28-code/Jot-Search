@@ -13,7 +13,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   function handleChoiceClick(choice) {
     setShowDropdown(false);
     handleFilterChange(choice);
-// Temp comment
   }
 
   function renderDropdown( showDropdown ) {

@@ -29,7 +29,6 @@ export const activeCareers = '/active-careers';
 export const companyQuickStats = '/company-stats';
 // Coordinator Dashboard
 export const addUser = '/add-user';
-// Temp comment
 export const alerts = '/alerts';
 
 export const careerSeekers = '/career-seeker';

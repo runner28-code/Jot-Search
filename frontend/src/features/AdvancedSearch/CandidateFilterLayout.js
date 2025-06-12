@@ -67,7 +67,6 @@ export default function CandidateFilterLayout(props) {
       handleFilterChange('skills', skills.filter(s => s !== skill))
     } else {
       handleFilterChange('skills', [...skills, skill])
-    }
   }
   console.log(filterObject)
 
@@ -84,6 +83,7 @@ export default function CandidateFilterLayout(props) {
           required={true}
           value={filterObject.skills}
           onChange={toggleSkills}
+          choices={skills}
         />
       </div>
       <div className='flex flex-wrap gap-xxl-4'>

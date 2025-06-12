@@ -37,6 +37,7 @@ const validateUser = ({
   linkedin,
   skills,
   category,
+}: User) => {
   try {
     if (isNullOrEmpty(firstname) || isNullOrEmpty(lastname))
       return "firstname and lastname is required";

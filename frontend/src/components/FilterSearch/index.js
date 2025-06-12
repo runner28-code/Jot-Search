@@ -20,7 +20,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   }
   const placeholderString = placeholder || 'Keywords';
   const { width } = useWindowDimensions();
-  return (
     <div 
       className={ containerStyles }
       onKeyDown={handleKeydown}

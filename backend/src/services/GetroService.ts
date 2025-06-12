@@ -141,3 +141,4 @@ export class GetroService {
         let repeatErr = 0;
 
         while (repeatErr < 3) {
+            try {

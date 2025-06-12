@@ -108,6 +108,7 @@ export class CandidateController {
 
       clearPassword(updatedUser);
 
+      return { message: "Candidate updated successfully", data: updatedUser, result: true };
     } catch (error) {
       console.error(error)
       return { message: error, result: false };
@@ -172,7 +173,6 @@ export class CandidateController {
           skip: skip < 0 ? 0 : skip,
           take: count,
           orderBy: {
-            firstname: "asc",
           }
         });
         candidatesPromise = Promise.all([tppUserPromise, candidateOnlyPromise]).then(([tppUsers, candidates]) => {

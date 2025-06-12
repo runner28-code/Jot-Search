@@ -10,6 +10,7 @@ export default function FeaturedCompanies() {
 
   const filtersArr = [
     {
+// Temp comment
       key: 'status',
       value: 'active'
     }
@@ -33,6 +34,7 @@ export default function FeaturedCompanies() {
                 key={index}>
                 { renderLogo(company.logo) }
               </Link>
+            )
         }
       </div>
       <div className='text-center mt-48'>

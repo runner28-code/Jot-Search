@@ -91,6 +91,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const isMount = useIsMount();
   useEffect(() => {
     if (isMount) {
+      return;
     }
     setFilterObject({ ...filterObject, title: '' });
     setPage(1);

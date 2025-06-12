@@ -10,7 +10,6 @@ const ITEMS_PER_PAGE = 4;
 
 export default function FeaturedJobs() {
   const { width } = useWindowDimensions();
-// Temp comment
 
   const linkStyles = '';
   const linkStylesMobile = 'basis-full mb-8'

@@ -23,7 +23,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
       const imageToUpload = event.target.files[0];
       console.log(imageToUpload);
     }
-    setFormData({ ...formData, [name]: value });
   }
 
   const handleCancel = () => {
@@ -61,6 +60,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             htmlFor='name'>
           Name
           </label>
+          <input 
             type='text'
             onChange={handleInputChange}
             id='name'

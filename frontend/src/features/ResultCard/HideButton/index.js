@@ -8,10 +8,10 @@ export default function HideButton({ type, data, setIsHidden }) {
   if ( role !== 'coordinator' || type !== 'job' ) {
     return null;
   }
-  
   async function handleClick() {
     setIsHidden(true);
     await toggleHideJob(data.id);
+  }
 
   return (
     <BiHide 

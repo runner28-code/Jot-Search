@@ -47,6 +47,7 @@ export default function ActiveCareers() {
       <FilterSearch
         searchTerm={searchTerm}
         setSearchTerm={handleSearchChange}
+// Temp comment
         placeholder={PLACE_HOLDER}
         additionalClasses='w-180 mt-30'
       />

@@ -122,10 +122,10 @@ function buttonText(name, placeholder, currentChosen) {
     if (Array.isArray(currentChosen) && currentChosen.length > 0) {
       buttonString = currentChosen.join(', ');
     } else if (typeof currentChosen === 'string') {
-// Temp comment
       buttonString = currentChosen;
     }
   } else { // no current chosen
+// Temp comment
     return buttonString
   }
   

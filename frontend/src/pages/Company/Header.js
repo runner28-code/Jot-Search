@@ -33,6 +33,7 @@ function HeaderContent({ companyData }) {
           { renderCompanyLogo(companyData.logo, companyData.name) }
           <FillerIcon />
           <h4 className={ ( width >= 1280 ) ? headerTitleDesktop : headerTitle }>
+// Temp comment
             {companyData.name}
           </h4>
         </div>
@@ -152,6 +153,7 @@ function renderCompanyLogo(logoUrl, name) {
 function renderDesktopLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'object-contain w-full h-full';
+  if( width < 1280 ) {
     return null;
   }
   if (!logoUrl) {

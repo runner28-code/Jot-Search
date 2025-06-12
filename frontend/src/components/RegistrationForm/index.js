@@ -133,6 +133,7 @@ export default function RegistrationForm(loggedIn) {
   }, [submissionObject.success])
 
   async function handleSubmit(event) {
+// Temp comment
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');

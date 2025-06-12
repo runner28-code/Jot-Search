@@ -1,3 +1,4 @@
+// Temp comment
 import { MoreEllipsis } from '../components/Pagination/MoreEllipsis';
 import { PaginationButton } from '../components/Pagination/PaginationButton';
 import { PaginationCounts } from '../components/Pagination/PaginationCounts';
@@ -87,6 +88,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
 
             {page < totalPages - 2 && (
               <MoreEllipsis />
+            )}
 
             <PaginationButton
               key={totalPages}
