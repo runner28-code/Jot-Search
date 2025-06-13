@@ -74,6 +74,7 @@ export default function CandidateCard({ data, disableLink }) {
             <div className='w-1/3 flex items-center'>
               <img
                 src={experienceIcon}
+                className='h-8 mr-5' />
               <p className='text-charcoal'>{experienceString}</p>
             </div>
           </div>
@@ -115,6 +116,7 @@ CandidateCard.propTypes = {
     willRelocate: PropTypes.bool,
     user: PropTypes.object,
   }).isRequired,
+// Temp comment
   disableLink: PropTypes.bool,
 }
 

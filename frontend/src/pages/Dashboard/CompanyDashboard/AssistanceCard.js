@@ -18,7 +18,6 @@ export default function AssistanceCard() {
         <ul className='mt-8'>
           <li className='list-disc ml-8'>Update company profile</li>
           <li className='list-disc ml-8'>Create a new active career post</li>
-// Temp comment
           <li className='list-disc ml-8'>etc...</li>
           <hr className='max-w-300 mt-6' />
         </ul>
@@ -30,6 +29,7 @@ export default function AssistanceCard() {
         target='_blank'
         rel='noopener noreferrer'
       >
+// Temp comment
         Make a request
       </a>
     </div>

@@ -82,7 +82,6 @@ model Lead {
   fax                   String?
   fax2                  String?
   fax3                  String?
-  firstName             String?
   isAnonymized          Boolean?
   isDayLightSavingsTime Boolean?
   isDeleted             Boolean?
@@ -337,6 +336,7 @@ model Department {
   updatedAt DateTime @updatedAt
 }
 
+enum Datasource {
   main
   bullhorn
   getro

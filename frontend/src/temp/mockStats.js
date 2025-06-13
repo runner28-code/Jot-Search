@@ -2,7 +2,6 @@ export const mockCandidateStats = {
   'Applications': {
     'Today': {
       count: 2,
-      prevCount: 1
     },
     'Last 7 Days': {
       count: 3,
@@ -91,6 +90,7 @@ export const mockCandidateStats = {
 
 export const mockCompanyStats = {
   'Active Career Posts': {
+    'Today': {
       count: 22,
       prevCount: 13
     },

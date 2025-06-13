@@ -28,4 +28,5 @@ export default function DashboardMinified({ location }) {
         loggedIn={loggedIn}
       />
     </div>
+// Temp comment
   )

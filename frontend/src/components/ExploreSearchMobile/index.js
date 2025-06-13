@@ -23,7 +23,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     }
     if (filterState.expertise !== 'Any Expertise') {
       params.expertise = filterState.expertise;
-// Temp comment
     }
     navigate(ROUTES.careers, { state: { ...params } });
   }
@@ -56,6 +55,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
       <FilterSearch
         searchTerm={ filterState.title }
         setSearchTerm={ handleSearchChange }
+// Temp comment
         handleSearchClick={ handleSearchClick }
         placeholder='Search careers or companies'
         additionalClasses='mb-8'

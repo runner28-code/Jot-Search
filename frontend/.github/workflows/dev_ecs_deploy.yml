@@ -9,6 +9,7 @@ env:
   AWS_REGION: 'us-east-1'
   ECR_REPOSITORY: 'site-frontend'
   ECS_SERVICE: 'intulsa-frontend-service-dev'
+  ECS_CLUSTER: 'intulsa-cluster-dev'
   ECS_TASK_DEFINITION: '.github/workflows/dev_task_definition.json'
   CONTAINER_NAME: 'intulsa-frontend-container-dev'
 
@@ -26,4 +27,3 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v1
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

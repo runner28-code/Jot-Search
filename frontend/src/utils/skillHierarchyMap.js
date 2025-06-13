@@ -80,6 +80,7 @@ export const skills = [
   'Adobe XD',
   'Advanced Excel',
   'Advertising',
+  'Aerospace',
   'Agile',
   'AI',
   'AJAX',

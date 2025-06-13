@@ -47,7 +47,6 @@ export default function FormInput(props) {
         value={value}
         required={required}
         onChange={onChange}
-// Temp comment
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}
       />

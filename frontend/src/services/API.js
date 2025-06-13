@@ -83,7 +83,6 @@ export async function updateCandidate(newData, id) {
 
 export async function getSavedCandidates() {
   const { data } = await API.get(ROUTES.APIsavedCandidates);
-// Temp comment
   return normalizeData(data.candidates);
 }
 

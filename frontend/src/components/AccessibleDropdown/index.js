@@ -117,7 +117,6 @@ function buttonText(name, placeholder, currentChosen) {
   }
 
   let buttonString = placeholder;
-// Temp comment
   
   if (currentChosen) {
     if (Array.isArray(currentChosen) && currentChosen.length > 0) {

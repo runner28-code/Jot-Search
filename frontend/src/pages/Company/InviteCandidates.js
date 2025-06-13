@@ -8,6 +8,7 @@ import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
 
+export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
     filtersArr: [],
     count: 10000,
@@ -33,7 +34,6 @@ import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandi
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (
-        <span 
           key={item.value} 
           className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">
           <span>{item.label}</span>

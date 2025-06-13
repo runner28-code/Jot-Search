@@ -8,6 +8,7 @@ import AuthService from '../../services/auth';
 
 export default function Login() {
   const [error, setError] = useState('');
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email, password } = event.target;
@@ -76,6 +77,7 @@ export default function Login() {
             </button>
             <Link
               to={ROUTES.accountRecovery}
+// Temp comment
               className='text-royalBlue text-sm vw-640:text-ml underline'>
               Forgot Password?
             </Link>

@@ -58,7 +58,6 @@ export function convertUserToCandidate(user) {
     referredBy: user.referredBy || '',
     gender: user.gender || '',
     ethnicity: user.ethnicity || '',
-    veteran: user.veteran || '',
     disability: user.disability || '',
   };
   return candidate;
@@ -80,6 +79,7 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
 
 export function formatPhoneNumber(phoneNumberString) {
   if ( !phoneNumberString ) {
+    return 'No Phone Number Provided';
   }
   let regex = /\+\d\s\(\d{3}\) \d{3}-\d{4}/i;
   if ( regex.test(phoneNumberString) ) { // Already formatted correctly is regex passes

@@ -21,6 +21,7 @@ export default function Applications() {
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
+        ...job,
         agoDate: job.appliedDate
       }});
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
@@ -73,7 +74,6 @@ export default function Applications() {
           loading={appliedJobsObject.loading}
           type='job'
           compact={true}
-          agoText={'Applied'}
           selectableProps={{
             selectable: true,
             selected: selectedApplications,

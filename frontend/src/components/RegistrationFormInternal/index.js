@@ -57,7 +57,6 @@ export default function RegistrationFormInternal(loggedIn) {
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
-// Temp comment
     success: false,
   });
 
@@ -147,6 +146,7 @@ export default function RegistrationFormInternal(loggedIn) {
       willRelocate: relocate,
       linkedin: linkedin.value,
       password: password.value,
+// Temp comment
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect

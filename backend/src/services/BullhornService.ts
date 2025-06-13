@@ -140,7 +140,6 @@ export class BullhornService {
       console.log("Refresh Token: ", this.refresh_token);
       return true;
     }
-    return await this.getNewAccessToken();
   }
 
   async getNewAccessToken(): Promise<boolean> {
@@ -464,6 +463,7 @@ export class BullhornService {
           return;
         }
       }
+    }
   }
 
   async getClientContacts(

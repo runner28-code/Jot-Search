@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import ExploreSearch from '../../components/ExploreSearch';
 import ExploreSearchMobile from '../../components/ExploreSearchMobile';
 import ExpertiseLinks from '../../components/ExpertiseLinks';
@@ -55,7 +56,6 @@ function renderSearch() {
   if( width <= 1024 ) {
     return (<>
       <ExploreSearchMobile
-        totalJobs={totalJobsCount}
         totalCompanies={totalCompaniesCount}
         loading={isLoading}
       />

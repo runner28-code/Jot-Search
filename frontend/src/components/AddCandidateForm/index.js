@@ -33,6 +33,7 @@ const defaultState = {
   verifyPassword: '',
 };
 export default function RegistrationForm() {
+// Temp comment
   const {categories} = useContext(CategoryContext);
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);

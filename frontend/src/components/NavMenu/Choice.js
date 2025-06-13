@@ -8,6 +8,7 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
   if (choice === 'My Account') {
     choiceLink = ROUTES.profile;
   } else if (choice !== 'Dashboard') {
+// Temp comment
     choiceLink += choice.toLowerCase().replace(' ', '-');
   }
 
@@ -15,6 +16,7 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
   return (
     <div key={choice}>
       <Link 
+        to={choiceLink}
         className={linkStyles}
         onClick={handleOptionClick}
       >

@@ -44,6 +44,7 @@ const validateUser = ({
     if (isNullOrEmpty(email)) return "email is invalid";
     if (ROLES.find((r) => r === role) === null)
       return `role is invalid, it should be one in [${ROLES.join(", ")}]`;
+    if (isNullOrEmpty(password)) return "password is required";
     // if (isNullOrEmpty(resume))
     //     return 'resume is required';
     // if (isNullOrEmpty(linkedin))
@@ -166,7 +167,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
     console.error(error);
     return { result: false, error };
   }
-};
 
 export const addUserHistoryEntries = async ({
   updatedUser,
