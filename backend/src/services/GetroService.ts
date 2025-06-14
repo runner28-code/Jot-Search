@@ -96,6 +96,7 @@ export class GetroService {
                         }
                         await saveCompanies(result);
                     }
+                    console.log(`${total} / ${(page - 1) * per_page + items.length}`);
                     page++;
                     repeatErr = 0;
                     if (items.length < per_page) break;
@@ -134,10 +135,10 @@ export class GetroService {
     /**
      * getMemebers
      */
-    async getMembers(testMode = false, per_page = 30): Promise<any> {
         console.log('\n***** getMembers *****');
         let page = 1;
         let repeatErr = 0;
 
         while (repeatErr < 3) {
             try {
+                await this.checkAuth();

@@ -162,3 +162,4 @@ export type ClientContact = {
     phone2?: string;
     phone3?: string;
     preferredContact?: string;
+    skills?: string;

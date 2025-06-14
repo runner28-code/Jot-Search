@@ -309,3 +309,6 @@ export const getCompanyDashboardStats = async (days: number) => {
           mode: 'insensitive'
         },
         ...currentPeriodCommonQuery
+      }
+    })
+    const activeCareersPostsInPreviousPeriod = await db.job.count({

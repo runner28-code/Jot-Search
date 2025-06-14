@@ -159,3 +159,4 @@ export const saveClientContacts = async (contacts: any[]) => {
           where: {
             externalID: contact.id,
           },
+        });

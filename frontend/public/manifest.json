@@ -1,4 +1,5 @@
 {
+  "short_name": "InTulsa Talent",
   "name": "InTulsa Talent Platform",
   "icons": [
     {
@@ -8,3 +9,4 @@
     },
     {
       "src": "android-chrome-192x192.png",
+      "type": "image/png",

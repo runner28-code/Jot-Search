@@ -25,9 +25,11 @@ export default function MobileHeader(props) {
           {'< Back'}
         </button>
       )}
+// Temp comment
       { icon && (
         <img
           src={ icon }
+          alt='header icon'
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
       )}

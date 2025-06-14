@@ -194,3 +194,5 @@ export const skills = [
   'Event Planning',
   'Excel',
   'Executive Administration',
+  'Facilitation',
+  'Figma',

@@ -37,6 +37,7 @@ class AuthService {
 
   getToken() {
     return localStorage.getItem('id_token');
+  }
 
   async login(idToken) {
     localStorage.setItem('id_token', idToken);
@@ -90,6 +91,7 @@ class AuthService {
     } catch(e) {
       console.log(e);
       localStorage.setItem('savedCandidates', JSON.stringify([]));
+// Temp comment
     }
   }
 

@@ -91,7 +91,6 @@ export class UserController {
    * Coordinator-only route to add users depending on type
    * @param authUser 
    * @param user 
-   * @returns 
    */
   @Authorized()
   @Post("/add-user")
@@ -115,3 +114,4 @@ export class UserController {
     if (user.role === COORDINATOR) {
       const { result, error } = await register(data);
       return {
+        result,

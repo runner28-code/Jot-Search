@@ -33,7 +33,6 @@ const availableTabChoicesByUserType = {
 }
 
 function useTabState(disabledTabs, userType, pathname) {
-  if (disabledTabs) {
     switch (pathname) {
       case '/candidates':
         return useState('candidates');
@@ -75,7 +74,6 @@ export default function AdvancedSearch({ disabledTabs }) {
     } else if (tab === 'careers') {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
-// Temp comment
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
     }

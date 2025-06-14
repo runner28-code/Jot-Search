@@ -1,5 +1,6 @@
 generator client {
   provider = "prisma-client-js"
+}
 
 datasource db {
   provider = "postgresql"
@@ -347,7 +348,6 @@ model CandidateJobInvites {
   candidateId String
   candidate   Candidate @relation(fields: [candidateId], references: [id])
   
-  jobId       String
   job         Job       @relation(fields: [jobId], references: [id])
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
@@ -366,3 +366,6 @@ model CompanyCandidateInvites {
 
 model Job {
   id                  String     @id @default(uuid())
+  externalId          String?    @unique(map: "Job_Unique_ExternalId")
+  description         String?
+  address1            String?

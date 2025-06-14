@@ -4,6 +4,7 @@ import {
   Job as BullhornJob,
   Company as BullhornCompany,
 } from "../types/Bullhorn";
+import { Job as GetroJob, Company as GetroCompany } from "../types/Getro";
 import { Category } from "./Category";
 import { User } from "./User";
 
@@ -67,3 +68,4 @@ export type Job = BullhornJob | GetroJob;
 export type JobSearchByID = {
   job?: Job;
   source: DataSource;
+  message?: string;

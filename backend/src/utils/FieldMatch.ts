@@ -21,7 +21,6 @@ export const JobFilter: any = {
     hidden: "hidden",
     employmentType: "employmentType",
     onSite: "onSite",
-    yearsRequired: "yearsRequired",
     willRelocate: "willRelocate",
     city: "city",
     state: "state",
@@ -30,6 +29,7 @@ export const JobFilter: any = {
   },
 };
 
+export type CompanyFilterKey = "bullhorn" | "getro" | "joined";
 
 export const CompanyFilter: TypedDictionary<
   CompanyFilterKey,

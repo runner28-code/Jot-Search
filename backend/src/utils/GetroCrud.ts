@@ -32,7 +32,6 @@ export const saveCompanies = async (companies: any[]) => {
             } catch (error) {
                 console.log(error);
                 console.log(`ERROR: while saving company with ID = ${company.id}`);
-            }
         };
 
         return { result: true };
@@ -59,3 +58,4 @@ export const saveMembers = async (members: any[]) => {
 									return -1;
 								}
 								const jobData = { ...member };
+								Object.keys(jobData).forEach((key) => {

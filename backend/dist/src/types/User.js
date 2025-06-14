@@ -22,3 +22,4 @@ exports.IUSER = {
     category: "",
     seniority: "",
     workspace: "",
+    referredBy: "",

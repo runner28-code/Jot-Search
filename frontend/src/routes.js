@@ -2,6 +2,7 @@
 export const root = '/';
 export const landingPage = '/landing-page';
 export const blog = '/blog';
+export const about = '/about';
 export const login = '/login';
 export const logout = '/logout';
 export const profile = '/profile';
@@ -45,3 +46,4 @@ export const joinTalentNetwork = 'https://www.jobs.intulsa.com/talent-network?ut
 export const intulsa = 'https://www.intulsa.com';
 export const tulsaRemote = 'https://www.tulsaremote.com';
 export const campusTulsa = 'https://www.campustulsa.com';
+export const talentInTulsa = 'https://www.talent.intulsa.com/';

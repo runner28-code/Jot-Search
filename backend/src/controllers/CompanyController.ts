@@ -107,6 +107,7 @@ export class CompanyController {
   @Authorized()
   @Put()
   async insert(
+    @Body() body: Company,
     @CurrentUser() authUser: User
   ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
@@ -175,3 +176,4 @@ export class CompanyController {
         result: false,
         error: "You should be a coordinator for sending candidates to employers",
       };
+    }

@@ -50,3 +50,4 @@ CREATE TABLE "Company" (
     "notes" TEXT,
     "numEmployees" INTEGER,
     "numOffices" INTEGER,
+    "ownership" TEXT,

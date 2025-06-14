@@ -6,6 +6,7 @@ import operationsIcon from '../../assets/images/Symbol_operations.svg';
 import financeIcon from '../../assets/images/Symbol_finance.svg';
 import * as ROUTES from '../../routes';
 
+export default function ExpertiseLinksMobile() {
   const linkStyles = 'flex flex-col items-center basis-1/3 p-6 text-center';
   const iconStyles = 'mb-10';
   const textStyles = 'text-xs text-darkGray';
@@ -68,7 +69,6 @@ import * as ROUTES from '../../routes';
             alt='Operations Icon'
             className={iconStyles}
           />
-          <span className={textStyles}>Operations</span>
         </Link>
         {/* Finance */}
         <Link

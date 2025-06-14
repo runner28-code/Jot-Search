@@ -19,7 +19,6 @@ const hrStyles = 'mb-10 border-smokeGray ';
 export default function DesktopLayout(props) {
   const {
     careerData,
-// Temp comment
     categoryString,
     addressString,
     salaryString,
@@ -146,6 +145,7 @@ function renderLogo(logo) {
 function renderAboutCompanySection(careerData, companyName) {
   if (!companyName) {
     return null;
+// Temp comment
   }
   const headerString = `About ${companyName}`;
   return (<>

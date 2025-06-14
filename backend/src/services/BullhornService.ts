@@ -486,3 +486,6 @@ export class BullhornService {
             "id",
             "address",
             "category",
+            "certifications",
+            "clientCorporation",
+            "comments",

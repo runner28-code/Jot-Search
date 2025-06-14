@@ -5,6 +5,7 @@ import ResultContainer from '../../features/ResultContainer';
 import { getAppliedJobs } from '../../services/API';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 
 
 export default function Applications() {
@@ -68,6 +69,7 @@ export default function Applications() {
         >
           Remove Selections
         </button>
+        <ResultContainer
           containerClass={ width >= 990 ? 'grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}
           results={appliedJobsObject.filteredJobs}
           loading={appliedJobsObject.loading}

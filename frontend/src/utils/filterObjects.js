@@ -64,7 +64,6 @@ export const candidateFilterObject = {
   'Experience': [
     'Any',
     ...experienceValues
-  ],
   'Open to Relocation': [
     'Any',
     'Yes',
@@ -118,6 +117,7 @@ Object.keys(candidateFilterObject).forEach(key => {
 
 export const defaultCandidateFilterState = {
   firstname: '',
+  ...convertedCandidateFilters
 };
 
 /* UTIL FUNCTIONS */

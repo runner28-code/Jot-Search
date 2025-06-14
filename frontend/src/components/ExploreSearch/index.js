@@ -84,6 +84,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         />
         <AccessibleDropdown
           type='single-select'
+          name='Expertise'
           choices={filterObject['Expertise']}
           currentChosen={filterState['Expertise']}
           onChange={handleFilterChange}
