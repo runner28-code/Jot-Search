@@ -229,7 +229,6 @@ model Company {
   feeArrangement      Float?
   funding             String?
   industryList        String[]
-
   invoiceFormat       String?
   linkedinProfileName String?
 
@@ -348,6 +347,7 @@ model CandidateJobInvites {
   candidateId String
   candidate   Candidate @relation(fields: [candidateId], references: [id])
   
+  jobId       String
   job         Job       @relation(fields: [jobId], references: [id])
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt

@@ -23,7 +23,6 @@ import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
 
 const useActiveTabState = createPersistedState('activeTab');
-const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'careers', 'companies'],
@@ -33,6 +32,7 @@ const availableTabChoicesByUserType = {
 }
 
 function useTabState(disabledTabs, userType, pathname) {
+  if (disabledTabs) {
     switch (pathname) {
       case '/candidates':
         return useState('candidates');

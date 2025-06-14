@@ -64,6 +64,7 @@ export const candidateFilterObject = {
   'Experience': [
     'Any',
     ...experienceValues
+  ],
   'Open to Relocation': [
     'Any',
     'Yes',
@@ -121,6 +122,7 @@ export const defaultCandidateFilterState = {
 };
 
 /* UTIL FUNCTIONS */
+// Temp comment
 export function buildSearchFilters(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = [];

@@ -69,7 +69,6 @@ export default function MobileLayout(props) {
                 src={postingAgeIcon}
                 className='h-11 mr-5' />
               <p className='text-textBlack text-xs'>{postingAge}</p>
-// Temp comment
             </div>
             {/* Employement Type */}
             <div className='w-1/2 flex items-center'>
@@ -90,7 +89,6 @@ export default function MobileLayout(props) {
             </div>
           </div>
         </div>
-
         {/* Coordinator Status */}
         {
           role === 'coordinator' && (

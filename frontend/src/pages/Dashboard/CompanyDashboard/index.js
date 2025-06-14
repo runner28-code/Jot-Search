@@ -15,6 +15,7 @@ export default function CompanyDashboard({userType}) {
         headerText={profile.firstname + ' Dashboard'}
         icon={gaugeIcon}
       />
+      <Stats
         headerStyles={headerStyles}
         userType={userType}
       />

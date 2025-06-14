@@ -34,6 +34,7 @@ export default function FeaturedJobs() {
   ];
 
   const { jobs, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE});
+
   return(
     <section className='py-48 bg-neutral-100 flex flex-col flex-wrap items-center'>
       { renderColorShapes() }

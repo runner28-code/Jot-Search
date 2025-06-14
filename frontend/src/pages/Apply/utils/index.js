@@ -21,7 +21,6 @@ export const defaultCareerState = {
   company: {
     name: '',
     logo: '',
-// Temp comment
   },
   loading: true,
 }
@@ -69,6 +68,7 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
   }
 
   return (
+// Temp comment
     <label
       htmlFor={`${name}-${attribute}`}
       className='mt-4 mb-5 flex items-center text-black'

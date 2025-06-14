@@ -1,3 +1,4 @@
+// Temp comment
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseGetroJobToMain = exports.parseBullhornJobToMain = exports.parseBullhornCompanyToUser = exports.parseBullhornCandidateToUser = void 0;
@@ -26,6 +27,7 @@ const parseBullhornCandidateToUser = (data) => {
         roles: data.skillSet,
         description: data.description,
         phone: data.phone || data.workPhone || data.mobile,
+        status: data.status,
         username: data.username,
         companyName: data.companyName,
         companyURL: data.companyURL,

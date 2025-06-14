@@ -16,7 +16,6 @@ class AuthService {
     }
     return role;
   }
-
   loggedIn() {
     // Checks if there is a saved token and it's still valid
     const token = this.getToken();
@@ -91,7 +90,6 @@ class AuthService {
     } catch(e) {
       console.log(e);
       localStorage.setItem('savedCandidates', JSON.stringify([]));
-// Temp comment
     }
   }
 

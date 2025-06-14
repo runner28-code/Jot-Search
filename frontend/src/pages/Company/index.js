@@ -71,6 +71,7 @@ export default function Company() {
             <Header
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
+// Temp comment
             />
             : <HeaderMobile
               companyData={companyData}

@@ -31,7 +31,6 @@ export default function AccessibleDropdown(props) {
       }
     } else { // single select
       onChange(name, choice);
-// Temp comment
     }
   }
 

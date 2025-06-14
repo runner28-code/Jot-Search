@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../routes';
 // import FormInput from '../../components/FormInput';
 
@@ -14,6 +15,7 @@ export default function ResetPassword() {
   const [success, setSuccess] = useState('');
 
   const queryParams = new URLSearchParams(window.location.search);
+  const token = queryParams.get('token');
 
   const handlePassword = (event) => {
     setPassword(event.target.value);

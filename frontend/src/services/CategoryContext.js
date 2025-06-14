@@ -4,6 +4,7 @@ import { getCategories } from './API';
 
 export const CategoryContext = createContext();
 
+// Temp comment
 const CategoryProvider = ({children}) => {
   const [categories, setCategories] = useState([]);
 

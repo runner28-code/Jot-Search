@@ -8,4 +8,5 @@
 -- AlterTable
 ALTER TABLE "Job" ADD COLUMN     "durationWeeks" INTEGER,
 ADD COLUMN     "hoursOfOperation" TEXT,
+ADD COLUMN     "hoursPerWeek" INTEGER,
 ADD COLUMN     "isInterviewRequired" BOOLEAN,

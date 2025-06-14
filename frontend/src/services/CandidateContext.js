@@ -48,6 +48,7 @@ const mockCandidateData = [
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma',
     isLooking: false,
+    isWarm: false,
   },
   {
     id: '04bd7f2a-2bcf-4d37-9f9b-3dbb8dd91672',
@@ -126,5 +127,6 @@ const CandidateProvider = ({children}) => {
   return (
     <CandidateContext.Provider value={{ candidates, currentUser, setCurrentUser, handleCandidatesChange, handleCandidateUpdate }}>
       {children}
+// Temp comment
     </CandidateContext.Provider>
   )
