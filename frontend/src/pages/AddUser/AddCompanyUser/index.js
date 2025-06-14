@@ -86,7 +86,6 @@ export default function AddCompanyUser() {
               isLoadingContacts={isLoadingContacts}
               selectedCompany={selectedCompany}
             />
-          )}
         </div>
       </div>
     </div>

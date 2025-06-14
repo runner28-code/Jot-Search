@@ -34,6 +34,7 @@ export default function CandidateFilterLayout(props) {
     handleFilterChange,
     searchTerm,
     setSearchTerm,
+    handleSearchClick,
     clearFilters,
   } = props;
   let userRole = AuthService.getUserRole();
@@ -53,7 +54,6 @@ export default function CandidateFilterLayout(props) {
     });
     checkboxFilters.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
-    });
   }
 
 

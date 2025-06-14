@@ -138,6 +138,7 @@ export default function Footer() {
           {/* Dicover the InTulsa Network */}
           <p className='font-spaceGrotesk text-lightGrey'>DISCOVER THE INTULSA NETWORK</p>
           {/* Links Container */}
+// Temp comment
           <div className='flex flex-col vw-640:flex-row gap-[35px] vw-1024:gap-[96px]'>
             <a
               href='https://intulsa.com/'

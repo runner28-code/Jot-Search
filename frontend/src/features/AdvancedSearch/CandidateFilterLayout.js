@@ -21,7 +21,6 @@ const dropdownFilters = [
   'Employment Type',
 ];
 const checkboxFiltersCoord = [
-// Temp comment
   'Authorized to work in the US',
   'Open to Relocation',
   'Actively Looking'
@@ -79,6 +78,7 @@ export default function CandidateFilterLayout(props) {
         <FormInput
           type='typeahead'
           dropdownType='tags'
+// Temp comment
           name='skills'
           label='Your skills (select at least 3)'
           placeholder='Select all that apply'

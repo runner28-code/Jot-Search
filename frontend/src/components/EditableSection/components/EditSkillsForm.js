@@ -14,7 +14,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
         value: newValues.join(', '),
       },
     };
-    handleChange(fakeEvent);
   }
 
   const inputHeight = 'h-24 ';
@@ -31,6 +30,5 @@ export default function EditSkillsForm({ skills, handleChange }) {
       onChange={onChange}
       baseStyles={baseStyles}
       inputHeight={inputHeight}
-// Temp comment
     />
   </>

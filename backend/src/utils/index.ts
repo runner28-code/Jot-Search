@@ -11,12 +11,12 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
             SELECT * FROM \`${datset}.${table}\`
             WHERE id=${id}
         `;
-        const options = {
             query: query,
             location: 'US',
         };
         const [job] = await BigQueryService.getClient().createQueryJob(options);
         const [res] = await job.getQueryResults();
+
         if (res && res.length > 0 && `'${res[0].id}'` === id) {
             return true;
         }

@@ -40,12 +40,12 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
                 id={contact.id}
                 name={contact.id}
                 checked={selectedContacts.includes(contact)}
-                className='w-12 h-12 mr-12'
               />
               <span className='text-md mr-12 w-100'>{contact.name}</span>
               <span>{contact.email}</span>
             </li>
           ))}
+        </ul>
         <button
           className='bg-royalBlue text-white text-lg px-xxl py-xs rounded-xl mt-20'
           onClick={handleSyncClick}

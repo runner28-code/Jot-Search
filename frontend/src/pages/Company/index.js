@@ -83,7 +83,6 @@ export default function Company() {
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>About {companyData.name}</h4>
             { renderCompanyDescription(companyData.companyDescription, 'text-md mb-10 leading-[32px]') }
           </div>
-// Temp comment
           { renderSectorList(companyData, width, stylesObject) } 
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Funding */}
@@ -99,7 +98,6 @@ export default function Company() {
           />
         </div>
         <div className='mt-12'>
-          <button
             className='border border-2 border-royalBlue text-royalBlue py-6 px-20 text-lg rounded-xl mb-12'
             onClick={() => navigate(-1)}
           >

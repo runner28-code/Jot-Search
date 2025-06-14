@@ -92,10 +92,10 @@ export class GetroService {
                             if (result.length > 29) {
                                 await saveCompanies(result);
                                 result = [];
+                            }
                         }
                         await saveCompanies(result);
                     }
-                    console.log(`${total} / ${(page - 1) * per_page + items.length}`);
                     page++;
                     repeatErr = 0;
                     if (items.length < per_page) break;

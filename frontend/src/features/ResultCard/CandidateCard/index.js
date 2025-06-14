@@ -116,7 +116,6 @@ CandidateCard.propTypes = {
     willRelocate: PropTypes.bool,
     user: PropTypes.object,
   }).isRequired,
-// Temp comment
   disableLink: PropTypes.bool,
 }
 
@@ -172,7 +171,6 @@ function NewLeadLabel({ status }) {
         <span className='bg-error h-[6px] w-[6px] rounded-full'></span>
         <p className='text-grey700 text-sm font-semibold'>New Lead</p>
       </div>
-    )
   }
 
   return null;

@@ -47,7 +47,6 @@ function HeaderContent({ companyData }) {
             />
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
           </div>
-          <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <CareerIcon
               className={headerIconStyles}
             />
@@ -162,7 +161,6 @@ function renderDesktopLogo(logoUrl, name) {
       </div>
     )
   }
-// Temp comment
   return (
     <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
       <img

@@ -49,13 +49,13 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
       ...formData,
       [name]: value,
     });
+  }
 
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
       setReferralChoice(true);
     }
     if( value !== 'Community Partner' ) {
-      setReferralChoice(false);
       setFormData({
         ...formData,
         community: ''

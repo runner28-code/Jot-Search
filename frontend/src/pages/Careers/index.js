@@ -23,7 +23,6 @@ export default function Careers() {
 
   function togglePassState() {
     setToggle(toggle => !toggle);
-  }
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader

@@ -21,3 +21,4 @@ CREATE TABLE "User" (
     "externalId" TEXT,
     "gender" TEXT,
     "address1" TEXT,
+    "address2" TEXT,

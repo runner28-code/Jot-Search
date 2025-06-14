@@ -7,6 +7,7 @@ import {
   Login,
   Career,
   Careers,
+  Company,
   Companies,
   AccountRecovery,
   ResetPassword,

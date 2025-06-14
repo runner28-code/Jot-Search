@@ -146,7 +146,6 @@ export default function RegistrationFormInternal(loggedIn) {
       willRelocate: relocate,
       linkedin: linkedin.value,
       password: password.value,
-// Temp comment
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect

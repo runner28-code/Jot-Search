@@ -1,6 +1,5 @@
 generator client {
   provider = "prisma-client-js"
-}
 
 datasource db {
   provider = "postgresql"
@@ -82,6 +81,7 @@ model Lead {
   fax                   String?
   fax2                  String?
   fax3                  String?
+  firstName             String?
   isAnonymized          Boolean?
   isDayLightSavingsTime Boolean?
   isDeleted             Boolean?

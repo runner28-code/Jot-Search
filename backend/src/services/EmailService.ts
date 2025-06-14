@@ -21,7 +21,6 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
 export const sendVerification = async (to: string, name: string) => {
   try {
     const base_url = config.frontendUrl || 'http://localhost:3000';
-    await sendEmail(to, 'Welcome to inTulsa!', 'register-verification', {
       url: `${base_url}/verify`,
       firstName: name,
     });
@@ -33,6 +32,7 @@ export const sendVerification = async (to: string, name: string) => {
     throw error;
   }
 }
+
 export const sendResetPassword = async (to: string, name: string, token: string) => {
   try {
     const base_url = process.env.FRONTEND_URL || 'http://localhost:3000';

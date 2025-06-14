@@ -27,7 +27,6 @@ class AuthService {
     try {
       const decoded = decode(token);
       if (decoded.exp < Date.now() / 1000) {
-// Temp comment
         this.clearStorage();
         return true;
       } else return false;
@@ -38,7 +37,6 @@ class AuthService {
 
   getToken() {
     return localStorage.getItem('id_token');
-  }
 
   async login(idToken) {
     localStorage.setItem('id_token', idToken);

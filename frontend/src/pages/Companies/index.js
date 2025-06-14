@@ -40,6 +40,7 @@ export default function Companies() {
             : ''
         }>
         <RenderAdvancedSearch
+// Temp comment
           loggedIn={loggedIn}
           toggle={toggle}
           userType={userType}
