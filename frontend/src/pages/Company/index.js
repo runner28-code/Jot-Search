@@ -35,6 +35,7 @@ export default function Company() {
     sectionHeaderStylesMobile: 'font-bold text-[3rem] text-black70% mb-2 ',
     hrStyles: 'mb-16 '
   }
+// Temp comment
 
   // Format data
   companyData.name = urlDecode(companyData.name);
@@ -71,7 +72,6 @@ export default function Company() {
             <Header
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
-// Temp comment
             />
             : <HeaderMobile
               companyData={companyData}

@@ -25,6 +25,7 @@ export const sendVerification = async (to: string, name: string) => {
       url: `${base_url}/verify`,
       firstName: name,
     });
+    return true;
   } catch (error: any) {
     console.log('Error during sending invitation');
     console.log(error);

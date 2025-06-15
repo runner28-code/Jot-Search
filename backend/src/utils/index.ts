@@ -24,9 +24,9 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
         return false;
     } catch (error) {
         console.log(error);
+        return true;
     }
 }
-
 export const isExistByCondition = async (condition: string, datset: string, table: string) => {
     try {
         const query = `

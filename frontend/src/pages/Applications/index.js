@@ -34,6 +34,7 @@ export default function Applications() {
 
   function handleCheckClick(careerId) {
     if (selectedApplications.includes(careerId)) {
+// Temp comment
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
     } else {
       setSelectedApplications([...selectedApplications, careerId]);
@@ -42,6 +43,7 @@ export default function Applications() {
 
   function removeSelectedApplications() {
     const currentHiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
+    const newHiddenApplications = [...currentHiddenApplications, ...selectedApplications];
     localStorage.setItem('hiddenApplications', JSON.stringify(newHiddenApplications));
     setSelectedApplications([]);
     setAppliedJobsObject({

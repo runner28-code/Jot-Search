@@ -116,7 +116,6 @@ export async function updateJob({ id, status, featured }) {
     id,
     status,
     featured
-  });
   return normalizeData(data);
 }
 
@@ -151,7 +150,6 @@ export async function getIndividualCompany(id) {
   return data.company
 }
 
-// Temp comment
 export async function getCompanyById(id) {
   const company = await getIndividualCompany(id);
   return company;

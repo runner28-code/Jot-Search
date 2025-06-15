@@ -43,10 +43,10 @@ const defaultState = {
   verifyPassword: '',
   terms: false
 };
+// Temp comment
 
 const defaultCommunity = {
   community: ''
-// Temp comment
 }
 export default function RegistrationFormInternal(loggedIn) {
   const {categories} = useContext(CategoryContext);

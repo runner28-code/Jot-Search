@@ -31,6 +31,7 @@ export default function AccountRecovery() {
     const successStyle = 'mb-4 text-success';
     const errorStyle = 'mb-4 text-error';
     if( response ) {
+      return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )
     }
   }
 

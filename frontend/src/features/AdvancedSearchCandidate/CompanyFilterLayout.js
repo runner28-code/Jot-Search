@@ -8,7 +8,6 @@ export default function CompanyFilterLayout(props) {
     setSearchTerm,
     handleSearchClick,
     clearFilters,
-  } = props;
   const { width } = useWindowDimensions();
   return (
     <div className='flex flex-col gap-xxl-4'>

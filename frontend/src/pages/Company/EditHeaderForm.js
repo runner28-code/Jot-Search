@@ -198,7 +198,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         <div className='flex items-center justify-between mb-4'>
           <label
             className='text-h6 text-royalBlue flex items-center'
-            htmlFor='phone'
           >
             <FaPhoneAlt
               className={iconStyles + 'fill-royalBlue'} />

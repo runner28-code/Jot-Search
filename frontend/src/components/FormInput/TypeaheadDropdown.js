@@ -12,6 +12,7 @@ export default function TypeaheadDropdown(props) {
     name, 
     label,
     required,
+// Temp comment
     placeholder, 
     choices, 
     currentChosen, 
@@ -30,7 +31,6 @@ export default function TypeaheadDropdown(props) {
       onChange(name, [...currentChosen, choice]);
     } else {
       onChange(name, currentChosen.filter(item => item !== choice));
-// Temp comment
     }
   }, [onChange])
 

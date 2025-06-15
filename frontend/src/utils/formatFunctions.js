@@ -58,6 +58,7 @@ export function convertUserToCandidate(user) {
     referredBy: user.referredBy || '',
     gender: user.gender || '',
     ethnicity: user.ethnicity || '',
+    veteran: user.veteran || '',
     disability: user.disability || '',
   };
   return candidate;
@@ -98,6 +99,7 @@ export function formatPhoneNumber(phoneNumberString) {
     const internationalCode = phoneNumberString.slice(0, 2);
     const areaCode = phoneNumberString.slice(2, 5);
     const firstThree = phoneNumberString.slice(5, 8);
+// Temp comment
     const lastFour = phoneNumberString.slice(8, 12);
     return `${internationalCode} (${areaCode}) ${firstThree}-${lastFour}`;
   }

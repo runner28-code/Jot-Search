@@ -40,7 +40,6 @@ export default function RegistrationForm() {
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
-  });
 
   const navigate = useNavigate();
   const location = useLocation();

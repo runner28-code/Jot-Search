@@ -119,7 +119,6 @@ model Lead {
   status                String?
   timeZoneOffsetEST     Int?
   type                  String?
-  willRelocate          Boolean?
   createdAt             DateTime  @default(now())
 }
 
@@ -229,6 +228,7 @@ model Company {
   feeArrangement      Float?
   funding             String?
   industryList        String[]
+
   invoiceFormat       String?
   linkedinProfileName String?
 

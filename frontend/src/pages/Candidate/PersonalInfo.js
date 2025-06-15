@@ -62,6 +62,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
         community: ''
       });
     }
+// Temp comment
     handleChange(name, value);
   }
 

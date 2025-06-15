@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
-// Temp comment
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';

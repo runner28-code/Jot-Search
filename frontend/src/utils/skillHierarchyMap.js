@@ -182,6 +182,7 @@ export const skills = [
   'Dynamics NAV',
   'E-Commerce',
   'Economic Development',
+  'Editing',
   'EdTech',
   'Education',
   'Electrical Engineering',

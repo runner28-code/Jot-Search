@@ -7,7 +7,6 @@ export const login = '/login';
 export const logout = '/logout';
 export const profile = '/profile';
 export const apply = '/apply';
-// Temp comment
 export const favorites = '/favorites';
 export const signup = '/signup';
 export const settings = '/settings';

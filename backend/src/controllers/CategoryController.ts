@@ -24,7 +24,6 @@ export class CategoryController {
           key: "id",
           value: id,
         },
-      ];
 
       const category = await getCategoriesByFilter(_filters, undefined, 1);
 

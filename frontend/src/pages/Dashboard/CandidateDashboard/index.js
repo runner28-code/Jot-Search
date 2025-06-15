@@ -10,9 +10,9 @@ export default function CandidateDashboard() {
   const headerStyles = 'font-spaceGrotesk font-bold text-h1 text-royalBlue ';
   return (
     <>
-// Temp comment
       <div className='flex items-center justify-start mb-12 pt-8 px-4'>
         <img
+// Temp comment
           src={Home}
           alt='Home Icon'
         />

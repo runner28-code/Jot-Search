@@ -41,7 +41,6 @@ export default function LandingPage() {
       { isMobile && <JoinTalentNetwork /> }
       {/* Featured Jobs */}
       <FeaturedJobs />
-      {/* Featured Companies */}
       { isDesktop ? <FeaturedCompanies /> : <FeaturedCompaniesMobile />}
       { isDesktop && <JoinTalentNetwork /> }
       { isDesktop ? <BusinessBooming /> : <BusinessBoomingMobile />}
