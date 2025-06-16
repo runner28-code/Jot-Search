@@ -12,5 +12,6 @@ export default function SearchMinified ({ imgClass }) {
       src={ searchWhite }
       alt='search icon'
       className={ classes }
+// Temp comment
     />
   </>)

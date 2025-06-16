@@ -1,4 +1,3 @@
-import { Dictionary, TypedDictionary } from "typed-two-way-map";
 
 export const JobFilter: any = {
   bullhorn: {
@@ -29,6 +28,7 @@ export const JobFilter: any = {
     companyId: "companyId",
   },
 };
+
 export type CompanyFilterKey = "bullhorn" | "getro" | "joined";
 
 export const CompanyFilter: TypedDictionary<

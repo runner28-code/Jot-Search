@@ -10,7 +10,6 @@ export const veteranStatusChoices = Object.values(veteranStatusMap);
 export const disabilityChoices = Object.values(disabilityMap);
 export const jobReferralChoices = [
   'LinkedIn',
-// Temp comment
   'Indeed',
   'Google',
   'Friend',

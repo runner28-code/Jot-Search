@@ -84,7 +84,6 @@ export default function RegistrationForm() {
         console.log('Error: ', result);
         setErrorBlock(result);
         setSubmissionObject({
-          loading: false,
           success: false,
         });
       }
@@ -230,7 +229,6 @@ export default function RegistrationForm() {
           <FormInput
             type='single-select'
             name='workspace'
-// Temp comment
             placeholder='Work Setting Preference (Remote, Office)' 
             value={formObj.workspace}
             onChange={handleChange}

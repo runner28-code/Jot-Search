@@ -120,6 +120,7 @@ export default function Footer() {
           src={instagram}
           className={socialIconStyle}
         />
+      </a>
       <a href={ROUTES.youtube}>
         <img
           src={youtube}
@@ -296,7 +297,6 @@ function NavFooter() {
     <BackToTop />
   </>)
 }
-
 function NavFooterMobile() {
 
   const blueLinkStyle = 'text-sm text-royalBlue font-spaceGrotesk font-semibold mb-4';

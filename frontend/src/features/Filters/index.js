@@ -6,7 +6,6 @@ export default function Filters(props) {
   const {
     handleFilterChange,
     defaultFilterObject,
-    filterObject,
     searchLabel,
     searchTerm,
     setSearchTerm,

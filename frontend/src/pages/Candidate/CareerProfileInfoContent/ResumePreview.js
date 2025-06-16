@@ -27,7 +27,6 @@ const ResumePreview = ({ resumeUrl }) => {
       {!pdfDocument && <LoadingSpinner />}
       <canvas
         ref={canvasRef}
-        className='rounded-lg'
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>
@@ -46,6 +45,7 @@ const ResumePreview = ({ resumeUrl }) => {
                 disabled={nextButtonDisabled}
                 onClick={() => setPage(page + 1)}
               >
+                <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>
           </ul>

@@ -63,7 +63,6 @@ export const getAppliedJobsByUser = async (userId: string) => {
             userId,
           },
         },
-      },
       include: {
         company: true,
         applications: {

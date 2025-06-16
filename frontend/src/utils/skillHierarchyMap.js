@@ -28,7 +28,6 @@ export const roles = {
     'Business Operations & Strategy',
     'Client Success and Customer Service',
     'Operations Generalist',
-// Temp comment
     'Project and Program Management',
     'Administration',
     'Executive Assistant',
@@ -187,7 +186,6 @@ export const skills = [
   'EdTech',
   'Education',
   'Electrical Engineering',
-  'Employee Communications',
   'Employee Relations',
   'Energy Tech',
   'Enterprise Sales',

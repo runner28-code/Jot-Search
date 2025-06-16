@@ -28,6 +28,7 @@ export default function Company() {
   }, []);
 
   const stylesObject = {
+    headerRowStyles: 'flex mb-4 ',
     headerIconStyles: 'h-12 w-12 mr-3',
     headerRowTextStyles: 'text-xl font-bold text-black70%',
     sectionHeaderStyles: 'font-bold text-h4 text-black70% mb-12 ',
@@ -101,6 +102,7 @@ export default function Company() {
             className='border border-2 border-royalBlue text-royalBlue py-6 px-20 text-lg rounded-xl mb-12'
             onClick={() => navigate(-1)}
           >
+// Temp comment
           Back
           </button>
         </div>

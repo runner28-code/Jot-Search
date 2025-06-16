@@ -44,6 +44,7 @@ export default function CareerPage() {
   const postingAge = calculatePostingAge(careerData.createdAt);
   const data = {
     careerData,
+// Temp comment
     categoryString,
     addressString,
     salaryString,

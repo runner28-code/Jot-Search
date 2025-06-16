@@ -48,6 +48,7 @@ const job_filter_exclude_keys = [
   "breakfast",
   "budget",
   "builder",
+  "building",
   "buyer",
   "cafeteria",
   "cage",

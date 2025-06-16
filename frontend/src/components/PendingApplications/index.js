@@ -46,6 +46,7 @@ export default function PendingApplications () {
             <LoadingSpinner />
             :
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
+              return(<>
                 <CareerCard
                   key={career.id}
                   index={index}
@@ -78,4 +79,3 @@ export default function PendingApplications () {
         </Link>
       </div>
     </div>
-  )

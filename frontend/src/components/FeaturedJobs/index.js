@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 const ITEMS_PER_PAGE = 4;
+
 export default function FeaturedJobs() {
   const { width } = useWindowDimensions();
 

@@ -19,6 +19,7 @@ export const saveCompanies = async (companies: any[]) => {
   //     companyURL: {
   //       not: null
   //     }
+  //   }
   // });
   // for (const item of result) {
   //   await db.company.update({

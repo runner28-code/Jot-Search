@@ -19,6 +19,7 @@ export type Company = {
   topics?: string;
   twitter_url?: string;
   url?: string;
+  website_url?: string;
   managers?: string;
   network_id?: string;
   locations?: string;
@@ -39,7 +40,6 @@ export type Job = {
   employment_types?: string;
   expires_at?: string;
   job_functions?: string;
-  locations?: string;
   organization_id?: string;
   passes_filter?: string;
   posted_at?: string;
