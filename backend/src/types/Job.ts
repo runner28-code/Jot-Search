@@ -30,3 +30,4 @@ export type Job = {
   company_name?: string;
   datasource?: Datasource;
   featured?: boolean;
+};

@@ -120,7 +120,6 @@ export default function Footer() {
           src={instagram}
           className={socialIconStyle}
         />
-      </a>
       <a href={ROUTES.youtube}>
         <img
           src={youtube}

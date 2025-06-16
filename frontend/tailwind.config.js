@@ -23,7 +23,6 @@ module.exports = {
         'spin-reverse': {
           from: {
             transform: 'rotate(180deg)'
-          },
           to: {
             transform: 'rotate(0deg)'
           },
@@ -109,7 +108,6 @@ module.exports = {
         '20%': '20%',
         '25%': '25%',
         '30%': '30%',
-// Temp comment
         '35%': '35%',
         '40%': '40%',
         '44%': '44%',
@@ -130,3 +128,4 @@ module.exports = {
         '22': '5.5rem',
         '26': '6.5rem',
         '30': '7.5rem',
+        '34': '8.5rem',

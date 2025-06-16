@@ -22,7 +22,6 @@ export default function InviteCandidates({ job }) {
 
   const candidateOptions = candidates?.map(candidate => {
     return {
-// Temp comment
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
       value: candidate.id,
       candidate
@@ -45,6 +44,5 @@ export default function InviteCandidates({ job }) {
           <button
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs'
             onClick={(e) => deleteItem(e, item.value)}>X</button>
-        </span>
       ))}
     </div>)

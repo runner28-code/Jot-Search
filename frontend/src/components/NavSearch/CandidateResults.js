@@ -17,7 +17,6 @@ export default function CandidateResults({ candidates }) {
         return (
           <CandidateResult 
             candidate={candidate} 
-// Temp comment
             key={candidate.id} />
         )
       })}

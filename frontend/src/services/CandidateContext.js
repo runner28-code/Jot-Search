@@ -42,6 +42,7 @@ const mockCandidateData = [
     linkedin_url: 'https://www.linkedin.com/',
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/rachel_2_fekvfg.webp', // Missing from Bullhorn Schema
     occupation: 'Project Manager',
+// Temp comment
     companyName: 'Aerovision',
     address_city: 'Tulsa',
     address_state: 'OK',

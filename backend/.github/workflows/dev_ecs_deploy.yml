@@ -1,5 +1,6 @@
 name: Dev - ECS Deployment
 
+on:
   push:
     branches:
       - dev
@@ -39,3 +40,4 @@ jobs:
         files: ${{ env.ECS_TASK_DEFINITION }}
         tokenPrefix: '{'
         tokenSuffix: '}'
+      env:

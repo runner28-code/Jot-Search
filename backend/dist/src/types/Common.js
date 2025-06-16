@@ -13,3 +13,4 @@ var Tables;
     Tables["CONTACTS"] = "Contacts";
     Tables["LEADS"] = "Leads";
     Tables["CANDIDATES"] = "Candidates";
+    Tables["APPLICATIONS"] = "Applications";

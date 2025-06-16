@@ -11,3 +11,4 @@ const config = {
 
   bullhornClientID: process.env.BULLHORN_CLIENT_ID,
   bullhornClientSecret: process.env.BULLHORN_CLIENT_SECRET,
+  bullhornApiUsername: process.env.BULLHORN_API_USERNAME,

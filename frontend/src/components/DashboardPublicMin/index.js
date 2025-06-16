@@ -37,7 +37,6 @@ export default function DashboardPublicMin({type}) {
     <div className='py-8 bg-gradient-to-t from-sky-500 via-sky-700 to-sky-700 flex items-center justify-center text-white mb-12 flex-col px-[15%]'>
       <div className='flex items-center justify-between w-full'>
         <div className='basis-1/12'>
-          <button
             className='text-white underline text-lg'
             onClick={() => navigate(-1)}
           >
@@ -48,7 +47,6 @@ export default function DashboardPublicMin({type}) {
           <Link
             className={type === 'careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
-// Temp comment
           >
             <CareerIcon />
             <p className='ml-4'>Careers</p>

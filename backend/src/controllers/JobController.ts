@@ -212,3 +212,6 @@ export class JobController {
       ALLOWED_JOB_KEYS.has(field as JobKey)
     );
 
+    const alias = "main_jobs";
+    const companyAlias = "company";
+

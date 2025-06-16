@@ -17,7 +17,6 @@ export default function CompanyDashboard({userType}) {
       />
       <Stats
         headerStyles={headerStyles}
-// Temp comment
         userType={userType}
       />
       <AssistanceCard />

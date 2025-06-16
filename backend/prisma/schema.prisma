@@ -119,6 +119,7 @@ model Lead {
   status                String?
   timeZoneOffsetEST     Int?
   type                  String?
+  willRelocate          Boolean?
   createdAt             DateTime  @default(now())
 }
 
@@ -369,3 +370,7 @@ model Job {
   externalId          String?    @unique(map: "Job_Unique_ExternalId")
   description         String?
   address1            String?
+  address2            String?
+  clientCorporationID String?
+  clientContactID     String?
+  ownerID             String?

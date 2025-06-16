@@ -59,6 +59,7 @@ export class GetroService {
         } catch (error) {
             console.log(error);
         }
+        return false;
     };
 
     async getCompanies(testMode = false, per_page = 30): Promise<any> {
@@ -142,3 +143,5 @@ export class GetroService {
         while (repeatErr < 3) {
             try {
                 await this.checkAuth();
+                const query = queryString.stringify({
+                    per_page,

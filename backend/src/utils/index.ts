@@ -27,6 +27,7 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
         return true;
     }
 }
+
 export const isExistByCondition = async (condition: string, datset: string, table: string) => {
     try {
         const query = `
@@ -58,3 +59,4 @@ export const sleep = async (ms: number): Promise<void> => {
 }
 
 export const getDataSource = (id: string) => {
+    const prefix = id.slice(0, 2);

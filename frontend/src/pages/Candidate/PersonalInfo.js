@@ -34,6 +34,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     referredBy: candidateData.referredBy || '',
     gender: candidateData.gender || '',
   })
+// Temp comment
 
   const [editMode, setEditMode] = useState(false);
 
@@ -62,7 +63,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
         community: ''
       });
     }
-// Temp comment
     handleChange(name, value);
   }
 

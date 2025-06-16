@@ -206,3 +206,5 @@ export class CandidateController {
           })
           where.categoryId = category?.externalID;
         }
+        const tppUserPromise = db.user.findMany({
+          where: whereWithoutStatus,

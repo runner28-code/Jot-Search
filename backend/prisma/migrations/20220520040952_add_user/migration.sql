@@ -1,4 +1,5 @@
 -- CreateTable
+CREATE TABLE "User" (
     "id" TEXT NOT NULL,
     "firstName" TEXT NOT NULL,
     "lastName" TEXT NOT NULL,
@@ -21,3 +22,4 @@
     "gender" TEXT,
     "address1" TEXT,
     "address2" TEXT,
+    "zip" TEXT,

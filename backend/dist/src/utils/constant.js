@@ -230,7 +230,6 @@ const job_filter_exclude_keys = [
     "librarian",
     "library",
     "license",
-// Temp comment
     "life enrichment",
     "life science",
     "life sciences",
@@ -244,3 +243,5 @@ const job_filter_exclude_keys = [
     "maintenance",
     "mammographer",
     "manufacturing",
+    "massage",
+    "material",

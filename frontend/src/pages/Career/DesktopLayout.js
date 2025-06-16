@@ -45,6 +45,7 @@ export default function DesktopLayout(props) {
             <FavoriteButton
               type='job'
               data={careerData}
+              addClass='vw-900:top-[-20px] vw-900:right-[-10px]'
             />
           </div>
           {/* Expertise */}

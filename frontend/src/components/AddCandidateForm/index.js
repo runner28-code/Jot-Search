@@ -40,6 +40,7 @@ export default function RegistrationForm() {
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
+  });
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -229,6 +230,7 @@ export default function RegistrationForm() {
           <FormInput
             type='single-select'
             name='workspace'
+// Temp comment
             placeholder='Work Setting Preference (Remote, Office)' 
             value={formObj.workspace}
             onChange={handleChange}

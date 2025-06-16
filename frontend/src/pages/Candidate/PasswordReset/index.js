@@ -37,7 +37,6 @@ export default function PasswordReset({role, candidateData}) {
           <ResetForm
             candidateData={candidateData}
             setType={setType}
-// Temp comment
           />
         )}
         {renderResponse()}

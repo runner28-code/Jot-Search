@@ -109,7 +109,6 @@ CandidateCard.propTypes = {
     lastName: PropTypes.string,
     occupation: PropTypes.string,
     skills: PropTypes.string,
-    state: PropTypes.string,
     status: PropTypes.string,
     userDateAdded: PropTypes.string,
     workspace: PropTypes.string,

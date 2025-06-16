@@ -19,7 +19,6 @@ export const saveCompanies = async (companies: any[]) => {
   //     companyURL: {
   //       not: null
   //     }
-  //   }
   // });
   // for (const item of result) {
   //   await db.company.update({
@@ -160,3 +159,5 @@ export const saveClientContacts = async (contacts: any[]) => {
             externalID: contact.id,
           },
         });
+
+        if (existing) {

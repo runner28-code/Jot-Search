@@ -35,7 +35,6 @@ export const saveApplication = async (job: string, candidate: string) => {
       console.log("already applied");
       return {
         result: false,
-        message: "already applied",
       };
     }
   } catch (error) {
@@ -70,3 +69,4 @@ export const saveJob = async (job: string, candidate: string) => {
         data: {
           savedJobs: {
             connect: {
+              id: job,

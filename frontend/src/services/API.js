@@ -22,7 +22,6 @@ API.interceptors.request.use(
     return Promise.reject(error);
   }
 );
-
 export default API;
 
 export function appendPathToBaseUrl(path) {
@@ -116,6 +115,7 @@ export async function updateJob({ id, status, featured }) {
     id,
     status,
     featured
+  });
   return normalizeData(data);
 }
 

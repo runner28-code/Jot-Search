@@ -78,9 +78,7 @@ export default function ExpertiseLinks() {
           state={{ Expertise: 'Finance' }}
         >
           <img
-            src={financeIcon}
             alt='Finance Icon'
-// Temp comment
             className={iconStyles}
           />
           <span className={textStyles}>Finance</span>

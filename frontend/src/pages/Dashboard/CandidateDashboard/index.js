@@ -12,7 +12,6 @@ export default function CandidateDashboard() {
     <>
       <div className='flex items-center justify-start mb-12 pt-8 px-4'>
         <img
-// Temp comment
           src={Home}
           alt='Home Icon'
         />
@@ -21,7 +20,6 @@ export default function CandidateDashboard() {
       <div className='px-4'>
         <InvitationsToApply />
         <PendingApplications />
-        <CareerFavorite />
         <CompanyFavorite />
         <h1 className={headerStyles}>Search</h1>
         <AdvancedSearch />
