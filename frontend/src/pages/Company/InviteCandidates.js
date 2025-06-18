@@ -1,4 +1,3 @@
-// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
@@ -32,7 +31,6 @@ export default function InviteCandidates({ company }) {
     setSelected(selected.filter(item => item.value !== value))
   }
 
-  const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (
         <span 

@@ -49,6 +49,7 @@ export class BullhornService {
         if (
           this.auth_code &&
           this.access_token &&
+          this.refresh_token &&
           this.BhRestToken &&
           this.restUrl
         )
@@ -497,3 +498,5 @@ export class BullhornService {
             "desiredSpecialties",
             "division",
             "email",
+            "email2",
+            "email3",

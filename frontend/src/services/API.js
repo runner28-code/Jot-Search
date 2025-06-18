@@ -183,7 +183,6 @@ export async function saveCompany(candidateId, companyId) {
 
 export async function getSavedCompanies(id, count = null, page = null) {
   const params = id ? { candidate: id } : {}; // If no id is passed, will default to logged in user
-  const { data } = await API.get(ROUTES.APIsavedCompanies, {
     params: {
       count,
       page,

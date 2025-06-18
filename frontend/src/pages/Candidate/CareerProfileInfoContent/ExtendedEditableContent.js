@@ -36,6 +36,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     experience: candidateData?.experience || '',
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
     linkedin: candidateData?.linkedin || '',
+// Temp comment
     resume: candidateData?.resume || '',
   });
 

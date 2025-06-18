@@ -64,7 +64,6 @@ export default function NavSearchMobile({ placeholder }) {
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setForceHidden( false );
-// Temp comment
   }
 
   /* Clear state on page change */
@@ -75,3 +74,56 @@ export default function NavSearchMobile({ placeholder }) {
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
     setForceHidden(true);
+  };
+
+  useEffect(() => {
+    listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
+  }, [closeDropdown]);
+
+  const combinedResults = {
+    jobs: jobs || [],
+    companies: companies || [],
+    candidates: candidates || [],
+    loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
+    total: totalJobs + totalCompanies + totalCandidates,
+    forceHidden
+  }
+
+  /* STYLES & RENDER */
+  const stylesObject = {
+    containerStyles: 'flex flex-row-reverse items-center justify-evenly bg-white border-solid border-2 border-lightGrey rounded-lg mr-4 ',
+    searchIconStyles: 'h-16 px-2 bg-gray-200 text-neutral-400 text-[3.5rem] flex justify-center items-center rounded-lg',
+    inputStyles: 'flex-1 h-24 rounded-l-lg pl-4'
+  }
+
+  return (
+    <div>
+      <div ref={menuRef} >
+        <NavSearchBar
+          searchTerm={ searchTerm }
+          setSearchTerm={ handleSearchChange }
+          placeholder={ placeholder }
+          alternateStylesObject={ stylesObject } 
+          setIsOpen={ setIsOpen }
+          isOpen={ isOpen }
+        />
+      </div>
+      { renderResultsContainer( combinedResults, searchTerm ) }
+    </div>
+  )
+}
+
+NavSearchMobile.propTypes = {
+  placeholder: PropTypes.string
+}
+
+function renderResultsContainer( results, searchTerm ) {
+  if ( !searchTerm || results.forceHidden ) { // if no searchTerm, no results to display
+    return null;
+  }
+
+  return (
+    <div className='absolute z-20 top-full w-full flex flex-col justify-center items-center min-h-50 px-6 py-4 rounded-2xl rounded shadow-resultCardShadow bg-white '>
+      { renderResults( results ) }
+    </div>
+  )

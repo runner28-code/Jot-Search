@@ -29,7 +29,6 @@ const defaultState = {
   city: '',
   state: '',
   zip: '',
-  country: '',
   willRelocate: false,
   roles: [],
   skills: [],
@@ -57,7 +56,6 @@ export default function RegistrationFormInternal(loggedIn) {
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
-// Temp comment
     success: false,
   });
 

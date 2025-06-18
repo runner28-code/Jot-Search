@@ -73,6 +73,7 @@ export default function Footer() {
               target='_blank'
               rel='noreferrer'
             >
+                Privacy Policy
             </a>
             <span> | </span>
             <a

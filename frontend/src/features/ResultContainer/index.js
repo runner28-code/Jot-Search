@@ -20,7 +20,6 @@ export default function ResultContainer(props) {
     isFavoriteOverride = null,
     agoText = null,
     containerClass = undefined,
-// Temp comment
     selectableProps = null,
   } = props;
   const resultsHeaderStyles = 'font-bold w-full text-xl mb-8 ';
@@ -28,6 +27,7 @@ export default function ResultContainer(props) {
   const resultsContainerStyles = containerClass || 'flex flex-col items-center justify-center ';
 
   function renderHeader() {
+// Temp comment
     if ( !header ) {
       return null;
     }

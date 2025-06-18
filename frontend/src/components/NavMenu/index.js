@@ -18,6 +18,7 @@ export default function NavMenu() {
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {
       AuthService.logout();
+// Temp comment
     }
   }
 
@@ -38,6 +39,7 @@ export default function NavMenu() {
       <Menu
         key={menuOpen}
         menuOpen={menuOpen}
+        handleOptionClick={handleOptionClick}
         setMenuOpen={setMenuOpen} />
     </div>
   )

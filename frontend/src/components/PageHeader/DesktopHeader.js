@@ -5,7 +5,6 @@ import SourceIdentifier from '../SourceIdentifier';
 export default function DesktopHeader(props) {
   const {
     headerText,
-// Temp comment
     icon,
     IconComponent,
     classOverride,
@@ -46,7 +45,6 @@ export default function DesktopHeader(props) {
         <button
           className='text-md text-royalBlue underline mt-6'
           onClick={() => navigate(-1)}
-        >
           {'< Go Back'}
         </button>
       )}

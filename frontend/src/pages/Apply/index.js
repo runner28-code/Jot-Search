@@ -46,6 +46,7 @@ export default function Apply() {
   const [referralChoice, setReferralChoice] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
+// Temp comment
     success: false,
     error: false,
     errorMessage: ''
@@ -92,7 +93,6 @@ export default function Apply() {
       setOriginalObject(stateObject);
       setApplicationObject({ ...stateObject, loading: false });
     } catch(e) {
-// Temp comment
       console.log('error', e);
     }
   }, []);

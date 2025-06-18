@@ -377,3 +377,4 @@ model Job {
   city                String?
   state               String?
   zip                 String?
+  country_id          String?

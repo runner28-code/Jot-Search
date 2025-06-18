@@ -143,7 +143,6 @@ export class JobController {
         include: {
           company: true,
           category: true,
-        },
         orderBy: [
           {
             externalId: "asc",

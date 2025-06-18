@@ -5,7 +5,6 @@ module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
   ],
-// Temp comment
   theme: {
     extend: {
       animation: {
@@ -30,7 +29,6 @@ module.exports = {
           },
         },
       },
-      boxShadow: {
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
       colors: {
@@ -132,3 +130,4 @@ module.exports = {
         '30': '7.5rem',
         '34': '8.5rem',
         '35': '8.75rem',
+        '44': '11rem',

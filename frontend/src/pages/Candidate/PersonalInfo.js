@@ -9,7 +9,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import {
   ethnicityChoices,
   genderChoices,
-// Temp comment
   veteranStatusChoices
 } from '../Apply/utils';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';

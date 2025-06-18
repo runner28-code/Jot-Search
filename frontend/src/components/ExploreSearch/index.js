@@ -33,7 +33,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     navigate(ROUTES.careers, { state: { ...params } });
   }
 
-// Temp comment
   function handleFilterChange(name, value) {
     setFilterState({
       ...filterState,
@@ -65,7 +64,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         handleSearchClick={ handleSearchClick }
         placeholder='Job title or keywords'
         additionalClasses='w-[523px]'
-      />
       <div className='flex items-center mt-22'>
         <AccessibleDropdown
           type='single-select'

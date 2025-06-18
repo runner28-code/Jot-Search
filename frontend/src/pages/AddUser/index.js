@@ -23,6 +23,7 @@ export default function AddUser() {
   const companyContainer = '';
 
   return (<>
+    <h2 className='text-lg vw-768:text-h2 text-royalBlue font-spaceGrotesk font-bold mb-16 text-center flex items-center'>
       <img
         src={User}
         alt='User Icon'
@@ -36,7 +37,6 @@ export default function AddUser() {
         choices={['Candidate', 'Company', 'Coordinator']}
         handleChange={handleDropdownChange}
         noDefault={true}
-      />
     </h2>
     <div className={formType != 'Company' ? defaultContainer : companyContainer }>
       <div className='flex w-full px-8 vw-1280:px-0 3vw-1280:ml-10'>

@@ -31,7 +31,6 @@ class AuthService {
         return true;
       } else return false;
     } catch (err) {
-// Temp comment
       return false;
     }
   }
@@ -46,6 +45,7 @@ class AuthService {
     if ( role === 'candidate' ) {
       await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
+// Temp comment
       await this.refreshSavedCandidates();
     }
     window.location.assign('/');

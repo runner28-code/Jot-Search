@@ -166,3 +166,4 @@ export type ClientContact = {
     source?: string;
 };
 
+export type Candidate = {
