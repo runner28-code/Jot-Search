@@ -9,7 +9,6 @@ export const pluralizedTypes = {
 }
 
 export const openJobStatuses = [
-  'Active',
   'active',
   'Passive',
   'passive'

@@ -70,7 +70,6 @@ export async function getCandidateById(id) {
 
 export async function updateUser(newData, id) { // id is optional, if no id is passed it will update the user attached to the auth token
   const body = id ? { id, ...newData } : newData;
-// Temp comment
   const { data } = await API.post(ROUTES.APIuserUpdate, body);
   return normalizeData(data);
 }
@@ -90,7 +89,6 @@ export async function getSavedCandidates() {
 export async function saveCandidate(userId, candidateId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCandidate, {
     'company': userId,
-    'candidate': candidateId,
   });
 
   if (data.messsage === 'saved candidate') {

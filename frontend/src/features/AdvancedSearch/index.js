@@ -17,6 +17,7 @@ import {
   defaultJobFilterState,
   defaultCandidateFilterState,
   buildSearchFilters
+// Temp comment
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
@@ -67,6 +68,7 @@ export default function AdvancedSearch({ disabledTabs }) {
         ...filterObject,
         firstname: filterObject.title
       }
+      delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };

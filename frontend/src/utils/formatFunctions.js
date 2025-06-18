@@ -29,6 +29,7 @@ export function formatCandidateData(candidateData) {
   // If Candidate experience is a string, no need to map it
   if ( candidateData.experience && !isNaN(candidateData.experience) ) {
     formattedData.experience = candidateData.experience.toString();
+// Temp comment
   }
   // User table has firstname and lastname, Candidate table has firstName and lastName, make sure both exist until we normalize the tables
   if ( candidateData.firstName && !candidateData.firstname ) formattedData.firstname = candidateData.firstName;
@@ -78,6 +79,7 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;
 }
 
+export function formatPhoneNumber(phoneNumberString) {
   if ( !phoneNumberString ) {
     return 'No Phone Number Provided';
   }

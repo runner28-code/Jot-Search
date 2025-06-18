@@ -185,7 +185,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               Zip:
               </label>
               <input 
-// Temp comment
                 type='text'
                 onChange={handleInputChange}
                 id='zip'
@@ -238,6 +237,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className='w-24 h-24 cursor-pointer fill-emerald-500'
             onClick={handleSubmit} />
         </div>
+// Temp comment
       </div>
     </>
   )

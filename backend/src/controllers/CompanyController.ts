@@ -118,7 +118,6 @@ export class CompanyController {
     }
 
     const bullhornService = new BullhornService();
-    await bullhornService.init();
     return await bullhornService.insertCompany(body);
   }
 

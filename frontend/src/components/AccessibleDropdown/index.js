@@ -4,7 +4,6 @@ import downChevron from '../../assets/icons/chevron-down-gray.svg';
 import { Wrapper, Button, Menu, MenuItem } from 'react-aria-menubutton';
 import { experienceMap } from '../../utils/dbFieldMapping';
 
-// Temp comment
 const MULTI_SELECT = 'multi-select';
 
 export default function AccessibleDropdown(props) {
@@ -119,6 +118,7 @@ function buttonText(name, placeholder, currentChosen) {
 
   let buttonString = placeholder;
   
+// Temp comment
   if (currentChosen) {
     if (Array.isArray(currentChosen) && currentChosen.length > 0) {
       buttonString = currentChosen.join(', ');

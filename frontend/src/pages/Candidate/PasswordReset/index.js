@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import ResetButton from './ResetButton';
-// Temp comment
 import ResetForm from './ResetForm';
 
 export default function PasswordReset({role, candidateData}) {
@@ -24,7 +23,6 @@ export default function PasswordReset({role, candidateData}) {
     }
   }
 
-  return (
     <div className='flex flex-col space-y-8 mb-9 border rounded-2xl bg-white p-12'>
       <h3 className='text-xl'>Password</h3>
       <div className='flex flex-col space-y-8'>

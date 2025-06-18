@@ -16,7 +16,6 @@ import {
 import { NavBar, Footer, SideNav } from './components';
 import AuthService from './services/auth';
 
-// Temp comment
 function App() {
   let userRole = AuthService.getUserRole();
 

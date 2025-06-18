@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import SectionContent from './components/SectionContent';
@@ -9,6 +8,7 @@ import { MdCancel, MdCheckCircle } from 'react-icons/md';
 
 export default function EditableSection({ entityID, header, contentObjectProp, handleContentUpdate, headerStyles }) {
   const [contentObject, setContentObject] = useState(contentObjectProp);
+// Temp comment
   const [editMode, setEditMode] = useState(false);
 
   function handleSubmit() {
