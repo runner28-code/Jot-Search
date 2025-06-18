@@ -1,5 +1,4 @@
 -- CreateTable
-CREATE TABLE "User" (
     "id" TEXT NOT NULL,
     "firstName" TEXT NOT NULL,
     "lastName" TEXT NOT NULL,
@@ -8,6 +7,7 @@ CREATE TABLE "User" (
     "role" TEXT,
     "city" TEXT,
     "state" TEXT,
+    "resume" TEXT,
     "phone" TEXT,
     "linkedin" TEXT,
     "skills" TEXT,

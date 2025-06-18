@@ -184,7 +184,6 @@ export async function saveCompany(candidateId, companyId) {
 export async function getSavedCompanies(id, count = null, page = null) {
   const params = id ? { candidate: id } : {}; // If no id is passed, will default to logged in user
   const { data } = await API.get(ROUTES.APIsavedCompanies, {
-// Temp comment
     params: {
       count,
       page,
@@ -192,3 +191,18 @@ export async function getSavedCompanies(id, count = null, page = null) {
     }
   });
   return normalizeData(data.companies);
+}
+
+//* JOBS
+/**
+ * example filtersArr:
+ * [
+ *  {
+ *   key: 'title',
+ *   value: 'Software'
+ *  },
+ *  ...
+ * ] 
+ */
+export async function getJobs(filters, count, operator, page) {
+  return (await getJobsFull(filters, count, operator, page)).jobs;

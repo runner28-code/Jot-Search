@@ -180,3 +180,4 @@ export class CompanyController {
 
     // TODO: Add email service
 
+    const companyCandidateInvites = []

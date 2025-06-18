@@ -113,3 +113,4 @@ async function seedCategories() {
         enabled: true,
         externalID: 2000026,
       },
+      {

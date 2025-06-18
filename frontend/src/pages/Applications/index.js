@@ -40,6 +40,7 @@ export default function Applications() {
     }
   }
 
+  function removeSelectedApplications() {
     const currentHiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
     const newHiddenApplications = [...currentHiddenApplications, ...selectedApplications];
     localStorage.setItem('hiddenApplications', JSON.stringify(newHiddenApplications));
@@ -60,7 +61,6 @@ export default function Applications() {
       <div className='px-8'>
         <p className='Desktop-Body-textBody-paragraph-2 text-charcoal my-m'>
           Please note: Only InTulsa Featured Career postings applications can be shown (Sent or Closed status).
-        </p>
         <button
           className='text-royalBlue underline'
           onClick={removeSelectedApplications}

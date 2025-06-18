@@ -12,7 +12,6 @@ export type Job = {
   country_id?: string;
   employmentType?: string;
   title?: string;
-  willRelocate?: string;
   yearsRequired?: string;
   status?: string;
   skillList?: string;
@@ -27,6 +26,7 @@ export type Job = {
   isDeleted?: string;
   postedAt?: string;
   hidden?: boolean;
+  company_name?: string;
   datasource?: Datasource;
   featured?: boolean;
 };

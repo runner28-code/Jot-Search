@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 
 // Images
@@ -12,6 +13,5 @@ export default function SearchMinified ({ imgClass }) {
       src={ searchWhite }
       alt='search icon'
       className={ classes }
-// Temp comment
     />
   </>)

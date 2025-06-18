@@ -208,3 +208,5 @@ export class CandidateController {
         }
         const tppUserPromise = db.user.findMany({
           where: whereWithoutStatus,
+          skip: skip < 0 ? 0 : skip,
+          take: count || 100,

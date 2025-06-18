@@ -24,7 +24,6 @@
             2,
             { "SwitchCase": 1 }
         ],
-        "quotes": [
             "warn",
             "single",
             { "allowTemplateLiterals": true }

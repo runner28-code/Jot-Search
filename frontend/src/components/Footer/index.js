@@ -73,7 +73,6 @@ export default function Footer() {
               target='_blank'
               rel='noreferrer'
             >
-                Privacy Policy
             </a>
             <span> | </span>
             <a
@@ -297,6 +296,7 @@ function NavFooter() {
     <BackToTop />
   </>)
 }
+
 function NavFooterMobile() {
 
   const blueLinkStyle = 'text-sm text-royalBlue font-spaceGrotesk font-semibold mb-4';

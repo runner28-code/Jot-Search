@@ -25,7 +25,6 @@ function HeaderContent({ companyData }) {
         <div className='flex flex-wrap items-center mb-4'>
           <div className='basis-2/6'>
             { renderCompanyLogo(companyData.logo, companyData.name) }
-            <FillerIcon />
           </div>
           <div className='basis-4/6'>
             <h4 className={ headerTitle }>
@@ -63,7 +62,6 @@ function HeaderContent({ companyData }) {
 HeaderContent.propTypes = {
   companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,
-// Temp comment
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,
     businessSectorList: PropTypes.string,

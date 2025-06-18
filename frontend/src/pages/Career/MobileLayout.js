@@ -148,7 +148,6 @@ MobileLayout.propTypes = {
 function renderLogo( logo ) {
   if ( !logo ) {
     return <div className='w-36 h-36 flex justify-center items-center border border-smokeGray border-solid object-contain mr-10'>
-// Temp comment
       <CareerIcon className='w-24 h-24 fill-royalBlue' />
     </div>
   }

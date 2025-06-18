@@ -215,3 +215,5 @@ export class JobController {
     const alias = "main_jobs";
     const companyAlias = "company";
 
+    const _fields = filteredFields?.length
+      ? filteredFields.join(", ")

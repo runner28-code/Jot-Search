@@ -51,3 +51,4 @@ CREATE TABLE "Company" (
     "numEmployees" INTEGER,
     "numOffices" INTEGER,
     "ownership" TEXT,
+    "phone" TEXT,

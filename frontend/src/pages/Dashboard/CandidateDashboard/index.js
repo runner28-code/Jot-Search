@@ -4,6 +4,7 @@ import AdvancedSearch from '../../../features/AdvancedSearch';
 import CareerFavorite from '../../../components/CareerFavorite';
 import CompanyFavorite from '../../../components/CompanyFavorite';
 import PendingApplications from '../../../components/PendingApplications';
+// Temp comment
 import InvitationsToApply from '../../../components/InvitationsToApply';
 
 export default function CandidateDashboard() {
@@ -16,7 +17,6 @@ export default function CandidateDashboard() {
           alt='Home Icon'
         />
         <h1 className='ml-8 text-royalBlue text-lg vw-1280:text-[32px] font-spaceGrotesk'>My Dashboard</h1>
-// Temp comment
       </div>
       <div className='px-4'>
         <InvitationsToApply />

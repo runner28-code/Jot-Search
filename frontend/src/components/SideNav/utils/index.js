@@ -71,6 +71,7 @@ export const choices = {
     icon: LogoutIcon,
     link: ROUTES.logout,
   },
+}
 
 // Map choices to appropriate icons
 export const candidateChoices = [

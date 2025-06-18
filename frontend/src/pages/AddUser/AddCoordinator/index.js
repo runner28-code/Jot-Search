@@ -17,7 +17,6 @@ export default function AddCoordinator() {
       const formObjectCopy = { ...formObject };
       delete formObjectCopy.verifyPassword;
       const data = await registerUser(formObjectCopy);
-      if (data.result === true) {
         setSubmissionObject({
           loading: false,
           success: true,
@@ -33,7 +32,6 @@ export default function AddCoordinator() {
       }
     }
   }, [submissionObject.loading]);
-// Temp comment
 
   // Clear form and success icon after 2 seconds
   useEffect(() => {

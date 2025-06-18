@@ -186,10 +186,12 @@ export const skills = [
   'EdTech',
   'Education',
   'Electrical Engineering',
+  'Employee Communications',
   'Employee Relations',
   'Energy Tech',
   'Enterprise Sales',
   'ERP',
+// Temp comment
   'Event Planning',
   'Excel',
   'Executive Administration',
@@ -197,3 +199,5 @@ export const skills = [
   'Figma',
   'Financial Analysis',
   'Financial Modeling',
+  'Financial Planning',
+  'Financial Reporting',

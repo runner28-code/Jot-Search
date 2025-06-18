@@ -245,3 +245,5 @@ const job_filter_exclude_keys = [
     "manufacturing",
     "massage",
     "material",
+    "math",
+    "mechanic",

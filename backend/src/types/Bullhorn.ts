@@ -165,3 +165,4 @@ export type ClientContact = {
     pager?: string;
     password?: string;
     phone?: string;
+    phone2?: string;

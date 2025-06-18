@@ -1,7 +1,6 @@
 import { useState, useContext } from 'react';
 import { CategoryContext } from '../../../services/CategoryContext';
 import PropTypes from 'prop-types';
-// Temp comment
 import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
 import FormInput from '../../../components/FormInput';
 import {

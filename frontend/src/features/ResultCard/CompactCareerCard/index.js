@@ -36,6 +36,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.title}</h6>
           </div>
 
+// Temp comment
           {/* Posting/Application age */}
           <div className='flex items-center gap-xs border-1 border-t border-gray-300 py-4 mt-4 justify-self-end'>
             <BsClipboardCheck className='fill-midGrey h-14 w-12' />

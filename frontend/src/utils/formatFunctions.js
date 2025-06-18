@@ -1,4 +1,5 @@
 import fixStringNulls from './fixStringNulls';
+// Temp comment
 import { experienceMap } from './dbFieldMapping';
 import { stateCodeMap } from './constants';
 
@@ -35,6 +36,7 @@ export function formatCandidateData(candidateData) {
   if ( candidateData.lastName && !candidateData.lastname ) formattedData.lastname = candidateData.lastName;
   if ( candidateData.firstname && !candidateData.firstName ) formattedData.firstName = candidateData.firstname;
   if ( candidateData.lastname && !candidateData.lastName ) formattedData.lastName = candidateData.lastname;
+
   return formattedData;
 }
 

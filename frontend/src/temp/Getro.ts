@@ -39,3 +39,4 @@ export type Job = {
     discarded?: string;
     employment_types?: string;
     expires_at?: string;
+    job_functions?: string;

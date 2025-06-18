@@ -25,7 +25,6 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 const defaultState = {
   phone: '',
   expertise: '',
-// Temp comment
   address1: '',
   city: '',
   state: '',
@@ -58,6 +57,7 @@ export default function RegistrationFormInternal(loggedIn) {
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
+// Temp comment
     success: false,
   });
 

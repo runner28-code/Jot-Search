@@ -4,7 +4,7 @@ CREATE TABLE "_userSavedJobs" (
     "B" TEXT NOT NULL
 );
 
-CREATE TABLE "_userSavedCandidates" (
+-- CreateTable
     "A" TEXT NOT NULL,
     "B" TEXT NOT NULL
 );

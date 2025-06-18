@@ -38,7 +38,6 @@ export default function NavMenu() {
       <Menu
         key={menuOpen}
         menuOpen={menuOpen}
-        handleOptionClick={handleOptionClick}
         setMenuOpen={setMenuOpen} />
     </div>
   )

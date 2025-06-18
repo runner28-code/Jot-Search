@@ -20,6 +20,7 @@ import {
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
+import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
   phone: '',
@@ -148,6 +149,5 @@ export default function RegistrationForm(loggedIn) {
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
-      success: false,
     });
     console.log(formObj);

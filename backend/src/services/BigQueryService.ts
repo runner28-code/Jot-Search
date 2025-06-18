@@ -35,3 +35,4 @@ export class BigQueryService {
             const options = {
                 query: query,
                 location: 'US',
+            };
