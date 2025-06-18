@@ -50,6 +50,7 @@ export default function Company() {
   companyData.description = companyData.getro_description ? companyData.getro_description : companyData.bh_description;
 
   const loggedIn = AuthService.loggedIn();
+
   const navigate = useNavigate();
 
   if (loading) { return <LoadingSpinner /> }

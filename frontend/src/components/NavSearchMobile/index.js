@@ -113,6 +113,7 @@ export default function NavSearchMobile({ placeholder }) {
   )
 }
 
+// Temp comment
 NavSearchMobile.propTypes = {
   placeholder: PropTypes.string
 }

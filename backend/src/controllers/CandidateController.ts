@@ -210,3 +210,4 @@ export class CandidateController {
           where: whereWithoutStatus,
           skip: skip < 0 ? 0 : skip,
           take: count || 100,
+          orderBy: {

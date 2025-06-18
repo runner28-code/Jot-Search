@@ -64,6 +64,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         handleSearchClick={ handleSearchClick }
         placeholder='Job title or keywords'
         additionalClasses='w-[523px]'
+      />
       <div className='flex items-center mt-22'>
         <AccessibleDropdown
           type='single-select'
@@ -91,6 +92,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
             baseStyles: 'bg-white text-midGrey tracking-wide border-midGrey border-y-2 border-solid pl-10 pr-6 ',
             inputHeight: 'h-18 ',
             inputWidth: 'w-92 ',
+// Temp comment
             marginBottom: 'mb-0 ',
             listStyles: 'bg-white text-black70% border-midGrey border-2 border-solid ',
             listItemStyles: 'pl-6 pr-2 py-2 tracking-wide '

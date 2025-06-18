@@ -5,6 +5,6 @@ export {default as Apply} from './Apply';
 export {default as Candidate} from './Candidate';
 export {default as Candidates} from './Candidates';
 export {default as Career} from './Career';
-// Temp comment
 export {default as Careers} from './Careers';
+// Temp comment
 export {default as Companies} from './Companies';

@@ -5,6 +5,7 @@ import AuthService from '../../services/auth';
 import { skills } from '../../utils/skillHierarchyMap';
 import FormInput from '../../components/FormInput';
 
+// Temp comment
 const dropdownFiltersCoord = [
   'Category',
   'Experience',

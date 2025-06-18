@@ -147,6 +147,7 @@ function renderAboutCompanySection(careerData, companyName) {
     return null;
   }
   const headerString = `About ${companyName}`;
+  return (<>
     <hr className={hrStyles} />
     {/* About Company */}
     <h4 className={sectionHeaderStyles}>{headerString}</h4>

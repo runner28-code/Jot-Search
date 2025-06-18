@@ -248,3 +248,4 @@ const job_filter_exclude_keys = [
     "math",
     "mechanic",
     "medical",
+    "medication",

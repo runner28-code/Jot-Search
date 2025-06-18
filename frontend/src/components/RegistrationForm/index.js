@@ -87,6 +87,7 @@ export default function RegistrationForm(loggedIn) {
         setErrors(['resume']);
         setErrorBlock('There was an error uploading your resume.');
         setSubmissionObject({
+          loading: false,
           success: false,
         });
         return;

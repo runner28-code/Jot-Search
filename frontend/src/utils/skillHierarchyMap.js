@@ -123,7 +123,6 @@ export const skills = [
   'Capital',
   'Change Management',
   'Chinese',
-  'CIA',
   'Cloud',
   'Cold Calling',
   'Communications',
@@ -200,3 +199,4 @@ export const skills = [
   'Financial Modeling',
   'Financial Planning',
   'Financial Reporting',
+  'Financial Services',

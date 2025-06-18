@@ -6,7 +6,6 @@ import {
   saveClientContacts,
   saveCompanies,
   saveBullhornJobs,
-  saveLeads,
 } from "../utils/BullhornCrud";
 import fs from "fs";
 import { checkForJobFilter, sleep } from "../utils";
@@ -500,3 +499,5 @@ export class BullhornService {
             "email",
             "email2",
             "email3",
+            "externalID",
+            "fax",

@@ -60,3 +60,4 @@ export const sendCandidatesToEmployers = async (candidates: string[], employers_
     console.log('Error during sending candidates list to employers');
     console.log(error);
     console.log(JSON.stringify(error.response.body));
+    throw error;

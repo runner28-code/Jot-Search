@@ -318,3 +318,5 @@ export const getCompanyDashboardStats = async (days: number) => {
           mode: 'insensitive'
         },
         ...previousPeriodCommonQuery
+      }
+    })

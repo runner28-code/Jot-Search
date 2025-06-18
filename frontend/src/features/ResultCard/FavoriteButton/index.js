@@ -20,6 +20,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
     return null;
   }
 
+  const item_id = getIdByType(type, data);
   const savedItems = getItemsByType(type);
   const isSaved = savedItems.includes(item_id);
   const { user_id } = AuthService.getProfile();

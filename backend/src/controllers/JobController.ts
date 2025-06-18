@@ -143,6 +143,7 @@ export class JobController {
         include: {
           company: true,
           category: true,
+        },
         orderBy: [
           {
             externalId: "asc",
@@ -216,3 +217,5 @@ export class JobController {
 
     const _fields = filteredFields?.length
       ? filteredFields.join(", ")
+      : `${alias}.*, ${companyAlias}.bh_url as company_url, ${companyAlias}.name as company_name, ${companyAlias}.logo as company_logo`;
+

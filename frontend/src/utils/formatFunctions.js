@@ -78,7 +78,6 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;
 }
 
-export function formatPhoneNumber(phoneNumberString) {
   if ( !phoneNumberString ) {
     return 'No Phone Number Provided';
   }
@@ -100,5 +99,6 @@ export function formatPhoneNumber(phoneNumberString) {
     const areaCode = phoneNumberString.slice(2, 5);
     const firstThree = phoneNumberString.slice(5, 8);
     const lastFour = phoneNumberString.slice(8, 12);
+    return `${internationalCode} (${areaCode}) ${firstThree}-${lastFour}`;
   }
   return phoneNumberString;

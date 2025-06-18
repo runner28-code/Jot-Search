@@ -182,3 +182,4 @@ export class CompanyController {
 
     const companyCandidateInvites = []
 
+    for (const companyId of body.companyIds) {

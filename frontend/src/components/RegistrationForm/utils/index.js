@@ -6,6 +6,7 @@ import * as ROUTES from '../../../routes';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if ( submissionObject.loading ) {
+// Temp comment
     return <LoadingSpinner
       height='50'
       width='50'
@@ -15,6 +16,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
   }
   return (
+    <button
       className={buttonStyles}
       type='submit'>
       {buttonString}

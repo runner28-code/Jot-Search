@@ -56,7 +56,6 @@ function renderSearch() {
   if( width <= 1024 ) {
     return (<>
       <ExploreSearchMobile
-        totalJobs={totalJobsCount}
         totalCompanies={totalCompaniesCount}
         loading={isLoading}
       />
@@ -64,7 +63,6 @@ function renderSearch() {
   }
   return (
     <ExploreSearch
-// Temp comment
       totalJobs={totalJobsCount}
       totalCompanies={totalCompaniesCount}
       loading={isLoading}

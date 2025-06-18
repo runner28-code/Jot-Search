@@ -18,7 +18,6 @@ export default function NavMenu() {
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {
       AuthService.logout();
-// Temp comment
     }
   }
 

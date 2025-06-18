@@ -91,7 +91,6 @@ export class GetroService {
                             }
                             if (result.length > 29) {
                                 await saveCompanies(result);
-                                result = [];
                             }
                         }
                         await saveCompanies(result);
@@ -146,3 +145,4 @@ export class GetroService {
                 const query = queryString.stringify({
                     per_page,
                     page,
+                    collection_id: this.networkId,
