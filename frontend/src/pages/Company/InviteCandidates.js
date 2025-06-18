@@ -18,6 +18,7 @@ export default function InviteCandidates({ company }) {
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
 
   const candidateOptions = candidates?.map(candidate => {
+// Temp comment
     return {
       label: candidate.name,
       value: candidate.id,
@@ -34,7 +35,6 @@ export default function InviteCandidates({ company }) {
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (
-// Temp comment
         <span 
           key={item.value} 
           className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">

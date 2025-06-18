@@ -14,7 +14,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
       aria-label="Pagination"
     >
       <div className="flex-1 flex justify-end">
-// Temp comment
         {total !== 0 && 
           <PaginationButton
             page={page - 1}
@@ -31,7 +30,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
             return (
               <PaginationButton
                 key={pageNumber}
-                page={pageNumber}
                 setPage={setPage}
                 prefetchFunc={pageNumber !== page && prefetchFunc}
                 active={pageNumber === page}

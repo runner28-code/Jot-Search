@@ -20,7 +20,6 @@ export const createJob = async (job: Job) => {
       data: {
         ...sanitizedJob,
         datasource: sanitizedJob?.datasource as any,
-      },
     });
 
     return {

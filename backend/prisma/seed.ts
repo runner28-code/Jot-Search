@@ -88,7 +88,6 @@ async function seedCandidates() {
         address_state: "OK",
         address_zip: "74008",
         description: "Ehh...",
-        companyName: "Nowhere",
         companyURL: "nowhere.com",
         firstName: "Bob",
         lastName: "Tester",
@@ -96,6 +95,7 @@ async function seedCandidates() {
         email: "bobtesting@gmail.com",
         comments: "He does nothing...",
       },
+    ],
   });
 }
 

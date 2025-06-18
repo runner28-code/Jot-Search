@@ -24,6 +24,7 @@ API.interceptors.request.use(
 );
 
 export default API;
+// Temp comment
 
 export function appendPathToBaseUrl(path) {
   if (path.slice(0, 4) === 'http') {
@@ -89,6 +90,7 @@ export async function getSavedCandidates() {
 export async function saveCandidate(userId, candidateId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCandidate, {
     'company': userId,
+    'candidate': candidateId,
   });
 
   if (data.messsage === 'saved candidate') {

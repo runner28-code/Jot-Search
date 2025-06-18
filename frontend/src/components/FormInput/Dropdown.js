@@ -44,8 +44,8 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
           >
             <span className='font-bold'>{choice}</span>
             {renderActiveIcon(choice, currentChosen)}
-          </div>
 // Temp comment
+          </div>
           { renderHorizontalRule(index, choices.length) }
         </div>)
       })}

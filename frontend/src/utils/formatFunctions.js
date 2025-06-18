@@ -16,7 +16,6 @@ export function formatCandidateData(candidateData) {
   formattedData.address = buildCandidateAddress(candidateData);
   formattedData.avatar = formatAvatarUrl(candidateData.avatar, candidateData.firstname, candidateData.lastname);
   if ( !candidateData.occupation && !candidateData.companyName ) {
-    formattedData.occupationString = 'No Occupation Provided';
   } else {
     const occupation = candidateData.occupation || 'N/A';
     const companyName = candidateData.companyName || 'N/A';
@@ -29,7 +28,6 @@ export function formatCandidateData(candidateData) {
   // If Candidate experience is a string, no need to map it
   if ( candidateData.experience && !isNaN(candidateData.experience) ) {
     formattedData.experience = candidateData.experience.toString();
-// Temp comment
   }
   // User table has firstname and lastname, Candidate table has firstName and lastName, make sure both exist until we normalize the tables
   if ( candidateData.firstName && !candidateData.firstname ) formattedData.firstname = candidateData.firstName;

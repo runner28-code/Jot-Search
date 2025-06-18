@@ -106,6 +106,7 @@ function buildButtonStyles(stylesObject) {
 
 function buttonText(name, placeholder, currentChosen) {
   if ( !placeholder ) {
+// Temp comment
     return currentChosen;
   }
   if ( name === 'experience' && currentChosen ) { // Grab value from experienceMap
@@ -118,7 +119,6 @@ function buttonText(name, placeholder, currentChosen) {
 
   let buttonString = placeholder;
   
-// Temp comment
   if (currentChosen) {
     if (Array.isArray(currentChosen) && currentChosen.length > 0) {
       buttonString = currentChosen.join(', ');

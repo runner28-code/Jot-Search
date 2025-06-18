@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import PageHeader from '../../components/PageHeader';
-// Temp comment
 import ResultsHeader from '../../components/ResultsHeader';
 import FilterSearch from '../../components/FilterSearch';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -13,7 +12,6 @@ import {
 import AuthService from '../../services/auth';
 
 const PLACE_HOLDER = 'Search active job title';
-const RESULT_CONTAINER_TYPE = 'active careers';
 const ITEMS_PER_PAGE = 5;
 
 export default function ActiveCareers() {

@@ -64,7 +64,6 @@ class AuthService {
     localStorage.removeItem('id_token');
     localStorage.removeItem('savedJobs');
     localStorage.removeItem('savedCompanies');
-// Temp comment
     localStorage.removeItem('savedCandidates');
   }
 
@@ -80,7 +79,6 @@ class AuthService {
       console.log(e);
       localStorage.setItem('savedJobs', JSON.stringify([]));
       localStorage.setItem('savedCompanies', JSON.stringify([]));
-    }
   }
 
   async refreshSavedCandidates() {

@@ -103,7 +103,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
           onClick={handleSearchClick}
         >
           Show me
-        </button>
       </div>
     </div>
   )

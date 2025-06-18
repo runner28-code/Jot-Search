@@ -17,7 +17,6 @@ module.exports = {
             transform: 'rotate(0deg)'
           },
           to: {
-// Temp comment
             transform: 'rotate(180deg)'
           },
         },
@@ -85,7 +84,6 @@ module.exports = {
         'tulsa-3-vert': 'url(\'./assets/images/tulsa-3-vert.webp\')',
         'explore-tulsa': 'url(\'./assets/images/home-hero.jpg\')',
         'join-hero': 'url(\'./assets/images/join-hero.jpg\')',
-        'tulsa-hero': 'url(\'./assets/images/lifeintulsa.jpg\')',
         'signup-page-hero': 'url(\'./assets/images/tulsanetwork.jpg\')',
         'login-page-hero': 'url(\'./assets/images/networklogin.jpg\')',
       },

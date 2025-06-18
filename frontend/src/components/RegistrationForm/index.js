@@ -104,6 +104,7 @@ export default function RegistrationForm(loggedIn) {
         if ( addType === 'coordinator' ) {
           return setSubmissionObject({
             loading: false,
+            success: true,
           })
         } else {
           return navigate(ROUTES.login);

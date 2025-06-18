@@ -42,6 +42,7 @@ export const saveCompanies = async (companies: any[]) => {
     "dateLastModified",
   ];
   try {
+    for (const company of companies) {
       try {
         console.log(`Savng company with ID = ${company.id}`, company);
         const address = await db.address.create({

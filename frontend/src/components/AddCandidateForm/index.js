@@ -22,6 +22,7 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 const defaultState = {
   expertise: '',
   roles: [],
+  skills: [],
   experience: '',
   employmentPreference: '',
   workspace: '',

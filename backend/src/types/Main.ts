@@ -10,6 +10,7 @@ export type SavedJob = {
     candidate: string;
     job: string;
 }
+
 export type Job = {
     id?: string;
     externalId?: string;

@@ -24,6 +24,7 @@ export default function TypeaheadDropdown(props) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
+
   const handleChoiceClick = useCallback((choice) => {
     if (!currentChosen.includes(choice)) {
       onChange(name, [...currentChosen, choice]);
@@ -50,6 +51,7 @@ export default function TypeaheadDropdown(props) {
   }
 
   function handleListClick() {
+// Temp comment
     setDropdownOpen(dropdownOpen => !dropdownOpen);
   }
 

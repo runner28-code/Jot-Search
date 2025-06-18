@@ -103,6 +103,7 @@ export const skills = [
   'Bachelor\'s Degree',
   'Bachelors Degree',
   'Banking',
+  'Benefits',
   'Big 4',
   'Bilingual',
   'Blender',
@@ -154,6 +155,7 @@ export const skills = [
   'Customer Relations',
   'Customer Service',
   'Customer Success',
+// Temp comment
   'Customer Support',
   'Cyber',
   'Cyber Security',
