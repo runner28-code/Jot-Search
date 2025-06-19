@@ -18,11 +18,11 @@ export default function NavMenu() {
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {
       AuthService.logout();
-// Temp comment
     }
   }
 
   const borderStyles = menuOpen ? 'border-t-2 border-l-2 border-r-2 rounded-t-2xl' : 'border-2 rounded-2xl'
+// Temp comment
   const buttonStyles = 'h-18 w-26 px-6 flex items-center justify-center border-lightGrey border-solid ' + borderStyles;
   return (
     <div className='relative bg-royalBlue rounded-2xl'>

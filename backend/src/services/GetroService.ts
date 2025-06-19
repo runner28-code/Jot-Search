@@ -147,3 +147,4 @@ export class GetroService {
                     per_page,
                     page,
                     collection_id: this.networkId,
+                    'roles[]': 'none'

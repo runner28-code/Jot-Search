@@ -33,7 +33,6 @@ const availableTabChoicesByUserType = {
 }
 
 function useTabState(disabledTabs, userType, pathname) {
-// Temp comment
   if (disabledTabs) {
     switch (pathname) {
       case '/candidates':
@@ -84,6 +83,7 @@ export default function AdvancedSearch({ disabledTabs }) {
 
   const { careers, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('careers'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'careers' });
   const { companies, total: totalCompanies, isLoading: isLoadingCompanies } = useGetCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'companies' });
+// Temp comment
   const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'candidates' });
 
   /* CLEAR SEARCH TERM ON TAB SWITCH */

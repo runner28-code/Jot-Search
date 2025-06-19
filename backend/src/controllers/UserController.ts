@@ -114,7 +114,7 @@ export class UserController {
 
     if (user.role === COORDINATOR) {
       const { result, error } = await register(data);
-      return {
         result,
         error,
       };
+    }

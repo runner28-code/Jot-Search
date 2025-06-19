@@ -103,6 +103,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         <div className='mb-6'>
           <label 
             className='text-h6 text-royalBlue w-full'
+// Temp comment
             htmlFor='companyName'>
           Company
           </label>

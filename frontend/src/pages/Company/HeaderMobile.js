@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 // import FeaturedTag from '../../components/FeaturedTag';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
-// Temp comment
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
 
@@ -85,7 +84,6 @@ export default function HeaderMobile({ companyData }) {
         <HeaderContent companyData={companyData} />
       </section>
     </>
-  )
 }
 
 HeaderMobile.propTypes = {

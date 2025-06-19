@@ -1,6 +1,6 @@
 export default function urlDecode(decodeString) {
-  if ( !decodeString ) {
 // Temp comment
+  if ( !decodeString ) {
     return '';
   }
   let decodedString = decodeString;

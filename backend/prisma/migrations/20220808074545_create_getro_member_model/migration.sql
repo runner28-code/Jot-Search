@@ -2,6 +2,7 @@
 CREATE TABLE "UserTalentCollection" (
     "id" TEXT NOT NULL,
     "user_id" INTEGER,
+    "collection_id" INTEGER,
     "status" TEXT,
     "approved_at" TEXT,
     "approved_by" TEXT,
@@ -34,3 +35,4 @@ CREATE TABLE "UserTalentCollection" (
 CREATE TABLE "GetroMember" (
     "id" TEXT NOT NULL,
     "avatar_url" TEXT,
+    "bio" TEXT,

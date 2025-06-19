@@ -165,3 +165,4 @@ export const saveClientContacts = async (contacts: any[]) => {
           console.log(`ClientContact with ID: ${contact.id} exists`);
           return -1;
         }
+        const contactData = { ...contact };

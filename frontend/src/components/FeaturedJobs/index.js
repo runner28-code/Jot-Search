@@ -11,7 +11,6 @@ const ITEMS_PER_PAGE = 4;
 export default function FeaturedJobs() {
   const { width } = useWindowDimensions();
 
-// Temp comment
   const linkStyles = '';
   const linkStylesMobile = 'basis-full mb-8'
   const titleStyles = 'text-h4 font-semibold font-spaceGrotesk';
@@ -54,6 +53,7 @@ export default function FeaturedJobs() {
                   className={ width >= 990 ? linkStyles : linkStylesMobile }
                 >
                   <div className={ width >= 990 ? cardStyles : cardStylesMobile }>
+// Temp comment
                     { width >= 990 ? <RenderImage image={career.logo} /> : <RenderImageMobile image={career.logo} />}
                     <div className={width >= 990 ? cardContentStyles : cardContentStylesMobile}>
                       <h5 className={ width >= 990 ? cardContentTitle : cardContentTitleMobile }>{career.title}</h5>

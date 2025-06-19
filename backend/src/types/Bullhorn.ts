@@ -95,6 +95,7 @@ export type Job = {
     location_country_code?: string;
     markUpPercentage?: string;
     numOpenings?: string;
+    onSite?: string;
     owner?: string;
     payRate?: string;
     publicDescription?: string;
@@ -130,7 +131,6 @@ export type ClientContact = {
     certifications?: string;
     clientCorporation?: string;
     comments?: string;
-    dateAdded?: string;
     dateLastModified?: string;
     dateLastVisit?: string;
     description?: string;
@@ -167,3 +167,4 @@ export type ClientContact = {
     phone2?: string;
     phone3?: string;
     preferredContact?: string;
+    skills?: string;

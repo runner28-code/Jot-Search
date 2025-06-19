@@ -51,6 +51,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const { width } = useWindowDimensions();
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();
+// Temp comment
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
   const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
   if (state) {
@@ -80,6 +81,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
     }
+  };
 
 
   const { jobs, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'jobs' });

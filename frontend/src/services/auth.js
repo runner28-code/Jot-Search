@@ -79,6 +79,7 @@ class AuthService {
       console.log(e);
       localStorage.setItem('savedJobs', JSON.stringify([]));
       localStorage.setItem('savedCompanies', JSON.stringify([]));
+    }
   }
 
   async refreshSavedCandidates() {
@@ -130,7 +131,6 @@ class AuthService {
     }
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
   }
-
   getSavedCandidateIDs() {
     return JSON.parse(localStorage.getItem('savedCandidates')) || [];
   }

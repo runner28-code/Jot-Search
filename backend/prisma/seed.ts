@@ -88,6 +88,7 @@ async function seedCandidates() {
         address_state: "OK",
         address_zip: "74008",
         description: "Ehh...",
+        companyName: "Nowhere",
         companyURL: "nowhere.com",
         firstName: "Bob",
         lastName: "Tester",
@@ -113,3 +114,4 @@ async function seedCategories() {
         externalID: 2000026,
       },
       {
+        name: "Operations",

@@ -12,6 +12,7 @@ import {
 import AuthService from '../../services/auth';
 
 const PLACE_HOLDER = 'Search active job title';
+const RESULT_CONTAINER_TYPE = 'active careers';
 const ITEMS_PER_PAGE = 5;
 
 export default function ActiveCareers() {
@@ -24,6 +25,7 @@ export default function ActiveCareers() {
     setSearchTerm(searchTerm);
     setPage(1);
   }
+// Temp comment
 
   const filtersArr = buildSearchFilters({ title: searchTerm, companyId, status: ['Active', 'Open'] });
 

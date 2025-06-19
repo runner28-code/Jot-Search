@@ -154,7 +154,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
       });
     } catch (err) {
       console.log("could not add user history:", user);
-      console.log(err);
     }
     clearPassword(updated);
 
@@ -320,3 +319,4 @@ export const getCompanyDashboardStats = async (days: number) => {
         ...previousPeriodCommonQuery
       }
     })
+    const activeCareersCompare = (activeCareersPostsInCurrentPeriod - activeCareersPostsInPreviousPeriod) * 100 / activeCareersPostsInCurrentPeriod;

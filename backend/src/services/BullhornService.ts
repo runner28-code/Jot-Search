@@ -502,3 +502,6 @@ export class BullhornService {
             "email3",
             "externalID",
             "fax",
+            "fax2",
+            "fax3",
+            "firstName",

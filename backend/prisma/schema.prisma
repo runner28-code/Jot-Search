@@ -379,3 +379,5 @@ model Job {
   zip                 String?
   country_id          String?
   employmentType      String?
+  title               String?
+  willRelocate        Boolean?

@@ -356,7 +356,6 @@ function NavFooterMobile() {
         <a
           href="/careers"
           className={linkStyle}
-// Temp comment
         >
           Software & Enginering Job Openings
         </a>

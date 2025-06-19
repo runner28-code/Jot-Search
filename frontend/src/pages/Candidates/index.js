@@ -11,12 +11,10 @@ export default function Candidates() {
     return <Navigate to='/' />
   }
 
-// Temp comment
   return (
     <section className='mr-20'>
       <PageHeader
         headerText='Candidates List'
-        icon={headerIcon}
       />
       <AdvancedSearch disabledTabs />
     </section>

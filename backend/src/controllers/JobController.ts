@@ -219,3 +219,4 @@ export class JobController {
       ? filteredFields.join(", ")
       : `${alias}.*, ${companyAlias}.bh_url as company_url, ${companyAlias}.name as company_name, ${companyAlias}.logo as company_logo`;
 
+    const specialHandlers = {

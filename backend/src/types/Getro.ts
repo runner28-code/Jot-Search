@@ -51,3 +51,4 @@ export type Job = {
   url?: string;
   hidden?: boolean;
 };
+

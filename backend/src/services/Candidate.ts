@@ -49,3 +49,4 @@ export const saveCandidate = async (
       result: true,
       message: existing ? "unsaved candidate" : "saved candidate",
     };
+  } catch (error) {

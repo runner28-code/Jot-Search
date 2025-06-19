@@ -9,3 +9,4 @@ export const CreateJwtToken = (data: any) => {
     { expiresIn: 2 * 3600 }
   );
   return token;
+}

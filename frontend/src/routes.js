@@ -14,6 +14,7 @@ export const accountRecovery = '/account-recovery';
 export const resetPassword = '/reset-password';
 
 // Dashboard routes
+// Temp comment
 export const dashboard = '/';
 export const careers = '/careers';
 export const companies = '/companies';
@@ -47,3 +48,4 @@ export const intulsa = 'https://www.intulsa.com';
 export const tulsaRemote = 'https://www.tulsaremote.com';
 export const campusTulsa = 'https://www.campustulsa.com';
 export const talentInTulsa = 'https://www.talent.intulsa.com/';
+export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';

@@ -78,7 +78,6 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
-              src={Triangle}
               className={headerIconStyles}
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
@@ -163,7 +162,6 @@ function renderDesktopLogo(logoUrl, name) {
     )
   }
   return (
-// Temp comment
     <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
       <img
         className={logoStyles}
