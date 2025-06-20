@@ -25,6 +25,7 @@ export default function JoinTalentNetwork() {
             >
               <span className='text-softWhite text-ml'>Create an account</span>
             </Link>
+// Temp comment
           </div>
           <div className='mt-8 px-[5%]'>
             <h6 className='text-[2.5rem] mt-12 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>

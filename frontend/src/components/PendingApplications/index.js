@@ -14,6 +14,7 @@ export default function PendingApplications () {
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
     filteredJobs: [],
+// Temp comment
     loading: true
   });
 
@@ -64,6 +65,7 @@ export default function PendingApplications () {
             <p className='text-sm font-bold text-white'>InTulsa Featured</p>
           </div>
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Apply to an InTulsa Featured Career!</h3>
+          <Link
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All

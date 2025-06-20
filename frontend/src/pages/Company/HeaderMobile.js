@@ -84,6 +84,7 @@ export default function HeaderMobile({ companyData }) {
         <HeaderContent companyData={companyData} />
       </section>
     </>
+  )
 }
 
 HeaderMobile.propTypes = {

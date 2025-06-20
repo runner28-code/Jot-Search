@@ -11,8 +11,8 @@ export default function CoordinatorDashboard({ userType }) {
         headerText={`Coordinator Dashboard`}
         icon={gaugeIcon}
       />
+// Temp comment
       <Stats userType={userType} />
       <AdvancedSearch />
     </>
-// Temp comment
   )

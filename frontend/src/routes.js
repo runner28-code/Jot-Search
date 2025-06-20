@@ -14,7 +14,6 @@ export const accountRecovery = '/account-recovery';
 export const resetPassword = '/reset-password';
 
 // Dashboard routes
-// Temp comment
 export const dashboard = '/';
 export const careers = '/careers';
 export const companies = '/companies';
@@ -34,7 +33,6 @@ export const alerts = '/alerts';
 
 export const careerSeekers = '/career-seeker';
 export const softwareEngineering = '/software-engineering';
-export const salesBizDev = '/sales-business-development';
 export const operations = '/operations';
 export const coordinatorQuickStats = '/coordinator-stats';
 

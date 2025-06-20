@@ -4,7 +4,6 @@ import { MdLogin } from 'react-icons/md';
 import { FaUserEdit } from 'react-icons/fa';
 import * as ROUTES from '../../routes';
 
-// Temp comment
 export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
   const { pathname } = useLocation();
   const forceShowPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage ];
@@ -22,7 +21,6 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
     <Link 
       to={ROUTES.signup}
       onClick={handleOptionClick}
-      className={stylesObject.bottomLinkStyles}
     >
       <FaUserEdit className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Signup</span>

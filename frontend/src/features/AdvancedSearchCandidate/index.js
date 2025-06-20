@@ -51,11 +51,11 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const { width } = useWindowDimensions();
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();
-// Temp comment
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
   const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
   if (state) {
     if (state.title) initialFilterState.title = state.title;
+// Temp comment
     if (state.expertise) initialFilterState.Expertise = state.expertise;
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
   }

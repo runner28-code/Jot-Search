@@ -15,6 +15,7 @@ import {
   guestChoices,
   findSelectedFromPath
 } from '../SideNav/utils';
+import { useCandidateContext } from '../../services/CandidateContext';
 
 export default function NavBar() {
   const { width } = useWindowDimensions();
@@ -43,7 +44,6 @@ function NavBarLayout() {
             { renderNavSearch() }
           </div>
           {/* Dropdown Menu */}
-          <DropdownMenu />
         </div>
       </div>
       {/* Nav Search */}

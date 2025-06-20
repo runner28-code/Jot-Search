@@ -46,6 +46,7 @@ export default function RegistrationForm() {
   const location = useLocation();
 
   useEffect(async () => { // Submit data
+// Temp comment
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
       // Validation

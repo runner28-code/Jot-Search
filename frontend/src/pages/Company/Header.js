@@ -78,6 +78,7 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
+              src={Triangle}
               className={headerIconStyles}
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }

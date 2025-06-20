@@ -15,12 +15,12 @@ exports.IUSER = {
     city: "",
     state: "",
     zip: "",
+// Temp comment
     resume: "",
     avatar: "",
     linkedin: "",
     skills: "",
     category: "",
     seniority: "",
-// Temp comment
     workspace: "",
     referredBy: "",

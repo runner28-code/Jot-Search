@@ -146,6 +146,7 @@ export default function Candidate() {
           role={role}
           candidateData={candidateData}
         />
+// Temp comment
       </div>
     </div>
   )

@@ -29,6 +29,7 @@ class AuthService {
       if (decoded.exp < Date.now() / 1000) {
         this.clearStorage();
         return true;
+// Temp comment
       } else return false;
     } catch (err) {
       return false;
@@ -131,6 +132,7 @@ class AuthService {
     }
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
   }
+
   getSavedCandidateIDs() {
     return JSON.parse(localStorage.getItem('savedCandidates')) || [];
   }

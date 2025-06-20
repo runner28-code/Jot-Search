@@ -37,7 +37,6 @@ export const saveCandidate = async (
           id: companyUserId,
         },
         data: {
-          savedCandidates: {
             disconnect: {
               id: candidateId,
             },

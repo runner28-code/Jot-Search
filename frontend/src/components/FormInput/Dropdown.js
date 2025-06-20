@@ -34,7 +34,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
     return null
   }
   
-  return (
     <div className={ rootClass }>
       {choices.map((choice, index) => {
         return (<div key={choice + '-container'}>

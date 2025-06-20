@@ -62,7 +62,6 @@ export default function Apply() {
     try {
       const { user_id } = AuthService.getProfile();
       const [careerData, candidateData] = await Promise.all([
-        getJobById(jobId),
         getCandidateById(user_id),
       ]);
       if ( candidateData.workAuthorized === true ) {
@@ -110,6 +109,7 @@ export default function Apply() {
           errorMessage: response.message
         });
       }
+    }
   }, [submissionObject.loading]);
 
   useEffect(() => {

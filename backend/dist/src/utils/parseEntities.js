@@ -38,6 +38,5 @@ const parseBullhornCandidateToUser = (data) => {
         willRelocate: data.willRelocate,
         ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,
-        disability: data.disability,
     };
     return user;

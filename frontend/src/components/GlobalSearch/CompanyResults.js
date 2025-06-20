@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import urlDecode from '../../utils/urlDecode';
-// Temp comment
 import * as ROUTES from '../../routes';
 
 export default function CompanyResults({ companies }) {
@@ -17,6 +16,7 @@ export default function CompanyResults({ companies }) {
         return (
           <CompanyResult 
             company={company} 
+// Temp comment
             key={company.id} />
         )
       })}

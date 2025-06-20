@@ -86,6 +86,7 @@ export default function AddCoordinator() {
   const inputStyles = 'h-20 pl-4 text-sm bg-neutral-100 font-roboto border-solid border rounded-2xl border-neutral-400 ';
   let validInputStyles = inputStyles + 'border-lightGrey ';
   let invalidInputStyles = inputStyles + 'border-rose-500 ';
+  const labelStyles = 'opacity-70 text-xs';
   const addInputStyles = ' w-full';
   const inputContainer = 'w-full vw-900:w-6/12 vw-900:pr-8 flex flex-col mb-12';
   const buttonStyles = 'w-100 text-md bg-royalBlue font-semibold text-white rounded-2xl px-6 py-8 font-spaceGrotesk';
