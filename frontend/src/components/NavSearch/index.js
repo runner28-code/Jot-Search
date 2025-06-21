@@ -47,7 +47,6 @@ export default function NavSearch({ placeholder }) {
       return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: searchTerm }
-    }
   };
 
   const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +64,6 @@ export default function NavSearch({ placeholder }) {
     setForceHidden( false );
   }
 
-// Temp comment
   /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');

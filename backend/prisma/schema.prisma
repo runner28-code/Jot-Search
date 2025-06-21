@@ -381,3 +381,4 @@ model Job {
   employmentType      String?
   title               String?
   willRelocate        Boolean?
+  yearsRequired       Int?

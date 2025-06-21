@@ -25,6 +25,7 @@ export class GetroService {
         return {
             headers: {
                 'X-User-Email': this.email,
+                'X-User-Token': this.password,
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             }

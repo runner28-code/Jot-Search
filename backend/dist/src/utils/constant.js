@@ -156,7 +156,6 @@ const job_filter_exclude_keys = [
     "fire",
     "fleet",
     "food",
-    "forensic",
     "foreperson",
     "forester",
     "forklift",
@@ -191,7 +190,6 @@ const job_filter_exclude_keys = [
     "humanities",
     "hvac",
     "i am awesome",
-// Temp comment
     "imaging",
     "impact coach",
     "inspector",
@@ -251,3 +249,4 @@ const job_filter_exclude_keys = [
     "medical",
     "medication",
     "membership",
+    "merchandiser",

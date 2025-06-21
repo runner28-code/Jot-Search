@@ -2,6 +2,7 @@ import {
   Body,
   Get,
   Post,
+  Put,
   QueryParam,
   JsonController,
   Authorized,
@@ -211,3 +212,4 @@ export class CandidateController {
           take: count || 100,
           orderBy: {
             firstname: "asc",
+          },

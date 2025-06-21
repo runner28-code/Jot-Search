@@ -321,3 +321,4 @@ export const getCompanyDashboardStats = async (days: number) => {
       }
     })
     const activeCareersCompare = (activeCareersPostsInCurrentPeriod - activeCareersPostsInPreviousPeriod) * 100 / activeCareersPostsInCurrentPeriod;
+

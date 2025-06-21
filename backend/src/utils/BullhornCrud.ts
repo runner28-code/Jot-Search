@@ -48,7 +48,6 @@ export const saveCompanies = async (companies: any[]) => {
         const address = await db.address.create({
           data: company.address,
         });
-        const existing = await db.company.findFirst({
           where: {
             externalID: company.id,
           },
@@ -135,6 +134,7 @@ export const saveBullhornJobs = async (jobs: any[]) => {
           data: jobData,
         });
 
+        console.log(`Saved job with ID = ${job.externalId} successfully`);
       } catch (error: any) {
         console.log(error.message);
         console.log(`ERROR: while saving job with ID = ${job.externalId}`);

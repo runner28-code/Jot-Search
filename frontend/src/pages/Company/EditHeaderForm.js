@@ -30,7 +30,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     setEditMode(false);
   }
   const handleSubmit = () => {
-// Temp comment
     handleCandidateUpdate(formData);
     setEditMode(false);
   }
@@ -224,7 +223,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           </label>
           <input 
             type='text'
-            onChange={handleInputChange}
             id='email'
             value={formData.email}
             className={inputStyles + 'ml-10 text-h6'} />

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
-  coordinatorChoices,
   guestChoices
 } from '../SideNav/utils';
 import Choice from './Choice';
@@ -31,7 +30,6 @@ export default function ChoicesContainer(props) {
   const {
     userRole,
     handleOptionClick } = props;
-// Temp comment
   
   return (<>
     { renderRoleChoices({ userRole, handleOptionClick }) }

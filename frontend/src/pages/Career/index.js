@@ -19,7 +19,6 @@ import InviteCandidates from './InviteCandidates';
 export default function CareerPage() {
   const { width } = useWindowDimensions();
   const location = useLocation();
-  const activeData = location.state;
 
   const isMobile = width < 768;
   const role = AuthService.getUserRole();
@@ -96,7 +95,6 @@ function renderNotification(activeData, careerData) {
         id={careerData.title}
         add='update request'
       />
-// Temp comment
       <Notification
         title='Did this platform help you fill the role below?'
         content='Please let us know by sending a message'

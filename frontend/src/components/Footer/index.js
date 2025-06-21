@@ -199,6 +199,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
+    </div>
   </>)
 }
 
@@ -386,7 +387,6 @@ function NavFooterMobile() {
           href="/careers"
           className={linkStyle}
         >
-          Tulsa Jobs
         </a>
       </div>
     </div>

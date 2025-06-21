@@ -42,6 +42,7 @@ function HeaderContent({ companyData }) {
               <div className={ headerGroupStyles }>
                 <CareerIcon
                   className={headerIconStyles}
+// Temp comment
                 />
                 <OpenCareers
                   styles={headerRowTextStyles}

@@ -169,7 +169,6 @@ const job_filter_exclude_keys = [
   "governance",
   "grade",
   "graduate",
-  "grants",
   "greenhouse",
   "gutter installer",
   "gym",
@@ -251,3 +250,4 @@ const job_filter_exclude_keys = [
   "merchandiser",
   "microbiologist",
   "microbiology",
+  "mlt",

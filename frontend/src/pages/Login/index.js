@@ -13,7 +13,6 @@ export default function Login() {
     event.preventDefault();
     const { email, password } = event.target;
     const res = await API.post(ROUTES.APIlogin, {
-      email: email.value,
       password: password.value,
     });
 
@@ -43,7 +42,6 @@ export default function Login() {
           <h1 className='font-spaceGrotesk text-white text-xl vw-768:text-h5 vw-1280:text-h2'>InTulsa Talent Network</h1>
         </div>
         {/* Login Form */}
-// Temp comment
         <form
           className='w-[84%] vw-640:w-250 rounded-3xl border border-midGrey border-solid bg-white mt-22 px-16 vw-1280:px-24'
           onSubmit={(e) => handleSubmit(e)}

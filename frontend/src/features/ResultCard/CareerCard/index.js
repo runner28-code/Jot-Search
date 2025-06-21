@@ -19,6 +19,7 @@ export default function CareerCard({ data, active }) {
   const postingAge = calculatePostingAge(data.createdAt);
   const addressString = buildCareerAddress(data.city, data.state);
   const role = AuthService.getUserRole();
+// Temp comment
 
   const { width } = useWindowDimensions();
 

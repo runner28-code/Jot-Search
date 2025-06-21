@@ -45,7 +45,6 @@ CREATE TABLE "Candidate" (
     "isExempt" TEXT,
     "leads" TEXT,
     "maritalStatus" TEXT,
-    "massMailOptOut" TEXT,
     "middleName" TEXT,
     "mobile" TEXT,
     "name" TEXT,

@@ -4,6 +4,7 @@ import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
   const {
+// Temp comment
     headerText,
     icon,
     IconComponent,
@@ -43,6 +44,7 @@ export default function DesktopHeader(props) {
       </div>
       { backButton && (
         <button
+          className='text-md text-royalBlue underline mt-6'
           onClick={() => navigate(-1)}
         >
           {'< Go Back'}

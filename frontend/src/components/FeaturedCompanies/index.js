@@ -44,5 +44,4 @@ export default function FeaturedCompanies() {
         </Link>
       </div>
     </div>
-// Temp comment
   )

@@ -124,7 +124,6 @@ export async function updateJob({ id, status, featured }) {
 export async function getCompanies(filterValue, filterKey, count, page) {
   return (await getCompaniesFull(filterValue, filterKey, count, page)).companies;
 }
-// Temp comment
 
 export async function getCompaniesFull(filterValue, filterKey, count, page) {
   const { data } = await API.post(ROUTES.APIcompanies, {
@@ -141,6 +140,7 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
     companies: normalizeData(data.companies),
     total: data.total,
   }
+// Temp comment
 }
 
 export async function getIndividualCompany(id) {

@@ -62,6 +62,7 @@ export default function Apply() {
     try {
       const { user_id } = AuthService.getProfile();
       const [careerData, candidateData] = await Promise.all([
+        getJobById(jobId),
         getCandidateById(user_id),
       ]);
       if ( candidateData.workAuthorized === true ) {
@@ -131,7 +132,6 @@ export default function Apply() {
   }
 
   async function submitData() {
-    // Format object for API
     const formattedObject = await formatApplicationObject(applicationObject, useExistingResume);
     if ( isLoggedIn ) {
       // Check if any values have changed, update user with new values if so

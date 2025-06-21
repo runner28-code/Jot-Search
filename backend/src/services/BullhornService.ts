@@ -505,3 +505,4 @@ export class BullhornService {
             "fax2",
             "fax3",
             "firstName",
+            "isAnonymized",

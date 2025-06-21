@@ -202,3 +202,4 @@ export const skills = [
   'Financial Reporting',
   'Financial Services',
   'Financial Statements',
+  'FinTech',

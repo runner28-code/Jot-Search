@@ -8,6 +8,7 @@ export default function CompanyFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
+// Temp comment
 
   return (
     <div className='flex flex-col gap-xxl-4'>
@@ -19,6 +20,7 @@ export default function CompanyFilterLayout(props) {
           placeholder='Search Companies'
           additionalClasses='w-1/2'
         />
+        <button
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
         >

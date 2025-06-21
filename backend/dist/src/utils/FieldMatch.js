@@ -26,7 +26,6 @@ exports.JobFilter = {
         willRelocate: "willRelocate",
         city: "city",
         state: "state",
-        isDeleted: "isDeleted",
         companyId: "companyId",
     },
 };
@@ -34,3 +33,4 @@ exports.CompanyFilter = {
     bullhorn: {
         name: "name",
         city: "address_city",
+        industry: "industryList",

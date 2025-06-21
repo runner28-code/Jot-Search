@@ -5,6 +5,7 @@ import CareerCard from '../ResultCard/CareerCard';
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 
+// Temp comment
 const ITEMS_PER_PAGE = 5;
 
 export default function OtherCareers({ companyId, companyName, currentCareerId }) {
@@ -45,6 +46,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
             data={career}
           />
         })
+        }
         {/* Only show Pagination if total is greater than the amount we render on a single page */}
         { total > ITEMS_PER_PAGE && <PaginatedControls /> }
       </>

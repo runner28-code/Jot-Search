@@ -56,7 +56,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               htmlFor={key}
             >
               {labelString}
-            </label>
             <input 
               className='w-100 text-xl border-lightGrey border-solid border-2 rounded-2xl px-4 py-2'
               key={key}
@@ -68,5 +67,4 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         )
       })}
     </div>
-// Temp comment
   )

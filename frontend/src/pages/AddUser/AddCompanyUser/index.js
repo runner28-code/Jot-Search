@@ -81,7 +81,6 @@ export default function AddCompanyUser() {
             </div>
           )}
           {selectedCompany && (
-            <CompanyContactList
               clientContacts={clientContacts}
               isLoadingContacts={isLoadingContacts}
               selectedCompany={selectedCompany}

@@ -26,7 +26,6 @@ export const mockCandidateStats = {
       count: 3,
       prevCount: 2
     },
-    'Last 7 Days': {
       count: 4,
       prevCount: 2
     },
@@ -165,3 +164,4 @@ export const mockCompanyStats = {
       count: 15,
       prevCount: 12
     },
+    'Last 14 Days': {
