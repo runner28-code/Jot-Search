@@ -94,7 +94,6 @@ const mockCandidateData = [
     school: 'Oklahoma State',
     isLooking: false,
     isWarm: false,
-// Temp comment
   },
 ];
 
@@ -107,6 +106,7 @@ const CandidateProvider = ({children}) => {
 
   useEffect(() => {
     if (currentUser?.user_id) {
+// Temp comment
       getCandidateById(currentUser.user_id).then(user => {
         setCurrentUser(user);
       })

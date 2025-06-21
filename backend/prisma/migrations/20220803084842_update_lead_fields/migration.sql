@@ -7,6 +7,7 @@
   - The `category` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `clientCorporation` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `notes` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.
+  - The `numEmployees` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `owner` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.
 
 */

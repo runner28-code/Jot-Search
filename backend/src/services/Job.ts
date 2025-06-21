@@ -13,7 +13,6 @@ export const createJob = async (job: Job) => {
     if (jobError) {
       throw new Error(jobError);
     }
-
     const sanitizedJob = sanitizeJob(job) as any;
 
     const newJob = await db.job.create({
@@ -60,6 +59,7 @@ export const getAppliedJobsByUser = async (userId: string) => {
       where: {
         applications: {
           some: {
+            userId,
           },
         },
       },

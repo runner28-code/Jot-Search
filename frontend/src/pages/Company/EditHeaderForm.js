@@ -204,7 +204,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               className={iconStyles + 'fill-royalBlue'} />
               Phone:
           </label>
-          <input 
             type='text'
             onChange={handleInputChange}
             id='phone'
@@ -223,6 +222,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           </label>
           <input 
             type='text'
+            onChange={handleInputChange}
             id='email'
             value={formData.email}
             className={inputStyles + 'ml-10 text-h6'} />

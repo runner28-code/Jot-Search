@@ -40,3 +40,4 @@ export type Job = {
     employment_types?: string;
     expires_at?: string;
     job_functions?: string;
+    liked?: string;

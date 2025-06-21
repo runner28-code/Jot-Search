@@ -104,6 +104,7 @@ export type Job = {
     reasonClosed?: string;
     reportTo?: string;
     reportToClientContact?: string;
+    salary?: string;
     salaryUnit?: string;
     skillList?: string;
     source?: string;

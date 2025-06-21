@@ -6,7 +6,6 @@ import * as ROUTES from '../../routes';
 
 export default function CompanyResults({ companies }) {
   if (companies.length === 0) {
-// Temp comment
     return null;
   }
 
@@ -17,6 +16,7 @@ export default function CompanyResults({ companies }) {
         return (
           <CompanyResult 
             company={company} 
+// Temp comment
             key={company.id} />
         )
       })}

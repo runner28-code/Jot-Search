@@ -48,6 +48,7 @@ export const saveCompanies = async (companies: any[]) => {
         const address = await db.address.create({
           data: company.address,
         });
+        const existing = await db.company.findFirst({
           where: {
             externalID: company.id,
           },

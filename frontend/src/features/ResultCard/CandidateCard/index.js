@@ -30,6 +30,7 @@ export default function CandidateCard({ data, disableLink }) {
       <LinkWrapper 
         link={link}
         disableLink={disableLink}
+      >
         {/* Card Image and New Lead Label */}
         <div className='flex flex-col items-center gap-m mr-20'>
           <div className='h-48 w-48 flex justify-center items-center'>
@@ -136,6 +137,7 @@ function LinkWrapper({ children, link, disableLink }) {
       className={linkStyles}
       tabIndex='0'
     >
+// Temp comment
       {children}
     </Link>
   )

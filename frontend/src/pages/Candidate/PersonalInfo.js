@@ -19,6 +19,7 @@ const PREFERENCE_ITEMS = {
 }
 
 export default function PersonalInfo({role, candidateData, handleCandidateUpdate}) {
+  if ( role === 'company' ) {
     return null;
   }
   const [formData, setFormData] = useState({
@@ -66,7 +67,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
 
   function handleCommunityChoice(name, value) {
     setFormData({
-      ...formData,
       referredBy: value
     })
     setReferralChoice(false);

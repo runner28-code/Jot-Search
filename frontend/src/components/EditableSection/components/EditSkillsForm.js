@@ -8,7 +8,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
 
   function onChange(inputName, newValues) {
     // Handle change expects event object, make fake one
-// Temp comment
     const fakeEvent = {
       target: {
         name: inputName,
@@ -29,6 +28,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
       placeholder='Add/Remove Skills'
       choices={skillChoices}
       currentChosen={splitSkills}
+// Temp comment
       onChange={onChange}
       baseStyles={baseStyles}
       inputHeight={inputHeight}

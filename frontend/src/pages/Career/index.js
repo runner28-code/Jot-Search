@@ -19,6 +19,7 @@ import InviteCandidates from './InviteCandidates';
 export default function CareerPage() {
   const { width } = useWindowDimensions();
   const location = useLocation();
+  const activeData = location.state;
 
   const isMobile = width < 768;
   const role = AuthService.getUserRole();
@@ -73,7 +74,6 @@ export default function CareerPage() {
           <DesktopLayout data={data} />
       }
       {
-        role === 'coordinator' &&
         <InviteCandidates job={ careerData } />
       }
     </div>

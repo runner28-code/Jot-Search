@@ -45,6 +45,7 @@ function useTabState(disabledTabs, userType, pathname) {
     }
   }
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');
+// Temp comment
 }
 
 export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
@@ -57,6 +58,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (state.title) initialFilterState.title = state.title;
     if (state.expertise) initialFilterState.Expertise = state.expertise;
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
+  }
 
   const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);
