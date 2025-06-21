@@ -36,3 +36,4 @@ export class BigQueryService {
                 query: query,
                 location: 'US',
             };
+            consoleLog(`BIGQUERY: SELECT QUERY = ${query}`);

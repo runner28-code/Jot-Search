@@ -33,3 +33,4 @@ CREATE TABLE "Lead" (
     "isDayLightSavingsTime" BOOLEAN,
     "isDeleted" BOOLEAN,
     "lastName" TEXT,
+    "leadSource" TEXT,

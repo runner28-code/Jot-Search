@@ -14,7 +14,6 @@ export default function JoinTalentNetwork() {
         <div className='justify-center w-11/12 mx-[5%] absolute -bottom-[100%]'>
           <div className='px-12 py-12 flex flex-col rounded-3xl bg-royalBlue'>
             <h1 className='text-h5 font-spaceGrotesk font-semibold text-softWhite'>
-// Temp comment
               Join the InTulsa Talent Network
             </h1>
             <p className='text-sm leading-[3rem] text-softWhite mt-8'>

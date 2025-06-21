@@ -155,3 +155,20 @@ function renderLogo( logo ) {
     src={logo}
     className='w-36 h-36 object-contain mr-10'
   />
+}
+
+function renderAboutCompanySection(careerData) {
+  if (!careerData.company) {
+    return null;
+  }
+  const headerString = `About ${careerData.company.name}`;
+  return (<>
+    <hr className={hrStyles} />
+    {/* About Company */}
+    <h4 className={sectionHeaderStyles}>{headerString}</h4>
+    <p
+      className='font-spaceGrotesk text-textBlack text-sm mb-10'
+      dangerouslySetInnerHTML={{ __html: careerData.company.description || 'No Company Description Available' }}
+    />
+    <hr className={hrStyles} />
+  </>)

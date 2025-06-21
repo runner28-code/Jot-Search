@@ -71,3 +71,4 @@ export type JobSearchByID = {
   message?: string;
 };
 
+export type JobSearchByFilterResponse =

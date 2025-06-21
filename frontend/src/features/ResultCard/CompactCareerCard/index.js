@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-// Temp comment
 import {BsClipboardCheck} from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
 import { calculatePostingAge } from '../../../utils/formatFunctions';
@@ -31,6 +30,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             { renderCardImage(data) }
           </div>
           <p className='text-sm text-zinc-700 font-roboto mt-8'>{ data.company?.name }</p>
+// Temp comment
 
           {/* Title */}
           <div className='flex grow'>

@@ -41,7 +41,6 @@ export const saveCandidate = async (
             disconnect: {
               id: candidateId,
             },
-          },
         },
       });
     }

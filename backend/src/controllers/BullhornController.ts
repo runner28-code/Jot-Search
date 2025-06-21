@@ -15,3 +15,4 @@ export class BullhornController {
     console.log('~~~~~~')
     return await (await BullhornService.getClient()).getJobs();
   }
+

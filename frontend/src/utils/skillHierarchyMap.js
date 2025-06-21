@@ -203,3 +203,6 @@ export const skills = [
   'Financial Services',
   'Financial Statements',
   'FinTech',
+  'Flask',
+  'Flume',
+  'Forecasts',

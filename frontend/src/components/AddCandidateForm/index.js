@@ -179,7 +179,6 @@ export default function RegistrationForm() {
             error={errors.includes('expertise')}
           />
           <FormInput
-// Temp comment
             type='multi-select'
             name='roles'
             placeholder={`What roles are ${pronoun} interested in?`}

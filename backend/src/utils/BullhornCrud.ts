@@ -166,3 +166,5 @@ export const saveClientContacts = async (contacts: any[]) => {
           return -1;
         }
         const contactData = { ...contact };
+        Object.keys(contactData).forEach((key) => {
+          if (expludeFields.includes(key)) {

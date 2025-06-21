@@ -30,3 +30,4 @@ CREATE TABLE "ClientContact" (
     "desiredSpecialties" TEXT,
     "division" TEXT,
     "email" TEXT,
+    "email2" TEXT,

@@ -28,6 +28,7 @@ export function formatCandidateData(candidateData) {
   formattedData.skills = candidateData.skills || 'No Skills Chosen';
   // If Candidate experience is a string, no need to map it
   if ( candidateData.experience && !isNaN(candidateData.experience) ) {
+// Temp comment
     formattedData.experience = candidateData.experience.toString();
   }
   // User table has firstname and lastname, Candidate table has firstName and lastName, make sure both exist until we normalize the tables
@@ -103,3 +104,20 @@ export function formatPhoneNumber(phoneNumberString) {
     return `${internationalCode} (${areaCode}) ${firstThree}-${lastFour}`;
   }
   return phoneNumberString;
+}
+
+// Candidates might have `experience` property instead which is a legacy property from database we migrated data from
+export function formatYearsExperience(experienceYears, experience) {
+  if ( experienceYears && experienceYears.length > 1 ) { // Already formatted correctly
+    return experienceYears;
+  } else if ( experienceYears && experienceYears.length === 1 ) { // experience code to match against experienceMap ("2" === "0-1")
+    return experienceMap[experienceYears];
+  } else if ( experience ) { // Legacy property
+    // '1' is null (No experience selected)
+    if ( experience === 1 ) {
+      return 'Years Experience N/A';
+    }
+    return experienceMap[experience];
+  } else {
+    return 'Years Experience N/A';
+  }

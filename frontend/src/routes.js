@@ -48,3 +48,4 @@ export const tulsaRemote = 'https://www.tulsaremote.com';
 export const campusTulsa = 'https://www.campustulsa.com';
 export const talentInTulsa = 'https://www.talent.intulsa.com/';
 export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';
+

@@ -98,3 +98,29 @@ export default function CompanyCard({ data }) {
         data={data} />
     </div>
   )
+}
+
+const dataShape = {
+  data: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    address: PropTypes.shape({
+      city: PropTypes.string,
+      state: PropTypes.string,
+    }),
+    logo: PropTypes.string,
+    name: PropTypes.string,
+    numEmployees: PropTypes.string,
+  }).isRequired,
+}
+
+CompanyCard.propTypes = dataShape;
+
+function renderCardImage(data) {
+  if ( !data.logo ) {
+    return <CareerIcon className='h-28 w-32 fill-royalBlue' />
+  } else {
+    return <img
+      className=''
+      src={data.logo}
+    />
+  }

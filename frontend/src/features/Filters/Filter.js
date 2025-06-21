@@ -50,8 +50,10 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
         onClick={handleContainerClick}
         className={filterStyles}>
         {filterType === 'Location' && 
+          <MdLocationOn
             className='w-10 h-10 mr-1' 
             color='lightGray'
+// Temp comment
           />}
         <p
           id='title'

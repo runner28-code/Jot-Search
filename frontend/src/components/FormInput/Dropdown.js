@@ -21,7 +21,6 @@ function renderActiveIcon(choice, currentChosen) {
 function renderHorizontalRule(index, arrayLength) {
   if (index !== arrayLength - 1) {
     return (
-// Temp comment
       <hr className='border-royalBlue border-1.5 border-solid my-4' />
     )
   }
@@ -41,6 +40,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
         return (<div key={choice + '-container'}>
           <div 
             onClick={() => handleClick(choice)}
+// Temp comment
             className='cursor-pointer flex items-center justify-between'
           >
             <span className='font-bold'>{choice}</span>

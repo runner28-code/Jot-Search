@@ -7,7 +7,6 @@ import {
   guestChoices
 } from '../SideNav/utils';
 import Choice from './Choice';
-import LoggedOutButtons from './LoggedOutButtons';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
 
@@ -24,6 +23,7 @@ const stylesObject = {
   bottomLinkStyles,
   iconStyles,
   spanStyles,
+  hrStyles
 }
 
 export default function ChoicesContainer(props) {

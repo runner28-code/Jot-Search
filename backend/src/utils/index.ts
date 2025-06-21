@@ -61,3 +61,4 @@ export const sleep = async (ms: number): Promise<void> => {
 export const getDataSource = (id: string) => {
     const prefix = id.slice(0, 2);
     if (prefix === 'bl') return DataSource.BULLHORN;
+    if (prefix === 'gt') return DataSource.GETRO;

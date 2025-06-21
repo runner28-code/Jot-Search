@@ -18,7 +18,6 @@ export default function CareerCard({ data, active }) {
   const salaryString = buildSalaryString(data.salary, data.salaryUnit)
   const postingAge = calculatePostingAge(data.createdAt);
   const addressString = buildCareerAddress(data.city, data.state);
-  const role = AuthService.getUserRole();
 
   const { width } = useWindowDimensions();
 
@@ -72,7 +71,6 @@ CareerCard.propTypes = {
       id: PropTypes.number,
       name: PropTypes.string
     })
-// Temp comment
   }).isRequired,
   index: PropTypes.number,
   active: PropTypes.bool,

@@ -42,3 +42,4 @@ jobs:
         tokenSuffix: '}'
       env:
         SECRET_DATABASE_URL: ${{ secrets.DEV_DATABASE_URL }}
+        SECRET_AUTH_SECRET: ${{ secrets.DEV_AUTH_SECRET }}

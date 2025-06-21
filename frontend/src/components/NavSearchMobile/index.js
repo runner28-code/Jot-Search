@@ -13,6 +13,7 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
+// Temp comment
 import AuthService from '../../services/auth';
 
 
@@ -33,7 +34,6 @@ export default function NavSearchMobile({ placeholder }) {
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
-// Temp comment
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
         firstname: splitName[0],

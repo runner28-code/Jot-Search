@@ -2,7 +2,6 @@ import { Navigate } from 'react-router-dom';
 import headerIcon from '../../assets/icons/user-folder.png';
 import PageHeader from '../../components/PageHeader';
 import AdvancedSearch from '../../features/AdvancedSearch';
-// Temp comment
 import AuthService from '../../services/auth';
 
 export default function Candidates() {

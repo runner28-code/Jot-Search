@@ -15,7 +15,6 @@ export const JobFilter: any = {
     companyId: "clientCorporationID",
   },
   main: {
-    id: "id",
     status: "status",
     skillList: "skillList",
     hidden: "hidden",
@@ -37,3 +36,4 @@ export const CompanyFilter: TypedDictionary<
   Dictionary<string>
 > = {
   bullhorn: {
+    name: "name",

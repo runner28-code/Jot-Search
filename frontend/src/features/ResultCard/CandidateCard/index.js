@@ -69,7 +69,6 @@ export default function CandidateCard({ data, disableLink }) {
                 src={locationIcon}
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{addressString}</p>
-            </div>
             {/* Years Experience */}
             <div className='w-1/3 flex items-center'>
               <img
@@ -137,7 +136,6 @@ function LinkWrapper({ children, link, disableLink }) {
       className={linkStyles}
       tabIndex='0'
     >
-// Temp comment
       {children}
     </Link>
   )

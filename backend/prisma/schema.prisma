@@ -382,3 +382,50 @@ model Job {
   title               String?
   willRelocate        Boolean?
   yearsRequired       Int?
+  status              String?
+  skillList           String[]
+  locations           String?
+  companyId           String?
+  interviews          Int?
+  onSite              String?
+  salary              BigInt?
+  salaryUnit          String?
+  startDate           DateTime?
+  type                Int?
+  isDeleted           Boolean?
+  postedAt            DateTime?
+  hidden              Boolean    @default(false)
+  datasource          Datasource @default(main)
+
+  invitedCandidates CandidateJobInvites[]
+
+  featured            Boolean?   @default(false)
+
+  source              String?
+  payRate             Int?
+  numOpenings         Int?
+  markUpPercentage    Float?
+  isPublic            Boolean?
+  isOpen              Boolean?
+  isInterviewRequired Boolean?
+  hoursPerWeek        Int?
+  hoursOfOperation    String?
+  durationWeeks       Int?
+  publicDescription   String?
+  reasonClosed        String?
+  taxRate             Float?
+  taxStatus           String?
+  travelRequirements  String?
+
+  reportToClientContact String?
+  reportTo              String?
+  publishedZip          String?
+  isJobcastPublished    Boolean?
+  clientBillRate        Int?
+
+  educationDegree    String?
+  degreeList         String[]
+  certificationList  String[]
+  bonusPackage       String?
+  benefits           String?
+  billRateCategoryID Int?

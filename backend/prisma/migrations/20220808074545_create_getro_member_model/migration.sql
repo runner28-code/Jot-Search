@@ -31,6 +31,7 @@ CREATE TABLE "UserTalentCollection" (
     CONSTRAINT "UserTalentCollection_pkey" PRIMARY KEY ("id")
 );
 
+-- CreateTable
 CREATE TABLE "GetroMember" (
     "id" TEXT NOT NULL,
     "avatar_url" TEXT,

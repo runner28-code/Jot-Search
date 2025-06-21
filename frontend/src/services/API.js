@@ -102,7 +102,6 @@ export async function saveCandidate(userId, candidateId) {
 
 // COORDINATOR AUTH REQUIRED (handled on back-end), can be used to add any user type
 export async function addUser(userObject) {
-// Temp comment
   try {
     const { data } = await API.post(ROUTES.APIaddUser, userObject);
     return normalizeData(data);

@@ -24,26 +24,3 @@ export default function Companies() {
 
   function togglePassState() {
     setToggle(toggle => !toggle);
-  }
-
-  return (
-    <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
-      <RenderHeader
-        loggedIn={loggedIn}
-        userType={userType}
-        togglePassState={togglePassState}
-        toggle={toggle}
-      />
-      <div 
-        className={ !loggedIn && width <= 990 ? 'px-[5%]' 
-          : !loggedIn ? 'px-[15%]' 
-            : ''
-        }>
-        <RenderAdvancedSearch
-          loggedIn={loggedIn}
-          toggle={toggle}
-          userType={userType}
-        />
-      </div>
-    </section>
-  )

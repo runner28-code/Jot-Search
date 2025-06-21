@@ -126,3 +126,17 @@ function RenderHeader({type, loggedIn}) {
   return (
     <DashboardPublicMin type={type} />
   )
+}
+RenderHeader.propTypes = {
+  loggedIn: PropTypes.bool,
+  type: PropTypes.string
+}
+
+function RenderInvite(loggedIn, companyData) {
+  const role = AuthService.getUserRole();
+  if( loggedIn && role === 'coordinator' ) {
+    return(<>
+      <InviteCandidates company={companyData} />
+    </>)
+  }
+  return null

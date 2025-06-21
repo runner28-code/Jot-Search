@@ -14,6 +14,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
     return null;
   }
   // Return conditions
+  const invalidType = !VALID_TYPES.includes(type);
   const isInactiveJob = (type === 'job' && data.status !== 'Active');
   if ( !isFavoriteOverride && (invalidType || isInactiveJob) ) {
     return null;
@@ -38,6 +39,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   }
 
   let styles = 'absolute flex justify-center items-center cursor-pointer ';
+// Temp comment
   styles += addClass + ' ';
   styles += isMobile ? 'h-8 w-8 top-4 right-4 ' : 'h-12 w-12 top-6 right-6 ';
   return (
@@ -47,3 +49,27 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
       onClick={handleFavoriteClick}
     />
   )
+}
+
+FavoriteButton.propTypes = {
+  type: PropTypes.string.isRequired,
+  addClass: PropTypes.string,
+  data: PropTypes.shape({
+    id: PropTypes.string,
+    candidate: PropTypes.string,
+    status: PropTypes.string,
+  }).isRequired,
+  isFavoriteOverride: PropTypes.bool,
+}
+
+function getIdByType(type, data) {
+  switch (type) {
+    case 'job':
+      return data.id;
+    case 'company':
+      return data.id;
+    case 'candidate':
+      return data.id;
+    default:
+      return '';
+  }

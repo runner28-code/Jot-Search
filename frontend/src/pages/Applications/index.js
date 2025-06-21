@@ -80,7 +80,6 @@ export default function Applications() {
             selected: selectedApplications,
             handleClick: handleCheckClick
           }}
-// Temp comment
         />
       </div>
     </section>

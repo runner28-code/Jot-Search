@@ -7,6 +7,7 @@ exports.IUSER = {
     firstname: "",
     lastname: "",
     gender: "",
+    email: "",
     password: "",
     role: "",
     address1: "",
@@ -22,3 +23,4 @@ exports.IUSER = {
     seniority: "",
     workspace: "",
     referredBy: "",
+    roles: "",

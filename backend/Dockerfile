@@ -7,3 +7,4 @@ WORKDIR /usr/src/inTulsa-be
 
 RUN apk update && apk --no-cache add --virtual native-deps g++ make cmake python3
     
+RUN npm install

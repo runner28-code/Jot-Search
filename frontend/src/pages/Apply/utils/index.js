@@ -24,7 +24,6 @@ export const defaultCareerState = {
   },
   loading: true,
 }
-
 export const defaultState = {
   firstname: '',
   lastname: '',
