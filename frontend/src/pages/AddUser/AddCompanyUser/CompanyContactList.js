@@ -2,7 +2,6 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
-const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany }) => {
   const [selectedContacts, setSelectedContacts] = useState([]);
 
   const handleContactClick = (contact) => {
@@ -31,7 +30,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
         <ul className='border-y border-grey300 mt-2 w-full'>
           {clientContacts.map((contact, index) => (
             <li
-// Temp comment
               key={contact.id}
               className={ 'flex items-center px-s py-s ' + (index < clientContacts.length - 1 ? 'border-b border-grey300' : '') }
               onClick={() => handleContactClick(contact)}

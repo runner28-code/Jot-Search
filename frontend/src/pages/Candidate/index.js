@@ -100,6 +100,7 @@ export default function Candidate() {
         <CandidateCard
           data={candidateData}
           disableLink
+        />
       }
       {/* My Preferences (Candidate Only) */}
       {isProfilePage &&

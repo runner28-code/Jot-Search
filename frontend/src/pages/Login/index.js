@@ -13,10 +13,10 @@ export default function Login() {
     event.preventDefault();
     const { email, password } = event.target;
     const res = await API.post(ROUTES.APIlogin, {
-// Temp comment
       email: email.value,
       password: password.value,
     });
+// Temp comment
 
     if ( res.data.result ) {
       AuthService.login(res.data.token);

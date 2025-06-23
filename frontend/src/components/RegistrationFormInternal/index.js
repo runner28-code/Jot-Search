@@ -108,7 +108,6 @@ export default function RegistrationFormInternal(loggedIn) {
             success: true,
           })
         } else {
-          return navigate(ROUTES.login);
         }
       } else {
         console.log('Error: ', result);
@@ -159,3 +158,4 @@ export default function RegistrationFormInternal(loggedIn) {
     setFormObj({
       ...formObj,
       [name]: value,
+    });

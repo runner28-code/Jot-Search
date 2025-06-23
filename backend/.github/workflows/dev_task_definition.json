@@ -29,6 +29,7 @@
                     "name": "CHOKIDAR_USEPOLLING", 
                     "value": "true"
                 },
+                {
                     "name": "PORT", 
                     "value": "5000"
                 },

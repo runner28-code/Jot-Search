@@ -15,7 +15,6 @@ const dropdownFilters = [
 const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',
-// Temp comment
   'Years Experience'
 ]
 

@@ -23,6 +23,7 @@ import {
 import LoadingSpinner from '../../components/LoadingSpinner';
 
 const renderError = (error) => {
+  if ( error ) {
     return ( <div className='text-error mt-4'>
       <p>{typeof error === 'string' ? error.toUpperCase() : 'An error has occurred when trying to process your request'}</p>
       <a href="mailto:talentnetwork@intulsa.com">Your application has failed. Please try again later, or reach out to us for support.</a>
@@ -135,7 +136,6 @@ export default function Apply() {
     const formattedObject = await formatApplicationObject(applicationObject, useExistingResume);
     if ( isLoggedIn ) {
       // Check if any values have changed, update user with new values if so
-      updateCandidateIfNeeded(formattedObject, originalObject);
     }
 
     const response = await applyToJob(jobId, formattedObject.id);

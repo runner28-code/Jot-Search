@@ -75,7 +75,6 @@ const DesktopNavBarLayout = () => {
 }
 
 const DropdownMenu = () => {
-  const [ isOpen, setIsOpen ] = useState(false);
   const [ firstRender, setFirstRender ] = useState(true);
   const navigate = useNavigate();
   const [listening, setListening] = useState(false);

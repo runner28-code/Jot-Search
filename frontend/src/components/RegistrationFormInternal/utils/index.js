@@ -16,6 +16,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   }
   return (
     <button
+      className={buttonStyles}
       type='submit'>
       {buttonString}
     </button>

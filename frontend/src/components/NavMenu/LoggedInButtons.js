@@ -14,7 +14,9 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
     >
       <ProfileIcon className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Profile</span>
+    </Link>
     <hr className={stylesObject.hrStyles} />
+// Temp comment
     <div 
       id='logout'
       onClick={handleOptionClick}

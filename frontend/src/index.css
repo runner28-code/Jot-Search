@@ -44,6 +44,7 @@ button:focus,
 input[type=checkbox] {
   accent-color: #2ea248;
 }
+
 /* Tailwind Component Classes */
 @layer components {
   .Mobile-HeadersMobile-heading-xxlarge {
@@ -61,7 +62,6 @@ input[type=checkbox] {
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
     letter-spacing: normal;
   }
   .Mobile-HeadersMobile-heading-large {

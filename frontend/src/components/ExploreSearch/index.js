@@ -25,7 +25,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     'Expertise': 'Any Expertise',
   });
 
-// Temp comment
   function handleSearchClick() {
     const params = {};
     params.title = filterState.title ? filterState.title : '';

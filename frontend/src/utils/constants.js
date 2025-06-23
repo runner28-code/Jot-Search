@@ -8,6 +8,7 @@ export const pluralizedTypes = {
   jobs: 'careers',
 }
 
+export const openJobStatuses = [
   'Active',
   'active',
   'Passive',

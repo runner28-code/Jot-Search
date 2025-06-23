@@ -69,7 +69,6 @@ export const roles = {
 
 export const skills = [
   '.NET',
-  'Account Management',
   'Account Reconciliation',
   'Accounting',
   'Accounts Payable',

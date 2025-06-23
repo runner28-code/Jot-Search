@@ -25,7 +25,6 @@ export default function TypeaheadDropdown(props) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
-  const handleChoiceClick = useCallback((choice) => {
     if (!currentChosen.includes(choice)) {
       onChange(name, [...currentChosen, choice]);
     } else {
@@ -39,6 +38,7 @@ export default function TypeaheadDropdown(props) {
     if (!dropdownOpen) setInputValue('');
   }, [dropdownOpen]);
   
+  /* Filter choices based on input */
   useEffect(() => {
     if (dropdownType === 'tags') {
       setFilteredChoices(choices.filter(choice => choice.toLowerCase().includes(inputValue.toLowerCase())));

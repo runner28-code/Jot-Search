@@ -33,6 +33,7 @@ function HeaderContent({ companyData }) {
             </h4>
             <div className='flex items-center'>
               <div className={ headerGroupStyles }>
+// Temp comment
                 <img
                   src={PlacePin}
                   className={headerIconStyles}

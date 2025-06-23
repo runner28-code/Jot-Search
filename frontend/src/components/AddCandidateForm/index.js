@@ -243,7 +243,6 @@ export default function RegistrationForm() {
             error={errors.includes('linkedin')}
           />
           <FormInput
-            type='text'
             name='referredBy'
             placeholder={`How did ${pronoun} hear about us?`} 
             value={formObj.referredBy}

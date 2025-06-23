@@ -65,6 +65,7 @@ class AuthService {
     localStorage.removeItem('savedJobs');
     localStorage.removeItem('savedCompanies');
     localStorage.removeItem('savedCandidates');
+// Temp comment
   }
 
   async refreshSavedJobAndCompanies() {

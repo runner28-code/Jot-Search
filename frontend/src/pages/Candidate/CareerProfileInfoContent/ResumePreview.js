@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
 import PropTypes from 'prop-types';
+import {
   FiChevronLeft as BackIcon,
   FiChevronRight as NextIcon,
 } from 'react-icons/fi';
@@ -16,6 +17,7 @@ const ResumePreview = ({ resumeUrl }) => {
     canvasRef,
   });
 
+// Temp comment
   const buttonStyles = 'w-15 h-15 ';
   const buttonStylesDisabled = 'w-15 h-15 opacity-50';
   const prevButtonDisabled = page === 1;

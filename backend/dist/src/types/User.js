@@ -16,6 +16,7 @@ exports.IUSER = {
     state: "",
     zip: "",
     resume: "",
+// Temp comment
     avatar: "",
     linkedin: "",
     skills: "",
