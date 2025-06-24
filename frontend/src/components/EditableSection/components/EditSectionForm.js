@@ -31,6 +31,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
       handleChange={handleChange} />
   }
   if ( propertyName === 'resume' ) {
+    return <EditResumeForm
       handleChange={handleChange} />
   }
   return (
@@ -44,6 +45,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
             name={key}
             value={value}
           />
+// Temp comment
         }
         return (
           <div 

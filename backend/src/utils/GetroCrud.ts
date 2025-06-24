@@ -15,6 +15,7 @@ export const saveCompanies = async (companies: any[]) => {
 								console.log(`Company with ID: ${company.id} exists`);
 								return -1;
 							}
+			
 							const companyData = { ...company };
 			
 							Object.keys(companyData).forEach((key) => {
@@ -61,3 +62,4 @@ export const saveMembers = async (members: any[]) => {
 								Object.keys(jobData).forEach((key) => {
 									if (expludeFields.includes(key)) {
 										delete jobData[key];
+									}

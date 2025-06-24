@@ -45,7 +45,6 @@ export default function AddCoordinator() {
           errors: {},
         });
       }, 2000);
-    }
   }, [submissionObject.success]);
 
   function handleInputChange(e) {
@@ -54,6 +53,7 @@ export default function AddCoordinator() {
     // Error checking
     const newErrors = validateInput(
       name,
+      value,
       submissionObject.errors,
       formObject.password
     );

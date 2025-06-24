@@ -63,7 +63,6 @@ function CareerHeader ({ location }) {
           className='text-blue underline mt-6 text-blue-500 font-bold'
           to={ROUTES.careers}
         >{ back }</Link>
-// Temp comment
       </div>
     )
   }
@@ -74,7 +73,6 @@ function CareerHeader ({ location }) {
           className='text-white underline basis-1/3'
           to={ROUTES.careers}
         >Back</Link>
-        <div className='basis-2/6'>
           <TypeTabs location={location}/>
         </div>
         <div className='basis-2/6 flex items-center'>

@@ -77,7 +77,6 @@ export const choices = {
 export const candidateChoices = [
   choices.dashboard,
   choices.profile,
-  choices.myApplications,
   choices.myFavorites,
   choices.careers,
   choices.companies,

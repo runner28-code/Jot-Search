@@ -16,7 +16,6 @@ export default function Login() {
       email: email.value,
       password: password.value,
     });
-// Temp comment
 
     if ( res.data.result ) {
       AuthService.login(res.data.token);

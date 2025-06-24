@@ -5,6 +5,7 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 const MULTI_SELECT = 'multi-select';
 const SINGLE_SELECT = 'single-select';
+// Temp comment
 const YEARS_OF_EXPERIENCE = 'yearsExperience';
 
 function renderActiveIcon(choice, currentChosen) {
@@ -35,6 +36,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
   }
   
   return (
+    <div className={ rootClass }>
       {choices.map((choice, index) => {
         return (<div key={choice + '-container'}>
           <div 

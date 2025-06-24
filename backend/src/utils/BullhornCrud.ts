@@ -168,3 +168,4 @@ export const saveClientContacts = async (contacts: any[]) => {
         const contactData = { ...contact };
         Object.keys(contactData).forEach((key) => {
           if (expludeFields.includes(key)) {
+            delete contactData[key];

@@ -3,9 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ALLOWED_GETRO_FILTERS = void 0;
 exports.ALLOWED_GETRO_FILTERS = new Set([
     "id",
-// Temp comment
     "application_method",
     "application_path",
+// Temp comment
     "compensation_currency",
     "compensation_max",
     "compensation_min",

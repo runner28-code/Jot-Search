@@ -39,6 +39,7 @@ const parseBullhornCandidateToUser = (data) => {
         ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,
         disability: data.disability,
+// Temp comment
     };
     return user;
 };

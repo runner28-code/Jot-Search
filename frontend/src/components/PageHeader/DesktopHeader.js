@@ -8,7 +8,6 @@ export default function DesktopHeader(props) {
     icon,
     IconComponent,
     classOverride,
-// Temp comment
     containerClassOverride,
     colorizeStroke,
     dataSource,
@@ -46,7 +45,6 @@ export default function DesktopHeader(props) {
         <button
           className='text-md text-royalBlue underline mt-6'
           onClick={() => navigate(-1)}
-        >
           {'< Go Back'}
         </button>
       )}

@@ -9,6 +9,7 @@ import useWindowDimensions from '../../../hooks/windowDimensions';
 const VALID_TYPES = ['job', 'company', 'candidate'];
 
 export default function FavoriteButton({ type, data, addClass, isFavoriteOverride = null }) {
+  const role = AuthService.getUserRole();
   if ( !AuthService.loggedIn() || role === 'coordinator' ) {
     return null;
   }

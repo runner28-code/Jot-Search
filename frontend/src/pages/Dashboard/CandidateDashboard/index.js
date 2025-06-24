@@ -12,6 +12,7 @@ export default function CandidateDashboard() {
     <>
       <div className='flex items-center justify-start mb-12 pt-8 px-4'>
         <img
+          src={Home}
           alt='Home Icon'
         />
         <h1 className='ml-8 text-royalBlue text-lg vw-1280:text-[32px] font-spaceGrotesk'>My Dashboard</h1>
@@ -23,6 +24,5 @@ export default function CandidateDashboard() {
         <CompanyFavorite />
         <h1 className={headerStyles}>Search</h1>
         <AdvancedSearch />
-      </div>
     </>
   )

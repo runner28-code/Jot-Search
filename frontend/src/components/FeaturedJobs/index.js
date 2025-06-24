@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 const ITEMS_PER_PAGE = 4;
@@ -72,5 +71,15 @@ export default function FeaturedJobs() {
           View all
         </Link>
       </div>
+// Temp comment
     </section>
+  )
+}
+
+function renderColorShapes() {
+  return(
+    <div className='relative w-24 mb-8'>
+      <div className='bg-indigoSquare w-12 h-12' />
+      <div className='bg-cyanSquare bg-cyan-400 top-[-20px] right-[5px] absolute w-6 h-6' />
+    </div>
   )

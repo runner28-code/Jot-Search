@@ -147,6 +147,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 onChange={handleInputChange}
                 id='address2'
                 name='address2'
+                value={formData.address2}
                 className={inputStyles + 'ml-10 text-h6'} />
             </div>
             <div className='flex justify-between mb-4'>
@@ -219,6 +220,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             <IoIosMail
               className={iconStyles + 'fill-royalBlue'} />
               Email:
+// Temp comment
           </label>
           <input 
             type='text'

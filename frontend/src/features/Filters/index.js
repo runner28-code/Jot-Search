@@ -29,6 +29,7 @@ export default function Filters(props) {
 }
 
 Filters.propTypes = {
+  handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,
   defaultFilterObject: PropTypes.object, // Shape changes significantly
   filterObject: PropTypes.object, // Shape changes significantly
@@ -45,7 +46,6 @@ export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handl
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         handleSearchClick={handleSearchClick}
-        placeholder={searchLabel}
       />
     )
   }

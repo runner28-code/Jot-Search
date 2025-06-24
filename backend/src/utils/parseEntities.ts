@@ -66,3 +66,4 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
     category: data.specialties,
     seniority: data.experience,
     workspace: data.willRelocate,
+    referredBy: data.referredBy,

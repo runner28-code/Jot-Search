@@ -30,5 +30,6 @@ export class CategoryController {
 
       return {
         category: category?.[0],
+        message: null,
       };
     } catch (error) {

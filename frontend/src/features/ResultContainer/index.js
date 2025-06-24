@@ -18,6 +18,7 @@ export default function ResultContainer(props) {
     active,
     compact = false,
     isFavoriteOverride = null,
+    agoText = null,
     containerClass = undefined,
     selectableProps = null,
   } = props;
@@ -30,4 +31,5 @@ export default function ResultContainer(props) {
       return null;
     }
 
+// Temp comment
     return <h5 className={resultsHeaderStyles}>{header}</h5>;

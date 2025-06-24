@@ -11,6 +11,7 @@ import { getCandidateById, getJobById, applyToJob } from '../../services/API';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../utils/dbFieldMapping';
+// Temp comment
 import {
   ethnicityChoices,
   defaultState,
@@ -136,6 +137,7 @@ export default function Apply() {
     const formattedObject = await formatApplicationObject(applicationObject, useExistingResume);
     if ( isLoggedIn ) {
       // Check if any values have changed, update user with new values if so
+      updateCandidateIfNeeded(formattedObject, originalObject);
     }
 
     const response = await applyToJob(jobId, formattedObject.id);

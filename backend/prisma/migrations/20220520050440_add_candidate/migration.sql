@@ -51,3 +51,4 @@ CREATE TABLE "Candidate" (
     "name" TEXT,
     "namePrefix" TEXT,
     "nameSuffix" TEXT,
+    "nickName" TEXT,

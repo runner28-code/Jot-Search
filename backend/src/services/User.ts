@@ -326,3 +326,4 @@ export const getCompanyDashboardStats = async (days: number) => {
       SELECT COUNT(*) FROM "_userSavedCompanies"
     `) as any;
     const companyFavoritesCurrentPeriod = result[0]?.count ?? 0;
+

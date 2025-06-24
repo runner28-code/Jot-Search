@@ -39,7 +39,6 @@ import { ALLOWED_JOB_KEYS, JobKey } from "../types/Job";
 import { User } from "../types/User";
 import { consoleLog, getDataSource, getFilterConditions } from "../utils";
 import db from "../utils/db";
-import { JobFilter } from "../utils/FieldMatch";
 import {
   getCandidatesOnJob,
   getSavedJobs,
@@ -223,3 +222,4 @@ export class JobController {
       company_name: (_: string, value: string) =>
         `LOWER(${companyAlias}.name) LIKE '%${value.toLowerCase()}%'`,
     };
+

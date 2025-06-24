@@ -13,3 +13,4 @@ CREATE TABLE "_userSavedCompanies" (
     "B" TEXT NOT NULL
 );
 
+-- CreateIndex

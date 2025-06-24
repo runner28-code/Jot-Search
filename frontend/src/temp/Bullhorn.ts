@@ -154,7 +154,6 @@ export type ClientContact = {
     nickName?: string;
     numEmployees?: string;
     occupation?: string;
-    office?: string;
     owner?: string;
     pager?: string;
     password?: string;
@@ -171,3 +170,4 @@ export type Candidate = {
     address_address1?: string; // !
     address_address2?: string; // !
     address_city?: string; // !
+    address_state?: string; // !

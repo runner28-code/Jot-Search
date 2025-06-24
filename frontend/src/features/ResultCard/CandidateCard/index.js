@@ -81,7 +81,6 @@ export default function CandidateCard({ data, disableLink }) {
           {/* Relocation */}
           <InfoLabel
             label='Relocation'
-            value={data.willRelocate}
           />
           {/* Skill List */}
           <div className='flex flex-wrap gap-m mt-[18px]'>
@@ -93,6 +92,7 @@ export default function CandidateCard({ data, disableLink }) {
         type={'candidate'}
         data={data} />
     </div>
+  )
 }
 
 CandidateCard.propTypes = {

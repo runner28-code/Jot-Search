@@ -50,3 +50,4 @@ export const saveCandidate = async (
       message: existing ? "unsaved candidate" : "saved candidate",
     };
   } catch (error) {
+    console.log(error);

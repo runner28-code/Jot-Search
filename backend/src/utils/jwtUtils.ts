@@ -8,4 +8,5 @@ export const CreateJwtToken = (data: any) => {
     config.authSecret || 'inTulsa',
     { expiresIn: 2 * 3600 }
   );
+  return token;
 }

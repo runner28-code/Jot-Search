@@ -17,6 +17,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     {
       key: 'companyId',
       value: companyId
+    }
   ];
 
   const { careers, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});

@@ -53,3 +53,4 @@ CREATE TABLE "Company" (
     "ownership" TEXT,
     "phone" TEXT,
     "revuenue" TEXT,
+    "status" TEXT,

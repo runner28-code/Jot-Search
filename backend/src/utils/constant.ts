@@ -255,3 +255,4 @@ const job_filter_exclude_keys = [
   "mortgage",
   "mt",
   "musician",
+  "mutual fund",

@@ -71,3 +71,4 @@ const uploadToS3 = async(req: any, res: any) => {
   });
 }
 
+const getActualRequestDurationInMs = (start: any) => {

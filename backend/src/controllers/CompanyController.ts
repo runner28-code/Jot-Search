@@ -15,6 +15,7 @@ import {
   DATASET_BULLHORN,
   DATASET_GETRO,
   FilterOption,
+  Job,
   FilterBody,
   DataSource,
   Tables,
@@ -145,7 +146,6 @@ export class CompanyController {
       console.log(e);
       return { result: false, message: e };
     }
-  }
 
   async getCompanyByIdFromGetro(id: string): Promise<any> {
     try {

@@ -27,6 +27,7 @@ export const roles = {
   'Operations': [
     'Business Operations & Strategy',
     'Client Success and Customer Service',
+// Temp comment
     'Operations Generalist',
     'Project and Program Management',
     'Administration',
@@ -69,6 +70,7 @@ export const roles = {
 
 export const skills = [
   '.NET',
+  'Account Management',
   'Account Reconciliation',
   'Accounting',
   'Accounts Payable',

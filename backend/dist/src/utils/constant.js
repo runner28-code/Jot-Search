@@ -47,6 +47,7 @@ const job_filter_exclude_keys = [
     "biomed",
     "blender",
     "body repair",
+// Temp comment
     "breakfast",
     "budget",
     "builder",
@@ -254,3 +255,4 @@ const job_filter_exclude_keys = [
     "microbiologist",
     "microbiology",
     "mlt",
+    "mortgage",

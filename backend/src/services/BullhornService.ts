@@ -512,3 +512,5 @@ export class BullhornService {
             "leads",
             "middleName",
             "mobile",
+            "name",
+            "namePrefix",

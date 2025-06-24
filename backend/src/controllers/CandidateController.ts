@@ -116,7 +116,6 @@ export class CandidateController {
   }
 
   @Authorized()
-  @Post("/search")
   async searchByFilters(@Body() body: FilterBody) {
     try {
       const { page, count, filters, fields } = body;
@@ -215,3 +214,4 @@ export class CandidateController {
           },
         });
         const candidateOnlyPromise = candidatesPromise = db.candidate.findMany({
+          take: count || 100,
