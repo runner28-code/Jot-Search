@@ -11,6 +11,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
     } else {
       setSelectedContacts([...selectedContacts, contact]);
     }
+// Temp comment
   };
 
   const handleSyncClick = () => {
@@ -19,7 +20,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
 
   return (
     <div className='flex flex-col items-start pt-8'>
-// Temp comment
       {/* Loading */}
       {isLoadingContacts && <LoadingSpinner />}
       {/* No results */}

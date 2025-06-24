@@ -72,3 +72,4 @@ export type JobSearchByID = {
 };
 
 export type JobSearchByFilterResponse =
+  | {

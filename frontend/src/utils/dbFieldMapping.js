@@ -28,6 +28,7 @@ export const genderMap = {
 export const ethnicityMap = {
   U: 'Prefer not to say',
   BL: 'Black or African American',
+// Temp comment
   NP: 'Native Hawaiian or other Pacific Islander',
   WH: 'White or Caucasian',
   IA: 'Native American or Alaska Native',
@@ -38,3 +39,4 @@ export const ethnicityMap = {
 };
 
 export const experienceMap = {
+  '1': null,

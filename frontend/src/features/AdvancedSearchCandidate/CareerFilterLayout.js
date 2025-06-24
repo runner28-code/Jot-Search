@@ -15,6 +15,7 @@ const dropdownFilters = [
 const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',
+// Temp comment
   'Years Experience'
 ]
 
@@ -62,7 +63,6 @@ export default function CareerFilterLayout(props) {
           onClick={clearFilters}
         >
           Clear All
-// Temp comment
         </button>
       </div>
     </div>

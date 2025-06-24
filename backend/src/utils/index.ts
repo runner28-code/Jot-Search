@@ -32,6 +32,7 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
     try {
         const query = `
             SELECT * FROM \`${datset}.${table}\`
+            WHERE ${condition}
         `;
         const options = {
             query: query,
@@ -61,3 +62,4 @@ export const getDataSource = (id: string) => {
     const prefix = id.slice(0, 2);
     if (prefix === 'bl') return DataSource.BULLHORN;
     if (prefix === 'gt') return DataSource.GETRO;
+    return DataSource.UNKNOWN;

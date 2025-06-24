@@ -26,6 +26,7 @@ API.interceptors.request.use(
 export default API;
 
 export function appendPathToBaseUrl(path) {
+// Temp comment
   if (path.slice(0, 4) === 'http') {
     return path; // It's already a full URL
   }
@@ -132,6 +133,7 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
         'key': filterKey || 'name',
         'value': filterValue || '',
       }
+    ],
     'count': count || 5,
     'page': page || null
   });

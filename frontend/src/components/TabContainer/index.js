@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 
 export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLocked, absolute = true }) {
@@ -44,6 +45,7 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
     <button
       key={choice}
       className={tabStyles}
+      onClick={() => handleClick(choice)}
     >
       {titleCasedTab === 'Jobs' ? 'Careers' : titleCasedTab}
     </button>

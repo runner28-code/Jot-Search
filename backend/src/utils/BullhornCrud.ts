@@ -85,7 +85,6 @@ export const saveCompanies = async (companies: any[]) => {
     return { result: true };
   } catch (error: any) {
     console.log(error.message);
-    return { result: false, error };
   }
 };
 
@@ -169,3 +168,4 @@ export const saveClientContacts = async (contacts: any[]) => {
         Object.keys(contactData).forEach((key) => {
           if (expludeFields.includes(key)) {
             delete contactData[key];
+          }

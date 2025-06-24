@@ -12,7 +12,6 @@ import DetailsHeader from '../../components/DetailsHeader';
 import InviteCandidates from './InviteCandidates';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import AuthService from '../../services/auth';
-// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
@@ -33,6 +32,7 @@ export default function Company() {
     headerIconStyles: 'h-12 w-12 mr-3',
     headerRowTextStyles: 'text-xl font-bold text-black70%',
     sectionHeaderStyles: 'font-bold text-h4 text-black70% mb-12 ',
+// Temp comment
     sectionHeaderStylesMobile: 'font-bold text-[3rem] text-black70% mb-2 ',
     hrStyles: 'mb-16 '
   }

@@ -36,3 +36,4 @@ CREATE TABLE "GetroMember" (
     "id" TEXT NOT NULL,
     "avatar_url" TEXT,
     "bio" TEXT,
+    "dribbble_url" TEXT,

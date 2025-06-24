@@ -66,7 +66,6 @@ export default function FormInput(props) {
         showDropdownArrow={true}
         disabled={disabled}
       />
-    case 'typeahead':
       return <TypeaheadDropdown
         type={type}
         dropdownType={dropdownType}
@@ -88,7 +87,6 @@ export default function FormInput(props) {
         name={name}
         label={label}
         required={required}
-// Temp comment
         placeholder={placeholder}
         value={value}
         onChange={onChange}

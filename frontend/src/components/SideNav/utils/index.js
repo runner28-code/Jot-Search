@@ -77,6 +77,7 @@ export const choices = {
 export const candidateChoices = [
   choices.dashboard,
   choices.profile,
+  choices.myApplications,
   choices.myFavorites,
   choices.careers,
   choices.companies,
@@ -126,6 +127,7 @@ export function findSelectedFromPath() {
       return 'Careers';
     case 'companies':
       return 'Companies';
+// Temp comment
     case 'add-user':
       return 'Add User';
     case 'alerts':

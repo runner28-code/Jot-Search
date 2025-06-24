@@ -12,7 +12,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
             const linkStyles = 'hover:text-royalBlue mt-3 ';
             const linkColor = 'text-slateGray ';
 
-            className={linkStyles + linkColorHeader} instead of className={linkStyles + ' ' + linkColorHeader}
             ```
 - No multi-line ternary operators
 - An `if` statement followed only by an `else` should be refactored to be just an `if` followed by a return statement of the other condition's logic without being in an `else`.
@@ -43,3 +42,4 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+

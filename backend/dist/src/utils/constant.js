@@ -47,7 +47,6 @@ const job_filter_exclude_keys = [
     "biomed",
     "blender",
     "body repair",
-// Temp comment
     "breakfast",
     "budget",
     "builder",
@@ -103,7 +102,6 @@ const job_filter_exclude_keys = [
     "crew",
     "crew leader",
     "crime",
-    "crisis",
     "crossing guard",
     "culinary",
     "custodial",
@@ -256,3 +254,5 @@ const job_filter_exclude_keys = [
     "microbiology",
     "mlt",
     "mortgage",
+    "mt",
+    "musician",

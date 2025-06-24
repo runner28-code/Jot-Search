@@ -29,7 +29,6 @@ export default function AccessibleDropdown(props) {
       } else {
         onChange(name, [...currentChosen, choice]);
       }
-// Temp comment
     } else { // single select
       onChange(name, choice);
     }
@@ -110,7 +109,6 @@ function buttonText(name, placeholder, currentChosen) {
     return currentChosen;
   }
   if ( name === 'experience' && currentChosen ) { // Grab value from experienceMap
-    if ( isNaN(currentChosen) ) {
       return currentChosen + 'years';
     }
     const experience = isNaN(currentChosen) ? currentChosen : experienceMap[currentChosen];

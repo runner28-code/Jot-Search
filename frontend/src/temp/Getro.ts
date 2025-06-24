@@ -6,10 +6,10 @@ export type Company = {
     description?: string;
     domain?: string;
     facebook_url?: string;
+    founded?: string;
     instagram_url?: string;
     jobs_count?: string;
     linkedin_url?: string;
-    logo_url?: string;
     name?: string;
     ocp_search_status?: string;
     scraping_enabled?: string;
@@ -40,3 +40,4 @@ export type Job = {
     expires_at?: string;
     job_functions?: string;
     liked?: string;
+    locations?: string;

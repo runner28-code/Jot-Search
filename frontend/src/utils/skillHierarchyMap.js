@@ -27,7 +27,6 @@ export const roles = {
   'Operations': [
     'Business Operations & Strategy',
     'Client Success and Customer Service',
-// Temp comment
     'Operations Generalist',
     'Project and Program Management',
     'Administration',
@@ -112,6 +111,7 @@ export const skills = [
   'Brand Awareness',
   'Brand Development',
   'Brand Marketing',
+// Temp comment
   'Branding',
   'Budget Management',
   'Budgeting',
@@ -207,3 +207,5 @@ export const skills = [
   'Flask',
   'Flume',
   'Forecasts',
+  'Fraud',
+  'French',

@@ -25,3 +25,4 @@ import { DATASET_MAIN, Tables } from "../types/Common";
         if (users && users.length ) {
           for(const user of users){
             if(!user.password){
+              console.log(`user ${user.email} password is empty. Skipped.`);

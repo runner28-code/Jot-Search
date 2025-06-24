@@ -50,6 +50,7 @@ const mockCandidateData = [
     isLooking: false,
     isWarm: false,
   },
+  {
     id: '04bd7f2a-2bcf-4d37-9f9b-3dbb8dd91672',
     firstName: 'Curtis',
     lastName: 'Kline',
@@ -57,6 +58,7 @@ const mockCandidateData = [
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/curtis_2_qs35yb.webp', // Missing from Bullhorn Schema
     occupation: 'Tech Consultant',
     companyName: 'Aerovision',
+// Temp comment
     address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',

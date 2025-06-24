@@ -146,6 +146,7 @@ export class CompanyController {
       console.log(e);
       return { result: false, message: e };
     }
+  }
 
   async getCompanyByIdFromGetro(id: string): Promise<any> {
     try {
@@ -186,3 +187,20 @@ export class CompanyController {
         companyCandidateInvites.push({
           companyId,
           candidateId,
+        })
+      }
+    }
+
+    try {
+      const res = await db.companyCandidateInvites.createMany({
+        data: companyCandidateInvites,
+      })
+
+      return {
+        res,
+        result: true
+      }
+    } catch (error) {
+      return {
+        result: false,
+        error,

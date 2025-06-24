@@ -111,7 +111,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             onChange={handleInputChange}
             id='companyName' 
             name='companyName' 
-            value={formData.companyName}
             className={inputStyles + 'text-h6 w-full'} />
         </div>
         {/* Address */}
@@ -220,7 +219,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             <IoIosMail
               className={iconStyles + 'fill-royalBlue'} />
               Email:
-// Temp comment
           </label>
           <input 
             type='text'

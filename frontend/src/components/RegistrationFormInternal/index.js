@@ -33,6 +33,7 @@ const defaultState = {
   willRelocate: false,
   roles: [],
   skills: [],
+  experience: '',
   employmentPreference: '',
   workspace: '',
   linkedin: '',
@@ -70,6 +71,7 @@ export default function RegistrationFormInternal(loggedIn) {
     if ( submissionObject.loading ) {
       // Validation
       const newErrors = inputValidation(formObj);
+// Temp comment
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);

@@ -17,7 +17,6 @@ exports.IUSER = {
     zip: "",
     resume: "",
     avatar: "",
-    linkedin: "",
     skills: "",
     category: "",
     seniority: "",
