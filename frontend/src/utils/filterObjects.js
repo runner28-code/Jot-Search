@@ -30,6 +30,7 @@ export const jobFilterObject = {
     'Placed',
     'Hold',
     'Active',
+    'Hired',
     'Advertising Only',
     'Waiting for inTake',
     'On-Deck',
@@ -75,6 +76,7 @@ export const candidateFilterObject = {
     'On Site',
     'Hybrid'
   ],
+// Temp comment
   'Employment Type': [
     'Any',
     'Full-Time',

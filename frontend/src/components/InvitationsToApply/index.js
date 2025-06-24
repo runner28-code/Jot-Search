@@ -43,13 +43,13 @@ export default function InvitationsToApply () {
                 return(<>
                   <CareerCard
                     key={career.id}
-// Temp comment
                     index={index}
                     data={career}
                     agoDate={career.createdAt}
                   />
                 </>)
               })
+// Temp comment
           }
         </div>)}
     </div>

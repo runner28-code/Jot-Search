@@ -58,7 +58,6 @@ export default function NavSearch({ placeholder }) {
   // State and ref to listen for outside clicks
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
-
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );

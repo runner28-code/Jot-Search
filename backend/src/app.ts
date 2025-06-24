@@ -72,3 +72,4 @@ const uploadToS3 = async(req: any, res: any) => {
 }
 
 const getActualRequestDurationInMs = (start: any) => {
+  const NS_PER_SEC = 1e9;

@@ -36,6 +36,7 @@ function CareerHeader ({ location }) {
 
   let userRole = AuthService.getUserRole();
 
+  const back = '< Go Back';
 
   if( userRole === 'candidate' || userRole === 'coordinator' ) {
     return (

@@ -15,6 +15,7 @@ export default function TypeaheadDropdown(props) {
     placeholder, 
     choices, 
     currentChosen, 
+    onChange, 
     baseStyles, 
     inputHeight} = props;
 

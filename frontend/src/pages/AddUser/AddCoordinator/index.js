@@ -4,7 +4,6 @@ import { registerUser } from '../../../services/API';
 import { validateInput } from '../utils';
 
 export default function AddCoordinator() {
-  const [formObject, setFormObject] = useState(defaultState);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
@@ -27,7 +26,6 @@ export default function AddCoordinator() {
         const error = { submit: data.error }
         setSubmissionObject({
           loading: false,
-// Temp comment
           success: false,
           errors: error,
         });

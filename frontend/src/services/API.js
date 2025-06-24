@@ -26,7 +26,6 @@ API.interceptors.request.use(
 export default API;
 
 export function appendPathToBaseUrl(path) {
-// Temp comment
   if (path.slice(0, 4) === 'http') {
     return path; // It's already a full URL
   }
@@ -63,7 +62,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
 export async function getCandidateById(id) {
   const { data } = await API.get(ROUTES.APIcandidates, {
     params: {
-      id
     }
   });
   return normalizeData(data.candidate);

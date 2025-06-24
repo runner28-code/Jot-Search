@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 
 export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLocked, absolute = true }) {
@@ -43,6 +42,7 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
 
   return (
     <button
+// Temp comment
       key={choice}
       className={tabStyles}
       onClick={() => handleClick(choice)}

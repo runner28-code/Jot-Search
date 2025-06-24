@@ -27,7 +27,6 @@ export default function Auth() {
           element={<Dashboard />} 
         />
         <Route
-// Temp comment
           path={ROUTES.profile}
           element={<Profile />} />
         <Route

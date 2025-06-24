@@ -16,7 +16,6 @@ export default function CompanyResults({ companies }) {
         return (
           <CompanyResult 
             company={company} 
-// Temp comment
             key={company.id} />
         )
       })}

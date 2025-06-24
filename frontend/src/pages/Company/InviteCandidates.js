@@ -22,6 +22,7 @@ export default function InviteCandidates({ company }) {
       label: candidate.name,
       value: candidate.id,
       candidate
+    }
   }) || [];
   
   const [ selected, setSelected ] = useState([]);
@@ -29,7 +30,6 @@ export default function InviteCandidates({ company }) {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }
-
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (

@@ -14,6 +14,7 @@ export default function AddCompanyUser() {
   const selectedCompanyId = selectedCompany?.id.split('-')[1] || null; // id is in format 'bl-1234', only need the '1234' for API call
 
   const { companies, isLoading: isLoadingCompanies } = useGetCompanies({ filterKey: 'name', filterValue: search, count: ITEMS_PER_PAGE, page: 1, enabled: !!search });
+// Temp comment
   const { clientContacts, isLoading: isLoadingContacts } = useGetClientContacts({ filterKey: 'clientCorporation', filterValue: selectedCompanyId, count: 50, enabled: !!selectedCompany });
 
   function handleCompanyClick(company) {
@@ -64,6 +65,7 @@ export default function AddCompanyUser() {
           <img
             src={Search}
             alt='search icon'
+            className='absolute right-6 top-6 h-10 w-10 vw-900:h-12 vw-900:w-12'
           />
           {(search && isLoadingCompanies && !selectedCompany) && <div>Loading...</div>}
           {(companies && search !== selectedCompany?.name) && (

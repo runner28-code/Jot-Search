@@ -50,6 +50,7 @@ const job_filter_exclude_keys = [
     "breakfast",
     "budget",
     "builder",
+// Temp comment
     "building",
     "buyer",
     "cafeteria",
@@ -102,6 +103,7 @@ const job_filter_exclude_keys = [
     "crew",
     "crew leader",
     "crime",
+    "crisis",
     "crossing guard",
     "culinary",
     "custodial",
@@ -256,3 +258,4 @@ const job_filter_exclude_keys = [
     "mortgage",
     "mt",
     "musician",
+    "mutual fund",

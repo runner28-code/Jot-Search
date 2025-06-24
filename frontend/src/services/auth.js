@@ -28,6 +28,7 @@ class AuthService {
       const decoded = decode(token);
       if (decoded.exp < Date.now() / 1000) {
         this.clearStorage();
+// Temp comment
         return true;
       } else return false;
     } catch (err) {

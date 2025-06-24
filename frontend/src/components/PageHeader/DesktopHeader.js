@@ -27,11 +27,11 @@ export default function DesktopHeader(props) {
         { icon && (
           <img
             src={ icon }
-// Temp comment
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
           />
         )}
+// Temp comment
         { IconComponent && (
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />
         )}

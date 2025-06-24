@@ -12,7 +12,6 @@ import {
   formatFormObj,
   renderButtonOrLoading,
   renderErrorBlock,
-  renderHeader
 } from './utils';
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
@@ -44,7 +43,6 @@ export default function RegistrationForm() {
 
   const navigate = useNavigate();
   const location = useLocation();
-// Temp comment
 
   useEffect(async () => { // Submit data
     // If loading object has been set to 'submitted', validate object and submit

@@ -33,6 +33,7 @@ const availableTabChoicesByUserType = {
 }
 
 function useTabState(disabledTabs, userType, pathname) {
+// Temp comment
   if (disabledTabs) {
     switch (pathname) {
       case '/candidates':
@@ -56,6 +57,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   if (state && state.expertise) {
     initialFilterState.Expertise = state.expertise
   }
+
   const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);
 

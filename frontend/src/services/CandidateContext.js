@@ -58,7 +58,6 @@ const mockCandidateData = [
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/curtis_2_qs35yb.webp', // Missing from Bullhorn Schema
     occupation: 'Tech Consultant',
     companyName: 'Aerovision',
-// Temp comment
     address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
@@ -114,6 +113,7 @@ const CandidateProvider = ({children}) => {
   }, []);
 
   const handleCandidatesChange = (value) => {
+// Temp comment
     setCandidates(value);
   }
 

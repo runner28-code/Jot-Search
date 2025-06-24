@@ -194,6 +194,7 @@ export class BullhornService {
           console.log("BhRestToken: ", this.BhRestToken);
           console.log("restUrl: ", this.restUrl);
           console.log("corpToken: ", this.corpToken);
+
           await this.setCookie({
             auth_code: this.auth_code,
             access_token: this.access_token,
@@ -517,3 +518,5 @@ export class BullhornService {
             "nickName",
             "numEmployees",
             "occupation",
+            "office",
+            "owner",

@@ -43,7 +43,6 @@ export const saveCandidate = async (
             },
           },
         },
-      });
     }
     return {
       result: true,

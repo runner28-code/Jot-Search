@@ -111,7 +111,6 @@ export const skills = [
   'Brand Awareness',
   'Brand Development',
   'Brand Marketing',
-// Temp comment
   'Branding',
   'Budget Management',
   'Budgeting',
@@ -209,3 +208,4 @@ export const skills = [
   'Forecasts',
   'Fraud',
   'French',
+  'Fundraising',

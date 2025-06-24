@@ -122,6 +122,7 @@ const job_filter_exclude_keys = [
   "driver",
   "drug",
   "economist",
+  "economy",
   "edit",
   "editor",
   "educate",
@@ -257,3 +258,4 @@ const job_filter_exclude_keys = [
   "mutual fund",
   "nail tech",
   "neighborhood",
+  "newspaper",

@@ -33,7 +33,6 @@ export const stateCodeMap = {
   Iowa: 'IA',
   Kansas: 'KS',
   Kentucky: 'KY',
-// Temp comment
   Louisiana: 'LA',
   Maine: 'ME',
   Maryland: 'MD',

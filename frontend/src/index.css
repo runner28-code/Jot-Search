@@ -4,6 +4,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* Vanilla CSS */
 * {
   font-family: 'Roboto', sans-serif;
@@ -106,3 +107,4 @@ input[type=checkbox] {
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
+    line-height: 1.6;
