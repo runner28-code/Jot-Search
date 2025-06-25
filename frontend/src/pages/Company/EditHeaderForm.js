@@ -17,6 +17,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     zip: candidateData.zip,
   });
 
+  const handleInputChange = async (event) => {
     const { name, value } = event.target;
     if ( name === 'avatar' ) {
       const imageToUpload = event.target.files[0];
@@ -194,7 +195,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           </div>
         </div>
         {/* Phone */}
-        <div className='flex items-center justify-between mb-4'>
           <label
             className='text-h6 text-royalBlue flex items-center'
             htmlFor='phone'

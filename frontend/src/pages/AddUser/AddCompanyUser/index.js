@@ -79,6 +79,7 @@ export default function AddCompanyUser() {
                 </div>
               ))}
             </div>
+          )}
           {selectedCompany && (
             <CompanyContactList
               clientContacts={clientContacts}
@@ -89,4 +90,3 @@ export default function AddCompanyUser() {
         </div>
       </div>
     </div>
-  )

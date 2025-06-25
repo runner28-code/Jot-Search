@@ -39,6 +39,7 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
             location: 'US',
         };
         const [job] = await BigQueryService.getClient().createQueryJob(options);
+        const [res] = await job.getQueryResults();
         if (res && res.length > 0) {
             return true;
         }
@@ -54,7 +55,6 @@ export const consoleLog = (message: any, newLine = true) =>{
 }
 
 export const sleep = async (ms: number): Promise<void> => {
-    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 export const getDataSource = (id: string) => {

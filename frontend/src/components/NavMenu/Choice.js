@@ -8,13 +8,13 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
   if (choice === 'My Account') {
     choiceLink = ROUTES.profile;
   } else if (choice !== 'Dashboard') {
+    choiceLink += choice.toLowerCase().replace(' ', '-');
   }
 
   const linkStyles = choice === 'Logout' ? stylesObject.bottomLinkStyles : stylesObject.linkStyles;
   return (
     <div key={choice}>
       <Link 
-        to={choiceLink}
         className={linkStyles}
         onClick={handleOptionClick}
       >

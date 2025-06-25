@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BsBuilding as CompanyIcon } from 'react-icons/bs';
+import PropTypes from 'prop-types';
 import urlDecode from '../../utils/urlDecode';
 import * as ROUTES from '../../routes';
 

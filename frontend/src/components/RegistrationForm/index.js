@@ -20,6 +20,7 @@ import {
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
+import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
   phone: '',
@@ -121,6 +122,7 @@ export default function RegistrationForm(loggedIn) {
 
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
+// Temp comment
       setTimeout(() => {
         setFormObj(defaultState);
         setSubmissionObject({

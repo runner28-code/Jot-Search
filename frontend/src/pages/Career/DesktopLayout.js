@@ -38,7 +38,6 @@ export default function DesktopLayout(props) {
           <sub className='text-xxs text-zinc-700 font-roboto'>{careerData.clientCorporation}</sub>
         </div>
         <div className='relative grow'>
-// Temp comment
           {/* Title */}
           <div className='flex gap-xl items-center'>
             <h4 className='text-xl text-charcoal font-spaceGrotesk font-semibold leading-none'>{careerData.title}</h4>
@@ -132,6 +131,7 @@ DesktopLayout.propTypes = {
 }
 
 function renderLogo(logo) {
+// Temp comment
   if (!logo) {
     return <div className='w-48 h-48 flex justify-center items-center border border-smokeGray border-solid object-contain mr-10'>
       <CareerIcon className='w-30 h-30 fill-royalBlue' />

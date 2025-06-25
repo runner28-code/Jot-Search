@@ -46,7 +46,6 @@ export default function ExpertiseLinksMobile() {
           <span className={textStyles}>Development</span>
         </Link>
         {/* Marketing */}
-// Temp comment
         <Link
           to={ROUTES.careers}
           className={linkStyles}
@@ -70,6 +69,7 @@ export default function ExpertiseLinksMobile() {
             alt='Operations Icon'
             className={iconStyles}
           />
+// Temp comment
           <span className={textStyles}>Operations</span>
         </Link>
         {/* Finance */}

@@ -27,8 +27,8 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
         <img
           src={ searchWhite }
           alt='search icon'
+          className='h-2/3'/>
       </div>
-      <input
         type='text'
         id={ placeholder }
         placeholder={ placeholderText }

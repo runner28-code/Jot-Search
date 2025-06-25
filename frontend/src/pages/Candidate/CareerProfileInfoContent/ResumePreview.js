@@ -37,6 +37,7 @@ const ResumePreview = ({ resumeUrl }) => {
                 disabled={prevButtonDisabled}
                 onClick={() => setPage(page - 1)}
               >
+                <BackIcon className={prevButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>
             <li>Page {page} of {pdfDocument.numPages}</li>
@@ -44,7 +45,6 @@ const ResumePreview = ({ resumeUrl }) => {
               <button
                 disabled={nextButtonDisabled}
                 onClick={() => setPage(page + 1)}
-              >
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>

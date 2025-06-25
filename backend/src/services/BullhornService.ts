@@ -172,7 +172,6 @@ export class BullhornService {
     }
   }
 
-  async login(): Promise<boolean> {
     console.log("\n***** login *****");
     let retryNo = 0;
     while (retryNo < 3) {
@@ -319,6 +318,7 @@ export class BullhornService {
         },
       });
       if (res.status === 200) {
+        console.log("insertCompany success");
         const bullhornId = res.data.changedEntityId;
         const newDbCompany = {
           ...company,

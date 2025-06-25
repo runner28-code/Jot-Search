@@ -334,6 +334,7 @@ model Department {
   users Company[] @relation("departmentUsers")
 
   createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 enum Datasource {
@@ -353,7 +354,6 @@ model CandidateJobInvites {
   updatedAt   DateTime  @updatedAt
 }
 
-model CompanyCandidateInvites {
   id          String    @id @default(uuid())
   candidateId String
   candidate   Candidate @relation(fields: [candidateId], references: [id])

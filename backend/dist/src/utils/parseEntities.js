@@ -71,9 +71,9 @@ const parseBullhornCompanyToUser = (data) => {
         companyURL: data.companyURL,
         revenue: data.salary,
         dateFounded: data.dateAdded,
+// Temp comment
         employeeType: data.employeeType,
         experience: data.experience,
-// Temp comment
         hourlyRate: data.hourlyRate,
         willRelocate: data.willRelocate,
         ethnicity: data.ethnicity,

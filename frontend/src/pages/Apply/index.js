@@ -98,7 +98,6 @@ export default function Apply() {
   useEffect(async () => {
     if ( submissionObject.loading ) {
       const response = await submitData();
-      if ( response.result === true ) {
         setSubmissionObject({
           loading: false,
           success: true,
@@ -136,6 +135,7 @@ export default function Apply() {
     const formattedObject = await formatApplicationObject(applicationObject, useExistingResume);
     if ( isLoggedIn ) {
       // Check if any values have changed, update user with new values if so
+      updateCandidateIfNeeded(formattedObject, originalObject);
     }
 
     const response = await applyToJob(jobId, formattedObject.id);

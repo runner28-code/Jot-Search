@@ -84,7 +84,6 @@ export default function Candidate() {
 
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 
-// Temp comment
   if (loading) { return <LoadingSpinner /> }
   return (
     <div className='flex flex-col space-y-16'>

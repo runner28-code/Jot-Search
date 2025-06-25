@@ -78,6 +78,5 @@ export default function PendingApplications () {
             View All
         </Link>
       </div>
-// Temp comment
     </div>
   )

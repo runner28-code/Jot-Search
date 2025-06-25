@@ -11,7 +11,6 @@ import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 export default function ResultContainer(props) {
   const {
     results,
-    loading,
     type,
     limit,
     header, 

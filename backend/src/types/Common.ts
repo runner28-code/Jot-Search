@@ -62,7 +62,6 @@ type CountFilterResponse = {
   total?: number;
   message?: any;
 };
-
 // Job Types
 export type Job = BullhornJob | GetroJob;
 export type JobSearchByID = {
