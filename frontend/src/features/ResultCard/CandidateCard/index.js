@@ -15,7 +15,6 @@ import {
 
 export default function CandidateCard({ data, disableLink }) {
   const avatarUrl = formatAvatarUrl(data.avatar, data.firstName, data.lastName);
-// Temp comment
   const nameString = data.firstName + ' ' + data.lastName;
   const experienceString = formatYearsExperience(data.experienceYears, data.experience);
   const addressString = buildCandidateAddress(data);
@@ -123,7 +122,6 @@ CandidateCard.propTypes = {
 // Disables link and interactivity if disableLink is true
 function LinkWrapper({ children, link, disableLink }) {
   const baseStyles = 'w-full flex mb-xl px-xxl-2 py-xxl-3 bg-white border border-disabled border-solid rounded-2xl remove-outline ';
-  if ( disableLink ) {
     return (
       <div className={baseStyles}>
         {children}

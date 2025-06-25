@@ -19,6 +19,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     id: candidateData.id,
     avatar: candidateData.avatar || '',
     firstname: candidateData.firstname || '',
+// Temp comment
     lastname: candidateData.lastname || '',
     occupation: candidateData.occupation || '',
     companyName: candidateData.companyName || '',

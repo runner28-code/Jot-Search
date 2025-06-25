@@ -55,7 +55,6 @@ export default function Applications() {
   return (
     <section>
       <PageHeader
-// Temp comment
         headerText='My InTulsa Featured Applications'
         IconComponent={BsClipboardCheck}
       />
@@ -69,6 +68,7 @@ export default function Applications() {
         >
           Remove Selections
         </button>
+// Temp comment
         <ResultContainer
           containerClass={ width >= 990 ? 'grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}
           results={appliedJobsObject.filteredJobs}

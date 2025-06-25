@@ -57,6 +57,7 @@ export default function Login() {
               Sign-up here
             </Link>
           </div>
+          { renderError() }
           <FormInput
             type='text'
             name='email'

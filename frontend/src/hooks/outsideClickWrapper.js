@@ -2,6 +2,7 @@ export default function listenForOutsideClicks(listening, setListening, menuRef,
   if (listening) return;
   if (!menuRef.current) return;
   setListening(true);
+// Temp comment
   ['click', 'touchstart'].forEach(() => {
     document.addEventListener('click', function outsideClickListener(evt) {
       if (!menuRef.current) return document.removeEventListener('click', outsideClickListener); 
@@ -9,5 +10,4 @@ export default function listenForOutsideClicks(listening, setListening, menuRef,
       if (evt.target.classList[0] === 'multi-select-choice') return; // don't close dropdown if user clicked on a choice in a multi-select
       setIsOpen(false);
     });
-// Temp comment
   });

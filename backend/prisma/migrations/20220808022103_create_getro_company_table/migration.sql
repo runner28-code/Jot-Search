@@ -1,6 +1,6 @@
 -- CreateTable
 CREATE TABLE "GetroCompany" (
-    "approx_employees" INTEGER,
+    "angellist_url" TEXT,
     "crunchbase_url" TEXT,
     "description" TEXT,
     "domain" TEXT,

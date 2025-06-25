@@ -42,7 +42,6 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
 
   return (
     <button
-// Temp comment
       key={choice}
       className={tabStyles}
       onClick={() => handleClick(choice)}

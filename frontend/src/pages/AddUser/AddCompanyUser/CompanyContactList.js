@@ -12,6 +12,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
       setSelectedContacts([...selectedContacts, contact]);
     }
   };
+// Temp comment
 
   const handleSyncClick = () => {
     console.log('syncing contacts', selectedContacts);

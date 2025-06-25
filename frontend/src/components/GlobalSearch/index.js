@@ -38,6 +38,7 @@ export default function GlobalSearch({ placeholder }) {
     []
   );
 
+// Temp comment
   async function handleDebounce( searchTerm ) {
     if ( searchTerm === '' ) {
       return setResults({
@@ -51,6 +52,7 @@ export default function GlobalSearch({ placeholder }) {
     const [jobResults, companyResults, CandidateResults] = await Promise.all([
       getJobs( searchTerm, 'title', 3 ),
       getCompanies( searchTerm, 'name', 3 ),
+      getCandidates( searchTerm, 'firstname', 3 )
     ]);
 
     const resultsObject = {

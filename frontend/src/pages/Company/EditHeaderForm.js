@@ -18,7 +18,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   });
 
   const handleInputChange = async (event) => {
-// Temp comment
     const { name, value } = event.target;
     if ( name === 'avatar' ) {
       const imageToUpload = event.target.files[0];

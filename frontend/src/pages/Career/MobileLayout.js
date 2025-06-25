@@ -12,6 +12,7 @@ import { apply as applyRoute } from '../../routes';
 import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
 
+const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-xl text-charcoal mb-4 ';
 const hrStyles = 'mb-10 border-midGrey ';
 
 export default function MobileLayout(props) {
@@ -67,6 +68,7 @@ export default function MobileLayout(props) {
               <img
                 src={postingAgeIcon}
                 className='h-11 mr-5' />
+// Temp comment
               <p className='text-textBlack text-xs'>{postingAge}</p>
             </div>
             {/* Employement Type */}

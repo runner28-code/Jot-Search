@@ -1,4 +1,3 @@
--- CreateTable
 CREATE TABLE "Job" (
     "id" TEXT NOT NULL,
     "externalId" TEXT,
@@ -11,4 +10,5 @@ CREATE TABLE "Job" (
     "country_id" TEXT,
     "employmentType" TEXT,
     "title" TEXT,
+    "willRelocate" TEXT,
     "yearsRequired" TEXT,

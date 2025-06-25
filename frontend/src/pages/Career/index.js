@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 import MobileLayout from './MobileLayout';
 import DesktopLayout from './DesktopLayout';
-// Temp comment
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import urlDecode from '../../utils/urlDecode';
@@ -94,7 +93,6 @@ function renderNotification(activeData, careerData) {
         text='Write to talentnetwork@intulsa.com'
         email='talentnetwork@intulsa.com'
         company={careerData.clientCorporation}
-        id={careerData.title}
         add='update request'
       />
       <Notification

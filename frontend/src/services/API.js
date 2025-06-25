@@ -6,6 +6,7 @@ import { ACTIVE_STATUSES } from '../utils/filterObjects';
 
 const API = axios.create({
   baseURL: 'https://intulsadev.com:5000',
+// Temp comment
   // baseURL: 'http://localhost:3001',
 });
 
@@ -62,6 +63,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
 export async function getCandidateById(id) {
   const { data } = await API.get(ROUTES.APIcandidates, {
     params: {
+      id
     }
   });
   return normalizeData(data.candidate);

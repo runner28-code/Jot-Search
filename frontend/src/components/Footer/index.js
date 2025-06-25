@@ -313,7 +313,6 @@ function NavFooterMobile() {
         />
       </div>
       <div className='flex flex-col basis-6/12'>
-        <Link
           to={ROUTES.signup}
           className={blueLinkStyle}
         >Create Account
