@@ -38,6 +38,7 @@ export default function DesktopLayout(props) {
           <sub className='text-xxs text-zinc-700 font-roboto'>{careerData.clientCorporation}</sub>
         </div>
         <div className='relative grow'>
+// Temp comment
           {/* Title */}
           <div className='flex gap-xl items-center'>
             <h4 className='text-xl text-charcoal font-spaceGrotesk font-semibold leading-none'>{careerData.title}</h4>
@@ -65,6 +66,7 @@ export default function DesktopLayout(props) {
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack'>{careerData.onSite}</p>
             </div>
+            {/* Posting age */}
             <div className='w-1/3 flex items-center pr-4'>
               <img
                 src={postingAgeIcon}

@@ -136,7 +136,6 @@ export default function Apply() {
     const formattedObject = await formatApplicationObject(applicationObject, useExistingResume);
     if ( isLoggedIn ) {
       // Check if any values have changed, update user with new values if so
-      updateCandidateIfNeeded(formattedObject, originalObject);
     }
 
     const response = await applyToJob(jobId, formattedObject.id);

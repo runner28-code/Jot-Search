@@ -14,6 +14,7 @@ CREATE TABLE "Lead" (
     "clientCorporation" TEXT,
     "comments" TEXT,
     "companyName" TEXT,
+    "companyURL" TEXT,
     "conversionSource" TEXT,
     "dateAdded" TIMESTAMP(3),
     "dateLastComment" TIMESTAMP(3),

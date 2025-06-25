@@ -6,7 +6,6 @@ import { ACTIVE_STATUSES } from '../utils/filterObjects';
 
 const API = axios.create({
   baseURL: 'https://intulsadev.com:5000',
-// Temp comment
   // baseURL: 'http://localhost:3001',
 });
 

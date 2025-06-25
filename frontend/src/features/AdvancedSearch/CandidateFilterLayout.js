@@ -61,7 +61,6 @@ export default function CandidateFilterLayout(props) {
     });
   }
 
-// Temp comment
   const toggleSkills = (skill) => {
     const skills = filterObject.skills ?? []
     if (skills.includes(skill)) {

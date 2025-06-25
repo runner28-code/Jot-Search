@@ -52,7 +52,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         <LoadingSpinner color='#FDFDFD' />
       </div>
     );
-  }
   return (
     <div className={containerStyles}>
       <h5 className='text-[3rem] text-white font-spaceGrotesk font-semibold text-center mt-18 mb-16'>

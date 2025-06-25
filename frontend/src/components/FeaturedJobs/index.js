@@ -3,6 +3,7 @@ import * as ROUTES from '../../routes';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
+// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -51,6 +52,7 @@ export default function FeaturedJobs() {
                   to={`${ROUTES.careers}/${career.id}`}
                   key={index}
                   className={ width >= 990 ? linkStyles : linkStylesMobile }
+                >
                   <div className={ width >= 990 ? cardStyles : cardStylesMobile }>
                     { width >= 990 ? <RenderImage image={career.logo} /> : <RenderImageMobile image={career.logo} />}
                     <div className={width >= 990 ? cardContentStyles : cardContentStylesMobile}>

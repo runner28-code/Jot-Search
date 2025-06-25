@@ -19,7 +19,6 @@ const dropDownFiltersCandidate = [
 export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
 
-// Temp comment
   const {
     defaultFilterObject,
     filterObject,
@@ -59,6 +58,7 @@ export default function CareerFilterLayout(props) {
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}
+// Temp comment
         >
           Clear All
         </button>

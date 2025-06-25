@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { getJobById } from '../../services/API';
 import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
-import MobileLayout from './MobileLayout';
 import DesktopLayout from './DesktopLayout';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
@@ -93,6 +92,7 @@ function renderNotification(activeData, careerData) {
         text='Write to talentnetwork@intulsa.com'
         email='talentnetwork@intulsa.com'
         company={careerData.clientCorporation}
+        id={careerData.title}
         add='update request'
       />
       <Notification

@@ -319,7 +319,6 @@ export class BullhornService {
         },
       });
       if (res.status === 200) {
-        console.log("insertCompany success");
         const bullhornId = res.data.changedEntityId;
         const newDbCompany = {
           ...company,

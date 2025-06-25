@@ -9,7 +9,6 @@ env:
   AWS_REGION: 'us-east-1'
   ECR_REPOSITORY: 'site-backend'
   ECS_SERVICE: 'intulsa-backend-service-dev'
-  ECS_CLUSTER: 'intulsa-cluster-dev'
   ECS_TASK_DEFINITION: '.github/workflows/dev_task_definition.json'
   CONTAINER_NAME: 'intulsa-backend-container-dev'
 
@@ -38,6 +37,7 @@ jobs:
       uses: cschleiden/replace-tokens@v1
       with:
         files: ${{ env.ECS_TASK_DEFINITION }}
+        tokenPrefix: '{'
         tokenSuffix: '}'
       env:
         SECRET_DATABASE_URL: ${{ secrets.DEV_DATABASE_URL }}
