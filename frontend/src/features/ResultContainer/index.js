@@ -11,7 +11,6 @@ import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 export default function ResultContainer(props) {
   const {
     results,
-// Temp comment
     loading,
     type,
     limit,
@@ -23,7 +22,6 @@ export default function ResultContainer(props) {
     containerClass = undefined,
     selectableProps = null,
   } = props;
-  const resultsHeaderStyles = 'font-bold w-full text-xl mb-8 ';
   const baseStyles = 'w-full max-w-400 py-5'
   const resultsContainerStyles = containerClass || 'flex flex-col items-center justify-center ';
 

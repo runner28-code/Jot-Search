@@ -12,6 +12,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function NavBar() {
   const { width } = useWindowDimensions();
+
   if ( width < 1280 ) {
     return <MobileNavBarLayout />
   } else {
@@ -34,7 +35,6 @@ function MobileNavBarLayout() {
         {/* Nav Menu */}
         <div className='flex items-center'>
           { width >= 990 ? <NavSearch /> : <NavSearchMobile />}
-          <NavMenu />
         </div>
       </div>
       {/* Global Search */}

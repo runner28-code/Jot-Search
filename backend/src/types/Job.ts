@@ -13,13 +13,13 @@ export type Job = {
   employmentType?: string;
   title?: string;
   willRelocate?: string;
+  yearsRequired?: string;
   status?: string;
   skillList?: string;
   locations?: string;
   companyId?: string;
   interviews?: string;
   onSite?: string;
-  salary?: string;
   salaryUnit?: string;
   startDate?: string;
   type?: string;

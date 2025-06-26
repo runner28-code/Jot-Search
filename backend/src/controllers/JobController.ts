@@ -129,7 +129,6 @@ export class JobController {
       const _datasource = datasource ? datasourceToEnum[datasource] : undefined;
 
       const _filters = normalizeFilters(filters)
-      const where: any = {
         datasource: _datasource as any,
         ..._filters,
       }

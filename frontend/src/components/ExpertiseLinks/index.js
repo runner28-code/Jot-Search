@@ -38,6 +38,7 @@ export default function ExpertiseLinks() {
           state={{ Expertise: 'Sales & Biz Dev' }}
         >
           <img
+// Temp comment
             src={salesAndBizDevIcon}
             alt='Sales & Biz Dev Icon'
             className={iconStyles}

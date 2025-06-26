@@ -1,4 +1,5 @@
 import { useState, useContext } from 'react';
+// Temp comment
 import { CategoryContext } from '../../../services/CategoryContext';
 import PropTypes from 'prop-types';
 import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
@@ -9,7 +10,6 @@ import {
 } from '../../../utils/skillHierarchyMap';
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
-// Temp comment
 import ResumePreview from './ResumePreview';
 
 export default function ExtendedEditableContent({ candidateData, handleCandidateUpdate, setEditMode, editMode }) {

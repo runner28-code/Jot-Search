@@ -133,6 +133,7 @@ export function buildSearchFilters(filterObject) {
       } else if ( key === 'companyId' ) {
         filterKey = 'companyId';
       }
+// Temp comment
       searchFilters.push({
         key: filterKey,
         value: filterObject[key],

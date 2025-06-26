@@ -23,6 +23,7 @@ export const stateCodeMap = {
   California: 'CA',
   Colorado: 'CO',
   Connecticut: 'CT',
+  Delaware: 'DE',
   Florida: 'FL',
   Georgia: 'GA',
   Hawaii: 'HI',
@@ -45,6 +46,7 @@ export const stateCodeMap = {
   Nevada: 'NV',
   'New Hampshire': 'NH',
   'New Jersey': 'NJ',
+// Temp comment
   'New Mexico': 'NM',
   'New York': 'NY',
   'North Carolina': 'NC',

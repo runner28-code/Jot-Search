@@ -129,7 +129,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               Address 1:
               </label>
               <input 
-// Temp comment
                 type='text'
                 onChange={handleInputChange}
                 id='address1'

@@ -30,7 +30,6 @@ export default function FeaturedJobs() {
     {
       key: 'featured',
       value: true
-// Temp comment
     }
   ];
 
@@ -46,6 +45,7 @@ export default function FeaturedJobs() {
             <LoadingSpinner />
             :
             jobs.map((career, index) => {
+// Temp comment
               const categoryString = career.category?.name.toUpperCase() || 'CATEGORY N/A';
               return(
                 <Link

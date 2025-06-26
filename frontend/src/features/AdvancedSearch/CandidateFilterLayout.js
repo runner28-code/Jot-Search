@@ -86,7 +86,6 @@ export default function CandidateFilterLayout(props) {
           onChange={toggleSkills}
           choices={skills}
         />
-// Temp comment
       </div>
       <div className='flex flex-wrap gap-xxl-4'>
         {renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange)}

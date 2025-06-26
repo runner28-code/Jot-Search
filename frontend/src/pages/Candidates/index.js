@@ -17,7 +17,5 @@ export default function Candidates() {
         headerText='Candidates List'
         icon={headerIcon}
       />
-      <AdvancedSearch disabledTabs />
     </section>
-// Temp comment
   )

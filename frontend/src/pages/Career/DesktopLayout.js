@@ -27,7 +27,6 @@ export default function DesktopLayout(props) {
   } = props.data;
   const navigate = useNavigate();
 
-// Temp comment
   const skillList = careerData.skillList;
 
   return (<>

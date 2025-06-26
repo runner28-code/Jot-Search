@@ -15,4 +15,5 @@
                     "protocol": "tcp"
                 }
             ],
+            "essential": true,
             "logConfiguration": {

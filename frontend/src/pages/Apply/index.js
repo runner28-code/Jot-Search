@@ -44,7 +44,6 @@ export default function Apply() {
   const [applicationObject, setApplicationObject] = useState(defaultState);
   const [useExistingResume, setUseExistingResume] = useState(false);
   const [referralChoice, setReferralChoice] = useState(false);
-// Temp comment
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
@@ -63,6 +62,7 @@ export default function Apply() {
     try {
       const { user_id } = AuthService.getProfile();
       const [careerData, candidateData] = await Promise.all([
+// Temp comment
         getJobById(jobId),
         getCandidateById(user_id),
       ]);

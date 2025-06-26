@@ -13,3 +13,4 @@ CREATE TABLE "GetroCompany" (
     "linkedin_url" TEXT,
     "locations" TEXT,
     "logo_url" TEXT,
+    "name" TEXT,

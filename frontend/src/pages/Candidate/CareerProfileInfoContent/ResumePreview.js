@@ -32,7 +32,6 @@ const ResumePreview = ({ resumeUrl }) => {
       {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>
           <ul className="flex justify-between">
-// Temp comment
             <li className="previous">
               <button
                 disabled={prevButtonDisabled}

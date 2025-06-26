@@ -18,7 +18,6 @@ export default function AddUser() {
   function handleDropdownChange(e) {
     setFormType(e.target.value);
   }
-
   const defaultContainer = 'bg-white border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12';
   const companyContainer = '';
 
@@ -39,7 +38,6 @@ export default function AddUser() {
         noDefault={true}
       />
     </h2>
-// Temp comment
     <div className={formType != 'Company' ? defaultContainer : companyContainer }>
       <div className='flex w-full px-8 vw-1280:px-0 3vw-1280:ml-10'>
         { renderFormByType(formType) }

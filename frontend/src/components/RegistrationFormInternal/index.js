@@ -130,6 +130,7 @@ export default function RegistrationFormInternal(loggedIn) {
           success: false,
         });
       }, 2000);
+    }
   }, [submissionObject.success])
 
   async function handleSubmit(event) {

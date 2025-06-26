@@ -45,7 +45,6 @@ function CareerHeader ({ location }) {
           <CareerIcon className='mr-6 fill-royalBlue ' />
           <h2 className='font-spaceGrotesk text-royalBlue font-bold '>Career Details</h2>
         </span>
-        <Link
           className='text-blue underline text-royalBlue'
           to={ROUTES.careers}
         >{ back }</Link>
@@ -78,6 +77,7 @@ function CareerHeader ({ location }) {
         </div>
         <div className='basis-2/6 flex items-center'>
           <ToggleFilter />
+        </div>
       </div>
     </>)
   }

@@ -67,7 +67,6 @@ export async function getCandidateById(id) {
   });
   return normalizeData(data.candidate);
 }
-
 export async function updateUser(newData, id) { // id is optional, if no id is passed it will update the user attached to the auth token
   const body = id ? { id, ...newData } : newData;
   const { data } = await API.post(ROUTES.APIuserUpdate, body);
@@ -131,7 +130,6 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
       {
         'key': filterKey || 'name',
         'value': filterValue || '',
-// Temp comment
       }
     ],
     'count': count || 5,

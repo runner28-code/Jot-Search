@@ -14,7 +14,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const client_1 = require("@prisma/client");
 const db_1 = __importDefault(require("../src/utils/db"));
-// Temp comment
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {

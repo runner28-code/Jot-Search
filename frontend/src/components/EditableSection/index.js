@@ -14,7 +14,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
     setEditMode(false);
     handleContentUpdate(contentObject);
   }
-// Temp comment
 
   function handleCancel() {
     setContentObject(contentObjectProp);
@@ -22,4 +21,3 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   }
 
   function handlePropertyChange(property, value) {
-    setContentObject({ ...contentObject, [property]: value });

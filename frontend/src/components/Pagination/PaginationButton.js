@@ -13,4 +13,5 @@ export const PaginationButton = ({ page, disabled, prefetchFunc, active, setPage
       onMouseOver={() => prefetchFunc?.(page)}
     >
       {children}
+    </button>
   );
