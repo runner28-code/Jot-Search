@@ -211,7 +211,6 @@ model Company {
 
   competitors String[]
 
-  culture String?
 
   dateAdded        DateTime?
   dateFounded      DateTime?
@@ -354,6 +353,7 @@ model CandidateJobInvites {
   updatedAt   DateTime  @updatedAt
 }
 
+model CompanyCandidateInvites {
   id          String    @id @default(uuid())
   candidateId String
   candidate   Candidate @relation(fields: [candidateId], references: [id])

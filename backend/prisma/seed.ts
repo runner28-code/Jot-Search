@@ -10,6 +10,7 @@ async function main() {
     await seedCategories();
     await seedJobs();
     await seedUsers();
+    console.log("Done🎉");
   } catch (err) {
     console.error("Error during seed...❌");
     console.error(err);
@@ -118,3 +119,4 @@ async function seedCategories() {
         externalID: 2000014,
       },
       {
+        name: "Other",

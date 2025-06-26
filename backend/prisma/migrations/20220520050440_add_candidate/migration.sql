@@ -1,4 +1,3 @@
--- CreateTable
 CREATE TABLE "Candidate" (
     "id" TEXT NOT NULL,
     "address" TEXT,
@@ -52,3 +51,4 @@ CREATE TABLE "Candidate" (
     "namePrefix" TEXT,
     "nameSuffix" TEXT,
     "nickName" TEXT,
+    "numCategories" TEXT,

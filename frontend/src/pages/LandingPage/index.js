@@ -28,7 +28,6 @@ export default function LandingPage() {
       {/* Hero */}
       <section className={heroStyles}>
         {/* Header */}
-// Temp comment
         <div className='mt-34 vw-1024:mt-60 flex flex-col items-center'>
           { renderLocation() }
           <p className='text-white font-spaceGrotesk font-semibold w-2/3 vw-1024:w-full text-[35.2px] vw-1024:text-[72px] text-center'>{'Find a Career You\'ll Love'}</p>
@@ -54,6 +53,7 @@ function renderSearch() {
   const { width } = useWindowDimensions();
   const { totalCompaniesCount, totalJobsCount, isLoading } = useGetLandingPageStats({});
 
+// Temp comment
   if( width <= 1024 ) {
     return (<>
       <ExploreSearchMobile

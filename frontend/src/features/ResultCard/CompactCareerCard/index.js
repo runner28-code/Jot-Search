@@ -42,7 +42,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             { isApplicationPage ?
               <div>
                 <p className='text-midGrey'>Applied</p>
-                <p className='text-midGrey text-xs'>{applicationAge}</p>
               </div>
               :
               <div>
@@ -60,6 +59,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
           />
+          : 
           <FavoriteButton
             type={'job'}
             data={data}

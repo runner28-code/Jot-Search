@@ -174,3 +174,4 @@ export type ClientContact = {
 
 export type Candidate = {
     id: string;
+    address_address1?: string;

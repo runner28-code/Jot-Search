@@ -83,6 +83,7 @@ const DropdownMenu = () => {
   const menuRef = useRef(null);
   const profile = AuthService.getProfile();
   if ( !profile ) {
+// Temp comment
     navigate(ROUTES.login);
   }
 

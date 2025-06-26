@@ -331,3 +331,6 @@ export const getCompanyDashboardStats = async (days: number) => {
       SELECT COUNT(*) FROM "_userSavedJobs"
     `) as any;
     const activeCareersPostFavoritesCurrentPeriod = result[0]?.count ?? 0;
+
+    const companyCandidateInvitesCurrentPeriod = await db.companyCandidateInvites.count({
+      where: {

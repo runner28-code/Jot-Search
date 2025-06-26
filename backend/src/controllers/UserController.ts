@@ -122,3 +122,4 @@ export class UserController {
     try {
       if (user.role === COMPANY)
         await sendVerification(user.email, user.companyName || "");
+      else await sendVerification(user.email, user.firstname || "");

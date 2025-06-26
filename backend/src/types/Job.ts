@@ -32,3 +32,4 @@ export type Job = {
   featured?: boolean;
 };
 
+export type JobKey = keyof Job;

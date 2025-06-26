@@ -2,7 +2,6 @@ import axios from "axios";
 import config from "../config";
 import queryString from "query-string";
 import {
-  saveCandidates,
   saveClientContacts,
   saveCompanies,
   saveBullhornJobs,
@@ -172,6 +171,7 @@ export class BullhornService {
     }
   }
 
+  async login(): Promise<boolean> {
     console.log("\n***** login *****");
     let retryNo = 0;
     while (retryNo < 3) {
@@ -519,3 +519,8 @@ export class BullhornService {
             "occupation",
             "office",
             "owner",
+            "pager",
+            "password",
+            "phone",
+            "phone2",
+            "phone3",

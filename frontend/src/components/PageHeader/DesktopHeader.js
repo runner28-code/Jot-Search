@@ -16,6 +16,7 @@ export default function DesktopHeader(props) {
   const navigate = useNavigate();
 
   let addOnIconClasses = '';
+// Temp comment
   addOnIconClasses += colorizeStroke ? ' stroke-royalBlue ' : ' fill-royalBlue ';
   if ( classOverride ) addOnIconClasses += classOverride;
   let containerClasses = 'mb-10 pt-18 ';
@@ -29,6 +30,7 @@ export default function DesktopHeader(props) {
             src={ icon }
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
+          />
         )}
         { IconComponent && (
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />

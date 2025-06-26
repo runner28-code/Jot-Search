@@ -12,7 +12,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     'On-Site/Remote': 'Any Work Setting',
     expertise: 'Any Expertise',
   });
-
   function handleSearchClick() {
     const params = {};
     if (filterState.title) {
@@ -20,7 +19,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     }
     if (filterState['On-Site/Remote'] !== 'Any Work Setting') {
       params['On-Site/Remote'] = filterState['On-Site/Remote'];
-// Temp comment
     }
     if (filterState.expertise !== 'Any Expertise') {
       params.expertise = filterState.expertise;

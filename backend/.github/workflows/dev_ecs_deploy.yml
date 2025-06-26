@@ -43,3 +43,4 @@ jobs:
       env:
         SECRET_DATABASE_URL: ${{ secrets.DEV_DATABASE_URL }}
         SECRET_AUTH_SECRET: ${{ secrets.DEV_AUTH_SECRET }}
+        SECRET_GETRO_EMAIL: ${{ secrets.DEV_GETRO_EMAIL }}

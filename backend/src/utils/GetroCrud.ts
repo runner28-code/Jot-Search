@@ -63,3 +63,4 @@ export const saveMembers = async (members: any[]) => {
 									if (expludeFields.includes(key)) {
 										delete jobData[key];
 									}
+								});

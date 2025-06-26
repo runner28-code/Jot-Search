@@ -21,7 +21,6 @@ export default function MobileLayout(props) {
     categoryString,
     addressString,
     salaryString,
-// Temp comment
     postingAge,
     role
   } = props.data;

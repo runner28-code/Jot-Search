@@ -120,7 +120,6 @@ export function findSelectedFromPath() {
     case 'saved-candidates':
       return 'Saved Candidates';
     case 'active-careers':
-// Temp comment
       return 'Active Careers';
     case 'candidates':
       return 'Candidates';

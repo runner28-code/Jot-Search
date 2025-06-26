@@ -8,6 +8,7 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
       { tabChoices.map(choice => {
         return <TabButton
           key={choice}
+          choice={choice}
           activeTab={activeTab}
           setActiveTab={setActiveTab}
           isLocked={isLocked}

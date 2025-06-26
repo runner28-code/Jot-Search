@@ -50,6 +50,7 @@ Object.keys(jobFilterObject).forEach(key => {
 });
 
 export const defaultJobFilterState = {
+  title: '',
   status: ACTIVE_STATUSES,
   ...convertedJobFilters
 };

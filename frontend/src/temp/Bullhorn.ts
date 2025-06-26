@@ -174,3 +174,4 @@ export type Candidate = {
     address_state?: string; // !
     address_zip?: string; // !
     address_country_id?: string;
+    certifications?: string;

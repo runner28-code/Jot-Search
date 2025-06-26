@@ -29,12 +29,12 @@ export const saveCandidate = async (
               id: candidateId,
             },
           },
+        },
       });
     } else {
       await db.user.update({
         where: {
           id: companyUserId,
-        },
         data: {
           savedCandidates: {
             disconnect: {
@@ -50,3 +50,4 @@ export const saveCandidate = async (
     };
   } catch (error) {
     console.log(error);
+    return { result: false, message: error };

@@ -63,3 +63,4 @@ export const sendCandidatesToEmployers = async (candidates: string[], employers_
     throw error;
   }
 }
+

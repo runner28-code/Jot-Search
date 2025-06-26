@@ -114,7 +114,6 @@ export const skills = [
   'Branding',
   'Budget Management',
   'Budgeting',
-// Temp comment
   'Business Development',
   'Business Intelligence',
   'C#',
@@ -210,3 +209,5 @@ export const skills = [
   'Fraud',
   'French',
   'Fundraising',
+  'GAAP',
+  'General Ledger',

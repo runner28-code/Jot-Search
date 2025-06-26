@@ -39,7 +39,6 @@ export class GetroService {
         throw 'Auth failed';
     }
     async getNetworkID(): Promise<boolean> {
-        try {
             console.log('\n***** getNetworkID *****');
             const url = `${this.api_base_url_v2}/networks`;
 
@@ -152,3 +151,5 @@ export class GetroService {
                 const url = `${this.api_base_url_v1}/members?${query}`;
 
                 const res = await axios.get(url, this.getOptions());
+                await sleep(2000); // https://developers.getro.com/#rate-limit
+

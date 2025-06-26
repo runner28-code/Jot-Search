@@ -54,3 +54,4 @@ CREATE TABLE "Company" (
     "phone" TEXT,
     "revuenue" TEXT,
     "status" TEXT,
+    "taxRate" DOUBLE PRECISION,

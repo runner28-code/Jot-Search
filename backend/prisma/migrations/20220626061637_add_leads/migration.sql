@@ -20,7 +20,6 @@ CREATE TABLE "Lead" (
     "dateLastComment" TIMESTAMP(3),
     "dateLastModified" TIMESTAMP(3),
     "dateLastVisited" TIMESTAMP(3),
-    "description" TEXT,
     "division" TEXT,
     "email" TEXT,
     "email2" TEXT,
@@ -34,3 +33,4 @@ CREATE TABLE "Lead" (
     "isDeleted" BOOLEAN,
     "lastName" TEXT,
     "leadSource" TEXT,
+    "massMailOptOut" BOOLEAN,

@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
@@ -15,6 +16,7 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
   return (
     <div key={choice}>
       <Link 
+        to={choiceLink}
         className={linkStyles}
         onClick={handleOptionClick}
       >

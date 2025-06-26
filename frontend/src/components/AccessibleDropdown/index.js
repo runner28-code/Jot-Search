@@ -65,6 +65,7 @@ export default function AccessibleDropdown(props) {
         </Menu>
       </Wrapper>
     </div>
+  );
 }
 
 AccessibleDropdown.defaultProps = {
@@ -80,7 +81,6 @@ AccessibleDropdown.propTypes = {
   onChange: PropTypes.func,
   choices: PropTypes.array,
   choiceObject: PropTypes.object,
-  currentChosen: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string)
   ]),

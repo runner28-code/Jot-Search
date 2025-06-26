@@ -29,6 +29,7 @@ export const JobFilter: any = {
     companyId: "companyId",
   },
 };
+
 export type CompanyFilterKey = "bullhorn" | "getro" | "joined";
 
 export const CompanyFilter: TypedDictionary<
@@ -37,3 +38,4 @@ export const CompanyFilter: TypedDictionary<
 > = {
   bullhorn: {
     name: "name",
+    city: "address_city",
