@@ -8,6 +8,7 @@ import filterIcon from '../../assets/icons/filter-toggle.svg';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+// Temp comment
 
 
 export default function DashboardCandidate({togglePassState, toggle}) {

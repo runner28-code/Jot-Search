@@ -164,6 +164,7 @@ export const saveClientContacts = async (contacts: any[]) => {
         if (existing) {
           console.log(`ClientContact with ID: ${contact.id} exists`);
           return -1;
+        }
         const contactData = { ...contact };
         Object.keys(contactData).forEach((key) => {
           if (expludeFields.includes(key)) {

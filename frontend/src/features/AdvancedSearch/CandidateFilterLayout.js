@@ -27,7 +27,6 @@ const checkboxFiltersCoord = [
 ];
 const checkboxFilters = [
   'Authorized to work in the US',
-// Temp comment
   'Open to Relocation',
   'Actively Looking',
 ];
@@ -87,6 +86,7 @@ export default function CandidateFilterLayout(props) {
           onChange={toggleSkills}
           choices={skills}
         />
+// Temp comment
       </div>
       <div className='flex flex-wrap gap-xxl-4'>
         {renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange)}

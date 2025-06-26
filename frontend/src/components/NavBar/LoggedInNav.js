@@ -64,6 +64,7 @@ const DesktopNavBarLayout = () => {
       </Link>
       {/* Nav Menu */}
       <div className='flex items-center font-spaceGrotesk'>
+// Temp comment
         <div className='mr-14'>
           { renderNavSearch() }
         </div>
@@ -83,7 +84,6 @@ const DropdownMenu = () => {
   const menuRef = useRef(null);
   const profile = AuthService.getProfile();
   if ( !profile ) {
-// Temp comment
     navigate(ROUTES.login);
   }
 

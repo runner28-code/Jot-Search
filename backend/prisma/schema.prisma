@@ -211,6 +211,7 @@ model Company {
 
   competitors String[]
 
+  culture String?
 
   dateAdded        DateTime?
   dateFounded      DateTime?

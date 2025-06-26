@@ -13,7 +13,6 @@ export default function FeaturedJobs() {
 
   const linkStyles = '';
   const linkStylesMobile = 'basis-full mb-8'
-// Temp comment
   const titleStyles = 'text-h4 font-semibold font-spaceGrotesk';
   const titleStylesMoible = 'text-h4 font-semibold font-spaceGrotesk text-center';
   const cardStyles = 'mx-8 outline outline-1 outline-neutral-300 rounded-xxl p-12 w-[275px] h-[316px]';
@@ -31,6 +30,7 @@ export default function FeaturedJobs() {
     {
       key: 'featured',
       value: true
+// Temp comment
     }
   ];
 

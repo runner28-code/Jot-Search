@@ -74,6 +74,7 @@ export default function Login() {
               type='submit'
             >
               Login
+            </button>
             <Link
               to={ROUTES.accountRecovery}
               className='text-royalBlue text-sm vw-640:text-ml underline'>

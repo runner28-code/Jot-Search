@@ -2,7 +2,6 @@ import "dotenv/config";
 
 const config = {
   port: process.env.PORT,
-  projectId: process.env.PROJECT_ID,
   authSecret: process.env.AUTH_SECRET,
   fileUploadSize: process.env.FILE_UPLOAD_SIZE,
 
@@ -10,4 +9,5 @@ const config = {
   getroPassword: process.env.GETRO_PASSWORD,
 
   bullhornClientID: process.env.BULLHORN_CLIENT_ID,
+  bullhornClientSecret: process.env.BULLHORN_CLIENT_SECRET,
   bullhornApiUsername: process.env.BULLHORN_API_USERNAME,

@@ -78,7 +78,6 @@ function CareerHeader ({ location }) {
         </div>
         <div className='basis-2/6 flex items-center'>
           <ToggleFilter />
-        </div>
       </div>
     </>)
   }

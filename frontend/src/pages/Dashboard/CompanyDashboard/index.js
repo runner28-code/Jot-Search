@@ -5,6 +5,7 @@ import PageHeader from '../../../components/PageHeader';
 import AdvancedSearch from '../../../features/AdvancedSearch';
 import Stats from '../../../features/Stats';
 import AuthService from '../../../services/auth';
+// Temp comment
 
 export default function CompanyDashboard({userType}) {
   const profile = AuthService.getProfile();
@@ -16,6 +17,7 @@ export default function CompanyDashboard({userType}) {
         icon={gaugeIcon}
       />
       <Stats
+        headerStyles={headerStyles}
         userType={userType}
       />
       <AssistanceCard />

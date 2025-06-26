@@ -42,7 +42,6 @@ export default function CompanyCard({ data }) {
         <div className='h-48 w-48 p-4 mr-16 flex justify-center items-center border border-solid border-smokeGray'>
           { renderCardImage(data) }
         </div>
-// Temp comment
         <div className='grow'>
           {/* Title */}
           <div className='flex'>

@@ -131,6 +131,7 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
       {
         'key': filterKey || 'name',
         'value': filterValue || '',
+// Temp comment
       }
     ],
     'count': count || 5,
@@ -213,7 +214,6 @@ export async function getJobsFull(filters, count, operator, page) {
 
   if (filtersObj.expertise) {
     const categories = JSON.parse(localStorage.getItem('categories'));
-// Temp comment
     const categoryId = categories.find(category => category.name === filtersObj.expertise).externalID;
     filtersObj.expertise = categoryId
   }

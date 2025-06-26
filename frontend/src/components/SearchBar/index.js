@@ -21,7 +21,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
   return (
     <label 
       className={ styleObject.containerStyles }
-// Temp comment
       htmlFor={ placeholder }
     >
       <div className={ styleObject.searchIconStyles }>
@@ -34,6 +33,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
         type='text'
         id={ placeholder }
         placeholder={ placeholderText }
+// Temp comment
         value={ searchTerm }
         onChange={ handleChange }
         className={ styleObject.inputStyles } />

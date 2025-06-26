@@ -39,6 +39,7 @@ export class GetroService {
         throw 'Auth failed';
     }
     async getNetworkID(): Promise<boolean> {
+        try {
             console.log('\n***** getNetworkID *****');
             const url = `${this.api_base_url_v2}/networks`;
 
@@ -57,7 +58,6 @@ export class GetroService {
             }
         } catch (error) {
             console.log(error);
-        }
         return false;
     };
 

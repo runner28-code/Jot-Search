@@ -170,7 +170,6 @@ function renderDesktopLogo(logoUrl, name) {
         alt={`${name} logo`}
       />
     </div>
-// Temp comment
   )
 }
 

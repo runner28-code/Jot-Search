@@ -15,11 +15,11 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
   }
   return (
+    <button
       className={buttonStyles}
       type='submit'>
       {buttonString}
     </button>
-  )
 }
 
 export function renderErrorBlock(errorBlock) {
