@@ -14,6 +14,7 @@ import DashboardPublicMin from '../../components/DashboardPublicMin';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+// Temp comment
 
 export default function Company() {
   const { width } = useWindowDimensions();
@@ -134,6 +135,7 @@ RenderHeader.propTypes = {
 
 function RenderInvite(loggedIn, companyData) {
   const role = AuthService.getUserRole();
+  if( loggedIn && role === 'coordinator' ) {
     return(<>
       <InviteCandidates company={companyData} />
     </>)

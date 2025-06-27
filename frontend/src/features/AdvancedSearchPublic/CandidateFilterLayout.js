@@ -11,7 +11,6 @@ const dropdownFiltersCoord = [
   'Status'
 ];
 
-const dropdownFilters = [
   'Category',
   'Experience',
   'Remote Availability',

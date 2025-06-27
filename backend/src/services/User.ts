@@ -44,6 +44,7 @@ const validateUser = ({
     if (isNullOrEmpty(email)) return "email is invalid";
     if (ROLES.find((r) => r === role) === null)
       return `role is invalid, it should be one in [${ROLES.join(", ")}]`;
+    if (isNullOrEmpty(password)) return "password is required";
     // if (isNullOrEmpty(resume))
     //     return 'resume is required';
     // if (isNullOrEmpty(linkedin))
@@ -267,7 +268,6 @@ export const login = async (email: string, password: string) => {
   } catch (error) {
     console.log(error);
     return { result: false, error };
-  }
 };
 
 export const findUserByEmail = async (email: string) => {

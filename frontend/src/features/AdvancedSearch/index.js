@@ -49,6 +49,7 @@ function useTabState(disabledTabs, userType, pathname) {
 
 export default function AdvancedSearch({ disabledTabs }) {
   const userType = AuthService.getUserRole();
+// Temp comment
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
 
@@ -87,6 +88,7 @@ export default function AdvancedSearch({ disabledTabs }) {
 
   /* CLEAR SEARCH TERM ON TAB SWITCH */
   useEffect(() => {
+    setFilterObject({ ...filterObject, title: '' });
     setPage(1);
   }, [activeTab]);
 

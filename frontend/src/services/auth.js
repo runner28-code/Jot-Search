@@ -48,6 +48,7 @@ class AuthService {
       await this.refreshSavedCandidates();
     }
     window.location.assign('/');
+  }
 
   accountRecovery(email) {
     return email;
@@ -76,7 +77,6 @@ class AuthService {
       localStorage.setItem('savedCompanies', JSON.stringify(companyIDs));
     } catch(e) {
       console.log(e);
-      localStorage.setItem('savedJobs', JSON.stringify([]));
       localStorage.setItem('savedCompanies', JSON.stringify([]));
     }
   }

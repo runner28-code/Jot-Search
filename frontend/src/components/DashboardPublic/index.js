@@ -6,7 +6,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import filterIcon from '../../assets/icons/filter-toggle.svg';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 
 

@@ -72,7 +72,6 @@ const mockJobsData = [
     title: 'Lead Instructor',
     company: 'Paycom', // ! Not in schema yet
     clientCorporationID: 'b0eda365-79b5-4e2b-8674-642f09f56eb2',
-// Temp comment
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
@@ -85,7 +84,6 @@ const mockJobsData = [
 
 export const CareerContext = createContext();
 
-const CareerProvider = ({children}) => {
   const [careers, setCareers] = useState(mockJobsData);
 
   const handleCareersChange = (value) => {

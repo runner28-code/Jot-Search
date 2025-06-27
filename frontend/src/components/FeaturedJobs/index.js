@@ -36,7 +36,6 @@ export default function FeaturedJobs() {
   const { jobs, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(
-// Temp comment
     <section className='py-48 bg-neutral-100 flex flex-col flex-wrap items-center'>
       { renderColorShapes() }
       <h2 className={ width >= 990 ? titleStyles : titleStylesMoible }>Featured Opportunities</h2>
@@ -51,7 +50,6 @@ export default function FeaturedJobs() {
                 <Link
                   to={`${ROUTES.careers}/${career.id}`}
                   key={index}
-                  className={ width >= 990 ? linkStyles : linkStylesMobile }
                 >
                   <div className={ width >= 990 ? cardStyles : cardStylesMobile }>
                     { width >= 990 ? <RenderImage image={career.logo} /> : <RenderImageMobile image={career.logo} />}

@@ -41,6 +41,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             <BsClipboardCheck className='fill-midGrey h-14 w-12' />
             { isApplicationPage ?
               <div>
+// Temp comment
                 <p className='text-midGrey'>Applied</p>
                 <p className='text-midGrey text-xs'>{applicationAge}</p>
               </div>
@@ -67,5 +68,4 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             isFavoriteOverride={isFavoriteOverride} />
       }
     </div>
-// Temp comment
   )

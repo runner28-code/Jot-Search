@@ -215,6 +215,7 @@ function NavFooter() {
         <img
           src={inTulsaFooter}
           className='w-[250px] h-auto mb-12'
+        />
         <Link
           to={ROUTES.signup}
           className={blueLinkStyle}

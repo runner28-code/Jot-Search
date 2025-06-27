@@ -102,6 +102,7 @@ export function formatPhoneNumber(phoneNumberString) {
     const lastFour = phoneNumberString.slice(8, 12);
     return `${internationalCode} (${areaCode}) ${firstThree}-${lastFour}`;
   }
+  return phoneNumberString;
 }
 
 // Candidates might have `experience` property instead which is a legacy property from database we migrated data from

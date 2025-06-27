@@ -114,7 +114,6 @@ export class CandidateController {
       return { message: error, result: false };
     }
   }
-
   @Authorized()
   @Post("/search")
   async searchByFilters(@Body() body: FilterBody) {

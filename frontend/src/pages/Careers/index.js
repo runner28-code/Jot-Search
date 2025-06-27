@@ -11,7 +11,6 @@ import Dashboard from '../../components/DashboardPublic';
 import DashboardCandidate from '../../components/DashboardCandidate';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-import AuthService from '../../services/auth';
 
 export default function Careers() {
   let userType = AuthService.getUserRole();

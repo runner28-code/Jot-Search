@@ -40,6 +40,7 @@ export default function ResetForm({ candidateData, setType }) {
       [name]: value,
     });
   }
+// Temp comment
 
   return (
     <div>

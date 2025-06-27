@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
+import API from '../../services/API';
 import AuthService from '../../services/auth';
 
 export default function Login() {
   const [error, setError] = useState('');
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email, password } = event.target;

@@ -19,6 +19,7 @@ import AuthService from './services/auth';
 function App() {
   let userRole = AuthService.getUserRole();
 
+// Temp comment
   return (
     <div className="App overflow-hidden">
       <NavBar />
@@ -59,7 +60,6 @@ function App() {
               element={<ResetPassword />} />
             <Route
               path={ROUTES.root + '*'}
-// Temp comment
               element={<Auth />} />
             <Route
               path="*"

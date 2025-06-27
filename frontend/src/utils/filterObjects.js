@@ -11,7 +11,6 @@ export const jobFilterObject = {
     ...expertises
   ],
   'On-Site/Remote': [
-// Temp comment
     'Any',
     'On-Site',
     'Remote',
