@@ -23,7 +23,6 @@ export const UpdateJobStatus = ({ job }) => {
           choices={[
             'Active',
             'Inactive',
-// Temp comment
             'Filled',
             'Draft',
             'Closed'
@@ -38,6 +37,5 @@ export const UpdateJobStatus = ({ job }) => {
             setUpdatedJob(res);
           }}
         />
-      </div>
     </div>
   )

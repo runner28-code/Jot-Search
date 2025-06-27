@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
+// Temp comment
 import Dropdown from '../../components/UniversalDropdown';
 import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
@@ -28,7 +29,6 @@ export default function AddUser() {
         src={User}
         alt='User Icon'
         className='w-12 h-12 vw-768:w-24 vw-768:h-24 mr-8'
-// Temp comment
       />
       <span>Add new</span>
       <Dropdown

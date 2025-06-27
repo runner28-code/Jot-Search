@@ -39,7 +39,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     resume: candidateData?.resume || '',
   });
 
-// Temp comment
   function handleChange(name, value) {
     setFormData({
       ...formData,

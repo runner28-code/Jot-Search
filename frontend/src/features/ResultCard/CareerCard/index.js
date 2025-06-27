@@ -21,6 +21,7 @@ export default function CareerCard({ data, active }) {
   const role = AuthService.getUserRole();
 
   const { width } = useWindowDimensions();
+// Temp comment
 
   const dataObj = {
     data,
@@ -71,6 +72,7 @@ CareerCard.propTypes = {
     category: PropTypes.shape({
       id: PropTypes.number,
       name: PropTypes.string
+    })
   }).isRequired,
   index: PropTypes.number,
   active: PropTypes.bool,

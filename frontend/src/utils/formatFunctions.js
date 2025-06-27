@@ -50,7 +50,6 @@ export function convertUserToCandidate(user) {
     description: user.description,
     experience: user.experience?.parseInt() || 1,
     address_address1: user.address1 || '',
-// Temp comment
     address_address2: user.address2 || '',
     address_city: user.city || '',
     address_state: user.state || '',
@@ -103,7 +102,6 @@ export function formatPhoneNumber(phoneNumberString) {
     const lastFour = phoneNumberString.slice(8, 12);
     return `${internationalCode} (${areaCode}) ${firstThree}-${lastFour}`;
   }
-  return phoneNumberString;
 }
 
 // Candidates might have `experience` property instead which is a legacy property from database we migrated data from

@@ -49,6 +49,7 @@ module.exports = {
         charcoal: '#3C3C4B',
         // Utility
         searchGreen: '#62CA71',
+        success: '#2EA248',
         error: '#DE5454',
         warning: '#F4D12E',
         disabledGrey: '#C9C9CE',

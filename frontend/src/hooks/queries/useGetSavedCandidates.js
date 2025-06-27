@@ -1,4 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
+// Temp comment
 import { queryClient } from '../..';
 import { getSavedCandidates } from '../../services/API';
 
@@ -12,3 +13,4 @@ export const useGetSavedCandidates = ({ count, page, userId, enabled = true }) =
     { enabled }
   );
 
+  return { savedCandidates: data, total: data?.total || 0, error, isLoading };

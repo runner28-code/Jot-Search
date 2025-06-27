@@ -134,7 +134,6 @@ export default function RegistrationForm() {
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
   const pronoun = addType === 'candidate' ? 'you' : 'they';
   const buttonString = addType === 'candidate' ? 'Join' : 'Add Candidate';
-
   // Conditional styles
   const userRegisterStyles = 'flex flex-col items-center w-3/4 vw-768:w-64% max-w-140 font-spaceGrotesk vw-768:py-16 vw-1024:py-24'
   const addCandidateStyles = 'flex flex-col items-center w-full font-spaceGrotesk'
@@ -185,6 +184,7 @@ export default function RegistrationForm() {
             value={formObj.roles}
             onChange={handleChange}
             choices={formObj.expertise ? roleChoices[formObj.expertise] : []}
+            error={errors.includes('roles')}
           />
           <FormInput
             type='typeahead'

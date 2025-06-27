@@ -84,7 +84,6 @@ CareerPage.propTypes = {
   active: PropTypes.bool
 }
 
-// Temp comment
 function renderNotification(activeData, careerData) {
   if( activeData ) {
     return (<>

@@ -30,7 +30,6 @@ export default function PendingApplications () {
       filteredJobs: filteredJobsByUnhidden,
       loading: false
     });
-  }, []);
 
   const { width } = useWindowDimensions();
   return(
@@ -69,6 +68,7 @@ export default function PendingApplications () {
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
           </Link>
+        </div>
       </div>
       <div className='pt-24'>
         <Link

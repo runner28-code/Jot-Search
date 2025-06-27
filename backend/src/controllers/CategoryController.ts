@@ -10,7 +10,6 @@ import {
   CategoryByIdResponse,
   CategorySearchByFilterResponse,
   FilterBody,
-} from "../types/Common";
 
 @JsonController("/api/category")
 export class CategoryController {
@@ -23,6 +22,7 @@ export class CategoryController {
         {
           key: "id",
           value: id,
+        },
       ];
 
       const category = await getCategoriesByFilter(_filters, undefined, 1);

@@ -4,7 +4,6 @@ import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 import { skills } from '../../utils/skillHierarchyMap';
 import FormInput from '../../components/FormInput';
-// Temp comment
 
 const dropdownFiltersCoord = [
   'Category',
@@ -22,7 +21,6 @@ const dropdownFilters = [
   'Employment Type',
 ];
 const checkboxFiltersCoord = [
-  'Authorized to work in the US',
   'Open to Relocation',
   'Actively Looking'
 ];

@@ -5,7 +5,6 @@ import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { VscChevronLeft as LeftIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 export default function DashboardPublicMin({type}) {
   const navigate = useNavigate();
@@ -41,7 +40,6 @@ export default function DashboardPublicMin({type}) {
           <button
             className='text-white underline text-lg'
             onClick={() => navigate(-1)}
-          >
           Back
           </button>
         </div>

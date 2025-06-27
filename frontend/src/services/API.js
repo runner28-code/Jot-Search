@@ -64,6 +64,7 @@ export async function getCandidateById(id) {
     params: {
       id
     }
+// Temp comment
   });
   return normalizeData(data.candidate);
 }

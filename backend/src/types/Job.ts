@@ -1,6 +1,6 @@
 import { Datasource } from "@prisma/client";
 
-  id?: string;
+export type Job = {
   externalId?: string;
   description?: string;
   address1?: string;

@@ -53,13 +53,13 @@ function App() {
               element={<Company />} />
             <Route
               path={ROUTES.accountRecovery}
-// Temp comment
               element={<AccountRecovery />} />
             <Route
               path={ROUTES.resetPassword}
               element={<ResetPassword />} />
             <Route
               path={ROUTES.root + '*'}
+// Temp comment
               element={<Auth />} />
             <Route
               path="*"
