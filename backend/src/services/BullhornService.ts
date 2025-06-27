@@ -526,3 +526,4 @@ export class BullhornService {
             "phone2",
             "phone3",
             "preferredContact",
+            "skills",

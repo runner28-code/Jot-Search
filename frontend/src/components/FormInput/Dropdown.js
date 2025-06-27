@@ -37,7 +37,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
   return (
     <div className={ rootClass }>
       {choices.map((choice, index) => {
-        return (<div key={choice + '-container'}>
           <div 
             onClick={() => handleClick(choice)}
             className='cursor-pointer flex items-center justify-between'

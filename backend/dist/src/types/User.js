@@ -8,6 +8,7 @@ exports.IUSER = {
     lastname: "",
     gender: "",
     email: "",
+    password: "",
     role: "",
     address1: "",
     address2: "",
@@ -15,6 +16,7 @@ exports.IUSER = {
     state: "",
     zip: "",
     resume: "",
+// Temp comment
     avatar: "",
     linkedin: "",
     skills: "",

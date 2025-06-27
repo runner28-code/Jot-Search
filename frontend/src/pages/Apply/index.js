@@ -62,7 +62,6 @@ export default function Apply() {
     try {
       const { user_id } = AuthService.getProfile();
       const [careerData, candidateData] = await Promise.all([
-// Temp comment
         getJobById(jobId),
         getCandidateById(user_id),
       ]);

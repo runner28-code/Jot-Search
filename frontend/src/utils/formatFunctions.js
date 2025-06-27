@@ -28,6 +28,7 @@ export function formatCandidateData(candidateData) {
   formattedData.skills = candidateData.skills || 'No Skills Chosen';
   // If Candidate experience is a string, no need to map it
   if ( candidateData.experience && !isNaN(candidateData.experience) ) {
+    formattedData.experience = candidateData.experience.toString();
   }
   // User table has firstname and lastname, Candidate table has firstName and lastName, make sure both exist until we normalize the tables
   if ( candidateData.firstName && !candidateData.firstname ) formattedData.firstname = candidateData.firstName;
@@ -49,6 +50,7 @@ export function convertUserToCandidate(user) {
     description: user.description,
     experience: user.experience?.parseInt() || 1,
     address_address1: user.address1 || '',
+// Temp comment
     address_address2: user.address2 || '',
     address_city: user.city || '',
     address_state: user.state || '',

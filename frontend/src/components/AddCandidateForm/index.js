@@ -185,7 +185,6 @@ export default function RegistrationForm() {
             value={formObj.roles}
             onChange={handleChange}
             choices={formObj.expertise ? roleChoices[formObj.expertise] : []}
-            error={errors.includes('roles')}
           />
           <FormInput
             type='typeahead'

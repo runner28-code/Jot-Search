@@ -6,7 +6,6 @@ import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
 
-
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -28,6 +27,7 @@ function HeaderContent({ companyData }) {
             <FillerIcon />
           </div>
           <div className='basis-4/6'>
+            <h4 className={ headerTitle }>
               {companyData.name}
             </h4>
             <div className='flex items-center'>

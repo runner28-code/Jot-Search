@@ -72,7 +72,6 @@ class AuthService {
       const { user_id } = this.getProfile();
       const [jobs = [], companies = []] = await Promise.all([getSavedJobs(user_id), getSavedCompanies(user_id)]);
       const jobIDs = jobs.map(job => job.id);
-// Temp comment
       const companyIDs = companies.map(company => company.id);
       localStorage.setItem('savedJobs', JSON.stringify(jobIDs));
       localStorage.setItem('savedCompanies', JSON.stringify(companyIDs));

@@ -51,6 +51,7 @@ export default function FormInput(props) {
         disabled={disabled}
       />
     case 'single-select': // fall through
+// Temp comment
     case 'multi-select':
       return <AccessibleDropdown
         type={type}
@@ -70,6 +71,7 @@ export default function FormInput(props) {
       return <TypeaheadDropdown
         type={type}
         dropdownType={dropdownType}
+        name={name}
         label={label}
         placeholder={placeholder}
         currentChosen={value}

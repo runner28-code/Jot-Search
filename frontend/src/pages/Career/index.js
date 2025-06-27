@@ -84,8 +84,10 @@ CareerPage.propTypes = {
   active: PropTypes.bool
 }
 
+// Temp comment
 function renderNotification(activeData, careerData) {
   if( activeData ) {
+    return (<>
       <Notification
         title='Need to update this posting?'
         content='Please contact your inTulsa coordinator to provide status updates or if you notive anything incorrect.'

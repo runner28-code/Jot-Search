@@ -32,6 +32,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           {clientContacts.map((contact, index) => (
             <li
               key={contact.id}
+              className={ 'flex items-center px-s py-s ' + (index < clientContacts.length - 1 ? 'border-b border-grey300' : '') }
               onClick={() => handleContactClick(contact)}
             >
               <input
@@ -50,6 +51,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           className='bg-royalBlue text-white text-lg px-xxl py-xs rounded-xl mt-20'
           onClick={handleSyncClick}
         >
+// Temp comment
           Synch
         </button>
       </>)}

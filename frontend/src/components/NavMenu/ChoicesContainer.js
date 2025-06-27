@@ -1,7 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
-// Temp comment
   candidateChoices,
   companyChoices,
   coordinatorChoices,

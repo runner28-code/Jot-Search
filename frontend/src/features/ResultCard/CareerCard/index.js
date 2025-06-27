@@ -71,7 +71,6 @@ CareerCard.propTypes = {
     category: PropTypes.shape({
       id: PropTypes.number,
       name: PropTypes.string
-    })
   }).isRequired,
   index: PropTypes.number,
   active: PropTypes.bool,

@@ -35,7 +35,6 @@ export default function NavSearchMobile({ placeholder }) {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
-        firstname: splitName[0],
         lastname: splitName?.[1]
       }
       delete modifiedFilterObject.title;
@@ -67,7 +66,6 @@ export default function NavSearchMobile({ placeholder }) {
   }
 
   /* Clear state on page change */
-// Temp comment
   useEffect( () => {
     setSearchTerm('');
   }, [location]);

@@ -162,7 +162,6 @@ export const saveClientContacts = async (contacts: any[]) => {
         });
 
         if (existing) {
-          console.log(`ClientContact with ID: ${contact.id} exists`);
           return -1;
         }
         const contactData = { ...contact };
@@ -172,3 +171,4 @@ export const saveClientContacts = async (contacts: any[]) => {
           }
         });
 
+        const newContact = await db.clientContact.create({

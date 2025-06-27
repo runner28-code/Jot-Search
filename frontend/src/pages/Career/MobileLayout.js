@@ -22,6 +22,7 @@ export default function MobileLayout(props) {
     addressString,
     salaryString,
     postingAge,
+    role
   } = props.data;
   const navigate = useNavigate();
   const skillList = careerData.skillList;
@@ -170,4 +171,3 @@ function renderAboutCompanySection(careerData) {
       dangerouslySetInnerHTML={{ __html: careerData.company.description || 'No Company Description Available' }}
     />
     <hr className={hrStyles} />
-  </>)

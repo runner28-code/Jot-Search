@@ -72,7 +72,6 @@ export default function CandidateCard({ data, disableLink }) {
             </div>
             {/* Years Experience */}
             <div className='w-1/3 flex items-center'>
-              <img
                 src={experienceIcon}
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{experienceString}</p>

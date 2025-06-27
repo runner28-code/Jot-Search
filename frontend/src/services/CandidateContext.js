@@ -14,6 +14,7 @@ const mockCandidateData = [
     occupation: 'Software Engineer',
     companyName: 'Aerovision',
     address_city: 'Tulsa',
+// Temp comment
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
@@ -114,7 +115,6 @@ const CandidateProvider = ({children}) => {
 
   const handleCandidatesChange = (value) => {
     setCandidates(value);
-// Temp comment
   }
 
   const handleCandidateUpdate = (updatedValues) => {

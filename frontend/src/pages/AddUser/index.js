@@ -18,6 +18,7 @@ export default function AddUser() {
   function handleDropdownChange(e) {
     setFormType(e.target.value);
   }
+
   const defaultContainer = 'bg-white border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12';
   const companyContainer = '';
 
@@ -27,6 +28,7 @@ export default function AddUser() {
         src={User}
         alt='User Icon'
         className='w-12 h-12 vw-768:w-24 vw-768:h-24 mr-8'
+// Temp comment
       />
       <span>Add new</span>
       <Dropdown

@@ -19,7 +19,6 @@ export default function InviteCandidates({ job }) {
   });
 
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
-
   const candidateOptions = candidates?.map(candidate => {
     return {
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
@@ -36,7 +35,6 @@ export default function InviteCandidates({ job }) {
 
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
-// Temp comment
       {selected?.map((item) => (
         <span
           key={item.value}

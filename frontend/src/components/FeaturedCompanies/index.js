@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-// Temp comment
 import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';

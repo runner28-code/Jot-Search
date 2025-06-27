@@ -76,6 +76,7 @@ function HeaderContent({ companyData }) {
             />
             { renderCompanyWebsite(companyData.companyURL, headerRowTextStyles) }
           </div>
+// Temp comment
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={Triangle}
