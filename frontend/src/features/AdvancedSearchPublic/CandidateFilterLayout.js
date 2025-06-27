@@ -9,6 +9,7 @@ const dropdownFiltersCoord = [
   'Remote Availability',
   'Employment Type',
   'Status'
+];
 
 const dropdownFilters = [
   'Category',

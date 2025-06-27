@@ -124,12 +124,12 @@ DesktopLayout.propTypes = {
     careerData: PropTypes.object.isRequired,
     categoryString: PropTypes.string.isRequired,
     role: PropTypes.string.isRequired,
-// Temp comment
     addressString: PropTypes.string.isRequired,
     postingAge: PropTypes.string.isRequired,
     salaryString: PropTypes.string.isRequired,
   }).isRequired
 }
+// Temp comment
 
 function renderLogo(logo) {
   if (!logo) {

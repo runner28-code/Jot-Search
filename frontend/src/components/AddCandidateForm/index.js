@@ -203,6 +203,7 @@ export default function RegistrationForm() {
                 key={skill}
                 label={skill}
                 isActive={true}
+                handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}
               />
             ) : <p className='text-royalBlue text-md'>No skills selected</p>}
           </div>

@@ -250,7 +250,6 @@ const job_filter_exclude_keys = [
     "medical",
     "medication",
     "membership",
-    "merchandiser",
     "microbiologist",
     "microbiology",
     "mlt",

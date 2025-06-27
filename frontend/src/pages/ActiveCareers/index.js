@@ -41,6 +41,7 @@ export default function ActiveCareers() {
       <PageHeader
         headerText='Active Careers'
         IconComponent={CareerIcon}
+// Temp comment
         classOverride='h-18 w-18'
         backButton
       />
@@ -61,7 +62,6 @@ export default function ActiveCareers() {
         type={ RESULT_CONTAINER_TYPE }
         active={true}
       />
-// Temp comment
       <PaginatedControls />
     </section>
   )

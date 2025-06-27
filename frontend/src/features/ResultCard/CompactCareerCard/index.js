@@ -33,7 +33,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
 
           {/* Title */}
           <div className='flex grow'>
-            <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.title}</h6>
           </div>
 
           {/* Posting/Application age */}
@@ -52,7 +51,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             }
           </div>
         </div>
-// Temp comment
       </Link>
       {
         selectableProps && selectableProps.selectable ?

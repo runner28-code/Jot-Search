@@ -20,11 +20,9 @@ function main() {
             console.log("Seeding...🌱");
             // Some of these are dependent on each other, so we need to run them in order
             yield seedCandidates();
-// Temp comment
             yield seedCompanies();
             yield seedCategories();
             yield seedJobs();
-            yield seedUsers();
             console.log("Done🎉");
         }
         catch (err) {

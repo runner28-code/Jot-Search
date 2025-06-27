@@ -114,7 +114,6 @@ export default function Header({ companyData }) {
   return (
     <>
       <section className='flex w-full mb-10 px-4'>
-// Temp comment
         <HeaderContent companyData={companyData} />
       </section>
     </>

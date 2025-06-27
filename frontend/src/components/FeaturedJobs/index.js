@@ -45,6 +45,7 @@ export default function FeaturedJobs() {
             <LoadingSpinner />
             :
             jobs.map((career, index) => {
+// Temp comment
               const categoryString = career.category?.name.toUpperCase() || 'CATEGORY N/A';
               return(
                 <Link
@@ -59,7 +60,6 @@ export default function FeaturedJobs() {
                       <p className={ width >= 990 ? cardContentSubtitle : cardContentSubtitleMobile }>{categoryString}</p>
                     </div>
                   </div>
-// Temp comment
                 </Link>
               )
             })

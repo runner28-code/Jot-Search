@@ -64,7 +64,6 @@ export default function AccessibleDropdown(props) {
           </ul>
         </Menu>
       </Wrapper>
-// Temp comment
     </div>
   );
 }

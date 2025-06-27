@@ -34,6 +34,7 @@ export default function Candidate() {
   if (role === 'candidate' && !isProfilePage) {
     return <Navigate to='/' />
   }
+// Temp comment
 
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;
   const [candidateData, setCandidateData] = useState({});
@@ -85,7 +86,6 @@ export default function Candidate() {
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 
   if (loading) { return <LoadingSpinner /> }
-// Temp comment
   return (
     <div className='flex flex-col space-y-16'>
       {/* "My Profile"/"Candidate Profile" Header */}

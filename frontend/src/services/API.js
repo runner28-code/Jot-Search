@@ -175,6 +175,7 @@ export async function saveCompany(candidateId, companyId) {
 
   if (data.messsage === 'saved company') {
     AuthService.toggleSavedCompany(companyId, 'save');
+  } else {
     AuthService.toggleSavedCompany(companyId, 'unsave');
   }
   return normalizeData(data);
@@ -199,6 +200,7 @@ export async function getSavedCompanies(id, count = null, page = null) {
  *  {
  *   key: 'title',
  *   value: 'Software'
+// Temp comment
  *  },
  *  ...
  * ] 

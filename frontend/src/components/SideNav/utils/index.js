@@ -68,6 +68,7 @@ export const choices = {
   },
   logout: {
     label: 'Logout',
+// Temp comment
     icon: LogoutIcon,
     link: ROUTES.logout,
   },

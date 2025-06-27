@@ -70,7 +70,6 @@ export const getAppliedJobsByUser = async (userId: string) => {
           where: {
             userId,
           },
-        },
       }
     });
 

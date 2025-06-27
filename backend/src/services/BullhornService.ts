@@ -535,3 +535,4 @@ export class BullhornService {
           count,
           sort,
         });
+        const url = `${this.restUrl}search/ClientContact?${query}`;

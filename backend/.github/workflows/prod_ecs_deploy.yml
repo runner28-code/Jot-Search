@@ -19,7 +19,6 @@
 #     runs-on: ubuntu-latest
 #     environment: prod
 
-#     steps:
 #     - name: Checkout
 #       uses: actions/checkout@v3
 

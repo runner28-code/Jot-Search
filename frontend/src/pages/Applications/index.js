@@ -38,7 +38,6 @@ export default function Applications() {
     } else {
       setSelectedApplications([...selectedApplications, careerId]);
     }
-// Temp comment
   }
 
   function removeSelectedApplications() {

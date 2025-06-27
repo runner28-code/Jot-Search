@@ -23,6 +23,7 @@ export default function MobileHeader(props) {
           onClick={() => navigate(-1)}
         >
           {'< Back'}
+// Temp comment
         </button>
       )}
       { icon && (
@@ -31,7 +32,6 @@ export default function MobileHeader(props) {
           alt='header icon'
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
-// Temp comment
       )}
       { IconComponent && (
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />
