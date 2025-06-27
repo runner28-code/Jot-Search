@@ -136,7 +136,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
       try {
         // TODO: add bullhorn api update here
       } catch (error) {
-        console.error("Could not update user in bullhorn", error);
       }
     }
 
@@ -268,6 +267,7 @@ export const login = async (email: string, password: string) => {
   } catch (error) {
     console.log(error);
     return { result: false, error };
+  }
 };
 
 export const findUserByEmail = async (email: string) => {
@@ -334,3 +334,7 @@ export const getCompanyDashboardStats = async (days: number) => {
     const companyCandidateInvitesCurrentPeriod = await db.companyCandidateInvites.count({
       where: {
         ...currentPeriodCommonQuery
+      }
+    })
+
+    const companyCandidateInvitesPreviousPeriod = await db.companyCandidateInvites.count({

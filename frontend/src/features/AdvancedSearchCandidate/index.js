@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import ResultContainer from '../../features/ResultContainer';
 import TabContainer from '../../components/TabContainer';
@@ -114,7 +113,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       [filterType]: choice
     });
     setPage(1);
-  }
 
   function handleSearchChange(searchTerm) {
     setFilterObject({ ...filterObject, title: searchTerm });

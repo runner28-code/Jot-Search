@@ -205,3 +205,4 @@ export class CompanyController {
         result: false,
         error,
       };
+    }

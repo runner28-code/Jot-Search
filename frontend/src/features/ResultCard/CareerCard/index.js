@@ -86,7 +86,6 @@ function DesktopCard({ dataObj, active }) {
       tabIndex='0'
       state={ active ? true : false }
     >
-// Temp comment
       {/* Card Image */}
       <div className='flex flex-col'>
         <div className='h-62 w-62 p-4 mr-18 flex justify-center items-center border border-solid border-smokeGray'>
@@ -111,6 +110,7 @@ function DesktopCard({ dataObj, active }) {
               className='h-11 mr-5' />
             <p className='text-textBlack'>{addressString}</p>
           </div>
+// Temp comment
           {/* Remote/Onsite/Hybrid */}
           <div className='w-1/3 flex items-center pr-4'>
             <LaptopIcon

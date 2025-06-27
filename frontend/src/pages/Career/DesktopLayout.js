@@ -38,7 +38,6 @@ export default function DesktopLayout(props) {
           <sub className='text-xxs text-zinc-700 font-roboto'>{careerData.clientCorporation}</sub>
         </div>
         <div className='relative grow'>
-// Temp comment
           {/* Title */}
           <div className='flex gap-xl items-center'>
             <h4 className='text-xl text-charcoal font-spaceGrotesk font-semibold leading-none'>{careerData.title}</h4>
@@ -163,6 +162,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
 
   if (role === 'coordinator') {
     return null;
+// Temp comment
   }
   return (<>
     <section className='bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4'>

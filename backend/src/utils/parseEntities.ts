@@ -68,3 +68,4 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
     workspace: data.willRelocate,
     referredBy: data.referredBy,
     roles: data.skillSet,
+

@@ -527,3 +527,8 @@ export class BullhornService {
             "phone3",
             "preferredContact",
             "skills",
+            "source",
+          ].join(","),
+          query:
+            "isDeleted:0  AND NOT status:Archive NOT clientCorporation.status:Archive",
+          start: offset,

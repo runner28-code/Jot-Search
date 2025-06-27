@@ -111,6 +111,7 @@ export default function RegistrationForm() {
     setFormObj({
       ...formObj,
       firstName: firstName.value,
+      lastName: lastName.value,
       email: email.value,
       linkedin: linkedin.value,
       password: password.value,

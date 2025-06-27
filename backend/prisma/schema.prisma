@@ -159,7 +159,6 @@ model ClientContact {
   middleName         String?
   mobile             String?
   name               String?
-  namePrefix         String?
   nameSuffix         String?
   nickName           String?
   numEmployees       Int?
@@ -429,3 +428,5 @@ model Job {
   bonusPackage       String?
   benefits           String?
   billRateCategoryID Int?
+
+  dateAdded         DateTime?

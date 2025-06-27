@@ -12,7 +12,6 @@ export const saveCompany = async (company: string, candidate: string) => {
           },
         },
       },
-    });
 
     console.log({ existing });
 
@@ -37,3 +36,4 @@ export const saveCompany = async (company: string, candidate: string) => {
         },
         data: {
           savedCompanies: {
+            connect: {

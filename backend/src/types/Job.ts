@@ -11,7 +11,6 @@ export type Job = {
   zip?: string;
   country_id?: string;
   employmentType?: string;
-  title?: string;
   willRelocate?: string;
   yearsRequired?: string;
   status?: string;

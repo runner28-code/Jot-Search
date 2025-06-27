@@ -33,6 +33,7 @@ const ResumePreview = ({ resumeUrl }) => {
         <nav>
           <ul className="flex justify-between">
             <li className="previous">
+// Temp comment
               <button
                 disabled={prevButtonDisabled}
                 onClick={() => setPage(page - 1)}

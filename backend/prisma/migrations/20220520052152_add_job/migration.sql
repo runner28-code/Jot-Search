@@ -12,5 +12,4 @@ CREATE TABLE "Job" (
     "employmentType" TEXT,
     "title" TEXT,
     "willRelocate" TEXT,
-    "yearsRequired" TEXT,
     "status" TEXT,

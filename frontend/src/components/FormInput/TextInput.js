@@ -6,6 +6,6 @@ export default function TextInput({type, name, placeholder, label, value, requir
     if ( name !== 'phone' ) {
       onChange(name, e.target.value);
     } else {
-// Temp comment
       onChange(name, e);
+// Temp comment
     }

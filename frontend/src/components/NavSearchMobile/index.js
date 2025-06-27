@@ -110,7 +110,7 @@ export default function NavSearchMobile({ placeholder }) {
       </div>
       { renderResultsContainer( combinedResults, searchTerm ) }
     </div>
-}
+  )
 
 NavSearchMobile.propTypes = {
   placeholder: PropTypes.string

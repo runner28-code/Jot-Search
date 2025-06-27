@@ -79,6 +79,7 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
 }
 
 export function formatPhoneNumber(phoneNumberString) {
+// Temp comment
   if ( !phoneNumberString ) {
     return 'No Phone Number Provided';
   }

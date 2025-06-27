@@ -124,3 +124,4 @@ export class UserController {
         await sendVerification(user.email, user.companyName || "");
       else await sendVerification(user.email, user.firstname || "");
     } catch (error) {
+      return {

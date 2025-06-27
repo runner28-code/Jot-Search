@@ -230,3 +230,5 @@ export class JobController {
       specialHandlers
     );
     const dataset = DATASET_MAIN;
+    const table = Tables.JOBS;
+

@@ -28,7 +28,6 @@ const ITEMS_PER_PAGE = 5;
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'careers', 'companies'],
   company: ['careers', 'candidates' ],
-  candidate: ['careers', 'companies'],
   guest: ['careers', 'companies'],
 }
 
@@ -49,7 +48,6 @@ function useTabState(disabledTabs, userType, pathname) {
 
 export default function AdvancedSearch({ disabledTabs }) {
   const userType = AuthService.getUserRole();
-// Temp comment
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
 

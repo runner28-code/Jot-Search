@@ -1,5 +1,6 @@
 import axios from 'axios';
 import config from "../config";
+import queryString from 'query-string';
 import { getCompanies, saveCompanies, saveJobs, saveMembers } from '../utils/GetroCrud';
 import { saveBullhornJobs } from '../utils/BullhornCrud';
 import { checkForJobFilter, sleep } from '../utils';
@@ -153,3 +154,5 @@ export class GetroService {
                 const res = await axios.get(url, this.getOptions());
                 await sleep(2000); // https://developers.getro.com/#rate-limit
 
+
+                if (res.status === 200) {

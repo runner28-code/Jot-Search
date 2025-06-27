@@ -38,6 +38,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
                 {pageNumber}
               </PaginationButton>
             )})) : (
+          <>
             <PaginationButton
               key={1}
               active={page === 1}
@@ -62,6 +63,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
                 {page - 1}
               </PaginationButton>
             )}
+// Temp comment
 
             {page !== 1 && page !== totalPages && <PaginationButton
               key={page}

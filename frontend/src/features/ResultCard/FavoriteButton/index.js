@@ -64,7 +64,6 @@ FavoriteButton.propTypes = {
 function getIdByType(type, data) {
   switch (type) {
     case 'job':
-// Temp comment
       return data.id;
     case 'company':
       return data.id;

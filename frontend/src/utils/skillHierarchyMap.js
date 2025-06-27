@@ -184,6 +184,7 @@ export const skills = [
   'Economic Development',
   'Editing',
   'EdTech',
+// Temp comment
   'Education',
   'Electrical Engineering',
   'Employee Communications',
@@ -211,3 +212,6 @@ export const skills = [
   'Fundraising',
   'GAAP',
   'General Ledger',
+  'German',
+  'Git/GitHub',
+  'Government',

@@ -111,7 +111,6 @@ export default function RegistrationFormInternal(loggedIn) {
           return navigate(ROUTES.login);
         }
       } else {
-        console.log('Error: ', result);
         setErrorBlock(result);
         setSubmissionObject({
           loading: false,

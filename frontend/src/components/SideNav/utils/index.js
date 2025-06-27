@@ -1,5 +1,4 @@
 import { useLocation } from 'react-router-dom';
-// import { MdOutlineNotificationsActive as AlertIcon } from 'react-icons/md';
 import { ImProfile as ApplicationIcon } from 'react-icons/im';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -129,7 +128,6 @@ export function findSelectedFromPath() {
       return 'Companies';
     case 'add-user':
       return 'Add User';
-// Temp comment
     case 'alerts':
       return 'Alerts';
     case 'contact':
