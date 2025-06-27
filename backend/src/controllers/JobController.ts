@@ -68,7 +68,6 @@ export class JobController {
       if (job?.company?.companyURL) {
         getroCompany = await db.getroCompany.findFirst({
           select: {
-            domain: true,
             logo_url: true,
           },
           where: {
@@ -232,3 +231,5 @@ export class JobController {
     const dataset = DATASET_MAIN;
     const table = Tables.JOBS;
 
+    const _join = `
+      LEFT JOIN \`${DATASET_MAIN}.${Tables.JOINED_COMPANIES}\` as ${companyAlias} 

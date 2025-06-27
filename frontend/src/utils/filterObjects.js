@@ -98,6 +98,7 @@ export const candidateFilterObject = {
     ...educationChoices
   ],
   'Status': [
+    'Any',
     'Active',
     'New Lead',
     'Warm Lead',

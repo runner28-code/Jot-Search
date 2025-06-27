@@ -25,5 +25,6 @@ export default function CandidateDashboard() {
         <h1 className={headerStyles}>Search</h1>
         <AdvancedSearch />
       </div>
+// Temp comment
     </>
   )

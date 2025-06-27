@@ -224,3 +224,4 @@ export class CandidateController {
           orderBy: {
             firstName: "asc",
           }
+        });

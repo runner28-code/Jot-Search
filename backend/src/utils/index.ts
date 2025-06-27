@@ -9,6 +9,7 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
     try {
         const query = `
             SELECT * FROM \`${datset}.${table}\`
+            WHERE id=${id}
         `;
         const options = {
             query: query,
@@ -63,3 +64,4 @@ export const getDataSource = (id: string) => {
     if (prefix === 'gt') return DataSource.GETRO;
     return DataSource.UNKNOWN;
 }
+

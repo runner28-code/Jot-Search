@@ -34,7 +34,6 @@ export function appendPathToBaseUrl(path) {
 
 /* FETCH FUNCTIONS */
 //* CANDIDATES
-// Temp comment
 export async function getCandidates(filtersArr, count, page) {
   return (await getCandidatesFull(filtersArr, count, page)).candidates;
 }
@@ -176,7 +175,6 @@ export async function saveCompany(candidateId, companyId) {
 
   if (data.messsage === 'saved company') {
     AuthService.toggleSavedCompany(companyId, 'save');
-  } else {
     AuthService.toggleSavedCompany(companyId, 'unsave');
   }
   return normalizeData(data);

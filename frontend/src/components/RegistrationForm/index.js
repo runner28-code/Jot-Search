@@ -16,7 +16,6 @@ import {
   renderButtonOrLoading,
   renderErrorBlock,
   renderHeader
-} from './utils';
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
@@ -131,6 +130,7 @@ export default function RegistrationForm(loggedIn) {
       }, 2000);
     }
   }, [submissionObject.success])
+
   async function handleSubmit(event) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;

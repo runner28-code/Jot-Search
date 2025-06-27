@@ -21,7 +21,6 @@ const ResumePreview = ({ resumeUrl }) => {
   const buttonStylesDisabled = 'w-15 h-15 opacity-50';
   const prevButtonDisabled = page === 1;
   const nextButtonDisabled = page === pdfDocument?.numPages;
-
   return (
     <div className='border border-grey300 border-2 rounded-lg'>
       {!pdfDocument && <LoadingSpinner />}
@@ -33,7 +32,6 @@ const ResumePreview = ({ resumeUrl }) => {
         <nav>
           <ul className="flex justify-between">
             <li className="previous">
-// Temp comment
               <button
                 disabled={prevButtonDisabled}
                 onClick={() => setPage(page - 1)}

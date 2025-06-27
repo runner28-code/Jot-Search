@@ -11,12 +11,12 @@ export type Job = {
   zip?: string;
   country_id?: string;
   employmentType?: string;
+  title?: string;
   willRelocate?: string;
   yearsRequired?: string;
   status?: string;
   skillList?: string;
   locations?: string;
-  companyId?: string;
   interviews?: string;
   onSite?: string;
   salary?: string;

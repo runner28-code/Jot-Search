@@ -74,3 +74,4 @@ const uploadToS3 = async(req: any, res: any) => {
 const getActualRequestDurationInMs = (start: any) => {
   const NS_PER_SEC = 1e9;
   const NS_TO_MS = 1e6;
+  const diff = process.hrtime(start);

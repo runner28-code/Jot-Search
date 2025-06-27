@@ -125,3 +125,4 @@ export class UserController {
       else await sendVerification(user.email, user.firstname || "");
     } catch (error) {
       return {
+        result: false,

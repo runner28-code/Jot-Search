@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import { isObject } from 'lodash';
 
@@ -8,6 +9,7 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
   }));
   const { color, textColor } = additionalStyles;
 
+  return (
     <div
       id='dropdown-wrapper'
       className={'absolute z-10 top-full w-full border-solid border-x border-b rounded-b-lg cursor-pointer border-' + color}>

@@ -61,7 +61,6 @@ export class GetroService {
         }
         return false;
     };
-
     async getCompanies(testMode = false, per_page = 30): Promise<any> {
         console.log('\n***** getCompanies *****');
         let page = 1;
@@ -156,3 +155,4 @@ export class GetroService {
 
 
                 if (res.status === 200) {
+                    let result = [];

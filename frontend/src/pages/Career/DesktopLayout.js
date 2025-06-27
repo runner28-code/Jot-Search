@@ -124,6 +124,7 @@ DesktopLayout.propTypes = {
     careerData: PropTypes.object.isRequired,
     categoryString: PropTypes.string.isRequired,
     role: PropTypes.string.isRequired,
+// Temp comment
     addressString: PropTypes.string.isRequired,
     postingAge: PropTypes.string.isRequired,
     salaryString: PropTypes.string.isRequired,
@@ -162,7 +163,6 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
 
   if (role === 'coordinator') {
     return null;
-// Temp comment
   }
   return (<>
     <section className='bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4'>

@@ -5,6 +5,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import featuredIcon from '../../assets/icons/pyramid.svg';
+// Temp comment
 import { getAppliedJobs } from '../../services/API';
 import useWindowDimensions from '../../hooks/windowDimensions';
 

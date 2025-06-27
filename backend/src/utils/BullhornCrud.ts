@@ -175,3 +175,4 @@ export const saveClientContacts = async (contacts: any[]) => {
         const newContact = await db.clientContact.create({
           data: contactData,
         });
+        console.log(`Saved ClientContact with ID = ${contact.id} successfully`);

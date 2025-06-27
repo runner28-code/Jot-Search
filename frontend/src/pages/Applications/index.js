@@ -38,6 +38,7 @@ export default function Applications() {
     } else {
       setSelectedApplications([...selectedApplications, careerId]);
     }
+// Temp comment
   }
 
   function removeSelectedApplications() {
@@ -49,7 +50,6 @@ export default function Applications() {
       ...appliedJobsObject,
       filteredJobs: appliedJobsObject.jobs.filter(job => !newHiddenApplications.includes(job.id))
     });
-// Temp comment
   }
 
   const { width } = useWindowDimensions();

@@ -79,7 +79,6 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
 }
 
 export function formatPhoneNumber(phoneNumberString) {
-// Temp comment
   if ( !phoneNumberString ) {
     return 'No Phone Number Provided';
   }
@@ -105,7 +104,6 @@ export function formatPhoneNumber(phoneNumberString) {
   }
   return phoneNumberString;
 }
-
 // Candidates might have `experience` property instead which is a legacy property from database we migrated data from
 export function formatYearsExperience(experienceYears, experience) {
   if ( experienceYears && experienceYears.length > 1 ) { // Already formatted correctly

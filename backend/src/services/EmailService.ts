@@ -64,3 +64,4 @@ export const sendCandidatesToEmployers = async (candidates: string[], employers_
   }
 }
 
+export const sendNewUserNotification = async (to: string, name: string) => {

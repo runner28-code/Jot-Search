@@ -62,6 +62,7 @@ export default function Footer() {
         className='flex flex-col'
       >
         { width >= 990 ? <SocialStyles /> : <SocialStylesMobile />}
+// Temp comment
         {/* Copyright / Privacy Policy / TOS */}
         <div className='flex justify-center items-center bg-legal-bg h-28'>
           {/* TODO: Change anchor tag links to correct Privacy Policy and TOS links */}
@@ -116,6 +117,7 @@ export default function Footer() {
         />
       </a>
       <a href={ROUTES.instagram}>
+        <img
           src={instagram}
           className={socialIconStyle}
         />

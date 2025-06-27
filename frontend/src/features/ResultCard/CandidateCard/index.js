@@ -59,7 +59,6 @@ export default function CandidateCard({ data, disableLink }) {
               <img
                 src={linkedinIcon}
                 className='h-8 mr-5' />
-              <span className='text-charcoal'>
                 LinkedIn
               </span>
             </div>

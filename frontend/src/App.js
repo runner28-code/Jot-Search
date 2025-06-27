@@ -59,6 +59,7 @@ function App() {
               element={<ResetPassword />} />
             <Route
               path={ROUTES.root + '*'}
+              element={<Auth />} />
             <Route
               path="*"
               element={<Navigate to={ROUTES.landingPage} />}
