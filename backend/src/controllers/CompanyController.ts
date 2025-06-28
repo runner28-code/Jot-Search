@@ -202,7 +202,6 @@ export class CompanyController {
       }
     } catch (error) {
       return {
-        result: false,
         error,
       };
     }

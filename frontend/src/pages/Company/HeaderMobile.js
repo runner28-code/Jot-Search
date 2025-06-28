@@ -28,7 +28,6 @@ function HeaderContent({ companyData }) {
             <FillerIcon />
           </div>
           <div className='basis-4/6'>
-// Temp comment
             <h4 className={ headerTitle }>
               {companyData.name}
             </h4>
@@ -54,7 +53,6 @@ function HeaderContent({ companyData }) {
         </div>
 
         <FavoriteButton
-          type={'company'}
           data={companyData} />
       </div>
     </>

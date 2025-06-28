@@ -1,2 +1,2 @@
 -- CreateTable
-    "id" TEXT NOT NULL,
+CREATE TABLE "User" (

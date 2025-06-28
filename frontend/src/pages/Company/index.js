@@ -61,6 +61,7 @@ export default function Company() {
         loggedIn={loggedIn}
       />
       <div 
+// Temp comment
         className={ width <= 990 ? 'px-[5%]'
           : !loggedIn ? 'px-[15%]' 
             : ''}
@@ -104,6 +105,7 @@ export default function Company() {
           >
           Back
           </button>
+        </div>
         <RenderInvite
           loggedIn={loggedIn}
           companyData={companyData}

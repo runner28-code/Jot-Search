@@ -5,6 +5,7 @@ class AuthService {
   getProfile() {
     if ( !this.loggedIn() ) {
       return null;
+    }
     return decode(this.getToken());
   }
 
@@ -50,7 +51,6 @@ class AuthService {
   }
 
   accountRecovery(email) {
-    return email;
   }
 
   logout() {

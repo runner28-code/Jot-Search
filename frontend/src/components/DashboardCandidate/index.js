@@ -11,7 +11,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function DashboardCandidate({togglePassState, toggle}) {
-// Temp comment
   const { width } = useWindowDimensions();
 
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
@@ -30,6 +29,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
           >
+// Temp comment
             <CareerIcon />
             <p className='ml-4'>Careers</p>
           </Link>

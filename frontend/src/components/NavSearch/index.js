@@ -5,7 +5,6 @@ import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
-import searchWhite from '../../assets/images/search-white.webp';
 import searchGray from '../../assets/images/search-gray.svg';
 
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
@@ -28,7 +27,6 @@ export default function NavSearch({ placeholder }) {
   const [ searchTerm, setSearchTerm ] = useState('');
   const [forceHidden, setForceHidden] = useState(false);
   const userType = AuthService.getUserRole();
-// Temp comment
 
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {

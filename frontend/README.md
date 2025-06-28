@@ -3,6 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Style Guide
+- TailwindCSS for styling
     - Base `rem` is set to 10px for easy calculation
     - Custom styles, breakpoints, etc are stored in `tailwind.config.js`
     - Declare variables for reused styles
@@ -18,7 +19,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
 
 ### `npm start`
 
@@ -44,3 +44,4 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run lint`
+

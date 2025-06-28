@@ -173,7 +173,6 @@ export default function Footer() {
               />
             </a>
           </div>
-        </div>
       </div>
       {/* Copyright / Privacy Policy / TOS */}
       <div className='flex justify-center items-center bg-legal-bg h-28'>

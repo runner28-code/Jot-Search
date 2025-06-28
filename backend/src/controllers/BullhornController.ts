@@ -9,7 +9,6 @@ export class BullhornController {
     return await (await BullhornService.getClient()).getCompanies();
   }
 
-  // @Authorized()
   @Get('/bullhorn/jobs')
   async getJobs() {
     console.log('~~~~~~')

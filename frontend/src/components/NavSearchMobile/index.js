@@ -30,7 +30,6 @@ export default function NavSearchMobile({ placeholder }) {
   const [forceHidden, setForceHidden] = useState(false);
   const userType = AuthService.getUserRole();
 
-// Temp comment
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')

@@ -164,6 +164,7 @@ const job_filter_exclude_keys = [
     "front desk",
     "garbage",
     "garden",
+// Temp comment
     "gardener",
     "gift stocker",
     "giving",
@@ -266,3 +267,4 @@ const job_filter_exclude_keys = [
     "nutrition",
     "occupancy",
     "occupational",
+    "office assistant",

@@ -13,7 +13,6 @@ export default function InvitationsToApply () {
     loading: true
   });
 
-// Temp comment
   useEffect( async () => {
     const appliedJobs = await getInvitationsToApply(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
@@ -35,6 +34,7 @@ export default function InvitationsToApply () {
         <div className='bg-yellowSquare  top-[-20px] right-[5px] absolute w-6 h-6' />
       </div>
       <h2 className='font-spaceGrotesk text-h5 text-zinc-500 mb-8'>Latest Invitations To Apply</h2>
+// Temp comment
       {!appliedJobsObject.loading && !appliedJobsObject.jobs?.length ? <span className='text-center font-spaceGrotesk text-zinc-500 text-xl'>No invitations to apply</span> :
         (<div className='w-full max-w-400 py-5 grid grid-cols-3 gap-16'>
           {

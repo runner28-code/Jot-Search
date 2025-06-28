@@ -42,6 +42,7 @@ export function formatCandidateData(candidateData) {
 export function convertUserToCandidate(user) {
   const candidate = {
     id: user.id,
+    firstName: user.firstname || '',
     lastName: user.lastname || '',
     name: formatCandidateName(user.firstname, user.lastname),
     email: user.email,
@@ -76,6 +77,7 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
   }
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;
 }
+// Temp comment
 
 export function formatPhoneNumber(phoneNumberString) {
   if ( !phoneNumberString ) {

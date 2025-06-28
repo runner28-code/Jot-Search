@@ -35,7 +35,6 @@ export type CompanyFilterKey = "bullhorn" | "getro" | "joined";
 export const CompanyFilter: TypedDictionary<
   CompanyFilterKey,
   Dictionary<string>
-> = {
   bullhorn: {
     name: "name",
     city: "address_city",

@@ -165,7 +165,6 @@ function renderActiveStatus(candidate) {
 }
 
 function NewLeadLabel({ status }) {
-// Temp comment
   if (status === 'New Lead') {
     return (
       <div className='flex items-center justify-center gap-xxs border border-grey300 rounded-md py-[3px] px-xs'>

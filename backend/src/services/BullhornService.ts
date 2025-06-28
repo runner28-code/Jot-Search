@@ -536,3 +536,4 @@ export class BullhornService {
           sort,
         });
         const url = `${this.restUrl}search/ClientContact?${query}`;
+        const res = await axios.get(url, {

@@ -189,7 +189,6 @@ export default function RegistrationForm() {
           />
           <FormInput
             type='typeahead'
-// Temp comment
             dropdownType='tags'
             name='skills'
             placeholder='Please select at least 3 skills' 
@@ -264,6 +263,7 @@ export default function RegistrationForm() {
             type='password'
             name='password'
             placeholder='Password' 
+// Temp comment
             value={formObj.password}
             onChange={handleChange}
             error={errors.includes('password')}

@@ -62,7 +62,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
 export async function getCandidateById(id) {
   const { data } = await API.get(ROUTES.APIcandidates, {
     params: {
-      id
     }
   });
   return normalizeData(data.candidate);
@@ -110,7 +109,6 @@ export async function addUser(userObject) {
     return err;
   }
 }
-// Temp comment
 
 export async function updateJob({ id, status, featured }) {
   const { data } = await API.patch(ROUTES.APIjobBase, {

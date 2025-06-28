@@ -12,7 +12,6 @@ import PersonalInfo from './PersonalInfo';
 import PasswordReset from './PasswordReset';
 import { useCandidateContext } from '../../services/CandidateContext';
 import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
-// Temp comment
 import InviteToCareer from '../Career/InviteToCareer';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -81,7 +80,6 @@ export default function Candidate() {
     if (updateResponse.result === false) {
       console.log('Error updating candidate: ', updateResponse.error);
     }
-  }
 
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 

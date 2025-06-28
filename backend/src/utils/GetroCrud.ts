@@ -65,3 +65,4 @@ export const saveMembers = async (members: any[]) => {
 									}
 								});
 				
+								const newJob = await db.getroMember.create({

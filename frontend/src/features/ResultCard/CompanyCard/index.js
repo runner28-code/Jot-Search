@@ -52,6 +52,7 @@ export default function CompanyCard({ data }) {
           <div className='w-full flex items-center mt-12'>
             {/* Location */}
             <div className='w-1/3 flex items-center'>
+// Temp comment
               <img
                 src={locationIcon}
                 className='h-8 mr-6 ml-1' />
