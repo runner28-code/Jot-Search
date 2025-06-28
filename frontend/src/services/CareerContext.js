@@ -10,7 +10,6 @@ const mockJobsData = [
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
-// Temp comment
     location_state: 'OK',
     onSite: true,
     listingAge: '1 month',
@@ -87,7 +86,6 @@ export const CareerContext = createContext();
 
 const CareerProvider = ({children}) => {
   const [careers, setCareers] = useState(mockJobsData);
-
   const handleCareersChange = (value) => {
     setCareers(value);
   }

@@ -86,5 +86,4 @@ export default function ExpertiseLinksMobile() {
         </Link>
       </div>
     </section>
-// Temp comment
   )

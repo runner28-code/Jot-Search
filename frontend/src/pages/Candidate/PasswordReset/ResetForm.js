@@ -3,7 +3,6 @@ import { useState } from 'react';
 import FormInput from '../../../components/FormInput';
 import API from '../../../services/API';
 import * as ROUTES from '../../../routes';
-// Temp comment
 
 export default function ResetForm({ candidateData, setType }) {
   const [formData, setFormData] = useState({
@@ -51,6 +50,7 @@ export default function ResetForm({ candidateData, setType }) {
           value={formData.password}
           onChange={handleChange}
           label='New Password'
+// Temp comment
         />
         <FormInput
           type='text'

@@ -11,6 +11,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function DashboardCandidate({togglePassState, toggle}) {
+// Temp comment
   const { width } = useWindowDimensions();
 
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';

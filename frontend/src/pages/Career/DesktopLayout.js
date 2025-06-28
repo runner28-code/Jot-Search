@@ -129,7 +129,6 @@ DesktopLayout.propTypes = {
     salaryString: PropTypes.string.isRequired,
   }).isRequired
 }
-// Temp comment
 
 function renderLogo(logo) {
   if (!logo) {

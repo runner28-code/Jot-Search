@@ -399,7 +399,6 @@ model Job {
 
   invitedCandidates CandidateJobInvites[]
 
-  featured            Boolean?   @default(false)
 
   source              String?
   payRate             Int?

@@ -54,6 +54,7 @@ export const defaultJobFilterState = {
   status: ACTIVE_STATUSES,
   ...convertedJobFilters
 };
+
 /* CANDIDATE FILTER UTILS */
 export const candidateFilterObject = {
   'Category': [

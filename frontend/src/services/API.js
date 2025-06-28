@@ -110,6 +110,7 @@ export async function addUser(userObject) {
     return err;
   }
 }
+// Temp comment
 
 export async function updateJob({ id, status, featured }) {
   const { data } = await API.patch(ROUTES.APIjobBase, {
@@ -200,7 +201,6 @@ export async function getSavedCompanies(id, count = null, page = null) {
  *  {
  *   key: 'title',
  *   value: 'Software'
-// Temp comment
  *  },
  *  ...
  * ] 

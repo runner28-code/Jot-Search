@@ -33,7 +33,6 @@ export const saveApplication = async (job: string, candidate: string) => {
       };
     } else {
       console.log("already applied");
-      return {
         result: false,
         message: "already applied",
       };
@@ -62,6 +61,7 @@ export const saveJob = async (job: string, candidate: string) => {
         },
       },
     });
+    if (!existing) {
       await db.user.update({
         where: {
           id: candidate,

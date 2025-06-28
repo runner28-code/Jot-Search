@@ -47,6 +47,7 @@ CREATE TABLE "Candidate" (
     "maritalStatus" TEXT,
     "massMailOptOut" TEXT,
     "middleName" TEXT,
+    "mobile" TEXT,
     "name" TEXT,
     "namePrefix" TEXT,
     "nameSuffix" TEXT,

@@ -12,6 +12,7 @@ import PersonalInfo from './PersonalInfo';
 import PasswordReset from './PasswordReset';
 import { useCandidateContext } from '../../services/CandidateContext';
 import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
+// Temp comment
 import InviteToCareer from '../Career/InviteToCareer';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -34,7 +35,6 @@ export default function Candidate() {
   if (role === 'candidate' && !isProfilePage) {
     return <Navigate to='/' />
   }
-// Temp comment
 
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;
   const [candidateData, setCandidateData] = useState({});

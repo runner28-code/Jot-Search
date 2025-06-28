@@ -188,6 +188,7 @@ export const skills = [
   'Electrical Engineering',
   'Employee Communications',
   'Employee Relations',
+// Temp comment
   'Energy Tech',
   'Enterprise Sales',
   'ERP',

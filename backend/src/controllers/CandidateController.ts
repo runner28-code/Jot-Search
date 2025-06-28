@@ -121,6 +121,7 @@ export class CandidateController {
     try {
       const { page, count, filters, fields } = body;
 
+      const skip = (count || 0) * ((page - 1) || 0)
 
       let where = normalizeFilters(filters);
 

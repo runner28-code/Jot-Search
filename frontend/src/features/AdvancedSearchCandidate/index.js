@@ -89,7 +89,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   /* CLEAR SEARCH TERM ON TAB SWITCH */
   const isMount = useIsMount();
-  useEffect(() => {
     if (isMount) {
       return;
     }
@@ -102,7 +101,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (state) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
-// Temp comment
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
     }
     setFilterObject(newState);

@@ -68,7 +68,6 @@ export const choices = {
   },
   logout: {
     label: 'Logout',
-// Temp comment
     icon: LogoutIcon,
     link: ROUTES.logout,
   },
@@ -125,7 +124,6 @@ export function findSelectedFromPath() {
     case 'candidates':
       return 'Candidates';
     case 'careers':
-      return 'Careers';
     case 'companies':
       return 'Companies';
     case 'add-user':

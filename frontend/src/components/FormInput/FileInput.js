@@ -12,6 +12,7 @@ export default function FileInput({type, name, label, placeholder, required, val
   }
 
   return (
+    <div>
       { renderLabel( name, label, value, placeholder, required, handleKeyDown, baseStyles ) }
       <input 
         className={`hidden ${disabled ? 'disabled cursor-not-allowed' : ''}`}
@@ -20,6 +21,7 @@ export default function FileInput({type, name, label, placeholder, required, val
         name={name}
         onChange={(e) => onChange(name, e.target.files[0])}
         ref={inputRef}
+// Temp comment
         disabled={disabled}
       />
     </div>

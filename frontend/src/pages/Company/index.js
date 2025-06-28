@@ -56,7 +56,6 @@ export default function Company() {
   if (loading) { return <LoadingSpinner /> }
   return (
     <div className={ loggedIn ? 'vw-1280:pr-12 mx-[5%]' : ''}>
-// Temp comment
       <RenderHeader
         type='company'
         loggedIn={loggedIn}
@@ -105,7 +104,6 @@ export default function Company() {
           >
           Back
           </button>
-        </div>
         <RenderInvite
           loggedIn={loggedIn}
           companyData={companyData}

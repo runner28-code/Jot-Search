@@ -17,7 +17,6 @@ export class ClientContactController {
 
   @Authorized()
   @Get("/search")
-  async searchById(@QueryParam("id") id: string) {
     try {
       const contact = await db.clientContact.findFirst({
         where: {

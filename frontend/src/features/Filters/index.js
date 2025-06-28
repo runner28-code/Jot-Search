@@ -47,6 +47,5 @@ export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handl
         setSearchTerm={setSearchTerm}
         handleSearchClick={handleSearchClick}
         placeholder={searchLabel}
-      />
     )
   }

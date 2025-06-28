@@ -117,6 +117,7 @@ CompanyCard.propTypes = dataShape;
 
 function renderCardImage(data) {
   if ( !data.logo ) {
+    return <CareerIcon className='h-28 w-32 fill-royalBlue' />
   } else {
     return <img
       className=''

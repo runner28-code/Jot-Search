@@ -27,6 +27,7 @@ const stylesObject = {
   hrStyles
 }
 
+// Temp comment
 export default function ChoicesContainer(props) {
   const {
     userRole,
@@ -37,6 +38,7 @@ export default function ChoicesContainer(props) {
     { userRole === 'guest' ? 
       <LoggedOutButtons 
         handleOptionClick={handleOptionClick}
+        stylesObject={stylesObject} /> 
       :
       null
     }

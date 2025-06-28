@@ -28,9 +28,9 @@ function HeaderContent({ companyData }) {
             <FillerIcon />
           </div>
           <div className='basis-4/6'>
+// Temp comment
             <h4 className={ headerTitle }>
               {companyData.name}
-// Temp comment
             </h4>
             <div className='flex items-center'>
               <div className={ headerGroupStyles }>

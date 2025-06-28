@@ -49,7 +49,6 @@ export default function TypeaheadDropdown(props) {
   function handleInputChange(event) {
     setInputValue(event.target.value);
   }
-
   function handleListClick() {
     setDropdownOpen(dropdownOpen => !dropdownOpen);
   }

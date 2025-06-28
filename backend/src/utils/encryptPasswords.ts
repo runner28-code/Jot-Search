@@ -5,6 +5,7 @@
 import { encryptPassword } from "./password";
 import { User, USERKEYS } from "../types/User";
 import { BigQueryService } from "../services/BigQueryService";
+import { DATASET_MAIN, Tables } from "../types/Common";
 
 (async () => {
     try {
@@ -16,7 +17,6 @@ import { BigQueryService } from "../services/BigQueryService";
         `;
         const options = {
           query: query,
-          location: "US",
         };
         const [job] = await BigQueryService.getClient().createQueryJob(options);
         const [users] = await job.getQueryResults();

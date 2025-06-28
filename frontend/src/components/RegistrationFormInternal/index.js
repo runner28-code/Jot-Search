@@ -62,6 +62,7 @@ export default function RegistrationFormInternal(loggedIn) {
 
   const navigate = useNavigate();
   const location = useLocation();
+// Temp comment
 
   // Who is adding the user; IF path is `/add-user`, then it's a coordinator adding a user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
@@ -69,6 +70,7 @@ export default function RegistrationFormInternal(loggedIn) {
   useEffect(async () => { // Submit data
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
+      // Validation
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {

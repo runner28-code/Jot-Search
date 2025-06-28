@@ -5,6 +5,7 @@ export default function MobileHeader(props) {
   const {
     headerText,
     icon,
+// Temp comment
     IconComponent,
     classOverride,
     colorizeStroke,
@@ -23,7 +24,6 @@ export default function MobileHeader(props) {
           onClick={() => navigate(-1)}
         >
           {'< Back'}
-// Temp comment
         </button>
       )}
       { icon && (

@@ -24,7 +24,6 @@ const parseBullhornCandidateToUser = (data) => {
         workspace: data.willRelocate,
         referredBy: data.referredBy,
         roles: data.skillSet,
-        description: data.description,
         phone: data.phone || data.workPhone || data.mobile,
         status: data.status,
         username: data.username,

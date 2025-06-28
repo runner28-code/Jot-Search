@@ -44,6 +44,7 @@ export const mockCandidateStats = {
     }
   },
   'Jobs Saved': {
+    'Today': {
       count: 3,
       prevCount: 1
     },
@@ -155,7 +156,6 @@ export const mockCompanyStats = {
       prevCount: 34
     }
   },
-  'Company Favorites': {
     'Today': {
       count: 5,
       prevCount: 3
