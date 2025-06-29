@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import searchIcon from '../../assets/images/search-icon.svg';
 
 export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchClick, placeholder, additionalClasses }) {
@@ -27,6 +28,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         className={ inputStyles }
         placeholder={ placeholderString }
         value={ searchTerm }
+// Temp comment
         onChange={ handleChange }
       />
       <button

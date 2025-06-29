@@ -29,6 +29,7 @@ export default function ResetButton({ candidateData, setType }) {
       </button>
     )
   }
+  return (
     <button
       className='h-20 w-150 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
       onClick={handleSubmit}

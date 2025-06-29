@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../routes';
 // import FormInput from '../../components/FormInput';
 
@@ -19,6 +20,5 @@ export default function ResetPassword() {
   const handlePassword = (event) => {
     setPassword(event.target.value);
   }
-// Temp comment
   const handleConfirmPassword = (event) => {
     setConfirmPassword(event.target.value);

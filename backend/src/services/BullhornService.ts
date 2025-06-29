@@ -395,6 +395,7 @@ export class BullhornService {
           offset += count;
           repeatErr = 0;
         } else if (res.status === 404) {
+          break;
         } else {
           console.log(url);
           throw "error";

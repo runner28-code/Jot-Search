@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
+// Temp comment
 import JobResults from './JobResults';
 import searchWhite from '../../assets/images/search-white.webp';
 import searchGray from '../../assets/images/search-gray.svg';

@@ -112,6 +112,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       ...filterObject,
       [filterType]: choice
     });
+    setPage(1);
   }
 
   function handleSearchChange(searchTerm) {

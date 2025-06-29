@@ -8,7 +8,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 
 
 // Icons
-// Temp comment
 import PlacePin from '../../assets/icons/placepin.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding } from 'react-icons/bs';
@@ -68,7 +67,6 @@ HeaderContent.propTypes = {
     logo: PropTypes.string,
     businessSectorList: PropTypes.string,
     linkedin_url: PropTypes.string,
-    companyURL: PropTypes.string,
     industryList: PropTypes.array,
     address: PropTypes.string,
     employeeString: PropTypes.string,

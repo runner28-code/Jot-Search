@@ -121,6 +121,7 @@ export class JobController {
       const { filters, fields, page, count, datasource } = body;
 
       const datasourceToEnum: Dictionary<Datasource> = {
+        main: Datasource.main,
         bullhorn: Datasource.bullhorn,
         getro: Datasource.getro,
       };

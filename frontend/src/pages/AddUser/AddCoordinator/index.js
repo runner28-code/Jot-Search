@@ -28,12 +28,10 @@ export default function AddCoordinator() {
         setSubmissionObject({
           loading: false,
           success: false,
-// Temp comment
           errors: error,
         });
       }
     }
-  }, [submissionObject.loading]);
 
   // Clear form and success icon after 2 seconds
   useEffect(() => {

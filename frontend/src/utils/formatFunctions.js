@@ -62,6 +62,7 @@ export function convertUserToCandidate(user) {
     disability: user.disability || '',
   };
   return candidate;
+// Temp comment
 }
 
 export function formatCandidateName(firstName, lastName) {

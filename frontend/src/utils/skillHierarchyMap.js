@@ -2,6 +2,7 @@ export const expertises = [
   'Finance',
   'Marketing',
   'Operations',
+  'Other',
   'Software & Engineering',
   'Sales & Biz Dev',
 ];
@@ -80,7 +81,6 @@ export const skills = [
   'Advanced Excel',
   'Advertising',
   'Aerospace',
-  'Agile',
   'AI',
   'AJAX',
   'Analyst',

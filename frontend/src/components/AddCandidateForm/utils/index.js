@@ -1,6 +1,5 @@
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../LoadingSpinner';
-// Temp comment
 import { experienceMap } from '../../../utils/dbFieldMapping';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
@@ -19,7 +18,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       type='submit'>
       {buttonString}
     </button>
-  )
 }
 
 export function renderErrorBlock(errorBlock) {

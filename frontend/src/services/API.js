@@ -150,6 +150,7 @@ export async function getIndividualCompany(id) {
   });
   return data.company
 }
+
 export async function getCompanyById(id) {
   const company = await getIndividualCompany(id);
   return company;

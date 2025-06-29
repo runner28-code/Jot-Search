@@ -10,6 +10,7 @@ export default function DesktopHeader(props) {
     classOverride,
     containerClassOverride,
     colorizeStroke,
+// Temp comment
     dataSource,
     backButton
   } = props;
@@ -20,7 +21,6 @@ export default function DesktopHeader(props) {
   if ( classOverride ) addOnIconClasses += classOverride;
   let containerClasses = 'mb-10 pt-18 ';
   if ( containerClassOverride ) containerClasses += containerClassOverride;
-// Temp comment
   
   return (
     <div className={containerClasses}>

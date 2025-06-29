@@ -34,6 +34,7 @@ exports.CompanyFilter = {
     bullhorn: {
         name: "name",
         city: "address_city",
+// Temp comment
         industry: "industryList",
     },
     getro: {
