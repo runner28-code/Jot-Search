@@ -38,7 +38,6 @@ export enum DataSource {
 export type DataSources = "bullhorn" | "getro" | "main" | "all";
 
 export type Operator = "AND" | "OR";
-
 export type FilterOption = {
   key: string;
   value: string;
@@ -76,3 +75,4 @@ export type JobSearchByFilterResponse =
       jobs?: Job[];
       total?: number;
       message?: any;
+    }

@@ -5,6 +5,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import locationIcon from '../../assets/icons/placepin.svg';
 import clockIcon from '../../assets/icons/clock.svg';
+import postingAgeIcon from '../../assets/icons/calendar.svg';
 import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { apply as applyRoute } from '../../routes';
@@ -126,6 +127,7 @@ export default function MobileLayout(props) {
       </div>
     </section>
     <OtherCareers
+// Temp comment
       companyId={careerData.companyId}
       companyName={careerData.clientCorporation}
       currentCareerId={careerData.externalId}

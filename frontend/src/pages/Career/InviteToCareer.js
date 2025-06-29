@@ -45,3 +45,4 @@ export default function InviteToCareer({ candidate }) {
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
       ))}
+    </div>)

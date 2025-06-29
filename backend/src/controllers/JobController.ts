@@ -236,3 +236,5 @@ export class JobController {
       LEFT JOIN \`${DATASET_MAIN}.${Tables.JOINED_COMPANIES}\` as ${companyAlias} 
       ON REPLACE(${alias}.companyId, "bh-", "bl-")  = ${companyAlias}.bh_id
       `;
+
+    return await BigQueryService.selectQuery(

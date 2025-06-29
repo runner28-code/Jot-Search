@@ -269,3 +269,6 @@ const job_filter_exclude_keys = [
   "on-call",
   "optometrist",
   "ot",
+  "painter",
+  "paralegal",
+  "paramedic",

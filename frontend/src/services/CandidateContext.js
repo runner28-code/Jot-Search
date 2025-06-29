@@ -111,7 +111,6 @@ const CandidateProvider = ({children}) => {
       })
     }
   }, []);
-
   const handleCandidatesChange = (value) => {
     setCandidates(value);
   }

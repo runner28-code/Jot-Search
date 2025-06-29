@@ -344,3 +344,6 @@ export const getCompanyDashboardStats = async (days: number) => {
       }
     })
 
+    const companyCandidateInvitesCompare = (companyCandidateInvitesCurrentPeriod - companyCandidateInvitesPreviousPeriod) * 100 / companyCandidateInvitesCurrentPeriod
+
+    const candidateJobInvitesCurrentPeriod = await db.candidateJobInvites.count({

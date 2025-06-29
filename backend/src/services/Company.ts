@@ -8,7 +8,6 @@ export const saveCompany = async (company: string, candidate: string) => {
         id: candidate,
         savedCompanies: {
           some: {
-            id: company,
           },
         },
       },
@@ -38,3 +37,4 @@ export const saveCompany = async (company: string, candidate: string) => {
         data: {
           savedCompanies: {
             connect: {
+              id: company,

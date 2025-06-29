@@ -81,7 +81,6 @@ export default function ExpertiseLinksMobile() {
             src={financeIcon}
             alt='Finance Icon'
             className={iconStyles}
-// Temp comment
           />
           <span className={textStyles}>Finance</span>
         </Link>

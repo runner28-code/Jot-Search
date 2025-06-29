@@ -26,12 +26,10 @@ export default function PendingApplications () {
       }});
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
-// Temp comment
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
       loading: false
     });
-  }, []);
 
   const { width } = useWindowDimensions();
   return(

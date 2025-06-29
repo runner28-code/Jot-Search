@@ -65,3 +65,4 @@ export const getDataSource = (id: string) => {
     return DataSource.UNKNOWN;
 }
 
+export const genUUID = () => uuid4();

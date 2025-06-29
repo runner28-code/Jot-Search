@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
@@ -37,6 +36,7 @@ export const UpdateJobStatus = ({ job }) => {
             const { res } = await saveJob({ status: e.target.value, id: updatedJob.id })
             setUpdatedJob(res);
           }}
+// Temp comment
         />
       </div>
     </div>

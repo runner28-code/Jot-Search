@@ -24,6 +24,7 @@ export default function ResetButton({ candidateData, setType }) {
       <button
         className='h-20 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
         onClick={handleSubmit}
+// Temp comment
       >
       Request Password Reset
       </button>

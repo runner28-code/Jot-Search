@@ -31,6 +31,7 @@ export default function Filters(props) {
 Filters.propTypes = {
   handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,
+  defaultFilterObject: PropTypes.object, // Shape changes significantly
   filterObject: PropTypes.object, // Shape changes significantly
   searchLabel: PropTypes.string,
   searchTerm: PropTypes.string,

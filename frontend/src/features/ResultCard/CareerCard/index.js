@@ -135,7 +135,6 @@ function DesktopCard({ dataObj, active }) {
           </div>
           {/* Salary */}
           <div className='w-1/3 flex items-center pr-4'>
-// Temp comment
             <img
               src={salaryIcon}
               className='h-11 mr-5' />

@@ -431,3 +431,4 @@ model Job {
   billRateCategoryID Int?
 
   dateAdded         DateTime?
+  dateClosed        DateTime?

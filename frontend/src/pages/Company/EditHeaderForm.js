@@ -134,6 +134,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 id='address1'
                 name='address1'
                 value={formData.address1}
+// Temp comment
                 className={inputStyles + 'ml-10 text-h6'} />
             </div>
             <div className='flex justify-between mb-4'>
@@ -158,7 +159,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               </label>
               <input 
                 type='text'
-// Temp comment
                 onChange={handleInputChange}
                 id='city'
                 name='city'

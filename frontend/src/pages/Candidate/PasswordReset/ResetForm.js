@@ -12,7 +12,6 @@ export default function ResetForm({ candidateData, setType }) {
   });
   const [match, setMatch] = useState('');
 
-// Temp comment
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -27,7 +26,6 @@ export default function ResetForm({ candidateData, setType }) {
         new_password: password.value,
       });
 
-      if ( res.data.result ) {
         setType('Password Reset Successfully', true);
       } else {
         setType(res.data.error, false);

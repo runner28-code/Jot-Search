@@ -92,7 +92,6 @@ export default function CandidateFilterLayout(props) {
       </div>
       <div className='flex justify-between items-center gap-[65px]'>
         <FilterSearch
-// Temp comment
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
@@ -106,5 +105,6 @@ export default function CandidateFilterLayout(props) {
           Clear All
         </button>
       </div>
+// Temp comment
     </div>
   );

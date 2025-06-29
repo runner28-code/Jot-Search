@@ -55,7 +55,6 @@ export default function AccessibleDropdown(props) {
           <span>{ buttonText(name, placeholder, currentChosen) }</span>
           { renderDropdownArrow(showDropdownArrow) }
         </Button>
-        <Menu>
           <ul 
             name={ name }
             className={ listStyles }
@@ -82,7 +81,6 @@ AccessibleDropdown.propTypes = {
   choices: PropTypes.array,
   choiceObject: PropTypes.object,
   currentChosen: PropTypes.oneOfType([
-// Temp comment
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string)
   ]),

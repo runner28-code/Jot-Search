@@ -181,3 +181,4 @@ export type Candidate = {
     dateAdded?: string;
     dateAvailable?: string;
     dateAvailableEnd?: string;
+    dateI9Expiration?: string;

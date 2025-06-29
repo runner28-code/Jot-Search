@@ -2,7 +2,6 @@ import { useState, useContext } from 'react';
 import { CategoryContext } from '../../../services/CategoryContext';
 import PropTypes from 'prop-types';
 import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
-import FormInput from '../../../components/FormInput';
 import {
   skills as skillChoices,
   roles as roleChoices,
@@ -30,7 +29,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     phone: candidateData.phone || '',
     categoryId: candidateData.categoryId || null,
     expertise: categories.find(category => category.id === candidateData.categoryId)?.name || '',
-// Temp comment
     roles: Array.isArray(candidateData.roles) ? candidateData.roles : (candidateData?.roles?.split(', ') || []),
     description: candidateData.description || '',
     workspace: candidateData?.workspace || '',

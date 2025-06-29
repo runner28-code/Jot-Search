@@ -45,3 +45,4 @@ jobs:
         SECRET_AUTH_SECRET: ${{ secrets.DEV_AUTH_SECRET }}
         SECRET_GETRO_EMAIL: ${{ secrets.DEV_GETRO_EMAIL }}
         SECRET_GETRO_PASSWORD: ${{ secrets.DEV_GETRO_PASSWORD }}
+        SECRET_BULLHORN_CLIENT_ID: ${{ secrets.DEV_BULLHORN_CLIENT_ID }}

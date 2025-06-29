@@ -28,7 +28,6 @@ export default function InviteCandidates({ job }) {
     }
   }) || [];
 
-  const [selected, setSelected] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
@@ -38,6 +37,7 @@ export default function InviteCandidates({ job }) {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (
         <span
+          key={item.value}
           className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">
           <span>{item.label}</span>
           <button

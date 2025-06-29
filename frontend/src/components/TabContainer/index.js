@@ -22,8 +22,8 @@ TabContainer.propTypes = {
   tabChoices: PropTypes.arrayOf(PropTypes.string).isRequired,
   activeTab: PropTypes.string,
   setActiveTab: PropTypes.func.isRequired,
+  isLocked: PropTypes.bool,
   absolute: PropTypes.bool,
-}
 
 function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
   const isActiveTab = choice === activeTab;

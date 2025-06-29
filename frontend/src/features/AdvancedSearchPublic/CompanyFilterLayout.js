@@ -19,6 +19,7 @@ export default function CompanyFilterLayout(props) {
           handleSearchClick={handleSearchClick}
           placeholder='Search Companies'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
+        />
         <button
           className='text-white text-sm whitespace-nowrap'
           onClick={clearFilters}
@@ -27,4 +28,3 @@ export default function CompanyFilterLayout(props) {
         </button>
       </div>
     </div>
-  );

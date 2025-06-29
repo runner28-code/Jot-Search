@@ -53,3 +53,4 @@ export const saveCandidate = async (
     console.log(error);
     return { result: false, message: error };
   }
+};

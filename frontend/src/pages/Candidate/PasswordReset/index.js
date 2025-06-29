@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import ResetButton from './ResetButton';
 import ResetForm from './ResetForm';

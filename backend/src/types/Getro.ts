@@ -1,4 +1,3 @@
-export type Company = {
   id: string;
   angellist_url?: string;
   approx_employees?: string;
@@ -36,6 +35,7 @@ export type Job = {
   compensation_period?: string;
   compensation_public?: string;
   description?: string;
+  discarded?: string;
   employment_types?: string;
   expires_at?: string;
   job_functions?: string;
@@ -54,3 +54,4 @@ export type Job = {
 export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "id",
   "application_method",
+  "application_path",

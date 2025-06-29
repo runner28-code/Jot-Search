@@ -177,3 +177,5 @@ export const mockCompanyStats = {
       count: 89,
       prevCount: 72
     }
+  },
+  'Active Career Post Favorites': {
