@@ -66,6 +66,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       const modifiedFilterObject = {
         ...filterObject,
         firstname: filterObject.title
+      }
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
@@ -100,7 +101,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
-    }
     setFilterObject(newState);
   }, [state]);
 

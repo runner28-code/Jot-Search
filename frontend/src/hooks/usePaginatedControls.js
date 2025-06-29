@@ -28,6 +28,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
           Array(totalPages).fill().map((_, index) => {
             const pageNumber = index + 1
             return (
+// Temp comment
               <PaginationButton
                 key={pageNumber}
                 page={pageNumber}

@@ -342,3 +342,5 @@ export const getCompanyDashboardStats = async (days: number) => {
       where: {
         ...previousPeriodCommonQuery
       }
+    })
+

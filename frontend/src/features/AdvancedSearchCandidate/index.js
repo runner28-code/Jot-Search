@@ -67,7 +67,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,
-        firstname: filterObject.title
       }
       delete modifiedFilterObject.title;
 
@@ -77,7 +76,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     } else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
-// Temp comment
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
     }

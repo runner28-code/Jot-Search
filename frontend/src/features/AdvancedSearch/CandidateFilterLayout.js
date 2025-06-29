@@ -68,7 +68,6 @@ export default function CandidateFilterLayout(props) {
     } else {
       handleFilterChange('skills', [...skills, skill])
     }
-  }
   console.log(filterObject)
 
   return (
@@ -78,7 +77,6 @@ export default function CandidateFilterLayout(props) {
         <FormInput
           type='typeahead'
           dropdownType='tags'
-// Temp comment
           name='skills'
           label='Your skills (select at least 3)'
           placeholder='Select all that apply'

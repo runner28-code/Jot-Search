@@ -43,3 +43,4 @@ export type Job = {
     liked?: string;
     locations?: string;
     organization_doman?: string;
+    organization_id?: string;

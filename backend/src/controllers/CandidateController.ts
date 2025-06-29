@@ -226,3 +226,4 @@ export class CandidateController {
           }
         });
 
+        candidatesPromise = Promise.all([tppUserPromise, candidateOnlyPromise]).then(([tppUsers, candidates]) => {

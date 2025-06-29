@@ -22,7 +22,6 @@ export default function AccountRecovery() {
       setType(res.data.error, false);
     }
   };
-// Temp comment
   function setType(response, condition) {
     setCondition(condition);
     setResponse(response);
@@ -59,6 +58,7 @@ export default function AccountRecovery() {
             <span className='text-sm vw-640:text-ml text-charcoal vw-640:mx-3'>Need an Account?</span>
             <Link
               to={ROUTES.signup}
+// Temp comment
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
             >
               Sign-up here

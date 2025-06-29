@@ -17,6 +17,7 @@ html {
 
 body {
   font-size: 1.6rem;
+}
 
 input[type="text"].placeholder-spaceGrotesk::placeholder {
   font-family: 'Space Grotesk', sans-serif;
@@ -109,3 +110,4 @@ input[type=checkbox] {
     line-height: 1.6;
     letter-spacing: normal;
   }
+  .Desktop-Body-texttext-size-medium-1125rem {

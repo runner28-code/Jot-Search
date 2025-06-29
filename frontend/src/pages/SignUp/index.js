@@ -2,6 +2,7 @@ import RegistrationForm from '../../components/RegistrationForm';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // TODO: Terms of Service?
+// Temp comment
 export default function SignUp() {
 
   const { width } = useWindowDimensions();

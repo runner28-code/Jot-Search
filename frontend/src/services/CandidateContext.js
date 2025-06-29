@@ -34,7 +34,6 @@ const mockCandidateData = [
     school: 'Oklahoma State',
     isLooking: false,
     isWarm: true,
-  },
   {
     id: '53dde141-ac80-4eee-af38-5497ee1c85d5',
     firstName: 'Rachel',

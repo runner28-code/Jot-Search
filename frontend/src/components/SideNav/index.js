@@ -8,7 +8,6 @@ import {
   findSelectedFromPath
 } from './utils';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 import * as ROUTES from '../../routes';
 
 export default function SideNav({ userType }) {
@@ -16,7 +15,6 @@ export default function SideNav({ userType }) {
   const hiddenPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage, ROUTES.resetPassword, ROUTES.accountRecovery ];
   if ( hiddenPages.includes(pathname) ) {
     return null;
-  }
 
   if( userType === 'guest' ) {
     return null;

@@ -41,7 +41,6 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
   tabStyles += conditionalStyles(isActiveTab, isLocked);
 
   return (
-// Temp comment
     <button
       key={choice}
       className={tabStyles}

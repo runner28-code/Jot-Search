@@ -126,3 +126,4 @@ export class UserController {
     } catch (error) {
       return {
         result: false,
+        error: "Please check email, email maybe invalid one",

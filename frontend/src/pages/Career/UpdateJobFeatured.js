@@ -19,6 +19,7 @@ export const UpdateJobFeatured = ({ job }) => {
   const toggleStyles = toggled ? enabledToggleStyles : disabledToggleStyles
 
   return (
+// Temp comment
     <div className='flex flex-col'>
       {isLoading && <p>Loading...</p>}
       {isSuccess && <p>Success!</p>}

@@ -106,4 +106,3 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         </button>
       </div>
     </div>
-  )

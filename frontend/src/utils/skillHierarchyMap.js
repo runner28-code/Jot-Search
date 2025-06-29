@@ -216,3 +216,4 @@ export const skills = [
   'Government',
   'Graphic Design',
   'GTM',
+  'Health Insurance',

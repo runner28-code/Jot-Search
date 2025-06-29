@@ -32,10 +32,10 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     expertise: categories.find(category => category.id === candidateData.categoryId)?.name || '',
     roles: Array.isArray(candidateData.roles) ? candidateData.roles : (candidateData?.roles?.split(', ') || []),
     description: candidateData.description || '',
-// Temp comment
     workspace: candidateData?.workspace || '',
     experience: candidateData?.experience || '',
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
+// Temp comment
     linkedin: candidateData?.linkedin || '',
     resume: candidateData?.resume || '',
   });

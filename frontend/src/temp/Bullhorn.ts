@@ -180,3 +180,4 @@ export type Candidate = {
     companyURL?: string;
     dateAdded?: string;
     dateAvailable?: string;
+    dateAvailableEnd?: string;

@@ -49,6 +49,7 @@ export default function DashboardPublic({togglePassState}) {
         <div className='ml-12'>
           <button
             className='flex items-center flex-row'
+            onClick={() => togglePassState()}
           >
             <img src={filterIcon} />
             { width >= 990 && <FilterText />}

@@ -61,7 +61,6 @@ export default function Company() {
         loggedIn={loggedIn}
       />
       <div 
-// Temp comment
         className={ width <= 990 ? 'px-[5%]'
           : !loggedIn ? 'px-[15%]' 
             : ''}

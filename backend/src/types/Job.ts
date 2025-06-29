@@ -1,4 +1,3 @@
-import { Datasource } from "@prisma/client";
 
 export type Job = {
   id?: string;
@@ -33,3 +32,4 @@ export type Job = {
 };
 
 export type JobKey = keyof Job;
+

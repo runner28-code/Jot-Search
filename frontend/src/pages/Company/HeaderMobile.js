@@ -53,6 +53,7 @@ function HeaderContent({ companyData }) {
         </div>
 
         <FavoriteButton
+          type={'company'}
           data={companyData} />
       </div>
     </>
@@ -89,7 +90,6 @@ export default function HeaderMobile({ companyData }) {
 HeaderMobile.propTypes = {
   companyData: PropTypes.object.isRequired,
   handleCompanyUpdate: PropTypes.func.isRequired
-}
 
 function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();

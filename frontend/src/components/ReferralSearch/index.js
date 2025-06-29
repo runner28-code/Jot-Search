@@ -37,6 +37,7 @@ const mockJobsData = [
 function renderChosen(currentChosen, handleRemove) {
   return currentChosen.map(choice =>
     <div 
+// Temp comment
       key={choice.id}
       className='bg-royalBlue text-white py-2 px-4 rounded-lg mr-2 cursor-pointer hover:bg-rose-500'
       onClick={() => handleRemove(choice.id)}
@@ -49,7 +50,6 @@ function renderChosen(currentChosen, handleRemove) {
 export default function ReferralSearch() {
   const [choices, setChoices] = useState(mockJobsData);
   const [filteredChoices, setFilteredChoices] = useState(mockJobsData);
-// Temp comment
   const [currentChosen, setCurrentChosen] = useState([]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 

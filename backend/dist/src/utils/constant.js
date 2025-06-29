@@ -77,7 +77,6 @@ const job_filter_exclude_keys = [
     "class",
     "classroom",
     "cleaner",
-    "clerk",
     "clinic",
     "clinical",
     "clinician",
@@ -164,7 +163,6 @@ const job_filter_exclude_keys = [
     "front desk",
     "garbage",
     "garden",
-// Temp comment
     "gardener",
     "gift stocker",
     "giving",
@@ -268,3 +266,4 @@ const job_filter_exclude_keys = [
     "occupancy",
     "occupational",
     "office assistant",
+    "on call",

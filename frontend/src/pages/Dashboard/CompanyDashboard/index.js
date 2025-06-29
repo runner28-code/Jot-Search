@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import AssistanceCard from './AssistanceCard';
 import gaugeIcon from '../../../assets/icons/gauge.svg';
 import PageHeader from '../../../components/PageHeader';
@@ -15,7 +14,6 @@ export default function CompanyDashboard({userType}) {
         headerText={profile.firstname + ' Dashboard'}
         icon={gaugeIcon}
       />
-// Temp comment
       <Stats
         headerStyles={headerStyles}
         userType={userType}

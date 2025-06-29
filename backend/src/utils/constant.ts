@@ -106,7 +106,6 @@ const job_filter_exclude_keys = [
   "custodial",
   "custodian",
   "customer pick-up",
-  "defender",
   "delivery",
   "dietary",
   "dietician",
@@ -268,3 +267,4 @@ const job_filter_exclude_keys = [
   "on call",
   "on-call",
   "optometrist",
+  "ot",

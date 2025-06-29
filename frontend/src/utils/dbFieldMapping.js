@@ -12,6 +12,7 @@ export const veteranStatusMap = {
   A: 'I have applied for membership in the uniformed service',
   R: 'I am present memeber of the uniformed service',
   S: 'I am a past member of the uniformed service',
+  O: 'I am obligated to serve in the uniformed service',
   D: 'I am a veteran with a disability',
   N: 'None of the above'
 };
@@ -39,3 +40,4 @@ export const ethnicityMap = {
 export const experienceMap = {
   '1': null,
   '2': '0-1',
+  '3': '2-4',

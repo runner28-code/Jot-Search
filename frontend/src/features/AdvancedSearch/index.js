@@ -22,6 +22,7 @@ import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
 
+const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
@@ -49,6 +50,7 @@ function useTabState(disabledTabs, userType, pathname) {
 export default function AdvancedSearch({ disabledTabs }) {
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();
+// Temp comment
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
 
   const initialFilterState = activeTab === 'careers' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
