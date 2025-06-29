@@ -22,11 +22,11 @@ export default function CareerPage() {
   const activeData = location.state;
 
   const isMobile = width < 768;
+  const role = AuthService.getUserRole();
   /* STATE */
   const { id } = useParams();
   const [careerData, setCareerData] = useState({});
 
-  useEffect(async () => {
     const career = await getJobById(id);
     // Decode url encoded properties on career
     career.title = urlDecode(career.title);

@@ -7,6 +7,7 @@ import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import featuredIcon from '../../assets/icons/pyramid.svg';
 import { getAppliedJobs } from '../../services/API';
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 
 export default function PendingApplications () {
   const profile = AuthService.getProfile();
@@ -40,7 +41,6 @@ export default function PendingApplications () {
         <div className='bg-orangeSquare  top-[-20px] right-[5px] absolute w-6 h-6' />
       </div>
       <h2 className='font-spaceGrotesk text-h5 text-white mb-8 text-center'>My Pending Applications</h2>
-// Temp comment
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
           appliedJobsObject.loading ?

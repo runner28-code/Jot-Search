@@ -49,6 +49,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   if ( loading ) {
     return (
       <div className={containerStyles}>
+// Temp comment
         <LoadingSpinner color='#FDFDFD' />
       </div>
     );
@@ -63,7 +64,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }
         placeholder='Job title or keywords'
-// Temp comment
         additionalClasses='w-[523px]'
       />
       <div className='flex items-center mt-22'>

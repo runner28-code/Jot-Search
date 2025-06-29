@@ -22,6 +22,7 @@ export default function Login() {
     } else {
       setError(res.data.error);
     }
+  };
 
   const renderError = () => {
     if ( error ) {
@@ -79,6 +80,7 @@ export default function Login() {
               className='text-royalBlue text-sm vw-640:text-ml underline'>
               Forgot Password?
             </Link>
+// Temp comment
           </div>
         </form>
         {/* Assistance call-to-action */}

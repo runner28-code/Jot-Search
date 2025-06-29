@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import AuthService from './auth';
 import { getCandidateById } from './API';
+
 const mockCandidateData = [
   {
     id: 'cb4f35ed-db88-410f-beb0-a6a449135f75',
@@ -19,7 +20,6 @@ const mockCandidateData = [
     isLooking: true,
     isWarm: true,
   },
-  {
     id: 'b5a00114-1d3d-40f3-afb9-fc542fa22af6',
     firstName: 'Lee',
     lastName: 'Easton',

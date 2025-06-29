@@ -14,7 +14,6 @@ export const createJob = async (job: Job) => {
       throw new Error(jobError);
     }
 
-    const sanitizedJob = sanitizeJob(job) as any;
 
     const newJob = await db.job.create({
       data: {
@@ -77,3 +76,4 @@ export const getAppliedJobsByUser = async (userId: string) => {
     return {
       jobs,
       result: jobs != null,
+    };

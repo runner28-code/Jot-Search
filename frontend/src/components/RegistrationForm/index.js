@@ -89,6 +89,7 @@ export default function RegistrationForm(loggedIn) {
         setSubmissionObject({
           loading: false,
           success: false,
+        });
         return;
       }
       formObj.resume = resumeResponse;

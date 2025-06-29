@@ -9,7 +9,6 @@ import TypeTabs from '../../components/TypeTabs';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // Images
-import filterIcon from '../../assets/images/filter-toggle.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
 
@@ -75,6 +74,7 @@ function CareerHeader ({ location }) {
         >Back</Link>
         <div className='basis-2/6'>
           <TypeTabs location={location}/>
+        </div>
         <div className='basis-2/6 flex items-center'>
           <ToggleFilter />
         </div>

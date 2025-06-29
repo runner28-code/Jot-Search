@@ -96,6 +96,7 @@ export class JobController {
         return null;
       }
     } catch (err) {
+      console.error(err);
       return null;
     }
   }
@@ -120,7 +121,6 @@ export class JobController {
       const { filters, fields, page, count, datasource } = body;
 
       const datasourceToEnum: Dictionary<Datasource> = {
-        main: Datasource.main,
         bullhorn: Datasource.bullhorn,
         getro: Datasource.getro,
       };

@@ -27,7 +27,6 @@ export default function NavBar() {
   }
 }
 
-function NavBarLayout() {
   return (
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50 '>
       <div className='h-30 px-8 flex justify-between items-center'>
@@ -39,6 +38,7 @@ function NavBarLayout() {
           />
         </Link>
         {/* Nav Menu */}
+        <div className='flex items-center font-spaceGrotesk'>
           <div className='mr-8'>
             { renderNavSearch() }
           </div>

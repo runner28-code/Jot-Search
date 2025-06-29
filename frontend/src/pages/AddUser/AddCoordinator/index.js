@@ -23,10 +23,12 @@ export default function AddCoordinator() {
           success: true,
           errors: {},
         });
+      } else {
         const error = { submit: data.error }
         setSubmissionObject({
           loading: false,
           success: false,
+// Temp comment
           errors: error,
         });
       }

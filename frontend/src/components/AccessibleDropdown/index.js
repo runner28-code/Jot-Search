@@ -50,6 +50,7 @@ export default function AccessibleDropdown(props) {
         closeOnSelection={ closeMenuOnSelect }
       >
         <Button
+          className={ `${buttonStyles} ${disabled ? 'disabled cursor-not-allowed' : ''}` }
           disabled={disabled}>
           <span>{ buttonText(name, placeholder, currentChosen) }</span>
           { renderDropdownArrow(showDropdownArrow) }
@@ -121,6 +122,7 @@ function buttonText(name, placeholder, currentChosen) {
     if (Array.isArray(currentChosen) && currentChosen.length > 0) {
       buttonString = currentChosen.join(', ');
     } else if (typeof currentChosen === 'string') {
+// Temp comment
       buttonString = currentChosen;
     }
   } else { // no current chosen

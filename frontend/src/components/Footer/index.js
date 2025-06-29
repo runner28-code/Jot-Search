@@ -131,7 +131,6 @@ export default function Footer() {
     <div
       id='footer'
       className='flex flex-col'
-// Temp comment
     >
       {/* Social Links */}
       <div className='bg-midGrey flex justify-center items-center'>
