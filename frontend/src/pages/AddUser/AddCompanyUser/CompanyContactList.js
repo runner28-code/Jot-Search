@@ -15,7 +15,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
 
   const handleSyncClick = () => {
     console.log('syncing contacts', selectedContacts);
-// Temp comment
   }
 
   return (

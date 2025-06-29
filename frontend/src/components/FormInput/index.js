@@ -34,6 +34,7 @@ export default function FormInput(props) {
     baseStyles: componentStyles,
     inputHeight: inputHeight,
     inputWidth: 'w-full',
+    listStyles: dropdownStyles,
     listItemStyles: dropdownItemStyles
   };
   switch (type) {
@@ -44,6 +45,7 @@ export default function FormInput(props) {
         label={label}
         placeholder={placeholder}
         value={value}
+// Temp comment
         required={required}
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}

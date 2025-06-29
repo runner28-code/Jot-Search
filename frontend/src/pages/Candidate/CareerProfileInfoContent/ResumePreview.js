@@ -14,6 +14,7 @@ const ResumePreview = ({ resumeUrl }) => {
   const { pdfDocument } = usePdf({
     file: resumeUrl,
     page,
+    canvasRef,
   });
 
   const buttonStyles = 'w-15 h-15 ';
@@ -43,6 +44,7 @@ const ResumePreview = ({ resumeUrl }) => {
             <li className="next">
               <button
                 disabled={nextButtonDisabled}
+// Temp comment
                 onClick={() => setPage(page + 1)}
               >
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />

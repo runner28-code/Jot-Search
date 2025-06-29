@@ -29,6 +29,7 @@ export default function CompanyCard({ data }) {
     )
   }
   return (
+    <div
       className='relative w-full'
       key={data.id}
     >
@@ -78,6 +79,7 @@ export default function CompanyCard({ data }) {
               </a>
             </div>
             {/* Website */}
+// Temp comment
             <div className='w-1/3 flex items-center'>
               <img
                 src={websiteIcon}

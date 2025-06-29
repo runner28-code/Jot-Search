@@ -8,6 +8,7 @@ const ITEMS_PER_PAGE = 10;
 
 export default function FeaturedCompanies() {
 
+// Temp comment
   const filtersArr = [
     {
       key: 'status',
@@ -37,7 +38,6 @@ export default function FeaturedCompanies() {
         }
       </div>
       <div className='text-center mt-48'>
-// Temp comment
         <Link
           to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>

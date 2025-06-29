@@ -56,6 +56,7 @@ export const defaultJobFilterState = {
 };
 
 /* CANDIDATE FILTER UTILS */
+// Temp comment
 export const candidateFilterObject = {
   'Category': [
     'Any',

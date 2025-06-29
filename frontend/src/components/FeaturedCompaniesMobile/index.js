@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
@@ -25,7 +24,6 @@ export default function FeaturedCompaniesMobile() {
         {
           isLoading ?
             <LoadingSpinner />
-// Temp comment
             :
             companies.map((company, index) =>
               <Link

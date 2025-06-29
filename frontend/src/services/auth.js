@@ -2,7 +2,6 @@ import decode from 'jwt-decode';
 import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
 
 class AuthService {
-// Temp comment
   getProfile() {
     if ( !this.loggedIn() ) {
       return null;
@@ -91,6 +90,7 @@ class AuthService {
       localStorage.setItem('savedCandidates', JSON.stringify(candidateIDs));
     } catch(e) {
       console.log(e);
+// Temp comment
       localStorage.setItem('savedCandidates', JSON.stringify([]));
     }
   }

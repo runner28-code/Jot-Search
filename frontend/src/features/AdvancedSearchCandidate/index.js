@@ -52,7 +52,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
-  const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
   if (state) {
     if (state.title) initialFilterState.title = state.title;
     if (state.expertise) initialFilterState.Expertise = state.expertise;
@@ -67,6 +66,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,
+        firstname: filterObject.title
       }
       delete modifiedFilterObject.title;
 

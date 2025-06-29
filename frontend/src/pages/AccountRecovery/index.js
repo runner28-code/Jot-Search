@@ -54,11 +54,11 @@ export default function AccountRecovery() {
           onSubmit={(e) => handleSubmit(e)}
         >
           <h4 className='w-full text-xl vw-640:text-h4 text-charcoal font-spaceGrotesk font-semibold mt-14 text-center'>Account Recovery</h4>
+// Temp comment
           <div className='flex vw-640:justify-center items-center mb-12 mt-12'>
             <span className='text-sm vw-640:text-ml text-charcoal vw-640:mx-3'>Need an Account?</span>
             <Link
               to={ROUTES.signup}
-// Temp comment
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
             >
               Sign-up here

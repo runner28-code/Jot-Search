@@ -29,7 +29,7 @@ export default function Applications() {
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
       loading: false
-  }, []);
+    });
 
   function handleCheckClick(careerId) {
     if (selectedApplications.includes(careerId)) {

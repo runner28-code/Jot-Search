@@ -63,6 +63,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }
         placeholder='Job title or keywords'
+// Temp comment
         additionalClasses='w-[523px]'
       />
       <div className='flex items-center mt-22'>
@@ -106,3 +107,4 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         </button>
       </div>
     </div>
+  )

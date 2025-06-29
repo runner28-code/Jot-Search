@@ -23,6 +23,7 @@ export default function DashboardPublicMin({type}) {
             <LeftIcon />
             <button
               className='text-white underline'
+// Temp comment
               onClick={() => navigate(-1)}
             >
             Back
@@ -60,5 +61,6 @@ export default function DashboardPublicMin({type}) {
             <p className='ml-4'>Companies</p>
           </Link>
         </div>
+      </div>
     </div>
   )
