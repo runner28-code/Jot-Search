@@ -27,7 +27,6 @@ export default function CareerPage() {
   const { id } = useParams();
   const [careerData, setCareerData] = useState({});
 
-// Temp comment
   useEffect(async () => {
     const career = await getJobById(id);
     // Decode url encoded properties on career
@@ -43,7 +42,6 @@ export default function CareerPage() {
   const addressString = buildCareerAddress(careerData.city, careerData.state);
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
   const postingAge = calculatePostingAge(careerData.createdAt);
-  const data = {
     careerData,
     categoryString,
     addressString,

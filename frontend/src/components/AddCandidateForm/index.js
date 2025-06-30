@@ -40,6 +40,7 @@ export default function RegistrationForm() {
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
+  });
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -266,6 +267,7 @@ export default function RegistrationForm() {
             onChange={handleChange}
             error={errors.includes('password')}
           />
+// Temp comment
           <FormInput
             type='password'
             name='verifyPassword'

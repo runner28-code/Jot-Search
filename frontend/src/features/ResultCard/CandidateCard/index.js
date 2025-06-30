@@ -146,7 +146,6 @@ LinkWrapper.propTypes = {
   children: PropTypes.node.isRequired,
   link: PropTypes.string.isRequired,
   disableLink: PropTypes.bool,
-}
 
 function renderActiveStatus(candidate) {
   if (candidate.activelyLooking || candidate.user?.activelyLooking) {

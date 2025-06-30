@@ -48,6 +48,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
               <div>
                 <p className='text-midGrey'>Posting Age</p>
                 <p className='text-midGrey text-xs'>{postingAge}</p>
+              </div>
             }
           </div>
         </div>

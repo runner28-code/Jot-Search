@@ -1,7 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
-// Temp comment
   candidateChoices,
   companyChoices,
   coordinatorChoices,
@@ -18,6 +17,7 @@ const bottomLinkStyles = baseLinkStyles + 'rounded-b-xl ';
 const spanStyles = 'text-xl font-bold font-spaceGrotesk ';
 const hrStyles = 'border-royalBlue ';
 const iconStyles = 'w-12 h-12 mr-4 ';
+// Temp comment
 
 const stylesObject = {
   baseLinkStyles,

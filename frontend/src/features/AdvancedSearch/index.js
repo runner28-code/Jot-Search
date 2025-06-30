@@ -12,6 +12,7 @@ import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGet
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
+  candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,
@@ -28,6 +29,7 @@ const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'careers', 'companies'],
   company: ['careers', 'candidates' ],
   candidate: ['careers', 'companies'],
+// Temp comment
   guest: ['careers', 'companies'],
 }
 

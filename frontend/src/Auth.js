@@ -1,6 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import {
-  ActiveCareers,
   AddUser,
   Applications,
   Candidate,
@@ -24,6 +23,7 @@ export default function Auth() {
       <Routes>
         <Route
           path='/'
+          element={<Dashboard />} 
         />
         <Route
           path={ROUTES.profile}

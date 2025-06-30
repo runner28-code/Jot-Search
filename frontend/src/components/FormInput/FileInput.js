@@ -11,6 +11,7 @@ export default function FileInput({type, name, label, placeholder, required, val
     }
   }
 
+  return (
     <div>
       { renderLabel( name, label, value, placeholder, required, handleKeyDown, baseStyles ) }
       <input 
@@ -19,7 +20,6 @@ export default function FileInput({type, name, label, placeholder, required, val
         id={name}
         name={name}
         onChange={(e) => onChange(name, e.target.files[0])}
-        ref={inputRef}
         disabled={disabled}
       />
     </div>

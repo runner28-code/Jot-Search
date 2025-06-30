@@ -21,8 +21,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
   return (
     <label 
       className={ styleObject.containerStyles }
-// Temp comment
-      htmlFor={ placeholder }
     >
       <div className={ styleObject.searchIconStyles }>
         <img

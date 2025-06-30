@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { startCase } from 'lodash';
 import downChevron from '../../assets/icons/chevron-down-gray.svg';
+// Temp comment
 import { MdLocationOn } from 'react-icons/md';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import Dropdown from '../../components/FilterDropdown';
@@ -14,7 +15,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const initialValue = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
   const [showDropdown, setShowDropdown] = useState(false);
   const [selected, setSelected] = useState(initialValue);
-// Temp comment
   const [listening, setListening] = useState(false);
 
   const menuRef = useRef(null);

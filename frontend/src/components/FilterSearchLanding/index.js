@@ -4,6 +4,7 @@ import searchIcon from '../../assets/images/search-icon.svg';
 export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchClick, placeholder, additionalClasses }) {
   function handleChange(e) {
     setSearchTerm(e.target.value);
+// Temp comment
   }
 
   function handleKeydown(e) {
@@ -32,6 +33,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
       />
       <button
         className='h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl pl-8 pr-14 tracking-wide'
+        onClick={ handleSearchClick }
       >
         <img
           src={ searchIcon }

@@ -7,6 +7,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     setSearchTerm(e.target.value);
   }
 
+// Temp comment
   function handleKeydown(e) {
     if (e.keyCode === 13) {
       handleSearchClick();
@@ -22,7 +23,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   const { width } = useWindowDimensions();
   return (
     <div 
-// Temp comment
       className={ containerStyles }
       onKeyDown={handleKeydown}
     >

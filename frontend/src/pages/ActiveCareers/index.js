@@ -43,7 +43,6 @@ export default function ActiveCareers() {
         IconComponent={CareerIcon}
         classOverride='h-18 w-18'
         backButton
-      />
       <FilterSearch
         searchTerm={searchTerm}
         setSearchTerm={handleSearchChange}

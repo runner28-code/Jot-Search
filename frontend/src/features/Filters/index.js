@@ -15,7 +15,6 @@ export default function Filters(props) {
   } = props;
 
   let filterContainerStyles = 'flex flex-col justify-between gap-xxl-4 pb-9 vw-768:px-14 ';
-// Temp comment
   if (marginBottom) {
     filterContainerStyles += `mb-${marginBottom} `;
   }
@@ -34,6 +33,7 @@ Filters.propTypes = {
   marginBottom: PropTypes.string,
   defaultFilterObject: PropTypes.object, // Shape changes significantly
   filterObject: PropTypes.object, // Shape changes significantly
+// Temp comment
   searchLabel: PropTypes.string,
   searchTerm: PropTypes.string,
   setSearchTerm: PropTypes.func,

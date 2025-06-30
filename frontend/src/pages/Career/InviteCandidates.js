@@ -16,6 +16,7 @@ export default function InviteCandidates({ job }) {
     })),
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
+  });
 
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
@@ -32,7 +33,6 @@ export default function InviteCandidates({ job }) {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }
-
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (

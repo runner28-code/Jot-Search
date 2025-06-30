@@ -46,6 +46,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
       src={ isFavorite ? favoriteIconFilled : favoriteIconOutline }
       className={addClass ? styles + addClass : styles}
       onClick={handleFavoriteClick}
+    />
   )
 }
 
