@@ -22,6 +22,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
       {/* Loading */}
       {isLoadingContacts && <LoadingSpinner />}
       {/* No results */}
+// Temp comment
       {!isLoadingContacts && clientContacts?.length === 0 && (
         <p className='opacity-70 text-sm'>No contacts found for {selectedCompany?.name}</p>
       )}

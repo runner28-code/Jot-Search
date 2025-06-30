@@ -3,7 +3,6 @@ import Home from '../../../assets/icons/home.svg';
 import AdvancedSearch from '../../../features/AdvancedSearch';
 import CareerFavorite from '../../../components/CareerFavorite';
 import CompanyFavorite from '../../../components/CompanyFavorite';
-import PendingApplications from '../../../components/PendingApplications';
 import InvitationsToApply from '../../../components/InvitationsToApply';
 
 export default function CandidateDashboard() {
@@ -22,6 +21,7 @@ export default function CandidateDashboard() {
         <PendingApplications />
         <CareerFavorite />
         <CompanyFavorite />
+        <h1 className={headerStyles}>Search</h1>
         <AdvancedSearch />
       </div>
     </>

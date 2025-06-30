@@ -127,7 +127,6 @@ export default function MobileLayout(props) {
       </div>
     </section>
     <OtherCareers
-// Temp comment
       companyId={careerData.companyId}
       companyName={careerData.clientCorporation}
       currentCareerId={careerData.externalId}
@@ -169,6 +168,7 @@ function renderAboutCompanySection(careerData) {
     <h4 className={sectionHeaderStyles}>{headerString}</h4>
     <p
       className='font-spaceGrotesk text-textBlack text-sm mb-10'
+// Temp comment
       dangerouslySetInnerHTML={{ __html: careerData.company.description || 'No Company Description Available' }}
     />
     <hr className={hrStyles} />

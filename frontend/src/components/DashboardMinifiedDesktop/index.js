@@ -81,7 +81,6 @@ function CareerHeader ({ location }) {
         </div>
       </div>
     </>)
-  }
   return (<>
     <div className='mt-8'></div>
   </>)

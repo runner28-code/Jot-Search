@@ -280,6 +280,7 @@ function NavFooter() {
         >
           Marketing Job Openings
         </a>
+// Temp comment
         <a
           href="/careers"
           className={linkStyle}

@@ -24,6 +24,7 @@ TabContainer.propTypes = {
   setActiveTab: PropTypes.func.isRequired,
   isLocked: PropTypes.bool,
   absolute: PropTypes.bool,
+}
 
 function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
   const isActiveTab = choice === activeTab;
@@ -46,5 +47,6 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
       onClick={() => handleClick(choice)}
     >
       {titleCasedTab === 'Jobs' ? 'Careers' : titleCasedTab}
+// Temp comment
     </button>
   );

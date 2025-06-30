@@ -6,4 +6,3 @@ CREATE TABLE "Category" (
     "description" TEXT,
     "enabled" BOOLEAN NOT NULL DEFAULT true,
     "externalID" INTEGER,
-    "occupation" TEXT,

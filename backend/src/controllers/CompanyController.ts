@@ -200,6 +200,7 @@ export class CompanyController {
         res,
         result: true
       }
+    } catch (error) {
       return {
         result: false,
         error,

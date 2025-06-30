@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
@@ -47,7 +48,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
               <div>
                 <p className='text-midGrey'>Posting Age</p>
                 <p className='text-midGrey text-xs'>{postingAge}</p>
-              </div>
             }
           </div>
         </div>

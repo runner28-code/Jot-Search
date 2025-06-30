@@ -19,7 +19,6 @@ const hrStyles = 'mb-10 border-smokeGray ';
 export default function DesktopLayout(props) {
   const {
     careerData,
-    categoryString,
     addressString,
     salaryString,
     postingAge,

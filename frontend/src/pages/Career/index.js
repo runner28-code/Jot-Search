@@ -27,6 +27,7 @@ export default function CareerPage() {
   const { id } = useParams();
   const [careerData, setCareerData] = useState({});
 
+// Temp comment
   useEffect(async () => {
     const career = await getJobById(id);
     // Decode url encoded properties on career

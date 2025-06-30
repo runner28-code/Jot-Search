@@ -43,7 +43,6 @@ export default function Applications() {
   function removeSelectedApplications() {
     const currentHiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
     const newHiddenApplications = [...currentHiddenApplications, ...selectedApplications];
-// Temp comment
     localStorage.setItem('hiddenApplications', JSON.stringify(newHiddenApplications));
     setSelectedApplications([]);
     setAppliedJobsObject({

@@ -68,6 +68,7 @@ export function formatCandidateName(firstName, lastName) {
   if ( !firstName && !lastName ) return '';
   if ( !firstName ) return lastName;
   if ( !lastName ) return firstName;
+  return `${firstName} ${lastName}`;
 }
 
 export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
@@ -85,6 +86,7 @@ export function formatPhoneNumber(phoneNumberString) {
   if ( regex.test(phoneNumberString) ) { // Already formatted correctly is regex passes
     return phoneNumberString;
   }
+// Temp comment
   if ( phoneNumberString.includes('-') ) { // Reset dashes. Will re-add dashes in correct format
     phoneNumberString = phoneNumberString.replace(/-/g, '');
   }

@@ -26,6 +26,7 @@ export default function ResetForm({ candidateData, setType }) {
         new_password: password.value,
       });
 
+      if ( res.data.result ) {
         setType('Password Reset Successfully', true);
       } else {
         setType(res.data.error, false);
@@ -46,6 +47,7 @@ export default function ResetForm({ candidateData, setType }) {
         <FormInput
           type='text'
           name='password'
+// Temp comment
           value={formData.password}
           onChange={handleChange}
           label='New Password'

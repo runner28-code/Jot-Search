@@ -7,6 +7,7 @@ export default function MobileHeader(props) {
     icon,
     IconComponent,
     classOverride,
+// Temp comment
     colorizeStroke,
     backButton
   } = props;

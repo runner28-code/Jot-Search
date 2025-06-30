@@ -32,7 +32,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
       />
       <button
         className='h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl pl-8 pr-14 tracking-wide'
-        onClick={ handleSearchClick }
       >
         <img
           src={ searchIcon }
