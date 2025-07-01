@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getJobById } from '../../services/API';
 import PropTypes from 'prop-types';
-// Temp comment
 import { useLocation } from 'react-router-dom';
 import MobileLayout from './MobileLayout';
 import DesktopLayout from './DesktopLayout';
@@ -53,7 +52,6 @@ export default function CareerPage() {
   }
   const loggedIn = AuthService.loggedIn();
 
-  const source = data.careerData.datasource;
 
   const containerStyles = 'ml-10 mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
 

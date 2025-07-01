@@ -86,7 +86,6 @@ export default function FormInput(props) {
       return <TextInput
         type={type}
         name={name}
-        label={label}
         required={required}
         placeholder={placeholder}
         value={value}

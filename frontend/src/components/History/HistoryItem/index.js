@@ -32,10 +32,12 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
   } else if ( isYesterday ) {
     return `Yesterday, ${timeWithoutSeconds}`;
   } else {
+    const month = dateObj.toLocaleString('default', { month: 'long' });
     const day = dateObj.getDate();
 
     const concatenateOrdinal = function(d) {
       if (d > 3 && d < 21) return d + 'th';
+// Temp comment
       switch (d % 10) {
         case 1:  return d + 'st';
         case 2:  return d + 'nd';

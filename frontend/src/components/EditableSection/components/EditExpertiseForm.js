@@ -7,6 +7,7 @@ export default function EditExpertiseForm({ expertise, handleChange }) {
   return (
     <>
       <Dropdown
+        name='expertise'
         choices={expertiseChoices}
         currentChosen={expertise}
         handleChange={handleChange}
@@ -15,4 +16,3 @@ export default function EditExpertiseForm({ expertise, handleChange }) {
         optionStyles={'text-lg'}
       />
     </>
-  )

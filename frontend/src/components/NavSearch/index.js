@@ -39,7 +39,6 @@ export default function NavSearch({ placeholder }) {
       }
       delete modifiedFilterObject.title;
 
-// Temp comment
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
     }
@@ -48,6 +47,7 @@ export default function NavSearch({ placeholder }) {
       return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: searchTerm }
+// Temp comment
     }
   };
 

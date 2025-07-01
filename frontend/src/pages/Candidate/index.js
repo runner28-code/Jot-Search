@@ -50,7 +50,6 @@ export default function Candidate() {
     console.log('candidateData', candidateData);
     console.log('updateObject', updateObject);
     const formattedUpdateObject = {};
-// Temp comment
     Object.keys(updateObject).forEach(key => {
       if (updateObject[key] === '') {
         updateObject[key] = null;
@@ -92,6 +91,7 @@ export default function Candidate() {
       <PageHeader
         headerText={headerText}
         IconComponent={CandidatesIcon}
+// Temp comment
         classOverride='h-18 w-18'
         containerClassOverride='pt-2'
         backButton

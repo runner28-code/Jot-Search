@@ -65,6 +65,7 @@ HeaderContent.propTypes = {
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,
+    businessSectorList: PropTypes.string,
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
     industryList: PropTypes.array,

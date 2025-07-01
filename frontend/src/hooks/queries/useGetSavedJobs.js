@@ -12,5 +12,3 @@ export const useGetSavedJobs = ({ count, page, userId, enabled = true }) => {
     { enabled }
   );
 
-// Temp comment
-  return { savedJobs: data, total: data?.total || 0, error, isLoading };

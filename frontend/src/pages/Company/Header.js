@@ -110,6 +110,7 @@ HeaderContent.propTypes = {
   })
 }
 
+// Temp comment
 export default function Header({ companyData }) {
   return (
     <>

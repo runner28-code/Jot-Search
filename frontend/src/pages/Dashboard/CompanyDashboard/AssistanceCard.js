@@ -1,3 +1,4 @@
+import flagIcon from '../../../assets/icons/flag.svg';
 
 export default function AssistanceCard() {
   return (
@@ -7,6 +8,7 @@ export default function AssistanceCard() {
         <img
           src={flagIcon}
           alt='Flag'
+// Temp comment
           className='w-auto h-auto'
         />
         <h5 className='text-h5 font-medium font-spaceGrotesk text-charcoal ml-8'>InTulsa assistance</h5>

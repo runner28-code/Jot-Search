@@ -16,7 +16,6 @@ export default function DashboardPublic({togglePassState}) {
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
-// Temp comment
   const location = useLocation().pathname;
   const active = ' bg-royalBlue';
 
@@ -38,6 +37,7 @@ export default function DashboardPublic({togglePassState}) {
           >
             <CareerIcon />
             <p className='ml-4'>Careers</p>
+// Temp comment
           </Link>
           <Link
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }

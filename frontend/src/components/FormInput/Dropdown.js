@@ -25,7 +25,6 @@ function renderHorizontalRule(index, arrayLength) {
     )
   }
 }
-// Temp comment
 
 function renderChoices(choices, currentChosen, isOpen, handleClick) {
 

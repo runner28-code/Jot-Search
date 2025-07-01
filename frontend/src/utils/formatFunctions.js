@@ -1,7 +1,6 @@
 import fixStringNulls from './fixStringNulls';
 import { experienceMap } from './dbFieldMapping';
 import { stateCodeMap } from './constants';
-
 export function formatCandidateData(candidateData) {
   const formattedData = fixStringNulls(candidateData);
 
@@ -101,7 +100,6 @@ export function formatPhoneNumber(phoneNumberString) {
     const firstThree = phoneNumberString.slice(5, 8);
     const lastFour = phoneNumberString.slice(8, 12);
     return `${internationalCode} (${areaCode}) ${firstThree}-${lastFour}`;
-// Temp comment
   }
   return phoneNumberString;
 }

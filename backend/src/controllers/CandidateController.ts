@@ -14,6 +14,7 @@ import { FilterBody } from "../types/Common";
 import { User } from "../types/User";
 import { COMPANY } from "../utils/constant";
 
+import db from "../utils/db";
 
 import { JobFilter, USER_FILTER } from "../utils/FieldMatch";
 import { getSavedJobs, saveJob } from "../utils/MainCrud";
@@ -30,7 +31,6 @@ export class CandidateController {
   @Authorized()
   @Get("/savedJobs")
   async savedJobs(@QueryParam("candidate") candidate: string) {
-    return await getSavedJobs(candidate);
   }
 
   @Authorized()

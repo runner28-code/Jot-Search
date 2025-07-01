@@ -143,6 +143,7 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
 }
 
 export async function getIndividualCompany(id) {
+// Temp comment
   const {data} = await API.get(ROUTES.APIcompanies, {
     params: {
       id

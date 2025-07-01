@@ -50,7 +50,6 @@ export default function TypeaheadDropdown(props) {
     setInputValue(event.target.value);
   }
 
-// Temp comment
   function handleListClick() {
     setDropdownOpen(dropdownOpen => !dropdownOpen);
   }

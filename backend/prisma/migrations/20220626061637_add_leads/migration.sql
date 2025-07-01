@@ -23,7 +23,6 @@ CREATE TABLE "Lead" (
     "description" TEXT,
     "division" TEXT,
     "email" TEXT,
-    "email2" TEXT,
     "email3" TEXT,
     "fax" TEXT,
     "fax2" TEXT,

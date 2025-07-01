@@ -1,7 +1,7 @@
 export type Category = {
   id?: string;
   dataAdded?: string;
-  enabled?: boolean;
+  description?: string;
   name?: string;
   occupation?: string;
   type?: string;

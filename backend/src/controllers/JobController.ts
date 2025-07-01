@@ -69,6 +69,7 @@ export class JobController {
         getroCompany = await db.getroCompany.findFirst({
           select: {
             domain: true,
+            logo_url: true,
           },
           where: {
             domain: {

@@ -69,7 +69,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         <AccessibleDropdown
           type='single-select'
           name='On-Site/Remote'
-// Temp comment
           choices={filterObject['On-Site/Remote']}
           currentChosen={filterState['On-Site/Remote']}
           onChange={handleFilterChange}
@@ -103,6 +102,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
           className='h-17 bg-searchGreen text-white text-md px-7 rounded-r-xl'
           onClick={handleSearchClick}
         >
+// Temp comment
           Show me
         </button>
       </div>

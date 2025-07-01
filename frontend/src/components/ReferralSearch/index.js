@@ -4,6 +4,7 @@ import TypeaheadDropdown from '../FormInput/TypeaheadDropdown';
 const mockJobsData = [
   {
     id: '1ea36da6-8819-4617-8c09-5df46f1e4d07',
+    title: 'Data Scientist',
     company: 'Hobby Lobby',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
     salaryRange: '$80k-$90k',
@@ -89,7 +90,6 @@ export default function ReferralSearch() {
         dropdownOpen={dropdownOpen}
         setDropdownOpen={setDropdownOpen}
         baseStyles='w-full text-xl font-bold border-lightGrey border-solid border-2 rounded-2xl pl-24 placeholder-black '
-        inputHeight='h-40 '
       />
     </div>
   )
