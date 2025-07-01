@@ -5,5 +5,4 @@ CREATE TABLE "Category" (
     "dateAdded" TIMESTAMP(3),
     "description" TEXT,
     "enabled" BOOLEAN NOT NULL DEFAULT true,
-    "externalID" INTEGER,
     "occupation" TEXT,

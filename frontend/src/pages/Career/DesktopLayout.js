@@ -89,6 +89,7 @@ export default function DesktopLayout(props) {
                 className='h-11 mr-5' />
               <p className='text-textBlack'>{salaryString}</p>
             </div>
+// Temp comment
           </div>
           {(role === 'candidate' || role === 'guest') && (
             <ApplyButton

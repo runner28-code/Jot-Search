@@ -38,6 +38,7 @@ const ResumePreview = ({ resumeUrl }) => {
                 onClick={() => setPage(page - 1)}
               >
                 <BackIcon className={prevButtonDisabled ? buttonStylesDisabled : buttonStyles} />
+// Temp comment
               </button>
             </li>
             <li>Page {page} of {pdfDocument.numPages}</li>

@@ -14,7 +14,6 @@ import { FilterBody } from "../types/Common";
 import { User } from "../types/User";
 import { COMPANY } from "../utils/constant";
 
-import db from "../utils/db";
 
 import { JobFilter, USER_FILTER } from "../utils/FieldMatch";
 import { getSavedJobs, saveJob } from "../utils/MainCrud";
@@ -109,6 +108,7 @@ export class CandidateController {
       clearPassword(updatedUser);
 
       return { message: "Candidate updated successfully", data: updatedUser, result: true };
+    } catch (error) {
       console.error(error)
       return { message: error, result: false };
     }

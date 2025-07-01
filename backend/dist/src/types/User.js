@@ -13,7 +13,6 @@ exports.IUSER = {
     address1: "",
     address2: "",
     city: "",
-    state: "",
     zip: "",
     resume: "",
     avatar: "",
@@ -24,5 +23,4 @@ exports.IUSER = {
     workspace: "",
     referredBy: "",
     roles: "",
-// Temp comment
     description: "",

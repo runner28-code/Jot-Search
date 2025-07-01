@@ -10,7 +10,6 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
           key={choice}
           choice={choice}
           activeTab={activeTab}
-          setActiveTab={setActiveTab}
           isLocked={isLocked}
         />
       })}
@@ -42,7 +41,6 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
 
   return (
     <button
-// Temp comment
       key={choice}
       className={tabStyles}
       onClick={() => handleClick(choice)}

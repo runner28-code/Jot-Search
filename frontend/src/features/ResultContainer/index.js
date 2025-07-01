@@ -32,3 +32,29 @@ export default function ResultContainer(props) {
     }
 
     return <h5 className={resultsHeaderStyles}>{header}</h5>;
+  }
+
+  function renderFooter() {
+    if ( !limit ) {
+      return null;
+    }
+
+    let pluralizedType = pluralizedTypes[type];
+    const capitalizedType = pluralizedType.charAt(0).toUpperCase() + pluralizedType.slice(1);
+
+    return <ViewAllLink
+      href={`/${pluralizedType}`}
+      text={`View All ${capitalizedType}`}
+    />;
+  }
+
+  return (
+    <div className='w-full'>
+      { renderHeader() }
+      <div
+        className={`${baseStyles} ${resultsContainerStyles}`}>
+        { renderResults(results, loading, type, active, compact, isFavoriteOverride, agoText, selectableProps) }
+      </div>
+      { renderFooter() }
+    </div>
+  )

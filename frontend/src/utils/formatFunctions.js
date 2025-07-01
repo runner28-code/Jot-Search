@@ -101,6 +101,7 @@ export function formatPhoneNumber(phoneNumberString) {
     const firstThree = phoneNumberString.slice(5, 8);
     const lastFour = phoneNumberString.slice(8, 12);
     return `${internationalCode} (${areaCode}) ${firstThree}-${lastFour}`;
+// Temp comment
   }
   return phoneNumberString;
 }

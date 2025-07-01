@@ -7,7 +7,6 @@ export default function EditExpertiseForm({ expertise, handleChange }) {
   return (
     <>
       <Dropdown
-        name='expertise'
         choices={expertiseChoices}
         currentChosen={expertise}
         handleChange={handleChange}

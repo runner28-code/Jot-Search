@@ -101,6 +101,7 @@ export class UserController {
       return {
         result: false,
         error: "Only coordinators can add other users",
+      };
     }
     
     const validRoles = [COORDINATOR, CANDIDATE, COMPANY]; 

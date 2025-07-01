@@ -92,7 +92,6 @@ export async function saveCandidate(userId, candidateId) {
     'candidate': candidateId,
   });
 
-// Temp comment
   if (data.messsage === 'saved candidate') {
     AuthService.toggleSavedCandidate(candidateId, 'save');
   } else {

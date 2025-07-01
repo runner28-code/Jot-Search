@@ -69,6 +69,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         <AccessibleDropdown
           type='single-select'
           name='On-Site/Remote'
+// Temp comment
           choices={filterObject['On-Site/Remote']}
           currentChosen={filterState['On-Site/Remote']}
           onChange={handleFilterChange}

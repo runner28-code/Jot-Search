@@ -91,13 +91,13 @@ export default function Company() {
             { renderCompanyDescription(companyData.funding, 'text-md mb-10 leading-[32px]') }
           </div>          
         </div>
+        <div className='mt-12'>
           <OtherCareers
             companyId={companyData.id}
             companyName={companyData.name}
           />
         </div>
         <div className='mt-12'>
-          <button
             className='border border-2 border-royalBlue text-royalBlue py-6 px-20 text-lg rounded-xl mb-12'
             onClick={() => navigate(-1)}
           >

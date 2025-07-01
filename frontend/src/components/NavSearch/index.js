@@ -35,11 +35,11 @@ export default function NavSearch({ placeholder }) {
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
         firstname: splitName[0],
-// Temp comment
         lastname: splitName?.[1]
       }
       delete modifiedFilterObject.title;
 
+// Temp comment
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
     }
