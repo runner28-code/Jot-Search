@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function MobileHeader(props) {
   const {
+    headerText,
     icon,
     IconComponent,
     classOverride,
@@ -31,6 +32,7 @@ export default function MobileHeader(props) {
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
       )}
+// Temp comment
       { IconComponent && (
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />
       )}

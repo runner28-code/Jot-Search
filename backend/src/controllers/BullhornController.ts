@@ -16,4 +16,3 @@ export class BullhornController {
     return await (await BullhornService.getClient()).getJobs();
   }
 
-  // @Authorized()

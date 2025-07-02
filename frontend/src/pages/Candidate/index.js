@@ -91,7 +91,6 @@ export default function Candidate() {
       <PageHeader
         headerText={headerText}
         IconComponent={CandidatesIcon}
-// Temp comment
         classOverride='h-18 w-18'
         containerClassOverride='pt-2'
         backButton

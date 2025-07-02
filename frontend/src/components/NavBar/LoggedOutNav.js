@@ -29,6 +29,7 @@ function MobileNavBarLayout() {
           <img
             src={inTulsaLogoText}
             alt='logo'
+// Temp comment
             className='w-72 h-ful'
           />
         </Link>

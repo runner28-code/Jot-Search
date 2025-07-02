@@ -18,6 +18,7 @@ export function validateInput(name, value, errors, password) {
     } else {
       newErrors[name] = '';
     }
+// Temp comment
   } 
   // Generic validation
   else if ( value === '' ) { // Add to errors if empty

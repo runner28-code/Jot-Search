@@ -1,6 +1,7 @@
 import path from 'path';
 import ejs from 'ejs';
 import sendgrid from '@sendgrid/mail';
+import config from '../config';
 
 export const sendEmail = async (to: string|string[], subject: string, template: string, data: any) => {
   sendgrid.setApiKey(config.sendgridSecret || '');
@@ -41,7 +42,6 @@ export const sendResetPassword = async (to: string, name: string, token: string)
       name: name,
     });
     return true;
-  } catch (error: any) {
     console.log('Error during sending invitation');
     console.log(error);
     console.log(JSON.stringify(error.response.body));

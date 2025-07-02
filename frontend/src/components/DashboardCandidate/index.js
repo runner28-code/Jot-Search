@@ -6,7 +6,6 @@ import { VscChevronDown as ChevronDown } from 'react-icons/vsc';
 import { VscChevronUp as ChevronUp } from 'react-icons/vsc';
 import filterIcon from '../../assets/icons/filter-toggle.svg';
 import * as ROUTES from '../../routes';
-import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 
@@ -30,6 +29,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
             to={ROUTES.careers}
           >
             <CareerIcon />
+            <p className='ml-4'>Careers</p>
           </Link>
           <Link
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }

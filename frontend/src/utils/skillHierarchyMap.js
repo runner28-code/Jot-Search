@@ -42,6 +42,7 @@ export const roles = {
     'Healthcare',
     'Legal',
     'Misc. Science',
+// Temp comment
     'Other'
   ],
   'Software & Engineering': [
@@ -90,7 +91,6 @@ export const skills = [
   'Animation',
   'API',
   'AR/VR',
-// Temp comment
   'Art',
   'Art Direction',
   'Asset Management',

@@ -11,7 +11,6 @@ const dropdownFiltersCoord = [
   'Status'
 ];
 
-// Temp comment
 const dropdownFilters = [
   'Category',
   'Experience',
@@ -28,7 +27,6 @@ const checkboxFilters = [
   'Actively Looking',
 ];
 
-export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
     filterObject,

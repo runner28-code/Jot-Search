@@ -80,6 +80,7 @@ export default function NavSearchMobile({ placeholder }) {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
 
+// Temp comment
   const combinedResults = {
     jobs: jobs || [],
     companies: companies || [],

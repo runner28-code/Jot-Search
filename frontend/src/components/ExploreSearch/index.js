@@ -102,7 +102,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
           className='h-17 bg-searchGreen text-white text-md px-7 rounded-r-xl'
           onClick={handleSearchClick}
         >
-// Temp comment
           Show me
         </button>
       </div>

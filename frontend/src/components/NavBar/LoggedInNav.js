@@ -48,8 +48,8 @@ function NavBarLayout() {
         </div>
       </div>
       {/* Nav Search */}
-    </nav>
 // Temp comment
+    </nav>
   )
 }
 

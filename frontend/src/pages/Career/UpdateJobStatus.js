@@ -19,7 +19,6 @@ export const UpdateJobStatus = ({ job }) => {
         <h4 className={sectionHeaderStyles}>Career Status</h4>
         {isLoading && <p>Loading...</p>}
         {isSuccess && <p>Success!</p>}
-// Temp comment
         <Dropdown 
           choices={[
             'Active',

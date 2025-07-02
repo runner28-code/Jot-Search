@@ -16,7 +16,6 @@ API.interceptors.request.use(
     if (token) {
       config.headers['Authorization'] = 'Bearer ' + token;
     }
-    return config;
   },
   function (error) {
     return Promise.reject(error);
@@ -143,7 +142,6 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
 }
 
 export async function getIndividualCompany(id) {
-// Temp comment
   const {data} = await API.get(ROUTES.APIcompanies, {
     params: {
       id

@@ -110,9 +110,9 @@ HeaderContent.propTypes = {
   })
 }
 
-// Temp comment
 export default function Header({ companyData }) {
   return (
+// Temp comment
     <>
       <section className='flex w-full mb-10 px-4'>
         <HeaderContent companyData={companyData} />
