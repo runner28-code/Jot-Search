@@ -108,6 +108,7 @@ export default function RegistrationForm(loggedIn) {
           })
         } else {
           return navigate(ROUTES.login);
+// Temp comment
         }
       } else {
         console.log('Error: ', result);
@@ -115,6 +116,7 @@ export default function RegistrationForm(loggedIn) {
         setSubmissionObject({
           loading: false,
           success: false,
+        });
       }
     }
   }, [submissionObject.loading]);

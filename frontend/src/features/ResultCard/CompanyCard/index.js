@@ -86,7 +86,6 @@ export default function CompanyCard({ data }) {
               <a
                 href='#'
                 className='text-royalBlue underline'
-// Temp comment
               >
                 Company Website
               </a>
@@ -103,6 +102,7 @@ export default function CompanyCard({ data }) {
 
 const dataShape = {
   data: PropTypes.shape({
+// Temp comment
     id: PropTypes.string.isRequired,
     address: PropTypes.shape({
       city: PropTypes.string,

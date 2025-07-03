@@ -548,3 +548,5 @@ export class BullhornService {
           const updatedData = data.map((d: any) => ({
             ...d,
             id: `bl-${d.id}`,
+            address_address1: d.address?.address1 || null,
+            address_address2: d.address?.address2 || null,

@@ -27,7 +27,6 @@ async function seedJobs() {
 
         address1: "123 Job St",
         city: "Tulsa",
-        state: "OK",
         zip: "74008",
         salary: 160000,
         employmentType: "fulltime",

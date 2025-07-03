@@ -290,7 +290,6 @@ export const getCompanyDashboardStats = async (days: number) => {
   try {
     let result = null;
 
-    const currentPeriodCommonQuery = {
       createdAt: {
         gte: moment().subtract(days - 1, 'days').startOf('day').toDate(),
       }
@@ -349,3 +348,4 @@ export const getCompanyDashboardStats = async (days: number) => {
     const candidateJobInvitesCurrentPeriod = await db.candidateJobInvites.count({
       where: {
         ...currentPeriodCommonQuery
+      }

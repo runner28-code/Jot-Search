@@ -54,6 +54,7 @@ function HeaderContent({ companyData }) {
             <OpenCareers
               styles={headerRowTextStyles}
               companyId={companyData.id}
+            />
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <FaUsers

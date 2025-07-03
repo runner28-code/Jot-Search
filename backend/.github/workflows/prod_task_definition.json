@@ -14,6 +14,5 @@
 //                     "hostPort": 5000,
 //                     "protocol": "tcp"
 //                 }
-//             ],
 //             "essential": true,
 //             "logConfiguration": {

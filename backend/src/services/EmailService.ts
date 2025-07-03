@@ -66,3 +66,4 @@ export const sendCandidatesToEmployers = async (candidates: string[], employers_
 
 export const sendNewUserNotification = async (to: string, name: string) => {
   try {
+    const base_url = process.env?.FRONTEND_URL || 'http://localhost:3000';

@@ -46,7 +46,6 @@ const job_filter_exclude_keys = [
     "biologist",
     "biomed",
     "blender",
-    "body repair",
     "breakfast",
     "budget",
     "builder",
@@ -272,3 +271,4 @@ const job_filter_exclude_keys = [
     "optometrist",
     "ot",
     "painter",
+    "paralegal",

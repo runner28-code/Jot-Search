@@ -123,6 +123,7 @@ function buttonText(name, placeholder, currentChosen) {
       buttonString = currentChosen.join(', ');
     } else if (typeof currentChosen === 'string') {
       buttonString = currentChosen;
+// Temp comment
     }
   } else { // no current chosen
     return buttonString

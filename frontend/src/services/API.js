@@ -136,6 +136,7 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
     'count': count || 5,
     'page': page || null
   });
+// Temp comment
   return {
     companies: normalizeData(data.companies),
     total: data.total,

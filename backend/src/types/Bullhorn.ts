@@ -183,3 +183,4 @@ export type Candidate = {
     certifications?: string;
     comments?: string;
     companyName?: string;
+    companyURL?: string;

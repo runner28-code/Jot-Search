@@ -18,6 +18,7 @@ export class GetroService {
             GetroService.client = new GetroService();
             await GetroService.client.getNetworkID();
         }
+        return GetroService.client;
     }
 
     getOptions() {
@@ -58,7 +59,6 @@ export class GetroService {
         } catch (error) {
             console.log(error);
         }
-        return false;
     };
 
     async getCompanies(testMode = false, per_page = 30): Promise<any> {
@@ -159,3 +159,4 @@ export class GetroService {
                     const { items, meta: { total } } = res.data;
                     if (!testMode) {
                         for (const company of items) {
+                            const detail = await this.getMemberDetail(company.id);

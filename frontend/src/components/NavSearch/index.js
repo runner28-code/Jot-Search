@@ -7,6 +7,7 @@ import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 import searchWhite from '../../assets/images/search-white.webp';
 import searchGray from '../../assets/images/search-gray.svg';
+// Temp comment
 
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
@@ -71,4 +72,5 @@ export default function NavSearch({ placeholder }) {
   }, [location]);
 
   /* Close dropdown on any outside clicks */
+  const closeDropdown = () => {
     setForceHidden(true);

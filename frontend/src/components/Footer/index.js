@@ -88,7 +88,6 @@ export default function Footer() {
         </div>
       </div>
     </>)
-// Temp comment
   }
 
   return (<>
@@ -385,7 +384,6 @@ function NavFooterMobile() {
           Finance Job Openings
         </a>
         <a
-          href="/careers"
           className={linkStyle}
         >
           Tulsa Jobs

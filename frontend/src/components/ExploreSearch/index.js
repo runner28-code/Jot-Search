@@ -5,6 +5,7 @@ import FilterSearch from '../FilterSearch';
 import AccessibleDropdown from '../AccessibleDropdown';
 import LoadingSpinner from '../LoadingSpinner';
 import { jobFilterObject } from '../../utils/filterObjects';
+// Temp comment
 import * as ROUTES from '../../routes';
 
 function adjustJobFilterObject() {
@@ -103,7 +104,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
           onClick={handleSearchClick}
         >
           Show me
-// Temp comment
         </button>
       </div>
     </div>

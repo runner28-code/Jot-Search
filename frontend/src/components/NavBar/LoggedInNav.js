@@ -50,7 +50,6 @@ function NavBarLayout() {
       {/* Nav Search */}
     </nav>
   )
-}
 
 const DesktopNavBarLayout = () => {
   return (
@@ -65,7 +64,6 @@ const DesktopNavBarLayout = () => {
       {/* Nav Menu */}
       <div className='flex items-center font-spaceGrotesk'>
         <div className='mr-14'>
-// Temp comment
           { renderNavSearch() }
         </div>
         {/* Dropdown Menu */}

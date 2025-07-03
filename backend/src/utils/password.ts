@@ -1,4 +1,5 @@
 const crypto = require('crypto');
+
 export const clearPassword = (object: any) => {
     delete object?.password;
     return object;
@@ -10,3 +11,4 @@ export const encryptPassword = (password: string) => {
 
     encrypted_password_hash.update(sr + password);
 
+    return `${sr}${encrypted_password_hash.digest('hex')}`;

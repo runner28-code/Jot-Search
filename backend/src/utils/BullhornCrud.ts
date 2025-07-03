@@ -40,6 +40,7 @@ export const saveCompanies = async (companies: any[]) => {
     "notes",
     "dateAdded",
     "dateLastModified",
+  ];
   try {
     for (const company of companies) {
       try {

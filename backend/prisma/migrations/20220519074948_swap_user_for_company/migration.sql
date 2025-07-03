@@ -28,6 +28,7 @@ CREATE TABLE "Company" (
     "billingAddressId" TEXT,
     "billingContact" TEXT,
     "billingFrequency" TEXT,
+    "billingPhone" TEXT,
     "branchId" TEXT,
     "businessSectorList" TEXT[],
     "companyDescription" TEXT,

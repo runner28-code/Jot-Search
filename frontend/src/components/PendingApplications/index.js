@@ -22,13 +22,13 @@ export default function PendingApplications () {
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,
-        agoDate: job.appliedDate
       }});
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
       loading: false
+    });
   }, []);
 
   const { width } = useWindowDimensions();

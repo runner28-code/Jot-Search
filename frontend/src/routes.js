@@ -52,3 +52,4 @@ export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';
 /* API Links */
 export const search = '/search';
 // Auth
+export const APIlogin = '/login';
