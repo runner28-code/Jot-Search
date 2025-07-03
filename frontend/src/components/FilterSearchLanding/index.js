@@ -23,6 +23,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
       className={ containerStyles }
       onKeyDown={handleKeydown}
     >
+      <input
         type='text'
         className={ inputStyles }
         placeholder={ placeholderString }

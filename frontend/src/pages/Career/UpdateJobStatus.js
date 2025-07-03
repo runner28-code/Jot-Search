@@ -18,6 +18,7 @@ export const UpdateJobStatus = ({ job }) => {
       <div className='flex flex-col'>
         <h4 className={sectionHeaderStyles}>Career Status</h4>
         {isLoading && <p>Loading...</p>}
+        {isSuccess && <p>Success!</p>}
         <Dropdown 
           choices={[
             'Active',
@@ -38,4 +39,3 @@ export const UpdateJobStatus = ({ job }) => {
         />
       </div>
     </div>
-  )

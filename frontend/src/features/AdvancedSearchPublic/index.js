@@ -14,7 +14,6 @@ import {
   candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
-// Temp comment
   defaultCandidateFilterState,
   buildSearchFilters
 } from '../../utils/filterObjects';

@@ -44,3 +44,4 @@ export type Job = {
     locations?: string;
     organization_doman?: string;
     organization_id?: string;
+    organization_logo_url?: string;

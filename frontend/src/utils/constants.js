@@ -1,6 +1,7 @@
 export const pluralizedTypes = {
   candidate: 'candidates',
   candidates: 'candidates',
+// Temp comment
   company: 'companies',
   companies: 'companies',
   career: 'careers',
@@ -16,7 +17,6 @@ export const openJobStatuses = [
 ];
 
 export const stateCodeMap = {
-// Temp comment
   Alabama: 'AL',
   Alaska: 'AK',
   Arizona: 'AZ',

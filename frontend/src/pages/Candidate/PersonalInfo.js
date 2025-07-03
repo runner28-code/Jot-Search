@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+// Temp comment
 import PhoneInput from 'react-phone-number-input/input'
 import Dropdown from '../../components/UniversalDropdown';
 import FormInput from '../../components/FormInput';
@@ -24,7 +25,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   }
   const [formData, setFormData] = useState({
     firstname: candidateData.firstname || '',
-// Temp comment
     lastname: candidateData.lastname || '',
     email: candidateData.email || '',
     phone: candidateData.phone || '',

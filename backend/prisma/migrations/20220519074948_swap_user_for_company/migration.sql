@@ -57,3 +57,4 @@ CREATE TABLE "Company" (
     "taxRate" DOUBLE PRECISION,
     "tickerSymbol" TEXT,
     "trackTitle" TEXT,
+    "twitterHandle" TEXT,

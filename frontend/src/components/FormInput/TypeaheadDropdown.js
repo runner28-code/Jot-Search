@@ -39,7 +39,6 @@ export default function TypeaheadDropdown(props) {
     if (!dropdownOpen) setInputValue('');
   }, [dropdownOpen]);
   
-// Temp comment
   /* Filter choices based on input */
   useEffect(() => {
     if (dropdownType === 'tags') {

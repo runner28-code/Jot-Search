@@ -48,6 +48,7 @@ export const choices = {
   },
   myFavorites: {
     label: 'My Favorites',
+// Temp comment
     icon: FavoritesIcon,
     link: ROUTES.favorites,
   },

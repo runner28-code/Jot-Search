@@ -136,7 +136,6 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
     'count': count || 5,
     'page': page || null
   });
-// Temp comment
   return {
     companies: normalizeData(data.companies),
     total: data.total,
@@ -233,3 +232,12 @@ export async function getJobsFull(filters, count, operator, page) {
     jobs: normalizeData(data.jobs),
     total: data.total,
   }
+}
+
+export async function getJobById(id) {
+  const { data } = await API.get(ROUTES.APIjobs, {
+    params: {
+      id
+    }
+  });
+  return normalizeData(data.job);

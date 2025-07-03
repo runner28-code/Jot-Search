@@ -76,7 +76,6 @@ HeaderContent.propTypes = {
     numEmployees: PropTypes.number,
   })
 }
-
 export default function HeaderMobile({ companyData }) {
   return (
     <>

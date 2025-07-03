@@ -4,7 +4,6 @@ export const expertises = [
   'Operations',
   'Other',
   'Software & Engineering',
-  'Sales & Biz Dev',
 ];
 
 export const roles = {

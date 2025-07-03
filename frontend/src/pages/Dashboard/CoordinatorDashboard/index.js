@@ -1,4 +1,4 @@
-import PageHeader from '../../../components/PageHeader';
+import PropTypes from 'prop-types';
 import AdvancedSearch from '../../../features/AdvancedSearch';
 import Stats from '../../../features/Stats';
 import gaugeIcon from '../../../assets/icons/gauge.svg';

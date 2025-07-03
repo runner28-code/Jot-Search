@@ -5,6 +5,7 @@ import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
+// Temp comment
 import { VscClose as CloseIcon } from 'react-icons/vsc';
 import searchGray from '../../assets/images/search-gray.svg';
 import searchWhite from '../../assets/images/search-white.webp';
@@ -16,6 +17,7 @@ import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 import AuthService from '../../services/auth';
 
 
+import {
   defaultJobFilterState,
   buildSearchFilters,
   defaultCandidateFilterState

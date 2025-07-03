@@ -23,7 +23,6 @@ export class ClientContactController {
         where: {
           id,
         },
-      });
 
       return {
         contact: clearPassword(contact),

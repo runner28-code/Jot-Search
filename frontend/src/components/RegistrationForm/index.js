@@ -28,6 +28,7 @@ const defaultState = {
   address1: '',
   city: '',
   state: '',
+// Temp comment
   zip: '',
   willRelocate: false,
   roles: [],
@@ -108,7 +109,6 @@ export default function RegistrationForm(loggedIn) {
           })
         } else {
           return navigate(ROUTES.login);
-// Temp comment
         }
       } else {
         console.log('Error: ', result);

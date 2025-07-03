@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
 
-// Temp comment
 // Images
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -13,7 +12,6 @@ export default function DashboardMinified({ location }) {
 
   if( loggedIn ) {
     return (
-      <div className='flex flex-row items-center justify-start bg-sky-600 mb-8 text-white py-4 px-10'>
         <LinkSwap
           location={location}
           loggedIn={loggedIn}

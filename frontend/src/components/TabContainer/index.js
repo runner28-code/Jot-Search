@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLocked, absolute = true }) {
 
@@ -40,6 +41,7 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
   tabStyles += conditionalStyles(isActiveTab, isLocked);
 
   return (
+// Temp comment
     <button
       key={choice}
       className={tabStyles}

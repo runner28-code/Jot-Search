@@ -180,3 +180,4 @@ export const saveClientContacts = async (contacts: any[]) => {
         console.log(error.message);
         console.log(
           `ERROR: while saving ClientContact with ID = ${contact.id}`
+        );

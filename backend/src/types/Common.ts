@@ -77,3 +77,4 @@ export type JobSearchByFilterResponse =
       total?: number;
       message?: any;
     }
+  | AllJobsResponse;

@@ -59,6 +59,7 @@ export class GetroService {
         } catch (error) {
             console.log(error);
         }
+        return false;
     };
 
     async getCompanies(testMode = false, per_page = 30): Promise<any> {

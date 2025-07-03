@@ -24,6 +24,7 @@ export default function CareerFilterLayout(props) {
   const {
     defaultFilterObject,
     filterObject,
+// Temp comment
     handleFilterChange,
     searchTerm,
     setSearchTerm,
@@ -51,6 +52,7 @@ export default function CareerFilterLayout(props) {
       </div>
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[65px]'}>
         <FilterSearch
+          searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Careers'

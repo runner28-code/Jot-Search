@@ -8,6 +8,7 @@
         "plugin:react/recommended",
         "plugin:react/jsx-runtime"
     ],
+    "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
         },
@@ -34,7 +35,6 @@
         "react/jsx-first-prop-new-line": [
             "warn",
             "multiline"
-        ]
     },
     "settings": {
         "react": {

@@ -1,4 +1,3 @@
-// Temp comment
 import * as ROUTES from '../../routes';
 
 export default function BusinessBooming() {
@@ -11,7 +10,6 @@ export default function BusinessBooming() {
         <a
           href={ROUTES.lifeInTulsa}
           target='_blank'
-          rel='noreferrer'
           className='flex items-center justify-center bg-white text-sm mt-12 py-8 rounded-lg w-3/5'
         >
           <span className='text-orangeHeroOverlay'>Learn About Tulsa</span>

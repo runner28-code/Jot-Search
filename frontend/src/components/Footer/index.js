@@ -264,7 +264,6 @@ function NavFooter() {
         </a>
         <a
           href="/careers"
-          className={linkStyle}
         >
           Sales & Business Developement Job Openings
         </a>
@@ -384,6 +383,7 @@ function NavFooterMobile() {
           Finance Job Openings
         </a>
         <a
+          href="/careers"
           className={linkStyle}
         >
           Tulsa Jobs

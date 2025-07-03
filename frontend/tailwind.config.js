@@ -78,7 +78,6 @@ module.exports = {
         darkGray: '#292938',
         'black70%': '#000000b3',
         'black50%': '#00000080',
-// Temp comment
       },
       backgroundImage: {
         'tulsa-3': 'url(\'./assets/images/tulsa-3.webp\')',
@@ -110,6 +109,7 @@ module.exports = {
         '20%': '20%',
         '25%': '25%',
         '30%': '30%',
+// Temp comment
         '35%': '35%',
         '40%': '40%',
         '44%': '44%',
@@ -146,3 +146,4 @@ module.exports = {
         '100': '25rem',
         '105': '26.25rem',
         '110': '27.5rem',
+        '112': '28rem',

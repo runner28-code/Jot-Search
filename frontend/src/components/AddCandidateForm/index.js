@@ -215,7 +215,6 @@ export default function RegistrationForm() {
             placeholder='Years of Experience' 
             value={formObj.experience}
             onChange={handleChange}
-            choiceObject={experienceMap}
             error={errors.includes('experience')}
           />
           <FormInput
