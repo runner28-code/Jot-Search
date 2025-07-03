@@ -124,3 +124,4 @@ async function seedCategories() {
         externalID: 2000001,
       },
       {
+        name: "Sales & Biz Dev",

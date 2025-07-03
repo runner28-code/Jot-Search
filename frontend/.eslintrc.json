@@ -6,6 +6,7 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
+        "plugin:react/jsx-runtime"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -29,7 +30,6 @@
             { "allowTemplateLiterals": true }
         ],
         "react/jsx-max-props-per-line": [
-            "warn"
         ],
         "react/jsx-first-prop-new-line": [
             "warn",

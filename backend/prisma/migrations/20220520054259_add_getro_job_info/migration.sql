@@ -22,4 +22,3 @@ CREATE TABLE "GetroJobInfo" (
     "description" TEXT,
     "discarded" TEXT,
     "employment_types" TEXT,
-    "expires_at" TIMESTAMP(3),

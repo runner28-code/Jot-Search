@@ -53,6 +53,7 @@ export default function Apply() {
 
   useEffect(async () => {
     if ( !isLoggedIn ) {
+// Temp comment
       const careerData = await getJobById(jobId);
       setCareer(careerData);
       setOriginalObject(defaultState);

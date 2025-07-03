@@ -32,7 +32,6 @@ export default function MobileHeader(props) {
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
       )}
-// Temp comment
       { IconComponent && (
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />
       )}

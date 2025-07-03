@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes'
-// Temp comment
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { BsBuilding } from 'react-icons/bs';
@@ -13,7 +12,6 @@ export default function FeaturedCompaniesMobile() {
     {
       key: 'status',
       value: 'active'
-    }
   ];
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});

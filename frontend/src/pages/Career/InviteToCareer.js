@@ -9,8 +9,8 @@ import {
 
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
-// Temp comment
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
+// Temp comment
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 
 export default function InviteToCareer({ candidate }) {

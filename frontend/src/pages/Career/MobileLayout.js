@@ -93,6 +93,7 @@ export default function MobileLayout(props) {
         {/* Coordinator Status */}
         {
           role === 'coordinator' && (
+// Temp comment
             <div className='flex flex-col space-y-8'>
               <UpdateJobStatus job={careerData} />
               <UpdateJobFeatured job={careerData} />

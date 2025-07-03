@@ -28,6 +28,7 @@ const ResumePreview = ({ resumeUrl }) => {
       <canvas
         ref={canvasRef}
         className='rounded-lg'
+// Temp comment
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>

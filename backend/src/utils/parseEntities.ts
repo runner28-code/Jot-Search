@@ -11,7 +11,6 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     firstname: data.firstName,
     lastname: data.lastName,
     gender: data.gender,
-    email: data.email,
     role: "candidate",
     address1: data.address_address1,
     address2: data.address_address2,
@@ -27,6 +26,7 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     referredBy: data.referredBy,
     roles: data.skillSet,
 
+    description: data.description,
     phone: data.phone || data.workPhone || data.mobile,
     status: data.status,
     username: data.username,

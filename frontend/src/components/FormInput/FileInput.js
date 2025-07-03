@@ -5,6 +5,7 @@ export default function FileInput({type, name, label, placeholder, required, val
   const inputRef = useRef(null);
 
   function handleKeyDown(e) {
+    if ( e.key === ' ' || e.key === 'Enter' ) {
       e.preventDefault();
       inputRef.current.click();
     }
@@ -12,6 +13,7 @@ export default function FileInput({type, name, label, placeholder, required, val
 
   return (
     <div>
+// Temp comment
       { renderLabel( name, label, value, placeholder, required, handleKeyDown, baseStyles ) }
       <input 
         className={`hidden ${disabled ? 'disabled cursor-not-allowed' : ''}`}

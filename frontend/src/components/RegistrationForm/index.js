@@ -115,7 +115,6 @@ export default function RegistrationForm(loggedIn) {
         setSubmissionObject({
           loading: false,
           success: false,
-        });
       }
     }
   }, [submissionObject.loading]);

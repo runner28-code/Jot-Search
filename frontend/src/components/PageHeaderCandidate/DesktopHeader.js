@@ -5,13 +5,13 @@ import SourceIdentifier from '../SourceIdentifier';
 export default function DesktopHeader(props) {
   const {
     headerText,
-// Temp comment
     icon,
     IconComponent,
     classOverride,
     containerClassOverride,
     colorizeStroke,
     dataSource,
+// Temp comment
     backButton
   } = props;
   const navigate = useNavigate();

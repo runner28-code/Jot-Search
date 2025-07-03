@@ -66,7 +66,6 @@ const uploadToS3 = async(req: any, res: any) => {
       res.status(500).send({
         result: false,
         error: e
-      })
     }
   });
 }
@@ -76,3 +75,4 @@ const getActualRequestDurationInMs = (start: any) => {
   const NS_TO_MS = 1e6;
   const diff = process.hrtime(start);
   return (diff[0] * NS_PER_SEC + diff[1]) / NS_TO_MS;
+};

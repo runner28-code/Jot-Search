@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import Home from '../../../assets/icons/home.svg';
 import AdvancedSearch from '../../../features/AdvancedSearch';
 import CareerFavorite from '../../../components/CareerFavorite';
@@ -9,6 +8,7 @@ import InvitationsToApply from '../../../components/InvitationsToApply';
 
 export default function CandidateDashboard() {
   const headerStyles = 'font-spaceGrotesk font-bold text-h1 text-royalBlue ';
+// Temp comment
   return (
     <>
       <div className='flex items-center justify-start mb-12 pt-8 px-4'>

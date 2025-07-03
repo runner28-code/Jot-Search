@@ -39,7 +39,6 @@ export default function FormInput(props) {
   };
   switch (type) {
     case 'file':
-// Temp comment
       return <FileInput
         type={type}
         name={name}

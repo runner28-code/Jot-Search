@@ -64,6 +64,7 @@ export class CompanyController {
         source: DataSource.UNKNOWN,
         message: "unsupported id",
       };
+    }
   }
 
   @Authorized()

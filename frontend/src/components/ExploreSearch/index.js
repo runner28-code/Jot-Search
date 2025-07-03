@@ -103,6 +103,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
           onClick={handleSearchClick}
         >
           Show me
+// Temp comment
         </button>
       </div>
     </div>

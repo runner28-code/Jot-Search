@@ -224,6 +224,7 @@ export class JobController {
         `LOWER(${companyAlias}.name) LIKE '%${value.toLowerCase()}%'`,
     };
 
+    const condition = getFilterConditions(
       _filters,
       operator,
       specialHandlers
@@ -237,3 +238,4 @@ export class JobController {
       `;
 
     return await BigQueryService.selectQuery(
+      dataset,

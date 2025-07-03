@@ -545,3 +545,6 @@ export class BullhornService {
         if (res.status === 200) {
           const { data } = res.data;
           total = res.data.total;
+          const updatedData = data.map((d: any) => ({
+            ...d,
+            id: `bl-${d.id}`,

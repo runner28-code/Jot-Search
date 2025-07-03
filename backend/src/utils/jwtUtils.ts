@@ -10,3 +10,4 @@ export const CreateJwtToken = (data: any) => {
   );
   return token;
 }
+

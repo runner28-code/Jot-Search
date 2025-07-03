@@ -39,6 +39,7 @@ model Category {
   candidates Candidate[] @relation("candidateCategory")
 }
 
+model History {
   id       String  @id @default(uuid())
   table    String
   recordId String

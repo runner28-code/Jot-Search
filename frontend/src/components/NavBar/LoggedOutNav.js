@@ -29,7 +29,6 @@ function MobileNavBarLayout() {
           <img
             src={inTulsaLogoText}
             alt='logo'
-// Temp comment
             className='w-72 h-ful'
           />
         </Link>
@@ -41,7 +40,6 @@ function MobileNavBarLayout() {
       </div>
       {/* Global Search */}
       <div className='flex justify-center'>
-        { renderGlobalSearch() }
       </div>
     </nav>
   )

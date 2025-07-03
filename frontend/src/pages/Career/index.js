@@ -50,7 +50,6 @@ export default function CareerPage() {
     postingAge,
     role
   }
-  const loggedIn = AuthService.loggedIn();
 
   const source = data.careerData.datasource;
 
@@ -73,6 +72,7 @@ export default function CareerPage() {
           <MobileLayout data={data} /> :
           <DesktopLayout data={data} />
       }
+      {
         role === 'coordinator' &&
         <InviteCandidates job={ careerData } />
       }

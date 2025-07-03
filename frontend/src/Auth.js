@@ -10,7 +10,6 @@ import {
   Logout,
   Profile,
 } from './pages';
-import AuthService from './services/auth';
 import * as ROUTES from './routes';
 
 
@@ -31,6 +30,7 @@ export default function Auth() {
           element={<Profile />} />
         <Route
           path={ROUTES.logout}
+          element={<Logout />} />
         <Route
           path={`${ROUTES.candidates}/:id`}
           element={<Candidate />} />

@@ -182,3 +182,4 @@ export type Candidate = {
     address_country_id?: string;
     certifications?: string;
     comments?: string;
+    companyName?: string;

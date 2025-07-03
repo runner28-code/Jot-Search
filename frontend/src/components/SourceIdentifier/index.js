@@ -4,8 +4,8 @@ import Pill from '../../assets/icons/pill.svg';
 export default function SourceIdentifier( type ) {
   return (<>
     <span className='bg-disabledGrey rounded-md flex items-center h-8 px-4 py-5'>
-// Temp comment
       <img
+// Temp comment
         className='w-4 mr-2'
         src={Pill}
       />

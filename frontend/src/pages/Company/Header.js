@@ -54,7 +54,6 @@ function HeaderContent({ companyData }) {
             <OpenCareers
               styles={headerRowTextStyles}
               companyId={companyData.id}
-            />
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <FaUsers
@@ -112,7 +111,6 @@ HeaderContent.propTypes = {
 
 export default function Header({ companyData }) {
   return (
-// Temp comment
     <>
       <section className='flex w-full mb-10 px-4'>
         <HeaderContent companyData={companyData} />

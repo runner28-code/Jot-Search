@@ -22,6 +22,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
             setPage={prevPage}
           >
             {'<'}
+// Temp comment
           </PaginationButton>
         }
         {totalPages <= 5 ? (

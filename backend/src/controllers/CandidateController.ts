@@ -30,7 +30,6 @@ import e from "express";
 export class CandidateController {
   @Authorized()
   @Get("/savedJobs")
-  async savedJobs(@QueryParam("candidate") candidate: string) {
     return await getSavedJobs(candidate);
   }
 
@@ -229,3 +228,4 @@ export class CandidateController {
         candidatesPromise = Promise.all([tppUserPromise, candidateOnlyPromise]).then(([tppUsers, candidates]) => {
           // combine the two arrays
           const typedUsers = tppUsers.map((user: any) => ({
+            ...user,
