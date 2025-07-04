@@ -74,7 +74,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
           onChange={handleFilterChange}
           stylesObject={{
             baseStyles: 'bg-white text-midGrey tracking-wide border-midGrey border-2 border-solid rounded-l-2xl pl-10 pr-6 ',
-// Temp comment
             inputHeight: 'h-18 ',
             inputWidth: 'w-80 ',
             marginBottom: 'mb-0 ',

@@ -24,6 +24,7 @@ module.exports = {
           from: {
             transform: 'rotate(180deg)'
           },
+// Temp comment
           to: {
             transform: 'rotate(0deg)'
           },
@@ -109,7 +110,6 @@ module.exports = {
         '20%': '20%',
         '25%': '25%',
         '30%': '30%',
-// Temp comment
         '35%': '35%',
         '40%': '40%',
         '44%': '44%',

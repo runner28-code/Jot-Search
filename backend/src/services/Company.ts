@@ -36,6 +36,5 @@ export const saveCompany = async (company: string, candidate: string) => {
           id: candidate,
         },
         data: {
-          savedCompanies: {
             connect: {
               id: company,

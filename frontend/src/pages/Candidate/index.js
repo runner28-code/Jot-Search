@@ -23,7 +23,6 @@ const PREFERENCE_ITEMS = {
   willRelocate: 'I\'m willing to relocate to Tulsa OK',
   willReceiveNotification: 'Receive emails about relevant opportunities based on your profile'
 }
-// Temp comment
 
 export default function Candidate() {
   // Redirect if userRole is 'candidate' unless it's their profile, candidates should not be able to see other candidates
@@ -95,6 +94,7 @@ export default function Candidate() {
         classOverride='h-18 w-18'
         containerClassOverride='pt-2'
         backButton
+// Temp comment
       />
       {/* Candidate Card (Company and Coordinator) */}
       {role !== 'candidate' && 

@@ -77,7 +77,6 @@ export default function RegistrationForm() {
             loading: false,
             success: true,
           })
-        } else {
           return navigate(ROUTES.login);
         }
       } else {
@@ -215,6 +214,7 @@ export default function RegistrationForm() {
             placeholder='Years of Experience' 
             value={formObj.experience}
             onChange={handleChange}
+            choiceObject={experienceMap}
             error={errors.includes('experience')}
           />
           <FormInput

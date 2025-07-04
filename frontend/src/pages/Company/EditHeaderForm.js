@@ -17,6 +17,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     zip: candidateData.zip,
   });
 
+  const handleInputChange = async (event) => {
     const { name, value } = event.target;
     if ( name === 'avatar' ) {
       const imageToUpload = event.target.files[0];
@@ -31,6 +32,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   const handleSubmit = () => {
     handleCandidateUpdate(formData);
     setEditMode(false);
+// Temp comment
   }
   
   const avatarUrl = appendPathToBaseUrl(formData.avatar);

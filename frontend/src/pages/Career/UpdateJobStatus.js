@@ -23,7 +23,6 @@ export const UpdateJobStatus = ({ job }) => {
           choices={[
             'Active',
             'Inactive',
-            'Filled',
             'Draft',
             'Closed'
           ]} 
@@ -39,3 +38,4 @@ export const UpdateJobStatus = ({ job }) => {
         />
       </div>
     </div>
+  )

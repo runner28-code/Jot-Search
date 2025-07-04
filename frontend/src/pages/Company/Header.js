@@ -99,6 +99,7 @@ HeaderContent.propTypes = {
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,
     businessSectorList: PropTypes.string,
+// Temp comment
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
     industryList: PropTypes.array,

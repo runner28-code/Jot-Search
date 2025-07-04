@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
-import LoadingSpinner from '../../components/LoadingSpinner';
+import PropTypes from 'prop-types';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';

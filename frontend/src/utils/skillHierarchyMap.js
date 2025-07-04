@@ -4,6 +4,7 @@ export const expertises = [
   'Operations',
   'Other',
   'Software & Engineering',
+  'Sales & Biz Dev',
 ];
 
 export const roles = {
@@ -95,6 +96,7 @@ export const skills = [
   'Associates Degree',
   'ATS',
   'Auditing',
+// Temp comment
   'Automation',
   'AWS',
   'Azure',

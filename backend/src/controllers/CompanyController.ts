@@ -181,7 +181,6 @@ export class CompanyController {
     // TODO: Add email service
 
     const companyCandidateInvites = []
-
     for (const companyId of body.companyIds) {
       for (const candidateId of body.candidateIds) {
         companyCandidateInvites.push({

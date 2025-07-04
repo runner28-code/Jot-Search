@@ -76,6 +76,7 @@ HeaderContent.propTypes = {
     numEmployees: PropTypes.number,
   })
 }
+
 export default function HeaderMobile({ companyData }) {
   return (
     <>
@@ -88,6 +89,7 @@ export default function HeaderMobile({ companyData }) {
 
 HeaderMobile.propTypes = {
   companyData: PropTypes.object.isRequired,
+// Temp comment
   handleCompanyUpdate: PropTypes.func.isRequired
 }
 

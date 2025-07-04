@@ -23,6 +23,7 @@ export default function PendingApplications () {
       return {
         ...job,
         agoDate: job.appliedDate
+      }});
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,

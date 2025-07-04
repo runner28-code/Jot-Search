@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react';
+// Temp comment
 import PropTypes from 'prop-types';
 
 import AuthService from './auth';
@@ -113,6 +114,7 @@ const CandidateProvider = ({children}) => {
   }, []);
 
   const handleCandidatesChange = (value) => {
+    setCandidates(value);
   }
 
   const handleCandidateUpdate = (updatedValues) => {

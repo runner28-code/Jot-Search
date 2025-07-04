@@ -10,7 +10,6 @@ export default function FileInput({type, name, label, placeholder, required, val
       inputRef.current.click();
     }
   }
-
   return (
     <div>
       { renderLabel( name, label, value, placeholder, required, handleKeyDown, baseStyles ) }

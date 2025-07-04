@@ -10,6 +10,7 @@ export default function Dashboard() {
 
   return (
     <main>
+// Temp comment
       <DashboardType userType={userType} />
     </main>
   )

@@ -23,6 +23,7 @@ export const UpdateJobFeatured = ({ job }) => {
       {isLoading && <p>Loading...</p>}
       {isSuccess && <p>Success!</p>}
       
+      <div className='flex space-x-16'>
         <button
           type="button" 
           name="featured"
@@ -31,7 +32,6 @@ export const UpdateJobFeatured = ({ job }) => {
           aria-checked={toggled}
           onClick={async() => {
             const { result } = await saveJob({ featured: !toggled, id: job.id })
-
             // TODO: Replace with react-query refetch
             if(result) {
               window.location.reload()

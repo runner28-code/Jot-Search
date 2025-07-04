@@ -61,6 +61,7 @@ class AuthService {
 
   clearStorage() {
     // Clear user token and profile data from localStorage
+    localStorage.removeItem('id_token');
     localStorage.removeItem('savedJobs');
     localStorage.removeItem('savedCompanies');
     localStorage.removeItem('savedCandidates');
@@ -83,7 +84,6 @@ class AuthService {
 
   async refreshSavedCandidates() {
     try {
-      const { user_id } = this.getProfile();
       const candidates = await getSavedCandidates(user_id);
       const candidateIDs = candidates.map(candidate => candidate.id);
       localStorage.setItem('savedCandidates', JSON.stringify(candidateIDs));

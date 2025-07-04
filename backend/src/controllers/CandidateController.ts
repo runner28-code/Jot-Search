@@ -53,7 +53,6 @@ export class CandidateController {
           password,
           candidate: userCandidate,
           ...returnableUserData
-        } = user;
         candidate = {
           ...(userCandidate || {}),
           ...returnableUserData,

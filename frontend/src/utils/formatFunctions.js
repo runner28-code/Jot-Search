@@ -27,6 +27,7 @@ export function formatCandidateData(candidateData) {
   formattedData.expertise = candidateData.expertise || 'No Expertise Chosen';
   formattedData.skills = candidateData.skills || 'No Skills Chosen';
   // If Candidate experience is a string, no need to map it
+  if ( candidateData.experience && !isNaN(candidateData.experience) ) {
     formattedData.experience = candidateData.experience.toString();
   }
   // User table has firstname and lastname, Candidate table has firstName and lastName, make sure both exist until we normalize the tables
@@ -85,6 +86,7 @@ export function formatPhoneNumber(phoneNumberString) {
   if ( regex.test(phoneNumberString) ) { // Already formatted correctly is regex passes
     return phoneNumberString;
   }
+// Temp comment
   if ( phoneNumberString.includes('-') ) { // Reset dashes. Will re-add dashes in correct format
     phoneNumberString = phoneNumberString.replace(/-/g, '');
   }

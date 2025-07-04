@@ -1,6 +1,6 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import RegistrationFormInternal from '../../../components/RegistrationFormInternal';
-// Temp comment
 
 export default function AddCandidate(loggedIn) {
   return (

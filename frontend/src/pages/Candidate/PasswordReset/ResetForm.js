@@ -27,7 +27,6 @@ export default function ResetForm({ candidateData, setType }) {
       });
 
       if ( res.data.result ) {
-        setType('Password Reset Successfully', true);
       } else {
         setType(res.data.error, false);
       }
@@ -57,7 +56,6 @@ export default function ResetForm({ candidateData, setType }) {
           value={formData.passwordConfirm}
           onChange={handleChange}
           label='New Password Confirm'
-// Temp comment
         />
       </div>
       { renderMatch(match) }
