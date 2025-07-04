@@ -32,7 +32,6 @@ export default function ResultContainer(props) {
     }
 
     return <h5 className={resultsHeaderStyles}>{header}</h5>;
-  }
 
   function renderFooter() {
     if ( !limit ) {
@@ -44,7 +43,6 @@ export default function ResultContainer(props) {
 
     return <ViewAllLink
       href={`/${pluralizedType}`}
-// Temp comment
       text={`View All ${capitalizedType}`}
     />;
   }

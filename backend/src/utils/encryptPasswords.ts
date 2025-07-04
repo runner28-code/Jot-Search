@@ -12,6 +12,7 @@ import { DATASET_MAIN, Tables } from "../types/Common";
         console.log('/// START ENCRYPT ALL PASSWORDS');
 
         const query = `
+            SELECT id,email,password FROM \`${DATASET_MAIN}.${Tables.USER}\`
             WHERE email='test9@email.com' or email='v.deserio3@outlook.com' or email='test2@email.com'
         `;
         const options = {
@@ -26,3 +27,4 @@ import { DATASET_MAIN, Tables } from "../types/Common";
             if(!user.password){
               console.log(`user ${user.email} password is empty. Skipped.`);
               continue
+            }

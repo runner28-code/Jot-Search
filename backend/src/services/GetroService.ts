@@ -137,6 +137,7 @@ export class GetroService {
      */
     async getMembers(testMode = false, per_page = 30): Promise<any> {
         console.log('\n***** getMembers *****');
+        let page = 1;
         let repeatErr = 0;
 
         while (repeatErr < 3) {
@@ -161,3 +162,5 @@ export class GetroService {
                         for (const company of items) {
                             const detail = await this.getMemberDetail(company.id);
                             if (detail) {
+                                result.push(detail);
+                            }

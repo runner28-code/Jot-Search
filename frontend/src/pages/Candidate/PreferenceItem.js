@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }) => {
   const { width } = useWindowDimensions();
   return (
     <div className='flex flex-col mt-5'>
@@ -17,6 +18,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
           className={ width >= 990 ? 'text-lg font-roboto text-black70%' : 'text-sm font-roboto text-black70%'}>
           {label}
         </label>
+// Temp comment
       </div>
     </div>
   )

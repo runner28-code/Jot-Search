@@ -14,3 +14,4 @@ CREATE TABLE "Job" (
     "willRelocate" TEXT,
     "yearsRequired" TEXT,
     "status" TEXT,
+    "skillList" TEXT,

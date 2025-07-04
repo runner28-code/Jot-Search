@@ -1,6 +1,7 @@
 -- CreateTable
 CREATE TABLE "GetroCompany" (
     "angellist_url" TEXT,
+    "approx_employees" INTEGER,
     "crunchbase_url" TEXT,
     "description" TEXT,
     "domain" TEXT,
@@ -13,3 +14,4 @@ CREATE TABLE "GetroCompany" (
     "locations" TEXT,
     "logo_url" TEXT,
     "name" TEXT,
+    "ocp_search_status" TEXT,

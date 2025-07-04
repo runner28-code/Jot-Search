@@ -433,3 +433,6 @@ model Job {
   dateAdded         DateTime?
   dateClosed        DateTime?
   dateLastModified  DateTime?
+  dateLastExported  DateTime?
+  dateEnded         DateTime?
+  dateLastPublished DateTime?

@@ -14,7 +14,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
 
 export default function DashboardMinifiedDesktop ({ location }) {
-// Temp comment
 
   if( location === 'career' ) {
     return (
@@ -53,6 +52,7 @@ function CareerHeader ({ location }) {
       </div>
     )
   }
+// Temp comment
   if( userRole === 'company' ) {
     return (
       <div className='flex flex-col items-start py-14 px-8 '>

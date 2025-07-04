@@ -32,7 +32,6 @@ import db from "../utils/db";
 
 import {
   CompanyFilter,
-  CompanyFilterKey,
   JobFilter,
 } from "../utils/FieldMatch";
 import { COORDINATOR } from "../utils/constant";
@@ -116,6 +115,7 @@ export class CompanyController {
         error: "You should be a coordinator for creating a company",
       };
     }
+
     const bullhornService = new BullhornService();
     await bullhornService.init();
     return await bullhornService.insertCompany(body);
@@ -206,3 +206,5 @@ export class CompanyController {
       };
     }
   }
+
+  @Post("/search")

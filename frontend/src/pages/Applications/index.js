@@ -53,7 +53,6 @@ export default function Applications() {
 
   const { width } = useWindowDimensions();
   return (
-// Temp comment
     <section>
       <PageHeader
         headerText='My InTulsa Featured Applications'

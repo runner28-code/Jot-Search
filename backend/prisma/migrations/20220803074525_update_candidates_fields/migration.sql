@@ -9,3 +9,4 @@
 
 */
 -- AlterTable
+ALTER TABLE "Candidate" DROP COLUMN "firstname",

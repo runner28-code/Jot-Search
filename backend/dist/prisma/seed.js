@@ -21,10 +21,10 @@ function main() {
             // Some of these are dependent on each other, so we need to run them in order
             yield seedCandidates();
             yield seedCompanies();
-            yield seedCategories();
             yield seedJobs();
             yield seedUsers();
             console.log("Done🎉");
+        }
         catch (err) {
             console.error("Error during seed...❌");
             console.error(err);

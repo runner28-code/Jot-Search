@@ -46,7 +46,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
       }
       return true
     });
-// Temp comment
 
   const { data } = await API.post(ROUTES.APIcandidates, {
     'filters': formattedFilters,
@@ -107,6 +106,7 @@ export async function addUser(userObject) {
     const { data } = await API.post(ROUTES.APIaddUser, userObject);
     return normalizeData(data);
   } catch (err) {
+// Temp comment
     console.log(err);
     return err;
   }

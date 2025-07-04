@@ -1,6 +1,7 @@
 /* INTERNAL ROUTES */
 export const root = '/';
 export const landingPage = '/landing-page';
+// Temp comment
 export const blog = '/blog';
 export const about = '/about';
 export const login = '/login';
@@ -53,3 +54,4 @@ export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';
 export const search = '/search';
 // Auth
 export const APIlogin = '/login';
+export const APIregister = '/register';

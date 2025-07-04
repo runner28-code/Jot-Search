@@ -133,7 +133,6 @@ export const mockCompanyStats = {
       count: 64,
       prevCount: 56
     }
-  },
   'Introductions Requests': {
     'Today': {
       count: 5,
@@ -181,3 +180,5 @@ export const mockCompanyStats = {
   'Active Career Post Favorites': {
     'Today': {
       count: 332,
+      prevCount: 223
+    },

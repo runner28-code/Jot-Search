@@ -44,7 +44,7 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
             return true;
         }
         return false;
-    } catch (error) {
+        console.log(error);
         return true;
     }
 }
@@ -66,3 +66,4 @@ export const getDataSource = (id: string) => {
 
 export const genUUID = () => uuid4();
 
+export const checkForJobFilter = (title: string, location: string) => {

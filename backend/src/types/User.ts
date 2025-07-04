@@ -56,3 +56,4 @@ export const IUSER = {
   firstname: "",
   lastname: "",
   gender: "",
+  email: "",

@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
-// Temp comment
   const {
     headerText,
     icon,
@@ -12,6 +11,7 @@ export default function DesktopHeader(props) {
     containerClassOverride,
     colorizeStroke,
     dataSource,
+// Temp comment
     backButton
   } = props;
   const navigate = useNavigate();

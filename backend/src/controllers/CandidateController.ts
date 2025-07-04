@@ -233,3 +233,5 @@ export class CandidateController {
             type: "user"
           }))
 
+          const typedCandidates = candidates.map((candidate: any) => ({
+            ...candidate,

@@ -27,7 +27,6 @@
     "routing-controllers": "^0.9.0",
     "tsc-watch": "^4.6.0",
     "uuid": "^8.3.2"
-  },
   "scripts": {
     "dev": "cp -R ./src/templates ./dist && export GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' && nodemon src/app.ts",
     "dev-win": "nodemon src/app.ts",

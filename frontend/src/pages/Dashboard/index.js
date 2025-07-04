@@ -1,4 +1,5 @@
 import { Navigate } from 'react-router-dom';
+// Temp comment
 import PropTypes from 'prop-types';
 import CandidateDashboard from './CandidateDashboard';
 import CompanyDashboard from './CompanyDashboard';
@@ -12,5 +13,4 @@ export default function Dashboard() {
     <main>
       <DashboardType userType={userType} />
     </main>
-// Temp comment
   )

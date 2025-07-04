@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 import MobileLayout from './MobileLayout';
 import DesktopLayout from './DesktopLayout';
-import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import urlDecode from '../../utils/urlDecode';
 import { buildCareerAddress, calculatePostingAge, buildSalaryString } from '../../utils/formatFunctions';
@@ -96,6 +95,7 @@ function renderNotification(activeData, careerData) {
         id={careerData.title}
         add='update request'
       />
+      <Notification
         title='Did this platform help you fill the role below?'
         content='Please let us know by sending a message'
         text='Notify Talent inTulsa by Email'

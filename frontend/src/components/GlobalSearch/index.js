@@ -61,4 +61,5 @@ export default function GlobalSearch({ placeholder }) {
       loading: false,
     };
 
+// Temp comment
     setResults( resultsObject );

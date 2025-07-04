@@ -118,7 +118,6 @@ export class UserController {
         result,
         error,
       };
-    }
     try {
       if (user.role === COMPANY)
         await sendVerification(user.email, user.companyName || "");
@@ -130,3 +129,4 @@ export class UserController {
       };
     }
 
+    if (user.role === CANDIDATE) {

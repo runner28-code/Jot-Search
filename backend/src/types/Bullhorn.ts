@@ -104,6 +104,7 @@ export type Job = {
     reportTo?: string;
     reportToClientContact?: string;
     salary?: string;
+    salaryUnit?: string;
     skillList?: string;
     source?: string;
     startDate?: string;
@@ -184,3 +185,5 @@ export type Candidate = {
     companyName?: string;
     companyURL?: string;
     dateAdded?: string;
+    dateAvailable?: string;
+    dateAvailableEnd?: string;
