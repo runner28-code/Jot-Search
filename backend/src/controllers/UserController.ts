@@ -75,7 +75,6 @@ export class UserController {
         console.error(error);
       }
       const { result, error } = await register(data);
-      return {
         result,
         error,
       };
@@ -116,6 +115,7 @@ export class UserController {
       const { result, error } = await register(data);
       return {
         result,
+        error,
       };
     }
     try {
@@ -128,3 +128,4 @@ export class UserController {
         error: "Please check email, email maybe invalid one",
       };
     }
+

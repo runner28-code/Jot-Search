@@ -86,7 +86,6 @@ export function formatPhoneNumber(phoneNumberString) {
   if ( regex.test(phoneNumberString) ) { // Already formatted correctly is regex passes
     return phoneNumberString;
   }
-// Temp comment
   if ( phoneNumberString.includes('-') ) { // Reset dashes. Will re-add dashes in correct format
     phoneNumberString = phoneNumberString.replace(/-/g, '');
   }

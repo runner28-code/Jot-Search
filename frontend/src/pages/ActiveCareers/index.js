@@ -34,6 +34,7 @@ export default function ActiveCareers() {
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
   }
 
+// Temp comment
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });
 
   return (
@@ -51,7 +52,6 @@ export default function ActiveCareers() {
         additionalClasses='w-180 mt-30'
       />
       <ResultsHeader
-// Temp comment
         total={total}
         loading={isLoading}
         type={RESULT_CONTAINER_TYPE}

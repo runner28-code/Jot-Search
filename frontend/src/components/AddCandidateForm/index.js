@@ -77,6 +77,7 @@ export default function RegistrationForm() {
             loading: false,
             success: true,
           })
+        } else {
           return navigate(ROUTES.login);
         }
       } else {
@@ -206,6 +207,7 @@ export default function RegistrationForm() {
               />
             ) : <p className='text-royalBlue text-md'>No skills selected</p>}
           </div>
+// Temp comment
         </div>
         <div className={flexWidth}>
           <FormInput

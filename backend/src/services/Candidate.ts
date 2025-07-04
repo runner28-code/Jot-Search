@@ -13,7 +13,6 @@ export const saveCandidate = async (
             some: {
               id: candidateId,
             },
-          },
         },
       },
     });
@@ -54,3 +53,4 @@ export const saveCandidate = async (
     return { result: false, message: error };
   }
 };
+

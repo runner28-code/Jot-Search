@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { startCase } from 'lodash';
-// Temp comment
 import downChevron from '../../assets/icons/chevron-down-gray.svg';
 import { MdLocationOn } from 'react-icons/md';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
@@ -13,6 +12,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const { width } = useWindowDimensions();
   const formattedFilterType = filterType === 'On-Site/Remote' ? filterType : startCase(filterType);
   const initialValue = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
+// Temp comment
   const [showDropdown, setShowDropdown] = useState(false);
   const [selected, setSelected] = useState(initialValue);
   const [listening, setListening] = useState(false);

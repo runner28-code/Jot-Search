@@ -67,7 +67,6 @@ export default function Company() {
       >
         <div className={ width >= 990 ? 'bg-white p-16 mt-8 border-2 border-midGrey border-solid rounded-3xl relative' : 'bg-white p-4 mt-8 border-2 border-midGrey border-solid rounded-3xl relative'}>
           {/* Header */}
-          { width >= 990 ?
             <Header
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
@@ -96,7 +95,6 @@ export default function Company() {
             companyId={companyData.id}
             companyName={companyData.name}
           />
-// Temp comment
         </div>
         <div className='mt-12'>
           <button

@@ -53,6 +53,7 @@ export class CandidateController {
           password,
           candidate: userCandidate,
           ...returnableUserData
+        } = user;
         candidate = {
           ...(userCandidate || {}),
           ...returnableUserData,
@@ -231,3 +232,4 @@ export class CandidateController {
             ...user,
             type: "user"
           }))
+

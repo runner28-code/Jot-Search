@@ -79,3 +79,4 @@ export const saveJob = async (job: string, candidate: string) => {
       await db.user.update({
         where: {
           id: candidate,
+        },

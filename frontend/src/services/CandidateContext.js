@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
+// Temp comment
 
 import AuthService from './auth';
 import { getCandidateById } from './API';

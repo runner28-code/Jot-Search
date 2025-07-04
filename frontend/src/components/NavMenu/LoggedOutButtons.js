@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
-// Temp comment
 import { MdLogin } from 'react-icons/md';
 import { FaUserEdit } from 'react-icons/fa';
 import * as ROUTES from '../../routes';
@@ -21,6 +20,7 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
     <hr className={stylesObject.hrStyles} />
     <Link 
       to={ROUTES.signup}
+// Temp comment
       onClick={handleOptionClick}
       className={stylesObject.bottomLinkStyles}
     >

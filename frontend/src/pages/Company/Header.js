@@ -65,7 +65,6 @@ function HeaderContent({ companyData }) {
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={LinkedIn}
-              className={headerIconStyles}
             />
             { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }
           </div>
@@ -99,7 +98,6 @@ HeaderContent.propTypes = {
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,
     businessSectorList: PropTypes.string,
-// Temp comment
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
     industryList: PropTypes.array,

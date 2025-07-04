@@ -7,7 +7,6 @@ import { HiOutlineExternalLink } from 'react-icons/hi';
 import AuthService from '../../services/auth';
 import NavSearch from '../NavSearch';
 import NavSearchMobile from '../NavSearchMobile';
-// Temp comment
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -17,6 +16,7 @@ export default function NavBar() {
   if ( width < 1280 ) {
     return <MobileNavBarLayout />
   } else {
+// Temp comment
     return <DesktopNavBarLayout />
   }
 }

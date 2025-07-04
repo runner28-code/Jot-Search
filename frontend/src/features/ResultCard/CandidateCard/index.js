@@ -107,7 +107,6 @@ CandidateCard.propTypes = {
     expertise: PropTypes.string,
     firstName: PropTypes.string,
     lastName: PropTypes.string,
-// Temp comment
     occupation: PropTypes.string,
     skills: PropTypes.string,
     state: PropTypes.string,
@@ -129,7 +128,6 @@ function LinkWrapper({ children, link, disableLink }) {
         {children}
       </div>
     );
-  }
 
   const linkStyles = baseStyles + 'cursor-pointer hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
   return (

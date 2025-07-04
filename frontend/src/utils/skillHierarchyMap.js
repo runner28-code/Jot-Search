@@ -96,7 +96,6 @@ export const skills = [
   'Associates Degree',
   'ATS',
   'Auditing',
-// Temp comment
   'Automation',
   'AWS',
   'Azure',
@@ -117,6 +116,7 @@ export const skills = [
   'Budgeting',
   'Business Development',
   'Business Intelligence',
+// Temp comment
   'C#',
   'C++',
   'CAD',
@@ -222,3 +222,5 @@ export const skills = [
   'Helpdesk',
   'Higher Education',
   'Hiring',
+  'Hospitality',
+  'HR',

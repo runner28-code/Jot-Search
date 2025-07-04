@@ -55,3 +55,4 @@ CREATE TABLE "Candidate" (
     "numCategories" TEXT,
     "numOwners" TEXT,
     "occupation" TEXT,
+    "otherDeductionsAmount" TEXT,

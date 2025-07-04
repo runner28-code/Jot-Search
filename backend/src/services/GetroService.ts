@@ -161,3 +161,4 @@ export class GetroService {
                     if (!testMode) {
                         for (const company of items) {
                             const detail = await this.getMemberDetail(company.id);
+                            if (detail) {

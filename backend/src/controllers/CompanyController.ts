@@ -45,7 +45,6 @@ export class CompanyController {
   @Get("/search")
   async searchJobByID(
     @QueryParam("id") id: string
-  ): Promise<CompanySearchByID> {
     const datasource = getDataSource(id);
     if (datasource === DataSource.BULLHORN) {
       const company = await this.getCompanyByIdFromBullhorn(id);
@@ -181,6 +180,7 @@ export class CompanyController {
     // TODO: Add email service
 
     const companyCandidateInvites = []
+
     for (const companyId of body.companyIds) {
       for (const candidateId of body.candidateIds) {
         companyCandidateInvites.push({

@@ -275,3 +275,4 @@ const job_filter_exclude_keys = [
   "paraprofessional",
   "park",
   "parking",
+  "parks",

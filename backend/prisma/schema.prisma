@@ -432,3 +432,4 @@ model Job {
 
   dateAdded         DateTime?
   dateClosed        DateTime?
+  dateLastModified  DateTime?

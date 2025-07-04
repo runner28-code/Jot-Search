@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
@@ -38,6 +37,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               <input
                 type='checkbox'
                 id={contact.id}
+                name={contact.id}
                 checked={selectedContacts.includes(contact)}
                 className='w-12 h-12 mr-12'
               />

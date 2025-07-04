@@ -43,6 +43,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   styles += isMobile ? 'h-8 w-8 top-4 right-4 ' : 'h-12 w-12 top-6 right-6 ';
   return (
     <img
+      src={ isFavorite ? favoriteIconFilled : favoriteIconOutline }
       className={addClass ? styles + addClass : styles}
       onClick={handleFavoriteClick}
     />
@@ -53,7 +54,6 @@ FavoriteButton.propTypes = {
   type: PropTypes.string.isRequired,
   addClass: PropTypes.string,
   data: PropTypes.shape({
-    id: PropTypes.string,
     candidate: PropTypes.string,
     status: PropTypes.string,
   }).isRequired,

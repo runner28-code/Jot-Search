@@ -84,6 +84,7 @@ class AuthService {
 
   async refreshSavedCandidates() {
     try {
+      const { user_id } = this.getProfile();
       const candidates = await getSavedCandidates(user_id);
       const candidateIDs = candidates.map(candidate => candidate.id);
       localStorage.setItem('savedCandidates', JSON.stringify(candidateIDs));
@@ -94,7 +95,6 @@ class AuthService {
   }
 
   toggleSavedJob(jobID, action) {
-    const savedJobs = this.getSavedJobIDs();
     if ( action === 'save' ) {
       savedJobs.push(jobID);
     } else {

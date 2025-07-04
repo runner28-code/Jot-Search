@@ -16,13 +16,13 @@ export default function GlobalSearch({ placeholder }) {
   const [ searchTerm, setSearchTerm ] = useState('');
   const [ results, setResults ] = useState({
     jobs: [],
-// Temp comment
     companies: [],
     candidates: [],
     loading: false,
     forceHidden: true
   });
   // State and ref to listen for outside clicks
+// Temp comment
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 

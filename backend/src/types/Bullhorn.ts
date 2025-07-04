@@ -184,3 +184,4 @@ export type Candidate = {
     comments?: string;
     companyName?: string;
     companyURL?: string;
+    dateAdded?: string;

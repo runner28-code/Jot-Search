@@ -144,7 +144,6 @@ const job_filter_exclude_keys = [
     "esthetician",
     "ethernet",
     "event",
-    "exercise",
     "externship",
     "fabricator",
     "faculty",
@@ -274,3 +273,4 @@ const job_filter_exclude_keys = [
     "painter",
     "paralegal",
     "paramedic",
+    "paraprofessional",
