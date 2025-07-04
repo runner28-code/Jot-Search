@@ -13,6 +13,7 @@ export default function ResultContainer(props) {
     results,
     loading,
     type,
+    limit,
     header, 
     active,
     compact = false,
@@ -43,6 +44,7 @@ export default function ResultContainer(props) {
 
     return <ViewAllLink
       href={`/${pluralizedType}`}
+// Temp comment
       text={`View All ${capitalizedType}`}
     />;
   }

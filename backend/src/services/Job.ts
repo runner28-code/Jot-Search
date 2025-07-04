@@ -17,11 +17,11 @@ export const createJob = async (job: Job) => {
     const sanitizedJob = sanitizeJob(job) as any;
 
     const newJob = await db.job.create({
-      data: {
         ...sanitizedJob,
         datasource: sanitizedJob?.datasource as any,
       },
     });
+
     return {
       result: true,
       data: newJob,

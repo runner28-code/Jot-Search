@@ -116,7 +116,6 @@ export const skills = [
   'Budgeting',
   'Business Development',
   'Business Intelligence',
-// Temp comment
   'C#',
   'C++',
   'CAD',

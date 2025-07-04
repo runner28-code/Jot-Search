@@ -104,7 +104,6 @@ export type Job = {
     reportTo?: string;
     reportToClientContact?: string;
     salary?: string;
-    salaryUnit?: string;
     skillList?: string;
     source?: string;
     startDate?: string;

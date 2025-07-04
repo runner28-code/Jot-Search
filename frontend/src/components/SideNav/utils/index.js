@@ -110,7 +110,6 @@ export function findSelectedFromPath() {
   const path = useLocation().pathname;
   switch (path.split('/')[1]) {
     case 'profile':
-// Temp comment
       return 'My Account';
     case 'applications':
       return 'Applications';

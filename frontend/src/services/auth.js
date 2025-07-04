@@ -66,7 +66,6 @@ class AuthService {
     localStorage.removeItem('savedCompanies');
     localStorage.removeItem('savedCandidates');
   }
-
   async refreshSavedJobAndCompanies() {
     try {
       const { user_id } = this.getProfile();
@@ -95,6 +94,7 @@ class AuthService {
   }
 
   toggleSavedJob(jobID, action) {
+    const savedJobs = this.getSavedJobIDs();
     if ( action === 'save' ) {
       savedJobs.push(jobID);
     } else {

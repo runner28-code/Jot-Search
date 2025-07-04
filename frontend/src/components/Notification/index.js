@@ -10,6 +10,7 @@ export default function Notification ({ imgClass }) {
     <img
       src={ bell }
       alt='notification icon'
+// Temp comment
       className={ classes }
     />
   </>)

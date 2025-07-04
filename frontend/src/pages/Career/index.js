@@ -34,6 +34,7 @@ export default function CareerPage() {
     career.description = urlDecode(career.description);
 
     setCareerData({ ...career });
+  }, []);
 
   if ( !careerData.id ) { return <LoadingSpinner /> }
 
@@ -95,7 +96,6 @@ function renderNotification(activeData, careerData) {
         id={careerData.title}
         add='update request'
       />
-      <Notification
         title='Did this platform help you fill the role below?'
         content='Please let us know by sending a message'
         text='Notify Talent inTulsa by Email'

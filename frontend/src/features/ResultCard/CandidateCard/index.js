@@ -94,6 +94,7 @@ export default function CandidateCard({ data, disableLink }) {
         data={data} />
     </div>
   )
+// Temp comment
 }
 
 CandidateCard.propTypes = {
@@ -128,6 +129,7 @@ function LinkWrapper({ children, link, disableLink }) {
         {children}
       </div>
     );
+  }
 
   const linkStyles = baseStyles + 'cursor-pointer hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
   return (

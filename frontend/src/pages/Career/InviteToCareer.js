@@ -14,7 +14,6 @@ import { useGetJobs } from '../../hooks/queries/useGetJobs';
 
 export default function InviteToCareer({ candidate }) {
   const { jobs, isLoading } = useGetJobs({ filtersArr: buildSearchFilters({...defaultJobFilterState}), 
-// Temp comment
     count: 10000
   });
 
@@ -29,7 +28,6 @@ export default function InviteToCareer({ candidate }) {
   }) || [];
   
   const [ selected, setSelected ] = useState([]);
-  const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }

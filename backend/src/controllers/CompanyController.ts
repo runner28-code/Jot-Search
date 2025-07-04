@@ -45,6 +45,7 @@ export class CompanyController {
   @Get("/search")
   async searchJobByID(
     @QueryParam("id") id: string
+  ): Promise<CompanySearchByID> {
     const datasource = getDataSource(id);
     if (datasource === DataSource.BULLHORN) {
       const company = await this.getCompanyByIdFromBullhorn(id);
@@ -115,7 +116,6 @@ export class CompanyController {
         error: "You should be a coordinator for creating a company",
       };
     }
-
     const bullhornService = new BullhornService();
     await bullhornService.init();
     return await bullhornService.insertCompany(body);

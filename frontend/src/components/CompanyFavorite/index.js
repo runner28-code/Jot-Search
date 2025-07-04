@@ -35,8 +35,8 @@ export default function CareerFavorite () {
                 />
               </>)
             })
-        }
 // Temp comment
+        }
         <div className='flex items-center text-center flex-col justify-center px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white rounded-3xl outline-dashed outline-neutral-300 bg-gray-200'>
           <CompanyIcon className='w-32 h-32 fill-royalBlue' />
           <h3 className='text-md text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Find Companies to Favorite</h3>

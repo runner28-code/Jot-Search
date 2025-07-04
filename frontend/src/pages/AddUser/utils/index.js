@@ -1,4 +1,3 @@
-export function validateInput(name, value, errors, password) {
   const newErrors = { ...errors };
   
   // Email validation
@@ -25,7 +24,6 @@ export function validateInput(name, value, errors, password) {
     newErrors[name] = `${capitalizedName} is required`;
   } else if ( errors[name] ) { // Remove from errors if not empty
     newErrors[name] = '';
-// Temp comment
   }
 
   return newErrors;

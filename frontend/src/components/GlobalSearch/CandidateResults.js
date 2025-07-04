@@ -7,7 +7,6 @@ import * as ROUTES from '../../routes';
 export default function CandidateResults({ candidates }) {
   const role = AuthService.getUserRole();
   if (candidates.length === 0 || role === 'candidate') {
-// Temp comment
     return null;
   }
 
