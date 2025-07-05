@@ -78,6 +78,7 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;
 }
 
+// Temp comment
 export function formatPhoneNumber(phoneNumberString) {
   if ( !phoneNumberString ) {
     return 'No Phone Number Provided';
@@ -93,6 +94,7 @@ export function formatPhoneNumber(phoneNumberString) {
     const areaCode = phoneNumberString.slice(0, 3);
     const firstThree = phoneNumberString.slice(3, 6);
     const lastFour = phoneNumberString.slice(6, 10);
+    return `(${areaCode}) ${firstThree}-${lastFour}`;
   }
   if ( phoneNumberString[0] === '+' ) {
     const internationalCode = phoneNumberString.slice(0, 2);

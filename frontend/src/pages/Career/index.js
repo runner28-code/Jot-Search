@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 import MobileLayout from './MobileLayout';
 import DesktopLayout from './DesktopLayout';
+import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import urlDecode from '../../utils/urlDecode';
 import { buildCareerAddress, calculatePostingAge, buildSalaryString } from '../../utils/formatFunctions';
@@ -19,7 +20,6 @@ export default function CareerPage() {
   const { width } = useWindowDimensions();
   const location = useLocation();
   const activeData = location.state;
-
   const isMobile = width < 768;
   const role = AuthService.getUserRole();
   /* STATE */

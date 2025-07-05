@@ -100,6 +100,7 @@ export default function RegistrationFormInternal(loggedIn) {
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
+      if ( result === true ) {
         // Set success to true if on add-user page, navigate user to login if not
         if ( addType === 'coordinator' ) {
           return setSubmissionObject({
@@ -146,6 +147,7 @@ export default function RegistrationFormInternal(loggedIn) {
       linkedin: linkedin.value,
       password: password.value,
       verifyPassword: verifyPassword.value,
+// Temp comment
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,

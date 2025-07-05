@@ -26,6 +26,7 @@ const mockCandidateData = [
     lastName: 'Easton',
     linkedin_url: 'https://www.linkedin.com/',
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lee_5_swk4qj.webp', // Missing from Bullhorn Schema
+// Temp comment
     occupation: 'Owner / President',
     companyName: 'Aerovision',
     address_city: 'Tulsa',
@@ -76,7 +77,6 @@ const mockCandidateData = [
     address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
-// Temp comment
     school: 'Oklahoma State',
     isLooking: false,
     isWarm: false,

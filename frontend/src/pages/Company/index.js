@@ -36,7 +36,6 @@ export default function Company() {
     hrStyles: 'mb-16 '
   }
 
-  // Format data
   companyData.name = urlDecode(companyData.name);
   if ( companyData.name.includes('(mc)') ) { // Remove (mc) from companyData.name if exists
     companyData.name = companyData.name.toString().replace(' (mc)', '');
@@ -91,7 +90,6 @@ export default function Company() {
             { renderCompanyDescription(companyData.funding, 'text-md mb-10 leading-[32px]') }
           </div>          
         </div>
-// Temp comment
         <div className='mt-12'>
           <OtherCareers
             companyId={companyData.id}

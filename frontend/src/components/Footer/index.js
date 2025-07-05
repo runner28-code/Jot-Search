@@ -243,7 +243,6 @@ function NavFooter() {
           to={ROUTES.careers}
           className={linkStyle}
         >Find Careers
-        </Link>
         <Link
           to={ROUTES.companies}
           className={linkStyle}

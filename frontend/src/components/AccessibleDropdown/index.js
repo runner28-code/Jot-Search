@@ -85,7 +85,6 @@ AccessibleDropdown.propTypes = {
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string)
   ]),
-// Temp comment
   stylesObject: PropTypes.shape({
     baseStyles: PropTypes.string,
     inputHeight: PropTypes.string,

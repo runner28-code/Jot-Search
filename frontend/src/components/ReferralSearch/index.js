@@ -53,7 +53,6 @@ export default function ReferralSearch() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   function handleAdd(_, jobArray) {
-// Temp comment
     const idToAdd = jobArray[jobArray.length - 1];
     const jobToAdd = choices.find(job => job.id === idToAdd);
 
@@ -74,7 +73,6 @@ export default function ReferralSearch() {
     // TODO: Implement API
     setChoices(mockJobsData);
   }, []);
-  
   return (
     <div className='w-340'>
       <div className='flex mb-8'>

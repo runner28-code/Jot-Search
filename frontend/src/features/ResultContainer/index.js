@@ -32,6 +32,7 @@ export default function ResultContainer(props) {
     }
 
     return <h5 className={resultsHeaderStyles}>{header}</h5>;
+  }
 
   function renderFooter() {
     if ( !limit ) {
@@ -48,7 +49,6 @@ export default function ResultContainer(props) {
   }
 
   return (
-    <div className='w-full'>
       { renderHeader() }
       <div
         className={`${baseStyles} ${resultsContainerStyles}`}>

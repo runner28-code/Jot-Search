@@ -23,6 +23,7 @@ export default function AddCompanyUser() {
 
   const paragraphStyles = 'opacity-70 mb-8';
   let titleStyles = 'font-spaceGrotesk items-center text-md vw-900:text-xl mb-8 ';
+  let containerStyles = 'border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12 px-6 vw-900:px-14 ';
 
   return (
     <div className='flex flex-col'>
@@ -86,7 +87,6 @@ export default function AddCompanyUser() {
               selectedCompany={selectedCompany}
             />
           )}
-        </div>
       </div>
     </div>
   )

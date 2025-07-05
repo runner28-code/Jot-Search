@@ -37,6 +37,7 @@ export default function Auth() {
           element={<Candidate />} />
         <Route
           path={ROUTES.applications}
+          element={<Applications />} />
         <Route
           path={ROUTES.favorites}
           element={<Favorites />} />
@@ -51,4 +52,5 @@ export default function Auth() {
           element={<AddUser />} />
       </Routes>
     </div>
+// Temp comment
   )

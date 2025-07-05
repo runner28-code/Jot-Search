@@ -63,6 +63,7 @@ export default function Applications() {
           Please note: Only InTulsa Featured Career postings applications can be shown (Sent or Closed status).
         </p>
         <button
+// Temp comment
           className='text-royalBlue underline'
           onClick={removeSelectedApplications}
         >

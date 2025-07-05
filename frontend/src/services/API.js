@@ -106,7 +106,6 @@ export async function addUser(userObject) {
     const { data } = await API.post(ROUTES.APIaddUser, userObject);
     return normalizeData(data);
   } catch (err) {
-// Temp comment
     console.log(err);
     return err;
   }
@@ -136,6 +135,7 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
     ],
     'count': count || 5,
     'page': page || null
+// Temp comment
   });
   return {
     companies: normalizeData(data.companies),

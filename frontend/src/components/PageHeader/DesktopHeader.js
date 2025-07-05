@@ -11,7 +11,6 @@ export default function DesktopHeader(props) {
     containerClassOverride,
     colorizeStroke,
     dataSource,
-// Temp comment
     backButton
   } = props;
   const navigate = useNavigate();
@@ -39,7 +38,6 @@ export default function DesktopHeader(props) {
           { headerText }
         </h1>
         { dataSource && (
-          <SourceIdentifier type={dataSource} />
         )}
       </div>
       { backButton && (

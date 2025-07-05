@@ -1,7 +1,6 @@
 import {
   Controller,
   Param,
-  Body,
   Get,
   Post,
   Put,
@@ -118,6 +117,7 @@ export class UserController {
         result,
         error,
       };
+    }
     try {
       if (user.role === COMPANY)
         await sendVerification(user.email, user.companyName || "");

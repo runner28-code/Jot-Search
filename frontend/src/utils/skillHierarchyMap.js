@@ -74,6 +74,7 @@ export const skills = [
   'Accounting',
   'Accounts Payable',
   'Accounts Receivable',
+// Temp comment
   'Admissions',
   'Adobe',
   'Adobe InDesign',
@@ -84,7 +85,6 @@ export const skills = [
   'Agile',
   'AI',
   'AJAX',
-// Temp comment
   'Analyst',
   'Android',
   'Angular',

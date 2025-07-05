@@ -4,7 +4,6 @@ exports.USER_TABLE = exports.USERKEYS = exports.IUSER = void 0;
 exports.IUSER = {
     id: "",
     externalId: "",
-    firstname: "",
     lastname: "",
     gender: "",
     email: "",
@@ -22,6 +21,7 @@ exports.IUSER = {
     category: "",
     seniority: "",
     workspace: "",
+    referredBy: "",
     roles: "",
     description: "",
     phone: "",

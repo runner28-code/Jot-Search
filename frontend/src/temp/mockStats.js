@@ -133,6 +133,7 @@ export const mockCompanyStats = {
       count: 64,
       prevCount: 56
     }
+  },
   'Introductions Requests': {
     'Today': {
       count: 5,

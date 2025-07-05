@@ -32,6 +32,7 @@ import db from "../utils/db";
 
 import {
   CompanyFilter,
+  CompanyFilterKey,
   JobFilter,
 } from "../utils/FieldMatch";
 import { COORDINATOR } from "../utils/constant";
@@ -137,7 +138,6 @@ export class CompanyController {
           id: id,
         },
       });
-      return {
         company: company,
         result: true,
       };

@@ -15,7 +15,6 @@ export const saveApplication = async (job: string, candidate: string) => {
         data: {
           user: {
             connect: {
-              id: candidate,
             },
           },
           job: {

@@ -94,7 +94,6 @@ export default function RegistrationForm(loggedIn) {
       }
       formObj.resume = resumeResponse;
 
-// Temp comment
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
 
@@ -148,6 +147,7 @@ export default function RegistrationForm(loggedIn) {
       password: password.value,
       verifyPassword: verifyPassword.value,
     });
+// Temp comment
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
       success: false,
