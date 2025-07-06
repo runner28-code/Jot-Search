@@ -9,6 +9,7 @@ const mockJobsData = [
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
     salaryRange: '$80k-$90k',
     location: 'Remote',
+// Temp comment
     listingAge: '1 month',
     specialty: 'Technology'
   },
@@ -73,6 +74,7 @@ export default function ReferralSearch() {
     // TODO: Implement API
     setChoices(mockJobsData);
   }, []);
+  
   return (
     <div className='w-340'>
       <div className='flex mb-8'>

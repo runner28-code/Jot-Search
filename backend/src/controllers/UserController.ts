@@ -1,6 +1,7 @@
 import {
   Controller,
   Param,
+  Body,
   Get,
   Post,
   Put,
@@ -84,7 +85,6 @@ export class UserController {
         error: `Invalid user type specified for candidate-only register route: ${user.role}`,
       }
     }
-  }
 
   /**
    * Coordinator-only route to add users depending on type

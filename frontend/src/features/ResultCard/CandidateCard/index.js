@@ -112,6 +112,7 @@ CandidateCard.propTypes = {
     state: PropTypes.string,
     status: PropTypes.string,
     userDateAdded: PropTypes.string,
+    workspace: PropTypes.string,
     willRelocate: PropTypes.bool,
     user: PropTypes.object,
   }).isRequired,
@@ -138,7 +139,6 @@ function LinkWrapper({ children, link, disableLink }) {
     >
       {children}
     </Link>
-  )
 }
 
 LinkWrapper.propTypes = {

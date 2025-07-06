@@ -78,6 +78,7 @@ class AuthService {
     } catch(e) {
       console.log(e);
       localStorage.setItem('savedJobs', JSON.stringify([]));
+// Temp comment
       localStorage.setItem('savedCompanies', JSON.stringify([]));
     }
   }

@@ -18,7 +18,6 @@ export default function Stats({ userType }) {
 
   function handleFilterChange(choice) {
     setTimeframe(choice);
-// Temp comment
   }
 
   function getDuration(timeFrame) {

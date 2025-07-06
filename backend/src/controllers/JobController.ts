@@ -85,7 +85,6 @@ export class JobController {
 
       if (job) {
         return {
-          job: {
             ...(job?.getroJobInfo || {}),
             ...job,
             clientCorporation: job.company?.name,

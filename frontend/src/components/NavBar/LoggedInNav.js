@@ -70,7 +70,6 @@ const DesktopNavBarLayout = () => {
         {/* Dropdown Menu */}
         <DropdownMenu />
       </div>
-// Temp comment
     </nav>
   )
 }
@@ -87,6 +86,7 @@ const DropdownMenu = () => {
     navigate(ROUTES.login);
   }
 
+// Temp comment
   const firstname = currentUser?.firstname || '';
 
   const closeDropdown = () => {

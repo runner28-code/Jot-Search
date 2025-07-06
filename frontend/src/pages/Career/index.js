@@ -20,6 +20,7 @@ export default function CareerPage() {
   const { width } = useWindowDimensions();
   const location = useLocation();
   const activeData = location.state;
+
   const isMobile = width < 768;
   const role = AuthService.getUserRole();
   /* STATE */

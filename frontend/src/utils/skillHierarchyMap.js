@@ -74,7 +74,6 @@ export const skills = [
   'Accounting',
   'Accounts Payable',
   'Accounts Receivable',
-// Temp comment
   'Admissions',
   'Adobe',
   'Adobe InDesign',
@@ -160,7 +159,6 @@ export const skills = [
   'Cyber',
   'Cyber Security',
   'Data Analytics',
-  'Data and Analytics',
   'Data Management',
   'Data Modeling',
   'Data Transformation',

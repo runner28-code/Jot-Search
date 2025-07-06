@@ -95,7 +95,6 @@ export const candidateFilterObject = {
   ],
   'Degree': [
     'Any',
-    ...educationChoices
   ],
   'Status': [
     'Any',

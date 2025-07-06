@@ -78,7 +78,6 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;
 }
 
-// Temp comment
 export function formatPhoneNumber(phoneNumberString) {
   if ( !phoneNumberString ) {
     return 'No Phone Number Provided';

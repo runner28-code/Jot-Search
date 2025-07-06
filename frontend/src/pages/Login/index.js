@@ -14,6 +14,7 @@ export default function Login() {
     const { email, password } = event.target;
     const res = await API.post(ROUTES.APIlogin, {
       email: email.value,
+// Temp comment
       password: password.value,
     });
 
@@ -93,6 +94,5 @@ export default function Login() {
           </a>
         </div>
       </div>
-// Temp comment
     </section>
   )

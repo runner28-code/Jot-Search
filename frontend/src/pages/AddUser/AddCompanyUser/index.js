@@ -87,6 +87,7 @@ export default function AddCompanyUser() {
               selectedCompany={selectedCompany}
             />
           )}
+        </div>
       </div>
     </div>
   )

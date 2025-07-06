@@ -136,7 +136,6 @@ function renderLogo(logo) {
       <CareerIcon className='w-30 h-30 fill-royalBlue' />
     </div>
   }
-  return <img
     src={logo}
     className='w-48 h-48 object-contain mr-10'
   />

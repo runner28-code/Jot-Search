@@ -12,7 +12,6 @@ import {
 } from '../../utils/skillHierarchyMap';
 import {
   inputValidation,
-  formatFormObj,
   renderButtonOrLoading,
   renderErrorBlock,
   renderHeader
@@ -147,7 +146,6 @@ export default function RegistrationFormInternal(loggedIn) {
       linkedin: linkedin.value,
       password: password.value,
       verifyPassword: verifyPassword.value,
-// Temp comment
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,

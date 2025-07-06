@@ -38,6 +38,7 @@ export default function DesktopHeader(props) {
           { headerText }
         </h1>
         { dataSource && (
+          <SourceIdentifier type={dataSource} />
         )}
       </div>
       { backButton && (

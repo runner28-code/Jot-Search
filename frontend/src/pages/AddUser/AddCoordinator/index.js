@@ -55,7 +55,6 @@ export default function AddCoordinator() {
     const newErrors = validateInput(
       name,
       value,
-      submissionObject.errors,
       formObject.password
     );
 

@@ -4,7 +4,6 @@ import {
   AddUser,
   Applications,
   Candidate,
-  Candidates,
   Dashboard,
   Favorites,
   Logout,
@@ -52,5 +51,4 @@ export default function Auth() {
           element={<AddUser />} />
       </Routes>
     </div>
-// Temp comment
   )

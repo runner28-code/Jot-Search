@@ -51,6 +51,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           className='bg-royalBlue text-white text-lg px-xxl py-xs rounded-xl mt-20'
           onClick={handleSyncClick}
         >
+// Temp comment
           Synch
         </button>
       </>)}

@@ -169,6 +169,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 className='text-h6 text-royalBlue w-full'
                 htmlFor='state'>
               State:
+// Temp comment
               </label>
               <input 
                 type='text'
@@ -237,5 +238,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className='w-24 h-24 cursor-pointer fill-emerald-500'
             onClick={handleSubmit} />
         </div>
+      </div>
     </>
   )

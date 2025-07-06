@@ -18,6 +18,7 @@ import { DATASET_MAIN, Tables } from "../types/Common";
         const options = {
           query: query,
           location: "US",
+        };
         const [job] = await BigQueryService.getClient().createQueryJob(options);
         const [users] = await job.getQueryResults();
 

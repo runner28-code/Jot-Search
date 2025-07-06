@@ -67,7 +67,6 @@ function App() {
           </Routes>
         </div>
       </main>
-// Temp comment
       <Footer />
     </div>
   );

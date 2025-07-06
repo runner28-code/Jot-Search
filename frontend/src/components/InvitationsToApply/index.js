@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
@@ -10,7 +9,6 @@ export default function InvitationsToApply () {
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
     filteredJobs: [],
-// Temp comment
     loading: true
   });
 
