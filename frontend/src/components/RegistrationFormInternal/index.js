@@ -12,6 +12,7 @@ import {
 } from '../../utils/skillHierarchyMap';
 import {
   inputValidation,
+  formatFormObj,
   renderButtonOrLoading,
   renderErrorBlock,
   renderHeader
@@ -36,6 +37,7 @@ const defaultState = {
   employmentPreference: '',
   workspace: '',
   linkedin: '',
+// Temp comment
   referredBy: '',
   resume: {},
   password: '',

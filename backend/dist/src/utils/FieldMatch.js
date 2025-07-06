@@ -15,7 +15,6 @@ exports.JobFilter = {
         hidden: "hidden",
         companyId: "clientCorporationID",
     },
-    main: {
         id: "id",
         status: "status",
         skillList: "skillList",
@@ -33,7 +32,6 @@ exports.JobFilter = {
 exports.CompanyFilter = {
     bullhorn: {
         name: "name",
-// Temp comment
         city: "address_city",
         industry: "industryList",
     },

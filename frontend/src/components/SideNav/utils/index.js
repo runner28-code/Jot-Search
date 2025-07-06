@@ -129,7 +129,6 @@ export function findSelectedFromPath() {
       return 'Companies';
     case 'add-user':
       return 'Add User';
-// Temp comment
     case 'alerts':
       return 'Alerts';
     case 'contact':

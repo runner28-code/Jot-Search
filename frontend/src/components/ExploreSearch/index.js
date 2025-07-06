@@ -21,7 +21,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   const filterObject = adjustJobFilterObject();
   const [filterState, setFilterState] = useState({
     title: '',
-// Temp comment
     'On-Site/Remote': 'Any Work Setting',
     'Expertise': 'Any Expertise',
   });
@@ -61,7 +60,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
       </h5>
       <FilterSearch
         searchTerm={ filterState.title }
-        setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }
         placeholder='Job title or keywords'
         additionalClasses='w-[523px]'

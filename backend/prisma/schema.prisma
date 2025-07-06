@@ -109,7 +109,6 @@ model Lead {
   priority              String?
   referredByPerson      String?
   reportToPerson        String?
-  role                  String?
   salary                BigInt?
   salaryLow             BigInt?
   secondarySkills       String?

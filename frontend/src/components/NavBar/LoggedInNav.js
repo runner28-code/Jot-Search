@@ -86,7 +86,6 @@ const DropdownMenu = () => {
     navigate(ROUTES.login);
   }
 
-// Temp comment
   const firstname = currentUser?.firstname || '';
 
   const closeDropdown = () => {

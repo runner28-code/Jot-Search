@@ -41,6 +41,7 @@ const defaultState = {
   password: '',
   verifyPassword: '',
   terms: false
+};
 
 const defaultCommunity = {
   community: ''
@@ -133,7 +134,6 @@ export default function RegistrationForm(loggedIn) {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
     setErrors([]);
     setFormObj({

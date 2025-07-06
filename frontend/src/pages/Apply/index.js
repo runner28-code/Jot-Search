@@ -85,6 +85,7 @@ export default function Apply() {
       }
       const stateObject = {
         ...applicationObject,
+// Temp comment
         ...candidateData,
       };
 

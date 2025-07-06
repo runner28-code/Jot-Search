@@ -8,7 +8,6 @@ CREATE TABLE "UserTalentCollection" (
     "approved_by" TEXT,
     "created_at" TEXT,
     "updated_at" TEXT,
-    "declined_by" TEXT,
     "declined_at" TEXT,
     "cover_letter" TEXT,
     "share_permission" BOOLEAN,

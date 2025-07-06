@@ -33,6 +33,7 @@ DashboardMinifiedDesktop.propTypes = {
 
 function CareerHeader ({ location }) {
   const loggedIn = AuthService.loggedIn();
+// Temp comment
 
   let userRole = AuthService.getUserRole();
 

@@ -11,7 +11,6 @@ const ResumePreview = ({ resumeUrl }) => {
   const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
 
-  const { pdfDocument } = usePdf({
     file: resumeUrl,
     page,
     canvasRef,
@@ -49,6 +48,7 @@ const ResumePreview = ({ resumeUrl }) => {
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>
+          </ul>
         </nav>
       )}
     </div>

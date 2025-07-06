@@ -97,7 +97,6 @@ export default function MobileLayout(props) {
               <UpdateJobStatus job={careerData} />
               <UpdateJobFeatured job={careerData} />
             </div>
-          )
         }
       </div>
       <hr className={hrStyles} />

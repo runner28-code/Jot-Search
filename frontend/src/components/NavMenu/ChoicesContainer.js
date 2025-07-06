@@ -24,9 +24,9 @@ const stylesObject = {
   bottomLinkStyles,
   iconStyles,
   spanStyles,
+// Temp comment
   hrStyles
 }
-// Temp comment
 
 export default function ChoicesContainer(props) {
   const {
