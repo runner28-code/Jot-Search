@@ -20,6 +20,7 @@ export default function Applications() {
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
+      return {
         ...job,
         agoDate: job.appliedDate
       }});
@@ -66,7 +67,6 @@ export default function Applications() {
           onClick={removeSelectedApplications}
         >
           Remove Selections
-        </button>
         <ResultContainer
           containerClass={ width >= 990 ? 'grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}
           results={appliedJobsObject.filteredJobs}

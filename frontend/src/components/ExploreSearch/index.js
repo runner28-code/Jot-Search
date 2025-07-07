@@ -60,6 +60,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
       </h5>
       <FilterSearch
         searchTerm={ filterState.title }
+        setSearchTerm={ handleSearchChange }
         handleSearchClick={ handleSearchClick }
         placeholder='Job title or keywords'
         additionalClasses='w-[523px]'
@@ -93,7 +94,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
             inputWidth: 'w-92 ',
             marginBottom: 'mb-0 ',
             listStyles: 'bg-white text-black70% border-midGrey border-2 border-solid ',
-            listItemStyles: 'pl-6 pr-2 py-2 tracking-wide '
           }}
           showDropdownArrow={true}
         />

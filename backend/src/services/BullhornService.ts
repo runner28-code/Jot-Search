@@ -181,6 +181,7 @@ export class BullhornService {
           {
             version: "*",
             access_token: this.access_token,
+          },
           { encode: false }
         );
         const url = `${this.api_base_url}/login?${query}`;

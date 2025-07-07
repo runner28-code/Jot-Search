@@ -15,6 +15,7 @@ exports.JobFilter = {
         hidden: "hidden",
         companyId: "clientCorporationID",
     },
+    main: {
         id: "id",
         status: "status",
         skillList: "skillList",

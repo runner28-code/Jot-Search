@@ -11,6 +11,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import PlacePin from '../../assets/icons/placepin.svg';
 import LinkedIn from '../../assets/icons/linkedin-circle.svg';
 import Globe from '../../assets/icons/globe.svg';
+// Temp comment
 import Triangle from '../../assets/icons/triangle.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { FaUsers } from 'react-icons/fa';
@@ -163,6 +164,7 @@ function renderDesktopLogo(logoUrl, name) {
     )
   }
   return (
+    <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
       <img
         className={logoStyles}
         src={logoUrl}

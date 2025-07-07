@@ -48,7 +48,6 @@ export default function CandidateFilterLayout(props) {
   if (userRole === 'coordinator') {
     dropdownFiltersCoord.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
-// Temp comment
     });
     checkboxFiltersCoord.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
@@ -71,6 +70,7 @@ export default function CandidateFilterLayout(props) {
     }
   }
   console.log(filterObject)
+// Temp comment
 
   return (
     <div className='flex flex-col gap-xxl-4'>

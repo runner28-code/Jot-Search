@@ -31,5 +31,4 @@ function main() {
             console.error(err);
             throw err;
         }
-// Temp comment
     });

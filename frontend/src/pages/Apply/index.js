@@ -85,7 +85,6 @@ export default function Apply() {
       }
       const stateObject = {
         ...applicationObject,
-// Temp comment
         ...candidateData,
       };
 
@@ -146,6 +145,7 @@ export default function Apply() {
 
   function handleInputChange(e) {
     const { name, value } = e.target;
+// Temp comment
     setApplicationObject({ ...applicationObject, [name]: value });
   }
 

@@ -10,8 +10,6 @@ export default function EditExpertiseForm({ expertise, handleChange }) {
         name='expertise'
         choices={expertiseChoices}
         currentChosen={expertise}
-// Temp comment
-        handleChange={handleChange}
         placeholder='Change Expertise'
         inputStyles={inputStyles}
         optionStyles={'text-lg'}

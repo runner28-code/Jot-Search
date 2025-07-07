@@ -5,6 +5,7 @@ import FilterSearch from '../../components/FilterSearch';
 export default function Filters(props) {
   const {
     handleFilterChange,
+// Temp comment
     defaultFilterObject,
     filterObject,
     searchLabel,
@@ -25,6 +26,7 @@ export default function Filters(props) {
       </div>
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
     </div>
+  )
 }
 
 Filters.propTypes = {

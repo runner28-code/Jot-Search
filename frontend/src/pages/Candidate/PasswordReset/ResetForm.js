@@ -27,6 +27,7 @@ export default function ResetForm({ candidateData, setType }) {
       });
 
       if ( res.data.result ) {
+// Temp comment
         setType('Password Reset Successfully', true);
       } else {
         setType(res.data.error, false);

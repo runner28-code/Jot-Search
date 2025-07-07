@@ -2,7 +2,6 @@ import cron from "node-cron";
 import { BullhornService } from "../services/BullhornService";
 import { GetroService } from "../services/GetroService";
 import { consoleLog } from "../utils";
-
 const setupCronJobs = async () => {
   console.log('*** Running all crons ***');
 
@@ -36,6 +35,7 @@ const setupCronJobs = async () => {
     consoleLog('/// CRON_JOB_ENDED: BULLHORN_GET_CLIENTCONTACTS');
   });
 
+  cron.schedule('0 */12 * * *', async () => {
     try {
       consoleLog('/// CRON_JOB_STARTED: BULLHORN_GET_CANDIDATES');
       await (await BullhornService.getClient()).getCandidates(false, 50);

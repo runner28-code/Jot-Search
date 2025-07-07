@@ -190,7 +190,6 @@ export async function getSavedCompanies(id, count = null, page = null) {
       ...params
     }
   });
-  return normalizeData(data.companies);
 }
 
 //* JOBS

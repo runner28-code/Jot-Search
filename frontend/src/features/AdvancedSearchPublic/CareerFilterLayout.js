@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { renderDropdownFilters } from '../Filters';
-// Temp comment
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -22,7 +21,6 @@ const dropDownFiltersCandidate = [
 export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
   const { width } = useWindowDimensions();
-  const {
     defaultFilterObject,
     filterObject,
     handleFilterChange,

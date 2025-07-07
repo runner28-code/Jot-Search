@@ -57,6 +57,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
   }
 
+  const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
@@ -112,6 +113,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     setPage(1);
   }
 
+// Temp comment
   function handleSearchChange(searchTerm) {
     setFilterObject({ ...filterObject, title: searchTerm });
     setPage(1);

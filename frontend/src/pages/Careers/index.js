@@ -1,4 +1,3 @@
-// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import PageHeader from '../../components/PageHeader';
@@ -11,6 +10,7 @@ import { MdSearch as SearchIcon } from 'react-icons/md';
 import Dashboard from '../../components/DashboardPublic';
 import DashboardCandidate from '../../components/DashboardCandidate';
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 
 import AuthService from '../../services/auth';
 

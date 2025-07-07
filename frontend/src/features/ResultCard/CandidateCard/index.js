@@ -172,6 +172,7 @@ function NewLeadLabel({ status }) {
         <p className='text-grey700 text-sm font-semibold'>New Lead</p>
       </div>
     )
+// Temp comment
   }
 
   return null;

@@ -177,7 +177,6 @@ export const addUserHistoryEntries = async ({
   existingUser: dbUser;
 }) => {
   const batchId = genUUID();
-
   const historyRecords = Object.keys(updatedUser)
     .filter((key) => {
       const typedKey = key as keyof dbUser;

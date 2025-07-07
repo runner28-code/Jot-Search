@@ -33,7 +33,6 @@ DashboardMinifiedDesktop.propTypes = {
 
 function CareerHeader ({ location }) {
   const loggedIn = AuthService.loggedIn();
-// Temp comment
 
   let userRole = AuthService.getUserRole();
 
@@ -85,4 +84,3 @@ function CareerHeader ({ location }) {
   }
   return (<>
     <div className='mt-8'></div>
-  </>)

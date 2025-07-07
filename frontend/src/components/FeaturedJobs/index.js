@@ -40,7 +40,6 @@ export default function FeaturedJobs() {
       { renderColorShapes() }
       <h2 className={ width >= 990 ? titleStyles : titleStylesMoible }>Featured Opportunities</h2>
       <div className='flex mt-12 flex-wrap'>
-        {
           isLoading ?
             <LoadingSpinner />
             :

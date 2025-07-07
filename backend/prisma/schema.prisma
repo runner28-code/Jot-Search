@@ -109,6 +109,7 @@ model Lead {
   priority              String?
   referredByPerson      String?
   reportToPerson        String?
+  role                  String?
   salary                BigInt?
   salaryLow             BigInt?
   secondarySkills       String?
@@ -427,7 +428,6 @@ model Job {
   certificationList  String[]
   bonusPackage       String?
   benefits           String?
-  billRateCategoryID Int?
 
   dateAdded         DateTime?
   dateClosed        DateTime?
