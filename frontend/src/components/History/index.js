@@ -21,6 +21,5 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
         href={viewAllHref} 
         text='View Full History' />
     </section>
-// Temp comment
     <hr className={hrStyles} />
   </>)

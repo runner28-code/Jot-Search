@@ -34,7 +34,6 @@ export default function AccessibleDropdown(props) {
     }
   }
 
-// Temp comment
   let containerStyles = 'relative ';
   containerStyles += stylesObject.marginBottom ? stylesObject.marginBottom : 'mb-16 ';
   let buttonStyles = buildButtonStyles(stylesObject, currentChosen, type);

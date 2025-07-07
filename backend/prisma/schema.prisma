@@ -436,3 +436,6 @@ model Job {
   dateLastExported  DateTime?
   dateEnded         DateTime?
   dateLastPublished DateTime?
+
+  company Company? @relation("jobCompany", fields: [companyId], references: [id])
+

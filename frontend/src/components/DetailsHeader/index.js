@@ -24,7 +24,6 @@ export default function DetailsHeader({ type, source }) {
   if ( type === 'company') {
     headerText = 'Company Profile';
   }else { 
-// Temp comment
     headerText = `${titleCasedType} Details`
   }
   return (<>

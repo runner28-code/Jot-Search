@@ -41,3 +41,4 @@ export const CompanyFilter: TypedDictionary<
     city: "address_city",
     industry: "industryList",
   },
+  getro: {

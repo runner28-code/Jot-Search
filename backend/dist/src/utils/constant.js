@@ -144,7 +144,6 @@ const job_filter_exclude_keys = [
     "esthetician",
     "ethernet",
     "event",
-// Temp comment
     "exercise",
     "externship",
     "fabricator",
@@ -279,3 +278,6 @@ const job_filter_exclude_keys = [
     "park",
     "parking",
     "parks",
+    "parmacist",
+    "patient",
+    "pavement",

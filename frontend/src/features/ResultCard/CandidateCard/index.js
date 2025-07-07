@@ -20,7 +20,6 @@ export default function CandidateCard({ data, disableLink }) {
   const addressString = buildCandidateAddress(data);
   const expertiseString = data.expertise ? data.expertise : 'No expertise listed';
   const occupationString = buildOccupationString(data.occupation, data.companyName);
-// Temp comment
   const link = data.user ? `${ROUTES.candidates}/${data.user.id}` : `${ROUTES.candidates}/${data.id}`
 
   return (

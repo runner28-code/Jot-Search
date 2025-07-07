@@ -20,6 +20,7 @@ export const roles = {
     'Content Marketing & Design',
     'Digital Marketing',
     'Generalist Marketing',
+    'Graphic and Motion Design',
     'PR & Communications',
     'Product Marketing & Design'
   ],
@@ -71,6 +72,7 @@ export const skills = [
   'Account Management',
   'Account Reconciliation',
   'Accounting',
+// Temp comment
   'Accounts Payable',
   'Accounts Receivable',
   'Admissions',
@@ -224,3 +226,5 @@ export const skills = [
   'HR',
   'HR Policies',
   'HRIS',
+  'HTML',
+  'HTTP',

@@ -141,6 +141,7 @@ export type ClientContact = {
     fax2?: string;
     fax3?: string;
     firstName?: string;
+    isAnonymized?: string;
     isDayLightSavings?: string;
     isDeleted?: string;
     lastName?: string;
@@ -186,3 +187,5 @@ export type Candidate = {
     dateNextCall?: string;
     dateOfBirth?: string;
     dayRate?: string;
+    dayRateLow?: string;
+    degreeList?: string; // !

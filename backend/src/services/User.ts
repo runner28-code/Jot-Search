@@ -356,3 +356,7 @@ export const getCompanyDashboardStats = async (days: number) => {
       where: {
         ...previousPeriodCommonQuery
       }
+    })
+
+    const candidateJobInvitesCompare = (candidateJobInvitesCurrentPeriod - candidateJobInvitesPreviousPeriod) * 100 / candidateJobInvitesCurrentPeriod
+    const data = {

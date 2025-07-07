@@ -14,6 +14,7 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
         const options = {
             query: query,
             location: 'US',
+        };
         const [job] = await BigQueryService.getClient().createQueryJob(options);
         const [res] = await job.getQueryResults();
 
@@ -67,3 +68,4 @@ export const getDataSource = (id: string) => {
 export const genUUID = () => uuid4();
 
 export const checkForJobFilter = (title: string, location: string) => {
+    if (title.match(JOB_EXCLUDE_KEYS_REGEX)) return false;

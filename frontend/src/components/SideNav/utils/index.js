@@ -29,11 +29,11 @@ export const choices = {
   careers: {
     label: 'Careers',
     icon: CareerIcon,
-// Temp comment
     link: ROUTES.careers,
   },
   companies: {
     label: 'Companies',
+// Temp comment
     icon: CompanyIcon,
     link: ROUTES.companies,
   },

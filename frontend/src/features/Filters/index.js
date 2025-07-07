@@ -39,7 +39,6 @@ Filters.propTypes = {
   handleSearchClick: PropTypes.func,
 }
 
-// Temp comment
 export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick) {
   if (setSearchTerm) { // if provided a function, render search bar
     return (

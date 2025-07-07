@@ -12,6 +12,7 @@ import {
 } from '../../utils/skillHierarchyMap';
 import {
   inputValidation,
+// Temp comment
   formatFormObj,
   renderButtonOrLoading,
   renderErrorBlock,
@@ -46,7 +47,6 @@ const defaultState = {
 
 const defaultCommunity = {
   community: ''
-// Temp comment
 }
 export default function RegistrationFormInternal(loggedIn) {
   const {categories} = useContext(CategoryContext);

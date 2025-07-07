@@ -118,6 +118,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         <div className='mb-10'>
           <div className='flex items-center'>
             <MdLocationOn
+// Temp comment
               className={iconStyles + 'fill-royalBlue'} />
             <h2 className='text-h6 text-royalBlue'>Location</h2>
           </div>
@@ -182,7 +183,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               <label 
                 className='text-h6 text-royalBlue w-full'
                 htmlFor='zip'>
-// Temp comment
               Zip:
               </label>
               <input 

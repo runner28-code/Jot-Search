@@ -22,6 +22,7 @@ export enum Tables {
   JOINED_COMPANIES = "companies_joined",
   JOINED_CANDIDATES = "candidates_joined",
   CATEGORIES = "Categories",
+}
 
 export const DATASET_BULLHORN = config.bullhornDatasetID || "";
 export const DATASET_GETRO = config.getroDatasetID || "";
@@ -78,3 +79,4 @@ export type JobSearchByFilterResponse =
     }
   | AllJobsResponse;
 
+export type AllJobsResponse = {

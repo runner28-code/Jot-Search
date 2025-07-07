@@ -279,3 +279,6 @@ const job_filter_exclude_keys = [
   "parmacist",
   "patient",
   "pavement",
+  "penetration",
+  "permit",
+  "personal trainer",

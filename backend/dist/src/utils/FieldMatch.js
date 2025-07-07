@@ -1,4 +1,3 @@
-// Temp comment
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.USER_FILTER = exports.CompanyFilter = exports.JobFilter = void 0;
@@ -36,6 +35,6 @@ exports.CompanyFilter = {
         name: "name",
         city: "address_city",
         industry: "industryList",
-    },
     getro: {
         name: "name",
+        city: "locations",

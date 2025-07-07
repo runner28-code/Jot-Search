@@ -108,7 +108,6 @@ export type Job = {
     skillList?: string;
     source?: string;
     startDate?: string;
-    status?: string;
     taxRate?: string;
     taxStatus?: string;
     title?: string;
@@ -187,3 +186,5 @@ export type Candidate = {
     dateAdded?: string;
     dateAvailable?: string;
     dateAvailableEnd?: string;
+    dateI9Expiration?: string;
+    dateLastComment?: string;

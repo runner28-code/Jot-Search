@@ -22,7 +22,6 @@ function HeaderContent({ companyData }) {
   const headerIconStyles = 'h-12 w-10 mr-3 fill-midGrey';
   const headerRowTextStyles = 'text-md text-textBlack ';
   const headerGroupStyles = 'flex items-center basis-1/2 my-4';
-  const headerGroupStylesDesktop = 'flex items-center basis-1/3 my-4';
   const headerTitle = 'text-h4 font-spaceGrotesk font-semibold basis-2/3';
   const headerTitleDesktop = 'text-h4 font-spaceGrotesk font-semibold basis-2/3 flex items-center'
   return (
@@ -38,7 +37,6 @@ function HeaderContent({ companyData }) {
         </div>
         <div>
           { renderBusinessSector(companyData.businessSectorList, 'text-lg font-spaceGrotesk text-royalBlue mb-8') }
-// Temp comment
         </div>
         <div className={headerRowStyles}>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>

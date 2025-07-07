@@ -1,6 +1,6 @@
 import Candidate from '../Candidate'
 
-  return (
+export default function Profile() {
     <>
       <Candidate />
     </>

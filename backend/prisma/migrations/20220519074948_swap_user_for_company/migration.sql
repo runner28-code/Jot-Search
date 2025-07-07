@@ -58,3 +58,4 @@ CREATE TABLE "Company" (
     "tickerSymbol" TEXT,
     "trackTitle" TEXT,
     "twitterHandle" TEXT,
+    "workWeekStart" INTEGER,

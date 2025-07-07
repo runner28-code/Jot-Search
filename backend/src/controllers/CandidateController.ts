@@ -112,6 +112,7 @@ export class CandidateController {
     } catch (error) {
       console.error(error)
       return { message: error, result: false };
+    }
   }
 
   @Authorized()
@@ -234,3 +235,6 @@ export class CandidateController {
 
           const typedCandidates = candidates.map((candidate: any) => ({
             ...candidate,
+            type: "candidate"
+          }))
+

@@ -325,7 +325,6 @@ export class BullhornService {
           ...company,
           id: `bl-${bullhornId}`,
           address_address1: company.address?.address1 || null,
-          address_address2: company.address?.address2 || null,
           address_city: company.address?.city || null,
           address_state: company.address?.state || null,
           address_zip: company.address?.zip || null,
@@ -560,3 +559,8 @@ export class BullhornService {
             owner: `${d.owner?.id}`,
             skills: d.skills?.data.map((skill: any) => skill.id).join(" | "),
             dateAdded: new Date(d.dateAdded),
+            dateLastModified: new Date(d.dateLastModified),
+          }));
+          if (!testMode) {
+            const res = await saveClientContacts(updatedData);
+            if (res === -1) return;

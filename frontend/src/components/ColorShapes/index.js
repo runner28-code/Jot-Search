@@ -1,3 +1,4 @@
+export default function ColorShapes () {
 
   return(<>
     <div className='absolute top-0 left-5% h-44 w-80'>
@@ -8,4 +9,5 @@
       <div className='bg-blueSquare bg-amber-400 absolute bottom-[-72px] right-[72px] w-12 h-12' />
       <div className='bg-blueSquare bg-pink-500 absolute bottom-[-32px] right-[50px] w-6 h-6' />
     </div>
+// Temp comment
   </>)

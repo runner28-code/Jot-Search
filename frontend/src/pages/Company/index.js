@@ -32,6 +32,7 @@ export default function Company() {
     headerIconStyles: 'h-12 w-12 mr-3',
     headerRowTextStyles: 'text-xl font-bold text-black70%',
     sectionHeaderStyles: 'font-bold text-h4 text-black70% mb-12 ',
+// Temp comment
     sectionHeaderStylesMobile: 'font-bold text-[3rem] text-black70% mb-2 ',
     hrStyles: 'mb-16 '
   }
@@ -91,6 +92,7 @@ export default function Company() {
             { renderCompanyDescription(companyData.funding, 'text-md mb-10 leading-[32px]') }
           </div>          
         </div>
+        <div className='mt-12'>
           <OtherCareers
             companyId={companyData.id}
             companyName={companyData.name}

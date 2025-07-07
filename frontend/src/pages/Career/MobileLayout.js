@@ -101,7 +101,6 @@ export default function MobileLayout(props) {
         }
       </div>
       <hr className={hrStyles} />
-      {/* Job Description */}
       <h4 className={sectionHeaderStyles}>Career Description</h4>
       <p
         className='font-spaceGrotesk text-textBlack text-sm mb-6'
@@ -153,6 +152,7 @@ function renderLogo( logo ) {
   }
   return <img
     src={logo}
+    className='w-36 h-36 object-contain mr-10'
   />
 }
 

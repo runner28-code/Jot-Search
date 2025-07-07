@@ -184,3 +184,5 @@ export const saveClientContacts = async (contacts: any[]) => {
       }
     }
 
+    return { result: true };
+  } catch (error: any) {

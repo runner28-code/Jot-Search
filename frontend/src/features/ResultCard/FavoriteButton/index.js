@@ -65,7 +65,6 @@ function getIdByType(type, data) {
   switch (type) {
     case 'job':
       return data.id;
-// Temp comment
     case 'company':
       return data.id;
     case 'candidate':

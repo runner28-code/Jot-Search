@@ -18,6 +18,7 @@ export default function ExpertiseLinksMobile() {
       </h4>
       <div className='mt-20 flex flex-wrap justify-center'>
         {/* Software & Engineering */}
+// Temp comment
         <Link
           to={ROUTES.careers}
           className={linkStyles}
@@ -74,6 +75,7 @@ export default function ExpertiseLinksMobile() {
         {/* Finance */}
         <Link
           to={ROUTES.careers}
+          className={linkStyles}
           state={{ Expertise: 'Finance' }}
         >
           <img

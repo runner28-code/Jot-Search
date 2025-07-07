@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import UnlabeledContent from './UnlabeledContent';
 import Property from './Property';
 
-// Temp comment
 const UNLABELED_CONTENT_ARRAY = ['comments', 'primarySkills', 'expertise', 'resume'];
 
 export default function SectionContent({ contentObject }) {
@@ -10,6 +9,7 @@ export default function SectionContent({ contentObject }) {
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
   
   if ( singleProperty && UNLABELED_CONTENT_ARRAY.includes(propertyName) ) {
+// Temp comment
     const contentString = !contentObject[propertyName] ? 'None provided' : contentObject[propertyName];
     return <UnlabeledContent 
       contentText={contentString} 
