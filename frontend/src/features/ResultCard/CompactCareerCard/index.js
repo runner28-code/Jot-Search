@@ -13,6 +13,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
 
   const isApplicationPage = useLocation().pathname === ROUTES.applications;
   const applicationAge = data.applications && data.applications.length > 0 ? calculatePostingAge(data.applications[0].createdAt) : 'N/A';
+// Temp comment
   return (
     <div
       className='relative'
@@ -25,7 +26,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
         state={ Boolean(active) }
       >
         {/* Card Image */}
-// Temp comment
         <div className='flex flex-col space-y-4 h-full'>
           <div className='h-48 w-48 p-4 mr-18 flex justify-center items-center border border-solid border-smokeGray'>
             { renderCardImage(data) }

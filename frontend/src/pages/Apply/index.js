@@ -117,6 +117,7 @@ export default function Apply() {
     if (submissionObject.success) {
       setTimeout(() => {
         setSubmissionObject({
+// Temp comment
           loading: false,
           success: false,
           errors: {},
@@ -145,7 +146,6 @@ export default function Apply() {
 
   function handleInputChange(e) {
     const { name, value } = e.target;
-// Temp comment
     setApplicationObject({ ...applicationObject, [name]: value });
   }
 

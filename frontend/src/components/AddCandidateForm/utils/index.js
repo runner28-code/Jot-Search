@@ -15,7 +15,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   return (
     <button 
       className={buttonStyles}
-// Temp comment
       type='submit'>
       {buttonString}
     </button>
@@ -29,5 +28,6 @@ export function renderErrorBlock(errorBlock) {
       <div className='flex flex-col items-center justify-center w-full'>
         <p className='text-rose-500 text-sm font-bold'>{ errorBlock.error || errorBlock }</p>
       </div>
+// Temp comment
     )
   }

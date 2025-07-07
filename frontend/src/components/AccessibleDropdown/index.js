@@ -34,6 +34,7 @@ export default function AccessibleDropdown(props) {
     }
   }
 
+// Temp comment
   let containerStyles = 'relative ';
   containerStyles += stylesObject.marginBottom ? stylesObject.marginBottom : 'mb-16 ';
   let buttonStyles = buildButtonStyles(stylesObject, currentChosen, type);
@@ -104,7 +105,6 @@ function buildButtonStyles(stylesObject) {
   return buttonStyles
 }
 
-// Temp comment
 function buttonText(name, placeholder, currentChosen) {
   if ( !placeholder ) {
     return currentChosen;

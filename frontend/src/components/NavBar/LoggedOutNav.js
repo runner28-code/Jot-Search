@@ -17,7 +17,6 @@ export default function NavBar() {
     return <MobileNavBarLayout />
   } else {
     return <DesktopNavBarLayout />
-// Temp comment
   }
 }
 
@@ -32,7 +31,6 @@ function MobileNavBarLayout() {
             alt='logo'
             className='w-72 h-ful'
           />
-        </Link>
         {/* Nav Menu */}
         <div className='flex items-center'>
           { width >= 990 ? <NavSearch /> : <NavSearchMobile />}

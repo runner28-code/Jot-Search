@@ -7,6 +7,7 @@ import {
   Candidates,
   Dashboard,
   Favorites,
+// Temp comment
   Logout,
   Profile,
 } from './pages';
@@ -45,6 +46,7 @@ export default function Auth() {
           path={ROUTES.activeCareers}
           element={<ActiveCareers />} />
         <Route
+          path={ROUTES.candidates}
           element={<Candidates />} />
         <Route
           path={ROUTES.addUser}

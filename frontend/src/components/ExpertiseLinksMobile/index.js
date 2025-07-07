@@ -39,6 +39,7 @@ export default function ExpertiseLinksMobile() {
         >
           <img
             src={salesAndBizDevIcon}
+            alt='Sales & Biz Dev Icon'
             className={iconStyles}
           />
           <span className={textStyles}>Sales & Business</span>
@@ -73,7 +74,6 @@ export default function ExpertiseLinksMobile() {
         {/* Finance */}
         <Link
           to={ROUTES.careers}
-          className={linkStyles}
           state={{ Expertise: 'Finance' }}
         >
           <img

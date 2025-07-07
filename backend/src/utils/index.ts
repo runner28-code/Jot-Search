@@ -14,7 +14,6 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
         const options = {
             query: query,
             location: 'US',
-        };
         const [job] = await BigQueryService.getClient().createQueryJob(options);
         const [res] = await job.getQueryResults();
 
@@ -46,6 +45,7 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
         return false;
     } catch (error) {
         console.log(error);
+        return true;
     }
 }
 

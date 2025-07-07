@@ -23,6 +23,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     title: '',
     'On-Site/Remote': 'Any Work Setting',
     'Expertise': 'Any Expertise',
+// Temp comment
   });
 
   function handleSearchClick() {
@@ -94,6 +95,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
             inputWidth: 'w-92 ',
             marginBottom: 'mb-0 ',
             listStyles: 'bg-white text-black70% border-midGrey border-2 border-solid ',
+            listItemStyles: 'pl-6 pr-2 py-2 tracking-wide '
           }}
           showDropdownArrow={true}
         />

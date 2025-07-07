@@ -428,6 +428,7 @@ model Job {
   certificationList  String[]
   bonusPackage       String?
   benefits           String?
+  billRateCategoryID Int?
 
   dateAdded         DateTime?
   dateClosed        DateTime?

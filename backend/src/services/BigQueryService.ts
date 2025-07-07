@@ -23,7 +23,6 @@ export class BigQueryService {
             if (condition) {
                 query = `
                     ${query}
-                    WHERE ${condition}
                 `;
             }
             if (count) {

@@ -8,11 +8,11 @@ const dropdownFiltersCoord = [
   'Experience',
   'Remote Availability',
   'Employment Type',
-  'Status'
 ];
 
 const dropdownFilters = [
   'Category',
+  'Experience',
   'Remote Availability',
   'Employment Type',
 ];

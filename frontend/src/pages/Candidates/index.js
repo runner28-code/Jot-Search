@@ -5,7 +5,6 @@ import AdvancedSearch from '../../features/AdvancedSearch';
 import AuthService from '../../services/auth';
 
 export default function Candidates() {
-// Temp comment
   // Redirect if userRole is 'candidate', candidates should not be able to see other candidates
   const { role } = AuthService.getProfile();
   if (role === 'candidate') {
@@ -20,4 +19,5 @@ export default function Candidates() {
       />
       <AdvancedSearch disabledTabs />
     </section>
+// Temp comment
   )

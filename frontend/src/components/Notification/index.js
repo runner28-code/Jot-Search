@@ -1,4 +1,6 @@
+// Temp comment
 import PropTypes from 'prop-types';
+
 // Images
 import bell from '../../assets/icons/bell.svg';
 

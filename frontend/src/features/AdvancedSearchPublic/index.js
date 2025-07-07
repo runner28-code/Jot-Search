@@ -98,6 +98,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   useEffect(() => {
     const newState = { ...initialFilterState, ...state };
     if (state) {
+// Temp comment
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
@@ -113,7 +114,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     setPage(1);
   }
 
-// Temp comment
   function handleSearchChange(searchTerm) {
     setFilterObject({ ...filterObject, title: searchTerm });
     setPage(1);

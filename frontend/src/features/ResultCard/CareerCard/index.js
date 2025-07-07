@@ -102,7 +102,6 @@ function DesktopCard({ dataObj, active }) {
         {/* Expertise */}
         <p className='text-md text-royalBlue font-spaceGrotesk font-semibold mt-6'>{categoryString}</p>
         {/* First row icons */}
-// Temp comment
         <div className='w-full flex items-center mt-10'>
           {/* Candidate Favorites */}
           <div className='w-1/3 flex items-center pr-4'>

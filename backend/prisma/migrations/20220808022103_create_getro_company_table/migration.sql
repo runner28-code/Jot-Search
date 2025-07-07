@@ -6,6 +6,7 @@ CREATE TABLE "GetroCompany" (
     "description" TEXT,
     "domain" TEXT,
     "facebook_url" TEXT,
+    "founded" TEXT,
     "id" TEXT NOT NULL,
     "instagram_url" TEXT,
     "jobs_count" INTEGER,
@@ -13,4 +14,3 @@ CREATE TABLE "GetroCompany" (
     "locations" TEXT,
     "logo_url" TEXT,
     "name" TEXT,
-    "ocp_search_status" TEXT,

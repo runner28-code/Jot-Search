@@ -20,7 +20,6 @@ export const roles = {
     'Content Marketing & Design',
     'Digital Marketing',
     'Generalist Marketing',
-    'Graphic and Motion Design',
     'PR & Communications',
     'Product Marketing & Design'
   ],

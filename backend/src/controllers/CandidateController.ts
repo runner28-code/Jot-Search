@@ -112,7 +112,6 @@ export class CandidateController {
     } catch (error) {
       console.error(error)
       return { message: error, result: false };
-    }
   }
 
   @Authorized()

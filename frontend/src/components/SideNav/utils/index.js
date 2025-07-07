@@ -29,12 +29,14 @@ export const choices = {
   careers: {
     label: 'Careers',
     icon: CareerIcon,
+// Temp comment
     link: ROUTES.careers,
   },
   companies: {
     label: 'Companies',
     icon: CompanyIcon,
     link: ROUTES.companies,
+  },
   candidates: {
     label: 'Candidates',
     icon: CandidatesIcon,

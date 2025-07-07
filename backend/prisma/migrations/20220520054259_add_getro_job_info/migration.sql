@@ -7,6 +7,7 @@
 -- AlterTable
 ALTER TABLE "Job" ADD COLUMN     "getroJobInfoId" TEXT,
 ALTER COLUMN "hidden" SET NOT NULL,
+ALTER COLUMN "hidden" SET DEFAULT false;
 
 -- CreateTable
 CREATE TABLE "GetroJobInfo" (
@@ -19,6 +20,5 @@ CREATE TABLE "GetroJobInfo" (
     "compensation_period" TEXT,
     "compensation_public" TEXT,
     "description" TEXT,
-    "discarded" TEXT,
     "employment_types" TEXT,
     "expires_at" TIMESTAMP(3),
