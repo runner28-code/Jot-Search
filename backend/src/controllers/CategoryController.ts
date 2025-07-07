@@ -18,6 +18,7 @@ export class CategoryController {
   async searchByID(
     @QueryParam("id") id: string
   ): Promise<CategoryByIdResponse> {
+    try {
       const _filters = [
         {
           key: "id",
@@ -30,7 +31,6 @@ export class CategoryController {
       return {
         category: category?.[0],
         message: null,
-      };
     } catch (error) {
       console.log(error);
       return {

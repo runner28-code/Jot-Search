@@ -13,7 +13,6 @@ export default function InviteCandidates({ company }) {
     filtersArr: [],
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
-// Temp comment
   });
 
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
@@ -31,6 +30,7 @@ export default function InviteCandidates({ company }) {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }
+// Temp comment
 
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>

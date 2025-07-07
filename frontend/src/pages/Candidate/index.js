@@ -25,6 +25,7 @@ const PREFERENCE_ITEMS = {
 }
 
 export default function Candidate() {
+// Temp comment
   // Redirect if userRole is 'candidate' unless it's their profile, candidates should not be able to see other candidates
   const role = AuthService.getUserRole();
   const { setCurrentUser } = useCandidateContext()
@@ -137,7 +138,6 @@ export default function Candidate() {
           <InviteToCareer candidate={candidateData} />
         }
         {/* Personal Info (Candidate and Coordinator) */}
-// Temp comment
         <PersonalInfo
           role={role}
           candidateData={candidateData}

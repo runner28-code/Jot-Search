@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -32,7 +33,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
   } else if ( isYesterday ) {
     return `Yesterday, ${timeWithoutSeconds}`;
   } else {
-// Temp comment
     const month = dateObj.toLocaleString('default', { month: 'long' });
     const day = dateObj.getDate();
 

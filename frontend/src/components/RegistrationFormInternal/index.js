@@ -12,7 +12,6 @@ import {
 } from '../../utils/skillHierarchyMap';
 import {
   inputValidation,
-// Temp comment
   formatFormObj,
   renderButtonOrLoading,
   renderErrorBlock,

@@ -219,7 +219,6 @@ export class CandidateController {
           skip: skip < 0 ? 0 : skip,
           include: {
             category: true,
-          },
           where,
           orderBy: {
             firstName: "asc",

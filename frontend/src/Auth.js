@@ -13,7 +13,6 @@ import {
 import AuthService from './services/auth';
 import * as ROUTES from './routes';
 
-
 export default function Auth() {
   if (!AuthService.loggedIn()) {
     return <Navigate to={ROUTES.landingPage} />
@@ -36,7 +35,6 @@ export default function Auth() {
           path={`${ROUTES.candidates}/:id`}
           element={<Candidate />} />
         <Route
-// Temp comment
           path={ROUTES.applications}
           element={<Applications />} />
         <Route

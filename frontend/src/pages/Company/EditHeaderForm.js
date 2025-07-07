@@ -51,6 +51,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             name='avatar'
             onChange={handleInputChange}
           />
+// Temp comment
         </div>
       </div>
       <div className='grow font-bold'>
@@ -118,7 +119,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         <div className='mb-10'>
           <div className='flex items-center'>
             <MdLocationOn
-// Temp comment
               className={iconStyles + 'fill-royalBlue'} />
             <h2 className='text-h6 text-royalBlue'>Location</h2>
           </div>

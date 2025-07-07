@@ -8,7 +8,6 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
       value={ currentChosen }
       onChange={ handleChange }
       multiple={ !!multiselect }
-// Temp comment
       required
       disabled={ disabled }
     >

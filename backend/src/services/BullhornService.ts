@@ -182,7 +182,6 @@ export class BullhornService {
             version: "*",
             access_token: this.access_token,
           },
-          { encode: false }
         );
         const url = `${this.api_base_url}/login?${query}`;
         const res = await axios.post(url);
@@ -325,6 +324,7 @@ export class BullhornService {
           ...company,
           id: `bl-${bullhornId}`,
           address_address1: company.address?.address1 || null,
+          address_address2: company.address?.address2 || null,
           address_city: company.address?.city || null,
           address_state: company.address?.state || null,
           address_zip: company.address?.zip || null,

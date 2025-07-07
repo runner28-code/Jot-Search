@@ -9,7 +9,6 @@ import {
   QueryParam,
   UploadedFile,
   Authorized,
-  HeaderParam,
   CurrentUser,
   QueryParams,
 } from "routing-controllers";

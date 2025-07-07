@@ -15,5 +15,4 @@ import './index.css';
 export const queryClient = new QueryClient();
 const isDevelopment = window.location.hostname === 'localhost';
 
-// Temp comment
 ReactDOM.render(

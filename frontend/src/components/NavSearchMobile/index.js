@@ -17,6 +17,7 @@ import AuthService from '../../services/auth';
 
 
 import {
+  defaultJobFilterState,
   buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
@@ -49,7 +50,6 @@ export default function NavSearchMobile({ placeholder }) {
       return { filterKey: 'name', filterValue: searchTerm }
     }
   };
-
   const [isOpen, setIsOpen] = useState(false);
 
   const { jobs, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('jobs'), count: NUM_ITEMS_PER_TYPE, page: 1, enabled: isOpen });

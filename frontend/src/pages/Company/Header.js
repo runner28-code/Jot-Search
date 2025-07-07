@@ -22,6 +22,7 @@ function HeaderContent({ companyData }) {
   const headerIconStyles = 'h-12 w-10 mr-3 fill-midGrey';
   const headerRowTextStyles = 'text-md text-textBlack ';
   const headerGroupStyles = 'flex items-center basis-1/2 my-4';
+  const headerGroupStylesDesktop = 'flex items-center basis-1/3 my-4';
   const headerTitle = 'text-h4 font-spaceGrotesk font-semibold basis-2/3';
   const headerTitleDesktop = 'text-h4 font-spaceGrotesk font-semibold basis-2/3 flex items-center'
   return (
@@ -153,6 +154,7 @@ function renderDesktopLogo(logoUrl, name) {
   const logoStyles = 'object-contain w-full h-full';
   if( width < 1280 ) {
     return null;
+// Temp comment
   }
   if (!logoUrl) {
     return (

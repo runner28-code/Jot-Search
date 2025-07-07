@@ -73,6 +73,7 @@ AccessibleDropdown.defaultProps = {
 };
 
 AccessibleDropdown.propTypes = {
+// Temp comment
   type: PropTypes.string,
   name: PropTypes.string,
   label: PropTypes.string,

@@ -8,6 +8,7 @@ const experienceValues = Object.values(experienceMap).filter(val => val !== null
 export const jobFilterObject = {
   'Expertise': [
     'Any',
+// Temp comment
     ...expertises
   ],
   'On-Site/Remote': [
@@ -76,7 +77,6 @@ export const candidateFilterObject = {
     'On Site',
     'Hybrid'
   ],
-// Temp comment
   'Employment Type': [
     'Any',
     'Full-Time',

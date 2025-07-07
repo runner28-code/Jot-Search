@@ -55,7 +55,6 @@ function renderSearch() {
 
   if( width <= 1024 ) {
     return (<>
-      <ExploreSearchMobile
         totalJobs={totalJobsCount}
         totalCompanies={totalCompaniesCount}
         loading={isLoading}

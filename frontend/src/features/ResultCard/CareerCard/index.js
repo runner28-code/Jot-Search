@@ -54,6 +54,7 @@ export default function CareerCard({ data, active }) {
     </div>
   )
 }
+// Temp comment
 
 CareerCard.propTypes = {
   data: PropTypes.shape({
@@ -68,7 +69,6 @@ CareerCard.propTypes = {
     salary: PropTypes.string,
     salaryUnit: PropTypes.string,
     createdAt: PropTypes.string,
-// Temp comment
     category: PropTypes.shape({
       id: PropTypes.number,
       name: PropTypes.string

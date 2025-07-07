@@ -52,13 +52,13 @@ export default function CandidateFilterLayout(props) {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
-// Temp comment
     checkboxFilters.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
     });
   }
 
 
+// Temp comment
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>

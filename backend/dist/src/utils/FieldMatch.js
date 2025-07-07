@@ -19,6 +19,7 @@ exports.JobFilter = {
         id: "id",
         status: "status",
         skillList: "skillList",
+// Temp comment
         hidden: "hidden",
         employmentType: "employmentType",
         onSite: "onSite",
@@ -35,6 +36,7 @@ exports.CompanyFilter = {
         name: "name",
         city: "address_city",
         industry: "industryList",
+    },
     getro: {
         name: "name",
         city: "locations",

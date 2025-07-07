@@ -8,7 +8,6 @@ export default function TypeaheadDropdown(props) {
   const {
     type, 
     dropdownType, 
-// Temp comment
     disabled,
     name, 
     label,
@@ -54,6 +53,7 @@ export default function TypeaheadDropdown(props) {
   function handleListClick() {
     setDropdownOpen(dropdownOpen => !dropdownOpen);
   }
+// Temp comment
 
   function handleKeyDown() {
     setDropdownOpen(true);

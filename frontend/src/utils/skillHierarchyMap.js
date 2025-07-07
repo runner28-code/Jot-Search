@@ -72,7 +72,6 @@ export const skills = [
   'Account Management',
   'Account Reconciliation',
   'Accounting',
-// Temp comment
   'Accounts Payable',
   'Accounts Receivable',
   'Admissions',

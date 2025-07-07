@@ -117,6 +117,7 @@ const CandidateProvider = ({children}) => {
   }
 
   const handleCandidateUpdate = (updatedValues) => {
+// Temp comment
     const currentCandidateData = candidates.find(candidate => candidate.id === updatedValues.id);
     const updatedCandidate = { ...currentCandidateData, ...updatedValues };
 

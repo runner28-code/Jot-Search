@@ -13,6 +13,7 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 export default function GlobalSearch({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
+// Temp comment
   const [ searchTerm, setSearchTerm ] = useState('');
   const [ results, setResults ] = useState({
     jobs: [],
@@ -33,6 +34,7 @@ export default function GlobalSearch({ placeholder }) {
   }
 
   /* Debounce functions will wait until user stops typing to send API call */
+  const debounceSearchTermFunction = useCallback(
     debounce( handleDebounce, 300 ),
     []
   );

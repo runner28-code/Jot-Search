@@ -27,7 +27,6 @@ export default function InviteCandidates({ job }) {
       candidate
     }
   }) || [];
-// Temp comment
 
   const [selected, setSelected] = useState([]);
   const deleteItem = (e, value) => {
@@ -46,5 +45,6 @@ export default function InviteCandidates({ job }) {
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs'
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
+// Temp comment
       ))}
     </div>)
