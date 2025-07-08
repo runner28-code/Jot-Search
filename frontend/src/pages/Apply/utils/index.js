@@ -12,7 +12,6 @@ export const jobReferralChoices = [
   'LinkedIn',
   'Indeed',
   'Google',
-// Temp comment
   'Friend',
   'Other',
 ];
@@ -38,6 +37,7 @@ export const defaultState = {
   gender: '',
   workAuthorized: '',
   disability: '',
+// Temp comment
   veteran: '',
   loading: true
 }

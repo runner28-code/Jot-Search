@@ -360,3 +360,5 @@ export const getCompanyDashboardStats = async (days: number) => {
 
     const candidateJobInvitesCompare = (candidateJobInvitesCurrentPeriod - candidateJobInvitesPreviousPeriod) * 100 / candidateJobInvitesCurrentPeriod
     const data = {
+      activeCareersPosts: {
+        count: activeCareersPostsInCurrentPeriod,

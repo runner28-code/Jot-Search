@@ -14,6 +14,7 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
       {/* Placeholder Option */}
       { renderPlaceholder(noDefault, currentChosen) }
       {/* Generate options from choices */}
+// Temp comment
       {choices.map( choice => {
         return (
           <option 
@@ -21,6 +22,7 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
             value={ choice }
             className={ optionStyles }
           >
+            { choice }
           </option>
         )
       })}

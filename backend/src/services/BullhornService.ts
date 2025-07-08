@@ -565,3 +565,6 @@ export class BullhornService {
           if (!testMode) {
             const res = await saveClientContacts(updatedData);
             if (res === -1) return;
+          }
+          offset += count;
+          repeatErr = 0;

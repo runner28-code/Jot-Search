@@ -227,3 +227,4 @@ export const skills = [
   'HRIS',
   'HTML',
   'HTTP',
+  'Hydraulics',

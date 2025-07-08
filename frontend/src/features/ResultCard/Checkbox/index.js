@@ -5,8 +5,8 @@ export default function Checkbox({ id, checked, onChange, styles }) {
   return (
     <input
       type='checkbox'
-// Temp comment
       className={buttonStyles}
+// Temp comment
       checked={checked}
       onChange={() => onChange(id)}
     />

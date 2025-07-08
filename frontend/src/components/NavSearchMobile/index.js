@@ -33,6 +33,7 @@ export default function NavSearchMobile({ placeholder }) {
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
+// Temp comment
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
         firstname: splitName[0],
@@ -99,6 +100,7 @@ export default function NavSearchMobile({ placeholder }) {
   return (
     <div>
       <div ref={menuRef} >
+        <NavSearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }

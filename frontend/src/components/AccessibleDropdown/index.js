@@ -91,7 +91,6 @@ AccessibleDropdown.propTypes = {
     inputWidth: PropTypes.string,
     marginBottom: PropTypes.string,
     listStyles: PropTypes.string,
-// Temp comment
     listItemStyles: PropTypes.string,
   }).isRequired,
   showDropdownArrow: PropTypes.bool,
@@ -130,3 +129,21 @@ function buttonText(name, placeholder, currentChosen) {
   }
   
   return buttonString;
+}
+
+function renderLabel(name, label, required) {
+  if ( !label ) {
+    return null;
+  }
+
+  if ( required ) {
+    label += ' *';
+  }
+  return (
+    <label
+      htmlFor={ name }
+      className='block text-textBlack mb-2.5'
+    >
+      { label }
+    </label>
+  )

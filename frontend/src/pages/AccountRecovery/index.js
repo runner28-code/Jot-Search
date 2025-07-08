@@ -19,7 +19,6 @@ export default function AccountRecovery() {
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {
-// Temp comment
       setType(res.data.error, false);
     }
   };
@@ -27,6 +26,7 @@ export default function AccountRecovery() {
     setCondition(condition);
     setResponse(response);
   }
+// Temp comment
 
   function renderResponse () {
     const successStyle = 'mb-4 text-success';

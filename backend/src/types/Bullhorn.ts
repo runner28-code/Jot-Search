@@ -35,6 +35,7 @@ export type Company = {
     notes?: string,
     numEmployees?: string,
     numOffices?: string,
+    ownerShip?: string,
     phone?: string,
     revenue?: string,
     status?: string,
@@ -188,3 +189,4 @@ export type Candidate = {
     dateAvailableEnd?: string;
     dateI9Expiration?: string;
     dateLastComment?: string;
+    dateLastModified?: string;

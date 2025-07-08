@@ -172,7 +172,6 @@ export async function saveCompany(candidateId, companyId) {
     'company': companyId,
     'candidate': candidateId,
   });
-// Temp comment
 
   if (data.messsage === 'saved company') {
     AuthService.toggleSavedCompany(companyId, 'save');

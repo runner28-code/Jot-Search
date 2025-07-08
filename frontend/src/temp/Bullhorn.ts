@@ -37,6 +37,7 @@ export type Company = {
     numEmployees?: string,
     numOffices?: string,
     ownerShip?: string,
+    phone?: string,
     revenue?: string,
     status?: string,
     taxRate?: string,
@@ -188,3 +189,4 @@ export type Candidate = {
     dayRate?: string;
     dayRateLow?: string;
     degreeList?: string; // !
+    description?: string; // !

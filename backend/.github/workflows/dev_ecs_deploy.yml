@@ -26,6 +26,7 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
 
@@ -46,3 +47,4 @@ jobs:
         SECRET_GETRO_PASSWORD: ${{ secrets.DEV_GETRO_PASSWORD }}
         SECRET_BULLHORN_CLIENT_ID: ${{ secrets.DEV_BULLHORN_CLIENT_ID }}
         SECRET_BULLHORN_CLIENT_SECRET: ${{ secrets.DEV_BULLHORN_CLIENT_SECRET }}
+        SECRET_BULLHORN_API_USERNAME: ${{ secrets.DEV_BULLHORN_API_USERNAME }}

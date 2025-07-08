@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import CareerProfileInfoContent from './CareerProfileInfoContent';
 import { FiEdit } from 'react-icons/fi';
@@ -24,7 +23,6 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         setEditMode={setEditMode}
         iconStyles={iconStyles}
         editMode={editMode}
-        role={role}
       />
     </>
   )

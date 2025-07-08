@@ -54,7 +54,6 @@ export default function Candidate() {
       if (updateObject[key] === '') {
         updateObject[key] = null;
       }
-      if (updateObject[key] !== candidateData[key]) {
         formattedUpdateObject[key] = updateObject[key];
       }
     });

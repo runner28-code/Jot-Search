@@ -35,6 +35,7 @@ const mockCandidateData = [
     isLooking: false,
     isWarm: true,
   },
+// Temp comment
   {
     id: '53dde141-ac80-4eee-af38-5497ee1c85d5',
     firstName: 'Rachel',
@@ -65,7 +66,6 @@ const mockCandidateData = [
     isLooking: true,
     isWarm: false,
   },
-// Temp comment
   {
     id: 'ec0d90fb-f73c-4d4c-9e13-d720a14440f5',
     firstName: 'Donnie',

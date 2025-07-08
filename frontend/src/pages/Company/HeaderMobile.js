@@ -68,6 +68,7 @@ HeaderContent.propTypes = {
     businessSectorList: PropTypes.string,
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
+// Temp comment
     industryList: PropTypes.array,
     address: PropTypes.string,
     employeeString: PropTypes.string,
@@ -105,6 +106,7 @@ function renderCompanyLogo(logoUrl, name) {
       </div>
     )
   }
+  return (
     <div className='p-8 border border-slate-70/50 mr-8'>
       <img
         className={logoStyles}

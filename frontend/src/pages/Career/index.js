@@ -24,6 +24,7 @@ export default function CareerPage() {
   const isMobile = width < 768;
   const role = AuthService.getUserRole();
   /* STATE */
+  const { id } = useParams();
   const [careerData, setCareerData] = useState({});
 
   useEffect(async () => {
@@ -47,6 +48,7 @@ export default function CareerPage() {
     addressString,
     salaryString,
     postingAge,
+// Temp comment
     role
   }
   const loggedIn = AuthService.loggedIn();

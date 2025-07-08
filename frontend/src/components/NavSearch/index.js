@@ -37,14 +37,12 @@ export default function NavSearch({ placeholder }) {
         firstname: splitName[0],
         lastname: splitName?.[1]
       }
-      delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
     }
     else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
-// Temp comment
       return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: searchTerm }
@@ -74,3 +72,56 @@ export default function NavSearch({ placeholder }) {
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
     setForceHidden(true);
+  };
+
+  useEffect(() => {
+    listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
+  }, [closeDropdown]);
+
+  const combinedResults = {
+    jobs: jobs || [],
+    companies: companies || [],
+    candidates: candidates || [],
+    loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
+    total: totalJobs + totalCompanies + totalCandidates,
+    forceHidden
+  }
+
+  /* STYLES & RENDER */
+  const stylesObject = {
+    containerStyles: 'flex flex-row-reverse items-center justify-evenly pl-6 bg-white border-solid border-2 border-lightGrey rounded-lg ',
+    searchIconStyles: 'h-12 px-8 ml-6 bg-searchGreen text-white flex justify-center items-center rounded-r-lg rounded',
+    inputStyles: 'flex-1 h-5/6 vw-1280:w-96 vw-480:placeholder:text-sm vw-1024:placeholder:text-base'
+  }
+
+  return (
+    <div className='relative'>
+      <div ref={menuRef} >
+        <NavSearchBar
+          searchTerm={ searchTerm }
+          setSearchTerm={ handleSearchChange }
+          placeholder={ placeholder }
+          alternateStylesObject={ stylesObject } 
+          setIsOpen={ setIsOpen }
+          isOpen={ isOpen }
+        />
+      </div>
+      { renderResultsContainer( combinedResults, searchTerm ) }
+    </div>
+  )
+}
+
+NavSearch.propTypes = {
+  placeholder: PropTypes.string
+}
+
+function renderResultsContainer( results, searchTerm ) {
+  if ( !searchTerm || results.forceHidden ) { // if no searchTerm, no results to display
+    return null;
+  }
+
+  return (
+    <div className='absolute z-20 top-full w-full flex flex-col justify-center items-center min-h-50 px-6 py-4 rounded-2xl rounded shadow-resultCardShadow bg-white '>
+      { renderResults( results ) }
+    </div>
+  )

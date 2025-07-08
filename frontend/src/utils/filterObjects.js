@@ -137,5 +137,6 @@ export function buildSearchFilters(filterObject) {
         key: filterKey,
         value: filterObject[key],
       });
+    }
   });
   return searchFilters

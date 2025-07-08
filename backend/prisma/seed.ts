@@ -40,7 +40,6 @@ async function seedJobs() {
         }))!.id,
       },
       {
-        title: "Junior Software Engineer",
         companyId: (await db.company.findFirst())?.id,
 
         address1: "123 Job St",
@@ -129,3 +128,4 @@ async function seedCategories() {
         externalID: 2000043,
       },
       {
+        name: "Software & Engineering",

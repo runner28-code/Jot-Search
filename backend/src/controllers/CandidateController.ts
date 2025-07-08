@@ -6,6 +6,7 @@ import {
   QueryParam,
   JsonController,
   Authorized,
+  CurrentUser,
   Patch,
 } from "routing-controllers";
 import { saveCandidate, getSavedCandidates } from "../services/Candidate";
@@ -237,3 +238,4 @@ export class CandidateController {
             type: "candidate"
           }))
 
+          console.log({ typedUsers, typedCandidates })

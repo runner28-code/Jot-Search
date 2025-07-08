@@ -67,7 +67,6 @@ model Lead {
   clientContacts        String?
   clientCorporation     Json?
   comments              String?
-  companyName           String?
   companyURL            String?
   conversionSource      String?
   dateAdded             DateTime?
@@ -439,3 +438,4 @@ model Job {
 
   company Company? @relation("jobCompany", fields: [companyId], references: [id])
 
+  categoryId Int?

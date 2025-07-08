@@ -21,6 +21,7 @@ export default function TypeaheadDropdown(props) {
 
   const [inputValue, setInputValue] = useState('');
   const [filteredChoices, setFilteredChoices] = useState(choices);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
@@ -55,3 +56,59 @@ export default function TypeaheadDropdown(props) {
 
   function handleKeyDown() {
     setDropdownOpen(true);
+  }
+
+  return (
+    <div 
+      className='relative w-full'
+      ref={menuRef}  
+    >
+      { renderLabel(name, label, required) }
+      <input 
+        type={type}
+        name={name}
+        id={name}
+        placeholder={placeholder}
+        value={inputValue}
+        className={baseStyles + inputHeight + 'mb-0'}
+        onClick={handleListClick}
+        onChange={handleInputChange}
+        onKeyDown={handleKeyDown}
+        disabled={disabled}
+      />
+      { renderDropdown(dropdownType, dropdownOpen, filteredChoices, currentChosen, handleChoiceClick) }
+    </div>
+  )
+}
+
+TypeaheadDropdown.propTypes = {
+  type: PropTypes.string.isRequired,
+  dropdownType: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  required: PropTypes.bool,
+  placeholder: PropTypes.string.isRequired,
+  choices: PropTypes.array.isRequired,
+  currentChosen: PropTypes.array.isRequired,
+  onChange: PropTypes.func.isRequired,
+  baseStyles: PropTypes.string.isRequired,
+  inputHeight: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
+}
+
+function renderLabel(name, label, required) {
+  if ( !label ) {
+    return null;
+  }
+  if( required ) {
+    label += ' *';
+  }
+
+  return (
+    <label
+      className='block text-textBlack mb-2.5'
+      htmlFor={name}
+    >
+      {label}
+    </label>
+  )

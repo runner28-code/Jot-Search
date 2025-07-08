@@ -15,7 +15,6 @@ class AuthService {
       role = this.getProfile().role;
     }
     return role;
-  }
 
   loggedIn() {
     // Checks if there is a saved token and it's still valid

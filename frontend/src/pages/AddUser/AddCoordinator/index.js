@@ -5,10 +5,10 @@ import { validateInput } from '../utils';
 
 export default function AddCoordinator() {
   const [formObject, setFormObject] = useState(defaultState);
-  const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
     errors: {},
+  });
 
   // Submit form data when submissionObject.loading is set to true
   useEffect(async () => {

@@ -6,7 +6,6 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 export default function TimeframeFilter({ choices, timeframe, handleFilterChange }) {
   const [showDropdown, setShowDropdown] = useState(false);
-  const [listening, setListening] = useState(false);
 
   const menuRef = useRef(null);
 
@@ -25,6 +24,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         choices={choices} 
         handleChoiceClick={handleChoiceClick} 
       />
+    )
   }
 
   // Used to close dropdown when clicking outside of it

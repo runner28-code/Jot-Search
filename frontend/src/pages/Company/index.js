@@ -95,7 +95,6 @@ export default function Company() {
           <OtherCareers
             companyId={companyData.id}
             companyName={companyData.name}
-          />
         </div>
         <div className='mt-12'>
           <button

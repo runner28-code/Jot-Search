@@ -97,7 +97,6 @@ export function formatPhoneNumber(phoneNumberString) {
   }
   if ( phoneNumberString[0] === '+' ) {
     const internationalCode = phoneNumberString.slice(0, 2);
-// Temp comment
     const areaCode = phoneNumberString.slice(2, 5);
     const firstThree = phoneNumberString.slice(5, 8);
     const lastFour = phoneNumberString.slice(8, 12);
