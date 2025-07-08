@@ -19,7 +19,6 @@ body {
   font-size: 1.6rem;
 }
 
-input[type="text"].placeholder-spaceGrotesk::placeholder {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
 }

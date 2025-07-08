@@ -8,7 +8,6 @@ const experienceValues = Object.values(experienceMap).filter(val => val !== null
 export const jobFilterObject = {
   'Expertise': [
     'Any',
-// Temp comment
     ...expertises
   ],
   'On-Site/Remote': [
@@ -138,6 +137,5 @@ export function buildSearchFilters(filterObject) {
         key: filterKey,
         value: filterObject[key],
       });
-    }
   });
   return searchFilters

@@ -51,7 +51,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             name='avatar'
             onChange={handleInputChange}
           />
-// Temp comment
         </div>
       </div>
       <div className='grow font-bold'>

@@ -13,7 +13,6 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 export default function GlobalSearch({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
-// Temp comment
   const [ searchTerm, setSearchTerm ] = useState('');
   const [ results, setResults ] = useState({
     jobs: [],
@@ -31,35 +30,3 @@ export default function GlobalSearch({ placeholder }) {
     setSearchTerm( searchTerm );
     setResults({ ...results, loading: true, forceHidden: false });
     debounceSearchTermFunction( searchTerm );
-  }
-
-  /* Debounce functions will wait until user stops typing to send API call */
-  const debounceSearchTermFunction = useCallback(
-    debounce( handleDebounce, 300 ),
-    []
-  );
-
-  async function handleDebounce( searchTerm ) {
-    if ( searchTerm === '' ) {
-      return setResults({
-        jobs: [],
-        companies: [],
-        candidates: []
-      });
-    }
-
-    // TODO: API: Candidates if role === 'company' || 'coordinator'
-    const [jobResults, companyResults, CandidateResults] = await Promise.all([
-      getJobs( searchTerm, 'title', 3 ),
-      getCompanies( searchTerm, 'name', 3 ),
-      getCandidates( searchTerm, 'firstname', 3 )
-    ]);
-
-    const resultsObject = {
-      jobs: jobResults && jobResults.length ? jobResults : [],
-      companies: companyResults && companyResults.length ? companyResults.slice(0, 3) : [], //!!! TODO: Get rid of slice when Donnie has count filter working for companies
-      candidates: CandidateResults && CandidateResults.length ? CandidateResults : [],
-      loading: false,
-    };
-
-    setResults( resultsObject );

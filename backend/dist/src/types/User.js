@@ -12,7 +12,6 @@ exports.IUSER = {
     role: "",
     address1: "",
     address2: "",
-    city: "",
     state: "",
     zip: "",
     resume: "",
@@ -25,5 +24,4 @@ exports.IUSER = {
     referredBy: "",
     roles: "",
     description: "",
-// Temp comment
     phone: "",

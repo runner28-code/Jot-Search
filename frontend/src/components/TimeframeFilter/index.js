@@ -25,7 +25,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         choices={choices} 
         handleChoiceClick={handleChoiceClick} 
       />
-    )
   }
 
   // Used to close dropdown when clicking outside of it
@@ -44,7 +43,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         id='title-wrapper'
         onClick={() => setShowDropdown(showDropdown => !showDropdown)}
         className={ wrapperStyles }>
-// Temp comment
         <p
           id='title'
           className='Desktop-Body-textBody-paragraph-2 text-charcoal'>{ timeframe }</p>

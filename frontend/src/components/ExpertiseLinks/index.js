@@ -1,4 +1,3 @@
-// Temp comment
 import { Link } from 'react-router-dom';
 import softwareEngineeringIcon from '../../assets/images/Symbol_softwareengineering.svg';
 import salesAndBizDevIcon from '../../assets/images/Symbol_Salesbizdev.svg';
@@ -49,6 +48,7 @@ export default function ExpertiseLinks() {
         {/* Marketing */}
         <Link
           to={ROUTES.careers}
+// Temp comment
           className={linkStyles}
           state={{ Expertise: 'Marketing' }}
         >

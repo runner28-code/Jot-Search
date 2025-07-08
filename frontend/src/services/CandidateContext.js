@@ -65,6 +65,7 @@ const mockCandidateData = [
     isLooking: true,
     isWarm: false,
   },
+// Temp comment
   {
     id: 'ec0d90fb-f73c-4d4c-9e13-d720a14440f5',
     firstName: 'Donnie',
@@ -117,7 +118,6 @@ const CandidateProvider = ({children}) => {
   }
 
   const handleCandidateUpdate = (updatedValues) => {
-// Temp comment
     const currentCandidateData = candidates.find(candidate => candidate.id === updatedValues.id);
     const updatedCandidate = { ...currentCandidateData, ...updatedValues };
 

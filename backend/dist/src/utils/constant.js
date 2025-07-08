@@ -136,6 +136,7 @@ const job_filter_exclude_keys = [
     "emergency",
     "emergency response",
     "engineering tec",
+    "english",
     "environment",
     "environmental",
     "equipment",

@@ -9,7 +9,6 @@ export default function AddCoordinator() {
     loading: false,
     success: false,
     errors: {},
-  });
 
   // Submit form data when submissionObject.loading is set to true
   useEffect(async () => {
@@ -43,6 +42,7 @@ export default function AddCoordinator() {
           loading: false,
           success: false,
           errors: {},
+        });
       }, 2000);
     }
   }, [submissionObject.success]);

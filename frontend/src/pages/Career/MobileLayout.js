@@ -29,6 +29,7 @@ export default function MobileLayout(props) {
 
   return (<>
     <section className='relative bg-white max-w-400 px-xl py-xxl border-2 border-disabled border-solid rounded-3xl mb-26'>
+      {/* Header */}
       <div className='flex flex-row flex-wrap items-start'>
         <div className='basis-2/6'>
           { renderLogo(careerData.company_logo) }
@@ -61,7 +62,6 @@ export default function MobileLayout(props) {
             </div>
           </div>
           {/* Second row icons */}
-          <div className='w-full flex items-center mt-8 mb-m'>
             {/* Posting age */}
             <div className='w-1/2 flex items-center pr-4'>
               <img

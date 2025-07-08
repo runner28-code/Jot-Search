@@ -41,7 +41,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   }
 
   function handleSearchChange(searchTerm) {
-// Temp comment
     handleFilterChange('title', searchTerm);
   }
 
@@ -69,6 +68,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
       <div className='flex items-center mt-22'>
         <AccessibleDropdown
           type='single-select'
+// Temp comment
           name='On-Site/Remote'
           choices={filterObject['On-Site/Remote']}
           currentChosen={filterState['On-Site/Remote']}

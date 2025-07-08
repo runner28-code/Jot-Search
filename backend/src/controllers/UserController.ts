@@ -9,6 +9,7 @@ import {
   QueryParam,
   UploadedFile,
   Authorized,
+  HeaderParam,
   CurrentUser,
   QueryParams,
 } from "routing-controllers";
@@ -85,7 +86,6 @@ export class UserController {
       }
     }
   }
-
   /**
    * Coordinator-only route to add users depending on type
    * @param authUser 

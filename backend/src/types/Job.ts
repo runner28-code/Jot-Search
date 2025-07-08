@@ -28,7 +28,6 @@ export type Job = {
   postedAt?: string;
   hidden?: boolean;
   company_name?: string;
-  datasource?: Datasource;
   featured?: boolean;
 };
 

@@ -104,6 +104,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     }
     setFilterObject(newState);
   }, [state]);
+
   function handleFilterChange(filterType, choice) {
     setFilterObject({
       ...filterObject,
@@ -111,6 +112,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     });
     setPage(1);
   }
+// Temp comment
 
   function handleSearchChange(searchTerm) {
     setFilterObject({ ...filterObject, title: searchTerm });

@@ -28,7 +28,6 @@ export default function InviteToCareer({ candidate }) {
   }) || [];
   
   const [ selected, setSelected ] = useState([]);
-  const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }
@@ -44,4 +43,5 @@ export default function InviteToCareer({ candidate }) {
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs' 
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
+      ))}
     </div>)

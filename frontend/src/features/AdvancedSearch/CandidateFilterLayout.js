@@ -18,6 +18,7 @@ const dropdownFilters = [
   'Category',
   'Experience',
   'Remote Availability',
+  'Employment Type',
 ];
 const checkboxFiltersCoord = [
   'Authorized to work in the US',

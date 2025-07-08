@@ -154,11 +154,11 @@ function renderDesktopLogo(logoUrl, name) {
   const logoStyles = 'object-contain w-full h-full';
   if( width < 1280 ) {
     return null;
-// Temp comment
   }
   if (!logoUrl) {
     return (
       <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
+// Temp comment
         <BsBuilding className={logoStyles} />
       </div>
     )

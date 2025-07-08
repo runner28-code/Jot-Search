@@ -6,7 +6,6 @@ import {
   QueryParam,
   JsonController,
   Authorized,
-  CurrentUser,
   Patch,
 } from "routing-controllers";
 import { saveCandidate, getSavedCandidates } from "../services/Candidate";
@@ -219,6 +218,7 @@ export class CandidateController {
           skip: skip < 0 ? 0 : skip,
           include: {
             category: true,
+          },
           where,
           orderBy: {
             firstName: "asc",

@@ -14,13 +14,11 @@ export default function SideNav({ userType }) {
   const { pathname } = useLocation();
   const hiddenPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage, ROUTES.resetPassword, ROUTES.accountRecovery ];
   if ( hiddenPages.includes(pathname) ) {
-    return null;
   }
 
   if( userType === 'guest' ) {
     return null;
   }
-// Temp comment
   const { width } = useWindowDimensions();
   if ( width < 1280 ) {
     return null;

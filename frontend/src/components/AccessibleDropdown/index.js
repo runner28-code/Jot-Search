@@ -73,7 +73,6 @@ AccessibleDropdown.defaultProps = {
 };
 
 AccessibleDropdown.propTypes = {
-// Temp comment
   type: PropTypes.string,
   name: PropTypes.string,
   label: PropTypes.string,
@@ -92,6 +91,7 @@ AccessibleDropdown.propTypes = {
     inputWidth: PropTypes.string,
     marginBottom: PropTypes.string,
     listStyles: PropTypes.string,
+// Temp comment
     listItemStyles: PropTypes.string,
   }).isRequired,
   showDropdownArrow: PropTypes.bool,

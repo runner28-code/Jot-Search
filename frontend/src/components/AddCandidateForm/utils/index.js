@@ -1,5 +1,6 @@
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../LoadingSpinner';
+// Temp comment
 import { experienceMap } from '../../../utils/dbFieldMapping';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
@@ -22,6 +23,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
 }
 
 export function renderErrorBlock(errorBlock) {
+  
   if (errorBlock) {
     return (
       <div className='flex flex-col items-center justify-center w-full'>

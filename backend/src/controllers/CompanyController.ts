@@ -183,6 +183,7 @@ export class CompanyController {
     const companyCandidateInvites = []
 
     for (const companyId of body.companyIds) {
+      for (const candidateId of body.candidateIds) {
         companyCandidateInvites.push({
           companyId,
           candidateId,
