@@ -9,7 +9,6 @@ import { Category } from "./Category";
 import { User } from "./User";
 
 export enum Tables {
-  COMPANIES = "Companies",
   JOBS = "Jobs",
   USER = "User",
   CONTACTS = "Contacts",
@@ -21,6 +20,7 @@ export enum Tables {
   SAVED_CANDIDATES = "SavedCandidates",
   JOINED_COMPANIES = "companies_joined",
   JOINED_CANDIDATES = "candidates_joined",
+  CATEGORIES = "Categories",
 }
 
 export const DATASET_BULLHORN = config.bullhornDatasetID || "";

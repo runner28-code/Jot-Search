@@ -79,3 +79,4 @@ const getActualRequestDurationInMs = (start: any) => {
 };
 
 const logger = (req: Request, res: Response, next: NextFunction) => {
+  let current_datetime = new Date();

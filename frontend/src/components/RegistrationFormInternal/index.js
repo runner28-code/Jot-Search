@@ -19,7 +19,6 @@ import {
 } from './utils';
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
-import { CategoryContext } from '../../services/CategoryContext';
 import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
@@ -89,6 +88,7 @@ export default function RegistrationFormInternal(loggedIn) {
         setErrorBlock('There was an error uploading your resume.');
         setSubmissionObject({
           loading: false,
+          success: false,
         });
         return;
       }

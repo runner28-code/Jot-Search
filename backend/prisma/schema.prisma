@@ -67,6 +67,7 @@ model Lead {
   clientContacts        String?
   clientCorporation     Json?
   comments              String?
+  companyName           String?
   companyURL            String?
   conversionSource      String?
   dateAdded             DateTime?
@@ -280,7 +281,6 @@ model Company {
   customText13 String?
   customText14 String?
   customText15 String?
-  customText16 String?
   customText17 String?
   customText18 String?
   customText19 String?

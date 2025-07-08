@@ -24,6 +24,7 @@ export default function FormInput(props) {
     choiceObject,
     error,
     disabled
+  } = props;
 
   let componentStyles = inputStyles;
   componentStyles += (error ? errorBorder : regularBorder);

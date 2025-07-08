@@ -8,7 +8,6 @@ export const saveCompanies = async (companies: any[]) => {
 							console.log(`Savng company with ID = ${company.id}`);
 							const existing = await db.getroCompany.findFirst({
 								where: {
-									id: company.id,
 								},
 							});
 							if (existing) {
@@ -69,3 +68,4 @@ export const saveMembers = async (members: any[]) => {
 									data: jobData,
 								});
                 console.log(`Saved Getro Member with ID = ${member.id} successfully`);
+            } catch (error) {

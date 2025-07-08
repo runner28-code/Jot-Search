@@ -81,7 +81,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
             listItemStyles: 'pl-6 pr-2 py-2 tracking-wide '
           }}
           showDropdownArrow={true}
-        />
         <AccessibleDropdown
           type='single-select'
           name='Expertise'
@@ -98,6 +97,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
           }}
           showDropdownArrow={true}
         />
+        <button 
           className='h-17 bg-searchGreen text-white text-md px-7 rounded-r-xl'
           onClick={handleSearchClick}
         >

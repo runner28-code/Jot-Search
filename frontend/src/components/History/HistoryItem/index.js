@@ -29,7 +29,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
   const timeWithoutSeconds = time.replace(/(.*)\D\d+/, '$1')
   if ( isToday ) {
     return `Today at ${timeWithoutSeconds}`;
-  } else if ( isYesterday ) {
     return `Yesterday, ${timeWithoutSeconds}`;
   } else {
     const month = dateObj.toLocaleString('default', { month: 'long' });

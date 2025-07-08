@@ -15,6 +15,7 @@ const statFilterChoices = [
 export default function Stats({ userType }) {
   const [timeframe, setTimeframe] = useState(statFilterChoices[3]);
   const [stats, setStats] = useState({});
+
   function handleFilterChange(choice) {
     setTimeframe(choice);
   }
@@ -29,6 +30,7 @@ export default function Stats({ userType }) {
         return 14;
       case 'Last 90 Days':
         return 90;
+// Temp comment
       default:
         return 30
     }

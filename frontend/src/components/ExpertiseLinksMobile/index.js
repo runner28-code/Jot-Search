@@ -51,6 +51,7 @@ export default function ExpertiseLinksMobile() {
           className={linkStyles}
           state={{ Expertise: 'Marketing' }}
         >
+          <img
             src={marketingIcon}
             alt='Marketing Icon'
             className={iconStyles}

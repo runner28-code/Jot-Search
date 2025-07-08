@@ -37,6 +37,7 @@ export default function NavSearch({ placeholder }) {
         firstname: splitName[0],
         lastname: splitName?.[1]
       }
+      delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
@@ -66,6 +67,7 @@ export default function NavSearch({ placeholder }) {
 
   /* Clear state on page change */
   useEffect( () => {
+// Temp comment
     setSearchTerm('');
   }, [location]);
 

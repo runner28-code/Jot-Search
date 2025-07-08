@@ -15,6 +15,7 @@ class AuthService {
       role = this.getProfile().role;
     }
     return role;
+  }
 
   loggedIn() {
     // Checks if there is a saved token and it's still valid
@@ -109,6 +110,7 @@ class AuthService {
 
   toggleSavedCompany(companyID, action) {
     const savedCompanies = this.getSavedCompanyIDs();
+// Temp comment
     if ( action === 'save' ) {
       savedCompanies.push(companyID);
     } else {

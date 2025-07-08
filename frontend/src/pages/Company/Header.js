@@ -16,7 +16,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { FaUsers } from 'react-icons/fa';
 import { BsBuilding } from 'react-icons/bs';
 
-function HeaderContent({ companyData }) {
   const { width } = useWindowDimensions();
   const headerRowStyles = 'flex mb-8 flex-row justify-between flex-wrap';
   const headerIconStyles = 'h-12 w-10 mr-3 fill-midGrey';
@@ -177,6 +176,7 @@ function FillerIcon () {
   const { width } = useWindowDimensions();
 
   if( width >= 1280 ) {
+    return (
       <div>
         <BsBuilding className='w-16 h-16 fill-royalBlue basis-1/3 mr-8'/>
       </div>

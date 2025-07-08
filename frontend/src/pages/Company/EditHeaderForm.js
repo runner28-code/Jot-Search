@@ -52,6 +52,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             onChange={handleInputChange}
           />
         </div>
+      </div>
       <div className='grow font-bold'>
         {/* First Name */}
         <div className='mb-6'>
@@ -171,7 +172,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
               </label>
               <input 
                 type='text'
-                onChange={handleInputChange}
                 id='state'
                 name='state'
                 value={formData.state}

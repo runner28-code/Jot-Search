@@ -203,6 +203,7 @@ const job_filter_exclude_keys = [
   "jailer",
   "janitor",
   "janitorial",
+  "job coach",
   "jurisdiction",
   "justice",
   "kfaq",
@@ -282,3 +283,4 @@ const job_filter_exclude_keys = [
   "permit",
   "personal trainer",
   "pet",
+  "pharmacy",

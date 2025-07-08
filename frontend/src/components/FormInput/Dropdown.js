@@ -41,7 +41,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
           <div 
             onClick={() => handleClick(choice)}
             className='cursor-pointer flex items-center justify-between'
-// Temp comment
           >
             <span className='font-bold'>{choice}</span>
             {renderActiveIcon(choice, currentChosen)}

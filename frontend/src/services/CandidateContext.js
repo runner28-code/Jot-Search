@@ -35,7 +35,6 @@ const mockCandidateData = [
     isLooking: false,
     isWarm: true,
   },
-// Temp comment
   {
     id: '53dde141-ac80-4eee-af38-5497ee1c85d5',
     firstName: 'Rachel',
@@ -87,6 +86,7 @@ const mockCandidateData = [
     lastName: 'MacAlpine',
     linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lawrence_1_szacre.webp', // Missing from Bullhorn Schema
+// Temp comment
     occupation: 'Compliance',
     companyName: 'Apline Strategies',
     address_city: 'Tulsa',

@@ -36,7 +36,6 @@ import {
   JobFilter,
 } from "../utils/FieldMatch";
 import { COORDINATOR } from "../utils/constant";
-import { sendCandidatesToEmployers } from "../services/EmailService";
 import { getCandidatesList } from "../services/Candidate";
 import { normalizeFilters } from "./JobController";
 
@@ -90,6 +89,7 @@ export class CompanyController {
     }
     try {
       const candidates_list = await getCandidatesList(body.candidates_ids);
+      return {
         result: await sendCandidatesToEmployers(
           candidates_list,
           body.employers_emails

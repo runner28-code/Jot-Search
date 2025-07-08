@@ -248,3 +248,4 @@ export class JobController {
     );
   }
 
+  async getJobsByFilterFromGetro(

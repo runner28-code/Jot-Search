@@ -12,5 +12,6 @@
 
 */
 -- AlterTable
+ALTER TABLE "Candidate" DROP COLUMN "desiredLocations",
 ADD COLUMN     "desiredLocations" TEXT[],
 DROP COLUMN "employmentPreference",

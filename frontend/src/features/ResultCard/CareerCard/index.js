@@ -40,7 +40,6 @@ export default function CareerCard({ data, active }) {
         width > 768 ?
           <DesktopCard
             dataObj={dataObj}
-            active={active}
           />
           :
           <MobileCard
@@ -95,6 +94,7 @@ function DesktopCard({ dataObj, active }) {
       </div>
       <div className='grow'>
         {/* Title */}
+        <div className='flex'>
           <h6 className='text-xl font-spaceGrotesk font-semibold text-charcoal leading-none'>{data.title}</h6>
           { renderFeaturedIcon(dataObj?.data?.featured) }
         </div>

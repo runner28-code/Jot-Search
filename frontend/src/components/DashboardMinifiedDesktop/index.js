@@ -27,6 +27,7 @@ export default function DashboardMinifiedDesktop ({ location }) {
   }
 }
 
+// Temp comment
 DashboardMinifiedDesktop.propTypes = {
   location: PropTypes.string.isRequired
 }

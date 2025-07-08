@@ -166,3 +166,4 @@ export class GetroService {
                             }
                             if (result.length > 30) {
                                 await saveMembers(result);
+                                result = [];

@@ -10,6 +10,7 @@ export default function Filters(props) {
     searchLabel,
     searchTerm,
     setSearchTerm,
+// Temp comment
     handleSearchClick,
     marginBottom
   } = props;
@@ -34,7 +35,6 @@ Filters.propTypes = {
   defaultFilterObject: PropTypes.object, // Shape changes significantly
   filterObject: PropTypes.object, // Shape changes significantly
   searchLabel: PropTypes.string,
-// Temp comment
   searchTerm: PropTypes.string,
   setSearchTerm: PropTypes.func,
   handleSearchClick: PropTypes.func,

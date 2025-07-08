@@ -26,7 +26,6 @@ export default function AccountRecovery() {
     setCondition(condition);
     setResponse(response);
   }
-// Temp comment
 
   function renderResponse () {
     const successStyle = 'mb-4 text-success';
@@ -39,6 +38,7 @@ export default function AccountRecovery() {
 
   return (
     <section className='-mt-18 flex flex-col items-center pb-14 bg-login-page-hero bg-no-repeat bg-top bg-[length:auto_34rem] vw-640:bg-[length:auto_48rem] vw-900:bg-[length:100%_auto]'>
+// Temp comment
       <div className='w-full flex flex-col items-center'>
         {/* Shapes */}
         <div className='relative h-24 w-26 mt-20 vw-900:mt-26 vw-1280:mt-34'>

@@ -67,7 +67,6 @@ export default function CandidateFilterLayout(props) {
       handleFilterChange('skills', skills.filter(s => s !== skill))
     } else {
       handleFilterChange('skills', [...skills, skill])
-// Temp comment
     }
   }
   console.log(filterObject)
@@ -88,6 +87,7 @@ export default function CandidateFilterLayout(props) {
           choices={skills}
         />
       </div>
+// Temp comment
       <div className='flex flex-wrap gap-xxl-4'>
         {renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange)}
       </div>

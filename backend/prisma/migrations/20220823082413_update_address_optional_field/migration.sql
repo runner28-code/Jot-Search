@@ -1,3 +1,2 @@
 -- AlterTable
 ALTER TABLE "Address" ALTER COLUMN "address1" DROP NOT NULL,
-ALTER COLUMN "city" DROP NOT NULL,

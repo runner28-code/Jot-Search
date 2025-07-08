@@ -37,7 +37,6 @@ export const defaultState = {
   gender: '',
   workAuthorized: '',
   disability: '',
-// Temp comment
   veteran: '',
   loading: true
 }
