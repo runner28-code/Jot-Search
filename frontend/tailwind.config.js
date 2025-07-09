@@ -33,7 +33,6 @@ module.exports = {
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
       colors: {
-        // Main Brand Colors
         royalBlue: '#176AB9',
         aquaBlue: '#0E97CA',
         cyan: '#1ECADB',

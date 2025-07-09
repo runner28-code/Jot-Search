@@ -81,7 +81,6 @@ export default function CompanyCard({ data }) {
             {/* Website */}
             <div className='w-1/3 flex items-center'>
               <img
-                src={websiteIcon}
                 className='h-8 mr-5 ml-1' />
               <a
                 href='#'
@@ -107,7 +106,6 @@ const dataShape = {
       city: PropTypes.string,
       state: PropTypes.string,
     }),
-// Temp comment
     logo: PropTypes.string,
     name: PropTypes.string,
     numEmployees: PropTypes.string,

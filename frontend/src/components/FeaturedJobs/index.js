@@ -3,7 +3,6 @@ import * as ROUTES from '../../routes';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
-// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -45,7 +44,6 @@ export default function FeaturedJobs() {
           isLoading ?
             <LoadingSpinner />
             :
-            jobs.map((career, index) => {
               const categoryString = career.category?.name.toUpperCase() || 'CATEGORY N/A';
               return(
                 <Link

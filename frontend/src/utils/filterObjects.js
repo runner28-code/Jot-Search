@@ -63,7 +63,6 @@ export const candidateFilterObject = {
   ],
   'Experience': [
     'Any',
-    ...experienceValues
   ],
   'Open to Relocation': [
     'Any',
@@ -111,6 +110,7 @@ export const candidateFilterObject = {
 };
 
 // Create default filter state based on filterObject
+const convertedCandidateFilters = {};
 Object.keys(candidateFilterObject).forEach(key => {
   convertedCandidateFilters[key] = candidateFilterObject[key][0];
 });

@@ -37,7 +37,7 @@ CREATE TABLE "Candidate" (
     "lastName" TEXT,
     "gender" TEXT,
     "hourlyRate" TEXT,
-    "idOnFile" TEXT,
+    "hourlyRateLow" TEXT,
     "isAnonymized" TEXT,
     "isDeleted" TEXT,
     "isEditable" TEXT,

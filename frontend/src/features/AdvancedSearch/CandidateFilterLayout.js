@@ -8,6 +8,7 @@ import FormInput from '../../components/FormInput';
 const dropdownFiltersCoord = [
   'Category',
   'Experience',
+// Temp comment
   'Remote Availability',
   'Employment Type',
   'Status',
@@ -87,7 +88,6 @@ export default function CandidateFilterLayout(props) {
           choices={skills}
         />
       </div>
-// Temp comment
       <div className='flex flex-wrap gap-xxl-4'>
         {renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange)}
       </div>

@@ -14,7 +14,6 @@ const mockJobsData = [
     onSite: true,
     listingAge: '1 month',
     specialty: 'Technology'
-// Temp comment
   },
   {
     id: 'b25cf8b7-e171-4049-8e67-701b7b7b81c3',
@@ -75,7 +74,6 @@ const mockJobsData = [
     clientCorporationID: 'b0eda365-79b5-4e2b-8674-642f09f56eb2',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
     salaryRange: '$80k-$90k',
-    location_city: 'Tulsa',
     location_state: 'OK',
     onSite: true,
     listingAge: '1 month',

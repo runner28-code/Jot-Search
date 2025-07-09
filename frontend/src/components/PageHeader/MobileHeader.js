@@ -14,7 +14,6 @@ export default function MobileHeader(props) {
   
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
-  if ( classOverride ) addOnIconClasses += classOverride;
   return (
     <div className='flex items-center mb-10 pl-l py-s bg-royalBlue'>
       { backButton && (
@@ -22,6 +21,7 @@ export default function MobileHeader(props) {
           className='text-s bg-cyan font-semibold text-white rounded-2xl px-5 py-2 mr-xl font-spaceGrotesk'
           onClick={() => navigate(-1)}
         >
+          {'< Back'}
         </button>
       )}
       { icon && (

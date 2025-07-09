@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import ChoiceTag from '../ChoiceTag';
+// Temp comment
 import ChoiceListItem from '../ChoiceListItem';
 
 export default function TypeaheadDropdown(props) {
@@ -28,6 +29,7 @@ export default function TypeaheadDropdown(props) {
   const handleChoiceClick = useCallback((choice) => {
     if (!currentChosen.includes(choice)) {
       onChange(name, [...currentChosen, choice]);
+    } else {
       onChange(name, currentChosen.filter(item => item !== choice));
     }
   }, [onChange])

@@ -19,6 +19,7 @@ export default function NavBar() {
     return <DesktopNavBarLayout />
   }
 }
+// Temp comment
 
 function MobileNavBarLayout() {
   const { width } = useWindowDimensions();

@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLocked, absolute = true }) {
-// Temp comment
 
   const absoluteStyles = absolute ? 'absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2' : ''
   return (
@@ -33,6 +32,7 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
   function handleClick(choice) {
     if ( isLocked ) {
       return null;
+// Temp comment
     }
     setActiveTab(choice);
   }

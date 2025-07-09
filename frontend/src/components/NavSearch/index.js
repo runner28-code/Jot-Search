@@ -67,7 +67,6 @@ export default function NavSearch({ placeholder }) {
 
   /* Clear state on page change */
   useEffect( () => {
-// Temp comment
     setSearchTerm('');
   }, [location]);
 

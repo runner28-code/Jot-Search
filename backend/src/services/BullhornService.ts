@@ -193,7 +193,6 @@ export class BullhornService {
           this.corpToken = restUrl.split("/")[4];
           console.log("BhRestToken: ", this.BhRestToken);
           console.log("restUrl: ", this.restUrl);
-          console.log("corpToken: ", this.corpToken);
 
           await this.setCookie({
             auth_code: this.auth_code,

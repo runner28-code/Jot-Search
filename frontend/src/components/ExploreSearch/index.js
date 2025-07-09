@@ -81,6 +81,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
             listItemStyles: 'pl-6 pr-2 py-2 tracking-wide '
           }}
           showDropdownArrow={true}
+        />
         <AccessibleDropdown
           type='single-select'
           name='Expertise'
@@ -89,7 +90,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
           onChange={handleFilterChange}
           stylesObject={{
             baseStyles: 'bg-white text-midGrey tracking-wide border-midGrey border-y-2 border-solid pl-10 pr-6 ',
-            inputHeight: 'h-18 ',
             inputWidth: 'w-92 ',
             marginBottom: 'mb-0 ',
             listStyles: 'bg-white text-black70% border-midGrey border-2 border-solid ',

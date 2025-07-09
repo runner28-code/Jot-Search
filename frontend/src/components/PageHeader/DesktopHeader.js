@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
+// Temp comment
   const {
     headerText,
     icon,
@@ -23,6 +24,7 @@ export default function DesktopHeader(props) {
   
   return (
     <div className={containerClasses}>
+      <div className='flex gap-8 items-center'>
         { icon && (
           <img
             src={ icon }

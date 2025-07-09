@@ -86,7 +86,6 @@ const mockCandidateData = [
     lastName: 'MacAlpine',
     linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lawrence_1_szacre.webp', // Missing from Bullhorn Schema
-// Temp comment
     occupation: 'Compliance',
     companyName: 'Apline Strategies',
     address_city: 'Tulsa',

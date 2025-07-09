@@ -9,6 +9,7 @@ import { Category } from "./Category";
 import { User } from "./User";
 
 export enum Tables {
+  COMPANIES = "Companies",
   JOBS = "Jobs",
   USER = "User",
   CONTACTS = "Contacts",
@@ -29,7 +30,6 @@ export const DATASET_MAIN = config.mainDatasetID || "";
 
 // Common
 export enum DataSource {
-  BULLHORN = "bullhorn",
   GETRO = "getro",
   UNKNOWN = "unknown",
 }

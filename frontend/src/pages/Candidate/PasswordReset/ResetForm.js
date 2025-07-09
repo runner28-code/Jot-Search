@@ -11,6 +11,7 @@ export default function ResetForm({ candidateData, setType }) {
     passwordConfirm: '',
   });
   const [match, setMatch] = useState('');
+// Temp comment
 
   const handleSubmit = async (event) => {
     event.preventDefault();

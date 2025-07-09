@@ -93,6 +93,7 @@ export const register = async (data: User) => {
     if (process.env && process.env.FRONTEND_URL) {
       await sendNewUserNotification(user.email, user.firstname || "");
     }
+
     return { result: true };
   } catch (error) {
     console.error(error);
@@ -227,7 +228,6 @@ export const isExistUser = async (field: string, value: string) => {
   } catch (error) {
     console.log(error);
     return true;
-  }
 };
 
 export const isExistUserFull = async (field: string, value: string) => {

@@ -37,7 +37,6 @@ export default function Applications() {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
     } else {
       setSelectedApplications([...selectedApplications, careerId]);
-// Temp comment
     }
   }
 
@@ -82,6 +81,5 @@ export default function Applications() {
             handleClick: handleCheckClick
           }}
         />
-      </div>
     </section>
   )

@@ -48,6 +48,7 @@ CREATE TABLE "Company" (
     "invoiceFormat" TEXT,
     "linkedinProfileName" TEXT,
     "notes" TEXT,
+    "numEmployees" INTEGER,
     "numOffices" INTEGER,
     "ownership" TEXT,
     "phone" TEXT,

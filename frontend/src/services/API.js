@@ -39,7 +39,6 @@ export async function getCandidates(filtersArr, count, page) {
 }
 
 export async function getCandidatesFull(filtersArr, count, page, fields = null) {
-// Temp comment
   const formattedFilters = formatCandidateFilters(filtersArr)
     .filter(filter => {
       if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {
@@ -82,6 +81,7 @@ export async function updateCandidate(newData, id) {
   return normalizeData(data);
 }
 
+// Temp comment
 export async function getSavedCandidates() {
   const { data } = await API.get(ROUTES.APIsavedCandidates);
   return normalizeData(data.candidates);
@@ -192,53 +192,3 @@ export async function getSavedCompanies(id, count = null, page = null) {
     }
   });
   return normalizeData(data.companies);
-}
-
-//* JOBS
-/**
- * example filtersArr:
- * [
- *  {
- *   key: 'title',
- *   value: 'Software'
- *  },
- *  ...
- * ] 
- */
-export async function getJobs(filters, count, operator, page) {
-  return (await getJobsFull(filters, count, operator, page)).jobs;
-}
-
-export async function getJobsFull(filters, count, operator, page) {
-  const filtersObj = filtersArrToObj(filters)
-
-  if (filtersObj.expertise) {
-    const categories = JSON.parse(localStorage.getItem('categories'));
-    const categoryId = categories.find(category => category.name === filtersObj.expertise).externalID;
-    filtersObj.expertise = categoryId
-  }
-
-  const formattedFilters = formatFilters(filtersObj, {
-    'expertise': 'categoryId'
-  });
-
-  const { data } = await API.post(ROUTES.APIjobs, {
-    'filters': formattedFilters,
-    'count': count || 5,
-    'page': page || null,
-    'operator': operator || 'AND'
-  });
-
-  return {
-    jobs: normalizeData(data.jobs),
-    total: data.total,
-  }
-}
-
-export async function getJobById(id) {
-  const { data } = await API.get(ROUTES.APIjobs, {
-    params: {
-      id
-    }
-  });
-  return normalizeData(data.job);
