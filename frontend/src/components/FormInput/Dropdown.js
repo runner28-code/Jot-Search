@@ -16,7 +16,6 @@ function renderActiveIcon(choice, currentChosen) {
         className="w-8 h-8 mr-2" />
     )
   }
-// Temp comment
 }
 
 function renderHorizontalRule(index, arrayLength) {
@@ -43,7 +42,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
             onClick={() => handleClick(choice)}
             className='cursor-pointer flex items-center justify-between'
           >
-            <span className='font-bold'>{choice}</span>
             {renderActiveIcon(choice, currentChosen)}
           </div>
           { renderHorizontalRule(index, choices.length) }

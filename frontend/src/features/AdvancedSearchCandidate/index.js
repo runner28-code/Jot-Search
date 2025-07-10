@@ -96,7 +96,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     setFilterObject({ ...filterObject, title: '' });
     setPage(1);
   }, [activeTab]);
-// Temp comment
 
   useEffect(() => {
     const newState = { ...initialFilterState, ...state };
@@ -116,6 +115,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     setPage(1);
   }
 
+// Temp comment
   function handleSearchChange(searchTerm) {
     setFilterObject({ ...filterObject, title: searchTerm });
     setPage(1);

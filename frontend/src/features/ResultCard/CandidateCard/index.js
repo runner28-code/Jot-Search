@@ -71,6 +71,7 @@ export default function CandidateCard({ data, disableLink }) {
               <p className='text-charcoal'>{addressString}</p>
             </div>
             {/* Years Experience */}
+            <div className='w-1/3 flex items-center'>
               <img
                 src={experienceIcon}
                 className='h-8 mr-5' />
@@ -175,6 +176,7 @@ function NewLeadLabel({ status }) {
 
   return null;
 }
+// Temp comment
 
 NewLeadLabel.propTypes = {
   status: PropTypes.string,

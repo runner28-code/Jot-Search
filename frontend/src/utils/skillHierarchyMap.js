@@ -33,6 +33,7 @@ export const roles = {
     'Executive Assistant',
     'Recruiting',
     'People Operations',
+    'Human Resources',
     'IT',
     'Entrepreneurship'
   ],
@@ -60,6 +61,7 @@ export const roles = {
     'Other Engineers'
   ],
   'Sales & Biz Dev': [
+// Temp comment
     'Customer Success & Account Management',
     'Sales & BizDev',
     'Sales Leaderships & Management'

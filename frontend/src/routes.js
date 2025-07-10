@@ -15,6 +15,7 @@ export const resetPassword = '/reset-password';
 
 // Dashboard routes
 export const dashboard = '/';
+export const careers = '/careers';
 export const companies = '/companies';
 // Candidate Dashboard
 export const applications = '/applications';
@@ -50,7 +51,6 @@ export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';
 
 /* API Links */
 export const search = '/search';
-// Auth
 export const APIlogin = '/login';
 export const APIregister = '/register';
 export const APIregisterCoordinator = '/register_coordinator';

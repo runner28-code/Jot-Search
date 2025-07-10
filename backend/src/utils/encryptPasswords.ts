@@ -17,7 +17,6 @@ import { DATASET_MAIN, Tables } from "../types/Common";
         `;
         const options = {
           query: query,
-          location: "US",
         };
         const [job] = await BigQueryService.getClient().createQueryJob(options);
         const [users] = await job.getQueryResults();
@@ -27,3 +26,4 @@ import { DATASET_MAIN, Tables } from "../types/Common";
             if(!user.password){
               console.log(`user ${user.email} password is empty. Skipped.`);
               continue
+            }

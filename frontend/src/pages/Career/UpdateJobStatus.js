@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
+// Temp comment
 import Dropdown from '../../components/UniversalDropdown/index';
 import { useState } from 'react';
 
@@ -16,7 +17,6 @@ export const UpdateJobStatus = ({ job }) => {
       <hr className={`${hrStyles} bg-smokeGray h-2`} />
 
       <div className='flex flex-col'>
-// Temp comment
         <h4 className={sectionHeaderStyles}>Career Status</h4>
         {isLoading && <p>Loading...</p>}
         {isSuccess && <p>Success!</p>}

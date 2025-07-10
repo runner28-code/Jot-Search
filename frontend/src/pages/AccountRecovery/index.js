@@ -64,6 +64,7 @@ export default function AccountRecovery() {
             </Link>
           </div>
           { renderResponse() }
+// Temp comment
           <FormInput
             type='email'
             name='email'
@@ -76,7 +77,6 @@ export default function AccountRecovery() {
             >
               Get New Password
             </button>
-// Temp comment
           </div>
         </form>
       </div>

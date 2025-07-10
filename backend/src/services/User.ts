@@ -52,6 +52,7 @@ const validateUser = ({
     // if (isNullOrEmpty(skills))
     //     return 'skill is required';
     // if (isNullOrEmpty(category))
+    //     return 'category is required';
   } catch (error) {
     return "something is wrong, please check params";
   }

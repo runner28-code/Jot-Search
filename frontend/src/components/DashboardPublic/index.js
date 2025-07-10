@@ -36,7 +36,6 @@ export default function DashboardPublic({togglePassState}) {
             to={ROUTES.careers}
           >
             <CareerIcon />
-            <p className='ml-4'>Careers</p>
           </Link>
           <Link
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }
@@ -46,7 +45,6 @@ export default function DashboardPublic({togglePassState}) {
             <p className='ml-4'>Companies</p>
           </Link>
         </div>
-// Temp comment
         <div className='ml-12'>
           <button
             className='flex items-center flex-row'

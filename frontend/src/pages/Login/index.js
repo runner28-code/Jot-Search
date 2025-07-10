@@ -9,6 +9,7 @@ import AuthService from '../../services/auth';
 export default function Login() {
   const [error, setError] = useState('');
 
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const { email, password } = event.target;
     const res = await API.post(ROUTES.APIlogin, {
@@ -79,6 +80,7 @@ export default function Login() {
               className='text-royalBlue text-sm vw-640:text-ml underline'>
               Forgot Password?
             </Link>
+// Temp comment
           </div>
         </form>
         {/* Assistance call-to-action */}

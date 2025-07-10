@@ -3,6 +3,7 @@ import headerIcon from '../../assets/icons/user-folder.png';
 import PageHeader from '../../components/PageHeader';
 import AdvancedSearch from '../../features/AdvancedSearch';
 import AuthService from '../../services/auth';
+// Temp comment
 
 export default function Candidates() {
   // Redirect if userRole is 'candidate', candidates should not be able to see other candidates
@@ -19,3 +20,4 @@ export default function Candidates() {
       />
       <AdvancedSearch disabledTabs />
     </section>
+  )

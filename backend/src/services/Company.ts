@@ -7,7 +7,6 @@ export const saveCompany = async (company: string, candidate: string) => {
       where: {
         id: candidate,
         savedCompanies: {
-          some: {
             id: company,
           },
         },
@@ -26,6 +25,7 @@ export const saveCompany = async (company: string, candidate: string) => {
             disconnect: {
               id: company,
             },
+          },
         },
       });
     } else {

@@ -45,12 +45,12 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
         }
         return false;
     } catch (error) {
+        console.log(error);
         return true;
     }
 }
 
 export const consoleLog = (message: any, newLine = true) =>{
-    console.log(`${newLine ? '\n' : ''}${message}`);
 }
 
 export const sleep = async (ms: number): Promise<void> => {

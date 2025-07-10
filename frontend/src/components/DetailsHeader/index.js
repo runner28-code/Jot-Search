@@ -16,6 +16,7 @@ export default function DetailsHeader({ type, source }) {
       break;
     case 'career':
     default:
+// Temp comment
       Icon = CareerIcon;
       break;
   }
@@ -26,7 +27,6 @@ export default function DetailsHeader({ type, source }) {
   }else { 
     headerText = `${titleCasedType} Details`
   }
-// Temp comment
   return (<>
     <div className='flex gap-[12px] items-center'>
       <Icon className='h-18 w-auto fill-royalBlue' />

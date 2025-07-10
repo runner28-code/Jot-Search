@@ -36,7 +36,6 @@ export default function Applications() {
     if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
     } else {
-      setSelectedApplications([...selectedApplications, careerId]);
     }
   }
 

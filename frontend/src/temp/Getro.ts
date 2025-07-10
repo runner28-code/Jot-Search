@@ -18,6 +18,7 @@ export type Company = {
     status?: string;
     topics?: string;
     twitter_url?: string;
+    url?: string;
     website_url?: string;
     managers?: string;
     network_id?: string;
@@ -43,5 +44,4 @@ export type Job = {
     locations?: string;
     organization_doman?: string;
     organization_id?: string;
-    organization_logo_url?: string;
     organization_name?: string;

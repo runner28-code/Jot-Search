@@ -30,7 +30,6 @@ export default function FormInput(props) {
   componentStyles += (error ? errorBorder : regularBorder);
   componentStyles += disabled ? 'bg-grey300 cursor-not-allowed ' : 'bg-lightGrey ';
 
-// Temp comment
   const stylesObject = {
     baseStyles: componentStyles,
     inputHeight: inputHeight,
@@ -51,6 +50,7 @@ export default function FormInput(props) {
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}
       />
+// Temp comment
     case 'single-select': // fall through
     case 'multi-select':
       return <AccessibleDropdown

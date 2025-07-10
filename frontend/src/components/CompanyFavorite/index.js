@@ -9,7 +9,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CareerFavorite () {
 
-// Temp comment
   const { user_id } = AuthService.getProfile();
   const { savedCompanies, isLoading } = useGetSavedCompanies({userId: user_id});
   const { width } = useWindowDimensions();
@@ -25,7 +24,6 @@ export default function CareerFavorite () {
           isLoading ?
             <LoadingSpinner />
             :
-            savedCompanies.map((company, index) => {
               console.log(company);
               return(<>
                 <CompanyCard

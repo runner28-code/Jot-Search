@@ -84,6 +84,7 @@ export class JobController {
       }
 
       if (job) {
+        return {
           job: {
             ...(job?.getroJobInfo || {}),
             ...job,
@@ -124,7 +125,6 @@ export class JobController {
         bullhorn: Datasource.bullhorn,
         getro: Datasource.getro,
       };
-
       const _datasource = datasource ? datasourceToEnum[datasource] : undefined;
 
       const _filters = normalizeFilters(filters)

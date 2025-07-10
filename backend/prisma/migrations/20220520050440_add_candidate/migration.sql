@@ -53,7 +53,6 @@ CREATE TABLE "Candidate" (
     "nameSuffix" TEXT,
     "nickName" TEXT,
     "numCategories" TEXT,
-    "numOwners" TEXT,
     "occupation" TEXT,
     "otherDeductionsAmount" TEXT,
     "otherIncomeAmount" TEXT,
