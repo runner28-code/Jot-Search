@@ -55,7 +55,6 @@ CREATE TABLE "Company" (
     "revuenue" TEXT,
     "status" TEXT,
     "taxRate" DOUBLE PRECISION,
-    "tickerSymbol" TEXT,
     "trackTitle" TEXT,
     "twitterHandle" TEXT,
     "workWeekStart" INTEGER,

@@ -16,7 +16,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
-  const location = useLocation().pathname;
   const active = ' bg-royalBlue';
   if( width >= 990 ) {
     return null;
@@ -36,7 +35,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }
             to={ROUTES.companies}
           >
-// Temp comment
             <CompanyIcon />
             <p className='ml-4'>Companies</p>
           </Link>

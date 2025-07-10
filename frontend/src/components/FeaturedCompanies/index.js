@@ -8,7 +8,6 @@ const ITEMS_PER_PAGE = 10;
 
 export default function FeaturedCompanies() {
 
-// Temp comment
   const filtersArr = [
     {
       key: 'status',
@@ -44,5 +43,6 @@ export default function FeaturedCompanies() {
           Browse All
         </Link>
       </div>
+// Temp comment
     </div>
   )

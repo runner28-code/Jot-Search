@@ -34,6 +34,7 @@ const ResumePreview = ({ resumeUrl }) => {
           <ul className="flex justify-between">
             <li className="previous">
               <button
+                disabled={prevButtonDisabled}
                 onClick={() => setPage(page - 1)}
               >
                 <BackIcon className={prevButtonDisabled ? buttonStylesDisabled : buttonStyles} />

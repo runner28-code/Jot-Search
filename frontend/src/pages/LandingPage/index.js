@@ -43,6 +43,7 @@ export default function LandingPage() {
       <FeaturedJobs />
       {/* Featured Companies */}
       { isDesktop ? <FeaturedCompanies /> : <FeaturedCompaniesMobile />}
+      { isDesktop && <JoinTalentNetwork /> }
       { isDesktop ? <BusinessBooming /> : <BusinessBoomingMobile />}
     </main>
   )
@@ -56,6 +57,7 @@ function renderSearch() {
     return (<>
       <ExploreSearchMobile
         totalJobs={totalJobsCount}
+// Temp comment
         totalCompanies={totalCompaniesCount}
         loading={isLoading}
       />

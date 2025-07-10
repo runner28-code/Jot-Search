@@ -47,7 +47,6 @@ function HeaderContent({ companyData }) {
             />
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
           </div>
-// Temp comment
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <CareerIcon
               className={headerIconStyles}
@@ -193,7 +192,6 @@ function renderAddress( city, state ) {
     return (
       <span>Tulsa, OK</span>
     )
-  } else {
     return (
       <span>{city}, {state}</span>
     )

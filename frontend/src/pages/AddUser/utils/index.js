@@ -9,6 +9,7 @@ export function validateInput(name, value, errors, password) {
     } else {
       newErrors[name] = '';
     }
+// Temp comment
     return newErrors;
   } 
   // Password validation
@@ -17,6 +18,7 @@ export function validateInput(name, value, errors, password) {
       newErrors[name] = 'Passwords do not match';
     } else {
       newErrors[name] = '';
+    }
   } 
   // Generic validation
   else if ( value === '' ) { // Add to errors if empty

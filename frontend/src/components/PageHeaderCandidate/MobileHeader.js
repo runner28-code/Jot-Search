@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+export default function MobileHeader(props) {
   const {
     headerText,
     icon,
@@ -8,7 +9,6 @@ import PropTypes from 'prop-types';
     colorizeStroke,
   } = props;
   
-  let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
   if ( classOverride ) addOnIconClasses += classOverride;
   return (

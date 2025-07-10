@@ -89,7 +89,6 @@ function renderNotification(activeData, careerData) {
     return (<>
       <Notification
         title='Need to update this posting?'
-        content='Please contact your inTulsa coordinator to provide status updates or if you notive anything incorrect.'
         text='Write to talentnetwork@intulsa.com'
         email='talentnetwork@intulsa.com'
         company={careerData.clientCorporation}

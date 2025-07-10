@@ -10,7 +10,6 @@ const dropdownFiltersCoord = [
   'Employment Type',
   'Status'
 ];
-// Temp comment
 
 const dropdownFilters = [
   'Category',

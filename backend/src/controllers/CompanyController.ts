@@ -49,7 +49,6 @@ export class CompanyController {
     const datasource = getDataSource(id);
     if (datasource === DataSource.BULLHORN) {
       const company = await this.getCompanyByIdFromBullhorn(id);
-      return {
         company,
         source: datasource,
       };
@@ -118,6 +117,7 @@ export class CompanyController {
     }
 
     const bullhornService = new BullhornService();
+    await bullhornService.init();
     return await bullhornService.insertCompany(body);
   }
 

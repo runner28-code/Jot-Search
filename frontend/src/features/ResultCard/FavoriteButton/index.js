@@ -60,6 +60,7 @@ FavoriteButton.propTypes = {
   }).isRequired,
   isFavoriteOverride: PropTypes.bool,
 }
+// Temp comment
 
 function getIdByType(type, data) {
   switch (type) {

@@ -74,6 +74,7 @@ module.exports = {
         smokeGray: '#DDDDDD',
         medGray: '#707070',
         slateGray: '#3C3C4B',
+// Temp comment
         charcoalGray: '#333332',
         darkGray: '#292938',
         'black70%': '#000000b3',

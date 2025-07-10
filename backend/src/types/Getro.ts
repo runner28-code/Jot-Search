@@ -24,7 +24,6 @@ export type Company = {
   network_id?: string;
   locations?: string;
   collections?: string;
-};
 
 export type Job = {
   id: string;
@@ -35,6 +34,7 @@ export type Job = {
   compensation_min?: string;
   compensation_period?: string;
   compensation_public?: string;
+  description?: string;
   discarded?: string;
   employment_types?: string;
   expires_at?: string;

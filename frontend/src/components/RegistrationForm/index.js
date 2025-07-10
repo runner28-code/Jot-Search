@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect, useContext } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
 import ChoiceTag from '../ChoiceTag';
 // import Dropdown from '../../components/UniversalDropdown';
@@ -24,6 +23,7 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
   phone: '',
+  expertise: '',
   address1: '',
   city: '',
   state: '',
