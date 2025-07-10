@@ -193,6 +193,7 @@ export class BullhornService {
           this.corpToken = restUrl.split("/")[4];
           console.log("BhRestToken: ", this.BhRestToken);
           console.log("restUrl: ", this.restUrl);
+          console.log("corpToken: ", this.corpToken);
 
           await this.setCookie({
             auth_code: this.auth_code,
@@ -568,3 +569,6 @@ export class BullhornService {
           offset += count;
           repeatErr = 0;
           if (total <= offset) break;
+        } else if (res.status === 404) {
+          return [];
+        } else {

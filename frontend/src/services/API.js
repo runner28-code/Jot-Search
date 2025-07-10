@@ -81,7 +81,6 @@ export async function updateCandidate(newData, id) {
   return normalizeData(data);
 }
 
-// Temp comment
 export async function getSavedCandidates() {
   const { data } = await API.get(ROUTES.APIsavedCandidates);
   return normalizeData(data.candidates);
@@ -143,7 +142,6 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
   }
 }
 
-export async function getIndividualCompany(id) {
   const {data} = await API.get(ROUTES.APIcompanies, {
     params: {
       id
@@ -192,3 +190,18 @@ export async function getSavedCompanies(id, count = null, page = null) {
     }
   });
   return normalizeData(data.companies);
+}
+
+//* JOBS
+/**
+ * example filtersArr:
+ * [
+ *  {
+ *   key: 'title',
+ *   value: 'Software'
+ *  },
+ *  ...
+ * ] 
+ */
+export async function getJobs(filters, count, operator, page) {
+  return (await getJobsFull(filters, count, operator, page)).jobs;

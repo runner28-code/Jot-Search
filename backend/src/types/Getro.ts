@@ -58,3 +58,4 @@ export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "application_path",
   "compensation_currency",
   "compensation_max",
+  "compensation_min",

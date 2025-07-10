@@ -46,7 +46,6 @@ export default function NavSearchMobile({ placeholder }) {
     else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
       return { filtersArr: searchFilters };
-    } else {
       return { filterKey: 'name', filterValue: searchTerm }
     }
   };
@@ -92,6 +91,7 @@ export default function NavSearchMobile({ placeholder }) {
   /* STYLES & RENDER */
   const stylesObject = {
     containerStyles: 'flex flex-row-reverse items-center justify-evenly bg-white border-solid border-2 border-lightGrey rounded-lg mr-4 ',
+    searchIconStyles: 'h-16 px-2 bg-gray-200 text-neutral-400 text-[3.5rem] flex justify-center items-center rounded-lg',
     inputStyles: 'flex-1 h-24 rounded-l-lg pl-4'
   }
 

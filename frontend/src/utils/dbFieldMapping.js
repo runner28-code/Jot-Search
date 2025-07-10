@@ -34,11 +34,13 @@ export const ethnicityMap = {
   HL: 'Hispanic or Latina/Latino or LatinX',
   AS: 'Asian',
   M: 'Multiracial',
+// Temp comment
   O: 'Other'
 };
 
 export const experienceMap = {
   '1': null,
   '2': '0-1',
+  '3': '2-4',
   '4': '5-10',
   '5': '11+'

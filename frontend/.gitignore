@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules
-/.pnp
 .pnp.js
 
 # testing
@@ -11,3 +10,4 @@
 # production
 /build
 
+# misc

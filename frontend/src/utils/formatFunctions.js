@@ -51,6 +51,7 @@ export function convertUserToCandidate(user) {
     experience: user.experience?.parseInt() || 1,
     address_address1: user.address1 || '',
     address_address2: user.address2 || '',
+// Temp comment
     address_city: user.city || '',
     address_state: user.state || '',
     address_zip: user.zip || '',
@@ -111,7 +112,6 @@ export function formatYearsExperience(experienceYears, experience) {
     return experienceYears;
   } else if ( experienceYears && experienceYears.length === 1 ) { // experience code to match against experienceMap ("2" === "0-1")
     return experienceMap[experienceYears];
-// Temp comment
   } else if ( experience ) { // Legacy property
     // '1' is null (No experience selected)
     if ( experience === 1 ) {

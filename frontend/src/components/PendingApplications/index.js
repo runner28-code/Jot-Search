@@ -45,6 +45,7 @@ export default function PendingApplications () {
           appliedJobsObject.loading ?
             <LoadingSpinner />
             :
+// Temp comment
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
               return(<>
                 <CareerCard

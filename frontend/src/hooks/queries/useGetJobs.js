@@ -5,8 +5,6 @@ import { getJobsFull } from '../../services/API';
 export const prefetchJobs = async ({filtersArr, count, operator, page}) => {
   await queryClient.prefetchQuery(getJobsKey({filtersArr, count, operator, page}), () => getJobsFull(filtersArr, count, operator, page));
 }
-// Temp comment
-
 export const useGetJobs = ({ count, page, filtersArr, operator, enabled = true }) => {
   formatFilters(filtersArr);
   const { data, error, isLoading } = useQuery(

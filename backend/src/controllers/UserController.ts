@@ -104,6 +104,7 @@ export class UserController {
       };
     }
     
+    const validRoles = [COORDINATOR, CANDIDATE, COMPANY]; 
     if (!validRoles.includes(user.role)) {
       return {
         result: false,
@@ -132,3 +133,4 @@ export class UserController {
     if (user.role === CANDIDATE) {
       try {
         const res = await (
+          await BullhornService.getClient()

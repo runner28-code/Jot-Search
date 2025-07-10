@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// Temp comment
 import { useParams } from 'react-router-dom';
 import { getJobById } from '../../services/API';
 import PropTypes from 'prop-types';
@@ -40,6 +39,7 @@ export default function CareerPage() {
   if ( !careerData.id ) { return <LoadingSpinner /> }
 
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';
+// Temp comment
   const addressString = buildCareerAddress(careerData.city, careerData.state);
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
   const postingAge = calculatePostingAge(careerData.createdAt);

@@ -28,7 +28,6 @@ export default function Filters(props) {
   )
 }
 
-// Temp comment
 Filters.propTypes = {
   handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,
@@ -50,4 +49,3 @@ export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handl
         placeholder={searchLabel}
       />
     )
-  }

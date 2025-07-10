@@ -61,7 +61,6 @@ export default function Login() {
           <FormInput
             type='text'
             name='email'
-// Temp comment
             label='Login Email'
           />
           <FormInput

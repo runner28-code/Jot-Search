@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import PhoneInput from 'react-phone-number-input/input';
 
@@ -6,6 +5,7 @@ export default function TextInput({type, name, placeholder, label, value, requir
   function handleChange(e) {
     if ( name !== 'phone' ) {
       onChange(name, e.target.value);
+// Temp comment
     } else {
       onChange(name, e);
     }

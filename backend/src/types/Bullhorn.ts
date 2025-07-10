@@ -190,3 +190,4 @@ export type Candidate = {
     dateI9Expiration?: string;
     dateLastComment?: string;
     dateLastModified?: string;
+    dateNextCall?: string;

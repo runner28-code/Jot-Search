@@ -129,6 +129,7 @@ export default function MobileLayout(props) {
     <OtherCareers
       companyId={careerData.companyId}
       companyName={careerData.clientCorporation}
+      currentCareerId={careerData.externalId}
     />
   </>)
 }
@@ -161,7 +162,6 @@ function renderAboutCompanySection(careerData) {
     return null;
   }
   const headerString = `About ${careerData.company.name}`;
-  return (<>
     <hr className={hrStyles} />
     {/* About Company */}
     <h4 className={sectionHeaderStyles}>{headerString}</h4>

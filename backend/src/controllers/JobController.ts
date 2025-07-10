@@ -188,7 +188,6 @@ export class JobController {
         total,
         message: null,
       };
-    } catch (error) {
       console.error(error);
       return {
         message: error,
@@ -235,6 +234,7 @@ export class JobController {
     const _join = `
       LEFT JOIN \`${DATASET_MAIN}.${Tables.JOINED_COMPANIES}\` as ${companyAlias} 
       ON REPLACE(${alias}.companyId, "bh-", "bl-")  = ${companyAlias}.bh_id
+      `;
 
     return await BigQueryService.selectQuery(
       dataset,
@@ -248,3 +248,4 @@ export class JobController {
   }
 
   async getJobsByFilterFromGetro(
+    filters: AdvancedFilterOption[] = [],

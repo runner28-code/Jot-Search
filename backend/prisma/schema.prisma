@@ -440,3 +440,4 @@ model Job {
   company Company? @relation("jobCompany", fields: [companyId], references: [id])
 
   categoryId Int?
+  category   Category? @relation("jobCategory", fields: [categoryId], references: [externalID])

@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
-// Temp comment
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
@@ -14,6 +13,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
   return (
     <div
       className='relative'
+// Temp comment
       key={data.id}
     >
       <Link

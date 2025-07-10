@@ -6,6 +6,7 @@ export default function FeaturedTag ({ hide, addClass }) {
   const allClasses = classes += addClass;
   if( hide ) {
     return null;
+  }
   return (
     <span className={ allClasses }>
       <img

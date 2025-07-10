@@ -26,8 +26,8 @@ export default function GlobalSearch({ placeholder }) {
   const menuRef = useRef(null);
 
   /* EVENT HANDLERS */
-// Temp comment
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
+// Temp comment
     setResults({ ...results, loading: true, forceHidden: false });
     debounceSearchTermFunction( searchTerm );

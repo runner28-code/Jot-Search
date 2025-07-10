@@ -1,4 +1,4 @@
-import ReferralCardContent from '../../features/ResultCard/ReferralContent';
+import PropTypes from 'prop-types';
 
 function renderHorizontalRule(isLastItem) {
   if (isLastItem) {

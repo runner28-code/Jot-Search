@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 export default function MobileHeader(props) {
   const {
     headerText,
-    icon,
     IconComponent,
     classOverride,
     colorizeStroke,
@@ -14,6 +13,7 @@ export default function MobileHeader(props) {
   
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
+  if ( classOverride ) addOnIconClasses += classOverride;
   return (
     <div className='flex items-center mb-10 pl-l py-s bg-royalBlue'>
       { backButton && (

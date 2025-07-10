@@ -25,6 +25,7 @@ export default function Applications() {
         agoDate: job.appliedDate
       }});
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
+// Temp comment
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
@@ -81,5 +82,6 @@ export default function Applications() {
             handleClick: handleCheckClick
           }}
         />
+      </div>
     </section>
   )

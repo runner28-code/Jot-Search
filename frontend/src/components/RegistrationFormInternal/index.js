@@ -56,6 +56,7 @@ export default function RegistrationFormInternal(loggedIn) {
   const [commObj, setCommObj] = useState(defaultCommunity);
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
+// Temp comment
     loading: false,
     success: false,
   });
@@ -84,6 +85,7 @@ export default function RegistrationFormInternal(loggedIn) {
 
       // Attempt to upload resume before submitting user data
       const resumeResponse = await uploadFile('resumes', formObj.resume);
+      if ( resumeResponse.result === false ) {
         setErrors(['resume']);
         setErrorBlock('There was an error uploading your resume.');
         setSubmissionObject({
