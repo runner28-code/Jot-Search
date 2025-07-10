@@ -50,7 +50,6 @@ export default function FormInput(props) {
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}
       />
-// Temp comment
     case 'single-select': // fall through
     case 'multi-select':
       return <AccessibleDropdown

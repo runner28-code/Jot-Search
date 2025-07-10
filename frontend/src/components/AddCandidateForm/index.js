@@ -43,7 +43,6 @@ export default function RegistrationForm() {
   });
 
   const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(async () => { // Submit data
     // If loading object has been set to 'submitted', validate object and submit
@@ -107,7 +106,6 @@ export default function RegistrationForm() {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
-// Temp comment
     setErrors([]);
     setFormObj({
       ...formObj,

@@ -16,6 +16,7 @@ export default function ResultContainer(props) {
     limit,
     header, 
     active,
+// Temp comment
     compact = false,
     isFavoriteOverride = null,
     agoText = null,

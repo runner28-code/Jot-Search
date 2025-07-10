@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-// Temp comment
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CareerCard from '../ResultCard/CareerCard';
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
@@ -22,6 +21,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
   ];
 
   const { careers, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
+// Temp comment
   const prefetchFunc = (page) => {
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
   }

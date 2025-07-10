@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearchLanding';
 import LoadingSpinner from '../LoadingSpinner';
 import * as ROUTES from '../../routes';
+
 export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
   const [filterState, setFilterState] = useState({
@@ -22,5 +23,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     }
     if (filterState.expertise !== 'Any Expertise') {
       params.expertise = filterState.expertise;
+// Temp comment
     }
     navigate(ROUTES.careers, { state: { ...params } });

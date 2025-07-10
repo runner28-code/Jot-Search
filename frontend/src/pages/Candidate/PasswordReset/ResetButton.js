@@ -18,13 +18,13 @@ export default function ResetButton({ candidateData, setType }) {
     } else {
       setType(res.data.error, false);
     }
-  };
   if( width <= 990 ) {
     return (
       <button
         className='h-20 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
         onClick={handleSubmit}
       >
+      Request Password Reset
       </button>
     )
   }

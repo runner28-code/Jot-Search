@@ -11,6 +11,7 @@ export type Company = {
   jobs_count?: string;
   linkedin_url?: string;
   logo_url?: string;
+  name?: string;
   ocp_search_status?: string;
   scraping_enabled?: string;
   slug?: string;
@@ -34,7 +35,6 @@ export type Job = {
   compensation_min?: string;
   compensation_period?: string;
   compensation_public?: string;
-  description?: string;
   discarded?: string;
   employment_types?: string;
   expires_at?: string;

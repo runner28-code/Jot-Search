@@ -5,7 +5,6 @@ export type Company = {
     crunchbase_url?: string;
     description?: string;
     domain?: string;
-    facebook_url?: string;
     founded?: string;
     instagram_url?: string;
     jobs_count?: string;
@@ -44,4 +43,5 @@ export type Job = {
     locations?: string;
     organization_doman?: string;
     organization_id?: string;
+    organization_logo_url?: string;
     organization_name?: string;

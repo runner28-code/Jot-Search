@@ -4,6 +4,7 @@ import * as ROUTES from '../../routes';
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import TypeTabs from '../../components/TypeTabs';
+
 // Hooks
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -65,6 +66,7 @@ function CareerHeader ({ location }) {
       </div>
     )
   }
+// Temp comment
   if( !loggedIn ) {
     return (<>
       <div className='flex items-center justify-start flex-row mb-10 bg-sky-700 py-9 px-6'>

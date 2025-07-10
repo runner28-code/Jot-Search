@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
-// Temp comment
 import { BsBuilding } from 'react-icons/bs';
 
 const ITEMS_PER_PAGE = 6;
@@ -28,7 +27,6 @@ export default function FeaturedCompaniesMobile() {
             <LoadingSpinner />
             :
             companies.map((company, index) =>
-              <Link
                 to={`${ROUTES.companies}/${company.id}`}
                 className='my-8 outline outline-2 outline-neutral-100 p-8 w-32 mx-2'
                 key={index}>

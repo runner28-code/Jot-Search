@@ -39,6 +39,7 @@ export default function PendingApplications () {
         <div className='bg-red-500 w-12 h-12' />
         <div className='bg-orangeSquare  top-[-20px] right-[5px] absolute w-6 h-6' />
       </div>
+// Temp comment
       <h2 className='font-spaceGrotesk text-h5 text-white mb-8 text-center'>My Pending Applications</h2>
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
@@ -79,3 +80,4 @@ export default function PendingApplications () {
         </Link>
       </div>
     </div>
+  )

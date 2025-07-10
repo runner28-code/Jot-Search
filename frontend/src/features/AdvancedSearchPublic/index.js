@@ -92,6 +92,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       return;
     }
     setFilterObject({ ...filterObject, title: '' });
+// Temp comment
     setPage(1);
   }, [activeTab]);
 

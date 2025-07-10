@@ -33,7 +33,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     address1: candidateData.address1 || '',
     referredBy: candidateData.referredBy || '',
     gender: candidateData.gender || '',
-  })
 
   const [editMode, setEditMode] = useState(false);
 
@@ -62,6 +61,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
         community: ''
       });
     }
+    handleChange(name, value);
   }
 
   function handleCommunityChoice(name, value) {

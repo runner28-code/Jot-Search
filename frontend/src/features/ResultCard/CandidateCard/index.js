@@ -102,7 +102,6 @@ CandidateCard.propTypes = {
     avatar: PropTypes.string,
     city: PropTypes.string,
     companyName: PropTypes.string,
-    experienceYears: PropTypes.string,
     experience: PropTypes.number,
     expertise: PropTypes.string,
     firstName: PropTypes.string,
@@ -176,7 +175,6 @@ function NewLeadLabel({ status }) {
 
   return null;
 }
-// Temp comment
 
 NewLeadLabel.propTypes = {
   status: PropTypes.string,

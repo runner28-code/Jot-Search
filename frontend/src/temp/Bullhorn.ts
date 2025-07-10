@@ -131,7 +131,7 @@ export type ClientContact = {
     description?: string;
     desiredCategories?: string;
     desiredSkills?: string;
-    division?: string;
+    desiredSpecialties?: string;
     email?: string;
     email2?: string;
     email3?: string;

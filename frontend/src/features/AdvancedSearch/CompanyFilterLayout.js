@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import FilterSearch from '../../components/FilterSearch';
 
 export default function CompanyFilterLayout(props) {
@@ -14,6 +15,7 @@ export default function CompanyFilterLayout(props) {
       <div className='flex items-center gap-[65px]'>
         <FilterSearch
           searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Companies'
           additionalClasses='w-1/2'

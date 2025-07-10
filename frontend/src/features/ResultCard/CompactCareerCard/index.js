@@ -17,6 +17,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
     <div
       className='relative'
       key={data.id}
+// Temp comment
     >
       <Link
         to={`${ROUTES.careers}/${data.id}`}

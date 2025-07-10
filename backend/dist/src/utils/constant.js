@@ -239,7 +239,6 @@ const job_filter_exclude_keys = [
     "lpn",
     "lunch",
     "machine operator",
-    "machinist",
     "maintenance",
     "mammographer",
     "manufacturing",

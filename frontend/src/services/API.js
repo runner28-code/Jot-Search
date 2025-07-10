@@ -144,7 +144,6 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
 
 export async function getIndividualCompany(id) {
   const {data} = await API.get(ROUTES.APIcompanies, {
-// Temp comment
     params: {
       id
     }
@@ -175,7 +174,6 @@ export async function saveCompany(candidateId, companyId) {
   });
 
   if (data.messsage === 'saved company') {
-    AuthService.toggleSavedCompany(companyId, 'save');
   } else {
     AuthService.toggleSavedCompany(companyId, 'unsave');
   }
