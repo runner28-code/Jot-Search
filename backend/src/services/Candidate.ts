@@ -44,6 +44,7 @@ export const saveCandidate = async (
           },
         },
       });
+    }
     return {
       result: true,
       message: existing ? "unsaved candidate" : "saved candidate",

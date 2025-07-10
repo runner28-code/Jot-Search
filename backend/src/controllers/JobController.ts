@@ -84,7 +84,6 @@ export class JobController {
       }
 
       if (job) {
-        return {
           job: {
             ...(job?.getroJobInfo || {}),
             ...job,
@@ -188,6 +187,7 @@ export class JobController {
         total,
         message: null,
       };
+    } catch (error) {
       console.error(error);
       return {
         message: error,

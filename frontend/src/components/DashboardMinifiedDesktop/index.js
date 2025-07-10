@@ -34,7 +34,6 @@ DashboardMinifiedDesktop.propTypes = {
 function CareerHeader ({ location }) {
   const loggedIn = AuthService.loggedIn();
 
-  let userRole = AuthService.getUserRole();
 
   const back = '< Go Back';
 
@@ -45,6 +44,7 @@ function CareerHeader ({ location }) {
           <CareerIcon className='mr-6 fill-royalBlue ' />
           <h2 className='font-spaceGrotesk text-royalBlue font-bold '>Career Details</h2>
         </span>
+        <Link
           className='text-blue underline text-royalBlue'
           to={ROUTES.careers}
         >{ back }</Link>

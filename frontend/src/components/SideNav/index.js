@@ -6,8 +6,8 @@ import {
   coordinatorChoices,
   guestChoices,
   findSelectedFromPath
-// Temp comment
 } from './utils';
+// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
 

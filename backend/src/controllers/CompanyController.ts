@@ -128,6 +128,7 @@ export class CompanyController {
     @CurrentUser() authUser: User,
     @QueryParam("candidate") candidate: string
   ) {
+    return await getSavedCompanies(candidate || authUser.id!);
   }
 
   async getCompanyByIdFromBullhorn(id: string): Promise<any> {

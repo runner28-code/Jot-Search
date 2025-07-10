@@ -49,3 +49,4 @@ export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handl
         placeholder={searchLabel}
       />
     )
+  }

@@ -8,7 +8,6 @@ export default function AddCoordinator() {
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
-    errors: {},
   });
 
   // Submit form data when submissionObject.loading is set to true
@@ -55,6 +54,7 @@ export default function AddCoordinator() {
     const newErrors = validateInput(
       name,
       value,
+      submissionObject.errors,
       formObject.password
     );
 

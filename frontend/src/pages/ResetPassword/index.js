@@ -10,10 +10,10 @@ export default function ResetPassword() {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-// Temp comment
   const [match, setMatch] = useState('');
   const [success, setSuccess] = useState('');
 
+// Temp comment
   const queryParams = new URLSearchParams(window.location.search);
   const token = queryParams.get('token');
 

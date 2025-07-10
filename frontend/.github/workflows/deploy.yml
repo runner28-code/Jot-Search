@@ -6,7 +6,6 @@ on:
 jobs:
   docker-deploy:
     runs-on: ubuntu-latest
-
     steps:
       # need checkout before using docker-compose-remote-action
       - uses: actions/checkout@v2

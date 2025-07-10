@@ -10,7 +10,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
 import LinkedIn from '../../assets/icons/linkedin-circle.svg';
-import Globe from '../../assets/icons/globe.svg';
 import Triangle from '../../assets/icons/triangle.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { FaUsers } from 'react-icons/fa';
@@ -136,7 +135,6 @@ function renderCompanyLogo(logoUrl, name) {
       <div className='p-8 border border-slate-70/50 mr-8'>
         <BsBuilding className={logoStyles} />
       </div>
-// Temp comment
     )
   }
   return (

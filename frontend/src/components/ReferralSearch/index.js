@@ -93,3 +93,4 @@ export default function ReferralSearch() {
         inputHeight='h-40 '
       />
     </div>
+  )

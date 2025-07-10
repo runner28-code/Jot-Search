@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
+// Temp comment
 import Dropdown from '../../components/UniversalDropdown';
 import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
@@ -42,7 +43,6 @@ export default function AddUser() {
     <div className={formType != 'Company' ? defaultContainer : companyContainer }>
       <div className='flex w-full px-8 vw-1280:px-0 3vw-1280:ml-10'>
         { renderFormByType(formType) }
-// Temp comment
       </div>
     </div>
   </>)

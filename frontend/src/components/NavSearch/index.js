@@ -102,6 +102,7 @@ export default function NavSearch({ placeholder }) {
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }
+// Temp comment
           alternateStylesObject={ stylesObject } 
           setIsOpen={ setIsOpen }
           isOpen={ isOpen }

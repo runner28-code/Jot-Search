@@ -28,7 +28,6 @@ export default function ActiveCareers() {
 
   const filtersArr = buildSearchFilters({ title: searchTerm, companyId, status: ['Active', 'Open'] });
 
-// Temp comment
   const { jobs, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
 
   const prefetchFunc = (page) => {

@@ -8,6 +8,7 @@ import { CITY_INCLUDE_KEYS_REGEX, JOB_EXCLUDE_KEYS_REGEX } from './constant';
 export const isExistByID = async (id: string, datset: string, table: string) => {
     try {
         const query = `
+            SELECT * FROM \`${datset}.${table}\`
             WHERE id=${id}
         `;
         const options = {
@@ -44,7 +45,6 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
         }
         return false;
     } catch (error) {
-        console.log(error);
         return true;
     }
 }

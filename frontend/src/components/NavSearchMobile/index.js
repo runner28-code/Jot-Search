@@ -46,6 +46,7 @@ export default function NavSearchMobile({ placeholder }) {
     else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
       return { filtersArr: searchFilters };
+    } else {
       return { filterKey: 'name', filterValue: searchTerm }
     }
   };
@@ -113,6 +114,7 @@ export default function NavSearchMobile({ placeholder }) {
 }
 
 NavSearchMobile.propTypes = {
+// Temp comment
   placeholder: PropTypes.string
 }
 

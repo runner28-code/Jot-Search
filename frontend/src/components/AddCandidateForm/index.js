@@ -145,6 +145,7 @@ export default function RegistrationForm() {
   const buttonStyles = buttonBaseStyles + (addType === 'candidate' ? 'w-full ' : 'w-100 ');
 
   return (
+    <form 
       className={containerStyles} 
       onSubmit={handleSubmit}>
       { renderHeader(addType) }

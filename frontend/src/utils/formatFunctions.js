@@ -51,7 +51,6 @@ export function convertUserToCandidate(user) {
     experience: user.experience?.parseInt() || 1,
     address_address1: user.address1 || '',
     address_address2: user.address2 || '',
-// Temp comment
     address_city: user.city || '',
     address_state: user.state || '',
     address_zip: user.zip || '',

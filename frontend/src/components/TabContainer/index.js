@@ -22,6 +22,7 @@ TabContainer.propTypes = {
   tabChoices: PropTypes.arrayOf(PropTypes.string).isRequired,
   activeTab: PropTypes.string,
   setActiveTab: PropTypes.func.isRequired,
+// Temp comment
   isLocked: PropTypes.bool,
   absolute: PropTypes.bool,
 }
@@ -39,6 +40,7 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
   const titleCasedTab = choice.charAt(0).toUpperCase() + choice.slice(1);
   let tabStyles = 'px-14 py-3 rounded-full cursor-pointer Mobile-Body-textmobile-text-size-large-2 ';
   tabStyles += conditionalStyles(isActiveTab, isLocked);
+
   return (
     <button
       key={choice}

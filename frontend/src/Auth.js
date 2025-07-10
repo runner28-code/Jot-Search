@@ -18,7 +18,6 @@ export default function Auth() {
   if (!AuthService.loggedIn()) {
     return <Navigate to={ROUTES.landingPage} />
   }
-
   return ( 
     <div className='vw-640:pl-20 vw-640:pr-20 vw-1280:pl-0'>
       <Routes>
