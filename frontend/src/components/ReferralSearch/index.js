@@ -65,7 +65,6 @@ export default function ReferralSearch() {
   function handleRemove( jobId ) {
     const newCurrentChosen = currentChosen.filter(job => job.id !== jobId);
     setCurrentChosen(newCurrentChosen);
-    setFilteredChoices([ ...filteredChoices, choices.find(job => job.id === jobId) ]);
   }
 
   // set up initial choices
@@ -93,5 +92,4 @@ export default function ReferralSearch() {
         inputHeight='h-40 '
       />
     </div>
-// Temp comment
   )

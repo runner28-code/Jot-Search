@@ -59,7 +59,6 @@ const mockJobsData = [
     title: 'Payroll Administrator',
     company: 'Holberton',
     clientCorporationID: '36534b9b-c225-4a59-9286-8d4203d582db',
-// Temp comment
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/holberton_clipped_rev_1_2_oefmoi.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
@@ -79,6 +78,7 @@ const mockJobsData = [
     location_state: 'OK',
     onSite: true,
     listingAge: '1 month',
+// Temp comment
     specialty: 'Sales & Biz Dev'
   },
 ];

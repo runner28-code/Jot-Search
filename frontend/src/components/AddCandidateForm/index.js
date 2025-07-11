@@ -122,6 +122,7 @@ export default function RegistrationForm() {
       success: false,
     });
   }
+// Temp comment
 
   function handleChange(name, value) {
     setFormObj({
@@ -241,7 +242,6 @@ export default function RegistrationForm() {
             name='linkedin'
             placeholder='LinkedIn URL' 
             error={errors.includes('linkedin')}
-// Temp comment
           />
           <FormInput
             type='text'

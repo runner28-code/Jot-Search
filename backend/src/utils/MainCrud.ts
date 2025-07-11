@@ -73,6 +73,7 @@ export const saveJob = async (job: string, candidate: string) => {
               id: job,
             },
           },
+        },
       });
     } else {
       await db.user.update({

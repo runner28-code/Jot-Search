@@ -19,7 +19,6 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
             onClick={() => handleChoiceClick(choice.id)}
             className={choiceStyles}
             key={choice.id}>
-            {choice.name}
           </div>
         )
       })}

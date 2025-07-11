@@ -14,6 +14,7 @@ import {
   QueryParams,
 } from "routing-controllers";
 import { BullhornService } from "../services/BullhornService";
+import { sendVerification } from "../services/EmailService";
 import {
   register,
   login,
@@ -89,7 +90,6 @@ export class UserController {
   /**
    * Coordinator-only route to add users depending on type
    * @param authUser 
-   * @param user 
    * @returns 
    */
   @Authorized()

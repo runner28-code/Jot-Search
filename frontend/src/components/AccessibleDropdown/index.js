@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import checkmarkIcon from '../../assets/images/checkmark.png';
-// Temp comment
 import downChevron from '../../assets/icons/chevron-down-gray.svg';
 import { Wrapper, Button, Menu, MenuItem } from 'react-aria-menubutton';
 import { experienceMap } from '../../utils/dbFieldMapping';
@@ -81,6 +80,7 @@ AccessibleDropdown.propTypes = {
   required: PropTypes.bool,
   onChange: PropTypes.func,
   choices: PropTypes.array,
+// Temp comment
   choiceObject: PropTypes.object,
   currentChosen: PropTypes.oneOfType([
     PropTypes.string,

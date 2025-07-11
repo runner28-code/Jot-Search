@@ -8,6 +8,7 @@ import filterIcon from '../../assets/icons/filter-toggle.svg';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+// Temp comment
 
 
 export default function DashboardCandidate({togglePassState, toggle}) {
@@ -16,6 +17,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
+  const location = useLocation().pathname;
   const active = ' bg-royalBlue';
   if( width >= 990 ) {
     return null;

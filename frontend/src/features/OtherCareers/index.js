@@ -25,6 +25,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
   }
 
+// Temp comment
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });
 
   const matchingCareerFound = (careers && careers.length > 0) && careers.some(job => job.externalId === currentCareerId);
@@ -34,6 +35,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
   return (<>
     {isLoading && <LoadingSpinner />}
     {!isLoading && <h4 className='text-h4 font-spaceGrotesk text-charcoal font-semibold mb-xxl-2'>{headerString}</h4>}
+    {careers && careers.length > 0 && (
       <>  
         {careers.map((career, index) => {
           if (career.externalId === currentCareerId) { // Don't show the current career

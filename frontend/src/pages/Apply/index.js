@@ -12,6 +12,7 @@ import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../utils/dbFieldMapping';
 import {
+// Temp comment
   ethnicityChoices,
   defaultState,
   defaultCareerState,
@@ -66,6 +67,7 @@ export default function Apply() {
         getCandidateById(user_id),
       ]);
       if ( candidateData.workAuthorized === true ) {
+        candidateData.workAuthorized = 'Yes';
       } else {
         candidateData.workAuthorized = 'No';
       }

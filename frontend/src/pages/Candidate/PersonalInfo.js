@@ -27,7 +27,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     lastname: candidateData.lastname || '',
     email: candidateData.email || '',
     phone: candidateData.phone || '',
-    workAuthorized: candidateData.workAuthorized,
     zip: candidateData.zip || '',
     city: candidateData.city || '',
     address1: candidateData.address1 || '',
@@ -62,7 +61,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
         community: ''
       });
     }
-// Temp comment
     handleChange(name, value);
   }
 

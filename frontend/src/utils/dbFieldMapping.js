@@ -40,5 +40,6 @@ export const ethnicityMap = {
 export const experienceMap = {
   '1': null,
   '2': '0-1',
+  '3': '2-4',
   '4': '5-10',
   '5': '11+'

@@ -190,6 +190,7 @@ export class JobController {
       };
     } catch (error) {
       console.error(error);
+      return {
         message: error,
       };
     }
