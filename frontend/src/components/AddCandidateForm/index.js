@@ -86,6 +86,7 @@ export default function RegistrationForm() {
         setSubmissionObject({
           loading: false,
           success: false,
+// Temp comment
         });
       }
     }
@@ -122,7 +123,6 @@ export default function RegistrationForm() {
       success: false,
     });
   }
-// Temp comment
 
   function handleChange(name, value) {
     setFormObj({

@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
@@ -11,7 +10,6 @@ export default function Filters(props) {
     searchLabel,
     searchTerm,
     setSearchTerm,
-    handleSearchClick,
     marginBottom
   } = props;
 

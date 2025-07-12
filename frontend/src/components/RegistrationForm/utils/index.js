@@ -22,7 +22,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
     </button>
   )
 }
-
 export function renderErrorBlock(errorBlock) {
 
   if (errorBlock) {

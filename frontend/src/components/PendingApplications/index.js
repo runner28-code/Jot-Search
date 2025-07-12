@@ -21,6 +21,7 @@ export default function PendingApplications () {
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
+// Temp comment
         ...job,
         agoDate: job.appliedDate
       }});

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import searchWhite from '../../assets/images/search-white.webp';
 
 const defaultStylesObject = {

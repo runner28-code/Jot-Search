@@ -1,4 +1,3 @@
-// Temp comment
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -11,6 +10,7 @@ export default function CompanyResults({ companies }) {
   }
 
   return (
+// Temp comment
     <>
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Companies</h6>
       { companies.map(company => {

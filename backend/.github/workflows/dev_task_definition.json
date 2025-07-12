@@ -42,7 +42,6 @@
                     "value": "{SECRET_DATABASE_URL}"
                 },
                 {
-                    "name": "DATASET_BULLHORN", 
                     "value": "inTulsa_Bullhorn"
                 },
                 {
@@ -56,3 +55,4 @@
                 {
                     "name": "AUTH_SECRET", 
                     "value": "{SECRET_AUTH_SECRET}"
+                },

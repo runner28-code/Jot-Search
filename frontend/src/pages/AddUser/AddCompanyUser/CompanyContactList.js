@@ -6,11 +6,9 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
   const [selectedContacts, setSelectedContacts] = useState([]);
 
   const handleContactClick = (contact) => {
-// Temp comment
     if (selectedContacts.includes(contact)) {
       setSelectedContacts(selectedContacts.filter((c) => c !== contact));
     } else {
-      setSelectedContacts([...selectedContacts, contact]);
     }
   };
 

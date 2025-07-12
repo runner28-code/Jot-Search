@@ -2,7 +2,6 @@ import db from "../utils/db";
 
 export const saveCandidate = async (
   candidateId: string,
-  companyUserId: string
 ) => {
   try {
     const existing = await db.user.findFirst({
@@ -28,6 +27,7 @@ export const saveCandidate = async (
             connect: {
               id: candidateId,
             },
+          },
         },
       });
     } else {
@@ -55,3 +55,4 @@ export const saveCandidate = async (
 };
 
 export const getSavedCandidates = async (companyUserId: string) => {
+  try {

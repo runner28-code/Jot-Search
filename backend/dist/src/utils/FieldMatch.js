@@ -13,7 +13,6 @@ exports.JobFilter = {
         willRelocate: "willRelocate",
         status: "status",
         hidden: "hidden",
-        companyId: "clientCorporationID",
     },
     main: {
         id: "id",

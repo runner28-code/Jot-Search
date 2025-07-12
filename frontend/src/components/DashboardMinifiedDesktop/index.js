@@ -64,6 +64,7 @@ function CareerHeader ({ location }) {
           to={ROUTES.careers}
         >{ back }</Link>
       </div>
+    )
   }
   if( !loggedIn ) {
     return (<>

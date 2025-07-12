@@ -20,7 +20,6 @@ export default function Stats({ userType }) {
     setTimeframe(choice);
   }
 
-// Temp comment
   function getDuration(timeFrame) {
     switch (timeFrame) {
       case 'Today':
@@ -30,6 +29,7 @@ export default function Stats({ userType }) {
       case 'Last 14 Days':
         return 14;
       case 'Last 90 Days':
+// Temp comment
         return 90;
       default:
         return 30

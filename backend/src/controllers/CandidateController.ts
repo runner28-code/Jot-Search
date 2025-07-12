@@ -230,3 +230,4 @@ export class CandidateController {
           // combine the two arrays
           const typedUsers = tppUsers.map((user: any) => ({
             ...user,
+            type: "user"

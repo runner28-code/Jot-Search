@@ -6,6 +6,7 @@ import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { BsFillTelephoneFill as ContactIcon } from 'react-icons/bs';
 import { FiUserPlus as AddUserIcon } from 'react-icons/fi';
 import {
+  MdLogout as LogoutIcon,
   MdStars as FavoritesIcon
 } from 'react-icons/md';
 import {
@@ -37,7 +38,6 @@ export const choices = {
   },
   candidates: {
     label: 'Candidates',
-    icon: CandidatesIcon,
     link: ROUTES.candidates,
   },
   myApplications: {

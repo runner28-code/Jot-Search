@@ -138,4 +138,5 @@ function RenderInvite(loggedIn, companyData) {
     return(<>
       <InviteCandidates company={companyData} />
     </>)
+  }
   return null
