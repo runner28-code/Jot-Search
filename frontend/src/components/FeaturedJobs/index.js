@@ -32,7 +32,6 @@ export default function FeaturedJobs() {
       value: true
     }
   ];
-// Temp comment
 
   const { jobs, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE});
 
@@ -50,6 +49,7 @@ export default function FeaturedJobs() {
               return(
                 <Link
                   to={`${ROUTES.careers}/${career.id}`}
+// Temp comment
                   key={index}
                   className={ width >= 990 ? linkStyles : linkStylesMobile }
                 >

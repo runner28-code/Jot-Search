@@ -139,6 +139,7 @@ export class GetroService {
         console.log('\n***** getMembers *****');
         let page = 1;
         let repeatErr = 0;
+
         while (repeatErr < 3) {
             try {
                 await this.checkAuth();

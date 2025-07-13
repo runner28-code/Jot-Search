@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import searchWhite from '../../assets/images/search-white.webp';
 
 const defaultStylesObject = {
@@ -26,6 +25,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
     >
       <div className={ styleObject.searchIconStyles }>
         <img
+// Temp comment
           src={ searchWhite }
           alt='search icon'
           className='h-2/3'/>

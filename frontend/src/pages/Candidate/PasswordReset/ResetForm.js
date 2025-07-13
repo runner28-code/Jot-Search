@@ -41,7 +41,6 @@ export default function ResetForm({ candidateData, setType }) {
     });
   }
 
-  return (
     <div>
       <div className='w-140'>
         <FormInput

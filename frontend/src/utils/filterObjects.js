@@ -28,7 +28,6 @@ export const jobFilterObject = {
     'Closed',
     'Passive',
     'Placed',
-    'Hold',
     'Active',
     'Hired',
     'Advertising Only',

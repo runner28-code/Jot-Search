@@ -7,6 +7,7 @@ import {
   skills as skillChoices,
   roles as roleChoices,
 } from '../../../utils/skillHierarchyMap';
+import { experienceMap } from '../../../utils/dbFieldMapping';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
 import ResumePreview from './ResumePreview';
 
@@ -37,6 +38,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     linkedin: candidateData?.linkedin || '',
     resume: candidateData?.resume || '',
   });
+// Temp comment
 
   function handleChange(name, value) {
     setFormData({

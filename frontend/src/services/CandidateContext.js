@@ -109,7 +109,6 @@ const CandidateProvider = ({children}) => {
       getCandidateById(currentUser.user_id).then(user => {
         setCurrentUser(user);
       })
-    }
   }, []);
 
   const handleCandidatesChange = (value) => {

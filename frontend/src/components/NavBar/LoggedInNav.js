@@ -68,6 +68,7 @@ const DesktopNavBarLayout = () => {
           { renderNavSearch() }
         </div>
         {/* Dropdown Menu */}
+// Temp comment
         <DropdownMenu />
       </div>
     </nav>

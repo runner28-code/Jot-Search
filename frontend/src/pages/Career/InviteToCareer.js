@@ -22,6 +22,7 @@ export default function InviteToCareer({ candidate }) {
   const jobOptions = jobs?.map(job => {
     return {
       label: job.title,
+      value: job.id,
       job
     }
   }) || [];

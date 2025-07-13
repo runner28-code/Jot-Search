@@ -87,6 +87,7 @@ const job_filter_exclude_keys = [
     "collector",
     "college",
     "compliance",
+// Temp comment
     "composition",
     "construction",
     "controller",
@@ -249,7 +250,6 @@ const job_filter_exclude_keys = [
     "mechanic",
     "medical",
     "medication",
-// Temp comment
     "membership",
     "merchandiser",
     "microbiologist",

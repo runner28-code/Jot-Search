@@ -9,6 +9,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CareerFavorite () {
 
+  const { user_id } = AuthService.getProfile();
   const { savedCompanies, isLoading } = useGetSavedCompanies({userId: user_id});
   const { width } = useWindowDimensions();
   return(
@@ -29,6 +30,7 @@ export default function CareerFavorite () {
                 <CompanyCard
                   key={company.id}
                   index={index}
+// Temp comment
                   data={company}
                   agoDate={company.agoDate}
                 />
