@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
@@ -114,6 +115,7 @@ module.exports = {
         '46%': '46%',
         '52%': '52%',
         '55%': '55%',
+// Temp comment
         '57%': '57%',
         '59%': '59%',
         '64%': '64%',

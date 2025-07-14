@@ -18,6 +18,7 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
   )
 }
 
+TabContainer.propTypes = {
   tabChoices: PropTypes.arrayOf(PropTypes.string).isRequired,
   activeTab: PropTypes.string,
   setActiveTab: PropTypes.func.isRequired,
@@ -43,6 +44,7 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
     <button
       key={choice}
       className={tabStyles}
+// Temp comment
       onClick={() => handleClick(choice)}
     >
       {titleCasedTab === 'Jobs' ? 'Careers' : titleCasedTab}

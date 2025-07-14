@@ -54,7 +54,6 @@ export const saveCompanies = async (companies: any[]) => {
           },
         });
         if (existing) {
-          console.log(`Company with ID: ${company.id} exists`);
           return -1;
         }
 
@@ -156,6 +155,7 @@ export const saveClientContacts = async (contacts: any[]) => {
       try {
         console.log(`\nSavng ClientContact with ID = ${contact.id}`);
         const existing = await db.clientContact.findFirst({
+          where: {
             externalID: contact.id,
           },
         });

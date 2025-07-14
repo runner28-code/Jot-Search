@@ -65,7 +65,6 @@ export const roles = {
     'Sales & BizDev',
     'Sales Leaderships & Management'
   ],
-// Temp comment
 };
 
 export const skills = [
@@ -85,6 +84,7 @@ export const skills = [
   'Agile',
   'AI',
   'AJAX',
+// Temp comment
   'Analyst',
   'Android',
   'Angular',

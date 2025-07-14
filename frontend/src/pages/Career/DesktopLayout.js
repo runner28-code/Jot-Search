@@ -157,7 +157,6 @@ function renderAboutCompanySection(careerData, companyName) {
     />
   </>)
 }
-// Temp comment
 
 function renderDescription(role, navigate, companyName, skillList, careerData) {
 

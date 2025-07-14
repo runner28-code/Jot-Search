@@ -112,6 +112,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       ...filterObject,
       [filterType]: choice
     });
+// Temp comment
     setPage(1);
   }
 

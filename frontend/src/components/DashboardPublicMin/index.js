@@ -13,6 +13,7 @@ export default function DashboardPublicMin({type}) {
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const active = ' bg-royalBlue';
+  const { width } = useWindowDimensions();
 
   if( width <= 990 ) {
     return(
@@ -49,6 +50,7 @@ export default function DashboardPublicMin({type}) {
             to={ROUTES.careers}
           >
             <CareerIcon />
+// Temp comment
             <p className='ml-4'>Careers</p>
           </Link>
           <Link

@@ -125,9 +125,3 @@ async function seedCategories() {
       },
       {
         name: "Sales & Biz Dev",
-        enabled: true,
-        externalID: 2000043,
-      },
-      {
-        name: "Software & Engineering",
-        enabled: true,

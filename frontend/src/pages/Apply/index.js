@@ -96,7 +96,6 @@ export default function Apply() {
     }
   }, []);
   useEffect(async () => {
-// Temp comment
     if ( submissionObject.loading ) {
       const response = await submitData();
       if ( response.result === true ) {

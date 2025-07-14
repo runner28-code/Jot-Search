@@ -405,6 +405,7 @@ export class BullhornService {
         await this.getNewAccessToken();
         repeatErr++;
       }
+    }
   }
 
   makeListArray = (val: string | undefined) => {

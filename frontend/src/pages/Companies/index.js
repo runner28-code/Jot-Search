@@ -8,12 +8,14 @@ import AdvancedSearchCandidate from '../../features/AdvancedSearchCandidate';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdSearch as SearchIcon } from 'react-icons/md';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
+import Dashboard from '../../components/DashboardPublic';
 import DashboardCandidate from '../../components/DashboardCandidate';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 import AuthService from '../../services/auth';
 
 export default function Companies() {
+// Temp comment
   const { width } = useWindowDimensions();
   let userType = AuthService.getUserRole();
   const loggedIn = AuthService.loggedIn();

@@ -39,6 +39,7 @@ export const stateCodeMap = {
   Massachusetts: 'MA',
   Michigan: 'MI',
   Minnesota: 'MN',
+  Mississippi: 'MS',
   Missouri: 'MO',
   Montana: 'MT',
   Nebraska: 'NE',

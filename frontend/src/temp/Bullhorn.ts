@@ -64,7 +64,6 @@ export type Job = {
     clientCorporationID?: string;
     date_added?: string;
     date_closed?: string;
-    date_end?: string;
     date_last_exported?: string;
     date_last_modified?: string;
     date_last_published?: string;

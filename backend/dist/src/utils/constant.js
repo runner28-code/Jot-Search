@@ -108,7 +108,6 @@ const job_filter_exclude_keys = [
     "custodial",
     "custodian",
     "customer pick-up",
-    "defender",
     "delivery",
     "dietary",
     "dietician",
@@ -229,7 +228,6 @@ const job_filter_exclude_keys = [
     "liberal arts",
     "librarian",
     "library",
-// Temp comment
     "license",
     "life enrichment",
     "life science",

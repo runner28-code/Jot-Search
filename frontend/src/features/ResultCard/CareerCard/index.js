@@ -31,6 +31,7 @@ export default function CareerCard({ data, active }) {
     role
   };
 
+// Temp comment
   return (
     <div
       className='relative w-full'
@@ -54,6 +55,7 @@ export default function CareerCard({ data, active }) {
     </div>
   )
 }
+
 CareerCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,

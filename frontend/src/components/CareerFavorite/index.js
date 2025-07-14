@@ -5,7 +5,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CareerFavorite () {
