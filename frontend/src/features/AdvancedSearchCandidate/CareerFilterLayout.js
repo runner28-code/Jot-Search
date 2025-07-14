@@ -16,6 +16,7 @@ const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',
   'Years Experience'
+// Temp comment
 ]
 
 export default function CareerFilterLayout(props) {
@@ -32,7 +33,6 @@ export default function CareerFilterLayout(props) {
   } = props;
 
   const dropdownFilterObject = {};
-// Temp comment
   if( userType === 'candidate' ) {
     dropDownFiltersCandidate.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];

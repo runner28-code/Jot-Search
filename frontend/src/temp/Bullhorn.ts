@@ -191,3 +191,4 @@ export type Candidate = {
     degreeList?: string; // !
     description?: string; // !
     desiredLocations?: string;
+    disability?: string;

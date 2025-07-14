@@ -40,6 +40,7 @@ export default function Applications() {
     }
   }
 
+  function removeSelectedApplications() {
     const currentHiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
     const newHiddenApplications = [...currentHiddenApplications, ...selectedApplications];
     localStorage.setItem('hiddenApplications', JSON.stringify(newHiddenApplications));
@@ -70,7 +71,6 @@ export default function Applications() {
         <ResultContainer
           containerClass={ width >= 990 ? 'grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}
           results={appliedJobsObject.filteredJobs}
-          loading={appliedJobsObject.loading}
           type='job'
           compact={true}
           agoText={'Applied'}

@@ -87,7 +87,6 @@ const job_filter_exclude_keys = [
     "collector",
     "college",
     "compliance",
-// Temp comment
     "composition",
     "construction",
     "controller",
@@ -230,6 +229,7 @@ const job_filter_exclude_keys = [
     "liberal arts",
     "librarian",
     "library",
+// Temp comment
     "license",
     "life enrichment",
     "life science",
@@ -285,3 +285,4 @@ const job_filter_exclude_keys = [
     "penetration",
     "permit",
     "personal trainer",
+    "pet",

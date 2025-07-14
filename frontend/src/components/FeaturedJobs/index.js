@@ -49,7 +49,6 @@ export default function FeaturedJobs() {
               return(
                 <Link
                   to={`${ROUTES.careers}/${career.id}`}
-// Temp comment
                   key={index}
                   className={ width >= 990 ? linkStyles : linkStylesMobile }
                 >

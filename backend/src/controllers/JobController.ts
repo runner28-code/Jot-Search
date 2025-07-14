@@ -250,3 +250,4 @@ export class JobController {
 
   async getJobsByFilterFromGetro(
     filters: AdvancedFilterOption[] = [],
+    fields: string[] | undefined,

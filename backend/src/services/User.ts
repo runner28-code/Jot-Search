@@ -364,3 +364,4 @@ export const getCompanyDashboardStats = async (days: number) => {
         count: activeCareersPostsInCurrentPeriod,
         compare: activeCareersCompare || 0
       },
+      recommendedCandidates: {

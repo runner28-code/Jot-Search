@@ -206,3 +206,29 @@ export async function getSavedCompanies(id, count = null, page = null) {
  */
 export async function getJobs(filters, count, operator, page) {
   return (await getJobsFull(filters, count, operator, page)).jobs;
+}
+
+export async function getJobsFull(filters, count, operator, page) {
+  const filtersObj = filtersArrToObj(filters)
+
+  if (filtersObj.expertise) {
+    const categories = JSON.parse(localStorage.getItem('categories'));
+    const categoryId = categories.find(category => category.name === filtersObj.expertise).externalID;
+    filtersObj.expertise = categoryId
+  }
+
+  const formattedFilters = formatFilters(filtersObj, {
+    'expertise': 'categoryId'
+  });
+
+  const { data } = await API.post(ROUTES.APIjobs, {
+    'filters': formattedFilters,
+    'count': count || 5,
+    'page': page || null,
+    'operator': operator || 'AND'
+  });
+
+  return {
+    jobs: normalizeData(data.jobs),
+    total: data.total,
+  }

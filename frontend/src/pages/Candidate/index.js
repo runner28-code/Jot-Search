@@ -92,7 +92,6 @@ export default function Candidate() {
         headerText={headerText}
         IconComponent={CandidatesIcon}
         classOverride='h-18 w-18'
-// Temp comment
         containerClassOverride='pt-2'
         backButton
       />

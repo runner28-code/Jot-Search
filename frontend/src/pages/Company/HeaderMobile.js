@@ -70,7 +70,6 @@ HeaderContent.propTypes = {
     companyURL: PropTypes.string,
     industryList: PropTypes.array,
     address: PropTypes.string,
-// Temp comment
     employeeString: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,
@@ -88,7 +87,6 @@ export default function HeaderMobile({ companyData }) {
   )
 }
 
-HeaderMobile.propTypes = {
   companyData: PropTypes.object.isRequired,
   handleCompanyUpdate: PropTypes.func.isRequired
 }

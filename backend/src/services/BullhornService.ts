@@ -405,7 +405,6 @@ export class BullhornService {
         await this.getNewAccessToken();
         repeatErr++;
       }
-    }
   }
 
   makeListArray = (val: string | undefined) => {
@@ -572,3 +571,5 @@ export class BullhornService {
         } else if (res.status === 404) {
           return [];
         } else {
+          console.log(url);
+          throw "error";

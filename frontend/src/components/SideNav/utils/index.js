@@ -92,6 +92,7 @@ export const companyChoices = [
   choices.activeCareers,
   choices.logout
 ];
+// Temp comment
 export const coordinatorChoices = [
   choices.dashboard,
   choices.candidates,

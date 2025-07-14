@@ -65,6 +65,7 @@ export const roles = {
     'Sales & BizDev',
     'Sales Leaderships & Management'
   ],
+// Temp comment
 };
 
 export const skills = [
@@ -160,6 +161,7 @@ export const skills = [
   'Cyber Security',
   'Data Analytics',
   'Data and Analytics',
+  'Data Management',
   'Data Modeling',
   'Data Transformation',
   'Data Visualization',
@@ -229,3 +231,4 @@ export const skills = [
   'Hydraulics',
   'Hyper-V',
   'Implementation',
+  'Inbound Calls',

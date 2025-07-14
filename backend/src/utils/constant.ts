@@ -244,6 +244,7 @@ const job_filter_exclude_keys = [
   "massage",
   "material",
   "math",
+  "mechanic",
   "medical",
   "medication",
   "membership",
@@ -284,3 +285,4 @@ const job_filter_exclude_keys = [
   "pet",
   "pharmacy",
   "phlebotomist",
+  "phone representative",
