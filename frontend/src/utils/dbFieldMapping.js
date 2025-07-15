@@ -43,3 +43,4 @@ export const experienceMap = {
   '3': '2-4',
   '4': '5-10',
   '5': '11+'
+}

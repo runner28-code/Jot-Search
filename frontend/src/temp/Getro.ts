@@ -31,6 +31,7 @@ export type Job = {
     application_method?: string;
     application_path?: string;
     compensation_currency?: string;
+    compensation_max?: string;
     compensation_min?: string;
     compensation_period?: string;
     compensation_public?: string;
@@ -45,3 +46,4 @@ export type Job = {
     organization_id?: string;
     organization_logo_url?: string;
     organization_name?: string;
+    organization_slug?: string;

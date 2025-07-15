@@ -192,3 +192,5 @@ export type Candidate = {
     description?: string; // !
     desiredLocations?: string;
     disability?: string;
+    educationDegree?: string;
+    email?: string; // !

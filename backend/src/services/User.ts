@@ -152,7 +152,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
         updatedUser: user,
         existingUser: existing,
       });
-    } catch (err) {
       console.log("could not add user history:", user);
       console.log(err);
     }
@@ -365,3 +364,8 @@ export const getCompanyDashboardStats = async (days: number) => {
         compare: activeCareersCompare || 0
       },
       recommendedCandidates: {
+        count: companyCandidateInvitesCurrentPeriod,
+        compare: companyCandidateInvitesCompare || 0
+      },
+      introductionsRequests: {
+        count: 0,

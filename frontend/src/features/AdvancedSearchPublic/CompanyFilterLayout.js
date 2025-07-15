@@ -8,7 +8,6 @@ export default function CompanyFilterLayout(props) {
     setSearchTerm,
     handleSearchClick,
     clearFilters,
-  } = props;
   const { width } = useWindowDimensions();
   return (
     <div className='flex flex-col gap-xxl-4'>
@@ -16,7 +15,6 @@ export default function CompanyFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-// Temp comment
           handleSearchClick={handleSearchClick}
           placeholder='Search Companies'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}

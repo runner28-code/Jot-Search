@@ -85,6 +85,7 @@ export default function MobileLayout(props) {
               <img
                 src={salaryIcon}
                 className='h-11 mr-5' />
+// Temp comment
               <p className='text-textBlack text-xs'>{salaryString}</p>
             </div>
           </div>

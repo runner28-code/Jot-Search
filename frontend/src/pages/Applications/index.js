@@ -46,6 +46,7 @@ export default function Applications() {
     localStorage.setItem('hiddenApplications', JSON.stringify(newHiddenApplications));
     setSelectedApplications([]);
     setAppliedJobsObject({
+      ...appliedJobsObject,
       filteredJobs: appliedJobsObject.jobs.filter(job => !newHiddenApplications.includes(job.id))
     });
   }

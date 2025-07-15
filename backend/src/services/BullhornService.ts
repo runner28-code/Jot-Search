@@ -574,3 +574,9 @@ export class BullhornService {
         } else {
           console.log(url);
           throw "error";
+        }
+      } catch (error: any) {
+        console.log(error.message, "\nrepeatNumber =", repeatErr);
+        await this.getNewAccessToken();
+        repeatErr++;
+      }

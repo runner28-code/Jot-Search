@@ -8,6 +8,7 @@ const dropdownFilters = [
   'On-Site/Remote',
   'Years Experience',
   'Status',
+// Temp comment
 ];
 
 const dropDownFiltersCandidate = [
@@ -59,6 +60,7 @@ export default function CareerFilterLayout(props) {
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}
         >
+          Clear All
         </button>
       </div>
     </div>

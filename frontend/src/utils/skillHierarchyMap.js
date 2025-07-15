@@ -193,7 +193,6 @@ export const skills = [
   'ERP',
   'Event Planning',
   'Excel',
-  'Executive Administration',
   'Facilitation',
   'Figma',
   'Financial Analysis',
@@ -231,3 +230,5 @@ export const skills = [
   'Hyper-V',
   'Implementation',
   'Inbound Calls',
+  'InDesign',
+  'Infrastructure',

@@ -60,3 +60,4 @@ CREATE TABLE "Company" (
     "twitterHandle" TEXT,
     "workWeekStart" INTEGER,
     "_score" DOUBLE PRECISION,
+    "customDate1" TIMESTAMP(3),

@@ -8,6 +8,7 @@ import { BigQueryService } from "../services/BigQueryService";
 import { DATASET_MAIN, Tables } from "../types/Common";
 
 (async () => {
+    try {
         console.log('/// START ENCRYPT ALL PASSWORDS');
 
         const query = `
@@ -27,3 +28,4 @@ import { DATASET_MAIN, Tables } from "../types/Common";
               console.log(`user ${user.email} password is empty. Skipped.`);
               continue
             }
+            if(user.password.length < 152) {

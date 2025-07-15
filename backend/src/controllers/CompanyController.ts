@@ -105,7 +105,6 @@ export class CompanyController {
   }
 
   @Authorized()
-  @Put()
   async insert(
     @Body() body: Company,
     @CurrentUser() authUser: User
@@ -212,3 +211,6 @@ export class CompanyController {
   async searchByFilter(@Body() body: FilterBody) {
     try {
       const { page, count, filters } = body;
+
+      const wheres = normalizeFilters(filters)
+

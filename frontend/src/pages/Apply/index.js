@@ -34,6 +34,7 @@ const renderError = (error) => {
 }
 
 export default function Apply() {
+  const params = useParams();
   const jobId = params?.id
   const navigate = useNavigate();
   const isLoggedIn = AuthService.loggedIn();
@@ -76,7 +77,6 @@ export default function Apply() {
       candidateData.veteran = veteranStatusMap[candidateData.veteran || 'U']; // 'U' is default ("Prefer not to say")
       // If resume exists, select "Use Existing Resume" checkbox by default
       if ( candidateData.resume ) {
-        setUseExistingResume(true);
       }
       // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {

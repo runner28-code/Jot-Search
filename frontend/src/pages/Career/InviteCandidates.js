@@ -12,7 +12,6 @@ export default function InviteCandidates({ job }) {
   const { candidates, isLoading } = useGetCandidates({
     filtersArr: job.skillList?.map(skill => ({
       key: 'primarySkills',
-      value: skill
     })),
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
@@ -24,7 +23,6 @@ export default function InviteCandidates({ job }) {
     return {
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
       value: candidate.id,
-// Temp comment
       candidate
     }
   }) || [];

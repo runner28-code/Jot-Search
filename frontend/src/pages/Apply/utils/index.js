@@ -38,7 +38,6 @@ export const defaultState = {
   workAuthorized: '',
   disability: '',
   veteran: '',
-  loading: true
 }
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {

@@ -62,7 +62,6 @@ export default function FeaturedJobs() {
                 </Link>
               )
             })
-        }
       </div>
       <div className={ width >= 990 ? viewAllStyles : viewAllStylesMobile }>
         <Link
@@ -76,7 +75,6 @@ export default function FeaturedJobs() {
 }
 
 function renderColorShapes() {
-// Temp comment
   return(
     <div className='relative w-24 mb-8'>
       <div className='bg-indigoSquare w-12 h-12' />

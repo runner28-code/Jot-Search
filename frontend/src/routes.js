@@ -1,10 +1,10 @@
 /* INTERNAL ROUTES */
+// Temp comment
 export const root = '/';
 export const landingPage = '/landing-page';
 export const blog = '/blog';
 export const about = '/about';
 export const login = '/login';
-// Temp comment
 export const logout = '/logout';
 export const profile = '/profile';
 export const apply = '/apply';
@@ -56,3 +56,4 @@ export const search = '/search';
 export const APIlogin = '/login';
 export const APIregister = '/register';
 export const APIregisterCoordinator = '/register_coordinator';
+export const APIaddUser = '/add-user';

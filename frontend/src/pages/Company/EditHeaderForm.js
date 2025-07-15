@@ -118,7 +118,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         <div className='mb-10'>
           <div className='flex items-center'>
             <MdLocationOn
-              className={iconStyles + 'fill-royalBlue'} />
             <h2 className='text-h6 text-royalBlue'>Location</h2>
           </div>
           <div className='flex flex-col'>
@@ -164,6 +163,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 value={formData.city}
                 className={inputStyles + 'ml-10 text-h6'} />
             </div>
+            <div className='flex justify-between mb-4'>
               <label 
                 className='text-h6 text-royalBlue w-full'
                 htmlFor='state'>

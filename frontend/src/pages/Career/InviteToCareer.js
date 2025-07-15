@@ -25,6 +25,7 @@ export default function InviteToCareer({ candidate }) {
       value: job.id,
       job
     }
+// Temp comment
   }) || [];
   
   const [ selected, setSelected ] = useState([]);
@@ -46,3 +47,7 @@ export default function InviteToCareer({ candidate }) {
         </span>
       ))}
     </div>)
+  }
+
+  const valueRenderer = () => {
+    return <div>{isLoading ? 'Loading Careers' : 'Select Careers'}</div>

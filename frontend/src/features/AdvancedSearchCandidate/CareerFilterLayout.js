@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
@@ -48,7 +47,6 @@ export default function CareerFilterLayout(props) {
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap'>
         <FilterSearch
-// Temp comment
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}

@@ -1,5 +1,4 @@
 import { Datasource } from "@prisma/client";
-import db from "../src/utils/db";
 
 async function main() {
   try {
@@ -125,3 +124,5 @@ async function seedCategories() {
       },
       {
         name: "Sales & Biz Dev",
+        enabled: true,
+        externalID: 2000043,

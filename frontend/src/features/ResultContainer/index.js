@@ -11,12 +11,12 @@ import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 export default function ResultContainer(props) {
   const {
     results,
+    loading,
     type,
     limit,
     header, 
     active,
     compact = false,
-    isFavoriteOverride = null,
     agoText = null,
     containerClass = undefined,
     selectableProps = null,

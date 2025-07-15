@@ -188,3 +188,26 @@ export const saveClientContacts = async (contacts: any[]) => {
   } catch (error: any) {
     console.log(error.message);
     return { result: false, error };
+  }
+};
+
+export const saveCandidates = async (candidates: any[]) => {
+  const expludeFields = ["address", "_score"];
+  try {
+    for (const candidate of candidates) {
+      try {
+        console.log(`\n\nSavng Candidate with ID = ${candidate.id}`);
+        const parsedUser = parseBullhornCandidateToUser(candidate) as any;
+        if (parsedUser) {
+          // await migrateUserInTPP(parsedUser);
+        }
+
+        const existing = await db.candidate.findFirst({
+          where: {
+            externalId: candidate.id,
+          },
+        });
+
+        if (existing) {
+          console.log(`Candidate with ID: ${candidate.id} exists`);
+          continue;

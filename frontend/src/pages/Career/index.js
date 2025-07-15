@@ -22,7 +22,6 @@ export default function CareerPage() {
   const activeData = location.state;
 
   const isMobile = width < 768;
-  const role = AuthService.getUserRole();
   /* STATE */
   const { id } = useParams();
   const [careerData, setCareerData] = useState({});
@@ -36,6 +35,7 @@ export default function CareerPage() {
     setCareerData({ ...career });
   }, []);
 
+  if ( !careerData.id ) { return <LoadingSpinner /> }
 
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';
   const addressString = buildCareerAddress(careerData.city, careerData.state);

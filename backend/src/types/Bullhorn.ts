@@ -192,3 +192,5 @@ export type Candidate = {
     dateLastModified?: string;
     dateNextCall?: string;
     dateOfBirth?: string;
+    dayRate?: string;
+    dayRateLow?: string;

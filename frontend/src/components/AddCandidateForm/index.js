@@ -92,6 +92,7 @@ export default function RegistrationForm() {
   }, [submissionObject.loading]);
 
   useEffect(async () => { // Clear state after a couple seconds
+// Temp comment
     if ( submissionObject.success ) {
       setTimeout(() => {
         setFormObj(defaultState);
@@ -213,6 +214,7 @@ export default function RegistrationForm() {
             type='single-select'
             name='experience'
             placeholder='Years of Experience' 
+            value={formObj.experience}
             onChange={handleChange}
             choiceObject={experienceMap}
             error={errors.includes('experience')}

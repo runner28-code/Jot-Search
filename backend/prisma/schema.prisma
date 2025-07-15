@@ -441,3 +441,8 @@ model Job {
 
   categoryId Int?
   category   Category? @relation("jobCategory", fields: [categoryId], references: [externalID])
+
+  userSaved User[] @relation("userSavedJobs")
+
+  getroJobInfoId String?
+  getroJobInfo   GetroJobInfo? @relation("getroJobInfo", fields: [getroJobInfoId], references: [id])
