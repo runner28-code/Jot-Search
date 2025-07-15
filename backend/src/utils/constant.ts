@@ -198,6 +198,7 @@ const job_filter_exclude_keys = [
   "internal controls",
   "internship",
   "intervention",
+  "inventory",
   "investigator",
   "jailer",
   "janitor",

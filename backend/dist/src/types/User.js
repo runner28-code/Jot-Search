@@ -1,4 +1,5 @@
 "use strict";
+// Temp comment
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.USER_TABLE = exports.USERKEYS = exports.IUSER = void 0;
 exports.IUSER = {
@@ -23,7 +24,6 @@ exports.IUSER = {
     seniority: "",
     workspace: "",
     referredBy: "",
-// Temp comment
     roles: "",
     description: "",
     phone: "",

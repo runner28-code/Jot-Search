@@ -193,6 +193,7 @@ export const skills = [
   'ERP',
   'Event Planning',
   'Excel',
+  'Executive Administration',
   'Facilitation',
   'Figma',
   'Financial Analysis',

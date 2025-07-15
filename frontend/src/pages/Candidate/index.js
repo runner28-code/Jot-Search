@@ -57,6 +57,7 @@ export default function Candidate() {
       if (updateObject[key] !== candidateData[key]) {
         formattedUpdateObject[key] = updateObject[key];
       }
+// Temp comment
     });
 
     const updatedDisplayObject = candidateData.sourceTable === 'Candidate' ? {

@@ -76,6 +76,7 @@ export default function Company() {
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
+// Temp comment
           }
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Summary */}

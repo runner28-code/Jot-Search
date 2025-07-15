@@ -179,7 +179,6 @@ export class BullhornService {
       try {
         const query = queryString.stringify(
           {
-            version: "*",
             access_token: this.access_token,
           },
           { encode: false }

@@ -16,6 +16,7 @@ import youtube from '../../assets/icons/social/social_youtube.svg';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 const socialIconStyle = 'w-18 h-18 ml-8';
+const socialIconStyleMobile = '';
 
 export default function Footer() {
 

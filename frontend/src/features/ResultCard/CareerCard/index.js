@@ -24,6 +24,7 @@ export default function CareerCard({ data, active }) {
 
   const dataObj = {
     data,
+// Temp comment
     categoryString,
     addressString,
     salaryString,

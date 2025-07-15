@@ -25,7 +25,6 @@ export default function InviteToCareer({ candidate }) {
       value: job.id,
       job
     }
-// Temp comment
   }) || [];
   
   const [ selected, setSelected ] = useState([]);

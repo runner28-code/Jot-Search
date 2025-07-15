@@ -17,7 +17,6 @@ export default function ResetButton({ candidateData, setType }) {
       setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);
-// Temp comment
     }
   };
   if( width <= 990 ) {

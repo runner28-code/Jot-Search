@@ -69,7 +69,6 @@ export default function AccountRecovery() {
             name='email'
             label='Login Email'
           />
-// Temp comment
           <div className='flex justify-between items-center vw-640:items-end mb-22'>
             <button
               className='h-20 bg-royalBlue text-center text-white text-md tracking-wide px-12 rounded-lg'
@@ -88,7 +87,6 @@ export default function AccountRecovery() {
           className='text-sm vw-640:text-ml text-royalBlue underline'
         >
           help@intulsa.com
-        </a>
       </div>
     </section>
   )

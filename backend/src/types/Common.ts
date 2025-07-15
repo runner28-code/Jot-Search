@@ -50,7 +50,6 @@ export type AdvancedFilterOption = {
   operator?: Operator;
 };
 
-export type FilterBody = {
   filters?: any;
   fields: any;
   page: number;

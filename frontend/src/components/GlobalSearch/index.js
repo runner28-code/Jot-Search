@@ -43,7 +43,6 @@ export default function GlobalSearch({ placeholder }) {
       return setResults({
         jobs: [],
         companies: [],
-        candidates: []
       });
     }
 

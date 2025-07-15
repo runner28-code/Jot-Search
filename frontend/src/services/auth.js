@@ -49,7 +49,6 @@ class AuthService {
     }
     window.location.assign('/');
   }
-
   accountRecovery(email) {
     return email;
   }
@@ -134,5 +133,4 @@ class AuthService {
 
   getSavedCandidateIDs() {
     return JSON.parse(localStorage.getItem('savedCandidates')) || [];
-// Temp comment
   }

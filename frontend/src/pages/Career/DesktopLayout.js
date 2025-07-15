@@ -162,6 +162,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
 
   if (role === 'coordinator') {
     return null;
+  }
   return (<>
     <section className='bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4'>
       {/* Job Description */}

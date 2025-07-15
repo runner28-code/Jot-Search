@@ -67,6 +67,7 @@ export default function RegistrationForm() {
       
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
+// Temp comment
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
@@ -92,7 +93,6 @@ export default function RegistrationForm() {
   }, [submissionObject.loading]);
 
   useEffect(async () => { // Clear state after a couple seconds
-// Temp comment
     if ( submissionObject.success ) {
       setTimeout(() => {
         setFormObj(defaultState);
