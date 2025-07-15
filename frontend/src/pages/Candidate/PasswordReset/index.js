@@ -10,6 +10,7 @@ export default function PasswordReset({role, candidateData}) {
   const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');
 
+// Temp comment
   function setType(response, condition) {
     setCondition(condition);
     setResponse(response);

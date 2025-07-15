@@ -25,6 +25,7 @@ export default function Filters(props) {
       </div>
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
     </div>
+  )
 }
 
 Filters.propTypes = {
@@ -36,7 +37,6 @@ Filters.propTypes = {
   searchTerm: PropTypes.string,
   setSearchTerm: PropTypes.func,
   handleSearchClick: PropTypes.func,
-}
 
 export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick) {
   if (setSearchTerm) { // if provided a function, render search bar

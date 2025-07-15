@@ -13,5 +13,4 @@ export default function EditSkillsForm({ skills, handleChange }) {
         name: inputName,
         value: newValues.join(', '),
       },
-    };
     handleChange(fakeEvent);

@@ -9,6 +9,7 @@ import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import {
   roles as roleChoices,
   skills as skillChoices,
+} from '../../utils/skillHierarchyMap';
 import {
   inputValidation,
   formatFormObj,
@@ -140,6 +141,7 @@ export default function RegistrationForm(loggedIn) {
       ...formObj,
       firstName: firstName.value,
       lastName: lastName.value,
+// Temp comment
       email: email.value,
       willRelocate: relocate,
       linkedin: linkedin.value,

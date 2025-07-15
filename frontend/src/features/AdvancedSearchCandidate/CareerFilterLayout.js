@@ -41,6 +41,7 @@ export default function CareerFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
   }
+
   const buttonStyles = 'text-white text-sm whitespace-nowrap';
   const buttonStylesCareer = 'text-white text-sm whitespace-nowrap';
   return (

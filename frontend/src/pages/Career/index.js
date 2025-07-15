@@ -22,6 +22,7 @@ export default function CareerPage() {
   const activeData = location.state;
 
   const isMobile = width < 768;
+  const role = AuthService.getUserRole();
   /* STATE */
   const { id } = useParams();
   const [careerData, setCareerData] = useState({});
@@ -42,7 +43,6 @@ export default function CareerPage() {
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
   const postingAge = calculatePostingAge(careerData.createdAt);
   const data = {
-    careerData,
     categoryString,
     addressString,
     salaryString,

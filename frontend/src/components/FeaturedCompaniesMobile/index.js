@@ -35,7 +35,6 @@ export default function FeaturedCompaniesMobile() {
               </Link>
             )
         }
-      </div>
       <div className='text-center mt-24'>
         <Link
           to={ROUTES.companies}

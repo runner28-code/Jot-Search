@@ -162,6 +162,7 @@ export async function getClientContacts(filterValue, filterKey, count) {
       [filterKey || 'clientCorporation']: filterValue || '',
     },
     'count': count
+  });
   return normalizeData(data.clientContacts)
 }
 

@@ -22,6 +22,7 @@ export default function FormInput(props) {
     onChange,
     choices,
     choiceObject,
+// Temp comment
     error,
     disabled
   } = props;
@@ -32,6 +33,7 @@ export default function FormInput(props) {
 
   const stylesObject = {
     baseStyles: componentStyles,
+    inputHeight: inputHeight,
     inputWidth: 'w-full',
     listStyles: dropdownStyles,
     listItemStyles: dropdownItemStyles

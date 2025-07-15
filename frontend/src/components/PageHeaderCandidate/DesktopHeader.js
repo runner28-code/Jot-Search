@@ -32,7 +32,6 @@ export default function DesktopHeader(props) {
           />
         )}
         { IconComponent && (
-// Temp comment
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />
         )}
         <h1 className='font-spaceGrotesk font-medium text-h2 text-royalBlue'>

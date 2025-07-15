@@ -35,6 +35,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
 
   function handleFilterChange(name, value) {
     setFilterState({
+// Temp comment
       ...filterState,
       [name]: value,
     });
@@ -51,6 +52,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
       <div className={containerStyles}>
         <LoadingSpinner color='#FDFDFD' />
       </div>
+    );
   }
   return (
     <div className={containerStyles}>

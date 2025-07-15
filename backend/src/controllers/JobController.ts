@@ -233,7 +233,6 @@ export class JobController {
     const table = Tables.JOBS;
 
     const _join = `
-      LEFT JOIN \`${DATASET_MAIN}.${Tables.JOINED_COMPANIES}\` as ${companyAlias} 
       ON REPLACE(${alias}.companyId, "bh-", "bl-")  = ${companyAlias}.bh_id
       `;
 
