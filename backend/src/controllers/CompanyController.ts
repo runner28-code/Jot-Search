@@ -3,6 +3,7 @@ import {
   Get,
   Post,
   Put,
+  QueryParam,
   JsonController,
   Authorized,
   CurrentUser,

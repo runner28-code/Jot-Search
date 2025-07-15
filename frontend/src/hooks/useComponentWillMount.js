@@ -1,8 +1,8 @@
 import { useRef } from 'react';
 
 const useComponentWillMount = (cb) => {
-  const willMount = useRef(true)
 // Temp comment
+  const willMount = useRef(true)
 
   if (willMount.current) cb()
 

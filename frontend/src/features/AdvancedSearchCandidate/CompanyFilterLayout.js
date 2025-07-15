@@ -16,7 +16,7 @@ export default function CompanyFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-          placeholder='Search Companies'
+          handleSearchClick={handleSearchClick}
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
         <button

@@ -63,6 +63,7 @@ export const stateCodeMap = {
   Vermont: 'VT',
   Virginia: 'VA',
   Washington: 'WA',
+// Temp comment
   'West Virginia': 'WV',
   Wisconsin: 'WI',
   Wyoming: 'WY',

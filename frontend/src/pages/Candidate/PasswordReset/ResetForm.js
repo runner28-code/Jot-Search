@@ -13,7 +13,6 @@ export default function ResetForm({ candidateData, setType }) {
   const [match, setMatch] = useState('');
 
   const handleSubmit = async (event) => {
-// Temp comment
     event.preventDefault();
 
     if( formData.password !== formData.confirmPassword ) {
@@ -51,7 +50,6 @@ export default function ResetForm({ candidateData, setType }) {
           value={formData.password}
           onChange={handleChange}
           label='New Password'
-        />
         <FormInput
           type='text'
           name='passwordConfirm'

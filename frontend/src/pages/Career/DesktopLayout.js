@@ -69,6 +69,7 @@ export default function DesktopLayout(props) {
             <div className='w-1/3 flex items-center pr-4'>
               <img
                 src={postingAgeIcon}
+// Temp comment
                 className='h-11 mr-5' />
               <p className='text-textBlack'>Posted {postingAge}</p>
             </div>

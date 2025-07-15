@@ -24,7 +24,6 @@ export default function CompanyFilterLayout(props) {
           onClick={clearFilters}
         >
           Clear All
-        </button>
       </div>
     </div>
   );

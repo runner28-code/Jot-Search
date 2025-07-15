@@ -18,7 +18,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   });
 
   const handleInputChange = async (event) => {
-// Temp comment
     const { name, value } = event.target;
     if ( name === 'avatar' ) {
       const imageToUpload = event.target.files[0];
@@ -165,7 +164,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
                 value={formData.city}
                 className={inputStyles + 'ml-10 text-h6'} />
             </div>
-            <div className='flex justify-between mb-4'>
               <label 
                 className='text-h6 text-royalBlue w-full'
                 htmlFor='state'>

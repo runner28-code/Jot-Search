@@ -14,6 +14,7 @@ export const saveApplication = async (job: string, candidate: string) => {
       const app = await db.application.create({
         data: {
           user: {
+            connect: {
               id: candidate,
             },
           },
@@ -51,7 +52,6 @@ export const saveJob = async (job: string, candidate: string) => {
         savedJobs: true,
       },
       where: {
-        AND: {
           id: candidate,
           savedJobs: {
             some: {

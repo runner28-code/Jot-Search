@@ -4,7 +4,6 @@ import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
 const dropdownFiltersCoord = [
-// Temp comment
   'Category',
   'Experience',
   'Remote Availability',
@@ -64,7 +63,6 @@ export default function CandidateFilterLayout(props) {
       <div className='flex flex-wrap gap-xxl-4'>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
       </div>
-      <div className='flex flex-wrap gap-xxl-4'>
         { renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange) }
       </div>
       <div className='flex justify-between items-center gap-[65px]'>

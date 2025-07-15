@@ -7,6 +7,7 @@ import AuthService from '../../services/auth';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
+// Temp comment
 export default function DashboardMinified({ location }) {
   const loggedIn = AuthService.loggedIn();
 
@@ -24,6 +25,7 @@ export default function DashboardMinified({ location }) {
   return (
     <div className='flex items-start flex-col bg-gradient-to-t from-sky-700 via-sky-700 to-sky-500 mb-8 text-white py-4 px-10'>
       <LinkSwap
+        location={location}
         loggedIn={loggedIn}
       />
     </div>

@@ -5,14 +5,12 @@ import CareerCard from '../ResultCard/CareerCard';
 import CompanyCard from '../ResultCard/CompanyCard';
 import ViewAllLink from '../../components/ViewAllLink';
 import { pluralizedTypes } from '../../utils/constants';
-// Temp comment
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 
 export default function ResultContainer(props) {
   const {
     results,
-    loading,
     type,
     limit,
     header, 

@@ -9,6 +9,7 @@ import clockIcon from '../../../assets/icons/clock.svg';
 import salaryIcon from '../../../assets/icons/salary.svg';
 import featuredIcon from '../../../assets/icons/pyramid.svg';
 import locationIcon from '../../../assets/icons/placepin.svg';
+import { buildCareerAddress, buildSalaryString, calculatePostingAge } from '../../../utils/formatFunctions';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 import AuthService from '../../../services/auth';
 

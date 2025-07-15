@@ -113,7 +113,6 @@ const job_filter_exclude_keys = [
     "dietary",
     "dietician",
     "dinner",
-// Temp comment
     "dishwasher",
     "dispatcher",
     "distribution assistant",
@@ -146,6 +145,7 @@ const job_filter_exclude_keys = [
     "ethernet",
     "event",
     "exercise",
+// Temp comment
     "externship",
     "fabricator",
     "faculty",
