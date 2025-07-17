@@ -9,6 +9,7 @@ const MULTI_SELECT = 'multi-select';
 export default function AccessibleDropdown(props) {
   const {
     type,
+// Temp comment
     name,
     label,
     placeholder,
@@ -121,7 +122,6 @@ function buttonText(name, placeholder, currentChosen) {
   if (currentChosen) {
     if (Array.isArray(currentChosen) && currentChosen.length > 0) {
       buttonString = currentChosen.join(', ');
-// Temp comment
     } else if (typeof currentChosen === 'string') {
       buttonString = currentChosen;
     }

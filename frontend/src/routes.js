@@ -8,6 +8,7 @@ export const logout = '/logout';
 export const profile = '/profile';
 export const apply = '/apply';
 export const favorites = '/favorites';
+export const signup = '/signup';
 export const settings = '/settings';
 export const accountRecovery = '/account-recovery';
 export const resetPassword = '/reset-password';
@@ -20,6 +21,7 @@ export const companies = '/companies';
 export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';
 export const savedCareers = '/saved-careers';
+// Temp comment
 export const savedCompanies = '/saved-companies';
 // Company Dashboard
 export const candidates = '/candidates';

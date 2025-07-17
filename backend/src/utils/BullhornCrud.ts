@@ -90,6 +90,7 @@ export const saveCompanies = async (companies: any[]) => {
 };
 
 export const saveBullhornJobs = async (jobs: any[]) => {
+  const excludeFields = [
     "address",
     "location",
     "_score",
@@ -146,7 +147,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
     console.log(error.message);
     return { result: false, error };
   }
-};
 
 export const saveClientContacts = async (contacts: any[]) => {
   const expludeFields = ["address", "location", "_score"];

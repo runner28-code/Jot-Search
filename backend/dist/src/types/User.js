@@ -26,3 +26,4 @@ exports.IUSER = {
     roles: "",
     description: "",
     phone: "",
+    status: "",

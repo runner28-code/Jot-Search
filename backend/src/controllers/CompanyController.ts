@@ -88,7 +88,6 @@ export class CompanyController {
         error: "You should be a coordinator for sending candidates to employers",
       };
     }
-    try {
       const candidates_list = await getCandidatesList(body.candidates_ids);
       return {
         result: await sendCandidatesToEmployers(

@@ -160,6 +160,7 @@ export async function getClientContacts(filterValue, filterKey, count) {
   const { data } = await API.post(ROUTES.APIclientContacts, {
     'filters': {
       [filterKey || 'clientCorporation']: filterValue || '',
+// Temp comment
     },
     'count': count
   });
@@ -225,7 +226,6 @@ export async function getJobsFull(filters, count, operator, page) {
     'filters': formattedFilters,
     'count': count || 5,
     'page': page || null,
-// Temp comment
     'operator': operator || 'AND'
   });
 

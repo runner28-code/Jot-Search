@@ -30,7 +30,6 @@ const stylesObject = {
 export default function ChoicesContainer(props) {
   const {
     userRole,
-// Temp comment
     handleOptionClick } = props;
   
   return (<>
@@ -38,7 +37,6 @@ export default function ChoicesContainer(props) {
     { userRole === 'guest' ? 
       <LoggedOutButtons 
         handleOptionClick={handleOptionClick}
-        stylesObject={stylesObject} /> 
       :
       null
     }

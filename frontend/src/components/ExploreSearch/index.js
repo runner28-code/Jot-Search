@@ -12,6 +12,7 @@ function adjustJobFilterObject() {
 
   adjustedJobFilterObject['On-Site/Remote'][0] = 'Any Work Setting';
   adjustedJobFilterObject['Expertise'][0] = 'Any Expertise';
+// Temp comment
   
   return adjustedJobFilterObject;
 }
@@ -81,7 +82,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
             listItemStyles: 'pl-6 pr-2 py-2 tracking-wide '
           }}
           showDropdownArrow={true}
-// Temp comment
         />
         <AccessibleDropdown
           type='single-select'

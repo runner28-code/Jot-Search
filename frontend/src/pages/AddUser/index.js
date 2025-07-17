@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import { Navigate } from 'react-router-dom';
 import Dropdown from '../../components/UniversalDropdown';
 import AuthService from '../../services/auth';
@@ -20,6 +19,7 @@ export default function AddUser() {
     setFormType(e.target.value);
   }
 
+// Temp comment
   const defaultContainer = 'bg-white border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12';
   const companyContainer = '';
 

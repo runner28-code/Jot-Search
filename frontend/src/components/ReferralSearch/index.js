@@ -31,6 +31,7 @@ const mockJobsData = [
     location: 'Remote',
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
+  },
 ];
 
 function renderChosen(currentChosen, handleRemove) {
@@ -67,6 +68,7 @@ export default function ReferralSearch() {
     setFilteredChoices([ ...filteredChoices, choices.find(job => job.id === jobId) ]);
   }
 
+// Temp comment
   // set up initial choices
   useEffect(() => {
     // TODO: Implement API

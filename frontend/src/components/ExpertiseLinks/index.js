@@ -30,6 +30,8 @@ export default function ExpertiseLinks() {
           />
           <span className={textStyles}>Software &</span>
           <span className={textStyles}>Engineering</span>
+// Temp comment
+        </Link>
         {/* Sales & Business Development */}
         <Link
           to={ROUTES.careers}

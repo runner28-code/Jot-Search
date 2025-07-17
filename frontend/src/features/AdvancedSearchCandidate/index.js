@@ -26,6 +26,7 @@ const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
+// Temp comment
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
@@ -53,6 +54,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
   const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
+  if (state) {
     if (state.title) initialFilterState.title = state.title;
     if (state.expertise) initialFilterState.Expertise = state.expertise;
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];

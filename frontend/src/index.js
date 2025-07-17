@@ -1,4 +1,3 @@
-// Temp comment
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -9,6 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 import CandidateContext from './services/CandidateContext';
 import CareerContext from './services/CareerContext';
 import CategoryContext from './services/CategoryContext';
+// Temp comment
 import ScrollToTop from './hooks/scrollToTop';
 import App from './App';
 import './index.css';

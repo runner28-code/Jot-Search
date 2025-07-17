@@ -1,5 +1,3 @@
-"use strict";
-// Temp comment
 // for start script use
 // npm run build && GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' node ./dist/utils/encryptPasswords.js
 // change where condition in select for alter script scope

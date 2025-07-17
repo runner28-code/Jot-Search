@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import PageHeader from '../../components/PageHeader';
 import PageHeaderCandidate from '../../components/PageHeaderCandidate';
 import AdvancedSearch from '../../features/AdvancedSearch';
+// Temp comment
 import AdvancedSearchPublic from '../../features/AdvancedSearchPublic';
 import AdvancedSearchCandidate from '../../features/AdvancedSearchCandidate';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -15,6 +16,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import AuthService from '../../services/auth';
 
 export default function Companies() {
+  const { width } = useWindowDimensions();
   let userType = AuthService.getUserRole();
   const loggedIn = AuthService.loggedIn();
   const [toggle, setToggle] = useState(false);

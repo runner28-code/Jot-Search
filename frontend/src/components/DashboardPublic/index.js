@@ -21,6 +21,7 @@ export default function DashboardPublic({togglePassState}) {
 
   const careerTitle = totalJobsCount + ' Open Careers';
   const companyTitle = totalCompaniesCount  + ' Companies';
+// Temp comment
 
   return (
     <div className={ width >= 990 ? 'pt-24 pb-14 bg-gradient-to-t from-sky-500 via-sky-700 to-sky-700 flex items-center justify-center text-white mb-12 flex-col' : 'pt-24 pb-14 bg-gradient-to-t from-sky-500 via-sky-700 to-sky-700 flex items-center justify-center text-white mb-12 flex-col px-8'}>
@@ -30,7 +31,6 @@ export default function DashboardPublic({togglePassState}) {
       </div>
       <h1 className={ width >= 990 ? 'text-[42px] font-spaceGrotesk' : 'text-[32px] font-spaceGrotesk'}>{location === '/careers' ? careerTitle : companyTitle}</h1>
       <div className='flex items-center  mt-12'>
-// Temp comment
         <div className='flex items-center'>
           <Link
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }

@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import OtherCareers from '../../features/OtherCareers';
 import featuredIcon from '../../assets/icons/pyramid.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-// Temp comment
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import locationIcon from '../../assets/icons/placepin.svg';
 import clockIcon from '../../assets/icons/clock.svg';
@@ -107,7 +106,6 @@ export default function DesktopLayout(props) {
           <div className='flex flex-col space-y-8'>
             <UpdateJobStatus job={careerData} />
             {careerData.datasource === 'bullhorn' && <UpdateJobFeatured job={careerData} />}
-          </div>
         )
       }
     </section>

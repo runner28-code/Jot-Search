@@ -1,5 +1,4 @@
 import db from "../utils/db";
-
 export const saveCandidate = async (
   candidateId: string,
   companyUserId: string
@@ -57,3 +56,4 @@ export const saveCandidate = async (
 
 export const getSavedCandidates = async (companyUserId: string) => {
   try {
+    const user = await db.user.findFirst({

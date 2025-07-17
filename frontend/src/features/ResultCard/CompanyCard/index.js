@@ -56,6 +56,7 @@ export default function CompanyCard({ data }) {
                 src={locationIcon}
                 className='h-8 mr-6 ml-1' />
               <p className='text-textBlack'>{addressString}</p>
+// Temp comment
             </div>
             <OpenCareers companyId={data.id} />
             {/* Number of Employees */}
@@ -86,7 +87,6 @@ export default function CompanyCard({ data }) {
               <a
                 href='#'
                 className='text-royalBlue underline'
-// Temp comment
               >
                 Company Website
               </a>

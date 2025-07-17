@@ -108,6 +108,7 @@ export default function Company() {
         <RenderInvite
           loggedIn={loggedIn}
           companyData={companyData}
+// Temp comment
         />
       </div>
     </div>
@@ -134,6 +135,7 @@ RenderHeader.propTypes = {
 
 function RenderInvite(loggedIn, companyData) {
   const role = AuthService.getUserRole();
+  if( loggedIn && role === 'coordinator' ) {
     return(<>
       <InviteCandidates company={companyData} />
     </>)

@@ -12,6 +12,7 @@ import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
+  guestChoices,
   findSelectedFromPath
 } from '../SideNav/utils';
 import { useCandidateContext } from '../../services/CandidateContext';
@@ -70,6 +71,7 @@ const DesktopNavBarLayout = () => {
         <DropdownMenu />
       </div>
     </nav>
+// Temp comment
   )
 }
 

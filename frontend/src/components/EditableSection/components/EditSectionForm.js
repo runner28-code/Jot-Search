@@ -30,9 +30,9 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
       expertise={contentObject[propertyName]}
       handleChange={handleChange} />
   }
-  if ( propertyName === 'resume' ) {
     return <EditResumeForm
       handleChange={handleChange} />
+  }
   return (
     <div className='flex flex-col justify-items-between w-140'>
       { Object.entries(contentObject).map(([key, value]) => {

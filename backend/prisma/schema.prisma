@@ -408,6 +408,7 @@ model Job {
   isPublic            Boolean?
   isOpen              Boolean?
   isInterviewRequired Boolean?
+  hoursPerWeek        Int?
   hoursOfOperation    String?
   durationWeeks       Int?
   publicDescription   String?

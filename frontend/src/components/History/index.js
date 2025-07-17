@@ -3,6 +3,7 @@ import HistoryItem from './HistoryItem';
 import ViewAllLink from '../ViewAllLink';
 import AuthService from '../../services/auth';
 
+export default function History({ historyArr, id, headerStyles, hrStyles }) {
   const userRole = AuthService.getUserRole();
   if (userRole !== 'coordinator') {
     return null;
@@ -13,6 +14,7 @@ import AuthService from '../../services/auth';
       <h4 className={headerStyles}>History</h4>
       {historyArr.map(historyObj => (
         <HistoryItem 
+// Temp comment
           key={historyObj.id} 
           historyObj={historyObj} />
       ))}
