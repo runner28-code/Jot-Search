@@ -68,6 +68,7 @@ HeaderContent.propTypes = {
     businessSectorList: PropTypes.string,
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
+    industryList: PropTypes.array,
     address: PropTypes.string,
     employeeString: PropTypes.string,
     city: PropTypes.string,

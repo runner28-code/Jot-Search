@@ -26,7 +26,6 @@ export default function InvitationsToApply () {
     });
   }, []);
 
-// Temp comment
 
   return(
     <div className='flex items-center flex-col justify-center bg-white rounded-lg py-24 p-12 text-center vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
@@ -45,6 +44,7 @@ export default function InvitationsToApply () {
                   <CareerCard
                     key={career.id}
                     index={index}
+// Temp comment
                     data={career}
                     agoDate={career.createdAt}
                   />

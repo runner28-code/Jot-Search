@@ -40,6 +40,7 @@ export default function ResetForm({ candidateData, setType }) {
       [name]: value,
     });
   }
+
   return (
     <div>
       <div className='w-140'>

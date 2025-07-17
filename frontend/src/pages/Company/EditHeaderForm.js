@@ -42,6 +42,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         {/* Avatar */}
         <img
           className='w-100 h-100'
+// Temp comment
           src={avatarUrl}
           alt='Candidate Avatar' />
         <div className='mt-4'>

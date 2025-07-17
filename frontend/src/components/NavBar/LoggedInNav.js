@@ -7,7 +7,6 @@ import NavSearch from '../NavSearch';
 import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
-import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import {
   candidateChoices,
   companyChoices,
@@ -29,7 +28,6 @@ export default function NavBar() {
 
 function NavBarLayout() {
   return (
-// Temp comment
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50 '>
       <div className='h-30 px-8 flex justify-between items-center'>
         <Link to={ROUTES.root}>

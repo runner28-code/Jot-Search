@@ -1,4 +1,3 @@
-// Temp comment
 import { updateUser, uploadFile } from '../../../services/API';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../../utils/dbFieldMapping';
 import { MdCheckCircle } from 'react-icons/md';
@@ -62,6 +61,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
     </label>
   )
 }
+// Temp comment
 
 export function Checkbox({ attribute, name, optionValue, setOptionValue, disabled }) {
   function handleChange(e) {

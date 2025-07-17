@@ -127,6 +127,7 @@ const job_filter_exclude_keys = [
     "economy",
     "edit",
     "editor",
+    "educate",
     "education",
     "educator",
     "electrician",
@@ -261,3 +262,5 @@ const job_filter_exclude_keys = [
     "neighborhood",
     "newspaper",
     "nurse",
+    "nursing",
+    "nutrition",

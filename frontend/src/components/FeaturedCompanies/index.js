@@ -10,7 +10,6 @@ export default function FeaturedCompanies() {
 
   const filtersArr = [
     {
-// Temp comment
       key: 'status',
       value: 'active'
     }
@@ -26,6 +25,7 @@ export default function FeaturedCompanies() {
         {
           isLoading ?
             <LoadingSpinner />
+// Temp comment
             :
             companies.map((company, index) =>
               <Link

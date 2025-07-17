@@ -28,7 +28,6 @@ export default function AddCoordinator() {
         setSubmissionObject({
           loading: false,
           success: false,
-// Temp comment
           errors: error,
         });
       }
@@ -39,7 +38,6 @@ export default function AddCoordinator() {
   useEffect(() => {
     if (submissionObject.success) {
       setTimeout(() => {
-        setFormObject(defaultState);
         setSubmissionObject({
           loading: false,
           success: false,

@@ -96,7 +96,6 @@ const mockCandidateData = [
     isWarm: false,
   },
 ];
-
 export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
 

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
 import ChoiceTag from '../ChoiceTag';
 import { 
+// Temp comment
   roles as roleChoices,
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
@@ -67,7 +68,6 @@ export default function RegistrationForm() {
       
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
-// Temp comment
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);

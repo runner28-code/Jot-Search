@@ -99,7 +99,6 @@ export async function saveCandidate(userId, candidateId) {
   }
   return normalizeData(data);
 }
-// Temp comment
 
 // COORDINATOR AUTH REQUIRED (handled on back-end), can be used to add any user type
 export async function addUser(userObject) {

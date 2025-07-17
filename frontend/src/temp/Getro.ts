@@ -17,6 +17,7 @@ export type Company = {
     slug?: string;
     status?: string;
     topics?: string;
+    twitter_url?: string;
     url?: string;
     website_url?: string;
     managers?: string;
@@ -34,7 +35,6 @@ export type Job = {
     compensation_min?: string;
     compensation_period?: string;
     compensation_public?: string;
-    description?: string;
     discarded?: string;
     employment_types?: string;
     expires_at?: string;

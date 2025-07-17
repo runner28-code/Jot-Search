@@ -23,7 +23,6 @@ function main() {
             yield seedCompanies();
             yield seedCategories();
             yield seedJobs();
-            yield seedUsers();
             console.log("Done🎉");
         }
         catch (err) {

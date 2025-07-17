@@ -33,7 +33,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     listenForOutsideClicks(listening, setListening, menuRef, setShowDropdown);
   }, [showDropdown]);
 
-// Temp comment
   const dynamicStyles = showDropdown ? ' border rounded-t-lg ' : ' border rounded-lg ';
   const wrapperStyles = dynamicStyles + 'flex justify-between items-center pl-6 h-20 border-midGrey w-100 vw-400:w-114 cursor-pointer bg-white ';
   
@@ -41,6 +40,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     <div
       ref={menuRef}
       className='relative'>
+// Temp comment
       <div
         id='title-wrapper'
         onClick={() => setShowDropdown(showDropdown => !showDropdown)}

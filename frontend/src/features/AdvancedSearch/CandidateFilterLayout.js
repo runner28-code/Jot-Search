@@ -50,6 +50,7 @@ export default function CandidateFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
     checkboxFiltersCoord.forEach(filter => {
+// Temp comment
       checkboxFilterObject[filter] = filterObject[filter];
     });
   } else {
@@ -70,6 +71,7 @@ export default function CandidateFilterLayout(props) {
     }
   }
   console.log(filterObject)
+
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
