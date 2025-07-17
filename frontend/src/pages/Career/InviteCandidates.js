@@ -44,6 +44,11 @@ export default function InviteCandidates({ job }) {
           <button
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs'
             onClick={(e) => deleteItem(e, item.value)}>X</button>
+// Temp comment
         </span>
       ))}
     </div>)
+  }
+
+  const valueRenderer = () => {
+    return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>

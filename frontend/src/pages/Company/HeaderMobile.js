@@ -44,7 +44,6 @@ function HeaderContent({ companyData }) {
                   className={headerIconStyles}
                 />
                 <OpenCareers
-                  styles={headerRowTextStyles}
                   companyId={companyData.id}
                 />
               </div> 
@@ -107,6 +106,30 @@ function renderCompanyLogo(logoUrl, name) {
   }
   return (
     <div className='p-8 border border-slate-70/50 mr-8'>
+      <img
+        className={logoStyles}
+        src={logoUrl}
+        alt={`${name} logo`}
+      />
+    </div>
+  )
+}
+
+function renderDesktopLogo(logoUrl, name) {
+  const { width } = useWindowDimensions();
+  const logoStyles = 'object-contain w-full h-full';
+  if( width < 1280 ) {
+    return null;
+  }
+  if (!logoUrl) {
+    return (
+      <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
+        <BsBuilding className={logoStyles} />
+      </div>
+    )
+  }
+  return (
+    <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
       <img
         className={logoStyles}
         src={logoUrl}

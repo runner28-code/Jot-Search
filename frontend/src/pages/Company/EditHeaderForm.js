@@ -42,7 +42,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
         {/* Avatar */}
         <img
           className='w-100 h-100'
-// Temp comment
           src={avatarUrl}
           alt='Candidate Avatar' />
         <div className='mt-4'>
@@ -211,7 +210,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             id='phone'
             value={formData.phone}
             className={inputStyles + 'ml-10 text-h6'} />
-        </div>
         {/* Email */}
         <div className='flex items-center justify-between mb-4'>
           <label

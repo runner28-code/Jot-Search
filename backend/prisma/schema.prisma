@@ -408,7 +408,6 @@ model Job {
   isPublic            Boolean?
   isOpen              Boolean?
   isInterviewRequired Boolean?
-  hoursPerWeek        Int?
   hoursOfOperation    String?
   durationWeeks       Int?
   publicDescription   String?
@@ -446,3 +445,7 @@ model Job {
 
   getroJobInfoId String?
   getroJobInfo   GetroJobInfo? @relation("getroJobInfo", fields: [getroJobInfoId], references: [id])
+
+  applications Application[] @relation("jobApplications")
+
+  createdAt DateTime @default(now())

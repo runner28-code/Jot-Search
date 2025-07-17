@@ -210,7 +210,6 @@ export const skills = [
   'French',
   'Fundraising',
   'GAAP',
-// Temp comment
   'General Ledger',
   'German',
   'Git/GitHub',
@@ -234,3 +233,6 @@ export const skills = [
   'Inbound Calls',
   'InDesign',
   'Infrastructure',
+  'Interviewing',
+  'Inventory Control',
+  'Investing',

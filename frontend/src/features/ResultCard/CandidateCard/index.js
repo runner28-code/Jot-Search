@@ -48,6 +48,7 @@ export default function CandidateCard({ data, disableLink }) {
             <h5 className='text-h5 font-spaceGrotesk font-semibold text-charcoal leading-none'>{nameString}</h5>
             { renderActiveStatus(data) }
           </div>
+// Temp comment
           {/* Occupation */}
           <p className='text-charcoal mt-l'>{occupationString}</p>
           {/* Expertise */}

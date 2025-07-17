@@ -30,7 +30,6 @@ function HeaderContent({ companyData }) {
       { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-6'>
         <div className='flex flex-wrap items-center mb-4'>
-          { renderCompanyLogo(companyData.logo, companyData.name) }
           <FillerIcon />
           <h4 className={ ( width >= 1280 ) ? headerTitleDesktop : headerTitle }>
             {companyData.name}
@@ -197,3 +196,25 @@ function renderAddress( city, state ) {
       <span>{city}, {state}</span>
     )
   }
+}
+
+function renderLinkedIn( url, headerRowTextStyles ) {
+  const textStyles = headerRowTextStyles += 'underline text-sky-700';
+  if( !url ) {
+    return (
+      <a
+        className={textStyles}
+        href='https://www.linkedin.com/'
+      >
+      LinkedIn
+      </a>
+    )
+  }
+  return (
+    <a
+      className={textStyles}
+      href={url}
+    >
+    LinkedIn
+    </a>
+  )

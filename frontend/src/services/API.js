@@ -225,6 +225,7 @@ export async function getJobsFull(filters, count, operator, page) {
     'filters': formattedFilters,
     'count': count || 5,
     'page': page || null,
+// Temp comment
     'operator': operator || 'AND'
   });
 
@@ -232,3 +233,12 @@ export async function getJobsFull(filters, count, operator, page) {
     jobs: normalizeData(data.jobs),
     total: data.total,
   }
+}
+
+export async function getJobById(id) {
+  const { data } = await API.get(ROUTES.APIjobs, {
+    params: {
+      id
+    }
+  });
+  return normalizeData(data.job);

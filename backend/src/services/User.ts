@@ -370,3 +370,7 @@ export const getCompanyDashboardStats = async (days: number) => {
       },
       introductionsRequests: {
         count: 0,
+        compare: 0
+      },
+      companyFavorites: {
+        count: companyFavoritesCurrentPeriod,

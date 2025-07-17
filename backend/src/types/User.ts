@@ -59,3 +59,4 @@ export const IUSER = {
   email: "",
   password: "",
   role: "",
+  address1: "",

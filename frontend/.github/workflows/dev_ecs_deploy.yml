@@ -12,6 +12,7 @@ env:
   ECS_CLUSTER: 'intulsa-cluster-dev'
   ECS_TASK_DEFINITION: '.github/workflows/dev_task_definition.json'
   CONTAINER_NAME: 'intulsa-frontend-container-dev'
+
 jobs:
   deploy:
     name: Deploy
@@ -32,3 +33,4 @@ jobs:
     - name: Login to Amazon ECR
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
+

@@ -264,3 +264,8 @@ const job_filter_exclude_keys = [
     "nurse",
     "nursing",
     "nutrition",
+    "occupancy",
+    "occupational",
+    "office assistant",
+    "on call",
+    "on-call",

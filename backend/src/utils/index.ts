@@ -70,3 +70,4 @@ export const genUUID = () => uuid4();
 export const checkForJobFilter = (title: string, location: string) => {
     if (title.match(JOB_EXCLUDE_KEYS_REGEX)) return false;
     if (location.replace(/\s+/g, '').match(CITY_INCLUDE_KEYS_REGEX)) return true;
+    return false;

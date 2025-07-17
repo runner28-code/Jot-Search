@@ -15,6 +15,7 @@ export default function Login() {
     const res = await API.post(ROUTES.APIlogin, {
       email: email.value,
       password: password.value,
+// Temp comment
     });
 
     if ( res.data.result ) {
@@ -91,7 +92,6 @@ export default function Login() {
           >
             help@intulsa.com
           </a>
-// Temp comment
         </div>
       </div>
     </section>

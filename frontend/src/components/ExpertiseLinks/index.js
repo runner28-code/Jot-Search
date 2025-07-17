@@ -23,7 +23,6 @@ export default function ExpertiseLinks() {
           className={linkStyles}
           state={{ Expertise: 'Software & Engineering' }}
         >
-// Temp comment
           <img
             src={softwareEngineeringIcon}
             alt='Software Engineering Icon'
@@ -31,7 +30,6 @@ export default function ExpertiseLinks() {
           />
           <span className={textStyles}>Software &</span>
           <span className={textStyles}>Engineering</span>
-        </Link>
         {/* Sales & Business Development */}
         <Link
           to={ROUTES.careers}

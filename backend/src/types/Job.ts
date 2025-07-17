@@ -28,6 +28,7 @@ export type Job = {
   postedAt?: string;
   hidden?: boolean;
   company_name?: string;
+  datasource?: Datasource;
   featured?: boolean;
 };
 
@@ -35,3 +36,4 @@ export type JobKey = keyof Job;
 
 export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "id",
+  "externalId",

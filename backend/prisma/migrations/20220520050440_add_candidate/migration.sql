@@ -58,3 +58,4 @@ CREATE TABLE "Candidate" (
     "otherDeductionsAmount" TEXT,
     "otherIncomeAmount" TEXT,
     "pager" TEXT,
+    "paperWorkOnFile" TEXT,

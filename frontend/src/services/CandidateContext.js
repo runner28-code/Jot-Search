@@ -35,7 +35,6 @@ const mockCandidateData = [
     isLooking: false,
     isWarm: true,
   },
-  {
     id: '53dde141-ac80-4eee-af38-5497ee1c85d5',
     firstName: 'Rachel',
     lastName: 'McAlpin',
@@ -96,6 +95,7 @@ const mockCandidateData = [
     isWarm: false,
   },
 ];
+
 export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
 

@@ -225,6 +225,7 @@ export class JobController {
     };
 
     const condition = getFilterConditions(
+      _filters,
       operator,
       specialHandlers
     );
@@ -253,3 +254,6 @@ export class JobController {
     count: number | undefined,
     operator: Operator = "OR"
   ) {
+    const _filters = filters.filter((filter) =>
+      ALLOWED_GETRO_FILTERS.has(filter.key as keyof Job)
+    );

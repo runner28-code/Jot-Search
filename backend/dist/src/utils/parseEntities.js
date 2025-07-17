@@ -39,6 +39,7 @@ const parseBullhornCandidateToUser = (data) => {
         ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,
         disability: data.disability,
+// Temp comment
     };
     return user;
 };
@@ -63,6 +64,7 @@ const parseBullhornCompanyToUser = (data) => {
         workspace: data.willRelocate,
         referredBy: data.referredBy,
         roles: data.skillSet,
+        description: data.description,
         phone: data.phone || data.workPhone || data.mobile,
         status: data.status,
         username: data.username,

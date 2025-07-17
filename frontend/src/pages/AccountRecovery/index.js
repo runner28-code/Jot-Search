@@ -5,7 +5,6 @@ import FormInput from '../../components/FormInput';
 
 import API from '../../services/API';
 
-// Temp comment
 export default function AccountRecovery() {
   const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');

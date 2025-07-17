@@ -15,6 +15,7 @@ export enum Tables {
   CONTACTS = "Contacts",
   LEADS = "Leads",
   CANDIDATES = "Candidates",
+  APPLICATIONS = "Applications",
   SAVEDJOBS = "SavedJobs",
   SAVED_COMPANIES = "SavedCompanies",
   SAVED_CANDIDATES = "SavedCandidates",
@@ -81,3 +82,4 @@ export type JobSearchByFilterResponse =
 export type AllJobsResponse = {
   bullhorn: JobSearchByFilterResponse;
   getro: JobSearchByFilterResponse;
+  main: JobSearchByFilterResponse;

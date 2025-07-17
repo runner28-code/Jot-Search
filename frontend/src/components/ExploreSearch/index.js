@@ -45,7 +45,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   }
 
   const containerStyles = ' absolute -bottom-76 h-144 flex flex-col items-center w-380 bg-gradient-to-b from-royalBlue to-aquaBlue rounded-2xl';
-// Temp comment
   
   if ( loading ) {
     return (
@@ -82,6 +81,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
             listItemStyles: 'pl-6 pr-2 py-2 tracking-wide '
           }}
           showDropdownArrow={true}
+// Temp comment
         />
         <AccessibleDropdown
           type='single-select'

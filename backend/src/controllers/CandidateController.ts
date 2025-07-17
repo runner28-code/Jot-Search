@@ -237,3 +237,6 @@ export class CandidateController {
             ...candidate,
             type: "candidate"
           }))
+
+          console.log({ typedUsers, typedCandidates })
+          return [...typedUsers, ...typedCandidates];

@@ -28,6 +28,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     )
   }
 
+// Temp comment
   // Used to close dropdown when clicking outside of it
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setShowDropdown);
@@ -40,7 +41,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     <div
       ref={menuRef}
       className='relative'>
-// Temp comment
       <div
         id='title-wrapper'
         onClick={() => setShowDropdown(showDropdown => !showDropdown)}

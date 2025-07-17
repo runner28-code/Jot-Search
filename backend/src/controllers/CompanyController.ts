@@ -215,3 +215,5 @@ export class CompanyController {
 
       const wheres = normalizeFilters(filters)
 
+      const skip = (count || 0) * ((page - 1) || 0)
+

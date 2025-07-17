@@ -78,7 +78,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
     }
-// Temp comment
   };
 
 

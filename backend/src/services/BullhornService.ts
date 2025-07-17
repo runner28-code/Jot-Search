@@ -580,3 +580,10 @@ export class BullhornService {
         await this.getNewAccessToken();
         repeatErr++;
       }
+    }
+  }
+
+  async getCandidates(
+    testMode = false,
+    count = 150,
+    sort = "-dateAdded"

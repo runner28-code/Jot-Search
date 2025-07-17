@@ -1,6 +1,5 @@
 import {
   Body,
-  Get,
   Post,
   QueryParam,
   JsonController,
@@ -33,3 +32,4 @@ export class ClientContactController {
       return { message: error };
     }
   }
+

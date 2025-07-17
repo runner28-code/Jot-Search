@@ -35,6 +35,7 @@ export type Job = {
     compensation_min?: string;
     compensation_period?: string;
     compensation_public?: string;
+    description?: string;
     discarded?: string;
     employment_types?: string;
     expires_at?: string;
@@ -46,3 +47,4 @@ export type Job = {
     organization_logo_url?: string;
     organization_name?: string;
     organization_slug?: string;
+    passes_filter?: string;

@@ -70,7 +70,6 @@ export default function AccessibleDropdown(props) {
 
 AccessibleDropdown.defaultProps = {
   choices: [],
-// Temp comment
 };
 
 AccessibleDropdown.propTypes = {
@@ -122,6 +121,7 @@ function buttonText(name, placeholder, currentChosen) {
   if (currentChosen) {
     if (Array.isArray(currentChosen) && currentChosen.length > 0) {
       buttonString = currentChosen.join(', ');
+// Temp comment
     } else if (typeof currentChosen === 'string') {
       buttonString = currentChosen;
     }

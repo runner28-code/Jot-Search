@@ -31,7 +31,6 @@ const mockJobsData = [
     location: 'Remote',
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
-  },
 ];
 
 function renderChosen(currentChosen, handleRemove) {
@@ -45,7 +44,6 @@ function renderChosen(currentChosen, handleRemove) {
     </div>
   )
 }
-// Temp comment
 
 export default function ReferralSearch() {
   const [choices, setChoices] = useState(mockJobsData);

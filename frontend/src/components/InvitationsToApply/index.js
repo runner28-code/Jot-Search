@@ -44,7 +44,6 @@ export default function InvitationsToApply () {
                   <CareerCard
                     key={career.id}
                     index={index}
-// Temp comment
                     data={career}
                     agoDate={career.createdAt}
                   />

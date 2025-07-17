@@ -70,3 +70,4 @@ export const sendNewUserNotification = async (to: string, name: string) => {
     await sendEmail(to, 'Welcome to inTulsa!', 'new-user-notification', {
       name: name,
       url: `${base_url}/login`
+    });

@@ -10,6 +10,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           fieldName={fieldName}
           label={label}
           toggled={toggled}
+          onToggle={onUpdate}
           disabled={disabled}
         />
         <label 
