@@ -5,7 +5,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 const ITEMS_PER_PAGE = 4;
 
@@ -49,7 +48,6 @@ export default function FeaturedJobs() {
               const categoryString = career.category?.name.toUpperCase() || 'CATEGORY N/A';
               return(
                 <Link
-                  to={`${ROUTES.careers}/${career.id}`}
                   key={index}
                   className={ width >= 990 ? linkStyles : linkStylesMobile }
                 >

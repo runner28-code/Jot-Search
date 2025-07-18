@@ -44,5 +44,4 @@ export default function SignUp() {
         </div>
       </div>
     </main>
-// Temp comment
   )

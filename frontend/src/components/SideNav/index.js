@@ -1,3 +1,4 @@
+// Temp comment
 import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
@@ -17,6 +18,7 @@ export default function SideNav({ userType }) {
     return null;
   }
 
+  if( userType === 'guest' ) {
     return null;
   }
   const { width } = useWindowDimensions();

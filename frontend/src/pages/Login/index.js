@@ -10,6 +10,7 @@ export default function Login() {
   const [error, setError] = useState('');
 
   const handleSubmit = async (event) => {
+// Temp comment
     event.preventDefault();
     const { email, password } = event.target;
     const res = await API.post(ROUTES.APIlogin, {
@@ -66,7 +67,6 @@ export default function Login() {
           <FormInput
             type='password'
             name='password'
-// Temp comment
             label='Password'
           />
           <div className='flex justify-between items-center vw-640:items-end mb-22 gap-[10px]'>

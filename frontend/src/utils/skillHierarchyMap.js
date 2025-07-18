@@ -162,7 +162,6 @@ export const skills = [
   'Data and Analytics',
   'Data Management',
   'Data Modeling',
-  'Data Transformation',
   'Data Visualization',
   'Database Design',
   'DEI',
@@ -216,7 +215,6 @@ export const skills = [
   'Government',
   'Graphic Design',
   'GTM',
-// Temp comment
   'Health Insurance',
   'Healthcare',
   'Helpdesk',

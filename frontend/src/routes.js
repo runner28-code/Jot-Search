@@ -21,7 +21,6 @@ export const companies = '/companies';
 export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';
 export const savedCareers = '/saved-careers';
-// Temp comment
 export const savedCompanies = '/saved-companies';
 // Company Dashboard
 export const candidates = '/candidates';
@@ -37,6 +36,7 @@ export const softwareEngineering = '/software-engineering';
 export const salesBizDev = '/sales-business-development';
 export const operations = '/operations';
 export const coordinatorQuickStats = '/coordinator-stats';
+// Temp comment
 
 /* EXTERNAL LINKS */
 export const gMapsIntulsa = 'https://www.google.com/maps/place/36+E+Cameron+St,+Tulsa,+OK+74103,+USA';

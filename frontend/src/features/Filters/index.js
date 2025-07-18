@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
-// Temp comment
 
 export default function Filters(props) {
   const {
@@ -13,6 +12,7 @@ export default function Filters(props) {
     setSearchTerm,
     handleSearchClick,
     marginBottom
+// Temp comment
   } = props;
 
   let filterContainerStyles = 'flex flex-col justify-between gap-xxl-4 pb-9 vw-768:px-14 ';

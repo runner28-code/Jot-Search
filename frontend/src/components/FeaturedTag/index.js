@@ -15,6 +15,5 @@ export default function FeaturedTag ({ hide, addClass }) {
         alt='featured icon'
       />
       InTulsa Featured
-// Temp comment
     </span>
   )

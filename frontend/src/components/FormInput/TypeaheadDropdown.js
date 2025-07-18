@@ -90,6 +90,7 @@ TypeaheadDropdown.propTypes = {
   placeholder: PropTypes.string.isRequired,
   choices: PropTypes.array.isRequired,
   currentChosen: PropTypes.array.isRequired,
+// Temp comment
   onChange: PropTypes.func.isRequired,
   baseStyles: PropTypes.string.isRequired,
   inputHeight: PropTypes.string.isRequired,

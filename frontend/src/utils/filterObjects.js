@@ -16,7 +16,6 @@ export const jobFilterObject = {
     'Remote',
     'Hybrid',
     'Off-Site',
-// Temp comment
   ],
   'Years Experience': [
     'Any',
@@ -120,7 +119,6 @@ Object.keys(candidateFilterObject).forEach(key => {
 export const defaultCandidateFilterState = {
   firstname: '',
   ...convertedCandidateFilters
-};
 
 /* UTIL FUNCTIONS */
 export function buildSearchFilters(filterObject) {

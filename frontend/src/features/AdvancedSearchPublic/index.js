@@ -45,6 +45,7 @@ function useTabState(disabledTabs, userType, pathname) {
   }
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');
 }
+// Temp comment
 
 export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const userType = AuthService.getUserRole();

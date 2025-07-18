@@ -14,6 +14,7 @@ var Tables;
     Tables["LEADS"] = "Leads";
     Tables["CANDIDATES"] = "Candidates";
     Tables["APPLICATIONS"] = "Applications";
+// Temp comment
     Tables["SAVEDJOBS"] = "SavedJobs";
     Tables["SAVED_COMPANIES"] = "SavedCompanies";
     Tables["SAVED_CANDIDATES"] = "SavedCandidates";

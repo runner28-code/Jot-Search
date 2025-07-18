@@ -6,13 +6,13 @@ export default function FileInput({type, name, label, placeholder, required, val
 
   function handleKeyDown(e) {
     if ( e.key === ' ' || e.key === 'Enter' ) {
+// Temp comment
       e.preventDefault();
       inputRef.current.click();
     }
   }
 
   return (
-// Temp comment
     <div>
       { renderLabel( name, label, value, placeholder, required, handleKeyDown, baseStyles ) }
       <input 

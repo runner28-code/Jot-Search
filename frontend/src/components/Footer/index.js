@@ -202,7 +202,6 @@ export default function Footer() {
     </div>
   </>)
 }
-
 function NavFooter() {
 
   const blueLinkStyle = 'text-md text-royalBlue font-spaceGrotesk font-semibold mb-8';
@@ -356,6 +355,7 @@ function NavFooterMobile() {
         <a
           href="/careers"
           className={linkStyle}
+        >
           Software & Enginering Job Openings
         </a>
         <a

@@ -4,11 +4,13 @@ import { toggleHideJob } from '../../../services/API';
 import AuthService from '../../../services/auth';
 
 export default function HideButton({ type, data, setIsHidden }) {
+// Temp comment
   const role = AuthService.getUserRole();
   if ( role !== 'coordinator' || type !== 'job' ) {
     return null;
   }
   
+  async function handleClick() {
     setIsHidden(true);
     await toggleHideJob(data.id);
   }

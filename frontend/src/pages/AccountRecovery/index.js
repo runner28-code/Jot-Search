@@ -62,6 +62,7 @@ export default function AccountRecovery() {
             >
               Sign-up here
             </Link>
+// Temp comment
           </div>
           { renderResponse() }
           <FormInput

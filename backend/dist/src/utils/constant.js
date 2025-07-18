@@ -100,6 +100,7 @@ const job_filter_exclude_keys = [
     "court",
     "credit",
     "crew",
+// Temp comment
     "crew leader",
     "crime",
     "crisis",
@@ -190,7 +191,6 @@ const job_filter_exclude_keys = [
     "housing",
     "humanities",
     "hvac",
-// Temp comment
     "i am awesome",
     "imaging",
     "impact coach",
