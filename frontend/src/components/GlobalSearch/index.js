@@ -15,7 +15,6 @@ export default function GlobalSearch({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
   const [ results, setResults ] = useState({
-// Temp comment
     jobs: [],
     companies: [],
     candidates: [],
@@ -30,7 +29,6 @@ export default function GlobalSearch({ placeholder }) {
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setResults({ ...results, loading: true, forceHidden: false });
-    debounceSearchTermFunction( searchTerm );
   }
 
   /* Debounce functions will wait until user stops typing to send API call */

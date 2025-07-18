@@ -95,6 +95,7 @@ export default function RegistrationForm() {
     if ( submissionObject.success ) {
       setTimeout(() => {
         setFormObj(defaultState);
+        setSubmissionObject({
           loading: false,
           success: false,
         });

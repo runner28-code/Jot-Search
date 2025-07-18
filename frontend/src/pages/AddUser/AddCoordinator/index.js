@@ -53,6 +53,7 @@ export default function AddCoordinator() {
 
     // Error checking
     const newErrors = validateInput(
+// Temp comment
       name,
       value,
       submissionObject.errors,

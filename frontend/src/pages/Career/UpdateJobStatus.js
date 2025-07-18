@@ -25,8 +25,6 @@ export const UpdateJobStatus = ({ job }) => {
             'Inactive',
             'Filled',
             'Draft',
-            'Closed'
-// Temp comment
           ]} 
           currentChosen={updatedJob.status}
           name='status'

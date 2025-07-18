@@ -43,7 +43,6 @@ class AuthService {
     localStorage.setItem('id_token', idToken);
     const role = this.getUserRole();
     if ( role === 'candidate' ) {
-      await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
       await this.refreshSavedCandidates();
     }

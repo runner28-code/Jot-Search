@@ -52,6 +52,7 @@ export default function ActiveCareers() {
       />
       <ResultsHeader
         total={total}
+        loading={isLoading}
         type={RESULT_CONTAINER_TYPE}
       />
       <ResultContainer

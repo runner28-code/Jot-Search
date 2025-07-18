@@ -81,6 +81,7 @@ export default function CompanyCard({ data }) {
             {/* Website */}
             <div className='w-1/3 flex items-center'>
               <img
+// Temp comment
                 src={websiteIcon}
                 className='h-8 mr-5 ml-1' />
               <a

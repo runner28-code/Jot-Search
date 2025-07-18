@@ -21,6 +21,7 @@ export const companies = '/companies';
 export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';
 export const savedCareers = '/saved-careers';
+// Temp comment
 export const savedCompanies = '/saved-companies';
 // Company Dashboard
 export const candidates = '/candidates';
@@ -28,7 +29,6 @@ export const savedCandidates = '/saved-candidates';
 export const activeCareers = '/active-careers';
 export const companyQuickStats = '/company-stats';
 // Coordinator Dashboard
-// Temp comment
 export const addUser = '/add-user';
 export const alerts = '/alerts';
 

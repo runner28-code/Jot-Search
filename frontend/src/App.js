@@ -61,7 +61,6 @@ function App() {
               path={ROUTES.root + '*'}
               element={<Auth />} />
             <Route
-              path="*"
               element={<Navigate to={ROUTES.landingPage} />}
             />
           </Routes>

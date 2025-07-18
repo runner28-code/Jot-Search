@@ -21,7 +21,6 @@ exports.IUSER = {
     skills: "",
     category: "",
     seniority: "",
-// Temp comment
     workspace: "",
     referredBy: "",
     roles: "",

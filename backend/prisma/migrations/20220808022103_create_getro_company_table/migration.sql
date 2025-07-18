@@ -5,7 +5,6 @@ CREATE TABLE "GetroCompany" (
     "crunchbase_url" TEXT,
     "description" TEXT,
     "domain" TEXT,
-    "facebook_url" TEXT,
     "founded" TEXT,
     "id" TEXT NOT NULL,
     "instagram_url" TEXT,
@@ -13,4 +12,5 @@ CREATE TABLE "GetroCompany" (
     "linkedin_url" TEXT,
     "locations" TEXT,
     "logo_url" TEXT,
+    "name" TEXT,
     "ocp_search_status" TEXT,

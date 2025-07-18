@@ -20,6 +20,7 @@ export class GetroService {
         }
         return GetroService.client;
     }
+
     getOptions() {
         return {
             headers: {
@@ -111,7 +112,6 @@ export class GetroService {
         console.log(`\n***** getCompanyDetail (${slug}) *****`);
         const query = queryString.stringify({
             collection_id: this.networkId,
-            detailed: true
         });
         const url = `${this.api_base_url_v1}/organizations/${slug}?${query}`;
 

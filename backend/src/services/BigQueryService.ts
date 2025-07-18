@@ -41,4 +41,3 @@ export class BigQueryService {
             const [res] = await job.getQueryResults();
             if (res && res.length > 0) {
                 return res;
-            }

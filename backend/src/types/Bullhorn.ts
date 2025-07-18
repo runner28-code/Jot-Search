@@ -114,6 +114,7 @@ export type Job = {
     title?: string;
     travelRequirements?: string;
     type?: string;
+    willRelocate?: string;
     yearsRequired?: string;
     hidden?: boolean;
 };
@@ -157,7 +158,6 @@ export type ClientContact = {
     namePrefix?: string;
     nameSuffix?: string;
     nickName?: string;
-    numEmployees?: string;
     occupation?: string;
     office?: string;
     owner?: string;

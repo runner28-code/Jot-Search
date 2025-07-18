@@ -93,7 +93,6 @@ export default function DesktopLayout(props) {
           {(role === 'candidate' || role === 'guest') && (
             <ApplyButton
               datasource={careerData.datasource}
-              careerId={careerData.id}
               applicationUrl={careerData.application_path || careerData.url}
             />
           )}
@@ -150,6 +149,7 @@ function renderAboutCompanySection(careerData, companyName) {
   return (<>
     <hr className={hrStyles} />
     {/* About Company */}
+    <h4 className={sectionHeaderStyles}>{headerString}</h4>
     <p
       className='font-spaceGrotesk text-textBlack text-md mb-5'
       dangerouslySetInnerHTML={{ __html: careerData.company?.description || 'No Company Description Available' }}
