@@ -55,7 +55,6 @@ class AuthService {
   }
 
   logout() {
-// Temp comment
     this.clearStorage();
     window.location.assign('/landing-page');
   }

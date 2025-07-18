@@ -31,6 +31,7 @@ export const DATASET_MAIN = config.mainDatasetID || "";
 // Common
 export enum DataSource {
   BULLHORN = "bullhorn",
+  GETRO = "getro",
   UNKNOWN = "unknown",
 }
 
@@ -78,7 +79,6 @@ export type JobSearchByFilterResponse =
     }
   | AllJobsResponse;
 
-export type AllJobsResponse = {
   bullhorn: JobSearchByFilterResponse;
   getro: JobSearchByFilterResponse;
   main: JobSearchByFilterResponse;

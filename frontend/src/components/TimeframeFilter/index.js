@@ -8,7 +8,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   const [showDropdown, setShowDropdown] = useState(false);
   const [listening, setListening] = useState(false);
 
-// Temp comment
   const menuRef = useRef(null);
 
   function handleChoiceClick(choice) {
@@ -30,6 +29,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   }
 
   // Used to close dropdown when clicking outside of it
+// Temp comment
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setShowDropdown);
   }, [showDropdown]);

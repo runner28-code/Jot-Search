@@ -95,7 +95,6 @@ export default function RegistrationForm() {
     if ( submissionObject.success ) {
       setTimeout(() => {
         setFormObj(defaultState);
-        setSubmissionObject({
           loading: false,
           success: false,
         });
@@ -186,6 +185,7 @@ export default function RegistrationForm() {
             onChange={handleChange}
             choices={formObj.expertise ? roleChoices[formObj.expertise] : []}
             error={errors.includes('roles')}
+          />
           <FormInput
             type='typeahead'
             dropdownType='tags'

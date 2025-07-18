@@ -34,6 +34,7 @@ const defaultState = {
   skills: [],
   experience: '',
   employmentPreference: '',
+  workspace: '',
   linkedin: '',
   referredBy: '',
   resume: {},

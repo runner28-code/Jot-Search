@@ -59,7 +59,6 @@ const DesktopNavBarLayout = () => {
       <Link to={ROUTES.root}>
         <img
           src={inTulsaLogoText}
-          alt='logo'
         />
       </Link>
       {/* Nav Menu */}

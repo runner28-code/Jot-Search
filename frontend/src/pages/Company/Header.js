@@ -182,7 +182,6 @@ function FillerIcon () {
         <BsBuilding className='w-16 h-16 fill-royalBlue basis-1/3 mr-8'/>
       </div>
     )
-// Temp comment
   } else {
     return null;
   }

@@ -20,7 +20,6 @@ export class GetroService {
         }
         return GetroService.client;
     }
-
     getOptions() {
         return {
             headers: {

@@ -13,6 +13,7 @@ export default function Filters(props) {
     handleSearchClick,
     marginBottom
   } = props;
+
   let filterContainerStyles = 'flex flex-col justify-between gap-xxl-4 pb-9 vw-768:px-14 ';
   if (marginBottom) {
     filterContainerStyles += `mb-${marginBottom} `;

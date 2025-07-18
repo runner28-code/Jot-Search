@@ -30,7 +30,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
 
   const rootClass = 'absolute top-full w-full max-h-140 overflow-y-auto bg-white text-royalBlue px-12 py-12 z-10 shadow-resultCardShadow';
 
-  if (!isOpen) {
     return null
   }
   
@@ -82,7 +81,6 @@ export default function Dropdown(props) {
     }
   }
 
-// Temp comment
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setIsOpen);
   }, [isOpen]);

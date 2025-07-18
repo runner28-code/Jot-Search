@@ -45,7 +45,6 @@ export default function Candidate() {
     setCandidateData(formattedCandidate);
     setLoading(false);
   }, []);
-// Temp comment
 
   async function handleCandidateUpdate(updateObject) {
     console.log('candidateData', candidateData);

@@ -90,6 +90,7 @@ export const companyChoices = [
   choices.candidates,
   choices.myFavorites,
   choices.activeCareers,
+  choices.logout
 ];
 export const coordinatorChoices = [
   choices.dashboard,
@@ -119,7 +120,6 @@ export function findSelectedFromPath() {
     case 'saved-candidates':
       return 'Saved Candidates';
     case 'active-careers':
-      return 'Active Careers';
     case 'candidates':
       return 'Candidates';
     case 'careers':

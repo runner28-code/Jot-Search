@@ -269,3 +269,6 @@ const job_filter_exclude_keys = [
     "office assistant",
     "on call",
     "on-call",
+    "optometrist",
+    "ot",
+    "painter",

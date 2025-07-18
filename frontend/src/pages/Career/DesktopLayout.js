@@ -69,6 +69,7 @@ export default function DesktopLayout(props) {
             <div className='w-1/3 flex items-center pr-4'>
               <img
                 src={postingAgeIcon}
+                className='h-11 mr-5' />
               <p className='text-textBlack'>Posted {postingAge}</p>
             </div>
           </div>
@@ -149,7 +150,6 @@ function renderAboutCompanySection(careerData, companyName) {
   return (<>
     <hr className={hrStyles} />
     {/* About Company */}
-    <h4 className={sectionHeaderStyles}>{headerString}</h4>
     <p
       className='font-spaceGrotesk text-textBlack text-md mb-5'
       dangerouslySetInnerHTML={{ __html: careerData.company?.description || 'No Company Description Available' }}

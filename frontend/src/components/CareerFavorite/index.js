@@ -31,6 +31,7 @@ export default function CareerFavorite () {
                   key={career.id}
                   index={index}
                   data={career}
+                  agoDate={career.createdAt}
                 />
               </>)
             })

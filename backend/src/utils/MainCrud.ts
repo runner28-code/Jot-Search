@@ -84,3 +84,4 @@ export const saveJob = async (job: string, candidate: string) => {
           savedJobs: {
             disconnect: {
               id: job,
+            },

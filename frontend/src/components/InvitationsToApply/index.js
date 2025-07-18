@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
-// Temp comment
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import { getInvitationsToApply } from '../../services/API';
 
@@ -22,6 +21,7 @@ export default function InvitationsToApply () {
         agoDate: job.appliedDate
       }});
     setAppliedJobsObject({
+// Temp comment
       jobs: appliedJobsWithDate,
       loading: false
     });

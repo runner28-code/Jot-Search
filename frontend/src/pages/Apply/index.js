@@ -11,7 +11,6 @@ import { getCandidateById, getJobById, applyToJob } from '../../services/API';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../utils/dbFieldMapping';
-import {
   ethnicityChoices,
   defaultState,
   defaultCareerState,
@@ -60,6 +59,7 @@ export default function Apply() {
       return;
     }
     try {
+      const { user_id } = AuthService.getProfile();
       const [careerData, candidateData] = await Promise.all([
         getJobById(jobId),
         getCandidateById(user_id),

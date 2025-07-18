@@ -4,10 +4,10 @@
 
 import { encryptPassword } from "./password";
 import { User, USERKEYS } from "../types/User";
-import { BigQueryService } from "../services/BigQueryService";
 import { DATASET_MAIN, Tables } from "../types/Common";
 
 (async () => {
+    try {
         console.log('/// START ENCRYPT ALL PASSWORDS');
 
         const query = `

@@ -11,7 +11,6 @@ export default function DashboardPublicMin({type}) {
 
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
-// Temp comment
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const active = ' bg-royalBlue';
   const { width } = useWindowDimensions();
@@ -34,7 +33,6 @@ export default function DashboardPublicMin({type}) {
     )
   }
 
-  return(
     <div className='py-8 bg-gradient-to-t from-sky-500 via-sky-700 to-sky-700 flex items-center justify-center text-white mb-12 flex-col px-[15%]'>
       <div className='flex items-center justify-between w-full'>
         <div className='basis-1/12'>

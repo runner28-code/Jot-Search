@@ -48,7 +48,6 @@ export default function CareerFilterLayout(props) {
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
       </div>
       <div className='flex items-center gap-[65px]'>
-        <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}

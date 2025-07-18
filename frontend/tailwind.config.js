@@ -70,7 +70,6 @@ module.exports = {
         yellowSquare: '#F4D12E',
         green: '#5CCC6E',
         darkGreen: '#008000',
-        softWhite: '#F6F5F6',
         smokeGray: '#DDDDDD',
         medGray: '#707070',
         slateGray: '#3C3C4B',

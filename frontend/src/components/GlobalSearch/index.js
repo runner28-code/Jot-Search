@@ -15,6 +15,7 @@ export default function GlobalSearch({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
   const [ results, setResults ] = useState({
+// Temp comment
     jobs: [],
     companies: [],
     candidates: [],
@@ -50,6 +51,7 @@ export default function GlobalSearch({ placeholder }) {
     // TODO: API: Candidates if role === 'company' || 'coordinator'
     const [jobResults, companyResults, CandidateResults] = await Promise.all([
       getJobs( searchTerm, 'title', 3 ),
+      getCompanies( searchTerm, 'name', 3 ),
       getCandidates( searchTerm, 'firstname', 3 )
     ]);
 
