@@ -33,6 +33,7 @@ export default function CareerFilterLayout(props) {
 
   const dropdownFilterObject = {};
   if( userType === 'candidate' ) {
+    dropDownFiltersCandidate.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
   } else {
@@ -57,7 +58,6 @@ export default function CareerFilterLayout(props) {
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
         <button
-          className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}
         >
           Clear All

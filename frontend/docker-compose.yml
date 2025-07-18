@@ -4,4 +4,3 @@ services:
   sample:
     build:
       context: .
-      dockerfile: Dockerfile

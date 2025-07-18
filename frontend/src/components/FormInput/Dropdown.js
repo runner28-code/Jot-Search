@@ -82,6 +82,7 @@ export default function Dropdown(props) {
     }
   }
 
+// Temp comment
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setIsOpen);
   }, [isOpen]);

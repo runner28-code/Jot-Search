@@ -68,7 +68,6 @@ export default function ReferralSearch() {
     setFilteredChoices([ ...filteredChoices, choices.find(job => job.id === jobId) ]);
   }
 
-// Temp comment
   // set up initial choices
   useEffect(() => {
     // TODO: Implement API

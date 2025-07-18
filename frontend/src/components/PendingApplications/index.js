@@ -20,7 +20,6 @@ export default function PendingApplications () {
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
-      return {
         ...job,
         agoDate: job.appliedDate
       }});
@@ -47,7 +46,6 @@ export default function PendingApplications () {
             :
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
               return(<>
-// Temp comment
                 <CareerCard
                   key={career.id}
                   index={index}

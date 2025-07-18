@@ -60,6 +60,7 @@ export const stateCodeMap = {
   Tennessee: 'TN',
   Texas: 'TX',
   Utah: 'UT',
+  Vermont: 'VT',
   Virginia: 'VA',
   Washington: 'WA',
   'West Virginia': 'WV',

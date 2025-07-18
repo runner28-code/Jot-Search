@@ -6,7 +6,6 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-// Temp comment
     extend: {
       animation: {
         'spin': 'spin .175s linear forwards',

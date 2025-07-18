@@ -12,7 +12,6 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
   }
 
   const linkStyles = choice === 'Logout' ? stylesObject.bottomLinkStyles : stylesObject.linkStyles;
-// Temp comment
   return (
     <div key={choice}>
       <Link 
@@ -24,5 +23,4 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
         <span className={stylesObject.spanStyles}>{choice}</span>
       </Link>
       <hr className={stylesObject.hrStyles} />
-    </div>
   )

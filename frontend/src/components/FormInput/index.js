@@ -53,7 +53,6 @@ export default function FormInput(props) {
     case 'single-select': // fall through
     case 'multi-select':
       return <AccessibleDropdown
-// Temp comment
         type={type}
         name={name}
         label={label}

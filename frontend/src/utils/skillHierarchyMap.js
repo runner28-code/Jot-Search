@@ -25,6 +25,7 @@ export const roles = {
     'Product Marketing & Design'
   ],
   'Operations': [
+// Temp comment
     'Business Operations & Strategy',
     'Client Success and Customer Service',
     'Operations Generalist',
@@ -104,7 +105,6 @@ export const skills = [
   'Bachelors Degree',
   'Banking',
   'Benefits',
-// Temp comment
   'Big 4',
   'Bilingual',
   'Blender',

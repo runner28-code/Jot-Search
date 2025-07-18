@@ -35,7 +35,6 @@
                 },
                 {
                     "name": "PROJECT_ID", 
-                    "value": "aerovision-338218"
                 },
                 {
                     "name": "DATABASE_URL", 
@@ -54,6 +53,7 @@
                     "value": "inTulsa_Main"
                 },
                 {
+                    "name": "AUTH_SECRET", 
                     "value": "{SECRET_AUTH_SECRET}"
                 },
                 {

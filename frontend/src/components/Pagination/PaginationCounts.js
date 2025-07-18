@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 
 export const PaginationCounts = ({ startCount, endCount, total }) => {
   return (
@@ -9,5 +8,6 @@ export const PaginationCounts = ({ startCount, endCount, total }) => {
         <span className="font-medium">{endCount}</span> of{' '}
         <span className="font-medium">{total}</span> results
       </p>
+// Temp comment
     </div>
   )

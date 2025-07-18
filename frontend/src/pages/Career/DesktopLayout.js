@@ -69,7 +69,6 @@ export default function DesktopLayout(props) {
             <div className='w-1/3 flex items-center pr-4'>
               <img
                 src={postingAgeIcon}
-                className='h-11 mr-5' />
               <p className='text-textBlack'>Posted {postingAge}</p>
             </div>
           </div>
@@ -106,6 +105,7 @@ export default function DesktopLayout(props) {
           <div className='flex flex-col space-y-8'>
             <UpdateJobStatus job={careerData} />
             {careerData.datasource === 'bullhorn' && <UpdateJobFeatured job={careerData} />}
+          </div>
         )
       }
     </section>

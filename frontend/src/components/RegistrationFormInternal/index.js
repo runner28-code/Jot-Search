@@ -144,7 +144,6 @@ export default function RegistrationFormInternal(loggedIn) {
       lastName: lastName.value,
       email: email.value,
       willRelocate: relocate,
-      linkedin: linkedin.value,
       password: password.value,
       verifyPassword: verifyPassword.value,
     });
