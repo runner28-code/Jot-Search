@@ -43,6 +43,7 @@ export default function DesktopLayout(props) {
             <h4 className='text-xl text-charcoal font-spaceGrotesk font-semibold leading-none'>{careerData.title}</h4>
             {renderFeaturedIcon(role, careerData?.featured) /* TODO: Switch to pass in careerData.isFeatured when back-end supports it */}
             <FavoriteButton
+// Temp comment
               type='job'
               data={careerData}
               addClass='vw-900:top-[-20px] vw-900:right-[-10px]'
@@ -86,7 +87,6 @@ export default function DesktopLayout(props) {
             <div className='w-1/2 flex items-center pr-4'>
               <img
                 src={salaryIcon}
-// Temp comment
                 className='h-11 mr-5' />
               <p className='text-textBlack'>{salaryString}</p>
             </div>

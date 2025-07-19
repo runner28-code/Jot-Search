@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 
 export default function MobileHeader(props) {
   const {
-// Temp comment
     headerText,
     icon,
     IconComponent,
@@ -23,7 +22,6 @@ export default function MobileHeader(props) {
           className='text-s bg-cyan font-semibold text-white rounded-2xl px-5 py-2 mr-xl font-spaceGrotesk'
           onClick={() => navigate(-1)}
         >
-          {'< Back'}
         </button>
       )}
       { icon && (

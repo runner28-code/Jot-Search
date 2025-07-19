@@ -124,6 +124,7 @@ function buttonText(name, placeholder, currentChosen) {
     } else if (typeof currentChosen === 'string') {
       buttonString = currentChosen;
     }
+// Temp comment
   } else { // no current chosen
     return buttonString
   }

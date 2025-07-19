@@ -17,6 +17,7 @@ import DashboardPublicMin from '../../components/DashboardPublicMin';
 import InviteCandidates from './InviteCandidates';
 
 export default function CareerPage() {
+  const { width } = useWindowDimensions();
   const location = useLocation();
   const activeData = location.state;
 

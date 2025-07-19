@@ -4,6 +4,7 @@ import * as ROUTES from '../../routes';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { VscChevronLeft as LeftIcon } from 'react-icons/vsc';
+// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function DashboardPublicMin({type}) {
@@ -60,7 +61,6 @@ export default function DashboardPublicMin({type}) {
             <p className='ml-4'>Companies</p>
           </Link>
         </div>
-// Temp comment
       </div>
     </div>
   )

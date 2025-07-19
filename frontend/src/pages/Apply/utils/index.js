@@ -35,7 +35,7 @@ export const defaultState = {
   newResume: {},
   ethnicity: '',
   gender: '',
-  workAuthorized: '',
+  disability: '',
   veteran: '',
   loading: true
 }

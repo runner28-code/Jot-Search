@@ -403,6 +403,7 @@ export class BullhornService {
       } catch (error: any) {
         console.log(error.message, "\nrepeatNumber =", repeatErr);
         await this.getNewAccessToken();
+        repeatErr++;
       }
     }
   }
@@ -503,3 +504,8 @@ export class BullhornService {
             "fax",
             "fax2",
             "fax3",
+            "firstName",
+            "isAnonymized",
+            "isDayLightSavings",
+            "isDeleted",
+            "lastName",

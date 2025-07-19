@@ -35,6 +35,7 @@ export function appendPathToBaseUrl(path) {
 /* FETCH FUNCTIONS */
 //* CANDIDATES
 export async function getCandidates(filtersArr, count, page) {
+// Temp comment
   return (await getCandidatesFull(filtersArr, count, page)).candidates;
 }
 

@@ -4,7 +4,6 @@ import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function JoinTalentNetwork() {
-// Temp comment
 
   const { width } = useWindowDimensions();
 
@@ -49,7 +48,6 @@ export default function JoinTalentNetwork() {
           <Link
             to={ROUTES.signup}
             className='flex items-center justify-center h-28 w-112 bg-buttonLightBlue mt-22 px-18 rounded-lg'
-          >
             <span className='text-softWhite text-ml'>Create an account</span>
           </Link>
         </div>

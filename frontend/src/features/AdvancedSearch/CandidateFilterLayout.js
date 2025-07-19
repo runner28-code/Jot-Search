@@ -94,7 +94,6 @@ export default function CandidateFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-          handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />
@@ -102,6 +101,7 @@ export default function CandidateFilterLayout(props) {
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
         >
+          Clear All
         </button>
       </div>
     </div>

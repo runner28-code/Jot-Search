@@ -100,6 +100,7 @@ HeaderContent.propTypes = {
     logo: PropTypes.string,
     businessSectorList: PropTypes.string,
     linkedin_url: PropTypes.string,
+    companyURL: PropTypes.string,
     industryList: PropTypes.array,
     address: PropTypes.string,
     employeeString: PropTypes.string,
@@ -191,6 +192,7 @@ function renderAddress( city, state ) {
     return (
       <span>Tulsa, OK</span>
     )
+// Temp comment
   } else {
     return (
       <span>{city}, {state}</span>

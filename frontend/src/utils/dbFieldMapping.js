@@ -29,7 +29,6 @@ export const ethnicityMap = {
   U: 'Prefer not to say',
   BL: 'Black or African American',
   NP: 'Native Hawaiian or other Pacific Islander',
-  WH: 'White or Caucasian',
   IA: 'Native American or Alaska Native',
   HL: 'Hispanic or Latina/Latino or LatinX',
   AS: 'Asian',

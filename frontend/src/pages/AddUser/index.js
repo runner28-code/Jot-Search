@@ -29,6 +29,7 @@ export default function AddUser() {
         alt='User Icon'
         className='w-12 h-12 vw-768:w-24 vw-768:h-24 mr-8'
       />
+// Temp comment
       <span>Add new</span>
       <Dropdown
         inputStyles='text-md vw-768:text-lg font-bold mx-4 px-2 py-4 ml-8 border-lightGrey border-solid border-2 rounded-2xl'
@@ -37,7 +38,6 @@ export default function AddUser() {
         choices={['Candidate', 'Company', 'Coordinator']}
         handleChange={handleDropdownChange}
         noDefault={true}
-// Temp comment
       />
     </h2>
     <div className={formType != 'Company' ? defaultContainer : companyContainer }>

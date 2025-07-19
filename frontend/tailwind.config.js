@@ -53,7 +53,6 @@ module.exports = {
         error: '#DE5454',
         warning: '#F4D12E',
         disabledGrey: '#C9C9CE',
-// Temp comment
         magenta: '#EB4A87',
         // Colors included in design but not in Web Style Guide
         orangeCircle: '#ED8623',
@@ -104,7 +103,6 @@ module.exports = {
         // General Spacing
         '3.5%': '3.5%',
         '5%': '5%',
-        '9%': '9%',
         '10%': '10%',
         '16%': '16%',
         '20%': '20%',

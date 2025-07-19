@@ -56,7 +56,6 @@ export default function MobileLayout(props) {
             </div>
             {/* Remote/Onsite/Hybrid */}
             <div className='flex w-1/2 items-center'>
-// Temp comment
               <LaptopIcon
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>
@@ -90,7 +89,6 @@ export default function MobileLayout(props) {
             </div>
           </div>
         </div>
-
         {/* Coordinator Status */}
         {
           role === 'coordinator' && (

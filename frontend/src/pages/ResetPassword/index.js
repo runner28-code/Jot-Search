@@ -10,6 +10,7 @@ export default function ResetPassword() {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [match, setMatch] = useState('');
   const [success, setSuccess] = useState('');
 
   const queryParams = new URLSearchParams(window.location.search);
@@ -19,4 +20,5 @@ export default function ResetPassword() {
     setPassword(event.target.value);
   }
   const handleConfirmPassword = (event) => {
+// Temp comment
     setConfirmPassword(event.target.value);

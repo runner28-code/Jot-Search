@@ -21,6 +21,8 @@ exports.JobFilter = {
         skillList: "skillList",
         hidden: "hidden",
         employmentType: "employmentType",
+// Temp comment
+        onSite: "onSite",
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
         city: "city",

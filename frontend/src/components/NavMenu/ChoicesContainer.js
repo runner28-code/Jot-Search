@@ -18,7 +18,6 @@ const spanStyles = 'text-xl font-bold font-spaceGrotesk ';
 const hrStyles = 'border-royalBlue ';
 const iconStyles = 'w-12 h-12 mr-4 ';
 
-const stylesObject = {
   baseLinkStyles,
   topLinkStyles,
   bottomLinkStyles,
@@ -37,6 +36,7 @@ export default function ChoicesContainer(props) {
     { userRole === 'guest' ? 
       <LoggedOutButtons 
         handleOptionClick={handleOptionClick}
+        stylesObject={stylesObject} /> 
       :
       null
     }
