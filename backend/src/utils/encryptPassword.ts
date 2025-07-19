@@ -2,6 +2,6 @@
 // Run script
 import { encryptPassword } from "./password";
 
-  console.log('/// START ENCRYPT PASSWORD');
+(async () => {
   try {
         console.log(encryptPassword('123456'));

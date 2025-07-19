@@ -19,7 +19,6 @@ export const jobReferralChoices = [
 export const defaultCareerState = {
   title: '',
   company: {
-    name: '',
     logo: '',
   },
   loading: true,
@@ -35,6 +34,7 @@ export const defaultState = {
   newResume: {},
   ethnicity: '',
   gender: '',
+  workAuthorized: '',
   disability: '',
   veteran: '',
   loading: true

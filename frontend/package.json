@@ -34,3 +34,4 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js"
   },
+  "eslintConfig": {

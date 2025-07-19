@@ -175,6 +175,7 @@ export default function RegistrationForm() {
             placeholder='Expertise' 
             value={formObj.expertise}
             onChange={handleChange}
+// Temp comment
             choices={categories}
             error={errors.includes('expertise')}
           />

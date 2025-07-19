@@ -27,3 +27,4 @@ exports.IUSER = {
     description: "",
     phone: "",
     status: "",
+    username: "",

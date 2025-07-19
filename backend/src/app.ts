@@ -62,7 +62,6 @@ const uploadToS3 = async(req: any, res: any) => {
         result: true,
       })
     } catch (e) {
-      console.error("error", e);
       res.status(500).send({
         result: false,
         error: e
@@ -82,3 +81,4 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
   let current_datetime = new Date();
   let formatted_date =
     current_datetime.getFullYear() +
+    "-" +

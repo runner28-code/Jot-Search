@@ -6,7 +6,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   if ( submissionObject.loading ) {
     return <LoadingSpinner
       height='50'
-      width='50'
     />
   }
   if ( submissionObject.success ) {
@@ -22,6 +21,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
 }
 
 export function renderErrorBlock(errorBlock) {
+  
   if (errorBlock) {
     return (
       <div className='flex flex-col items-center justify-center w-full'>

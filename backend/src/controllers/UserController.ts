@@ -138,3 +138,4 @@ export class UserController {
         if (res && res.changedEntityId) {
           console.log("changedEntityId", res.changedEntityId);
           data = { ...data, externalId: res.changedEntityId };
+        }

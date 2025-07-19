@@ -217,3 +217,5 @@ export class CompanyController {
 
       const skip = (count || 0) * ((page - 1) || 0)
 
+      const companiesPromise = db.company.findMany({
+        where: wheres,

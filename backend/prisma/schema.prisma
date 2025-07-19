@@ -450,3 +450,6 @@ model Job {
   applications Application[] @relation("jobApplications")
 
   createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+

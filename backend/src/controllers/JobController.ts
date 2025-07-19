@@ -184,7 +184,6 @@ export class JobController {
       // console.log({ jobs });
 
       return {
-        jobs: extendedJobs,
         total,
         message: null,
       };
@@ -257,3 +256,5 @@ export class JobController {
     const _filters = filters.filter((filter) =>
       ALLOWED_GETRO_FILTERS.has(filter.key as keyof Job)
     );
+
+    const filteredFields = fields?.filter((field) =>

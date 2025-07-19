@@ -58,3 +58,4 @@
                     "value": "{SECRET_AUTH_SECRET}"
                 },
                 {
+                    "name": "GETRO_EMAIL", 

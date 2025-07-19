@@ -42,3 +42,4 @@ export class BigQueryService {
             if (res && res.length > 0) {
                 return res;
             }
+        } catch (error) {

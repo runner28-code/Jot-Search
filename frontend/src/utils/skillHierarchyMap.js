@@ -185,7 +185,6 @@ export const skills = [
   'Editing',
   'EdTech',
   'Education',
-  'Electrical Engineering',
   'Employee Communications',
   'Employee Relations',
   'Energy Tech',
@@ -236,3 +235,5 @@ export const skills = [
   'Interviewing',
   'Inventory Control',
   'Investing',
+  'Investments',
+  'iOS',

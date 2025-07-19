@@ -50,6 +50,7 @@ export default function AddCoordinator() {
 
   function handleInputChange(e) {
     const { name, value } = e.target;
+// Temp comment
 
     // Error checking
     const newErrors = validateInput(

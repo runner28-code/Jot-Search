@@ -196,3 +196,5 @@ export type Candidate = {
     email?: string; // !
     email2?: string;
     email3?: string;
+    employeeType?: string;
+    employmentPreference?: string;

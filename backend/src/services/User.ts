@@ -204,6 +204,7 @@ export const addUserHistoryEntries = async ({
       };
     });
 
+  return await db.history.createMany({
     data: historyRecords,
   });
 };
@@ -373,3 +374,6 @@ export const getCompanyDashboardStats = async (days: number) => {
       },
       companyFavorites: {
         count: companyFavoritesCurrentPeriod,
+        compare: 0,
+      },
+      activeCareerPostFavorites: {

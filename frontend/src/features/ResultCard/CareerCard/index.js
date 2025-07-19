@@ -75,9 +75,11 @@ CareerCard.propTypes = {
   }).isRequired,
   index: PropTypes.number,
   active: PropTypes.bool,
+// Temp comment
 }
 
 function DesktopCard({ dataObj, active }) {
+  const { data, categoryString, addressString, salaryString, postingAge } = dataObj;
   return (
     <Link
       to={`${ROUTES.careers}/${data.id}`}

@@ -35,6 +35,7 @@ input[type="text"].placeholder-24::placeholder {
 /* Remove highlight outline from input elements and anything with the remove-outline class */
 input:focus,
 select:focus,
+textarea:focus,
 button:focus,
 .remove-outline:focus {
     outline: none;
@@ -119,3 +120,4 @@ input[type=checkbox] {
     letter-spacing: normal;
   }
   .Mobile-Body-textmobile-text-size-medium {
+    font-family: Roboto;

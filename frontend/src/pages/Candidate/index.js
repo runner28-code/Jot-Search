@@ -52,6 +52,7 @@ export default function Candidate() {
     const formattedUpdateObject = {};
     Object.keys(updateObject).forEach(key => {
       if (updateObject[key] === '') {
+// Temp comment
         updateObject[key] = null;
       }
       if (updateObject[key] !== candidateData[key]) {
@@ -143,7 +144,6 @@ export default function Candidate() {
           handleCandidateUpdate={handleCandidateUpdate} />
         {/* Password Reset (Candidate and Coordinator) */}
         <PasswordReset
-// Temp comment
           role={role}
           candidateData={candidateData}
         />

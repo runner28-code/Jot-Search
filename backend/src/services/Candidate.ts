@@ -45,7 +45,6 @@ export const saveCandidate = async (
         },
       });
     }
-    return {
       result: true,
       message: existing ? "unsaved candidate" : "saved candidate",
     };
@@ -58,3 +57,4 @@ export const saveCandidate = async (
 export const getSavedCandidates = async (companyUserId: string) => {
   try {
     const user = await db.user.findFirst({
+      where: {

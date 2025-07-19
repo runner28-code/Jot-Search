@@ -1,4 +1,3 @@
-// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import PropTypes from 'prop-types';
@@ -17,7 +16,6 @@ export default function FeaturedJobs() {
   const titleStyles = 'text-h4 font-semibold font-spaceGrotesk';
   const titleStylesMoible = 'text-h4 font-semibold font-spaceGrotesk text-center';
   const cardStyles = 'mx-8 outline outline-1 outline-neutral-300 rounded-xxl p-12 w-[275px] h-[316px]';
-  const cardStylesMobile = 'mx-8 outline outline-1 outline-neutral-300 rounded-xl py-6 px-4 flex items-center';
   const cardContentStyles = '';
   const cardContentStylesMobile = 'ml-8';
   const cardContentTitle = 'font-spaceGrotesk text-lg mb-6';

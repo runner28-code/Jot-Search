@@ -59,3 +59,4 @@ CREATE TABLE "Candidate" (
     "otherIncomeAmount" TEXT,
     "pager" TEXT,
     "paperWorkOnFile" TEXT,
+    "password" TEXT,

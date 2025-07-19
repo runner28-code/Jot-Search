@@ -172,3 +172,5 @@ export class GetroService {
                         await saveMembers(result);
                     }
                     console.log(`${total} / ${(page - 1) * per_page + items.length}`);
+                    page++;
+                    repeatErr = 0;

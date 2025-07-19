@@ -40,7 +40,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     });
   }
 
-// Temp comment
   function handleSearchChange(searchTerm) {
     handleFilterChange('title', searchTerm);
   }
@@ -56,6 +55,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   }
   return (
     <div className={containerStyles}>
+// Temp comment
       <h5 className='text-[3rem] text-white font-spaceGrotesk font-semibold text-center mt-18 mb-16'>
         {`Search from ${totalJobs} Opportunities from ${totalCompanies} Companies`}
       </h5>

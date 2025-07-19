@@ -241,3 +241,6 @@ export class CandidateController {
           console.log({ typedUsers, typedCandidates })
           return [...typedUsers, ...typedCandidates];
         })
+
+        totalPromise = Promise.all([db.user.count({ where: whereWithoutStatus }), db.candidate.count({ where })]).then(([tppUsers, candidates]) => tppUsers + candidates)
+      } else if (isTppUserQuery) {

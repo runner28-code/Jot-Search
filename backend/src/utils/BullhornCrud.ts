@@ -161,6 +161,7 @@ export const saveClientContacts = async (contacts: any[]) => {
           },
         });
 
+        if (existing) {
           console.log(`ClientContact with ID: ${contact.id} exists`);
           return -1;
         }
@@ -197,7 +198,6 @@ export const saveCandidates = async (candidates: any[]) => {
       try {
         console.log(`\n\nSavng Candidate with ID = ${candidate.id}`);
         const parsedUser = parseBullhornCandidateToUser(candidate) as any;
-        if (parsedUser) {
           // await migrateUserInTPP(parsedUser);
         }
 
