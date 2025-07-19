@@ -9,7 +9,6 @@
             "cpu": 1024, 
             "memory": 2048, 
             "portMappings": [
-                {
                     "containerPort": 5000, 
                     "hostPort": 5000, 
                     "protocol": "tcp"
@@ -56,4 +55,5 @@
                 {
                     "name": "AUTH_SECRET", 
                     "value": "{SECRET_AUTH_SECRET}"
+                },
                 {

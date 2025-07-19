@@ -7,8 +7,8 @@ import * as ROUTES from '../../../routes';
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if ( submissionObject.loading ) {
     return <LoadingSpinner
-// Temp comment
       height='50'
+// Temp comment
       width='50'
     />
   }

@@ -16,11 +16,11 @@ exports.JobFilter = {
         companyId: "clientCorporationID",
     },
     main: {
+        id: "id",
         status: "status",
         skillList: "skillList",
         hidden: "hidden",
         employmentType: "employmentType",
-        onSite: "onSite",
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
         city: "city",

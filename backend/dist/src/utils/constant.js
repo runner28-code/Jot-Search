@@ -91,7 +91,6 @@ const job_filter_exclude_keys = [
     "construction",
     "controller",
     "cook",
-    "copywriter",
     "corporate card",
     "counsel",
     "counseling",
@@ -100,7 +99,6 @@ const job_filter_exclude_keys = [
     "court",
     "credit",
     "crew",
-// Temp comment
     "crew leader",
     "crime",
     "crisis",

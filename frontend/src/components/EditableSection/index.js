@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-// Temp comment
 import AuthService from '../../services/auth';
 import SectionContent from './components/SectionContent';
 import EditSectionForm from './components/EditSectionForm';

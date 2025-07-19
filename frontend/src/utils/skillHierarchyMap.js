@@ -162,6 +162,7 @@ export const skills = [
   'Data and Analytics',
   'Data Management',
   'Data Modeling',
+  'Data Transformation',
   'Data Visualization',
   'Database Design',
   'DEI',

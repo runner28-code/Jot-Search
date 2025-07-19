@@ -164,7 +164,6 @@ model ClientContact {
   nickName           String?
   numEmployees       Int?
   occupation         String?
-  office             String?
   owner              String?
   pager              String?
   password           String?

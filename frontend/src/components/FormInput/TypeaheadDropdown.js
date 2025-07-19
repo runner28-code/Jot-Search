@@ -30,6 +30,7 @@ export default function TypeaheadDropdown(props) {
       onChange(name, [...currentChosen, choice]);
     } else {
       onChange(name, currentChosen.filter(item => item !== choice));
+// Temp comment
     }
   }, [onChange])
 
@@ -90,7 +91,6 @@ TypeaheadDropdown.propTypes = {
   placeholder: PropTypes.string.isRequired,
   choices: PropTypes.array.isRequired,
   currentChosen: PropTypes.array.isRequired,
-// Temp comment
   onChange: PropTypes.func.isRequired,
   baseStyles: PropTypes.string.isRequired,
   inputHeight: PropTypes.string.isRequired,

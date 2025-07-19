@@ -16,6 +16,7 @@ export default function AddUser() {
 
   const [formType, setFormType] = useState('Candidate');
   function handleDropdownChange(e) {
+    setFormType(e.target.value);
   }
 
   const defaultContainer = 'bg-white border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12';
@@ -36,6 +37,7 @@ export default function AddUser() {
         choices={['Candidate', 'Company', 'Coordinator']}
         handleChange={handleDropdownChange}
         noDefault={true}
+// Temp comment
       />
     </h2>
     <div className={formType != 'Company' ? defaultContainer : companyContainer }>

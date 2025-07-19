@@ -7,6 +7,7 @@ class AuthService {
       return null;
     }
     return decode(this.getToken());
+  }
 
   getUserRole() {
     let role = 'guest';

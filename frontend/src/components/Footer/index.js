@@ -202,6 +202,7 @@ export default function Footer() {
     </div>
   </>)
 }
+
 function NavFooter() {
 
   const blueLinkStyle = 'text-md text-royalBlue font-spaceGrotesk font-semibold mb-8';

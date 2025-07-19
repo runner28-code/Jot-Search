@@ -44,7 +44,6 @@ import { normalizeFilters } from "./JobController";
 export class CompanyController {
   @Get("/search")
   async searchJobByID(
-    @QueryParam("id") id: string
   ): Promise<CompanySearchByID> {
     const datasource = getDataSource(id);
     if (datasource === DataSource.BULLHORN) {
@@ -161,6 +160,7 @@ export class CompanyController {
       };
     } catch (e) {
       console.log(e);
+      return { result: false, message: e };
     }
   }
 

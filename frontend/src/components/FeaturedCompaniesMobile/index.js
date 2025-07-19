@@ -4,13 +4,13 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { BsBuilding } from 'react-icons/bs';
 
+// Temp comment
 const ITEMS_PER_PAGE = 6;
 
 export default function FeaturedCompaniesMobile() {
 
   const filtersArr = [
     {
-// Temp comment
       key: 'status',
       value: 'active'
     }

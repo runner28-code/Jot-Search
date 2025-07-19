@@ -17,7 +17,6 @@ import DashboardPublicMin from '../../components/DashboardPublicMin';
 import InviteCandidates from './InviteCandidates';
 
 export default function CareerPage() {
-  const { width } = useWindowDimensions();
   const location = useLocation();
   const activeData = location.state;
 
@@ -28,7 +27,6 @@ export default function CareerPage() {
   const [careerData, setCareerData] = useState({});
 
   useEffect(async () => {
-// Temp comment
     const career = await getJobById(id);
     // Decode url encoded properties on career
     career.title = urlDecode(career.title);
