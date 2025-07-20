@@ -42,11 +42,11 @@ export default function InviteCandidates({ job }) {
           className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">
           <span>{item.label}</span>
           <button
+            className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs'
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
       ))}
     </div>)
-  }
 
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>

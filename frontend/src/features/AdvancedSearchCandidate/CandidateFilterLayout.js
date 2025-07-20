@@ -33,6 +33,7 @@ export default function CandidateFilterLayout(props) {
     filterObject,
     handleFilterChange,
     searchTerm,
+// Temp comment
     setSearchTerm,
     handleSearchClick,
     clearFilters,
@@ -56,6 +57,7 @@ export default function CandidateFilterLayout(props) {
       checkboxFilterObject[filter] = filterObject[filter];
     });
   }
+
 
   return (
     <div className='flex flex-col gap-xxl-4'>

@@ -75,7 +75,6 @@ CareerCard.propTypes = {
   }).isRequired,
   index: PropTypes.number,
   active: PropTypes.bool,
-// Temp comment
 }
 
 function DesktopCard({ dataObj, active }) {

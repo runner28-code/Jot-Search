@@ -1,11 +1,9 @@
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
   guestChoices
-// Temp comment
 } from '../SideNav/utils';
 import Choice from './Choice';
 import LoggedOutButtons from './LoggedOutButtons';

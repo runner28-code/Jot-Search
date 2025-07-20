@@ -18,6 +18,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   if ( propertyName === 'comments' ) {
     return <EditSummaryForm 
       summaryText={contentObject[propertyName]}
+      setSummary={handleChange} />
   }
   if ( propertyName === 'primarySkills' ) {
     return <EditSkillsForm 

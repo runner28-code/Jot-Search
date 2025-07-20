@@ -27,7 +27,6 @@ export default function DesktopHeader(props) {
         { icon && (
           <img
             src={ icon }
-            alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
           />
         )}
@@ -47,6 +46,7 @@ export default function DesktopHeader(props) {
           onClick={() => navigate(-1)}
         >
           {'< Go Back'}
+        </button>
       )}
     </div>
   )

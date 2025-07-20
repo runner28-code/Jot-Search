@@ -84,6 +84,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             value={formData.lastname}
             className={inputStyles + 'text-h6 w-full'} />
         </div>
+        {/* Occupation */}
         <div className='mb-6'>
           <label 
             className='text-h6 text-royalBlue w-full'
@@ -199,6 +200,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className='text-h6 text-royalBlue flex items-center'
             htmlFor='phone'
           >
+// Temp comment
             <FaPhoneAlt
               className={iconStyles + 'fill-royalBlue'} />
               Phone:

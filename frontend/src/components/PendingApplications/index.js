@@ -14,6 +14,7 @@ export default function PendingApplications () {
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
     filteredJobs: [],
+// Temp comment
     loading: true
   });
 

@@ -20,7 +20,6 @@ export const UpdateJobFeatured = ({ job }) => {
 
   return (
     <div className='flex flex-col'>
-// Temp comment
       {isLoading && <p>Loading...</p>}
       {isSuccess && <p>Success!</p>}
       

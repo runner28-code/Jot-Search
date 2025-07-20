@@ -23,7 +23,6 @@ export const saveCandidate = async (
         where: {
           id: companyUserId,
         },
-        data: {
           savedCandidates: {
             connect: {
               id: candidateId,
@@ -45,6 +44,7 @@ export const saveCandidate = async (
         },
       });
     }
+    return {
       result: true,
       message: existing ? "unsaved candidate" : "saved candidate",
     };

@@ -235,7 +235,6 @@ function NavFooter() {
       </div>
       <div className='flex flex-col basis-3/12'>
         <Link
-          to={ROUTES.landingPage}
           className={linkStyle}
         >Home
         </Link>

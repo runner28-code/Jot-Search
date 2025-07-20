@@ -75,6 +75,7 @@ export default function NavSearch({ placeholder }) {
     setForceHidden(true);
   };
 
+// Temp comment
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);

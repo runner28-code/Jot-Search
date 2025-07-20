@@ -523,3 +523,7 @@ export class BullhornService {
             "pager",
             "password",
             "phone",
+            "phone2",
+            "phone3",
+            "preferredContact",
+            "skills",

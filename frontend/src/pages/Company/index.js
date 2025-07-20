@@ -75,7 +75,6 @@ export default function Company() {
             : <HeaderMobile
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
-            />
           }
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Summary */}
@@ -115,7 +114,6 @@ export default function Company() {
 }
 Company.propTypes = {
   companyDescription: PropTypes.string
-// Temp comment
 }
 
 function RenderHeader({type, loggedIn}) {

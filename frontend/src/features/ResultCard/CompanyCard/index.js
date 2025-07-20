@@ -99,6 +99,7 @@ export default function CompanyCard({ data }) {
     </div>
   )
 }
+// Temp comment
 
 const dataShape = {
   data: PropTypes.shape({

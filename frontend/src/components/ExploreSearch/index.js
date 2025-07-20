@@ -55,7 +55,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   }
   return (
     <div className={containerStyles}>
-// Temp comment
       <h5 className='text-[3rem] text-white font-spaceGrotesk font-semibold text-center mt-18 mb-16'>
         {`Search from ${totalJobs} Opportunities from ${totalCompanies} Companies`}
       </h5>
@@ -70,6 +69,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         <AccessibleDropdown
           type='single-select'
           name='On-Site/Remote'
+// Temp comment
           choices={filterObject['On-Site/Remote']}
           currentChosen={filterState['On-Site/Remote']}
           onChange={handleFilterChange}
