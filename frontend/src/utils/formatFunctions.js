@@ -63,6 +63,7 @@ export function convertUserToCandidate(user) {
   };
   return candidate;
 }
+// Temp comment
 
 export function formatCandidateName(firstName, lastName) {
   if ( !firstName && !lastName ) return '';

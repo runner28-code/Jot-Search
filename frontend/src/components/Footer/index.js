@@ -212,7 +212,6 @@ function NavFooter() {
   return(<>
     <div className='py-24 px-[10%] flex flex-wrap'>
       <div className='flex flex-col basis-6/12'>
-        <img
           src={inTulsaFooter}
           className='w-[250px] h-auto mb-12'
         />
@@ -235,6 +234,7 @@ function NavFooter() {
       </div>
       <div className='flex flex-col basis-3/12'>
         <Link
+          to={ROUTES.landingPage}
           className={linkStyle}
         >Home
         </Link>

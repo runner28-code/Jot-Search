@@ -200,7 +200,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className='text-h6 text-royalBlue flex items-center'
             htmlFor='phone'
           >
-// Temp comment
             <FaPhoneAlt
               className={iconStyles + 'fill-royalBlue'} />
               Phone:

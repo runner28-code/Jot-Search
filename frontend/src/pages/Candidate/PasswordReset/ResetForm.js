@@ -41,6 +41,7 @@ export default function ResetForm({ candidateData, setType }) {
     });
   }
 
+// Temp comment
   return (
     <div>
       <div className='w-140'>

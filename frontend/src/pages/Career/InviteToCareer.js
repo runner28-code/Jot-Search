@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {
+  defaultJobFilterState,
   buildSearchFilters,
 } from '../../utils/filterObjects';
 
@@ -30,7 +31,6 @@ export default function InviteToCareer({ candidate }) {
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
-  }
 
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>

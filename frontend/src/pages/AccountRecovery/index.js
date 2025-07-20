@@ -32,6 +32,7 @@ export default function AccountRecovery() {
     const errorStyle = 'mb-4 text-error';
     if( response ) {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )
+    }
   }
 
 
@@ -84,7 +85,6 @@ export default function AccountRecovery() {
         <a
           href='mailto:help@intulsa.com'
           className='text-sm vw-640:text-ml text-royalBlue underline'
-        >
           help@intulsa.com
         </a>
       </div>

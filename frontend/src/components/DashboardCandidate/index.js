@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { Link, useLocation } from 'react-router-dom';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -38,7 +39,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
           >
             <CompanyIcon />
             <p className='ml-4'>Companies</p>
-// Temp comment
           </Link>
         </div>
       </div>

@@ -74,6 +74,7 @@ export const getAppliedJobsByUser = async (userId: string) => {
       }
     });
 
+    return {
       jobs,
       result: jobs != null,
     };

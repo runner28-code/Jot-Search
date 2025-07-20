@@ -5,7 +5,7 @@ import ExtendedEditableContent from './ExtendedEditableContent';
 export default function CareerProfileInfoContent(props) {
   const { role } = props;
   if ( role === 'company' ) {
-// Temp comment
     return <MinifiedCompanyView {...props} />
   }
+// Temp comment
   return <ExtendedEditableContent {...props} />

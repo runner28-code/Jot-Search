@@ -136,6 +136,7 @@ export default function RegistrationForm() {
   const buttonString = addType === 'candidate' ? 'Join' : 'Add Candidate';
 
   // Conditional styles
+  const userRegisterStyles = 'flex flex-col items-center w-3/4 vw-768:w-64% max-w-140 font-spaceGrotesk vw-768:py-16 vw-1024:py-24'
   const addCandidateStyles = 'flex flex-col items-center w-full font-spaceGrotesk'
   const containerStyles = addType === 'candidate' ? userRegisterStyles : addCandidateStyles;
   const midpointFlex = addType === 'candidate' ? '' : 'vw-900:flex justify-evenly';
@@ -212,7 +213,6 @@ export default function RegistrationForm() {
             type='single-select'
             name='experience'
             placeholder='Years of Experience' 
-            value={formObj.experience}
             onChange={handleChange}
             choiceObject={experienceMap}
             error={errors.includes('experience')}

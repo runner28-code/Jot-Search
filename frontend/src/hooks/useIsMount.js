@@ -1,4 +1,3 @@
-// Temp comment
 import { useRef, useEffect } from 'react';
 
 export const useIsMount = () => {
@@ -6,4 +5,5 @@ export const useIsMount = () => {
   useEffect(() => {
     isMountRef.current = false;
   }, []);
+// Temp comment
   return isMountRef.current;

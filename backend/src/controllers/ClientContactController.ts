@@ -30,6 +30,7 @@ export class ClientContactController {
         message: !contact ? "No client contact with given ID" : undefined,
       };
     } catch (error) {
+      return { message: error };
     }
   }
 

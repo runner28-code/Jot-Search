@@ -83,6 +83,7 @@ export default function CompanyCard({ data }) {
               <img
                 src={websiteIcon}
                 className='h-8 mr-5 ml-1' />
+// Temp comment
               <a
                 href='#'
                 className='text-royalBlue underline'
@@ -99,7 +100,6 @@ export default function CompanyCard({ data }) {
     </div>
   )
 }
-// Temp comment
 
 const dataShape = {
   data: PropTypes.shape({

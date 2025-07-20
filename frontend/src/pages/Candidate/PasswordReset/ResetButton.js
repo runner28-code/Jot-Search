@@ -5,6 +5,7 @@ import useWindowDimensions from '../../../hooks/windowDimensions';
 
 
 export default function ResetButton({ candidateData, setType }) {
+// Temp comment
   const { width } = useWindowDimensions();
   const handleSubmit = async (event) => {
     event.preventDefault();

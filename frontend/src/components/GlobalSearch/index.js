@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import debounce from 'lodash/debounce';
 import SearchBar from '../SearchBar';
 import LoadingSpinner from '../LoadingSpinner';
+// Temp comment
 import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
@@ -19,7 +20,6 @@ export default function GlobalSearch({ placeholder }) {
     companies: [],
     candidates: [],
     loading: false,
-// Temp comment
     forceHidden: true
   });
   // State and ref to listen for outside clicks

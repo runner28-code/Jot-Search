@@ -11,11 +11,11 @@
 }
 
 /* Adjust root font-size so 1rem = 10px for easier calculation */
-html {
   font-size: 62.5%;
 }
 
 body {
+  font-size: 1.6rem;
 }
 
 input[type="text"].placeholder-spaceGrotesk::placeholder {

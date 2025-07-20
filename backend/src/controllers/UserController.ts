@@ -6,7 +6,6 @@ import {
   Post,
   Put,
   Delete,
-  QueryParam,
   UploadedFile,
   Authorized,
   HeaderParam,
@@ -126,16 +125,3 @@ export class UserController {
     } catch (error) {
       return {
         result: false,
-        error: "Please check email, email maybe invalid one",
-      };
-    }
-
-    if (user.role === CANDIDATE) {
-      try {
-        const res = await (
-          await BullhornService.getClient()
-        ).syncUserTppToBullhorn(user);
-        if (res && res.changedEntityId) {
-          console.log("changedEntityId", res.changedEntityId);
-          data = { ...data, externalId: res.changedEntityId };
-        }

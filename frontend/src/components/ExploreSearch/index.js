@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearch';
-import AccessibleDropdown from '../AccessibleDropdown';
 import LoadingSpinner from '../LoadingSpinner';
 import { jobFilterObject } from '../../utils/filterObjects';
 import * as ROUTES from '../../routes';
@@ -69,7 +68,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
         <AccessibleDropdown
           type='single-select'
           name='On-Site/Remote'
-// Temp comment
           choices={filterObject['On-Site/Remote']}
           currentChosen={filterState['On-Site/Remote']}
           onChange={handleFilterChange}
