@@ -126,7 +126,6 @@ export class BullhornService {
       },
       { encode: false }
     );
-    const url = `${this.oauth_url}/token?${query}`;
     console.log(url);
     const res = await axios.post(url);
     console.log(res.status);
@@ -528,3 +527,6 @@ export class BullhornService {
             "preferredContact",
             "skills",
             "source",
+          ].join(","),
+          query:
+            "isDeleted:0  AND NOT status:Archive NOT clientCorporation.status:Archive",

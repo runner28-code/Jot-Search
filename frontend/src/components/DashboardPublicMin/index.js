@@ -18,12 +18,12 @@ export default function DashboardPublicMin({type}) {
   if( width <= 990 ) {
     return(
       <div className='py-8 bg-gradient-to-t from-sky-500 via-sky-700 to-sky-700 flex items-center justify-center text-white mb-12 flex-col px-[5%]'>
-// Temp comment
         <div className='flex items-center justify-start w-full'>
           <div className='flex items-center text-lg'>
             <LeftIcon />
             <button
               className='text-white underline'
+// Temp comment
               onClick={() => navigate(-1)}
             >
             Back

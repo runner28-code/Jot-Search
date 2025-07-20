@@ -18,7 +18,6 @@ export default function DashboardPublic({togglePassState}) {
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
   const active = ' bg-royalBlue';
-// Temp comment
 
   const careerTitle = totalJobsCount + ' Open Careers';
   const companyTitle = totalCompaniesCount  + ' Companies';
@@ -54,7 +53,6 @@ export default function DashboardPublic({togglePassState}) {
           >
             <img src={filterIcon} />
             { width >= 990 && <FilterText />}
-          </button>
         </div>
       </div>
     </div>

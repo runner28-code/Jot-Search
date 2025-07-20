@@ -48,7 +48,6 @@ export default function LandingPage() {
     </main>
   )
 }
-// Temp comment
 
 function renderSearch() {
   const { width } = useWindowDimensions();

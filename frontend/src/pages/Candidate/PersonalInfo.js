@@ -14,7 +14,6 @@ import {
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
 
-const PREFERENCE_ITEMS = {
   workAuthorized: 'Are you legally authorized to work in the US on a fulltime basis for any employer?',
 }
 
@@ -57,6 +56,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     }
     if( value !== 'Community Partner' ) {
       setReferralChoice(false);
+      setFormData({
         ...formData,
         community: ''
       });

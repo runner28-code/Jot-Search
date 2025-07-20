@@ -86,7 +86,6 @@ export async function getSavedCandidates() {
   return normalizeData(data.candidates);
 }
 
-// Temp comment
 export async function saveCandidate(userId, candidateId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCandidate, {
     'company': userId,

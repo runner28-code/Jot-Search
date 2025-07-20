@@ -1,3 +1,4 @@
+// Temp comment
 import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -56,7 +57,6 @@ export default function NavSearch({ placeholder }) {
   const { companies, total: totalCompanies, isLoading: isLoadingCompanies } = useGetCompanies({ ...getFiltersByTab('companies'), count: NUM_ITEMS_PER_TYPE, page: 1, enabled: isOpen });
   const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: NUM_ITEMS_PER_TYPE, page: 1, enabled: isOpen && userType === 'coordinator' });
   // State and ref to listen for outside clicks
-// Temp comment
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 

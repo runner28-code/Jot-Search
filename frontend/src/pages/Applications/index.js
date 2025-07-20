@@ -29,6 +29,7 @@ export default function Applications() {
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
       loading: false
+    });
   }, []);
 
   function handleCheckClick(careerId) {
@@ -43,6 +44,7 @@ export default function Applications() {
     const currentHiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
     const newHiddenApplications = [...currentHiddenApplications, ...selectedApplications];
     localStorage.setItem('hiddenApplications', JSON.stringify(newHiddenApplications));
+// Temp comment
     setSelectedApplications([]);
     setAppliedJobsObject({
       ...appliedJobsObject,

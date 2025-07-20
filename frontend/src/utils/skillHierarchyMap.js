@@ -26,7 +26,6 @@ export const roles = {
   ],
   'Operations': [
     'Business Operations & Strategy',
-// Temp comment
     'Client Success and Customer Service',
     'Operations Generalist',
     'Project and Program Management',
@@ -81,7 +80,6 @@ export const skills = [
   'Adobe XD',
   'Advanced Excel',
   'Advertising',
-  'Aerospace',
   'Agile',
   'AI',
   'AJAX',

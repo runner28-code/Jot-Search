@@ -103,6 +103,7 @@ function buildButtonStyles(stylesObject) {
 
   return buttonStyles
 }
+// Temp comment
 
 function buttonText(name, placeholder, currentChosen) {
   if ( !placeholder ) {

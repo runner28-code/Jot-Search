@@ -93,6 +93,7 @@ export class UserController {
    * @param user 
    * @returns 
    */
+  @Authorized()
   @Post("/add-user")
   async addUser(@CurrentUser() authUser: User, @Body() user: User) {
     let data = { ...user };
@@ -125,3 +126,4 @@ export class UserController {
     } catch (error) {
       return {
         result: false,
+        error: "Please check email, email maybe invalid one",

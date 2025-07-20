@@ -69,6 +69,7 @@ export default function Dropdown(props) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
+// Temp comment
   const handleClick = (choice) => {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {
@@ -115,6 +116,7 @@ export default function Dropdown(props) {
       <div
         className={baseStyles + inputHeight + 'text-royalBlue mb-0 flex items-center cursor-pointer'}
         onClick={() => setIsOpen(isOpen => !isOpen)}
+      >
         { renderValue(type, name, currentChosen, placeholder) }
       </div>
       { renderChoices(choices, currentChosen, isOpen, handleClick) }

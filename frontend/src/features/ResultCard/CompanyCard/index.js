@@ -64,7 +64,6 @@ export default function CompanyCard({ data }) {
               <p className='text-textBlack'>{employeeString}</p>
             </div>
           </div>
-          {/* Second row */}
           <div className='flex items-center mt-12'>
             {/* Linkedin */}
             <div className='w-1/3 flex items-center'>
@@ -94,7 +93,6 @@ export default function CompanyCard({ data }) {
         </div>
       </Link>
       <FavoriteButton
-// Temp comment
         type={'company'}
         data={data} />
     </div>

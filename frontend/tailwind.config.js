@@ -51,7 +51,6 @@ module.exports = {
         searchGreen: '#62CA71',
         success: '#2EA248',
         error: '#DE5454',
-        warning: '#F4D12E',
         disabledGrey: '#C9C9CE',
         magenta: '#EB4A87',
         // Colors included in design but not in Web Style Guide
@@ -127,6 +126,7 @@ module.exports = {
         '18': '4.5rem',
         '19': '4.75rem',
         '22': '5.5rem',
+        '26': '6.5rem',
         '30': '7.5rem',
         '34': '8.5rem',
         '35': '8.75rem',

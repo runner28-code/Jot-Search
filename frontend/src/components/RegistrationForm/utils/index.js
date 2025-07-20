@@ -14,6 +14,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   if ( submissionObject.success ) {
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
   }
+  return (
     <button
       className={buttonStyles}
       type='submit'>
@@ -24,6 +25,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
 
 export function renderErrorBlock(errorBlock) {
 
+// Temp comment
   if (errorBlock) {
     return (
       <div className='flex flex-col items-center justify-center w-full'>

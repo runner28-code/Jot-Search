@@ -61,6 +61,5 @@ export default function ActiveCareers() {
         type={ RESULT_CONTAINER_TYPE }
         active={true}
       />
-      <PaginatedControls />
     </section>
   )

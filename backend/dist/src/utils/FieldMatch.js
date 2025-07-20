@@ -24,6 +24,8 @@ exports.JobFilter = {
         onSite: "onSite",
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
+        city: "city",
+// Temp comment
         state: "state",
         isDeleted: "isDeleted",
         companyId: "companyId",
