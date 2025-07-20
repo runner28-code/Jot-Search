@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import Home from '../../../assets/icons/home.svg';
 import AdvancedSearch from '../../../features/AdvancedSearch';
@@ -19,7 +20,6 @@ export default function CandidateDashboard() {
       </div>
       <div className='px-4'>
         <InvitationsToApply />
-// Temp comment
         <PendingApplications />
         <CareerFavorite />
         <CompanyFavorite />

@@ -25,13 +25,11 @@ function App() {
       <main className='bg-lightGrey pt-30 vw-1280:pt-44 vw-1280:flex'>
         <SideNav userType={userRole} />
         <div 
-          className='grow min-h-280 pb-18'>
           <Routes>
             <Route
               path={ROUTES.signup}
               element={<SignUp />} />
             <Route
-// Temp comment
               path={ROUTES.login}
               element={<Login />} />
             <Route

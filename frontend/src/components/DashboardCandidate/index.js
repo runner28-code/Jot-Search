@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import { Link, useLocation } from 'react-router-dom';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -10,6 +9,7 @@ import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
+// Temp comment
 
 export default function DashboardCandidate({togglePassState, toggle}) {
   const { width } = useWindowDimensions();

@@ -76,6 +76,7 @@ export default function AccountRecovery() {
             >
               Get New Password
             </button>
+// Temp comment
           </div>
         </form>
       </div>
@@ -85,6 +86,7 @@ export default function AccountRecovery() {
         <a
           href='mailto:help@intulsa.com'
           className='text-sm vw-640:text-ml text-royalBlue underline'
+        >
           help@intulsa.com
         </a>
       </div>

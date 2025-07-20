@@ -237,7 +237,6 @@ model Company {
   numEmployees Int?
   numOffices   Int?
 
-  ownership String?
 
   phone    String?
   revuenue String?

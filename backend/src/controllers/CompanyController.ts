@@ -33,6 +33,7 @@ import db from "../utils/db";
 import {
   CompanyFilter,
   CompanyFilterKey,
+  JobFilter,
 } from "../utils/FieldMatch";
 import { COORDINATOR } from "../utils/constant";
 import { sendCandidatesToEmployers } from "../services/EmailService";
@@ -92,7 +93,6 @@ export class CompanyController {
       return {
         result: await sendCandidatesToEmployers(
           candidates_list,
-          body.employers_emails
         )
       }
     } catch (error) {

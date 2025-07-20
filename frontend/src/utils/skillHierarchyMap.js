@@ -26,6 +26,7 @@ export const roles = {
   ],
   'Operations': [
     'Business Operations & Strategy',
+// Temp comment
     'Client Success and Customer Service',
     'Operations Generalist',
     'Project and Program Management',
@@ -131,6 +132,7 @@ export const skills = [
   'Compensation',
   'Competitive Analysis',
   'Compliance',
+  'CompTIA Network+',
   'Consultative Sales',
   'Consulting',
   'Consumer Market Research',

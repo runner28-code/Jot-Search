@@ -6,6 +6,7 @@ import {
   Post,
   Put,
   Delete,
+  QueryParam,
   UploadedFile,
   Authorized,
   HeaderParam,
@@ -92,7 +93,6 @@ export class UserController {
    * @param user 
    * @returns 
    */
-  @Authorized()
   @Post("/add-user")
   async addUser(@CurrentUser() authUser: User, @Body() user: User) {
     let data = { ...user };

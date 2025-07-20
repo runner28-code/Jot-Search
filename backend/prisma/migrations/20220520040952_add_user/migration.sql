@@ -10,6 +10,7 @@ CREATE TABLE "User" (
     "state" TEXT,
     "resume" TEXT,
     "phone" TEXT,
+    "linkedin" TEXT,
     "skills" TEXT,
     "expertise" TEXT,
     "experienceYears" TEXT,

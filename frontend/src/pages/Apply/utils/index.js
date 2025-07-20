@@ -36,6 +36,7 @@ export const defaultState = {
   ethnicity: '',
   gender: '',
   workAuthorized: '',
+  disability: '',
   veteran: '',
   loading: true
 }

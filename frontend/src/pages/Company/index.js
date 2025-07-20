@@ -110,7 +110,6 @@ export default function Company() {
           companyData={companyData}
         />
       </div>
-// Temp comment
     </div>
   )
 }

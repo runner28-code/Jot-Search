@@ -14,6 +14,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     setShowDropdown(false);
     handleFilterChange(choice);
   }
+
   function renderDropdown( showDropdown ) {
     if ( !showDropdown ) {
       return null
@@ -45,6 +46,7 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
         className={ wrapperStyles }>
         <p
           id='title'
+// Temp comment
           className='Desktop-Body-textBody-paragraph-2 text-charcoal'>{ timeframe }</p>
         <img 
           className='w-6 mr-7'

@@ -1,4 +1,3 @@
-// Temp comment
 import { useRef } from 'react';
 
 const useComponentWillMount = (cb) => {
@@ -6,4 +5,3 @@ const useComponentWillMount = (cb) => {
 
   if (willMount.current) cb()
 
-  willMount.current = false

@@ -115,7 +115,6 @@ export default function Dropdown(props) {
       <div
         className={baseStyles + inputHeight + 'text-royalBlue mb-0 flex items-center cursor-pointer'}
         onClick={() => setIsOpen(isOpen => !isOpen)}
-      >
         { renderValue(type, name, currentChosen, placeholder) }
       </div>
       { renderChoices(choices, currentChosen, isOpen, handleClick) }

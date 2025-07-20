@@ -2,7 +2,6 @@ import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   candidateChoices,
-// Temp comment
   companyChoices,
   coordinatorChoices,
   guestChoices,
@@ -19,7 +18,6 @@ export default function SideNav({ userType }) {
   }
 
   if( userType === 'guest' ) {
-    return null;
   }
   const { width } = useWindowDimensions();
   if ( width < 1280 ) {

@@ -36,7 +36,6 @@
             "warn",
             "multiline"
         ]
-    },
     "settings": {
         "react": {
           "createClass": "createReactClass", // Regex for Component Factory to use,

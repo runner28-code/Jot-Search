@@ -19,7 +19,6 @@ class AuthService {
 
   loggedIn() {
     // Checks if there is a saved token and it's still valid
-    const token = this.getToken();
     return !!token && !this.isTokenExpired(token); // handwaiving here
   }
 
@@ -84,6 +83,7 @@ class AuthService {
 
   async refreshSavedCandidates() {
     try {
+      const { user_id } = this.getProfile();
       const candidates = await getSavedCandidates(user_id);
       const candidateIDs = candidates.map(candidate => candidate.id);
       localStorage.setItem('savedCandidates', JSON.stringify(candidateIDs));

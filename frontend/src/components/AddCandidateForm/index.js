@@ -101,6 +101,7 @@ export default function RegistrationForm() {
         });
       }, 2000);
     }
+// Temp comment
   }, [submissionObject.success])
 
   async function handleSubmit(event) {
@@ -213,6 +214,7 @@ export default function RegistrationForm() {
             type='single-select'
             name='experience'
             placeholder='Years of Experience' 
+            value={formObj.experience}
             onChange={handleChange}
             choiceObject={experienceMap}
             error={errors.includes('experience')}

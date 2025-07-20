@@ -31,6 +31,7 @@ CREATE TABLE "ClientContact" (
     "division" TEXT,
     "email" TEXT,
     "email2" TEXT,
+    "email3" TEXT,
     "externalID" TEXT,
     "fax" TEXT,
     "fax2" TEXT,

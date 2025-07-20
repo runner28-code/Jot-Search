@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-// Temp comment
 function isTodayOrYesterday(dateObj) {
   let returnObj = {
     isToday: false,

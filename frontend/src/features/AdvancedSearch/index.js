@@ -60,7 +60,6 @@ export default function AdvancedSearch({ disabledTabs }) {
   const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);
 
-// Temp comment
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
