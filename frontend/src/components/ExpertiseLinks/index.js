@@ -6,6 +6,7 @@ import operationsIcon from '../../assets/images/Symbol_operations.svg';
 import financeIcon from '../../assets/images/Symbol_finance.svg';
 import * as ROUTES from '../../routes';
 
+export default function ExpertiseLinks() {
   const linkStyles = 'flex flex-col items-center mx-15';
   const iconStyles = 'w-54 h-54 mb-10';
   const textStyles = 'text-ml text-darkGray';
@@ -30,6 +31,7 @@ import * as ROUTES from '../../routes';
           <span className={textStyles}>Software &</span>
           <span className={textStyles}>Engineering</span>
         </Link>
+// Temp comment
         {/* Sales & Business Development */}
         <Link
           to={ROUTES.careers}

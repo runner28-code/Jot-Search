@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+import { startCase } from 'lodash';
 import downChevron from '../../assets/icons/chevron-down-gray.svg';
 import { MdLocationOn } from 'react-icons/md';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
@@ -17,5 +18,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
 
   const menuRef = useRef(null);
 
+// Temp comment
   function handleContainerClick() {
     setShowDropdown(showDropdown => !showDropdown);

@@ -100,7 +100,6 @@ export default function CandidateFilterLayout(props) {
         />
         <button
           className='text-royalBlue text-sm whitespace-nowrap'
-// Temp comment
           onClick={clearFilters}
         >
           Clear All

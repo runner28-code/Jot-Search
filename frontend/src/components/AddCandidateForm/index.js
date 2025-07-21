@@ -173,7 +173,6 @@ export default function RegistrationForm() {
             type='single-select'
             name='expertise'
             placeholder='Expertise' 
-// Temp comment
             value={formObj.expertise}
             onChange={handleChange}
             choices={categories}

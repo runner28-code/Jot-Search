@@ -126,6 +126,7 @@ export class BullhornService {
       },
       { encode: false }
     );
+    const url = `${this.oauth_url}/token?${query}`;
     console.log(url);
     const res = await axios.post(url);
     console.log(res.status);
@@ -164,7 +165,6 @@ export class BullhornService {
         this.refresh_token = refresh_token;
         return await this.login();
       }
-      return await this.init();
     } catch (error: any) {
       console.log("Error on getNewAccessToken", error.message);
       return await this.init();

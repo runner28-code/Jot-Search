@@ -6,7 +6,6 @@ import FormInput from '../../../components/FormInput';
 import {
   skills as skillChoices,
   roles as roleChoices,
-// Temp comment
 } from '../../../utils/skillHierarchyMap';
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import { BiUpload as UploadIcon } from 'react-icons/bi';

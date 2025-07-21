@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -61,6 +60,7 @@ export default function NavSearch({ placeholder }) {
   const menuRef = useRef(null);
 
   /* EVENT HANDLERS */
+// Temp comment
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setForceHidden( false );

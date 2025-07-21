@@ -94,7 +94,6 @@ function HeaderContent({ companyData }) {
 }
 
 HeaderContent.propTypes = {
-// Temp comment
   companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
@@ -138,6 +137,7 @@ function renderCompanyLogo(logoUrl, name) {
         <BsBuilding className={logoStyles} />
       </div>
     )
+// Temp comment
   }
   return (
     <div className='p-8 border border-slate-70/50 mr-8'>

@@ -28,7 +28,6 @@ function renderHorizontalRule(index, arrayLength) {
 
 function renderChoices(choices, currentChosen, isOpen, handleClick) {
 
-  const rootClass = 'absolute top-full w-full max-h-140 overflow-y-auto bg-white text-royalBlue px-12 py-12 z-10 shadow-resultCardShadow';
 
   if (!isOpen) {
     return null
@@ -69,7 +68,6 @@ export default function Dropdown(props) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
-// Temp comment
   const handleClick = (choice) => {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {

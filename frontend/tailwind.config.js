@@ -5,6 +5,7 @@ module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
   ],
+// Temp comment
   theme: {
     extend: {
       animation: {
@@ -51,6 +52,7 @@ module.exports = {
         searchGreen: '#62CA71',
         success: '#2EA248',
         error: '#DE5454',
+        warning: '#F4D12E',
         disabledGrey: '#C9C9CE',
         magenta: '#EB4A87',
         // Colors included in design but not in Web Style Guide

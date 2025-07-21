@@ -10,6 +10,7 @@ import {
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
+// Temp comment
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 
 export default function InviteToCareer({ candidate }) {
@@ -47,7 +48,6 @@ export default function InviteToCareer({ candidate }) {
       ))}
     </div>)
   }
-// Temp comment
 
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Careers' : 'Select Careers'}</div>

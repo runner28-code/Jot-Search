@@ -94,6 +94,7 @@ export default function Candidate() {
         classOverride='h-18 w-18'
         containerClassOverride='pt-2'
         backButton
+// Temp comment
       />
       {/* Candidate Card (Company and Coordinator) */}
       {role !== 'candidate' && 

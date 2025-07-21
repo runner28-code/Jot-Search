@@ -43,7 +43,6 @@ export type Job = {
   locations?: string;
   organization_id?: string;
   passes_filter?: string;
-  posted_at?: string;
   slug?: string;
   source?: string;
   status?: string;

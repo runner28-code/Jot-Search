@@ -82,6 +82,7 @@ export const candidateFilterObject = {
     'Part-Time',
     'Contract',
     'Contract to Hire',
+// Temp comment
   ],
   'Authorized to work in the US': [
     'Any',

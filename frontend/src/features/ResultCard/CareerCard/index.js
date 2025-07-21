@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
-import postingAgeIcon from '../../../assets/icons/calendar.svg';
 import clockIcon from '../../../assets/icons/clock.svg';
 import salaryIcon from '../../../assets/icons/salary.svg';
 import featuredIcon from '../../../assets/icons/pyramid.svg';
@@ -97,6 +96,7 @@ function DesktopCard({ dataObj, active }) {
         {/* Title */}
         <div className='flex'>
           <h6 className='text-xl font-spaceGrotesk font-semibold text-charcoal leading-none'>{data.title}</h6>
+          { renderFeaturedIcon(dataObj?.data?.featured) }
         </div>
         {/* Expertise */}
         <p className='text-md text-royalBlue font-spaceGrotesk font-semibold mt-6'>{categoryString}</p>

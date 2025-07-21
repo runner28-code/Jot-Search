@@ -25,11 +25,11 @@ exports.JobFilter = {
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
         city: "city",
-// Temp comment
         state: "state",
         isDeleted: "isDeleted",
         companyId: "companyId",
     },
+// Temp comment
 };
 exports.CompanyFilter = {
     bullhorn: {

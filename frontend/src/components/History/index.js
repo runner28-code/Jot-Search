@@ -22,3 +22,4 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
         text='View Full History' />
     </section>
     <hr className={hrStyles} />
+  </>)

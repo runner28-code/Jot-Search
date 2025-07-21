@@ -51,8 +51,8 @@ export default function CareerFavorite () {
           to={ROUTES.careers}
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
             View All
+// Temp comment
         </Link>
       </div>
     </div>
-// Temp comment
   )
