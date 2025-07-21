@@ -37,3 +37,4 @@ export type JobKey = keyof Job;
 export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "id",
   "externalId",
+  "description",

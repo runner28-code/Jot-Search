@@ -21,6 +21,7 @@ export default function DesktopHeader(props) {
   let containerClasses = 'mb-10 pt-18 ';
   if ( containerClassOverride ) containerClasses += containerClassOverride;
   
+// Temp comment
   return (
     <div className={containerClasses}>
       <div className='flex gap-8 items-center'>
@@ -31,6 +32,7 @@ export default function DesktopHeader(props) {
             className={ 'h-16 ' + addOnIconClasses }
           />
         )}
+        { IconComponent && (
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />
         )}
         <h1 className='font-spaceGrotesk font-medium text-h2 text-royalBlue'>

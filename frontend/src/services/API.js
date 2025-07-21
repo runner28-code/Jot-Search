@@ -171,6 +171,7 @@ export async function saveCompany(candidateId, companyId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCompany, {
     'company': companyId,
     'candidate': candidateId,
+  });
 
   if (data.messsage === 'saved company') {
     AuthService.toggleSavedCompany(companyId, 'save');
@@ -240,3 +241,11 @@ export async function getJobById(id) {
     }
   });
   return normalizeData(data.job);
+}
+
+export async function getAppliedJobs(id) {
+  const params = id ? { candidate: id } : {}; // If no id is passed, will default to logged in user
+  const { data } = await API.get(ROUTES.APIappliedJobs, {
+    params
+  });
+  return normalizeData(data.jobs);

@@ -247,3 +247,4 @@ export class CandidateController {
         delete where.status
         delete where.firstName
         candidatesPromise = db.user.findMany({
+          where,

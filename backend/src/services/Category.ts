@@ -7,3 +7,4 @@ export const getCategoriesByFilter = async (
   count?: number,
   operator: Operator = "OR"
 ) => {
+  // TODO: assumes format for fields and filters

@@ -60,3 +60,4 @@ CREATE TABLE "Candidate" (
     "pager" TEXT,
     "paperWorkOnFile" TEXT,
     "password" TEXT,
+    "payrollClientStartDate" TIMESTAMP(3),

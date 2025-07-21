@@ -15,7 +15,6 @@ import {
 
 export default function CandidateCard({ data, disableLink }) {
   const avatarUrl = formatAvatarUrl(data.avatar, data.firstName, data.lastName);
-  const nameString = data.firstName + ' ' + data.lastName;
   const experienceString = formatYearsExperience(data.experienceYears, data.experience);
   const addressString = buildCandidateAddress(data);
   const expertiseString = data.expertise ? data.expertise : 'No expertise listed';
@@ -96,7 +95,6 @@ export default function CandidateCard({ data, disableLink }) {
   )
 }
 
-// Temp comment
 CandidateCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,

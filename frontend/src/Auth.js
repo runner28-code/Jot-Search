@@ -4,7 +4,6 @@ import {
   AddUser,
   Applications,
   Candidate,
-// Temp comment
   Candidates,
   Dashboard,
   Favorites,

@@ -102,6 +102,7 @@ export default function DesktopLayout(props) {
 
       {/* Coordinator Status */}
       {
+// Temp comment
         role === 'coordinator' && (
           <div className='flex flex-col space-y-8'>
             <UpdateJobStatus job={careerData} />
@@ -128,7 +129,6 @@ DesktopLayout.propTypes = {
     postingAge: PropTypes.string.isRequired,
     salaryString: PropTypes.string.isRequired,
   }).isRequired
-// Temp comment
 }
 
 function renderLogo(logo) {

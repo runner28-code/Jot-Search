@@ -11,6 +11,7 @@ const job_filter_exclude_keys = [
   "adult",
   "advocacy",
   "advocate",
+  "aircraft",
   "alumni",
   "americorps",
   "analyzer tech",
@@ -297,3 +298,4 @@ const job_filter_exclude_keys = [
   "political science",
   "porter",
   "portioner",
+  "pretreatment",

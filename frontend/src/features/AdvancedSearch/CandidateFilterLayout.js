@@ -19,6 +19,7 @@ const dropdownFilters = [
   'Experience',
   'Remote Availability',
   'Employment Type',
+];
 const checkboxFiltersCoord = [
   'Authorized to work in the US',
   'Open to Relocation',
@@ -99,7 +100,6 @@ export default function CandidateFilterLayout(props) {
         />
         <button
           className='text-royalBlue text-sm whitespace-nowrap'
-          onClick={clearFilters}
         >
           Clear All
         </button>

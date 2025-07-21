@@ -17,7 +17,6 @@ export default function ResetForm({ candidateData, setType }) {
 
     if( formData.password !== formData.confirmPassword ) {
       setMatch(false);
-// Temp comment
     }
 
     if( formData.password === formData.confirmPassword ) {
@@ -61,7 +60,6 @@ export default function ResetForm({ candidateData, setType }) {
         />
       </div>
       { renderMatch(match) }
-      <button
         className='h-20 w-150 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
         onClick={handleSubmit}
       >

@@ -84,3 +84,4 @@ export type AllJobsResponse = {
   getro: JobSearchByFilterResponse;
   main: JobSearchByFilterResponse;
 };
+

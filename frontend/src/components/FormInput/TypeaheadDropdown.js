@@ -6,6 +6,7 @@ import ChoiceListItem from '../ChoiceListItem';
 
 export default function TypeaheadDropdown(props) {
   const {
+    type, 
     dropdownType, 
     disabled,
     name, 

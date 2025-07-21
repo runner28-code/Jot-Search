@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
+// Temp comment
 import Checkbox from '../Checkbox';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {BsClipboardCheck} from 'react-icons/bs';
@@ -55,7 +56,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
       </Link>
       {
         selectableProps && selectableProps.selectable ?
-// Temp comment
           <Checkbox
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}

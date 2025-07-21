@@ -50,7 +50,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     return (
       <div className={containerStyles}>
         <LoadingSpinner color='#FDFDFD' />
-// Temp comment
       </div>
     );
   }

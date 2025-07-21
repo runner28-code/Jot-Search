@@ -262,3 +262,4 @@ export class JobController {
       ALLOWED_GETRO_FILTERS.has(field as keyof Job)
     );
     const _fields = filteredFields?.length ? filteredFields.join(", ") : "*";
+

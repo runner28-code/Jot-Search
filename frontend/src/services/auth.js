@@ -46,6 +46,7 @@ class AuthService {
       await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
       await this.refreshSavedCandidates();
+    }
     window.location.assign('/');
   }
 
@@ -116,6 +117,7 @@ class AuthService {
     }
     localStorage.setItem('savedCompanies', JSON.stringify(savedCompanies));
   }
+// Temp comment
 
   getSavedCompanyIDs() {
     return JSON.parse(localStorage.getItem('savedCompanies')) || [];

@@ -18,7 +18,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 const socialIconStyle = 'w-18 h-18 ml-8';
 const socialIconStyleMobile = '';
 
-// Temp comment
 export default function Footer() {
 
   const { width } = useWindowDimensions();
@@ -376,7 +375,6 @@ function NavFooterMobile() {
           href="/careers"
           className={linkStyle}
         >
-          Marketing Job Openings
         </a>
         <a
           href="/careers"

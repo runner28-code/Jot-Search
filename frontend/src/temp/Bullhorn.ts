@@ -200,3 +200,4 @@ export type Candidate = {
     employmentPreference?: string;
     ethnicity?: string;
     experience?: string;
+    externalID?: string;

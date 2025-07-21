@@ -159,7 +159,6 @@ export class BullhornService {
       console.log("access token url: ", url);
       const res = await axios.post(url);
       console.log(res.status);
-      if (res.status === 200) {
         const { access_token, refresh_token } = res.data;
         this.access_token = access_token;
         this.refresh_token = refresh_token;
@@ -247,6 +246,7 @@ export class BullhornService {
             "dateAdded",
             "dateFounded",
             "dateLastModified",
+            "externalID",
             "feeArrangement",
             "funding",
             "industryList",
@@ -541,3 +541,11 @@ export class BullhornService {
             Accept: "*/*",
           },
         });
+        if (res.status === 200) {
+          const { data } = res.data;
+          total = res.data.total;
+          const updatedData = data.map((d: any) => ({
+            ...d,
+            id: `bl-${d.id}`,
+            address_address1: d.address?.address1 || null,
+            address_address2: d.address?.address2 || null,

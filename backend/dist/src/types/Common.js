@@ -10,8 +10,10 @@ var Tables;
     Tables["COMPANIES"] = "Companies";
     Tables["JOBS"] = "Jobs";
     Tables["USER"] = "User";
+    Tables["CONTACTS"] = "Contacts";
     Tables["LEADS"] = "Leads";
     Tables["CANDIDATES"] = "Candidates";
+// Temp comment
     Tables["APPLICATIONS"] = "Applications";
     Tables["SAVEDJOBS"] = "SavedJobs";
     Tables["SAVED_COMPANIES"] = "SavedCompanies";

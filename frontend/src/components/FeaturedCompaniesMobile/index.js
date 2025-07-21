@@ -18,6 +18,7 @@ export default function FeaturedCompaniesMobile() {
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(
+// Temp comment
     <div className='py-48 px-[5%] flex flex-col items-center'>
       { renderColorShapes() }
       <h2 className='text-h5 text-center font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
@@ -43,6 +44,5 @@ export default function FeaturedCompaniesMobile() {
           Browse All
         </Link>
       </div>
-// Temp comment
     </div>
   )

@@ -129,3 +129,5 @@ export class UserController {
         error: "Please check email, email maybe invalid one",
       };
     }
+
+    if (user.role === CANDIDATE) {

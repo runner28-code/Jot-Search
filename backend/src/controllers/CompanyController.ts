@@ -31,7 +31,6 @@ import { getDataSource, getFilterConditions } from "../utils";
 import db from "../utils/db";
 
 import {
-  CompanyFilter,
   CompanyFilterKey,
   JobFilter,
 } from "../utils/FieldMatch";
@@ -127,6 +126,7 @@ export class CompanyController {
   async savedCompanies(
     @CurrentUser() authUser: User,
     @QueryParam("candidate") candidate: string
+  ) {
     return await getSavedCompanies(candidate || authUser.id!);
   }
 
@@ -219,3 +219,4 @@ export class CompanyController {
       const companiesPromise = db.company.findMany({
         where: wheres,
         take: count,
+        skip: skip < 0 ? 0 : skip,
