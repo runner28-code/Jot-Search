@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getJobById } from '../../services/API';
 import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 import MobileLayout from './MobileLayout';
@@ -107,3 +106,4 @@ function renderNotification(activeData, careerData) {
       />
     </>)
   }
+  return null

@@ -52,6 +52,7 @@ export default function RegistrationFormInternal(loggedIn) {
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
+  const [referralChoice, setReferralChoice] = useState(false);
   const [commObj, setCommObj] = useState(defaultCommunity);
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
@@ -144,6 +145,7 @@ export default function RegistrationFormInternal(loggedIn) {
       email: email.value,
       willRelocate: relocate,
       linkedin: linkedin.value,
+// Temp comment
       password: password.value,
       verifyPassword: verifyPassword.value,
     });

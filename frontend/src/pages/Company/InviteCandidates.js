@@ -23,6 +23,7 @@ export default function InviteCandidates({ company }) {
       value: candidate.id,
       candidate
     }
+  }) || [];
   
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {

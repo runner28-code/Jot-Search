@@ -101,7 +101,6 @@ export const skills = [
   'Azure',
   'B2B',
   'Bachelor\'s Degree',
-  'Bachelors Degree',
   'Banking',
   'Benefits',
   'Big 4',

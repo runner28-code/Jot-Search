@@ -1,4 +1,3 @@
-// Temp comment
 import RegistrationForm from '../../components/RegistrationForm';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -6,7 +5,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function SignUp() {
 
   const { width } = useWindowDimensions();
-
   if( width <= 990 ) {
     return (
       <main className='pb-24'>

@@ -25,6 +25,7 @@ function main() {
             yield seedJobs();
             yield seedUsers();
             console.log("Done🎉");
+// Temp comment
         }
         catch (err) {
             console.error("Error during seed...❌");

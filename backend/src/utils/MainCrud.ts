@@ -67,6 +67,7 @@ export const saveJob = async (job: string, candidate: string) => {
         where: {
           id: candidate,
         },
+        data: {
           savedJobs: {
             connect: {
               id: job,

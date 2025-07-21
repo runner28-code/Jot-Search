@@ -41,6 +41,7 @@ export default function GlobalSearch({ placeholder }) {
   async function handleDebounce( searchTerm ) {
     if ( searchTerm === '' ) {
       return setResults({
+// Temp comment
         jobs: [],
         companies: [],
         candidates: []
@@ -48,7 +49,6 @@ export default function GlobalSearch({ placeholder }) {
     }
 
     // TODO: API: Candidates if role === 'company' || 'coordinator'
-// Temp comment
     const [jobResults, companyResults, CandidateResults] = await Promise.all([
       getJobs( searchTerm, 'title', 3 ),
       getCompanies( searchTerm, 'name', 3 ),

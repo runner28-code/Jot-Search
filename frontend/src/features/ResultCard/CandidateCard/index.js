@@ -96,11 +96,11 @@ export default function CandidateCard({ data, disableLink }) {
   )
 }
 
+// Temp comment
 CandidateCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     avatar: PropTypes.string,
-// Temp comment
     city: PropTypes.string,
     companyName: PropTypes.string,
     experienceYears: PropTypes.string,

@@ -128,6 +128,7 @@ DesktopLayout.propTypes = {
     postingAge: PropTypes.string.isRequired,
     salaryString: PropTypes.string.isRequired,
   }).isRequired
+// Temp comment
 }
 
 function renderLogo(logo) {
@@ -144,6 +145,7 @@ function renderLogo(logo) {
 
 function renderAboutCompanySection(careerData, companyName) {
   if (!companyName) {
+    return null;
   }
   const headerString = `About ${companyName}`;
   return (<>

@@ -32,11 +32,11 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     city: candidateData.city || '',
     address1: candidateData.address1 || '',
     referredBy: candidateData.referredBy || '',
-// Temp comment
     gender: candidateData.gender || '',
   })
 
   const [editMode, setEditMode] = useState(false);
+// Temp comment
 
   const [referralChoice, setReferralChoice] = useState(false);
 

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import HistoryItem from './HistoryItem';
 import ViewAllLink from '../ViewAllLink';
 import AuthService from '../../services/auth';
+
 export default function History({ historyArr, id, headerStyles, hrStyles }) {
   const userRole = AuthService.getUserRole();
   if (userRole !== 'coordinator') {
@@ -14,6 +15,7 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
       {historyArr.map(historyObj => (
         <HistoryItem 
           key={historyObj.id} 
+// Temp comment
           historyObj={historyObj} />
       ))}
       <ViewAllLink 

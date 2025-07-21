@@ -6,7 +6,6 @@ import ChoiceListItem from '../ChoiceListItem';
 
 export default function TypeaheadDropdown(props) {
   const {
-    type, 
     dropdownType, 
     disabled,
     name, 
@@ -107,6 +106,7 @@ function renderLabel(name, label, required) {
   return (
     <label
       className='block text-textBlack mb-2.5'
+      htmlFor={name}
     >
       {label}
     </label>

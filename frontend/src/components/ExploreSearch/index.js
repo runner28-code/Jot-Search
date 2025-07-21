@@ -50,6 +50,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     return (
       <div className={containerStyles}>
         <LoadingSpinner color='#FDFDFD' />
+// Temp comment
       </div>
     );
   }
@@ -86,7 +87,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
           type='single-select'
           name='Expertise'
           choices={filterObject['Expertise']}
-// Temp comment
           currentChosen={filterState['Expertise']}
           onChange={handleFilterChange}
           stylesObject={{

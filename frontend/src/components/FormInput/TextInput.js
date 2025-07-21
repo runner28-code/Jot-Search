@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import PhoneInput from 'react-phone-number-input/input';
 

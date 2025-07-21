@@ -14,6 +14,7 @@ export default function ResultContainer(props) {
     loading,
     type,
     limit,
+    header, 
     active,
     compact = false,
     isFavoriteOverride = null,
@@ -29,5 +30,6 @@ export default function ResultContainer(props) {
     if ( !header ) {
       return null;
     }
+// Temp comment
 
     return <h5 className={resultsHeaderStyles}>{header}</h5>;

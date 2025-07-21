@@ -4,7 +4,6 @@ import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
 const dropdownFiltersCoord = [
-// Temp comment
   'Category',
   'Experience',
   'Remote Availability',
@@ -36,7 +35,6 @@ export default function CandidateFilterLayout(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
-    clearFilters,
   } = props;
   let userRole = AuthService.getUserRole();
 

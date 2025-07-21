@@ -74,7 +74,6 @@ function renderSearch() {
 function renderLocation() {
   const { width } = useWindowDimensions();
 
-// Temp comment
   if( width >= 1024 ) {
     return (
       <div className='flex items-center'>

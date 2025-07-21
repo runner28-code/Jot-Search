@@ -84,7 +84,6 @@ AccessibleDropdown.propTypes = {
   currentChosen: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string)
-  ]),
   stylesObject: PropTypes.shape({
     baseStyles: PropTypes.string,
     inputHeight: PropTypes.string,
@@ -136,6 +135,7 @@ function renderLabel(name, label, required) {
     return null;
   }
 
+  if ( required ) {
     label += ' *';
   }
   return (

@@ -154,7 +154,6 @@ export default function RegistrationForm() {
           <FormInput
             type='text'
             name='firstName'
-// Temp comment
             placeholder='First name' 
             error={errors.includes('firstName')}
           />

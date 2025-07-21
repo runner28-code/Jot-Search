@@ -27,5 +27,4 @@ export function validateInput(name, value, errors, password) {
     newErrors[name] = '';
   }
 
-// Temp comment
   return newErrors;

@@ -171,7 +171,6 @@ export async function saveCompany(candidateId, companyId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCompany, {
     'company': companyId,
     'candidate': candidateId,
-  });
 
   if (data.messsage === 'saved company') {
     AuthService.toggleSavedCompany(companyId, 'save');

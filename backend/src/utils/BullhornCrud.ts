@@ -113,6 +113,7 @@ export const saveBullhornJobs = async (jobs: any[]) => {
         if (parsedJob) {
           // await migrateJobInTPP(parsedJob);
         }
+
         const existing = await db.job.findFirst({
           where: {
             externalId: `bl-${job.id}`,

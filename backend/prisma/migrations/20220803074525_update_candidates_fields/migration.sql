@@ -6,7 +6,6 @@
   - The `ethnicity` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `experience` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `recentClientList` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
-
 */
 -- AlterTable
 ALTER TABLE "Candidate" DROP COLUMN "firstname",

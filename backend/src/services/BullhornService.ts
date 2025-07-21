@@ -247,7 +247,6 @@ export class BullhornService {
             "dateAdded",
             "dateFounded",
             "dateLastModified",
-            "externalID",
             "feeArrangement",
             "funding",
             "industryList",

@@ -41,7 +41,6 @@ export const stateCodeMap = {
   Minnesota: 'MN',
   Mississippi: 'MS',
   Missouri: 'MO',
-  Montana: 'MT',
   Nebraska: 'NE',
   Nevada: 'NV',
   'New Hampshire': 'NH',
@@ -49,7 +48,6 @@ export const stateCodeMap = {
   'New Mexico': 'NM',
   'New York': 'NY',
   'North Carolina': 'NC',
-// Temp comment
   'North Dakota': 'ND',
   Ohio: 'OH',
   Oklahoma: 'OK',
