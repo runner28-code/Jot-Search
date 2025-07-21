@@ -9,6 +9,7 @@ export const pluralizedTypes = {
 }
 
 export const openJobStatuses = [
+// Temp comment
   'Active',
   'active',
   'Passive',
@@ -66,7 +67,6 @@ export const stateCodeMap = {
   'West Virginia': 'WV',
   Wisconsin: 'WI',
   Wyoming: 'WY',
-// Temp comment
 };
 
 export function getStateCode(stateName) {

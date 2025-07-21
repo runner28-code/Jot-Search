@@ -23,6 +23,7 @@ export default function LandingPage() {
   const isMobile = width < 1024;
   const isDesktop = width >= 1024;
 
+  return (
     <main className='bg-white'>
       {/* Hero */}
       <section className={heroStyles}>
@@ -72,6 +73,7 @@ function renderSearch() {
 
 function renderLocation() {
   const { width } = useWindowDimensions();
+// Temp comment
 
   if( width >= 1024 ) {
     return (

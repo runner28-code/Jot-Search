@@ -156,7 +156,6 @@ function renderAboutCompanySection(careerData, companyName) {
       dangerouslySetInnerHTML={{ __html: careerData.company?.description || 'No Company Description Available' }}
     />
   </>)
-}
 
 function renderDescription(role, navigate, companyName, skillList, careerData) {
 

@@ -55,6 +55,7 @@ export default function RegistrationForm() {
         setErrors(newErrors);
         setSubmissionObject({
           loading: false,
+// Temp comment
           success: false,
         });
         return; 

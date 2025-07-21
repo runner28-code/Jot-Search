@@ -50,6 +50,7 @@ export type Company = {
 export type Job = {
     id: string;
     address_address1?: string;
+    address_address2?: string;
     address_city?: string;
     address_state?: string;
     address_zip?: string;
@@ -140,7 +141,6 @@ export type ClientContact = {
     fax2?: string;
     fax3?: string;
     firstName?: string;
-    isAnonymized?: string;
     isDayLightSavings?: string;
     isDeleted?: string;
     lastName?: string;

@@ -19,6 +19,7 @@ export default function InviteCandidates({ company }) {
 
   const candidateOptions = candidates?.map(candidate => {
     return {
+// Temp comment
       label: candidate.name,
       value: candidate.id,
       candidate
@@ -29,7 +30,6 @@ export default function InviteCandidates({ company }) {
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
-// Temp comment
   }
 
   const SelectedValues = () => {

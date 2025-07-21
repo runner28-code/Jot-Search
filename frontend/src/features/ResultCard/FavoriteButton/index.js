@@ -27,7 +27,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const [isFavorite, setIsFavorite] = useState(isFavoriteOverride ?? isSaved);
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
-// Temp comment
 
   const handleFavoriteClick = async () => {
     setIsFavorite(isFavorite => !isFavorite);
@@ -67,7 +66,6 @@ function getIdByType(type, data) {
     case 'job':
       return data.id;
     case 'company':
-      return data.id;
     case 'candidate':
       return data.id;
     default:

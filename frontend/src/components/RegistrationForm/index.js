@@ -40,6 +40,7 @@ const defaultState = {
   resume: {},
   password: '',
   verifyPassword: '',
+// Temp comment
   terms: false
 };
 

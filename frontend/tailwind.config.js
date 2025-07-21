@@ -5,7 +5,6 @@ module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
   ],
-// Temp comment
   theme: {
     extend: {
       animation: {
@@ -153,7 +152,6 @@ module.exports = {
         '125': '31.25rem',
         '135': '33.75rem',
         '140': '35rem',
-        '144': '36rem',
         '150': '37.5rem',
         '160': '40rem',
         '180': '45rem',

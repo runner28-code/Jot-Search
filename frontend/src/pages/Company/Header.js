@@ -102,7 +102,6 @@ HeaderContent.propTypes = {
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
     industryList: PropTypes.array,
-    address: PropTypes.string,
     employeeString: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,
@@ -137,7 +136,6 @@ function renderCompanyLogo(logoUrl, name) {
         <BsBuilding className={logoStyles} />
       </div>
     )
-// Temp comment
   }
   return (
     <div className='p-8 border border-slate-70/50 mr-8'>

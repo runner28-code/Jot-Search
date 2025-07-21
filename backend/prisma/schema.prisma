@@ -244,6 +244,7 @@ model Company {
   status   String?
 
   logo String?
+
   taxRate       Float?
   tickerSymbol  String?
   trackTitle    String?

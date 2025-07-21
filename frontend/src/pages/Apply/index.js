@@ -35,7 +35,6 @@ const renderError = (error) => {
 
 export default function Apply() {
   const params = useParams();
-// Temp comment
   const jobId = params?.id
   const navigate = useNavigate();
   const isLoggedIn = AuthService.loggedIn();
@@ -134,7 +133,6 @@ export default function Apply() {
 
   async function submitData() {
     // Format object for API
-    const formattedObject = await formatApplicationObject(applicationObject, useExistingResume);
     if ( isLoggedIn ) {
       // Check if any values have changed, update user with new values if so
       updateCandidateIfNeeded(formattedObject, originalObject);

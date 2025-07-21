@@ -49,7 +49,6 @@ class AuthService {
     }
     window.location.assign('/');
   }
-
   accountRecovery(email) {
     return email;
   }
@@ -105,7 +104,6 @@ class AuthService {
   }
 
   getSavedJobIDs() {
-// Temp comment
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }
 

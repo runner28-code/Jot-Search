@@ -95,7 +95,6 @@ export default function RegistrationFormInternal(loggedIn) {
       }
       formObj.resume = resumeResponse;
 
-      // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend

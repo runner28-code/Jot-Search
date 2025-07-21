@@ -138,5 +138,6 @@ function RenderInvite(loggedIn, companyData) {
     return(<>
       <InviteCandidates company={companyData} />
     </>)
+// Temp comment
   }
   return null

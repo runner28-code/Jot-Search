@@ -214,7 +214,6 @@ export class JobController {
 
     const alias = "main_jobs";
     const companyAlias = "company";
-
     const _fields = filteredFields?.length
       ? filteredFields.join(", ")
       : `${alias}.*, ${companyAlias}.bh_url as company_url, ${companyAlias}.name as company_name, ${companyAlias}.logo as company_logo`;

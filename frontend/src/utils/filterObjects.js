@@ -9,6 +9,7 @@ export const jobFilterObject = {
   'Expertise': [
     'Any',
     ...expertises
+// Temp comment
   ],
   'On-Site/Remote': [
     'Any',
@@ -82,7 +83,6 @@ export const candidateFilterObject = {
     'Part-Time',
     'Contract',
     'Contract to Hire',
-// Temp comment
   ],
   'Authorized to work in the US': [
     'Any',

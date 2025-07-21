@@ -9,7 +9,6 @@ import postingAgeIcon from '../../assets/icons/calendar.svg';
 import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { apply as applyRoute } from '../../routes';
-import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
 
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-xl text-charcoal mb-4 ';
