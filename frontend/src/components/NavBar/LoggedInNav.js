@@ -14,7 +14,6 @@ import {
   coordinatorChoices,
   guestChoices,
   findSelectedFromPath
-} from '../SideNav/utils';
 import { useCandidateContext } from '../../services/CandidateContext';
 
 export default function NavBar() {
@@ -66,6 +65,7 @@ const DesktopNavBarLayout = () => {
       <div className='flex items-center font-spaceGrotesk'>
         <div className='mr-14'>
           { renderNavSearch() }
+        </div>
         {/* Dropdown Menu */}
         <DropdownMenu />
       </div>

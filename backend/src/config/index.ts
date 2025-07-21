@@ -14,3 +14,4 @@ const config = {
   bullhornApiUsername: process.env.BULLHORN_API_USERNAME,
   bullhornApiPassword: process.env.BULLHORN_API_PASSWORD,
 
+  getroDatasetID: process.env.DATASET_GETRO,

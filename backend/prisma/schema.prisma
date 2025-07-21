@@ -453,3 +453,7 @@ model Job {
   updatedAt DateTime @updatedAt
 }
 
+model GetroJobInfo {
+  id                    String    @id @default(uuid())
+  application_method    String?
+  application_path      String?

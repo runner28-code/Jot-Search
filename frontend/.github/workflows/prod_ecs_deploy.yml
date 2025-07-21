@@ -18,6 +18,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     environment: production
+
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -31,3 +32,4 @@ jobs:
 
     - name: Login to Amazon ECR
       id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v1

@@ -19,7 +19,6 @@ let s3: any;
 try {
   s3 = new AWS.S3({
   accessKeyId: process.env.S3_ACCESS_KEY,
-  secretAccessKey: process.env.S3_SECRET_KEY,
   endpoint: process.env.S3_ENDPOINT,
   s3ForcePathStyle: true,
   signatureVersion: "v4",
@@ -83,3 +82,4 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
   let formatted_date =
     current_datetime.getFullYear() +
     "-" +
+    (current_datetime.getMonth() + 1) +

@@ -61,7 +61,6 @@ export default function AddCompanyUser() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className='placeholder-textBlack text-md bg-lightGrey w-full remove-outline rounded-xl border border-solid border-2 border-netural-400 px-4 py-4 mt-2' />
-// Temp comment
           <img
             src={Search}
             alt='search icon'
@@ -85,7 +84,6 @@ export default function AddCompanyUser() {
             <CompanyContactList
               clientContacts={clientContacts}
               isLoadingContacts={isLoadingContacts}
-              selectedCompany={selectedCompany}
             />
           )}
         </div>

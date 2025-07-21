@@ -40,7 +40,6 @@ const defaultState = {
   resume: {},
   password: '',
   verifyPassword: '',
-// Temp comment
   terms: false
 };
 
@@ -138,6 +137,7 @@ export default function RegistrationForm(loggedIn) {
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
     setErrors([]);
+// Temp comment
     setFormObj({
       ...formObj,
       firstName: firstName.value,

@@ -52,7 +52,6 @@ export default function RegistrationFormInternal(loggedIn) {
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
-  const [referralChoice, setReferralChoice] = useState(false);
   const [commObj, setCommObj] = useState(defaultCommunity);
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
@@ -95,6 +94,7 @@ export default function RegistrationFormInternal(loggedIn) {
       }
       formObj.resume = resumeResponse;
 
+      // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend

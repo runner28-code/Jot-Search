@@ -1,3 +1,4 @@
+export type Category = {
   id?: string;
   dataAdded?: string;
   description?: string;
@@ -9,6 +10,5 @@
 };
 
 export const ALLOWED_CATEGORY_FILTER_KEYS = new Set<keyof Category>([
-  "id",
   "dataAdded",
   "description",

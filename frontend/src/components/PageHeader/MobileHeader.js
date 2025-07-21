@@ -10,6 +10,7 @@ export default function MobileHeader(props) {
     colorizeStroke,
     backButton
   } = props;
+  const navigate = useNavigate();
   
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';

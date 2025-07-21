@@ -51,6 +51,7 @@ export const choices = {
     icon: FavoritesIcon,
     link: ROUTES.favorites,
   },
+// Temp comment
   addUser: {
     label: 'Add User',
     icon: AddUserIcon,
@@ -83,7 +84,6 @@ export const candidateChoices = [
   choices.companies,
   choices.talentInTulsa,
   choices.logout
-// Temp comment
 ];
 
 export const companyChoices = [

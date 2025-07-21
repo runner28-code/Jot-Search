@@ -19,3 +19,4 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
+                   "awslogs-group" : "/ecs/prod-site-frontend-task",

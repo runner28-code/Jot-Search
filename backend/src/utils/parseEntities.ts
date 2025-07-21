@@ -28,7 +28,6 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     roles: data.skillSet,
 
     description: data.description,
-    phone: data.phone || data.workPhone || data.mobile,
     status: data.status,
     username: data.username,
 
@@ -61,6 +60,7 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
     state: data.address_state,
     zip: data.address_zip,
     resume: undefined,
+    linkedin: undefined,
     skills: data.primarySkills,
     category: data.specialties,
     seniority: data.experience,

@@ -214,6 +214,7 @@ export class JobController {
 
     const alias = "main_jobs";
     const companyAlias = "company";
+
     const _fields = filteredFields?.length
       ? filteredFields.join(", ")
       : `${alias}.*, ${companyAlias}.bh_url as company_url, ${companyAlias}.name as company_name, ${companyAlias}.logo as company_logo`;
@@ -258,3 +259,6 @@ export class JobController {
     );
 
     const filteredFields = fields?.filter((field) =>
+      ALLOWED_GETRO_FILTERS.has(field as keyof Job)
+    );
+    const _fields = filteredFields?.length ? filteredFields.join(", ") : "*";

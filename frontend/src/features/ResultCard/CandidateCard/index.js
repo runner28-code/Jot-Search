@@ -70,7 +70,6 @@ export default function CandidateCard({ data, disableLink }) {
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{addressString}</p>
             </div>
-// Temp comment
             {/* Years Experience */}
             <div className='w-1/3 flex items-center'>
               <img
@@ -101,6 +100,7 @@ CandidateCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     avatar: PropTypes.string,
+// Temp comment
     city: PropTypes.string,
     companyName: PropTypes.string,
     experienceYears: PropTypes.string,

@@ -17,7 +17,6 @@ exports.JobFilter = {
     },
     main: {
         id: "id",
-// Temp comment
         status: "status",
         skillList: "skillList",
         hidden: "hidden",

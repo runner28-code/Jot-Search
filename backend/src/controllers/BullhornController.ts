@@ -18,3 +18,4 @@ export class BullhornController {
 
   // @Authorized()
   @Get('/bullhorn/clientContacts')
+  async getClientContacts() {

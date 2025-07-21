@@ -15,6 +15,7 @@ import {
   candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
+  defaultCandidateFilterState,
   buildSearchFilters
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
@@ -92,7 +93,6 @@ export default function AdvancedSearch({ disabledTabs }) {
 
   function handleFilterChange(filterType, choice) {
     setFilterObject({
-      ...filterObject,
       [filterType]: choice
     });
     setPage(1);

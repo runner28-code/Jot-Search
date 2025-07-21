@@ -4,6 +4,7 @@ import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
 const dropdownFiltersCoord = [
+// Temp comment
   'Category',
   'Experience',
   'Remote Availability',
@@ -15,7 +16,6 @@ const dropdownFilters = [
   'Category',
   'Experience',
   'Remote Availability',
-// Temp comment
   'Employment Type',
 ];
 const checkboxFiltersCoord = [

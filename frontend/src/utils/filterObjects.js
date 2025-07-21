@@ -9,7 +9,6 @@ export const jobFilterObject = {
   'Expertise': [
     'Any',
     ...expertises
-// Temp comment
   ],
   'On-Site/Remote': [
     'Any',

@@ -105,6 +105,7 @@ export default function Company() {
           Back
           </button>
         </div>
+// Temp comment
         <RenderInvite
           loggedIn={loggedIn}
           companyData={companyData}
@@ -138,6 +139,5 @@ function RenderInvite(loggedIn, companyData) {
     return(<>
       <InviteCandidates company={companyData} />
     </>)
-// Temp comment
   }
   return null

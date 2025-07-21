@@ -39,7 +39,6 @@ export default function AddCoordinator() {
     if (submissionObject.success) {
       setTimeout(() => {
         setFormObject(defaultState);
-// Temp comment
         setSubmissionObject({
           loading: false,
           success: false,
@@ -59,6 +58,7 @@ export default function AddCoordinator() {
       submissionObject.errors,
       formObject.password
     );
+// Temp comment
 
     // Add errors to state if there are any
     if (Object.keys(newErrors).length > 0) {

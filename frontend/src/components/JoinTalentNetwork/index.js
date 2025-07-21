@@ -29,13 +29,13 @@ export default function JoinTalentNetwork() {
           <div className='mt-8 px-[5%]'>
             <h6 className='text-[2.5rem] mt-12 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>
             <p className='text-slateGray text-ml mt-6 font-light leading-[3.6rem]'>By signing up, you will be able to connect and support you with top companies ready to help you take the next step in your career in Tulsa.</p>
+// Temp comment
           </div>
         </div>
       </section>
     </>)
   }
   return (<>
-// Temp comment
     {/* Join Hero and call-to-action */}
     <section className='relative h-300 bg-join-hero bg-cover bg-center'>
       <div className='absolute -bottom-100 flex justify-center w-full px-40'>

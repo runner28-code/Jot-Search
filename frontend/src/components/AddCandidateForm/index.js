@@ -55,7 +55,6 @@ export default function RegistrationForm() {
         setErrors(newErrors);
         setSubmissionObject({
           loading: false,
-// Temp comment
           success: false,
         });
         return; 
@@ -155,6 +154,7 @@ export default function RegistrationForm() {
           <FormInput
             type='text'
             name='firstName'
+// Temp comment
             placeholder='First name' 
             error={errors.includes('firstName')}
           />

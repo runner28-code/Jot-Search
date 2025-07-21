@@ -25,7 +25,6 @@ export class CategoryController {
           value: id,
         },
       ];
-
       const category = await getCategoriesByFilter(_filters, undefined, 1);
 
       return {
@@ -38,3 +37,4 @@ export class CategoryController {
         category: undefined,
         message: error,
       };
+    }

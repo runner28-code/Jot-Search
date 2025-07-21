@@ -113,7 +113,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
         if (parsedJob) {
           // await migrateJobInTPP(parsedJob);
         }
-
         const existing = await db.job.findFirst({
           where: {
             externalId: `bl-${job.id}`,
@@ -193,6 +192,7 @@ export const saveClientContacts = async (contacts: any[]) => {
 
 export const saveCandidates = async (candidates: any[]) => {
   const expludeFields = ["address", "_score"];
+  try {
     for (const candidate of candidates) {
       try {
         console.log(`\n\nSavng Candidate with ID = ${candidate.id}`);

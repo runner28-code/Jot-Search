@@ -27,7 +27,6 @@ CREATE TABLE "UserTalentCollection" (
     "is_company_admin" BOOLEAN,
     "is_network_admin" BOOLEAN,
     "is_network_ambassador" BOOLEAN,
-
     CONSTRAINT "UserTalentCollection_pkey" PRIMARY KEY ("id")
 );
 
@@ -42,3 +41,4 @@ CREATE TABLE "GetroMember" (
     "github_url" TEXT,
     "linkedin_url" TEXT,
     "resume_url" TEXT,
+    "twitter_url" TEXT,

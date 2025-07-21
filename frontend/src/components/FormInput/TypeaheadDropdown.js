@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
+import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import ChoiceTag from '../ChoiceTag';
 import ChoiceListItem from '../ChoiceListItem';
 
@@ -106,7 +107,6 @@ function renderLabel(name, label, required) {
   return (
     <label
       className='block text-textBlack mb-2.5'
-      htmlFor={name}
     >
       {label}
     </label>

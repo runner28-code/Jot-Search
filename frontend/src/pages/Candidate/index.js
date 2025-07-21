@@ -119,7 +119,6 @@ export default function Candidate() {
               onUpdate={handleCandidateUpdate} />
             <PreferenceItem
               toggled={!!candidateData.willReceiveNotification}
-              fieldName='willReceiveNotification'
               label={PREFERENCE_ITEMS.willReceiveNotification}
               onUpdate={handleCandidateUpdate} />
           </div>

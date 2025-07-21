@@ -50,3 +50,4 @@ Runs ESLint in the `src` directory. Configuration for ESLint is contained in `.e
 
 ### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**

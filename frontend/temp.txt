@@ -1,1 +1,2 @@
 if commit.author_email == b"57643501+gage117@users.noreply.github.com":
+    commit.author_name = b"Regi228"

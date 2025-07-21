@@ -238,3 +238,6 @@ export const skills = [
   'Investing',
   'Investments',
   'iOS',
+  'IT',
+  'IT Support',
+  'Java',

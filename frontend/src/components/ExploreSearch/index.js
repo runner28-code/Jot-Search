@@ -86,6 +86,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
           type='single-select'
           name='Expertise'
           choices={filterObject['Expertise']}
+// Temp comment
           currentChosen={filterState['Expertise']}
           onChange={handleFilterChange}
           stylesObject={{

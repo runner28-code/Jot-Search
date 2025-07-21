@@ -1,4 +1,3 @@
-// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
@@ -23,6 +22,7 @@ export default function InviteCandidates({ job }) {
 
   const candidateOptions = candidates?.map(candidate => {
     return {
+// Temp comment
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
       value: candidate.id,
       candidate
