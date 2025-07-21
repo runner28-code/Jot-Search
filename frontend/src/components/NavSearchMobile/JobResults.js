@@ -4,7 +4,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import urlDecode from '../../utils/urlDecode';
 import * as ROUTES from '../../routes';
 
-// Temp comment
 export default function JobResults({ jobs }) {
   if (jobs.length === 0) {
     return null;
@@ -15,6 +14,7 @@ export default function JobResults({ jobs }) {
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Careers</h6>
       { jobs.map(job => {
         return (
+// Temp comment
           <JobResult 
             job={job} 
             key={job.id} />

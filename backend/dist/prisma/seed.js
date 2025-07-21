@@ -27,7 +27,6 @@ function main() {
             console.log("Done🎉");
         }
         catch (err) {
-            console.error("Error during seed...❌");
             console.error(err);
             throw err;
         }

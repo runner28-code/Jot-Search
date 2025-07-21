@@ -98,6 +98,7 @@ export default function CompanyCard({ data }) {
         data={data} />
     </div>
   )
+}
 
 const dataShape = {
   data: PropTypes.shape({

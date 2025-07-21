@@ -4,7 +4,6 @@ import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
   const {
-// Temp comment
     headerText,
     icon,
     IconComponent,
@@ -21,7 +20,6 @@ export default function DesktopHeader(props) {
   if ( classOverride ) addOnIconClasses += classOverride;
   let containerClasses = 'mb-10 pt-18 ';
   if ( containerClassOverride ) containerClasses += containerClassOverride;
-  
   return (
     <div className={containerClasses}>
       <div className='flex gap-8 items-center'>

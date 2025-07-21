@@ -375,6 +375,7 @@ function NavFooterMobile() {
           href="/careers"
           className={linkStyle}
         >
+          Marketing Job Openings
         </a>
         <a
           href="/careers"

@@ -105,7 +105,6 @@ export class CandidateController {
         },
         data,
       });
-
       clearPassword(updatedUser);
 
       return { message: "Candidate updated successfully", data: updatedUser, result: true };

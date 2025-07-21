@@ -6,6 +6,7 @@ import ExpertiseLinksMobile from '../../components/ExpertiseLinksMobile';
 import JoinTalentNetwork from '../../components/JoinTalentNetwork';
 import FeaturedJobs from '../../components/FeaturedJobs';
 import FeaturedCompanies from '../../components/FeaturedCompanies';
+import FeaturedCompaniesMobile from '../../components/FeaturedCompaniesMobile';
 import BusinessBooming from '../../components/BusinessBooming';
 import BusinessBoomingMobile from '../../components/BusinessBoomingMobile';
 import ColorShapes from '../../components/ColorShapes';

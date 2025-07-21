@@ -31,6 +31,7 @@ export const companyQuickStats = '/company-stats';
 export const addUser = '/add-user';
 export const alerts = '/alerts';
 
+export const careerSeekers = '/career-seeker';
 export const softwareEngineering = '/software-engineering';
 export const salesBizDev = '/sales-business-development';
 export const operations = '/operations';

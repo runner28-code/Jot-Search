@@ -21,7 +21,6 @@ export default function AddUser() {
 
   const defaultContainer = 'bg-white border-solid border-2 border-neutral-300 remove-outline rounded-3xl py-12';
   const companyContainer = '';
-
   return (<>
     <h2 className='text-lg vw-768:text-h2 text-royalBlue font-spaceGrotesk font-bold mb-16 text-center flex items-center'>
       <img

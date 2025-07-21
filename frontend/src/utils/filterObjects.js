@@ -21,6 +21,7 @@ export const jobFilterObject = {
     'Any',
     ...experienceValues
   ],
+  'Status': [
     'Any',
     'Filled',
     'Open',

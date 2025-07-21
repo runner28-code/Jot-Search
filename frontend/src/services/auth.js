@@ -59,7 +59,6 @@ class AuthService {
     window.location.assign('/landing-page');
   }
 
-  clearStorage() {
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
     localStorage.removeItem('savedJobs');
@@ -117,7 +116,6 @@ class AuthService {
     }
     localStorage.setItem('savedCompanies', JSON.stringify(savedCompanies));
   }
-// Temp comment
 
   getSavedCompanyIDs() {
     return JSON.parse(localStorage.getItem('savedCompanies')) || [];

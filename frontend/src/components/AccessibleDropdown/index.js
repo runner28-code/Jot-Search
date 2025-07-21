@@ -65,7 +65,6 @@ export default function AccessibleDropdown(props) {
         </Menu>
       </Wrapper>
     </div>
-// Temp comment
   );
 }
 
@@ -139,6 +138,7 @@ function renderLabel(name, label, required) {
 
   if ( required ) {
     label += ' *';
+// Temp comment
   }
   return (
     <label

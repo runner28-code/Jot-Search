@@ -7,6 +7,8 @@ const defaultStylesObject = {
   inputStyles: 'flex-1 h-5/6 vw-480:placeholder:text-md vw-1024:placeholder:text-xl'
 }
 
+export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject }) {
+// Temp comment
   const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
   if ( marginBottom ) {
     styleObject.containerStyles += `mb-${marginBottom} `;

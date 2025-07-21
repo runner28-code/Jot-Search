@@ -1,5 +1,6 @@
 import * as ROUTES from '../../routes';
 
+// Temp comment
 export default function BusinessBooming() {
   return (
     <section>
@@ -10,7 +11,6 @@ export default function BusinessBooming() {
         <a
           href={ROUTES.lifeInTulsa}
           target='_blank'
-// Temp comment
           rel='noreferrer'
           className='flex items-center justify-center bg-white text-sm mt-12 py-8 rounded-lg w-3/5'
         >

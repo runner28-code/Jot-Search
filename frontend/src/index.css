@@ -24,6 +24,7 @@ input[type="text"].placeholder-spaceGrotesk::placeholder {
   font-weight: 700;
 }
 
+input[type="text"].placeholder-18::placeholder {
   font-size: 1.8rem;
 }
 

@@ -9,7 +9,6 @@ const inputHeight = 'h-18 vw-640:h-24 '; // Separated from other styles to easil
 const regularBorder = 'border-midGrey ';
 const errorBorder = 'border-rose-500 ';
 const dropdownStyles = 'bg-lightGrey border border-midGrey border-solid rounded-b-lg overflow-y-auto z-10 ';
-// Temp comment
 const dropdownItemStyles = 'text-textBlack text-md pl-8 py-7 hover:bg-royalBlue hover:text-white ';
 export default function FormInput(props) {
   const {
@@ -48,7 +47,6 @@ export default function FormInput(props) {
         value={value}
         required={required}
         onChange={onChange}
-        baseStyles={componentStyles + inputHeight}
         disabled={disabled}
       />
     case 'single-select': // fall through

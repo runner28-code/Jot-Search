@@ -9,6 +9,7 @@ const iconStyles = 'w-12 h-12 mr-5 ';
 export default function CareerProfileInfo({ candidateData, handleCandidateUpdate, role }) {
   const [editMode, setEditMode] = useState(false);
   return (
+// Temp comment
     <>
       {/* Header and Edit Icon */}
       <div className='flex flex-row justify-between items-center'>
@@ -19,7 +20,6 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
       </div>
       <CareerProfileInfoContent
         candidateData={candidateData}
-// Temp comment
         handleCandidateUpdate={handleCandidateUpdate}
         setEditMode={setEditMode}
         iconStyles={iconStyles}

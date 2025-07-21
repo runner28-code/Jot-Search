@@ -24,6 +24,7 @@ export default function CareerFavorite () {
         {
           isLoading ?
             <LoadingSpinner />
+            :
             savedJobs.map((career, index) => {
               return(<>
                 <CareerCard

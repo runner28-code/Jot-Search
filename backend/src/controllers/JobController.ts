@@ -142,7 +142,6 @@ export class JobController {
         skip: skip < 0 ? 0 : skip,
         include: {
           company: true,
-          category: true,
         },
         orderBy: [
           {

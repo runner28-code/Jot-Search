@@ -8,7 +8,6 @@ import {
 import { getCategoriesByFilter } from "../services/Category";
 import {
   CategoryByIdResponse,
-  CategorySearchByFilterResponse,
   FilterBody,
 } from "../types/Common";
 
@@ -27,6 +26,7 @@ export class CategoryController {
       ];
 
       const category = await getCategoriesByFilter(_filters, undefined, 1);
+
       return {
         category: category?.[0],
         message: null,

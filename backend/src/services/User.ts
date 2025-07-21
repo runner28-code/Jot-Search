@@ -232,6 +232,7 @@ export const isExistUser = async (field: string, value: string) => {
 };
 
 export const isExistUserFull = async (field: string, value: string) => {
+  try {
     const user = await db.user.findFirst({
       where: {
         [field]: value,
@@ -306,7 +307,6 @@ export const getCompanyDashboardStats = async (days: number) => {
         status: {
           equals: 'active',
           mode: 'insensitive'
-        },
         ...currentPeriodCommonQuery
       }
     })

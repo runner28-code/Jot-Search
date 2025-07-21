@@ -3,6 +3,7 @@ import RegistrationFormInternal from '../../../components/RegistrationFormIntern
 
 export default function AddCandidate(loggedIn) {
   return (
+// Temp comment
     <div className='flex w-full vw-1280:px-0 3vw-1280:ml-10'>
       <RegistrationFormInternal loggedIn={loggedIn}/>
     </div>
