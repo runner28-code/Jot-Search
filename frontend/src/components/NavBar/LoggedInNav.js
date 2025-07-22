@@ -78,7 +78,6 @@ const DropdownMenu = () => {
   const [ isOpen, setIsOpen ] = useState(false);
   const [ firstRender, setFirstRender ] = useState(true);
   const navigate = useNavigate();
-// Temp comment
   const [listening, setListening] = useState(false);
   const { currentUser } = useCandidateContext()
   const menuRef = useRef(null);

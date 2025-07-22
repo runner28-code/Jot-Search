@@ -152,5 +152,4 @@ export default function Apply() {
     setApplicationObject({
       ...applicationObject,
       [name]: value,
-// Temp comment
     });

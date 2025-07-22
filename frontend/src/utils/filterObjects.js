@@ -81,7 +81,6 @@ export const candidateFilterObject = {
     'Full-Time',
     'Part-Time',
     'Contract',
-// Temp comment
     'Contract to Hire',
   ],
   'Authorized to work in the US': [
@@ -115,6 +114,7 @@ export const candidateFilterObject = {
 const convertedCandidateFilters = {};
 Object.keys(candidateFilterObject).forEach(key => {
   convertedCandidateFilters[key] = candidateFilterObject[key][0];
+// Temp comment
 });
 
 export const defaultCandidateFilterState = {

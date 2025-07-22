@@ -25,6 +25,7 @@ export type Company = {
     locations?: string;
     collections?: string;
 }
+
 export type Job = {
     id: string;
     application_method?: string;
@@ -48,3 +49,4 @@ export type Job = {
     organization_slug?: string;
     passes_filter?: string;
     posted_at?: string;
+    slug?: string;

@@ -155,7 +155,6 @@ export class BullhornService {
         },
         { encode: false }
       );
-      const url = `${this.oauth_url}/token?${query}`;
       console.log("access token url: ", url);
       const res = await axios.post(url);
       console.log(res.status);
@@ -560,3 +559,14 @@ export class BullhornService {
             owner: `${d.owner?.id}`,
             skills: d.skills?.data.map((skill: any) => skill.id).join(" | "),
             dateAdded: new Date(d.dateAdded),
+            dateLastModified: new Date(d.dateLastModified),
+          }));
+          if (!testMode) {
+            const res = await saveClientContacts(updatedData);
+            if (res === -1) return;
+          }
+          offset += count;
+          repeatErr = 0;
+          if (total <= offset) break;
+        } else if (res.status === 404) {
+          return [];

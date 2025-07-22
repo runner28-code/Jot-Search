@@ -32,7 +32,6 @@ DashboardMinifiedDesktop.propTypes = {
 }
 
 function CareerHeader ({ location }) {
-  const loggedIn = AuthService.loggedIn();
 
   let userRole = AuthService.getUserRole();
 
@@ -47,7 +46,6 @@ function CareerHeader ({ location }) {
         </span>
         <Link
           className='text-blue underline text-royalBlue'
-// Temp comment
           to={ROUTES.careers}
         >{ back }</Link>
       </div>

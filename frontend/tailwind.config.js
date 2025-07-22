@@ -90,6 +90,7 @@ module.exports = {
       },
       spacing: {
         // Styleguide Spacing
+        'xxs': '4px',
         'xs': '8px',
         's': '12px',
         'm': '16px',
@@ -141,7 +142,6 @@ module.exports = {
         '88': '22rem',
         '90': '22.5rem',
         '92': '23rem',
-        '100': '25rem',
         '105': '26.25rem',
         '110': '27.5rem',
         '112': '28rem',
@@ -159,3 +159,5 @@ module.exports = {
         '200': '50rem',
         '210': '52.5rem',
         '216': '54rem',
+        '220': '55rem',
+        '230': '57.5rem',

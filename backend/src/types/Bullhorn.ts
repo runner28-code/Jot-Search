@@ -199,6 +199,7 @@ export type Candidate = {
     desiredLocations?: string;
     disability?: string;
     educationDegree?: string;
-    email?: string;
     email2?: string;
     email3?: string;
+    employeeType?: string;
+    employmentPreference?: string;

@@ -35,3 +35,4 @@
     "lint": "eslint src/**/*.js"
   },
   "eslintConfig": {
+    "extends": [

@@ -5,7 +5,6 @@ CREATE TABLE "UserTalentCollection" (
     "collection_id" INTEGER,
     "status" TEXT,
     "approved_at" TEXT,
-    "approved_by" TEXT,
     "created_at" TEXT,
     "updated_at" TEXT,
     "declined_by" TEXT,
@@ -43,3 +42,4 @@ CREATE TABLE "GetroMember" (
     "linkedin_url" TEXT,
     "resume_url" TEXT,
     "twitter_url" TEXT,
+    "verified" BOOLEAN,

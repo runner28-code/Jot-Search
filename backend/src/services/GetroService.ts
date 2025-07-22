@@ -177,3 +177,5 @@ export class GetroService {
                     if (items.length < per_page) break;
                 }
             } catch (error) {
+                repeatErr++;
+            }

@@ -32,7 +32,6 @@ export default function ResetForm({ candidateData, setType }) {
         setType(res.data.error, false);
       }
     }
-  };
 
   function handleChange(name, value) {
     setFormData({
@@ -53,7 +52,6 @@ export default function ResetForm({ candidateData, setType }) {
         />
         <FormInput
           type='text'
-// Temp comment
           name='passwordConfirm'
           value={formData.passwordConfirm}
           onChange={handleChange}

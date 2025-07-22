@@ -29,6 +29,7 @@ export const saveApplication = async (job: string, candidate: string) => {
       console.log({ app });
 
       return {
+        result: true,
       };
     } else {
       console.log("already applied");
@@ -65,7 +66,6 @@ export const saveJob = async (job: string, candidate: string) => {
       await db.user.update({
         where: {
           id: candidate,
-        },
         data: {
           savedJobs: {
             connect: {
@@ -86,3 +86,4 @@ export const saveJob = async (job: string, candidate: string) => {
             },
           },
         },
+      });

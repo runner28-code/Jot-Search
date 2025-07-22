@@ -86,6 +86,7 @@ export const skills = [
   'AJAX',
   'Analyst',
   'Android',
+// Temp comment
   'Angular',
   'Animation',
   'API',
@@ -141,6 +142,7 @@ export const skills = [
   'Contract Management',
   'Contract Negotiation',
   'Coordination',
+  'Copy Editing',
   'Copywriting',
   'Counseling',
   'CPA',
@@ -242,3 +244,5 @@ export const skills = [
   'Java',
   'Javascript',
   'Jira',
+  'jQuery',
+  'Kafka',

@@ -1,4 +1,3 @@
-// Temp comment
 import flagIcon from '../../../assets/icons/flag.svg';
 
 export default function AssistanceCard() {
@@ -32,5 +31,6 @@ export default function AssistanceCard() {
       >
         Make a request
       </a>
+// Temp comment
     </div>
   )

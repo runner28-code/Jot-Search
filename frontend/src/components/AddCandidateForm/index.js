@@ -227,7 +227,6 @@ export default function RegistrationForm() {
             choices={['Any', 'Full-Time', 'Contract']}
             error={errors.includes('employmentPreference')}
           />
-          <FormInput
             type='single-select'
             name='workspace'
             placeholder='Work Setting Preference (Remote, Office)' 
@@ -252,7 +251,6 @@ export default function RegistrationForm() {
           />
           {/* File input for resume */}
           <FormInput
-// Temp comment
             type='file'
             name='resumeFile'
             placeholder='Upload Resume'

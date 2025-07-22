@@ -37,7 +37,6 @@ export const UpdateJobStatus = ({ job }) => {
             setUpdatedJob(res);
           }}
         />
-// Temp comment
       </div>
     </div>
   )

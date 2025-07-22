@@ -385,3 +385,7 @@ export const getCompanyDashboardStats = async (days: number) => {
         compare: candidateJobInvitesCompare || 0
       }
     }
+    return {
+      result: true,
+      data,
+      message: null,

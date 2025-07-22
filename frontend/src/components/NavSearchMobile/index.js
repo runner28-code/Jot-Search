@@ -47,7 +47,6 @@ export default function NavSearchMobile({ placeholder }) {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
       return { filtersArr: searchFilters };
     } else {
-// Temp comment
       return { filterKey: 'name', filterValue: searchTerm }
     }
   };
@@ -88,6 +87,7 @@ export default function NavSearchMobile({ placeholder }) {
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
     total: totalJobs + totalCompanies + totalCandidates,
     forceHidden
+// Temp comment
   }
 
   /* STYLES & RENDER */

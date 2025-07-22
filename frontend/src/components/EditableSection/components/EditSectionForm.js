@@ -26,6 +26,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
       handleChange={handleChange} />
   }
   if ( propertyName === 'expertise' ) {
+    return <EditExpertiseForm 
       expertise={contentObject[propertyName]}
       handleChange={handleChange} />
   }
@@ -56,7 +57,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
             >
               {labelString}
             </label>
-            <input 
               className='w-100 text-xl border-lightGrey border-solid border-2 rounded-2xl px-4 py-2'
               key={key}
               name={key}

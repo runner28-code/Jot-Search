@@ -69,5 +69,6 @@ function getIdByType(type, data) {
       return data.id;
     case 'candidate':
       return data.id;
+    default:
       return '';
   }

@@ -264,3 +264,6 @@ export class JobController {
     const _fields = filteredFields?.length ? filteredFields.join(", ") : "*";
 
     const condition = getFilterConditions(_filters, operator);
+    const dataset = DATASET_GETRO;
+    const table = Tables.JOBS;
+

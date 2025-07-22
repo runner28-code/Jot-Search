@@ -460,3 +460,8 @@ model GetroJobInfo {
   compensation_currency String?
   compensation_max      String?
   compensation_min      String?
+  compensation_period   String?
+  compensation_public   Boolean?
+  description           String?
+  discarded             Boolean?
+  employment_types      String[]

@@ -14,7 +14,6 @@ API.interceptors.request.use(
   function (config) {
     const token = localStorage.getItem('id_token');
     if (token) {
-      config.headers['Authorization'] = 'Bearer ' + token;
     }
     return config;
   },
@@ -137,6 +136,7 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
     'page': page || null
   });
   return {
+    companies: normalizeData(data.companies),
     total: data.total,
   }
 }

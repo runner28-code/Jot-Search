@@ -63,3 +63,4 @@ CREATE TABLE "Company" (
     "customDate1" TIMESTAMP(3),
     "customDate2" TIMESTAMP(3),
     "customDate3" TIMESTAMP(3),
+    "customFloat1" DOUBLE PRECISION,

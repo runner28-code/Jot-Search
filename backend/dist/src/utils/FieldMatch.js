@@ -41,3 +41,4 @@ exports.CompanyFilter = {
         city: "locations",
     },
     joined: {
+        name: "name",

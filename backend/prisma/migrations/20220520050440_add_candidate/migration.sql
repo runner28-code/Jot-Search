@@ -22,6 +22,7 @@ CREATE TABLE "Candidate" (
     "desiredLocations" TEXT,
     "disability" TEXT,
     "educationDegree" TEXT,
+    "email" TEXT,
     "email2" TEXT,
     "email3" TEXT,
     "employeeType" TEXT,
@@ -60,3 +61,4 @@ CREATE TABLE "Candidate" (
     "paperWorkOnFile" TEXT,
     "password" TEXT,
     "payrollClientStartDate" TIMESTAMP(3),
+    "payrollStatus" TEXT,

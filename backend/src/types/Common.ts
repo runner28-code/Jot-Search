@@ -85,3 +85,4 @@ export type AllJobsResponse = {
   main: JobSearchByFilterResponse;
 };
 
+export type ApplyResponse = {

@@ -56,7 +56,6 @@ export default function PendingApplications () {
               </>)
             })
         }
-// Temp comment
         <div className='flex items-center text-center flex-col justify-center px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white rounded-3xl outline-dashed outline-neutral-300 bg-gray-200'>
           <div className='flex gap-[10px] items-center px-m py-xxs bg-searchGreen rounded-full'>
             <img

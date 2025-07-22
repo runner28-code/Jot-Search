@@ -222,3 +222,5 @@ export class CompanyController {
         take: count,
         skip: skip < 0 ? 0 : skip,
         orderBy: {
+          name: "asc",
+        }
