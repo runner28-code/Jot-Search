@@ -254,6 +254,7 @@ export class BullhornService {
             "name",
             "notes",
             "numEmployees",
+            "numOffices",
             "phone",
             "status",
             "taxRate",

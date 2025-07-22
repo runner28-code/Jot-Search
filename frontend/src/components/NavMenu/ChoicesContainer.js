@@ -7,11 +7,11 @@ import {
   guestChoices
 } from '../SideNav/utils';
 import Choice from './Choice';
-// Temp comment
 import LoggedOutButtons from './LoggedOutButtons';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
 
+// Temp comment
 const baseLinkStyles = 'flex items-center w-full h-20 pl-6 bg-white hover:bg-royalBlue text-royalBlue hover:text-white cursor-pointer ';
 const topLinkStyles = baseLinkStyles + 'rounded-tl-xl ';
 const bottomLinkStyles = baseLinkStyles + 'rounded-b-xl ';

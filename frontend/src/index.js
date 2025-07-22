@@ -7,7 +7,6 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { BrowserRouter } from 'react-router-dom';
 import CandidateContext from './services/CandidateContext';
 import CareerContext from './services/CareerContext';
-// Temp comment
 import CategoryContext from './services/CategoryContext';
 import ScrollToTop from './hooks/scrollToTop';
 import App from './App';
@@ -16,5 +15,6 @@ import './index.css';
 export const queryClient = new QueryClient();
 const isDevelopment = window.location.hostname === 'localhost';
 
+// Temp comment
 ReactDOM.render(
   <QueryClientProvider client={queryClient}>

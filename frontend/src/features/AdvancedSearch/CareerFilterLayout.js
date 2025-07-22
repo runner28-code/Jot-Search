@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
@@ -54,7 +55,6 @@ export default function CareerFilterLayout(props) {
           handleSearchClick={handleSearchClick}
           placeholder='Search name, title, active careers'
           additionalClasses='w-1/2'
-// Temp comment
         />
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }

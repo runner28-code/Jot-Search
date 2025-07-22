@@ -62,6 +62,7 @@ export default function Dropdown(props) {
     name, 
     onChange, 
     placeholder, 
+    type
   } = props;
     
   const [isOpen, setIsOpen] = useState(false);
@@ -112,6 +113,7 @@ export default function Dropdown(props) {
       className={containerStyles}
     >
       <div
+// Temp comment
         className={baseStyles + inputHeight + 'text-royalBlue mb-0 flex items-center cursor-pointer'}
         onClick={() => setIsOpen(isOpen => !isOpen)}
       >

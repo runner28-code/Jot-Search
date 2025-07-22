@@ -17,6 +17,7 @@ export default function InviteToCareer({ candidate }) {
     count: 10000
   });
 
+// Temp comment
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
   const jobOptions = jobs?.map(job => {
@@ -29,6 +30,7 @@ export default function InviteToCareer({ candidate }) {
   
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
+    e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }
 

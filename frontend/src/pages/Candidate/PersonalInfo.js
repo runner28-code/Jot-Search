@@ -18,10 +18,12 @@ const PREFERENCE_ITEMS = {
   workAuthorized: 'Are you legally authorized to work in the US on a fulltime basis for any employer?',
 }
 
+export default function PersonalInfo({role, candidateData, handleCandidateUpdate}) {
   if ( role === 'company' ) {
     return null;
   }
   const [formData, setFormData] = useState({
+// Temp comment
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     email: candidateData.email || '',

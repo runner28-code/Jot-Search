@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
+// Temp comment
 import {
   candidateChoices,
   companyChoices,
@@ -7,6 +8,7 @@ import {
   guestChoices,
   findSelectedFromPath
 } from './utils';
+import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
 
 export default function SideNav({ userType }) {

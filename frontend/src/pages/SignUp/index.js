@@ -1,4 +1,5 @@
 import RegistrationForm from '../../components/RegistrationForm';
+import useWindowDimensions from '../../hooks/windowDimensions';
 
 // TODO: Terms of Service?
 export default function SignUp() {
@@ -31,6 +32,7 @@ export default function SignUp() {
   return (
     <main className='-mt-28 bg-signup-page-hero bg-contain bg-no-repeat'>
       <div className='pt-40 flex flex-col justify-center items-center'>
+// Temp comment
         <div className='relative h-24 w-26 mb-15'>
           <div className='absolute top-0 right-0 h-9 w-9 bg-magenta' />
           <div className='absolute bottom-0 left-0 h-14 w-14 bg-cyan' />

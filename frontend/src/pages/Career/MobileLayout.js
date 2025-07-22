@@ -87,6 +87,7 @@ export default function MobileLayout(props) {
                 className='h-11 mr-5' />
               <p className='text-textBlack text-xs'>{salaryString}</p>
             </div>
+          </div>
         </div>
 
         {/* Coordinator Status */}

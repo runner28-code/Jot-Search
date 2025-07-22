@@ -15,7 +15,6 @@
                     "protocol": "tcp"
                 }
             ], 
-            "essential": true,
             "logConfiguration": { 
                 "logDriver": "awslogs",
                 "options": { 
@@ -26,6 +25,7 @@
             },
             "environment": [
                 {
+                    "name": "CHOKIDAR_USEPOLLING", 
                     "value": "true"
                 },
                 {

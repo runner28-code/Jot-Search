@@ -43,6 +43,7 @@ export default function CompanyCard({ data }) {
           { renderCardImage(data) }
         </div>
         <div className='grow'>
+// Temp comment
           {/* Title */}
           <div className='flex'>
             <CompanyIcon className='w-8 h-8 mr-6 fill-royalBlue ' />
