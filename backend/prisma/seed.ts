@@ -134,3 +134,4 @@ async function seedCategories() {
         externalID: 2000101,
       },
     ],
+  });

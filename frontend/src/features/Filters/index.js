@@ -8,7 +8,6 @@ export default function Filters(props) {
     defaultFilterObject,
     filterObject,
     searchLabel,
-    searchTerm,
     setSearchTerm,
     handleSearchClick,
     marginBottom
@@ -36,7 +35,6 @@ Filters.propTypes = {
   searchLabel: PropTypes.string,
   searchTerm: PropTypes.string,
   setSearchTerm: PropTypes.func,
-// Temp comment
   handleSearchClick: PropTypes.func,
 }
 

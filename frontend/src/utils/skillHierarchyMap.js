@@ -141,7 +141,6 @@ export const skills = [
   'Contract Management',
   'Contract Negotiation',
   'Coordination',
-  'Copy Editing',
   'Copywriting',
   'Counseling',
   'CPA',
@@ -241,3 +240,5 @@ export const skills = [
   'IT',
   'IT Support',
   'Java',
+  'Javascript',
+  'Jira',

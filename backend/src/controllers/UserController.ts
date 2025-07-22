@@ -16,7 +16,6 @@ import {
 import { BullhornService } from "../services/BullhornService";
 import { sendVerification } from "../services/EmailService";
 import {
-  register,
   login,
   update,
   recovery,
@@ -131,3 +130,5 @@ export class UserController {
     }
 
     if (user.role === CANDIDATE) {
+      try {
+        const res = await (

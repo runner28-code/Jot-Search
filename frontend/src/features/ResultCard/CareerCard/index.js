@@ -92,7 +92,6 @@ function DesktopCard({ dataObj, active }) {
           { renderCardImage(data) }
         </div>
         <p className='text-sm text-zinc-700 font-roboto mt-8'>{ data.clientCorporation }</p>
-      </div>
       <div className='grow'>
         {/* Title */}
         <div className='flex'>
@@ -112,6 +111,7 @@ function DesktopCard({ dataObj, active }) {
           </div>
           {/* Remote/Onsite/Hybrid */}
           <div className='w-1/3 flex items-center pr-4'>
+            <LaptopIcon
               className='fill-midGrey h-11 w-8 mr-5' />
             <p className='text-textBlack'>{data.onSite}</p>
           </div>

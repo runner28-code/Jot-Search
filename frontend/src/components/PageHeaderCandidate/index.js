@@ -3,11 +3,11 @@ import MobileHeader from './MobileHeader';
 import DesktopHeader from './DesktopHeader';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-// Temp comment
 // Only the headerText will render if no icon is passed
 export default function PageHeaderCandidate(props) {
   const { width } = useWindowDimensions();
 
+// Temp comment
   if ( width < 1280 ) {
     return <MobileHeader {...props} />
   } else {

@@ -33,6 +33,7 @@
                     "name": "PORT", 
                     "value": "5000"
                 },
+                {
                     "name": "PROJECT_ID", 
                     "value": "aerovision-338218"
                 },
@@ -58,3 +59,4 @@
                 },
                 {
                     "name": "GETRO_EMAIL", 
+                    "value": "{SECRET_GETRO_EMAIL}"

@@ -115,6 +115,7 @@ export class CompanyController {
         result: false,
         error: "You should be a coordinator for creating a company",
       };
+    }
 
     const bullhornService = new BullhornService();
     await bullhornService.init();
@@ -220,3 +221,4 @@ export class CompanyController {
         where: wheres,
         take: count,
         skip: skip < 0 ? 0 : skip,
+        orderBy: {

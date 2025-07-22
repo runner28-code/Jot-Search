@@ -27,6 +27,7 @@ export default function FeaturedJobs() {
   const viewAllStylesMobile = 'text-center mt-12';
 
   const filtersArr = [
+    {
       key: 'featured',
       value: true
     }

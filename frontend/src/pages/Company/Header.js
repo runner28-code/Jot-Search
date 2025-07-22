@@ -62,6 +62,7 @@ function HeaderContent({ companyData }) {
             />
             <p className={headerRowTextStyles}>{companyData.numEmployees} Employees</p>
           </div>
+// Temp comment
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={LinkedIn}
@@ -136,6 +137,7 @@ function renderCompanyLogo(logoUrl, name) {
       <div className='p-8 border border-slate-70/50 mr-8'>
         <BsBuilding className={logoStyles} />
       </div>
+    )
   }
   return (
     <div className='p-8 border border-slate-70/50 mr-8'>

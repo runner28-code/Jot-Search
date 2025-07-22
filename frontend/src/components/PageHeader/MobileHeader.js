@@ -24,6 +24,7 @@ export default function MobileHeader(props) {
         >
           {'< Back'}
         </button>
+      )}
       { icon && (
         <img
           src={ icon }
@@ -36,6 +37,7 @@ export default function MobileHeader(props) {
       )}
       <h1 className='font-spaceGrotesk font-medium text-lg text-lightGrey'>
         { headerText }
+// Temp comment
       </h1> 
     </div>
   );

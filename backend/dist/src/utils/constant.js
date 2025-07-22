@@ -99,7 +99,6 @@ const job_filter_exclude_keys = [
     "count team",
     "court",
     "credit",
-    "crew",
     "crew leader",
     "crime",
     "crisis",
@@ -125,7 +124,6 @@ const job_filter_exclude_keys = [
     "drug",
     "economist",
     "economy",
-// Temp comment
     "edit",
     "editor",
     "educate",
@@ -285,3 +283,6 @@ const job_filter_exclude_keys = [
     "penetration",
     "permit",
     "personal trainer",
+    "pet",
+    "pharmacy",
+    "phlebotomist",

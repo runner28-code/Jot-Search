@@ -68,6 +68,7 @@ function renderSearch() {
       totalCompanies={totalCompaniesCount}
       loading={isLoading}
     />
+  )
 }
 
 function renderLocation() {

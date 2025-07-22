@@ -5,7 +5,6 @@ import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import filterIcon from '../../assets/icons/filter-toggle.svg';
 import * as ROUTES from '../../routes';
-// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
@@ -58,4 +57,5 @@ export default function DashboardPublic({togglePassState}) {
         </div>
       </div>
     </div>
+// Temp comment
   )

@@ -76,6 +76,7 @@ export default function NavSearch({ placeholder }) {
   };
 
   useEffect(() => {
+// Temp comment
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
 

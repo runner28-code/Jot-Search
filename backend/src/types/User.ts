@@ -12,7 +12,6 @@ export type User = {
   city?: string;
   state?: string;
   zip?: string;
-  resume?: string;
   avatar?: string;
   linkedin?: string;
   skills?: string;
@@ -61,3 +60,4 @@ export const IUSER = {
   role: "",
   address1: "",
   address2: "",
+  city: "",

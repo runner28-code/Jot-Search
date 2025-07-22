@@ -248,3 +248,5 @@ export class CandidateController {
         delete where.firstName
         candidatesPromise = db.user.findMany({
           where,
+          skip: skip < 0 ? 0 : skip,
+          take: count || 100,

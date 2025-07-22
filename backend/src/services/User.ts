@@ -228,6 +228,7 @@ export const isExistUser = async (field: string, value: string) => {
   } catch (error) {
     console.log(error);
     return true;
+  }
 };
 
 export const isExistUserFull = async (field: string, value: string) => {
@@ -381,3 +382,6 @@ export const getCompanyDashboardStats = async (days: number) => {
       },
       applicationInvitationsSent: {
         count: candidateJobInvitesCurrentPeriod,
+        compare: candidateJobInvitesCompare || 0
+      }
+    }

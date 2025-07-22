@@ -174,7 +174,6 @@ const job_filter_exclude_keys = [
   "gutter installer",
   "gym",
   "gymnastics",
-  "health",
   "historic",
   "history",
   "home care",
@@ -299,3 +298,5 @@ const job_filter_exclude_keys = [
   "porter",
   "portioner",
   "pretreatment",
+  "principal",
+  "probation",

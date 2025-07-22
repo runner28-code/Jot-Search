@@ -45,3 +45,4 @@ export const experienceMap = {
   '5': '11+'
 }
 
+export const educationChoices = [

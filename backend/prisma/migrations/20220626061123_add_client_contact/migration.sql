@@ -36,3 +36,4 @@ CREATE TABLE "ClientContact" (
     "fax" TEXT,
     "fax2" TEXT,
     "fax3" TEXT,
+    "firstName" TEXT,

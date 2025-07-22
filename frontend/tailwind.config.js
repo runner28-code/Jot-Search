@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
+        'spin': 'spin .175s linear forwards',
         'spin-reverse': 'spin-reverse .175s linear forwards'
       },
       keyframes: {
@@ -89,7 +90,6 @@ module.exports = {
       },
       spacing: {
         // Styleguide Spacing
-        'xxs': '4px',
         'xs': '8px',
         's': '12px',
         'm': '16px',
@@ -158,3 +158,4 @@ module.exports = {
         '188': '47rem',
         '200': '50rem',
         '210': '52.5rem',
+        '216': '54rem',

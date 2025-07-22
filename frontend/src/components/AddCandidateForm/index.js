@@ -252,6 +252,7 @@ export default function RegistrationForm() {
           />
           {/* File input for resume */}
           <FormInput
+// Temp comment
             type='file'
             name='resumeFile'
             placeholder='Upload Resume'
@@ -269,6 +270,7 @@ export default function RegistrationForm() {
           />
           <FormInput
             type='password'
+            name='verifyPassword'
             placeholder='Verify Password' 
             value={formObj.verifyPassword}
             onChange={handleChange}

@@ -92,7 +92,6 @@ export default function Login() {
             help@intulsa.com
           </a>
         </div>
-// Temp comment
       </div>
     </section>
   )

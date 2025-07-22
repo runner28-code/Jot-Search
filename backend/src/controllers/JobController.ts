@@ -263,3 +263,4 @@ export class JobController {
     );
     const _fields = filteredFields?.length ? filteredFields.join(", ") : "*";
 
+    const condition = getFilterConditions(_filters, operator);

@@ -10,6 +10,5 @@ export const encryptPassword = (password: string) => {
     const encrypted_password_hash = crypto.createHash('sha512');
 
     encrypted_password_hash.update(sr + password);
-
     return `${sr}${encrypted_password_hash.digest('hex')}`;
 }

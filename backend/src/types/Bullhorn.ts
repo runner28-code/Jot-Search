@@ -201,3 +201,4 @@ export type Candidate = {
     educationDegree?: string;
     email?: string;
     email2?: string;
+    email3?: string;
