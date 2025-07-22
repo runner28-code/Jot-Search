@@ -23,7 +23,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     return null;
   }
   const [formData, setFormData] = useState({
-// Temp comment
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     email: candidateData.email || '',
@@ -33,7 +32,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     city: candidateData.city || '',
     address1: candidateData.address1 || '',
     referredBy: candidateData.referredBy || '',
-    gender: candidateData.gender || '',
   })
 
   const [editMode, setEditMode] = useState(false);

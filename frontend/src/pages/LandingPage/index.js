@@ -34,7 +34,6 @@ export default function LandingPage() {
           { renderColorShapes() }
           { renderJoinTalent() }
         </div>
-// Temp comment
         { renderSearch() }
       </section>
       {/* Browse Opportunities by Expertise */}
@@ -69,7 +68,6 @@ function renderSearch() {
       totalCompanies={totalCompaniesCount}
       loading={isLoading}
     />
-  )
 }
 
 function renderLocation() {

@@ -36,6 +36,7 @@ Filters.propTypes = {
   searchLabel: PropTypes.string,
   searchTerm: PropTypes.string,
   setSearchTerm: PropTypes.func,
+// Temp comment
   handleSearchClick: PropTypes.func,
 }
 

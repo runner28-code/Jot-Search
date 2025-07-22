@@ -76,6 +76,7 @@ export default function DesktopLayout(props) {
           {/* Second row icons */}
           <div className='w-full flex items-center mt-xl'>
             {/* Employment Type */}
+// Temp comment
             <div className='w-1/3 flex items-center'>
               <img
                 src={clockIcon}
@@ -120,6 +121,7 @@ export default function DesktopLayout(props) {
 }
 
 DesktopLayout.propTypes = {
+  data: PropTypes.shape({
     careerData: PropTypes.object.isRequired,
     categoryString: PropTypes.string.isRequired,
     role: PropTypes.string.isRequired,

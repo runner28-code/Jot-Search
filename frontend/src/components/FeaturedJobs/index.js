@@ -27,7 +27,6 @@ export default function FeaturedJobs() {
   const viewAllStylesMobile = 'text-center mt-12';
 
   const filtersArr = [
-    {
       key: 'featured',
       value: true
     }
@@ -46,6 +45,7 @@ export default function FeaturedJobs() {
             :
             jobs.map((career, index) => {
               const categoryString = career.category?.name.toUpperCase() || 'CATEGORY N/A';
+              return(
                 <Link
                   to={`${ROUTES.careers}/${career.id}`}
                   key={index}

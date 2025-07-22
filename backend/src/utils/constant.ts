@@ -234,6 +234,7 @@ const job_filter_exclude_keys = [
   "lifeguard",
   "lift operator",
   "lighting",
+  "lpn",
   "lunch",
   "machine operator",
   "machinist",

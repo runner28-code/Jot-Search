@@ -12,7 +12,6 @@ export default function CoordinatorDashboard({ userType }) {
         icon={gaugeIcon}
       />
       <Stats userType={userType} />
-// Temp comment
       <AdvancedSearch />
     </>
   )

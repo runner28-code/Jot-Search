@@ -18,6 +18,7 @@ import {
   renderHeader
 } from './utils';
 import * as ROUTES from '../../routes';
+// Temp comment
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
 import { experienceMap } from '../../utils/dbFieldMapping';

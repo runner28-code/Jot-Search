@@ -78,6 +78,7 @@ export default function AddCompanyUser() {
                   {company.name}
                 </div>
               ))}
+            </div>
           )}
           {selectedCompany && (
             <CompanyContactList

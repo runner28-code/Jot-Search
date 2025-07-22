@@ -17,7 +17,6 @@ export default function InviteToCareer({ candidate }) {
     count: 10000
   });
 
-// Temp comment
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
   const jobOptions = jobs?.map(job => {

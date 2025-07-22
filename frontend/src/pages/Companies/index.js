@@ -10,9 +10,11 @@ import { MdSearch as SearchIcon } from 'react-icons/md';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import Dashboard from '../../components/DashboardPublic';
 import DashboardCandidate from '../../components/DashboardCandidate';
+import useWindowDimensions from '../../hooks/windowDimensions';
 
 import AuthService from '../../services/auth';
 
+// Temp comment
 export default function Companies() {
   const { width } = useWindowDimensions();
   let userType = AuthService.getUserRole();

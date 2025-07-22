@@ -5,6 +5,7 @@ import EditSkillsForm from './EditSkillsForm';
 import EditExpertiseForm from './EditExpertiseForm';
 import EditResumeForm from './EditResumeForm';
 import Property from './Property';
+
 // const SECONDARY_FORM_TYPES = ['comments', 'primarySkills', 'expertise', 'resume'];
 
 export default function EditSectionForm({ contentObject, handlePropertyChange }) {
@@ -56,6 +57,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
             >
               {labelString}
             </label>
+// Temp comment
             <input 
               className='w-100 text-xl border-lightGrey border-solid border-2 rounded-2xl px-4 py-2'
               key={key}

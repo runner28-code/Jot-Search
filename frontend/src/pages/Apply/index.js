@@ -71,7 +71,6 @@ export default function Apply() {
         candidateData.workAuthorized = 'No';
       }
       // Turn API IDs into appropriate values
-// Temp comment
       candidateData.ethnicity = ethnicityMap[candidateData.ethnicity || 'U']; // 'U' is default ("Prefer not to say")
       candidateData.gender = genderMap[candidateData.gender || 'U']; // 'U' is default ("Prefer not to say")
       candidateData.disability = disabilityMap[candidateData.disability || 'U']; // 'U' is default ("Prefer not to say")

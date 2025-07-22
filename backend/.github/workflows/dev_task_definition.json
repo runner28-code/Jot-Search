@@ -15,6 +15,7 @@
                     "protocol": "tcp"
                 }
             ], 
+            "essential": true,
             "logConfiguration": { 
                 "logDriver": "awslogs",
                 "options": { 
@@ -32,7 +33,6 @@
                     "name": "PORT", 
                     "value": "5000"
                 },
-                {
                     "name": "PROJECT_ID", 
                     "value": "aerovision-338218"
                 },

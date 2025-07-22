@@ -63,6 +63,7 @@ const job_filter_exclude_keys = [
     "care coordinator",
     "career coach",
     "career navigator",
+    "carpenter",
     "case management",
     "case manager",
     "cashier",
@@ -124,6 +125,7 @@ const job_filter_exclude_keys = [
     "drug",
     "economist",
     "economy",
+// Temp comment
     "edit",
     "editor",
     "educate",

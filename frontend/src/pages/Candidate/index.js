@@ -23,7 +23,6 @@ const PREFERENCE_ITEMS = {
   willRelocate: 'I\'m willing to relocate to Tulsa OK',
   willReceiveNotification: 'Receive emails about relevant opportunities based on your profile'
 }
-
 export default function Candidate() {
   // Redirect if userRole is 'candidate' unless it's their profile, candidates should not be able to see other candidates
   const role = AuthService.getUserRole();
@@ -128,6 +127,7 @@ export default function Candidate() {
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}
       <div className='px-4'>
         <div className='border rounded-2xl bg-white p-15 relative'>
+          <CareerProfileInfo
             role={role}
             candidateData={candidateData}
             handleCandidateUpdate={handleCandidateUpdate} />

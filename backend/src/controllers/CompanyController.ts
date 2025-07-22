@@ -115,10 +115,10 @@ export class CompanyController {
         result: false,
         error: "You should be a coordinator for creating a company",
       };
-    }
 
     const bullhornService = new BullhornService();
     await bullhornService.init();
+    return await bullhornService.insertCompany(body);
   }
 
   @Authorized()

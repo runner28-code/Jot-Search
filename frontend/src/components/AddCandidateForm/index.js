@@ -269,7 +269,6 @@ export default function RegistrationForm() {
           />
           <FormInput
             type='password'
-            name='verifyPassword'
             placeholder='Verify Password' 
             value={formObj.verifyPassword}
             onChange={handleChange}

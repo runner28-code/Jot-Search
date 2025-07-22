@@ -41,6 +41,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   }
 
   function handleSearchChange(searchTerm) {
+// Temp comment
     handleFilterChange('title', searchTerm);
   }
 
@@ -77,7 +78,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
             inputHeight: 'h-18 ',
             inputWidth: 'w-80 ',
             marginBottom: 'mb-0 ',
-// Temp comment
             listStyles: 'bg-white text-black70% border-midGrey border-2 border-solid ',
             listItemStyles: 'pl-6 pr-2 py-2 tracking-wide '
           }}

@@ -228,7 +228,6 @@ export const isExistUser = async (field: string, value: string) => {
   } catch (error) {
     console.log(error);
     return true;
-  }
 };
 
 export const isExistUserFull = async (field: string, value: string) => {

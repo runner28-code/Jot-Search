@@ -59,6 +59,7 @@ export default function AddCoordinator() {
       formObject.password
     );
 
+    // Add errors to state if there are any
     if (Object.keys(newErrors).length > 0) {
       setSubmissionObject({
         ...submissionObject,

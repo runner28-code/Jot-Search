@@ -96,6 +96,7 @@ export default function Dropdown(props) {
     return placeholder;
   }
 
+// Temp comment
   const suffix = (name) => {
     if (name === YEARS_OF_EXPERIENCE) { 
       return ' years of experience'
@@ -113,7 +114,6 @@ export default function Dropdown(props) {
       className={containerStyles}
     >
       <div
-// Temp comment
         className={baseStyles + inputHeight + 'text-royalBlue mb-0 flex items-center cursor-pointer'}
         onClick={() => setIsOpen(isOpen => !isOpen)}
       >
