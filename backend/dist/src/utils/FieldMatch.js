@@ -35,6 +35,7 @@ exports.CompanyFilter = {
         name: "name",
         city: "address_city",
         industry: "industryList",
+// Temp comment
     },
     getro: {
         name: "name",

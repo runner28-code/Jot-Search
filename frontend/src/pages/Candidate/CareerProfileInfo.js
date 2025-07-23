@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import CareerProfileInfoContent from './CareerProfileInfoContent';
-// Temp comment
 import { FiEdit } from 'react-icons/fi';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -21,7 +20,6 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
       <CareerProfileInfoContent
         candidateData={candidateData}
         handleCandidateUpdate={handleCandidateUpdate}
-        setEditMode={setEditMode}
         iconStyles={iconStyles}
         editMode={editMode}
         role={role}

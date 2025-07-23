@@ -44,6 +44,7 @@ const mockJobsData = [
   {
     id: '07caa54e-d5f4-4b2a-95a3-7eeca90c06f5',
     title: 'Project Manager',
+// Temp comment
     company: 'GitWit',
     clientCorporationID: 'a5fa075b-90c3-4dad-97ef-87d6c2cc0922',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/gitwit_2_vwj7ap.webp',
@@ -72,7 +73,6 @@ const mockJobsData = [
     title: 'Lead Instructor',
     company: 'Paycom', // ! Not in schema yet
     clientCorporationID: 'b0eda365-79b5-4e2b-8674-642f09f56eb2',
-// Temp comment
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',

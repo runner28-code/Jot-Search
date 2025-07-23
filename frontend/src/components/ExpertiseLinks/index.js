@@ -44,7 +44,6 @@ export default function ExpertiseLinks() {
           />
           <span className={textStyles}>Sales & Business</span>
           <span className={textStyles}>Development</span>
-        </Link>
         {/* Marketing */}
         <Link
           to={ROUTES.careers}

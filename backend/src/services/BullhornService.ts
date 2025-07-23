@@ -155,6 +155,7 @@ export class BullhornService {
         },
         { encode: false }
       );
+      const url = `${this.oauth_url}/token?${query}`;
       console.log("access token url: ", url);
       const res = await axios.post(url);
       console.log(res.status);

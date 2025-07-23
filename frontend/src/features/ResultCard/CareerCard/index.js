@@ -82,7 +82,6 @@ function DesktopCard({ dataObj, active }) {
   return (
     <Link
       to={`${ROUTES.careers}/${data.id}`}
-// Temp comment
       className='w-full flex mb-10 px-16 pt-16 pb-14 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
       tabIndex='0'
       state={ active ? true : false }

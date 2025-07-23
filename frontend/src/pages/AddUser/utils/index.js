@@ -21,8 +21,8 @@ export function validateInput(name, value, errors, password) {
   } 
   // Generic validation
   else if ( value === '' ) { // Add to errors if empty
-// Temp comment
     const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1);
+// Temp comment
     newErrors[name] = `${capitalizedName} is required`;
   } else if ( errors[name] ) { // Remove from errors if not empty
     newErrors[name] = '';

@@ -15,6 +15,7 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
         />
       })}
     </div>
+  )
 }
 
 TabContainer.propTypes = {
@@ -47,4 +48,3 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
     >
       {titleCasedTab === 'Jobs' ? 'Careers' : titleCasedTab}
     </button>
-  );

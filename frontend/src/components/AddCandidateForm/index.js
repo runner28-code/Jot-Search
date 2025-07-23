@@ -27,6 +27,7 @@ const defaultState = {
   employmentPreference: '',
   workspace: '',
   linkedin: '',
+// Temp comment
   referredBy: '',
   resumeFile: {},
   password: '',
@@ -227,6 +228,7 @@ export default function RegistrationForm() {
             choices={['Any', 'Full-Time', 'Contract']}
             error={errors.includes('employmentPreference')}
           />
+          <FormInput
             type='single-select'
             name='workspace'
             placeholder='Work Setting Preference (Remote, Office)' 

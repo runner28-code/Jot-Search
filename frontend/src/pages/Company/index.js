@@ -15,7 +15,6 @@ import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
-export default function Company() {
   const { width } = useWindowDimensions();
   const { id } = useParams();
   const [companyData, setCompanyData] = useState({});
@@ -121,7 +120,6 @@ function RenderHeader({type, loggedIn}) {
   if( loggedIn ) {
     return(<>
       <DetailsHeader type='company' />
-// Temp comment
     </>)
   }
   return (

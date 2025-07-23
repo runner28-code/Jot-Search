@@ -6,6 +6,7 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
     name: choice,
     id: choice,
   }));
+  const { color, textColor } = additionalStyles;
 
   return (
     <div

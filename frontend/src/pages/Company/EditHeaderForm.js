@@ -29,6 +29,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   const handleCancel = () => {
     setEditMode(false);
   }
+  const handleSubmit = () => {
     handleCandidateUpdate(formData);
     setEditMode(false);
   }
@@ -211,7 +212,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className={inputStyles + 'ml-10 text-h6'} />
         </div>
         {/* Email */}
-        <div className='flex items-center justify-between mb-4'>
           <label
             className='text-h6 text-royalBlue flex items-center'
             htmlFor='email'

@@ -62,7 +62,6 @@ export default function TypeaheadDropdown(props) {
     <div 
       className='relative w-full'
       ref={menuRef}  
-    >
       { renderLabel(name, label, required) }
       <input 
         type={type}
@@ -86,7 +85,6 @@ TypeaheadDropdown.propTypes = {
   dropdownType: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   label: PropTypes.string,
-// Temp comment
   required: PropTypes.bool,
   placeholder: PropTypes.string.isRequired,
   choices: PropTypes.array.isRequired,

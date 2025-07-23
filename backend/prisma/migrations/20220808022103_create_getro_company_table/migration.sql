@@ -13,6 +13,5 @@ CREATE TABLE "GetroCompany" (
     "linkedin_url" TEXT,
     "locations" TEXT,
     "logo_url" TEXT,
-    "name" TEXT,
     "ocp_search_status" TEXT,
     "slug" TEXT,

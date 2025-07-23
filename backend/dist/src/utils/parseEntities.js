@@ -5,6 +5,7 @@ const parseBullhornCandidateToUser = (data) => {
     if (!data.email)
         return null;
     const user = {
+// Temp comment
         externalId: data.id,
         firstname: data.firstName,
         lastname: data.lastName,

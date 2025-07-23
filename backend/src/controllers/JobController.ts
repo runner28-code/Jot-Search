@@ -83,7 +83,6 @@ export class JobController {
         job.company.logo = getroCompany.logo_url;
       }
 
-      if (job) {
         return {
           job: {
             ...(job?.getroJobInfo || {}),

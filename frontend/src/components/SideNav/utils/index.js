@@ -19,6 +19,7 @@ export const choices = {
   dashboard: {
     label: 'My Dashboard',
     icon: DashboardIcon,
+    link: ROUTES.dashboard,
   },
   profile: {
     label: 'My Profile',
@@ -81,7 +82,6 @@ export const candidateChoices = [
   choices.careers,
   choices.companies,
   choices.talentInTulsa,
-  choices.logout
 ];
 
 export const companyChoices = [
