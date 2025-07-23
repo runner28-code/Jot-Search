@@ -109,6 +109,7 @@ export default function NavSearch({ placeholder }) {
       </div>
       { renderResultsContainer( combinedResults, searchTerm ) }
     </div>
+  )
 }
 
 NavSearch.propTypes = {

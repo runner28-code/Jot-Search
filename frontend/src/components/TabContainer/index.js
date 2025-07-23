@@ -48,3 +48,4 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
     >
       {titleCasedTab === 'Jobs' ? 'Careers' : titleCasedTab}
     </button>
+  );

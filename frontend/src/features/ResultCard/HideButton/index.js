@@ -11,7 +11,6 @@ export default function HideButton({ type, data, setIsHidden }) {
   
   async function handleClick() {
     setIsHidden(true);
-// Temp comment
     await toggleHideJob(data.id);
   }
 

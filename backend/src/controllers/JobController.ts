@@ -70,7 +70,6 @@ export class JobController {
           select: {
             domain: true,
             logo_url: true,
-          },
           where: {
             domain: {
               in: job?.company?.companyURL
@@ -83,6 +82,7 @@ export class JobController {
         job.company.logo = getroCompany.logo_url;
       }
 
+      if (job) {
         return {
           job: {
             ...(job?.getroJobInfo || {}),

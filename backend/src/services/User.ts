@@ -138,7 +138,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
       } catch (error) {
         console.error("Could not update user in bullhorn", error);
       }
-    }
 
     const updated = await db.user.update({
       where: {
@@ -237,6 +236,7 @@ export const isExistUserFull = async (field: string, value: string) => {
       where: {
         [field]: value,
       },
+    });
 
     return user || null;
   } catch (error) {

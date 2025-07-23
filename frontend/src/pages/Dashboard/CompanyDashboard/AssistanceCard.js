@@ -5,6 +5,7 @@ export default function AssistanceCard() {
     <div className='w-full bg-white border border-disabledGrey rounded-2xl px-xxl-3 py-xxl-2'>
       {/* Header */}
       <div className='flex'>
+// Temp comment
         <img
           src={flagIcon}
           alt='Flag'
@@ -20,6 +21,7 @@ export default function AssistanceCard() {
           <li className='list-disc ml-8'>Create a new active career post</li>
           <li className='list-disc ml-8'>etc...</li>
           <hr className='max-w-300 mt-6' />
+        </ul>
       </div>
       {/* Button */}
       <a

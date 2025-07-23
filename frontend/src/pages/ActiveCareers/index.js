@@ -19,6 +19,7 @@ export default function ActiveCareers() {
   const { companyId } = AuthService.getProfile();
   const [page, setPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
+
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm(searchTerm);
@@ -50,7 +51,6 @@ export default function ActiveCareers() {
         additionalClasses='w-180 mt-30'
       />
       <ResultsHeader
-        total={total}
         loading={isLoading}
         type={RESULT_CONTAINER_TYPE}
       />

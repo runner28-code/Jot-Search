@@ -104,6 +104,7 @@ export async function saveCandidate(userId, candidateId) {
 export async function addUser(userObject) {
   try {
     const { data } = await API.post(ROUTES.APIaddUser, userObject);
+// Temp comment
     return normalizeData(data);
   } catch (err) {
     console.log(err);

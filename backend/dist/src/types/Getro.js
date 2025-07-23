@@ -13,5 +13,4 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "description",
     "discarded",
     "employment_types",
-// Temp comment
     "expires_at",

@@ -205,7 +205,6 @@ export const saveCandidates = async (candidates: any[]) => {
         const existing = await db.candidate.findFirst({
           where: {
             externalId: candidate.id,
-          },
         });
 
         if (existing) {

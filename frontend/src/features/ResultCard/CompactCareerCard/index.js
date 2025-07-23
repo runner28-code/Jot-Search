@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+// Temp comment
 import {BsClipboardCheck} from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
 import { calculatePostingAge } from '../../../utils/formatFunctions';
@@ -42,7 +43,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             { isApplicationPage ?
               <div>
                 <p className='text-midGrey'>Applied</p>
-// Temp comment
                 <p className='text-midGrey text-xs'>{applicationAge}</p>
               </div>
               :

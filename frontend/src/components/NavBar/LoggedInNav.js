@@ -82,6 +82,7 @@ const DropdownMenu = () => {
   const { currentUser } = useCandidateContext()
   const menuRef = useRef(null);
   const profile = AuthService.getProfile();
+  if ( !profile ) {
     navigate(ROUTES.login);
   }
 

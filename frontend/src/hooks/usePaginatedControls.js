@@ -55,6 +55,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
 
             {page > 2 && (
               <PaginationButton
+// Temp comment
                 key={page - 1}
                 page={page - 1}
                 setPage={setPage}

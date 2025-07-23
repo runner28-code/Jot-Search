@@ -27,7 +27,6 @@ const defaultState = {
   employmentPreference: '',
   workspace: '',
   linkedin: '',
-// Temp comment
   referredBy: '',
   resumeFile: {},
   password: '',

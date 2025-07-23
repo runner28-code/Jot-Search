@@ -53,6 +53,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           />
         </div>
       </div>
+// Temp comment
       <div className='grow font-bold'>
         {/* First Name */}
         <div className='mb-6'>
@@ -212,6 +213,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className={inputStyles + 'ml-10 text-h6'} />
         </div>
         {/* Email */}
+        <div className='flex items-center justify-between mb-4'>
           <label
             className='text-h6 text-royalBlue flex items-center'
             htmlFor='email'
