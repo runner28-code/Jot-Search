@@ -58,9 +58,7 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
   }
 
   return Object.entries(defaultFilterObject).map(([key, value]) => {
-    if (!filterObject[key]) {
       return null;
-// Temp comment
     }
     const filterType = key;
     const choices = value;

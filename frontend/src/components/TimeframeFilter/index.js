@@ -55,3 +55,4 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
       </div>
       { renderDropdown( showDropdown ) }
     </div>
+  )

@@ -22,7 +22,6 @@ import {
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
 
-// Temp comment
 const NUM_ITEMS_PER_TYPE = 5
 
 export default function NavSearchMobile({ placeholder }) {

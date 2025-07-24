@@ -37,6 +37,7 @@ export default function TypeaheadDropdown(props) {
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
     if (!dropdownOpen) setInputValue('');
+  }, [dropdownOpen]);
   
   /* Filter choices based on input */
   useEffect(() => {
@@ -94,7 +95,6 @@ TypeaheadDropdown.propTypes = {
   inputHeight: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
 }
-
 function renderLabel(name, label, required) {
   if ( !label ) {
     return null;

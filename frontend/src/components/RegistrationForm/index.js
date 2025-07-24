@@ -13,6 +13,7 @@ import {
 import {
   inputValidation,
   formatFormObj,
+// Temp comment
   renderButtonOrLoading,
   renderErrorBlock,
   renderHeader
@@ -95,7 +96,6 @@ export default function RegistrationForm(loggedIn) {
       formObj.resume = resumeResponse;
 
       // Format formObj
-// Temp comment
       const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend

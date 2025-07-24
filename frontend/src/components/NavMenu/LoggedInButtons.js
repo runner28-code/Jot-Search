@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
@@ -18,6 +19,7 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
     <hr className={stylesObject.hrStyles} />
     <div 
       id='logout'
+      onClick={handleOptionClick}
       className={stylesObject.bottomLinkStyles}
     >
       <MdLogout className={stylesObject.iconStyles} />

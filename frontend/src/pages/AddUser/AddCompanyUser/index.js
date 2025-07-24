@@ -44,7 +44,6 @@ export default function AddCompanyUser() {
             href='https://www.getro.com/'
             addClass='mr-8'
           />
-          <ExternalLink
             text='Go to Bullhorn'
             href='https://www.bullhorn.com/'
           />
@@ -72,6 +71,7 @@ export default function AddCompanyUser() {
               {companies.map((company) => (
                 <div
                   key={company.id}
+                  className='border-b border-grey300 px-4 py-4 cursor-pointer hover:bg-royalBlue hover:text-white'
                   onClick={() => handleCompanyClick(company)}
                 >
                   {company.name}

@@ -11,7 +11,6 @@ export default function ExpertiseLinksMobile() {
   const iconStyles = 'mb-10';
   const textStyles = 'text-xs text-darkGray';
 
-  return (
     <section className='mt-70 mb-24 flex flex-col items-center'>
       <h4 className='text-h5 font-spaceGrotesk font-semibold text-darkGray text-center'>
         Browse Opportunities by Career Expertise
@@ -77,6 +76,7 @@ export default function ExpertiseLinksMobile() {
           className={linkStyles}
           state={{ Expertise: 'Finance' }}
         >
+          <img
             src={financeIcon}
             alt='Finance Icon'
             className={iconStyles}

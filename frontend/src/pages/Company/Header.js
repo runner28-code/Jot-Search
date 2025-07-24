@@ -171,7 +171,6 @@ function renderDesktopLogo(logoUrl, name) {
       />
     </div>
   )
-}
 
 function FillerIcon () {
   const { width } = useWindowDimensions();
@@ -184,7 +183,6 @@ function FillerIcon () {
     )
   } else {
     return null;
-// Temp comment
   }
 }
 

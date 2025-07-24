@@ -51,7 +51,6 @@ export default function CareerPage() {
     role
   }
   const loggedIn = AuthService.loggedIn();
-// Temp comment
 
   const source = data.careerData.datasource;
 
@@ -61,6 +60,7 @@ export default function CareerPage() {
     <RenderHeader
       loggedIn={loggedIn}
       role={role}
+// Temp comment
       source={source}
     />
     <div 

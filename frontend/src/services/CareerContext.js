@@ -16,7 +16,6 @@ const mockJobsData = [
     specialty: 'Technology'
   },
   {
-// Temp comment
     id: 'b25cf8b7-e171-4049-8e67-701b7b7b81c3',
     title: 'Software Engineer',
     company: 'Kum N Go',

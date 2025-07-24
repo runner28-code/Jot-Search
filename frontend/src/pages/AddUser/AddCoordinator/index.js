@@ -9,6 +9,7 @@ export default function AddCoordinator() {
     loading: false,
     success: false,
     errors: {},
+// Temp comment
   });
 
   // Submit form data when submissionObject.loading is set to true
@@ -19,7 +20,6 @@ export default function AddCoordinator() {
       const data = await registerUser(formObjectCopy);
       if (data.result === true) {
         setSubmissionObject({
-// Temp comment
           loading: false,
           success: true,
           errors: {},

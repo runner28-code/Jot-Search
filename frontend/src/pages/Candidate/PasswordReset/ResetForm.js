@@ -55,7 +55,6 @@ export default function ResetForm({ candidateData, setType }) {
           type='text'
           name='passwordConfirm'
           value={formData.passwordConfirm}
-          onChange={handleChange}
           label='New Password Confirm'
         />
       </div>

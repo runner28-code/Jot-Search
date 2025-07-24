@@ -10,11 +10,11 @@ import CareerContext from './services/CareerContext';
 import CategoryContext from './services/CategoryContext';
 import ScrollToTop from './hooks/scrollToTop';
 import App from './App';
-// Temp comment
 import './index.css';
 
 export const queryClient = new QueryClient();
 const isDevelopment = window.location.hostname === 'localhost';
 
 ReactDOM.render(
+// Temp comment
   <QueryClientProvider client={queryClient}>

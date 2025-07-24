@@ -39,6 +39,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
       { Object.entries(contentObject).map(([key, value]) => {
         const capitalizedKey = startCase(key);
         const labelString = `${capitalizedKey}:`;
+// Temp comment
         if ( key === 'email' ) {
           return <Property
             key={key}
@@ -61,6 +62,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               className='w-100 text-xl border-lightGrey border-solid border-2 rounded-2xl px-4 py-2'
               key={key}
               name={key}
+              onChange={handleChange}
               value={value}
             />
           </div>

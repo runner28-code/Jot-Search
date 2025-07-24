@@ -29,7 +29,6 @@ const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
-  guest: ['jobs', 'companies'],
 }
 
 function useTabState(disabledTabs, userType, pathname) {
@@ -101,6 +100,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     const newState = { ...initialFilterState, ...state };
     if (state) {
       newState.title = state.title || '';
+      newState.Expertise = state.Expertise || 'Any';
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
     }
     setFilterObject(newState);

@@ -6,7 +6,6 @@ import {
   QueryParam,
   JsonController,
   Authorized,
-  CurrentUser,
   Patch,
 } from "routing-controllers";
 import { saveCandidate, getSavedCandidates } from "../services/Candidate";
@@ -82,6 +81,7 @@ export class CandidateController {
     @Body() body: any
   ) {
     try {
+      console.log({ body });
       const { id, ...data } = body;
 
       if (authUser.role !== COORDINATOR) {
