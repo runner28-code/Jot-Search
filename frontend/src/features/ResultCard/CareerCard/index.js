@@ -144,3 +144,61 @@ function DesktopCard({ dataObj, active }) {
       </div>
     </Link>
   )
+}
+
+DesktopCard.propTypes = {
+  dataObj: PropTypes.shape({
+    data: PropTypes.shape({
+      id: PropTypes.string,
+      clientCorporation: PropTypes.string,
+      city: PropTypes.string,
+      state: PropTypes.string,
+      company_logo: PropTypes.string,
+      title: PropTypes.string,
+      employmentType: PropTypes.string,
+      onSite: PropTypes.string,
+      salary: PropTypes.string,
+      salaryUnit: PropTypes.string,
+      createdAt: PropTypes.string,
+      featured: PropTypes.bool,
+      category: PropTypes.shape({
+        id: PropTypes.number,
+        name: PropTypes.string
+      })
+    }).isRequired,
+    categoryString: PropTypes.string,
+    addressString: PropTypes.string,
+    salaryString: PropTypes.string,
+    postingAge: PropTypes.string,
+    role: PropTypes.string,
+  }).isRequired,
+  active: PropTypes.bool,
+}
+
+function MobileCard({ dataObj, active }) {
+  const { data } = dataObj;
+  const categoryString = data.category?.name.toUpperCase() || 'CATEGORY N/A';
+  return (
+    <Link
+      to={`${ROUTES.careers}/${data.id}`}
+      className='w-full flex mb-10 pl-4 pt-9 pr-8 pb-8 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
+      tabIndex='0'
+      state={ active ? true : false }
+    >
+      {/* Card Image */}
+      <div className='flex flex-col'>
+        <div className='h-36 w-36 p-4 mr-5 flex justify-center items-center border border-solid border-smokeGray'>
+          { renderCardImage(data) }
+        </div>
+        <p className='text-xxs text-zinc-700 font-roboto mt-4'>{ data.clientCorporation }</p>
+      </div>
+      <div className='flex flex-col items-start justify-center '>
+        {/* Title */}
+        <h6 className='text-[1.7rem] font-spaceGrotesk font-semibold text-charcoal leading-none mt-2'>{data.title}</h6>
+        {/* First row icons */}
+        <div className='w-full flex items-center'>
+          <p className='text-[1.5rem] text-royalBlue font-spaceGrotesk font-semibold mt-2'>{categoryString}</p>
+        </div>
+      </div>
+    </Link>
+  )

@@ -19,6 +19,7 @@ export default function AddCoordinator() {
       const data = await registerUser(formObjectCopy);
       if (data.result === true) {
         setSubmissionObject({
+// Temp comment
           loading: false,
           success: true,
           errors: {},

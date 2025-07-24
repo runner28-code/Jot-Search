@@ -13,6 +13,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
   return (
     <div
       className='relative'
+      key={data.id}
     >
       <Link
         to={`${ROUTES.companies}/${data.id}`}
@@ -43,6 +44,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
+// Temp comment
           />
           : 
           <FavoriteButton

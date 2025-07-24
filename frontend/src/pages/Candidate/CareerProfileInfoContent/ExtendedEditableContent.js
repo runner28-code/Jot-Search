@@ -36,7 +36,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     experience: candidateData?.experience || '',
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
     linkedin: candidateData?.linkedin || '',
-// Temp comment
     resume: candidateData?.resume || '',
   });
 
@@ -45,3 +44,19 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       ...formData,
       [name]: value,
     });
+  }
+
+  const handleInputChange = async (event) => {
+    const { name, value } = event.target;
+    if (name === 'avatar' || name === 'resume') {
+      const fileToUpload = event.target.files[0];
+      const pluralizedFolderName = name + 's';
+      const newPath = await uploadFile(pluralizedFolderName, fileToUpload);
+      console.log(newPath);
+      return setFormData({ ...formData, [name]: newPath });
+    }
+    setFormData({ ...formData, [name]: value });
+  }
+
+  const handleCancel = () => {
+    setEditMode(false);

@@ -45,3 +45,4 @@ export const CompanyFilter: TypedDictionary<
     name: "name",
     city: "locations",
   },
+  joined: {

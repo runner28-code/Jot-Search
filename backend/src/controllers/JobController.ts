@@ -70,6 +70,7 @@ export class JobController {
           select: {
             domain: true,
             logo_url: true,
+          },
           where: {
             domain: {
               in: job?.company?.companyURL
@@ -266,3 +267,4 @@ export class JobController {
     const dataset = DATASET_GETRO;
     const table = Tables.JOBS;
 
+    return (await BigQueryService.selectQuery(

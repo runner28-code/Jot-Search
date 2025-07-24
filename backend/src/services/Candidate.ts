@@ -35,7 +35,6 @@ export const saveCandidate = async (
       await db.user.update({
         where: {
           id: companyUserId,
-        },
         data: {
           savedCandidates: {
             disconnect: {
@@ -60,3 +59,4 @@ export const getSavedCandidates = async (companyUserId: string) => {
     const user = await db.user.findFirst({
       where: {
         id: companyUserId,
+      },

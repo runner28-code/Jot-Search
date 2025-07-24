@@ -245,3 +245,4 @@ export const skills = [
   'Jira',
   'jQuery',
   'Kafka',
+  'Kinesis',

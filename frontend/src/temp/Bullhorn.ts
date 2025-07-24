@@ -204,3 +204,4 @@ export type Candidate = {
     fax?: string;
     fax2?: string;
     fax3?: string;
+    federalAdditionalWitholdingsAmount?: string;

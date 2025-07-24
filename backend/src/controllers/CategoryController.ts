@@ -30,7 +30,6 @@ export class CategoryController {
 
       return {
         category: category?.[0],
-        message: null,
       };
     } catch (error) {
       console.log(error);
@@ -39,3 +38,4 @@ export class CategoryController {
         message: error,
       };
     }
+  }

@@ -5,6 +5,7 @@ import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
 import AddCandidate from './AddCandidate';
 import AddCompanyUser from './AddCompanyUser';
+import AddCoordinator from './AddCoordinator';
 import User from '../../assets/icons/add-new-user.svg';
 
 export default function AddUser() {
@@ -26,7 +27,6 @@ export default function AddUser() {
       <img
         src={User}
         alt='User Icon'
-        className='w-12 h-12 vw-768:w-24 vw-768:h-24 mr-8'
       />
       <span>Add new</span>
       <Dropdown

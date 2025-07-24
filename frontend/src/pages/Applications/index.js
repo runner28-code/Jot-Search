@@ -47,7 +47,6 @@ export default function Applications() {
     setSelectedApplications([]);
     setAppliedJobsObject({
       ...appliedJobsObject,
-// Temp comment
       filteredJobs: appliedJobsObject.jobs.filter(job => !newHiddenApplications.includes(job.id))
     });
   }

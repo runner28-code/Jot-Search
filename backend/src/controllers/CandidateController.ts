@@ -82,7 +82,6 @@ export class CandidateController {
     @Body() body: any
   ) {
     try {
-      console.log({ body });
       const { id, ...data } = body;
 
       if (authUser.role !== COORDINATOR) {
@@ -158,6 +157,7 @@ export class CandidateController {
         })
         const candidateOnlyPromise = db.candidate.findMany({
           where,
+          skip: skip < 0 ? 0 : skip,
           take: count,
           select: {
             id: true,
@@ -252,3 +252,4 @@ export class CandidateController {
           orderBy: {
             firstname: "asc",
           },
+          include: {

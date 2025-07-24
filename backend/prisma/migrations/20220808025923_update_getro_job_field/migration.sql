@@ -6,3 +6,4 @@
 
 */
 -- AlterTable
+ALTER TABLE "GetroJobInfo" ADD COLUMN     "bounty" TEXT,

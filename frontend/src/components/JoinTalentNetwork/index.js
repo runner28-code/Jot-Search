@@ -58,5 +58,4 @@ export default function JoinTalentNetwork() {
         </div>
       </div>
     </section>
-// Temp comment
   </>)

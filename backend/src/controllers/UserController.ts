@@ -115,6 +115,7 @@ export class UserController {
     if (user.role === COORDINATOR) {
       const { result, error } = await register(data);
       return {
+        result,
         error,
       };
     }
@@ -134,3 +135,4 @@ export class UserController {
         const res = await (
           await BullhornService.getClient()
         ).syncUserTppToBullhorn(user);
+        if (res && res.changedEntityId) {

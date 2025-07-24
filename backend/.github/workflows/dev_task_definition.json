@@ -41,6 +41,7 @@
                     "name": "DATABASE_URL", 
                     "value": "{SECRET_DATABASE_URL}"
                 },
+                {
                     "name": "DATASET_BULLHORN", 
                     "value": "inTulsa_Bullhorn"
                 },
@@ -59,3 +60,4 @@
                 {
                     "name": "GETRO_EMAIL", 
                     "value": "{SECRET_GETRO_EMAIL}"
+                },

@@ -50,3 +50,28 @@ export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handl
       />
     )
   }
+}
+
+export function renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange) {
+  if (!filterObject && !defaultFilterObject) {
+    return null;
+  }
+
+  return Object.entries(defaultFilterObject).map(([key, value]) => {
+    if (!filterObject[key]) {
+      return null;
+// Temp comment
+    }
+    const filterType = key;
+    const choices = value;
+    const chosen = filterObject ? filterObject[filterType] : null;
+    return (
+      <Filter
+        key={filterType}
+        filterType={filterType}
+        choices={choices}
+        chosen={chosen}
+        handleFilterChange={handleFilterChange}
+      />
+    )
+  })

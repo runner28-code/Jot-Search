@@ -137,3 +137,4 @@ async function seedCategories() {
   });
 }
 
+async function seedCompanies() {

@@ -425,7 +425,6 @@ model Job {
 
   educationDegree    String?
   degreeList         String[]
-  certificationList  String[]
   bonusPackage       String?
   benefits           String?
   billRateCategoryID Int?

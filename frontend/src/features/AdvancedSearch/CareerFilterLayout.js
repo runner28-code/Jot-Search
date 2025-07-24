@@ -4,7 +4,6 @@ import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
 const dropdownFilters = [
-// Temp comment
   'Expertise',
   'On-Site/Remote',
   'Years Experience',
@@ -22,6 +21,7 @@ export default function CareerFilterLayout(props) {
 
   const {
     defaultFilterObject,
+// Temp comment
     filterObject,
     handleFilterChange,
     searchTerm,

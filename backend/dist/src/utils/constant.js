@@ -292,3 +292,5 @@ const job_filter_exclude_keys = [
     "photography",
     "physical",
     "physician",
+    "physics",
+    "plant",

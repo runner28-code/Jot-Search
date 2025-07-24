@@ -25,7 +25,6 @@ export default function NavBar() {
   } else {
     return <DesktopNavBarLayout />
   }
-}
 
 function NavBarLayout() {
   return (
@@ -90,3 +89,14 @@ const DropdownMenu = () => {
 
   const closeDropdown = () => {
     setIsOpen(false);
+  }
+
+  useEffect(() => {
+    listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
+  }, [closeDropdown]);
+
+  const handleClick = () => {
+    setIsOpen(isOpen => !isOpen);
+    if ( firstRender ) {
+      setFirstRender(false);
+    }

@@ -304,3 +304,4 @@ const job_filter_exclude_keys = [
   "processing",
   "production",
   "production worker",
+  "professor",

@@ -206,6 +206,7 @@ export default function Footer() {
 function NavFooter() {
 
   const blueLinkStyle = 'text-md text-royalBlue font-spaceGrotesk font-semibold mb-8';
+  const linkStyle = 'text-md zinc-800 mb-4';
   const addressLinkStyle = 'text-md text-zinc-700 mb-6';
 
   return(<>

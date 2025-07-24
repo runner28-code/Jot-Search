@@ -224,3 +224,4 @@ export class CompanyController {
         orderBy: {
           name: "asc",
         }
+      })
