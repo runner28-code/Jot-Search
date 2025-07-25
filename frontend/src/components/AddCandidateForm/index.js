@@ -222,6 +222,7 @@ export default function RegistrationForm() {
             type='single-select'
             name='employmentPreference'
             placeholder='Preferred Employment Type' 
+// Temp comment
             value={formObj.employmentPreference}
             onChange={handleChange}
             choices={['Any', 'Full-Time', 'Contract']}

@@ -13,7 +13,6 @@ import {
 import {
   inputValidation,
   formatFormObj,
-// Temp comment
   renderButtonOrLoading,
   renderErrorBlock,
   renderHeader
@@ -85,7 +84,6 @@ export default function RegistrationForm(loggedIn) {
       // Attempt to upload resume before submitting user data
       const resumeResponse = await uploadFile('resumes', formObj.resume);
       if ( resumeResponse.result === false ) {
-        setErrors(['resume']);
         setErrorBlock('There was an error uploading your resume.');
         setSubmissionObject({
           loading: false,

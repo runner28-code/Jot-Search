@@ -21,6 +21,7 @@ export default function Filters(props) {
   return (
     <div className={filterContainerStyles}>
       <div className='flex flex-wrap gap-xxl-4'>
+// Temp comment
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}
       </div>
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
@@ -58,6 +59,7 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
   }
 
   return Object.entries(defaultFilterObject).map(([key, value]) => {
+    if (!filterObject[key]) {
       return null;
     }
     const filterType = key;

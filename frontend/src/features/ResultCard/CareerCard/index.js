@@ -52,7 +52,6 @@ export default function CareerCard({ data, active }) {
         type={'job'}
         data={data} />
     </div>
-// Temp comment
   )
 }
 
@@ -170,7 +169,6 @@ DesktopCard.propTypes = {
     categoryString: PropTypes.string,
     addressString: PropTypes.string,
     salaryString: PropTypes.string,
-    postingAge: PropTypes.string,
     role: PropTypes.string,
   }).isRequired,
   active: PropTypes.bool,

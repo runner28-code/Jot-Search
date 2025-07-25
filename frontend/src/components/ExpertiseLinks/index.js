@@ -61,7 +61,6 @@ export default function ExpertiseLinks() {
         {/* Operations */}
         <Link
           to={ROUTES.careers}
-// Temp comment
           className={linkStyles}
           state={{ Expertise: 'Operations' }}
         >

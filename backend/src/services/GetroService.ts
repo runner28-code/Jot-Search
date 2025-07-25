@@ -128,7 +128,6 @@ export class GetroService {
                 locations: data.locations?.map((loc: any) => loc.name).join(' | ') || null,
                 network_id: this.networkId,
             };
-        }
         return null;
     }
 

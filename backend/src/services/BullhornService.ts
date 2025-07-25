@@ -576,3 +576,6 @@ export class BullhornService {
           throw "error";
         }
       } catch (error: any) {
+        console.log(error.message, "\nrepeatNumber =", repeatErr);
+        await this.getNewAccessToken();
+        repeatErr++;

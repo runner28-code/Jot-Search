@@ -13,7 +13,6 @@ export default function Candidates() {
 
   return (
     <section className='mr-20'>
-// Temp comment
       <PageHeader
         headerText='Candidates List'
         icon={headerIcon}

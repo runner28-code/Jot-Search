@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
+import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -19,6 +20,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
     >
       <Link
         to={`${ROUTES.careers}/${data.id}`}
+// Temp comment
         className='flex px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
         tabIndex='0'
         state={ Boolean(active) }

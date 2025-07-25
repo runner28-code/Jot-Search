@@ -59,7 +59,6 @@ export const roles = {
     'Product Engineer',
     'Engineering Management',
     'Other Engineers'
-  ],
   'Sales & Biz Dev': [
     'Customer Success & Account Management',
     'Sales & BizDev',
@@ -68,7 +67,6 @@ export const roles = {
 };
 
 export const skills = [
-// Temp comment
   '.NET',
   'Account Management',
   'Account Reconciliation',

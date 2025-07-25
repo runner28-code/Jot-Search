@@ -51,6 +51,7 @@ class AuthService {
   }
 
   accountRecovery(email) {
+// Temp comment
     return email;
   }
 
@@ -113,7 +114,6 @@ class AuthService {
     if ( action === 'save' ) {
       savedCompanies.push(companyID);
     } else {
-// Temp comment
       savedCompanies.splice(savedCompanies.indexOf(companyID), 1);
     }
     localStorage.setItem('savedCompanies', JSON.stringify(savedCompanies));

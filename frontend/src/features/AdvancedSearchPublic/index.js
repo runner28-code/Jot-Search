@@ -103,7 +103,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
     }
     setFilterObject(newState);
-  }, [state]);
 
   function handleFilterChange(filterType, choice) {
     setFilterObject({

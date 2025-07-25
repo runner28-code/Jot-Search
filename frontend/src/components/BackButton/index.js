@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
+export default function BackButton() {
   const navigate = useNavigate();
 
   return (
@@ -8,5 +9,4 @@ import { useNavigate } from 'react-router-dom';
       onClick={() => navigate(-1)}
     >
       {'< Go Back'}
-    </button>
   )

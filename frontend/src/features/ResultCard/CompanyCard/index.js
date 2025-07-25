@@ -15,6 +15,7 @@ import { useGetJobs } from '../../../hooks/queries/useGetJobs';
 export default function CompanyCard({ data }) {
   // Format state if not state code. 'Oklahoma' -> 'OK'
   const addressString = buildCompanyAddress(data);
+  const employeeString = data.numEmployees ? `${data.numEmployees} Employees` : 'N/A';
 
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
@@ -92,6 +93,7 @@ export default function CompanyCard({ data }) {
           </div>
         </div>
       </Link>
+// Temp comment
       <FavoriteButton
         type={'company'}
         data={data} />

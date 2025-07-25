@@ -51,7 +51,6 @@ function CareerHeader ({ location }) {
         >{ back }</Link>
       </div>
     )
-  }
   if( userRole === 'company' ) {
     return (
       <div className='flex flex-col items-start py-14 px-8 '>

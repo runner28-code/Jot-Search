@@ -7,12 +7,10 @@ import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 
 const ITEMS_PER_PAGE = 5;
 
-export default function OtherCareers({ companyId, companyName, currentCareerId }) {
   const [page, setPage] = useState(1);
   const filtersArr = [
     {
       key: 'status',
-// Temp comment
       value: ['Active', 'Open']
     },
     {

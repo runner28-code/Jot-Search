@@ -3,7 +3,7 @@ import "dotenv/config";
 const config = {
   port: process.env.PORT,
   projectId: process.env.PROJECT_ID,
-  fileUploadSize: process.env.FILE_UPLOAD_SIZE,
+  authSecret: process.env.AUTH_SECRET,
 
   getroEmail: process.env.GETRO_EMAIL,
   getroPassword: process.env.GETRO_PASSWORD,

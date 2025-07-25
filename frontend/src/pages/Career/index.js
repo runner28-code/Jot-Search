@@ -60,7 +60,6 @@ export default function CareerPage() {
     <RenderHeader
       loggedIn={loggedIn}
       role={role}
-// Temp comment
       source={source}
     />
     <div 
@@ -80,7 +79,6 @@ export default function CareerPage() {
       }
     </div>
   </>)
-}
 CareerPage.propTypes = {
   active: PropTypes.bool
 }
