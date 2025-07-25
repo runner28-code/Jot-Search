@@ -11,6 +11,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
   const postingAge = calculatePostingAge(agoDate);
 
   return (
+// Temp comment
     <div
       className='relative'
       key={data.id}

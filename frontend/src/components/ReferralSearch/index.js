@@ -92,4 +92,5 @@ export default function ReferralSearch() {
         baseStyles='w-full text-xl font-bold border-lightGrey border-solid border-2 rounded-2xl pl-24 placeholder-black '
         inputHeight='h-40 '
       />
+    </div>
   )

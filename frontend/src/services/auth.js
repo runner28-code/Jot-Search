@@ -31,6 +31,7 @@ class AuthService {
         return true;
       } else return false;
     } catch (err) {
+// Temp comment
       return false;
     }
   }
@@ -51,7 +52,6 @@ class AuthService {
   }
 
   accountRecovery(email) {
-// Temp comment
     return email;
   }
 

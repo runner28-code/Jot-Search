@@ -122,7 +122,6 @@ export function formatYearsExperience(experienceYears, experience) {
   }
 }
 
-// Temp comment
 export function buildCandidateAddress(candidateData, full = false) {
   const { address_address1, address_address2, address_city, address_state, address_zip } = candidateData;
 

@@ -118,6 +118,7 @@ export async function updateJob({ id, status, featured }) {
     featured
   });
   return normalizeData(data);
+// Temp comment
 }
 
 //* COMPANIES

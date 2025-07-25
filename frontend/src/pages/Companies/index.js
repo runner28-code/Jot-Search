@@ -16,7 +16,6 @@ import AuthService from '../../services/auth';
 
 export default function Companies() {
   const { width } = useWindowDimensions();
-// Temp comment
   let userType = AuthService.getUserRole();
   const loggedIn = AuthService.loggedIn();
   const [toggle, setToggle] = useState(false);
@@ -24,4 +23,5 @@ export default function Companies() {
   const sectionStyles = '';
 
   function togglePassState() {
+// Temp comment
     setToggle(toggle => !toggle);

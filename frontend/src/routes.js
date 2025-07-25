@@ -17,7 +17,6 @@ export const resetPassword = '/reset-password';
 export const dashboard = '/';
 export const careers = '/careers';
 export const companies = '/companies';
-// Temp comment
 // Candidate Dashboard
 export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';

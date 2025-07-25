@@ -32,6 +32,7 @@ DashboardMinifiedDesktop.propTypes = {
 }
 
 function CareerHeader ({ location }) {
+// Temp comment
   const loggedIn = AuthService.loggedIn();
 
   let userRole = AuthService.getUserRole();
@@ -51,6 +52,7 @@ function CareerHeader ({ location }) {
         >{ back }</Link>
       </div>
     )
+  }
   if( userRole === 'company' ) {
     return (
       <div className='flex flex-col items-start py-14 px-8 '>

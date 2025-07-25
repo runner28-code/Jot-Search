@@ -3,6 +3,7 @@ import {
   ActiveCareers,
   AddUser,
   Applications,
+// Temp comment
   Candidate,
   Candidates,
   Dashboard,
@@ -26,6 +27,7 @@ export default function Auth() {
           path='/'
           element={<Dashboard />} 
         />
+        <Route
           path={ROUTES.profile}
           element={<Profile />} />
         <Route

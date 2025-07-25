@@ -64,6 +64,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
+// Temp comment
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,
@@ -100,6 +101,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   useEffect(() => {
     const newState = { ...initialFilterState, ...state };
     if (state) {
+      newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
     }

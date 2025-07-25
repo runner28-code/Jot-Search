@@ -16,6 +16,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
       <div className="flex-1 flex justify-end">
         {total !== 0 && 
           <PaginationButton
+// Temp comment
             page={page - 1}
             disabled={page === 1}
             prefetchFunc={prefetchFunc}
@@ -44,7 +45,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
               active={page === 1}
               setPage={setPage}
               page={1}
-// Temp comment
               prefetchFunc={prefetchFunc}
             >
               {1}

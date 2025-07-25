@@ -18,7 +18,6 @@ export default function TypeaheadDropdown(props) {
     onChange, 
     baseStyles, 
     inputHeight} = props;
-// Temp comment
 
   const [inputValue, setInputValue] = useState('');
   const [filteredChoices, setFilteredChoices] = useState(choices);
@@ -64,6 +63,7 @@ export default function TypeaheadDropdown(props) {
       className='relative w-full'
       ref={menuRef}  
     >
+// Temp comment
       { renderLabel(name, label, required) }
       <input 
         type={type}

@@ -25,12 +25,12 @@ export default function AddUser() {
   return (<>
     <h2 className='text-lg vw-768:text-h2 text-royalBlue font-spaceGrotesk font-bold mb-16 text-center flex items-center'>
       <img
+// Temp comment
         src={User}
         alt='User Icon'
         className='w-12 h-12 vw-768:w-24 vw-768:h-24 mr-8'
       />
       <span>Add new</span>
-// Temp comment
       <Dropdown
         inputStyles='text-md vw-768:text-lg font-bold mx-4 px-2 py-4 ml-8 border-lightGrey border-solid border-2 rounded-2xl'
         name='formType'

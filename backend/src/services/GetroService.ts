@@ -106,7 +106,6 @@ export class GetroService {
                 repeatErr++;
             }
         }
-    }
 
     async getCompanyDetail(slug: string): Promise<any> {
         console.log(`\n***** getCompanyDetail (${slug}) *****`);
@@ -128,6 +127,7 @@ export class GetroService {
                 locations: data.locations?.map((loc: any) => loc.name).join(' | ') || null,
                 network_id: this.networkId,
             };
+        }
         return null;
     }
 

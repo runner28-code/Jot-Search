@@ -7,6 +7,7 @@ exports.IUSER = {
     firstname: "",
     lastname: "",
     gender: "",
+    email: "",
     password: "",
     role: "",
     address1: "",

@@ -59,6 +59,7 @@ export const roles = {
     'Product Engineer',
     'Engineering Management',
     'Other Engineers'
+  ],
   'Sales & Biz Dev': [
     'Customer Success & Account Management',
     'Sales & BizDev',

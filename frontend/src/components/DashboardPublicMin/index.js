@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import * as ROUTES from '../../routes';

@@ -132,6 +132,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
       user.password = encryptPassword(user.password);
     }
 
+    if (existing.externalId) {
       try {
         // TODO: add bullhorn api update here
       } catch (error) {

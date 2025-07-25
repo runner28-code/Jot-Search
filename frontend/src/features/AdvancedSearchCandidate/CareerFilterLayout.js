@@ -5,6 +5,7 @@ import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
+// Temp comment
 const dropdownFilters = [
   'Expertise',
   'On-Site/Remote',
@@ -24,6 +25,7 @@ export default function CareerFilterLayout(props) {
   const {
     defaultFilterObject,
     filterObject,
+    handleFilterChange,
     searchTerm,
     setSearchTerm,
     handleSearchClick,

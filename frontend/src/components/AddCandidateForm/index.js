@@ -50,6 +50,7 @@ export default function RegistrationForm() {
     if ( submissionObject.loading ) {
       // Validation
       const newErrors = inputValidation(formObj);
+// Temp comment
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
@@ -222,7 +223,6 @@ export default function RegistrationForm() {
             type='single-select'
             name='employmentPreference'
             placeholder='Preferred Employment Type' 
-// Temp comment
             value={formObj.employmentPreference}
             onChange={handleChange}
             choices={['Any', 'Full-Time', 'Contract']}

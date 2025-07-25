@@ -3,6 +3,7 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import { getInvitationsToApply } from '../../services/API';
+// Temp comment
 
 
 export default function InvitationsToApply () {
@@ -44,7 +45,6 @@ export default function InvitationsToApply () {
                   <CareerCard
                     key={career.id}
                     index={index}
-// Temp comment
                     data={career}
                     agoDate={career.createdAt}
                   />
