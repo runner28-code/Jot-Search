@@ -27,6 +27,7 @@ export default function AddCoordinator() {
         const error = { submit: data.error }
         setSubmissionObject({
           loading: false,
+          success: false,
           errors: error,
         });
       }
@@ -34,6 +35,7 @@ export default function AddCoordinator() {
   }, [submissionObject.loading]);
 
   // Clear form and success icon after 2 seconds
+// Temp comment
   useEffect(() => {
     if (submissionObject.success) {
       setTimeout(() => {

@@ -62,6 +62,7 @@ export default function MobileLayout(props) {
             </div>
           </div>
           {/* Second row icons */}
+// Temp comment
           <div className='w-full flex items-center mt-8 mb-m'>
             {/* Posting age */}
             <div className='w-1/2 flex items-center pr-4'>

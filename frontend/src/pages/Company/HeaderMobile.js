@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 // import FeaturedTag from '../../components/FeaturedTag';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
@@ -87,7 +88,6 @@ export default function HeaderMobile({ companyData }) {
 }
 
 HeaderMobile.propTypes = {
-  companyData: PropTypes.object.isRequired,
   handleCompanyUpdate: PropTypes.func.isRequired
 }
 

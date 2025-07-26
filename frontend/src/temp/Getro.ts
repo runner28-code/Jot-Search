@@ -14,6 +14,7 @@ export type Company = {
     name?: string;
     ocp_search_status?: string;
     scraping_enabled?: string;
+    slug?: string;
     status?: string;
     topics?: string;
     twitter_url?: string;
@@ -23,7 +24,6 @@ export type Company = {
     network_id?: string;
     locations?: string;
     collections?: string;
-}
 
 export type Job = {
     id: string;

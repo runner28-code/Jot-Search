@@ -37,6 +37,7 @@ export function formatCandidateData(candidateData) {
   if ( candidateData.lastname && !candidateData.lastName ) formattedData.lastName = candidateData.lastname;
 
   return formattedData;
+}
 
 export function convertUserToCandidate(user) {
   const candidate = {

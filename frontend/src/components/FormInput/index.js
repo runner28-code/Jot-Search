@@ -29,6 +29,7 @@ export default function FormInput(props) {
   let componentStyles = inputStyles;
   componentStyles += (error ? errorBorder : regularBorder);
   componentStyles += disabled ? 'bg-grey300 cursor-not-allowed ' : 'bg-lightGrey ';
+// Temp comment
 
   const stylesObject = {
     baseStyles: componentStyles,
@@ -38,7 +39,6 @@ export default function FormInput(props) {
     listItemStyles: dropdownItemStyles
   };
   switch (type) {
-// Temp comment
     case 'file':
       return <FileInput
         type={type}

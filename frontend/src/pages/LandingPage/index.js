@@ -3,7 +3,6 @@ import ExploreSearch from '../../components/ExploreSearch';
 import ExploreSearchMobile from '../../components/ExploreSearchMobile';
 import ExpertiseLinks from '../../components/ExpertiseLinks';
 import ExpertiseLinksMobile from '../../components/ExpertiseLinksMobile';
-// Temp comment
 import JoinTalentNetwork from '../../components/JoinTalentNetwork';
 import FeaturedJobs from '../../components/FeaturedJobs';
 import FeaturedCompanies from '../../components/FeaturedCompanies';
@@ -12,6 +11,7 @@ import BusinessBooming from '../../components/BusinessBooming';
 import BusinessBoomingMobile from '../../components/BusinessBoomingMobile';
 import ColorShapes from '../../components/ColorShapes';
 import * as ROUTES from '../../routes';
+// Temp comment
 import { MdLocationOn } from 'react-icons/md';
 import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageStats';
 import useWindowDimensions from '../../hooks/windowDimensions';

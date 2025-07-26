@@ -31,6 +31,7 @@ function main() {
             console.error(err);
             throw err;
         }
+    });
 }
 function seedJobs() {
     var _a, _b;

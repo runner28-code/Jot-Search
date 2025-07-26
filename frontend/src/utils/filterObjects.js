@@ -91,7 +91,6 @@ export const candidateFilterObject = {
   'Actively Looking': [
     'Any',
     'Yes',
-// Temp comment
     'No'
   ],
   'Degree': [

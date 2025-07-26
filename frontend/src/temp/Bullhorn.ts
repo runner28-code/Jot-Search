@@ -101,6 +101,7 @@ export type Job = {
     payRate?: string;
     publicDescription?: string;
     publishedZip?: string;
+    reasonClosed?: string;
     reportTo?: string;
     reportToClientContact?: string;
     salary?: string;

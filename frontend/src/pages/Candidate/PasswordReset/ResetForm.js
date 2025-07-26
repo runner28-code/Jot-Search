@@ -32,6 +32,7 @@ export default function ResetForm({ candidateData, setType }) {
         setType(res.data.error, false);
       }
     }
+// Temp comment
   };
 
   function handleChange(name, value) {

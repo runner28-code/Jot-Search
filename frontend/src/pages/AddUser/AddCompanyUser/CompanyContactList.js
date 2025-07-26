@@ -52,8 +52,8 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           onClick={handleSyncClick}
         >
           Synch
+// Temp comment
         </button>
       </>)}
-// Temp comment
     </div>
   )

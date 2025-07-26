@@ -115,6 +115,7 @@ export default function NavSearchMobile({ placeholder }) {
 
 NavSearchMobile.propTypes = {
   placeholder: PropTypes.string
+}
 
 function renderResultsContainer( results, searchTerm ) {
   if ( !searchTerm || results.forceHidden ) { // if no searchTerm, no results to display

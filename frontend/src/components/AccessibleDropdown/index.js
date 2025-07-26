@@ -98,6 +98,7 @@ AccessibleDropdown.propTypes = {
 }
 
 function buildButtonStyles(stylesObject) {
+  let buttonStyles = 'mb-0 text-black70% flex justify-between items-center ';
   buttonStyles += stylesObject.baseStyles + stylesObject.inputHeight + stylesObject.inputWidth;
 
   return buttonStyles

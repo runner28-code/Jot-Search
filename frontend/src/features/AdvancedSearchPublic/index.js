@@ -70,6 +70,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
+// Temp comment
       return { filtersArr: searchFilters };
 
     } else if (tab === 'jobs') {
@@ -78,6 +79,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
     }
+  };
 
 
   const { jobs, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'jobs' });

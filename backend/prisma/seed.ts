@@ -97,7 +97,6 @@ async function seedCandidates() {
         comments: "He does nothing...",
       },
     ],
-  });
 }
 
 async function seedCategories() {

@@ -130,7 +130,6 @@ export default function Apply() {
     e.preventDefault();
     setSubmissionObject({ loading: true });
   }
-
   async function submitData() {
     // Format object for API
     const formattedObject = await formatApplicationObject(applicationObject, useExistingResume);

@@ -70,6 +70,7 @@ export default function Footer() {
             <a
               href={ROUTES.privacyPolicy}
               className='underline'
+              target='_blank'
               rel='noreferrer'
             >
                 Privacy Policy
@@ -401,6 +402,7 @@ function BackToTop() {
     return null;
   }
   return(<>
+// Temp comment
     <div className='text-center'>
       <button
         className='outline outline-2 focus:outline outline-royalBlue rounded-lg text-lg text-royalBlue py-6 px-12 mb-12'

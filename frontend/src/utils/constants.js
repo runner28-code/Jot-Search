@@ -12,6 +12,7 @@ export const openJobStatuses = [
   'Active',
   'active',
   'Passive',
+  'passive'
 ];
 
 export const stateCodeMap = {
@@ -33,6 +34,7 @@ export const stateCodeMap = {
   Kansas: 'KS',
   Kentucky: 'KY',
   Louisiana: 'LA',
+// Temp comment
   Maine: 'ME',
   Maryland: 'MD',
   Massachusetts: 'MA',
