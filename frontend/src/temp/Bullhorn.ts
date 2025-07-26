@@ -28,6 +28,7 @@ export type Company = {
     dateFounded?: string,
     dateLastModified?: string,
     externalID?: string,
+    feeArrangement?: string,
     funding?: string,
     industryList?: string,
     invoiceFormat?: string,
@@ -100,7 +101,6 @@ export type Job = {
     payRate?: string;
     publicDescription?: string;
     publishedZip?: string;
-    reasonClosed?: string;
     reportTo?: string;
     reportToClientContact?: string;
     salary?: string;

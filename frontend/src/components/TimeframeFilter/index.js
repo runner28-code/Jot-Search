@@ -24,12 +24,12 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
       <Dropdown 
         choices={choices} 
         handleChoiceClick={handleChoiceClick} 
-      />
     )
   }
 
   // Used to close dropdown when clicking outside of it
   useEffect(() => {
+    listenForOutsideClicks(listening, setListening, menuRef, setShowDropdown);
   }, [showDropdown]);
 
   const dynamicStyles = showDropdown ? ' border rounded-t-lg ' : ' border rounded-lg ';

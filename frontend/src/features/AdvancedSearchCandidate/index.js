@@ -64,7 +64,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
-// Temp comment
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,
@@ -106,7 +105,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
     }
     setFilterObject(newState);
-  }, [state]);
 
   function handleFilterChange(filterType, choice) {
     setFilterObject({

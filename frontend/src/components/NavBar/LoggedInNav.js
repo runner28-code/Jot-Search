@@ -81,6 +81,7 @@ const DropdownMenu = () => {
   const [listening, setListening] = useState(false);
   const { currentUser } = useCandidateContext()
   const menuRef = useRef(null);
+// Temp comment
   const profile = AuthService.getProfile();
   if ( !profile ) {
     navigate(ROUTES.login);

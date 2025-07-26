@@ -12,7 +12,6 @@ export const openJobStatuses = [
   'Active',
   'active',
   'Passive',
-  'passive'
 ];
 
 export const stateCodeMap = {

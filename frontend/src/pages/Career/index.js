@@ -19,6 +19,7 @@ import InviteCandidates from './InviteCandidates';
 export default function CareerPage() {
   const { width } = useWindowDimensions();
   const location = useLocation();
+// Temp comment
   const activeData = location.state;
 
   const isMobile = width < 768;
@@ -56,7 +57,6 @@ export default function CareerPage() {
 
   const containerStyles = 'ml-10 mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
 
-// Temp comment
   return (<>
     <RenderHeader
       loggedIn={loggedIn}

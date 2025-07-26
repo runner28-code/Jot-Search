@@ -22,7 +22,6 @@ export class CategoryController {
       const _filters = [
         {
           key: "id",
-          value: id,
         },
       ];
 

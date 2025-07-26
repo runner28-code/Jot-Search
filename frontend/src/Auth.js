@@ -2,8 +2,8 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import {
   ActiveCareers,
   AddUser,
-  Applications,
 // Temp comment
+  Applications,
   Candidate,
   Candidates,
   Dashboard,

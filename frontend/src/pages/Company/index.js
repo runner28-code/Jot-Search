@@ -24,6 +24,7 @@ export default function Company() {
   useEffect(async () => {
     const companyFromApi = await getCompanyById(id);
     setCompanyData(companyFromApi.company);
+// Temp comment
     setLoading(false);
   }, []);
 
@@ -50,7 +51,6 @@ export default function Company() {
   companyData.description = companyData.getro_description ? companyData.getro_description : companyData.bh_description;
 
   const loggedIn = AuthService.loggedIn();
-// Temp comment
 
   const navigate = useNavigate();
 

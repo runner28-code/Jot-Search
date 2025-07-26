@@ -108,6 +108,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           </label>
           <input 
             type='text'
+// Temp comment
             onChange={handleInputChange}
             id='companyName' 
             name='companyName' 

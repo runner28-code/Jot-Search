@@ -10,7 +10,6 @@ import User from '../../assets/icons/add-new-user.svg';
 
 export default function AddUser() {
   // TODO: Add params to initiate with correct form when being routed from other page
-  if ( AuthService.getUserRole() !== 'coordinator' ) {
     return <Navigate to={ROUTES.root} />
   }
 
@@ -25,7 +24,6 @@ export default function AddUser() {
   return (<>
     <h2 className='text-lg vw-768:text-h2 text-royalBlue font-spaceGrotesk font-bold mb-16 text-center flex items-center'>
       <img
-// Temp comment
         src={User}
         alt='User Icon'
         className='w-12 h-12 vw-768:w-24 vw-768:h-24 mr-8'

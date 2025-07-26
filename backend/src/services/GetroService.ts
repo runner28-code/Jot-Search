@@ -106,6 +106,7 @@ export class GetroService {
                 repeatErr++;
             }
         }
+    }
 
     async getCompanyDetail(slug: string): Promise<any> {
         console.log(`\n***** getCompanyDetail (${slug}) *****`);

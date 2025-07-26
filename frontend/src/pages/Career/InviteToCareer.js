@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {
-// Temp comment
   defaultJobFilterState,
   buildSearchFilters,
 } from '../../utils/filterObjects';
@@ -20,6 +19,7 @@ export default function InviteToCareer({ candidate }) {
 
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
+// Temp comment
   const jobOptions = jobs?.map(job => {
     return {
       label: job.title,

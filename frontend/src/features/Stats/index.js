@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import TimeframeFilter from '../../components/TimeframeFilter';
 import { BsArrowUpSquare, BsArrowDownSquare } from 'react-icons/bs';
 import { getCompanyQuickStats, getCoordinatorQuickStats } from '../../services/API';
+
 const statFilterChoices = [
   'Today',
   'Last 7 Days',
@@ -18,6 +19,7 @@ export default function Stats({ userType }) {
   function handleFilterChange(choice) {
     setTimeframe(choice);
   }
+// Temp comment
 
   function getDuration(timeFrame) {
     switch (timeFrame) {

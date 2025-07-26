@@ -33,7 +33,6 @@ const job_filter_exclude_keys = [
     "automation technician",
     "automotive",
     "bailiff",
-// Temp comment
     "barback",
     "bartender",
     "baseball",
@@ -132,7 +131,6 @@ const job_filter_exclude_keys = [
     "education",
     "educator",
     "electrician",
-    "electronics tech",
     "elementary",
     "emergency",
     "emergency response",

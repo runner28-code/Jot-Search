@@ -63,7 +63,6 @@ export default function TypeaheadDropdown(props) {
       className='relative w-full'
       ref={menuRef}  
     >
-// Temp comment
       { renderLabel(name, label, required) }
       <input 
         type={type}

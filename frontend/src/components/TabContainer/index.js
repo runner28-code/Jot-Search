@@ -41,6 +41,7 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
   tabStyles += conditionalStyles(isActiveTab, isLocked);
 
   return (
+    <button
       key={choice}
       className={tabStyles}
       onClick={() => handleClick(choice)}

@@ -70,7 +70,6 @@ export default function Footer() {
             <a
               href={ROUTES.privacyPolicy}
               className='underline'
-              target='_blank'
               rel='noreferrer'
             >
                 Privacy Policy

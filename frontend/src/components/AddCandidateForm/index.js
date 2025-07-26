@@ -50,7 +50,6 @@ export default function RegistrationForm() {
     if ( submissionObject.loading ) {
       // Validation
       const newErrors = inputValidation(formObj);
-// Temp comment
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
@@ -233,6 +232,7 @@ export default function RegistrationForm() {
             name='workspace'
             placeholder='Work Setting Preference (Remote, Office)' 
             value={formObj.workspace}
+// Temp comment
             onChange={handleChange}
             choices={['Any', 'Remote', 'On Site', 'Hybrid']}
             error={errors.includes('workspace')}
