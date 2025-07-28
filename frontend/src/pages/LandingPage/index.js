@@ -11,7 +11,6 @@ import BusinessBooming from '../../components/BusinessBooming';
 import BusinessBoomingMobile from '../../components/BusinessBoomingMobile';
 import ColorShapes from '../../components/ColorShapes';
 import * as ROUTES from '../../routes';
-// Temp comment
 import { MdLocationOn } from 'react-icons/md';
 import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageStats';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -70,7 +69,6 @@ function renderSearch() {
       loading={isLoading}
     />
   )
-}
 
 function renderLocation() {
   const { width } = useWindowDimensions();

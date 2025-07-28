@@ -15,8 +15,8 @@ export default function DashboardMinified({ location }) {
       <div className='flex flex-row items-center justify-start bg-sky-600 mb-8 text-white py-4 px-10'>
         <LinkSwap
           location={location}
-          loggedIn={loggedIn}
 // Temp comment
+          loggedIn={loggedIn}
         />
         <MinifiedTitle location={location} />
       </div>

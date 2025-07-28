@@ -120,6 +120,7 @@ class AuthService {
 
   getSavedCompanyIDs() {
     return JSON.parse(localStorage.getItem('savedCompanies')) || [];
+// Temp comment
   }
 
   toggleSavedCandidate(candidateID, action) {

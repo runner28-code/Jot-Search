@@ -81,5 +81,6 @@ export default function Applications() {
             handleClick: handleCheckClick
           }}
         />
+      </div>
     </section>
   )

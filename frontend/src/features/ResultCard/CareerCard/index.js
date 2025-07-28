@@ -73,7 +73,6 @@ CareerCard.propTypes = {
       name: PropTypes.string
     })
   }).isRequired,
-// Temp comment
   index: PropTypes.number,
   active: PropTypes.bool,
 }

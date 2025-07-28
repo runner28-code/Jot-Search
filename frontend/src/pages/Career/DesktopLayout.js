@@ -156,3 +156,30 @@ function renderAboutCompanySection(careerData, companyName) {
       dangerouslySetInnerHTML={{ __html: careerData.company?.description || 'No Company Description Available' }}
     />
   </>)
+}
+
+function renderDescription(role, navigate, companyName, skillList, careerData) {
+
+  if (role === 'coordinator') {
+    return null;
+  }
+  return (<>
+    <section className='bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4'>
+      {/* Job Description */}
+      <h4 className={sectionHeaderStyles}>Career Description</h4>
+      <p
+        className='font-spaceGrotesk text-textBlack text-md mb-10'
+        dangerouslySetInnerHTML={{ __html: careerData.description || 'No description listed' }}
+      />
+      {renderSkillsSection(skillList)}
+      {renderAboutCompanySection(careerData, companyName)}
+      {/* Apply */}
+      {(role === 'candidate' || role === 'guest') && (
+        <ApplyButton
+          datasource={careerData.datasource}
+          careerId={careerData.id}
+          applicationUrl={careerData.application_path || careerData.url}
+        />
+      )}
+    </section>
+  </>)

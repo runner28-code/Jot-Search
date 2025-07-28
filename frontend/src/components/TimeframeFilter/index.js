@@ -18,7 +18,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   function renderDropdown( showDropdown ) {
     if ( !showDropdown ) {
       return null
-    }
   
     return (
       <Dropdown 
@@ -38,7 +37,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
   
   return (
     <div
-// Temp comment
       ref={menuRef}
       className='relative'>
       <div

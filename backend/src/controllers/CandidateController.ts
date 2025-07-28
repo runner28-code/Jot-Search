@@ -254,3 +254,4 @@ export class CandidateController {
             firstname: "asc",
           },
           include: {
+            candidate: true,

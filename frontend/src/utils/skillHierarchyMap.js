@@ -246,3 +246,4 @@ export const skills = [
   'jQuery',
   'Kafka',
   'Kinesis',
+  'Kubernetes',

@@ -465,3 +465,5 @@ model GetroJobInfo {
   description           String?
   discarded             Boolean?
   employment_types      String[]
+  expires_at            DateTime?
+  job_functions         String?

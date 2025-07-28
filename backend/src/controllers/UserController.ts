@@ -137,3 +137,4 @@ export class UserController {
         ).syncUserTppToBullhorn(user);
         if (res && res.changedEntityId) {
           console.log("changedEntityId", res.changedEntityId);
+          data = { ...data, externalId: res.changedEntityId };

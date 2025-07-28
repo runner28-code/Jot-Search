@@ -11,7 +11,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
     } else {
       setSelectedContacts([...selectedContacts, contact]);
     }
-  };
 
   const handleSyncClick = () => {
     console.log('syncing contacts', selectedContacts);
@@ -52,7 +51,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
           onClick={handleSyncClick}
         >
           Synch
-// Temp comment
         </button>
       </>)}
     </div>

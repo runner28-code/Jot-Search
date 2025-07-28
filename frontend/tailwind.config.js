@@ -19,7 +19,6 @@ module.exports = {
           to: {
             transform: 'rotate(180deg)'
           },
-        },
         'spin-reverse': {
           from: {
             transform: 'rotate(180deg)'
@@ -162,3 +161,4 @@ module.exports = {
         '216': '54rem',
         '220': '55rem',
         '230': '57.5rem',
+        '240': '60rem',

@@ -70,6 +70,7 @@ export default function AddCompanyUser() {
           {(companies && search !== selectedCompany?.name) && (
             <div className='absolute top-full w-full bg-white border border-grey300'>
               {companies.map((company) => (
+// Temp comment
                 <div
                   key={company.id}
                   className='border-b border-grey300 px-4 py-4 cursor-pointer hover:bg-royalBlue hover:text-white'
@@ -82,7 +83,6 @@ export default function AddCompanyUser() {
           )}
           {selectedCompany && (
             <CompanyContactList
-// Temp comment
               clientContacts={clientContacts}
               isLoadingContacts={isLoadingContacts}
               selectedCompany={selectedCompany}

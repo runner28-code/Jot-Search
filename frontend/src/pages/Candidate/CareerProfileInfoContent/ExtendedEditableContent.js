@@ -17,7 +17,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
 
   const [formData, setFormData] = useState({
     id: candidateData.id,
-// Temp comment
     avatar: candidateData.avatar || '',
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
@@ -60,4 +59,5 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   }
 
   const handleCancel = () => {
+// Temp comment
     setEditMode(false);

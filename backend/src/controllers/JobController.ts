@@ -68,7 +68,6 @@ export class JobController {
       if (job?.company?.companyURL) {
         getroCompany = await db.getroCompany.findFirst({
           select: {
-            domain: true,
             logo_url: true,
           },
           where: {
@@ -118,6 +117,7 @@ export class JobController {
     @Body() body: FilterBody & { datasource?: DataSources }
   ) {
     try {
+      const { filters, fields, page, count, datasource } = body;
 
       const datasourceToEnum: Dictionary<Datasource> = {
         main: Datasource.main,
@@ -267,3 +267,4 @@ export class JobController {
     const table = Tables.JOBS;
 
     return (await BigQueryService.selectQuery(
+      dataset,

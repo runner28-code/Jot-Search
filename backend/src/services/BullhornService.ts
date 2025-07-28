@@ -579,3 +579,8 @@ export class BullhornService {
         console.log(error.message, "\nrepeatNumber =", repeatErr);
         await this.getNewAccessToken();
         repeatErr++;
+      }
+    }
+  }
+
+  async getCandidates(

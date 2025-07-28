@@ -20,7 +20,6 @@ function HeaderContent({ companyData }) {
   const { width } = useWindowDimensions();
   const headerRowStyles = 'flex mb-8 flex-row justify-between flex-wrap';
   const headerIconStyles = 'h-12 w-10 mr-3 fill-midGrey';
-// Temp comment
   const headerRowTextStyles = 'text-md text-textBlack ';
   const headerGroupStyles = 'flex items-center basis-1/2 my-4';
   const headerGroupStylesDesktop = 'flex items-center basis-1/3 my-4';
@@ -126,7 +125,6 @@ Header.propTypes = {
   handleCompanyUpdate: PropTypes.func.isRequired
 }
 
-function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'my-auto object-contain';
   if( width >= 1280 ) {

@@ -45,6 +45,7 @@ export default function Apply() {
   const [useExistingResume, setUseExistingResume] = useState(false);
   const [referralChoice, setReferralChoice] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
+// Temp comment
     loading: false,
     success: false,
     error: false,
@@ -130,6 +131,7 @@ export default function Apply() {
     e.preventDefault();
     setSubmissionObject({ loading: true });
   }
+
   async function submitData() {
     // Format object for API
     const formattedObject = await formatApplicationObject(applicationObject, useExistingResume);

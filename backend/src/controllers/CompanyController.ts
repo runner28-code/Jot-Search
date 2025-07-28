@@ -29,7 +29,6 @@ import {
 import { User } from "../types/User";
 import { getDataSource, getFilterConditions } from "../utils";
 import db from "../utils/db";
-
 import {
   CompanyFilter,
   CompanyFilterKey,
@@ -62,6 +61,7 @@ export class CompanyController {
     } else {
       return {
         source: DataSource.UNKNOWN,
+        message: "unsupported id",
       };
     }
   }
@@ -224,3 +224,4 @@ export class CompanyController {
           name: "asc",
         }
       })
+

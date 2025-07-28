@@ -18,7 +18,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 const socialIconStyle = 'w-18 h-18 ml-8';
 const socialIconStyleMobile = '';
 
-export default function Footer() {
 
   const { width } = useWindowDimensions();
 
@@ -402,7 +401,6 @@ function BackToTop() {
     return null;
   }
   return(<>
-// Temp comment
     <div className='text-center'>
       <button
         className='outline outline-2 focus:outline outline-royalBlue rounded-lg text-lg text-royalBlue py-6 px-12 mb-12'

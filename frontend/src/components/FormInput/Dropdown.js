@@ -79,7 +79,6 @@ export default function Dropdown(props) {
     } else { // single select
       setIsOpen(false);
       onChange(name, choice);
-// Temp comment
     }
   }
 
@@ -105,7 +104,6 @@ export default function Dropdown(props) {
     return ''
   }
 
-  let containerStyles = 'flex items-center relative h-20 w-full ';
   containerStyles += marginBottom ? marginBottom : 'mb-16 ';
   return (
     <div 

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearchLanding';
@@ -14,6 +13,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     expertise: 'Any Expertise',
   });
 
+// Temp comment
   function handleSearchClick() {
     const params = {};
     if (filterState.title) {

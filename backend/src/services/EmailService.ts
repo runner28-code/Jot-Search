@@ -23,6 +23,7 @@ export const sendVerification = async (to: string, name: string) => {
     const base_url = config.frontendUrl || 'http://localhost:3000';
     await sendEmail(to, 'Welcome to inTulsa!', 'register-verification', {
       url: `${base_url}/verify`,
+      firstName: name,
     });
     return true;
   } catch (error: any) {
@@ -73,3 +74,4 @@ export const sendNewUserNotification = async (to: string, name: string) => {
     return true;
   } catch (error: any) {
     console.log('Error during sending new user notification');
+    console.log(error);

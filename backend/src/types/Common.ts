@@ -86,3 +86,4 @@ export type AllJobsResponse = {
 };
 
 export type ApplyResponse = {
+  result: boolean;

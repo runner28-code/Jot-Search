@@ -57,7 +57,6 @@ function seedJobs() {
                 },
                 {
                     title: "Junior Software Engineer",
-                    companyId: (_b = (yield db_1.default.company.findFirst())) === null || _b === void 0 ? void 0 : _b.id,
                     address1: "123 Job St",
                     city: "Tulsa",
                     state: "OK",

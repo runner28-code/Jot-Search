@@ -24,7 +24,6 @@ export type User = {
   roles?: string;
 
   description?: string;
-  phone?: string;
   status?: string;
   username?: string;
   logo?: string;
@@ -62,3 +61,4 @@ export const IUSER = {
   address1: "",
   address2: "",
   city: "",
+  state: "",
