@@ -4,6 +4,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }) => {
   const { width } = useWindowDimensions();
   return (
+// Temp comment
     <div className='flex flex-col mt-5'>
       <div className='flex space-x-16'>
         <SwitchButton
@@ -18,7 +19,6 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           className={ width >= 990 ? 'text-lg font-roboto text-black70%' : 'text-sm font-roboto text-black70%'}>
           {label}
         </label>
-// Temp comment
       </div>
     </div>
   )

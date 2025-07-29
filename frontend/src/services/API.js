@@ -72,7 +72,6 @@ export async function updateUser(newData, id) { // id is optional, if no id is p
   const body = id ? { id, ...newData } : newData;
   const { data } = await API.post(ROUTES.APIuserUpdate, body);
   return normalizeData(data);
-}
 
 export async function updateCandidate(newData, id) {
   console.log({ newData, id })
@@ -181,6 +180,7 @@ export async function saveCompany(candidateId, companyId) {
   return normalizeData(data);
 }
 
+export async function getSavedCompanies(id, count = null, page = null) {
   const params = id ? { candidate: id } : {}; // If no id is passed, will default to logged in user
   const { data } = await API.get(ROUTES.APIsavedCompanies, {
     params: {
@@ -245,6 +245,15 @@ export async function getJobById(id) {
 export async function getAppliedJobs(id) {
   const params = id ? { candidate: id } : {}; // If no id is passed, will default to logged in user
   const { data } = await API.get(ROUTES.APIappliedJobs, {
+    params
+  });
+  return normalizeData(data.jobs);
+}
+
+
+export async function getInvitationsToApply(id) {
+  const params = id ? { userId: id } : {}; // If no id is passed, will default to logged in user
+  const { data } = await API.get(ROUTES.APIInvitedJobs, {
     params
   });
   return normalizeData(data.jobs);

@@ -109,6 +109,7 @@ export type Job = {
     source?: string;
     startDate?: string;
     status?: string;
+    taxRate?: string;
     taxStatus?: string;
     title?: string;
     travelRequirements?: string;
@@ -204,3 +205,5 @@ export type Candidate = {
     employeeType?: string;
     employmentPreference?: string;
     ethnicity?: string;
+    experience?: string;
+    externalID?: string;

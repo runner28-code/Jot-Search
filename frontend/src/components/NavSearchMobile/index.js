@@ -30,7 +30,6 @@ export default function NavSearchMobile({ placeholder }) {
   const [forceHidden, setForceHidden] = useState(false);
   const userType = AuthService.getUserRole();
 
-  const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {
@@ -96,7 +95,6 @@ export default function NavSearchMobile({ placeholder }) {
     inputStyles: 'flex-1 h-24 rounded-l-lg pl-4'
   }
 
-// Temp comment
   return (
     <div>
       <div ref={menuRef} >
@@ -128,3 +126,27 @@ function renderResultsContainer( results, searchTerm ) {
       { renderResults( results ) }
     </div>
   )
+}
+
+function renderResults( results ) {
+  if ( results.loading ) {
+    return <LoadingSpinner
+      height='75'
+      width='75'
+    />;
+  }
+
+  const { jobs, companies, candidates } = results;
+  if ( !jobs?.length && !companies?.length && !candidates?.length ) {
+    return (
+      <div className='text-center text-h6 text-black70% font-bold font-spaceGrotesk'>
+        No results found
+      </div>
+    );
+  }
+
+  return (<>
+    {candidates && <CandidateResults candidates={ candidates } /> }
+    <CompanyResults companies={ companies } />
+    <JobResults jobs={ jobs } />
+  </>)

@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import MobileHeader from './MobileHeader';
 import DesktopHeader from './DesktopHeader';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-// Temp comment
 // Only the headerText will render if no icon is passed
 export default function PageHeaderCandidate(props) {
   const { width } = useWindowDimensions();

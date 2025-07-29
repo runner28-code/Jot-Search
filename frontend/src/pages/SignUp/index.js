@@ -2,6 +2,7 @@ import RegistrationForm from '../../components/RegistrationForm';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // TODO: Terms of Service?
+export default function SignUp() {
 
   const { width } = useWindowDimensions();
 
@@ -11,6 +12,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
         <div className='flex flex-col justify-center items-center'>
           <div className='bg-signup-page-hero bg-cover bg-no-repeat w-full px-[10%] pb-24 pt-8'>
             <div className='relative h-18 w-20 my-8 mx-auto'>
+// Temp comment
               <div className='absolute top-[-5px] right-[-3px] h-7 w-7 bg-magenta' />
               <div className='absolute bottom-0 left-0 h-12 w-12 bg-cyan' />
             </div>

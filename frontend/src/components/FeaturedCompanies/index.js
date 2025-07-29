@@ -11,11 +11,9 @@ export default function FeaturedCompanies() {
   const filtersArr = [
     {
       key: 'status',
-// Temp comment
       value: 'active'
     }
   ];
-
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(

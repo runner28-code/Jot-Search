@@ -32,7 +32,6 @@ export default function Applications() {
     });
   }, []);
 
-// Temp comment
   function handleCheckClick(careerId) {
     if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));

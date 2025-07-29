@@ -236,6 +236,7 @@ model Company {
   notes        String?
   numEmployees Int?
   numOffices   Int?
+
   ownership String?
 
   phone    String?
@@ -466,3 +467,5 @@ model GetroJobInfo {
   employment_types      String[]
   expires_at            DateTime?
   job_functions         String?
+  liked                 Boolean?
+  locations             String?

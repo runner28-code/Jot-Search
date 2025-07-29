@@ -42,6 +42,7 @@ export class UserController {
     const { email, password } = body;
     const { result, error, ...data } = await login(email, password);
 
+    if (result) {
       const token = CreateJwtToken(data);
       return {
         result,
@@ -137,3 +138,5 @@ export class UserController {
         if (res && res.changedEntityId) {
           console.log("changedEntityId", res.changedEntityId);
           data = { ...data, externalId: res.changedEntityId };
+        }
+      } catch (error) {

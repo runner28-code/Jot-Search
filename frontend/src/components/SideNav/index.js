@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
 // Temp comment
+import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,

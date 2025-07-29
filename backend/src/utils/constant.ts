@@ -88,7 +88,6 @@ const job_filter_exclude_keys = [
   "composition",
   "construction",
   "controller",
-  "cook",
   "copywriter",
   "corporate card",
   "counsel",
@@ -306,3 +305,5 @@ const job_filter_exclude_keys = [
   "production worker",
   "professor",
   "psychiatric",
+  "psychiatrist",
+  "psychiatry",

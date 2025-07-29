@@ -131,7 +131,6 @@ export default function RegistrationFormInternal(loggedIn) {
         });
       }, 2000);
     }
-  }, [submissionObject.success])
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -151,6 +150,7 @@ export default function RegistrationFormInternal(loggedIn) {
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
       success: false,
+    });
     console.log(formObj);
   }
 

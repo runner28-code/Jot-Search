@@ -8,6 +8,7 @@ const statFilterChoices = [
   'Today',
   'Last 7 Days',
   'Last 14 Days',
+  'Last 30 Days',
   'Last 90 Days'
 ];
 
@@ -31,4 +32,5 @@ export default function Stats({ userType }) {
         return 90;
       default:
         return 30
+// Temp comment
     }

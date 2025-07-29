@@ -12,9 +12,9 @@ import DashboardCandidate from '../../components/DashboardCandidate';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 import AuthService from '../../services/auth';
-// Temp comment
 
 export default function Careers() {
+// Temp comment
   let userType = AuthService.getUserRole();
   const loggedIn = AuthService.loggedIn();
   const [toggle, setToggle] = useState(false);

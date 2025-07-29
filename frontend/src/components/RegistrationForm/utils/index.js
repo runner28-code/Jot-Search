@@ -10,7 +10,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       height='50'
       width='50'
     />
-// Temp comment
   }
   if ( submissionObject.success ) {
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
@@ -50,6 +49,7 @@ export function renderHeader(addType) {
             Already have an account?
           </span>
           <Link
+// Temp comment
             to={ROUTES.login}
             className='text-sm text-royalBlue leading-loose underline mx-4'
           >

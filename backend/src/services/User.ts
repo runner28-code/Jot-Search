@@ -391,3 +391,5 @@ export const getCompanyDashboardStats = async (days: number) => {
       message: null,
     };
   } catch (error) {
+    console.log('err: ', error);
+    return {

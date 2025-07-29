@@ -8,7 +8,6 @@ export const logout = '/logout';
 export const profile = '/profile';
 export const apply = '/apply';
 export const favorites = '/favorites';
-// Temp comment
 export const signup = '/signup';
 export const settings = '/settings';
 export const accountRecovery = '/account-recovery';
@@ -51,6 +50,7 @@ export const talentInTulsa = 'https://www.talent.intulsa.com/';
 export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';
 
 /* API Links */
+// Temp comment
 export const search = '/search';
 // Auth
 export const APIlogin = '/login';

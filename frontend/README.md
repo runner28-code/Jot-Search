@@ -11,7 +11,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
             ```
             const linkStyles = 'hover:text-royalBlue mt-3 ';
             const linkColor = 'text-slateGray ';
-
             className={linkStyles + linkColorHeader} instead of className={linkStyles + ' ' + linkColorHeader}
             ```
 - No multi-line ternary operators
@@ -52,3 +51,4 @@ Runs ESLint in the `src` directory. Configuration for ESLint is contained in `.e
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.

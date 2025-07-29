@@ -205,3 +205,5 @@ export type Candidate = {
     fax2?: string;
     fax3?: string;
     federalAdditionalWitholdingsAmount?: string;
+    federalExemptions?: string;
+    federalExtraWithholdingAmount?: string;

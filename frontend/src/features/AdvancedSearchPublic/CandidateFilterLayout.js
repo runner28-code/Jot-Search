@@ -38,7 +38,6 @@ export default function CandidateFilterLayout(props) {
     clearFilters,
   } = props;
   let userRole = AuthService.getUserRole();
-// Temp comment
 
   const dropdownFilterObject = {};
   const checkboxFilterObject = {};
@@ -72,7 +71,6 @@ export default function CandidateFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
-          placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />
         <button

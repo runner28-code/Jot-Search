@@ -14,5 +14,6 @@ import './index.css';
 
 export const queryClient = new QueryClient();
 const isDevelopment = window.location.hostname === 'localhost';
+
 ReactDOM.render(
   <QueryClientProvider client={queryClient}>

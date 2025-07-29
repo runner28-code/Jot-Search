@@ -226,3 +226,4 @@ export class CompanyController {
         }
       })
 
+      const totalPromise = db.company.count({

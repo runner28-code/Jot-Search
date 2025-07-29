@@ -200,6 +200,5 @@ function MobileCard({ dataObj, active }) {
           <p className='text-[1.5rem] text-royalBlue font-spaceGrotesk font-semibold mt-2'>{categoryString}</p>
         </div>
       </div>
-// Temp comment
     </Link>
   )

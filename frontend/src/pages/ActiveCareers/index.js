@@ -14,7 +14,6 @@ import AuthService from '../../services/auth';
 const PLACE_HOLDER = 'Search active job title';
 const RESULT_CONTAINER_TYPE = 'active careers';
 const ITEMS_PER_PAGE = 5;
-// Temp comment
 
 export default function ActiveCareers() {
   const { companyId } = AuthService.getProfile();
@@ -61,7 +60,6 @@ export default function ActiveCareers() {
         loading={isLoading}
         type={ RESULT_CONTAINER_TYPE }
         active={true}
-      />
       <PaginatedControls />
     </section>
   )
