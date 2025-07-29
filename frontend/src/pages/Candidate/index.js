@@ -88,7 +88,6 @@ export default function Candidate() {
   return (
     <div className='flex flex-col space-y-16'>
       {/* "My Profile"/"Candidate Profile" Header */}
-      <PageHeader
         headerText={headerText}
         IconComponent={CandidatesIcon}
         classOverride='h-18 w-18'

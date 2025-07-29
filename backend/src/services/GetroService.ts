@@ -181,3 +181,5 @@ export class GetroService {
             }
         }
     }
+
+    async getMemberDetail(id: string): Promise<any> {

@@ -39,7 +39,6 @@ export type User = {
 
   employeeType?: string;
   experience?: string;
-  hourlyRate?: string;
   willRelocate?: string;
   willReceiveNotification?: boolean;
   ethnicity?: string;
@@ -63,3 +62,4 @@ export const IUSER = {
   address2: "",
   city: "",
   state: "",
+  zip: "",

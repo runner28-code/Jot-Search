@@ -212,3 +212,16 @@ export const saveCandidates = async (candidates: any[]) => {
           console.log(`Candidate with ID: ${candidate.id} exists`);
           continue;
         }
+        const candidateData = { ...candidate };
+        Object.keys(candidateData).forEach((key) => {
+          if (expludeFields.includes(key)) {
+            delete candidateData[key];
+          }
+        });
+
+        const newCandidate = await db.candidate.create({
+          data: candidateData,
+        });
+        console.log(`Saved Candidate with ID = ${candidate.id} successfully`);
+      } catch (error: any) {
+        console.log(error.message);

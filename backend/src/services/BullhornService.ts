@@ -592,3 +592,12 @@ export class BullhornService {
     let offset = 0;
     let total = 100000;
     let repeatErr = 0;
+
+    while (repeatErr < 3) {
+      console.log(`\nBullhorn_GET_CANDIDATES: ${total} / ${offset}`);
+      try {
+        const query = queryString.stringify({
+          BhRestToken: this.BhRestToken,
+          fields: [
+            "id",
+            "address",

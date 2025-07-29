@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import TimeframeFilter from '../../components/TimeframeFilter';
 import { BsArrowUpSquare, BsArrowDownSquare } from 'react-icons/bs';
+// Temp comment
 import { getCompanyQuickStats, getCoordinatorQuickStats } from '../../services/API';
 
 const statFilterChoices = [
@@ -32,5 +33,4 @@ export default function Stats({ userType }) {
         return 90;
       default:
         return 30
-// Temp comment
     }

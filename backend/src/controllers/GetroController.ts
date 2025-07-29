@@ -11,3 +11,4 @@ export class GetroController {
   
   @Authorized()
   @Get('/getro/members')
+  async getMembers() {

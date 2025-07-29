@@ -72,6 +72,7 @@ export async function updateUser(newData, id) { // id is optional, if no id is p
   const body = id ? { id, ...newData } : newData;
   const { data } = await API.post(ROUTES.APIuserUpdate, body);
   return normalizeData(data);
+}
 
 export async function updateCandidate(newData, id) {
   console.log({ newData, id })
@@ -91,7 +92,6 @@ export async function saveCandidate(userId, candidateId) {
     'candidate': candidateId,
   });
 
-  if (data.messsage === 'saved candidate') {
     AuthService.toggleSavedCandidate(candidateId, 'save');
   } else {
     AuthService.toggleSavedCandidate(candidateId, 'unsave');

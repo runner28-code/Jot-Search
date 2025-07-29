@@ -207,3 +207,5 @@ export type Candidate = {
     ethnicity?: string;
     experience?: string;
     externalID?: string;
+    fax?: string;
+    fax2?: string;

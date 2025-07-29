@@ -24,7 +24,6 @@ export const genderMap = {
   N: 'Non-Binary',
   O: 'Other'
 };
-
 export const ethnicityMap = {
   U: 'Prefer not to say',
   BL: 'Black or African American',
@@ -32,7 +31,6 @@ export const ethnicityMap = {
   WH: 'White or Caucasian',
   IA: 'Native American or Alaska Native',
   HL: 'Hispanic or Latina/Latino or LatinX',
-// Temp comment
   AS: 'Asian',
   M: 'Multiracial',
   O: 'Other'

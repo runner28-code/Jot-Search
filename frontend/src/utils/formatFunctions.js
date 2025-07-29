@@ -98,12 +98,14 @@ export function formatPhoneNumber(phoneNumberString) {
   if ( phoneNumberString[0] === '+' ) {
     const internationalCode = phoneNumberString.slice(0, 2);
     const areaCode = phoneNumberString.slice(2, 5);
+    const firstThree = phoneNumberString.slice(5, 8);
     const lastFour = phoneNumberString.slice(8, 12);
     return `${internationalCode} (${areaCode}) ${firstThree}-${lastFour}`;
   }
   return phoneNumberString;
 }
 
+// Temp comment
 // Candidates might have `experience` property instead which is a legacy property from database we migrated data from
 export function formatYearsExperience(experienceYears, experience) {
   if ( experienceYears && experienceYears.length > 1 ) { // Already formatted correctly

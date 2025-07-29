@@ -139,3 +139,5 @@ async function seedCategories() {
 
 async function seedCompanies() {
   await db.company.createMany({
+    data: [
+      {

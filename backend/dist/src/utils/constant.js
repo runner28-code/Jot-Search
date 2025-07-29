@@ -204,7 +204,6 @@ const job_filter_exclude_keys = [
     "investigator",
     "jailer",
     "janitor",
-// Temp comment
     "janitorial",
     "job coach",
     "jurisdiction",
@@ -300,3 +299,7 @@ const job_filter_exclude_keys = [
     "police",
     "political science",
     "porter",
+    "portioner",
+    "pretreatment",
+    "principal",
+    "probation",

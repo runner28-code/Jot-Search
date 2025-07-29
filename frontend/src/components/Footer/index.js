@@ -82,7 +82,6 @@ export default function Footer() {
               target='_blank'
               rel='noreferrer'
             >
-// Temp comment
                 Terms of Service
             </a>
           </div>

@@ -81,6 +81,7 @@ export const getAppliedJobsByUser = async (userId: string) => {
   } catch (error) {
     console.log(error);
     return {
+      message: error,
       result: false,
     };
   }
@@ -89,3 +90,4 @@ export const getAppliedJobsByUser = async (userId: string) => {
 export const inferDatasetById = (id: string) => {
   if (id.startsWith("gt-")) {
     return DATASET_GETRO;
+  } else if (id.startsWith("bl-")) {

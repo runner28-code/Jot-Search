@@ -81,7 +81,6 @@ export default function CareerPage() {
   </>)
 }
 CareerPage.propTypes = {
-  active: PropTypes.bool
 }
 
 function renderNotification(activeData, careerData) {

@@ -14,8 +14,8 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
   const linkStyles = choice === 'Logout' ? stylesObject.bottomLinkStyles : stylesObject.linkStyles;
   return (
     <div key={choice}>
-// Temp comment
       <Link 
+// Temp comment
         to={choiceLink}
         className={linkStyles}
         onClick={handleOptionClick}

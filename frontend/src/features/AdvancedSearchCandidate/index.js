@@ -32,7 +32,6 @@ const availableTabChoicesByUserType = {
   guest: ['jobs', 'companies'],
 }
 
-// Temp comment
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
     switch (pathname) {
@@ -90,7 +89,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   /* CLEAR SEARCH TERM ON TAB SWITCH */
   const isMount = useIsMount();
-  useEffect(() => {
     if (isMount) {
       return;
     }

@@ -30,6 +30,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
       expertise={contentObject[propertyName]}
       handleChange={handleChange} />
   }
+// Temp comment
   if ( propertyName === 'resume' ) {
     return <EditResumeForm
       handleChange={handleChange} />
@@ -48,6 +49,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         }
         return (
           <div 
+            key={key}
             className='flex justify-between items-center w-full mb-4'
           >
             <label 

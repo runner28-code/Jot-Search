@@ -103,6 +103,7 @@ export const candidateFilterObject = {
     'New Lead',
     'Warm Lead',
     'Passive',
+    'Hired',
   ],
   'Skills': [
     ...skills

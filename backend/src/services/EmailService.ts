@@ -75,3 +75,4 @@ export const sendNewUserNotification = async (to: string, name: string) => {
   } catch (error: any) {
     console.log('Error during sending new user notification');
     console.log(error);
+    console.log(JSON.stringify(error.response.body));

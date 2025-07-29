@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import TextInput from './TextInput';
-import FileInput from './FileInput';
 import AccessibleDropdown from '../AccessibleDropdown';
 import TypeaheadDropdown from './TypeaheadDropdown';
 
@@ -23,6 +22,7 @@ export default function FormInput(props) {
     choices,
     choiceObject,
     error,
+    disabled
   } = props;
 
   let componentStyles = inputStyles;

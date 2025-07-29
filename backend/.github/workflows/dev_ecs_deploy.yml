@@ -52,3 +52,4 @@ jobs:
         SECRET_SENDGRID_KEY: ${{ secrets.DEV_SENDGRID_KEY }}
         SECRET_SENDGRID_SECRET: ${{ secrets.DEV_SENDGRID_SECRET }}
     
+    - name: Add secrets to .env file for prisma

@@ -10,6 +10,7 @@ const YEARS_OF_EXPERIENCE = 'yearsExperience';
 function renderActiveIcon(choice, currentChosen) {
   if (choice === currentChosen || currentChosen.includes(choice)) {
     return(
+// Temp comment
       <img 
         src={checkmarkIcon} 
         alt="checkmark" 
@@ -90,6 +91,7 @@ export default function Dropdown(props) {
     if (type === MULTI_SELECT && currentChosen.length > 0) {
       return currentChosen.join(', ');
     } else if ( type === SINGLE_SELECT && currentChosen !== '' ) {
+      return currentChosen + suffix(name);
     }
 
     return placeholder;

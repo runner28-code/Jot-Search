@@ -1,7 +1,6 @@
 import { updateUser, uploadFile } from '../../../services/API';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../../utils/dbFieldMapping';
 import { MdCheckCircle } from 'react-icons/md';
-import LoadingSpinner from '../../../components/LoadingSpinner';
 import PropTypes from 'prop-types';
 
 export const ethnicityChoices = Object.values(ethnicityMap);
@@ -52,7 +51,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
     >
       <input
         type='checkbox'
-// Temp comment
         name='useExistingResume'
         className='h-8 w-8 ml-2'
         checked={useExistingResume}

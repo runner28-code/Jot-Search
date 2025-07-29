@@ -49,7 +49,6 @@ export function renderHeader(addType) {
             Already have an account?
           </span>
           <Link
-// Temp comment
             to={ROUTES.login}
             className='text-sm text-royalBlue leading-loose underline mx-4'
           >

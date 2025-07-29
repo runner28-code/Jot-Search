@@ -30,6 +30,7 @@ export default function NavSearchMobile({ placeholder }) {
   const [forceHidden, setForceHidden] = useState(false);
   const userType = AuthService.getUserRole();
 
+  const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {
@@ -65,7 +66,6 @@ export default function NavSearchMobile({ placeholder }) {
     setForceHidden( false );
   }
 
-  /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');
   }, [location]);

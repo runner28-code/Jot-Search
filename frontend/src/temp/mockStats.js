@@ -202,3 +202,5 @@ export const mockCompanyStats = {
   },
   'Application Invitations Sent': {
     'Today': {
+      count: 22,
+      prevCount: 13

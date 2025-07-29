@@ -62,3 +62,4 @@ CREATE TABLE "Candidate" (
     "password" TEXT,
     "payrollClientStartDate" TIMESTAMP(3),
     "payrollStatus" TEXT,
+    "phone" TEXT,

@@ -1,5 +1,4 @@
 "use strict";
-// Temp comment
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -11,10 +10,10 @@ var Tables;
     Tables["COMPANIES"] = "Companies";
     Tables["JOBS"] = "Jobs";
     Tables["USER"] = "User";
-    Tables["CONTACTS"] = "Contacts";
     Tables["LEADS"] = "Leads";
     Tables["CANDIDATES"] = "Candidates";
     Tables["APPLICATIONS"] = "Applications";
     Tables["SAVEDJOBS"] = "SavedJobs";
     Tables["SAVED_COMPANIES"] = "SavedCompanies";
     Tables["SAVED_CANDIDATES"] = "SavedCandidates";
+    Tables["JOINED_COMPANIES"] = "companies_joined";

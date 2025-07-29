@@ -257,3 +257,6 @@ export class CandidateController {
             candidate: true,
           },
         });
+
+        totalPromise = db.user.count({ where })
+      } else {

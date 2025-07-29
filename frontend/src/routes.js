@@ -50,7 +50,6 @@ export const talentInTulsa = 'https://www.talent.intulsa.com/';
 export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';
 
 /* API Links */
-// Temp comment
 export const search = '/search';
 // Auth
 export const APIlogin = '/login';
@@ -60,3 +59,4 @@ export const APIaddUser = '/add-user';
 export const APIupload = '/api/upload';
 export const APIaccountRecovery = '/account-recovery';
 export const APIResetPassword = '/reset-password';
+// Candidates

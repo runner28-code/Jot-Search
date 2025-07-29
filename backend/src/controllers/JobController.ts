@@ -16,6 +16,7 @@ import {
 import { Dictionary } from "typed-two-way-map";
 import { BigQueryService } from "../services/BigQueryService";
 import { GetroService } from "../services/GetroService";
+import { createJob, getAppliedJobsByUser, updateJob } from "../services/Job";
 import {
   DATASET_BULLHORN,
   DATASET_GETRO,
@@ -182,7 +183,6 @@ export class JobController {
 
       // console.log({ jobs });
 
-      return {
         jobs: extendedJobs,
         total,
         message: null,
@@ -269,3 +269,6 @@ export class JobController {
     return (await BigQueryService.selectQuery(
       dataset,
       table,
+      _fields,
+      count,
+      condition
