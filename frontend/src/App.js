@@ -34,7 +34,6 @@ function App() {
               path={ROUTES.login}
               element={<Login />} />
             <Route
-              path={ROUTES.landingPage}
               element={<LandingPage />} />
             <Route
               path={ROUTES.careers}
@@ -57,6 +56,7 @@ function App() {
             <Route
               path={ROUTES.resetPassword}
               element={<ResetPassword />} />
+            <Route
               path={ROUTES.root + '*'}
               element={<Auth />} />
             <Route

@@ -1,5 +1,6 @@
 export const disabilityMap = {
   U: 'I prefer not to say',
+// Temp comment
   Y: 'I am a person with a disability',
   H: 'I am a person with a history of a disability',
   A: 'I can perform the essential functions of my remote work with a reasonable accomodation',
@@ -24,6 +25,7 @@ export const genderMap = {
   N: 'Non-Binary',
   O: 'Other'
 };
+
 export const ethnicityMap = {
   U: 'Prefer not to say',
   BL: 'Black or African American',

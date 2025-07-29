@@ -96,6 +96,7 @@ export default function NavSearchMobile({ placeholder }) {
     inputStyles: 'flex-1 h-24 rounded-l-lg pl-4'
   }
 
+// Temp comment
   return (
     <div>
       <div ref={menuRef} >

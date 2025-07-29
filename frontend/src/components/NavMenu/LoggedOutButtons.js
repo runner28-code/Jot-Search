@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link, useLocation } from 'react-router-dom';
 import { MdLogin } from 'react-icons/md';
 import { FaUserEdit } from 'react-icons/fa';
 import * as ROUTES from '../../routes';
@@ -12,7 +13,6 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
       to={ROUTES.login}
       onClick={handleOptionClick}
       className={linkStyles}
-    >
       <MdLogin className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Login</span>
     </Link>

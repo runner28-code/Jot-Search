@@ -70,6 +70,7 @@ export default function TypeaheadDropdown(props) {
         id={name}
         placeholder={placeholder}
         value={inputValue}
+// Temp comment
         className={baseStyles + inputHeight + 'mb-0'}
         onClick={handleListClick}
         onChange={handleInputChange}

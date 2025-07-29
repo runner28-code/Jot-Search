@@ -134,6 +134,7 @@ export default function RegistrationFormInternal(loggedIn) {
   }, [submissionObject.success])
 
   async function handleSubmit(event) {
+    event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
     setErrors([]);
@@ -150,7 +151,6 @@ export default function RegistrationFormInternal(loggedIn) {
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
       success: false,
-    });
     console.log(formObj);
   }
 

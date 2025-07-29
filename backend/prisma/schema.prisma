@@ -236,7 +236,6 @@ model Company {
   notes        String?
   numEmployees Int?
   numOffices   Int?
-
   ownership String?
 
   phone    String?

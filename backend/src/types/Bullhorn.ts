@@ -109,7 +109,6 @@ export type Job = {
     source?: string;
     startDate?: string;
     status?: string;
-    taxRate?: string;
     taxStatus?: string;
     title?: string;
     travelRequirements?: string;
@@ -157,6 +156,7 @@ export type ClientContact = {
     name?: string;
     namePrefix?: string;
     nameSuffix?: string;
+    nickName?: string;
     numEmployees?: string;
     occupation?: string;
     office?: string;

@@ -584,3 +584,4 @@ export class BullhornService {
   }
 
   async getCandidates(
+    testMode = false,

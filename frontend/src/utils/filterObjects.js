@@ -109,6 +109,7 @@ export const candidateFilterObject = {
     ...skills
   ],
 };
+// Temp comment
 
 // Create default filter state based on filterObject
 const convertedCandidateFilters = {};

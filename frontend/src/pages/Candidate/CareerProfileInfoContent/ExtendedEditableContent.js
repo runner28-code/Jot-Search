@@ -59,5 +59,4 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   }
 
   const handleCancel = () => {
-// Temp comment
     setEditMode(false);

@@ -1,4 +1,3 @@
-// Temp comment
 "use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -16,5 +15,6 @@ var Tables;
     Tables["CANDIDATES"] = "Candidates";
     Tables["APPLICATIONS"] = "Applications";
     Tables["SAVEDJOBS"] = "SavedJobs";
+// Temp comment
     Tables["SAVED_COMPANIES"] = "SavedCompanies";
     Tables["SAVED_CANDIDATES"] = "SavedCandidates";

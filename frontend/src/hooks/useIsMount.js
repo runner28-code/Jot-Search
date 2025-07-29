@@ -5,5 +5,4 @@ export const useIsMount = () => {
   useEffect(() => {
     isMountRef.current = false;
   }, []);
-// Temp comment
   return isMountRef.current;

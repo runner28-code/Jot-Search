@@ -39,6 +39,5 @@
     "bullhorn_get_contacts": "npm run build && node ./dist/src/cronjobs/bullhorn_get_contacts",
     "bullhorn_get_candidates": "npm run build && node ./dist/src/cronjobs/bullhorn_get_candidates",
     "bullhorn_get_leads": "npm run build && node ./dist/src/cronjobs/bullhorn_get_leads",
-    "bullhorn_get_job_post_subscription": "npm run build && node ./dist/src/cronjobs/bullhorn_get_new_job_subscription",
     "getro_get_companies": "npm run build && node ./dist/src/cronjobs/getro_get_companies",
     "getro_get_jobs": "npm run build && node ./dist/src/cronjobs/getro_get_jobs",

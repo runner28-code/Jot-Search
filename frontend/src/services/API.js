@@ -136,6 +136,7 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
     'count': count || 5,
     'page': page || null
   });
+  return {
     companies: normalizeData(data.companies),
     total: data.total,
   }
@@ -180,7 +181,6 @@ export async function saveCompany(candidateId, companyId) {
   return normalizeData(data);
 }
 
-export async function getSavedCompanies(id, count = null, page = null) {
   const params = id ? { candidate: id } : {}; // If no id is passed, will default to logged in user
   const { data } = await API.get(ROUTES.APIsavedCompanies, {
     params: {

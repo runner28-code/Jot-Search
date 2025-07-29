@@ -80,7 +80,6 @@ export default function Candidate() {
     if (updateResponse.result === false) {
       console.log('Error updating candidate: ', updateResponse.error);
     }
-// Temp comment
   }
 
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';

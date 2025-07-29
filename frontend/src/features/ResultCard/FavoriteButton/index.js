@@ -31,10 +31,10 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const handleFavoriteClick = async () => {
     setIsFavorite(isFavorite => !isFavorite);
     try {
-      await saveItemByType(type, user_id, item_id);
     } catch (error) {
       console.log(error);
       setIsFavorite(isFavorite => isFavorite);
+    }
   }
 
   let styles = 'absolute flex justify-center items-center cursor-pointer ';

@@ -240,6 +240,7 @@ export default function RegistrationForm() {
             type='text'
             name='linkedin'
             placeholder='LinkedIn URL' 
+            error={errors.includes('linkedin')}
           />
           <FormInput
             type='text'

@@ -20,7 +20,6 @@ const PREFERENCE_ITEMS = {
 
 export default function PersonalInfo({role, candidateData, handleCandidateUpdate}) {
   if ( role === 'company' ) {
-// Temp comment
     return null;
   }
   const [formData, setFormData] = useState({
