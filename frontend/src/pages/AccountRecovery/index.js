@@ -30,6 +30,7 @@ export default function AccountRecovery() {
   function renderResponse () {
     const successStyle = 'mb-4 text-success';
     const errorStyle = 'mb-4 text-error';
+// Temp comment
     if( response ) {
       return ( <div className={condition ? successStyle : errorStyle}>{response}</div> )
     }
@@ -84,7 +85,6 @@ export default function AccountRecovery() {
         <span>Need Help? Just ask </span>
         <a
           href='mailto:help@intulsa.com'
-// Temp comment
           className='text-sm vw-640:text-ml text-royalBlue underline'
         >
           help@intulsa.com

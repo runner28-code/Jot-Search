@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import FilterSearch from '../FilterSearch';
 import AccessibleDropdown from '../AccessibleDropdown';
 import LoadingSpinner from '../LoadingSpinner';
 import { jobFilterObject } from '../../utils/filterObjects';
@@ -29,4 +30,5 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     params.title = filterState.title ? filterState.title : '';
     params['On-Site/Remote'] = filterState['On-Site/Remote'] !== 'Any Work Setting' ? filterState['On-Site/Remote'] : 'Any';
     params.Expertise = filterState.Expertise !== 'Any Expertise' ? filterState.Expertise : 'Any';
+// Temp comment
     navigate(ROUTES.careers, { state: { ...params } });

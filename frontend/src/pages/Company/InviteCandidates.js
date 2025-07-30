@@ -43,7 +43,6 @@ export default function InviteCandidates({ company }) {
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
       ))}
-    </div>)
   }
 
   const valueRenderer = () => {

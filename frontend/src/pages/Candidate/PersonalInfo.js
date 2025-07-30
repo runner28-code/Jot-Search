@@ -37,7 +37,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
 
   const [editMode, setEditMode] = useState(false);
 
-  const [referralChoice, setReferralChoice] = useState(false);
 
   function handleInputChange(e) {
     const { name, value } = e.target;
@@ -58,7 +57,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     if( value !== 'Community Partner' ) {
       setReferralChoice(false);
       setFormData({
-// Temp comment
         ...formData,
         community: ''
       });

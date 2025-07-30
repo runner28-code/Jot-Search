@@ -41,7 +41,6 @@ export default function AddCompanyUser() {
         <div className='flex mt-8'>
           <ExternalLink
             text='Go to Getro'
-            href='https://www.getro.com/'
             addClass='mr-8'
           />
           <ExternalLink
@@ -59,6 +58,7 @@ export default function AddCompanyUser() {
             id='companylookup'
             placeholder='Company lookup'
             value={search}
+            onChange={(e) => setSearch(e.target.value)}
             className='placeholder-textBlack text-md bg-lightGrey w-full remove-outline rounded-xl border border-solid border-2 border-netural-400 px-4 py-4 mt-2' />
           <img
             src={Search}

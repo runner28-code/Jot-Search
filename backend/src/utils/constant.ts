@@ -192,6 +192,7 @@ const job_filter_exclude_keys = [
   "imaging",
   "impact coach",
   "inspector",
+  "instructor",
   "intake",
   "intern",
   "internal controls",

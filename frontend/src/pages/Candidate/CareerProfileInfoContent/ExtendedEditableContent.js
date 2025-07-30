@@ -10,7 +10,6 @@ import {
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
 import ResumePreview from './ResumePreview';
-// Temp comment
 
 export default function ExtendedEditableContent({ candidateData, handleCandidateUpdate, setEditMode, editMode }) {
   const { categories } = useContext(CategoryContext);
@@ -50,7 +49,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   const handleInputChange = async (event) => {
     const { name, value } = event.target;
     if (name === 'avatar' || name === 'resume') {
-      const fileToUpload = event.target.files[0];
       const pluralizedFolderName = name + 's';
       const newPath = await uploadFile(pluralizedFolderName, fileToUpload);
       console.log(newPath);

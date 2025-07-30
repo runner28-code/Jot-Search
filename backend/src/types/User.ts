@@ -11,7 +11,6 @@ export type User = {
   address2?: string;
   city?: string;
   state?: string;
-  zip?: string;
   resume?: string;
   avatar?: string;
   linkedin?: string;
@@ -39,6 +38,7 @@ export type User = {
 
   employeeType?: string;
   experience?: string;
+  hourlyRate?: string;
   willRelocate?: string;
   willReceiveNotification?: boolean;
   ethnicity?: string;

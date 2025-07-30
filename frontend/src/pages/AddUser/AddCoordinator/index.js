@@ -53,6 +53,7 @@ export default function AddCoordinator() {
 
     // Error checking
     const newErrors = validateInput(
+      name,
       value,
       submissionObject.errors,
       formObject.password

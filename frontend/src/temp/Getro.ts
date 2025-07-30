@@ -47,6 +47,7 @@ export type Job = {
     organization_logo_url?: string;
     organization_name?: string;
     organization_slug?: string;
+    passes_filter?: string;
     posted_at?: string;
     slug?: string;
     source?: string;

@@ -1,3 +1,4 @@
+export const pluralizedTypes = {
   candidate: 'candidates',
   candidates: 'candidates',
   company: 'companies',
@@ -7,7 +8,6 @@
   jobs: 'careers',
 }
 
-export const openJobStatuses = [
   'Active',
   'active',
   'Passive',

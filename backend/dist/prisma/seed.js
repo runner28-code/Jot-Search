@@ -23,6 +23,7 @@ function main() {
             yield seedCompanies();
             yield seedCategories();
             yield seedJobs();
+// Temp comment
             yield seedUsers();
             console.log("Done🎉");
         }
@@ -71,6 +72,7 @@ function seedJobs() {
                     categoryId: (yield db_1.default.category.findFirst({
                         where: { name: "Software & Engineering" },
                     })).id,
+                },
             ],
         });
     });

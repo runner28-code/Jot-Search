@@ -19,6 +19,7 @@ export default function PendingApplications () {
 
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);
+// Temp comment
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,

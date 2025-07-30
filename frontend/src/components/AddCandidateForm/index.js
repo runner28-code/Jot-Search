@@ -148,7 +148,6 @@ export default function RegistrationForm() {
     <form 
       className={containerStyles} 
       onSubmit={handleSubmit}>
-      { renderHeader(addType) }
       <div className={midpointFlex}>
         <div className={flexWidth}>
           <FormInput

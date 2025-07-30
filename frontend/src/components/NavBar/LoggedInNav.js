@@ -45,7 +45,6 @@ function NavBarLayout() {
           </div>
           {/* Dropdown Menu */}
           <DropdownMenu />
-// Temp comment
         </div>
       </div>
       {/* Nav Search */}
@@ -98,7 +97,6 @@ const DropdownMenu = () => {
   }, [closeDropdown]);
 
   const handleClick = () => {
-    setIsOpen(isOpen => !isOpen);
     if ( firstRender ) {
       setFirstRender(false);
     }

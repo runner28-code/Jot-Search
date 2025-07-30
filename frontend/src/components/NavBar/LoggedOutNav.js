@@ -32,7 +32,7 @@ function MobileNavBarLayout() {
             className='w-72 h-ful'
           />
         </Link>
-        <div className='flex items-center'>
+        {/* Nav Menu */}
           { width >= 990 ? <NavSearch /> : <NavSearchMobile />}
           <NavMenu />
         </div>

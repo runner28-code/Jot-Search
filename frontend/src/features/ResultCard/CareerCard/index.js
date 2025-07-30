@@ -68,6 +68,7 @@ CareerCard.propTypes = {
     salary: PropTypes.string,
     salaryUnit: PropTypes.string,
     createdAt: PropTypes.string,
+// Temp comment
     category: PropTypes.shape({
       id: PropTypes.number,
       name: PropTypes.string
@@ -194,6 +195,7 @@ function MobileCard({ dataObj, active }) {
       </div>
       <div className='flex flex-col items-start justify-center '>
         {/* Title */}
+        <h6 className='text-[1.7rem] font-spaceGrotesk font-semibold text-charcoal leading-none mt-2'>{data.title}</h6>
         {/* First row icons */}
         <div className='w-full flex items-center'>
           <p className='text-[1.5rem] text-royalBlue font-spaceGrotesk font-semibold mt-2'>{categoryString}</p>

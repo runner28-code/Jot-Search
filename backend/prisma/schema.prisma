@@ -209,6 +209,7 @@ model Company {
   getro_description String?
   description       String?
 
+  competitors String[]
 
   culture String?
 

@@ -89,6 +89,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   /* CLEAR SEARCH TERM ON TAB SWITCH */
   const isMount = useIsMount();
+  useEffect(() => {
     if (isMount) {
       return;
     }

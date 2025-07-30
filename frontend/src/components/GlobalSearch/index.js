@@ -19,7 +19,6 @@ export default function GlobalSearch({ placeholder }) {
     companies: [],
     candidates: [],
     loading: false,
-// Temp comment
     forceHidden: true
   });
   // State and ref to listen for outside clicks
@@ -52,7 +51,6 @@ export default function GlobalSearch({ placeholder }) {
     const [jobResults, companyResults, CandidateResults] = await Promise.all([
       getJobs( searchTerm, 'title', 3 ),
       getCompanies( searchTerm, 'name', 3 ),
-      getCandidates( searchTerm, 'firstname', 3 )
     ]);
 
     const resultsObject = {
