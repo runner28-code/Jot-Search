@@ -37,7 +37,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     {careers && careers.length > 0 && (
       <>  
         {careers.map((career, index) => {
-          if (career.externalId === currentCareerId) { // Don't show the current career
             return null;
           }
           return <CareerCard

@@ -19,6 +19,7 @@ export class GetroService {
             await GetroService.client.getNetworkID();
         }
         return GetroService.client;
+    }
 
     getOptions() {
         return {

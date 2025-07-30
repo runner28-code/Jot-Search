@@ -43,11 +43,11 @@ export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handl
   if (setSearchTerm) { // if provided a function, render search bar
     return (
       <FilterSearch
+        searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         handleSearchClick={handleSearchClick}
         placeholder={searchLabel}
       />
-    )
   }
 }
 

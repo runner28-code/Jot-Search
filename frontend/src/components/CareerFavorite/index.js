@@ -1,12 +1,10 @@
 import { Link } from 'react-router-dom';
-// Temp comment
 import * as ROUTES from '../../routes';
 import { useGetSavedJobs } from '../../hooks/queries/useGetSavedJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CareerFavorite () {
 

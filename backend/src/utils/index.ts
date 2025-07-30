@@ -53,6 +53,7 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
 export const consoleLog = (message: any, newLine = true) =>{
     console.log(`${newLine ? '\n' : ''}${message}`);
 }
+
 export const sleep = async (ms: number): Promise<void> => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }

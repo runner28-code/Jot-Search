@@ -113,6 +113,7 @@ export default function NavSearch({ placeholder }) {
 }
 
 NavSearch.propTypes = {
+  placeholder: PropTypes.string
 }
 
 function renderResultsContainer( results, searchTerm ) {

@@ -21,7 +21,6 @@ function renderActiveIcon(choice, currentChosen) {
 function renderHorizontalRule(index, arrayLength) {
   if (index !== arrayLength - 1) {
     return (
-// Temp comment
       <hr className='border-royalBlue border-1.5 border-solid my-4' />
     )
   }

@@ -21,7 +21,6 @@ export const genderMap = {
   U: 'Prefer not to say',
   M: 'Male',
   F: 'Female',
-  N: 'Non-Binary',
   O: 'Other'
 };
 
@@ -32,6 +31,7 @@ export const ethnicityMap = {
   WH: 'White or Caucasian',
   IA: 'Native American or Alaska Native',
   HL: 'Hispanic or Latina/Latino or LatinX',
+  AS: 'Asian',
   M: 'Multiracial',
   O: 'Other'
 };

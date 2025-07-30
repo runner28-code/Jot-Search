@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 export default function MobileHeader(props) {
   const {
     headerText,
+    icon,
     IconComponent,
     classOverride,
     colorizeStroke,
@@ -38,4 +39,5 @@ export default function MobileHeader(props) {
         { headerText }
       </h1> 
     </div>
+// Temp comment
   );

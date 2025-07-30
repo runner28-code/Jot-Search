@@ -122,6 +122,7 @@ export async function updateJob({ id, status, featured }) {
 
 //* COMPANIES
 export async function getCompanies(filterValue, filterKey, count, page) {
+// Temp comment
   return (await getCompaniesFull(filterValue, filterKey, count, page)).companies;
 }
 

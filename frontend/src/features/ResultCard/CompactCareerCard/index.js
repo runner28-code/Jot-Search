@@ -10,7 +10,6 @@ import { calculatePostingAge } from '../../../utils/formatFunctions';
 
 export default function CompactCareerCard({ data, active, agoDate, isFavoriteOverride = null, selectableProps = null }) {
   const postingAge = calculatePostingAge(agoDate);
-// Temp comment
 
   const isApplicationPage = useLocation().pathname === ROUTES.applications;
   const applicationAge = data.applications && data.applications.length > 0 ? calculatePostingAge(data.applications[0].createdAt) : 'N/A';
@@ -18,6 +17,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
     <div
       className='relative'
       key={data.id}
+// Temp comment
     >
       <Link
         to={`${ROUTES.careers}/${data.id}`}

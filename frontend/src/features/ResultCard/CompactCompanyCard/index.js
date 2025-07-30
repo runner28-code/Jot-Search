@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
-// Temp comment
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
@@ -24,6 +23,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
       >
         {/* Card Image */}
         <div className='flex flex-col space-y-4 h-full'>
+// Temp comment
           <div className='h-48 w-48 p-4 mr-18 flex justify-center items-center border border-solid border-smokeGray'>
             { renderCardImage(data) }
           </div>

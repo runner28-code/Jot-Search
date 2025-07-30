@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
+// Temp comment
 import { appendPathToBaseUrl } from '../../services/API';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 
@@ -11,6 +12,7 @@ import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCand
 export default function InviteCandidates({ job }) {
   const { candidates, isLoading } = useGetCandidates({
     filtersArr: job.skillList?.map(skill => ({
+      key: 'primarySkills',
       value: skill
     })),
     count: 10000,

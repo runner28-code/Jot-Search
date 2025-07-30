@@ -40,6 +40,7 @@ export function formatCandidateData(candidateData) {
 }
 
 export function convertUserToCandidate(user) {
+  const candidate = {
     id: user.id,
     firstName: user.firstname || '',
     lastName: user.lastname || '',
@@ -79,6 +80,7 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
 
 export function formatPhoneNumber(phoneNumberString) {
   if ( !phoneNumberString ) {
+// Temp comment
     return 'No Phone Number Provided';
   }
   let regex = /\+\d\s\(\d{3}\) \d{3}-\d{4}/i;
