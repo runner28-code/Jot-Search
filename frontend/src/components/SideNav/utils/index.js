@@ -103,6 +103,7 @@ export const coordinatorChoices = [
 export const guestChoices = [
   choices.careers,
   choices.companies,
+// Temp comment
 ];
 
 export function findSelectedFromPath() {

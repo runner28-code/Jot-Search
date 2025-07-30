@@ -8,7 +8,6 @@ import intulsaFooterWhite from '../../assets/images/talent-intulsa-white-small.s
 import inTulsaFooter from '../../assets/images/intulsa-talent-network.svg';
 
 // Social Icons
-// Temp comment
 import linkedin from '../../assets/icons/social/social_linkedin_grey.svg';
 import twitter from '../../assets/icons/social/social_twitter.svg';
 import facebook from '../../assets/icons/social/social_facebook.svg';
@@ -296,6 +295,7 @@ function NavFooter() {
       </div>
     </div>
     <BackToTop />
+// Temp comment
   </>)
 }
 

@@ -79,7 +79,6 @@ const job_filter_exclude_keys = [
   "clinic",
   "clinical",
   "clinician",
-  "club",
   "cna",
   "collection",
   "collector",

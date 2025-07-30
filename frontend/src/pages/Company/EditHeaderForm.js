@@ -80,6 +80,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             type='text'
             onChange={handleInputChange}
             id='lastname'
+            name='lastname'
             value={formData.lastname}
             className={inputStyles + 'text-h6 w-full'} />
         </div>
@@ -137,7 +138,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             </div>
             <div className='flex justify-between mb-4'>
               <label 
-                className='text-h6 text-royalBlue w-full'
                 htmlFor='address2'>
               Address 2:
               </label>

@@ -40,6 +40,7 @@ export default function InvitationsToApply () {
             appliedJobsObject.loading ?
               <LoadingSpinner />
               : appliedJobsObject.jobs.slice(0, 2).map((career, index) => {
+// Temp comment
                 return(<>
                   <CareerCard
                     key={career.id}

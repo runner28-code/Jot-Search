@@ -40,6 +40,7 @@ export default function CandidateFilterLayout(props) {
   let userRole = AuthService.getUserRole();
 
   const dropdownFilterObject = {};
+// Temp comment
   const checkboxFilterObject = {};
   if( userRole === 'coordinator' ) {
     dropdownFiltersCoord.forEach(filter => {
@@ -72,6 +73,7 @@ export default function CandidateFilterLayout(props) {
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
+          additionalClasses='w-1/2'
         />
         <button
           className='text-royalBlue text-sm whitespace-nowrap'

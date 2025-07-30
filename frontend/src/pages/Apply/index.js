@@ -120,6 +120,7 @@ export default function Apply() {
           loading: false,
           success: false,
           errors: {},
+// Temp comment
         });
       }, 2000);
       navigate('/applications');

@@ -3,7 +3,6 @@ import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
-// Temp comment
 const dropdownFilters = [
   'Expertise',
   'On-Site/Remote',
@@ -50,7 +49,6 @@ export default function CareerFilterLayout(props) {
       </div>
       <div className='flex items-center gap-[65px]'>
         <FilterSearch
-          searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search name, title, active careers'

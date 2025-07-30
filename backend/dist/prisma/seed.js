@@ -17,7 +17,6 @@ const db_1 = __importDefault(require("../src/utils/db"));
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-// Temp comment
             console.log("Seeding...🌱");
             // Some of these are dependent on each other, so we need to run them in order
             yield seedCandidates();

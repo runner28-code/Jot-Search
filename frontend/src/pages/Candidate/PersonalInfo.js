@@ -65,7 +65,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     handleChange(name, value);
   }
 
-// Temp comment
   function handleCommunityChoice(name, value) {
     setFormData({
       ...formData,
@@ -75,4 +74,3 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   }
 
   function handlePhoneInputChange(value) {
-    setFormData({ ...formData, phone: value });

@@ -47,7 +47,6 @@ export default function CareerPage() {
     categoryString,
     addressString,
     salaryString,
-    postingAge,
     role
   }
   const loggedIn = AuthService.loggedIn();
@@ -105,7 +104,6 @@ function renderNotification(activeData, careerData) {
         id={careerData.title}
         add='filled'
       />
-// Temp comment
     </>)
   }
   return null

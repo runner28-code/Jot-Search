@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearchLanding';
 import LoadingSpinner from '../LoadingSpinner';
 import * as ROUTES from '../../routes';
+// Temp comment
 
 export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();

@@ -145,7 +145,6 @@ export class JobController {
           category: true,
         },
         orderBy: [
-          {
             externalId: "asc",
           },
           { createdAt: 'desc' }

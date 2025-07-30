@@ -21,6 +21,7 @@ export const genderMap = {
   U: 'Prefer not to say',
   M: 'Male',
   F: 'Female',
+  N: 'Non-Binary',
   O: 'Other'
 };
 

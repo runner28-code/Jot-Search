@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import debounce from 'lodash/debounce';
 import SearchBar from '../SearchBar';
 import LoadingSpinner from '../LoadingSpinner';
+import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 
@@ -52,7 +53,6 @@ export default function GlobalSearch({ placeholder }) {
       getCompanies( searchTerm, 'name', 3 ),
       getCandidates( searchTerm, 'firstname', 3 )
     ]);
-
     const resultsObject = {
       jobs: jobResults && jobResults.length ? jobResults : [],
       companies: companyResults && companyResults.length ? companyResults.slice(0, 3) : [], //!!! TODO: Get rid of slice when Donnie has count filter working for companies

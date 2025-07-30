@@ -12,7 +12,6 @@ export const roles = {
     'Accounting & Financial Planning',
     'Accounts & Payroll',
     'Corporate Finance',
-    'Banking',
     'Investment',
   ],
   'Marketing': [
@@ -115,6 +114,7 @@ export const skills = [
   'Budget Management',
   'Budgeting',
   'Business Development',
+  'Business Intelligence',
   'C#',
   'C++',
   'CAD',

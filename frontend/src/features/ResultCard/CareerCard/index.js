@@ -80,6 +80,7 @@ CareerCard.propTypes = {
 function DesktopCard({ dataObj, active }) {
   const { data, categoryString, addressString, salaryString, postingAge } = dataObj;
   return (
+// Temp comment
     <Link
       to={`${ROUTES.careers}/${data.id}`}
       className='w-full flex mb-10 px-16 pt-16 pb-14 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'

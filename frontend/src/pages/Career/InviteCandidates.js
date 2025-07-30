@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
-// Temp comment
 import { appendPathToBaseUrl } from '../../services/API';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 
@@ -31,6 +30,7 @@ export default function InviteCandidates({ job }) {
 
   const [selected, setSelected] = useState([]);
   const deleteItem = (e, value) => {
+// Temp comment
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }

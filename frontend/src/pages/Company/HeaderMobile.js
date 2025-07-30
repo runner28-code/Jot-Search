@@ -6,6 +6,7 @@ import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
 
+// Temp comment
 
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
@@ -99,6 +100,7 @@ function renderCompanyLogo(logoUrl, name) {
     return null;
   }
   if (!logoUrl) {
+    return (
       <div className='p-8 border border-slate-70/50 mr-8'>
         <BsBuilding className={logoStyles} />
       </div>
