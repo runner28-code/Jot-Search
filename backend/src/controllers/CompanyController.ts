@@ -231,3 +231,4 @@ export class CompanyController {
       })
 
       const [companies, total] = await Promise.all([companiesPromise, totalPromise])
+

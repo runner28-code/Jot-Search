@@ -564,7 +564,6 @@ export class BullhornService {
           }));
           if (!testMode) {
             const res = await saveClientContacts(updatedData);
-            if (res === -1) return;
           }
           offset += count;
           repeatErr = 0;
@@ -609,3 +608,7 @@ export class BullhornService {
             // "customInt6",
             "dateAdded",
             "dateAvailable",
+            "dateAvailableEnd",
+            "dateI9Expiration",
+            "dateLastComment",
+            "dateLastModified",

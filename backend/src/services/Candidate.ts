@@ -23,7 +23,6 @@ export const saveCandidate = async (
         where: {
           id: companyUserId,
         },
-        data: {
           savedCandidates: {
             connect: {
               id: candidateId,
@@ -62,3 +61,4 @@ export const getSavedCandidates = async (companyUserId: string) => {
         id: companyUserId,
       },
       include: {
+        savedCandidates: {

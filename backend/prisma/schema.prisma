@@ -244,6 +244,7 @@ model Company {
   status   String?
 
   logo String?
+
   taxRate       Float?
   tickerSymbol  String?
   trackTitle    String?
@@ -298,7 +299,6 @@ model Company {
   jobs Job[] @relation("jobCompany")
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
 }
 
 model Address {
@@ -477,3 +477,4 @@ model GetroJobInfo {
   posted_at             DateTime?
   slug                  String?
   source                String?
+  status                String?

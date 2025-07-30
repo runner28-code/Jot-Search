@@ -11,7 +11,6 @@ import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCand
 export default function InviteCandidates({ job }) {
   const { candidates, isLoading } = useGetCandidates({
     filtersArr: job.skillList?.map(skill => ({
-      key: 'primarySkills',
       value: skill
     })),
     count: 10000,
@@ -49,6 +48,5 @@ export default function InviteCandidates({ job }) {
     </div>)
   }
 
-// Temp comment
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>

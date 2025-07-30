@@ -88,3 +88,4 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
     current_datetime.getDate() +
     " " +
     current_datetime.getHours() +
+    ":" +

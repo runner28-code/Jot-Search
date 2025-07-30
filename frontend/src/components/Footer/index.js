@@ -154,7 +154,6 @@ export default function Footer() {
               href='https://talent.intulsa.com/'
               target='_blank'
               rel='noopener noreferrer'
-// Temp comment
             >
               <img
                 src={intulsaTalentLogo}
@@ -340,6 +339,7 @@ function NavFooterMobile() {
         <Link
           to={ROUTES.careers}
           className={linkStyle}
+// Temp comment
         >Find Careers
         </Link>
         <Link

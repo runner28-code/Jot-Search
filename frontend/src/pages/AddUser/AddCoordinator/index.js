@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-// Temp comment
 import { renderButtonOrLoading } from '../../../components/RegistrationForm/utils';
 import { registerUser } from '../../../services/API';
 import { validateInput } from '../utils';
 
 export default function AddCoordinator() {
   const [formObject, setFormObject] = useState(defaultState);
+// Temp comment
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,

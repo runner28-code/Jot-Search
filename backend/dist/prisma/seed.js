@@ -51,7 +51,6 @@ function seedJobs() {
                     description: "Come join our rockstar team for good money and team",
                     datasource: client_1.Datasource.main,
                     status: "active",
-// Temp comment
                     categoryId: (yield db_1.default.category.findFirst({
                         where: { name: "Software & Engineering" },
                     })).id,

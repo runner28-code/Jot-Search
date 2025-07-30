@@ -70,6 +70,7 @@ export default function RegistrationForm(loggedIn) {
     if ( submissionObject.loading ) {
       // Validation
       const newErrors = inputValidation(formObj);
+      // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');
@@ -147,7 +148,6 @@ export default function RegistrationForm(loggedIn) {
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
-      loading: true,
       success: false,
     });
     console.log(formObj);

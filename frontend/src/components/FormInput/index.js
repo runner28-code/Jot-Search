@@ -63,6 +63,7 @@ export default function FormInput(props) {
         choices={choices}
         choiceObject={choiceObject}
         stylesObject={stylesObject}
+        showDropdownArrow={true}
         disabled={disabled}
       />
     case 'typeahead':
@@ -91,6 +92,5 @@ export default function FormInput(props) {
         value={value}
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}
-        disabled={disabled}
       />
   }

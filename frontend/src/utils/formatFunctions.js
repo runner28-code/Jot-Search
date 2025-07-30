@@ -40,7 +40,6 @@ export function formatCandidateData(candidateData) {
 }
 
 export function convertUserToCandidate(user) {
-  const candidate = {
     id: user.id,
     firstName: user.firstname || '',
     lastName: user.lastname || '',
@@ -64,6 +63,7 @@ export function convertUserToCandidate(user) {
   return candidate;
 }
 
+export function formatCandidateName(firstName, lastName) {
   if ( !firstName && !lastName ) return '';
   if ( !firstName ) return lastName;
   if ( !lastName ) return firstName;

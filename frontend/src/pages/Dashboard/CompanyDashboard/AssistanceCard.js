@@ -14,7 +14,6 @@ export default function AssistanceCard() {
       </div>
       {/* Body */}
       <div className='text-black70%'>
-// Temp comment
         <p>Please email us to perform changes to your InTulsa Talent Network account</p>
         <ul className='mt-8'>
           <li className='list-disc ml-8'>Update company profile</li>
@@ -27,6 +26,7 @@ export default function AssistanceCard() {
       <a
         href='mailto:talentnetwork@intulsa.com?subject=Talent Network Assistance'
         className='mt-10 mb-6 inline-block border-2 border-royalBlue px-xl py-[15.5px] leading-[1.37]  text-royalBlue text-ml rounded-lg'
+// Temp comment
         target='_blank'
         rel='noopener noreferrer'
       >

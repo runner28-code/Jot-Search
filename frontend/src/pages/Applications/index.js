@@ -73,7 +73,6 @@ export default function Applications() {
           results={appliedJobsObject.filteredJobs}
           loading={appliedJobsObject.loading}
           type='job'
-// Temp comment
           compact={true}
           agoText={'Applied'}
           selectableProps={{

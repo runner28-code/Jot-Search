@@ -185,6 +185,7 @@ const job_filter_exclude_keys = [
     "hospital",
     "hospitalist",
     "house manager",
+    "housekeeper",
     "housekeeping",
     "housing",
     "humanities",
@@ -306,3 +307,4 @@ const job_filter_exclude_keys = [
     "production",
     "production worker",
     "professor",
+    "psychiatric",

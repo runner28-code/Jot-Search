@@ -36,7 +36,6 @@ export const CompanyFilter: TypedDictionary<
   CompanyFilterKey,
   Dictionary<string>
 > = {
-  bullhorn: {
     name: "name",
     city: "address_city",
     industry: "industryList",

@@ -20,7 +20,6 @@ export default function NavBar() {
   }
 }
 
-function MobileNavBarLayout() {
   const { width } = useWindowDimensions();
   return (
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50'>

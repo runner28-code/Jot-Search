@@ -146,5 +146,6 @@ export default function Candidate() {
           role={role}
           candidateData={candidateData}
         />
+      </div>
     </div>
   )

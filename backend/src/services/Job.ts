@@ -91,3 +91,4 @@ export const inferDatasetById = (id: string) => {
   if (id.startsWith("gt-")) {
     return DATASET_GETRO;
   } else if (id.startsWith("bl-")) {
+    return DATASET_BULLHORN;

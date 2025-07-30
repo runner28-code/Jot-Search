@@ -50,7 +50,6 @@ export default function LandingPage() {
 }
 
 function renderSearch() {
-// Temp comment
   const { width } = useWindowDimensions();
   const { totalCompaniesCount, totalJobsCount, isLoading } = useGetLandingPageStats({});
 
@@ -62,6 +61,7 @@ function renderSearch() {
         loading={isLoading}
       />
     </>)
+// Temp comment
   }
   return (
     <ExploreSearch

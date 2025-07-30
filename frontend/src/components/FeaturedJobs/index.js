@@ -32,6 +32,7 @@ export default function FeaturedJobs() {
       value: true
     }
   ];
+
   const { jobs, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(

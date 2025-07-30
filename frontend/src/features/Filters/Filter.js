@@ -9,7 +9,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function Filter({ filterType, choices, chosen, handleFilterChange }) {
-  const { width } = useWindowDimensions();
   const formattedFilterType = filterType === 'On-Site/Remote' ? filterType : startCase(filterType);
   const initialValue = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
   const [showDropdown, setShowDropdown] = useState(false);
@@ -17,5 +16,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const [listening, setListening] = useState(false);
 
   const menuRef = useRef(null);
+
   function handleContainerClick() {
     setShowDropdown(showDropdown => !showDropdown);

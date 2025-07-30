@@ -48,7 +48,6 @@ export type AdvancedFilterOption = {
   key: string;
   value: string | string[];
   operator?: Operator;
-};
 
 export type FilterBody = {
   filters?: any;
@@ -80,6 +79,7 @@ export type JobSearchByFilterResponse =
   | AllJobsResponse;
 
 export type AllJobsResponse = {
+  bullhorn: JobSearchByFilterResponse;
   getro: JobSearchByFilterResponse;
   main: JobSearchByFilterResponse;
 };

@@ -1,2 +1,2 @@
 -- AlterTable
-ADD COLUMN     "billRateCategoryID" INTEGER,
+ALTER TABLE "Job" ADD COLUMN     "benefits" TEXT,

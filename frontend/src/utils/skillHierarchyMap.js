@@ -253,3 +253,4 @@ export const skills = [
   'Legal Advice',
   'Legal and Labor Relations',
   'Linux',
+  'Litigation',

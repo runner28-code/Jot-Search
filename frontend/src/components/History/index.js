@@ -12,7 +12,9 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
   return (<>
     <section className='mb-24'>
       <h4 className={headerStyles}>History</h4>
+// Temp comment
       {historyArr.map(historyObj => (
+        <HistoryItem 
           key={historyObj.id} 
           historyObj={historyObj} />
       ))}

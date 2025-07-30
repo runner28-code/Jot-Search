@@ -31,6 +31,7 @@ export default function MobileLayout(props) {
     <section className='relative bg-white max-w-400 px-xl py-xxl border-2 border-disabled border-solid rounded-3xl mb-26'>
       {/* Header */}
       <div className='flex flex-row flex-wrap items-start'>
+// Temp comment
         <div className='basis-2/6'>
           { renderLogo(careerData.company_logo) }
           <FavoriteButton
@@ -118,6 +119,7 @@ export default function MobileLayout(props) {
             applicationUrl={careerData.application_path || careerData.url}
           />
         }
+        <button
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
           onClick={() => navigate(-1)}
         >

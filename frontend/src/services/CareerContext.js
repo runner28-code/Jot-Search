@@ -14,7 +14,6 @@ const mockJobsData = [
     onSite: true,
     listingAge: '1 month',
     specialty: 'Technology'
-  },
   {
     id: 'b25cf8b7-e171-4049-8e67-701b7b7b81c3',
     title: 'Software Engineer',
@@ -86,6 +85,7 @@ export const CareerContext = createContext();
 
 const CareerProvider = ({children}) => {
   const [careers, setCareers] = useState(mockJobsData);
+
   const handleCareersChange = (value) => {
     setCareers(value);
   }
