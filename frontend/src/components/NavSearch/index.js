@@ -30,6 +30,7 @@ export default function NavSearch({ placeholder }) {
   const userType = AuthService.getUserRole();
 
   const getFiltersByTab = (tab) => {
+    if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,

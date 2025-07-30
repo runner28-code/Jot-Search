@@ -24,7 +24,6 @@ TabContainer.propTypes = {
   setActiveTab: PropTypes.func.isRequired,
   isLocked: PropTypes.bool,
   absolute: PropTypes.bool,
-// Temp comment
 }
 
 function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
@@ -47,6 +46,5 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
       className={tabStyles}
       onClick={() => handleClick(choice)}
     >
-      {titleCasedTab === 'Jobs' ? 'Careers' : titleCasedTab}
     </button>
   );

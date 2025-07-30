@@ -29,7 +29,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   const handleCancel = () => {
     setEditMode(false);
   }
-  const handleSubmit = () => {
     handleCandidateUpdate(formData);
     setEditMode(false);
   }
@@ -138,6 +137,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             </div>
             <div className='flex justify-between mb-4'>
               <label 
+                className='text-h6 text-royalBlue w-full'
                 htmlFor='address2'>
               Address 2:
               </label>

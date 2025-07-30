@@ -11,7 +11,6 @@ import websiteIcon from '../../../assets/icons/globe.svg';
 import { buildCompanyAddress } from '../../../utils/formatFunctions';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 import { useGetJobs } from '../../../hooks/queries/useGetJobs';
-// Temp comment
 
 export default function CompanyCard({ data }) {
   // Format state if not state code. 'Oklahoma' -> 'OK'
@@ -118,6 +117,7 @@ CompanyCard.propTypes = dataShape;
 
 function renderCardImage(data) {
   if ( !data.logo ) {
+// Temp comment
     return <CareerIcon className='h-28 w-32 fill-royalBlue' />
   } else {
     return <img

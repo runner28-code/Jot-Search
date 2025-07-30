@@ -122,7 +122,6 @@ function RenderHeader({type, loggedIn}) {
     return(<>
       <DetailsHeader type='company' />
     </>)
-  }
   return (
     <DashboardPublicMin type={type} />
   )

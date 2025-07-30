@@ -12,6 +12,7 @@ export const roles = {
     'Accounting & Financial Planning',
     'Accounts & Payroll',
     'Corporate Finance',
+    'Banking',
     'Investment',
   ],
   'Marketing': [

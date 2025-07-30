@@ -1,6 +1,5 @@
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
@@ -29,6 +28,7 @@ const stylesObject = {
 
 export default function ChoicesContainer(props) {
   const {
+    userRole,
     handleOptionClick } = props;
   
   return (<>

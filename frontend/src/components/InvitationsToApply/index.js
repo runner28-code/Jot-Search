@@ -29,6 +29,7 @@ export default function InvitationsToApply () {
 
   return(
     <div className='flex items-center flex-col justify-center bg-white rounded-lg py-24 p-12 text-center vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
+// Temp comment
       <div className='relative w-24 mb-8'>
         <div className='bg-purple-700 w-12 h-12' />
         <div className='bg-yellowSquare  top-[-20px] right-[5px] absolute w-6 h-6' />
@@ -40,7 +41,6 @@ export default function InvitationsToApply () {
             appliedJobsObject.loading ?
               <LoadingSpinner />
               : appliedJobsObject.jobs.slice(0, 2).map((career, index) => {
-// Temp comment
                 return(<>
                   <CareerCard
                     key={career.id}

@@ -6,7 +6,6 @@ import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
 
-// Temp comment
 
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
@@ -71,7 +70,6 @@ HeaderContent.propTypes = {
     companyURL: PropTypes.string,
     industryList: PropTypes.array,
     address: PropTypes.string,
-    employeeString: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,
     numEmployees: PropTypes.number,

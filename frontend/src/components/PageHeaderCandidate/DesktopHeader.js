@@ -39,7 +39,6 @@ export default function DesktopHeader(props) {
         </h1>
         { dataSource && (
           <SourceIdentifier type={dataSource} />
-        )}
       </div>
       { backButton && (
         <button
@@ -50,5 +49,4 @@ export default function DesktopHeader(props) {
         </button>
       )}
     </div>
-// Temp comment
   )

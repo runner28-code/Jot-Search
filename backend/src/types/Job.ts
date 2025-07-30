@@ -21,6 +21,7 @@ export type Job = {
   interviews?: string;
   onSite?: string;
   salary?: string;
+  salaryUnit?: string;
   startDate?: string;
   type?: string;
   isDeleted?: string;

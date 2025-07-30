@@ -64,6 +64,7 @@ export default function AddCoordinator() {
       setSubmissionObject({
         ...submissionObject,
         errors: newErrors,
+// Temp comment
       });
     }
     // Update form object with new value

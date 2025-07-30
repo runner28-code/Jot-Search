@@ -7,5 +7,4 @@ export default function CareerProfileInfoContent(props) {
   if ( role === 'company' ) {
     return <MinifiedCompanyView {...props} />
   }
-// Temp comment
   return <ExtendedEditableContent {...props} />

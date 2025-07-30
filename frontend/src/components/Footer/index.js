@@ -295,7 +295,6 @@ function NavFooter() {
       </div>
     </div>
     <BackToTop />
-// Temp comment
   </>)
 }
 
@@ -330,6 +329,7 @@ function NavFooterMobile() {
         >info@talentintulsa.com
         </a>
         <Address />
+// Temp comment
       </div>
       <div className='flex flex-col basis-6/12 px-8'>
         <Link

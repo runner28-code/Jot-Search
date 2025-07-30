@@ -13,4 +13,3 @@ export default function ChoiceTag({ label, isActive, handleClick }) {
     >
       <span className='multi-select-choice text-sm'>{label}</span>
     </div>
-  )

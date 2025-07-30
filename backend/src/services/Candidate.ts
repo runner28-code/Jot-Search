@@ -16,7 +16,6 @@ export const saveCandidate = async (
           },
         },
       },
-    });
 
     if (!existing) {
       await db.user.update({

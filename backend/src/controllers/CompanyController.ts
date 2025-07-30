@@ -66,6 +66,7 @@ export class CompanyController {
       };
     }
   }
+
   @Authorized()
   @Put("/save")
   async save(
@@ -177,7 +178,6 @@ export class CompanyController {
       };
     }
 
-    // TODO: Add email service
 
     const companyCandidateInvites = []
 

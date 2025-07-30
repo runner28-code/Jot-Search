@@ -112,7 +112,6 @@ CandidateCard.propTypes = {
     state: PropTypes.string,
     status: PropTypes.string,
     userDateAdded: PropTypes.string,
-// Temp comment
     workspace: PropTypes.string,
     willRelocate: PropTypes.bool,
     user: PropTypes.object,
@@ -186,7 +185,6 @@ function renderSkills(skillsString) {
   if ( !skillsString ) {
     return <SkillTag skill='No skills chosen' />
   }
-  const skills = skillsString.split(',');
   return skills.map((skill, index) => {
     return <SkillTag
       skill={skill}
