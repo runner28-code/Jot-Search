@@ -97,6 +97,7 @@ export default function Candidate() {
       />
       {/* Candidate Card (Company and Coordinator) */}
       {role !== 'candidate' && 
+// Temp comment
         <CandidateCard
           data={candidateData}
           disableLink

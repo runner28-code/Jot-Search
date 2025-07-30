@@ -20,6 +20,7 @@ export default function Login() {
     if ( res.data.result ) {
       AuthService.login(res.data.token);
     } else {
+// Temp comment
       setError(res.data.error);
     }
   };

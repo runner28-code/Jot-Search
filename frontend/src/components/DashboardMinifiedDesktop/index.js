@@ -25,7 +25,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
       <h1>Companies</h1>
     </>)
   }
-}
 
 DashboardMinifiedDesktop.propTypes = {
   location: PropTypes.string.isRequired
@@ -45,7 +44,6 @@ function CareerHeader ({ location }) {
           <CareerIcon className='mr-6 fill-royalBlue ' />
           <h2 className='font-spaceGrotesk text-royalBlue font-bold '>Career Details</h2>
         </span>
-// Temp comment
         <Link
           className='text-blue underline text-royalBlue'
           to={ROUTES.careers}

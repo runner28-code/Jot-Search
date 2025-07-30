@@ -118,6 +118,7 @@ export type Job = {
     yearsRequired?: string;
     hidden?: boolean;
 };
+
 export type ClientContact = {
     id: string;
     address_address1?: string;

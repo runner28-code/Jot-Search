@@ -60,6 +60,7 @@ export const saveCompanies = async (companies: any[]) => {
 
         const companyData = {
           addressId: address.id,
+          ...company
         };
 
         Object.keys(companyData).forEach((key) => {
@@ -69,7 +70,6 @@ export const saveCompanies = async (companies: any[]) => {
         });
 
         companyData.companyURL = companyData.companyURL ? companyData.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null;
-
         const newCompany = await db.company.create({
           data: companyData,
         });

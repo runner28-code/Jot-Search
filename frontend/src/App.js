@@ -24,7 +24,6 @@ function App() {
       <NavBar />
       <main className='bg-lightGrey pt-30 vw-1280:pt-44 vw-1280:flex'>
         <SideNav userType={userRole} />
-        <div 
           className='grow min-h-280 pb-18'>
           <Routes>
             <Route

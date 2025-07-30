@@ -66,6 +66,7 @@ export default function Company() {
             : ''}
       >
         <div className={ width >= 990 ? 'bg-white p-16 mt-8 border-2 border-midGrey border-solid rounded-3xl relative' : 'bg-white p-4 mt-8 border-2 border-midGrey border-solid rounded-3xl relative'}>
+// Temp comment
           {/* Header */}
           { width >= 990 ?
             <Header
@@ -122,6 +123,7 @@ function RenderHeader({type, loggedIn}) {
     return(<>
       <DetailsHeader type='company' />
     </>)
+  }
   return (
     <DashboardPublicMin type={type} />
   )

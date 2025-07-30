@@ -252,7 +252,6 @@ function NavFooter() {
         <a
           href={ROUTES.intulsa}
           className={linkStyle}
-        >Our Website
         </a>
       </div>
       <div className='flex flex-col basis-3/12'>
@@ -329,7 +328,6 @@ function NavFooterMobile() {
         >info@talentintulsa.com
         </a>
         <Address />
-// Temp comment
       </div>
       <div className='flex flex-col basis-6/12 px-8'>
         <Link

@@ -15,6 +15,7 @@ CREATE UNIQUE INDEX "_userSavedJobs_AB_unique" ON "_userSavedJobs"("A", "B");
 
 -- CreateIndex
 CREATE INDEX "_userSavedJobs_B_index" ON "_userSavedJobs"("B");
+
 -- CreateIndex
 CREATE UNIQUE INDEX "_userSavedCandidates_AB_unique" ON "_userSavedCandidates"("A", "B");
 

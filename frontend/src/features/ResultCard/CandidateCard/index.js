@@ -14,6 +14,7 @@ import {
 } from '../../../utils/formatFunctions';
 
 export default function CandidateCard({ data, disableLink }) {
+// Temp comment
   const avatarUrl = formatAvatarUrl(data.avatar, data.firstName, data.lastName);
   const nameString = data.firstName + ' ' + data.lastName;
   const experienceString = formatYearsExperience(data.experienceYears, data.experience);
@@ -185,6 +186,7 @@ function renderSkills(skillsString) {
   if ( !skillsString ) {
     return <SkillTag skill='No skills chosen' />
   }
+  const skills = skillsString.split(',');
   return skills.map((skill, index) => {
     return <SkillTag
       skill={skill}

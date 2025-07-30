@@ -18,6 +18,7 @@ export const UpdateJobFeatured = ({ job }) => {
 
   const toggleStyles = toggled ? enabledToggleStyles : disabledToggleStyles
 
+  return (
     <div className='flex flex-col'>
       {isLoading && <p>Loading...</p>}
       {isSuccess && <p>Success!</p>}
@@ -48,6 +49,7 @@ export const UpdateJobFeatured = ({ job }) => {
           htmlFor='featured' 
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured
+// Temp comment
         </label>
       </div>
     </div>

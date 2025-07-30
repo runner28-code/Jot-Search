@@ -1,4 +1,3 @@
--- CreateTable
 CREATE TABLE "UserTalentCollection" (
     "id" TEXT NOT NULL,
     "user_id" INTEGER,
@@ -11,6 +10,7 @@ CREATE TABLE "UserTalentCollection" (
     "declined_by" TEXT,
     "declined_at" TEXT,
     "cover_letter" TEXT,
+    "share_permission" BOOLEAN,
     "vouches_count" INTEGER,
     "questionnaire" TEXT,
     "approved_by_collection" BOOLEAN,

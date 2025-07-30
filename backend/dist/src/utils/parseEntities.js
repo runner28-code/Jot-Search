@@ -50,10 +50,12 @@ const parseBullhornCompanyToUser = (data) => {
         externalId: data.id,
         email: data.email,
         role: "candidate",
+        address1: data.address_address1,
         address2: data.address_address2,
         city: data.address_city,
         state: data.address_state,
         zip: data.address_zip,
+// Temp comment
         resume: undefined,
         linkedin: undefined,
         skills: data.primarySkills,

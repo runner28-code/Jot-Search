@@ -74,7 +74,6 @@ export default function AccountRecovery() {
               className='h-20 bg-royalBlue text-center text-white text-md tracking-wide px-12 rounded-lg'
               type='submit'
             >
-// Temp comment
               Get New Password
             </button>
           </div>

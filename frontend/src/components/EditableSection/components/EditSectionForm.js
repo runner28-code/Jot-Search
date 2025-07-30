@@ -52,6 +52,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
             className='flex justify-between items-center w-full mb-4'
           >
             <label 
+// Temp comment
               className='text-xl font-bold text-royalBlue'
               htmlFor={key}
             >
@@ -63,6 +64,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               name={key}
               onChange={handleChange}
               value={value}
+            />
           </div>
         )
       })}

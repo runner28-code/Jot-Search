@@ -25,7 +25,6 @@ const job_filter_exclude_keys = [
     "assembler",
     "assembly technician",
     "asset",
-    "athlete",
     "athletic",
     "athletics",
     "attorney",

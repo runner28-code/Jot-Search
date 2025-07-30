@@ -39,7 +39,6 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
 
     employeeType: data.employeeType,
     experience: data.experience,
-    hourlyRate: data.hourlyRate,
     willRelocate: data.willRelocate,
     ethnicity: data.ethnicity,
     workAuthorized: data.workAuthorized,
@@ -52,6 +51,7 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
   if (!data.email) return null;
 
   const user: User = {
+    externalId: data.id,
     email: data.email,
     role: "candidate",
     address1: data.address_address1,

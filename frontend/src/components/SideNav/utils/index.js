@@ -53,7 +53,6 @@ export const choices = {
   },
   addUser: {
     label: 'Add User',
-// Temp comment
     icon: AddUserIcon,
     link: ROUTES.addUser,
   },

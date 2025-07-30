@@ -32,7 +32,6 @@ export type Job = {
     application_path?: string;
     compensation_currency?: string;
     compensation_max?: string;
-    compensation_min?: string;
     compensation_period?: string;
     compensation_public?: string;
     description?: string;
@@ -40,6 +39,7 @@ export type Job = {
     employment_types?: string;
     expires_at?: string;
     job_functions?: string;
+    liked?: string;
     locations?: string;
     organization_doman?: string;
     organization_id?: string;

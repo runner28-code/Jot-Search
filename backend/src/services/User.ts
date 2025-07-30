@@ -259,7 +259,6 @@ export const login = async (email: string, password: string) => {
         result: true,
         ...clearPassword(existingUser),
         companyId: existingUser.companyId,
-        user_id: existingUser.id,
       };
     } else {
       console.log("no existing user");
