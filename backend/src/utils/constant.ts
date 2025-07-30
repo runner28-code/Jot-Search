@@ -311,3 +311,6 @@ const job_filter_exclude_keys = [
   "psychologist",
   "psychology",
   "public facilities",
+  "public safety",
+  "public works",
+  "qc",

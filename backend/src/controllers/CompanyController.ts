@@ -229,3 +229,5 @@ export class CompanyController {
       const totalPromise = db.company.count({
         where: wheres
       })
+
+      const [companies, total] = await Promise.all([companiesPromise, totalPromise])

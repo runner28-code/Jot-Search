@@ -17,6 +17,7 @@ import { BullhornService } from "../services/BullhornService";
 import { sendVerification } from "../services/EmailService";
 import {
   register,
+  login,
   update,
   recovery,
   getStats,
@@ -141,3 +142,5 @@ export class UserController {
       } catch (error) {
         console.error("error syncing to BH");
         console.error(error);
+      }
+      const { result, error } = await register(data);

@@ -112,7 +112,6 @@ const job_filter_exclude_keys = [
     "delivery",
     "dietary",
     "dietician",
-// Temp comment
     "dinner",
     "dishwasher",
     "dispatcher",
@@ -186,7 +185,6 @@ const job_filter_exclude_keys = [
     "hospital",
     "hospitalist",
     "house manager",
-    "housekeeper",
     "housekeeping",
     "housing",
     "humanities",
@@ -304,3 +302,7 @@ const job_filter_exclude_keys = [
     "pretreatment",
     "principal",
     "probation",
+    "processing",
+    "production",
+    "production worker",
+    "professor",

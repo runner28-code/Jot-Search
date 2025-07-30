@@ -23,12 +23,12 @@ exports.JobFilter = {
         employmentType: "employmentType",
         onSite: "onSite",
         yearsRequired: "yearsRequired",
-        willRelocate: "willRelocate",
         city: "city",
         state: "state",
         isDeleted: "isDeleted",
         companyId: "companyId",
     },
+};
 exports.CompanyFilter = {
     bullhorn: {
         name: "name",

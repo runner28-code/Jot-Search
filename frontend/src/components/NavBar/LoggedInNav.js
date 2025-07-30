@@ -85,6 +85,7 @@ const DropdownMenu = () => {
   if ( !profile ) {
     navigate(ROUTES.login);
   }
+// Temp comment
 
   const firstname = currentUser?.firstname || '';
 
@@ -97,6 +98,7 @@ const DropdownMenu = () => {
   }, [closeDropdown]);
 
   const handleClick = () => {
+    setIsOpen(isOpen => !isOpen);
     if ( firstRender ) {
       setFirstRender(false);
     }

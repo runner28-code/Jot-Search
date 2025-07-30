@@ -18,7 +18,6 @@ import db from "../utils/db";
 
 import { JobFilter, USER_FILTER } from "../utils/FieldMatch";
 import { getSavedJobs, saveJob } from "../utils/MainCrud";
-import { clearPassword } from "../utils/password";
 import { COORDINATOR } from "../utils/constant";
 import { sendEmail, sendJobsToCandidates } from "../services/EmailService";
 import { getJobsList } from "../services/Job";
@@ -260,3 +259,6 @@ export class CandidateController {
 
         totalPromise = db.user.count({ where })
       } else {
+        candidatesPromise = db.candidate.findMany({
+          take: count || 100,
+          skip: skip < 0 ? 0 : skip,

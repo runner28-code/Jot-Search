@@ -18,7 +18,6 @@ export default function AddCompanyUser() {
 
   function handleCompanyClick(company) {
     setSelectedCompany(company);
-    setSearch(company.name);
   }
 
   const paragraphStyles = 'opacity-70 mb-8';
@@ -41,6 +40,7 @@ export default function AddCompanyUser() {
         <div className='flex mt-8'>
           <ExternalLink
             text='Go to Getro'
+            href='https://www.getro.com/'
             addClass='mr-8'
           />
           <ExternalLink

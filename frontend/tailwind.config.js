@@ -84,7 +84,6 @@ module.exports = {
         'tulsa-3-vert': 'url(\'./assets/images/tulsa-3-vert.webp\')',
         'explore-tulsa': 'url(\'./assets/images/home-hero.jpg\')',
         'join-hero': 'url(\'./assets/images/join-hero.jpg\')',
-// Temp comment
         'tulsa-hero': 'url(\'./assets/images/lifeintulsa.jpg\')',
         'signup-page-hero': 'url(\'./assets/images/tulsanetwork.jpg\')',
         'login-page-hero': 'url(\'./assets/images/networklogin.jpg\')',
@@ -166,3 +165,5 @@ module.exports = {
         '240': '60rem',
         '250': '62.5rem',
         '280': '70rem',
+        '300': '75rem',
+        '315': '78.75rem',

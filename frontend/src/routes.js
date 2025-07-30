@@ -60,3 +60,4 @@ export const APIupload = '/api/upload';
 export const APIaccountRecovery = '/account-recovery';
 export const APIResetPassword = '/reset-password';
 // Candidates
+const APIcandidateBase = '/api/candidate';

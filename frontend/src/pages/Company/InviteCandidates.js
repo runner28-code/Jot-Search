@@ -29,6 +29,7 @@ export default function InviteCandidates({ company }) {
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
+// Temp comment
   }
 
   const SelectedValues = () => {
@@ -43,6 +44,7 @@ export default function InviteCandidates({ company }) {
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
       ))}
+    </div>)
   }
 
   const valueRenderer = () => {

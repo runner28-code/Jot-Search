@@ -74,6 +74,7 @@ AccessibleDropdown.defaultProps = {
 
 AccessibleDropdown.propTypes = {
   type: PropTypes.string,
+  name: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
   required: PropTypes.bool,
@@ -133,7 +134,6 @@ function buttonText(name, placeholder, currentChosen) {
 function renderLabel(name, label, required) {
   if ( !label ) {
     return null;
-  }
 
   if ( required ) {
     label += ' *';

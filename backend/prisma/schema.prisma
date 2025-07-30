@@ -244,7 +244,6 @@ model Company {
   status   String?
 
   logo String?
-
   taxRate       Float?
   tickerSymbol  String?
   trackTitle    String?
@@ -474,3 +473,7 @@ model GetroJobInfo {
   organization_logo_url String?
   organization_name     String?
   organization_slug     String?
+  passes_filter         Boolean?
+  posted_at             DateTime?
+  slug                  String?
+  source                String?

@@ -46,3 +46,4 @@ export const CompanyFilter: TypedDictionary<
     city: "locations",
   },
   joined: {
+    name: "name",

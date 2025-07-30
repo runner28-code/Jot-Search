@@ -32,6 +32,7 @@ export const jobFilterObject = {
     'Active',
     'Hired',
     'Advertising Only',
+// Temp comment
     'Waiting for inTake',
     'On-Deck',
   ]
@@ -42,6 +43,7 @@ export const ACTIVE_STATUSES = [
   'Open',
   'Passive'
 ]
+
 // Create default filter state based on filterObject
 const convertedJobFilters = {};
 Object.keys(jobFilterObject).forEach(key => {

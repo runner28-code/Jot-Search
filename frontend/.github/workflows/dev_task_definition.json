@@ -1,7 +1,6 @@
 {
     "family": "dev-site-frontend-task",
     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole",
-    "networkMode": "awsvpc",
     "containerDefinitions": [
         {
             "name": "intulsa-frontend-container-dev",
@@ -19,3 +18,4 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
+                   "awslogs-group" : "/ecs/dev-site-frontend-task",

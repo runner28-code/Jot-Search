@@ -1,7 +1,6 @@
 /*
   Warnings:
 
-  - You are about to drop the `User` table. If the table is not empty, all the data it contains will be lost.
 
 */
 -- DropForeignKey
@@ -65,3 +64,4 @@ CREATE TABLE "Company" (
     "customDate3" TIMESTAMP(3),
     "customFloat1" DOUBLE PRECISION,
     "customFloat2" DOUBLE PRECISION,
+    "customFloat3" DOUBLE PRECISION,

@@ -185,7 +185,6 @@ export class JobController {
 
       return {
         jobs: extendedJobs,
-        total,
         message: null,
       };
     } catch (error) {
@@ -273,3 +272,6 @@ export class JobController {
       _fields,
       count,
       condition
+    )) as Job[];
+  }
+

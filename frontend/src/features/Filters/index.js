@@ -61,6 +61,7 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
     if (!filterObject[key]) {
       return null;
     }
+// Temp comment
     const filterType = key;
     const choices = value;
     const chosen = filterObject ? filterObject[filterType] : null;

@@ -12,6 +12,5 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "compensation_public",
     "description",
     "discarded",
-    "employment_types",
     "expires_at",
     "job_functions",

@@ -154,6 +154,7 @@ export default function Footer() {
               href='https://talent.intulsa.com/'
               target='_blank'
               rel='noopener noreferrer'
+// Temp comment
             >
               <img
                 src={intulsaTalentLogo}

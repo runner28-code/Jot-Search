@@ -370,7 +370,6 @@ export const getCompanyDashboardStats = async (days: number) => {
       },
       introductionsRequests: {
         count: 0,
-        compare: 0
       },
       companyFavorites: {
         count: companyFavoritesCurrentPeriod,
@@ -397,3 +396,7 @@ export const getCompanyDashboardStats = async (days: number) => {
       error: error,
     };
   }
+}
+
+export const getCoordinatorDashboardStats = async (days: number) => {
+  const previousPeriodCommonQuery = {

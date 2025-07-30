@@ -53,10 +53,10 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
       <input
         type='checkbox'
         name='useExistingResume'
+// Temp comment
         className='h-8 w-8 ml-2'
         checked={useExistingResume}
         onChange={handleChange}
-// Temp comment
       />
       <p className='text-md ml-2'>Use existing resume</p>
     </label>

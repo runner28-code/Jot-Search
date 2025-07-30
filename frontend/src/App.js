@@ -41,7 +41,6 @@ function App() {
               element={<Careers />} />
             <Route
               path={ROUTES.companies}
-// Temp comment
               element={<Companies />} />
             <Route
               path={`${ROUTES.careers}/:id`}
@@ -52,7 +51,6 @@ function App() {
             <Route
               path={`${ROUTES.companies}/:id`}
               element={<Company />} />
-            <Route
               path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />
             <Route

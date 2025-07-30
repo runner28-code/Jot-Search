@@ -29,3 +29,4 @@ exports.IUSER = {
     status: "",
     username: "",
     logo: "",
+    companyId: "",

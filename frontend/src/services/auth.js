@@ -60,6 +60,7 @@ class AuthService {
   }
 
   clearStorage() {
+    // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
     localStorage.removeItem('savedJobs');
     localStorage.removeItem('savedCompanies');
@@ -128,7 +129,6 @@ class AuthService {
     } else {
       savedCandidates.splice(savedCandidates.indexOf(candidateID), 1);
     }
-    localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
   }
 
   getSavedCandidateIDs() {

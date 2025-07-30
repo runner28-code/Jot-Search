@@ -5,6 +5,7 @@ import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
 import AddCandidate from './AddCandidate';
 import AddCompanyUser from './AddCompanyUser';
+// Temp comment
 import AddCoordinator from './AddCoordinator';
 import User from '../../assets/icons/add-new-user.svg';
 

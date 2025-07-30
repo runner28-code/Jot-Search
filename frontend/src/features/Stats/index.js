@@ -6,7 +6,6 @@ import { getCompanyQuickStats, getCoordinatorQuickStats } from '../../services/A
 
 const statFilterChoices = [
   'Today',
-// Temp comment
   'Last 7 Days',
   'Last 14 Days',
   'Last 30 Days',
@@ -21,6 +20,7 @@ export default function Stats({ userType }) {
     setTimeframe(choice);
   }
 
+// Temp comment
   function getDuration(timeFrame) {
     switch (timeFrame) {
       case 'Today':

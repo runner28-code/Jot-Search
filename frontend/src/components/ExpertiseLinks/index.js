@@ -5,6 +5,7 @@ import marketingIcon from '../../assets/images/Symbol_marketing.svg';
 import operationsIcon from '../../assets/images/Symbol_operations.svg';
 import financeIcon from '../../assets/images/Symbol_finance.svg';
 import * as ROUTES from '../../routes';
+// Temp comment
 
 export default function ExpertiseLinks() {
   const linkStyles = 'flex flex-col items-center mx-15';
@@ -27,6 +28,7 @@ export default function ExpertiseLinks() {
             src={softwareEngineeringIcon}
             alt='Software Engineering Icon'
             className={iconStyles}
+          />
           <span className={textStyles}>Software &</span>
           <span className={textStyles}>Engineering</span>
         </Link>

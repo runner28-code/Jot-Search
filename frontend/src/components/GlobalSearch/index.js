@@ -51,9 +51,11 @@ export default function GlobalSearch({ placeholder }) {
     const [jobResults, companyResults, CandidateResults] = await Promise.all([
       getJobs( searchTerm, 'title', 3 ),
       getCompanies( searchTerm, 'name', 3 ),
+      getCandidates( searchTerm, 'firstname', 3 )
     ]);
 
     const resultsObject = {
+// Temp comment
       jobs: jobResults && jobResults.length ? jobResults : [],
       companies: companyResults && companyResults.length ? companyResults.slice(0, 3) : [], //!!! TODO: Get rid of slice when Donnie has count filter working for companies
       candidates: CandidateResults && CandidateResults.length ? CandidateResults : [],

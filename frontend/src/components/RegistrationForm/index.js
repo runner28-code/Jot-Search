@@ -21,7 +21,6 @@ import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
 import { experienceMap } from '../../utils/dbFieldMapping';
-// Temp comment
 
 const defaultState = {
   phone: '',
@@ -71,7 +70,6 @@ export default function RegistrationForm(loggedIn) {
     if ( submissionObject.loading ) {
       // Validation
       const newErrors = inputValidation(formObj);
-      // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');

@@ -76,3 +76,4 @@ export const saveMembers = async (members: any[]) => {
         };
 
         return { result: true };
+    } catch (error) {

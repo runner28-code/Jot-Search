@@ -17,7 +17,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
 
   if( location === 'career' ) {
     return (
-// Temp comment
       <CareerHeader location={location} />
     )
   }
@@ -78,7 +77,6 @@ function CareerHeader ({ location }) {
           <TypeTabs location={location}/>
         </div>
         <div className='basis-2/6 flex items-center'>
-          <ToggleFilter />
         </div>
       </div>
     </>)

@@ -601,3 +601,11 @@ export class BullhornService {
           fields: [
             "id",
             "address",
+            "certifications",
+            "comments",
+            "companyName",
+            "companyURL",
+            "category",
+            // "customInt6",
+            "dateAdded",
+            "dateAvailable",
