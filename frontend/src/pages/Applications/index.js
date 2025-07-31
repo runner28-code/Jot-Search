@@ -69,7 +69,6 @@ export default function Applications() {
           Remove Selections
         </button>
         <ResultContainer
-// Temp comment
           containerClass={ width >= 990 ? 'grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}
           results={appliedJobsObject.filteredJobs}
           loading={appliedJobsObject.loading}

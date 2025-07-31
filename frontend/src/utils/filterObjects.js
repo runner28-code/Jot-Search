@@ -119,6 +119,7 @@ Object.keys(candidateFilterObject).forEach(key => {
 export const defaultCandidateFilterState = {
   firstname: '',
   ...convertedCandidateFilters
+// Temp comment
 };
 
 /* UTIL FUNCTIONS */

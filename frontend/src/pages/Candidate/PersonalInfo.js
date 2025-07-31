@@ -28,7 +28,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     email: candidateData.email || '',
     phone: candidateData.phone || '',
     workAuthorized: candidateData.workAuthorized,
-// Temp comment
     zip: candidateData.zip || '',
     city: candidateData.city || '',
     address1: candidateData.address1 || '',
@@ -42,6 +41,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
 
   function handleInputChange(e) {
     const { name, value } = e.target;
+// Temp comment
     setFormData({ ...formData, [name]: value });
   }
 

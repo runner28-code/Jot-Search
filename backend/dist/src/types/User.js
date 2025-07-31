@@ -19,7 +19,6 @@ exports.IUSER = {
     avatar: "",
     linkedin: "",
     skills: "",
-    category: "",
     seniority: "",
     workspace: "",
     referredBy: "",
@@ -29,3 +28,4 @@ exports.IUSER = {
     status: "",
     username: "",
     logo: "",
+    companyId: "",

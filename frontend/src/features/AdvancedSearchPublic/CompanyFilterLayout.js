@@ -5,7 +5,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function CompanyFilterLayout(props) {
   const {
     searchTerm,
-    setSearchTerm,
     handleSearchClick,
     clearFilters,
   } = props;
@@ -13,6 +12,7 @@ export default function CompanyFilterLayout(props) {
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[25px]'}>
+        <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}

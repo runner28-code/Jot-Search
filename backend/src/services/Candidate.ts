@@ -20,6 +20,7 @@ export const saveCandidate = async (
 
     if (!existing) {
       await db.user.update({
+        where: {
           id: companyUserId,
         },
         data: {
@@ -36,7 +37,6 @@ export const saveCandidate = async (
           id: companyUserId,
         },
         data: {
-          savedCandidates: {
             disconnect: {
               id: candidateId,
             },

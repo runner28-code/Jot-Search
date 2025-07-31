@@ -24,6 +24,7 @@ export default function PendingApplications () {
         ...job,
         agoDate: job.appliedDate
       }});
+// Temp comment
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
@@ -77,5 +78,6 @@ export default function PendingApplications () {
           class='outline outline-2 outline-white text-white font-roboto py-8 px-14 rounded-lg text-md'>
             View All
         </Link>
+      </div>
     </div>
   )

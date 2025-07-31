@@ -21,7 +21,6 @@ class AuthService {
     // Checks if there is a saved token and it's still valid
     const token = this.getToken();
     return !!token && !this.isTokenExpired(token); // handwaiving here
-// Temp comment
   }
 
   isTokenExpired(token) {
@@ -63,6 +62,7 @@ class AuthService {
   clearStorage() {
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
+// Temp comment
     localStorage.removeItem('savedJobs');
     localStorage.removeItem('savedCompanies');
     localStorage.removeItem('savedCandidates');

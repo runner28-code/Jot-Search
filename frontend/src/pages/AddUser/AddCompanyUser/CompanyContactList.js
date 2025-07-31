@@ -25,7 +25,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
       {!isLoadingContacts && clientContacts?.length === 0 && (
         <p className='opacity-70 text-sm'>No contacts found for {selectedCompany?.name}</p>
       )}
-      {/* Results */}
       {!isLoadingContacts && clientContacts?.length > 0 && (<>
         <p className='opacity-70 text-sm'>Select the contact(s) you would like to add from {selectedCompany?.name}</p>
         <ul className='border-y border-grey300 mt-2 w-full'>

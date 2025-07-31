@@ -72,7 +72,6 @@ HeaderContent.propTypes = {
     address: PropTypes.string,
     employeeString: PropTypes.string,
     city: PropTypes.string,
-// Temp comment
     state: PropTypes.string,
     numEmployees: PropTypes.number,
   })

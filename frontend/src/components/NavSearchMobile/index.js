@@ -87,6 +87,7 @@ export default function NavSearchMobile({ placeholder }) {
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
     total: totalJobs + totalCompanies + totalCandidates,
     forceHidden
+  }
 
   /* STYLES & RENDER */
   const stylesObject = {

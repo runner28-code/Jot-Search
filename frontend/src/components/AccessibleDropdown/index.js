@@ -133,7 +133,6 @@ function buttonText(name, placeholder, currentChosen) {
 
 function renderLabel(name, label, required) {
   if ( !label ) {
-    return null;
   }
 
   if ( required ) {

@@ -33,7 +33,6 @@ function main() {
         }
     });
 }
-function seedJobs() {
     var _a, _b;
     return __awaiter(this, void 0, void 0, function* () {
         yield db_1.default.job.createMany({

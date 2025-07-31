@@ -6,6 +6,7 @@ import FormInput from '../FormInput';
 import ChoiceTag from '../ChoiceTag';
 // import Dropdown from '../../components/UniversalDropdown';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
+// Temp comment
 import {
   roles as roleChoices,
   skills as skillChoices,
@@ -136,7 +137,6 @@ export default function RegistrationForm(loggedIn) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
-// Temp comment
     setErrors([]);
     setFormObj({
       ...formObj,

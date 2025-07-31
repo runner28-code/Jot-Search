@@ -36,7 +36,6 @@ export default function NavSearch({ placeholder }) {
         ...defaultCandidateFilterState,
         firstname: splitName[0],
         lastname: splitName?.[1]
-// Temp comment
       }
       delete modifiedFilterObject.title;
 
