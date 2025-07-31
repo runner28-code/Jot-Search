@@ -66,7 +66,6 @@ model Lead {
   category              Json?
   clientContacts        String?
   clientCorporation     Json?
-  comments              String?
   companyName           String?
   companyURL            String?
   conversionSource      String?
@@ -479,3 +478,8 @@ model GetroJobInfo {
   slug                  String?
   source                String?
   status                String?
+  title                 String?
+  url                   String?
+  hidden                Boolean   @default(false)
+
+  job Job[] @relation("getroJobInfo")

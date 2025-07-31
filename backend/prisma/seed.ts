@@ -143,3 +143,5 @@ async function seedCompanies() {
       {
         name: "Testing Co",
         annualRevenue: 1000000,
+        logo: "https://picsum.photos/200",
+        bh_description: "a company",

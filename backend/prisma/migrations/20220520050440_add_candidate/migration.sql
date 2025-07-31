@@ -25,7 +25,6 @@ CREATE TABLE "Candidate" (
     "email" TEXT,
     "email2" TEXT,
     "email3" TEXT,
-    "employeeType" TEXT,
     "employeePreference" TEXT,
     "ethnicity" TEXT,
     "experience" TEXT,

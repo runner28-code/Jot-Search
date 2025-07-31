@@ -1,4 +1,5 @@
 -- CreateTable
+CREATE TABLE "Lead" (
     "id" TEXT NOT NULL,
     "address_address1" TEXT,
     "address_address2" TEXT,
@@ -26,7 +27,6 @@
     "email3" TEXT,
     "fax" TEXT,
     "fax2" TEXT,
-    "fax3" TEXT,
     "firstName" TEXT,
     "isAnonymized" BOOLEAN,
     "isDayLightSavingsTime" BOOLEAN,
@@ -41,3 +41,4 @@
     "nameSuffix" TEXT,
     "nickName" TEXT,
     "notes" TEXT,
+    "numEmployees" TEXT,

@@ -1,4 +1,5 @@
 export type User = {
+    firstname: string;
     lastname: string;
     email: string;
     password: string;
@@ -6,3 +7,4 @@ export type User = {
     city: string;
     state: string;
     title?: string;
+    level?: string;

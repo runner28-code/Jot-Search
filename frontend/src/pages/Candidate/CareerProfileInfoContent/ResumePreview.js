@@ -5,6 +5,7 @@ import {
   FiChevronLeft as BackIcon,
   FiChevronRight as NextIcon,
 } from 'react-icons/fi';
+import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const ResumePreview = ({ resumeUrl }) => {
   const [page, setPage] = useState(1);
@@ -26,6 +27,7 @@ const ResumePreview = ({ resumeUrl }) => {
       {!pdfDocument && <LoadingSpinner />}
       <canvas
         ref={canvasRef}
+// Temp comment
         className='rounded-lg'
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (

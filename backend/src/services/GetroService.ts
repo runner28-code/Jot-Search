@@ -185,3 +185,5 @@ export class GetroService {
     async getMemberDetail(id: string): Promise<any> {
         console.log(`\n***** getMemberDetail (${id}) *****`);
         const query = queryString.stringify({
+            collection_id: this.networkId,
+        });

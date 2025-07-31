@@ -14,6 +14,7 @@ export default function InviteCandidates({ company }) {
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
+
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
 
   const candidateOptions = candidates?.map(candidate => {
@@ -22,7 +23,6 @@ export default function InviteCandidates({ company }) {
       value: candidate.id,
       candidate
     }
-  }) || [];
   
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {

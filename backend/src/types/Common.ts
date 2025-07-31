@@ -89,3 +89,4 @@ export type ApplyResponse = {
   result: boolean;
   message?: any;
 };
+

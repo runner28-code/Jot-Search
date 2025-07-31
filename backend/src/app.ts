@@ -19,7 +19,6 @@ let s3: any;
 try {
   s3 = new AWS.S3({
   accessKeyId: process.env.S3_ACCESS_KEY,
-  secretAccessKey: process.env.S3_SECRET_KEY,
   endpoint: process.env.S3_ENDPOINT,
   s3ForcePathStyle: true,
   signatureVersion: "v4",
@@ -64,6 +63,7 @@ const uploadToS3 = async(req: any, res: any) => {
     } catch (e) {
       console.error("error", e);
       res.status(500).send({
+        result: false,
         error: e
       })
     }
@@ -88,3 +88,4 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
     " " +
     current_datetime.getHours() +
     ":" +
+    current_datetime.getMinutes() +

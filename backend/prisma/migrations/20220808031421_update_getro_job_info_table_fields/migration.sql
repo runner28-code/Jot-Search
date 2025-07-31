@@ -8,4 +8,3 @@
 
 */
 -- AlterTable
-ALTER TABLE "GetroJobInfo" DROP COLUMN "applcation_method",

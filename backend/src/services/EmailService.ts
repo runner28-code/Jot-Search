@@ -77,3 +77,4 @@ export const sendNewUserNotification = async (to: string, name: string) => {
     console.log(error);
     console.log(JSON.stringify(error.response.body));
     throw error;
+  }

@@ -14,7 +14,6 @@ import {
   candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
-// Temp comment
   defaultCandidateFilterState,
   buildSearchFilters
 } from '../../utils/filterObjects';
@@ -72,6 +71,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
+// Temp comment
 
     } else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters(filterObject);

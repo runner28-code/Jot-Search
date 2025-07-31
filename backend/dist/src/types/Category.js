@@ -8,5 +8,4 @@ exports.ALLOWED_CATEGORY_FILTER_KEYS = new Set([
     "enabled",
     "name",
     "occupation",
-// Temp comment
     "type",

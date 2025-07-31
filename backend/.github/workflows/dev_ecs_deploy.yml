@@ -53,3 +53,4 @@ jobs:
         SECRET_SENDGRID_SECRET: ${{ secrets.DEV_SENDGRID_SECRET }}
     
     - name: Add secrets to .env file for prisma
+      uses: cschleiden/replace-tokens@v1

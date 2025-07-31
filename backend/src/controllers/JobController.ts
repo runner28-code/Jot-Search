@@ -276,3 +276,6 @@ export class JobController {
     )) as Job[];
   }
 
+  async getJobsByFilterFromBullhorn(
+    filters: AdvancedFilterOption[] | undefined,
+    fields: string[] | null,

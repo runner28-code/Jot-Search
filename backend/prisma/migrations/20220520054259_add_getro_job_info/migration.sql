@@ -21,6 +21,7 @@ CREATE TABLE "GetroJobInfo" (
     "compensation_public" TEXT,
     "description" TEXT,
     "discarded" TEXT,
+    "employment_types" TEXT,
     "expires_at" TIMESTAMP(3),
     "job_functions" TEXT,
     "liked" TEXT,

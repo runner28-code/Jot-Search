@@ -63,6 +63,7 @@ export class CandidateController {
           where: {
             id,
           },
+        });
       }
 
       return {
@@ -263,3 +264,6 @@ export class CandidateController {
           take: count || 100,
           skip: skip < 0 ? 0 : skip,
           include: {
+            category: true,
+          },
+          where,

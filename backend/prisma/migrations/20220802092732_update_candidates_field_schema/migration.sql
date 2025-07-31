@@ -21,7 +21,6 @@
 
 */
 -- AlterTable
-ALTER TABLE "Candidate" DROP COLUMN "dayRate",
 ADD COLUMN     "dayRate" INTEGER,
 DROP COLUMN "dayRateLow",
 ADD COLUMN     "dayRateLow" INTEGER,
@@ -35,3 +34,4 @@ DROP COLUMN "numCategories",
 ADD COLUMN     "numCategories" INTEGER,
 DROP COLUMN "numOwners",
 ADD COLUMN     "numOwners" INTEGER,
+DROP COLUMN "salary",

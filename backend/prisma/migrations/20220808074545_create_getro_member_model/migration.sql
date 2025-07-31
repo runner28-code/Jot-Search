@@ -1,3 +1,4 @@
+-- CreateTable
 CREATE TABLE "UserTalentCollection" (
     "id" TEXT NOT NULL,
     "user_id" INTEGER,
@@ -44,3 +45,4 @@ CREATE TABLE "GetroMember" (
     "twitter_url" TEXT,
     "verified" BOOLEAN,
     "website_url" TEXT,
+    "share_permission" BOOLEAN,

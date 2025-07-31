@@ -22,3 +22,4 @@ export type Job = {
     zip?: string;
     country_id?: string;
     employmentType?: string;
+    title?: string;

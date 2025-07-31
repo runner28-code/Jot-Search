@@ -65,3 +65,4 @@ export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "discarded",
   "employment_types",
   "expires_at",
+  "job_functions",

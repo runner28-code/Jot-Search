@@ -259,6 +259,7 @@ export const login = async (email: string, password: string) => {
         result: true,
         ...clearPassword(existingUser),
         companyId: existingUser.companyId,
+        user_id: existingUser.id,
       };
     } else {
       console.log("no existing user");
@@ -401,3 +402,7 @@ export const getCompanyDashboardStats = async (days: number) => {
 export const getCoordinatorDashboardStats = async (days: number) => {
   const previousPeriodCommonQuery = {
     createdAt: {
+      lt: moment().subtract(days, 'days').endOf('day').toDate()
+    }
+  }
+  const totalOpenJobs = await db.job.count({

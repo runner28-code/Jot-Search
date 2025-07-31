@@ -144,3 +144,5 @@ export class UserController {
         console.error(error);
       }
       const { result, error } = await register(data);
+      return {
+        result,

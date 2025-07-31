@@ -211,3 +211,5 @@ export type Candidate = {
     firstName?: string; // !
     gender?: string;
     hourlyRate?: string;
+    hourlyRateLow?: string;
+    i9OnFile?: string;

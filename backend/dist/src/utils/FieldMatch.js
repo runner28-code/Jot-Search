@@ -17,6 +17,7 @@ exports.JobFilter = {
     },
     main: {
         id: "id",
+        status: "status",
         skillList: "skillList",
         hidden: "hidden",
         employmentType: "employmentType",
@@ -42,3 +43,4 @@ exports.CompanyFilter = {
     joined: {
         name: "name",
         bh_id: "bh_id",
+        id: "id",

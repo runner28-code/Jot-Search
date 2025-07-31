@@ -73,6 +73,7 @@ export const choices = {
   },
 }
 
+// Temp comment
 // Map choices to appropriate icons
 export const candidateChoices = [
   choices.dashboard,

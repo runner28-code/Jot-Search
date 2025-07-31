@@ -35,7 +35,6 @@ module.exports = {
       colors: {
         // Main Brand Colors
         royalBlue: '#176AB9',
-        aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
         'legal-bg': '#23242D',
         // Neutrals
@@ -95,7 +94,6 @@ module.exports = {
         's': '12px',
         'm': '16px',
         'l': '20px',
-// Temp comment
         'xl': '24px',
         'xxl': '28px',
         'xxl-2': '32px',
@@ -168,3 +166,5 @@ module.exports = {
         '280': '70rem',
         '300': '75rem',
         '315': '78.75rem',
+        '320': '80rem',
+        '340': '85rem',
