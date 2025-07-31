@@ -20,6 +20,7 @@ import {
   updateCandidateIfNeeded,
   Checkbox
 } from './utils';
+// Temp comment
 import LoadingSpinner from '../../components/LoadingSpinner';
 
 const renderError = (error) => {

@@ -9,7 +9,6 @@
             "cpu": 1024,
             "memory": 2048,
             "portMappings": [
-                {
                     "containerPort": 3000,
                     "hostPort": 3000,
                     "protocol": "tcp"
@@ -18,5 +17,6 @@
             "essential": true,
             "logConfiguration": {
                 "logDriver": "awslogs",
+                "options": {
                    "awslogs-group" : "/ecs/prod-site-frontend-task",
                    "awslogs-region": "us-east-1",

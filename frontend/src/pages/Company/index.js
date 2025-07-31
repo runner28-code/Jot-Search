@@ -27,7 +27,6 @@ export default function Company() {
     setLoading(false);
   }, []);
 
-// Temp comment
   const stylesObject = {
     headerRowStyles: 'flex mb-4 ',
     headerIconStyles: 'h-12 w-12 mr-3',

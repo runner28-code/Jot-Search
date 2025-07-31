@@ -92,7 +92,6 @@ export default function Dropdown(props) {
     } else if ( type === SINGLE_SELECT && currentChosen !== '' ) {
       return currentChosen + suffix(name);
     }
-
     return placeholder;
   }
 

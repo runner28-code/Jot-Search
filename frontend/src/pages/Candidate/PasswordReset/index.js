@@ -14,6 +14,7 @@ export default function PasswordReset({role, candidateData}) {
     setCondition(condition);
     setResponse(response);
   }
+// Temp comment
 
   function renderResponse () {
     const successStyle = 'mb-4 text-success';
@@ -35,7 +36,6 @@ export default function PasswordReset({role, candidateData}) {
         )}
         { role === 'coordinator' && (
           <ResetForm
-// Temp comment
             candidateData={candidateData}
             setType={setType}
           />

@@ -119,13 +119,13 @@ Object.keys(candidateFilterObject).forEach(key => {
 export const defaultCandidateFilterState = {
   firstname: '',
   ...convertedCandidateFilters
-// Temp comment
 };
 
 /* UTIL FUNCTIONS */
 export function buildSearchFilters(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = [];
+// Temp comment
   Object.keys(filterObject).forEach(key => {
     if ( !anyValues.includes(filterObject[key]) ) {
       let filterKey = key.toLowerCase();

@@ -85,6 +85,7 @@ export default function Candidate() {
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 
   if (loading) { return <LoadingSpinner /> }
+  return (
     <div className='flex flex-col space-y-16'>
       {/* "My Profile"/"Candidate Profile" Header */}
       <PageHeader

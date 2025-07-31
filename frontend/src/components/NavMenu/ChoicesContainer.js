@@ -1,4 +1,3 @@
-// Temp comment
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
@@ -10,6 +9,7 @@ import {
 import Choice from './Choice';
 import LoggedOutButtons from './LoggedOutButtons';
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 import * as ROUTES from '../../routes';
 
 const baseLinkStyles = 'flex items-center w-full h-20 pl-6 bg-white hover:bg-royalBlue text-royalBlue hover:text-white cursor-pointer ';

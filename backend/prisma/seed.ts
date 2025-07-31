@@ -64,7 +64,6 @@ async function seedJobs() {
 async function seedCandidates() {
   await db.candidate.createMany({
     data: [
-      {
         address: "123 Main St",
         address_address1: "123 Main St",
         occupation: "Programmer",

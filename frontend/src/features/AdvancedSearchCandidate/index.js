@@ -31,6 +31,7 @@ const availableTabChoicesByUserType = {
   candidate: ['jobs', 'companies'],
   guest: ['jobs', 'companies'],
 }
+// Temp comment
 
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
@@ -106,6 +107,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     }
     setFilterObject(newState);
   }, [state]);
+
   function handleFilterChange(filterType, choice) {
     setFilterObject({
       ...filterObject,

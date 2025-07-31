@@ -1,4 +1,5 @@
 "use strict";
+// Temp comment
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.USER_FILTER = exports.CompanyFilter = exports.JobFilter = void 0;
 exports.JobFilter = {
@@ -13,7 +14,6 @@ exports.JobFilter = {
         willRelocate: "willRelocate",
         status: "status",
         hidden: "hidden",
-// Temp comment
         companyId: "clientCorporationID",
     },
     main: {

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import PageHeader from '../../components/PageHeader';
 import ResultsHeader from '../../components/ResultsHeader';
-// Temp comment
 import FilterSearch from '../../components/FilterSearch';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import ResultContainer from '../../features/ResultContainer';
@@ -47,7 +46,6 @@ export default function ActiveCareers() {
       />
       <FilterSearch
         searchTerm={searchTerm}
-        setSearchTerm={handleSearchChange}
         placeholder={PLACE_HOLDER}
         additionalClasses='w-180 mt-30'
       />

@@ -8,7 +8,6 @@ export default function JobResults({ jobs }) {
   if (jobs.length === 0) {
     return null;
   }
-
   return (
     <>
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Careers</h6>
@@ -17,7 +16,6 @@ export default function JobResults({ jobs }) {
           <JobResult 
             job={job} 
             key={job.id} />
-// Temp comment
         )
       })}
     </>

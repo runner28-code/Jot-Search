@@ -78,6 +78,7 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;
 }
 
+export function formatPhoneNumber(phoneNumberString) {
   if ( !phoneNumberString ) {
     return 'No Phone Number Provided';
   }
@@ -105,6 +106,7 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
 }
 
 // Candidates might have `experience` property instead which is a legacy property from database we migrated data from
+// Temp comment
 export function formatYearsExperience(experienceYears, experience) {
   if ( experienceYears && experienceYears.length > 1 ) { // Already formatted correctly
     return experienceYears;

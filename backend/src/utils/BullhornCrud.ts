@@ -118,6 +118,7 @@ export const saveBullhornJobs = async (jobs: any[]) => {
           where: {
             externalId: `bl-${job.id}`,
           },
+        });
 
         if (existing) {
           console.log(`Job with ID: ${job.id} exists`);
