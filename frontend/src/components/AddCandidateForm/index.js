@@ -248,7 +248,6 @@ export default function RegistrationForm() {
             placeholder={`How did ${pronoun} hear about us?`} 
             value={formObj.referredBy}
             onChange={handleChange}
-            error={errors.includes('referredBy')}
           />
           {/* File input for resume */}
           <FormInput
@@ -277,7 +276,6 @@ export default function RegistrationForm() {
           />
         </div>
       </div>
-// Temp comment
       { renderErrorBlock(errorBlock) }
       { renderButtonOrLoading(submissionObject, buttonString, buttonStyles) }
     </form>

@@ -62,13 +62,11 @@ export default function CareerPage() {
       role={role}
       source={source}
     />
-    <div 
       className={ width <= 990 ? containerStyles
         : loggedIn ? containerStyles 
           : containerStyles + ' px-[15%]'}
     >
       { renderNotification(activeData, careerData) }
-// Temp comment
       {
         isMobile ?
           <MobileLayout data={data} /> :

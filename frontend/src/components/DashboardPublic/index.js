@@ -28,7 +28,6 @@ export default function DashboardPublic({togglePassState}) {
         <div className='bg-blueSquare bg-amber-400 absolute mx-auto left-[-15px] bottom-0 right-0 w-12 h-12' />
         <div className='bg-blueSquare bg-pink-500 absolute mx-auto left-0 right-[-35px] top-[-35px] w-6 h-6' />
       </div>
-// Temp comment
       <h1 className={ width >= 990 ? 'text-[42px] font-spaceGrotesk' : 'text-[32px] font-spaceGrotesk'}>{location === '/careers' ? careerTitle : companyTitle}</h1>
       <div className='flex items-center  mt-12'>
         <div className='flex items-center'>

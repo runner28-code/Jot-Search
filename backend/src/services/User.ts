@@ -349,6 +349,7 @@ export const getCompanyDashboardStats = async (days: number) => {
     const candidateJobInvitesCurrentPeriod = await db.candidateJobInvites.count({
       where: {
         ...currentPeriodCommonQuery
+      }
     })
 
     const candidateJobInvitesPreviousPeriod = await db.candidateJobInvites.count({

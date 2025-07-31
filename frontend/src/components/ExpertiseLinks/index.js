@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-// Temp comment
 import softwareEngineeringIcon from '../../assets/images/Symbol_softwareengineering.svg';
 import salesAndBizDevIcon from '../../assets/images/Symbol_Salesbizdev.svg';
 import marketingIcon from '../../assets/images/Symbol_marketing.svg';
@@ -78,7 +77,6 @@ export default function ExpertiseLinks() {
           className={linkStyles}
           state={{ Expertise: 'Finance' }}
         >
-          <img
             src={financeIcon}
             alt='Finance Icon'
             className={iconStyles}

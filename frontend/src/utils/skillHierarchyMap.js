@@ -55,7 +55,6 @@ export const roles = {
     'Data Analysis',
     'Systems Engineer',
     'Mobile Engineers',
-// Temp comment
     'Automation Engineer',
     'Product Engineer',
     'Engineering Management',
@@ -107,6 +106,7 @@ export const skills = [
   'Benefits',
   'Big 4',
   'Bilingual',
+// Temp comment
   'Blender',
   'Bootstrap',
   'Brand Awareness',

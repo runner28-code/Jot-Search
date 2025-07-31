@@ -69,7 +69,6 @@ export const saveJob = async (job: string, candidate: string) => {
         },
         data: {
           savedJobs: {
-            connect: {
               id: job,
             },
           },

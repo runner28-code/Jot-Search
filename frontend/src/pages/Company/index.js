@@ -73,6 +73,7 @@ export default function Company() {
               handleCompanyUpdate={setCompanyData}
             />
             : <HeaderMobile
+// Temp comment
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />

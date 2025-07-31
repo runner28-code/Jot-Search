@@ -49,7 +49,6 @@ function renderChosen(currentChosen, handleRemove) {
 export default function ReferralSearch() {
   const [choices, setChoices] = useState(mockJobsData);
   const [filteredChoices, setFilteredChoices] = useState(mockJobsData);
-// Temp comment
   const [currentChosen, setCurrentChosen] = useState([]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -89,6 +88,7 @@ export default function ReferralSearch() {
         onChange={handleAdd}
         choices={filteredChoices}
         dropdownOpen={dropdownOpen}
+// Temp comment
         setDropdownOpen={setDropdownOpen}
         baseStyles='w-full text-xl font-bold border-lightGrey border-solid border-2 rounded-2xl pl-24 placeholder-black '
         inputHeight='h-40 '

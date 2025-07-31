@@ -36,7 +36,6 @@ export const UpdateJobStatus = ({ job }) => {
             const { res } = await saveJob({ status: e.target.value, id: updatedJob.id })
             setUpdatedJob(res);
           }}
-        />
       </div>
     </div>
   )

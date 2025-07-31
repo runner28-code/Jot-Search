@@ -22,5 +22,4 @@ export const useGetCandidates = ({ count, page, fields, filtersArr, enabled = tr
     () => getCandidatesFull(filtersArr, count, page, fields),
     { enabled }
   );
-
   return { candidates: data?.candidates, total: data?.total || 0, error, isLoading };

@@ -35,6 +35,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   )
 }
 
+// Temp comment
 EditableSection.propTypes = {
   entityID: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
@@ -47,7 +48,6 @@ EditableSection.propTypes = {
 
 function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
   if (editMode) {
-// Temp comment
     return <EditSectionForm 
       contentObject={contentObject} 
       handlePropertyChange={handlePropertyChange} />

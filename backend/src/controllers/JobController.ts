@@ -120,7 +120,6 @@ export class JobController {
     try {
       const { filters, fields, page, count, datasource } = body;
 
-      const datasourceToEnum: Dictionary<Datasource> = {
         main: Datasource.main,
         bullhorn: Datasource.bullhorn,
         getro: Datasource.getro,
@@ -155,6 +154,7 @@ export class JobController {
       const totalPromise = db.job.count({
         where,
       });
+
       const [jobs, total] = await Promise.all([jobPromise, totalPromise]);
 
       const companyURLs = jobs.filter(job => job.company?.companyURL)

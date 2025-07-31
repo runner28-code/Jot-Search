@@ -9,7 +9,6 @@ export default function DetailsHeader({ type, source }) {
   let Icon = undefined;
   switch(type) {
     case 'candidate':
-      Icon = CandidatesIcon;
       break;
     case 'company':
       Icon = CompanyIcon;
@@ -21,7 +20,6 @@ export default function DetailsHeader({ type, source }) {
   }
   const titleCasedType = type.charAt(0).toUpperCase() + type.slice(1);
   let headerText
-// Temp comment
   if ( type === 'company') {
     headerText = 'Company Profile';
   }else { 

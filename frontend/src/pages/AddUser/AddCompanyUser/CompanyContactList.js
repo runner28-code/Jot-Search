@@ -17,7 +17,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
     console.log('syncing contacts', selectedContacts);
   }
 
-// Temp comment
   return (
     <div className='flex flex-col items-start pt-8'>
       {/* Loading */}
@@ -32,7 +31,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
         <ul className='border-y border-grey300 mt-2 w-full'>
           {clientContacts.map((contact, index) => (
             <li
-              key={contact.id}
               className={ 'flex items-center px-s py-s ' + (index < clientContacts.length - 1 ? 'border-b border-grey300' : '') }
               onClick={() => handleContactClick(contact)}
             >
