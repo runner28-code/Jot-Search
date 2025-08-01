@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
+import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 import searchWhite from '../../assets/images/search-white.webp';
 import searchGray from '../../assets/images/search-gray.svg';
@@ -39,7 +40,6 @@ export default function NavSearch({ placeholder }) {
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
-      return { filtersArr: searchFilters };
     }
     else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});

@@ -23,6 +23,7 @@ export default function NavBar() {
   if ( width < 1280 ) {
     return <NavBarLayout />
   } else {
+    return <DesktopNavBarLayout />
   }
 }
 
@@ -39,6 +40,7 @@ function NavBarLayout() {
         </Link>
         {/* Nav Menu */}
         <div className='flex items-center font-spaceGrotesk'>
+// Temp comment
           <div className='mr-8'>
             { renderNavSearch() }
           </div>

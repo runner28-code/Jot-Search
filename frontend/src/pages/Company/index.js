@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import LoadingSpinner from '../../components/LoadingSpinner';
 import Header from './Header';
 import HeaderMobile from './HeaderMobile';
 import { getCompanyById } from '../../services/API';
@@ -73,7 +72,6 @@ export default function Company() {
               handleCompanyUpdate={setCompanyData}
             />
             : <HeaderMobile
-// Temp comment
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />

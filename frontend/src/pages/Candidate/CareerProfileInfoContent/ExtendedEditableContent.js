@@ -40,6 +40,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   });
 
   function handleChange(name, value) {
+// Temp comment
     setFormData({
       ...formData,
       [name]: value,

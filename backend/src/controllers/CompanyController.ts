@@ -34,6 +34,7 @@ import {
   CompanyFilter,
   CompanyFilterKey,
   JobFilter,
+} from "../utils/FieldMatch";
 import { COORDINATOR } from "../utils/constant";
 import { sendCandidatesToEmployers } from "../services/EmailService";
 import { getCandidatesList } from "../services/Candidate";
@@ -44,7 +45,6 @@ export class CompanyController {
   @Get("/search")
   async searchJobByID(
     @QueryParam("id") id: string
-  ): Promise<CompanySearchByID> {
     const datasource = getDataSource(id);
     if (datasource === DataSource.BULLHORN) {
       const company = await this.getCompanyByIdFromBullhorn(id);

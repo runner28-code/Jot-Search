@@ -17,7 +17,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   return (
     <button
       className={buttonStyles}
-      type='submit'>
       {buttonString}
     </button>
   )
@@ -33,7 +32,6 @@ export function renderErrorBlock(errorBlock) {
     )
   }
 }
-// Temp comment
 
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {

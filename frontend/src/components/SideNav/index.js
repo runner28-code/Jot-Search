@@ -1,3 +1,4 @@
+import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   candidateChoices,
@@ -16,6 +17,7 @@ export default function SideNav({ userType }) {
     return null;
   }
 
+// Temp comment
   if( userType === 'guest' ) {
     return null;
   }

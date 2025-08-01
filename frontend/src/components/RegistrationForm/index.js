@@ -30,7 +30,6 @@ const defaultState = {
   state: '',
   zip: '',
   willRelocate: false,
-// Temp comment
   roles: [],
   skills: [],
   experience: '',
@@ -153,7 +152,6 @@ export default function RegistrationForm(loggedIn) {
       success: false,
     });
     console.log(formObj);
-  }
 
   function handleChange(name, value) {
     setFormObj({

@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 
 function isTodayOrYesterday(dateObj) {
   let returnObj = {
+// Temp comment
     isToday: false,
     isYesterday: false
+  }
 
   const today = new Date();
   const sameYear = today.getFullYear() === dateObj.getFullYear();

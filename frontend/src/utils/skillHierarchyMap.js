@@ -106,7 +106,6 @@ export const skills = [
   'Benefits',
   'Big 4',
   'Bilingual',
-// Temp comment
   'Blender',
   'Bootstrap',
   'Brand Awareness',

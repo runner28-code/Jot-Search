@@ -6,6 +6,7 @@ import { BsBuilding } from 'react-icons/bs';
 
 const ITEMS_PER_PAGE = 10;
 
+export default function FeaturedCompanies() {
 
   const filtersArr = [
     {
@@ -34,7 +35,6 @@ const ITEMS_PER_PAGE = 10;
               </Link>
             )
         }
-      </div>
       <div className='text-center mt-48'>
         <Link
           to={ROUTES.companies}

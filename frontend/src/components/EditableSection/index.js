@@ -22,7 +22,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
 
   function handlePropertyChange(property, value) {
     setContentObject({ ...contentObject, [property]: value });
-  }
 
   return (
     <section className='relative mb-14'>
@@ -35,7 +34,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   )
 }
 
-// Temp comment
 EditableSection.propTypes = {
   entityID: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,

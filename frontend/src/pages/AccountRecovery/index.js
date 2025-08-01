@@ -65,6 +65,7 @@ export default function AccountRecovery() {
           </div>
           { renderResponse() }
           <FormInput
+// Temp comment
             type='email'
             name='email'
             label='Login Email'

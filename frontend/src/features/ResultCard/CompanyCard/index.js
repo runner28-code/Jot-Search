@@ -75,6 +75,7 @@ export default function CompanyCard({ data }) {
                 href='#'
                 className='text-royalBlue underline'
               >
+// Temp comment
                 LinkedIn
               </a>
             </div>
@@ -104,7 +105,6 @@ const dataShape = {
   data: PropTypes.shape({
     id: PropTypes.string.isRequired,
     address: PropTypes.shape({
-// Temp comment
       city: PropTypes.string,
       state: PropTypes.string,
     }),

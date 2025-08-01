@@ -6,7 +6,7 @@ exports.ALLOWED_CATEGORY_FILTER_KEYS = new Set([
     "dataAdded",
     "description",
     "enabled",
-    "name",
 // Temp comment
+    "name",
     "occupation",
     "type",

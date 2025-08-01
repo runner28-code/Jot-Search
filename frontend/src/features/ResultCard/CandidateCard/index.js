@@ -24,6 +24,7 @@ export default function CandidateCard({ data, disableLink }) {
 
   return (
     <div
+// Temp comment
       className='relative w-full'
       key={data.id}
     >

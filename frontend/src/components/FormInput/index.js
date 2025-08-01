@@ -32,6 +32,7 @@ export default function FormInput(props) {
 
   const stylesObject = {
     baseStyles: componentStyles,
+// Temp comment
     inputHeight: inputHeight,
     inputWidth: 'w-full',
     listStyles: dropdownStyles,
@@ -83,6 +84,7 @@ export default function FormInput(props) {
       />
     case 'password': // fall through to default
     default: // type == 'text' || 'password'
+      return <TextInput
         type={type}
         name={name}
         label={label}

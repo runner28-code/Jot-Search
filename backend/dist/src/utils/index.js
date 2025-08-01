@@ -49,6 +49,7 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
         `;
         const options = {
             query: query,
+            location: 'US',
         };
         const [job] = yield BigQueryService_1.BigQueryService.getClient().createQueryJob(options);
         const [res] = yield job.getQueryResults();

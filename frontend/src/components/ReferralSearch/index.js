@@ -88,7 +88,6 @@ export default function ReferralSearch() {
         onChange={handleAdd}
         choices={filteredChoices}
         dropdownOpen={dropdownOpen}
-// Temp comment
         setDropdownOpen={setDropdownOpen}
         baseStyles='w-full text-xl font-bold border-lightGrey border-solid border-2 rounded-2xl pl-24 placeholder-black '
         inputHeight='h-40 '

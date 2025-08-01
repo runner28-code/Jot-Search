@@ -196,7 +196,6 @@ export default function RegistrationForm() {
             onChange={handleChange}
             choices={skillChoices}
             error={errors.includes('skills')}
-          />
           <div className='flex flex-wrap mt-4 mb-16 w-full'>
             {formObj.skills.length > 0 ? formObj.skills.map(skill => 
               <ChoiceTag
@@ -248,6 +247,7 @@ export default function RegistrationForm() {
             placeholder={`How did ${pronoun} hear about us?`} 
             value={formObj.referredBy}
             onChange={handleChange}
+            error={errors.includes('referredBy')}
           />
           {/* File input for resume */}
           <FormInput

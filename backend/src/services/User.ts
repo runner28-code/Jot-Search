@@ -390,7 +390,6 @@ export const getCompanyDashboardStats = async (days: number) => {
       data,
       message: null,
     };
-  } catch (error) {
     console.log('err: ', error);
     return {
       result: false,

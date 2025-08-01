@@ -33,6 +33,7 @@ export default function TypeaheadDropdown(props) {
     }
   }, [onChange])
 
+  /* Close dropdown on any outside clicks */
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
     if (!dropdownOpen) setInputValue('');
@@ -72,6 +73,7 @@ export default function TypeaheadDropdown(props) {
         className={baseStyles + inputHeight + 'mb-0'}
         onClick={handleListClick}
         onChange={handleInputChange}
+// Temp comment
         onKeyDown={handleKeyDown}
         disabled={disabled}
       />
