@@ -9,7 +9,6 @@ export default function ResetForm({ candidateData, setType }) {
     id: candidateData.id,
     password: '',
     passwordConfirm: '',
-  });
   const [match, setMatch] = useState('');
 
   const handleSubmit = async (event) => {

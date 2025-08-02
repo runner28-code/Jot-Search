@@ -63,6 +63,7 @@ export default function RegistrationForm() {
       // Attempt to upload resume before submitting user data
       const resumeURL = await uploadFile('resumes', formObj.resumeFile);
       formObj.resume = resumeURL;
+      delete formObj.resumeFile;
       
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
@@ -183,6 +184,7 @@ export default function RegistrationForm() {
             placeholder={`What roles are ${pronoun} interested in?`}
             value={formObj.roles}
             onChange={handleChange}
+// Temp comment
             choices={formObj.expertise ? roleChoices[formObj.expertise] : []}
             error={errors.includes('roles')}
           />

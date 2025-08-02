@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
+// Temp comment
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import ChoiceTag from '../ChoiceTag';
 import ChoiceListItem from '../ChoiceListItem';
@@ -49,6 +50,7 @@ export default function TypeaheadDropdown(props) {
   function handleInputChange(event) {
     setInputValue(event.target.value);
   }
+
   function handleListClick() {
     setDropdownOpen(dropdownOpen => !dropdownOpen);
   }

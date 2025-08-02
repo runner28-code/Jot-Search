@@ -53,7 +53,6 @@ export function renderHeader(addType) {
             className='text-sm text-royalBlue leading-loose underline mx-4'
           >
             Log in here.
-// Temp comment
           </Link>
         </div>
         <hr className='mb-15' />

@@ -624,3 +624,5 @@ export class BullhornService {
             "educationDegree",
             "email",
             "email2",
+            "email3",
+            "employeeType",

@@ -12,6 +12,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import filterIcon from '../../assets/images/filter-toggle.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
+
 export default function DashboardMinifiedDesktop ({ location }) {
 
   if( location === 'career' ) {
@@ -52,6 +53,7 @@ function CareerHeader ({ location }) {
     )
   }
   if( userRole === 'company' ) {
+// Temp comment
     return (
       <div className='flex flex-col items-start py-14 px-8 '>
         <span className='flex flex-row text-lg items-center text-dply '>

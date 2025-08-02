@@ -68,7 +68,6 @@ const DesktopNavBarLayout = () => {
           { renderNavSearch() }
         </div>
         {/* Dropdown Menu */}
-        <DropdownMenu />
       </div>
     </nav>
   )

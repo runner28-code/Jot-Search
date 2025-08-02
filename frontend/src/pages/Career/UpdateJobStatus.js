@@ -17,7 +17,6 @@ export const UpdateJobStatus = ({ job }) => {
 
       <div className='flex flex-col'>
         <h4 className={sectionHeaderStyles}>Career Status</h4>
-// Temp comment
         {isLoading && <p>Loading...</p>}
         {isSuccess && <p>Success!</p>}
         <Dropdown 

@@ -134,7 +134,6 @@ export class GetroService {
 
     /**
      * getMemebers
-     */
     async getMembers(testMode = false, per_page = 30): Promise<any> {
         console.log('\n***** getMembers *****');
         let page = 1;
@@ -163,6 +162,7 @@ export class GetroService {
                             const detail = await this.getMemberDetail(company.id);
                             if (detail) {
                                 result.push(detail);
+                            }
                             if (result.length > 30) {
                                 await saveMembers(result);
                                 result = [];
@@ -186,3 +186,4 @@ export class GetroService {
         const query = queryString.stringify({
             collection_id: this.networkId,
         });
+        const url = `${this.api_base_url_v1}/members/${id}?${query}`;

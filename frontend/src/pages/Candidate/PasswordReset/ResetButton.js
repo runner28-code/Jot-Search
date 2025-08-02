@@ -6,6 +6,7 @@ import useWindowDimensions from '../../../hooks/windowDimensions';
 
 export default function ResetButton({ candidateData, setType }) {
   const { width } = useWindowDimensions();
+// Temp comment
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email } = candidateData;
@@ -28,6 +29,7 @@ export default function ResetButton({ candidateData, setType }) {
       Request Password Reset
       </button>
     )
+  }
   return (
     <button
       className='h-20 w-150 bg-royalBlue text-center text-white text-md px-12 rounded-lg'

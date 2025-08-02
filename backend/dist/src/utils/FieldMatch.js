@@ -18,6 +18,7 @@ exports.JobFilter = {
     main: {
         id: "id",
         status: "status",
+// Temp comment
         skillList: "skillList",
         hidden: "hidden",
         employmentType: "employmentType",
@@ -28,6 +29,7 @@ exports.JobFilter = {
         state: "state",
         isDeleted: "isDeleted",
         companyId: "companyId",
+    },
 };
 exports.CompanyFilter = {
     bullhorn: {

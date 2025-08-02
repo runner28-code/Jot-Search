@@ -138,6 +138,7 @@ const job_filter_exclude_keys = [
     "engineering tec",
     "english",
     "environment",
+    "environmental",
     "equipment",
     "esl",
     "esthetician",
@@ -204,6 +205,7 @@ const job_filter_exclude_keys = [
     "jailer",
     "janitor",
     "janitorial",
+// Temp comment
     "job coach",
     "jurisdiction",
     "justice",

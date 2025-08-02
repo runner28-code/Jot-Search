@@ -9,7 +9,6 @@ export default function Filters(props) {
     filterObject,
     searchLabel,
     searchTerm,
-    setSearchTerm,
     handleSearchClick,
     marginBottom
   } = props;
@@ -57,6 +56,7 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
     return null;
   }
 
+  return Object.entries(defaultFilterObject).map(([key, value]) => {
     if (!filterObject[key]) {
       return null;
     }

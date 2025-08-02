@@ -8,7 +8,6 @@ export function formatCandidateData(candidateData) {
   formattedData.sourceTable = candidateData.id.startsWith('bl-') ? 'Candidate' : 'User'; // Some features are only available to candidates who have been added to the platform (Users)
   if (formattedData.sourceTable === 'Candidate') {
     formattedData.address1 = candidateData.address_address1 || '';
-    formattedData.address2 = candidateData.address_address2 || '';
     formattedData.city = candidateData.address_city || '';
     formattedData.state = candidateData.address_state || '';
     formattedData.zip = candidateData.address_zip || '';
@@ -122,6 +121,7 @@ export function formatYearsExperience(experienceYears, experience) {
   }
 }
 
+export function buildCandidateAddress(candidateData, full = false) {
   const { address_address1, address_address2, address_city, address_state, address_zip } = candidateData;
 
   let addressArr = [];

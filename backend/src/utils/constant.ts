@@ -318,3 +318,4 @@ const job_filter_exclude_keys = [
   "quality coordinator",
   "quality manager",
   "ra",
+  "radio",

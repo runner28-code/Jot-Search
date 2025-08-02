@@ -16,7 +16,6 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "willRelocate",
     "yearsRequired",
     "status",
-// Temp comment
     "skillList",
     "locations",
     "companyId",

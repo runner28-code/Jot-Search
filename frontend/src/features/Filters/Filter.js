@@ -9,6 +9,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function Filter({ filterType, choices, chosen, handleFilterChange }) {
+// Temp comment
   const { width } = useWindowDimensions();
   const formattedFilterType = filterType === 'On-Site/Remote' ? filterType : startCase(filterType);
   const initialValue = chosen && chosen !== 'Any' ? chosen : formattedFilterType;

@@ -152,7 +152,6 @@ function renderAboutCompanySection(careerData, companyName) {
     {/* About Company */}
     <h4 className={sectionHeaderStyles}>{headerString}</h4>
     <p
-      className='font-spaceGrotesk text-textBlack text-md mb-5'
       dangerouslySetInnerHTML={{ __html: careerData.company?.description || 'No Company Description Available' }}
     />
   </>)

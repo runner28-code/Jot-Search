@@ -36,7 +36,6 @@ export function renderErrorBlock(errorBlock) {
 
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
-// Temp comment
     return (
       <div className='flex flex-col justify-center'>
         <h4 className='text-h4 text-center vw-768:text-h4 text-darkGray font-spaceGrotesk font-semibold mb-10'>
@@ -44,6 +43,7 @@ export function renderHeader(addType) {
         </h4>
         <p className='text-md text-center text-darkGray leading-loose'>
           {'Sign up and we\'ll keep you updated on new opportunities and put your profile in front of the people responsible for hiring at our companies.'}
+// Temp comment
         </p>
         <div className='mt-10 mb-20 flex justify-center'>
           <span className='text-ml text-darkGray leading-loose mx-4'>
