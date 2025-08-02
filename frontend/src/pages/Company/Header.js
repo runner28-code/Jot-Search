@@ -27,7 +27,6 @@ function HeaderContent({ companyData }) {
   const headerTitleDesktop = 'text-h4 font-spaceGrotesk font-semibold basis-2/3 flex items-center'
   return (
     <>
-// Temp comment
       { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-6'>
         <div className='flex flex-wrap items-center mb-4'>
@@ -175,6 +174,7 @@ function renderDesktopLogo(logoUrl, name) {
 }
 
 function FillerIcon () {
+// Temp comment
   const { width } = useWindowDimensions();
 
   if( width >= 1280 ) {

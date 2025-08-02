@@ -134,6 +134,7 @@ export class GetroService {
 
     /**
      * getMemebers
+     */
     async getMembers(testMode = false, per_page = 30): Promise<any> {
         console.log('\n***** getMembers *****');
         let page = 1;

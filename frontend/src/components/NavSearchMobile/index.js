@@ -142,6 +142,7 @@ function renderResults( results ) {
     return (
       <div className='text-center text-h6 text-black70% font-bold font-spaceGrotesk'>
         No results found
+      </div>
     );
   }
 

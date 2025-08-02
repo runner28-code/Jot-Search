@@ -23,7 +23,6 @@ export const jobFilterObject = {
   ],
   'Status': [
     'Any',
-    'Filled',
     'Open',
     'Closed',
     'Passive',

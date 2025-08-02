@@ -184,7 +184,6 @@ export default function RegistrationForm() {
             placeholder={`What roles are ${pronoun} interested in?`}
             value={formObj.roles}
             onChange={handleChange}
-// Temp comment
             choices={formObj.expertise ? roleChoices[formObj.expertise] : []}
             error={errors.includes('roles')}
           />

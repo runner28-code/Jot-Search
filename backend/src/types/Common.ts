@@ -64,6 +64,7 @@ type CountFilterResponse = {
 };
 
 // Job Types
+export type Job = BullhornJob | GetroJob;
 export type JobSearchByID = {
   job?: Job;
   source: DataSource;
@@ -78,7 +79,6 @@ export type JobSearchByFilterResponse =
     }
   | AllJobsResponse;
 
-export type AllJobsResponse = {
   bullhorn: JobSearchByFilterResponse;
   getro: JobSearchByFilterResponse;
   main: JobSearchByFilterResponse;

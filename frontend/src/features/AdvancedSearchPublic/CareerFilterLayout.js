@@ -18,6 +18,7 @@ const dropDownFiltersCandidate = [
   'Years Experience'
 ]
 
+export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
   const { width } = useWindowDimensions();
   const {
@@ -27,7 +28,6 @@ const dropDownFiltersCandidate = [
     searchTerm,
     setSearchTerm,
     handleSearchClick,
-    clearFilters,
   } = props;
 
   const dropdownFilterObject = {};

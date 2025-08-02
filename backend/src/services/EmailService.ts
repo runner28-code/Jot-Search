@@ -8,7 +8,6 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
   const from = config.mailSenderEmail || "donnie@aerovision.io";
   const html = await ejs.renderFile<string>(path.join(__dirname, `../templates/${template}.ejs`), data);
   let message = { from, to, subject, html };
-  const msg = { ...message, text: 'iDENTIFY'};
 
   try {
       await sendgrid.send(msg);

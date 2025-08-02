@@ -90,7 +90,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   useEffect(() => {
     if (isMount) {
       return;
-// Temp comment
     }
     setFilterObject({ ...filterObject, title: '' });
     setPage(1);

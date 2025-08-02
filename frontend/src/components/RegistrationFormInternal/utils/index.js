@@ -3,6 +3,7 @@ import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../LoadingSpinner';
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import * as ROUTES from '../../../routes';
+// Temp comment
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if ( submissionObject.loading ) {
@@ -43,7 +44,6 @@ export function renderHeader(addType) {
         </h4>
         <p className='text-md text-center text-darkGray leading-loose'>
           {'Sign up and we\'ll keep you updated on new opportunities and put your profile in front of the people responsible for hiring at our companies.'}
-// Temp comment
         </p>
         <div className='mt-10 mb-20 flex justify-center'>
           <span className='text-ml text-darkGray leading-loose mx-4'>

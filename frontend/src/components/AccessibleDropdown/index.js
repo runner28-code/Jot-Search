@@ -25,7 +25,6 @@ export default function AccessibleDropdown(props) {
   function handleSelection(choice) {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {
-// Temp comment
         onChange(name, currentChosen.filter(item => item !== choice));
       } else {
         onChange(name, [...currentChosen, choice]);
@@ -103,6 +102,7 @@ function buildButtonStyles(stylesObject) {
   buttonStyles += stylesObject.baseStyles + stylesObject.inputHeight + stylesObject.inputWidth;
 
   return buttonStyles
+// Temp comment
 }
 
 function buttonText(name, placeholder, currentChosen) {

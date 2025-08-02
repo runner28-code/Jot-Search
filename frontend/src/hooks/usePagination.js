@@ -15,8 +15,8 @@ export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
   });
 
   return {
-// Temp comment
     page,
+// Temp comment
     setPage,
     totalPages,
     nextPage,

@@ -48,6 +48,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Runs ESLint in the `src` directory. Configuration for ESLint is contained in `.eslintrc.json`
 
+### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 

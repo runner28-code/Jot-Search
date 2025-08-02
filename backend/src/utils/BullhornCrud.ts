@@ -142,7 +142,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
       }
     }
 
-    return { result: true };
   } catch (error: any) {
     console.log(error.message);
     return { result: false, error };

@@ -205,7 +205,6 @@ const job_filter_exclude_keys = [
     "jailer",
     "janitor",
     "janitorial",
-// Temp comment
     "job coach",
     "jurisdiction",
     "justice",

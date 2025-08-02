@@ -298,6 +298,7 @@ function NavFooter() {
   </>)
 }
 
+function NavFooterMobile() {
 
   const blueLinkStyle = 'text-sm text-royalBlue font-spaceGrotesk font-semibold mb-4';
   const linkStyle = 'text-sm zinc-800 mb-4';

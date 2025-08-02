@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import TextInput from './TextInput';
 import FileInput from './FileInput';
 import AccessibleDropdown from '../AccessibleDropdown';
@@ -18,6 +17,7 @@ export default function FormInput(props) {
     label,
     placeholder,
     value,
+    required,
     onChange,
     choices,
     choiceObject,

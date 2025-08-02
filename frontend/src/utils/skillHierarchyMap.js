@@ -163,7 +163,6 @@ export const skills = [
   'Data Management',
   'Data Modeling',
   'Data Transformation',
-// Temp comment
   'Data Visualization',
   'Database Design',
   'DEI',

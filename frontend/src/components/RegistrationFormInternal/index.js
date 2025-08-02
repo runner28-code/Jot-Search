@@ -42,7 +42,6 @@ const defaultState = {
   password: '',
   verifyPassword: '',
   terms: false
-};
 
 const defaultCommunity = {
   community: ''
@@ -89,7 +88,6 @@ export default function RegistrationFormInternal(loggedIn) {
         setErrorBlock('There was an error uploading your resume.');
         setSubmissionObject({
           loading: false,
-// Temp comment
           success: false,
         });
         return;

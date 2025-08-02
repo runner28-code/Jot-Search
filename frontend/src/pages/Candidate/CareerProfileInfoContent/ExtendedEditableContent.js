@@ -40,7 +40,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   });
 
   function handleChange(name, value) {
-// Temp comment
     setFormData({
       ...formData,
       [name]: value,
@@ -56,6 +55,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       console.log(newPath);
       return setFormData({ ...formData, [name]: newPath });
     }
+// Temp comment
     setFormData({ ...formData, [name]: value });
   }
 

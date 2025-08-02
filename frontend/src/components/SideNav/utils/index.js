@@ -15,6 +15,7 @@ import {
 } from 'react-icons/ri';
 import * as ROUTES from '../../../routes';
 
+export const choices = {
   dashboard: {
     label: 'My Dashboard',
     icon: DashboardIcon,
@@ -97,7 +98,6 @@ export const coordinatorChoices = [
   choices.careers,
   choices.companies,
   choices.addUser,
-  choices.logout
 ];
 export const guestChoices = [
   choices.careers,

@@ -28,6 +28,7 @@ export const savedCandidates = '/saved-candidates';
 export const activeCareers = '/active-careers';
 export const companyQuickStats = '/company-stats';
 // Coordinator Dashboard
+export const addUser = '/add-user';
 export const alerts = '/alerts';
 
 export const careerSeekers = '/career-seeker';
@@ -49,6 +50,7 @@ export const talentInTulsa = 'https://www.talent.intulsa.com/';
 export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';
 
 /* API Links */
+// Temp comment
 export const search = '/search';
 // Auth
 export const APIlogin = '/login';

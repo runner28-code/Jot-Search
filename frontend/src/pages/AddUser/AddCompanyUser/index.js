@@ -48,7 +48,6 @@ export default function AddCompanyUser() {
             text='Go to Bullhorn'
             href='https://www.bullhorn.com/'
           />
-        </div>
       </div>
       <div className={ containerStyles + 'bg-white mt-12'}>
         <h2 className={ titleStyles }>Step 2: Assign Company Contact(s)</h2>
@@ -71,7 +70,6 @@ export default function AddCompanyUser() {
             <div className='absolute top-full w-full bg-white border border-grey300'>
               {companies.map((company) => (
                 <div
-// Temp comment
                   key={company.id}
                   className='border-b border-grey300 px-4 py-4 cursor-pointer hover:bg-royalBlue hover:text-white'
                   onClick={() => handleCompanyClick(company)}
