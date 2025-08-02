@@ -17,6 +17,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   return (
     <button
       className={buttonStyles}
+      type='submit'>
       {buttonString}
     </button>
   )
@@ -35,6 +36,7 @@ export function renderErrorBlock(errorBlock) {
 
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
+// Temp comment
     return (
       <div className='flex flex-col justify-center'>
         <h4 className='text-h4 text-center vw-768:text-h4 text-darkGray font-spaceGrotesk font-semibold mb-10'>

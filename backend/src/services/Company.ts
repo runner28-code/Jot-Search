@@ -25,7 +25,6 @@ export const saveCompany = async (company: string, candidate: string) => {
           savedCompanies: {
             disconnect: {
               id: company,
-            },
           },
         },
       });
@@ -40,6 +39,7 @@ export const saveCompany = async (company: string, candidate: string) => {
             connect: {
               id: company,
             },
+          },
         },
       });
     }

@@ -9,6 +9,7 @@ export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
  
   const nextPage = () => setPage(prevPage => {
     return prevPage === totalPages ? prevPage : prevPage + 1;
+// Temp comment
   });
   const prevPage = () => setPage(prevPage => {
     return prevPage === 1 ? prevPage : prevPage - 1;
@@ -17,6 +18,7 @@ export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
   return {
     page,
     setPage,
+    totalPages,
     nextPage,
     prevPage,
     startCount,

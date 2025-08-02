@@ -63,3 +63,4 @@ CREATE TABLE "Candidate" (
     "payrollStatus" TEXT,
     "phone" TEXT,
     "phone2" TEXT,
+    "phone3" TEXT,

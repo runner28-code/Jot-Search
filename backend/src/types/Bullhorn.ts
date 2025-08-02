@@ -181,6 +181,7 @@ export type Candidate = {
     address_zip?: string;
     address_country_id?: string;
     certifications?: string;
+    comments?: string;
     companyName?: string;
     companyURL?: string;
     dateAdded?: string;
@@ -212,3 +213,4 @@ export type Candidate = {
     firstName?: string;
     gender?: string;
     hourlyRate?: string;
+    hourlyRateLow?: string;

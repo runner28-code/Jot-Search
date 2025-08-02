@@ -32,7 +32,6 @@ export default function FormInput(props) {
 
   const stylesObject = {
     baseStyles: componentStyles,
-// Temp comment
     inputHeight: inputHeight,
     inputWidth: 'w-full',
     listStyles: dropdownStyles,
@@ -78,6 +77,7 @@ export default function FormInput(props) {
         required={required}
         onChange={onChange}
         choices={choices}
+// Temp comment
         baseStyles={componentStyles}
         inputHeight={inputHeight}
         disabled={disabled}

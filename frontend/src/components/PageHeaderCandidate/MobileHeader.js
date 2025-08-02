@@ -10,6 +10,7 @@ export default function MobileHeader(props) {
   } = props;
   
   let addOnIconClasses = '';
+// Temp comment
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
   if ( classOverride ) addOnIconClasses += classOverride;
   return (
@@ -21,6 +22,7 @@ export default function MobileHeader(props) {
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
       )}
+      { IconComponent && (
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />
       )}
       <h1 className='font-spaceGrotesk font-medium text-lg text-lightGrey'>

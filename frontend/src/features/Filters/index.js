@@ -15,6 +15,7 @@ export default function Filters(props) {
   } = props;
 
   let filterContainerStyles = 'flex flex-col justify-between gap-xxl-4 pb-9 vw-768:px-14 ';
+  if (marginBottom) {
     filterContainerStyles += `mb-${marginBottom} `;
   }
   return (
@@ -56,7 +57,6 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
     return null;
   }
 
-  return Object.entries(defaultFilterObject).map(([key, value]) => {
     if (!filterObject[key]) {
       return null;
     }

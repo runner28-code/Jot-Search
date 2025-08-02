@@ -13,7 +13,6 @@ export type Company = {
     billingAddress_state?: string,
     billingAddress_zip?: string,
     billingContact?: string,
-    billingFrequency?: string,
     billingPhone?: string,
     businessSectorList?: string,
     companyDescription?: string,
@@ -213,3 +212,4 @@ export type Candidate = {
     hourlyRate?: string;
     hourlyRateLow?: string;
     i9OnFile?: string;
+    isAnonymized?: string;

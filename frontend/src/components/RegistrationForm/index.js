@@ -98,7 +98,6 @@ export default function RegistrationForm(loggedIn) {
       const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
-      const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
         // Set success to true if on add-user page, navigate user to login if not
         if ( addType === 'coordinator' ) {
@@ -152,6 +151,7 @@ export default function RegistrationForm(loggedIn) {
       success: false,
     });
     console.log(formObj);
+  }
 
   function handleChange(name, value) {
     setFormObj({

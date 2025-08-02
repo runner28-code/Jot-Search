@@ -4,7 +4,6 @@ import { registerUser } from '../../../services/API';
 import { validateInput } from '../utils';
 
 export default function AddCoordinator() {
-  const [formObject, setFormObject] = useState(defaultState);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
@@ -18,7 +17,6 @@ export default function AddCoordinator() {
       delete formObjectCopy.verifyPassword;
       const data = await registerUser(formObjectCopy);
       if (data.result === true) {
-// Temp comment
         setSubmissionObject({
           loading: false,
           success: true,

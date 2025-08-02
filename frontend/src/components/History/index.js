@@ -7,6 +7,7 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
   const userRole = AuthService.getUserRole();
   if (userRole !== 'coordinator') {
     return null;
+  }
   const viewAllHref = `/candidates/history/${id}`;
   return (<>
     <section className='mb-24'>

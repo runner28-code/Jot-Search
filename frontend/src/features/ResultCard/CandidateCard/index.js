@@ -24,7 +24,6 @@ export default function CandidateCard({ data, disableLink }) {
 
   return (
     <div
-// Temp comment
       className='relative w-full'
       key={data.id}
     >
@@ -65,7 +64,6 @@ export default function CandidateCard({ data, disableLink }) {
               </span>
             </div>
             {/* Location */}
-            <div className='w-1/3 flex items-center'>
               <img
                 src={locationIcon}
                 className='h-8 mr-5' />

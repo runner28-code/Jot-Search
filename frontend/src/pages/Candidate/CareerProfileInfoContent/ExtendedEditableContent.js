@@ -40,7 +40,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   });
 
   function handleChange(name, value) {
-// Temp comment
     setFormData({
       ...formData,
       [name]: value,
@@ -55,7 +54,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       const newPath = await uploadFile(pluralizedFolderName, fileToUpload);
       console.log(newPath);
       return setFormData({ ...formData, [name]: newPath });
-    }
     setFormData({ ...formData, [name]: value });
   }
 

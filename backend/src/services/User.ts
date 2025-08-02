@@ -390,6 +390,7 @@ export const getCompanyDashboardStats = async (days: number) => {
       data,
       message: null,
     };
+  } catch (error) {
     console.log('err: ', error);
     return {
       result: false,
@@ -405,3 +406,4 @@ export const getCoordinatorDashboardStats = async (days: number) => {
     }
   }
   const totalOpenJobs = await db.job.count({
+    where: {

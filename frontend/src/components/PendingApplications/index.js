@@ -15,6 +15,7 @@ export default function PendingApplications () {
     jobs: [],
     filteredJobs: [],
     loading: true
+  });
 
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);

@@ -621,3 +621,6 @@ export class BullhornService {
             "description",
             "desiredLocations",
             "disability",
+            "educationDegree",
+            "email",
+            "email2",

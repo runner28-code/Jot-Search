@@ -9,6 +9,7 @@ const ITEMS_PER_PAGE = 10;
 export default function FeaturedCompanies() {
 
   const filtersArr = [
+// Temp comment
     {
       key: 'status',
       value: 'active'
@@ -35,6 +36,7 @@ export default function FeaturedCompanies() {
               </Link>
             )
         }
+      </div>
       <div className='text-center mt-48'>
         <Link
           to={ROUTES.companies}

@@ -49,7 +49,6 @@ export default function TypeaheadDropdown(props) {
   function handleInputChange(event) {
     setInputValue(event.target.value);
   }
-
   function handleListClick() {
     setDropdownOpen(dropdownOpen => !dropdownOpen);
   }
@@ -73,7 +72,6 @@ export default function TypeaheadDropdown(props) {
         className={baseStyles + inputHeight + 'mb-0'}
         onClick={handleListClick}
         onChange={handleInputChange}
-// Temp comment
         onKeyDown={handleKeyDown}
         disabled={disabled}
       />

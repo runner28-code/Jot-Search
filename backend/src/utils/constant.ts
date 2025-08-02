@@ -163,6 +163,7 @@ const job_filter_exclude_keys = [
   "garbage",
   "garden",
   "gardener",
+  "gift stocker",
   "giving",
   "goods",
   "governance",

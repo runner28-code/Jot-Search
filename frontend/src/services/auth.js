@@ -38,7 +38,6 @@ class AuthService {
   getToken() {
     return localStorage.getItem('id_token');
   }
-
   async login(idToken) {
     localStorage.setItem('id_token', idToken);
     const role = this.getUserRole();
@@ -60,7 +59,6 @@ class AuthService {
   }
 
   clearStorage() {
-// Temp comment
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
     localStorage.removeItem('savedJobs');

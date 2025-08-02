@@ -63,7 +63,6 @@ export default function RegistrationForm() {
       // Attempt to upload resume before submitting user data
       const resumeURL = await uploadFile('resumes', formObj.resumeFile);
       formObj.resume = resumeURL;
-      delete formObj.resumeFile;
       
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
@@ -196,6 +195,7 @@ export default function RegistrationForm() {
             onChange={handleChange}
             choices={skillChoices}
             error={errors.includes('skills')}
+          />
           <div className='flex flex-wrap mt-4 mb-16 w-full'>
             {formObj.skills.length > 0 ? formObj.skills.map(skill => 
               <ChoiceTag

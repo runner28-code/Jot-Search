@@ -5,6 +5,7 @@ import { getCategories } from './API';
 export const CategoryContext = createContext();
 
 const CategoryProvider = ({children}) => {
+// Temp comment
   const [categories, setCategories] = useState([]);
 
   useEffect( async () => {
@@ -14,6 +15,7 @@ const CategoryProvider = ({children}) => {
     setCategories(categoriesFromAPI);
   }, [])
   
+  return (
     <CategoryContext.Provider value={{ categories }}>
       {children}
     </CategoryContext.Provider>

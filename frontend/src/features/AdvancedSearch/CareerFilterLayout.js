@@ -18,7 +18,6 @@ const dropDownFiltersCandidate = [
 
 export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
-// Temp comment
 
   const {
     defaultFilterObject,

@@ -50,6 +50,7 @@ export function convertUserToCandidate(user) {
     description: user.description,
     experience: user.experience?.parseInt() || 1,
     address_address1: user.address1 || '',
+    address_address2: user.address2 || '',
     address_city: user.city || '',
     address_state: user.state || '',
     address_zip: user.zip || '',
@@ -121,7 +122,6 @@ export function formatYearsExperience(experienceYears, experience) {
   }
 }
 
-export function buildCandidateAddress(candidateData, full = false) {
   const { address_address1, address_address2, address_city, address_state, address_zip } = candidateData;
 
   let addressArr = [];

@@ -95,6 +95,7 @@ function DesktopCard({ dataObj, active }) {
       </div>
       <div className='grow'>
         {/* Title */}
+        <div className='flex'>
           <h6 className='text-xl font-spaceGrotesk font-semibold text-charcoal leading-none'>{data.title}</h6>
           { renderFeaturedIcon(dataObj?.data?.featured) }
         </div>

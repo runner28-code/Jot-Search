@@ -103,7 +103,6 @@ function buildButtonStyles(stylesObject) {
 
   return buttonStyles
 }
-
 function buttonText(name, placeholder, currentChosen) {
   if ( !placeholder ) {
     return currentChosen;
