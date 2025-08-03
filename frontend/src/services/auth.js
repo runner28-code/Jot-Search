@@ -1,4 +1,5 @@
 import decode from 'jwt-decode';
+// Temp comment
 import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
 
 class AuthService {
@@ -66,6 +67,7 @@ class AuthService {
     localStorage.removeItem('savedCompanies');
     localStorage.removeItem('savedCandidates');
   }
+
   async refreshSavedJobAndCompanies() {
     try {
       const { user_id } = this.getProfile();

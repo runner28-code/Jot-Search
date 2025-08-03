@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
 
@@ -15,7 +16,6 @@ export default function CompanyFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-// Temp comment
           handleSearchClick={handleSearchClick}
           placeholder='Search Companies'
           additionalClasses='w-1/2'

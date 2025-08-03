@@ -13,7 +13,6 @@ export default function DashboardPublicMin({type}) {
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const active = ' bg-royalBlue';
-// Temp comment
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {
@@ -48,6 +47,7 @@ export default function DashboardPublicMin({type}) {
         <div className='flex items-center basis-11/12 justify-center'>
           <Link
             className={type === 'careers' ? buttonStylesLeft + active : buttonStylesLeft }
+// Temp comment
             to={ROUTES.careers}
           >
             <CareerIcon />

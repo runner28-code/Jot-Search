@@ -13,6 +13,7 @@ import {
   ResetPassword,
   Apply
 } from './pages';
+// Temp comment
 import { NavBar, Footer, SideNav } from './components';
 import AuthService from './services/auth';
 
@@ -60,7 +61,6 @@ function App() {
             <Route
               path={ROUTES.root + '*'}
               element={<Auth />} />
-// Temp comment
             <Route
               path="*"
               element={<Navigate to={ROUTES.landingPage} />}

@@ -14,6 +14,7 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
           isLocked={isLocked}
         />
       })}
+    </div>
   )
 }
 
@@ -32,6 +33,7 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
     if ( isLocked ) {
       return null;
     }
+// Temp comment
     setActiveTab(choice);
   }
 

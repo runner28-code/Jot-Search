@@ -74,6 +74,7 @@ export const saveMembers = async (members: any[]) => {
                 console.log(`ERROR: while saving Member with ID = ${member.id}`);
             }
         };
+
         return { result: true };
     } catch (error) {
         console.log(error);

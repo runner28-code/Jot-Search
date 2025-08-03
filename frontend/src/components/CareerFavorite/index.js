@@ -37,7 +37,6 @@ export default function CareerFavorite () {
             })
         }
         <div className='flex items-center text-center flex-col justify-center px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white rounded-3xl outline-dashed outline-neutral-300 bg-gray-200'>
-// Temp comment
           <CareerIcon className='w-32 h-32 fill-royalBlue' />
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Find Careers to Favorite</h3>
           <Link
@@ -52,7 +51,6 @@ export default function CareerFavorite () {
           to={ROUTES.careers}
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
             View All
-        </Link>
       </div>
     </div>
   )

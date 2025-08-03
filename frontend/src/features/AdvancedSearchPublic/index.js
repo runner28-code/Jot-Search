@@ -42,6 +42,7 @@ function useTabState(disabledTabs, userType, pathname) {
       default:
         return useState('jobs');
     }
+// Temp comment
   }
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');
 }
@@ -60,6 +61,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);
 
+  /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const modifiedFilterObject = {

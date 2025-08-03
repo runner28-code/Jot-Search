@@ -10,12 +10,12 @@ import NavSearchMobile from '../NavSearchMobile';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-// Temp comment
 export default function NavBar() {
   const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {
     return <MobileNavBarLayout />
+// Temp comment
   } else {
     return <DesktopNavBarLayout />
   }

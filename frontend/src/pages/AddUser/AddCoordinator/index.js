@@ -3,6 +3,7 @@ import { renderButtonOrLoading } from '../../../components/RegistrationForm/util
 import { registerUser } from '../../../services/API';
 import { validateInput } from '../utils';
 
+export default function AddCoordinator() {
   const [formObject, setFormObject] = useState(defaultState);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
@@ -45,6 +46,7 @@ import { validateInput } from '../utils';
         });
       }, 2000);
     }
+// Temp comment
   }, [submissionObject.success]);
 
   function handleInputChange(e) {

@@ -62,7 +62,6 @@ export default function CandidateCard({ data, disableLink }) {
               <span className='text-charcoal'>
                 LinkedIn
               </span>
-// Temp comment
             </div>
             {/* Location */}
             <div className='w-1/3 flex items-center'>
@@ -113,7 +112,6 @@ CandidateCard.propTypes = {
     state: PropTypes.string,
     status: PropTypes.string,
     userDateAdded: PropTypes.string,
-    workspace: PropTypes.string,
     willRelocate: PropTypes.bool,
     user: PropTypes.object,
   }).isRequired,

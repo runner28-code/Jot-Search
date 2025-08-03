@@ -58,4 +58,5 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     setFormData({ ...formData, [name]: value });
   }
 
+  const handleCancel = () => {
     setEditMode(false);

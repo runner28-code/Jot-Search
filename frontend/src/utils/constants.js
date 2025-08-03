@@ -50,7 +50,6 @@ export const stateCodeMap = {
   'New York': 'NY',
   'North Carolina': 'NC',
   'North Dakota': 'ND',
-  Ohio: 'OH',
   Oklahoma: 'OK',
   Oregon: 'OR',
   Pennsylvania: 'PA',
@@ -61,7 +60,6 @@ export const stateCodeMap = {
   Texas: 'TX',
   Utah: 'UT',
   Vermont: 'VT',
-// Temp comment
   Virginia: 'VA',
   Washington: 'WA',
   'West Virginia': 'WV',

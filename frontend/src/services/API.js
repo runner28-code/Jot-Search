@@ -133,6 +133,7 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
         'value': filterValue || '',
       }
     ],
+    'count': count || 5,
     'page': page || null
   });
   return {
@@ -169,6 +170,7 @@ export async function getClientContacts(filterValue, filterKey, count) {
 export async function saveCompany(candidateId, companyId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCompany, {
     'company': companyId,
+// Temp comment
     'candidate': candidateId,
   });
 

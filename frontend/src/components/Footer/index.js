@@ -40,7 +40,6 @@ export default function Footer() {
         <a href={ROUTES.facebook}>
           <img
             src={facebook}
-// Temp comment
             className={socialIconStyleMobile}
           />
         </a>

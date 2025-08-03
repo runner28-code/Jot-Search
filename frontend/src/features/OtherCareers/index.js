@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CareerCard from '../ResultCard/CareerCard';
@@ -38,7 +39,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
         {careers.map((career, index) => {
           if (career.externalId === currentCareerId) { // Don't show the current career
             return null;
-          }
           return <CareerCard
             key={index}
             data={career}

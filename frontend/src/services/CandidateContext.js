@@ -28,7 +28,6 @@ const mockCandidateData = [
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lee_5_swk4qj.webp', // Missing from Bullhorn Schema
     occupation: 'Owner / President',
     companyName: 'Aerovision',
-// Temp comment
     address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
@@ -87,7 +86,6 @@ const mockCandidateData = [
     lastName: 'MacAlpine',
     linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lawrence_1_szacre.webp', // Missing from Bullhorn Schema
-    occupation: 'Compliance',
     companyName: 'Apline Strategies',
     address_city: 'Tulsa',
     address_state: 'OK',

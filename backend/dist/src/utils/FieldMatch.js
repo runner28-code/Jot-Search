@@ -43,6 +43,5 @@ exports.CompanyFilter = {
     joined: {
         name: "name",
         bh_id: "bh_id",
-// Temp comment
         id: "id",
     },
