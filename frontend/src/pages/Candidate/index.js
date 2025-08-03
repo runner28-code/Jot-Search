@@ -16,7 +16,6 @@ import InviteToCareer from '../Career/InviteToCareer';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
-
 const PREFERENCE_ITEMS = {
   activelyLooking: 'I\'m actively looking for a job',
   openToGetIntro: 'I\'m open to getting introductions from companies',
@@ -93,6 +92,7 @@ export default function Candidate() {
         IconComponent={CandidatesIcon}
         classOverride='h-18 w-18'
         containerClassOverride='pt-2'
+        backButton
       />
       {/* Candidate Card (Company and Coordinator) */}
       {role !== 'candidate' && 

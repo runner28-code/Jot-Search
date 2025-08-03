@@ -33,7 +33,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   if ( propertyName === 'resume' ) {
     return <EditResumeForm
       handleChange={handleChange} />
-// Temp comment
   }
   return (
     <div className='flex flex-col justify-items-between w-140'>
@@ -51,6 +50,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
           <div 
             key={key}
             className='flex justify-between items-center w-full mb-4'
+// Temp comment
           >
             <label 
               className='text-xl font-bold text-royalBlue'

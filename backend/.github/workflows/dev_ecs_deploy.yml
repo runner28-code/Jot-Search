@@ -31,6 +31,7 @@ jobs:
         aws-region: ${{ env.AWS_REGION }}
 
     - name: Login to Amazon ECR
+      id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
 
     - name: Add secrets to task definition
@@ -40,7 +41,6 @@ jobs:
         tokenPrefix: '{'
         tokenSuffix: '}'
       env:
-        SECRET_DATABASE_URL: ${{ secrets.DEV_DATABASE_URL }}
         SECRET_AUTH_SECRET: ${{ secrets.DEV_AUTH_SECRET }}
         SECRET_GETRO_EMAIL: ${{ secrets.DEV_GETRO_EMAIL }}
         SECRET_GETRO_PASSWORD: ${{ secrets.DEV_GETRO_PASSWORD }}

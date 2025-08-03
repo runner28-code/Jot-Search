@@ -138,7 +138,6 @@ export class CompanyController {
           id: id,
         },
       });
-      return {
         company: company,
         result: true,
       };
@@ -192,6 +191,7 @@ export class CompanyController {
     }
 
     try {
+      const res = await db.companyCandidateInvites.createMany({
         data: companyCandidateInvites,
       })
 

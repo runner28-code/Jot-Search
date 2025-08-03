@@ -48,7 +48,6 @@ export default function Apply() {
     loading: false,
     success: false,
     error: false,
-// Temp comment
     errorMessage: ''
   });
 

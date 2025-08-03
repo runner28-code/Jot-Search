@@ -29,8 +29,10 @@ export function renderErrorBlock(errorBlock) {
         <p className='text-rose-500 text-sm font-bold'>{ errorBlock.error || errorBlock }</p>
       </div>
     )
+// Temp comment
   }
 }
+
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (

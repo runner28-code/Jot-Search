@@ -57,7 +57,6 @@ export default function CandidateCard({ data, disableLink }) {
             {/* Linkedin */}
             <div className='w-1/3 flex items-center'>
               <img
-                src={linkedinIcon}
                 className='h-8 mr-5' />
               <span className='text-charcoal'>
                 LinkedIn
@@ -96,6 +95,7 @@ export default function CandidateCard({ data, disableLink }) {
   )
 }
 
+CandidateCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     avatar: PropTypes.string,

@@ -4,7 +4,6 @@ import FormInput from '../../../components/FormInput';
 import API from '../../../services/API';
 import * as ROUTES from '../../../routes';
 
-// Temp comment
 export default function ResetForm({ candidateData, setType }) {
   const [formData, setFormData] = useState({
     id: candidateData.id,
@@ -64,7 +63,6 @@ export default function ResetForm({ candidateData, setType }) {
       <button
         className='h-20 w-150 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
         onClick={handleSubmit}
-      >
         Reset Password
       </button>
     </div>

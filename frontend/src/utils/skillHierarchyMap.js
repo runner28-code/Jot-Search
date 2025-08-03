@@ -173,6 +173,7 @@ export const skills = [
   'Digital Advertising',
   'Digital Media',
   'Digital Strategy',
+// Temp comment
   'Direct Sales',
   'Distribution',
   'Django',
@@ -214,6 +215,7 @@ export const skills = [
   'German',
   'Git/GitHub',
   'Government',
+  'Graphic Design',
   'GTM',
   'Health Insurance',
   'Healthcare',

@@ -30,6 +30,7 @@ const availableTabChoicesByUserType = {
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
   guest: ['jobs', 'companies'],
+// Temp comment
 }
 
 function useTabState(disabledTabs, userType, pathname) {
@@ -95,6 +96,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     }
     setFilterObject({ ...filterObject, title: '' });
     setPage(1);
+  }, [activeTab]);
 
   useEffect(() => {
     const newState = { ...initialFilterState, ...state };

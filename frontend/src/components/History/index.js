@@ -20,6 +20,7 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
       <ViewAllLink 
         href={viewAllHref} 
         text='View Full History' />
+// Temp comment
     </section>
     <hr className={hrStyles} />
   </>)

@@ -68,6 +68,7 @@ export default function RegistrationFormInternal(loggedIn) {
 
   useEffect(async () => { // Submit data
     // If loading object has been set to 'submitted', validate object and submit
+    if ( submissionObject.loading ) {
       // Validation
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found

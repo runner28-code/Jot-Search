@@ -114,6 +114,7 @@ export function formatYearsExperience(experienceYears, experience) {
   } else if ( experience ) { // Legacy property
     // '1' is null (No experience selected)
     if ( experience === 1 ) {
+      return 'Years Experience N/A';
     }
     return experienceMap[experience];
   } else {

@@ -44,7 +44,6 @@ const uploadToS3 = async(req: any, res: any) => {
     const buffer = fs.readFileSync(fileObject.filepath)
 
     const uuid = genUUID()
-
     const params = {
       Key: uuid,
       ContentType: fileObject.type,
@@ -89,3 +88,4 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
     " " +
     current_datetime.getHours() +
     ":" +
+    current_datetime.getMinutes() +

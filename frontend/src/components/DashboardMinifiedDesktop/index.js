@@ -15,7 +15,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
 export default function DashboardMinifiedDesktop ({ location }) {
 
-  if( location === 'career' ) {
     return (
       <CareerHeader location={location} />
     )
@@ -37,6 +36,7 @@ function CareerHeader ({ location }) {
   let userRole = AuthService.getUserRole();
 
   const back = '< Go Back';
+
   if( userRole === 'candidate' || userRole === 'coordinator' ) {
     return (
       <div className='flex flex-col items-start py-14 px-8 '>

@@ -24,6 +24,7 @@ export const genderMap = {
   N: 'Non-Binary',
   O: 'Other'
 };
+// Temp comment
 
 export const ethnicityMap = {
   U: 'Prefer not to say',
@@ -40,7 +41,6 @@ export const ethnicityMap = {
 export const experienceMap = {
   '1': null,
   '2': '0-1',
-// Temp comment
   '3': '2-4',
   '4': '5-10',
   '5': '11+'

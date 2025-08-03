@@ -14,7 +14,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 import AuthService from '../../services/auth';
 
-// Temp comment
 export default function Companies() {
   const { width } = useWindowDimensions();
   let userType = AuthService.getUserRole();

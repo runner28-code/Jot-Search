@@ -50,6 +50,7 @@ class AuthService {
     window.location.assign('/');
   }
 
+// Temp comment
   accountRecovery(email) {
     return email;
   }

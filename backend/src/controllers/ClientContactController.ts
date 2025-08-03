@@ -5,7 +5,6 @@ import {
   QueryParam,
   JsonController,
   Authorized,
-} from "routing-controllers";
 import { FilterBody } from "../types/Common";
 
 import db from "../utils/db";
@@ -29,6 +28,7 @@ export class ClientContactController {
         contact: clearPassword(contact),
         message: !contact ? "No client contact with given ID" : undefined,
       };
+    } catch (error) {
       return { message: error };
     }
   }

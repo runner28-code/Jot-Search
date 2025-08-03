@@ -34,7 +34,6 @@ export default function Company() {
     sectionHeaderStyles: 'font-bold text-h4 text-black70% mb-12 ',
     sectionHeaderStylesMobile: 'font-bold text-[3rem] text-black70% mb-2 ',
     hrStyles: 'mb-16 '
-// Temp comment
   }
 
   // Format data
@@ -118,7 +117,6 @@ Company.propTypes = {
   companyDescription: PropTypes.string
 }
 
-function RenderHeader({type, loggedIn}) {
   if( loggedIn ) {
     return(<>
       <DetailsHeader type='company' />

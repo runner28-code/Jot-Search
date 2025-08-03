@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import ChoicesContainer from './ChoicesContainer';
@@ -10,6 +9,5 @@ const WIDE_MENU_WIDTH = 'w-110';
 
 export default function NavMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
-
   function handleMenuClick() {
     setMenuOpen(menuOpen => !menuOpen);
