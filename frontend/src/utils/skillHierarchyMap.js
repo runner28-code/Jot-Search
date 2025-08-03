@@ -249,7 +249,6 @@ export const skills = [
   'Kubernetes',
   'Lead Generation',
   'Leadership',
-  'Learning & Development',
   'Legal Advice',
   'Legal and Labor Relations',
   'Linux',

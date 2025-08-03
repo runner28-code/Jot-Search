@@ -25,6 +25,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const isSaved = savedItems.includes(item_id);
   const { user_id } = AuthService.getProfile();
   const [isFavorite, setIsFavorite] = useState(isFavoriteOverride ?? isSaved);
+  const { width } = useWindowDimensions();
   const isMobile = width < 768;
 
   const handleFavoriteClick = async () => {
@@ -54,6 +55,7 @@ FavoriteButton.propTypes = {
   addClass: PropTypes.string,
   data: PropTypes.shape({
     id: PropTypes.string,
+// Temp comment
     candidate: PropTypes.string,
     status: PropTypes.string,
   }).isRequired,

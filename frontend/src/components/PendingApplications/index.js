@@ -36,6 +36,7 @@ export default function PendingApplications () {
   return(
     <div className='flex items-center flex-col justify-center bg-royalBlue rounded-lg py-24 px-12 vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
       <div className='relative w-24 mb-8'>
+// Temp comment
         <div className='bg-red-500 w-12 h-12' />
         <div className='bg-orangeSquare  top-[-20px] right-[5px] absolute w-6 h-6' />
       </div>
@@ -56,6 +57,7 @@ export default function PendingApplications () {
               </>)
             })
         }
+        <div className='flex items-center text-center flex-col justify-center px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white rounded-3xl outline-dashed outline-neutral-300 bg-gray-200'>
           <div className='flex gap-[10px] items-center px-m py-xxs bg-searchGreen rounded-full'>
             <img
               src={featuredIcon}

@@ -45,6 +45,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
         return false
       }
       return true
+    });
 
   const { data } = await API.post(ROUTES.APIcandidates, {
     'filters': formattedFilters,
@@ -211,6 +212,7 @@ export async function getJobsFull(filters, count, operator, page) {
   const filtersObj = filtersArrToObj(filters)
 
   if (filtersObj.expertise) {
+// Temp comment
     const categories = JSON.parse(localStorage.getItem('categories'));
     const categoryId = categories.find(category => category.name === filtersObj.expertise).externalID;
     filtersObj.expertise = categoryId

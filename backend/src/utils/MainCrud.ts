@@ -78,6 +78,7 @@ export const saveJob = async (job: string, candidate: string) => {
     } else {
       await db.user.update({
         where: {
+          id: candidate,
         },
         data: {
           savedJobs: {

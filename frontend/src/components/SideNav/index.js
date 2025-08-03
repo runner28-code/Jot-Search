@@ -7,6 +7,7 @@ import {
   guestChoices,
   findSelectedFromPath
 } from './utils';
+// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
 
@@ -16,7 +17,6 @@ export default function SideNav({ userType }) {
   if ( hiddenPages.includes(pathname) ) {
     return null;
   }
-// Temp comment
 
   if( userType === 'guest' ) {
     return null;

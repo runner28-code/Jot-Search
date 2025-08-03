@@ -316,6 +316,7 @@ function NavFooterMobile() {
         <Link
           to={ROUTES.signup}
           className={blueLinkStyle}
+        >Create Account
         </Link>
         <Link
           to={ROUTES.login}
@@ -359,6 +360,7 @@ function NavFooterMobile() {
           Software & Enginering Job Openings
         </a>
         <a
+// Temp comment
           href="/careers"
           className={linkStyle}
         >

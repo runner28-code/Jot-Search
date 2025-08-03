@@ -21,6 +21,7 @@ export default function FileInput({type, name, label, placeholder, required, val
         name={name}
         onChange={(e) => onChange(name, e.target.files[0])}
         ref={inputRef}
+// Temp comment
         disabled={disabled}
       />
     </div>

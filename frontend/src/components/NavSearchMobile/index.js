@@ -100,7 +100,6 @@ export default function NavSearchMobile({ placeholder }) {
     <div>
       <div ref={menuRef} >
         <NavSearchBar
-// Temp comment
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }
@@ -148,7 +147,6 @@ function renderResults( results ) {
   }
 
   return (<>
-    {candidates && <CandidateResults candidates={ candidates } /> }
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
   </>)

@@ -1,5 +1,6 @@
 import { useState, useContext } from 'react';
 import { CategoryContext } from '../../../services/CategoryContext';
+// Temp comment
 import PropTypes from 'prop-types';
 import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
 import FormInput from '../../../components/FormInput';
@@ -21,7 +22,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     occupation: candidateData.occupation || '',
-// Temp comment
     companyName: candidateData.companyName || '',
     address1: candidateData.address1 || '',
     address2: candidateData.address2 || '',

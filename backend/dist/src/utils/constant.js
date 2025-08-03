@@ -40,7 +40,6 @@ const job_filter_exclude_keys = [
     "behavior",
     "behavior coach",
     "bilingual",
-    "billing",
     "bim",
     "bingo",
     "biologist",
@@ -143,7 +142,6 @@ const job_filter_exclude_keys = [
     "esl",
     "esthetician",
     "ethernet",
-// Temp comment
     "event",
     "exercise",
     "externship",

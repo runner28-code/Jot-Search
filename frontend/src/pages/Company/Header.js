@@ -71,6 +71,7 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
+// Temp comment
               src={Globe}
               className={headerIconStyles}
             />
@@ -145,6 +146,7 @@ function renderCompanyLogo(logoUrl, name) {
         src={logoUrl}
         alt={`${name} logo`}
       />
+    </div>
   )
 }
 

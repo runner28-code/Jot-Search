@@ -67,7 +67,6 @@ export default function CandidateFilterLayout(props) {
       handleFilterChange('skills', skills.filter(s => s !== skill))
     } else {
       handleFilterChange('skills', [...skills, skill])
-// Temp comment
     }
   }
   console.log(filterObject)

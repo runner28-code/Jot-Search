@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import PhoneInput from 'react-phone-number-input/input'
 import Dropdown from '../../components/UniversalDropdown';
@@ -61,7 +62,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
         community: ''
       });
     }
-    handleChange(name, value);
   }
 
   function handleCommunityChoice(name, value) {

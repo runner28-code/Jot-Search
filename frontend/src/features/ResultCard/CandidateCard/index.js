@@ -174,7 +174,6 @@ function NewLeadLabel({ status }) {
     )
   }
 
-// Temp comment
   return null;
 }
 

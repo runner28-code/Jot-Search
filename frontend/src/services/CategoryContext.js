@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
-import { getCategories } from './API';
+import PropTypes from 'prop-types';
 
 export const CategoryContext = createContext();
 

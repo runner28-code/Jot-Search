@@ -21,8 +21,8 @@ export default function InviteCandidates({ company }) {
     return {
       label: candidate.name,
       value: candidate.id,
-// Temp comment
       candidate
+// Temp comment
     }
   }) || [];
   

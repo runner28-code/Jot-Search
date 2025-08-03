@@ -43,6 +43,7 @@ export default function DesktopLayout(props) {
             <h4 className='text-xl text-charcoal font-spaceGrotesk font-semibold leading-none'>{careerData.title}</h4>
             {renderFeaturedIcon(role, careerData?.featured) /* TODO: Switch to pass in careerData.isFeatured when back-end supports it */}
             <FavoriteButton
+              type='job'
               data={careerData}
               addClass='vw-900:top-[-20px] vw-900:right-[-10px]'
             />
@@ -52,6 +53,7 @@ export default function DesktopLayout(props) {
           {/* First row icons */}
           <div className='w-full flex items-center mt-xl'>
             {/* Location */}
+// Temp comment
             <div className='w-1/3 flex items-center'>
               <img
                 src={locationIcon}

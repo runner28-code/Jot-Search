@@ -17,3 +17,4 @@ CREATE TABLE "_userSavedCompanies" (
 CREATE UNIQUE INDEX "_userSavedCompanies_AB_unique" ON "_userSavedCompanies"("A", "B");
 
 -- CreateIndex
+CREATE INDEX "_userSavedCompanies_B_index" ON "_userSavedCompanies"("B");
