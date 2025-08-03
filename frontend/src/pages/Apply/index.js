@@ -132,7 +132,6 @@ export default function Apply() {
   }
 
   async function submitData() {
-// Temp comment
     // Format object for API
     const formattedObject = await formatApplicationObject(applicationObject, useExistingResume);
     if ( isLoggedIn ) {

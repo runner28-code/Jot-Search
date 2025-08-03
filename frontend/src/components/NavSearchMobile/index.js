@@ -71,6 +71,7 @@ export default function NavSearchMobile({ placeholder }) {
     setSearchTerm('');
   }, [location]);
 
+// Temp comment
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
     setForceHidden(true);

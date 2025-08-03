@@ -14,7 +14,6 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
           isLocked={isLocked}
         />
       })}
-    </div>
   )
 }
 
@@ -34,7 +33,6 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
       return null;
     }
     setActiveTab(choice);
-// Temp comment
   }
 
   const titleCasedTab = choice.charAt(0).toUpperCase() + choice.slice(1);

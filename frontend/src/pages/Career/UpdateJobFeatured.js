@@ -4,12 +4,12 @@ import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 
 export const UpdateJobFeatured = ({ job }) => {
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
+// Temp comment
 
   const toggled = job.featured
 
 
   const enabledButtonStyle = 'bg-green text-white'
-// Temp comment
   const disabledButtonStyle = 'bg-grey300'
 
   const buttonStyles = toggled ? enabledButtonStyle : disabledButtonStyle

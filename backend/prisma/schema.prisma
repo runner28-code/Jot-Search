@@ -484,3 +484,4 @@ model GetroJobInfo {
   hidden                Boolean   @default(false)
 
   job Job[] @relation("getroJobInfo")
+

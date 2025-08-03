@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import TextInput from './TextInput';
 import FileInput from './FileInput';
 import AccessibleDropdown from '../AccessibleDropdown';
@@ -62,7 +63,6 @@ export default function FormInput(props) {
         choices={choices}
         choiceObject={choiceObject}
         stylesObject={stylesObject}
-        showDropdownArrow={true}
         disabled={disabled}
       />
     case 'typeahead':

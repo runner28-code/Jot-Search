@@ -64,6 +64,7 @@ export default function TypeaheadDropdown(props) {
       ref={menuRef}  
     >
       { renderLabel(name, label, required) }
+// Temp comment
       <input 
         type={type}
         name={name}

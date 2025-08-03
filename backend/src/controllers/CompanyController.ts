@@ -116,6 +116,7 @@ export class CompanyController {
         error: "You should be a coordinator for creating a company",
       };
     }
+
     const bullhornService = new BullhornService();
     await bullhornService.init();
     return await bullhornService.insertCompany(body);
@@ -140,7 +141,6 @@ export class CompanyController {
       return {
         company: company,
         result: true,
-      };
     } catch (e) {
       console.log(e);
       return { result: false, message: e };
@@ -233,3 +233,4 @@ export class CompanyController {
 
       const companyURLs = companies.filter(company => company.companyURL)
         .map(company => company.companyURL) as string[]
+      const getroCompanies = await db.getroCompany.findMany({

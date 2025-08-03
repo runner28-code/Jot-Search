@@ -133,7 +133,6 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
         'value': filterValue || '',
       }
     ],
-    'count': count || 5,
     'page': page || null
   });
   return {
@@ -258,3 +257,13 @@ export async function getInvitationsToApply(id) {
     params
   });
   return normalizeData(data.jobs);
+}
+
+export async function applyToJob(jobId, candidateId) {
+  const { data } = await API.get(ROUTES.APIjobApply, {
+    params: {
+      job: jobId,
+      candidate: candidateId
+    }
+  });
+  return normalizeData(data);

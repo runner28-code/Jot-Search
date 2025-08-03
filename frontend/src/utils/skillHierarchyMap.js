@@ -257,3 +257,4 @@ export const skills = [
   'Logistics',
   'Machine Learning',
   'Management Consulting',
+  'Manufacturing',

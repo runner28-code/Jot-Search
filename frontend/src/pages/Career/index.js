@@ -66,7 +66,6 @@ export default function CareerPage() {
       className={ width <= 990 ? containerStyles
         : loggedIn ? containerStyles 
           : containerStyles + ' px-[15%]'}
-// Temp comment
     >
       { renderNotification(activeData, careerData) }
       {

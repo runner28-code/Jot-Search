@@ -144,7 +144,6 @@ export class BullhornService {
   }
 
   async getNewAccessToken(): Promise<boolean> {
-    console.log("\n***** getNewAccessToken *****");
     try {
       const query = queryString.stringify(
         {
@@ -626,3 +625,6 @@ export class BullhornService {
             "email2",
             "email3",
             "employeeType",
+            "employmentPreference",
+            "ethnicity",
+            "experience",

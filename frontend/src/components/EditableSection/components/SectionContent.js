@@ -14,5 +14,4 @@ export default function SectionContent({ contentObject }) {
       contentText={contentString} 
       propertyName={propertyName}
     />
-  }
   return renderMultipleProperties(contentObject);

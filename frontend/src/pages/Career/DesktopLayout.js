@@ -117,7 +117,6 @@ export default function DesktopLayout(props) {
       currentCareerId={careerData.externalId}
     />
   </>)
-}
 
 DesktopLayout.propTypes = {
   data: PropTypes.shape({

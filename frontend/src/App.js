@@ -42,6 +42,7 @@ function App() {
             <Route
               path={ROUTES.companies}
               element={<Companies />} />
+            <Route
               path={`${ROUTES.careers}/:id`}
               element={<Career />} />
             <Route
@@ -59,6 +60,7 @@ function App() {
             <Route
               path={ROUTES.root + '*'}
               element={<Auth />} />
+// Temp comment
             <Route
               path="*"
               element={<Navigate to={ROUTES.landingPage} />}

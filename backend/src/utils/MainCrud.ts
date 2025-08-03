@@ -45,6 +45,7 @@ export const saveApplication = async (job: string, candidate: string) => {
 };
 
 export const saveJob = async (job: string, candidate: string) => {
+  try {
     console.log("saving job");
     const existing = await db.user.findFirst({
       include: {

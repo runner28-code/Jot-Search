@@ -4,7 +4,6 @@ import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
-// Temp comment
   guestChoices
 } from '../SideNav/utils';
 import Choice from './Choice';

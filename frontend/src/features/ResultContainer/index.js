@@ -4,6 +4,7 @@ import CompactCareerCard from '../ResultCard/CompactCareerCard';
 import CareerCard from '../ResultCard/CareerCard';
 import CompanyCard from '../ResultCard/CompanyCard';
 import ViewAllLink from '../../components/ViewAllLink';
+import { pluralizedTypes } from '../../utils/constants';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 
@@ -25,7 +26,6 @@ export default function ResultContainer(props) {
   const baseStyles = 'w-full max-w-400 py-5'
   const resultsContainerStyles = containerClass || 'flex flex-col items-center justify-center ';
 
-  function renderHeader() {
     if ( !header ) {
       return null;
     }

@@ -48,7 +48,6 @@ const defaultCommunity = {
 }
 export default function RegistrationForm(loggedIn) {
   const {categories} = useContext(CategoryContext);
-  const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
   const [referralChoice, setReferralChoice] = useState(false);
@@ -136,6 +135,7 @@ export default function RegistrationForm(loggedIn) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
+    setErrors([]);
     setFormObj({
       ...formObj,
       firstName: firstName.value,

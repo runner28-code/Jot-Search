@@ -72,6 +72,7 @@ export default function CandidateFilterLayout(props) {
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
+// Temp comment
           additionalClasses='w-1/2'
         />
         <button

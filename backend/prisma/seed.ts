@@ -145,3 +145,4 @@ async function seedCompanies() {
         annualRevenue: 1000000,
         logo: "https://picsum.photos/200",
         bh_description: "a company",
+        getro_description: "a healthcare company",

@@ -52,5 +52,4 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             isFavoriteOverride={isFavoriteOverride} />
       }
     </div>
-// Temp comment
   )

@@ -102,7 +102,6 @@ function buildButtonStyles(stylesObject) {
   buttonStyles += stylesObject.baseStyles + stylesObject.inputHeight + stylesObject.inputWidth;
 
   return buttonStyles
-// Temp comment
 }
 
 function buttonText(name, placeholder, currentChosen) {
@@ -132,6 +131,7 @@ function buttonText(name, placeholder, currentChosen) {
   return buttonString;
 }
 
+// Temp comment
 function renderLabel(name, label, required) {
   if ( !label ) {
     return null;

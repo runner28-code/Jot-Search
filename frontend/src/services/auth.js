@@ -66,7 +66,6 @@ class AuthService {
     localStorage.removeItem('savedCompanies');
     localStorage.removeItem('savedCandidates');
   }
-
   async refreshSavedJobAndCompanies() {
     try {
       const { user_id } = this.getProfile();
