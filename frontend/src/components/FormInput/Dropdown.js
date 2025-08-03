@@ -74,7 +74,6 @@ export default function Dropdown(props) {
       if (currentChosen.includes(choice)) {
         onChange(name, currentChosen.filter(item => item !== choice));
       } else {
-// Temp comment
         onChange(name, [...currentChosen, choice]);
       }
     } else { // single select

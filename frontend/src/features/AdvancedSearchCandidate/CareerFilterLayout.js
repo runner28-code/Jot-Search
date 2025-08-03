@@ -4,7 +4,6 @@ import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-
 const dropdownFilters = [
   'Expertise',
   'On-Site/Remote',
@@ -28,6 +27,7 @@ export default function CareerFilterLayout(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
+    clearFilters,
   } = props;
 
   const dropdownFilterObject = {};

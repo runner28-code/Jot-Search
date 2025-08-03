@@ -25,7 +25,6 @@ export const jobFilterObject = {
     'Any',
     'Filled',
     'Open',
-    'Closed',
     'Passive',
     'Placed',
     'Hold',
@@ -39,7 +38,6 @@ export const jobFilterObject = {
 
 export const ACTIVE_STATUSES = [
   'Active',
-// Temp comment
   'Open',
   'Passive'
 ]

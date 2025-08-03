@@ -45,7 +45,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
         return false
       }
       return true
-    });
 
   const { data } = await API.post(ROUTES.APIcandidates, {
     'filters': formattedFilters,
@@ -170,7 +169,6 @@ export async function getClientContacts(filterValue, filterKey, count) {
 export async function saveCompany(candidateId, companyId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCompany, {
     'company': companyId,
-// Temp comment
     'candidate': candidateId,
   });
 

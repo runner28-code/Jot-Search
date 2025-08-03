@@ -397,7 +397,6 @@ export const getCompanyDashboardStats = async (days: number) => {
       error: error,
     };
   }
-}
 
 export const getCoordinatorDashboardStats = async (days: number) => {
   const previousPeriodCommonQuery = {

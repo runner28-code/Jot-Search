@@ -20,6 +20,7 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
 
 TabContainer.propTypes = {
   tabChoices: PropTypes.arrayOf(PropTypes.string).isRequired,
+// Temp comment
   activeTab: PropTypes.string,
   setActiveTab: PropTypes.func.isRequired,
   isLocked: PropTypes.bool,
@@ -33,7 +34,6 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
     if ( isLocked ) {
       return null;
     }
-// Temp comment
     setActiveTab(choice);
   }
 

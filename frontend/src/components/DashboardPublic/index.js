@@ -4,6 +4,7 @@ import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageSta
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import filterIcon from '../../assets/icons/filter-toggle.svg';
+// Temp comment
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -41,7 +42,6 @@ export default function DashboardPublic({togglePassState}) {
           <Link
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }
             to={ROUTES.companies}
-// Temp comment
           >
             <CompanyIcon />
             <p className='ml-4'>Companies</p>

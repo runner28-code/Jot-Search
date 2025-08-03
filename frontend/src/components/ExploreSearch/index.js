@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearch';
 import AccessibleDropdown from '../AccessibleDropdown';
 import LoadingSpinner from '../LoadingSpinner';
+// Temp comment
 import { jobFilterObject } from '../../utils/filterObjects';
 import * as ROUTES from '../../routes';
 
@@ -14,6 +15,7 @@ function adjustJobFilterObject() {
   adjustedJobFilterObject['Expertise'][0] = 'Any Expertise';
   
   return adjustedJobFilterObject;
+}
 
 export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();

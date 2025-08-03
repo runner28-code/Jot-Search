@@ -15,7 +15,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
   const applicationAge = data.applications && data.applications.length > 0 ? calculatePostingAge(data.applications[0].createdAt) : 'N/A';
   return (
     <div
-// Temp comment
       className='relative'
       key={data.id}
     >
@@ -55,7 +54,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
         </div>
       </Link>
       {
-        selectableProps && selectableProps.selectable ?
           <Checkbox
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}

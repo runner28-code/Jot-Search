@@ -46,7 +46,6 @@ export default function AddCoordinator() {
         });
       }, 2000);
     }
-// Temp comment
   }, [submissionObject.success]);
 
   function handleInputChange(e) {

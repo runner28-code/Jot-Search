@@ -316,7 +316,6 @@ function NavFooterMobile() {
         <Link
           to={ROUTES.signup}
           className={blueLinkStyle}
-        >Create Account
         </Link>
         <Link
           to={ROUTES.login}

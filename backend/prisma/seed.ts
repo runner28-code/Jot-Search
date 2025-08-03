@@ -90,7 +90,6 @@ async function seedCandidates() {
         description: "Ehh...",
         companyName: "Nowhere",
         companyURL: "nowhere.com",
-        firstName: "Bob",
         lastName: "Tester",
         phone: "987-654-3210",
         email: "bobtesting@gmail.com",
@@ -132,17 +131,3 @@ async function seedCategories() {
         name: "Software & Engineering",
         enabled: true,
         externalID: 2000101,
-      },
-    ],
-  });
-}
-
-async function seedCompanies() {
-  await db.company.createMany({
-    data: [
-      {
-        name: "Testing Co",
-        annualRevenue: 1000000,
-        logo: "https://picsum.photos/200",
-        bh_description: "a company",
-        getro_description: "a healthcare company",

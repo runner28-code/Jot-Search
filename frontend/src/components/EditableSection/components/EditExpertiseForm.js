@@ -1,5 +1,6 @@
 import Dropdown from '../../UniversalDropdown';
 import PropTypes from 'prop-types';
+// Temp comment
 import { expertises as expertiseChoices } from '../../../utils/skillHierarchyMap';
 
 export default function EditExpertiseForm({ expertise, handleChange }) {
@@ -9,6 +10,7 @@ export default function EditExpertiseForm({ expertise, handleChange }) {
       <Dropdown
         name='expertise'
         choices={expertiseChoices}
+        currentChosen={expertise}
         handleChange={handleChange}
         placeholder='Change Expertise'
         inputStyles={inputStyles}

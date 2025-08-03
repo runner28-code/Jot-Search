@@ -99,9 +99,11 @@ export default function CompanyCard({ data }) {
     </div>
   )
 }
+
 const dataShape = {
   data: PropTypes.shape({
     id: PropTypes.string.isRequired,
+// Temp comment
     address: PropTypes.shape({
       city: PropTypes.string,
       state: PropTypes.string,

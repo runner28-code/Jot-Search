@@ -38,7 +38,6 @@ export default function ActiveCareers() {
 
   return (
     <section>
-// Temp comment
       <PageHeader
         headerText='Active Careers'
         IconComponent={CareerIcon}

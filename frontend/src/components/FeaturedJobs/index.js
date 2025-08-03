@@ -63,6 +63,7 @@ export default function FeaturedJobs() {
               )
             })
         }
+      </div>
       <div className={ width >= 990 ? viewAllStyles : viewAllStylesMobile }>
         <Link
           to={ROUTES.careers}

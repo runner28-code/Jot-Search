@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../LoadingSpinner';
 import { experienceMap } from '../../../utils/dbFieldMapping';
+// Temp comment
 import * as ROUTES from '../../../routes';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
@@ -40,7 +41,6 @@ export function renderHeader(addType) {
       <div className='flex flex-col justify-center'>
         <h4 className='text-h5 text-center vw-768:text-h4 text-darkGray font-spaceGrotesk font-semibold mb-10'>
           Create an Account
-// Temp comment
         </h4>
         <p className='text-sm text-center text-darkGray leading-loose'>
           {'Sign up and we\'ll keep you updated on new opportunities and put your profile in front of the people responsible for hiring at our companies.'}

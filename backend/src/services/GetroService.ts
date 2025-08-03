@@ -29,7 +29,6 @@ export class GetroService {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             }
-        };
     };
 
     async checkAuth(): Promise<boolean> {
@@ -118,6 +117,7 @@ export class GetroService {
 
         const res = await axios.get(url, this.getOptions());
         await sleep(2000); // https://developers.getro.com/#rate-limit
+
         if (res.status === 200) {
             const data = res.data;
             return {

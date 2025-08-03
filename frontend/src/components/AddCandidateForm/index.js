@@ -41,6 +41,7 @@ export default function RegistrationForm() {
     loading: false,
     success: false,
   });
+
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -254,6 +255,7 @@ export default function RegistrationForm() {
             type='file'
             name='resumeFile'
             placeholder='Upload Resume'
+// Temp comment
             value={formObj.resumeFile}
             onChange={handleChange}
             error={errors.includes('resumeFile')}
