@@ -14,6 +14,5 @@ CREATE TABLE "GetroCompany" (
     "locations" TEXT,
     "logo_url" TEXT,
     "name" TEXT,
-    "ocp_search_status" TEXT,
     "slug" TEXT,
     "twitter_url" TEXT,

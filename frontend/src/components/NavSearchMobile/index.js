@@ -76,7 +76,6 @@ export default function NavSearchMobile({ placeholder }) {
     setForceHidden(true);
   };
 
-  useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
 
@@ -147,6 +146,7 @@ function renderResults( results ) {
   }
 
   return (<>
+    {candidates && <CandidateResults candidates={ candidates } /> }
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
   </>)

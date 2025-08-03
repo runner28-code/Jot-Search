@@ -42,6 +42,7 @@ CREATE TABLE "Candidate" (
     "isAnonymized" TEXT,
     "isDeleted" TEXT,
     "isEditable" TEXT,
+    "isExempt" TEXT,
     "leads" TEXT,
     "maritalStatus" TEXT,
     "massMailOptOut" TEXT,

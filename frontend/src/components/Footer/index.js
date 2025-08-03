@@ -360,7 +360,6 @@ function NavFooterMobile() {
           Software & Enginering Job Openings
         </a>
         <a
-// Temp comment
           href="/careers"
           className={linkStyle}
         >

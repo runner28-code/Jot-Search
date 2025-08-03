@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { renderButtonOrLoading } from '../../../components/RegistrationForm/utils';
 import { registerUser } from '../../../services/API';
 import { validateInput } from '../utils';
-// Temp comment
 
 export default function AddCoordinator() {
   const [formObject, setFormObject] = useState(defaultState);
@@ -12,7 +11,6 @@ export default function AddCoordinator() {
     errors: {},
   });
 
-  // Submit form data when submissionObject.loading is set to true
   useEffect(async () => {
     if (submissionObject.loading) {
       const formObjectCopy = { ...formObject };

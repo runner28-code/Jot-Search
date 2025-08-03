@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
+// Temp comment
 import OtherCareers from '../../features/OtherCareers';
 import featuredIcon from '../../assets/icons/pyramid.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -53,7 +54,6 @@ export default function DesktopLayout(props) {
           {/* First row icons */}
           <div className='w-full flex items-center mt-xl'>
             {/* Location */}
-// Temp comment
             <div className='w-1/3 flex items-center'>
               <img
                 src={locationIcon}

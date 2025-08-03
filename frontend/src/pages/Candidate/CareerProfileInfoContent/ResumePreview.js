@@ -30,6 +30,7 @@ const ResumePreview = ({ resumeUrl }) => {
         className='rounded-lg'
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
+        <nav>
           <ul className="flex justify-between">
             <li className="previous">
               <button
@@ -50,6 +51,5 @@ const ResumePreview = ({ resumeUrl }) => {
             </li>
           </ul>
         </nav>
-      )}
     </div>
   );

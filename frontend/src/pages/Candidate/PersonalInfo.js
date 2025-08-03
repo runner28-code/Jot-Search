@@ -62,6 +62,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
         community: ''
       });
     }
+    handleChange(name, value);
   }
 
   function handleCommunityChoice(name, value) {

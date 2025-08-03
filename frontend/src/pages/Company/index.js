@@ -34,6 +34,7 @@ export default function Company() {
     sectionHeaderStyles: 'font-bold text-h4 text-black70% mb-12 ',
     sectionHeaderStylesMobile: 'font-bold text-[3rem] text-black70% mb-2 ',
     hrStyles: 'mb-16 '
+// Temp comment
   }
 
   // Format data
@@ -90,7 +91,6 @@ export default function Company() {
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>Funding</h4>
             { renderCompanyDescription(companyData.funding, 'text-md mb-10 leading-[32px]') }
           </div>          
-// Temp comment
         </div>
         <div className='mt-12'>
           <OtherCareers

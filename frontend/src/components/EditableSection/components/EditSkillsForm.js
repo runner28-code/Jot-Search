@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import ChoiceTag from '../../ChoiceTag';
 import TypeaheadDropdown from '../../FormInput/TypeaheadDropdown';
+// Temp comment
 import { skills as skillChoices } from '../../../utils/skillHierarchyMap';
 
 export default function EditSkillsForm({ skills, handleChange }) {
@@ -13,4 +14,5 @@ export default function EditSkillsForm({ skills, handleChange }) {
         name: inputName,
         value: newValues.join(', '),
       },
+    };
     handleChange(fakeEvent);

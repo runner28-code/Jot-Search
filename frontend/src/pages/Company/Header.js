@@ -39,6 +39,7 @@ function HeaderContent({ companyData }) {
         <div>
           { renderBusinessSector(companyData.businessSectorList, 'text-lg font-spaceGrotesk text-royalBlue mb-8') }
         </div>
+// Temp comment
         <div className={headerRowStyles}>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
@@ -71,7 +72,6 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
-// Temp comment
               src={Globe}
               className={headerIconStyles}
             />

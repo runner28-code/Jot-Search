@@ -50,6 +50,7 @@ export default function CareerCard({ data, active }) {
       }
       <FavoriteButton
         type={'job'}
+        data={data} />
     </div>
   )
 }

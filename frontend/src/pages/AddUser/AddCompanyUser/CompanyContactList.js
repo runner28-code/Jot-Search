@@ -46,7 +46,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               <span>{contact.email}</span>
             </li>
           ))}
-// Temp comment
         </ul>
         <button
           className='bg-royalBlue text-white text-lg px-xxl py-xs rounded-xl mt-20'

@@ -76,7 +76,6 @@ export async function updateUser(newData, id) { // id is optional, if no id is p
 
 export async function updateCandidate(newData, id) {
   console.log({ newData, id })
-  const body = { ...newData, id };
   const { data } = await API.post(ROUTES.APIcandidateUpdate, body);
   return normalizeData(data);
 }
@@ -212,7 +211,6 @@ export async function getJobsFull(filters, count, operator, page) {
   const filtersObj = filtersArrToObj(filters)
 
   if (filtersObj.expertise) {
-// Temp comment
     const categories = JSON.parse(localStorage.getItem('categories'));
     const categoryId = categories.find(category => category.name === filtersObj.expertise).externalID;
     filtersObj.expertise = categoryId

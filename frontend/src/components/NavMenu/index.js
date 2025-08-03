@@ -1,5 +1,5 @@
-// Temp comment
 import { useState, useEffect, useRef } from 'react';
+// Temp comment
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import ChoicesContainer from './ChoicesContainer';

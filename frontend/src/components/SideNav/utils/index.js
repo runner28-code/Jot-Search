@@ -93,7 +93,6 @@ export const companyChoices = [
   choices.logout
 ];
 export const coordinatorChoices = [
-  choices.dashboard,
   choices.candidates,
   choices.careers,
   choices.companies,
