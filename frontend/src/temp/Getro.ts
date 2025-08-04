@@ -52,3 +52,4 @@ export type Job = {
     slug?: string;
     source?: string;
     status?: string;
+    title?: string;

@@ -13,7 +13,6 @@ export default function ResultContainer(props) {
     results,
     loading,
     type,
-    limit,
     header, 
     active,
     compact = false,

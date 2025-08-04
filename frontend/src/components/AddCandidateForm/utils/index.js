@@ -10,7 +10,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
     />
   }
   if ( submissionObject.success ) {
-    return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
   }
   return (
     <button 
@@ -29,7 +28,6 @@ export function renderErrorBlock(errorBlock) {
         <p className='text-rose-500 text-sm font-bold'>{ errorBlock.error || errorBlock }</p>
       </div>
     )
-// Temp comment
   }
 }
 

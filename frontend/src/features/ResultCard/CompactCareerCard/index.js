@@ -8,6 +8,7 @@ import {BsClipboardCheck} from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
 import { calculatePostingAge } from '../../../utils/formatFunctions';
 
+export default function CompactCareerCard({ data, active, agoDate, isFavoriteOverride = null, selectableProps = null }) {
   const postingAge = calculatePostingAge(agoDate);
 
   const isApplicationPage = useLocation().pathname === ROUTES.applications;
@@ -58,6 +59,7 @@ import { calculatePostingAge } from '../../../utils/formatFunctions';
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
+// Temp comment
           />
           : 
           <FavoriteButton

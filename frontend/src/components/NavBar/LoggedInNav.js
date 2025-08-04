@@ -83,7 +83,6 @@ const DropdownMenu = () => {
   const menuRef = useRef(null);
   const profile = AuthService.getProfile();
   if ( !profile ) {
-    navigate(ROUTES.login);
   }
 
   const firstname = currentUser?.firstname || '';

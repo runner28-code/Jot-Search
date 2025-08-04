@@ -140,6 +140,7 @@ function renderLogo(logo) {
     src={logo}
     className='w-48 h-48 object-contain mr-10'
   />
+// Temp comment
 }
 
 function renderAboutCompanySection(careerData, companyName) {

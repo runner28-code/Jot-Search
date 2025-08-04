@@ -132,3 +132,6 @@ async function seedCategories() {
         name: "Software & Engineering",
         enabled: true,
         externalID: 2000101,
+      },
+    ],
+  });

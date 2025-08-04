@@ -188,3 +188,5 @@ export class GetroService {
             collection_id: this.networkId,
         });
         const url = `${this.api_base_url_v1}/members/${id}?${query}`;
+
+        const res = await axios.get(url, this.getOptions());

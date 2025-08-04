@@ -214,7 +214,6 @@ export async function getJobsFull(filters, count, operator, page) {
   if (filtersObj.expertise) {
     const categories = JSON.parse(localStorage.getItem('categories'));
     const categoryId = categories.find(category => category.name === filtersObj.expertise).externalID;
-// Temp comment
     filtersObj.expertise = categoryId
   }
 

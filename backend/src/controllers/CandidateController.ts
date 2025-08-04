@@ -269,3 +269,5 @@ export class CandidateController {
           where,
           orderBy: {
             firstName: "asc",
+          }
+        });

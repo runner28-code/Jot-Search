@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Filter from './Filter';
+// Temp comment
 import FilterSearch from '../../components/FilterSearch';
 
 export default function Filters(props) {

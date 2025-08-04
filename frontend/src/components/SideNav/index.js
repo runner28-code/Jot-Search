@@ -11,6 +11,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
 
 export default function SideNav({ userType }) {
+// Temp comment
   const { pathname } = useLocation();
   const hiddenPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage, ROUTES.resetPassword, ROUTES.accountRecovery ];
   if ( hiddenPages.includes(pathname) ) {

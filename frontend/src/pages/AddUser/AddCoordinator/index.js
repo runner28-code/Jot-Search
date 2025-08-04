@@ -9,7 +9,6 @@ export default function AddCoordinator() {
     loading: false,
     success: false,
     errors: {},
-// Temp comment
   });
 
   // Submit form data when submissionObject.loading is set to true

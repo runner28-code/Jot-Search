@@ -19,7 +19,6 @@ export const roles = {
     'Brand & Creative Marketing',
     'Content Marketing & Design',
     'Digital Marketing',
-    'Generalist Marketing',
     'Graphic and Motion Design',
     'PR & Communications',
     'Product Marketing & Design'
@@ -173,7 +172,6 @@ export const skills = [
   'Digital Advertising',
   'Digital Media',
   'Digital Strategy',
-// Temp comment
   'Direct Sales',
   'Distribution',
   'Django',
@@ -259,3 +257,5 @@ export const skills = [
   'Machine Learning',
   'Management Consulting',
   'Manufacturing',
+  'Market Analysis',
+  'Market Strategy',

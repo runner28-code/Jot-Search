@@ -255,6 +255,7 @@ export class JobController {
     operator: Operator = "OR"
   ) {
     const _filters = filters.filter((filter) =>
+      ALLOWED_GETRO_FILTERS.has(filter.key as keyof Job)
     );
 
     const filteredFields = fields?.filter((field) =>
@@ -279,3 +280,6 @@ export class JobController {
     filters: AdvancedFilterOption[] | undefined,
     fields: string[] | null,
     page: number,
+    count: number,
+    operator: Operator = "OR"
+  ) {

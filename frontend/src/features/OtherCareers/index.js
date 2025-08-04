@@ -15,6 +15,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
       value: ['Active', 'Open']
     },
     {
+      key: 'companyId',
       value: companyId
     }
   ];

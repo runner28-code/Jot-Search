@@ -85,6 +85,7 @@ export default function HeaderMobile({ companyData }) {
       </section>
     </>
   )
+// Temp comment
 }
 
 HeaderMobile.propTypes = {

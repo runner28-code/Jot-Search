@@ -113,7 +113,6 @@ const job_filter_exclude_keys = [
     "dietary",
     "dietician",
     "dinner",
-// Temp comment
     "dishwasher",
     "dispatcher",
     "distribution assistant",
@@ -156,7 +155,6 @@ const job_filter_exclude_keys = [
     "financial counselor",
     "fire",
     "fleet",
-    "food",
     "forensic",
     "foreperson",
     "forester",
@@ -316,3 +314,6 @@ const job_filter_exclude_keys = [
     "public facilities",
     "public safety",
     "public works",
+    "qc",
+    "quality control",
+    "quality coordinator",

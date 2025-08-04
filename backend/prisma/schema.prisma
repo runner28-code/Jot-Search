@@ -485,3 +485,8 @@ model GetroJobInfo {
 
   job Job[] @relation("getroJobInfo")
 
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  deactivated_at DateTime?
+  closed_at      DateTime?
+  bounty         String?

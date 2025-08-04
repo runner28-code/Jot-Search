@@ -122,7 +122,6 @@ export default function MobileLayout(props) {
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
           onClick={() => navigate(-1)}
         >
-          Back
         </button>
       </div>
     </section>
@@ -171,4 +170,13 @@ function renderAboutCompanySection(careerData) {
       dangerouslySetInnerHTML={{ __html: careerData.company.description || 'No Company Description Available' }}
     />
     <hr className={hrStyles} />
+  </>)
+}
+
+function renderSkillsSection({skillList}) {
+  return(<>
+    <hr className={hrStyles} />
+    {/* Skills Required */}
+    <h4 className={sectionHeaderStyles}>Skills Required</h4>
+    <SkillsList items={skillList} />
   </>)

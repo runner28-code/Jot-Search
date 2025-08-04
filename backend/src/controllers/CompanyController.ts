@@ -138,6 +138,7 @@ export class CompanyController {
           id: id,
         },
       });
+      return {
         company: company,
         result: true,
       };
@@ -234,3 +235,5 @@ export class CompanyController {
       const companyURLs = companies.filter(company => company.companyURL)
         .map(company => company.companyURL) as string[]
       const getroCompanies = await db.getroCompany.findMany({
+        select: {
+          domain: true,

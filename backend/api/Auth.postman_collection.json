@@ -18,6 +18,7 @@
 						"77",
 						"69",
 						"204"
+					],
 					"port": "5000",
 					"path": [
 						"login"
@@ -40,5 +41,4 @@
 			"name": "Register",
 			"request": {
 				"method": "POST",
-				"header": [],
 				"body": {

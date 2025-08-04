@@ -65,3 +65,4 @@ export const IUSER = {
   state: "",
   zip: "",
   resume: "",
+  avatar: "",

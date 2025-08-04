@@ -29,6 +29,7 @@ export type Company = {
     dateLastModified?: string,
     externalID?: string,
     feeArrangement?: string,
+    funding?: string,
     industryList?: string,
     invoiceFormat?: string,
     name?: string,
@@ -213,3 +214,5 @@ export type Candidate = {
     hourlyRateLow?: string;
     i9OnFile?: string;
     isAnonymized?: string;
+    isDeleted?: string;
+    isEditable?: string;

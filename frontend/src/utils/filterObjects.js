@@ -78,7 +78,6 @@ export const candidateFilterObject = {
   ],
   'Employment Type': [
     'Any',
-    'Full-Time',
     'Part-Time',
     'Contract',
     'Contract to Hire',

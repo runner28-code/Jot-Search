@@ -195,6 +195,7 @@ function renderAddress( city, state ) {
   } else {
     return (
       <span>{city}, {state}</span>
+    )
   }
 }
 

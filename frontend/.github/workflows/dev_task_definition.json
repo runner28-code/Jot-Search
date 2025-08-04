@@ -1,3 +1,4 @@
+{
     "family": "dev-site-frontend-task",
     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
@@ -18,4 +19,4 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                   "awslogs-group" : "/ecs/dev-site-frontend-task",
+                   "awslogs-region": "us-east-1",

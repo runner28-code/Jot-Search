@@ -76,6 +76,7 @@ export default function Applications() {
           compact={true}
           agoText={'Applied'}
           selectableProps={{
+// Temp comment
             selectable: true,
             selected: selectedApplications,
             handleClick: handleCheckClick

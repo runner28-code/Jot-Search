@@ -97,7 +97,6 @@ const mockCandidateData = [
   },
 ];
 
-export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
 
 const CandidateProvider = ({children}) => {

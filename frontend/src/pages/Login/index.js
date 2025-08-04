@@ -13,6 +13,7 @@ export default function Login() {
     event.preventDefault();
     const { email, password } = event.target;
     const res = await API.post(ROUTES.APIlogin, {
+      email: email.value,
       password: password.value,
     });
 
@@ -78,6 +79,7 @@ export default function Login() {
               to={ROUTES.accountRecovery}
               className='text-royalBlue text-sm vw-640:text-ml underline'>
               Forgot Password?
+// Temp comment
             </Link>
           </div>
         </form>

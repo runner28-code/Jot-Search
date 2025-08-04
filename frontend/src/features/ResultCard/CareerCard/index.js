@@ -57,6 +57,7 @@ export default function CareerCard({ data, active }) {
 
 CareerCard.propTypes = {
   data: PropTypes.shape({
+// Temp comment
     id: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,

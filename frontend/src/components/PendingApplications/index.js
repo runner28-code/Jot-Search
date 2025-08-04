@@ -13,7 +13,6 @@ export default function PendingApplications () {
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
-// Temp comment
     filteredJobs: [],
     loading: true
   });

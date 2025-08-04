@@ -214,3 +214,5 @@ export type Candidate = {
     gender?: string;
     hourlyRate?: string;
     hourlyRateLow?: string;
+    idOnFile?: string;
+    isAnonymized?: string;

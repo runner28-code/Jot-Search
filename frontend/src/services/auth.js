@@ -11,7 +11,6 @@ class AuthService {
 
   getUserRole() {
     let role = 'guest';
-    if (this.loggedIn()) {
       role = this.getProfile().role;
     }
     return role;
@@ -50,7 +49,6 @@ class AuthService {
     window.location.assign('/');
   }
 
-// Temp comment
   accountRecovery(email) {
     return email;
   }

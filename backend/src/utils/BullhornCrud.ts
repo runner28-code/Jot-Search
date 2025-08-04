@@ -43,6 +43,7 @@ export const saveCompanies = async (companies: any[]) => {
   ];
   try {
     for (const company of companies) {
+      try {
         console.log(`Savng company with ID = ${company.id}`, company);
         const address = await db.address.create({
           data: company.address,
@@ -224,3 +225,4 @@ export const saveCandidates = async (candidates: any[]) => {
         console.log(`Saved Candidate with ID = ${candidate.id} successfully`);
       } catch (error: any) {
         console.log(error.message);
+        console.log(`ERROR: while saving Candidate with ID = ${candidate.id}`);

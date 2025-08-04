@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import PageHeader from '../../components/PageHeader';
 import ResultsHeader from '../../components/ResultsHeader';
 import FilterSearch from '../../components/FilterSearch';
@@ -9,7 +8,6 @@ import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import {
   buildSearchFilters
-} from '../../utils/filterObjects';
 import AuthService from '../../services/auth';
 
 const PLACE_HOLDER = 'Search active job title';

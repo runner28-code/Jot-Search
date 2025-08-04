@@ -37,7 +37,6 @@ export default function FormInput(props) {
     listStyles: dropdownStyles,
     listItemStyles: dropdownItemStyles
   };
-  switch (type) {
     case 'file':
       return <FileInput
         type={type}
@@ -52,6 +51,7 @@ export default function FormInput(props) {
       />
     case 'single-select': // fall through
     case 'multi-select':
+      return <AccessibleDropdown
         type={type}
         name={name}
         label={label}

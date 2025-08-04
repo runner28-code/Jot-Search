@@ -5,11 +5,11 @@ import {
   LandingPage,
   SignUp,
   Login,
-// Temp comment
   Career,
   Careers,
   Company,
   Companies,
+// Temp comment
   AccountRecovery,
   ResetPassword,
   Apply

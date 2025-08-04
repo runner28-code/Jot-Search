@@ -67,3 +67,4 @@ CREATE TABLE "Company" (
     "customFloat2" DOUBLE PRECISION,
     "customFloat3" DOUBLE PRECISION,
     "customInt1" INTEGER,
+    "customInt2" INTEGER,
