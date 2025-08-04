@@ -19,6 +19,7 @@ export const roles = {
     'Brand & Creative Marketing',
     'Content Marketing & Design',
     'Digital Marketing',
+    'Generalist Marketing',
     'Graphic and Motion Design',
     'PR & Communications',
     'Product Marketing & Design'
@@ -176,7 +177,6 @@ export const skills = [
   'Distribution',
   'Django',
   'Docker',
-  'Dojo',
   'Drone',
   'Dynamics NAV',
   'E-Commerce',

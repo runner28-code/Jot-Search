@@ -49,6 +49,7 @@ export default function LandingPage() {
   )
 }
 
+function renderSearch() {
   const { width } = useWindowDimensions();
   const { totalCompaniesCount, totalJobsCount, isLoading } = useGetLandingPageStats({});
 
@@ -78,6 +79,5 @@ function renderLocation() {
       <div className='flex items-center'>
         <MdLocationOn className='fill-white h-11 w-10 mr-1' />
         <span className='text-white text-lg tracking-wide'>Tulsa, OK</span>
-      </div>
     )
   }

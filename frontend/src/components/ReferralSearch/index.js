@@ -10,7 +10,6 @@ const mockJobsData = [
     salaryRange: '$80k-$90k',
     location: 'Remote',
     listingAge: '1 month',
-// Temp comment
     specialty: 'Technology'
   },
   {
@@ -60,6 +59,7 @@ export default function ReferralSearch() {
     if (!jobToAdd) return;
     const newFilteredChoices = filteredChoices.filter(job => job.id !== idToAdd);
     setCurrentChosen([ ...currentChosen, jobToAdd ]);
+// Temp comment
     setFilteredChoices(newFilteredChoices);
   }
 

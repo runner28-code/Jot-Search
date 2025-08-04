@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import HistoryItem from './HistoryItem';
+// Temp comment
 import ViewAllLink from '../ViewAllLink';
 import AuthService from '../../services/auth';
 
@@ -16,7 +17,6 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
         <HistoryItem 
           key={historyObj.id} 
           historyObj={historyObj} />
-// Temp comment
       ))}
       <ViewAllLink 
         href={viewAllHref} 

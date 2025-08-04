@@ -19,4 +19,5 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
+                   "awslogs-group" : "/ecs/dev-site-frontend-task",
                    "awslogs-region": "us-east-1",

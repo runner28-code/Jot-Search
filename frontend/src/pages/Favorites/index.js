@@ -11,6 +11,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 function renderTabs(role, activeTab, setActiveTab) {
   if (role !== 'candidate') {
+// Temp comment
     return null;
   }
   return (

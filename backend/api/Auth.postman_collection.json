@@ -41,4 +41,5 @@
 			"name": "Register",
 			"request": {
 				"method": "POST",
+				"header": [],
 				"body": {

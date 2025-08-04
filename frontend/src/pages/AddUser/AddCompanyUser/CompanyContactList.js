@@ -26,6 +26,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
         <p className='opacity-70 text-sm'>No contacts found for {selectedCompany?.name}</p>
       )}
       {/* Results */}
+// Temp comment
       {!isLoadingContacts && clientContacts?.length > 0 && (<>
         <p className='opacity-70 text-sm'>Select the contact(s) you would like to add from {selectedCompany?.name}</p>
         <ul className='border-y border-grey300 mt-2 w-full'>
@@ -41,7 +42,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
                 name={contact.id}
                 checked={selectedContacts.includes(contact)}
                 className='w-12 h-12 mr-12'
-// Temp comment
               />
               <span className='text-md mr-12 w-100'>{contact.name}</span>
               <span>{contact.email}</span>

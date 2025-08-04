@@ -87,6 +87,6 @@ export type AllJobsResponse = {
 
 export type ApplyResponse = {
   result: boolean;
+  message?: any;
 };
 
-export type GetSavedCompaniesResponse = {

@@ -79,7 +79,6 @@ export default function Login() {
               to={ROUTES.accountRecovery}
               className='text-royalBlue text-sm vw-640:text-ml underline'>
               Forgot Password?
-// Temp comment
             </Link>
           </div>
         </form>

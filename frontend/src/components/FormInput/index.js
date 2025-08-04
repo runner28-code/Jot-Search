@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import TextInput from './TextInput';
 import FileInput from './FileInput';
+// Temp comment
 import AccessibleDropdown from '../AccessibleDropdown';
 import TypeaheadDropdown from './TypeaheadDropdown';
 
@@ -37,6 +38,7 @@ export default function FormInput(props) {
     listStyles: dropdownStyles,
     listItemStyles: dropdownItemStyles
   };
+  switch (type) {
     case 'file':
       return <FileInput
         type={type}

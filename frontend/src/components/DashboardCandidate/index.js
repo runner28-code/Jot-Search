@@ -17,6 +17,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
+  const active = ' bg-royalBlue';
   if( width >= 990 ) {
     return null;
   }
@@ -47,7 +48,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
         Search and Filter
       </div>
       <div className='basis-1/6'>
-        <button
           className='flex items-center justify-end text-[3rem]'
           onClick={() => togglePassState()}
         >

@@ -10,7 +10,6 @@ import postingAgeIcon from '../../assets/icons/calendar.svg';
 import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { apply as applyRoute } from '../../routes';
-import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
 
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charcoal mb-m ';
@@ -140,7 +139,6 @@ function renderLogo(logo) {
     src={logo}
     className='w-48 h-48 object-contain mr-10'
   />
-// Temp comment
 }
 
 function renderAboutCompanySection(careerData, companyName) {

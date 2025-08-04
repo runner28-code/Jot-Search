@@ -9,7 +9,6 @@ import {
   Careers,
   Company,
   Companies,
-// Temp comment
   AccountRecovery,
   ResetPassword,
   Apply
@@ -28,6 +27,7 @@ function App() {
         <div 
           className='grow min-h-280 pb-18'>
           <Routes>
+// Temp comment
             <Route
               path={ROUTES.signup}
               element={<SignUp />} />

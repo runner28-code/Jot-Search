@@ -97,6 +97,7 @@ const mockCandidateData = [
   },
 ];
 
+export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
 
 const CandidateProvider = ({children}) => {
@@ -121,7 +122,6 @@ const CandidateProvider = ({children}) => {
 
     const filteredCandidates = candidates.filter(candidate => candidate.id !== updatedValues.id);
     setCandidates([...filteredCandidates, updatedCandidate]);
-  }
 
   return (
     <CandidateContext.Provider value={{ candidates, currentUser, setCurrentUser, handleCandidatesChange, handleCandidateUpdate }}>

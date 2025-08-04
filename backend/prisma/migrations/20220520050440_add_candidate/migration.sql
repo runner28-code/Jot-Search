@@ -31,6 +31,7 @@ CREATE TABLE "Candidate" (
     "experience" TEXT,
     "externalID" TEXT,
     "fax" TEXT,
+    "fax2" TEXT,
     "fax3" TEXT,
     "firstName" TEXT,
     "lastName" TEXT,

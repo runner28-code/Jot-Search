@@ -24,6 +24,7 @@ export default function Company() {
   useEffect(async () => {
     const companyFromApi = await getCompanyById(id);
     setCompanyData(companyFromApi.company);
+// Temp comment
     setLoading(false);
   }, []);
 
@@ -117,6 +118,7 @@ Company.propTypes = {
   companyDescription: PropTypes.string
 }
 
+function RenderHeader({type, loggedIn}) {
   if( loggedIn ) {
     return(<>
       <DetailsHeader type='company' />

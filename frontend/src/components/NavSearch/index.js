@@ -97,7 +97,6 @@ export default function NavSearch({ placeholder }) {
 
   return (
     <div className='relative'>
-// Temp comment
       <div ref={menuRef} >
         <NavSearchBar
           searchTerm={ searchTerm }

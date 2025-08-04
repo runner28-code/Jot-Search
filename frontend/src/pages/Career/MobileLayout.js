@@ -122,6 +122,7 @@ export default function MobileLayout(props) {
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
           onClick={() => navigate(-1)}
         >
+          Back
         </button>
       </div>
     </section>
@@ -161,7 +162,6 @@ function renderAboutCompanySection(careerData) {
     return null;
   }
   const headerString = `About ${careerData.company.name}`;
-  return (<>
     <hr className={hrStyles} />
     {/* About Company */}
     <h4 className={sectionHeaderStyles}>{headerString}</h4>

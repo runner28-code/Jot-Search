@@ -39,6 +39,3 @@ export class CategoryController {
         message: error,
       };
     }
-  }
-
-  @Post("/search")

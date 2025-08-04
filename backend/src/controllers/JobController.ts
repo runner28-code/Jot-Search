@@ -228,7 +228,6 @@ export class JobController {
       _filters,
       operator,
       specialHandlers
-    );
     const dataset = DATASET_MAIN;
     const table = Tables.JOBS;
 

@@ -23,7 +23,6 @@ export default function CareerFilterLayout(props) {
   const { width } = useWindowDimensions();
   const {
     defaultFilterObject,
-    filterObject,
     handleFilterChange,
     searchTerm,
     setSearchTerm,

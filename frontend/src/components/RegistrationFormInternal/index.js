@@ -3,7 +3,6 @@ import { useState, useEffect, useContext } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
-// Temp comment
 import ChoiceTag from '../ChoiceTag';
 // import Dropdown from '../../components/UniversalDropdown';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
@@ -55,6 +54,7 @@ export default function RegistrationFormInternal(loggedIn) {
   const [errorBlock, setErrorBlock] = useState('');
   const [referralChoice, setReferralChoice] = useState(false);
   const [commObj, setCommObj] = useState(defaultCommunity);
+// Temp comment
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,

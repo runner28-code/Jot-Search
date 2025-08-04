@@ -8,6 +8,7 @@ import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import {
   buildSearchFilters
+} from '../../utils/filterObjects';
 import AuthService from '../../services/auth';
 
 const PLACE_HOLDER = 'Search active job title';

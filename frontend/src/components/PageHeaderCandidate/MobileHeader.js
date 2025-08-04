@@ -7,6 +7,7 @@ export default function MobileHeader(props) {
     IconComponent,
     classOverride,
     colorizeStroke,
+// Temp comment
   } = props;
   
   let addOnIconClasses = '';
@@ -20,6 +21,7 @@ export default function MobileHeader(props) {
           alt='header icon'
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
+      )}
       { IconComponent && (
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />
       )}
