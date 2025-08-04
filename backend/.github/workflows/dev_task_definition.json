@@ -23,6 +23,7 @@
                    "awslogs-region": "us-east-1",
                    "awslogs-stream-prefix": "ecs"
                 }
+            },
             "environment": [
                 {
                     "name": "CHOKIDAR_USEPOLLING", 
@@ -45,7 +46,6 @@
                     "value": "inTulsa_Bullhorn"
                 },
                 {
-                    "name": "DATASET_GETRO", 
                     "value": "inTulsa_Getro"
                 },
                 {

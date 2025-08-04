@@ -33,7 +33,6 @@ export default function GlobalSearch({ placeholder }) {
   }
 
   /* Debounce functions will wait until user stops typing to send API call */
-  const debounceSearchTermFunction = useCallback(
     debounce( handleDebounce, 300 ),
     []
   );
@@ -47,6 +46,7 @@ export default function GlobalSearch({ placeholder }) {
       });
     }
 
+    // TODO: API: Candidates if role === 'company' || 'coordinator'
     const [jobResults, companyResults, CandidateResults] = await Promise.all([
       getJobs( searchTerm, 'title', 3 ),
       getCompanies( searchTerm, 'name', 3 ),

@@ -323,7 +323,6 @@ export class BullhornService {
         const bullhornId = res.data.changedEntityId;
         const newDbCompany = {
           ...company,
-          id: `bl-${bullhornId}`,
           address_address1: company.address?.address1 || null,
           address_address2: company.address?.address2 || null,
           address_city: company.address?.city || null,
@@ -387,6 +386,7 @@ export class BullhornService {
         });
         console.log(url);
         
+        if (res.status === 200) {
           const { data } = res.data;
           total = res.data.total;
           this.saveJobFunc(data);
@@ -635,3 +635,4 @@ export class BullhornService {
             "firstName",
             "gender",
             "hourlyRate",
+            "hourlyRateLow",

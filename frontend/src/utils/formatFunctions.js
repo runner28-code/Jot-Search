@@ -16,7 +16,6 @@ export function formatCandidateData(candidateData) {
   formattedData.address = buildCandidateAddress(candidateData);
   formattedData.avatar = formatAvatarUrl(candidateData.avatar, candidateData.firstname, candidateData.lastname);
   if ( !candidateData.occupation && !candidateData.companyName ) {
-// Temp comment
     formattedData.occupationString = 'No Occupation Provided';
   } else {
     const occupation = candidateData.occupation || 'N/A';
@@ -138,7 +137,6 @@ export function buildCandidateAddress(candidateData, full = false) {
     if (line && line !== 'N/A') {
       address += `${line}, `;
     }
-  });
   if ( address === '' ) {
     return 'N/A';
   }

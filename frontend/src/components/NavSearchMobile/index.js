@@ -49,7 +49,6 @@ export default function NavSearchMobile({ placeholder }) {
     } else {
       return { filterKey: 'name', filterValue: searchTerm }
     }
-  };
 
   const [isOpen, setIsOpen] = useState(false);
 

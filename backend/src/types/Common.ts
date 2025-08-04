@@ -90,3 +90,4 @@ export type ApplyResponse = {
   message?: any;
 };
 
+export type GetSavedCompaniesResponse = {

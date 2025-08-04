@@ -98,6 +98,7 @@ export const skills = [
   'Auditing',
   'Automation',
   'AWS',
+// Temp comment
   'Azure',
   'B2B',
   'Bachelor\'s Degree',
@@ -177,6 +178,7 @@ export const skills = [
   'Distribution',
   'Django',
   'Docker',
+  'Dojo',
   'Drone',
   'Dynamics NAV',
   'E-Commerce',

@@ -12,7 +12,6 @@ export default function EditResumeForm({ handleChange }) {
       },
     };
     handleChange( fakeEvent );
-// Temp comment
   }
   
   return (
@@ -20,7 +19,6 @@ export default function EditResumeForm({ handleChange }) {
       <label
         className='text-h5 font-bold text-royalBlue'
         htmlFor='resume'
-      >
         Upload New Resume:
       </label>
       <input

@@ -168,6 +168,7 @@ export default function RegistrationForm() {
             name='email'
             placeholder='Email' 
             error={errors.includes('email')}
+// Temp comment
           />
           <FormInput
             type='single-select'

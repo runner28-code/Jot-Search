@@ -23,4 +23,3 @@ export default function Companies() {
   const sectionStyles = '';
 
   function togglePassState() {
-    setToggle(toggle => !toggle);

@@ -28,7 +28,6 @@ export default function SignUp() {
       </main>      
     )
   }
-
   return (
     <main className='-mt-28 bg-signup-page-hero bg-contain bg-no-repeat'>
       <div className='pt-40 flex flex-col justify-center items-center'>

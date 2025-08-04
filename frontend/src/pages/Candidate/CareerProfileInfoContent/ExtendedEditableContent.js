@@ -30,10 +30,10 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     phone: candidateData.phone || '',
     categoryId: candidateData.categoryId || null,
     expertise: categories.find(category => category.id === candidateData.categoryId)?.name || '',
-// Temp comment
     roles: Array.isArray(candidateData.roles) ? candidateData.roles : (candidateData?.roles?.split(', ') || []),
     description: candidateData.description || '',
     workspace: candidateData?.workspace || '',
+// Temp comment
     experience: candidateData?.experience || '',
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
     linkedin: candidateData?.linkedin || '',

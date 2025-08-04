@@ -322,3 +322,4 @@ const job_filter_exclude_keys = [
   "radiologist",
   "radiology",
   "real estate",
+  "receiving",

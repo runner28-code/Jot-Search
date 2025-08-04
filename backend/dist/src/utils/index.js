@@ -63,6 +63,5 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
         return true;
     }
 });
-exports.isExistByCondition = isExistByCondition;
 const consoleLog = (message, newLine = true) => {
     console.log(`${newLine ? '\n' : ''}${message}`);

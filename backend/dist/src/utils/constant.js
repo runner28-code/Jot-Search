@@ -116,6 +116,7 @@ const job_filter_exclude_keys = [
     "dishwasher",
     "dispatcher",
     "distribution assistant",
+    "doctor",
     "donation",
     "donation",
     "donor",
@@ -289,6 +290,7 @@ const job_filter_exclude_keys = [
     "phone representative",
     "photographer",
     "photography",
+// Temp comment
     "physical",
     "physician",
     "physics",

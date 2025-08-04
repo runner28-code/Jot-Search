@@ -17,6 +17,7 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
         };
         const [job] = await BigQueryService.getClient().createQueryJob(options);
         const [res] = await job.getQueryResults();
+
         if (res && res.length > 0 && `'${res[0].id}'` === id) {
             return true;
         }

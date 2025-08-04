@@ -25,7 +25,6 @@ try {
   signatureVersion: "v4",
 })
 } catch (error) {
-  console.error(error)
 }
 
 const uploadToS3 = async(req: any, res: any) => {
@@ -56,6 +55,7 @@ const uploadToS3 = async(req: any, res: any) => {
 
     try {
       const response = await put.promise()
+  
       res.status(200).send({
         file: response.Location,
         result: true,

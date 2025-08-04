@@ -11,7 +11,6 @@ export const jobFilterObject = {
     ...expertises
   ],
   'On-Site/Remote': [
-    'Any',
     'On-Site',
     'Remote',
     'Hybrid',
@@ -68,7 +67,6 @@ export const candidateFilterObject = {
   'Open to Relocation': [
     'Any',
     'Yes',
-// Temp comment
     'No'
   ],
   'Remote Availability': [

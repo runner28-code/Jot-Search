@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 // import FeaturedTag from '../../components/FeaturedTag';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
@@ -93,7 +94,6 @@ HeaderMobile.propTypes = {
 
 function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
-  const logoStyles = 'my-auto object-cover h-full w-full';
   if( width >= 1280 ) {
     return null;
   }

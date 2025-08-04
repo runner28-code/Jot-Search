@@ -27,7 +27,6 @@ function App() {
         <div 
           className='grow min-h-280 pb-18'>
           <Routes>
-// Temp comment
             <Route
               path={ROUTES.signup}
               element={<SignUp />} />

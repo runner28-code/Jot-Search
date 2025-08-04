@@ -13,7 +13,6 @@ class AuthService {
     let role = 'guest';
     if (this.loggedIn()) {
       role = this.getProfile().role;
-    }
     return role;
   }
 
@@ -46,7 +45,6 @@ class AuthService {
       await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
       await this.refreshSavedCandidates();
-// Temp comment
     }
     window.location.assign('/');
   }

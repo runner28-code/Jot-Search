@@ -216,3 +216,4 @@ export type Candidate = {
     isAnonymized?: string;
     isDeleted?: string;
     isEditable?: string;
+    isExempt?: string;
