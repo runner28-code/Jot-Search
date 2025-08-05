@@ -211,6 +211,7 @@ export const saveCandidates = async (candidates: any[]) => {
         if (existing) {
           console.log(`Candidate with ID: ${candidate.id} exists`);
           continue;
+        }
         const candidateData = { ...candidate };
         Object.keys(candidateData).forEach((key) => {
           if (expludeFields.includes(key)) {

@@ -2,7 +2,6 @@ import { Controller, Param, Body, Get, Post, Put, Delete, QueryParam, Authorized
 import { BullhornService } from '../services/BullhornService';
 
 @Controller()
-export class BullhornController {
   // @Authorized()
   @Get('/bullhorn/companies')
   async getCompanies() {
@@ -19,3 +18,4 @@ export class BullhornController {
   // @Authorized()
   @Get('/bullhorn/clientContacts')
   async getClientContacts() {
+    return await (await BullhornService.getClient()).getClientContacts();

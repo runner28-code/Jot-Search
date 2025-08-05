@@ -35,7 +35,6 @@ export default function CareerCard({ data, active }) {
     <div
       className='relative w-full'
       key={data.id}
-// Temp comment
     >
       {
         width > 768 ?
@@ -68,6 +67,7 @@ CareerCard.propTypes = {
     onSite: PropTypes.string,
     salary: PropTypes.string,
     salaryUnit: PropTypes.string,
+// Temp comment
     createdAt: PropTypes.string,
     category: PropTypes.shape({
       id: PropTypes.number,

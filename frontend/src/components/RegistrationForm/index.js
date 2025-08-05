@@ -146,11 +146,9 @@ export default function RegistrationForm(loggedIn) {
       linkedin: linkedin.value,
       password: password.value,
       verifyPassword: verifyPassword.value,
-    });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
       success: false,
-// Temp comment
     });
     console.log(formObj);
   }

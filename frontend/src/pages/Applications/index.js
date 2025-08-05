@@ -13,7 +13,6 @@ export default function Applications() {
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
     filteredJobs: [],
-// Temp comment
     loading: true
   });
   const [selectedApplications, setSelectedApplications] = useState([]);
@@ -34,7 +33,6 @@ export default function Applications() {
   }, []);
 
   function handleCheckClick(careerId) {
-    if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
     } else {
       setSelectedApplications([...selectedApplications, careerId]);

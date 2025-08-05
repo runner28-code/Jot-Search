@@ -70,7 +70,6 @@ export default function RegistrationFormInternal(loggedIn) {
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
       // Validation
-      const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
@@ -101,6 +100,7 @@ export default function RegistrationFormInternal(loggedIn) {
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
+        // Set success to true if on add-user page, navigate user to login if not
         if ( addType === 'coordinator' ) {
           return setSubmissionObject({
             loading: false,

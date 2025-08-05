@@ -32,9 +32,9 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
       </div>
       { renderTextOrInputs(editMode, contentObject, handlePropertyChange) }
     </section>
+// Temp comment
   )
 }
-// Temp comment
 
 EditableSection.propTypes = {
   entityID: PropTypes.string.isRequired,

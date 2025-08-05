@@ -69,7 +69,6 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
         key={filterType}
         filterType={filterType}
         choices={choices}
-// Temp comment
         chosen={chosen}
         handleFilterChange={handleFilterChange}
       />

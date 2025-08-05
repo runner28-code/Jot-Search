@@ -42,6 +42,7 @@ export default function Candidate() {
   useEffect(async () => {
     const candidate = await getCandidateById(id);
     const formattedCandidate = formatCandidateData({ id, ...candidate });
+// Temp comment
     setCandidateData(formattedCandidate);
     setLoading(false);
   }, []);
@@ -109,7 +110,6 @@ export default function Candidate() {
             <h3 className={ width >= 990 ? 'text-h5 font-medium mb-15 text-black70% font-spaceGrotesk' : 'text-[2.5rem] font-medium mb-15 text-black70% font-spaceGrotesk'}>My Preferences</h3>
             <PreferenceItem
               toggled={!!candidateData.activelyLooking}
-// Temp comment
               fieldName='activelyLooking'
               label={PREFERENCE_ITEMS.activelyLooking}
               onUpdate={handleCandidateUpdate} />

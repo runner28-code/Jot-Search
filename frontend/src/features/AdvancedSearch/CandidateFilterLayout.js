@@ -78,7 +78,6 @@ export default function CandidateFilterLayout(props) {
         <FormInput
           type='typeahead'
           dropdownType='tags'
-          name='skills'
           label='Your skills (select at least 3)'
           placeholder='Select all that apply'
           required={true}
@@ -94,7 +93,6 @@ export default function CandidateFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-// Temp comment
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
           additionalClasses='w-1/2'

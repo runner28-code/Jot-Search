@@ -60,7 +60,6 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
     }
     catch (error) {
         console.log(error);
-        return true;
     }
 });
 exports.isExistByCondition = isExistByCondition;

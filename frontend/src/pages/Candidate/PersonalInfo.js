@@ -61,7 +61,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
         ...formData,
         community: ''
       });
-// Temp comment
     }
     handleChange(name, value);
   }

@@ -97,6 +97,7 @@ export default function Dropdown(props) {
   }
 
   const suffix = (name) => {
+// Temp comment
     if (name === YEARS_OF_EXPERIENCE) { 
       return ' years of experience'
     }

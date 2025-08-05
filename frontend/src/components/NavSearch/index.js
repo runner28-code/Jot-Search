@@ -78,7 +78,6 @@ export default function NavSearch({ placeholder }) {
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
-
   const combinedResults = {
     jobs: jobs || [],
     companies: companies || [],
@@ -117,6 +116,7 @@ NavSearch.propTypes = {
 }
 
 function renderResultsContainer( results, searchTerm ) {
+  if ( !searchTerm || results.forceHidden ) { // if no searchTerm, no results to display
     return null;
   }
 

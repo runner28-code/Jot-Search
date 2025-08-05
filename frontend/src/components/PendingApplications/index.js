@@ -12,6 +12,7 @@ export default function PendingApplications () {
   const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
+// Temp comment
     jobs: [],
     filteredJobs: [],
     loading: true
@@ -43,6 +44,7 @@ export default function PendingApplications () {
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
           appliedJobsObject.loading ?
+            <LoadingSpinner />
             :
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
               return(<>

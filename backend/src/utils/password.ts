@@ -13,3 +13,4 @@ export const encryptPassword = (password: string) => {
 
     return `${sr}${encrypted_password_hash.digest('hex')}`;
 }
+

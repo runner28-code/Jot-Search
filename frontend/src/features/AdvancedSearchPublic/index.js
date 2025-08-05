@@ -109,7 +109,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     setFilterObject({
       ...filterObject,
       [filterType]: choice
-    });
     setPage(1);
   }
 

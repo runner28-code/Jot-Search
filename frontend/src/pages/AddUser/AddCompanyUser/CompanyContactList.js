@@ -11,7 +11,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
     } else {
       setSelectedContacts([...selectedContacts, contact]);
     }
-// Temp comment
   };
 
   const handleSyncClick = () => {
@@ -35,6 +34,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               key={contact.id}
               className={ 'flex items-center px-s py-s ' + (index < clientContacts.length - 1 ? 'border-b border-grey300' : '') }
               onClick={() => handleContactClick(contact)}
+// Temp comment
             >
               <input
                 type='checkbox'
