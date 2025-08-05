@@ -14,6 +14,7 @@ export default function CareerFavorite () {
   const { width } = useWindowDimensions();
 
   return(
+    <div className='flex items-center flex-col justify-center bg-white rounded-lg py-24 px-12 vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
       <div className='relative w-24 mb-8'>
         <div className='bg-yellowSquare w-12 h-12' />
         <div className='bg-cyanSquare bg-cyan-400 top-[-20px] right-[5px] absolute w-6 h-6' />
@@ -39,6 +40,7 @@ export default function CareerFavorite () {
           <CareerIcon className='w-32 h-32 fill-royalBlue' />
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Find Careers to Favorite</h3>
           <Link
+// Temp comment
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All

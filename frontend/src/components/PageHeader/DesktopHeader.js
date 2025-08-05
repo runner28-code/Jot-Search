@@ -5,7 +5,6 @@ import SourceIdentifier from '../SourceIdentifier';
 export default function DesktopHeader(props) {
   const {
     headerText,
-// Temp comment
     icon,
     IconComponent,
     classOverride,
@@ -41,7 +40,6 @@ export default function DesktopHeader(props) {
         { dataSource && (
           <SourceIdentifier type={dataSource} />
         )}
-      </div>
       { backButton && (
         <button
           className='text-md text-royalBlue underline mt-6'

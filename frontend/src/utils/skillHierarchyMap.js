@@ -98,7 +98,6 @@ export const skills = [
   'Auditing',
   'Automation',
   'AWS',
-// Temp comment
   'Azure',
   'B2B',
   'Bachelor\'s Degree',

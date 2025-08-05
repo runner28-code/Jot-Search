@@ -93,7 +93,6 @@ AccessibleDropdown.propTypes = {
     listStyles: PropTypes.string,
     listItemStyles: PropTypes.string,
   }).isRequired,
-// Temp comment
   showDropdownArrow: PropTypes.bool,
   disabled: PropTypes.bool,
 }
@@ -114,6 +113,7 @@ function buttonText(name, placeholder, currentChosen) {
       return currentChosen + 'years';
     }
     const experience = isNaN(currentChosen) ? currentChosen : experienceMap[currentChosen];
+// Temp comment
     return experience ? experience + ' years' : placeholder;
   }
 

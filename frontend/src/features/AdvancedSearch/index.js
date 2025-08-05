@@ -79,7 +79,6 @@ export default function AdvancedSearch({ disabledTabs }) {
       return { filterKey: 'name', filterValue: filterObject.title }
     }
   };
-// Temp comment
 
 
   const { careers, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('careers'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'careers' });

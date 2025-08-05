@@ -82,6 +82,7 @@ export default function Candidate() {
     }
   }
 
+  const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 
   if (loading) { return <LoadingSpinner /> }
   return (
@@ -108,6 +109,7 @@ export default function Candidate() {
             <h3 className={ width >= 990 ? 'text-h5 font-medium mb-15 text-black70% font-spaceGrotesk' : 'text-[2.5rem] font-medium mb-15 text-black70% font-spaceGrotesk'}>My Preferences</h3>
             <PreferenceItem
               toggled={!!candidateData.activelyLooking}
+// Temp comment
               fieldName='activelyLooking'
               label={PREFERENCE_ITEMS.activelyLooking}
               onUpdate={handleCandidateUpdate} />

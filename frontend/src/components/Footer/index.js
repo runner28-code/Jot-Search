@@ -28,7 +28,6 @@ export default function Footer() {
         <a href={ROUTES.linkedin}>
           <img
             src={linkedin}
-            className={socialIconStyleMobile}
           />
         </a>
         <a href={ROUTES.twitter}>
@@ -116,7 +115,6 @@ export default function Footer() {
         />
       </a>
       <a href={ROUTES.instagram}>
-// Temp comment
         <img
           src={instagram}
           className={socialIconStyle}

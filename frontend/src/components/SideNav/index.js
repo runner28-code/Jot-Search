@@ -16,13 +16,13 @@ export default function SideNav({ userType }) {
   if ( hiddenPages.includes(pathname) ) {
     return null;
   }
-// Temp comment
 
   if( userType === 'guest' ) {
     return null;
   }
   const { width } = useWindowDimensions();
   if ( width < 1280 ) {
+// Temp comment
     return null;
   }
   return (

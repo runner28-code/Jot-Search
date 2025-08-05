@@ -57,6 +57,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (state.title) initialFilterState.title = state.title;
     if (state.expertise) initialFilterState.Expertise = state.expertise;
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
+// Temp comment
   }
 
   const [filterObject, setFilterObject] = useState(initialFilterState);
@@ -64,7 +65,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
-// Temp comment
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,

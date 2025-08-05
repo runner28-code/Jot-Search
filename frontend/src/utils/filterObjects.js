@@ -11,6 +11,7 @@ export const jobFilterObject = {
     ...expertises
   ],
   'On-Site/Remote': [
+    'Any',
     'On-Site',
     'Remote',
     'Hybrid',

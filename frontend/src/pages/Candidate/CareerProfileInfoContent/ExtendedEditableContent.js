@@ -33,7 +33,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     roles: Array.isArray(candidateData.roles) ? candidateData.roles : (candidateData?.roles?.split(', ') || []),
     description: candidateData.description || '',
     workspace: candidateData?.workspace || '',
-// Temp comment
     experience: candidateData?.experience || '',
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
     linkedin: candidateData?.linkedin || '',
@@ -54,7 +53,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       const pluralizedFolderName = name + 's';
       const newPath = await uploadFile(pluralizedFolderName, fileToUpload);
       console.log(newPath);
-      return setFormData({ ...formData, [name]: newPath });
     }
     setFormData({ ...formData, [name]: value });
   }

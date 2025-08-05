@@ -323,6 +323,7 @@ export class BullhornService {
         const bullhornId = res.data.changedEntityId;
         const newDbCompany = {
           ...company,
+          id: `bl-${bullhornId}`,
           address_address1: company.address?.address1 || null,
           address_address2: company.address?.address2 || null,
           address_city: company.address?.city || null,

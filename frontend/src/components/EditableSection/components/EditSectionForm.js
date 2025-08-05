@@ -42,6 +42,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         if ( key === 'email' ) {
           return <Property
             key={key}
+// Temp comment
             name={key}
             value={value}
           />
@@ -63,6 +64,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               name={key}
               onChange={handleChange}
               value={value}
+            />
           </div>
         )
       })}

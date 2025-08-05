@@ -13,6 +13,7 @@ export default function Applications() {
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
     filteredJobs: [],
+// Temp comment
     loading: true
   });
   const [selectedApplications, setSelectedApplications] = useState([]);

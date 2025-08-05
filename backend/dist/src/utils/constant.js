@@ -290,7 +290,6 @@ const job_filter_exclude_keys = [
     "phone representative",
     "photographer",
     "photography",
-// Temp comment
     "physical",
     "physician",
     "physics",

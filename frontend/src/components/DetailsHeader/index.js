@@ -13,6 +13,7 @@ export default function DetailsHeader({ type, source }) {
       break;
     case 'company':
       Icon = CompanyIcon;
+      break;
     case 'career':
     default:
       Icon = CareerIcon;

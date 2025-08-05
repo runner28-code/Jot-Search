@@ -202,6 +202,7 @@ function renderAddress( city, state ) {
 function renderLinkedIn( url, headerRowTextStyles ) {
   const textStyles = headerRowTextStyles += 'underline text-sky-700';
   if( !url ) {
+    return (
       <a
         className={textStyles}
         href='https://www.linkedin.com/'

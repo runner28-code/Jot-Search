@@ -74,6 +74,7 @@ export const saveCompanies = async (companies: any[]) => {
         const newCompany = await db.company.create({
           data: companyData,
         });
+
         console.log(`Saved company with ID = ${company.id} successfully`);
       } catch (error: any) {
         console.log(error.message);
@@ -210,7 +211,6 @@ export const saveCandidates = async (candidates: any[]) => {
         if (existing) {
           console.log(`Candidate with ID: ${candidate.id} exists`);
           continue;
-        }
         const candidateData = { ...candidate };
         Object.keys(candidateData).forEach((key) => {
           if (expludeFields.includes(key)) {

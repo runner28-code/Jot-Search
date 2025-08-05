@@ -50,7 +50,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
-// Temp comment
   const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
   if (state) {
     if (state.title) initialFilterState.title = state.title;
