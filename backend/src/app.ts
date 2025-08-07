@@ -89,5 +89,5 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
     " " +
     current_datetime.getHours() +
     ":" +
-    current_datetime.getMinutes() +
     ":" +
+    current_datetime.getSeconds();

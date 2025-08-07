@@ -96,7 +96,6 @@ export const register = async (data: User) => {
 
     return { result: true };
   } catch (error) {
-    console.error(error);
     return { result: false, error };
   }
 };
@@ -412,3 +411,8 @@ export const getCoordinatorDashboardStats = async (days: number) => {
         mode: 'insensitive'
       },
     }
+  });
+  const totalOpenJobsInPreviousPeriod = await db.job.count({
+    where: {
+      status: {
+        equals: 'active',

@@ -47,7 +47,6 @@ export default function Apply() {
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
-// Temp comment
     error: false,
     errorMessage: ''
   });
@@ -154,3 +153,7 @@ export default function Apply() {
       ...applicationObject,
       [name]: value,
     });
+  }
+
+  function handlePhoneInputChange(value) {
+    setApplicationObject({ ...applicationObject, phone: value });

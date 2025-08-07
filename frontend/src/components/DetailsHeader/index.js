@@ -6,12 +6,12 @@ import SourceIdentifier from '../SourceIdentifier';
 import BackButton from '../BackButton';
 
 export default function DetailsHeader({ type, source }) {
-// Temp comment
   let Icon = undefined;
   switch(type) {
     case 'candidate':
       Icon = CandidatesIcon;
       break;
+// Temp comment
     case 'company':
       Icon = CompanyIcon;
       break;

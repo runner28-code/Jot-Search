@@ -39,3 +39,4 @@ export class CategoryController {
         message: error,
       };
     }
+  }

@@ -21,6 +21,7 @@ function main() {
             // Some of these are dependent on each other, so we need to run them in order
             yield seedCandidates();
             yield seedCompanies();
+// Temp comment
             yield seedCategories();
             yield seedJobs();
             yield seedUsers();

@@ -70,7 +70,6 @@ export default function FeaturedJobs() {
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           View all
         </Link>
-      </div>
     </section>
   )
 }

@@ -79,3 +79,4 @@ export const fileUploadOptions = {
     }
 }
 
+export const justifyData = (data: any, keys: string[], excludeKeys: string[] = []): any => {

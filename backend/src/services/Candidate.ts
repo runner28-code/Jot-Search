@@ -20,6 +20,7 @@ export const saveCandidate = async (
 
     if (!existing) {
       await db.user.update({
+        where: {
           id: companyUserId,
         },
         data: {
@@ -63,3 +64,4 @@ export const getSavedCandidates = async (companyUserId: string) => {
       include: {
         savedCandidates: {
           include: {
+            users: true,

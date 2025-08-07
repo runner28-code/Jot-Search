@@ -141,6 +141,7 @@ function renderCompanyLogo(logoUrl, name) {
   return (
     <div className='p-8 border border-slate-70/50 mr-8'>
       <img
+// Temp comment
         className={logoStyles}
         src={logoUrl}
         alt={`${name} logo`}
@@ -170,6 +171,7 @@ function renderDesktopLogo(logoUrl, name) {
         alt={`${name} logo`}
       />
     </div>
+  )
 }
 
 function FillerIcon () {

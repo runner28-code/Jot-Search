@@ -44,6 +44,7 @@ export const roles = {
     'Misc. Science',
     'Other'
   ],
+  'Software & Engineering': [
     'AI Machine Learning',
     'Backend Engineer',
     'Frontend Engineer',
@@ -259,3 +260,6 @@ export const skills = [
   'Manufacturing',
   'Market Analysis',
   'Market Strategy',
+  'Marketing Campaigns',
+  'Marketing Research',
+  'Masters Degree',

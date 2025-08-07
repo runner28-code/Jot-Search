@@ -46,3 +46,4 @@ CREATE TABLE "GetroMember" (
     "verified" BOOLEAN,
     "website_url" TEXT,
     "share_permission" BOOLEAN,
+    "current_location" TEXT,

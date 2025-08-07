@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
@@ -33,6 +32,7 @@ export const UpdateJobFeatured = ({ job }) => {
           aria-checked={toggled}
           onClick={async() => {
             const { result } = await saveJob({ featured: !toggled, id: job.id })
+// Temp comment
 
             // TODO: Replace with react-query refetch
             if(result) {

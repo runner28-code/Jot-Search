@@ -10,7 +10,6 @@ CREATE TABLE "Lead" (
     "campaignSource" TEXT,
     "candidates" TEXT,
     "category" TEXT,
-    "clientContacts" TEXT,
     "clientCorporation" TEXT,
     "comments" TEXT,
     "companyName" TEXT,
@@ -43,3 +42,4 @@ CREATE TABLE "Lead" (
     "nickName" TEXT,
     "notes" TEXT,
     "numEmployees" TEXT,
+    "occupation" TEXT,

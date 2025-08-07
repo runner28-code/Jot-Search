@@ -23,7 +23,7 @@ CREATE TABLE "GetroJobInfo" (
     "discarded" TEXT,
     "employment_types" TEXT,
     "expires_at" TIMESTAMP(3),
-    "job_functions" TEXT,
     "liked" TEXT,
     "locations" TEXT,
     "organization_domain" TEXT,
+    "organization_id" TEXT,

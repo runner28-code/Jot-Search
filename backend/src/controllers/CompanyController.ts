@@ -237,3 +237,6 @@ export class CompanyController {
       const getroCompanies = await db.getroCompany.findMany({
         select: {
           domain: true,
+          logo_url: true,
+          linkedin_url: true,
+        },

@@ -3,6 +3,7 @@ name: Prod - ECS Deployment
 on:
   push:
     branches:
+      - main
 
 env:
   AWS_REGION: 'us-east-1'
@@ -36,3 +37,4 @@ jobs:
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
       env:
+        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}

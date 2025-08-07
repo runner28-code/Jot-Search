@@ -49,6 +49,7 @@ function NavBarLayout() {
       </div>
       {/* Nav Search */}
     </nav>
+  )
 }
 
 const DesktopNavBarLayout = () => {

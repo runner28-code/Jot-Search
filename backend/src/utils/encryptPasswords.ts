@@ -2,7 +2,6 @@
 // npm run build && GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' node ./dist/utils/encryptPasswords.js
 // change where condition in select for alter script scope
 
-import { encryptPassword } from "./password";
 import { User, USERKEYS } from "../types/User";
 import { BigQueryService } from "../services/BigQueryService";
 import { DATASET_MAIN, Tables } from "../types/Common";
@@ -32,3 +31,4 @@ import { DATASET_MAIN, Tables } from "../types/Common";
               user.password = encryptPassword(user.password);
 
               const update_query = `
+                UPDATE \`${DATASET_MAIN}.${Tables.USER}\`

@@ -39,3 +39,4 @@ CREATE TABLE "ClientContact" (
     "firstName" TEXT,
     "isAnonymized" BOOLEAN,
     "isDayLightSavings" BOOLEAN,
+    "isDeleted" BOOLEAN,

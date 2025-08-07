@@ -31,7 +31,6 @@ export const DATASET_MAIN = config.mainDatasetID || "";
 // Common
 export enum DataSource {
   BULLHORN = "bullhorn",
-  GETRO = "getro",
   UNKNOWN = "unknown",
 }
 
@@ -91,3 +90,5 @@ export type ApplyResponse = {
 };
 
 export type GetSavedCompaniesResponse = {
+  companies?: Company[];
+} & ApplyResponse;

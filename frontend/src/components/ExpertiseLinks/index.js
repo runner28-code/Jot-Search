@@ -17,14 +17,12 @@ export default function ExpertiseLinks() {
         Browse Opportunities by Career Expertise
       </h4>
       <div className='mt-20 flex'>
-        {/* Software & Engineering */}
         <Link
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Software & Engineering' }}
         >
           <img
-// Temp comment
             src={softwareEngineeringIcon}
             alt='Software Engineering Icon'
             className={iconStyles}

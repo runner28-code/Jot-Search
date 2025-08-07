@@ -5,6 +5,7 @@ import AuthService from '../../services/auth';
 
 const dropdownFilters = [
   'Expertise',
+  'On-Site/Remote',
   'Years Experience',
   'Status',
 ];
@@ -57,6 +58,7 @@ export default function CareerFilterLayout(props) {
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}
+// Temp comment
         >
           Clear All
         </button>

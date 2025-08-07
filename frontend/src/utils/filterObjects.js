@@ -87,7 +87,6 @@ export const candidateFilterObject = {
     'Any',
     'Yes',
     'No'
-// Temp comment
   ],
   'Actively Looking': [
     'Any',
@@ -140,4 +139,5 @@ export function buildSearchFilters(filterObject) {
       });
     }
   });
+// Temp comment
   return searchFilters

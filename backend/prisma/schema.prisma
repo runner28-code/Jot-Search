@@ -160,6 +160,7 @@ model ClientContact {
   mobile             String?
   name               String?
   namePrefix         String?
+  nameSuffix         String?
   nickName           String?
   numEmployees       Int?
   occupation         String?
@@ -489,3 +490,8 @@ model GetroJobInfo {
   deactivated_at DateTime?
   closed_at      DateTime?
   bounty         String?
+}
+
+model User {
+  id        String  @id @default(uuid())
+  firstname String

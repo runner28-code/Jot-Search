@@ -46,3 +46,4 @@ export const saveCompany = async (company: string, candidate: string) => {
     }
 
     return {
+      result: true,

@@ -12,7 +12,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
 
   return (
     <div
-      className='relative'
       key={data.id}
     >
       <Link

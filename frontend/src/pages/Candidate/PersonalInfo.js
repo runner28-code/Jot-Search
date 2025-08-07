@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import PhoneInput from 'react-phone-number-input/input'
 import Dropdown from '../../components/UniversalDropdown';
@@ -45,6 +44,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     setFormData({ ...formData, [name]: value });
   }
 
+// Temp comment
   function handleChange(name, value) {
     setFormData({
       ...formData,

@@ -79,3 +79,4 @@ export const sendNewUserNotification = async (to: string, name: string) => {
     throw error;
   }
 }
+

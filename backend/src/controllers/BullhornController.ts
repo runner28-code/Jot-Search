@@ -20,3 +20,4 @@ export class BullhornController {
   @Get('/bullhorn/clientContacts')
   async getClientContacts() {
     return await (await BullhornService.getClient()).getClientContacts();
+  }

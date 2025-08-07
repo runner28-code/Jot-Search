@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
-import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import postingAgeIcon from '../../../assets/icons/calendar.svg';
 import clockIcon from '../../../assets/icons/clock.svg';
@@ -178,6 +177,7 @@ DesktopCard.propTypes = {
 function MobileCard({ dataObj, active }) {
   const { data } = dataObj;
   const categoryString = data.category?.name.toUpperCase() || 'CATEGORY N/A';
+  return (
     <Link
       to={`${ROUTES.careers}/${data.id}`}
       className='w-full flex mb-10 pl-4 pt-9 pr-8 pb-8 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'

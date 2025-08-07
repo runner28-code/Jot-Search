@@ -93,3 +93,4 @@ export const saveJob = async (job: string, candidate: string) => {
     console.log("success");
     return {
       result: true,
+      messsage: existing ? "unsaved job" : "saved job",

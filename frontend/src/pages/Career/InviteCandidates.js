@@ -7,6 +7,7 @@ import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
+// Temp comment
 
 export default function InviteCandidates({ job }) {
   const { candidates, isLoading } = useGetCandidates({
@@ -35,7 +36,6 @@ export default function InviteCandidates({ job }) {
   }
 
   const SelectedValues = () => {
-// Temp comment
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (
         <span

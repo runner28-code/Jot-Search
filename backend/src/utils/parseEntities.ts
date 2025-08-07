@@ -85,3 +85,4 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
     willRelocate: data.willRelocate,
     ethnicity: data.ethnicity,
     workAuthorized: data.workAuthorized,
+    disability: data.disability,

@@ -71,6 +71,7 @@ export default function CandidateFilterLayout(props) {
   }
   console.log(filterObject)
 
+// Temp comment
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
@@ -78,7 +79,6 @@ export default function CandidateFilterLayout(props) {
         <FormInput
           type='typeahead'
           dropdownType='tags'
-// Temp comment
           name='skills'
           label='Your skills (select at least 3)'
           placeholder='Select all that apply'

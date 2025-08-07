@@ -318,3 +318,7 @@ const job_filter_exclude_keys = [
     "qc",
     "quality control",
     "quality coordinator",
+    "quality manager",
+    "ra",
+    "radio",
+    "radiologist",

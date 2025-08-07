@@ -9,7 +9,6 @@ import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import {
   roles as roleChoices,
   skills as skillChoices,
-// Temp comment
 } from '../../utils/skillHierarchyMap';
 import {
   inputValidation,
@@ -136,6 +135,7 @@ export default function RegistrationFormInternal(loggedIn) {
 
   async function handleSubmit(event) {
     event.preventDefault();
+// Temp comment
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
     setErrors([]);

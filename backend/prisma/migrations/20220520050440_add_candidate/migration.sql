@@ -65,3 +65,4 @@ CREATE TABLE "Candidate" (
     "phone" TEXT,
     "phone2" TEXT,
     "phone3" TEXT,
+    "preferredContact" TEXT,

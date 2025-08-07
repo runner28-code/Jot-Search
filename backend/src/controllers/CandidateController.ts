@@ -272,3 +272,6 @@ export class CandidateController {
           }
         });
 
+        totalPromise = db.candidate.count({ where })
+      }
+
