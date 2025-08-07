@@ -33,7 +33,6 @@ export default function Auth() {
           path={ROUTES.logout}
           element={<Logout />} />
         <Route
-// Temp comment
           path={`${ROUTES.candidates}/:id`}
           element={<Candidate />} />
         <Route

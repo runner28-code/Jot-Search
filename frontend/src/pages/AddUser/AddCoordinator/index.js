@@ -11,7 +11,6 @@ export default function AddCoordinator() {
     errors: {},
   });
 
-// Temp comment
   // Submit form data when submissionObject.loading is set to true
   useEffect(async () => {
     if (submissionObject.loading) {

@@ -86,6 +86,7 @@ function HeaderContent({ companyData }) {
         </div>
 
         <FavoriteButton
+          type={'company'}
           data={companyData} />
       </div>
     </>
@@ -169,7 +170,6 @@ function renderDesktopLogo(logoUrl, name) {
         alt={`${name} logo`}
       />
     </div>
-  )
 }
 
 function FillerIcon () {

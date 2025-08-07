@@ -61,7 +61,6 @@ export default function AccountRecovery() {
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
             >
               Sign-up here
-            </Link>
           </div>
           { renderResponse() }
           <FormInput

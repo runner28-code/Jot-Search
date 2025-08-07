@@ -1,3 +1,4 @@
+// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
@@ -32,7 +33,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
       </div>
       { renderTextOrInputs(editMode, contentObject, handlePropertyChange) }
     </section>
-// Temp comment
   )
 }
 

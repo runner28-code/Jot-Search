@@ -160,7 +160,6 @@ model ClientContact {
   mobile             String?
   name               String?
   namePrefix         String?
-  nameSuffix         String?
   nickName           String?
   numEmployees       Int?
   occupation         String?

@@ -9,6 +9,7 @@ export const disabilityMap = {
 
 export const veteranStatusMap = {
   U: 'I prefer not to say',
+// Temp comment
   A: 'I have applied for membership in the uniformed service',
   R: 'I am present memeber of the uniformed service',
   S: 'I am a past member of the uniformed service',
@@ -39,7 +40,6 @@ export const ethnicityMap = {
 
 export const experienceMap = {
   '1': null,
-// Temp comment
   '2': '0-1',
   '3': '2-4',
   '4': '5-10',

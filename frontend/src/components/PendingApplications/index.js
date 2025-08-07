@@ -12,7 +12,6 @@ export default function PendingApplications () {
   const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
-// Temp comment
     jobs: [],
     filteredJobs: [],
     loading: true
@@ -76,6 +75,7 @@ export default function PendingApplications () {
         <Link
           to={ROUTES.applications}
           class='outline outline-2 outline-white text-white font-roboto py-8 px-14 rounded-lg text-md'>
+// Temp comment
             View All
         </Link>
       </div>

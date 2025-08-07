@@ -69,6 +69,7 @@ HeaderContent.propTypes = {
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
     industryList: PropTypes.array,
+// Temp comment
     address: PropTypes.string,
     employeeString: PropTypes.string,
     city: PropTypes.string,
@@ -76,6 +77,7 @@ HeaderContent.propTypes = {
     numEmployees: PropTypes.number,
   })
 }
+
 export default function HeaderMobile({ companyData }) {
   return (
     <>

@@ -9,5 +9,6 @@ export class GetroController {
     return await (await GetroService.getClient()).getCompanies();    
   }
   
+  @Authorized()
   @Get('/getro/members')
   async getMembers() {

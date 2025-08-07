@@ -29,7 +29,6 @@ export class BigQueryService {
             if (count) {
                 query = `
                     ${query}
-                    LIMIT ${count}
                 `;
             }
             const options = {

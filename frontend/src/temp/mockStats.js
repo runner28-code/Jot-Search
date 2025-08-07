@@ -1,4 +1,3 @@
-// Temp comment
 export const mockCandidateStats = {
   'Applications': {
     'Today': {
@@ -25,7 +24,6 @@ export const mockCandidateStats = {
   'Invitations': {
     'Today': {
       count: 3,
-      prevCount: 2
     },
     'Last 7 Days': {
       count: 4,

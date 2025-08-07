@@ -121,7 +121,6 @@ export type Job = {
 
 export type ClientContact = {
     id: string;
-    category?: string;
     certifications?: string;
     clientCorporation?: string;
     comments?: string;

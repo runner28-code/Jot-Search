@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import HistoryItem from './HistoryItem';
 import ViewAllLink from '../ViewAllLink';
+// Temp comment
 import AuthService from '../../services/auth';
 
 export default function History({ historyArr, id, headerStyles, hrStyles }) {
@@ -20,5 +21,6 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
       <ViewAllLink 
         href={viewAllHref} 
         text='View Full History' />
+    </section>
     <hr className={hrStyles} />
   </>)

@@ -16,7 +16,6 @@ export default function CompanyFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
-          placeholder='Search Companies'
           additionalClasses='w-1/2'
         />
         <button

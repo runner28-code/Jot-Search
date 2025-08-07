@@ -13,7 +13,6 @@ import filterIcon from '../../assets/images/filter-toggle.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
 
-// Temp comment
 export default function DashboardMinifiedDesktop ({ location }) {
 
   if( location === 'career' ) {
@@ -72,7 +71,6 @@ function CareerHeader ({ location }) {
       <div className='flex items-center justify-start flex-row mb-10 bg-sky-700 py-9 px-6'>
         <Link
           className='text-white underline basis-1/3'
-          to={ROUTES.careers}
         >Back</Link>
         <div className='basis-2/6'>
           <TypeTabs location={location}/>

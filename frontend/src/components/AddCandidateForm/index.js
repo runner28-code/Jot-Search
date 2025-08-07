@@ -254,7 +254,6 @@ export default function RegistrationForm() {
           <FormInput
             type='file'
             name='resumeFile'
-// Temp comment
             placeholder='Upload Resume'
             value={formObj.resumeFile}
             onChange={handleChange}

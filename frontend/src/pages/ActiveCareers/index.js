@@ -37,8 +37,10 @@ export default function ActiveCareers() {
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });
 
   return (
+    <section>
       <PageHeader
         headerText='Active Careers'
+// Temp comment
         IconComponent={CareerIcon}
         classOverride='h-18 w-18'
         backButton

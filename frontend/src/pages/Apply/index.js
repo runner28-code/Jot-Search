@@ -5,6 +5,7 @@ import PhoneInput from 'react-phone-number-input/input'
 import { HiOutlineClipboardCheck } from 'react-icons/hi';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { AiFillFilePdf as PDFIcon } from 'react-icons/ai';
+import { BiUpload as UploadIcon } from 'react-icons/bi';
 import FormInput from '../../components/FormInput';
 import { getCandidateById, getJobById, applyToJob } from '../../services/API';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
@@ -46,6 +47,7 @@ export default function Apply() {
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
+// Temp comment
     error: false,
     errorMessage: ''
   });

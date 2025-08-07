@@ -78,6 +78,7 @@ export default function NavSearch({ placeholder }) {
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
+
   const combinedResults = {
     jobs: jobs || [],
     companies: companies || [],

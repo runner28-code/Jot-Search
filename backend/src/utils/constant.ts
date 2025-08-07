@@ -289,6 +289,7 @@ const job_filter_exclude_keys = [
   "photographer",
   "photography",
   "physical",
+  "physician",
   "physics",
   "plant",
   "plumber",

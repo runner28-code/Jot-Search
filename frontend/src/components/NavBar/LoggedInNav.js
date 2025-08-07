@@ -35,7 +35,6 @@ function NavBarLayout() {
           <img
             className='my-8 w-3/4'
             src={inTulsaLogoText}
-// Temp comment
             alt='logo'
           />
         </Link>
@@ -50,7 +49,6 @@ function NavBarLayout() {
       </div>
       {/* Nav Search */}
     </nav>
-  )
 }
 
 const DesktopNavBarLayout = () => {

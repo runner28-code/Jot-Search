@@ -62,6 +62,7 @@ export default function ReferralSearch() {
     setFilteredChoices(newFilteredChoices);
   }
 
+  function handleRemove( jobId ) {
     const newCurrentChosen = currentChosen.filter(job => job.id !== jobId);
     setCurrentChosen(newCurrentChosen);
     setFilteredChoices([ ...filteredChoices, choices.find(job => job.id === jobId) ]);
