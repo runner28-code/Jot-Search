@@ -28,6 +28,7 @@ export class GetroService {
                 'X-User-Token': this.password,
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
+            }
         };
     };
 
@@ -193,3 +194,4 @@ export class GetroService {
 
         if (res.status === 200) {
             const data = res.data;
+            return {

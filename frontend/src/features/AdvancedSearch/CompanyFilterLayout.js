@@ -7,7 +7,6 @@ export default function CompanyFilterLayout(props) {
     setSearchTerm,
     handleSearchClick,
     clearFilters,
-  } = props;
 
   return (
     <div className='flex flex-col gap-xxl-4'>
@@ -18,6 +17,7 @@ export default function CompanyFilterLayout(props) {
           handleSearchClick={handleSearchClick}
           placeholder='Search Companies'
           additionalClasses='w-1/2'
+        />
         <button
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}

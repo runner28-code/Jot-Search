@@ -27,6 +27,7 @@ export default function Filters(props) {
     </div>
   )
 }
+// Temp comment
 
 Filters.propTypes = {
   handleFilterChange: PropTypes.func,

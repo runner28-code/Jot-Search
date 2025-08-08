@@ -79,7 +79,6 @@ export default function RegistrationForm(loggedIn) {
           success: false,
         });
         return;
-      }
 
       // Attempt to upload resume before submitting user data
       const resumeResponse = await uploadFile('resumes', formObj.resume);
@@ -149,6 +148,7 @@ export default function RegistrationForm(loggedIn) {
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
+      success: false,
     });
     console.log(formObj);
   }

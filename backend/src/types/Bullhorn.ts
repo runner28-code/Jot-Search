@@ -198,6 +198,7 @@ export type Candidate = {
     description?: string;
     desiredLocations?: string;
     disability?: string;
+    educationDegree?: string;
     email?: string;
     email2?: string;
     email3?: string;
@@ -220,3 +221,4 @@ export type Candidate = {
     isExempt?: string;
     lastName?: string;
     leads?: string;
+    maritalStatus?: string;

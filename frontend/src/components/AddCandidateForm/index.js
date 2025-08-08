@@ -159,6 +159,7 @@ export default function RegistrationForm() {
           />
           <FormInput
             type='text'
+// Temp comment
             name='lastName'
             placeholder='Last name' 
             error={errors.includes('lastName')}
@@ -262,7 +263,6 @@ export default function RegistrationForm() {
           <FormInput
             type='password'
             name='password'
-// Temp comment
             placeholder='Password' 
             value={formObj.password}
             onChange={handleChange}

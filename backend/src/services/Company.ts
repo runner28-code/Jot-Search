@@ -9,7 +9,6 @@ export const saveCompany = async (company: string, candidate: string) => {
         savedCompanies: {
           some: {
             id: company,
-          },
         },
       },
     });
@@ -34,6 +33,7 @@ export const saveCompany = async (company: string, candidate: string) => {
       await db.user.update({
         where: {
           id: candidate,
+        },
         data: {
           savedCompanies: {
             connect: {
@@ -46,3 +46,4 @@ export const saveCompany = async (company: string, candidate: string) => {
 
     return {
       result: true,
+      message: existing ? "unsaved company" : "saved company",

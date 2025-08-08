@@ -22,6 +22,7 @@ import {
   Company,
   CompanySearchByID,
   CompanySearchByFilterResponse,
+  DATASET_MAIN,
   ApplyResponse,
   Operator,
 } from "../types/Common";
@@ -241,3 +242,4 @@ export class CompanyController {
         },
         where: {
           domain: {
+            in: companyURLs

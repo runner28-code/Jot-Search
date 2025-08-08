@@ -27,6 +27,7 @@ export const saveCandidate = async (
           savedCandidates: {
             connect: {
               id: candidateId,
+            },
           },
         },
       });
@@ -64,3 +65,4 @@ export const getSavedCandidates = async (companyUserId: string) => {
         savedCandidates: {
           include: {
             users: true,
+          }

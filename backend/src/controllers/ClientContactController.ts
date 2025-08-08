@@ -12,7 +12,7 @@ import db from "../utils/db";
 import { clearPassword } from "../utils/password";
 import { normalizeFilters } from "./JobController";
 
-export class ClientContactController {
+@JsonController("/api/client-contact")
 
   @Authorized()
   @Get("/search")
@@ -37,3 +37,4 @@ export class ClientContactController {
   @Post("/search")
   async searchByFilters(@Body() body: FilterBody) {
     try {
+      const { page, count, filters } = body;

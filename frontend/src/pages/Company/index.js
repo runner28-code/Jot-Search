@@ -118,7 +118,6 @@ Company.propTypes = {
 }
 
 function RenderHeader({type, loggedIn}) {
-// Temp comment
   if( loggedIn ) {
     return(<>
       <DetailsHeader type='company' />

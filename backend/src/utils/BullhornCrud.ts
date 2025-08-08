@@ -95,7 +95,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
     "location",
     "_score",
     "publicDescription", //
-    "clientCorporation",
     "dateAdded",
     "dateClosed",
     "date_end",
@@ -227,3 +226,4 @@ export const saveCandidates = async (candidates: any[]) => {
         console.log(error.message);
         console.log(`ERROR: while saving Candidate with ID = ${candidate.id}`);
       }
+    }

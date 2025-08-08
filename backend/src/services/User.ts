@@ -420,3 +420,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
         mode: 'insensitive'
       },
       ...previousPeriodCommonQuery
+    }
+  });
+  const jobCompare = (totalOpenJobs - totalOpenJobsInPreviousPeriod) * 100 / totalOpenJobs;

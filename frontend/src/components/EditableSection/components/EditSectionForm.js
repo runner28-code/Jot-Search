@@ -22,6 +22,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   }
   if ( propertyName === 'primarySkills' ) {
     return <EditSkillsForm 
+// Temp comment
       skills={contentObject[propertyName]}
       handleChange={handleChange} />
   }
@@ -53,6 +54,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
           >
             <label 
               className='text-xl font-bold text-royalBlue'
+              htmlFor={key}
             >
               {labelString}
             </label>

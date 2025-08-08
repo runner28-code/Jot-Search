@@ -27,7 +27,6 @@ class AuthService {
     try {
       const decoded = decode(token);
       if (decoded.exp < Date.now() / 1000) {
-// Temp comment
         this.clearStorage();
         return true;
       } else return false;
@@ -117,6 +116,7 @@ class AuthService {
       savedCompanies.splice(savedCompanies.indexOf(companyID), 1);
     }
     localStorage.setItem('savedCompanies', JSON.stringify(savedCompanies));
+// Temp comment
   }
 
   getSavedCompanyIDs() {

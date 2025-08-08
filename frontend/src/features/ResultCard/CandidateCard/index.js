@@ -147,7 +147,6 @@ LinkWrapper.propTypes = {
   link: PropTypes.string.isRequired,
   disableLink: PropTypes.bool,
 }
-// Temp comment
 
 function renderActiveStatus(candidate) {
   if (candidate.activelyLooking || candidate.user?.activelyLooking) {

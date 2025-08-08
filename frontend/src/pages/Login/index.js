@@ -49,6 +49,7 @@ export default function Login() {
         >
           <h4 className='w-full text-xl vw-640:text-h4 text-charcoal font-spaceGrotesk font-semibold mt-14 text-center'>Welcome back!</h4>
           <div className='flex vw-640:justify-center items-center mb-12 mt-12'>
+            <span className='text-sm vw-640:text-ml text-charcoal vw-640:mx-3'>Need an Account?</span>
             <Link
               to={ROUTES.signup}
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
@@ -67,7 +68,6 @@ export default function Login() {
             name='password'
             label='Password'
           />
-          <div className='flex justify-between items-center vw-640:items-end mb-22 gap-[10px]'>
             <button
               className='h-20 vw-640:h-24 bg-royalBlue text-center text-white text-xl tracking-wide px-14 rounded-lg'
               type='submit'

@@ -62,7 +62,6 @@ function renderSearch() {
       />
     </>)
   }
-  return (
     <ExploreSearch
       totalJobs={totalJobsCount}
       totalCompanies={totalCompaniesCount}

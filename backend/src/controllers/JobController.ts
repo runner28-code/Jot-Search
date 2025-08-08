@@ -289,3 +289,5 @@ export class JobController {
 
       const _specialHandlers = {
         clientCorporationID: (key: string, value: string) =>
+          `${key} = REPLACE("${value}", "bl-", "")`,
+      };

@@ -39,6 +39,7 @@ export const roles = {
   ],
   'Other': [
     'Education',
+// Temp comment
     'Healthcare',
     'Legal',
     'Misc. Science',
@@ -192,6 +193,7 @@ export const skills = [
   'Enterprise Sales',
   'ERP',
   'Event Planning',
+  'Excel',
   'Executive Administration',
   'Facilitation',
   'Figma',
@@ -264,3 +266,5 @@ export const skills = [
   'Masters Degree',
   'MBA',
   'Mechanical Engineering',
+  'Media',
+  'Media Relations',

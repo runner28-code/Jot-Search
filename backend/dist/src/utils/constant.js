@@ -31,6 +31,7 @@ const job_filter_exclude_keys = [
     "attorney",
     "auto",
     "automation technician",
+// Temp comment
     "automotive",
     "bailiff",
     "barback",
@@ -289,6 +290,7 @@ const job_filter_exclude_keys = [
     "phlebotomist",
     "phone representative",
     "photographer",
+    "photography",
     "physical",
     "physician",
     "physics",
@@ -324,3 +326,5 @@ const job_filter_exclude_keys = [
     "radiology",
     "real estate",
     "receiving",
+    "receptionist",
+    "record specialist",

@@ -105,6 +105,7 @@ const CandidateProvider = ({children}) => {
   const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
 
   useEffect(() => {
+// Temp comment
     if (currentUser?.user_id) {
       getCandidateById(currentUser.user_id).then(user => {
         setCurrentUser(user);

@@ -62,7 +62,6 @@ export class UserController {
     let data = { ...user };
 
     if (user.role === CANDIDATE) {
-      try {
         const res = await (
           await BullhornService.getClient()
         ).syncUserTppToBullhorn(user);
@@ -153,3 +152,4 @@ export class UserController {
 
   @Post("/reset-password")
   async setPassword(@Body() body: { token: string; new_password: string }) {
+    const { token, new_password } = body;

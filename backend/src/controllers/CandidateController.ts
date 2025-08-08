@@ -15,6 +15,7 @@ import { User } from "../types/User";
 import { COMPANY } from "../utils/constant";
 
 import db from "../utils/db";
+
 import { JobFilter, USER_FILTER } from "../utils/FieldMatch";
 import { getSavedJobs, saveJob } from "../utils/MainCrud";
 import { clearPassword } from "../utils/password";
@@ -275,4 +276,6 @@ export class CandidateController {
       }
 
       const [candidates, total] = await Promise.all([candidatesPromise, totalPromise]);
+
+      candidates.forEach((candidate) => clearPassword(candidate));
 

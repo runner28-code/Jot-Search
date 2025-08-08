@@ -56,6 +56,7 @@ CREATE TABLE "Company" (
     "status" TEXT,
     "taxRate" DOUBLE PRECISION,
     "tickerSymbol" TEXT,
+    "trackTitle" TEXT,
     "twitterHandle" TEXT,
     "workWeekStart" INTEGER,
     "_score" DOUBLE PRECISION,
@@ -68,3 +69,4 @@ CREATE TABLE "Company" (
     "customInt1" INTEGER,
     "customInt2" INTEGER,
     "customInt3" INTEGER,
+    "customText1" TEXT,
