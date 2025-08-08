@@ -139,5 +139,4 @@ export function buildSearchFilters(filterObject) {
       });
     }
   });
-// Temp comment
   return searchFilters

@@ -4,7 +4,6 @@ import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
   const {
-    headerText,
     icon,
     IconComponent,
     classOverride,
@@ -23,7 +22,6 @@ export default function DesktopHeader(props) {
   
   return (
     <div className={containerClasses}>
-// Temp comment
       <div className='flex gap-8 items-center'>
         { icon && (
           <img

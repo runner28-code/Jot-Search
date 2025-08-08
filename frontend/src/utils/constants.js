@@ -16,7 +16,6 @@ export const openJobStatuses = [
 ];
 
 export const stateCodeMap = {
-  Alabama: 'AL',
   Alaska: 'AK',
   Arizona: 'AZ',
   Arkansas: 'AR',
@@ -34,6 +33,7 @@ export const stateCodeMap = {
   Kansas: 'KS',
   Kentucky: 'KY',
   Louisiana: 'LA',
+  Maine: 'ME',
   Maryland: 'MD',
   Massachusetts: 'MA',
   Michigan: 'MI',

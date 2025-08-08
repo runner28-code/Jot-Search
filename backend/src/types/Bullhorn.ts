@@ -198,7 +198,6 @@ export type Candidate = {
     description?: string;
     desiredLocations?: string;
     disability?: string;
-    educationDegree?: string;
     email?: string;
     email2?: string;
     email3?: string;
@@ -219,3 +218,5 @@ export type Candidate = {
     isDeleted?: string;
     isEditable?: string;
     isExempt?: string;
+    lastName?: string;
+    leads?: string;

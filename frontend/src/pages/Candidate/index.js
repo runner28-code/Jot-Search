@@ -13,7 +13,6 @@ import PasswordReset from './PasswordReset';
 import { useCandidateContext } from '../../services/CandidateContext';
 import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
 import InviteToCareer from '../Career/InviteToCareer';
-// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 

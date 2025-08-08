@@ -28,7 +28,6 @@ export class GetroService {
                 'X-User-Token': this.password,
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
-            }
         };
     };
 
@@ -68,6 +67,7 @@ export class GetroService {
         let repeatErr = 0;
 
         while (repeatErr < 3) {
+            try {
                 await this.checkAuth();
                 const query = queryString.stringify({
                     per_page,
@@ -191,3 +191,5 @@ export class GetroService {
         const res = await axios.get(url, this.getOptions());
         await sleep(2000); // https://developers.getro.com/#rate-limit
 
+        if (res.status === 200) {
+            const data = res.data;

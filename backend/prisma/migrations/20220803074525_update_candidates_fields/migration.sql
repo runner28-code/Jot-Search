@@ -11,4 +11,3 @@
 -- AlterTable
 ALTER TABLE "Candidate" DROP COLUMN "firstname",
 DROP COLUMN "lastname",
-ADD COLUMN     "firstName" TEXT,

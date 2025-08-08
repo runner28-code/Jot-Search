@@ -13,6 +13,7 @@ export const settings = '/settings';
 export const accountRecovery = '/account-recovery';
 export const resetPassword = '/reset-password';
 
+// Temp comment
 // Dashboard routes
 export const dashboard = '/';
 export const careers = '/careers';
@@ -40,6 +41,7 @@ export const coordinatorQuickStats = '/coordinator-stats';
 /* EXTERNAL LINKS */
 export const gMapsIntulsa = 'https://www.google.com/maps/place/36+E+Cameron+St,+Tulsa,+OK+74103,+USA';
 export const mailToIntulsa = 'mailto:info@intulsa.com?subject=Message%20from%20Talent%20InTulsa%20website';
+export const careersInTulsa = 'https://www.careers.intulsa.com/';
 export const exploreCareers = 'https://www.careers.intulsa.com/?utm_source=talentwebsite&amp;utm_medium=web&amp;utm_campaign=footer';
 export const joinTalentNetwork = 'https://www.jobs.intulsa.com/talent-network?utm_source=talentwebsite&amp;utm_medium=web&amp;utm_campaign=footer';
 export const intulsa = 'https://www.intulsa.com';
@@ -62,3 +64,4 @@ export const APIResetPassword = '/reset-password';
 const APIcandidateBase = '/api/candidate';
 export const APIcandidates = APIcandidateBase + '/search';
 export const APIcandidateUpdate = APIcandidateBase + '/update';
+export const APIuserUpdate = '/user/update';

@@ -495,3 +495,7 @@ model GetroJobInfo {
 model User {
   id        String  @id @default(uuid())
   firstname String
+  lastname  String
+  email     String
+  password  String
+  role      String

@@ -192,7 +192,6 @@ export const skills = [
   'Enterprise Sales',
   'ERP',
   'Event Planning',
-  'Excel',
   'Executive Administration',
   'Facilitation',
   'Figma',
@@ -263,3 +262,5 @@ export const skills = [
   'Marketing Campaigns',
   'Marketing Research',
   'Masters Degree',
+  'MBA',
+  'Mechanical Engineering',

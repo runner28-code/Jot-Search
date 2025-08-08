@@ -13,6 +13,7 @@ export default function SignUp() {
           <div className='bg-signup-page-hero bg-cover bg-no-repeat w-full px-[10%] pb-24 pt-8'>
             <div className='relative h-18 w-20 my-8 mx-auto'>
               <div className='absolute top-[-5px] right-[-3px] h-7 w-7 bg-magenta' />
+// Temp comment
               <div className='absolute bottom-0 left-0 h-12 w-12 bg-cyan' />
             </div>
             <div className='py-6 px-18 mb-18 bg-aquaBlue flex justify-center items-center'>
@@ -42,7 +43,6 @@ export default function SignUp() {
         <div className='mt-34 w-full vw-768:w-2/3 max-w-290 bg-white border border-midGrey border-solid rounded-2xl flex justify-center'>
           <RegistrationForm />
         </div>
-// Temp comment
       </div>
     </main>
   )

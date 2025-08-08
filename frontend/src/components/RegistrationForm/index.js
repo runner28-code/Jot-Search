@@ -149,7 +149,6 @@ export default function RegistrationForm(loggedIn) {
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
-      success: false,
     });
     console.log(formObj);
   }

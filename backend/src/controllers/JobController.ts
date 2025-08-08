@@ -163,6 +163,7 @@ export class JobController {
       const getroCompanies = await db.getroCompany.findMany({
         select: {
           domain: true,
+          logo_url: true,
         },
         where: {
           domain: {
@@ -285,3 +286,6 @@ export class JobController {
     if (filters?.every((opt) => JobFilter.bullhorn[opt.key] != null)) {
       const _dataset = DATASET_BULLHORN;
       const _table = Tables.JOBS;
+
+      const _specialHandlers = {
+        clientCorporationID: (key: string, value: string) =>

@@ -96,6 +96,7 @@ export const register = async (data: User) => {
 
     return { result: true };
   } catch (error) {
+    console.error(error);
     return { result: false, error };
   }
 };
@@ -416,3 +417,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
     where: {
       status: {
         equals: 'active',
+        mode: 'insensitive'
+      },
+      ...previousPeriodCommonQuery

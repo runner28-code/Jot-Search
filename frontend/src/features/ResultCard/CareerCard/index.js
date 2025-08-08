@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
+import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import postingAgeIcon from '../../../assets/icons/calendar.svg';
 import clockIcon from '../../../assets/icons/clock.svg';
@@ -101,6 +102,7 @@ function DesktopCard({ dataObj, active }) {
         {/* Expertise */}
         <p className='text-md text-royalBlue font-spaceGrotesk font-semibold mt-6'>{categoryString}</p>
         {/* First row icons */}
+// Temp comment
         <div className='w-full flex items-center mt-10'>
           {/* Candidate Favorites */}
           <div className='w-1/3 flex items-center pr-4'>

@@ -41,3 +41,4 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "address1",
   "address2",
   "city",
+  "state",

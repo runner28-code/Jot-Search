@@ -63,5 +63,4 @@ export default function ActiveCareers() {
       />
       <PaginatedControls />
     </section>
-// Temp comment
   )

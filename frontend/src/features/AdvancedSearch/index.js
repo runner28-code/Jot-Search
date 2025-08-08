@@ -54,7 +54,6 @@ export default function AdvancedSearch({ disabledTabs }) {
 
   const initialFilterState = activeTab === 'careers' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
   if (state && state.expertise) {
-// Temp comment
     initialFilterState.Expertise = state.expertise
   }
 
@@ -67,6 +66,7 @@ export default function AdvancedSearch({ disabledTabs }) {
       const modifiedFilterObject = {
         ...filterObject,
         firstname: filterObject.title
+// Temp comment
       }
       delete modifiedFilterObject.title;
 

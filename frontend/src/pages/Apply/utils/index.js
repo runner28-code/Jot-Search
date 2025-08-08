@@ -34,13 +34,11 @@ export const defaultState = {
   resume: '',
   newResume: {},
   ethnicity: '',
-  gender: '',
   workAuthorized: '',
   disability: '',
   veteran: '',
   loading: true
 }
-// Temp comment
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
   function handleChange(e) {

@@ -27,7 +27,6 @@ export const saveCandidate = async (
           savedCandidates: {
             connect: {
               id: candidateId,
-            },
           },
         },
       });

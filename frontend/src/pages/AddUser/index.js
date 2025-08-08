@@ -6,6 +6,7 @@ import * as ROUTES from '../../routes';
 import AddCandidate from './AddCandidate';
 import AddCompanyUser from './AddCompanyUser';
 import AddCoordinator from './AddCoordinator';
+// Temp comment
 import User from '../../assets/icons/add-new-user.svg';
 
 export default function AddUser() {
@@ -26,7 +27,6 @@ export default function AddUser() {
     <h2 className='text-lg vw-768:text-h2 text-royalBlue font-spaceGrotesk font-bold mb-16 text-center flex items-center'>
       <img
         src={User}
-// Temp comment
         alt='User Icon'
         className='w-12 h-12 vw-768:w-24 vw-768:h-24 mr-8'
       />

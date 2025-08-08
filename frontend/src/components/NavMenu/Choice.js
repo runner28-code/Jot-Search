@@ -9,7 +9,6 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
     choiceLink = ROUTES.profile;
   } else if (choice !== 'Dashboard') {
     choiceLink += choice.toLowerCase().replace(' ', '-');
-// Temp comment
   }
 
   const linkStyles = choice === 'Logout' ? stylesObject.bottomLinkStyles : stylesObject.linkStyles;
@@ -23,6 +22,7 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
         <Icon className={stylesObject.iconStyles} />
         <span className={stylesObject.spanStyles}>{choice}</span>
       </Link>
+// Temp comment
       <hr className={stylesObject.hrStyles} />
     </div>
   )

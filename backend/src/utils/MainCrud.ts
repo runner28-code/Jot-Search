@@ -9,7 +9,6 @@ export const saveApplication = async (job: string, candidate: string) => {
         jobId: job,
         userId: candidate,
       },
-    });
     if (!existing) {
       const app = await db.application.create({
         data: {
@@ -94,3 +93,4 @@ export const saveJob = async (job: string, candidate: string) => {
     return {
       result: true,
       messsage: existing ? "unsaved job" : "saved job",
+    };

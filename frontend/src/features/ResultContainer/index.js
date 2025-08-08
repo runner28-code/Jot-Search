@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import CandidateCard from '../ResultCard/CandidateCard';
 import CompactCareerCard from '../ResultCard/CompactCareerCard';
 import CareerCard from '../ResultCard/CareerCard';
+import CompanyCard from '../ResultCard/CompanyCard';
 import ViewAllLink from '../../components/ViewAllLink';
 import { pluralizedTypes } from '../../utils/constants';
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -14,6 +15,7 @@ export default function ResultContainer(props) {
     type,
     limit,
     header, 
+// Temp comment
     active,
     compact = false,
     isFavoriteOverride = null,

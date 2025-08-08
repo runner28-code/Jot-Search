@@ -1,5 +1,6 @@
 import * as ROUTES from '../../routes';
 
+export default function BusinessBooming() {
   return (
     <section>
       <div className='relative w-full h-full bg-orangeHeroOverlay/90 p-12 '>
@@ -15,6 +16,7 @@ import * as ROUTES from '../../routes';
           <span className='text-orangeHeroOverlay'>Learn About Tulsa</span>
         </a>
       </div>
+// Temp comment
       <div className='h-96 bg-tulsa-hero bg-cover'></div>
     </section>
   )

@@ -44,6 +44,7 @@ export class UserController {
 
     if (result) {
       const token = CreateJwtToken(data);
+      return {
         result,
         token,
       };
@@ -151,3 +152,4 @@ export class UserController {
   }
 
   @Post("/reset-password")
+  async setPassword(@Body() body: { token: string; new_password: string }) {
