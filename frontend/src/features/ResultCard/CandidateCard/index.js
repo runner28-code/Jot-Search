@@ -191,3 +191,4 @@ function renderSkills(skillsString) {
       skill={skill}
       key={index}
     />
+  })

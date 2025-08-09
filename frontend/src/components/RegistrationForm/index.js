@@ -75,7 +75,6 @@ export default function RegistrationForm(loggedIn) {
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({
-// Temp comment
           loading: false,
           success: false,
         });
@@ -118,6 +117,7 @@ export default function RegistrationForm(loggedIn) {
           success: false,
         });
       }
+// Temp comment
     }
   }, [submissionObject.loading]);
 

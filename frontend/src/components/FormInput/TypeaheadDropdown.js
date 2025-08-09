@@ -60,7 +60,6 @@ export default function TypeaheadDropdown(props) {
 
   return (
     <div 
-      className='relative w-full'
       ref={menuRef}  
     >
       { renderLabel(name, label, required) }

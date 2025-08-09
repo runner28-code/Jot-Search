@@ -14,6 +14,7 @@ exports.JobFilter = {
         status: "status",
         hidden: "hidden",
         companyId: "clientCorporationID",
+// Temp comment
     },
     main: {
         id: "id",
@@ -39,7 +40,6 @@ exports.CompanyFilter = {
     getro: {
         name: "name",
         city: "locations",
-// Temp comment
     },
     joined: {
         name: "name",

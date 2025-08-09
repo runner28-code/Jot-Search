@@ -50,6 +50,7 @@ export default function Apply() {
     error: false,
     errorMessage: ''
   });
+
   useEffect(async () => {
     if ( !isLoggedIn ) {
       const careerData = await getJobById(jobId);

@@ -72,6 +72,7 @@ export default function CareerPage() {
         isMobile ?
           <MobileLayout data={data} /> :
           <DesktopLayout data={data} />
+      }
       {
         role === 'coordinator' &&
         <InviteCandidates job={ careerData } />

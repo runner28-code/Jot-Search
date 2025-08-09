@@ -69,7 +69,6 @@ export default function Company() {
           {/* Header */}
           { width >= 990 ?
             <Header
-              companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
             : <HeaderMobile

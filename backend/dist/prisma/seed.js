@@ -52,6 +52,7 @@ function seedJobs() {
                     datasource: client_1.Datasource.main,
                     status: "active",
                     categoryId: (yield db_1.default.category.findFirst({
+                        where: { name: "Software & Engineering" },
                     })).id,
                 },
                 {

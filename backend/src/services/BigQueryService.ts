@@ -30,6 +30,7 @@ export class BigQueryService {
                 query = `
                     ${query}
                     LIMIT ${count}
+                `;
             }
             const options = {
                 query: query,

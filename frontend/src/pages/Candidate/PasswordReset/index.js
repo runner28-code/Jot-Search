@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import ResetButton from './ResetButton';
 import ResetForm from './ResetForm';
 
+export default function PasswordReset({role, candidateData}) {
+// Temp comment
   if ( role === 'company' || candidateData.sourceTable !== 'User' ) {
     return null;
   }

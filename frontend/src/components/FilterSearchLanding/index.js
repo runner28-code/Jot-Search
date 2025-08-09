@@ -18,7 +18,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     containerStyles += additionalClasses;
   }
   const placeholderString = placeholder || 'Keywords';
-  return (
     <div
       className={ containerStyles }
       onKeyDown={handleKeydown}
@@ -30,7 +29,6 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
         value={ searchTerm }
         onChange={ handleChange }
       />
-// Temp comment
       <button
         className='h-full bg-searchGreen flex items-center text-white text-ml rounded-r-2xl pl-8 pr-14 tracking-wide'
         onClick={ handleSearchClick }

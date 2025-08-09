@@ -219,6 +219,7 @@ export const skills = [
   'Health Insurance',
   'Healthcare',
   'Helpdesk',
+  'Higher Education',
   'Hiring',
   'Hospitality',
   'HR',

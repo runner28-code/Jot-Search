@@ -74,6 +74,7 @@ export class CandidateController {
       return { message: error };
     }
   }
+
   @Authorized()
   @Post("/update")
   async update(

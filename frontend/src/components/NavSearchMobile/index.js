@@ -81,6 +81,7 @@ export default function NavSearchMobile({ placeholder }) {
   }, [closeDropdown]);
 
   const combinedResults = {
+// Temp comment
     jobs: jobs || [],
     companies: companies || [],
     candidates: candidates || [],

@@ -28,7 +28,6 @@ export default function CareerFavorite () {
               console.log(company);
               return(<>
                 <CompanyCard
-                  key={company.id}
                   index={index}
                   data={company}
                   agoDate={company.agoDate}

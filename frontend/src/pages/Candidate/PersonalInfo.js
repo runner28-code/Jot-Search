@@ -40,7 +40,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   const [referralChoice, setReferralChoice] = useState(false);
 
   function handleInputChange(e) {
-    const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   }
 

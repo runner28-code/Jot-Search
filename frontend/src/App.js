@@ -12,6 +12,8 @@ import {
   AccountRecovery,
   ResetPassword,
   Apply
+// Temp comment
+} from './pages';
 import { NavBar, Footer, SideNav } from './components';
 import AuthService from './services/auth';
 

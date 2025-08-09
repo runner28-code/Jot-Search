@@ -47,7 +47,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
           />
         }
         return (
-// Temp comment
           <div 
             key={key}
             className='flex justify-between items-center w-full mb-4'

@@ -17,6 +17,5 @@ export default function BusinessBooming() {
         </a>
       </div>
       <div className='h-96 bg-tulsa-hero bg-cover'></div>
-// Temp comment
     </section>
   )
