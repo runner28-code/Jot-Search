@@ -41,6 +41,7 @@ export default function PendingApplications () {
       </div>
       <h2 className='font-spaceGrotesk text-h5 text-white mb-8 text-center'>My Pending Applications</h2>
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
+        {
           appliedJobsObject.loading ?
             <LoadingSpinner />
             :
@@ -48,6 +49,7 @@ export default function PendingApplications () {
               return(<>
                 <CareerCard
                   key={career.id}
+// Temp comment
                   index={index}
                   data={career}
                   agoDate={career.createdAt}

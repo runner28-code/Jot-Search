@@ -48,7 +48,6 @@ export default function Applications() {
     setAppliedJobsObject({
       ...appliedJobsObject,
       filteredJobs: appliedJobsObject.jobs.filter(job => !newHiddenApplications.includes(job.id))
-    });
   }
 
   const { width } = useWindowDimensions();

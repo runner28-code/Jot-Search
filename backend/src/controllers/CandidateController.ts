@@ -113,6 +113,7 @@ export class CandidateController {
       console.error(error)
       return { message: error, result: false };
     }
+  }
 
   @Authorized()
   @Post("/search")

@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 
-// Temp comment
 export const UpdateJobFeatured = ({ job }) => {
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
 
@@ -38,6 +37,7 @@ export const UpdateJobFeatured = ({ job }) => {
             if(result) {
               window.location.reload()
             }
+// Temp comment
           }}>
           <span className="sr-only">inTulsa Featured</span>
           <span 

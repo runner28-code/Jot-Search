@@ -11,7 +11,6 @@ export default function MobileHeader(props) {
     backButton
   } = props;
   const navigate = useNavigate();
-// Temp comment
   
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
@@ -25,6 +24,7 @@ export default function MobileHeader(props) {
         >
           {'< Back'}
         </button>
+// Temp comment
       )}
       { icon && (
         <img

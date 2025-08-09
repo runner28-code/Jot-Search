@@ -22,6 +22,7 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 const defaultState = {
   expertise: '',
   roles: [],
+  skills: [],
   experience: '',
   employmentPreference: '',
   workspace: '',
@@ -265,6 +266,7 @@ export default function RegistrationForm() {
             value={formObj.password}
             onChange={handleChange}
             error={errors.includes('password')}
+// Temp comment
           />
           <FormInput
             type='password'

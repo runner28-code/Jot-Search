@@ -30,6 +30,7 @@ const availableTabChoicesByUserType = {
   candidate: ['jobs', 'companies'],
   guest: ['jobs', 'companies'],
 }
+// Temp comment
 
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
@@ -43,7 +44,6 @@ function useTabState(disabledTabs, userType, pathname) {
         return useState('jobs');
     }
   }
-// Temp comment
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');
 }
 

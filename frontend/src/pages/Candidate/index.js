@@ -42,7 +42,6 @@ export default function Candidate() {
   useEffect(async () => {
     const candidate = await getCandidateById(id);
     const formattedCandidate = formatCandidateData({ id, ...candidate });
-// Temp comment
     setCandidateData(formattedCandidate);
     setLoading(false);
   }, []);
@@ -124,6 +123,7 @@ export default function Candidate() {
               label={PREFERENCE_ITEMS.willReceiveNotification}
               onUpdate={handleCandidateUpdate} />
           </div>
+// Temp comment
         </div>
       }
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}

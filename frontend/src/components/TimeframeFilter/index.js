@@ -6,7 +6,6 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 export default function TimeframeFilter({ choices, timeframe, handleFilterChange }) {
   const [showDropdown, setShowDropdown] = useState(false);
-// Temp comment
   const [listening, setListening] = useState(false);
 
   const menuRef = useRef(null);
@@ -49,7 +48,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
           id='title'
           className='Desktop-Body-textBody-paragraph-2 text-charcoal'>{ timeframe }</p>
         <img 
-          className='w-6 mr-7'
           src={ chevronDownGray }
           alt='chevron down'  
         />
