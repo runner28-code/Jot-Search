@@ -9,7 +9,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import {
   ethnicityChoices,
   genderChoices,
-  veteranStatusChoices
 } from '../Apply/utils';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
@@ -40,6 +39,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   const [referralChoice, setReferralChoice] = useState(false);
 
   function handleInputChange(e) {
+    const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   }
 

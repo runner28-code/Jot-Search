@@ -24,10 +24,12 @@ export default function CareerFavorite () {
           isLoading ?
             <LoadingSpinner />
             :
+// Temp comment
             savedCompanies.map((company, index) => {
               console.log(company);
               return(<>
                 <CompanyCard
+                  key={company.id}
                   index={index}
                   data={company}
                   agoDate={company.agoDate}

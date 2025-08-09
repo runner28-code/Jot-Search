@@ -48,6 +48,7 @@ export default function NavSearch({ placeholder }) {
     } else {
       return { filterKey: 'name', filterValue: searchTerm }
     }
+  };
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -93,6 +94,7 @@ export default function NavSearch({ placeholder }) {
     searchIconStyles: 'h-12 px-8 ml-6 bg-searchGreen text-white flex justify-center items-center rounded-r-lg rounded',
     inputStyles: 'flex-1 h-5/6 vw-1280:w-96 vw-480:placeholder:text-sm vw-1024:placeholder:text-base'
   }
+// Temp comment
 
   return (
     <div className='relative'>

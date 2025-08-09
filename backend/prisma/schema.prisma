@@ -484,7 +484,6 @@ model GetroJobInfo {
   hidden                Boolean   @default(false)
 
   job Job[] @relation("getroJobInfo")
-
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
   deactivated_at DateTime?

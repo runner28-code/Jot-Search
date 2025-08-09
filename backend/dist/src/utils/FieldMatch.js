@@ -14,11 +14,11 @@ exports.JobFilter = {
         status: "status",
         hidden: "hidden",
         companyId: "clientCorporationID",
-// Temp comment
     },
     main: {
         id: "id",
         status: "status",
+// Temp comment
         skillList: "skillList",
         hidden: "hidden",
         employmentType: "employmentType",

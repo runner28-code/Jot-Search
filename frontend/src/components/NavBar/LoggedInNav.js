@@ -95,7 +95,6 @@ const DropdownMenu = () => {
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
-
   const handleClick = () => {
     setIsOpen(isOpen => !isOpen);
     if ( firstRender ) {

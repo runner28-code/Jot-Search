@@ -12,12 +12,14 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function DashboardPublic({togglePassState}) {
   const { width } = useWindowDimensions();
 
+// Temp comment
   const { totalJobsCount, totalCompaniesCount } = useGetLandingPageStats({});
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
   const active = ' bg-royalBlue';
+
   const careerTitle = totalJobsCount + ' Open Careers';
   const companyTitle = totalCompaniesCount  + ' Companies';
 

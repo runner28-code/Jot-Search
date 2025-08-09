@@ -110,6 +110,7 @@ export const mockCompanyStats = {
     'Last 90 Days': {
       count: 63,
       prevCount: 72
+    }
   },
   'Recommended Candidates': {
     'Today': {
@@ -165,6 +166,7 @@ export const mockCompanyStats = {
       prevCount: 12
     },
     'Last 14 Days': {
+// Temp comment
       count: 30,
       prevCount: 25
     },

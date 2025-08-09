@@ -23,7 +23,6 @@ const PREFERENCE_ITEMS = {
   willRelocate: 'I\'m willing to relocate to Tulsa OK',
   willReceiveNotification: 'Receive emails about relevant opportunities based on your profile'
 }
-// Temp comment
 
 export default function Candidate() {
   // Redirect if userRole is 'candidate' unless it's their profile, candidates should not be able to see other candidates
@@ -43,6 +42,7 @@ export default function Candidate() {
   useEffect(async () => {
     const candidate = await getCandidateById(id);
     const formattedCandidate = formatCandidateData({ id, ...candidate });
+// Temp comment
     setCandidateData(formattedCandidate);
     setLoading(false);
   }, []);

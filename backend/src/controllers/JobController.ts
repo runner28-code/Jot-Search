@@ -205,6 +205,7 @@ export class JobController {
     operator: Operator = "OR"
   ) {
     const _filters = filters.filter((filter) =>
+      ALLOWED_JOB_KEYS.has(filter.key as JobKey)
     );
 
     const filteredFields = fields?.filter((field) =>

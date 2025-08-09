@@ -140,7 +140,6 @@ export type ClientContact = {
     desiredSpecialties?: string;
     division?: string;
     email?: string;
-    email2?: string;
     email3?: string;
     externalID?: string;
     fax?: string;
@@ -173,6 +172,7 @@ export type ClientContact = {
 };
 
 export type Candidate = {
+    id: string;
     address_address1?: string;
     address_address2?: string;
     address_city?: string;

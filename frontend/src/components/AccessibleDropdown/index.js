@@ -72,6 +72,7 @@ AccessibleDropdown.defaultProps = {
   choices: [],
 };
 
+// Temp comment
 AccessibleDropdown.propTypes = {
   type: PropTypes.string,
   name: PropTypes.string,

@@ -57,6 +57,7 @@ export default function RegistrationFormInternal(loggedIn) {
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
+// Temp comment
     success: false,
   });
 
@@ -88,7 +89,6 @@ export default function RegistrationFormInternal(loggedIn) {
         setErrors(['resume']);
         setErrorBlock('There was an error uploading your resume.');
         setSubmissionObject({
-// Temp comment
           loading: false,
           success: false,
         });

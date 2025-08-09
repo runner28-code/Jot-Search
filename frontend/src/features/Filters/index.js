@@ -25,7 +25,6 @@ export default function Filters(props) {
       </div>
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
     </div>
-  )
 }
 
 Filters.propTypes = {

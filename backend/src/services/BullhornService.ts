@@ -550,7 +550,6 @@ export class BullhornService {
             id: `bl-${d.id}`,
             address_address1: d.address?.address1 || null,
             address_address2: d.address?.address2 || null,
-            address_city: d.address?.city || null,
             address_state: d.address?.state || null,
             address_zip: d.address?.zip || null,
             address_country_id: d.address?.countryID || null,

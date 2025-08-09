@@ -28,6 +28,7 @@ class AuthService {
       const decoded = decode(token);
       if (decoded.exp < Date.now() / 1000) {
         this.clearStorage();
+        return true;
       } else return false;
     } catch (err) {
       return false;
@@ -63,6 +64,7 @@ class AuthService {
     localStorage.removeItem('id_token');
     localStorage.removeItem('savedJobs');
     localStorage.removeItem('savedCompanies');
+// Temp comment
     localStorage.removeItem('savedCandidates');
   }
 
