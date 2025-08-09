@@ -6,7 +6,6 @@ import * as ROUTES from '../../../routes';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if ( submissionObject.loading ) {
-    return <LoadingSpinner
       height='50'
       width='50'
     />
@@ -34,7 +33,6 @@ export function renderErrorBlock(errorBlock) {
   }
 }
 
-// Temp comment
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (

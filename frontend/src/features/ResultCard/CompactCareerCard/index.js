@@ -49,7 +49,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
                 <p className='text-midGrey'>Posting Age</p>
                 <p className='text-midGrey text-xs'>{postingAge}</p>
               </div>
-            }
           </div>
         </div>
       </Link>
@@ -65,7 +64,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             type={'job'}
             data={data}
             isFavoriteOverride={isFavoriteOverride} />
-// Temp comment
       }
     </div>
   )

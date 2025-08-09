@@ -209,7 +209,6 @@ export class CompanyController {
   }
 
   @Post("/search")
-  async searchByFilter(@Body() body: FilterBody) {
     try {
       const { page, count, filters } = body;
 

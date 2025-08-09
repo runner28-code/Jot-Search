@@ -1,4 +1,3 @@
-import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../..';
 import { getSavedJobs } from '../../services/API';
 

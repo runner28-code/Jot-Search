@@ -6,6 +6,7 @@ import * as ROUTES from '../../../routes';
 
 export default function ResetForm({ candidateData, setType }) {
   const [formData, setFormData] = useState({
+    id: candidateData.id,
     password: '',
     passwordConfirm: '',
   });
@@ -18,7 +19,6 @@ export default function ResetForm({ candidateData, setType }) {
       setMatch(false);
     }
 
-    if( formData.password === formData.confirmPassword ) {
       setMatch(true);
       const { password } = event.target;
       const res = await API.post(ROUTES.APIResetPassword, {

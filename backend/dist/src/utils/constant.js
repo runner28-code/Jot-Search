@@ -31,7 +31,6 @@ const job_filter_exclude_keys = [
     "attorney",
     "auto",
     "automation technician",
-// Temp comment
     "automotive",
     "bailiff",
     "barback",

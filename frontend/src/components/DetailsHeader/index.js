@@ -31,8 +31,8 @@ export default function DetailsHeader({ type, source }) {
       <Icon className='h-18 w-auto fill-royalBlue' />
       <h1 className='text-lg vw-480:text-h2 text-royalBlue font-spaceGrotesk font-bold flex items-center'>
         {headerText}
-        { renderSourceIdentifier(source) }
 // Temp comment
+        { renderSourceIdentifier(source) }
       </h1>
     </div>
     <BackButton />

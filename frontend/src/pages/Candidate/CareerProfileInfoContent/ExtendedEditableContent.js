@@ -47,6 +47,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   }
 
   const handleInputChange = async (event) => {
+    const { name, value } = event.target;
     if (name === 'avatar' || name === 'resume') {
       const fileToUpload = event.target.files[0];
       const pluralizedFolderName = name + 's';

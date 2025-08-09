@@ -15,7 +15,6 @@ export default function AddCoordinator() {
   useEffect(async () => {
     if (submissionObject.loading) {
       const formObjectCopy = { ...formObject };
-      delete formObjectCopy.verifyPassword;
       const data = await registerUser(formObjectCopy);
       if (data.result === true) {
         setSubmissionObject({

@@ -35,7 +35,6 @@ export default function Auth() {
         <Route
           path={`${ROUTES.candidates}/:id`}
           element={<Candidate />} />
-        <Route
           path={ROUTES.applications}
           element={<Applications />} />
         <Route
@@ -51,6 +50,5 @@ export default function Auth() {
           path={ROUTES.addUser}
           element={<AddUser />} />
       </Routes>
-// Temp comment
     </div>
   )

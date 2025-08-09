@@ -99,7 +99,6 @@ const job_filter_exclude_keys = [
   "credit",
   "crew",
   "crew leader",
-  "crime",
   "crisis",
   "crossing guard",
   "culinary",

@@ -144,7 +144,6 @@ function renderResults( results ) {
         No results found
       </div>
     );
-// Temp comment
   }
 
   return (<>

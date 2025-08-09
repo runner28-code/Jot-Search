@@ -10,7 +10,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function DashboardPublic({togglePassState}) {
-// Temp comment
   const { width } = useWindowDimensions();
 
   const { totalJobsCount, totalCompaniesCount } = useGetLandingPageStats({});
@@ -44,7 +43,6 @@ export default function DashboardPublic({togglePassState}) {
             to={ROUTES.companies}
           >
             <CompanyIcon />
-            <p className='ml-4'>Companies</p>
           </Link>
         </div>
         <div className='ml-12'>

@@ -260,7 +260,6 @@ export class JobController {
 
     const filteredFields = fields?.filter((field) =>
       ALLOWED_GETRO_FILTERS.has(field as keyof Job)
-    );
     const _fields = filteredFields?.length ? filteredFields.join(", ") : "*";
 
     const condition = getFilterConditions(_filters, operator);

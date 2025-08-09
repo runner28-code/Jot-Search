@@ -86,7 +86,6 @@ export const candidateChoices = [
 ];
 
 export const companyChoices = [
-// Temp comment
   choices.dashboard,
   choices.candidates,
   choices.myFavorites,

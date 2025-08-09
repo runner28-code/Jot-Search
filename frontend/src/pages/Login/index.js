@@ -68,6 +68,7 @@ export default function Login() {
             name='password'
             label='Password'
           />
+          <div className='flex justify-between items-center vw-640:items-end mb-22 gap-[10px]'>
             <button
               className='h-20 vw-640:h-24 bg-royalBlue text-center text-white text-xl tracking-wide px-14 rounded-lg'
               type='submit'
@@ -83,7 +84,6 @@ export default function Login() {
         </form>
         {/* Assistance call-to-action */}
         <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
-          <span>Need Help? Just ask </span>
           <a
             href='mailto:help@intulsa.com'
             className='text-sm vw-640:text-ml text-royalBlue underline'

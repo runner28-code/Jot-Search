@@ -29,6 +29,7 @@ const parseBullhornCandidateToUser = (data) => {
         status: data.status,
         username: data.username,
         companyName: data.companyName,
+// Temp comment
         companyURL: data.companyURL,
         revenue: data.salary,
         dateFounded: data.dateAdded,
@@ -39,7 +40,6 @@ const parseBullhornCandidateToUser = (data) => {
         ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,
         disability: data.disability,
-// Temp comment
     };
     return user;
 };

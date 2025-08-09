@@ -27,10 +27,8 @@ export default function Filters(props) {
     </div>
   )
 }
-// Temp comment
 
 Filters.propTypes = {
-  handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,
   defaultFilterObject: PropTypes.object, // Shape changes significantly
   filterObject: PropTypes.object, // Shape changes significantly

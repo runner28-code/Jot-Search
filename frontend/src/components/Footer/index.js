@@ -134,7 +134,6 @@ export default function Footer() {
     >
       {/* Social Links */}
       <div className='bg-midGrey flex justify-center items-center'>
-        <div className='flex flex-col vw-900:flex-row justify-center items-center gap-[36px] vw-900:gap-[96px] w-full px-24 py-24'>
           {/* Dicover the InTulsa Network */}
           <p className='font-spaceGrotesk text-lightGrey'>DISCOVER THE INTULSA NETWORK</p>
           {/* Links Container */}
@@ -211,6 +210,7 @@ function NavFooter() {
 
   return(<>
     <div className='py-24 px-[10%] flex flex-wrap'>
+      <div className='flex flex-col basis-6/12'>
         <img
           src={inTulsaFooter}
           className='w-[250px] h-auto mb-12'

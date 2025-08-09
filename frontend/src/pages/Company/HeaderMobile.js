@@ -50,6 +50,7 @@ function HeaderContent({ companyData }) {
               </div> 
             </div>
           </div>
+// Temp comment
         </div>
 
         <FavoriteButton
@@ -112,7 +113,6 @@ function renderCompanyLogo(logoUrl, name) {
         src={logoUrl}
         alt={`${name} logo`}
       />
-// Temp comment
     </div>
   )
 }

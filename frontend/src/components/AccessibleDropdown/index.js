@@ -51,7 +51,6 @@ export default function AccessibleDropdown(props) {
       >
         <Button
           className={ `${buttonStyles} ${disabled ? 'disabled cursor-not-allowed' : ''}` }
-          disabled={disabled}>
           <span>{ buttonText(name, placeholder, currentChosen) }</span>
           { renderDropdownArrow(showDropdownArrow) }
         </Button>

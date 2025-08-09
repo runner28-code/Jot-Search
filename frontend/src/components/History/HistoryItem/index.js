@@ -28,7 +28,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
   const time = dateObj.toLocaleTimeString();
   const timeWithoutSeconds = time.replace(/(.*)\D\d+/, '$1')
   if ( isToday ) {
-// Temp comment
     return `Today at ${timeWithoutSeconds}`;
   } else if ( isYesterday ) {
     return `Yesterday, ${timeWithoutSeconds}`;
@@ -41,6 +40,5 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
       switch (d % 10) {
         case 1:  return d + 'st';
         case 2:  return d + 'nd';
-        case 3:  return d + 'rd';
         default: return d + 'th';
       }

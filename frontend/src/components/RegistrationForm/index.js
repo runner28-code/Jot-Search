@@ -75,10 +75,12 @@ export default function RegistrationForm(loggedIn) {
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({
+// Temp comment
           loading: false,
           success: false,
         });
         return;
+      }
 
       // Attempt to upload resume before submitting user data
       const resumeResponse = await uploadFile('resumes', formObj.resume);
