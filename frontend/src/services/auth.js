@@ -1,7 +1,6 @@
 import decode from 'jwt-decode';
 import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
 
-class AuthService {
   getProfile() {
     if ( !this.loggedIn() ) {
       return null;
@@ -79,6 +78,7 @@ class AuthService {
       console.log(e);
       localStorage.setItem('savedJobs', JSON.stringify([]));
       localStorage.setItem('savedCompanies', JSON.stringify([]));
+    }
   }
 
   async refreshSavedCandidates() {

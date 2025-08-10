@@ -86,5 +86,4 @@ export default function ExpertiseLinks() {
         </Link>
       </div>
     </section>
-// Temp comment
   )

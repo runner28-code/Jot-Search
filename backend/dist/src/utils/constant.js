@@ -121,7 +121,6 @@ const job_filter_exclude_keys = [
     "donation",
     "donor",
     "drainage",
-// Temp comment
     "driver",
     "drug",
     "economist",

@@ -39,6 +39,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
       { Object.entries(contentObject).map(([key, value]) => {
         const capitalizedKey = startCase(key);
         const labelString = `${capitalizedKey}:`;
+        if ( key === 'email' ) {
           return <Property
             key={key}
             name={key}
@@ -48,6 +49,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         return (
           <div 
             key={key}
+// Temp comment
             className='flex justify-between items-center w-full mb-4'
           >
             <label 

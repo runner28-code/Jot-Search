@@ -63,7 +63,6 @@ export class BullhornService {
   }
 
   async getCookie() {
-    const targetFile = __dirname + "/../config/cookie.json";
     return new Promise((resolve) => {
       fs.readFile(targetFile, async function (err, data) {
         if (err) {

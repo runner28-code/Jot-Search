@@ -15,7 +15,6 @@ export default function JobResults({ jobs }) {
       { jobs.map(job => {
         return (
           <JobResult 
-            job={job} 
             key={job.id} />
         )
       })}

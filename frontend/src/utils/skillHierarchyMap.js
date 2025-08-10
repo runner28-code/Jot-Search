@@ -113,6 +113,7 @@ export const skills = [
   'Brand Marketing',
   'Branding',
   'Budget Management',
+  'Budgeting',
   'Business Development',
   'Business Intelligence',
   'C#',
@@ -259,6 +260,7 @@ export const skills = [
   'Manufacturing',
   'Market Analysis',
   'Market Strategy',
+// Temp comment
   'Marketing Campaigns',
   'Marketing Research',
   'Masters Degree',

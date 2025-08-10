@@ -18,7 +18,6 @@ exports.IUSER = {
     resume: "",
     avatar: "",
     linkedin: "",
-// Temp comment
     skills: "",
     category: "",
     seniority: "",

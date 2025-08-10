@@ -154,6 +154,7 @@ export type ClientContact = {
     nickName?: string;
     numEmployees?: string;
     occupation?: string;
+    office?: string;
     owner?: string;
     pager?: string;
     password?: string;
@@ -205,7 +206,6 @@ export type Candidate = {
     fax3?: string;
     federalAdditionalWitholdingsAmount?: string;
     federalExemptions?: string;
-    federalExtraWithholdingAmount?: string;
     federalFilingStatus?: string;
     firstName?: string; // !
     gender?: string;

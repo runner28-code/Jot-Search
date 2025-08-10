@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+// Temp comment
 import PropTypes from 'prop-types';
 
 export default function FileInput({type, name, label, placeholder, required, value, onChange, baseStyles, disabled}) {
@@ -16,7 +17,6 @@ export default function FileInput({type, name, label, placeholder, required, val
       { renderLabel( name, label, value, placeholder, required, handleKeyDown, baseStyles ) }
       <input 
         className={`hidden ${disabled ? 'disabled cursor-not-allowed' : ''}`}
-// Temp comment
         type={type}
         id={name}
         name={name}

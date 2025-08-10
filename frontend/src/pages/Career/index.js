@@ -15,6 +15,7 @@ import Flag from '../../assets/icons/flag.svg';
 import PageHeader from '../../components/PageHeader';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import InviteCandidates from './InviteCandidates';
+// Temp comment
 
 export default function CareerPage() {
   const { width } = useWindowDimensions();
@@ -43,7 +44,6 @@ export default function CareerPage() {
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
   const postingAge = calculatePostingAge(careerData.createdAt);
   const data = {
-// Temp comment
     careerData,
     categoryString,
     addressString,

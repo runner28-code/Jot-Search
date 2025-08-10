@@ -6,6 +6,7 @@ import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 import searchWhite from '../../assets/images/search-white.webp';
+import searchGray from '../../assets/images/search-gray.svg';
 
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
@@ -120,7 +121,6 @@ function renderResultsContainer( results, searchTerm ) {
     return null;
   }
 
-  return (
     <div className='absolute z-20 top-full w-full flex flex-col justify-center items-center min-h-50 px-6 py-4 rounded-2xl rounded shadow-resultCardShadow bg-white '>
       { renderResults( results ) }
     </div>

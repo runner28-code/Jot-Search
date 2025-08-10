@@ -1,7 +1,6 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import debounce from 'lodash/debounce';
 import SearchBar from '../SearchBar';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
@@ -22,7 +21,6 @@ export default function GlobalSearch({ placeholder }) {
     forceHidden: true
   });
   // State and ref to listen for outside clicks
-// Temp comment
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 

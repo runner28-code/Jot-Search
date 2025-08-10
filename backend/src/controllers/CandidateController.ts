@@ -118,6 +118,7 @@ export class CandidateController {
   @Authorized()
   @Post("/search")
   async searchByFilters(@Body() body: FilterBody) {
+    try {
       const { page, count, filters, fields } = body;
 
       const skip = (count || 0) * ((page - 1) || 0)

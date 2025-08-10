@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import Dropdown from '../../components/UniversalDropdown';
 import AuthService from '../../services/auth';
+// Temp comment
 import * as ROUTES from '../../routes';
 import AddCandidate from './AddCandidate';
 import AddCompanyUser from './AddCompanyUser';
 import AddCoordinator from './AddCoordinator';
-// Temp comment
 import User from '../../assets/icons/add-new-user.svg';
 
 export default function AddUser() {

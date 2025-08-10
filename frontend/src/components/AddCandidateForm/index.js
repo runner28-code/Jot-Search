@@ -100,6 +100,7 @@ export default function RegistrationForm() {
           success: false,
         });
       }, 2000);
+    }
   }, [submissionObject.success])
 
   async function handleSubmit(event) {

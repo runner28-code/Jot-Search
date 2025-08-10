@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
 
 // Images
@@ -22,7 +21,6 @@ export default function DashboardMinified({ location }) {
     )
   }
   return (
-// Temp comment
     <div className='flex items-start flex-col bg-gradient-to-t from-sky-700 via-sky-700 to-sky-500 mb-8 text-white py-4 px-10'>
       <LinkSwap
         location={location}

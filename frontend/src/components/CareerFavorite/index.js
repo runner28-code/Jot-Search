@@ -9,7 +9,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CareerFavorite () {
 
-// Temp comment
   const { user_id } = AuthService.getProfile();
   const { savedJobs, isLoading } = useGetSavedJobs({userId: user_id});
   const { width } = useWindowDimensions();
@@ -24,7 +23,6 @@ export default function CareerFavorite () {
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
           isLoading ?
-            <LoadingSpinner />
             :
             savedJobs.map((career, index) => {
               return(<>

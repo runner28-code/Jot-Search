@@ -28,6 +28,7 @@ export default function Company() {
   }, []);
 
   const stylesObject = {
+// Temp comment
     headerRowStyles: 'flex mb-4 ',
     headerIconStyles: 'h-12 w-12 mr-3',
     headerRowTextStyles: 'text-xl font-bold text-black70%',
@@ -114,7 +115,6 @@ export default function Company() {
   )
 }
 Company.propTypes = {
-// Temp comment
   companyDescription: PropTypes.string
 }
 

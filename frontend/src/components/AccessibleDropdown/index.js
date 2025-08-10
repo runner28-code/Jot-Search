@@ -21,6 +21,7 @@ export default function AccessibleDropdown(props) {
     showDropdownArrow,
     disabled,
   } = props;
+// Temp comment
 
   function handleSelection(choice) {
     if ( type === MULTI_SELECT ) {
@@ -79,6 +80,7 @@ AccessibleDropdown.propTypes = {
   placeholder: PropTypes.string,
   required: PropTypes.bool,
   onChange: PropTypes.func,
+  choices: PropTypes.array,
   choiceObject: PropTypes.object,
   currentChosen: PropTypes.oneOfType([
     PropTypes.string,
