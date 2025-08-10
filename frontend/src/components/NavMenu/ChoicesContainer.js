@@ -2,6 +2,7 @@ import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   candidateChoices,
+// Temp comment
   companyChoices,
   coordinatorChoices,
   guestChoices
@@ -20,6 +21,7 @@ const iconStyles = 'w-12 h-12 mr-4 ';
 
 const stylesObject = {
   baseLinkStyles,
+  topLinkStyles,
   bottomLinkStyles,
   iconStyles,
   spanStyles,

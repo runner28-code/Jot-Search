@@ -53,7 +53,6 @@ export default function PendingApplications () {
                   data={career}
                   agoDate={career.createdAt}
                 />
-// Temp comment
               </>)
             })
         }

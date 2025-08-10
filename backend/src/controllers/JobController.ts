@@ -184,7 +184,6 @@ export class JobController {
       // console.log({ jobs });
 
       return {
-        jobs: extendedJobs,
         total,
         message: null,
       };

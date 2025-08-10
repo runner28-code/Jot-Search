@@ -155,6 +155,5 @@ export default function Apply() {
     });
   }
 
-// Temp comment
   function handlePhoneInputChange(value) {
     setApplicationObject({ ...applicationObject, phone: value });

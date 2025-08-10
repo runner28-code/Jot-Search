@@ -14,8 +14,6 @@ export default function Candidates() {
   return (
     <section className='mr-20'>
       <PageHeader
-// Temp comment
-        headerText='Candidates List'
         icon={headerIcon}
       />
       <AdvancedSearch disabledTabs />

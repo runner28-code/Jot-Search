@@ -25,12 +25,12 @@ function MobileNavBarLayout() {
   return (
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50'>
       <div className='h-30 pl-4 pr-4 flex justify-between items-center relative'>
-        <Link to={ROUTES.root}>
           <img
             src={inTulsaLogoText}
             alt='logo'
             className='w-72 h-ful'
           />
+        </Link>
         {/* Nav Menu */}
         <div className='flex items-center'>
           { width >= 990 ? <NavSearch /> : <NavSearchMobile />}

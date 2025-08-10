@@ -39,7 +39,6 @@ function NavBarLayout() {
           />
         </Link>
         {/* Nav Menu */}
-// Temp comment
         <div className='flex items-center font-spaceGrotesk'>
           <div className='mr-8'>
             { renderNavSearch() }

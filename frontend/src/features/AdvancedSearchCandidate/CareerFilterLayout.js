@@ -17,7 +17,6 @@ const dropDownFiltersCandidate = [
   'On-Site/Remote',
   'Years Experience'
 ]
-// Temp comment
 
 export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
@@ -38,6 +37,7 @@ export default function CareerFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
   } else {
+// Temp comment
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });

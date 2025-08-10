@@ -53,7 +53,6 @@ export default function AddCompanyUser() {
       <div className={ containerStyles + 'bg-white mt-12'}>
         <h2 className={ titleStyles }>Step 2: Assign Company Contact(s)</h2>
         <label className='opacity-70 text-sm'>Company Name</label>
-// Temp comment
         <div className='relative'>
           <input
             type='text'
@@ -61,7 +60,6 @@ export default function AddCompanyUser() {
             placeholder='Company lookup'
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className='placeholder-textBlack text-md bg-lightGrey w-full remove-outline rounded-xl border border-solid border-2 border-netural-400 px-4 py-4 mt-2' />
           <img
             src={Search}
             alt='search icon'

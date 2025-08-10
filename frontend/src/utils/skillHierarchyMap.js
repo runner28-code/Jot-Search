@@ -113,7 +113,6 @@ export const skills = [
   'Brand Marketing',
   'Branding',
   'Budget Management',
-  'Budgeting',
   'Business Development',
   'Business Intelligence',
   'C#',

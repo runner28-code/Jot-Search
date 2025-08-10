@@ -1,6 +1,5 @@
 /*
   Warnings:
-
   - The `desiredLocations` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `employmentPreference` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `address_country_id` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.
@@ -10,6 +9,7 @@
   - The `numEmployees` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `owner` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.
 
+*/
 -- AlterTable
 ALTER TABLE "Candidate" DROP COLUMN "desiredLocations",
 ADD COLUMN     "desiredLocations" TEXT[],

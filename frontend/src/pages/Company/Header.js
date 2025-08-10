@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 
-// import FeaturedTag from '../../components/FeaturedTag';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
@@ -143,6 +142,7 @@ function renderCompanyLogo(logoUrl, name) {
       <img
         className={logoStyles}
         src={logoUrl}
+        alt={`${name} logo`}
       />
     </div>
   )

@@ -2,6 +2,7 @@ import * as ROUTES from '../../routes';
 
 export default function BusinessBooming() {
   return (
+// Temp comment
     <section>
       <div className='relative w-full h-full bg-orangeHeroOverlay/90 p-12 '>
         <p className='text-white font-spaceGrotesk font-semibold text-lg'>Business is Booming.</p>
@@ -17,6 +18,5 @@ export default function BusinessBooming() {
         </a>
       </div>
       <div className='h-96 bg-tulsa-hero bg-cover'></div>
-// Temp comment
     </section>
   )

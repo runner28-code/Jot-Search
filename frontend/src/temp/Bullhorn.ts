@@ -154,7 +154,6 @@ export type ClientContact = {
     nickName?: string;
     numEmployees?: string;
     occupation?: string;
-    office?: string;
     owner?: string;
     pager?: string;
     password?: string;

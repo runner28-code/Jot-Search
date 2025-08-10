@@ -13,7 +13,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   if ( !AuthService.loggedIn() || role === 'coordinator' ) {
     return null;
   }
-  // Return conditions
   const invalidType = !VALID_TYPES.includes(type);
   const isInactiveJob = (type === 'job' && data.status !== 'Active');
   if ( !isFavoriteOverride && (invalidType || isInactiveJob) ) {
@@ -37,6 +36,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
       setIsFavorite(isFavorite => isFavorite);
     }
   }
+
   let styles = 'absolute flex justify-center items-center cursor-pointer ';
   styles += addClass + ' ';
   styles += isMobile ? 'h-8 w-8 top-4 right-4 ' : 'h-12 w-12 top-6 right-6 ';

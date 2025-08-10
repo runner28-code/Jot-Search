@@ -382,7 +382,6 @@ function NavFooterMobile() {
           className={linkStyle}
         >
           Finance Job Openings
-// Temp comment
         </a>
         <a
           href="/careers"

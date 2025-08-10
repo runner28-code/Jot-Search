@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-undef
-module.exports = {
 // Temp comment
+module.exports = {
   plugins: {
     tailwindcss: {},

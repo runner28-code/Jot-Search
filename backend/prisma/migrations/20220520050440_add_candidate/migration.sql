@@ -1,4 +1,5 @@
 -- CreateTable
+CREATE TABLE "Candidate" (
     "id" TEXT NOT NULL,
     "address" TEXT,
     "certifications" TEXT,
@@ -10,7 +11,6 @@
     "dateAvailable" TIMESTAMP(3),
     "dateAvailableEnd" TIMESTAMP(3),
     "dateI9Expiration" TIMESTAMP(3),
-    "dateLastComment" TIMESTAMP(3),
     "dateLastModified" TIMESTAMP(3),
     "dateNextCall" TIMESTAMP(3),
     "dateOfBirth" TEXT,

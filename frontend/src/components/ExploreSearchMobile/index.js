@@ -7,7 +7,6 @@ import * as ROUTES from '../../routes';
 
 export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
-// Temp comment
   const [filterState, setFilterState] = useState({
     title: '',
     'On-Site/Remote': 'Any Work Setting',
@@ -25,4 +24,5 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     if (filterState.expertise !== 'Any Expertise') {
       params.expertise = filterState.expertise;
     }
+// Temp comment
     navigate(ROUTES.careers, { state: { ...params } });

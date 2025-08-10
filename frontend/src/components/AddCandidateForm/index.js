@@ -100,7 +100,6 @@ export default function RegistrationForm() {
           success: false,
         });
       }, 2000);
-    }
   }, [submissionObject.success])
 
   async function handleSubmit(event) {
@@ -249,6 +248,7 @@ export default function RegistrationForm() {
             value={formObj.referredBy}
             onChange={handleChange}
             error={errors.includes('referredBy')}
+          />
           {/* File input for resume */}
           <FormInput
             type='file'

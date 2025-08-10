@@ -22,6 +22,7 @@ export default function GlobalSearch({ placeholder }) {
     forceHidden: true
   });
   // State and ref to listen for outside clicks
+// Temp comment
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
@@ -50,7 +51,6 @@ export default function GlobalSearch({ placeholder }) {
     // TODO: API: Candidates if role === 'company' || 'coordinator'
     const [jobResults, companyResults, CandidateResults] = await Promise.all([
       getJobs( searchTerm, 'title', 3 ),
-// Temp comment
       getCompanies( searchTerm, 'name', 3 ),
       getCandidates( searchTerm, 'firstname', 3 )
     ]);

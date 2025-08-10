@@ -34,8 +34,6 @@ const defaultState = {
   roles: [],
   skills: [],
   experience: '',
-  employmentPreference: '',
-// Temp comment
   workspace: '',
   linkedin: '',
   referredBy: '',

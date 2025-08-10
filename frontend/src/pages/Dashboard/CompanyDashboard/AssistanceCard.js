@@ -1,4 +1,5 @@
 import flagIcon from '../../../assets/icons/flag.svg';
+
 export default function AssistanceCard() {
   return (
     <div className='w-full bg-white border border-disabledGrey rounded-2xl px-xxl-3 py-xxl-2'>
@@ -13,6 +14,7 @@ export default function AssistanceCard() {
       </div>
       {/* Body */}
       <div className='text-black70%'>
+// Temp comment
         <p>Please email us to perform changes to your InTulsa Talent Network account</p>
         <ul className='mt-8'>
           <li className='list-disc ml-8'>Update company profile</li>

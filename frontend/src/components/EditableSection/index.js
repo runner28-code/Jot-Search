@@ -6,6 +6,7 @@ import EditSectionForm from './components/EditSectionForm';
 import { FiEdit } from 'react-icons/fi';
 import { MdCancel, MdCheckCircle } from 'react-icons/md';
 
+// Temp comment
 export default function EditableSection({ entityID, header, contentObjectProp, handleContentUpdate, headerStyles }) {
   const [contentObject, setContentObject] = useState(contentObjectProp);
   const [editMode, setEditMode] = useState(false);
