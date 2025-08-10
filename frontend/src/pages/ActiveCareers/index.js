@@ -38,7 +38,6 @@ export default function ActiveCareers() {
 
   return (
     <section>
-      <PageHeader
         headerText='Active Careers'
         IconComponent={CareerIcon}
         classOverride='h-18 w-18'

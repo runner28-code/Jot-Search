@@ -8,6 +8,7 @@ import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
 
+// Temp comment
 export default function InviteCandidates({ job }) {
   const { candidates, isLoading } = useGetCandidates({
     filtersArr: job.skillList?.map(skill => ({
@@ -23,6 +24,7 @@ export default function InviteCandidates({ job }) {
   const candidateOptions = candidates?.map(candidate => {
     return {
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
+      value: candidate.id,
       candidate
     }
   }) || [];

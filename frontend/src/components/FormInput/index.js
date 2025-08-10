@@ -62,7 +62,6 @@ export default function FormInput(props) {
         onChange={onChange}
         choices={choices}
         choiceObject={choiceObject}
-        stylesObject={stylesObject}
         showDropdownArrow={true}
         disabled={disabled}
       />
@@ -91,7 +90,6 @@ export default function FormInput(props) {
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-// Temp comment
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}
       />

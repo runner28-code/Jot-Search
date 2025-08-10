@@ -18,3 +18,4 @@ const isDevelopment = window.location.hostname === 'localhost';
 ReactDOM.render(
   <QueryClientProvider client={queryClient}>
     <BrowserRouter>
+      <CandidateContext>

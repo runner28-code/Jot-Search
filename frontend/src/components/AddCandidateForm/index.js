@@ -266,7 +266,6 @@ export default function RegistrationForm() {
             value={formObj.password}
             onChange={handleChange}
             error={errors.includes('password')}
-// Temp comment
           />
           <FormInput
             type='password'

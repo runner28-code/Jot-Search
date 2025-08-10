@@ -62,7 +62,6 @@ CREATE TABLE "Company" (
     "_score" DOUBLE PRECISION,
     "customDate1" TIMESTAMP(3),
     "customDate2" TIMESTAMP(3),
-    "customDate3" TIMESTAMP(3),
     "customFloat1" DOUBLE PRECISION,
     "customFloat2" DOUBLE PRECISION,
     "customFloat3" DOUBLE PRECISION,

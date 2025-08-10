@@ -53,6 +53,5 @@ export default function CareerFavorite () {
             View All
         </Link>
       </div>
-// Temp comment
     </div>
   )

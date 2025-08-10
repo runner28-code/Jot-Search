@@ -132,6 +132,7 @@ export class CompanyController {
   }
 
   async getCompanyByIdFromBullhorn(id: string): Promise<any> {
+    try {
       const company = await db.company.findFirst({
         where: {
           id: id,
@@ -191,7 +192,6 @@ export class CompanyController {
     }
 
     try {
-      const res = await db.companyCandidateInvites.createMany({
         data: companyCandidateInvites,
       })
 

@@ -19,4 +19,5 @@ export default function ResetPassword() {
   const handlePassword = (event) => {
     setPassword(event.target.value);
   }
+  const handleConfirmPassword = (event) => {
     setConfirmPassword(event.target.value);

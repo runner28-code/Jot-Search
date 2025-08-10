@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import CandidateCard from '../ResultCard/CandidateCard';
 import CompactCareerCard from '../ResultCard/CompactCareerCard';
 import CareerCard from '../ResultCard/CareerCard';
+// Temp comment
 import CompanyCard from '../ResultCard/CompanyCard';
 import ViewAllLink from '../../components/ViewAllLink';
 import { pluralizedTypes } from '../../utils/constants';
@@ -30,4 +31,5 @@ export default function ResultContainer(props) {
     if ( !header ) {
       return null;
     }
+
     return <h5 className={resultsHeaderStyles}>{header}</h5>;

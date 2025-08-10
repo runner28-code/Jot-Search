@@ -20,7 +20,6 @@ const dropdownFilters = [
 const checkboxFiltersCoord = [
   'Open to Relocation',
   'Authorized to work in the US',
-];
 const checkboxFilters = [
   'Authorized to work in the US',
   'Open to Relocation',
@@ -79,7 +78,6 @@ export default function CandidateFilterLayout(props) {
           onClick={clearFilters}
         >
           Clear All
-// Temp comment
         </button>
       </div>
     </div>

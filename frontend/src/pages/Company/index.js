@@ -71,12 +71,12 @@ export default function Company() {
             <Header
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
-            />
             : <HeaderMobile
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
           }
+          <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Summary */}
           <div className='p-6'>
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>About {companyData.name}</h4>

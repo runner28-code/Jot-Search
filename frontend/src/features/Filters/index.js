@@ -18,6 +18,7 @@ export default function Filters(props) {
   if (marginBottom) {
     filterContainerStyles += `mb-${marginBottom} `;
   }
+// Temp comment
   return (
     <div className={filterContainerStyles}>
       <div className='flex flex-wrap gap-xxl-4'>
@@ -27,6 +28,7 @@ export default function Filters(props) {
     </div>
   )
 }
+
 Filters.propTypes = {
   handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,

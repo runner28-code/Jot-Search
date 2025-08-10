@@ -94,7 +94,6 @@ export default function RegistrationFormInternal(loggedIn) {
         return;
       }
       formObj.resume = resumeResponse;
-
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
 
@@ -142,7 +141,6 @@ export default function RegistrationFormInternal(loggedIn) {
       ...formObj,
       firstName: firstName.value,
       lastName: lastName.value,
-// Temp comment
       email: email.value,
       willRelocate: relocate,
       linkedin: linkedin.value,

@@ -30,6 +30,7 @@ export const saveCompany = async (company: string, candidate: string) => {
         },
       });
     } else {
+      console.log("update");
       await db.user.update({
         where: {
           id: candidate,

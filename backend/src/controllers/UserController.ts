@@ -40,7 +40,6 @@ export class UserController {
   @Post("/login")
   async login(@Body() body: { email: string; password: string }) {
     const { email, password } = body;
-    const { result, error, ...data } = await login(email, password);
 
     if (result) {
       const token = CreateJwtToken(data);
@@ -123,6 +122,7 @@ export class UserController {
       if (user.role === COMPANY)
         await sendVerification(user.email, user.companyName || "");
       else await sendVerification(user.email, user.firstname || "");
+    } catch (error) {
       return {
         result: false,
         error: "Please check email, email maybe invalid one",
