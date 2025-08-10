@@ -18,7 +18,6 @@ export default function Filters(props) {
   if (marginBottom) {
     filterContainerStyles += `mb-${marginBottom} `;
   }
-// Temp comment
   return (
     <div className={filterContainerStyles}>
       <div className='flex flex-wrap gap-xxl-4'>
@@ -55,7 +54,6 @@ export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handl
 
 export function renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange) {
   if (!filterObject && !defaultFilterObject) {
-    return null;
   }
 
   return Object.entries(defaultFilterObject).map(([key, value]) => {

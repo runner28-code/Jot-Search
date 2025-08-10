@@ -23,7 +23,6 @@ import {
   getStats,
   getLandingPageStats,
   findUserByEmail,
-  getCompanyDashboardStats,
   getCoordinatorDashboardStats,
 } from "../services/User";
 
@@ -40,6 +39,7 @@ export class UserController {
   @Post("/login")
   async login(@Body() body: { email: string; password: string }) {
     const { email, password } = body;
+    const { result, error, ...data } = await login(email, password);
 
     if (result) {
       const token = CreateJwtToken(data);

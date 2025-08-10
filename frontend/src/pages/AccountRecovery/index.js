@@ -4,7 +4,6 @@ import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
 import API from '../../services/API';
-// Temp comment
 
 export default function AccountRecovery() {
   const [response, setResponse] = useState('');

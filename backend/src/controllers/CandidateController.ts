@@ -172,7 +172,6 @@ export class CandidateController {
           where,
           skip: skip < 0 ? 0 : skip,
           take: count,
-          orderBy: {
             firstname: "asc",
           }
         });

@@ -43,3 +43,4 @@ CREATE TABLE "Lead" (
     "nickName" TEXT,
     "notes" TEXT,
     "numEmployees" TEXT,
+    "occupation" TEXT,

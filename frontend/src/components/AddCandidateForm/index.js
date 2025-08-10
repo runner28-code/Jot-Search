@@ -249,7 +249,6 @@ export default function RegistrationForm() {
             value={formObj.referredBy}
             onChange={handleChange}
             error={errors.includes('referredBy')}
-          />
           {/* File input for resume */}
           <FormInput
             type='file'

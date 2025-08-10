@@ -46,7 +46,6 @@ export default function PendingApplications () {
             <LoadingSpinner />
             :
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
-// Temp comment
               return(<>
                 <CareerCard
                   key={career.id}
@@ -54,6 +53,7 @@ export default function PendingApplications () {
                   data={career}
                   agoDate={career.createdAt}
                 />
+// Temp comment
               </>)
             })
         }

@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
-// Temp comment
 import PropTypes from 'prop-types';
 import {
   FiChevronLeft as BackIcon,
@@ -13,7 +12,6 @@ const ResumePreview = ({ resumeUrl }) => {
   const canvasRef = useRef(null);
 
   const { pdfDocument } = usePdf({
-    file: resumeUrl,
     page,
     canvasRef,
   });

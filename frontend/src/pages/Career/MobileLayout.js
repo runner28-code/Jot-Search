@@ -126,6 +126,7 @@ export default function MobileLayout(props) {
         </button>
       </div>
     </section>
+    <OtherCareers
       companyId={careerData.companyId}
       companyName={careerData.clientCorporation}
       currentCareerId={careerData.externalId}

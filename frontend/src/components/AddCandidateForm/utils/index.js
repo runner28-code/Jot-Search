@@ -22,6 +22,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
 }
 
 export function renderErrorBlock(errorBlock) {
+// Temp comment
   
   if (errorBlock) {
     return (

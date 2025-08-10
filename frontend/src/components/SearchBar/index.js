@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import searchWhite from '../../assets/images/search-white.webp';
 
 const defaultStylesObject = {
   containerStyles: 'flex items-center justify-evenly p-4 h-24 w-135 vw-480:w-160 vw-1024:h-36 vw-1024:w-210 bg-white border-solid border-2 border-lightGrey rounded-2xl ',
@@ -35,7 +34,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
         placeholder={ placeholderText }
         value={ searchTerm }
         onChange={ handleChange }
-// Temp comment
         className={ styleObject.inputStyles } />
     </label>
   )

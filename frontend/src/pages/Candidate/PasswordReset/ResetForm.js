@@ -45,7 +45,6 @@ export default function ResetForm({ candidateData, setType }) {
     <div>
       <div className='w-140'>
         <FormInput
-          type='text'
           name='password'
           value={formData.password}
           onChange={handleChange}

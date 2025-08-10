@@ -192,6 +192,7 @@ export class CompanyController {
     }
 
     try {
+      const res = await db.companyCandidateInvites.createMany({
         data: companyCandidateInvites,
       })
 

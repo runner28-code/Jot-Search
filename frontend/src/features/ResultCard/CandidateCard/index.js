@@ -81,6 +81,7 @@ export default function CandidateCard({ data, disableLink }) {
           {/* Relocation */}
           <InfoLabel
             label='Relocation'
+// Temp comment
             value={data.willRelocate}
           />
           {/* Skill List */}

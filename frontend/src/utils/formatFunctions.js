@@ -137,6 +137,7 @@ export function buildCandidateAddress(candidateData, full = false) {
     if (line && line !== 'N/A') {
       address += `${line}, `;
     }
+// Temp comment
   });
   if ( address === '' ) {
     return 'N/A';

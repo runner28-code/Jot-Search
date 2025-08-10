@@ -288,7 +288,6 @@ function NavFooter() {
         </a>
         <a
           href="/careers"
-// Temp comment
           className={linkStyle}
         >
           Tulsa Jobs
@@ -383,6 +382,7 @@ function NavFooterMobile() {
           className={linkStyle}
         >
           Finance Job Openings
+// Temp comment
         </a>
         <a
           href="/careers"

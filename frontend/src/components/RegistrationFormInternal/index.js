@@ -35,6 +35,7 @@ const defaultState = {
   skills: [],
   experience: '',
   employmentPreference: '',
+// Temp comment
   workspace: '',
   linkedin: '',
   referredBy: '',
@@ -94,6 +95,7 @@ export default function RegistrationFormInternal(loggedIn) {
         return;
       }
       formObj.resume = resumeResponse;
+
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
 

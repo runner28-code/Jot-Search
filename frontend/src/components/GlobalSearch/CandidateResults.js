@@ -1,7 +1,7 @@
-// Temp comment
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { FaRegUserCircle as CandidateIcon } from 'react-icons/fa';
+// Temp comment
 import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
 

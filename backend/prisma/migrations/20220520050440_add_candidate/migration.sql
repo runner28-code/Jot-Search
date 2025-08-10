@@ -1,5 +1,4 @@
 -- CreateTable
-CREATE TABLE "Candidate" (
     "id" TEXT NOT NULL,
     "address" TEXT,
     "certifications" TEXT,
@@ -42,6 +41,7 @@ CREATE TABLE "Candidate" (
     "isAnonymized" TEXT,
     "isDeleted" TEXT,
     "isEditable" TEXT,
+    "isExempt" TEXT,
     "leads" TEXT,
     "maritalStatus" TEXT,
     "massMailOptOut" TEXT,

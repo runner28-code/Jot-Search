@@ -16,6 +16,7 @@ function isTodayOrYesterday(dateObj) {
   if ( sameYear && sameMonth ) {
     if ( dayDifference === 0 ) {
       returnObj.isToday = true;
+// Temp comment
     } else if ( dayDifference === 1 ) {
       returnObj.isYesterday = true;
     }
@@ -37,7 +38,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
 
     const concatenateOrdinal = function(d) {
       if (d > 3 && d < 21) return d + 'th';
-// Temp comment
       switch (d % 10) {
         case 1:  return d + 'st';
         case 2:  return d + 'nd';
