@@ -53,6 +53,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           />
         </div>
       </div>
+// Temp comment
       <div className='grow font-bold'>
         {/* First Name */}
         <div className='mb-6'>
@@ -234,7 +235,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className='w-24 h-24 cursor-pointer fill-rose-500'
             onClick={handleCancel} />
           <MdCheckCircle 
-// Temp comment
             className='w-24 h-24 cursor-pointer fill-emerald-500'
             onClick={handleSubmit} />
         </div>

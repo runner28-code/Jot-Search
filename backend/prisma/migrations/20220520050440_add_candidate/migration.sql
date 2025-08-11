@@ -54,7 +54,6 @@ CREATE TABLE "Candidate" (
     "nickName" TEXT,
     "numCategories" TEXT,
     "numOwners" TEXT,
-    "occupation" TEXT,
     "otherDeductionsAmount" TEXT,
     "otherIncomeAmount" TEXT,
     "pager" TEXT,

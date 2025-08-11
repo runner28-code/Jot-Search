@@ -16,7 +16,6 @@ export default function AccountRecovery() {
       email: email.value
     });
 
-    if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);

@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-// Temp comment
 import FormInput from '../../../components/FormInput';
 import API from '../../../services/API';
 import * as ROUTES from '../../../routes';
@@ -63,7 +62,6 @@ export default function ResetForm({ candidateData, setType }) {
       { renderMatch(match) }
       <button
         className='h-20 w-150 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
-        onClick={handleSubmit}
       >
         Reset Password
       </button>

@@ -55,7 +55,6 @@ export default function RegistrationForm(loggedIn) {
   const [commObj, setCommObj] = useState(defaultCommunity);
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
-    loading: false,
     success: false,
   });
 
@@ -119,6 +118,7 @@ export default function RegistrationForm(loggedIn) {
       }
     }
   }, [submissionObject.loading]);
+
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
       setTimeout(() => {

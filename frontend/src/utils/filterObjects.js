@@ -109,6 +109,7 @@ export const candidateFilterObject = {
     ...skills
   ],
 };
+
 // Create default filter state based on filterObject
 const convertedCandidateFilters = {};
 Object.keys(candidateFilterObject).forEach(key => {

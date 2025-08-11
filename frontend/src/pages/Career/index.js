@@ -15,7 +15,6 @@ import Flag from '../../assets/icons/flag.svg';
 import PageHeader from '../../components/PageHeader';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import InviteCandidates from './InviteCandidates';
-// Temp comment
 
 export default function CareerPage() {
   const { width } = useWindowDimensions();
@@ -131,4 +130,3 @@ function Notification({title, content, text, email, company, id, add}) {
         add={add}
       />
     </div>
-  )

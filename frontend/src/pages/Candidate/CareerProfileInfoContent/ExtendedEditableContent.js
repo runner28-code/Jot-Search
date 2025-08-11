@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
 import FormInput from '../../../components/FormInput';
 import {
+  skills as skillChoices,
   roles as roleChoices,
 } from '../../../utils/skillHierarchyMap';
 import { experienceMap } from '../../../utils/dbFieldMapping';
@@ -25,7 +26,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     address2: candidateData.address2 || '',
     city: candidateData.city || '',
     state: candidateData.state || '',
-    zip: candidateData.zip || '',
     phone: candidateData.phone || '',
     categoryId: candidateData.categoryId || null,
     expertise: categories.find(category => category.id === candidateData.categoryId)?.name || '',

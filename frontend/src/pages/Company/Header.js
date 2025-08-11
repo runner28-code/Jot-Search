@@ -178,6 +178,7 @@ function FillerIcon () {
 
   if( width >= 1280 ) {
     return (
+// Temp comment
       <div>
         <BsBuilding className='w-16 h-16 fill-royalBlue basis-1/3 mr-8'/>
       </div>

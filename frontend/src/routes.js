@@ -11,6 +11,7 @@ export const favorites = '/favorites';
 export const signup = '/signup';
 export const settings = '/settings';
 export const accountRecovery = '/account-recovery';
+// Temp comment
 export const resetPassword = '/reset-password';
 
 // Dashboard routes

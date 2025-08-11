@@ -37,7 +37,6 @@ export const roles = {
     'IT',
     'Entrepreneurship'
   ],
-  'Other': [
     'Education',
     'Healthcare',
     'Legal',
@@ -260,7 +259,6 @@ export const skills = [
   'Manufacturing',
   'Market Analysis',
   'Market Strategy',
-// Temp comment
   'Marketing Campaigns',
   'Marketing Research',
   'Masters Degree',

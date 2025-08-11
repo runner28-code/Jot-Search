@@ -81,6 +81,7 @@ const mockJobsData = [
     specialty: 'Sales & Biz Dev'
   },
 ];
+
 export const CareerContext = createContext();
 
 const CareerProvider = ({children}) => {

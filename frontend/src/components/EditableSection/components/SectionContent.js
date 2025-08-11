@@ -15,4 +15,3 @@ export default function SectionContent({ contentObject }) {
       propertyName={propertyName}
     />
   }
-  return renderMultipleProperties(contentObject);

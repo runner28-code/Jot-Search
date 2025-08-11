@@ -18,4 +18,5 @@
 
 #     # Steps represent a sequence of tasks that will be executed as part of the job
 #     steps:
+#       # need checkout before using docker-compose-remote-action
 #       - uses: actions/checkout@v2

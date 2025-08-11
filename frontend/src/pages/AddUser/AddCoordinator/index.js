@@ -7,6 +7,7 @@ export default function AddCoordinator() {
   const [formObject, setFormObject] = useState(defaultState);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
+    success: false,
     errors: {},
   });
 
@@ -39,7 +40,6 @@ export default function AddCoordinator() {
       setTimeout(() => {
         setFormObject(defaultState);
         setSubmissionObject({
-          loading: false,
           success: false,
           errors: {},
         });

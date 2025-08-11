@@ -33,6 +33,7 @@ const mockJobsData = [
     specialty: 'Sales & Biz Dev'
   },
 ];
+// Temp comment
 
 function renderChosen(currentChosen, handleRemove) {
   return currentChosen.map(choice =>
@@ -80,7 +81,6 @@ export default function ReferralSearch() {
         { renderChosen(currentChosen, handleRemove) }
       </div>
       <TypeaheadDropdown
-// Temp comment
         type='text'
         dropdownType='list-select'
         name='referrals'

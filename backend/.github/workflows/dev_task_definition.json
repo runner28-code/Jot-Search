@@ -29,6 +29,7 @@
                     "name": "CHOKIDAR_USEPOLLING", 
                     "value": "true"
                 },
+                {
                     "name": "PORT", 
                     "value": "5000"
                 },
@@ -62,6 +63,5 @@
                 },
                 {
                     "name": "GETRO_PASSWORD", 
-                    "value": "{SECRET_GETRO_PASSWORD}"
                 },
                 {

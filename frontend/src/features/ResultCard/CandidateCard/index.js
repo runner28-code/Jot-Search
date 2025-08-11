@@ -102,6 +102,7 @@ CandidateCard.propTypes = {
     avatar: PropTypes.string,
     city: PropTypes.string,
     companyName: PropTypes.string,
+// Temp comment
     experienceYears: PropTypes.string,
     experience: PropTypes.number,
     expertise: PropTypes.string,

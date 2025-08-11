@@ -32,7 +32,6 @@ const uploadToS3 = async(req: any, res: any) => {
   console.log("uploading to s3");
   if(!process.env.S3_BUCKET) {
     res.status(500).send("S3_BUCKET not set")
-    return
   }
 
   const form = new IncomingForm() as any

@@ -115,7 +115,6 @@ export default function DesktopLayout(props) {
       companyId={careerData.companyId}
       companyName={careerData.clientCorporation}
       currentCareerId={careerData.externalId}
-// Temp comment
     />
   </>)
 }

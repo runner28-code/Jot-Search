@@ -2,9 +2,9 @@ name: Dev - EC2 Instance Deployment
 on:
   push:
     branches: [ dev ]
-
 jobs:
   docker-deploy:
+    runs-on: ubuntu-latest
 
     steps:
       # need checkout before using docker-compose-remote-action

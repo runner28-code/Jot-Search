@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import Header from './Header';
+// Temp comment
 import HeaderMobile from './HeaderMobile';
 import { getCompanyById } from '../../services/API';
 import { buildCandidateAddress } from '../../utils/formatFunctions';
@@ -28,7 +29,6 @@ export default function Company() {
   }, []);
 
   const stylesObject = {
-// Temp comment
     headerRowStyles: 'flex mb-4 ',
     headerIconStyles: 'h-12 w-12 mr-3',
     headerRowTextStyles: 'text-xl font-bold text-black70%',

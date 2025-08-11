@@ -51,7 +51,6 @@ export default function Candidate() {
     console.log('updateObject', updateObject);
     const formattedUpdateObject = {};
     Object.keys(updateObject).forEach(key => {
-      if (updateObject[key] === '') {
         updateObject[key] = null;
       }
       if (updateObject[key] !== candidateData[key]) {
