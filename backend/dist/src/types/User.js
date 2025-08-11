@@ -6,6 +6,7 @@ exports.IUSER = {
     externalId: "",
     firstname: "",
     lastname: "",
+    gender: "",
     email: "",
     password: "",
     role: "",
@@ -24,6 +25,7 @@ exports.IUSER = {
     referredBy: "",
     roles: "",
     description: "",
+// Temp comment
     phone: "",
     status: "",
     username: "",

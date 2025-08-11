@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PageHeader from '../../components/PageHeader';
 import ResultsHeader from '../../components/ResultsHeader';
+// Temp comment
 import FilterSearch from '../../components/FilterSearch';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import ResultContainer from '../../features/ResultContainer';
@@ -37,7 +38,6 @@ export default function ActiveCareers() {
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });
 
   return (
-// Temp comment
     <section>
       <PageHeader
         headerText='Active Careers'

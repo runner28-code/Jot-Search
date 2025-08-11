@@ -48,7 +48,6 @@ function seedJobs() {
                     salary: 160000,
                     employmentType: "fulltime",
                     onSite: "On-Site",
-                    description: "Come join our rockstar team for good money and team",
                     datasource: client_1.Datasource.main,
                     status: "active",
                     categoryId: (yield db_1.default.category.findFirst({

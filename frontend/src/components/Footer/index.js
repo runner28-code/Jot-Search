@@ -374,6 +374,7 @@ function NavFooterMobile() {
         <a
           href="/careers"
           className={linkStyle}
+        >
           Marketing Job Openings
         </a>
         <a
@@ -397,6 +398,7 @@ function NavFooterMobile() {
 function BackToTop() {
   const { width } = useWindowDimensions();
 
+// Temp comment
   if( width <= 990 ) {
     return null;
   }

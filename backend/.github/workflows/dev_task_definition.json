@@ -56,12 +56,12 @@
                 {
                     "name": "AUTH_SECRET", 
                     "value": "{SECRET_AUTH_SECRET}"
-                },
                 {
                     "name": "GETRO_EMAIL", 
                     "value": "{SECRET_GETRO_EMAIL}"
                 },
                 {
                     "name": "GETRO_PASSWORD", 
+                    "value": "{SECRET_GETRO_PASSWORD}"
                 },
                 {

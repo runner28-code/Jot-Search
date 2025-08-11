@@ -9,10 +9,10 @@ import AuthService from '../../../services/auth';
 export default function CompanyDashboard({userType}) {
   const profile = AuthService.getProfile();
   const headerStyles = 'font-spaceGrotesk font-bold text-h1 text-royalBlue ';
-  return (
     <>
       <PageHeader
         headerText={profile.firstname + ' Dashboard'}
+        icon={gaugeIcon}
       />
       <Stats
         headerStyles={headerStyles}

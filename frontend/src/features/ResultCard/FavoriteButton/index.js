@@ -50,6 +50,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   )
 }
 
+// Temp comment
 FavoriteButton.propTypes = {
   type: PropTypes.string.isRequired,
   addClass: PropTypes.string,

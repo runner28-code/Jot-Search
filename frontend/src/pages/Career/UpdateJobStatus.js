@@ -39,5 +39,4 @@ export const UpdateJobStatus = ({ job }) => {
         />
       </div>
     </div>
-// Temp comment
   )

@@ -37,6 +37,7 @@ export const roles = {
     'IT',
     'Entrepreneurship'
   ],
+  'Other': [
     'Education',
     'Healthcare',
     'Legal',

@@ -29,6 +29,7 @@ export default function ResetForm({ candidateData, setType }) {
       if ( res.data.result ) {
         setType('Password Reset Successfully', true);
       } else {
+// Temp comment
         setType(res.data.error, false);
       }
     }
@@ -62,6 +63,7 @@ export default function ResetForm({ candidateData, setType }) {
       { renderMatch(match) }
       <button
         className='h-20 w-150 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
+        onClick={handleSubmit}
       >
         Reset Password
       </button>

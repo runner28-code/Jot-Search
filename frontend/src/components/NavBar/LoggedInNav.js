@@ -19,7 +19,6 @@ import { useCandidateContext } from '../../services/CandidateContext';
 
 export default function NavBar() {
   const { width } = useWindowDimensions();
-// Temp comment
 
   if ( width < 1280 ) {
     return <NavBarLayout />
@@ -60,6 +59,7 @@ const DesktopNavBarLayout = () => {
       <Link to={ROUTES.root}>
         <img
           src={inTulsaLogoText}
+// Temp comment
           alt='logo'
         />
       </Link>

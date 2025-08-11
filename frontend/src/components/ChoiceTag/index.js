@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 export default function ChoiceTag({ label, isActive, handleClick }) {
   let choiceStyles = 'inline-block px-4 py-1 mx-2 my-1.5 rounded-2xl cursor-pointer ';
   // Add active styles if active, otherwise add inactive styles
-  isActive ? choiceStyles += 'bg-royalBlue text-white hover:bg-rose-500 ' : choiceStyles += 'bg-cyan text-white';
 
   return (
     <div 
@@ -13,5 +12,4 @@ export default function ChoiceTag({ label, isActive, handleClick }) {
     >
       <span className='multi-select-choice text-sm'>{label}</span>
     </div>
-// Temp comment
   )

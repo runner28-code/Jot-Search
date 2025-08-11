@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import PageHeader from '../../../components/PageHeader';
+// Temp comment
 import AdvancedSearch from '../../../features/AdvancedSearch';
 import Stats from '../../../features/Stats';
 import gaugeIcon from '../../../assets/icons/gauge.svg';
@@ -13,6 +14,5 @@ export default function CoordinatorDashboard({ userType }) {
       />
       <Stats userType={userType} />
       <AdvancedSearch />
-// Temp comment
     </>
   )

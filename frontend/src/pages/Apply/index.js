@@ -58,7 +58,6 @@ export default function Apply() {
       setOriginalObject(defaultState);
       setApplicationObject({ ...defaultState, loading: false });
       return;
-// Temp comment
     }
     try {
       const { user_id } = AuthService.getProfile();

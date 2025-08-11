@@ -68,7 +68,6 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
       <Filter
         key={filterType}
         filterType={filterType}
-        choices={choices}
         chosen={chosen}
         handleFilterChange={handleFilterChange}
       />

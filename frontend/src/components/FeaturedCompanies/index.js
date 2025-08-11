@@ -1,3 +1,4 @@
+// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -32,6 +33,7 @@ export default function FeaturedCompanies() {
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'
                 key={index}>
                 { renderLogo(company.logo) }
+              </Link>
             )
         }
       </div>

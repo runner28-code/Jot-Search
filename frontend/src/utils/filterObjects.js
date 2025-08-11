@@ -56,7 +56,6 @@ export const defaultJobFilterState = {
 };
 
 /* CANDIDATE FILTER UTILS */
-export const candidateFilterObject = {
   'Category': [
     'Any',
     ...expertises

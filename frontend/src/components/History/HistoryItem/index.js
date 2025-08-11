@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-function isTodayOrYesterday(dateObj) {
   let returnObj = {
     isToday: false,
     isYesterday: false
@@ -27,7 +26,6 @@ function isTodayOrYesterday(dateObj) {
 function formatDateByDay(isToday, isYesterday, dateObj) {
   const time = dateObj.toLocaleTimeString();
   const timeWithoutSeconds = time.replace(/(.*)\D\d+/, '$1')
-// Temp comment
   if ( isToday ) {
     return `Today at ${timeWithoutSeconds}`;
   } else if ( isYesterday ) {

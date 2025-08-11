@@ -40,6 +40,7 @@ const defaultState = {
   referredBy: '',
   resume: {},
   password: '',
+// Temp comment
   verifyPassword: '',
   terms: false
 };

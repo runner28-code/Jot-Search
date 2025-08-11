@@ -14,7 +14,6 @@ export default function InviteCandidates({ company }) {
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
-// Temp comment
 
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
 
@@ -41,6 +40,7 @@ export default function InviteCandidates({ company }) {
           <span>{item.label}</span>
           <button 
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs' 
+// Temp comment
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
       ))}

@@ -166,7 +166,6 @@ export async function getClientContacts(filterValue, filterKey, count) {
   return normalizeData(data.clientContacts)
 }
 
-
 export async function saveCompany(candidateId, companyId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCompany, {
     'company': companyId,

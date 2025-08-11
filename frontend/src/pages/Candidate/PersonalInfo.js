@@ -77,7 +77,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     setFormData({ ...formData, phone: value });
   }
 
-  const disabled = !editMode;
   
   const labelStyles = 'w-full';
   const labelTextStyles = 'text-xs vw-768:text-base text-charcoal leading-8 mt-8 ';
