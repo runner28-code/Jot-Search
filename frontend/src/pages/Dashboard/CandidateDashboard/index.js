@@ -18,7 +18,6 @@ export default function CandidateDashboard() {
         <h1 className='ml-8 text-royalBlue text-lg vw-1280:text-[32px] font-spaceGrotesk'>My Dashboard</h1>
       </div>
       <div className='px-4'>
-        <InvitationsToApply />
         <PendingApplications />
         <CareerFavorite />
         <CompanyFavorite />

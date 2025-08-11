@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
@@ -66,7 +67,6 @@ export default function PendingApplications () {
           <Link
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
-              Browse All
           </Link>
         </div>
       </div>

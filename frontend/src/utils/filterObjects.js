@@ -73,7 +73,6 @@ export const candidateFilterObject = {
   'Remote Availability': [
     'Any',
     'Remote',
-    'On Site',
     'Hybrid'
   ],
   'Employment Type': [

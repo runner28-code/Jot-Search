@@ -16,7 +16,6 @@ import {
   DATASET_GETRO,
   FilterOption,
   Job,
-  FilterBody,
   DataSource,
   Tables,
   Company,

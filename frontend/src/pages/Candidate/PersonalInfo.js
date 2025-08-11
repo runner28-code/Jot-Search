@@ -8,6 +8,7 @@ import { FiEdit } from 'react-icons/fi';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
   ethnicityChoices,
+// Temp comment
   genderChoices,
   veteranStatusChoices
 } from '../Apply/utils';
@@ -45,7 +46,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   }
 
   function handleChange(name, value) {
-// Temp comment
     setFormData({
       ...formData,
       [name]: value,

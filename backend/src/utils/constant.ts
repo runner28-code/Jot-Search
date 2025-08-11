@@ -140,7 +140,6 @@ const job_filter_exclude_keys = [
   "equipment",
   "esl",
   "esthetician",
-  "ethernet",
   "event",
   "exercise",
   "externship",

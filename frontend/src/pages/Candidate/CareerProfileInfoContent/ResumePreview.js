@@ -15,6 +15,7 @@ const ResumePreview = ({ resumeUrl }) => {
     file: resumeUrl,
     page,
     canvasRef,
+// Temp comment
   });
 
   const buttonStyles = 'w-15 h-15 ';

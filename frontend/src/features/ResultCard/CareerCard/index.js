@@ -115,6 +115,7 @@ function DesktopCard({ dataObj, active }) {
             <LaptopIcon
               className='fill-midGrey h-11 w-8 mr-5' />
             <p className='text-textBlack'>{data.onSite}</p>
+          </div>
           {/* Posting age */}
           <div className='w-1/3 flex items-center pr-4'>
             <img
@@ -155,7 +156,6 @@ DesktopCard.propTypes = {
       company_logo: PropTypes.string,
       title: PropTypes.string,
       employmentType: PropTypes.string,
-      onSite: PropTypes.string,
       salary: PropTypes.string,
       salaryUnit: PropTypes.string,
       createdAt: PropTypes.string,

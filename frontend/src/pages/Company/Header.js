@@ -25,6 +25,7 @@ function HeaderContent({ companyData }) {
   const headerGroupStylesDesktop = 'flex items-center basis-1/3 my-4';
   const headerTitle = 'text-h4 font-spaceGrotesk font-semibold basis-2/3';
   const headerTitleDesktop = 'text-h4 font-spaceGrotesk font-semibold basis-2/3 flex items-center'
+  return (
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-6'>
@@ -70,6 +71,7 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
+// Temp comment
               src={Globe}
               className={headerIconStyles}
             />

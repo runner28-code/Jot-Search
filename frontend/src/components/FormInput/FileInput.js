@@ -9,6 +9,7 @@ export default function FileInput({type, name, label, placeholder, required, val
       e.preventDefault();
       inputRef.current.click();
     }
+// Temp comment
   }
 
   return (

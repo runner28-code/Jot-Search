@@ -25,6 +25,7 @@ export function formatCandidateData(candidateData) {
   formattedData.comments = candidateData.comments || 'No comments provided';
   formattedData.phone = formatPhoneNumber(candidateData.phone);
   formattedData.expertise = candidateData.expertise || 'No Expertise Chosen';
+  formattedData.skills = candidateData.skills || 'No Skills Chosen';
   // If Candidate experience is a string, no need to map it
   if ( candidateData.experience && !isNaN(candidateData.experience) ) {
     formattedData.experience = candidateData.experience.toString();
@@ -89,7 +90,6 @@ export function formatPhoneNumber(phoneNumberString) {
     phoneNumberString = phoneNumberString.replace(/-/g, '');
   }
   if (phoneNumberString.length === 10) {
-    const areaCode = phoneNumberString.slice(0, 3);
     const firstThree = phoneNumberString.slice(3, 6);
     const lastFour = phoneNumberString.slice(6, 10);
     return `(${areaCode}) ${firstThree}-${lastFour}`;
