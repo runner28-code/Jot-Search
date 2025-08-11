@@ -136,6 +136,7 @@ model ClientContact {
   clientCorporation  String?
   comments           String?
   dateAdded          DateTime?
+  dateLastModified   DateTime?
   dateLastVisit      DateTime?
   description        String?
   desiredCategories  String?

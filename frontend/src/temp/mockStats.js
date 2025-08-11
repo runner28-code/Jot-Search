@@ -40,7 +40,6 @@ export const mockCandidateStats = {
     },
     'Last 90 Days': {
       count: 6,
-      prevCount: 4
     }
   },
   'Jobs Saved': {
@@ -192,6 +191,7 @@ export const mockCompanyStats = {
       prevCount: 257
     },
     'Last 30 Days': {
+      count: 357,
       prevCount: 536
     },
     'Last 90 Days': {

@@ -33,7 +33,6 @@ DashboardMinifiedDesktop.propTypes = {
 
 function CareerHeader ({ location }) {
   const loggedIn = AuthService.loggedIn();
-
   let userRole = AuthService.getUserRole();
 
   const back = '< Go Back';

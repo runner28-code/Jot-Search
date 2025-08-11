@@ -75,7 +75,6 @@ AccessibleDropdown.defaultProps = {
 AccessibleDropdown.propTypes = {
   type: PropTypes.string,
   name: PropTypes.string,
-// Temp comment
   label: PropTypes.string,
   placeholder: PropTypes.string,
   required: PropTypes.bool,

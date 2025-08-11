@@ -11,6 +11,7 @@ export default function AddCoordinator() {
     errors: {},
   });
 
+  // Submit form data when submissionObject.loading is set to true
   useEffect(async () => {
     if (submissionObject.loading) {
       const formObjectCopy = { ...formObject };
@@ -29,7 +30,6 @@ export default function AddCoordinator() {
           success: false,
           errors: error,
         });
-      }
     }
   }, [submissionObject.loading]);
 

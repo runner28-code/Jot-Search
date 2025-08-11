@@ -56,6 +56,7 @@ export class UserController {
    * No-auth route for register page
    * @param user 
    * @returns 
+   */
   @Post("/register")
   async register(@Body() user: User) {
     let data = { ...user };
@@ -76,7 +77,6 @@ export class UserController {
       const { result, error } = await register(data);
       return {
         result,
-        error,
       };
     } else {
       return {

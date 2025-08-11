@@ -2,6 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import ResetButton from './ResetButton';
 import ResetForm from './ResetForm';
+// Temp comment
 
 export default function PasswordReset({role, candidateData}) {
   if ( role === 'company' || candidateData.sourceTable !== 'User' ) {
@@ -9,7 +10,6 @@ export default function PasswordReset({role, candidateData}) {
   }
   const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');
-// Temp comment
 
   function setType(response, condition) {
     setCondition(condition);

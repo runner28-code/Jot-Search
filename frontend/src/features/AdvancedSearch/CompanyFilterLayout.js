@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
 
@@ -22,6 +21,7 @@ export default function CompanyFilterLayout(props) {
         />
         <button
           className='text-royalBlue text-sm whitespace-nowrap'
+// Temp comment
           onClick={clearFilters}
         >
           Clear All

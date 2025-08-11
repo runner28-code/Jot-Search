@@ -56,7 +56,6 @@ export type FilterBody = {
   page: number;
   count: number;
   operator?: Operator;
-};
 
 type CountFilterResponse = {
   total?: number;

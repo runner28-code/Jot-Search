@@ -34,7 +34,6 @@ Filters.propTypes = {
   defaultFilterObject: PropTypes.object, // Shape changes significantly
   filterObject: PropTypes.object, // Shape changes significantly
   searchLabel: PropTypes.string,
-  searchTerm: PropTypes.string,
   setSearchTerm: PropTypes.func,
   handleSearchClick: PropTypes.func,
 }
@@ -68,6 +67,7 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
       <Filter
         key={filterType}
         filterType={filterType}
+        choices={choices}
         chosen={chosen}
         handleFilterChange={handleFilterChange}
       />

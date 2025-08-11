@@ -33,7 +33,6 @@ module.exports = {
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
       colors: {
-// Temp comment
         // Main Brand Colors
         royalBlue: '#176AB9',
         aquaBlue: '#0E97CA',
@@ -99,7 +98,6 @@ module.exports = {
         'xl': '24px',
         'xxl': '28px',
         'xxl-2': '32px',
-        'xxl-3': '36px',
         'xxl-4': '40px',
         // General Spacing
         '3.5%': '3.5%',

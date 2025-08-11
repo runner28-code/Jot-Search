@@ -14,7 +14,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
   }
 
   function handleChange(e) {
-// Temp comment
     setSearchTerm(e.target.value);
   }
 
@@ -29,7 +28,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
           src={ searchWhite }
           alt='search icon'
           className='h-2/3'/>
-      </div>
       <input
         type='text'
         id={ placeholder }

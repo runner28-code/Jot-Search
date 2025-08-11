@@ -8,6 +8,7 @@
             "image": "site-frontend:dev",
             "cpu": 1024,
             "memory": 2048,
+            "portMappings": [
                 {
                     "containerPort": 3000,
                     "hostPort": 3000,

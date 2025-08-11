@@ -47,7 +47,6 @@ export const sendResetPassword = async (to: string, name: string, token: string)
     console.log(error);
     console.log(JSON.stringify(error.response.body));
     throw error;
-  }
 }
 
 export const sendCandidatesToEmployers = async (candidates: string[], employers_emails: string[]) => {

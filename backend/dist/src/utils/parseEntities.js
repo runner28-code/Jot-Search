@@ -40,7 +40,6 @@ const parseBullhornCandidateToUser = (data) => {
         workAuthorized: data.workAuthorized,
         disability: data.disability,
     };
-    return user;
 };
 exports.parseBullhornCandidateToUser = parseBullhornCandidateToUser;
 const parseBullhornCompanyToUser = (data) => {
@@ -77,5 +76,6 @@ const parseBullhornCompanyToUser = (data) => {
         willRelocate: data.willRelocate,
         ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,
+        disability: data.disability,
     };
     return user;
