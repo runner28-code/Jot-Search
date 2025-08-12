@@ -18,6 +18,7 @@ export default function MobileHeader(props) {
   return (
     <div className='flex items-center mb-10 pl-l py-s bg-royalBlue'>
       { backButton && (
+        <button
           className='text-s bg-cyan font-semibold text-white rounded-2xl px-5 py-2 mr-xl font-spaceGrotesk'
           onClick={() => navigate(-1)}
         >
@@ -36,6 +37,7 @@ export default function MobileHeader(props) {
       )}
       <h1 className='font-spaceGrotesk font-medium text-lg text-lightGrey'>
         { headerText }
+// Temp comment
       </h1> 
     </div>
   );

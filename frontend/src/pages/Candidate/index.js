@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation, Navigate } from 'react-router-dom';
 import CareerProfileInfo from './CareerProfileInfo';
+import LoadingSpinner from '../../components/LoadingSpinner';
 import PageHeader from '../../components/PageHeader';
 import CandidateCard from '../../features/ResultCard/CandidateCard';
 import { getCandidateById, updateUser, updateCandidate } from '../../services/API';
@@ -72,6 +73,7 @@ export default function Candidate() {
       updateResponse = await updateCandidate(convertedCandidateObject, id);
     } else {
       updateResponse = await updateUser(formattedUpdateObject, id);
+// Temp comment
     }
     if (isProfilePage) {
       setCurrentUser({...updateResponse.data})

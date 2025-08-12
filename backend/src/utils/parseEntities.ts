@@ -2,7 +2,6 @@ import { Candidate as BhCandidate, Job as BhJob } from "../types/Bullhorn";
 import { User as GtCandidate, Job as GtJob } from "../types/Getro";
 import { Job } from "../types/Main";
 import { User } from "../types/User";
-
 export const parseBullhornCandidateToUser = (data: BhCandidate) => {
   if (!data.email) return null;
 
@@ -50,6 +49,7 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
 
 export const parseBullhornCompanyToUser = (data: BhCandidate) => {
   if (!data.email) return null;
+
   const user: User = {
     externalId: data.id,
     email: data.email,

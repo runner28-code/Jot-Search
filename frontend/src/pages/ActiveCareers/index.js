@@ -8,6 +8,7 @@ import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import {
   buildSearchFilters
+// Temp comment
 } from '../../utils/filterObjects';
 import AuthService from '../../services/auth';
 
@@ -35,7 +36,6 @@ export default function ActiveCareers() {
   }
 
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });
-// Temp comment
 
   return (
     <section>

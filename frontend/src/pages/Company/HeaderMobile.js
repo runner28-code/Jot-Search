@@ -40,7 +40,6 @@ function HeaderContent({ companyData }) {
                 <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
               </div>
               <div className={ headerGroupStyles }>
-                <CareerIcon
                   className={headerIconStyles}
                 />
                 <OpenCareers

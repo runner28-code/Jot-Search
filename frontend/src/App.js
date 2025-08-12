@@ -38,7 +38,6 @@ function App() {
               element={<LandingPage />} />
             <Route
               path={ROUTES.careers}
-// Temp comment
               element={<Careers />} />
             <Route
               path={ROUTES.companies}

@@ -56,7 +56,6 @@ const parseBullhornCompanyToUser = (data) => {
         state: data.address_state,
         zip: data.address_zip,
         resume: undefined,
-        linkedin: undefined,
         skills: data.primarySkills,
         category: data.specialties,
         seniority: data.experience,
@@ -75,6 +74,7 @@ const parseBullhornCompanyToUser = (data) => {
         experience: data.experience,
         hourlyRate: data.hourlyRate,
         willRelocate: data.willRelocate,
+        ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,
         disability: data.disability,
     };

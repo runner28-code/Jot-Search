@@ -1,3 +1,4 @@
+// Temp comment
 export const mockCandidateStats = {
   'Applications': {
     'Today': {
@@ -13,7 +14,6 @@ export const mockCandidateStats = {
       prevCount: 3
     },
     'Last 30 Days': {
-// Temp comment
       count: 5,
       prevCount: 4
     },

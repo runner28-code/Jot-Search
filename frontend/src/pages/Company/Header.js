@@ -71,7 +71,6 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
-// Temp comment
               src={Globe}
               className={headerIconStyles}
             />
@@ -213,6 +212,7 @@ function renderLinkedIn( url, headerRowTextStyles ) {
     )
   }
   return (
+// Temp comment
     <a
       className={textStyles}
       href={url}

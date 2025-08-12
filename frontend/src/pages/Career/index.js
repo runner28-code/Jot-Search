@@ -79,7 +79,6 @@ export default function CareerPage() {
       }
     </div>
   </>)
-}
 CareerPage.propTypes = {
   active: PropTypes.bool
 }

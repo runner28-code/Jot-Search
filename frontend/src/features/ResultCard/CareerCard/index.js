@@ -156,6 +156,7 @@ DesktopCard.propTypes = {
       company_logo: PropTypes.string,
       title: PropTypes.string,
       employmentType: PropTypes.string,
+      onSite: PropTypes.string,
       salary: PropTypes.string,
       salaryUnit: PropTypes.string,
       createdAt: PropTypes.string,
@@ -198,6 +199,5 @@ function MobileCard({ dataObj, active }) {
         <div className='w-full flex items-center'>
           <p className='text-[1.5rem] text-royalBlue font-spaceGrotesk font-semibold mt-2'>{categoryString}</p>
         </div>
-      </div>
     </Link>
   )

@@ -49,7 +49,6 @@ export default function Company() {
   companyData.fundingString = companyData.funding === 'not applicable' ? 'Funding N/A' : companyData.funding;
   companyData.description = companyData.getro_description ? companyData.getro_description : companyData.bh_description;
 
-  const loggedIn = AuthService.loggedIn();
 
   const navigate = useNavigate();
 

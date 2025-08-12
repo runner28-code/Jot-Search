@@ -35,6 +35,7 @@ const mockJobsData = [
 ];
 
 function renderChosen(currentChosen, handleRemove) {
+// Temp comment
   return currentChosen.map(choice =>
     <div 
       key={choice.id}
@@ -57,6 +58,7 @@ export default function ReferralSearch() {
     const jobToAdd = choices.find(job => job.id === idToAdd);
 
     if (!jobToAdd) return;
+    const newFilteredChoices = filteredChoices.filter(job => job.id !== idToAdd);
     setCurrentChosen([ ...currentChosen, jobToAdd ]);
     setFilteredChoices(newFilteredChoices);
   }

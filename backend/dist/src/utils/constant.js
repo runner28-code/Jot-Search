@@ -215,6 +215,7 @@ const job_filter_exclude_keys = [
     "kqcw",
     "lab",
     "laborer",
+// Temp comment
     "lacrosse",
     "lakes",
     "landscape",
@@ -265,6 +266,7 @@ const job_filter_exclude_keys = [
     "nursing",
     "nutrition",
     "occupancy",
+    "occupational",
     "office assistant",
     "on call",
     "on-call",

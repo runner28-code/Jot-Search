@@ -24,7 +24,6 @@ module.exports = {
           from: {
             transform: 'rotate(180deg)'
           },
-          to: {
             transform: 'rotate(0deg)'
           },
         },

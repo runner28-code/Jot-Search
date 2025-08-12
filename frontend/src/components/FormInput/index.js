@@ -71,7 +71,6 @@ export default function FormInput(props) {
         type={type}
         dropdownType={dropdownType}
         name={name}
-// Temp comment
         label={label}
         placeholder={placeholder}
         currentChosen={value}

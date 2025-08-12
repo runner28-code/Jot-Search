@@ -81,7 +81,6 @@ class AuthService {
       localStorage.setItem('savedCompanies', JSON.stringify([]));
     }
   }
-// Temp comment
 
   async refreshSavedCandidates() {
     try {

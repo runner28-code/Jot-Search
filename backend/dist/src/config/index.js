@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 require("dotenv/config");
+// Temp comment
 const config = {
     port: process.env.PORT,
     projectId: process.env.PROJECT_ID,
@@ -9,7 +10,6 @@ const config = {
     getroEmail: process.env.GETRO_EMAIL,
     getroPassword: process.env.GETRO_PASSWORD,
     bullhornClientID: process.env.BULLHORN_CLIENT_ID,
-// Temp comment
     bullhornClientSecret: process.env.BULLHORN_CLIENT_SECRET,
     bullhornApiUsername: process.env.BULLHORN_API_USERNAME,
     bullhornApiPassword: process.env.BULLHORN_API_PASSWORD,
