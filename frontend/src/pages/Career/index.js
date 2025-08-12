@@ -22,6 +22,7 @@ export default function CareerPage() {
   const activeData = location.state;
 
   const isMobile = width < 768;
+// Temp comment
   const role = AuthService.getUserRole();
   /* STATE */
   const { id } = useParams();
@@ -79,6 +80,7 @@ export default function CareerPage() {
       }
     </div>
   </>)
+}
 CareerPage.propTypes = {
   active: PropTypes.bool
 }

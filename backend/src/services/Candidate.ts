@@ -5,6 +5,7 @@ export const saveCandidate = async (
   companyUserId: string
 ) => {
   try {
+    const existing = await db.user.findFirst({
       where: {
         AND: {
           id: companyUserId,
@@ -53,7 +54,6 @@ export const saveCandidate = async (
     return { result: false, message: error };
   }
 };
-
 export const getSavedCandidates = async (companyUserId: string) => {
   try {
     const user = await db.user.findFirst({

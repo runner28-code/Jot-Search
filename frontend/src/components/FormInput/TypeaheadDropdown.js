@@ -45,6 +45,7 @@ export default function TypeaheadDropdown(props) {
       setFilteredChoices(choices.filter(choice => choice.toLowerCase().includes(inputValue.toLowerCase())));
     }
   }, [inputValue]);
+
   function handleInputChange(event) {
     setInputValue(event.target.value);
   }

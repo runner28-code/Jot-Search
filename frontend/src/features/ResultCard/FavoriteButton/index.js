@@ -5,6 +5,7 @@ import favoriteIconFilled from '../../../assets/icons/Favorite-filled.svg';
 import AuthService from '../../../services/auth';
 import { saveJob, saveCompany, saveCandidate } from '../../../services/API';
 import useWindowDimensions from '../../../hooks/windowDimensions';
+
 const VALID_TYPES = ['job', 'company', 'candidate'];
 
 export default function FavoriteButton({ type, data, addClass, isFavoriteOverride = null }) {

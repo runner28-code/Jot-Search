@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 
 export const PaginationCounts = ({ startCount, endCount, total }) => {
   return (

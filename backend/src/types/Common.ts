@@ -94,3 +94,4 @@ export type GetSavedCompaniesResponse = {
   companies?: Company[];
 } & ApplyResponse;
 
+export type GetSavedJobsResponse = {

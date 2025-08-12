@@ -49,11 +49,13 @@ export default function Company() {
   companyData.fundingString = companyData.funding === 'not applicable' ? 'Funding N/A' : companyData.funding;
   companyData.description = companyData.getro_description ? companyData.getro_description : companyData.bh_description;
 
+  const loggedIn = AuthService.loggedIn();
 
   const navigate = useNavigate();
 
   if (loading) { return <LoadingSpinner /> }
   return (
+// Temp comment
     <div className={ loggedIn ? 'vw-1280:pr-12 mx-[5%]' : ''}>
       <RenderHeader
         type='company'

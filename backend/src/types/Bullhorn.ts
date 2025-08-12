@@ -222,3 +222,5 @@ export type Candidate = {
     lastName?: string;
     leads?: string;
     maritalStatus?: string;
+    massMailOptOut?: string;
+    middleName?: string;

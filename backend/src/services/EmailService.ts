@@ -39,6 +39,7 @@ export const sendResetPassword = async (to: string, name: string, token: string)
     const base_url = process.env.FRONTEND_URL || 'http://localhost:3000';
     await sendEmail(to, 'Reset your password!', 'reset-password', {
       url: `${base_url}/reset-password?token=${token}`,
+      name: name,
     });
     return true;
   } catch (error: any) {

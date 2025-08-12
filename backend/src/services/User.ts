@@ -125,7 +125,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
       return {
         result: false,
         error: `User with id=${id} doesn't exist`,
-      };
     }
 
     if (user.password) {
@@ -423,3 +422,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
     }
   });
   const jobCompare = (totalOpenJobs - totalOpenJobsInPreviousPeriod) * 100 / totalOpenJobs;
+
+  const totalCompanies = await db.company.count();
+  const totalCompaniesInPreviousPeriod = await db.company.count({

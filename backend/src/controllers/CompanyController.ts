@@ -243,3 +243,5 @@ export class CompanyController {
         where: {
           domain: {
             in: companyURLs
+          }
+        }

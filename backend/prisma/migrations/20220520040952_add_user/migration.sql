@@ -29,3 +29,4 @@ CREATE TABLE "User" (
     "username" TEXT,
     "logo" TEXT,
     "companyName" TEXT,
+    "annualRevenue" TEXT,

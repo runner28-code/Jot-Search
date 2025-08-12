@@ -81,7 +81,6 @@ export default function MobileLayout(props) {
           {/* Third row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
             {/* Salary */}
-            <div className='w-1/2 flex items-center pr-4'>
               <img
                 src={salaryIcon}
                 className='h-11 mr-5' />

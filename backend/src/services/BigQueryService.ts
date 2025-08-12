@@ -48,3 +48,4 @@ export class BigQueryService {
         return null;
     }
 
+    public static async insertQuery(dataset: string, table: string, data: any) {

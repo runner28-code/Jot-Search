@@ -41,3 +41,4 @@ export class CategoryController {
     }
   }
 
+  @Post("/search")

@@ -16,3 +16,4 @@ const config = {
 
   getroDatasetID: process.env.DATASET_GETRO,
   bullhornDatasetID: process.env.DATASET_BULLHORN,
+  mainDatasetID: process.env.DATASET_MAIN,

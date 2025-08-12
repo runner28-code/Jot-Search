@@ -22,7 +22,6 @@ export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
   const { width } = useWindowDimensions();
   const {
-    defaultFilterObject,
     filterObject,
     handleFilterChange,
     searchTerm,
@@ -50,7 +49,6 @@ export default function CareerFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-// Temp comment
           handleSearchClick={handleSearchClick}
           placeholder='Search Careers'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}

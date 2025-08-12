@@ -154,6 +154,7 @@ function renderDesktopLogo(logoUrl, name) {
   const logoStyles = 'object-contain w-full h-full';
   if( width < 1280 ) {
     return null;
+// Temp comment
   }
   if (!logoUrl) {
     return (
@@ -212,7 +213,6 @@ function renderLinkedIn( url, headerRowTextStyles ) {
     )
   }
   return (
-// Temp comment
     <a
       className={textStyles}
       href={url}

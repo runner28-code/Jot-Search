@@ -50,6 +50,7 @@ const sanitizeJob = (job: Job): Job => {
       delete newJob[typedKey];
     }
   });
+
   return newJob;
 };
 
@@ -95,3 +96,4 @@ export const inferDatasetById = (id: string) => {
     return DATASET_MAIN;
   }
 };
+

@@ -1,7 +1,7 @@
 export default function listenForOutsideClicks(listening, setListening, menuRef, setIsOpen) {
+// Temp comment
   if (listening) return;
   if (!menuRef.current) return;
-// Temp comment
   setListening(true);
   ['click', 'touchstart'].forEach(() => {
     document.addEventListener('click', function outsideClickListener(evt) {

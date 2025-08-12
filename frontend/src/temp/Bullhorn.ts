@@ -207,6 +207,7 @@ export type Candidate = {
     federalAdditionalWitholdingsAmount?: string;
     federalExemptions?: string;
     federalExtraWithholdingAmount?: string;
+    federalFilingStatus?: string;
     firstName?: string; // !
     gender?: string;
     hourlyRate?: string;
@@ -221,3 +222,5 @@ export type Candidate = {
     localExemptions?: string;
     localFilingStatus?: string;
     localTaxCode?: string;
+    maritalStatus?: string;
+    massMailOptOut?: string;

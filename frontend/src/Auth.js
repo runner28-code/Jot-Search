@@ -36,7 +36,6 @@ export default function Auth() {
           path={`${ROUTES.candidates}/:id`}
           element={<Candidate />} />
         <Route
-          path={ROUTES.applications}
           element={<Applications />} />
         <Route
           path={ROUTES.favorites}
@@ -45,6 +44,7 @@ export default function Auth() {
           path={ROUTES.activeCareers}
           element={<ActiveCareers />} />
         <Route
+          path={ROUTES.candidates}
           element={<Candidates />} />
         <Route
           path={ROUTES.addUser}

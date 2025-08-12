@@ -331,3 +331,5 @@ const job_filter_exclude_keys = [
   "refrigeration",
   "refrigerator",
   "refuse",
+  "regulatory",
+  "rehousing",

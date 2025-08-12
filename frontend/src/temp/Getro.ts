@@ -54,3 +54,4 @@ export type Job = {
     status?: string;
     title?: string;
     url?: string;
+};

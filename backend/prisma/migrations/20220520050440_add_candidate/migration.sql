@@ -67,3 +67,4 @@ CREATE TABLE "Candidate" (
     "phone3" TEXT,
     "preferredContact" TEXT,
     "primarySkills" TEXT,
+    "recentClientList" TEXT,

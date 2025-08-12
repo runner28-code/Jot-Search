@@ -130,7 +130,6 @@ function DesktopCard({ dataObj, active }) {
           <div className='w-1/3 flex items-center pr-4'>
             <img
               src={clockIcon}
-              className='h-11 mr-5' />
             <p className='text-textBlack'>{data.employmentType}</p>
           </div>
           {/* Salary */}
@@ -199,5 +198,6 @@ function MobileCard({ dataObj, active }) {
         <div className='w-full flex items-center'>
           <p className='text-[1.5rem] text-royalBlue font-spaceGrotesk font-semibold mt-2'>{categoryString}</p>
         </div>
+      </div>
     </Link>
   )

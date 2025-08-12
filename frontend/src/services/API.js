@@ -268,3 +268,19 @@ export async function applyToJob(jobId, candidateId) {
     }
   });
   return normalizeData(data);
+}
+
+export async function saveJob(candidateId, jobId) {
+  const { data } = await API.put(ROUTES.APItoggleSaveJob, null, {
+    params: {
+      'candidate': candidateId,
+      'job': jobId
+    }
+  });
+
+  if (data.messsage === 'saved job') {
+    AuthService.toggleSavedJob(jobId, 'save');
+  } else {
+    AuthService.toggleSavedJob(jobId, 'unsave');
+  }
+  return normalizeData(data);

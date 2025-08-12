@@ -33,7 +33,6 @@ const availableTabChoicesByUserType = {
 
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
-    switch (pathname) {
       case '/candidates':
         return useState('candidates');
       case '/companies':
@@ -97,7 +96,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
 
   useEffect(() => {
     const newState = { ...initialFilterState, ...state };
-// Temp comment
     if (state) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';

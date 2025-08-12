@@ -195,3 +195,4 @@ export class GetroService {
         if (res.status === 200) {
             const data = res.data;
             return {
+                ...data,

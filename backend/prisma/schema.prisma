@@ -502,3 +502,7 @@ model User {
   city      String?
   state     String?
   country   String?
+  resume    String?
+  phone     String?
+  linkedin  String?
+  skills    String?

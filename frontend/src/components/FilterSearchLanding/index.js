@@ -17,6 +17,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   if (additionalClasses) {
     containerStyles += additionalClasses;
   }
+// Temp comment
   const placeholderString = placeholder || 'Keywords';
   return (
     <div
@@ -26,6 +27,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
       <input
         type='text'
         className={ inputStyles }
+        placeholder={ placeholderString }
         value={ searchTerm }
         onChange={ handleChange }
       />

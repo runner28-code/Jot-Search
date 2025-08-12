@@ -279,3 +279,5 @@ export class CandidateController {
 
       candidates.forEach((candidate) => clearPassword(candidate));
 
+      const emails = candidates.map((candidate: any) => candidate.email);
+

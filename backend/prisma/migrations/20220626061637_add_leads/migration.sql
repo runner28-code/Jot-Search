@@ -44,3 +44,4 @@ CREATE TABLE "Lead" (
     "notes" TEXT,
     "numEmployees" TEXT,
     "occupation" TEXT,
+    "owner" TEXT,

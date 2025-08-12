@@ -32,6 +32,7 @@ CREATE TABLE "UserTalentCollection" (
 );
 
 -- CreateTable
+CREATE TABLE "GetroMember" (
     "id" TEXT NOT NULL,
     "avatar_url" TEXT,
     "bio" TEXT,
@@ -41,3 +42,4 @@ CREATE TABLE "UserTalentCollection" (
     "github_url" TEXT,
     "linkedin_url" TEXT,
     "resume_url" TEXT,
+    "twitter_url" TEXT,

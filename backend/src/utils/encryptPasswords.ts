@@ -33,3 +33,4 @@ import { DATASET_MAIN, Tables } from "../types/Common";
 
               const update_query = `
                 UPDATE \`${DATASET_MAIN}.${Tables.USER}\`
+                SET password = '${user.password}'
