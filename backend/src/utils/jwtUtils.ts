@@ -11,4 +11,5 @@ export const CreateJwtToken = (data: any) => {
   return token;
 }
 
+export const VerifyJwtToken = (token: string) => {
   try {

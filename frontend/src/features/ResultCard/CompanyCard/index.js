@@ -29,7 +29,6 @@ export default function CompanyCard({ data }) {
     )
   }
   return (
-    <div
       className='relative w-full'
       key={data.id}
     >

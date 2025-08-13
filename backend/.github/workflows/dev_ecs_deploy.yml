@@ -56,3 +56,4 @@ jobs:
       uses: cschleiden/replace-tokens@v1
       with:
         files: '.env'
+        tokenPrefix: '{'

@@ -54,7 +54,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
         type='checkbox'
         name='useExistingResume'
         className='h-8 w-8 ml-2'
-// Temp comment
         checked={useExistingResume}
         onChange={handleChange}
       />

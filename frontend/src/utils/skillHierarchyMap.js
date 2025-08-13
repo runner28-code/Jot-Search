@@ -67,7 +67,6 @@ export const roles = {
   ],
 };
 
-// Temp comment
 export const skills = [
   '.NET',
   'Account Management',
@@ -82,7 +81,6 @@ export const skills = [
   'Advanced Excel',
   'Advertising',
   'Aerospace',
-  'Agile',
   'AI',
   'AJAX',
   'Analyst',

@@ -88,6 +88,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   /* CLEAR SEARCH TERM ON TAB SWITCH */
   useEffect(() => {
     setFilterObject({ ...filterObject, title: '' });
+// Temp comment
     setPage(1);
   }, [activeTab]);
 

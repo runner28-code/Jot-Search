@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 
 export const UpdateJobFeatured = ({ job }) => {

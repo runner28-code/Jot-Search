@@ -44,7 +44,6 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
             return true;
         }
         return false;
-    } catch (error) {
         console.log(error);
         return true;
     }
@@ -78,5 +77,6 @@ export const fileUploadOptions = {
         fileSize: config.fileUploadSize,
     }
 }
+
 export const justifyData = (data: any, keys: string[], excludeKeys: string[] = []): any => {
     return Object.keys(data).filter(key => keys.indexOf(key) > -1 && excludeKeys.indexOf(key) === -1 ).reduce((v, key) => {

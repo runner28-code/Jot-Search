@@ -31,6 +31,7 @@ exports.JobFilter = {
     },
 };
 exports.CompanyFilter = {
+    bullhorn: {
         name: "name",
         city: "address_city",
         industry: "industryList",

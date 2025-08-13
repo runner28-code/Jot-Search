@@ -42,6 +42,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         if ( key === 'email' ) {
           return <Property
             key={key}
+            name={key}
             value={value}
           />
         }
@@ -52,6 +53,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
           >
             <label 
               className='text-xl font-bold text-royalBlue'
+// Temp comment
               htmlFor={key}
             >
               {labelString}

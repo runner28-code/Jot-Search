@@ -93,7 +93,6 @@ export default function Candidate() {
         IconComponent={CandidatesIcon}
         classOverride='h-18 w-18'
         containerClassOverride='pt-2'
-        backButton
       />
       {/* Candidate Card (Company and Coordinator) */}
       {role !== 'candidate' && 

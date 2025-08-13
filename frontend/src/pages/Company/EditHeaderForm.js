@@ -200,6 +200,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
             className='text-h6 text-royalBlue flex items-center'
             htmlFor='phone'
           >
+// Temp comment
             <FaPhoneAlt
               className={iconStyles + 'fill-royalBlue'} />
               Phone:
@@ -233,6 +234,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
           <MdCancel 
             className='w-24 h-24 cursor-pointer fill-rose-500'
             onClick={handleCancel} />
+          <MdCheckCircle 
             className='w-24 h-24 cursor-pointer fill-emerald-500'
             onClick={handleSubmit} />
         </div>

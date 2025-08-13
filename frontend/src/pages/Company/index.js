@@ -55,7 +55,6 @@ export default function Company() {
 
   if (loading) { return <LoadingSpinner /> }
   return (
-// Temp comment
     <div className={ loggedIn ? 'vw-1280:pr-12 mx-[5%]' : ''}>
       <RenderHeader
         type='company'
@@ -78,7 +77,6 @@ export default function Company() {
               handleCompanyUpdate={setCompanyData}
             />
           }
-          <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Summary */}
           <div className='p-6'>
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>About {companyData.name}</h4>

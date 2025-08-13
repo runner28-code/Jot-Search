@@ -67,7 +67,6 @@ export default function NavSearchMobile({ placeholder }) {
   }
 
   /* Clear state on page change */
-  useEffect( () => {
     setSearchTerm('');
   }, [location]);
 

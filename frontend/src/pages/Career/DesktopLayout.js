@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
 import OtherCareers from '../../features/OtherCareers';
@@ -145,6 +144,7 @@ function renderLogo(logo) {
 
 function renderAboutCompanySection(careerData, companyName) {
   if (!companyName) {
+// Temp comment
     return null;
   }
   const headerString = `About ${companyName}`;

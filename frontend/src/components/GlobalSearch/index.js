@@ -24,7 +24,6 @@ export default function GlobalSearch({ placeholder }) {
   // State and ref to listen for outside clicks
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
-// Temp comment
 
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
@@ -55,7 +54,6 @@ export default function GlobalSearch({ placeholder }) {
       getCandidates( searchTerm, 'firstname', 3 )
     ]);
 
-    const resultsObject = {
       jobs: jobResults && jobResults.length ? jobResults : [],
       companies: companyResults && companyResults.length ? companyResults.slice(0, 3) : [], //!!! TODO: Get rid of slice when Donnie has count filter working for companies
       candidates: CandidateResults && CandidateResults.length ? CandidateResults : [],

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 // Images
 import searchWhite from '../../assets/icons/search-gray.svg';
+// Temp comment
 
 export default function SearchMinified ({ imgClass }) {
 
@@ -10,7 +11,6 @@ export default function SearchMinified ({ imgClass }) {
   return (<>
     <img
       src={ searchWhite }
-// Temp comment
       alt='search icon'
       className={ classes }
     />

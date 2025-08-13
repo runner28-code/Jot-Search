@@ -36,12 +36,14 @@ export default function Auth() {
           path={`${ROUTES.candidates}/:id`}
           element={<Candidate />} />
         <Route
+          path={ROUTES.applications}
           element={<Applications />} />
         <Route
           path={ROUTES.favorites}
           element={<Favorites />} />
         <Route
           path={ROUTES.activeCareers}
+// Temp comment
           element={<ActiveCareers />} />
         <Route
           path={ROUTES.candidates}
