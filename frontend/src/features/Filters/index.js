@@ -28,7 +28,6 @@ export default function Filters(props) {
   )
 }
 
-// Temp comment
 Filters.propTypes = {
   handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,

@@ -141,7 +141,6 @@ export class CandidateController {
       let isTppUserQuery = Object.keys(where).some(key => tppSpecificFilterKeys.includes(key));
 
 
-      where = Object.keys(where).reduce((acc, key) => {
         if (tppSpecificFilterKeys.includes(key)) {
           acc[translateTppFilters[key]] = where[key];
         } else {
@@ -213,6 +212,7 @@ export class CandidateController {
           orderBy: {
             firstname: "asc",
           },
+        });
         const candidateOnlyPromise = candidatesPromise = db.candidate.findMany({
           take: count || 100,
           skip: skip < 0 ? 0 : skip,

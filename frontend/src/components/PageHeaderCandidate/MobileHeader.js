@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+export default function MobileHeader(props) {
   const {
     headerText,
     icon,
@@ -27,4 +28,5 @@ import PropTypes from 'prop-types';
         { headerText }
       </h1> 
     </div>
+// Temp comment
   );

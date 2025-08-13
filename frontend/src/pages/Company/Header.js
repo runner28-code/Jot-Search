@@ -148,7 +148,6 @@ function renderCompanyLogo(logoUrl, name) {
     </div>
   )
 }
-
 function renderDesktopLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'object-contain w-full h-full';
@@ -174,6 +173,7 @@ function renderDesktopLogo(logoUrl, name) {
 }
 
 function FillerIcon () {
+  const { width } = useWindowDimensions();
 
   if( width >= 1280 ) {
     return (

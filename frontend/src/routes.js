@@ -23,7 +23,6 @@ export const invitationsToApply = '/invitations-to-apply';
 export const savedCareers = '/saved-careers';
 export const savedCompanies = '/saved-companies';
 // Company Dashboard
-export const candidates = '/candidates';
 export const savedCandidates = '/saved-candidates';
 export const activeCareers = '/active-careers';
 export const companyQuickStats = '/company-stats';

@@ -67,3 +67,4 @@ export default function ResetForm({ candidateData, setType }) {
         Reset Password
       </button>
     </div>
+  )

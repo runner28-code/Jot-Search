@@ -196,7 +196,6 @@ export const saveCandidates = async (candidates: any[]) => {
   try {
     for (const candidate of candidates) {
       try {
-        console.log(`\n\nSavng Candidate with ID = ${candidate.id}`);
         const parsedUser = parseBullhornCandidateToUser(candidate) as any;
         if (parsedUser) {
           // await migrateUserInTPP(parsedUser);

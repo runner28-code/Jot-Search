@@ -48,6 +48,7 @@ export default function CandidateFilterLayout(props) {
     checkboxFiltersCoord.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
     });
+// Temp comment
   } else {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
@@ -65,6 +66,7 @@ export default function CandidateFilterLayout(props) {
       </div>
       <div className='flex flex-wrap gap-xxl-4'>
         { renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange) }
+      </div>
       <div className='flex justify-between items-center gap-[65px]'>
         <FilterSearch
           searchTerm={searchTerm}

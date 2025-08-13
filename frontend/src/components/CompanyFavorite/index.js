@@ -4,7 +4,6 @@ import { useGetSavedCompanies } from '../../hooks/queries/useGetSavedCompanies';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CompanyCard from '../../features/ResultCard/CompactCompanyCard';
-// Temp comment
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import useWindowDimensions from '../../hooks/windowDimensions';
 

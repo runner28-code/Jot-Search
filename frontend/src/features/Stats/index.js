@@ -18,14 +18,12 @@ export default function Stats({ userType }) {
 
   function handleFilterChange(choice) {
     setTimeframe(choice);
-// Temp comment
   }
 
   function getDuration(timeFrame) {
     switch (timeFrame) {
       case 'Today':
         return 1;
-      case 'Last 7 Days':
         return 7;
       case 'Last 14 Days':
         return 14;

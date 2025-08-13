@@ -47,7 +47,6 @@ function CareerHeader ({ location }) {
         </span>
         <Link
           className='text-blue underline text-royalBlue'
-// Temp comment
           to={ROUTES.careers}
         >{ back }</Link>
       </div>

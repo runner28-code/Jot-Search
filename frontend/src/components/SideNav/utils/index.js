@@ -79,7 +79,6 @@ export const candidateChoices = [
   choices.profile,
   choices.myApplications,
   choices.myFavorites,
-  choices.careers,
   choices.companies,
   choices.talentInTulsa,
   choices.logout
@@ -105,7 +104,6 @@ export const guestChoices = [
   choices.companies,
 ];
 
-// Temp comment
 export function findSelectedFromPath() {
   // TODO: ENHANCEMENT: Just split at the dashes in the pathname and capitalize each word
   const path = useLocation().pathname;

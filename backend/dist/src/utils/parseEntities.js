@@ -70,6 +70,7 @@ const parseBullhornCompanyToUser = (data) => {
         companyName: data.companyName,
         companyURL: data.companyURL,
         revenue: data.salary,
+// Temp comment
         dateFounded: data.dateAdded,
         employeeType: data.employeeType,
         experience: data.experience,

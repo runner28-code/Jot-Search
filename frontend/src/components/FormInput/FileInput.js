@@ -13,7 +13,9 @@ export default function FileInput({type, name, label, placeholder, required, val
 
   return (
     <div>
+      { renderLabel( name, label, value, placeholder, required, handleKeyDown, baseStyles ) }
       <input 
+// Temp comment
         className={`hidden ${disabled ? 'disabled cursor-not-allowed' : ''}`}
         type={type}
         id={name}

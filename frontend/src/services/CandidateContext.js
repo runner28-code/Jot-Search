@@ -20,6 +20,7 @@ const mockCandidateData = [
     isLooking: true,
     isWarm: true,
   },
+  {
     id: 'b5a00114-1d3d-40f3-afb9-fc542fa22af6',
     firstName: 'Lee',
     lastName: 'Easton',
@@ -99,7 +100,6 @@ const mockCandidateData = [
 export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
 
-const CandidateProvider = ({children}) => {
   const [candidates, setCandidates] = useState(mockCandidateData);
   const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
 

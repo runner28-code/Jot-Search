@@ -79,7 +79,6 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
 }
 
 export function formatPhoneNumber(phoneNumberString) {
-// Temp comment
   if ( !phoneNumberString ) {
     return 'No Phone Number Provided';
   }
@@ -129,6 +128,7 @@ export function buildCandidateAddress(candidateData, full = false) {
   let addressArr = [];
   if ( full === true ) {
     addressArr = [address_address1, address_address2, address_city, address_state, address_zip];
+// Temp comment
   } else {
     addressArr = [address_city, address_state];
   }

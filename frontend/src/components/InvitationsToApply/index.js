@@ -12,7 +12,6 @@ export default function InvitationsToApply () {
     filteredJobs: [],
     loading: true
   });
-
   useEffect( async () => {
     const appliedJobs = await getInvitationsToApply(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {

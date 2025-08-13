@@ -47,6 +47,7 @@ export type User = {
   disability?: string;
   occupation?: string;
 
+  employmentPreference?: string;
 };
 
 export const IUSER = {

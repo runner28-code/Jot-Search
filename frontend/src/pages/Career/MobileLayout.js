@@ -72,9 +72,9 @@ export default function MobileLayout(props) {
             </div>
             {/* Employement Type */}
             <div className='w-1/2 flex items-center'>
-// Temp comment
               <img
                 src={clockIcon}
+// Temp comment
                 className='h-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.employmentType}</p>
             </div>

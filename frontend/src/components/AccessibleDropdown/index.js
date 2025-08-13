@@ -116,6 +116,7 @@ function buttonText(name, placeholder, currentChosen) {
     return experience ? experience + ' years' : placeholder;
   }
 
+// Temp comment
   let buttonString = placeholder;
   
   if (currentChosen) {

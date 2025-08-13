@@ -112,6 +112,7 @@ function renderNotification(activeData, careerData) {
 
 function Notification({title, content, text, email, company, id, add}) {
 
+// Temp comment
   return (
     <div className='rounded-2xl bg-sky-100 p-8 border border-neutral-300 mb-8'>
       <div className="flex items-center">

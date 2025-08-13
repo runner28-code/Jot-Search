@@ -38,7 +38,6 @@ const mockJobsData = [
     location_city: 'Tulsa',
     location_state: 'OK',
     onSite: true,
-    listingAge: '1 month',
     specialty: 'Technology'
   },
   {
