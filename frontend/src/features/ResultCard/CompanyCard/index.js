@@ -29,6 +29,7 @@ export default function CompanyCard({ data }) {
     )
   }
   return (
+    <div
       className='relative w-full'
       key={data.id}
     >
@@ -103,7 +104,6 @@ const dataShape = {
   data: PropTypes.shape({
     id: PropTypes.string.isRequired,
     address: PropTypes.shape({
-      city: PropTypes.string,
       state: PropTypes.string,
     }),
     logo: PropTypes.string,

@@ -20,7 +20,6 @@ export default function ActiveCareers() {
   const [page, setPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
 
-  /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm(searchTerm);
     setPage(1);
@@ -44,7 +43,6 @@ export default function ActiveCareers() {
         classOverride='h-18 w-18'
         backButton
       />
-// Temp comment
       <FilterSearch
         searchTerm={searchTerm}
         setSearchTerm={handleSearchChange}

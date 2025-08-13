@@ -1,7 +1,6 @@
 -- CreateTable
 CREATE TABLE "User" (
     "id" TEXT NOT NULL,
-    "firstName" TEXT NOT NULL,
     "lastName" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "password" TEXT NOT NULL,
@@ -18,6 +17,7 @@ CREATE TABLE "User" (
     "aboutUs" TEXT,
     "referredBy" TEXT,
     "roles" TEXT,
+    "externalId" TEXT,
     "gender" TEXT,
     "address1" TEXT,
     "address2" TEXT,

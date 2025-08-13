@@ -48,7 +48,6 @@ export default function InvitationsToApply () {
                     agoDate={career.createdAt}
                   />
                 </>)
-// Temp comment
               })
           }
         </div>)}

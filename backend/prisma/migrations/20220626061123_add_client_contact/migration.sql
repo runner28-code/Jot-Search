@@ -37,7 +37,6 @@ CREATE TABLE "ClientContact" (
     "fax2" TEXT,
     "fax3" TEXT,
     "firstName" TEXT,
-    "isAnonymized" BOOLEAN,
     "isDayLightSavings" BOOLEAN,
     "isDeleted" BOOLEAN,
     "lastName" TEXT,

@@ -81,6 +81,7 @@ export const skills = [
   'Advanced Excel',
   'Advertising',
   'Aerospace',
+  'Agile',
   'AI',
   'AJAX',
   'Analyst',

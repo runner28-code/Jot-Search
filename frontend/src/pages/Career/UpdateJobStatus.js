@@ -22,6 +22,7 @@ export const UpdateJobStatus = ({ job }) => {
         <Dropdown 
           choices={[
             'Active',
+            'Inactive',
             'Filled',
             'Draft',
             'Closed'

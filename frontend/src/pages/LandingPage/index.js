@@ -6,7 +6,6 @@ import ExpertiseLinksMobile from '../../components/ExpertiseLinksMobile';
 import JoinTalentNetwork from '../../components/JoinTalentNetwork';
 import FeaturedJobs from '../../components/FeaturedJobs';
 import FeaturedCompanies from '../../components/FeaturedCompanies';
-// Temp comment
 import FeaturedCompaniesMobile from '../../components/FeaturedCompaniesMobile';
 import BusinessBooming from '../../components/BusinessBooming';
 import BusinessBoomingMobile from '../../components/BusinessBoomingMobile';
@@ -51,7 +50,6 @@ export default function LandingPage() {
 }
 
 function renderSearch() {
-  const { width } = useWindowDimensions();
   const { totalCompaniesCount, totalJobsCount, isLoading } = useGetLandingPageStats({});
 
   if( width <= 1024 ) {

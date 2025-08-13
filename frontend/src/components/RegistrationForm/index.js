@@ -128,11 +128,9 @@ export default function RegistrationForm(loggedIn) {
           loading: false,
           success: false,
         });
-// Temp comment
       }, 2000);
     }
   }, [submissionObject.success])
-
   async function handleSubmit(event) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;

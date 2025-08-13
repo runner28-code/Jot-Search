@@ -144,7 +144,6 @@ function renderLogo(logo) {
 
 function renderAboutCompanySection(careerData, companyName) {
   if (!companyName) {
-// Temp comment
     return null;
   }
   const headerString = `About ${companyName}`;

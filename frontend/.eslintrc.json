@@ -2,6 +2,7 @@
     "env": {
         "browser": true,
         "es2021": true
+    },
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
@@ -11,7 +12,6 @@
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "plugins": [

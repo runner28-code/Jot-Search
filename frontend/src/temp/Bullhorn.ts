@@ -79,7 +79,6 @@ export type Job = {
     hoursPerWeek?: string;
     interviews?: string;
     isClientEditable?: string;
-    isDeleted?: string;
     isInterviewRequired?: string;
     isJobcastPublished?: string;
     isOpen?: string;

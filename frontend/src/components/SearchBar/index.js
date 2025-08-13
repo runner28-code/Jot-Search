@@ -21,12 +21,12 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
   return (
     <label 
       className={ styleObject.containerStyles }
-      htmlFor={ placeholder }
     >
       <div className={ styleObject.searchIconStyles }>
         <img
           src={ searchWhite }
           alt='search icon'
+          className='h-2/3'/>
       </div>
       <input
         type='text'

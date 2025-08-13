@@ -32,6 +32,7 @@ export default function ResetForm({ candidateData, setType }) {
         setType(res.data.error, false);
       }
     }
+  };
 
   function handleChange(name, value) {
     setFormData({
@@ -66,4 +67,3 @@ export default function ResetForm({ candidateData, setType }) {
         Reset Password
       </button>
     </div>
-  )

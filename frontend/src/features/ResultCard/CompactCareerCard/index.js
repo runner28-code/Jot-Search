@@ -45,9 +45,9 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
                 <p className='text-midGrey text-xs'>{applicationAge}</p>
               </div>
               :
+// Temp comment
               <div>
                 <p className='text-midGrey'>Posting Age</p>
-// Temp comment
                 <p className='text-midGrey text-xs'>{postingAge}</p>
               </div>
             }

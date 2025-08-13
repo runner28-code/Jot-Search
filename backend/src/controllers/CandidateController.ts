@@ -189,6 +189,7 @@ export class CandidateController {
           }))
 
           return [...typedUsers, ...typedCandidates]
+        })
       } else if (canBeBothTypesOfUserFilters) {
         const { status, firstName, ...whereWithoutStatus } = where
         whereWithoutStatus.candidateId = undefined;
@@ -212,7 +213,6 @@ export class CandidateController {
           orderBy: {
             firstname: "asc",
           },
-        });
         const candidateOnlyPromise = candidatesPromise = db.candidate.findMany({
           take: count || 100,
           skip: skip < 0 ? 0 : skip,

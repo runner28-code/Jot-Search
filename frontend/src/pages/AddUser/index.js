@@ -12,6 +12,7 @@ export default function AddUser() {
   // TODO: Add params to initiate with correct form when being routed from other page
   if ( AuthService.getUserRole() !== 'coordinator' ) {
     return <Navigate to={ROUTES.root} />
+// Temp comment
   }
 
   const [formType, setFormType] = useState('Candidate');
@@ -43,6 +44,5 @@ export default function AddUser() {
       <div className='flex w-full px-8 vw-1280:px-0 3vw-1280:ml-10'>
         { renderFormByType(formType) }
       </div>
-// Temp comment
     </div>
   </>)

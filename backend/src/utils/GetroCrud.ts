@@ -4,7 +4,6 @@ export const saveCompanies = async (companies: any[]) => {
     const expludeFields = ['organization_careers_pages', 'managers', 'topics'];
     try {
         for (const company of companies) {
-            try {
 							console.log(`Savng company with ID = ${company.id}`);
 							const existing = await db.getroCompany.findFirst({
 								where: {
@@ -66,6 +65,7 @@ export const saveMembers = async (members: any[]) => {
 								});
 				
 								const newJob = await db.getroMember.create({
+									data: jobData,
 								});
                 console.log(`Saved Getro Member with ID = ${member.id} successfully`);
             } catch (error) {

@@ -1,7 +1,6 @@
 -- CreateTable
 CREATE TABLE "UserTalentCollection" (
     "id" TEXT NOT NULL,
-    "user_id" INTEGER,
     "collection_id" INTEGER,
     "status" TEXT,
     "approved_at" TEXT,
@@ -26,6 +25,7 @@ CREATE TABLE "UserTalentCollection" (
     "user_deleted" BOOLEAN,
     "is_company_admin" BOOLEAN,
     "is_network_admin" BOOLEAN,
+    "is_network_ambassador" BOOLEAN,
 
     CONSTRAINT "UserTalentCollection_pkey" PRIMARY KEY ("id")
 );

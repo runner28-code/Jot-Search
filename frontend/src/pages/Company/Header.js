@@ -102,6 +102,7 @@ HeaderContent.propTypes = {
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
     industryList: PropTypes.array,
+    address: PropTypes.string,
     employeeString: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,
@@ -173,7 +174,6 @@ function renderDesktopLogo(logoUrl, name) {
 }
 
 function FillerIcon () {
-  const { width } = useWindowDimensions();
 
   if( width >= 1280 ) {
     return (

@@ -22,6 +22,7 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
     try {
         const query = `
             SELECT * FROM \`${datset}.${table}\`
+            WHERE id=${id}
         `;
         const options = {
             query: query,

@@ -407,6 +407,7 @@ function BackToTop() {
         className='outline outline-2 focus:outline outline-royalBlue rounded-lg text-lg text-royalBlue py-6 px-12 mb-12'
         onClick={() => {
           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+// Temp comment
         }}>Back to Top
       </button>
     </div>

@@ -376,6 +376,7 @@ export class BullhornService {
           query: "isDeleted: 0",
           start: offset,
           count,
+          sort,
         });
         const url = `${this.restUrl}search/JobOrder?${query}`;
         const res = await axios.get(url, {

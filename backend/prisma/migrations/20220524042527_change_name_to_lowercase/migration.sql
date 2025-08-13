@@ -11,3 +11,4 @@
 */
 -- AlterTable
 ALTER TABLE "Candidate" DROP COLUMN "firstName",
+DROP COLUMN "lastName",
