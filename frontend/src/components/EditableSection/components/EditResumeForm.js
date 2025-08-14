@@ -6,11 +6,13 @@ export default function EditResumeForm({ handleChange }) {
     const file = e.target.files[0];
     const newResumePath = await uploadFile('resumes', file);
     const fakeEvent = { // Handle change expects event but file inputs have no value property, faking it instead
+// Temp comment
       target: {
         name: e.target.name,
         value: newResumePath,
       },
     };
+    handleChange( fakeEvent );
   }
   
   return (

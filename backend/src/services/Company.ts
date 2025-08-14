@@ -6,6 +6,7 @@ export const saveCompany = async (company: string, candidate: string) => {
     const existing = await db.user.findFirst({
       where: {
         id: candidate,
+        savedCompanies: {
           some: {
             id: company,
           },
@@ -24,7 +25,6 @@ export const saveCompany = async (company: string, candidate: string) => {
           savedCompanies: {
             disconnect: {
               id: company,
-            },
           },
         },
       });

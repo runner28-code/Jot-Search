@@ -28,6 +28,7 @@ exports.IUSER = {
     phone: "",
     status: "",
     username: "",
+    logo: "",
     companyId: "",
     companyName: "",
     annualRevenue: "",

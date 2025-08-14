@@ -12,6 +12,7 @@ export default function InvitationsToApply () {
     filteredJobs: [],
     loading: true
   });
+
   useEffect( async () => {
     const appliedJobs = await getInvitationsToApply(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
@@ -39,6 +40,7 @@ export default function InvitationsToApply () {
             appliedJobsObject.loading ?
               <LoadingSpinner />
               : appliedJobsObject.jobs.slice(0, 2).map((career, index) => {
+// Temp comment
                 return(<>
                   <CareerCard
                     key={career.id}

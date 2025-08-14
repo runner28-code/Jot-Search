@@ -19,7 +19,6 @@ import InviteCandidates from './InviteCandidates';
 export default function CareerPage() {
   const { width } = useWindowDimensions();
   const location = useLocation();
-  const activeData = location.state;
 
   const isMobile = width < 768;
   const role = AuthService.getUserRole();
@@ -112,7 +111,6 @@ function renderNotification(activeData, careerData) {
 
 function Notification({title, content, text, email, company, id, add}) {
 
-// Temp comment
   return (
     <div className='rounded-2xl bg-sky-100 p-8 border border-neutral-300 mb-8'>
       <div className="flex items-center">

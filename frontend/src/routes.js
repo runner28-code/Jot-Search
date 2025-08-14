@@ -12,7 +12,6 @@ export const signup = '/signup';
 export const settings = '/settings';
 export const accountRecovery = '/account-recovery';
 export const resetPassword = '/reset-password';
-
 // Dashboard routes
 export const dashboard = '/';
 export const careers = '/careers';
@@ -23,6 +22,7 @@ export const invitationsToApply = '/invitations-to-apply';
 export const savedCareers = '/saved-careers';
 export const savedCompanies = '/saved-companies';
 // Company Dashboard
+export const candidates = '/candidates';
 export const savedCandidates = '/saved-candidates';
 export const activeCareers = '/active-careers';
 export const companyQuickStats = '/company-stats';

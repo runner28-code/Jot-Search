@@ -134,6 +134,7 @@ export const skills = [
   'CompTIA Network+',
   'Consultative Sales',
   'Consulting',
+// Temp comment
   'Consumer Market Research',
   'Containers',
   'Content Development',
@@ -253,7 +254,6 @@ export const skills = [
   'Legal Advice',
   'Legal and Labor Relations',
   'Linux',
-// Temp comment
   'Litigation',
   'Logistics',
   'Machine Learning',

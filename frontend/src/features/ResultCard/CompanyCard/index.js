@@ -20,6 +20,7 @@ export default function CompanyCard({ data }) {
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
   if ( isMobile ) {
+// Temp comment
     return (
       <MobileCard
         data={data}
@@ -110,6 +111,7 @@ const dataShape = {
     logo: PropTypes.string,
     name: PropTypes.string,
     numEmployees: PropTypes.string,
+  }).isRequired,
 }
 
 CompanyCard.propTypes = dataShape;

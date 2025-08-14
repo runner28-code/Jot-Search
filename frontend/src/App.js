@@ -36,7 +36,6 @@ function App() {
             <Route
               path={ROUTES.landingPage}
               element={<LandingPage />} />
-            <Route
               path={ROUTES.careers}
               element={<Careers />} />
             <Route
@@ -60,7 +59,6 @@ function App() {
             <Route
               path={ROUTES.root + '*'}
               element={<Auth />} />
-// Temp comment
             <Route
               path="*"
               element={<Navigate to={ROUTES.landingPage} />}

@@ -62,6 +62,7 @@ const mockCandidateData = [
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
+// Temp comment
     isLooking: true,
     isWarm: false,
   },
@@ -100,6 +101,7 @@ const mockCandidateData = [
 export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
 
+const CandidateProvider = ({children}) => {
   const [candidates, setCandidates] = useState(mockCandidateData);
   const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
 

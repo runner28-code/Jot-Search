@@ -43,7 +43,6 @@ export function renderHeader(addType) {
         </h4>
         <p className='text-md text-center text-darkGray leading-loose'>
           {'Sign up and we\'ll keep you updated on new opportunities and put your profile in front of the people responsible for hiring at our companies.'}
-// Temp comment
         </p>
         <div className='mt-10 mb-20 flex justify-center'>
           <span className='text-ml text-darkGray leading-loose mx-4'>
@@ -53,6 +52,7 @@ export function renderHeader(addType) {
             to={ROUTES.login}
             className='text-ml text-royalBlue leading-loose underline mx-4'
           >
+// Temp comment
             Log in here.
           </Link>
         </div>

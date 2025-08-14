@@ -120,6 +120,7 @@ export default function RegistrationForm() {
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
       success: false,
+    });
   }
 
   function handleChange(name, value) {
@@ -216,7 +217,6 @@ export default function RegistrationForm() {
             onChange={handleChange}
             choiceObject={experienceMap}
             error={errors.includes('experience')}
-          />
           <FormInput
             type='single-select'
             name='employmentPreference'

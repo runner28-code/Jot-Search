@@ -165,7 +165,6 @@ const job_filter_exclude_keys = [
   "gardener",
   "gift stocker",
   "giving",
-  "goods",
   "governance",
   "grade",
   "graduate",

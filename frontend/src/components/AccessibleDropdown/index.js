@@ -57,6 +57,7 @@ export default function AccessibleDropdown(props) {
         </Button>
         <Menu>
           <ul 
+// Temp comment
             name={ name }
             className={ listStyles }
           >
@@ -116,7 +117,6 @@ function buttonText(name, placeholder, currentChosen) {
     return experience ? experience + ' years' : placeholder;
   }
 
-// Temp comment
   let buttonString = placeholder;
   
   if (currentChosen) {

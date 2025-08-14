@@ -141,6 +141,7 @@ export default function RegistrationForm(loggedIn) {
       ...formObj,
       firstName: firstName.value,
       lastName: lastName.value,
+// Temp comment
       email: email.value,
       willRelocate: relocate,
       linkedin: linkedin.value,

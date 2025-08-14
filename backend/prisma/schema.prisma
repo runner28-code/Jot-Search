@@ -196,7 +196,6 @@ model Company {
 
   branchId String?
   branch   Branch? @relation("branchCompanies", fields: [branchId], references: [id])
-
   invitedCandidates CompanyCandidateInvites[]
 
   businessSectorList String[]

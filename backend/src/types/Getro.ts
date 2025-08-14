@@ -26,7 +26,7 @@ export type Company = {
   collections?: string;
 };
 
-  id: string;
+export type Job = {
   application_method?: string;
   application_path?: string;
   compensation_currency?: string;

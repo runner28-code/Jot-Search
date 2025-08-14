@@ -15,6 +15,5 @@ CREATE TABLE "Job" (
     "yearsRequired" TEXT,
     "status" TEXT,
     "skillList" TEXT,
-    "locations" TEXT,
     "companyId" TEXT,
     "interviews" TEXT,

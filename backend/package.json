@@ -2,7 +2,6 @@
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
   },
-  "dependencies": {
     "@google-cloud/bigquery-connection": "^1.5.1",
     "@prisma/client": "^3.14.0",
     "@sendgrid/mail": "^7.6.2",
@@ -27,6 +26,7 @@
     "routing-controllers": "^0.9.0",
     "tsc-watch": "^4.6.0",
     "uuid": "^8.3.2"
+  },
   "scripts": {
     "dev": "cp -R ./src/templates ./dist && export GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' && nodemon src/app.ts",
     "dev-win": "nodemon src/app.ts",

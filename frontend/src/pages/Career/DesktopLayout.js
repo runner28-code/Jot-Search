@@ -9,7 +9,6 @@ import clockIcon from '../../assets/icons/clock.svg';
 import postingAgeIcon from '../../assets/icons/calendar.svg';
 import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
-import { apply as applyRoute } from '../../routes';
 import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
 
@@ -170,6 +169,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
       <p
         className='font-spaceGrotesk text-textBlack text-md mb-10'
         dangerouslySetInnerHTML={{ __html: careerData.description || 'No description listed' }}
+      />
       {renderSkillsSection(skillList)}
       {renderAboutCompanySection(careerData, companyName)}
       {/* Apply */}

@@ -79,6 +79,7 @@ export const candidateChoices = [
   choices.profile,
   choices.myApplications,
   choices.myFavorites,
+  choices.careers,
   choices.companies,
   choices.talentInTulsa,
   choices.logout
@@ -98,7 +99,6 @@ export const coordinatorChoices = [
   choices.companies,
   choices.addUser,
   choices.logout
-];
 export const guestChoices = [
   choices.careers,
   choices.companies,

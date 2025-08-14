@@ -141,6 +141,7 @@ export class CandidateController {
       let isTppUserQuery = Object.keys(where).some(key => tppSpecificFilterKeys.includes(key));
 
 
+      where = Object.keys(where).reduce((acc, key) => {
         if (tppSpecificFilterKeys.includes(key)) {
           acc[translateTppFilters[key]] = where[key];
         } else {

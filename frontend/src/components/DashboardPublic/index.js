@@ -7,7 +7,6 @@ import filterIcon from '../../assets/icons/filter-toggle.svg';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-// Temp comment
 
 
 export default function DashboardPublic({togglePassState}) {
@@ -49,7 +48,6 @@ export default function DashboardPublic({togglePassState}) {
         </div>
         <div className='ml-12'>
           <button
-            className='flex items-center flex-row'
             onClick={() => togglePassState()}
           >
             <img src={filterIcon} />
