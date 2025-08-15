@@ -147,3 +147,5 @@ async function seedCompanies() {
         bh_description: "a company",
         getro_description: "a healthcare company",
         description: "Testing a new description",
+        city: "Tulsa",
+        state: "OK",

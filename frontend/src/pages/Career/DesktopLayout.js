@@ -165,6 +165,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
   }
   return (<>
     <section className='bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4'>
+// Temp comment
       {/* Job Description */}
       <h4 className={sectionHeaderStyles}>Career Description</h4>
       <p
@@ -185,7 +186,6 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
   </>)
 }
 
-// Temp comment
 function renderSkillsSection({ skillList }) {
   return (<>
     <hr className={hrStyles} />

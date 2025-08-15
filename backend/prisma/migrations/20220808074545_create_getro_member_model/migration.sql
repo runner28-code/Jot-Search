@@ -43,3 +43,4 @@ CREATE TABLE "GetroMember" (
     "linkedin_url" TEXT,
     "resume_url" TEXT,
     "twitter_url" TEXT,
+    "verified" BOOLEAN,

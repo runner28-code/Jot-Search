@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
+import ChoiceTag from '../ChoiceTag';
 import ChoiceListItem from '../ChoiceListItem';
 
 export default function TypeaheadDropdown(props) {
@@ -57,7 +58,6 @@ export default function TypeaheadDropdown(props) {
     setDropdownOpen(true);
   }
 
-  return (
     <div 
       className='relative w-full'
       ref={menuRef}  

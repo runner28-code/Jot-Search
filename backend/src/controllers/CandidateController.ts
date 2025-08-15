@@ -281,3 +281,4 @@ export class CandidateController {
 
       const emails = candidates.map((candidate: any) => candidate.email);
 
+      let extendedCandidates;

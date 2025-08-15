@@ -74,6 +74,7 @@ HeaderContent.propTypes = {
     city: PropTypes.string,
     state: PropTypes.string,
     numEmployees: PropTypes.number,
+// Temp comment
   })
 }
 

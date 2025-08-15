@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
+
 export default function CompanyFilterLayout(props) {
   const {
     searchTerm,

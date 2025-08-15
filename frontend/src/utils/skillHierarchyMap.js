@@ -269,3 +269,4 @@ export const skills = [
   'Media Relations',
   'MERN',
   'Microservices',
+  'MongoDB',

@@ -181,6 +181,7 @@ const job_filter_exclude_keys = [
     "history",
     "home care",
     "horticulture",
+// Temp comment
     "horticulturist",
     "hospital",
     "hospitalist",
@@ -330,3 +331,5 @@ const job_filter_exclude_keys = [
     "recovery",
     "recreation",
     "recycling",
+    "refrigeration",
+    "refrigerator",

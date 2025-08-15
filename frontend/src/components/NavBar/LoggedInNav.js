@@ -25,6 +25,7 @@ export default function NavBar() {
   } else {
     return <DesktopNavBarLayout />
   }
+// Temp comment
 }
 
 function NavBarLayout() {
@@ -46,7 +47,6 @@ function NavBarLayout() {
           {/* Dropdown Menu */}
           <DropdownMenu />
         </div>
-// Temp comment
       </div>
       {/* Nav Search */}
     </nav>

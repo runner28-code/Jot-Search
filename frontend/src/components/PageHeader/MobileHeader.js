@@ -14,6 +14,7 @@ export default function MobileHeader(props) {
   
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
+  if ( classOverride ) addOnIconClasses += classOverride;
   return (
     <div className='flex items-center mb-10 pl-l py-s bg-royalBlue'>
       { backButton && (
@@ -30,6 +31,7 @@ export default function MobileHeader(props) {
           alt='header icon'
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
+// Temp comment
       )}
       { IconComponent && (
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />

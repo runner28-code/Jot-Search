@@ -86,7 +86,6 @@ export const saveJob = async (job: string, candidate: string) => {
               id: job,
             },
           },
-        },
       });
     }
 

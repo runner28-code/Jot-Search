@@ -66,3 +66,4 @@
                     "value": "{SECRET_GETRO_PASSWORD}"
                 },
                 {
+                    "name": "BULLHORN_CLIENT_ID", 

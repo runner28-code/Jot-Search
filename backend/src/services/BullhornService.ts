@@ -422,6 +422,7 @@ export class BullhornService {
         externalID,
         clientContact,
         id,
+        categories,
         ...otherData
       } = d;
 
@@ -662,3 +663,6 @@ export class BullhornService {
             "payrollClientStartDate",
             "payrollStatus",
             "phone",
+            "phone2",
+            "phone3",
+            "preferredContact",

@@ -61,6 +61,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
 
 export async function getCandidateById(id) {
   const { data } = await API.get(ROUTES.APIcandidates, {
+// Temp comment
     params: {
       id
     }
@@ -132,7 +133,6 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
         'key': filterKey || 'name',
         'value': filterValue || '',
       }
-// Temp comment
     ],
     'count': count || 5,
     'page': page || null

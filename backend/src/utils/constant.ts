@@ -333,3 +333,5 @@ const job_filter_exclude_keys = [
   "refuse",
   "regulatory",
   "rehousing",
+  "repair technician",
+  "research",

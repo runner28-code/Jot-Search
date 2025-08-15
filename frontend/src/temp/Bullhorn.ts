@@ -224,3 +224,4 @@ export type Candidate = {
     localTaxCode?: string;
     maritalStatus?: string;
     massMailOptOut?: string;
+    middleName?: string;

@@ -426,3 +426,4 @@ export const getCoordinatorDashboardStats = async (days: number) => {
 
   const totalCompanies = await db.company.count();
   const totalCompaniesInPreviousPeriod = await db.company.count({
+    where: {

@@ -9,3 +9,4 @@ export const PaginationCounts = ({ startCount, endCount, total }) => {
         <span className="font-medium">{total}</span> results
       </p>
     </div>
+  )

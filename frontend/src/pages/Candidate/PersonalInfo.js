@@ -23,7 +23,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     return null;
   }
   const [formData, setFormData] = useState({
-    firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     email: candidateData.email || '',
     phone: candidateData.phone || '',
@@ -65,7 +64,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     handleChange(name, value);
   }
 
-// Temp comment
   function handleCommunityChoice(name, value) {
     setFormData({
       ...formData,

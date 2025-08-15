@@ -29,7 +29,6 @@ model Category {
   externalID  Int?      @unique
   occupation  String?
   type        String?
-  score       Float?    @map("_score")
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -103,6 +102,7 @@ model Lead {
   pager                 String?
   phone                 String?
   phone2                String?
+  phone3                String?
   preferredContact      String?
   primarySkills         String?
   priority              String?
@@ -505,3 +505,5 @@ model User {
   phone     String?
   linkedin  String?
   skills    String?
+  title     String?
+  veteran   String?

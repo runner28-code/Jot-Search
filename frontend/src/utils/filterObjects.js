@@ -139,4 +139,3 @@ export function buildSearchFilters(filterObject) {
       });
     }
   });
-  return searchFilters

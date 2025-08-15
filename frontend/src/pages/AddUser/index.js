@@ -8,6 +8,7 @@ import AddCompanyUser from './AddCompanyUser';
 import AddCoordinator from './AddCoordinator';
 import User from '../../assets/icons/add-new-user.svg';
 
+export default function AddUser() {
   // TODO: Add params to initiate with correct form when being routed from other page
   if ( AuthService.getUserRole() !== 'coordinator' ) {
     return <Navigate to={ROUTES.root} />
@@ -30,6 +31,7 @@ import User from '../../assets/icons/add-new-user.svg';
       />
       <span>Add new</span>
       <Dropdown
+// Temp comment
         inputStyles='text-md vw-768:text-lg font-bold mx-4 px-2 py-4 ml-8 border-lightGrey border-solid border-2 rounded-2xl'
         name='formType'
         currentChosen={formType}

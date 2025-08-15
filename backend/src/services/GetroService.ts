@@ -147,6 +147,7 @@ export class GetroService {
                     per_page,
                     page,
                     collection_id: this.networkId,
+                    'roles[]': 'none'
                 });
                 const url = `${this.api_base_url_v1}/members?${query}`;
 
@@ -195,3 +196,4 @@ export class GetroService {
             const data = res.data;
             return {
                 ...data,
+                id: `gt-${data.id}`,
