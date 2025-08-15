@@ -61,7 +61,6 @@ input[type=checkbox] {
     font-size: 32px;
     font-weight: 600;
     font-stretch: normal;
-    font-style: normal;
     line-height: normal;
     letter-spacing: normal;
   }
@@ -130,6 +129,7 @@ input[type=checkbox] {
   }
   .Desktop-Body-textBody-paragraph-2 {
     font-family: Roboto;
+    font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;

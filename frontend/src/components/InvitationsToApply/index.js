@@ -15,7 +15,6 @@ export default function InvitationsToApply () {
 
   useEffect( async () => {
     const appliedJobs = await getInvitationsToApply(profile.user_id);
-// Temp comment
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,
@@ -24,7 +23,6 @@ export default function InvitationsToApply () {
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       loading: false
-    });
   }, []);
 
 

@@ -58,6 +58,7 @@ export default function TypeaheadDropdown(props) {
     setDropdownOpen(true);
   }
 
+  return (
     <div 
       className='relative w-full'
       ref={menuRef}  

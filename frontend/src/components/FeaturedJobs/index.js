@@ -5,7 +5,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
-
 const ITEMS_PER_PAGE = 4;
 
 export default function FeaturedJobs() {
@@ -76,7 +75,6 @@ export default function FeaturedJobs() {
 }
 
 function renderColorShapes() {
-// Temp comment
   return(
     <div className='relative w-24 mb-8'>
       <div className='bg-indigoSquare w-12 h-12' />

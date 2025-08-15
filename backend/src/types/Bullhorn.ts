@@ -148,7 +148,6 @@ export type ClientContact = {
     fax3?: string;
     firstName?: string;
     isAnonymized?: string;
-    isDayLightSavings?: string;
     isDeleted?: string;
     lastName?: string;
     leads?: string;

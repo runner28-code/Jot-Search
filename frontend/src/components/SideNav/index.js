@@ -14,7 +14,6 @@ export default function SideNav({ userType }) {
   const { pathname } = useLocation();
   const hiddenPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage, ROUTES.resetPassword, ROUTES.accountRecovery ];
   if ( hiddenPages.includes(pathname) ) {
-// Temp comment
     return null;
   }
 
@@ -22,7 +21,6 @@ export default function SideNav({ userType }) {
     return null;
   }
   const { width } = useWindowDimensions();
-  if ( width < 1280 ) {
     return null;
   }
   return (

@@ -29,6 +29,7 @@ model Category {
   externalID  Int?      @unique
   occupation  String?
   type        String?
+  score       Float?    @map("_score")
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

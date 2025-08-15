@@ -121,6 +121,7 @@ class AuthService {
   getSavedCompanyIDs() {
     return JSON.parse(localStorage.getItem('savedCompanies')) || [];
   }
+
   toggleSavedCandidate(candidateID, action) {
     const savedCandidates = this.getSavedCandidateIDs();
     if ( action === 'save' ) {

@@ -55,6 +55,7 @@ export default function CompanyCard({ data }) {
               <img
                 src={locationIcon}
                 className='h-8 mr-6 ml-1' />
+// Temp comment
               <p className='text-textBlack'>{addressString}</p>
             </div>
             <OpenCareers companyId={data.id} />
@@ -109,6 +110,7 @@ const dataShape = {
     }),
     logo: PropTypes.string,
     name: PropTypes.string,
+    numEmployees: PropTypes.string,
   }).isRequired,
 }
 

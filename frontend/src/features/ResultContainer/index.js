@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import CandidateCard from '../ResultCard/CandidateCard';
 import CompactCareerCard from '../ResultCard/CompactCareerCard';
@@ -12,6 +11,7 @@ import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 export default function ResultContainer(props) {
   const {
     results,
+// Temp comment
     loading,
     type,
     limit,

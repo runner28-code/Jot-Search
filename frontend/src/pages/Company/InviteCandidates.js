@@ -6,7 +6,6 @@ import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
-import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
 
 export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
@@ -41,7 +40,6 @@ export default function InviteCandidates({ company }) {
           <button 
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs' 
             onClick={(e) => deleteItem(e, item.value)}>X</button>
-// Temp comment
         </span>
       ))}
     </div>)

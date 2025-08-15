@@ -46,6 +46,7 @@ const mockJobsData = [
     title: 'Project Manager',
     company: 'GitWit',
     clientCorporationID: 'a5fa075b-90c3-4dad-97ef-87d6c2cc0922',
+    logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/gitwit_2_vwj7ap.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
     location_state: 'OK',
@@ -89,7 +90,6 @@ const CareerProvider = ({children}) => {
   const handleCareersChange = (value) => {
     setCareers(value);
   }
-
   return (
     <CareerContext.Provider value={{ careers, handleCareersChange }}>
       {children}

@@ -6,6 +6,7 @@ import { getAppliedJobs } from '../../services/API';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+// Temp comment
 
 export default function Applications() {
   const profile = AuthService.getProfile();
@@ -45,6 +46,7 @@ export default function Applications() {
     const newHiddenApplications = [...currentHiddenApplications, ...selectedApplications];
     localStorage.setItem('hiddenApplications', JSON.stringify(newHiddenApplications));
     setSelectedApplications([]);
+    setAppliedJobsObject({
       ...appliedJobsObject,
       filteredJobs: appliedJobsObject.jobs.filter(job => !newHiddenApplications.includes(job.id))
     });

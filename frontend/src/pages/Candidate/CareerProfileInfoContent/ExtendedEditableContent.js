@@ -17,6 +17,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
 
   const [formData, setFormData] = useState({
     id: candidateData.id,
+    avatar: candidateData.avatar || '',
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     occupation: candidateData.occupation || '',

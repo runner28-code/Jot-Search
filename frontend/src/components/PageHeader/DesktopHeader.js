@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import SourceIdentifier from '../SourceIdentifier';
-
 export default function DesktopHeader(props) {
   const {
     headerText,
@@ -9,7 +8,6 @@ export default function DesktopHeader(props) {
     IconComponent,
     classOverride,
     containerClassOverride,
-// Temp comment
     colorizeStroke,
     dataSource,
     backButton

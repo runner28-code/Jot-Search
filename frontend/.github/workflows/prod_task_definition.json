@@ -7,7 +7,6 @@
             "name": "intulsa-frontend-container-prod",
             "image": "site-frontend:prod",
             "cpu": 1024,
-            "memory": 2048,
             "portMappings": [
                 {
                     "containerPort": 3000,
@@ -17,6 +16,7 @@
             ],
             "essential": true,
             "logConfiguration": {
+                "logDriver": "awslogs",
                 "options": {
                    "awslogs-group" : "/ecs/prod-site-frontend-task",
                    "awslogs-region": "us-east-1",

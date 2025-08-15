@@ -50,7 +50,6 @@ function CareerHeader ({ location }) {
           to={ROUTES.careers}
         >{ back }</Link>
       </div>
-// Temp comment
     )
   }
   if( userRole === 'company' ) {
@@ -59,6 +58,7 @@ function CareerHeader ({ location }) {
         <span className='flex flex-row text-lg items-center text-dply '>
           <CareerIcon className='mr-6 fill-royalBlue ' />
           <h2 className='font-spaceGrotesk text-royalBlue font-bold '>Active Careers Details</h2>
+// Temp comment
         </span>
         <Link
           className='text-blue underline mt-6 text-blue-500 font-bold'

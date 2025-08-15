@@ -4,5 +4,5 @@ const testMode = process.argv[2] === "test";
 
 (async () => {
     try {
-        await (await BullhornService.getClient()).getJobs(testMode, 50);
+        consoleLog('/// CRON_JOB_STARTED: BULLHORN_GET_JOBS');
     } catch (error) {

@@ -75,7 +75,6 @@ export default function Dropdown(props) {
         onChange(name, currentChosen.filter(item => item !== choice));
       } else {
         onChange(name, [...currentChosen, choice]);
-      }
     } else { // single select
       setIsOpen(false);
       onChange(name, choice);
@@ -97,6 +96,7 @@ export default function Dropdown(props) {
   }
 
   const suffix = (name) => {
+    if (name === YEARS_OF_EXPERIENCE) { 
       return ' years of experience'
     }
 
