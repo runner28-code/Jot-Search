@@ -103,7 +103,6 @@ model Lead {
   pager                 String?
   phone                 String?
   phone2                String?
-  phone3                String?
   preferredContact      String?
   primarySkills         String?
   priority              String?
@@ -196,6 +195,7 @@ model Company {
 
   branchId String?
   branch   Branch? @relation("branchCompanies", fields: [branchId], references: [id])
+
   invitedCandidates CompanyCandidateInvites[]
 
   businessSectorList String[]

@@ -422,7 +422,6 @@ export class BullhornService {
         externalID,
         clientContact,
         id,
-        categories,
         ...otherData
       } = d;
 

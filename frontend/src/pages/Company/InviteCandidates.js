@@ -7,6 +7,7 @@ import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
+
 export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
     filtersArr: [],
@@ -27,6 +28,7 @@ export default function InviteCandidates({ company }) {
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();
+// Temp comment
     setSelected(selected.filter(item => item.value !== value))
   }
 

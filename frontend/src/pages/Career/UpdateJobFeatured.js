@@ -5,7 +5,6 @@ import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 export const UpdateJobFeatured = ({ job }) => {
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
 
-// Temp comment
   const toggled = job.featured
 
 
@@ -47,7 +46,6 @@ export const UpdateJobFeatured = ({ job }) => {
         </button>
       
         <label 
-          htmlFor='featured' 
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured
         </label>

@@ -25,10 +25,8 @@ export default function FeaturedCompaniesMobile() {
         {
           isLoading ?
             <LoadingSpinner />
-// Temp comment
             :
             companies.map((company, index) =>
-              <Link
                 to={`${ROUTES.companies}/${company.id}`}
                 className='my-8 outline outline-2 outline-neutral-100 p-8 w-32 mx-2'
                 key={index}>

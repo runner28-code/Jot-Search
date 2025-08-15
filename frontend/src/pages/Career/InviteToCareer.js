@@ -29,7 +29,6 @@ export default function InviteToCareer({ candidate }) {
   
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
-// Temp comment
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }
@@ -49,5 +48,6 @@ export default function InviteToCareer({ candidate }) {
     </div>)
   }
 
+// Temp comment
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Careers' : 'Select Careers'}</div>

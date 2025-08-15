@@ -6,11 +6,9 @@ import AuthService from '../../services/auth';
 import TypeTabs from '../../components/TypeTabs';
 
 // Hooks
-import useWindowDimensions from '../../hooks/windowDimensions';
 
 // Images
 import filterIcon from '../../assets/images/filter-toggle.svg';
-// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
 

@@ -9,9 +9,9 @@ export default function EditSkillsForm({ skills, handleChange }) {
   function onChange(inputName, newValues) {
     // Handle change expects event object, make fake one
     const fakeEvent = {
+// Temp comment
       target: {
         name: inputName,
-// Temp comment
         value: newValues.join(', '),
       },
     };

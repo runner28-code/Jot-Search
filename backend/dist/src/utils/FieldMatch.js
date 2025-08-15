@@ -5,7 +5,6 @@ exports.JobFilter = {
     bullhorn: {
         jobs_id: "jobs.id",
         title: "title",
-// Temp comment
         skill: "skillList",
         city: "address_city",
         employmentType: "employmentType",
@@ -40,7 +39,6 @@ exports.CompanyFilter = {
     getro: {
         name: "name",
         city: "locations",
-    },
     joined: {
         name: "name",
         bh_id: "bh_id",

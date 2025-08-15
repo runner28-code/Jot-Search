@@ -134,7 +134,6 @@ export const skills = [
   'CompTIA Network+',
   'Consultative Sales',
   'Consulting',
-// Temp comment
   'Consumer Market Research',
   'Containers',
   'Content Development',

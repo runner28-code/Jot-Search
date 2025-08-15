@@ -39,7 +39,6 @@ export function renderHeader(addType) {
     return (
       <div className='flex flex-col justify-center'>
         <h4 className='text-h5 text-center vw-768:text-h4 text-darkGray font-spaceGrotesk font-semibold mb-10'>
-// Temp comment
           Create an Account
         </h4>
         <p className='text-sm text-center text-darkGray leading-loose'>

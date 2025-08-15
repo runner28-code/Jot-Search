@@ -94,7 +94,6 @@ module.exports = {
         'xs': '8px',
         's': '12px',
         'm': '16px',
-// Temp comment
         'l': '20px',
         'xl': '24px',
         'xxl': '28px',
@@ -170,7 +169,6 @@ module.exports = {
         '315': '78.75rem',
         '320': '80rem',
         '340': '85rem',
-        '346': '86.5rem',
         '360': '90rem',
         '380': '95rem',
         '400': '100rem',

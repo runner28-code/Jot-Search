@@ -32,6 +32,7 @@ const availableTabChoicesByUserType = {
   guest: ['careers', 'companies'],
 }
 
+function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
     switch (pathname) {
       case '/candidates':
@@ -96,6 +97,7 @@ export default function AdvancedSearch({ disabledTabs }) {
       [filterType]: choice
     });
     setPage(1);
+// Temp comment
   }
 
   function handleSearchChange(searchTerm) {

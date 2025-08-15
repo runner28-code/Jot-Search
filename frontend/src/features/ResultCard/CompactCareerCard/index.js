@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-import {BsClipboardCheck} from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
 import { calculatePostingAge } from '../../../utils/formatFunctions';
 
@@ -18,6 +17,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
       className='relative'
       key={data.id}
     >
+      <Link
         to={`${ROUTES.careers}/${data.id}`}
         className='flex px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
         tabIndex='0'

@@ -28,7 +28,6 @@ export default function Auth() {
         />
         <Route
           path={ROUTES.profile}
-// Temp comment
           element={<Profile />} />
         <Route
           path={ROUTES.logout}

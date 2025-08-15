@@ -46,7 +46,6 @@ export const experienceMap = {
 }
 
 export const educationChoices = [
-// Temp comment
   'None',
   'Associate',
   'Bachelor',

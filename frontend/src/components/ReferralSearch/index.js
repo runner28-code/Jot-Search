@@ -31,7 +31,6 @@ const mockJobsData = [
     location: 'Remote',
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
-// Temp comment
   },
 ];
 

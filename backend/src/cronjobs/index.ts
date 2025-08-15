@@ -60,7 +60,6 @@ const setupCronJobs = async () => {
     try {
       consoleLog('/// CRON_JOB_STARTED: GETRO_GET_COMPANIES');
       await (await GetroService.getClient()).getCompanies(false, 50);
-    } catch (error) {
       consoleLog(error);
     }
     consoleLog('/// CRON_JOB_ENDED: GETRO_GET_COMPANIES');

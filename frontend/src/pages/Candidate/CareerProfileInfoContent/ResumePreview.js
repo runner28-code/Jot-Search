@@ -30,6 +30,7 @@ const ResumePreview = ({ resumeUrl }) => {
         className='rounded-lg'
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
+// Temp comment
         <nav>
           <ul className="flex justify-between">
             <li className="previous">
@@ -47,7 +48,6 @@ const ResumePreview = ({ resumeUrl }) => {
                 onClick={() => setPage(page + 1)}
               >
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
-// Temp comment
               </button>
             </li>
           </ul>
