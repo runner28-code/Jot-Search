@@ -296,3 +296,4 @@ export class JobController {
         value: filter.value,
       }));
       const _condition = getFilterConditions(
+        _filters,

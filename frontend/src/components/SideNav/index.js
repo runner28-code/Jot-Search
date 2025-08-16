@@ -12,13 +12,13 @@ import * as ROUTES from '../../routes';
 
 export default function SideNav({ userType }) {
   const { pathname } = useLocation();
+// Temp comment
   const hiddenPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage, ROUTES.resetPassword, ROUTES.accountRecovery ];
   if ( hiddenPages.includes(pathname) ) {
     return null;
   }
 
   if( userType === 'guest' ) {
-// Temp comment
     return null;
   }
   const { width } = useWindowDimensions();

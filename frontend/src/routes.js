@@ -22,6 +22,7 @@ export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';
 export const savedCareers = '/saved-careers';
 export const savedCompanies = '/saved-companies';
+// Temp comment
 // Company Dashboard
 export const candidates = '/candidates';
 export const savedCandidates = '/saved-candidates';
@@ -52,7 +53,6 @@ export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';
 /* API Links */
 export const search = '/search';
 // Auth
-// Temp comment
 export const APIlogin = '/login';
 export const APIregister = '/register';
 export const APIregisterCoordinator = '/register_coordinator';

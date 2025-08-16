@@ -118,7 +118,6 @@ export default function Candidate() {
               label={PREFERENCE_ITEMS.willRelocate}
               onUpdate={handleCandidateUpdate} />
             <PreferenceItem
-// Temp comment
               toggled={!!candidateData.willReceiveNotification}
               fieldName='willReceiveNotification'
               label={PREFERENCE_ITEMS.willReceiveNotification}

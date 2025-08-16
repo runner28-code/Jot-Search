@@ -265,6 +265,7 @@ model Company {
   customInt1 Int?
   customInt2 Int?
   customInt3 Int?
+
   customText1  String?
   customText2  String?
   customText3  String?
@@ -511,3 +512,4 @@ model User {
   activelyLooking Boolean @default(true)
 
   categoryId Int?
+  category   Category? @relation("userCategory", fields: [categoryId], references: [id])

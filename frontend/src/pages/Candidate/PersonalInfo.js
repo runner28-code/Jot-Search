@@ -72,8 +72,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     })
     setReferralChoice(false);
   }
-// Temp comment
-
   function handlePhoneInputChange(value) {
     setFormData({ ...formData, phone: value });
   }

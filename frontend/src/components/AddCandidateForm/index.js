@@ -34,6 +34,7 @@ const defaultState = {
 };
 export default function RegistrationForm() {
   const {categories} = useContext(CategoryContext);
+  const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
   const [submissionObject, setSubmissionObject] = useState({
@@ -149,7 +150,6 @@ export default function RegistrationForm() {
       onSubmit={handleSubmit}>
       { renderHeader(addType) }
       <div className={midpointFlex}>
-        <div className={flexWidth}>
           <FormInput
             type='text'
             name='firstName'

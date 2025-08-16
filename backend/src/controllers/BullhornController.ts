@@ -14,6 +14,7 @@ export class BullhornController {
   async getJobs() {
     console.log('~~~~~~')
     return await (await BullhornService.getClient()).getJobs();
+  }
 
   // @Authorized()
   @Get('/bullhorn/clientContacts')

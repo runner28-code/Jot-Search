@@ -29,6 +29,7 @@ CREATE TABLE "UserTalentCollection" (
     "is_network_ambassador" BOOLEAN,
 
     CONSTRAINT "UserTalentCollection_pkey" PRIMARY KEY ("id")
+);
 
 -- CreateTable
 CREATE TABLE "GetroMember" (
@@ -44,3 +45,4 @@ CREATE TABLE "GetroMember" (
     "twitter_url" TEXT,
     "verified" BOOLEAN,
     "website_url" TEXT,
+    "share_permission" BOOLEAN,

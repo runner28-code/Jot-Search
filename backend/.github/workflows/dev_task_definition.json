@@ -14,7 +14,6 @@
                     "hostPort": 5000, 
                     "protocol": "tcp"
                 }
-            ], 
             "essential": true,
             "logConfiguration": { 
                 "logDriver": "awslogs",
@@ -53,6 +52,7 @@
                     "name": "DATASET_MAIN", 
                     "value": "inTulsa_Main"
                 },
+                {
                     "name": "AUTH_SECRET", 
                     "value": "{SECRET_AUTH_SECRET}"
                 },

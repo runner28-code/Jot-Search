@@ -12,7 +12,6 @@ import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../utils/dbFieldMapping';
 import {
-  ethnicityChoices,
   defaultState,
   defaultCareerState,
   renderButtonOrLoading,
@@ -107,6 +106,7 @@ export default function Apply() {
         setSubmissionObject({
           loading: false,
           error: true,
+          errorMessage: response.message
         });
       }
     }

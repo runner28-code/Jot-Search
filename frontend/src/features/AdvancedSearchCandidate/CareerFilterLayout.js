@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -37,6 +38,7 @@ export default function CareerFilterLayout(props) {
     });
   } else {
     dropdownFilters.forEach(filter => {
+// Temp comment
       dropdownFilterObject[filter] = filterObject[filter];
     });
   }

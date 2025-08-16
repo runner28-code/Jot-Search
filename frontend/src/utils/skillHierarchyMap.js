@@ -96,7 +96,6 @@ export const skills = [
   'Associates Degree',
   'ATS',
   'Auditing',
-  'Automation',
   'AWS',
   'Azure',
   'B2B',
@@ -149,7 +148,6 @@ export const skills = [
   'Creative Writing',
   'CRM',
   'CSM',
-// Temp comment
   'CSS',
   'Curriculum Development',
   'Customer Experience',
@@ -273,3 +271,4 @@ export const skills = [
   'MongoDB',
   'MS Office',
   'Multimedia',
+  'MVC',

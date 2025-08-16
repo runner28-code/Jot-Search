@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import AssistanceCard from './AssistanceCard';
-// Temp comment
 import gaugeIcon from '../../../assets/icons/gauge.svg';
 import PageHeader from '../../../components/PageHeader';
 import AdvancedSearch from '../../../features/AdvancedSearch';
@@ -22,6 +21,5 @@ export default function CompanyDashboard({userType}) {
       />
       <AssistanceCard />
       <h2 className='mt-22 font-spaceGrotesk font-semibold text-h5 text-charcoal'>Search</h2>
-      <AdvancedSearch />
     </>
   )

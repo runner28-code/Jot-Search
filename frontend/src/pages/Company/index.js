@@ -5,7 +5,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import Header from './Header';
 import HeaderMobile from './HeaderMobile';
 import { getCompanyById } from '../../services/API';
-// Temp comment
 import { buildCandidateAddress } from '../../utils/formatFunctions';
 import urlDecode from '../../utils/urlDecode';
 import OtherCareers from '../../features/OtherCareers';

@@ -187,7 +187,6 @@ function renderSkills(skillsString) {
   }
   const skills = skillsString.split(',');
   return skills.map((skill, index) => {
-// Temp comment
     return <SkillTag
       skill={skill}
       key={index}

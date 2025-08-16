@@ -11,6 +11,7 @@ export const UpdateJobFeatured = ({ job }) => {
   const enabledButtonStyle = 'bg-green text-white'
   const disabledButtonStyle = 'bg-grey300'
 
+  const buttonStyles = toggled ? enabledButtonStyle : disabledButtonStyle
 
   const enabledToggleStyles = 'translate-x-12'
   const disabledToggleStyles = 'translate-x-0'
@@ -45,6 +46,7 @@ export const UpdateJobFeatured = ({ job }) => {
         </button>
       
         <label 
+// Temp comment
           htmlFor='featured' 
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured

@@ -672,3 +672,5 @@ export class BullhornService {
             "salary",
             "salaryLow",
             "secondarySkills",
+            "skillSet",
+            "smsOptIn",

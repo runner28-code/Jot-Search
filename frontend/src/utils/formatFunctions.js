@@ -131,6 +131,7 @@ export function buildCandidateAddress(candidateData, full = false) {
   } else {
     addressArr = [address_city, address_state];
   }
+
   let address = '';
   addressArr.forEach(line => {
     if (line && line !== 'N/A') {

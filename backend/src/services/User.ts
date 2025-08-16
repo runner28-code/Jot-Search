@@ -431,3 +431,4 @@ export const getCoordinatorDashboardStats = async (days: number) => {
     }
   });
   const companyCompare = (totalCompanies - totalCompaniesInPreviousPeriod) * 100 / totalCompanies;
+

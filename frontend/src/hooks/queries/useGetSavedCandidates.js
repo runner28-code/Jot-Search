@@ -11,4 +11,5 @@ export const useGetSavedCandidates = ({ count, page, userId, enabled = true }) =
     () => getSavedCandidates(userId, count, page),
     { enabled }
   );
+
   return { savedCandidates: data, total: data?.total || 0, error, isLoading };
