@@ -68,7 +68,6 @@ export default function Candidate() {
     const formatUserObjectForRender = formatCandidateData({ ...candidateData, ...updatedDisplayObject });
     setCandidateData(formatUserObjectForRender);
     let updateResponse = null;
-// Temp comment
     if (candidateData.sourceTable === 'Candidate') {
       const convertedCandidateObject = convertUserToCandidate(updateObject);
       updateResponse = await updateCandidate(convertedCandidateObject, id);
@@ -119,6 +118,7 @@ export default function Candidate() {
               label={PREFERENCE_ITEMS.willRelocate}
               onUpdate={handleCandidateUpdate} />
             <PreferenceItem
+// Temp comment
               toggled={!!candidateData.willReceiveNotification}
               fieldName='willReceiveNotification'
               label={PREFERENCE_ITEMS.willReceiveNotification}

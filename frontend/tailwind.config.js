@@ -32,6 +32,7 @@ module.exports = {
       boxShadow: {
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
+      colors: {
         // Main Brand Colors
         royalBlue: '#176AB9',
         aquaBlue: '#0E97CA',
@@ -177,3 +178,4 @@ module.exports = {
         '660': '165rem'
       },
       borderWidth: {
+        '1.5': '1.5px',

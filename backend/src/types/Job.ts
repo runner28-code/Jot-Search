@@ -23,7 +23,6 @@ export type Job = {
   salary?: string;
   salaryUnit?: string;
   startDate?: string;
-  type?: string;
   isDeleted?: string;
   postedAt?: string;
   hidden?: boolean;
@@ -36,8 +35,10 @@ export type JobKey = keyof Job;
 
 export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "id",
+  "externalId",
   "description",
   "address1",
   "address2",
   "city",
   "state",
+  "zip",

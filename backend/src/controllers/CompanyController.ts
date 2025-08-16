@@ -53,6 +53,7 @@ export class CompanyController {
         company,
         source: datasource,
       };
+    } else if (datasource === DataSource.GETRO) {
       const company = await this.getCompanyByIdFromGetro(id);
       return {
         company,
@@ -245,3 +246,5 @@ export class CompanyController {
           }
         }
       })
+      const extendedCompanies = companies.map((company: any) => {
+        const getroCompany = getroCompanies.find(gc => gc.domain === company.companyURL)

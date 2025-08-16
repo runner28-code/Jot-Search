@@ -50,6 +50,7 @@ function App() {
               element={<Apply />} />
             <Route
               path={`${ROUTES.companies}/:id`}
+              element={<Company />} />
             <Route
               path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />
@@ -57,6 +58,7 @@ function App() {
               path={ROUTES.resetPassword}
               element={<ResetPassword />} />
             <Route
+// Temp comment
               path={ROUTES.root + '*'}
               element={<Auth />} />
             <Route

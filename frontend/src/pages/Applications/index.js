@@ -53,7 +53,6 @@ export default function Applications() {
 
   const { width } = useWindowDimensions();
   return (
-    <section>
       <PageHeader
         headerText='My InTulsa Featured Applications'
         IconComponent={BsClipboardCheck}

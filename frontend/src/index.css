@@ -5,7 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Vanilla CSS */
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -137,3 +136,4 @@ input[type=checkbox] {
     line-height: 1.6;
     letter-spacing: normal;
   }
+  .Desktop-Body-textBody-paragraph {

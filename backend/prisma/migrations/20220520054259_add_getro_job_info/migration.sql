@@ -20,7 +20,6 @@ CREATE TABLE "GetroJobInfo" (
     "compensation_period" TEXT,
     "compensation_public" TEXT,
     "description" TEXT,
-    "discarded" TEXT,
     "employment_types" TEXT,
     "expires_at" TIMESTAMP(3),
     "job_functions" TEXT,
@@ -28,3 +27,4 @@ CREATE TABLE "GetroJobInfo" (
     "locations" TEXT,
     "organization_domain" TEXT,
     "organization_id" TEXT,
+    "organization_logo_url" TEXT,

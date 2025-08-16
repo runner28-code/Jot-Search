@@ -26,6 +26,7 @@ CREATE TABLE "Lead" (
     "email2" TEXT,
     "email3" TEXT,
     "fax" TEXT,
+    "fax2" TEXT,
     "fax3" TEXT,
     "firstName" TEXT,
     "isAnonymized" BOOLEAN,

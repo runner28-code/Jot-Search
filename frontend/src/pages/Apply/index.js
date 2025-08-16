@@ -107,7 +107,6 @@ export default function Apply() {
         setSubmissionObject({
           loading: false,
           error: true,
-          errorMessage: response.message
         });
       }
     }

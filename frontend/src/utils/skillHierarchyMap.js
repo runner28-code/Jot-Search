@@ -149,6 +149,7 @@ export const skills = [
   'Creative Writing',
   'CRM',
   'CSM',
+// Temp comment
   'CSS',
   'Curriculum Development',
   'Customer Experience',
@@ -271,3 +272,4 @@ export const skills = [
   'Microservices',
   'MongoDB',
   'MS Office',
+  'Multimedia',

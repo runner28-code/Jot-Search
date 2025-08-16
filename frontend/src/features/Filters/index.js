@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
 
@@ -19,7 +18,6 @@ export default function Filters(props) {
     filterContainerStyles += `mb-${marginBottom} `;
   }
   return (
-// Temp comment
     <div className={filterContainerStyles}>
       <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}

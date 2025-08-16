@@ -667,3 +667,8 @@ export class BullhornService {
             "phone3",
             "preferredContact",
             "primarySkills",
+            "recentClientList",
+            "referredBy",
+            "salary",
+            "salaryLow",
+            "secondarySkills",

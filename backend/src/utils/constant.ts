@@ -335,3 +335,5 @@ const job_filter_exclude_keys = [
   "rehousing",
   "repair technician",
   "research",
+  "residence",
+  "resident",

@@ -14,7 +14,6 @@ export default function AddUser() {
     return <Navigate to={ROUTES.root} />
   }
 
-  const [formType, setFormType] = useState('Candidate');
   function handleDropdownChange(e) {
     setFormType(e.target.value);
   }
@@ -36,7 +35,6 @@ export default function AddUser() {
         currentChosen={formType}
         choices={['Candidate', 'Company', 'Coordinator']}
         handleChange={handleDropdownChange}
-// Temp comment
         noDefault={true}
       />
     </h2>

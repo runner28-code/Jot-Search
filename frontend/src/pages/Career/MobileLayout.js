@@ -58,7 +58,6 @@ export default function MobileLayout(props) {
             <div className='flex w-1/2 items-center'>
               <LaptopIcon
                 className='fill-midGrey h-8 w-8 mr-5' />
-// Temp comment
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>
             </div>
           </div>

@@ -254,6 +254,7 @@ model Company {
   score Float? @map("_score")
 
   // Start custom fields
+  customDate1 DateTime?
   customDate2 DateTime?
   customDate3 DateTime?
 
@@ -264,7 +265,6 @@ model Company {
   customInt1 Int?
   customInt2 Int?
   customInt3 Int?
-
   customText1  String?
   customText2  String?
   customText3  String?
@@ -507,3 +507,7 @@ model User {
   skills    String?
   title     String?
   veteran   String?
+
+  activelyLooking Boolean @default(true)
+
+  categoryId Int?

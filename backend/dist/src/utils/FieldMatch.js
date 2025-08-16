@@ -23,7 +23,6 @@ exports.JobFilter = {
         employmentType: "employmentType",
         onSite: "onSite",
         yearsRequired: "yearsRequired",
-// Temp comment
         willRelocate: "willRelocate",
         city: "city",
         state: "state",

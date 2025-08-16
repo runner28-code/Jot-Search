@@ -8,6 +8,7 @@ export const pluralizedTypes = {
   jobs: 'careers',
 }
 
+export const openJobStatuses = [
   'Active',
   'active',
   'Passive',
@@ -49,7 +50,6 @@ export const stateCodeMap = {
   'New York': 'NY',
   'North Carolina': 'NC',
   'North Dakota': 'ND',
-  Ohio: 'OH',
   Oklahoma: 'OK',
   Oregon: 'OR',
   Pennsylvania: 'PA',

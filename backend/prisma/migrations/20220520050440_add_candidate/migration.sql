@@ -68,3 +68,4 @@ CREATE TABLE "Candidate" (
     "preferredContact" TEXT,
     "primarySkills" TEXT,
     "recentClientList" TEXT,
+    "referredBy" TEXT,

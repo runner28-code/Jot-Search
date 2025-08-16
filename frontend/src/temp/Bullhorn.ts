@@ -13,7 +13,6 @@ export type Company = {
     billingAddress_state?: string,
     billingAddress_zip?: string,
     billingContact?: string,
-    billingFrequency?: string,
     billingPhone?: string,
     businessSectorList?: string,
     companyDescription?: string,
@@ -225,3 +224,5 @@ export type Candidate = {
     maritalStatus?: string;
     massMailOptOut?: string;
     middleName?: string;
+    mobile?: string;
+    name?: string;

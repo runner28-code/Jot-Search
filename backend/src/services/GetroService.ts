@@ -197,3 +197,5 @@ export class GetroService {
             return {
                 ...data,
                 id: `gt-${data.id}`,
+                talent_groups: data.talent_groups?.map((talent: any) => talent.id).join(' | ') || null,
+                skills: data.skills?.map((skill: any) => skill.name).join(' | ') || null,

@@ -13,6 +13,7 @@ const mockCandidateData = [
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/zach_3_t1naqe.webp', // Missing from Bullhorn Schema
     occupation: 'Software Engineer',
     companyName: 'Aerovision',
+    address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
@@ -70,7 +71,6 @@ const mockCandidateData = [
     lastName: 'Kim',
     linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/donnie_1_l00n0o.webp', // Missing from Bullhorn Schema
-    occupation: 'Softwware Engineer',
     companyName: 'Aerovision',
     address_city: 'Tulsa',
     address_state: 'OK',

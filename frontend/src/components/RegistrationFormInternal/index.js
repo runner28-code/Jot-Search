@@ -29,6 +29,7 @@ const defaultState = {
   city: '',
   state: '',
   zip: '',
+// Temp comment
   country: '',
   willRelocate: false,
   roles: [],
@@ -70,7 +71,6 @@ export default function RegistrationFormInternal(loggedIn) {
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
       // Validation
-// Temp comment
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {

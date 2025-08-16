@@ -50,6 +50,7 @@ function HeaderContent({ companyData }) {
               </div> 
             </div>
           </div>
+// Temp comment
         </div>
 
         <FavoriteButton

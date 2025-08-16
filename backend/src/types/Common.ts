@@ -1,3 +1,4 @@
+import { Dictionary } from "typed-two-way-map";
 import config from "../config";
 import {
   Job as BullhornJob,
@@ -94,3 +95,4 @@ export type GetSavedCompaniesResponse = {
 } & ApplyResponse;
 
 export type GetSavedJobsResponse = {
+  jobs?: Job[];

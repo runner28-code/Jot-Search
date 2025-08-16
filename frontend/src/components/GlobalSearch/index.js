@@ -58,7 +58,6 @@ export default function GlobalSearch({ placeholder }) {
       jobs: jobResults && jobResults.length ? jobResults : [],
       companies: companyResults && companyResults.length ? companyResults.slice(0, 3) : [], //!!! TODO: Get rid of slice when Donnie has count filter working for companies
       candidates: CandidateResults && CandidateResults.length ? CandidateResults : [],
-// Temp comment
       loading: false,
     };
 

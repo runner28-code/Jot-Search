@@ -29,6 +29,7 @@ export default function TypeaheadDropdown(props) {
     if (!currentChosen.includes(choice)) {
       onChange(name, [...currentChosen, choice]);
     } else {
+      onChange(name, currentChosen.filter(item => item !== choice));
     }
   }, [onChange])
 

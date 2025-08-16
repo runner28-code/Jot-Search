@@ -3,7 +3,6 @@ import Home from '../../../assets/icons/home.svg';
 import AdvancedSearch from '../../../features/AdvancedSearch';
 import CareerFavorite from '../../../components/CareerFavorite';
 import CompanyFavorite from '../../../components/CompanyFavorite';
-// Temp comment
 import PendingApplications from '../../../components/PendingApplications';
 import InvitationsToApply from '../../../components/InvitationsToApply';
 
@@ -13,7 +12,6 @@ export default function CandidateDashboard() {
     <>
       <div className='flex items-center justify-start mb-12 pt-8 px-4'>
         <img
-          src={Home}
           alt='Home Icon'
         />
         <h1 className='ml-8 text-royalBlue text-lg vw-1280:text-[32px] font-spaceGrotesk'>My Dashboard</h1>

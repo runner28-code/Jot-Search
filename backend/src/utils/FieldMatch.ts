@@ -50,3 +50,4 @@ export const CompanyFilter: TypedDictionary<
     bh_id: "bh_id",
     id: "id",
   },
+};

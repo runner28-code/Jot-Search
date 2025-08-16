@@ -255,6 +255,7 @@ export class JobController {
     operator: Operator = "OR"
   ) {
     const _filters = filters.filter((filter) =>
+      ALLOWED_GETRO_FILTERS.has(filter.key as keyof Job)
     );
 
     const filteredFields = fields?.filter((field) =>
@@ -293,3 +294,5 @@ export class JobController {
       const _filters = filters.map((filter) => ({
         key: JobFilter.bullhorn[filter.key],
         value: filter.value,
+      }));
+      const _condition = getFilterConditions(

@@ -283,3 +283,5 @@ export class CandidateController {
 
       let extendedCandidates;
       if (isTppUserQuery) {
+        extendedCandidates = candidates.map(candidate => ({
+          ...candidate,

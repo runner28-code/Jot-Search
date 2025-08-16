@@ -88,3 +88,4 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
     disability: data.disability,
   };
   return user;
+};
