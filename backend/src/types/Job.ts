@@ -15,6 +15,7 @@ export type Job = {
   willRelocate?: string;
   yearsRequired?: string;
   status?: string;
+  skillList?: string;
   locations?: string;
   companyId?: string;
   interviews?: string;
@@ -33,7 +34,6 @@ export type Job = {
 
 export type JobKey = keyof Job;
 
-export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "id",
   "externalId",
   "description",

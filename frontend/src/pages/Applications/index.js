@@ -6,7 +6,6 @@ import { getAppliedJobs } from '../../services/API';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-// Temp comment
 
 export default function Applications() {
   const profile = AuthService.getProfile();
@@ -15,7 +14,6 @@ export default function Applications() {
     jobs: [],
     filteredJobs: [],
     loading: true
-  });
   const [selectedApplications, setSelectedApplications] = useState([]);
 
   useEffect( async () => {

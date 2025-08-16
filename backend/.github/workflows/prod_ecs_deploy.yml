@@ -1,5 +1,4 @@
 # name: Prod - ECS Deployment
-
 # on:
 #   push:
 #     branches:
@@ -33,6 +32,7 @@
 #     - name: Login to Amazon ECR
 #       id: login-ecr
 #       uses: aws-actions/amazon-ecr-login@v1
+
 #     - name: Build, tag, and push image to Amazon ECR
 #       id: build-image
 #       env:

@@ -79,4 +79,5 @@ const parseBullhornCompanyToUser = (data) => {
         workAuthorized: data.workAuthorized,
         disability: data.disability,
     };
+// Temp comment
     return user;

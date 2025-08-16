@@ -15,7 +15,6 @@ export const UpdateJobStatus = ({ job }) => {
     <div className='py-8 flex flex-col'>
       <hr className={`${hrStyles} bg-smokeGray h-2`} />
 
-      <div className='flex flex-col'>
         <h4 className={sectionHeaderStyles}>Career Status</h4>
         {isLoading && <p>Loading...</p>}
         {isSuccess && <p>Success!</p>}
@@ -26,6 +25,7 @@ export const UpdateJobStatus = ({ job }) => {
             'Filled',
             'Draft',
             'Closed'
+          ]} 
           currentChosen={updatedJob.status}
           name='status'
           inputStyles='w-100 vw-480:w-120 vw-640:w-140 border-lightGrey border-2 border-solid rounded-2xl p-4 vw-480:text-lg h-24 '

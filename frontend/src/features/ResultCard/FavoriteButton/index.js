@@ -70,6 +70,5 @@ function getIdByType(type, data) {
     case 'candidate':
       return data.id;
     default:
-// Temp comment
       return '';
   }

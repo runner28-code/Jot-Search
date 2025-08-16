@@ -12,7 +12,6 @@ export const saveCandidate = async (
           savedCandidates: {
             some: {
               id: candidateId,
-            },
           },
         },
       },

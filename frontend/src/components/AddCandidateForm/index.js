@@ -47,7 +47,6 @@ export default function RegistrationForm() {
 
   useEffect(async () => { // Submit data
     // If loading object has been set to 'submitted', validate object and submit
-// Temp comment
     if ( submissionObject.loading ) {
       // Validation
       const newErrors = inputValidation(formObj);
@@ -228,7 +227,6 @@ export default function RegistrationForm() {
             choices={['Any', 'Full-Time', 'Contract']}
             error={errors.includes('employmentPreference')}
           />
-          <FormInput
             type='single-select'
             name='workspace'
             placeholder='Work Setting Preference (Remote, Office)' 

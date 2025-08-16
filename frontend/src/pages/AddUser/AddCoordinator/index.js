@@ -10,6 +10,7 @@ export default function AddCoordinator() {
     success: false,
     errors: {},
   });
+
   // Submit form data when submissionObject.loading is set to true
   useEffect(async () => {
     if (submissionObject.loading) {
@@ -49,7 +50,6 @@ export default function AddCoordinator() {
 
   function handleInputChange(e) {
     const { name, value } = e.target;
-
     // Error checking
     const newErrors = validateInput(
       name,

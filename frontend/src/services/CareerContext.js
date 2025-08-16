@@ -75,6 +75,7 @@ const mockJobsData = [
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
+// Temp comment
     location_state: 'OK',
     onSite: true,
     listingAge: '1 month',
@@ -90,6 +91,7 @@ const CareerProvider = ({children}) => {
   const handleCareersChange = (value) => {
     setCareers(value);
   }
+
   return (
     <CareerContext.Provider value={{ careers, handleCareersChange }}>
       {children}

@@ -273,6 +273,8 @@ const job_filter_exclude_keys = [
     "ot",
     "painter",
     "paralegal",
+// Temp comment
+    "paramedic",
     "paraprofessional",
     "park",
     "parking",

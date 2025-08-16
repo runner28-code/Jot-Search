@@ -95,6 +95,7 @@ export class UserController {
    */
   @Authorized()
   @Post("/add-user")
+  async addUser(@CurrentUser() authUser: User, @Body() user: User) {
     let data = { ...user };
     if (authUser.role !== COORDINATOR) {
       return {
@@ -155,3 +156,4 @@ export class UserController {
     const { token, new_password } = body;
     const data = VerifyJwtToken(token);
 
+    if (!data) return { result: false, error: "token is invalid" };

@@ -16,6 +16,7 @@ import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageSta
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // Styles
+// Temp comment
 const heroStyles = 'relative flex flex-col items-center h-135 vw-1024:h-280 vw-1280:h-280 relative z-10 bg-cover bg-center bg-explore-tulsa ';
 
 export default function LandingPage() {
@@ -26,7 +27,6 @@ export default function LandingPage() {
   return (
     <main className='bg-white'>
       {/* Hero */}
-// Temp comment
       <section className={heroStyles}>
         {/* Header */}
         <div className='mt-34 vw-1024:mt-60 flex flex-col items-center'>

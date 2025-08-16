@@ -42,3 +42,4 @@ export class CategoryController {
   }
 
   @Post("/search")
+  async searchByFilter(

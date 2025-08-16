@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import ResetButton from './ResetButton';
 import ResetForm from './ResetForm';
@@ -13,4 +12,5 @@ export default function PasswordReset({role, candidateData}) {
 
   function setType(response, condition) {
     setCondition(condition);
+// Temp comment
     setResponse(response);

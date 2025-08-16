@@ -127,6 +127,7 @@ function DesktopCard({ dataObj, active }) {
         {/* Second row icons */}
         <div className='w-full flex items-center mt-10'>
           {/* Employment Type */}
+          <div className='w-1/3 flex items-center pr-4'>
             <img
               src={clockIcon}
               className='h-11 mr-5' />

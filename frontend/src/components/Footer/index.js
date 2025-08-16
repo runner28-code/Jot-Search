@@ -22,6 +22,7 @@ export default function Footer() {
 
   const { width } = useWindowDimensions();
 
+// Temp comment
   if( width <= 990 ) {
     return (<>
       <div className='flex py-24 px-[5%] items-center justify-center space-x-10 bg-royalBlue'>
@@ -106,7 +107,6 @@ export default function Footer() {
       <a href={ROUTES.twitter}>
         <img
           src={twitter}
-// Temp comment
           className={socialIconStyle}
         />
       </a>

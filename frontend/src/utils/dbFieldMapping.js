@@ -4,7 +4,6 @@ export const disabilityMap = {
   H: 'I am a person with a history of a disability',
   A: 'I can perform the essential functions of my remote work with a reasonable accomodation',
   R: 'I need a reasonable accomodation to perform the essential function of my remote work',
-// Temp comment
   N: 'None of the above'
 };
 
@@ -39,6 +38,7 @@ export const ethnicityMap = {
 };
 
 export const experienceMap = {
+// Temp comment
   '1': null,
   '2': '0-1',
   '3': '2-4',

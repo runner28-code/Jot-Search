@@ -65,6 +65,7 @@ export default function MobileLayout(props) {
           <div className='w-full flex items-center mt-8 mb-m'>
             {/* Posting age */}
             <div className='w-1/2 flex items-center pr-4'>
+// Temp comment
               <img
                 src={postingAgeIcon}
                 className='h-11 mr-5' />

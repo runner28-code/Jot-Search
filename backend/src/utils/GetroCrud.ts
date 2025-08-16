@@ -82,3 +82,4 @@ export const saveMembers = async (members: any[]) => {
     }
 }
 
+export const getCompanies = async () => {

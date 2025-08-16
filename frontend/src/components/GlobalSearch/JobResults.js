@@ -8,6 +8,7 @@ export default function JobResults({ jobs }) {
   if (jobs.length === 0) {
     return null;
   }
+// Temp comment
 
   return (
     <>
@@ -16,6 +17,7 @@ export default function JobResults({ jobs }) {
         return (
           <JobResult 
             job={job} 
+            key={job.id} />
         )
       })}
     </>

@@ -75,6 +75,7 @@ export default function Dropdown(props) {
         onChange(name, currentChosen.filter(item => item !== choice));
       } else {
         onChange(name, [...currentChosen, choice]);
+      }
     } else { // single select
       setIsOpen(false);
       onChange(name, choice);

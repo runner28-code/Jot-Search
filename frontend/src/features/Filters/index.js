@@ -44,6 +44,7 @@ export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handl
     return (
       <FilterSearch
         searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
         handleSearchClick={handleSearchClick}
         placeholder={searchLabel}
       />
@@ -71,5 +72,4 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
         chosen={chosen}
         handleFilterChange={handleFilterChange}
       />
-    )
   })
