@@ -207,6 +207,7 @@ export const skills = [
   'Flume',
   'Forecasts',
   'Fraud',
+  'French',
   'Fundraising',
   'GAAP',
   'General Ledger',

@@ -104,7 +104,6 @@ export default function Company() {
           >
           Back
           </button>
-        </div>
         <RenderInvite
           loggedIn={loggedIn}
           companyData={companyData}
@@ -120,7 +119,6 @@ Company.propTypes = {
 function RenderHeader({type, loggedIn}) {
   if( loggedIn ) {
     return(<>
-// Temp comment
       <DetailsHeader type='company' />
     </>)
   }

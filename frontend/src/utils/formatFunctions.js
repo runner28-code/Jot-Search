@@ -90,6 +90,7 @@ export function formatPhoneNumber(phoneNumberString) {
     phoneNumberString = phoneNumberString.replace(/-/g, '');
   }
   if (phoneNumberString.length === 10) {
+    const areaCode = phoneNumberString.slice(0, 3);
     const firstThree = phoneNumberString.slice(3, 6);
     const lastFour = phoneNumberString.slice(6, 10);
     return `(${areaCode}) ${firstThree}-${lastFour}`;
@@ -128,7 +129,6 @@ export function buildCandidateAddress(candidateData, full = false) {
   if ( full === true ) {
     addressArr = [address_address1, address_address2, address_city, address_state, address_zip];
   } else {
-    addressArr = [address_city, address_state];
   }
 
   let address = '';

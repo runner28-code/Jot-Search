@@ -20,6 +20,7 @@ export const UpdateJobFeatured = ({ job }) => {
 
   return (
     <div className='flex flex-col'>
+// Temp comment
       {isLoading && <p>Loading...</p>}
       {isSuccess && <p>Success!</p>}
       
@@ -42,7 +43,6 @@ export const UpdateJobFeatured = ({ job }) => {
           <span 
             aria-hidden="true" 
             className={`${toggleStyles} pointer-events-none inline-block h-10 w-10 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out`}>
-// Temp comment
           </span>
         </button>
       

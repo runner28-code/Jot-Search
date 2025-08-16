@@ -8,7 +8,6 @@ export const pluralizedTypes = {
   jobs: 'careers',
 }
 
-export const openJobStatuses = [
   'Active',
   'active',
   'Passive',
@@ -43,6 +42,7 @@ export const stateCodeMap = {
   Missouri: 'MO',
   Montana: 'MT',
   Nebraska: 'NE',
+  Nevada: 'NV',
   'New Hampshire': 'NH',
   'New Jersey': 'NJ',
   'New Mexico': 'NM',

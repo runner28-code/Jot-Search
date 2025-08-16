@@ -5,6 +5,7 @@ import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
+// Temp comment
 const dropdownFilters = [
   'Expertise',
   'On-Site/Remote',
@@ -13,7 +14,6 @@ const dropdownFilters = [
 ];
 
 const dropDownFiltersCandidate = [
-// Temp comment
   'Expertise',
   'On-Site/Remote',
   'Years Experience'

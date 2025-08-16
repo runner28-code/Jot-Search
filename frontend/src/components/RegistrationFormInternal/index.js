@@ -70,6 +70,7 @@ export default function RegistrationFormInternal(loggedIn) {
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
       // Validation
+// Temp comment
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
@@ -145,6 +146,7 @@ export default function RegistrationFormInternal(loggedIn) {
       email: email.value,
       willRelocate: relocate,
       linkedin: linkedin.value,
+      password: password.value,
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect

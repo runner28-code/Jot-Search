@@ -95,6 +95,7 @@ export default function NavSearchMobile({ placeholder }) {
     searchIconStyles: 'h-16 px-2 bg-gray-200 text-neutral-400 text-[3.5rem] flex justify-center items-center rounded-lg',
     inputStyles: 'flex-1 h-24 rounded-l-lg pl-4'
   }
+// Temp comment
 
   return (
     <div>

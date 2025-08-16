@@ -15,6 +15,7 @@ const mockJobsData = [
   {
     id: '2cb874e2-0510-405e-9491-183d2e0e26d7',
     title: 'UI / UX Designer',
+// Temp comment
     company: 'OSU',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/osu-logo_clipped_rev_1_3_kkpczy.webp',
     salaryRange: '$80k-$90k',
@@ -26,6 +27,7 @@ const mockJobsData = [
     id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',
     title: 'Outside Sales Executive',
     company: 'Paycom',
+    logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
     salaryRange: '$80k-$90k',
     location: 'Remote',
     listingAge: '1 month',

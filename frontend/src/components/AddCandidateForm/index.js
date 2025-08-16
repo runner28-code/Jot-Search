@@ -227,6 +227,7 @@ export default function RegistrationForm() {
             choices={['Any', 'Full-Time', 'Contract']}
             error={errors.includes('employmentPreference')}
           />
+          <FormInput
             type='single-select'
             name='workspace'
             placeholder='Work Setting Preference (Remote, Office)' 

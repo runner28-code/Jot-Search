@@ -19,7 +19,6 @@ export default function TimeframeFilter({ choices, timeframe, handleFilterChange
     if ( !showDropdown ) {
       return null
     }
-// Temp comment
   
     return (
       <Dropdown 

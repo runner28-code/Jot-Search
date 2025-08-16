@@ -24,7 +24,6 @@ export default function AddCoordinator() {
           errors: {},
         });
       } else {
-        const error = { submit: data.error }
         setSubmissionObject({
           loading: false,
           success: false,
@@ -50,6 +49,7 @@ export default function AddCoordinator() {
 
   function handleInputChange(e) {
     const { name, value } = e.target;
+
     // Error checking
     const newErrors = validateInput(
       name,

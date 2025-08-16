@@ -12,6 +12,7 @@ export const saveCandidate = async (
           savedCandidates: {
             some: {
               id: candidateId,
+            },
           },
         },
       },
@@ -39,7 +40,6 @@ export const saveCandidate = async (
           savedCandidates: {
             disconnect: {
               id: candidateId,
-            },
           },
         },
       });

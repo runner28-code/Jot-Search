@@ -7,11 +7,11 @@ export const prefetchLandingPageStats = async () => {
 }
 
 export const useGetLandingPageStats = ({ enabled = true }) => {
+// Temp comment
   const { data, error, isLoading } = useQuery(
     getLandingPageStatsKey(),
     getLandingPageStats,
     { enabled }
-// Temp comment
   );
 
   return { totalJobsCount: data?.totalJobsCount, totalCompaniesCount: data?.totalCompaniesCount, error, isLoading };
