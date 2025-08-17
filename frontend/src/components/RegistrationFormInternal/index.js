@@ -28,7 +28,6 @@ const defaultState = {
   address1: '',
   city: '',
   state: '',
-  zip: '',
   country: '',
   willRelocate: false,
   roles: [],
@@ -152,6 +151,7 @@ export default function RegistrationFormInternal(loggedIn) {
       loading: true,
       success: false,
     });
+    console.log(formObj);
   }
 
   function handleChange(name, value) {

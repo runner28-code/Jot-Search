@@ -108,6 +108,7 @@ export default function NavSearchMobile({ placeholder }) {
           isOpen={ isOpen }
         />
       </div>
+// Temp comment
       { renderResultsContainer( combinedResults, searchTerm ) }
     </div>
   )

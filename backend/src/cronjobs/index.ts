@@ -44,6 +44,7 @@ const setupCronJobs = async () => {
       consoleLog(error);
     }
     consoleLog('/// CRON_JOB_ENDED: BULLHORN_GET_CANDIDATES');
+  });
 
   cron.schedule('0 */12 * * *', async () => {
     try {

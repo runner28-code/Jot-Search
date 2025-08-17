@@ -6,7 +6,6 @@ import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
-
 export default function CareerFavorite () {
 
   const { user_id } = AuthService.getProfile();
@@ -38,7 +37,6 @@ export default function CareerFavorite () {
         }
         <div className='flex items-center text-center flex-col justify-center px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white rounded-3xl outline-dashed outline-neutral-300 bg-gray-200'>
           <CareerIcon className='w-32 h-32 fill-royalBlue' />
-// Temp comment
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Find Careers to Favorite</h3>
           <Link
             to={ROUTES.careers}

@@ -117,6 +117,7 @@ async function seedCategories() {
         name: "Operations",
         enabled: true,
         externalID: 2000014,
+      },
       {
         name: "Other",
         enabled: true,
@@ -152,3 +153,4 @@ async function seedCompanies() {
         billingPhone: "946-423-2341",
         companyURL: "testingco@gmail.com",
         companyDescription: "Best at testing",
+        numEmployees: 50,

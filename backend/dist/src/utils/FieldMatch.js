@@ -22,10 +22,10 @@ exports.JobFilter = {
         hidden: "hidden",
         employmentType: "employmentType",
         onSite: "onSite",
+        yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
         city: "city",
         state: "state",
-        isDeleted: "isDeleted",
         companyId: "companyId",
     },
 };

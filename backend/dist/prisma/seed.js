@@ -40,7 +40,6 @@ function seedJobs() {
             data: [
                 {
                     title: "Senior Software Engineer",
-                    companyId: (_a = (yield db_1.default.company.findFirst())) === null || _a === void 0 ? void 0 : _a.id,
                     address1: "123 Job St",
                     city: "Tulsa",
                     state: "OK",

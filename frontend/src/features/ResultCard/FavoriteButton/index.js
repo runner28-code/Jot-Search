@@ -66,8 +66,8 @@ function getIdByType(type, data) {
     case 'job':
       return data.id;
     case 'company':
-    case 'candidate':
       return data.id;
+    case 'candidate':
     default:
       return '';
   }

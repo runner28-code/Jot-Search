@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
 import API from '../../services/API';
@@ -73,7 +72,6 @@ export default function Login() {
               className='h-20 vw-640:h-24 bg-royalBlue text-center text-white text-xl tracking-wide px-14 rounded-lg'
               type='submit'
             >
-// Temp comment
               Login
             </button>
             <Link

@@ -9,13 +9,11 @@ const dropdownFilters = [
   'Expertise',
   'On-Site/Remote',
   'Years Experience',
-  'Status',
 ];
 
 const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',
-// Temp comment
   'Years Experience'
 ]
 

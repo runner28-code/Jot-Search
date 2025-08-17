@@ -6,6 +6,7 @@ import chevronDownBlue from '../../assets/images/down-chevron-blue.svg';
 import NavSearch from '../NavSearch';
 import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
+// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import {
@@ -97,7 +98,6 @@ const DropdownMenu = () => {
   }, [closeDropdown]);
 
   const handleClick = () => {
-// Temp comment
     setIsOpen(isOpen => !isOpen);
     if ( firstRender ) {
       setFirstRender(false);

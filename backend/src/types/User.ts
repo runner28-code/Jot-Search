@@ -7,7 +7,6 @@ export type User = {
   email: string;
   password?: string;
   role: string;
-  address1?: string;
   address2?: string;
   city?: string;
   state?: string;
@@ -61,6 +60,7 @@ export const IUSER = {
   role: "",
   address1: "",
   address2: "",
+  city: "",
   state: "",
   zip: "",
   resume: "",

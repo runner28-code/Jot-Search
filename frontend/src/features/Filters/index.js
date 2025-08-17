@@ -65,11 +65,11 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
     const choices = value;
     const chosen = filterObject ? filterObject[filterType] : null;
     return (
+      <Filter
         key={filterType}
         filterType={filterType}
         choices={choices}
         chosen={chosen}
         handleFilterChange={handleFilterChange}
       />
-    )
   })

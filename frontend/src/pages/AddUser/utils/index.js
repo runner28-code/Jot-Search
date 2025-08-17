@@ -12,6 +12,7 @@ export function validateInput(name, value, errors, password) {
     return newErrors;
   } 
   // Password validation
+  else if ( name === 'verifyPassword' ) {
     if ( value !== password ) {
       newErrors[name] = 'Passwords do not match';
     } else {

@@ -39,6 +39,7 @@ export default function CandidateCard({ data, disableLink }) {
               className='rounded-full'
             />
           </div>
+// Temp comment
           <NewLeadLabel status={data.status} />
         </div>
         {/* Main Content */}
