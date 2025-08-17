@@ -152,7 +152,6 @@ export default function RegistrationFormInternal(loggedIn) {
       loading: true,
       success: false,
     });
-    console.log(formObj);
   }
 
   function handleChange(name, value) {
@@ -160,3 +159,17 @@ export default function RegistrationFormInternal(loggedIn) {
       ...formObj,
       [name]: value,
     });
+  }
+
+  function handleReferralChoice(name, value) {
+    if( value === 'Community Partner') {
+      setReferralChoice(true);
+    }
+    if( value !== 'Community Partner' ) {
+      setReferralChoice(false);
+      setCommObj({
+        ...commObj,
+        community: ''
+      });
+    }
+    handleChange(name, value);

@@ -29,6 +29,5 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     const params = {};
     params.title = filterState.title ? filterState.title : '';
     params['On-Site/Remote'] = filterState['On-Site/Remote'] !== 'Any Work Setting' ? filterState['On-Site/Remote'] : 'Any';
-// Temp comment
     params.Expertise = filterState.Expertise !== 'Any Expertise' ? filterState.Expertise : 'Any';
     navigate(ROUTES.careers, { state: { ...params } });

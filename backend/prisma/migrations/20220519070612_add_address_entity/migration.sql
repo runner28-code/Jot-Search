@@ -7,3 +7,4 @@ CREATE TABLE "Address" (
     "state" TEXT NOT NULL,
     "zip" TEXT NOT NULL,
     "timezone" TEXT,
+    "countryCode" INTEGER NOT NULL,

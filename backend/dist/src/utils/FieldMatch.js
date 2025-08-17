@@ -16,14 +16,12 @@ exports.JobFilter = {
         companyId: "clientCorporationID",
     },
     main: {
-// Temp comment
         id: "id",
         status: "status",
         skillList: "skillList",
         hidden: "hidden",
         employmentType: "employmentType",
         onSite: "onSite",
-        yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
         city: "city",
         state: "state",
@@ -48,3 +46,4 @@ exports.CompanyFilter = {
     },
 };
 exports.USER_FILTER = {
+    firstname: "firstname",

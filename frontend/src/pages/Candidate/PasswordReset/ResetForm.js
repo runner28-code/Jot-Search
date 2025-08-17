@@ -33,38 +33,8 @@ export default function ResetForm({ candidateData, setType }) {
       }
     }
   };
-
   function handleChange(name, value) {
     setFormData({
       ...formData,
       [name]: value,
     });
-  }
-
-  return (
-    <div>
-      <div className='w-140'>
-        <FormInput
-          type='text'
-          name='password'
-          value={formData.password}
-          onChange={handleChange}
-          label='New Password'
-        />
-        <FormInput
-          type='text'
-          name='passwordConfirm'
-          value={formData.passwordConfirm}
-          onChange={handleChange}
-          label='New Password Confirm'
-        />
-      </div>
-      { renderMatch(match) }
-      <button
-        className='h-20 w-150 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
-        onClick={handleSubmit}
-      >
-        Reset Password
-      </button>
-    </div>
-  )

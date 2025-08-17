@@ -22,7 +22,6 @@ export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';
 export const savedCareers = '/saved-careers';
 export const savedCompanies = '/saved-companies';
-// Temp comment
 // Company Dashboard
 export const candidates = '/candidates';
 export const savedCandidates = '/saved-candidates';
@@ -66,3 +65,4 @@ export const APIcandidates = APIcandidateBase + '/search';
 export const APIcandidateUpdate = APIcandidateBase + '/update';
 export const APIuserUpdate = '/user/update';
 export const APItoggleSaveCandidate = APIcandidateBase + '/save';
+export const APIsavedCandidates = APIcandidateBase + '/saved';

@@ -31,7 +31,6 @@ export default function Filters(props) {
 Filters.propTypes = {
   handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,
-// Temp comment
   defaultFilterObject: PropTypes.object, // Shape changes significantly
   filterObject: PropTypes.object, // Shape changes significantly
   searchLabel: PropTypes.string,
@@ -66,7 +65,6 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
     const choices = value;
     const chosen = filterObject ? filterObject[filterType] : null;
     return (
-      <Filter
         key={filterType}
         filterType={filterType}
         choices={choices}

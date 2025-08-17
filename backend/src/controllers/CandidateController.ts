@@ -104,6 +104,7 @@ export class CandidateController {
           id,
         },
         data,
+      });
 
       clearPassword(updatedUser);
 
@@ -284,3 +285,6 @@ export class CandidateController {
       if (isTppUserQuery) {
         extendedCandidates = candidates.map(candidate => ({
           ...candidate,
+          firstName: candidate.firstname,
+          lastName: candidate.lastname,
+        }))

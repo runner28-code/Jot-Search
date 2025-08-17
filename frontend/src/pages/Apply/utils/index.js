@@ -19,7 +19,6 @@ export const jobReferralChoices = [
 export const defaultCareerState = {
   title: '',
   company: {
-    name: '',
     logo: '',
   },
   loading: true,
@@ -42,6 +41,7 @@ export const defaultState = {
 }
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
+  function handleChange(e) {
     setUseExistingResume(e.target.checked);
   }
   return (

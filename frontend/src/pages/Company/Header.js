@@ -143,7 +143,6 @@ function renderCompanyLogo(logoUrl, name) {
       <img
         className={logoStyles}
         src={logoUrl}
-        alt={`${name} logo`}
       />
     </div>
   )

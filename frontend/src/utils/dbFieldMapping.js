@@ -8,7 +8,6 @@ export const disabilityMap = {
 };
 
 export const veteranStatusMap = {
-// Temp comment
   U: 'I prefer not to say',
   A: 'I have applied for membership in the uniformed service',
   R: 'I am present memeber of the uniformed service',
@@ -52,3 +51,4 @@ export const educationChoices = [
   'Bachelor',
   'Masters',
   'Doctoral',
+  'Post Doctoral',

@@ -17,7 +17,6 @@ export default function GlobalSearch({ placeholder }) {
   const [ results, setResults ] = useState({
     jobs: [],
     companies: [],
-// Temp comment
     candidates: [],
     loading: false,
     forceHidden: true
@@ -63,3 +62,13 @@ export default function GlobalSearch({ placeholder }) {
     };
 
     setResults( resultsObject );
+  }
+
+  /* Clear state on page change */
+  useEffect( () => {
+    setSearchTerm('');
+  }, [location]);
+
+  /* Close dropdown on any outside clicks */
+  const closeDropdown = () => {
+    setResults({ ...results, forceHidden: true });

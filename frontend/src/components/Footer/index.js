@@ -60,7 +60,6 @@ export default function Footer() {
       <div
         id='footer'
         className='flex flex-col'
-// Temp comment
       >
         { width >= 990 ? <SocialStyles /> : <SocialStylesMobile />}
         {/* Copyright / Privacy Policy / TOS */}
@@ -93,7 +92,6 @@ export default function Footer() {
 
   return (<>
     <NavFooter />
-    <div className='flex py-24 px-[15%] items-center justify-center bg-royalBlue'>
       <img
         src={intulsaFooterWhite}
         className='w-56 h-auto mr-18'

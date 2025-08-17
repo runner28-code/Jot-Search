@@ -71,7 +71,6 @@ export default function TypeaheadDropdown(props) {
         placeholder={placeholder}
         value={inputValue}
         className={baseStyles + inputHeight + 'mb-0'}
-// Temp comment
         onClick={handleListClick}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
@@ -112,4 +111,30 @@ function renderLabel(name, label, required) {
     >
       {label}
     </label>
+  )
+}
+
+
+function renderChosen(dropdownType, currentChosen, handleClick) {
+  if ( dropdownType !== 'tags' ) { 
+    return null; 
+  }
+
+  return (
+    <div>
+      {currentChosen.map(choice => {
+        const isActive = currentChosen.includes(choice);
+        const handleTagClick = () => {
+          handleClick(choice);
+        }
+
+        return (
+          <ChoiceTag 
+            label={choice} 
+            isActive={isActive} 
+            handleClick={handleTagClick}
+            key={choice} />
+        )
+      })}
+    </div>
   )

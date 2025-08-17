@@ -28,11 +28,11 @@ export default function FeaturedJobs() {
 
   const filtersArr = [
     {
-      key: 'featured',
       value: true
     }
   ];
 
+  const { jobs, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(
     <section className='py-48 bg-neutral-100 flex flex-col flex-wrap items-center'>

@@ -227,3 +227,5 @@ export type Candidate = {
     middleName?: string;
     mobile?: string;
     name?: string;
+    namePrefix?: string;
+    nameSuffix?: string;

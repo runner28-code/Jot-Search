@@ -79,6 +79,7 @@ export const candidateFilterObject = {
   'Employment Type': [
     'Any',
     'Full-Time',
+// Temp comment
     'Part-Time',
     'Contract',
     'Contract to Hire',
@@ -137,6 +138,24 @@ export function buildSearchFilters(filterObject) {
         key: filterKey,
         value: filterObject[key],
       });
+    }
+  });
+  return searchFilters
+}
+
+export function buildSearchFiltersObj(filterObject) {
+  const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
+  const searchFilters = {};
+  Object.keys(filterObject).forEach(key => {
+    if ( !anyValues.includes(filterObject[key]) ) {
+      let filterKey = key.toLowerCase();
+      if ( key === 'remote' ) {
+        filterKey = 'onSite';
+      }
+      if ( key === 'Expertise' ) {
+        filterObject[key] = findCategoryIdByValue(filterObject[key]);
+      }
+      searchFilters[filterKey] = filterObject[key];
     }
   });
   return searchFilters

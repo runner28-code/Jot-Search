@@ -19,7 +19,6 @@ CREATE TABLE "UserTalentCollection" (
     "onboarding_reminder_sent_at" TEXT,
     "invited_by" TEXT,
     "verified_by" TEXT,
-    "invitation_reminder_sent_at" TEXT,
     "verified_at" TEXT,
     "visibility" TEXT,
     "hide_from_domains" TEXT[],
@@ -46,3 +45,4 @@ CREATE TABLE "GetroMember" (
     "verified" BOOLEAN,
     "website_url" TEXT,
     "share_permission" BOOLEAN,
+    "current_location" TEXT,

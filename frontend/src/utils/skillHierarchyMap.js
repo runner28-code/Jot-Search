@@ -29,6 +29,7 @@ export const roles = {
     'Client Success and Customer Service',
     'Operations Generalist',
     'Project and Program Management',
+// Temp comment
     'Administration',
     'Executive Assistant',
     'Recruiting',
@@ -96,6 +97,7 @@ export const skills = [
   'Associates Degree',
   'ATS',
   'Auditing',
+  'Automation',
   'AWS',
   'Azure',
   'B2B',
@@ -272,3 +274,6 @@ export const skills = [
   'MS Office',
   'Multimedia',
   'MVC',
+  'MySQL',
+  'Negotiation',
+  'Network',

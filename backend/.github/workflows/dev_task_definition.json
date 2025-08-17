@@ -14,6 +14,7 @@
                     "hostPort": 5000, 
                     "protocol": "tcp"
                 }
+            ], 
             "essential": true,
             "logConfiguration": { 
                 "logDriver": "awslogs",
@@ -66,3 +67,4 @@
                 },
                 {
                     "name": "BULLHORN_CLIENT_ID", 
+                    "value": "{SECRET_BULLHORN_CLIENT_ID}"

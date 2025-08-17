@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
 
@@ -29,3 +30,28 @@ export default function DashboardMinified({ location }) {
       />
     </div>
   )
+}
+DashboardMinified.propTypes = {
+  location: PropTypes.string.isRequired
+}
+
+function LinkSwap ({ location, loggedIn }) {
+
+  if(location === 'career') {
+    return (
+      <Link
+        className={loggedIn ? 'text-white flex items-center bg-sky-500 rounded-md py-2 px-6' : 'text-white flex items-center'}
+        to={ROUTES.careers}>
+        <span className={loggedIn ? '' : 'underline '}>Back</span>
+      </Link>
+    )
+  }
+  if(location === 'companies' ) {
+    return (
+      <Link
+        className='text-white flex items-center'
+        to={ROUTES.companies}>
+        <span className='underline'>Back</span>
+      </Link>
+    )
+  }

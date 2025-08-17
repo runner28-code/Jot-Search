@@ -67,3 +67,4 @@ export const getSavedCandidates = async (companyUserId: string) => {
             users: true,
           }
         },
+      },

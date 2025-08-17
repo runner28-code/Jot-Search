@@ -122,4 +122,5 @@ function renderCardImage(data) {
     return <img
       className=''
       src={data.logo}
+    />
   }

@@ -73,6 +73,7 @@ export default function Login() {
               className='h-20 vw-640:h-24 bg-royalBlue text-center text-white text-xl tracking-wide px-14 rounded-lg'
               type='submit'
             >
+// Temp comment
               Login
             </button>
             <Link
@@ -86,6 +87,7 @@ export default function Login() {
         <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
           <span>Need Help? Just ask </span>
           <a
+            href='mailto:help@intulsa.com'
             className='text-sm vw-640:text-ml text-royalBlue underline'
           >
             help@intulsa.com

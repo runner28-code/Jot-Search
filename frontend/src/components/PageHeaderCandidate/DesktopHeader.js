@@ -10,6 +10,7 @@ export default function DesktopHeader(props) {
     classOverride,
     containerClassOverride,
     colorizeStroke,
+    dataSource,
     backButton
   } = props;
   const navigate = useNavigate();

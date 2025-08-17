@@ -44,7 +44,6 @@ import { normalizeFilters } from "./JobController";
 export class CompanyController {
   @Get("/search")
   async searchJobByID(
-    @QueryParam("id") id: string
   ): Promise<CompanySearchByID> {
     const datasource = getDataSource(id);
     if (datasource === DataSource.BULLHORN) {
@@ -248,3 +247,6 @@ export class CompanyController {
       })
       const extendedCompanies = companies.map((company: any) => {
         const getroCompany = getroCompanies.find(gc => gc.domain === company.companyURL)
+        if (getroCompany) {
+          company.logo = getroCompany.logo_url
+          company.linkedin_url = getroCompany.linkedin_url

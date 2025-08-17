@@ -21,6 +21,7 @@ function isTodayOrYesterday(dateObj) {
     }
   }
 
+// Temp comment
   return returnObj;
 }
 
@@ -43,3 +44,18 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
         case 3:  return d + 'rd';
         default: return d + 'th';
       }
+    }
+
+    return `${month} ${concatenateOrdinal(day)}, ${timeWithoutSeconds}`;
+  }
+}
+
+function formatDateString(date) {
+  const dateObj = new Date(date);
+
+  // Check if date is today or yesterday
+  const { isToday, isYesterday } = isTodayOrYesterday(dateObj);
+  
+  // Format date
+  const formattedDate = formatDateByDay(isToday, isYesterday, dateObj);
+  return formattedDate;

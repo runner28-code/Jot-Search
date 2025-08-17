@@ -10,6 +10,7 @@ import { VerifyJwtToken } from "./utils/jwtUtils";
 import { findUserByEmail } from "./services/User";
 import { genUUID } from "./utils";
 import fs from "fs";
+import AWS from "aws-sdk"
 import { IncomingForm } from "formidable"
 
 dotenv.config();
@@ -94,3 +95,4 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
   const method = req.method;
   const url = req.url;
   const status = -res.statusCode;
+  const start = process.hrtime();

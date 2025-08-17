@@ -52,7 +52,6 @@ export type Job = {
   hidden?: boolean;
 };
 
-export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "id",
   "application_method",
   "application_path",
@@ -70,3 +69,4 @@ export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "organization_id",
   "passes_filter",
   "posted_at",
+  "slug",

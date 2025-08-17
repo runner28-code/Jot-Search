@@ -23,7 +23,6 @@ export default function LandingPage() {
   const isMobile = width < 1024;
   const isDesktop = width >= 1024;
 
-// Temp comment
   return (
     <main className='bg-white'>
       {/* Hero */}
@@ -64,7 +63,6 @@ function renderSearch() {
     </>)
   }
   return (
-    <ExploreSearch
       totalJobs={totalJobsCount}
       totalCompanies={totalCompaniesCount}
       loading={isLoading}
@@ -80,6 +78,18 @@ function renderLocation() {
       <div className='flex items-center'>
         <MdLocationOn className='fill-white h-11 w-10 mr-1' />
         <span className='text-white text-lg tracking-wide'>Tulsa, OK</span>
+      </div>
+    )
+  }
+}
+
+function renderColorShapes()  {
+  const { width } = useWindowDimensions();
+
+  if( width < 0 ) {
+    return (
+      <div className='w-full'>
+        <ColorShapes />
       </div>
     )
   }

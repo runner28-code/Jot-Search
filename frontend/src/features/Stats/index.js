@@ -10,7 +10,6 @@ const statFilterChoices = [
   'Last 14 Days',
   'Last 30 Days',
   'Last 90 Days'
-// Temp comment
 ];
 
 export default function Stats({ userType }) {
@@ -34,3 +33,88 @@ export default function Stats({ userType }) {
       default:
         return 30
     }
+  }
+
+  useEffect(async() => {
+    const duration = getDuration(timeframe)
+    if (userType === 'company') {
+      const result = await getCompanyQuickStats(duration);
+      setStats({
+        'Active Careers Posts': { ...result.activeCareersPosts },
+        'Recommended Candidates': { ...result.recommendedCandidates },
+        'Introductions Requests': { ...result.introductionsRequests },
+        'Company Favorites': { ...result.companyFavorites },
+        'Active Career Post Favorites': { ...result.activeCareerPostFavorites },
+        'Application Invitations Sent': { ...result.applicationInvitationsSent }                
+      })
+    }
+    if (userType === 'coordinator') {
+      const result = await getCoordinatorQuickStats(duration);
+      setStats({
+        'Total Companies': { ...result.totalCompanies },
+        'Total Open Jobs': { ...result.totalOpenJobs },
+        'Total Candidates': { ...result.totalCandidates },
+        'Applications Submitted': { ...result.applicationsSubmitted },
+        'Company Request Introductions': { ...result.companyRequestIntroductions },          
+      })
+    }
+  }, [timeframe])
+
+  return (
+    <div className='mb-20 vw-640:mb-30 w-full bg-aquaBlue rounded-3xl border border-disabledGrey pt-14 px-12 pb-11'>
+      <div className='flex flex-wrap justify-between items-center mb-16'>
+        <h5 className='text-lightGrey text-h5 mr-10'> Quick Stats</h5>
+        <div
+          id='dropdown-container'
+          className='relative'
+        >
+          <TimeframeFilter
+            choices={statFilterChoices}
+            timeframe={timeframe}
+            handleFilterChange={handleFilterChange}
+          />
+        </div>
+      </div>
+      <div className='flex flex-wrap'>
+        {Object.entries(stats).map(([stat, value]) => {
+          return <StatCard
+            stat={stat}
+            value={value}
+            key={stat} />;
+        })}
+      </div>
+    </div>
+  )
+}
+
+Stats.defaultProps = {
+  userType: 'candidate',
+}
+
+Stats.propTypes = {
+  userType: PropTypes.string.isRequired,
+}
+
+function StatCard({ stat, value }) {
+  const deviationPercentage = Math.trunc(value.compare);
+
+  let numberStyles = 'text-h2 font-medium font-spaceGrotesk leading-tight';
+  if (deviationPercentage > 0) {
+    numberStyles += ' text-success';
+  } else if (deviationPercentage === 0) {
+    numberStyles += ' text-midGrey';
+  } else {
+    numberStyles += ' text-error';
+  }
+  return (
+    <div
+      key={stat}
+      className='flex flex-[1_1_31%] flex-col justify-between mr-5 mb-5 bg-white rounded-xl pl-4 vw-400:pl-8 pb-4 pt-8'
+    >
+      <div className='font-spaceGrotesk'>
+        <h2 className={numberStyles}>{value.count}</h2>
+        <p className='text-md text-charcoal'>{stat}</p>
+      </div>
+      {renderDeviation(deviationPercentage)}
+    </div>
+  )

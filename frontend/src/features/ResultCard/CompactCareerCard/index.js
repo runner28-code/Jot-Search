@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
@@ -68,3 +69,49 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
       }
     </div>
   )
+}
+
+CompactCareerCard.propTypes = {
+  data: PropTypes.shape({
+    id: PropTypes.string,
+    city: PropTypes.string,
+    state: PropTypes.string,
+    company: PropTypes.shape({
+      name: PropTypes.string,
+      logo: PropTypes.string
+    }),
+    applications: PropTypes.arrayOf(PropTypes.shape({
+      createdAt: PropTypes.string
+    })),
+    role: PropTypes.string,
+    title: PropTypes.string,
+    employmentType: PropTypes.string,
+    onSite: PropTypes.string,
+    salary: PropTypes.string,
+    salaryUnit: PropTypes.string,
+    createdAt: PropTypes.string,
+    category: PropTypes.shape({
+      id: PropTypes.number,
+      name: PropTypes.string
+    })
+  }).isRequired,
+  index: PropTypes.number,
+  active: PropTypes.bool,
+  agoDate: PropTypes.string,
+  isFavoriteOverride: PropTypes.bool,
+  selectableProps: PropTypes.shape({
+    selectable: PropTypes.bool,
+    selected: PropTypes.arrayOf(PropTypes.string),
+    setSelected: PropTypes.func
+  })
+}
+
+function renderCardImage(data) {
+  if ( !data.company?.logo ) {
+    return <CareerIcon className='h-28 w-full fill-royalBlue' />
+  } else {
+    return <img
+      className=''
+      src={data.company?.logo}
+    />
+  }

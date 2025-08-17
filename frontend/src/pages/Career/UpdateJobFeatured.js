@@ -24,6 +24,7 @@ export const UpdateJobFeatured = ({ job }) => {
       {isSuccess && <p>Success!</p>}
       
       <div className='flex space-x-16'>
+// Temp comment
         <button
           type="button" 
           name="featured"
@@ -46,7 +47,6 @@ export const UpdateJobFeatured = ({ job }) => {
         </button>
       
         <label 
-// Temp comment
           htmlFor='featured' 
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured

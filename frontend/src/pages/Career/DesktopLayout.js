@@ -112,6 +112,7 @@ export default function DesktopLayout(props) {
     </section>
     {renderDescription(role, navigate, careerData.clientCorporation, skillList, careerData)}
     <OtherCareers
+      companyId={careerData.companyId}
       companyName={careerData.clientCorporation}
       currentCareerId={careerData.externalId}
     />
@@ -152,6 +153,7 @@ function renderAboutCompanySection(careerData, companyName) {
     <h4 className={sectionHeaderStyles}>{headerString}</h4>
     <p
       className='font-spaceGrotesk text-textBlack text-md mb-5'
+// Temp comment
       dangerouslySetInnerHTML={{ __html: careerData.company?.description || 'No Company Description Available' }}
     />
   </>)

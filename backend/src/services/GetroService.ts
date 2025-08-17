@@ -174,6 +174,7 @@ export class GetroService {
                     console.log(`${total} / ${(page - 1) * per_page + items.length}`);
                     page++;
                     repeatErr = 0;
+                    if (items.length < per_page) break;
                 }
             } catch (error) {
                 repeatErr++;
@@ -198,3 +199,5 @@ export class GetroService {
                 id: `gt-${data.id}`,
                 talent_groups: data.talent_groups?.map((talent: any) => talent.id).join(' | ') || null,
                 skills: data.skills?.map((skill: any) => skill.name).join(' | ') || null,
+                locations: data.locations?.map((location: any) => location.name).join(' | ') || null,
+                employment_types: data.employment_types?.map((employment_type: string) => employment_type).join(' | ') || null,

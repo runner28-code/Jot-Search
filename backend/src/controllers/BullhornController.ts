@@ -21,3 +21,4 @@ export class BullhornController {
   async getClientContacts() {
     return await (await BullhornService.getClient()).getClientContacts();
   }
+

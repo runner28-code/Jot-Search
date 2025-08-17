@@ -513,3 +513,8 @@ model User {
 
   categoryId Int?
   category   Category? @relation("userCategory", fields: [categoryId], references: [id])
+
+  companyId String?
+  company   Company? @relation("userCompany", fields: [companyId], references: [id])
+
+  experienceYears String?

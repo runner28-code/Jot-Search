@@ -51,6 +51,35 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             data={data}
             isFavoriteOverride={isFavoriteOverride} />
       }
-// Temp comment
     </div>
   )
+}
+
+CompactCompanyCard.propTypes = {
+  data: PropTypes.shape({
+    id: PropTypes.string,
+    company_logo: PropTypes.string,
+    name: PropTypes.string,
+    createdAt: PropTypes.string
+  }).isRequired,
+  index: PropTypes.number,
+  active: PropTypes.bool,
+  agoDate: PropTypes.string,
+  isFavoriteOverride: PropTypes.bool,
+  agoText: PropTypes.string,
+  selectableProps: PropTypes.shape({
+    selectable: PropTypes.bool,
+    selected: PropTypes.arrayOf(PropTypes.string),
+    setSelected: PropTypes.func
+  })
+}
+
+function renderCardImage(data) {
+  if ( !data.company_logo ) {
+    return <CompanyIcon className='h-28 w-full fill-royalBlue' />
+  } else {
+    return <img
+      className=''
+      src={data.company_logo}
+    />
+  }

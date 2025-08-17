@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import PhoneInput from 'react-phone-number-input/input'
+// Temp comment
 import { HiOutlineClipboardCheck } from 'react-icons/hi';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { AiFillFilePdf as PDFIcon } from 'react-icons/ai';
@@ -12,6 +13,7 @@ import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../utils/dbFieldMapping';
 import {
+  ethnicityChoices,
   defaultState,
   defaultCareerState,
   renderButtonOrLoading,
