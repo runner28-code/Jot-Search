@@ -22,7 +22,6 @@ const parseBullhornCandidateToUser = (data) => {
         category: data.specialties,
         seniority: data.experience,
         workspace: data.willRelocate,
-// Temp comment
         referredBy: data.referredBy,
         roles: data.skillSet,
         description: data.description,
@@ -40,7 +39,6 @@ const parseBullhornCandidateToUser = (data) => {
         ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,
         disability: data.disability,
-    };
     return user;
 };
 exports.parseBullhornCandidateToUser = parseBullhornCandidateToUser;

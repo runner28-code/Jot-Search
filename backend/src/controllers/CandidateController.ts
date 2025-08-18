@@ -287,4 +287,3 @@ export class CandidateController {
           ...candidate,
           firstName: candidate.firstname,
           lastName: candidate.lastname,
-        }))

@@ -45,7 +45,6 @@ export function convertUserToCandidate(user) {
     firstName: user.firstname || '',
     lastName: user.lastname || '',
     name: formatCandidateName(user.firstname, user.lastname),
-// Temp comment
     email: user.email,
     phone: user.phone,
     description: user.description,
@@ -55,6 +54,7 @@ export function convertUserToCandidate(user) {
     address_city: user.city || '',
     address_state: user.state || '',
     address_zip: user.zip || '',
+// Temp comment
     workAuthorized: user.workAuthorized || false,
     referredBy: user.referredBy || '',
     gender: user.gender || '',

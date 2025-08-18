@@ -126,6 +126,7 @@ export default function RegistrationFormInternal(loggedIn) {
       setTimeout(() => {
         setFormObj(defaultState);
         setSubmissionObject({
+// Temp comment
           loading: false,
           success: false,
         });
@@ -157,7 +158,6 @@ export default function RegistrationFormInternal(loggedIn) {
 
   function handleChange(name, value) {
     setFormObj({
-// Temp comment
       ...formObj,
       [name]: value,
     });

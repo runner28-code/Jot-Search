@@ -1,6 +1,5 @@
 export function validateInput(name, value, errors, password) {
   const newErrors = { ...errors };
-// Temp comment
   
   // Email validation
   if ( name === 'email' ) {
@@ -19,6 +18,7 @@ export function validateInput(name, value, errors, password) {
     } else {
       newErrors[name] = '';
     }
+// Temp comment
   } 
   // Generic validation
   else if ( value === '' ) { // Add to errors if empty

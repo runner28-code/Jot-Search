@@ -134,6 +134,7 @@ export class BullhornService {
     console.log("============================ \n");
     if (res.status === 200) {
       const { access_token, refresh_token } = res.data;
+      this.access_token = access_token;
       this.refresh_token = refresh_token;
       console.log("Access Token: ", this.access_token);
       console.log("Refresh Token: ", this.refresh_token);
@@ -670,7 +671,6 @@ export class BullhornService {
             "referredBy",
             "salary",
             "salaryLow",
-            "secondarySkills",
             "skillSet",
             "smsOptIn",
             "source",

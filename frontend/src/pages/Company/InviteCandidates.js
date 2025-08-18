@@ -42,6 +42,7 @@ export default function InviteCandidates({ company }) {
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs' 
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
+      ))}
     </div>)
   }
 

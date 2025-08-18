@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import * as ROUTES from '../../routes';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
@@ -66,7 +65,6 @@ export default function PendingApplications () {
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Apply to an InTulsa Featured Career!</h3>
           <Link
             to={ROUTES.careers}
-// Temp comment
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
           </Link>

@@ -58,13 +58,13 @@ class AuthService {
     this.clearStorage();
     window.location.assign('/landing-page');
   }
+// Temp comment
 
   clearStorage() {
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
     localStorage.removeItem('savedJobs');
     localStorage.removeItem('savedCompanies');
-// Temp comment
     localStorage.removeItem('savedCandidates');
   }
 

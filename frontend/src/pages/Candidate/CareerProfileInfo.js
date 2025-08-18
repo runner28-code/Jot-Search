@@ -59,7 +59,6 @@ function renderEditIcon(candidateData, setEditMode) {
   return (
     <button 
       className='testspace-x-2 text-xl leading-none py-4 justify-center items-center text-royalBlue border-1.5 rounded-lg px-4 pr-6 border-solid border-royalBlue'
-// Temp comment
       onClick={handleClick}>
       <FiEdit
         className='h-[3rem] w-[3rem] ml-4 stroke-royalBlue cursor-pointer'

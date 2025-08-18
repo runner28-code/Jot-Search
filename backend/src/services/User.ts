@@ -192,6 +192,7 @@ export const addUserHistoryEntries = async ({
         table: USER_TABLE,
         recordId: existingUser.id,
         column: key,
+        oldValue:
           existingUser[typedKey] != null
             ? existingUser[typedKey]?.toString()
             : null,

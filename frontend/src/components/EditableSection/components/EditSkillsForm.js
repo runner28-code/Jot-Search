@@ -10,8 +10,8 @@ export default function EditSkillsForm({ skills, handleChange }) {
     // Handle change expects event object, make fake one
     const fakeEvent = {
       target: {
-// Temp comment
         name: inputName,
+// Temp comment
         value: newValues.join(', '),
       },
     };

@@ -55,7 +55,6 @@ export default function RegistrationForm(loggedIn) {
   const [commObj, setCommObj] = useState(defaultCommunity);
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
-// Temp comment
     loading: false,
     success: false,
   });

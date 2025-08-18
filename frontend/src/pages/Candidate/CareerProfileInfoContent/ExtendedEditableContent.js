@@ -24,6 +24,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     companyName: candidateData.companyName || '',
     address1: candidateData.address1 || '',
     address2: candidateData.address2 || '',
+    city: candidateData.city || '',
     state: candidateData.state || '',
     zip: candidateData.zip || '',
     phone: candidateData.phone || '',

@@ -65,7 +65,6 @@ export default function NavSearchMobile({ placeholder }) {
     setSearchTerm( searchTerm );
     setForceHidden( false );
   }
-
   /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');
@@ -147,6 +146,7 @@ function renderResults( results ) {
   }
 
   return (<>
+    {candidates && <CandidateResults candidates={ candidates } /> }
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
   </>)

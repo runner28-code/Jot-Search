@@ -14,7 +14,6 @@ module.exports = {
       keyframes: {
         'spin': {
           from: {
-// Temp comment
             transform: 'rotate(0deg)'
           },
           to: {
@@ -167,7 +166,6 @@ module.exports = {
         '250': '62.5rem',
         '280': '70rem',
         '300': '75rem',
-        '315': '78.75rem',
         '320': '80rem',
         '340': '85rem',
         '346': '86.5rem',

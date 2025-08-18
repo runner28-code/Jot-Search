@@ -5,7 +5,6 @@
 //     "containerDefinitions": [
 //         {
 //             "name": "intulsa-backend-container-prod",
-//             "image": "site-backend:prod",
 //             "cpu": 1024,
 //             "memory": 2048,
 //             "portMappings": [
@@ -16,6 +15,7 @@
 //                 }
 //             ],
 //             "essential": true,
+//             "logConfiguration": {
 //                 "logDriver": "awslogs",
 //                 "options": {
 //                     "awslogs-group" : "/ecs/prod-site-backend-task",

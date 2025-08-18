@@ -38,7 +38,6 @@ export default function CandidateCard({ data, disableLink }) {
               src={avatarUrl}
               className='rounded-full'
             />
-          </div>
           <NewLeadLabel status={data.status} />
         </div>
         {/* Main Content */}

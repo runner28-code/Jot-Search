@@ -66,6 +66,7 @@ export const saveMembers = async (members: any[]) => {
 								});
 				
 								const newJob = await db.getroMember.create({
+									data: jobData,
 								});
                 console.log(`Saved Getro Member with ID = ${member.id} successfully`);
             } catch (error) {
@@ -78,7 +79,6 @@ export const saveMembers = async (members: any[]) => {
     } catch (error) {
         console.log(error);
         return { result: false, error };
-    }
 }
 
 export const getCompanies = async () => {

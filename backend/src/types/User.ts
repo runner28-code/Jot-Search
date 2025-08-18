@@ -43,7 +43,6 @@ export type User = {
   willRelocate?: string;
   willReceiveNotification?: boolean;
   ethnicity?: string;
-  workAuthorized?: string;
   disability?: string;
   occupation?: string;
 

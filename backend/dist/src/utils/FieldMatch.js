@@ -22,7 +22,6 @@ exports.JobFilter = {
         hidden: "hidden",
         employmentType: "employmentType",
         onSite: "onSite",
-// Temp comment
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
         city: "city",
@@ -42,7 +41,6 @@ exports.CompanyFilter = {
         city: "locations",
     },
     joined: {
-        name: "name",
         bh_id: "bh_id",
         id: "id",
     },

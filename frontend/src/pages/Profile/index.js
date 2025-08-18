@@ -1,3 +1,4 @@
+// Temp comment
 import Candidate from '../Candidate'
 
 export default function Profile() {
@@ -5,3 +6,4 @@ export default function Profile() {
     <>
       <Candidate />
     </>
+  )

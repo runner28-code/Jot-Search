@@ -67,14 +67,12 @@ CompactCompanyCard.propTypes = {
   agoDate: PropTypes.string,
   isFavoriteOverride: PropTypes.bool,
   agoText: PropTypes.string,
-  selectableProps: PropTypes.shape({
     selectable: PropTypes.bool,
     selected: PropTypes.arrayOf(PropTypes.string),
     setSelected: PropTypes.func
   })
 }
 
-// Temp comment
 function renderCardImage(data) {
   if ( !data.company_logo ) {
     return <CompanyIcon className='h-28 w-full fill-royalBlue' />
