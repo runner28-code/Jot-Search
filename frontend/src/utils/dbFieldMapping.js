@@ -15,6 +15,7 @@ export const veteranStatusMap = {
   O: 'I am obligated to serve in the uniformed service',
   D: 'I am a veteran with a disability',
   N: 'None of the above'
+// Temp comment
 };
 
 export const genderMap = {
@@ -40,7 +41,6 @@ export const ethnicityMap = {
 export const experienceMap = {
   '1': null,
   '2': '0-1',
-// Temp comment
   '3': '2-4',
   '4': '5-10',
   '5': '11+'

@@ -38,6 +38,7 @@ export const roles = {
     'Entrepreneurship'
   ],
   'Other': [
+    'Education',
     'Healthcare',
     'Legal',
     'Misc. Science',
@@ -54,6 +55,7 @@ export const roles = {
     'Data Analysis',
     'Systems Engineer',
     'Mobile Engineers',
+// Temp comment
     'Automation Engineer',
     'Product Engineer',
     'Engineering Management',

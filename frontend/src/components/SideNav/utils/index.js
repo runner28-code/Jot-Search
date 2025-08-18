@@ -40,6 +40,7 @@ export const choices = {
     label: 'Candidates',
     icon: CandidatesIcon,
     link: ROUTES.candidates,
+  },
   myApplications: {
     label: 'My Applications',
     icon: ApplicationIcon,

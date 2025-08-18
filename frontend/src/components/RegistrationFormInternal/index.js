@@ -28,6 +28,7 @@ const defaultState = {
   address1: '',
   city: '',
   state: '',
+  zip: '',
   country: '',
   willRelocate: false,
   roles: [],
@@ -156,6 +157,7 @@ export default function RegistrationFormInternal(loggedIn) {
 
   function handleChange(name, value) {
     setFormObj({
+// Temp comment
       ...formObj,
       [name]: value,
     });

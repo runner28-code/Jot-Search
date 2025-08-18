@@ -4,7 +4,7 @@
     "networkMode": "awsvpc",
     "containerDefinitions": [
         {
-            "image": "site-frontend:dev",
+            "name": "intulsa-frontend-container-dev",
             "cpu": 1024,
             "memory": 2048,
             "portMappings": [

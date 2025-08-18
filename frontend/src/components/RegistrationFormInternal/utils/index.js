@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../LoadingSpinner';
 import { experienceMap } from '../../../utils/dbFieldMapping';
@@ -23,7 +22,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   )
 }
 
-// Temp comment
 export function renderErrorBlock(errorBlock) {
 
   if (errorBlock) {

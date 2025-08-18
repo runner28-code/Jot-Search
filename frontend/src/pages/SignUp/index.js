@@ -31,10 +31,12 @@ export default function SignUp() {
 
   return (
     <main className='-mt-28 bg-signup-page-hero bg-contain bg-no-repeat'>
+      <div className='pt-40 flex flex-col justify-center items-center'>
         <div className='relative h-24 w-26 mb-15'>
           <div className='absolute top-0 right-0 h-9 w-9 bg-magenta' />
           <div className='absolute bottom-0 left-0 h-14 w-14 bg-cyan' />
         </div>
+// Temp comment
         <div className='h-40 px-18 bg-aquaBlue flex justify-center items-center'>
           <h1 className='text-white font-spaceGrotesk text-[5.5rem] leading-tight'>Join the InTulsa Talent Network</h1>
         </div>

@@ -6,6 +6,7 @@ import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
+
 export default function CareerFavorite () {
 
   const { user_id } = AuthService.getProfile();
@@ -43,7 +44,6 @@ export default function CareerFavorite () {
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
           </Link>
-        </div>
       </div>
       <div className='pt-24'>
         <Link

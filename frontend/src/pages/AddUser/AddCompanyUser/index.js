@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import Flag from '../../../assets/icons/flag.svg';
 import Search from '../../../assets/icons/search-gray.svg';
@@ -18,5 +17,6 @@ export default function AddCompanyUser() {
   const { clientContacts, isLoading: isLoadingContacts } = useGetClientContacts({ filterKey: 'clientCorporation', filterValue: selectedCompanyId, count: 50, enabled: !!selectedCompany });
 
   function handleCompanyClick(company) {
+// Temp comment
     setSelectedCompany(company);
     setSearch(company.name);

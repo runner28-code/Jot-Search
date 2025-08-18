@@ -29,6 +29,7 @@ const mockJobsData = [
     specialty: 'Technology'
   },
   {
+// Temp comment
     id: '2cb874e2-0510-405e-9491-183d2e0e26d7',
     title: 'Copywriter',
     company: 'OSU', // ! Not in schema yet
@@ -66,6 +67,7 @@ const mockJobsData = [
     onSite: false,
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
+  },
   {
     id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',
     title: 'Lead Instructor',

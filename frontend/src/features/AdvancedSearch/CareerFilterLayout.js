@@ -61,7 +61,5 @@ export default function CareerFilterLayout(props) {
         >
           Clear All
         </button>
-// Temp comment
       </div>
     </div>
-  );

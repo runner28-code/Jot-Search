@@ -74,6 +74,7 @@ CompactCompanyCard.propTypes = {
   })
 }
 
+// Temp comment
 function renderCardImage(data) {
   if ( !data.company_logo ) {
     return <CompanyIcon className='h-28 w-full fill-royalBlue' />

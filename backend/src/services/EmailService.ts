@@ -81,5 +81,4 @@ export const sendNewUserNotification = async (to: string, name: string) => {
 }
 
 export const sendJobsToCandidates = async (jobs: string[], candidates_emails: string[]) => {
-  try {
     await sendEmail(candidates_emails, 'List of jobs', 'list-of-jobs', {

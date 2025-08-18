@@ -108,7 +108,6 @@ export default function NavSearchMobile({ placeholder }) {
           isOpen={ isOpen }
         />
       </div>
-// Temp comment
       { renderResultsContainer( combinedResults, searchTerm ) }
     </div>
   )
@@ -148,7 +147,6 @@ function renderResults( results ) {
   }
 
   return (<>
-    {candidates && <CandidateResults candidates={ candidates } /> }
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
   </>)

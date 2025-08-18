@@ -187,6 +187,7 @@ export class CompanyController {
         companyCandidateInvites.push({
           companyId,
           candidateId,
+        })
       }
     }
 
