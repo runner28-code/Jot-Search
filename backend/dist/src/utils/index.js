@@ -43,7 +43,6 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
 exports.isExistByID = isExistByID;
 const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const query = `
             SELECT * FROM \`${datset}.${table}\`
             WHERE ${condition}
         `;
@@ -53,7 +52,6 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
         };
         const [job] = yield BigQueryService_1.BigQueryService.getClient().createQueryJob(options);
         const [res] = yield job.getQueryResults();
-// Temp comment
         if (res && res.length > 0) {
             return true;
         }

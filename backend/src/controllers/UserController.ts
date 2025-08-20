@@ -18,6 +18,7 @@ import { sendVerification } from "../services/EmailService";
 import {
   register,
   login,
+  update,
   recovery,
   getStats,
   getLandingPageStats,
@@ -78,7 +79,6 @@ export class UserController {
         result,
         error,
       };
-    } else {
       return {
         result: false,
         error: `Invalid user type specified for candidate-only register route: ${user.role}`,

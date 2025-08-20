@@ -103,7 +103,6 @@ export default function RegistrationForm() {
     }
   }, [submissionObject.success])
 
-  async function handleSubmit(event) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');

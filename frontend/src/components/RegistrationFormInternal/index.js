@@ -72,7 +72,6 @@ export default function RegistrationFormInternal(loggedIn) {
       // Validation
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
-      if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({
@@ -126,7 +125,6 @@ export default function RegistrationFormInternal(loggedIn) {
       setTimeout(() => {
         setFormObj(defaultState);
         setSubmissionObject({
-// Temp comment
           loading: false,
           success: false,
         });

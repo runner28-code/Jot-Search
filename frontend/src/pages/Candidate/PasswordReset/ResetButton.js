@@ -10,6 +10,7 @@ export default function ResetButton({ candidateData, setType }) {
     event.preventDefault();
     const { email } = candidateData;
     const res = await API.post(ROUTES.APIaccountRecovery, {
+// Temp comment
       email: email
     });
 
@@ -20,7 +21,6 @@ export default function ResetButton({ candidateData, setType }) {
     }
   };
   if( width <= 990 ) {
-// Temp comment
     return (
       <button
         className='h-20 bg-royalBlue text-center text-white text-md px-12 rounded-lg'

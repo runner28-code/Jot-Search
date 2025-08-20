@@ -8,7 +8,6 @@ const defaultStylesObject = {
 }
 
 export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject }) {
-  const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
   if ( marginBottom ) {
     styleObject.containerStyles += `mb-${marginBottom} `;
   }
@@ -24,6 +23,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
       htmlFor={ placeholder }
     >
       <div className={ styleObject.searchIconStyles }>
+        <img
           src={ searchWhite }
           alt='search icon'
           className='h-2/3'/>

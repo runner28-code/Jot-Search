@@ -26,7 +26,6 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
 PreferenceItem.propTypes = {
   toggled: PropTypes.bool.isRequired,
   fieldName: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
   onUpdate: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
 }
@@ -53,7 +52,6 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
       }
     }
     return onToggle(mockEvent)
-// Temp comment
   }
   
   return (

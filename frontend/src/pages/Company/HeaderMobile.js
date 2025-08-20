@@ -38,7 +38,6 @@ function HeaderContent({ companyData }) {
                   className={headerIconStyles}
                 />
                 <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
-              </div>
               <div className={ headerGroupStyles }>
                 <CareerIcon
                   className={headerIconStyles}
@@ -66,7 +65,6 @@ HeaderContent.propTypes = {
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,
     businessSectorList: PropTypes.string,
-// Temp comment
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
     industryList: PropTypes.array,

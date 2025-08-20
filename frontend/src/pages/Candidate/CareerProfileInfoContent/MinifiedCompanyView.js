@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
 import { appendPathToBaseUrl } from '../../../services/API';
 import ResumePreview from './ResumePreview';
+
 export default function MinifiedCompanyView({ candidateData }) {
   const resumeUrl = candidateData.resume ? appendPathToBaseUrl(candidateData.resume) : null;
   return (
     <div>
+// Temp comment
       <p className='text-lg text-black70% font-spaceGrotesk mb-2'>Description</p>
       <div
         dangerouslySetInnerHTML={{__html: candidateData.description || 'None listed'}}

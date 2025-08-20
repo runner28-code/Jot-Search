@@ -15,7 +15,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const client_1 = require("@prisma/client");
 const db_1 = __importDefault(require("../src/utils/db"));
 function main() {
-// Temp comment
     return __awaiter(this, void 0, void 0, function* () {
         try {
             console.log("Seeding...🌱");
@@ -55,6 +54,7 @@ function seedJobs() {
                     categoryId: (yield db_1.default.category.findFirst({
                         where: { name: "Software & Engineering" },
                     })).id,
+// Temp comment
                 },
                 {
                     title: "Junior Software Engineer",

@@ -33,7 +33,6 @@ export type User = {
   companyName?: string;
   annualRevenue?: string;
   companyURL?: string;
-  numEmployees?: string;
   revenue?: string;
   dateFounded?: string;
 
@@ -43,6 +42,7 @@ export type User = {
   willRelocate?: string;
   willReceiveNotification?: boolean;
   ethnicity?: string;
+  workAuthorized?: string;
   disability?: string;
   occupation?: string;
 

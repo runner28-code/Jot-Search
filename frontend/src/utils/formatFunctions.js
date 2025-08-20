@@ -54,7 +54,6 @@ export function convertUserToCandidate(user) {
     address_city: user.city || '',
     address_state: user.state || '',
     address_zip: user.zip || '',
-// Temp comment
     workAuthorized: user.workAuthorized || false,
     referredBy: user.referredBy || '',
     gender: user.gender || '',
@@ -138,6 +137,7 @@ export function buildCandidateAddress(candidateData, full = false) {
     if (line && line !== 'N/A') {
       address += `${line}, `;
     }
+// Temp comment
   });
   if ( address === '' ) {
     return 'N/A';

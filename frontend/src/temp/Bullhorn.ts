@@ -58,7 +58,6 @@ export type Job = {
     benefits?: string;
     billRateCategoryID?: string;
     bonusPackage?: string;
-    certificationList?: string;
     clientBillRate?: string;
     clientContact?: string;
     clientCorporationID?: string;

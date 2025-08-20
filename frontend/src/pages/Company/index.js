@@ -64,6 +64,7 @@ export default function Company() {
         className={ width <= 990 ? 'px-[5%]'
           : !loggedIn ? 'px-[15%]' 
             : ''}
+      >
         <div className={ width >= 990 ? 'bg-white p-16 mt-8 border-2 border-midGrey border-solid rounded-3xl relative' : 'bg-white p-4 mt-8 border-2 border-midGrey border-solid rounded-3xl relative'}>
           {/* Header */}
           { width >= 990 ?
@@ -105,7 +106,6 @@ export default function Company() {
           </button>
         </div>
         <RenderInvite
-          loggedIn={loggedIn}
           companyData={companyData}
         />
       </div>

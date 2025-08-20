@@ -25,6 +25,7 @@ CREATE TABLE "ClientContact" (
     "dateLastModified" TIMESTAMP(3),
     "dateLastVisit" TIMESTAMP(3),
     "description" TEXT,
+    "desiredCategories" TEXT,
     "desiredSkills" TEXT,
     "desiredSpecialties" TEXT,
     "division" TEXT,

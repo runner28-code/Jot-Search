@@ -41,7 +41,6 @@ export default function CareerCard({ data, active }) {
           <DesktopCard
             dataObj={dataObj}
             active={active}
-          />
           :
           <MobileCard
             dataObj={dataObj}
@@ -56,6 +55,7 @@ export default function CareerCard({ data, active }) {
 }
 
 CareerCard.propTypes = {
+  data: PropTypes.shape({
     id: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,

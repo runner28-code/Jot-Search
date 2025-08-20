@@ -254,7 +254,6 @@ export class CandidateController {
             firstname: "asc",
           },
           include: {
-            candidate: true,
           },
         });
 
@@ -287,3 +286,4 @@ export class CandidateController {
           ...candidate,
           firstName: candidate.firstname,
           lastName: candidate.lastname,
+        }))

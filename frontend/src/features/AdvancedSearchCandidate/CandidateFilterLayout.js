@@ -68,10 +68,10 @@ export default function CandidateFilterLayout(props) {
       </div>
       <div className='flex justify-between items-center gap-[65px]'>
         <FilterSearch
+// Temp comment
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
-// Temp comment
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />

@@ -8,6 +8,7 @@ import {
 } from '../SideNav/utils';
 import Choice from './Choice';
 import LoggedOutButtons from './LoggedOutButtons';
+// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
 
@@ -18,7 +19,6 @@ const spanStyles = 'text-xl font-bold font-spaceGrotesk ';
 const hrStyles = 'border-royalBlue ';
 const iconStyles = 'w-12 h-12 mr-4 ';
 
-// Temp comment
 const stylesObject = {
   baseLinkStyles,
   topLinkStyles,

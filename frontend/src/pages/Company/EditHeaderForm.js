@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import { MdLocationOn, MdCancel, MdCheckCircle } from 'react-icons/md';
 import PropTypes from 'prop-types';
 import { FaPhoneAlt } from 'react-icons/fa';
@@ -8,7 +7,6 @@ import { appendPathToBaseUrl } from '../../services/API';
 
 export default function EditHeaderForm({ candidateData, handleCandidateUpdate, setEditMode, iconStyles }) {
   const [formData, setFormData] = useState({
-    id: candidateData.id,
     avatar: candidateData.avatar,
     companyName: candidateData.companyName,
     address1: candidateData.address1,

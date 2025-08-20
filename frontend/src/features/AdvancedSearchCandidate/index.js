@@ -23,7 +23,6 @@ import { useLocation } from 'react-router-dom';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 const useActiveTabState = createPersistedState('activeTab');
-// Temp comment
 const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
@@ -55,7 +54,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
   const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
   if (state) {
-    if (state.title) initialFilterState.title = state.title;
     if (state.expertise) initialFilterState.Expertise = state.expertise;
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
   }

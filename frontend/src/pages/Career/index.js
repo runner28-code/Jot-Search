@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getJobById } from '../../services/API';
 import PropTypes from 'prop-types';
-// Temp comment
 import { useLocation } from 'react-router-dom';
 import MobileLayout from './MobileLayout';
 import DesktopLayout from './DesktopLayout';
@@ -89,7 +88,6 @@ function renderNotification(activeData, careerData) {
   if( activeData ) {
     return (<>
       <Notification
-        title='Need to update this posting?'
         content='Please contact your inTulsa coordinator to provide status updates or if you notive anything incorrect.'
         text='Write to talentnetwork@intulsa.com'
         email='talentnetwork@intulsa.com'

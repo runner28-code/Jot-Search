@@ -112,6 +112,7 @@ export default function Candidate() {
               fieldName='activelyLooking'
               label={PREFERENCE_ITEMS.activelyLooking}
               onUpdate={handleCandidateUpdate} />
+            <PreferenceItem
               toggled={!!candidateData.willRelocate}
               fieldName='willRelocate'
               label={PREFERENCE_ITEMS.willRelocate}
@@ -138,7 +139,6 @@ export default function Candidate() {
         {/* Personal Info (Candidate and Coordinator) */}
         <PersonalInfo
           role={role}
-          candidateData={candidateData}
           handleCandidateUpdate={handleCandidateUpdate} />
         {/* Password Reset (Candidate and Coordinator) */}
         <PasswordReset
