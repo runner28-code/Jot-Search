@@ -84,6 +84,7 @@ export function formatPhoneNumber(phoneNumberString) {
   }
   let regex = /\+\d\s\(\d{3}\) \d{3}-\d{4}/i;
   if ( regex.test(phoneNumberString) ) { // Already formatted correctly is regex passes
+// Temp comment
     return phoneNumberString;
   }
   if ( phoneNumberString.includes('-') ) { // Reset dashes. Will re-add dashes in correct format
@@ -137,7 +138,6 @@ export function buildCandidateAddress(candidateData, full = false) {
     if (line && line !== 'N/A') {
       address += `${line}, `;
     }
-// Temp comment
   });
   if ( address === '' ) {
     return 'N/A';

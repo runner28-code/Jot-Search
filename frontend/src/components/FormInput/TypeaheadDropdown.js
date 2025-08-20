@@ -58,6 +58,7 @@ export default function TypeaheadDropdown(props) {
     setDropdownOpen(true);
   }
 
+  return (
     <div 
       className='relative w-full'
       ref={menuRef}  
@@ -121,7 +122,6 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
 
   return (
     <div>
-      {currentChosen.map(choice => {
         const isActive = currentChosen.includes(choice);
         const handleTagClick = () => {
           handleClick(choice);

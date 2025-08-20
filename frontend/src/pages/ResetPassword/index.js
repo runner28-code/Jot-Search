@@ -13,6 +13,7 @@ export default function ResetPassword() {
   const [match, setMatch] = useState('');
   const [success, setSuccess] = useState('');
 
+  const queryParams = new URLSearchParams(window.location.search);
   const token = queryParams.get('token');
 
   const handlePassword = (event) => {
@@ -55,7 +56,6 @@ export default function ResetPassword() {
           <Link
             to={ROUTES.login}
             className='underline block my-4 text-royalBlue'
-          >
             Login to your account
           </Link>
         </div>

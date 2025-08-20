@@ -57,6 +57,7 @@ export default function Candidate() {
       if (updateObject[key] !== candidateData[key]) {
         formattedUpdateObject[key] = updateObject[key];
       }
+// Temp comment
     });
 
     const updatedDisplayObject = candidateData.sourceTable === 'Candidate' ? {
@@ -139,6 +140,7 @@ export default function Candidate() {
         {/* Personal Info (Candidate and Coordinator) */}
         <PersonalInfo
           role={role}
+          candidateData={candidateData}
           handleCandidateUpdate={handleCandidateUpdate} />
         {/* Password Reset (Candidate and Coordinator) */}
         <PasswordReset

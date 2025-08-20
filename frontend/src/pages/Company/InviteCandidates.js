@@ -11,13 +11,11 @@ import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandi
 export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
     filtersArr: [],
-// Temp comment
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
 
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
-
   const candidateOptions = candidates?.map(candidate => {
     return {
       label: candidate.name,

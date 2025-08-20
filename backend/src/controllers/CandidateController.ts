@@ -27,7 +27,6 @@ import { Dictionary } from "typed-two-way-map";
 import e from "express";
 
 @JsonController("/api/candidate")
-export class CandidateController {
   @Authorized()
   @Get("/savedJobs")
   async savedJobs(@QueryParam("candidate") candidate: string) {
@@ -254,6 +253,7 @@ export class CandidateController {
             firstname: "asc",
           },
           include: {
+            candidate: true,
           },
         });
 

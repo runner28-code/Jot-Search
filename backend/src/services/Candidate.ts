@@ -28,7 +28,6 @@ export const saveCandidate = async (
             connect: {
               id: candidateId,
             },
-          },
         },
       });
     } else {

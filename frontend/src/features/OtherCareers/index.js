@@ -3,6 +3,7 @@ import { useState } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CareerCard from '../ResultCard/CareerCard';
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
+// Temp comment
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 
 const ITEMS_PER_PAGE = 5;
@@ -39,6 +40,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
         {careers.map((career, index) => {
           if (career.externalId === currentCareerId) { // Don't show the current career
             return null;
+          }
           return <CareerCard
             key={index}
             data={career}

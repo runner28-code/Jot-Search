@@ -79,7 +79,6 @@ CompactCareerCard.propTypes = {
       name: PropTypes.string,
       logo: PropTypes.string
     }),
-    applications: PropTypes.arrayOf(PropTypes.shape({
       createdAt: PropTypes.string
     })),
     role: PropTypes.string,

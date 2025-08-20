@@ -1,4 +1,5 @@
 import { useState } from 'react'
+// Temp comment
 
 import AuthService from '../../services/auth';
 import PageHeader from '../../components/PageHeader';
@@ -11,7 +12,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 function renderTabs(role, activeTab, setActiveTab) {
   if (role !== 'candidate') {
-// Temp comment
     return null;
   }
   return (

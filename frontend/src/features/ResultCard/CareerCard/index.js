@@ -41,6 +41,7 @@ export default function CareerCard({ data, active }) {
           <DesktopCard
             dataObj={dataObj}
             active={active}
+          />
           :
           <MobileCard
             dataObj={dataObj}

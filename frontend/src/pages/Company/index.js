@@ -106,6 +106,7 @@ export default function Company() {
           </button>
         </div>
         <RenderInvite
+          loggedIn={loggedIn}
           companyData={companyData}
         />
       </div>

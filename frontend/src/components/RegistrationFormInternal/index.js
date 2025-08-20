@@ -11,6 +11,7 @@ import {
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {
+// Temp comment
   inputValidation,
   formatFormObj,
   renderButtonOrLoading,
@@ -72,6 +73,7 @@ export default function RegistrationFormInternal(loggedIn) {
       // Validation
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
+      if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({

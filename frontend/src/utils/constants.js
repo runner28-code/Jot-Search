@@ -22,7 +22,6 @@ export const stateCodeMap = {
   Arkansas: 'AR',
   California: 'CA',
   Colorado: 'CO',
-// Temp comment
   Connecticut: 'CT',
   Delaware: 'DE',
   Florida: 'FL',
@@ -69,5 +68,6 @@ export const stateCodeMap = {
   Wyoming: 'WY',
 };
 
+// Temp comment
 export function getStateCode(stateName) {
   return stateCodeMap[stateName];

@@ -32,7 +32,6 @@ export default function DesktopLayout(props) {
   return (<>
     <section className='relative bg-white px-xxl-3 py-xxl-2 border-2 border-disabled border-solid rounded-3xl mb-xxl-4'>
       {/* Header */}
-      <div className='flex items-start'>
         <div>
           {renderLogo(careerData.company_logo)}
           <sub className='text-xxs text-zinc-700 font-roboto'>{careerData.clientCorporation}</sub>
@@ -166,6 +165,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
   return (<>
     <section className='bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4'>
       {/* Job Description */}
+      <h4 className={sectionHeaderStyles}>Career Description</h4>
       <p
         className='font-spaceGrotesk text-textBlack text-md mb-10'
         dangerouslySetInnerHTML={{ __html: careerData.description || 'No description listed' }}

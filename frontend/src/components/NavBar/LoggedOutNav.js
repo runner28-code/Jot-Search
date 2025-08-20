@@ -43,5 +43,4 @@ function MobileNavBarLayout() {
         { renderGlobalSearch() }
       </div>
     </nav>
-// Temp comment
   )

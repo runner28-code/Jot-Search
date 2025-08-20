@@ -37,7 +37,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
 
     const concatenateOrdinal = function(d) {
       if (d > 3 && d < 21) return d + 'th';
-// Temp comment
       switch (d % 10) {
         case 1:  return d + 'st';
         case 2:  return d + 'nd';
@@ -52,7 +51,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
 
 function formatDateString(date) {
   const dateObj = new Date(date);
-
   // Check if date is today or yesterday
   const { isToday, isYesterday } = isTodayOrYesterday(dateObj);
   

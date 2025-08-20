@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
@@ -22,7 +23,6 @@ export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
   const { width } = useWindowDimensions();
   const {
-// Temp comment
     defaultFilterObject,
     filterObject,
     handleFilterChange,

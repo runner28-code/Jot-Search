@@ -6,6 +6,7 @@ export default function FileInput({type, name, label, placeholder, required, val
 
   function handleKeyDown(e) {
     if ( e.key === ' ' || e.key === 'Enter' ) {
+// Temp comment
       e.preventDefault();
       inputRef.current.click();
     }
@@ -20,6 +21,7 @@ export default function FileInput({type, name, label, placeholder, required, val
         id={name}
         name={name}
         onChange={(e) => onChange(name, e.target.files[0])}
+        ref={inputRef}
         disabled={disabled}
       />
     </div>

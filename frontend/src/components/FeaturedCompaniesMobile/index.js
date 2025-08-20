@@ -52,4 +52,3 @@ function renderColorShapes() {
       <div className='bg-pinkSquare w-12 h-12' />
       <div className='bg-orangeSquare bg-pink-500 top-[-20px] right-[5px] absolute w-6 h-6' />
     </div>
-  )

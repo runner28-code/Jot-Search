@@ -9,3 +9,4 @@ export default function listenForOutsideClicks(listening, setListening, menuRef,
       if (evt.target.classList[0] === 'multi-select-choice') return; // don't close dropdown if user clicked on a choice in a multi-select
       setIsOpen(false);
     });
+  });

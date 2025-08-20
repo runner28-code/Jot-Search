@@ -79,6 +79,7 @@ export class UserController {
         result,
         error,
       };
+    } else {
       return {
         result: false,
         error: `Invalid user type specified for candidate-only register route: ${user.role}`,
@@ -112,7 +113,6 @@ export class UserController {
     }
 
     if (user.role === COORDINATOR) {
-      const { result, error } = await register(data);
       return {
         result,
         error,

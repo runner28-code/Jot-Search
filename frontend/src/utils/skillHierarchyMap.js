@@ -258,6 +258,7 @@ export const skills = [
   'Machine Learning',
   'Management Consulting',
   'Manufacturing',
+// Temp comment
   'Market Analysis',
   'Market Strategy',
   'Marketing Campaigns',
