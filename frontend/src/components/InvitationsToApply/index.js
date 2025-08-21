@@ -7,7 +7,6 @@ import { getInvitationsToApply } from '../../services/API';
 
 export default function InvitationsToApply () {
   const profile = AuthService.getProfile();
-  const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
     filteredJobs: [],
     loading: true
@@ -41,6 +40,7 @@ export default function InvitationsToApply () {
               <LoadingSpinner />
               : appliedJobsObject.jobs.slice(0, 2).map((career, index) => {
                 return(<>
+                  <CareerCard
                     key={career.id}
                     index={index}
                     data={career}

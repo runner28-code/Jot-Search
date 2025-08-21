@@ -341,3 +341,6 @@ const job_filter_exclude_keys = [
   "respiratory",
   "retail",
   "revenue",
+  "right-of-way",
+  "rn",
+  "room service",

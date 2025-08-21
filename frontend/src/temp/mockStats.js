@@ -225,3 +225,5 @@ export const mockCompanyStats = {
 }
 
 export const mockCoordinatorStats = {
+  'New Companies': {
+    'Today': {

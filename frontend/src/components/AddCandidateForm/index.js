@@ -52,7 +52,6 @@ export default function RegistrationForm() {
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
-        setErrors(newErrors);
         setSubmissionObject({
           loading: false,
           success: false,
@@ -102,7 +101,6 @@ export default function RegistrationForm() {
       }, 2000);
     }
   }, [submissionObject.success])
-// Temp comment
 
   async function handleSubmit(event) {
     event.preventDefault();

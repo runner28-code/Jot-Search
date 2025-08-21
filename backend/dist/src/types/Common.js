@@ -1,4 +1,3 @@
-"use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -9,7 +8,6 @@ var Tables;
 (function (Tables) {
     Tables["COMPANIES"] = "Companies";
     Tables["JOBS"] = "Jobs";
-// Temp comment
     Tables["USER"] = "User";
     Tables["CONTACTS"] = "Contacts";
     Tables["LEADS"] = "Leads";

@@ -21,5 +21,5 @@ export default function ActiveCareers() {
   const [searchTerm, setSearchTerm] = useState('');
 
   /* EVENT HANDLERS */
-    setSearchTerm(searchTerm);
+  function handleSearchChange( searchTerm ) {
     setPage(1);

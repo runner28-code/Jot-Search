@@ -154,3 +154,4 @@ async function seedCompanies() {
         companyURL: "testingco@gmail.com",
         companyDescription: "Best at testing",
         numEmployees: 50,
+      },

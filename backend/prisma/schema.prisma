@@ -518,3 +518,7 @@ model User {
   company   Company? @relation("userCompany", fields: [companyId], references: [id])
 
   experienceYears String?
+  workspace       String?
+  aboutUs         String?
+  referredBy      String?
+  roles           String?

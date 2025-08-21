@@ -10,7 +10,6 @@ export type Job = {
   state?: string;
   zip?: string;
   country_id?: string;
-  employmentType?: string;
   title?: string;
   willRelocate?: string;
   yearsRequired?: string;
@@ -40,5 +39,7 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "description",
   "address1",
   "address2",
+  "city",
   "state",
   "zip",
+  "country_id",

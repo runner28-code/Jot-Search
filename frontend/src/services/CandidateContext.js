@@ -97,6 +97,7 @@ const mockCandidateData = [
   },
 ];
 
+// Temp comment
 export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
 
@@ -125,6 +126,7 @@ const CandidateProvider = ({children}) => {
   }
 
   return (
+    <CandidateContext.Provider value={{ candidates, currentUser, setCurrentUser, handleCandidatesChange, handleCandidateUpdate }}>
       {children}
     </CandidateContext.Provider>
   )

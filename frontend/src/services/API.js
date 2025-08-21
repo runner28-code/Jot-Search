@@ -29,7 +29,6 @@ export function appendPathToBaseUrl(path) {
   if (path.slice(0, 4) === 'http') {
     return path; // It's already a full URL
   }
-  return API.defaults.baseURL + path;
 }
 
 /* FETCH FUNCTIONS */
@@ -49,6 +48,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
 
   const { data } = await API.post(ROUTES.APIcandidates, {
     'filters': formattedFilters,
+    'count': count,
     'page': page || null,
     'fields': fields || null
   });
@@ -283,3 +283,14 @@ export async function saveJob(candidateId, jobId) {
     AuthService.toggleSavedJob(jobId, 'unsave');
   }
   return normalizeData(data);
+}
+
+export async function getSavedJobs(id, count = undefined, page = undefined) {
+  const { data } = await API.get(ROUTES.APIsavedJobs, {
+    params: {
+      candidate: id,
+      count,
+      page
+    }
+  });
+  return normalizeData(data.jobs);

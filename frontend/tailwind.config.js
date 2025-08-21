@@ -139,6 +139,7 @@ module.exports = {
         '66': '16.5rem',
         '70': '17.5rem',
         '76': '19rem',
+// Temp comment
         '88': '22rem',
         '90': '22.5rem',
         '92': '23rem',
@@ -178,8 +179,8 @@ module.exports = {
         '660': '165rem'
       },
       borderWidth: {
-// Temp comment
         '1.5': '1.5px',
         '3': '3px',
       },
       minWidth: {
+        '88': '22rem',

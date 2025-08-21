@@ -54,7 +54,6 @@ export const roles = {
     'QA Engineer',
     'Data Analysis',
     'Systems Engineer',
-    'Mobile Engineers',
     'Automation Engineer',
     'Product Engineer',
     'Engineering Management',
@@ -258,7 +257,6 @@ export const skills = [
   'Machine Learning',
   'Management Consulting',
   'Manufacturing',
-// Temp comment
   'Market Analysis',
   'Market Strategy',
   'Marketing Campaigns',
@@ -277,3 +275,5 @@ export const skills = [
   'MySQL',
   'Negotiation',
   'Network',
+  'Networking',
+  'NLP',

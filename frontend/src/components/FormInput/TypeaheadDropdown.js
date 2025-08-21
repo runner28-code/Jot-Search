@@ -122,6 +122,7 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
 
   return (
     <div>
+      {currentChosen.map(choice => {
         const isActive = currentChosen.includes(choice);
         const handleTagClick = () => {
           handleClick(choice);

@@ -96,3 +96,4 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
   const url = req.url;
   const status = -res.statusCode;
   const start = process.hrtime();
+  const durationInMs = getActualRequestDurationInMs(start);

@@ -83,3 +83,4 @@ export const justifyData = (data: any, keys: string[], excludeKeys: string[] = [
     return Object.keys(data).filter(key => keys.indexOf(key) > -1 && excludeKeys.indexOf(key) === -1 ).reduce((v, key) => {
         return {
             ...v,
+            [key]: data[key]

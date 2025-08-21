@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-// Temp comment
 import checkmarkIcon from '../../assets/images/checkmark.png';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
@@ -65,7 +64,6 @@ export default function Dropdown(props) {
     placeholder, 
     type
   } = props;
-    
   const [isOpen, setIsOpen] = useState(false);
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);

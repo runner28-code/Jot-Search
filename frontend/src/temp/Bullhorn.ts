@@ -229,3 +229,5 @@ export type Candidate = {
     name?: string;
     namePrefix?: string;
     nameSuffix?: string;
+    nickName?: string;
+    numCategories?: string;

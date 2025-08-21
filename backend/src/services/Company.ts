@@ -49,3 +49,4 @@ export const saveCompany = async (company: string, candidate: string) => {
       result: true,
       message: existing ? "unsaved company" : "saved company",
     };
+  } catch (e) {

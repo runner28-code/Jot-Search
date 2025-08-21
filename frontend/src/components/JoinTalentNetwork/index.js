@@ -50,7 +50,6 @@ export default function JoinTalentNetwork() {
             className='flex items-center justify-center h-28 w-112 bg-buttonLightBlue mt-22 px-18 rounded-lg'
           >
             <span className='text-softWhite text-ml'>Create an account</span>
-          </Link>
         </div>
         <div className='w-210 mt-150 ml-18'>
           <h6 className='text-h6 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>

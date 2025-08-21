@@ -7,7 +7,6 @@ import {
   Put,
   Delete,
   QueryParam,
-  UploadedFile,
   Authorized,
   HeaderParam,
   CurrentUser,
@@ -113,6 +112,7 @@ export class UserController {
     }
 
     if (user.role === COORDINATOR) {
+      const { result, error } = await register(data);
       return {
         result,
         error,
@@ -159,3 +159,4 @@ export class UserController {
 
     const user = await findUserByEmail(data.email);
     if (!user) return { result: false, error: "User does not exist" };
+

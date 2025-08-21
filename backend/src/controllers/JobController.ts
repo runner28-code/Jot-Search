@@ -300,3 +300,5 @@ export class JobController {
         operator,
         _specialHandlers
       );
+
+      const alias = "jobs";

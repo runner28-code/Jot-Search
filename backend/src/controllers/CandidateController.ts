@@ -27,6 +27,7 @@ import { Dictionary } from "typed-two-way-map";
 import e from "express";
 
 @JsonController("/api/candidate")
+export class CandidateController {
   @Authorized()
   @Get("/savedJobs")
   async savedJobs(@QueryParam("candidate") candidate: string) {
@@ -287,3 +288,6 @@ import e from "express";
           firstName: candidate.firstname,
           lastName: candidate.lastname,
         }))
+      } else {
+        const users = await db.user.findMany({
+          where: {

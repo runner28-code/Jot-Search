@@ -49,7 +49,6 @@ export type User = {
 
   employmentPreference?: string;
 };
-
 export const IUSER = {
   id: "",
   externalId: "",
@@ -70,3 +69,4 @@ export const IUSER = {
   skills: "",
   category: "",
   seniority: "",
+  workspace: "",

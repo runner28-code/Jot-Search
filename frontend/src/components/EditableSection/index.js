@@ -1,3 +1,4 @@
+// Temp comment
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
@@ -45,6 +46,7 @@ EditableSection.propTypes = {
 
 /* Render functions */
 
+function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
   if (editMode) {
     return <EditSectionForm 
       contentObject={contentObject} 

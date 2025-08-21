@@ -39,12 +39,12 @@ export default function CandidateFilterLayout(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
+// Temp comment
     clearFilters,
   } = props;
   let userRole = AuthService.getUserRole();
 
   const dropdownFilterObject = {};
-// Temp comment
   const checkboxFilterObject = {};
   if (userRole === 'coordinator') {
     dropdownFiltersCoord.forEach(filter => {

@@ -102,6 +102,7 @@ CandidateCard.propTypes = {
     avatar: PropTypes.string,
     city: PropTypes.string,
     companyName: PropTypes.string,
+    experienceYears: PropTypes.string,
     experience: PropTypes.number,
     expertise: PropTypes.string,
     firstName: PropTypes.string,
@@ -170,6 +171,7 @@ function NewLeadLabel({ status }) {
         <span className='bg-error h-[6px] w-[6px] rounded-full'></span>
         <p className='text-grey700 text-sm font-semibold'>New Lead</p>
       </div>
+// Temp comment
     )
   }
 

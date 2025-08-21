@@ -42,6 +42,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         if ( key === 'email' ) {
           return <Property
             key={key}
+            name={key}
             value={value}
           />
         }

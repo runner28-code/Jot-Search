@@ -51,6 +51,7 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
 
 function formatDateString(date) {
   const dateObj = new Date(date);
+
   // Check if date is today or yesterday
   const { isToday, isYesterday } = isTodayOrYesterday(dateObj);
   

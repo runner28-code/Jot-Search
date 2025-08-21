@@ -36,6 +36,7 @@ const validateUser = ({
   resume,
   linkedin,
   skills,
+  category,
 }: User) => {
   try {
     if (isNullOrEmpty(firstname) || isNullOrEmpty(lastname))
@@ -435,3 +436,7 @@ export const getCoordinatorDashboardStats = async (days: number) => {
   const totalCandidatesInPreviousPeriod = await db.candidate.count({
     where: {
       ...previousPeriodCommonQuery
+    }
+  });
+  const candidateCompare = (totalCandidates - totalCandidatesInPreviousPeriod) * 100 / totalCandidates;
+

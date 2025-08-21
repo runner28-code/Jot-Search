@@ -236,7 +236,6 @@ const job_filter_exclude_keys = [
     "lifeguard",
     "lift operator",
     "lighting",
-// Temp comment
     "lpn",
     "lunch",
     "machine operator",
@@ -340,3 +339,6 @@ const job_filter_exclude_keys = [
     "research",
     "residence",
     "resident",
+    "resident assistant",
+    "respiratory",
+    "retail",

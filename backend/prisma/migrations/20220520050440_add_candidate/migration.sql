@@ -30,6 +30,7 @@ CREATE TABLE "Candidate" (
     "ethnicity" TEXT,
     "experience" TEXT,
     "externalID" TEXT,
+    "fax" TEXT,
     "fax2" TEXT,
     "fax3" TEXT,
     "firstName" TEXT,
@@ -68,3 +69,4 @@ CREATE TABLE "Candidate" (
     "primarySkills" TEXT,
     "recentClientList" TEXT,
     "referredBy" TEXT,
+    "salary" TEXT,
