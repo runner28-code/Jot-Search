@@ -13,7 +13,6 @@ export const openJobStatuses = [
   'active',
   'Passive',
   'passive'
-];
 
 export const stateCodeMap = {
   Alabama: 'AL',
@@ -39,7 +38,6 @@ export const stateCodeMap = {
   Massachusetts: 'MA',
   Michigan: 'MI',
   Minnesota: 'MN',
-// Temp comment
   Mississippi: 'MS',
   Missouri: 'MO',
   Montana: 'MT',

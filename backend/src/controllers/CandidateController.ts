@@ -291,3 +291,5 @@ export class CandidateController {
       } else {
         const users = await db.user.findMany({
           where: {
+            email: {
+              in: emails.filter((email) => email),

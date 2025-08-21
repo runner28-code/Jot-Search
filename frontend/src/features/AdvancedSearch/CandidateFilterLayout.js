@@ -28,6 +28,7 @@ const checkboxFiltersCoord = [
 const checkboxFilters = [
   'Authorized to work in the US',
   'Open to Relocation',
+// Temp comment
   'Actively Looking',
 ];
 
@@ -39,7 +40,6 @@ export default function CandidateFilterLayout(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
-// Temp comment
     clearFilters,
   } = props;
   let userRole = AuthService.getUserRole();

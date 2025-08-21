@@ -64,6 +64,7 @@ export default function Dropdown(props) {
     placeholder, 
     type
   } = props;
+    
   const [isOpen, setIsOpen] = useState(false);
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
@@ -98,6 +99,7 @@ export default function Dropdown(props) {
   const suffix = (name) => {
     if (name === YEARS_OF_EXPERIENCE) { 
       return ' years of experience'
+// Temp comment
     }
 
     return ''

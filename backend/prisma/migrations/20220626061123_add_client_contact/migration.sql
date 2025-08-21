@@ -42,3 +42,4 @@ CREATE TABLE "ClientContact" (
     "isDeleted" BOOLEAN,
     "lastName" TEXT,
     "leads" TEXT,
+    "middleName" TEXT,

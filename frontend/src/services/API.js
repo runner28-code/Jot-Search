@@ -29,6 +29,7 @@ export function appendPathToBaseUrl(path) {
   if (path.slice(0, 4) === 'http') {
     return path; // It's already a full URL
   }
+  return API.defaults.baseURL + path;
 }
 
 /* FETCH FUNCTIONS */
@@ -87,6 +88,7 @@ export async function getSavedCandidates() {
 
 export async function saveCandidate(userId, candidateId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCandidate, {
+// Temp comment
     'company': userId,
     'candidate': candidateId,
   });

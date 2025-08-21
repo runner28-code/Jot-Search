@@ -46,3 +46,4 @@ CREATE TABLE "Lead" (
     "occupation" TEXT,
     "owner" TEXT,
     "ownerCorporation" TEXT,
+    "pager" TEXT,

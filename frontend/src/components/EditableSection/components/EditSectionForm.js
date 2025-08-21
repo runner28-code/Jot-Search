@@ -65,7 +65,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               value={value}
             />
           </div>
-        )
       })}
     </div>
   )

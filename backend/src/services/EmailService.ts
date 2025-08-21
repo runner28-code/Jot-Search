@@ -71,6 +71,7 @@ export const sendNewUserNotification = async (to: string, name: string) => {
       name: name,
       url: `${base_url}/login`
     });
+    return true;
   } catch (error: any) {
     console.log('Error during sending new user notification');
     console.log(error);
@@ -83,3 +84,4 @@ export const sendJobsToCandidates = async (jobs: string[], candidates_emails: st
   try {
     await sendEmail(candidates_emails, 'List of jobs', 'list-of-jobs', {
       jobs: jobs,
+    });

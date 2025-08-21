@@ -687,3 +687,8 @@ export class BullhornService {
             "tobaccoUser",
             "totalDependentClaimAmount",
             "travelLimit",
+            "travelMethod",
+            "twoJobs",
+            "type",
+            "userDateAdded",
+            "username",

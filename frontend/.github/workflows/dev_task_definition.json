@@ -7,7 +7,6 @@
             "name": "intulsa-frontend-container-dev",
             "image": "site-frontend:dev",
             "cpu": 1024,
-            "memory": 2048,
             "portMappings": [
                 {
                     "containerPort": 3000,
@@ -22,3 +21,4 @@
                    "awslogs-group" : "/ecs/dev-site-frontend-task",
                    "awslogs-region": "us-east-1",
                    "awslogs-stream-prefix": "ecs"
+                }

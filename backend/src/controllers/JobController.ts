@@ -302,3 +302,5 @@ export class JobController {
       );
 
       const alias = "jobs";
+      const companyAlias = "company";
+

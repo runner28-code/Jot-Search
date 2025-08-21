@@ -84,3 +84,4 @@ export const justifyData = (data: any, keys: string[], excludeKeys: string[] = [
         return {
             ...v,
             [key]: data[key]
+        };

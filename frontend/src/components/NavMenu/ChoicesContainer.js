@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
+  coordinatorChoices,
   guestChoices
 } from '../SideNav/utils';
 import Choice from './Choice';
@@ -24,7 +25,6 @@ const stylesObject = {
   iconStyles,
   spanStyles,
   hrStyles
-}
 
 export default function ChoicesContainer(props) {
   const {

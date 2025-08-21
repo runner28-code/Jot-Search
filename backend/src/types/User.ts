@@ -49,6 +49,7 @@ export type User = {
 
   employmentPreference?: string;
 };
+
 export const IUSER = {
   id: "",
   externalId: "",

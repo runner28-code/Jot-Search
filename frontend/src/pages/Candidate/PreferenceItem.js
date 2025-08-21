@@ -12,7 +12,6 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           toggled={toggled}
           onToggle={onUpdate}
           disabled={disabled}
-        />
         <label 
           htmlFor='featured' 
           className={ width >= 990 ? 'text-lg font-roboto text-black70%' : 'text-sm font-roboto text-black70%'}>
@@ -51,6 +50,7 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
         name: fieldName,
         value: !toggled,
       }
+    }
     return onToggle(mockEvent)
   }
   

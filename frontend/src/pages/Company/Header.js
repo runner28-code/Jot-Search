@@ -204,7 +204,6 @@ function renderLinkedIn( url, headerRowTextStyles ) {
   if( !url ) {
     return (
       <a
-// Temp comment
         className={textStyles}
         href='https://www.linkedin.com/'
       >
@@ -220,3 +219,28 @@ function renderLinkedIn( url, headerRowTextStyles ) {
     LinkedIn
     </a>
   )
+}
+
+function renderCompanyWebsite( url, headerRowTextStyles ) {
+  const textStyles = headerRowTextStyles += 'underline text-sky-700';
+  if( !url ) {
+    return (<>
+      <a
+        className={textStyles}
+        href='https://www.intulsa.com/'
+      >
+      Company Website
+      </a>
+    </>)
+  }
+
+  let http = 'https://';
+  return (<>
+    <a
+      className={textStyles}
+      href={isValidHttpUrl(url) ? url : http += url }
+    >
+// Temp comment
+    Company Website
+    </a>
+  </>)

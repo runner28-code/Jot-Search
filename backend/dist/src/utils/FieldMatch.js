@@ -20,7 +20,6 @@ exports.JobFilter = {
         status: "status",
         skillList: "skillList",
         hidden: "hidden",
-        employmentType: "employmentType",
         onSite: "onSite",
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
@@ -46,6 +45,5 @@ exports.CompanyFilter = {
         id: "id",
     },
 };
-// Temp comment
 exports.USER_FILTER = {
     firstname: "firstname",

@@ -167,6 +167,7 @@ export class CompanyController {
 
   @Authorized()
   @Post("/sendCandidates")
+  async sendCandidates(
     @CurrentUser() authUser: User,
     @Body() body: { candidateIds: string[], companyIds: string[] }
   ): Promise<any> {
@@ -252,3 +253,5 @@ export class CompanyController {
           company.linkedin_url = getroCompany.linkedin_url
         }
         return company
+      })
+

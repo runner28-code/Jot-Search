@@ -89,6 +89,7 @@ export class GetroService {
                             if (detail) {
                                 result.push(detail);
                             }
+                            if (result.length > 29) {
                                 await saveCompanies(result);
                                 result = [];
                             }
@@ -202,3 +203,4 @@ export class GetroService {
                 employment_types: data.employment_types?.map((employment_type: string) => employment_type).join(' | ') || null,
                 current_location: data.current_location?.name || null,
                 network_id: this.networkId,
+                joined_at: new Date(data.joined_at),

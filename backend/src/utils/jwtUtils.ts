@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken';
 import { User as DbUser } from "prisma/prisma-client";
+import config from '../config';
 
 export const CreateJwtToken = (data: any) => {
   const token = jwt.sign(
@@ -11,3 +12,4 @@ export const CreateJwtToken = (data: any) => {
 }
 
 export const VerifyJwtToken = (token: string) => {
+  try {

@@ -75,6 +75,7 @@ function CareerHeader ({ location }) {
         >Back</Link>
         <div className='basis-2/6'>
           <TypeTabs location={location}/>
+// Temp comment
         </div>
         <div className='basis-2/6 flex items-center'>
           <ToggleFilter />

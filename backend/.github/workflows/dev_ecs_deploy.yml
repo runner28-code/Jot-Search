@@ -58,3 +58,4 @@ jobs:
         files: '.env'
         tokenPrefix: '{'
         tokenSuffix: '}'
+      env:

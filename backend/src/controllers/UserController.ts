@@ -7,6 +7,7 @@ import {
   Put,
   Delete,
   QueryParam,
+  UploadedFile,
   Authorized,
   HeaderParam,
   CurrentUser,
@@ -159,4 +160,6 @@ export class UserController {
 
     const user = await findUserByEmail(data.email);
     if (!user) return { result: false, error: "User does not exist" };
+
+    user.password = new_password;
 

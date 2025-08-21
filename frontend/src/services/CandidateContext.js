@@ -97,7 +97,6 @@ const mockCandidateData = [
   },
 ];
 
-// Temp comment
 export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
 

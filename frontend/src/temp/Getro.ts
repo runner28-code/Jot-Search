@@ -56,3 +56,4 @@ export type Job = {
     url?: string;
 };
 
+export type User = {

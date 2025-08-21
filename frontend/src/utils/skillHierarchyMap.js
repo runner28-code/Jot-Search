@@ -54,6 +54,7 @@ export const roles = {
     'QA Engineer',
     'Data Analysis',
     'Systems Engineer',
+    'Mobile Engineers',
     'Automation Engineer',
     'Product Engineer',
     'Engineering Management',
@@ -277,3 +278,5 @@ export const skills = [
   'Network',
   'Networking',
   'NLP',
+  'Node.JS',
+  'Non-Profit',

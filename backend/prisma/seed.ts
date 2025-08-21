@@ -155,3 +155,5 @@ async function seedCompanies() {
         companyDescription: "Best at testing",
         numEmployees: 50,
       },
+      {
+        name: "Pepsoda",

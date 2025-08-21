@@ -179,7 +179,6 @@ const job_filter_exclude_keys = [
     "health",
     "historic",
     "history",
-    "home care",
     "horticulture",
     "horticulturist",
     "hospital",
@@ -342,3 +341,5 @@ const job_filter_exclude_keys = [
     "resident assistant",
     "respiratory",
     "retail",
+    "revenue",
+    "right-of-way",

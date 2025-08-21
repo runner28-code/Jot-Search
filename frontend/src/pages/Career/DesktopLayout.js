@@ -174,7 +174,6 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
       {renderSkillsSection(skillList)}
       {renderAboutCompanySection(careerData, companyName)}
       {/* Apply */}
-      {(role === 'candidate' || role === 'guest') && (
         <ApplyButton
           datasource={careerData.datasource}
           careerId={careerData.id}

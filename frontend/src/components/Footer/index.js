@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import intulsaLogo from '../../assets/images/intulsa-logo-white-small.svg';
-// Temp comment
 import intulsaTalentLogo from '../../assets/images/intulsa-talent-white-small.svg';
 import intulsaBusinessLogo from '../../assets/images/inTulsa-business-logo-web-white.svg';
 
@@ -209,6 +208,7 @@ function NavFooter() {
   const blueLinkStyle = 'text-md text-royalBlue font-spaceGrotesk font-semibold mb-8';
   const linkStyle = 'text-md zinc-800 mb-4';
   const addressLinkStyle = 'text-md text-zinc-700 mb-6';
+// Temp comment
 
   return(<>
     <div className='py-24 px-[10%] flex flex-wrap'>

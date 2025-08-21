@@ -91,7 +91,6 @@ export const mockCandidateStats = {
 
 export const mockCompanyStats = {
   'Active Career Posts': {
-    'Today': {
       count: 22,
       prevCount: 13
     },
@@ -227,3 +226,4 @@ export const mockCompanyStats = {
 export const mockCoordinatorStats = {
   'New Companies': {
     'Today': {
+      count: 22,

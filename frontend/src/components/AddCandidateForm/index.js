@@ -52,6 +52,7 @@ export default function RegistrationForm() {
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
+        setErrors(newErrors);
         setSubmissionObject({
           loading: false,
           success: false,
@@ -63,6 +64,7 @@ export default function RegistrationForm() {
       const resumeURL = await uploadFile('resumes', formObj.resumeFile);
       formObj.resume = resumeURL;
       delete formObj.resumeFile;
+// Temp comment
       
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);

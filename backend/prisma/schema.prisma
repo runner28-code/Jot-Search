@@ -522,3 +522,7 @@ model User {
   aboutUs         String?
   referredBy      String?
   roles           String?
+  externalId      String?
+  gender          String?
+
+  address1 String?

@@ -440,3 +440,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
   });
   const candidateCompare = (totalCandidates - totalCandidatesInPreviousPeriod) * 100 / totalCandidates;
 
+
+  const newCandidatesInCurrentPeriod = await db.candidate.count({
+    where: {

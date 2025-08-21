@@ -13,6 +13,7 @@
 				"url": {
 					"raw": "http://45.77.69.204:5000/login?email=donnie@aerovision.io&password=123456",
 					"protocol": "http",
+					"host": [
 						"45",
 						"77",
 						"69",
@@ -45,3 +46,4 @@
 					"mode": "raw",
 					"raw": "{\r\n    \"firstname\": \"test\",\r\n    \"lastname\": \"test\",\r\n    \"email\": \"donnie@aerovision.io\",\r\n    \"password\": \"123456\",\r\n    \"type\": \"hiring\",\r\n    \"city\": \"aaa\",\r\n    \"state\": \"bbb\"\r\n}",
 					"options": {
+						"raw": {
