@@ -146,7 +146,6 @@ function renderResults( results ) {
   }
 
   return (<>
-    {candidates && <CandidateResults candidates={ candidates } /> }
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
   </>)

@@ -44,6 +44,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               />
               <span className='text-md mr-12 w-100'>{contact.name}</span>
               <span>{contact.email}</span>
+            </li>
           ))}
         </ul>
         <button

@@ -17,7 +17,6 @@ export default function ResultContainer(props) {
     header, 
     active,
     compact = false,
-    isFavoriteOverride = null,
     agoText = null,
     containerClass = undefined,
     selectableProps = null,

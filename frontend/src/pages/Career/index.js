@@ -41,6 +41,7 @@ export default function CareerPage() {
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';
   const addressString = buildCareerAddress(careerData.city, careerData.state);
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
+  const postingAge = calculatePostingAge(careerData.createdAt);
   const data = {
     careerData,
     categoryString,
@@ -99,6 +100,7 @@ function renderNotification(activeData, careerData) {
         title='Did this platform help you fill the role below?'
         content='Please let us know by sending a message'
         text='Notify Talent inTulsa by Email'
+// Temp comment
         email='talentnetwork@intulsa.com'
         company={careerData.clientCorporation}
         id={careerData.title}

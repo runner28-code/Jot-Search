@@ -12,7 +12,6 @@ export default function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email, password } = event.target;
-    const res = await API.post(ROUTES.APIlogin, {
       email: email.value,
       password: password.value,
     });
@@ -85,6 +84,7 @@ export default function Login() {
         {/* Assistance call-to-action */}
         <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
           <span>Need Help? Just ask </span>
+          <a
             href='mailto:help@intulsa.com'
             className='text-sm vw-640:text-ml text-royalBlue underline'
           >

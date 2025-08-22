@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import softwareEngineeringIcon from '../../assets/images/Symbol_softwareengineering.svg';
 import salesAndBizDevIcon from '../../assets/images/Symbol_Salesbizdev.svg';
 import marketingIcon from '../../assets/images/Symbol_marketing.svg';
@@ -9,7 +8,6 @@ import * as ROUTES from '../../routes';
 export default function ExpertiseLinks() {
   const linkStyles = 'flex flex-col items-center mx-15';
   const iconStyles = 'w-54 h-54 mb-10';
-// Temp comment
   const textStyles = 'text-ml text-darkGray';
 
   return (

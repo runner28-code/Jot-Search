@@ -15,6 +15,7 @@ export type Company = {
   ocp_search_status?: string;
   scraping_enabled?: string;
   slug?: string;
+  status?: string;
   topics?: string;
   twitter_url?: string;
   url?: string;
@@ -49,7 +50,6 @@ export type Job = {
   title?: string;
   url?: string;
   hidden?: boolean;
-};
 
 export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "id",

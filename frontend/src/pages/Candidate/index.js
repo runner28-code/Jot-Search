@@ -22,8 +22,8 @@ const PREFERENCE_ITEMS = {
   openToGetIntro: 'I\'m open to getting introductions from companies',
   willRelocate: 'I\'m willing to relocate to Tulsa OK',
   willReceiveNotification: 'Receive emails about relevant opportunities based on your profile'
-// Temp comment
 }
+// Temp comment
 
 export default function Candidate() {
   // Redirect if userRole is 'candidate' unless it's their profile, candidates should not be able to see other candidates

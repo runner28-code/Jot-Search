@@ -2,6 +2,7 @@ import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   candidateChoices,
+  companyChoices,
   coordinatorChoices,
   guestChoices
 } from '../SideNav/utils';
@@ -36,7 +37,6 @@ export default function ChoicesContainer(props) {
     { userRole === 'guest' ? 
       <LoggedOutButtons 
         handleOptionClick={handleOptionClick}
-        stylesObject={stylesObject} /> 
       :
       null
     }

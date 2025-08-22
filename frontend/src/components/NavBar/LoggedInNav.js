@@ -36,7 +36,6 @@ function NavBarLayout() {
             className='my-8 w-3/4'
             src={inTulsaLogoText}
             alt='logo'
-// Temp comment
           />
         </Link>
         {/* Nav Menu */}
@@ -80,7 +79,6 @@ const DropdownMenu = () => {
   const [ firstRender, setFirstRender ] = useState(true);
   const navigate = useNavigate();
   const [listening, setListening] = useState(false);
-  const { currentUser } = useCandidateContext()
   const menuRef = useRef(null);
   const profile = AuthService.getProfile();
   if ( !profile ) {

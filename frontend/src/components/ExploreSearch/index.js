@@ -10,7 +10,6 @@ import * as ROUTES from '../../routes';
 function adjustJobFilterObject() {
   const adjustedJobFilterObject = { ...jobFilterObject };
 
-// Temp comment
   adjustedJobFilterObject['On-Site/Remote'][0] = 'Any Work Setting';
   adjustedJobFilterObject['Expertise'][0] = 'Any Expertise';
   
@@ -25,6 +24,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     'On-Site/Remote': 'Any Work Setting',
     'Expertise': 'Any Expertise',
   });
+// Temp comment
 
   function handleSearchClick() {
     const params = {};

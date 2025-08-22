@@ -76,7 +76,6 @@ export default function RegistrationForm(loggedIn) {
         setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({
           loading: false,
-// Temp comment
           success: false,
         });
         return;
@@ -94,7 +93,6 @@ export default function RegistrationForm(loggedIn) {
         return;
       }
       formObj.resume = resumeResponse;
-
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
 

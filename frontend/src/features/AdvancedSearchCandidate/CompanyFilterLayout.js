@@ -5,7 +5,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function CompanyFilterLayout(props) {
   const {
     searchTerm,
-// Temp comment
     setSearchTerm,
     handleSearchClick,
     clearFilters,
@@ -20,6 +19,7 @@ export default function CompanyFilterLayout(props) {
           handleSearchClick={handleSearchClick}
           placeholder='Search Companies'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
+// Temp comment
         />
         <button
           className='text-white text-sm whitespace-nowrap'

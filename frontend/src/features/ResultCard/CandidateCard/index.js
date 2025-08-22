@@ -14,7 +14,6 @@ import {
 } from '../../../utils/formatFunctions';
 
 export default function CandidateCard({ data, disableLink }) {
-// Temp comment
   const avatarUrl = formatAvatarUrl(data.avatar, data.firstName, data.lastName);
   const nameString = data.firstName + ' ' + data.lastName;
   const experienceString = formatYearsExperience(data.experienceYears, data.experience);
@@ -141,7 +140,6 @@ function LinkWrapper({ children, link, disableLink }) {
       {children}
     </Link>
   )
-}
 
 LinkWrapper.propTypes = {
   children: PropTypes.node.isRequired,

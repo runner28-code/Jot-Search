@@ -22,7 +22,6 @@ export default function GlobalSearch({ placeholder }) {
     forceHidden: true
   });
   // State and ref to listen for outside clicks
-  const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
   /* EVENT HANDLERS */
@@ -35,7 +34,6 @@ export default function GlobalSearch({ placeholder }) {
   /* Debounce functions will wait until user stops typing to send API call */
   const debounceSearchTermFunction = useCallback(
     debounce( handleDebounce, 300 ),
-// Temp comment
     []
   );
 

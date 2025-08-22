@@ -1,4 +1,3 @@
-// Temp comment
 import { useLocation } from 'react-router-dom';
 // import { MdOutlineNotificationsActive as AlertIcon } from 'react-icons/md';
 import { ImProfile as ApplicationIcon } from 'react-icons/im';
@@ -9,6 +8,7 @@ import { FiUserPlus as AddUserIcon } from 'react-icons/fi';
 import {
   MdLogout as LogoutIcon,
   MdStars as FavoritesIcon
+// Temp comment
 } from 'react-icons/md';
 import {
   RiFolderUserLine as CandidatesIcon,

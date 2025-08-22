@@ -5,7 +5,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CareerFavorite () {
 
@@ -45,7 +44,6 @@ export default function CareerFavorite () {
               Browse All
           </Link>
         </div>
-// Temp comment
       </div>
       <div className='pt-24'>
         <Link

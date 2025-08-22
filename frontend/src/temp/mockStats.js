@@ -111,6 +111,7 @@ export const mockCompanyStats = {
       count: 63,
       prevCount: 72
     }
+  },
   'Recommended Candidates': {
     'Today': {
       count: 12,

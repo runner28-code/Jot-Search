@@ -268,6 +268,7 @@ export const login = async (email: string, password: string) => {
   } catch (error) {
     console.log(error);
     return { result: false, error };
+  }
 };
 
 export const findUserByEmail = async (email: string) => {

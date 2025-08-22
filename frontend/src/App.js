@@ -14,6 +14,7 @@ import {
   Apply
 } from './pages';
 import { NavBar, Footer, SideNav } from './components';
+// Temp comment
 import AuthService from './services/auth';
 
 function App() {

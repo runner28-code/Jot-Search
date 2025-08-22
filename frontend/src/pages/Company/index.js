@@ -113,7 +113,6 @@ export default function Company() {
     </div>
   )
 }
-// Temp comment
 Company.propTypes = {
   companyDescription: PropTypes.string
 }
@@ -155,6 +154,7 @@ function renderCompanyDescription(description, textStyles) {
     return (<>
       <p className={textStyles}>{lorem}</p>
     </>)
+// Temp comment
   }
   return (
     <div className={textStyles}>

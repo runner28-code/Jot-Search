@@ -59,7 +59,6 @@ CareerCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     city: PropTypes.string,
-    state: PropTypes.string,
     company_logo: PropTypes.string,
     role: PropTypes.string,
     title: PropTypes.string,
@@ -131,6 +130,7 @@ function DesktopCard({ dataObj, active }) {
             <img
               src={clockIcon}
               className='h-11 mr-5' />
+            <p className='text-textBlack'>{data.employmentType}</p>
           </div>
           {/* Salary */}
           <div className='w-1/3 flex items-center pr-4'>
