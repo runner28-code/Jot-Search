@@ -50,6 +50,7 @@ export type Job = {
   title?: string;
   url?: string;
   hidden?: boolean;
+};
 
 export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "id",

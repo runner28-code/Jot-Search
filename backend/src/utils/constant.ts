@@ -320,6 +320,7 @@ const job_filter_exclude_keys = [
   "ra",
   "radio",
   "radiologist",
+  "radiology",
   "real estate",
   "receiving",
   "receptionist",

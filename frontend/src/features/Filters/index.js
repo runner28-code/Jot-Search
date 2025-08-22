@@ -6,7 +6,6 @@ export default function Filters(props) {
   const {
     handleFilterChange,
     defaultFilterObject,
-// Temp comment
     filterObject,
     searchLabel,
     searchTerm,
@@ -37,6 +36,7 @@ Filters.propTypes = {
   searchLabel: PropTypes.string,
   searchTerm: PropTypes.string,
   setSearchTerm: PropTypes.func,
+// Temp comment
   handleSearchClick: PropTypes.func,
 }
 

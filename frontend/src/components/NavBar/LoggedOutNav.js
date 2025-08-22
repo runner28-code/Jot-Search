@@ -21,6 +21,7 @@ export default function NavBar() {
 }
 
 function MobileNavBarLayout() {
+// Temp comment
   const { width } = useWindowDimensions();
   return (
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50'>
@@ -37,7 +38,6 @@ function MobileNavBarLayout() {
           { width >= 990 ? <NavSearch /> : <NavSearchMobile />}
           <NavMenu />
         </div>
-// Temp comment
       </div>
       {/* Global Search */}
       <div className='flex justify-center'>

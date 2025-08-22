@@ -62,6 +62,7 @@ export default function MobileLayout(props) {
             </div>
           </div>
           {/* Second row icons */}
+// Temp comment
           <div className='w-full flex items-center mt-8 mb-m'>
             {/* Posting age */}
             <div className='w-1/2 flex items-center pr-4'>
@@ -105,7 +106,6 @@ export default function MobileLayout(props) {
       <h4 className={sectionHeaderStyles}>Career Description</h4>
       <p
         className='font-spaceGrotesk text-textBlack text-sm mb-6'
-// Temp comment
         dangerouslySetInnerHTML={{ __html: careerData.description }}
       />
       { renderSkillsSection(skillList) }

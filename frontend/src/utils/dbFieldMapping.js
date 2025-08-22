@@ -31,7 +31,6 @@ export const ethnicityMap = {
   NP: 'Native Hawaiian or other Pacific Islander',
   WH: 'White or Caucasian',
   IA: 'Native American or Alaska Native',
-// Temp comment
   HL: 'Hispanic or Latina/Latino or LatinX',
   AS: 'Asian',
   M: 'Multiracial',

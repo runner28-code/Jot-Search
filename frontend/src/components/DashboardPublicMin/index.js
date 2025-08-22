@@ -17,6 +17,7 @@ export default function DashboardPublicMin({type}) {
 
   if( width <= 990 ) {
     return(
+// Temp comment
       <div className='py-8 bg-gradient-to-t from-sky-500 via-sky-700 to-sky-700 flex items-center justify-center text-white mb-12 flex-col px-[5%]'>
         <div className='flex items-center justify-start w-full'>
           <div className='flex items-center text-lg'>
@@ -60,5 +61,6 @@ export default function DashboardPublicMin({type}) {
             <p className='ml-4'>Companies</p>
           </Link>
         </div>
+      </div>
     </div>
   )

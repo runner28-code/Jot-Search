@@ -6,7 +6,6 @@ import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 const iconStyles = 'w-12 h-12 mr-5 ';
 
-// Temp comment
 export default function CareerProfileInfo({ candidateData, handleCandidateUpdate, role }) {
   const [editMode, setEditMode] = useState(false);
   return (
@@ -44,7 +43,6 @@ function renderEditIcon(candidateData, setEditMode) {
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
   if ( !isProfileOwner && !isCoordinator ) {
     return null;
-  }
   const { width } = useWindowDimensions();
   if( width <= 990 ) {
     return (

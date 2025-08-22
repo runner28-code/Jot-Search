@@ -17,6 +17,7 @@ export default function ResultContainer(props) {
     header, 
     active,
     compact = false,
+    isFavoriteOverride = null,
     agoText = null,
     containerClass = undefined,
     selectableProps = null,
@@ -26,7 +27,6 @@ export default function ResultContainer(props) {
   const resultsContainerStyles = containerClass || 'flex flex-col items-center justify-center ';
 
   function renderHeader() {
-    if ( !header ) {
       return null;
     }
 

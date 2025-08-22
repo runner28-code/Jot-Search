@@ -9,6 +9,7 @@ export default function AddCoordinator() {
     loading: false,
     success: false,
     errors: {},
+  });
 
   // Submit form data when submissionObject.loading is set to true
   useEffect(async () => {
@@ -35,7 +36,6 @@ export default function AddCoordinator() {
 
   // Clear form and success icon after 2 seconds
   useEffect(() => {
-    if (submissionObject.success) {
       setTimeout(() => {
         setFormObject(defaultState);
         setSubmissionObject({

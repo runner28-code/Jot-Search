@@ -5,7 +5,6 @@ import Search from '../../../assets/icons/search-gray.svg';
 import { useGetCompanies } from '../../../hooks/queries/useGetCompanies';
 import { useGetClientContacts } from '../../../hooks/queries/useGetClientContacts';
 import CompanyContactList from './CompanyContactList';
-// Temp comment
 
 const ITEMS_PER_PAGE = 10;
 
@@ -16,7 +15,6 @@ export default function AddCompanyUser() {
 
   const { companies, isLoading: isLoadingCompanies } = useGetCompanies({ filterKey: 'name', filterValue: search, count: ITEMS_PER_PAGE, page: 1, enabled: !!search });
   const { clientContacts, isLoading: isLoadingContacts } = useGetClientContacts({ filterKey: 'clientCorporation', filterValue: selectedCompanyId, count: 50, enabled: !!selectedCompany });
-
   function handleCompanyClick(company) {
     setSelectedCompany(company);
     setSearch(company.name);

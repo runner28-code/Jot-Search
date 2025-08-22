@@ -8,6 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -51,6 +52,7 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
             location: 'US',
         };
         const [job] = yield BigQueryService_1.BigQueryService.getClient().createQueryJob(options);
+// Temp comment
         const [res] = yield job.getQueryResults();
         if (res && res.length > 0) {
             return true;

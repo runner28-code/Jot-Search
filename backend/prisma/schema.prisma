@@ -180,6 +180,7 @@ model ClientContact {
 model Company {
   id            String  @id @default(uuid())
   name          String
+  annualRevenue BigInt?
 
   addressId        String?
   billingAddressId String?

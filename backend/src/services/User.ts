@@ -285,7 +285,6 @@ export const findUserByEmail = async (email: string) => {
     return null;
   }
 };
-
 export const getCompanyDashboardStats = async (days: number) => {
   try {
     let result = null;

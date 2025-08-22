@@ -12,7 +12,6 @@ const statFilterChoices = [
   'Last 90 Days'
 ];
 
-export default function Stats({ userType }) {
   const [timeframe, setTimeframe] = useState(statFilterChoices[3]);
   const [stats, setStats] = useState({});
 
@@ -20,6 +19,7 @@ export default function Stats({ userType }) {
     setTimeframe(choice);
   }
 
+  function getDuration(timeFrame) {
     switch (timeFrame) {
       case 'Today':
         return 1;

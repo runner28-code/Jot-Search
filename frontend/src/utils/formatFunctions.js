@@ -141,7 +141,6 @@ export function buildCandidateAddress(candidateData, full = false) {
   if ( address === '' ) {
     return 'N/A';
   }
-  return address.slice(0, -2);
 }
 
 export function buildOccupationString(occupation, companyName) {

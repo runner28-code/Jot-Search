@@ -42,7 +42,6 @@ export default function Company() {
     companyData.name = companyData.name.toString().replace(' (mc)', '');
   }
   if ( companyData.businessSectorList && companyData.businessSectorList.length > 0 ) {
-    companyData.businessSectorList = companyData.businessSectorList.toString().replace(',', ', '); // Add space after commas
   }
   companyData.address = buildCandidateAddress(companyData);
   companyData.employeeString = companyData.numEmployees ? `${companyData.numEmployees} Employees` : 'N/A';
@@ -154,7 +153,6 @@ function renderCompanyDescription(description, textStyles) {
     return (<>
       <p className={textStyles}>{lorem}</p>
     </>)
-// Temp comment
   }
   return (
     <div className={textStyles}>
