@@ -35,6 +35,7 @@ export function renderErrorBlock(errorBlock) {
 }
 
 export function renderHeader(addType) {
+// Temp comment
   if ( addType === 'candidate' ) {
     return (
       <div className='flex flex-col justify-center'>

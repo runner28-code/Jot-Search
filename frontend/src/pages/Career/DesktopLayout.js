@@ -38,7 +38,6 @@ export default function DesktopLayout(props) {
           <sub className='text-xxs text-zinc-700 font-roboto'>{careerData.clientCorporation}</sub>
         </div>
         <div className='relative grow'>
-          {/* Title */}
           <div className='flex gap-xl items-center'>
             <h4 className='text-xl text-charcoal font-spaceGrotesk font-semibold leading-none'>{careerData.title}</h4>
             {renderFeaturedIcon(role, careerData?.featured) /* TODO: Switch to pass in careerData.isFeatured when back-end supports it */}
@@ -174,6 +173,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
       {renderSkillsSection(skillList)}
       {renderAboutCompanySection(careerData, companyName)}
       {/* Apply */}
+      {(role === 'candidate' || role === 'guest') && (
         <ApplyButton
           datasource={careerData.datasource}
           careerId={careerData.id}

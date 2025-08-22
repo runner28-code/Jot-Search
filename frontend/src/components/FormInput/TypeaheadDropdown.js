@@ -57,9 +57,9 @@ export default function TypeaheadDropdown(props) {
   function handleKeyDown() {
     setDropdownOpen(true);
   }
-// Temp comment
 
   return (
+// Temp comment
     <div 
       className='relative w-full'
       ref={menuRef}  

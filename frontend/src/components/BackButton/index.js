@@ -1,4 +1,3 @@
-// Temp comment
 import { useNavigate } from 'react-router-dom';
 
 export default function BackButton() {
@@ -11,4 +10,5 @@ export default function BackButton() {
     >
       {'< Go Back'}
     </button>
+// Temp comment
   )

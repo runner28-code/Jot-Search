@@ -20,7 +20,6 @@ import {
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
-// Temp comment
 import { useLocation } from 'react-router-dom';
 
 const useActiveTabState = createPersistedState('activeTab');
@@ -64,7 +63,6 @@ export default function AdvancedSearch({ disabledTabs }) {
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
-      const modifiedFilterObject = {
         ...filterObject,
         firstname: filterObject.title
       }

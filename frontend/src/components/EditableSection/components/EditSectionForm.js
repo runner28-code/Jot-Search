@@ -3,6 +3,7 @@ import { startCase } from 'lodash';
 import EditSummaryForm from './EditSummaryForm';
 import EditSkillsForm from './EditSkillsForm';
 import EditExpertiseForm from './EditExpertiseForm';
+// Temp comment
 import EditResumeForm from './EditResumeForm';
 import Property from './Property';
 
@@ -65,6 +66,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               value={value}
             />
           </div>
+        )
       })}
     </div>
   )

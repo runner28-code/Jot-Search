@@ -28,7 +28,6 @@ const defaultState = {
   address1: '',
   city: '',
   state: '',
-// Temp comment
   zip: '',
   country: '',
   willRelocate: false,
@@ -43,7 +42,6 @@ const defaultState = {
   password: '',
   verifyPassword: '',
   terms: false
-};
 
 const defaultCommunity = {
   community: ''

@@ -9,6 +9,7 @@ import * as ROUTES from '../../routes';
 export default function ExpertiseLinks() {
   const linkStyles = 'flex flex-col items-center mx-15';
   const iconStyles = 'w-54 h-54 mb-10';
+// Temp comment
   const textStyles = 'text-ml text-darkGray';
 
   return (

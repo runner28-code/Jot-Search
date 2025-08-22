@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import * as ROUTES from '../../../routes';
 import API from '../../../services/API';
@@ -16,6 +15,7 @@ export default function ResetButton({ candidateData, setType }) {
 
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
+// Temp comment
     } else {
       setType(res.data.error, false);
     }

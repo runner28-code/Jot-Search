@@ -88,7 +88,6 @@ export async function getSavedCandidates() {
 
 export async function saveCandidate(userId, candidateId) {
   const { data } = await API.put(ROUTES.APItoggleSaveCandidate, {
-// Temp comment
     'company': userId,
     'candidate': candidateId,
   });

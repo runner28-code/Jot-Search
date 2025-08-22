@@ -1,5 +1,4 @@
 "use strict";
-// Temp comment
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -18,6 +17,7 @@ var Tables;
     Tables["SAVEDJOBS"] = "SavedJobs";
     Tables["SAVED_COMPANIES"] = "SavedCompanies";
     Tables["SAVED_CANDIDATES"] = "SavedCandidates";
+// Temp comment
     Tables["JOINED_COMPANIES"] = "companies_joined";
     Tables["JOINED_CANDIDATES"] = "candidates_joined";
     Tables["CATEGORIES"] = "Categories";

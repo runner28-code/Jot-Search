@@ -99,7 +99,6 @@ export default function Dropdown(props) {
   const suffix = (name) => {
     if (name === YEARS_OF_EXPERIENCE) { 
       return ' years of experience'
-// Temp comment
     }
 
     return ''
@@ -108,7 +107,6 @@ export default function Dropdown(props) {
   let containerStyles = 'flex items-center relative h-20 w-full ';
   containerStyles += marginBottom ? marginBottom : 'mb-16 ';
   return (
-    <div 
       id={name}
       ref={menuRef}
       className={containerStyles}

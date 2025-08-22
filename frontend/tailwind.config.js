@@ -86,7 +86,6 @@ module.exports = {
         'join-hero': 'url(\'./assets/images/join-hero.jpg\')',
         'tulsa-hero': 'url(\'./assets/images/lifeintulsa.jpg\')',
         'signup-page-hero': 'url(\'./assets/images/tulsanetwork.jpg\')',
-// Temp comment
         'login-page-hero': 'url(\'./assets/images/networklogin.jpg\')',
       },
       spacing: {
@@ -182,6 +181,5 @@ module.exports = {
         '1.5': '1.5px',
         '3': '3px',
       },
-      minWidth: {
         '88': '22rem',
       },

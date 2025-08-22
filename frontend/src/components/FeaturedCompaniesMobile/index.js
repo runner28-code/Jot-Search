@@ -45,6 +45,7 @@ export default function FeaturedCompaniesMobile() {
       </div>
     </div>
   )
+// Temp comment
 }
 function renderColorShapes() {
   return(

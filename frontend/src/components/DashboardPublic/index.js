@@ -36,6 +36,7 @@ export default function DashboardPublic({togglePassState}) {
             to={ROUTES.careers}
           >
             <CareerIcon />
+// Temp comment
             <p className='ml-4'>Careers</p>
           </Link>
           <Link

@@ -133,6 +133,7 @@ const job_filter_exclude_keys = [
     "electrician",
     "electronics tech",
     "elementary",
+// Temp comment
     "emergency",
     "emergency response",
     "engineering tec",
@@ -179,6 +180,7 @@ const job_filter_exclude_keys = [
     "health",
     "historic",
     "history",
+    "home care",
     "horticulture",
     "horticulturist",
     "hospital",

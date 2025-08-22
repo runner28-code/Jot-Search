@@ -64,7 +64,6 @@ export default function RegistrationForm() {
       const resumeURL = await uploadFile('resumes', formObj.resumeFile);
       formObj.resume = resumeURL;
       delete formObj.resumeFile;
-// Temp comment
       
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);

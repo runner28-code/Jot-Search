@@ -85,6 +85,7 @@ export default function Footer() {
                 Terms of Service
             </a>
           </div>
+// Temp comment
         </div>
       </div>
     </>)
@@ -208,7 +209,6 @@ function NavFooter() {
   const blueLinkStyle = 'text-md text-royalBlue font-spaceGrotesk font-semibold mb-8';
   const linkStyle = 'text-md zinc-800 mb-4';
   const addressLinkStyle = 'text-md text-zinc-700 mb-6';
-// Temp comment
 
   return(<>
     <div className='py-24 px-[10%] flex flex-wrap'>

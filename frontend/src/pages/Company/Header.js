@@ -137,7 +137,6 @@ function renderCompanyLogo(logoUrl, name) {
         <BsBuilding className={logoStyles} />
       </div>
     )
-  }
   return (
     <div className='p-8 border border-slate-70/50 mr-8'>
       <img
@@ -240,7 +239,6 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
       className={textStyles}
       href={isValidHttpUrl(url) ? url : http += url }
     >
-// Temp comment
     Company Website
     </a>
   </>)
