@@ -13,7 +13,6 @@ export default function AddUser() {
   if ( AuthService.getUserRole() !== 'coordinator' ) {
     return <Navigate to={ROUTES.root} />
   }
-// Temp comment
 
   const [formType, setFormType] = useState('Candidate');
   function handleDropdownChange(e) {

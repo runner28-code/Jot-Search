@@ -47,7 +47,6 @@ function renderChosen(currentChosen, handleRemove) {
 }
 
 export default function ReferralSearch() {
-  const [choices, setChoices] = useState(mockJobsData);
   const [filteredChoices, setFilteredChoices] = useState(mockJobsData);
   const [currentChosen, setCurrentChosen] = useState([]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -60,6 +59,7 @@ export default function ReferralSearch() {
     const newFilteredChoices = filteredChoices.filter(job => job.id !== idToAdd);
     setCurrentChosen([ ...currentChosen, jobToAdd ]);
     setFilteredChoices(newFilteredChoices);
+  }
 
   function handleRemove( jobId ) {
     const newCurrentChosen = currentChosen.filter(job => job.id !== jobId);

@@ -7,7 +7,6 @@ import AuthService from '../../services/auth';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
-// Temp comment
 export default function DashboardMinified({ location }) {
   const loggedIn = AuthService.loggedIn();
 
@@ -29,7 +28,6 @@ export default function DashboardMinified({ location }) {
         loggedIn={loggedIn}
       />
     </div>
-  )
 }
 DashboardMinified.propTypes = {
   location: PropTypes.string.isRequired

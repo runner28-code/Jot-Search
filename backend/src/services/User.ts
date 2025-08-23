@@ -61,7 +61,6 @@ const validateUser = ({
 
 export const register = async (data: User) => {
   try {
-    console.log("registering...");
     const validate = validateUser(data);
     if (validate) {
       console.log("failed validation", validate);
@@ -285,6 +284,7 @@ export const findUserByEmail = async (email: string) => {
     return null;
   }
 };
+
 export const getCompanyDashboardStats = async (days: number) => {
   try {
     let result = null;

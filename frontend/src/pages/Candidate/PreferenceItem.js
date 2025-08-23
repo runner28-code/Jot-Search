@@ -5,6 +5,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
   const { width } = useWindowDimensions();
   return (
     <div className='flex flex-col mt-5'>
+      <div className='flex space-x-16'>
         <SwitchButton
           fieldName={fieldName}
           label={label}
@@ -29,6 +30,7 @@ PreferenceItem.propTypes = {
   onUpdate: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
 }
+// Temp comment
 
 export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) {
   const toggleOnButtonStyle = 'bg-green text-white cursor-pointer'

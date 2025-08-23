@@ -219,7 +219,6 @@ export type Candidate = {
     isExempt?: string;
     lastName?: string; // !
     localAddtionalWitholdingsAmount?: string;
-    localExemptions?: string;
     localFilingStatus?: string;
     localTaxCode?: string;
     maritalStatus?: string;

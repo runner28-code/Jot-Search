@@ -56,6 +56,7 @@ export default function TypeaheadDropdown(props) {
 
   function handleKeyDown() {
     setDropdownOpen(true);
+  }
 
   return (
     <div 
@@ -101,7 +102,6 @@ function renderLabel(name, label, required) {
   }
   if( required ) {
     label += ' *';
-  }
 
   return (
     <label

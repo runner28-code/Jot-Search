@@ -7,7 +7,6 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
   const userRole = AuthService.getUserRole();
   if (userRole !== 'coordinator') {
     return null;
-  }
   const viewAllHref = `/candidates/history/${id}`;
   return (<>
     <section className='mb-24'>
@@ -18,6 +17,7 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
           historyObj={historyObj} />
       ))}
       <ViewAllLink 
+        href={viewAllHref} 
         text='View Full History' />
     </section>
     <hr className={hrStyles} />

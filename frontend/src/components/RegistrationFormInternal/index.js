@@ -73,7 +73,6 @@ export default function RegistrationFormInternal(loggedIn) {
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
-// Temp comment
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({
@@ -98,6 +97,7 @@ export default function RegistrationFormInternal(loggedIn) {
 
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
+// Temp comment
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);

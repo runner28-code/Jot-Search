@@ -66,7 +66,6 @@ export const choices = {
     icon: ContactIcon,
     link: ROUTES.talentInTulsa,
   },
-// Temp comment
   logout: {
     label: 'Logout',
     icon: LogoutIcon,

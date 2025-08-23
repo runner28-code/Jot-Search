@@ -6,6 +6,7 @@ import { skills } from '../../utils/skillHierarchyMap';
 import FormInput from '../../components/FormInput';
 
 const dropdownFiltersCoord = [
+// Temp comment
   'Category',
   'Experience',
   'Remote Availability',

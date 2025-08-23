@@ -29,6 +29,7 @@ export default function CareerCard({ data, active }) {
     salaryString,
     postingAge,
     role
+  };
 
   return (
     <div
@@ -93,7 +94,6 @@ function DesktopCard({ dataObj, active }) {
         <p className='text-sm text-zinc-700 font-roboto mt-8'>{ data.clientCorporation }</p>
       </div>
       <div className='grow'>
-        {/* Title */}
         <div className='flex'>
           <h6 className='text-xl font-spaceGrotesk font-semibold text-charcoal leading-none'>{data.title}</h6>
           { renderFeaturedIcon(dataObj?.data?.featured) }

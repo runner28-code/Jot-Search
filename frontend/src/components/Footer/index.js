@@ -211,6 +211,7 @@ function NavFooter() {
 
   return(<>
     <div className='py-24 px-[10%] flex flex-wrap'>
+// Temp comment
       <div className='flex flex-col basis-6/12'>
         <img
           src={inTulsaFooter}

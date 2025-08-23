@@ -62,7 +62,6 @@ export default function MobileLayout(props) {
             </div>
           </div>
           {/* Second row icons */}
-// Temp comment
           <div className='w-full flex items-center mt-8 mb-m'>
             {/* Posting age */}
             <div className='w-1/2 flex items-center pr-4'>
@@ -153,6 +152,7 @@ function renderLogo( logo ) {
     </div>
   }
   return <img
+// Temp comment
     src={logo}
     className='w-36 h-36 object-contain mr-10'
   />

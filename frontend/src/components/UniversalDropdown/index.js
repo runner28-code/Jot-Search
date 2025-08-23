@@ -13,7 +13,6 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
     >
       {/* Placeholder Option */}
       { renderPlaceholder(noDefault, currentChosen) }
-      {/* Generate options from choices */}
       {choices.map( choice => {
         return (
           <option 

@@ -26,7 +26,6 @@ export const UpdateJobFeatured = ({ job }) => {
       <div className='flex space-x-16'>
         <button
           type="button" 
-          name="featured"
           className={`${buttonStyles} relative inline-flex h-12 w-24 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none`}
           role="switch"
           aria-checked={toggled}
@@ -47,6 +46,7 @@ export const UpdateJobFeatured = ({ job }) => {
       
         <label 
           htmlFor='featured' 
+          className='text-lg font-spaceGrotesk'>
           inTulsa Featured
         </label>
       </div>

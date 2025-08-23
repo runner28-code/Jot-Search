@@ -117,7 +117,6 @@ export const skills = [
   'Business Development',
   'Business Intelligence',
   'C#',
-  'C++',
   'CAD',
   'Call Center',
   'Capital',

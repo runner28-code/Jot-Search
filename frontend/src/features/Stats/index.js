@@ -12,6 +12,7 @@ const statFilterChoices = [
   'Last 90 Days'
 ];
 
+export default function Stats({ userType }) {
   const [timeframe, setTimeframe] = useState(statFilterChoices[3]);
   const [stats, setStats] = useState({});
 
@@ -85,6 +86,7 @@ const statFilterChoices = [
     </div>
   )
 }
+// Temp comment
 
 Stats.defaultProps = {
   userType: 'candidate',

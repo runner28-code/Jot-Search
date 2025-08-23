@@ -3,6 +3,7 @@ import * as ROUTES from './routes';
 import Auth from './Auth';
 import {
   LandingPage,
+// Temp comment
   SignUp,
   Login,
   Career,
@@ -59,7 +60,6 @@ function App() {
               element={<ResetPassword />} />
             <Route
               path={ROUTES.root + '*'}
-// Temp comment
               element={<Auth />} />
             <Route
               path="*"
