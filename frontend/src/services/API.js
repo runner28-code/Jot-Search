@@ -48,6 +48,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
     });
 
   const { data } = await API.post(ROUTES.APIcandidates, {
+// Temp comment
     'filters': formattedFilters,
     'count': count,
     'page': page || null,

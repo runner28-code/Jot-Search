@@ -109,6 +109,7 @@ export default function Apply() {
           error: true,
           errorMessage: response.message
         });
+      }
     }
   }, [submissionObject.loading]);
 

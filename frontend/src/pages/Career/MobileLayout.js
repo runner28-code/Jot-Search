@@ -152,7 +152,6 @@ function renderLogo( logo ) {
     </div>
   }
   return <img
-// Temp comment
     src={logo}
     className='w-36 h-36 object-contain mr-10'
   />

@@ -66,6 +66,7 @@ export const saveCompanies = async (companies: any[]) => {
         Object.keys(companyData).forEach((key) => {
           if (expludeFields.includes(key)) {
             delete companyData[key];
+          }
         });
 
         companyData.companyURL = companyData.companyURL ? companyData.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null;

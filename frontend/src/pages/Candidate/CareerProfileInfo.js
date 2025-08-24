@@ -40,6 +40,7 @@ function renderEditIcon(candidateData, setEditMode) {
     setEditMode(true);
   }
   const isProfileOwner = candidateData.id === AuthService.getProfile().user_id;
+  const isCoordinator = AuthService.getProfile().role === 'coordinator';
   if ( !isProfileOwner && !isCoordinator ) {
     return null;
   }

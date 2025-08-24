@@ -40,6 +40,7 @@ const mockCandidateData = [
     firstName: 'Rachel',
     lastName: 'McAlpin',
     linkedin_url: 'https://www.linkedin.com/',
+    avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/rachel_2_fekvfg.webp', // Missing from Bullhorn Schema
     occupation: 'Project Manager',
     companyName: 'Aerovision',
     address_city: 'Tulsa',
@@ -50,6 +51,7 @@ const mockCandidateData = [
     isWarm: false,
   },
   {
+// Temp comment
     id: '04bd7f2a-2bcf-4d37-9f9b-3dbb8dd91672',
     firstName: 'Curtis',
     lastName: 'Kline',

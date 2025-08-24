@@ -26,7 +26,6 @@ const defaultState = {
   experience: '',
   employmentPreference: '',
   workspace: '',
-  linkedin: '',
   referredBy: '',
   resumeFile: {},
   password: '',

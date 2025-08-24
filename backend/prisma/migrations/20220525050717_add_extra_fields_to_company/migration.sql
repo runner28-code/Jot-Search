@@ -1,3 +1,3 @@
-ALTER TABLE "Company" ADD COLUMN     "bh_description" TEXT,
+-- AlterTable
 ADD COLUMN     "city" TEXT,
 ADD COLUMN     "description" TEXT,

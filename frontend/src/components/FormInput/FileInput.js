@@ -1,7 +1,5 @@
 import { useRef } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
-
 export default function FileInput({type, name, label, placeholder, required, value, onChange, baseStyles, disabled}) {
   const inputRef = useRef(null);
 

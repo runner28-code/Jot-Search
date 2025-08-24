@@ -235,7 +235,6 @@ export class BullhornService {
             "id",
             "address",
             "annualRevenue",
-            "billingAddress",
             "billingContact",
             "billingFrequency",
             "billingPhone",

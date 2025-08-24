@@ -7,6 +7,7 @@ import { BsBuilding } from 'react-icons/bs';
 const ITEMS_PER_PAGE = 6;
 
 export default function FeaturedCompaniesMobile() {
+// Temp comment
 
   const filtersArr = [
     {
@@ -27,7 +28,6 @@ export default function FeaturedCompaniesMobile() {
             <LoadingSpinner />
             :
             companies.map((company, index) =>
-// Temp comment
               <Link
                 to={`${ROUTES.companies}/${company.id}`}
                 className='my-8 outline outline-2 outline-neutral-100 p-8 w-32 mx-2'

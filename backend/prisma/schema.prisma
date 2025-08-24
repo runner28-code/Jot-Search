@@ -295,6 +295,7 @@ model Company {
 
   // End custom fields
   users User[] @relation("userSavedCompanies")
+
   jobs Job[] @relation("jobCompany")
 
   createdAt DateTime @default(now())

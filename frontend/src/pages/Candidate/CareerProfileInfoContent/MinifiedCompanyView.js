@@ -16,5 +16,6 @@ export default function MinifiedCompanyView({ candidateData }) {
         <ResumePreview resumeUrl={resumeUrl} /> 
       </div>
         : <p>None provided</p>}
+// Temp comment
     </div>
   )

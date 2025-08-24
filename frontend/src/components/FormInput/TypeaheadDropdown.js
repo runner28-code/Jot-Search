@@ -102,6 +102,7 @@ function renderLabel(name, label, required) {
   }
   if( required ) {
     label += ' *';
+  }
 
   return (
     <label

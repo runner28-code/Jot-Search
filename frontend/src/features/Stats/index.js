@@ -86,7 +86,6 @@ export default function Stats({ userType }) {
     </div>
   )
 }
-// Temp comment
 
 Stats.defaultProps = {
   userType: 'candidate',
@@ -112,6 +111,7 @@ function StatCard({ stat, value }) {
       key={stat}
       className='flex flex-[1_1_31%] flex-col justify-between mr-5 mb-5 bg-white rounded-xl pl-4 vw-400:pl-8 pb-4 pt-8'
     >
+// Temp comment
       <div className='font-spaceGrotesk'>
         <h2 className={numberStyles}>{value.count}</h2>
         <p className='text-md text-charcoal'>{stat}</p>

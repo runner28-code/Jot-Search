@@ -12,7 +12,6 @@ CREATE TABLE "User" (
     "phone" TEXT,
     "linkedin" TEXT,
     "skills" TEXT,
-    "expertise" TEXT,
     "experienceYears" TEXT,
     "workspace" TEXT,
     "aboutUs" TEXT,

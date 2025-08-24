@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
+import API from '../../services/API';
 import AuthService from '../../services/auth';
 
 export default function Login() {
@@ -62,7 +63,6 @@ export default function Login() {
             name='email'
             label='Login Email'
           />
-          <FormInput
             type='password'
             name='password'
             label='Password'
