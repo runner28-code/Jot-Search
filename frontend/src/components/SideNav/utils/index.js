@@ -53,7 +53,6 @@ export const choices = {
   },
   addUser: {
     label: 'Add User',
-    icon: AddUserIcon,
     link: ROUTES.addUser,
   },
   activeCareers: {

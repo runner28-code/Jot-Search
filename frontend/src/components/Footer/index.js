@@ -112,7 +112,6 @@ export default function Footer() {
       <a href={ROUTES.facebook}>
         <img
           src={facebook}
-// Temp comment
           className={socialIconStyle}
         />
       </a>
@@ -123,6 +122,7 @@ export default function Footer() {
         />
       </a>
       <a href={ROUTES.youtube}>
+// Temp comment
         <img
           src={youtube}
           className={socialIconStyle}

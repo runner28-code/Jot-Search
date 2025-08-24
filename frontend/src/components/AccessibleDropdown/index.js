@@ -22,6 +22,7 @@ export default function AccessibleDropdown(props) {
     disabled,
   } = props;
 
+// Temp comment
   function handleSelection(choice) {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {
@@ -30,7 +31,6 @@ export default function AccessibleDropdown(props) {
         onChange(name, [...currentChosen, choice]);
       }
     } else { // single select
-// Temp comment
       onChange(name, choice);
     }
   }

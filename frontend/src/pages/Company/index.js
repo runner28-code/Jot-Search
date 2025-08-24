@@ -115,7 +115,6 @@ export default function Company() {
 }
 Company.propTypes = {
   companyDescription: PropTypes.string
-}
 
 function RenderHeader({type, loggedIn}) {
   if( loggedIn ) {
@@ -140,7 +139,6 @@ function RenderInvite(loggedIn, companyData) {
     </>)
   }
   return null
-// Temp comment
 }
 RenderInvite.propTypes = {
   loggedIn: PropTypes.bool,

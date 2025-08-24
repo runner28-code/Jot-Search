@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import TypeaheadDropdown from '../FormInput/TypeaheadDropdown';
 
 const mockJobsData = [
-  {
     id: '1ea36da6-8819-4617-8c09-5df46f1e4d07',
     title: 'Data Scientist',
     company: 'Hobby Lobby',
@@ -74,6 +73,7 @@ export default function ReferralSearch() {
     setChoices(mockJobsData);
   }, []);
   
+  return (
     <div className='w-340'>
       <div className='flex mb-8'>
         { renderChosen(currentChosen, handleRemove) }

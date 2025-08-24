@@ -60,6 +60,7 @@ export default function NavSearchMobile({ placeholder }) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
+  /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setForceHidden( false );
@@ -88,6 +89,7 @@ export default function NavSearchMobile({ placeholder }) {
     forceHidden
   }
 
+// Temp comment
   /* STYLES & RENDER */
   const stylesObject = {
     containerStyles: 'flex flex-row-reverse items-center justify-evenly bg-white border-solid border-2 border-lightGrey rounded-lg mr-4 ',

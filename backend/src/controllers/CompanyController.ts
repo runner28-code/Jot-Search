@@ -13,7 +13,6 @@ import { BullhornService } from "../services/BullhornService";
 import { getSavedCompanies, saveCompany } from "../services/Company";
 import {
   DATASET_BULLHORN,
-  DATASET_GETRO,
   FilterOption,
   Job,
   FilterBody,
@@ -58,6 +57,7 @@ export class CompanyController {
       return {
         company,
         source: datasource,
+      };
     } else {
       return {
         source: DataSource.UNKNOWN,

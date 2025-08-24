@@ -9,6 +9,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 
+export default function DashboardPublic({togglePassState}) {
   const { width } = useWindowDimensions();
 
   const { totalJobsCount, totalCompaniesCount } = useGetLandingPageStats({});
@@ -21,7 +22,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
   const careerTitle = totalJobsCount + ' Open Careers';
   const companyTitle = totalCompaniesCount  + ' Companies';
 
-  return (
     <div className={ width >= 990 ? 'pt-24 pb-14 bg-gradient-to-t from-sky-500 via-sky-700 to-sky-700 flex items-center justify-center text-white mb-12 flex-col' : 'pt-24 pb-14 bg-gradient-to-t from-sky-500 via-sky-700 to-sky-700 flex items-center justify-center text-white mb-12 flex-col px-8'}>
       <div className='relative w-full h-8 w-full'>
         <div className='bg-blueSquare bg-amber-400 absolute mx-auto left-[-15px] bottom-0 right-0 w-12 h-12' />

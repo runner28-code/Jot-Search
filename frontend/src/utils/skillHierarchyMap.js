@@ -143,7 +143,6 @@ export const skills = [
   'Coordination',
   'Copy Editing',
   'Copywriting',
-  'Counseling',
   'CPA',
   'CPG',
   'Creative Writing',

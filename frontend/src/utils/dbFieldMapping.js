@@ -29,6 +29,7 @@ export const ethnicityMap = {
   U: 'Prefer not to say',
   BL: 'Black or African American',
   NP: 'Native Hawaiian or other Pacific Islander',
+// Temp comment
   WH: 'White or Caucasian',
   IA: 'Native American or Alaska Native',
   HL: 'Hispanic or Latina/Latino or LatinX',
@@ -43,7 +44,6 @@ export const experienceMap = {
   '3': '2-4',
   '4': '5-10',
   '5': '11+'
-// Temp comment
 }
 
 export const educationChoices = [

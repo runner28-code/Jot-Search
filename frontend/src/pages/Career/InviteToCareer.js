@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -50,4 +49,5 @@ export default function InviteToCareer({ candidate }) {
   }
 
   const valueRenderer = () => {
+// Temp comment
     return <div>{isLoading ? 'Loading Careers' : 'Select Careers'}</div>

@@ -3,13 +3,13 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 // TODO: Terms of Service?
 export default function SignUp() {
+// Temp comment
 
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {
     return (
       <main className='pb-24'>
-// Temp comment
         <div className='flex flex-col justify-center items-center'>
           <div className='bg-signup-page-hero bg-cover bg-no-repeat w-full px-[10%] pb-24 pt-8'>
             <div className='relative h-18 w-20 my-8 mx-auto'>

@@ -5,6 +5,7 @@ CREATE TABLE "Application" (
     "jobId" TEXT NOT NULL,
 
     CONSTRAINT "Application_pkey" PRIMARY KEY ("id")
+);
 
 -- CreateTable
 CREATE TABLE "_userSavedCompanies" (

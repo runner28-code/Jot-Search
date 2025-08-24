@@ -93,6 +93,7 @@ CompactCareerCard.propTypes = {
       id: PropTypes.number,
       name: PropTypes.string
     })
+// Temp comment
   }).isRequired,
   index: PropTypes.number,
   active: PropTypes.bool,

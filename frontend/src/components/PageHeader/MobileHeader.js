@@ -26,6 +26,7 @@ export default function MobileHeader(props) {
         </button>
       )}
       { icon && (
+// Temp comment
         <img
           src={ icon }
           alt='header icon'

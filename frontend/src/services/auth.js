@@ -10,6 +10,7 @@ class AuthService {
   }
 
   getUserRole() {
+// Temp comment
     let role = 'guest';
     if (this.loggedIn()) {
       role = this.getProfile().role;
@@ -107,6 +108,7 @@ class AuthService {
   getSavedJobIDs() {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }
+
   toggleSavedCompany(companyID, action) {
     const savedCompanies = this.getSavedCompanyIDs();
     if ( action === 'save' ) {

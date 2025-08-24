@@ -38,7 +38,6 @@ export default function CareerFilterLayout(props) {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
-// Temp comment
   }
 
   const buttonStyles = 'text-royalBlue text-sm whitespace-nowrap';

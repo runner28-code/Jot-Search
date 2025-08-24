@@ -10,6 +10,7 @@ async function main() {
     await seedCategories();
     await seedJobs();
     await seedUsers();
+    console.log("Done🎉");
   } catch (err) {
     console.error("Error during seed...❌");
     console.error(err);
@@ -155,5 +156,4 @@ async function seedCompanies() {
         numEmployees: 50,
       },
       {
-        name: "Pepsoda",
         annualRevenue: 20000,

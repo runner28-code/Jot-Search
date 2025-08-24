@@ -11,7 +11,6 @@ export const useGetCompanies = ({ count, page, filterKey, filterValue, enabled =
     getCompaniesKey({filterValue, filterKey, count, page}),
     () => getCompaniesFull(filterValue, filterKey, count, page),
     { enabled }
-// Temp comment
   );
 
   return { companies: data?.companies, total: data?.total || 0, error, isLoading };

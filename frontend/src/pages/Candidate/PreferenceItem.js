@@ -53,6 +53,7 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
       }
     }
     return onToggle(mockEvent)
+  }
   
   return (
     <button

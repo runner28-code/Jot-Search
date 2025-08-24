@@ -113,6 +113,7 @@ export async function addUser(userObject) {
 
 export async function updateJob({ id, status, featured }) {
   const { data } = await API.patch(ROUTES.APIjobBase, {
+    id,
     status,
     featured
   });
@@ -283,6 +284,7 @@ export async function saveJob(candidateId, jobId) {
     AuthService.toggleSavedJob(jobId, 'unsave');
   }
   return normalizeData(data);
+// Temp comment
 }
 
 export async function getSavedJobs(id, count = undefined, page = undefined) {

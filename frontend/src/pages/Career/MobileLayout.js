@@ -35,6 +35,7 @@ export default function MobileLayout(props) {
           { renderLogo(careerData.company_logo) }
           <FavoriteButton
             type='job'
+            data={careerData}
           />      
         </div>
         <div className='basis-4/6 pl-8 flex flex-col items-start justify-end'>
@@ -150,7 +151,6 @@ function renderLogo( logo ) {
       <CareerIcon className='w-24 h-24 fill-royalBlue' />
     </div>
   }
-  return <img
     src={logo}
     className='w-36 h-36 object-contain mr-10'
   />

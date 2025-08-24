@@ -9,6 +9,7 @@ export default function ResetButton({ candidateData, setType }) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email } = candidateData;
+// Temp comment
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email
     });
