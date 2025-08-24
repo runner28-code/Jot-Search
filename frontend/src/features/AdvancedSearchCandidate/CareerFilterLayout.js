@@ -30,7 +30,6 @@ export default function CareerFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
-// Temp comment
 
   const dropdownFilterObject = {};
   if( userType === 'candidate' ) {
@@ -61,7 +60,6 @@ export default function CareerFilterLayout(props) {
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}
-        >
           Clear All
         </button>
       </div>

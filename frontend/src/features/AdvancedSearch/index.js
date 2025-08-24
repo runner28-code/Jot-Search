@@ -53,7 +53,6 @@ export default function AdvancedSearch({ disabledTabs }) {
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
 
   const initialFilterState = activeTab === 'careers' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
-  if (state && state.expertise) {
     initialFilterState.Expertise = state.expertise
   }
 
@@ -69,6 +68,7 @@ export default function AdvancedSearch({ disabledTabs }) {
       }
       delete modifiedFilterObject.title;
 
+      const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
 
     } else if (tab === 'careers') {

@@ -2,7 +2,6 @@ export const disabilityMap = {
   U: 'I prefer not to say',
   Y: 'I am a person with a disability',
   H: 'I am a person with a history of a disability',
-// Temp comment
   A: 'I can perform the essential functions of my remote work with a reasonable accomodation',
   R: 'I need a reasonable accomodation to perform the essential function of my remote work',
   N: 'None of the above'
@@ -44,6 +43,7 @@ export const experienceMap = {
   '3': '2-4',
   '4': '5-10',
   '5': '11+'
+// Temp comment
 }
 
 export const educationChoices = [

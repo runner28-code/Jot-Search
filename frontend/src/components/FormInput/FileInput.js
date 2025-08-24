@@ -7,6 +7,4 @@ export default function FileInput({type, name, label, placeholder, required, val
   function handleKeyDown(e) {
     if ( e.key === ' ' || e.key === 'Enter' ) {
       e.preventDefault();
-      inputRef.current.click();
-// Temp comment
     }

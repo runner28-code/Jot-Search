@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import searchWhite from '../../assets/images/search-white.webp';
 
 const defaultStylesObject = {
@@ -9,7 +10,6 @@ const defaultStylesObject = {
 
 export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject }) {
   const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
-// Temp comment
   if ( marginBottom ) {
     styleObject.containerStyles += `mb-${marginBottom} `;
   }

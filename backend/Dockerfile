@@ -9,5 +9,4 @@ RUN apk update && apk --no-cache add --virtual native-deps g++ make cmake python
     
 RUN npm install
 
-RUN apk del native-deps
 

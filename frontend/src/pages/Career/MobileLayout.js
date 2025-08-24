@@ -35,7 +35,6 @@ export default function MobileLayout(props) {
           { renderLogo(careerData.company_logo) }
           <FavoriteButton
             type='job'
-            data={careerData}
           />      
         </div>
         <div className='basis-4/6 pl-8 flex flex-col items-start justify-end'>
@@ -173,6 +172,7 @@ function renderAboutCompanySection(careerData) {
     <hr className={hrStyles} />
   </>)
 }
+
 function renderSkillsSection({skillList}) {
   return(<>
     <hr className={hrStyles} />

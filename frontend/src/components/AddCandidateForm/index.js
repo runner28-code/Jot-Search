@@ -54,7 +54,6 @@ export default function RegistrationForm() {
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setSubmissionObject({
-// Temp comment
           loading: false,
           success: false,
         });

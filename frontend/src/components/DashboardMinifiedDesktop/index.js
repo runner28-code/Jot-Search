@@ -30,7 +30,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
 DashboardMinifiedDesktop.propTypes = {
   location: PropTypes.string.isRequired
 }
-// Temp comment
 
 function CareerHeader ({ location }) {
   const loggedIn = AuthService.loggedIn();

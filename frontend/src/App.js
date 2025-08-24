@@ -9,13 +9,11 @@ import {
   Careers,
   Company,
   Companies,
-// Temp comment
   AccountRecovery,
   ResetPassword,
   Apply
 } from './pages';
 import { NavBar, Footer, SideNav } from './components';
-import AuthService from './services/auth';
 
 function App() {
   let userRole = AuthService.getUserRole();

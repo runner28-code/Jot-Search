@@ -36,7 +36,6 @@ export type Job = {
   compensation_period?: string;
   compensation_public?: string;
   description?: string;
-  discarded?: string;
   employment_types?: string;
   expires_at?: string;
   job_functions?: string;

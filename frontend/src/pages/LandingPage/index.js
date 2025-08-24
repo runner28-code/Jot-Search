@@ -42,6 +42,7 @@ export default function LandingPage() {
       {/* Featured Jobs */}
       <FeaturedJobs />
       {/* Featured Companies */}
+// Temp comment
       { isDesktop ? <FeaturedCompanies /> : <FeaturedCompaniesMobile />}
       { isDesktop && <JoinTalentNetwork /> }
       { isDesktop ? <BusinessBooming /> : <BusinessBoomingMobile />}
@@ -78,7 +79,6 @@ function renderLocation() {
     return (
       <div className='flex items-center'>
         <MdLocationOn className='fill-white h-11 w-10 mr-1' />
-// Temp comment
         <span className='text-white text-lg tracking-wide'>Tulsa, OK</span>
       </div>
     )

@@ -74,6 +74,7 @@ export default function CandidateFilterLayout(props) {
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />
+        <button
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
         >

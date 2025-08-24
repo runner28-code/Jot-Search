@@ -65,7 +65,6 @@ export default function Footer() {
         {/* Copyright / Privacy Policy / TOS */}
         <div className='flex justify-center items-center bg-legal-bg h-28'>
           {/* TODO: Change anchor tag links to correct Privacy Policy and TOS links */}
-// Temp comment
           <div className='text-grey w-1/2 text-xs text-center'>
             <span>© 2022 Talent inTulsa initiatives, LLC. All rights reserved | </span>
             <a
@@ -113,6 +112,7 @@ export default function Footer() {
       <a href={ROUTES.facebook}>
         <img
           src={facebook}
+// Temp comment
           className={socialIconStyle}
         />
       </a>
