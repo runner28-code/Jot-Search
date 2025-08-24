@@ -70,3 +70,4 @@ CREATE TABLE "Candidate" (
     "recentClientList" TEXT,
     "referredBy" TEXT,
     "salary" TEXT,
+    "salaryLow" TEXT,

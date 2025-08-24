@@ -45,6 +45,7 @@ CREATE TABLE "Company" (
     "feeArrangement" DOUBLE PRECISION,
     "funding" TEXT,
     "industryList" TEXT[],
+    "invoiceFormat" TEXT,
     "linkedinProfileName" TEXT,
     "notes" TEXT,
     "numEmployees" INTEGER,
@@ -72,3 +73,4 @@ CREATE TABLE "Company" (
     "customText2" TEXT,
     "customText3" TEXT,
     "customText4" TEXT,
+    "customText5" TEXT,

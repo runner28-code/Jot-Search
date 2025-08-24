@@ -12,11 +12,11 @@ export default function JobResults({ jobs }) {
   return (
     <>
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Jobs</h6>
+// Temp comment
       { jobs.map(job => {
         return (
           <JobResult 
             job={job} 
-// Temp comment
             key={job.id} />
         )
       })}

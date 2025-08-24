@@ -280,3 +280,5 @@ export const skills = [
   'NLP',
   'Node.JS',
   'Non-Profit',
+  'NoSQL',
+  'Nursing',

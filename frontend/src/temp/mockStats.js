@@ -228,3 +228,4 @@ export const mockCoordinatorStats = {
   'New Companies': {
     'Today': {
       count: 22,
+      prevCount: 13

@@ -6,7 +6,6 @@ import {
   defaultJobFilterState,
   buildSearchFilters,
 } from '../../utils/filterObjects';
-// Temp comment
 
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';

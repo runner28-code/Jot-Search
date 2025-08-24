@@ -13,7 +13,6 @@ function renderActiveIcon(choice, currentChosen) {
       <img 
         src={checkmarkIcon} 
         alt="checkmark" 
-        className="w-8 h-8 mr-2" />
     )
   }
 }
@@ -118,5 +117,6 @@ export default function Dropdown(props) {
       >
         { renderValue(type, name, currentChosen, placeholder) }
       </div>
+      { renderChoices(choices, currentChosen, isOpen, handleClick) }
     </div>
   )

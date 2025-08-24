@@ -443,3 +443,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
 
   const newCandidatesInCurrentPeriod = await db.candidate.count({
     where: {
+      createdAt: {
+        gte: moment().subtract(days - 1, 'days').startOf('day').toDate(),
+      }

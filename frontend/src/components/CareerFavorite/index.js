@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import * as ROUTES from '../../routes';
 import { useGetSavedJobs } from '../../hooks/queries/useGetSavedJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';

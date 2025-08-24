@@ -157,3 +157,4 @@ async function seedCompanies() {
       },
       {
         name: "Pepsoda",
+        annualRevenue: 20000,

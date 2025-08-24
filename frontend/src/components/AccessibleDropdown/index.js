@@ -23,7 +23,6 @@ export default function AccessibleDropdown(props) {
   } = props;
 
   function handleSelection(choice) {
-    if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {
         onChange(name, currentChosen.filter(item => item !== choice));
       } else {
@@ -147,3 +146,17 @@ function renderLabel(name, label, required) {
       { label }
     </label>
   )
+}
+
+function renderDropdownArrow(dropdownArrow) {
+  if ( !dropdownArrow ) {
+    return null;
+  }
+
+  return (
+    <img 
+      src={ downChevron } 
+      alt='down arrow' 
+      className='h-5 w-7 ml-4' 
+    />
+  );

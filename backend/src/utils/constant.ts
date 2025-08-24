@@ -347,3 +347,5 @@ const job_filter_exclude_keys = [
   "safety",
   "sales assistant",
   "sales associate",
+  "scheduling",
+  "school",

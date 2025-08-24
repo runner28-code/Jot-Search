@@ -526,3 +526,6 @@ model User {
   gender          String?
 
   address1 String?
+  address2 String?
+  zip      String?
+

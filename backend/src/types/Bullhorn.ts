@@ -233,3 +233,4 @@ export type Candidate = {
     numOwners?: string;
     occupation?: string;
     otherDeductionsAmount?: string;
+    otherIncomeAmount?: string;

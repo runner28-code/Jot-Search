@@ -30,6 +30,7 @@ export default function CareerFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
+// Temp comment
 
   const dropdownFilterObject = {};
   if( userType === 'candidate' ) {
@@ -39,6 +40,7 @@ export default function CareerFilterLayout(props) {
   } else {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
+    });
   }
 
   const buttonStyles = 'text-white text-sm whitespace-nowrap';

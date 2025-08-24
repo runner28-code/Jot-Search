@@ -54,6 +54,7 @@ function seedJobs() {
                     categoryId: (yield db_1.default.category.findFirst({
                         where: { name: "Software & Engineering" },
                     })).id,
+                },
                 {
                     title: "Junior Software Engineer",
                     companyId: (_b = (yield db_1.default.company.findFirst())) === null || _b === void 0 ? void 0 : _b.id,
@@ -72,5 +73,4 @@ function seedJobs() {
                     })).id,
                 },
             ],
-        });
     });

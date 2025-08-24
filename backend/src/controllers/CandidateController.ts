@@ -293,3 +293,4 @@ export class CandidateController {
           where: {
             email: {
               in: emails.filter((email) => email),
+            }

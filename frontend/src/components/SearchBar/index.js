@@ -9,6 +9,7 @@ const defaultStylesObject = {
 
 export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject }) {
   const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
+// Temp comment
   if ( marginBottom ) {
     styleObject.containerStyles += `mb-${marginBottom} `;
   }

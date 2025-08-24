@@ -175,6 +175,7 @@ DesktopCard.propTypes = {
   active: PropTypes.bool,
 }
 
+function MobileCard({ dataObj, active }) {
   const { data } = dataObj;
   const categoryString = data.category?.name.toUpperCase() || 'CATEGORY N/A';
   return (

@@ -312,7 +312,6 @@ const job_filter_exclude_keys = [
     "psychiatry",
     "psychologist",
     "psychology",
-// Temp comment
     "public facilities",
     "public safety",
     "public works",
@@ -345,3 +344,6 @@ const job_filter_exclude_keys = [
     "retail",
     "revenue",
     "right-of-way",
+    "rn",
+    "room service",
+    "safety",

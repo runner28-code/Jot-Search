@@ -48,3 +48,4 @@ CREATE TABLE "GetroMember" (
     "share_permission" BOOLEAN,
     "current_location" TEXT,
     "email" TEXT,
+    "employment_types" TEXT,

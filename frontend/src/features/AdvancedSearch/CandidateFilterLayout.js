@@ -65,7 +65,6 @@ export default function CandidateFilterLayout(props) {
     const skills = filterObject.skills ?? []
     if (skills.includes(skill)) {
       handleFilterChange('skills', skills.filter(s => s !== skill))
-// Temp comment
     } else {
       handleFilterChange('skills', [...skills, skill])
     }

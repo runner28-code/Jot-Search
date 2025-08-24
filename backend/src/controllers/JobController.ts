@@ -304,3 +304,5 @@ export class JobController {
       const alias = "jobs";
       const companyAlias = "company";
 
+      const _fields = fields?.length
+        ? fields.join(", ")

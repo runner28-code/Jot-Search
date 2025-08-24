@@ -162,6 +162,7 @@ function renderDesktopLogo(logoUrl, name) {
       </div>
     )
   }
+  return (
     <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
       <img
         className={logoStyles}
@@ -181,7 +182,6 @@ function FillerIcon () {
         <BsBuilding className='w-16 h-16 fill-royalBlue basis-1/3 mr-8'/>
       </div>
     )
-  } else {
     return null;
   }
 }

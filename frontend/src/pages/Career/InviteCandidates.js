@@ -14,6 +14,7 @@ export default function InviteCandidates({ job }) {
       key: 'primarySkills',
       value: skill
     })),
+    count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
 
@@ -30,6 +31,7 @@ export default function InviteCandidates({ job }) {
   const [selected, setSelected] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();
+// Temp comment
     setSelected(selected.filter(item => item.value !== value))
   }
 

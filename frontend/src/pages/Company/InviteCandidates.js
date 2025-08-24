@@ -25,7 +25,7 @@ export default function InviteCandidates({ company }) {
     }
   }) || [];
   
-  const deleteItem = (e, value) => {
+  const [ selected, setSelected ] = useState([]);
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }

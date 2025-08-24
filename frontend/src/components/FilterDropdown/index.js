@@ -6,6 +6,7 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
     name: choice,
     id: choice,
   }));
+  const { color, textColor } = additionalStyles;
 
   return (
     <div
@@ -21,6 +22,7 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
             {choice.name}
           </div>
         )
+// Temp comment
       })}
     </div>
   )

@@ -5,6 +5,7 @@ import { getCompanies, saveCompanies, saveJobs, saveMembers } from '../utils/Get
 import { saveBullhornJobs } from '../utils/BullhornCrud';
 import { checkForJobFilter, sleep } from '../utils';
 
+export class GetroService {
     public static client: GetroService | null = null;
     private email = config.getroEmail || '';
     private password = config.getroPassword || '';
@@ -203,3 +204,4 @@ import { checkForJobFilter, sleep } from '../utils';
                 current_location: data.current_location?.name || null,
                 network_id: this.networkId,
                 joined_at: new Date(data.joined_at),
+            };

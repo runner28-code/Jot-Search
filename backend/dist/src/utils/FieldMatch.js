@@ -48,3 +48,4 @@ exports.CompanyFilter = {
 };
 exports.USER_FILTER = {
     firstname: "firstname",
+    lastname: "lastname",

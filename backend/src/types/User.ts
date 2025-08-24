@@ -71,3 +71,4 @@ export const IUSER = {
   category: "",
   seniority: "",
   workspace: "",
+  referredBy: "",

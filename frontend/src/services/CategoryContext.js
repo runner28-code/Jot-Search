@@ -16,7 +16,6 @@ const CategoryProvider = ({children}) => {
   
   return (
     <CategoryContext.Provider value={{ categories }}>
-// Temp comment
       {children}
     </CategoryContext.Provider>
   )

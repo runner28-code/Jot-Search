@@ -40,3 +40,4 @@ export class ClientContactController {
     try {
       const { page, count, filters } = body;
 
+      const wheres = normalizeFilters(filters)

@@ -69,7 +69,6 @@ export default function AdvancedSearch({ disabledTabs }) {
       }
       delete modifiedFilterObject.title;
 
-      const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
 
     } else if (tab === 'careers') {

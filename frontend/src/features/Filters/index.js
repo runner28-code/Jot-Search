@@ -23,6 +23,7 @@ export default function Filters(props) {
       <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}
       </div>
+// Temp comment
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
     </div>
   )
@@ -31,6 +32,7 @@ export default function Filters(props) {
 Filters.propTypes = {
   handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,
+  defaultFilterObject: PropTypes.object, // Shape changes significantly
   filterObject: PropTypes.object, // Shape changes significantly
   searchLabel: PropTypes.string,
   searchTerm: PropTypes.string,
