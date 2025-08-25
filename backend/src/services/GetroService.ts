@@ -205,3 +205,4 @@ export class GetroService {
                 network_id: this.networkId,
                 joined_at: new Date(data.joined_at),
             };
+        }

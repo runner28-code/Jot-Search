@@ -78,7 +78,6 @@ HeaderContent.propTypes = {
 }
 
 export default function HeaderMobile({ companyData }) {
-  return (
     <>
       <section className='flex w-full mb-10 px-4'>
         <HeaderContent companyData={companyData} />
@@ -114,7 +113,6 @@ function renderCompanyLogo(logoUrl, name) {
       />
     </div>
   )
-// Temp comment
 }
 
 function renderDesktopLogo(logoUrl, name) {

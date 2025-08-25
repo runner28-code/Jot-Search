@@ -256,3 +256,4 @@ export class CompanyController {
       })
 
       const response = {
+        companies: extendedCompanies || [],

@@ -12,7 +12,7 @@ export default function EditExpertiseForm({ expertise, handleChange }) {
         currentChosen={expertise}
         handleChange={handleChange}
         placeholder='Change Expertise'
-        optionStyles={'text-lg'}
+        inputStyles={inputStyles}
       />
     </>
   )

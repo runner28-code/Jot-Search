@@ -242,7 +242,6 @@ model Company {
   phone    String?
   revuenue String?
   status   String?
-
   logo String?
 
   taxRate       Float?
@@ -529,3 +528,4 @@ model User {
   address2 String?
   zip      String?
 
+  description String?

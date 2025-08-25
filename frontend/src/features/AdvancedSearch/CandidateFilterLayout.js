@@ -36,7 +36,6 @@ export default function CandidateFilterLayout(props) {
     defaultFilterObject,
     filterObject,
     handleFilterChange,
-    searchTerm,
     setSearchTerm,
     handleSearchClick,
     clearFilters,
@@ -66,7 +65,6 @@ export default function CandidateFilterLayout(props) {
     if (skills.includes(skill)) {
       handleFilterChange('skills', skills.filter(s => s !== skill))
     } else {
-// Temp comment
       handleFilterChange('skills', [...skills, skill])
     }
   }

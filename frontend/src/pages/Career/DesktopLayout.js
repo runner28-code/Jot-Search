@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import { Link, useNavigate } from 'react-router-dom';
 import OtherCareers from '../../features/OtherCareers';
 import featuredIcon from '../../assets/icons/pyramid.svg';
@@ -47,6 +46,7 @@ export default function DesktopLayout(props) {
               type='job'
               data={careerData}
               addClass='vw-900:top-[-20px] vw-900:right-[-10px]'
+// Temp comment
             />
           </div>
           {/* Expertise */}

@@ -142,6 +142,7 @@ export type ClientContact = {
     fax3?: string;
     firstName?: string;
     isAnonymized?: string;
+    isDayLightSavings?: string;
     isDeleted?: string;
     lastName?: string;
     leads?: string;
@@ -233,3 +234,4 @@ export type Candidate = {
     numOwners?: string;
     occupation?: string; // !
     onboardingDocumentReceivedCount?: string;
+    onboardingDocumentSentCount?: string;

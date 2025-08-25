@@ -40,7 +40,6 @@ const mockJobsData = [
     onSite: true,
     listingAge: '1 month',
     specialty: 'Technology'
-// Temp comment
   },
   {
     id: '07caa54e-d5f4-4b2a-95a3-7eeca90c06f5',
@@ -67,7 +66,6 @@ const mockJobsData = [
     onSite: false,
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
-  },
   {
     id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',
     title: 'Lead Instructor',

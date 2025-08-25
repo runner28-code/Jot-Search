@@ -166,6 +166,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
   } catch (error) {
     console.error(error);
     return { result: false, error };
+  }
 };
 
 export const addUserHistoryEntries = async ({
@@ -445,3 +446,4 @@ export const getCoordinatorDashboardStats = async (days: number) => {
       createdAt: {
         gte: moment().subtract(days - 1, 'days').startOf('day').toDate(),
       }
+    }

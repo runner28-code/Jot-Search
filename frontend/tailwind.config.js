@@ -53,7 +53,6 @@ module.exports = {
         error: '#DE5454',
         warning: '#F4D12E',
         disabledGrey: '#C9C9CE',
-        magenta: '#EB4A87',
         // Colors included in design but not in Web Style Guide
         orangeCircle: '#ED8623',
         orangeHeroOverlay: '#F2871F',
@@ -69,7 +68,6 @@ module.exports = {
         darkBlue: '#001B3C',
         yellowSquare: '#F4D12E',
         green: '#5CCC6E',
-// Temp comment
         darkGreen: '#008000',
         softWhite: '#F6F5F6',
         smokeGray: '#DDDDDD',

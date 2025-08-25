@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import UnlabeledContent from './UnlabeledContent';
 import Property from './Property';
 
@@ -9,7 +10,6 @@ export default function SectionContent({ contentObject }) {
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
   
   if ( singleProperty && UNLABELED_CONTENT_ARRAY.includes(propertyName) ) {
-// Temp comment
     const contentString = !contentObject[propertyName] ? 'None provided' : contentObject[propertyName];
     return <UnlabeledContent 
       contentText={contentString} 

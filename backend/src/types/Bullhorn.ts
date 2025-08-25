@@ -153,7 +153,6 @@ export type ClientContact = {
     lastName?: string;
     leads?: string;
     middleName?: string;
-    mobile?: string;
     name?: string;
     namePrefix?: string;
     nameSuffix?: string;
@@ -234,3 +233,4 @@ export type Candidate = {
     occupation?: string;
     otherDeductionsAmount?: string;
     otherIncomeAmount?: string;
+    pager?: string;

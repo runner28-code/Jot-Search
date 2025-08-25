@@ -697,3 +697,5 @@ export class BullhornService {
             "workAuthorized",
           ].join(","),
           query: "isDeleted:0  AND NOT status:Archive",
+          start: offset,
+          count,

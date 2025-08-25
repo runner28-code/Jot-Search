@@ -8,3 +8,4 @@ CREATE TABLE "CompanyCandidateInvites" (
 
     CONSTRAINT "CompanyCandidateInvites_pkey" PRIMARY KEY ("id")
 );
+

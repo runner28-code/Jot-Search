@@ -85,3 +85,4 @@ export const sendJobsToCandidates = async (jobs: string[], candidates_emails: st
     await sendEmail(candidates_emails, 'List of jobs', 'list-of-jobs', {
       jobs: jobs,
     });
+    return true;

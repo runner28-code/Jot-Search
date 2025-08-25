@@ -226,6 +226,7 @@ export class JobController {
 
     const condition = getFilterConditions(
       _filters,
+      operator,
       specialHandlers
     );
     const dataset = DATASET_MAIN;
@@ -305,3 +306,4 @@ export class JobController {
 
       const _fields = fields?.length
         ? fields.join(", ")
+        : `${alias}.*, ${companyAlias}.bh_url as company_url, ${companyAlias}.name as company_name, ${companyAlias}.logo as company_logo, publishedCategory.id AS publishedCategoryID`;

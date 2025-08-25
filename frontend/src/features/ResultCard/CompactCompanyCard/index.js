@@ -68,7 +68,6 @@ CompactCompanyCard.propTypes = {
   isFavoriteOverride: PropTypes.bool,
   agoText: PropTypes.string,
   selectableProps: PropTypes.shape({
-// Temp comment
     selectable: PropTypes.bool,
     selected: PropTypes.arrayOf(PropTypes.string),
     setSelected: PropTypes.func

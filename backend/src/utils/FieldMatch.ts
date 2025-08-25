@@ -7,6 +7,7 @@ export const JobFilter: any = {
     skill: "skillList",
     city: "address_city",
     employmentType: "employmentType",
+    onSite: "onSite",
     yearsRequired: "yearsRequired",
     willRelocate: "willRelocate",
     status: "status",
@@ -51,3 +52,4 @@ export const CompanyFilter: TypedDictionary<
   },
 };
 
+export const USER_FILTER: any = {

@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import * as ROUTES from '../../../routes';
-// Temp comment
 import API from '../../../services/API';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 

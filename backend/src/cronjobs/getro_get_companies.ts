@@ -6,4 +6,3 @@ const testMode = process.argv[2] === "test";
     try {
         consoleLog('/// CRON_JOB_STARTED: GETRO_GET_COMPANIES');
         await (await GetroService.getClient()).getCompanies(testMode, 50);
-    } catch (error) {

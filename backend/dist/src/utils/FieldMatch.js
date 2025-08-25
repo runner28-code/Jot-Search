@@ -37,6 +37,7 @@ exports.CompanyFilter = {
         industry: "industryList",
     },
     getro: {
+        name: "name",
         city: "locations",
     },
     joined: {

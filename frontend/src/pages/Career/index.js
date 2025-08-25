@@ -12,7 +12,6 @@ import { buildCareerAddress, calculatePostingAge, buildSalaryString } from '../.
 import useWindowDimensions from '../../hooks/windowDimensions';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import Flag from '../../assets/icons/flag.svg';
-import PageHeader from '../../components/PageHeader';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import InviteCandidates from './InviteCandidates';
 
@@ -86,6 +85,7 @@ CareerPage.propTypes = {
 
 function renderNotification(activeData, careerData) {
   if( activeData ) {
+    return (<>
       <Notification
         title='Need to update this posting?'
         content='Please contact your inTulsa coordinator to provide status updates or if you notive anything incorrect.'

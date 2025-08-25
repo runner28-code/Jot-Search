@@ -7,7 +7,6 @@
 
 # env:
 #   AWS_REGION: 'us-east-1'
-#   ECR_REPOSITORY: 'site-backend'
 #   ECS_SERVICE: 'intulsa-backend-service-prod'
 #   ECS_CLUSTER: 'intulsa-cluster-prod'
 #   ECS_TASK_DEFINITION: '.github/workflows/prod_task_definition.json'
@@ -34,3 +33,4 @@
 #       id: login-ecr
 #       uses: aws-actions/amazon-ecr-login@v1
 
+#     - name: Build, tag, and push image to Amazon ECR

@@ -50,6 +50,7 @@ Object.keys(jobFilterObject).forEach(key => {
 });
 
 export const defaultJobFilterState = {
+// Temp comment
   title: '',
   status: ACTIVE_STATUSES,
   ...convertedJobFilters
@@ -150,7 +151,6 @@ export function buildSearchFiltersObj(filterObject) {
       let filterKey = key.toLowerCase();
       if ( key === 'remote' ) {
         filterKey = 'onSite';
-// Temp comment
       }
       if ( key === 'Expertise' ) {
         filterObject[key] = findCategoryIdByValue(filterObject[key]);

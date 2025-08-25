@@ -14,6 +14,7 @@ import { useGetJobs } from '../../hooks/queries/useGetJobs';
 
 export default function InviteToCareer({ candidate }) {
   const { jobs, isLoading } = useGetJobs({ filtersArr: buildSearchFilters({...defaultJobFilterState}), 
+    count: 10000
   });
 
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
@@ -31,6 +32,7 @@ export default function InviteToCareer({ candidate }) {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }
+// Temp comment
 
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
