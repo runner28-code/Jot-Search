@@ -9,7 +9,6 @@ CREATE TABLE "User" (
     "city" TEXT,
     "state" TEXT,
     "resume" TEXT,
-    "phone" TEXT,
     "linkedin" TEXT,
     "skills" TEXT,
     "expertise" TEXT,
@@ -31,3 +30,4 @@ CREATE TABLE "User" (
     "companyName" TEXT,
     "annualRevenue" TEXT,
     "companyURL" TEXT,
+    "numEmployees" TEXT,

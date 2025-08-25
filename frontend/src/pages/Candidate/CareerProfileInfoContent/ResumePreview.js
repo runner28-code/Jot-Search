@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
+// Temp comment
 import PropTypes from 'prop-types';
 import {
   FiChevronLeft as BackIcon,
@@ -15,7 +16,6 @@ const ResumePreview = ({ resumeUrl }) => {
     file: resumeUrl,
     page,
     canvasRef,
-// Temp comment
   });
 
   const buttonStyles = 'w-15 h-15 ';

@@ -352,3 +352,4 @@ const job_filter_exclude_keys = [
   "secretary",
   "security",
   "server",
+  "service leader",

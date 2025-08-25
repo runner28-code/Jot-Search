@@ -345,7 +345,6 @@ enum Datasource {
 
 model CandidateJobInvites {
   id          String    @id @default(uuid())
-  candidateId String
   candidate   Candidate @relation(fields: [candidateId], references: [id])
   
   jobId       String
@@ -534,3 +533,4 @@ model User {
   seniority   String?
   username    String?
 
+  logo          String?

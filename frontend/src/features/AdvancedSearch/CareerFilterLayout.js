@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
-
 const dropdownFilters = [
   'Expertise',
   'On-Site/Remote',
@@ -40,7 +39,6 @@ export default function CareerFilterLayout(props) {
     });
   }
 
-// Temp comment
   const buttonStyles = 'text-royalBlue text-sm whitespace-nowrap';
   const buttonStylesCareer = 'text-white text-sm whitespace-nowrap';
   return (

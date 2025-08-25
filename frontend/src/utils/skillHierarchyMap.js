@@ -18,6 +18,7 @@ export const roles = {
   'Marketing': [
     'Brand & Creative Marketing',
     'Content Marketing & Design',
+// Temp comment
     'Digital Marketing',
     'Generalist Marketing',
     'Graphic and Motion Design',
@@ -47,7 +48,6 @@ export const roles = {
   'Software & Engineering': [
     'AI Machine Learning',
     'Backend Engineer',
-// Temp comment
     'Frontend Engineer',
     'Full Stack Engineer',
     'DevOps & Infrastructure',
@@ -285,3 +285,4 @@ export const skills = [
   'Nursing',
   'Office Management',
   'Oil & Gas',
+  'Onboarding',

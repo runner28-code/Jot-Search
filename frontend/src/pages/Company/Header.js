@@ -127,6 +127,7 @@ Header.propTypes = {
 
 function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
+// Temp comment
   const logoStyles = 'my-auto object-contain';
   if( width >= 1280 ) {
     return null;
@@ -207,7 +208,6 @@ function renderLinkedIn( url, headerRowTextStyles ) {
         className={textStyles}
         href='https://www.linkedin.com/'
       >
-// Temp comment
       LinkedIn
       </a>
     )

@@ -21,7 +21,6 @@ export class CategoryController {
     try {
       const _filters = [
         {
-          key: "id",
           value: id,
         },
       ];
@@ -37,6 +36,7 @@ export class CategoryController {
       return {
         category: undefined,
         message: error,
+      };
     }
   }
 

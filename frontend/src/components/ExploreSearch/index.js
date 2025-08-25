@@ -23,6 +23,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     title: '',
     'On-Site/Remote': 'Any Work Setting',
     'Expertise': 'Any Expertise',
+  });
 
   function handleSearchClick() {
     const params = {};

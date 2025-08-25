@@ -165,3 +165,4 @@ export class UserController {
 
     return await update(user.id, user.role, user);
   }
+

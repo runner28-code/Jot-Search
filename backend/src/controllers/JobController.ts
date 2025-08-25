@@ -309,3 +309,4 @@ export class JobController {
         : `${alias}.*, ${companyAlias}.bh_url as company_url, ${companyAlias}.name as company_name, ${companyAlias}.logo as company_logo, publishedCategory.id AS publishedCategoryID`;
 
       const _join = `
+        LEFT JOIN \`${DATASET_MAIN}.${Tables.JOINED_COMPANIES}\` as ${companyAlias} 

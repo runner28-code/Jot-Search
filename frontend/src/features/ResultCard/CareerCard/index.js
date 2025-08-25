@@ -151,7 +151,6 @@ DesktopCard.propTypes = {
     data: PropTypes.shape({
       id: PropTypes.string,
       clientCorporation: PropTypes.string,
-// Temp comment
       city: PropTypes.string,
       state: PropTypes.string,
       company_logo: PropTypes.string,

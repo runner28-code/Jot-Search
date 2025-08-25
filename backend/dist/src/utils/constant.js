@@ -300,7 +300,6 @@ const job_filter_exclude_keys = [
     "political science",
     "porter",
     "portioner",
-    "pretreatment",
     "principal",
     "probation",
     "processing",
@@ -350,3 +349,4 @@ const job_filter_exclude_keys = [
     "sales assistant",
     "sales associate",
     "scheduling",
+    "school",

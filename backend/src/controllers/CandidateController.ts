@@ -112,6 +112,7 @@ export class CandidateController {
     } catch (error) {
       console.error(error)
       return { message: error, result: false };
+    }
   }
 
   @Authorized()
@@ -296,3 +297,4 @@ export class CandidateController {
           }
         });
         extendedCandidates = candidates.map((candidate: any) => {
+          const user = users.find(user => user.email === candidate.email);

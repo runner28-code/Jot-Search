@@ -427,7 +427,6 @@ export class BullhornService {
       } = d;
 
       const categoryId = d.categories?.total === 0 ? null : d.categories?.data[0].id;
-
       return {
         ...otherData,
         skillList: this.makeListArray(d.skillList),
@@ -704,3 +703,5 @@ export class BullhornService {
         const url = `${this.restUrl}search/Candidate?${query}`;
         const res = await axios.get(url, {
           headers: {
+            "Content-Type": "application/json;charset=UTF-8",
+            Accept: "*/*",

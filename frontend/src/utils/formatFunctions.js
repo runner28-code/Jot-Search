@@ -52,7 +52,6 @@ export function convertUserToCandidate(user) {
     address_address1: user.address1 || '',
     address_address2: user.address2 || '',
     address_city: user.city || '',
-// Temp comment
     address_state: user.state || '',
     address_zip: user.zip || '',
     workAuthorized: user.workAuthorized || false,

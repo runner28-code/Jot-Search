@@ -450,3 +450,4 @@ export const getCoordinatorDashboardStats = async (days: number) => {
   });
   const newCandidatesInPreviousPeriod = await db.candidate.count({
     where: {
+      createdAt: {

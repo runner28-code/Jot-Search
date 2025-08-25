@@ -99,6 +99,7 @@ export default function Candidate() {
       {role !== 'candidate' && 
         <CandidateCard
           data={candidateData}
+// Temp comment
           disableLink
         />
       }

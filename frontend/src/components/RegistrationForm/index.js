@@ -75,7 +75,6 @@ export default function RegistrationForm(loggedIn) {
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({
-          loading: false,
           success: false,
         });
         return;
@@ -163,7 +162,6 @@ export default function RegistrationForm(loggedIn) {
 
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
-// Temp comment
       setReferralChoice(true);
     }
     if( value !== 'Community Partner' ) {
