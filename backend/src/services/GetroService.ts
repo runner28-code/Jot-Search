@@ -50,7 +50,6 @@ export class GetroService {
                 const { items } = res.data;
                 if (items.length > 0) {
                     this.networkId = items[0].id;
-                } else {
                     return false;
                 }
                 console.log('Network ID: ', this.networkId);
@@ -206,3 +205,4 @@ export class GetroService {
                 joined_at: new Date(data.joined_at),
             };
         }
+        return null;

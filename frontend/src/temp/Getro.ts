@@ -57,3 +57,4 @@ export type Job = {
 };
 
 export type User = {
+    id: string;

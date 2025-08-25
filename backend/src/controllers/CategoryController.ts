@@ -37,7 +37,6 @@ export class CategoryController {
       return {
         category: undefined,
         message: error,
-      };
     }
   }
 
@@ -45,3 +44,4 @@ export class CategoryController {
   async searchByFilter(
     @Body() body: FilterBody
   ): Promise<CategorySearchByFilterResponse> {
+    try {

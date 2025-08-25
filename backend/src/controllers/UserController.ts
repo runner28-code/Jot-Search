@@ -164,3 +164,4 @@ export class UserController {
     user.password = new_password;
 
     return await update(user.id, user.role, user);
+  }

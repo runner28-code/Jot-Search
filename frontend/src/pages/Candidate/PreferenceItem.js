@@ -43,6 +43,7 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
   const toggleStyles = toggled ? toggleOnToggleStyles : toggleOffToggleStyles
 
   const handleToggle = () => {
+// Temp comment
     if (disabled) {
       return null;
     }

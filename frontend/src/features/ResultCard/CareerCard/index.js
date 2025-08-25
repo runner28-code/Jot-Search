@@ -101,6 +101,7 @@ function DesktopCard({ dataObj, active }) {
         </div>
         {/* Expertise */}
         <p className='text-md text-royalBlue font-spaceGrotesk font-semibold mt-6'>{categoryString}</p>
+        {/* First row icons */}
         <div className='w-full flex items-center mt-10'>
           {/* Candidate Favorites */}
           <div className='w-1/3 flex items-center pr-4'>
@@ -150,6 +151,7 @@ DesktopCard.propTypes = {
     data: PropTypes.shape({
       id: PropTypes.string,
       clientCorporation: PropTypes.string,
+// Temp comment
       city: PropTypes.string,
       state: PropTypes.string,
       company_logo: PropTypes.string,

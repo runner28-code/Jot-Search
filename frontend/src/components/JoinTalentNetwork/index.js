@@ -33,7 +33,6 @@ export default function JoinTalentNetwork() {
         </div>
       </section>
     </>)
-  }
   return (<>
     {/* Join Hero and call-to-action */}
     <section className='relative h-300 bg-join-hero bg-cover bg-center'>

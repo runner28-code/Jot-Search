@@ -235,3 +235,5 @@ export type Candidate = {
     occupation?: string; // !
     onboardingDocumentReceivedCount?: string;
     onboardingDocumentSentCount?: string;
+    onboardingPercentComplete?: string;
+    onboardingStatus?: string;

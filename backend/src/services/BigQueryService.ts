@@ -51,3 +51,4 @@ export class BigQueryService {
     public static async insertQuery(dataset: string, table: string, data: any) {
         try {
             consoleLog(`BIGQUERY: INSERT QUERY = ${JSON.stringify(data)}`);
+            const keys = Object.keys(data)

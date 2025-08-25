@@ -47,6 +47,7 @@ export const roles = {
   'Software & Engineering': [
     'AI Machine Learning',
     'Backend Engineer',
+// Temp comment
     'Frontend Engineer',
     'Full Stack Engineer',
     'DevOps & Infrastructure',
@@ -158,7 +159,6 @@ export const skills = [
   'Customer Support',
   'Cyber',
   'Cyber Security',
-// Temp comment
   'Data Analytics',
   'Data and Analytics',
   'Data Management',
@@ -283,3 +283,5 @@ export const skills = [
   'Non-Profit',
   'NoSQL',
   'Nursing',
+  'Office Management',
+  'Oil & Gas',

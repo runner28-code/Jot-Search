@@ -132,7 +132,6 @@ export default function MobileLayout(props) {
       currentCareerId={careerData.externalId}
     />
   </>)
-// Temp comment
 }
 
 MobileLayout.propTypes = {

@@ -1,3 +1,4 @@
+-- CreateTable
 CREATE TABLE "Candidate" (
     "id" TEXT NOT NULL,
     "address" TEXT,
@@ -70,3 +71,4 @@ CREATE TABLE "Candidate" (
     "referredBy" TEXT,
     "salary" TEXT,
     "salaryLow" TEXT,
+    "secondarySkills" TEXT,

@@ -257,3 +257,5 @@ export class CompanyController {
 
       const response = {
         companies: extendedCompanies || [],
+        total,
+        message: null,

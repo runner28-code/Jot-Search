@@ -112,7 +112,6 @@ export class CandidateController {
     } catch (error) {
       console.error(error)
       return { message: error, result: false };
-    }
   }
 
   @Authorized()
@@ -295,3 +294,5 @@ export class CandidateController {
               in: emails.filter((email) => email),
             }
           }
+        });
+        extendedCandidates = candidates.map((candidate: any) => {

@@ -699,3 +699,8 @@ export class BullhornService {
           query: "isDeleted:0  AND NOT status:Archive",
           start: offset,
           count,
+          sort,
+        });
+        const url = `${this.restUrl}search/Candidate?${query}`;
+        const res = await axios.get(url, {
+          headers: {

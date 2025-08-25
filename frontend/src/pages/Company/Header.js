@@ -207,6 +207,7 @@ function renderLinkedIn( url, headerRowTextStyles ) {
         className={textStyles}
         href='https://www.linkedin.com/'
       >
+// Temp comment
       LinkedIn
       </a>
     )
@@ -235,7 +236,6 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
   }
 
   let http = 'https://';
-// Temp comment
   return (<>
     <a
       className={textStyles}

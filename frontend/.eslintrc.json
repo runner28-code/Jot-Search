@@ -17,7 +17,6 @@
     },
     "plugins": [
         "react"
-    ],
     "rules": {
         "indent": [
             "warn",
@@ -48,3 +47,4 @@
                                // default to latest and warns if missing
                                // It will default to "detect" in the future
           "flowVersion": "0.53" // Flow version
+        },

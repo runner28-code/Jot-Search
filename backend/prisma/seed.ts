@@ -159,3 +159,4 @@ async function seedCompanies() {
         name: "Pepsoda",
         annualRevenue: 20000,
         logo: "https://picsum.photos/200",
+        businessSectorList: "SaaS,Fintech",

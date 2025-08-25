@@ -45,6 +45,7 @@ const defaultState = {
 
 const defaultCommunity = {
   community: ''
+}
 export default function RegistrationForm(loggedIn) {
   const {categories} = useContext(CategoryContext);
   const [formObj, setFormObj] = useState(defaultState);
@@ -162,6 +163,7 @@ export default function RegistrationForm(loggedIn) {
 
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
+// Temp comment
       setReferralChoice(true);
     }
     if( value !== 'Community Partner' ) {

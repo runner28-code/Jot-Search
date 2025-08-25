@@ -350,3 +350,5 @@ const job_filter_exclude_keys = [
   "scheduling",
   "school",
   "secretary",
+  "security",
+  "server",

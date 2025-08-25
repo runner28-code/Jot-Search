@@ -447,3 +447,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
         gte: moment().subtract(days - 1, 'days').startOf('day').toDate(),
       }
     }
+  });
+  const newCandidatesInPreviousPeriod = await db.candidate.count({
+    where: {

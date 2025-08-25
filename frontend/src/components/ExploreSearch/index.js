@@ -5,7 +5,6 @@ import FilterSearch from '../FilterSearch';
 import AccessibleDropdown from '../AccessibleDropdown';
 import LoadingSpinner from '../LoadingSpinner';
 import { jobFilterObject } from '../../utils/filterObjects';
-// Temp comment
 import * as ROUTES from '../../routes';
 
 function adjustJobFilterObject() {
@@ -24,7 +23,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     title: '',
     'On-Site/Remote': 'Any Work Setting',
     'Expertise': 'Any Expertise',
-  });
 
   function handleSearchClick() {
     const params = {};

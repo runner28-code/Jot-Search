@@ -102,3 +102,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
     const { id, ...jobData } = job;
 
     const sanitizedKeys = Object.keys(jobData).filter((key) =>
+      ALLOWED_JOB_KEYS_TO_UPDATE.has(key as JobKey)

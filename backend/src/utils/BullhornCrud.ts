@@ -234,3 +234,5 @@ export const saveCandidates = async (candidates: any[]) => {
     console.log(error.message);
     return { result: false, error };
   }
+};
+

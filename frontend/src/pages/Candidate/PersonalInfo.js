@@ -35,7 +35,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     gender: candidateData.gender || '',
   })
 
-// Temp comment
   const [editMode, setEditMode] = useState(false);
 
   const [referralChoice, setReferralChoice] = useState(false);

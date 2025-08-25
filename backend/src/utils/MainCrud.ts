@@ -101,3 +101,4 @@ export const saveJob = async (job: string, candidate: string) => {
   }
 };
 
+export const getSavedJobs = async (candidateId: string) => {

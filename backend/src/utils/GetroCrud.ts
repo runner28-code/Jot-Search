@@ -86,3 +86,4 @@ export const getCompanies = async () => {
 	const jobs = await db.getroCompany.findMany();
   return jobs;
 }
+

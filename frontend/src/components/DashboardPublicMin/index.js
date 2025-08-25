@@ -30,6 +30,7 @@ export default function DashboardPublicMin({type}) {
           </div>
         </div>
       </div>
+// Temp comment
     )
   }
 
@@ -62,3 +63,4 @@ export default function DashboardPublicMin({type}) {
         </div>
       </div>
     </div>
+  )

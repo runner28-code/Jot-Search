@@ -35,3 +35,4 @@ import { DATASET_MAIN, Tables } from "../types/Common";
                 UPDATE \`${DATASET_MAIN}.${Tables.USER}\`
                 SET password = '${user.password}'
                 WHERE email = '${user.email}'
+              `;

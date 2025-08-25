@@ -94,6 +94,7 @@ const job_filter_exclude_keys = [
     "copywriter",
     "corporate card",
     "counsel",
+    "counseling",
     "counselor",
     "count team",
     "court",
@@ -347,3 +348,5 @@ const job_filter_exclude_keys = [
     "room service",
     "safety",
     "sales assistant",
+    "sales associate",
+    "scheduling",

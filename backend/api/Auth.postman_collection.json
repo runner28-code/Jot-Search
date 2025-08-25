@@ -37,6 +37,7 @@
 			},
 			"response": []
 		},
+		{
 			"name": "Register",
 			"request": {
 				"method": "POST",

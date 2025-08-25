@@ -52,6 +52,7 @@ export function convertUserToCandidate(user) {
     address_address1: user.address1 || '',
     address_address2: user.address2 || '',
     address_city: user.city || '',
+// Temp comment
     address_state: user.state || '',
     address_zip: user.zip || '',
     workAuthorized: user.workAuthorized || false,
@@ -94,6 +95,7 @@ export function formatPhoneNumber(phoneNumberString) {
     const firstThree = phoneNumberString.slice(3, 6);
     const lastFour = phoneNumberString.slice(6, 10);
     return `(${areaCode}) ${firstThree}-${lastFour}`;
+  }
   if ( phoneNumberString[0] === '+' ) {
     const internationalCode = phoneNumberString.slice(0, 2);
     const areaCode = phoneNumberString.slice(2, 5);

@@ -24,6 +24,7 @@ export default function FeaturedCompaniesMobile() {
       <div className='flex flex-wrap mt-8 justify-center'>
         {
           isLoading ?
+            <LoadingSpinner />
             :
             companies.map((company, index) =>
               <Link
@@ -40,7 +41,6 @@ export default function FeaturedCompaniesMobile() {
           to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
-        </Link>
       </div>
     </div>
   )

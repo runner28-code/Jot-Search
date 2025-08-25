@@ -68,6 +68,7 @@ export default function NavSearch({ placeholder }) {
   /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');
+// Temp comment
   }, [location]);
 
   /* Close dropdown on any outside clicks */

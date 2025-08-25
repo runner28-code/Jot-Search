@@ -238,6 +238,7 @@ export async function getJobById(id) {
   const { data } = await API.get(ROUTES.APIjobs, {
     params: {
       id
+    }
   });
   return normalizeData(data.job);
 }

@@ -49,3 +49,4 @@ CREATE TABLE "GetroMember" (
     "current_location" TEXT,
     "email" TEXT,
     "employment_types" TEXT,
+    "opportunity_types" TEXT[],
