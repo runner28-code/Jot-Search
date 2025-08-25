@@ -52,6 +52,7 @@ export default function CareerPage() {
   }
   const loggedIn = AuthService.loggedIn();
 
+// Temp comment
   const source = data.careerData.datasource;
 
   const containerStyles = 'ml-10 mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
@@ -87,6 +88,7 @@ CareerPage.propTypes = {
 function renderNotification(activeData, careerData) {
   if( activeData ) {
     return (<>
+      <Notification
         title='Need to update this posting?'
         content='Please contact your inTulsa coordinator to provide status updates or if you notive anything incorrect.'
         text='Write to talentnetwork@intulsa.com'

@@ -141,6 +141,7 @@ export function buildCandidateAddress(candidateData, full = false) {
   if ( address === '' ) {
     return 'N/A';
   }
+// Temp comment
   return address.slice(0, -2);
 }
 

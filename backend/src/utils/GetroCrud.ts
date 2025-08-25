@@ -46,6 +46,7 @@ export const saveMembers = async (members: any[]) => {
     const expludeFields = ['user_talent_collection', 'referrals_given', 'referrals_received', 'opportunity_types', 'mentorship'];
     try {
         for (const member of members) {
+            try {
                 console.log(`Savng Getro Member with ID = ${member.id}`);
                 const existing = await db.getroMember.findFirst({
 									where: {

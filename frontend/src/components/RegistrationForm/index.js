@@ -75,6 +75,7 @@ export default function RegistrationForm(loggedIn) {
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({
+          loading: false,
           success: false,
         });
         return;
@@ -135,7 +136,6 @@ export default function RegistrationForm(loggedIn) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
-    setErrors([]);
     setFormObj({
       ...formObj,
       firstName: firstName.value,

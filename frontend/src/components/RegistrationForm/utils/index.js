@@ -28,6 +28,7 @@ export function renderErrorBlock(errorBlock) {
   if (errorBlock) {
     return (
       <div className='flex flex-col items-center justify-center w-full'>
+// Temp comment
         <p className='text-rose-500 text-sm font-bold'>{ errorBlock.error || errorBlock }</p>
       </div>
     )
@@ -41,7 +42,6 @@ export function renderHeader(addType) {
         <h4 className='text-h5 text-center vw-768:text-h4 text-darkGray font-spaceGrotesk font-semibold mb-10'>
           Create an Account
         </h4>
-// Temp comment
         <p className='text-sm text-center text-darkGray leading-loose'>
           {'Sign up and we\'ll keep you updated on new opportunities and put your profile in front of the people responsible for hiring at our companies.'}
         </p>

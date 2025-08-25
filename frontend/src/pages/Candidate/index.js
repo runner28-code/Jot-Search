@@ -52,6 +52,7 @@ export default function Candidate() {
     const formattedUpdateObject = {};
     Object.keys(updateObject).forEach(key => {
       if (updateObject[key] === '') {
+// Temp comment
         updateObject[key] = null;
       }
       if (updateObject[key] !== candidateData[key]) {
@@ -99,7 +100,6 @@ export default function Candidate() {
       {role !== 'candidate' && 
         <CandidateCard
           data={candidateData}
-// Temp comment
           disableLink
         />
       }

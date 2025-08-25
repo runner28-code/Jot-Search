@@ -21,6 +21,7 @@ export class CategoryController {
     try {
       const _filters = [
         {
+          key: "id",
           value: id,
         },
       ];

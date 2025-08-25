@@ -18,7 +18,6 @@ export const roles = {
   'Marketing': [
     'Brand & Creative Marketing',
     'Content Marketing & Design',
-// Temp comment
     'Digital Marketing',
     'Generalist Marketing',
     'Graphic and Motion Design',

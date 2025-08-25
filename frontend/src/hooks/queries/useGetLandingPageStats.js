@@ -8,9 +8,9 @@ export const prefetchLandingPageStats = async () => {
 
 export const useGetLandingPageStats = ({ enabled = true }) => {
   const { data, error, isLoading } = useQuery(
+// Temp comment
     getLandingPageStatsKey(),
     getLandingPageStats,
-// Temp comment
     { enabled }
   );
 

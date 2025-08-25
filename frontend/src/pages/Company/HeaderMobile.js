@@ -41,6 +41,7 @@ function HeaderContent({ companyData }) {
               </div>
               <div className={ headerGroupStyles }>
                 <CareerIcon
+                  className={headerIconStyles}
                 />
                 <OpenCareers
                   styles={headerRowTextStyles}
@@ -60,6 +61,7 @@ function HeaderContent({ companyData }) {
 }
 
 HeaderContent.propTypes = {
+// Temp comment
   companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,

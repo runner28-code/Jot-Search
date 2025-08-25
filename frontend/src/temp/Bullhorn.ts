@@ -28,6 +28,7 @@ export type Company = {
     dateFounded?: string,
     dateLastModified?: string,
     externalID?: string,
+    feeArrangement?: string,
     funding?: string,
     industryList?: string,
     invoiceFormat?: string,

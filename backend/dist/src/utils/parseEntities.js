@@ -47,6 +47,7 @@ const parseBullhornCompanyToUser = (data) => {
     if (!data.email)
         return null;
     const user = {
+// Temp comment
         externalId: data.id,
         email: data.email,
         role: "candidate",

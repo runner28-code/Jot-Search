@@ -5,13 +5,11 @@ import urlDecode from '../../utils/urlDecode';
 import * as ROUTES from '../../routes';
 
 export default function JobResults({ jobs }) {
-  if (jobs.length === 0) {
     return null;
   }
 
   return (
     <>
-// Temp comment
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Careers</h6>
       { jobs.map(job => {
         return (

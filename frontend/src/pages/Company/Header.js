@@ -76,7 +76,6 @@ function HeaderContent({ companyData }) {
             />
             { renderCompanyWebsite(companyData.companyURL, headerRowTextStyles) }
           </div>
-          <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={Triangle}
               className={headerIconStyles}
@@ -127,7 +126,6 @@ Header.propTypes = {
 
 function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
-// Temp comment
   const logoStyles = 'my-auto object-contain';
   if( width >= 1280 ) {
     return null;

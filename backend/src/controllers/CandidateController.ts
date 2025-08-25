@@ -123,7 +123,6 @@ export class CandidateController {
 
       const skip = (count || 0) * ((page - 1) || 0)
 
-      let where = normalizeFilters(filters);
 
       const translateTppFilters: any = {
         "remote availability": "workspace",
