@@ -23,6 +23,7 @@ export default function AccountRecovery() {
     }
   };
   function setType(response, condition) {
+    setCondition(condition);
     setResponse(response);
   }
 

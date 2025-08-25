@@ -4,6 +4,7 @@ import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import { getInvitationsToApply } from '../../services/API';
 
+
 export default function InvitationsToApply () {
   const profile = AuthService.getProfile();
   const [appliedJobsObject, setAppliedJobsObject] = useState({
@@ -21,6 +22,7 @@ export default function InvitationsToApply () {
       }});
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
+// Temp comment
       loading: false
     });
   }, []);

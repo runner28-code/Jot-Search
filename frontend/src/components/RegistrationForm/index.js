@@ -118,6 +118,7 @@ export default function RegistrationForm(loggedIn) {
         });
       }
     }
+  }, [submissionObject.loading]);
 
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {

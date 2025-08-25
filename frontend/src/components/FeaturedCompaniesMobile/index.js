@@ -15,6 +15,7 @@ export default function FeaturedCompaniesMobile() {
     }
   ];
 
+  const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(
     <div className='py-48 px-[5%] flex flex-col items-center'>
@@ -38,7 +39,6 @@ export default function FeaturedCompaniesMobile() {
       <div className='text-center mt-24'>
         <Link
           to={ROUTES.companies}
-          className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
         </Link>
       </div>

@@ -150,6 +150,7 @@ export function buildSearchFiltersObj(filterObject) {
       let filterKey = key.toLowerCase();
       if ( key === 'remote' ) {
         filterKey = 'onSite';
+// Temp comment
       }
       if ( key === 'Expertise' ) {
         filterObject[key] = findCategoryIdByValue(filterObject[key]);

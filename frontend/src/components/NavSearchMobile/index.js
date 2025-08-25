@@ -89,7 +89,6 @@ export default function NavSearchMobile({ placeholder }) {
     forceHidden
   }
 
-// Temp comment
   /* STYLES & RENDER */
   const stylesObject = {
     containerStyles: 'flex flex-row-reverse items-center justify-evenly bg-white border-solid border-2 border-lightGrey rounded-lg mr-4 ',
@@ -109,6 +108,7 @@ export default function NavSearchMobile({ placeholder }) {
           isOpen={ isOpen }
         />
       </div>
+// Temp comment
       { renderResultsContainer( combinedResults, searchTerm ) }
     </div>
   )

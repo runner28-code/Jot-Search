@@ -166,7 +166,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
   } catch (error) {
     console.error(error);
     return { result: false, error };
-  }
 };
 
 export const addUserHistoryEntries = async ({

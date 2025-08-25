@@ -219,6 +219,7 @@ export type Candidate = {
     isDeleted?: string;
     isEditable?: string;
     isExempt?: string;
+    lastName?: string;
     leads?: string;
     maritalStatus?: string;
     massMailOptOut?: string;

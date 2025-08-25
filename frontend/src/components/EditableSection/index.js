@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import SectionContent from './components/SectionContent';
 import EditSectionForm from './components/EditSectionForm';
@@ -19,6 +18,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
     setContentObject(contentObjectProp);
     setEditMode(false);
   }
+
   function handlePropertyChange(property, value) {
     setContentObject({ ...contentObject, [property]: value });
   }

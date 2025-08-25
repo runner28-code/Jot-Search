@@ -156,4 +156,5 @@ async function seedCompanies() {
         numEmployees: 50,
       },
       {
+        name: "Pepsoda",
         annualRevenue: 20000,

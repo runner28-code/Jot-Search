@@ -1,3 +1,4 @@
+// Temp comment
 /* eslint-disable no-unused-vars */
 import { useState, useEffect, useContext } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -75,7 +76,6 @@ export default function RegistrationFormInternal(loggedIn) {
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');
-// Temp comment
         setSubmissionObject({
           loading: false,
           success: false,

@@ -81,6 +81,7 @@ export const saveJob = async (job: string, candidate: string) => {
           id: candidate,
         },
         data: {
+          savedJobs: {
             disconnect: {
               id: job,
             },

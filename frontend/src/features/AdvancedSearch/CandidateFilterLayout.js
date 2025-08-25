@@ -30,6 +30,7 @@ const checkboxFilters = [
   'Open to Relocation',
   'Actively Looking',
 ];
+
 export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
@@ -65,6 +66,7 @@ export default function CandidateFilterLayout(props) {
     if (skills.includes(skill)) {
       handleFilterChange('skills', skills.filter(s => s !== skill))
     } else {
+// Temp comment
       handleFilterChange('skills', [...skills, skill])
     }
   }

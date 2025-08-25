@@ -8,7 +8,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-// Temp comment
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -31,7 +30,6 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
         };
         const [job] = yield BigQueryService_1.BigQueryService.getClient().createQueryJob(options);
         const [res] = yield job.getQueryResults();
-        if (res && res.length > 0 && `'${res[0].id}'` === id) {
             return true;
         }
         return false;

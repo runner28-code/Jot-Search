@@ -71,6 +71,7 @@ export default function ExpertiseLinks() {
           />
           <span className={textStyles}>Operations</span>
         </Link>
+// Temp comment
         {/* Finance */}
         <Link
           to={ROUTES.careers}
@@ -86,3 +87,4 @@ export default function ExpertiseLinks() {
         </Link>
       </div>
     </section>
+  )

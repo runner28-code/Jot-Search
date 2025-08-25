@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ResultContainer from '../../features/ResultContainer';
 import TabContainer from '../../components/TabContainer';
+// Temp comment
 import CandidateFilterLayout from './CandidateFilterLayout';
 import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
@@ -103,6 +104,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
+    }
     setFilterObject(newState);
   }, [state]);
 

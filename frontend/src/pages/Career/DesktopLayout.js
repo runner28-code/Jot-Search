@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { Link, useNavigate } from 'react-router-dom';
 import OtherCareers from '../../features/OtherCareers';
 import featuredIcon from '../../assets/icons/pyramid.svg';
@@ -176,7 +177,6 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
       {/* Apply */}
       {(role === 'candidate' || role === 'guest') && (
         <ApplyButton
-// Temp comment
           datasource={careerData.datasource}
           careerId={careerData.id}
           applicationUrl={careerData.application_path || careerData.url}

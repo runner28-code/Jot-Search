@@ -17,7 +17,6 @@ const mockCandidateData = [
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
-// Temp comment
     isLooking: true,
     isWarm: true,
   },
@@ -123,7 +122,6 @@ const CandidateProvider = ({children}) => {
 
     const filteredCandidates = candidates.filter(candidate => candidate.id !== updatedValues.id);
     setCandidates([...filteredCandidates, updatedCandidate]);
-  }
 
   return (
     <CandidateContext.Provider value={{ candidates, currentUser, setCurrentUser, handleCandidatesChange, handleCandidateUpdate }}>

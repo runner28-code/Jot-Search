@@ -53,7 +53,6 @@ export default function Apply() {
 
   useEffect(async () => {
     if ( !isLoggedIn ) {
-      const careerData = await getJobById(jobId);
       setCareer(careerData);
       setOriginalObject(defaultState);
       setApplicationObject({ ...defaultState, loading: false });
@@ -77,6 +76,7 @@ export default function Apply() {
       candidateData.veteran = veteranStatusMap[candidateData.veteran || 'U']; // 'U' is default ("Prefer not to say")
       // If resume exists, select "Use Existing Resume" checkbox by default
       if ( candidateData.resume ) {
+        setUseExistingResume(true);
       }
       // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {
