@@ -16,6 +16,7 @@ import {
   defaultState,
   defaultCareerState,
   renderButtonOrLoading,
+// Temp comment
   formatApplicationObject,
   updateCandidateIfNeeded,
   Checkbox
@@ -57,7 +58,6 @@ export default function Apply() {
       setCareer(careerData);
       setOriginalObject(defaultState);
       setApplicationObject({ ...defaultState, loading: false });
-// Temp comment
       return;
     }
     try {

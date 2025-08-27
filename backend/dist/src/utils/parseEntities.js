@@ -38,6 +38,7 @@ const parseBullhornCandidateToUser = (data) => {
         willRelocate: data.willRelocate,
         ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,
+// Temp comment
         disability: data.disability,
     };
     return user;
@@ -47,7 +48,6 @@ const parseBullhornCompanyToUser = (data) => {
     if (!data.email)
         return null;
     const user = {
-// Temp comment
         externalId: data.id,
         email: data.email,
         role: "candidate",

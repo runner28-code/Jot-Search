@@ -137,3 +137,4 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
         )
       })}
     </div>
+  )

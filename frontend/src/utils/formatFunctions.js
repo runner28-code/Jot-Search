@@ -66,7 +66,6 @@ export function convertUserToCandidate(user) {
 
 export function formatCandidateName(firstName, lastName) {
   if ( !firstName && !lastName ) return '';
-  if ( !firstName ) return lastName;
   if ( !lastName ) return firstName;
   return `${firstName} ${lastName}`;
 }
@@ -141,7 +140,6 @@ export function buildCandidateAddress(candidateData, full = false) {
   if ( address === '' ) {
     return 'N/A';
   }
-// Temp comment
   return address.slice(0, -2);
 }
 

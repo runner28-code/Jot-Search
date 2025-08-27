@@ -39,7 +39,6 @@ exports.CompanyFilter = {
     getro: {
         name: "name",
         city: "locations",
-// Temp comment
     },
     joined: {
         name: "name",

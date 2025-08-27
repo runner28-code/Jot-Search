@@ -162,7 +162,6 @@ export type ClientContact = {
     occupation?: string;
     office?: string;
     owner?: string;
-    pager?: string;
     password?: string;
     phone?: string;
     phone2?: string;

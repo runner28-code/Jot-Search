@@ -34,7 +34,6 @@ export default function AddUser() {
         inputStyles='text-md vw-768:text-lg font-bold mx-4 px-2 py-4 ml-8 border-lightGrey border-solid border-2 rounded-2xl'
         name='formType'
         currentChosen={formType}
-        choices={['Candidate', 'Company', 'Coordinator']}
         handleChange={handleDropdownChange}
         noDefault={true}
       />

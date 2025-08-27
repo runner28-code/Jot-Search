@@ -5,7 +5,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {
   defaultJobFilterState,
   buildSearchFilters,
-// Temp comment
 } from '../../utils/filterObjects';
 
 // Images
@@ -27,6 +26,7 @@ export default function InviteToCareer({ candidate }) {
       job
     }
   }) || [];
+// Temp comment
   
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {

@@ -10,6 +10,6 @@ export default function PageHeader(props) {
   if ( width < 1280 ) {
     return <MobileHeader {...props} />
   } else {
-    return <DesktopHeader {...props} />
 // Temp comment
+    return <DesktopHeader {...props} />
   }

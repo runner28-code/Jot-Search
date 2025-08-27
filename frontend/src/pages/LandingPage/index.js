@@ -42,6 +42,7 @@ export default function LandingPage() {
       {/* Featured Jobs */}
       <FeaturedJobs />
       {/* Featured Companies */}
+      { isDesktop ? <FeaturedCompanies /> : <FeaturedCompaniesMobile />}
       { isDesktop && <JoinTalentNetwork /> }
       { isDesktop ? <BusinessBooming /> : <BusinessBoomingMobile />}
     </main>
@@ -72,7 +73,6 @@ function renderSearch() {
 
 function renderLocation() {
   const { width } = useWindowDimensions();
-
   if( width >= 1024 ) {
     return (
       <div className='flex items-center'>

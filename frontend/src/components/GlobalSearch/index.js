@@ -36,7 +36,6 @@ export default function GlobalSearch({ placeholder }) {
   const debounceSearchTermFunction = useCallback(
     debounce( handleDebounce, 300 ),
     []
-// Temp comment
   );
 
   async function handleDebounce( searchTerm ) {

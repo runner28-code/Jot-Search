@@ -100,7 +100,6 @@ const mockCandidateData = [
 export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
 
-const CandidateProvider = ({children}) => {
   const [candidates, setCandidates] = useState(mockCandidateData);
   const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
 
@@ -110,6 +109,7 @@ const CandidateProvider = ({children}) => {
         setCurrentUser(user);
       })
     }
+  }, []);
 
   const handleCandidatesChange = (value) => {
     setCandidates(value);

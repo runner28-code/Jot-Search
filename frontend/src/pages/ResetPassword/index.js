@@ -15,6 +15,7 @@ export default function ResetPassword() {
 
   const queryParams = new URLSearchParams(window.location.search);
   const token = queryParams.get('token');
+// Temp comment
 
   const handlePassword = (event) => {
     setPassword(event.target.value);

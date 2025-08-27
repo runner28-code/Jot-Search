@@ -33,6 +33,7 @@ const checkboxFilters = [
 
 export default function CandidateFilterLayout(props) {
   const {
+    defaultFilterObject,
     filterObject,
     handleFilterChange,
     searchTerm,
@@ -64,7 +65,6 @@ export default function CandidateFilterLayout(props) {
     const skills = filterObject.skills ?? []
     if (skills.includes(skill)) {
       handleFilterChange('skills', skills.filter(s => s !== skill))
-    } else {
       handleFilterChange('skills', [...skills, skill])
     }
   }

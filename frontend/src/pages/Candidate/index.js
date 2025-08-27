@@ -52,7 +52,6 @@ export default function Candidate() {
     const formattedUpdateObject = {};
     Object.keys(updateObject).forEach(key => {
       if (updateObject[key] === '') {
-// Temp comment
         updateObject[key] = null;
       }
       if (updateObject[key] !== candidateData[key]) {
@@ -123,6 +122,7 @@ export default function Candidate() {
               fieldName='willReceiveNotification'
               label={PREFERENCE_ITEMS.willReceiveNotification}
               onUpdate={handleCandidateUpdate} />
+// Temp comment
           </div>
         </div>
       }

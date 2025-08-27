@@ -13,7 +13,6 @@
 //                     "containerPort": 5000,
 //                     "hostPort": 5000,
 //                     "protocol": "tcp"
-//                 }
 //             ],
 //             "essential": true,
 //             "logConfiguration": {
@@ -21,4 +20,5 @@
 //                 "options": {
 //                     "awslogs-group" : "/ecs/prod-site-backend-task",
 //                     "awslogs-region": "us-east-1",
+//                     "awslogs-stream-prefix": "ecs"
 //                 }

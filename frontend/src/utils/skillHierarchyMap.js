@@ -224,7 +224,6 @@ export const skills = [
   'Hospitality',
   'HR',
   'HR Policies',
-  'HRIS',
   'HTML',
   'HTTP',
   'Hydraulics',

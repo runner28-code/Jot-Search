@@ -38,7 +38,6 @@ export class CandidateController {
   @Get("/search")
   async searchById(@QueryParam("id") id: string) {
     try {
-      const user = await db.user.findFirst({
         where: {
           id,
         },
@@ -123,6 +122,7 @@ export class CandidateController {
 
       const skip = (count || 0) * ((page - 1) || 0)
 
+      let where = normalizeFilters(filters);
 
       const translateTppFilters: any = {
         "remote availability": "workspace",
