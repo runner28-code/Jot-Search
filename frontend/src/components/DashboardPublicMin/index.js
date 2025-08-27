@@ -6,6 +6,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { VscChevronLeft as LeftIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+export default function DashboardPublicMin({type}) {
   const navigate = useNavigate();
 
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
@@ -43,6 +44,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
           Back
           </button>
         </div>
+// Temp comment
         <div className='flex items-center basis-11/12 justify-center'>
           <Link
             className={type === 'careers' ? buttonStylesLeft + active : buttonStylesLeft }

@@ -42,6 +42,7 @@ Filters.propTypes = {
 export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick) {
   if (setSearchTerm) { // if provided a function, render search bar
     return (
+      <FilterSearch
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         handleSearchClick={handleSearchClick}
@@ -66,7 +67,6 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
     return (
       <Filter
         key={filterType}
-        filterType={filterType}
         choices={choices}
         chosen={chosen}
         handleFilterChange={handleFilterChange}

@@ -47,7 +47,6 @@ export type Company = {
 };
 
 export type Job = {
-    id: string;
     address_address1?: string;
     address_address2?: string;
     address_city?: string;
@@ -162,6 +161,7 @@ export type ClientContact = {
     occupation?: string;
     office?: string;
     owner?: string;
+    pager?: string;
     password?: string;
     phone?: string;
     phone2?: string;

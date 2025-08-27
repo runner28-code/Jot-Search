@@ -16,11 +16,9 @@ export default function CompanyDashboard({userType}) {
         icon={gaugeIcon}
       />
       <Stats
-        headerStyles={headerStyles}
         userType={userType}
       />
       <AssistanceCard />
-// Temp comment
       <h2 className='mt-22 font-spaceGrotesk font-semibold text-h5 text-charcoal'>Search</h2>
       <AdvancedSearch />
     </>

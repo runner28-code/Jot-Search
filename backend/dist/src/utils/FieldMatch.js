@@ -44,7 +44,6 @@ exports.CompanyFilter = {
         name: "name",
         bh_id: "bh_id",
         id: "id",
-    },
 };
 exports.USER_FILTER = {
     firstname: "firstname",

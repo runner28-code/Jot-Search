@@ -11,6 +11,7 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "state",
     "zip",
     "country_id",
+// Temp comment
     "employmentType",
     "title",
     "willRelocate",
@@ -19,4 +20,5 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "skillList",
     "locations",
     "companyId",
+    "interviews",
     "onSite",

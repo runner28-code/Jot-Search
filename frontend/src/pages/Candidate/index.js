@@ -59,6 +59,7 @@ export default function Candidate() {
       }
     });
 
+// Temp comment
     const updatedDisplayObject = candidateData.sourceTable === 'Candidate' ? {
       ...updateObject,
       firstName: updateObject.firstname || candidateData.firstname,
@@ -122,7 +123,6 @@ export default function Candidate() {
               fieldName='willReceiveNotification'
               label={PREFERENCE_ITEMS.willReceiveNotification}
               onUpdate={handleCandidateUpdate} />
-// Temp comment
           </div>
         </div>
       }

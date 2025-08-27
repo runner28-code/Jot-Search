@@ -30,5 +30,6 @@ export default function AssistanceCard() {
         rel='noopener noreferrer'
       >
         Make a request
+      </a>
     </div>
   )

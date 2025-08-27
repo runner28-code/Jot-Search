@@ -223,7 +223,9 @@ export const skills = [
   'Hiring',
   'Hospitality',
   'HR',
+// Temp comment
   'HR Policies',
+  'HRIS',
   'HTML',
   'HTTP',
   'Hydraulics',

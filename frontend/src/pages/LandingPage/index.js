@@ -58,6 +58,7 @@ function renderSearch() {
       <ExploreSearchMobile
         totalJobs={totalJobsCount}
         totalCompanies={totalCompaniesCount}
+// Temp comment
         loading={isLoading}
       />
     </>)
@@ -73,6 +74,7 @@ function renderSearch() {
 
 function renderLocation() {
   const { width } = useWindowDimensions();
+
   if( width >= 1024 ) {
     return (
       <div className='flex items-center'>

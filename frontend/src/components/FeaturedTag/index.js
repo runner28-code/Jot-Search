@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import pyramid from '../../assets/icons/pyramid-alt.svg';
 
+export default function FeaturedTag ({ hide, addClass }) {
   let classes = 'flex items-center px-8 py-2 bg-emerald-400 rounded-full text-white text-sm ';
   const allClasses = classes += addClass;
   if( hide ) {
@@ -10,6 +11,7 @@ import pyramid from '../../assets/icons/pyramid-alt.svg';
     <span className={ allClasses }>
       <img
         className='mr-6'
+// Temp comment
         src={pyramid}
         alt='featured icon'
       />

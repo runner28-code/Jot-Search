@@ -65,6 +65,7 @@ export default function CandidateFilterLayout(props) {
     const skills = filterObject.skills ?? []
     if (skills.includes(skill)) {
       handleFilterChange('skills', skills.filter(s => s !== skill))
+    } else {
       handleFilterChange('skills', [...skills, skill])
     }
   }
@@ -93,7 +94,6 @@ export default function CandidateFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-          handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />

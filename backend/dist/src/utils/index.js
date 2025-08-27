@@ -46,7 +46,6 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
         const query = `
             SELECT * FROM \`${datset}.${table}\`
             WHERE ${condition}
-        `;
         const options = {
             query: query,
             location: 'US',

@@ -3,7 +3,6 @@
     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "containerDefinitions": [
-        {
             "name": "intulsa-frontend-container-prod",
             "image": "site-frontend:prod",
             "cpu": 1024,
@@ -19,6 +18,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
+                   "awslogs-group" : "/ecs/prod-site-frontend-task",
                    "awslogs-region": "us-east-1",
                    "awslogs-stream-prefix": "ecs"
                 }

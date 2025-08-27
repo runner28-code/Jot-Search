@@ -121,6 +121,7 @@ export default function DesktopLayout(props) {
 
 DesktopLayout.propTypes = {
   data: PropTypes.shape({
+    careerData: PropTypes.object.isRequired,
     categoryString: PropTypes.string.isRequired,
     role: PropTypes.string.isRequired,
     addressString: PropTypes.string.isRequired,
@@ -135,7 +136,6 @@ function renderLogo(logo) {
       <CareerIcon className='w-30 h-30 fill-royalBlue' />
     </div>
   }
-  return <img
     src={logo}
     className='w-48 h-48 object-contain mr-10'
   />

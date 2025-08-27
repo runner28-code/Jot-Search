@@ -29,6 +29,7 @@ import { DATASET_MAIN, Tables } from "../types/Common";
               continue
             }
             if(user.password.length < 152) {
+              user.password = encryptPassword(user.password);
 
               const update_query = `
                 UPDATE \`${DATASET_MAIN}.${Tables.USER}\`

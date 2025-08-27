@@ -52,6 +52,7 @@ export default function CareerCard({ data, active }) {
         type={'job'}
         data={data} />
     </div>
+// Temp comment
   )
 }
 
