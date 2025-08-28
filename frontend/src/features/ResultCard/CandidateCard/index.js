@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
-import FavoriteButton from '../FavoriteButton';
 import eyeCon from '../../../assets/icons/eye-con.svg'; // Get it? eyeCon instead of icon? It's funny.
 import linkedinIcon from '../../../assets/icons/linkedin-circle.svg';
 import locationIcon from '../../../assets/icons/placepin.svg';

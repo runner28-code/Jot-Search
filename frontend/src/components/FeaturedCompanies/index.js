@@ -45,7 +45,6 @@ export default function FeaturedCompanies() {
       </div>
     </div>
   )
-// Temp comment
 }
 function renderColorShapes() {
   return(

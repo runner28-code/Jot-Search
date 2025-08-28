@@ -9,6 +9,7 @@ import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
+// Temp comment
 
 export default function DashboardCandidate({togglePassState, toggle}) {
   const { width } = useWindowDimensions();

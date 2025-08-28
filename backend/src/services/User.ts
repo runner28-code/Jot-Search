@@ -102,7 +102,6 @@ export const register = async (data: User) => {
 };
 
 export const update = async (parent_id: string, role: string, data: any) => {
-  try {
     const user_id = data.id;
     const id = user_id || parent_id;
     if (user_id && role !== COORDINATOR && parent_id !== user_id) {
@@ -433,6 +432,7 @@ export const getCoordinatorDashboardStats = async (days: number) => {
   const companyCompare = (totalCompanies - totalCompaniesInPreviousPeriod) * 100 / totalCompanies;
 
   const totalCandidates = await db.candidate.count();
+  const totalCandidatesInPreviousPeriod = await db.candidate.count({
     where: {
       ...previousPeriodCommonQuery
     }

@@ -94,6 +94,7 @@ export default function CandidateFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
+          handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />

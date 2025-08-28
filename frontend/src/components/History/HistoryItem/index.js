@@ -57,4 +57,3 @@ function formatDateString(date) {
   
   // Format date
   const formattedDate = formatDateByDay(isToday, isYesterday, dateObj);
-  return formattedDate;

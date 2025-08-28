@@ -119,6 +119,7 @@ Company.propTypes = {
 
 function RenderHeader({type, loggedIn}) {
   if( loggedIn ) {
+    return(<>
       <DetailsHeader type='company' />
     </>)
   }

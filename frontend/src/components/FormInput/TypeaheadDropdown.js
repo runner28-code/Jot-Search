@@ -27,7 +27,6 @@ export default function TypeaheadDropdown(props) {
 
   const handleChoiceClick = useCallback((choice) => {
     if (!currentChosen.includes(choice)) {
-      onChange(name, [...currentChosen, choice]);
     } else {
       onChange(name, currentChosen.filter(item => item !== choice));
     }
@@ -90,6 +89,7 @@ TypeaheadDropdown.propTypes = {
   placeholder: PropTypes.string.isRequired,
   choices: PropTypes.array.isRequired,
   currentChosen: PropTypes.array.isRequired,
+  onChange: PropTypes.func.isRequired,
   baseStyles: PropTypes.string.isRequired,
   inputHeight: PropTypes.string.isRequired,
   disabled: PropTypes.bool,

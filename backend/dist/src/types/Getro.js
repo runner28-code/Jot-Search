@@ -1,8 +1,8 @@
 "use strict";
-// Temp comment
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ALLOWED_GETRO_FILTERS = void 0;
 exports.ALLOWED_GETRO_FILTERS = new Set([
+// Temp comment
     "id",
     "application_method",
     "application_path",

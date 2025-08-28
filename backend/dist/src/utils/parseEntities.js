@@ -27,7 +27,6 @@ const parseBullhornCandidateToUser = (data) => {
         description: data.description,
         phone: data.phone || data.workPhone || data.mobile,
         status: data.status,
-// Temp comment
         username: data.username,
         companyName: data.companyName,
         companyURL: data.companyURL,
@@ -54,6 +53,7 @@ const parseBullhornCompanyToUser = (data) => {
         address1: data.address_address1,
         address2: data.address_address2,
         city: data.address_city,
+// Temp comment
         state: data.address_state,
         zip: data.address_zip,
         resume: undefined,

@@ -21,4 +21,5 @@ export default function Careers() {
   const sectionStyles = '';
   const { width } = useWindowDimensions();
 
+  function togglePassState() {
     setToggle(toggle => !toggle);

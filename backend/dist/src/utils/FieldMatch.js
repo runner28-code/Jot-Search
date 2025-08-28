@@ -15,7 +15,6 @@ exports.JobFilter = {
         hidden: "hidden",
         companyId: "clientCorporationID",
     },
-    main: {
         id: "id",
         status: "status",
         skillList: "skillList",
@@ -44,6 +43,7 @@ exports.CompanyFilter = {
         name: "name",
         bh_id: "bh_id",
         id: "id",
+    },
 };
 exports.USER_FILTER = {
     firstname: "firstname",

@@ -62,7 +62,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
 export async function getCandidateById(id) {
   const { data } = await API.get(ROUTES.APIcandidates, {
     params: {
-      id
     }
   });
   return normalizeData(data.candidate);
@@ -203,6 +202,7 @@ export async function getSavedCompanies(id, count = null, page = null) {
  *  },
  *  ...
  * ] 
+ */
 export async function getJobs(filters, count, operator, page) {
   return (await getJobsFull(filters, count, operator, page)).jobs;
 }

@@ -14,9 +14,11 @@ export default function CareerFavorite () {
   const { width } = useWindowDimensions();
 
   return(
+// Temp comment
     <div className='flex items-center flex-col justify-center bg-white rounded-lg py-24 px-12 vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
       <div className='relative w-24 mb-8'>
         <div className='bg-yellowSquare w-12 h-12' />
+        <div className='bg-cyanSquare bg-cyan-400 top-[-20px] right-[5px] absolute w-6 h-6' />
       </div>
       <h2 className='font-spaceGrotesk text-h5 text-zinc-500 mb-8 text-center'>My Career Favorites</h2>
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>

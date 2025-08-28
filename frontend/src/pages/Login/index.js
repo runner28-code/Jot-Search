@@ -12,6 +12,7 @@ export default function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email, password } = event.target;
+    const res = await API.post(ROUTES.APIlogin, {
       email: email.value,
       password: password.value,
     });
@@ -91,6 +92,5 @@ export default function Login() {
             help@intulsa.com
           </a>
         </div>
-      </div>
     </section>
   )
