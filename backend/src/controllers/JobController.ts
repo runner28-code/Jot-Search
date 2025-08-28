@@ -283,7 +283,6 @@ export class JobController {
     count: number,
     operator: Operator = "OR"
   ) {
-    if (filters?.every((opt) => JobFilter.bullhorn[opt.key] != null)) {
       const _dataset = DATASET_BULLHORN;
       const _table = Tables.JOBS;
 
@@ -310,3 +309,4 @@ export class JobController {
 
       const _join = `
         LEFT JOIN \`${DATASET_MAIN}.${Tables.JOINED_COMPANIES}\` as ${companyAlias} 
+          ON CONCAT("bl-", ${alias}.clientCorporationID) = ${companyAlias}.bh_id

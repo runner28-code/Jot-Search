@@ -14,7 +14,6 @@ export default function CareerFavorite () {
   const { width } = useWindowDimensions();
 
   return(
-// Temp comment
     <div className='flex items-center flex-col justify-center bg-white rounded-lg py-24 px-12 vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
       <div className='relative w-24 mb-8'>
         <div className='bg-yellowSquare w-12 h-12' />

@@ -44,7 +44,6 @@ export function convertUserToCandidate(user) {
     id: user.id,
     firstName: user.firstname || '',
     lastName: user.lastname || '',
-    name: formatCandidateName(user.firstname, user.lastname),
     email: user.email,
     phone: user.phone,
     description: user.description,

@@ -33,7 +33,6 @@ export function appendPathToBaseUrl(path) {
 }
 
 /* FETCH FUNCTIONS */
-//* CANDIDATES
 export async function getCandidates(filtersArr, count, page) {
   return (await getCandidatesFull(filtersArr, count, page)).candidates;
 }
@@ -62,6 +61,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
 export async function getCandidateById(id) {
   const { data } = await API.get(ROUTES.APIcandidates, {
     params: {
+      id
     }
   });
   return normalizeData(data.candidate);

@@ -102,6 +102,7 @@ export const register = async (data: User) => {
 };
 
 export const update = async (parent_id: string, role: string, data: any) => {
+  try {
     const user_id = data.id;
     const id = user_id || parent_id;
     if (user_id && role !== COORDINATOR && parent_id !== user_id) {
@@ -280,7 +281,6 @@ export const findUserByEmail = async (email: string) => {
 
     return user || null;
   } catch (error) {
-    console.log(error);
     return null;
   }
 };
@@ -450,3 +450,4 @@ export const getCoordinatorDashboardStats = async (days: number) => {
   const newCandidatesInPreviousPeriod = await db.candidate.count({
     where: {
       createdAt: {
+        gte: moment().subtract(days * 2 - 1, 'days').startOf('day').toDate(),

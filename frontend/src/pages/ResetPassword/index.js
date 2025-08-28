@@ -47,7 +47,6 @@ export default function ResetPassword() {
       }
     }
   };
-
   const renderSuccess = () => {
     if( success ) {
       return (

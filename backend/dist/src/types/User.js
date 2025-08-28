@@ -12,7 +12,6 @@ exports.IUSER = {
     role: "",
     address1: "",
     address2: "",
-    city: "",
     state: "",
     zip: "",
     resume: "",

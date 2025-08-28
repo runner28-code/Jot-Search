@@ -61,6 +61,7 @@ export const stateCodeMap = {
   Texas: 'TX',
   Utah: 'UT',
   Vermont: 'VT',
+// Temp comment
   Virginia: 'VA',
   Washington: 'WA',
   'West Virginia': 'WV',
@@ -69,5 +70,4 @@ export const stateCodeMap = {
 };
 
 export function getStateCode(stateName) {
-// Temp comment
   return stateCodeMap[stateName];

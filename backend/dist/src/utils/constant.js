@@ -60,7 +60,6 @@ const job_filter_exclude_keys = [
     "cancer",
     "canvasser",
     "care",
-    "care coordinator",
     "career coach",
     "career navigator",
     "carpenter",
@@ -351,3 +350,4 @@ const job_filter_exclude_keys = [
     "sales associate",
     "scheduling",
     "school",
+    "secretary",

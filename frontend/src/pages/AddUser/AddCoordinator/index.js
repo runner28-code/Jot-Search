@@ -13,6 +13,7 @@ export default function AddCoordinator() {
 
   // Submit form data when submissionObject.loading is set to true
   useEffect(async () => {
+// Temp comment
     if (submissionObject.loading) {
       const formObjectCopy = { ...formObject };
       delete formObjectCopy.verifyPassword;

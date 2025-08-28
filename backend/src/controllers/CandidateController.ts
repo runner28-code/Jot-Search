@@ -298,3 +298,4 @@ export class CandidateController {
         });
         extendedCandidates = candidates.map((candidate: any) => {
           const user = users.find(user => user.email === candidate.email);
+          if (user) {

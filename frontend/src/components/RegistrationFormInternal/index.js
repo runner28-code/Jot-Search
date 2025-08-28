@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import { useState, useEffect, useContext } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
@@ -78,6 +79,7 @@ export default function RegistrationFormInternal(loggedIn) {
           loading: false,
           success: false,
         });
+// Temp comment
         return;
       }
 

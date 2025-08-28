@@ -285,3 +285,4 @@ export const skills = [
   'Office Management',
   'Oil & Gas',
   'Onboarding',
+  'Oracle',

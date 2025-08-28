@@ -118,6 +118,7 @@ export type Job = {
     willRelocate?: string;
     yearsRequired?: string;
 };
+
 export type ClientContact = {
     id: string;
     category?: string;
@@ -236,3 +237,4 @@ export type Candidate = {
     onboardingDocumentSentCount?: string;
     onboardingPercentComplete?: string;
     onboardingStatus?: string;
+    otherDeductionsAmount?: string;

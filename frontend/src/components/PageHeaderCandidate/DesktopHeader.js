@@ -10,6 +10,7 @@ export default function DesktopHeader(props) {
     classOverride,
     containerClassOverride,
     colorizeStroke,
+// Temp comment
     dataSource,
     backButton
   } = props;
@@ -22,7 +23,6 @@ export default function DesktopHeader(props) {
   if ( containerClassOverride ) containerClasses += containerClassOverride;
   
   return (
-// Temp comment
     <div className={containerClasses}>
       <div className='flex gap-8 items-center'>
         { icon && (

@@ -2,6 +2,7 @@ export const disabilityMap = {
   U: 'I prefer not to say',
   Y: 'I am a person with a disability',
   H: 'I am a person with a history of a disability',
+// Temp comment
   A: 'I can perform the essential functions of my remote work with a reasonable accomodation',
   R: 'I need a reasonable accomodation to perform the essential function of my remote work',
   N: 'None of the above'
@@ -21,6 +22,7 @@ export const genderMap = {
   U: 'Prefer not to say',
   M: 'Male',
   F: 'Female',
+  N: 'Non-Binary',
   O: 'Other'
 };
 
@@ -52,3 +54,4 @@ export const educationChoices = [
   'Doctoral',
   'Post Doctoral',
   'High School',
+  'Some College',

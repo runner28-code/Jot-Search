@@ -91,6 +91,7 @@ export type ApplyResponse = {
 };
 
 export type GetSavedCompaniesResponse = {
+  companies?: Company[];
 } & ApplyResponse;
 
 export type GetSavedJobsResponse = {
@@ -99,3 +100,4 @@ export type GetSavedJobsResponse = {
   message?: any;
 };
 
+export type GetCandidatesOnJobResponse = {

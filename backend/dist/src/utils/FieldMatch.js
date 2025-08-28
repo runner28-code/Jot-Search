@@ -5,7 +5,6 @@ exports.JobFilter = {
     bullhorn: {
         jobs_id: "jobs.id",
         title: "title",
-        skill: "skillList",
         city: "address_city",
         employmentType: "employmentType",
         onSite: "onSite",
@@ -15,6 +14,7 @@ exports.JobFilter = {
         hidden: "hidden",
         companyId: "clientCorporationID",
     },
+    main: {
         id: "id",
         status: "status",
         skillList: "skillList",

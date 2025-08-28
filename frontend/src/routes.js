@@ -68,3 +68,4 @@ export const APItoggleSaveCandidate = APIcandidateBase + '/save';
 export const APIsavedCandidates = APIcandidateBase + '/saved';
 export const APIsendJobsToCandidates = APIcandidateBase + '/sendJobs';
 // Companies
+const APIcompanyBase = '/api/company';

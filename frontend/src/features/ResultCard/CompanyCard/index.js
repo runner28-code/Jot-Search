@@ -65,7 +65,6 @@ export default function CompanyCard({ data }) {
             </div>
           </div>
           {/* Second row */}
-          <div className='flex items-center mt-12'>
             {/* Linkedin */}
             <div className='w-1/3 flex items-center'>
               <img
@@ -87,6 +86,7 @@ export default function CompanyCard({ data }) {
                 href='#'
                 className='text-royalBlue underline'
               >
+                Company Website
               </a>
             </div>
           </div>

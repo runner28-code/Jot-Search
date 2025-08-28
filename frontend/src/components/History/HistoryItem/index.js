@@ -45,7 +45,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
       }
     }
 
-    return `${month} ${concatenateOrdinal(day)}, ${timeWithoutSeconds}`;
   }
 }
 
@@ -57,3 +56,4 @@ function formatDateString(date) {
   
   // Format date
   const formattedDate = formatDateByDay(isToday, isYesterday, dateObj);
+  return formattedDate;

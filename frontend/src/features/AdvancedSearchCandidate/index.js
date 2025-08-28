@@ -94,6 +94,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       return;
     }
     setFilterObject({ ...filterObject, title: '' });
+// Temp comment
     setPage(1);
   }, [activeTab]);
 

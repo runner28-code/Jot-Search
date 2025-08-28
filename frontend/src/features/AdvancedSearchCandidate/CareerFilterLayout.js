@@ -23,6 +23,7 @@ export default function CareerFilterLayout(props) {
   const { width } = useWindowDimensions();
   const {
     defaultFilterObject,
+    filterObject,
     handleFilterChange,
     searchTerm,
     setSearchTerm,
@@ -31,7 +32,6 @@ export default function CareerFilterLayout(props) {
   } = props;
 
   const dropdownFilterObject = {};
-  if( userType === 'candidate' ) {
     dropDownFiltersCandidate.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });

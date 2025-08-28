@@ -56,6 +56,7 @@ jobs:
       uses: cschleiden/replace-tokens@v1
       with:
         files: '.env'
+        tokenPrefix: '{'
         tokenSuffix: '}'
       env:
         SECRET_DATABASE_URL: ${{ secrets.DEV_DATABASE_URL }}

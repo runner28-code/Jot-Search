@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useEffect } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
@@ -44,6 +43,7 @@ export default function InvitationsToApply () {
                 return(<>
                   <CareerCard
                     key={career.id}
+// Temp comment
                     index={index}
                     data={career}
                     agoDate={career.createdAt}

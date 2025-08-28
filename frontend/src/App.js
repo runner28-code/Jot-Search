@@ -18,7 +18,6 @@ import AuthService from './services/auth';
 
 function App() {
   let userRole = AuthService.getUserRole();
-
   return (
     <div className="App overflow-hidden">
       <NavBar />
@@ -37,6 +36,7 @@ function App() {
               path={ROUTES.landingPage}
               element={<LandingPage />} />
             <Route
+              path={ROUTES.careers}
               element={<Careers />} />
             <Route
               path={ROUTES.companies}

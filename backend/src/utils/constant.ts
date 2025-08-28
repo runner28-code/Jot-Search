@@ -298,6 +298,7 @@ const job_filter_exclude_keys = [
   "political science",
   "porter",
   "portioner",
+  "pretreatment",
   "principal",
   "probation",
   "processing",
@@ -352,3 +353,4 @@ const job_filter_exclude_keys = [
   "security",
   "server",
   "service leader",
+  "service worker",

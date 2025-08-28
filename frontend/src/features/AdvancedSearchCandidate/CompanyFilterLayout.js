@@ -4,7 +4,9 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CompanyFilterLayout(props) {
   const {
+    searchTerm,
     setSearchTerm,
+// Temp comment
     handleSearchClick,
     clearFilters,
   } = props;

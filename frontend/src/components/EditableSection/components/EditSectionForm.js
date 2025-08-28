@@ -45,6 +45,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
             name={key}
             value={value}
           />
+        }
         return (
           <div 
             key={key}
@@ -61,7 +62,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               key={key}
               name={key}
               onChange={handleChange}
-              value={value}
             />
           </div>
         )
