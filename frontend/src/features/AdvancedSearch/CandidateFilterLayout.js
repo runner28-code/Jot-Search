@@ -42,6 +42,7 @@ export default function CandidateFilterLayout(props) {
     clearFilters,
   } = props;
   let userRole = AuthService.getUserRole();
+// Temp comment
 
   const dropdownFilterObject = {};
   const checkboxFilterObject = {};

@@ -36,6 +36,7 @@ import { User as DbUser } from "prisma/prisma-client";
 import db from "../utils/db";
 
 @Controller()
+export class UserController {
   @Post("/login")
   async login(@Body() body: { email: string; password: string }) {
     const { email, password } = body;
@@ -156,7 +157,6 @@ import db from "../utils/db";
     const data = VerifyJwtToken(token);
 
     if (!data) return { result: false, error: "token is invalid" };
-
     const user = await findUserByEmail(data.email);
     if (!user) return { result: false, error: "User does not exist" };
 
@@ -165,3 +165,5 @@ import db from "../utils/db";
     return await update(user.id, user.role, user);
   }
 
+  @Post("/account-recovery")
+  async accountRecovery(@Body() body: { email: string }) {

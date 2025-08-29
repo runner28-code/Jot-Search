@@ -8,7 +8,6 @@ export default function TypeaheadDropdown(props) {
   const {
     type, 
     dropdownType, 
-    disabled,
     name, 
     label,
     required,

@@ -184,7 +184,6 @@ export const skills = [
   'Economic Development',
   'Editing',
   'EdTech',
-  'Education',
   'Electrical Engineering',
   'Employee Communications',
   'Employee Relations',
@@ -286,3 +285,5 @@ export const skills = [
   'Oil & Gas',
   'Onboarding',
   'Oracle',
+  'Organizational Development',
+  'Outbound Calls',

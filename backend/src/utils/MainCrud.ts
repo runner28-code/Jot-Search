@@ -48,6 +48,7 @@ export const saveJob = async (job: string, candidate: string) => {
   try {
     console.log("saving job");
     const existing = await db.user.findFirst({
+      include: {
         savedJobs: true,
       },
       where: {
@@ -102,3 +103,4 @@ export const saveJob = async (job: string, candidate: string) => {
 
 export const getSavedJobs = async (candidateId: string) => {
   try {
+    const candidate = await db.user.findFirst({

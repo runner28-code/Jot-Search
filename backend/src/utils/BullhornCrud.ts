@@ -236,3 +236,5 @@ export const saveCandidates = async (candidates: any[]) => {
   }
 };
 
+export const saveLeads = async (leads: any[]) => {
+  const expludeFields = ["address", "_score"];

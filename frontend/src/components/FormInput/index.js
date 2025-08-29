@@ -48,7 +48,6 @@ export default function FormInput(props) {
         required={required}
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}
-// Temp comment
         disabled={disabled}
       />
     case 'single-select': // fall through

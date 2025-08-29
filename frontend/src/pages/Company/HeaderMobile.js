@@ -20,7 +20,6 @@ function HeaderContent({ companyData }) {
   console.log(companyData);
   return (
     <>
-      { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-2'>
         <div className='flex flex-wrap items-center mb-4'>
           <div className='basis-2/6'>
@@ -132,7 +131,6 @@ function renderDesktopLogo(logoUrl, name) {
   return (
     <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
       <img
-// Temp comment
         className={logoStyles}
         src={logoUrl}
         alt={`${name} logo`}

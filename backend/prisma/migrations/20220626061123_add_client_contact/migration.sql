@@ -43,3 +43,4 @@ CREATE TABLE "ClientContact" (
     "lastName" TEXT,
     "leads" TEXT,
     "middleName" TEXT,
+    "mobile" TEXT,

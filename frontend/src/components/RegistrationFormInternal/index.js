@@ -79,7 +79,6 @@ export default function RegistrationFormInternal(loggedIn) {
           loading: false,
           success: false,
         });
-// Temp comment
         return;
       }
 

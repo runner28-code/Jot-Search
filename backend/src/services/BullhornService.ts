@@ -708,3 +708,9 @@ export class BullhornService {
             Accept: "*/*",
           },
         });
+        if (res.status === 200) {
+          const { data, count } = res.data;
+          total = res.data.total;
+          const updatedData = data.map((d: any) => {
+            const {
+              category,

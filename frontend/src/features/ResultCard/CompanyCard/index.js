@@ -65,6 +65,7 @@ export default function CompanyCard({ data }) {
             </div>
           </div>
           {/* Second row */}
+          <div className='flex items-center mt-12'>
             {/* Linkedin */}
             <div className='w-1/3 flex items-center'>
               <img

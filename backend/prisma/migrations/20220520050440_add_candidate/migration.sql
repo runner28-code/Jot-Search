@@ -72,3 +72,4 @@ CREATE TABLE "Candidate" (
     "salary" TEXT,
     "salaryLow" TEXT,
     "secondarySkills" TEXT,
+    "skillSet" TEXT,

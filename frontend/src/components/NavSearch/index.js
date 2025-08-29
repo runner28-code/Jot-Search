@@ -98,6 +98,7 @@ export default function NavSearch({ placeholder }) {
   return (
     <div className='relative'>
       <div ref={menuRef} >
+        <NavSearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }
@@ -108,6 +109,7 @@ export default function NavSearch({ placeholder }) {
       </div>
       { renderResultsContainer( combinedResults, searchTerm ) }
     </div>
+// Temp comment
   )
 }
 

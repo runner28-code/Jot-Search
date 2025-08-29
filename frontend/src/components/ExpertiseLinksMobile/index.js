@@ -5,7 +5,6 @@ import marketingIcon from '../../assets/images/Symbol_marketing.svg';
 import operationsIcon from '../../assets/images/Symbol_operations.svg';
 import financeIcon from '../../assets/images/Symbol_finance.svg';
 import * as ROUTES from '../../routes';
-// Temp comment
 
 export default function ExpertiseLinksMobile() {
   const linkStyles = 'flex flex-col items-center basis-1/3 p-6 text-center';
@@ -21,7 +20,6 @@ export default function ExpertiseLinksMobile() {
         {/* Software & Engineering */}
         <Link
           to={ROUTES.careers}
-          className={linkStyles}
           state={{ Expertise: 'Software & Engineering' }}
         >
           <img

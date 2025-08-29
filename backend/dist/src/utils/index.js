@@ -18,7 +18,6 @@ const config_1 = __importDefault(require("../config"));
 const BigQueryService_1 = require("../services/BigQueryService");
 const Common_1 = require("../types/Common");
 const constant_1 = require("./constant");
-const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const query = `
             SELECT * FROM \`${datset}.${table}\`
@@ -41,7 +40,6 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
     }
 });
 exports.isExistByID = isExistByID;
-// Temp comment
 const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const query = `

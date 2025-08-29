@@ -47,6 +47,7 @@ CREATE TABLE "Company" (
     "industryList" TEXT[],
     "invoiceFormat" TEXT,
     "linkedinProfileName" TEXT,
+    "notes" TEXT,
     "numEmployees" INTEGER,
     "numOffices" INTEGER,
     "ownership" TEXT,

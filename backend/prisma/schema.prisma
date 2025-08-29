@@ -83,6 +83,7 @@ model Lead {
   fax2                  String?
   fax3                  String?
   firstName             String?
+  isAnonymized          Boolean?
   isDayLightSavingsTime Boolean?
   isDeleted             Boolean?
   lastName              String?
@@ -536,3 +537,7 @@ model User {
   logo          String?
   companyName   String?
   annualRevenue String?
+  companyURL    String?
+  numEmployees  String?
+  revenue       String?
+  dateFounded   DateTime?

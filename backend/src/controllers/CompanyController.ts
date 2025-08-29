@@ -260,3 +260,5 @@ export class CompanyController {
         total,
         message: null,
       };
+      return response;
+    } catch (error) {

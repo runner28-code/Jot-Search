@@ -21,6 +21,7 @@ const heroStyles = 'relative flex flex-col items-center h-135 vw-1024:h-280 vw-1
 export default function LandingPage() {
   const { width } = useWindowDimensions();
   const isMobile = width < 1024;
+// Temp comment
   const isDesktop = width >= 1024;
 
   return (
@@ -47,6 +48,7 @@ export default function LandingPage() {
       { isDesktop ? <BusinessBooming /> : <BusinessBoomingMobile />}
     </main>
   )
+}
 
 function renderSearch() {
   const { width } = useWindowDimensions();

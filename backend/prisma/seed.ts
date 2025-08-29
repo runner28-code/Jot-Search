@@ -122,6 +122,7 @@ async function seedCategories() {
         name: "Other",
         enabled: true,
         externalID: 2000001,
+      },
       {
         name: "Sales & Biz Dev",
         enabled: true,
@@ -160,3 +161,5 @@ async function seedCompanies() {
         logo: "https://picsum.photos/200",
         businessSectorList: "SaaS,Fintech",
         bh_description: "a good company",
+        getro_description: "a fintech company",
+        description: "testing a new description",

@@ -109,7 +109,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
       return {
         result: false,
         error: "You should be a coordinator for updating this user",
-      };
     }
 
     const user = justifyData(data, USERKEYS, ["email", "id"]);
@@ -281,6 +280,7 @@ export const findUserByEmail = async (email: string) => {
 
     return user || null;
   } catch (error) {
+    console.log(error);
     return null;
   }
 };
@@ -451,3 +451,7 @@ export const getCoordinatorDashboardStats = async (days: number) => {
     where: {
       createdAt: {
         gte: moment().subtract(days * 2 - 1, 'days').startOf('day').toDate(),
+        lt: moment().subtract(days, 'days').endOf('day').toDate()
+      }
+    }
+  });

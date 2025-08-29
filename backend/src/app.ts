@@ -83,6 +83,7 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
   let formatted_date =
     current_datetime.getFullYear() +
     "-" +
+    (current_datetime.getMonth() + 1) +
     "-" +
     current_datetime.getDate() +
     " " +
@@ -99,3 +100,4 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
   const log = `[${formatted_date}] ${method}:${url} ${status} ${durationInMs.toLocaleString()} ms`;
   console.log(log);
   next();
+};

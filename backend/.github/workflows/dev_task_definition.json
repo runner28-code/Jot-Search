@@ -3,7 +3,6 @@
     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole", 
     "networkMode": "awsvpc", 
     "containerDefinitions": [
-        {
             "name": "intulsa-backend-container-dev", 
             "image": "site-backend:dev", 
             "cpu": 1024, 
@@ -44,6 +43,7 @@
                 {
                     "name": "DATASET_BULLHORN", 
                     "value": "inTulsa_Bullhorn"
+                },
                 {
                     "name": "DATASET_GETRO", 
                     "value": "inTulsa_Getro"
@@ -69,3 +69,4 @@
                     "value": "{SECRET_BULLHORN_CLIENT_ID}"
                 },
                 {
+                    "name": "BULLHORN_CLIENT_SECRET", 

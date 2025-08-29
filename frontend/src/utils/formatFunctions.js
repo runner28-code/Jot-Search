@@ -31,7 +31,6 @@ export function formatCandidateData(candidateData) {
     formattedData.experience = candidateData.experience.toString();
   }
   // User table has firstname and lastname, Candidate table has firstName and lastName, make sure both exist until we normalize the tables
-  if ( candidateData.firstName && !candidateData.firstname ) formattedData.firstname = candidateData.firstName;
   if ( candidateData.lastName && !candidateData.lastname ) formattedData.lastname = candidateData.lastName;
   if ( candidateData.firstname && !candidateData.firstName ) formattedData.firstName = candidateData.firstname;
   if ( candidateData.lastname && !candidateData.lastName ) formattedData.lastName = candidateData.lastname;
@@ -44,6 +43,7 @@ export function convertUserToCandidate(user) {
     id: user.id,
     firstName: user.firstname || '',
     lastName: user.lastname || '',
+    name: formatCandidateName(user.firstname, user.lastname),
     email: user.email,
     phone: user.phone,
     description: user.description,

@@ -86,6 +86,7 @@ export default function Dropdown(props) {
     listenForOutsideClicks(listening, setListening, menuRef, setIsOpen);
   }, [isOpen]);
   
+  const renderValue = (type, name, currentChosen, placeholder) => {
     if (type === MULTI_SELECT && currentChosen.length > 0) {
       return currentChosen.join(', ');
     } else if ( type === SINGLE_SELECT && currentChosen !== '' ) {

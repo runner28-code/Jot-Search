@@ -109,7 +109,6 @@ export default function DesktopLayout(props) {
           </div>
         )
       }
-// Temp comment
     </section>
     {renderDescription(role, navigate, careerData.clientCorporation, skillList, careerData)}
     <OtherCareers
@@ -185,6 +184,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
     </section>
   </>)
 }
+// Temp comment
 
 function renderSkillsSection({ skillList }) {
   return (<>

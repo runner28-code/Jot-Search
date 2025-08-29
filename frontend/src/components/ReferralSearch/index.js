@@ -11,6 +11,7 @@ const mockJobsData = [
     location: 'Remote',
     listingAge: '1 month',
     specialty: 'Technology'
+  },
   {
     id: '2cb874e2-0510-405e-9491-183d2e0e26d7',
     title: 'UI / UX Designer',

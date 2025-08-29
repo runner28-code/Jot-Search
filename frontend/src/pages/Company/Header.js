@@ -187,7 +187,6 @@ function FillerIcon () {
   }
 }
 
-function renderAddress( city, state ) {
   if( !city && !state ) {
     return (
       <span>Tulsa, OK</span>

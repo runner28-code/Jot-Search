@@ -128,7 +128,6 @@ function RenderHeader({type, loggedIn}) {
   )
 }
 RenderHeader.propTypes = {
-// Temp comment
   loggedIn: PropTypes.bool,
   type: PropTypes.string
 }

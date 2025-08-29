@@ -198,7 +198,6 @@ export class CandidateController {
         }
         const categoryId = where.categoryId;
         if (categoryId) {
-          // change categoryId to category external id because in candidate table it is saved as externalID.
           const category = await db.category.findFirst({
             where: {
               id: categoryId
@@ -299,3 +298,5 @@ export class CandidateController {
         extendedCandidates = candidates.map((candidate: any) => {
           const user = users.find(user => user.email === candidate.email);
           if (user) {
+            candidate.user = user;
+            candidate.firstName = user.firstname;

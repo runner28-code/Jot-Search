@@ -13,7 +13,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const client_1 = require("@prisma/client");
-const db_1 = __importDefault(require("../src/utils/db"));
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
@@ -56,7 +55,6 @@ function seedJobs() {
                     })).id,
                 },
                 {
-// Temp comment
                     title: "Junior Software Engineer",
                     companyId: (_b = (yield db_1.default.company.findFirst())) === null || _b === void 0 ? void 0 : _b.id,
                     address1: "123 Job St",
@@ -72,6 +70,46 @@ function seedJobs() {
                     categoryId: (yield db_1.default.category.findFirst({
                         where: { name: "Software & Engineering" },
                     })).id,
+                },
+            ],
+        });
+    });
+}
+function seedCandidates() {
+    return __awaiter(this, void 0, void 0, function* () {
+        yield db_1.default.candidate.createMany({
+            data: [
+                {
+                    address: "123 Main St",
+                    address_address1: "123 Main St",
+                    occupation: "Programmer",
+                    address_city: "Tulsa",
+                    address_state: "OK",
+                    address_zip: "74008",
+                    description: "Great candidate for everything",
+                    companyName: "Eddy's Everything",
+                    companyURL: "eddyseverything.com",
+                    firstName: "John",
+                    lastName: "Smith",
+                    phone: "123-456-7891",
+                    email: "jsmithers@gmail.com",
+                    comments: "He does everything!",
+                },
+                {
+                    address: "124 Main St",
+                    address_address1: "124 Main St",
+                    occupation: "None",
+                    address_city: "Tulsa",
+                    address_state: "OK",
+                    address_zip: "74008",
+                    description: "Ehh...",
+                    companyName: "Nowhere",
+                    companyURL: "nowhere.com",
+                    firstName: "Bob",
+                    lastName: "Tester",
+                    phone: "987-654-3210",
+                    email: "bobtesting@gmail.com",
+                    comments: "He does nothing...",
                 },
             ],
         });

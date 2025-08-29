@@ -87,3 +87,4 @@ export const getCompanies = async () => {
   return jobs;
 }
 
+export const saveJobs = async (jobs: any[]) => {

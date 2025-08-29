@@ -151,3 +151,65 @@ function renderResults( results ) {
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
   </>)
+}
+
+const defaultStylesObject = {
+  containerStyles: 'flex items-center justify-evenly p-4 h-24 vw-480:w-160 vw-1024:h-36 vw-1024:w-210 bg-white border-solid border-2 border-lightGrey rounded-2xl ',
+  searchIconStyles: 'h-24 w-24 vw-1024:h-24 vw-1024:w-24 vw-480:ml-6 mr-10 bg-royalBlue flex justify-center items-center',
+  inputStyles: ''
+}
+
+
+function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject, isOpen, setIsOpen}) {
+  const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
+  const offObject = {
+    containerStyles: 'flex items-end ',
+    searchIconStyles: 'fill-neutral-400',
+    inputStyles: 'hidden '
+  }
+  function handleClick() {
+    if( !searchTerm ) {
+      setIsOpen(isOpen => !isOpen);
+    }
+  }
+
+  if ( marginBottom ) {
+    styleObject.containerStyles += `mb-${marginBottom} `;
+  }
+
+  function handleChange(e) {
+    setSearchTerm(e.target.value);
+  }
+
+  const placeholderText = placeholder || 'Search for companies or jobs...';
+  return (
+    <label
+      className={ !isOpen ? offObject.containerStyles : styleObject.containerStyles }
+      htmlFor={ placeholder }
+    >
+      <div
+        className={ !isOpen ? offObject.searchIconStyles : styleObject.searchIconStyles }
+        onClick={ handleClick }
+      >
+        {  !isOpen ? <RenderSearchIcon /> : <CloseIcon />}
+      </div>
+      <div className={ !isOpen ? 'hidden' : 'absolute top-[6.5rem] w-screen left-0 z-10 bg-sky-600 py-16' }>
+        <div className='w-3/4 mx-auto  flex items-center'>
+          <input
+            type='text'
+            id={ placeholder }
+            placeholder={ !isOpen ? '' : placeholderText  }
+            value={ searchTerm }
+            onChange={ handleChange }
+            className={ !isOpen ? offObject.inputStyles : styleObject.inputStyles } />
+          <div className='bg-searchGreen p-4 rounded-r-lg text-white'>
+            <img
+              src={ searchWhite }
+              alt='search icon'
+              className={'h-auto'}
+            />
+          </div>
+        </div>
+      </div>
+    </label>
+  )

@@ -12,7 +12,6 @@ env:
   ECS_CLUSTER: 'intulsa-cluster-prod'
   ECS_TASK_DEFINITION: '.github/workflows/prod_task_definition.json'
   CONTAINER_NAME: 'intulsa-frontend-container-prod'
-
 jobs:
   deploy:
     name: Deploy
@@ -41,3 +40,4 @@ jobs:
         IMAGE_TAG: ${{ github.sha }}
       run: |
         # Build a docker container and
+        # push it to ECR so that it can

@@ -90,7 +90,6 @@ export class GetroService {
                                 result.push(detail);
                             }
                             if (result.length > 29) {
-                                await saveCompanies(result);
                                 result = [];
                             }
                         }
@@ -209,3 +208,4 @@ export class GetroService {
         return null;
     }
 
+    async getJobs(testMode = false, per_page = 30): Promise<any> {

@@ -33,11 +33,11 @@ export function renderErrorBlock(errorBlock) {
     )
   }
 }
-// Temp comment
 
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (
+// Temp comment
       <div className='flex flex-col justify-center'>
         <h4 className='text-h5 text-center vw-768:text-h4 text-darkGray font-spaceGrotesk font-semibold mb-10'>
           Create an Account

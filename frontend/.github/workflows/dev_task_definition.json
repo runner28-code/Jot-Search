@@ -10,8 +10,8 @@
             "memory": 2048,
             "portMappings": [
                 {
-                    "containerPort": 3000,
                     "hostPort": 3000,
+                    "protocol": "tcp"
                 }
             ],
             "essential": true,
