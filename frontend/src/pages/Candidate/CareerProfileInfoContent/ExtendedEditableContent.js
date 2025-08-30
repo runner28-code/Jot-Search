@@ -13,7 +13,6 @@ import ResumePreview from './ResumePreview';
 
 export default function ExtendedEditableContent({ candidateData, handleCandidateUpdate, setEditMode, editMode }) {
   const { categories } = useContext(CategoryContext);
-  const isSourceUserTable = candidateData.sourceTable === 'User';
 
   const [formData, setFormData] = useState({
     id: candidateData.id,
@@ -47,6 +46,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   }
 
   const handleInputChange = async (event) => {
+    const { name, value } = event.target;
     if (name === 'avatar' || name === 'resume') {
       const fileToUpload = event.target.files[0];
       const pluralizedFolderName = name + 's';

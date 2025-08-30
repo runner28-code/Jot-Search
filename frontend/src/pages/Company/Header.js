@@ -49,6 +49,7 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <CareerIcon
+// Temp comment
               className={headerIconStyles}
             />
             <OpenCareers
@@ -225,6 +226,7 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
   const textStyles = headerRowTextStyles += 'underline text-sky-700';
   if( !url ) {
     return (<>
+      <a
         className={textStyles}
         href='https://www.intulsa.com/'
       >

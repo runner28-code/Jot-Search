@@ -38,3 +38,4 @@
 #       id: build-image
 #       env:
 #         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+#         IMAGE_TAG: ${{ github.sha }}

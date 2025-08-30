@@ -28,7 +28,6 @@ const checkboxFilters = [
 ];
 
 export default function CandidateFilterLayout(props) {
-// Temp comment
   const {
     defaultFilterObject,
     filterObject,
@@ -38,7 +37,6 @@ export default function CandidateFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
-  let userRole = AuthService.getUserRole();
 
   const dropdownFilterObject = {};
   const checkboxFilterObject = {};

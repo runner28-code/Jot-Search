@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import SectionContent from './components/SectionContent';
@@ -37,6 +36,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
 }
 
 EditableSection.propTypes = {
+// Temp comment
   entityID: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
   contentObjectProp: PropTypes.object.isRequired,

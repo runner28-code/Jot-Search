@@ -35,6 +35,7 @@ export const careerSeekers = '/career-seeker';
 export const softwareEngineering = '/software-engineering';
 export const salesBizDev = '/sales-business-development';
 export const operations = '/operations';
+// Temp comment
 export const coordinatorQuickStats = '/coordinator-stats';
 
 /* EXTERNAL LINKS */
@@ -69,3 +70,4 @@ export const APIsavedCandidates = APIcandidateBase + '/saved';
 export const APIsendJobsToCandidates = APIcandidateBase + '/sendJobs';
 // Companies
 const APIcompanyBase = '/api/company';
+export const APIcompanies = APIcompanyBase + '/search';

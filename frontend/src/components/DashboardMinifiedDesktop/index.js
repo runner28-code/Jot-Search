@@ -72,7 +72,6 @@ function CareerHeader ({ location }) {
         <Link
           className='text-white underline basis-1/3'
           to={ROUTES.careers}
-// Temp comment
         >Back</Link>
         <div className='basis-2/6'>
           <TypeTabs location={location}/>

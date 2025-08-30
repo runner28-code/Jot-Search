@@ -46,6 +46,7 @@ const sanitizeJob = (job: Job): Job => {
 
   Object.keys(newJob).forEach((key) => {
     const typedKey = key as keyof Job;
+    if (!ALLOWED_JOB_KEYS.has(typedKey)) {
       delete newJob[typedKey];
     }
   });
@@ -96,10 +97,10 @@ export const inferDatasetById = (id: string) => {
   }
 };
 
-export const updateJob = async (job: Partial<Job> & { id: string }) => {
   try {
     const { id, ...jobData } = job;
 
     const sanitizedKeys = Object.keys(jobData).filter((key) =>
       ALLOWED_JOB_KEYS_TO_UPDATE.has(key as JobKey)
     );
+

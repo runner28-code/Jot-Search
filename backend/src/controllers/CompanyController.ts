@@ -262,3 +262,5 @@ export class CompanyController {
       };
       return response;
     } catch (error) {
+      console.log(error);
+      return {

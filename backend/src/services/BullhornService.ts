@@ -278,7 +278,6 @@ export class BullhornService {
           total = res.data.total;
           const updatedData = data.map((d: any) => ({
             ...d,
-            id: `bl-${d.id}`,
             businessSectorList: d.businessSectorList || [],
             industryList: d.industryList || [],
             competitors: d.competitors || []
@@ -714,3 +713,9 @@ export class BullhornService {
           const updatedData = data.map((d: any) => {
             const {
               category,
+              ...otherData
+            } = d;
+            return {
+              ...otherData,
+              id: `bl-${d.id}`,
+              address_address1: d.address?.address1 || null,

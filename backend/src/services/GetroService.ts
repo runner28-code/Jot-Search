@@ -210,3 +210,5 @@ export class GetroService {
     }
 
     async getJobs(testMode = false, per_page = 30): Promise<any> {
+        console.log(`\n***** getJobs *****`);
+        const companies: any[] = await getCompanies();

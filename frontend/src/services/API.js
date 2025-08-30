@@ -180,6 +180,7 @@ export async function saveCompany(candidateId, companyId) {
   }
   return normalizeData(data);
 }
+// Temp comment
 
 export async function getSavedCompanies(id, count = null, page = null) {
   const params = id ? { candidate: id } : {}; // If no id is passed, will default to logged in user
@@ -295,3 +296,12 @@ export async function getSavedJobs(id, count = undefined, page = undefined) {
     }
   });
   return normalizeData(data.jobs);
+}
+
+export async function toggleHideJob(id, unhide) {
+  const hidden = unhide ? false : true;
+  const { data } = await API.patch(ROUTES.APIjobBase, {
+    id,
+    hidden
+  });
+  return normalizeData(data.result);

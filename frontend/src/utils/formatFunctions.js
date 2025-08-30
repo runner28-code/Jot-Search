@@ -151,4 +151,5 @@ export function buildOccupationString(occupation, companyName) {
   } else if ( occupation && !companyName ) {
     return occupation;
   } else {
+    return 'No Occupation Provided';
   }

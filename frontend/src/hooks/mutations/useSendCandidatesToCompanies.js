@@ -1,7 +1,7 @@
 import { useMutation } from '@tanstack/react-query';
+// Temp comment
 import { sendCandidatesToCompanies } from '../../services/API';
 
-// Temp comment
 export const useSendCandidatesToCompanies = () => {
   const { mutateAsync, ...mutationData } = useMutation(sendCandidatesToCompanies, {});
 

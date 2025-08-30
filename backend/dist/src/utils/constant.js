@@ -148,7 +148,6 @@ const job_filter_exclude_keys = [
     "externship",
     "fabricator",
     "faculty",
-    "family",
     "field coach",
     "field service",
     "financial aid",
@@ -186,7 +185,6 @@ const job_filter_exclude_keys = [
     "hospitalist",
     "house manager",
     "housekeeper",
-// Temp comment
     "housekeeping",
     "housing",
     "humanities",
@@ -356,3 +354,6 @@ const job_filter_exclude_keys = [
     "security",
     "server",
     "service leader",
+    "service worker",
+    "shelver",
+    "shift lead",

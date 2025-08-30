@@ -72,7 +72,6 @@ export type Job = {
     durationWeeks?: string;
     educationDegree?: string;
     employmentType?: string;
-    externalID?: string;
     feeArrangement?: string;
     hoursOfOperation?: string;
     hoursPerWeek?: string;
@@ -240,3 +239,5 @@ export type Candidate = {
     payrollClientStartDate?: string;
     payrollStatus?: string;
     phone?: string;
+    phone2?: string;
+    phone3?: string;

@@ -26,7 +26,6 @@ function MobileNavBarLayout() {
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50'>
       <div className='h-30 pl-4 pr-4 flex justify-between items-center relative'>
         <Link to={ROUTES.root}>
-// Temp comment
           <img
             src={inTulsaLogoText}
             alt='logo'

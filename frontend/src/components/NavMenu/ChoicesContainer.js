@@ -27,6 +27,7 @@ const stylesObject = {
   hrStyles
 }
 
+export default function ChoicesContainer(props) {
   const {
     userRole,
     handleOptionClick } = props;

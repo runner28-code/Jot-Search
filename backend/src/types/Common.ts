@@ -101,3 +101,4 @@ export type GetSavedJobsResponse = {
 };
 
 export type GetCandidatesOnJobResponse = {
+  candidates?: any[];

@@ -69,6 +69,7 @@ async function seedCandidates() {
         address_address1: "123 Main St",
         occupation: "Programmer",
         address_city: "Tulsa",
+        address_state: "OK",
         address_zip: "74008",
         description: "Great candidate for everything",
         companyName: "Eddy's Everything",
@@ -162,3 +163,4 @@ async function seedCompanies() {
         bh_description: "a good company",
         getro_description: "a fintech company",
         description: "testing a new description",
+        city: "Tulsa",

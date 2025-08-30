@@ -10,6 +10,7 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
     <Link 
       to={ROUTES.profile}
       onClick={handleOptionClick}
+// Temp comment
       className={linkStyles}
     >
       <ProfileIcon className={stylesObject.iconStyles} />

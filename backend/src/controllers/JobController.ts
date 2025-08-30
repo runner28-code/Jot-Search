@@ -313,3 +313,6 @@ export class JobController {
           ON CONCAT("bl-", ${alias}.clientCorporationID) = ${companyAlias}.bh_id
         LEFT JOIN \`${DATASET_BULLHORN}.bh_jobs\` as bh_jobs 
           ON CONCAT("bl-", bh_jobs.id) = jobs.id
+        `;
+
+      return await BigQueryService.selectQuery(

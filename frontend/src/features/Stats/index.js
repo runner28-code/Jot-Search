@@ -95,6 +95,7 @@ Stats.propTypes = {
   userType: PropTypes.string.isRequired,
 }
 
+// Temp comment
 function StatCard({ stat, value }) {
   const deviationPercentage = Math.trunc(value.compare);
 

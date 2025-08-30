@@ -78,7 +78,6 @@ const getActualRequestDurationInMs = (start: any) => {
   return (diff[0] * NS_PER_SEC + diff[1]) / NS_TO_MS;
 };
 
-const logger = (req: Request, res: Response, next: NextFunction) => {
   let current_datetime = new Date();
   let formatted_date =
     current_datetime.getFullYear() +

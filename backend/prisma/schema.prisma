@@ -541,3 +541,7 @@ model User {
   numEmployees  String?
   revenue       String?
   dateFounded   DateTime?
+
+  employeeType String?
+  experience   Int?
+

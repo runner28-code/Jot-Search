@@ -1,5 +1,4 @@
 -- CreateTable
-CREATE TABLE "Category" (
     "id" SERIAL NOT NULL,
     "name" TEXT NOT NULL,
     "dateAdded" TIMESTAMP(3),
@@ -9,3 +8,4 @@ CREATE TABLE "Category" (
     "occupation" TEXT,
     "type" TEXT,
     "_score" DOUBLE PRECISION,
+
