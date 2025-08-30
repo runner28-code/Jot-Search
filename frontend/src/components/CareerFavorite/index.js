@@ -27,7 +27,6 @@ export default function CareerFavorite () {
             :
             savedJobs.map((career, index) => {
               return(<>
-// Temp comment
                 <CareerCard
                   key={career.id}
                   index={index}

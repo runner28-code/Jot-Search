@@ -3,7 +3,6 @@
 
   - Made the column `hidden` on table `Job` required. This step will fail if there are existing NULL values in that column.
 
-*/
 -- AlterTable
 ALTER TABLE "Job" ADD COLUMN     "getroJobInfoId" TEXT,
 ALTER COLUMN "hidden" SET NOT NULL,
@@ -30,3 +29,4 @@ CREATE TABLE "GetroJobInfo" (
     "organization_id" TEXT,
     "organization_logo_url" TEXT,
     "organization_name" TEXT,
+    "organization_slug" TEXT,

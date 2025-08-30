@@ -184,6 +184,7 @@ export const skills = [
   'Economic Development',
   'Editing',
   'EdTech',
+  'Education',
   'Electrical Engineering',
   'Employee Communications',
   'Employee Relations',

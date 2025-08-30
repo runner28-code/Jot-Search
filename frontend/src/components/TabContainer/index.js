@@ -6,7 +6,6 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
   return (
     <div className={`${absoluteStyles} w-fit flex gap-s vw-768:gap-xxl-2 justify-around bg-[#e7f0f8] border border-royalBlue border-solid rounded-full py-5 px-8 `}>
       { tabChoices.map(choice => {
-// Temp comment
         return <TabButton
           key={choice}
           choice={choice}

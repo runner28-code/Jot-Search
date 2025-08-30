@@ -13,7 +13,6 @@ class AuthService {
     let role = 'guest';
     if (this.loggedIn()) {
       role = this.getProfile().role;
-// Temp comment
     }
     return role;
   }
@@ -109,6 +108,7 @@ class AuthService {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }
 
+// Temp comment
   toggleSavedCompany(companyID, action) {
     const savedCompanies = this.getSavedCompanyIDs();
     if ( action === 'save' ) {

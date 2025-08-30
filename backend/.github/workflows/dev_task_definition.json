@@ -3,6 +3,7 @@
     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole", 
     "networkMode": "awsvpc", 
     "containerDefinitions": [
+        {
             "name": "intulsa-backend-container-dev", 
             "image": "site-backend:dev", 
             "cpu": 1024, 
@@ -34,7 +35,6 @@
                 },
                 {
                     "name": "PROJECT_ID", 
-                    "value": "aerovision-338218"
                 },
                 {
                     "name": "DATABASE_URL", 

@@ -50,7 +50,6 @@ export default function ExpertiseLinks() {
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Marketing' }}
-// Temp comment
         >
           <img
             src={marketingIcon}

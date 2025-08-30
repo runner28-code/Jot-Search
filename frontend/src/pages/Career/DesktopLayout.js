@@ -79,6 +79,7 @@ export default function DesktopLayout(props) {
             <div className='w-1/3 flex items-center'>
               <img
                 src={clockIcon}
+// Temp comment
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{careerData.employmentType}</p>
             </div>
@@ -184,7 +185,6 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
     </section>
   </>)
 }
-// Temp comment
 
 function renderSkillsSection({ skillList }) {
   return (<>

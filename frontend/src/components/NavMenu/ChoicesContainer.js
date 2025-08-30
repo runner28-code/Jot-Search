@@ -1,7 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
-// Temp comment
   candidateChoices,
   companyChoices,
   coordinatorChoices,
@@ -28,7 +27,6 @@ const stylesObject = {
   hrStyles
 }
 
-export default function ChoicesContainer(props) {
   const {
     userRole,
     handleOptionClick } = props;

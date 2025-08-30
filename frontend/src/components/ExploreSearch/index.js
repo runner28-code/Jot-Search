@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearch';
 import AccessibleDropdown from '../AccessibleDropdown';
 import LoadingSpinner from '../LoadingSpinner';
-import { jobFilterObject } from '../../utils/filterObjects';
 import * as ROUTES from '../../routes';
 
 function adjustJobFilterObject() {
@@ -20,7 +19,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
   const filterObject = adjustJobFilterObject();
   const [filterState, setFilterState] = useState({
-// Temp comment
     title: '',
     'On-Site/Remote': 'Any Work Setting',
     'Expertise': 'Any Expertise',

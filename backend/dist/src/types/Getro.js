@@ -9,7 +9,6 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "compensation_max",
     "compensation_min",
     "compensation_period",
-// Temp comment
     "compensation_public",
     "description",
     "discarded",
@@ -17,4 +16,3 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "expires_at",
     "job_functions",
     "locations",
-    "organization_id",

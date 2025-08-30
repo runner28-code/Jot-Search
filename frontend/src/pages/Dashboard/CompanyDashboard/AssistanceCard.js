@@ -6,6 +6,7 @@ export default function AssistanceCard() {
       {/* Header */}
       <div className='flex'>
         <img
+// Temp comment
           src={flagIcon}
           alt='Flag'
           className='w-auto h-auto'
@@ -15,7 +16,6 @@ export default function AssistanceCard() {
       {/* Body */}
       <div className='text-black70%'>
         <p>Please email us to perform changes to your InTulsa Talent Network account</p>
-// Temp comment
         <ul className='mt-8'>
           <li className='list-disc ml-8'>Update company profile</li>
           <li className='list-disc ml-8'>Create a new active career post</li>

@@ -17,6 +17,7 @@ export default function DesktopHeader(props) {
 
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-royalBlue ' : ' fill-royalBlue ';
+// Temp comment
   if ( classOverride ) addOnIconClasses += classOverride;
   let containerClasses = 'mb-10 pt-18 ';
   if ( containerClassOverride ) containerClasses += containerClassOverride;

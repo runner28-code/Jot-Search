@@ -36,7 +36,6 @@ export default function GlobalSearch({ placeholder }) {
   const debounceSearchTermFunction = useCallback(
     debounce( handleDebounce, 300 ),
     []
-  );
 
   async function handleDebounce( searchTerm ) {
     if ( searchTerm === '' ) {
@@ -62,6 +61,7 @@ export default function GlobalSearch({ placeholder }) {
     };
 
     setResults( resultsObject );
+  }
 
   /* Clear state on page change */
   useEffect( () => {

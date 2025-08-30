@@ -1,3 +1,3 @@
-CREATE TABLE "Branch" (
+-- CreateTable
     "id" TEXT NOT NULL,
 

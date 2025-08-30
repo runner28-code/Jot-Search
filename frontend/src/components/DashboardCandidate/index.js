@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -52,7 +53,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
           className='flex items-center justify-end text-[3rem]'
           onClick={() => togglePassState()}
         >
-// Temp comment
           {!toggle ? <ChevronDown /> : <ChevronUp />}
         </button>
       </div>

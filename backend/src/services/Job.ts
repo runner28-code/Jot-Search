@@ -46,7 +46,6 @@ const sanitizeJob = (job: Job): Job => {
 
   Object.keys(newJob).forEach((key) => {
     const typedKey = key as keyof Job;
-    if (!ALLOWED_JOB_KEYS.has(typedKey)) {
       delete newJob[typedKey];
     }
   });
@@ -87,6 +86,7 @@ export const getAppliedJobsByUser = async (userId: string) => {
   }
 };
 
+export const inferDatasetById = (id: string) => {
   if (id.startsWith("gt-")) {
     return DATASET_GETRO;
   } else if (id.startsWith("bl-")) {

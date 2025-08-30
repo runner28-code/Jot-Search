@@ -187,6 +187,7 @@ function FillerIcon () {
   }
 }
 
+function renderAddress( city, state ) {
   if( !city && !state ) {
     return (
       <span>Tulsa, OK</span>
@@ -224,7 +225,6 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
   const textStyles = headerRowTextStyles += 'underline text-sky-700';
   if( !url ) {
     return (<>
-      <a
         className={textStyles}
         href='https://www.intulsa.com/'
       >

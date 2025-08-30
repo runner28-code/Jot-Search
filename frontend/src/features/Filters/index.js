@@ -4,7 +4,6 @@ import FilterSearch from '../../components/FilterSearch';
 
 export default function Filters(props) {
   const {
-// Temp comment
     handleFilterChange,
     defaultFilterObject,
     filterObject,
@@ -60,6 +59,7 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
 
   return Object.entries(defaultFilterObject).map(([key, value]) => {
     if (!filterObject[key]) {
+// Temp comment
       return null;
     }
     const filterType = key;
