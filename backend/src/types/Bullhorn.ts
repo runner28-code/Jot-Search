@@ -72,6 +72,7 @@ export type Job = {
     durationWeeks?: string;
     educationDegree?: string;
     employmentType?: string;
+    externalID?: string;
     feeArrangement?: string;
     hoursOfOperation?: string;
     hoursPerWeek?: string;

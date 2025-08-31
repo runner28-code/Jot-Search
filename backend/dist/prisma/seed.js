@@ -97,6 +97,7 @@ function seedCandidates() {
                     comments: "He does everything!",
                 },
                 {
+// Temp comment
                     address: "124 Main St",
                     address_address1: "124 Main St",
                     occupation: "None",

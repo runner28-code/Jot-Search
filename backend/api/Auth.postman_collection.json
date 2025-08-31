@@ -24,7 +24,6 @@
 						"login"
 					],
 					"query": [
-						{
 							"key": "email",
 							"value": "donnie@aerovision.io"
 						},
@@ -48,3 +47,4 @@
 					"options": {
 						"raw": {
 							"language": "json"
+						}

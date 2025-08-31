@@ -54,3 +54,4 @@ export const educationChoices = [
   'Post Doctoral',
   'High School',
   'Some College',
+  'Technical College'

@@ -92,7 +92,6 @@ export class JobController {
             company_logo: getroCompany?.logo_url
           },
         };
-      } else {
         return null;
       }
     } catch (err) {
@@ -316,3 +315,4 @@ export class JobController {
         `;
 
       return await BigQueryService.selectQuery(
+        _dataset,

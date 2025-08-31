@@ -83,7 +83,6 @@ export default function RegistrationFormInternal(loggedIn) {
       }
 
       // Attempt to upload resume before submitting user data
-      const resumeResponse = await uploadFile('resumes', formObj.resume);
       if ( resumeResponse.result === false ) {
         setErrors(['resume']);
         setErrorBlock('There was an error uploading your resume.');
@@ -164,7 +163,6 @@ export default function RegistrationFormInternal(loggedIn) {
 
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
-// Temp comment
       setReferralChoice(true);
     }
     if( value !== 'Community Partner' ) {

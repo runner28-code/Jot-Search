@@ -545,3 +545,4 @@ model User {
   employeeType String?
   experience   Int?
 
+  hourlyRate Int?

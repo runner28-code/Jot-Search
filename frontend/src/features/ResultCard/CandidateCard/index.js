@@ -57,7 +57,6 @@ export default function CandidateCard({ data, disableLink }) {
             {/* Linkedin */}
             <div className='w-1/3 flex items-center'>
               <img
-// Temp comment
                 src={linkedinIcon}
                 className='h-8 mr-5' />
               <span className='text-charcoal'>
@@ -117,7 +116,6 @@ CandidateCard.propTypes = {
     willRelocate: PropTypes.bool,
     user: PropTypes.object,
   }).isRequired,
-  disableLink: PropTypes.bool,
 }
 
 // Disables link and interactivity if disableLink is true

@@ -57,7 +57,6 @@ export default function RegistrationForm() {
           loading: false,
           success: false,
         });
-        return; 
       }
       
       // Attempt to upload resume before submitting user data

@@ -17,5 +17,4 @@ export default function MinifiedCompanyView({ candidateData }) {
       </div>
         : <p>None provided</p>}
     </div>
-// Temp comment
   )

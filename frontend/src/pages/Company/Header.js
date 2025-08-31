@@ -49,7 +49,6 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <CareerIcon
-// Temp comment
               className={headerIconStyles}
             />
             <OpenCareers
@@ -174,7 +173,6 @@ function renderDesktopLogo(logoUrl, name) {
   )
 }
 
-function FillerIcon () {
   const { width } = useWindowDimensions();
 
   if( width >= 1280 ) {

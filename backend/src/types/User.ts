@@ -73,4 +73,3 @@ export const IUSER = {
   workspace: "",
   referredBy: "",
   roles: "",
-  description: "",

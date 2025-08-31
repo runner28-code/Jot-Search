@@ -68,6 +68,7 @@ export default function Stats({ userType }) {
           id='dropdown-container'
           className='relative'
         >
+// Temp comment
           <TimeframeFilter
             choices={statFilterChoices}
             timeframe={timeframe}
@@ -95,7 +96,6 @@ Stats.propTypes = {
   userType: PropTypes.string.isRequired,
 }
 
-// Temp comment
 function StatCard({ stat, value }) {
   const deviationPercentage = Math.trunc(value.compare);
 

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import ReferralCardContent from '../../features/ResultCard/ReferralContent';
+
 function renderHorizontalRule(isLastItem) {
   if (isLastItem) {
     return null;
@@ -32,7 +33,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
         <div className='grow'>
           <ReferralCardContent data={job} />
         </div>
-      </div>
       { renderHorizontalRule(isLastItem) }
     </div>
   )

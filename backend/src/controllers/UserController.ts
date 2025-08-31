@@ -37,6 +37,7 @@ import db from "../utils/db";
 
 @Controller()
 export class UserController {
+  @Post("/login")
   async login(@Body() body: { email: string; password: string }) {
     const { email, password } = body;
     const { result, error, ...data } = await login(email, password);
@@ -168,3 +169,4 @@ export class UserController {
   @Post("/account-recovery")
   async accountRecovery(@Body() body: { email: string }) {
     const { email } = body;
+    return await recovery(email);

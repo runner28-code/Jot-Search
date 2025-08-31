@@ -65,7 +65,6 @@ CareerCard.propTypes = {
     title: PropTypes.string,
     employmentType: PropTypes.string,
     onSite: PropTypes.string,
-    salary: PropTypes.string,
     salaryUnit: PropTypes.string,
     createdAt: PropTypes.string,
     category: PropTypes.shape({
@@ -118,7 +117,6 @@ function DesktopCard({ dataObj, active }) {
           </div>
           {/* Posting age */}
           <div className='w-1/3 flex items-center pr-4'>
-// Temp comment
             <img
               src={postingAgeIcon}
               className='h-11 mr-5' />

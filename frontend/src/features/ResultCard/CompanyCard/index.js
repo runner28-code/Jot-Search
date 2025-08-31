@@ -71,7 +71,6 @@ export default function CompanyCard({ data }) {
               <img
                 src={linkedinIcon}
                 className='h-8 mr-5' />
-              <a
                 href='#'
                 className='text-royalBlue underline'
               >
@@ -99,6 +98,7 @@ export default function CompanyCard({ data }) {
     </div>
   )
 }
+
 const dataShape = {
   data: PropTypes.shape({
     id: PropTypes.string.isRequired,

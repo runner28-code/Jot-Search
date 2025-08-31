@@ -148,6 +148,7 @@ const job_filter_exclude_keys = [
     "externship",
     "fabricator",
     "faculty",
+    "family",
     "field coach",
     "field service",
     "financial aid",
@@ -357,3 +358,4 @@ const job_filter_exclude_keys = [
     "service worker",
     "shelver",
     "shift lead",
+    "shipper",

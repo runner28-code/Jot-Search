@@ -1,7 +1,6 @@
 export const expertises = [
   'Finance',
   'Marketing',
-// Temp comment
   'Operations',
   'Other',
   'Software & Engineering',
@@ -291,3 +290,4 @@ export const skills = [
   'Outbound Calls',
   'Payroll',
   'Performance Improvement',
+  'Performance Reviews',

@@ -264,3 +264,4 @@ export class CompanyController {
     } catch (error) {
       console.log(error);
       return {
+        message: error,

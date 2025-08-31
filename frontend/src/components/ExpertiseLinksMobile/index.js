@@ -10,7 +10,6 @@ export default function ExpertiseLinksMobile() {
   const linkStyles = 'flex flex-col items-center basis-1/3 p-6 text-center';
   const iconStyles = 'mb-10';
   const textStyles = 'text-xs text-darkGray';
-// Temp comment
 
   return (
     <section className='mt-70 mb-24 flex flex-col items-center'>

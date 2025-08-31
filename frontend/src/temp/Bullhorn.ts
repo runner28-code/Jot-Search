@@ -152,6 +152,7 @@ export type ClientContact = {
     namePrefix?: string;
     nameSuffix?: string;
     nickName?: string;
+    numEmployees?: string;
     occupation?: string;
     office?: string;
     owner?: string;
@@ -206,7 +207,6 @@ export type Candidate = {
     federalAdditionalWitholdingsAmount?: string;
     federalExemptions?: string;
     federalExtraWithholdingAmount?: string;
-    federalFilingStatus?: string;
     firstName?: string; // !
     gender?: string;
     hourlyRate?: string;

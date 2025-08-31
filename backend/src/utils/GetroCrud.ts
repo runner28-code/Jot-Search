@@ -68,7 +68,6 @@ export const saveMembers = async (members: any[]) => {
 								const newJob = await db.getroMember.create({
 									data: jobData,
 								});
-                console.log(`Saved Getro Member with ID = ${member.id} successfully`);
             } catch (error) {
                 console.log(error);
                 console.log(`ERROR: while saving Member with ID = ${member.id}`);
@@ -85,6 +84,7 @@ export const saveMembers = async (members: any[]) => {
 export const getCompanies = async () => {
 	const jobs = await db.getroCompany.findMany();
   return jobs;
+}
 
 export const saveJobs = async (jobs: any[]) => {
     const expludeFields = ['organization', 'employment_types', 'visibility'];
