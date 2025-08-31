@@ -65,6 +65,7 @@ CareerCard.propTypes = {
     title: PropTypes.string,
     employmentType: PropTypes.string,
     onSite: PropTypes.string,
+    salary: PropTypes.string,
     salaryUnit: PropTypes.string,
     createdAt: PropTypes.string,
     category: PropTypes.shape({

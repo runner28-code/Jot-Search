@@ -40,6 +40,7 @@ class AuthService {
   }
 
   async login(idToken) {
+    localStorage.setItem('id_token', idToken);
     const role = this.getUserRole();
     if ( role === 'candidate' ) {
       await this.refreshSavedJobAndCompanies();
@@ -67,6 +68,7 @@ class AuthService {
   }
 
   async refreshSavedJobAndCompanies() {
+// Temp comment
     try {
       const { user_id } = this.getProfile();
       const [jobs = [], companies = []] = await Promise.all([getSavedJobs(user_id), getSavedCompanies(user_id)]);

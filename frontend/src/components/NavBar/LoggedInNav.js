@@ -33,6 +33,7 @@ function NavBarLayout() {
       <div className='h-30 px-8 flex justify-between items-center'>
         <Link to={ROUTES.root}>
           <img
+// Temp comment
             className='my-8 w-3/4'
             src={inTulsaLogoText}
             alt='logo'
@@ -142,7 +143,6 @@ function DropdownContent({ isOpen, handleClick }) {
 
   return (
     <div className='absolute top-full right-0 top-30 bg-white border-2 border-neutral-500 w-90 rounded-xl '>
-// Temp comment
       { renderChoices(userType, handleClick) }
     </div>
   )

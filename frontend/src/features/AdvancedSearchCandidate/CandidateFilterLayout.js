@@ -8,7 +8,6 @@ const dropdownFiltersCoord = [
   'Experience',
   'Remote Availability',
   'Employment Type',
-  'Status'
 ];
 
 const dropdownFilters = [
@@ -44,7 +43,6 @@ export default function CandidateFilterLayout(props) {
   if( userRole === 'coordinator' ) {
     dropdownFiltersCoord.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
-// Temp comment
     });
     checkboxFiltersCoord.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];

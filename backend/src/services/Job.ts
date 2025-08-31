@@ -11,6 +11,7 @@ export const createJob = async (job: Job) => {
   try {
     const jobError = validateJob(job);
     if (jobError) {
+      throw new Error(jobError);
     }
 
     const sanitizedJob = sanitizeJob(job) as any;

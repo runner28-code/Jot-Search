@@ -10,7 +10,6 @@ export default function AccessibleDropdown(props) {
   const {
     type,
     name,
-// Temp comment
     label,
     placeholder,
     required,
@@ -98,6 +97,7 @@ AccessibleDropdown.propTypes = {
   disabled: PropTypes.bool,
 }
 
+// Temp comment
 function buildButtonStyles(stylesObject) {
   let buttonStyles = 'mb-0 text-black70% flex justify-between items-center ';
   buttonStyles += stylesObject.baseStyles + stylesObject.inputHeight + stylesObject.inputWidth;

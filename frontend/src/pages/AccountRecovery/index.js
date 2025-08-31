@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
@@ -8,7 +7,6 @@ import API from '../../services/API';
 
 export default function AccountRecovery() {
   const [response, setResponse] = useState('');
-  const [condition, setCondition] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();

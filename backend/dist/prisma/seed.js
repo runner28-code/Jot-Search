@@ -80,6 +80,7 @@ function seedCandidates() {
     return __awaiter(this, void 0, void 0, function* () {
         yield db_1.default.candidate.createMany({
             data: [
+// Temp comment
                 {
                     address: "123 Main St",
                     address_address1: "123 Main St",
@@ -97,7 +98,6 @@ function seedCandidates() {
                     comments: "He does everything!",
                 },
                 {
-// Temp comment
                     address: "124 Main St",
                     address_address1: "124 Main St",
                     occupation: "None",

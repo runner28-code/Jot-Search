@@ -17,6 +17,7 @@ function adjustJobFilterObject() {
 }
 
 export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
+// Temp comment
   const navigate = useNavigate();
   const filterObject = adjustJobFilterObject();
   const [filterState, setFilterState] = useState({

@@ -46,6 +46,7 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
       className={tabStyles}
       onClick={() => handleClick(choice)}
     >
+// Temp comment
       {titleCasedTab === 'Jobs' ? 'Careers' : titleCasedTab}
     </button>
   );

@@ -9,6 +9,7 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
   const html = await ejs.renderFile<string>(path.join(__dirname, `../templates/${template}.ejs`), data);
   let message = { from, to, subject, html };
   const msg = { ...message, text: 'iDENTIFY'};
+
   try {
       await sendgrid.send(msg);
   } catch (error) {
@@ -23,7 +24,6 @@ export const sendVerification = async (to: string, name: string) => {
     await sendEmail(to, 'Welcome to inTulsa!', 'register-verification', {
       url: `${base_url}/verify`,
       firstName: name,
-    });
     return true;
   } catch (error: any) {
     console.log('Error during sending invitation');

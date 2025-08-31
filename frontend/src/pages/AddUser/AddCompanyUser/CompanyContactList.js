@@ -38,7 +38,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
               <input
                 type='checkbox'
                 id={contact.id}
-// Temp comment
                 name={contact.id}
                 checked={selectedContacts.includes(contact)}
                 className='w-12 h-12 mr-12'
@@ -48,7 +47,6 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
             </li>
           ))}
         </ul>
-        <button
           className='bg-royalBlue text-white text-lg px-xxl py-xs rounded-xl mt-20'
           onClick={handleSyncClick}
         >

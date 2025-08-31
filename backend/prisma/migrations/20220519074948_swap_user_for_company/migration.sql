@@ -40,7 +40,6 @@ CREATE TABLE "Company" (
     "dateLastModified" TIMESTAMP(3),
     "departmentId" TEXT,
     "externalID" TEXT,
-    "facebookProfileName" TEXT,
     "fax" TEXT,
     "feeArrangement" DOUBLE PRECISION,
     "funding" TEXT,

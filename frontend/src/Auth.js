@@ -20,8 +20,8 @@ export default function Auth() {
   }
 
   return ( 
-// Temp comment
     <div className='vw-640:pl-20 vw-640:pr-20 vw-1280:pl-0'>
+// Temp comment
       <Routes>
         <Route
           path='/'

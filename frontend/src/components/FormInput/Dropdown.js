@@ -47,7 +47,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
           </div>
           { renderHorizontalRule(index, choices.length) }
         </div>)
-// Temp comment
       })}
     </div>
   )

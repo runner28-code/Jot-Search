@@ -17,7 +17,6 @@ export const openJobStatuses = [
 
 export const stateCodeMap = {
   Alabama: 'AL',
-  Alaska: 'AK',
   Arizona: 'AZ',
   Arkansas: 'AR',
   California: 'CA',

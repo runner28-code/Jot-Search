@@ -116,6 +116,7 @@ CandidateCard.propTypes = {
     willRelocate: PropTypes.bool,
     user: PropTypes.object,
   }).isRequired,
+  disableLink: PropTypes.bool,
 }
 
 // Disables link and interactivity if disableLink is true

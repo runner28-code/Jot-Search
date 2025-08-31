@@ -57,6 +57,7 @@ export default function RegistrationForm() {
           loading: false,
           success: false,
         });
+        return; 
       }
       
       // Attempt to upload resume before submitting user data
@@ -83,7 +84,6 @@ export default function RegistrationForm() {
         console.log('Error: ', result);
         setErrorBlock(result);
         setSubmissionObject({
-          loading: false,
           success: false,
         });
       }

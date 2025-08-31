@@ -1,8 +1,8 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import { startCase } from 'lodash';
 
 export default function Property({name, value}) {
+// Temp comment
   const capitalizedName = startCase(name);
   const labelString = `${capitalizedName}:`;
   return (

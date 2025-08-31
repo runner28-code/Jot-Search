@@ -34,6 +34,7 @@ export default function AddCoordinator() {
     }
   }, [submissionObject.loading]);
 
+// Temp comment
   // Clear form and success icon after 2 seconds
   useEffect(() => {
     if (submissionObject.success) {

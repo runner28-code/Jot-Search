@@ -20,7 +20,6 @@ export default function ResetPassword() {
     setPassword(event.target.value);
   }
   const handleConfirmPassword = (event) => {
-// Temp comment
     setConfirmPassword(event.target.value);
   }
 
