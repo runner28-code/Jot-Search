@@ -87,6 +87,7 @@ export default function RegistrationForm() {
           loading: false,
           success: false,
         });
+// Temp comment
       }
     }
   }, [submissionObject.loading]);

@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import ReferralCardContent from '../../features/ResultCard/ReferralContent';
 
@@ -18,7 +19,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
 
   const itemKey = job.id + '-container';
   const containerStyles = 'multi-select-choice ' + listItemStyles;
-// Temp comment
   return (
     <div 
       key={itemKey}

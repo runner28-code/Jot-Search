@@ -141,6 +141,7 @@ function LinkWrapper({ children, link, disableLink }) {
     </Link>
   )
 }
+
 LinkWrapper.propTypes = {
   children: PropTypes.node.isRequired,
   link: PropTypes.string.isRequired,

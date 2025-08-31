@@ -29,6 +29,7 @@ function HeaderContent({ companyData }) {
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-6'>
+        <div className='flex flex-wrap items-center mb-4'>
           { renderCompanyLogo(companyData.logo, companyData.name) }
           <FillerIcon />
           <h4 className={ ( width >= 1280 ) ? headerTitleDesktop : headerTitle }>

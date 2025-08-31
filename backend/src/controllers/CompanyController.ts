@@ -50,7 +50,6 @@ export class CompanyController {
     if (datasource === DataSource.BULLHORN) {
       const company = await this.getCompanyByIdFromBullhorn(id);
       return {
-        company,
         source: datasource,
       };
     } else if (datasource === DataSource.GETRO) {

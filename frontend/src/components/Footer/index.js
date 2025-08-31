@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import intulsaLogo from '../../assets/images/intulsa-logo-white-small.svg';
-import intulsaTalentLogo from '../../assets/images/intulsa-talent-white-small.svg';
 import intulsaBusinessLogo from '../../assets/images/inTulsa-business-logo-web-white.svg';
 
 import intulsaFooterWhite from '../../assets/images/talent-intulsa-white-small.svg';

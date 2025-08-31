@@ -19,6 +19,7 @@ export const jobFilterObject = {
   ],
   'Years Experience': [
     'Any',
+// Temp comment
     ...experienceValues
   ],
   'Status': [
@@ -156,4 +157,5 @@ export function buildSearchFiltersObj(filterObject) {
       }
       searchFilters[filterKey] = filterObject[key];
     }
+  });
   return searchFilters

@@ -143,7 +143,6 @@ export default function Apply() {
     return response
   }
 
-// Temp comment
   function handleInputChange(e) {
     const { name, value } = e.target;
     setApplicationObject({ ...applicationObject, [name]: value });

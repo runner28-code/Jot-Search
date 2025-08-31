@@ -29,7 +29,6 @@ export default function CareerPage() {
 
   useEffect(async () => {
     const career = await getJobById(id);
-    // Decode url encoded properties on career
     career.title = urlDecode(career.title);
     career.description = urlDecode(career.description);
 
@@ -87,7 +86,6 @@ CareerPage.propTypes = {
 function renderNotification(activeData, careerData) {
   if( activeData ) {
     return (<>
-// Temp comment
       <Notification
         title='Need to update this posting?'
         content='Please contact your inTulsa coordinator to provide status updates or if you notive anything incorrect.'

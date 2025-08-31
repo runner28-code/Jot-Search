@@ -93,6 +93,7 @@ export default function RegistrationForm(loggedIn) {
         return;
       }
       formObj.resume = resumeResponse;
+// Temp comment
 
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);

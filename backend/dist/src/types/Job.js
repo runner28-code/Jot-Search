@@ -9,7 +9,6 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "address2",
     "city",
     "state",
-    "zip",
     "country_id",
     "employmentType",
     "title",
@@ -17,7 +16,6 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "yearsRequired",
     "status",
     "skillList",
-// Temp comment
     "locations",
     "companyId",
     "interviews",

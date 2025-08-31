@@ -40,6 +40,7 @@ export default function LandingPage() {
       { renderExpertiseLinks() }
       { isMobile && <JoinTalentNetwork /> }
       {/* Featured Jobs */}
+// Temp comment
       <FeaturedJobs />
       {/* Featured Companies */}
       { isDesktop ? <FeaturedCompanies /> : <FeaturedCompaniesMobile />}

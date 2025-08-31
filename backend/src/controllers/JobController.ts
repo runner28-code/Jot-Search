@@ -297,7 +297,6 @@ export class JobController {
       }));
       const _condition = getFilterConditions(
         _filters,
-        operator,
         _specialHandlers
       );
 

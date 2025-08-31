@@ -91,7 +91,6 @@ export const saveCompanies = async (companies: any[]) => {
 
 export const saveBullhornJobs = async (jobs: any[]) => {
   const excludeFields = [
-    "address",
     "location",
     "_score",
     "publicDescription", //
@@ -186,6 +185,7 @@ export const saveClientContacts = async (contacts: any[]) => {
 
     return { result: true };
   } catch (error: any) {
+    console.log(error.message);
     return { result: false, error };
   }
 };

@@ -20,7 +20,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     avatar: candidateData.avatar || '',
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
-    occupation: candidateData.occupation || '',
     companyName: candidateData.companyName || '',
     address1: candidateData.address1 || '',
     address2: candidateData.address2 || '',

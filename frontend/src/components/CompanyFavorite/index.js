@@ -22,7 +22,6 @@ export default function CareerFavorite () {
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
           isLoading ?
-            <LoadingSpinner />
             :
             savedCompanies.map((company, index) => {
               console.log(company);
@@ -42,7 +41,6 @@ export default function CareerFavorite () {
           <Link
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
-// Temp comment
               Browse All
           </Link>
         </div>

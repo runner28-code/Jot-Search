@@ -99,7 +99,6 @@ export default function DesktopLayout(props) {
           )}
         </div>
       </div>
-// Temp comment
 
       {/* Coordinator Status */}
       {

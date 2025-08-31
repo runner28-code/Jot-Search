@@ -12,5 +12,4 @@ export const useGetSavedCandidates = ({ count, page, userId, enabled = true }) =
     { enabled }
   );
 
-// Temp comment
   return { savedCandidates: data, total: data?.total || 0, error, isLoading };

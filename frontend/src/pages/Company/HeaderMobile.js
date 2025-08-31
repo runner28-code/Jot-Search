@@ -71,7 +71,6 @@ HeaderContent.propTypes = {
     industryList: PropTypes.array,
     address: PropTypes.string,
     employeeString: PropTypes.string,
-// Temp comment
     city: PropTypes.string,
     state: PropTypes.string,
     numEmployees: PropTypes.number,
@@ -94,6 +93,7 @@ HeaderMobile.propTypes = {
 }
 
 function renderCompanyLogo(logoUrl, name) {
+// Temp comment
   const { width } = useWindowDimensions();
   const logoStyles = 'my-auto object-cover h-full w-full';
   if( width >= 1280 ) {

@@ -200,7 +200,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
             id={ placeholder }
             placeholder={ !isOpen ? '' : placeholderText  }
             value={ searchTerm }
-// Temp comment
             onChange={ handleChange }
             className={ !isOpen ? offObject.inputStyles : styleObject.inputStyles } />
           <div className='bg-searchGreen p-4 rounded-r-lg text-white'>

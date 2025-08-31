@@ -29,7 +29,6 @@ exports.JobFilter = {
         isDeleted: "isDeleted",
         companyId: "companyId",
     },
-// Temp comment
 };
 exports.CompanyFilter = {
     bullhorn: {
@@ -37,7 +36,6 @@ exports.CompanyFilter = {
         city: "address_city",
         industry: "industryList",
     },
-    getro: {
         name: "name",
         city: "locations",
     },

@@ -58,6 +58,7 @@ export default function Dropdown(props) {
     marginBottom,
     choices, 
     currentChosen, 
+    inputHeight,
     name, 
     onChange, 
     placeholder, 

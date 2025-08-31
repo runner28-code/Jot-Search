@@ -456,6 +456,7 @@ model Job {
 model GetroJobInfo {
   id                    String    @id @default(uuid())
   application_method    String?
+  application_path      String?
   compensation_currency String?
   compensation_max      String?
   compensation_min      String?

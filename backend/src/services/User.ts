@@ -36,6 +36,7 @@ const validateUser = ({
   resume,
   linkedin,
   skills,
+  category,
 }: User) => {
   try {
     if (isNullOrEmpty(firstname) || isNullOrEmpty(lastname))

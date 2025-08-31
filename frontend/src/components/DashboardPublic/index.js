@@ -20,6 +20,7 @@ export default function DashboardPublic({togglePassState}) {
   const active = ' bg-royalBlue';
 
   const careerTitle = totalJobsCount + ' Open Careers';
+// Temp comment
   const companyTitle = totalCompaniesCount  + ' Companies';
 
   return (
