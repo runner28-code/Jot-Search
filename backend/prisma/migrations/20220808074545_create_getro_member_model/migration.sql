@@ -51,3 +51,4 @@ CREATE TABLE "GetroMember" (
     "employment_types" TEXT,
     "opportunity_types" TEXT[],
     "invited" BOOLEAN,
+    "invited_by" TEXT,

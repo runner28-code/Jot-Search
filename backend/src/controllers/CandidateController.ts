@@ -304,3 +304,4 @@ export class CandidateController {
             candidate.lastName = user.lastname;
             delete candidate.user.password;
           }
+          return candidate;

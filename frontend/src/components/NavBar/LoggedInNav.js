@@ -33,7 +33,6 @@ function NavBarLayout() {
       <div className='h-30 px-8 flex justify-between items-center'>
         <Link to={ROUTES.root}>
           <img
-// Temp comment
             className='my-8 w-3/4'
             src={inTulsaLogoText}
             alt='logo'
@@ -68,7 +67,6 @@ const DesktopNavBarLayout = () => {
         <div className='mr-14'>
           { renderNavSearch() }
         </div>
-        {/* Dropdown Menu */}
         <DropdownMenu />
       </div>
     </nav>

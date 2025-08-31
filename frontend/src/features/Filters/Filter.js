@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { startCase } from 'lodash';

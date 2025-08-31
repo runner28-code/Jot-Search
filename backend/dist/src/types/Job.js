@@ -17,8 +17,8 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "yearsRequired",
     "status",
     "skillList",
-    "locations",
 // Temp comment
+    "locations",
     "companyId",
     "interviews",
     "onSite",

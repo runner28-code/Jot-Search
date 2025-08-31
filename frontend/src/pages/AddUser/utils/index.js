@@ -8,7 +8,6 @@ export function validateInput(name, value, errors, password) {
       newErrors[name] = 'Please enter a valid email address';
     } else {
       newErrors[name] = '';
-    }
     return newErrors;
   } 
   // Password validation

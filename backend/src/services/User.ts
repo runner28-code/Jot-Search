@@ -36,7 +36,6 @@ const validateUser = ({
   resume,
   linkedin,
   skills,
-  category,
 }: User) => {
   try {
     if (isNullOrEmpty(firstname) || isNullOrEmpty(lastname))
@@ -460,3 +459,4 @@ export const getCoordinatorDashboardStats = async (days: number) => {
 
   const newApplicationsInCurrentPeriod = await db.application.count({
     where: {
+      createdAt: {

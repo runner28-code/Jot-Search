@@ -7,7 +7,6 @@ export function formatCandidateData(candidateData) {
 
   formattedData.sourceTable = candidateData.id.startsWith('bl-') ? 'Candidate' : 'User'; // Some features are only available to candidates who have been added to the platform (Users)
   if (formattedData.sourceTable === 'Candidate') {
-    formattedData.address1 = candidateData.address_address1 || '';
     formattedData.address2 = candidateData.address_address2 || '';
     formattedData.city = candidateData.address_city || '';
     formattedData.state = candidateData.address_state || '';

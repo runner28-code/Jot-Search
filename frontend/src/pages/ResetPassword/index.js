@@ -29,7 +29,6 @@ export default function ResetPassword() {
     event.preventDefault();
 
     if( password !== confirmPassword ) {
-      setMatch(false);
     }
 
     if( password === confirmPassword ) {

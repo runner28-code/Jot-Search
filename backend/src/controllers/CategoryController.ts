@@ -39,7 +39,6 @@ export class CategoryController {
         message: error,
       };
     }
-  }
 
   @Post("/search")
   async searchByFilter(

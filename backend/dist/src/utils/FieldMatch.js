@@ -29,6 +29,7 @@ exports.JobFilter = {
         isDeleted: "isDeleted",
         companyId: "companyId",
     },
+// Temp comment
 };
 exports.CompanyFilter = {
     bullhorn: {

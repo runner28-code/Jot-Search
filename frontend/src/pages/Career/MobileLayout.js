@@ -175,6 +175,7 @@ function renderAboutCompanySection(careerData) {
 }
 
 function renderSkillsSection({skillList}) {
+  return(<>
     <hr className={hrStyles} />
     {/* Skills Required */}
     <h4 className={sectionHeaderStyles}>Skills Required</h4>

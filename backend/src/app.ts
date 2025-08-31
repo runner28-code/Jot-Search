@@ -34,7 +34,6 @@ const uploadToS3 = async(req: any, res: any) => {
     res.status(500).send("S3_BUCKET not set")
     return
   }
-
   const form = new IncomingForm() as any
   form.uploadDir = path.join(__dirname, "..", "uploads");
   form.keepExtensions = true

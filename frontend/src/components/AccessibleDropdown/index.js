@@ -78,7 +78,6 @@ AccessibleDropdown.propTypes = {
   label: PropTypes.string,
   placeholder: PropTypes.string,
   required: PropTypes.bool,
-  onChange: PropTypes.func,
   choices: PropTypes.array,
   choiceObject: PropTypes.object,
   currentChosen: PropTypes.oneOfType([
@@ -97,7 +96,6 @@ AccessibleDropdown.propTypes = {
   disabled: PropTypes.bool,
 }
 
-// Temp comment
 function buildButtonStyles(stylesObject) {
   let buttonStyles = 'mb-0 text-black70% flex justify-between items-center ';
   buttonStyles += stylesObject.baseStyles + stylesObject.inputHeight + stylesObject.inputWidth;

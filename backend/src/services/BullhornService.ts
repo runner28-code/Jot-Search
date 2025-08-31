@@ -722,3 +722,4 @@ export class BullhornService {
               address_address1: d.address?.address1 || null,
               address_address2: d.address?.address2 || null,
               address_city: d.address?.city || null,
+              address_state: d.address?.state || null,

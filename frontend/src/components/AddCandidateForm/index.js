@@ -84,6 +84,7 @@ export default function RegistrationForm() {
         console.log('Error: ', result);
         setErrorBlock(result);
         setSubmissionObject({
+          loading: false,
           success: false,
         });
       }

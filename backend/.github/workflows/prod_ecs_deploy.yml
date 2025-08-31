@@ -15,7 +15,6 @@
 
 # jobs:
 #   deploy:
-#     name: Deploy
 #     runs-on: ubuntu-latest
 #     environment: prod
 
@@ -39,3 +38,4 @@
 #       env:
 #         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
 #         IMAGE_TAG: ${{ github.sha }}
+#       run: |

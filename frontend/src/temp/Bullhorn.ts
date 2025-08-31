@@ -93,7 +93,6 @@ export type Job = {
     location_zip?: string;
     location_country_id?: string;
     location_country_name?: string;
-    location_country_code?: string;
     markUpPercentage?: string;
     numOpenings?: string;
     onSite?: string;
@@ -218,6 +217,7 @@ export type Candidate = {
     isEditable?: string;
     isExempt?: string;
     lastName?: string; // !
+    localAddtionalWitholdingsAmount?: string;
     localExemptions?: string;
     localFilingStatus?: string;
     localTaxCode?: string;

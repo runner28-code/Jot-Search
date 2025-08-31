@@ -50,7 +50,6 @@ export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handl
       />
     )
   }
-// Temp comment
 }
 
 export function renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange) {
@@ -73,5 +72,6 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
         chosen={chosen}
         handleFilterChange={handleFilterChange}
       />
+// Temp comment
     )
   })

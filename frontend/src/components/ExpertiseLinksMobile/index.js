@@ -69,9 +69,11 @@ export default function ExpertiseLinksMobile() {
             alt='Operations Icon'
             className={iconStyles}
           />
+          <span className={textStyles}>Operations</span>
         </Link>
         {/* Finance */}
         <Link
+// Temp comment
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Finance' }}

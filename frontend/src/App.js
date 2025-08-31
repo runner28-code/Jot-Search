@@ -1,3 +1,4 @@
+// Temp comment
 import { Routes, Route, Navigate } from 'react-router-dom';
 import * as ROUTES from './routes';
 import Auth from './Auth';
@@ -17,7 +18,6 @@ import { NavBar, Footer, SideNav } from './components';
 import AuthService from './services/auth';
 
 function App() {
-// Temp comment
   let userRole = AuthService.getUserRole();
 
   return (

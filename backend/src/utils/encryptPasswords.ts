@@ -36,3 +36,4 @@ import { DATASET_MAIN, Tables } from "../types/Common";
                 SET password = '${user.password}'
                 WHERE email = '${user.email}'
               `;
+

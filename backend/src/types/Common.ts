@@ -1,6 +1,5 @@
 import { Dictionary } from "typed-two-way-map";
 import config from "../config";
-import {
   Job as BullhornJob,
   Company as BullhornCompany,
 } from "../types/Bullhorn";
@@ -102,3 +101,4 @@ export type GetSavedJobsResponse = {
 
 export type GetCandidatesOnJobResponse = {
   candidates?: any[];
+  result: boolean;
