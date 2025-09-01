@@ -16,6 +16,7 @@ export const saveApplication = async (job: string, candidate: string) => {
           user: {
             connect: {
               id: candidate,
+            },
           },
           job: {
             connect: {
@@ -104,3 +105,4 @@ export const getSavedJobs = async (candidateId: string) => {
   try {
     const candidate = await db.user.findFirst({
       where: {
+        id: candidateId,

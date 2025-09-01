@@ -359,3 +359,6 @@ const job_filter_exclude_keys = [
     "shelver",
     "shift lead",
     "shipper",
+    "shipping",
+    "shoe",
+    "sign language",

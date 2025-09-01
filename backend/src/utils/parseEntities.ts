@@ -95,3 +95,4 @@ export const parseBullhornJobToMain = (data: BhJob) => {
     externalId: data.id,
     description: data.description,
     address1: data.address_address1,
+    address2: data.address_address2,

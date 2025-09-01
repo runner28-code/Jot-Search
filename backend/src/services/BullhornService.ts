@@ -479,7 +479,6 @@ export class BullhornService {
 
     while (repeatErr < 3) {
       console.log(`\nBullhorn_GET_CLIENTCONTACTS: ${total} / ${offset}`);
-      try {
         const query = queryString.stringify({
           BhRestToken: this.BhRestToken,
           fields: [
@@ -723,3 +722,8 @@ export class BullhornService {
               address_address2: d.address?.address2 || null,
               address_city: d.address?.city || null,
               address_state: d.address?.state || null,
+              address_zip: d.address?.zip || null,
+              address_country_id: d.address?.countryID || null,
+              leads: d.leads?.data.map((lead: any) => lead.id).join(" | "),
+              primarySkills: d.primarySkills?.data
+                .map((skill: any) => skill.name)

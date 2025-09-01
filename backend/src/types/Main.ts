@@ -15,6 +15,7 @@ export type Job = {
     id?: string;
     externalId?: string;
     description?: string;
+    address1?: string;
     address2?: string;
     city?: string;
     state?: string;
@@ -25,3 +26,5 @@ export type Job = {
     willRelocate?: string;
     yearsRequired?: string;
     status?: string;
+    skillList?: string;
+    locations?: string;

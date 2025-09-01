@@ -65,3 +65,49 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
 export function Checkbox({ attribute, name, optionValue, setOptionValue, disabled }) {
   function handleChange(e) {
     setOptionValue(e.target.checked);
+  }
+
+  return (
+    <label
+      htmlFor={`${name}-${attribute}`}
+      className='mt-4 mb-5 flex items-center text-black'
+    >
+      <input
+        type='checkbox'
+        name={`${name}-${attribute}`}
+        id={`${name}-${attribute}`}
+        className='h-8 w-8 ml-2'
+        checked={optionValue === true || optionValue === attribute}
+        onChange={handleChange}
+        disabled={disabled}
+      />
+      <p className='text-md ml-2'>{attribute}</p>
+    </label>
+  )
+}
+
+Checkbox.propTypes = {
+  attribute: PropTypes.string.isRequired,
+  optionValue: PropTypes.bool,
+  setOptionValue: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
+  disabled: PropTypes.bool
+}
+
+export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
+  if (submissionObject.loading) {
+    return <LoadingSpinner
+      height='50'
+      width='50'
+    />
+  }
+  if (submissionObject.success) {
+    return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
+  }
+  return (
+    <button
+      className={buttonStyles}
+      type='submit'>
+      {buttonString}
+    </button>
+  )

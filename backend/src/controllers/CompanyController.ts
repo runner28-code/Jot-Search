@@ -50,6 +50,7 @@ export class CompanyController {
     if (datasource === DataSource.BULLHORN) {
       const company = await this.getCompanyByIdFromBullhorn(id);
       return {
+        company,
         source: datasource,
       };
     } else if (datasource === DataSource.GETRO) {
@@ -232,7 +233,6 @@ export class CompanyController {
       const [companies, total] = await Promise.all([companiesPromise, totalPromise])
 
       const companyURLs = companies.filter(company => company.companyURL)
-        .map(company => company.companyURL) as string[]
       const getroCompanies = await db.getroCompany.findMany({
         select: {
           domain: true,
@@ -264,3 +264,5 @@ export class CompanyController {
       console.log(error);
       return {
         message: error,
+      };
+    }

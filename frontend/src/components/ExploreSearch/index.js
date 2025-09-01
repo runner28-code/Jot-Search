@@ -14,6 +14,7 @@ function adjustJobFilterObject() {
   adjustedJobFilterObject['Expertise'][0] = 'Any Expertise';
   
   return adjustedJobFilterObject;
+// Temp comment
 }
 
 export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {

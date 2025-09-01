@@ -20,7 +20,6 @@ export default function AccessibleDropdown(props) {
     stylesObject,
     showDropdownArrow,
     disabled,
-  } = props;
 
   function handleSelection(choice) {
     if ( type === MULTI_SELECT ) {

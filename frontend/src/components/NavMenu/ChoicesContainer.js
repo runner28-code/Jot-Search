@@ -38,8 +38,8 @@ export default function ChoicesContainer(props) {
       <LoggedOutButtons 
         handleOptionClick={handleOptionClick}
         stylesObject={stylesObject} /> 
+// Temp comment
       :
       null
-// Temp comment
     }
   </>)

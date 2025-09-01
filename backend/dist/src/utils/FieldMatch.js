@@ -36,6 +36,7 @@ exports.CompanyFilter = {
         city: "address_city",
         industry: "industryList",
     },
+    getro: {
         name: "name",
         city: "locations",
     },
@@ -49,3 +50,4 @@ exports.USER_FILTER = {
     firstname: "firstname",
     lastname: "lastname",
     role: "role",
+    roles: "roles",

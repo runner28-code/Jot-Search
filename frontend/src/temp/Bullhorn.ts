@@ -95,6 +95,7 @@ export type Job = {
     location_country_name?: string;
     location_country_code?: string;
     markUpPercentage?: string;
+    numOpenings?: string;
     onSite?: string;
     owner?: string;
     payRate?: string;
@@ -147,7 +148,6 @@ export type ClientContact = {
     leads?: string;
     middleName?: string;
     mobile?: string;
-    name?: string;
     namePrefix?: string;
     nameSuffix?: string;
     nickName?: string;
@@ -241,3 +241,5 @@ export type Candidate = {
     pager?: string;
     paperWorkOnFile?: string;
     password?: string;
+    payrollClientStartDate?: string;
+    payrollStatus?: string;

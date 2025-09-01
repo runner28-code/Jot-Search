@@ -11,9 +11,9 @@ export default function DesktopHeader(props) {
     containerClassOverride,
     colorizeStroke,
     dataSource,
-// Temp comment
     backButton
   } = props;
+// Temp comment
   const navigate = useNavigate();
 
   let addOnIconClasses = '';

@@ -59,7 +59,6 @@ export default function ReferralSearch() {
     if (!jobToAdd) return;
     const newFilteredChoices = filteredChoices.filter(job => job.id !== idToAdd);
     setCurrentChosen([ ...currentChosen, jobToAdd ]);
-// Temp comment
     setFilteredChoices(newFilteredChoices);
   }
 
@@ -71,7 +70,6 @@ export default function ReferralSearch() {
 
   // set up initial choices
   useEffect(() => {
-    // TODO: Implement API
     setChoices(mockJobsData);
   }, []);
   

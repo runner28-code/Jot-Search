@@ -46,6 +46,7 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
         return false;
     } catch (error) {
         console.log(error);
+        return true;
     }
 }
 
@@ -87,3 +88,4 @@ export const justifyData = (data: any, keys: string[], excludeKeys: string[] = [
     }, {});
 }
 
+export const getFilterConditions = (

@@ -32,3 +32,4 @@ CREATE TABLE "User" (
     "annualRevenue" TEXT,
     "companyURL" TEXT,
     "numEmployees" TEXT,
+    "revenue" TEXT,

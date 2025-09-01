@@ -2,6 +2,7 @@ import { Datasource } from "@prisma/client";
 
 export type Job = {
   id?: string;
+  externalId?: string;
   description?: string;
   address1?: string;
   address2?: string;
@@ -39,3 +40,4 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "description",
   "address1",
   "address2",
+  "city",

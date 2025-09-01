@@ -93,7 +93,6 @@ HeaderMobile.propTypes = {
 }
 
 function renderCompanyLogo(logoUrl, name) {
-// Temp comment
   const { width } = useWindowDimensions();
   const logoStyles = 'my-auto object-cover h-full w-full';
   if( width >= 1280 ) {
@@ -139,3 +138,17 @@ function renderDesktopLogo(logoUrl, name) {
       />
     </div>
   )
+}
+
+function FillerIcon () {
+  const { width } = useWindowDimensions();
+
+  if( width >= 1280 ) {
+    return (
+      <div>
+        <BsBuilding className='w-16 h-16 fill-royalBlue basis-1/3 mr-8'/>
+      </div>
+    )
+  } else {
+    return null;
+  }

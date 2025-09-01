@@ -91,6 +91,7 @@ export const saveCompanies = async (companies: any[]) => {
 
 export const saveBullhornJobs = async (jobs: any[]) => {
   const excludeFields = [
+    "address",
     "location",
     "_score",
     "publicDescription", //
@@ -239,3 +240,5 @@ export const saveLeads = async (leads: any[]) => {
   const expludeFields = ["address", "_score"];
   try {
     for (const lead of leads) {
+      try {
+        console.log(`Savng Lead with ID = ${lead.id}`);

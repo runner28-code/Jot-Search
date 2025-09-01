@@ -6,6 +6,7 @@ import { IoIosMail } from 'react-icons/io';
 import { appendPathToBaseUrl } from '../../services/API';
 
 export default function EditHeaderForm({ candidateData, handleCandidateUpdate, setEditMode, iconStyles }) {
+// Temp comment
   const [formData, setFormData] = useState({
     id: candidateData.id,
     avatar: candidateData.avatar,
@@ -26,4 +27,5 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     setFormData({ ...formData, [name]: value });
   }
 
+  const handleCancel = () => {
     setEditMode(false);

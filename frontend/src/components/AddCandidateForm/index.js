@@ -66,6 +66,7 @@ export default function RegistrationForm() {
       delete formObj.resumeFile;
       
       // Format formObj
+// Temp comment
       const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
@@ -87,7 +88,6 @@ export default function RegistrationForm() {
           loading: false,
           success: false,
         });
-// Temp comment
       }
     }
   }, [submissionObject.loading]);

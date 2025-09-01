@@ -288,7 +288,6 @@ export async function saveJob(candidateId, jobId) {
 
 export async function getSavedJobs(id, count = undefined, page = undefined) {
   const { data } = await API.get(ROUTES.APIsavedJobs, {
-    params: {
       candidate: id,
       count,
       page

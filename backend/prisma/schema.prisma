@@ -547,3 +547,7 @@ model User {
 
   hourlyRate Int?
 
+  willRelocate Boolean?
+  willReceiveNotification Boolean?
+
+  ethnicity String[]

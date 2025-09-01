@@ -297,6 +297,7 @@ export class JobController {
       }));
       const _condition = getFilterConditions(
         _filters,
+        operator,
         _specialHandlers
       );
 
@@ -316,3 +317,5 @@ export class JobController {
 
       return await BigQueryService.selectQuery(
         _dataset,
+        _table,
+        _fields,

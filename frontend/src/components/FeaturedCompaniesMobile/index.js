@@ -34,7 +34,6 @@ export default function FeaturedCompaniesMobile() {
                 { renderLogo(company.logo) }
               </Link>
             )
-// Temp comment
         }
       </div>
       <div className='text-center mt-24'>

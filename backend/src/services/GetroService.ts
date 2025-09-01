@@ -58,6 +58,7 @@ export class GetroService {
             }
         } catch (error) {
             console.log(error);
+        }
         return false;
     };
 
@@ -212,3 +213,4 @@ export class GetroService {
         console.log(`\n***** getJobs *****`);
         const companies: any[] = await getCompanies();
         if (companies.length === 0) {
+            return {

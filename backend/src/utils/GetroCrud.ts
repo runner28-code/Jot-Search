@@ -89,3 +89,4 @@ export const getCompanies = async () => {
 
 export const saveJobs = async (jobs: any[]) => {
     const expludeFields = ['organization', 'employment_types', 'visibility'];
+		console.log('----- jobs', jobs);

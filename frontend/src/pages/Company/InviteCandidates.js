@@ -10,7 +10,6 @@ import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandi
 
 export default function InviteCandidates({ company }) {
   const { candidates, isLoading } = useGetCandidates({ 
-// Temp comment
     filtersArr: [],
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
@@ -49,3 +48,70 @@ export default function InviteCandidates({ company }) {
 
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>
+  }
+  
+  return (
+    <section className="flex flex-col space-y-8 bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4">
+      <h2 className="text-h4">Send Candidates to Company</h2>
+
+      {isSendingCandidates && <div className="text-center">Sending Invitations...</div>}
+      {successfullySentCandidates && <div className="text-center">Invitations Sent!</div>}
+
+      <SelectedValues />
+
+      <MultiSelect
+        isLoading={isLoading}
+        options={candidateOptions}
+        value={selected}
+        onChange={setSelected}
+        labelledBy="Select"
+        ItemRenderer={itemRenderer}
+        valueRenderer={valueRenderer}
+        hasSelectAll={false}
+      />
+      <div className='flex space-x-8'>
+        <button 
+          className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
+          onClick={async () => {
+            console.log({selected})
+            const res = await sendCandidatesToCompanies({ companyIds: [company.id], candidateIds: selected.map((option) => option.value) })
+            console.log({res})
+            if(res.result){
+              setSelected([])
+            }
+          }}
+          disabled={selected.length === 0 || isSendingCandidates}
+        >
+          <MailIcon className='inline-block mr-2' />
+          Send Now
+        </button>
+        <button 
+          onClick={() => setSelected([])} 
+          className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>
+      </div>
+    </section>
+  )
+}
+
+function itemRenderer({ option, onClick, disabled}) {
+  const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''
+  return (
+    <div 
+      className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`} 
+      onClick={onClick}
+    >
+      <div className="flex items-center space-x-4 pb-2 border-b-2 ">
+        { avatarUrl ?
+          <img
+            className='w-20 h-20'
+            src={avatarUrl}
+            alt='Candidate Avatar' />      
+          : <Initials name={option.label} />
+        }  
+        <div className="flex flex-col">
+          <span className='text-lg text-blue-500'>{option.candidate?.firstName} {option.candidate?.lastName}</span>
+          <span>{getTagLine({ candidate: option.candidate })}</span>
+        </div>
+      </div>
+    </div>
+  )

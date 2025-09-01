@@ -61,3 +61,4 @@ jobs:
       env:
         SECRET_DATABASE_URL: ${{ secrets.DEV_DATABASE_URL }}
         
+    - name: Build, tag, and push image to Amazon ECR

@@ -105,3 +105,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
       ALLOWED_JOB_KEYS_TO_UPDATE.has(key as JobKey)
     );
 
+    const filteredJob: any = {};

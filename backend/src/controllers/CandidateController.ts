@@ -196,6 +196,7 @@ export class CandidateController {
         if (firstName) {
           whereWithoutStatus.firstname = firstName
         }
+        const categoryId = where.categoryId;
         if (categoryId) {
           // change categoryId to category external id because in candidate table it is saved as externalID.
           const category = await db.category.findFirst({
@@ -304,3 +305,5 @@ export class CandidateController {
             delete candidate.user.password;
           }
           return candidate;
+        });
+      }

@@ -461,3 +461,7 @@ export const getCoordinatorDashboardStats = async (days: number) => {
   const newApplicationsInCurrentPeriod = await db.application.count({
     where: {
       createdAt: {
+        gte: moment().subtract(days - 1, 'days').startOf('day').toDate(),
+      }
+    }
+  });

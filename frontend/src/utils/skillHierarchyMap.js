@@ -291,3 +291,6 @@ export const skills = [
   'Payroll',
   'Performance Improvement',
   'Performance Reviews',
+  'PHD',
+  'Photoshop',
+  'PHP',

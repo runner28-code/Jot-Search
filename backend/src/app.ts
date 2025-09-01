@@ -102,3 +102,4 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
   next();
 };
 
+const app = express();

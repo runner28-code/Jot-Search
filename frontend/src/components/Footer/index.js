@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import intulsaLogo from '../../assets/images/intulsa-logo-white-small.svg';
+import intulsaTalentLogo from '../../assets/images/intulsa-talent-white-small.svg';
 import intulsaBusinessLogo from '../../assets/images/inTulsa-business-logo-web-white.svg';
 
 import intulsaFooterWhite from '../../assets/images/talent-intulsa-white-small.svg';
@@ -93,7 +94,6 @@ export default function Footer() {
     <NavFooter />
     <div className='flex py-24 px-[15%] items-center justify-center bg-royalBlue'>
       <img
-        src={intulsaFooterWhite}
         className='w-56 h-auto mr-18'
       />
       <a href={ROUTES.linkedin}>
@@ -409,4 +409,22 @@ function BackToTop() {
         }}>Back to Top
       </button>
     </div>
+  </>)
+}
+
+function Address() {
+  const { width } = useWindowDimensions();
+  const addressLinkStyle = 'text-md text-zinc-700 mb-6';
+
+  if( width <= 990 ) {
+    return null;
+  }
+  return (<>
+    <a
+      href={ROUTES.gMapsIntulsa}
+      className={addressLinkStyle}
+    >
+      <p>36 E Cameron St, Tulsa,</p>
+      <p>OK, 74103, USA</p>
+    </a>
   </>)

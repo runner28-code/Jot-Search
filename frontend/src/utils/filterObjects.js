@@ -19,7 +19,6 @@ export const jobFilterObject = {
   ],
   'Years Experience': [
     'Any',
-// Temp comment
     ...experienceValues
   ],
   'Status': [
