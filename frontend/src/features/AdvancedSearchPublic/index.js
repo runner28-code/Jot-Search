@@ -10,7 +10,6 @@ import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCo
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
-// Temp comment
 import {
   candidateFilterObject,
   jobFilterObject,
@@ -116,6 +115,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
 
   function handleSearchChange(searchTerm) {
     setFilterObject({ ...filterObject, title: searchTerm });
+// Temp comment
     setPage(1);
   }
   function handleSearchClick() {

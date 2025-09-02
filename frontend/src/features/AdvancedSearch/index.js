@@ -67,7 +67,6 @@ export default function AdvancedSearch({ disabledTabs }) {
         ...filterObject,
         firstname: filterObject.title
       }
-// Temp comment
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
@@ -89,7 +88,6 @@ export default function AdvancedSearch({ disabledTabs }) {
   /* CLEAR SEARCH TERM ON TAB SWITCH */
   useEffect(() => {
     setFilterObject({ ...filterObject, title: '' });
-    setPage(1);
   }, [activeTab]);
 
   function handleFilterChange(filterType, choice) {

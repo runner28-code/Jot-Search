@@ -22,6 +22,7 @@ export default function NavBar() {
 
   if ( width < 1280 ) {
     return <NavBarLayout />
+// Temp comment
   } else {
     return <DesktopNavBarLayout />
   }
@@ -103,7 +104,6 @@ const DropdownMenu = () => {
     }
   }
 
-// Temp comment
   let chevronStyles = 'h-5 w-7 mx-8 ';
   if ( isOpen ) {
     chevronStyles += 'animate-spin';

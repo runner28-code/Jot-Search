@@ -74,7 +74,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
 
-    } else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
     } else {
@@ -99,7 +98,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   useEffect(() => {
     const newState = { ...initialFilterState, ...state };
-// Temp comment
     if (state) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';

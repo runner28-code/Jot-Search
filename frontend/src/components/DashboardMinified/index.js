@@ -29,7 +29,6 @@ export default function DashboardMinified({ location }) {
       />
     </div>
   )
-}
 DashboardMinified.propTypes = {
   location: PropTypes.string.isRequired
 }
@@ -45,7 +44,6 @@ function LinkSwap ({ location, loggedIn }) {
       </Link>
     )
   }
-// Temp comment
   if(location === 'companies' ) {
     return (
       <Link

@@ -19,6 +19,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           {label}
         </label>
       </div>
+    </div>
   )
 }
 
@@ -26,6 +27,7 @@ PreferenceItem.propTypes = {
   toggled: PropTypes.bool.isRequired,
   fieldName: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
+// Temp comment
   onUpdate: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
 }

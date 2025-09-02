@@ -42,7 +42,6 @@ exports.CompanyFilter = {
     },
     joined: {
         name: "name",
-// Temp comment
         bh_id: "bh_id",
         id: "id",
     },

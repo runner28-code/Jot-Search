@@ -70,7 +70,6 @@ export default function CareerPage() {
       { renderNotification(activeData, careerData) }
       {
         isMobile ?
-// Temp comment
           <MobileLayout data={data} /> :
           <DesktopLayout data={data} />
       }
@@ -86,7 +85,6 @@ CareerPage.propTypes = {
 }
 
 function renderNotification(activeData, careerData) {
-  if( activeData ) {
     return (<>
       <Notification
         title='Need to update this posting?'

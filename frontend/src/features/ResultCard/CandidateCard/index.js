@@ -55,6 +55,7 @@ export default function CandidateCard({ data, disableLink }) {
           {/* First row icons */}
           <div className='w-full flex flex-wrap justify-between items-center mt-l'>
             {/* Linkedin */}
+// Temp comment
             <div className='w-1/3 flex items-center'>
               <img
                 src={linkedinIcon}

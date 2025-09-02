@@ -8,6 +8,7 @@
 ALTER TABLE "Job" ADD COLUMN     "getroJobInfoId" TEXT,
 ALTER COLUMN "hidden" SET NOT NULL,
 ALTER COLUMN "hidden" SET DEFAULT false;
+
 -- CreateTable
 CREATE TABLE "GetroJobInfo" (
     "id" TEXT NOT NULL,
@@ -26,7 +27,6 @@ CREATE TABLE "GetroJobInfo" (
     "liked" TEXT,
     "locations" TEXT,
     "organization_domain" TEXT,
-    "organization_id" TEXT,
     "organization_logo_url" TEXT,
     "organization_name" TEXT,
     "organization_slug" TEXT,

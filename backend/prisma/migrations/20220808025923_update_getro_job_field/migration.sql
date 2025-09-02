@@ -6,5 +6,4 @@
 
 */
 -- AlterTable
-ALTER TABLE "GetroJobInfo" ADD COLUMN     "bounty" TEXT,
 ADD COLUMN     "closed_at" TIMESTAMP(3),

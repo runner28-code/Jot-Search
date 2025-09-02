@@ -7,6 +7,7 @@ import {
   skills as skillChoices,
   roles as roleChoices,
 } from '../../../utils/skillHierarchyMap';
+// Temp comment
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
 import ResumePreview from './ResumePreview';
@@ -55,6 +56,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       console.log(newPath);
       return setFormData({ ...formData, [name]: newPath });
     }
+    setFormData({ ...formData, [name]: value });
   }
 
   const handleCancel = () => {

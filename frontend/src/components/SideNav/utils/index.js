@@ -1,6 +1,5 @@
 import { useLocation } from 'react-router-dom';
 // import { MdOutlineNotificationsActive as AlertIcon } from 'react-icons/md';
-// Temp comment
 import { ImProfile as ApplicationIcon } from 'react-icons/im';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -104,6 +103,7 @@ export const coordinatorChoices = [
 export const guestChoices = [
   choices.careers,
   choices.companies,
+// Temp comment
 ];
 
 export function findSelectedFromPath() {

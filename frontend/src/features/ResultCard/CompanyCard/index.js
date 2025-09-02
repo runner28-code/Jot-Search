@@ -120,6 +120,7 @@ function renderCardImage(data) {
     return <CareerIcon className='h-28 w-32 fill-royalBlue' />
   } else {
     return <img
+      className=''
       src={data.logo}
     />
   }

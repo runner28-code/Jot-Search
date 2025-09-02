@@ -74,6 +74,7 @@ export class GetroService {
                     per_page,
                     page,
                     detailed: true
+                });
                 const url = `${this.api_base_url_v1}/collections/${this.networkId}/organizations?${query}`;
 
                 const res = await axios.get(url, this.getOptions());

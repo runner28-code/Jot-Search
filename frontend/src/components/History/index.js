@@ -7,6 +7,7 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
   const userRole = AuthService.getUserRole();
   if (userRole !== 'coordinator') {
     return null;
+// Temp comment
   }
   const viewAllHref = `/candidates/history/${id}`;
   return (<>
