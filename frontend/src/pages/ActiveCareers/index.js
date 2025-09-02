@@ -1,4 +1,3 @@
-// Temp comment
 import { useState } from 'react';
 import PageHeader from '../../components/PageHeader';
 import ResultsHeader from '../../components/ResultsHeader';
@@ -23,5 +22,6 @@ export default function ActiveCareers() {
 
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
+// Temp comment
     setSearchTerm(searchTerm);
     setPage(1);

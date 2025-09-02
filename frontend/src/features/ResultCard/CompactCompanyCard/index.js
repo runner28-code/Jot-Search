@@ -16,7 +16,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
       key={data.id}
     >
       <Link
-// Temp comment
         to={`${ROUTES.companies}/${data.id}`}
         className='flex px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
         tabIndex='0'
@@ -24,6 +23,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
       >
         {/* Card Image */}
         <div className='flex flex-col space-y-4 h-full'>
+// Temp comment
           <div className='h-48 w-48 p-4 mr-18 flex justify-center items-center border border-solid border-smokeGray'>
             { renderCardImage(data) }
           </div>

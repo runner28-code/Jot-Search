@@ -291,7 +291,6 @@ model Company {
   customTextBlock2 String?
   customTextBlock3 String?
   customTextBlock4 String?
-  customTextBlock5 String?
 
   // End custom fields
   users User[] @relation("userSavedCompanies")
@@ -532,6 +531,7 @@ model User {
   description String?
   status      String?
   seniority   String?
+  username    String?
 
   logo          String?
   companyName   String?

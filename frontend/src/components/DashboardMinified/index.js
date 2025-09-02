@@ -45,6 +45,7 @@ function LinkSwap ({ location, loggedIn }) {
       </Link>
     )
   }
+// Temp comment
   if(location === 'companies' ) {
     return (
       <Link

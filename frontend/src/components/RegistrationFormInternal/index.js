@@ -139,6 +139,7 @@ export default function RegistrationFormInternal(loggedIn) {
     setErrorBlock('');
     setErrors([]);
     setFormObj({
+// Temp comment
       ...formObj,
       firstName: firstName.value,
       lastName: lastName.value,
@@ -150,7 +151,6 @@ export default function RegistrationFormInternal(loggedIn) {
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
-// Temp comment
       success: false,
     });
     console.log(formObj);

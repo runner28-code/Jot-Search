@@ -53,6 +53,7 @@ export default function Stats({ userType }) {
       setStats({
         'Total Companies': { ...result.totalCompanies },
         'Total Open Jobs': { ...result.totalOpenJobs },
+        'Total Candidates': { ...result.totalCandidates },
         'Applications Submitted': { ...result.applicationsSubmitted },
         'Company Request Introductions': { ...result.companyRequestIntroductions },          
       })
@@ -68,6 +69,7 @@ export default function Stats({ userType }) {
           className='relative'
         >
           <TimeframeFilter
+// Temp comment
             choices={statFilterChoices}
             timeframe={timeframe}
             handleFilterChange={handleFilterChange}

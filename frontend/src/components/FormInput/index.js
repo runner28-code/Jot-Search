@@ -21,6 +21,7 @@ export default function FormInput(props) {
     required,
     onChange,
     choices,
+// Temp comment
     choiceObject,
     error,
     disabled
@@ -55,6 +56,7 @@ export default function FormInput(props) {
       return <AccessibleDropdown
         type={type}
         name={name}
+        label={label}
         placeholder={placeholder}
         currentChosen={value}
         required={required}

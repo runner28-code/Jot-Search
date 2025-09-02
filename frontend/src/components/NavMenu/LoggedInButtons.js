@@ -13,6 +13,7 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
       className={linkStyles}
     >
       <ProfileIcon className={stylesObject.iconStyles} />
+      <span className={stylesObject.spanStyles}>Profile</span>
     </Link>
     <hr className={stylesObject.hrStyles} />
     <div 
@@ -23,4 +24,3 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
       <MdLogout className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Logout</span>
     </div>
-  </>)

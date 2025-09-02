@@ -31,6 +31,7 @@ export default function SignUp() {
 
   return (
     <main className='-mt-28 bg-signup-page-hero bg-contain bg-no-repeat'>
+// Temp comment
       <div className='pt-40 flex flex-col justify-center items-center'>
         <div className='relative h-24 w-26 mb-15'>
           <div className='absolute top-0 right-0 h-9 w-9 bg-magenta' />

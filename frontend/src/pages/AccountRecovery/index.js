@@ -17,6 +17,7 @@ export default function AccountRecovery() {
     });
 
     if ( res.data.result ) {
+// Temp comment
       setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);

@@ -28,7 +28,6 @@ const mockJobsData = [
     listingAge: '1 month',
     specialty: 'Technology'
   },
-  {
     id: '2cb874e2-0510-405e-9491-183d2e0e26d7',
     title: 'Copywriter',
     company: 'OSU', // ! Not in schema yet
@@ -61,7 +60,6 @@ const mockJobsData = [
     clientCorporationID: '36534b9b-c225-4a59-9286-8d4203d582db',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/holberton_clipped_rev_1_2_oefmoi.webp',
     salaryRange: '$80k-$90k',
-// Temp comment
     location_city: 'Tulsa',
     location_state: 'OK',
     onSite: false,

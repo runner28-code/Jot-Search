@@ -55,7 +55,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       console.log(newPath);
       return setFormData({ ...formData, [name]: newPath });
     }
-    setFormData({ ...formData, [name]: value });
   }
 
   const handleCancel = () => {

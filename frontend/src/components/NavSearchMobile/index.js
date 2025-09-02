@@ -23,6 +23,7 @@ import {
 } from '../../utils/filterObjects';
 
 const NUM_ITEMS_PER_TYPE = 5
+
 export default function NavSearchMobile({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
@@ -69,7 +70,6 @@ export default function NavSearchMobile({ placeholder }) {
   useEffect( () => {
     setSearchTerm('');
   }, [location]);
-
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
     setForceHidden(true);
