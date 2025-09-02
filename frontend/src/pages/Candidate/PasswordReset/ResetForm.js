@@ -14,7 +14,6 @@ export default function ResetForm({ candidateData, setType }) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
     if( formData.password !== formData.confirmPassword ) {
       setMatch(false);
     }
@@ -28,7 +27,6 @@ export default function ResetForm({ candidateData, setType }) {
 
       if ( res.data.result ) {
         setType('Password Reset Successfully', true);
-// Temp comment
       } else {
         setType(res.data.error, false);
       }

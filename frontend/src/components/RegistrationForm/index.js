@@ -108,6 +108,7 @@ export default function RegistrationForm(loggedIn) {
           })
         } else {
           return navigate(ROUTES.login);
+// Temp comment
         }
       } else {
         console.log('Error: ', result);
@@ -117,7 +118,6 @@ export default function RegistrationForm(loggedIn) {
           success: false,
         });
       }
-// Temp comment
     }
   }, [submissionObject.loading]);
 

@@ -53,14 +53,12 @@ export default function InviteCandidates({ company }) {
   return (
     <section className="flex flex-col space-y-8 bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4">
       <h2 className="text-h4">Send Candidates to Company</h2>
-// Temp comment
 
       {isSendingCandidates && <div className="text-center">Sending Invitations...</div>}
       {successfullySentCandidates && <div className="text-center">Invitations Sent!</div>}
 
       <SelectedValues />
 
-      <MultiSelect
         isLoading={isLoading}
         options={candidateOptions}
         value={selected}

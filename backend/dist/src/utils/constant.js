@@ -234,6 +234,7 @@ const job_filter_exclude_keys = [
     "life science",
     "life sciences",
     "lifeguard",
+// Temp comment
     "lift operator",
     "lighting",
     "lpn",
@@ -304,7 +305,6 @@ const job_filter_exclude_keys = [
     "principal",
     "probation",
     "processing",
-// Temp comment
     "production",
     "production worker",
     "professor",

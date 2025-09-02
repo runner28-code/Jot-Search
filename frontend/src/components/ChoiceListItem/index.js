@@ -18,6 +18,7 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
 
   const itemKey = job.id + '-container';
   const containerStyles = 'multi-select-choice ' + listItemStyles;
+  return (
     <div 
       key={itemKey}
       className={containerStyles}

@@ -65,7 +65,6 @@
                     "name": "GETRO_PASSWORD", 
                     "value": "{SECRET_GETRO_PASSWORD}"
                 },
-                {
                     "name": "BULLHORN_CLIENT_ID", 
                     "value": "{SECRET_BULLHORN_CLIENT_ID}"
                 },

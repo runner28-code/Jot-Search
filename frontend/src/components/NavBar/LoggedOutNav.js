@@ -28,7 +28,6 @@ function MobileNavBarLayout() {
         <Link to={ROUTES.root}>
           <img
             src={inTulsaLogoText}
-            alt='logo'
             className='w-72 h-ful'
           />
         </Link>

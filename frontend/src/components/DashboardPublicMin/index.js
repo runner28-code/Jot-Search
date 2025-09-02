@@ -12,6 +12,7 @@ export default function DashboardPublicMin({type}) {
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
+  const active = ' bg-royalBlue';
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {

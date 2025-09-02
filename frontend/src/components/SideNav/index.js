@@ -33,6 +33,7 @@ export default function SideNav({ userType }) {
 
 SideNav.propTypes = {
   userType: PropTypes.string.isRequired
+// Temp comment
 }
 
 function renderChoice(choice, selected, index, choicesLength) {

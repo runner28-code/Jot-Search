@@ -24,7 +24,6 @@ export const saveCompanies = async (companies: any[]) => {
   // for (const item of result) {
   //   await db.company.update({
   //     where: {
-  //       id: item.id,
   //     },
   //     data: {
   //       companyURL: item.companyURL ? item.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null
@@ -226,19 +225,3 @@ export const saveCandidates = async (candidates: any[]) => {
       } catch (error: any) {
         console.log(error.message);
         console.log(`ERROR: while saving Candidate with ID = ${candidate.id}`);
-      }
-    }
-
-    return { result: true };
-  } catch (error: any) {
-    console.log(error.message);
-    return { result: false, error };
-  }
-};
-
-export const saveLeads = async (leads: any[]) => {
-  const expludeFields = ["address", "_score"];
-  try {
-    for (const lead of leads) {
-      try {
-        console.log(`Savng Lead with ID = ${lead.id}`);

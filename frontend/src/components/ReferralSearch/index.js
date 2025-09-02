@@ -74,7 +74,6 @@ export default function ReferralSearch() {
     setChoices(mockJobsData);
   }, []);
   
-  return (
     <div className='w-340'>
       <div className='flex mb-8'>
         { renderChosen(currentChosen, handleRemove) }
@@ -85,7 +84,6 @@ export default function ReferralSearch() {
         name='referrals'
         placeholder='Select a job to refer...' 
         currentChosen={currentChosen}
-// Temp comment
         onChange={handleAdd}
         choices={filteredChoices}
         dropdownOpen={dropdownOpen}

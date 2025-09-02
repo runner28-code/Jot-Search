@@ -234,7 +234,6 @@ function NavFooter() {
         <Address />
       </div>
       <div className='flex flex-col basis-3/12'>
-// Temp comment
         <Link
           to={ROUTES.landingPage}
           className={linkStyle}
@@ -388,6 +387,7 @@ function NavFooterMobile() {
           href="/careers"
           className={linkStyle}
         >
+// Temp comment
           Tulsa Jobs
         </a>
       </div>

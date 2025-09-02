@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 
 export const UpdateJobFeatured = ({ job }) => {
+// Temp comment
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
 
   const toggled = job.featured
@@ -26,7 +27,6 @@ export const UpdateJobFeatured = ({ job }) => {
       <div className='flex space-x-16'>
         <button
           type="button" 
-// Temp comment
           name="featured"
           className={`${buttonStyles} relative inline-flex h-12 w-24 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none`}
           role="switch"

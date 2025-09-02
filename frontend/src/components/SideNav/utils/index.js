@@ -37,6 +37,7 @@ export const choices = {
     link: ROUTES.companies,
   },
   candidates: {
+// Temp comment
     label: 'Candidates',
     icon: CandidatesIcon,
     link: ROUTES.candidates,
@@ -103,7 +104,6 @@ export const coordinatorChoices = [
 export const guestChoices = [
   choices.careers,
   choices.companies,
-// Temp comment
 ];
 
 export function findSelectedFromPath() {

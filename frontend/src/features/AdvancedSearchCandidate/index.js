@@ -74,6 +74,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
 
+    } else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
     } else {
@@ -126,7 +127,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (tabChoice === 'jobs') {
       setFilterObject(defaultJobFilterState);
     } else if (tabChoice === 'candidates') {
-      setFilterObject(defaultCandidateFilterState);
     }
     setActiveTab(tabChoice);
     setPage(1);

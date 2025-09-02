@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearch';
@@ -24,6 +23,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     title: '',
     'On-Site/Remote': 'Any Work Setting',
     'Expertise': 'Any Expertise',
+// Temp comment
   });
 
   function handleSearchClick() {

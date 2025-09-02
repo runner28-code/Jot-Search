@@ -15,6 +15,7 @@ export default function Applications() {
     filteredJobs: [],
     loading: true
   });
+// Temp comment
   const [selectedApplications, setSelectedApplications] = useState([]);
 
   useEffect( async () => {
@@ -22,6 +23,7 @@ export default function Applications() {
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,
+        agoDate: job.appliedDate
       }});
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({

@@ -491,6 +491,7 @@ model GetroJobInfo {
   closed_at      DateTime?
   bounty         String?
 }
+
 model User {
   id        String  @id @default(uuid())
   firstname String

@@ -11,6 +11,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
   const PaginatedControls = () => total && total > itemsPerPage && (
     <nav 
       className={navStyles} 
+      aria-label="Pagination"
     >
       <div className="flex-1 flex justify-end">
         {total !== 0 && 

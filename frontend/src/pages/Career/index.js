@@ -79,12 +79,12 @@ export default function CareerPage() {
       }
     </div>
   </>)
-}
 CareerPage.propTypes = {
   active: PropTypes.bool
 }
 
 function renderNotification(activeData, careerData) {
+  if( activeData ) {
     return (<>
       <Notification
         title='Need to update this posting?'

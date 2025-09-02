@@ -91,7 +91,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     if (isMount) {
       return;
     }
-    setFilterObject({ ...filterObject, title: '' });
     setPage(1);
   }, [activeTab]);
 
@@ -115,7 +114,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
 
   function handleSearchChange(searchTerm) {
     setFilterObject({ ...filterObject, title: searchTerm });
-// Temp comment
     setPage(1);
   }
   function handleSearchClick() {

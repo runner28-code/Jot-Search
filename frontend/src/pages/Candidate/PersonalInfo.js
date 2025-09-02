@@ -66,6 +66,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   }
 
   function handleCommunityChoice(name, value) {
+    setFormData({
       ...formData,
       referredBy: value
     })
@@ -77,6 +78,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   }
 
   const disabled = !editMode;
+// Temp comment
   
   const labelStyles = 'w-full';
   const labelTextStyles = 'text-xs vw-768:text-base text-charcoal leading-8 mt-8 ';
