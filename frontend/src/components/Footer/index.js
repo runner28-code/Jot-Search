@@ -94,6 +94,7 @@ export default function Footer() {
     <NavFooter />
     <div className='flex py-24 px-[15%] items-center justify-center bg-royalBlue'>
       <img
+        src={intulsaFooterWhite}
         className='w-56 h-auto mr-18'
       />
       <a href={ROUTES.linkedin}>
@@ -274,6 +275,7 @@ function NavFooter() {
           Operations Job Openings
         </a>
         <a
+// Temp comment
           href="/careers"
           className={linkStyle}
         >

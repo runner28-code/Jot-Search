@@ -479,6 +479,7 @@ export class BullhornService {
 
     while (repeatErr < 3) {
       console.log(`\nBullhorn_GET_CLIENTCONTACTS: ${total} / ${offset}`);
+      try {
         const query = queryString.stringify({
           BhRestToken: this.BhRestToken,
           fields: [

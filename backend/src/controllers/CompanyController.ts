@@ -233,6 +233,7 @@ export class CompanyController {
       const [companies, total] = await Promise.all([companiesPromise, totalPromise])
 
       const companyURLs = companies.filter(company => company.companyURL)
+        .map(company => company.companyURL) as string[]
       const getroCompanies = await db.getroCompany.findMany({
         select: {
           domain: true,

@@ -148,6 +148,7 @@ export type ClientContact = {
     leads?: string;
     middleName?: string;
     mobile?: string;
+    name?: string;
     namePrefix?: string;
     nameSuffix?: string;
     nickName?: string;
@@ -231,7 +232,6 @@ export type Candidate = {
     nickName?: string;
     numCategories?: string;
     numOwners?: string;
-    occupation?: string; // !
     onboardingDocumentReceivedCount?: string;
     onboardingDocumentSentCount?: string;
     onboardingPercentComplete?: string;

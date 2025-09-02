@@ -107,6 +107,7 @@ export default function MobileLayout(props) {
         className='font-spaceGrotesk text-textBlack text-sm mb-6'
         dangerouslySetInnerHTML={{ __html: careerData.description }}
       />
+      { renderSkillsSection(skillList) }
       { renderAboutCompanySection(careerData, role) }
       {/* Apply */}
       <div className='flex mt-6'>

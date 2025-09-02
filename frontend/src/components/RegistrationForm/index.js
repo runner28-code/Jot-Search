@@ -30,6 +30,7 @@ const defaultState = {
   state: '',
   zip: '',
   willRelocate: false,
+  roles: [],
   skills: [],
   experience: '',
   employmentPreference: '',

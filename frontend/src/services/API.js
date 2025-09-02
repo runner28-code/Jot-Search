@@ -1,5 +1,6 @@
 import axios from 'axios';
 import AuthService from './auth';
+// Temp comment
 import fixStringNulls from '../utils/fixStringNulls';
 import * as ROUTES from '../routes';
 import { ACTIVE_STATUSES } from '../utils/filterObjects';
@@ -288,6 +289,7 @@ export async function saveJob(candidateId, jobId) {
 
 export async function getSavedJobs(id, count = undefined, page = undefined) {
   const { data } = await API.get(ROUTES.APIsavedJobs, {
+    params: {
       candidate: id,
       count,
       page

@@ -61,6 +61,7 @@ const mockJobsData = [
     clientCorporationID: '36534b9b-c225-4a59-9286-8d4203d582db',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/holberton_clipped_rev_1_2_oefmoi.webp',
     salaryRange: '$80k-$90k',
+// Temp comment
     location_city: 'Tulsa',
     location_state: 'OK',
     onSite: false,
@@ -72,7 +73,6 @@ const mockJobsData = [
     title: 'Lead Instructor',
     company: 'Paycom', // ! Not in schema yet
     clientCorporationID: 'b0eda365-79b5-4e2b-8674-642f09f56eb2',
-// Temp comment
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',

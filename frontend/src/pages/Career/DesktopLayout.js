@@ -80,6 +80,7 @@ export default function DesktopLayout(props) {
               <img
                 src={clockIcon}
                 className='h-8 mr-5' />
+              <p className='text-textBlack'>{careerData.employmentType}</p>
             </div>
             {/* Salary */}
             <div className='w-1/2 flex items-center pr-4'>
@@ -161,7 +162,6 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
 
   if (role === 'coordinator') {
     return null;
-  }
   return (<>
     <section className='bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4'>
       {/* Job Description */}

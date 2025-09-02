@@ -532,7 +532,6 @@ model User {
   description String?
   status      String?
   seniority   String?
-  username    String?
 
   logo          String?
   companyName   String?

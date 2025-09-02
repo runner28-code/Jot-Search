@@ -1,5 +1,4 @@
 {
-    "family": "prod-site-frontend-task",
     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "containerDefinitions": [
@@ -12,6 +11,7 @@
                 {
                     "containerPort": 3000,
                     "hostPort": 3000,
+                    "protocol": "tcp"
                 }
             ],
             "essential": true,

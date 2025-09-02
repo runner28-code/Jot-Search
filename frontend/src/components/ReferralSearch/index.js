@@ -70,6 +70,7 @@ export default function ReferralSearch() {
 
   // set up initial choices
   useEffect(() => {
+    // TODO: Implement API
     setChoices(mockJobsData);
   }, []);
   

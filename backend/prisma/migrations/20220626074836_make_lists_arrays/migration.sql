@@ -7,3 +7,4 @@
 
 */
 -- AlterTable
+ALTER TABLE "Job" DROP COLUMN "skillList",

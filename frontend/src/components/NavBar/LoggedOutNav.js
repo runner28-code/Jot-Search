@@ -30,6 +30,7 @@ function MobileNavBarLayout() {
             src={inTulsaLogoText}
             alt='logo'
             className='w-72 h-ful'
+          />
         </Link>
         {/* Nav Menu */}
         <div className='flex items-center'>

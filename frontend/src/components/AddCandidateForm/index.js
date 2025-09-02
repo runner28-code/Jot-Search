@@ -66,7 +66,6 @@ export default function RegistrationForm() {
       delete formObj.resumeFile;
       
       // Format formObj
-// Temp comment
       const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
@@ -90,7 +89,6 @@ export default function RegistrationForm() {
         });
       }
     }
-  }, [submissionObject.loading]);
 
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {

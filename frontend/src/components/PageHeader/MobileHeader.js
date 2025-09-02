@@ -6,13 +6,13 @@ export default function MobileHeader(props) {
     headerText,
     icon,
     IconComponent,
-// Temp comment
     classOverride,
     colorizeStroke,
     backButton
   } = props;
   const navigate = useNavigate();
   
+// Temp comment
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
   if ( classOverride ) addOnIconClasses += classOverride;

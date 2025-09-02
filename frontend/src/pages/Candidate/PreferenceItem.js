@@ -19,7 +19,6 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           {label}
         </label>
       </div>
-    </div>
   )
 }
 
@@ -46,7 +45,6 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
     if (disabled) {
       return null;
     }
-// Temp comment
     const mockEvent = {
       target: {
         name: fieldName,

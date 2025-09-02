@@ -10,6 +10,7 @@ import FeaturedCompaniesMobile from '../../components/FeaturedCompaniesMobile';
 import BusinessBooming from '../../components/BusinessBooming';
 import BusinessBoomingMobile from '../../components/BusinessBoomingMobile';
 import ColorShapes from '../../components/ColorShapes';
+// Temp comment
 import * as ROUTES from '../../routes';
 import { MdLocationOn } from 'react-icons/md';
 import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageStats';
@@ -27,7 +28,6 @@ export default function LandingPage() {
     <main className='bg-white'>
       {/* Hero */}
       <section className={heroStyles}>
-// Temp comment
         {/* Header */}
         <div className='mt-34 vw-1024:mt-60 flex flex-col items-center'>
           { renderLocation() }

@@ -84,7 +84,6 @@ export const candidateChoices = [
   choices.talentInTulsa,
   choices.logout
 ];
-
 export const companyChoices = [
   choices.dashboard,
   choices.candidates,
