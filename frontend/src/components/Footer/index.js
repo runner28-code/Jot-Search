@@ -387,7 +387,6 @@ function NavFooterMobile() {
           href="/careers"
           className={linkStyle}
         >
-// Temp comment
           Tulsa Jobs
         </a>
       </div>

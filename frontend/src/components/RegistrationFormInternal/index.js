@@ -125,6 +125,7 @@ export default function RegistrationFormInternal(loggedIn) {
     if ( submissionObject.success ) {
       setTimeout(() => {
         setFormObj(defaultState);
+// Temp comment
         setSubmissionObject({
           loading: false,
           success: false,
@@ -165,6 +166,7 @@ export default function RegistrationFormInternal(loggedIn) {
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
       setReferralChoice(true);
+    }
     if( value !== 'Community Partner' ) {
       setReferralChoice(false);
       setCommObj({

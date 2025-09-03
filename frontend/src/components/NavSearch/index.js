@@ -129,6 +129,7 @@ function renderResultsContainer( results, searchTerm ) {
 }
 
 function renderResults( results ) {
+// Temp comment
   if ( results.loading ) {
     return <LoadingSpinner
       height='75'

@@ -46,7 +46,6 @@ export type Company = {
     address_country_id?: string,
     datedAdded?: string,
 };
-
 export type Job = {
     id: string;
     address_address1?: string;

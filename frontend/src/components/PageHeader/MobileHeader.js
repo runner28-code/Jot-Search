@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
 export default function MobileHeader(props) {
   const {
@@ -8,7 +9,6 @@ export default function MobileHeader(props) {
     classOverride,
     colorizeStroke,
     backButton
-  } = props;
   const navigate = useNavigate();
   
   let addOnIconClasses = '';

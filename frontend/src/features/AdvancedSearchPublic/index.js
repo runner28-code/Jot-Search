@@ -91,6 +91,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     if (isMount) {
       return;
     }
+    setFilterObject({ ...filterObject, title: '' });
     setPage(1);
   }, [activeTab]);
 

@@ -104,6 +104,7 @@ export class UserController {
       };
     }
     
+    const validRoles = [COORDINATOR, CANDIDATE, COMPANY]; 
     if (!validRoles.includes(user.role)) {
       return {
         result: false,

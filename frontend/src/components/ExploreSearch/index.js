@@ -15,7 +15,6 @@ function adjustJobFilterObject() {
   
   return adjustedJobFilterObject;
 }
-
 export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
   const filterObject = adjustJobFilterObject();
@@ -23,7 +22,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     title: '',
     'On-Site/Remote': 'Any Work Setting',
     'Expertise': 'Any Expertise',
-// Temp comment
   });
 
   function handleSearchClick() {

@@ -33,6 +33,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
       { renderTextOrInputs(editMode, contentObject, handlePropertyChange) }
     </section>
   )
+}
 
 EditableSection.propTypes = {
   entityID: PropTypes.string.isRequired,

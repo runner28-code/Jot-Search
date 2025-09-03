@@ -47,6 +47,7 @@ export class CandidateController {
         },
       });
 
+      let candidate;
       if (user) {
         const {
           password,

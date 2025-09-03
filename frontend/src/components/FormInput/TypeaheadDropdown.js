@@ -10,7 +10,6 @@ export default function TypeaheadDropdown(props) {
     dropdownType, 
     disabled,
     name, 
-    label,
     required,
     placeholder, 
     choices, 

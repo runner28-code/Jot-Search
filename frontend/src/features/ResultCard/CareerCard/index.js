@@ -3,6 +3,7 @@ import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import postingAgeIcon from '../../../assets/icons/calendar.svg';
 import clockIcon from '../../../assets/icons/clock.svg';
 import salaryIcon from '../../../assets/icons/salary.svg';
@@ -118,7 +119,6 @@ function DesktopCard({ dataObj, active }) {
           {/* Posting age */}
           <div className='w-1/3 flex items-center pr-4'>
             <img
-              src={postingAgeIcon}
               className='h-11 mr-5' />
             <p className='text-textBlack'>Posted {postingAge}</p>
           </div>

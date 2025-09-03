@@ -46,6 +46,7 @@ export const experienceMap = {
 }
 
 export const educationChoices = [
+  'None',
   'Associate',
   'Bachelor',
   'Masters',
