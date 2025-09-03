@@ -33,7 +33,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     roles: Array.isArray(candidateData.roles) ? candidateData.roles : (candidateData?.roles?.split(', ') || []),
     description: candidateData.description || '',
     workspace: candidateData?.workspace || '',
-    experience: candidateData?.experience || '',
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
     linkedin: candidateData?.linkedin || '',
     resume: candidateData?.resume || '',
@@ -46,7 +45,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     });
   }
 
-// Temp comment
   const handleInputChange = async (event) => {
     const { name, value } = event.target;
     if (name === 'avatar' || name === 'resume') {

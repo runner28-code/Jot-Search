@@ -15,6 +15,7 @@ function adjustJobFilterObject() {
   
   return adjustedJobFilterObject;
 }
+
 export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
   const filterObject = adjustJobFilterObject();

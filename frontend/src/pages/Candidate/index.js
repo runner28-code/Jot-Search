@@ -16,6 +16,7 @@ import InviteToCareer from '../Career/InviteToCareer';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
+
 const PREFERENCE_ITEMS = {
   activelyLooking: 'I\'m actively looking for a job',
   openToGetIntro: 'I\'m open to getting introductions from companies',
@@ -48,7 +49,6 @@ export default function Candidate() {
   async function handleCandidateUpdate(updateObject) {
     console.log('candidateData', candidateData);
     console.log('updateObject', updateObject);
-    const formattedUpdateObject = {};
     Object.keys(updateObject).forEach(key => {
       if (updateObject[key] === '') {
         updateObject[key] = null;

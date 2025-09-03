@@ -45,14 +45,12 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
     try {
         const query = `
             SELECT * FROM \`${datset}.${table}\`
-            WHERE ${condition}
         `;
         const options = {
             query: query,
             location: 'US',
         };
         const [job] = yield BigQueryService_1.BigQueryService.getClient().createQueryJob(options);
-// Temp comment
         const [res] = yield job.getQueryResults();
         if (res && res.length > 0) {
             return true;

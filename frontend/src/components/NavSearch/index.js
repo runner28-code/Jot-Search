@@ -86,6 +86,7 @@ export default function NavSearch({ placeholder }) {
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
     total: totalJobs + totalCompanies + totalCandidates,
     forceHidden
+// Temp comment
   }
 
   /* STYLES & RENDER */
@@ -129,7 +130,6 @@ function renderResultsContainer( results, searchTerm ) {
 }
 
 function renderResults( results ) {
-// Temp comment
   if ( results.loading ) {
     return <LoadingSpinner
       height='75'

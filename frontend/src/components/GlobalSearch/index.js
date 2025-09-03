@@ -38,6 +38,7 @@ export default function GlobalSearch({ placeholder }) {
     []
   );
 
+// Temp comment
   async function handleDebounce( searchTerm ) {
     if ( searchTerm === '' ) {
       return setResults({
@@ -45,7 +46,6 @@ export default function GlobalSearch({ placeholder }) {
         companies: [],
         candidates: []
       });
-// Temp comment
     }
 
     // TODO: API: Candidates if role === 'company' || 'coordinator'

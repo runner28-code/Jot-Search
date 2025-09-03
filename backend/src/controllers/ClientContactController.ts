@@ -42,4 +42,3 @@ export class ClientContactController {
 
       const wheres = normalizeFilters(filters)
 
-      // TODO: assuming filters and fields format

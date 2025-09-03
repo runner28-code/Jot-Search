@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
-// Temp comment
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 import { skills } from '../../utils/skillHierarchyMap';
@@ -39,7 +38,6 @@ export default function CandidateFilterLayout(props) {
     handleFilterChange,
     searchTerm,
     setSearchTerm,
-    handleSearchClick,
     clearFilters,
   } = props;
   let userRole = AuthService.getUserRole();

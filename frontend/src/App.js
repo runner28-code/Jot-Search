@@ -6,7 +6,6 @@ import {
   SignUp,
   Login,
   Career,
-  Careers,
   Company,
   Companies,
   AccountRecovery,

@@ -24,6 +24,7 @@ export function formatCandidateData(candidateData) {
   }
   formattedData.comments = candidateData.comments || 'No comments provided';
   formattedData.phone = formatPhoneNumber(candidateData.phone);
+// Temp comment
   formattedData.expertise = candidateData.expertise || 'No Expertise Chosen';
   formattedData.skills = candidateData.skills || 'No Skills Chosen';
   // If Candidate experience is a string, no need to map it
@@ -85,6 +86,7 @@ export function formatPhoneNumber(phoneNumberString) {
   let regex = /\+\d\s\(\d{3}\) \d{3}-\d{4}/i;
   if ( regex.test(phoneNumberString) ) { // Already formatted correctly is regex passes
     return phoneNumberString;
+  }
   if ( phoneNumberString.includes('-') ) { // Reset dashes. Will re-add dashes in correct format
     phoneNumberString = phoneNumberString.replace(/-/g, '');
   }

@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CareerCard from '../ResultCard/CareerCard';
-// Temp comment
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 
@@ -37,7 +36,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     {!isLoading && <h4 className='text-h4 font-spaceGrotesk text-charcoal font-semibold mb-xxl-2'>{headerString}</h4>}
     {careers && careers.length > 0 && (
       <>  
-        {careers.map((career, index) => {
           if (career.externalId === currentCareerId) { // Don't show the current career
             return null;
           }

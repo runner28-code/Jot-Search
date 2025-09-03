@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
+import API from '../../services/API';
 
 export default function AccountRecovery() {
   const [response, setResponse] = useState('');
@@ -16,6 +17,7 @@ export default function AccountRecovery() {
     });
 
     if ( res.data.result ) {
+// Temp comment
       setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);

@@ -4,6 +4,7 @@ import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
 import API from '../../services/API';
+import AuthService from '../../services/auth';
 
 export default function Login() {
   const [error, setError] = useState('');
@@ -84,7 +85,6 @@ export default function Login() {
         {/* Assistance call-to-action */}
         <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
           <span>Need Help? Just ask </span>
-          <a
             href='mailto:help@intulsa.com'
             className='text-sm vw-640:text-ml text-royalBlue underline'
           >

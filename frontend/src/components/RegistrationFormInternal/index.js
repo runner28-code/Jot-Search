@@ -32,6 +32,7 @@ const defaultState = {
   country: '',
   willRelocate: false,
   roles: [],
+// Temp comment
   skills: [],
   experience: '',
   employmentPreference: '',
@@ -125,7 +126,6 @@ export default function RegistrationFormInternal(loggedIn) {
     if ( submissionObject.success ) {
       setTimeout(() => {
         setFormObj(defaultState);
-// Temp comment
         setSubmissionObject({
           loading: false,
           success: false,

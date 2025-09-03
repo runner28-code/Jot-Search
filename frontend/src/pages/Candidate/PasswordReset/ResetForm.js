@@ -8,6 +8,7 @@ export default function ResetForm({ candidateData, setType }) {
   const [formData, setFormData] = useState({
     id: candidateData.id,
     password: '',
+    passwordConfirm: '',
   });
   const [match, setMatch] = useState('');
 
@@ -20,7 +21,6 @@ export default function ResetForm({ candidateData, setType }) {
 
     if( formData.password === formData.confirmPassword ) {
       setMatch(true);
-      const { password } = event.target;
       const res = await API.post(ROUTES.APIResetPassword, {
         new_password: password.value,
       });

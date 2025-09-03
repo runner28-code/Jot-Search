@@ -36,6 +36,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   })
 
   const [editMode, setEditMode] = useState(false);
+// Temp comment
 
   const [referralChoice, setReferralChoice] = useState(false);
 
@@ -78,7 +79,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   }
 
   const disabled = !editMode;
-// Temp comment
   
   const labelStyles = 'w-full';
   const labelTextStyles = 'text-xs vw-768:text-base text-charcoal leading-8 mt-8 ';

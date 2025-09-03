@@ -8,7 +8,6 @@ import {
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const ResumePreview = ({ resumeUrl }) => {
-// Temp comment
   const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
 
@@ -53,5 +52,6 @@ const ResumePreview = ({ resumeUrl }) => {
           </ul>
         </nav>
       )}
+// Temp comment
     </div>
   );

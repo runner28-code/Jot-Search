@@ -62,6 +62,7 @@ export const IUSER = {
   address1: "",
   address2: "",
   city: "",
+  state: "",
   zip: "",
   resume: "",
   avatar: "",
@@ -73,4 +74,3 @@ export const IUSER = {
   referredBy: "",
   roles: "",
   description: "",
-  phone: "",

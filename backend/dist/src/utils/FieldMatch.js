@@ -14,7 +14,6 @@ exports.JobFilter = {
         status: "status",
         hidden: "hidden",
         companyId: "clientCorporationID",
-    },
     main: {
         id: "id",
         status: "status",
@@ -23,6 +22,7 @@ exports.JobFilter = {
         employmentType: "employmentType",
         onSite: "onSite",
         yearsRequired: "yearsRequired",
+        willRelocate: "willRelocate",
         city: "city",
         state: "state",
         isDeleted: "isDeleted",

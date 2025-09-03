@@ -20,7 +20,6 @@ CREATE TABLE "ClientContact" (
     "category" TEXT,
     "certifications" TEXT,
     "clientCorporation" TEXT,
-    "comments" TEXT,
     "dateAdded" TIMESTAMP(3),
     "dateLastModified" TIMESTAMP(3),
     "dateLastVisit" TIMESTAMP(3),

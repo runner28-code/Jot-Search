@@ -28,6 +28,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
           Array(totalPages).fill().map((_, index) => {
             const pageNumber = index + 1
             return (
+              <PaginationButton
                 key={pageNumber}
                 page={pageNumber}
                 setPage={setPage}
@@ -62,7 +63,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
                 {page - 1}
               </PaginationButton>
             )}
-
             {page !== 1 && page !== totalPages && <PaginationButton
               key={page}
               page={page}
