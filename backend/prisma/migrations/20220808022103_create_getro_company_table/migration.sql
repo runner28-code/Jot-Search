@@ -8,7 +8,6 @@ CREATE TABLE "GetroCompany" (
     "facebook_url" TEXT,
     "founded" TEXT,
     "id" TEXT NOT NULL,
-    "instagram_url" TEXT,
     "jobs_count" INTEGER,
     "linkedin_url" TEXT,
     "locations" TEXT,

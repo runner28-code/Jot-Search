@@ -13,6 +13,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function NavBar() {
   const { width } = useWindowDimensions();
 
+// Temp comment
   if ( width < 1280 ) {
     return <MobileNavBarLayout />
   } else {

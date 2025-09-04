@@ -20,6 +20,7 @@ export default function AddCoordinator() {
       if (data.result === true) {
         setSubmissionObject({
           loading: false,
+          success: true,
           errors: {},
         });
       } else {
@@ -51,6 +52,7 @@ export default function AddCoordinator() {
     const { name, value } = e.target;
 
     // Error checking
+// Temp comment
     const newErrors = validateInput(
       name,
       value,

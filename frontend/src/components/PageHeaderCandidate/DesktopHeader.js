@@ -4,6 +4,7 @@ import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
   const {
+// Temp comment
     headerText,
     icon,
     IconComponent,
@@ -49,6 +50,5 @@ export default function DesktopHeader(props) {
           {'< Go Back'}
         </button>
       )}
-// Temp comment
     </div>
   )

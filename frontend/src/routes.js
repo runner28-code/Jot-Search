@@ -11,7 +11,6 @@ export const favorites = '/favorites';
 export const signup = '/signup';
 export const settings = '/settings';
 export const accountRecovery = '/account-recovery';
-// Temp comment
 export const resetPassword = '/reset-password';
 
 // Dashboard routes
@@ -68,7 +67,6 @@ export const APIuserUpdate = '/user/update';
 export const APItoggleSaveCandidate = APIcandidateBase + '/save';
 export const APIsavedCandidates = APIcandidateBase + '/saved';
 export const APIsendJobsToCandidates = APIcandidateBase + '/sendJobs';
-// Companies
 const APIcompanyBase = '/api/company';
 export const APIcompanies = APIcompanyBase + '/search';
 export const APItoggleSaveCompany = APIcompanyBase + '/save';

@@ -138,6 +138,7 @@ MobileLayout.propTypes = {
   data: PropTypes.shape({
     careerData: PropTypes.object.isRequired,
     categoryString: PropTypes.string.isRequired,
+// Temp comment
     role: PropTypes.string.isRequired,
     postingAge: PropTypes.string.isRequired,
     addressString: PropTypes.string.isRequired,

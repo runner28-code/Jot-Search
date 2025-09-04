@@ -33,7 +33,6 @@ CREATE TABLE "ClientContact" (
     "email2" TEXT,
     "email3" TEXT,
     "externalID" TEXT,
-    "fax" TEXT,
     "fax2" TEXT,
     "fax3" TEXT,
     "firstName" TEXT,

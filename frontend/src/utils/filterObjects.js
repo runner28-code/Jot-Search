@@ -101,7 +101,6 @@ export const candidateFilterObject = {
     'Any',
     'Active',
     'New Lead',
-// Temp comment
     'Warm Lead',
     'Passive',
     'Hired',

@@ -1,4 +1,3 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
 import {
   ActiveCareers,
   AddUser,
@@ -7,7 +6,6 @@ import {
   Candidates,
   Dashboard,
   Favorites,
-// Temp comment
   Logout,
   Profile,
 } from './pages';

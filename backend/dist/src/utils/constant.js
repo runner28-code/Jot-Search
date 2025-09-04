@@ -273,7 +273,6 @@ const job_filter_exclude_keys = [
     "ot",
     "painter",
     "paralegal",
-    "paramedic",
     "paraprofessional",
     "park",
     "parking",

@@ -280,6 +280,7 @@ export class CandidateController {
       candidates.forEach((candidate) => clearPassword(candidate));
 
       const emails = candidates.map((candidate: any) => candidate.email);
+
       let extendedCandidates;
       if (isTppUserQuery) {
         extendedCandidates = candidates.map(candidate => ({

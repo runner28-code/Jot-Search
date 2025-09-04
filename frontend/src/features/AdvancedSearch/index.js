@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ResultContainer from '../../features/ResultContainer';
+import ResultsHeader from '../../components/ResultsHeader';
 import TabContainer from '../../components/TabContainer';
 import CandidateFilterLayout from './CandidateFilterLayout';
 import CompanyFilterLayout from './CompanyFilterLayout';
@@ -102,5 +103,4 @@ export default function AdvancedSearch({ disabledTabs }) {
     setFilterObject({ ...filterObject, title: searchTerm });
     setPage(1);
   }
-  function handleSearchClick() {
     setPage(1);

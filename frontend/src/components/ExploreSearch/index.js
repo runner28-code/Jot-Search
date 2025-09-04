@@ -26,6 +26,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   });
 
   function handleSearchClick() {
+// Temp comment
     const params = {};
     params.title = filterState.title ? filterState.title : '';
     params['On-Site/Remote'] = filterState['On-Site/Remote'] !== 'Any Work Setting' ? filterState['On-Site/Remote'] : 'Any';

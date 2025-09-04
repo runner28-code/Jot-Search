@@ -4,7 +4,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { BsBuilding } from 'react-icons/bs';
 
-// Temp comment
 const ITEMS_PER_PAGE = 10;
 
 export default function FeaturedCompanies() {
@@ -24,7 +23,6 @@ export default function FeaturedCompanies() {
       <h2 className='text-h4 font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
       <div className='flex flex-wrap mt-8'>
         {
-          isLoading ?
             <LoadingSpinner />
             :
             companies.map((company, index) =>

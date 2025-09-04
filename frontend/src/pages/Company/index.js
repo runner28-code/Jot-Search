@@ -62,7 +62,6 @@ export default function Company() {
       />
       <div 
         className={ width <= 990 ? 'px-[5%]'
-// Temp comment
           : !loggedIn ? 'px-[15%]' 
             : ''}
       >
@@ -144,7 +143,6 @@ function RenderInvite(loggedIn, companyData) {
 }
 RenderInvite.propTypes = {
   loggedIn: PropTypes.bool,
-  companyData: PropTypes.object
 }
 
 function renderCompanyDescription(description, textStyles) {

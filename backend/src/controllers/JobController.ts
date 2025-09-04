@@ -189,6 +189,7 @@ export class JobController {
         message: null,
       };
     } catch (error) {
+      console.error(error);
       return {
         message: error,
       };

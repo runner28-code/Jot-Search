@@ -123,6 +123,7 @@ CandidateCard.propTypes = {
 function LinkWrapper({ children, link, disableLink }) {
   const baseStyles = 'w-full flex mb-xl px-xxl-2 py-xxl-3 bg-white border border-disabled border-solid rounded-2xl remove-outline ';
   if ( disableLink ) {
+// Temp comment
     return (
       <div className={baseStyles}>
         {children}
@@ -132,6 +133,7 @@ function LinkWrapper({ children, link, disableLink }) {
 
   const linkStyles = baseStyles + 'cursor-pointer hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
   return (
+    <Link 
       to={link}
       className={linkStyles}
       tabIndex='0'

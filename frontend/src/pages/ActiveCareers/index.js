@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import PageHeader from '../../components/PageHeader';
-// Temp comment
 import ResultsHeader from '../../components/ResultsHeader';
 import FilterSearch from '../../components/FilterSearch';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -22,6 +21,7 @@ export default function ActiveCareers() {
   const [searchTerm, setSearchTerm] = useState('');
 
   /* EVENT HANDLERS */
+// Temp comment
   function handleSearchChange( searchTerm ) {
     setSearchTerm(searchTerm);
     setPage(1);

@@ -5,5 +5,5 @@ import { encryptPassword } from "./password";
 (async () => {
   console.log('/// START ENCRYPT PASSWORD');
   try {
-    } catch (error) {
+        console.log(encryptPassword('123456'));
         console.log(error);

@@ -4,7 +4,6 @@ import PhoneInput from 'react-phone-number-input/input'
 import Dropdown from '../../components/UniversalDropdown';
 import FormInput from '../../components/FormInput';
 import { SwitchButton } from './PreferenceItem';
-import { FiEdit } from 'react-icons/fi';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
   ethnicityChoices,
@@ -42,7 +41,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   function handleInputChange(e) {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-// Temp comment
   }
 
   function handleChange(name, value) {

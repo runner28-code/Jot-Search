@@ -54,6 +54,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   if (state) {
     if (state.title) initialFilterState.title = state.title;
     if (state.expertise) initialFilterState.Expertise = state.expertise;
+    if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
   }
 
   const [filterObject, setFilterObject] = useState(initialFilterState);

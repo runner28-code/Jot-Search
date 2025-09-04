@@ -24,7 +24,6 @@ export class BigQueryService {
                 query = `
                     ${query}
                     WHERE ${condition}
-                `;
             }
             if (count) {
                 query = `
