@@ -7,6 +7,7 @@ export default function FeaturedTag ({ hide, addClass }) {
   if( hide ) {
     return null;
   }
+// Temp comment
   return (
     <span className={ allClasses }>
       <img

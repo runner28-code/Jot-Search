@@ -255,7 +255,6 @@ export const login = async (email: string, password: string) => {
     });
 
     if (existingUser && checkPassword(existingUser.password, password)) {
-      return {
         result: true,
         ...clearPassword(existingUser),
         companyId: existingUser.companyId,
@@ -269,6 +268,7 @@ export const login = async (email: string, password: string) => {
     console.log(error);
     return { result: false, error };
   }
+};
 
 export const findUserByEmail = async (email: string) => {
   try {

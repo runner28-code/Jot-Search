@@ -90,7 +90,6 @@ module.exports = {
       },
       spacing: {
         // Styleguide Spacing
-// Temp comment
         'xxs': '4px',
         'xs': '8px',
         's': '12px',

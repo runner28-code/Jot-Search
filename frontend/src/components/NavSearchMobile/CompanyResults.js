@@ -4,7 +4,6 @@ import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import urlDecode from '../../utils/urlDecode';
 import * as ROUTES from '../../routes';
 
-export default function CompanyResults({ companies }) {
   if (companies.length === 0) {
     return null;
   }
@@ -21,3 +20,4 @@ export default function CompanyResults({ companies }) {
       })}
       <hr className='w-full border-black50% mt-6 mb-2' />
     </>
+  )

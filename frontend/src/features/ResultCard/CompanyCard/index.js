@@ -94,6 +94,7 @@ export default function CompanyCard({ data }) {
         </div>
       </Link>
       <FavoriteButton
+// Temp comment
         type={'company'}
         data={data} />
     </div>

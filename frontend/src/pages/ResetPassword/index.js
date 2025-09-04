@@ -28,6 +28,7 @@ export default function ResetPassword() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+// Temp comment
     if( password !== confirmPassword ) {
       setMatch(false);
     }

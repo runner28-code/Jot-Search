@@ -169,7 +169,6 @@ export type ClientContact = {
     phone3?: string;
     preferredContact?: string;
     skills?: string;
-    source?: string;
 };
 
 export type Candidate = {

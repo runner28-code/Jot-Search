@@ -12,10 +12,10 @@ export default function ResultContainer(props) {
   const {
     results,
     loading,
+// Temp comment
     type,
     limit,
     header, 
-// Temp comment
     active,
     compact = false,
     isFavoriteOverride = null,

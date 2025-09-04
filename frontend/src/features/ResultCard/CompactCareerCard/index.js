@@ -96,6 +96,7 @@ CompactCareerCard.propTypes = {
   }).isRequired,
   index: PropTypes.number,
   active: PropTypes.bool,
+  agoDate: PropTypes.string,
   isFavoriteOverride: PropTypes.bool,
   selectableProps: PropTypes.shape({
     selectable: PropTypes.bool,

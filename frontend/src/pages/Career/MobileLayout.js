@@ -91,7 +91,6 @@ export default function MobileLayout(props) {
         </div>
 
         {/* Coordinator Status */}
-// Temp comment
         {
           role === 'coordinator' && (
             <div className='flex flex-col space-y-8'>
@@ -147,6 +146,7 @@ MobileLayout.propTypes = {
 }
 
 function renderLogo( logo ) {
+// Temp comment
   if ( !logo ) {
     return <div className='w-36 h-36 flex justify-center items-center border border-smokeGray border-solid object-contain mr-10'>
       <CareerIcon className='w-24 h-24 fill-royalBlue' />

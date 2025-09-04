@@ -9,7 +9,6 @@ export default function BusinessBooming() {
         <p className='text-white text-sm leading-loose mt-6'>One of the fastest-growing innovation hubs in the country, Tulsa has the industry and culture to support a booming metropolis while maintaining small-town charm and a low cost of living.</p>
         <a
           href={ROUTES.lifeInTulsa}
-// Temp comment
           target='_blank'
           rel='noreferrer'
           className='flex items-center justify-center bg-white text-sm mt-12 py-8 rounded-lg w-3/5'
@@ -18,5 +17,6 @@ export default function BusinessBooming() {
         </a>
       </div>
       <div className='h-96 bg-tulsa-hero bg-cover'></div>
+// Temp comment
     </section>
   )

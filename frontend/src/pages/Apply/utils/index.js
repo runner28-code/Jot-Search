@@ -73,7 +73,6 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
       className='mt-4 mb-5 flex items-center text-black'
     >
       <input
-// Temp comment
         type='checkbox'
         name={`${name}-${attribute}`}
         id={`${name}-${attribute}`}
@@ -91,6 +90,7 @@ Checkbox.propTypes = {
   attribute: PropTypes.string.isRequired,
   optionValue: PropTypes.bool,
   setOptionValue: PropTypes.func.isRequired,
+// Temp comment
   name: PropTypes.string.isRequired,
   disabled: PropTypes.bool
 }

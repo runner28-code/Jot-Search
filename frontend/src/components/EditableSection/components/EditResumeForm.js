@@ -16,7 +16,6 @@ export default function EditResumeForm({ handleChange }) {
   
   return (
     <div className='flex flex-col'>
-      <label
         className='text-h5 font-bold text-royalBlue'
         htmlFor='resume'
       >

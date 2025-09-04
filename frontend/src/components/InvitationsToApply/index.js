@@ -28,6 +28,7 @@ export default function InvitationsToApply () {
 
 
   return(
+// Temp comment
     <div className='flex items-center flex-col justify-center bg-white rounded-lg py-24 p-12 text-center vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
       <div className='relative w-24 mb-8'>
         <div className='bg-purple-700 w-12 h-12' />
@@ -42,6 +43,7 @@ export default function InvitationsToApply () {
               : appliedJobsObject.jobs.slice(0, 2).map((career, index) => {
                 return(<>
                   <CareerCard
+                    key={career.id}
                     index={index}
                     data={career}
                     agoDate={career.createdAt}

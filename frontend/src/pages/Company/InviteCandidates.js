@@ -106,7 +106,6 @@ function itemRenderer({ option, onClick, disabled}) {
             className='w-20 h-20'
             src={avatarUrl}
             alt='Candidate Avatar' />      
-// Temp comment
           : <Initials name={option.label} />
         }  
         <div className="flex flex-col">
