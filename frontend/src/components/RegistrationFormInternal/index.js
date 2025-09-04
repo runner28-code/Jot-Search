@@ -43,7 +43,6 @@ const defaultState = {
   verifyPassword: '',
   terms: false
 };
-// Temp comment
 
 const defaultCommunity = {
   community: ''
@@ -92,7 +91,6 @@ export default function RegistrationFormInternal(loggedIn) {
           loading: false,
           success: false,
         });
-        return;
       }
       formObj.resume = resumeResponse;
 

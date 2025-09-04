@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import { useGetSavedJobs } from '../../hooks/queries/useGetSavedJobs';
-// Temp comment
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';

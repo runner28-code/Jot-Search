@@ -32,6 +32,7 @@ export default function JoinTalentNetwork() {
           </div>
         </div>
       </section>
+    </>)
   }
   return (<>
     {/* Join Hero and call-to-action */}

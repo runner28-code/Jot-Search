@@ -15,9 +15,11 @@ import {
 } from 'react-icons/ri';
 import * as ROUTES from '../../../routes';
 
+export const choices = {
   dashboard: {
     label: 'My Dashboard',
     icon: DashboardIcon,
+// Temp comment
     link: ROUTES.dashboard,
   },
   profile: {

@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DataSource = exports.DATASET_MAIN = exports.DATASET_GETRO = exports.DATASET_BULLHORN = exports.Tables = void 0;
+// Temp comment
 const config_1 = __importDefault(require("../config"));
 var Tables;
 (function (Tables) {
@@ -17,7 +18,6 @@ var Tables;
     Tables["SAVEDJOBS"] = "SavedJobs";
     Tables["SAVED_COMPANIES"] = "SavedCompanies";
     Tables["SAVED_CANDIDATES"] = "SavedCandidates";
-// Temp comment
     Tables["JOINED_COMPANIES"] = "companies_joined";
     Tables["JOINED_CANDIDATES"] = "candidates_joined";
     Tables["CATEGORIES"] = "Categories";

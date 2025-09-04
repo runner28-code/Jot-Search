@@ -4,6 +4,7 @@ import * as ROUTES from '../../routes';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
+// Temp comment
 import featuredIcon from '../../assets/icons/pyramid.svg';
 import { getAppliedJobs } from '../../services/API';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -36,6 +37,7 @@ export default function PendingApplications () {
   return(
     <div className='flex items-center flex-col justify-center bg-royalBlue rounded-lg py-24 px-12 vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
       <div className='relative w-24 mb-8'>
+        <div className='bg-red-500 w-12 h-12' />
         <div className='bg-orangeSquare  top-[-20px] right-[5px] absolute w-6 h-6' />
       </div>
       <h2 className='font-spaceGrotesk text-h5 text-white mb-8 text-center'>My Pending Applications</h2>

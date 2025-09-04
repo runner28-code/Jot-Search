@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import Home from '../../../assets/icons/home.svg';
 import AdvancedSearch from '../../../features/AdvancedSearch';
 import CareerFavorite from '../../../components/CareerFavorite';
@@ -11,6 +12,7 @@ export default function CandidateDashboard() {
   return (
     <>
       <div className='flex items-center justify-start mb-12 pt-8 px-4'>
+        <img
           src={Home}
           alt='Home Icon'
         />

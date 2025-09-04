@@ -9,7 +9,6 @@ import postingAgeIcon from '../../assets/icons/calendar.svg';
 import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { apply as applyRoute } from '../../routes';
-import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
 
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-xl text-charcoal mb-4 ';
@@ -146,7 +145,6 @@ MobileLayout.propTypes = {
 }
 
 function renderLogo( logo ) {
-// Temp comment
   if ( !logo ) {
     return <div className='w-36 h-36 flex justify-center items-center border border-smokeGray border-solid object-contain mr-10'>
       <CareerIcon className='w-24 h-24 fill-royalBlue' />

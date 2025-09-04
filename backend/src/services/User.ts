@@ -255,6 +255,7 @@ export const login = async (email: string, password: string) => {
     });
 
     if (existingUser && checkPassword(existingUser.password, password)) {
+      return {
         result: true,
         ...clearPassword(existingUser),
         companyId: existingUser.companyId,
@@ -440,7 +441,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
   const candidateCompare = (totalCandidates - totalCandidatesInPreviousPeriod) * 100 / totalCandidates;
 
 
-  const newCandidatesInCurrentPeriod = await db.candidate.count({
     where: {
       createdAt: {
         gte: moment().subtract(days - 1, 'days').startOf('day').toDate(),

@@ -69,7 +69,6 @@ export default function Dropdown(props) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
-// Temp comment
   const handleClick = (choice) => {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {

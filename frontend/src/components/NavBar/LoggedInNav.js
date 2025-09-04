@@ -136,7 +136,6 @@ const DropdownMenu = () => {
 function DropdownContent({ isOpen, handleClick }) {
   let userType = AuthService.getUserRole();
 
-// Temp comment
   if ( !isOpen ) {
     return null;
   }

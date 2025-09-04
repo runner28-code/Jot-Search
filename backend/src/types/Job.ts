@@ -30,7 +30,6 @@ export type Job = {
   company_name?: string;
   datasource?: Datasource;
   featured?: boolean;
-};
 
 export type JobKey = keyof Job;
 
@@ -42,3 +41,4 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "address2",
   "city",
   "state",
+  "zip",

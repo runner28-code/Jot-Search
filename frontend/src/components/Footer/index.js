@@ -89,6 +89,7 @@ export default function Footer() {
       </div>
     </>)
   }
+// Temp comment
 
   return (<>
     <NavFooter />
@@ -163,6 +164,7 @@ export default function Footer() {
             </a>
             <a
               href='https://business.intulsa.com/'
+              target='_blank'
               rel='noopener noreferrer'
             >
               <img

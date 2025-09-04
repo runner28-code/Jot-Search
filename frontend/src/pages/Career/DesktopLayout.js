@@ -27,6 +27,7 @@ export default function DesktopLayout(props) {
   } = props.data;
   const navigate = useNavigate();
 
+// Temp comment
   const skillList = careerData.skillList;
 
   return (<>
@@ -85,7 +86,6 @@ export default function DesktopLayout(props) {
             {/* Salary */}
             <div className='w-1/2 flex items-center pr-4'>
               <img
-// Temp comment
                 src={salaryIcon}
                 className='h-11 mr-5' />
               <p className='text-textBlack'>{salaryString}</p>

@@ -169,6 +169,7 @@ export type ClientContact = {
     phone3?: string;
     preferredContact?: string;
     skills?: string;
+    source?: string;
 };
 
 export type Candidate = {
@@ -243,3 +244,4 @@ export type Candidate = {
     phone3?: string;
     preferredContact?: string;
     primarySkills?: string;
+    recentClientList?: string;

@@ -60,7 +60,6 @@
                 {
                     "name": "GETRO_EMAIL", 
                     "value": "{SECRET_GETRO_EMAIL}"
-                },
                 {
                     "name": "GETRO_PASSWORD", 
                     "value": "{SECRET_GETRO_PASSWORD}"

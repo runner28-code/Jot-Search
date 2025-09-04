@@ -24,7 +24,6 @@ function App() {
       <NavBar />
       <main className='bg-lightGrey pt-30 vw-1280:pt-44 vw-1280:flex'>
         <SideNav userType={userRole} />
-// Temp comment
         <div 
           className='grow min-h-280 pb-18'>
           <Routes>
@@ -32,7 +31,6 @@ function App() {
               path={ROUTES.signup}
               element={<SignUp />} />
             <Route
-              path={ROUTES.login}
               element={<Login />} />
             <Route
               path={ROUTES.landingPage}

@@ -2,6 +2,7 @@ import {
   Body,
   Get,
   Post,
+  Put,
   QueryParam,
   JsonController,
   Authorized,
@@ -306,3 +307,4 @@ export class CandidateController {
           return candidate;
         });
       }
+

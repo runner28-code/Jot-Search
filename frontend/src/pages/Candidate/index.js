@@ -111,6 +111,7 @@ export default function Candidate() {
               toggled={!!candidateData.activelyLooking}
               fieldName='activelyLooking'
               label={PREFERENCE_ITEMS.activelyLooking}
+// Temp comment
               onUpdate={handleCandidateUpdate} />
             <PreferenceItem
               toggled={!!candidateData.willRelocate}
@@ -132,7 +133,6 @@ export default function Candidate() {
             role={role}
             candidateData={candidateData}
             handleCandidateUpdate={handleCandidateUpdate} />
-// Temp comment
         </div>
         {role === 'coordinator' && 
           <InviteToCareer candidate={candidateData} />

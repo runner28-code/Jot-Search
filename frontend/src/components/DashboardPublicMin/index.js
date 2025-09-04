@@ -21,6 +21,7 @@ export default function DashboardPublicMin({type}) {
         <div className='flex items-center justify-start w-full'>
           <div className='flex items-center text-lg'>
             <LeftIcon />
+            <button
               className='text-white underline'
               onClick={() => navigate(-1)}
             >
@@ -42,6 +43,7 @@ export default function DashboardPublicMin({type}) {
           >
           Back
           </button>
+// Temp comment
         </div>
         <div className='flex items-center basis-11/12 justify-center'>
           <Link

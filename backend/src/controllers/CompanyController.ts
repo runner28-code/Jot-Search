@@ -1,4 +1,5 @@
 import {
+  Body,
   Get,
   Post,
   Put,
@@ -266,3 +267,4 @@ export class CompanyController {
         message: error,
       };
     }
+  }

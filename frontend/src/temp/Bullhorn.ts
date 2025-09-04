@@ -244,3 +244,4 @@ export type Candidate = {
     password?: string;
     payrollClientStartDate?: string;
     payrollStatus?: string;
+    phone?: string; // !

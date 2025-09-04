@@ -69,6 +69,7 @@ CareerCard.propTypes = {
     salaryUnit: PropTypes.string,
     createdAt: PropTypes.string,
     category: PropTypes.shape({
+// Temp comment
       id: PropTypes.number,
       name: PropTypes.string
     })

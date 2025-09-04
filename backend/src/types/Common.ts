@@ -71,7 +71,6 @@ export type JobSearchByID = {
   message?: string;
 };
 
-export type JobSearchByFilterResponse =
   | {
       jobs?: Job[];
       total?: number;
@@ -103,3 +102,4 @@ export type GetSavedJobsResponse = {
 export type GetCandidatesOnJobResponse = {
   candidates?: any[];
   result: boolean;
+  message?: any;

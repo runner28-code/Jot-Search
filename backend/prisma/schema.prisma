@@ -551,3 +551,4 @@ model User {
   willReceiveNotification Boolean?
 
   ethnicity String[]
+
