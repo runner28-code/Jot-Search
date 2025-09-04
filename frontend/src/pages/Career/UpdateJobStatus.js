@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
@@ -24,6 +25,7 @@ export const UpdateJobStatus = ({ job }) => {
             'Active',
             'Inactive',
             'Filled',
+            'Draft',
             'Closed'
           ]} 
           currentChosen={updatedJob.status}

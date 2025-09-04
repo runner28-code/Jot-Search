@@ -39,7 +39,6 @@ export const defaultState = {
   disability: '',
   veteran: '',
   loading: true
-// Temp comment
 }
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
@@ -74,6 +73,7 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
       className='mt-4 mb-5 flex items-center text-black'
     >
       <input
+// Temp comment
         type='checkbox'
         name={`${name}-${attribute}`}
         id={`${name}-${attribute}`}

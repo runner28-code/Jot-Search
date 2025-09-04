@@ -319,6 +319,7 @@ const job_filter_exclude_keys = [
   "quality manager",
   "ra",
   "radio",
+  "radiologist",
   "radiology",
   "real estate",
   "receiving",

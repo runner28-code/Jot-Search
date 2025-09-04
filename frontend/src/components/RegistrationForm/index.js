@@ -107,6 +107,7 @@ export default function RegistrationForm(loggedIn) {
             success: true,
           })
         } else {
+          return navigate(ROUTES.login);
         }
       } else {
         console.log('Error: ', result);
@@ -154,6 +155,7 @@ export default function RegistrationForm(loggedIn) {
   }
 
   function handleChange(name, value) {
+// Temp comment
     setFormObj({
       ...formObj,
       [name]: value,

@@ -15,7 +15,6 @@ export default function Applications() {
     filteredJobs: [],
     loading: true
   });
-// Temp comment
   const [selectedApplications, setSelectedApplications] = useState([]);
 
   useEffect( async () => {

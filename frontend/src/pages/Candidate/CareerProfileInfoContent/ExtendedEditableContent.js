@@ -33,6 +33,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     roles: Array.isArray(candidateData.roles) ? candidateData.roles : (candidateData?.roles?.split(', ') || []),
     description: candidateData.description || '',
     workspace: candidateData?.workspace || '',
+    experience: candidateData?.experience || '',
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
     linkedin: candidateData?.linkedin || '',
     resume: candidateData?.resume || '',

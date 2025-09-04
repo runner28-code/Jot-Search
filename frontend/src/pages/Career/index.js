@@ -31,7 +31,6 @@ export default function CareerPage() {
     const career = await getJobById(id);
     // Decode url encoded properties on career
     career.title = urlDecode(career.title);
-// Temp comment
     career.description = urlDecode(career.description);
 
     setCareerData({ ...career });

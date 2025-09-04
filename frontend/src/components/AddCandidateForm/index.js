@@ -69,6 +69,7 @@ export default function RegistrationForm() {
       const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
+// Temp comment
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
         // Set success to true if on add-candidate page, navigate user to login if not
@@ -83,7 +84,6 @@ export default function RegistrationForm() {
       } else {
         console.log('Error: ', result);
         setErrorBlock(result);
-// Temp comment
         setSubmissionObject({
           loading: false,
           success: false,

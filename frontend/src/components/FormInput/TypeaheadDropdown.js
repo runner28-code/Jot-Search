@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import ChoiceTag from '../ChoiceTag';
 import ChoiceListItem from '../ChoiceListItem';
-// Temp comment
 
 export default function TypeaheadDropdown(props) {
   const {
@@ -114,6 +113,7 @@ function renderLabel(name, label, required) {
     </label>
   )
 }
+// Temp comment
 
 
 function renderChosen(dropdownType, currentChosen, handleClick) {

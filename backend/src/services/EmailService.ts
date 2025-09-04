@@ -25,7 +25,6 @@ export const sendVerification = async (to: string, name: string) => {
       url: `${base_url}/verify`,
       firstName: name,
     });
-    return true;
   } catch (error: any) {
     console.log('Error during sending invitation');
     console.log(error);
@@ -34,6 +33,7 @@ export const sendVerification = async (to: string, name: string) => {
   }
 }
 
+export const sendResetPassword = async (to: string, name: string, token: string) => {
   try {
     const base_url = process.env.FRONTEND_URL || 'http://localhost:3000';
     await sendEmail(to, 'Reset your password!', 'reset-password', {

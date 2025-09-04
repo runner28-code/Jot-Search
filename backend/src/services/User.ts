@@ -187,6 +187,7 @@ export const addUserHistoryEntries = async ({
       return newValue !== oldValue;
     })
     .map((key) => {
+      const typedKey = key as keyof dbUser;
       return {
         table: USER_TABLE,
         recordId: existingUser.id,
@@ -268,7 +269,6 @@ export const login = async (email: string, password: string) => {
     console.log(error);
     return { result: false, error };
   }
-};
 
 export const findUserByEmail = async (email: string) => {
   try {

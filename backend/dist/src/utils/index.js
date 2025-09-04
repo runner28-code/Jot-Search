@@ -45,6 +45,7 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
     try {
         const query = `
             SELECT * FROM \`${datset}.${table}\`
+            WHERE ${condition}
         `;
         const options = {
             query: query,
@@ -55,7 +56,6 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
         if (res && res.length > 0) {
             return true;
         }
-        return false;
     }
     catch (error) {
         console.log(error);

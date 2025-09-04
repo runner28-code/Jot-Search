@@ -11,6 +11,7 @@ export const encryptPassword = (password: string) => {
 
     encrypted_password_hash.update(sr + password);
 
+    return `${sr}${encrypted_password_hash.digest('hex')}`;
 }
 
 export const checkPassword = (encryptedPassword:string, password: string) => {

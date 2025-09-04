@@ -91,6 +91,7 @@ export default function MobileLayout(props) {
         </div>
 
         {/* Coordinator Status */}
+// Temp comment
         {
           role === 'coordinator' && (
             <div className='flex flex-col space-y-8'>

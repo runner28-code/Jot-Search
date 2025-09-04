@@ -44,6 +44,7 @@ function HeaderContent({ companyData }) {
             <img
               src={PlacePin}
               className={headerIconStyles}
+            />
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
@@ -179,6 +180,7 @@ function FillerIcon () {
     return (
       <div>
         <BsBuilding className='w-16 h-16 fill-royalBlue basis-1/3 mr-8'/>
+// Temp comment
       </div>
     )
   } else {

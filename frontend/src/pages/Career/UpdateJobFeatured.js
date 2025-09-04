@@ -50,7 +50,6 @@ export const UpdateJobFeatured = ({ job }) => {
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured
         </label>
-// Temp comment
       </div>
     </div>
   )

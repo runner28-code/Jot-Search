@@ -68,6 +68,7 @@ export default function Footer() {
           <div className='text-grey w-1/2 text-xs text-center'>
             <span>© 2022 Talent inTulsa initiatives, LLC. All rights reserved | </span>
             <a
+              href={ROUTES.privacyPolicy}
               className='underline'
               target='_blank'
               rel='noreferrer'
@@ -211,6 +212,7 @@ function NavFooter() {
   return(<>
     <div className='py-24 px-[10%] flex flex-wrap'>
       <div className='flex flex-col basis-6/12'>
+// Temp comment
         <img
           src={inTulsaFooter}
           className='w-[250px] h-auto mb-12'

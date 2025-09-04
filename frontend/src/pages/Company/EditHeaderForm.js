@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { MdLocationOn, MdCancel, MdCheckCircle } from 'react-icons/md';
-// Temp comment
 import PropTypes from 'prop-types';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
@@ -13,6 +12,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     companyName: candidateData.companyName,
     address1: candidateData.address1,
     address2: candidateData.address2,
+// Temp comment
     city: candidateData.city,
     state: candidateData.state,
     zip: candidateData.zip,
