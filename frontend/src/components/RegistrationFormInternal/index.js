@@ -91,6 +91,7 @@ export default function RegistrationFormInternal(loggedIn) {
           loading: false,
           success: false,
         });
+        return;
       }
       formObj.resume = resumeResponse;
 

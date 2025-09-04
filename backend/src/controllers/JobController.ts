@@ -123,6 +123,7 @@ export class JobController {
       const datasourceToEnum: Dictionary<Datasource> = {
         main: Datasource.main,
         bullhorn: Datasource.bullhorn,
+        getro: Datasource.getro,
       };
 
       const _datasource = datasource ? datasourceToEnum[datasource] : undefined;
@@ -319,3 +320,5 @@ export class JobController {
         _table,
         _fields,
         count,
+        _condition,
+        _join,

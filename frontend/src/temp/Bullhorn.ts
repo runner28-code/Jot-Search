@@ -245,3 +245,4 @@ export type Candidate = {
     payrollClientStartDate?: string;
     payrollStatus?: string;
     phone?: string; // !
+    phone2?: string;

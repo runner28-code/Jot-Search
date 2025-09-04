@@ -9,7 +9,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 
 export default function ResultContainer(props) {
-// Temp comment
   const {
     results,
     loading,

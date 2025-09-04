@@ -51,7 +51,6 @@ export default function Login() {
           <div className='flex vw-640:justify-center items-center mb-12 mt-12'>
             <span className='text-sm vw-640:text-ml text-charcoal vw-640:mx-3'>Need an Account?</span>
             <Link
-// Temp comment
               to={ROUTES.signup}
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
             >
@@ -86,7 +85,6 @@ export default function Login() {
         {/* Assistance call-to-action */}
         <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
           <span>Need Help? Just ask </span>
-          <a
             href='mailto:help@intulsa.com'
             className='text-sm vw-640:text-ml text-royalBlue underline'
           >

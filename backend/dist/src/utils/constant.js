@@ -363,3 +363,5 @@ const job_filter_exclude_keys = [
     "shoe",
     "sign language",
     "sobering",
+    "soccer",
+    "social services",

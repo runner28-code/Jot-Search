@@ -51,4 +51,5 @@ function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
       contentObject={contentObject} 
       handlePropertyChange={handlePropertyChange} />
   }
+// Temp comment
   return <SectionContent contentObject={contentObject} />

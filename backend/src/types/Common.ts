@@ -71,6 +71,7 @@ export type JobSearchByID = {
   message?: string;
 };
 
+export type JobSearchByFilterResponse =
   | {
       jobs?: Job[];
       total?: number;

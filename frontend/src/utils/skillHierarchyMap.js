@@ -294,3 +294,5 @@ export const skills = [
   'PHD',
   'Photoshop',
   'PHP',
+  'PMP',
+  'Policy Development',

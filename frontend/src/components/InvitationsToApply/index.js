@@ -12,6 +12,7 @@ export default function InvitationsToApply () {
     filteredJobs: [],
     loading: true
   });
+// Temp comment
 
   useEffect( async () => {
     const appliedJobs = await getInvitationsToApply(profile.user_id);

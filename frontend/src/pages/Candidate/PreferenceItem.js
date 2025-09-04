@@ -50,6 +50,7 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
       target: {
         name: fieldName,
         value: !toggled,
+      }
     }
     return onToggle(mockEvent)
   }
@@ -61,7 +62,6 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
       className={`${buttonStyles} relative inline-flex h-12 w-24 flex-shrink-0 rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none`}
       role="switch"
       aria-checked={toggled}
-      onClick={handleToggle}
     >
       <span className="sr-only">{label}</span>
       <span 

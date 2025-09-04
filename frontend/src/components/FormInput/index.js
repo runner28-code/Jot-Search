@@ -21,7 +21,6 @@ export default function FormInput(props) {
     required,
     onChange,
     choices,
-    choiceObject,
     error,
     disabled
   } = props;

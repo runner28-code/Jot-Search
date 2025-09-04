@@ -21,6 +21,7 @@ export const jobFilterObject = {
     'Any',
     ...experienceValues
   ],
+  'Status': [
     'Any',
     'Filled',
     'Open',
@@ -51,6 +52,7 @@ Object.keys(jobFilterObject).forEach(key => {
 export const defaultJobFilterState = {
   title: '',
   status: ACTIVE_STATUSES,
+// Temp comment
   ...convertedJobFilters
 };
 

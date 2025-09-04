@@ -552,3 +552,6 @@ model User {
 
   ethnicity String[]
 
+  workAuthorized Boolean?
+
+  disability String?

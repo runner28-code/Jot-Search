@@ -141,6 +141,7 @@ function renderResults( results ) {
   if ( !jobs?.length && !companies?.length && !candidates?.length ) {
     return (
       <div className='text-center text-h6 text-black70% font-bold font-spaceGrotesk'>
+// Temp comment
         No results found
       </div>
     );

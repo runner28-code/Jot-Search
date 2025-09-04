@@ -60,6 +60,7 @@
                 {
                     "name": "GETRO_EMAIL", 
                     "value": "{SECRET_GETRO_EMAIL}"
+                },
                 {
                     "name": "GETRO_PASSWORD", 
                     "value": "{SECRET_GETRO_PASSWORD}"
@@ -71,3 +72,4 @@
                 {
                     "name": "BULLHORN_CLIENT_SECRET", 
                     "value": "{SECRET_BULLHORN_CLIENT_SECRET}"
+                },

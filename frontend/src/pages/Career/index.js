@@ -16,6 +16,7 @@ import PageHeader from '../../components/PageHeader';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import InviteCandidates from './InviteCandidates';
 
+// Temp comment
 export default function CareerPage() {
   const { width } = useWindowDimensions();
   const location = useLocation();
@@ -114,6 +115,7 @@ function Notification({title, content, text, email, company, id, add}) {
 
   return (
     <div className='rounded-2xl bg-sky-100 p-8 border border-neutral-300 mb-8'>
+      <div className="flex items-center">
         <img
           src={Flag}
           className='w-12 h-12'

@@ -89,3 +89,4 @@ export const justifyData = (data: any, keys: string[], excludeKeys: string[] = [
 }
 
 export const getFilterConditions = (
+    filters: AdvancedFilterOption[],

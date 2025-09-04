@@ -308,3 +308,4 @@ export class CandidateController {
         });
       }
 
+      const sortedCandidates = extendedCandidates.sort((a, b) => {

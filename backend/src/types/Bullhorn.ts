@@ -96,7 +96,6 @@ export type Job = {
     markUpPercentage?: string;
     numOpenings?: string;
     onSite?: string;
-    owner?: string;
     payRate?: string;
     publicDescription?: string;
     publishedZip?: string;
@@ -245,3 +244,4 @@ export type Candidate = {
     preferredContact?: string;
     primarySkills?: string;
     recentClientList?: string;
+    referredBy?: string;

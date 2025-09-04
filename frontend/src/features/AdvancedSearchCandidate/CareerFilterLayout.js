@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
@@ -12,6 +11,7 @@ const dropdownFilters = [
   'Years Experience',
   'Status',
 ];
+// Temp comment
 
 const dropDownFiltersCandidate = [
   'Expertise',

@@ -8,6 +8,7 @@ import FeaturedJobs from '../../components/FeaturedJobs';
 import FeaturedCompanies from '../../components/FeaturedCompanies';
 import FeaturedCompaniesMobile from '../../components/FeaturedCompaniesMobile';
 import BusinessBooming from '../../components/BusinessBooming';
+import BusinessBoomingMobile from '../../components/BusinessBoomingMobile';
 import ColorShapes from '../../components/ColorShapes';
 import * as ROUTES from '../../routes';
 import { MdLocationOn } from 'react-icons/md';
@@ -78,7 +79,6 @@ function renderLocation() {
       <div className='flex items-center'>
         <MdLocationOn className='fill-white h-11 w-10 mr-1' />
         <span className='text-white text-lg tracking-wide'>Tulsa, OK</span>
-      </div>
     )
   }
 }

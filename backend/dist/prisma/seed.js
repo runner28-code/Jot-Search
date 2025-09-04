@@ -74,7 +74,6 @@ function seedJobs() {
                 },
             ],
         });
-    });
 }
 function seedCandidates() {
     return __awaiter(this, void 0, void 0, function* () {

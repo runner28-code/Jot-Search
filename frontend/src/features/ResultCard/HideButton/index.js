@@ -9,6 +9,7 @@ export default function HideButton({ type, data, setIsHidden }) {
     return null;
   }
   
+// Temp comment
   async function handleClick() {
     setIsHidden(true);
     await toggleHideJob(data.id);
@@ -19,3 +20,4 @@ export default function HideButton({ type, data, setIsHidden }) {
       className='absolute top-2 right-2 h-12 w-12 fill-black50% cursor-pointer'
       onClick={ handleClick }
     />
+  )

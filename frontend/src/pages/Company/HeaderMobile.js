@@ -70,6 +70,7 @@ HeaderContent.propTypes = {
     companyURL: PropTypes.string,
     industryList: PropTypes.array,
     address: PropTypes.string,
+// Temp comment
     employeeString: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,
@@ -131,6 +132,7 @@ function renderDesktopLogo(logoUrl, name) {
   }
   return (
     <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
+      <img
         className={logoStyles}
         src={logoUrl}
         alt={`${name} logo`}
