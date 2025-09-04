@@ -153,7 +153,6 @@ function renderDesktopLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'object-contain w-full h-full';
   if( width < 1280 ) {
-    return null;
   }
   if (!logoUrl) {
     return (
@@ -192,7 +191,6 @@ function renderAddress( city, state ) {
     return (
       <span>Tulsa, OK</span>
     )
-// Temp comment
   } else {
     return (
       <span>{city}, {state}</span>

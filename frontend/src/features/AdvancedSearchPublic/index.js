@@ -7,7 +7,6 @@ import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
-// Temp comment
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
@@ -55,7 +54,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   if (state) {
     if (state.title) initialFilterState.title = state.title;
     if (state.expertise) initialFilterState.Expertise = state.expertise;
-    if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
   }
 
   const [filterObject, setFilterObject] = useState(initialFilterState);

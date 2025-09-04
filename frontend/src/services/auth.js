@@ -115,7 +115,6 @@ class AuthService {
     } else {
       savedCompanies.splice(savedCompanies.indexOf(companyID), 1);
     }
-// Temp comment
     localStorage.setItem('savedCompanies', JSON.stringify(savedCompanies));
   }
 

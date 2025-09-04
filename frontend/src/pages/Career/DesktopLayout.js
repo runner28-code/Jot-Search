@@ -128,7 +128,6 @@ DesktopLayout.propTypes = {
     postingAge: PropTypes.string.isRequired,
     salaryString: PropTypes.string.isRequired,
   }).isRequired
-}
 
 function renderLogo(logo) {
   if (!logo) {

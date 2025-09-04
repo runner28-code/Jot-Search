@@ -5,6 +5,7 @@ function isTodayOrYesterday(dateObj) {
   let returnObj = {
     isToday: false,
     isYesterday: false
+// Temp comment
   }
 
   const today = new Date();
@@ -54,6 +55,7 @@ function formatDateString(date) {
 
   // Check if date is today or yesterday
   const { isToday, isYesterday } = isTodayOrYesterday(dateObj);
+  
   // Format date
   const formattedDate = formatDateByDay(isToday, isYesterday, dateObj);
   return formattedDate;

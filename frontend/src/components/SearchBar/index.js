@@ -8,7 +8,6 @@ const defaultStylesObject = {
 }
 
 export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject }) {
-  const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
   if ( marginBottom ) {
     styleObject.containerStyles += `mb-${marginBottom} `;
   }
@@ -31,6 +30,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
       </div>
       <input
         type='text'
+        id={ placeholder }
         placeholder={ placeholderText }
         value={ searchTerm }
         onChange={ handleChange }

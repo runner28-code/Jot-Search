@@ -64,7 +64,6 @@ export default function CompanyCard({ data }) {
               <p className='text-textBlack'>{employeeString}</p>
             </div>
           </div>
-// Temp comment
           {/* Second row */}
           <div className='flex items-center mt-12'>
             {/* Linkedin */}
@@ -88,7 +87,6 @@ export default function CompanyCard({ data }) {
                 href='#'
                 className='text-royalBlue underline'
               >
-                Company Website
               </a>
             </div>
           </div>

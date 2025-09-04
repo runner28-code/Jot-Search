@@ -52,7 +52,6 @@ Object.keys(jobFilterObject).forEach(key => {
 export const defaultJobFilterState = {
   title: '',
   status: ACTIVE_STATUSES,
-// Temp comment
   ...convertedJobFilters
 };
 
@@ -102,6 +101,7 @@ export const candidateFilterObject = {
     'Any',
     'Active',
     'New Lead',
+// Temp comment
     'Warm Lead',
     'Passive',
     'Hired',

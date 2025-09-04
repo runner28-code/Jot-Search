@@ -44,6 +44,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   return (
     <img
       src={ isFavorite ? favoriteIconFilled : favoriteIconOutline }
+// Temp comment
       className={addClass ? styles + addClass : styles}
       onClick={handleFavoriteClick}
     />
@@ -70,4 +71,5 @@ function getIdByType(type, data) {
     case 'candidate':
       return data.id;
     default:
+      return '';
   }

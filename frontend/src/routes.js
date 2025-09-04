@@ -11,6 +11,7 @@ export const favorites = '/favorites';
 export const signup = '/signup';
 export const settings = '/settings';
 export const accountRecovery = '/account-recovery';
+// Temp comment
 export const resetPassword = '/reset-password';
 
 // Dashboard routes
@@ -22,7 +23,6 @@ export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';
 export const savedCareers = '/saved-careers';
 export const savedCompanies = '/saved-companies';
-// Temp comment
 // Company Dashboard
 export const candidates = '/candidates';
 export const savedCandidates = '/saved-candidates';

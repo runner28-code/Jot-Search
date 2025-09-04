@@ -16,7 +16,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   }
   return (
     <button
-      className={buttonStyles}
       type='submit'>
       {buttonString}
     </button>
@@ -52,7 +51,6 @@ export function renderHeader(addType) {
             to={ROUTES.login}
             className='text-sm text-royalBlue leading-loose underline mx-4'
           >
-// Temp comment
             Log in here.
           </Link>
         </div>

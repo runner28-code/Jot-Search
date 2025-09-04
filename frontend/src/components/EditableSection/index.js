@@ -40,7 +40,6 @@ EditableSection.propTypes = {
   header: PropTypes.string.isRequired,
   contentObjectProp: PropTypes.object.isRequired,
   handleContentUpdate: PropTypes.func.isRequired,
-  headerStyles: PropTypes.string.isRequired,
 }
 
 /* Render functions */
@@ -51,5 +50,4 @@ function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
       contentObject={contentObject} 
       handlePropertyChange={handlePropertyChange} />
   }
-// Temp comment
   return <SectionContent contentObject={contentObject} />

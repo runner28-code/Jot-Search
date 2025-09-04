@@ -1,4 +1,3 @@
--- CreateTable
 CREATE TABLE "Job" (
     "id" TEXT NOT NULL,
     "externalId" TEXT,
@@ -18,5 +17,3 @@ CREATE TABLE "Job" (
     "locations" TEXT,
     "companyId" TEXT,
     "interviews" TEXT,
-    "onSite" TEXT,
-    "salary" TEXT,

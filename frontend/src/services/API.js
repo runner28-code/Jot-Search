@@ -272,7 +272,6 @@ export async function applyToJob(jobId, candidateId) {
 
 export async function saveJob(candidateId, jobId) {
   const { data } = await API.put(ROUTES.APItoggleSaveJob, null, {
-// Temp comment
     params: {
       'candidate': candidateId,
       'job': jobId

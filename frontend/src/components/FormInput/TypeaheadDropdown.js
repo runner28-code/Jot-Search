@@ -54,7 +54,6 @@ export default function TypeaheadDropdown(props) {
     setDropdownOpen(dropdownOpen => !dropdownOpen);
   }
 
-// Temp comment
   function handleKeyDown() {
     setDropdownOpen(true);
   }

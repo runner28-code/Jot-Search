@@ -8,6 +8,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function Applications() {
+  const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
@@ -25,7 +26,6 @@ export default function Applications() {
       }});
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
-      jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
       loading: false
     });

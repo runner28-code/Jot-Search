@@ -33,6 +33,7 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
         if (res && res.length > 0 && `'${res[0].id}'` === id) {
             return true;
         }
+// Temp comment
         return false;
     }
     catch (error) {

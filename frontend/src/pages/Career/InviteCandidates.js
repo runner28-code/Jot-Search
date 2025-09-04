@@ -46,6 +46,7 @@ export default function InviteCandidates({ job }) {
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
       ))}
+// Temp comment
     </div>)
   }
 

@@ -3,7 +3,6 @@
 
   - Added the required column `updatedAt` to the `Address` table without a default value. This is not possible if the table is not empty.
   - Added the required column `updatedAt` to the `Application` table without a default value. This is not possible if the table is not empty.
-  - Added the required column `updatedAt` to the `Branch` table without a default value. This is not possible if the table is not empty.
   - Added the required column `updatedAt` to the `Candidate` table without a default value. This is not possible if the table is not empty.
   - Added the required column `updatedAt` to the `Category` table without a default value. This is not possible if the table is not empty.
   - Added the required column `updatedAt` to the `Company` table without a default value. This is not possible if the table is not empty.
@@ -31,6 +30,7 @@ ADD COLUMN     "updatedAt" TIMESTAMP(3) NOT NULL;
 
 -- AlterTable
 ALTER TABLE "Category" ADD COLUMN     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ADD COLUMN     "updatedAt" TIMESTAMP(3) NOT NULL;
 
 -- AlterTable
 ALTER TABLE "Company" ADD COLUMN     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,

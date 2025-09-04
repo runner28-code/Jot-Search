@@ -141,7 +141,6 @@ function renderResults( results ) {
   if ( !jobs?.length && !companies?.length && !candidates?.length ) {
     return (
       <div className='text-center text-h6 text-black70% font-bold font-spaceGrotesk'>
-// Temp comment
         No results found
       </div>
     );
@@ -185,6 +184,7 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
   const placeholderText = placeholder || 'Search for companies or jobs...';
   return (
     <label
+// Temp comment
       className={ !isOpen ? offObject.containerStyles : styleObject.containerStyles }
       htmlFor={ placeholder }
     >

@@ -62,6 +62,7 @@ export default function Company() {
       />
       <div 
         className={ width <= 990 ? 'px-[5%]'
+// Temp comment
           : !loggedIn ? 'px-[15%]' 
             : ''}
       >
