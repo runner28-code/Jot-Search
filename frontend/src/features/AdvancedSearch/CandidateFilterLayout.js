@@ -51,6 +51,7 @@ export default function CandidateFilterLayout(props) {
     });
     checkboxFiltersCoord.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
+    });
   } else {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
@@ -105,4 +106,3 @@ export default function CandidateFilterLayout(props) {
         </button>
       </div>
     </div>
-  );

@@ -49,7 +49,6 @@ CREATE TABLE "GetroMember" (
     "current_location" TEXT,
     "email" TEXT,
     "employment_types" TEXT,
-    "opportunity_types" TEXT[],
     "invited" BOOLEAN,
     "invited_by" TEXT,
     "joined_at" TIMESTAMP(3),

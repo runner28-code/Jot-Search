@@ -47,7 +47,6 @@ export const intulsa = 'https://www.intulsa.com';
 export const tulsaRemote = 'https://www.tulsaremote.com';
 export const campusTulsa = 'https://www.campustulsa.com';
 export const talentInTulsa = 'https://www.talent.intulsa.com/';
-export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';
 
 /* API Links */
 export const search = '/search';
@@ -67,6 +66,7 @@ export const APIuserUpdate = '/user/update';
 export const APItoggleSaveCandidate = APIcandidateBase + '/save';
 export const APIsavedCandidates = APIcandidateBase + '/saved';
 export const APIsendJobsToCandidates = APIcandidateBase + '/sendJobs';
+// Companies
 const APIcompanyBase = '/api/company';
 export const APIcompanies = APIcompanyBase + '/search';
 export const APItoggleSaveCompany = APIcompanyBase + '/save';

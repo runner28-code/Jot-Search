@@ -213,6 +213,7 @@ export type Candidate = {
     firstName?: string;
     gender?: string;
     hourlyRate?: string;
+    hourlyRateLow?: string;
     idOnFile?: string;
     isAnonymized?: string;
     isDeleted?: string;
@@ -245,3 +246,4 @@ export type Candidate = {
     primarySkills?: string;
     recentClientList?: string;
     referredBy?: string;
+    salary?: string;

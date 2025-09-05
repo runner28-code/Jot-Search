@@ -415,6 +415,7 @@ export class BullhornService {
 
   async saveJobFunc (data: any, testMode = false) {
     const updatedData: Job[] = data.map((d: any) => {
+      const {
         owner,
         isClientEditable,
         feeArrangement,
@@ -733,3 +734,5 @@ export class BullhornService {
                 .join(" | "),
               specialties: d.specialties?.data
                 .map((specialty: any) => specialty.name)
+                .join(" | "),
+              userDateAdded: new Date(d.userDateAdded),

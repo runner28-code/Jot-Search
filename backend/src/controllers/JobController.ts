@@ -322,3 +322,4 @@ export class JobController {
         count,
         _condition,
         _join,
+        alias

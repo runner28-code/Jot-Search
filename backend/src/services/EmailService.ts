@@ -51,6 +51,7 @@ export const sendResetPassword = async (to: string, name: string, token: string)
 }
 
 export const sendCandidatesToEmployers = async (candidates: string[], employers_emails: string[]) => {
+  try {
     await sendEmail(employers_emails, 'List of candidates', 'list-of-candidates', {
       candidates: candidates,
     });
@@ -68,7 +69,6 @@ export const sendNewUserNotification = async (to: string, name: string) => {
     const base_url = process.env?.FRONTEND_URL || 'http://localhost:3000';
     await sendEmail(to, 'Welcome to inTulsa!', 'new-user-notification', {
       name: name,
-      url: `${base_url}/login`
     });
     return true;
   } catch (error: any) {

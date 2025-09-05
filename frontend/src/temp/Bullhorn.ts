@@ -122,6 +122,7 @@ export type Job = {
 export type ClientContact = {
     id: string;
     category?: string;
+    certifications?: string;
     clientCorporation?: string;
     comments?: string;
     dateAdded?: string;
@@ -245,3 +246,4 @@ export type Candidate = {
     payrollStatus?: string;
     phone?: string; // !
     phone2?: string;
+    phone3?: string;

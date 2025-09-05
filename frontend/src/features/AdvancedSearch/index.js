@@ -103,4 +103,5 @@ export default function AdvancedSearch({ disabledTabs }) {
     setFilterObject({ ...filterObject, title: searchTerm });
     setPage(1);
   }
+  function handleSearchClick() {
     setPage(1);

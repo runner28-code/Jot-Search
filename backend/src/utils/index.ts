@@ -57,7 +57,6 @@ export const consoleLog = (message: any, newLine = true) =>{
 export const sleep = async (ms: number): Promise<void> => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-
 export const getDataSource = (id: string) => {
     const prefix = id.slice(0, 2);
     if (prefix === 'bl') return DataSource.BULLHORN;

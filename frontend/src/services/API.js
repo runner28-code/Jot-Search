@@ -207,6 +207,7 @@ export async function getSavedCompanies(id, count = null, page = null) {
 export async function getJobs(filters, count, operator, page) {
   return (await getJobsFull(filters, count, operator, page)).jobs;
 }
+// Temp comment
 
 export async function getJobsFull(filters, count, operator, page) {
   const filtersObj = filtersArrToObj(filters)

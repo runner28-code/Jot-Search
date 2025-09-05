@@ -366,3 +366,4 @@ const job_filter_exclude_keys = [
   "social worker",
   "sociology",
   "sonographer",
+  "speech",

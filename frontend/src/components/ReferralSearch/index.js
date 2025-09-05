@@ -74,7 +74,6 @@ export default function ReferralSearch() {
     setChoices(mockJobsData);
   }, []);
   
-  return (
     <div className='w-340'>
       <div className='flex mb-8'>
         { renderChosen(currentChosen, handleRemove) }

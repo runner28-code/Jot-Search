@@ -30,6 +30,7 @@ export default function Applications() {
       filteredJobs: filteredJobsByUnhidden,
       loading: false
     });
+  }, []);
 
   function handleCheckClick(careerId) {
     if (selectedApplications.includes(careerId)) {

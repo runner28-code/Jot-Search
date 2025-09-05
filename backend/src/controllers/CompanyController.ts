@@ -269,3 +269,4 @@ export class CompanyController {
     }
   }
 
+  getConditionsFromFilters = (

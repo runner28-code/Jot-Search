@@ -27,6 +27,7 @@ export default function InviteCandidates({ company }) {
   
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
+    e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }
 
@@ -44,7 +45,6 @@ export default function InviteCandidates({ company }) {
       ))}
     </div>)
   }
-
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>
   }

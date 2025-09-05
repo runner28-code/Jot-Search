@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import ChoiceTag from '../../ChoiceTag';
 import TypeaheadDropdown from '../../FormInput/TypeaheadDropdown';
@@ -13,6 +12,5 @@ export default function EditSkillsForm({ skills, handleChange }) {
       target: {
         name: inputName,
         value: newValues.join(', '),
-      },
     };
     handleChange(fakeEvent);

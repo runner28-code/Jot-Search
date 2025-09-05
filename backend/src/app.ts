@@ -97,8 +97,10 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
   const status = -res.statusCode;
   const start = process.hrtime();
   const durationInMs = getActualRequestDurationInMs(start);
+  const log = `[${formatted_date}] ${method}:${url} ${status} ${durationInMs.toLocaleString()} ms`;
   console.log(log);
   next();
 };
 
 const app = express();
+const port = process.env.PORT || 3001;

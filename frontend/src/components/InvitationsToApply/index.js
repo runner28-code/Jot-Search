@@ -4,6 +4,7 @@ import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import { getInvitationsToApply } from '../../services/API';
 
+// Temp comment
 
 export default function InvitationsToApply () {
   const profile = AuthService.getProfile();
@@ -18,6 +19,7 @@ export default function InvitationsToApply () {
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,
+        agoDate: job.appliedDate
       }});
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,

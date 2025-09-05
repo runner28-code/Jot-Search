@@ -33,7 +33,6 @@ export type User = {
   companyName?: string;
   annualRevenue?: string;
   companyURL?: string;
-  numEmployees?: string;
   revenue?: string;
   dateFounded?: string;
 
@@ -75,3 +74,4 @@ export const IUSER = {
   roles: "",
   description: "",
   phone: "",
+  status: "",

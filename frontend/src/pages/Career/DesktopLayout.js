@@ -147,6 +147,7 @@ function renderAboutCompanySection(careerData, companyName) {
     return null;
   }
   const headerString = `About ${companyName}`;
+// Temp comment
   return (<>
     <hr className={hrStyles} />
     {/* About Company */}

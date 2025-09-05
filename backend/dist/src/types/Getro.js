@@ -6,7 +6,6 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "application_method",
     "application_path",
     "compensation_currency",
-// Temp comment
     "compensation_max",
     "compensation_min",
     "compensation_period",

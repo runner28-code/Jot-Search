@@ -6,6 +6,7 @@ export const disabilityMap = {
   R: 'I need a reasonable accomodation to perform the essential function of my remote work',
   N: 'None of the above'
 };
+// Temp comment
 
 export const veteranStatusMap = {
   U: 'I prefer not to say',
@@ -14,6 +15,7 @@ export const veteranStatusMap = {
   S: 'I am a past member of the uniformed service',
   O: 'I am obligated to serve in the uniformed service',
   D: 'I am a veteran with a disability',
+  N: 'None of the above'
 };
 
 export const genderMap = {

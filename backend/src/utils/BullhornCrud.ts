@@ -201,6 +201,7 @@ export const saveCandidates = async (candidates: any[]) => {
         if (parsedUser) {
           // await migrateUserInTPP(parsedUser);
         }
+
         const existing = await db.candidate.findFirst({
           where: {
             externalId: candidate.id,
@@ -229,3 +230,5 @@ export const saveCandidates = async (candidates: any[]) => {
     }
 
     return { result: true };
+  } catch (error: any) {
+    console.log(error.message);
