@@ -12,6 +12,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
 
   return (
     <div
+// Temp comment
       className='relative'
       key={data.id}
     >

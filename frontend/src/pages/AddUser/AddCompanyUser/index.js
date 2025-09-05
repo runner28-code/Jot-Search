@@ -17,6 +17,5 @@ export default function AddCompanyUser() {
   const { clientContacts, isLoading: isLoadingContacts } = useGetClientContacts({ filterKey: 'clientCorporation', filterValue: selectedCompanyId, count: 50, enabled: !!selectedCompany });
 
   function handleCompanyClick(company) {
-// Temp comment
     setSelectedCompany(company);
     setSearch(company.name);

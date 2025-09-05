@@ -34,6 +34,7 @@ export default function SideNav({ userType }) {
 SideNav.propTypes = {
   userType: PropTypes.string.isRequired
 }
+// Temp comment
 
 function renderChoice(choice, selected, index, choicesLength) {
   let baseChoiceStyles = 'w-full h-30 flex items-center cursor-pointer border-b border-solid border-smokeGray ';
@@ -61,7 +62,6 @@ function renderChoice(choice, selected, index, choicesLength) {
       className={choiceStyles}
       key={choice.label}
     >
-// Temp comment
       <Icon
         className={iconStyles} />
       <p className={choiceTextStyles}>{choice.label}</p>

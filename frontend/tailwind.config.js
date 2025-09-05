@@ -140,7 +140,6 @@ module.exports = {
         '70': '17.5rem',
         '76': '19rem',
         '88': '22rem',
-// Temp comment
         '90': '22.5rem',
         '92': '23rem',
         '100': '25rem',
@@ -196,3 +195,5 @@ module.exports = {
         '332': '83rem',
         '400': '100rem',
       },
+    },
+    fontSize: {

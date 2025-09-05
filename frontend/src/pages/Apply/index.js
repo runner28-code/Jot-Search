@@ -68,6 +68,7 @@ export default function Apply() {
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';
       } else {
+// Temp comment
         candidateData.workAuthorized = 'No';
       }
       // Turn API IDs into appropriate values
@@ -146,6 +147,7 @@ export default function Apply() {
   function handleInputChange(e) {
     const { name, value } = e.target;
     setApplicationObject({ ...applicationObject, [name]: value });
+  }
 
   function handleChange(name, value) {
     setApplicationObject({
@@ -156,3 +158,9 @@ export default function Apply() {
 
   function handlePhoneInputChange(value) {
     setApplicationObject({ ...applicationObject, phone: value });
+  }
+
+  function handleFileInputChange(e) {
+    const { name, files } = e.target;
+    setApplicationObject({ ...applicationObject, [name]: files[0] });
+    setUseExistingResume(false)

@@ -53,3 +53,4 @@ export const saveCompany = async (company: string, candidate: string) => {
     console.log(e);
     return { result: false, message: e };
   }
+};

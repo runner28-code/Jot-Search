@@ -5,10 +5,8 @@ export default function FeaturedTag ({ hide, addClass }) {
   let classes = 'flex items-center px-8 py-2 bg-emerald-400 rounded-full text-white text-sm ';
   const allClasses = classes += addClass;
   if( hide ) {
-    return null;
   }
   return (
-// Temp comment
     <span className={ allClasses }>
       <img
         className='mr-6'

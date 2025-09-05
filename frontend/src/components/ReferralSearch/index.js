@@ -66,7 +66,6 @@ export default function ReferralSearch() {
     const newCurrentChosen = currentChosen.filter(job => job.id !== jobId);
     setCurrentChosen(newCurrentChosen);
     setFilteredChoices([ ...filteredChoices, choices.find(job => job.id === jobId) ]);
-  }
 
   // set up initial choices
   useEffect(() => {
@@ -74,6 +73,7 @@ export default function ReferralSearch() {
     setChoices(mockJobsData);
   }, []);
   
+  return (
     <div className='w-340'>
       <div className='flex mb-8'>
         { renderChosen(currentChosen, handleRemove) }

@@ -154,6 +154,7 @@ export class CandidateController {
         const _fields: Dictionary<boolean> = {}
         _fields['email'] = true;
         fields.forEach((field: string) => {
+          _fields[field] = true
         })
         const candidateOnlyPromise = db.candidate.findMany({
           where,
@@ -295,7 +296,6 @@ export class CandidateController {
             }
           }
         });
-        extendedCandidates = candidates.map((candidate: any) => {
           const user = users.find(user => user.email === candidate.email);
           if (user) {
             candidate.user = user;
@@ -309,3 +309,6 @@ export class CandidateController {
 
       const sortedCandidates = extendedCandidates.sort((a, b) => {
         const aFirstName = a.firstname || a.firstName;
+        const bFirstName = b.firstname || b.firstName;
+        if (aFirstName === bFirstName) { // if first names are the same, sort by last name
+          const aLastName = a.lastname || a.lastName;

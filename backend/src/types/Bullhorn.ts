@@ -247,3 +247,5 @@ export type Candidate = {
     recentClientList?: string;
     referredBy?: string;
     salary?: string;
+    salaryLow?: string;
+    secondarySkills?: string;

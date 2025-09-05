@@ -55,3 +55,4 @@ export const CompanyFilter: TypedDictionary<
 export const USER_FILTER: any = {
   firstname: "firstname",
   lastname: "lastname",
+  role: "role",

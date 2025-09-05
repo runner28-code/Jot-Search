@@ -65,7 +65,6 @@ const DesktopNavBarLayout = () => {
       {/* Nav Menu */}
       <div className='flex items-center font-spaceGrotesk'>
         <div className='mr-14'>
-          { renderNavSearch() }
         </div>
         {/* Dropdown Menu */}
         <DropdownMenu />
@@ -77,7 +76,6 @@ const DesktopNavBarLayout = () => {
 const DropdownMenu = () => {
   const [ isOpen, setIsOpen ] = useState(false);
   const [ firstRender, setFirstRender ] = useState(true);
-// Temp comment
   const navigate = useNavigate();
   const [listening, setListening] = useState(false);
   const { currentUser } = useCandidateContext()

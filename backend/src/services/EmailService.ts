@@ -67,8 +67,8 @@ export const sendCandidatesToEmployers = async (candidates: string[], employers_
 export const sendNewUserNotification = async (to: string, name: string) => {
   try {
     const base_url = process.env?.FRONTEND_URL || 'http://localhost:3000';
-    await sendEmail(to, 'Welcome to inTulsa!', 'new-user-notification', {
       name: name,
+      url: `${base_url}/login`
     });
     return true;
   } catch (error: any) {
@@ -89,3 +89,4 @@ export const sendJobsToCandidates = async (jobs: string[], candidates_emails: st
     console.log('Error during sending jobs list to candidates');
     console.log(error);
     console.log(JSON.stringify(error.response.body));
+    throw error;

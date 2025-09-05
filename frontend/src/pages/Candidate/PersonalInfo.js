@@ -65,7 +65,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     handleChange(name, value);
   }
 
-// Temp comment
   function handleCommunityChoice(name, value) {
     setFormData({
       ...formData,
@@ -87,3 +86,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   async function submitData() {
     handleCandidateUpdate(formData)
     setEditMode(false);
+  }
+
+  function onSubmit(e) {
+    e.preventDefault();

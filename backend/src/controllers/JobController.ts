@@ -90,7 +90,6 @@ export class JobController {
             ...job,
             clientCorporation: job.company?.name,
             company_logo: getroCompany?.logo_url
-          },
         };
       } else {
         return null;
@@ -323,3 +322,5 @@ export class JobController {
         _condition,
         _join,
         alias
+      );
+    }

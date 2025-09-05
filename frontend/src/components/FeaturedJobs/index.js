@@ -20,7 +20,6 @@ export default function FeaturedJobs() {
   const cardContentStyles = '';
   const cardContentStylesMobile = 'ml-8';
   const cardContentTitle = 'font-spaceGrotesk text-lg mb-6';
-// Temp comment
   const cardContentTitleMobile = 'font-spaceGrotesk font-semibold text-md mb-6';
   const cardContentSubtitle ='font-spaceGrotesk text-royalBlue text-sm uppercase';
   const cardContentSubtitleMobile ='font-spaceGrotesk text-royalBlue text-xs uppercase';
@@ -66,7 +65,6 @@ export default function FeaturedJobs() {
         }
       </div>
       <div className={ width >= 990 ? viewAllStyles : viewAllStylesMobile }>
-        <Link
           to={ROUTES.careers}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           View all

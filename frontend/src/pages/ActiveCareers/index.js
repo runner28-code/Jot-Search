@@ -11,6 +11,8 @@ import {
 } from '../../utils/filterObjects';
 import AuthService from '../../services/auth';
 
+// Temp comment
+const PLACE_HOLDER = 'Search active job title';
 const RESULT_CONTAINER_TYPE = 'active careers';
 const ITEMS_PER_PAGE = 5;
 

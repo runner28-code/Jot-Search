@@ -17,7 +17,6 @@ CREATE TABLE "User" (
     "workspace" TEXT,
     "aboutUs" TEXT,
     "referredBy" TEXT,
-    "roles" TEXT,
     "externalId" TEXT,
     "gender" TEXT,
     "address1" TEXT,

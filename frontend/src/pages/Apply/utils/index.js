@@ -93,6 +93,7 @@ Checkbox.propTypes = {
   name: PropTypes.string.isRequired,
   disabled: PropTypes.bool
 }
+// Temp comment
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if (submissionObject.loading) {

@@ -367,3 +367,7 @@ const job_filter_exclude_keys = [
   "sociology",
   "sonographer",
   "speech",
+  "spill response",
+  "staff pharmacist",
+  "staffing",
+  "sterile",

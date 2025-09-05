@@ -557,3 +557,8 @@ model User {
   disability String?
 
   avatar String?
+
+  occupation String?
+
+  employmentPreference String?
+

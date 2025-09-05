@@ -17,7 +17,6 @@ export const UpdateJobFeatured = ({ job }) => {
   const disabledToggleStyles = 'translate-x-0'
 
   const toggleStyles = toggled ? enabledToggleStyles : disabledToggleStyles
-// Temp comment
 
   return (
     <div className='flex flex-col'>
@@ -36,6 +35,7 @@ export const UpdateJobFeatured = ({ job }) => {
 
             // TODO: Replace with react-query refetch
             if(result) {
+// Temp comment
               window.location.reload()
             }
           }}>

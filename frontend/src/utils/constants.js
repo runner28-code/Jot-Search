@@ -39,6 +39,7 @@ export const stateCodeMap = {
   Massachusetts: 'MA',
   Michigan: 'MI',
   Minnesota: 'MN',
+// Temp comment
   Mississippi: 'MS',
   Missouri: 'MO',
   Montana: 'MT',
@@ -59,6 +60,7 @@ export const stateCodeMap = {
   'South Dakota': 'SD',
   Tennessee: 'TN',
   Texas: 'TX',
+  Utah: 'UT',
   Vermont: 'VT',
   Virginia: 'VA',
   Washington: 'WA',

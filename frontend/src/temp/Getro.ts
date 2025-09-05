@@ -54,8 +54,10 @@ export type Job = {
     status?: string;
     title?: string;
     url?: string;
+};
 
 export type User = {
     id: string;
     avatar_url?: string; // !
     bio?: string; // !
+    dribbble_url?: string;

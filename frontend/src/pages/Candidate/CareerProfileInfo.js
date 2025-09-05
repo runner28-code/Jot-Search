@@ -32,7 +32,6 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
 CareerProfileInfo.propTypes = {
   candidateData: PropTypes.object.isRequired,
   handleCandidateUpdate: PropTypes.func.isRequired,
-  role: PropTypes.string.isRequired
 }
 
 function renderEditIcon(candidateData, setEditMode) {
@@ -41,6 +40,7 @@ function renderEditIcon(candidateData, setEditMode) {
   }
   const isProfileOwner = candidateData.id === AuthService.getProfile().user_id;
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
+  if ( !isProfileOwner && !isCoordinator ) {
     return null;
   }
   const { width } = useWindowDimensions();

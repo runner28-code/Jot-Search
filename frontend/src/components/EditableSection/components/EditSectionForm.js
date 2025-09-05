@@ -31,6 +31,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
       handleChange={handleChange} />
   }
   if ( propertyName === 'resume' ) {
+    return <EditResumeForm
       handleChange={handleChange} />
   }
   return (

@@ -1,5 +1,4 @@
 import RegistrationForm from '../../components/RegistrationForm';
-// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // TODO: Terms of Service?
@@ -27,6 +26,7 @@ export default function SignUp() {
           </div>
         </div>
       </main>      
+// Temp comment
     )
   }
 

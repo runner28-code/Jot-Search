@@ -21,3 +21,4 @@ ReactDOM.render(
       <CandidateContext>
         <CareerContext>
           <CategoryContext>
+            <ScrollToTop />

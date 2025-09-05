@@ -33,6 +33,7 @@ const Common_1 = require("../types/Common");
 const Getro_1 = require("../types/Getro");
 const Job_2 = require("../types/Job");
 const utils_1 = require("../utils");
+const db_1 = __importDefault(require("../utils/db"));
 const FieldMatch_1 = require("../utils/FieldMatch");
 const MainCrud_1 = require("../utils/MainCrud");
 const BullhornService_1 = require("../services/BullhornService");
@@ -101,7 +102,6 @@ let JobController = class JobController {
                         category: true,
                     },
                     orderBy: {
-                        createdAt: "desc",
                     }
                 }); // TODO: assumes we are changing frontend to pass compatible fields and filters params
                 const totalPromise = db_1.default.job.count({

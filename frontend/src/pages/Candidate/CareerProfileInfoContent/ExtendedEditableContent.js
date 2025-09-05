@@ -18,6 +18,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   const [formData, setFormData] = useState({
     id: candidateData.id,
     avatar: candidateData.avatar || '',
+    firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     occupation: candidateData.occupation || '',
     companyName: candidateData.companyName || '',
@@ -27,7 +28,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     state: candidateData.state || '',
     zip: candidateData.zip || '',
     phone: candidateData.phone || '',
-    categoryId: candidateData.categoryId || null,
     expertise: categories.find(category => category.id === candidateData.categoryId)?.name || '',
     roles: Array.isArray(candidateData.roles) ? candidateData.roles : (candidateData?.roles?.split(', ') || []),
     description: candidateData.description || '',

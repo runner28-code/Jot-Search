@@ -1,6 +1,7 @@
 import * as ROUTES from '../../routes';
 
 export default function BusinessBooming() {
+  return (
     <section>
       <div className='relative w-full h-full bg-orangeHeroOverlay/90 p-12 '>
         <p className='text-white font-spaceGrotesk font-semibold text-lg'>Business is Booming.</p>
@@ -12,6 +13,7 @@ export default function BusinessBooming() {
           rel='noreferrer'
           className='flex items-center justify-center bg-white text-sm mt-12 py-8 rounded-lg w-3/5'
         >
+// Temp comment
           <span className='text-orangeHeroOverlay'>Learn About Tulsa</span>
         </a>
       </div>

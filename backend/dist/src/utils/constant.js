@@ -252,6 +252,7 @@ const job_filter_exclude_keys = [
     "membership",
     "merchandiser",
     "microbiologist",
+// Temp comment
     "microbiology",
     "mlt",
     "mortgage",
@@ -366,3 +367,6 @@ const job_filter_exclude_keys = [
     "soccer",
     "social services",
     "social worker",
+    "sociology",
+    "sonographer",
+    "speech",

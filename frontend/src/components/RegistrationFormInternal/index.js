@@ -53,6 +53,7 @@ export default function RegistrationFormInternal(loggedIn) {
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
   const [referralChoice, setReferralChoice] = useState(false);
+  const [commObj, setCommObj] = useState(defaultCommunity);
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
@@ -101,7 +102,6 @@ export default function RegistrationFormInternal(loggedIn) {
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
         // Set success to true if on add-user page, navigate user to login if not
-        if ( addType === 'coordinator' ) {
           return setSubmissionObject({
             loading: false,
             success: true,

@@ -53,6 +53,7 @@
                     "name": "DATASET_MAIN", 
                     "value": "inTulsa_Main"
                 },
+                {
                     "name": "AUTH_SECRET", 
                     "value": "{SECRET_AUTH_SECRET}"
                 },
@@ -72,3 +73,4 @@
                     "name": "BULLHORN_CLIENT_SECRET", 
                     "value": "{SECRET_BULLHORN_CLIENT_SECRET}"
                 },
+                {

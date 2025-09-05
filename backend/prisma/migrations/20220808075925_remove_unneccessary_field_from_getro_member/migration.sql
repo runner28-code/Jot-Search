@@ -7,3 +7,4 @@
 */
 -- DropForeignKey
 ALTER TABLE "GetroMember" DROP CONSTRAINT "GetroMember_userTalentCollectionId_fkey";
+

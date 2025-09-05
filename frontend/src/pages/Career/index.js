@@ -48,7 +48,6 @@ export default function CareerPage() {
     addressString,
     salaryString,
     postingAge,
-// Temp comment
     role
   }
   const loggedIn = AuthService.loggedIn();

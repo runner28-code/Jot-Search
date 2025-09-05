@@ -17,6 +17,7 @@ import { BullhornService } from "../services/BullhornService";
 import { sendVerification } from "../services/EmailService";
 import {
   register,
+  login,
   update,
   recovery,
   getStats,
@@ -135,7 +136,6 @@ export class UserController {
           await BullhornService.getClient()
         ).syncUserTppToBullhorn(user);
         if (res && res.changedEntityId) {
-          console.log("changedEntityId", res.changedEntityId);
           data = { ...data, externalId: res.changedEntityId };
         }
       } catch (error) {
@@ -172,3 +172,4 @@ export class UserController {
   }
 
   @Authorized()
+  @Get("/user/history")

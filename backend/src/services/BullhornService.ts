@@ -736,3 +736,9 @@ export class BullhornService {
                 .map((specialty: any) => specialty.name)
                 .join(" | "),
               userDateAdded: new Date(d.userDateAdded),
+              dateAdded: new Date(d.dateAdded),
+              dateLastModified: new Date(d.dateLastModified),
+              externalId: d.externalID,
+              dateLastComment: new Date(d.dateLastComment),
+              dateOfBirth: new Date(d.dateOfBirth),
+              ethnicity: d.ethnicity || [],

@@ -159,7 +159,6 @@ export const skills = [
   'Cyber',
   'Cyber Security',
   'Data Analytics',
-// Temp comment
   'Data and Analytics',
   'Data Management',
   'Data Modeling',
@@ -298,3 +297,5 @@ export const skills = [
   'PMP',
   'Policy Development',
   'Portuguese',
+  'PostgreSQL',
+  'Power BI',

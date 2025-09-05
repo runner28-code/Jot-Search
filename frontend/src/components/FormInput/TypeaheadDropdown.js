@@ -28,6 +28,7 @@ export default function TypeaheadDropdown(props) {
   const handleChoiceClick = useCallback((choice) => {
     if (!currentChosen.includes(choice)) {
       onChange(name, [...currentChosen, choice]);
+    } else {
       onChange(name, currentChosen.filter(item => item !== choice));
     }
   }, [onChange])
@@ -47,7 +48,6 @@ export default function TypeaheadDropdown(props) {
 
   function handleInputChange(event) {
     setInputValue(event.target.value);
-  }
 
   function handleListClick() {
     setDropdownOpen(dropdownOpen => !dropdownOpen);
