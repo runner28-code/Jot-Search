@@ -218,3 +218,4 @@ export class GetroService {
             };
         }
         try {
+            await this.checkAuth();

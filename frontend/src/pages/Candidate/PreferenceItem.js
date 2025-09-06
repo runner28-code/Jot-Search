@@ -7,6 +7,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
     <div className='flex flex-col mt-5'>
       <div className='flex space-x-16'>
         <SwitchButton
+          fieldName={fieldName}
           label={label}
           toggled={toggled}
           onToggle={onUpdate}

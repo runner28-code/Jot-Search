@@ -42,7 +42,6 @@ function renderChosen(currentChosen, handleRemove) {
       onClick={() => handleRemove(choice.id)}
     >
       {choice.company + ' - ' + choice.title}
-    </div>
   )
 }
 
@@ -66,6 +65,7 @@ export default function ReferralSearch() {
     const newCurrentChosen = currentChosen.filter(job => job.id !== jobId);
     setCurrentChosen(newCurrentChosen);
     setFilteredChoices([ ...filteredChoices, choices.find(job => job.id === jobId) ]);
+  }
 
   // set up initial choices
   useEffect(() => {

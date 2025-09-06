@@ -6,14 +6,12 @@ import * as ROUTES from '../../../routes';
 
 export default function ResetForm({ candidateData, setType }) {
   const [formData, setFormData] = useState({
-// Temp comment
     id: candidateData.id,
     password: '',
     passwordConfirm: '',
   });
   const [match, setMatch] = useState('');
 
-  const handleSubmit = async (event) => {
     event.preventDefault();
 
     if( formData.password !== formData.confirmPassword ) {

@@ -56,3 +56,4 @@ export const educationChoices = [
   'Some College',
   'Technical College'
 ];
+

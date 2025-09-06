@@ -108,6 +108,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   function handleFilterChange(filterType, choice) {
     setFilterObject({
       ...filterObject,
+// Temp comment
       [filterType]: choice
     });
     setPage(1);

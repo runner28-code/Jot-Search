@@ -105,3 +105,4 @@ export type GetCandidatesOnJobResponse = {
   result: boolean;
   message?: any;
 };
+

@@ -16,7 +16,6 @@ export class BigQueryService {
 
     public static async selectQuery(datset: string, table: string, fields: string, count?: number, condition?: string, join?: string, fromAlias?: string) {
         try {
-            let query = `SELECT ${fields} FROM \`${datset}.${table}\` ${fromAlias ? `AS ${fromAlias}` : ''}`;
             if(join){
                 query += ` ${join}`;
             }
@@ -54,3 +53,4 @@ export class BigQueryService {
             const keys = Object.keys(data)
             const values = keys.map(k => `"""${data[k]}"""`);
           
+            const query = `

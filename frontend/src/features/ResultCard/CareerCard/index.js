@@ -23,6 +23,7 @@ export default function CareerCard({ data, active }) {
   const { width } = useWindowDimensions();
 
   const dataObj = {
+// Temp comment
     data,
     categoryString,
     addressString,
@@ -108,6 +109,7 @@ function DesktopCard({ dataObj, active }) {
             <img
               src={locationIcon}
               className='h-11 mr-5' />
+            <p className='text-textBlack'>{addressString}</p>
           </div>
           {/* Remote/Onsite/Hybrid */}
           <div className='w-1/3 flex items-center pr-4'>

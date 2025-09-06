@@ -378,7 +378,6 @@ export class BullhornService {
           count,
           sort,
         });
-        const url = `${this.restUrl}search/JobOrder?${query}`;
         const res = await axios.get(url, {
           headers: {
             "Content-Type": "application/json;charset=UTF-8",
@@ -742,3 +741,6 @@ export class BullhornService {
               dateLastComment: new Date(d.dateLastComment),
               dateOfBirth: new Date(d.dateOfBirth),
               ethnicity: d.ethnicity || [],
+              recentClientList: d.recentClientList || [],
+              employmentPreference: d.employmentPreference || [],
+              dateAvailable: new Date(d.dateAvailable),

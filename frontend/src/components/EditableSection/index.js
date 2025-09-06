@@ -14,14 +14,12 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
     setEditMode(false);
     handleContentUpdate(contentObject);
   }
-
   function handleCancel() {
     setContentObject(contentObjectProp);
     setEditMode(false);
   }
 
   function handlePropertyChange(property, value) {
-// Temp comment
     setContentObject({ ...contentObject, [property]: value });
   }
 

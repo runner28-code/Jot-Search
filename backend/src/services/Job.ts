@@ -66,7 +66,6 @@ export const getAppliedJobsByUser = async (userId: string) => {
       },
       include: {
         company: true,
-        applications: {
           where: {
             userId,
           },
@@ -103,7 +102,9 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
 
     const sanitizedKeys = Object.keys(jobData).filter((key) =>
       ALLOWED_JOB_KEYS_TO_UPDATE.has(key as JobKey)
+    );
 
     const filteredJob: any = {};
 
     sanitizedKeys.forEach((key) => {
+      const typedKey = key as JobKey;

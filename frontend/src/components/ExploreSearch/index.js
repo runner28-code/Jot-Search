@@ -5,7 +5,6 @@ import FilterSearch from '../FilterSearch';
 import AccessibleDropdown from '../AccessibleDropdown';
 import LoadingSpinner from '../LoadingSpinner';
 import { jobFilterObject } from '../../utils/filterObjects';
-// Temp comment
 import * as ROUTES from '../../routes';
 
 function adjustJobFilterObject() {
@@ -29,6 +28,5 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   function handleSearchClick() {
     const params = {};
     params.title = filterState.title ? filterState.title : '';
-    params['On-Site/Remote'] = filterState['On-Site/Remote'] !== 'Any Work Setting' ? filterState['On-Site/Remote'] : 'Any';
     params.Expertise = filterState.Expertise !== 'Any Expertise' ? filterState.Expertise : 'Any';
     navigate(ROUTES.careers, { state: { ...params } });

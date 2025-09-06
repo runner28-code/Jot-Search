@@ -127,7 +127,6 @@ const job_filter_exclude_keys = [
     "economy",
     "edit",
     "editor",
-    "educate",
     "education",
     "educator",
     "electrician",
@@ -252,7 +251,6 @@ const job_filter_exclude_keys = [
     "membership",
     "merchandiser",
     "microbiologist",
-// Temp comment
     "microbiology",
     "mlt",
     "mortgage",
@@ -370,3 +368,4 @@ const job_filter_exclude_keys = [
     "sociology",
     "sonographer",
     "speech",
+    "spill response",

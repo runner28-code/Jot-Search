@@ -5,7 +5,6 @@ import ResultsHeader from '../../components/ResultsHeader';
 import TabContainer from '../../components/TabContainer';
 import CandidateFilterLayout from './CandidateFilterLayout';
 import CompanyFilterLayout from './CompanyFilterLayout';
-// Temp comment
 import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
@@ -71,6 +70,7 @@ export default function AdvancedSearch({ disabledTabs }) {
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
+// Temp comment
       return { filtersArr: searchFilters };
 
     } else if (tab === 'careers') {

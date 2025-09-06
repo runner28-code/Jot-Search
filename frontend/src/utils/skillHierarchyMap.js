@@ -67,6 +67,7 @@ export const roles = {
   ],
 };
 
+// Temp comment
 export const skills = [
   '.NET',
   'Account Management',
@@ -299,3 +300,4 @@ export const skills = [
   'Portuguese',
   'PostgreSQL',
   'Power BI',
+  'PowerPoint',

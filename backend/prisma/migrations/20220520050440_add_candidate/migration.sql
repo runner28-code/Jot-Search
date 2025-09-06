@@ -75,3 +75,4 @@ CREATE TABLE "Candidate" (
     "skillSet" TEXT,
     "smsOptIn" TEXT,
     "source" TEXT,
+    "specialities" TEXT,

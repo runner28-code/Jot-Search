@@ -8,7 +8,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 
 
 // Icons
-// Temp comment
 import PlacePin from '../../assets/icons/placepin.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding } from 'react-icons/bs';
@@ -56,6 +55,7 @@ function HeaderContent({ companyData }) {
         <FavoriteButton
           type={'company'}
           data={companyData} />
+// Temp comment
       </div>
     </>
   )

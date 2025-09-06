@@ -45,6 +45,7 @@ export default function Apply() {
   const [useExistingResume, setUseExistingResume] = useState(false);
   const [referralChoice, setReferralChoice] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
+// Temp comment
     loading: false,
     success: false,
     error: false,
@@ -68,7 +69,6 @@ export default function Apply() {
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';
       } else {
-// Temp comment
         candidateData.workAuthorized = 'No';
       }
       // Turn API IDs into appropriate values

@@ -21,7 +21,6 @@ exports.IUSER = {
     skills: "",
     category: "",
     seniority: "",
-// Temp comment
     workspace: "",
     referredBy: "",
     roles: "",
@@ -36,3 +35,4 @@ exports.IUSER = {
     companyURL: "",
     numEmployees: "",
     revenue: "",
+    dateFounded: "",

@@ -1,6 +1,7 @@
 import {
   Body,
   Get,
+  Post,
   Put,
   QueryParam,
   JsonController,
@@ -271,3 +272,4 @@ export class CompanyController {
   getConditionsFromFilters = (
     filters: FilterOption[] | undefined,
     filterableKey: CompanyFilterKey,
+    operator: Operator = "OR"

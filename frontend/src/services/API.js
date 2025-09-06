@@ -92,6 +92,7 @@ export async function saveCandidate(userId, candidateId) {
     'candidate': candidateId,
   });
 
+// Temp comment
   if (data.messsage === 'saved candidate') {
     AuthService.toggleSavedCandidate(candidateId, 'save');
   } else {
@@ -208,6 +209,7 @@ export async function getJobs(filters, count, operator, page) {
   return (await getJobsFull(filters, count, operator, page)).jobs;
 }
 
+export async function getJobsFull(filters, count, operator, page) {
   const filtersObj = filtersArrToObj(filters)
 
   if (filtersObj.expertise) {
@@ -303,3 +305,13 @@ export async function toggleHideJob(id, unhide) {
     hidden
   });
   return normalizeData(data.result);
+}
+
+//* CATEGORIES
+export async function getCategoryById(id) {
+  const { data } = await API.get(ROUTES.APIcategories, {
+    params: {
+      id
+    }
+  });
+  return normalizeData(data.category);

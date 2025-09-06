@@ -36,7 +36,6 @@ function NavBarLayout() {
             className='my-8 w-3/4'
             src={inTulsaLogoText}
             alt='logo'
-          />
         </Link>
         {/* Nav Menu */}
         <div className='flex items-center font-spaceGrotesk'>
@@ -65,6 +64,7 @@ const DesktopNavBarLayout = () => {
       {/* Nav Menu */}
       <div className='flex items-center font-spaceGrotesk'>
         <div className='mr-14'>
+          { renderNavSearch() }
         </div>
         {/* Dropdown Menu */}
         <DropdownMenu />

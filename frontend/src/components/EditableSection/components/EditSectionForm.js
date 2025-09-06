@@ -33,6 +33,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   if ( propertyName === 'resume' ) {
     return <EditResumeForm
       handleChange={handleChange} />
+// Temp comment
   }
   return (
     <div className='flex flex-col justify-items-between w-140'>

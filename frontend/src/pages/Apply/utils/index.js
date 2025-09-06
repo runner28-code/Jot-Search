@@ -85,6 +85,7 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
     </label>
   )
 }
+// Temp comment
 
 Checkbox.propTypes = {
   attribute: PropTypes.string.isRequired,
@@ -93,7 +94,6 @@ Checkbox.propTypes = {
   name: PropTypes.string.isRequired,
   disabled: PropTypes.bool
 }
-// Temp comment
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if (submissionObject.loading) {

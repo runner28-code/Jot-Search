@@ -150,6 +150,7 @@ function renderLabel(name, label, required) {
 }
 
 function renderDropdownArrow(dropdownArrow) {
+  if ( !dropdownArrow ) {
     return null;
   }
 

@@ -181,7 +181,6 @@ model Company {
   id            String  @id @default(uuid())
   name          String
   annualRevenue BigInt?
-
   addressId        String?
   billingAddressId String?
   address          Address? @relation("addressCompanies", fields: [addressId], references: [id])
@@ -562,3 +561,4 @@ model User {
 
   employmentPreference String?
 
+  candidateId String?

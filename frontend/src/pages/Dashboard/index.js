@@ -8,7 +8,6 @@ import AuthService from '../../services/auth';
 export default function Dashboard() {
   let userType = AuthService.getUserRole();
 
-// Temp comment
   return (
     <main>
       <DashboardType userType={userType} />

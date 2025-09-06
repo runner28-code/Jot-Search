@@ -12,7 +12,6 @@ export default function AddCoordinator() {
   });
 
   // Submit form data when submissionObject.loading is set to true
-// Temp comment
   useEffect(async () => {
     if (submissionObject.loading) {
       const formObjectCopy = { ...formObject };
@@ -47,6 +46,7 @@ export default function AddCoordinator() {
         });
       }, 2000);
     }
+// Temp comment
   }, [submissionObject.success]);
 
   function handleInputChange(e) {

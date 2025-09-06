@@ -57,7 +57,6 @@ export default function Candidate() {
       if (updateObject[key] !== candidateData[key]) {
         formattedUpdateObject[key] = updateObject[key];
       }
-    });
 
     const updatedDisplayObject = candidateData.sourceTable === 'Candidate' ? {
       ...updateObject,
@@ -85,7 +84,6 @@ export default function Candidate() {
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 
   if (loading) { return <LoadingSpinner /> }
-// Temp comment
   return (
     <div className='flex flex-col space-y-16'>
       {/* "My Profile"/"Candidate Profile" Header */}

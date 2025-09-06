@@ -16,7 +16,6 @@ export const saveCandidate = async (
           },
         },
       },
-    });
 
     if (!existing) {
       await db.user.update({
@@ -55,6 +54,7 @@ export const saveCandidate = async (
   }
 };
 
+export const getSavedCandidates = async (companyUserId: string) => {
   try {
     const user = await db.user.findFirst({
       where: {

@@ -371,3 +371,4 @@ const job_filter_exclude_keys = [
   "staff pharmacist",
   "staffing",
   "sterile",
+  "stock",

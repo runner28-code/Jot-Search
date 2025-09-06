@@ -102,6 +102,7 @@ export default function RegistrationFormInternal(loggedIn) {
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
         // Set success to true if on add-user page, navigate user to login if not
+        if ( addType === 'coordinator' ) {
           return setSubmissionObject({
             loading: false,
             success: true,
@@ -135,7 +136,6 @@ export default function RegistrationFormInternal(loggedIn) {
   async function handleSubmit(event) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
-    setErrorBlock('');
     setErrors([]);
     setFormObj({
       ...formObj,

@@ -62,7 +62,6 @@ input[type=checkbox] {
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
     letter-spacing: normal;
   }
   .Mobile-HeadersMobile-heading-large {
@@ -152,3 +151,4 @@ input[type=checkbox] {
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
+    line-height: 1.6;

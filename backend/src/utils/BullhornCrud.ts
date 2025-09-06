@@ -235,3 +235,5 @@ export const saveCandidates = async (candidates: any[]) => {
     return { result: false, error };
   }
 };
+
+export const saveLeads = async (leads: any[]) => {

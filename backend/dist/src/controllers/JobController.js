@@ -102,6 +102,7 @@ let JobController = class JobController {
                         category: true,
                     },
                     orderBy: {
+                        createdAt: "desc",
                     }
                 }); // TODO: assumes we are changing frontend to pass compatible fields and filters params
                 const totalPromise = db_1.default.job.count({
@@ -191,7 +192,6 @@ let JobController = class JobController {
                     key: FieldMatch_1.JobFilter.bullhorn[filter.key],
                     value: filter.value,
                 }));
-                const _condition = (0, utils_1.getFilterConditions)(_filters, operator, _specialHandlers);
                 const alias = "jobs";
                 const companyAlias = "company";
                 const _fields = (fields === null || fields === void 0 ? void 0 : fields.length)

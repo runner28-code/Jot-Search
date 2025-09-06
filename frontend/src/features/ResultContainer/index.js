@@ -14,7 +14,6 @@ export default function ResultContainer(props) {
     loading,
     type,
     limit,
-    header, 
     active,
     compact = false,
     isFavoriteOverride = null,
@@ -27,7 +26,6 @@ export default function ResultContainer(props) {
   const resultsContainerStyles = containerClass || 'flex flex-col items-center justify-center ';
 
   function renderHeader() {
-// Temp comment
     if ( !header ) {
       return null;
     }

@@ -12,7 +12,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
   const filtersArr = [
     {
       key: 'status',
-// Temp comment
       value: ['Active', 'Open']
     },
     {

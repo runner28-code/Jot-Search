@@ -75,4 +75,5 @@ export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "status",
   "title",
   "url",
+  "hidden",
 ]);

@@ -62,3 +62,4 @@ export default function DashboardPublicMin({type}) {
         </div>
       </div>
     </div>
+  )
