@@ -92,7 +92,6 @@ export async function saveCandidate(userId, candidateId) {
     'candidate': candidateId,
   });
 
-// Temp comment
   if (data.messsage === 'saved candidate') {
     AuthService.toggleSavedCandidate(candidateId, 'save');
   } else {
@@ -189,6 +188,7 @@ export async function getSavedCompanies(id, count = null, page = null) {
       count,
       page,
       ...params
+// Temp comment
     }
   });
   return normalizeData(data.companies);

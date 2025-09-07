@@ -27,6 +27,7 @@ const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'careers', 'companies'],
+// Temp comment
   company: ['careers', 'candidates' ],
   candidate: ['careers', 'companies'],
   guest: ['careers', 'companies'],
@@ -70,7 +71,6 @@ export default function AdvancedSearch({ disabledTabs }) {
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
-// Temp comment
       return { filtersArr: searchFilters };
 
     } else if (tab === 'careers') {

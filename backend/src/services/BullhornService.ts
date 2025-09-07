@@ -378,6 +378,7 @@ export class BullhornService {
           count,
           sort,
         });
+        const url = `${this.restUrl}search/JobOrder?${query}`;
         const res = await axios.get(url, {
           headers: {
             "Content-Type": "application/json;charset=UTF-8",
@@ -680,7 +681,6 @@ export class BullhornService {
             "stateExemptions",
             "stateFilingStatus",
             "status",
-            "taxID",
             "taxState",
             "timeZoneOffsetEST",
             "tobaccoUser",

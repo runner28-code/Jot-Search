@@ -384,7 +384,6 @@ function NavFooterMobile() {
           Finance Job Openings
         </a>
         <a
-          href="/careers"
           className={linkStyle}
         >
           Tulsa Jobs
@@ -425,7 +424,6 @@ function Address() {
       href={ROUTES.gMapsIntulsa}
       className={addressLinkStyle}
     >
-// Temp comment
       <p>36 E Cameron St, Tulsa,</p>
       <p>OK, 74103, USA</p>
     </a>

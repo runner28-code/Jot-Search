@@ -5,6 +5,7 @@ import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
 import SourceIdentifier from '../SourceIdentifier';
 import BackButton from '../BackButton';
 
+export default function DetailsHeader({ type, source }) {
   let Icon = undefined;
   switch(type) {
     case 'candidate':

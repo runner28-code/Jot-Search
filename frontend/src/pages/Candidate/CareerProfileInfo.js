@@ -64,5 +64,6 @@ function renderEditIcon(candidateData, setEditMode) {
         className='h-[3rem] w-[3rem] ml-4 stroke-royalBlue cursor-pointer'
       />
       <span>Edit</span>
+// Temp comment
     </button>
   )

@@ -80,7 +80,6 @@ export default function Stats({ userType }) {
           return <StatCard
             stat={stat}
             value={value}
-            key={stat} />;
         })}
       </div>
     </div>
@@ -107,6 +106,7 @@ function StatCard({ stat, value }) {
     numberStyles += ' text-error';
   }
   return (
+    <div
       key={stat}
       className='flex flex-[1_1_31%] flex-col justify-between mr-5 mb-5 bg-white rounded-xl pl-4 vw-400:pl-8 pb-4 pt-8'
     >

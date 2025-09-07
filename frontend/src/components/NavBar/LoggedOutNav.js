@@ -14,7 +14,6 @@ export default function NavBar() {
   const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {
-// Temp comment
     return <MobileNavBarLayout />
   } else {
     return <DesktopNavBarLayout />
@@ -35,6 +34,7 @@ function MobileNavBarLayout() {
         </Link>
         {/* Nav Menu */}
         <div className='flex items-center'>
+// Temp comment
           { width >= 990 ? <NavSearch /> : <NavSearchMobile />}
           <NavMenu />
         </div>

@@ -15,7 +15,6 @@ export default function FormInput(props) {
     type,
     dropdownType,
     name,
-    label,
     placeholder,
     value,
     required,
@@ -37,6 +36,7 @@ export default function FormInput(props) {
     listStyles: dropdownStyles,
     listItemStyles: dropdownItemStyles
   };
+  switch (type) {
     case 'file':
       return <FileInput
         type={type}

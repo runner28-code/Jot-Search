@@ -45,7 +45,6 @@ export default function Apply() {
   const [useExistingResume, setUseExistingResume] = useState(false);
   const [referralChoice, setReferralChoice] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
-// Temp comment
     loading: false,
     success: false,
     error: false,
@@ -147,6 +146,7 @@ export default function Apply() {
   function handleInputChange(e) {
     const { name, value } = e.target;
     setApplicationObject({ ...applicationObject, [name]: value });
+// Temp comment
   }
 
   function handleChange(name, value) {

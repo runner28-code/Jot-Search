@@ -117,3 +117,4 @@ function itemRenderer({ option, onClick, disabled }) {
         </div>
       </div>
     </div>
+  )

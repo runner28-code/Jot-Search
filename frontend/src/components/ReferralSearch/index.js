@@ -42,6 +42,7 @@ function renderChosen(currentChosen, handleRemove) {
       onClick={() => handleRemove(choice.id)}
     >
       {choice.company + ' - ' + choice.title}
+    </div>
   )
 }
 
@@ -83,6 +84,7 @@ export default function ReferralSearch() {
         dropdownType='list-select'
         name='referrals'
         placeholder='Select a job to refer...' 
+// Temp comment
         currentChosen={currentChosen}
         onChange={handleAdd}
         choices={filteredChoices}

@@ -40,7 +40,6 @@ function App() {
               path={ROUTES.careers}
               element={<Careers />} />
             <Route
-              path={ROUTES.companies}
               element={<Companies />} />
             <Route
               path={`${ROUTES.careers}/:id`}

@@ -55,7 +55,6 @@ function HeaderContent({ companyData }) {
         <FavoriteButton
           type={'company'}
           data={companyData} />
-// Temp comment
       </div>
     </>
   )
@@ -89,7 +88,6 @@ export default function HeaderMobile({ companyData }) {
 }
 
 HeaderMobile.propTypes = {
-  companyData: PropTypes.object.isRequired,
   handleCompanyUpdate: PropTypes.func.isRequired
 }
 

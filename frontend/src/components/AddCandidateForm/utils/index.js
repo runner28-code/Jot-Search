@@ -37,4 +37,3 @@ export function renderHeader(addType) {
     return (
       <h2 className='text-h4 vw-768:text-h2 text-royalBlue font-bold mb-16 text-center'>{ 'Let\'s create your account' }</h2>
     )
-  }

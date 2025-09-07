@@ -75,7 +75,6 @@ export default function ExpertiseLinksMobile() {
         <Link
           to={ROUTES.careers}
           className={linkStyles}
-// Temp comment
           state={{ Expertise: 'Finance' }}
         >
           <img

@@ -37,12 +37,10 @@ export default function TypeaheadDropdown(props) {
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
     if (!dropdownOpen) setInputValue('');
-  }, [dropdownOpen]);
   
   /* Filter choices based on input */
   useEffect(() => {
     if (dropdownType === 'tags') {
-// Temp comment
       setFilteredChoices(choices.filter(choice => choice.toLowerCase().includes(inputValue.toLowerCase())));
     }
   }, [inputValue]);

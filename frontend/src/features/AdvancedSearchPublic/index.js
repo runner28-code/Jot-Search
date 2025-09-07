@@ -47,6 +47,7 @@ function useTabState(disabledTabs, userType, pathname) {
 }
 
 export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
+// Temp comment
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
@@ -108,7 +109,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   function handleFilterChange(filterType, choice) {
     setFilterObject({
       ...filterObject,
-// Temp comment
       [filterType]: choice
     });
     setPage(1);

@@ -10,7 +10,6 @@ export default function Filters(props) {
     searchLabel,
     searchTerm,
     setSearchTerm,
-    handleSearchClick,
     marginBottom
   } = props;
 
@@ -71,7 +70,6 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
         choices={choices}
         chosen={chosen}
         handleFilterChange={handleFilterChange}
-// Temp comment
       />
     )
   })
