@@ -2,6 +2,7 @@
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.DataSource = exports.DATASET_MAIN = exports.DATASET_GETRO = exports.DATASET_BULLHORN = exports.Tables = void 0;
 const config_1 = __importDefault(require("../config"));
 var Tables;
@@ -18,6 +19,7 @@ var Tables;
     Tables["SAVED_CANDIDATES"] = "SavedCandidates";
     Tables["JOINED_COMPANIES"] = "companies_joined";
     Tables["JOINED_CANDIDATES"] = "candidates_joined";
+// Temp comment
     Tables["CATEGORIES"] = "Categories";
 })(Tables = exports.Tables || (exports.Tables = {}));
 exports.DATASET_BULLHORN = config_1.default.bullhornDatasetID || "";

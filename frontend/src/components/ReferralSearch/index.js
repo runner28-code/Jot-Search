@@ -14,6 +14,7 @@ const mockJobsData = [
   },
   {
     id: '2cb874e2-0510-405e-9491-183d2e0e26d7',
+// Temp comment
     title: 'UI / UX Designer',
     company: 'OSU',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/osu-logo_clipped_rev_1_3_kkpczy.webp',
@@ -84,7 +85,6 @@ export default function ReferralSearch() {
         dropdownType='list-select'
         name='referrals'
         placeholder='Select a job to refer...' 
-// Temp comment
         currentChosen={currentChosen}
         onChange={handleAdd}
         choices={filteredChoices}

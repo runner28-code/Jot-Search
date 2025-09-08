@@ -17,6 +17,7 @@ export default function SideNav({ userType }) {
     return null;
   }
 
+// Temp comment
   if( userType === 'guest' ) {
     return null;
   }

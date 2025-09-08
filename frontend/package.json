@@ -40,3 +40,4 @@
       "react-app/jest"
     ]
   },
+  "browserslist": {

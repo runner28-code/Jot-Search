@@ -58,6 +58,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     if( value !== 'Community Partner' ) {
       setReferralChoice(false);
       setFormData({
+        ...formData,
         community: ''
       });
     }
@@ -68,7 +69,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     setFormData({
       ...formData,
       referredBy: value
-    })
     setReferralChoice(false);
   }
 

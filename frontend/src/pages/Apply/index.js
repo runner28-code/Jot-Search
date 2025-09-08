@@ -66,6 +66,7 @@ export default function Apply() {
         getCandidateById(user_id),
       ]);
       if ( candidateData.workAuthorized === true ) {
+// Temp comment
         candidateData.workAuthorized = 'Yes';
       } else {
         candidateData.workAuthorized = 'No';
@@ -146,7 +147,6 @@ export default function Apply() {
   function handleInputChange(e) {
     const { name, value } = e.target;
     setApplicationObject({ ...applicationObject, [name]: value });
-// Temp comment
   }
 
   function handleChange(name, value) {

@@ -33,7 +33,6 @@ export const roles = {
     'Executive Assistant',
     'Recruiting',
     'People Operations',
-    'Human Resources',
     'IT',
     'Entrepreneurship'
   ],

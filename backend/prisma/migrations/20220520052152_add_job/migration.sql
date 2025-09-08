@@ -11,6 +11,7 @@ CREATE TABLE "Job" (
     "country_id" TEXT,
     "employmentType" TEXT,
     "title" TEXT,
+    "willRelocate" TEXT,
     "yearsRequired" TEXT,
     "status" TEXT,
     "skillList" TEXT,

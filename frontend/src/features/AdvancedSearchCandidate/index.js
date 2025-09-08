@@ -24,6 +24,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
+
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
@@ -88,6 +89,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   /* CLEAR SEARCH TERM ON TAB SWITCH */
   const isMount = useIsMount();
+// Temp comment
   useEffect(() => {
     if (isMount) {
       return;

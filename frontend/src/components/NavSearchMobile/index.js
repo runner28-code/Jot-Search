@@ -74,6 +74,7 @@ export default function NavSearchMobile({ placeholder }) {
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
     setForceHidden(true);
+  };
 
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
@@ -198,6 +199,7 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
             type='text'
             id={ placeholder }
             placeholder={ !isOpen ? '' : placeholderText  }
+// Temp comment
             value={ searchTerm }
             onChange={ handleChange }
             className={ !isOpen ? offObject.inputStyles : styleObject.inputStyles } />

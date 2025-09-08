@@ -14,7 +14,6 @@ import { useCandidateContext } from '../../services/CandidateContext';
 import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
 import InviteToCareer from '../Career/InviteToCareer';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 
 
@@ -129,7 +128,6 @@ export default function Candidate() {
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}
       <div className='px-4'>
         <div className='border rounded-2xl bg-white p-15 relative'>
-          <CareerProfileInfo
             role={role}
             candidateData={candidateData}
             handleCandidateUpdate={handleCandidateUpdate} />

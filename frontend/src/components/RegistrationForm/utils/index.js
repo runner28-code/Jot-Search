@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../LoadingSpinner';
-// Temp comment
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import * as ROUTES from '../../../routes';
 
@@ -50,7 +49,6 @@ export function renderHeader(addType) {
             Already have an account?
           </span>
           <Link
-            to={ROUTES.login}
             className='text-sm text-royalBlue leading-loose underline mx-4'
           >
             Log in here.

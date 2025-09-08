@@ -80,6 +80,7 @@ export default function Stats({ userType }) {
           return <StatCard
             stat={stat}
             value={value}
+            key={stat} />;
         })}
       </div>
     </div>

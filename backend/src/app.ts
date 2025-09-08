@@ -25,7 +25,6 @@ try {
   signatureVersion: "v4",
 })
 } catch (error) {
-  console.error(error)
 }
 
 const uploadToS3 = async(req: any, res: any) => {

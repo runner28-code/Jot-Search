@@ -139,6 +139,7 @@ function RenderInvite(loggedIn, companyData) {
       <InviteCandidates company={companyData} />
     </>)
   }
+// Temp comment
   return null
 }
 RenderInvite.propTypes = {

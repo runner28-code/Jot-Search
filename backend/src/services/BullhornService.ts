@@ -681,6 +681,7 @@ export class BullhornService {
             "stateExemptions",
             "stateFilingStatus",
             "status",
+            "taxID",
             "taxState",
             "timeZoneOffsetEST",
             "tobaccoUser",

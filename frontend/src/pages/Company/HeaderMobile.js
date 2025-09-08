@@ -88,6 +88,7 @@ export default function HeaderMobile({ companyData }) {
 }
 
 HeaderMobile.propTypes = {
+  companyData: PropTypes.object.isRequired,
   handleCompanyUpdate: PropTypes.func.isRequired
 }
 
@@ -112,6 +113,7 @@ function renderCompanyLogo(logoUrl, name) {
         alt={`${name} logo`}
       />
     </div>
+// Temp comment
   )
 }
 

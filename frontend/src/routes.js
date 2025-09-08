@@ -60,7 +60,6 @@ export const APIupload = '/api/upload';
 export const APIaccountRecovery = '/account-recovery';
 export const APIResetPassword = '/reset-password';
 // Candidates
-// Temp comment
 const APIcandidateBase = '/api/candidate';
 export const APIcandidates = APIcandidateBase + '/search';
 export const APIcandidateUpdate = APIcandidateBase + '/update';
@@ -68,6 +67,7 @@ export const APIuserUpdate = '/user/update';
 export const APItoggleSaveCandidate = APIcandidateBase + '/save';
 export const APIsavedCandidates = APIcandidateBase + '/saved';
 export const APIsendJobsToCandidates = APIcandidateBase + '/sendJobs';
+// Temp comment
 // Companies
 const APIcompanyBase = '/api/company';
 export const APIcompanies = APIcompanyBase + '/search';

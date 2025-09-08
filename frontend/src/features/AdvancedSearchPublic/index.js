@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import ResultContainer from '../../features/ResultContainer';
 import TabContainer from '../../components/TabContainer';
 import CandidateFilterLayout from './CandidateFilterLayout';
+// Temp comment
 import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
@@ -47,7 +48,6 @@ function useTabState(disabledTabs, userType, pathname) {
 }
 
 export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
-// Temp comment
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);

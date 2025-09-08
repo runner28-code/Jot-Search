@@ -21,6 +21,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
       </div>
     </div>
   )
+}
 
 PreferenceItem.propTypes = {
   toggled: PropTypes.bool.isRequired,

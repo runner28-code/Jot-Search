@@ -11,7 +11,6 @@ export const saveCandidate = async (
           id: companyUserId,
           savedCandidates: {
             some: {
-              id: candidateId,
             },
           },
         },

@@ -185,7 +185,6 @@ function FillerIcon () {
   } else {
     return null;
   }
-// Temp comment
 }
 
 function renderAddress( city, state ) {
