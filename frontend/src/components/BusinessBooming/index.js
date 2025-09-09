@@ -6,7 +6,6 @@ export default function BusinessBooming() {
       <div className='relative w-240 max-w-240 h-full bg-orangeHeroOverlay/90 pl-40 pr-30 pt-56 '>
         <p className='text-white font-spaceGrotesk font-semibold text-[7.2rem] leading-tight'>Business is Booming.</p>
         <p className='text-white font-spaceGrotesk font-semibold text-[7.2rem] leading-tight'>Tulsa is Booming.</p>
-// Temp comment
         <p className='text-white text-ml leading-loose mt-16'>One of the fastest-growing innovation hubs in the country, Tulsa has the industry and culture to support a booming metropolis while maintaining small-town charm and a low cost of living.</p>
         <a
           href={ROUTES.lifeInTulsa}

@@ -21,7 +21,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       {buttonString}
     </button>
   )
-}
 
 export function renderErrorBlock(errorBlock) {
 
@@ -49,6 +48,7 @@ export function renderHeader(addType) {
             Already have an account?
           </span>
           <Link
+            to={ROUTES.login}
             className='text-sm text-royalBlue leading-loose underline mx-4'
           >
             Log in here.

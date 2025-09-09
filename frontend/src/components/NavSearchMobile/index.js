@@ -199,7 +199,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
             type='text'
             id={ placeholder }
             placeholder={ !isOpen ? '' : placeholderText  }
-// Temp comment
             value={ searchTerm }
             onChange={ handleChange }
             className={ !isOpen ? offObject.inputStyles : styleObject.inputStyles } />

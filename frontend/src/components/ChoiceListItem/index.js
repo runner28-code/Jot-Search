@@ -21,7 +21,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
   return (
     <div 
       key={itemKey}
-// Temp comment
       className={containerStyles}
       onClick={handleItemClick}
     >

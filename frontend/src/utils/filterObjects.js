@@ -151,6 +151,7 @@ export function buildSearchFiltersObj(filterObject) {
       if ( key === 'remote' ) {
         filterKey = 'onSite';
       }
+      if ( key === 'Expertise' ) {
         filterObject[key] = findCategoryIdByValue(filterObject[key]);
       }
       searchFilters[filterKey] = filterObject[key];

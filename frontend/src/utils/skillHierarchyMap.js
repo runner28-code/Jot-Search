@@ -33,6 +33,7 @@ export const roles = {
     'Executive Assistant',
     'Recruiting',
     'People Operations',
+    'Human Resources',
     'IT',
     'Entrepreneurship'
   ],
@@ -252,7 +253,6 @@ export const skills = [
   'Legal Advice',
   'Legal and Labor Relations',
   'Linux',
-  'Litigation',
   'Logistics',
   'Machine Learning',
   'Management Consulting',

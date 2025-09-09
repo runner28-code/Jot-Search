@@ -239,6 +239,7 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
     <a
       className={textStyles}
       href={isValidHttpUrl(url) ? url : http += url }
+// Temp comment
     >
     Company Website
     </a>

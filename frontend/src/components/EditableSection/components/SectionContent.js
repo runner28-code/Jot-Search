@@ -1,8 +1,8 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import UnlabeledContent from './UnlabeledContent';
 import Property from './Property';
 
+// Temp comment
 const UNLABELED_CONTENT_ARRAY = ['comments', 'primarySkills', 'expertise', 'resume'];
 
 export default function SectionContent({ contentObject }) {

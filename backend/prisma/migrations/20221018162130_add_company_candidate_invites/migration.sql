@@ -6,6 +6,5 @@ CREATE TABLE "CompanyCandidateInvites" (
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
-    CONSTRAINT "CompanyCandidateInvites_pkey" PRIMARY KEY ("id")
 );
 

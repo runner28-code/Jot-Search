@@ -29,6 +29,7 @@ export default function NavBar() {
 
 function NavBarLayout() {
   return (
+    <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50 '>
       <div className='h-30 px-8 flex justify-between items-center'>
         <Link to={ROUTES.root}>
           <img
@@ -114,7 +115,6 @@ const DropdownMenu = () => {
       ref={menuRef}
     >
       <div
-        className='flex items-center bg-royalBlue-bg rounded-md cursor-pointer bg-sky-100 pr-3 pl-5 py-4 rounded-lg'
         onClick={handleClick}
       >
         <span className='text-sm text-royalBlue'>{ firstname }</span>

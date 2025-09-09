@@ -17,6 +17,7 @@
             ], 
             "essential": true,
             "logConfiguration": { 
+                "logDriver": "awslogs",
                 "options": { 
                    "awslogs-group" : "/ecs/dev-site-backend-task",
                    "awslogs-region": "us-east-1",

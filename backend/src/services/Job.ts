@@ -60,7 +60,6 @@ export const getAppliedJobsByUser = async (userId: string) => {
       where: {
         applications: {
           some: {
-            userId,
           },
         },
       },
@@ -94,6 +93,7 @@ export const inferDatasetById = (id: string) => {
     return DATASET_BULLHORN;
   } else {
     return DATASET_MAIN;
+  }
 };
 
 export const updateJob = async (job: Partial<Job> & { id: string }) => {

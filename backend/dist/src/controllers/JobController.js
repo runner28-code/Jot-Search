@@ -189,6 +189,7 @@ let JobController = class JobController {
                     clientCorporationID: (key, value) => `${key} = REPLACE("${value}", "bl-", "")`,
                 };
                 const _filters = filters.map((filter) => ({
+                    key: FieldMatch_1.JobFilter.bullhorn[filter.key],
                     value: filter.value,
                 }));
                 const _condition = (0, utils_1.getFilterConditions)(_filters, operator, _specialHandlers);

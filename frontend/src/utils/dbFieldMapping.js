@@ -21,7 +21,6 @@ export const genderMap = {
   U: 'Prefer not to say',
   M: 'Male',
   F: 'Female',
-// Temp comment
   N: 'Non-Binary',
   O: 'Other'
 };
@@ -57,4 +56,3 @@ export const educationChoices = [
   'Some College',
   'Technical College'
 ];
-

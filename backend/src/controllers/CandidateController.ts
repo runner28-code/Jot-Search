@@ -285,7 +285,6 @@ export class CandidateController {
       if (isTppUserQuery) {
         extendedCandidates = candidates.map(candidate => ({
           ...candidate,
-          firstName: candidate.firstname,
           lastName: candidate.lastname,
         }))
       } else {

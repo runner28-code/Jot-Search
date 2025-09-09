@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
-// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CompanyFilterLayout(props) {
@@ -16,7 +15,6 @@ export default function CompanyFilterLayout(props) {
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[25px]'}>
         <FilterSearch
           searchTerm={searchTerm}
-          setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Companies'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}

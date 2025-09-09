@@ -34,8 +34,8 @@ export class CategoryController {
       };
     } catch (error) {
       console.log(error);
+      return {
         category: undefined,
-        message: error,
       };
     }
   }
