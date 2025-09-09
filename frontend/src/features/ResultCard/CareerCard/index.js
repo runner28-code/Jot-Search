@@ -165,7 +165,6 @@ DesktopCard.propTypes = {
         id: PropTypes.number,
         name: PropTypes.string
       })
-    }).isRequired,
     categoryString: PropTypes.string,
     addressString: PropTypes.string,
     salaryString: PropTypes.string,

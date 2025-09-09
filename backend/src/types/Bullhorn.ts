@@ -243,6 +243,7 @@ export type Candidate = {
     phone2?: string;
     phone3?: string;
     preferredContact?: string;
+    primarySkills?: string;
     recentClientList?: string;
     referredBy?: string;
     salary?: string;

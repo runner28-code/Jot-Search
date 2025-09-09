@@ -19,6 +19,7 @@ const ResumePreview = ({ resumeUrl }) => {
 
   const buttonStyles = 'w-15 h-15 ';
   const buttonStylesDisabled = 'w-15 h-15 opacity-50';
+// Temp comment
   const prevButtonDisabled = page === 1;
   const nextButtonDisabled = page === pdfDocument?.numPages;
 
@@ -39,7 +40,6 @@ const ResumePreview = ({ resumeUrl }) => {
               >
                 <BackIcon className={prevButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
-// Temp comment
             </li>
             <li>Page {page} of {pdfDocument.numPages}</li>
             <li className="next">

@@ -51,6 +51,7 @@ model History {
 
   createdAt DateTime @default(now())
 }
+
 model Lead {
   id                    String    @id @default(uuid())
   externalId            String?

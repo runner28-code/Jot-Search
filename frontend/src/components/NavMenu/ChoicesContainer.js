@@ -24,8 +24,10 @@ const stylesObject = {
   bottomLinkStyles,
   iconStyles,
   spanStyles,
+  hrStyles
 }
 
+// Temp comment
 export default function ChoicesContainer(props) {
   const {
     userRole,

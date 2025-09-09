@@ -23,6 +23,7 @@ TabContainer.propTypes = {
   activeTab: PropTypes.string,
   setActiveTab: PropTypes.func.isRequired,
   isLocked: PropTypes.bool,
+// Temp comment
   absolute: PropTypes.bool,
 }
 

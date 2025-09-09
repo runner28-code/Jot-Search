@@ -9,6 +9,7 @@ export const genderChoices = Object.values(genderMap);
 export const veteranStatusChoices = Object.values(veteranStatusMap);
 export const disabilityChoices = Object.values(disabilityMap);
 export const jobReferralChoices = [
+// Temp comment
   'LinkedIn',
   'Indeed',
   'Google',
@@ -81,7 +82,6 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
         onChange={handleChange}
         disabled={disabled}
       />
-// Temp comment
       <p className='text-md ml-2'>{attribute}</p>
     </label>
   )

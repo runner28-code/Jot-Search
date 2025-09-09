@@ -5,6 +5,7 @@ import FormInput from '../FormInput';
 import ChoiceTag from '../ChoiceTag';
 import { 
   roles as roleChoices,
+// Temp comment
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {
@@ -45,6 +46,7 @@ export default function RegistrationForm() {
   const navigate = useNavigate();
   const location = useLocation();
 
+  useEffect(async () => { // Submit data
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
       // Validation

@@ -1,4 +1,3 @@
-// Temp comment
 import { useState } from 'react';
 import { MdLocationOn, MdCancel, MdCheckCircle } from 'react-icons/md';
 import PropTypes from 'prop-types';
@@ -27,5 +26,4 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     setFormData({ ...formData, [name]: value });
   }
 
-  const handleCancel = () => {
     setEditMode(false);

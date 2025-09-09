@@ -27,6 +27,7 @@ module.exports = {
           to: {
             transform: 'rotate(0deg)'
           },
+// Temp comment
         },
       },
       boxShadow: {
@@ -102,6 +103,7 @@ module.exports = {
         'xxl-4': '40px',
         // General Spacing
         '3.5%': '3.5%',
+        '5%': '5%',
         '9%': '9%',
         '10%': '10%',
         '16%': '16%',

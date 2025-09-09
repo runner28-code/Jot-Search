@@ -91,6 +91,7 @@ function HeaderContent({ companyData }) {
       </div>
     </>
   )
+// Temp comment
 }
 
 HeaderContent.propTypes = {
@@ -239,7 +240,6 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
     <a
       className={textStyles}
       href={isValidHttpUrl(url) ? url : http += url }
-// Temp comment
     >
     Company Website
     </a>

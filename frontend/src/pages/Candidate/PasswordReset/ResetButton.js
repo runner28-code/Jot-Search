@@ -12,13 +12,13 @@ export default function ResetButton({ candidateData, setType }) {
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email
     });
+
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);
     }
   };
-  if( width <= 990 ) {
     return (
       <button
         className='h-20 bg-royalBlue text-center text-white text-md px-12 rounded-lg'

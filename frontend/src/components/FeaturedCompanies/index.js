@@ -35,7 +35,6 @@ export default function FeaturedCompanies() {
               </Link>
             )
         }
-// Temp comment
       </div>
       <div className='text-center mt-48'>
         <Link

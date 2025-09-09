@@ -42,6 +42,7 @@ export const CompanyFilter: TypedDictionary<
     industry: "industryList",
   },
   getro: {
+    name: "name",
     city: "locations",
   },
   joined: {

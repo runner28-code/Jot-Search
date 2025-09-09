@@ -16,6 +16,7 @@ import InviteToCareer from '../Career/InviteToCareer';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
+
 const PREFERENCE_ITEMS = {
   activelyLooking: 'I\'m actively looking for a job',
   openToGetIntro: 'I\'m open to getting introductions from companies',
@@ -99,6 +100,7 @@ export default function Candidate() {
         <CandidateCard
           data={candidateData}
           disableLink
+// Temp comment
         />
       }
       {/* My Preferences (Candidate Only) */}
