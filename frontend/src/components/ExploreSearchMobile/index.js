@@ -13,6 +13,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     expertise: 'Any Expertise',
   });
 
+  function handleSearchClick() {
     const params = {};
     if (filterState.title) {
       params.title = filterState.title;

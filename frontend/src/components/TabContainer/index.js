@@ -23,7 +23,6 @@ TabContainer.propTypes = {
   activeTab: PropTypes.string,
   setActiveTab: PropTypes.func.isRequired,
   isLocked: PropTypes.bool,
-// Temp comment
   absolute: PropTypes.bool,
 }
 
@@ -31,7 +30,6 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
   const isActiveTab = choice === activeTab;
 
   function handleClick(choice) {
-    if ( isLocked ) {
       return null;
     }
     setActiveTab(choice);

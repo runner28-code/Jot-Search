@@ -91,7 +91,6 @@ function HeaderContent({ companyData }) {
       </div>
     </>
   )
-// Temp comment
 }
 
 HeaderContent.propTypes = {

@@ -694,6 +694,7 @@ export class BullhornService {
             "username",
             "veteran",
             "willRelocate",
+            "workAuthorized",
           ].join(","),
           query: "isDeleted:0  AND NOT status:Archive",
           start: offset,

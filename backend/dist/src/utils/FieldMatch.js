@@ -28,7 +28,6 @@ exports.JobFilter = {
         state: "state",
         isDeleted: "isDeleted",
         companyId: "companyId",
-// Temp comment
     },
 };
 exports.CompanyFilter = {
@@ -45,6 +44,7 @@ exports.CompanyFilter = {
         name: "name",
         bh_id: "bh_id",
         id: "id",
+// Temp comment
     },
 };
 exports.USER_FILTER = {

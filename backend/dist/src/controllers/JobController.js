@@ -136,6 +136,7 @@ let JobController = class JobController {
                 return {
                     jobs: extendedJobs,
                     total,
+                    message: null,
                 };
             }
             catch (error) {

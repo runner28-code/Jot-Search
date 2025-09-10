@@ -165,6 +165,7 @@ DesktopCard.propTypes = {
         id: PropTypes.number,
         name: PropTypes.string
       })
+    }).isRequired,
     categoryString: PropTypes.string,
     addressString: PropTypes.string,
     salaryString: PropTypes.string,
@@ -176,7 +177,6 @@ DesktopCard.propTypes = {
 
 function MobileCard({ dataObj, active }) {
   const { data } = dataObj;
-  const categoryString = data.category?.name.toUpperCase() || 'CATEGORY N/A';
   return (
     <Link
       to={`${ROUTES.careers}/${data.id}`}

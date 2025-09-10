@@ -23,7 +23,6 @@ export default function PendingApplications () {
       return {
         ...job,
         agoDate: job.appliedDate
-// Temp comment
       }});
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
@@ -68,7 +67,6 @@ export default function PendingApplications () {
           <Link
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
-              Browse All
           </Link>
         </div>
       </div>

@@ -100,7 +100,6 @@ export default function Candidate() {
         <CandidateCard
           data={candidateData}
           disableLink
-// Temp comment
         />
       }
       {/* My Preferences (Candidate Only) */}

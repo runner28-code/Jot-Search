@@ -23,7 +23,6 @@ export const genderMap = {
   F: 'Female',
   N: 'Non-Binary',
   O: 'Other'
-// Temp comment
 };
 
 export const ethnicityMap = {

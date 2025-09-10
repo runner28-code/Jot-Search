@@ -25,7 +25,6 @@ const checkboxFilters = [
   'Authorized to work in the US',
   'Open to Relocation',
   'Actively Looking',
-];
 
 export default function CandidateFilterLayout(props) {
   const {
@@ -39,6 +38,7 @@ export default function CandidateFilterLayout(props) {
   } = props;
   let userRole = AuthService.getUserRole();
 
+  const dropdownFilterObject = {};
   const checkboxFilterObject = {};
   if( userRole === 'coordinator' ) {
     dropdownFiltersCoord.forEach(filter => {

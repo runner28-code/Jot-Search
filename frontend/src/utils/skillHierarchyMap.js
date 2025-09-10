@@ -22,7 +22,6 @@ export const roles = {
     'Generalist Marketing',
     'Graphic and Motion Design',
     'PR & Communications',
-    'Product Marketing & Design'
   ],
   'Operations': [
     'Business Operations & Strategy',
@@ -210,6 +209,7 @@ export const skills = [
   'French',
   'Fundraising',
   'GAAP',
+  'General Ledger',
   'German',
   'Git/GitHub',
   'Government',

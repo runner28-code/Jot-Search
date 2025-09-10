@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { useState } from 'react';
 import FormInput from '../../../components/FormInput';
 import API from '../../../services/API';

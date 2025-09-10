@@ -119,6 +119,7 @@ const job_filter_exclude_keys = [
   "donation",
   "donor",
   "drainage",
+  "driver",
   "drug",
   "economist",
   "economy",

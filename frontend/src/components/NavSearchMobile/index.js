@@ -172,6 +172,7 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
       setIsOpen(isOpen => !isOpen);
     }
   }
+// Temp comment
 
   if ( marginBottom ) {
     styleObject.containerStyles += `mb-${marginBottom} `;

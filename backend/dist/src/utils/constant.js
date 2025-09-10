@@ -174,7 +174,6 @@ const job_filter_exclude_keys = [
     "grants",
     "greenhouse",
     "gutter installer",
-// Temp comment
     "gym",
     "gymnastics",
     "health",
@@ -326,6 +325,7 @@ const job_filter_exclude_keys = [
     "radiology",
     "real estate",
     "receiving",
+// Temp comment
     "receptionist",
     "record specialist",
     "recovery",

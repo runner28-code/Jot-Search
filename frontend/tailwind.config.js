@@ -27,7 +27,6 @@ module.exports = {
           to: {
             transform: 'rotate(0deg)'
           },
-// Temp comment
         },
       },
       boxShadow: {
@@ -190,6 +189,7 @@ module.exports = {
         '140': '35rem',
         '208': '52rem',
         '240': '60rem',
+// Temp comment
         '248': '62rem',
         '290': '72.5rem',
         '300': '75rem',

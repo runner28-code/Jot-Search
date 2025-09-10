@@ -45,6 +45,7 @@ export const UpdateJobFeatured = ({ job }) => {
           </span>
         </button>
       
+// Temp comment
         <label 
           htmlFor='featured' 
           className='text-lg font-spaceGrotesk'>

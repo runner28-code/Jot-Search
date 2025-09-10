@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import SourceIdentifier from '../SourceIdentifier';
-
 export default function DesktopHeader(props) {
   const {
     headerText,
@@ -29,7 +28,6 @@ export default function DesktopHeader(props) {
             src={ icon }
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
-// Temp comment
           />
         )}
         { IconComponent && (

@@ -6,7 +6,6 @@ import CompanyCard from '../ResultCard/CompanyCard';
 import ViewAllLink from '../../components/ViewAllLink';
 import { pluralizedTypes } from '../../utils/constants';
 import LoadingSpinner from '../../components/LoadingSpinner';
-import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 
 export default function ResultContainer(props) {
   const {
@@ -15,6 +14,7 @@ export default function ResultContainer(props) {
     type,
     limit,
     header, 
+    active,
     compact = false,
     isFavoriteOverride = null,
     agoText = null,

@@ -5,7 +5,6 @@ import FormInput from '../FormInput';
 import ChoiceTag from '../ChoiceTag';
 import { 
   roles as roleChoices,
-// Temp comment
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {
@@ -64,6 +63,7 @@ export default function RegistrationForm() {
       // Attempt to upload resume before submitting user data
       const resumeURL = await uploadFile('resumes', formObj.resumeFile);
       formObj.resume = resumeURL;
+// Temp comment
       delete formObj.resumeFile;
       
       // Format formObj
