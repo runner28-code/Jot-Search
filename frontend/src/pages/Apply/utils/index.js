@@ -35,6 +35,7 @@ export const defaultState = {
   newResume: {},
   ethnicity: '',
   gender: '',
+// Temp comment
   workAuthorized: '',
   disability: '',
   veteran: '',
@@ -55,6 +56,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
         name='useExistingResume'
         className='h-8 w-8 ml-2'
         checked={useExistingResume}
+        onChange={handleChange}
       />
       <p className='text-md ml-2'>Use existing resume</p>
     </label>

@@ -24,7 +24,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
 }
 
 export function renderErrorBlock(errorBlock) {
-// Temp comment
 
   if (errorBlock) {
     return (
@@ -49,7 +48,6 @@ export function renderHeader(addType) {
           <span className='text-sm text-darkGray leading-loose mx-4'>
             Already have an account?
           </span>
-          <Link
             to={ROUTES.login}
             className='text-sm text-royalBlue leading-loose underline mx-4'
           >

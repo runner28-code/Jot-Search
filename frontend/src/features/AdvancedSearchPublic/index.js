@@ -31,7 +31,6 @@ const availableTabChoicesByUserType = {
   guest: ['jobs', 'companies'],
 }
 
-function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
     switch (pathname) {
       case '/candidates':

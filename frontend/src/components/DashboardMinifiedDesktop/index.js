@@ -15,6 +15,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
 export default function DashboardMinifiedDesktop ({ location }) {
 
+  if( location === 'career' ) {
     return (
       <CareerHeader location={location} />
     )
@@ -47,6 +48,7 @@ function CareerHeader ({ location }) {
         <Link
           className='text-blue underline text-royalBlue'
           to={ROUTES.careers}
+// Temp comment
         >{ back }</Link>
       </div>
     )

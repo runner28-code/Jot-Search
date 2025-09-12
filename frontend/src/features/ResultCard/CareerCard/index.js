@@ -177,6 +177,7 @@ DesktopCard.propTypes = {
 
 function MobileCard({ dataObj, active }) {
   const { data } = dataObj;
+  const categoryString = data.category?.name.toUpperCase() || 'CATEGORY N/A';
   return (
     <Link
       to={`${ROUTES.careers}/${data.id}`}

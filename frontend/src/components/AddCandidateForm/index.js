@@ -63,7 +63,6 @@ export default function RegistrationForm() {
       // Attempt to upload resume before submitting user data
       const resumeURL = await uploadFile('resumes', formObj.resumeFile);
       formObj.resume = resumeURL;
-// Temp comment
       delete formObj.resumeFile;
       
       // Format formObj
@@ -110,6 +109,7 @@ export default function RegistrationForm() {
     setErrorBlock('');
     setErrors([]);
     setFormObj({
+// Temp comment
       ...formObj,
       firstName: firstName.value,
       lastName: lastName.value,

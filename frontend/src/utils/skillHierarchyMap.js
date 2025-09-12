@@ -22,6 +22,7 @@ export const roles = {
     'Generalist Marketing',
     'Graphic and Motion Design',
     'PR & Communications',
+    'Product Marketing & Design'
   ],
   'Operations': [
     'Business Operations & Strategy',

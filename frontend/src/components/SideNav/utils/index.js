@@ -105,7 +105,6 @@ export const guestChoices = [
   choices.companies,
 ];
 
-export function findSelectedFromPath() {
   // TODO: ENHANCEMENT: Just split at the dashes in the pathname and capitalize each word
   const path = useLocation().pathname;
   switch (path.split('/')[1]) {

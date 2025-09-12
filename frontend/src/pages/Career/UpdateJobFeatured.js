@@ -32,7 +32,6 @@ export const UpdateJobFeatured = ({ job }) => {
           aria-checked={toggled}
           onClick={async() => {
             const { result } = await saveJob({ featured: !toggled, id: job.id })
-
             // TODO: Replace with react-query refetch
             if(result) {
               window.location.reload()
@@ -45,7 +44,6 @@ export const UpdateJobFeatured = ({ job }) => {
           </span>
         </button>
       
-// Temp comment
         <label 
           htmlFor='featured' 
           className='text-lg font-spaceGrotesk'>

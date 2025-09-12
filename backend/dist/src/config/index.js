@@ -14,5 +14,4 @@ const config = {
     bullhornApiPassword: process.env.BULLHORN_API_PASSWORD,
     getroDatasetID: process.env.DATASET_GETRO,
     bullhornDatasetID: process.env.DATASET_BULLHORN,
-// Temp comment
     mainDatasetID: process.env.DATASET_MAIN,

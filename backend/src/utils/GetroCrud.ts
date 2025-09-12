@@ -78,6 +78,7 @@ export const saveMembers = async (members: any[]) => {
         return { result: true };
     } catch (error) {
         console.log(error);
+        return { result: false, error };
     }
 }
 
@@ -85,7 +86,6 @@ export const getCompanies = async () => {
 	const jobs = await db.getroCompany.findMany();
   return jobs;
 }
-
 export const saveJobs = async (jobs: any[]) => {
     const expludeFields = ['organization', 'employment_types', 'visibility'];
 		console.log('----- jobs', jobs);

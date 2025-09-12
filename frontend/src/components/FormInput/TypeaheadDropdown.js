@@ -82,7 +82,6 @@ export default function TypeaheadDropdown(props) {
 }
 
 TypeaheadDropdown.propTypes = {
-  type: PropTypes.string.isRequired,
   dropdownType: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   label: PropTypes.string,

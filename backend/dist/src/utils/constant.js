@@ -325,7 +325,6 @@ const job_filter_exclude_keys = [
     "radiology",
     "real estate",
     "receiving",
-// Temp comment
     "receptionist",
     "record specialist",
     "recovery",

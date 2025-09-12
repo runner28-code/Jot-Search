@@ -66,6 +66,7 @@ const setupCronJobs = async () => {
     consoleLog('/// CRON_JOB_ENDED: GETRO_GET_COMPANIES');
   });
 
+  cron.schedule('0 */8 * * *', async () => {
     try {
       consoleLog('/// CRON_JOB_STARTED: GETRO_GET_JOBS');
       await (await GetroService.getClient()).getJobs(false, 50);

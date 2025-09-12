@@ -180,7 +180,6 @@ export class JobController {
         job.company_logo = job.company?.logo
         return job
       })
-
       // console.log({ jobs });
 
       return {

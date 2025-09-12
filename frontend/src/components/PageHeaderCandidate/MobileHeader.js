@@ -4,6 +4,7 @@ export default function MobileHeader(props) {
   const {
     headerText,
     icon,
+    IconComponent,
     classOverride,
     colorizeStroke,
   } = props;
@@ -24,7 +25,6 @@ export default function MobileHeader(props) {
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />
       )}
       <h1 className='font-spaceGrotesk font-medium text-lg text-lightGrey'>
-        { headerText }
       </h1> 
     </div>
   );

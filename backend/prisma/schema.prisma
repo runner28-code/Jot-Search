@@ -166,7 +166,6 @@ model ClientContact {
   occupation         String?
   office             String?
   owner              String?
-  pager              String?
   password           String?
   phone              String?
   phone2             String?

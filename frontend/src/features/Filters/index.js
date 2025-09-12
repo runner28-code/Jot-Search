@@ -27,7 +27,6 @@ export default function Filters(props) {
     </div>
   )
 }
-
 Filters.propTypes = {
   handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,
@@ -68,7 +67,6 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
       <Filter
         key={filterType}
         filterType={filterType}
-// Temp comment
         choices={choices}
         chosen={chosen}
         handleFilterChange={handleFilterChange}

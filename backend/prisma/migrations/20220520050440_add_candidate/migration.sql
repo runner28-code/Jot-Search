@@ -18,6 +18,7 @@ CREATE TABLE "Candidate" (
     "dayRate" TEXT,
     "dayRateLow" TEXT,
     "degreeList" TEXT,
+    "description" TEXT,
     "desiredLocations" TEXT,
     "disability" TEXT,
     "educationDegree" TEXT,

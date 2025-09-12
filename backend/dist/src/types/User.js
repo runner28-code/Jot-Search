@@ -26,8 +26,6 @@ exports.IUSER = {
     roles: "",
     description: "",
     phone: "",
-    status: "",
-// Temp comment
     username: "",
     logo: "",
     companyId: "",

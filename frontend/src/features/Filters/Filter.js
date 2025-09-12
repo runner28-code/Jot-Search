@@ -7,6 +7,7 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import Dropdown from '../../components/FilterDropdown';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+
 export default function Filter({ filterType, choices, chosen, handleFilterChange }) {
   const { width } = useWindowDimensions();
   const formattedFilterType = filterType === 'On-Site/Remote' ? filterType : startCase(filterType);
@@ -16,6 +17,5 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const [listening, setListening] = useState(false);
 
   const menuRef = useRef(null);
-
   function handleContainerClick() {
     setShowDropdown(showDropdown => !showDropdown);

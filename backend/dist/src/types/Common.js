@@ -21,4 +21,3 @@ var Tables;
     Tables["JOINED_CANDIDATES"] = "candidates_joined";
     Tables["CATEGORIES"] = "Categories";
 })(Tables = exports.Tables || (exports.Tables = {}));
-exports.DATASET_BULLHORN = config_1.default.bullhornDatasetID || "";

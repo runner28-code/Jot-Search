@@ -43,6 +43,7 @@ export default function Apply() {
   const [originalObject, setOriginalObject] = useState({});
   const [applicationObject, setApplicationObject] = useState(defaultState);
   const [useExistingResume, setUseExistingResume] = useState(false);
+  const [referralChoice, setReferralChoice] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
@@ -57,7 +58,6 @@ export default function Apply() {
       setOriginalObject(defaultState);
       setApplicationObject({ ...defaultState, loading: false });
       return;
-    }
     try {
       const { user_id } = AuthService.getProfile();
       const [careerData, candidateData] = await Promise.all([

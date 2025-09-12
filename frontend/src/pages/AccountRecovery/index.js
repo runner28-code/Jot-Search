@@ -16,7 +16,6 @@ export default function AccountRecovery() {
       email: email.value
     });
 
-// Temp comment
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {
@@ -24,5 +23,4 @@ export default function AccountRecovery() {
     }
   };
   function setType(response, condition) {
-    setCondition(condition);
     setResponse(response);

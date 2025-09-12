@@ -127,7 +127,6 @@ function buttonText(name, placeholder, currentChosen) {
   } else { // no current chosen
     return buttonString
   }
-// Temp comment
   
   return buttonString;
 }

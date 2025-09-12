@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -22,7 +21,6 @@ export default function JoinTalentNetwork() {
             <Link
               to={ROUTES.signup}
               className='flex items-center justify-center h-28 w-112 bg-buttonLightBlue mt-12 px-18 rounded-lg'
-// Temp comment
             >
               <span className='text-softWhite text-ml'>Create an account</span>
             </Link>
