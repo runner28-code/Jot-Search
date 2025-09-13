@@ -48,6 +48,7 @@ function NavBarLayout() {
         </div>
       </div>
       {/* Nav Search */}
+// Temp comment
     </nav>
   )
 }
@@ -90,7 +91,6 @@ const DropdownMenu = () => {
 
   const closeDropdown = () => {
     setIsOpen(false);
-// Temp comment
   }
 
   useEffect(() => {

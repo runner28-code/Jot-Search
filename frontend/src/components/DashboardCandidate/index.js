@@ -14,7 +14,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   const { width } = useWindowDimensions();
 
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
-// Temp comment
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
@@ -41,6 +40,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
             <p className='ml-4'>Companies</p>
           </Link>
         </div>
+// Temp comment
       </div>
     </div>
     <div className='bg-sky-500 flex py-8 px-6 items-center text-white font-roboto'>

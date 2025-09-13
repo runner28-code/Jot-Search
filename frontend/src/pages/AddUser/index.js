@@ -5,6 +5,7 @@ import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
 import AddCandidate from './AddCandidate';
 import AddCompanyUser from './AddCompanyUser';
+import AddCoordinator from './AddCoordinator';
 import User from '../../assets/icons/add-new-user.svg';
 
 export default function AddUser() {
@@ -15,4 +16,5 @@ export default function AddUser() {
 
   const [formType, setFormType] = useState('Candidate');
   function handleDropdownChange(e) {
+// Temp comment
     setFormType(e.target.value);

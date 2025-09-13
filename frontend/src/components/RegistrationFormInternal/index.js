@@ -46,7 +46,6 @@ const defaultState = {
 
 const defaultCommunity = {
   community: ''
-}
 export default function RegistrationFormInternal(loggedIn) {
   const {categories} = useContext(CategoryContext);
   const [formObj, setFormObj] = useState(defaultState);
@@ -102,7 +101,6 @@ export default function RegistrationFormInternal(loggedIn) {
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
         // Set success to true if on add-user page, navigate user to login if not
-// Temp comment
         if ( addType === 'coordinator' ) {
           return setSubmissionObject({
             loading: false,

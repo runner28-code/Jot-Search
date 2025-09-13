@@ -166,6 +166,7 @@ model ClientContact {
   occupation         String?
   office             String?
   owner              String?
+  pager              String?
   password           String?
   phone              String?
   phone2             String?
@@ -178,7 +179,6 @@ model ClientContact {
 
 model Company {
   id            String  @id @default(uuid())
-  name          String
   annualRevenue BigInt?
 
   addressId        String?

@@ -44,7 +44,6 @@ function seedJobs() {
                     address1: "123 Job St",
                     city: "Tulsa",
                     state: "OK",
-// Temp comment
                     zip: "74008",
                     salary: 160000,
                     employmentType: "fulltime",
@@ -102,7 +101,6 @@ function seedCandidates() {
                     address_address1: "124 Main St",
                     occupation: "None",
                     address_city: "Tulsa",
-                    address_state: "OK",
                     address_zip: "74008",
                     description: "Ehh...",
                     companyName: "Nowhere",

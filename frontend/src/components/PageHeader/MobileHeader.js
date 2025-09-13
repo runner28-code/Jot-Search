@@ -5,6 +5,7 @@ export default function MobileHeader(props) {
   const {
     headerText,
     icon,
+    IconComponent,
     classOverride,
     colorizeStroke,
     backButton

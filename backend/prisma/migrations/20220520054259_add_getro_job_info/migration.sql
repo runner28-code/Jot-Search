@@ -5,7 +5,6 @@
 
 */
 -- AlterTable
-ALTER TABLE "Job" ADD COLUMN     "getroJobInfoId" TEXT,
 ALTER COLUMN "hidden" SET NOT NULL,
 ALTER COLUMN "hidden" SET DEFAULT false;
 
@@ -29,5 +28,6 @@ CREATE TABLE "GetroJobInfo" (
     "organization_domain" TEXT,
     "organization_id" TEXT,
     "organization_logo_url" TEXT,
+    "organization_name" TEXT,
     "organization_slug" TEXT,
     "passes_filter" TEXT,

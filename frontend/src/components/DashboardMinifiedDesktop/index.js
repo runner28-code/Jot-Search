@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 
 import PropTypes from 'prop-types';
@@ -48,7 +47,6 @@ function CareerHeader ({ location }) {
         <Link
           className='text-blue underline text-royalBlue'
           to={ROUTES.careers}
-// Temp comment
         >{ back }</Link>
       </div>
     )

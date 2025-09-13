@@ -34,7 +34,6 @@ export default function FormInput(props) {
     baseStyles: componentStyles,
     inputHeight: inputHeight,
     inputWidth: 'w-full',
-    listStyles: dropdownStyles,
     listItemStyles: dropdownItemStyles
   };
   switch (type) {

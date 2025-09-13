@@ -5,7 +5,6 @@ import debounce from 'lodash/debounce';
 import SearchBar from '../SearchBar';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
-// Temp comment
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 
@@ -58,7 +57,6 @@ export default function GlobalSearch({ placeholder }) {
     const resultsObject = {
       jobs: jobResults && jobResults.length ? jobResults : [],
       companies: companyResults && companyResults.length ? companyResults.slice(0, 3) : [], //!!! TODO: Get rid of slice when Donnie has count filter working for companies
-      candidates: CandidateResults && CandidateResults.length ? CandidateResults : [],
       loading: false,
     };
 

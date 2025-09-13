@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 
 export const PaginationButton = ({ page, disabled, prefetchFunc, active, setPage, children }) => {
   const buttonStyles = 'ml-3 border-royalBlue border-2 text-royalBlue h-16 w-16 px-2 py-2 rounded-md'
@@ -15,4 +14,5 @@ export const PaginationButton = ({ page, disabled, prefetchFunc, active, setPage
     >
       {children}
     </button>
+// Temp comment
   );

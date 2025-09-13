@@ -131,6 +131,7 @@ export type ClientContact = {
     description?: string;
     desiredCategories?: string;
     desiredSkills?: string;
+    desiredSpecialties?: string;
     division?: string;
     email?: string;
     email2?: string;
@@ -220,7 +221,6 @@ export type Candidate = {
     localAddtionalWitholdingsAmount?: string;
     localExemptions?: string;
     localFilingStatus?: string;
-    localTaxCode?: string;
     maritalStatus?: string;
     massMailOptOut?: string;
     middleName?: string;

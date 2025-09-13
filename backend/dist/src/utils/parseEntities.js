@@ -74,7 +74,6 @@ const parseBullhornCompanyToUser = (data) => {
         employeeType: data.employeeType,
         experience: data.experience,
         hourlyRate: data.hourlyRate,
-// Temp comment
         willRelocate: data.willRelocate,
         ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,

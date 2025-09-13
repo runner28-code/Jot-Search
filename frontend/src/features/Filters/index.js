@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
 
 export default function Filters(props) {
@@ -27,6 +26,7 @@ export default function Filters(props) {
     </div>
   )
 }
+
 Filters.propTypes = {
   handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,

@@ -20,6 +20,7 @@ import {
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
+// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 const useActiveTabState = createPersistedState('activeTab');
@@ -64,7 +65,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
-// Temp comment
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,

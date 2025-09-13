@@ -86,6 +86,7 @@ export const getCompanies = async () => {
 	const jobs = await db.getroCompany.findMany();
   return jobs;
 }
+
 export const saveJobs = async (jobs: any[]) => {
     const expludeFields = ['organization', 'employment_types', 'visibility'];
 		console.log('----- jobs', jobs);

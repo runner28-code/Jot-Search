@@ -76,6 +76,7 @@ export default function Dropdown(props) {
       } else {
         onChange(name, [...currentChosen, choice]);
       }
+// Temp comment
     } else { // single select
       setIsOpen(false);
       onChange(name, choice);

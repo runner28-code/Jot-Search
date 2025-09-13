@@ -25,6 +25,7 @@ export default function CareerFavorite () {
             <LoadingSpinner />
             :
             savedCompanies.map((company, index) => {
+              console.log(company);
               return(<>
                 <CompanyCard
                   key={company.id}

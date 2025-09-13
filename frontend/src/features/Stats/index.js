@@ -115,6 +115,5 @@ function StatCard({ stat, value }) {
         <h2 className={numberStyles}>{value.count}</h2>
         <p className='text-md text-charcoal'>{stat}</p>
       </div>
-      {renderDeviation(deviationPercentage)}
     </div>
   )

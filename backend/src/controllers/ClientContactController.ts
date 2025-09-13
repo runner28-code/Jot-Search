@@ -34,7 +34,6 @@ export class ClientContactController {
     }
   }
 
-  // @Authorized()
   @Post("/search")
   async searchByFilters(@Body() body: FilterBody) {
     try {
