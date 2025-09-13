@@ -78,7 +78,6 @@ module.exports = {
         darkGray: '#292938',
         'black70%': '#000000b3',
         'black50%': '#00000080',
-      },
       backgroundImage: {
         'tulsa-3': 'url(\'./assets/images/tulsa-3.webp\')',
         'tulsa-3-vert': 'url(\'./assets/images/tulsa-3-vert.webp\')',
@@ -188,6 +187,7 @@ module.exports = {
         '100': '25rem',
         '140': '35rem',
         '208': '52rem',
+        '240': '60rem',
         '248': '62rem',
         '290': '72.5rem',
         '300': '75rem',

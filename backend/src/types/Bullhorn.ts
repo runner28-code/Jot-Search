@@ -128,7 +128,6 @@ export type ClientContact = {
     address_zip?: string;
     address_country_id?: string;
     category?: string;
-    certifications?: string;
     clientCorporation?: string;
     comments?: string;
     dateAdded?: string;

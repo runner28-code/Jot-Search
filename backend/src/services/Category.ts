@@ -1,3 +1,4 @@
+import { Operator } from "../types/Common";
 import db from "../utils/db";
 
 export const getCategoriesByFilter = async (
@@ -8,4 +9,3 @@ export const getCategoriesByFilter = async (
 ) => {
   // TODO: assumes format for fields and filters
   const categories = await db.category.findMany({
-    where: filters?.length ? filters : undefined,

@@ -53,13 +53,13 @@ function renderChoice(choice, selected, index, choicesLength) {
   } else {
     iconStyles += strokeIcons.includes(choice.label) ? 'stroke-royalBlue' : 'fill-royalBlue';
   }
-// Temp comment
   const choiceTextStyles = 'text-xl mr-9 ' + (selectedChoice ? 'text-white' : 'text-royalBlue');
   const Icon = choice.icon;
   return (
     <Link
       to={choice.link}
       className={choiceStyles}
+// Temp comment
       key={choice.label}
     >
       <Icon

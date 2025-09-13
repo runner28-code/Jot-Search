@@ -62,7 +62,6 @@ export default function ReferralSearch() {
     setFilteredChoices(newFilteredChoices);
   }
 
-// Temp comment
   function handleRemove( jobId ) {
     const newCurrentChosen = currentChosen.filter(job => job.id !== jobId);
     setCurrentChosen(newCurrentChosen);
@@ -76,7 +75,6 @@ export default function ReferralSearch() {
   }, []);
   
   return (
-    <div className='w-340'>
       <div className='flex mb-8'>
         { renderChosen(currentChosen, handleRemove) }
       </div>

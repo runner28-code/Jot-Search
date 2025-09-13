@@ -221,6 +221,7 @@ export type Candidate = {
     localAddtionalWitholdingsAmount?: string;
     localExemptions?: string;
     localFilingStatus?: string;
+    localTaxCode?: string;
     maritalStatus?: string;
     massMailOptOut?: string;
     middleName?: string;

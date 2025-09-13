@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
 
+// Images
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
@@ -36,7 +37,6 @@ DashboardMinified.propTypes = {
 function LinkSwap ({ location, loggedIn }) {
 
   if(location === 'career') {
-    return (
       <Link
         className={loggedIn ? 'text-white flex items-center bg-sky-500 rounded-md py-2 px-6' : 'text-white flex items-center'}
         to={ROUTES.careers}>

@@ -82,6 +82,7 @@ export default function CompanyCard({ data }) {
             <div className='w-1/3 flex items-center'>
               <img
                 src={websiteIcon}
+// Temp comment
                 className='h-8 mr-5 ml-1' />
               <a
                 href='#'
@@ -101,6 +102,7 @@ export default function CompanyCard({ data }) {
 }
 
 const dataShape = {
+  data: PropTypes.shape({
     id: PropTypes.string.isRequired,
     address: PropTypes.shape({
       city: PropTypes.string,

@@ -57,6 +57,7 @@ export default function Dropdown(props) {
     baseStyles, 
     marginBottom,
     choices, 
+// Temp comment
     currentChosen, 
     inputHeight,
     name, 
@@ -76,7 +77,6 @@ export default function Dropdown(props) {
       } else {
         onChange(name, [...currentChosen, choice]);
       }
-// Temp comment
     } else { // single select
       setIsOpen(false);
       onChange(name, choice);

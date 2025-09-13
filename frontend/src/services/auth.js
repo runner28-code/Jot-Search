@@ -58,6 +58,7 @@ class AuthService {
     this.clearStorage();
     window.location.assign('/landing-page');
   }
+
   clearStorage() {
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
@@ -133,4 +134,5 @@ class AuthService {
 
   getSavedCandidateIDs() {
     return JSON.parse(localStorage.getItem('savedCandidates')) || [];
+// Temp comment
   }

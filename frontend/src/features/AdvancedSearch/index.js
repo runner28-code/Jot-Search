@@ -73,6 +73,7 @@ export default function AdvancedSearch({ disabledTabs }) {
       return { filtersArr: searchFilters };
 
     } else if (tab === 'careers') {
+// Temp comment
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
     } else {
@@ -86,6 +87,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'candidates' });
 
   /* CLEAR SEARCH TERM ON TAB SWITCH */
+  useEffect(() => {
     setFilterObject({ ...filterObject, title: '' });
     setPage(1);
   }, [activeTab]);

@@ -40,6 +40,7 @@ export default function LandingPage() {
       { renderExpertiseLinks() }
       { isMobile && <JoinTalentNetwork /> }
       {/* Featured Jobs */}
+// Temp comment
       <FeaturedJobs />
       {/* Featured Companies */}
       { isDesktop ? <FeaturedCompanies /> : <FeaturedCompaniesMobile />}
@@ -71,6 +72,7 @@ function renderSearch() {
   )
 }
 
+function renderLocation() {
   const { width } = useWindowDimensions();
 
   if( width >= 1024 ) {

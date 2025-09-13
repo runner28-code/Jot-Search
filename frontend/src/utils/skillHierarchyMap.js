@@ -170,6 +170,7 @@ export const skills = [
   'Design',
   'Desktop Support',
   'Development',
+  'Digital Advertising',
   'Digital Media',
   'Digital Strategy',
   'Direct Sales',

@@ -30,6 +30,7 @@ export const choices = {
     label: 'Careers',
     icon: CareerIcon,
     link: ROUTES.careers,
+  },
   companies: {
     label: 'Companies',
     icon: CompanyIcon,

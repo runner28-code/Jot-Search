@@ -1,6 +1,5 @@
 -- CreateTable
 CREATE TABLE "Lead" (
-    "id" TEXT NOT NULL,
     "address_address1" TEXT,
     "address_address2" TEXT,
     "address_city" TEXT,
@@ -21,6 +20,7 @@ CREATE TABLE "Lead" (
     "dateLastModified" TIMESTAMP(3),
     "dateLastVisited" TIMESTAMP(3),
     "description" TEXT,
+    "division" TEXT,
     "email" TEXT,
     "email2" TEXT,
     "email3" TEXT,

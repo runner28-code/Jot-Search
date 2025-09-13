@@ -21,6 +21,7 @@ export default function FormInput(props) {
     required,
     onChange,
     choices,
+// Temp comment
     choiceObject,
     error,
     disabled
@@ -34,6 +35,7 @@ export default function FormInput(props) {
     baseStyles: componentStyles,
     inputHeight: inputHeight,
     inputWidth: 'w-full',
+    listStyles: dropdownStyles,
     listItemStyles: dropdownItemStyles
   };
   switch (type) {

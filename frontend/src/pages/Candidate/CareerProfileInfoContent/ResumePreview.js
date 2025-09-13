@@ -10,7 +10,6 @@ import LoadingSpinner from '../../../components/LoadingSpinner';
 const ResumePreview = ({ resumeUrl }) => {
   const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
-// Temp comment
 
   const { pdfDocument } = usePdf({
     file: resumeUrl,
@@ -18,7 +17,6 @@ const ResumePreview = ({ resumeUrl }) => {
     canvasRef,
   });
 
-  const buttonStyles = 'w-15 h-15 ';
   const buttonStylesDisabled = 'w-15 h-15 opacity-50';
   const prevButtonDisabled = page === 1;
   const nextButtonDisabled = page === pdfDocument?.numPages;

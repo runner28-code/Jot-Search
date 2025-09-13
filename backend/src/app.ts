@@ -26,7 +26,6 @@ try {
 })
 } catch (error) {
   console.error(error)
-}
 
 const uploadToS3 = async(req: any, res: any) => {
   console.log("uploading to s3");
@@ -61,6 +60,7 @@ const uploadToS3 = async(req: any, res: any) => {
         file: response.Location,
         result: true,
       })
+    } catch (e) {
       console.error("error", e);
       res.status(500).send({
         result: false,

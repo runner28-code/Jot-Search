@@ -28,6 +28,7 @@ export default function ExpertiseLinks() {
             alt='Software Engineering Icon'
             className={iconStyles}
           />
+          <span className={textStyles}>Software &</span>
           <span className={textStyles}>Engineering</span>
         </Link>
         {/* Sales & Business Development */}

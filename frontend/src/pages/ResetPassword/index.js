@@ -24,6 +24,7 @@ export default function ResetPassword() {
   }
 
 
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -58,6 +59,5 @@ export default function ResetPassword() {
           >
             Login to your account
           </Link>
-        </div>
       )
     }

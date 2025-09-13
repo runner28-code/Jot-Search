@@ -47,7 +47,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
               :
               <div>
                 <p className='text-midGrey'>Posting Age</p>
-// Temp comment
                 <p className='text-midGrey text-xs'>{postingAge}</p>
               </div>
             }
@@ -98,6 +97,7 @@ CompactCareerCard.propTypes = {
   index: PropTypes.number,
   active: PropTypes.bool,
   agoDate: PropTypes.string,
+// Temp comment
   isFavoriteOverride: PropTypes.bool,
   selectableProps: PropTypes.shape({
     selectable: PropTypes.bool,
