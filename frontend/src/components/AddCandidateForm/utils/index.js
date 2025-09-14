@@ -31,6 +31,7 @@ export function renderErrorBlock(errorBlock) {
     )
   }
 }
+// Temp comment
 
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {

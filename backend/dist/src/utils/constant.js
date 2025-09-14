@@ -118,7 +118,6 @@ const job_filter_exclude_keys = [
     "distribution assistant",
     "doctor",
     "donation",
-    "donation",
     "donor",
     "drainage",
     "driver",

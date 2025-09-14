@@ -14,7 +14,6 @@ import { useCandidateContext } from '../../services/CandidateContext';
 import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
 import InviteToCareer from '../Career/InviteToCareer';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 
 
@@ -66,7 +65,6 @@ export default function Candidate() {
       lastName: updateObject.lastname || candidateData.lastname,
     } : updateObject;
 
-    const formatUserObjectForRender = formatCandidateData({ ...candidateData, ...updatedDisplayObject });
     setCandidateData(formatUserObjectForRender);
     let updateResponse = null;
     if (candidateData.sourceTable === 'Candidate') {

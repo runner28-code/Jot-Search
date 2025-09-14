@@ -46,7 +46,6 @@ export default function InviteCandidates({ job }) {
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
       ))}
-// Temp comment
     </div>)
   }
 
@@ -99,6 +98,7 @@ export default function InviteCandidates({ job }) {
 
 function itemRenderer({ option, onClick, disabled }) {
   const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''
+// Temp comment
   return (
     <div
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`}

@@ -54,6 +54,7 @@ export function renderHeader(addType) {
           >
             Log in here.
           </Link>
+        </div>
         <hr className='mb-15' />
       </div>
     )

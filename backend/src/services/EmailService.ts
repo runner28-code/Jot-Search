@@ -13,7 +13,6 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
   try {
       await sendgrid.send(msg);
   } catch (error) {
-      console.log(error);
       throw error;
   }
 };
@@ -36,6 +35,7 @@ export const sendVerification = async (to: string, name: string) => {
 
 export const sendResetPassword = async (to: string, name: string, token: string) => {
   try {
+    const base_url = process.env.FRONTEND_URL || 'http://localhost:3000';
     await sendEmail(to, 'Reset your password!', 'reset-password', {
       url: `${base_url}/reset-password?token=${token}`,
       name: name,

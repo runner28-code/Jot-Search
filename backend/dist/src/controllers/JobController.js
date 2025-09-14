@@ -149,6 +149,7 @@ let JobController = class JobController {
     }
     getJobsByFilterFromMain(filters = [], fields, count, operator = "OR") {
         return __awaiter(this, void 0, void 0, function* () {
+            const _filters = filters.filter((filter) => Job_2.ALLOWED_JOB_KEYS.has(filter.key));
             const filteredFields = fields === null || fields === void 0 ? void 0 : fields.filter((field) => Job_2.ALLOWED_JOB_KEYS.has(field));
             const alias = "main_jobs";
             const companyAlias = "company";
@@ -160,6 +161,7 @@ let JobController = class JobController {
             };
             const condition = (0, utils_1.getFilterConditions)(_filters, operator, specialHandlers);
             const dataset = Common_1.DATASET_MAIN;
+// Temp comment
             const table = Common_1.Tables.JOBS;
             const _join = `
       LEFT JOIN \`${Common_1.DATASET_MAIN}.${Common_1.Tables.JOINED_COMPANIES}\` as ${companyAlias} 

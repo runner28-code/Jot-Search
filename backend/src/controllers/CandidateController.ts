@@ -78,7 +78,6 @@ export class CandidateController {
   @Authorized()
   @Post("/update")
   async update(
-    @CurrentUser() authUser: User,
     @Body() body: any
   ) {
     try {
@@ -307,6 +306,7 @@ export class CandidateController {
           return candidate;
         });
       }
+
       const sortedCandidates = extendedCandidates.sort((a, b) => {
         const aFirstName = a.firstname || a.firstName;
         const bFirstName = b.firstname || b.firstName;

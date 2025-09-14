@@ -33,6 +33,7 @@ export default function ExpertiseLinksMobile() {
         </Link>
         {/* Sales & Business Development */}
         <Link
+// Temp comment
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Sales & Biz Dev' }}
@@ -58,6 +59,7 @@ export default function ExpertiseLinksMobile() {
           />
           <span className={textStyles}>Marketing</span>
         </Link>
+        {/* Operations */}
         <Link
           to={ROUTES.careers}
           className={linkStyles}

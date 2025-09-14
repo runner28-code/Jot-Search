@@ -21,6 +21,7 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         candidateData={candidateData}
         handleCandidateUpdate={handleCandidateUpdate}
         setEditMode={setEditMode}
+        iconStyles={iconStyles}
         editMode={editMode}
         role={role}
       />
@@ -42,7 +43,6 @@ function renderEditIcon(candidateData, setEditMode) {
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
   if ( !isProfileOwner && !isCoordinator ) {
     return null;
-  }
   const { width } = useWindowDimensions();
   if( width <= 990 ) {
     return (

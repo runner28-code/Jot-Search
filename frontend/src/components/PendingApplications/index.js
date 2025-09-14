@@ -27,6 +27,7 @@ export default function PendingApplications () {
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
+// Temp comment
       filteredJobs: filteredJobsByUnhidden,
       loading: false
     });
@@ -44,6 +45,7 @@ export default function PendingApplications () {
         {
           appliedJobsObject.loading ?
             <LoadingSpinner />
+            :
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
               return(<>
                 <CareerCard

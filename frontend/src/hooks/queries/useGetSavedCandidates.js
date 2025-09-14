@@ -1,6 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../..';
-// Temp comment
 import { getSavedCandidates } from '../../services/API';
 
 export const prefetchCandidates = async ({userId, count, page}) => {

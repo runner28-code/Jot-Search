@@ -274,7 +274,6 @@ export async function saveJob(candidateId, jobId) {
   const { data } = await API.put(ROUTES.APItoggleSaveJob, null, {
     params: {
       'candidate': candidateId,
-// Temp comment
       'job': jobId
     }
   });

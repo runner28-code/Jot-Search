@@ -7,7 +7,5 @@ export default function NavBar() {
   
   if ( loggedIn ) {
     return <LoggedInNav />
-// Temp comment
   } else {
     return <LoggedOutNav />
-  }

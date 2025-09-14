@@ -59,7 +59,6 @@ function renderChoice(choice, selected, index, choicesLength) {
     <Link
       to={choice.link}
       className={choiceStyles}
-// Temp comment
       key={choice.label}
     >
       <Icon

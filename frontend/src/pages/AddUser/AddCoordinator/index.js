@@ -26,6 +26,7 @@ export default function AddCoordinator() {
       } else {
         const error = { submit: data.error }
         setSubmissionObject({
+          loading: false,
           success: false,
           errors: error,
         });
@@ -46,6 +47,7 @@ export default function AddCoordinator() {
       }, 2000);
     }
   }, [submissionObject.success]);
+// Temp comment
 
   function handleInputChange(e) {
     const { name, value } = e.target;

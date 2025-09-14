@@ -15,6 +15,7 @@ export default function AccessibleDropdown(props) {
     required,
     onChange,
     choices,
+    choiceObject,
     currentChosen, 
     stylesObject,
     showDropdownArrow,
@@ -141,6 +142,7 @@ function renderLabel(name, label, required) {
   return (
     <label
       htmlFor={ name }
+// Temp comment
       className='block text-textBlack mb-2.5'
     >
       { label }

@@ -25,6 +25,7 @@ export default function CompanyFilterLayout(props) {
         >
           Clear All
         </button>
+// Temp comment
       </div>
     </div>
   );

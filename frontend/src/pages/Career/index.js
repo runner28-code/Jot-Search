@@ -43,7 +43,6 @@ export default function CareerPage() {
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
   const postingAge = calculatePostingAge(careerData.createdAt);
   const data = {
-// Temp comment
     careerData,
     categoryString,
     addressString,
@@ -70,6 +69,7 @@ export default function CareerPage() {
     >
       { renderNotification(activeData, careerData) }
       {
+// Temp comment
         isMobile ?
           <MobileLayout data={data} /> :
           <DesktopLayout data={data} />

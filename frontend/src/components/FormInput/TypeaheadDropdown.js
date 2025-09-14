@@ -43,7 +43,6 @@ export default function TypeaheadDropdown(props) {
   useEffect(() => {
     if (dropdownType === 'tags') {
       setFilteredChoices(choices.filter(choice => choice.toLowerCase().includes(inputValue.toLowerCase())));
-    }
   }, [inputValue]);
 
   function handleInputChange(event) {
@@ -106,7 +105,6 @@ function renderLabel(name, label, required) {
 
   return (
     <label
-// Temp comment
       className='block text-textBlack mb-2.5'
       htmlFor={name}
     >

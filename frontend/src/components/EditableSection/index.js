@@ -40,7 +40,6 @@ EditableSection.propTypes = {
   header: PropTypes.string.isRequired,
   contentObjectProp: PropTypes.object.isRequired,
   handleContentUpdate: PropTypes.func.isRequired,
-  headerStyles: PropTypes.string.isRequired,
 }
 
 /* Render functions */

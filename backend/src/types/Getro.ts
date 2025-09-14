@@ -52,6 +52,7 @@ export type Job = {
   hidden?: boolean;
 };
 
+export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "id",
   "application_method",
   "application_path",

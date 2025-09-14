@@ -12,7 +12,6 @@ import {
   FilterBody,
 } from "../types/Common";
 
-@JsonController("/api/category")
 export class CategoryController {
   @Get("/search")
   async searchByID(

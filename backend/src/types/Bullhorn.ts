@@ -128,6 +128,7 @@ export type ClientContact = {
     address_zip?: string;
     address_country_id?: string;
     category?: string;
+    certifications?: string;
     clientCorporation?: string;
     comments?: string;
     dateAdded?: string;
@@ -170,7 +171,6 @@ export type ClientContact = {
     skills?: string;
     source?: string;
 };
-
 export type Candidate = {
     id: string;
     address_address1?: string;

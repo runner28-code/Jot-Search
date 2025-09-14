@@ -2,7 +2,6 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import favoriteIconOutline from '../../../assets/icons/Favorite-outline.svg';
 import favoriteIconFilled from '../../../assets/icons/Favorite-filled.svg';
-// Temp comment
 import AuthService from '../../../services/auth';
 import { saveJob, saveCompany, saveCandidate } from '../../../services/API';
 import useWindowDimensions from '../../../hooks/windowDimensions';
@@ -48,7 +47,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
       className={addClass ? styles + addClass : styles}
       onClick={handleFavoriteClick}
     />
-  )
 }
 
 FavoriteButton.propTypes = {
