@@ -50,7 +50,6 @@ export default function InviteCandidates({ job }) {
   }
 
   const valueRenderer = () => {
-    return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>
   }
 
   return (
@@ -98,7 +97,6 @@ export default function InviteCandidates({ job }) {
 
 function itemRenderer({ option, onClick, disabled }) {
   const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''
-// Temp comment
   return (
     <div
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`}

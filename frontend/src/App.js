@@ -39,7 +39,6 @@ function App() {
             <Route
               path={ROUTES.careers}
               element={<Careers />} />
-            <Route
               path={ROUTES.companies}
               element={<Companies />} />
             <Route
@@ -62,6 +61,7 @@ function App() {
               element={<Auth />} />
             <Route
               path="*"
+              element={<Navigate to={ROUTES.landingPage} />}
             />
           </Routes>
         </div>

@@ -142,7 +142,6 @@ function renderLabel(name, label, required) {
   return (
     <label
       htmlFor={ name }
-// Temp comment
       className='block text-textBlack mb-2.5'
     >
       { label }

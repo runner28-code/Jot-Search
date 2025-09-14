@@ -162,7 +162,6 @@ export class GetroService {
                         for (const company of items) {
                             const detail = await this.getMemberDetail(company.id);
                             if (detail) {
-                                result.push(detail);
                             }
                             if (result.length > 30) {
                                 await saveMembers(result);

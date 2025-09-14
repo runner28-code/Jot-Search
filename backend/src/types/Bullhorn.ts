@@ -171,6 +171,7 @@ export type ClientContact = {
     skills?: string;
     source?: string;
 };
+
 export type Candidate = {
     id: string;
     address_address1?: string;

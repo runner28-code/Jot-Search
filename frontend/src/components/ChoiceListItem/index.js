@@ -35,5 +35,4 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
         </div>
       </div>
       { renderHorizontalRule(isLastItem) }
-    </div>
   )

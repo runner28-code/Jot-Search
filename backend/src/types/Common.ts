@@ -96,3 +96,4 @@ export type GetSavedCompaniesResponse = {
 
 export type GetSavedJobsResponse = {
   jobs?: Job[];
+  result: boolean;

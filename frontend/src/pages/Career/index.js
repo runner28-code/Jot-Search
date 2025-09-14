@@ -69,7 +69,6 @@ export default function CareerPage() {
     >
       { renderNotification(activeData, careerData) }
       {
-// Temp comment
         isMobile ?
           <MobileLayout data={data} /> :
           <DesktopLayout data={data} />
@@ -82,6 +81,7 @@ export default function CareerPage() {
   </>)
 }
 CareerPage.propTypes = {
+// Temp comment
   active: PropTypes.bool
 }
 

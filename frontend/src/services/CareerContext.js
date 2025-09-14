@@ -26,6 +26,7 @@ const mockJobsData = [
     location_state: 'OK',
     onSite: false,
     listingAge: '1 month',
+    specialty: 'Technology'
   },
   {
     id: '2cb874e2-0510-405e-9491-183d2e0e26d7',
@@ -85,6 +86,7 @@ export const CareerContext = createContext();
 
 const CareerProvider = ({children}) => {
   const [careers, setCareers] = useState(mockJobsData);
+// Temp comment
 
   const handleCareersChange = (value) => {
     setCareers(value);

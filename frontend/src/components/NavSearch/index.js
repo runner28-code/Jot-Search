@@ -139,7 +139,6 @@ function renderResults( results ) {
   const { jobs, companies, candidates } = results;
   if ( !jobs?.length && !companies?.length && !candidates?.length ) {
     return (
-// Temp comment
       <div className='text-center text-h6 text-black70% font-bold font-spaceGrotesk'>
         No results found
       </div>

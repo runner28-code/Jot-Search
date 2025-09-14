@@ -37,6 +37,7 @@ export default function RegistrationForm() {
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
+// Temp comment
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
@@ -71,7 +72,6 @@ export default function RegistrationForm() {
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
-// Temp comment
         // Set success to true if on add-candidate page, navigate user to login if not
         if ( location.pathname === '/add-candidate' ) {
           return setSubmissionObject({

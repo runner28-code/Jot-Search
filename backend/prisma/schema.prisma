@@ -394,7 +394,6 @@ model Job {
   type                Int?
   isDeleted           Boolean?
   postedAt            DateTime?
-  hidden              Boolean    @default(false)
   datasource          Datasource @default(main)
 
   invitedCandidates CandidateJobInvites[]

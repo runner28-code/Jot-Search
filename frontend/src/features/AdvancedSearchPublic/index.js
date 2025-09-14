@@ -18,6 +18,7 @@ import {
   buildSearchFilters
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
+import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
 
 const useActiveTabState = createPersistedState('activeTab');
@@ -33,6 +34,7 @@ const availableTabChoicesByUserType = {
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
     switch (pathname) {
+// Temp comment
       case '/candidates':
         return useState('candidates');
       case '/companies':

@@ -14,7 +14,6 @@ export default function NavBar() {
   const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {
-    return <MobileNavBarLayout />
   } else {
     return <DesktopNavBarLayout />
   }
@@ -31,7 +30,6 @@ function MobileNavBarLayout() {
             alt='logo'
             className='w-72 h-ful'
           />
-// Temp comment
         </Link>
         {/* Nav Menu */}
         <div className='flex items-center'>

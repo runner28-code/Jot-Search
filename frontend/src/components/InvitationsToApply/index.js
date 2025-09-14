@@ -16,7 +16,6 @@ export default function InvitationsToApply () {
   useEffect( async () => {
     const appliedJobs = await getInvitationsToApply(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
-      return {
         ...job,
         agoDate: job.appliedDate
       }});
@@ -45,7 +44,6 @@ export default function InvitationsToApply () {
                     key={career.id}
                     index={index}
                     data={career}
-// Temp comment
                     agoDate={career.createdAt}
                   />
                 </>)

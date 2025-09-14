@@ -12,7 +12,7 @@ import {
   FilterBody,
 } from "../types/Common";
 
-export class CategoryController {
+@JsonController("/api/category")
   @Get("/search")
   async searchByID(
     @QueryParam("id") id: string

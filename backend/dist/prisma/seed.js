@@ -47,6 +47,7 @@ function seedJobs() {
                     zip: "74008",
                     salary: 160000,
                     employmentType: "fulltime",
+                    onSite: "On-Site",
                     description: "Come join our rockstar team for good money and team",
                     datasource: client_1.Datasource.main,
                     status: "active",
