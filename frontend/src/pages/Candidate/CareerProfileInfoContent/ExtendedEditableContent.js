@@ -37,6 +37,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
     linkedin: candidateData?.linkedin || '',
     resume: candidateData?.resume || '',
+// Temp comment
   });
 
   function handleChange(name, value) {
@@ -53,7 +54,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       const pluralizedFolderName = name + 's';
       const newPath = await uploadFile(pluralizedFolderName, fileToUpload);
       console.log(newPath);
-// Temp comment
       return setFormData({ ...formData, [name]: newPath });
     }
     setFormData({ ...formData, [name]: value });

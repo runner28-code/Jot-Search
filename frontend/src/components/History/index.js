@@ -16,7 +16,6 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
         <HistoryItem 
           key={historyObj.id} 
           historyObj={historyObj} />
-      ))}
       <ViewAllLink 
         href={viewAllHref} 
         text='View Full History' />

@@ -26,6 +26,5 @@ export function validateInput(name, value, errors, password) {
   } else if ( errors[name] ) { // Remove from errors if not empty
     newErrors[name] = '';
   }
-// Temp comment
 
   return newErrors;

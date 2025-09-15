@@ -19,6 +19,7 @@ function main() {
         try {
             console.log("Seeding...🌱");
             // Some of these are dependent on each other, so we need to run them in order
+            yield seedCandidates();
             yield seedCompanies();
             yield seedCategories();
             yield seedJobs();
@@ -94,6 +95,7 @@ function seedCandidates() {
                     phone: "123-456-7891",
                     email: "jsmithers@gmail.com",
                     comments: "He does everything!",
+// Temp comment
                 },
                 {
                     address: "124 Main St",

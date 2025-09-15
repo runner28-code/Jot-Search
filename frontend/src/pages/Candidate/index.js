@@ -76,7 +76,6 @@ export default function Candidate() {
     }
     if (isProfilePage) {
       setCurrentUser({...updateResponse.data})
-// Temp comment
     }
     if (updateResponse.result === false) {
       console.log('Error updating candidate: ', updateResponse.error);

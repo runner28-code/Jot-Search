@@ -118,7 +118,6 @@ export default function RegistrationForm(loggedIn) {
         });
       }
     }
-// Temp comment
   }, [submissionObject.loading]);
 
   useEffect(async () => { // Clear state after a couple seconds

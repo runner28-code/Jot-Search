@@ -69,6 +69,7 @@ export default function CandidateFilterLayout(props) {
       handleFilterChange('skills', [...skills, skill])
     }
   }
+  console.log(filterObject)
 
   return (
     <div className='flex flex-col gap-xxl-4'>

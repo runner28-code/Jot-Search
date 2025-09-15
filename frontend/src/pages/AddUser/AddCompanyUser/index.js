@@ -18,3 +18,4 @@ export default function AddCompanyUser() {
 
   function handleCompanyClick(company) {
     setSelectedCompany(company);
+    setSearch(company.name);

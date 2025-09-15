@@ -80,7 +80,6 @@ const mockJobsData = [
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
   },
-// Temp comment
 ];
 
 export const CareerContext = createContext();

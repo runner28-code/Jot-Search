@@ -18,3 +18,4 @@ CREATE TABLE "Job" (
     "locations" TEXT,
     "companyId" TEXT,
     "interviews" TEXT,
+    "onSite" TEXT,

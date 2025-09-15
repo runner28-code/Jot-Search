@@ -40,5 +40,4 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
     "production": [

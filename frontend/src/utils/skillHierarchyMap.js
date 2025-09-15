@@ -290,6 +290,7 @@ export const skills = [
   'Outbound Calls',
   'Payroll',
   'Performance Improvement',
+// Temp comment
   'Performance Reviews',
   'PHD',
   'Photoshop',

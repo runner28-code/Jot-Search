@@ -23,6 +23,7 @@ export default function AddCoordinator() {
           success: true,
           errors: {},
         });
+// Temp comment
       } else {
         const error = { submit: data.error }
         setSubmissionObject({
@@ -33,7 +34,6 @@ export default function AddCoordinator() {
       }
     }
   }, [submissionObject.loading]);
-// Temp comment
 
   // Clear form and success icon after 2 seconds
   useEffect(() => {

@@ -46,7 +46,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
     setUseExistingResume(e.target.checked);
   }
   return (
-    <label
       htmlFor='useExistingResume'
       className='mt-4 mb-5 flex items-center'
     >
@@ -56,6 +55,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
         className='h-8 w-8 ml-2'
         checked={useExistingResume}
         onChange={handleChange}
+      />
       <p className='text-md ml-2'>Use existing resume</p>
     </label>
   )

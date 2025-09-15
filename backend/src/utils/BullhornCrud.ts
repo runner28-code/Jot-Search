@@ -110,7 +110,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
       try {
         console.log(`Savng job with ID = ${job.id}`);
         const parsedJob = parseBullhornJobToMain(job);
-        if (parsedJob) {
           // await migrateJobInTPP(parsedJob);
         }
 

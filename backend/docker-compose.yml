@@ -7,4 +7,5 @@ services:
       dockerfile: Dockerfile
     image: intulsa_backend
     container_name: intulsa_backend
+    volumes:
       - '/usr/src/inTulsa-be'

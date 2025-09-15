@@ -65,5 +65,4 @@ function renderEditIcon(candidateData, setEditMode) {
       />
       <span>Edit</span>
     </button>
-// Temp comment
   )

@@ -37,6 +37,7 @@ export const choices = {
     link: ROUTES.companies,
   },
   candidates: {
+    label: 'Candidates',
     icon: CandidatesIcon,
     link: ROUTES.candidates,
   },
@@ -67,7 +68,6 @@ export const choices = {
   },
   logout: {
     label: 'Logout',
-    icon: LogoutIcon,
     link: ROUTES.logout,
   },
 }

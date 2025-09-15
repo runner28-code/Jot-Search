@@ -36,7 +36,6 @@ export const saveCompany = async (company: string, candidate: string) => {
           id: candidate,
         },
         data: {
-          savedCompanies: {
             connect: {
               id: company,
             },
@@ -48,6 +47,7 @@ export const saveCompany = async (company: string, candidate: string) => {
     return {
       result: true,
       message: existing ? "unsaved company" : "saved company",
+    };
   } catch (e) {
     console.log(e);
     return { result: false, message: e };

@@ -10,7 +10,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-// Temp comment
 import { BsBuilding } from 'react-icons/bs';
 
 function HeaderContent({ companyData }) {
@@ -120,6 +119,7 @@ function renderCompanyLogo(logoUrl, name) {
 function renderDesktopLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'object-contain w-full h-full';
+// Temp comment
   if( width < 1280 ) {
     return null;
   }

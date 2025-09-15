@@ -121,6 +121,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     setPage(1);
   }
 
+  function handleTabChange(tabChoice) {
     if (tabChoice === 'jobs') {
       setFilterObject(defaultJobFilterState);
     } else if (tabChoice === 'candidates') {

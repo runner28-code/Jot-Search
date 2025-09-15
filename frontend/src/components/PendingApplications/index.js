@@ -61,7 +61,6 @@ export default function PendingApplications () {
             <img
               src={featuredIcon}
               alt='intulsa' />
-// Temp comment
             <p className='text-sm font-bold text-white'>InTulsa Featured</p>
           </div>
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Apply to an InTulsa Featured Career!</h3>

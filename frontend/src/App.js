@@ -1,4 +1,3 @@
-// Temp comment
 import { Routes, Route, Navigate } from 'react-router-dom';
 import * as ROUTES from './routes';
 import Auth from './Auth';
@@ -12,6 +11,7 @@ import {
   Companies,
   AccountRecovery,
   ResetPassword,
+// Temp comment
   Apply
 } from './pages';
 import { NavBar, Footer, SideNav } from './components';

@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 
-// Temp comment
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 
 export const UpdateJobFeatured = ({ job }) => {
