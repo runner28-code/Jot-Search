@@ -43,6 +43,7 @@ const uploadToS3 = async(req: any, res: any) => {
 
     const buffer = fs.readFileSync(fileObject.filepath)
 
+    const uuid = genUUID()
 
     const params = {
       Key: uuid,
@@ -98,7 +99,6 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
   const durationInMs = getActualRequestDurationInMs(start);
   const log = `[${formatted_date}] ${method}:${url} ${status} ${durationInMs.toLocaleString()} ms`;
   console.log(log);
-  next();
 };
 
 const app = express();

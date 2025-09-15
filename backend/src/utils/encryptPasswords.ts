@@ -16,8 +16,8 @@ import { DATASET_MAIN, Tables } from "../types/Common";
             WHERE email='test9@email.com' or email='v.deserio3@outlook.com' or email='test2@email.com'
         `;
         const options = {
+          query: query,
           location: "US",
-        };
         const [job] = await BigQueryService.getClient().createQueryJob(options);
         const [users] = await job.getQueryResults();
 

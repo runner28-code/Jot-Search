@@ -18,7 +18,6 @@ function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             console.log("Seeding...🌱");
-            // Some of these are dependent on each other, so we need to run them in order
             yield seedCandidates();
             yield seedCompanies();
             yield seedCategories();
@@ -95,7 +94,6 @@ function seedCandidates() {
                     phone: "123-456-7891",
                     email: "jsmithers@gmail.com",
                     comments: "He does everything!",
-// Temp comment
                 },
                 {
                     address: "124 Main St",

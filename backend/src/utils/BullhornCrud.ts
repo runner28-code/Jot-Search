@@ -110,6 +110,7 @@ export const saveBullhornJobs = async (jobs: any[]) => {
       try {
         console.log(`Savng job with ID = ${job.id}`);
         const parsedJob = parseBullhornJobToMain(job);
+        if (parsedJob) {
           // await migrateJobInTPP(parsedJob);
         }
 
@@ -239,3 +240,4 @@ export const saveLeads = async (leads: any[]) => {
   const expludeFields = ["address", "_score"];
   try {
     for (const lead of leads) {
+      try {

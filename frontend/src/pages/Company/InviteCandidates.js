@@ -9,6 +9,7 @@ import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
 
 export default function InviteCandidates({ company }) {
+  const { candidates, isLoading } = useGetCandidates({ 
     filtersArr: [],
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
@@ -106,7 +107,6 @@ function itemRenderer({ option, onClick, disabled}) {
             src={avatarUrl}
             alt='Candidate Avatar' />      
           : <Initials name={option.label} />
-        }  
         <div className="flex flex-col">
           <span className='text-lg text-blue-500'>{option.candidate?.firstName} {option.candidate?.lastName}</span>
           <span>{getTagLine({ candidate: option.candidate })}</span>

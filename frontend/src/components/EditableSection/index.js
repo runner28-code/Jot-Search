@@ -51,4 +51,3 @@ function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
       contentObject={contentObject} 
       handlePropertyChange={handlePropertyChange} />
   }
-  return <SectionContent contentObject={contentObject} />

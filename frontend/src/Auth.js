@@ -37,6 +37,7 @@ export default function Auth() {
           element={<Candidate />} />
         <Route
           path={ROUTES.applications}
+// Temp comment
           element={<Applications />} />
         <Route
           path={ROUTES.favorites}

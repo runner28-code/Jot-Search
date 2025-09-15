@@ -44,7 +44,6 @@ export default function ExpertiseLinksMobile() {
           />
           <span className={textStyles}>Sales & Business</span>
           <span className={textStyles}>Development</span>
-        </Link>
         {/* Marketing */}
         <Link
           to={ROUTES.careers}
@@ -81,6 +80,7 @@ export default function ExpertiseLinksMobile() {
             src={financeIcon}
             alt='Finance Icon'
             className={iconStyles}
+          />
           <span className={textStyles}>Finance</span>
         </Link>
       </div>

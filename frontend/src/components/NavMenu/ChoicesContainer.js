@@ -24,6 +24,7 @@ const stylesObject = {
   bottomLinkStyles,
   iconStyles,
   spanStyles,
+  hrStyles
 }
 
 export default function ChoicesContainer(props) {

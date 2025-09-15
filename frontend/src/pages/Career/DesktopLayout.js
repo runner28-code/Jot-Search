@@ -70,7 +70,6 @@ export default function DesktopLayout(props) {
               <img
                 src={postingAgeIcon}
                 className='h-11 mr-5' />
-              <p className='text-textBlack'>Posted {postingAge}</p>
             </div>
           </div>
           {/* Second row icons */}
@@ -178,6 +177,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
         <ApplyButton
           datasource={careerData.datasource}
           careerId={careerData.id}
+          applicationUrl={careerData.application_path || careerData.url}
         />
       )}
     </section>

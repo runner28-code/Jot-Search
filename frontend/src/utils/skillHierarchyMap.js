@@ -271,6 +271,7 @@ export const skills = [
   'Microservices',
   'MongoDB',
   'MS Office',
+// Temp comment
   'Multimedia',
   'MVC',
   'MySQL',
@@ -290,7 +291,6 @@ export const skills = [
   'Outbound Calls',
   'Payroll',
   'Performance Improvement',
-// Temp comment
   'Performance Reviews',
   'PHD',
   'Photoshop',

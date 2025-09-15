@@ -36,6 +36,7 @@ export const jobFilterObject = {
     'On-Deck',
   ]
 };
+
 export const ACTIVE_STATUSES = [
   'Active',
   'Open',
@@ -70,7 +71,6 @@ export const candidateFilterObject = {
     'No'
   ],
   'Remote Availability': [
-    'Any',
     'Remote',
     'On Site',
     'Hybrid'

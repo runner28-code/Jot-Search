@@ -48,4 +48,3 @@ export class CategoryController {
     try {
       const { filters, fields, page, count, operator } = body;
 
-      const categories = await getCategoriesByFilter(

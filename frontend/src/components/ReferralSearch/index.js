@@ -55,7 +55,6 @@ export default function ReferralSearch() {
   function handleAdd(_, jobArray) {
     const idToAdd = jobArray[jobArray.length - 1];
     const jobToAdd = choices.find(job => job.id === idToAdd);
-
     if (!jobToAdd) return;
     const newFilteredChoices = filteredChoices.filter(job => job.id !== idToAdd);
     setCurrentChosen([ ...currentChosen, jobToAdd ]);
@@ -63,6 +62,7 @@ export default function ReferralSearch() {
   }
 
   function handleRemove( jobId ) {
+    const newCurrentChosen = currentChosen.filter(job => job.id !== jobId);
     setCurrentChosen(newCurrentChosen);
     setFilteredChoices([ ...filteredChoices, choices.find(job => job.id === jobId) ]);
   }

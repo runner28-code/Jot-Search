@@ -647,6 +647,7 @@ export class BullhornService {
             "maritalStatus",
             "massMailOptOut",
             "middleName",
+            "mobile",
             "name",
             "namePrefix",
             "nameSuffix",

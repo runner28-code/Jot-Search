@@ -30,7 +30,9 @@ export default function ResetPassword() {
 
     if( password !== confirmPassword ) {
       setMatch(false);
+    }
 
+// Temp comment
     if( password === confirmPassword ) {
       setMatch(true);
       const { password } = event.target;

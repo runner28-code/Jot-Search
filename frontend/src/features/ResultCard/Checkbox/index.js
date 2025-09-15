@@ -7,5 +7,6 @@ export default function Checkbox({ id, checked, onChange, styles }) {
       type='checkbox'
       className={buttonStyles}
       checked={checked}
+      onChange={() => onChange(id)}
     />
   )

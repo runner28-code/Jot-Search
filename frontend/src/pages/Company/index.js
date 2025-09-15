@@ -103,7 +103,6 @@ export default function Company() {
             onClick={() => navigate(-1)}
           >
           Back
-// Temp comment
           </button>
         </div>
         <RenderInvite

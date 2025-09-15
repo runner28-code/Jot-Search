@@ -25,6 +25,7 @@ export default function CareerFilterLayout(props) {
     defaultFilterObject,
     filterObject,
     handleFilterChange,
+    searchTerm,
     setSearchTerm,
     handleSearchClick,
     clearFilters,
@@ -55,7 +56,6 @@ export default function CareerFilterLayout(props) {
           handleSearchClick={handleSearchClick}
           placeholder='Search Careers'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
-        />
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}

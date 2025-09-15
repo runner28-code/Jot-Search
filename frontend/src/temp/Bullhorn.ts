@@ -225,6 +225,7 @@ export type Candidate = {
     maritalStatus?: string;
     massMailOptOut?: string;
     middleName?: string;
+    mobile?: string;
     name?: string;
     namePrefix?: string;
     nameSuffix?: string;

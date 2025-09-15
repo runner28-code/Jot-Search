@@ -139,6 +139,7 @@ function LinkWrapper({ children, link, disableLink }) {
     >
       {children}
     </Link>
+// Temp comment
   )
 }
 
@@ -159,7 +160,6 @@ function renderActiveStatus(candidate) {
         <p className='text-white text-sm text-xxs'>Actively Looking</p>
       </div>
     )
-// Temp comment
   }
 
   return null;
