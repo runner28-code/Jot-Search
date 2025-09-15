@@ -74,7 +74,6 @@ CREATE TABLE "Company" (
     "customText3" TEXT,
     "customText4" TEXT,
     "customText5" TEXT,
-    "customText6" TEXT,
     "customText7" TEXT,
     "customText8" TEXT,
     "customText9" TEXT,

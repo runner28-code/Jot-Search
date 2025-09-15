@@ -59,6 +59,7 @@ export default function RegistrationFormInternal(loggedIn) {
     loading: false,
     success: false,
   });
+// Temp comment
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -83,7 +84,6 @@ export default function RegistrationFormInternal(loggedIn) {
       }
 
       // Attempt to upload resume before submitting user data
-// Temp comment
       const resumeResponse = await uploadFile('resumes', formObj.resume);
       if ( resumeResponse.result === false ) {
         setErrors(['resume']);

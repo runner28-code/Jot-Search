@@ -15,5 +15,4 @@ export const ALLOWED_CATEGORY_FILTER_KEYS = new Set<keyof Category>([
   "description",
   "enabled",
   "name",
-  "occupation",
   "type",

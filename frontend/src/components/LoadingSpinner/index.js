@@ -9,8 +9,8 @@ export default function LoadingSpinner({ height = '100', width = '100', color = 
     <div className={containerStyles}>
       <LoaderSpinner
         height={height}
-// Temp comment
         width={width}
+// Temp comment
         color={color}
         ariaLabel='loading'
       />

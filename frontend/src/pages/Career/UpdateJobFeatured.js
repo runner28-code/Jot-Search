@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+// Temp comment
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 
 export const UpdateJobFeatured = ({ job }) => {
@@ -50,7 +51,6 @@ export const UpdateJobFeatured = ({ job }) => {
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured
         </label>
-// Temp comment
       </div>
     </div>
   )

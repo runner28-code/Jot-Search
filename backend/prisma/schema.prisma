@@ -265,7 +265,6 @@ model Company {
   customInt1 Int?
   customInt2 Int?
   customInt3 Int?
-
   customText1  String?
   customText2  String?
   customText3  String?
@@ -394,6 +393,7 @@ model Job {
   type                Int?
   isDeleted           Boolean?
   postedAt            DateTime?
+  hidden              Boolean    @default(false)
   datasource          Datasource @default(main)
 
   invitedCandidates CandidateJobInvites[]
@@ -562,3 +562,4 @@ model User {
   employmentPreference String?
 
   candidateId String?
+  candidate   Candidate? @relation("userCandidate", fields: [candidateId], references: [id])

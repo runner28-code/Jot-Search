@@ -475,3 +475,4 @@ export const getCoordinatorDashboardStats = async (days: number) => {
   });
   const newApplicationsCompare = (newApplicationsInCurrentPeriod - newApplicationsInPreviousPeriod) * 100 / newApplicationsInCurrentPeriod
 
+  try {

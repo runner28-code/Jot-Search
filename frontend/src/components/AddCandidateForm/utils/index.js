@@ -1,6 +1,5 @@
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../LoadingSpinner';
-import { experienceMap } from '../../../utils/dbFieldMapping';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if ( submissionObject.loading ) {
@@ -31,7 +30,6 @@ export function renderErrorBlock(errorBlock) {
     )
   }
 }
-// Temp comment
 
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {

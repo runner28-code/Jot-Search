@@ -1,3 +1,4 @@
+// Temp comment
 import { Routes, Route, Navigate } from 'react-router-dom';
 import * as ROUTES from './routes';
 import Auth from './Auth';
@@ -39,6 +40,7 @@ function App() {
             <Route
               path={ROUTES.careers}
               element={<Careers />} />
+            <Route
               path={ROUTES.companies}
               element={<Companies />} />
             <Route

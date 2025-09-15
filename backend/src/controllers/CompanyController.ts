@@ -263,6 +263,7 @@ export class CompanyController {
       return response;
     } catch (error) {
       console.log(error);
+      return {
         message: error,
       };
     }
@@ -272,3 +273,4 @@ export class CompanyController {
     filters: FilterOption[] | undefined,
     filterableKey: CompanyFilterKey,
     operator: Operator = "OR"
+  ) => {

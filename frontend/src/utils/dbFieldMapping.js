@@ -16,7 +16,6 @@ export const veteranStatusMap = {
   D: 'I am a veteran with a disability',
   N: 'None of the above'
 };
-
 export const genderMap = {
   U: 'Prefer not to say',
   M: 'Male',
@@ -54,5 +53,6 @@ export const educationChoices = [
   'Post Doctoral',
   'High School',
   'Some College',
+  'Technical College'
 ];
 

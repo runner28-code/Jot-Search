@@ -111,7 +111,6 @@ export class CandidateController {
       return { message: "Candidate updated successfully", data: updatedUser, result: true };
     } catch (error) {
       console.error(error)
-      return { message: error, result: false };
     }
   }
 

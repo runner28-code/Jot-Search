@@ -57,7 +57,6 @@ export function convertUserToCandidate(user) {
     workAuthorized: user.workAuthorized || false,
     referredBy: user.referredBy || '',
     gender: user.gender || '',
-    ethnicity: user.ethnicity || '',
     veteran: user.veteran || '',
     disability: user.disability || '',
   };

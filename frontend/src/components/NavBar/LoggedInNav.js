@@ -59,6 +59,7 @@ const DesktopNavBarLayout = () => {
       <Link to={ROUTES.root}>
         <img
           src={inTulsaLogoText}
+// Temp comment
           alt='logo'
         />
       </Link>
@@ -101,3 +102,47 @@ const DropdownMenu = () => {
     if ( firstRender ) {
       setFirstRender(false);
     }
+  }
+
+  let chevronStyles = 'h-5 w-7 mx-8 ';
+  if ( isOpen ) {
+    chevronStyles += 'animate-spin';
+  } else if ( !firstRender && !isOpen ) {
+    chevronStyles += 'animate-spin-reverse';
+  }
+  return (
+    <div
+      className='relative'
+      ref={menuRef}
+    >
+      <div
+        className='flex items-center bg-royalBlue-bg rounded-md cursor-pointer bg-sky-100 pr-3 pl-5 py-4 rounded-lg'
+        onClick={handleClick}
+      >
+        <span className='text-sm text-royalBlue'>{ firstname }</span>
+        <img
+          src={chevronDownBlue}
+          alt='chevron'
+          className={chevronStyles}
+        />
+      </div>
+      <DropdownContent
+        isOpen={isOpen}
+        handleClick={closeDropdown}
+      />
+    </div>
+  )
+}
+
+function DropdownContent({ isOpen, handleClick }) {
+  let userType = AuthService.getUserRole();
+
+  if ( !isOpen ) {
+    return null;
+  }
+
+  return (
+    <div className='absolute top-full right-0 top-30 bg-white border-2 border-neutral-500 w-90 rounded-xl '>
+      { renderChoices(userType, handleClick) }
+    </div>
+  )

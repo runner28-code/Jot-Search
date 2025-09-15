@@ -66,6 +66,7 @@ export default function TypeaheadDropdown(props) {
       { renderLabel(name, label, required) }
       <input 
         type={type}
+        name={name}
         id={name}
         placeholder={placeholder}
         value={inputValue}

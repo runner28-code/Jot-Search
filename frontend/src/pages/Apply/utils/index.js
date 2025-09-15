@@ -56,7 +56,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
         className='h-8 w-8 ml-2'
         checked={useExistingResume}
         onChange={handleChange}
-      />
       <p className='text-md ml-2'>Use existing resume</p>
     </label>
   )
@@ -106,7 +105,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   }
   return (
     <button
-// Temp comment
       className={buttonStyles}
       type='submit'>
       {buttonString}

@@ -370,3 +370,4 @@ const job_filter_exclude_keys = [
     "sonographer",
     "speech",
     "spill response",
+    "staff pharmacist",

@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-// Temp comment
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
 import API from '../../services/API';
 
 export default function AccountRecovery() {
+// Temp comment
   const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');
 

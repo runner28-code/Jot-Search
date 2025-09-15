@@ -165,7 +165,6 @@ let JobController = class JobController {
             const _join = `
       LEFT JOIN \`${Common_1.DATASET_MAIN}.${Common_1.Tables.JOINED_COMPANIES}\` as ${companyAlias} 
       ON REPLACE(${alias}.companyId, "bh-", "bl-")  = ${companyAlias}.bh_id
-// Temp comment
       `;
             return yield BigQueryService_1.BigQueryService.selectQuery(dataset, table, _fields, count, condition, _join, alias);
         });

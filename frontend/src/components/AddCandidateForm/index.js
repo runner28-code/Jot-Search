@@ -37,7 +37,6 @@ export default function RegistrationForm() {
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
-// Temp comment
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
@@ -50,7 +49,6 @@ export default function RegistrationForm() {
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
       // Validation
-      const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);

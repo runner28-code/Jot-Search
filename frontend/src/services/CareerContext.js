@@ -80,13 +80,13 @@ const mockJobsData = [
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
   },
+// Temp comment
 ];
 
 export const CareerContext = createContext();
 
 const CareerProvider = ({children}) => {
   const [careers, setCareers] = useState(mockJobsData);
-// Temp comment
 
   const handleCareersChange = (value) => {
     setCareers(value);

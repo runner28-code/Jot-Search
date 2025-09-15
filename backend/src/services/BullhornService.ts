@@ -745,3 +745,4 @@ export class BullhornService {
               recentClientList: d.recentClientList || [],
               employmentPreference: d.employmentPreference || [],
               dateAvailable: new Date(d.dateAvailable),
+              desiredLocations: d.desiredLocations || [],

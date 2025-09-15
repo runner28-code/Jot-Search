@@ -32,11 +32,11 @@ const parseBullhornCandidateToUser = (data) => {
         companyURL: data.companyURL,
         revenue: data.salary,
         dateFounded: data.dateAdded,
+        employeeType: data.employeeType,
         experience: data.experience,
         hourlyRate: data.hourlyRate,
         willRelocate: data.willRelocate,
         ethnicity: data.ethnicity,
-        workAuthorized: data.workAuthorized,
         disability: data.disability,
     };
     return user;
