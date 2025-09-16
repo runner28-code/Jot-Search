@@ -65,6 +65,7 @@ export const roles = {
     'Sales & BizDev',
     'Sales Leaderships & Management'
   ],
+};
 
 export const skills = [
   '.NET',
@@ -277,7 +278,6 @@ export const skills = [
   'Network',
   'Networking',
   'NLP',
-  'Node.JS',
   'Non-Profit',
   'NoSQL',
   'Nursing',
@@ -300,3 +300,4 @@ export const skills = [
   'Power BI',
   'PowerPoint',
   'PPC',
+  'Print Media',

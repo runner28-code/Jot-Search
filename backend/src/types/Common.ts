@@ -99,3 +99,4 @@ export type GetSavedJobsResponse = {
   result: boolean;
   message?: any;
 };
+

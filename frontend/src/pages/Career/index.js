@@ -32,7 +32,6 @@ export default function CareerPage() {
     // Decode url encoded properties on career
     career.title = urlDecode(career.title);
     career.description = urlDecode(career.description);
-
     setCareerData({ ...career });
   }, []);
 
@@ -130,3 +129,4 @@ function Notification({title, content, text, email, company, id, add}) {
         add={add}
       />
     </div>
+  )

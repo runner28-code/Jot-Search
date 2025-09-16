@@ -511,7 +511,6 @@ export class BullhornService {
             "lastName",
             "leads",
             "middleName",
-            "mobile",
             "name",
             "namePrefix",
             "nameSuffix",
@@ -655,6 +654,7 @@ export class BullhornService {
             "numCategories",
             "numOwners",
             "occupation",
+            "otherDeductionsAmount",
             "otherIncomeAmount",
             "pager",
             "paperWorkOnFile",
@@ -745,3 +745,7 @@ export class BullhornService {
               employmentPreference: d.employmentPreference || [],
               dateAvailable: new Date(d.dateAvailable),
               desiredLocations: d.desiredLocations || [],
+              degreeList: d.degreeList || [],
+              categoryId: category.id
+            }
+          });

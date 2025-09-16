@@ -37,7 +37,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     {careers && careers.length > 0 && (
       <>  
         {careers.map((career, index) => {
-// Temp comment
           if (career.externalId === currentCareerId) { // Don't show the current career
             return null;
           }
@@ -48,7 +47,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
         })
         }
         {/* Only show Pagination if total is greater than the amount we render on a single page */}
-        { total > ITEMS_PER_PAGE && <PaginatedControls /> }
       </>
     )}
   </>)

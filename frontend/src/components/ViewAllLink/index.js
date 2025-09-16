@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-  return (
+export default function ViewAllLink({ href, text }) {
     <Link 
       to={ href }
       className='text-md text-royalBlue font-bold'

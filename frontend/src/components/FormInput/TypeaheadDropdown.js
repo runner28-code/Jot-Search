@@ -63,7 +63,6 @@ export default function TypeaheadDropdown(props) {
       className='relative w-full'
       ref={menuRef}  
     >
-      { renderLabel(name, label, required) }
       <input 
         type={type}
         name={name}
@@ -75,7 +74,6 @@ export default function TypeaheadDropdown(props) {
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
         disabled={disabled}
-// Temp comment
       />
       { renderDropdown(dropdownType, dropdownOpen, filteredChoices, currentChosen, handleChoiceClick) }
     </div>

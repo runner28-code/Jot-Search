@@ -25,6 +25,7 @@ const ResumePreview = ({ resumeUrl }) => {
   return (
     <div className='border border-grey300 border-2 rounded-lg'>
       {!pdfDocument && <LoadingSpinner />}
+      <canvas
         ref={canvasRef}
         className='rounded-lg'
       />
@@ -35,7 +36,6 @@ const ResumePreview = ({ resumeUrl }) => {
               <button
                 disabled={prevButtonDisabled}
                 onClick={() => setPage(page - 1)}
-              >
                 <BackIcon className={prevButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>

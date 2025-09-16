@@ -7,11 +7,11 @@ import API from '../../services/API';
 import AuthService from '../../services/auth';
 
 export default function Login() {
-// Temp comment
   const [error, setError] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+// Temp comment
     const { email, password } = event.target;
     const res = await API.post(ROUTES.APIlogin, {
       email: email.value,

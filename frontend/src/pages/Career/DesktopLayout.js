@@ -50,7 +50,6 @@ export default function DesktopLayout(props) {
           </div>
           {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold mt-xl'>{categoryString}</p>
-          {/* First row icons */}
           <div className='w-full flex items-center mt-xl'>
             {/* Location */}
             <div className='w-1/3 flex items-center'>
@@ -97,6 +96,7 @@ export default function DesktopLayout(props) {
               applicationUrl={careerData.application_path || careerData.url}
             />
           )}
+        </div>
       </div>
 
       {/* Coordinator Status */}

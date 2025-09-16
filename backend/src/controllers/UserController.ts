@@ -175,3 +175,4 @@ export class UserController {
   @Authorized()
   @Get("/user/history")
   async getHistory(@CurrentUser() authUser: User) {
+    try {

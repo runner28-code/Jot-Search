@@ -163,6 +163,7 @@ export class CompanyController {
       console.log(e);
       return { result: false, message: e };
     }
+  }
 
   @Authorized()
   @Post("/sendCandidates")
@@ -273,3 +274,4 @@ export class CompanyController {
     filterableKey: CompanyFilterKey,
     operator: Operator = "OR"
   ) => {
+    const _filters = filters?.filter(

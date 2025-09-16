@@ -26,6 +26,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     address2: candidateData.address2 || '',
     city: candidateData.city || '',
     state: candidateData.state || '',
+// Temp comment
     zip: candidateData.zip || '',
     phone: candidateData.phone || '',
     categoryId: candidateData.categoryId || null,
@@ -39,6 +40,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     resume: candidateData?.resume || '',
   });
 
+  function handleChange(name, value) {
     setFormData({
       ...formData,
       [name]: value,

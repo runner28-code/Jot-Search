@@ -33,3 +33,4 @@ CREATE TABLE "User" (
     "companyURL" TEXT,
     "numEmployees" TEXT,
     "revenue" TEXT,
+    "dateFounded" TIMESTAMP(3),

@@ -38,6 +38,7 @@ export const saveCandidate = async (
         },
         data: {
           savedCandidates: {
+            disconnect: {
               id: candidateId,
             },
           },
@@ -73,3 +74,4 @@ export const getSavedCandidates = async (companyUserId: string) => {
       user.savedCandidates = user.savedCandidates.map(candidate => ({
         ...candidate,
         user: candidate.users?.[0]
+        })

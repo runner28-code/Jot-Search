@@ -23,6 +23,7 @@ module.exports = {
         'spin-reverse': {
           from: {
             transform: 'rotate(180deg)'
+          },
           to: {
             transform: 'rotate(0deg)'
           },
@@ -156,7 +157,6 @@ module.exports = {
         '160': '40rem',
         '180': '45rem',
         '188': '47rem',
-        '200': '50rem',
         '210': '52.5rem',
         '216': '54rem',
         '220': '55rem',
@@ -197,3 +197,4 @@ module.exports = {
     },
     fontSize: {
       xxs: '0.9rem',
+      xs: '1.2rem',

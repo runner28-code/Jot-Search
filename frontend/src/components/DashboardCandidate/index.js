@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { VscChevronDown as ChevronDown } from 'react-icons/vsc';
-// Temp comment
 import { VscChevronUp as ChevronUp } from 'react-icons/vsc';
 import filterIcon from '../../assets/icons/filter-toggle.svg';
 import * as ROUTES from '../../routes';
@@ -40,7 +39,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
             <CompanyIcon />
             <p className='ml-4'>Companies</p>
           </Link>
-        </div>
       </div>
     </div>
     <div className='bg-sky-500 flex py-8 px-6 items-center text-white font-roboto'>

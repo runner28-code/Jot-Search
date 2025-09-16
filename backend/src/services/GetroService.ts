@@ -210,7 +210,6 @@ export class GetroService {
     }
 
     async getJobs(testMode = false, per_page = 30): Promise<any> {
-        console.log(`\n***** getJobs *****`);
         const companies: any[] = await getCompanies();
         if (companies.length === 0) {
             return {
@@ -219,3 +218,5 @@ export class GetroService {
         }
         try {
             await this.checkAuth();
+            let flag = false;
+            for (const company of companies) {

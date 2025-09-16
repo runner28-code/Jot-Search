@@ -315,3 +315,4 @@ export class CandidateController {
           const aLastName = a.lastname || a.lastName;
           const bLastName = b.lastname || b.lastName;
           return aLastName.localeCompare(bLastName);
+        }

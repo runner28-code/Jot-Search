@@ -24,7 +24,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
     setContentObject({ ...contentObject, [property]: value });
   }
 
-// Temp comment
   return (
     <section className='relative mb-14'>
       <div>
@@ -37,6 +36,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
 }
 
 EditableSection.propTypes = {
+// Temp comment
   entityID: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
   contentObjectProp: PropTypes.object.isRequired,

@@ -24,7 +24,6 @@ export default function Stats({ userType }) {
     switch (timeFrame) {
       case 'Today':
         return 1;
-// Temp comment
       case 'Last 7 Days':
         return 7;
       case 'Last 14 Days':
@@ -54,6 +53,7 @@ export default function Stats({ userType }) {
       setStats({
         'Total Companies': { ...result.totalCompanies },
         'Total Open Jobs': { ...result.totalOpenJobs },
+// Temp comment
         'Total Candidates': { ...result.totalCandidates },
         'Applications Submitted': { ...result.applicationsSubmitted },
         'Company Request Introductions': { ...result.companyRequestIntroductions },          

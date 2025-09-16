@@ -17,6 +17,7 @@ export default function FormInput(props) {
     name,
     label,
     placeholder,
+    value,
     required,
     onChange,
     choices,
@@ -53,7 +54,6 @@ export default function FormInput(props) {
     case 'multi-select':
       return <AccessibleDropdown
         type={type}
-        name={name}
         label={label}
         placeholder={placeholder}
         currentChosen={value}

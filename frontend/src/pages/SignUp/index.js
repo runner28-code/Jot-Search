@@ -30,6 +30,7 @@ export default function SignUp() {
   }
 
   return (
+// Temp comment
     <main className='-mt-28 bg-signup-page-hero bg-contain bg-no-repeat'>
       <div className='pt-40 flex flex-col justify-center items-center'>
         <div className='relative h-24 w-26 mb-15'>
@@ -42,7 +43,6 @@ export default function SignUp() {
         <div className='mt-34 w-full vw-768:w-2/3 max-w-290 bg-white border border-midGrey border-solid rounded-2xl flex justify-center'>
           <RegistrationForm />
         </div>
-// Temp comment
       </div>
     </main>
   )

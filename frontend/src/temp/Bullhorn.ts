@@ -250,3 +250,4 @@ export type Candidate = {
     preferredContact?: string;
     primarySkills?: string; // ?
     recentClientList?: string;
+    referredBy?: string;

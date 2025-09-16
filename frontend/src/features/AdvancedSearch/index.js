@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import ResultContainer from '../../features/ResultContainer';
 import ResultsHeader from '../../components/ResultsHeader';
 import TabContainer from '../../components/TabContainer';
 import CandidateFilterLayout from './CandidateFilterLayout';
@@ -26,7 +25,6 @@ const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
-// Temp comment
   coordinator: ['candidates', 'careers', 'companies'],
   company: ['careers', 'candidates' ],
   candidate: ['careers', 'companies'],

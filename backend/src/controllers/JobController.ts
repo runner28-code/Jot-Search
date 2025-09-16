@@ -327,3 +327,5 @@ export class JobController {
     }
     throw "invalid filter options";
   }
+
+  @Get("/apply")

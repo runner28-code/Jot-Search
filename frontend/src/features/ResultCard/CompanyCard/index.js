@@ -35,6 +35,7 @@ export default function CompanyCard({ data }) {
     >
       <Link
         to={`${ROUTES.companies}/${data.id}`}
+        className='h-92 w-full flex mb-10 px-xxl-3 pt-xxl-3 cursor-pointer bg-white border border-midGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
         tabIndex='0'
       >
         {/* Card Image */}

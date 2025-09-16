@@ -7,6 +7,7 @@ import { CITY_INCLUDE_KEYS_REGEX, JOB_EXCLUDE_KEYS_REGEX } from './constant';
 
 export const isExistByID = async (id: string, datset: string, table: string) => {
     try {
+        const query = `
             SELECT * FROM \`${datset}.${table}\`
             WHERE id=${id}
         `;
@@ -90,3 +91,4 @@ export const justifyData = (data: any, keys: string[], excludeKeys: string[] = [
 export const getFilterConditions = (
     filters: AdvancedFilterOption[],
     operator: Operator = "OR",
+    specialHandlers: Dictionary<(key: string, value: string) => string> = {},

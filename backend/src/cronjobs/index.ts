@@ -51,7 +51,6 @@ const setupCronJobs = async () => {
       consoleLog('/// CRON_JOB_STARTED: BULLHORN_GET_LEADS');
       await (await BullhornService.getClient()).getLeads(false, 50);
     } catch (error) {
-      consoleLog(error);
     }
     consoleLog('/// CRON_JOB_ENDED: BULLHORN_GET_LEADS');
   });
@@ -71,3 +70,4 @@ const setupCronJobs = async () => {
       consoleLog('/// CRON_JOB_STARTED: GETRO_GET_JOBS');
       await (await GetroService.getClient()).getJobs(false, 50);
     } catch (error) {
+      consoleLog(error);

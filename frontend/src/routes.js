@@ -72,3 +72,4 @@ const APIcompanyBase = '/api/company';
 export const APIcompanies = APIcompanyBase + '/search';
 export const APItoggleSaveCompany = APIcompanyBase + '/save';
 export const APIsavedCompanies = APIcompanyBase + '/saved';
+export const APIsendCandidatesToCompanies = APIcompanyBase + '/sendCandidates';

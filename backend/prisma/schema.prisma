@@ -564,3 +564,6 @@ model User {
 
   candidateId String?
   candidate   Candidate? @relation("userCandidate", fields: [candidateId], references: [id])
+
+  savedJobs       Job[]       @relation("userSavedJobs")
+  savedCandidates Candidate[] @relation("userSavedCandidates")
