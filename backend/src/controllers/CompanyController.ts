@@ -163,7 +163,6 @@ export class CompanyController {
       console.log(e);
       return { result: false, message: e };
     }
-  }
 
   @Authorized()
   @Post("/sendCandidates")

@@ -24,6 +24,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
     setContentObject({ ...contentObject, [property]: value });
   }
 
+// Temp comment
   return (
     <section className='relative mb-14'>
       <div>
@@ -51,3 +52,4 @@ function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
       contentObject={contentObject} 
       handlePropertyChange={handlePropertyChange} />
   }
+  return <SectionContent contentObject={contentObject} />

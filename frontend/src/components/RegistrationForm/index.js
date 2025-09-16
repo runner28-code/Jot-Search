@@ -172,4 +172,3 @@ export default function RegistrationForm(loggedIn) {
         community: ''
       });
     }
-    handleChange(name, value);

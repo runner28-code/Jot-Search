@@ -655,7 +655,6 @@ export class BullhornService {
             "numCategories",
             "numOwners",
             "occupation",
-            "otherDeductionsAmount",
             "otherIncomeAmount",
             "pager",
             "paperWorkOnFile",

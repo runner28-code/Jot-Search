@@ -23,6 +23,7 @@ export default function TypeaheadDropdown(props) {
   const [filteredChoices, setFilteredChoices] = useState(choices);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [listening, setListening] = useState(false);
+  const menuRef = useRef(null);
 
   const handleChoiceClick = useCallback((choice) => {
     if (!currentChosen.includes(choice)) {
@@ -74,6 +75,7 @@ export default function TypeaheadDropdown(props) {
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
         disabled={disabled}
+// Temp comment
       />
       { renderDropdown(dropdownType, dropdownOpen, filteredChoices, currentChosen, handleChoiceClick) }
     </div>

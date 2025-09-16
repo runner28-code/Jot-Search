@@ -60,7 +60,6 @@ export default function RegistrationFormInternal(loggedIn) {
     success: false,
   });
 
-// Temp comment
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -118,6 +117,7 @@ export default function RegistrationFormInternal(loggedIn) {
           loading: false,
           success: false,
         });
+// Temp comment
       }
     }
   }, [submissionObject.loading]);

@@ -7,6 +7,7 @@ import API from '../../services/API';
 import AuthService from '../../services/auth';
 
 export default function Login() {
+// Temp comment
   const [error, setError] = useState('');
 
   const handleSubmit = async (event) => {
@@ -28,7 +29,6 @@ export default function Login() {
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
     }
-// Temp comment
   }
 
   return (

@@ -34,7 +34,6 @@ export default function SideNav({ userType }) {
 SideNav.propTypes = {
   userType: PropTypes.string.isRequired
 }
-
 function renderChoice(choice, selected, index, choicesLength) {
   let baseChoiceStyles = 'w-full h-30 flex items-center cursor-pointer border-b border-solid border-smokeGray ';
   const selectedChoice = choice.label === selected;
@@ -48,7 +47,6 @@ function renderChoice(choice, selected, index, choicesLength) {
   const choiceStyles = selectedChoice ? baseChoiceStyles + selectedClass : baseChoiceStyles;
   let iconStyles = 'w-14 h-14 mx-9 ';
   const strokeIcons = ['Add User', 'My Account']; // These icons use stroke, rest use fill
-// Temp comment
   if ( selectedChoice ) {
     iconStyles += strokeIcons.includes(choice.label) ? 'stroke-white' : 'fill-white';
   } else {

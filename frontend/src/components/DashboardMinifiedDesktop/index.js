@@ -30,7 +30,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
 DashboardMinifiedDesktop.propTypes = {
   location: PropTypes.string.isRequired
 }
-
 function CareerHeader ({ location }) {
   const loggedIn = AuthService.loggedIn();
 
@@ -53,7 +52,6 @@ function CareerHeader ({ location }) {
     )
   }
   if( userRole === 'company' ) {
-// Temp comment
     return (
       <div className='flex flex-col items-start py-14 px-8 '>
         <span className='flex flex-row text-lg items-center text-dply '>

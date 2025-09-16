@@ -70,6 +70,7 @@ export default function DesktopLayout(props) {
               <img
                 src={postingAgeIcon}
                 className='h-11 mr-5' />
+              <p className='text-textBlack'>Posted {postingAge}</p>
             </div>
           </div>
           {/* Second row icons */}
@@ -96,7 +97,6 @@ export default function DesktopLayout(props) {
               applicationUrl={careerData.application_path || careerData.url}
             />
           )}
-        </div>
       </div>
 
       {/* Coordinator Status */}

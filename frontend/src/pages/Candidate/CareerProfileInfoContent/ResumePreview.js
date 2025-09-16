@@ -24,7 +24,7 @@ const ResumePreview = ({ resumeUrl }) => {
 
   return (
     <div className='border border-grey300 border-2 rounded-lg'>
-      <canvas
+      {!pdfDocument && <LoadingSpinner />}
         ref={canvasRef}
         className='rounded-lg'
       />

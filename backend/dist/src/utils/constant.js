@@ -68,7 +68,6 @@ const job_filter_exclude_keys = [
     "case manager",
     "cashier",
     "casino",
-// Temp comment
     "chef",
     "chemical",
     "chemist",
@@ -239,7 +238,6 @@ const job_filter_exclude_keys = [
     "lighting",
     "lpn",
     "lunch",
-    "machine operator",
     "machinist",
     "maintenance",
     "mammographer",

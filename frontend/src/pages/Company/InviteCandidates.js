@@ -18,6 +18,7 @@ export default function InviteCandidates({ company }) {
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
 
   const candidateOptions = candidates?.map(candidate => {
+// Temp comment
     return {
       label: candidate.name,
       value: candidate.id,
@@ -107,6 +108,7 @@ function itemRenderer({ option, onClick, disabled}) {
             src={avatarUrl}
             alt='Candidate Avatar' />      
           : <Initials name={option.label} />
+        }  
         <div className="flex flex-col">
           <span className='text-lg text-blue-500'>{option.candidate?.firstName} {option.candidate?.lastName}</span>
           <span>{getTagLine({ candidate: option.candidate })}</span>

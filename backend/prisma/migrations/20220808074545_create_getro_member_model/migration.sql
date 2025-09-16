@@ -28,7 +28,6 @@ CREATE TABLE "UserTalentCollection" (
     "is_network_admin" BOOLEAN,
     "is_network_ambassador" BOOLEAN,
 
-    CONSTRAINT "UserTalentCollection_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateTable

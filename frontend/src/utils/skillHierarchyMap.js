@@ -65,7 +65,6 @@ export const roles = {
     'Sales & BizDev',
     'Sales Leaderships & Management'
   ],
-};
 
 export const skills = [
   '.NET',
@@ -271,7 +270,6 @@ export const skills = [
   'Microservices',
   'MongoDB',
   'MS Office',
-// Temp comment
   'Multimedia',
   'MVC',
   'MySQL',

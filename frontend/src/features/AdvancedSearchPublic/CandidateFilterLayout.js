@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
+// Temp comment
 
 const dropdownFiltersCoord = [
   'Category',

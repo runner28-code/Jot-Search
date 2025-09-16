@@ -1,4 +1,3 @@
-const expertiseObjectArr = JSON.parse(localStorage.getItem('categories')) || [];
 const expertises = expertiseObjectArr.map(expertise => expertise.name).sort();
 import { experienceMap, educationChoices } from './dbFieldMapping';
 import { skills } from './skillHierarchyMap';
@@ -71,6 +70,7 @@ export const candidateFilterObject = {
     'No'
   ],
   'Remote Availability': [
+    'Any',
     'Remote',
     'On Site',
     'Hybrid'

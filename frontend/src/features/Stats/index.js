@@ -8,7 +8,6 @@ const statFilterChoices = [
   'Today',
   'Last 7 Days',
   'Last 14 Days',
-// Temp comment
   'Last 30 Days',
   'Last 90 Days'
 ];
@@ -25,6 +24,7 @@ export default function Stats({ userType }) {
     switch (timeFrame) {
       case 'Today':
         return 1;
+// Temp comment
       case 'Last 7 Days':
         return 7;
       case 'Last 14 Days':

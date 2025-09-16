@@ -7,7 +7,6 @@ exports.JobFilter = {
         title: "title",
         skill: "skillList",
         city: "address_city",
-// Temp comment
         employmentType: "employmentType",
         onSite: "onSite",
         yearsRequired: "yearsRequired",
@@ -16,6 +15,7 @@ exports.JobFilter = {
         hidden: "hidden",
         companyId: "clientCorporationID",
     },
+// Temp comment
     main: {
         id: "id",
         status: "status",
