@@ -19,7 +19,6 @@ const dropdownFilters = [
 ];
 const checkboxFiltersCoord = [
   'Open to Relocation',
-  'Authorized to work in the US',
 ];
 const checkboxFilters = [
   'Authorized to work in the US',

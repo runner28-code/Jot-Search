@@ -222,7 +222,6 @@ export async function getJobsFull(filters, count, operator, page) {
   });
 
   const { data } = await API.post(ROUTES.APIjobs, {
-// Temp comment
     'filters': formattedFilters,
     'count': count || 5,
     'page': page || null,

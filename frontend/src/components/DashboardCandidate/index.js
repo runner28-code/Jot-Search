@@ -7,6 +7,7 @@ import { VscChevronUp as ChevronUp } from 'react-icons/vsc';
 import filterIcon from '../../assets/icons/filter-toggle.svg';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 
 
 
@@ -55,4 +56,5 @@ export default function DashboardCandidate({togglePassState, toggle}) {
           {!toggle ? <ChevronDown /> : <ChevronUp />}
         </button>
       </div>
+    </div>
   </>)

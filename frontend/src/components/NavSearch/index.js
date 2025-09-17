@@ -79,7 +79,6 @@ export default function NavSearch({ placeholder }) {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
 
-  const combinedResults = {
     jobs: jobs || [],
     companies: companies || [],
     candidates: candidates || [],
@@ -100,7 +99,6 @@ export default function NavSearch({ placeholder }) {
       <div ref={menuRef} >
         <NavSearchBar
           searchTerm={ searchTerm }
-// Temp comment
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }
           alternateStylesObject={ stylesObject } 

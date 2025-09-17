@@ -128,6 +128,7 @@ const job_filter_exclude_keys = [
   "educate",
   "education",
   "educator",
+  "electrician",
   "electronics tech",
   "elementary",
   "emergency",

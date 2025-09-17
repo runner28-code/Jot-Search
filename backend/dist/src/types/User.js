@@ -25,7 +25,6 @@ exports.IUSER = {
     referredBy: "",
     roles: "",
     description: "",
-    phone: "",
     status: "",
     username: "",
     logo: "",

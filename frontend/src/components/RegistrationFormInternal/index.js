@@ -114,12 +114,14 @@ export default function RegistrationFormInternal(loggedIn) {
         console.log('Error: ', result);
         setErrorBlock(result);
         setSubmissionObject({
+          loading: false,
           success: false,
         });
       }
     }
   }, [submissionObject.loading]);
 
+// Temp comment
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
       setTimeout(() => {

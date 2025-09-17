@@ -10,6 +10,7 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
   const linkStyles = forceShowPages.includes(pathname) ? stylesObject.baseLinkStyles : stylesObject.topLinkStyles;
   return (<>
     <Link 
+// Temp comment
       to={ROUTES.login}
       onClick={handleOptionClick}
       className={linkStyles}
@@ -20,6 +21,7 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
     <hr className={stylesObject.hrStyles} />
     <Link 
       to={ROUTES.signup}
+      onClick={handleOptionClick}
       className={stylesObject.bottomLinkStyles}
     >
       <FaUserEdit className={stylesObject.iconStyles} />

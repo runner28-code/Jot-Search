@@ -17,7 +17,6 @@ export default function InviteCandidates({ company }) {
 
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
 
-  const candidateOptions = candidates?.map(candidate => {
     return {
       label: candidate.name,
       value: candidate.id,
@@ -88,6 +87,7 @@ export default function InviteCandidates({ company }) {
         <button 
           onClick={() => setSelected([])} 
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>
+      </div>
     </section>
   )
 }

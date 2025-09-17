@@ -10,7 +10,6 @@ import {
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
 import ResumePreview from './ResumePreview';
-
 export default function ExtendedEditableContent({ candidateData, handleCandidateUpdate, setEditMode, editMode }) {
   const { categories } = useContext(CategoryContext);
   const isSourceUserTable = candidateData.sourceTable === 'User';
@@ -20,7 +19,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     avatar: candidateData.avatar || '',
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
-// Temp comment
     occupation: candidateData.occupation || '',
     companyName: candidateData.companyName || '',
     address1: candidateData.address1 || '',

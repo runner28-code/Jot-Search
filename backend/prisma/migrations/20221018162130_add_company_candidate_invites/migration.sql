@@ -7,5 +7,4 @@ CREATE TABLE "CompanyCandidateInvites" (
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
     CONSTRAINT "CompanyCandidateInvites_pkey" PRIMARY KEY ("id")
-);
 

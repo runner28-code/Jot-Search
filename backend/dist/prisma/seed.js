@@ -110,6 +110,7 @@ function seedCandidates() {
                     lastName: "Tester",
                     phone: "987-654-3210",
                     email: "bobtesting@gmail.com",
+                    comments: "He does nothing...",
                 },
             ],
         });

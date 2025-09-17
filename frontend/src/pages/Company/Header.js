@@ -118,6 +118,7 @@ export default function Header({ companyData }) {
       </section>
     </>
   )
+}
 
 Header.propTypes = {
   companyData: PropTypes.object.isRequired,

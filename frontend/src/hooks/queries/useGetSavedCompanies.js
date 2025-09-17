@@ -1,4 +1,3 @@
-// Temp comment
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../..';
 import { getSavedCompanies } from '../../services/API';

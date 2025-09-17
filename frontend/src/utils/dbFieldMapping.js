@@ -22,7 +22,6 @@ export const genderMap = {
   M: 'Male',
   F: 'Female',
   N: 'Non-Binary',
-// Temp comment
   O: 'Other'
 };
 
@@ -55,6 +54,7 @@ export const educationChoices = [
   'Post Doctoral',
   'High School',
   'Some College',
+// Temp comment
   'Technical College'
 ];
 

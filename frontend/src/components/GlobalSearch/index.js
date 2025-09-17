@@ -32,7 +32,6 @@ export default function GlobalSearch({ placeholder }) {
     debounceSearchTermFunction( searchTerm );
   }
 
-  /* Debounce functions will wait until user stops typing to send API call */
   const debounceSearchTermFunction = useCallback(
     debounce( handleDebounce, 300 ),
     []
@@ -65,6 +64,7 @@ export default function GlobalSearch({ placeholder }) {
   }
 
   /* Clear state on page change */
+  useEffect( () => {
     setSearchTerm('');
   }, [location]);
 

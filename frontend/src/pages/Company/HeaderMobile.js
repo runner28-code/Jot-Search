@@ -48,7 +48,6 @@ function HeaderContent({ companyData }) {
                   companyId={companyData.id}
                 />
               </div> 
-            </div>
           </div>
         </div>
 

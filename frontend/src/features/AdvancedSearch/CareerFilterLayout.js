@@ -16,6 +16,7 @@ const dropDownFiltersCandidate = [
   'Years Experience'
 ]
 
+export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
 
   const {
@@ -43,6 +44,7 @@ const dropDownFiltersCandidate = [
   const buttonStylesCareer = 'text-white text-sm whitespace-nowrap';
   return (
     <div className='flex flex-col gap-xxl-4'>
+// Temp comment
       <div className='flex flex-wrap gap-xxl-4'>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
       </div>

@@ -86,6 +86,7 @@ export default function Company() {
           { renderSectorList(companyData, width, stylesObject) } 
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Funding */}
+// Temp comment
           <div className='p-6'>
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>Funding</h4>
             { renderCompanyDescription(companyData.funding, 'text-md mb-10 leading-[32px]') }
@@ -157,7 +158,6 @@ function renderCompanyDescription(description, textStyles) {
   }
   return (
     <div className={textStyles}>
-// Temp comment
       {description}
     </div>
   )

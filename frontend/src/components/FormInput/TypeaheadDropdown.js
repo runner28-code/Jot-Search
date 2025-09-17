@@ -35,12 +35,10 @@ export default function TypeaheadDropdown(props) {
 
   /* Close dropdown on any outside clicks */
   useEffect(() => {
-    listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
     if (!dropdownOpen) setInputValue('');
   }, [dropdownOpen]);
   
   /* Filter choices based on input */
-// Temp comment
   useEffect(() => {
     if (dropdownType === 'tags') {
       setFilteredChoices(choices.filter(choice => choice.toLowerCase().includes(inputValue.toLowerCase())));

@@ -531,7 +531,6 @@ export class BullhornService {
           ].join(","),
           query:
             "isDeleted:0  AND NOT status:Archive NOT clientCorporation.status:Archive",
-          start: offset,
           count,
           sort,
         });
