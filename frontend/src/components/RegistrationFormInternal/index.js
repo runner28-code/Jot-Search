@@ -114,7 +114,6 @@ export default function RegistrationFormInternal(loggedIn) {
         console.log('Error: ', result);
         setErrorBlock(result);
         setSubmissionObject({
-          loading: false,
           success: false,
         });
       }

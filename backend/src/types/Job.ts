@@ -46,3 +46,4 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "country_id",
   "employmentType",
   "title",
+  "willRelocate",

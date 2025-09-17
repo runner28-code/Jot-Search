@@ -76,11 +76,11 @@ export default function ReferralSearch() {
   
   return (
     <div className='w-340'>
+      <div className='flex mb-8'>
         { renderChosen(currentChosen, handleRemove) }
       </div>
       <TypeaheadDropdown
         type='text'
-        dropdownType='list-select'
         name='referrals'
         placeholder='Select a job to refer...' 
         currentChosen={currentChosen}

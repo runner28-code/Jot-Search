@@ -16,3 +16,4 @@ export const encryptPassword = (password: string) => {
 
 export const checkPassword = (encryptedPassword:string, password: string) => {
     const sr = encryptedPassword.substring(0,24);
+    const hash_in_db = encryptedPassword.substring(24);

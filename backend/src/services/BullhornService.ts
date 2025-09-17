@@ -511,6 +511,7 @@ export class BullhornService {
             "lastName",
             "leads",
             "middleName",
+            "mobile",
             "name",
             "namePrefix",
             "nameSuffix",
@@ -749,3 +750,10 @@ export class BullhornService {
               categoryId: category.id
             }
           });
+          if (!testMode) {
+            console.log("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            const res = await saveCandidates(updatedData);
+            // if (res === -1) return;
+          }
+          offset += count;
+          repeatErr = 0;

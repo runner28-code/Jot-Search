@@ -243,3 +243,5 @@ export const saveLeads = async (leads: any[]) => {
       try {
         console.log(`Savng Lead with ID = ${lead.id}`);
         const existing = await db.lead.findFirst({
+          where: {
+            externalId: lead.id,

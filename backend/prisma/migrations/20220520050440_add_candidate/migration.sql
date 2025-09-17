@@ -76,3 +76,4 @@ CREATE TABLE "Candidate" (
     "smsOptIn" TEXT,
     "source" TEXT,
     "specialities" TEXT,
+    "ssn" TEXT,

@@ -16,7 +16,6 @@ import * as ROUTES from './routes';
 
 export default function Auth() {
   if (!AuthService.loggedIn()) {
-// Temp comment
     return <Navigate to={ROUTES.landingPage} />
   }
 

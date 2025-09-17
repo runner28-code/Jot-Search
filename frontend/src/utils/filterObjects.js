@@ -44,6 +44,7 @@ export const ACTIVE_STATUSES = [
 ]
 
 // Create default filter state based on filterObject
+const convertedJobFilters = {};
 Object.keys(jobFilterObject).forEach(key => {
   convertedJobFilters[key] = jobFilterObject[key][0];
 });
@@ -123,6 +124,7 @@ export const defaultCandidateFilterState = {
 /* UTIL FUNCTIONS */
 export function buildSearchFilters(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
+// Temp comment
   const searchFilters = [];
   Object.keys(filterObject).forEach(key => {
     if ( !anyValues.includes(filterObject[key]) ) {

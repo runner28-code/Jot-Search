@@ -20,13 +20,13 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     avatar: candidateData.avatar || '',
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
+// Temp comment
     occupation: candidateData.occupation || '',
     companyName: candidateData.companyName || '',
     address1: candidateData.address1 || '',
     address2: candidateData.address2 || '',
     city: candidateData.city || '',
     state: candidateData.state || '',
-// Temp comment
     zip: candidateData.zip || '',
     phone: candidateData.phone || '',
     categoryId: candidateData.categoryId || null,

@@ -125,6 +125,7 @@ export default function Apply() {
       navigate('/applications');
     }
   }, [submissionObject.success]);
+
   function handleSubmit(e) {
     e.preventDefault();
     setSubmissionObject({ loading: true });

@@ -81,7 +81,6 @@ module.exports = {
       },
       backgroundImage: {
         'tulsa-3': 'url(\'./assets/images/tulsa-3.webp\')',
-        'tulsa-3-vert': 'url(\'./assets/images/tulsa-3-vert.webp\')',
         'explore-tulsa': 'url(\'./assets/images/home-hero.jpg\')',
         'join-hero': 'url(\'./assets/images/join-hero.jpg\')',
         'tulsa-hero': 'url(\'./assets/images/lifeintulsa.jpg\')',
@@ -157,6 +156,7 @@ module.exports = {
         '160': '40rem',
         '180': '45rem',
         '188': '47rem',
+        '200': '50rem',
         '210': '52.5rem',
         '216': '54rem',
         '220': '55rem',
@@ -198,3 +198,5 @@ module.exports = {
     fontSize: {
       xxs: '0.9rem',
       xs: '1.2rem',
+      sm: '1.4rem',
+      base: '1.6rem',

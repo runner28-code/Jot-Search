@@ -97,6 +97,7 @@ export default function RegistrationForm() {
         setFormObj(defaultState);
         setSubmissionObject({
           loading: false,
+          success: false,
         });
       }, 2000);
     }

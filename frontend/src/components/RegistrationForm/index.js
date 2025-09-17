@@ -92,6 +92,7 @@ export default function RegistrationForm(loggedIn) {
         });
         return;
       }
+// Temp comment
       formObj.resume = resumeResponse;
 
       // Format formObj

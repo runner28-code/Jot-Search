@@ -77,3 +77,4 @@ export const IUSER = {
   phone: "",
   status: "",
   username: "",
+  logo: "",

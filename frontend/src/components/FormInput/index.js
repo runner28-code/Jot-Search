@@ -35,7 +35,6 @@ export default function FormInput(props) {
     inputHeight: inputHeight,
     inputWidth: 'w-full',
     listStyles: dropdownStyles,
-    listItemStyles: dropdownItemStyles
   };
   switch (type) {
     case 'file':
@@ -54,6 +53,7 @@ export default function FormInput(props) {
     case 'multi-select':
       return <AccessibleDropdown
         type={type}
+        name={name}
         label={label}
         placeholder={placeholder}
         currentChosen={value}

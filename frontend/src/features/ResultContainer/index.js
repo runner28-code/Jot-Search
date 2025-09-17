@@ -4,8 +4,8 @@ import CompactCareerCard from '../ResultCard/CompactCareerCard';
 import CareerCard from '../ResultCard/CareerCard';
 import CompanyCard from '../ResultCard/CompanyCard';
 import ViewAllLink from '../../components/ViewAllLink';
-import { pluralizedTypes } from '../../utils/constants';
 // Temp comment
+import { pluralizedTypes } from '../../utils/constants';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 

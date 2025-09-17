@@ -92,3 +92,4 @@ export const saveJobs = async (jobs: any[]) => {
 		console.log('----- jobs', jobs);
     try {
         for (const job of jobs) {
+            try {

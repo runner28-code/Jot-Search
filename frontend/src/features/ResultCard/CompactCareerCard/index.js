@@ -74,7 +74,6 @@ CompactCareerCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     city: PropTypes.string,
-    state: PropTypes.string,
     company: PropTypes.shape({
       name: PropTypes.string,
       logo: PropTypes.string

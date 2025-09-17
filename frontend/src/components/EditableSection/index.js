@@ -36,7 +36,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
 }
 
 EditableSection.propTypes = {
-// Temp comment
   entityID: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
   contentObjectProp: PropTypes.object.isRequired,

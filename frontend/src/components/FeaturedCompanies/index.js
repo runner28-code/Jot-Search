@@ -46,6 +46,7 @@ export default function FeaturedCompanies() {
     </div>
   )
 }
+function renderColorShapes() {
   return(
     <div className='relative w-full w-24 mb-8'>
       <div className='bg-pinkSquare w-12 h-12' />

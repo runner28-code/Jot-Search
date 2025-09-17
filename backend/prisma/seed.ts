@@ -72,6 +72,7 @@ async function seedCandidates() {
         address_state: "OK",
         address_zip: "74008",
         description: "Great candidate for everything",
+        companyName: "Eddy's Everything",
         companyURL: "eddyseverything.com",
         firstName: "John",
         lastName: "Smith",
@@ -143,7 +144,6 @@ async function seedCompanies() {
         name: "Testing Co",
         annualRevenue: 1000000,
         logo: "https://picsum.photos/200",
-        bh_description: "a company",
         getro_description: "a healthcare company",
         description: "Testing a new description",
         city: "Tulsa",
@@ -178,3 +178,4 @@ async function seedUsers() {
     data: [
       {
         avatar: "https://picsum.photos/200",
+        email: "coordinator@aerovision.io",

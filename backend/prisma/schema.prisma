@@ -567,3 +567,8 @@ model User {
 
   savedJobs       Job[]       @relation("userSavedJobs")
   savedCandidates Candidate[] @relation("userSavedCandidates")
+  savedCompanies  Company[]   @relation("userSavedCompanies")
+
+  applications Application[] @relation("userApplications")
+
+  createdAt DateTime @default(now())

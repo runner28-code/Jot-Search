@@ -98,3 +98,4 @@ export const parseBullhornJobToMain = (data: BhJob) => {
     address2: data.address_address2,
     city: data.address_city,
     state: data.address_state,
+    zip: data.address_zip,

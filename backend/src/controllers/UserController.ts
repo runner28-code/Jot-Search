@@ -176,3 +176,5 @@ export class UserController {
   @Get("/user/history")
   async getHistory(@CurrentUser() authUser: User) {
     try {
+      const history = await db.history.findMany({
+        where: {

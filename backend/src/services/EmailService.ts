@@ -91,4 +91,4 @@ export const sendJobsToCandidates = async (jobs: string[], candidates_emails: st
     console.log(error);
     console.log(JSON.stringify(error.response.body));
     throw error;
-  }
+}

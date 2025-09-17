@@ -329,3 +329,6 @@ export class JobController {
   }
 
   @Get("/apply")
+  async apply(
+    @QueryParam("candidate") candidate: string,
+    @QueryParam("job") job: string

@@ -54,7 +54,6 @@ export class GetroService {
                     return false;
                 }
                 console.log('Network ID: ', this.networkId);
-                return true;
             }
         } catch (error) {
             console.log(error);
@@ -210,6 +209,7 @@ export class GetroService {
     }
 
     async getJobs(testMode = false, per_page = 30): Promise<any> {
+        console.log(`\n***** getJobs *****`);
         const companies: any[] = await getCompanies();
         if (companies.length === 0) {
             return {
@@ -220,3 +220,4 @@ export class GetroService {
             await this.checkAuth();
             let flag = false;
             for (const company of companies) {
+                // if (company.id === 'gt-23348') flag = true;

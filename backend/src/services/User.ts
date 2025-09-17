@@ -478,3 +478,7 @@ export const getCoordinatorDashboardStats = async (days: number) => {
   try {
     const data = {
       totalCompanies: {
+        count: totalCompanies,
+        compare: companyCompare || 0
+      },
+      totalOpenJobs: {

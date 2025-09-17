@@ -98,9 +98,9 @@ export default function NavSearch({ placeholder }) {
   return (
     <div className='relative'>
       <div ref={menuRef} >
-// Temp comment
         <NavSearchBar
           searchTerm={ searchTerm }
+// Temp comment
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }
           alternateStylesObject={ stylesObject } 

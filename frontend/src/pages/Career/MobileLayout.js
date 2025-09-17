@@ -21,7 +21,6 @@ export default function MobileLayout(props) {
     categoryString,
     addressString,
     salaryString,
-    postingAge,
     role
   } = props.data;
   const navigate = useNavigate();

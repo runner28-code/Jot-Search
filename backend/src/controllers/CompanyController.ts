@@ -275,3 +275,5 @@ export class CompanyController {
     operator: Operator = "OR"
   ) => {
     const _filters = filters?.filter(
+      (opt) => CompanyFilter[filterableKey]?.[opt.key] != null
+    );

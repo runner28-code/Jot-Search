@@ -251,3 +251,6 @@ export type Candidate = {
     primarySkills?: string; // ?
     recentClientList?: string;
     referredBy?: string;
+    salary?: string;
+    salaryLow?: string;
+    secondarySkills?: string;

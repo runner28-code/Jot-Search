@@ -7,6 +7,7 @@
 */
 -- AlterTable
 ALTER TABLE "Job" ADD COLUMN     "durationWeeks" INTEGER,
+ADD COLUMN     "hoursOfOperation" TEXT,
 ADD COLUMN     "hoursPerWeek" INTEGER,
 ADD COLUMN     "isInterviewRequired" BOOLEAN,
 ADD COLUMN     "isOpen" BOOLEAN,
@@ -16,3 +17,4 @@ ADD COLUMN     "numOpenings" INTEGER,
 ADD COLUMN     "payRate" INTEGER,
 ADD COLUMN     "publicDescription" TEXT,
 ADD COLUMN     "reasonClosed" TEXT,
+ADD COLUMN     "source" TEXT,

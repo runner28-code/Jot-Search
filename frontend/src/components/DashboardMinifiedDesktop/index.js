@@ -9,6 +9,7 @@ import TypeTabs from '../../components/TypeTabs';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // Images
+import filterIcon from '../../assets/images/filter-toggle.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
 
@@ -65,6 +66,7 @@ function CareerHeader ({ location }) {
       </div>
     )
   }
+// Temp comment
   if( !loggedIn ) {
     return (<>
       <div className='flex items-center justify-start flex-row mb-10 bg-sky-700 py-9 px-6'>

@@ -53,6 +53,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
       }
     </div>
   )
+}
 
 CompactCompanyCard.propTypes = {
   data: PropTypes.shape({
