@@ -11,6 +11,7 @@ export default function ResetPassword() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [match, setMatch] = useState('');
+// Temp comment
   const [success, setSuccess] = useState('');
 
   const queryParams = new URLSearchParams(window.location.search);
@@ -58,6 +59,7 @@ export default function ResetPassword() {
             className='underline block my-4 text-royalBlue'
           >
             Login to your account
+          </Link>
         </div>
       )
     }

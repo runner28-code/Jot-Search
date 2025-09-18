@@ -34,7 +34,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
     return null
   }
   
-// Temp comment
   return (
     <div className={ rootClass }>
       {choices.map((choice, index) => {
@@ -66,7 +65,6 @@ export default function Dropdown(props) {
     type
   } = props;
     
-  const [isOpen, setIsOpen] = useState(false);
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 

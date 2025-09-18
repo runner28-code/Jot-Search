@@ -73,5 +73,4 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
         handleFilterChange={handleFilterChange}
       />
     )
-// Temp comment
   })

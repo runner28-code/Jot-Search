@@ -71,6 +71,7 @@ export default function Candidate() {
     if (candidateData.sourceTable === 'Candidate') {
       const convertedCandidateObject = convertUserToCandidate(updateObject);
       updateResponse = await updateCandidate(convertedCandidateObject, id);
+    } else {
       updateResponse = await updateUser(formattedUpdateObject, id);
     }
     if (isProfilePage) {
@@ -91,6 +92,7 @@ export default function Candidate() {
         headerText={headerText}
         IconComponent={CandidatesIcon}
         classOverride='h-18 w-18'
+// Temp comment
         containerClassOverride='pt-2'
         backButton
       />

@@ -5,6 +5,7 @@ import LoadingSpinner from '../../../components/LoadingSpinner';
 import PropTypes from 'prop-types';
 
 export const ethnicityChoices = Object.values(ethnicityMap);
+export const genderChoices = Object.values(genderMap);
 export const veteranStatusChoices = Object.values(veteranStatusMap);
 export const disabilityChoices = Object.values(disabilityMap);
 export const jobReferralChoices = [
@@ -89,7 +90,6 @@ Checkbox.propTypes = {
   attribute: PropTypes.string.isRequired,
   optionValue: PropTypes.bool,
   setOptionValue: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
   disabled: PropTypes.bool
 }
 

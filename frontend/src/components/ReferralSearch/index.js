@@ -28,6 +28,7 @@ const mockJobsData = [
     company: 'Paycom',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
     salaryRange: '$80k-$90k',
+    location: 'Remote',
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
   },
@@ -62,7 +63,6 @@ export default function ReferralSearch() {
   }
 
   function handleRemove( jobId ) {
-    const newCurrentChosen = currentChosen.filter(job => job.id !== jobId);
     setCurrentChosen(newCurrentChosen);
     setFilteredChoices([ ...filteredChoices, choices.find(job => job.id === jobId) ]);
   }

@@ -52,6 +52,7 @@ const job_filter_exclude_keys = [
     "builder",
     "building",
     "buyer",
+// Temp comment
     "cafeteria",
     "cage",
     "call center",
@@ -357,7 +358,6 @@ const job_filter_exclude_keys = [
     "service leader",
     "service worker",
     "shelver",
-// Temp comment
     "shift lead",
     "shipper",
     "shipping",

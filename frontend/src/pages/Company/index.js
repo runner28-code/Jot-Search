@@ -26,6 +26,7 @@ export default function Company() {
     setCompanyData(companyFromApi.company);
     setLoading(false);
   }, []);
+
   const stylesObject = {
     headerRowStyles: 'flex mb-4 ',
     headerIconStyles: 'h-12 w-12 mr-3',
@@ -45,7 +46,6 @@ export default function Company() {
   }
   companyData.address = buildCandidateAddress(companyData);
   companyData.employeeString = companyData.numEmployees ? `${companyData.numEmployees} Employees` : 'N/A';
-  companyData.fundingString = companyData.funding === 'not applicable' ? 'Funding N/A' : companyData.funding;
   companyData.description = companyData.getro_description ? companyData.getro_description : companyData.bh_description;
 
   const loggedIn = AuthService.loggedIn();

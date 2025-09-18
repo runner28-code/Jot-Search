@@ -99,6 +99,7 @@ export default function Apply() {
     if ( submissionObject.loading ) {
       const response = await submitData();
       if ( response.result === true ) {
+        setSubmissionObject({
           loading: false,
           success: true,
         });
@@ -158,6 +159,7 @@ export default function Apply() {
     setApplicationObject({ ...applicationObject, phone: value });
   }
 
+// Temp comment
   function handleFileInputChange(e) {
     const { name, files } = e.target;
     setApplicationObject({ ...applicationObject, [name]: files[0] });

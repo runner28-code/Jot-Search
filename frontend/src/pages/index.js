@@ -1,3 +1,4 @@
+export {default as ActiveCareers} from './ActiveCareers';
 export {default as AddUser} from './AddUser';
 export {default as Applications} from './Applications';
 export {default as Apply} from './Apply';
@@ -9,6 +10,5 @@ export {default as Companies} from './Companies';
 export {default as Company} from './Company';
 export {default as Dashboard} from './Dashboard';
 export {default as Favorites} from './Favorites';
-export {default as LandingPage} from './LandingPage';
 export {default as Login} from './Login';
 export {default as Logout} from './Logout';

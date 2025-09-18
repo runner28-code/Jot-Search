@@ -74,6 +74,7 @@ CareerCard.propTypes = {
     })
   }).isRequired,
   index: PropTypes.number,
+  active: PropTypes.bool,
 }
 
 function DesktopCard({ dataObj, active }) {
@@ -87,7 +88,6 @@ function DesktopCard({ dataObj, active }) {
     >
       {/* Card Image */}
       <div className='flex flex-col'>
-        <div className='h-62 w-62 p-4 mr-18 flex justify-center items-center border border-solid border-smokeGray'>
           { renderCardImage(data) }
         </div>
         <p className='text-sm text-zinc-700 font-roboto mt-8'>{ data.clientCorporation }</p>

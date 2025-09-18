@@ -299,6 +299,7 @@ export class CandidateController {
         extendedCandidates = candidates.map((candidate: any) => {
           const user = users.find(user => user.email === candidate.email);
           if (user) {
+            candidate.user = user;
             candidate.firstName = user.firstname;
             candidate.lastName = user.lastname;
             delete candidate.user.password;

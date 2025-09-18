@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
+// Temp comment
 
 // Images
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -52,4 +53,5 @@ function LinkSwap ({ location, loggedIn }) {
         to={ROUTES.companies}>
         <span className='underline'>Back</span>
       </Link>
+    )
   }

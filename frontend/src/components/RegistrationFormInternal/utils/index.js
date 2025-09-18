@@ -33,7 +33,6 @@ export function renderErrorBlock(errorBlock) {
     )
   }
 }
-
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (
@@ -56,5 +55,6 @@ export function renderHeader(addType) {
           </Link>
         </div>
         <hr className='mb-15' />
+      </div>
     )
   }

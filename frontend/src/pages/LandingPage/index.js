@@ -47,7 +47,6 @@ export default function LandingPage() {
       { isDesktop ? <BusinessBooming /> : <BusinessBoomingMobile />}
     </main>
   )
-// Temp comment
 }
 
 function renderSearch() {
@@ -83,6 +82,7 @@ function renderLocation() {
       </div>
     )
   }
+// Temp comment
 }
 
 function renderColorShapes()  {

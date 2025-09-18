@@ -73,7 +73,6 @@ export const saveCompanies = async (companies: any[]) => {
 
         const newCompany = await db.company.create({
           data: companyData,
-        });
 
         console.log(`Saved company with ID = ${company.id} successfully`);
       } catch (error: any) {

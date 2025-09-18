@@ -23,5 +23,4 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     }
     if (filterState.expertise !== 'Any Expertise') {
       params.expertise = filterState.expertise;
-    }
     navigate(ROUTES.careers, { state: { ...params } });

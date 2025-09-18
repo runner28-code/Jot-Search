@@ -206,7 +206,6 @@ export class CompanyController {
         error,
       };
     }
-  }
 
   @Post("/search")
   async searchByFilter(@Body() body: FilterBody) {

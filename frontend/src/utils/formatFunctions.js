@@ -3,6 +3,7 @@ import { experienceMap } from './dbFieldMapping';
 import { stateCodeMap } from './constants';
 
 export function formatCandidateData(candidateData) {
+  const formattedData = fixStringNulls(candidateData);
 
   formattedData.sourceTable = candidateData.id.startsWith('bl-') ? 'Candidate' : 'User'; // Some features are only available to candidates who have been added to the platform (Users)
   if (formattedData.sourceTable === 'Candidate') {
@@ -16,7 +17,6 @@ export function formatCandidateData(candidateData) {
   formattedData.avatar = formatAvatarUrl(candidateData.avatar, candidateData.firstname, candidateData.lastname);
   if ( !candidateData.occupation && !candidateData.companyName ) {
     formattedData.occupationString = 'No Occupation Provided';
-  } else {
     const occupation = candidateData.occupation || 'N/A';
     const companyName = candidateData.companyName || 'N/A';
     formattedData.occupationString = `${occupation} at ${companyName}`;

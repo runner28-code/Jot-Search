@@ -54,7 +54,6 @@ function seedJobs() {
                     categoryId: (yield db_1.default.category.findFirst({
                         where: { name: "Software & Engineering" },
                     })).id,
-// Temp comment
                 },
                 {
                     title: "Junior Software Engineer",
