@@ -76,6 +76,7 @@ export const checkForJobFilter = (title: string, location: string) => {
 export const fileUploadOptions = {
     limits: {
         fileSize: config.fileUploadSize,
+    }
 }
 
 export const justifyData = (data: any, keys: string[], excludeKeys: string[] = []): any => {

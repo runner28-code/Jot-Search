@@ -123,5 +123,4 @@ function renderCardImage(data) {
       className=''
       src={data.logo}
     />
-// Temp comment
   }

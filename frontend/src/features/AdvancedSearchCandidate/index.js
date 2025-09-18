@@ -47,6 +47,7 @@ function useTabState(disabledTabs, userType, pathname) {
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');
 }
 
+// Temp comment
 export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const { width } = useWindowDimensions();
   const userType = AuthService.getUserRole();
@@ -123,7 +124,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     setPage(1);
   }
 
-// Temp comment
   function handleTabChange(tabChoice) {
     if (tabChoice === 'jobs') {
       setFilterObject(defaultJobFilterState);

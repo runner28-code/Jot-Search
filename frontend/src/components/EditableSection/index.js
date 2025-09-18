@@ -24,7 +24,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
     setContentObject({ ...contentObject, [property]: value });
   }
 
-  return (
     <section className='relative mb-14'>
       <div>
         <h4 className={headerStyles}>{header}</h4>

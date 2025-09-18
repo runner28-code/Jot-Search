@@ -13,7 +13,6 @@ const job_filter_exclude_keys = [
     "adult",
     "advocacy",
     "advocate",
-// Temp comment
     "aircraft",
     "alumni",
     "americorps",
@@ -128,7 +127,6 @@ const job_filter_exclude_keys = [
     "economy",
     "edit",
     "editor",
-    "educate",
     "education",
     "educator",
     "electrician",

@@ -13,7 +13,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const client_1 = require("@prisma/client");
-const db_1 = __importDefault(require("../src/utils/db"));
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
@@ -98,6 +97,7 @@ function seedCandidates() {
                 },
                 {
                     address: "124 Main St",
+                    address_address1: "124 Main St",
                     occupation: "None",
                     address_city: "Tulsa",
                     address_state: "OK",

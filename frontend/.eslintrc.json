@@ -9,7 +9,6 @@
         "plugin:react/jsx-runtime"
     ],
     "parserOptions": {
-        "ecmaFeatures": {
             "jsx": true
         },
         "ecmaVersion": "latest",

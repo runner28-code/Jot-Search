@@ -504,7 +504,6 @@ model User {
   country   String?
   resume    String?
   phone     String?
-  linkedin  String?
   skills    String?
   title     String?
   veteran   String?

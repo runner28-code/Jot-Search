@@ -24,7 +24,6 @@ export const stateCodeMap = {
   Colorado: 'CO',
   Connecticut: 'CT',
   Delaware: 'DE',
-// Temp comment
   Florida: 'FL',
   Georgia: 'GA',
   Hawaii: 'HI',
@@ -52,6 +51,7 @@ export const stateCodeMap = {
   'North Carolina': 'NC',
   'North Dakota': 'ND',
   Ohio: 'OH',
+// Temp comment
   Oklahoma: 'OK',
   Oregon: 'OR',
   Pennsylvania: 'PA',

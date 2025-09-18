@@ -10,7 +10,6 @@ import {
   CategoryByIdResponse,
   CategorySearchByFilterResponse,
   FilterBody,
-} from "../types/Common";
 
 @JsonController("/api/category")
 export class CategoryController {
@@ -19,6 +18,7 @@ export class CategoryController {
     @QueryParam("id") id: string
   ): Promise<CategoryByIdResponse> {
     try {
+      const _filters = [
         {
           key: "id",
           value: id,

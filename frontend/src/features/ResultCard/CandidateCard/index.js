@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import eyeCon from '../../../assets/icons/eye-con.svg'; // Get it? eyeCon instead of icon? It's funny.
@@ -35,6 +36,7 @@ export default function CandidateCard({ data, disableLink }) {
           <div className='h-48 w-48 flex justify-center items-center'>
             <img
               src={avatarUrl}
+// Temp comment
               className='rounded-full'
             />
           </div>

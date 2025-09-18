@@ -159,6 +159,7 @@ function renderDesktopLogo(logoUrl, name) {
     return (
       <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
         <BsBuilding className={logoStyles} />
+      </div>
     )
   }
   return (
@@ -193,6 +194,7 @@ function renderAddress( city, state ) {
     )
   } else {
     return (
+// Temp comment
       <span>{city}, {state}</span>
     )
   }

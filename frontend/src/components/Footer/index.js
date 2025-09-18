@@ -9,7 +9,6 @@ import inTulsaFooter from '../../assets/images/intulsa-talent-network.svg';
 
 // Social Icons
 import linkedin from '../../assets/icons/social/social_linkedin_grey.svg';
-import twitter from '../../assets/icons/social/social_twitter.svg';
 import facebook from '../../assets/icons/social/social_facebook.svg';
 import instagram from '../../assets/icons/social/social_instagram.svg';
 import youtube from '../../assets/icons/social/social_youtube.svg';
@@ -233,6 +232,7 @@ function NavFooter() {
         </a>
         <Address />
       </div>
+      <div className='flex flex-col basis-3/12'>
         <Link
           to={ROUTES.landingPage}
           className={linkStyle}

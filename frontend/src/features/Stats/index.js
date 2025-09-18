@@ -31,7 +31,6 @@ export default function Stats({ userType }) {
       case 'Last 90 Days':
         return 90;
       default:
-// Temp comment
         return 30
     }
   }
@@ -94,7 +93,6 @@ Stats.defaultProps = {
 
 Stats.propTypes = {
   userType: PropTypes.string.isRequired,
-}
 
 function StatCard({ stat, value }) {
   const deviationPercentage = Math.trunc(value.compare);

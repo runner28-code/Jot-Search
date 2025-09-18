@@ -1,5 +1,4 @@
 /*
-  Warnings:
 
   - Made the column `hidden` on table `Job` required. This step will fail if there are existing NULL values in that column.
 
@@ -25,6 +24,7 @@ CREATE TABLE "GetroJobInfo" (
     "expires_at" TIMESTAMP(3),
     "job_functions" TEXT,
     "liked" TEXT,
+    "locations" TEXT,
     "organization_domain" TEXT,
     "organization_id" TEXT,
     "organization_logo_url" TEXT,
