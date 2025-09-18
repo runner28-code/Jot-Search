@@ -79,6 +79,7 @@ export const skills = [
   'Adobe InDesign',
   'Adobe XD',
   'Advanced Excel',
+  'Advertising',
   'Aerospace',
   'Agile',
   'AI',

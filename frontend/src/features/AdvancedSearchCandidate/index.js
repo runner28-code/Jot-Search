@@ -123,6 +123,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     setPage(1);
   }
 
+// Temp comment
   function handleTabChange(tabChoice) {
     if (tabChoice === 'jobs') {
       setFilterObject(defaultJobFilterState);

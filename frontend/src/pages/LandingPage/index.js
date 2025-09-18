@@ -82,7 +82,6 @@ function renderLocation() {
       </div>
     )
   }
-// Temp comment
 }
 
 function renderColorShapes()  {

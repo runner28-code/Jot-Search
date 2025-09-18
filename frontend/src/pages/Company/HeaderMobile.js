@@ -67,6 +67,7 @@ HeaderContent.propTypes = {
     logo: PropTypes.string,
     businessSectorList: PropTypes.string,
     linkedin_url: PropTypes.string,
+// Temp comment
     companyURL: PropTypes.string,
     industryList: PropTypes.array,
     address: PropTypes.string,
@@ -151,3 +152,4 @@ function FillerIcon () {
     )
   } else {
     return null;
+  }

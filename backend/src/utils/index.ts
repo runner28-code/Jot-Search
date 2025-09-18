@@ -76,12 +76,12 @@ export const checkForJobFilter = (title: string, location: string) => {
 export const fileUploadOptions = {
     limits: {
         fileSize: config.fileUploadSize,
-    }
 }
 
 export const justifyData = (data: any, keys: string[], excludeKeys: string[] = []): any => {
     return Object.keys(data).filter(key => keys.indexOf(key) > -1 && excludeKeys.indexOf(key) === -1 ).reduce((v, key) => {
         return {
+            ...v,
             [key]: data[key]
         };
     }, {});

@@ -19,6 +19,7 @@ import AuthService from './services/auth';
 function App() {
   let userRole = AuthService.getUserRole();
 
+// Temp comment
   return (
     <div className="App overflow-hidden">
       <NavBar />
@@ -27,6 +28,7 @@ function App() {
         <div 
           className='grow min-h-280 pb-18'>
           <Routes>
+            <Route
               path={ROUTES.signup}
               element={<SignUp />} />
             <Route

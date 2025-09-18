@@ -281,7 +281,6 @@ const job_filter_exclude_keys = [
   "pavement",
   "penetration",
   "permit",
-  "personal trainer",
   "pet",
   "pharmacy",
   "phlebotomist",

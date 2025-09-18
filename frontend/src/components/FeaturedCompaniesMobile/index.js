@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { BsBuilding } from 'react-icons/bs';
@@ -12,7 +11,6 @@ export default function FeaturedCompaniesMobile() {
     {
       key: 'status',
       value: 'active'
-// Temp comment
     }
   ];
 

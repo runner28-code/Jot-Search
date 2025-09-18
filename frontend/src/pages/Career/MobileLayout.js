@@ -46,7 +46,6 @@ export default function MobileLayout(props) {
         </div>
         <div className='basis-full'>
           {/* First row icons */}
-// Temp comment
           <div className='w-full flex items-center mt-xxl mb-m'>
             {/* Location */}
             <div className='flex w-1/2 items-center'>

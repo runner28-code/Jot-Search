@@ -11,6 +11,7 @@ import { DATASET_MAIN, Tables } from "../types/Common";
     try {
         console.log('/// START ENCRYPT ALL PASSWORDS');
 
+        const query = `
             SELECT id,email,password FROM \`${DATASET_MAIN}.${Tables.USER}\`
             WHERE email='test9@email.com' or email='v.deserio3@outlook.com' or email='test2@email.com'
         `;
@@ -27,7 +28,6 @@ import { DATASET_MAIN, Tables } from "../types/Common";
               console.log(`user ${user.email} password is empty. Skipped.`);
               continue
             }
-            if(user.password.length < 152) {
               user.password = encryptPassword(user.password);
 
               const update_query = `

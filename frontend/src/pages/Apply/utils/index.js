@@ -90,6 +90,7 @@ Checkbox.propTypes = {
   attribute: PropTypes.string.isRequired,
   optionValue: PropTypes.bool,
   setOptionValue: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
   disabled: PropTypes.bool
 }
 

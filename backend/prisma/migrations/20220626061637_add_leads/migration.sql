@@ -42,7 +42,6 @@ CREATE TABLE "Lead" (
     "nameSuffix" TEXT,
     "nickName" TEXT,
     "notes" TEXT,
-    "numEmployees" TEXT,
     "occupation" TEXT,
     "owner" TEXT,
     "ownerCorporation" TEXT,

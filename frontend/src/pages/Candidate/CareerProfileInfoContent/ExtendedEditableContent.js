@@ -45,6 +45,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       [name]: value,
     });
   }
+
   const handleInputChange = async (event) => {
     const { name, value } = event.target;
     if (name === 'avatar' || name === 'resume') {

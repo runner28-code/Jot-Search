@@ -19,6 +19,7 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
 }
 
 TabContainer.propTypes = {
+  tabChoices: PropTypes.arrayOf(PropTypes.string).isRequired,
   activeTab: PropTypes.string,
   setActiveTab: PropTypes.func.isRequired,
   isLocked: PropTypes.bool,
@@ -33,7 +34,6 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
       return null;
     }
     setActiveTab(choice);
-  }
 
   const titleCasedTab = choice.charAt(0).toUpperCase() + choice.slice(1);
   let tabStyles = 'px-14 py-3 rounded-full cursor-pointer Mobile-Body-textmobile-text-size-large-2 ';

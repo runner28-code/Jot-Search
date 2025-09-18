@@ -2,7 +2,6 @@ import * as ROUTES from '../../routes';
 
 export default function BusinessBooming() {
   return (
-    <section className='mt-150 h-360 bg-tulsa-hero bg-cover bg-center'>
       <div className='relative w-240 max-w-240 h-full bg-orangeHeroOverlay/90 pl-40 pr-30 pt-56 '>
         <p className='text-white font-spaceGrotesk font-semibold text-[7.2rem] leading-tight'>Business is Booming.</p>
         <p className='text-white font-spaceGrotesk font-semibold text-[7.2rem] leading-tight'>Tulsa is Booming.</p>
@@ -19,6 +18,5 @@ export default function BusinessBooming() {
         <div className='absolute bottom-36 -right-18 h-40 w-40 bg-blueSquare2/95' />
         <div className='absolute bottom-80 -right-72 h-36 w-36 bg-blueSquare/95' />
       </div>
-// Temp comment
     </section>
   )

@@ -31,6 +31,7 @@ export default function Stats({ userType }) {
       case 'Last 90 Days':
         return 90;
       default:
+// Temp comment
         return 30
     }
   }
@@ -108,7 +109,6 @@ function StatCard({ stat, value }) {
   }
   return (
     <div
-// Temp comment
       key={stat}
       className='flex flex-[1_1_31%] flex-col justify-between mr-5 mb-5 bg-white rounded-xl pl-4 vw-400:pl-8 pb-4 pt-8'
     >

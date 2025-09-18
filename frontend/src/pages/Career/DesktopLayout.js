@@ -142,6 +142,7 @@ function renderLogo(logo) {
   />
 }
 
+// Temp comment
 function renderAboutCompanySection(careerData, companyName) {
   if (!companyName) {
     return null;

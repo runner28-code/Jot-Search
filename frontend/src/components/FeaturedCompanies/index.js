@@ -47,7 +47,6 @@ export default function FeaturedCompanies() {
   )
 }
 function renderColorShapes() {
-// Temp comment
   return(
     <div className='relative w-full w-24 mb-8'>
       <div className='bg-pinkSquare w-12 h-12' />

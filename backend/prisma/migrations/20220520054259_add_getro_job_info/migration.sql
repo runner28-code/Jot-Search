@@ -25,7 +25,6 @@ CREATE TABLE "GetroJobInfo" (
     "expires_at" TIMESTAMP(3),
     "job_functions" TEXT,
     "liked" TEXT,
-    "locations" TEXT,
     "organization_domain" TEXT,
     "organization_id" TEXT,
     "organization_logo_url" TEXT,

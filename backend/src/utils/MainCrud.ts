@@ -109,3 +109,4 @@ export const getSavedJobs = async (candidateId: string) => {
       },
       include: {
         savedJobs: true,
+      },

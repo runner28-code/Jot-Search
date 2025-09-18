@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -31,7 +30,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
             to={ROUTES.careers}
           >
             <CareerIcon />
-            <p className='ml-4'>Careers</p>
           </Link>
           <Link
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }

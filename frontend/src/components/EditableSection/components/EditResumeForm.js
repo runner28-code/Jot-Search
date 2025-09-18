@@ -11,8 +11,8 @@ export default function EditResumeForm({ handleChange }) {
         value: newResumePath,
       },
     };
+    handleChange( fakeEvent );
   }
-  
   return (
     <div className='flex flex-col'>
       <label
