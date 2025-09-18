@@ -99,7 +99,6 @@ export default function Apply() {
     if ( submissionObject.loading ) {
       const response = await submitData();
       if ( response.result === true ) {
-        setSubmissionObject({
           loading: false,
           success: true,
         });
@@ -128,7 +127,6 @@ export default function Apply() {
 
   function handleSubmit(e) {
     e.preventDefault();
-// Temp comment
     setSubmissionObject({ loading: true });
   }
 

@@ -46,6 +46,7 @@ export default function ResetPassword() {
         setError(res.data.error);
       }
     }
+  };
 
   const renderSuccess = () => {
     if( success ) {
@@ -57,7 +58,6 @@ export default function ResetPassword() {
             className='underline block my-4 text-royalBlue'
           >
             Login to your account
-          </Link>
         </div>
       )
     }

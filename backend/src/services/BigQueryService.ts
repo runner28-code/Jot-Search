@@ -54,4 +54,3 @@ export class BigQueryService {
             const keys = Object.keys(data)
             const values = keys.map(k => `"""${data[k]}"""`);
           
-            const query = `

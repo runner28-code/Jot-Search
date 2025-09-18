@@ -19,6 +19,7 @@ import AuthService from '../../services/auth';
 import {
   defaultJobFilterState,
   buildSearchFilters,
+// Temp comment
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
 

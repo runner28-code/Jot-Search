@@ -26,7 +26,6 @@ export default function Company() {
     setCompanyData(companyFromApi.company);
     setLoading(false);
   }, []);
-
   const stylesObject = {
     headerRowStyles: 'flex mb-4 ',
     headerIconStyles: 'h-12 w-12 mr-3',
@@ -86,7 +85,6 @@ export default function Company() {
           { renderSectorList(companyData, width, stylesObject) } 
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Funding */}
-// Temp comment
           <div className='p-6'>
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>Funding</h4>
             { renderCompanyDescription(companyData.funding, 'text-md mb-10 leading-[32px]') }

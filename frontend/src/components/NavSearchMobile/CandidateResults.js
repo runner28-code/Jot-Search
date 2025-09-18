@@ -8,7 +8,6 @@ export default function CandidateResults({ candidates }) {
   const role = AuthService.getUserRole();
   if (candidates.length === 0 || role === 'candidate') {
     return null;
-// Temp comment
   }
 
   return (

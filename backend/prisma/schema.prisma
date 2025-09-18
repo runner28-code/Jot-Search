@@ -90,7 +90,6 @@ model Lead {
   leadSource            String?
   massMailOptOut        Boolean?
   middleName            String?
-  mobile                String?
   name                  String?
   namePrefix            String?
   nameSuffix            String?

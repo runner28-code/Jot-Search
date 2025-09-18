@@ -46,7 +46,6 @@ export type Job = {
   posted_at?: string;
   slug?: string;
   source?: string;
-  status?: string;
   title?: string;
   url?: string;
   hidden?: boolean;

@@ -64,7 +64,6 @@ export const mockCandidateStats = {
       count: 4,
       prevCount: 2
     }
-// Temp comment
   },
   'Companies Saved': {
     'Today': {

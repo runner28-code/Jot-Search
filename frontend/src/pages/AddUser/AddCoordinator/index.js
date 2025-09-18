@@ -55,7 +55,6 @@ export default function AddCoordinator() {
     const newErrors = validateInput(
       name,
       value,
-// Temp comment
       submissionObject.errors,
       formObject.password
     );

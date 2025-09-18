@@ -139,7 +139,6 @@ export default function RegistrationForm(loggedIn) {
     setErrors([]);
     setFormObj({
       ...formObj,
-      firstName: firstName.value,
       lastName: lastName.value,
       email: email.value,
       willRelocate: relocate,

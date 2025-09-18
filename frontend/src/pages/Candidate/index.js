@@ -71,7 +71,6 @@ export default function Candidate() {
     if (candidateData.sourceTable === 'Candidate') {
       const convertedCandidateObject = convertUserToCandidate(updateObject);
       updateResponse = await updateCandidate(convertedCandidateObject, id);
-    } else {
       updateResponse = await updateUser(formattedUpdateObject, id);
     }
     if (isProfilePage) {

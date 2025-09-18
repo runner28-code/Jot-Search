@@ -18,6 +18,7 @@ var __rest = (this && this.__rest) || function (s, e) {
                 t[p[i]] = s[p[i]];
         }
     return t;
+// Temp comment
 };
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -29,7 +30,6 @@ const Job_1 = require("../types/Job");
 const db_1 = __importDefault(require("../utils/db"));
 const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-// Temp comment
         const jobError = validateJob(job);
         if (jobError) {
             throw new Error(jobError);

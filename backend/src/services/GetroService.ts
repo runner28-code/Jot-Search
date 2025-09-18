@@ -92,6 +92,7 @@ export class GetroService {
                             if (result.length > 29) {
                                 await saveCompanies(result);
                                 result = [];
+                            }
                         }
                         await saveCompanies(result);
                     }

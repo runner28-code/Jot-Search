@@ -80,7 +80,6 @@ CompactCareerCard.propTypes = {
       logo: PropTypes.string
     }),
     applications: PropTypes.arrayOf(PropTypes.shape({
-// Temp comment
       createdAt: PropTypes.string
     })),
     role: PropTypes.string,

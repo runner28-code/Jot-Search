@@ -54,7 +54,6 @@ export const educationChoices = [
   'Post Doctoral',
   'High School',
   'Some College',
-// Temp comment
   'Technical College'
 ];
 

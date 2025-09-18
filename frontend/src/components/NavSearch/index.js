@@ -79,6 +79,7 @@ export default function NavSearch({ placeholder }) {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
 
+  const combinedResults = {
     jobs: jobs || [],
     companies: companies || [],
     candidates: candidates || [],

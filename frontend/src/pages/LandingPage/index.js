@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-// Temp comment
 import ExploreSearch from '../../components/ExploreSearch';
 import ExploreSearchMobile from '../../components/ExploreSearchMobile';
 import ExpertiseLinks from '../../components/ExpertiseLinks';
@@ -48,6 +47,7 @@ export default function LandingPage() {
       { isDesktop ? <BusinessBooming /> : <BusinessBoomingMobile />}
     </main>
   )
+// Temp comment
 }
 
 function renderSearch() {

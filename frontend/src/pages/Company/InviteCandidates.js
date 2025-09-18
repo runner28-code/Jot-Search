@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { MultiSelect } from 'react-multi-select-component';
+// Temp comment
 import { appendPathToBaseUrl } from '../../services/API';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 
@@ -17,6 +18,7 @@ export default function InviteCandidates({ company }) {
 
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
 
+  const candidateOptions = candidates?.map(candidate => {
     return {
       label: candidate.name,
       value: candidate.id,

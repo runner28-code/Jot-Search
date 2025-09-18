@@ -140,7 +140,6 @@ function DropdownContent({ isOpen, handleClick }) {
     return null;
   }
 
-// Temp comment
   return (
     <div className='absolute top-full right-0 top-30 bg-white border-2 border-neutral-500 w-90 rounded-xl '>
       { renderChoices(userType, handleClick) }

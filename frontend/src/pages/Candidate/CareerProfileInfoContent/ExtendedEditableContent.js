@@ -5,11 +5,11 @@ import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
 import FormInput from '../../../components/FormInput';
 import {
   skills as skillChoices,
-  roles as roleChoices,
 } from '../../../utils/skillHierarchyMap';
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
 import ResumePreview from './ResumePreview';
+
 export default function ExtendedEditableContent({ candidateData, handleCandidateUpdate, setEditMode, editMode }) {
   const { categories } = useContext(CategoryContext);
   const isSourceUserTable = candidateData.sourceTable === 'User';

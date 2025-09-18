@@ -22,7 +22,6 @@ export const UpdateJobFeatured = ({ job }) => {
     <div className='flex flex-col'>
       {isLoading && <p>Loading...</p>}
       {isSuccess && <p>Success!</p>}
-// Temp comment
       
       <div className='flex space-x-16'>
         <button
@@ -38,7 +37,6 @@ export const UpdateJobFeatured = ({ job }) => {
             if(result) {
               window.location.reload()
             }
-          }}>
           <span className="sr-only">inTulsa Featured</span>
           <span 
             aria-hidden="true" 
