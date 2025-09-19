@@ -120,7 +120,6 @@ export const defaultCandidateFilterState = {
   firstname: '',
   ...convertedCandidateFilters
 };
-// Temp comment
 
 /* UTIL FUNCTIONS */
 export function buildSearchFilters(filterObject) {

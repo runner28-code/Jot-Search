@@ -63,7 +63,6 @@ module.exports = {
         blueSquare: '#4A53A4',
         blueSquare2: '#30BED3',
         indigoSquare: '#4A53A4',
-        cyanSquare: '#1ECADB',
         pinkSquare: '#EB4A87',
         orangeSquare: '#F2871F',
         darkBlue: '#001B3C',
@@ -177,6 +176,7 @@ module.exports = {
         '500': '125rem',
         '660': '165rem'
       },
+      borderWidth: {
         '1.5': '1.5px',
         '3': '3px',
       },

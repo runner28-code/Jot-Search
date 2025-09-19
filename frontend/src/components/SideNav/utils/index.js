@@ -32,7 +32,6 @@ export const choices = {
     link: ROUTES.careers,
   },
   companies: {
-// Temp comment
     label: 'Companies',
     icon: CompanyIcon,
     link: ROUTES.companies,
@@ -117,7 +116,6 @@ export function findSelectedFromPath() {
     case 'saved-careers':
       return 'Saved Careers';
     case 'saved-companies':
-      return 'Saved Companies';
     case 'saved-candidates':
       return 'Saved Candidates';
     case 'active-careers':

@@ -204,6 +204,7 @@ function renderLinkedIn( url, headerRowTextStyles ) {
   if( !url ) {
     return (
       <a
+        className={textStyles}
         href='https://www.linkedin.com/'
       >
       LinkedIn

@@ -56,7 +56,6 @@ export default function Footer() {
           />
         </a>
       </div>
-// Temp comment
       <NavFooterMobile />
       <div
         id='footer'
@@ -344,6 +343,7 @@ function NavFooterMobile() {
         </Link>
         <Link
           to={ROUTES.companies}
+// Temp comment
           className={linkStyle}
         >Browse Companies
         </Link>

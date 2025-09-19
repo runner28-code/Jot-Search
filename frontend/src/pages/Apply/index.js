@@ -38,7 +38,6 @@ export default function Apply() {
   const jobId = params?.id
   const navigate = useNavigate();
   const isLoggedIn = AuthService.loggedIn();
-// Temp comment
   // State
   const [career, setCareer] = useState(defaultCareerState);
   const [originalObject, setOriginalObject] = useState({});
@@ -71,6 +70,7 @@ export default function Apply() {
       } else {
         candidateData.workAuthorized = 'No';
       }
+// Temp comment
       // Turn API IDs into appropriate values
       candidateData.ethnicity = ethnicityMap[candidateData.ethnicity || 'U']; // 'U' is default ("Prefer not to say")
       candidateData.gender = genderMap[candidateData.gender || 'U']; // 'U' is default ("Prefer not to say")

@@ -12,7 +12,6 @@ export default function Filters(props) {
     setSearchTerm,
     handleSearchClick,
     marginBottom
-// Temp comment
   } = props;
 
   let filterContainerStyles = 'flex flex-col justify-between gap-xxl-4 pb-9 vw-768:px-14 ';
@@ -22,6 +21,7 @@ export default function Filters(props) {
   return (
     <div className={filterContainerStyles}>
       <div className='flex flex-wrap gap-xxl-4'>
+// Temp comment
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}
       </div>
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}

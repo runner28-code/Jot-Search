@@ -33,7 +33,6 @@ export const defaultState = {
   referral: '',
   resume: '',
   newResume: {},
-  ethnicity: '',
   gender: '',
   workAuthorized: '',
   disability: '',

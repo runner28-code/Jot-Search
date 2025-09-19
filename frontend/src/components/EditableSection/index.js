@@ -22,6 +22,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
 
   function handlePropertyChange(property, value) {
     setContentObject({ ...contentObject, [property]: value });
+  }
 
   return (
     <section className='relative mb-14'>
@@ -46,7 +47,6 @@ EditableSection.propTypes = {
 
 function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
   if (editMode) {
-    return <EditSectionForm 
       contentObject={contentObject} 
       handlePropertyChange={handlePropertyChange} />
   }

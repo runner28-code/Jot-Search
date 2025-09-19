@@ -99,6 +99,7 @@ export default function DesktopLayout(props) {
           )}
         </div>
       </div>
+// Temp comment
 
       {/* Coordinator Status */}
       {
@@ -168,6 +169,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
       {/* Job Description */}
       <h4 className={sectionHeaderStyles}>Career Description</h4>
       <p
+        className='font-spaceGrotesk text-textBlack text-md mb-10'
         dangerouslySetInnerHTML={{ __html: careerData.description || 'No description listed' }}
       />
       {renderSkillsSection(skillList)}

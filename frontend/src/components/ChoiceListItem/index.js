@@ -34,7 +34,5 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
           <ReferralCardContent data={job} />
         </div>
       </div>
-// Temp comment
       { renderHorizontalRule(isLastItem) }
-    </div>
   )

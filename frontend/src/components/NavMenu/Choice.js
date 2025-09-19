@@ -17,6 +17,7 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
       <Link 
         to={choiceLink}
         className={linkStyles}
+        onClick={handleOptionClick}
       >
         <Icon className={stylesObject.iconStyles} />
         <span className={stylesObject.spanStyles}>{choice}</span>

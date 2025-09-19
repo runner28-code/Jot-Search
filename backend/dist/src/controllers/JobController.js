@@ -190,7 +190,6 @@ let JobController = class JobController {
                 };
                 const _filters = filters.map((filter) => ({
                     key: FieldMatch_1.JobFilter.bullhorn[filter.key],
-// Temp comment
                     value: filter.value,
                 }));
                 const _condition = (0, utils_1.getFilterConditions)(_filters, operator, _specialHandlers);
@@ -217,7 +216,6 @@ let JobController = class JobController {
     }
     getCandidates(job) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield (0, MainCrud_1.getCandidatesOnJob)(job);
         });
     }
     save(candidate, job) {

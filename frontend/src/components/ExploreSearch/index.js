@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// Temp comment
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearch';
@@ -11,6 +12,7 @@ function adjustJobFilterObject() {
   const adjustedJobFilterObject = { ...jobFilterObject };
 
   adjustedJobFilterObject['On-Site/Remote'][0] = 'Any Work Setting';
+  adjustedJobFilterObject['Expertise'][0] = 'Any Expertise';
   
   return adjustedJobFilterObject;
 }

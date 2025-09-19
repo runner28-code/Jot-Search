@@ -42,6 +42,7 @@ export default function CareerPage() {
   const addressString = buildCareerAddress(careerData.city, careerData.state);
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
   const postingAge = calculatePostingAge(careerData.createdAt);
+// Temp comment
   const data = {
     careerData,
     categoryString,
@@ -77,6 +78,7 @@ export default function CareerPage() {
         role === 'coordinator' &&
         <InviteCandidates job={ careerData } />
       }
+    </div>
   </>)
 }
 CareerPage.propTypes = {

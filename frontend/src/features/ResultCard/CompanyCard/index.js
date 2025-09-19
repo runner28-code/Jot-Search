@@ -22,7 +22,6 @@ export default function CompanyCard({ data }) {
   if ( isMobile ) {
     return (
       <MobileCard
-// Temp comment
         data={data}
         addressString={addressString}
         employeeString={employeeString}
@@ -109,6 +108,7 @@ const dataShape = {
       state: PropTypes.string,
     }),
     logo: PropTypes.string,
+// Temp comment
     name: PropTypes.string,
     numEmployees: PropTypes.string,
   }).isRequired,

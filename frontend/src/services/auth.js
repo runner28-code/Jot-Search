@@ -37,7 +37,6 @@ class AuthService {
 
   getToken() {
     return localStorage.getItem('id_token');
-  }
 
   async login(idToken) {
     localStorage.setItem('id_token', idToken);

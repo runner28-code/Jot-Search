@@ -33,7 +33,6 @@ export type Company = {
     invoiceFormat?: string,
     name?: string,
     notes?: string,
-    numEmployees?: string,
     numOffices?: string,
     ownerShip?: string,
     phone?: string,
@@ -85,6 +84,7 @@ export type Job = {
     isPublic?: string;
     location_address1?: string;
     location_address2?: string;
+    location_city?: string;
     location_state?: string;
     location_state_id?: string;
     location_state_name?: string;

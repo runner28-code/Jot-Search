@@ -54,7 +54,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
         </div>
       </Link>
       {
-        selectableProps && selectableProps.selectable ?
           <Checkbox
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}
@@ -67,7 +66,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             isFavoriteOverride={isFavoriteOverride} />
       }
     </div>
-// Temp comment
   )
 }
 

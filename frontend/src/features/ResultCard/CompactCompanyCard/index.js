@@ -8,7 +8,6 @@ import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import {  calculatePostingAge } from '../../../utils/formatFunctions';
 
 export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOverride = null, agoText = 'Saved', selectableProps = null }) {
-// Temp comment
   const postingAge = calculatePostingAge(agoDate);
 
   return (
@@ -44,6 +43,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           <Checkbox
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}
+// Temp comment
             onChange={selectableProps.handleClick}
           />
           : 

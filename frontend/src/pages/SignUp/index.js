@@ -1,3 +1,4 @@
+// Temp comment
 import RegistrationForm from '../../components/RegistrationForm';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -25,7 +26,6 @@ export default function SignUp() {
             </div>
           </div>
         </div>
-// Temp comment
       </main>      
     )
   }

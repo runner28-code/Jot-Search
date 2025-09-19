@@ -152,6 +152,7 @@ function renderLogo( logo ) {
     </div>
   }
   return <img
+    src={logo}
     className='w-36 h-36 object-contain mr-10'
   />
 }

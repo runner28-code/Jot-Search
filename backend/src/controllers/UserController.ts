@@ -166,15 +166,3 @@ export class UserController {
     return await update(user.id, user.role, user);
   }
 
-  @Post("/account-recovery")
-  async accountRecovery(@Body() body: { email: string }) {
-    const { email } = body;
-    return await recovery(email);
-  }
-
-  @Authorized()
-  @Get("/user/history")
-  async getHistory(@CurrentUser() authUser: User) {
-    try {
-      const history = await db.history.findMany({
-        where: {

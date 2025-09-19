@@ -52,6 +52,7 @@ export default function CandidateCard({ data, disableLink }) {
           <p className='text-charcoal mt-l'>{occupationString}</p>
           {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold text-md mt-[18px]'>{expertiseString}</p>
+// Temp comment
           {/* First row icons */}
           <div className='w-full flex flex-wrap justify-between items-center mt-l'>
             {/* Linkedin */}

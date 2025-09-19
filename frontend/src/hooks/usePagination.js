@@ -1,3 +1,4 @@
+// Temp comment
 
 export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
 
@@ -21,4 +22,5 @@ export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
     nextPage,
     prevPage,
     startCount,
+    endCount,
   };
