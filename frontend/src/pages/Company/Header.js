@@ -194,7 +194,6 @@ function renderAddress( city, state ) {
     )
   } else {
     return (
-// Temp comment
       <span>{city}, {state}</span>
     )
   }
@@ -205,7 +204,6 @@ function renderLinkedIn( url, headerRowTextStyles ) {
   if( !url ) {
     return (
       <a
-        className={textStyles}
         href='https://www.linkedin.com/'
       >
       LinkedIn

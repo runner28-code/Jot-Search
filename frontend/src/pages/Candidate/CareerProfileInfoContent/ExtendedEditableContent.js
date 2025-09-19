@@ -19,6 +19,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     id: candidateData.id,
     avatar: candidateData.avatar || '',
     firstname: candidateData.firstname || '',
+// Temp comment
     lastname: candidateData.lastname || '',
     occupation: candidateData.occupation || '',
     companyName: candidateData.companyName || '',
@@ -38,7 +39,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     linkedin: candidateData?.linkedin || '',
     resume: candidateData?.resume || '',
   });
-// Temp comment
 
   function handleChange(name, value) {
     setFormData({

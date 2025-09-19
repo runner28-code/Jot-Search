@@ -23,7 +23,6 @@ export default function NavBar() {
 function MobileNavBarLayout() {
   const { width } = useWindowDimensions();
   return (
-// Temp comment
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50'>
       <div className='h-30 pl-4 pr-4 flex justify-between items-center relative'>
         <Link to={ROUTES.root}>
@@ -35,6 +34,7 @@ function MobileNavBarLayout() {
         </Link>
         {/* Nav Menu */}
         <div className='flex items-center'>
+// Temp comment
           { width >= 990 ? <NavSearch /> : <NavSearchMobile />}
           <NavMenu />
         </div>

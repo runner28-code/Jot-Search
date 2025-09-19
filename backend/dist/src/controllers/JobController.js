@@ -190,6 +190,7 @@ let JobController = class JobController {
                 };
                 const _filters = filters.map((filter) => ({
                     key: FieldMatch_1.JobFilter.bullhorn[filter.key],
+// Temp comment
                     value: filter.value,
                 }));
                 const _condition = (0, utils_1.getFilterConditions)(_filters, operator, _specialHandlers);

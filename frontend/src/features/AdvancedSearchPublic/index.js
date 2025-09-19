@@ -90,7 +90,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   useEffect(() => {
     if (isMount) {
       return;
-    }
     setFilterObject({ ...filterObject, title: '' });
     setPage(1);
   }, [activeTab]);

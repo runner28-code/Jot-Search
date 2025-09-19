@@ -115,6 +115,7 @@ function renderCompanyLogo(logoUrl, name) {
     </div>
   )
 }
+
 function renderDesktopLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'object-contain w-full h-full';

@@ -31,6 +31,7 @@ export type Job = {
   datasource?: Datasource;
   featured?: boolean;
 };
+
 export type JobKey = keyof Job;
 
 export const ALLOWED_JOB_KEYS = new Set<JobKey>([
@@ -40,7 +41,6 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "address1",
   "address2",
   "city",
-  "state",
   "zip",
   "country_id",
   "employmentType",

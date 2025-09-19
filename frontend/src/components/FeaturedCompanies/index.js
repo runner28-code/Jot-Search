@@ -27,6 +27,7 @@ export default function FeaturedCompanies() {
             <LoadingSpinner />
             :
             companies.map((company, index) =>
+// Temp comment
               <Link
                 to={`${ROUTES.companies}/${company.id}`}
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'
@@ -44,6 +45,7 @@ export default function FeaturedCompanies() {
         </Link>
       </div>
     </div>
+  )
 }
 function renderColorShapes() {
   return(

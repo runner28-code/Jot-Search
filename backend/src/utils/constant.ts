@@ -342,6 +342,7 @@ const job_filter_exclude_keys = [
   "retail",
   "revenue",
   "right-of-way",
+  "rn",
   "room service",
   "safety",
   "sales assistant",

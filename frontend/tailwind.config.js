@@ -169,7 +169,6 @@ module.exports = {
         '315': '78.75rem',
         '320': '80rem',
         '340': '85rem',
-// Temp comment
         '346': '86.5rem',
         '360': '90rem',
         '380': '95rem',
@@ -178,7 +177,6 @@ module.exports = {
         '500': '125rem',
         '660': '165rem'
       },
-      borderWidth: {
         '1.5': '1.5px',
         '3': '3px',
       },

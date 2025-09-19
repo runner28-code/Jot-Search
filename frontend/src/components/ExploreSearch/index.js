@@ -11,7 +11,6 @@ function adjustJobFilterObject() {
   const adjustedJobFilterObject = { ...jobFilterObject };
 
   adjustedJobFilterObject['On-Site/Remote'][0] = 'Any Work Setting';
-  adjustedJobFilterObject['Expertise'][0] = 'Any Expertise';
   
   return adjustedJobFilterObject;
 }
@@ -25,7 +24,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     'Expertise': 'Any Expertise',
   });
 
-// Temp comment
   function handleSearchClick() {
     const params = {};
     params.title = filterState.title ? filterState.title : '';

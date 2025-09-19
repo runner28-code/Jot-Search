@@ -31,6 +31,7 @@ export type Company = {
     funding?: string,
     industryList?: string,
     invoiceFormat?: string,
+    name?: string,
     notes?: string,
     numEmployees?: string,
     numOffices?: string,
@@ -84,7 +85,6 @@ export type Job = {
     isPublic?: string;
     location_address1?: string;
     location_address2?: string;
-    location_city?: string;
     location_state?: string;
     location_state_id?: string;
     location_state_name?: string;

@@ -222,3 +222,4 @@ export class GetroService {
             let flag = false;
             for (const company of companies) {
                 // if (company.id === 'gt-23348') flag = true;
+                // console.log(`\n***** fetching jobs for company ${company.id} *****`);

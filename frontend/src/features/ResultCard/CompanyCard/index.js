@@ -22,6 +22,7 @@ export default function CompanyCard({ data }) {
   if ( isMobile ) {
     return (
       <MobileCard
+// Temp comment
         data={data}
         addressString={addressString}
         employeeString={employeeString}

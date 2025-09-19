@@ -75,3 +75,4 @@ export const getSavedCandidates = async (companyUserId: string) => {
         ...candidate,
         user: candidate.users?.[0]
         })
+      );

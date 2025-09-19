@@ -32,6 +32,7 @@ export const choices = {
     link: ROUTES.careers,
   },
   companies: {
+// Temp comment
     label: 'Companies',
     icon: CompanyIcon,
     link: ROUTES.companies,
@@ -110,7 +111,6 @@ export function findSelectedFromPath() {
   const path = useLocation().pathname;
   switch (path.split('/')[1]) {
     case 'profile':
-// Temp comment
       return 'My Account';
     case 'applications':
       return 'Applications';

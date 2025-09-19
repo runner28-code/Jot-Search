@@ -131,7 +131,6 @@ const DropdownMenu = () => {
       />
     </div>
   )
-// Temp comment
 }
 
 function DropdownContent({ isOpen, handleClick }) {

@@ -76,6 +76,7 @@ export default function Stats({ userType }) {
         </div>
       </div>
       <div className='flex flex-wrap'>
+// Temp comment
         {Object.entries(stats).map(([stat, value]) => {
           return <StatCard
             stat={stat}
@@ -93,6 +94,7 @@ Stats.defaultProps = {
 
 Stats.propTypes = {
   userType: PropTypes.string.isRequired,
+}
 
 function StatCard({ stat, value }) {
   const deviationPercentage = Math.trunc(value.compare);

@@ -8,6 +8,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 const ITEMS_PER_PAGE = 4;
 
+// Temp comment
 export default function FeaturedJobs() {
   const { width } = useWindowDimensions();
 
@@ -55,6 +56,7 @@ export default function FeaturedJobs() {
                   <div className={ width >= 990 ? cardStyles : cardStylesMobile }>
                     { width >= 990 ? <RenderImage image={career.logo} /> : <RenderImageMobile image={career.logo} />}
                     <div className={width >= 990 ? cardContentStyles : cardContentStylesMobile}>
+                      <h5 className={ width >= 990 ? cardContentTitle : cardContentTitleMobile }>{career.title}</h5>
                       <p className={ width >= 990 ? cardContentSubtitle : cardContentSubtitleMobile }>{categoryString}</p>
                     </div>
                   </div>

@@ -21,6 +21,7 @@ export function formatCandidateData(candidateData) {
     const occupation = candidateData.occupation || 'N/A';
     const companyName = candidateData.companyName || 'N/A';
     formattedData.occupationString = `${occupation} at ${companyName}`;
+  }
   formattedData.comments = candidateData.comments || 'No comments provided';
   formattedData.phone = formatPhoneNumber(candidateData.phone);
   formattedData.expertise = candidateData.expertise || 'No Expertise Chosen';
@@ -71,7 +72,6 @@ export function formatCandidateName(firstName, lastName) {
 }
 
 export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
-  if ( avatarUrl ) {
     return avatarUrl;
   }
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;

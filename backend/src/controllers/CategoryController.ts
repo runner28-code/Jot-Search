@@ -10,6 +10,7 @@ import {
   CategoryByIdResponse,
   CategorySearchByFilterResponse,
   FilterBody,
+} from "../types/Common";
 
 @JsonController("/api/category")
 export class CategoryController {

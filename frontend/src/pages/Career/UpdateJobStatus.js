@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
-// Temp comment
 
-import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 import Dropdown from '../../components/UniversalDropdown/index';
 import { useState } from 'react';
 

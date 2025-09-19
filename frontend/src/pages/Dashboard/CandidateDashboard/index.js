@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import Home from '../../../assets/icons/home.svg';
 import AdvancedSearch from '../../../features/AdvancedSearch';
 import CareerFavorite from '../../../components/CareerFavorite';
@@ -27,4 +26,3 @@ export default function CandidateDashboard() {
         <AdvancedSearch />
       </div>
     </>
-  )

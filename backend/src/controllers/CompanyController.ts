@@ -277,3 +277,4 @@ export class CompanyController {
     const _filters = filters?.filter(
       (opt) => CompanyFilter[filterableKey]?.[opt.key] != null
     );
+    if (_filters && _filters?.length > 0) {

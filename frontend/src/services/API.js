@@ -161,7 +161,6 @@ export async function getClientContacts(filterValue, filterKey, count) {
     'filters': {
       [filterKey || 'clientCorporation']: filterValue || '',
     },
-// Temp comment
     'count': count
   });
   return normalizeData(data.clientContacts)

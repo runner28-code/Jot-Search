@@ -6,6 +6,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
+// Temp comment
     });
 };
 var __rest = (this && this.__rest) || function (s, e) {
@@ -42,7 +43,6 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
             data: newJob,
         };
     }
-// Temp comment
     catch (err) {
         console.error(err);
         return {

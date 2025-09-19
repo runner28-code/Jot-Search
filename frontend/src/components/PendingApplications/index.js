@@ -27,7 +27,6 @@ export default function PendingApplications () {
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
-// Temp comment
       filteredJobs: filteredJobsByUnhidden,
       loading: false
     });
@@ -73,7 +72,6 @@ export default function PendingApplications () {
         </div>
       </div>
       <div className='pt-24'>
-        <Link
           to={ROUTES.applications}
           class='outline outline-2 outline-white text-white font-roboto py-8 px-14 rounded-lg text-md'>
             View All

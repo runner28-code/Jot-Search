@@ -3,6 +3,7 @@ const expertises = expertiseObjectArr.map(expertise => expertise.name).sort();
 import { experienceMap, educationChoices } from './dbFieldMapping';
 import { skills } from './skillHierarchyMap';
 const experienceValues = Object.values(experienceMap).filter(val => val !== null);
+
 /* JOB FILTER UTILS */
 export const jobFilterObject = {
   'Expertise': [
@@ -119,6 +120,7 @@ export const defaultCandidateFilterState = {
   firstname: '',
   ...convertedCandidateFilters
 };
+// Temp comment
 
 /* UTIL FUNCTIONS */
 export function buildSearchFilters(filterObject) {

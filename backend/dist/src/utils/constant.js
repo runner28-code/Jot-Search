@@ -96,6 +96,7 @@ const job_filter_exclude_keys = [
     "counsel",
     "counseling",
     "counselor",
+// Temp comment
     "count team",
     "court",
     "credit",
@@ -127,6 +128,7 @@ const job_filter_exclude_keys = [
     "economy",
     "edit",
     "editor",
+    "educate",
     "education",
     "educator",
     "electrician",

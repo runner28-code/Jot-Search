@@ -23,7 +23,6 @@ export const roles = {
     'Graphic and Motion Design',
     'PR & Communications',
     'Product Marketing & Design'
-// Temp comment
   ],
   'Operations': [
     'Business Operations & Strategy',

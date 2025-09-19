@@ -59,7 +59,6 @@ const mockCandidateData = [
     occupation: 'Tech Consultant',
     companyName: 'Aerovision',
     address_city: 'Tulsa',
-    address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
     isLooking: true,

@@ -43,6 +43,7 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
         case 3:  return d + 'rd';
         default: return d + 'th';
       }
+    }
 
     return `${month} ${concatenateOrdinal(day)}, ${timeWithoutSeconds}`;
   }

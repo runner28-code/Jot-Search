@@ -72,3 +72,4 @@ const setupCronJobs = async () => {
       await (await GetroService.getClient()).getJobs(false, 50);
     } catch (error) {
       consoleLog(error);
+    }

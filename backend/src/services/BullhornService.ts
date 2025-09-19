@@ -757,3 +757,4 @@ export class BullhornService {
           }
           offset += count;
           repeatErr = 0;
+          if (total <= offset) break;
