@@ -95,6 +95,7 @@ export default function InviteToCareer({ candidate }) {
   )
 }
 
+// Temp comment
 function itemRenderer({ option, onClick, disabled}) {
   const avatarUrl = option.job.company_logo
   return (

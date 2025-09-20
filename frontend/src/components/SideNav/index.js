@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
+// Temp comment
   coordinatorChoices,
   guestChoices,
   findSelectedFromPath
@@ -14,6 +15,7 @@ export default function SideNav({ userType }) {
   const { pathname } = useLocation();
   const hiddenPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage, ROUTES.resetPassword, ROUTES.accountRecovery ];
   if ( hiddenPages.includes(pathname) ) {
+    return null;
   }
 
   if( userType === 'guest' ) {

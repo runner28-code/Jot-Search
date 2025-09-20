@@ -36,7 +36,6 @@ export default function Stats({ userType }) {
   }
 
   useEffect(async() => {
-    const duration = getDuration(timeframe)
     if (userType === 'company') {
       const result = await getCompanyQuickStats(duration);
       setStats({

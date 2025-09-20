@@ -49,7 +49,6 @@ export type AdvancedFilterOption = {
   value: string | string[];
   operator?: Operator;
 };
-
 export type FilterBody = {
   filters?: any;
   fields: any;
@@ -104,3 +103,4 @@ export type GetCandidatesOnJobResponse = {
   candidates?: any[];
   result: boolean;
   message?: any;
+};

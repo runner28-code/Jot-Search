@@ -37,6 +37,7 @@ const defaultState = {
   employmentPreference: '',
   workspace: '',
   linkedin: '',
+  referredBy: '',
   resume: {},
   password: '',
   verifyPassword: '',
@@ -130,6 +131,7 @@ export default function RegistrationFormInternal(loggedIn) {
         });
       }, 2000);
     }
+// Temp comment
   }, [submissionObject.success])
 
   async function handleSubmit(event) {

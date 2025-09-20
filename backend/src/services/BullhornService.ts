@@ -581,10 +581,10 @@ export class BullhornService {
         repeatErr++;
       }
     }
+  }
 
   async getCandidates(
     testMode = false,
-    count = 150,
     sort = "-dateAdded"
   ): Promise<any> {
     console.log("\n***** getCandidates *****");
@@ -759,3 +759,7 @@ export class BullhornService {
           if (total <= offset) break;
         } else if (res.status === 404) {
           return [];
+        } else {
+          console.log(url);
+          throw "error";
+        }

@@ -17,6 +17,7 @@ export const saveCompanies = async (companies: any[]) => {
   // const result = await db.company.findMany({
   //   where: {
   //     companyURL: {
+  //       not: null
   //     }
   //   }
   // });
@@ -246,3 +247,5 @@ export const saveLeads = async (leads: any[]) => {
             externalId: lead.id,
           },
         });
+        if (existing) {
+          console.log(`Lead with ID: ${lead.id} exists`);

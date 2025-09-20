@@ -62,6 +62,7 @@ export const getSavedCandidates = async (companyUserId: string) => {
         id: companyUserId,
       },
       include: {
+        savedCandidates: {
           include: {
             users: true,
           }

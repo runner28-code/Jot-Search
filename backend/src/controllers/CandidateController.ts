@@ -321,3 +321,4 @@ export class CandidateController {
 
       return {
         candidates: sortedCandidates,
+        total,

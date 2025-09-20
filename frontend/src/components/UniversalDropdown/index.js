@@ -8,6 +8,7 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
       value={ currentChosen }
       onChange={ handleChange }
       multiple={ !!multiselect }
+      required
       disabled={ disabled }
     >
       {/* Placeholder Option */}
@@ -20,7 +21,6 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
             value={ choice }
             className={ optionStyles }
           >
-            { choice }
           </option>
         )
       })}

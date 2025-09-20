@@ -85,7 +85,6 @@ let JobController = class JobController {
             try {
                 const { filters, fields, page, count, datasource } = body;
                 const datasourceToEnum = {
-                    main: client_1.Datasource.main,
                     bullhorn: client_1.Datasource.bullhorn,
                     getro: client_1.Datasource.getro,
                 };

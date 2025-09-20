@@ -34,4 +34,5 @@ exports.IUSER = {
     annualRevenue: "",
     companyURL: "",
     numEmployees: "",
+    revenue: "",
     dateFounded: "",

@@ -44,6 +44,7 @@ export type Job = {
     locations?: string;
     organization_doman?: string;
     organization_id?: string;
+    organization_logo_url?: string;
     organization_name?: string;
     organization_slug?: string;
     passes_filter?: string;
@@ -61,3 +62,4 @@ export type User = {
     bio?: string; // !
     dribbble_url?: string;
     email?: string;
+    first_name?: string;

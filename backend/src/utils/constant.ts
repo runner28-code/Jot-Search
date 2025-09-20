@@ -380,3 +380,4 @@ const job_filter_exclude_keys = [
   "study",
   "subject matter",
   "substitute",
+  "success coach",

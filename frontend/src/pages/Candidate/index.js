@@ -144,6 +144,7 @@ export default function Candidate() {
         {/* Password Reset (Candidate and Coordinator) */}
         <PasswordReset
           role={role}
+          candidateData={candidateData}
         />
       </div>
     </div>

@@ -299,7 +299,6 @@ function NavFooter() {
 }
 
 function NavFooterMobile() {
-
   const blueLinkStyle = 'text-sm text-royalBlue font-spaceGrotesk font-semibold mb-4';
   const linkStyle = 'text-sm zinc-800 mb-4';
   const addressLinkStyle = 'text-sm text-zinc-700 mb-6 mt-8';
@@ -416,7 +415,6 @@ function BackToTop() {
 function Address() {
   const { width } = useWindowDimensions();
   const addressLinkStyle = 'text-md text-zinc-700 mb-6';
-// Temp comment
 
   if( width <= 990 ) {
     return null;

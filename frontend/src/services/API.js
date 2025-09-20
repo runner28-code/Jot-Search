@@ -80,7 +80,6 @@ export async function updateCandidate(newData, id) {
   const { data } = await API.post(ROUTES.APIcandidateUpdate, body);
   return normalizeData(data);
 }
-
 export async function getSavedCandidates() {
   const { data } = await API.get(ROUTES.APIsavedCandidates);
   return normalizeData(data.candidates);
@@ -269,7 +268,6 @@ export async function applyToJob(jobId, candidateId) {
   });
   return normalizeData(data);
 }
-// Temp comment
 
 export async function saveJob(candidateId, jobId) {
   const { data } = await API.put(ROUTES.APItoggleSaveJob, null, {

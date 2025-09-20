@@ -170,7 +170,6 @@ model ClientContact {
   password           String?
   phone              String?
   phone2             String?
-  phone3             String?
   preferredContact   String?
   skills             String?
   source             String?
@@ -575,3 +574,6 @@ model User {
   updatedAt DateTime @updatedAt
 }
 
+model Candidate {
+  id               String    @id @default(uuid())
+  address          String?

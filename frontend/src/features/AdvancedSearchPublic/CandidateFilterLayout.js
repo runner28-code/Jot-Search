@@ -12,6 +12,7 @@ const dropdownFiltersCoord = [
 ];
 
 const dropdownFilters = [
+  'Category',
   'Experience',
   'Remote Availability',
   'Employment Type',
@@ -62,6 +63,7 @@ export default function CandidateFilterLayout(props) {
       <div className='flex flex-wrap gap-xxl-4'>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
       </div>
+// Temp comment
       <div className='flex flex-wrap gap-xxl-4'>
         { renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange) }
       </div>

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
-import FavoriteButton from '../FavoriteButton';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import postingAgeIcon from '../../../assets/icons/calendar.svg';
@@ -65,7 +64,6 @@ CareerCard.propTypes = {
     title: PropTypes.string,
     employmentType: PropTypes.string,
     onSite: PropTypes.string,
-// Temp comment
     salary: PropTypes.string,
     salaryUnit: PropTypes.string,
     createdAt: PropTypes.string,

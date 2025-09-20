@@ -2,7 +2,6 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import CareerProfileInfoContent from './CareerProfileInfoContent';
 import { FiEdit } from 'react-icons/fi';
-// Temp comment
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 const iconStyles = 'w-12 h-12 mr-5 ';
@@ -60,6 +59,7 @@ function renderEditIcon(candidateData, setEditMode) {
   return (
     <button 
       className='testspace-x-2 text-xl leading-none py-4 justify-center items-center text-royalBlue border-1.5 rounded-lg px-4 pr-6 border-solid border-royalBlue'
+// Temp comment
       onClick={handleClick}>
       <FiEdit
         className='h-[3rem] w-[3rem] ml-4 stroke-royalBlue cursor-pointer'

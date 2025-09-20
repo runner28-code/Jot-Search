@@ -5,6 +5,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+// Temp comment
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
@@ -88,6 +89,7 @@ function seedCandidates() {
                     address_state: "OK",
                     address_zip: "74008",
                     description: "Great candidate for everything",
+                    companyName: "Eddy's Everything",
                     companyURL: "eddyseverything.com",
                     firstName: "John",
                     lastName: "Smith",

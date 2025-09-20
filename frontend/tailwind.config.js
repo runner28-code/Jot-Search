@@ -41,7 +41,6 @@ module.exports = {
         // Neutrals
         powderBlue: '#E4F2FF',
         lightGrey: '#F6F5F6',
-// Temp comment
         footerGrey: '#EBEBEB',
         grey300: '#D0D5DD',
         grey700: '#344054',
@@ -203,3 +202,4 @@ module.exports = {
       sm: '1.4rem',
       base: '1.6rem',
       md: '1.8rem',
+      ml: '2rem',

@@ -101,7 +101,6 @@ function renderNotification(activeData, careerData) {
         content='Please let us know by sending a message'
         text='Notify Talent inTulsa by Email'
         email='talentnetwork@intulsa.com'
-        company={careerData.clientCorporation}
         id={careerData.title}
         add='filled'
       />
@@ -120,6 +119,7 @@ function Notification({title, content, text, email, company, id, add}) {
           className='w-12 h-12'
         />
         <h3 className='font-spaceGrotesk text-royalBlue ml-4 text-lg'>{title}</h3>
+      </div>
       <p className='vw-900:w-3/4 mt-6 font-spaceGrotesk'>{content}</p>
       <MailButton
         text={text}

@@ -183,7 +183,6 @@ export type Candidate = {
     dateAvailableEnd?: string;
     dateI9Expiration?: string;
     dateLastComment?: string;
-    dateLastModified?: string;	
     dateNextCall?: string;
     dateOfBirth?: string;
     dayRate?: string;
@@ -255,3 +254,4 @@ export type Candidate = {
     salaryLow?: string;
     secondarySkills?: string;
     skillSet?: string;
+    smsOptIn?: string;

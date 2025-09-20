@@ -58,7 +58,6 @@ const DesktopNavBarLayout = () => {
       {/* Logo */}
       <Link to={ROUTES.root}>
         <img
-          src={inTulsaLogoText}
           alt='logo'
         />
       </Link>
@@ -102,6 +101,7 @@ const DropdownMenu = () => {
       setFirstRender(false);
     }
   }
+
   let chevronStyles = 'h-5 w-7 mx-8 ';
   if ( isOpen ) {
     chevronStyles += 'animate-spin';

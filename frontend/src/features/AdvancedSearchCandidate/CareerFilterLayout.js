@@ -17,7 +17,6 @@ const dropDownFiltersCandidate = [
   'On-Site/Remote',
   'Years Experience'
 ]
-// Temp comment
 
 export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
@@ -50,6 +49,7 @@ export default function CareerFilterLayout(props) {
       <div className='flex flex-wrap'>
         <FilterSearch
           searchTerm={searchTerm}
+// Temp comment
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Careers'

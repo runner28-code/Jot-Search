@@ -32,6 +32,7 @@ CREATE TABLE "Candidate" (
     "externalID" TEXT,
     "fax" TEXT,
     "fax2" TEXT,
+    "fax3" TEXT,
     "firstName" TEXT,
     "lastName" TEXT,
     "gender" TEXT,
@@ -76,3 +77,4 @@ CREATE TABLE "Candidate" (
     "source" TEXT,
     "specialities" TEXT,
     "ssn" TEXT,
+    "stateAdditionalWithholdingsAmount" TEXT,

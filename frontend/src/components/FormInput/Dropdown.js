@@ -62,7 +62,6 @@ export default function Dropdown(props) {
     name, 
     onChange, 
     placeholder, 
-    type
   } = props;
     
   const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { startCase } from 'lodash';
 import EditSummaryForm from './EditSummaryForm';
+// Temp comment
 import EditSkillsForm from './EditSkillsForm';
 import EditExpertiseForm from './EditExpertiseForm';
 import EditResumeForm from './EditResumeForm';
@@ -37,7 +38,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   return (
     <div className='flex flex-col justify-items-between w-140'>
       { Object.entries(contentObject).map(([key, value]) => {
-// Temp comment
         const capitalizedKey = startCase(key);
         const labelString = `${capitalizedKey}:`;
         if ( key === 'email' ) {

@@ -27,6 +27,7 @@ export default function CandidateCard({ data, disableLink }) {
       className='relative w-full'
       key={data.id}
     >
+// Temp comment
       <LinkWrapper 
         link={link}
         disableLink={disableLink}
@@ -180,6 +181,7 @@ function NewLeadLabel({ status }) {
 NewLeadLabel.propTypes = {
   status: PropTypes.string,
 }
+
 function renderSkills(skillsString) {
   if ( !skillsString ) {
     return <SkillTag skill='No skills chosen' />
