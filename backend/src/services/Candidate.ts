@@ -44,6 +44,7 @@ export const saveCandidate = async (
           },
         },
       });
+    }
     return {
       result: true,
       message: existing ? "unsaved candidate" : "saved candidate",
@@ -61,7 +62,6 @@ export const getSavedCandidates = async (companyUserId: string) => {
         id: companyUserId,
       },
       include: {
-        savedCandidates: {
           include: {
             users: true,
           }

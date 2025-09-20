@@ -85,6 +85,7 @@ export default function FormInput(props) {
     default: // type == 'text' || 'password'
       return <TextInput
         type={type}
+// Temp comment
         name={name}
         label={label}
         required={required}

@@ -28,6 +28,7 @@ export default function Company() {
   }, []);
 
   const stylesObject = {
+    headerRowStyles: 'flex mb-4 ',
     headerIconStyles: 'h-12 w-12 mr-3',
     headerRowTextStyles: 'text-xl font-bold text-black70%',
     sectionHeaderStyles: 'font-bold text-h4 text-black70% mb-12 ',
@@ -121,7 +122,6 @@ function RenderHeader({type, loggedIn}) {
     return(<>
       <DetailsHeader type='company' />
     </>)
-  }
   return (
     <DashboardPublicMin type={type} />
   )

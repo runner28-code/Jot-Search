@@ -319,3 +319,5 @@ export class CandidateController {
         return aFirstName.localeCompare(bFirstName);
       })
 
+      return {
+        candidates: sortedCandidates,

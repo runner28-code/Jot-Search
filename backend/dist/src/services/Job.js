@@ -44,7 +44,6 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
     }
     catch (err) {
         console.error(err);
-// Temp comment
         return {
             result: false,
             error: err,

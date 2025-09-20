@@ -254,3 +254,4 @@ export type Candidate = {
     salary?: string;
     salaryLow?: string;
     secondarySkills?: string;
+    skillSet?: string;

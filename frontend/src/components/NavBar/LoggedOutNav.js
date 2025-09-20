@@ -8,7 +8,6 @@ import AuthService from '../../services/auth';
 import NavSearch from '../NavSearch';
 import NavSearchMobile from '../NavSearchMobile';
 import * as ROUTES from '../../routes';
-import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function NavBar() {
   const { width } = useWindowDimensions();
@@ -31,7 +30,6 @@ function MobileNavBarLayout() {
             alt='logo'
             className='w-72 h-ful'
           />
-// Temp comment
         </Link>
         {/* Nav Menu */}
         <div className='flex items-center'>

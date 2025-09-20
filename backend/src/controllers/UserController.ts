@@ -167,3 +167,5 @@ export class UserController {
   }
 
   @Post("/account-recovery")
+  async accountRecovery(@Body() body: { email: string }) {
+    const { email } = body;

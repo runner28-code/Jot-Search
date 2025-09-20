@@ -55,3 +55,4 @@ export class BigQueryService {
             const values = keys.map(k => `"""${data[k]}"""`);
           
             const query = `
+              INSERT INTO \`${dataset}.${table}\`

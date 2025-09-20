@@ -41,6 +41,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
 
   function handleInputChange(e) {
     const { name, value } = e.target;
+// Temp comment
     setFormData({ ...formData, [name]: value });
   }
 
@@ -71,6 +72,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
       referredBy: value
     })
     setReferralChoice(false);
+  }
 
   function handlePhoneInputChange(value) {
     setFormData({ ...formData, phone: value });

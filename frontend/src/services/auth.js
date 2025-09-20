@@ -68,6 +68,7 @@ class AuthService {
   }
 
   async refreshSavedJobAndCompanies() {
+    try {
       const { user_id } = this.getProfile();
       const [jobs = [], companies = []] = await Promise.all([getSavedJobs(user_id), getSavedCompanies(user_id)]);
       const jobIDs = jobs.map(job => job.id);
@@ -131,6 +132,5 @@ class AuthService {
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
   }
 
-  getSavedCandidateIDs() {
     return JSON.parse(localStorage.getItem('savedCandidates')) || [];
   }

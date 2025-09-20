@@ -39,7 +39,6 @@ export default function LandingPage() {
       {/* Browse Opportunities by Expertise */}
       { renderExpertiseLinks() }
       { isMobile && <JoinTalentNetwork /> }
-// Temp comment
       {/* Featured Jobs */}
       <FeaturedJobs />
       {/* Featured Companies */}
@@ -83,7 +82,6 @@ function renderLocation() {
       </div>
     )
   }
-}
 
 function renderColorShapes()  {
   const { width } = useWindowDimensions();

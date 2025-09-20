@@ -345,6 +345,7 @@ const job_filter_exclude_keys = [
   "rn",
   "room service",
   "safety",
+  "sales assistant",
   "sales associate",
   "scheduling",
   "school",
@@ -377,3 +378,5 @@ const job_filter_exclude_keys = [
   "street",
   "student",
   "study",
+  "subject matter",
+  "substitute",

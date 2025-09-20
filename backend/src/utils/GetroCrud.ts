@@ -93,3 +93,4 @@ export const saveJobs = async (jobs: any[]) => {
     try {
         for (const job of jobs) {
             try {
+                console.log(`Savng Getro Job with ID = ${job.id}`);

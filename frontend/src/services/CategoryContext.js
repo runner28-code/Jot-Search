@@ -5,7 +5,6 @@ import { getCategories } from './API';
 export const CategoryContext = createContext();
 
 const CategoryProvider = ({children}) => {
-  const [categories, setCategories] = useState([]);
 
   useEffect( async () => {
     const categoriesFromAPI = await getCategories();

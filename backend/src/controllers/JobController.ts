@@ -332,3 +332,4 @@ export class JobController {
   async apply(
     @QueryParam("candidate") candidate: string,
     @QueryParam("job") job: string
+  ): Promise<ApplyResponse> {

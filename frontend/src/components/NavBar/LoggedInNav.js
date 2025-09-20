@@ -102,7 +102,6 @@ const DropdownMenu = () => {
       setFirstRender(false);
     }
   }
-
   let chevronStyles = 'h-5 w-7 mx-8 ';
   if ( isOpen ) {
     chevronStyles += 'animate-spin';
@@ -110,7 +109,6 @@ const DropdownMenu = () => {
     chevronStyles += 'animate-spin-reverse';
   }
   return (
-// Temp comment
     <div
       className='relative'
       ref={menuRef}

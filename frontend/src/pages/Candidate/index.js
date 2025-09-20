@@ -75,7 +75,6 @@ export default function Candidate() {
       updateResponse = await updateUser(formattedUpdateObject, id);
     }
     if (isProfilePage) {
-// Temp comment
       setCurrentUser({...updateResponse.data})
     }
     if (updateResponse.result === false) {
@@ -145,7 +144,6 @@ export default function Candidate() {
         {/* Password Reset (Candidate and Coordinator) */}
         <PasswordReset
           role={role}
-          candidateData={candidateData}
         />
       </div>
     </div>

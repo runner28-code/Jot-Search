@@ -28,7 +28,6 @@ const defaultState = {
   address1: '',
   city: '',
   state: '',
-// Temp comment
   zip: '',
   willRelocate: false,
   roles: [],

@@ -27,6 +27,7 @@ function App() {
         <div 
           className='grow min-h-280 pb-18'>
           <Routes>
+// Temp comment
             <Route
               path={ROUTES.signup}
               element={<SignUp />} />
@@ -60,6 +61,7 @@ function App() {
             <Route
               path={ROUTES.root + '*'}
               element={<Auth />} />
+            <Route
               path="*"
               element={<Navigate to={ROUTES.landingPage} />}
             />

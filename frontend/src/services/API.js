@@ -269,6 +269,7 @@ export async function applyToJob(jobId, candidateId) {
   });
   return normalizeData(data);
 }
+// Temp comment
 
 export async function saveJob(candidateId, jobId) {
   const { data } = await API.put(ROUTES.APItoggleSaveJob, null, {

@@ -17,7 +17,6 @@ export const saveCompanies = async (companies: any[]) => {
   // const result = await db.company.findMany({
   //   where: {
   //     companyURL: {
-  //       not: null
   //     }
   //   }
   // });
@@ -246,3 +245,4 @@ export const saveLeads = async (leads: any[]) => {
           where: {
             externalId: lead.id,
           },
+        });

@@ -67,7 +67,6 @@ export const getAppliedJobsByUser = async (userId: string) => {
       include: {
         company: true,
         applications: {
-          where: {
             userId,
           },
         },
@@ -110,3 +109,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
     sanitizedKeys.forEach((key) => {
       const typedKey = key as JobKey;
       filteredJob[typedKey] = job[typedKey] as any;
+    });

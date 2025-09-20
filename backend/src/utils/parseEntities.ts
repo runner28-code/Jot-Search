@@ -4,6 +4,7 @@ import { Job } from "../types/Main";
 import { User } from "../types/User";
 
 export const parseBullhornCandidateToUser = (data: BhCandidate) => {
+  if (!data.email) return null;
 
   const user = {
     externalId: data.id,
@@ -98,3 +99,4 @@ export const parseBullhornJobToMain = (data: BhJob) => {
     city: data.address_city,
     state: data.address_state,
     zip: data.address_zip,
+    country_id: data.address_country_id,

@@ -95,6 +95,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     }
     setFilterObject({ ...filterObject, title: '' });
     setPage(1);
+// Temp comment
   }, [activeTab]);
 
   useEffect(() => {
@@ -109,6 +110,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   function handleFilterChange(filterType, choice) {
     setFilterObject({
+      ...filterObject,
       [filterType]: choice
     });
     setPage(1);

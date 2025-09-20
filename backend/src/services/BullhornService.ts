@@ -581,7 +581,6 @@ export class BullhornService {
         repeatErr++;
       }
     }
-  }
 
   async getCandidates(
     testMode = false,
@@ -758,3 +757,5 @@ export class BullhornService {
           offset += count;
           repeatErr = 0;
           if (total <= offset) break;
+        } else if (res.status === 404) {
+          return [];
