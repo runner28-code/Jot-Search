@@ -42,7 +42,6 @@ export default function CareerPage() {
   const addressString = buildCareerAddress(careerData.city, careerData.state);
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
   const postingAge = calculatePostingAge(careerData.createdAt);
-// Temp comment
   const data = {
     careerData,
     categoryString,
@@ -66,6 +65,7 @@ export default function CareerPage() {
     <div 
       className={ width <= 990 ? containerStyles
         : loggedIn ? containerStyles 
+// Temp comment
           : containerStyles + ' px-[15%]'}
     >
       { renderNotification(activeData, careerData) }

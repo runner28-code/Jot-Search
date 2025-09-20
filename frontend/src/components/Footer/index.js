@@ -343,7 +343,6 @@ function NavFooterMobile() {
         </Link>
         <Link
           to={ROUTES.companies}
-// Temp comment
           className={linkStyle}
         >Browse Companies
         </Link>

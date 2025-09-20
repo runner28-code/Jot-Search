@@ -13,6 +13,7 @@ export const useGetJobs = ({ count, page, filtersArr, operator, enabled = true }
     () => getJobsFull(filtersArr, count, operator, page),
     { enabled }
   );
+
   return { careers: data?.jobs, jobs: data?.jobs, total: data?.total || 0, error, isLoading };
 }
 

@@ -99,7 +99,6 @@ export default function DesktopLayout(props) {
           )}
         </div>
       </div>
-// Temp comment
 
       {/* Coordinator Status */}
       {
@@ -124,7 +123,6 @@ DesktopLayout.propTypes = {
   data: PropTypes.shape({
     careerData: PropTypes.object.isRequired,
     categoryString: PropTypes.string.isRequired,
-    role: PropTypes.string.isRequired,
     addressString: PropTypes.string.isRequired,
     postingAge: PropTypes.string.isRequired,
     salaryString: PropTypes.string.isRequired,

@@ -345,7 +345,6 @@ const job_filter_exclude_keys = [
   "rn",
   "room service",
   "safety",
-  "sales assistant",
   "sales associate",
   "scheduling",
   "school",

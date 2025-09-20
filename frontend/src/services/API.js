@@ -302,7 +302,6 @@ export async function toggleHideJob(id, unhide) {
   const { data } = await API.patch(ROUTES.APIjobBase, {
     id,
     hidden
-// Temp comment
   });
   return normalizeData(data.result);
 }

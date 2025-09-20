@@ -72,6 +72,7 @@ export default function RegistrationForm() {
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
         // Set success to true if on add-candidate page, navigate user to login if not
+        if ( location.pathname === '/add-candidate' ) {
           return setSubmissionObject({
             loading: false,
             success: true,
@@ -96,6 +97,7 @@ export default function RegistrationForm() {
         setFormObj(defaultState);
         setSubmissionObject({
           loading: false,
+// Temp comment
           success: false,
         });
       }, 2000);

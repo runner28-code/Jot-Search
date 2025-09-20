@@ -166,3 +166,4 @@ export class UserController {
     return await update(user.id, user.role, user);
   }
 
+  @Post("/account-recovery")

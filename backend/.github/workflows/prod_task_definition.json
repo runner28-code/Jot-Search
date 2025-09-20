@@ -7,7 +7,7 @@
 //             "name": "intulsa-backend-container-prod",
 //             "image": "site-backend:prod",
 //             "cpu": 1024,
-//             "portMappings": [
+//             "memory": 2048,
 //                 {
 //                     "containerPort": 5000,
 //                     "hostPort": 5000,

@@ -1,7 +1,6 @@
 import { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
 
-const mockJobsData = [
   {
     id: '1ea36da6-8819-4617-8c09-5df46f1reg78',
     title: 'Database Administrator',
@@ -73,7 +72,6 @@ const mockJobsData = [
     company: 'Paycom', // ! Not in schema yet
     clientCorporationID: 'b0eda365-79b5-4e2b-8674-642f09f56eb2',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
-// Temp comment
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
     location_state: 'OK',

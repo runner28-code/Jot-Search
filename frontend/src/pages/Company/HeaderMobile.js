@@ -7,6 +7,7 @@ import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import LoadingSpinner from '../../components/LoadingSpinner';
 
 
+// Temp comment
 // Icons
 import PlacePin from '../../assets/icons/placepin.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -150,6 +151,5 @@ function FillerIcon () {
       </div>
     )
   } else {
-// Temp comment
     return null;
   }

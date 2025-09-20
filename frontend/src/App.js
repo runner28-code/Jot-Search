@@ -32,7 +32,6 @@ function App() {
               element={<SignUp />} />
             <Route
               path={ROUTES.login}
-// Temp comment
               element={<Login />} />
             <Route
               path={ROUTES.landingPage}
@@ -61,7 +60,6 @@ function App() {
             <Route
               path={ROUTES.root + '*'}
               element={<Auth />} />
-            <Route
               path="*"
               element={<Navigate to={ROUTES.landingPage} />}
             />

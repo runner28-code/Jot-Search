@@ -135,7 +135,6 @@ export const skills = [
   'Consultative Sales',
   'Consulting',
   'Consumer Market Research',
-  'Containers',
   'Content Development',
   'Content Management',
   'Contract Management',

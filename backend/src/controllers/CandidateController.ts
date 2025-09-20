@@ -258,6 +258,7 @@ export class CandidateController {
           },
         });
 
+        totalPromise = db.user.count({ where })
       } else {
         candidatesPromise = db.candidate.findMany({
           take: count || 100,

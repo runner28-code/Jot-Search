@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import PageHeader from '../../../components/PageHeader';
 import AdvancedSearch from '../../../features/AdvancedSearch';
@@ -11,7 +12,6 @@ export default function CoordinatorDashboard({ userType }) {
         headerText={`Coordinator Dashboard`}
         icon={gaugeIcon}
       />
-// Temp comment
       <Stats userType={userType} />
       <AdvancedSearch />
     </>

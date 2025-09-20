@@ -34,6 +34,7 @@ export default function AddCoordinator() {
     }
   }, [submissionObject.loading]);
 
+  // Clear form and success icon after 2 seconds
   useEffect(() => {
     if (submissionObject.success) {
       setTimeout(() => {
@@ -56,7 +57,6 @@ export default function AddCoordinator() {
       value,
       submissionObject.errors,
       formObject.password
-    );
 
     // Add errors to state if there are any
     if (Object.keys(newErrors).length > 0) {

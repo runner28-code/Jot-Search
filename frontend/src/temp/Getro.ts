@@ -54,7 +54,6 @@ export type Job = {
     status?: string;
     title?: string;
     url?: string;
-};
 
 export type User = {
     id: string;

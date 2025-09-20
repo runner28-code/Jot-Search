@@ -22,5 +22,4 @@
 #       - uses: actions/checkout@v2
 #       - name: Install SSH Key
 #         uses: shimataro/ssh-key-action@v2
-#         with:
 #           key: ${{ secrets.IN_TULSA_DOCKER_SSH_PRIVATE_KEY }}

@@ -31,6 +31,7 @@ function MobileNavBarLayout() {
             alt='logo'
             className='w-72 h-ful'
           />
+// Temp comment
         </Link>
         {/* Nav Menu */}
         <div className='flex items-center'>
@@ -42,6 +43,5 @@ function MobileNavBarLayout() {
       <div className='flex justify-center'>
         { renderGlobalSearch() }
       </div>
-// Temp comment
     </nav>
   )

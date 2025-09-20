@@ -1,4 +1,3 @@
-// Temp comment
 import RegistrationForm from '../../components/RegistrationForm';
 import useWindowDimensions from '../../hooks/windowDimensions';
 

@@ -36,6 +36,7 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
         return false;
     }
     catch (error) {
+// Temp comment
         console.log(error);
         return true;
     }

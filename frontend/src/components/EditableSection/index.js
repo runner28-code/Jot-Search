@@ -47,6 +47,7 @@ EditableSection.propTypes = {
 
 function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
   if (editMode) {
+    return <EditSectionForm 
       contentObject={contentObject} 
       handlePropertyChange={handlePropertyChange} />
   }

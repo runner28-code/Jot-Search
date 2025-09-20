@@ -44,6 +44,7 @@ module.exports = {
         footerGrey: '#EBEBEB',
         grey300: '#D0D5DD',
         grey700: '#344054',
+// Temp comment
         midGrey: '#94949D',
         grey: '#EBEBEB',
         charcoal: '#3C3C4B',
@@ -63,6 +64,7 @@ module.exports = {
         blueSquare: '#4A53A4',
         blueSquare2: '#30BED3',
         indigoSquare: '#4A53A4',
+        cyanSquare: '#1ECADB',
         pinkSquare: '#EB4A87',
         orangeSquare: '#F2871F',
         darkBlue: '#001B3C',

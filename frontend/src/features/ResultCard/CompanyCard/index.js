@@ -108,7 +108,6 @@ const dataShape = {
       state: PropTypes.string,
     }),
     logo: PropTypes.string,
-// Temp comment
     name: PropTypes.string,
     numEmployees: PropTypes.string,
   }).isRequired,
