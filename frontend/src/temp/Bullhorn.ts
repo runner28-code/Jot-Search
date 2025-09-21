@@ -3,7 +3,6 @@ export type Company = {
     id: string,
     address_address1?: string,
     address_address2?: string,
-    address_city?: string,
     address_state?: string,
     address_zip?: string,
     annualRevenue?: string,
@@ -183,6 +182,7 @@ export type Candidate = {
     dateAvailableEnd?: string;
     dateI9Expiration?: string;
     dateLastComment?: string;
+    dateLastModified?: string;	
     dateNextCall?: string;
     dateOfBirth?: string;
     dayRate?: string;

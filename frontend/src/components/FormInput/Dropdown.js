@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import checkmarkIcon from '../../assets/images/checkmark.png';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 const MULTI_SELECT = 'multi-select';
@@ -62,6 +61,7 @@ export default function Dropdown(props) {
     name, 
     onChange, 
     placeholder, 
+    type
   } = props;
     
   const [isOpen, setIsOpen] = useState(false);

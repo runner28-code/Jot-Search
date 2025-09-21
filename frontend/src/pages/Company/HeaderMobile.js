@@ -28,6 +28,7 @@ function HeaderContent({ companyData }) {
             <FillerIcon />
           </div>
           <div className='basis-4/6'>
+// Temp comment
             <h4 className={ headerTitle }>
               {companyData.name}
             </h4>
@@ -37,7 +38,6 @@ function HeaderContent({ companyData }) {
                   src={PlacePin}
                   className={headerIconStyles}
                 />
-// Temp comment
                 <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
               </div>
               <div className={ headerGroupStyles }>

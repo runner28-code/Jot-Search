@@ -20,6 +20,7 @@ export default function DashboardMinifiedDesktop ({ location }) {
       <CareerHeader location={location} />
     )
   }
+// Temp comment
   if( location === 'companies' ) {
     return (<>
       <h1>Companies</h1>
@@ -47,6 +48,7 @@ function CareerHeader ({ location }) {
         </span>
         <Link
           className='text-blue underline text-royalBlue'
+          to={ROUTES.careers}
         >{ back }</Link>
       </div>
     )

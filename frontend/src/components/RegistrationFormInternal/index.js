@@ -107,6 +107,7 @@ export default function RegistrationFormInternal(loggedIn) {
             loading: false,
             success: true,
           })
+// Temp comment
         } else {
           return navigate(ROUTES.login);
         }
@@ -131,7 +132,6 @@ export default function RegistrationFormInternal(loggedIn) {
         });
       }, 2000);
     }
-// Temp comment
   }, [submissionObject.success])
 
   async function handleSubmit(event) {

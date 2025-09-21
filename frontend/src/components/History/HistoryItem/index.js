@@ -17,7 +17,6 @@ function isTodayOrYesterday(dateObj) {
     if ( dayDifference === 0 ) {
       returnObj.isToday = true;
     } else if ( dayDifference === 1 ) {
-      returnObj.isYesterday = true;
     }
   }
 
@@ -39,7 +38,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
       if (d > 3 && d < 21) return d + 'th';
       switch (d % 10) {
         case 1:  return d + 'st';
-// Temp comment
         case 2:  return d + 'nd';
         case 3:  return d + 'rd';
         default: return d + 'th';

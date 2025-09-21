@@ -25,7 +25,6 @@ const checkboxFilters = [
   'Authorized to work in the US',
   'Open to Relocation',
   'Actively Looking',
-];
 
 export default function CandidateFilterLayout(props) {
   const {
@@ -63,7 +62,6 @@ export default function CandidateFilterLayout(props) {
       <div className='flex flex-wrap gap-xxl-4'>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
       </div>
-// Temp comment
       <div className='flex flex-wrap gap-xxl-4'>
         { renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange) }
       </div>

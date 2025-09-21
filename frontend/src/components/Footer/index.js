@@ -299,6 +299,7 @@ function NavFooter() {
 }
 
 function NavFooterMobile() {
+
   const blueLinkStyle = 'text-sm text-royalBlue font-spaceGrotesk font-semibold mb-4';
   const linkStyle = 'text-sm zinc-800 mb-4';
   const addressLinkStyle = 'text-sm text-zinc-700 mb-6 mt-8';
@@ -408,7 +409,6 @@ function BackToTop() {
           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
         }}>Back to Top
       </button>
-    </div>
   </>)
 }
 

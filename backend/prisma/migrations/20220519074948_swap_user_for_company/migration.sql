@@ -5,6 +5,7 @@
 
 */
 -- DropForeignKey
+ALTER TABLE "User" DROP CONSTRAINT "User_addressId_fkey";
 
 -- DropForeignKey
 ALTER TABLE "User" DROP CONSTRAINT "User_billingAddressId_fkey";
@@ -26,7 +27,6 @@ CREATE TABLE "Company" (
     "addressId" TEXT,
     "billingAddressId" TEXT,
     "billingContact" TEXT,
-    "billingFrequency" TEXT,
     "billingPhone" TEXT,
     "branchId" TEXT,
     "businessSectorList" TEXT[],

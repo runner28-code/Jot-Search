@@ -75,6 +75,7 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
   if ( avatarUrl ) {
     return avatarUrl;
   }
+// Temp comment
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;
 }
 
@@ -87,6 +88,7 @@ export function formatPhoneNumber(phoneNumberString) {
     return phoneNumberString;
   }
   if ( phoneNumberString.includes('-') ) { // Reset dashes. Will re-add dashes in correct format
+    phoneNumberString = phoneNumberString.replace(/-/g, '');
   }
   if (phoneNumberString.length === 10) {
     const areaCode = phoneNumberString.slice(0, 3);

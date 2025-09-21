@@ -170,3 +170,4 @@ export class UserController {
   async accountRecovery(@Body() body: { email: string }) {
     const { email } = body;
     return await recovery(email);
+  }

@@ -82,6 +82,7 @@ export default function InviteCandidates({ company }) {
           }}
           disabled={selected.length === 0 || isSendingCandidates}
         >
+// Temp comment
           <MailIcon className='inline-block mr-2' />
           Send Now
         </button>

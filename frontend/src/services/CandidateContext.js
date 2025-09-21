@@ -102,6 +102,7 @@ export const useCandidateContext = () => useContext(CandidateContext)
 
 const CandidateProvider = ({children}) => {
   const [candidates, setCandidates] = useState(mockCandidateData);
+// Temp comment
   const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
 
   useEffect(() => {

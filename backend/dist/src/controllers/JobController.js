@@ -38,7 +38,6 @@ const FieldMatch_1 = require("../utils/FieldMatch");
 const MainCrud_1 = require("../utils/MainCrud");
 const BullhornService_1 = require("../services/BullhornService");
 let JobController = class JobController {
-    searchJobByID(id) {
         var _a;
         return __awaiter(this, void 0, void 0, function* () {
             try {
@@ -85,6 +84,7 @@ let JobController = class JobController {
             try {
                 const { filters, fields, page, count, datasource } = body;
                 const datasourceToEnum = {
+                    main: client_1.Datasource.main,
                     bullhorn: client_1.Datasource.bullhorn,
                     getro: client_1.Datasource.getro,
                 };

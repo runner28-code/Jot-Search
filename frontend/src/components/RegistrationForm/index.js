@@ -46,7 +46,6 @@ const defaultState = {
 const defaultCommunity = {
   community: ''
 }
-// Temp comment
 export default function RegistrationForm(loggedIn) {
   const {categories} = useContext(CategoryContext);
   const [formObj, setFormObj] = useState(defaultState);

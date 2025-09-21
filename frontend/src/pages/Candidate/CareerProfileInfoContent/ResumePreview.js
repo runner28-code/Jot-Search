@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import {
   FiChevronLeft as BackIcon,
   FiChevronRight as NextIcon,
-// Temp comment
 } from 'react-icons/fi';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
@@ -28,7 +27,6 @@ const ResumePreview = ({ resumeUrl }) => {
       {!pdfDocument && <LoadingSpinner />}
       <canvas
         ref={canvasRef}
-        className='rounded-lg'
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>

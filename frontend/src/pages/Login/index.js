@@ -1,3 +1,4 @@
+// Temp comment
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
@@ -64,6 +65,7 @@ export default function Login() {
             label='Login Email'
           />
           <FormInput
+            type='password'
             name='password'
             label='Password'
           />

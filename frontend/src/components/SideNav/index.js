@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
-// Temp comment
   coordinatorChoices,
   guestChoices,
   findSelectedFromPath
@@ -61,6 +60,7 @@ function renderChoice(choice, selected, index, choicesLength) {
       to={choice.link}
       className={choiceStyles}
       key={choice.label}
+// Temp comment
     >
       <Icon
         className={iconStyles} />

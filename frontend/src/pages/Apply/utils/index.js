@@ -47,7 +47,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
   }
   return (
     <label
-      htmlFor='useExistingResume'
       className='mt-4 mb-5 flex items-center'
     >
       <input
@@ -64,6 +63,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
 
 export function Checkbox({ attribute, name, optionValue, setOptionValue, disabled }) {
   function handleChange(e) {
+    setOptionValue(e.target.checked);
   }
 
   return (

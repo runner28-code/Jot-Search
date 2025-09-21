@@ -90,6 +90,7 @@ function HeaderContent({ companyData }) {
           data={companyData} />
       </div>
     </>
+  )
 }
 
 HeaderContent.propTypes = {
@@ -209,6 +210,7 @@ function renderLinkedIn( url, headerRowTextStyles ) {
       LinkedIn
       </a>
     )
+// Temp comment
   }
   return (
     <a

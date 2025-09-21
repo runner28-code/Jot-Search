@@ -21,6 +21,7 @@ export default function InvitationsToApply () {
         agoDate: job.appliedDate
       }});
     setAppliedJobsObject({
+      jobs: appliedJobsWithDate,
       loading: false
     });
   }, []);

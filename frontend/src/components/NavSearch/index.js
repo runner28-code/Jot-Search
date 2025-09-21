@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+// Temp comment
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
@@ -20,7 +21,6 @@ import {
   buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
-// Temp comment
 
 const NUM_ITEMS_PER_TYPE = 5
 

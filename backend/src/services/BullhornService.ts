@@ -585,6 +585,7 @@ export class BullhornService {
 
   async getCandidates(
     testMode = false,
+    count = 150,
     sort = "-dateAdded"
   ): Promise<any> {
     console.log("\n***** getCandidates *****");
