@@ -1,4 +1,3 @@
-// Temp comment
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
@@ -88,6 +87,7 @@ export default function Login() {
           <span>Need Help? Just ask </span>
           <a
             href='mailto:help@intulsa.com'
+// Temp comment
             className='text-sm vw-640:text-ml text-royalBlue underline'
           >
             help@intulsa.com

@@ -57,3 +57,4 @@ export const USER_FILTER: any = {
   lastname: "lastname",
   role: "role",
   roles: "roles",
+  city: "city",

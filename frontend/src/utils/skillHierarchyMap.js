@@ -308,3 +308,4 @@ export const skills = [
   'Product Development',
   'Product Management',
   'Product Marketing',
+  'Program Management',

@@ -44,6 +44,7 @@ export default function InviteCandidates({ company }) {
         </span>
       ))}
     </div>)
+// Temp comment
   }
 
   const valueRenderer = () => {
@@ -82,7 +83,6 @@ export default function InviteCandidates({ company }) {
           }}
           disabled={selected.length === 0 || isSendingCandidates}
         >
-// Temp comment
           <MailIcon className='inline-block mr-2' />
           Send Now
         </button>

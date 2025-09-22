@@ -24,7 +24,6 @@ import {
   Job,
   FilterBody,
   JobSearchByFilterResponse,
-  JobSearchByID,
   DataSource,
   Tables,
   ApplyResponse,
@@ -335,3 +334,4 @@ export class JobController {
   ): Promise<ApplyResponse> {
     return await saveApplication(job, candidate);
   }
+

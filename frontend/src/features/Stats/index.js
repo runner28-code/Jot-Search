@@ -54,6 +54,7 @@ export default function Stats({ userType }) {
         'Total Companies': { ...result.totalCompanies },
         'Total Open Jobs': { ...result.totalOpenJobs },
         'Total Candidates': { ...result.totalCandidates },
+// Temp comment
         'Applications Submitted': { ...result.applicationsSubmitted },
         'Company Request Introductions': { ...result.companyRequestIntroductions },          
       })
@@ -76,6 +77,7 @@ export default function Stats({ userType }) {
         </div>
       </div>
       <div className='flex flex-wrap'>
+        {Object.entries(stats).map(([stat, value]) => {
           return <StatCard
             stat={stat}
             value={value}

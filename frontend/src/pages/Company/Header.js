@@ -210,7 +210,6 @@ function renderLinkedIn( url, headerRowTextStyles ) {
       LinkedIn
       </a>
     )
-// Temp comment
   }
   return (
     <a
@@ -244,3 +243,15 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
     Company Website
     </a>
   </>)
+}
+
+function isValidHttpUrl(string) {
+  let url;
+
+  try {
+    url = new URL(string);
+  } catch (_) {
+    return false;
+  }
+
+  return url.protocol === 'http:' || url.protocol === 'https:';

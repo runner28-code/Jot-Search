@@ -13,6 +13,7 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
   try {
       await sendgrid.send(msg);
   } catch (error) {
+      console.log(error);
       throw error;
   }
 };
@@ -92,3 +93,4 @@ export const sendJobsToCandidates = async (jobs: string[], candidates_emails: st
     throw error;
   }
 }
+

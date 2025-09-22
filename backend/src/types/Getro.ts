@@ -4,7 +4,6 @@ export type Company = {
   approx_employees?: string;
   crunchbase_url?: string;
   description?: string;
-  domain?: string;
   facebook_url?: string;
   founded?: string;
   instagram_url?: string;
@@ -79,3 +78,4 @@ export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
 ]);
 
 export type User = {
+  id: string;

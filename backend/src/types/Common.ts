@@ -13,7 +13,6 @@ export enum Tables {
   JOBS = "Jobs",
   USER = "User",
   CONTACTS = "Contacts",
-  LEADS = "Leads",
   CANDIDATES = "Candidates",
   APPLICATIONS = "Applications",
   SAVEDJOBS = "SavedJobs",
@@ -105,3 +104,4 @@ export type GetCandidatesOnJobResponse = {
   result: boolean;
   message?: any;
 };
+

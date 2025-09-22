@@ -12,6 +12,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const role = AuthService.getUserRole();
   if ( !AuthService.loggedIn() || role === 'coordinator' ) {
     return null;
+// Temp comment
   }
   // Return conditions
   const invalidType = !VALID_TYPES.includes(type);
@@ -71,4 +72,17 @@ function getIdByType(type, data) {
       return data.id;
     default:
       return '';
+  }
+}
+
+function getItemsByType(type) {
+  switch (type) {
+    case 'job':
+      return AuthService.getSavedJobIDs();
+    case 'company':
+      return AuthService.getSavedCompanyIDs();
+    case 'candidate':
+      return AuthService.getSavedCandidateIDs();
+    default:
+      return [];
   }

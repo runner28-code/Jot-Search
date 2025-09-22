@@ -163,7 +163,6 @@ const job_filter_exclude_keys = [
     "fraud",
     "front desk",
     "garbage",
-// Temp comment
     "garden",
     "gardener",
     "gift stocker",
@@ -381,3 +380,5 @@ const job_filter_exclude_keys = [
     "street",
     "student",
     "study",
+    "subject matter",
+    "substitute",

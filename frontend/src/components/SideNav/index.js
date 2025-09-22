@@ -60,7 +60,6 @@ function renderChoice(choice, selected, index, choicesLength) {
       to={choice.link}
       className={choiceStyles}
       key={choice.label}
-// Temp comment
     >
       <Icon
         className={iconStyles} />

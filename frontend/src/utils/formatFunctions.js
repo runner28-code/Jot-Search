@@ -37,7 +37,6 @@ export function formatCandidateData(candidateData) {
   if ( candidateData.lastname && !candidateData.lastName ) formattedData.lastName = candidateData.lastname;
 
   return formattedData;
-}
 
 export function convertUserToCandidate(user) {
   const candidate = {
@@ -75,7 +74,6 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
   if ( avatarUrl ) {
     return avatarUrl;
   }
-// Temp comment
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;
 }
 
@@ -154,3 +152,14 @@ export function buildOccupationString(occupation, companyName) {
   } else {
     return 'No Occupation Provided';
   }
+}
+
+export function buildCareerAddress(city, state) {
+  if ( !city || !state ) {
+    return 'Not Listed';
+  }
+
+  if ( state.length > 2 ) { // Get State Code if `state` is a full state name
+    state = stateCodeMap[state] || state;
+  }
+  return `${city}, ${state}`;

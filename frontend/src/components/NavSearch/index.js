@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-// Temp comment
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';

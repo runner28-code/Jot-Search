@@ -95,6 +95,7 @@ export default function MobileLayout(props) {
           role === 'coordinator' && (
             <div className='flex flex-col space-y-8'>
               <UpdateJobStatus job={careerData} />
+// Temp comment
               <UpdateJobFeatured job={careerData} />
             </div>
           )
@@ -106,6 +107,7 @@ export default function MobileLayout(props) {
       <p
         className='font-spaceGrotesk text-textBlack text-sm mb-6'
         dangerouslySetInnerHTML={{ __html: careerData.description }}
+      />
       { renderSkillsSection(skillList) }
       { renderAboutCompanySection(careerData, role) }
       {/* Apply */}

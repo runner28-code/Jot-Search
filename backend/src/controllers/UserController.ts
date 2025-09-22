@@ -171,3 +171,5 @@ export class UserController {
     const { email } = body;
     return await recovery(email);
   }
+
+  @Authorized()

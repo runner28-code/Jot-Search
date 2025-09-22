@@ -266,7 +266,7 @@ export class CandidateController {
           include: {
             category: true,
           },
-          where,
+          orderBy: {
             firstName: "asc",
           }
         });
@@ -321,3 +321,5 @@ export class CandidateController {
       return {
         candidates: sortedCandidates,
         total,
+      };
+    } catch (error) {

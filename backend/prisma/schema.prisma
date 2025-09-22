@@ -578,3 +578,6 @@ model User {
 model Candidate {
   id               String    @id @default(uuid())
   address          String?
+  certifications   String?
+  comments         String?
+  companyName      String?

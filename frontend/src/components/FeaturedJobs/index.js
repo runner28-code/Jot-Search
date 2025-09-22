@@ -82,3 +82,24 @@ function renderColorShapes() {
       <div className='bg-cyanSquare bg-cyan-400 top-[-20px] right-[5px] absolute w-6 h-6' />
     </div>
   )
+}
+
+
+function RenderImage({image}) {
+  const containerStyles = 'w-48 h-48 mb-6 ';
+  const iconStyles = 'w-full h-full ';
+  if( !image ) {
+    return(<>
+      <div className={ containerStyles + 'outline outline-1 outline-neutral-300 p-8' }>
+        <CareerIcon className={iconStyles + ' fill-royalBlue object-fill'} />
+      </div>
+    </>)
+  }
+  return(
+    <div className={containerStyles}>
+      <img
+        src={image}
+        className={iconStyles}
+      />
+    </div>
+  )

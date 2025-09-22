@@ -203,3 +203,4 @@ module.exports = {
       base: '1.6rem',
       md: '1.8rem',
       ml: '2rem',
+      lg: '2.2rem',

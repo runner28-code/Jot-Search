@@ -55,3 +55,4 @@ export const saveCompany = async (company: string, candidate: string) => {
   }
 };
 
+export const getSavedCompanies = async (candidateId: string) => {

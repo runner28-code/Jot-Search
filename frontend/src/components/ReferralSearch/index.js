@@ -10,6 +10,7 @@ const mockJobsData = [
     salaryRange: '$80k-$90k',
     location: 'Remote',
     listingAge: '1 month',
+    specialty: 'Technology'
   },
   {
     id: '2cb874e2-0510-405e-9491-183d2e0e26d7',
@@ -59,37 +60,3 @@ export default function ReferralSearch() {
     const newFilteredChoices = filteredChoices.filter(job => job.id !== idToAdd);
     setCurrentChosen([ ...currentChosen, jobToAdd ]);
     setFilteredChoices(newFilteredChoices);
-  }
-
-  function handleRemove( jobId ) {
-    const newCurrentChosen = currentChosen.filter(job => job.id !== jobId);
-    setCurrentChosen(newCurrentChosen);
-    setFilteredChoices([ ...filteredChoices, choices.find(job => job.id === jobId) ]);
-  }
-
-  // set up initial choices
-  useEffect(() => {
-    // TODO: Implement API
-    setChoices(mockJobsData);
-  }, []);
-  
-  return (
-    <div className='w-340'>
-      <div className='flex mb-8'>
-        { renderChosen(currentChosen, handleRemove) }
-      </div>
-      <TypeaheadDropdown
-        type='text'
-        dropdownType='list-select'
-        name='referrals'
-        placeholder='Select a job to refer...' 
-        currentChosen={currentChosen}
-        onChange={handleAdd}
-        choices={filteredChoices}
-        dropdownOpen={dropdownOpen}
-        setDropdownOpen={setDropdownOpen}
-        baseStyles='w-full text-xl font-bold border-lightGrey border-solid border-2 rounded-2xl pl-24 placeholder-black '
-        inputHeight='h-40 '
-      />
-    </div>
-  )

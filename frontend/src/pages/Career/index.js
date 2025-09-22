@@ -50,6 +50,7 @@ export default function CareerPage() {
     postingAge,
     role
   }
+  const loggedIn = AuthService.loggedIn();
 
   const source = data.careerData.datasource;
 

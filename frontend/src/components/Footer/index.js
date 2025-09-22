@@ -30,7 +30,6 @@ export default function Footer() {
             src={linkedin}
             className={socialIconStyleMobile}
           />
-        </a>
         <a href={ROUTES.twitter}>
           <img
             src={twitter}
@@ -409,6 +408,7 @@ function BackToTop() {
           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
         }}>Back to Top
       </button>
+    </div>
   </>)
 }
 

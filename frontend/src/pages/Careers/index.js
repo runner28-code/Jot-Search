@@ -23,3 +23,55 @@ export default function Careers() {
 
   function togglePassState() {
     setToggle(toggle => !toggle);
+  }
+  return (
+    <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
+      <RenderHeader
+        loggedIn={loggedIn}
+        userType={userType}
+        togglePassState={togglePassState}
+        toggle={toggle}
+      />
+      <div 
+        className={width <= 990 && !loggedIn ? 'px-[5%]' 
+          : !loggedIn ? 'px-[15%]' 
+            : '' 
+        }
+      >
+        <RenderAdvancedSearch
+          loggedIn={loggedIn}
+          toggle={toggle}
+          userType={userType}
+        />
+      </div>
+    </section>
+  )
+}
+
+function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
+  const { width } = useWindowDimensions();
+  if( width <= 990 && userType === 'candidate' ) {
+    return (<>
+      <PageHeaderCandidate
+        headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
+        IconComponent={userType === 'coordinator' ? CareerIcon : CareerIcon}
+        backButton={true}
+      />
+      <DashboardCandidate 
+        togglePassState={togglePassState} 
+        toggle={toggle} 
+      />
+    </>)
+  }
+  if( loggedIn ) {
+    return (<>
+      <PageHeader
+        headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
+        IconComponent={userType === 'coordinator' ? CareerIcon : SearchIcon}
+        backButton={true}
+      />
+    </>)
+  }
+  return (<>
+    <Dashboard togglePassState={togglePassState} />
+  </>)

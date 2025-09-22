@@ -173,6 +173,7 @@ const job_filter_exclude_keys = [
   "greenhouse",
   "gutter installer",
   "gym",
+  "gymnastics",
   "health",
   "historic",
   "history",
@@ -380,3 +381,5 @@ const job_filter_exclude_keys = [
   "subject matter",
   "substitute",
   "success coach",
+  "supply",
+  "surgeon",

@@ -38,7 +38,6 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
     catch (error) {
         console.log(error);
         return true;
-    }
 });
 exports.isExistByID = isExistByID;
 const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
@@ -66,3 +65,16 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
 exports.isExistByCondition = isExistByCondition;
 const consoleLog = (message, newLine = true) => {
     console.log(`${newLine ? '\n' : ''}${message}`);
+};
+exports.consoleLog = consoleLog;
+const sleep = (ms) => __awaiter(void 0, void 0, void 0, function* () {
+    return new Promise(resolve => setTimeout(resolve, ms));
+});
+exports.sleep = sleep;
+const getDataSource = (id) => {
+    const prefix = id.slice(0, 2);
+    if (prefix === 'bl')
+        return Common_1.DataSource.BULLHORN;
+    if (prefix === 'gt')
+        return Common_1.DataSource.GETRO;
+    return Common_1.DataSource.UNKNOWN;

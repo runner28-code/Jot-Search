@@ -256,3 +256,4 @@ export type Candidate = {
     ssn?: string;
     stateAddtionalWithholdingsAmount?: string;
     stateExemptions?: string;
+    stateFilingStatus?: string;

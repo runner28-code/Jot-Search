@@ -38,6 +38,7 @@ const FieldMatch_1 = require("../utils/FieldMatch");
 const MainCrud_1 = require("../utils/MainCrud");
 const BullhornService_1 = require("../services/BullhornService");
 let JobController = class JobController {
+    searchJobByID(id) {
         var _a;
         return __awaiter(this, void 0, void 0, function* () {
             try {

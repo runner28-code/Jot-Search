@@ -78,3 +78,4 @@ export const IUSER = {
   status: "",
   username: "",
   logo: "",
+  companyId: "",

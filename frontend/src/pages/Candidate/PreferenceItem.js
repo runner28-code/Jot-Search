@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 
 export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }) => {
   const { width } = useWindowDimensions();
@@ -26,6 +27,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
 PreferenceItem.propTypes = {
   toggled: PropTypes.bool.isRequired,
   fieldName: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
   onUpdate: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
 }

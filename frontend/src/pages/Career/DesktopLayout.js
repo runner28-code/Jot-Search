@@ -75,6 +75,7 @@ export default function DesktopLayout(props) {
           </div>
           {/* Second row icons */}
           <div className='w-full flex items-center mt-xl'>
+            {/* Employment Type */}
             <div className='w-1/3 flex items-center'>
               <img
                 src={clockIcon}
@@ -191,3 +192,19 @@ function renderSkillsSection({ skillList }) {
     <h4 className={sectionHeaderStyles}>Skills Required</h4>
     <SkillsList items={skillList} />
   </>)
+}
+function SkillsList({ items }) {
+  if (!items) {
+    return (
+      <ul className='list-disc ml-8 mb-20'>
+        <li>No skills listed.</li>
+      </ul>
+    )
+  }
+  return (
+    <ul className='list-disc ml-8 mb-20'>
+      {items.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  )

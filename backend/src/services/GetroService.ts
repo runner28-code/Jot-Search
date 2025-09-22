@@ -225,3 +225,4 @@ export class GetroService {
                 // console.log(`\n***** fetching jobs for company ${company.id} *****`);
                 // if (!flag) continue;
                 const company_id = company.id.slice(3);
+                let page = 1;

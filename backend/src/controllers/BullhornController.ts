@@ -24,3 +24,4 @@ export class BullhornController {
 
   // @Authorized()
   @Get('/bullhorn/candidates')
+  async getCandidates() {

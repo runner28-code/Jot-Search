@@ -41,7 +41,6 @@ export default function AddCoordinator() {
         setFormObject(defaultState);
         setSubmissionObject({
           loading: false,
-          success: false,
           errors: {},
         });
       }, 2000);
@@ -56,7 +55,6 @@ export default function AddCoordinator() {
       name,
       value,
       submissionObject.errors,
-// Temp comment
       formObject.password
     );
 

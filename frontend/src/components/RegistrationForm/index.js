@@ -59,6 +59,7 @@ export default function RegistrationForm(loggedIn) {
     success: false,
   });
 
+// Temp comment
   const navigate = useNavigate();
   const location = useLocation();
 

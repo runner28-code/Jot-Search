@@ -37,7 +37,6 @@ export const defaultState = {
   gender: '',
   workAuthorized: '',
   disability: '',
-  veteran: '',
   loading: true
 }
 
@@ -47,6 +46,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
   }
   return (
     <label
+      htmlFor='useExistingResume'
       className='mt-4 mb-5 flex items-center'
     >
       <input
