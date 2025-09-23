@@ -173,3 +173,4 @@ export class UserController {
   }
 
   @Authorized()
+  @Get("/user/history")

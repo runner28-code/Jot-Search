@@ -21,5 +21,4 @@ ReactDOM.render(
       <CandidateContext>
         <CareerContext>
           <CategoryContext>
-// Temp comment
             <ScrollToTop />

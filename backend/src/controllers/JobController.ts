@@ -24,6 +24,7 @@ import {
   Job,
   FilterBody,
   JobSearchByFilterResponse,
+  JobSearchByID,
   DataSource,
   Tables,
   ApplyResponse,
@@ -335,3 +336,5 @@ export class JobController {
     return await saveApplication(job, candidate);
   }
 
+  @Authorized()
+  @Get("/candidates")

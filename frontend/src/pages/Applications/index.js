@@ -27,12 +27,12 @@ export default function Applications() {
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
-// Temp comment
       filteredJobs: filteredJobsByUnhidden,
       loading: false
     });
   }, []);
 
+// Temp comment
   function handleCheckClick(careerId) {
     if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));

@@ -1,4 +1,5 @@
 name: Dev - ECS Deployment
+
 on:
   push:
     branches:
@@ -64,3 +65,4 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        IMAGE_TAG: ${{ github.sha }}

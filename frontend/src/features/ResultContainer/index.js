@@ -19,6 +19,7 @@ export default function ResultContainer(props) {
     compact = false,
     isFavoriteOverride = null,
     agoText = null,
+// Temp comment
     containerClass = undefined,
     selectableProps = null,
   } = props;
@@ -33,7 +34,6 @@ export default function ResultContainer(props) {
 
     return <h5 className={resultsHeaderStyles}>{header}</h5>;
   }
-// Temp comment
 
   function renderFooter() {
     if ( !limit ) {

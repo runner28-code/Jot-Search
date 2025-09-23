@@ -36,7 +36,6 @@ export const createJob = async (job: Job) => {
   }
 };
 
-// TODO: Figure out what we want to make required
 const validateJob = (job: Job): string | undefined => {
   return undefined;
 };
@@ -112,3 +111,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
       filteredJob[typedKey] = job[typedKey] as any;
     });
 
+    const res = await db.job.update({

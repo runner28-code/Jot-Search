@@ -17,6 +17,7 @@ dotenv.config();
 
 let s3: any;
 try {
+  s3 = new AWS.S3({
   accessKeyId: process.env.S3_ACCESS_KEY,
   secretAccessKey: process.env.S3_SECRET_KEY,
   endpoint: process.env.S3_ENDPOINT,
@@ -107,3 +108,4 @@ const port = process.env.PORT || 3001;
 app.use(bodyParser.json());
 app.use(logger);
 app.use(express.static("uploads"));
+app.use(cors());

@@ -28,6 +28,7 @@ const parseBullhornCandidateToUser = (data) => {
         phone: data.phone || data.workPhone || data.mobile,
         status: data.status,
         username: data.username,
+        companyName: data.companyName,
         companyURL: data.companyURL,
         revenue: data.salary,
         dateFounded: data.dateAdded,
@@ -103,6 +104,7 @@ const parseBullhornJobToMain = (data) => {
         salary: data.salary,
         salaryUnit: data.salaryUnit,
         startDate: data.startDate,
+// Temp comment
         type: data.type,
         isDeleted: data.isDeleted,
         postedAt: data.date_added,

@@ -257,3 +257,5 @@ export type Candidate = {
     skillSet?: string;
     smsOptIn?: string;
     source?: string;
+    specialties?: string; // ?
+    ssn?: string;

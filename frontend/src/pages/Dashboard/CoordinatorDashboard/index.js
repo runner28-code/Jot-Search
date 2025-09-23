@@ -13,6 +13,6 @@ export default function CoordinatorDashboard({ userType }) {
       />
       <Stats userType={userType} />
       <AdvancedSearch />
-// Temp comment
     </>
+// Temp comment
   )

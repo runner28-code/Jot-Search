@@ -132,7 +132,6 @@ function DesktopCard({ dataObj, active }) {
               src={clockIcon}
               className='h-11 mr-5' />
             <p className='text-textBlack'>{data.employmentType}</p>
-          </div>
           {/* Salary */}
           <div className='w-1/3 flex items-center pr-4'>
             <img

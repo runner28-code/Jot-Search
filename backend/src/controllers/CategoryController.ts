@@ -21,6 +21,7 @@ export class CategoryController {
     try {
       const _filters = [
         {
+          key: "id",
           value: id,
         },
       ];
@@ -47,5 +48,4 @@ export class CategoryController {
     try {
       const { filters, fields, page, count, operator } = body;
 
-      const categories = await getCategoriesByFilter(
         filters,

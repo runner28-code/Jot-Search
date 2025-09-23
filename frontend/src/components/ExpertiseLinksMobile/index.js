@@ -29,7 +29,6 @@ export default function ExpertiseLinksMobile() {
             className={iconStyles}
           />
           <span className={textStyles}>Software &</span>
-          <span className={textStyles}>Engineering</span>
         </Link>
         {/* Sales & Business Development */}
         <Link
@@ -74,6 +73,7 @@ export default function ExpertiseLinksMobile() {
         {/* Finance */}
         <Link
           to={ROUTES.careers}
+          className={linkStyles}
           state={{ Expertise: 'Finance' }}
         >
           <img

@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useEffect } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
@@ -38,6 +37,7 @@ export default function InvitationsToApply () {
       {!appliedJobsObject.loading && !appliedJobsObject.jobs?.length ? <span className='text-center font-spaceGrotesk text-zinc-500 text-xl'>No invitations to apply</span> :
         (<div className='w-full max-w-400 py-5 grid grid-cols-3 gap-16'>
           {
+// Temp comment
             appliedJobsObject.loading ?
               <LoadingSpinner />
               : appliedJobsObject.jobs.slice(0, 2).map((career, index) => {

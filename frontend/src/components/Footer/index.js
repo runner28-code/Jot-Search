@@ -30,6 +30,7 @@ export default function Footer() {
             src={linkedin}
             className={socialIconStyleMobile}
           />
+        </a>
         <a href={ROUTES.twitter}>
           <img
             src={twitter}

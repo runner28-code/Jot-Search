@@ -751,7 +751,6 @@ export class BullhornService {
             }
           });
           if (!testMode) {
-            console.log("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             const res = await saveCandidates(updatedData);
             // if (res === -1) return;
           }
@@ -768,3 +767,7 @@ export class BullhornService {
         console.log(error.message, "\nrepeatNumber =", repeatErr);
         await this.getNewAccessToken();
         repeatErr++;
+      }
+    }
+  }
+

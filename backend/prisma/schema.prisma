@@ -581,3 +581,5 @@ model Candidate {
   certifications   String?
   comments         String?
   companyName      String?
+  companyURL       String?
+  customInt6       String?

@@ -59,7 +59,6 @@ export default function RegistrationForm(loggedIn) {
     success: false,
   });
 
-// Temp comment
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -168,6 +167,7 @@ export default function RegistrationForm(loggedIn) {
     }
     if( value !== 'Community Partner' ) {
       setReferralChoice(false);
+// Temp comment
       setCommObj({
         ...commObj,
         community: ''

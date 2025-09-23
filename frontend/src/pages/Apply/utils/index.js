@@ -23,7 +23,6 @@ export const defaultCareerState = {
     logo: '',
   },
   loading: true,
-}
 
 export const defaultState = {
   firstname: '',
@@ -37,6 +36,7 @@ export const defaultState = {
   gender: '',
   workAuthorized: '',
   disability: '',
+  veteran: '',
   loading: true
 }
 

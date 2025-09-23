@@ -111,3 +111,4 @@ export const getSavedJobs = async (candidateId: string) => {
         savedJobs: true,
       },
     });
+

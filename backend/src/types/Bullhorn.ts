@@ -257,3 +257,5 @@ export type Candidate = {
     stateAddtionalWithholdingsAmount?: string;
     stateExemptions?: string;
     stateFilingStatus?: string;
+    status?: string;
+    taxID?: string;

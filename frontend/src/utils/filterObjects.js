@@ -83,7 +83,6 @@ export const candidateFilterObject = {
     'Contract',
     'Contract to Hire',
   ],
-// Temp comment
   'Authorized to work in the US': [
     'Any',
     'Yes',
@@ -110,6 +109,7 @@ export const candidateFilterObject = {
     ...skills
   ],
 };
+// Temp comment
 
 // Create default filter state based on filterObject
 const convertedCandidateFilters = {};

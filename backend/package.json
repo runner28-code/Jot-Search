@@ -53,3 +53,4 @@
     "getro_get_members_win": "npm run build-win && node ./dist/src/cronjobs/getro_get_members",
     "start_all_cronjobs": "npm run build && cp -R ./src/templates ./dist/src && node ./dist/src/cronjobs/index"
   },
+  "devDependencies": {

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
 import linkedin_grey from '../../assets/images/social_linkedin_grey.svg';
 import GlobalSearch from '../GlobalSearch';
+// Temp comment
 import NavMenu from '../NavMenu';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import AuthService from '../../services/auth';
@@ -57,7 +58,6 @@ function DesktopNavBarLayout() {
         />
       </Link>
       {/* Nav Menu */}
-// Temp comment
       <div className='flex items-center font-spaceGrotesk'>
         <Link to={ROUTES.careers}>
           <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Find Careers</span>

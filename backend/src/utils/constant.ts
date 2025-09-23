@@ -383,3 +383,5 @@ const job_filter_exclude_keys = [
   "success coach",
   "supply",
   "surgeon",
+  "surgery",
+  "surgical",

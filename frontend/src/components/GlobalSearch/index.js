@@ -15,7 +15,6 @@ export default function GlobalSearch({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
   const [ results, setResults ] = useState({
-// Temp comment
     jobs: [],
     companies: [],
     candidates: [],
@@ -44,6 +43,7 @@ export default function GlobalSearch({ placeholder }) {
       return setResults({
         jobs: [],
         companies: [],
+// Temp comment
         candidates: []
       });
     }

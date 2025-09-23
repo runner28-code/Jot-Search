@@ -8,6 +8,7 @@ export default function SignUp() {
 
   if( width <= 990 ) {
     return (
+// Temp comment
       <main className='pb-24'>
         <div className='flex flex-col justify-center items-center'>
           <div className='bg-signup-page-hero bg-cover bg-no-repeat w-full px-[10%] pb-24 pt-8'>
@@ -28,6 +29,7 @@ export default function SignUp() {
       </main>      
     )
   }
+
   return (
     <main className='-mt-28 bg-signup-page-hero bg-contain bg-no-repeat'>
       <div className='pt-40 flex flex-col justify-center items-center'>

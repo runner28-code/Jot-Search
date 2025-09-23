@@ -98,7 +98,6 @@ export default function RegistrationForm() {
         setSubmissionObject({
           loading: false,
           success: false,
-// Temp comment
         });
       }, 2000);
     }

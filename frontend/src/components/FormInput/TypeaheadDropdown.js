@@ -31,6 +31,7 @@ export default function TypeaheadDropdown(props) {
     } else {
       onChange(name, currentChosen.filter(item => item !== choice));
     }
+  }, [onChange])
 
   /* Close dropdown on any outside clicks */
   useEffect(() => {
@@ -105,7 +106,6 @@ function renderLabel(name, label, required) {
 
   return (
     <label
-      className='block text-textBlack mb-2.5'
       htmlFor={name}
     >
       {label}

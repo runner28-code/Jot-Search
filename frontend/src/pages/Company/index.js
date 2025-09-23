@@ -92,7 +92,6 @@ export default function Company() {
           </div>          
         </div>
         <div className='mt-12'>
-          <OtherCareers
             companyId={companyData.id}
             companyName={companyData.name}
           />
@@ -136,6 +135,7 @@ function RenderInvite(loggedIn, companyData) {
   const role = AuthService.getUserRole();
   if( loggedIn && role === 'coordinator' ) {
     return(<>
+      <InviteCandidates company={companyData} />
     </>)
   }
   return null

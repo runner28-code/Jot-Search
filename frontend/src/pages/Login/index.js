@@ -57,6 +57,7 @@ export default function Login() {
               Sign-up here
             </Link>
           </div>
+// Temp comment
           { renderError() }
           <FormInput
             type='text'
@@ -87,7 +88,6 @@ export default function Login() {
           <span>Need Help? Just ask </span>
           <a
             href='mailto:help@intulsa.com'
-// Temp comment
             className='text-sm vw-640:text-ml text-royalBlue underline'
           >
             help@intulsa.com

@@ -281,3 +281,5 @@ export class CompanyController {
       const _condition = _filters
         .map((opt) => `LOWER(${opt.key}) LIKE '%${opt.value.toLowerCase()}%'`)
         .join(` ${operator} `);
+      return _condition;
+    }

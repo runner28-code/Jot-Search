@@ -14,6 +14,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
         value: newValues.join(', '),
       },
     };
+// Temp comment
     handleChange(fakeEvent);
   }
 
@@ -39,7 +40,6 @@ EditSkillsForm.defaultProps = {
   skills: '',
 }
 
-// Temp comment
 EditSkillsForm.propTypes = {
   skills: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired,

@@ -295,6 +295,7 @@ export async function getSavedJobs(id, count = undefined, page = undefined) {
     }
   });
   return normalizeData(data.jobs);
+}
 
 export async function toggleHideJob(id, unhide) {
   const hidden = unhide ? false : true;

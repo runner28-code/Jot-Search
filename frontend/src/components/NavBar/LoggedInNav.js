@@ -72,6 +72,7 @@ const DesktopNavBarLayout = () => {
       </div>
     </nav>
   )
+}
 
 const DropdownMenu = () => {
   const [ isOpen, setIsOpen ] = useState(false);
@@ -87,6 +88,7 @@ const DropdownMenu = () => {
 
   const firstname = currentUser?.firstname || '';
 
+// Temp comment
   const closeDropdown = () => {
     setIsOpen(false);
   }

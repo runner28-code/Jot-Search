@@ -19,3 +19,4 @@ const config = {
   mainDatasetID: process.env.DATASET_MAIN,
 
   sendgridKey: process.env.SENDGRID_KEY,
+  sendgridSecret: process.env.SENDGRID_SECRET,

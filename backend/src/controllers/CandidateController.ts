@@ -266,6 +266,7 @@ export class CandidateController {
           include: {
             category: true,
           },
+          where,
           orderBy: {
             firstName: "asc",
           }
@@ -323,3 +324,4 @@ export class CandidateController {
         total,
       };
     } catch (error) {
+      console.log(error);
