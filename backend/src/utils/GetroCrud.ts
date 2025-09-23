@@ -83,7 +83,6 @@ export const saveMembers = async (members: any[]) => {
 }
 
 export const getCompanies = async () => {
-	const jobs = await db.getroCompany.findMany();
   return jobs;
 }
 

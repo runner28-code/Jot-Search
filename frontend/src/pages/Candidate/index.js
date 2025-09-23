@@ -76,6 +76,7 @@ export default function Candidate() {
     }
     if (isProfilePage) {
       setCurrentUser({...updateResponse.data})
+    }
     if (updateResponse.result === false) {
       console.log('Error updating candidate: ', updateResponse.error);
     }

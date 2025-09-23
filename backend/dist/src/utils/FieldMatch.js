@@ -31,6 +31,7 @@ exports.JobFilter = {
     },
 };
 exports.CompanyFilter = {
+// Temp comment
     bullhorn: {
         name: "name",
         city: "address_city",

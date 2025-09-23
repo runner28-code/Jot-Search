@@ -9,7 +9,6 @@ export const prefetchCandidates = async ({filtersArr, count, page, fields}) => {
 export const prefetchAllSelectCandidates = async() => {
   const values = { 
     filtersArr: [],
-// Temp comment
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   }

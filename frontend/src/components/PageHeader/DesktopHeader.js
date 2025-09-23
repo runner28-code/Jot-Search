@@ -7,7 +7,6 @@ export default function DesktopHeader(props) {
     headerText,
     icon,
     IconComponent,
-    classOverride,
     containerClassOverride,
     colorizeStroke,
     dataSource,
@@ -41,6 +40,7 @@ export default function DesktopHeader(props) {
           <SourceIdentifier type={dataSource} />
         )}
       </div>
+      { backButton && (
         <button
           className='text-md text-royalBlue underline mt-6'
           onClick={() => navigate(-1)}

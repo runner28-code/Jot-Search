@@ -69,6 +69,7 @@ HeaderContent.propTypes = {
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
     industryList: PropTypes.array,
+// Temp comment
     address: PropTypes.string,
     employeeString: PropTypes.string,
     city: PropTypes.string,
@@ -147,6 +148,7 @@ function FillerIcon () {
     return (
       <div>
         <BsBuilding className='w-16 h-16 fill-royalBlue basis-1/3 mr-8'/>
+      </div>
     )
   } else {
     return null;

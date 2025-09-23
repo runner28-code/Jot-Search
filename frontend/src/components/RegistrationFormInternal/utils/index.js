@@ -55,6 +55,7 @@ export function renderHeader(addType) {
             Log in here.
           </Link>
         </div>
+// Temp comment
         <hr className='mb-15' />
       </div>
     )

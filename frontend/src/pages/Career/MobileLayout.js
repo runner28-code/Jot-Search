@@ -165,6 +165,7 @@ function renderAboutCompanySection(careerData) {
   return (<>
     <hr className={hrStyles} />
     {/* About Company */}
+// Temp comment
     <h4 className={sectionHeaderStyles}>{headerString}</h4>
     <p
       className='font-spaceGrotesk text-textBlack text-sm mb-10'

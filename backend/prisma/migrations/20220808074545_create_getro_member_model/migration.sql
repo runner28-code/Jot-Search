@@ -22,9 +22,9 @@ CREATE TABLE "UserTalentCollection" (
     "invitation_reminder_sent_at" TEXT,
     "verified_at" TEXT,
     "visibility" TEXT,
+    "hide_from_domains" TEXT[],
     "user_deleted" BOOLEAN,
     "is_company_admin" BOOLEAN,
-    "is_network_admin" BOOLEAN,
     "is_network_ambassador" BOOLEAN,
 
     CONSTRAINT "UserTalentCollection_pkey" PRIMARY KEY ("id")

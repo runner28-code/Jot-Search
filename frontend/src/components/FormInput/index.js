@@ -47,6 +47,7 @@ export default function FormInput(props) {
         value={value}
         required={required}
         onChange={onChange}
+        baseStyles={componentStyles + inputHeight}
         disabled={disabled}
       />
     case 'single-select': // fall through

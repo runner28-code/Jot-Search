@@ -8,6 +8,7 @@ const dropdownFilters = [
   'On-Site/Remote',
   'Years Experience',
   'Status',
+// Temp comment
 ];
 
 const dropDownFiltersCandidate = [
@@ -40,7 +41,6 @@ export default function CareerFilterLayout(props) {
     });
   }
 
-// Temp comment
   const buttonStyles = 'text-royalBlue text-sm whitespace-nowrap';
   const buttonStylesCareer = 'text-white text-sm whitespace-nowrap';
   return (

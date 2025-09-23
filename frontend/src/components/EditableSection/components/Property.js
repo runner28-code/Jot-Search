@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import { startCase } from 'lodash';
 
 export default function Property({name, value}) {
@@ -10,6 +9,7 @@ export default function Property({name, value}) {
       <p className='font-bold'>
         {labelString}
       </p>
+// Temp comment
       <span className='ml-4'>{value}</span>
     </div>
   )

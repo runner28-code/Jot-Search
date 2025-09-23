@@ -46,7 +46,6 @@ export default function CareerFavorite () {
           </Link>
         </div>
       </div>
-// Temp comment
       <div className='pt-24'>
         <Link
           to={ROUTES.careers}

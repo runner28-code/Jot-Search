@@ -7,6 +7,7 @@ export default function MobileHeader(props) {
     IconComponent,
     classOverride,
     colorizeStroke,
+// Temp comment
   } = props;
   
   let addOnIconClasses = '';
@@ -16,7 +17,6 @@ export default function MobileHeader(props) {
     <div className='flex items-center border-b-2 border-white pl-l py-s bg-royalBlue'>
       { icon && (
         <img
-// Temp comment
           src={ icon }
           alt='header icon'
           className={ 'h-12 mr-xs ' + addOnIconClasses }

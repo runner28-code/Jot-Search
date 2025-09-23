@@ -90,6 +90,7 @@ export default function RegistrationForm() {
       }
     }
   }, [submissionObject.loading]);
+// Temp comment
 
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {

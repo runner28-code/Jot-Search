@@ -104,7 +104,6 @@ const parseBullhornJobToMain = (data) => {
         salary: data.salary,
         salaryUnit: data.salaryUnit,
         startDate: data.startDate,
-// Temp comment
         type: data.type,
         isDeleted: data.isDeleted,
         postedAt: data.date_added,

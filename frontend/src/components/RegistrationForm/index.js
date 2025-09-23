@@ -167,7 +167,6 @@ export default function RegistrationForm(loggedIn) {
     }
     if( value !== 'Community Partner' ) {
       setReferralChoice(false);
-// Temp comment
       setCommObj({
         ...commObj,
         community: ''

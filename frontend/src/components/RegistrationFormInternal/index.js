@@ -56,6 +56,7 @@ export default function RegistrationFormInternal(loggedIn) {
   const [commObj, setCommObj] = useState(defaultCommunity);
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
+    loading: false,
     success: false,
   });
 

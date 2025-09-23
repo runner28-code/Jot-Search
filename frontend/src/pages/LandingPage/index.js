@@ -12,6 +12,7 @@ import BusinessBoomingMobile from '../../components/BusinessBoomingMobile';
 import ColorShapes from '../../components/ColorShapes';
 import * as ROUTES from '../../routes';
 import { MdLocationOn } from 'react-icons/md';
+import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageStats';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 // Styles
@@ -35,6 +36,7 @@ export default function LandingPage() {
         </div>
         { renderSearch() }
       </section>
+// Temp comment
       {/* Browse Opportunities by Expertise */}
       { renderExpertiseLinks() }
       { isMobile && <JoinTalentNetwork /> }

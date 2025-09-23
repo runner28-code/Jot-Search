@@ -6,6 +6,7 @@ import FormInput from '../../components/FormInput';
 import API from '../../services/API';
 
 export default function AccountRecovery() {
+  const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');
 
   const handleSubmit = async (event) => {
@@ -14,7 +15,6 @@ export default function AccountRecovery() {
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email.value
     });
-
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {

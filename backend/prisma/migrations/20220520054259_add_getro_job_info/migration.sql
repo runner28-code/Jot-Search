@@ -12,7 +12,6 @@ ALTER COLUMN "hidden" SET DEFAULT false;
 -- CreateTable
 CREATE TABLE "GetroJobInfo" (
     "id" TEXT NOT NULL,
-    "applcation_method" TEXT,
     "application_path" TEXT,
     "compensation_currency" TEXT,
     "compensation_max" TEXT,
@@ -22,6 +21,7 @@ CREATE TABLE "GetroJobInfo" (
     "description" TEXT,
     "discarded" TEXT,
     "employment_types" TEXT,
+    "expires_at" TIMESTAMP(3),
     "job_functions" TEXT,
     "liked" TEXT,
     "locations" TEXT,

@@ -14,8 +14,6 @@ export const openJobStatuses = [
   'Passive',
   'passive'
 ];
-
-// Temp comment
 export const stateCodeMap = {
   Alabama: 'AL',
   Alaska: 'AK',

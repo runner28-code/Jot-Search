@@ -332,7 +332,6 @@ export class BullhornService {
           address_country_id: company.address?.countryID || null,
           billingAddress_address1: company.bllingAddress?.address1 || null,
           billingAddress_address2: company.bllingAddress?.address2 || null,
-          billingAddress_city: company.bllingAddress?.city || null,
           billingAddress_state: company.bllingAddress?.state || null,
           billingAddress_zip: company.bllingAddress?.zip || null,
         };
@@ -751,6 +750,7 @@ export class BullhornService {
             }
           });
           if (!testMode) {
+            console.log("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             const res = await saveCandidates(updatedData);
             // if (res === -1) return;
           }

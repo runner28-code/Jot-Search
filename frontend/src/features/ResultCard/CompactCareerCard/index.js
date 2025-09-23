@@ -101,6 +101,7 @@ CompactCareerCard.propTypes = {
   selectableProps: PropTypes.shape({
     selectable: PropTypes.bool,
     selected: PropTypes.arrayOf(PropTypes.string),
+// Temp comment
     setSelected: PropTypes.func
   })
 }

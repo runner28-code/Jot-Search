@@ -88,7 +88,6 @@ const DropdownMenu = () => {
 
   const firstname = currentUser?.firstname || '';
 
-// Temp comment
   const closeDropdown = () => {
     setIsOpen(false);
   }

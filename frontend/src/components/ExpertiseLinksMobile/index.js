@@ -29,6 +29,7 @@ export default function ExpertiseLinksMobile() {
             className={iconStyles}
           />
           <span className={textStyles}>Software &</span>
+          <span className={textStyles}>Engineering</span>
         </Link>
         {/* Sales & Business Development */}
         <Link
@@ -67,7 +68,6 @@ export default function ExpertiseLinksMobile() {
             src={operationsIcon}
             alt='Operations Icon'
             className={iconStyles}
-          />
           <span className={textStyles}>Operations</span>
         </Link>
         {/* Finance */}

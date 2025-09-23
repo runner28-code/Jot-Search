@@ -6,3 +6,4 @@
 
 */
 -- AlterTable
+ALTER TABLE "ClientContact" DROP COLUMN "address_country_id",

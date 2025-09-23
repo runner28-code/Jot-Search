@@ -268,7 +268,6 @@ export const skills = [
   'Media',
   'Media Relations',
   'MERN',
-// Temp comment
   'Microservices',
   'MongoDB',
   'MS Office',
