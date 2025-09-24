@@ -83,6 +83,7 @@ export const saveMembers = async (members: any[]) => {
 }
 
 export const getCompanies = async () => {
+	const jobs = await db.getroCompany.findMany();
   return jobs;
 }
 
@@ -94,3 +95,4 @@ export const saveJobs = async (jobs: any[]) => {
             try {
                 console.log(`Savng Getro Job with ID = ${job.id}`);
                 const existing = await db.getroJobInfo.findFirst({
+									where: {

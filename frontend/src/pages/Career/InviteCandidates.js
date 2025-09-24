@@ -33,6 +33,7 @@ export default function InviteCandidates({ job }) {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }
+
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (
@@ -50,7 +51,6 @@ export default function InviteCandidates({ job }) {
 
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>
-  }
 
   return (
     <section className="flex flex-col space-y-8 bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4">

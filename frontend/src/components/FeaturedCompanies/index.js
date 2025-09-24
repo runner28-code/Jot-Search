@@ -38,10 +38,8 @@ export default function FeaturedCompanies() {
       </div>
       <div className='text-center mt-48'>
         <Link
-          to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
-// Temp comment
         </Link>
       </div>
     </div>

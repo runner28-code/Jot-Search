@@ -22,3 +22,4 @@ var Tables;
     Tables["CATEGORIES"] = "Categories";
 })(Tables = exports.Tables || (exports.Tables = {}));
 exports.DATASET_BULLHORN = config_1.default.bullhornDatasetID || "";
+exports.DATASET_GETRO = config_1.default.getroDatasetID || "";

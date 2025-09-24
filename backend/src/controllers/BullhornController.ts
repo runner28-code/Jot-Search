@@ -16,7 +16,6 @@ export class BullhornController {
     return await (await BullhornService.getClient()).getJobs();
   }
 
-  // @Authorized()
   @Get('/bullhorn/clientContacts')
   async getClientContacts() {
     return await (await BullhornService.getClient()).getClientContacts();

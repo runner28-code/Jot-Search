@@ -325,3 +325,5 @@ export class CandidateController {
       };
     } catch (error) {
       console.log(error);
+      return { message: error };
+    }

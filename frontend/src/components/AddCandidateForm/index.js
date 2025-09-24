@@ -16,7 +16,6 @@ import {
 } from './utils';
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
-import { CategoryContext } from '../../services/CategoryContext';
 import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
@@ -90,7 +89,6 @@ export default function RegistrationForm() {
       }
     }
   }, [submissionObject.loading]);
-// Temp comment
 
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {

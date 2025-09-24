@@ -13,7 +13,6 @@ export const JobFilter: any = {
     status: "status",
     hidden: "hidden",
     companyId: "clientCorporationID",
-  },
   main: {
     id: "id",
     status: "status",
@@ -56,4 +55,5 @@ export const USER_FILTER: any = {
   firstname: "firstname",
   lastname: "lastname",
   role: "role",
+  roles: "roles",
   city: "city",

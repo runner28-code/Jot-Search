@@ -99,6 +99,7 @@ export class UserController {
     let data = { ...user };
     if (authUser.role !== COORDINATOR) {
       return {
+        result: false,
         error: "Only coordinators can add other users",
       };
     }
@@ -173,3 +174,5 @@ export class UserController {
 
   @Authorized()
   @Get("/user/history")
+  async getHistory(@CurrentUser() authUser: User) {
+    try {

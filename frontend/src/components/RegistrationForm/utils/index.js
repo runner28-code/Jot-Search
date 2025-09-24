@@ -5,7 +5,6 @@ import { experienceMap } from '../../../utils/dbFieldMapping';
 import * as ROUTES from '../../../routes';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
-// Temp comment
   if ( submissionObject.loading ) {
     return <LoadingSpinner
       height='50'

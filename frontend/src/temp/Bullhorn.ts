@@ -259,3 +259,4 @@ export type Candidate = {
     source?: string;
     specialties?: string; // ?
     ssn?: string;
+    stateAddtionalWitholdingsAmount?: string;

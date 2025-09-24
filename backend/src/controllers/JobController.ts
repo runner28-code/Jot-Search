@@ -251,7 +251,6 @@ export class JobController {
   async getJobsByFilterFromGetro(
     filters: AdvancedFilterOption[] = [],
     fields: string[] | undefined,
-    count: number | undefined,
     operator: Operator = "OR"
   ) {
     const _filters = filters.filter((filter) =>
@@ -338,3 +337,5 @@ export class JobController {
 
   @Authorized()
   @Get("/candidates")
+  async getCandidates(@QueryParam("job") job: string) {
+    return await getCandidatesOnJob(job);

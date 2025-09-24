@@ -259,3 +259,4 @@ export type Candidate = {
     stateFilingStatus?: string;
     status?: string;
     taxID?: string;
+    taxState?: string;

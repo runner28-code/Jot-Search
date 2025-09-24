@@ -16,6 +16,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
             ```
 - No multi-line ternary operators
 - An `if` statement followed only by an `else` should be refactored to be just an `if` followed by a return statement of the other condition's logic without being in an `else`.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -65,3 +66,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)

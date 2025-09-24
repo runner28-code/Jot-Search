@@ -17,7 +17,6 @@ export default function JobResults({ jobs }) {
           <JobResult 
             job={job} 
             key={job.id} />
-        )
       })}
     </>
   )

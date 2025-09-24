@@ -25,7 +25,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   const [formData, setFormData] = useState({
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
-    email: candidateData.email || '',
     phone: candidateData.phone || '',
     workAuthorized: candidateData.workAuthorized,
     zip: candidateData.zip || '',

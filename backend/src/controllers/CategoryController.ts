@@ -50,3 +50,4 @@ export class CategoryController {
 
       const categories = await getCategoriesByFilter(
         filters,
+        fields || [],

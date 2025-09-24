@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.JOB_FIELDS = exports.CITY_INCLUDE_KEYS_REGEX = exports.JOB_EXCLUDE_KEYS_REGEX = exports.ROLES = exports.COMPANY = exports.CANDIDATE = exports.COORDINATOR = void 0;
 exports.COORDINATOR = 'coordinator';
-exports.CANDIDATE = 'candidate';
 exports.COMPANY = 'company';
 exports.ROLES = [exports.COORDINATOR, exports.CANDIDATE, exports.COMPANY];
 const job_filter_exclude_keys = [
@@ -93,7 +92,6 @@ const job_filter_exclude_keys = [
     "cook",
     "copywriter",
     "corporate card",
-// Temp comment
     "counsel",
     "counseling",
     "counselor",
@@ -384,3 +382,5 @@ const job_filter_exclude_keys = [
     "subject matter",
     "substitute",
     "success coach",
+    "supply",
+    "surgeon",

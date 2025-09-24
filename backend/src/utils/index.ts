@@ -94,3 +94,4 @@ export const getFilterConditions = (
     specialHandlers: Dictionary<(key: string, value: string) => string> = {},
     nonStringFields: Set<string> = new Set()
   ) => {
+    const conditions = filters.map((opt) => {

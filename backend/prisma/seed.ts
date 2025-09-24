@@ -38,7 +38,6 @@ async function seedJobs() {
         categoryId: (await db.category.findFirst({
           where: { name: "Software & Engineering" },
         }))!.id,
-      },
       {
         title: "Junior Software Engineer",
         companyId: (await db.company.findFirst())?.id,

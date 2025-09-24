@@ -130,7 +130,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
             delete jobData[key];
           }
         });
-
         const newJob = await db.job.create({
           data: jobData,
         });
@@ -252,3 +251,4 @@ export const saveLeads = async (leads: any[]) => {
           return -1;
         }
         const leadData = { ...lead };
+        Object.keys(leadData).forEach((key) => {

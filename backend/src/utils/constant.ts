@@ -385,3 +385,5 @@ const job_filter_exclude_keys = [
   "surgeon",
   "surgery",
   "surgical",
+  "surplus",
+  "surveillance",

@@ -31,7 +31,6 @@ export default function InviteToCareer({ candidate }) {
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
-// Temp comment
   }
 
   const SelectedValues = () => {
@@ -115,6 +114,7 @@ function itemRenderer({ option, onClick, disabled}) {
           <span className='text-lg text-blue-500'>{option.label}</span>
           <span>{getTagLine({ candidate: option.candidate })}</span>
         </div>
+// Temp comment
       </div>
     </div>
   )

@@ -227,3 +227,4 @@ export class GetroService {
                 const company_id = company.id.slice(3);
                 let page = 1;
                 let repeatErr = 0;
+                while (repeatErr < 3) {

@@ -47,3 +47,4 @@ CREATE TABLE "ClientContact" (
     "name" TEXT,
     "namePrefix" TEXT,
     "nameSuffix" TEXT,
+    "nickName" TEXT,

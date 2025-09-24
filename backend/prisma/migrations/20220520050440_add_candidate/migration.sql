@@ -78,3 +78,4 @@ CREATE TABLE "Candidate" (
     "specialities" TEXT,
     "ssn" TEXT,
     "stateAdditionalWithholdingsAmount" TEXT,
+    "stateExemptions" TEXT,

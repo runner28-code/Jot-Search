@@ -283,3 +283,4 @@ export class CompanyController {
         .join(` ${operator} `);
       return _condition;
     }
+    return undefined;

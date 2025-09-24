@@ -210,7 +210,6 @@ export async function getJobs(filters, count, operator, page) {
 
 export async function getJobsFull(filters, count, operator, page) {
   const filtersObj = filtersArrToObj(filters)
-
   if (filtersObj.expertise) {
     const categories = JSON.parse(localStorage.getItem('categories'));
     const categoryId = categories.find(category => category.name === filtersObj.expertise).externalID;
@@ -314,3 +313,12 @@ export async function getCategoryById(id) {
     }
   });
   return normalizeData(data.category);
+}
+
+export async function getCategories(filterArr) {
+  const filters = filterArr ? filterArr : [];
+  const { data } = await API.post(ROUTES.APIcategories, {
+    'filters': filters,
+    'count': 100
+  });
+  return normalizeData(data.categories);

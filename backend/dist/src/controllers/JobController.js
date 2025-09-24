@@ -129,7 +129,6 @@ let JobController = class JobController {
                         job.company.logo = getroCompany.logo_url;
                     }
                     job.company_name = (_a = job.company) === null || _a === void 0 ? void 0 : _a.name;
-// Temp comment
                     job.company_logo = (_b = job.company) === null || _b === void 0 ? void 0 : _b.logo;
                     return job;
                 });
@@ -186,7 +185,6 @@ let JobController = class JobController {
             if (filters === null || filters === void 0 ? void 0 : filters.every((opt) => FieldMatch_1.JobFilter.bullhorn[opt.key] != null)) {
                 const _dataset = Common_1.DATASET_BULLHORN;
                 const _table = Common_1.Tables.JOBS;
-                const _specialHandlers = {
                     clientCorporationID: (key, value) => `${key} = REPLACE("${value}", "bl-", "")`,
                 };
                 const _filters = filters.map((filter) => ({
