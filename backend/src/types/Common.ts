@@ -107,3 +107,4 @@ export type GetCandidatesOnJobResponse = {
 };
 
 // Company Types
+export type Company = BullhornCompany | GetroCompany;

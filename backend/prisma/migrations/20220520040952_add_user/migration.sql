@@ -25,6 +25,7 @@ CREATE TABLE "User" (
     "zip" TEXT,
     "description" TEXT,
     "status" TEXT,
+    "seniority" TEXT,
     "username" TEXT,
     "logo" TEXT,
     "companyName" TEXT,

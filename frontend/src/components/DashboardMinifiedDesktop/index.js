@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../routes';
 
 import PropTypes from 'prop-types';
@@ -85,3 +86,16 @@ function CareerHeader ({ location }) {
   return (<>
     <div className='mt-8'></div>
   </>)
+}
+CareerHeader.propTypes = {
+  location: PropTypes.string
+}
+
+function ToggleIcon () {
+  return (
+    <img
+      className='ml-12 mr-2'
+      src={ filterIcon }
+      alt='Filter Icon'
+    />
+  )

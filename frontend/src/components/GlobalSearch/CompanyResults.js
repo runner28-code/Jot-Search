@@ -7,7 +7,6 @@ import * as ROUTES from '../../routes';
 export default function CompanyResults({ companies }) {
   if (companies.length === 0) {
     return null;
-  }
 
   return (
     <>
@@ -17,6 +16,7 @@ export default function CompanyResults({ companies }) {
           <CompanyResult 
             company={company} 
             key={company.id} />
+        )
       })}
       <hr className='w-full border-black50% mt-6 mb-2' />
     </>

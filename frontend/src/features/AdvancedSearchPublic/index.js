@@ -77,7 +77,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
-// Temp comment
     }
   };
 
@@ -109,7 +108,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   function handleFilterChange(filterType, choice) {
     setFilterObject({
       ...filterObject,
-      [filterType]: choice
     });
     setPage(1);
   }

@@ -9,8 +9,6 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
       onChange={ handleChange }
       multiple={ !!multiselect }
       required
-      disabled={ disabled }
-// Temp comment
     >
       {/* Placeholder Option */}
       { renderPlaceholder(noDefault, currentChosen) }

@@ -29,7 +29,6 @@ export type Job = {
   hidden?: boolean;
   company_name?: string;
   datasource?: Datasource;
-  featured?: boolean;
 };
 
 export type JobKey = keyof Job;

@@ -13,13 +13,11 @@ export default function AccountRecovery() {
     event.preventDefault();
     const { email } = event.target;
     const res = await API.post(ROUTES.APIaccountRecovery, {
-      email: email.value
     });
 
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {
-// Temp comment
       setType(res.data.error, false);
     }
   };

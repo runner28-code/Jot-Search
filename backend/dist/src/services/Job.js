@@ -3,6 +3,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
@@ -26,7 +27,6 @@ exports.getJobsList = exports.updateJob = exports.inferDatasetById = exports.get
 const Common_1 = require("../types/Common");
 const Job_1 = require("../types/Job");
 const db_1 = __importDefault(require("../utils/db"));
-const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const jobError = validateJob(job);
         if (jobError) {

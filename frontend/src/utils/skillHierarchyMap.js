@@ -255,6 +255,7 @@ export const skills = [
   'Linux',
   'Litigation',
   'Logistics',
+  'Machine Learning',
   'Management Consulting',
   'Manufacturing',
   'Market Analysis',
@@ -311,3 +312,4 @@ export const skills = [
   'Project Management',
   'Public Policy',
   'Public Relations',
+  'Public Speaking',

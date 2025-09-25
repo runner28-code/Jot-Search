@@ -59,6 +59,5 @@ function renderChosen(skills, onChange) {
             handleClick={handleClick}
           />
         )
-      }) : <p className='text-royalBlue text-md'>No skills selected</p>}
     </div>
   )

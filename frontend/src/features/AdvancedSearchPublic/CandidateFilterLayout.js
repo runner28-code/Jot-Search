@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
@@ -57,7 +56,6 @@ export default function CandidateFilterLayout(props) {
     });
   }
 
-// Temp comment
 
   return (
     <div className='flex flex-col gap-xxl-4'>

@@ -775,3 +775,4 @@ export class BullhornService {
   async getLeads(
     testMode = false,
     count = 150,
+    sort = "-dateAdded"

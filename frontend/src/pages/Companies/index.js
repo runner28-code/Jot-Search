@@ -54,7 +54,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   if( width <= 990 && userType === 'candidate' ) {
     return (<>
       <PageHeaderCandidate
-// Temp comment
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : CompanyIcon}
         backButton={true}

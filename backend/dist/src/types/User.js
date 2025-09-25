@@ -29,7 +29,6 @@ exports.IUSER = {
     status: "",
     username: "",
     logo: "",
-    companyId: "",
     companyName: "",
     annualRevenue: "",
     companyURL: "",

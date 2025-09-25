@@ -1,7 +1,6 @@
 // {
 //     "family": "prod-site-backend-task",
 //     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole",
-//     "networkMode": "awsvpc",
 //     "containerDefinitions": [
 //         {
 //             "name": "intulsa-backend-container-prod",
@@ -16,6 +15,7 @@
 //                 }
 //             ],
 //             "essential": true,
+//             "logConfiguration": {
 //                 "logDriver": "awslogs",
 //                 "options": {
 //                     "awslogs-group" : "/ecs/prod-site-backend-task",

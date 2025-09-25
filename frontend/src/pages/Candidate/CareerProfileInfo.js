@@ -37,6 +37,7 @@ CareerProfileInfo.propTypes = {
 
 function renderEditIcon(candidateData, setEditMode) {
   const handleClick = () => {
+// Temp comment
     setEditMode(true);
   }
   const isProfileOwner = candidateData.id === AuthService.getProfile().user_id;

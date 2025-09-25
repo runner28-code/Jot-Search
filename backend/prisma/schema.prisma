@@ -232,7 +232,6 @@ model Company {
 
   invoiceFormat       String?
   linkedinProfileName String?
-
   notes        String?
   numEmployees Int?
   numOffices   Int?
@@ -586,3 +585,4 @@ model Candidate {
   dateAdded        DateTime?
   dateAvailable    DateTime?
   dateAvailableEnd DateTime?
+  dateI9Expiration DateTime?

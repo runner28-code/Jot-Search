@@ -23,6 +23,7 @@ export const defaultCareerState = {
     logo: '',
   },
   loading: true,
+}
 
 export const defaultState = {
   firstname: '',
@@ -51,7 +52,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
     >
       <input
         type='checkbox'
-        name='useExistingResume'
         className='h-8 w-8 ml-2'
         checked={useExistingResume}
         onChange={handleChange}

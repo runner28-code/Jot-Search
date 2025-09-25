@@ -39,7 +39,6 @@ export default function Company() {
   // Format data
   companyData.name = urlDecode(companyData.name);
   if ( companyData.name.includes('(mc)') ) { // Remove (mc) from companyData.name if exists
-// Temp comment
     companyData.name = companyData.name.toString().replace(' (mc)', '');
   }
   if ( companyData.businessSectorList && companyData.businessSectorList.length > 0 ) {

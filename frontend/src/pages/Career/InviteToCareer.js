@@ -81,7 +81,6 @@ export default function InviteToCareer({ candidate }) {
             if(res.result){
               setSelected([])
             }
-          }}
           disabled={selected.length === 0 || isSendingJob}
         >
           <MailIcon className='inline-block mr-2' />
@@ -114,7 +113,6 @@ function itemRenderer({ option, onClick, disabled}) {
           <span className='text-lg text-blue-500'>{option.label}</span>
           <span>{getTagLine({ candidate: option.candidate })}</span>
         </div>
-// Temp comment
       </div>
     </div>
   )

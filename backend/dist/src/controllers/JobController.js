@@ -185,6 +185,7 @@ let JobController = class JobController {
             if (filters === null || filters === void 0 ? void 0 : filters.every((opt) => FieldMatch_1.JobFilter.bullhorn[opt.key] != null)) {
                 const _dataset = Common_1.DATASET_BULLHORN;
                 const _table = Common_1.Tables.JOBS;
+                const _specialHandlers = {
                     clientCorporationID: (key, value) => `${key} = REPLACE("${value}", "bl-", "")`,
                 };
                 const _filters = filters.map((filter) => ({

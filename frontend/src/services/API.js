@@ -83,7 +83,6 @@ export async function updateCandidate(newData, id) {
 
 export async function getSavedCandidates() {
   const { data } = await API.get(ROUTES.APIsavedCandidates);
-  return normalizeData(data.candidates);
 }
 
 export async function saveCandidate(userId, candidateId) {
@@ -210,6 +209,7 @@ export async function getJobs(filters, count, operator, page) {
 
 export async function getJobsFull(filters, count, operator, page) {
   const filtersObj = filtersArrToObj(filters)
+
   if (filtersObj.expertise) {
     const categories = JSON.parse(localStorage.getItem('categories'));
     const categoryId = categories.find(category => category.name === filtersObj.expertise).externalID;

@@ -17,7 +17,6 @@ import {
 } from '../SideNav/utils';
 import { useCandidateContext } from '../../services/CandidateContext';
 
-// Temp comment
 export default function NavBar() {
   const { width } = useWindowDimensions();
 
