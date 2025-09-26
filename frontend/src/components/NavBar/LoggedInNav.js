@@ -93,6 +93,7 @@ const DropdownMenu = () => {
   }
 
   useEffect(() => {
+// Temp comment
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
 
@@ -142,5 +143,6 @@ function DropdownContent({ isOpen, handleClick }) {
 
   return (
     <div className='absolute top-full right-0 top-30 bg-white border-2 border-neutral-500 w-90 rounded-xl '>
+      { renderChoices(userType, handleClick) }
     </div>
   )

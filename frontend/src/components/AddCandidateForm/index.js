@@ -73,6 +73,7 @@ export default function RegistrationForm() {
       if ( result === true ) {
         // Set success to true if on add-candidate page, navigate user to login if not
         if ( location.pathname === '/add-candidate' ) {
+// Temp comment
           return setSubmissionObject({
             loading: false,
             success: true,

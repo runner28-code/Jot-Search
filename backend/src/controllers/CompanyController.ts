@@ -223,7 +223,6 @@ export class CompanyController {
         skip: skip < 0 ? 0 : skip,
         orderBy: {
           name: "asc",
-        }
       })
 
       const totalPromise = db.company.count({

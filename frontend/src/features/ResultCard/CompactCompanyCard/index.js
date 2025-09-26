@@ -66,7 +66,6 @@ CompactCompanyCard.propTypes = {
   active: PropTypes.bool,
   agoDate: PropTypes.string,
   isFavoriteOverride: PropTypes.bool,
-  agoText: PropTypes.string,
   selectableProps: PropTypes.shape({
     selectable: PropTypes.bool,
     selected: PropTypes.arrayOf(PropTypes.string),

@@ -62,6 +62,7 @@ let JobController = class JobController {
                 }
             }
             catch (err) {
+                console.error(err);
                 return null;
             }
         });
@@ -128,6 +129,7 @@ let JobController = class JobController {
                         job.company.logo = getroCompany.logo_url;
                     }
                     job.company_name = (_a = job.company) === null || _a === void 0 ? void 0 : _a.name;
+// Temp comment
                     job.company_logo = (_b = job.company) === null || _b === void 0 ? void 0 : _b.logo;
                     return job;
                 });

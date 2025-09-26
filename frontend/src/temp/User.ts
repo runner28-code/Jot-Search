@@ -8,4 +8,5 @@ export type User = {
     state: string;
     title?: string;
     level?: string;
+};
 

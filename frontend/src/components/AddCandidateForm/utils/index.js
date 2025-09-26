@@ -35,6 +35,7 @@ export function renderErrorBlock(errorBlock) {
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (
+// Temp comment
       <h2 className='text-h4 vw-768:text-h2 text-royalBlue font-bold mb-16 text-center'>{ 'Let\'s create your account' }</h2>
     )
   }

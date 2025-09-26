@@ -109,7 +109,6 @@ const dataShape = {
     }),
     logo: PropTypes.string,
     name: PropTypes.string,
-    numEmployees: PropTypes.string,
   }).isRequired,
 }
 
@@ -163,7 +162,6 @@ function MobileCard({ data, addressString, employeeString }) {
       </Link>
       <FavoriteButton
         type={'company'}
-// Temp comment
         data={data} />
     </div>
   )

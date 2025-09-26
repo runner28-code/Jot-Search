@@ -44,6 +44,7 @@ export default function Apply() {
   const [applicationObject, setApplicationObject] = useState(defaultState);
   const [useExistingResume, setUseExistingResume] = useState(false);
   const [referralChoice, setReferralChoice] = useState(false);
+  const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
     error: false,
@@ -74,6 +75,7 @@ export default function Apply() {
       candidateData.gender = genderMap[candidateData.gender || 'U']; // 'U' is default ("Prefer not to say")
       candidateData.disability = disabilityMap[candidateData.disability || 'U']; // 'U' is default ("Prefer not to say")
       candidateData.veteran = veteranStatusMap[candidateData.veteran || 'U']; // 'U' is default ("Prefer not to say")
+// Temp comment
       // If resume exists, select "Use Existing Resume" checkbox by default
       if ( candidateData.resume ) {
         setUseExistingResume(true);

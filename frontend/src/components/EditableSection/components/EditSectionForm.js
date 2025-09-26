@@ -46,7 +46,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
             value={value}
           />
         }
-        return (
           <div 
             key={key}
             className='flex justify-between items-center w-full mb-4'

@@ -12,6 +12,7 @@ export default function BusinessBooming() {
           target='_blank'
           rel='noreferrer'
           className='flex items-center justify-center h-28 w-112 bg-white mt-22 px-18 rounded-lg'
+// Temp comment
         >
           <span className='text-orangeHeroOverlay tracking-wide'>Learn More About Tulsa</span>
         </a>
@@ -20,5 +21,4 @@ export default function BusinessBooming() {
         <div className='absolute bottom-80 -right-72 h-36 w-36 bg-blueSquare/95' />
       </div>
     </section>
-// Temp comment
   )

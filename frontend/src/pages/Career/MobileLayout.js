@@ -25,7 +25,6 @@ export default function MobileLayout(props) {
     role
   } = props.data;
   const navigate = useNavigate();
-// Temp comment
   const skillList = careerData.skillList;
 
   return (<>

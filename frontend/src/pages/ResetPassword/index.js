@@ -60,6 +60,5 @@ export default function ResetPassword() {
             Login to your account
           </Link>
         </div>
-// Temp comment
       )
     }

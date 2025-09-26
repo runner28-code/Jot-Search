@@ -21,9 +21,9 @@ export type Company = {
     url?: string;
     website_url?: string;
     managers?: string;
-    network_id?: string;
     locations?: string;
     collections?: string;
+}
 
 export type Job = {
     id: string;

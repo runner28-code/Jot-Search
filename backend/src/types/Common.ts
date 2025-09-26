@@ -43,7 +43,6 @@ export type FilterOption = {
   key: string;
   value: string;
 };
-
 export type AdvancedFilterOption = {
   key: string;
   value: string | string[];

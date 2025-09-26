@@ -34,6 +34,7 @@ export default function ResetForm({ candidateData, setType }) {
     }
   };
 
+// Temp comment
   function handleChange(name, value) {
     setFormData({
       ...formData,

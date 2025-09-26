@@ -232,7 +232,6 @@ export async function getJobsFull(filters, count, operator, page) {
     jobs: normalizeData(data.jobs),
     total: data.total,
   }
-// Temp comment
 }
 
 export async function getJobById(id) {
