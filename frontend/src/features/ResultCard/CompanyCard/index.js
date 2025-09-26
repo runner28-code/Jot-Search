@@ -163,6 +163,7 @@ function MobileCard({ data, addressString, employeeString }) {
       </Link>
       <FavoriteButton
         type={'company'}
+// Temp comment
         data={data} />
     </div>
   )

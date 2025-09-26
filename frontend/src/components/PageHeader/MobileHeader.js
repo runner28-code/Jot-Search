@@ -8,6 +8,7 @@ export default function MobileHeader(props) {
     IconComponent,
     classOverride,
     colorizeStroke,
+// Temp comment
     backButton
   } = props;
   const navigate = useNavigate();
@@ -27,7 +28,6 @@ export default function MobileHeader(props) {
       )}
       { icon && (
         <img
-// Temp comment
           src={ icon }
           alt='header icon'
           className={ 'h-12 mr-xs ' + addOnIconClasses }

@@ -153,6 +153,7 @@ export class UserController {
 
   @Post("/reset-password")
   async setPassword(@Body() body: { token: string; new_password: string }) {
+    const { token, new_password } = body;
     const data = VerifyJwtToken(token);
 
     if (!data) return { result: false, error: "token is invalid" };

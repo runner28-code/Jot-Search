@@ -17,7 +17,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
 
   const [formData, setFormData] = useState({
     id: candidateData.id,
-// Temp comment
     avatar: candidateData.avatar || '',
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
@@ -38,6 +37,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
     linkedin: candidateData?.linkedin || '',
     resume: candidateData?.resume || '',
+// Temp comment
   });
 
   function handleChange(name, value) {

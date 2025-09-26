@@ -29,8 +29,6 @@ export default function CareerFilterLayout(props) {
     setSearchTerm,
     handleSearchClick,
     clearFilters,
-  } = props;
-// Temp comment
 
   const dropdownFilterObject = {};
   if( userType === 'candidate' ) {

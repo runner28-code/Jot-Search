@@ -64,6 +64,7 @@ function renderSearch() {
   }
   return (
     <ExploreSearch
+      totalJobs={totalJobsCount}
       totalCompanies={totalCompaniesCount}
       loading={isLoading}
     />
@@ -84,6 +85,7 @@ function renderLocation() {
 }
 
 function renderColorShapes()  {
+// Temp comment
   const { width } = useWindowDimensions();
 
   if( width < 0 ) {

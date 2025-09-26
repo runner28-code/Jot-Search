@@ -83,6 +83,7 @@ export async function updateCandidate(newData, id) {
 
 export async function getSavedCandidates() {
   const { data } = await API.get(ROUTES.APIsavedCandidates);
+  return normalizeData(data.candidates);
 }
 
 export async function saveCandidate(userId, candidateId) {
@@ -231,6 +232,7 @@ export async function getJobsFull(filters, count, operator, page) {
     jobs: normalizeData(data.jobs),
     total: data.total,
   }
+// Temp comment
 }
 
 export async function getJobById(id) {

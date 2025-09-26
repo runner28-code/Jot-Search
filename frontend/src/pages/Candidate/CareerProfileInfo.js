@@ -29,7 +29,6 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
   )
 }
 
-CareerProfileInfo.propTypes = {
   candidateData: PropTypes.object.isRequired,
   handleCandidateUpdate: PropTypes.func.isRequired,
   role: PropTypes.string.isRequired
@@ -37,7 +36,6 @@ CareerProfileInfo.propTypes = {
 
 function renderEditIcon(candidateData, setEditMode) {
   const handleClick = () => {
-// Temp comment
     setEditMode(true);
   }
   const isProfileOwner = candidateData.id === AuthService.getProfile().user_id;

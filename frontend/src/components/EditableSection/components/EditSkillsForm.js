@@ -14,7 +14,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
         value: newValues.join(', '),
       },
     };
-    handleChange(fakeEvent);
   }
 
   const inputHeight = 'h-24 ';
@@ -59,5 +58,6 @@ function renderChosen(skills, onChange) {
             handleClick={handleClick}
           />
         )
+      }) : <p className='text-royalBlue text-md'>No skills selected</p>}
     </div>
   )

@@ -40,6 +40,7 @@ export class ClientContactController {
     try {
       const { page, count, filters } = body;
 
+      const wheres = normalizeFilters(filters)
 
       // TODO: assuming filters and fields format
       const clientContacts = await db.clientContact.findMany({

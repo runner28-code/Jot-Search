@@ -43,3 +43,4 @@ function renderLabel( label, required, name ) {
     >
       {labelString}
     </label>
+  )

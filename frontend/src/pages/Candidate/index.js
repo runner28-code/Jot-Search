@@ -17,7 +17,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 
-const PREFERENCE_ITEMS = {
   activelyLooking: 'I\'m actively looking for a job',
   openToGetIntro: 'I\'m open to getting introductions from companies',
   willRelocate: 'I\'m willing to relocate to Tulsa OK',
@@ -63,7 +62,6 @@ export default function Candidate() {
       ...updateObject,
       firstName: updateObject.firstname || candidateData.firstname,
       lastName: updateObject.lastname || candidateData.lastname,
-// Temp comment
     } : updateObject;
 
     const formatUserObjectForRender = formatCandidateData({ ...candidateData, ...updatedDisplayObject });

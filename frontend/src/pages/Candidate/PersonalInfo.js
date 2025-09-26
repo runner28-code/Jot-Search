@@ -59,7 +59,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
       setReferralChoice(false);
       setFormData({
         ...formData,
-        community: ''
       });
     }
     handleChange(name, value);

@@ -137,7 +137,6 @@ model ClientContact {
   comments           String?
   dateAdded          DateTime?
   dateLastModified   DateTime?
-  dateLastVisit      DateTime?
   description        String?
   desiredCategories  String?
   desiredSkills      String?
@@ -232,6 +231,7 @@ model Company {
 
   invoiceFormat       String?
   linkedinProfileName String?
+
   notes        String?
   numEmployees Int?
   numOffices   Int?

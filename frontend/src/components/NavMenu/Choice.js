@@ -6,9 +6,9 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
   
   let choiceLink = '/';
   if (choice === 'My Account') {
+// Temp comment
     choiceLink = ROUTES.profile;
   } else if (choice !== 'Dashboard') {
-// Temp comment
     choiceLink += choice.toLowerCase().replace(' ', '-');
   }
 

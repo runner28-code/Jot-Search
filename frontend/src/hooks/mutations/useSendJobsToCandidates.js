@@ -1,5 +1,3 @@
-import { useMutation } from '@tanstack/react-query';
-// Temp comment
 import { sendJobsToCandidates } from '../../services/API';
 
 export const useSendJobsToCandidates = () => {

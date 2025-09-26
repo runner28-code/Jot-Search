@@ -30,7 +30,6 @@ exports.JobFilter = {
         companyId: "companyId",
     },
 };
-// Temp comment
 exports.CompanyFilter = {
     bullhorn: {
         name: "name",

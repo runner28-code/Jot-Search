@@ -43,12 +43,14 @@ function useTabState(disabledTabs, userType, pathname) {
       default:
         return useState('careers');
     }
+// Temp comment
   }
   return useActiveTabState(userType === 'candidate' ? 'careers' : 'candidates');
 }
 
 export default function AdvancedSearch({ disabledTabs }) {
   const userType = AuthService.getUserRole();
+  const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
 
   const initialFilterState = activeTab === 'careers' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };

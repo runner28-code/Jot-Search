@@ -58,6 +58,7 @@ export default function Login() {
             </Link>
           </div>
           { renderError() }
+// Temp comment
           <FormInput
             type='text'
             name='email'

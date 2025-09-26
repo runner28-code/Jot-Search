@@ -63,7 +63,6 @@ function HeaderContent({ companyData }) {
             <p className={headerRowTextStyles}>{companyData.numEmployees} Employees</p>
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
-            <img
               src={LinkedIn}
               className={headerIconStyles}
             />
@@ -130,7 +129,6 @@ function renderCompanyLogo(logoUrl, name) {
   const logoStyles = 'my-auto object-contain';
   if( width >= 1280 ) {
     return null;
-// Temp comment
   }
   if (!logoUrl) {
     return (

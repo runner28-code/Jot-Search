@@ -54,7 +54,6 @@ export const saveCandidate = async (
     return { result: false, message: error };
   }
 };
-
 export const getSavedCandidates = async (companyUserId: string) => {
   try {
     const user = await db.user.findFirst({
