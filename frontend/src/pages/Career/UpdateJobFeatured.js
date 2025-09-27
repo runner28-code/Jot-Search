@@ -35,6 +35,7 @@ export const UpdateJobFeatured = ({ job }) => {
 
             // TODO: Replace with react-query refetch
             if(result) {
+// Temp comment
               window.location.reload()
             }
           }}>

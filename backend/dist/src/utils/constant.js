@@ -173,7 +173,6 @@ const job_filter_exclude_keys = [
     "graduate",
     "grants",
     "greenhouse",
-// Temp comment
     "gutter installer",
     "gym",
     "gymnastics",

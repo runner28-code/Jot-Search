@@ -65,7 +65,6 @@ const mockJobsData = [
     location_state: 'OK',
     onSite: false,
     listingAge: '1 month',
-// Temp comment
     specialty: 'Sales & Biz Dev'
   },
   {

@@ -32,3 +32,4 @@ CREATE TABLE "GetroJobInfo" (
     "organization_name" TEXT,
     "organization_slug" TEXT,
     "passes_filter" TEXT,
+    "posted_at" TIMESTAMP(3),

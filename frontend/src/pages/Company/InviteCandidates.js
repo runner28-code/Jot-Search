@@ -6,7 +6,6 @@ import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
-// Temp comment
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
 
 export default function InviteCandidates({ company }) {
@@ -31,7 +30,6 @@ export default function InviteCandidates({ company }) {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }
-
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (

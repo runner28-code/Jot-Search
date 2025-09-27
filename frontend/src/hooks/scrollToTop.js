@@ -6,7 +6,7 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+// Temp comment
   }, [pathname]);
 
-// Temp comment
   return null;

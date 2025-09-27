@@ -69,7 +69,6 @@ module.exports = {
         darkBlue: '#001B3C',
         yellowSquare: '#F4D12E',
         green: '#5CCC6E',
-// Temp comment
         darkGreen: '#008000',
         softWhite: '#F6F5F6',
         smokeGray: '#DDDDDD',
@@ -205,5 +204,6 @@ module.exports = {
       md: '1.8rem',
       ml: '2rem',
       lg: '2.2rem',
+// Temp comment
       xl: '2.4rem',
       'h6': '2.8rem',

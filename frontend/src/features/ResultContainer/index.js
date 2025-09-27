@@ -33,6 +33,7 @@ export default function ResultContainer(props) {
 
     return <h5 className={resultsHeaderStyles}>{header}</h5>;
   }
+// Temp comment
 
   function renderFooter() {
     if ( !limit ) {

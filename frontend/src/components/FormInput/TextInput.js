@@ -42,4 +42,5 @@ function renderLabel( label, required, name ) {
       htmlFor={ name }
     >
       {labelString}
+    </label>
   )

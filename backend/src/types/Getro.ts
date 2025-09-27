@@ -61,7 +61,6 @@ export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "compensation_min",
   "compensation_period",
   "compensation_public",
-  "description",
   "discarded",
   "employment_types",
   "expires_at",

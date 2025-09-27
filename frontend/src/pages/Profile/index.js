@@ -5,5 +5,3 @@ export default function Profile() {
     <>
       <Candidate />
     </>
-// Temp comment
-  )

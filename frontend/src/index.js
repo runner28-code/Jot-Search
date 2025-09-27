@@ -14,6 +14,7 @@ import './index.css';
 
 export const queryClient = new QueryClient();
 const isDevelopment = window.location.hostname === 'localhost';
+// Temp comment
 
 ReactDOM.render(
   <QueryClientProvider client={queryClient}>
@@ -22,5 +23,4 @@ ReactDOM.render(
         <CareerContext>
           <CategoryContext>
             <ScrollToTop />
-// Temp comment
             <App />

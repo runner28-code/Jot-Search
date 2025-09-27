@@ -16,7 +16,6 @@ exports.determineCondition = exports.getFilterConditions = exports.justifyData =
 const uuid_1 = require("uuid");
 const config_1 = __importDefault(require("../config"));
 const BigQueryService_1 = require("../services/BigQueryService");
-// Temp comment
 const Common_1 = require("../types/Common");
 const constant_1 = require("./constant");
 const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, function* () {

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
+import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 const dropdownFilters = [
@@ -33,7 +34,6 @@ export default function CareerFilterLayout(props) {
   const dropdownFilterObject = {};
   if( userType === 'candidate' ) {
     dropDownFiltersCandidate.forEach(filter => {
-      dropdownFilterObject[filter] = filterObject[filter];
     });
   } else {
     dropdownFilters.forEach(filter => {

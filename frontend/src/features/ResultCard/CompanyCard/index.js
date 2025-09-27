@@ -109,6 +109,7 @@ const dataShape = {
     }),
     logo: PropTypes.string,
     name: PropTypes.string,
+    numEmployees: PropTypes.string,
   }).isRequired,
 }
 

@@ -17,7 +17,6 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     address2: data.address_address2,
     city: data.address_city,
     state: data.address_state,
-    zip: data.address_zip,
     resume: undefined,
     linkedin: undefined,
     skills: data.primarySkills,

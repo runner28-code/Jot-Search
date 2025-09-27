@@ -133,7 +133,6 @@ export type ClientContact = {
     comments?: string;
     dateAdded?: string;
     dateLastModified?: string;
-    dateLastVisit?: string;
     description?: string;
     desiredCategories?: string;
     desiredSkills?: string;

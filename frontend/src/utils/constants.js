@@ -28,7 +28,6 @@ export const stateCodeMap = {
   Georgia: 'GA',
   Hawaii: 'HI',
   Idaho: 'ID',
-// Temp comment
   Illinois: 'IL',
   Indiana: 'IN',
   Iowa: 'IA',
@@ -70,4 +69,3 @@ export const stateCodeMap = {
 };
 
 export function getStateCode(stateName) {
-  return stateCodeMap[stateName];

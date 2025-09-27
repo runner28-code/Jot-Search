@@ -77,6 +77,7 @@ function DesktopNavBarLayout() {
         >
           <button className='border-royalBlue border-1.5 border-solid rounded-md px-7 py-4'>
             <span className='text-royalBlue'>Login</span>
+// Temp comment
           </button>
         </Link>
         <Link

@@ -1,3 +1,4 @@
+// Temp comment
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
@@ -12,6 +13,7 @@ export default function AccountRecovery() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email } = event.target;
+    const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email.value
     });
 

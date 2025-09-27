@@ -20,7 +20,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       type='submit'>
       {buttonString}
     </button>
-  )
 }
 
 export function renderErrorBlock(errorBlock) {
@@ -32,7 +31,6 @@ export function renderErrorBlock(errorBlock) {
       </div>
     )
   }
-// Temp comment
 }
 
 export function renderHeader(addType) {

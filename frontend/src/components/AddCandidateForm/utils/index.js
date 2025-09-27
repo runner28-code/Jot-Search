@@ -26,6 +26,7 @@ export function renderErrorBlock(errorBlock) {
   if (errorBlock) {
     return (
       <div className='flex flex-col items-center justify-center w-full'>
+// Temp comment
         <p className='text-rose-500 text-sm font-bold'>{ errorBlock.error || errorBlock }</p>
       </div>
     )
@@ -35,7 +36,6 @@ export function renderErrorBlock(errorBlock) {
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (
-// Temp comment
       <h2 className='text-h4 vw-768:text-h2 text-royalBlue font-bold mb-16 text-center'>{ 'Let\'s create your account' }</h2>
     )
   }
