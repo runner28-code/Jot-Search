@@ -113,6 +113,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
     }
 
     const user = justifyData(data, USERKEYS, ["email", "id"]);
+    if (user && user.role && !ROLES.find((role) => role === user.role)) {
       return {
         result: false,
         error: `Invalid Role (candidate, coordinator, company)`,

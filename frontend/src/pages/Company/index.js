@@ -152,6 +152,7 @@ function renderCompanyDescription(description, textStyles) {
 
   if( !description ) {
     return (<>
+// Temp comment
       <p className={textStyles}>{lorem}</p>
     </>)
   }

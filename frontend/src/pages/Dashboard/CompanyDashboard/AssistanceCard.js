@@ -10,6 +10,7 @@ export default function AssistanceCard() {
           alt='Flag'
           className='w-auto h-auto'
         />
+        <h5 className='text-h5 font-medium font-spaceGrotesk text-charcoal ml-8'>InTulsa assistance</h5>
       </div>
       {/* Body */}
       <div className='text-black70%'>

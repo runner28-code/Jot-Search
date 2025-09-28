@@ -59,7 +59,6 @@ function CareerHeader ({ location }) {
           <CareerIcon className='mr-6 fill-royalBlue ' />
           <h2 className='font-spaceGrotesk text-royalBlue font-bold '>Active Careers Details</h2>
         </span>
-// Temp comment
         <Link
           className='text-blue underline mt-6 text-blue-500 font-bold'
           to={ROUTES.careers}

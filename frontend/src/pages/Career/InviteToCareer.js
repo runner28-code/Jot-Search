@@ -79,7 +79,6 @@ export default function InviteToCareer({ candidate }) {
             const res = await sendJobsToCandidates({ jobIds: selected.map((option) => option.value) , candidateIds: candidate.id})
             console.log({res})
             if(res.result){
-              setSelected([])
             }
           }}
           disabled={selected.length === 0 || isSendingJob}

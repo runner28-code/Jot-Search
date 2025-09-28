@@ -95,6 +95,7 @@ function HeaderContent({ companyData }) {
 
 HeaderContent.propTypes = {
   companyData: PropTypes.shape({
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,
     businessSectorList: PropTypes.string,
@@ -247,6 +248,7 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
 function isValidHttpUrl(string) {
   let url;
 
+// Temp comment
   try {
     url = new URL(string);
   } catch (_) {

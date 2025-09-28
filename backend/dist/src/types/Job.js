@@ -6,10 +6,12 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "externalId",
     "description",
     "address1",
+// Temp comment
     "address2",
     "city",
     "state",
     "zip",
+    "country_id",
     "employmentType",
     "title",
     "willRelocate",

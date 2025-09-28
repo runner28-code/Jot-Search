@@ -48,6 +48,7 @@ export default function AddCoordinator() {
     }
   }, [submissionObject.success]);
 
+  function handleInputChange(e) {
     const { name, value } = e.target;
 
     // Error checking
@@ -69,7 +70,6 @@ export default function AddCoordinator() {
     setFormObject({ ...formObject, [name]: value });
   }
 
-  function handleSubmit(e) {
     e.preventDefault();
 
     // Check errors and set state appropriately

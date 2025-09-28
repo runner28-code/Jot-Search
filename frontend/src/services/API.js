@@ -286,6 +286,7 @@ export async function saveJob(candidateId, jobId) {
   return normalizeData(data);
 }
 
+export async function getSavedJobs(id, count = undefined, page = undefined) {
   const { data } = await API.get(ROUTES.APIsavedJobs, {
     params: {
       candidate: id,
@@ -293,6 +294,7 @@ export async function saveJob(candidateId, jobId) {
       page
     }
   });
+// Temp comment
   return normalizeData(data.jobs);
 }
 

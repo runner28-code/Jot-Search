@@ -30,6 +30,7 @@ module.exports = {
         },
       },
       boxShadow: {
+        'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
       colors: {
         // Main Brand Colors
@@ -160,7 +161,6 @@ module.exports = {
         '210': '52.5rem',
         '216': '54rem',
         '220': '55rem',
-        '230': '57.5rem',
         '240': '60rem',
         '250': '62.5rem',
         '280': '70rem',

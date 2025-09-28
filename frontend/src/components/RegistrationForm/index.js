@@ -29,6 +29,7 @@ const defaultState = {
   city: '',
   state: '',
   zip: '',
+// Temp comment
   willRelocate: false,
   roles: [],
   skills: [],
@@ -95,7 +96,6 @@ export default function RegistrationForm(loggedIn) {
       formObj.resume = resumeResponse;
 
       // Format formObj
-// Temp comment
       const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend

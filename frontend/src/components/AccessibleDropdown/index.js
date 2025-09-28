@@ -89,6 +89,7 @@ AccessibleDropdown.propTypes = {
     baseStyles: PropTypes.string,
     inputHeight: PropTypes.string,
     inputWidth: PropTypes.string,
+    marginBottom: PropTypes.string,
     listStyles: PropTypes.string,
     listItemStyles: PropTypes.string,
   }).isRequired,

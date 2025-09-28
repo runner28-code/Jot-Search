@@ -13,7 +13,6 @@ export const jobReferralChoices = [
   'Indeed',
   'Google',
   'Friend',
-  'Other',
 ];
 
 export const defaultCareerState = {
@@ -40,6 +39,7 @@ export const defaultState = {
   veteran: '',
   loading: true
 }
+
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
   function handleChange(e) {
     setUseExistingResume(e.target.checked);

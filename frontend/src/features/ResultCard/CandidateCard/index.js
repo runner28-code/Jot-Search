@@ -126,6 +126,7 @@ function LinkWrapper({ children, link, disableLink }) {
     return (
       <div className={baseStyles}>
         {children}
+      </div>
     );
   }
 
@@ -141,7 +142,6 @@ function LinkWrapper({ children, link, disableLink }) {
   )
 }
 
-LinkWrapper.propTypes = {
   children: PropTypes.node.isRequired,
   link: PropTypes.string.isRequired,
   disableLink: PropTypes.bool,
