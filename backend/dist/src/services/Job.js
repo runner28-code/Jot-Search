@@ -28,6 +28,7 @@ const Common_1 = require("../types/Common");
 const Job_1 = require("../types/Job");
 const db_1 = __importDefault(require("../utils/db"));
 const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
+// Temp comment
     try {
         const jobError = validateJob(job);
         if (jobError) {
@@ -53,3 +54,4 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
 exports.createJob = createJob;
 // TODO: Figure out what we want to make required
 const validateJob = (job) => {
+    return undefined;

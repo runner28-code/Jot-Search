@@ -27,7 +27,6 @@ export default function DashboardPublicMin({type}) {
             >
             Back
             </button>
-// Temp comment
           </div>
         </div>
       </div>

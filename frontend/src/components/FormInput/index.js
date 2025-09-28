@@ -28,7 +28,6 @@ export default function FormInput(props) {
 
   let componentStyles = inputStyles;
   componentStyles += (error ? errorBorder : regularBorder);
-  componentStyles += disabled ? 'bg-grey300 cursor-not-allowed ' : 'bg-lightGrey ';
 
   const stylesObject = {
     baseStyles: componentStyles,
@@ -88,6 +87,7 @@ export default function FormInput(props) {
         name={name}
         label={label}
         required={required}
+        placeholder={placeholder}
         value={value}
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}

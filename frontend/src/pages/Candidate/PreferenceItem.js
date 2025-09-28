@@ -10,7 +10,6 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           fieldName={fieldName}
           label={label}
           toggled={toggled}
-          onToggle={onUpdate}
           disabled={disabled}
         />
         <label 
@@ -24,6 +23,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
 }
 
 PreferenceItem.propTypes = {
+  toggled: PropTypes.bool.isRequired,
   fieldName: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   onUpdate: PropTypes.func.isRequired,

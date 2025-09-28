@@ -8,7 +8,6 @@ export {default as Career} from './Career';
 export {default as Careers} from './Careers';
 export {default as Companies} from './Companies';
 export {default as Company} from './Company';
-// Temp comment
 export {default as Dashboard} from './Dashboard';
 export {default as Favorites} from './Favorites';
 export {default as LandingPage} from './LandingPage';

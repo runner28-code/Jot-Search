@@ -56,7 +56,6 @@ export type Job = {
     url?: string;
 };
 
-export type User = {
     id: string;
     avatar_url?: string; // !
     bio?: string; // !

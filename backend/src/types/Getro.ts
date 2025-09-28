@@ -10,7 +10,6 @@ export type Company = {
   instagram_url?: string;
   jobs_count?: string;
   linkedin_url?: string;
-  logo_url?: string;
   name?: string;
   ocp_search_status?: string;
   scraping_enabled?: string;
@@ -61,6 +60,7 @@ export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "compensation_min",
   "compensation_period",
   "compensation_public",
+  "description",
   "discarded",
   "employment_types",
   "expires_at",

@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
+import urlDecode from '../../utils/urlDecode';
 import * as ROUTES from '../../routes';
 
 export default function CompanyResults({ companies }) {
+// Temp comment
   if (companies.length === 0) {
     return null;
   }

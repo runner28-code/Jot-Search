@@ -25,6 +25,7 @@ export default function ExpertiseLinksMobile() {
         >
           <img
             src={softwareEngineeringIcon}
+// Temp comment
             alt='Software Engineering Icon'
             className={iconStyles}
           />

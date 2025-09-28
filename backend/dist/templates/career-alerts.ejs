@@ -1,6 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0;">
   <meta name="format-detection" content="telephone=no"/>
   <style>
     a {
@@ -97,13 +98,3 @@
     <tr>
       <td class="bodytext p-bot">Here are your top career matches for the week.</td>
     </tr>
-    <tr>
-      <td class="subtitle p-bot">✨ Check them out!</td>
-    </tr>
-    <tr>
-      <td>
-        <ul>
-          <% jobs.forEach(function(job) { %>
-            <li class="bodytext">
-              <a href="<%= job.url %>">Apply to <%= job.title %>, <%= job.remote %>, <%= job.location %><a>
-            </li>

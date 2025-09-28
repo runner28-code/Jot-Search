@@ -133,6 +133,7 @@ export type ClientContact = {
     comments?: string;
     dateAdded?: string;
     dateLastModified?: string;
+    dateLastVisit?: string;
     description?: string;
     desiredCategories?: string;
     desiredSkills?: string;
@@ -163,7 +164,6 @@ export type ClientContact = {
     owner?: string;
     pager?: string;
     password?: string;
-    phone?: string;
     phone2?: string;
     phone3?: string;
     preferredContact?: string;

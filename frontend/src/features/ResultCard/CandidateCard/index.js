@@ -126,7 +126,6 @@ function LinkWrapper({ children, link, disableLink }) {
     return (
       <div className={baseStyles}>
         {children}
-      </div>
     );
   }
 

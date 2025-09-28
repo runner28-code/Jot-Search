@@ -1,3 +1,4 @@
+// Temp comment
 import { useState, useEffect } from 'react';
 
 function getWindowDimensions() {
@@ -20,3 +21,4 @@ export default function useWindowDimensions() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  return windowDimensions;

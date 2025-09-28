@@ -26,7 +26,6 @@ export default function ResetButton({ candidateData, setType }) {
         onClick={handleSubmit}
       >
       Request Password Reset
-// Temp comment
       </button>
     )
   }
@@ -37,4 +36,3 @@ export default function ResetButton({ candidateData, setType }) {
     >
       Request Password Reset
     </button>
-  )

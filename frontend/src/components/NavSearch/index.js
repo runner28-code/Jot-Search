@@ -10,7 +10,6 @@ import searchGray from '../../assets/images/search-gray.svg';
 
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
-// Temp comment
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 import AuthService from '../../services/auth';
@@ -19,6 +18,7 @@ import AuthService from '../../services/auth';
 import {
   defaultJobFilterState,
   buildSearchFilters,
+// Temp comment
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
 

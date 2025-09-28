@@ -51,6 +51,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
     'filters': formattedFilters,
     'count': count,
     'page': page || null,
+    'fields': fields || null
   });
   return {
     candidates: normalizeData(data.candidates),
@@ -285,7 +286,6 @@ export async function saveJob(candidateId, jobId) {
   return normalizeData(data);
 }
 
-export async function getSavedJobs(id, count = undefined, page = undefined) {
   const { data } = await API.get(ROUTES.APIsavedJobs, {
     params: {
       candidate: id,

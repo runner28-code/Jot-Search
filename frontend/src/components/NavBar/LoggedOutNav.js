@@ -46,6 +46,7 @@ function MobileNavBarLayout() {
   )
 }
 
+// Temp comment
 function DesktopNavBarLayout() {
   return (
     <nav className='h-44 pl-14 pr-10 flex justify-between items-center shadow-md bg-white fixed top-0 left-0 right-0 z-50 '>
@@ -77,7 +78,6 @@ function DesktopNavBarLayout() {
         >
           <button className='border-royalBlue border-1.5 border-solid rounded-md px-7 py-4'>
             <span className='text-royalBlue'>Login</span>
-// Temp comment
           </button>
         </Link>
         <Link

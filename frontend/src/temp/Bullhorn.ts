@@ -75,6 +75,7 @@ export type Job = {
     employmentType?: string;
     externalID?: string;
     feeArrangement?: string;
+    hoursOfOperation?: string;
     hoursPerWeek?: string;
     interviews?: string;
     isClientEditable?: string;

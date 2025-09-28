@@ -15,7 +15,6 @@ export const jobFilterObject = {
     'On-Site',
     'Remote',
     'Hybrid',
-// Temp comment
     'Off-Site',
   ],
   'Years Experience': [
@@ -122,7 +121,6 @@ export const defaultCandidateFilterState = {
   ...convertedCandidateFilters
 };
 
-/* UTIL FUNCTIONS */
 export function buildSearchFilters(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = [];

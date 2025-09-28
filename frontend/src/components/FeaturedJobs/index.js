@@ -94,7 +94,6 @@ function RenderImage({image}) {
         <CareerIcon className={iconStyles + ' fill-royalBlue object-fill'} />
       </div>
     </>)
-  }
   return(
     <div className={containerStyles}>
       <img

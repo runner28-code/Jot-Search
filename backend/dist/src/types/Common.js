@@ -8,7 +8,6 @@ const config_1 = __importDefault(require("../config"));
 var Tables;
 (function (Tables) {
     Tables["COMPANIES"] = "Companies";
-// Temp comment
     Tables["JOBS"] = "Jobs";
     Tables["USER"] = "User";
     Tables["CONTACTS"] = "Contacts";
@@ -19,7 +18,6 @@ var Tables;
     Tables["SAVED_COMPANIES"] = "SavedCompanies";
     Tables["SAVED_CANDIDATES"] = "SavedCandidates";
     Tables["JOINED_COMPANIES"] = "companies_joined";
-    Tables["JOINED_CANDIDATES"] = "candidates_joined";
     Tables["CATEGORIES"] = "Categories";
 })(Tables = exports.Tables || (exports.Tables = {}));
 exports.DATASET_BULLHORN = config_1.default.bullhornDatasetID || "";

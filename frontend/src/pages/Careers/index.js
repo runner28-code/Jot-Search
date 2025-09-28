@@ -63,7 +63,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
       />
     </>)
   }
-// Temp comment
   if( loggedIn ) {
     return (<>
       <PageHeader

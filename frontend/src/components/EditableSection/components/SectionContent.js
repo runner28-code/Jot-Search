@@ -12,7 +12,6 @@ export default function SectionContent({ contentObject }) {
     const contentString = !contentObject[propertyName] ? 'None provided' : contentObject[propertyName];
     return <UnlabeledContent 
       contentText={contentString} 
-// Temp comment
       propertyName={propertyName}
     />
   }
