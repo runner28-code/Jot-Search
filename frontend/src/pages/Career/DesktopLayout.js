@@ -181,9 +181,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
           applicationUrl={careerData.application_path || careerData.url}
         />
       )}
-    </section>
   </>)
-// Temp comment
 }
 
 function renderSkillsSection({ skillList }) {

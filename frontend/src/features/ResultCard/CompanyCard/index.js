@@ -14,7 +14,6 @@ import { useGetJobs } from '../../../hooks/queries/useGetJobs';
 
 export default function CompanyCard({ data }) {
   // Format state if not state code. 'Oklahoma' -> 'OK'
-// Temp comment
   const addressString = buildCompanyAddress(data);
   const employeeString = data.numEmployees ? `${data.numEmployees} Employees` : 'N/A';
 

@@ -109,7 +109,6 @@ function renderLabel(name, label, required) {
       className='block text-textBlack mb-2.5'
       htmlFor={name}
     >
-      {label}
     </label>
   )
 }

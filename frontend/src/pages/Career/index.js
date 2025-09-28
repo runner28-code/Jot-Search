@@ -53,6 +53,7 @@ export default function CareerPage() {
   const loggedIn = AuthService.loggedIn();
 
   const source = data.careerData.datasource;
+
   const containerStyles = 'ml-10 mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
 
   return (<>
@@ -65,6 +66,7 @@ export default function CareerPage() {
       className={ width <= 990 ? containerStyles
         : loggedIn ? containerStyles 
           : containerStyles + ' px-[15%]'}
+// Temp comment
     >
       { renderNotification(activeData, careerData) }
       {

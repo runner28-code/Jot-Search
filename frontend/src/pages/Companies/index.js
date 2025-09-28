@@ -29,6 +29,7 @@ export default function Companies() {
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
+        loggedIn={loggedIn}
         userType={userType}
         togglePassState={togglePassState}
         toggle={toggle}

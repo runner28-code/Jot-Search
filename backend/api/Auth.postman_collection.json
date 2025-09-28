@@ -45,7 +45,6 @@
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"firstname\": \"test\",\r\n    \"lastname\": \"test\",\r\n    \"email\": \"donnie@aerovision.io\",\r\n    \"password\": \"123456\",\r\n    \"type\": \"hiring\",\r\n    \"city\": \"aaa\",\r\n    \"state\": \"bbb\"\r\n}",
-					"options": {
 						"raw": {
 							"language": "json"
 						}

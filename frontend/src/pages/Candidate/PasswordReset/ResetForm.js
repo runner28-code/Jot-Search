@@ -16,6 +16,7 @@ export default function ResetForm({ candidateData, setType }) {
     event.preventDefault();
 
     if( formData.password !== formData.confirmPassword ) {
+// Temp comment
       setMatch(false);
     }
 
@@ -30,6 +31,7 @@ export default function ResetForm({ candidateData, setType }) {
         setType('Password Reset Successfully', true);
       } else {
         setType(res.data.error, false);
+      }
     }
   };
 

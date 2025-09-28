@@ -70,6 +70,7 @@ export default function AddCoordinator() {
     setFormObject({ ...formObject, [name]: value });
   }
 
+  function handleSubmit(e) {
     e.preventDefault();
 
     // Check errors and set state appropriately

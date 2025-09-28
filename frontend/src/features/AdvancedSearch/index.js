@@ -104,5 +104,4 @@ export default function AdvancedSearch({ disabledTabs }) {
     setPage(1);
   }
   function handleSearchClick() {
-// Temp comment
     setPage(1);

@@ -12,13 +12,11 @@ export default function ResultContainer(props) {
   const {
     results,
     loading,
-    type,
     limit,
     header, 
     active,
     compact = false,
     isFavoriteOverride = null,
-// Temp comment
     agoText = null,
     containerClass = undefined,
     selectableProps = null,

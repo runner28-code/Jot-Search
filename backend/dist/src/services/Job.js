@@ -39,7 +39,6 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
         });
         return {
             result: true,
-            data: newJob,
         };
     }
     catch (err) {

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 // import FormInput from '../../components/FormInput';
 
-// Temp comment
 import API from '../../services/API';
 
 
@@ -12,7 +11,6 @@ export default function ResetPassword() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [match, setMatch] = useState('');
-  const [success, setSuccess] = useState('');
 
   const queryParams = new URLSearchParams(window.location.search);
   const token = queryParams.get('token');

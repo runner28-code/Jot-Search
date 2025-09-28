@@ -61,7 +61,6 @@ export const APIaccountRecovery = '/account-recovery';
 export const APIResetPassword = '/reset-password';
 // Candidates
 const APIcandidateBase = '/api/candidate';
-// Temp comment
 export const APIcandidates = APIcandidateBase + '/search';
 export const APIcandidateUpdate = APIcandidateBase + '/update';
 export const APIuserUpdate = '/user/update';

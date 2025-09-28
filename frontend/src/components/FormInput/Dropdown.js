@@ -61,6 +61,7 @@ export default function Dropdown(props) {
     inputHeight,
     name, 
     onChange, 
+    placeholder, 
     type
   } = props;
     

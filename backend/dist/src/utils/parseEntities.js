@@ -39,7 +39,6 @@ const parseBullhornCandidateToUser = (data) => {
         ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,
         disability: data.disability,
-// Temp comment
     };
     return user;
 };
@@ -56,7 +55,6 @@ const parseBullhornCompanyToUser = (data) => {
         city: data.address_city,
         state: data.address_state,
         zip: data.address_zip,
-        resume: undefined,
         linkedin: undefined,
         skills: data.primarySkills,
         category: data.specialties,

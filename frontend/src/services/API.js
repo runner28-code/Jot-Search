@@ -294,7 +294,6 @@ export async function getSavedJobs(id, count = undefined, page = undefined) {
       page
     }
   });
-// Temp comment
   return normalizeData(data.jobs);
 }
 

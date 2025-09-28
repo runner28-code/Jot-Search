@@ -29,7 +29,6 @@ const defaultState = {
   city: '',
   state: '',
   zip: '',
-// Temp comment
   willRelocate: false,
   roles: [],
   skills: [],

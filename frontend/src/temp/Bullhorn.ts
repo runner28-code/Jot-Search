@@ -150,7 +150,6 @@ export type ClientContact = {
     mobile?: string;
     name?: string;
     namePrefix?: string;
-    nameSuffix?: string;
     nickName?: string;
     numEmployees?: string;
     occupation?: string;
@@ -159,6 +158,7 @@ export type ClientContact = {
     pager?: string;
     password?: string;
     phone?: string;
+    phone2?: string;
     phone3?: string;
     preferredContact?: string;
     skills?: string;

@@ -157,6 +157,7 @@ export const skills = [
   'Customer Success',
   'Customer Support',
   'Cyber',
+  'Cyber Security',
   'Data Analytics',
   'Data and Analytics',
   'Data Management',

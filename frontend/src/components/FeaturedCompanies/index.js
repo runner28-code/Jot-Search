@@ -45,7 +45,6 @@ export default function FeaturedCompanies() {
       </div>
     </div>
   )
-}
 function renderColorShapes() {
   return(
     <div className='relative w-full w-24 mb-8'>

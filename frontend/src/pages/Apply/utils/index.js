@@ -13,6 +13,7 @@ export const jobReferralChoices = [
   'Indeed',
   'Google',
   'Friend',
+  'Other',
 ];
 
 export const defaultCareerState = {
@@ -107,6 +108,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
     <button
       className={buttonStyles}
       type='submit'>
+// Temp comment
       {buttonString}
     </button>
   )

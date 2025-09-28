@@ -248,7 +248,6 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
 function isValidHttpUrl(string) {
   let url;
 
-// Temp comment
   try {
     url = new URL(string);
   } catch (_) {

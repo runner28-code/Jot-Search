@@ -72,6 +72,7 @@ HeaderContent.propTypes = {
     address: PropTypes.string,
     employeeString: PropTypes.string,
     city: PropTypes.string,
+    state: PropTypes.string,
     numEmployees: PropTypes.number,
   })
 }

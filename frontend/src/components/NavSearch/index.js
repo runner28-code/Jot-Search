@@ -110,6 +110,7 @@ export default function NavSearch({ placeholder }) {
       { renderResultsContainer( combinedResults, searchTerm ) }
     </div>
   )
+}
 
 NavSearch.propTypes = {
   placeholder: PropTypes.string
@@ -146,6 +147,5 @@ function renderResults( results ) {
 
   return (<>
     {candidates && <CandidateResults candidates={ candidates } /> }
-    <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
   </>)

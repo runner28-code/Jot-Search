@@ -143,6 +143,7 @@ export default function Candidate() {
           handleCandidateUpdate={handleCandidateUpdate} />
         {/* Password Reset (Candidate and Coordinator) */}
         <PasswordReset
+          role={role}
           candidateData={candidateData}
         />
       </div>
