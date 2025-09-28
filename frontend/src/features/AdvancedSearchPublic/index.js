@@ -41,7 +41,6 @@ function useTabState(disabledTabs, userType, pathname) {
       case '/careers':
       default:
         return useState('jobs');
-    }
   }
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');
 }
@@ -87,6 +86,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
 
   /* CLEAR SEARCH TERM ON TAB SWITCH */
   const isMount = useIsMount();
+  useEffect(() => {
     if (isMount) {
       return;
     }

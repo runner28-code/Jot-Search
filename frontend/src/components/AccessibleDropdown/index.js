@@ -108,7 +108,6 @@ function buttonText(name, placeholder, currentChosen) {
   if ( !placeholder ) {
     return currentChosen;
   }
-// Temp comment
   if ( name === 'experience' && currentChosen ) { // Grab value from experienceMap
     if ( isNaN(currentChosen) ) {
       return currentChosen + 'years';

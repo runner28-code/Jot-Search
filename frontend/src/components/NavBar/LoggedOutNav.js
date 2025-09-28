@@ -6,6 +6,7 @@ import NavMenu from '../NavMenu';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import AuthService from '../../services/auth';
 import NavSearch from '../NavSearch';
+import NavSearchMobile from '../NavSearchMobile';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -20,7 +21,6 @@ export default function NavBar() {
 }
 
 function MobileNavBarLayout() {
-  const { width } = useWindowDimensions();
   return (
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50'>
       <div className='h-30 pl-4 pr-4 flex justify-between items-center relative'>

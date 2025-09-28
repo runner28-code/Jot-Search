@@ -8,7 +8,6 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
       <div className='flex space-x-16'>
         <SwitchButton
           fieldName={fieldName}
-// Temp comment
           label={label}
           toggled={toggled}
           onToggle={onUpdate}
@@ -33,7 +32,6 @@ PreferenceItem.propTypes = {
 }
 
 export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) {
-  const toggleOnButtonStyle = 'bg-green text-white cursor-pointer'
   const toggleOffButtonStyle = 'bg-grey300 cursor-not-allowed'
 
   const buttonStyles = (toggled && !disabled) ? toggleOnButtonStyle : toggleOffButtonStyle

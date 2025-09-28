@@ -65,6 +65,7 @@ function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCa
   function handleSave() {
     handleSubmit();
   }
+// Temp comment
 
   if ( isCoordinator || isProfileOwner ) {
     if ( editMode ) {

@@ -12,6 +12,7 @@ export default function ResultContainer(props) {
   const {
     results,
     loading,
+    type,
     limit,
     header, 
     active,
@@ -35,6 +36,7 @@ export default function ResultContainer(props) {
 
   function renderFooter() {
     if ( !limit ) {
+// Temp comment
       return null;
     }
 

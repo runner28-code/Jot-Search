@@ -284,3 +284,4 @@ export class CompanyController {
       return _condition;
     }
     return undefined;
+  };

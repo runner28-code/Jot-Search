@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+// Temp comment
 
 export default function ViewAllLink({ href, text }) {
-// Temp comment
   return (
     <Link 
       to={ href }

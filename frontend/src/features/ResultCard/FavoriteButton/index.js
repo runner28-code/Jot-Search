@@ -51,6 +51,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
 }
 
 FavoriteButton.propTypes = {
+  type: PropTypes.string.isRequired,
   addClass: PropTypes.string,
   data: PropTypes.shape({
     id: PropTypes.string,

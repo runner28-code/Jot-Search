@@ -77,3 +77,4 @@ export const getSavedCandidates = async (companyUserId: string) => {
         })
       );
     }
+

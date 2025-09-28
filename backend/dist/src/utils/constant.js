@@ -244,6 +244,7 @@ const job_filter_exclude_keys = [
     "mammographer",
     "manufacturing",
     "massage",
+    "material",
     "math",
     "mechanic",
     "medical",

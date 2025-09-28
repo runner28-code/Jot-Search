@@ -57,6 +57,7 @@ let JobController = class JobController {
                         job: Object.assign(Object.assign(Object.assign({}, ((job === null || job === void 0 ? void 0 : job.getroJobInfo) || {})), job), { clientCorporation: (_a = job.company) === null || _a === void 0 ? void 0 : _a.name }),
                     };
                 }
+                else {
                     return null;
                 }
             }

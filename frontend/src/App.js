@@ -17,6 +17,7 @@ import { NavBar, Footer, SideNav } from './components';
 import AuthService from './services/auth';
 
 function App() {
+  let userRole = AuthService.getUserRole();
 
   return (
     <div className="App overflow-hidden">
@@ -25,6 +26,7 @@ function App() {
         <SideNav userType={userRole} />
         <div 
           className='grow min-h-280 pb-18'>
+// Temp comment
           <Routes>
             <Route
               path={ROUTES.signup}

@@ -97,7 +97,6 @@ export default function Company() {
             companyName={companyData.name}
           />
         </div>
-// Temp comment
         <div className='mt-12'>
           <button
             className='border border-2 border-royalBlue text-royalBlue py-6 px-20 text-lg rounded-xl mb-12'

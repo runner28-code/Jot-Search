@@ -16,12 +16,12 @@ export default function ResetForm({ candidateData, setType }) {
     event.preventDefault();
 
     if( formData.password !== formData.confirmPassword ) {
-// Temp comment
       setMatch(false);
     }
 
     if( formData.password === formData.confirmPassword ) {
       setMatch(true);
+// Temp comment
       const { password } = event.target;
       const res = await API.post(ROUTES.APIResetPassword, {
         new_password: password.value,

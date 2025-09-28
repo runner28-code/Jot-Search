@@ -112,3 +112,4 @@ export const getSavedJobs = async (candidateId: string) => {
       },
     });
 
+    console.log({ candidate });

@@ -5,7 +5,6 @@ import FormInput from '../../components/FormInput';
 
 import API from '../../services/API';
 import AuthService from '../../services/auth';
-
 export default function Login() {
   const [error, setError] = useState('');
 
@@ -71,6 +70,7 @@ export default function Login() {
           <div className='flex justify-between items-center vw-640:items-end mb-22 gap-[10px]'>
             <button
               className='h-20 vw-640:h-24 bg-royalBlue text-center text-white text-xl tracking-wide px-14 rounded-lg'
+              type='submit'
             >
               Login
             </button>

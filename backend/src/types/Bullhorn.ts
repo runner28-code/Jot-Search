@@ -22,7 +22,6 @@ export type Company = {
     customDate1_3?: string,
     customFloat1_3?: string,
     customInt1_3?: string,
-    customText1_20?: string,
     customTextBlock1_5?: string,
     dateFounded?: string,
     dateLastModified?: string,
@@ -121,6 +120,7 @@ export type Job = {
 
 export type ClientContact = {
     id: string;
+    address_address1?: string;
     address_address2?: string;
     address_city?: string;
     address_state?: string;
