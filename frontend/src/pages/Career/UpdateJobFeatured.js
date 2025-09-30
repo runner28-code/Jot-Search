@@ -34,7 +34,6 @@ export const UpdateJobFeatured = ({ job }) => {
             const { result } = await saveJob({ featured: !toggled, id: job.id })
 
             // TODO: Replace with react-query refetch
-            if(result) {
               window.location.reload()
             }
           }}>

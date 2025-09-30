@@ -40,7 +40,6 @@ export default function CareerFilterLayout(props) {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
-  }
 
   const buttonStyles = 'text-white text-sm whitespace-nowrap';
   const buttonStylesCareer = 'text-white text-sm whitespace-nowrap';
@@ -60,6 +59,7 @@ export default function CareerFilterLayout(props) {
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}
+        >
           Clear All
         </button>
       </div>

@@ -23,11 +23,9 @@ exports.IUSER = {
     seniority: "",
     workspace: "",
     referredBy: "",
-// Temp comment
     roles: "",
     description: "",
     phone: "",
-    status: "",
     username: "",
     logo: "",
     companyId: "",

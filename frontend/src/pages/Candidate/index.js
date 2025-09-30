@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// Temp comment
 import { useLocation, Navigate } from 'react-router-dom';
 import CareerProfileInfo from './CareerProfileInfo';
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -55,7 +54,6 @@ export default function Candidate() {
       if (updateObject[key] === '') {
         updateObject[key] = null;
       }
-      if (updateObject[key] !== candidateData[key]) {
         formattedUpdateObject[key] = updateObject[key];
       }
     });

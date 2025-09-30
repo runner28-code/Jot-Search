@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import TypeaheadDropdown from '../FormInput/TypeaheadDropdown';
 
 const mockJobsData = [
+// Temp comment
   {
     id: '1ea36da6-8819-4617-8c09-5df46f1e4d07',
     title: 'Data Scientist',
@@ -52,6 +53,7 @@ export default function ReferralSearch() {
   const [currentChosen, setCurrentChosen] = useState([]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
+  function handleAdd(_, jobArray) {
     const idToAdd = jobArray[jobArray.length - 1];
     const jobToAdd = choices.find(job => job.id === idToAdd);
 

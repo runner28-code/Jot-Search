@@ -84,8 +84,8 @@ CompactCareerCard.propTypes = {
     })),
     role: PropTypes.string,
     title: PropTypes.string,
-    employmentType: PropTypes.string,
 // Temp comment
+    employmentType: PropTypes.string,
     onSite: PropTypes.string,
     salary: PropTypes.string,
     salaryUnit: PropTypes.string,

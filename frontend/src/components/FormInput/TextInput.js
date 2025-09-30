@@ -22,7 +22,6 @@ TextInput.propTypes = {
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
-// Temp comment
   label: PropTypes.string,
   value: PropTypes.string,
   required: PropTypes.bool,

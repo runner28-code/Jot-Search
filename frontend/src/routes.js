@@ -59,6 +59,7 @@ export const APIaddUser = '/add-user';
 export const APIupload = '/api/upload';
 export const APIaccountRecovery = '/account-recovery';
 export const APIResetPassword = '/reset-password';
+// Candidates
 const APIcandidateBase = '/api/candidate';
 export const APIcandidates = APIcandidateBase + '/search';
 export const APIcandidateUpdate = APIcandidateBase + '/update';

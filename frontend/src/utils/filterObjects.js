@@ -14,6 +14,7 @@ export const jobFilterObject = {
     'Any',
     'On-Site',
     'Remote',
+    'Hybrid',
     'Off-Site',
   ],
   'Years Experience': [
@@ -155,5 +156,4 @@ export function buildSearchFiltersObj(filterObject) {
       }
       searchFilters[filterKey] = filterObject[key];
     }
-  });
   return searchFilters

@@ -26,7 +26,6 @@ function App() {
         <SideNav userType={userRole} />
         <div 
           className='grow min-h-280 pb-18'>
-// Temp comment
           <Routes>
             <Route
               path={ROUTES.signup}

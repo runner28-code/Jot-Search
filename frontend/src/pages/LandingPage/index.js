@@ -37,6 +37,7 @@ export default function LandingPage() {
         { renderSearch() }
       </section>
       {/* Browse Opportunities by Expertise */}
+      { renderExpertiseLinks() }
       { isMobile && <JoinTalentNetwork /> }
       {/* Featured Jobs */}
       <FeaturedJobs />
@@ -89,6 +90,7 @@ function renderColorShapes()  {
   if( width < 0 ) {
     return (
       <div className='w-full'>
+// Temp comment
         <ColorShapes />
       </div>
     )

@@ -23,6 +23,7 @@ export default function CareerFavorite () {
         {
           isLoading ?
             <LoadingSpinner />
+// Temp comment
             :
             savedCompanies.map((company, index) => {
               console.log(company);
@@ -53,6 +54,5 @@ export default function CareerFavorite () {
             View All
         </Link>
       </div>
-// Temp comment
     </div>
   )

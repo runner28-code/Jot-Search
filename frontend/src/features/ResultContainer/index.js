@@ -36,7 +36,6 @@ export default function ResultContainer(props) {
 
   function renderFooter() {
     if ( !limit ) {
-// Temp comment
       return null;
     }
 

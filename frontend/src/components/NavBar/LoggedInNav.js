@@ -13,7 +13,6 @@ import {
   companyChoices,
   coordinatorChoices,
   guestChoices,
-// Temp comment
   findSelectedFromPath
 } from '../SideNav/utils';
 import { useCandidateContext } from '../../services/CandidateContext';

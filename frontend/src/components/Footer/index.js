@@ -222,7 +222,6 @@ function NavFooter() {
         >Create Account
         </Link>
         <Link
-// Temp comment
           to={ROUTES.login}
           className={blueLinkStyle}
         >Login
