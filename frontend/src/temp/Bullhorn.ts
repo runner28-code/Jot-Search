@@ -40,6 +40,7 @@ export type Company = {
     phone?: string,
     revenue?: string,
     status?: string,
+    taxRate?: string,
     tickerSymbol?: string,
     workWeekStart?: string,
     address_country_id?: string,
@@ -179,7 +180,6 @@ export type Candidate = {
     companyURL?: string;
     dateAdded?: string;
     dateAvailable?: string;
-    dateAvailableEnd?: string;
     dateI9Expiration?: string;
     dateLastComment?: string;
     dateLastModified?: string;	
@@ -259,3 +259,5 @@ export type Candidate = {
     specialties?: string; // ?
     ssn?: string;
     stateAddtionalWitholdingsAmount?: string;
+    stateExemptions?: string;
+    stateFilingStatus?: string;

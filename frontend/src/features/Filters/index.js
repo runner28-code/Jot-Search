@@ -45,7 +45,6 @@ export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handl
       <FilterSearch
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
-        handleSearchClick={handleSearchClick}
         placeholder={searchLabel}
       />
     )
@@ -57,6 +56,7 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
     return null;
   }
 
+  return Object.entries(defaultFilterObject).map(([key, value]) => {
     if (!filterObject[key]) {
       return null;
     }

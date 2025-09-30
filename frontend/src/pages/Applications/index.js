@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
 import PageHeader from '../../components/PageHeader';
-import {BsClipboardCheck} from 'react-icons/bs';
 import ResultContainer from '../../features/ResultContainer';
 import { getAppliedJobs } from '../../services/API';
-// Temp comment
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 

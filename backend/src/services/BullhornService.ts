@@ -777,3 +777,7 @@ export class BullhornService {
     count = 150,
     sort = "-dateAdded"
   ): Promise<any> {
+    console.log("\n***** getLeads *****");
+    let offset = 0;
+    let total = 100000;
+    let repeatErr = 0;

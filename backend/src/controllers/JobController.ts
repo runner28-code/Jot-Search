@@ -340,3 +340,5 @@ export class JobController {
   @Get("/candidates")
   async getCandidates(@QueryParam("job") job: string) {
     return await getCandidatesOnJob(job);
+  }
+

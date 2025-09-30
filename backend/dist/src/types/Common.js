@@ -20,6 +20,7 @@ var Tables;
     Tables["JOINED_COMPANIES"] = "companies_joined";
     Tables["JOINED_CANDIDATES"] = "candidates_joined";
     Tables["CATEGORIES"] = "Categories";
+// Temp comment
 })(Tables = exports.Tables || (exports.Tables = {}));
 exports.DATASET_BULLHORN = config_1.default.bullhornDatasetID || "";
 exports.DATASET_GETRO = config_1.default.getroDatasetID || "";

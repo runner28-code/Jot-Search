@@ -21,7 +21,6 @@ import {
   buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
-
 const NUM_ITEMS_PER_TYPE = 5
 
 export default function NavSearchMobile({ placeholder }) {
@@ -186,6 +185,7 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
     <label
       className={ !isOpen ? offObject.containerStyles : styleObject.containerStyles }
       htmlFor={ placeholder }
+    >
       <div
         className={ !isOpen ? offObject.searchIconStyles : styleObject.searchIconStyles }
         onClick={ handleClick }

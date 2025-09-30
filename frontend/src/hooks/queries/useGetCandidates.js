@@ -7,7 +7,6 @@ export const prefetchCandidates = async ({filtersArr, count, page, fields}) => {
 }
 
 export const prefetchAllSelectCandidates = async() => {
-// Temp comment
   const values = { 
     filtersArr: [],
     count: 10000,
@@ -23,7 +22,6 @@ export const useGetCandidates = ({ count, page, fields, filtersArr, enabled = tr
     () => getCandidatesFull(filtersArr, count, page, fields),
     { enabled }
   );
-
   return { candidates: data?.candidates, total: data?.total || 0, error, isLoading };
 }
 

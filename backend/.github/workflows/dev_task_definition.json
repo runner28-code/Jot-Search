@@ -5,7 +5,6 @@
     "containerDefinitions": [
         {
             "name": "intulsa-backend-container-dev", 
-            "image": "site-backend:dev", 
             "cpu": 1024, 
             "memory": 2048, 
             "portMappings": [
@@ -77,3 +76,4 @@
                     "name": "BULLHORN_API_USERNAME", 
                     "value": "{SECRET_BULLHORN_API_USERNAME}"
                 },
+                {

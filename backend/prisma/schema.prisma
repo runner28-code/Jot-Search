@@ -587,3 +587,6 @@ model Candidate {
   dateAvailable    DateTime?
   dateAvailableEnd DateTime?
   dateI9Expiration DateTime?
+  dateLastComment  DateTime?
+  dateLastModified DateTime?
+  dateNextCall     DateTime?

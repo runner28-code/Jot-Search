@@ -51,3 +51,5 @@ CREATE TABLE "Lead" (
     "phone2" TEXT,
     "phone3" TEXT,
     "preferredContact" TEXT,
+    "primarySkills" TEXT,
+    "priority" TEXT,

@@ -12,7 +12,6 @@ const setupCronJobs = async () => {
       await (await BullhornService.getClient()).getCompanies(false, 50);
     } catch (error) {
       consoleLog(error);
-    }
     consoleLog('/// CRON_JOB_ENDED: BULLHORN_GET_COMPANIES');
   });
 
@@ -74,3 +73,4 @@ const setupCronJobs = async () => {
       consoleLog(error);
     }
     consoleLog('/// CRON_JOB_ENDED: GETRO_GET_JOBS');
+  });

@@ -19,6 +19,7 @@ export const stateCodeMap = {
   Alabama: 'AL',
   Alaska: 'AK',
   Arizona: 'AZ',
+  Arkansas: 'AR',
   California: 'CA',
   Colorado: 'CO',
   Connecticut: 'CT',
@@ -65,6 +66,7 @@ export const stateCodeMap = {
   'West Virginia': 'WV',
   Wisconsin: 'WI',
   Wyoming: 'WY',
+// Temp comment
 };
 
 export function getStateCode(stateName) {

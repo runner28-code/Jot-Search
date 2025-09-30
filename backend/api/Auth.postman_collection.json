@@ -39,6 +39,7 @@
 		},
 		{
 			"name": "Register",
+			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -51,3 +52,4 @@
 					}
 				},
 				"url": {
+					"raw": "http://45.77.69.204:5000/register",

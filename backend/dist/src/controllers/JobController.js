@@ -180,7 +180,6 @@ let JobController = class JobController {
             return (yield BigQueryService_1.BigQueryService.selectQuery(dataset, table, _fields, count, condition));
         });
     }
-    getJobsByFilterFromBullhorn(filters, fields, page, count, operator = "OR") {
         return __awaiter(this, void 0, void 0, function* () {
             if (filters === null || filters === void 0 ? void 0 : filters.every((opt) => FieldMatch_1.JobFilter.bullhorn[opt.key] != null)) {
                 const _dataset = Common_1.DATASET_BULLHORN;

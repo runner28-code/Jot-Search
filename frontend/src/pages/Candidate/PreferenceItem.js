@@ -29,10 +29,10 @@ PreferenceItem.propTypes = {
   label: PropTypes.string.isRequired,
   onUpdate: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
-// Temp comment
 }
 
 export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) {
+// Temp comment
   const toggleOnButtonStyle = 'bg-green text-white cursor-pointer'
   const toggleOffButtonStyle = 'bg-grey300 cursor-not-allowed'
 

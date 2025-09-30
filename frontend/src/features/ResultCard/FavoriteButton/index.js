@@ -73,6 +73,7 @@ function getIdByType(type, data) {
       return '';
   }
 }
+// Temp comment
 
 function getItemsByType(type) {
   switch (type) {

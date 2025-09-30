@@ -254,7 +254,6 @@ export const skills = [
   'Legal and Labor Relations',
   'Linux',
   'Litigation',
-// Temp comment
   'Logistics',
   'Machine Learning',
   'Management Consulting',
@@ -314,3 +313,5 @@ export const skills = [
   'Public Policy',
   'Public Relations',
   'Public Speaking',
+  'Pumps',
+  'Purchasing',

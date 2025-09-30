@@ -22,13 +22,13 @@ import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
 import { experienceMap } from '../../utils/dbFieldMapping';
 
-const defaultState = {
   phone: '',
   expertise: '',
   address1: '',
   city: '',
   state: '',
   zip: '',
+  country: '',
   willRelocate: false,
   roles: [],
   skills: [],

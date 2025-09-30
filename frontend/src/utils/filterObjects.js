@@ -156,4 +156,5 @@ export function buildSearchFiltersObj(filterObject) {
       }
       searchFilters[filterKey] = filterObject[key];
     }
+  });
   return searchFilters

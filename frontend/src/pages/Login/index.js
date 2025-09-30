@@ -17,7 +17,6 @@ export default function Login() {
       password: password.value,
     });
 
-    if ( res.data.result ) {
       AuthService.login(res.data.token);
     } else {
       setError(res.data.error);

@@ -7,7 +7,6 @@ import financeIcon from '../../assets/images/Symbol_finance.svg';
 import * as ROUTES from '../../routes';
 
 export default function ExpertiseLinks() {
-// Temp comment
   const linkStyles = 'flex flex-col items-center mx-15';
   const iconStyles = 'w-54 h-54 mb-10';
   const textStyles = 'text-ml text-darkGray';
@@ -70,6 +69,7 @@ export default function ExpertiseLinks() {
             alt='Operations Icon'
             className={iconStyles}
           />
+// Temp comment
           <span className={textStyles}>Operations</span>
         </Link>
         {/* Finance */}

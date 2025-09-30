@@ -77,7 +77,6 @@ async function seedCandidates() {
         firstName: "John",
         lastName: "Smith",
         phone: "123-456-7891",
-        email: "jsmithers@gmail.com",
         comments: "He does everything!",
       },
       {
@@ -181,3 +180,4 @@ async function seedUsers() {
         avatar: "https://picsum.photos/200",
         email: "coordinator@aerovision.io",
         firstname: "Coordinator",
+        lastname: "Test",

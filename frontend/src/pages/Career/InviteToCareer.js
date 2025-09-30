@@ -20,7 +20,6 @@ export default function InviteToCareer({ candidate }) {
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
   const jobOptions = jobs?.map(job => {
-    return {
       label: job.title,
       value: job.id,
       job
@@ -43,7 +42,6 @@ export default function InviteToCareer({ candidate }) {
           <button 
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs' 
             onClick={(e) => deleteItem(e, item.value)}>X</button>
-// Temp comment
         </span>
       ))}
     </div>)

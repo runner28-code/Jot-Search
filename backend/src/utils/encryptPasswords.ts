@@ -19,6 +19,7 @@ import { DATASET_MAIN, Tables } from "../types/Common";
           query: query,
           location: "US",
         };
+        const [job] = await BigQueryService.getClient().createQueryJob(options);
         const [users] = await job.getQueryResults();
 
         if (users && users.length ) {
@@ -38,3 +39,4 @@ import { DATASET_MAIN, Tables } from "../types/Common";
 
               const update_options = { query: update_query, location: "US" };
               const [job] = await BigQueryService.getClient().createQueryJob(update_options);
+              const res = await job.getQueryResults();

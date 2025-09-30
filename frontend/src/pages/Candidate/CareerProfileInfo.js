@@ -33,6 +33,7 @@ CareerProfileInfo.propTypes = {
   candidateData: PropTypes.object.isRequired,
   handleCandidateUpdate: PropTypes.func.isRequired,
   role: PropTypes.string.isRequired
+// Temp comment
 }
 
 function renderEditIcon(candidateData, setEditMode) {

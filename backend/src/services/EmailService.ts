@@ -95,3 +95,4 @@ export const sendJobsToCandidates = async (jobs: string[], candidates_emails: st
 }
 
 export const sendUpdateUserNotification = async (to: string, name: string) => {
+  try {

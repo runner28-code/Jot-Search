@@ -53,7 +53,6 @@ export class UserController {
   }
 
   /**
-   * No-auth route for register page
    * @param user 
    * @returns 
    */
@@ -147,6 +146,7 @@ export class UserController {
       return {
         result,
         error,
+      };
     }
   }
 
@@ -177,3 +177,4 @@ export class UserController {
     try {
       const history = await db.history.findMany({
         where: {
+          table: USER_TABLE,

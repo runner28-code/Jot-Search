@@ -71,7 +71,6 @@ export type JobSearchByID = {
   message?: string;
 };
 
-export type JobSearchByFilterResponse =
   | {
       jobs?: Job[];
       total?: number;
@@ -108,3 +107,4 @@ export type GetCandidatesOnJobResponse = {
 
 // Company Types
 export type Company = BullhornCompany | GetroCompany;
+export type CompanySearchByID = {

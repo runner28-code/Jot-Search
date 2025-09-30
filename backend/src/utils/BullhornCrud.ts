@@ -254,3 +254,5 @@ export const saveLeads = async (leads: any[]) => {
         const leadData = { ...lead };
         Object.keys(leadData).forEach((key) => {
           if (expludeFields.includes(key)) {
+            delete leadData[key];
+          }

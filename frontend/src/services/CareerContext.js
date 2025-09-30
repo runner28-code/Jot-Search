@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const mockJobsData = [
   {
-    id: '1ea36da6-8819-4617-8c09-5df46f1reg78',
     title: 'Database Administrator',
     company: 'Hobby Lobby', // ! Not in schema yet
     clientCorporationID: '05dbac7b-bf38-47ce-a8e1-d13ceebd8ee8',

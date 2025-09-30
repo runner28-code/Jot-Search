@@ -7,7 +7,6 @@ export const UpdateJobFeatured = ({ job }) => {
 
   const toggled = job.featured
 
-
   const enabledButtonStyle = 'bg-green text-white'
   const disabledButtonStyle = 'bg-grey300'
 
@@ -34,6 +33,7 @@ export const UpdateJobFeatured = ({ job }) => {
             const { result } = await saveJob({ featured: !toggled, id: job.id })
 
             // TODO: Replace with react-query refetch
+            if(result) {
               window.location.reload()
             }
           }}>

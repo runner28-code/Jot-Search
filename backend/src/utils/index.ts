@@ -95,3 +95,4 @@ export const getFilterConditions = (
     nonStringFields: Set<string> = new Set()
   ) => {
     const conditions = filters.map((opt) => {
+      if (Array.isArray(opt.value)) {

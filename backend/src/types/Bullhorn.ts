@@ -260,3 +260,5 @@ export type Candidate = {
     status?: string;
     taxID?: string;
     taxState?: string;
+    timeZoneOffsetEST?: string;
+    tobaccoUser?: string;

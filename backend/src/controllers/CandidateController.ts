@@ -327,3 +327,5 @@ export class CandidateController {
       console.log(error);
       return { message: error };
     }
+  }
+
