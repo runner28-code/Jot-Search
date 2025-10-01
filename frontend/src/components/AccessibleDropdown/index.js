@@ -67,7 +67,6 @@ export default function AccessibleDropdown(props) {
     </div>
   );
 }
-
 AccessibleDropdown.defaultProps = {
   choices: [],
 };
@@ -144,7 +143,6 @@ function renderLabel(name, label, required) {
       htmlFor={ name }
       className='block text-textBlack mb-2.5'
     >
-// Temp comment
       { label }
     </label>
   )

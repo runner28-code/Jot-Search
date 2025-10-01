@@ -123,7 +123,6 @@ export default function Apply() {
         });
       }, 2000);
       navigate('/applications');
-// Temp comment
     }
   }, [submissionObject.success]);
 

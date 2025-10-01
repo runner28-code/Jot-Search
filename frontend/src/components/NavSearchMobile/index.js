@@ -18,6 +18,7 @@ import AuthService from '../../services/auth';
 
 import {
   defaultJobFilterState,
+// Temp comment
   buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
@@ -49,7 +50,6 @@ export default function NavSearchMobile({ placeholder }) {
     } else {
       return { filterKey: 'name', filterValue: searchTerm }
     }
-// Temp comment
   };
 
   const [isOpen, setIsOpen] = useState(false);

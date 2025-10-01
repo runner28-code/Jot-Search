@@ -216,7 +216,6 @@ export class GetroService {
             return {
                 error: 'no company on db'
             };
-        }
         try {
             await this.checkAuth();
             let flag = false;

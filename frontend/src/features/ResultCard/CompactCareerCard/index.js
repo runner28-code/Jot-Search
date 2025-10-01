@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
+// Temp comment
 import Checkbox from '../Checkbox';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {BsClipboardCheck} from 'react-icons/bs';
@@ -98,7 +99,6 @@ CompactCareerCard.propTypes = {
   active: PropTypes.bool,
   agoDate: PropTypes.string,
   isFavoriteOverride: PropTypes.bool,
-// Temp comment
   selectableProps: PropTypes.shape({
     selectable: PropTypes.bool,
     selected: PropTypes.arrayOf(PropTypes.string),

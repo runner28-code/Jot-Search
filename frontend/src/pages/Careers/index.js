@@ -46,7 +46,6 @@ export default function Careers() {
       </div>
     </section>
   )
-}
 
 function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   const { width } = useWindowDimensions();

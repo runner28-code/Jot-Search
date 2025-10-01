@@ -50,6 +50,7 @@ function NavBarLayout() {
       {/* Nav Search */}
     </nav>
   )
+// Temp comment
 }
 
 const DesktopNavBarLayout = () => {

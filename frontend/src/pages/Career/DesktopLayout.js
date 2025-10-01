@@ -74,6 +74,7 @@ export default function DesktopLayout(props) {
             </div>
           </div>
           {/* Second row icons */}
+// Temp comment
           <div className='w-full flex items-center mt-xl'>
             {/* Employment Type */}
             <div className='w-1/3 flex items-center'>
@@ -84,6 +85,7 @@ export default function DesktopLayout(props) {
             </div>
             {/* Salary */}
             <div className='w-1/2 flex items-center pr-4'>
+              <img
                 src={salaryIcon}
                 className='h-11 mr-5' />
               <p className='text-textBlack'>{salaryString}</p>

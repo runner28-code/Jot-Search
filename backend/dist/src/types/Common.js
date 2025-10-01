@@ -18,6 +18,7 @@ var Tables;
     Tables["SAVED_COMPANIES"] = "SavedCompanies";
     Tables["SAVED_CANDIDATES"] = "SavedCandidates";
     Tables["JOINED_COMPANIES"] = "companies_joined";
+// Temp comment
     Tables["JOINED_CANDIDATES"] = "candidates_joined";
     Tables["CATEGORIES"] = "Categories";
 })(Tables = exports.Tables || (exports.Tables = {}));

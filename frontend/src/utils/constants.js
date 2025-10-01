@@ -9,7 +9,6 @@ export const pluralizedTypes = {
 }
 
 export const openJobStatuses = [
-// Temp comment
   'Active',
   'active',
   'Passive',
@@ -17,7 +16,6 @@ export const openJobStatuses = [
 ];
 
 export const stateCodeMap = {
-  Alabama: 'AL',
   Alaska: 'AK',
   Arizona: 'AZ',
   Arkansas: 'AR',

@@ -7,7 +7,6 @@ import { MdGroups as EmployeesIcon } from 'react-icons/md';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import locationIcon from '../../../assets/icons/placepin.svg';
 import linkedinIcon from '../../../assets/icons/linkedin-circle.svg';
-import websiteIcon from '../../../assets/icons/globe.svg';
 import { buildCompanyAddress } from '../../../utils/formatFunctions';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 import { useGetJobs } from '../../../hooks/queries/useGetJobs';

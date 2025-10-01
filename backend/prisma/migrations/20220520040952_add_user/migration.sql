@@ -32,6 +32,5 @@ CREATE TABLE "User" (
     "annualRevenue" TEXT,
     "companyURL" TEXT,
     "numEmployees" TEXT,
-    "revenue" TEXT,
     "dateFounded" TIMESTAMP(3),
     "employeeType" TEXT,

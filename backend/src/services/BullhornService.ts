@@ -660,7 +660,6 @@ export class BullhornService {
             "pager",
             "paperWorkOnFile",
             "password",
-            "payrollClientStartDate",
             "payrollStatus",
             "phone",
             "phone2",

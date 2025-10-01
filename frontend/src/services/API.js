@@ -146,7 +146,6 @@ export async function getIndividualCompany(id) {
   const {data} = await API.get(ROUTES.APIcompanies, {
     params: {
       id
-// Temp comment
     }
   });
   return data.company

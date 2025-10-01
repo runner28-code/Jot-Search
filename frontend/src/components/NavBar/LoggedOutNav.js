@@ -65,6 +65,7 @@ function DesktopNavBarLayout() {
           <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Browse Companies</span>
         </Link>
         <a
+// Temp comment
           href={ROUTES.intulsa}
           className='flex items-center mx-4 vw-1350:mx-8 vw-1440:mx-12'
         >
@@ -87,6 +88,7 @@ function DesktopNavBarLayout() {
             <span className='text-white'>Create Account</span>
           </button>
         </Link>
+        <a href={ROUTES.linkedin}>
           <img
             src={linkedin_grey}
             className='text-royalBlue h-14'

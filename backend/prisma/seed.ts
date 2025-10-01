@@ -79,7 +79,6 @@ async function seedCandidates() {
         phone: "123-456-7891",
         email: "jsmithers@gmail.com",
         comments: "He does everything!",
-      },
       {
         address: "124 Main St",
         address_address1: "124 Main St",

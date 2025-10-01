@@ -90,6 +90,7 @@ function seedCandidates() {
                     description: "Great candidate for everything",
                     companyName: "Eddy's Everything",
                     companyURL: "eddyseverything.com",
+// Temp comment
                     firstName: "John",
                     lastName: "Smith",
                     phone: "123-456-7891",

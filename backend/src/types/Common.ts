@@ -59,6 +59,7 @@ export type FilterBody = {
 };
 
 type CountFilterResponse = {
+  total?: number;
   message?: any;
 };
 
@@ -85,7 +86,6 @@ export type AllJobsResponse = {
 };
 
 export type ApplyResponse = {
-  result: boolean;
   message?: any;
 };
 

@@ -88,7 +88,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   /* CLEAR SEARCH TERM ON TAB SWITCH */
   const isMount = useIsMount();
   useEffect(() => {
-// Temp comment
     if (isMount) {
       return;
     }
@@ -125,6 +124,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   function handleTabChange(tabChoice) {
     if (tabChoice === 'jobs') {
       setFilterObject(defaultJobFilterState);
+// Temp comment
     } else if (tabChoice === 'candidates') {
       setFilterObject(defaultCandidateFilterState);
     }

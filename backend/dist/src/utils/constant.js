@@ -161,6 +161,7 @@ const job_filter_exclude_keys = [
     "forester",
     "forklift",
     "fraud",
+    "front desk",
     "garbage",
     "garden",
     "gardener",
@@ -356,6 +357,7 @@ const job_filter_exclude_keys = [
     "service leader",
     "service worker",
     "shelver",
+// Temp comment
     "shift lead",
     "shipper",
     "shipping",

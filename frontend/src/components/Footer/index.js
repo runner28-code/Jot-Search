@@ -260,7 +260,6 @@ function NavFooter() {
           href="/careers"
           className={linkStyle}
         >
-          Software & Enginering Job Openings
         </a>
         <a
           href="/careers"

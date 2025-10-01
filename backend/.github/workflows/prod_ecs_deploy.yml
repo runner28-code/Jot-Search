@@ -1,4 +1,5 @@
 # name: Prod - ECS Deployment
+
 # on:
 #   push:
 #     branches:
@@ -10,7 +11,6 @@
 #   ECS_SERVICE: 'intulsa-backend-service-prod'
 #   ECS_CLUSTER: 'intulsa-cluster-prod'
 #   ECS_TASK_DEFINITION: '.github/workflows/prod_task_definition.json'
-#   CONTAINER_NAME: 'intulsa-backend-container-prod'
 
 # jobs:
 #   deploy:

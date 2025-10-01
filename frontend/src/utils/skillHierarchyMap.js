@@ -265,6 +265,7 @@ export const skills = [
   'Masters Degree',
   'MBA',
   'Mechanical Engineering',
+  'Media',
   'Media Relations',
   'MERN',
   'Microservices',
