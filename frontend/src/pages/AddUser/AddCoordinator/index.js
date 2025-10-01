@@ -61,7 +61,6 @@ export default function AddCoordinator() {
 
     // Add errors to state if there are any
     if (Object.keys(newErrors).length > 0) {
-      setSubmissionObject({
         ...submissionObject,
         errors: newErrors,
       });

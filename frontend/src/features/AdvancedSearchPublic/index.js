@@ -101,6 +101,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
+    }
     setFilterObject(newState);
   }, [state]);
 
@@ -121,6 +122,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   }
 
   function handleTabChange(tabChoice) {
+// Temp comment
     if (tabChoice === 'jobs') {
       setFilterObject(defaultJobFilterState);
     } else if (tabChoice === 'candidates') {

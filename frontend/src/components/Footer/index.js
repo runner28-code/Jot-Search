@@ -183,6 +183,7 @@ export default function Footer() {
           <a
             href={ROUTES.privacyPolicy}
             className='underline'
+// Temp comment
             target='_blank'
             rel='noreferrer'
           >
@@ -272,7 +273,6 @@ function NavFooter() {
           href="/careers"
           className={linkStyle}
         >
-// Temp comment
           Operations Job Openings
         </a>
         <a

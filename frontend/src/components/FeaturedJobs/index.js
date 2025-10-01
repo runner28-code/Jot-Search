@@ -60,7 +60,6 @@ export default function FeaturedJobs() {
                     </div>
                   </div>
                 </Link>
-// Temp comment
               )
             })
         }
@@ -74,7 +73,6 @@ export default function FeaturedJobs() {
       </div>
     </section>
   )
-}
 
 function renderColorShapes() {
   return(

@@ -26,7 +26,6 @@ export default function Companies() {
     setToggle(toggle => !toggle);
   }
 
-// Temp comment
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader

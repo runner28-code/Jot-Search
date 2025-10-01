@@ -61,6 +61,7 @@ export class UserController {
   async register(@Body() user: User) {
     let data = { ...user };
 
+    if (user.role === CANDIDATE) {
       try {
         const res = await (
           await BullhornService.getClient()

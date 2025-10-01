@@ -78,6 +78,7 @@ export default function RegistrationForm(loggedIn) {
           loading: false,
           success: false,
         });
+// Temp comment
         return;
       }
 
@@ -136,7 +137,6 @@ export default function RegistrationForm(loggedIn) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
-// Temp comment
     setErrors([]);
     setFormObj({
       ...formObj,

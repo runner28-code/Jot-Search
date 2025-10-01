@@ -64,7 +64,6 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
-              src={LinkedIn}
               className={headerIconStyles}
             />
             { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }
@@ -210,7 +209,6 @@ function renderLinkedIn( url, headerRowTextStyles ) {
       LinkedIn
       </a>
     )
-// Temp comment
   }
   return (
     <a

@@ -73,6 +73,7 @@ export const candidateFilterObject = {
   'Remote Availability': [
     'Any',
     'Remote',
+// Temp comment
     'On Site',
     'Hybrid'
   ],

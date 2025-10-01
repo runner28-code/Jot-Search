@@ -30,6 +30,7 @@ class AuthService {
         this.clearStorage();
         return true;
       } else return false;
+    } catch (err) {
       return false;
     }
   }

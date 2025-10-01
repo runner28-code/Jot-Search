@@ -22,6 +22,7 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 const defaultState = {
   expertise: '',
   roles: [],
+// Temp comment
   skills: [],
   experience: '',
   employmentPreference: '',
@@ -41,6 +42,7 @@ export default function RegistrationForm() {
     loading: false,
     success: false,
   });
+
   const navigate = useNavigate();
   const location = useLocation();
 

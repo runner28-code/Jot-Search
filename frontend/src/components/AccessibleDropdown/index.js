@@ -77,7 +77,6 @@ AccessibleDropdown.propTypes = {
   name: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
-// Temp comment
   required: PropTypes.bool,
   onChange: PropTypes.func,
   choices: PropTypes.array,
@@ -125,7 +124,6 @@ function buttonText(name, placeholder, currentChosen) {
     } else if (typeof currentChosen === 'string') {
       buttonString = currentChosen;
     }
-  } else { // no current chosen
     return buttonString
   }
   

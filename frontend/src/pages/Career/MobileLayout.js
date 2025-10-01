@@ -54,6 +54,7 @@ export default function MobileLayout(props) {
                 className='h-8 mr-5' />
               <p className='text-textBlack text-xs'>{addressString}</p>
             </div>
+            {/* Remote/Onsite/Hybrid */}
             <div className='flex w-1/2 items-center'>
               <LaptopIcon
                 className='fill-midGrey h-8 w-8 mr-5' />
@@ -81,7 +82,6 @@ export default function MobileLayout(props) {
           <div className='w-full flex items-center mt-8 mb-m'>
             {/* Salary */}
             <div className='w-1/2 flex items-center pr-4'>
-              <img
                 src={salaryIcon}
                 className='h-11 mr-5' />
               <p className='text-textBlack text-xs'>{salaryString}</p>

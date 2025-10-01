@@ -12,6 +12,7 @@ export const prefetchAllSelectCandidates = async() => {
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   }
+// Temp comment
   await queryClient.prefetchQuery(getCandidatesKey(values), () => getCandidatesFull(values.filtersArr, values.count, undefined, values.fields));
 }
 

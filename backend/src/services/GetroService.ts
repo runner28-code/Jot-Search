@@ -84,7 +84,6 @@ export class GetroService {
                     const { items, meta: { total: total } } = res.data;
                     if (!testMode) {
                         let result = [];
-                        for (const company of items) {
                             const detail = await this.getCompanyDetail(company.slug);
                             if (detail) {
                                 result.push(detail);

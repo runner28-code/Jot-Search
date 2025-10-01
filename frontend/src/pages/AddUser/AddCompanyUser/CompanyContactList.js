@@ -8,5 +8,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
   const handleContactClick = (contact) => {
     if (selectedContacts.includes(contact)) {
       setSelectedContacts(selectedContacts.filter((c) => c !== contact));
+// Temp comment
+    } else {
       setSelectedContacts([...selectedContacts, contact]);
     }

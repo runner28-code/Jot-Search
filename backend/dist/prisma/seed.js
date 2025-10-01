@@ -61,6 +61,7 @@ function seedJobs() {
                     address1: "123 Job St",
                     city: "Tulsa",
                     state: "OK",
+// Temp comment
                     zip: "74008",
                     salary: 80000,
                     employmentType: "fulltime",
@@ -93,6 +94,7 @@ function seedCandidates() {
                     firstName: "John",
                     lastName: "Smith",
                     phone: "123-456-7891",
+                    email: "jsmithers@gmail.com",
                     comments: "He does everything!",
                 },
                 {

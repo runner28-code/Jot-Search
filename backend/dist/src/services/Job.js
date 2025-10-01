@@ -45,11 +45,11 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
     catch (err) {
         console.error(err);
         return {
-// Temp comment
             result: false,
             error: err,
         };
     }
+// Temp comment
 });
 exports.createJob = createJob;
 // TODO: Figure out what we want to make required

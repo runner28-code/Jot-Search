@@ -90,7 +90,6 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
   return user;
 };
 
-export const parseBullhornJobToMain = (data: BhJob) => {
   const job: Job = {
     externalId: data.id,
     description: data.description,

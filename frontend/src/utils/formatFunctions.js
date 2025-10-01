@@ -2,6 +2,7 @@ import fixStringNulls from './fixStringNulls';
 import { experienceMap } from './dbFieldMapping';
 import { stateCodeMap } from './constants';
 
+// Temp comment
 export function formatCandidateData(candidateData) {
   const formattedData = fixStringNulls(candidateData);
 
@@ -120,6 +121,7 @@ export function formatYearsExperience(experienceYears, experience) {
   } else {
     return 'Years Experience N/A';
   }
+}
 
 export function buildCandidateAddress(candidateData, full = false) {
   const { address_address1, address_address2, address_city, address_state, address_zip } = candidateData;

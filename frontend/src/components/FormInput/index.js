@@ -13,6 +13,7 @@ const dropdownItemStyles = 'text-textBlack text-md pl-8 py-7 hover:bg-royalBlue 
 export default function FormInput(props) {
   const {
     type,
+    dropdownType,
     name,
     label,
     placeholder,
@@ -50,7 +51,6 @@ export default function FormInput(props) {
         disabled={disabled}
       />
     case 'single-select': // fall through
-    case 'multi-select':
       return <AccessibleDropdown
         type={type}
         name={name}

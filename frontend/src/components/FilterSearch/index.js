@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import searchIcon from '../../assets/images/search-icon.svg';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -9,6 +8,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
   }
 
   function handleKeydown(e) {
+// Temp comment
     if (e.keyCode === 13) {
       handleSearchClick();
     }

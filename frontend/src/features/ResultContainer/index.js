@@ -39,7 +39,6 @@ export default function ResultContainer(props) {
       return null;
     }
 
-    let pluralizedType = pluralizedTypes[type];
     const capitalizedType = pluralizedType.charAt(0).toUpperCase() + pluralizedType.slice(1);
 
     return <ViewAllLink

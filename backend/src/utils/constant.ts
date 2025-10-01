@@ -284,7 +284,6 @@ const job_filter_exclude_keys = [
   "personal trainer",
   "pet",
   "pharmacy",
-  "phlebotomist",
   "phone representative",
   "photographer",
   "photography",

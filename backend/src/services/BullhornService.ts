@@ -707,7 +707,6 @@ export class BullhornService {
             "Content-Type": "application/json;charset=UTF-8",
             Accept: "*/*",
           },
-        });
         if (res.status === 200) {
           const { data, count } = res.data;
           total = res.data.total;

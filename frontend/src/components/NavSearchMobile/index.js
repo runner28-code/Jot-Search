@@ -42,6 +42,7 @@ export default function NavSearchMobile({ placeholder }) {
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
+// Temp comment
     }
     else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
@@ -192,7 +193,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
         onClick={ handleClick }
       >
         {  !isOpen ? <RenderSearchIcon /> : <CloseIcon />}
-// Temp comment
       </div>
       <div className={ !isOpen ? 'hidden' : 'absolute top-[6.5rem] w-screen left-0 z-10 bg-sky-600 py-16' }>
         <div className='w-3/4 mx-auto  flex items-center'>

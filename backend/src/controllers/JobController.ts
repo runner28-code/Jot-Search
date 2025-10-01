@@ -26,7 +26,6 @@ import {
   JobSearchByFilterResponse,
   JobSearchByID,
   DataSource,
-  Tables,
   ApplyResponse,
   GetSavedJobsResponse,
   AdvancedFilterOption,
@@ -158,6 +157,7 @@ export class JobController {
 
       const [jobs, total] = await Promise.all([jobPromise, totalPromise]);
 
+      const companyURLs = jobs.filter(job => job.company?.companyURL)
         .map((job: any) => job.company.companyURL) as string[]
       const getroCompanies = await db.getroCompany.findMany({
         select: {
