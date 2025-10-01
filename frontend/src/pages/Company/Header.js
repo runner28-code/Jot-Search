@@ -46,7 +46,6 @@ function HeaderContent({ companyData }) {
               className={headerIconStyles}
             />
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
-// Temp comment
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <CareerIcon
@@ -211,6 +210,7 @@ function renderLinkedIn( url, headerRowTextStyles ) {
       LinkedIn
       </a>
     )
+// Temp comment
   }
   return (
     <a

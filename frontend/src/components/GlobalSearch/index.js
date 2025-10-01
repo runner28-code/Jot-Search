@@ -9,7 +9,6 @@ import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 
 import { getCompanies, getJobs, getCandidates } from '../../services/API';
-// Temp comment
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 export default function GlobalSearch({ placeholder }) {

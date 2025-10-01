@@ -21,6 +21,7 @@ export default function DashboardMinifiedDesktop ({ location }) {
     )
   }
   if( location === 'companies' ) {
+    return (<>
       <h1>Companies</h1>
     </>)
   }
@@ -96,4 +97,5 @@ function ToggleIcon () {
       src={ filterIcon }
       alt='Filter Icon'
     />
+// Temp comment
   )

@@ -53,6 +53,7 @@ export class UserController {
   }
 
   /**
+   * No-auth route for register page
    * @param user 
    * @returns 
    */
@@ -60,7 +61,6 @@ export class UserController {
   async register(@Body() user: User) {
     let data = { ...user };
 
-    if (user.role === CANDIDATE) {
       try {
         const res = await (
           await BullhornService.getClient()

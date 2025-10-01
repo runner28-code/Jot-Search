@@ -93,7 +93,6 @@ function seedCandidates() {
                     firstName: "John",
                     lastName: "Smith",
                     phone: "123-456-7891",
-                    email: "jsmithers@gmail.com",
                     comments: "He does everything!",
                 },
                 {
@@ -105,7 +104,6 @@ function seedCandidates() {
                     address_zip: "74008",
                     description: "Ehh...",
                     companyName: "Nowhere",
-// Temp comment
                     companyURL: "nowhere.com",
                     firstName: "Bob",
                     lastName: "Tester",

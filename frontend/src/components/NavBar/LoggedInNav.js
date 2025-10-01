@@ -102,7 +102,6 @@ const DropdownMenu = () => {
       setFirstRender(false);
     }
   }
-
   let chevronStyles = 'h-5 w-7 mx-8 ';
   if ( isOpen ) {
     chevronStyles += 'animate-spin';

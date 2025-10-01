@@ -41,7 +41,6 @@ export default function RegistrationForm() {
     loading: false,
     success: false,
   });
-
   const navigate = useNavigate();
   const location = useLocation();
 

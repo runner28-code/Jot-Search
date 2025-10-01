@@ -17,7 +17,6 @@ export default function FeaturedCompanies() {
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
-// Temp comment
   return(
     <div className='py-48 px-[20%] flex flex-col items-center'>
       { renderColorShapes() }
@@ -49,6 +48,7 @@ export default function FeaturedCompanies() {
 }
 function renderColorShapes() {
   return(
+// Temp comment
     <div className='relative w-full w-24 mb-8'>
       <div className='bg-pinkSquare w-12 h-12' />
       <div className='bg-orangeSquare bg-pink-500 top-[-20px] right-[5px] absolute w-6 h-6' />

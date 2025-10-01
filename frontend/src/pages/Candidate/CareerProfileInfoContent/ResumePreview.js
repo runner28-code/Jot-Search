@@ -2,7 +2,6 @@ import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
 import PropTypes from 'prop-types';
 import {
-// Temp comment
   FiChevronLeft as BackIcon,
   FiChevronRight as NextIcon,
 } from 'react-icons/fi';
@@ -37,7 +36,6 @@ const ResumePreview = ({ resumeUrl }) => {
               <button
                 disabled={prevButtonDisabled}
                 onClick={() => setPage(page - 1)}
-              >
                 <BackIcon className={prevButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>

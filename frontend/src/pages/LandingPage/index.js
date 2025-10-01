@@ -60,7 +60,6 @@ function renderSearch() {
         totalCompanies={totalCompaniesCount}
         loading={isLoading}
       />
-    </>)
   }
   return (
     <ExploreSearch

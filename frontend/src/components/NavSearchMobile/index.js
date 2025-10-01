@@ -21,6 +21,7 @@ import {
   buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
+
 const NUM_ITEMS_PER_TYPE = 5
 
 export default function NavSearchMobile({ placeholder }) {
@@ -191,6 +192,7 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
         onClick={ handleClick }
       >
         {  !isOpen ? <RenderSearchIcon /> : <CloseIcon />}
+// Temp comment
       </div>
       <div className={ !isOpen ? 'hidden' : 'absolute top-[6.5rem] w-screen left-0 z-10 bg-sky-600 py-16' }>
         <div className='w-3/4 mx-auto  flex items-center'>

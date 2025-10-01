@@ -8,13 +8,13 @@ const WIDE_MENU_ROLES = ['candidate', 'company'];
 const WIDE_MENU_WIDTH = 'w-110';
 
 export default function NavMenu() {
-// Temp comment
   const [menuOpen, setMenuOpen] = useState(false);
 
   function handleMenuClick() {
     setMenuOpen(menuOpen => !menuOpen);
   }
 
+// Temp comment
   function handleOptionClick(e) {
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {

@@ -105,7 +105,6 @@ export default function Candidate() {
       {/* My Preferences (Candidate Only) */}
       {isProfilePage &&
         <div className='px-4'>
-// Temp comment
           <div className='border rounded-2xl bg-white p-12'>
             <h3 className={ width >= 990 ? 'text-h5 font-medium mb-15 text-black70% font-spaceGrotesk' : 'text-[2.5rem] font-medium mb-15 text-black70% font-spaceGrotesk'}>My Preferences</h3>
             <PreferenceItem
@@ -124,6 +123,7 @@ export default function Candidate() {
               label={PREFERENCE_ITEMS.willReceiveNotification}
               onUpdate={handleCandidateUpdate} />
           </div>
+// Temp comment
         </div>
       }
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}

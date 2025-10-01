@@ -59,7 +59,6 @@ export default function DesktopLayout(props) {
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{addressString}</p>
             </div>
-            {/* Remote/Onsite/Hybrid */}
             <div className='w-1/3 flex items-center'>
               <LaptopIcon
                 className='fill-midGrey h-8 w-8 mr-5' />
@@ -205,5 +204,6 @@ function SkillsList({ items }) {
     <ul className='list-disc ml-8 mb-20'>
       {items.map((item, index) => (
         <li key={index}>{item}</li>
+      ))}
     </ul>
   )

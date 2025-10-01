@@ -29,7 +29,6 @@ CREATE TABLE "User" (
     "username" TEXT,
     "logo" TEXT,
     "companyName" TEXT,
-    "annualRevenue" TEXT,
     "companyURL" TEXT,
     "numEmployees" TEXT,
     "revenue" TEXT,

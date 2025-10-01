@@ -56,7 +56,6 @@ const job_filter_exclude_keys = [
     "cage",
     "call center",
     "camp",
-// Temp comment
     "campaign",
     "cancer",
     "canvasser",

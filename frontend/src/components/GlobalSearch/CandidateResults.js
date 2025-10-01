@@ -13,6 +13,7 @@ export default function CandidateResults({ candidates }) {
   return (
     <>
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Candidates</h6>
+// Temp comment
       { candidates.map(candidate => {
         return (
           <CandidateResult 

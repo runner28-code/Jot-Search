@@ -12,5 +12,6 @@ export default function ChoiceTag({ label, isActive, handleClick }) {
       onClick={() => handleClick(label)}
     >
       <span className='multi-select-choice text-sm'>{label}</span>
+// Temp comment
     </div>
   )

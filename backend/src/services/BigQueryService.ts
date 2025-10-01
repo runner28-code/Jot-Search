@@ -10,6 +10,7 @@ export class BigQueryService {
     public static getClient() {
         if (BigQueryService.client === null) {
             BigQueryService.client = new BigQuery();
+        }
         return BigQueryService.client;
     }
 

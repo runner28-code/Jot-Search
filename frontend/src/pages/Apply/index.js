@@ -115,6 +115,7 @@ export default function Apply() {
 
   useEffect(() => {
     if (submissionObject.success) {
+      setTimeout(() => {
         setSubmissionObject({
           loading: false,
           success: false,

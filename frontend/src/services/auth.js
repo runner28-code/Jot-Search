@@ -30,11 +30,11 @@ class AuthService {
         this.clearStorage();
         return true;
       } else return false;
-    } catch (err) {
       return false;
     }
   }
 
+  getToken() {
     return localStorage.getItem('id_token');
   }
 
