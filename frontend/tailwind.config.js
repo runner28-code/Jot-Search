@@ -207,3 +207,4 @@ module.exports = {
       xl: '2.4rem',
       'h6': '2.8rem',
       'h5': '3.2rem',
+      'h4': '3.6rem',

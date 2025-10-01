@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
+// Temp comment
   candidateChoices,
   companyChoices,
   coordinatorChoices,
@@ -12,7 +13,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
 
 const baseLinkStyles = 'flex items-center w-full h-20 pl-6 bg-white hover:bg-royalBlue text-royalBlue hover:text-white cursor-pointer ';
-// Temp comment
 const topLinkStyles = baseLinkStyles + 'rounded-tl-xl ';
 const bottomLinkStyles = baseLinkStyles + 'rounded-b-xl ';
 const spanStyles = 'text-xl font-bold font-spaceGrotesk ';

@@ -2,7 +2,6 @@ import fixStringNulls from './fixStringNulls';
 import { experienceMap } from './dbFieldMapping';
 import { stateCodeMap } from './constants';
 
-// Temp comment
 export function formatCandidateData(candidateData) {
   const formattedData = fixStringNulls(candidateData);
 
@@ -115,6 +114,7 @@ export function formatYearsExperience(experienceYears, experience) {
   } else if ( experience ) { // Legacy property
     // '1' is null (No experience selected)
     if ( experience === 1 ) {
+// Temp comment
       return 'Years Experience N/A';
     }
     return experienceMap[experience];

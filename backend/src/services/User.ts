@@ -498,3 +498,4 @@ export const getCoordinatorDashboardStats = async (days: number) => {
         compare: newApplicationsCompare || 0
       },
       companyRequestIntroductions: {
+        count: 0,

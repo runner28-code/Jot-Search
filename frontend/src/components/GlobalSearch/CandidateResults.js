@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { FaRegUserCircle as CandidateIcon } from 'react-icons/fa';
 import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
-// Temp comment
 
 export default function CandidateResults({ candidates }) {
   const role = AuthService.getUserRole();
@@ -21,6 +20,7 @@ export default function CandidateResults({ candidates }) {
             key={candidate.id} />
         )
       })}
+// Temp comment
       <hr className='w-full border-black50% mt-6 mb-2' />
     </>
   )

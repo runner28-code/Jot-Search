@@ -18,13 +18,13 @@ export default function Careers() {
   const loggedIn = AuthService.loggedIn();
   const [toggle, setToggle] = useState(false);
   const sectionStylesLog = 'vw-990:ml-10 vw-990:mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
-  const sectionStyles = '';
   const { width } = useWindowDimensions();
 
   function togglePassState() {
     setToggle(toggle => !toggle);
   }
   return (
+    <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
         loggedIn={loggedIn}
         userType={userType}

@@ -181,3 +181,4 @@ async function seedUsers() {
         avatar: "https://picsum.photos/200",
         email: "coordinator@aerovision.io",
         firstname: "Coordinator",
+        lastname: "Test",

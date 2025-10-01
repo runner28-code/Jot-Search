@@ -10,7 +10,6 @@ CREATE TABLE "UserTalentCollection" (
     "updated_at" TEXT,
     "declined_by" TEXT,
     "declined_at" TEXT,
-    "cover_letter" TEXT,
     "share_permission" BOOLEAN,
     "vouches_count" INTEGER,
     "questionnaire" TEXT,
@@ -56,3 +55,4 @@ CREATE TABLE "GetroMember" (
     "job_search_status" TEXT,
     "mentorship" BOOLEAN,
     "remote_work" BOOLEAN,
+    "require_sponsorship_visa" BOOLEAN,

@@ -179,3 +179,4 @@ export class UserController {
       const history = await db.history.findMany({
         where: {
           table: USER_TABLE,
+          recordId: authUser.id,

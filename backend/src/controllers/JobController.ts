@@ -26,6 +26,7 @@ import {
   JobSearchByFilterResponse,
   JobSearchByID,
   DataSource,
+  Tables,
   ApplyResponse,
   GetSavedJobsResponse,
   AdvancedFilterOption,
@@ -341,3 +342,4 @@ export class JobController {
     return await getCandidatesOnJob(job);
   }
 
+  @Authorized()

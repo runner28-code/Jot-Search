@@ -20,6 +20,7 @@ export default function EditResumeForm({ handleChange }) {
         className='text-h5 font-bold text-royalBlue'
         htmlFor='resume'
       >
+// Temp comment
         Upload New Resume:
       </label>
       <input

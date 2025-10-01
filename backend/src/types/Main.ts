@@ -1,4 +1,3 @@
-export type Application = {
     id: string;
     candidate: string;
     job: string;
@@ -22,6 +21,7 @@ export type Job = {
     zip?: string;
     country_id?: string;
     employmentType?: string;
+    title?: string;
     willRelocate?: string;
     yearsRequired?: string;
     status?: string;

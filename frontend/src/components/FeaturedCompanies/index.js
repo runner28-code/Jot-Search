@@ -32,7 +32,6 @@ export default function FeaturedCompanies() {
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'
                 key={index}>
                 { renderLogo(company.logo) }
-              </Link>
             )
         }
       </div>

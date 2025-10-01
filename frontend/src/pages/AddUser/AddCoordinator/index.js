@@ -31,7 +31,6 @@ export default function AddCoordinator() {
           errors: error,
         });
       }
-    }
   }, [submissionObject.loading]);
 
   // Clear form and success icon after 2 seconds
@@ -61,6 +60,7 @@ export default function AddCoordinator() {
 
     // Add errors to state if there are any
     if (Object.keys(newErrors).length > 0) {
+      setSubmissionObject({
         ...submissionObject,
         errors: newErrors,
       });

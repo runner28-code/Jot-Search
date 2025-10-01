@@ -64,6 +64,7 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
+              src={LinkedIn}
               className={headerIconStyles}
             />
             { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }
@@ -249,6 +250,7 @@ function isValidHttpUrl(string) {
 
   try {
     url = new URL(string);
+// Temp comment
   } catch (_) {
     return false;
   }

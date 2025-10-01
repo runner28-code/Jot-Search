@@ -16,7 +16,6 @@
 # jobs:
 #   deploy:
 #     name: Deploy
-#     runs-on: ubuntu-latest
 #     environment: prod
 
 #     steps:
@@ -45,3 +44,4 @@
 #         # be deployed to ECS.
 #         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
 #         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+#         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"

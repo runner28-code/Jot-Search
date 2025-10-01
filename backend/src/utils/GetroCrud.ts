@@ -1,4 +1,5 @@
 import db from "./db";
+
 export const saveCompanies = async (companies: any[]) => {
     const expludeFields = ['organization_careers_pages', 'managers', 'topics'];
     try {
@@ -95,3 +96,4 @@ export const saveJobs = async (jobs: any[]) => {
                 console.log(`Savng Getro Job with ID = ${job.id}`);
                 const existing = await db.getroJobInfo.findFirst({
 									where: {
+										id: job.id,

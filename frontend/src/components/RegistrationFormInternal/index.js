@@ -87,6 +87,7 @@ export default function RegistrationFormInternal(loggedIn) {
       if ( resumeResponse.result === false ) {
         setErrors(['resume']);
         setErrorBlock('There was an error uploading your resume.');
+// Temp comment
         setSubmissionObject({
           loading: false,
           success: false,
@@ -122,6 +123,7 @@ export default function RegistrationFormInternal(loggedIn) {
   }, [submissionObject.loading]);
 
   useEffect(async () => { // Clear state after a couple seconds
+    if ( submissionObject.success ) {
       setTimeout(() => {
         setFormObj(defaultState);
         setSubmissionObject({

@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+// Temp comment
 
 import AuthService from './auth';
 import { getCandidateById } from './API';
@@ -37,6 +38,7 @@ const mockCandidateData = [
   },
   {
     id: '53dde141-ac80-4eee-af38-5497ee1c85d5',
+    firstName: 'Rachel',
     lastName: 'McAlpin',
     linkedin_url: 'https://www.linkedin.com/',
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/rachel_2_fekvfg.webp', // Missing from Bullhorn Schema

@@ -53,7 +53,6 @@ export const saveCompanies = async (companies: any[]) => {
             externalID: company.id,
           },
         });
-        if (existing) {
           console.log(`Company with ID: ${company.id} exists`);
           return -1;
         }

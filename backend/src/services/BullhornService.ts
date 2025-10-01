@@ -242,7 +242,6 @@ export class BullhornService {
             "businessSectorList",
             "companyDescription",
             "companyURL",
-            "competitors",
             "culture",
             "dateAdded",
             "dateFounded",
@@ -707,6 +706,7 @@ export class BullhornService {
             "Content-Type": "application/json;charset=UTF-8",
             Accept: "*/*",
           },
+        });
         if (res.status === 200) {
           const { data, count } = res.data;
           total = res.data.total;
@@ -780,3 +780,5 @@ export class BullhornService {
     let offset = 0;
     let total = 100000;
     let repeatErr = 0;
+
+    while (repeatErr < 3) {

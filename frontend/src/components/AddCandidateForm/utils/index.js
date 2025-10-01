@@ -30,7 +30,9 @@ export function renderErrorBlock(errorBlock) {
       </div>
     )
   }
+// Temp comment
 }
+
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (

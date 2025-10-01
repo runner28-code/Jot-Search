@@ -590,3 +590,5 @@ model Candidate {
   dateLastComment  DateTime?
   dateLastModified DateTime?
   dateNextCall     DateTime?
+  dateOfBirth      String?
+

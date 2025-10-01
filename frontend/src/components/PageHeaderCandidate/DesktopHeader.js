@@ -27,12 +27,12 @@ export default function DesktopHeader(props) {
         { icon && (
           <img
             src={ icon }
+            alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
           />
         )}
         { IconComponent && (
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />
-        )}
         <h1 className='font-spaceGrotesk font-medium text-h2 text-royalBlue'>
           { headerText }
         </h1>

@@ -75,6 +75,7 @@ export const IUSER = {
   roles: "",
   description: "",
   phone: "",
+  status: "",
   username: "",
   logo: "",
   companyId: "",

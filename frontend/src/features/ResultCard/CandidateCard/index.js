@@ -28,7 +28,6 @@ export default function CandidateCard({ data, disableLink }) {
       key={data.id}
     >
       <LinkWrapper 
-// Temp comment
         link={link}
         disableLink={disableLink}
       >
@@ -197,7 +196,6 @@ function renderSkills(skillsString) {
 
 function SkillTag({ skill }) {
   return (
-    <span className='px-7 py-1 mb-3 inline-flex items-center justify-center bg-cyan text-white rounded-full'>
       {skill}
     </span>
   )

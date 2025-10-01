@@ -212,7 +212,6 @@ export class CandidateController {
           take: count || 100,
           orderBy: {
             firstname: "asc",
-          },
         });
         const candidateOnlyPromise = candidatesPromise = db.candidate.findMany({
           take: count || 100,
@@ -329,3 +328,4 @@ export class CandidateController {
     }
   }
 
+  @Authorized()

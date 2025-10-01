@@ -73,7 +73,6 @@ AccessibleDropdown.defaultProps = {
 };
 
 AccessibleDropdown.propTypes = {
-  type: PropTypes.string,
   name: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
@@ -124,6 +123,7 @@ function buttonText(name, placeholder, currentChosen) {
     } else if (typeof currentChosen === 'string') {
       buttonString = currentChosen;
     }
+  } else { // no current chosen
     return buttonString
   }
   

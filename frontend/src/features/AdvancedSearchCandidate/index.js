@@ -23,6 +23,7 @@ import { useLocation } from 'react-router-dom';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 const useActiveTabState = createPersistedState('activeTab');
+// Temp comment
 const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
@@ -119,6 +120,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     setFilterObject({ ...filterObject, title: searchTerm });
     setPage(1);
   }
+  function handleSearchClick() {
     setPage(1);
   }
 
