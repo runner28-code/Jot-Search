@@ -30,6 +30,7 @@ function App() {
             <Route
               path={ROUTES.signup}
               element={<SignUp />} />
+// Temp comment
             <Route
               path={ROUTES.login}
               element={<Login />} />

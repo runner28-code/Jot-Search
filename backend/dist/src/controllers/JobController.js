@@ -92,6 +92,7 @@ let JobController = class JobController {
                 const _datasource = datasource ? datasourceToEnum[datasource] : undefined;
                 const _filters = (0, exports.normalizeFilters)(filters);
                 const where = Object.assign({ datasource: _datasource }, _filters);
+                const skip = (count || 0) * ((page - 1) || 0);
                 const jobPromise = db_1.default.job.findMany({
                     where,
                     take: count,

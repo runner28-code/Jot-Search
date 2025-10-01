@@ -73,6 +73,7 @@ AccessibleDropdown.defaultProps = {
 };
 
 AccessibleDropdown.propTypes = {
+  type: PropTypes.string,
   name: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
@@ -143,6 +144,7 @@ function renderLabel(name, label, required) {
       htmlFor={ name }
       className='block text-textBlack mb-2.5'
     >
+// Temp comment
       { label }
     </label>
   )

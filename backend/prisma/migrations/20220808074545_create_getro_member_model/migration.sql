@@ -10,6 +10,7 @@ CREATE TABLE "UserTalentCollection" (
     "updated_at" TEXT,
     "declined_by" TEXT,
     "declined_at" TEXT,
+    "cover_letter" TEXT,
     "share_permission" BOOLEAN,
     "vouches_count" INTEGER,
     "questionnaire" TEXT,

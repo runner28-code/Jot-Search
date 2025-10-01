@@ -59,7 +59,6 @@ export type FilterBody = {
 };
 
 type CountFilterResponse = {
-  total?: number;
   message?: any;
 };
 

@@ -26,7 +26,6 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
         `;
         const options = {
             query: query,
-            location: 'US',
         };
         const [job] = yield BigQueryService_1.BigQueryService.getClient().createQueryJob(options);
         const [res] = yield job.getQueryResults();

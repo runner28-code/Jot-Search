@@ -4,6 +4,7 @@ import { registerUser } from '../../../services/API';
 import { validateInput } from '../utils';
 
 export default function AddCoordinator() {
+// Temp comment
   const [formObject, setFormObject] = useState(defaultState);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
@@ -31,6 +32,7 @@ export default function AddCoordinator() {
           errors: error,
         });
       }
+    }
   }, [submissionObject.loading]);
 
   // Clear form and success icon after 2 seconds

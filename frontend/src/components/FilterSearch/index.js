@@ -9,4 +9,5 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
 
   function handleKeydown(e) {
     if (e.keyCode === 13) {
+      handleSearchClick();
     }

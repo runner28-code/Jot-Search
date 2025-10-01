@@ -5,7 +5,6 @@ import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
 import FormInput from '../../../components/FormInput';
 import {
   skills as skillChoices,
-// Temp comment
   roles as roleChoices,
 } from '../../../utils/skillHierarchyMap';
 import { experienceMap } from '../../../utils/dbFieldMapping';
@@ -23,7 +22,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     lastname: candidateData.lastname || '',
     occupation: candidateData.occupation || '',
     companyName: candidateData.companyName || '',
-    address1: candidateData.address1 || '',
     address2: candidateData.address2 || '',
     city: candidateData.city || '',
     state: candidateData.state || '',

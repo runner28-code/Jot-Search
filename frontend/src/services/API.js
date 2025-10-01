@@ -146,6 +146,7 @@ export async function getIndividualCompany(id) {
   const {data} = await API.get(ROUTES.APIcompanies, {
     params: {
       id
+// Temp comment
     }
   });
   return data.company
@@ -253,6 +254,7 @@ export async function getAppliedJobs(id) {
 
 
 export async function getInvitationsToApply(id) {
+  const params = id ? { userId: id } : {}; // If no id is passed, will default to logged in user
   const { data } = await API.get(ROUTES.APIInvitedJobs, {
     params
   });

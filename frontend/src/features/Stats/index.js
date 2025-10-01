@@ -23,7 +23,6 @@ export default function Stats({ userType }) {
   function getDuration(timeFrame) {
     switch (timeFrame) {
       case 'Today':
-// Temp comment
         return 1;
       case 'Last 7 Days':
         return 7;
@@ -94,7 +93,6 @@ Stats.defaultProps = {
 
 Stats.propTypes = {
   userType: PropTypes.string.isRequired,
-}
 
 function StatCard({ stat, value }) {
   const deviationPercentage = Math.trunc(value.compare);

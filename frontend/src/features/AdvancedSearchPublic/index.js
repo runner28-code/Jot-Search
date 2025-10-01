@@ -76,6 +76,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
     } else {
+      return { filterKey: 'name', filterValue: filterObject.title }
     }
   };
 
@@ -87,6 +88,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   /* CLEAR SEARCH TERM ON TAB SWITCH */
   const isMount = useIsMount();
   useEffect(() => {
+// Temp comment
     if (isMount) {
       return;
     }

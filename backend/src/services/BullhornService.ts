@@ -242,6 +242,7 @@ export class BullhornService {
             "businessSectorList",
             "companyDescription",
             "companyURL",
+            "competitors",
             "culture",
             "dateAdded",
             "dateFounded",

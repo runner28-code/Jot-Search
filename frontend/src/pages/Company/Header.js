@@ -250,7 +250,6 @@ function isValidHttpUrl(string) {
 
   try {
     url = new URL(string);
-// Temp comment
   } catch (_) {
     return false;
   }

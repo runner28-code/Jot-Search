@@ -23,7 +23,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
       key={itemKey}
       className={containerStyles}
       onClick={handleItemClick}
-// Temp comment
     >
       <div className='flex items-center'>
         <img 

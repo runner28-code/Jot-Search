@@ -14,7 +14,6 @@ export default function Filters(props) {
     marginBottom
   } = props;
 
-// Temp comment
   let filterContainerStyles = 'flex flex-col justify-between gap-xxl-4 pb-9 vw-768:px-14 ';
   if (marginBottom) {
     filterContainerStyles += `mb-${marginBottom} `;
@@ -27,7 +26,6 @@ export default function Filters(props) {
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
     </div>
   )
-}
 
 Filters.propTypes = {
   handleFilterChange: PropTypes.func,

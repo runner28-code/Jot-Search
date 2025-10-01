@@ -132,6 +132,7 @@ export default function Candidate() {
             role={role}
             candidateData={candidateData}
             handleCandidateUpdate={handleCandidateUpdate} />
+        </div>
         {role === 'coordinator' && 
           <InviteToCareer candidate={candidateData} />
         }

@@ -5,6 +5,7 @@ export const blog = '/blog';
 export const about = '/about';
 export const login = '/login';
 export const logout = '/logout';
+export const profile = '/profile';
 export const apply = '/apply';
 export const favorites = '/favorites';
 export const signup = '/signup';
@@ -44,7 +45,6 @@ export const exploreCareers = 'https://www.careers.intulsa.com/?utm_source=talen
 export const joinTalentNetwork = 'https://www.jobs.intulsa.com/talent-network?utm_source=talentwebsite&amp;utm_medium=web&amp;utm_campaign=footer';
 export const intulsa = 'https://www.intulsa.com';
 export const tulsaRemote = 'https://www.tulsaremote.com';
-export const campusTulsa = 'https://www.campustulsa.com';
 export const talentInTulsa = 'https://www.talent.intulsa.com/';
 export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';
 

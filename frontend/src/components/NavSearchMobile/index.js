@@ -45,11 +45,11 @@ export default function NavSearchMobile({ placeholder }) {
     }
     else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
-// Temp comment
       return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: searchTerm }
     }
+// Temp comment
   };
 
   const [isOpen, setIsOpen] = useState(false);

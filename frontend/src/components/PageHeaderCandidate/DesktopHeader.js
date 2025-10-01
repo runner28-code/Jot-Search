@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
+// Temp comment
   const {
     headerText,
     icon,
@@ -33,6 +34,7 @@ export default function DesktopHeader(props) {
         )}
         { IconComponent && (
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />
+        )}
         <h1 className='font-spaceGrotesk font-medium text-h2 text-royalBlue'>
           { headerText }
         </h1>

@@ -87,7 +87,6 @@ export default function RegistrationFormInternal(loggedIn) {
       if ( resumeResponse.result === false ) {
         setErrors(['resume']);
         setErrorBlock('There was an error uploading your resume.');
-// Temp comment
         setSubmissionObject({
           loading: false,
           success: false,

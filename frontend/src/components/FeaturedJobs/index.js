@@ -90,6 +90,7 @@ function RenderImage({image}) {
   const iconStyles = 'w-full h-full ';
   if( !image ) {
     return(<>
+// Temp comment
       <div className={ containerStyles + 'outline outline-1 outline-neutral-300 p-8' }>
         <CareerIcon className={iconStyles + ' fill-royalBlue object-fill'} />
       </div>

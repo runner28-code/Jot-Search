@@ -32,6 +32,7 @@ export default function Auth() {
         <Route
           path={ROUTES.logout}
           element={<Logout />} />
+// Temp comment
         <Route
           path={`${ROUTES.candidates}/:id`}
           element={<Candidate />} />
@@ -50,7 +51,6 @@ export default function Auth() {
         <Route
           path={ROUTES.addUser}
           element={<AddUser />} />
-// Temp comment
       </Routes>
     </div>
   )

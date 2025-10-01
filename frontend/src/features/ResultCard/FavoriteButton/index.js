@@ -72,6 +72,7 @@ function getIdByType(type, data) {
     default:
       return '';
   }
+}
 
 function getItemsByType(type) {
   switch (type) {
