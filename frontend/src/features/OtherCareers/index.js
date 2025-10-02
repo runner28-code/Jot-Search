@@ -3,7 +3,6 @@ import { useState } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CareerCard from '../ResultCard/CareerCard';
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
-// Temp comment
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 
 const ITEMS_PER_PAGE = 5;
@@ -19,7 +18,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
       key: 'companyId',
       value: companyId
     }
-  ];
 
   const { careers, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
   const prefetchFunc = (page) => {

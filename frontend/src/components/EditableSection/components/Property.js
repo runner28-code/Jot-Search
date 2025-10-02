@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import { startCase } from 'lodash';
 
 export default function Property({name, value}) {
+// Temp comment
   const capitalizedName = startCase(name);
   const labelString = `${capitalizedName}:`;
   return (
-// Temp comment
     <div className='flex text-xl text-black70% mb-2' >
       <p className='font-bold'>
         {labelString}

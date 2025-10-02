@@ -19,7 +19,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   if ( !isFavoriteOverride && (invalidType || isInactiveJob) ) {
     return null;
   }
-// Temp comment
 
   const item_id = getIdByType(type, data);
   const savedItems = getItemsByType(type);
@@ -66,6 +65,7 @@ function getIdByType(type, data) {
   switch (type) {
     case 'job':
       return data.id;
+// Temp comment
     case 'company':
       return data.id;
     case 'candidate':

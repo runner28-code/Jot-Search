@@ -76,4 +76,5 @@
                 {
                     "name": "BULLHORN_API_USERNAME", 
                     "value": "{SECRET_BULLHORN_API_USERNAME}"
+                },
                 {

@@ -69,6 +69,7 @@ export function formatCandidateName(firstName, lastName) {
   if ( !firstName ) return lastName;
   if ( !lastName ) return firstName;
   return `${firstName} ${lastName}`;
+// Temp comment
 }
 
 export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
@@ -129,6 +130,7 @@ export function buildCandidateAddress(candidateData, full = false) {
   if ( full === true ) {
     addressArr = [address_address1, address_address2, address_city, address_state, address_zip];
   } else {
+    addressArr = [address_city, address_state];
   }
 
   let address = '';

@@ -28,7 +28,6 @@ export default function FeaturedJobs() {
 
   const filtersArr = [
     {
-// Temp comment
       key: 'featured',
       value: true
     }
@@ -76,6 +75,7 @@ export default function FeaturedJobs() {
   )
 }
 
+// Temp comment
 function renderColorShapes() {
   return(
     <div className='relative w-24 mb-8'>

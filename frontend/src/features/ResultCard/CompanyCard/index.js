@@ -89,7 +89,6 @@ export default function CompanyCard({ data }) {
               >
                 Company Website
               </a>
-            </div>
           </div>
         </div>
       </Link>

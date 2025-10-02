@@ -36,7 +36,6 @@ export default function DesktopHeader(props) {
         )}
         <h1 className='font-spaceGrotesk font-medium text-h2 text-royalBlue'>
           { headerText }
-        </h1>
         { dataSource && (
           <SourceIdentifier type={dataSource} />
         )}

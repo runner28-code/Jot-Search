@@ -42,7 +42,6 @@ export default function PendingApplications () {
       <h2 className='font-spaceGrotesk text-h5 text-white mb-8 text-center'>My Pending Applications</h2>
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
-// Temp comment
           appliedJobsObject.loading ?
             <LoadingSpinner />
             :
@@ -71,6 +70,7 @@ export default function PendingApplications () {
               Browse All
           </Link>
         </div>
+// Temp comment
       </div>
       <div className='pt-24'>
         <Link

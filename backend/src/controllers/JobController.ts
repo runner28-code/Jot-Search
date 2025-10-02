@@ -256,6 +256,7 @@ export class JobController {
   ) {
     const _filters = filters.filter((filter) =>
       ALLOWED_GETRO_FILTERS.has(filter.key as keyof Job)
+    );
 
     const filteredFields = fields?.filter((field) =>
       ALLOWED_GETRO_FILTERS.has(field as keyof Job)
@@ -288,7 +289,6 @@ export class JobController {
 
       const _specialHandlers = {
         clientCorporationID: (key: string, value: string) =>
-          `${key} = REPLACE("${value}", "bl-", "")`,
       };
       const _filters = filters.map((filter) => ({
         key: JobFilter.bullhorn[filter.key],

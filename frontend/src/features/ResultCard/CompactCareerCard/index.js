@@ -77,7 +77,6 @@ CompactCareerCard.propTypes = {
     state: PropTypes.string,
     company: PropTypes.shape({
       name: PropTypes.string,
-// Temp comment
       logo: PropTypes.string
     }),
     applications: PropTypes.arrayOf(PropTypes.shape({

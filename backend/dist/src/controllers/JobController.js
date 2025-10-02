@@ -178,7 +178,6 @@ let JobController = class JobController {
             const dataset = Common_1.DATASET_GETRO;
             const table = Common_1.Tables.JOBS;
             return (yield BigQueryService_1.BigQueryService.selectQuery(dataset, table, _fields, count, condition));
-        });
     }
     getJobsByFilterFromBullhorn(filters, fields, page, count, operator = "OR") {
         return __awaiter(this, void 0, void 0, function* () {

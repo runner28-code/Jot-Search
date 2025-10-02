@@ -9,7 +9,6 @@ exports.IUSER = {
     gender: "",
     email: "",
     password: "",
-// Temp comment
     role: "",
     address1: "",
     address2: "",
@@ -26,7 +25,6 @@ exports.IUSER = {
     referredBy: "",
     roles: "",
     description: "",
-    phone: "",
     status: "",
     username: "",
     logo: "",

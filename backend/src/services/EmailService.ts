@@ -62,7 +62,6 @@ export const sendCandidatesToEmployers = async (candidates: string[], employers_
     console.log(JSON.stringify(error.response.body));
     throw error;
   }
-}
 
 export const sendNewUserNotification = async (to: string, name: string) => {
   try {

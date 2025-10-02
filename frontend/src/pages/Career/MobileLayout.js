@@ -8,6 +8,7 @@ import clockIcon from '../../assets/icons/clock.svg';
 import postingAgeIcon from '../../assets/icons/calendar.svg';
 import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
+// Temp comment
 import { apply as applyRoute } from '../../routes';
 import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
@@ -32,7 +33,6 @@ export default function MobileLayout(props) {
       {/* Header */}
       <div className='flex flex-row flex-wrap items-start'>
         <div className='basis-2/6'>
-// Temp comment
           { renderLogo(careerData.company_logo) }
           <FavoriteButton
             type='job'

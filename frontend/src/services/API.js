@@ -192,7 +192,6 @@ export async function getSavedCompanies(id, count = null, page = null) {
   });
   return normalizeData(data.companies);
 }
-
 //* JOBS
 /**
  * example filtersArr:

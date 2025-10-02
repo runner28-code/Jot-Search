@@ -9,6 +9,7 @@ const dropdownFiltersCoord = [
   'Remote Availability',
   'Employment Type',
   'Status'
+// Temp comment
 ];
 
 const dropdownFilters = [
@@ -64,6 +65,7 @@ export default function CandidateFilterLayout(props) {
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
       </div>
       <div className='flex flex-wrap gap-xxl-4'>
+        { renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange) }
       </div>
       <div className='flex justify-between items-center gap-[65px]'>
         <FilterSearch

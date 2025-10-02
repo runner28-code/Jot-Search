@@ -193,7 +193,6 @@ function renderAddress( city, state ) {
       <span>Tulsa, OK</span>
     )
   } else {
-// Temp comment
     return (
       <span>{city}, {state}</span>
     )

@@ -63,6 +63,7 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
       role="switch"
       aria-checked={toggled}
       onClick={handleToggle}
+    >
       <span className="sr-only">{label}</span>
       <span 
         aria-hidden="true" 
