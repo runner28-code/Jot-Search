@@ -49,7 +49,6 @@ CREATE TABLE "Company" (
     "linkedinProfileName" TEXT,
     "notes" TEXT,
     "numEmployees" INTEGER,
-    "numOffices" INTEGER,
     "ownership" TEXT,
     "phone" TEXT,
     "revuenue" TEXT,

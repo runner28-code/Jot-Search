@@ -32,6 +32,7 @@ export default function MobileLayout(props) {
       {/* Header */}
       <div className='flex flex-row flex-wrap items-start'>
         <div className='basis-2/6'>
+// Temp comment
           { renderLogo(careerData.company_logo) }
           <FavoriteButton
             type='job'
@@ -92,7 +93,6 @@ export default function MobileLayout(props) {
 
         {/* Coordinator Status */}
         {
-// Temp comment
           role === 'coordinator' && (
             <div className='flex flex-col space-y-8'>
               <UpdateJobStatus job={careerData} />

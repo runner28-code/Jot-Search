@@ -5,6 +5,5 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: intulsa_frontend
     container_name: intulsa_frontend
     ports:

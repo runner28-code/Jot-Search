@@ -67,6 +67,7 @@ export default function AccessibleDropdown(props) {
     </div>
   );
 }
+
 AccessibleDropdown.defaultProps = {
   choices: [],
 };
@@ -115,6 +116,7 @@ function buttonText(name, placeholder, currentChosen) {
     return experience ? experience + ' years' : placeholder;
   }
 
+// Temp comment
   let buttonString = placeholder;
   
   if (currentChosen) {

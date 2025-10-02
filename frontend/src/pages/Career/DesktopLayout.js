@@ -74,7 +74,6 @@ export default function DesktopLayout(props) {
             </div>
           </div>
           {/* Second row icons */}
-// Temp comment
           <div className='w-full flex items-center mt-xl'>
             {/* Employment Type */}
             <div className='w-1/3 flex items-center'>
@@ -162,7 +161,6 @@ function renderAboutCompanySection(careerData, companyName) {
 function renderDescription(role, navigate, companyName, skillList, careerData) {
 
   if (role === 'coordinator') {
-    return null;
   }
   return (<>
     <section className='bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4'>

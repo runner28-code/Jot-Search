@@ -76,7 +76,6 @@ function seedJobs() {
         });
     });
 }
-function seedCandidates() {
     return __awaiter(this, void 0, void 0, function* () {
         yield db_1.default.candidate.createMany({
             data: [
@@ -90,7 +89,6 @@ function seedCandidates() {
                     description: "Great candidate for everything",
                     companyName: "Eddy's Everything",
                     companyURL: "eddyseverything.com",
-// Temp comment
                     firstName: "John",
                     lastName: "Smith",
                     phone: "123-456-7891",

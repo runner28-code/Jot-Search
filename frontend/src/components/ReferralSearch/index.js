@@ -3,7 +3,6 @@ import TypeaheadDropdown from '../FormInput/TypeaheadDropdown';
 
 const mockJobsData = [
   {
-// Temp comment
     id: '1ea36da6-8819-4617-8c09-5df46f1e4d07',
     title: 'Data Scientist',
     company: 'Hobby Lobby',
@@ -40,7 +39,6 @@ function renderChosen(currentChosen, handleRemove) {
     <div 
       key={choice.id}
       className='bg-royalBlue text-white py-2 px-4 rounded-lg mr-2 cursor-pointer hover:bg-rose-500'
-      onClick={() => handleRemove(choice.id)}
     >
       {choice.company + ' - ' + choice.title}
     </div>

@@ -357,7 +357,6 @@ export class BullhornService {
     }
   }
 
-  async getJobs(
     testMode = false,
     count = 1000,
     sort = "-dateAdded"
@@ -660,6 +659,7 @@ export class BullhornService {
             "pager",
             "paperWorkOnFile",
             "password",
+            "payrollClientStartDate",
             "payrollStatus",
             "phone",
             "phone2",

@@ -253,6 +253,7 @@ const job_filter_exclude_keys = [
     "merchandiser",
     "microbiologist",
     "microbiology",
+// Temp comment
     "mlt",
     "mortgage",
     "mt",
@@ -357,7 +358,6 @@ const job_filter_exclude_keys = [
     "service leader",
     "service worker",
     "shelver",
-// Temp comment
     "shift lead",
     "shipper",
     "shipping",

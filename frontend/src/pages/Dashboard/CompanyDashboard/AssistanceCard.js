@@ -11,7 +11,6 @@ export default function AssistanceCard() {
           className='w-auto h-auto'
         />
         <h5 className='text-h5 font-medium font-spaceGrotesk text-charcoal ml-8'>InTulsa assistance</h5>
-// Temp comment
       </div>
       {/* Body */}
       <div className='text-black70%'>
@@ -32,5 +31,6 @@ export default function AssistanceCard() {
       >
         Make a request
       </a>
+// Temp comment
     </div>
   )

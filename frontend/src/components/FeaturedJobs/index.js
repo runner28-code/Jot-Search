@@ -28,6 +28,7 @@ export default function FeaturedJobs() {
 
   const filtersArr = [
     {
+// Temp comment
       key: 'featured',
       value: true
     }
@@ -102,5 +103,4 @@ function RenderImage({image}) {
         className={iconStyles}
       />
     </div>
-// Temp comment
   )

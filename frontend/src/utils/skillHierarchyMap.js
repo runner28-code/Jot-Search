@@ -164,7 +164,6 @@ export const skills = [
   'Data Modeling',
   'Data Transformation',
   'Data Visualization',
-  'Database Design',
   'DEI',
   'Demand Planning',
   'Design',

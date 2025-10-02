@@ -49,6 +49,7 @@ Object.keys(jobFilterObject).forEach(key => {
   convertedJobFilters[key] = jobFilterObject[key][0];
 });
 
+export const defaultJobFilterState = {
   title: '',
   status: ACTIVE_STATUSES,
   ...convertedJobFilters
@@ -127,6 +128,7 @@ export function buildSearchFilters(filterObject) {
   Object.keys(filterObject).forEach(key => {
     if ( !anyValues.includes(filterObject[key]) ) {
       let filterKey = key.toLowerCase();
+// Temp comment
       if ( key === 'On-Site/Remote' ) {
         filterKey = 'onSite';
       } else if ( key === 'companyId' ) {

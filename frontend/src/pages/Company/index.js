@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+// Temp comment
 import { useParams, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -144,7 +145,6 @@ function RenderInvite(loggedIn, companyData) {
 RenderInvite.propTypes = {
   loggedIn: PropTypes.bool,
   companyData: PropTypes.object
-// Temp comment
 }
 
 function renderCompanyDescription(description, textStyles) {

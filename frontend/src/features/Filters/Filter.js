@@ -13,7 +13,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const formattedFilterType = filterType === 'On-Site/Remote' ? filterType : startCase(filterType);
   const initialValue = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
   const [showDropdown, setShowDropdown] = useState(false);
-  const [selected, setSelected] = useState(initialValue);
   const [listening, setListening] = useState(false);
 
   const menuRef = useRef(null);

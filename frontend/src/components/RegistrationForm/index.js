@@ -148,7 +148,6 @@ export default function RegistrationForm(loggedIn) {
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
-// Temp comment
       loading: true,
       success: false,
     });

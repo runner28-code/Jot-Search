@@ -86,6 +86,7 @@ export type AllJobsResponse = {
 };
 
 export type ApplyResponse = {
+  result: boolean;
   message?: any;
 };
 
@@ -100,7 +101,6 @@ export type GetSavedJobsResponse = {
 };
 
 export type GetCandidatesOnJobResponse = {
-  candidates?: any[];
   result: boolean;
   message?: any;
 };

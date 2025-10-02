@@ -40,7 +40,6 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
   const toggleOnToggleStyles = 'translate-x-12'
   const toggleOffToggleStyles = 'translate-x-0'
 
-// Temp comment
   const toggleStyles = toggled ? toggleOnToggleStyles : toggleOffToggleStyles
 
   const handleToggle = () => {
@@ -64,7 +63,6 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
       role="switch"
       aria-checked={toggled}
       onClick={handleToggle}
-    >
       <span className="sr-only">{label}</span>
       <span 
         aria-hidden="true" 

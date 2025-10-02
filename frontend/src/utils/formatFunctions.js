@@ -25,6 +25,7 @@ export function formatCandidateData(candidateData) {
   formattedData.comments = candidateData.comments || 'No comments provided';
   formattedData.phone = formatPhoneNumber(candidateData.phone);
   formattedData.expertise = candidateData.expertise || 'No Expertise Chosen';
+  formattedData.skills = candidateData.skills || 'No Skills Chosen';
   // If Candidate experience is a string, no need to map it
   if ( candidateData.experience && !isNaN(candidateData.experience) ) {
     formattedData.experience = candidateData.experience.toString();
@@ -128,7 +129,6 @@ export function buildCandidateAddress(candidateData, full = false) {
   if ( full === true ) {
     addressArr = [address_address1, address_address2, address_city, address_state, address_zip];
   } else {
-    addressArr = [address_city, address_state];
   }
 
   let address = '';

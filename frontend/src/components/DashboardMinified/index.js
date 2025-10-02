@@ -35,6 +35,7 @@ DashboardMinified.propTypes = {
 }
 
 function LinkSwap ({ location, loggedIn }) {
+
   if(location === 'career') {
     return (
       <Link
@@ -51,5 +52,4 @@ function LinkSwap ({ location, loggedIn }) {
         to={ROUTES.companies}>
         <span className='underline'>Back</span>
       </Link>
-    )
   }

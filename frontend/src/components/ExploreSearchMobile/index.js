@@ -14,6 +14,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   });
 
   function handleSearchClick() {
+// Temp comment
     const params = {};
     if (filterState.title) {
       params.title = filterState.title;
@@ -29,7 +30,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
 
   function handleFilterChange(name, value) {
     setFilterState({
-// Temp comment
       ...filterState,
       [name]: value,
     });

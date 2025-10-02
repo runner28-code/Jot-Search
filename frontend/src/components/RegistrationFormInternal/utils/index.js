@@ -13,6 +13,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   }
   if ( submissionObject.success ) {
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
+  }
   return (
     <button
       className={buttonStyles}
@@ -47,7 +48,6 @@ export function renderHeader(addType) {
           <span className='text-ml text-darkGray leading-loose mx-4'>
             Already have an account?
           </span>
-          <Link
             to={ROUTES.login}
             className='text-ml text-royalBlue leading-loose underline mx-4'
           >

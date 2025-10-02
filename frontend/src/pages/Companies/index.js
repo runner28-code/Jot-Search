@@ -31,7 +31,6 @@ export default function Companies() {
       <RenderHeader
         loggedIn={loggedIn}
         userType={userType}
-// Temp comment
         togglePassState={togglePassState}
         toggle={toggle}
       />
@@ -70,6 +69,7 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
       <PageHeader
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : SearchIcon}
+// Temp comment
         backButton={true}
       />
     </>)
