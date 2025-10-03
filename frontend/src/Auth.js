@@ -1,4 +1,3 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
 import {
   ActiveCareers,
   AddUser,
@@ -27,7 +26,6 @@ export default function Auth() {
           element={<Dashboard />} 
         />
         <Route
-// Temp comment
           path={ROUTES.profile}
           element={<Profile />} />
         <Route

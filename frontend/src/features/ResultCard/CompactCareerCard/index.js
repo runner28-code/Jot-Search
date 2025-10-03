@@ -44,6 +44,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
                 <p className='text-midGrey'>Applied</p>
                 <p className='text-midGrey text-xs'>{applicationAge}</p>
               </div>
+              :
               <div>
                 <p className='text-midGrey'>Posting Age</p>
                 <p className='text-midGrey text-xs'>{postingAge}</p>
@@ -73,7 +74,6 @@ CompactCareerCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     city: PropTypes.string,
-    state: PropTypes.string,
     company: PropTypes.shape({
       name: PropTypes.string,
       logo: PropTypes.string

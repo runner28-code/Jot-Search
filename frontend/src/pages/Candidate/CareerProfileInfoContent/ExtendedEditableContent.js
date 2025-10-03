@@ -59,3 +59,4 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   }
 
   const handleCancel = () => {
+    setEditMode(false);

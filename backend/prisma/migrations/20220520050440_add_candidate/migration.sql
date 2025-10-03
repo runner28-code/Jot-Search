@@ -28,7 +28,6 @@ CREATE TABLE "Candidate" (
     "employeeType" TEXT,
     "employeePreference" TEXT,
     "ethnicity" TEXT,
-    "experience" TEXT,
     "externalID" TEXT,
     "fax" TEXT,
     "fax2" TEXT,

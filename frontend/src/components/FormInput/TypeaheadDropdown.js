@@ -95,6 +95,7 @@ TypeaheadDropdown.propTypes = {
   inputHeight: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
 }
+
 function renderLabel(name, label, required) {
   if ( !label ) {
     return null;

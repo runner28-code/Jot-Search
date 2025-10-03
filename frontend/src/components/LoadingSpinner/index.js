@@ -6,7 +6,7 @@ export default function LoadingSpinner({ height = '100', width = '100', color = 
   viewportCentered ? containerStyles += 'h-screen w-screen' : containerStyles += 'h-full w-full';
   
   return (
-      <LoaderSpinner
+    <div className={containerStyles}>
         height={height}
         width={width}
         color={color}

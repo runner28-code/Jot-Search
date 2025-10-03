@@ -110,7 +110,6 @@ export default function Candidate() {
             <PreferenceItem
               toggled={!!candidateData.activelyLooking}
               fieldName='activelyLooking'
-// Temp comment
               label={PREFERENCE_ITEMS.activelyLooking}
               onUpdate={handleCandidateUpdate} />
             <PreferenceItem
@@ -149,4 +148,3 @@ export default function Candidate() {
         />
       </div>
     </div>
-  )

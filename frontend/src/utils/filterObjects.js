@@ -2,7 +2,6 @@ const expertiseObjectArr = JSON.parse(localStorage.getItem('categories')) || [];
 const expertises = expertiseObjectArr.map(expertise => expertise.name).sort();
 import { experienceMap, educationChoices } from './dbFieldMapping';
 import { skills } from './skillHierarchyMap';
-const experienceValues = Object.values(experienceMap).filter(val => val !== null);
 
 /* JOB FILTER UTILS */
 export const jobFilterObject = {
@@ -75,6 +74,7 @@ export const candidateFilterObject = {
     'Remote',
     'On Site',
     'Hybrid'
+  ],
   'Employment Type': [
     'Any',
     'Full-Time',

@@ -60,7 +60,6 @@ export default function GlobalSearch({ placeholder }) {
       candidates: CandidateResults && CandidateResults.length ? CandidateResults : [],
       loading: false,
     };
-// Temp comment
 
     setResults( resultsObject );
   }

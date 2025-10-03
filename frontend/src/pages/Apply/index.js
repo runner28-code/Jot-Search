@@ -51,6 +51,7 @@ export default function Apply() {
     errorMessage: ''
   });
 
+// Temp comment
   useEffect(async () => {
     if ( !isLoggedIn ) {
       const careerData = await getJobById(jobId);

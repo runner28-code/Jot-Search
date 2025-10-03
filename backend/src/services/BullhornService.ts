@@ -271,7 +271,6 @@ export class BullhornService {
           headers: {
             "Content-Type": "application/json",
             Accept: "*/*",
-          },
         });
         if (res.status === 200) {
           const { data, count } = res.data;

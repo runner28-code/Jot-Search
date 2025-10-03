@@ -107,5 +107,4 @@ const parseBullhornJobToMain = (data) => {
         type: data.type,
         isDeleted: data.isDeleted,
         postedAt: data.date_added,
-    };
     return job;

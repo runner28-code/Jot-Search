@@ -58,6 +58,7 @@ export default function Footer() {
       </div>
       <NavFooterMobile />
       <div
+        id='footer'
         className='flex flex-col'
       >
         { width >= 990 ? <SocialStyles /> : <SocialStylesMobile />}
@@ -379,6 +380,7 @@ function NavFooterMobile() {
         <a
           href="/careers"
           className={linkStyle}
+// Temp comment
         >
           Finance Job Openings
         </a>

@@ -6,7 +6,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
 };
 var __rest = (this && this.__rest) || function (s, e) {
     var t = {};
@@ -24,7 +23,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getJobsList = exports.updateJob = exports.inferDatasetById = exports.getAppliedJobsByUser = exports.createJob = void 0;
-// Temp comment
 const Common_1 = require("../types/Common");
 const Job_1 = require("../types/Job");
 const db_1 = __importDefault(require("../utils/db"));

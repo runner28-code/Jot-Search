@@ -19,6 +19,7 @@ export default function TextInput({type, name, placeholder, label, value, requir
 }
 
 TextInput.propTypes = {
+  type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   label: PropTypes.string,
@@ -34,7 +35,6 @@ function renderLabel( label, required, name ) {
     return null;
   }
 
-  const labelString = label && required ? `${label} *` : label;
   return (
     <label
       className={`block text-charcoal text-xs vw-640:text-base ml-xxs mb-xs`}

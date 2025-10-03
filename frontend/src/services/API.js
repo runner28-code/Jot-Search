@@ -179,6 +179,7 @@ export async function saveCompany(candidateId, companyId) {
     AuthService.toggleSavedCompany(companyId, 'unsave');
   }
   return normalizeData(data);
+// Temp comment
 }
 
 export async function getSavedCompanies(id, count = null, page = null) {

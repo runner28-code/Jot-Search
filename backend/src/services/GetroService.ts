@@ -213,6 +213,7 @@ export class GetroService {
         console.log(`\n***** getJobs *****`);
         const companies: any[] = await getCompanies();
         if (companies.length === 0) {
+            return {
                 error: 'no company on db'
             };
         }

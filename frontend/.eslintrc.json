@@ -29,6 +29,7 @@
             "single",
             { "allowTemplateLiterals": true }
         ],
+        "react/jsx-max-props-per-line": [
             "warn"
         ],
         "react/jsx-first-prop-new-line": [
@@ -51,7 +52,6 @@
         "propWrapperFunctions": [
             // The names of any function used to wrap propTypes, e.g. `forbidExtraProps`. If this isn't set, any propTypes wrapped in a function will be skipped.
             "forbidExtraProps",
-            {"property": "freeze", "object": "Object"},
             {"property": "myFavoriteWrapper"},
             // for rules that check exact prop wrappers
             {"property": "forbidExtraProps", "exact": true}

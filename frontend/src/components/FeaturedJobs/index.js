@@ -7,6 +7,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 const ITEMS_PER_PAGE = 4;
+// Temp comment
 
 export default function FeaturedJobs() {
   const { width } = useWindowDimensions();
@@ -88,6 +89,7 @@ function renderColorShapes() {
 function RenderImage({image}) {
   const containerStyles = 'w-48 h-48 mb-6 ';
   const iconStyles = 'w-full h-full ';
+  if( !image ) {
     return(<>
       <div className={ containerStyles + 'outline outline-1 outline-neutral-300 p-8' }>
         <CareerIcon className={iconStyles + ' fill-royalBlue object-fill'} />
