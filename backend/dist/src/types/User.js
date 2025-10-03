@@ -25,6 +25,7 @@ exports.IUSER = {
     referredBy: "",
     roles: "",
     description: "",
+    phone: "",
     status: "",
     username: "",
     logo: "",
@@ -36,3 +37,4 @@ exports.IUSER = {
     revenue: "",
     dateFounded: "",
     employeeType: "",
+    experience: "",

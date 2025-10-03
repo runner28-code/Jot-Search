@@ -289,6 +289,7 @@ export class JobController {
 
       const _specialHandlers = {
         clientCorporationID: (key: string, value: string) =>
+          `${key} = REPLACE("${value}", "bl-", "")`,
       };
       const _filters = filters.map((filter) => ({
         key: JobFilter.bullhorn[filter.key],
@@ -342,3 +343,7 @@ export class JobController {
   }
 
   @Authorized()
+  @Put("/save")
+  async save(
+    @QueryParam("candidate") candidate: string,
+    @QueryParam("job") job: string

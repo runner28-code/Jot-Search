@@ -11,7 +11,6 @@ CREATE TABLE "_userSavedCandidates" (
 );
 
 -- CreateIndex
-CREATE UNIQUE INDEX "_userSavedJobs_AB_unique" ON "_userSavedJobs"("A", "B");
 
 -- CreateIndex
 CREATE INDEX "_userSavedJobs_B_index" ON "_userSavedJobs"("B");
@@ -24,3 +23,4 @@ CREATE INDEX "_userSavedCandidates_B_index" ON "_userSavedCandidates"("B");
 
 -- AddForeignKey
 ALTER TABLE "_userSavedJobs" ADD CONSTRAINT "_userSavedJobs_A_fkey" FOREIGN KEY ("A") REFERENCES "Job"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+

@@ -63,7 +63,6 @@ export class CandidateController {
           where: {
             id,
           },
-        });
       }
 
       return {
@@ -330,3 +329,6 @@ export class CandidateController {
   }
 
   @Authorized()
+  @Put("/save")
+  async save(
+    @Body() body: { candidate: string; company: string },

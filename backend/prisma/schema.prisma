@@ -592,3 +592,9 @@ model Candidate {
   dateNextCall     DateTime?
   dateOfBirth      String?
 
+  dayRate            Int?
+  dayRateLow         Int?
+  degreeList         String[]
+  description        String?
+  desiredLocations   String[]
+  disability         String?

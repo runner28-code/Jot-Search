@@ -180,3 +180,6 @@ export class UserController {
         where: {
           table: USER_TABLE,
           recordId: authUser.id,
+        },
+        orderBy: {
+          createdAt: "desc",

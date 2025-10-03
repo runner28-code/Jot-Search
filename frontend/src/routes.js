@@ -54,6 +54,7 @@ export const search = '/search';
 // Auth
 export const APIlogin = '/login';
 export const APIregister = '/register';
+export const APIregisterCoordinator = '/register_coordinator';
 export const APIaddUser = '/add-user';
 export const APIupload = '/api/upload';
 export const APIaccountRecovery = '/account-recovery';
@@ -69,9 +70,11 @@ export const APIsendJobsToCandidates = APIcandidateBase + '/sendJobs';
 // Companies
 const APIcompanyBase = '/api/company';
 export const APIcompanies = APIcompanyBase + '/search';
+// Temp comment
 export const APItoggleSaveCompany = APIcompanyBase + '/save';
 export const APIsavedCompanies = APIcompanyBase + '/saved';
 export const APIsendCandidatesToCompanies = APIcompanyBase + '/sendCandidates';
 // Careers/Jobs
 export const APIjobBase = '/api/job';
 export const APIjobs = APIjobBase + '/search';
+export const APIjobApply = APIjobBase + '/apply';

@@ -56,5 +56,4 @@ export default function DashboardCandidate({togglePassState, toggle}) {
         </button>
       </div>
     </div>
-// Temp comment
   </>)

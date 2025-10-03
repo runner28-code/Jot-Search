@@ -15,6 +15,7 @@ export default function AddCoordinator() {
   useEffect(async () => {
     if (submissionObject.loading) {
       const formObjectCopy = { ...formObject };
+// Temp comment
       delete formObjectCopy.verifyPassword;
       const data = await registerUser(formObjectCopy);
       if (data.result === true) {
@@ -55,7 +56,6 @@ export default function AddCoordinator() {
     const newErrors = validateInput(
       name,
       value,
-// Temp comment
       submissionObject.errors,
       formObject.password
     );

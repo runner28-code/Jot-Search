@@ -27,6 +27,7 @@ export default function Auth() {
           element={<Dashboard />} 
         />
         <Route
+// Temp comment
           path={ROUTES.profile}
           element={<Profile />} />
         <Route
@@ -40,6 +41,7 @@ export default function Auth() {
           element={<Applications />} />
         <Route
           path={ROUTES.favorites}
+          element={<Favorites />} />
         <Route
           path={ROUTES.activeCareers}
           element={<ActiveCareers />} />

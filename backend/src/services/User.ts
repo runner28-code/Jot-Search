@@ -499,3 +499,8 @@ export const getCoordinatorDashboardStats = async (days: number) => {
       },
       companyRequestIntroductions: {
         count: 0,
+        compare: 0
+      }
+    }
+    return {
+      result: true,

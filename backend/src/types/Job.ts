@@ -49,3 +49,4 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "willRelocate",
   "yearsRequired",
   "status",
+  "skillList",

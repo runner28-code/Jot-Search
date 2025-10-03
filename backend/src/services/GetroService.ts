@@ -213,7 +213,6 @@ export class GetroService {
         console.log(`\n***** getJobs *****`);
         const companies: any[] = await getCompanies();
         if (companies.length === 0) {
-            return {
                 error: 'no company on db'
             };
         }
@@ -230,3 +229,6 @@ export class GetroService {
                 while (repeatErr < 3) {
                     const query = queryString.stringify({
                         per_page,
+                        page,
+                        collection_id: this.networkId,
+                        'organization_ids[]': company_id,

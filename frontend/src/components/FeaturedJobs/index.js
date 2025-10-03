@@ -75,7 +75,6 @@ export default function FeaturedJobs() {
   )
 }
 
-// Temp comment
 function renderColorShapes() {
   return(
     <div className='relative w-24 mb-8'>
@@ -89,7 +88,6 @@ function renderColorShapes() {
 function RenderImage({image}) {
   const containerStyles = 'w-48 h-48 mb-6 ';
   const iconStyles = 'w-full h-full ';
-  if( !image ) {
     return(<>
       <div className={ containerStyles + 'outline outline-1 outline-neutral-300 p-8' }>
         <CareerIcon className={iconStyles + ' fill-royalBlue object-fill'} />

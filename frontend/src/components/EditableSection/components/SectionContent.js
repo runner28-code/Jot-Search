@@ -12,6 +12,6 @@ export default function SectionContent({ contentObject }) {
     const contentString = !contentObject[propertyName] ? 'None provided' : contentObject[propertyName];
     return <UnlabeledContent 
       contentText={contentString} 
-      propertyName={propertyName}
     />
+  }
   return renderMultipleProperties(contentObject);

@@ -44,5 +44,4 @@ export class ClientContactController {
 
       // TODO: assuming filters and fields format
       const clientContacts = await db.clientContact.findMany({
-        where: wheres,
         take: count || 100,

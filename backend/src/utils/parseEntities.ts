@@ -103,3 +103,4 @@ export const parseBullhornJobToMain = (data: BhJob) => {
     employmentType: data.employmentType,
     title: data.title,
     willRelocate: data.willRelocate,
+    yearsRequired: data.yearsRequired,

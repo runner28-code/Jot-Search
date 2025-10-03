@@ -97,3 +97,4 @@ export const saveJobs = async (jobs: any[]) => {
                 const existing = await db.getroJobInfo.findFirst({
 									where: {
 										id: job.id,
+									},

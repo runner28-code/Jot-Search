@@ -33,7 +33,6 @@ function App() {
             <Route
               path={ROUTES.login}
               element={<Login />} />
-// Temp comment
             <Route
               path={ROUTES.landingPage}
               element={<LandingPage />} />

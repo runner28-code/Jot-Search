@@ -315,3 +315,7 @@ export const skills = [
   'Public Speaking',
   'Pumps',
   'Purchasing',
+  'Python',
+  'QA',
+  'Qlikview',
+  'Qualitative Research',

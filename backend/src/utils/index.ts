@@ -96,3 +96,4 @@ export const getFilterConditions = (
   ) => {
     const conditions = filters.map((opt) => {
       if (Array.isArray(opt.value)) {
+        const operator = opt.operator || "AND";

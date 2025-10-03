@@ -156,7 +156,6 @@ export default function RegistrationFormInternal(loggedIn) {
   }
 
   function handleChange(name, value) {
-    setFormObj({
       ...formObj,
       [name]: value,
     });

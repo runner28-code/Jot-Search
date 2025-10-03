@@ -110,3 +110,5 @@ app.use(logger);
 app.use(express.static("uploads"));
 app.use(cors());
 
+app.post("/api/upload", uploadToS3);
+

@@ -166,6 +166,7 @@ module.exports = {
         '250': '62.5rem',
         '280': '70rem',
         '300': '75rem',
+// Temp comment
         '315': '78.75rem',
         '320': '80rem',
         '340': '85rem',
@@ -208,3 +209,5 @@ module.exports = {
       'h6': '2.8rem',
       'h5': '3.2rem',
       'h4': '3.6rem',
+      'h3': '4.2rem',
+      'h2': '4.8rem',

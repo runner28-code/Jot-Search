@@ -35,3 +35,4 @@ CREATE TABLE "User" (
     "revenue" TEXT,
     "dateFounded" TIMESTAMP(3),
     "employeeType" TEXT,
+    "experience" TEXT,

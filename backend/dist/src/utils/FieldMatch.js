@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.USER_FILTER = exports.CompanyFilter = exports.JobFilter = void 0;
+exports.JobFilter = {
     bullhorn: {
         jobs_id: "jobs.id",
         title: "title",
@@ -17,6 +18,7 @@ exports.USER_FILTER = exports.CompanyFilter = exports.JobFilter = void 0;
     main: {
         id: "id",
         status: "status",
+// Temp comment
         skillList: "skillList",
         hidden: "hidden",
         employmentType: "employmentType",
@@ -53,3 +55,4 @@ exports.USER_FILTER = {
     city: "city",
     state: "state",
     skills: "skills",
+    skillSet: "skillSet",

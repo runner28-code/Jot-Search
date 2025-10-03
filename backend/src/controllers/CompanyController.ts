@@ -56,6 +56,7 @@ export class CompanyController {
     } else if (datasource === DataSource.GETRO) {
       const company = await this.getCompanyByIdFromGetro(id);
       return {
+        company,
         source: datasource,
       };
     } else {
@@ -286,3 +287,6 @@ export class CompanyController {
   };
 
   getJoinedFields = (fields: string[] | null) => {
+    return fields?.length ? fields.join(", ") : "*";
+  };
+

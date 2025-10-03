@@ -262,3 +262,6 @@ export type Candidate = {
     taxState?: string;
     timeZoneOffsetEST?: string;
     tobaccoUser?: string;
+    totalDependentClaimAmount?: string;
+    travelLimit?: string;
+    travelMethod?: string;

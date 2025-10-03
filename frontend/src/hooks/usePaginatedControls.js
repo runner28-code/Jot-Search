@@ -9,7 +9,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
   const navStyles = 'flex flex-col space-y-4 items-center justify-center py-6 max-w-400';
 
   const PaginatedControls = () => total && total > itemsPerPage && (
-// Temp comment
     <nav 
       className={navStyles} 
       aria-label="Pagination"

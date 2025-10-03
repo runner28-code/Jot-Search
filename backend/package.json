@@ -54,3 +54,4 @@
     "start_all_cronjobs": "npm run build && cp -R ./src/templates ./dist/src && node ./dist/src/cronjobs/index"
   },
   "devDependencies": {
+    "@google-cloud/bigquery": "^5.10.0",

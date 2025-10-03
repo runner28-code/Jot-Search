@@ -391,3 +391,7 @@ const job_filter_exclude_keys = [
   "switchboard",
   "table games",
   "teach",
+  "teacher's aide",
+  "telecommunications",
+  "teller",
+  "textile",

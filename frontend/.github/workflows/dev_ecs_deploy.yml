@@ -10,7 +10,6 @@ env:
   ECR_REPOSITORY: 'site-frontend'
   ECS_SERVICE: 'intulsa-frontend-service-dev'
   ECS_CLUSTER: 'intulsa-cluster-dev'
-  ECS_TASK_DEFINITION: '.github/workflows/dev_task_definition.json'
   CONTAINER_NAME: 'intulsa-frontend-container-dev'
 
 jobs:

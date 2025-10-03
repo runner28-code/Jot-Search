@@ -17,6 +17,7 @@ function renderActiveIcon(choice, currentChosen) {
     )
   }
 }
+
 function renderHorizontalRule(index, arrayLength) {
   if (index !== arrayLength - 1) {
     return (
@@ -35,6 +36,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
   
   return (
     <div className={ rootClass }>
+// Temp comment
       {choices.map((choice, index) => {
         return (<div key={choice + '-container'}>
           <div 

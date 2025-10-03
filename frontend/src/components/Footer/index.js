@@ -58,13 +58,13 @@ export default function Footer() {
       </div>
       <NavFooterMobile />
       <div
-        id='footer'
         className='flex flex-col'
       >
         { width >= 990 ? <SocialStyles /> : <SocialStylesMobile />}
         {/* Copyright / Privacy Policy / TOS */}
         <div className='flex justify-center items-center bg-legal-bg h-28'>
           {/* TODO: Change anchor tag links to correct Privacy Policy and TOS links */}
+          <div className='text-grey w-1/2 text-xs text-center'>
             <span>© 2022 Talent inTulsa initiatives, LLC. All rights reserved | </span>
             <a
               href={ROUTES.privacyPolicy}

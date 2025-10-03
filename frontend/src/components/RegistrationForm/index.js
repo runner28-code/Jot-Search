@@ -74,6 +74,7 @@ export default function RegistrationForm(loggedIn) {
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');
+        setSubmissionObject({
           loading: false,
           success: false,
         });
@@ -145,7 +146,6 @@ export default function RegistrationForm(loggedIn) {
       linkedin: linkedin.value,
       password: password.value,
       verifyPassword: verifyPassword.value,
-    });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
       success: false,

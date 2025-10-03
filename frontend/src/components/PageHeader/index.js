@@ -5,7 +5,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 // Only the headerText will render if no icon is passed
 export default function PageHeader(props) {
-// Temp comment
   const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {

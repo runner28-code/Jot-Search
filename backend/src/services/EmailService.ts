@@ -62,6 +62,7 @@ export const sendCandidatesToEmployers = async (candidates: string[], employers_
     console.log(JSON.stringify(error.response.body));
     throw error;
   }
+}
 
 export const sendNewUserNotification = async (to: string, name: string) => {
   try {
@@ -95,3 +96,4 @@ export const sendJobsToCandidates = async (jobs: string[], candidates_emails: st
 
 export const sendUpdateUserNotification = async (to: string, name: string) => {
   try {
+    const base_url = process.env.FRONTEND_URL || 'http://localhost:3000';

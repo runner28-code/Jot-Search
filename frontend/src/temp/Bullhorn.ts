@@ -230,6 +230,7 @@ export type Candidate = {
     namePrefix?: string;
     nameSuffix?: string;
     nickName?: string;
+    numCategories?: string;
     numOwners?: string;
     occupation?: string; // !
     onboardingDocumentReceivedCount?: string;
@@ -261,3 +262,6 @@ export type Candidate = {
     stateAddtionalWitholdingsAmount?: string;
     stateExemptions?: string;
     stateFilingStatus?: string;
+    status?: string;
+    taxID?: string;
+    taxState?: string;

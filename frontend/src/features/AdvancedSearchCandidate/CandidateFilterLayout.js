@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
@@ -9,7 +8,6 @@ const dropdownFiltersCoord = [
   'Remote Availability',
   'Employment Type',
   'Status'
-// Temp comment
 ];
 
 const dropdownFilters = [

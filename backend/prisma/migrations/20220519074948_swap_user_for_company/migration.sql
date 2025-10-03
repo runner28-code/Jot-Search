@@ -83,3 +83,4 @@ CREATE TABLE "Company" (
     "customText12" TEXT,
     "customText13" TEXT,
     "customText14" TEXT,
+    "customText15" TEXT,

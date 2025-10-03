@@ -783,3 +783,11 @@ export class BullhornService {
     let repeatErr = 0;
 
     while (repeatErr < 3) {
+      console.log(`\nBullhorn_GET_LEADS: ${total} / ${offset}`);
+      try {
+        const query = queryString.stringify({
+          BhRestToken: this.BhRestToken,
+          fields: [
+            "id",
+            "address",
+            "campaignSource",

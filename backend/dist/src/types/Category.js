@@ -10,4 +10,3 @@ exports.ALLOWED_CATEGORY_FILTER_KEYS = new Set([
     "occupation",
     "type",
     "_score",
-]);

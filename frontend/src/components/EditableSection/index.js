@@ -51,6 +51,7 @@ function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
       contentObject={contentObject} 
       handlePropertyChange={handlePropertyChange} />
   }
+  return <SectionContent contentObject={contentObject} />
 }
 
 function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCancel) {

@@ -55,6 +55,7 @@ export const defaultJobFilterState = {
   ...convertedJobFilters
 };
 
+/* CANDIDATE FILTER UTILS */
 export const candidateFilterObject = {
   'Category': [
     'Any',
@@ -74,7 +75,6 @@ export const candidateFilterObject = {
     'Remote',
     'On Site',
     'Hybrid'
-  ],
   'Employment Type': [
     'Any',
     'Full-Time',
