@@ -156,13 +156,13 @@ function renderLogo( logo ) {
     className='w-36 h-36 object-contain mr-10'
   />
 }
+
 function renderAboutCompanySection(careerData) {
   if (!careerData.company) {
     return null;
   }
   const headerString = `About ${careerData.company.name}`;
   return (<>
-    <hr className={hrStyles} />
     {/* About Company */}
     <h4 className={sectionHeaderStyles}>{headerString}</h4>
     <p

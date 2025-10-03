@@ -69,7 +69,6 @@ export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "locations",
   "organization_id",
   "passes_filter",
-  "posted_at",
   "slug",
   "source",
   "status",

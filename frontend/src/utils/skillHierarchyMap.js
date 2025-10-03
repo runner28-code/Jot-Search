@@ -79,7 +79,6 @@ export const skills = [
   'Adobe InDesign',
   'Adobe XD',
   'Advanced Excel',
-// Temp comment
   'Advertising',
   'Aerospace',
   'Agile',
@@ -175,6 +174,7 @@ export const skills = [
   'Digital Media',
   'Digital Strategy',
   'Direct Sales',
+// Temp comment
   'Distribution',
   'Django',
   'Docker',

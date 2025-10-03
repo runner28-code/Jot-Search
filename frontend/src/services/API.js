@@ -227,6 +227,7 @@ export async function getJobsFull(filters, count, operator, page) {
     'page': page || null,
     'operator': operator || 'AND'
   });
+
   return {
     jobs: normalizeData(data.jobs),
     total: data.total,

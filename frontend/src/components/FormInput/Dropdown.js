@@ -43,6 +43,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
             className='cursor-pointer flex items-center justify-between'
           >
             <span className='font-bold'>{choice}</span>
+            {renderActiveIcon(choice, currentChosen)}
           </div>
           { renderHorizontalRule(index, choices.length) }
         </div>)
@@ -66,7 +67,6 @@ export default function Dropdown(props) {
     
   const [isOpen, setIsOpen] = useState(false);
   const [listening, setListening] = useState(false);
-  const menuRef = useRef(null);
 
   const handleClick = (choice) => {
     if ( type === MULTI_SELECT ) {

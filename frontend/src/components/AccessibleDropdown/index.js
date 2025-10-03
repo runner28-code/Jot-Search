@@ -20,7 +20,6 @@ export default function AccessibleDropdown(props) {
     stylesObject,
     showDropdownArrow,
     disabled,
-  } = props;
 
   function handleSelection(choice) {
     if ( type === MULTI_SELECT ) {
@@ -55,7 +54,6 @@ export default function AccessibleDropdown(props) {
           <span>{ buttonText(name, placeholder, currentChosen) }</span>
           { renderDropdownArrow(showDropdownArrow) }
         </Button>
-// Temp comment
         <Menu>
           <ul 
             name={ name }

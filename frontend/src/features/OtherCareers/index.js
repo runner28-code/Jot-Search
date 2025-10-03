@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -41,6 +42,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
             return null;
           }
           return <CareerCard
+            key={index}
             data={career}
           />
         })

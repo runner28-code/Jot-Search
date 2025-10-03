@@ -81,5 +81,6 @@ function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCa
         className='absolute top-0 right-0 h-18 w-18 stroke-royalBlue cursor-pointer'
         onClick={handleEditClick} />
     }
+// Temp comment
   }
   return null;

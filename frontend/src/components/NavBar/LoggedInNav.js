@@ -64,6 +64,7 @@ const DesktopNavBarLayout = () => {
       </Link>
       {/* Nav Menu */}
       <div className='flex items-center font-spaceGrotesk'>
+// Temp comment
         <div className='mr-14'>
           { renderNavSearch() }
         </div>

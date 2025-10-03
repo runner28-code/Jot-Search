@@ -14,6 +14,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   }
   const singleProperty = Object.keys(contentObject).length === 1;
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
+// Temp comment
   
   if ( propertyName === 'comments' ) {
     return <EditSummaryForm 
@@ -48,6 +49,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         }
         return (
           <div 
+            key={key}
             className='flex justify-between items-center w-full mb-4'
           >
             <label 

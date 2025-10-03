@@ -119,7 +119,6 @@ export function formatYearsExperience(experienceYears, experience) {
     return experienceMap[experience];
   } else {
     return 'Years Experience N/A';
-  }
 }
 
 export function buildCandidateAddress(candidateData, full = false) {
@@ -146,7 +145,6 @@ export function buildCandidateAddress(candidateData, full = false) {
 
 export function buildOccupationString(occupation, companyName) {
   if ( occupation && companyName ) {
-// Temp comment
     const occupationString = `${occupation} @ ${companyName}`;
     return occupationString;
   } else if ( occupation && !companyName ) {

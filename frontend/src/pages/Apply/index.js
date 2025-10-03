@@ -10,7 +10,6 @@ import FormInput from '../../components/FormInput';
 import { getCandidateById, getJobById, applyToJob } from '../../services/API';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
-// Temp comment
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../utils/dbFieldMapping';
 import {
   ethnicityChoices,

@@ -24,6 +24,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
 }
 
 export function renderErrorBlock(errorBlock) {
+
   if (errorBlock) {
     return (
       <div className='flex flex-col items-center justify-center w-full'>

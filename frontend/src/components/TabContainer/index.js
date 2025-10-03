@@ -18,7 +18,6 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
   )
 }
 
-// Temp comment
 TabContainer.propTypes = {
   tabChoices: PropTypes.arrayOf(PropTypes.string).isRequired,
   activeTab: PropTypes.string,

@@ -15,7 +15,6 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "employment_types",
     "expires_at",
     "job_functions",
-    "locations",
     "organization_id",
     "passes_filter",
     "posted_at",

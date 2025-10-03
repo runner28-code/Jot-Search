@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
@@ -62,6 +63,7 @@ export default function CareerFilterLayout(props) {
           onClick={clearFilters}
         >
           Clear All
+        </button>
       </div>
     </div>
   );

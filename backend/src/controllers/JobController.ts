@@ -267,6 +267,7 @@ export class JobController {
     const dataset = DATASET_GETRO;
     const table = Tables.JOBS;
 
+    return (await BigQueryService.selectQuery(
       dataset,
       table,
       _fields,

@@ -5,6 +5,7 @@ import AuthService from '../../services/auth';
 
 export default function History({ historyArr, id, headerStyles, hrStyles }) {
   const userRole = AuthService.getUserRole();
+// Temp comment
   if (userRole !== 'coordinator') {
     return null;
   }

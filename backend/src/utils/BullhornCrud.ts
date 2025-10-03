@@ -115,6 +115,7 @@ export const saveBullhornJobs = async (jobs: any[]) => {
         }
 
         const existing = await db.job.findFirst({
+          where: {
             externalId: `bl-${job.id}`,
           },
         });
@@ -152,7 +153,6 @@ export const saveClientContacts = async (contacts: any[]) => {
   const expludeFields = ["address", "location", "_score"];
   try {
     for (const contact of contacts) {
-      try {
         console.log(`\nSavng ClientContact with ID = ${contact.id}`);
         const existing = await db.clientContact.findFirst({
           where: {

@@ -16,6 +16,7 @@ CREATE TABLE "Job" (
     "status" TEXT,
     "skillList" TEXT,
     "locations" TEXT,
+    "companyId" TEXT,
     "interviews" TEXT,
     "onSite" TEXT,
     "salary" TEXT,

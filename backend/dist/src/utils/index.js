@@ -21,7 +21,6 @@ const constant_1 = require("./constant");
 const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const query = `
-            SELECT * FROM \`${datset}.${table}\`
             WHERE id=${id}
         `;
         const options = {

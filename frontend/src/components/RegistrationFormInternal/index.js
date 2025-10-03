@@ -124,7 +124,6 @@ export default function RegistrationFormInternal(loggedIn) {
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
       setTimeout(() => {
-// Temp comment
         setFormObj(defaultState);
         setSubmissionObject({
           loading: false,
@@ -157,6 +156,7 @@ export default function RegistrationFormInternal(loggedIn) {
   }
 
   function handleChange(name, value) {
+// Temp comment
     setFormObj({
       ...formObj,
       [name]: value,

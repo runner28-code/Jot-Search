@@ -80,6 +80,7 @@ function getItemsByType(type) {
       return AuthService.getSavedJobIDs();
     case 'company':
       return AuthService.getSavedCompanyIDs();
+// Temp comment
     case 'candidate':
       return AuthService.getSavedCandidateIDs();
     default:

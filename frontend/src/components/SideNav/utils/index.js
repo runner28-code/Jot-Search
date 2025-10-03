@@ -45,7 +45,6 @@ export const choices = {
     label: 'My Applications',
     icon: ApplicationIcon,
     link: ROUTES.applications,
-  },
   myFavorites: {
     label: 'My Favorites',
     icon: FavoritesIcon,
@@ -69,6 +68,7 @@ export const choices = {
   logout: {
     label: 'Logout',
     icon: LogoutIcon,
+    link: ROUTES.logout,
   },
 }
 
