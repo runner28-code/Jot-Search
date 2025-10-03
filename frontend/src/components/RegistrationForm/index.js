@@ -22,7 +22,6 @@ import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
 import { experienceMap } from '../../utils/dbFieldMapping';
 
-const defaultState = {
   phone: '',
   expertise: '',
   address1: '',
@@ -168,7 +167,6 @@ export default function RegistrationForm(loggedIn) {
     if( value !== 'Community Partner' ) {
       setReferralChoice(false);
       setCommObj({
-// Temp comment
         ...commObj,
         community: ''
       });

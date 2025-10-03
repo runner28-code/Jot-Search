@@ -41,6 +41,7 @@ export function formatCandidateData(candidateData) {
 
 export function convertUserToCandidate(user) {
   const candidate = {
+    id: user.id,
     firstName: user.firstname || '',
     lastName: user.lastname || '',
     name: formatCandidateName(user.firstname, user.lastname),
@@ -145,6 +146,7 @@ export function buildCandidateAddress(candidateData, full = false) {
 
 export function buildOccupationString(occupation, companyName) {
   if ( occupation && companyName ) {
+// Temp comment
     const occupationString = `${occupation} @ ${companyName}`;
     return occupationString;
   } else if ( occupation && !companyName ) {

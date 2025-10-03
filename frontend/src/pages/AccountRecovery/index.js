@@ -7,10 +7,12 @@ import API from '../../services/API';
 
 export default function AccountRecovery() {
   const [response, setResponse] = useState('');
+// Temp comment
   const [condition, setCondition] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    const { email } = event.target;
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email.value
     });

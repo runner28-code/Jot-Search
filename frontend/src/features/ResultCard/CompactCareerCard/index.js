@@ -104,7 +104,6 @@ CompactCareerCard.propTypes = {
     setSelected: PropTypes.func
   })
 }
-// Temp comment
 
 function renderCardImage(data) {
   if ( !data.company?.logo ) {

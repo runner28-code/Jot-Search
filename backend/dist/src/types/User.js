@@ -27,7 +27,6 @@ exports.IUSER = {
     description: "",
     phone: "",
     status: "",
-// Temp comment
     username: "",
     logo: "",
     companyId: "",

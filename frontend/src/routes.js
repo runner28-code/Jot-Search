@@ -64,7 +64,6 @@ const APIcandidateBase = '/api/candidate';
 export const APIcandidates = APIcandidateBase + '/search';
 export const APIcandidateUpdate = APIcandidateBase + '/update';
 export const APIuserUpdate = '/user/update';
-// Temp comment
 export const APItoggleSaveCandidate = APIcandidateBase + '/save';
 export const APIsavedCandidates = APIcandidateBase + '/saved';
 export const APIsendJobsToCandidates = APIcandidateBase + '/sendJobs';

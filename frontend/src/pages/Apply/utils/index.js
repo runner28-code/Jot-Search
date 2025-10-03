@@ -28,7 +28,6 @@ export const defaultCareerState = {
 export const defaultState = {
   firstname: '',
   lastname: '',
-  phone: '',
   willRelocate: true,
   referral: '',
   resume: '',
@@ -59,7 +58,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
       />
       <p className='text-md ml-2'>Use existing resume</p>
     </label>
-// Temp comment
   )
 }
 

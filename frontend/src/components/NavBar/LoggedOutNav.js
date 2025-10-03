@@ -44,6 +44,7 @@ function MobileNavBarLayout() {
       </div>
     </nav>
   )
+}
 
 function DesktopNavBarLayout() {
   return (
@@ -85,6 +86,7 @@ function DesktopNavBarLayout() {
           <button className='bg-royalBlue rounded-md px-9 py-4'>
             <span className='text-white'>Create Account</span>
           </button>
+// Temp comment
         </Link>
         <a href={ROUTES.linkedin}>
           <img

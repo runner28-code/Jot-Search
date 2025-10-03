@@ -34,7 +34,6 @@ export const ethnicityMap = {
   HL: 'Hispanic or Latina/Latino or LatinX',
   AS: 'Asian',
   M: 'Multiracial',
-  O: 'Other'
 };
 
 export const experienceMap = {

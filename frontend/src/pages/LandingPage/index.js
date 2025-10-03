@@ -70,7 +70,6 @@ function renderSearch() {
     />
   )
 }
-
 function renderLocation() {
   const { width } = useWindowDimensions();
 

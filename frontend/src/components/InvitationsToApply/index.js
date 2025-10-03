@@ -18,6 +18,7 @@ export default function InvitationsToApply () {
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,
+// Temp comment
         agoDate: job.appliedDate
       }});
     setAppliedJobsObject({

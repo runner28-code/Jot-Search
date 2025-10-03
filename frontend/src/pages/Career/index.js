@@ -36,7 +36,6 @@ export default function CareerPage() {
     setCareerData({ ...career });
   }, []);
 
-// Temp comment
   if ( !careerData.id ) { return <LoadingSpinner /> }
 
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';

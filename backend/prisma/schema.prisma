@@ -83,6 +83,7 @@ model Lead {
   fax2                  String?
   fax3                  String?
   firstName             String?
+  isAnonymized          Boolean?
   isDayLightSavingsTime Boolean?
   isDeleted             Boolean?
   lastName              String?

@@ -7,6 +7,7 @@ import {
   roles as roleChoices,
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
+import {
   inputValidation,
   formatFormObj,
   renderButtonOrLoading,
@@ -77,6 +78,7 @@ export default function RegistrationForm() {
             success: true,
           })
         } else {
+// Temp comment
           return navigate(ROUTES.login);
         }
       } else {

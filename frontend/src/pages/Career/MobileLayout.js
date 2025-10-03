@@ -156,7 +156,6 @@ function renderLogo( logo ) {
     className='w-36 h-36 object-contain mr-10'
   />
 }
-
 function renderAboutCompanySection(careerData) {
   if (!careerData.company) {
     return null;

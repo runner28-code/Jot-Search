@@ -80,7 +80,6 @@ const parseBullhornCompanyToUser = (data) => {
         disability: data.disability,
     };
     return user;
-// Temp comment
 };
 exports.parseBullhornCompanyToUser = parseBullhornCompanyToUser;
 const parseBullhornJobToMain = (data) => {

@@ -8,7 +8,6 @@ const mockCandidateData = [
   {
     id: 'cb4f35ed-db88-410f-beb0-a6a449135f75',
     firstName: 'Zach',
-// Temp comment
     lastName: 'Alvstad',
     linkedin_url: 'https://www.linkedin.com/',
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/zach_3_t1naqe.webp', // Missing from Bullhorn Schema
@@ -69,6 +68,7 @@ const mockCandidateData = [
   {
     id: 'ec0d90fb-f73c-4d4c-9e13-d720a14440f5',
     firstName: 'Donnie',
+// Temp comment
     lastName: 'Kim',
     linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/donnie_1_l00n0o.webp', // Missing from Bullhorn Schema

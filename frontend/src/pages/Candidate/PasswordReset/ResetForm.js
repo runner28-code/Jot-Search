@@ -31,6 +31,7 @@ export default function ResetForm({ candidateData, setType }) {
       } else {
         setType(res.data.error, false);
       }
+// Temp comment
     }
   };
 
