@@ -91,6 +91,7 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
 };
 
 export const parseBullhornJobToMain = (data: BhJob) => {
+  const job: Job = {
     externalId: data.id,
     description: data.description,
     address1: data.address_address1,

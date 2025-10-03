@@ -55,6 +55,7 @@ export default function DesktopLayout(props) {
             {/* Location */}
             <div className='w-1/3 flex items-center'>
               <img
+                src={locationIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{addressString}</p>
             </div>
@@ -170,7 +171,6 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
         className='font-spaceGrotesk text-textBlack text-md mb-10'
         dangerouslySetInnerHTML={{ __html: careerData.description || 'No description listed' }}
       />
-      {renderSkillsSection(skillList)}
       {renderAboutCompanySection(careerData, companyName)}
       {/* Apply */}
       {(role === 'candidate' || role === 'guest') && (

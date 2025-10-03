@@ -83,7 +83,6 @@ model Lead {
   fax2                  String?
   fax3                  String?
   firstName             String?
-  isAnonymized          Boolean?
   isDayLightSavingsTime Boolean?
   isDeleted             Boolean?
   lastName              String?
@@ -318,6 +317,7 @@ model Address {
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
 
 model Branch {
   id    String    @id @default(uuid())

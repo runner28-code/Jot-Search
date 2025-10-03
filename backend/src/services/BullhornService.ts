@@ -133,7 +133,6 @@ export class BullhornService {
     console.log(res);
     console.log("============================ \n");
     if (res.status === 200) {
-      const { access_token, refresh_token } = res.data;
       this.access_token = access_token;
       this.refresh_token = refresh_token;
       console.log("Access Token: ", this.access_token);
@@ -271,6 +270,7 @@ export class BullhornService {
           headers: {
             "Content-Type": "application/json",
             Accept: "*/*",
+          },
         });
         if (res.status === 200) {
           const { data, count } = res.data;

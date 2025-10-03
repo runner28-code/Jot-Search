@@ -77,7 +77,6 @@ const getActualRequestDurationInMs = (start: any) => {
   const diff = process.hrtime(start);
   return (diff[0] * NS_PER_SEC + diff[1]) / NS_TO_MS;
 };
-
 const logger = (req: Request, res: Response, next: NextFunction) => {
   let current_datetime = new Date();
   let formatted_date =

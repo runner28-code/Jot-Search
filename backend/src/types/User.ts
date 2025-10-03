@@ -10,6 +10,7 @@ export type User = {
   address1?: string;
   address2?: string;
   city?: string;
+  state?: string;
   zip?: string;
   resume?: string;
   avatar?: string;

@@ -52,6 +52,7 @@ import { BullhornService } from "../services/BullhornService";
 @JsonController("/api/job")
 export class JobController {
   @Get("/search")
+  async searchJobByID(@QueryParam("id") id: string) {
     try {
       const job = await db.job.findFirst({
         where: {

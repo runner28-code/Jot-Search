@@ -69,7 +69,6 @@ function renderSearch() {
       loading={isLoading}
     />
   )
-// Temp comment
 }
 
 function renderLocation() {

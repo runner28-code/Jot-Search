@@ -31,7 +31,6 @@ export default function FeaturedCompaniesMobile() {
                 to={`${ROUTES.companies}/${company.id}`}
                 className='my-8 outline outline-2 outline-neutral-100 p-8 w-32 mx-2'
                 key={index}>
-// Temp comment
                 { renderLogo(company.logo) }
               </Link>
             )

@@ -25,7 +25,6 @@ import {
   findUserByEmail,
   getCompanyDashboardStats,
   getCoordinatorDashboardStats,
-} from "../services/User";
 
 import { User, USER_TABLE } from "../types/User";
 
@@ -53,6 +52,7 @@ export class UserController {
   }
 
   /**
+   * No-auth route for register page
    * @param user 
    * @returns 
    */

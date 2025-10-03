@@ -128,6 +128,7 @@ export default function Footer() {
         />
       </a>
     </div>
+// Temp comment
     <div
       id='footer'
       className='flex flex-col'
@@ -380,7 +381,6 @@ function NavFooterMobile() {
         <a
           href="/careers"
           className={linkStyle}
-// Temp comment
         >
           Finance Job Openings
         </a>

@@ -9,7 +9,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import {
   ethnicityChoices,
   genderChoices,
-  veteranStatusChoices
 } from '../Apply/utils';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
@@ -33,6 +32,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     address1: candidateData.address1 || '',
     referredBy: candidateData.referredBy || '',
     gender: candidateData.gender || '',
+  })
 
   const [editMode, setEditMode] = useState(false);
 

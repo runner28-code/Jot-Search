@@ -23,6 +23,7 @@ export default function DesktopHeader(props) {
   
   return (
     <div className={containerClasses}>
+// Temp comment
       <div className='flex gap-8 items-center'>
         { icon && (
           <img
@@ -41,7 +42,6 @@ export default function DesktopHeader(props) {
           <SourceIdentifier type={dataSource} />
         )}
       </div>
-// Temp comment
       { backButton && (
         <button
           className='text-md text-royalBlue underline mt-6'

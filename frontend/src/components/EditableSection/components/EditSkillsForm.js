@@ -52,14 +52,12 @@ function renderChosen(skills, onChange) {
           onChange('primarySkills', skills.filter(s => s !== skill))
         }
         return (
-          <ChoiceTag
             key={skill}
             label={skill}
             isActive={true}
             handleClick={handleClick}
           />
         )
-// Temp comment
       }) : <p className='text-royalBlue text-md'>No skills selected</p>}
     </div>
   )

@@ -87,6 +87,7 @@ export default function NavSearchMobile({ placeholder }) {
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
     total: totalJobs + totalCompanies + totalCandidates,
     forceHidden
+// Temp comment
   }
 
   /* STYLES & RENDER */
@@ -150,7 +151,6 @@ function renderResults( results ) {
     {candidates && <CandidateResults candidates={ candidates } /> }
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
-// Temp comment
   </>)
 }
 

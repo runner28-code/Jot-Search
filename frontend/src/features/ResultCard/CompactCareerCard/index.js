@@ -74,6 +74,7 @@ CompactCareerCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     city: PropTypes.string,
+    state: PropTypes.string,
     company: PropTypes.shape({
       name: PropTypes.string,
       logo: PropTypes.string
@@ -103,6 +104,7 @@ CompactCareerCard.propTypes = {
     setSelected: PropTypes.func
   })
 }
+// Temp comment
 
 function renderCardImage(data) {
   if ( !data.company?.logo ) {

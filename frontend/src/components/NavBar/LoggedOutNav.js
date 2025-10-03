@@ -44,7 +44,6 @@ function MobileNavBarLayout() {
       </div>
     </nav>
   )
-}
 
 function DesktopNavBarLayout() {
   return (
@@ -93,7 +92,6 @@ function DesktopNavBarLayout() {
             className='text-royalBlue h-14'
             alt='linkedin'
           />
-// Temp comment
         </a>
       </div>
     </nav>

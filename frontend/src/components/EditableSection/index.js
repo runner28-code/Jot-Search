@@ -27,7 +27,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   return (
     <section className='relative mb-14'>
       <div>
-        <h4 className={headerStyles}>{header}</h4>
         { renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCancel) }
       </div>
       { renderTextOrInputs(editMode, contentObject, handlePropertyChange) }

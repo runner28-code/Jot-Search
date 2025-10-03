@@ -57,7 +57,6 @@ FavoriteButton.propTypes = {
     id: PropTypes.string,
     candidate: PropTypes.string,
     status: PropTypes.string,
-// Temp comment
   }).isRequired,
   isFavoriteOverride: PropTypes.bool,
 }

@@ -33,6 +33,7 @@ function HeaderContent({ companyData }) {
           { renderCompanyLogo(companyData.logo, companyData.name) }
           <FillerIcon />
           <h4 className={ ( width >= 1280 ) ? headerTitleDesktop : headerTitle }>
+// Temp comment
             {companyData.name}
           </h4>
         </div>

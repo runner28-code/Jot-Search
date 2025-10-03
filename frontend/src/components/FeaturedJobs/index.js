@@ -7,7 +7,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 const ITEMS_PER_PAGE = 4;
-// Temp comment
 
 export default function FeaturedJobs() {
   const { width } = useWindowDimensions();
@@ -39,7 +38,6 @@ export default function FeaturedJobs() {
   return(
     <section className='py-48 bg-neutral-100 flex flex-col flex-wrap items-center'>
       { renderColorShapes() }
-      <h2 className={ width >= 990 ? titleStyles : titleStylesMoible }>Featured Opportunities</h2>
       <div className='flex mt-12 flex-wrap'>
         {
           isLoading ?

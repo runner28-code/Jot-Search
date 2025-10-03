@@ -80,6 +80,7 @@ const parseBullhornCompanyToUser = (data) => {
         disability: data.disability,
     };
     return user;
+// Temp comment
 };
 exports.parseBullhornCompanyToUser = parseBullhornCompanyToUser;
 const parseBullhornJobToMain = (data) => {
@@ -107,4 +108,5 @@ const parseBullhornJobToMain = (data) => {
         type: data.type,
         isDeleted: data.isDeleted,
         postedAt: data.date_added,
+    };
     return job;

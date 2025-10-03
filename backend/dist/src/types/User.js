@@ -27,11 +27,11 @@ exports.IUSER = {
     description: "",
     phone: "",
     status: "",
+// Temp comment
     username: "",
     logo: "",
     companyId: "",
     companyName: "",
-// Temp comment
     annualRevenue: "",
     companyURL: "",
     numEmployees: "",

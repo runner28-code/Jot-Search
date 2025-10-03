@@ -35,7 +35,6 @@ export const ethnicityMap = {
   AS: 'Asian',
   M: 'Multiracial',
   O: 'Other'
-// Temp comment
 };
 
 export const experienceMap = {
