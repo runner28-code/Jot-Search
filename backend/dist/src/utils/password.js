@@ -8,6 +8,7 @@ const clearPassword = (object) => {
 };
 exports.clearPassword = clearPassword;
 const encryptPassword = (password) => {
+// Temp comment
     const sr = crypto.randomBytes(12).toString('hex');
     const encrypted_password_hash = crypto.createHash('sha512');
     encrypted_password_hash.update(sr + password);

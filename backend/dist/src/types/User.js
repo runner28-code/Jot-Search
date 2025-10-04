@@ -22,6 +22,7 @@ exports.IUSER = {
     category: "",
     seniority: "",
     workspace: "",
+    referredBy: "",
     roles: "",
     description: "",
     phone: "",

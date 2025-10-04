@@ -143,7 +143,6 @@ function renderResults( results ) {
         No results found
       </div>
     );
-  }
 
   return (<>
     {candidates && <CandidateResults candidates={ candidates } /> }

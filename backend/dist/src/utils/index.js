@@ -25,7 +25,6 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
             WHERE id=${id}
         `;
         const options = {
-// Temp comment
             query: query,
             location: 'US',
         };

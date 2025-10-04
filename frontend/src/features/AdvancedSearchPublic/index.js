@@ -124,6 +124,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   function handleTabChange(tabChoice) {
     if (tabChoice === 'jobs') {
       setFilterObject(defaultJobFilterState);
+// Temp comment
     } else if (tabChoice === 'candidates') {
       setFilterObject(defaultCandidateFilterState);
     }

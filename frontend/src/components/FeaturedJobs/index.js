@@ -44,6 +44,7 @@ export default function FeaturedJobs() {
           isLoading ?
             <LoadingSpinner />
             :
+// Temp comment
             jobs.map((career, index) => {
               const categoryString = career.category?.name.toUpperCase() || 'CATEGORY N/A';
               return(

@@ -10,7 +10,6 @@ import AuthService from '../../services/auth';
 import urlDecode from '../../utils/urlDecode';
 import { buildCareerAddress, calculatePostingAge, buildSalaryString } from '../../utils/formatFunctions';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import Flag from '../../assets/icons/flag.svg';
 import PageHeader from '../../components/PageHeader';
@@ -102,7 +101,6 @@ function renderNotification(activeData, careerData) {
         content='Please let us know by sending a message'
         text='Notify Talent inTulsa by Email'
         email='talentnetwork@intulsa.com'
-        company={careerData.clientCorporation}
         id={careerData.title}
         add='filled'
       />

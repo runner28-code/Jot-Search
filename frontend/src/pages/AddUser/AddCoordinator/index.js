@@ -51,7 +51,6 @@ export default function AddCoordinator() {
   function handleInputChange(e) {
     const { name, value } = e.target;
 
-    // Error checking
     const newErrors = validateInput(
       name,
       value,

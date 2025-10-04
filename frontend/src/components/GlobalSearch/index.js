@@ -45,7 +45,6 @@ export default function GlobalSearch({ placeholder }) {
         companies: [],
         candidates: []
       });
-// Temp comment
     }
 
     // TODO: API: Candidates if role === 'company' || 'coordinator'

@@ -61,6 +61,7 @@ const uploadToS3 = async(req: any, res: any) => {
         file: response.Location,
         result: true,
       })
+    } catch (e) {
       console.error("error", e);
       res.status(500).send({
         result: false,

@@ -8,4 +8,3 @@ CREATE TABLE "Address" (
     "zip" TEXT NOT NULL,
     "timezone" TEXT,
     "countryCode" INTEGER NOT NULL,
-    "countryName" TEXT NOT NULL,

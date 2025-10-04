@@ -35,7 +35,6 @@ CREATE TABLE "Lead" (
     "lastName" TEXT,
     "leadSource" TEXT,
     "massMailOptOut" BOOLEAN,
-    "middleName" TEXT,
     "mobile" TEXT,
     "name" TEXT,
     "namePrefix" TEXT,

@@ -27,7 +27,6 @@ export default function FeaturedCompanies() {
             <LoadingSpinner />
             :
             companies.map((company, index) =>
-              <Link
                 to={`${ROUTES.companies}/${company.id}`}
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'
                 key={index}>
@@ -52,5 +51,4 @@ function renderColorShapes() {
       <div className='bg-pinkSquare w-12 h-12' />
       <div className='bg-orangeSquare bg-pink-500 top-[-20px] right-[5px] absolute w-6 h-6' />
     </div>
-// Temp comment
   )

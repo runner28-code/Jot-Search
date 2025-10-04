@@ -154,7 +154,6 @@ export const skills = [
   'Customer Experience',
   'Customer Relations',
   'Customer Service',
-// Temp comment
   'Customer Success',
   'Customer Support',
   'Cyber',

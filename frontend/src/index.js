@@ -20,6 +20,5 @@ ReactDOM.render(
     <BrowserRouter>
       <CandidateContext>
         <CareerContext>
-          <CategoryContext>
             <ScrollToTop />
             <App />
