@@ -29,7 +29,6 @@ export default function DashboardPublicMin({type}) {
             </button>
           </div>
         </div>
-      </div>
     )
   }
 

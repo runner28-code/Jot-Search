@@ -37,7 +37,6 @@ function useTabState(disabledTabs, userType, pathname) {
     switch (pathname) {
       case '/candidates':
         return useState('candidates');
-      case '/companies':
         return useState('companies');
       case '/careers':
       default:
@@ -73,6 +72,7 @@ export default function AdvancedSearch({ disabledTabs }) {
       return { filtersArr: searchFilters };
 
     } else if (tab === 'careers') {
+      const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
@@ -103,4 +103,14 @@ export default function AdvancedSearch({ disabledTabs }) {
     setPage(1);
   }
   function handleSearchClick() {
+    setPage(1);
+  }
+
+  function handleTabChange(tabChoice) {
+    if (tabChoice === 'careers') {
+      setFilterObject(defaultJobFilterState);
+    } else if (tabChoice === 'candidates') {
+      setFilterObject(defaultCandidateFilterState);
+    }
+    setActiveTab(tabChoice);
     setPage(1);

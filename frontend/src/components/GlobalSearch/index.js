@@ -25,7 +25,6 @@ export default function GlobalSearch({ placeholder }) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
-// Temp comment
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
@@ -46,6 +45,7 @@ export default function GlobalSearch({ placeholder }) {
         companies: [],
         candidates: []
       });
+// Temp comment
     }
 
     // TODO: API: Candidates if role === 'company' || 'coordinator'

@@ -54,6 +54,7 @@
             "forbidExtraProps",
             {"property": "freeze", "object": "Object"},
             {"property": "myFavoriteWrapper"},
+            // for rules that check exact prop wrappers
             {"property": "forbidExtraProps", "exact": true}
         ],
         "componentWrapperFunctions": [

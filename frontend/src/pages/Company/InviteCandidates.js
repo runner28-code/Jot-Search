@@ -59,7 +59,6 @@ export default function InviteCandidates({ company }) {
 
       <SelectedValues />
 
-      <MultiSelect
         isLoading={isLoading}
         options={candidateOptions}
         value={selected}
@@ -109,6 +108,7 @@ function itemRenderer({ option, onClick, disabled}) {
           : <Initials name={option.label} />
         }  
         <div className="flex flex-col">
+          <span className='text-lg text-blue-500'>{option.candidate?.firstName} {option.candidate?.lastName}</span>
           <span>{getTagLine({ candidate: option.candidate })}</span>
         </div>
       </div>

@@ -15,4 +15,3 @@ export const VerifyJwtToken = (token: string) => {
   try {
     const decode: any = jwt.decode(token);
     if (decode) {
-      return decode;

@@ -154,6 +154,7 @@ export const skills = [
   'Customer Experience',
   'Customer Relations',
   'Customer Service',
+// Temp comment
   'Customer Success',
   'Customer Support',
   'Cyber',
@@ -174,7 +175,6 @@ export const skills = [
   'Digital Media',
   'Digital Strategy',
   'Direct Sales',
-// Temp comment
   'Distribution',
   'Django',
   'Docker',
@@ -320,3 +320,4 @@ export const skills = [
   'QA',
   'Qlikview',
   'Qualitative Research',
+  'Quantitative Research',

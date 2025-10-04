@@ -20,6 +20,7 @@ export default function AccessibleDropdown(props) {
     stylesObject,
     showDropdownArrow,
     disabled,
+  } = props;
 
   function handleSelection(choice) {
     if ( type === MULTI_SELECT ) {
@@ -160,3 +161,58 @@ function renderDropdownArrow(dropdownArrow) {
       className='h-5 w-7 ml-4' 
     />
   );
+}
+
+function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObject) {
+  if ( !choices ) {
+    return <li className='flex items-center justify-center'>
+      <p className='text-center text-textBlack my-4'>Error loading choices</p>
+    </li>
+  }
+  
+  if ( choices.length === 0 && name === 'roles' ) {
+    return <li className='flex items-center justify-center'>
+      <p className='text-center text-textBlack my-4'>Please select an expertise</p>
+    </li>
+  }
+
+  if ( choices && !choiceObject ) {
+    const objectifiedChoices = choices.reduce((acc, choice) => {
+      if ( typeof choice === 'string' ) {
+        acc[choice] = choice;
+      } else {
+        acc[choice.name] = choice.name;
+      }
+      return acc;
+    }, {});
+    choiceObject = objectifiedChoices;
+  }
+  
+  const objectLength = Object.keys(choiceObject).length;
+  let listItemStyles = 'cursor-pointer flex items-center justify-between ';
+  if ( stylesObject.listItemStyles ) {
+    listItemStyles += stylesObject.listItemStyles;
+  }
+
+  return Object.entries(choiceObject).map( ([key, value], index) => {
+    if ( !value ) {
+      return null;
+    }
+
+    if ( name === 'experience' ) {
+      value += ' years';
+    }
+
+    return (
+      <li key={key}>
+        <MenuItem 
+          className={ listItemStyles }
+          value={key}
+        >
+          <span>{value}</span>
+          {renderActiveIcon(key, currentChosen)}
+        </MenuItem>
+        { renderHorizontalRule(index, objectLength) }
+      </li>
+    );
+  });

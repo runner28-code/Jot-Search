@@ -4,9 +4,10 @@ exports.CATEGORY_NON_STRING_FIELDS = exports.ALLOWED_CATEGORY_FILTER_KEYS = void
 exports.ALLOWED_CATEGORY_FILTER_KEYS = new Set([
     "id",
     "dataAdded",
-    "enabled",
+    "description",
     "name",
     "occupation",
     "type",
     "_score",
 ]);
+exports.CATEGORY_NON_STRING_FIELDS = new Set([

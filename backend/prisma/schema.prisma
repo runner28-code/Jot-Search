@@ -598,3 +598,5 @@ model Candidate {
   description        String?
   desiredLocations   String[]
   disability         String?
+  educationDegree    String?
+  email              String?

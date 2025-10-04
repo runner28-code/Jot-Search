@@ -240,7 +240,6 @@ const job_filter_exclude_keys = [
     "lunch",
     "machine operator",
     "machinist",
-// Temp comment
     "maintenance",
     "mammographer",
     "manufacturing",
@@ -394,3 +393,5 @@ const job_filter_exclude_keys = [
     "switchboard",
     "table games",
     "teach",
+    "teacher's aide",
+    "telecommunications",

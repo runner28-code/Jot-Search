@@ -25,7 +25,6 @@ export default function Auth() {
         <Route
           path='/'
           element={<Dashboard />} 
-        />
         <Route
           path={ROUTES.profile}
           element={<Profile />} />

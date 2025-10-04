@@ -1,5 +1,4 @@
 -- CreateTable
-CREATE TABLE "Job" (
     "id" TEXT NOT NULL,
     "externalId" TEXT,
     "description" TEXT,
@@ -21,3 +20,4 @@ CREATE TABLE "Job" (
     "onSite" TEXT,
     "salary" TEXT,
     "salaryUnit" TEXT,
+    "startDate" TIMESTAMP(3),

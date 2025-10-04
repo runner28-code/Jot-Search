@@ -347,3 +347,4 @@ export class JobController {
   async save(
     @QueryParam("candidate") candidate: string,
     @QueryParam("job") job: string
+  ): Promise<ApplyResponse> {

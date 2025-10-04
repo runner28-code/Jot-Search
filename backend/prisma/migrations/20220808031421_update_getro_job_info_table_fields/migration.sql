@@ -11,3 +11,4 @@
 ALTER TABLE "GetroJobInfo" DROP COLUMN "applcation_method",
 ADD COLUMN     "application_method" TEXT,
 DROP COLUMN "compensation_public",
+ADD COLUMN     "compensation_public" BOOLEAN,

@@ -101,7 +101,6 @@ export type Job = {
     publicDescription?: string;
     publishedZip?: string;
     reasonClosed?: string;
-    reportTo?: string;
     reportToClientContact?: string;
     salary?: string;
     salaryUnit?: string;
@@ -265,3 +264,4 @@ export type Candidate = {
     totalDependentClaimAmount?: string;
     travelLimit?: string;
     travelMethod?: string;
+    twoJobs?: string;

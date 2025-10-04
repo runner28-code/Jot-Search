@@ -290,3 +290,4 @@ export class CompanyController {
     return fields?.length ? fields.join(", ") : "*";
   };
 
+  async getCompaniesFromJoinTable(

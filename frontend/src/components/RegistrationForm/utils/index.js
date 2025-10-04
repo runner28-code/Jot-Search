@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { MdCheckCircle } from 'react-icons/md';
-// Temp comment
 import LoadingSpinner from '../../LoadingSpinner';
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import * as ROUTES from '../../../routes';
@@ -10,6 +9,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
     return <LoadingSpinner
       height='50'
       width='50'
+// Temp comment
     />
   }
   if ( submissionObject.success ) {

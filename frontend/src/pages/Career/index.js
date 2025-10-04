@@ -10,6 +10,7 @@ import AuthService from '../../services/auth';
 import urlDecode from '../../utils/urlDecode';
 import { buildCareerAddress, calculatePostingAge, buildSalaryString } from '../../utils/formatFunctions';
 import useWindowDimensions from '../../hooks/windowDimensions';
+// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import Flag from '../../assets/icons/flag.svg';
 import PageHeader from '../../components/PageHeader';
@@ -22,6 +23,7 @@ export default function CareerPage() {
   const activeData = location.state;
 
   const isMobile = width < 768;
+  const role = AuthService.getUserRole();
   /* STATE */
   const { id } = useParams();
   const [careerData, setCareerData] = useState({});

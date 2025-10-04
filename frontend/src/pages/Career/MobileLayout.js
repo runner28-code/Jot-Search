@@ -130,6 +130,7 @@ export default function MobileLayout(props) {
       companyId={careerData.companyId}
       companyName={careerData.clientCorporation}
       currentCareerId={careerData.externalId}
+// Temp comment
     />
   </>)
 }
@@ -163,6 +164,7 @@ function renderAboutCompanySection(careerData) {
   }
   const headerString = `About ${careerData.company.name}`;
   return (<>
+    <hr className={hrStyles} />
     {/* About Company */}
     <h4 className={sectionHeaderStyles}>{headerString}</h4>
     <p

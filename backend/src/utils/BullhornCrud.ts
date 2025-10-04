@@ -153,6 +153,7 @@ export const saveClientContacts = async (contacts: any[]) => {
   const expludeFields = ["address", "location", "_score"];
   try {
     for (const contact of contacts) {
+      try {
         console.log(`\nSavng ClientContact with ID = ${contact.id}`);
         const existing = await db.clientContact.findFirst({
           where: {
@@ -258,3 +259,5 @@ export const saveLeads = async (leads: any[]) => {
         });
 
         const newLead = await db.lead.create({
+          data: leadData,
+        });

@@ -791,3 +791,6 @@ export class BullhornService {
             "id",
             "address",
             "campaignSource",
+            "candidates",
+            "category",
+            "clientContacts",

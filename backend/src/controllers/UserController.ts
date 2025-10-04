@@ -183,3 +183,4 @@ export class UserController {
         },
         orderBy: {
           createdAt: "desc",
+        },

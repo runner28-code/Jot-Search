@@ -90,7 +90,6 @@ module.exports = {
       },
       spacing: {
         // Styleguide Spacing
-// Temp comment
         'xxs': '4px',
         'xs': '8px',
         's': '12px',
@@ -211,3 +210,4 @@ module.exports = {
       'h4': '3.6rem',
       'h3': '4.2rem',
       'h2': '4.8rem',
+      'h1': '5.6rem'

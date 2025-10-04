@@ -150,3 +150,59 @@ function renderResults( results ) {
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
   </>)
+}
+
+const defaultStylesObject = {
+  containerStyles: 'flex items-center justify-evenly p-4 h-24 vw-480:w-160 vw-1024:h-36 vw-1024:w-210 bg-white border-solid border-2 border-lightGrey rounded-2xl ',
+  searchIconStyles: 'h-16 w-16 vw-1024:h-24 vw-1024:w-24 vw-480:ml-6 mr-10 bg-royalBlue flex justify-center items-center',
+  inputStyles: 'flex-1 h-8 bg-lightGrey vw-480:placeholder:text-md vw-1024:placeholder:text-xl px-5'
+}
+
+
+function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject, isOpen, setIsOpen}) {
+  const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
+  const offObject = {
+    containerStyles: 'flex items-end ',
+    searchIconStyles: 'fill-neutral-400',
+    inputStyles: 'hidden '
+  }
+  function handleClick() {
+    if( !searchTerm ) {
+      setIsOpen(isOpen => !isOpen);
+    }
+  }
+
+  if ( marginBottom ) {
+    styleObject.containerStyles += `mb-${marginBottom} `;
+  }
+
+  function handleChange(e) {
+    setSearchTerm(e.target.value);
+  }
+
+  const placeholderText = placeholder || 'Search for companies or jobs...';
+  return (
+    <label
+      className={ !isOpen ? offObject.containerStyles : styleObject.containerStyles }
+      htmlFor={ placeholder }
+    >
+      <div
+        className={ !isOpen ? offObject.searchIconStyles : styleObject.searchIconStyles }
+        onClick={ handleClick }
+      >
+        <img
+          src={ !isOpen ? searchGray : searchWhite }
+          alt='search icon'
+          className={ !isOpen ? 'w-12 mr-6' : 'w-6 mr-2'}
+        />
+        { !isOpen ? '' : 'Search'}
+      </div>
+      <input
+        type='text'
+        id={ placeholder }
+        placeholder={ !isOpen ? '' : placeholderText  }
+        value={ searchTerm }
+        onChange={ handleChange }
+        className={ !isOpen ? offObject.inputStyles : styleObject.inputStyles } />
+    </label>
+  )

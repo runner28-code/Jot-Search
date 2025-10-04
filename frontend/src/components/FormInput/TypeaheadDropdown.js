@@ -107,7 +107,6 @@ function renderLabel(name, label, required) {
   return (
     <label
       className='block text-textBlack mb-2.5'
-// Temp comment
       htmlFor={name}
     >
       {label}
@@ -120,22 +119,9 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
   if ( dropdownType !== 'tags' ) { 
     return null; 
   }
-
   return (
     <div>
       {currentChosen.map(choice => {
         const isActive = currentChosen.includes(choice);
         const handleTagClick = () => {
           handleClick(choice);
-        }
-
-        return (
-          <ChoiceTag 
-            label={choice} 
-            isActive={isActive} 
-            handleClick={handleTagClick}
-            key={choice} />
-        )
-      })}
-    </div>
-  )

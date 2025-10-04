@@ -233,3 +233,4 @@ export class GetroService {
                         page,
                         collection_id: this.networkId,
                         'organization_ids[]': company_id,
+                        'status[]': 'active'

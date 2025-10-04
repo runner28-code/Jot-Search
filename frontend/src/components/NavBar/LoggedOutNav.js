@@ -86,7 +86,6 @@ function DesktopNavBarLayout() {
           <button className='bg-royalBlue rounded-md px-9 py-4'>
             <span className='text-white'>Create Account</span>
           </button>
-        </Link>
         <a href={ROUTES.linkedin}>
           <img
             src={linkedin_grey}

@@ -4,7 +4,6 @@ import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
   const {
-    headerText,
     icon,
     IconComponent,
     classOverride,
@@ -27,7 +26,6 @@ export default function DesktopHeader(props) {
         { icon && (
           <img
             src={ icon }
-// Temp comment
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
           />

@@ -25,6 +25,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "^5.0.0",
     "use-persisted-state": "^0.3.3",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,7 +38,6 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [

@@ -7,4 +7,3 @@
 
 */
 -- AlterTable
-ALTER TABLE "History" DROP COLUMN "batch_id",

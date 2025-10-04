@@ -81,3 +81,4 @@ export const IUSER = {
   companyId: "",
   companyName: "",
   annualRevenue: "",
+  companyURL: "",

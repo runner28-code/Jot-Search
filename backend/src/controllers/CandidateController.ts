@@ -85,6 +85,7 @@ export class CandidateController {
       console.log({ body });
       const { id, ...data } = body;
 
+      if (authUser.role !== COORDINATOR) {
         return { message: "You are not authorized to update candidate", result: false };
       }
 
@@ -332,3 +333,5 @@ export class CandidateController {
   @Put("/save")
   async save(
     @Body() body: { candidate: string; company: string },
+    @CurrentUser() authUser: User
+  ) {
