@@ -42,7 +42,6 @@ const ResumePreview = ({ resumeUrl }) => {
             </li>
             <li>Page {page} of {pdfDocument.numPages}</li>
             <li className="next">
-// Temp comment
               <button
                 disabled={nextButtonDisabled}
                 onClick={() => setPage(page + 1)}

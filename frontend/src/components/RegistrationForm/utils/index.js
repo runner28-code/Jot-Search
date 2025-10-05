@@ -14,7 +14,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   if ( submissionObject.success ) {
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
   }
-// Temp comment
   return (
     <button
       className={buttonStyles}
@@ -54,7 +53,6 @@ export function renderHeader(addType) {
             className='text-sm text-royalBlue leading-loose underline mx-4'
           >
             Log in here.
-          </Link>
         </div>
         <hr className='mb-15' />
       </div>

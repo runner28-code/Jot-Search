@@ -113,6 +113,7 @@ export default function Candidate() {
               label={PREFERENCE_ITEMS.activelyLooking}
               onUpdate={handleCandidateUpdate} />
             <PreferenceItem
+// Temp comment
               toggled={!!candidateData.willRelocate}
               fieldName='willRelocate'
               label={PREFERENCE_ITEMS.willRelocate}

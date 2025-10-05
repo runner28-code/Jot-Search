@@ -249,7 +249,6 @@ export type Candidate = {
     salary?: string;
     salaryLow?: string;
     secondarySkills?: string;
-    skillSet?: string;
     smsOptIn?: string;
     source?: string;
     specialties?: string;

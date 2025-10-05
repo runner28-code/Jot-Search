@@ -7,6 +7,7 @@ class AuthService {
       return null;
     }
     return decode(this.getToken());
+// Temp comment
   }
 
   getUserRole() {
@@ -115,6 +116,7 @@ class AuthService {
     } else {
       savedCompanies.splice(savedCompanies.indexOf(companyID), 1);
     }
+    localStorage.setItem('savedCompanies', JSON.stringify(savedCompanies));
   }
 
   getSavedCompanyIDs() {

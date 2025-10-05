@@ -50,6 +50,7 @@ let JobController = class JobController {
                         getroJobInfo: true,
                         company: true,
                     },
+                });
                 console.log({ job });
                 if (job) {
                     return {
@@ -237,7 +238,6 @@ let JobController = class JobController {
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, MainCrud_1.getSavedJobs)(candidate);
         });
-    }
     createJob(body) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, Job_1.createJob)(body);

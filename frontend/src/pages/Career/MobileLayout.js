@@ -169,6 +169,7 @@ function renderAboutCompanySection(careerData) {
     <p
       className='font-spaceGrotesk text-textBlack text-sm mb-10'
       dangerouslySetInnerHTML={{ __html: careerData.company.description || 'No Company Description Available' }}
+    />
     <hr className={hrStyles} />
   </>)
 }

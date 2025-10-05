@@ -41,6 +41,7 @@ export default function CandidateFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
+// Temp comment
   let userRole = AuthService.getUserRole();
 
   const dropdownFilterObject = {};
@@ -86,7 +87,6 @@ export default function CandidateFilterLayout(props) {
           onChange={toggleSkills}
           choices={skills}
         />
-// Temp comment
       </div>
       <div className='flex flex-wrap gap-xxl-4'>
         {renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange)}

@@ -28,7 +28,6 @@ export default function CandidateCard({ data, disableLink }) {
       key={data.id}
     >
       <LinkWrapper 
-// Temp comment
         link={link}
         disableLink={disableLink}
       >

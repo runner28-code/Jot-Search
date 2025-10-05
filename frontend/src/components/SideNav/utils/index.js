@@ -81,6 +81,7 @@ export const candidateChoices = [
   choices.myFavorites,
   choices.careers,
   choices.companies,
+  choices.talentInTulsa,
   choices.logout
 ];
 

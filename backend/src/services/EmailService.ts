@@ -46,6 +46,7 @@ export const sendResetPassword = async (to: string, name: string, token: string)
     console.log('Error during sending invitation');
     console.log(error);
     console.log(JSON.stringify(error.response.body));
+    throw error;
   }
 }
 
@@ -77,7 +78,6 @@ export const sendNewUserNotification = async (to: string, name: string) => {
     console.log(JSON.stringify(error.response.body));
     throw error;
   }
-}
 
 export const sendJobsToCandidates = async (jobs: string[], candidates_emails: string[]) => {
   try {

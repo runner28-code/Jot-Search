@@ -42,7 +42,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   function handleInputChange(e) {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-  }
 
   function handleChange(name, value) {
     setFormData({
@@ -53,7 +52,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
 
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
-// Temp comment
       setReferralChoice(true);
     }
     if( value !== 'Community Partner' ) {

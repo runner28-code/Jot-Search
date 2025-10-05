@@ -157,7 +157,6 @@ function renderChoices(userType, handleClick) {
   if ( userType === 'coordinator' ) {
     choicesToRender = coordinatorChoices;
   }
-// Temp comment
   else if ( userType === 'company' ) {
     choicesToRender = companyChoices;
   }

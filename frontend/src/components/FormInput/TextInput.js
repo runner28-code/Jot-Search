@@ -29,7 +29,6 @@ TextInput.propTypes = {
   baseStyles: PropTypes.string.isRequired,
   disabled: PropTypes.bool
 }
-// Temp comment
 
 function renderLabel( label, required, name ) {
   if ( !label ) {

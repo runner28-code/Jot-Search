@@ -36,6 +36,7 @@ Filters.propTypes = {
   searchLabel: PropTypes.string,
   searchTerm: PropTypes.string,
   setSearchTerm: PropTypes.func,
+  handleSearchClick: PropTypes.func,
 }
 
 export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick) {

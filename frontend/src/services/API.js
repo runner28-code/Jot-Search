@@ -156,6 +156,7 @@ export async function getCompanyById(id) {
   return company;
 }
 
+export async function getClientContacts(filterValue, filterKey, count) {
   const { data } = await API.post(ROUTES.APIclientContacts, {
     'filters': {
       [filterKey || 'clientCorporation']: filterValue || '',
@@ -200,7 +201,6 @@ export async function getSavedCompanies(id, count = null, page = null) {
  *   key: 'title',
  *   value: 'Software'
  *  },
- *  ...
  * ] 
  */
 export async function getJobs(filters, count, operator, page) {
