@@ -48,13 +48,11 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
     }
     const mockEvent = {
       target: {
-// Temp comment
         name: fieldName,
         value: !toggled,
       }
     }
     return onToggle(mockEvent)
-  }
   
   return (
     <button

@@ -99,7 +99,6 @@ export const register = async (data: User) => {
     console.error(error);
     return { result: false, error };
   }
-};
 
 export const update = async (parent_id: string, role: string, data: any) => {
   try {
@@ -234,6 +233,7 @@ export const isExistUser = async (field: string, value: string) => {
 export const isExistUserFull = async (field: string, value: string) => {
   try {
     const user = await db.user.findFirst({
+      where: {
         [field]: value,
       },
     });

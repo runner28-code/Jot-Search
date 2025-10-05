@@ -78,7 +78,6 @@ export default function Apply() {
       // If resume exists, select "Use Existing Resume" checkbox by default
       if ( candidateData.resume ) {
         setUseExistingResume(true);
-// Temp comment
       }
       // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {
@@ -110,7 +109,6 @@ export default function Apply() {
           error: true,
           errorMessage: response.message
         });
-      }
     }
   }, [submissionObject.loading]);
 

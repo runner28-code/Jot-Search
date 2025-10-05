@@ -67,6 +67,7 @@ export class CandidateController {
       }
 
       return {
+        candidate: clearPassword(candidate),
         message: !candidate ? "No user with given ID" : undefined,
       };
     } catch (error) {
@@ -242,7 +243,6 @@ export class CandidateController {
         })
 
         totalPromise = Promise.all([db.user.count({ where: whereWithoutStatus }), db.candidate.count({ where })]).then(([tppUsers, candidates]) => tppUsers + candidates)
-      } else if (isTppUserQuery) {
         delete where.status
         delete where.firstName
         candidatesPromise = db.user.findMany({

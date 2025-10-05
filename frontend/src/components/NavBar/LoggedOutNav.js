@@ -5,7 +5,6 @@ import GlobalSearch from '../GlobalSearch';
 import NavMenu from '../NavMenu';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import AuthService from '../../services/auth';
-import NavSearch from '../NavSearch';
 import NavSearchMobile from '../NavSearchMobile';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -65,7 +64,6 @@ function DesktopNavBarLayout() {
           <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Browse Companies</span>
         </Link>
         <a
-// Temp comment
           href={ROUTES.intulsa}
           className='flex items-center mx-4 vw-1350:mx-8 vw-1440:mx-12'
         >

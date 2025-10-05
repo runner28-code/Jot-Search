@@ -5,7 +5,7 @@ export type Job = {
   externalId?: string;
   description?: string;
   address1?: string;
-  city?: string;
+  address2?: string;
   state?: string;
   zip?: string;
   country_id?: string;

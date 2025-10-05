@@ -182,6 +182,7 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
         acc[choice] = choice;
       } else {
         acc[choice.name] = choice.name;
+      }
       return acc;
     }, {});
     choiceObject = objectifiedChoices;

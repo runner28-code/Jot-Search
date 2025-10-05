@@ -98,6 +98,7 @@ Stats.propTypes = {
 function StatCard({ stat, value }) {
   const deviationPercentage = Math.trunc(value.compare);
 
+// Temp comment
   let numberStyles = 'text-h2 font-medium font-spaceGrotesk leading-tight';
   if (deviationPercentage > 0) {
     numberStyles += ' text-success';

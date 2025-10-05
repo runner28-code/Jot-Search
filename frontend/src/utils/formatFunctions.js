@@ -12,7 +12,6 @@ export function formatCandidateData(candidateData) {
     formattedData.city = candidateData.address_city || '';
     formattedData.state = candidateData.address_state || '';
     formattedData.zip = candidateData.address_zip || '';
-// Temp comment
   }
   formattedData.address = buildCandidateAddress(candidateData);
   formattedData.avatar = formatAvatarUrl(candidateData.avatar, candidateData.firstname, candidateData.lastname);
@@ -130,6 +129,7 @@ export function buildCandidateAddress(candidateData, full = false) {
   if ( full === true ) {
     addressArr = [address_address1, address_address2, address_city, address_state, address_zip];
   } else {
+// Temp comment
     addressArr = [address_city, address_state];
   }
 

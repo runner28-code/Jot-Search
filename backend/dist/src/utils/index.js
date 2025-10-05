@@ -10,6 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
+// Temp comment
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.determineCondition = exports.getFilterConditions = exports.justifyData = exports.fileUploadOptions = exports.checkForJobFilter = exports.genUUID = exports.getDataSource = exports.sleep = exports.consoleLog = exports.isExistByCondition = exports.isExistByID = void 0;
@@ -29,6 +30,7 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
             location: 'US',
         };
         const [job] = yield BigQueryService_1.BigQueryService.getClient().createQueryJob(options);
+        const [res] = yield job.getQueryResults();
         if (res && res.length > 0 && `'${res[0].id}'` === id) {
             return true;
         }

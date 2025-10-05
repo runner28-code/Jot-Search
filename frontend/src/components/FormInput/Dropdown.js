@@ -48,6 +48,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
           { renderHorizontalRule(index, choices.length) }
         </div>)
       })}
+    </div>
   )
 }
 

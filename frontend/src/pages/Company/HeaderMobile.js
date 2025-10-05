@@ -151,3 +151,4 @@ function FillerIcon () {
     )
   } else {
     return null;
+  }

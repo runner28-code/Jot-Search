@@ -9,7 +9,6 @@ import * as ROUTES from '../../routes';
 export default function ExpertiseLinks() {
   const linkStyles = 'flex flex-col items-center mx-15';
   const iconStyles = 'w-54 h-54 mb-10';
-// Temp comment
   const textStyles = 'text-ml text-darkGray';
 
   return (
@@ -44,7 +43,6 @@ export default function ExpertiseLinks() {
             className={iconStyles}
           />
           <span className={textStyles}>Sales & Business</span>
-          <span className={textStyles}>Development</span>
         </Link>
         {/* Marketing */}
         <Link

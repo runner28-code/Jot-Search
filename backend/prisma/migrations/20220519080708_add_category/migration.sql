@@ -9,3 +9,4 @@ CREATE TABLE "Category" (
     "occupation" TEXT,
     "type" TEXT,
     "_score" DOUBLE PRECISION,
+

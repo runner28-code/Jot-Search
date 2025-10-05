@@ -126,6 +126,7 @@ export async function getCompanies(filterValue, filterKey, count, page) {
 }
 
 export async function getCompaniesFull(filterValue, filterKey, count, page) {
+// Temp comment
   const { data } = await API.post(ROUTES.APIcompanies, {
     'filters': [
       {
@@ -201,6 +202,7 @@ export async function getSavedCompanies(id, count = null, page = null) {
  *   key: 'title',
  *   value: 'Software'
  *  },
+ *  ...
  * ] 
  */
 export async function getJobs(filters, count, operator, page) {

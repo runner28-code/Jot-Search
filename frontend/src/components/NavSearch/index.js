@@ -202,6 +202,7 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
         id={ placeholder }
         placeholder={ !isOpen ? '' : placeholderText  }
         value={ searchTerm }
+        onChange={ handleChange }
         className={ !isOpen ? offObject.inputStyles : styleObject.inputStyles } />
     </label>
   )

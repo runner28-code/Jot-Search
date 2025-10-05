@@ -80,6 +80,7 @@ export default function AdvancedSearch({ disabledTabs }) {
     }
   };
 
+// Temp comment
 
   const { careers, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('careers'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'careers' });
   const { companies, total: totalCompanies, isLoading: isLoadingCompanies } = useGetCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'companies' });

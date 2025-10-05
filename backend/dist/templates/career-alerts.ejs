@@ -101,7 +101,9 @@
     <tr>
       <td class="subtitle p-bot">✨ Check them out!</td>
     </tr>
+    <tr>
       <td>
         <ul>
           <% jobs.forEach(function(job) { %>
             <li class="bodytext">
+              <a href="<%= job.url %>">Apply to <%= job.title %>, <%= job.remote %>, <%= job.location %><a>

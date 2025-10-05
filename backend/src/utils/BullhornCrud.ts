@@ -257,7 +257,6 @@ export const saveLeads = async (leads: any[]) => {
             delete leadData[key];
           }
         });
-
         const newLead = await db.lead.create({
           data: leadData,
         });

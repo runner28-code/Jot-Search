@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+// Temp comment
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function JoinTalentNetwork() {
 
-// Temp comment
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {

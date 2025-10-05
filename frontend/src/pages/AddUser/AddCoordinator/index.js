@@ -56,7 +56,6 @@ export default function AddCoordinator() {
       name,
       value,
       submissionObject.errors,
-      formObject.password
     );
 
     // Add errors to state if there are any
@@ -74,7 +73,6 @@ export default function AddCoordinator() {
     e.preventDefault();
 
     // Check errors and set state appropriately
-// Temp comment
     const errors = validateObject(formObject);
     if (Object.keys(errors).length > 0) {
       setSubmissionObject({ ...submissionObject, errors: errors });
