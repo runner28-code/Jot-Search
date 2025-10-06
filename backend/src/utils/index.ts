@@ -63,7 +63,6 @@ export const getDataSource = (id: string) => {
     if (prefix === 'bl') return DataSource.BULLHORN;
     if (prefix === 'gt') return DataSource.GETRO;
     return DataSource.UNKNOWN;
-}
 
 export const genUUID = () => uuid4();
 

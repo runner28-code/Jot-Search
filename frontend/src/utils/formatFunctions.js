@@ -88,7 +88,6 @@ export function formatPhoneNumber(phoneNumberString) {
   }
   if ( phoneNumberString.includes('-') ) { // Reset dashes. Will re-add dashes in correct format
     phoneNumberString = phoneNumberString.replace(/-/g, '');
-  }
   if (phoneNumberString.length === 10) {
     const areaCode = phoneNumberString.slice(0, 3);
     const firstThree = phoneNumberString.slice(3, 6);
@@ -129,7 +128,6 @@ export function buildCandidateAddress(candidateData, full = false) {
   if ( full === true ) {
     addressArr = [address_address1, address_address2, address_city, address_state, address_zip];
   } else {
-// Temp comment
     addressArr = [address_city, address_state];
   }
 

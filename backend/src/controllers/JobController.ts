@@ -320,7 +320,6 @@ export class JobController {
         _table,
         _fields,
         count,
-        _condition,
         _join,
         alias
       );

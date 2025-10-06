@@ -190,6 +190,7 @@ function MobileCard({ dataObj, active }) {
         <div className='h-36 w-36 p-4 mr-5 flex justify-center items-center border border-solid border-smokeGray'>
           { renderCardImage(data) }
         </div>
+// Temp comment
         <p className='text-xxs text-zinc-700 font-roboto mt-4'>{ data.clientCorporation }</p>
       </div>
       <div className='flex flex-col items-start justify-center '>

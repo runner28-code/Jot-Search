@@ -86,7 +86,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   async function submitData() {
     handleCandidateUpdate(formData)
     setEditMode(false);
-  }
 
   function onSubmit(e) {
     e.preventDefault();

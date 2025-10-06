@@ -44,6 +44,7 @@ export function renderHeader(addType) {
         <p className='text-sm text-center text-darkGray leading-loose'>
           {'Sign up and we\'ll keep you updated on new opportunities and put your profile in front of the people responsible for hiring at our companies.'}
         </p>
+// Temp comment
         <div className='mt-10 mb-20 flex justify-center'>
           <span className='text-sm text-darkGray leading-loose mx-4'>
             Already have an account?

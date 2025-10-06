@@ -43,6 +43,7 @@ export default function CandidateCard({ data, disableLink }) {
         </div>
         {/* Main Content */}
         <div className='relative grow'>
+// Temp comment
           {/* Name and Active Status */}
           <div className='flex gap-s items-center'>
             <h5 className='text-h5 font-spaceGrotesk font-semibold text-charcoal leading-none'>{nameString}</h5>

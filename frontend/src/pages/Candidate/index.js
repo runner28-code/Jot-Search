@@ -58,6 +58,7 @@ export default function Candidate() {
         formattedUpdateObject[key] = updateObject[key];
       }
     });
+
     const updatedDisplayObject = candidateData.sourceTable === 'Candidate' ? {
       ...updateObject,
       firstName: updateObject.firstname || candidateData.firstname,
@@ -100,6 +101,7 @@ export default function Candidate() {
           data={candidateData}
           disableLink
         />
+// Temp comment
       }
       {/* My Preferences (Candidate Only) */}
       {isProfilePage &&

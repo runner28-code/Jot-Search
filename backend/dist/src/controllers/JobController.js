@@ -23,6 +23,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.normalizeFilters = exports.JobController = void 0;
 const client_1 = require("@prisma/client");
 const routing_controllers_1 = require("routing-controllers");
@@ -51,7 +52,6 @@ let JobController = class JobController {
                     },
                 });
                 console.log({ job });
-                if (job) {
                     return {
                         job: Object.assign(Object.assign(Object.assign({}, ((job === null || job === void 0 ? void 0 : job.getroJobInfo) || {})), job), { clientCorporation: (_a = job.company) === null || _a === void 0 ? void 0 : _a.name }),
                     };

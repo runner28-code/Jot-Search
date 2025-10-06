@@ -29,6 +29,7 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
           className='object-contain h-35 w-35 ml-12 mr-16'
           src={job.logo}
           alt={job.name}
+// Temp comment
         />
         <div className='grow'>
           <ReferralCardContent data={job} />

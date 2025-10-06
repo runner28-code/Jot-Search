@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
+// Temp comment
 import CareerCard from '../ResultCard/CareerCard';
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
@@ -16,6 +17,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     },
     {
       key: 'companyId',
+      value: companyId
     }
   ];
 

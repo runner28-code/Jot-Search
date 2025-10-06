@@ -17,7 +17,6 @@ import {
   renderErrorBlock,
   renderHeader
 } from './utils';
-// Temp comment
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
@@ -100,7 +99,6 @@ export default function RegistrationForm(loggedIn) {
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
-      if ( result === true ) {
         // Set success to true if on add-user page, navigate user to login if not
         if ( addType === 'coordinator' ) {
           return setSubmissionObject({

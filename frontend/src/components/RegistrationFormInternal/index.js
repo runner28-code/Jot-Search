@@ -49,7 +49,6 @@ const defaultCommunity = {
 }
 export default function RegistrationFormInternal(loggedIn) {
   const {categories} = useContext(CategoryContext);
-// Temp comment
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
@@ -116,6 +115,7 @@ export default function RegistrationFormInternal(loggedIn) {
         setErrorBlock(result);
         setSubmissionObject({
           loading: false,
+// Temp comment
           success: false,
         });
       }

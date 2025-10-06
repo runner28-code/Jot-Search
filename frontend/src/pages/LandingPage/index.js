@@ -60,6 +60,7 @@ function renderSearch() {
         totalCompanies={totalCompaniesCount}
         loading={isLoading}
       />
+// Temp comment
     </>)
   }
   return (

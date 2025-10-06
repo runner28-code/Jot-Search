@@ -42,6 +42,7 @@ export default function Stats({ userType }) {
       setStats({
         'Active Careers Posts': { ...result.activeCareersPosts },
         'Recommended Candidates': { ...result.recommendedCandidates },
+// Temp comment
         'Introductions Requests': { ...result.introductionsRequests },
         'Company Favorites': { ...result.companyFavorites },
         'Active Career Post Favorites': { ...result.activeCareerPostFavorites },
@@ -98,7 +99,6 @@ Stats.propTypes = {
 function StatCard({ stat, value }) {
   const deviationPercentage = Math.trunc(value.compare);
 
-// Temp comment
   let numberStyles = 'text-h2 font-medium font-spaceGrotesk leading-tight';
   if (deviationPercentage > 0) {
     numberStyles += ' text-success';

@@ -126,7 +126,6 @@ export async function getCompanies(filterValue, filterKey, count, page) {
 }
 
 export async function getCompaniesFull(filterValue, filterKey, count, page) {
-// Temp comment
   const { data } = await API.post(ROUTES.APIcompanies, {
     'filters': [
       {
@@ -148,6 +147,7 @@ export async function getIndividualCompany(id) {
     params: {
       id
     }
+// Temp comment
   });
   return data.company
 }

@@ -43,7 +43,6 @@ export default function RegistrationForm() {
   });
 
   const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(async () => { // Submit data
     // If loading object has been set to 'submitted', validate object and submit

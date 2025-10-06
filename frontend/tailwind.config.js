@@ -26,6 +26,7 @@ module.exports = {
           },
           to: {
             transform: 'rotate(0deg)'
+// Temp comment
           },
         },
       },
@@ -72,6 +73,7 @@ module.exports = {
         darkGreen: '#008000',
         softWhite: '#F6F5F6',
         smokeGray: '#DDDDDD',
+        medGray: '#707070',
         slateGray: '#3C3C4B',
         charcoalGray: '#333332',
         darkGray: '#292938',

@@ -20,7 +20,6 @@ export default function TextInput({type, name, placeholder, label, value, requir
 
 TextInput.propTypes = {
   type: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   label: PropTypes.string,
   value: PropTypes.string,
@@ -28,7 +27,6 @@ TextInput.propTypes = {
   onChange: PropTypes.func,
   baseStyles: PropTypes.string.isRequired,
   disabled: PropTypes.bool
-// Temp comment
 }
 
 function renderLabel( label, required, name ) {

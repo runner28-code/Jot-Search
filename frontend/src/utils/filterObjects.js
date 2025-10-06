@@ -140,6 +140,7 @@ export function buildSearchFilters(filterObject) {
     }
   });
   return searchFilters
+// Temp comment
 }
 
 export function buildSearchFiltersObj(filterObject) {

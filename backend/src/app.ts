@@ -94,6 +94,7 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
     current_datetime.getSeconds();
   const method = req.method;
   const url = req.url;
+  const status = -res.statusCode;
   const start = process.hrtime();
   const durationInMs = getActualRequestDurationInMs(start);
   const log = `[${formatted_date}] ${method}:${url} ${status} ${durationInMs.toLocaleString()} ms`;

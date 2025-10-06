@@ -48,7 +48,6 @@ export default function CandidateFilterLayout(props) {
   if (userRole === 'coordinator') {
     dropdownFiltersCoord.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
-// Temp comment
     });
     checkboxFiltersCoord.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
@@ -85,7 +84,6 @@ export default function CandidateFilterLayout(props) {
           required={true}
           value={filterObject.skills}
           onChange={toggleSkills}
-          choices={skills}
         />
       </div>
       <div className='flex flex-wrap gap-xxl-4'>
