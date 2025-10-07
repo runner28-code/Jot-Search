@@ -4,9 +4,9 @@ import {BsClipboardCheck} from 'react-icons/bs';
 import ResultContainer from '../../features/ResultContainer';
 import { getAppliedJobs } from '../../services/API';
 import AuthService from '../../services/auth';
+import useWindowDimensions from '../../hooks/windowDimensions';
 
 
-export default function Applications() {
   const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({

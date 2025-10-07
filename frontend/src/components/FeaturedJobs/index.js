@@ -70,6 +70,7 @@ export default function FeaturedJobs() {
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           View all
         </Link>
+      </div>
     </section>
   )
 }
@@ -86,7 +87,6 @@ function renderColorShapes() {
 
 function RenderImage({image}) {
   const containerStyles = 'w-48 h-48 mb-6 ';
-  const iconStyles = 'w-full h-full ';
   if( !image ) {
     return(<>
       <div className={ containerStyles + 'outline outline-1 outline-neutral-300 p-8' }>

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import Pill from '../../assets/icons/pill.svg';
 
 export default function SourceIdentifier( type ) {

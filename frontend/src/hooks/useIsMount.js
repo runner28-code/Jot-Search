@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
+// Temp comment
 
 export const useIsMount = () => {
-// Temp comment
   const isMountRef = useRef(true);
   useEffect(() => {
     isMountRef.current = false;

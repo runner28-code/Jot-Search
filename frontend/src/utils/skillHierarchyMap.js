@@ -313,7 +313,6 @@ export const skills = [
   'Public Policy',
   'Public Relations',
   'Public Speaking',
-// Temp comment
   'Pumps',
   'Purchasing',
   'Python',

@@ -7,6 +7,7 @@ import API from '../../services/API';
 import AuthService from '../../services/auth';
 
 export default function Login() {
+  const [error, setError] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();

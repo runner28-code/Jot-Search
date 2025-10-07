@@ -42,6 +42,7 @@ export default function FormInput(props) {
       return <FileInput
         type={type}
         name={name}
+        label={label}
         placeholder={placeholder}
         value={value}
         required={required}
@@ -88,7 +89,6 @@ export default function FormInput(props) {
         label={label}
         required={required}
         placeholder={placeholder}
-        value={value}
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}

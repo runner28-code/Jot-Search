@@ -12,4 +12,3 @@ RUN npm install
 RUN apk del native-deps
 
 RUN npm run build
-

@@ -21,6 +21,7 @@ import {
   buildSearchFilters,
   defaultCandidateFilterState
 } from '../../utils/filterObjects';
+
 const NUM_ITEMS_PER_TYPE = 5
 
 export default function NavSearchMobile({ placeholder }) {
@@ -78,6 +79,7 @@ export default function NavSearchMobile({ placeholder }) {
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
+// Temp comment
 
   const combinedResults = {
     jobs: jobs || [],

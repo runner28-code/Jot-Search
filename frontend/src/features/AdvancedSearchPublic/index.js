@@ -120,7 +120,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   function handleSearchClick() {
     setPage(1);
   }
-// Temp comment
 
   function handleTabChange(tabChoice) {
     if (tabChoice === 'jobs') {

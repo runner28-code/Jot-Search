@@ -26,3 +26,4 @@ export default function CandidateDashboard() {
         <AdvancedSearch />
       </div>
     </>
+  )

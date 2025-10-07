@@ -36,7 +36,6 @@ DashboardMinified.propTypes = {
 
 function LinkSwap ({ location, loggedIn }) {
 
-// Temp comment
   if(location === 'career') {
     return (
       <Link

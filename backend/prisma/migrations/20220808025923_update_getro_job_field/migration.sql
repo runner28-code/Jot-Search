@@ -6,5 +6,6 @@
 
 */
 -- AlterTable
+ALTER TABLE "GetroJobInfo" ADD COLUMN     "bounty" TEXT,
 ADD COLUMN     "closed_at" TIMESTAMP(3),
 ADD COLUMN     "deactivated_at" TIMESTAMP(3),

@@ -179,6 +179,7 @@ module.exports = {
       },
       borderWidth: {
         '1.5': '1.5px',
+        '3': '3px',
       },
       minWidth: {
         '88': '22rem',

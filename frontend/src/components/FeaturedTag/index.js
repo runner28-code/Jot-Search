@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import pyramid from '../../assets/icons/pyramid-alt.svg';
 
 export default function FeaturedTag ({ hide, addClass }) {

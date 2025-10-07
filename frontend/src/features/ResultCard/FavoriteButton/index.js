@@ -46,12 +46,14 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
       src={ isFavorite ? favoriteIconFilled : favoriteIconOutline }
       className={addClass ? styles + addClass : styles}
       onClick={handleFavoriteClick}
+// Temp comment
     />
   )
 }
 
 FavoriteButton.propTypes = {
   type: PropTypes.string.isRequired,
+  addClass: PropTypes.string,
   data: PropTypes.shape({
     id: PropTypes.string,
     candidate: PropTypes.string,

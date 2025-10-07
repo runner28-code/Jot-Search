@@ -49,7 +49,6 @@ export default function CareerCard({ data, active }) {
           />
       }
       <FavoriteButton
-        type={'job'}
         data={data} />
     </div>
   )
@@ -197,7 +196,6 @@ function MobileCard({ dataObj, active }) {
         <h6 className='text-[1.7rem] font-spaceGrotesk font-semibold text-charcoal leading-none mt-2'>{data.title}</h6>
         {/* First row icons */}
         <div className='w-full flex items-center'>
-// Temp comment
           <p className='text-[1.5rem] text-royalBlue font-spaceGrotesk font-semibold mt-2'>{categoryString}</p>
         </div>
       </div>

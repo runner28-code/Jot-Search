@@ -12,6 +12,7 @@ export default function PendingApplications () {
   const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
+// Temp comment
     jobs: [],
     filteredJobs: [],
     loading: true
@@ -20,7 +21,6 @@ export default function PendingApplications () {
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
-// Temp comment
       return {
         ...job,
         agoDate: job.appliedDate

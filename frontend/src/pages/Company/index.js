@@ -16,6 +16,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function Company() {
+// Temp comment
   const { width } = useWindowDimensions();
   const { id } = useParams();
   const [companyData, setCompanyData] = useState({});
@@ -102,6 +103,7 @@ export default function Company() {
             className='border border-2 border-royalBlue text-royalBlue py-6 px-20 text-lg rounded-xl mb-12'
             onClick={() => navigate(-1)}
           >
+          Back
           </button>
         </div>
         <RenderInvite

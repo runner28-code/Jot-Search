@@ -8,6 +8,7 @@ export type User = {
   password?: string;
   role: string;
   address1?: string;
+  address2?: string;
   city?: string;
   state?: string;
   zip?: string;
@@ -21,7 +22,6 @@ export type User = {
   workspace?: string;
   referredBy?: string;
   roles?: string;
-
   description?: string;
   phone?: string;
   status?: string;

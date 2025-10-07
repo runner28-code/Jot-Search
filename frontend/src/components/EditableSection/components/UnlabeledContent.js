@@ -5,8 +5,8 @@ export default function UnlabeledContent({ contentText, propertyName }) {
   if ( propertyName === 'resume' ) {
     return renderResumePreview(contentText);
   }
+  return (
     <p 
-      className='text-xl'
       dangerouslySetInnerHTML={ { __html: contentText } }
     />
   )

@@ -13,6 +13,7 @@ export default function InvitationsToApply () {
     loading: true
   });
 
+// Temp comment
   useEffect( async () => {
     const appliedJobs = await getInvitationsToApply(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
@@ -21,6 +22,7 @@ export default function InvitationsToApply () {
         agoDate: job.appliedDate
       }});
     setAppliedJobsObject({
+      jobs: appliedJobsWithDate,
       loading: false
     });
   }, []);

@@ -95,7 +95,6 @@ function HeaderContent({ companyData }) {
 
 HeaderContent.propTypes = {
   companyData: PropTypes.shape({
-// Temp comment
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,
@@ -205,7 +204,6 @@ function renderLinkedIn( url, headerRowTextStyles ) {
   if( !url ) {
     return (
       <a
-        className={textStyles}
         href='https://www.linkedin.com/'
       >
       LinkedIn
