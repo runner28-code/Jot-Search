@@ -115,7 +115,6 @@ export default function RegistrationFormInternal(loggedIn) {
         setErrorBlock(result);
         setSubmissionObject({
           loading: false,
-// Temp comment
           success: false,
         });
       }

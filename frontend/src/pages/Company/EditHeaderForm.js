@@ -5,6 +5,7 @@ import { FaPhoneAlt } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { appendPathToBaseUrl } from '../../services/API';
 
+// Temp comment
 export default function EditHeaderForm({ candidateData, handleCandidateUpdate, setEditMode, iconStyles }) {
   const [formData, setFormData] = useState({
     id: candidateData.id,
@@ -26,4 +27,5 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     setFormData({ ...formData, [name]: value });
   }
 
+  const handleCancel = () => {
     setEditMode(false);

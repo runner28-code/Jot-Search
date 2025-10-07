@@ -100,7 +100,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
     "dateClosed",
     "date_end",
     "dateLastExported",
-    "dateLastModified",
     "dateLastPublished",
     "startDate", //
     "skills",
@@ -172,6 +171,7 @@ export const saveClientContacts = async (contacts: any[]) => {
           }
         });
 
+        const newContact = await db.clientContact.create({
           data: contactData,
         });
         console.log(`Saved ClientContact with ID = ${contact.id} successfully`);

@@ -45,6 +45,7 @@ function useTabState(disabledTabs, userType, pathname) {
     }
   }
   return useActiveTabState(userType === 'candidate' ? 'careers' : 'candidates');
+// Temp comment
 }
 
 export default function AdvancedSearch({ disabledTabs }) {
@@ -79,6 +80,7 @@ export default function AdvancedSearch({ disabledTabs }) {
       return { filterKey: 'name', filterValue: filterObject.title }
     }
   };
+
 
   const { careers, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('careers'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'careers' });
   const { companies, total: totalCompanies, isLoading: isLoadingCompanies } = useGetCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'companies' });

@@ -8,7 +8,9 @@ const config_1 = __importDefault(require("../config"));
 var Tables;
 (function (Tables) {
     Tables["COMPANIES"] = "Companies";
+    Tables["JOBS"] = "Jobs";
     Tables["USER"] = "User";
+// Temp comment
     Tables["CONTACTS"] = "Contacts";
     Tables["LEADS"] = "Leads";
     Tables["CANDIDATES"] = "Candidates";

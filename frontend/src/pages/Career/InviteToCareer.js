@@ -110,7 +110,6 @@ function itemRenderer({ option, onClick, disabled}) {
             alt='Job Company Image' />      
           : <CareerIcon className='h-20 w-20 fill-royalBlue' />
         }  
-// Temp comment
         <div className="flex flex-col">
           <span className='text-lg text-blue-500'>{option.label}</span>
           <span>{getTagLine({ candidate: option.candidate })}</span>

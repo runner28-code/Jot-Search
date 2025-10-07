@@ -21,6 +21,7 @@ const checkboxFiltersCoord = [
   'Open to Relocation',
   'Authorized to work in the US',
 ];
+// Temp comment
 const checkboxFilters = [
   'Authorized to work in the US',
   'Open to Relocation',
@@ -38,7 +39,6 @@ export default function CandidateFilterLayout(props) {
     clearFilters,
   } = props;
   let userRole = AuthService.getUserRole();
-// Temp comment
 
   const dropdownFilterObject = {};
   const checkboxFilterObject = {};

@@ -57,7 +57,6 @@ class AuthService {
   logout() {
     this.clearStorage();
     window.location.assign('/landing-page');
-// Temp comment
   }
 
   clearStorage() {
@@ -93,7 +92,6 @@ class AuthService {
       console.log(e);
       localStorage.setItem('savedCandidates', JSON.stringify([]));
     }
-  }
 
   toggleSavedJob(jobID, action) {
     const savedJobs = this.getSavedJobIDs();

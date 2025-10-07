@@ -190,7 +190,6 @@ function MobileCard({ dataObj, active }) {
         <div className='h-36 w-36 p-4 mr-5 flex justify-center items-center border border-solid border-smokeGray'>
           { renderCardImage(data) }
         </div>
-// Temp comment
         <p className='text-xxs text-zinc-700 font-roboto mt-4'>{ data.clientCorporation }</p>
       </div>
       <div className='flex flex-col items-start justify-center '>
@@ -198,6 +197,7 @@ function MobileCard({ dataObj, active }) {
         <h6 className='text-[1.7rem] font-spaceGrotesk font-semibold text-charcoal leading-none mt-2'>{data.title}</h6>
         {/* First row icons */}
         <div className='w-full flex items-center'>
+// Temp comment
           <p className='text-[1.5rem] text-royalBlue font-spaceGrotesk font-semibold mt-2'>{categoryString}</p>
         </div>
       </div>

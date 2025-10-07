@@ -5,6 +5,7 @@ import ExpertiseLinks from '../../components/ExpertiseLinks';
 import ExpertiseLinksMobile from '../../components/ExpertiseLinksMobile';
 import JoinTalentNetwork from '../../components/JoinTalentNetwork';
 import FeaturedJobs from '../../components/FeaturedJobs';
+// Temp comment
 import FeaturedCompanies from '../../components/FeaturedCompanies';
 import FeaturedCompaniesMobile from '../../components/FeaturedCompaniesMobile';
 import BusinessBooming from '../../components/BusinessBooming';
@@ -60,7 +61,6 @@ function renderSearch() {
         totalCompanies={totalCompaniesCount}
         loading={isLoading}
       />
-// Temp comment
     </>)
   }
   return (

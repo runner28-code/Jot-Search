@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
-// Temp comment
 import AuthService from '../../services/auth';
 
 // Images
@@ -37,6 +36,7 @@ DashboardMinified.propTypes = {
 
 function LinkSwap ({ location, loggedIn }) {
 
+// Temp comment
   if(location === 'career') {
     return (
       <Link

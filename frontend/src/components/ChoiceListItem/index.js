@@ -11,7 +11,6 @@ function renderHorizontalRule(isLastItem) {
 export default function ChoiceListItem({ job, handleClick, isLastItem }) {
   const listItemStyles = 'w-90% h-45 px-4 py-2 m-1 flex flex-col justify-between rounded-2xl cursor-pointer ';
 
-  function handleItemClick(e) {
     e.stopPropagation();
     handleClick(job.id);
   }
@@ -29,7 +28,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
           className='object-contain h-35 w-35 ml-12 mr-16'
           src={job.logo}
           alt={job.name}
-// Temp comment
         />
         <div className='grow'>
           <ReferralCardContent data={job} />

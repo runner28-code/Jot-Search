@@ -101,7 +101,6 @@ export default function Candidate() {
           data={candidateData}
           disableLink
         />
-// Temp comment
       }
       {/* My Preferences (Candidate Only) */}
       {isProfilePage &&

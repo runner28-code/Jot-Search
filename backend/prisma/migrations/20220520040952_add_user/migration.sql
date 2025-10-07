@@ -27,7 +27,6 @@ CREATE TABLE "User" (
     "status" TEXT,
     "seniority" TEXT,
     "username" TEXT,
-    "logo" TEXT,
     "companyName" TEXT,
     "annualRevenue" TEXT,
     "companyURL" TEXT,

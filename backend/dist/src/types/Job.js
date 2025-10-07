@@ -23,3 +23,4 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "onSite",
     "salary",
     "salaryUnit",
+    "startDate",
