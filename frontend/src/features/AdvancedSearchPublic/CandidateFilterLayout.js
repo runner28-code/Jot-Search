@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
+import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
 const dropdownFiltersCoord = [
@@ -73,7 +74,6 @@ export default function CandidateFilterLayout(props) {
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />
-        <button
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
         >

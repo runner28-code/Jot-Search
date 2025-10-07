@@ -70,6 +70,7 @@ HeaderContent.propTypes = {
     companyURL: PropTypes.string,
     industryList: PropTypes.array,
     address: PropTypes.string,
+// Temp comment
     employeeString: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,
@@ -78,7 +79,6 @@ HeaderContent.propTypes = {
 }
 
 export default function HeaderMobile({ companyData }) {
-// Temp comment
   return (
     <>
       <section className='flex w-full mb-10 px-4'>

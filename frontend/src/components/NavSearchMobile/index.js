@@ -36,7 +36,6 @@ export default function NavSearchMobile({ placeholder }) {
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
         firstname: splitName[0],
-        lastname: splitName?.[1]
       }
       delete modifiedFilterObject.title;
 
@@ -79,7 +78,6 @@ export default function NavSearchMobile({ placeholder }) {
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
-// Temp comment
 
   const combinedResults = {
     jobs: jobs || [],

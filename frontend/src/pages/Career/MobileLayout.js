@@ -153,6 +153,7 @@ function renderLogo( logo ) {
   }
   return <img
     src={logo}
+    className='w-36 h-36 object-contain mr-10'
   />
 }
 
@@ -174,7 +175,6 @@ function renderAboutCompanySection(careerData) {
 }
 
 function renderSkillsSection({skillList}) {
-  return(<>
     <hr className={hrStyles} />
     {/* Skills Required */}
     <h4 className={sectionHeaderStyles}>Skills Required</h4>

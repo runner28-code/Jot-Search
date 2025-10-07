@@ -338,7 +338,6 @@ function NavFooterMobile() {
         </Link>
         <Link
           to={ROUTES.careers}
-          className={linkStyle}
         >Find Careers
         </Link>
         <Link

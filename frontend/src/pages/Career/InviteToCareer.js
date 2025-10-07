@@ -30,6 +30,7 @@ export default function InviteToCareer({ candidate }) {
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();
+    setSelected(selected.filter(item => item.value !== value))
   }
 
   const SelectedValues = () => {
@@ -74,7 +75,6 @@ export default function InviteToCareer({ candidate }) {
         <button 
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
           onClick={async () => {
-            console.log({selected})
             const res = await sendJobsToCandidates({ jobIds: selected.map((option) => option.value) , candidateIds: candidate.id})
             console.log({res})
             if(res.result){

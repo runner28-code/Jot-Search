@@ -12,7 +12,6 @@ export default function PendingApplications () {
   const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
-// Temp comment
     jobs: [],
     filteredJobs: [],
     loading: true
@@ -45,7 +44,6 @@ export default function PendingApplications () {
         {
           appliedJobsObject.loading ?
             <LoadingSpinner />
-            :
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
               return(<>
                 <CareerCard

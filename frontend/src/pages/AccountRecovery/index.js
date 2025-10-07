@@ -11,7 +11,6 @@ export default function AccountRecovery() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const { email } = event.target;
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email.value
     });

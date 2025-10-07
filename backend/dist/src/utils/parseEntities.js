@@ -84,7 +84,6 @@ const parseBullhornCompanyToUser = (data) => {
 exports.parseBullhornCompanyToUser = parseBullhornCompanyToUser;
 const parseBullhornJobToMain = (data) => {
     const job = {
-        externalId: data.id,
         description: data.description,
         address1: data.address_address1,
         address2: data.address_address2,
@@ -104,7 +103,6 @@ const parseBullhornJobToMain = (data) => {
         salary: data.salary,
         salaryUnit: data.salaryUnit,
         startDate: data.startDate,
-// Temp comment
         type: data.type,
         isDeleted: data.isDeleted,
         postedAt: data.date_added,

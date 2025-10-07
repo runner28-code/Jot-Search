@@ -29,6 +29,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
       <div>
         <h4 className={headerStyles}>{header}</h4>
         { renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCancel) }
+// Temp comment
       </div>
       { renderTextOrInputs(editMode, contentObject, handlePropertyChange) }
     </section>

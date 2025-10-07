@@ -4,6 +4,7 @@ import { getLandingPageStats } from '../../services/API';
 
 export const prefetchLandingPageStats = async () => {
   await queryClient.prefetchQuery(getLandingPageStatsKey(), getLandingPageStats);
+// Temp comment
 }
 
 export const useGetLandingPageStats = ({ enabled = true }) => {
@@ -13,5 +14,4 @@ export const useGetLandingPageStats = ({ enabled = true }) => {
     { enabled }
   );
 
-// Temp comment
   return { totalJobsCount: data?.totalJobsCount, totalCompaniesCount: data?.totalCompaniesCount, error, isLoading };

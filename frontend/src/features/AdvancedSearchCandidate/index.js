@@ -44,7 +44,6 @@ function useTabState(disabledTabs, userType, pathname) {
         return useState('jobs');
     }
   }
-// Temp comment
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');
 }
 
@@ -71,7 +70,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
         firstname: filterObject.title
       }
       delete modifiedFilterObject.title;
-
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
 

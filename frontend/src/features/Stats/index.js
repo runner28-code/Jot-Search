@@ -85,7 +85,6 @@ export default function Stats({ userType }) {
       </div>
     </div>
   )
-// Temp comment
 }
 
 Stats.defaultProps = {

@@ -22,6 +22,7 @@ export type User = {
   workspace?: string;
   referredBy?: string;
   roles?: string;
+
   description?: string;
   phone?: string;
   status?: string;

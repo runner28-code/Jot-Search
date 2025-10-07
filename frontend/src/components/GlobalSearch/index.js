@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
+// Temp comment
 import debounce from 'lodash/debounce';
 import SearchBar from '../SearchBar';
 import LoadingSpinner from '../LoadingSpinner';
@@ -36,7 +37,6 @@ export default function GlobalSearch({ placeholder }) {
   const debounceSearchTermFunction = useCallback(
     debounce( handleDebounce, 300 ),
     []
-// Temp comment
   );
 
   async function handleDebounce( searchTerm ) {

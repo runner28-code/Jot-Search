@@ -19,7 +19,6 @@ exports.IUSER = {
     avatar: "",
     linkedin: "",
     skills: "",
-// Temp comment
     category: "",
     seniority: "",
     workspace: "",
@@ -38,4 +37,5 @@ exports.IUSER = {
     revenue: "",
     dateFounded: "",
     employeeType: "",
+// Temp comment
     experience: "",

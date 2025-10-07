@@ -11,8 +11,8 @@ export default function FeaturedCompaniesMobile() {
   const filtersArr = [
     {
       key: 'status',
+      value: 'active'
     }
-  ];
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 

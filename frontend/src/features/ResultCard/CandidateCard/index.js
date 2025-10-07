@@ -77,6 +77,7 @@ export default function CandidateCard({ data, disableLink }) {
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{experienceString}</p>
             </div>
+          </div>
           {/* Relocation */}
           <InfoLabel
             label='Relocation'

@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import ChoiceTag from '../../ChoiceTag';
-// Temp comment
 import TypeaheadDropdown from '../../FormInput/TypeaheadDropdown';
 import { skills as skillChoices } from '../../../utils/skillHierarchyMap';
 
@@ -54,7 +53,6 @@ function renderChosen(skills, onChange) {
         }
         return (
           <ChoiceTag
-            key={skill}
             label={skill}
             isActive={true}
             handleClick={handleClick}
