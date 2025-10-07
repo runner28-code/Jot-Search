@@ -27,7 +27,6 @@ export class BigQueryService {
                 `;
             }
             if (count) {
-                query = `
                     ${query}
                     LIMIT ${count}
                 `;
@@ -58,3 +57,4 @@ export class BigQueryService {
               INSERT INTO \`${dataset}.${table}\`
               (${keys.join(', ')})
               VALUES (${values.join(', ')})
+            `;

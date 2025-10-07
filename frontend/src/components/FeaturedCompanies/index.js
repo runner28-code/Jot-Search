@@ -3,7 +3,6 @@ import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { BsBuilding } from 'react-icons/bs';
-// Temp comment
 
 const ITEMS_PER_PAGE = 10;
 
@@ -52,5 +51,6 @@ function renderColorShapes() {
     <div className='relative w-full w-24 mb-8'>
       <div className='bg-pinkSquare w-12 h-12' />
       <div className='bg-orangeSquare bg-pink-500 top-[-20px] right-[5px] absolute w-6 h-6' />
+// Temp comment
     </div>
   )

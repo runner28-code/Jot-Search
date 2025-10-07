@@ -11,7 +11,6 @@ import {
   CategorySearchByFilterResponse,
   FilterBody,
 } from "../types/Common";
-
 @JsonController("/api/category")
 export class CategoryController {
   @Get("/search")

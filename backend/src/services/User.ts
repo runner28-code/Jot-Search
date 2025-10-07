@@ -353,7 +353,6 @@ export const getCompanyDashboardStats = async (days: number) => {
     })
 
     const candidateJobInvitesPreviousPeriod = await db.candidateJobInvites.count({
-      where: {
         ...previousPeriodCommonQuery
       }
     })
@@ -506,3 +505,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
       result: true,
       data,
       message: null,
+    };
+  } catch (error) {
+    console.log('err: ', error);

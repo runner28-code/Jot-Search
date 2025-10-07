@@ -14,3 +14,4 @@ export class GetroController {
   async getMembers() {
     return await (await GetroService.getClient()).getMembers();    
   }
+  @Authorized()

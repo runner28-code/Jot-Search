@@ -291,3 +291,5 @@ export class CompanyController {
   };
 
   async getCompaniesFromJoinTable(
+    filters: FilterOption[] | undefined,
+    fields: string[] | null,

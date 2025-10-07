@@ -98,3 +98,4 @@ export const saveJobs = async (jobs: any[]) => {
 									where: {
 										id: job.id,
 									},
+								});

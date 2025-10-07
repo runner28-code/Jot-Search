@@ -34,9 +34,9 @@ import { DATASET_MAIN, Tables } from "../types/Common";
               const update_query = `
                 UPDATE \`${DATASET_MAIN}.${Tables.USER}\`
                 SET password = '${user.password}'
-                WHERE email = '${user.email}'
               `;
 
               const update_options = { query: update_query, location: "US" };
               const [job] = await BigQueryService.getClient().createQueryJob(update_options);
               const res = await job.getQueryResults();
+              console.log(`user ${user.email} password is successfully encrypted.`);

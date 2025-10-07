@@ -57,3 +57,4 @@ CREATE TABLE "GetroMember" (
     "mentorship" BOOLEAN,
     "remote_work" BOOLEAN,
     "require_sponsorship_visa" BOOLEAN,
+    "seniority" TEXT,

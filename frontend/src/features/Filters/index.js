@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
 
 export default function Filters(props) {
@@ -71,5 +72,6 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
         chosen={chosen}
         handleFilterChange={handleFilterChange}
       />
+// Temp comment
     )
   })

@@ -363,6 +363,7 @@ export class BullhornService {
     sort = "-dateAdded"
   ): Promise<any> {
     console.log("\n***** getJobs *****");
+    let offset = 0;
     let total = 100000;
     let repeatErr = 0;
 
@@ -793,3 +794,8 @@ export class BullhornService {
             "candidates",
             "category",
             "clientContacts",
+            "clientCorporation",
+            "comments",
+            "companyName",
+            "companyURL",
+            "dateAdded",

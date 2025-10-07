@@ -6,7 +6,6 @@ import eyeCon from '../../../assets/icons/eye-con.svg'; // Get it? eyeCon instea
 import linkedinIcon from '../../../assets/icons/linkedin-circle.svg';
 import locationIcon from '../../../assets/icons/placepin.svg';
 import experienceIcon from '../../../assets/icons/star-banner.svg';
-import {
   buildCandidateAddress,
   formatAvatarUrl,
   formatYearsExperience,
@@ -199,4 +198,17 @@ function SkillTag({ skill }) {
     <span className='px-7 py-1 mb-3 inline-flex items-center justify-center bg-cyan text-white rounded-full'>
       {skill}
     </span>
+  )
+}
+
+SkillTag.propTypes = {
+  skill: PropTypes.string.isRequired,
+}
+
+function InfoLabel({ label, value }) {
+  return (
+    <div className='flex items-center mt-l'>
+      { renderIcon(label, value) }
+      { renderText(label, value) }
+    </div>
   )

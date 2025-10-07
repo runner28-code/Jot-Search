@@ -13,6 +13,7 @@ CREATE TABLE "Job" (
     "title" TEXT,
     "willRelocate" TEXT,
     "yearsRequired" TEXT,
+    "status" TEXT,
     "skillList" TEXT,
     "locations" TEXT,
     "companyId" TEXT,

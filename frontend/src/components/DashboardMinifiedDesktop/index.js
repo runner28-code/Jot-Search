@@ -22,6 +22,7 @@ export default function DashboardMinifiedDesktop ({ location }) {
   }
   if( location === 'companies' ) {
     return (<>
+// Temp comment
       <h1>Companies</h1>
     </>)
   }
@@ -95,5 +96,6 @@ function ToggleIcon () {
     <img
       className='ml-12 mr-2'
       src={ filterIcon }
+      alt='Filter Icon'
     />
   )

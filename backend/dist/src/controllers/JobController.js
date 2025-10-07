@@ -169,7 +169,6 @@ let JobController = class JobController {
             return yield BigQueryService_1.BigQueryService.selectQuery(dataset, table, _fields, count, condition, _join, alias);
         });
     }
-// Temp comment
     getJobsByFilterFromGetro(filters = [], fields, count, operator = "OR") {
         return __awaiter(this, void 0, void 0, function* () {
             const _filters = filters.filter((filter) => Getro_1.ALLOWED_GETRO_FILTERS.has(filter.key));

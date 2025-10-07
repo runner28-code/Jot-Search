@@ -93,6 +93,7 @@ export class CandidateController {
         where: {
           id,
         },
+      });
 
       if (!candidate) {
         return { message: "No candidate with given ID", result: false };
@@ -334,3 +335,5 @@ export class CandidateController {
     @Body() body: { candidate: string; company: string },
     @CurrentUser() authUser: User
   ) {
+    if (authUser.role === COMPANY) {
+      return await saveCandidate(body.candidate, body.company || authUser.id!);

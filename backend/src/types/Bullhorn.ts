@@ -266,3 +266,5 @@ export type Candidate = {
     travelLimit?: string;
     travelMethod?: string;
     twoJobs?: string;
+    type?: string;
+    userDateAdded?: string;

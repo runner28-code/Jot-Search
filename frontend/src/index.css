@@ -27,6 +27,7 @@ input[type="text"].placeholder-spaceGrotesk::placeholder {
 input[type="text"].placeholder-18::placeholder {
   font-size: 1.8rem;
 }
+
 input[type="text"].placeholder-24::placeholder {
   font-size: 2.4rem;
 }
@@ -162,3 +163,4 @@ input[type=checkbox] {
     font-style: normal;
     line-height: 1.6;
     letter-spacing: normal;
+  }

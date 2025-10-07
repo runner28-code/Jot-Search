@@ -19,6 +19,7 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
   const itemKey = job.id + '-container';
   const containerStyles = 'multi-select-choice ' + listItemStyles;
   return (
+    <div 
       key={itemKey}
       className={containerStyles}
       onClick={handleItemClick}
@@ -29,7 +30,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
           src={job.logo}
           alt={job.name}
         />
-        <div className='grow'>
           <ReferralCardContent data={job} />
         </div>
       </div>

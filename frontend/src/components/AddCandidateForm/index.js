@@ -67,7 +67,6 @@ export default function RegistrationForm() {
       
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
-// Temp comment
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
@@ -120,5 +119,4 @@ export default function RegistrationForm() {
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
-      success: false,
     });

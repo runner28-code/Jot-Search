@@ -26,7 +26,6 @@ export type Company = {
   collections?: string;
 };
 
-export type Job = {
   id: string;
   application_method?: string;
   application_path?: string;
@@ -82,3 +81,4 @@ export type User = {
   id: string;
   avatar_url?: string;
   bio?: string;
+  dribbble_url?: string;

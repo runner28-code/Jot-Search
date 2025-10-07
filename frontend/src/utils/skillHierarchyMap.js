@@ -84,7 +84,6 @@ export const skills = [
   'Agile',
   'AI',
   'AJAX',
-// Temp comment
   'Analyst',
   'Android',
   'Angular',
@@ -321,3 +320,5 @@ export const skills = [
   'Qlikview',
   'Qualitative Research',
   'Quantitative Research',
+  'QuickBooks',
+  'R',

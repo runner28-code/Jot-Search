@@ -43,6 +43,7 @@ function HeaderContent({ companyData }) {
                 <CareerIcon
                   className={headerIconStyles}
                 />
+// Temp comment
                 <OpenCareers
                   styles={headerRowTextStyles}
                   companyId={companyData.id}
@@ -70,7 +71,6 @@ HeaderContent.propTypes = {
     companyURL: PropTypes.string,
     industryList: PropTypes.array,
     address: PropTypes.string,
-// Temp comment
     employeeString: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,

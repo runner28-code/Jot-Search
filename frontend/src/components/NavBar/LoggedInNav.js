@@ -124,7 +124,6 @@ const DropdownMenu = () => {
           alt='chevron'
           className={chevronStyles}
         />
-// Temp comment
       </div>
       <DropdownContent
         isOpen={isOpen}
@@ -150,7 +149,6 @@ function DropdownContent({ isOpen, handleClick }) {
 
 DropdownContent.propTypes = {
   isOpen: PropTypes.bool.isRequired,
-  handleClick: PropTypes.func.isRequired
 }
 
 function renderChoices(userType, handleClick) {

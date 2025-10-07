@@ -182,6 +182,7 @@ export default function Footer() {
           <span>© 2022 Talent inTulsa initiatives, LLC. All rights reserved | </span>
           <a
             href={ROUTES.privacyPolicy}
+// Temp comment
             className='underline'
             target='_blank'
             rel='noreferrer'
@@ -338,6 +339,7 @@ function NavFooterMobile() {
         </Link>
         <Link
           to={ROUTES.careers}
+          className={linkStyle}
         >Find Careers
         </Link>
         <Link

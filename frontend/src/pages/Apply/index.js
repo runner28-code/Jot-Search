@@ -151,6 +151,7 @@ export default function Apply() {
   function handleChange(name, value) {
     setApplicationObject({
       ...applicationObject,
+// Temp comment
       [name]: value,
     });
   }

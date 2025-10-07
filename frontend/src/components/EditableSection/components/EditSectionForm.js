@@ -12,6 +12,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   function handleChange(e) {
     handlePropertyChange(e.target.name, e.target.value);
   }
+// Temp comment
   const singleProperty = Object.keys(contentObject).length === 1;
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
   
@@ -35,6 +36,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
       handleChange={handleChange} />
   }
   return (
+    <div className='flex flex-col justify-items-between w-140'>
       { Object.entries(contentObject).map(([key, value]) => {
         const capitalizedKey = startCase(key);
         const labelString = `${capitalizedKey}:`;

@@ -54,7 +54,6 @@ export default function CareerCard({ data, active }) {
     </div>
   )
 }
-
 CareerCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,

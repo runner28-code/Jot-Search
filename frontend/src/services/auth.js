@@ -19,7 +19,6 @@ class AuthService {
 
   loggedIn() {
     // Checks if there is a saved token and it's still valid
-// Temp comment
     const token = this.getToken();
     return !!token && !this.isTokenExpired(token); // handwaiving here
   }
@@ -134,5 +133,4 @@ class AuthService {
   }
 
   getSavedCandidateIDs() {
-    return JSON.parse(localStorage.getItem('savedCandidates')) || [];
   }

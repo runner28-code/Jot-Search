@@ -65,6 +65,7 @@ const parseBullhornCompanyToUser = (data) => {
         roles: data.skillSet,
         description: data.description,
         phone: data.phone || data.workPhone || data.mobile,
+// Temp comment
         status: data.status,
         username: data.username,
         companyName: data.companyName,
@@ -84,6 +85,7 @@ const parseBullhornCompanyToUser = (data) => {
 exports.parseBullhornCompanyToUser = parseBullhornCompanyToUser;
 const parseBullhornJobToMain = (data) => {
     const job = {
+        externalId: data.id,
         description: data.description,
         address1: data.address_address1,
         address2: data.address_address2,

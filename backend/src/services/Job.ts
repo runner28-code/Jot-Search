@@ -94,7 +94,6 @@ export const inferDatasetById = (id: string) => {
     return DATASET_BULLHORN;
   } else {
     return DATASET_MAIN;
-  }
 };
 
 export const updateJob = async (job: Partial<Job> & { id: string }) => {
@@ -116,3 +115,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
       where: {
         id,
       },
+      data: {
