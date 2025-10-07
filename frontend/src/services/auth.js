@@ -107,7 +107,6 @@ class AuthService {
   getSavedJobIDs() {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }
-
   toggleSavedCompany(companyID, action) {
     const savedCompanies = this.getSavedCompanyIDs();
     if ( action === 'save' ) {
@@ -133,4 +132,5 @@ class AuthService {
   }
 
   getSavedCandidateIDs() {
+    return JSON.parse(localStorage.getItem('savedCandidates')) || [];
   }

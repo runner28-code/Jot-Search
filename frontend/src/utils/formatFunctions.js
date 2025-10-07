@@ -69,7 +69,6 @@ export function formatCandidateName(firstName, lastName) {
   if ( !firstName ) return lastName;
   if ( !lastName ) return firstName;
   return `${firstName} ${lastName}`;
-}
 
 export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
   if ( avatarUrl ) {
@@ -147,6 +146,7 @@ export function buildCandidateAddress(candidateData, full = false) {
 export function buildOccupationString(occupation, companyName) {
   if ( occupation && companyName ) {
     const occupationString = `${occupation} @ ${companyName}`;
+    return occupationString;
   } else if ( occupation && !companyName ) {
     return occupation;
   } else {

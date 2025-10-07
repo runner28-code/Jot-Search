@@ -95,7 +95,6 @@ export class GetroService {
                             }
                         }
                         await saveCompanies(result);
-                    }
                     console.log(`${total} / ${(page - 1) * per_page + items.length}`);
                     page++;
                     repeatErr = 0;

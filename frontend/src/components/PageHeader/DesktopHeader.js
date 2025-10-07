@@ -41,7 +41,6 @@ export default function DesktopHeader(props) {
           <SourceIdentifier type={dataSource} />
         )}
       </div>
-// Temp comment
       { backButton && (
         <button
           className='text-md text-royalBlue underline mt-6'

@@ -26,6 +26,7 @@ export default function Filters(props) {
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
     </div>
   )
+// Temp comment
 }
 
 Filters.propTypes = {
@@ -72,6 +73,5 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
         chosen={chosen}
         handleFilterChange={handleFilterChange}
       />
-// Temp comment
     )
   })

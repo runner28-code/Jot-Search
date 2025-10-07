@@ -94,6 +94,7 @@ export const inferDatasetById = (id: string) => {
     return DATASET_BULLHORN;
   } else {
     return DATASET_MAIN;
+  }
 };
 
 export const updateJob = async (job: Partial<Job> & { id: string }) => {
@@ -110,7 +111,6 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
       const typedKey = key as JobKey;
       filteredJob[typedKey] = job[typedKey] as any;
     });
-
     const res = await db.job.update({
       where: {
         id,

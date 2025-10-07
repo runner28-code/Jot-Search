@@ -103,6 +103,7 @@ function seedCandidates() {
                     address_city: "Tulsa",
                     address_state: "OK",
                     address_zip: "74008",
+// Temp comment
                     description: "Ehh...",
                     companyName: "Nowhere",
                     companyURL: "nowhere.com",

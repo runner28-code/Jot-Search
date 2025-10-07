@@ -4,7 +4,6 @@ import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { VscChevronDown as ChevronDown } from 'react-icons/vsc';
 import { VscChevronUp as ChevronUp } from 'react-icons/vsc';
-// Temp comment
 import filterIcon from '../../assets/icons/filter-toggle.svg';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -45,7 +44,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
     </div>
     <div className='bg-sky-500 flex py-8 px-6 items-center text-white font-roboto'>
       <div className='flex items-center justify-start basis-5/6 gap-[10px]'>
-        <img src={filterIcon} />
         Search and Filter
       </div>
       <div className='basis-1/6'>

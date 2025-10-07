@@ -149,6 +149,7 @@ export default function Footer() {
                 alt='Intulsa'
                 className='w-auto h-auto'
               />
+// Temp comment
             </a>
             <a
               href='https://talent.intulsa.com/'
@@ -182,7 +183,6 @@ export default function Footer() {
           <span>© 2022 Talent inTulsa initiatives, LLC. All rights reserved | </span>
           <a
             href={ROUTES.privacyPolicy}
-// Temp comment
             className='underline'
             target='_blank'
             rel='noreferrer'

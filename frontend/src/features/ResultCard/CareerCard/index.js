@@ -54,9 +54,9 @@ export default function CareerCard({ data, active }) {
     </div>
   )
 }
+
 CareerCard.propTypes = {
   data: PropTypes.shape({
-    id: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,
     company_logo: PropTypes.string,

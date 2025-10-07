@@ -48,7 +48,6 @@ module.exports = {
         grey: '#EBEBEB',
         charcoal: '#3C3C4B',
         // Utility
-        searchGreen: '#62CA71',
         success: '#2EA248',
         error: '#DE5454',
         warning: '#F4D12E',
@@ -122,7 +121,6 @@ module.exports = {
         '80%': '80%',
         '90%': '90%',
         '14': '3.5rem',
-// Temp comment
         '15': '3.75rem',
         '17': '4.25rem',
         '18': '4.5rem',

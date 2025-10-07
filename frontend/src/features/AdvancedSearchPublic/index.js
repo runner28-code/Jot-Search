@@ -119,7 +119,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   }
   function handleSearchClick() {
     setPage(1);
-// Temp comment
   }
 
   function handleTabChange(tabChoice) {
@@ -129,4 +128,3 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       setFilterObject(defaultCandidateFilterState);
     }
     setActiveTab(tabChoice);
-    setPage(1);

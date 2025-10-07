@@ -54,6 +54,7 @@ export default function Login() {
               to={ROUTES.signup}
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
             >
+              Sign-up here
             </Link>
           </div>
           { renderError() }

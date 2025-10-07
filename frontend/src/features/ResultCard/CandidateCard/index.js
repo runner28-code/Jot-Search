@@ -6,6 +6,7 @@ import eyeCon from '../../../assets/icons/eye-con.svg'; // Get it? eyeCon instea
 import linkedinIcon from '../../../assets/icons/linkedin-circle.svg';
 import locationIcon from '../../../assets/icons/placepin.svg';
 import experienceIcon from '../../../assets/icons/star-banner.svg';
+import {
   buildCandidateAddress,
   formatAvatarUrl,
   formatYearsExperience,
@@ -119,6 +120,7 @@ CandidateCard.propTypes = {
 }
 
 // Disables link and interactivity if disableLink is true
+// Temp comment
 function LinkWrapper({ children, link, disableLink }) {
   const baseStyles = 'w-full flex mb-xl px-xxl-2 py-xxl-3 bg-white border border-disabled border-solid rounded-2xl remove-outline ';
   if ( disableLink ) {

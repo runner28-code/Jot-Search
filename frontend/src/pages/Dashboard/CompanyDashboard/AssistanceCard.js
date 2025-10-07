@@ -14,6 +14,7 @@ export default function AssistanceCard() {
       </div>
       {/* Body */}
       <div className='text-black70%'>
+        <p>Please email us to perform changes to your InTulsa Talent Network account</p>
         <ul className='mt-8'>
           <li className='list-disc ml-8'>Update company profile</li>
           <li className='list-disc ml-8'>Create a new active career post</li>

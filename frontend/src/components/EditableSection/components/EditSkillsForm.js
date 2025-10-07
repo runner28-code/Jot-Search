@@ -9,6 +9,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
   function onChange(inputName, newValues) {
     // Handle change expects event object, make fake one
     const fakeEvent = {
+// Temp comment
       target: {
         name: inputName,
         value: newValues.join(', '),
@@ -48,6 +49,7 @@ function renderChosen(skills, onChange) {
   return (
     <div className='flex flex-wrap mt-4 mb-16 w-full'>
       {skills.length > 0 ? skills.map(skill => {
+        function handleClick() {
           onChange('primarySkills', skills.filter(s => s !== skill))
         }
         return (

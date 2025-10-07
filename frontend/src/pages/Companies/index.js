@@ -39,7 +39,6 @@ export default function Companies() {
           : !loggedIn ? 'px-[15%]' 
             : ''
         }>
-        <RenderAdvancedSearch
           loggedIn={loggedIn}
           toggle={toggle}
           userType={userType}
@@ -50,6 +49,7 @@ export default function Companies() {
 }
 
 function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
+  const { width } = useWindowDimensions();
   if( width <= 990 && userType === 'candidate' ) {
     return (<>
       <PageHeaderCandidate

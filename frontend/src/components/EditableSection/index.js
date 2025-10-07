@@ -63,7 +63,6 @@ function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCa
   }
 
   function handleSave() {
-    handleSubmit();
   }
 
   if ( isCoordinator || isProfileOwner ) {

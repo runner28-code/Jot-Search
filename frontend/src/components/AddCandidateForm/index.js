@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
 import ChoiceTag from '../ChoiceTag';
 import { 
-  roles as roleChoices,
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {
@@ -119,4 +118,5 @@ export default function RegistrationForm() {
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
+      success: false,
     });

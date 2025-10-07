@@ -10,7 +10,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       height='50'
       width='50'
     />
-// Temp comment
   }
   if ( submissionObject.success ) {
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
@@ -36,7 +35,6 @@ export function renderErrorBlock(errorBlock) {
 }
 
 export function renderHeader(addType) {
-  if ( addType === 'candidate' ) {
     return (
       <div className='flex flex-col justify-center'>
         <h4 className='text-h4 text-center vw-768:text-h4 text-darkGray font-spaceGrotesk font-semibold mb-10'>

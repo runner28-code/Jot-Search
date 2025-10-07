@@ -67,6 +67,7 @@ export default function Stats({ userType }) {
         <div
           id='dropdown-container'
           className='relative'
+        >
           <TimeframeFilter
             choices={statFilterChoices}
             timeframe={timeframe}
@@ -94,7 +95,6 @@ Stats.propTypes = {
   userType: PropTypes.string.isRequired,
 }
 
-function StatCard({ stat, value }) {
   const deviationPercentage = Math.trunc(value.compare);
 
   let numberStyles = 'text-h2 font-medium font-spaceGrotesk leading-tight';

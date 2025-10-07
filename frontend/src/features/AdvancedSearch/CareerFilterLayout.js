@@ -40,6 +40,7 @@ export default function CareerFilterLayout(props) {
     });
   }
 
+// Temp comment
   const buttonStyles = 'text-royalBlue text-sm whitespace-nowrap';
   const buttonStylesCareer = 'text-white text-sm whitespace-nowrap';
   return (
@@ -53,6 +54,7 @@ export default function CareerFilterLayout(props) {
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search name, title, active careers'
+          additionalClasses='w-1/2'
         />
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }

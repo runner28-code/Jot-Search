@@ -83,7 +83,6 @@ export default function InviteCandidates({ job }) {
               setSelected([])
             }
           }}
-          disabled={selected.length === 0 || isSendingJob}
         >
           <MailIcon className='inline-block mr-2' />
           Send Now
@@ -116,6 +115,5 @@ function itemRenderer({ option, onClick, disabled }) {
           <span>{getTagLine({ candidate: option.candidate })}</span>
         </div>
       </div>
-// Temp comment
     </div>
   )

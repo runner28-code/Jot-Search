@@ -70,6 +70,7 @@ async function seedCandidates() {
         occupation: "Programmer",
         address_city: "Tulsa",
         address_state: "OK",
+        address_zip: "74008",
         description: "Great candidate for everything",
         companyName: "Eddy's Everything",
         companyURL: "eddyseverything.com",
