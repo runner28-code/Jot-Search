@@ -21,7 +21,6 @@ exports.JobFilter = {
         skillList: "skillList",
         hidden: "hidden",
         employmentType: "employmentType",
-        onSite: "onSite",
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
         city: "city",
@@ -29,6 +28,7 @@ exports.JobFilter = {
         isDeleted: "isDeleted",
         companyId: "companyId",
     },
+};
 exports.CompanyFilter = {
     bullhorn: {
         name: "name",

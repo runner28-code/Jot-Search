@@ -38,8 +38,8 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
 EditableSection.propTypes = {
   entityID: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
-// Temp comment
   contentObjectProp: PropTypes.object.isRequired,
+// Temp comment
   handleContentUpdate: PropTypes.func.isRequired,
   headerStyles: PropTypes.string.isRequired,
 }

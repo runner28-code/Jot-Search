@@ -198,7 +198,6 @@ function SkillTag({ skill }) {
   return (
     <span className='px-7 py-1 mb-3 inline-flex items-center justify-center bg-cyan text-white rounded-full'>
       {skill}
-// Temp comment
     </span>
   )
 }

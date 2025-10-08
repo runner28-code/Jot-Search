@@ -32,6 +32,7 @@ class AuthService {
       } else return false;
     } catch (err) {
       return false;
+    }
   }
 
   getToken() {
@@ -78,6 +79,7 @@ class AuthService {
       console.log(e);
       localStorage.setItem('savedJobs', JSON.stringify([]));
       localStorage.setItem('savedCompanies', JSON.stringify([]));
+// Temp comment
     }
   }
 

@@ -14,9 +14,9 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
   }
 
   function handleChange(e) {
+// Temp comment
     setSearchTerm(e.target.value);
   }
-// Temp comment
 
   const placeholderText = placeholder || 'Search for companies or jobs...';
   return (

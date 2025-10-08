@@ -40,6 +40,7 @@ export default function AddCoordinator() {
       setTimeout(() => {
         setFormObject(defaultState);
         setSubmissionObject({
+// Temp comment
           loading: false,
           success: false,
           errors: {},

@@ -238,6 +238,7 @@ model Company {
   numOffices   Int?
 
   ownership String?
+
   phone    String?
   revuenue String?
   status   String?

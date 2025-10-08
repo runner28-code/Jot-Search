@@ -94,7 +94,6 @@ export default function AdvancedSearch({ disabledTabs }) {
   function handleFilterChange(filterType, choice) {
     setFilterObject({
       ...filterObject,
-      [filterType]: choice
     });
     setPage(1);
   }

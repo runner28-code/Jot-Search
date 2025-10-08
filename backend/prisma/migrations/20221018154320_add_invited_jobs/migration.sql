@@ -1,5 +1,6 @@
 -- CreateTable
 CREATE TABLE "CandidateJobInvites" (
+    "id" TEXT NOT NULL,
     "candidateId" TEXT NOT NULL,
     "jobId" TEXT NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -8,4 +9,3 @@ CREATE TABLE "CandidateJobInvites" (
     CONSTRAINT "CandidateJobInvites_pkey" PRIMARY KEY ("id")
 );
 
--- AddForeignKey

@@ -207,7 +207,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
               src={ searchWhite }
               alt='search icon'
               className={'h-auto'}
-// Temp comment
             />
           </div>
         </div>

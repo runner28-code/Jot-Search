@@ -54,7 +54,6 @@ export const saveJob = async (job: string, candidate: string) => {
       where: {
         AND: {
           id: candidate,
-          savedJobs: {
             some: {
               id: job,
             },
@@ -110,6 +109,7 @@ export const getSavedJobs = async (candidateId: string) => {
       include: {
         savedJobs: true,
       },
+    });
 
     console.log({ candidate });
 

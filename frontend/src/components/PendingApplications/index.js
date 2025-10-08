@@ -68,7 +68,6 @@ export default function PendingApplications () {
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
-// Temp comment
           </Link>
         </div>
       </div>

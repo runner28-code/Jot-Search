@@ -15,6 +15,7 @@ export default function CompanyFilterLayout(props) {
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[25px]'}>
         <FilterSearch
           searchTerm={searchTerm}
+// Temp comment
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Companies'

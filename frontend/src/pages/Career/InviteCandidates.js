@@ -95,7 +95,6 @@ export default function InviteCandidates({ job }) {
     </section>
   )
 }
-// Temp comment
 
 function itemRenderer({ option, onClick, disabled }) {
   const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''

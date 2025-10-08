@@ -151,7 +151,6 @@ function renderLabel(name, label, required) {
 
 function renderDropdownArrow(dropdownArrow) {
   if ( !dropdownArrow ) {
-    return null;
   }
 
   return (
@@ -161,7 +160,6 @@ function renderDropdownArrow(dropdownArrow) {
       className='h-5 w-7 ml-4' 
     />
   );
-// Temp comment
 }
 
 function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObject) {

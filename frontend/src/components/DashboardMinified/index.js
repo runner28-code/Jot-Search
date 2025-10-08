@@ -40,7 +40,6 @@ function LinkSwap ({ location, loggedIn }) {
     return (
       <Link
         className={loggedIn ? 'text-white flex items-center bg-sky-500 rounded-md py-2 px-6' : 'text-white flex items-center'}
-        to={ROUTES.careers}>
         <span className={loggedIn ? '' : 'underline '}>Back</span>
       </Link>
     )
@@ -52,6 +51,5 @@ function LinkSwap ({ location, loggedIn }) {
         to={ROUTES.companies}>
         <span className='underline'>Back</span>
       </Link>
-// Temp comment
     )
   }

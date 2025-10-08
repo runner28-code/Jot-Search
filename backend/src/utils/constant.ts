@@ -363,3 +363,5 @@ const job_filter_exclude_keys = [
   "sobering",
   "soccer",
   "social services",
+  "social worker",
+  "sociology",

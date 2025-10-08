@@ -43,6 +43,7 @@ export default function DashboardPublicMin({type}) {
           >
           Back
           </button>
+// Temp comment
         </div>
         <div className='flex items-center basis-11/12 justify-center'>
           <Link

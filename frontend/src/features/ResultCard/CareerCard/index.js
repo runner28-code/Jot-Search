@@ -75,7 +75,6 @@ CareerCard.propTypes = {
   }).isRequired,
   index: PropTypes.number,
   active: PropTypes.bool,
-// Temp comment
 }
 
 function DesktopCard({ dataObj, active }) {
@@ -201,5 +200,4 @@ function MobileCard({ dataObj, active }) {
           <p className='text-[1.5rem] text-royalBlue font-spaceGrotesk font-semibold mt-2'>{categoryString}</p>
         </div>
       </div>
-    </Link>
   )

@@ -14,6 +14,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   }
   return (
     <button 
+// Temp comment
       className={buttonStyles}
       type='submit'>
       {buttonString}
@@ -21,6 +22,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   )
 }
 
+export function renderErrorBlock(errorBlock) {
   
   if (errorBlock) {
     return (

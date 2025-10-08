@@ -103,7 +103,6 @@ export default function Footer() {
           className={socialIconStyle}
         />
       </a>
-// Temp comment
       <a href={ROUTES.twitter}>
         <img
           src={twitter}
@@ -161,6 +160,7 @@ export default function Footer() {
                 alt='Intulsa Talent'
                 className='w-auto h-auto'
               />
+// Temp comment
             </a>
             <a
               href='https://business.intulsa.com/'

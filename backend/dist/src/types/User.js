@@ -6,7 +6,6 @@ exports.IUSER = {
     externalId: "",
     firstname: "",
     lastname: "",
-    gender: "",
     email: "",
     password: "",
     role: "",
@@ -29,7 +28,6 @@ exports.IUSER = {
     status: "",
     username: "",
     logo: "",
-// Temp comment
     companyId: "",
     companyName: "",
     annualRevenue: "",

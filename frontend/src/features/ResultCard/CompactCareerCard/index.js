@@ -81,6 +81,7 @@ CompactCareerCard.propTypes = {
     }),
     applications: PropTypes.arrayOf(PropTypes.shape({
       createdAt: PropTypes.string
+    })),
     role: PropTypes.string,
     title: PropTypes.string,
     employmentType: PropTypes.string,

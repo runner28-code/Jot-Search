@@ -28,6 +28,7 @@ export default function ExpertiseLinks() {
             alt='Software Engineering Icon'
             className={iconStyles}
           />
+          <span className={textStyles}>Software &</span>
           <span className={textStyles}>Engineering</span>
         </Link>
         {/* Sales & Business Development */}
@@ -71,7 +72,6 @@ export default function ExpertiseLinks() {
           <span className={textStyles}>Operations</span>
         </Link>
         {/* Finance */}
-        <Link
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Finance' }}

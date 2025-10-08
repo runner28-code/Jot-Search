@@ -2,6 +2,7 @@ import {
   Body,
   Get,
   Post,
+  Put,
   QueryParam,
   JsonController,
   Authorized,
@@ -106,7 +107,6 @@ export class CompanyController {
   @Authorized()
   @Put()
   async insert(
-    @Body() body: Company,
     @CurrentUser() authUser: User
   ): Promise<any> {
     if (authUser.role !== COORDINATOR) {

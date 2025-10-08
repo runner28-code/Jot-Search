@@ -7,6 +7,7 @@ import { HiOutlineExternalLink } from 'react-icons/hi';
 import AuthService from '../../services/auth';
 import NavSearch from '../NavSearch';
 import NavSearchMobile from '../NavSearchMobile';
+import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function NavBar() {
@@ -26,7 +27,6 @@ function MobileNavBarLayout() {
       <div className='h-30 pl-4 pr-4 flex justify-between items-center relative'>
         <Link to={ROUTES.root}>
           <img
-            src={inTulsaLogoText}
             alt='logo'
             className='w-72 h-ful'
           />

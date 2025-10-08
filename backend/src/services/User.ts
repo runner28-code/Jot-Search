@@ -237,6 +237,7 @@ export const isExistUserFull = async (field: string, value: string) => {
       where: {
         [field]: value,
       },
+    });
 
     return user || null;
   } catch (error) {
