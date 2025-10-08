@@ -118,7 +118,6 @@ export type Job = {
     willRelocate?: string;
     yearsRequired?: string;
 };
-
 export type ClientContact = {
     id: string;
     category?: string;
@@ -268,3 +267,5 @@ export type Candidate = {
     timeZoneOffsetEST?: string;
     tobaccoUser?: string;
     totalDependentClaimAmount?: string;
+    travelLimit?: string;
+    travelMethod?: string;

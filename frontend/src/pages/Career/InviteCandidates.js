@@ -83,6 +83,7 @@ export default function InviteCandidates({ job }) {
               setSelected([])
             }
           }}
+          disabled={selected.length === 0 || isSendingJob}
         >
           <MailIcon className='inline-block mr-2' />
           Send Now
@@ -94,6 +95,7 @@ export default function InviteCandidates({ job }) {
     </section>
   )
 }
+// Temp comment
 
 function itemRenderer({ option, onClick, disabled }) {
   const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''

@@ -146,6 +146,7 @@ MobileLayout.propTypes = {
 }
 
 function renderLogo( logo ) {
+// Temp comment
   if ( !logo ) {
     return <div className='w-36 h-36 flex justify-center items-center border border-smokeGray border-solid object-contain mr-10'>
       <CareerIcon className='w-24 h-24 fill-royalBlue' />
@@ -179,4 +180,5 @@ function renderSkillsSection({skillList}) {
     <hr className={hrStyles} />
     {/* Skills Required */}
     <h4 className={sectionHeaderStyles}>Skills Required</h4>
+    <SkillsList items={skillList} />
   </>)

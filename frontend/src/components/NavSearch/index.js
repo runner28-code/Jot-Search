@@ -80,7 +80,6 @@ export default function NavSearch({ placeholder }) {
   }, [closeDropdown]);
 
   const combinedResults = {
-// Temp comment
     jobs: jobs || [],
     companies: companies || [],
     candidates: candidates || [],
@@ -146,7 +145,6 @@ function renderResults( results ) {
     );
   }
 
-  return (<>
     {candidates && <CandidateResults candidates={ candidates } /> }
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />

@@ -322,3 +322,5 @@ export const skills = [
   'Quantitative Research',
   'QuickBooks',
   'R',
+  'R Programming Language',
+  'Rails',

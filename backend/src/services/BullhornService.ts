@@ -593,6 +593,7 @@ export class BullhornService {
     let total = 100000;
     let repeatErr = 0;
 
+    while (repeatErr < 3) {
       console.log(`\nBullhorn_GET_CANDIDATES: ${total} / ${offset}`);
       try {
         const query = queryString.stringify({
@@ -798,3 +799,9 @@ export class BullhornService {
             "companyName",
             "companyURL",
             "dateAdded",
+            "dateLastComment",
+            "dateLastModified",
+            "description",
+            "division",
+            "email",
+            "email2",

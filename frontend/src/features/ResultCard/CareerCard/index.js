@@ -57,6 +57,7 @@ export default function CareerCard({ data, active }) {
 
 CareerCard.propTypes = {
   data: PropTypes.shape({
+    id: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,
     company_logo: PropTypes.string,
@@ -74,6 +75,7 @@ CareerCard.propTypes = {
   }).isRequired,
   index: PropTypes.number,
   active: PropTypes.bool,
+// Temp comment
 }
 
 function DesktopCard({ dataObj, active }) {

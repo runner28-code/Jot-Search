@@ -112,6 +112,7 @@ export default function RegistrationForm(loggedIn) {
       } else {
         console.log('Error: ', result);
         setErrorBlock(result);
+// Temp comment
         setSubmissionObject({
           loading: false,
           success: false,

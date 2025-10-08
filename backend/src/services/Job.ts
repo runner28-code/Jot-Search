@@ -111,8 +111,10 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
       const typedKey = key as JobKey;
       filteredJob[typedKey] = job[typedKey] as any;
     });
+
     const res = await db.job.update({
       where: {
         id,
       },
       data: {
+        ...filteredJob,

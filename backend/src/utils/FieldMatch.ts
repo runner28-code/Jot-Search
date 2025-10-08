@@ -60,3 +60,4 @@ export const USER_FILTER: any = {
   city: "city",
   state: "state",
   skills: "skills",
+  skillSet: "skillSet",

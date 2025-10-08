@@ -6,7 +6,6 @@ import AuthService from '../../services/auth';
 import CompanyCard from '../../features/ResultCard/CompactCompanyCard';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 export default function CareerFavorite () {
 
@@ -44,7 +43,6 @@ export default function CareerFavorite () {
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
-          </Link>
         </div>
       </div>
       <div className='pt-24'>

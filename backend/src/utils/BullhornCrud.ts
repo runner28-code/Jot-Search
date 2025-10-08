@@ -262,3 +262,5 @@ export const saveLeads = async (leads: any[]) => {
           data: leadData,
         });
         console.log(`Saved Lead with ID = ${lead.id} successfully`);
+      } catch (error: any) {
+        console.log(error.message);

@@ -10,7 +10,6 @@ export const useGetJobs = ({ count, page, filtersArr, operator, enabled = true }
   formatFilters(filtersArr);
   const { data, error, isLoading } = useQuery(
     getJobsKey({filtersArr, count, operator, page}),
-    () => getJobsFull(filtersArr, count, operator, page),
     { enabled }
   );
 

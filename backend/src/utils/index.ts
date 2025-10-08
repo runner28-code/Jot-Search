@@ -85,7 +85,6 @@ export const justifyData = (data: any, keys: string[], excludeKeys: string[] = [
             ...v,
             [key]: data[key]
         };
-    }, {});
 }
 
 export const getFilterConditions = (
@@ -98,3 +97,4 @@ export const getFilterConditions = (
       if (Array.isArray(opt.value)) {
         const operator = opt.operator || "AND";
         const baseCondition = (value: string) =>
+          determineCondition(

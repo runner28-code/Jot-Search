@@ -29,6 +29,7 @@ exports.IUSER = {
     status: "",
     username: "",
     logo: "",
+// Temp comment
     companyId: "",
     companyName: "",
     annualRevenue: "",
@@ -38,3 +39,4 @@ exports.IUSER = {
     dateFounded: "",
     employeeType: "",
     experience: "",
+    hourlyRate: "",

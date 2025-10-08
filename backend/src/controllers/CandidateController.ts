@@ -337,3 +337,5 @@ export class CandidateController {
   ) {
     if (authUser.role === COMPANY) {
       return await saveCandidate(body.candidate, body.company || authUser.id!);
+    } else {
+      return {

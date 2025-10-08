@@ -41,6 +41,7 @@ CREATE TABLE "Company" (
     "departmentId" TEXT,
     "externalID" TEXT,
     "facebookProfileName" TEXT,
+    "fax" TEXT,
     "feeArrangement" DOUBLE PRECISION,
     "funding" TEXT,
     "industryList" TEXT[],
@@ -83,3 +84,4 @@ CREATE TABLE "Company" (
     "customText13" TEXT,
     "customText14" TEXT,
     "customText15" TEXT,
+    "customText16" TEXT,

@@ -69,6 +69,7 @@ export function formatCandidateName(firstName, lastName) {
   if ( !firstName ) return lastName;
   if ( !lastName ) return firstName;
   return `${firstName} ${lastName}`;
+}
 
 export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
   if ( avatarUrl ) {

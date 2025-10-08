@@ -52,5 +52,6 @@ function LinkSwap ({ location, loggedIn }) {
         to={ROUTES.companies}>
         <span className='underline'>Back</span>
       </Link>
+// Temp comment
     )
   }

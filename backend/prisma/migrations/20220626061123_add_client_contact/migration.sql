@@ -49,3 +49,4 @@ CREATE TABLE "ClientContact" (
     "nameSuffix" TEXT,
     "nickName" TEXT,
     "numEmployees" TEXT,
+    "occupation" TEXT,

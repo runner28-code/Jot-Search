@@ -2,7 +2,6 @@ import {
   Body,
   Get,
   Post,
-  Put,
   QueryParam,
   JsonController,
   Authorized,
@@ -26,6 +25,7 @@ import {
   ApplyResponse,
   Operator,
 } from "../types/Common";
+import { User } from "../types/User";
 import { getDataSource, getFilterConditions } from "../utils";
 import db from "../utils/db";
 
@@ -292,3 +292,5 @@ export class CompanyController {
   async getCompaniesFromJoinTable(
     filters: FilterOption[] | undefined,
     fields: string[] | null,
+    count: number,
+    operator: Operator = "OR"

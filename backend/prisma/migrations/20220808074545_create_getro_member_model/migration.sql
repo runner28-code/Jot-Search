@@ -1,4 +1,5 @@
 -- CreateTable
+CREATE TABLE "UserTalentCollection" (
     "id" TEXT NOT NULL,
     "user_id" INTEGER,
     "collection_id" INTEGER,
@@ -29,7 +30,6 @@
 
     CONSTRAINT "UserTalentCollection_pkey" PRIMARY KEY ("id")
 );
-
 -- CreateTable
 CREATE TABLE "GetroMember" (
     "id" TEXT NOT NULL,

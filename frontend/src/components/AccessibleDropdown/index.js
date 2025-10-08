@@ -87,6 +87,7 @@ AccessibleDropdown.propTypes = {
   ]),
   stylesObject: PropTypes.shape({
     baseStyles: PropTypes.string,
+    inputHeight: PropTypes.string,
     inputWidth: PropTypes.string,
     marginBottom: PropTypes.string,
     listStyles: PropTypes.string,
@@ -160,6 +161,7 @@ function renderDropdownArrow(dropdownArrow) {
       className='h-5 w-7 ml-4' 
     />
   );
+// Temp comment
 }
 
 function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObject) {

@@ -73,7 +73,6 @@ export async function updateUser(newData, id) { // id is optional, if no id is p
   const { data } = await API.post(ROUTES.APIuserUpdate, body);
   return normalizeData(data);
 }
-// Temp comment
 
 export async function updateCandidate(newData, id) {
   console.log({ newData, id })
@@ -324,3 +323,15 @@ export async function getCategories(filterArr) {
     'count': 100
   });
   return normalizeData(data.categories);
+}
+
+//* USERS
+export async function registerUser(userObject) {
+  try {
+    const url = userObject.role === 'coordinator' ? ROUTES.APIregisterCoordinator : ROUTES.APIregister
+    const { data } = await API.post(url, userObject);
+    return normalizeData(data);
+  } catch (err) {
+    console.log(err);
+    throw err;
+  }

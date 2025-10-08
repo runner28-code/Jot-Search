@@ -77,3 +77,4 @@ export const APIsendCandidatesToCompanies = APIcompanyBase + '/sendCandidates';
 export const APIjobBase = '/api/job';
 export const APIjobs = APIjobBase + '/search';
 export const APIjobApply = APIjobBase + '/apply';
+export const APIappliedJobs = APIjobBase + '/applied';

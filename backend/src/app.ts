@@ -113,3 +113,4 @@ app.use(cors());
 app.post("/api/upload", uploadToS3);
 
 app.get("/health", (req, res) => {
+  res.status(200).send("Ok");

@@ -350,3 +350,6 @@ export class JobController {
   ): Promise<ApplyResponse> {
     return await saveJob(job, candidate);
   }
+
+  @Authorized()
+  @Patch()

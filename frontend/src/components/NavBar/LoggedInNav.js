@@ -149,7 +149,6 @@ function DropdownContent({ isOpen, handleClick }) {
 
 DropdownContent.propTypes = {
   isOpen: PropTypes.bool.isRequired,
-// Temp comment
   handleClick: PropTypes.func.isRequired
 }
 

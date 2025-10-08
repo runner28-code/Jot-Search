@@ -38,6 +38,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
 EditableSection.propTypes = {
   entityID: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
+// Temp comment
   contentObjectProp: PropTypes.object.isRequired,
   handleContentUpdate: PropTypes.func.isRequired,
   headerStyles: PropTypes.string.isRequired,
@@ -63,6 +64,7 @@ function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCa
   }
 
   function handleSave() {
+    handleSubmit();
   }
 
   if ( isCoordinator || isProfileOwner ) {

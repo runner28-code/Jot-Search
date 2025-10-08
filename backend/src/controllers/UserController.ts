@@ -46,6 +46,7 @@ export class UserController {
       const token = CreateJwtToken(data);
       return {
         result,
+        token,
       };
     }
     return { result, error };
@@ -185,3 +186,4 @@ export class UserController {
         },
       });
 
+      return history;

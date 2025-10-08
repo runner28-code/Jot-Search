@@ -102,7 +102,6 @@ function renderNotification(activeData, careerData) {
         text='Notify Talent inTulsa by Email'
         email='talentnetwork@intulsa.com'
         company={careerData.clientCorporation}
-        id={careerData.title}
         add='filled'
       />
     </>)

@@ -48,6 +48,7 @@ module.exports = {
         grey: '#EBEBEB',
         charcoal: '#3C3C4B',
         // Utility
+        searchGreen: '#62CA71',
         success: '#2EA248',
         error: '#DE5454',
         warning: '#F4D12E',
@@ -211,3 +212,5 @@ module.exports = {
       'h2': '4.8rem',
       'h1': '5.6rem'
     },
+    fontFamily: {
+      'roboto': ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],

@@ -83,7 +83,6 @@ export default function Apply() {
       if( candidateData.ethnicity === undefined ) {
         candidateData.ethnicity = 'Prefer not to say';
       }
-      const stateObject = {
         ...applicationObject,
         ...candidateData,
       };
@@ -161,4 +160,5 @@ export default function Apply() {
 
   function handleFileInputChange(e) {
     const { name, files } = e.target;
+    setApplicationObject({ ...applicationObject, [name]: files[0] });
     setUseExistingResume(false)

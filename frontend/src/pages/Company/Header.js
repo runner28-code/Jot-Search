@@ -78,6 +78,7 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
+// Temp comment
               src={Triangle}
               className={headerIconStyles}
             />
@@ -234,7 +235,6 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
     </>)
   }
 
-// Temp comment
   let http = 'https://';
   return (<>
     <a

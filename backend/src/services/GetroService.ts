@@ -95,6 +95,7 @@ export class GetroService {
                             }
                         }
                         await saveCompanies(result);
+                    }
                     console.log(`${total} / ${(page - 1) * per_page + items.length}`);
                     page++;
                     repeatErr = 0;
@@ -234,3 +235,5 @@ export class GetroService {
                         'organization_ids[]': company_id,
                         'status[]': 'active'
                     });
+                    const url = `${this.api_base_url_v1}/jobs?${query}`;
+                    try {

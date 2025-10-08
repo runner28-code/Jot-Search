@@ -18,6 +18,7 @@ CREATE TABLE "GetroJobInfo" (
     "compensation_max" TEXT,
     "compensation_min" TEXT,
     "compensation_period" TEXT,
+    "compensation_public" TEXT,
     "description" TEXT,
     "discarded" TEXT,
     "employment_types" TEXT,
@@ -33,3 +34,4 @@ CREATE TABLE "GetroJobInfo" (
     "passes_filter" TEXT,
     "posted_at" TIMESTAMP(3),
     "slug" TEXT,
+    "source" TEXT,

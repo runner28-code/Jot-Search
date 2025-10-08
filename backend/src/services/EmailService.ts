@@ -98,3 +98,4 @@ export const sendUpdateUserNotification = async (to: string, name: string) => {
   try {
     const base_url = process.env.FRONTEND_URL || 'http://localhost:3000';
     await sendEmail(to, 'Your account has been updated!', 'update-user-notification', {
+      name: name,

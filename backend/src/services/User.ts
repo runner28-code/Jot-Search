@@ -237,7 +237,6 @@ export const isExistUserFull = async (field: string, value: string) => {
       where: {
         [field]: value,
       },
-    });
 
     return user || null;
   } catch (error) {
@@ -509,3 +508,7 @@ export const getCoordinatorDashboardStats = async (days: number) => {
     };
   } catch (error) {
     console.log('err: ', error);
+    return {
+      result: false,
+      error: error,
+    };
