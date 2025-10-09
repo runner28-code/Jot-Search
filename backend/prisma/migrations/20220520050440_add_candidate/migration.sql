@@ -82,3 +82,4 @@ CREATE TABLE "Candidate" (
     "stateFilingStatus" TEXT,
     "status" TEXT,
     "taxID" TEXT,
+    "taxState" TEXT,

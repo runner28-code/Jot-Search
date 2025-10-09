@@ -2,7 +2,6 @@ import {
   Body,
   Get,
   Post,
-  QueryParam,
   JsonController,
   Authorized,
 } from "routing-controllers";
@@ -47,3 +46,4 @@ export class ClientContactController {
         where: wheres,
         take: count || 100,
         skip: (count || 0) * (page || 0),
+      });

@@ -10,7 +10,6 @@ export default function AccessibleDropdown(props) {
   const {
     type,
     name,
-    label,
     placeholder,
     required,
     onChange,
@@ -151,6 +150,7 @@ function renderLabel(name, label, required) {
 
 function renderDropdownArrow(dropdownArrow) {
   if ( !dropdownArrow ) {
+    return null;
   }
 
   return (

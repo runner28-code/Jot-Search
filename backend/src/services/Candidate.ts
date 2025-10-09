@@ -27,6 +27,7 @@ export const saveCandidate = async (
           savedCandidates: {
             connect: {
               id: candidateId,
+            },
           },
         },
       });
@@ -79,3 +80,4 @@ export const getSavedCandidates = async (companyUserId: string) => {
 
     return {
       result: true,
+      candidates: user?.savedCandidates,

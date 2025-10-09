@@ -228,6 +228,7 @@ export type Candidate = {
     name?: string;
     namePrefix?: string;
     nameSuffix?: string;
+    nickName?: string;
     numCategories?: string;
     numOwners?: string;
     occupation?: string;
@@ -269,3 +270,5 @@ export type Candidate = {
     userDateAdded?: string;
     username?: string;
     veteran?: string;
+    willRelocate?: string;
+    workAuthorized?: string;

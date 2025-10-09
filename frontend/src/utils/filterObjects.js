@@ -17,6 +17,7 @@ export const jobFilterObject = {
     'Hybrid',
     'Off-Site',
   ],
+// Temp comment
   'Years Experience': [
     'Any',
     ...experienceValues
@@ -113,6 +114,7 @@ export const candidateFilterObject = {
 // Create default filter state based on filterObject
 const convertedCandidateFilters = {};
 Object.keys(candidateFilterObject).forEach(key => {
+  convertedCandidateFilters[key] = candidateFilterObject[key][0];
 });
 
 export const defaultCandidateFilterState = {

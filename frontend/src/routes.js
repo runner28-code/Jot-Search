@@ -13,7 +13,6 @@ export const settings = '/settings';
 export const accountRecovery = '/account-recovery';
 export const resetPassword = '/reset-password';
 
-// Temp comment
 // Dashboard routes
 export const dashboard = '/';
 export const careers = '/careers';
@@ -79,3 +78,4 @@ export const APIjobBase = '/api/job';
 export const APIjobs = APIjobBase + '/search';
 export const APIjobApply = APIjobBase + '/apply';
 export const APIappliedJobs = APIjobBase + '/applied';
+export const APIInvitedJobs = APIjobBase + '/invited';

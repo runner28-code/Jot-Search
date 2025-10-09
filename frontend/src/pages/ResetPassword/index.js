@@ -44,6 +44,7 @@ export default function ResetPassword() {
         setSuccess(true);
       } else {
         setError(res.data.error);
+// Temp comment
       }
     }
   };

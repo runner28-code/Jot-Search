@@ -14,7 +14,6 @@ import { useCandidateContext } from '../../services/CandidateContext';
 import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
 import InviteToCareer from '../Career/InviteToCareer';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 
 
@@ -22,7 +21,6 @@ const PREFERENCE_ITEMS = {
   activelyLooking: 'I\'m actively looking for a job',
   openToGetIntro: 'I\'m open to getting introductions from companies',
   willRelocate: 'I\'m willing to relocate to Tulsa OK',
-  willReceiveNotification: 'Receive emails about relevant opportunities based on your profile'
 }
 
 export default function Candidate() {

@@ -73,7 +73,6 @@ export default function Stats({ userType }) {
             timeframe={timeframe}
             handleFilterChange={handleFilterChange}
           />
-// Temp comment
         </div>
       </div>
       <div className='flex flex-wrap'>

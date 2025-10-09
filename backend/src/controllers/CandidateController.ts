@@ -339,3 +339,6 @@ export class CandidateController {
       return await saveCandidate(body.candidate, body.company || authUser.id!);
     } else {
       return {
+        result: false,
+        message: "You are not a company",
+      };

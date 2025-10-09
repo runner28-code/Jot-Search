@@ -61,7 +61,6 @@ class AuthService {
 
   clearStorage() {
     // Clear user token and profile data from localStorage
-    localStorage.removeItem('id_token');
     localStorage.removeItem('savedJobs');
     localStorage.removeItem('savedCompanies');
     localStorage.removeItem('savedCandidates');
@@ -79,7 +78,6 @@ class AuthService {
       console.log(e);
       localStorage.setItem('savedJobs', JSON.stringify([]));
       localStorage.setItem('savedCompanies', JSON.stringify([]));
-// Temp comment
     }
   }
 

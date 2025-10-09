@@ -241,6 +241,7 @@ const job_filter_exclude_keys = [
     "machine operator",
     "machinist",
     "maintenance",
+// Temp comment
     "mammographer",
     "manufacturing",
     "massage",
@@ -400,3 +401,6 @@ const job_filter_exclude_keys = [
     "theater",
     "theatre",
     "therapist",
+    "tier i technician",
+    "tier ii technician",
+    "tier iii technician",

@@ -26,7 +26,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     email: candidateData.email || '',
-    phone: candidateData.phone || '',
     workAuthorized: candidateData.workAuthorized,
     zip: candidateData.zip || '',
     city: candidateData.city || '',

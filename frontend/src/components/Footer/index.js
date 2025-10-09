@@ -160,7 +160,6 @@ export default function Footer() {
                 alt='Intulsa Talent'
                 className='w-auto h-auto'
               />
-// Temp comment
             </a>
             <a
               href='https://business.intulsa.com/'
@@ -202,7 +201,6 @@ export default function Footer() {
       </div>
     </div>
   </>)
-}
 
 function NavFooter() {
 

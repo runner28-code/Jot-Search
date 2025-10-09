@@ -11,7 +11,6 @@
 #   ECS_SERVICE: 'intulsa-backend-service-prod'
 #   ECS_CLUSTER: 'intulsa-cluster-prod'
 #   ECS_TASK_DEFINITION: '.github/workflows/prod_task_definition.json'
-#   CONTAINER_NAME: 'intulsa-backend-container-prod'
 
 # jobs:
 #   deploy:
@@ -47,3 +46,4 @@
 #         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 #         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 #     - name: Fill in the new image ID in the Amazon ECS task definition
+#       id: task-def

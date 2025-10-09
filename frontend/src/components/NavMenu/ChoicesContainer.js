@@ -26,6 +26,7 @@ const stylesObject = {
   spanStyles,
   hrStyles
 }
+
 export default function ChoicesContainer(props) {
   const {
     userRole,

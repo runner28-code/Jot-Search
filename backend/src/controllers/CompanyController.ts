@@ -107,6 +107,7 @@ export class CompanyController {
   @Authorized()
   @Put()
   async insert(
+    @Body() body: Company,
     @CurrentUser() authUser: User
   ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
@@ -294,3 +295,6 @@ export class CompanyController {
     fields: string[] | null,
     count: number,
     operator: Operator = "OR"
+  ): Promise<Company[]> {
+    const _fields = this.getJoinedFields(fields);
+    const _conditions = this.getConditionsFromFilters(

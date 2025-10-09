@@ -113,3 +113,4 @@ export type CompanySearchByID = {
   source: DataSource;
   message?: string;
 };
+

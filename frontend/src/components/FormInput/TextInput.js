@@ -27,6 +27,7 @@ TextInput.propTypes = {
   required: PropTypes.bool,
   onChange: PropTypes.func,
   baseStyles: PropTypes.string.isRequired,
+// Temp comment
   disabled: PropTypes.bool
 }
 

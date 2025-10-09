@@ -513,3 +513,7 @@ export const getCoordinatorDashboardStats = async (days: number) => {
       result: false,
       error: error,
     };
+  }
+}
+
+export const getStats = async (userId: string) => {

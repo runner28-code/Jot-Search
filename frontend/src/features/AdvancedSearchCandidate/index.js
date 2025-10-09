@@ -103,7 +103,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
       newState['On-Site/Remote'] = state['On-Site/Remote'] || 'Any';
-// Temp comment
     }
     setFilterObject(newState);
   }, [state]);
@@ -117,7 +116,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   }
 
   function handleSearchChange(searchTerm) {
-    setFilterObject({ ...filterObject, title: searchTerm });
     setPage(1);
   }
   function handleSearchClick() {

@@ -10,6 +10,7 @@ export const useGetLandingPageStats = ({ enabled = true }) => {
   const { data, error, isLoading } = useQuery(
     getLandingPageStatsKey(),
     getLandingPageStats,
+// Temp comment
     { enabled }
   );
 

@@ -14,6 +14,7 @@ const dropdownFiltersCoord = [
 const dropdownFilters = [
   'Category',
   'Experience',
+// Temp comment
   'Remote Availability',
   'Employment Type',
 ];
@@ -53,6 +54,7 @@ export default function CandidateFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
     checkboxFilters.forEach(filter => {
+      checkboxFilterObject[filter] = filterObject[filter];
     });
   }
 

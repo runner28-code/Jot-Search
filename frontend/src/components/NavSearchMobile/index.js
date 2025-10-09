@@ -182,7 +182,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
   }
 
   const placeholderText = placeholder || 'Search for companies or jobs...';
-  return (
     <label
       className={ !isOpen ? offObject.containerStyles : styleObject.containerStyles }
       htmlFor={ placeholder }

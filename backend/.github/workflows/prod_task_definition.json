@@ -26,3 +26,4 @@
 //             },
 //             "environment": [
 //                 {
+//                     "name": "CHOKIDAR_USEPOLLING",

@@ -17,7 +17,6 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
       throw error;
   }
 };
-
 export const sendVerification = async (to: string, name: string) => {
   try {
     const base_url = config.frontendUrl || 'http://localhost:3000';

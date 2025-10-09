@@ -33,7 +33,6 @@ export default function Careers() {
         toggle={toggle}
       />
       <div 
-        className={width <= 990 && !loggedIn ? 'px-[5%]' 
           : !loggedIn ? 'px-[15%]' 
             : '' 
         }
@@ -56,6 +55,7 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : CareerIcon}
         backButton={true}
+      />
       <DashboardCandidate 
         togglePassState={togglePassState} 
         toggle={toggle} 

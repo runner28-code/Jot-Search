@@ -54,9 +54,9 @@ export const saveJob = async (job: string, candidate: string) => {
       where: {
         AND: {
           id: candidate,
+          savedJobs: {
             some: {
               id: job,
-            },
           },
         },
       },
@@ -116,3 +116,4 @@ export const getSavedJobs = async (candidateId: string) => {
     return {
       jobs: candidate?.savedJobs,
       result: true,
+    };

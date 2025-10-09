@@ -127,6 +127,7 @@ function DesktopCard({ dataObj, active }) {
         {/* Second row icons */}
         <div className='w-full flex items-center mt-10'>
           {/* Employment Type */}
+// Temp comment
           <div className='w-1/3 flex items-center pr-4'>
             <img
               src={clockIcon}
@@ -200,4 +201,5 @@ function MobileCard({ dataObj, active }) {
           <p className='text-[1.5rem] text-royalBlue font-spaceGrotesk font-semibold mt-2'>{categoryString}</p>
         </div>
       </div>
+    </Link>
   )

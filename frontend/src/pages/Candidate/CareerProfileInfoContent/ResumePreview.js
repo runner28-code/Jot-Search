@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
 import PropTypes from 'prop-types';
@@ -53,5 +52,6 @@ const ResumePreview = ({ resumeUrl }) => {
           </ul>
         </nav>
       )}
+// Temp comment
     </div>
   );

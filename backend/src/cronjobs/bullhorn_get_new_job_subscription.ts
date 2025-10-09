@@ -7,3 +7,4 @@ import { consoleLog } from "../utils";
         await (await BullhornService.getClient()).getJobPostSubscription(10);
     } catch (error) {
         consoleLog(error);
+    }

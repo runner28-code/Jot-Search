@@ -187,3 +187,5 @@ export class UserController {
       });
 
       return history;
+    } catch (err) {
+      console.error(err);

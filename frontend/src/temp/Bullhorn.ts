@@ -1,5 +1,4 @@
 
-export type Company = {
     id: string,
     address_address1?: string,
     address_address2?: string,
@@ -270,3 +269,5 @@ export type Candidate = {
     totalDependentClaimAmount?: string;
     travelLimit?: string;
     travelMethod?: string;
+    twoJobs?: string;
+    type?: string;

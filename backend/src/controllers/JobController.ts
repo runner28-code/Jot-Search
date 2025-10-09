@@ -353,3 +353,6 @@ export class JobController {
 
   @Authorized()
   @Patch()
+  async update(
+    @Body() body: Partial<Job> & { id: string }
+  ): Promise<ApplyResponse> {

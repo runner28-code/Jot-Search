@@ -21,6 +21,7 @@ CREATE TABLE "UserTalentCollection" (
     "verified_by" TEXT,
     "invitation_reminder_sent_at" TEXT,
     "verified_at" TEXT,
+    "visibility" TEXT,
     "hide_from_domains" TEXT[],
     "user_deleted" BOOLEAN,
     "is_company_admin" BOOLEAN,
@@ -57,3 +58,4 @@ CREATE TABLE "GetroMember" (
     "remote_work" BOOLEAN,
     "require_sponsorship_visa" BOOLEAN,
     "seniority" TEXT,
+    "source" TEXT,
