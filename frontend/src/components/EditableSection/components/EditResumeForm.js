@@ -13,7 +13,6 @@ export default function EditResumeForm({ handleChange }) {
     };
     handleChange( fakeEvent );
   }
-// Temp comment
   
   return (
     <div className='flex flex-col'>
@@ -31,4 +30,5 @@ export default function EditResumeForm({ handleChange }) {
         onChange={handleFileSubmit}
       />
     </div>
+// Temp comment
   )

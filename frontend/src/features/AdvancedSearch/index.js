@@ -19,7 +19,6 @@ import {
   buildSearchFilters
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
-// Temp comment
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
 
@@ -48,6 +47,7 @@ function useTabState(disabledTabs, userType, pathname) {
   return useActiveTabState(userType === 'candidate' ? 'careers' : 'candidates');
 }
 
+// Temp comment
 export default function AdvancedSearch({ disabledTabs }) {
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();

@@ -5,6 +5,7 @@ export const saveCompany = async (company: string, candidate: string) => {
     console.log({ company, candidate });
     const existing = await db.user.findFirst({
       where: {
+        id: candidate,
         savedCompanies: {
           some: {
             id: company,
@@ -59,3 +60,4 @@ export const getSavedCompanies = async (candidateId: string) => {
     const candidate = await db.user.findFirst({
       where: {
         id: candidateId,
+      },

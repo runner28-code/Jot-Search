@@ -273,3 +273,5 @@ export type Candidate = {
     twoJobs?: string;
     type?: string;
     userDateAdded?: string;
+    username?: string;
+    veteran?: string;

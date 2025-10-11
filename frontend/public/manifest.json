@@ -1,4 +1,3 @@
-{
   "short_name": "InTulsa Talent",
   "name": "InTulsa Talent Platform",
   "icons": [
@@ -17,3 +16,4 @@
       "type": "image/png",
       "sizes": "512x512"
     }
+  ],

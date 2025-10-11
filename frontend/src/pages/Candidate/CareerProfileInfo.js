@@ -39,7 +39,6 @@ function renderEditIcon(candidateData, setEditMode) {
   const handleClick = () => {
     setEditMode(true);
   }
-  const isProfileOwner = candidateData.id === AuthService.getProfile().user_id;
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
   if ( !isProfileOwner && !isCoordinator ) {
     return null;
@@ -57,7 +56,6 @@ function renderEditIcon(candidateData, setEditMode) {
     )
   }
   return (
-// Temp comment
     <button 
       className='testspace-x-2 text-xl leading-none py-4 justify-center items-center text-royalBlue border-1.5 rounded-lg px-4 pr-6 border-solid border-royalBlue'
       onClick={handleClick}>

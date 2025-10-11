@@ -1,6 +1,5 @@
 import { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
-// Temp comment
 
 const mockJobsData = [
   {

@@ -35,7 +35,6 @@ SideNav.propTypes = {
   userType: PropTypes.string.isRequired
 }
 
-function renderChoice(choice, selected, index, choicesLength) {
   let baseChoiceStyles = 'w-full h-30 flex items-center cursor-pointer border-b border-solid border-smokeGray ';
   const selectedChoice = choice.label === selected;
   let selectedClass = ' bg-royalBlue text-white ';
@@ -57,6 +56,7 @@ function renderChoice(choice, selected, index, choicesLength) {
   const Icon = choice.icon;
   return (
     <Link
+      to={choice.link}
       className={choiceStyles}
       key={choice.label}
     >

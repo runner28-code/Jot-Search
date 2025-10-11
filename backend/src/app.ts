@@ -55,6 +55,7 @@ const uploadToS3 = async(req: any, res: any) => {
     let put = s3.upload(params)
 
     try {
+      const response = await put.promise()
   
       res.status(200).send({
         file: response.Location,
@@ -114,3 +115,4 @@ app.post("/api/upload", uploadToS3);
 app.get("/health", (req, res) => {
   res.status(200).send("Ok");
 });
+

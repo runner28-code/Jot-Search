@@ -224,7 +224,6 @@ export const mockCompanyStats = {
   }
 }
 
-// Temp comment
 export const mockCoordinatorStats = {
   'New Companies': {
     'Today': {
@@ -269,3 +268,5 @@ export const mockCoordinatorStats = {
       count: 654,
       prevCount: 443
     }
+  },
+  'Total Careers': {

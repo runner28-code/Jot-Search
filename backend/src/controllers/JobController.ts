@@ -357,3 +357,6 @@ export class JobController {
     @Body() body: Partial<Job> & { id: string }
   ): Promise<ApplyResponse> {
     return await updateJob(body);
+  }
+
+  @Authorized()

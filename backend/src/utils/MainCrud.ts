@@ -118,3 +118,4 @@ export const getSavedJobs = async (candidateId: string) => {
       jobs: candidate?.savedJobs,
       result: true,
     };
+  } catch (error) {

@@ -159,6 +159,7 @@ export class GetroService {
                     let result = [];
                     const { items, meta: { total } } = res.data;
                     if (!testMode) {
+                        for (const company of items) {
                             const detail = await this.getMemberDetail(company.id);
                             if (detail) {
                                 result.push(detail);
@@ -239,3 +240,5 @@ export class GetroService {
                         const res = await axios.get(url, this.getOptions());
                         await sleep(2000); // https://developers.getro.com/#rate-limit
 
+                        const { items, meta: { total } } = res.data;
+                        if (!testMode) {

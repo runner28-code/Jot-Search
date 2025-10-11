@@ -48,7 +48,6 @@ export class UserController {
         result,
         token,
       };
-    }
     return { result, error };
   }
 
@@ -190,3 +189,5 @@ export class UserController {
     } catch (err) {
       console.error(err);
       return null;
+    }
+  }

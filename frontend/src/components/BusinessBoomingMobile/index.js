@@ -1,4 +1,3 @@
-// Temp comment
 import * as ROUTES from '../../routes';
 
 export default function BusinessBooming() {
@@ -14,6 +13,7 @@ export default function BusinessBooming() {
           rel='noreferrer'
           className='flex items-center justify-center bg-white text-sm mt-12 py-8 rounded-lg w-3/5'
         >
+// Temp comment
           <span className='text-orangeHeroOverlay'>Learn About Tulsa</span>
         </a>
       </div>

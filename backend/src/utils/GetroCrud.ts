@@ -9,7 +9,6 @@ export const saveCompanies = async (companies: any[]) => {
 							const existing = await db.getroCompany.findFirst({
 								where: {
 									id: company.id,
-								},
 							});
 							if (existing) {
 								console.log(`Company with ID: ${company.id} exists`);

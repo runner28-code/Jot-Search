@@ -45,7 +45,6 @@ let JobController = class JobController {
                 const job = yield db_1.default.job.findFirst({
                     where: {
                         id,
-                    },
                     include: {
                         getroJobInfo: true,
                         company: true,

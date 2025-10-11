@@ -167,7 +167,6 @@ model ClientContact {
   office             String?
   owner              String?
   pager              String?
-  password           String?
   phone              String?
   phone2             String?
   phone3             String?
@@ -617,3 +616,7 @@ model Candidate {
   invitedCompanies   CompanyCandidateInvites[]
 
   firstName String?
+  lastName  String?
+
+  gender        String?
+  hourlyRate    Int?

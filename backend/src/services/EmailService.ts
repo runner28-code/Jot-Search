@@ -100,3 +100,4 @@ export const sendUpdateUserNotification = async (to: string, name: string) => {
     await sendEmail(to, 'Your account has been updated!', 'update-user-notification', {
       name: name,
       url: `${base_url}/login`
+    });

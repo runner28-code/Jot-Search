@@ -107,3 +107,4 @@ export const parseBullhornJobToMain = (data: BhJob) => {
     status: data.status,
     skillList: data.skillList,
     companyId: `bh-${data.clientCorporationID}`,
+    interviews: data.interviews,

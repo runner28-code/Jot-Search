@@ -110,6 +110,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
         result: false,
         error: "You should be a coordinator for updating this user",
       };
+    }
 
     const user = justifyData(data, USERKEYS, ["email", "id"]);
     if (user && user.role && !ROLES.find((role) => role === user.role)) {
@@ -469,7 +470,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
       createdAt: {
         gte: moment().subtract(days * 2 - 1, 'days').startOf('day').toDate(),
         lt: moment().subtract(days, 'days').endOf('day').toDate()
-      }
     }
   });
   const newApplicationsCompare = (newApplicationsInCurrentPeriod - newApplicationsInPreviousPeriod) * 100 / newApplicationsInCurrentPeriod
@@ -519,3 +519,7 @@ export const getStats = async (userId: string) => {
   try {
     const applicationCountQuery = `SELECT COUNT(*) as count FROM \`${DATASET_MAIN}.${Tables.APPLICATIONS}\` 
                     INNER JOIN \`${DATASET_MAIN}.${Tables.JOBS}\`
+                    ON \`${DATASET_MAIN}.${Tables.JOBS}\`.\`id\` = \`${DATASET_MAIN}.${Tables.APPLICATIONS}\`.\`job\`
+                    OR \`${DATASET_MAIN}.${Tables.JOBS}\`.\`externalId\` = \`${DATASET_MAIN}.${Tables.APPLICATIONS}\`.\`job\`
+                    WHERE \`${DATASET_MAIN}.${Tables.APPLICATIONS}\`.\`candidate\` = '${userId}'`;
+

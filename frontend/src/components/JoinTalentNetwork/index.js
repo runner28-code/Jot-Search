@@ -8,6 +8,7 @@ export default function JoinTalentNetwork() {
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {
+// Temp comment
     return (<>
       {/* Join Hero and call-to-action */}
       <section className='relative h-200 bg-join-hero bg-cover bg-center mb-[600px]'>
@@ -51,7 +52,6 @@ export default function JoinTalentNetwork() {
           >
             <span className='text-softWhite text-ml'>Create an account</span>
           </Link>
-// Temp comment
         </div>
         <div className='w-210 mt-150 ml-18'>
           <h6 className='text-h6 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>

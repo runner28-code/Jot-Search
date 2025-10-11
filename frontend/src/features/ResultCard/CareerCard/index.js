@@ -9,6 +9,7 @@ import clockIcon from '../../../assets/icons/clock.svg';
 import salaryIcon from '../../../assets/icons/salary.svg';
 import featuredIcon from '../../../assets/icons/pyramid.svg';
 import locationIcon from '../../../assets/icons/placepin.svg';
+import { buildCareerAddress, buildSalaryString, calculatePostingAge } from '../../../utils/formatFunctions';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 import AuthService from '../../../services/auth';
 
@@ -84,6 +85,7 @@ function DesktopCard({ dataObj, active }) {
       className='w-full flex mb-10 px-16 pt-16 pb-14 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
       tabIndex='0'
       state={ active ? true : false }
+// Temp comment
     >
       {/* Card Image */}
       <div className='flex flex-col'>
@@ -201,3 +203,40 @@ function MobileCard({ dataObj, active }) {
       </div>
     </Link>
   )
+}
+
+MobileCard.propTypes = {
+  dataObj: PropTypes.shape({
+    data: PropTypes.shape({
+      id: PropTypes.string,
+      clientCorporation: PropTypes.string,
+      city: PropTypes.string,
+      state: PropTypes.string,
+      company_logo: PropTypes.string,
+      title: PropTypes.string,
+      employmentType: PropTypes.string,
+      onSite: PropTypes.string,
+      salary: PropTypes.string,
+      salaryUnit: PropTypes.string,
+      createdAt: PropTypes.string,
+      category: PropTypes.shape({
+        id: PropTypes.number,
+        name: PropTypes.string
+      })
+    }).isRequired,
+    salaryString: PropTypes.string,
+    postingAge: PropTypes.string,
+    role: PropTypes.string,
+  }).isRequired,
+  active: PropTypes.bool
+}
+
+function renderCardImage(data) {
+  if ( !data.company_logo ) {
+    return <CareerIcon className='h-28 w-full fill-royalBlue' />
+  } else {
+    return <img
+      className=''
+      src={data.company_logo}
+    />
+  }

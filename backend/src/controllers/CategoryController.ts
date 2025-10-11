@@ -47,8 +47,10 @@ export class CategoryController {
   ): Promise<CategorySearchByFilterResponse> {
     try {
       const { filters, fields, page, count, operator } = body;
+
       const categories = await getCategoriesByFilter(
         filters,
         fields || [],
         count,
         operator
+      );

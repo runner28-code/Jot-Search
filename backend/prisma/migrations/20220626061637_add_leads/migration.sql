@@ -55,3 +55,4 @@ CREATE TABLE "Lead" (
     "priority" TEXT,
     "referredByPerson" TEXT,
     "reportToPerson" TEXT,
+    "role" TEXT,

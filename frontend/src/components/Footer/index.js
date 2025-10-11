@@ -54,7 +54,6 @@ export default function Footer() {
             src={youtube}
             className={socialIconStyleMobile}
           />
-        </a>
       </div>
       <NavFooterMobile />
       <div
@@ -312,7 +311,6 @@ function NavFooterMobile() {
           className='h-auto mb-12 w-4/6'
         />
       </div>
-// Temp comment
       <div className='flex flex-col basis-6/12'>
         <Link
           to={ROUTES.signup}

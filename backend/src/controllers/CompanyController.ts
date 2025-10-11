@@ -299,3 +299,5 @@ export class CompanyController {
     const _fields = this.getJoinedFields(fields);
     const _conditions = this.getConditionsFromFilters(
       filters,
+      "joined",
+      operator

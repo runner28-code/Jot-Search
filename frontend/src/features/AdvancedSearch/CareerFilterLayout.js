@@ -14,6 +14,7 @@ const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',
   'Years Experience'
+// Temp comment
 ]
 
 export default function CareerFilterLayout(props) {
@@ -38,6 +39,7 @@ export default function CareerFilterLayout(props) {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
+  }
 
   const buttonStyles = 'text-royalBlue text-sm whitespace-nowrap';
   const buttonStylesCareer = 'text-white text-sm whitespace-nowrap';

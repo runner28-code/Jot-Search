@@ -7,7 +7,6 @@ import { saveJob, saveCompany, saveCandidate } from '../../../services/API';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 
 const VALID_TYPES = ['job', 'company', 'candidate'];
-// Temp comment
 
 export default function FavoriteButton({ type, data, addClass, isFavoriteOverride = null }) {
   const role = AuthService.getUserRole();
@@ -54,6 +53,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
 FavoriteButton.propTypes = {
   type: PropTypes.string.isRequired,
   addClass: PropTypes.string,
+// Temp comment
   data: PropTypes.shape({
     id: PropTypes.string,
     candidate: PropTypes.string,

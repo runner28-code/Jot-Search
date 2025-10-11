@@ -31,6 +31,7 @@ export default function Filters(props) {
 Filters.propTypes = {
   handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,
+// Temp comment
   defaultFilterObject: PropTypes.object, // Shape changes significantly
   filterObject: PropTypes.object, // Shape changes significantly
   searchLabel: PropTypes.string,
@@ -42,6 +43,7 @@ Filters.propTypes = {
 export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick) {
   if (setSearchTerm) { // if provided a function, render search bar
     return (
+      <FilterSearch
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         handleSearchClick={handleSearchClick}
@@ -71,5 +73,36 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
         chosen={chosen}
         handleFilterChange={handleFilterChange}
       />
+    )
+  })
+}
+
+export function renderCheckboxFilters(defaultFilterObject, filterObject, handleFilterChange) {
+  if (!filterObject && !defaultFilterObject) {
+    return null;
+  }
+
+  return Object.entries(defaultFilterObject).map(([key]) => {
+    if (!filterObject[key]) {
+      return null;
+    }
+    const onFilterChange = (e) => {
+      handleFilterChange(key, e.target.checked ? 'Yes' : 'No')
+    }
+    const filterType = key;
+    return (
+      <label
+        key={filterType}
+        className='grow flex items-center gap-m'
+      >
+        <input
+          type='checkbox'
+          name={filterType}
+          checked={filterObject[key] === 'Yes'}
+          onChange={onFilterChange}
+          className='w-12 h-12'
+        />
+        <span className='text-md'>{filterType}</span>
+      </label>
     )
   })

@@ -59,7 +59,6 @@ export const IUSER = {
   email: "",
   password: "",
   role: "",
-  address1: "",
   address2: "",
   city: "",
   state: "",
@@ -84,3 +83,4 @@ export const IUSER = {
   companyURL: "",
   numEmployees: "",
   revenue: "",
+  dateFounded: "",

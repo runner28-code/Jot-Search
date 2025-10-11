@@ -233,6 +233,7 @@ export const skills = [
   'Inbound Calls',
   'InDesign',
   'Infrastructure',
+  'Interviewing',
   'Inventory Control',
   'Investing',
   'Investments',
@@ -328,3 +329,5 @@ export const skills = [
   'Real Estate',
   'Recruiting',
   'Redux',
+  'Regulatory Compliance',
+  'Research',

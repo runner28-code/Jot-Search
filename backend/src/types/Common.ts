@@ -36,6 +36,7 @@ export enum DataSource {
 }
 
 export type DataSources = "bullhorn" | "getro" | "main" | "all";
+
 export type Operator = "AND" | "OR";
 
 export type FilterOption = {
@@ -114,3 +115,4 @@ export type CompanySearchByID = {
 };
 
 export type CompanySearchByFilterResponse = {
+  companies?: Company[];

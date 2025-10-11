@@ -51,6 +51,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     if (name === 'avatar' || name === 'resume') {
       const fileToUpload = event.target.files[0];
       const pluralizedFolderName = name + 's';
+      const newPath = await uploadFile(pluralizedFolderName, fileToUpload);
       console.log(newPath);
       return setFormData({ ...formData, [name]: newPath });
     }
@@ -58,4 +59,17 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   }
 
   const handleCancel = () => {
+    setEditMode(false);
+  }
+  const handleSubmit = () => {
+    let dataToSubmit = {};
+    dataToSubmit = { ...formData };
+    dataToSubmit.skills = formData.skills.join(', ');
+    dataToSubmit.roles = formData.roles.join(', ');
+    if (formData.expertise) {
+      dataToSubmit.categoryId = categories.find(category => category.name === formData.expertise).id;
+      delete dataToSubmit.expertise;
+    }
+
+    handleCandidateUpdate(dataToSubmit);
     setEditMode(false);

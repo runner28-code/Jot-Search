@@ -121,7 +121,6 @@ export default function Header({ companyData }) {
 }
 
 Header.propTypes = {
-// Temp comment
   companyData: PropTypes.object.isRequired,
   handleCompanyUpdate: PropTypes.func.isRequired
 }

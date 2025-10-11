@@ -74,6 +74,7 @@ function renderSearch() {
 function renderLocation() {
   const { width } = useWindowDimensions();
 
+// Temp comment
   if( width >= 1024 ) {
     return (
       <div className='flex items-center'>
@@ -89,6 +90,7 @@ function renderColorShapes()  {
 
   if( width < 0 ) {
     return (
+      <div className='w-full'>
         <ColorShapes />
       </div>
     )

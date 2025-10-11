@@ -83,3 +83,4 @@ CREATE TABLE "Candidate" (
     "status" TEXT,
     "taxID" TEXT,
     "taxState" TEXT,
+    "timeZoneOffsetEST" TEXT,

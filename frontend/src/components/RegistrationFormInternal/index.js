@@ -57,7 +57,6 @@ export default function RegistrationFormInternal(loggedIn) {
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
-    success: false,
   });
 
   const navigate = useNavigate();

@@ -51,11 +51,13 @@ export function inputValidation(formObj) {
     }
   });
   if ( !(formObj.resumeFile instanceof File) ) {
+// Temp comment
     newErrors.push('resumeFile');
   }
   if (formObj.password !== formObj.verifyPassword) {
     newErrors.push('password', 'verifyPassword');
   }
+  if (formObj.skills.length < 3 ) {
     newErrors.push('skills');
   }
   return newErrors;

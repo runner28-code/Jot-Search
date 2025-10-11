@@ -59,3 +59,43 @@ export function renderHeader(addType) {
       </div>
     )
   }
+}
+
+export function inputValidation(formObj) {
+  // Remove non-required properties
+
+  let newErrors = [];
+
+  // Check each property for falsy values
+  const valuesToSkip = ['phone'];
+  Object.entries(formObj).forEach(([key, value]) => {
+    if ( !valuesToSkip.includes(key) ) {
+      // If value is empty string or empty array, add to errors
+      if (!value || (Array.isArray(value) && value.length === 0)) {
+        newErrors.push(key);
+      }
+    }
+  });
+
+  if ( formObj.linkedin.slice(0, 8) !== 'https://' ) { // Ensure valid URL
+    newErrors.push('linkedin');
+  }
+  if ( !(formObj.resume instanceof File) ) { // Ensure resume is a file
+    newErrors.push('resume');
+  }
+  if ( formObj.password !== formObj.verifyPassword ) { // Match passwords
+    newErrors.push('password', 'verifyPassword');
+  }
+  if ( formObj.skills.length < 3 ) { // Ensure at least 3 skills chosen
+    newErrors.push('skills');
+  }
+
+  // Only need LinkedIn OR resume, not both.
+  // If one is missing but the other is present, remove either from errors array.
+  if ( newErrors.includes('linkedin') && !newErrors.includes('resume') ) {
+    newErrors = newErrors.filter(error => error !== 'linkedin');
+  } else if ( newErrors.includes('resume') && !newErrors.includes('linkedin') ) {
+    newErrors = newErrors.filter(error => error !== 'resume');
+  }
+
+  return newErrors;

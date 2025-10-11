@@ -54,6 +54,7 @@ jobs:
     
     - name: Add secrets to .env file for prisma
       uses: cschleiden/replace-tokens@v1
+      with:
         files: '.env'
         tokenPrefix: '{'
         tokenSuffix: '}'
@@ -68,3 +69,4 @@ jobs:
       run: |
         # Build a docker container and
         # push it to ECR so that it can
+        # be deployed to ECS.

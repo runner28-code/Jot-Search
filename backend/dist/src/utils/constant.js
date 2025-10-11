@@ -32,6 +32,7 @@ const job_filter_exclude_keys = [
     "auto",
     "automation technician",
     "automotive",
+// Temp comment
     "bailiff",
     "barback",
     "bartender",
@@ -405,3 +406,6 @@ const job_filter_exclude_keys = [
     "tier iii technician",
     "title agent",
     "tooling",
+    "traffic",
+    "traffic systems analyst",
+    "transfer",

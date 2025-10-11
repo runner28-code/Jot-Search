@@ -137,6 +137,7 @@ function renderResults( results ) {
     />;
   }
 
+  const { jobs, companies, candidates } = results;
   if ( !jobs?.length && !companies?.length && !candidates?.length ) {
     return (
       <div className='text-center text-h6 text-black70% font-bold font-spaceGrotesk'>
@@ -162,7 +163,6 @@ const defaultStylesObject = {
 function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject, isOpen, setIsOpen}) {
   const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
   const offObject = {
-    containerStyles: 'flex items-end ',
     searchIconStyles: 'fill-neutral-400',
     inputStyles: 'hidden '
   }
@@ -170,45 +170,3 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
     if( !searchTerm ) {
       setIsOpen(isOpen => !isOpen);
     }
-  }
-
-  if ( marginBottom ) {
-    styleObject.containerStyles += `mb-${marginBottom} `;
-  }
-
-  function handleChange(e) {
-    setSearchTerm(e.target.value);
-  }
-
-  const placeholderText = placeholder || 'Search for companies or jobs...';
-  return (
-    <label
-      className={ !isOpen ? offObject.containerStyles : styleObject.containerStyles }
-      htmlFor={ placeholder }
-    >
-      <div
-        className={ !isOpen ? offObject.searchIconStyles : styleObject.searchIconStyles }
-        onClick={ handleClick }
-      >
-        {  !isOpen ? <RenderSearchIcon /> : <CloseIcon />}
-      </div>
-      <div className={ !isOpen ? 'hidden' : 'absolute top-[6.5rem] w-screen left-0 z-10 bg-sky-600 py-16' }>
-        <div className='w-3/4 mx-auto  flex items-center'>
-          <input
-            type='text'
-            id={ placeholder }
-            placeholder={ !isOpen ? '' : placeholderText  }
-            value={ searchTerm }
-            onChange={ handleChange }
-            className={ !isOpen ? offObject.inputStyles : styleObject.inputStyles } />
-          <div className='bg-searchGreen p-4 rounded-r-lg text-white'>
-            <img
-              src={ searchWhite }
-              alt='search icon'
-              className={'h-auto'}
-            />
-          </div>
-        </div>
-      </div>
-    </label>
-  )

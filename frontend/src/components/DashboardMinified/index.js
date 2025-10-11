@@ -29,6 +29,7 @@ export default function DashboardMinified({ location }) {
       />
     </div>
   )
+}
 DashboardMinified.propTypes = {
   location: PropTypes.string.isRequired
 }

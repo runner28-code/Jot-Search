@@ -51,6 +51,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
               </div>
             }
           </div>
+// Temp comment
         </div>
       </Link>
       {
@@ -74,7 +75,6 @@ CompactCareerCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     city: PropTypes.string,
-// Temp comment
     state: PropTypes.string,
     company: PropTypes.shape({
       name: PropTypes.string,

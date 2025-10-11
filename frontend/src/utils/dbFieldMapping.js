@@ -26,7 +26,6 @@ export const genderMap = {
 };
 
 export const ethnicityMap = {
-// Temp comment
   U: 'Prefer not to say',
   BL: 'Black or African American',
   NP: 'Native Hawaiian or other Pacific Islander',
@@ -63,3 +62,4 @@ export const referralChoices = [
   'Social Media',
   'Career Fair',
   'Event',
+  'Media and Advertising',

@@ -81,3 +81,4 @@ export const getSavedCandidates = async (companyUserId: string) => {
     return {
       result: true,
       candidates: user?.savedCandidates,
+    };

@@ -131,3 +131,25 @@ function Notification({title, content, text, email, company, id, add}) {
       />
     </div>
   )
+}
+Notification.propTypes = {
+  title: PropTypes.string,
+  content: PropTypes.string,
+  text: PropTypes.string,
+  email: PropTypes.string,
+  company: PropTypes.string,
+  id: PropTypes.string,
+  add: PropTypes.string
+}
+
+function MailButton({ text, email, company, id, add }) {
+  const mail = 'mailto:' + email + '?subject=';
+  const subject = company + ' role ' + id + ' ' + add;
+  const href = mail + subject;
+  return (<>
+    <a
+      href={href}
+      className='rounded-xl bg-white border border-royalBlue p-4 mt-6 text-royalBlue inline-block'>
+      {text}
+    </a>
+  </>)

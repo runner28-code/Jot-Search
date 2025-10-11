@@ -26,7 +26,6 @@ CREATE TABLE "ClientContact" (
     "dateLastVisit" TIMESTAMP(3),
     "description" TEXT,
     "desiredCategories" TEXT,
-    "desiredSkills" TEXT,
     "desiredSpecialties" TEXT,
     "division" TEXT,
     "email" TEXT,
@@ -50,3 +49,4 @@ CREATE TABLE "ClientContact" (
     "nickName" TEXT,
     "numEmployees" TEXT,
     "occupation" TEXT,
+    "office" TEXT,

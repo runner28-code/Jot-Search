@@ -1,4 +1,3 @@
-export type Company = {
     id: string,
     address_address1?: string,
     address_address2?: string,
@@ -273,3 +272,5 @@ export type Candidate = {
     willRelocate?: string;
     workAuthorized?: string;
     workPhone?: string;
+};
+
