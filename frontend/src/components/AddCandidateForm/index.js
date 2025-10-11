@@ -28,6 +28,7 @@ const defaultState = {
   workspace: '',
   linkedin: '',
   referredBy: '',
+  resumeFile: {},
   password: '',
   verifyPassword: '',
 };

@@ -9,6 +9,7 @@ import AuthService from '../../services/auth';
 import { formatCandidateData, convertUserToCandidate } from '../../utils/formatFunctions';
 import { PreferenceItem } from './PreferenceItem';
 import PersonalInfo from './PersonalInfo';
+// Temp comment
 import PasswordReset from './PasswordReset';
 import { useCandidateContext } from '../../services/CandidateContext';
 import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
@@ -21,6 +22,7 @@ const PREFERENCE_ITEMS = {
   activelyLooking: 'I\'m actively looking for a job',
   openToGetIntro: 'I\'m open to getting introductions from companies',
   willRelocate: 'I\'m willing to relocate to Tulsa OK',
+  willReceiveNotification: 'Receive emails about relevant opportunities based on your profile'
 }
 
 export default function Candidate() {

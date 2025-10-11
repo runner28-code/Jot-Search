@@ -44,7 +44,6 @@ export class BigQueryService {
             }
         } catch (error) {
             console.log(error);
-        }
         return null;
     }
 

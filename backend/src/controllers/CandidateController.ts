@@ -77,7 +77,6 @@ export class CandidateController {
 
   @Authorized()
   @Post("/update")
-  async update(
     @CurrentUser() authUser: User,
     @Body() body: any
   ) {
@@ -342,3 +341,5 @@ export class CandidateController {
         result: false,
         message: "You are not a company",
       };
+    }
+  }

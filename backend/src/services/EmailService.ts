@@ -17,6 +17,7 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
       throw error;
   }
 };
+
 export const sendVerification = async (to: string, name: string) => {
   try {
     const base_url = config.frontendUrl || 'http://localhost:3000';
@@ -98,3 +99,4 @@ export const sendUpdateUserNotification = async (to: string, name: string) => {
     const base_url = process.env.FRONTEND_URL || 'http://localhost:3000';
     await sendEmail(to, 'Your account has been updated!', 'update-user-notification', {
       name: name,
+      url: `${base_url}/login`

@@ -272,3 +272,4 @@ export type Candidate = {
     veteran?: string;
     willRelocate?: string;
     workAuthorized?: string;
+    workPhone?: string;

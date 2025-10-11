@@ -267,3 +267,4 @@ export const saveLeads = async (leads: any[]) => {
         console.log(`ERROR: while saving Lead with ID = ${lead.id}`);
       }
     }
+

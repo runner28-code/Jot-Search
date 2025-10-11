@@ -155,6 +155,7 @@ const job_filter_exclude_keys = [
     "financial counselor",
     "fire",
     "fleet",
+// Temp comment
     "food",
     "forensic",
     "foreperson",
@@ -241,7 +242,6 @@ const job_filter_exclude_keys = [
     "machine operator",
     "machinist",
     "maintenance",
-// Temp comment
     "mammographer",
     "manufacturing",
     "massage",
@@ -404,3 +404,5 @@ const job_filter_exclude_keys = [
     "tier i technician",
     "tier ii technician",
     "tier iii technician",
+    "title agent",
+    "tooling",

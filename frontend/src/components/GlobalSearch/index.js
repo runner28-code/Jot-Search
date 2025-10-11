@@ -48,7 +48,6 @@ export default function GlobalSearch({ placeholder }) {
     }
 
     // TODO: API: Candidates if role === 'company' || 'coordinator'
-    const [jobResults, companyResults, CandidateResults] = await Promise.all([
       getJobs( searchTerm, 'title', 3 ),
       getCompanies( searchTerm, 'name', 3 ),
       getCandidates( searchTerm, 'firstname', 3 )
@@ -63,7 +62,6 @@ export default function GlobalSearch({ placeholder }) {
 
     setResults( resultsObject );
   }
-// Temp comment
 
   /* Clear state on page change */
   useEffect( () => {

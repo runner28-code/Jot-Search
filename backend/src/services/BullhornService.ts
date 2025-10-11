@@ -812,3 +812,7 @@ export class BullhornService {
             "firstName",
             "isAnonymized",
             "isDeleted",
+            "lastName",
+            "leadSource",
+            "massMailOptOut",
+            "middleName",

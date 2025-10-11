@@ -74,3 +74,4 @@ const setupCronJobs = async () => {
       consoleLog(error);
     }
     consoleLog('/// CRON_JOB_ENDED: GETRO_GET_JOBS');
+  });

@@ -17,7 +17,6 @@ export const jobFilterObject = {
     'Hybrid',
     'Off-Site',
   ],
-// Temp comment
   'Years Experience': [
     'Any',
     ...experienceValues
@@ -59,7 +58,6 @@ export const defaultJobFilterState = {
 /* CANDIDATE FILTER UTILS */
 export const candidateFilterObject = {
   'Category': [
-    'Any',
     ...expertises
   ],
   'Experience': [

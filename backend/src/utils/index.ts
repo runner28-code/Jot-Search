@@ -99,3 +99,4 @@ export const getFilterConditions = (
         const operator = opt.operator || "AND";
         const baseCondition = (value: string) =>
           determineCondition(
+            opt.key,

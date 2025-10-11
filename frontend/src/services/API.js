@@ -309,7 +309,6 @@ export async function toggleHideJob(id, unhide) {
 //* CATEGORIES
 export async function getCategoryById(id) {
   const { data } = await API.get(ROUTES.APIcategories, {
-    params: {
       id
     }
   });

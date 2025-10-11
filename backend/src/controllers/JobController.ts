@@ -356,3 +356,4 @@ export class JobController {
   async update(
     @Body() body: Partial<Job> & { id: string }
   ): Promise<ApplyResponse> {
+    return await updateJob(body);

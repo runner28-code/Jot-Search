@@ -87,6 +87,7 @@ function renderColorShapes() {
 
 function RenderImage({image}) {
   const containerStyles = 'w-48 h-48 mb-6 ';
+// Temp comment
   const iconStyles = 'w-full h-full ';
   if( !image ) {
     return(<>

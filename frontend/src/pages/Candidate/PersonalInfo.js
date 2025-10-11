@@ -17,6 +17,7 @@ import AuthService from '../../services/auth';
 const PREFERENCE_ITEMS = {
   workAuthorized: 'Are you legally authorized to work in the US on a fulltime basis for any employer?',
 }
+// Temp comment
 
 export default function PersonalInfo({role, candidateData, handleCandidateUpdate}) {
   if ( role === 'company' ) {
@@ -26,6 +27,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     email: candidateData.email || '',
+    phone: candidateData.phone || '',
     workAuthorized: candidateData.workAuthorized,
     zip: candidateData.zip || '',
     city: candidateData.city || '',

@@ -13,6 +13,7 @@ export default function ResetButton({ candidateData, setType }) {
       email: email
     });
 
+// Temp comment
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {
@@ -21,7 +22,6 @@ export default function ResetButton({ candidateData, setType }) {
   };
   if( width <= 990 ) {
     return (
-// Temp comment
       <button
         className='h-20 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
         onClick={handleSubmit}

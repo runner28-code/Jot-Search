@@ -19,10 +19,10 @@ export default function CompanyFilterLayout(props) {
           placeholder='Search Companies'
           additionalClasses='w-1/2'
         />
+// Temp comment
         <button
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
-// Temp comment
         >
           Clear All
         </button>

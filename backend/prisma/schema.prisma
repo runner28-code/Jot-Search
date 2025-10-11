@@ -604,6 +604,7 @@ model Candidate {
   email3             String?
   employeeType       String?
   employeePreference String?
+  ethnicity          String[]
   experience         Int?
   externalId         String?
   fax                String?
@@ -613,3 +614,6 @@ model Candidate {
   title              String?
 
   invitedJobs        CandidateJobInvites[]
+  invitedCompanies   CompanyCandidateInvites[]
+
+  firstName String?

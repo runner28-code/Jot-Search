@@ -49,6 +49,7 @@ function CareerHeader ({ location }) {
           className='text-blue underline text-royalBlue'
           to={ROUTES.careers}
         >{ back }</Link>
+      </div>
     )
   }
   if( userRole === 'company' ) {

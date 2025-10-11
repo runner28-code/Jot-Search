@@ -216,3 +216,4 @@ module.exports = {
       'roboto': ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
       'spaceGrotesk': ['Space Grotesk', 'Helvetica', 'Arial', 'sans-serif']
     },
+    minWidth: {

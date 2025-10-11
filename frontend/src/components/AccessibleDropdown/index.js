@@ -10,6 +10,7 @@ export default function AccessibleDropdown(props) {
   const {
     type,
     name,
+    label,
     placeholder,
     required,
     onChange,
@@ -92,6 +93,7 @@ AccessibleDropdown.propTypes = {
     listStyles: PropTypes.string,
     listItemStyles: PropTypes.string,
   }).isRequired,
+// Temp comment
   showDropdownArrow: PropTypes.bool,
   disabled: PropTypes.bool,
 }

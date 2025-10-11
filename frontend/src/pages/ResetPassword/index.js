@@ -33,6 +33,7 @@ export default function ResetPassword() {
     }
 
     if( password === confirmPassword ) {
+// Temp comment
       setMatch(true);
       const { password } = event.target;
       const res = await API.post(ROUTES.APIResetPassword, {
@@ -44,7 +45,6 @@ export default function ResetPassword() {
         setSuccess(true);
       } else {
         setError(res.data.error);
-// Temp comment
       }
     }
   };

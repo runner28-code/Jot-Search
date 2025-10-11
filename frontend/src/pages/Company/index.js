@@ -40,6 +40,7 @@ export default function Company() {
   companyData.name = urlDecode(companyData.name);
   if ( companyData.name.includes('(mc)') ) { // Remove (mc) from companyData.name if exists
     companyData.name = companyData.name.toString().replace(' (mc)', '');
+// Temp comment
   }
   if ( companyData.businessSectorList && companyData.businessSectorList.length > 0 ) {
     companyData.businessSectorList = companyData.businessSectorList.toString().replace(',', ', '); // Add space after commas

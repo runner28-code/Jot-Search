@@ -118,3 +118,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
       },
       data: {
         ...filteredJob,
+        datasource: filteredJob?.datasource as any,

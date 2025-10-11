@@ -1,4 +1,5 @@
 
+export type Company = {
     id: string,
     address_address1?: string,
     address_address2?: string,
@@ -165,7 +166,6 @@ export type ClientContact = {
     source?: string;
 };
 
-export type Candidate = {
     id: string;
     address_address1?: string; // !
     address_address2?: string; // !
@@ -271,3 +271,4 @@ export type Candidate = {
     travelMethod?: string;
     twoJobs?: string;
     type?: string;
+    userDateAdded?: string;

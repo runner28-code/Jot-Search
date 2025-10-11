@@ -29,7 +29,6 @@ export const saveCandidate = async (
               id: candidateId,
             },
           },
-        },
       });
     } else {
       await db.user.update({

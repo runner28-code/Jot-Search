@@ -372,3 +372,8 @@ const job_filter_exclude_keys = [
   "staffing",
   "sterile",
   "stock",
+  "store",
+  "storm",
+  "stormwater",
+  "street",
+  "student",

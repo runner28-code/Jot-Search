@@ -100,3 +100,4 @@ export const saveJobs = async (jobs: any[]) => {
 									},
 								});
 				
+								if (existing) {

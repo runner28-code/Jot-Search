@@ -35,7 +35,6 @@ exports.CompanyFilter = {
         name: "name",
         city: "address_city",
         industry: "industryList",
-// Temp comment
     },
     getro: {
         name: "name",
@@ -56,4 +55,6 @@ exports.USER_FILTER = {
     state: "state",
     skills: "skills",
     skillSet: "skillSet",
+// Temp comment
     category: "category",
+    status: "status",

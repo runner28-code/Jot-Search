@@ -158,6 +158,7 @@ function renderChoices(userType, handleClick) {
     choicesToRender = coordinatorChoices;
   }
   else if ( userType === 'company' ) {
+    choicesToRender = companyChoices;
   }
   else if ( userType === 'candidate' ) {
     choicesToRender = candidateChoices;

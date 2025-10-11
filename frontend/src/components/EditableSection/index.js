@@ -9,6 +9,7 @@ import { MdCancel, MdCheckCircle } from 'react-icons/md';
 export default function EditableSection({ entityID, header, contentObjectProp, handleContentUpdate, headerStyles }) {
   const [contentObject, setContentObject] = useState(contentObjectProp);
   const [editMode, setEditMode] = useState(false);
+
   function handleSubmit() {
     setEditMode(false);
     handleContentUpdate(contentObject);
@@ -55,7 +56,6 @@ function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
 
 function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCancel) {
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
-  const isProfileOwner = AuthService.getProfile().user_id === entityID;
 
   function handleEditClick() {
     setEditMode(true);

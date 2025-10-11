@@ -36,7 +36,6 @@ CareerProfileInfo.propTypes = {
 }
 
 function renderEditIcon(candidateData, setEditMode) {
-// Temp comment
   const handleClick = () => {
     setEditMode(true);
   }
