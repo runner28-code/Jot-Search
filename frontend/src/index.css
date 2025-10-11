@@ -33,6 +33,7 @@ input[type="text"].placeholder-24::placeholder {
 }
 
 /* Remove highlight outline from input elements and anything with the remove-outline class */
+input:focus,
 select:focus,
 textarea:focus,
 button:focus,

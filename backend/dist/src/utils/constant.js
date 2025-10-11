@@ -155,7 +155,6 @@ const job_filter_exclude_keys = [
     "financial counselor",
     "fire",
     "fleet",
-// Temp comment
     "food",
     "forensic",
     "foreperson",

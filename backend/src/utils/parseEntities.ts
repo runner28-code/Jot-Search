@@ -87,6 +87,7 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
     workAuthorized: data.workAuthorized,
     disability: data.disability,
   };
+  return user;
 };
 
 export const parseBullhornJobToMain = (data: BhJob) => {

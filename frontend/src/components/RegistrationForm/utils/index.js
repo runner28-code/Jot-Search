@@ -20,6 +20,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       type='submit'>
       {buttonString}
     </button>
+  )
 }
 
 export function renderErrorBlock(errorBlock) {

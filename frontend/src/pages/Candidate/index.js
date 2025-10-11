@@ -9,7 +9,6 @@ import AuthService from '../../services/auth';
 import { formatCandidateData, convertUserToCandidate } from '../../utils/formatFunctions';
 import { PreferenceItem } from './PreferenceItem';
 import PersonalInfo from './PersonalInfo';
-// Temp comment
 import PasswordReset from './PasswordReset';
 import { useCandidateContext } from '../../services/CandidateContext';
 import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';

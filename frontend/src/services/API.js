@@ -74,6 +74,7 @@ export async function updateUser(newData, id) { // id is optional, if no id is p
   return normalizeData(data);
 }
 
+// Temp comment
 export async function updateCandidate(newData, id) {
   console.log({ newData, id })
   const body = { ...newData, id };
@@ -309,6 +310,7 @@ export async function toggleHideJob(id, unhide) {
 //* CATEGORIES
 export async function getCategoryById(id) {
   const { data } = await API.get(ROUTES.APIcategories, {
+    params: {
       id
     }
   });

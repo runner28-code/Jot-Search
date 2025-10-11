@@ -4,7 +4,6 @@ export const disabilityMap = {
   H: 'I am a person with a history of a disability',
   A: 'I can perform the essential functions of my remote work with a reasonable accomodation',
   R: 'I need a reasonable accomodation to perform the essential function of my remote work',
-// Temp comment
   N: 'None of the above'
 };
 
@@ -27,6 +26,7 @@ export const genderMap = {
 };
 
 export const ethnicityMap = {
+// Temp comment
   U: 'Prefer not to say',
   BL: 'Black or African American',
   NP: 'Native Hawaiian or other Pacific Islander',

@@ -56,6 +56,7 @@ function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
 
 function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCancel) {
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
+  const isProfileOwner = AuthService.getProfile().user_id === entityID;
 
   function handleEditClick() {
     setEditMode(true);

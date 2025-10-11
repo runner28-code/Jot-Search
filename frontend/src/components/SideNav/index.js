@@ -57,7 +57,6 @@ function renderChoice(choice, selected, index, choicesLength) {
   const Icon = choice.icon;
   return (
     <Link
-      to={choice.link}
       className={choiceStyles}
       key={choice.label}
     >

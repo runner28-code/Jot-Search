@@ -11,6 +11,7 @@ import searchWhite from '../../assets/images/search-white.webp';
 
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
+import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 import AuthService from '../../services/auth';
 
@@ -136,7 +137,6 @@ function renderResults( results ) {
     />;
   }
 
-  const { jobs, companies, candidates } = results;
   if ( !jobs?.length && !companies?.length && !candidates?.length ) {
     return (
       <div className='text-center text-h6 text-black70% font-bold font-spaceGrotesk'>

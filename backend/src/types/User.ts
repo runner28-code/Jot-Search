@@ -53,6 +53,7 @@ export type User = {
 export const IUSER = {
   id: "",
   externalId: "",
+  firstname: "",
   lastname: "",
   gender: "",
   email: "",

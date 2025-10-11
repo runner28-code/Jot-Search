@@ -55,6 +55,5 @@ exports.USER_FILTER = {
     state: "state",
     skills: "skills",
     skillSet: "skillSet",
-// Temp comment
     category: "category",
     status: "status",

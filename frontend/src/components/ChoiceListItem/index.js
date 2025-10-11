@@ -15,11 +15,11 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
     e.stopPropagation();
     handleClick(job.id);
   }
-// Temp comment
 
   const itemKey = job.id + '-container';
   const containerStyles = 'multi-select-choice ' + listItemStyles;
   return (
+// Temp comment
     <div 
       key={itemKey}
       className={containerStyles}
