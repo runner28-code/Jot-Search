@@ -54,6 +54,7 @@ export default function Footer() {
             src={youtube}
             className={socialIconStyleMobile}
           />
+        </a>
       </div>
       <NavFooterMobile />
       <div

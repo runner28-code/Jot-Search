@@ -85,7 +85,6 @@ function DesktopCard({ dataObj, active }) {
       className='w-full flex mb-10 px-16 pt-16 pb-14 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
       tabIndex='0'
       state={ active ? true : false }
-// Temp comment
     >
       {/* Card Image */}
       <div className='flex flex-col'>
@@ -151,7 +150,6 @@ DesktopCard.propTypes = {
   dataObj: PropTypes.shape({
     data: PropTypes.shape({
       id: PropTypes.string,
-      clientCorporation: PropTypes.string,
       city: PropTypes.string,
       state: PropTypes.string,
       company_logo: PropTypes.string,

@@ -425,6 +425,7 @@ export class BullhornService {
         categories,
         ...otherData
       } = d;
+
       const categoryId = d.categories?.total === 0 ? null : d.categories?.data[0].id;
 
       return {

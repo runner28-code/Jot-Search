@@ -9,11 +9,11 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   const navigate = useNavigate();
   const [filterState, setFilterState] = useState({
     title: '',
+// Temp comment
     'On-Site/Remote': 'Any Work Setting',
     expertise: 'Any Expertise',
   });
 
-// Temp comment
   function handleSearchClick() {
     const params = {};
     if (filterState.title) {

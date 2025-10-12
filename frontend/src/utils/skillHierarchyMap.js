@@ -270,6 +270,7 @@ export const skills = [
   'MERN',
   'Microservices',
   'MongoDB',
+// Temp comment
   'MS Office',
   'Multimedia',
   'MVC',

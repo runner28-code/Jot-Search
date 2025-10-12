@@ -50,6 +50,7 @@ class AuthService {
     window.location.assign('/');
   }
 
+  accountRecovery(email) {
     return email;
   }
 

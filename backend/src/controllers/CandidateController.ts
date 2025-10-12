@@ -346,3 +346,4 @@ export class CandidateController {
   }
 
   @Authorized()
+  @Get("/saved")

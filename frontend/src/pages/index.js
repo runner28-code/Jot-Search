@@ -12,5 +12,4 @@ export {default as Dashboard} from './Dashboard';
 export {default as Favorites} from './Favorites';
 export {default as LandingPage} from './LandingPage';
 export {default as Login} from './Login';
-// Temp comment
 export {default as Logout} from './Logout';

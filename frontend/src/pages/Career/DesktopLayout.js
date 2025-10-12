@@ -13,7 +13,6 @@ import { apply as applyRoute } from '../../routes';
 import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
 
-// Temp comment
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charcoal mb-m ';
 const hrStyles = 'mb-10 border-smokeGray ';
 
@@ -79,6 +78,7 @@ export default function DesktopLayout(props) {
             {/* Employment Type */}
             <div className='w-1/3 flex items-center'>
               <img
+// Temp comment
                 src={clockIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{careerData.employmentType}</p>

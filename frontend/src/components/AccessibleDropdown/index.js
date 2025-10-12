@@ -30,7 +30,6 @@ export default function AccessibleDropdown(props) {
         onChange(name, [...currentChosen, choice]);
       }
     } else { // single select
-// Temp comment
       onChange(name, choice);
     }
   }
@@ -77,6 +76,7 @@ AccessibleDropdown.propTypes = {
   type: PropTypes.string,
   name: PropTypes.string,
   label: PropTypes.string,
+// Temp comment
   placeholder: PropTypes.string,
   required: PropTypes.bool,
   onChange: PropTypes.func,

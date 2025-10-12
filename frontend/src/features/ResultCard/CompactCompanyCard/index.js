@@ -33,7 +33,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           </div>
 
           {/* Posting age */}
-// Temp comment
           <div className='border-1 border-t border-gray-300 py-4 mt-4 justify-self-end'>
             <p className='text-grey-700 opacity-50'>{agoText} {postingAge}</p>
           </div>
@@ -46,7 +45,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
           />
-          : 
           <FavoriteButton
             type={'company'}
             data={data}

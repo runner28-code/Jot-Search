@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import { MdLocationOn, MdCancel, MdCheckCircle } from 'react-icons/md';
 import PropTypes from 'prop-types';
 import { FaPhoneAlt } from 'react-icons/fa';

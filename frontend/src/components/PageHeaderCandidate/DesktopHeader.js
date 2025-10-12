@@ -23,7 +23,6 @@ export default function DesktopHeader(props) {
   
   return (
     <div className={containerClasses}>
-      <div className='flex gap-8 items-center'>
         { icon && (
           <img
             src={ icon }
@@ -42,7 +41,6 @@ export default function DesktopHeader(props) {
         )}
       </div>
       { backButton && (
-// Temp comment
         <button
           className='text-md text-royalBlue underline mt-6'
           onClick={() => navigate(-1)}

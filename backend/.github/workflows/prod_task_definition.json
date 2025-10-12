@@ -20,7 +20,7 @@
 //                 "logDriver": "awslogs",
 //                 "options": {
 //                     "awslogs-group" : "/ecs/prod-site-backend-task",
-//                     "awslogs-stream-prefix": "ecs"
+//                     "awslogs-region": "us-east-1",
 //                 }
 //             },
 //             "environment": [

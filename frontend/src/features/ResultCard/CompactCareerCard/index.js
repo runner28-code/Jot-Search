@@ -51,7 +51,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
               </div>
             }
           </div>
-// Temp comment
         </div>
       </Link>
       {

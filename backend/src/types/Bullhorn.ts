@@ -1,3 +1,4 @@
+export type Company = {
     id: string,
     address_address1?: string,
     address_address2?: string,
@@ -98,7 +99,6 @@ export type Job = {
     owner?: string;
     payRate?: string;
     publicDescription?: string;
-    publishedZip?: string;
     reasonClosed?: string;
     reportTo?: string;
     reportToClientContact?: string;
@@ -274,3 +274,4 @@ export type Candidate = {
     workPhone?: string;
 };
 
+export type Lead = {

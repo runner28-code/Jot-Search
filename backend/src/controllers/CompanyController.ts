@@ -301,3 +301,4 @@ export class CompanyController {
       filters,
       "joined",
       operator
+    );

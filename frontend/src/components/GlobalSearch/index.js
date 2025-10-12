@@ -46,8 +46,6 @@ export default function GlobalSearch({ placeholder }) {
         candidates: []
       });
     }
-// Temp comment
-
     // TODO: API: Candidates if role === 'company' || 'coordinator'
     const [jobResults, companyResults, CandidateResults] = await Promise.all([
       getJobs( searchTerm, 'title', 3 ),

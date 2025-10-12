@@ -1,4 +1,5 @@
 /* INTERNAL ROUTES */
+// Temp comment
 export const root = '/';
 export const landingPage = '/landing-page';
 export const blog = '/blog';
@@ -29,6 +30,7 @@ export const activeCareers = '/active-careers';
 export const companyQuickStats = '/company-stats';
 // Coordinator Dashboard
 export const addUser = '/add-user';
+export const alerts = '/alerts';
 
 export const careerSeekers = '/career-seeker';
 export const softwareEngineering = '/software-engineering';

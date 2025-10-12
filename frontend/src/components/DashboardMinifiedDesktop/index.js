@@ -51,7 +51,6 @@ function CareerHeader ({ location }) {
         >{ back }</Link>
       </div>
     )
-// Temp comment
   }
   if( userRole === 'company' ) {
     return (

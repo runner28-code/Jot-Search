@@ -1,6 +1,5 @@
 {
   "name": "intulsa-aerovision-fe",
-  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.1.3",
@@ -44,3 +43,4 @@
     "production": [
       ">0.2%",
       "not dead",
+      "not op_mini all"

@@ -163,6 +163,7 @@ const defaultStylesObject = {
 function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject, isOpen, setIsOpen}) {
   const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
   const offObject = {
+    containerStyles: 'flex items-end ',
     searchIconStyles: 'fill-neutral-400',
     inputStyles: 'hidden '
   }

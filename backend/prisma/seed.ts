@@ -166,6 +166,7 @@ async function seedCompanies() {
         city: "Tulsa",
         state: "OK",
         billingPhone: "876-567-9876",
+        companyURL: "pepsoda@gmail.com",
         companyDescription: "Best at test",
         numEmployees: 50,
       },

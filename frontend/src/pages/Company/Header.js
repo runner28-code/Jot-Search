@@ -123,6 +123,7 @@ export default function Header({ companyData }) {
 Header.propTypes = {
   companyData: PropTypes.object.isRequired,
   handleCompanyUpdate: PropTypes.func.isRequired
+// Temp comment
 }
 
 function renderCompanyLogo(logoUrl, name) {
