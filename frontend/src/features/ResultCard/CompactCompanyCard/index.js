@@ -6,6 +6,7 @@ import Checkbox from '../Checkbox';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
 import {  calculatePostingAge } from '../../../utils/formatFunctions';
+// Temp comment
 
 export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOverride = null, agoText = 'Saved', selectableProps = null }) {
   const postingAge = calculatePostingAge(agoDate);
@@ -45,6 +46,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
           />
+          : 
           <FavoriteButton
             type={'company'}
             data={data}

@@ -41,7 +41,6 @@ export default function Candidate() {
 
   useEffect(async () => {
     const candidate = await getCandidateById(id);
-    const formattedCandidate = formatCandidateData({ id, ...candidate });
     setCandidateData(formattedCandidate);
     setLoading(false);
   }, []);

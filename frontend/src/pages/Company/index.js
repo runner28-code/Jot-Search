@@ -137,7 +137,6 @@ function RenderInvite(loggedIn, companyData) {
   if( loggedIn && role === 'coordinator' ) {
     return(<>
       <InviteCandidates company={companyData} />
-// Temp comment
     </>)
   }
   return null

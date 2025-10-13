@@ -95,6 +95,7 @@ export default function NavSearch({ placeholder }) {
     inputStyles: 'flex-1 h-5/6 vw-1280:w-96 vw-480:placeholder:text-sm vw-1024:placeholder:text-base'
   }
 
+  return (
     <div className='relative'>
       <div ref={menuRef} >
         <NavSearchBar

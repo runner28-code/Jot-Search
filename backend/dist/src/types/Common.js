@@ -15,6 +15,7 @@ var Tables;
     Tables["CANDIDATES"] = "Candidates";
     Tables["APPLICATIONS"] = "Applications";
     Tables["SAVEDJOBS"] = "SavedJobs";
+    Tables["SAVED_COMPANIES"] = "SavedCompanies";
     Tables["SAVED_CANDIDATES"] = "SavedCandidates";
     Tables["JOINED_COMPANIES"] = "companies_joined";
     Tables["JOINED_CANDIDATES"] = "candidates_joined";

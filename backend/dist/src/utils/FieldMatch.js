@@ -38,7 +38,6 @@ exports.CompanyFilter = {
     },
     getro: {
         name: "name",
-// Temp comment
         city: "locations",
     },
     joined: {
@@ -50,6 +49,7 @@ exports.CompanyFilter = {
 exports.USER_FILTER = {
     firstname: "firstname",
     lastname: "lastname",
+// Temp comment
     role: "role",
     roles: "roles",
     city: "city",

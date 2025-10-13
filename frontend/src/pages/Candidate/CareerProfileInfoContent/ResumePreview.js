@@ -17,13 +17,11 @@ const ResumePreview = ({ resumeUrl }) => {
     canvasRef,
   });
 
-// Temp comment
   const buttonStyles = 'w-15 h-15 ';
   const buttonStylesDisabled = 'w-15 h-15 opacity-50';
   const prevButtonDisabled = page === 1;
   const nextButtonDisabled = page === pdfDocument?.numPages;
 
-  return (
     <div className='border border-grey300 border-2 rounded-lg'>
       {!pdfDocument && <LoadingSpinner />}
       <canvas

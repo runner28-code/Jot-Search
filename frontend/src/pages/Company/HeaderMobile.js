@@ -60,7 +60,6 @@ function HeaderContent({ companyData }) {
   )
 }
 
-HeaderContent.propTypes = {
   companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,

@@ -22,6 +22,7 @@ export default function CandidateCard({ data, disableLink }) {
   const occupationString = buildOccupationString(data.occupation, data.companyName);
   const link = data.user ? `${ROUTES.candidates}/${data.user.id}` : `${ROUTES.candidates}/${data.id}`
 
+// Temp comment
   return (
     <div
       className='relative w-full'

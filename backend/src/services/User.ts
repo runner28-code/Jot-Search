@@ -506,7 +506,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
       result: true,
       data,
       message: null,
-    };
   } catch (error) {
     console.log('err: ', error);
     return {

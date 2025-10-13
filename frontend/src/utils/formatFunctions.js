@@ -50,7 +50,6 @@ export function convertUserToCandidate(user) {
     description: user.description,
     experience: user.experience?.parseInt() || 1,
     address_address1: user.address1 || '',
-// Temp comment
     address_address2: user.address2 || '',
     address_city: user.city || '',
     address_state: user.state || '',
@@ -65,7 +64,6 @@ export function convertUserToCandidate(user) {
   return candidate;
 }
 
-export function formatCandidateName(firstName, lastName) {
   if ( !firstName && !lastName ) return '';
   if ( !firstName ) return lastName;
   if ( !lastName ) return firstName;

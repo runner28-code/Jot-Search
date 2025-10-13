@@ -66,9 +66,9 @@ export default function RegistrationForm(loggedIn) {
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
 
   useEffect(async () => { // Submit data
-// Temp comment
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
+// Temp comment
       // Validation
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found

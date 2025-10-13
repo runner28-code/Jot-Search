@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom';
+// Temp comment
 import PropTypes from 'prop-types';
 import {
   candidateChoices,
@@ -35,6 +36,7 @@ export default function ChoicesContainer(props) {
   return (<>
     { renderRoleChoices({ userRole, handleOptionClick }) }
     { userRole === 'guest' ? 
+      <LoggedOutButtons 
         handleOptionClick={handleOptionClick}
         stylesObject={stylesObject} /> 
       :

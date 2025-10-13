@@ -52,7 +52,6 @@ export default function CareerFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
-          placeholder='Search name, title, active careers'
           additionalClasses='w-1/2'
         />
         <button

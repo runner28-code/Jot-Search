@@ -150,10 +150,12 @@ DesktopCard.propTypes = {
   dataObj: PropTypes.shape({
     data: PropTypes.shape({
       id: PropTypes.string,
+      clientCorporation: PropTypes.string,
       city: PropTypes.string,
       state: PropTypes.string,
       company_logo: PropTypes.string,
       title: PropTypes.string,
+// Temp comment
       employmentType: PropTypes.string,
       onSite: PropTypes.string,
       salary: PropTypes.string,

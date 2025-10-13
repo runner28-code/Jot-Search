@@ -4,7 +4,6 @@ import { useGetSavedCompanies } from '../../hooks/queries/useGetSavedCompanies';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CompanyCard from '../../features/ResultCard/CompactCompanyCard';
-// Temp comment
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -23,6 +22,7 @@ export default function CareerFavorite () {
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
           isLoading ?
+// Temp comment
             <LoadingSpinner />
             :
             savedCompanies.map((company, index) => {

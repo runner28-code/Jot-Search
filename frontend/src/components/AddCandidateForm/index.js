@@ -27,7 +27,6 @@ const defaultState = {
   employmentPreference: '',
   workspace: '',
   linkedin: '',
-  referredBy: '',
   resumeFile: {},
   password: '',
   verifyPassword: '',
@@ -109,7 +108,6 @@ export default function RegistrationForm() {
     setErrorBlock('');
     setErrors([]);
     setFormObj({
-// Temp comment
       ...formObj,
       firstName: firstName.value,
       lastName: lastName.value,

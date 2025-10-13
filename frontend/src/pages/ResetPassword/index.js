@@ -58,7 +58,6 @@ export default function ResetPassword() {
             className='underline block my-4 text-royalBlue'
           >
             Login to your account
-// Temp comment
           </Link>
         </div>
       )

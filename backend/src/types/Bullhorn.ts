@@ -99,6 +99,7 @@ export type Job = {
     owner?: string;
     payRate?: string;
     publicDescription?: string;
+    publishedZip?: string;
     reasonClosed?: string;
     reportTo?: string;
     reportToClientContact?: string;

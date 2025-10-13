@@ -76,7 +76,6 @@ AccessibleDropdown.propTypes = {
   type: PropTypes.string,
   name: PropTypes.string,
   label: PropTypes.string,
-// Temp comment
   placeholder: PropTypes.string,
   required: PropTypes.bool,
   onChange: PropTypes.func,
@@ -171,6 +170,7 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
     </li>
   }
   
+// Temp comment
   if ( choices.length === 0 && name === 'roles' ) {
     return <li className='flex items-center justify-center'>
       <p className='text-center text-textBlack my-4'>Please select an expertise</p>

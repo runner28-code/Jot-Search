@@ -250,7 +250,6 @@ export class CompanyController {
         const getroCompany = getroCompanies.find(gc => gc.domain === company.companyURL)
         if (getroCompany) {
           company.logo = getroCompany.logo_url
-          company.linkedin_url = getroCompany.linkedin_url
         }
         return company
       })
