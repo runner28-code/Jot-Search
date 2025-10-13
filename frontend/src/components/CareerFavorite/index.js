@@ -29,7 +29,6 @@ export default function CareerFavorite () {
               return(<>
                 <CareerCard
                   key={career.id}
-                  index={index}
                   data={career}
                   agoDate={career.createdAt}
                 />

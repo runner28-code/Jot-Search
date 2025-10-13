@@ -47,4 +47,3 @@ export class ClientContactController {
         where: wheres,
         take: count || 100,
         skip: (count || 0) * (page || 0),
-      });

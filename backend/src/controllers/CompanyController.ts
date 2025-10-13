@@ -167,6 +167,7 @@ export class CompanyController {
 
   @Authorized()
   @Post("/sendCandidates")
+  async sendCandidates(
     @CurrentUser() authUser: User,
     @Body() body: { candidateIds: string[], companyIds: string[] }
   ): Promise<any> {
@@ -235,7 +236,6 @@ export class CompanyController {
         .map(company => company.companyURL) as string[]
       const getroCompanies = await db.getroCompany.findMany({
         select: {
-          domain: true,
           logo_url: true,
           linkedin_url: true,
         },

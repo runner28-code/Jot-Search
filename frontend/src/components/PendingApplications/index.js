@@ -75,6 +75,7 @@ export default function PendingApplications () {
         <Link
           to={ROUTES.applications}
           class='outline outline-2 outline-white text-white font-roboto py-8 px-14 rounded-lg text-md'>
+// Temp comment
             View All
         </Link>
       </div>

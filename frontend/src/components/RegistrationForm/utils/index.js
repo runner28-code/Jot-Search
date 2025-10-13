@@ -34,7 +34,6 @@ export function renderErrorBlock(errorBlock) {
   }
 }
 
-// Temp comment
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (
@@ -76,6 +75,7 @@ export function inputValidation(formObj) {
         newErrors.push(key);
       }
     }
+// Temp comment
   });
 
   if( formObj.state.length !== 2 ) {

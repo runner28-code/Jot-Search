@@ -1,5 +1,4 @@
 
-export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
 
   const totalPages = Math.ceil(total / itemsPerPage);
 
@@ -7,6 +6,7 @@ export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
   const baseEndCount = startCount + itemsPerPage - 1;
   const endCount = baseEndCount > total ? total : baseEndCount;
  
+  const nextPage = () => setPage(prevPage => {
     return prevPage === totalPages ? prevPage : prevPage + 1;
   });
   const prevPage = () => setPage(prevPage => {

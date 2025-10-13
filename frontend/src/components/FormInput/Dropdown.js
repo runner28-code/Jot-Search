@@ -52,7 +52,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
   )
 }
 
-export default function Dropdown(props) {
   const { 
     baseStyles, 
     marginBottom,

@@ -1,5 +1,6 @@
 import * as ROUTES from '../../routes';
 
+// Temp comment
 export default function BusinessBooming() {
   return (
     <section className='mt-150 h-360 bg-tulsa-hero bg-cover bg-center'>
@@ -16,6 +17,7 @@ export default function BusinessBooming() {
           <span className='text-orangeHeroOverlay tracking-wide'>Learn More About Tulsa</span>
         </a>
         {/* Shapes */}
+        <div className='absolute bottom-36 -right-18 h-40 w-40 bg-blueSquare2/95' />
         <div className='absolute bottom-80 -right-72 h-36 w-36 bg-blueSquare/95' />
       </div>
     </section>

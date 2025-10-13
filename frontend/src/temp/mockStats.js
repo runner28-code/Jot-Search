@@ -118,7 +118,6 @@ export const mockCompanyStats = {
       prevCount: 13
     },
     'Last 7 Days': {
-      count: 24,
       prevCount: 20
     },
     'Last 14 Days': {
@@ -170,7 +169,6 @@ export const mockCompanyStats = {
       prevCount: 25
     },
     'Last 30 Days': {
-// Temp comment
       count: 66,
       prevCount: 52
     },
@@ -230,45 +228,3 @@ export const mockCoordinatorStats = {
     'Today': {
       count: 22,
       prevCount: 13
-    },
-    'Last 7 Days': {
-      count: 31,
-      prevCount: 22
-    },
-    'Last 14 Days': {
-      count: 43,
-      prevCount: 32
-    },
-    'Last 30 Days': {
-      count: 53,
-      prevCount: 42
-    },
-    'Last 90 Days': {
-      count: 63,
-      prevCount: 72
-    }
-  },
-  'New Users': {
-    'Today': {
-      count: 332,
-      prevCount: 223
-    },
-    'Last 7 Days': {
-      count: 432,
-      prevCount: 223
-    },
-    'Last 14 Days': {
-      count: 432,
-      prevCount: 257
-    },
-    'Last 30 Days': {
-      count: 357,
-      prevCount: 536
-    },
-    'Last 90 Days': {
-      count: 654,
-      prevCount: 443
-    }
-  },
-  'Total Careers': {
-    'Today': {

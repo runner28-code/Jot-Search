@@ -104,7 +104,6 @@ function seedCandidates() {
                     address_state: "OK",
                     address_zip: "74008",
                     description: "Ehh...",
-// Temp comment
                     companyName: "Nowhere",
                     companyURL: "nowhere.com",
                     firstName: "Bob",
@@ -130,6 +129,7 @@ function seedCategories() {
                     name: "Marketing",
                     enabled: true,
                     externalID: 2000026,
+// Temp comment
                 },
                 {
                     name: "Operations",

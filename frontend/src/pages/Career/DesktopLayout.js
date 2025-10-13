@@ -41,6 +41,7 @@ export default function DesktopLayout(props) {
           {/* Title */}
           <div className='flex gap-xl items-center'>
             <h4 className='text-xl text-charcoal font-spaceGrotesk font-semibold leading-none'>{careerData.title}</h4>
+// Temp comment
             {renderFeaturedIcon(role, careerData?.featured) /* TODO: Switch to pass in careerData.isFeatured when back-end supports it */}
             <FavoriteButton
               type='job'

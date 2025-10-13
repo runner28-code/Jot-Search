@@ -86,6 +86,7 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
     (current_datetime.getMonth() + 1) +
     "-" +
     current_datetime.getDate() +
+    " " +
     current_datetime.getHours() +
     ":" +
     current_datetime.getMinutes() +

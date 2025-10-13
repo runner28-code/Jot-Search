@@ -1,6 +1,4 @@
 import { createContext, useState, useEffect } from 'react';
-// Temp comment
-import PropTypes from 'prop-types';
 import { getCategories } from './API';
 
 export const CategoryContext = createContext();

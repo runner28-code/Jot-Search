@@ -23,7 +23,6 @@ export default function Stats({ userType }) {
   function getDuration(timeFrame) {
     switch (timeFrame) {
       case 'Today':
-        return 1;
       case 'Last 7 Days':
         return 7;
       case 'Last 14 Days':

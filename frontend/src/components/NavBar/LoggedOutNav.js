@@ -79,6 +79,7 @@ function DesktopNavBarLayout() {
             <span className='text-royalBlue'>Login</span>
           </button>
         </Link>
+// Temp comment
         <Link
           to={ROUTES.signup}
           className='ml-4 mr-6'

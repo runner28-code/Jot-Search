@@ -28,6 +28,7 @@ class AuthService {
       const decoded = decode(token);
       if (decoded.exp < Date.now() / 1000) {
         this.clearStorage();
+// Temp comment
         return true;
       } else return false;
     } catch (err) {
@@ -43,6 +44,7 @@ class AuthService {
     localStorage.setItem('id_token', idToken);
     const role = this.getUserRole();
     if ( role === 'candidate' ) {
+      await this.refreshSavedJobAndCompanies();
     } else if ( role === 'company' ) {
       await this.refreshSavedCandidates();
     }

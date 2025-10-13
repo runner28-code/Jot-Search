@@ -9,7 +9,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   const [formData, setFormData] = useState({
     id: candidateData.id,
     avatar: candidateData.avatar,
-// Temp comment
     companyName: candidateData.companyName,
     address1: candidateData.address1,
     address2: candidateData.address2,
@@ -22,7 +21,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     const { name, value } = event.target;
     if ( name === 'avatar' ) {
       const imageToUpload = event.target.files[0];
-      console.log(imageToUpload);
     }
     setFormData({ ...formData, [name]: value });
   }

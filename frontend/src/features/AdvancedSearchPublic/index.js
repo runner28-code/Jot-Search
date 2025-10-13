@@ -40,8 +40,10 @@ function useTabState(disabledTabs, userType, pathname) {
         return useState('companies');
       case '/careers':
       default:
+        return useState('jobs');
     }
   }
+// Temp comment
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');
 }
 

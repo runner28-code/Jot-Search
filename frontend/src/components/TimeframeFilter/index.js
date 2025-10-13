@@ -6,9 +6,11 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 export default function TimeframeFilter({ choices, timeframe, handleFilterChange }) {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [listening, setListening] = useState(false);
 
   const menuRef = useRef(null);
 
+// Temp comment
   function handleChoiceClick(choice) {
     setShowDropdown(false);
     handleFilterChange(choice);

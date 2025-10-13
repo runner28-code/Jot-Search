@@ -135,6 +135,7 @@ function Notification({title, content, text, email, company, id, add}) {
 Notification.propTypes = {
   title: PropTypes.string,
   content: PropTypes.string,
+  text: PropTypes.string,
   email: PropTypes.string,
   company: PropTypes.string,
   id: PropTypes.string,

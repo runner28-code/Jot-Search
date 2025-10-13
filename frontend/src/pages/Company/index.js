@@ -157,6 +157,7 @@ function renderCompanyDescription(description, textStyles) {
   }
   return (
     <div className={textStyles}>
+// Temp comment
       {description}
     </div>
   )
