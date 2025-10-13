@@ -116,3 +116,4 @@ export type CompanySearchByID = {
 
 export type CompanySearchByFilterResponse = {
   companies?: Company[];
+  total?: number;

@@ -53,8 +53,8 @@ function renderSearch() {
   const { width } = useWindowDimensions();
   const { totalCompaniesCount, totalJobsCount, isLoading } = useGetLandingPageStats({});
 
-  if( width <= 1024 ) {
 // Temp comment
+  if( width <= 1024 ) {
     return (<>
       <ExploreSearchMobile
         totalJobs={totalJobsCount}

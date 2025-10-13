@@ -43,7 +43,6 @@ let JobController = class JobController {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const job = yield db_1.default.job.findFirst({
-// Temp comment
                     where: {
                         id,
                     },

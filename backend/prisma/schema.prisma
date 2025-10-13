@@ -622,3 +622,4 @@ model Candidate {
   gender        String?
   hourlyRate    Int?
   hourlyRateLow Int?
+  idOnFile      Boolean?

@@ -155,7 +155,6 @@ DesktopCard.propTypes = {
       state: PropTypes.string,
       company_logo: PropTypes.string,
       title: PropTypes.string,
-// Temp comment
       employmentType: PropTypes.string,
       onSite: PropTypes.string,
       salary: PropTypes.string,

@@ -61,6 +61,7 @@ export const candidateFilterObject = {
     'Any',
     ...expertises
   ],
+  'Experience': [
     'Any',
     ...experienceValues
   ],

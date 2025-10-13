@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-// Temp comment
 
 export const PaginationCounts = ({ startCount, endCount, total }) => {
+// Temp comment
   return (
     <div>
       <p className="text-sm">

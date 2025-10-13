@@ -13,11 +13,9 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     address1: candidateData.address1,
     address2: candidateData.address2,
     city: candidateData.city,
-// Temp comment
     state: candidateData.state,
     zip: candidateData.zip,
   });
-
   const handleInputChange = async (event) => {
     const { name, value } = event.target;
     if ( name === 'avatar' ) {

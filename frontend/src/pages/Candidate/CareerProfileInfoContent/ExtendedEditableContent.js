@@ -3,6 +3,7 @@ import { CategoryContext } from '../../../services/CategoryContext';
 import PropTypes from 'prop-types';
 import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
 import FormInput from '../../../components/FormInput';
+// Temp comment
 import {
   skills as skillChoices,
   roles as roleChoices,
@@ -16,7 +17,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   const isSourceUserTable = candidateData.sourceTable === 'User';
 
   const [formData, setFormData] = useState({
-// Temp comment
     id: candidateData.id,
     avatar: candidateData.avatar || '',
     firstname: candidateData.firstname || '',

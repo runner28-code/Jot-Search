@@ -22,3 +22,4 @@ CREATE TABLE "GetroCompany" (
     "collections" TEXT,
     "managers" TEXT[],
     "organization_careers_pages" TEXT[],
+    "status" TEXT,

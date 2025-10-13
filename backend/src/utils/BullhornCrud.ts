@@ -270,3 +270,4 @@ export const saveLeads = async (leads: any[]) => {
 
     return { result: true };
   } catch (error: any) {
+    console.log(error.message);

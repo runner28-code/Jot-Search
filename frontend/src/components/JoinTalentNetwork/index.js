@@ -58,4 +58,3 @@ export default function JoinTalentNetwork() {
         </div>
       </div>
     </section>
-  </>)

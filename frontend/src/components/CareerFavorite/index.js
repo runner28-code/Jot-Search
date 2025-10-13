@@ -7,6 +7,7 @@ import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+export default function CareerFavorite () {
 
   const { user_id } = AuthService.getProfile();
   const { savedJobs, isLoading } = useGetSavedJobs({userId: user_id});

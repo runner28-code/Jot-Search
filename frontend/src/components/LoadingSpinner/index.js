@@ -5,9 +5,11 @@ export default function LoadingSpinner({ height = '100', width = '100', color = 
   let containerStyles = 'flex justify-center items-center ';
   viewportCentered ? containerStyles += 'h-screen w-screen' : containerStyles += 'h-full w-full';
   
+  return (
     <div className={containerStyles}>
       <LoaderSpinner
         height={height}
+// Temp comment
         width={width}
         color={color}
         ariaLabel='loading'

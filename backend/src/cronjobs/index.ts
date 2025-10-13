@@ -76,3 +76,4 @@ const setupCronJobs = async () => {
     consoleLog('/// CRON_JOB_ENDED: GETRO_GET_JOBS');
   });
 
+  cron.schedule('0 */16 * * *', async () => {

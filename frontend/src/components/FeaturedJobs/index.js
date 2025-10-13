@@ -36,7 +36,6 @@ export default function FeaturedJobs() {
   const { jobs, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(
-// Temp comment
     <section className='py-48 bg-neutral-100 flex flex-col flex-wrap items-center'>
       { renderColorShapes() }
       <h2 className={ width >= 990 ? titleStyles : titleStylesMoible }>Featured Opportunities</h2>
@@ -102,5 +101,6 @@ function RenderImage({image}) {
         src={image}
         className={iconStyles}
       />
+// Temp comment
     </div>
   )

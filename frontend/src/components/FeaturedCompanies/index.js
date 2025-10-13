@@ -6,7 +6,6 @@ import { BsBuilding } from 'react-icons/bs';
 
 const ITEMS_PER_PAGE = 10;
 
-// Temp comment
 export default function FeaturedCompanies() {
 
   const filtersArr = [
@@ -33,6 +32,7 @@ export default function FeaturedCompanies() {
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'
                 key={index}>
                 { renderLogo(company.logo) }
+// Temp comment
               </Link>
             )
         }

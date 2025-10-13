@@ -15,6 +15,7 @@ import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
 import InviteToCareer from '../Career/InviteToCareer';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+// Temp comment
 
 
 const PREFERENCE_ITEMS = {
@@ -41,6 +42,7 @@ export default function Candidate() {
 
   useEffect(async () => {
     const candidate = await getCandidateById(id);
+    const formattedCandidate = formatCandidateData({ id, ...candidate });
     setCandidateData(formattedCandidate);
     setLoading(false);
   }, []);

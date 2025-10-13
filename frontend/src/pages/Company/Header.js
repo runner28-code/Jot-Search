@@ -142,6 +142,7 @@ function renderCompanyLogo(logoUrl, name) {
     <div className='p-8 border border-slate-70/50 mr-8'>
       <img
         className={logoStyles}
+        src={logoUrl}
         alt={`${name} logo`}
       />
     </div>

@@ -67,7 +67,6 @@ export const mockCandidateStats = {
   },
   'Companies Saved': {
     'Today': {
-      count: 4,
       prevCount: 1
     },
     'Last 7 Days': {
@@ -270,3 +269,4 @@ export const mockCoordinatorStats = {
     }
   },
   'Total Careers': {
+    'Today': {

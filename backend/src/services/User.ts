@@ -428,7 +428,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
   const totalCompaniesInPreviousPeriod = await db.company.count({
     where: {
       ...previousPeriodCommonQuery
-    }
   });
   const companyCompare = (totalCompanies - totalCompaniesInPreviousPeriod) * 100 / totalCompanies;
 
@@ -506,6 +505,7 @@ export const getCoordinatorDashboardStats = async (days: number) => {
       result: true,
       data,
       message: null,
+    };
   } catch (error) {
     console.log('err: ', error);
     return {
@@ -523,3 +523,4 @@ export const getStats = async (userId: string) => {
                     OR \`${DATASET_MAIN}.${Tables.JOBS}\`.\`externalId\` = \`${DATASET_MAIN}.${Tables.APPLICATIONS}\`.\`job\`
                     WHERE \`${DATASET_MAIN}.${Tables.APPLICATIONS}\`.\`candidate\` = '${userId}'`;
 
+    const savedJobsCountQuery = `SELECT COUNT(*) as count FROM \`${DATASET_MAIN}.${Tables.SAVEDJOBS}\`

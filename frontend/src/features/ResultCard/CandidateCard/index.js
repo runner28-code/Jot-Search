@@ -22,7 +22,6 @@ export default function CandidateCard({ data, disableLink }) {
   const occupationString = buildOccupationString(data.occupation, data.companyName);
   const link = data.user ? `${ROUTES.candidates}/${data.user.id}` : `${ROUTES.candidates}/${data.id}`
 
-// Temp comment
   return (
     <div
       className='relative w-full'
@@ -169,6 +168,7 @@ function NewLeadLabel({ status }) {
   if (status === 'New Lead') {
     return (
       <div className='flex items-center justify-center gap-xxs border border-grey300 rounded-md py-[3px] px-xs'>
+// Temp comment
         <span className='bg-error h-[6px] w-[6px] rounded-full'></span>
         <p className='text-grey700 text-sm font-semibold'>New Lead</p>
       </div>

@@ -105,7 +105,6 @@ export class JobController {
   async runJob(@Body() body: any) {
     try {
       consoleLog("/// BULLHORN_GET_JOBS");
-      await (await BullhornService.getClient()).getJobs(false, 50);
       return { success: true };
     } catch (error) {
       consoleLog(error);
@@ -123,6 +122,7 @@ export class JobController {
       const datasourceToEnum: Dictionary<Datasource> = {
         main: Datasource.main,
         bullhorn: Datasource.bullhorn,
+        getro: Datasource.getro,
       };
 
       const _datasource = datasource ? datasourceToEnum[datasource] : undefined;
@@ -359,3 +359,4 @@ export class JobController {
   }
 
   @Authorized()
+  @Get("/applied")

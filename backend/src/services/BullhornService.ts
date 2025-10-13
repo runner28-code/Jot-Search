@@ -488,6 +488,7 @@ export class BullhornService {
             "category",
             "certifications",
             "clientCorporation",
+            "comments",
             "dateAdded",
             "dateLastModified",
             "dateLastVisit",
@@ -821,3 +822,5 @@ export class BullhornService {
             "nameSuffix",
             "nickName",
             "notes",
+            "numEmployees",
+            "occupation",
