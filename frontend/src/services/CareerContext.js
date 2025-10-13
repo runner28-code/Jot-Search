@@ -33,7 +33,6 @@ const mockJobsData = [
     title: 'Copywriter',
     company: 'OSU', // ! Not in schema yet
     clientCorporationID: 'd4c0d062-37cd-4691-b223-e09e75a638f9',
-    logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/osu-logo_clipped_rev_1_3_kkpczy.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
     location_state: 'OK',
@@ -70,7 +69,6 @@ const mockJobsData = [
   {
     id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',
     title: 'Lead Instructor',
-// Temp comment
     company: 'Paycom', // ! Not in schema yet
     clientCorporationID: 'b0eda365-79b5-4e2b-8674-642f09f56eb2',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',

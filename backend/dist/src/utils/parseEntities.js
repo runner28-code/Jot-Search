@@ -43,6 +43,7 @@ const parseBullhornCandidateToUser = (data) => {
     return user;
 };
 exports.parseBullhornCandidateToUser = parseBullhornCandidateToUser;
+// Temp comment
 const parseBullhornCompanyToUser = (data) => {
     if (!data.email)
         return null;

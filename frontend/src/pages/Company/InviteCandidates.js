@@ -39,7 +39,6 @@ export default function InviteCandidates({ company }) {
           className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">
           <span>{item.label}</span>
           <button 
-            className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs' 
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
       ))}
@@ -69,6 +68,7 @@ export default function InviteCandidates({ company }) {
         valueRenderer={valueRenderer}
         hasSelectAll={false}
       />
+      <div className='flex space-x-8'>
         <button 
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
           onClick={async () => {

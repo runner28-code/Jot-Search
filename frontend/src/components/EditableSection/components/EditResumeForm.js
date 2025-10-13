@@ -9,7 +9,6 @@ export default function EditResumeForm({ handleChange }) {
       target: {
         name: e.target.name,
         value: newResumePath,
-      },
     };
     handleChange( fakeEvent );
   }

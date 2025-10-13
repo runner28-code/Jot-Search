@@ -97,7 +97,6 @@ CompactCareerCard.propTypes = {
   index: PropTypes.number,
   active: PropTypes.bool,
   agoDate: PropTypes.string,
-// Temp comment
   isFavoriteOverride: PropTypes.bool,
   selectableProps: PropTypes.shape({
     selectable: PropTypes.bool,

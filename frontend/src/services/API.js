@@ -126,6 +126,7 @@ export async function getCompanies(filterValue, filterKey, count, page) {
 }
 
 export async function getCompaniesFull(filterValue, filterKey, count, page) {
+  const { data } = await API.post(ROUTES.APIcompanies, {
     'filters': [
       {
         'key': filterKey || 'name',

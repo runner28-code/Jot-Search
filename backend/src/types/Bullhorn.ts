@@ -140,7 +140,6 @@ export type ClientContact = {
     desiredSpecialties?: string;
     division?: string;
     email?: string;
-    email2?: string;
     email3?: string;
     externalID?: string;
     fax?: string;

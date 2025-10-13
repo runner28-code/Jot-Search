@@ -40,6 +40,7 @@ export function renderHeader(addType) {
       <div className='flex flex-col justify-center'>
         <h4 className='text-h4 text-center vw-768:text-h4 text-darkGray font-spaceGrotesk font-semibold mb-10'>
           Create an Account
+        </h4>
         <p className='text-md text-center text-darkGray leading-loose'>
           {'Sign up and we\'ll keep you updated on new opportunities and put your profile in front of the people responsible for hiring at our companies.'}
         </p>
@@ -83,7 +84,6 @@ export function inputValidation(formObj) {
     newErrors.push('resume');
   }
   if ( formObj.password !== formObj.verifyPassword ) { // Match passwords
-    newErrors.push('password', 'verifyPassword');
   }
   if ( formObj.skills.length < 3 ) { // Ensure at least 3 skills chosen
     newErrors.push('skills');

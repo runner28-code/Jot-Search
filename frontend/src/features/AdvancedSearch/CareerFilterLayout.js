@@ -8,7 +8,6 @@ const dropdownFilters = [
   'On-Site/Remote',
   'Years Experience',
   'Status',
-];
 
 const dropDownFiltersCandidate = [
   'Expertise',
@@ -45,7 +44,6 @@ export default function CareerFilterLayout(props) {
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
-// Temp comment
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
       </div>
       <div className='flex items-center gap-[65px]'>

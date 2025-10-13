@@ -73,6 +73,7 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
       className='mt-4 mb-5 flex items-center text-black'
     >
       <input
+        type='checkbox'
         name={`${name}-${attribute}`}
         id={`${name}-${attribute}`}
         className='h-8 w-8 ml-2'

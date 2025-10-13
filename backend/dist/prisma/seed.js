@@ -104,6 +104,7 @@ function seedCandidates() {
                     address_state: "OK",
                     address_zip: "74008",
                     description: "Ehh...",
+// Temp comment
                     companyName: "Nowhere",
                     companyURL: "nowhere.com",
                     firstName: "Bob",

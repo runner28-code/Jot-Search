@@ -96,6 +96,7 @@ export default function CandidateCard({ data, disableLink }) {
   )
 }
 
+// Temp comment
 CandidateCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
@@ -168,7 +169,6 @@ function NewLeadLabel({ status }) {
   if (status === 'New Lead') {
     return (
       <div className='flex items-center justify-center gap-xxs border border-grey300 rounded-md py-[3px] px-xs'>
-// Temp comment
         <span className='bg-error h-[6px] w-[6px] rounded-full'></span>
         <p className='text-grey700 text-sm font-semibold'>New Lead</p>
       </div>

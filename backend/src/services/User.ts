@@ -428,6 +428,7 @@ export const getCoordinatorDashboardStats = async (days: number) => {
   const totalCompaniesInPreviousPeriod = await db.company.count({
     where: {
       ...previousPeriodCommonQuery
+    }
   });
   const companyCompare = (totalCompanies - totalCompaniesInPreviousPeriod) * 100 / totalCompanies;
 

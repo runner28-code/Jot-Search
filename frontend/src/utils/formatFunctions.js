@@ -73,6 +73,7 @@ export function formatCandidateName(firstName, lastName) {
 
 export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
   if ( avatarUrl ) {
+// Temp comment
     return avatarUrl;
   }
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;

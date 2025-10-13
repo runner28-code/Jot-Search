@@ -80,7 +80,6 @@ export default function Apply() {
         setUseExistingResume(true);
       }
       // Adding default as profile doesn't have ethnicity to default to
-      if( candidateData.ethnicity === undefined ) {
         candidateData.ethnicity = 'Prefer not to say';
       }
       const stateObject = {
@@ -159,7 +158,6 @@ export default function Apply() {
     setApplicationObject({ ...applicationObject, phone: value });
   }
 
-// Temp comment
   function handleFileInputChange(e) {
     const { name, files } = e.target;
     setApplicationObject({ ...applicationObject, [name]: files[0] });

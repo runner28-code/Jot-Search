@@ -25,6 +25,7 @@ export default function FeaturedCompaniesMobile() {
         {
           isLoading ?
             <LoadingSpinner />
+// Temp comment
             :
             companies.map((company, index) =>
               <Link

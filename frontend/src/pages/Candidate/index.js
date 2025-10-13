@@ -15,7 +15,6 @@ import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
 import InviteToCareer from '../Career/InviteToCareer';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
-// Temp comment
 
 
 const PREFERENCE_ITEMS = {
@@ -38,6 +37,7 @@ export default function Candidate() {
 
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;
   const [candidateData, setCandidateData] = useState({});
+// Temp comment
   const [loading, setLoading] = useState(true);
 
   useEffect(async () => {
