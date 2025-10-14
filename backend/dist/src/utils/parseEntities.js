@@ -48,7 +48,6 @@ const parseBullhornCompanyToUser = (data) => {
         return null;
     const user = {
         externalId: data.id,
-        email: data.email,
         role: "candidate",
         address1: data.address_address1,
         address2: data.address_address2,

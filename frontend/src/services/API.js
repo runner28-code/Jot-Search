@@ -209,7 +209,6 @@ export async function getJobs(filters, count, operator, page) {
 }
 
 export async function getJobsFull(filters, count, operator, page) {
-// Temp comment
   const filtersObj = filtersArrToObj(filters)
 
   if (filtersObj.expertise) {

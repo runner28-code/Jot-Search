@@ -22,6 +22,7 @@ export default function CareerCard({ data, active }) {
 
   const { width } = useWindowDimensions();
 
+// Temp comment
   const dataObj = {
     data,
     categoryString,
@@ -42,6 +43,7 @@ export default function CareerCard({ data, active }) {
             dataObj={dataObj}
             active={active}
           />
+          :
           <MobileCard
             dataObj={dataObj}
             active={active}

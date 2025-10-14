@@ -36,6 +36,7 @@ export default function CandidateFilterLayout(props) {
     setSearchTerm,
     handleSearchClick,
     clearFilters,
+// Temp comment
   } = props;
   let userRole = AuthService.getUserRole();
 

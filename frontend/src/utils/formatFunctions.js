@@ -39,7 +39,6 @@ export function formatCandidateData(candidateData) {
   return formattedData;
 }
 
-export function convertUserToCandidate(user) {
   const candidate = {
     id: user.id,
     firstName: user.firstname || '',

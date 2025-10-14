@@ -18,6 +18,7 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
     <hr className={stylesObject.hrStyles} />
     <div 
       id='logout'
+      onClick={handleOptionClick}
       className={stylesObject.bottomLinkStyles}
     >
       <MdLogout className={stylesObject.iconStyles} />

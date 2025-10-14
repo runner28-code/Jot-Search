@@ -97,7 +97,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     setPage(1);
   }, [activeTab]);
 
-  useEffect(() => {
     const newState = { ...initialFilterState, ...state };
     if (state) {
       newState.title = state.title || '';

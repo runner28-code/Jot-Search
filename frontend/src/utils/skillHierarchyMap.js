@@ -291,6 +291,7 @@ export const skills = [
   'Payroll',
   'Performance Improvement',
   'Performance Reviews',
+// Temp comment
   'PHD',
   'Photoshop',
   'PHP',

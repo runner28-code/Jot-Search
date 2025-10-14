@@ -34,7 +34,6 @@ export const ethnicityMap = {
   HL: 'Hispanic or Latina/Latino or LatinX',
   AS: 'Asian',
   M: 'Multiracial',
-  O: 'Other'
 };
 
 export const experienceMap = {
@@ -57,6 +56,7 @@ export const educationChoices = [
   'Technical College'
 ];
 
+export const referralChoices = [
   'Web Search',
   'Social Media',
   'Career Fair',

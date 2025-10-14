@@ -59,7 +59,6 @@ export const choices = {
   activeCareers: {
     label: 'Active Careers',
     icon: CareerIcon,
-// Temp comment
     link: ROUTES.activeCareers,
   },
   talentInTulsa: {

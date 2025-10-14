@@ -83,6 +83,7 @@ export type AllJobsResponse = {
   bullhorn: JobSearchByFilterResponse;
   getro: JobSearchByFilterResponse;
   main: JobSearchByFilterResponse;
+};
 
 export type ApplyResponse = {
   result: boolean;

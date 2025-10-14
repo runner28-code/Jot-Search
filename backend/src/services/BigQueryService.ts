@@ -1,6 +1,5 @@
 import { BigQuery } from '@google-cloud/bigquery';
 import { config } from 'dotenv';
-import { Tables } from '../types/Common';
 import { User } from '../types/User';
 import { consoleLog } from '../utils';
 
@@ -42,6 +41,7 @@ export class BigQueryService {
             if (res && res.length > 0) {
                 return res;
             }
+        } catch (error) {
             console.log(error);
         }
         return null;

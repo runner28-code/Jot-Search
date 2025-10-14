@@ -61,7 +61,6 @@ function CareerHeader ({ location }) {
         </span>
         <Link
           className='text-blue underline mt-6 text-blue-500 font-bold'
-          to={ROUTES.careers}
         >{ back }</Link>
       </div>
     )

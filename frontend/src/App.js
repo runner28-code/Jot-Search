@@ -7,7 +7,6 @@ import {
   Login,
   Career,
   Careers,
-// Temp comment
   Company,
   Companies,
   AccountRecovery,

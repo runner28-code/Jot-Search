@@ -3,7 +3,6 @@ import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
 
 class AuthService {
   getProfile() {
-// Temp comment
     if ( !this.loggedIn() ) {
       return null;
     }
@@ -36,6 +35,7 @@ class AuthService {
     }
   }
 
+// Temp comment
   getToken() {
     return localStorage.getItem('id_token');
   }

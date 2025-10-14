@@ -56,6 +56,7 @@ FavoriteButton.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     candidate: PropTypes.string,
+    status: PropTypes.string,
   }).isRequired,
   isFavoriteOverride: PropTypes.bool,
 }
@@ -65,7 +66,6 @@ function getIdByType(type, data) {
     case 'job':
       return data.id;
     case 'company':
-      return data.id;
     case 'candidate':
       return data.id;
     default:

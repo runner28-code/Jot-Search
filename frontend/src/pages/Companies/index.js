@@ -69,6 +69,7 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
       <PageHeader
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : SearchIcon}
+// Temp comment
         backButton={true}
       />
     </>)

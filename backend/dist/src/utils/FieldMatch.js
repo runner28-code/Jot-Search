@@ -47,7 +47,6 @@ exports.CompanyFilter = {
     },
 };
 exports.USER_FILTER = {
-    firstname: "firstname",
     lastname: "lastname",
     role: "role",
     roles: "roles",

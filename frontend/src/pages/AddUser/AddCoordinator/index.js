@@ -8,7 +8,6 @@ export default function AddCoordinator() {
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
-// Temp comment
     errors: {},
   });
 
