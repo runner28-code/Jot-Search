@@ -182,7 +182,6 @@ export const addUserHistoryEntries = async ({
     .filter((key) => {
       const typedKey = key as keyof dbUser;
       const newValue = updatedUser[typedKey];
-      const oldValue = existingUser[typedKey];
 
       return newValue !== oldValue;
     })

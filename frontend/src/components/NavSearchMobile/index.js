@@ -34,7 +34,6 @@ export default function NavSearchMobile({ placeholder }) {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {
-        ...defaultCandidateFilterState,
         firstname: splitName[0],
         lastname: splitName?.[1]
       }
@@ -61,6 +60,7 @@ export default function NavSearchMobile({ placeholder }) {
   const menuRef = useRef(null);
 
   /* EVENT HANDLERS */
+  function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setForceHidden( false );
   }

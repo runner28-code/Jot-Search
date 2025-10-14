@@ -21,7 +21,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
     )
   }
   if( location === 'companies' ) {
-    return (<>
       <h1>Companies</h1>
     </>)
   }

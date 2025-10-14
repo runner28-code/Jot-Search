@@ -72,6 +72,7 @@ export default function InviteCandidates({ job }) {
         valueRenderer={valueRenderer}
         hasSelectAll={false}
       />
+      <div className='flex space-x-8'>
         <button
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
           onClick={async () => {
@@ -83,7 +84,6 @@ export default function InviteCandidates({ job }) {
             }
           }}
           disabled={selected.length === 0 || isSendingJob}
-        >
           <MailIcon className='inline-block mr-2' />
           Send Now
         </button>

@@ -39,7 +39,6 @@ export const jobFilterObject = {
 
 export const ACTIVE_STATUSES = [
   'Active',
-  'Open',
   'Passive'
 ]
 
@@ -80,7 +79,6 @@ export const candidateFilterObject = {
     'Any',
     'Full-Time',
     'Part-Time',
-// Temp comment
     'Contract',
     'Contract to Hire',
   ],

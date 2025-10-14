@@ -79,7 +79,6 @@ export default function RegistrationForm(loggedIn) {
           success: false,
         });
         return;
-// Temp comment
       }
 
       // Attempt to upload resume before submitting user data

@@ -9,6 +9,7 @@ import {
 } from './utils';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
+
 export default function SideNav({ userType }) {
   const { pathname } = useLocation();
   const hiddenPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage, ROUTES.resetPassword, ROUTES.accountRecovery ];
@@ -40,7 +41,6 @@ function renderChoice(choice, selected, index, choicesLength) {
   let selectedClass = ' bg-royalBlue text-white ';
   if (index === 0) selectedClass += ' rounded-t-xl '; // round top card if selected
   if (index === choicesLength - 1) {
-    selectedClass += ' rounded-b-2xl border-t border-solid border-midGrey'; // round bottom card if selected
     baseChoiceStyles += ' border-b-0'; // remove border if last card
   }
 

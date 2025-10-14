@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link, useNavigate } from 'react-router-dom';
+import OtherCareers from '../../features/OtherCareers';
 import featuredIcon from '../../assets/icons/pyramid.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
@@ -136,7 +137,6 @@ function renderLogo(logo) {
     </div>
   }
   return <img
-    src={logo}
     className='w-48 h-48 object-contain mr-10'
   />
 }

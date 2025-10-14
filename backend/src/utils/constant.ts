@@ -90,7 +90,6 @@ const job_filter_exclude_keys = [
   "controller",
   "cook",
   "copywriter",
-  "corporate card",
   "counsel",
   "counseling",
   "counselor",

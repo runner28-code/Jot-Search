@@ -75,7 +75,6 @@ export default function FormInput(props) {
         placeholder={placeholder}
         currentChosen={value}
         required={required}
-        onChange={onChange}
         choices={choices}
         baseStyles={componentStyles}
         inputHeight={inputHeight}

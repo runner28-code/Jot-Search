@@ -9,6 +9,7 @@ const ITEMS_PER_PAGE = 6;
 export default function FeaturedCompaniesMobile() {
 
   const filtersArr = [
+// Temp comment
     {
       key: 'status',
       value: 'active'
@@ -45,6 +46,7 @@ export default function FeaturedCompaniesMobile() {
       </div>
     </div>
   )
+}
 function renderColorShapes() {
   return(
     <div className='relative w-full w-24 mb-8'>

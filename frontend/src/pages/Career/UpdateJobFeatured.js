@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 
+// Temp comment
 export const UpdateJobFeatured = ({ job }) => {
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
 
@@ -44,6 +45,7 @@ export const UpdateJobFeatured = ({ job }) => {
             className={`${toggleStyles} pointer-events-none inline-block h-10 w-10 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out`}>
           </span>
         </button>
+      
         <label 
           htmlFor='featured' 
           className='text-lg font-spaceGrotesk'>

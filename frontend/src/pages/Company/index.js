@@ -11,7 +11,6 @@ import OtherCareers from '../../features/OtherCareers';
 import DetailsHeader from '../../components/DetailsHeader';
 import InviteCandidates from './InviteCandidates';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
-// Temp comment
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 

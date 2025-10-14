@@ -27,6 +27,7 @@ export function renderErrorBlock(errorBlock) {
 
   if (errorBlock) {
     return (
+      <div className='flex flex-col items-center justify-center w-full'>
         <p className='text-rose-500 text-sm font-bold'>{ errorBlock.error || errorBlock }</p>
       </div>
     )
@@ -83,6 +84,7 @@ export function inputValidation(formObj) {
     newErrors.push('resume');
   }
   if ( formObj.password !== formObj.verifyPassword ) { // Match passwords
+// Temp comment
     newErrors.push('password', 'verifyPassword');
   }
   if ( formObj.skills.length < 3 ) { // Ensure at least 3 skills chosen

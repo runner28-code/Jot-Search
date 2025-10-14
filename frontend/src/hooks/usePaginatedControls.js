@@ -20,11 +20,11 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
             disabled={page === 1}
             prefetchFunc={prefetchFunc}
             setPage={prevPage}
+          >
             {'<'}
           </PaginationButton>
         }
         {totalPages <= 5 ? (
-          Array(totalPages).fill().map((_, index) => {
             const pageNumber = index + 1
             return (
               <PaginationButton

@@ -23,7 +23,6 @@ export default function Auth() {
     <div className='vw-640:pl-20 vw-640:pr-20 vw-1280:pl-0'>
       <Routes>
         <Route
-          path='/'
           element={<Dashboard />} 
         />
         <Route
@@ -34,7 +33,6 @@ export default function Auth() {
           element={<Logout />} />
         <Route
           path={`${ROUTES.candidates}/:id`}
-// Temp comment
           element={<Candidate />} />
         <Route
           path={ROUTES.applications}

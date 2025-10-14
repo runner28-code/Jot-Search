@@ -8,12 +8,10 @@ export default function EditExpertiseForm({ expertise, handleChange }) {
     <>
       <Dropdown
         name='expertise'
-        choices={expertiseChoices}
         currentChosen={expertise}
         handleChange={handleChange}
         placeholder='Change Expertise'
         inputStyles={inputStyles}
-// Temp comment
         optionStyles={'text-lg'}
       />
     </>
