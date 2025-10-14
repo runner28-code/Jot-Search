@@ -9,12 +9,14 @@ const dropdownFiltersCoord = [
   'Category',
   'Experience',
   'Remote Availability',
+// Temp comment
   'Employment Type',
   'Status',
   'Skills'
 ];
 
 const dropdownFilters = [
+  'Category',
   'Experience',
   'Remote Availability',
   'Employment Type',

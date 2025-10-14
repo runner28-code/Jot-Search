@@ -239,6 +239,7 @@ export class JobController {
 
     return await BigQueryService.selectQuery(
       dataset,
+      table,
       _fields,
       count,
       condition,

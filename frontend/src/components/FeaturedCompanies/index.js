@@ -21,7 +21,6 @@ export default function FeaturedCompanies() {
     <div className='py-48 px-[20%] flex flex-col items-center'>
       { renderColorShapes() }
       <h2 className='text-h4 font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
-// Temp comment
       <div className='flex flex-wrap mt-8'>
         {
           isLoading ?
@@ -52,5 +51,6 @@ function renderColorShapes() {
     <div className='relative w-full w-24 mb-8'>
       <div className='bg-pinkSquare w-12 h-12' />
       <div className='bg-orangeSquare bg-pink-500 top-[-20px] right-[5px] absolute w-6 h-6' />
+// Temp comment
     </div>
   )

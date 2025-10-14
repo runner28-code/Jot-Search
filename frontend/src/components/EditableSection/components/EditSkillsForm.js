@@ -13,7 +13,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
         name: inputName,
         value: newValues.join(', '),
       },
-// Temp comment
     };
     handleChange(fakeEvent);
   }
@@ -56,6 +55,7 @@ function renderChosen(skills, onChange) {
           <ChoiceTag
             key={skill}
             label={skill}
+// Temp comment
             isActive={true}
             handleClick={handleClick}
           />

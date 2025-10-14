@@ -32,7 +32,6 @@ export default function InviteCandidates({ job }) {
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
-// Temp comment
   }
 
   const SelectedValues = () => {
@@ -73,7 +72,6 @@ export default function InviteCandidates({ job }) {
         valueRenderer={valueRenderer}
         hasSelectAll={false}
       />
-      <div className='flex space-x-8'>
         <button
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
           onClick={async () => {

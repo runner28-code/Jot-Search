@@ -95,7 +95,6 @@ export const saveJob = async (job: string, candidate: string) => {
       result: true,
       messsage: existing ? "unsaved job" : "saved job",
     };
-  } catch (error) {
     console.log(error);
     return { result: false, message: error };
   }

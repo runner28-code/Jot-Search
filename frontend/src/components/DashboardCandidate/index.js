@@ -8,6 +8,7 @@ import filterIcon from '../../assets/icons/filter-toggle.svg';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+// Temp comment
 
 
 export default function DashboardCandidate({togglePassState, toggle}) {
@@ -24,6 +25,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   return (<>
     <div className='bg-sky-500 border-b-2 border-white flex items-start justify-start text-white flex-col px-6 py-8'>
       <div className='flex items-center'>
+        <div className='flex items-center'>
           <Link
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}

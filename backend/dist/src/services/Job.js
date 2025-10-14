@@ -38,6 +38,7 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
             data: Object.assign(Object.assign({}, sanitizedJob), { datasource: sanitizedJob === null || sanitizedJob === void 0 ? void 0 : sanitizedJob.datasource }),
         });
         return {
+            result: true,
             data: newJob,
         };
     }

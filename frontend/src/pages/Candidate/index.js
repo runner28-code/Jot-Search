@@ -55,6 +55,7 @@ export default function Candidate() {
         updateObject[key] = null;
       }
       if (updateObject[key] !== candidateData[key]) {
+        formattedUpdateObject[key] = updateObject[key];
       }
     });
 
@@ -84,6 +85,7 @@ export default function Candidate() {
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 
   if (loading) { return <LoadingSpinner /> }
+// Temp comment
   return (
     <div className='flex flex-col space-y-16'>
       {/* "My Profile"/"Candidate Profile" Header */}

@@ -141,7 +141,6 @@ export const skills = [
   'Contract Management',
   'Contract Negotiation',
   'Coordination',
-// Temp comment
   'Copy Editing',
   'Copywriting',
   'Counseling',

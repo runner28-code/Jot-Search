@@ -174,7 +174,6 @@ DesktopCard.propTypes = {
   }).isRequired,
   active: PropTypes.bool,
 }
-// Temp comment
 
 function MobileCard({ dataObj, active }) {
   const { data } = dataObj;

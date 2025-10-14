@@ -39,6 +39,7 @@ const setupCronJobs = async () => {
   cron.schedule('0 */12 * * *', async () => {
     try {
       consoleLog('/// CRON_JOB_STARTED: BULLHORN_GET_CANDIDATES');
+      await (await BullhornService.getClient()).getCandidates(false, 50);
     } catch (error) {
       consoleLog(error);
     }
@@ -59,7 +60,6 @@ const setupCronJobs = async () => {
     try {
       consoleLog('/// CRON_JOB_STARTED: GETRO_GET_COMPANIES');
       await (await GetroService.getClient()).getCompanies(false, 50);
-    } catch (error) {
       consoleLog(error);
     }
     consoleLog('/// CRON_JOB_ENDED: GETRO_GET_COMPANIES');

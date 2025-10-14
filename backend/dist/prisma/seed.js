@@ -129,7 +129,6 @@ function seedCategories() {
                     name: "Marketing",
                     enabled: true,
                     externalID: 2000026,
-// Temp comment
                 },
                 {
                     name: "Operations",

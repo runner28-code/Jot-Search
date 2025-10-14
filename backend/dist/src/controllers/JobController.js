@@ -203,6 +203,7 @@ let JobController = class JobController {
           ON CONCAT("bl-", ${alias}.clientCorporationID) = ${companyAlias}.bh_id
         LEFT JOIN \`${Common_1.DATASET_BULLHORN}.bh_jobs\` as bh_jobs 
           ON CONCAT("bl-", bh_jobs.id) = jobs.id
+// Temp comment
         `;
                 return yield BigQueryService_1.BigQueryService.selectQuery(_dataset, _table, _fields, count, _condition, _join, alias);
             }

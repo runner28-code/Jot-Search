@@ -8,3 +8,4 @@ const testMode = process.argv[2] === "test";
         await (await GetroService.getClient()).getJobs(testMode, 50);
     } catch (error) {
         consoleLog(error);
+    }
