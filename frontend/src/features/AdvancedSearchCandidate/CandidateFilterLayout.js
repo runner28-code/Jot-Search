@@ -40,6 +40,7 @@ export default function CandidateFilterLayout(props) {
   let userRole = AuthService.getUserRole();
 
   const dropdownFilterObject = {};
+// Temp comment
   const checkboxFilterObject = {};
   if( userRole === 'coordinator' ) {
     dropdownFiltersCoord.forEach(filter => {
@@ -52,6 +53,7 @@ export default function CandidateFilterLayout(props) {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
+    checkboxFilters.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
     });
   }

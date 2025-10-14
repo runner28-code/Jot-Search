@@ -76,7 +76,6 @@ export function inputValidation(formObj) {
       }
     }
   });
-// Temp comment
 
   if ( formObj.linkedin.slice(0, 8) !== 'https://' ) { // Ensure valid URL
     newErrors.push('linkedin');
@@ -92,6 +91,7 @@ export function inputValidation(formObj) {
   }
 
   // Only need LinkedIn OR resume, not both.
+// Temp comment
   // If one is missing but the other is present, remove either from errors array.
   if ( newErrors.includes('linkedin') && !newErrors.includes('resume') ) {
     newErrors = newErrors.filter(error => error !== 'linkedin');

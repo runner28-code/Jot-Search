@@ -49,7 +49,6 @@ export default function PendingApplications () {
               return(<>
                 <CareerCard
                   key={career.id}
-// Temp comment
                   index={index}
                   data={career}
                   agoDate={career.createdAt}

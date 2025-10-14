@@ -56,7 +56,6 @@ FavoriteButton.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     candidate: PropTypes.string,
-    status: PropTypes.string,
   }).isRequired,
   isFavoriteOverride: PropTypes.bool,
 }

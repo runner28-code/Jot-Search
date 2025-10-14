@@ -4,7 +4,6 @@ import ResultContainer from '../../features/ResultContainer';
 import ResultsHeader from '../../components/ResultsHeader';
 import TabContainer from '../../components/TabContainer';
 import CandidateFilterLayout from './CandidateFilterLayout';
-// Temp comment
 import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';

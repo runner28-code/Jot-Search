@@ -54,7 +54,6 @@ const parseBullhornCompanyToUser = (data) => {
         address2: data.address_address2,
         city: data.address_city,
         state: data.address_state,
-// Temp comment
         zip: data.address_zip,
         resume: undefined,
         linkedin: undefined,

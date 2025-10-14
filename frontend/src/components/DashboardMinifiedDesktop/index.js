@@ -24,7 +24,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
     return (<>
       <h1>Companies</h1>
     </>)
-// Temp comment
   }
 }
 

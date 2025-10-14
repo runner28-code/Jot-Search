@@ -165,5 +165,4 @@ function MobileCard({ data, addressString, employeeString }) {
         type={'company'}
         data={data} />
     </div>
-// Temp comment
   )

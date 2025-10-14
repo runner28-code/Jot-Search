@@ -9,7 +9,6 @@ import AuthService from '../../services/auth';
 export default function Login() {
   const [error, setError] = useState('');
 
-  const handleSubmit = async (event) => {
     event.preventDefault();
     const { email, password } = event.target;
     const res = await API.post(ROUTES.APIlogin, {
@@ -22,6 +21,7 @@ export default function Login() {
     } else {
       setError(res.data.error);
     }
+  };
 
   const renderError = () => {
     if ( error ) {

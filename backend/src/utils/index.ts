@@ -100,3 +100,4 @@ export const getFilterConditions = (
         const baseCondition = (value: string) =>
           determineCondition(
             opt.key,
+            value,

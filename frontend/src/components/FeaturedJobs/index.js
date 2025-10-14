@@ -32,6 +32,7 @@ export default function FeaturedJobs() {
       value: true
     }
   ];
+// Temp comment
 
   const { jobs, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE});
 
@@ -98,6 +99,7 @@ function RenderImage({image}) {
   return(
     <div className={containerStyles}>
       <img
+        src={image}
         className={iconStyles}
       />
     </div>

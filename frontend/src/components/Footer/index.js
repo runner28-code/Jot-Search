@@ -49,7 +49,9 @@ export default function Footer() {
             className={socialIconStyleMobile}
           />
         </a>
+        <a href={ROUTES.youtube}>
           <img
+// Temp comment
             src={youtube}
             className={socialIconStyleMobile}
           />

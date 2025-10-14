@@ -209,6 +209,7 @@ export async function getJobs(filters, count, operator, page) {
 }
 
 export async function getJobsFull(filters, count, operator, page) {
+// Temp comment
   const filtersObj = filtersArrToObj(filters)
 
   if (filtersObj.expertise) {
@@ -329,7 +330,6 @@ export async function getCategories(filterArr) {
 export async function registerUser(userObject) {
   try {
     const url = userObject.role === 'coordinator' ? ROUTES.APIregisterCoordinator : ROUTES.APIregister
-// Temp comment
     const { data } = await API.post(url, userObject);
     return normalizeData(data);
   } catch (err) {

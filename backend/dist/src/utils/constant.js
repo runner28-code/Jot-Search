@@ -80,7 +80,6 @@ const job_filter_exclude_keys = [
     "clerk",
     "clinic",
     "clinical",
-    "clinician",
     "club",
     "cna",
     "collection",

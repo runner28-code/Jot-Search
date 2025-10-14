@@ -52,4 +52,5 @@ export class CategoryController {
         filters,
         fields || [],
         count,
+        operator
       );

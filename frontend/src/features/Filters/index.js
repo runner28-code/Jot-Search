@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
-
 export default function Filters(props) {
   const {
     handleFilterChange,
@@ -78,6 +77,7 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
 
 export function renderCheckboxFilters(defaultFilterObject, filterObject, handleFilterChange) {
   if (!filterObject && !defaultFilterObject) {
+    return null;
   }
 
   return Object.entries(defaultFilterObject).map(([key]) => {

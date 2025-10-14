@@ -65,7 +65,6 @@ export default function NavSearchMobile({ placeholder }) {
     setSearchTerm( searchTerm );
     setForceHidden( false );
   }
-
   /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');
@@ -76,7 +75,6 @@ export default function NavSearchMobile({ placeholder }) {
     setForceHidden(true);
   };
 
-// Temp comment
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);

@@ -14,5 +14,6 @@ export default function AddUser() {
     return <Navigate to={ROUTES.root} />
   }
 
+  const [formType, setFormType] = useState('Candidate');
   function handleDropdownChange(e) {
     setFormType(e.target.value);

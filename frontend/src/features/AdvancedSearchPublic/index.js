@@ -88,7 +88,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   /* CLEAR SEARCH TERM ON TAB SWITCH */
   const isMount = useIsMount();
   useEffect(() => {
-// Temp comment
     if (isMount) {
       return;
     }

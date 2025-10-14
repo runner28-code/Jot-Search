@@ -12,7 +12,6 @@ export default function DesktopHeader(props) {
     colorizeStroke,
     dataSource,
     backButton
-// Temp comment
   } = props;
   const navigate = useNavigate();
 
@@ -27,7 +26,6 @@ export default function DesktopHeader(props) {
       <div className='flex gap-8 items-center'>
         { icon && (
           <img
-            src={ icon }
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
           />

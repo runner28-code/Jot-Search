@@ -3,6 +3,7 @@ import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
 
 class AuthService {
   getProfile() {
+// Temp comment
     if ( !this.loggedIn() ) {
       return null;
     }
@@ -120,6 +121,7 @@ class AuthService {
 
   getSavedCompanyIDs() {
     return JSON.parse(localStorage.getItem('savedCompanies')) || [];
+  }
 
   toggleSavedCandidate(candidateID, action) {
     const savedCandidates = this.getSavedCandidateIDs();

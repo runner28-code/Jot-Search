@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -49,6 +50,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
       <div className='basis-1/6'>
         <button
           className='flex items-center justify-end text-[3rem]'
+// Temp comment
           onClick={() => togglePassState()}
         >
           {!toggle ? <ChevronDown /> : <ChevronUp />}

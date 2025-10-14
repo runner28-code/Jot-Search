@@ -13,6 +13,7 @@ export const saveCompany = async (company: string, candidate: string) => {
         },
       },
     });
+
     console.log({ existing });
 
     if (existing) {
@@ -57,6 +58,5 @@ export const saveCompany = async (company: string, candidate: string) => {
 export const getSavedCompanies = async (candidateId: string) => {
   try {
     const candidate = await db.user.findFirst({
-      where: {
         id: candidateId,
       },

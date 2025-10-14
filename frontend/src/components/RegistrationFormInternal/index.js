@@ -63,6 +63,7 @@ export default function RegistrationFormInternal(loggedIn) {
   const navigate = useNavigate();
   const location = useLocation();
 
+// Temp comment
   // Who is adding the user; IF path is `/add-user`, then it's a coordinator adding a user
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
 
@@ -84,7 +85,6 @@ export default function RegistrationFormInternal(loggedIn) {
 
       // Attempt to upload resume before submitting user data
       const resumeResponse = await uploadFile('resumes', formObj.resume);
-// Temp comment
       if ( resumeResponse.result === false ) {
         setErrors(['resume']);
         setErrorBlock('There was an error uploading your resume.');
