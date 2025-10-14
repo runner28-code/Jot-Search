@@ -4,6 +4,7 @@ services:
   sample:
     build:
       context: .
+      dockerfile: Dockerfile
     image: intulsa_backend
     container_name: intulsa_backend
     volumes:

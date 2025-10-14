@@ -11,7 +11,6 @@ import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGet
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
 import {
-  candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,
@@ -116,7 +115,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   }
 
   function handleSearchChange(searchTerm) {
-// Temp comment
     setFilterObject({ ...filterObject, title: searchTerm });
     setPage(1);
   }

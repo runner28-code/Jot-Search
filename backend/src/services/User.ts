@@ -373,6 +373,7 @@ export const getCompanyDashboardStats = async (days: number) => {
         compare: 0
       },
       companyFavorites: {
+        count: companyFavoritesCurrentPeriod,
         compare: 0,
       },
       activeCareerPostFavorites: {

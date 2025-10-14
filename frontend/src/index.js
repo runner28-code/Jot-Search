@@ -11,7 +11,6 @@ import CategoryContext from './services/CategoryContext';
 import ScrollToTop from './hooks/scrollToTop';
 import App from './App';
 import './index.css';
-// Temp comment
 
 export const queryClient = new QueryClient();
 const isDevelopment = window.location.hostname === 'localhost';

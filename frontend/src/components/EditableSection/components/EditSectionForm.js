@@ -13,7 +13,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
     handlePropertyChange(e.target.name, e.target.value);
   }
   const singleProperty = Object.keys(contentObject).length === 1;
-  const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
   
   if ( propertyName === 'comments' ) {
     return <EditSummaryForm 

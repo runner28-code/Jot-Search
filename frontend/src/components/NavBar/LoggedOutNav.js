@@ -39,7 +39,6 @@ function MobileNavBarLayout() {
         </div>
       </div>
       {/* Global Search */}
-// Temp comment
       <div className='flex justify-center'>
         { renderGlobalSearch() }
       </div>

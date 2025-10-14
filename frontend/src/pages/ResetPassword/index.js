@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
-// import FormInput from '../../components/FormInput';
 
 import API from '../../services/API';
 
@@ -31,7 +30,6 @@ export default function ResetPassword() {
     if( password !== confirmPassword ) {
       setMatch(false);
     }
-// Temp comment
 
     if( password === confirmPassword ) {
       setMatch(true);

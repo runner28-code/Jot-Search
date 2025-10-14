@@ -75,7 +75,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     } else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
-    } else {
       return { filterKey: 'name', filterValue: filterObject.title }
     }
   };
@@ -85,6 +84,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const { companies, total: totalCompanies, isLoading: isLoadingCompanies } = useGetCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'companies' });
   const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'candidates' });
 
+  /* CLEAR SEARCH TERM ON TAB SWITCH */
   const isMount = useIsMount();
   useEffect(() => {
     if (isMount) {

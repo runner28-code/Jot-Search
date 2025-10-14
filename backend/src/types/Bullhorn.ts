@@ -94,6 +94,7 @@ export type Job = {
     location_country_name?: string;
     location_country_code?: string;
     markUpPercentage?: string;
+    numOpenings?: string;
     onSite?: string;
     owner?: string;
     payRate?: string;

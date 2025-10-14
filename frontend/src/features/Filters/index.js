@@ -80,13 +80,13 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
   if (!filterObject && !defaultFilterObject) {
     return null;
   }
+
   return Object.entries(defaultFilterObject).map(([key]) => {
     if (!filterObject[key]) {
       return null;
     }
     const onFilterChange = (e) => {
       handleFilterChange(key, e.target.checked ? 'Yes' : 'No')
-    }
     const filterType = key;
     return (
       <label

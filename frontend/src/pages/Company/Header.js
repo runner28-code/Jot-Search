@@ -79,6 +79,7 @@ function HeaderContent({ companyData }) {
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={Triangle}
+// Temp comment
               className={headerIconStyles}
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
@@ -102,7 +103,6 @@ HeaderContent.propTypes = {
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
     industryList: PropTypes.array,
-// Temp comment
     address: PropTypes.string,
     employeeString: PropTypes.string,
     city: PropTypes.string,

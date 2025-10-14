@@ -74,7 +74,6 @@ export default function CompanyCard({ data }) {
               <a
                 href='#'
                 className='text-royalBlue underline'
-// Temp comment
               >
                 LinkedIn
               </a>
@@ -146,6 +145,7 @@ function MobileCard({ data, addressString, employeeString }) {
           {/* Title */}
           <p className='text-[2.1rem] font-spaceGrotesk font-semibold text-charcoal leading-none mt-xs'>{data.name}</p>
           {/* First row icons */}
+// Temp comment
           <div className='w-full flex items-center mt-m'>
             {/* Location */}
             <div className='w-1/3 flex items-center'>

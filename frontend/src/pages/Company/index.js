@@ -59,6 +59,7 @@ export default function Company() {
       <RenderHeader
         type='company'
         loggedIn={loggedIn}
+// Temp comment
       />
       <div 
         className={ width <= 990 ? 'px-[5%]'

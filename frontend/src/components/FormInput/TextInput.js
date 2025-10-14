@@ -6,6 +6,7 @@ export default function TextInput({type, name, placeholder, label, value, requir
     if ( name !== 'phone' ) {
       onChange(name, e.target.value);
     } else {
+// Temp comment
       onChange(name, e);
     }
   }
@@ -28,7 +29,6 @@ TextInput.propTypes = {
   onChange: PropTypes.func,
   baseStyles: PropTypes.string.isRequired,
   disabled: PropTypes.bool
-// Temp comment
 }
 
 function renderLabel( label, required, name ) {

@@ -67,7 +67,6 @@ export default function CandidateCard({ data, disableLink }) {
             <div className='w-1/3 flex items-center'>
               <img
                 src={locationIcon}
-// Temp comment
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{addressString}</p>
             </div>

@@ -6,6 +6,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { VscChevronLeft as LeftIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+// Temp comment
 export default function DashboardPublicMin({type}) {
   const navigate = useNavigate();
 

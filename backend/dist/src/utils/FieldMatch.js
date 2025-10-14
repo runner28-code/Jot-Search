@@ -51,6 +51,7 @@ exports.USER_FILTER = {
     lastname: "lastname",
     role: "role",
     roles: "roles",
+    city: "city",
     state: "state",
     skills: "skills",
     skillSet: "skillSet",

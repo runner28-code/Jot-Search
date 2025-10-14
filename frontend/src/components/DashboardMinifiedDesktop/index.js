@@ -16,7 +16,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 export default function DashboardMinifiedDesktop ({ location }) {
 
   if( location === 'career' ) {
-// Temp comment
     return (
       <CareerHeader location={location} />
     )
@@ -73,7 +72,6 @@ function CareerHeader ({ location }) {
         <Link
           className='text-white underline basis-1/3'
           to={ROUTES.careers}
-        >Back</Link>
         <div className='basis-2/6'>
           <TypeTabs location={location}/>
         </div>

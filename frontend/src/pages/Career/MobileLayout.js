@@ -45,6 +45,7 @@ export default function MobileLayout(props) {
           <p className='text-royalBlue font-spaceGrotesk font-semibold mt-s'>{categoryString}</p>
         </div>
         <div className='basis-full'>
+// Temp comment
           {/* First row icons */}
           <div className='w-full flex items-center mt-xxl mb-m'>
             {/* Location */}
@@ -149,6 +150,7 @@ function renderLogo( logo ) {
   if ( !logo ) {
     return <div className='w-36 h-36 flex justify-center items-center border border-smokeGray border-solid object-contain mr-10'>
       <CareerIcon className='w-24 h-24 fill-royalBlue' />
+    </div>
   }
   return <img
     src={logo}

@@ -28,7 +28,6 @@ function main() {
         }
         catch (err) {
             console.error("Error during seed...❌");
-// Temp comment
             console.error(err);
             throw err;
         }
