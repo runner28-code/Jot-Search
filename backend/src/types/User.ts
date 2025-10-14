@@ -37,7 +37,6 @@ export type User = {
   revenue?: string;
   dateFounded?: string;
 
-  employeeType?: string;
   experience?: string;
   hourlyRate?: string;
   willRelocate?: string;

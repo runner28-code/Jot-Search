@@ -19,12 +19,12 @@ function adjustJobFilterObject() {
 export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
   const filterObject = adjustJobFilterObject();
+  const [filterState, setFilterState] = useState({
     title: '',
     'On-Site/Remote': 'Any Work Setting',
     'Expertise': 'Any Expertise',
   });
 
-  function handleSearchClick() {
     const params = {};
     params.title = filterState.title ? filterState.title : '';
     params['On-Site/Remote'] = filterState['On-Site/Remote'] !== 'Any Work Setting' ? filterState['On-Site/Remote'] : 'Any';

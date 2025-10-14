@@ -361,3 +361,4 @@ export class JobController {
 
   @Authorized()
   @Get("/applied")
+  async getAppliedJobs(

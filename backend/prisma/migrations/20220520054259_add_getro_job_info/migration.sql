@@ -35,3 +35,4 @@ CREATE TABLE "GetroJobInfo" (
     "posted_at" TIMESTAMP(3),
     "slug" TEXT,
     "source" TEXT,
+    "status" TEXT,

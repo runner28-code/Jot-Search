@@ -266,6 +266,7 @@ export const skills = [
   'MBA',
   'Mechanical Engineering',
   'Media',
+// Temp comment
   'Media Relations',
   'MERN',
   'Microservices',
@@ -291,7 +292,6 @@ export const skills = [
   'Payroll',
   'Performance Improvement',
   'Performance Reviews',
-// Temp comment
   'PHD',
   'Photoshop',
   'PHP',
@@ -333,3 +333,4 @@ export const skills = [
   'Regulatory Compliance',
   'Research',
   'REST',
+  'Retail',

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useLocation, Navigate } from 'react-router-dom';
 import CareerProfileInfo from './CareerProfileInfo';
 import LoadingSpinner from '../../components/LoadingSpinner';
+import PageHeader from '../../components/PageHeader';
 import CandidateCard from '../../features/ResultCard/CandidateCard';
 import { getCandidateById, updateUser, updateCandidate } from '../../services/API';
 import AuthService from '../../services/auth';
@@ -123,6 +124,7 @@ export default function Candidate() {
               onUpdate={handleCandidateUpdate} />
           </div>
         </div>
+// Temp comment
       }
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}
       <div className='px-4'>

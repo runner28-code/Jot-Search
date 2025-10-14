@@ -276,3 +276,4 @@ export type Candidate = {
     username?: string;
     veteran?: string;
     willRelocate?: string;
+    workAuthorized?: string;

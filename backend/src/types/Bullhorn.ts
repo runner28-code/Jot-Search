@@ -276,3 +276,4 @@ export type Candidate = {
 };
 
 export type Lead = {
+    id: string;

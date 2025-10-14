@@ -40,5 +40,4 @@ export default function ChoicesContainer(props) {
         stylesObject={stylesObject} /> 
       :
       null
-    }
   </>)

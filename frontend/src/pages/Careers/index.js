@@ -23,7 +23,6 @@ export default function Careers() {
 
   function togglePassState() {
     setToggle(toggle => !toggle);
-// Temp comment
   }
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>

@@ -623,3 +623,4 @@ model Candidate {
   hourlyRate    Int?
   hourlyRateLow Int?
   idOnFile      Boolean?
+  isAnonymized  Boolean?

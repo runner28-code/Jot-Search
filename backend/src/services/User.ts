@@ -525,3 +525,4 @@ export const getStats = async (userId: string) => {
                     WHERE \`${DATASET_MAIN}.${Tables.APPLICATIONS}\`.\`candidate\` = '${userId}'`;
 
     const savedJobsCountQuery = `SELECT COUNT(*) as count FROM \`${DATASET_MAIN}.${Tables.SAVEDJOBS}\`
+                                    WHERE candidate = '${userId}'`;

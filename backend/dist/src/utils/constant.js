@@ -248,6 +248,7 @@ const job_filter_exclude_keys = [
     "math",
     "mechanic",
     "medical",
+    "medication",
     "membership",
     "merchandiser",
     "microbiologist",
@@ -409,3 +410,4 @@ const job_filter_exclude_keys = [
     "transfer",
     "transition",
     "transportation",
+    "trauma",

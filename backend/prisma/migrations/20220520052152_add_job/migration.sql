@@ -10,6 +10,7 @@ CREATE TABLE "Job" (
     "zip" TEXT,
     "country_id" TEXT,
     "employmentType" TEXT,
+    "title" TEXT,
     "willRelocate" TEXT,
     "yearsRequired" TEXT,
     "status" TEXT,
@@ -21,3 +22,4 @@ CREATE TABLE "Job" (
     "salary" TEXT,
     "salaryUnit" TEXT,
     "startDate" TIMESTAMP(3),
+    "type" TEXT,

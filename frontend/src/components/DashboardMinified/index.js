@@ -35,6 +35,7 @@ DashboardMinified.propTypes = {
 }
 
 function LinkSwap ({ location, loggedIn }) {
+
   if(location === 'career') {
     return (
       <Link

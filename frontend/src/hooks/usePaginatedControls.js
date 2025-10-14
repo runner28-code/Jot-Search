@@ -93,7 +93,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
               key={totalPages}
               active={page === totalPages}
               page={totalPages}
-              setPage={setPage}
               prefetchFunc={prefetchFunc}
             >
               {totalPages}

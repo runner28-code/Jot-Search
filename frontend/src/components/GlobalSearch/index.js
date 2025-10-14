@@ -29,6 +29,7 @@ export default function GlobalSearch({ placeholder }) {
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setResults({ ...results, loading: true, forceHidden: false });
+// Temp comment
     debounceSearchTermFunction( searchTerm );
   }
 
@@ -48,7 +49,6 @@ export default function GlobalSearch({ placeholder }) {
     }
 
     // TODO: API: Candidates if role === 'company' || 'coordinator'
-// Temp comment
     const [jobResults, companyResults, CandidateResults] = await Promise.all([
       getJobs( searchTerm, 'title', 3 ),
       getCompanies( searchTerm, 'name', 3 ),

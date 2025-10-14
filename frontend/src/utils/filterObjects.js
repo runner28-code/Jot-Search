@@ -154,7 +154,6 @@ export function buildSearchFiltersObj(filterObject) {
       if ( key === 'Expertise' ) {
         filterObject[key] = findCategoryIdByValue(filterObject[key]);
       }
-// Temp comment
       searchFilters[filterKey] = filterObject[key];
     }
   });

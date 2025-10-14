@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 export default function JoinTalentNetwork() {
 
@@ -20,7 +19,6 @@ export default function JoinTalentNetwork() {
             <p className='text-sm leading-[3rem] text-softWhite mt-8'>
               Build your profile with the type of opportunity you want to attract and next exclusively with our network. Receive email alerts that make you first to know about relevant new opportunities, based on your preferences.
             </p>
-            <Link
               to={ROUTES.signup}
               className='flex items-center justify-center h-28 w-112 bg-buttonLightBlue mt-12 px-18 rounded-lg'
             >

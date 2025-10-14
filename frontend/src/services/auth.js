@@ -35,7 +35,6 @@ class AuthService {
     }
   }
 
-// Temp comment
   getToken() {
     return localStorage.getItem('id_token');
   }
@@ -106,7 +105,6 @@ class AuthService {
   }
 
   getSavedJobIDs() {
-    return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }
 
   toggleSavedCompany(companyID, action) {

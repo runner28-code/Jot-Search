@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
+import FavoriteButton from '../FavoriteButton';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdGroups as EmployeesIcon } from 'react-icons/md';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -116,6 +117,7 @@ CompanyCard.propTypes = dataShape;
 
 function renderCardImage(data) {
   if ( !data.logo ) {
+// Temp comment
     return <CareerIcon className='h-28 w-32 fill-royalBlue' />
   } else {
     return <img

@@ -54,6 +54,7 @@ export default function ResetPassword() {
         <div className='mb-4 text-center'>
           <span className='text-success'>Reset Password Successful.</span>&nbsp;
           <Link
+            to={ROUTES.login}
             className='underline block my-4 text-royalBlue'
           >
             Login to your account

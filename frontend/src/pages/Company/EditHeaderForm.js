@@ -14,7 +14,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     address2: candidateData.address2,
     city: candidateData.city,
     state: candidateData.state,
-// Temp comment
     zip: candidateData.zip,
   });
 
@@ -27,5 +26,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     setFormData({ ...formData, [name]: value });
   }
 
+// Temp comment
   const handleCancel = () => {
     setEditMode(false);

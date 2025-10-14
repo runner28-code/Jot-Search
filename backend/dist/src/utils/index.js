@@ -78,4 +78,3 @@ const getDataSource = (id) => {
         return Common_1.DataSource.BULLHORN;
     if (prefix === 'gt')
         return Common_1.DataSource.GETRO;
-    return Common_1.DataSource.UNKNOWN;

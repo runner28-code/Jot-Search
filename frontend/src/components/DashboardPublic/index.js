@@ -4,7 +4,6 @@ import { useGetLandingPageStats } from '../../hooks/queries/useGetLandingPageSta
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import filterIcon from '../../assets/icons/filter-toggle.svg';
-// Temp comment
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -34,6 +33,7 @@ export default function DashboardPublic({togglePassState}) {
         <div className='flex items-center'>
           <Link
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
+// Temp comment
             to={ROUTES.careers}
           >
             <CareerIcon />

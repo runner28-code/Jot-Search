@@ -302,3 +302,4 @@ export class CompanyController {
       "joined",
       operator
     );
+

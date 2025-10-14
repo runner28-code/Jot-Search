@@ -41,7 +41,6 @@ function NavBarLayout() {
         {/* Nav Menu */}
         <div className='flex items-center font-spaceGrotesk'>
           <div className='mr-8'>
-// Temp comment
             { renderNavSearch() }
           </div>
           {/* Dropdown Menu */}
@@ -99,7 +98,6 @@ const DropdownMenu = () => {
 
   const handleClick = () => {
     setIsOpen(isOpen => !isOpen);
-    if ( firstRender ) {
       setFirstRender(false);
     }
   }

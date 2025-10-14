@@ -63,6 +63,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   }
   const handleSubmit = () => {
     let dataToSubmit = {};
+// Temp comment
     dataToSubmit = { ...formData };
     dataToSubmit.skills = formData.skills.join(', ');
     dataToSubmit.roles = formData.roles.join(', ');

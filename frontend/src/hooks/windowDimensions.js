@@ -5,7 +5,6 @@ function getWindowDimensions() {
   return {
     width,
     height
-  };
 }
 
 export default function useWindowDimensions() {

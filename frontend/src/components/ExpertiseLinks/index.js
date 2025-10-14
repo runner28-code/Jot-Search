@@ -48,6 +48,7 @@ export default function ExpertiseLinks() {
         {/* Marketing */}
         <Link
           to={ROUTES.careers}
+          className={linkStyles}
           state={{ Expertise: 'Marketing' }}
         >
           <img
@@ -82,6 +83,7 @@ export default function ExpertiseLinks() {
             className={iconStyles}
           />
           <span className={textStyles}>Finance</span>
+// Temp comment
         </Link>
       </div>
     </section>
