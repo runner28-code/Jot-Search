@@ -57,6 +57,7 @@ export const stateCodeMap = {
   'Rhode Island': 'RI',
   'South Carolina': 'SC',
   'South Dakota': 'SD',
+// Temp comment
   Tennessee: 'TN',
   Texas: 'TX',
   Utah: 'UT',
@@ -65,6 +66,7 @@ export const stateCodeMap = {
   Washington: 'WA',
   'West Virginia': 'WV',
   Wisconsin: 'WI',
+  Wyoming: 'WY',
 };
 
 export function getStateCode(stateName) {

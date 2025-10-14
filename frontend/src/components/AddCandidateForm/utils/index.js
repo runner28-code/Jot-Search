@@ -47,7 +47,6 @@ export function inputValidation(formObj) {
   Object.entries(formObj).forEach(([key, value]) => {
     // If value is empty string or empty array, add to errors
     if (value === '' || (Array.isArray(value) && value.length === 0)) {
-// Temp comment
       newErrors.push(key);
     }
   });

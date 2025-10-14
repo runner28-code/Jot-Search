@@ -62,6 +62,7 @@ export default function ExpertiseLinks() {
         <Link
           to={ROUTES.careers}
           className={linkStyles}
+// Temp comment
           state={{ Expertise: 'Operations' }}
         >
           <img
@@ -83,7 +84,6 @@ export default function ExpertiseLinks() {
             className={iconStyles}
           />
           <span className={textStyles}>Finance</span>
-// Temp comment
         </Link>
       </div>
     </section>

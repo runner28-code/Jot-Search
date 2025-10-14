@@ -49,7 +49,6 @@ export const CompanyFilter: TypedDictionary<
     name: "name",
     bh_id: "bh_id",
     id: "id",
-  },
 };
 
 export const USER_FILTER: any = {

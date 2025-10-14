@@ -198,6 +198,7 @@ export class BullhornService {
           await this.setCookie({
             auth_code: this.auth_code,
             access_token: this.access_token,
+            refresh_token: this.refresh_token,
             BhRestToken: this.BhRestToken,
             restUrl: this.restUrl,
           });

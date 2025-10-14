@@ -227,6 +227,7 @@ export const saveCandidates = async (candidates: any[]) => {
         console.log(error.message);
         console.log(`ERROR: while saving Candidate with ID = ${candidate.id}`);
       }
+    }
 
     return { result: true };
   } catch (error: any) {
@@ -240,3 +241,4 @@ export const saveLeads = async (leads: any[]) => {
   try {
     for (const lead of leads) {
       try {
+        console.log(`Savng Lead with ID = ${lead.id}`);

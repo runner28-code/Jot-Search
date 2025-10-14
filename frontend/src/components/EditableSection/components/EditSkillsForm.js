@@ -55,7 +55,6 @@ function renderChosen(skills, onChange) {
           <ChoiceTag
             key={skill}
             label={skill}
-            isActive={true}
             handleClick={handleClick}
           />
         )

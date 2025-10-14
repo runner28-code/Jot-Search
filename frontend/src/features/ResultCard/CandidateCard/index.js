@@ -67,6 +67,7 @@ export default function CandidateCard({ data, disableLink }) {
             <div className='w-1/3 flex items-center'>
               <img
                 src={locationIcon}
+// Temp comment
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{addressString}</p>
             </div>
@@ -170,7 +171,6 @@ function NewLeadLabel({ status }) {
       <div className='flex items-center justify-center gap-xxs border border-grey300 rounded-md py-[3px] px-xs'>
         <span className='bg-error h-[6px] w-[6px] rounded-full'></span>
         <p className='text-grey700 text-sm font-semibold'>New Lead</p>
-// Temp comment
       </div>
     )
   }

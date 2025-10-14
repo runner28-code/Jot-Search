@@ -36,7 +36,6 @@ function NavBarLayout() {
             className='my-8 w-3/4'
             src={inTulsaLogoText}
             alt='logo'
-          />
         </Link>
         {/* Nav Menu */}
         <div className='flex items-center font-spaceGrotesk'>
@@ -98,6 +97,7 @@ const DropdownMenu = () => {
 
   const handleClick = () => {
     setIsOpen(isOpen => !isOpen);
+    if ( firstRender ) {
       setFirstRender(false);
     }
   }

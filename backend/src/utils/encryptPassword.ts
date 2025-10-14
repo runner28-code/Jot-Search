@@ -7,6 +7,5 @@ import { encryptPassword } from "./password";
   try {
         console.log(encryptPassword('123456'));
     } catch (error) {
-        console.log(error);
     }
 

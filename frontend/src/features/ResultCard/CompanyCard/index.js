@@ -74,6 +74,7 @@ export default function CompanyCard({ data }) {
               <a
                 href='#'
                 className='text-royalBlue underline'
+// Temp comment
               >
                 LinkedIn
               </a>
@@ -117,7 +118,6 @@ CompanyCard.propTypes = dataShape;
 
 function renderCardImage(data) {
   if ( !data.logo ) {
-// Temp comment
     return <CareerIcon className='h-28 w-32 fill-royalBlue' />
   } else {
     return <img

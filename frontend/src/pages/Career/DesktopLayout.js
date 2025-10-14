@@ -6,7 +6,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import locationIcon from '../../assets/icons/placepin.svg';
 import clockIcon from '../../assets/icons/clock.svg';
-// Temp comment
 import postingAgeIcon from '../../assets/icons/calendar.svg';
 import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
@@ -32,6 +31,7 @@ export default function DesktopLayout(props) {
 
   return (<>
     <section className='relative bg-white px-xxl-3 py-xxl-2 border-2 border-disabled border-solid rounded-3xl mb-xxl-4'>
+// Temp comment
       {/* Header */}
       <div className='flex items-start'>
         <div>

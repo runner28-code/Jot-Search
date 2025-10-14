@@ -33,7 +33,6 @@ export default function Applications() {
   }, []);
 
   function handleCheckClick(careerId) {
-// Temp comment
     if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
     } else {

@@ -29,7 +29,6 @@ export default function GlobalSearch({ placeholder }) {
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setResults({ ...results, loading: true, forceHidden: false });
-// Temp comment
     debounceSearchTermFunction( searchTerm );
   }
 

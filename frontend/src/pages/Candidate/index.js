@@ -124,7 +124,6 @@ export default function Candidate() {
               onUpdate={handleCandidateUpdate} />
           </div>
         </div>
-// Temp comment
       }
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}
       <div className='px-4'>

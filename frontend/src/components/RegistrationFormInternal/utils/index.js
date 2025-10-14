@@ -53,7 +53,6 @@ export function renderHeader(addType) {
             className='text-ml text-royalBlue leading-loose underline mx-4'
           >
             Log in here.
-// Temp comment
           </Link>
         </div>
         <hr className='mb-15' />
@@ -73,7 +72,6 @@ export function inputValidation(formObj) {
     if ( !valuesToSkip.includes(key) ) {
       // If value is empty string or empty array, add to errors
       if (!value || (Array.isArray(value) && value.length === 0)) {
-        newErrors.push(key);
       }
     }
   });

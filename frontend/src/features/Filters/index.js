@@ -4,6 +4,7 @@ import FilterSearch from '../../components/FilterSearch';
 
 export default function Filters(props) {
   const {
+    handleFilterChange,
     defaultFilterObject,
     filterObject,
     searchLabel,
@@ -79,7 +80,6 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
   if (!filterObject && !defaultFilterObject) {
     return null;
   }
-
   return Object.entries(defaultFilterObject).map(([key]) => {
     if (!filterObject[key]) {
       return null;
