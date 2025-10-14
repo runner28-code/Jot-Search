@@ -63,7 +63,6 @@ export const saveCompanies = async (companies: any[]) => {
           ...company
         };
 
-        Object.keys(companyData).forEach((key) => {
           if (expludeFields.includes(key)) {
             delete companyData[key];
           }
@@ -232,3 +231,4 @@ export const saveCandidates = async (candidates: any[]) => {
     return { result: true };
   } catch (error: any) {
     console.log(error.message);
+    return { result: false, error };

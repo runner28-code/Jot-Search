@@ -38,7 +38,6 @@ function useTabState(disabledTabs, userType, pathname) {
         return useState('candidates');
       case '/companies':
         return useState('companies');
-// Temp comment
       case '/careers':
       default:
         return useState('jobs');
@@ -72,7 +71,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
-
     } else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };

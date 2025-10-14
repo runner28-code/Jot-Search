@@ -104,7 +104,6 @@ function renderNotification(activeData, careerData) {
         company={careerData.clientCorporation}
         id={careerData.title}
         add='filled'
-// Temp comment
       />
     </>)
   }

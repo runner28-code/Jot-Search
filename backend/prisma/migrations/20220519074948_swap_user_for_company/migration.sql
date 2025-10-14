@@ -1,5 +1,4 @@
 /*
-  Warnings:
 
   - You are about to drop the `User` table. If the table is not empty, all the data it contains will be lost.
 
@@ -42,6 +41,7 @@ CREATE TABLE "Company" (
     "externalID" TEXT,
     "facebookProfileName" TEXT,
     "fax" TEXT,
+    "feeArrangement" DOUBLE PRECISION,
     "funding" TEXT,
     "industryList" TEXT[],
     "invoiceFormat" TEXT,

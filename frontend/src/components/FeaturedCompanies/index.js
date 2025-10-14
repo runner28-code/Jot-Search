@@ -14,7 +14,6 @@ export default function FeaturedCompanies() {
       value: 'active'
     }
   ];
-// Temp comment
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
@@ -29,7 +28,6 @@ export default function FeaturedCompanies() {
             :
             companies.map((company, index) =>
               <Link
-                to={`${ROUTES.companies}/${company.id}`}
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'
                 key={index}>
                 { renderLogo(company.logo) }

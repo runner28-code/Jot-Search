@@ -58,6 +58,7 @@ function HeaderContent({ companyData }) {
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <FaUsers
+// Temp comment
               className={headerIconStyles}
             />
             <p className={headerRowTextStyles}>{companyData.numEmployees} Employees</p>

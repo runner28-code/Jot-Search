@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import PhoneInput from 'react-phone-number-input/input';
-
 export default function TextInput({type, name, placeholder, label, value, required, onChange, baseStyles, disabled}) {
   function handleChange(e) {
     if ( name !== 'phone' ) {
@@ -32,6 +31,7 @@ TextInput.propTypes = {
 
 function renderLabel( label, required, name ) {
   if ( !label ) {
+    return null;
   }
 
   const labelString = label && required ? `${label} *` : label;

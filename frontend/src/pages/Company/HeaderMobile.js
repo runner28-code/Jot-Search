@@ -43,6 +43,7 @@ function HeaderContent({ companyData }) {
                 <CareerIcon
                   className={headerIconStyles}
                 />
+                <OpenCareers
                   styles={headerRowTextStyles}
                   companyId={companyData.id}
                 />

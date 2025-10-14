@@ -23,7 +23,6 @@ export default function CareerFilterLayout(props) {
   const { width } = useWindowDimensions();
   const {
     defaultFilterObject,
-// Temp comment
     filterObject,
     handleFilterChange,
     searchTerm,
@@ -55,7 +54,6 @@ export default function CareerFilterLayout(props) {
           placeholder='Search Careers'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
-      </div>
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[25px]'}>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
         <button

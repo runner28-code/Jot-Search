@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import MobileHeader from './MobileHeader';
 import DesktopHeader from './DesktopHeader';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -9,7 +8,6 @@ export default function PageHeader(props) {
 
   if ( width < 1280 ) {
     return <MobileHeader {...props} />
-// Temp comment
   } else {
     return <DesktopHeader {...props} />
   }

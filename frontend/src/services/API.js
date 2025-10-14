@@ -215,7 +215,6 @@ export async function getJobsFull(filters, count, operator, page) {
     const categories = JSON.parse(localStorage.getItem('categories'));
     const categoryId = categories.find(category => category.name === filtersObj.expertise).externalID;
     filtersObj.expertise = categoryId
-  }
 
   const formattedFilters = formatFilters(filtersObj, {
     'expertise': 'categoryId'

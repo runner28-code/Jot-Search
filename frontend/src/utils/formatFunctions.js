@@ -155,6 +155,7 @@ export function buildOccupationString(occupation, companyName) {
   }
 }
 
+export function buildCareerAddress(city, state) {
   if ( !city || !state ) {
     return 'Not Listed';
   }

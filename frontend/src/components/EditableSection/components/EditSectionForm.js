@@ -65,6 +65,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
               value={value}
             />
           </div>
+// Temp comment
         )
       })}
     </div>

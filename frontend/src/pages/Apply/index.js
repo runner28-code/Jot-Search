@@ -42,6 +42,7 @@ export default function Apply() {
   const [career, setCareer] = useState(defaultCareerState);
   const [originalObject, setOriginalObject] = useState({});
   const [applicationObject, setApplicationObject] = useState(defaultState);
+  const [useExistingResume, setUseExistingResume] = useState(false);
   const [referralChoice, setReferralChoice] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
@@ -120,6 +121,7 @@ export default function Apply() {
           success: false,
           errors: {},
         });
+// Temp comment
       }, 2000);
       navigate('/applications');
     }

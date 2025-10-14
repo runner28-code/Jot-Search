@@ -51,6 +51,5 @@ function LinkSwap ({ location, loggedIn }) {
         className='text-white flex items-center'
         to={ROUTES.companies}>
         <span className='underline'>Back</span>
-      </Link>
     )
   }

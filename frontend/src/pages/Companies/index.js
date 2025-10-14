@@ -29,7 +29,6 @@ export default function Companies() {
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
-// Temp comment
         loggedIn={loggedIn}
         userType={userType}
         togglePassState={togglePassState}
@@ -60,7 +59,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
         backButton={true}
       />
       <DashboardCandidate 
-        togglePassState={togglePassState} 
         toggle={toggle} 
       />
     </>)

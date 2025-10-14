@@ -8,4 +8,3 @@ const testMode = process.argv[2] === "test";
         await (await BullhornService.getClient()).getJobs(testMode, 50);
     } catch (error) {
         consoleLog(error);
-    }

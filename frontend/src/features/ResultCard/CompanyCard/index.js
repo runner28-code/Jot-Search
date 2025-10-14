@@ -56,7 +56,6 @@ export default function CompanyCard({ data }) {
                 src={locationIcon}
                 className='h-8 mr-6 ml-1' />
               <p className='text-textBlack'>{addressString}</p>
-            </div>
             <OpenCareers companyId={data.id} />
             {/* Number of Employees */}
             <div className='w-1/3 flex items-center'>

@@ -14,6 +14,7 @@ export default function InviteCandidates({ company }) {
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
+// Temp comment
 
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
 
@@ -57,7 +58,6 @@ export default function InviteCandidates({ company }) {
       {isSendingCandidates && <div className="text-center">Sending Invitations...</div>}
       {successfullySentCandidates && <div className="text-center">Invitations Sent!</div>}
 
-// Temp comment
       <SelectedValues />
 
       <MultiSelect

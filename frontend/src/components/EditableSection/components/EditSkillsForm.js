@@ -23,6 +23,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
     { renderChosen(splitSkills, onChange) }
     <TypeaheadDropdown
       type='typeahead'
+      dropdownType='tags'
       name='primarySkills'
       placeholder='Add/Remove Skills'
       choices={skillChoices}

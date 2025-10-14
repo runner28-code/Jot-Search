@@ -45,6 +45,7 @@ export default function RegistrationForm() {
   const navigate = useNavigate();
   const location = useLocation();
 
+  useEffect(async () => { // Submit data
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
       // Validation
@@ -105,7 +106,6 @@ export default function RegistrationForm() {
   async function handleSubmit(event) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
-    setErrorBlock('');
     setErrors([]);
     setFormObj({
       ...formObj,
