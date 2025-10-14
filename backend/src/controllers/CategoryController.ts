@@ -15,6 +15,7 @@ import {
 @JsonController("/api/category")
 export class CategoryController {
   @Get("/search")
+  async searchByID(
     @QueryParam("id") id: string
   ): Promise<CategoryByIdResponse> {
     try {
@@ -51,5 +52,4 @@ export class CategoryController {
         filters,
         fields || [],
         count,
-        operator
       );

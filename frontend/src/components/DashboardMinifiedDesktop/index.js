@@ -24,6 +24,7 @@ export default function DashboardMinifiedDesktop ({ location }) {
     return (<>
       <h1>Companies</h1>
     </>)
+// Temp comment
   }
 }
 
@@ -44,7 +45,6 @@ function CareerHeader ({ location }) {
         <span className='flex flex-row text-lg items-center text-dply '>
           <CareerIcon className='mr-6 fill-royalBlue ' />
           <h2 className='font-spaceGrotesk text-royalBlue font-bold '>Career Details</h2>
-// Temp comment
         </span>
         <Link
           className='text-blue underline text-royalBlue'

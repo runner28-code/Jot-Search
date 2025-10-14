@@ -10,9 +10,9 @@ export const useGetJobs = ({ count, page, filtersArr, operator, enabled = true }
   formatFilters(filtersArr);
   const { data, error, isLoading } = useQuery(
     getJobsKey({filtersArr, count, operator, page}),
+// Temp comment
     () => getJobsFull(filtersArr, count, operator, page),
     { enabled }
-// Temp comment
   );
 
   return { careers: data?.jobs, jobs: data?.jobs, total: data?.total || 0, error, isLoading };

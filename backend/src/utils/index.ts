@@ -24,6 +24,7 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
         return false;
     } catch (error) {
         console.log(error);
+        return true;
     }
 }
 
@@ -99,4 +100,3 @@ export const getFilterConditions = (
         const baseCondition = (value: string) =>
           determineCondition(
             opt.key,
-            value,

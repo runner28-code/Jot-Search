@@ -229,7 +229,6 @@ export const skills = [
   'HTTP',
   'Hydraulics',
   'Hyper-V',
-// Temp comment
   'Implementation',
   'Inbound Calls',
   'InDesign',

@@ -96,6 +96,7 @@ export class JobController {
         return null;
       }
     } catch (err) {
+      console.error(err);
       return null;
     }
   }

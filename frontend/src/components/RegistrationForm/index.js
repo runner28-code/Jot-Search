@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
 import ChoiceTag from '../ChoiceTag';
 // import Dropdown from '../../components/UniversalDropdown';
-// Temp comment
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import {
   roles as roleChoices,

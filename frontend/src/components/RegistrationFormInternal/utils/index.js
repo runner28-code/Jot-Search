@@ -76,6 +76,7 @@ export function inputValidation(formObj) {
       }
     }
   });
+// Temp comment
 
   if ( formObj.linkedin.slice(0, 8) !== 'https://' ) { // Ensure valid URL
     newErrors.push('linkedin');
@@ -84,6 +85,7 @@ export function inputValidation(formObj) {
     newErrors.push('resume');
   }
   if ( formObj.password !== formObj.verifyPassword ) { // Match passwords
+    newErrors.push('password', 'verifyPassword');
   }
   if ( formObj.skills.length < 3 ) { // Ensure at least 3 skills chosen
     newErrors.push('skills');

@@ -45,7 +45,6 @@ export default function CareerFilterLayout(props) {
   const buttonStyles = 'text-white text-sm whitespace-nowrap';
   const buttonStylesCareer = 'text-white text-sm whitespace-nowrap';
   return (
-    <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap'>
         <FilterSearch
           searchTerm={searchTerm}
@@ -54,6 +53,7 @@ export default function CareerFilterLayout(props) {
           placeholder='Search Careers'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
+      </div>
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[25px]'}>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
         <button

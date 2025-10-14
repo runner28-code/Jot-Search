@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import CandidateCard from '../ResultCard/CandidateCard';
 import CompactCareerCard from '../ResultCard/CompactCareerCard';
@@ -37,7 +38,6 @@ export default function ResultContainer(props) {
   function renderFooter() {
     if ( !limit ) {
       return null;
-// Temp comment
     }
 
     let pluralizedType = pluralizedTypes[type];

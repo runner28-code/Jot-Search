@@ -5,9 +5,9 @@ import urlDecode from '../../utils/urlDecode';
 import * as ROUTES from '../../routes';
 
 export default function JobResults({ jobs }) {
+// Temp comment
   if (jobs.length === 0) {
     return null;
-// Temp comment
   }
 
   return (

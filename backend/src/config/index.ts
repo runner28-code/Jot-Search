@@ -1,4 +1,3 @@
-import "dotenv/config";
 
 const config = {
   port: process.env.PORT,
@@ -15,6 +14,7 @@ const config = {
   bullhornApiPassword: process.env.BULLHORN_API_PASSWORD,
 
   getroDatasetID: process.env.DATASET_GETRO,
+  bullhornDatasetID: process.env.DATASET_BULLHORN,
   mainDatasetID: process.env.DATASET_MAIN,
 
   sendgridKey: process.env.SENDGRID_KEY,

@@ -132,7 +132,6 @@ RenderHeader.propTypes = {
   type: PropTypes.string
 }
 
-function RenderInvite(loggedIn, companyData) {
   const role = AuthService.getUserRole();
   if( loggedIn && role === 'coordinator' ) {
     return(<>

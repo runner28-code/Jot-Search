@@ -70,7 +70,6 @@ export default function CandidateCard({ data, disableLink }) {
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{addressString}</p>
             </div>
-// Temp comment
             {/* Years Experience */}
             <div className='w-1/3 flex items-center'>
               <img
@@ -123,7 +122,6 @@ CandidateCard.propTypes = {
 // Disables link and interactivity if disableLink is true
 function LinkWrapper({ children, link, disableLink }) {
   const baseStyles = 'w-full flex mb-xl px-xxl-2 py-xxl-3 bg-white border border-disabled border-solid rounded-2xl remove-outline ';
-  if ( disableLink ) {
     return (
       <div className={baseStyles}>
         {children}

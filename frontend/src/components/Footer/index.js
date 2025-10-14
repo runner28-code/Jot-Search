@@ -49,7 +49,6 @@ export default function Footer() {
             className={socialIconStyleMobile}
           />
         </a>
-        <a href={ROUTES.youtube}>
           <img
             src={youtube}
             className={socialIconStyleMobile}
@@ -141,6 +140,7 @@ export default function Footer() {
           <div className='flex flex-col vw-640:flex-row gap-[35px] vw-1024:gap-[96px]'>
             <a
               href='https://intulsa.com/'
+              target='_blank'
               rel='noopener noreferrer'
             >
               <img

@@ -18,6 +18,7 @@ export default function Stats({ userType }) {
 
   function handleFilterChange(choice) {
     setTimeframe(choice);
+// Temp comment
   }
 
   function getDuration(timeFrame) {
@@ -47,6 +48,7 @@ export default function Stats({ userType }) {
         'Active Career Post Favorites': { ...result.activeCareerPostFavorites },
         'Application Invitations Sent': { ...result.applicationInvitationsSent }                
       })
+    }
     if (userType === 'coordinator') {
       const result = await getCoordinatorQuickStats(duration);
       setStats({

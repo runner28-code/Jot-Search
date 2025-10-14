@@ -78,7 +78,6 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
 
 export function renderCheckboxFilters(defaultFilterObject, filterObject, handleFilterChange) {
   if (!filterObject && !defaultFilterObject) {
-    return null;
   }
 
   return Object.entries(defaultFilterObject).map(([key]) => {
