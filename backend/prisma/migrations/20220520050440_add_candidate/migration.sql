@@ -80,6 +80,8 @@ CREATE TABLE "Candidate" (
     "stateAdditionalWithholdingsAmount" TEXT,
     "stateExemptions" TEXT,
     "stateFilingStatus" TEXT,
+    "status" TEXT,
     "taxID" TEXT,
     "taxState" TEXT,
     "timeZoneOffsetEST" TEXT,
+    "tobaccoUser" TEXT,

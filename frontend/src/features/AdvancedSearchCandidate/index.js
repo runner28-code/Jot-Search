@@ -11,6 +11,7 @@ import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGet
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
 import {
+  candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,
@@ -74,7 +75,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       return { filtersArr: searchFilters };
 
     } else if (tab === 'jobs') {
-      const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }

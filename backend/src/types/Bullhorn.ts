@@ -62,7 +62,6 @@ export type Job = {
     clientContact?: string;
     clientCorporationID?: string;
     date_added?: string;
-    date_closed?: string;
     date_end?: string;
     date_last_exported?: string;
     date_last_modified?: string;
@@ -277,3 +276,5 @@ export type Candidate = {
 
 export type Lead = {
     id: string;
+    address_address1?: string;
+    address_address2?: string;

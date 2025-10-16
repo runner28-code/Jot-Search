@@ -190,3 +190,5 @@ async function seedUsers() {
       {
         email: "company@aerovision.io",
         firstname: "Company",
+        lastname: "Test",
+        /* Password: 123456 */

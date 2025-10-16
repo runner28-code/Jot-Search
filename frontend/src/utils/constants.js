@@ -16,6 +16,7 @@ export const openJobStatuses = [
 ];
 
 export const stateCodeMap = {
+  Alabama: 'AL',
   Alaska: 'AK',
   Arizona: 'AZ',
   Arkansas: 'AR',
@@ -26,6 +27,7 @@ export const stateCodeMap = {
   Florida: 'FL',
   Georgia: 'GA',
   Hawaii: 'HI',
+// Temp comment
   Idaho: 'ID',
   Illinois: 'IL',
   Indiana: 'IN',

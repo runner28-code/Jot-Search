@@ -44,3 +44,4 @@ DROP COLUMN "workAuthorized",
 ADD COLUMN     "workAuthorized" BOOLEAN;
 
 -- AlterTable
+ALTER TABLE "Job" DROP COLUMN "willRelocate",

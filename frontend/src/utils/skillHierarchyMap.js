@@ -181,6 +181,7 @@ export const skills = [
   'Drone',
   'Dynamics NAV',
   'E-Commerce',
+  'Economic Development',
   'Editing',
   'EdTech',
   'Education',
@@ -332,3 +333,5 @@ export const skills = [
   'Research',
   'REST',
   'Retail',
+  'Retail Clothing',
+  'Risk Assessment',

@@ -81,7 +81,6 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
 
     employeeType: data.employeeType,
     experience: data.experience,
-    hourlyRate: data.hourlyRate,
     willRelocate: data.willRelocate,
     ethnicity: data.ethnicity,
     workAuthorized: data.workAuthorized,
@@ -108,3 +107,4 @@ export const parseBullhornJobToMain = (data: BhJob) => {
     skillList: data.skillList,
     companyId: `bh-${data.clientCorporationID}`,
     interviews: data.interviews,
+    onSite: data.onSite,

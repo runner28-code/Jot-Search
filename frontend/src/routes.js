@@ -80,3 +80,4 @@ export const APIjobApply = APIjobBase + '/apply';
 export const APIappliedJobs = APIjobBase + '/applied';
 export const APIInvitedJobs = APIjobBase + '/invited';
 export const APItoggleSaveJob = APIjobBase + '/save';
+export const APIsavedJobs = APIjobBase + '/savedJobs';

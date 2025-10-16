@@ -38,7 +38,6 @@ export default function Auth() {
         <Route
           path={ROUTES.applications}
           element={<Applications />} />
-// Temp comment
         <Route
           path={ROUTES.favorites}
           element={<Favorites />} />

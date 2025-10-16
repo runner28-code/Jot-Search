@@ -73,6 +73,7 @@ export class CandidateController {
     } catch (error) {
       return { message: error };
     }
+  }
 
   @Authorized()
   @Post("/update")
@@ -347,3 +348,6 @@ export class CandidateController {
   @Authorized()
   @Get("/saved")
   async savedCandidates(
+    @CurrentUser() authUser: User,
+    @QueryParam("candidate") candidate: string
+  ) {

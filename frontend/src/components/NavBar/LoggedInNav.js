@@ -161,7 +161,6 @@ function renderChoices(userType, handleClick) {
     choicesToRender = companyChoices;
   }
   else if ( userType === 'candidate' ) {
-// Temp comment
     choicesToRender = candidateChoices;
   }
   else { // fall back to guest choices

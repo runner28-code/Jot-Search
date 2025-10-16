@@ -24,12 +24,12 @@
 						"login"
 					],
 					"query": [
-						{
 							"key": "email",
 							"value": "donnie@aerovision.io"
 						},
 						{
 							"key": "password",
+							"value": "123456"
 						}
 					]
 				}

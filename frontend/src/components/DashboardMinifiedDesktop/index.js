@@ -23,7 +23,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
   if( location === 'companies' ) {
     return (<>
       <h1>Companies</h1>
-    </>)
   }
 }
 
@@ -72,6 +71,7 @@ function CareerHeader ({ location }) {
         <Link
           className='text-white underline basis-1/3'
           to={ROUTES.careers}
+        >Back</Link>
         <div className='basis-2/6'>
           <TypeTabs location={location}/>
         </div>

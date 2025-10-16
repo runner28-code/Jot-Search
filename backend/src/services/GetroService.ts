@@ -243,3 +243,5 @@ export class GetroService {
                         const { items, meta: { total } } = res.data;
                         if (!testMode) {
                             const newItems = items.map((item: any) => ({
+                                ...item,
+                                id: `gt-${item.id}`,

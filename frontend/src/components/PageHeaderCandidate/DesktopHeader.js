@@ -7,6 +7,7 @@ export default function DesktopHeader(props) {
     headerText,
     icon,
     IconComponent,
+    classOverride,
     containerClassOverride,
     colorizeStroke,
     dataSource,

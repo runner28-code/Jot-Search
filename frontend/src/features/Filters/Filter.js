@@ -6,7 +6,6 @@ import { MdLocationOn } from 'react-icons/md';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import Dropdown from '../../components/FilterDropdown';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 
 export default function Filter({ filterType, choices, chosen, handleFilterChange }) {
@@ -24,5 +23,6 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   }
   function handleChoiceClick(choice) {
     setShowDropdown(false);
+// Temp comment
     setSelected(choice);
     handleFilterChange(filterType, choice);

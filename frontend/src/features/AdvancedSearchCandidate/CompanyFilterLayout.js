@@ -7,6 +7,7 @@ export default function CompanyFilterLayout(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
+    clearFilters,
   } = props;
   const { width } = useWindowDimensions();
   return (
@@ -23,7 +24,6 @@ export default function CompanyFilterLayout(props) {
           className='text-white text-sm whitespace-nowrap'
           onClick={clearFilters}
         >
-          Clear All
         </button>
       </div>
     </div>

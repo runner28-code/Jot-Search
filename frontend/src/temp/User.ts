@@ -10,3 +10,4 @@ export type User = {
     level?: string;
 };
 
+export type LoginInfo = {

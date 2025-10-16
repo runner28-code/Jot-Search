@@ -85,3 +85,4 @@ export const IUSER = {
   numEmployees: "",
   revenue: "",
   dateFounded: "",
+  employeeType: "",

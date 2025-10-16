@@ -355,6 +355,7 @@ export class BullhornService {
         message: err,
       };
     }
+  }
 
   async getJobs(
     testMode = false,
@@ -825,3 +826,9 @@ export class BullhornService {
             "occupation",
             "owner",
             "pager",
+            "phone",
+            "phone2",
+            "phone3",
+            "preferredContact",
+            "primarySkills",
+            "priority",

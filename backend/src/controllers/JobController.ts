@@ -362,3 +362,6 @@ export class JobController {
   @Authorized()
   @Get("/applied")
   async getAppliedJobs(
+    @CurrentUser() authUser: User,
+    @QueryParam("candidate") candidate: string
+  ) {

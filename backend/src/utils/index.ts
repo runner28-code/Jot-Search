@@ -101,3 +101,4 @@ export const getFilterConditions = (
           determineCondition(
             opt.key,
             value,
+            specialHandlers,

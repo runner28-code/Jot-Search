@@ -46,6 +46,7 @@ export default function Candidate() {
     setLoading(false);
   }, []);
 
+  async function handleCandidateUpdate(updateObject) {
     console.log('candidateData', candidateData);
     console.log('updateObject', updateObject);
     const formattedUpdateObject = {};

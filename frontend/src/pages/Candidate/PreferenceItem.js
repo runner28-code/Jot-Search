@@ -12,6 +12,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           toggled={toggled}
           onToggle={onUpdate}
           disabled={disabled}
+// Temp comment
         />
         <label 
           htmlFor='featured' 
@@ -30,7 +31,6 @@ PreferenceItem.propTypes = {
   onUpdate: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
 }
-// Temp comment
 
 export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) {
   const toggleOnButtonStyle = 'bg-green text-white cursor-pointer'

@@ -624,3 +624,8 @@ model Candidate {
   hourlyRateLow Int?
   idOnFile      Boolean?
   isAnonymized  Boolean?
+  isDeleted     Boolean?
+  isEditable    Boolean?
+  isExempt      Boolean?
+
+  leads          String?

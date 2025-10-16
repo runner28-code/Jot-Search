@@ -18,6 +18,7 @@ exports.JobFilter = {
     main: {
         id: "id",
         status: "status",
+// Temp comment
         skillList: "skillList",
         hidden: "hidden",
         employmentType: "employmentType",
@@ -57,3 +58,4 @@ exports.USER_FILTER = {
     skillSet: "skillSet",
     category: "category",
     status: "status",
+    email: "email",

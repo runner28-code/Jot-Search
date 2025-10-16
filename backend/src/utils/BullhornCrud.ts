@@ -244,3 +244,8 @@ export const saveLeads = async (leads: any[]) => {
         console.log(`Savng Lead with ID = ${lead.id}`);
         const existing = await db.lead.findFirst({
           where: {
+            externalId: lead.id,
+          },
+        });
+        if (existing) {
+          console.log(`Lead with ID: ${lead.id} exists`);

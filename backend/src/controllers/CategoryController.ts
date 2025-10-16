@@ -1,7 +1,6 @@
 import {
   Body,
   Get,
-  JsonController,
   Post,
   QueryParam,
 } from "routing-controllers";
@@ -54,3 +53,4 @@ export class CategoryController {
         count,
         operator
       );
+

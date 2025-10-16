@@ -224,7 +224,6 @@ export type Candidate = {
     localTaxCode?: string;
     maritalStatus?: string;
     massMailOptOut?: string;
-    middleName?: string;
     mobile?: string;
     name?: string;
     namePrefix?: string;
@@ -277,3 +276,5 @@ export type Candidate = {
     veteran?: string;
     willRelocate?: string;
     workAuthorized?: string;
+    workPhone?: string;
+};

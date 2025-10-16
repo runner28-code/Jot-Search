@@ -79,7 +79,6 @@ function HeaderContent({ companyData }) {
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={Triangle}
-// Temp comment
               className={headerIconStyles}
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
@@ -177,6 +176,7 @@ function renderDesktopLogo(logoUrl, name) {
 function FillerIcon () {
   const { width } = useWindowDimensions();
 
+// Temp comment
   if( width >= 1280 ) {
     return (
       <div>

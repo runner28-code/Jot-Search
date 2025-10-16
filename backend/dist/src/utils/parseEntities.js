@@ -94,6 +94,7 @@ const parseBullhornJobToMain = (data) => {
         country_id: data.address_country_id,
         employmentType: data.employmentType,
         title: data.title,
+        willRelocate: data.willRelocate,
         yearsRequired: data.yearsRequired,
         status: data.status,
         skillList: data.skillList,

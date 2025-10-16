@@ -77,3 +77,4 @@ const setupCronJobs = async () => {
   });
 
   cron.schedule('0 */16 * * *', async () => {
+    try {

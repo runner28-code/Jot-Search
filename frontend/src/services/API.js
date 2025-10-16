@@ -148,7 +148,6 @@ export async function getIndividualCompany(id) {
       id
     }
   });
-  return data.company
 }
 
 export async function getCompanyById(id) {
@@ -334,4 +333,25 @@ export async function registerUser(userObject) {
   } catch (err) {
     console.log(err);
     throw err;
+  }
+}
+//* UPLOAD RESUME/AVATAR
+export async function uploadFile(folderType, file) {
+  console.log(`Uploading ${folderType}...`);
+  try {
+    const formData = new FormData();
+    formData.append('type', folderType);
+    formData.append('file', file);
+
+    const config = {
+      headers: {
+        'content-type': 'multipart/form-data',
+      },
+    }
+
+    const data = await API.post(ROUTES.APIupload, formData, config);
+    return normalizeData(data.data.file);
+  } catch (err) {
+    console.log('Resume Upload Error: ', err);
+    return err;
   }

@@ -30,6 +30,7 @@ const mockJobsData = [
     salaryRange: '$80k-$90k',
     location: 'Remote',
     listingAge: '1 month',
+    specialty: 'Sales & Biz Dev'
   },
 ];
 
@@ -56,6 +57,5 @@ export default function ReferralSearch() {
     const jobToAdd = choices.find(job => job.id === idToAdd);
 
     if (!jobToAdd) return;
-    const newFilteredChoices = filteredChoices.filter(job => job.id !== idToAdd);
     setCurrentChosen([ ...currentChosen, jobToAdd ]);
     setFilteredChoices(newFilteredChoices);

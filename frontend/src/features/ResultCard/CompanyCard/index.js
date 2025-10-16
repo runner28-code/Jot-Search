@@ -145,7 +145,6 @@ function MobileCard({ data, addressString, employeeString }) {
           {/* Title */}
           <p className='text-[2.1rem] font-spaceGrotesk font-semibold text-charcoal leading-none mt-xs'>{data.name}</p>
           {/* First row icons */}
-// Temp comment
           <div className='w-full flex items-center mt-m'>
             {/* Location */}
             <div className='w-1/3 flex items-center'>
@@ -156,6 +155,7 @@ function MobileCard({ data, addressString, employeeString }) {
             </div>
             {/* Number of Employees */}
             <div className='w-2/3 flex items-center'>
+// Temp comment
               <EmployeesIcon className='fill-midGrey h-11 w-12 mr-s' />
               <p className='text-textBlack text-xs'>{employeeString}</p>
             </div>

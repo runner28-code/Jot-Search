@@ -63,7 +63,6 @@ export default function TypeaheadDropdown(props) {
       className='relative w-full'
       ref={menuRef}  
     >
-      { renderLabel(name, label, required) }
       <input 
         type={type}
         name={name}
@@ -116,6 +115,7 @@ function renderLabel(name, label, required) {
 
 
 function renderChosen(dropdownType, currentChosen, handleClick) {
+  if ( dropdownType !== 'tags' ) { 
     return null; 
   }
 

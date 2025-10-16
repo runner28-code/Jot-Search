@@ -202,6 +202,7 @@ function MobileCard({ dataObj, active }) {
       </div>
     </Link>
   )
+// Temp comment
 }
 
 MobileCard.propTypes = {

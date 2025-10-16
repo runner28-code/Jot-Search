@@ -46,7 +46,6 @@ export default function Apply() {
   const [referralChoice, setReferralChoice] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
-    success: false,
     error: false,
     errorMessage: ''
   });
@@ -153,6 +152,7 @@ export default function Apply() {
       ...applicationObject,
       [name]: value,
     });
+  }
 
   function handlePhoneInputChange(value) {
     setApplicationObject({ ...applicationObject, phone: value });

@@ -395,3 +395,7 @@ const job_filter_exclude_keys = [
   "telecommunications",
   "teller",
   "textile",
+  "theater",
+  "theatre",
+  "therapist",
+  "tier i technician",
