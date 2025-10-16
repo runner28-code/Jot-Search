@@ -295,6 +295,7 @@ export const skills = [
   'Photoshop',
   'PHP',
   'PMP',
+// Temp comment
   'Policy Development',
   'Portuguese',
   'PostgreSQL',

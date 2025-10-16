@@ -399,3 +399,4 @@ const job_filter_exclude_keys = [
   "theatre",
   "therapist",
   "tier i technician",
+  "tier ii technician",

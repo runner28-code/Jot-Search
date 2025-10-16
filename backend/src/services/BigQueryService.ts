@@ -25,6 +25,7 @@ export class BigQueryService {
                     ${query}
                     WHERE ${condition}
                 `;
+            }
             if (count) {
                 query = `
                     ${query}
@@ -55,3 +56,4 @@ export class BigQueryService {
           
             const query = `
               INSERT INTO \`${dataset}.${table}\`
+              (${keys.join(', ')})

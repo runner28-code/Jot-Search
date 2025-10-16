@@ -35,7 +35,6 @@ export type Company = {
     name?: string,
     notes?: string,
     numEmployees?: string,
-    numOffices?: string,
     ownerShip?: string,
     phone?: string,
     revenue?: string,
@@ -224,6 +223,7 @@ export type Candidate = {
     localTaxCode?: string;
     maritalStatus?: string;
     massMailOptOut?: string;
+    middleName?: string;
     mobile?: string;
     name?: string;
     namePrefix?: string;

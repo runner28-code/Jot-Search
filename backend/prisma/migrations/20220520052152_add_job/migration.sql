@@ -1,6 +1,5 @@
 -- CreateTable
 CREATE TABLE "Job" (
-    "id" TEXT NOT NULL,
     "externalId" TEXT,
     "description" TEXT,
     "address1" TEXT,
@@ -14,6 +13,7 @@ CREATE TABLE "Job" (
     "willRelocate" TEXT,
     "yearsRequired" TEXT,
     "status" TEXT,
+    "skillList" TEXT,
     "locations" TEXT,
     "companyId" TEXT,
     "interviews" TEXT,

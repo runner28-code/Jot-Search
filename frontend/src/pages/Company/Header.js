@@ -108,7 +108,6 @@ HeaderContent.propTypes = {
     state: PropTypes.string,
     numEmployees: PropTypes.number,
   })
-}
 
 export default function Header({ companyData }) {
   return (
@@ -176,7 +175,6 @@ function renderDesktopLogo(logoUrl, name) {
 function FillerIcon () {
   const { width } = useWindowDimensions();
 
-// Temp comment
   if( width >= 1280 ) {
     return (
       <div>

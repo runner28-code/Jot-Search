@@ -148,6 +148,7 @@ export async function getIndividualCompany(id) {
       id
     }
   });
+  return data.company
 }
 
 export async function getCompanyById(id) {

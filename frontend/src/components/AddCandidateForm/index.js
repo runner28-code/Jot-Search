@@ -1,7 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
-// Temp comment
 import FormInput from '../FormInput';
 import ChoiceTag from '../ChoiceTag';
 import { 

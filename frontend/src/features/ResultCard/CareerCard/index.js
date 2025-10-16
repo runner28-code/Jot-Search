@@ -116,7 +116,6 @@ function DesktopCard({ dataObj, active }) {
               className='fill-midGrey h-11 w-8 mr-5' />
             <p className='text-textBlack'>{data.onSite}</p>
           </div>
-          {/* Posting age */}
           <div className='w-1/3 flex items-center pr-4'>
             <img
               src={postingAgeIcon}
@@ -202,7 +201,6 @@ function MobileCard({ dataObj, active }) {
       </div>
     </Link>
   )
-// Temp comment
 }
 
 MobileCard.propTypes = {

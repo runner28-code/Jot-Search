@@ -12,7 +12,6 @@ export default function AssistanceCard() {
         />
         <h5 className='text-h5 font-medium font-spaceGrotesk text-charcoal ml-8'>InTulsa assistance</h5>
       </div>
-// Temp comment
       {/* Body */}
       <div className='text-black70%'>
         <p>Please email us to perform changes to your InTulsa Talent Network account</p>
@@ -31,6 +30,7 @@ export default function AssistanceCard() {
         rel='noopener noreferrer'
       >
         Make a request
+// Temp comment
       </a>
     </div>
   )

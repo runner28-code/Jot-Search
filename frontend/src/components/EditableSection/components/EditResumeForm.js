@@ -21,7 +21,6 @@ export default function EditResumeForm({ handleChange }) {
         htmlFor='resume'
       >
         Upload New Resume:
-// Temp comment
       </label>
       <input
         type='file'

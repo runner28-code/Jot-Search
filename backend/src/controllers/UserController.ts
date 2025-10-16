@@ -46,6 +46,7 @@ export class UserController {
       const token = CreateJwtToken(data);
       return {
         result,
+        token,
       };
     }
     return { result, error };
@@ -80,7 +81,6 @@ export class UserController {
       };
     } else {
       return {
-        result: false,
         error: `Invalid user type specified for candidate-only register route: ${user.role}`,
       }
     }

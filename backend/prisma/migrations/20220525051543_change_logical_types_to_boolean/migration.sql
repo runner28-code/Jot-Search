@@ -4,7 +4,6 @@
   - The `idOnFile` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `isAnonymized` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `isDeleted` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
-  - The `isEditable` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `isExempt` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `paperWorkOnFile` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `tobaccoUser` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.

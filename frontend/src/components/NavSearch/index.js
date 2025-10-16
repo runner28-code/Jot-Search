@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -44,7 +43,6 @@ export default function NavSearch({ placeholder }) {
       return { filtersArr: searchFilters };
     }
     else if (tab === 'jobs') {
-      const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
       return { filtersArr: searchFilters };
     } else {
       return { filterKey: 'name', filterValue: searchTerm }

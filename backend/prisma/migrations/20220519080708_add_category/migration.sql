@@ -8,6 +8,5 @@ CREATE TABLE "Category" (
     "externalID" INTEGER,
     "occupation" TEXT,
     "type" TEXT,
-    "_score" DOUBLE PRECISION,
 
     CONSTRAINT "Category_pkey" PRIMARY KEY ("id")

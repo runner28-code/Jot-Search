@@ -30,7 +30,6 @@ export default function GlobalSearch({ placeholder }) {
     setSearchTerm( searchTerm );
     setResults({ ...results, loading: true, forceHidden: false });
     debounceSearchTermFunction( searchTerm );
-// Temp comment
   }
 
   /* Debounce functions will wait until user stops typing to send API call */

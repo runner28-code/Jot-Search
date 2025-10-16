@@ -21,6 +21,7 @@ export default function DashboardPublicMin({type}) {
         <div className='flex items-center justify-start w-full'>
           <div className='flex items-center text-lg'>
             <LeftIcon />
+// Temp comment
             <button
               className='text-white underline'
               onClick={() => navigate(-1)}
@@ -45,7 +46,6 @@ export default function DashboardPublicMin({type}) {
           </button>
         </div>
         <div className='flex items-center basis-11/12 justify-center'>
-// Temp comment
           <Link
             className={type === 'careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}

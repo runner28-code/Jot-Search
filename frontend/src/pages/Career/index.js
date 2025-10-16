@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getJobById } from '../../services/API';
 import PropTypes from 'prop-types';
@@ -140,7 +141,6 @@ Notification.propTypes = {
   id: PropTypes.string,
   add: PropTypes.string
 }
-
 function MailButton({ text, email, company, id, add }) {
   const mail = 'mailto:' + email + '?subject=';
   const subject = company + ' role ' + id + ' ' + add;

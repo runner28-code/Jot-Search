@@ -34,6 +34,7 @@ function NavBarLayout() {
         <Link to={ROUTES.root}>
           <img
             className='my-8 w-3/4'
+// Temp comment
             src={inTulsaLogoText}
             alt='logo'
           />

@@ -74,7 +74,6 @@ export default function NavSearchMobile({ placeholder }) {
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
     setForceHidden(true);
-// Temp comment
   };
 
   useEffect(() => {
@@ -115,7 +114,6 @@ export default function NavSearchMobile({ placeholder }) {
 }
 
 NavSearchMobile.propTypes = {
-  placeholder: PropTypes.string
 }
 
 function renderResultsContainer( results, searchTerm ) {

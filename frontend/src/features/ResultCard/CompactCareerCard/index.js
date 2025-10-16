@@ -63,7 +63,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
           : 
           <FavoriteButton
             type={'job'}
-// Temp comment
             data={data}
             isFavoriteOverride={isFavoriteOverride} />
       }

@@ -46,6 +46,7 @@ export default function Apply() {
   const [referralChoice, setReferralChoice] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
+    success: false,
     error: false,
     errorMessage: ''
   });
