@@ -63,7 +63,6 @@ export default function NavSearchMobile({ placeholder }) {
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
-    setForceHidden( false );
   }
 
   /* Clear state on page change */
@@ -114,6 +113,7 @@ export default function NavSearchMobile({ placeholder }) {
 }
 
 NavSearchMobile.propTypes = {
+  placeholder: PropTypes.string
 }
 
 function renderResultsContainer( results, searchTerm ) {

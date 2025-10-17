@@ -28,7 +28,6 @@ const mockCandidateData = [
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lee_5_swk4qj.webp', // Missing from Bullhorn Schema
     occupation: 'Owner / President',
     companyName: 'Aerovision',
-// Temp comment
     address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
@@ -46,7 +45,6 @@ const mockCandidateData = [
     companyName: 'Aerovision',
     address_city: 'Tulsa',
     address_state: 'OK',
-    primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma',
     isLooking: false,
     isWarm: false,

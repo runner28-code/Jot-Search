@@ -28,7 +28,6 @@ const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
-  guest: ['jobs', 'companies'],
 }
 
 function useTabState(disabledTabs, userType, pathname) {

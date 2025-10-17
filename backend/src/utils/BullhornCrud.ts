@@ -251,3 +251,4 @@ export const saveLeads = async (leads: any[]) => {
           console.log(`Lead with ID: ${lead.id} exists`);
           return -1;
         }
+        const leadData = { ...lead };

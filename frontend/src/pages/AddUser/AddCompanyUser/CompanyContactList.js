@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-// Temp comment
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany }) => {
@@ -8,6 +7,7 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
 
   const handleContactClick = (contact) => {
     if (selectedContacts.includes(contact)) {
+// Temp comment
       setSelectedContacts(selectedContacts.filter((c) => c !== contact));
     } else {
       setSelectedContacts([...selectedContacts, contact]);

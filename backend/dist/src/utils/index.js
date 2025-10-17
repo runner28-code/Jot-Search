@@ -48,7 +48,6 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
             WHERE ${condition}
         `;
         const options = {
-// Temp comment
             query: query,
             location: 'US',
         };

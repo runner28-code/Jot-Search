@@ -85,7 +85,6 @@ export default function RegistrationForm(loggedIn) {
       const resumeResponse = await uploadFile('resumes', formObj.resume);
       if ( resumeResponse.result === false ) {
         setErrors(['resume']);
-// Temp comment
         setErrorBlock('There was an error uploading your resume.');
         setSubmissionObject({
           loading: false,

@@ -53,5 +53,4 @@ export default function CareerFavorite () {
             View All
         </Link>
       </div>
-    </div>
   )

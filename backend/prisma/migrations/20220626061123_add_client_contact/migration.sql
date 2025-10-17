@@ -41,7 +41,6 @@ CREATE TABLE "ClientContact" (
     "isDayLightSavings" BOOLEAN,
     "isDeleted" BOOLEAN,
     "lastName" TEXT,
-    "leads" TEXT,
     "middleName" TEXT,
     "mobile" TEXT,
     "name" TEXT,

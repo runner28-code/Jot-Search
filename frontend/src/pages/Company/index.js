@@ -109,7 +109,6 @@ export default function Company() {
           loggedIn={loggedIn}
           companyData={companyData}
         />
-// Temp comment
       </div>
     </div>
   )
@@ -157,6 +156,7 @@ function renderCompanyDescription(description, textStyles) {
     </>)
   }
   return (
+// Temp comment
     <div className={textStyles}>
       {description}
     </div>

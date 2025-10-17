@@ -32,6 +32,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
       baseStyles={baseStyles}
       inputHeight={inputHeight}
     />
+// Temp comment
   </>
 }
 
@@ -42,7 +43,6 @@ EditSkillsForm.defaultProps = {
 EditSkillsForm.propTypes = {
   skills: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired,
-// Temp comment
 }
 
 function renderChosen(skills, onChange) {

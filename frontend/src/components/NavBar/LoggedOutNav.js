@@ -13,6 +13,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function NavBar() {
   const { width } = useWindowDimensions();
 
+  if ( width < 1280 ) {
     return <MobileNavBarLayout />
   } else {
     return <DesktopNavBarLayout />
@@ -60,6 +61,7 @@ function DesktopNavBarLayout() {
         <Link to={ROUTES.careers}>
           <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Find Careers</span>
         </Link>
+// Temp comment
         <Link to={ROUTES.companies}>
           <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Browse Companies</span>
         </Link>

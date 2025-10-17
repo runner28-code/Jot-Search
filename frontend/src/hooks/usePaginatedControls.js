@@ -4,7 +4,6 @@ import { PaginationCounts } from '../components/Pagination/PaginationCounts';
 import { usePagination } from './usePagination'
 
 export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoading, prefetchFunc }) => {
-// Temp comment
   const { totalPages, nextPage, prevPage, startCount, endCount } = usePagination({ total, itemsPerPage, page, setPage })
 
   const navStyles = 'flex flex-col space-y-4 items-center justify-center py-6 max-w-400';
@@ -59,7 +58,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
                 key={page - 1}
                 page={page - 1}
                 setPage={setPage}
-                prefetchFunc={prefetchFunc}
               >
                 {page - 1}
               </PaginationButton>

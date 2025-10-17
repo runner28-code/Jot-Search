@@ -35,7 +35,6 @@ const parseBullhornCandidateToUser = (data) => {
         employeeType: data.employeeType,
         experience: data.experience,
         hourlyRate: data.hourlyRate,
-// Temp comment
         willRelocate: data.willRelocate,
         ethnicity: data.ethnicity,
         workAuthorized: data.workAuthorized,
@@ -99,7 +98,6 @@ const parseBullhornJobToMain = (data) => {
         yearsRequired: data.yearsRequired,
         status: data.status,
         skillList: data.skillList,
-        companyId: `bh-${data.clientCorporationID}`,
         interviews: data.interviews,
         onSite: data.onSite,
         salary: data.salary,

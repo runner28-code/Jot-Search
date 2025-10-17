@@ -33,6 +33,7 @@ export default function JoinTalentNetwork() {
         </div>
       </section>
     </>)
+// Temp comment
   }
   return (<>
     {/* Join Hero and call-to-action */}

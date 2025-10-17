@@ -44,7 +44,6 @@ function renderEditIcon(candidateData, setEditMode) {
   if ( !isProfileOwner && !isCoordinator ) {
     return null;
   }
-  const { width } = useWindowDimensions();
   if( width <= 990 ) {
     return (
       <button 

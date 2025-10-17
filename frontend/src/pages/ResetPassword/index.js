@@ -13,12 +13,12 @@ export default function ResetPassword() {
   const [match, setMatch] = useState('');
   const [success, setSuccess] = useState('');
 
+// Temp comment
   const queryParams = new URLSearchParams(window.location.search);
   const token = queryParams.get('token');
 
   const handlePassword = (event) => {
     setPassword(event.target.value);
-// Temp comment
   }
   const handleConfirmPassword = (event) => {
     setConfirmPassword(event.target.value);
