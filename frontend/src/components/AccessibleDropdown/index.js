@@ -192,6 +192,7 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
   let listItemStyles = 'cursor-pointer flex items-center justify-between ';
   if ( stylesObject.listItemStyles ) {
     listItemStyles += stylesObject.listItemStyles;
+  }
 
   return Object.entries(choiceObject).map( ([key, value], index) => {
     if ( !value ) {

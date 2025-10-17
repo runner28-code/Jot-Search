@@ -252,3 +252,5 @@ export const saveLeads = async (leads: any[]) => {
           return -1;
         }
         const leadData = { ...lead };
+        Object.keys(leadData).forEach((key) => {
+          if (expludeFields.includes(key)) {

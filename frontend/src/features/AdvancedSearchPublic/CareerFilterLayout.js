@@ -20,6 +20,7 @@ const dropDownFiltersCandidate = [
 
 export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
+  const { width } = useWindowDimensions();
   const {
     defaultFilterObject,
     filterObject,
@@ -64,4 +65,3 @@ export default function CareerFilterLayout(props) {
         </button>
       </div>
     </div>
-  );

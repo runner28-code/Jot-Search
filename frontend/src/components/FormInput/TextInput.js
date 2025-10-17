@@ -11,6 +11,7 @@ export default function TextInput({type, name, placeholder, label, value, requir
   }
 
   return (
+    <div className='w-full'>
       { renderLabel( label, required, name ) }
       { renderInput( name, type, baseStyles, placeholder, value, onChange, handleChange, disabled ) }
     </div>
@@ -20,7 +21,6 @@ export default function TextInput({type, name, placeholder, label, value, requir
 TextInput.propTypes = {
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  placeholder: PropTypes.string,
   label: PropTypes.string,
   value: PropTypes.string,
   required: PropTypes.bool,

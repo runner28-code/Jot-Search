@@ -148,7 +148,6 @@ const job_filter_exclude_keys = [
     "externship",
     "fabricator",
     "faculty",
-// Temp comment
     "family",
     "field coach",
     "field service",

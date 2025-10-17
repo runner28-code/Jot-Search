@@ -351,3 +351,4 @@ export class CandidateController {
     @CurrentUser() authUser: User,
     @QueryParam("candidate") candidate: string
   ) {
+    return await getSavedCandidates(candidate || authUser.id!);

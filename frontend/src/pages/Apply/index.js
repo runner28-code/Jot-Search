@@ -26,7 +26,6 @@ const renderError = (error) => {
   if ( error ) {
     return ( <div className='text-error mt-4'>
       <p>{typeof error === 'string' ? error.toUpperCase() : 'An error has occurred when trying to process your request'}</p>
-      <a href="mailto:talentnetwork@intulsa.com">Your application has failed. Please try again later, or reach out to us for support.</a>
     </div> )
   } else {
     return null;
@@ -73,7 +72,6 @@ export default function Apply() {
       // Turn API IDs into appropriate values
       candidateData.ethnicity = ethnicityMap[candidateData.ethnicity || 'U']; // 'U' is default ("Prefer not to say")
       candidateData.gender = genderMap[candidateData.gender || 'U']; // 'U' is default ("Prefer not to say")
-// Temp comment
       candidateData.disability = disabilityMap[candidateData.disability || 'U']; // 'U' is default ("Prefer not to say")
       candidateData.veteran = veteranStatusMap[candidateData.veteran || 'U']; // 'U' is default ("Prefer not to say")
       // If resume exists, select "Use Existing Resume" checkbox by default

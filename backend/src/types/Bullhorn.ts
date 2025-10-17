@@ -76,7 +76,6 @@ export type Job = {
     feeArrangement?: string;
     hoursOfOperation?: string;
     hoursPerWeek?: string;
-    interviews?: string;
     isClientEditable?: string;
     isDeleted?: string;
     isInterviewRequired?: string;
@@ -279,3 +278,4 @@ export type Lead = {
     id: string;
     address_address1?: string;
     address_address2?: string;
+    address_city?: string;

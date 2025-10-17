@@ -80,5 +80,6 @@ function renderCardImage(data) {
   } else {
     return <img
       className=''
+      src={data.company_logo}
     />
   }

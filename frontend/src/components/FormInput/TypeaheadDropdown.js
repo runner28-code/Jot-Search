@@ -98,6 +98,7 @@ TypeaheadDropdown.propTypes = {
 
 function renderLabel(name, label, required) {
   if ( !label ) {
+// Temp comment
     return null;
   }
   if( required ) {

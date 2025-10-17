@@ -63,6 +63,7 @@ export default function NavSearchMobile({ placeholder }) {
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
+    setForceHidden( false );
   }
 
   /* Clear state on page change */
@@ -149,7 +150,6 @@ function renderResults( results ) {
     {candidates && <CandidateResults candidates={ candidates } /> }
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
-  </>)
 }
 
 const defaultStylesObject = {

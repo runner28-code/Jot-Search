@@ -21,6 +21,7 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         candidateData={candidateData}
         handleCandidateUpdate={handleCandidateUpdate}
         setEditMode={setEditMode}
+// Temp comment
         iconStyles={iconStyles}
         editMode={editMode}
         role={role}
@@ -44,6 +45,7 @@ function renderEditIcon(candidateData, setEditMode) {
   if ( !isProfileOwner && !isCoordinator ) {
     return null;
   }
+  const { width } = useWindowDimensions();
   if( width <= 990 ) {
     return (
       <button 

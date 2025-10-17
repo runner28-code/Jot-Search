@@ -168,7 +168,6 @@ DesktopCard.propTypes = {
     }).isRequired,
     categoryString: PropTypes.string,
     addressString: PropTypes.string,
-// Temp comment
     salaryString: PropTypes.string,
     postingAge: PropTypes.string,
     role: PropTypes.string,
@@ -233,6 +232,7 @@ MobileCard.propTypes = {
 
 function renderCardImage(data) {
   if ( !data.company_logo ) {
+// Temp comment
     return <CareerIcon className='h-28 w-full fill-royalBlue' />
   } else {
     return <img

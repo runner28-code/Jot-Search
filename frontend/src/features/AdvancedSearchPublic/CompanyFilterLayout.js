@@ -10,6 +10,7 @@ export default function CompanyFilterLayout(props) {
     clearFilters,
   } = props;
   const { width } = useWindowDimensions();
+// Temp comment
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[25px]'}>
@@ -21,7 +22,6 @@ export default function CompanyFilterLayout(props) {
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
         <button
-// Temp comment
           className='text-white text-sm whitespace-nowrap'
           onClick={clearFilters}
         >

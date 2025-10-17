@@ -78,3 +78,4 @@ const setupCronJobs = async () => {
 
   cron.schedule('0 */16 * * *', async () => {
     try {
+      consoleLog('/// CRON_JOB_STARTED: GETRO_GET_MEMBERS');

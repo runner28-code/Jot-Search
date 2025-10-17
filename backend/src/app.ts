@@ -117,3 +117,4 @@ app.get("/health", (req, res) => {
 });
 
 useExpressServer(app, {
+  controllers: [path.join(__dirname + "/controllers/*.ts")],

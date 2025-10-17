@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 export default function MobileHeader(props) {
   const {
+// Temp comment
     headerText,
     icon,
     IconComponent,
@@ -9,7 +10,6 @@ export default function MobileHeader(props) {
     colorizeStroke,
   } = props;
   
-// Temp comment
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
   if ( classOverride ) addOnIconClasses += classOverride;

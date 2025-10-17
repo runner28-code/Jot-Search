@@ -30,7 +30,6 @@ function App() {
             <Route
               path={ROUTES.signup}
               element={<SignUp />} />
-            <Route
               path={ROUTES.login}
               element={<Login />} />
             <Route
@@ -42,6 +41,7 @@ function App() {
             <Route
               path={ROUTES.companies}
               element={<Companies />} />
+            <Route
               path={`${ROUTES.careers}/:id`}
               element={<Career />} />
             <Route

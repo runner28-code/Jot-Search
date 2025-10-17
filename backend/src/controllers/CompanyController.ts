@@ -305,3 +305,4 @@ export class CompanyController {
 
     const result = (await BigQueryService.selectQuery(
       DATASET_MAIN,
+      Tables.JOINED_COMPANIES,

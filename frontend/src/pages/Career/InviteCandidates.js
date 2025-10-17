@@ -42,7 +42,6 @@ export default function InviteCandidates({ job }) {
           className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">
           <span>{item.label}</span>
           <button
-// Temp comment
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs'
             onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
@@ -108,7 +107,6 @@ function itemRenderer({ option, onClick, disabled }) {
         {avatarUrl ?
           <img
             className='w-20 h-20'
-            src={avatarUrl}
             alt='Candidate Avatar' />
           : <Initials name={option.label} />
         }

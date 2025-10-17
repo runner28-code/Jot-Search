@@ -80,6 +80,7 @@ model Lead {
   email2                String?
   email3                String?
   fax                   String?
+  fax2                  String?
   fax3                  String?
   firstName             String?
   isAnonymized          Boolean?
@@ -465,7 +466,6 @@ model GetroJobInfo {
   discarded             Boolean?
   employment_types      String[]
   expires_at            DateTime?
-  job_functions         String?
   liked                 Boolean?
   locations             String?
   organization_domain   String?
@@ -628,3 +628,4 @@ model Candidate {
   isExempt      Boolean?
 
   leads          String?
+  maritalStatus  String?

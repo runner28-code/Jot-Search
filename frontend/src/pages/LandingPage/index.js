@@ -43,6 +43,7 @@ export default function LandingPage() {
       <FeaturedJobs />
       {/* Featured Companies */}
       { isDesktop ? <FeaturedCompanies /> : <FeaturedCompaniesMobile />}
+      { isDesktop && <JoinTalentNetwork /> }
       { isDesktop ? <BusinessBooming /> : <BusinessBoomingMobile />}
     </main>
   )
@@ -89,7 +90,6 @@ function renderColorShapes()  {
   if( width < 0 ) {
     return (
       <div className='w-full'>
-        <ColorShapes />
       </div>
     )
   }

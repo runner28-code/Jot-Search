@@ -21,6 +21,7 @@ export type User = {
   seniority?: string;
   workspace?: string;
   referredBy?: string;
+  roles?: string;
 
   description?: string;
   phone?: string;
@@ -60,7 +61,6 @@ export const IUSER = {
   role: "",
   address1: "",
   address2: "",
-  city: "",
   state: "",
   zip: "",
   resume: "",
@@ -85,3 +85,5 @@ export const IUSER = {
   revenue: "",
   dateFounded: "",
   employeeType: "",
+  experience: "",
+  hourlyRate: "",

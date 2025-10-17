@@ -27,3 +27,4 @@ export const useGetCandidates = ({ count, page, fields, filtersArr, enabled = tr
 }
 
 const getCandidatesKey = ({filtersArr, count, page}) => {
+  return ['candidates', {filtersArr, count, page}];

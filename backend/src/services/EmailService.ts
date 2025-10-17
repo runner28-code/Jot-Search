@@ -8,7 +8,6 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
   const from = config.mailSenderEmail || "donnie@aerovision.io";
   const html = await ejs.renderFile<string>(path.join(__dirname, `../templates/${template}.ejs`), data);
   let message = { from, to, subject, html };
-  const msg = { ...message, text: 'iDENTIFY'};
 
   try {
       await sendgrid.send(msg);
@@ -54,6 +53,7 @@ export const sendCandidatesToEmployers = async (candidates: string[], employers_
   try {
     await sendEmail(employers_emails, 'List of candidates', 'list-of-candidates', {
       candidates: candidates,
+    });
     return true;
   } catch (error: any) {
     console.log('Error during sending candidates list to employers');

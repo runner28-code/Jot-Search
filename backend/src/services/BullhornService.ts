@@ -832,3 +832,5 @@ export class BullhornService {
             "preferredContact",
             "primarySkills",
             "priority",
+            "referredByPerson",
+            "reportToPerson",
