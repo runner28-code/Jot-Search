@@ -10,13 +10,13 @@ import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 
 export default function ResultContainer(props) {
   const {
+// Temp comment
     results,
     loading,
     type,
     limit,
     header, 
     active,
-// Temp comment
     compact = false,
     isFavoriteOverride = null,
     agoText = null,

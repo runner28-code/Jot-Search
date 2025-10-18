@@ -61,6 +61,5 @@ export default function DashboardPublicMin({type}) {
           </Link>
         </div>
       </div>
-// Temp comment
     </div>
   )

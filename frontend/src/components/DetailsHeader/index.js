@@ -16,8 +16,8 @@ export default function DetailsHeader({ type, source }) {
       break;
     case 'career':
     default:
-      Icon = CareerIcon;
 // Temp comment
+      Icon = CareerIcon;
       break;
   }
   const titleCasedType = type.charAt(0).toUpperCase() + type.slice(1);

@@ -1,4 +1,3 @@
-// Temp comment
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -9,5 +8,4 @@ export default function ViewAllLink({ href, text }) {
       className='text-md text-royalBlue font-bold'
     >
       {`${text} >`}
-    </Link>
   )

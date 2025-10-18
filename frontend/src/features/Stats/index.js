@@ -69,7 +69,6 @@ export default function Stats({ userType }) {
           className='relative'
         >
           <TimeframeFilter
-            choices={statFilterChoices}
             timeframe={timeframe}
             handleFilterChange={handleFilterChange}
           />

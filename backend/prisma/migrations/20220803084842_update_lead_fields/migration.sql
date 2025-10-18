@@ -19,7 +19,6 @@ ADD COLUMN     "employmentPreference" TEXT[];
 
 -- AlterTable
 ALTER TABLE "Lead" DROP COLUMN "address_country_id",
-ADD COLUMN     "address_country_id" INTEGER,
 DROP COLUMN "category",
 ADD COLUMN     "category" JSONB,
 DROP COLUMN "clientCorporation",

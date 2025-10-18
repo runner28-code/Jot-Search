@@ -30,7 +30,6 @@ exports.JobFilter = {
         companyId: "companyId",
     },
 };
-exports.CompanyFilter = {
     bullhorn: {
         name: "name",
         city: "address_city",

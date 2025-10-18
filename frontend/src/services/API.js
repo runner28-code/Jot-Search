@@ -14,7 +14,6 @@ API.interceptors.request.use(
   function (config) {
     const token = localStorage.getItem('id_token');
     if (token) {
-      config.headers['Authorization'] = 'Bearer ' + token;
     }
     return config;
   },
@@ -209,7 +208,6 @@ export async function getJobs(filters, count, operator, page) {
 }
 
 export async function getJobsFull(filters, count, operator, page) {
-// Temp comment
   const filtersObj = filtersArrToObj(filters)
 
   if (filtersObj.expertise) {

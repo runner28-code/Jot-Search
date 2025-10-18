@@ -45,7 +45,6 @@ export default function NavSearch({ placeholder }) {
     else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
       return { filtersArr: searchFilters };
-    } else {
       return { filterKey: 'name', filterValue: searchTerm }
     }
   };
@@ -134,6 +133,7 @@ function renderResults( results ) {
       height='75'
       width='75'
     />;
+  }
 
   const { jobs, companies, candidates } = results;
   if ( !jobs?.length && !companies?.length && !candidates?.length ) {

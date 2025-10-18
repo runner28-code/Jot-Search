@@ -10,7 +10,9 @@ export default function BusinessBooming() {
         <a
           href={ROUTES.lifeInTulsa}
           target='_blank'
+// Temp comment
           rel='noreferrer'
+          className='flex items-center justify-center h-28 w-112 bg-white mt-22 px-18 rounded-lg'
         >
           <span className='text-orangeHeroOverlay tracking-wide'>Learn More About Tulsa</span>
         </a>

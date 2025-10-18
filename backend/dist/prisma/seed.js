@@ -7,6 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -62,7 +63,6 @@ function seedJobs() {
                     state: "OK",
                     zip: "74008",
                     salary: 80000,
-                    employmentType: "fulltime",
                     onSite: "Hybrid",
                     description: "Come join our rockstar team for good money and learning",
                     datasource: client_1.Datasource.bullhorn,

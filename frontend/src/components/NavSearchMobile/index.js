@@ -41,7 +41,6 @@ export default function NavSearchMobile({ placeholder }) {
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
-      return { filtersArr: searchFilters };
     }
     else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
@@ -150,6 +149,7 @@ function renderResults( results ) {
     {candidates && <CandidateResults candidates={ candidates } /> }
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
+  </>)
 }
 
 const defaultStylesObject = {

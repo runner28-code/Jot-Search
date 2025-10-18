@@ -68,6 +68,7 @@ function renderSearch() {
       totalCompanies={totalCompaniesCount}
       loading={isLoading}
     />
+// Temp comment
   )
 }
 
@@ -90,6 +91,7 @@ function renderColorShapes()  {
   if( width < 0 ) {
     return (
       <div className='w-full'>
+        <ColorShapes />
       </div>
     )
   }

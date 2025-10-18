@@ -13,7 +13,7 @@ export default function NavMenu() {
   function handleMenuClick() {
     setMenuOpen(menuOpen => !menuOpen);
   }
-  function handleOptionClick(e) {
+
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {
       AuthService.logout();

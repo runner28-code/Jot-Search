@@ -97,7 +97,6 @@ export default function InviteCandidates({ job }) {
 }
 
 function itemRenderer({ option, onClick, disabled }) {
-  const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''
   return (
     <div
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`}
@@ -107,6 +106,7 @@ function itemRenderer({ option, onClick, disabled }) {
         {avatarUrl ?
           <img
             className='w-20 h-20'
+            src={avatarUrl}
             alt='Candidate Avatar' />
           : <Initials name={option.label} />
         }
