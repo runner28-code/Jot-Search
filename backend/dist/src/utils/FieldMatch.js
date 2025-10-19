@@ -30,6 +30,7 @@ exports.JobFilter = {
         companyId: "companyId",
     },
 };
+exports.CompanyFilter = {
     bullhorn: {
         name: "name",
         city: "address_city",
@@ -49,7 +50,6 @@ exports.USER_FILTER = {
     firstname: "firstname",
     lastname: "lastname",
     role: "role",
-    roles: "roles",
     city: "city",
     state: "state",
     skills: "skills",
@@ -57,3 +57,4 @@ exports.USER_FILTER = {
     category: "category",
     status: "status",
     email: "email",
+    bh_email: "bh_email",

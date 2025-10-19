@@ -52,7 +52,6 @@ const parseBullhornCompanyToUser = (data) => {
         role: "candidate",
         address1: data.address_address1,
         address2: data.address_address2,
-// Temp comment
         city: data.address_city,
         state: data.address_state,
         zip: data.address_zip,
@@ -89,6 +88,7 @@ const parseBullhornJobToMain = (data) => {
         description: data.description,
         address1: data.address_address1,
         address2: data.address_address2,
+// Temp comment
         city: data.address_city,
         state: data.address_state,
         zip: data.address_zip,

@@ -102,3 +102,4 @@ export const getFilterConditions = (
             opt.key,
             value,
             specialHandlers,
+            nonStringFields

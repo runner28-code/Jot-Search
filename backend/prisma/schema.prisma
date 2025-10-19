@@ -630,3 +630,9 @@ model Candidate {
 
   leads          String?
   maritalStatus  String?
+  massMailOptOut Boolean?
+  middleName     String?
+  mobile         String?
+  name           String?
+  namePrefix     String?
+  nameSuffix     String?

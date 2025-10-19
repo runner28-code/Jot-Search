@@ -7,7 +7,6 @@ CREATE TABLE "UserTalentCollection" (
     "approved_at" TEXT,
     "approved_by" TEXT,
     "created_at" TEXT,
-    "updated_at" TEXT,
     "declined_by" TEXT,
     "declined_at" TEXT,
     "cover_letter" TEXT,
@@ -60,3 +59,4 @@ CREATE TABLE "GetroMember" (
     "seniority" TEXT,
     "source" TEXT,
     "us_work_authorization" BOOLEAN,
+    "will_work_anywhere" BOOLEAN,

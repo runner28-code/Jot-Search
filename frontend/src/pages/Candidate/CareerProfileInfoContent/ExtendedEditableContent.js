@@ -25,6 +25,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     address1: candidateData.address1 || '',
     address2: candidateData.address2 || '',
     city: candidateData.city || '',
+    state: candidateData.state || '',
     zip: candidateData.zip || '',
     phone: candidateData.phone || '',
     categoryId: candidateData.categoryId || null,
@@ -50,6 +51,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     if (name === 'avatar' || name === 'resume') {
       const fileToUpload = event.target.files[0];
       const pluralizedFolderName = name + 's';
+// Temp comment
       const newPath = await uploadFile(pluralizedFolderName, fileToUpload);
       console.log(newPath);
       return setFormData({ ...formData, [name]: newPath });

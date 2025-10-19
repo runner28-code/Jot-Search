@@ -37,7 +37,6 @@ const uploadToS3 = async(req: any, res: any) => {
 
   const form = new IncomingForm() as any
   form.uploadDir = path.join(__dirname, "..", "uploads");
-  form.keepExtensions = true
   form.parse(req, async (err: any, fields: any, files: any) => {
     const fileObject = await files.file
 
@@ -118,3 +117,4 @@ app.get("/health", (req, res) => {
 
 useExpressServer(app, {
   controllers: [path.join(__dirname + "/controllers/*.ts")],
+  authorizationChecker: async (action: Action) => {

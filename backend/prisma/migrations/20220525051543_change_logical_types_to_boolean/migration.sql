@@ -2,7 +2,6 @@
   Warnings:
 
   - The `idOnFile` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
-  - The `isAnonymized` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `isDeleted` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `isEditable` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `isExempt` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
@@ -37,6 +36,7 @@ ADD COLUMN     "tobaccoUser" BOOLEAN,
 DROP COLUMN "twoJobs",
 ADD COLUMN     "twoJobs" BOOLEAN,
 DROP COLUMN "veteran",
+ADD COLUMN     "veteran" BOOLEAN,
 DROP COLUMN "willRelocate",
 ADD COLUMN     "willRelocate" BOOLEAN,
 DROP COLUMN "workAuthorized",

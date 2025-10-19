@@ -71,7 +71,6 @@ export class GetroService {
             try {
                 await this.checkAuth();
                 const query = queryString.stringify({
-                    per_page,
                     page,
                     detailed: true
                 });
@@ -245,3 +244,5 @@ export class GetroService {
                             const newItems = items.map((item: any) => ({
                                 ...item,
                                 id: `gt-${item.id}`,
+                                job_functions: item.job_functions?.map((jf: any) => jf.name).join(' | '),
+                                locations: item.locations?.map((loc: any) => loc.name).join(' | '),

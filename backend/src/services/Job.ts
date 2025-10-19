@@ -41,6 +41,7 @@ const validateJob = (job: Job): string | undefined => {
   return undefined;
 };
 
+const sanitizeJob = (job: Job): Job => {
   const newJob = { ...job };
 
   Object.keys(newJob).forEach((key) => {
@@ -121,3 +122,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
       },
     });
 
+    return {

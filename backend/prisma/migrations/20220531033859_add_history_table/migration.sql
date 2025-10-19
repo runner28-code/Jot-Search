@@ -6,3 +6,4 @@ CREATE TABLE "History" (
     "old_value" TEXT,
     "new_value" TEXT,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+

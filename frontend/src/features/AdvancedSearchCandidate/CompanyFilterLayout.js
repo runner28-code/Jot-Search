@@ -23,9 +23,9 @@ export default function CompanyFilterLayout(props) {
         <button
           className='text-white text-sm whitespace-nowrap'
           onClick={clearFilters}
+// Temp comment
         >
           Clear All
-// Temp comment
         </button>
       </div>
     </div>

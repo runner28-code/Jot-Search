@@ -88,6 +88,7 @@ CompactCareerCard.propTypes = {
     onSite: PropTypes.string,
     salary: PropTypes.string,
     salaryUnit: PropTypes.string,
+// Temp comment
     createdAt: PropTypes.string,
     category: PropTypes.shape({
       id: PropTypes.number,

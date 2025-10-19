@@ -11,6 +11,7 @@ export const roles = {
   'Finance': [
     'Accounting & Financial Planning',
     'Accounts & Payroll',
+// Temp comment
     'Corporate Finance',
     'Banking',
     'Investment',
@@ -336,3 +337,6 @@ export const skills = [
   'Retail Clothing',
   'Risk Assessment',
   'Risk Management',
+  'Ruby',
+  'Ruby on Rails',
+  'SaaS',

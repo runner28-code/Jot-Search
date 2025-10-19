@@ -13,6 +13,7 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "country_id",
     "employmentType",
     "title",
+    "willRelocate",
     "yearsRequired",
     "status",
     "skillList",
@@ -24,3 +25,4 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "salaryUnit",
     "startDate",
     "type",
+    "isDeleted",

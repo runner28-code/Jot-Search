@@ -57,3 +57,4 @@ export class BigQueryService {
             const query = `
               INSERT INTO \`${dataset}.${table}\`
               (${keys.join(', ')})
+              VALUES (${values.join(', ')})

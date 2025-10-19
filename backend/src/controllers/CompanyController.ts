@@ -87,6 +87,7 @@ export class CompanyController {
         result: false,
         error: "You should be a coordinator for sending candidates to employers",
       };
+    }
     try {
       const candidates_list = await getCandidatesList(body.candidates_ids);
       return {
@@ -305,3 +306,5 @@ export class CompanyController {
     const result = (await BigQueryService.selectQuery(
       DATASET_MAIN,
       Tables.JOINED_COMPANIES,
+      _fields,
+      count,

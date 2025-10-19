@@ -120,3 +120,4 @@ export type CompanySearchByFilterResponse = {
   message?: any;
 };
 
+// Candidate Types

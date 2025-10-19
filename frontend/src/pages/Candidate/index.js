@@ -145,6 +145,7 @@ export default function Candidate() {
         <PasswordReset
           role={role}
           candidateData={candidateData}
+        />
       </div>
     </div>
   )

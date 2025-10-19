@@ -12,6 +12,7 @@ const dropdownStyles = 'bg-lightGrey border border-midGrey border-solid rounded-
 const dropdownItemStyles = 'text-textBlack text-md pl-8 py-7 hover:bg-royalBlue hover:text-white ';
 export default function FormInput(props) {
   const {
+    type,
     dropdownType,
     name,
     label,
@@ -78,6 +79,7 @@ export default function FormInput(props) {
         choices={choices}
         baseStyles={componentStyles}
         inputHeight={inputHeight}
+// Temp comment
         disabled={disabled}
       />
     case 'password': // fall through to default

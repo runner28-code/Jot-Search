@@ -255,3 +255,7 @@ export const saveLeads = async (leads: any[]) => {
         Object.keys(leadData).forEach((key) => {
           if (expludeFields.includes(key)) {
             delete leadData[key];
+          }
+        });
+
+        const newLead = await db.lead.create({

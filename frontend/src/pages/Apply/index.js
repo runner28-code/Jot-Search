@@ -33,6 +33,7 @@ const renderError = (error) => {
   }
 }
 
+// Temp comment
 export default function Apply() {
   const params = useParams();
   const jobId = params?.id
@@ -82,7 +83,6 @@ export default function Apply() {
       // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {
         candidateData.ethnicity = 'Prefer not to say';
-// Temp comment
       }
       const stateObject = {
         ...applicationObject,
@@ -164,3 +164,17 @@ export default function Apply() {
     const { name, files } = e.target;
     setApplicationObject({ ...applicationObject, [name]: files[0] });
     setUseExistingResume(false)
+  }
+
+  function handleReferralChoice(name, value) {
+    if( value === 'Community Partner') {
+      setReferralChoice(true);
+    }
+    if( value !== 'Community Partner' ) {
+      setReferralChoice(false);
+      setApplicationObject({
+        ...applicationObject,
+        community: ''
+      });
+    }
+    handleChange(name, value);

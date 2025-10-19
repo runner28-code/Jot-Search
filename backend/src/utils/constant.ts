@@ -403,3 +403,8 @@ const job_filter_exclude_keys = [
   "tier iii technician",
   "title agent",
   "tooling",
+  "traffic",
+  "traffic systems analyst",
+  "transfer",
+  "transition",
+  "transportation",

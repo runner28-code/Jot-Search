@@ -95,5 +95,4 @@ function DesktopNavBarLayout() {
           />
         </a>
       </div>
-    </nav>
   )

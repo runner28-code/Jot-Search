@@ -14,6 +14,7 @@ API.interceptors.request.use(
   function (config) {
     const token = localStorage.getItem('id_token');
     if (token) {
+      config.headers['Authorization'] = 'Bearer ' + token;
     }
     return config;
   },
@@ -261,7 +262,6 @@ export async function getInvitationsToApply(id) {
 
 export async function applyToJob(jobId, candidateId) {
   const { data } = await API.get(ROUTES.APIjobApply, {
-    params: {
       job: jobId,
       candidate: candidateId
     }

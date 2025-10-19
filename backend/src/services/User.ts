@@ -306,7 +306,6 @@ export const getCompanyDashboardStats = async (days: number) => {
       where: {
         status: {
           equals: 'active',
-          mode: 'insensitive'
         },
         ...currentPeriodCommonQuery
       }
@@ -531,3 +530,8 @@ export const getStats = async (userId: string) => {
 
     const savedCompaniesCountQuery = `SELECT COUNT(*) as count FROM \`${DATASET_MAIN}.${Tables.SAVED_COMPANIES}\`
                                         WHERE candidate = '${userId}'`;
+
+    const totalCompaniesCountQuery = `SELECT COUNT(*) as count FROM \`${DATASET_BULLHORN}.${Tables.COMPANIES}\``;
+
+    const applicationCountPromise = BigQueryService.getClient().query({
+      query: applicationCountQuery,

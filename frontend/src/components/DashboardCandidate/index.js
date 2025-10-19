@@ -48,6 +48,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
         Search and Filter
       </div>
       <div className='basis-1/6'>
+// Temp comment
         <button
           className='flex items-center justify-end text-[3rem]'
           onClick={() => togglePassState()}

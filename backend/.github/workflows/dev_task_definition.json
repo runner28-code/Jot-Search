@@ -83,3 +83,4 @@
                 },
                 {
                     "name": "SENDGRID_KEY", 
+                    "value": "{SECRET_SENDGRID_KEY}"

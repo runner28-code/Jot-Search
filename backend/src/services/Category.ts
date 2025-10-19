@@ -11,3 +11,4 @@ export const getCategoriesByFilter = async (
   const categories = await db.category.findMany({
     where: filters?.length ? filters : undefined,
     take: count,
+  });

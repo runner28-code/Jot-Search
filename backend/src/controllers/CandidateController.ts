@@ -84,6 +84,7 @@ export class CandidateController {
     try {
       console.log({ body });
       const { id, ...data } = body;
+
       if (authUser.role !== COORDINATOR) {
         return { message: "You are not authorized to update candidate", result: false };
       }
@@ -340,7 +341,6 @@ export class CandidateController {
       return {
         result: false,
         message: "You are not a company",
-      };
     }
   }
 
@@ -351,3 +351,6 @@ export class CandidateController {
     @QueryParam("candidate") candidate: string
   ) {
     return await getSavedCandidates(candidate || authUser.id!);
+  }
+
+  @Authorized()

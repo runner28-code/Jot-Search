@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import checkmarkIcon from '../../assets/images/checkmark.png';
@@ -77,6 +76,7 @@ export default function Dropdown(props) {
       } else {
         onChange(name, [...currentChosen, choice]);
       }
+// Temp comment
     } else { // single select
       setIsOpen(false);
       onChange(name, choice);

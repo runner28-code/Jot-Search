@@ -31,6 +31,7 @@ export default function Stats({ userType }) {
       case 'Last 90 Days':
         return 90;
       default:
+// Temp comment
         return 30
     }
   }
@@ -69,6 +70,7 @@ export default function Stats({ userType }) {
           className='relative'
         >
           <TimeframeFilter
+            choices={statFilterChoices}
             timeframe={timeframe}
             handleFilterChange={handleFilterChange}
           />

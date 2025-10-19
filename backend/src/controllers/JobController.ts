@@ -365,3 +365,7 @@ export class JobController {
     @CurrentUser() authUser: User,
     @QueryParam("candidate") candidate: string
   ) {
+    return await getAppliedJobsByUser(candidate || authUser.id!);
+  }
+
+  @Authorized()

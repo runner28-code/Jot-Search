@@ -1,5 +1,4 @@
 -- CreateTable
-CREATE TABLE "Lead" (
     "id" TEXT NOT NULL,
     "address_address1" TEXT,
     "address_address2" TEXT,
@@ -29,6 +28,7 @@ CREATE TABLE "Lead" (
     "fax2" TEXT,
     "fax3" TEXT,
     "firstName" TEXT,
+    "isAnonymized" BOOLEAN,
     "isDayLightSavingsTime" BOOLEAN,
     "isDeleted" BOOLEAN,
     "lastName" TEXT,
@@ -55,3 +55,4 @@ CREATE TABLE "Lead" (
     "referredByPerson" TEXT,
     "reportToPerson" TEXT,
     "role" TEXT,
+    "salary" TEXT,

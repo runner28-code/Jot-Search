@@ -56,7 +56,6 @@ module.exports = {
         magenta: '#EB4A87',
         // Colors included in design but not in Web Style Guide
         orangeCircle: '#ED8623',
-// Temp comment
         orangeHeroOverlay: '#F2871F',
         'blue-bg': '#E7F0F8',
         buttonLightBlue: '#00CADB',
@@ -201,7 +200,6 @@ module.exports = {
       xxs: '0.9rem',
       xs: '1.2rem',
       sm: '1.4rem',
-      base: '1.6rem',
       md: '1.8rem',
       ml: '2rem',
       lg: '2.2rem',
@@ -223,3 +221,4 @@ module.exports = {
     },
     maxWidth: {
       '85%': '85%',
+      '120': '30rem',

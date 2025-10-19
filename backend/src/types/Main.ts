@@ -30,3 +30,4 @@ export type Job = {
     locations?: string;
     companyId?: string;
     interviews?: string;
+    onSite?: string;

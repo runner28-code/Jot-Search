@@ -61,3 +61,4 @@ export const getSavedCompanies = async (candidateId: string) => {
       where: {
         id: candidateId,
       },
+      include: {

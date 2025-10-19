@@ -18,7 +18,6 @@ import {
 import { useCandidateContext } from '../../services/CandidateContext';
 
 export default function NavBar() {
-  const { width } = useWindowDimensions();
 
   if ( width < 1280 ) {
     return <NavBarLayout />
@@ -103,6 +102,7 @@ const DropdownMenu = () => {
     }
   }
 
+  let chevronStyles = 'h-5 w-7 mx-8 ';
   if ( isOpen ) {
     chevronStyles += 'animate-spin';
   } else if ( !firstRender && !isOpen ) {

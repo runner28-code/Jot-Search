@@ -5,6 +5,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
 var __rest = (this && this.__rest) || function (s, e) {
@@ -35,7 +36,6 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
         const sanitizedJob = sanitizeJob(job);
         const newJob = yield db_1.default.job.create({
             data: Object.assign(Object.assign({}, sanitizedJob), { datasource: sanitizedJob === null || sanitizedJob === void 0 ? void 0 : sanitizedJob.datasource }),
-        });
         return {
             result: true,
             data: newJob,

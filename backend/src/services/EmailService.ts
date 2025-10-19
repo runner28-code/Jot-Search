@@ -102,3 +102,4 @@ export const sendUpdateUserNotification = async (to: string, name: string) => {
       url: `${base_url}/login`
     });
     return true;
+  } catch (error: any) {

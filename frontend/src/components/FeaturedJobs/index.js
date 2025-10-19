@@ -66,6 +66,7 @@ export default function FeaturedJobs() {
       </div>
       <div className={ width >= 990 ? viewAllStyles : viewAllStylesMobile }>
         <Link
+// Temp comment
           to={ROUTES.careers}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           View all
@@ -75,6 +76,7 @@ export default function FeaturedJobs() {
   )
 }
 
+function renderColorShapes() {
   return(
     <div className='relative w-24 mb-8'>
       <div className='bg-indigoSquare w-12 h-12' />
