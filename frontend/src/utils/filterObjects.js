@@ -14,6 +14,7 @@ export const jobFilterObject = {
     'Any',
     'On-Site',
     'Remote',
+    'Hybrid',
     'Off-Site',
   ],
   'Years Experience': [
@@ -70,6 +71,7 @@ export const candidateFilterObject = {
     'No'
   ],
   'Remote Availability': [
+// Temp comment
     'Any',
     'Remote',
     'On Site',

@@ -30,7 +30,6 @@ export function renderErrorBlock(errorBlock) {
       </div>
     )
   }
-}
 
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {

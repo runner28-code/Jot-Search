@@ -94,6 +94,7 @@ export default function RegistrationForm() {
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
       setTimeout(() => {
+// Temp comment
         setFormObj(defaultState);
         setSubmissionObject({
           loading: false,

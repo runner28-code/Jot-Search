@@ -8,6 +8,7 @@ export const saveCompanies = async (companies: any[]) => {
 							console.log(`Savng company with ID = ${company.id}`);
 							const existing = await db.getroCompany.findFirst({
 								where: {
+									id: company.id,
 								},
 							});
 							if (existing) {
@@ -16,7 +17,6 @@ export const saveCompanies = async (companies: any[]) => {
 							}
 			
 							const companyData = { ...company };
-			
 							Object.keys(companyData).forEach((key) => {
 								if (expludeFields.includes(key)) {
 									delete companyData[key];

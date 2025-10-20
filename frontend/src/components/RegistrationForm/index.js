@@ -114,7 +114,6 @@ export default function RegistrationForm(loggedIn) {
         setErrorBlock(result);
         setSubmissionObject({
           loading: false,
-          success: false,
         });
       }
     }

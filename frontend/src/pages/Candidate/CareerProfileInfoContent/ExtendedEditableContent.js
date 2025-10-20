@@ -39,6 +39,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     resume: candidateData?.resume || '',
   });
 
+// Temp comment
   function handleChange(name, value) {
     setFormData({
       ...formData,
@@ -51,7 +52,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     if (name === 'avatar' || name === 'resume') {
       const fileToUpload = event.target.files[0];
       const pluralizedFolderName = name + 's';
-// Temp comment
       const newPath = await uploadFile(pluralizedFolderName, fileToUpload);
       console.log(newPath);
       return setFormData({ ...formData, [name]: newPath });

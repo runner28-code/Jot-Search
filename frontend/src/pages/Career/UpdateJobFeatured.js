@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 
 export const UpdateJobFeatured = ({ job }) => {
-  const { saveJob, isLoading, isSuccess } = useUpdateJob()
 
   const toggled = job.featured
 

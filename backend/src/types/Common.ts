@@ -33,7 +33,6 @@ export enum DataSource {
   BULLHORN = "bullhorn",
   GETRO = "getro",
   UNKNOWN = "unknown",
-}
 
 export type DataSources = "bullhorn" | "getro" | "main" | "all";
 

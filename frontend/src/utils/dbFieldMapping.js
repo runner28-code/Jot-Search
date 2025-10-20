@@ -56,6 +56,7 @@ export const educationChoices = [
   'Some College',
   'Technical College'
 ];
+
 export const referralChoices = [
   'Web Search',
   'Social Media',

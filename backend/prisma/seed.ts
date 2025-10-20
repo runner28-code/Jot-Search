@@ -163,34 +163,3 @@ async function seedCompanies() {
         bh_description: "a good company",
         getro_description: "a fintech company",
         description: "testing a new description",
-        city: "Tulsa",
-        state: "OK",
-        billingPhone: "876-567-9876",
-        companyURL: "pepsoda@gmail.com",
-        companyDescription: "Best at test",
-        numEmployees: 50,
-      },
-    ],
-  });
-}
-
-async function seedUsers() {
-  await db.user.createMany({
-    data: [
-      {
-        avatar: "https://picsum.photos/200",
-        email: "coordinator@aerovision.io",
-        firstname: "Coordinator",
-        lastname: "Test",
-        /* Password: 123456 */
-        password:
-          "bd2f141fe5a5ed8b21f9bf0a752221f07e4f0a598419d5371176d19a737524ec3bf87b9b7a9ed4a74181cd25660c354310fd401ca0768f9e58f585e0f061a5554e461414fbcfa9ac3b4773e2",
-        role: "coordinator",
-      },
-      {
-        email: "company@aerovision.io",
-        firstname: "Company",
-        lastname: "Test",
-        /* Password: 123456 */
-        password:
-          "bd2f141fe5a5ed8b21f9bf0a752221f07e4f0a598419d5371176d19a737524ec3bf87b9b7a9ed4a74181cd25660c354310fd401ca0768f9e58f585e0f061a5554e461414fbcfa9ac3b4773e2",

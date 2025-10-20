@@ -100,7 +100,6 @@ export function formatPhoneNumber(phoneNumberString) {
     const areaCode = phoneNumberString.slice(2, 5);
     const firstThree = phoneNumberString.slice(5, 8);
     const lastFour = phoneNumberString.slice(8, 12);
-// Temp comment
     return `${internationalCode} (${areaCode}) ${firstThree}-${lastFour}`;
   }
   return phoneNumberString;

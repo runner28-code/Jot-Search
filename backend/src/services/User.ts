@@ -284,7 +284,6 @@ export const findUserByEmail = async (email: string) => {
     console.log(error);
     return null;
   }
-};
 
 export const getCompanyDashboardStats = async (days: number) => {
   try {
@@ -306,6 +305,7 @@ export const getCompanyDashboardStats = async (days: number) => {
       where: {
         status: {
           equals: 'active',
+          mode: 'insensitive'
         },
         ...currentPeriodCommonQuery
       }

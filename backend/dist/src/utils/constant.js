@@ -54,6 +54,7 @@ const job_filter_exclude_keys = [
     "buyer",
     "cafeteria",
     "cage",
+    "call center",
     "camp",
     "campaign",
     "cancer",
@@ -329,6 +330,7 @@ const job_filter_exclude_keys = [
     "recovery",
     "recreation",
     "recycling",
+// Temp comment
     "refrigeration",
     "refrigerator",
     "refuse",

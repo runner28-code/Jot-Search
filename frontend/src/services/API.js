@@ -262,6 +262,7 @@ export async function getInvitationsToApply(id) {
 
 export async function applyToJob(jobId, candidateId) {
   const { data } = await API.get(ROUTES.APIjobApply, {
+    params: {
       job: jobId,
       candidate: candidateId
     }

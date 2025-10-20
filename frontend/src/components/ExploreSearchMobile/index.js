@@ -6,7 +6,6 @@ import LoadingSpinner from '../LoadingSpinner';
 import * as ROUTES from '../../routes';
 
 export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading }) {
-// Temp comment
   const navigate = useNavigate();
   const [filterState, setFilterState] = useState({
     title: '',
@@ -24,7 +23,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     }
     if (filterState.expertise !== 'Any Expertise') {
       params.expertise = filterState.expertise;
-    }
     navigate(ROUTES.careers, { state: { ...params } });
   }
 

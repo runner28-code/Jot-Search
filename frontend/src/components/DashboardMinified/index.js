@@ -47,7 +47,6 @@ function LinkSwap ({ location, loggedIn }) {
   }
   if(location === 'companies' ) {
     return (
-      <Link
         className='text-white flex items-center'
         to={ROUTES.companies}>
         <span className='underline'>Back</span>

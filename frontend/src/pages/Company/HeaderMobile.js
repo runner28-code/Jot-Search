@@ -45,7 +45,6 @@ function HeaderContent({ companyData }) {
                 />
                 <OpenCareers
                   styles={headerRowTextStyles}
-                  companyId={companyData.id}
                 />
               </div> 
             </div>
@@ -114,7 +113,6 @@ function renderCompanyLogo(logoUrl, name) {
       />
     </div>
   )
-// Temp comment
 }
 
 function renderDesktopLogo(logoUrl, name) {

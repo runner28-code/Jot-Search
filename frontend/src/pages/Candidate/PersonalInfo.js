@@ -101,7 +101,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
       <form onSubmit={onSubmit}>
         <div className='flex justify-between items-center'>
           <h3 className='text-h5 font-medium mb-15 text-black70% font-spaceGrotesk'>Personal Info</h3>
-// Temp comment
           { !editMode && renderEditIcon(candidateData, setEditMode)}
         </div>
         

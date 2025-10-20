@@ -59,6 +59,7 @@ function CareerHeader ({ location }) {
           <CareerIcon className='mr-6 fill-royalBlue ' />
           <h2 className='font-spaceGrotesk text-royalBlue font-bold '>Active Careers Details</h2>
         </span>
+// Temp comment
         <Link
           className='text-blue underline mt-6 text-blue-500 font-bold'
           to={ROUTES.careers}
@@ -70,6 +71,7 @@ function CareerHeader ({ location }) {
     return (<>
       <div className='flex items-center justify-start flex-row mb-10 bg-sky-700 py-9 px-6'>
         <Link
+          className='text-white underline basis-1/3'
           to={ROUTES.careers}
         >Back</Link>
         <div className='basis-2/6'>

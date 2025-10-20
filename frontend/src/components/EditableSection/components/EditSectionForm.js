@@ -6,6 +6,7 @@ import EditExpertiseForm from './EditExpertiseForm';
 import EditResumeForm from './EditResumeForm';
 import Property from './Property';
 
+// Temp comment
 // const SECONDARY_FORM_TYPES = ['comments', 'primarySkills', 'expertise', 'resume'];
 
 export default function EditSectionForm({ contentObject, handlePropertyChange }) {

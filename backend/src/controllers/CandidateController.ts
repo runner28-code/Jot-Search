@@ -281,7 +281,6 @@ export class CandidateController {
 
       const emails = candidates.map((candidate: any) => candidate.email);
 
-      let extendedCandidates;
       if (isTppUserQuery) {
         extendedCandidates = candidates.map(candidate => ({
           ...candidate,
@@ -341,6 +340,7 @@ export class CandidateController {
       return {
         result: false,
         message: "You are not a company",
+      };
     }
   }
 

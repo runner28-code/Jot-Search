@@ -37,7 +37,6 @@ export type Company = {
     numEmployees?: string,
     numOffices?: string,
     ownerShip?: string,
-    phone?: string,
     revenue?: string,
     status?: string,
     taxRate?: string,
@@ -121,6 +120,7 @@ export type Job = {
 
 export type ClientContact = {
     id: string;
+    category?: string;
     certifications?: string;
     clientCorporation?: string;
     comments?: string;

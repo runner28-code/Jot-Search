@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import FormInput from '../../../components/FormInput';
+import API from '../../../services/API';
 import * as ROUTES from '../../../routes';
 
 export default function ResetForm({ candidateData, setType }) {
@@ -9,7 +10,6 @@ export default function ResetForm({ candidateData, setType }) {
     password: '',
     passwordConfirm: '',
   });
-  const [match, setMatch] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();

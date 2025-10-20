@@ -20,7 +20,6 @@ export default function AssistanceCard() {
           <li className='list-disc ml-8'>Create a new active career post</li>
           <li className='list-disc ml-8'>etc...</li>
           <hr className='max-w-300 mt-6' />
-// Temp comment
         </ul>
       </div>
       {/* Button */}
