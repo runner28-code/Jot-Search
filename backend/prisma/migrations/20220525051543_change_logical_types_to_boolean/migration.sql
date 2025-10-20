@@ -9,7 +9,6 @@
   - The `paperWorkOnFile` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `tobaccoUser` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `twoJobs` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
-  - The `veteran` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `willRelocate` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `workAuthorized` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `willRelocate` column on the `Job` table would be dropped and recreated. This will lead to data loss if there is data in the column.
@@ -21,6 +20,7 @@
 */
 -- AlterTable
 ALTER TABLE "Candidate" DROP COLUMN "idOnFile",
+ADD COLUMN     "idOnFile" BOOLEAN,
 DROP COLUMN "isAnonymized",
 ADD COLUMN     "isAnonymized" BOOLEAN,
 DROP COLUMN "isDeleted",
@@ -44,3 +44,4 @@ ADD COLUMN     "workAuthorized" BOOLEAN;
 
 -- AlterTable
 ALTER TABLE "Job" DROP COLUMN "willRelocate",
+ADD COLUMN     "willRelocate" BOOLEAN,

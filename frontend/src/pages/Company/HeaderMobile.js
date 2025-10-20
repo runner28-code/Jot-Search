@@ -45,6 +45,7 @@ function HeaderContent({ companyData }) {
                 />
                 <OpenCareers
                   styles={headerRowTextStyles}
+                  companyId={companyData.id}
                 />
               </div> 
             </div>
@@ -103,7 +104,6 @@ function renderCompanyLogo(logoUrl, name) {
         <BsBuilding className={logoStyles} />
       </div>
     )
-  }
   return (
     <div className='p-8 border border-slate-70/50 mr-8'>
       <img

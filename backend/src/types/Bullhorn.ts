@@ -259,7 +259,6 @@ export type Candidate = {
     stateFilingStatus?: string;
     status?: string;
     taxID?: string;
-    taxState?: string;
     timeZoneOffsetEST?: string;
     tobaccoUser?: string;
     totalDependentClaimAmount?: string;
@@ -282,3 +281,5 @@ export type Lead = {
     address_city?: string;
     address_state?: string;
     address_zip?: string;
+    address_country_id?: string;
+    campaignSource?: string;

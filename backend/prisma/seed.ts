@@ -54,7 +54,6 @@ async function seedJobs() {
         datasource: Datasource.bullhorn as any,
         status: "active",
         categoryId: (await db.category.findFirst({
-          where: { name: "Software & Engineering" },
         }))!.id,
       },
     ],
@@ -163,3 +162,7 @@ async function seedCompanies() {
         bh_description: "a good company",
         getro_description: "a fintech company",
         description: "testing a new description",
+        city: "Tulsa",
+        state: "OK",
+        billingPhone: "876-567-9876",
+        companyURL: "pepsoda@gmail.com",

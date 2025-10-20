@@ -158,4 +158,5 @@ function renderCompanyDescription(description, textStyles) {
   return (
     <div className={textStyles}>
       {description}
+    </div>
   )

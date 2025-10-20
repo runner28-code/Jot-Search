@@ -8,9 +8,7 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "address1",
     "address2",
     "city",
-    "state",
     "zip",
-// Temp comment
     "country_id",
     "employmentType",
     "title",

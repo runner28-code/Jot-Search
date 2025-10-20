@@ -69,3 +69,4 @@ export type User = {
     linkedin_url?: string; // !
     resume_url?: string;
     share_permission?: string;
+    skills?: string;

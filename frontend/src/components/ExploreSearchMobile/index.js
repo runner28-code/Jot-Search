@@ -23,11 +23,13 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     }
     if (filterState.expertise !== 'Any Expertise') {
       params.expertise = filterState.expertise;
+    }
     navigate(ROUTES.careers, { state: { ...params } });
   }
 
   function handleFilterChange(name, value) {
     setFilterState({
+// Temp comment
       ...filterState,
       [name]: value,
     });

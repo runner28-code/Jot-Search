@@ -6,7 +6,6 @@ import { BsBuilding } from 'react-icons/bs';
 
 const ITEMS_PER_PAGE = 10;
 
-export default function FeaturedCompanies() {
 
   const filtersArr = [
     {
@@ -24,7 +23,6 @@ export default function FeaturedCompanies() {
       <div className='flex flex-wrap mt-8'>
         {
           isLoading ?
-// Temp comment
             <LoadingSpinner />
             :
             companies.map((company, index) =>

@@ -53,7 +53,6 @@ function renderChoice(choice, selected, index, choicesLength) {
   } else {
     iconStyles += strokeIcons.includes(choice.label) ? 'stroke-royalBlue' : 'fill-royalBlue';
   }
-  const choiceTextStyles = 'text-xl mr-9 ' + (selectedChoice ? 'text-white' : 'text-royalBlue');
   const Icon = choice.icon;
   return (
     <Link

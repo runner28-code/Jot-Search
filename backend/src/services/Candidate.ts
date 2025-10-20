@@ -58,7 +58,6 @@ export const saveCandidate = async (
 export const getSavedCandidates = async (companyUserId: string) => {
   try {
     const user = await db.user.findFirst({
-      where: {
         id: companyUserId,
       },
       include: {
@@ -84,3 +83,4 @@ export const getSavedCandidates = async (companyUserId: string) => {
     };
   } catch (error) {
     console.log(error);
+    return { result: false, message: error };

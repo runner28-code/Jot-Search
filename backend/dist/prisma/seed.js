@@ -92,6 +92,7 @@ function seedCandidates() {
                     companyURL: "eddyseverything.com",
                     firstName: "John",
                     lastName: "Smith",
+                    phone: "123-456-7891",
                     email: "jsmithers@gmail.com",
                     comments: "He does everything!",
                 },
@@ -128,6 +129,7 @@ function seedCategories() {
                     name: "Marketing",
                     enabled: true,
                     externalID: 2000026,
+// Temp comment
                 },
                 {
                     name: "Operations",

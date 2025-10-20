@@ -33,7 +33,6 @@ export default function NavSearch({ placeholder }) {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {
-        ...defaultCandidateFilterState,
         firstname: splitName[0],
         lastname: splitName?.[1]
       }
@@ -112,7 +111,6 @@ export default function NavSearch({ placeholder }) {
   )
 }
 
-// Temp comment
 NavSearch.propTypes = {
   placeholder: PropTypes.string
 }

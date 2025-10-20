@@ -24,7 +24,6 @@ exports.IUSER = {
     workspace: "",
     referredBy: "",
     roles: "",
-    description: "",
     phone: "",
     status: "",
     username: "",
@@ -40,3 +39,4 @@ exports.IUSER = {
     experience: "",
     hourlyRate: "",
     willRelocate: "",
+    willReceiveNotification: false,

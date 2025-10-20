@@ -101,6 +101,7 @@ export const saveBullhornJobs = async (jobs: any[]) => {
     "date_end",
     "dateLastExported",
     "dateLastModified",
+    "dateLastPublished",
     "startDate", //
     "skills",
   ];
@@ -258,3 +259,6 @@ export const saveLeads = async (leads: any[]) => {
         });
 
         const newLead = await db.lead.create({
+          data: leadData,
+        });
+        console.log(`Saved Lead with ID = ${lead.id} successfully`);

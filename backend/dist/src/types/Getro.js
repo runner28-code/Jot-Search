@@ -9,6 +9,7 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "compensation_max",
     "compensation_min",
     "compensation_period",
+    "compensation_public",
     "description",
     "discarded",
     "employment_types",
@@ -18,3 +19,4 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "organization_id",
     "passes_filter",
     "posted_at",
+    "slug",

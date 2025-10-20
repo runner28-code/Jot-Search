@@ -37,6 +37,7 @@ export type Company = {
     numEmployees?: string,
     numOffices?: string,
     ownerShip?: string,
+    phone?: string,
     revenue?: string,
     status?: string,
     taxRate?: string,
@@ -281,3 +282,5 @@ export type Candidate = {
 
 export type Lead = {
     id: string;
+    address?: string;
+    campaignSource?: string;

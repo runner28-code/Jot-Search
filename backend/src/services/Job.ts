@@ -34,7 +34,6 @@ export const createJob = async (job: Job) => {
       error: err,
     };
   }
-};
 
 // TODO: Figure out what we want to make required
 const validateJob = (job: Job): string | undefined => {
@@ -123,3 +122,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
     });
 
     return {
+      result: true,

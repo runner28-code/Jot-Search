@@ -218,7 +218,6 @@ function renderLinkedIn( url, headerRowTextStyles ) {
     >
     LinkedIn
     </a>
-  )
 }
 
 function renderCompanyWebsite( url, headerRowTextStyles ) {

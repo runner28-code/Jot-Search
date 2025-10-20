@@ -31,7 +31,6 @@ export default function Stats({ userType }) {
       case 'Last 90 Days':
         return 90;
       default:
-// Temp comment
         return 30
     }
   }
@@ -116,6 +115,7 @@ function StatCard({ stat, value }) {
         <h2 className={numberStyles}>{value.count}</h2>
         <p className='text-md text-charcoal'>{stat}</p>
       </div>
+// Temp comment
       {renderDeviation(deviationPercentage)}
     </div>
   )

@@ -35,6 +35,7 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     companyName: data.companyName,
     companyURL: data.companyURL,
     revenue: data.salary,
+    dateFounded: data.dateAdded,
 
     employeeType: data.employeeType,
     experience: data.experience,
@@ -109,3 +110,4 @@ export const parseBullhornJobToMain = (data: BhJob) => {
     interviews: data.interviews,
     onSite: data.onSite,
     salary: data.salary,
+    salaryUnit: data.salaryUnit,

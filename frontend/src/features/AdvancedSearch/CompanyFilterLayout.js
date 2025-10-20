@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
+// Temp comment
 
 export default function CompanyFilterLayout(props) {
   const {
@@ -10,7 +11,6 @@ export default function CompanyFilterLayout(props) {
   } = props;
 
   return (
-// Temp comment
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex items-center gap-[65px]'>
         <FilterSearch

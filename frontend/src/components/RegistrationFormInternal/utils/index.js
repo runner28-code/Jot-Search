@@ -59,7 +59,6 @@ export function renderHeader(addType) {
       </div>
     )
   }
-}
 
 export function inputValidation(formObj) {
   // Remove non-required properties

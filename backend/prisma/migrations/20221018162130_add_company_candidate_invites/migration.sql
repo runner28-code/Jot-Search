@@ -7,7 +7,6 @@ CREATE TABLE "CompanyCandidateInvites" (
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
     CONSTRAINT "CompanyCandidateInvites_pkey" PRIMARY KEY ("id")
-);
 
 -- AddForeignKey
 ALTER TABLE "CompanyCandidateInvites" ADD CONSTRAINT "CompanyCandidateInvites_candidateId_fkey" FOREIGN KEY ("candidateId") REFERENCES "Candidate"("id") ON DELETE RESTRICT ON UPDATE CASCADE;

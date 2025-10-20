@@ -21,7 +21,6 @@ export const UpdateJobStatus = ({ job }) => {
         {isSuccess && <p>Success!</p>}
         <Dropdown 
           choices={[
-// Temp comment
             'Active',
             'Inactive',
             'Filled',

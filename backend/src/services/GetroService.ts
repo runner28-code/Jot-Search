@@ -247,3 +247,5 @@ export class GetroService {
                                 id: `gt-${item.id}`,
                                 job_functions: item.job_functions?.map((jf: any) => jf.name).join(' | '),
                                 locations: item.locations?.map((loc: any) => loc.name).join(' | '),
+                                organization_doman: item.organization?.domain,
+                                organization_id: item.organization?.id,

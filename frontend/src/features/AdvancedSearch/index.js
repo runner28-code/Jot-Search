@@ -52,6 +52,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
 
+// Temp comment
   const initialFilterState = activeTab === 'careers' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
   if (state && state.expertise) {
     initialFilterState.Expertise = state.expertise
@@ -88,6 +89,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   /* CLEAR SEARCH TERM ON TAB SWITCH */
   useEffect(() => {
     setFilterObject({ ...filterObject, title: '' });
+    setPage(1);
   }, [activeTab]);
 
   function handleFilterChange(filterType, choice) {

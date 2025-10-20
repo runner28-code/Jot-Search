@@ -6,7 +6,6 @@ import EditExpertiseForm from './EditExpertiseForm';
 import EditResumeForm from './EditResumeForm';
 import Property from './Property';
 
-// Temp comment
 // const SECONDARY_FORM_TYPES = ['comments', 'primarySkills', 'expertise', 'resume'];
 
 export default function EditSectionForm({ contentObject, handlePropertyChange }) {
@@ -17,6 +16,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
   
   if ( propertyName === 'comments' ) {
+// Temp comment
     return <EditSummaryForm 
       summaryText={contentObject[propertyName]}
       setSummary={handleChange} />

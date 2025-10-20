@@ -222,6 +222,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   type='text'
                   name='city'
                   id='city'
+// Temp comment
                   placeholder='City'
                   value={formData.city}
                   onChange={handleInputChange}

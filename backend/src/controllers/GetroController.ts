@@ -16,3 +16,4 @@ export class GetroController {
   }
   
   @Authorized()
+  @Get('/getro/jobs')

@@ -636,3 +636,6 @@ model Candidate {
   name           String?
   namePrefix     String?
   nameSuffix     String?
+
+  nickName              String?
+  numCategories         Int?

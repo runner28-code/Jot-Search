@@ -73,7 +73,6 @@ CREATE TABLE "Company" (
     "customText2" TEXT,
     "customText3" TEXT,
     "customText4" TEXT,
-    "customText5" TEXT,
     "customText6" TEXT,
     "customText7" TEXT,
     "customText8" TEXT,
@@ -89,3 +88,4 @@ CREATE TABLE "Company" (
     "customText18" TEXT,
     "customText19" TEXT,
     "customText20" TEXT,
+    "customTextBlock1" TEXT,

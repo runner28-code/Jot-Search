@@ -339,3 +339,5 @@ export const skills = [
   'Ruby',
   'Ruby on Rails',
   'SaaS',
+  'Sales',
+  'Sales Development',

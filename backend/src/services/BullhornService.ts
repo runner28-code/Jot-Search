@@ -841,3 +841,8 @@ export class BullhornService {
             "skillSet",
             "smsOptIn",
             "specialties",
+            "status",
+            "timeZoneOffsetEST",
+            "type",
+            "willRelocate",
+          ].join(","),

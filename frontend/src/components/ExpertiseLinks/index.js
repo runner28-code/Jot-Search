@@ -3,6 +3,7 @@ import softwareEngineeringIcon from '../../assets/images/Symbol_softwareengineer
 import salesAndBizDevIcon from '../../assets/images/Symbol_Salesbizdev.svg';
 import marketingIcon from '../../assets/images/Symbol_marketing.svg';
 import operationsIcon from '../../assets/images/Symbol_operations.svg';
+// Temp comment
 import financeIcon from '../../assets/images/Symbol_finance.svg';
 import * as ROUTES from '../../routes';
 
@@ -62,7 +63,6 @@ export default function ExpertiseLinks() {
         <Link
           to={ROUTES.careers}
           className={linkStyles}
-// Temp comment
           state={{ Expertise: 'Operations' }}
         >
           <img

@@ -33,6 +33,7 @@ export enum DataSource {
   BULLHORN = "bullhorn",
   GETRO = "getro",
   UNKNOWN = "unknown",
+}
 
 export type DataSources = "bullhorn" | "getro" | "main" | "all";
 
@@ -72,7 +73,6 @@ export type JobSearchByID = {
 
 export type JobSearchByFilterResponse =
   | {
-      jobs?: Job[];
       total?: number;
       message?: any;
     }
@@ -120,3 +120,4 @@ export type CompanySearchByFilterResponse = {
 };
 
 // Candidate Types
+export type CandidateSearchByIdResponse = {

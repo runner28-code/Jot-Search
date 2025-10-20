@@ -330,7 +330,6 @@ const job_filter_exclude_keys = [
     "recovery",
     "recreation",
     "recycling",
-// Temp comment
     "refrigeration",
     "refrigerator",
     "refuse",
@@ -419,3 +418,5 @@ const job_filter_exclude_keys = [
     "urology",
     "utilities",
     "utility",
+    "vault",
+    "vegetation",

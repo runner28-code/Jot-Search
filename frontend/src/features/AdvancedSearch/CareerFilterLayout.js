@@ -6,6 +6,7 @@ import AuthService from '../../services/auth';
 const dropdownFilters = [
   'Expertise',
   'On-Site/Remote',
+// Temp comment
   'Years Experience',
   'Status',
 ];
@@ -30,7 +31,6 @@ export default function CareerFilterLayout(props) {
   } = props;
 
   const dropdownFilterObject = {};
-// Temp comment
   if( userType === 'candidate' ) {
     dropDownFiltersCandidate.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];

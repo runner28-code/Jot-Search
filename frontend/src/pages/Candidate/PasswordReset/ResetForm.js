@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import FormInput from '../../../components/FormInput';
@@ -10,6 +11,7 @@ export default function ResetForm({ candidateData, setType }) {
     password: '',
     passwordConfirm: '',
   });
+  const [match, setMatch] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();

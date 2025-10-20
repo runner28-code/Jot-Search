@@ -284,6 +284,7 @@ export const findUserByEmail = async (email: string) => {
     console.log(error);
     return null;
   }
+};
 
 export const getCompanyDashboardStats = async (days: number) => {
   try {
@@ -535,3 +536,6 @@ export const getStats = async (userId: string) => {
 
     const applicationCountPromise = BigQueryService.getClient().query({
       query: applicationCountQuery,
+      location: "US",
+    });
+

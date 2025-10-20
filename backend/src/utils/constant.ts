@@ -408,3 +408,6 @@ const job_filter_exclude_keys = [
   "transfer",
   "transition",
   "transportation",
+  "trauma",
+  "troops",
+  "truck driver",

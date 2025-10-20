@@ -8,7 +8,6 @@ import { pluralizedTypes } from '../../utils/constants';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
 
-// Temp comment
 export default function ResultContainer(props) {
   const {
     results,
@@ -46,4 +45,3 @@ export default function ResultContainer(props) {
     return <ViewAllLink
       href={`/${pluralizedType}`}
       text={`View All ${capitalizedType}`}
-    />;

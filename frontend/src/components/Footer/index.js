@@ -244,6 +244,7 @@ function NavFooter() {
           className={linkStyle}
         >Find Careers
         </Link>
+        <Link
           to={ROUTES.companies}
           className={linkStyle}
         >Browse Companies

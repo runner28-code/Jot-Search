@@ -39,7 +39,6 @@ export class ClientContactController {
   async searchByFilters(@Body() body: FilterBody) {
     try {
       const { page, count, filters } = body;
-
       const wheres = normalizeFilters(filters)
 
       // TODO: assuming filters and fields format
@@ -49,3 +48,4 @@ export class ClientContactController {
         skip: (count || 0) * (page || 0),
       });
 
+      clientContacts?.forEach((clientContact) => clearPassword(clientContact));
