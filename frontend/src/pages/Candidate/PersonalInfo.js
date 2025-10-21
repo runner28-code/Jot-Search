@@ -27,6 +27,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     lastname: candidateData.lastname || '',
     email: candidateData.email || '',
     phone: candidateData.phone || '',
+    workAuthorized: candidateData.workAuthorized,
     zip: candidateData.zip || '',
     city: candidateData.city || '',
     address1: candidateData.address1 || '',
@@ -199,7 +200,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 htmlFor='zip'
                 className={labelStyles}
               >
-                <p className={labelTextStyles}>Zip/Postal Code</p>
                 <input
                   type='text'
                   name='zip'

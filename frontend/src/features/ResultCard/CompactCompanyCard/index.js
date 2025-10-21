@@ -55,7 +55,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
   )
 }
 
-CompactCompanyCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     company_logo: PropTypes.string,
@@ -72,6 +71,7 @@ CompactCompanyCard.propTypes = {
     selected: PropTypes.arrayOf(PropTypes.string),
     setSelected: PropTypes.func
   })
+}
 
 function renderCardImage(data) {
   if ( !data.company_logo ) {

@@ -113,7 +113,6 @@ model Lead {
   salary                BigInt?
   salaryLow             BigInt?
   secondarySkills       String?
-  skillSet              String?
   smsOptIn              Boolean?
   specialties           String?
   status                String?
@@ -648,3 +647,4 @@ model Candidate {
 
   password               String?
   payrollClientStartDate DateTime?
+  payrollStatus          String?

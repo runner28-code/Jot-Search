@@ -87,3 +87,4 @@ CREATE TABLE "Candidate" (
     "tobaccoUser" TEXT,
     "totalDependentClaimAmount" TEXT,
     "travelLimit" TEXT,
+    "travelMethod" TEXT,

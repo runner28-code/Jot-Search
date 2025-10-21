@@ -11,6 +11,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
   const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
   if ( marginBottom ) {
     styleObject.containerStyles += `mb-${marginBottom} `;
+// Temp comment
   }
 
   function handleChange(e) {
@@ -19,7 +20,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
 
   const placeholderText = placeholder || 'Search for companies or jobs...';
   return (
-// Temp comment
     <label 
       className={ styleObject.containerStyles }
       htmlFor={ placeholder }

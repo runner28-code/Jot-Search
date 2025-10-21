@@ -7,7 +7,6 @@
 
 # testing
 /coverage
-
 # production
 /build
 
@@ -18,3 +17,4 @@
 .env.test.local
 .env.production.local
 
+npm-debug.log*

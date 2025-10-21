@@ -27,7 +27,6 @@ TextInput.propTypes = {
   required: PropTypes.bool,
   onChange: PropTypes.func,
   baseStyles: PropTypes.string.isRequired,
-  disabled: PropTypes.bool
 }
 
 function renderLabel( label, required, name ) {

@@ -20,7 +20,6 @@ function renderActiveIcon(choice, currentChosen) {
 
 function renderHorizontalRule(index, arrayLength) {
   if (index !== arrayLength - 1) {
-    return (
       <hr className='border-royalBlue border-1.5 border-solid my-4' />
     )
   }
@@ -48,6 +47,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
           { renderHorizontalRule(index, choices.length) }
         </div>)
       })}
+    </div>
   )
 }
 

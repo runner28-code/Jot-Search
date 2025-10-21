@@ -13,6 +13,7 @@
                     "containerPort": 5000, 
                     "hostPort": 5000, 
                     "protocol": "tcp"
+                }
             ], 
             "essential": true,
             "logConfiguration": { 
@@ -68,7 +69,6 @@
                     "name": "BULLHORN_CLIENT_ID", 
                     "value": "{SECRET_BULLHORN_CLIENT_ID}"
                 },
-                {
                     "name": "BULLHORN_CLIENT_SECRET", 
                     "value": "{SECRET_BULLHORN_CLIENT_SECRET}"
                 },

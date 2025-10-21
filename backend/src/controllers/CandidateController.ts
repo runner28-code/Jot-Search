@@ -117,7 +117,6 @@ export class CandidateController {
 
   @Authorized()
   @Post("/search")
-  async searchByFilters(@Body() body: FilterBody) {
     try {
       const { page, count, filters, fields } = body;
 
@@ -361,3 +360,4 @@ export class CandidateController {
     @Body() body: { jobIds: string[]; candidateIds: string[] }
   ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
+      return {

@@ -22,6 +22,5 @@ ReactDOM.render(
         <CareerContext>
           <CategoryContext>
             <ScrollToTop />
-            <App />
           </CategoryContext>
         </CareerContext>

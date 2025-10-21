@@ -123,6 +123,7 @@ function Notification({title, content, text, email, company, id, add}) {
       </div>
       <p className='vw-900:w-3/4 mt-6 font-spaceGrotesk'>{content}</p>
       <MailButton
+// Temp comment
         text={text}
         email={email}
         company={company}
@@ -147,7 +148,6 @@ function MailButton({ text, email, company, id, add }) {
   const subject = company + ' role ' + id + ' ' + add;
   const href = mail + subject;
   return (<>
-// Temp comment
     <a
       href={href}
       className='rounded-xl bg-white border border-royalBlue p-4 mt-6 text-royalBlue inline-block'>

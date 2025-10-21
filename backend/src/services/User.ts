@@ -389,6 +389,7 @@ export const getCompanyDashboardStats = async (days: number) => {
       result: true,
       data,
       message: null,
+    };
   } catch (error) {
     console.log('err: ', error);
     return {
@@ -545,3 +546,4 @@ export const getStats = async (userId: string) => {
 
     const totalJobsCountPromise = BigQueryService.getClient().query({
       query: totalJobsCountQuery,
+      location: "US",

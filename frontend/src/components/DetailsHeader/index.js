@@ -5,6 +5,7 @@ import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
 import SourceIdentifier from '../SourceIdentifier';
 import BackButton from '../BackButton';
 
+export default function DetailsHeader({ type, source }) {
   let Icon = undefined;
   switch(type) {
     case 'candidate':
@@ -19,7 +20,6 @@ import BackButton from '../BackButton';
       break;
   }
   const titleCasedType = type.charAt(0).toUpperCase() + type.slice(1);
-  let headerText
   if ( type === 'company') {
     headerText = 'Company Profile';
   }else { 

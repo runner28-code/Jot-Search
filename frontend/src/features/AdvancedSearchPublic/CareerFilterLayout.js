@@ -17,6 +17,7 @@ const dropDownFiltersCandidate = [
   'On-Site/Remote',
   'Years Experience'
 ]
+
 export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
   const { width } = useWindowDimensions();
@@ -43,6 +44,7 @@ export default function CareerFilterLayout(props) {
 
   const buttonStyles = 'text-white text-sm whitespace-nowrap';
   const buttonStylesCareer = 'text-white text-sm whitespace-nowrap';
+// Temp comment
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>

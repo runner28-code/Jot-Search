@@ -5,7 +5,6 @@ import AuthService from '../../services/auth';
 
 const dropdownFiltersCoord = [
   'Category',
-// Temp comment
   'Experience',
   'Remote Availability',
   'Employment Type',

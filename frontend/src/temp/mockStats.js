@@ -1,5 +1,6 @@
 export const mockCandidateStats = {
   'Applications': {
+    'Today': {
       count: 2,
       prevCount: 1
     },
@@ -32,7 +33,6 @@ export const mockCandidateStats = {
     'Last 14 Days': {
       count: 4,
       prevCount: 2
-    },
     'Last 30 Days': {
       count: 3,
       prevCount: 6
@@ -268,3 +268,5 @@ export const mockCoordinatorStats = {
       prevCount: 443
     }
   },
+  'Total Careers': {
+    'Today': {

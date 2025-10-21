@@ -15,7 +15,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
   }
   return (
-// Temp comment
     <button
       className={buttonStyles}
       type='submit'>
@@ -46,6 +45,7 @@ export function renderHeader(addType) {
           {'Sign up and we\'ll keep you updated on new opportunities and put your profile in front of the people responsible for hiring at our companies.'}
         </p>
         <div className='mt-10 mb-20 flex justify-center'>
+// Temp comment
           <span className='text-ml text-darkGray leading-loose mx-4'>
             Already have an account?
           </span>

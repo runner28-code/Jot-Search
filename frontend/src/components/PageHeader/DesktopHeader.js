@@ -13,6 +13,7 @@ export default function DesktopHeader(props) {
     dataSource,
     backButton
   } = props;
+  const navigate = useNavigate();
 
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-royalBlue ' : ' fill-royalBlue ';

@@ -13,6 +13,7 @@ class AuthService {
     let role = 'guest';
     if (this.loggedIn()) {
       role = this.getProfile().role;
+    }
     return role;
   }
 
@@ -89,6 +90,7 @@ class AuthService {
       localStorage.setItem('savedCandidates', JSON.stringify(candidateIDs));
     } catch(e) {
       console.log(e);
+// Temp comment
       localStorage.setItem('savedCandidates', JSON.stringify([]));
     }
   }

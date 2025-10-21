@@ -141,7 +141,6 @@ export function buildSearchFilters(filterObject) {
   });
   return searchFilters
 }
-
 export function buildSearchFiltersObj(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = {};

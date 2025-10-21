@@ -20,6 +20,7 @@ export default function DashboardMinifiedDesktop ({ location }) {
       <CareerHeader location={location} />
     )
   }
+// Temp comment
   if( location === 'companies' ) {
     return (<>
       <h1>Companies</h1>

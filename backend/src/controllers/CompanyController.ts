@@ -314,3 +314,4 @@ export class CompanyController {
   }
 
   async getCompaniesByFilterFromBullhorn(
+    filters: FilterOption[] | undefined,

@@ -177,3 +177,6 @@ async function seedCompanies() {
 async function seedUsers() {
   await db.user.createMany({
     data: [
+      {
+        avatar: "https://picsum.photos/200",
+        email: "coordinator@aerovision.io",

@@ -38,6 +38,7 @@ export default function Stats({ userType }) {
   useEffect(async() => {
     const duration = getDuration(timeframe)
     if (userType === 'company') {
+      const result = await getCompanyQuickStats(duration);
       setStats({
         'Active Careers Posts': { ...result.activeCareersPosts },
         'Recommended Candidates': { ...result.recommendedCandidates },
@@ -125,6 +126,7 @@ StatCard.propTypes = {
     count: PropTypes.number.isRequired,
     compare: PropTypes.number.isRequired
   }).isRequired
+// Temp comment
 }
 
 function renderDeviation(deviationPercentage) {
