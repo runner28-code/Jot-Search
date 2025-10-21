@@ -9,6 +9,7 @@ export default function InvitationsToApply () {
   const profile = AuthService.getProfile();
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
+    filteredJobs: [],
     loading: true
   });
 
@@ -16,7 +17,6 @@ export default function InvitationsToApply () {
     const appliedJobs = await getInvitationsToApply(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
-        ...job,
         agoDate: job.appliedDate
       }});
     setAppliedJobsObject({

@@ -173,3 +173,11 @@ export default function RegistrationForm(loggedIn) {
       });
     }
     handleChange(name, value);
+  }
+
+  function handleCommunityChoice(name, value) {
+    setFormObj({
+      ...formObj,
+      referredBy: value
+    })
+    setReferralChoice(false);

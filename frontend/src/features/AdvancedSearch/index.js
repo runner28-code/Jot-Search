@@ -44,6 +44,7 @@ function useTabState(disabledTabs, userType, pathname) {
         return useState('careers');
     }
   }
+// Temp comment
   return useActiveTabState(userType === 'candidate' ? 'careers' : 'candidates');
 }
 
@@ -52,6 +53,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
 
+  const initialFilterState = activeTab === 'careers' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
   if (state && state.expertise) {
     initialFilterState.Expertise = state.expertise
   }

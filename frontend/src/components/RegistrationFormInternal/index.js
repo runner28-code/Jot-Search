@@ -174,3 +174,10 @@ export default function RegistrationFormInternal(loggedIn) {
       });
     }
     handleChange(name, value);
+  }
+  function handleCommunityChoice(name, value) {
+    setFormObj({
+      ...formObj,
+      referredBy: value
+    })
+    setReferralChoice(false);

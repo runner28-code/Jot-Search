@@ -1,3 +1,4 @@
+// Temp comment
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -30,7 +31,6 @@ export default function GlobalSearch({ placeholder }) {
     setSearchTerm( searchTerm );
     setResults({ ...results, loading: true, forceHidden: false });
     debounceSearchTermFunction( searchTerm );
-// Temp comment
   }
 
   /* Debounce functions will wait until user stops typing to send API call */
@@ -73,3 +73,44 @@ export default function GlobalSearch({ placeholder }) {
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
     setResults({ ...results, forceHidden: true });
+  };
+
+  useEffect(() => {
+    listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
+  }, [closeDropdown]);
+  
+  /* STYLES & RENDER */
+  const stylesObject = {
+    containerStyles: 'flex flex-row-reverse items-center justify-evenly p-3 pl-6 h-18 w-135 vw-480:w-160 bg-white border-solid border-2 border-lightGrey rounded-2xl ',
+    searchIconStyles: 'h-12 w-12 ml-6 bg-royalBlue rounded-full flex justify-center items-center',
+    inputStyles: 'flex-1 h-5/6 vw-480:placeholder:text-md vw-1024:placeholder:text-xl'
+  }
+
+  return (
+    <div className='relative'>
+      <div ref={menuRef} >
+        <SearchBar
+          searchTerm={ searchTerm }
+          setSearchTerm={ handleSearchChange }
+          placeholder={ placeholder } 
+          alternateStylesObject={ stylesObject } />
+      </div>
+      { renderResultsContainer( results, searchTerm ) }
+    </div>
+  )
+}
+
+GlobalSearch.propTypes = {
+  placeholder: PropTypes.string
+}
+
+function renderResultsContainer( results, searchTerm ) {
+  if ( !searchTerm || results.forceHidden ) { // if no searchTerm, no results to display
+    return null;
+  }
+  
+  return (
+    <div className='absolute z-20 top-full w-full flex flex-col justify-center items-center min-h-50 px-6 py-4 rounded-2xl shadow-resultCardShadow bg-white '>
+      { renderResults( results ) }
+    </div>
+  )

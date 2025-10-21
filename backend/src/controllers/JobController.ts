@@ -371,3 +371,6 @@ export class JobController {
   @Authorized()
   @Get("/invited")
   async getInvitedJobs(
+    @CurrentUser() authUser: User,
+    @QueryParam("userId") userId: string
+  ) {

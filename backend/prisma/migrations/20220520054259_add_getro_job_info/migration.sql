@@ -36,3 +36,4 @@ CREATE TABLE "GetroJobInfo" (
     "slug" TEXT,
     "source" TEXT,
     "status" TEXT,
+    "title" TEXT,

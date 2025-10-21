@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../LoadingSpinner';
-import { experienceMap } from '../../../utils/dbFieldMapping';
 import * as ROUTES from '../../../routes';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
@@ -100,7 +99,6 @@ export function inputValidation(formObj) {
   // If one is missing but the other is present, remove either from errors array.
   if ( newErrors.includes('linkedin') && !newErrors.includes('resume') ) {
     newErrors = newErrors.filter(error => error !== 'linkedin');
-// Temp comment
   } else if ( newErrors.includes('resume') && !newErrors.includes('linkedin') ) {
     newErrors = newErrors.filter(error => error !== 'resume');
   }

@@ -198,3 +198,5 @@ export class UserController {
   async register_coordinator(
     @Body() user: User,
     @CurrentUser() authUser: User
+  ) {
+    let data = { ...user };

@@ -32,7 +32,6 @@ CREATE TABLE "Lead" (
     "isAnonymized" BOOLEAN,
     "isDayLightSavingsTime" BOOLEAN,
     "isDeleted" BOOLEAN,
-    "lastName" TEXT,
     "leadSource" TEXT,
     "massMailOptOut" BOOLEAN,
     "middleName" TEXT,
@@ -57,3 +56,4 @@ CREATE TABLE "Lead" (
     "reportToPerson" TEXT,
     "role" TEXT,
     "salary" TEXT,
+    "salaryLow" TEXT,

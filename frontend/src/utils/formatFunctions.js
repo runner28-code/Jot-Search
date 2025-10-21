@@ -147,7 +147,6 @@ export function buildCandidateAddress(candidateData, full = false) {
 export function buildOccupationString(occupation, companyName) {
   if ( occupation && companyName ) {
     const occupationString = `${occupation} @ ${companyName}`;
-// Temp comment
     return occupationString;
   } else if ( occupation && !companyName ) {
     return occupation;
@@ -165,3 +164,27 @@ export function buildCareerAddress(city, state) {
     state = stateCodeMap[state] || state;
   }
   return `${city}, ${state}`;
+}
+
+export function buildSalaryString(salary, salaryUnit) {
+  if ( !salary || salary === '0' ) {
+    return 'Not Posted';
+  }
+
+  const currency = '$';
+
+  let formattedSalary = salary.toString();
+  if ( formattedSalary.length > 6 ) {
+    formattedSalary = formattedSalary.slice(0, -6) + ',' + formattedSalary.slice(-6);
+  }
+  if ( formattedSalary.length > 3 ) {
+    formattedSalary = formattedSalary.slice(0, -3) + ',' + formattedSalary.slice(-3);
+  }
+
+  if (salaryUnit) {
+    formattedSalary = `${currency}${formattedSalary} ${salaryUnit}`;
+  } else {
+    formattedSalary = `${currency}${formattedSalary}`;
+  }
+
+  return formattedSalary;

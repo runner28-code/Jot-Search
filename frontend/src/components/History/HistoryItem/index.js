@@ -7,6 +7,7 @@ function isTodayOrYesterday(dateObj) {
     isYesterday: false
   }
 
+// Temp comment
   const today = new Date();
   const sameYear = today.getFullYear() === dateObj.getFullYear();
   const sameMonth = sameYear && today.getMonth() === dateObj.getMonth();
@@ -58,3 +59,23 @@ function formatDateString(date) {
   // Format date
   const formattedDate = formatDateByDay(isToday, isYesterday, dateObj);
   return formattedDate;
+}
+
+function renderMessage(historyObj) {
+  if ( historyObj.message.includes('{careerName}') ) {
+    const messageSplit = historyObj.message.split('{careerName}');
+    return (
+      <p className='text-xl'>
+        {messageSplit[0]}
+        <Link 
+          to={`/careers/${historyObj.careerId}`}
+          className='text-royalBlue font-bold underline'
+        >
+          {historyObj.careerName}
+        </Link>
+        {messageSplit[1]}
+      </p>
+    )
+  } else {
+    return <p className='text-xl'>{ historyObj.message }</p>;
+  }

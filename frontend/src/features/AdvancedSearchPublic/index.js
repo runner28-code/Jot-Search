@@ -129,6 +129,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     }
     setActiveTab(tabChoice);
     setPage(1);
+// Temp comment
   }
 
   function clearFilters() {

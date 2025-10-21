@@ -846,3 +846,10 @@ export class BullhornService {
             "type",
             "willRelocate",
           ].join(","),
+          query: "isDeleted:0  AND NOT status:Archive",
+          start: offset,
+          count,
+          sort,
+        });
+        const url = `${this.restUrl}search/Lead?${query}`;
+        console.log(url);

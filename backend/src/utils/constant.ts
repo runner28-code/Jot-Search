@@ -411,3 +411,8 @@ const job_filter_exclude_keys = [
   "trauma",
   "troops",
   "truck driver",
+  "tutor",
+  "unboxer",
+  "urology",
+  "utilities",
+  "utility",

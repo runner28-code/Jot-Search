@@ -11,7 +11,6 @@ export type SavedJob = {
     job: string;
 }
 
-export type Job = {
     id?: string;
     externalId?: string;
     description?: string;
@@ -23,6 +22,7 @@ export type Job = {
     country_id?: string;
     employmentType?: string;
     title?: string;
+    willRelocate?: string;
     yearsRequired?: string;
     status?: string;
     skillList?: string;

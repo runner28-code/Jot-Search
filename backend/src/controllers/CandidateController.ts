@@ -323,7 +323,6 @@ export class CandidateController {
         candidates: sortedCandidates,
         total,
       };
-    } catch (error) {
       console.log(error);
       return { message: error };
     }
@@ -356,3 +355,6 @@ export class CandidateController {
 
   @Authorized()
   @Post("/sendJobs")
+  async sendJobs(
+    @CurrentUser() authUser: User,
+    @Body() body: { jobIds: string[]; candidateIds: string[] }

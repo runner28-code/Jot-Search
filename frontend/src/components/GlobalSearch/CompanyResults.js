@@ -15,7 +15,6 @@ export default function CompanyResults({ companies }) {
       { companies.map(company => {
         return (
           <CompanyResult 
-            company={company} 
             key={company.id} />
         )
       })}

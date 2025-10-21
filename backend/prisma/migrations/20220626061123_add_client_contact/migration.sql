@@ -52,3 +52,4 @@ CREATE TABLE "ClientContact" (
     "occupation" TEXT,
     "office" TEXT,
     "owner" TEXT,
+    "pager" TEXT,

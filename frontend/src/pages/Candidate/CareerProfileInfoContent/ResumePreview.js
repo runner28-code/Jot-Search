@@ -9,10 +9,8 @@ import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const ResumePreview = ({ resumeUrl }) => {
   const [page, setPage] = useState(1);
-  const canvasRef = useRef(null);
 
   const { pdfDocument } = usePdf({
-// Temp comment
     file: resumeUrl,
     page,
     canvasRef,

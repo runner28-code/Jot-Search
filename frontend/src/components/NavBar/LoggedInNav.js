@@ -166,6 +166,7 @@ function renderChoices(userType, handleClick) {
   else { // fall back to guest choices
     choicesToRender = guestChoices
   }
+
   const choicesLength = choicesToRender.length;
   const selected = findSelectedFromPath();
 

@@ -25,6 +25,7 @@ export class BigQueryService {
                     ${query}
                     WHERE ${condition}
                 `;
+            }
             if (count) {
                 query = `
                     ${query}
@@ -58,3 +59,4 @@ export class BigQueryService {
               (${keys.join(', ')})
               VALUES (${values.join(', ')})
             `;
+            console.log(query)

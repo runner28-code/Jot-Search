@@ -61,3 +61,4 @@ CREATE TABLE "GetroMember" (
     "source" TEXT,
     "us_work_authorization" BOOLEAN,
     "will_work_anywhere" BOOLEAN,
+    "introduction" TEXT,

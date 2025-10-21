@@ -61,6 +61,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   const handleCancel = () => {
     setEditMode(false);
   }
+  const handleSubmit = () => {
     let dataToSubmit = {};
     dataToSubmit = { ...formData };
     dataToSubmit.skills = formData.skills.join(', ');
@@ -68,7 +69,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     if (formData.expertise) {
       dataToSubmit.categoryId = categories.find(category => category.name === formData.expertise).id;
       delete dataToSubmit.expertise;
-    }
 
     handleCandidateUpdate(dataToSubmit);
     setEditMode(false);

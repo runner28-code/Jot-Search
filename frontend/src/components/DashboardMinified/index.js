@@ -11,6 +11,7 @@ export default function DashboardMinified({ location }) {
   const loggedIn = AuthService.loggedIn();
 
   if( loggedIn ) {
+// Temp comment
     return (
       <div className='flex flex-row items-center justify-start bg-sky-600 mb-8 text-white py-4 px-10'>
         <LinkSwap
@@ -44,7 +45,6 @@ function LinkSwap ({ location, loggedIn }) {
         <span className={loggedIn ? '' : 'underline '}>Back</span>
       </Link>
     )
-// Temp comment
   }
   if(location === 'companies' ) {
     return (

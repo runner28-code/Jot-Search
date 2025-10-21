@@ -145,7 +145,6 @@ function MobileCard({ data, addressString, employeeString }) {
           {/* Title */}
           <p className='text-[2.1rem] font-spaceGrotesk font-semibold text-charcoal leading-none mt-xs'>{data.name}</p>
           {/* First row icons */}
-          <div className='w-full flex items-center mt-m'>
             {/* Location */}
             <div className='w-1/3 flex items-center'>
               <img
@@ -161,6 +160,7 @@ function MobileCard({ data, addressString, employeeString }) {
           </div>
         </div>
       </Link>
+      <FavoriteButton
         type={'company'}
         data={data} />
     </div>

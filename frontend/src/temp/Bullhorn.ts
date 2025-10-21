@@ -178,7 +178,6 @@ export type Candidate = {
     comments?: string;
     companyName?: string; // !
     companyURL?: string;
-    dateAdded?: string;
     dateAvailable?: string;
     dateAvailableEnd?: string;
     dateI9Expiration?: string;
@@ -284,3 +283,5 @@ export type Lead = {
     id: string;
     address?: string;
     campaignSource?: string;
+    candidates?: string;
+    category?: string;

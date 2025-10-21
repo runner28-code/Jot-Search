@@ -48,7 +48,6 @@ export default function Stats({ userType }) {
         'Application Invitations Sent': { ...result.applicationInvitationsSent }                
       })
     }
-// Temp comment
     if (userType === 'coordinator') {
       const result = await getCoordinatorQuickStats(duration);
       setStats({
@@ -117,5 +116,21 @@ function StatCard({ stat, value }) {
         <p className='text-md text-charcoal'>{stat}</p>
       </div>
       {renderDeviation(deviationPercentage)}
+    </div>
+  )
+}
+
+StatCard.propTypes = {
+  stat: PropTypes.string.isRequired,
+  value: PropTypes.shape({
+    count: PropTypes.number.isRequired,
+    compare: PropTypes.number.isRequired
+  }).isRequired
+}
+
+function renderDeviation(deviationPercentage) {
+  return (
+    <div className='flex items-center '>
+      {renderStyledDeviation(deviationPercentage)}
     </div>
   )

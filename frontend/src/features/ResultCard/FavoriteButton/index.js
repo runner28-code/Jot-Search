@@ -55,7 +55,6 @@ FavoriteButton.propTypes = {
   addClass: PropTypes.string,
   data: PropTypes.shape({
     id: PropTypes.string,
-// Temp comment
     candidate: PropTypes.string,
     status: PropTypes.string,
   }).isRequired,

@@ -187,7 +187,6 @@ module.exports = {
       maxWidth: {
         '100': '25rem',
         '140': '35rem',
-        '208': '52rem',
         '240': '60rem',
         '248': '62rem',
         '290': '72.5rem',
@@ -225,3 +224,5 @@ module.exports = {
       '120': '30rem',
       '350': '87.5rem',
       '400': '100rem',
+    },
+    minHeight: {

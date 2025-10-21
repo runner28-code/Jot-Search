@@ -181,3 +181,19 @@ function renderSkillsSection({skillList}) {
     <h4 className={sectionHeaderStyles}>Skills Required</h4>
     <SkillsList items={skillList} />
   </>)
+}
+function SkillsList({items}) {
+  if( !items ) {
+    return (
+      <p className='font-spaceGrotesk text-textBlack text-sm mb-10'>
+        n/a
+      </p>
+    )
+  }
+  return (
+    <ul className='list-disc ml-8 mb-20'>
+      {items.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  )

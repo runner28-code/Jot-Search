@@ -19,7 +19,6 @@ export default function Company() {
   const { width } = useWindowDimensions();
   const { id } = useParams();
   const [companyData, setCompanyData] = useState({});
-  const [loading, setLoading] = useState(true);
 
   useEffect(async () => {
     const companyFromApi = await getCompanyById(id);
@@ -124,7 +123,6 @@ function RenderHeader({type, loggedIn}) {
     </>)
   }
   return (
-// Temp comment
     <DashboardPublicMin type={type} />
   )
 }
@@ -161,3 +159,31 @@ function renderCompanyDescription(description, textStyles) {
       {description}
     </div>
   )
+}
+
+function renderSectorList(companyData, width , stylesObject) {
+
+  const business = companyData.businessSectorList; 
+  if( business == '' ) {
+    return;
+  }
+  if( business == Array ) {
+    return(<>
+      <hr className={stylesObject.hrStyles + 'mt-4'} />
+      {/* Business Sector */}
+      <div className='p-6'>
+        <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>Business Sectors</h4>
+        <ul>
+          {
+            business.map((sector, index) =>
+              <li key={index}>{sector}</li>
+            )
+          }
+        </ul>
+      </div>   
+    </>
+    )
+  }
+  return(<>
+    { renderSectorsSplit(business, width, stylesObject) }
+  </>)

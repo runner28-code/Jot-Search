@@ -29,7 +29,6 @@ function HeaderContent({ companyData }) {
     <>
       { renderDesktopLogo(companyData.logo, companyData.name ) }
       <div className='grow p-6'>
-// Temp comment
         <div className='flex flex-wrap items-center mb-4'>
           { renderCompanyLogo(companyData.logo, companyData.name) }
           <FillerIcon />
@@ -256,3 +255,15 @@ function isValidHttpUrl(string) {
   }
 
   return url.protocol === 'http:' || url.protocol === 'https:';
+}
+
+function renderIndustry(item, headerRowTextStyles) {
+
+  if( !item ) {
+    return (<>
+      <p className={headerRowTextStyles}>Industry</p>
+    </>)
+  }
+  return (<>
+    <p className={headerRowTextStyles}>{item}</p>
+  </>)

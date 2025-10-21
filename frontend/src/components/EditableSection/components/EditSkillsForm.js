@@ -12,7 +12,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
       target: {
         name: inputName,
         value: newValues.join(', '),
-// Temp comment
       },
     };
     handleChange(fakeEvent);
@@ -52,6 +51,7 @@ function renderChosen(skills, onChange) {
         function handleClick() {
           onChange('primarySkills', skills.filter(s => s !== skill))
         }
+// Temp comment
         return (
           <ChoiceTag
             key={skill}

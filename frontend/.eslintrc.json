@@ -2,10 +2,10 @@
     "env": {
         "browser": true,
         "es2021": true
+    },
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:react/jsx-runtime"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -61,3 +61,4 @@
             "observer", // `property`
             {"property": "styled"}, // `object` is optional
             {"property": "observer", "object": "Mobx"},
+            {"property": "observer", "object": "<pragma>"} // sets `object` to whatever value `settings.react.pragma` is set to

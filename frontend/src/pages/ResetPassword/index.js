@@ -52,6 +52,7 @@ export default function ResetPassword() {
     if( success ) {
       return (
         <div className='mb-4 text-center'>
+// Temp comment
           <span className='text-success'>Reset Password Successful.</span>&nbsp;
           <Link
             to={ROUTES.login}
@@ -61,4 +62,10 @@ export default function ResetPassword() {
           </Link>
         </div>
       )
+    }
+  }
+
+  const renderError = () => {
+    if ( error ) {
+      return ( <div className='text-error mb-4'>{error}</div> )
     }

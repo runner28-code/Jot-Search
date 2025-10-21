@@ -639,3 +639,8 @@ model Candidate {
 
   nickName              String?
   numCategories         Int?
+  numOwners             Int?
+  occupation            String?
+  otherDeductionsAmount String?
+  otherIncomeAmount     String?
+  pager                 String?

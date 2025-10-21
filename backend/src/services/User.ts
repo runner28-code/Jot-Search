@@ -539,3 +539,7 @@ export const getStats = async (userId: string) => {
       location: "US",
     });
 
+    const savedJobsCountPromise = BigQueryService.getClient().query({
+      query: savedJobsCountQuery,
+      location: "US",
+    });

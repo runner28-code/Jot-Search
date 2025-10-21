@@ -21,9 +21,9 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     const { name, value } = event.target;
     if ( name === 'avatar' ) {
       const imageToUpload = event.target.files[0];
-      console.log(imageToUpload);
     }
     setFormData({ ...formData, [name]: value });
   }
+
   const handleCancel = () => {
     setEditMode(false);

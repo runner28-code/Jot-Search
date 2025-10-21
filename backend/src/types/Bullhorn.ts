@@ -196,7 +196,6 @@ export type Candidate = {
     dayRateLow?: string;
     degreeList?: string;
     description?: string;
-    desiredLocations?: string;
     disability?: string;
     educationDegree?: string;
     email?: string;
@@ -284,3 +283,5 @@ export type Lead = {
     address_zip?: string;
     address_country_id?: string;
     campaignSource?: string;
+    candidates?: string;
+    category?: string;

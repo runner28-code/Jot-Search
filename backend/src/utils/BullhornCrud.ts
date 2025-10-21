@@ -263,3 +263,7 @@ export const saveLeads = async (leads: any[]) => {
         });
         console.log(`Saved Lead with ID = ${lead.id} successfully`);
       } catch (error: any) {
+        console.log(error.message);
+        console.log(`ERROR: while saving Lead with ID = ${lead.id}`);
+      }
+    }

@@ -18,7 +18,6 @@ export default function AccessibleDropdown(props) {
     choiceObject,
     currentChosen, 
     stylesObject,
-// Temp comment
     showDropdownArrow,
     disabled,
   } = props;
@@ -69,6 +68,7 @@ export default function AccessibleDropdown(props) {
   );
 }
 
+// Temp comment
 AccessibleDropdown.defaultProps = {
   choices: [],
 };

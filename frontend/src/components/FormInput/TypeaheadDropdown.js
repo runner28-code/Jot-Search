@@ -41,6 +41,7 @@ export default function TypeaheadDropdown(props) {
   
   /* Filter choices based on input */
   useEffect(() => {
+    if (dropdownType === 'tags') {
       setFilteredChoices(choices.filter(choice => choice.toLowerCase().includes(inputValue.toLowerCase())));
     }
   }, [inputValue]);
@@ -96,6 +97,7 @@ TypeaheadDropdown.propTypes = {
 }
 
 function renderLabel(name, label, required) {
+// Temp comment
   if ( !label ) {
     return null;
   }

@@ -4,7 +4,6 @@ import LoadingSpinner from '../../LoadingSpinner';
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import * as ROUTES from '../../../routes';
 
-// Temp comment
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if ( submissionObject.loading ) {
     return <LoadingSpinner
@@ -86,6 +85,7 @@ export function inputValidation(formObj) {
   }
   if ( formObj.password !== formObj.verifyPassword ) { // Match passwords
     newErrors.push('password', 'verifyPassword');
+// Temp comment
   }
   if ( formObj.skills.length < 3 ) { // Ensure at least 3 skills chosen
     newErrors.push('skills');

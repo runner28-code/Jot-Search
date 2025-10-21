@@ -41,7 +41,6 @@ const uploadToS3 = async(req: any, res: any) => {
   form.parse(req, async (err: any, fields: any, files: any) => {
     const fileObject = await files.file
 
-    const buffer = fs.readFileSync(fileObject.filepath)
 
     const uuid = genUUID()
 
@@ -125,3 +124,4 @@ useExpressServer(app, {
       if (data && data.email) {
         const user = await findUserByEmail(data.email);
         if (user) {
+          action.request.user = user;

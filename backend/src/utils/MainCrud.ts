@@ -75,6 +75,7 @@ export const saveJob = async (job: string, candidate: string) => {
           },
         },
       });
+    } else {
       await db.user.update({
         where: {
           id: candidate,
@@ -122,3 +123,4 @@ export const getSavedJobs = async (candidateId: string) => {
     return { message: error, result: false };
   }
 };
+

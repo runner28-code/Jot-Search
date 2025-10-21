@@ -165,7 +165,6 @@ export const skills = [
   'Data Transformation',
   'Data Visualization',
   'Database Design',
-// Temp comment
   'DEI',
   'Demand Planning',
   'Design',
@@ -302,7 +301,6 @@ export const skills = [
   'Power BI',
   'PowerPoint',
   'PPC',
-  'Print Media',
   'Private Equity',
   'Process Improvement',
   'Procurement',
@@ -342,3 +340,6 @@ export const skills = [
   'SaaS',
   'Sales',
   'Sales Development',
+  'Sales Operations',
+  'Sales Presentations',
+  'Sales Process',

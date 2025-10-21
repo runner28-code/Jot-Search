@@ -13,7 +13,7 @@ const setupCronJobs = async () => {
     } catch (error) {
       consoleLog(error);
     }
-    consoleLog('/// CRON_JOB_ENDED: BULLHORN_GET_COMPANIES');
+  });
 
   cron.schedule("0 */2 * * *", async () => {
     try {
@@ -79,3 +79,4 @@ const setupCronJobs = async () => {
     try {
       consoleLog('/// CRON_JOB_STARTED: GETRO_GET_MEMBERS');
       await (await GetroService.getClient()).getMembers(false, 50);
+    } catch (error) {

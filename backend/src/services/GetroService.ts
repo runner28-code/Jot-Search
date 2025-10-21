@@ -249,3 +249,5 @@ export class GetroService {
                                 locations: item.locations?.map((loc: any) => loc.name).join(' | '),
                                 organization_doman: item.organization?.domain,
                                 organization_id: item.organization?.id,
+                                organization_logo_url: item.organization?.logo_url,
+                                organization_name: item.organization?.name,
