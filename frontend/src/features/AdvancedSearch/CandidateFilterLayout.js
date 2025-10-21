@@ -104,6 +104,7 @@ export default function CandidateFilterLayout(props) {
         >
           Clear All
         </button>
+// Temp comment
       </div>
     </div>
   );

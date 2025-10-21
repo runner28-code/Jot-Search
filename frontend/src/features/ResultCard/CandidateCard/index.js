@@ -62,7 +62,6 @@ export default function CandidateCard({ data, disableLink }) {
               <span className='text-charcoal'>
                 LinkedIn
               </span>
-// Temp comment
             </div>
             {/* Location */}
             <div className='w-1/3 flex items-center'>

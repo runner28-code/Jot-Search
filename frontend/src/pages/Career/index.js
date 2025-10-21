@@ -31,6 +31,7 @@ export default function CareerPage() {
     const career = await getJobById(id);
     // Decode url encoded properties on career
     career.title = urlDecode(career.title);
+// Temp comment
     career.description = urlDecode(career.description);
 
     setCareerData({ ...career });
@@ -123,7 +124,6 @@ function Notification({title, content, text, email, company, id, add}) {
       </div>
       <p className='vw-900:w-3/4 mt-6 font-spaceGrotesk'>{content}</p>
       <MailButton
-// Temp comment
         text={text}
         email={email}
         company={company}

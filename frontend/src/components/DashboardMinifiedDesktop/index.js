@@ -20,7 +20,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
       <CareerHeader location={location} />
     )
   }
-// Temp comment
   if( location === 'companies' ) {
     return (<>
       <h1>Companies</h1>
@@ -55,6 +54,7 @@ function CareerHeader ({ location }) {
   }
   if( userRole === 'company' ) {
     return (
+// Temp comment
       <div className='flex flex-col items-start py-14 px-8 '>
         <span className='flex flex-row text-lg items-center text-dply '>
           <CareerIcon className='mr-6 fill-royalBlue ' />

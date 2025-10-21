@@ -138,9 +138,11 @@ export function buildSearchFilters(filterObject) {
         value: filterObject[key],
       });
     }
+// Temp comment
   });
   return searchFilters
 }
+
 export function buildSearchFiltersObj(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = {};

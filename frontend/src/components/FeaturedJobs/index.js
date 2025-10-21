@@ -21,7 +21,6 @@ export default function FeaturedJobs() {
   const cardContentStylesMobile = 'ml-8';
   const cardContentTitle = 'font-spaceGrotesk text-lg mb-6';
   const cardContentTitleMobile = 'font-spaceGrotesk font-semibold text-md mb-6';
-  const cardContentSubtitle ='font-spaceGrotesk text-royalBlue text-sm uppercase';
   const cardContentSubtitleMobile ='font-spaceGrotesk text-royalBlue text-xs uppercase';
   const viewAllStyles = 'text-center mt-48';
   const viewAllStylesMobile = 'text-center mt-12';
@@ -83,6 +82,7 @@ function renderColorShapes() {
     </div>
   )
 }
+
 
 function RenderImage({image}) {
   const containerStyles = 'w-48 h-48 mb-6 ';

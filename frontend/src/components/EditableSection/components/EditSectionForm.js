@@ -32,7 +32,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   }
   if ( propertyName === 'resume' ) {
     return <EditResumeForm
-// Temp comment
       handleChange={handleChange} />
   }
   return (
@@ -41,7 +40,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         const capitalizedKey = startCase(key);
         const labelString = `${capitalizedKey}:`;
         if ( key === 'email' ) {
-          return <Property
             key={key}
             name={key}
             value={value}

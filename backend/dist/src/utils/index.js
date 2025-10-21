@@ -69,6 +69,7 @@ const consoleLog = (message, newLine = true) => {
 };
 exports.consoleLog = consoleLog;
 const sleep = (ms) => __awaiter(void 0, void 0, void 0, function* () {
+    return new Promise(resolve => setTimeout(resolve, ms));
 });
 exports.sleep = sleep;
 const getDataSource = (id) => {

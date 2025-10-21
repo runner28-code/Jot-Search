@@ -66,6 +66,7 @@ export const choices = {
     icon: ContactIcon,
     link: ROUTES.talentInTulsa,
   },
+// Temp comment
   logout: {
     label: 'Logout',
     icon: LogoutIcon,
@@ -128,7 +129,6 @@ export function findSelectedFromPath() {
     case 'companies':
       return 'Companies';
     case 'add-user':
-// Temp comment
       return 'Add User';
     case 'alerts':
       return 'Alerts';

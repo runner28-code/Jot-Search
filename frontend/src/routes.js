@@ -20,7 +20,6 @@ export const companies = '/companies';
 // Candidate Dashboard
 export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';
-export const savedCareers = '/saved-careers';
 export const savedCompanies = '/saved-companies';
 // Company Dashboard
 export const candidates = '/candidates';

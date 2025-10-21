@@ -24,6 +24,7 @@ export default function SignUp() {
               <RegistrationForm />
             </div>
           </div>
+        </div>
       </main>      
     )
   }

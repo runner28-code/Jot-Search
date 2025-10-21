@@ -131,7 +131,6 @@ export class JobController {
       const _filters = normalizeFilters(filters)
       const where: any = {
         datasource: _datasource as any,
-        ..._filters,
       }
 
       const skip = (count || 0) * ((page - 1) || 0)

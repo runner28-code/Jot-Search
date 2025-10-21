@@ -118,6 +118,7 @@ export default function DesktopLayout(props) {
     />
   </>)
 }
+
 DesktopLayout.propTypes = {
   data: PropTypes.shape({
     careerData: PropTypes.object.isRequired,
@@ -154,7 +155,6 @@ function renderAboutCompanySection(careerData, companyName) {
       className='font-spaceGrotesk text-textBlack text-md mb-5'
       dangerouslySetInnerHTML={{ __html: careerData.company?.description || 'No Company Description Available' }}
     />
-  </>)
 }
 
 function renderDescription(role, navigate, companyName, skillList, careerData) {

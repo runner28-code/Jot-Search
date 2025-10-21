@@ -196,6 +196,7 @@ export const skills = [
   'Executive Administration',
   'Facilitation',
   'Figma',
+  'Financial Analysis',
   'Financial Modeling',
   'Financial Planning',
   'Financial Reporting',
@@ -342,6 +343,7 @@ export const skills = [
   'Sales Development',
   'Sales Operations',
   'Sales Presentations',
+// Temp comment
   'Sales Process',
   'Sales Strategy',
   'Sales Tools',

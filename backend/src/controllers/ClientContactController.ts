@@ -33,6 +33,7 @@ export class ClientContactController {
       return { message: error };
     }
   }
+
   // @Authorized()
   @Post("/search")
   async searchByFilters(@Body() body: FilterBody) {

@@ -47,7 +47,6 @@ export default function NavSearchMobile({ placeholder }) {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
       return { filtersArr: searchFilters };
     } else {
-// Temp comment
       return { filterKey: 'name', filterValue: searchTerm }
     }
   };

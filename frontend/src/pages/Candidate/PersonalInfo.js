@@ -200,6 +200,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 htmlFor='zip'
                 className={labelStyles}
               >
+                <p className={labelTextStyles}>Zip/Postal Code</p>
                 <input
                   type='text'
                   name='zip'

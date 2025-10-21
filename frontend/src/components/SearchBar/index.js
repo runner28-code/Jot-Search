@@ -11,7 +11,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
   const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
   if ( marginBottom ) {
     styleObject.containerStyles += `mb-${marginBottom} `;
-// Temp comment
   }
 
   function handleChange(e) {

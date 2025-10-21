@@ -72,6 +72,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
 
+    } else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters(filterObject);
       return { filtersArr: searchFilters };
     } else {
@@ -127,6 +128,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       setFilterObject(defaultCandidateFilterState);
     }
     setActiveTab(tabChoice);
+// Temp comment
     setPage(1);
   }
 

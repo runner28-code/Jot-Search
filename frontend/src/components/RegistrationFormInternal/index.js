@@ -11,7 +11,6 @@ import {
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {
-// Temp comment
   inputValidation,
   formatFormObj,
   renderButtonOrLoading,

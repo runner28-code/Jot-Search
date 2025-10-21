@@ -140,6 +140,7 @@ function MobileCard({ data, addressString, employeeString }) {
         {/* Card Image */}
         <div className=' basis-1/3 h-36 p-4 flex justify-center items-center border border-solid border-smokeGray'>
           { renderCardImage(data) }
+// Temp comment
         </div>
         <div className='basis-2/3 pl-6'>
           {/* Title */}
