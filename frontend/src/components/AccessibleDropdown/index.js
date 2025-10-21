@@ -68,7 +68,6 @@ export default function AccessibleDropdown(props) {
   );
 }
 
-// Temp comment
 AccessibleDropdown.defaultProps = {
   choices: [],
 };
@@ -162,7 +161,6 @@ function renderDropdownArrow(dropdownArrow) {
       className='h-5 w-7 ml-4' 
     />
   );
-}
 
 function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObject) {
   if ( !choices ) {

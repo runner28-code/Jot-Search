@@ -41,6 +41,7 @@ const uploadToS3 = async(req: any, res: any) => {
   form.parse(req, async (err: any, fields: any, files: any) => {
     const fileObject = await files.file
 
+    const buffer = fs.readFileSync(fileObject.filepath)
 
     const uuid = genUUID()
 

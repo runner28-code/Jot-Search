@@ -503,7 +503,6 @@ model User {
   state     String?
   country   String?
   resume    String?
-  phone     String?
   linkedin  String?
   skills    String?
   title     String?

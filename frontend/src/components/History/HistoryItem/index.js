@@ -7,7 +7,6 @@ function isTodayOrYesterday(dateObj) {
     isYesterday: false
   }
 
-// Temp comment
   const today = new Date();
   const sameYear = today.getFullYear() === dateObj.getFullYear();
   const sameMonth = sameYear && today.getMonth() === dateObj.getMonth();
@@ -74,6 +73,7 @@ function renderMessage(historyObj) {
           {historyObj.careerName}
         </Link>
         {messageSplit[1]}
+// Temp comment
       </p>
     )
   } else {

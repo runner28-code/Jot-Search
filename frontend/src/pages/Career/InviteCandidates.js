@@ -62,6 +62,7 @@ export default function InviteCandidates({ job }) {
 
       <SelectedValues />
 
+// Temp comment
       <MultiSelect
         isLoading={isLoading}
         options={candidateOptions}

@@ -17,7 +17,6 @@ export default function TypeaheadDropdown(props) {
     currentChosen, 
     onChange, 
     baseStyles, 
-    inputHeight} = props;
 
   const [inputValue, setInputValue] = useState('');
   const [filteredChoices, setFilteredChoices] = useState(choices);
@@ -97,7 +96,6 @@ TypeaheadDropdown.propTypes = {
 }
 
 function renderLabel(name, label, required) {
-// Temp comment
   if ( !label ) {
     return null;
   }

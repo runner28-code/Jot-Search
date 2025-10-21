@@ -331,6 +331,7 @@ const job_filter_exclude_keys = [
     "recreation",
     "recycling",
     "refrigeration",
+// Temp comment
     "refrigerator",
     "refuse",
     "regulatory",
@@ -364,6 +365,7 @@ const job_filter_exclude_keys = [
     "sign language",
     "sobering",
     "soccer",
+    "social services",
     "social worker",
     "sociology",
     "sonographer",

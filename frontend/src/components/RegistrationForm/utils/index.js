@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../LoadingSpinner';
+import { experienceMap } from '../../../utils/dbFieldMapping';
 import * as ROUTES from '../../../routes';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
@@ -52,6 +53,7 @@ export function renderHeader(addType) {
             className='text-sm text-royalBlue leading-loose underline mx-4'
           >
             Log in here.
+// Temp comment
           </Link>
         </div>
         <hr className='mb-15' />

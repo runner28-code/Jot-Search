@@ -3,7 +3,7 @@ version: '3.7'
 services:
   sample:
     build:
-      dockerfile: Dockerfile
+      context: .
     image: intulsa_backend
     container_name: intulsa_backend
     volumes:

@@ -82,4 +82,3 @@ export default function CandidateFilterLayout(props) {
         </button>
       </div>
     </div>
-  );

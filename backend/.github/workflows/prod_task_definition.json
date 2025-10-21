@@ -1,4 +1,5 @@
 // {
+//     "family": "prod-site-backend-task",
 //     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole",
 //     "networkMode": "awsvpc",
 //     "containerDefinitions": [
@@ -20,7 +21,6 @@
 //                 "options": {
 //                     "awslogs-group" : "/ecs/prod-site-backend-task",
 //                     "awslogs-region": "us-east-1",
-//                     "awslogs-stream-prefix": "ecs"
 //                 }
 //             },
 //             "environment": [

@@ -64,6 +64,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
           <FavoriteButton
             type={'job'}
             data={data}
+// Temp comment
             isFavoriteOverride={isFavoriteOverride} />
       }
     </div>
@@ -86,7 +87,6 @@ CompactCareerCard.propTypes = {
     title: PropTypes.string,
     employmentType: PropTypes.string,
     onSite: PropTypes.string,
-// Temp comment
     salary: PropTypes.string,
     salaryUnit: PropTypes.string,
     createdAt: PropTypes.string,

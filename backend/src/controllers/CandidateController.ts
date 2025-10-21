@@ -82,7 +82,6 @@ export class CandidateController {
     @Body() body: any
   ) {
     try {
-      console.log({ body });
       const { id, ...data } = body;
 
       if (authUser.role !== COORDINATOR) {
@@ -323,6 +322,7 @@ export class CandidateController {
         candidates: sortedCandidates,
         total,
       };
+    } catch (error) {
       console.log(error);
       return { message: error };
     }

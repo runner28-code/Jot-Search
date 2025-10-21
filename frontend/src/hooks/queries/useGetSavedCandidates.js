@@ -1,6 +1,6 @@
+import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../..';
 import { getSavedCandidates } from '../../services/API';
-
 export const prefetchCandidates = async ({userId, count, page}) => {
   await queryClient.prefetchQuery(getCandidatesKey({userId, count, page}), () => getSavedCandidates(userId, count, page));
 }

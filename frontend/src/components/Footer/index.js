@@ -187,7 +187,6 @@ export default function Footer() {
             rel='noreferrer'
           >
               Privacy Policy
-// Temp comment
           </a>
           <span> | </span>
           <a
@@ -334,6 +333,7 @@ function NavFooterMobile() {
       <div className='flex flex-col basis-6/12 px-8'>
         <Link
           to={ROUTES.landingPage}
+// Temp comment
           className={linkStyle}
         >Home
         </Link>

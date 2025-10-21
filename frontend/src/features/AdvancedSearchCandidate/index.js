@@ -106,6 +106,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     }
     setFilterObject(newState);
   }, [state]);
+
   function handleFilterChange(filterType, choice) {
     setFilterObject({
       ...filterObject,

@@ -18,6 +18,7 @@ import AuthService from './services/auth';
 
 function App() {
   let userRole = AuthService.getUserRole();
+// Temp comment
 
   return (
     <div className="App overflow-hidden">
@@ -39,7 +40,6 @@ function App() {
             <Route
               path={ROUTES.careers}
               element={<Careers />} />
-// Temp comment
             <Route
               path={ROUTES.companies}
               element={<Companies />} />

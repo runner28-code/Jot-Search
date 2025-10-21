@@ -48,7 +48,6 @@ export default function InviteCandidates({ company }) {
 
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>
-// Temp comment
   }
   
   return (

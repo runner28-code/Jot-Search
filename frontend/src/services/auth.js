@@ -86,7 +86,6 @@ class AuthService {
     try {
       const { user_id } = this.getProfile();
       const candidates = await getSavedCandidates(user_id);
-// Temp comment
       const candidateIDs = candidates.map(candidate => candidate.id);
       localStorage.setItem('savedCandidates', JSON.stringify(candidateIDs));
     } catch(e) {
@@ -129,6 +128,7 @@ class AuthService {
       savedCandidates.push(candidateID);
     } else {
       savedCandidates.splice(savedCandidates.indexOf(candidateID), 1);
+// Temp comment
     }
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
   }

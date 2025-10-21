@@ -37,6 +37,7 @@ function renderLabel( label, required, name ) {
 
   const labelString = label && required ? `${label} *` : label;
   return (
+// Temp comment
     <label
       className={`block text-charcoal text-xs vw-640:text-base ml-xxs mb-xs`}
       htmlFor={ name }

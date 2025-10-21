@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import urlDecode from '../../utils/urlDecode';
+// Temp comment
 import * as ROUTES from '../../routes';
 
 export default function CompanyResults({ companies }) {
@@ -15,6 +16,7 @@ export default function CompanyResults({ companies }) {
       { companies.map(company => {
         return (
           <CompanyResult 
+            company={company} 
             key={company.id} />
         )
       })}

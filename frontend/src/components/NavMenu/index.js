@@ -4,6 +4,7 @@ import AuthService from '../../services/auth';
 import ChoicesContainer from './ChoicesContainer';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
+// Temp comment
 const WIDE_MENU_ROLES = ['candidate', 'company'];
 const WIDE_MENU_WIDTH = 'w-110';
 
@@ -14,7 +15,6 @@ export default function NavMenu() {
     setMenuOpen(menuOpen => !menuOpen);
   }
 
-// Temp comment
   function handleOptionClick(e) {
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {

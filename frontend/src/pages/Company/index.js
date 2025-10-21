@@ -19,6 +19,7 @@ export default function Company() {
   const { width } = useWindowDimensions();
   const { id } = useParams();
   const [companyData, setCompanyData] = useState({});
+  const [loading, setLoading] = useState(true);
 
   useEffect(async () => {
     const companyFromApi = await getCompanyById(id);
@@ -166,7 +167,6 @@ function renderSectorList(companyData, width , stylesObject) {
   const business = companyData.businessSectorList; 
   if( business == '' ) {
     return;
-  }
   if( business == Array ) {
     return(<>
       <hr className={stylesObject.hrStyles + 'mt-4'} />

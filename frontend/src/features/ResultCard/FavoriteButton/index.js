@@ -82,6 +82,5 @@ function getItemsByType(type) {
       return AuthService.getSavedCompanyIDs();
     case 'candidate':
       return AuthService.getSavedCandidateIDs();
-    default:
       return [];
   }

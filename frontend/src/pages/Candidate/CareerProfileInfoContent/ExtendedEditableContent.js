@@ -69,6 +69,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     if (formData.expertise) {
       dataToSubmit.categoryId = categories.find(category => category.name === formData.expertise).id;
       delete dataToSubmit.expertise;
+    }
 
     handleCandidateUpdate(dataToSubmit);
     setEditMode(false);

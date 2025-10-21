@@ -196,6 +196,7 @@ export type Candidate = {
     dayRateLow?: string;
     degreeList?: string;
     description?: string;
+    desiredLocations?: string;
     disability?: string;
     educationDegree?: string;
     email?: string;

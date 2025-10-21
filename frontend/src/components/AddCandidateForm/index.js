@@ -119,5 +119,6 @@ export default function RegistrationForm() {
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
+// Temp comment
       success: false,
     });

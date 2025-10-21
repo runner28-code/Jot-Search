@@ -6,6 +6,7 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
+        "plugin:react/jsx-runtime"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -53,7 +54,6 @@
             "forbidExtraProps",
             {"property": "freeze", "object": "Object"},
             {"property": "myFavoriteWrapper"},
-            // for rules that check exact prop wrappers
             {"property": "forbidExtraProps", "exact": true}
         ],
         "componentWrapperFunctions": [
