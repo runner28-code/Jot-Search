@@ -82,6 +82,7 @@ export class CandidateController {
     @Body() body: any
   ) {
     try {
+      console.log({ body });
       const { id, ...data } = body;
 
       if (authUser.role !== COORDINATOR) {
@@ -358,3 +359,5 @@ export class CandidateController {
   async sendJobs(
     @CurrentUser() authUser: User,
     @Body() body: { jobIds: string[]; candidateIds: string[] }
+  ): Promise<any> {
+    if (authUser.role !== COORDINATOR) {

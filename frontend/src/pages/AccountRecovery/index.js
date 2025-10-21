@@ -8,7 +8,6 @@ import API from '../../services/API';
 export default function AccountRecovery() {
   const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email } = event.target;

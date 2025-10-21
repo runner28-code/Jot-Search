@@ -38,7 +38,6 @@ export default function Stats({ userType }) {
   useEffect(async() => {
     const duration = getDuration(timeframe)
     if (userType === 'company') {
-      const result = await getCompanyQuickStats(duration);
       setStats({
         'Active Careers Posts': { ...result.activeCareersPosts },
         'Recommended Candidates': { ...result.recommendedCandidates },
@@ -46,7 +45,6 @@ export default function Stats({ userType }) {
         'Company Favorites': { ...result.companyFavorites },
         'Active Career Post Favorites': { ...result.activeCareerPostFavorites },
         'Application Invitations Sent': { ...result.applicationInvitationsSent }                
-// Temp comment
       })
     }
     if (userType === 'coordinator') {

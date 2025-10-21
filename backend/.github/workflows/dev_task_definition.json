@@ -13,7 +13,6 @@
                     "containerPort": 5000, 
                     "hostPort": 5000, 
                     "protocol": "tcp"
-                }
             ], 
             "essential": true,
             "logConfiguration": { 
@@ -85,3 +84,4 @@
                     "name": "SENDGRID_KEY", 
                     "value": "{SECRET_SENDGRID_KEY}"
                 },
+                {

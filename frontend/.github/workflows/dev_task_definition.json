@@ -10,7 +10,6 @@
             "memory": 2048,
             "portMappings": [
                 {
-                    "containerPort": 3000,
                     "hostPort": 3000,
                     "protocol": "tcp"
                 }
@@ -28,3 +27,4 @@
                 {
                     "name": "CHOKIDAR_USEPOLLING",
                     "value": "true"
+                }

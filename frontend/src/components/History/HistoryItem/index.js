@@ -73,7 +73,6 @@ function renderMessage(historyObj) {
           {historyObj.careerName}
         </Link>
         {messageSplit[1]}
-// Temp comment
       </p>
     )
   } else {

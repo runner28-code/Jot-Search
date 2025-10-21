@@ -331,7 +331,6 @@ const job_filter_exclude_keys = [
     "recreation",
     "recycling",
     "refrigeration",
-// Temp comment
     "refrigerator",
     "refuse",
     "regulatory",
@@ -425,3 +424,5 @@ const job_filter_exclude_keys = [
     "vendor",
     "veterinarian",
     "veterinary",
+    "victim",
+    "volleyball",

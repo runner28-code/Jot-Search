@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
@@ -71,7 +72,6 @@ CompactCompanyCard.propTypes = {
     selected: PropTypes.arrayOf(PropTypes.string),
     setSelected: PropTypes.func
   })
-}
 
 function renderCardImage(data) {
   if ( !data.company_logo ) {

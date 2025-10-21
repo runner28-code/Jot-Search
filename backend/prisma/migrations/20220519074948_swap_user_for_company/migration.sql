@@ -90,3 +90,4 @@ CREATE TABLE "Company" (
     "customText19" TEXT,
     "customText20" TEXT,
     "customTextBlock1" TEXT,
+    "customTextBlock2" TEXT,

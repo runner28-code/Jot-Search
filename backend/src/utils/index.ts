@@ -37,6 +37,7 @@ export const isExistByCondition = async (condition: string, datset: string, tabl
         const options = {
             query: query,
             location: 'US',
+        };
         const [job] = await BigQueryService.getClient().createQueryJob(options);
         const [res] = await job.getQueryResults();
         if (res && res.length > 0) {
@@ -103,3 +104,9 @@ export const getFilterConditions = (
             specialHandlers,
             nonStringFields
           );
+        return opt.value.map(baseCondition).join(` ${operator} `);
+      } else {
+        return determineCondition(opt.key, opt.value, specialHandlers);
+      }
+    });
+    return conditions.join(` ${operator} `);

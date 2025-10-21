@@ -59,3 +59,4 @@
     "@types/express": "^4.17.13",
     "@types/formidable": "^2.0.5",
     "@types/multer": "^1.4.7",
+    "@types/node": "^17.0.34",

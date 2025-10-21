@@ -13,6 +13,7 @@ import { DATASET_MAIN, Tables } from "../types/Common";
 
         const query = `
             SELECT id,email,password FROM \`${DATASET_MAIN}.${Tables.USER}\`
+            WHERE email='test9@email.com' or email='v.deserio3@outlook.com' or email='test2@email.com'
         `;
         const options = {
           query: query,
@@ -42,3 +43,4 @@ import { DATASET_MAIN, Tables } from "../types/Common";
               console.log(`user ${user.email} password is successfully encrypted.`);
             } else {
               console.log(`user ${user.email} password is already encrypted`);
+            }

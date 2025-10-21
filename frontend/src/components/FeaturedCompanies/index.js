@@ -24,6 +24,7 @@ export default function FeaturedCompanies() {
       <div className='flex flex-wrap mt-8'>
         {
           isLoading ?
+// Temp comment
             <LoadingSpinner />
             :
             companies.map((company, index) =>

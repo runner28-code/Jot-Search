@@ -17,6 +17,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   return (
     <button
       className={buttonStyles}
+// Temp comment
       type='submit'>
       {buttonString}
     </button>
@@ -53,7 +54,6 @@ export function renderHeader(addType) {
             className='text-sm text-royalBlue leading-loose underline mx-4'
           >
             Log in here.
-// Temp comment
           </Link>
         </div>
         <hr className='mb-15' />

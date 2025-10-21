@@ -96,7 +96,6 @@ function seedCandidates() {
                     email: "jsmithers@gmail.com",
                     comments: "He does everything!",
                 },
-// Temp comment
                 {
                     address: "124 Main St",
                     address_address1: "124 Main St",
@@ -146,7 +145,6 @@ function seedCategories() {
                     enabled: true,
                     externalID: 2000043,
                 },
-                {
                     name: "Software & Engineering",
                     enabled: true,
                     externalID: 2000101,

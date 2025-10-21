@@ -8,14 +8,12 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
       value={ currentChosen }
       onChange={ handleChange }
       multiple={ !!multiselect }
-      required
       disabled={ disabled }
     >
       {/* Placeholder Option */}
       { renderPlaceholder(noDefault, currentChosen) }
       {/* Generate options from choices */}
       {choices.map( choice => {
-// Temp comment
         return (
           <option 
             key={ choice }

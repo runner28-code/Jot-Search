@@ -174,3 +174,6 @@ async function seedCompanies() {
   });
 }
 
+async function seedUsers() {
+  await db.user.createMany({
+    data: [

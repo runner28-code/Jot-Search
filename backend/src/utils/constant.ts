@@ -416,3 +416,6 @@ const job_filter_exclude_keys = [
   "urology",
   "utilities",
   "utility",
+  "vault",
+  "vegetation",
+  "vehicle",

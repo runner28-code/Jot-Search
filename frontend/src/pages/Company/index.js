@@ -167,6 +167,7 @@ function renderSectorList(companyData, width , stylesObject) {
   const business = companyData.businessSectorList; 
   if( business == '' ) {
     return;
+  }
   if( business == Array ) {
     return(<>
       <hr className={stylesObject.hrStyles + 'mt-4'} />

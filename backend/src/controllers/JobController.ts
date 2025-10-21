@@ -374,3 +374,4 @@ export class JobController {
     @CurrentUser() authUser: User,
     @QueryParam("userId") userId: string
   ) {
+    const id = userId || authUser.id!;

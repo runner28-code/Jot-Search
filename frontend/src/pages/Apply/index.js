@@ -9,7 +9,6 @@ import { BiUpload as UploadIcon } from 'react-icons/bi';
 import FormInput from '../../components/FormInput';
 import { getCandidateById, getJobById, applyToJob } from '../../services/API';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
-import AuthService from '../../services/auth';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../utils/dbFieldMapping';
 import {
   ethnicityChoices,
@@ -62,6 +61,7 @@ export default function Apply() {
     try {
       const { user_id } = AuthService.getProfile();
       const [careerData, candidateData] = await Promise.all([
+        getJobById(jobId),
         getCandidateById(user_id),
       ]);
       if ( candidateData.workAuthorized === true ) {

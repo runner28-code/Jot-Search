@@ -60,3 +60,4 @@ export class BigQueryService {
               VALUES (${values.join(', ')})
             `;
             console.log(query)
+

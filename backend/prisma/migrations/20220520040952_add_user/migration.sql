@@ -38,3 +38,4 @@ CREATE TABLE "User" (
     "experience" TEXT,
     "hourlyRate" TEXT,
     "willRelocate" TEXT,
+    "ethnicity" TEXT,

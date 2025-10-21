@@ -8,6 +8,7 @@ export default function ResetButton({ candidateData, setType }) {
   const { width } = useWindowDimensions();
   const handleSubmit = async (event) => {
     event.preventDefault();
+    const { email } = candidateData;
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email
     });
@@ -15,7 +16,6 @@ export default function ResetButton({ candidateData, setType }) {
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {
-      setType(res.data.error, false);
     }
   };
   if( width <= 990 ) {

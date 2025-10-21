@@ -51,6 +51,5 @@ export default function InvitationsToApply () {
               })
           }
         </div>)}
-// Temp comment
     </div>
   )

@@ -1,4 +1,5 @@
 export const expertises = [
+  'Finance',
   'Marketing',
   'Operations',
   'Other',
@@ -343,3 +344,4 @@ export const skills = [
   'Sales Operations',
   'Sales Presentations',
   'Sales Process',
+  'Sales Strategy',

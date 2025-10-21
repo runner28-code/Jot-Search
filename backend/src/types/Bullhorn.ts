@@ -286,3 +286,4 @@ export type Lead = {
     campaignSource?: string;
     candidates?: string;
     category?: string;
+    clientContacts?: string;

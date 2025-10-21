@@ -113,7 +113,6 @@ function renderNotification(activeData, careerData) {
 function Notification({title, content, text, email, company, id, add}) {
 
   return (
-// Temp comment
     <div className='rounded-2xl bg-sky-100 p-8 border border-neutral-300 mb-8'>
       <div className="flex items-center">
         <img
@@ -148,6 +147,7 @@ function MailButton({ text, email, company, id, add }) {
   const subject = company + ' role ' + id + ' ' + add;
   const href = mail + subject;
   return (<>
+// Temp comment
     <a
       href={href}
       className='rounded-xl bg-white border border-royalBlue p-4 mt-6 text-royalBlue inline-block'>

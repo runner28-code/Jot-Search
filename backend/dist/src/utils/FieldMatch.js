@@ -28,8 +28,10 @@ exports.JobFilter = {
         state: "state",
         isDeleted: "isDeleted",
         companyId: "companyId",
+    },
 };
 exports.CompanyFilter = {
+// Temp comment
     bullhorn: {
         name: "name",
         city: "address_city",
@@ -58,3 +60,4 @@ exports.USER_FILTER = {
     status: "status",
     email: "email",
     bh_email: "bh_email",
+    companyName: "companyName",

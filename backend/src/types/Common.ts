@@ -122,3 +122,4 @@ export type CompanySearchByFilterResponse = {
 
 // Candidate Types
 export type CandidateSearchByIdResponse = {
+  candidate?: User;

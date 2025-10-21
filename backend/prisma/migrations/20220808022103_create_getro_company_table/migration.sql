@@ -5,6 +5,7 @@ CREATE TABLE "GetroCompany" (
     "crunchbase_url" TEXT,
     "description" TEXT,
     "domain" TEXT,
+    "facebook_url" TEXT,
     "founded" TEXT,
     "id" TEXT NOT NULL,
     "instagram_url" TEXT,
@@ -22,3 +23,4 @@ CREATE TABLE "GetroCompany" (
     "managers" TEXT[],
     "organization_careers_pages" TEXT[],
     "status" TEXT,
+    "scraping_enabled" BOOLEAN NOT NULL,

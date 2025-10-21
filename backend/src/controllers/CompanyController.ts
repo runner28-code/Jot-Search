@@ -313,3 +313,4 @@ export class CompanyController {
     return result;
   }
 
+  async getCompaniesByFilterFromBullhorn(

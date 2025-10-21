@@ -200,3 +200,4 @@ export class UserController {
     @CurrentUser() authUser: User
   ) {
     let data = { ...user };
+

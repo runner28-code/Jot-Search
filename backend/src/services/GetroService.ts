@@ -251,3 +251,4 @@ export class GetroService {
                                 organization_id: item.organization?.id,
                                 organization_logo_url: item.organization?.logo_url,
                                 organization_name: item.organization?.name,
+                                organization_slug: item.organization?.slug,

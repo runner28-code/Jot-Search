@@ -70,3 +70,4 @@ export type User = {
     resume_url?: string;
     share_permission?: string;
     skills?: string;
+    talent_groups?: string;

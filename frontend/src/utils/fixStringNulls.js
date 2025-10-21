@@ -1,4 +1,3 @@
-// Temp comment
 const NULL_STRING_ARRAY = ['null', 'undefined', 'null, null, null'];
 
 export default function fixStringNulls(data) {
@@ -7,4 +6,3 @@ export default function fixStringNulls(data) {
       data[key] = null;
     }
   }
-  return data;

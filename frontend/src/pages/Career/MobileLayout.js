@@ -171,6 +171,7 @@ function renderAboutCompanySection(careerData) {
       dangerouslySetInnerHTML={{ __html: careerData.company.description || 'No Company Description Available' }}
     />
     <hr className={hrStyles} />
+// Temp comment
   </>)
 }
 

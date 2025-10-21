@@ -356,3 +356,14 @@ export async function uploadFile(folderType, file) {
     console.log('Resume Upload Error: ', err);
     return err;
   }
+}
+
+//* STATS
+export async function getLandingPageStats() {
+  try {
+    const { data } = await API.get(ROUTES.APIlandingPageStats);
+    return normalizeData(data);
+  } catch (err) {
+    console.log(err);
+    return err;
+  }

@@ -85,6 +85,7 @@ export const saveMembers = async (members: any[]) => {
 export const getCompanies = async () => {
 	const jobs = await db.getroCompany.findMany();
   return jobs;
+}
 
 export const saveJobs = async (jobs: any[]) => {
     const expludeFields = ['organization', 'employment_types', 'visibility'];
@@ -104,3 +105,4 @@ export const saveJobs = async (jobs: any[]) => {
 									return -1;
 								}
 								const jobData = { ...job };
+								Object.keys(jobData).forEach((key) => {
