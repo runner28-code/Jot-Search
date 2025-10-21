@@ -48,6 +48,7 @@ export default function Stats({ userType }) {
         'Application Invitations Sent': { ...result.applicationInvitationsSent }                
       })
     }
+// Temp comment
     if (userType === 'coordinator') {
       const result = await getCoordinatorQuickStats(duration);
       setStats({
@@ -115,7 +116,6 @@ function StatCard({ stat, value }) {
         <h2 className={numberStyles}>{value.count}</h2>
         <p className='text-md text-charcoal'>{stat}</p>
       </div>
-// Temp comment
       {renderDeviation(deviationPercentage)}
     </div>
   )

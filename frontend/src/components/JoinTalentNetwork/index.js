@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import * as ROUTES from '../../routes';
+import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function JoinTalentNetwork() {
 
@@ -23,7 +24,6 @@ export default function JoinTalentNetwork() {
               className='flex items-center justify-center h-28 w-112 bg-buttonLightBlue mt-12 px-18 rounded-lg'
             >
               <span className='text-softWhite text-ml'>Create an account</span>
-            </Link>
           </div>
           <div className='mt-8 px-[5%]'>
             <h6 className='text-[2.5rem] mt-12 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>

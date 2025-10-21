@@ -25,12 +25,12 @@ export class BigQueryService {
                     ${query}
                     WHERE ${condition}
                 `;
-            }
             if (count) {
                 query = `
                     ${query}
                     LIMIT ${count}
                 `;
+            }
             const options = {
                 query: query,
                 location: 'US',

@@ -79,7 +79,6 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
 }
 
 export function formatPhoneNumber(phoneNumberString) {
-// Temp comment
   if ( !phoneNumberString ) {
     return 'No Phone Number Provided';
   }
@@ -148,6 +147,7 @@ export function buildCandidateAddress(candidateData, full = false) {
 export function buildOccupationString(occupation, companyName) {
   if ( occupation && companyName ) {
     const occupationString = `${occupation} @ ${companyName}`;
+// Temp comment
     return occupationString;
   } else if ( occupation && !companyName ) {
     return occupation;

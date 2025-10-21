@@ -44,6 +44,7 @@ function LinkSwap ({ location, loggedIn }) {
         <span className={loggedIn ? '' : 'underline '}>Back</span>
       </Link>
     )
+// Temp comment
   }
   if(location === 'companies' ) {
     return (

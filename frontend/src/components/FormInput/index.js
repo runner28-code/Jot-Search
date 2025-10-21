@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import TextInput from './TextInput';
 import FileInput from './FileInput';
 import AccessibleDropdown from '../AccessibleDropdown';
@@ -48,6 +47,7 @@ export default function FormInput(props) {
         value={value}
         required={required}
         onChange={onChange}
+// Temp comment
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}
       />

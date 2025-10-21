@@ -61,7 +61,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   const handleCancel = () => {
     setEditMode(false);
   }
-  const handleSubmit = () => {
     let dataToSubmit = {};
     dataToSubmit = { ...formData };
     dataToSubmit.skills = formData.skills.join(', ');

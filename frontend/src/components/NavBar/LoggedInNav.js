@@ -48,7 +48,6 @@ function NavBarLayout() {
         </div>
       </div>
       {/* Nav Search */}
-// Temp comment
     </nav>
   )
 }
@@ -167,7 +166,6 @@ function renderChoices(userType, handleClick) {
   else { // fall back to guest choices
     choicesToRender = guestChoices
   }
-
   const choicesLength = choicesToRender.length;
   const selected = findSelectedFromPath();
 

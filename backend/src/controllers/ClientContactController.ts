@@ -39,6 +39,7 @@ export class ClientContactController {
   async searchByFilters(@Body() body: FilterBody) {
     try {
       const { page, count, filters } = body;
+
       const wheres = normalizeFilters(filters)
 
       // TODO: assuming filters and fields format

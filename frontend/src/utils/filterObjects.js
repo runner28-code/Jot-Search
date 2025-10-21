@@ -114,7 +114,6 @@ export const candidateFilterObject = {
 const convertedCandidateFilters = {};
 Object.keys(candidateFilterObject).forEach(key => {
   convertedCandidateFilters[key] = candidateFilterObject[key][0];
-});
 
 export const defaultCandidateFilterState = {
   firstname: '',

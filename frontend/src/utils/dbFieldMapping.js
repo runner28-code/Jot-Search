@@ -19,6 +19,7 @@ export const veteranStatusMap = {
 
 export const genderMap = {
   U: 'Prefer not to say',
+  M: 'Male',
   F: 'Female',
   N: 'Non-Binary',
   O: 'Other'
@@ -62,5 +63,3 @@ export const referralChoices = [
   'Career Fair',
   'Event',
   'Media and Advertising',
-  'Make my Move',
-  'Community Partner',

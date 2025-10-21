@@ -51,3 +51,4 @@ CREATE TABLE "ClientContact" (
     "numEmployees" TEXT,
     "occupation" TEXT,
     "office" TEXT,
+    "owner" TEXT,

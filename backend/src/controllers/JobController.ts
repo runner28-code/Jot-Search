@@ -139,6 +139,7 @@ export class JobController {
       const jobPromise = db.job.findMany({
         where,
         take: count,
+        skip: skip < 0 ? 0 : skip,
         include: {
           company: true,
           category: true,

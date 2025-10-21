@@ -54,6 +54,7 @@ async function seedJobs() {
         datasource: Datasource.bullhorn as any,
         status: "active",
         categoryId: (await db.category.findFirst({
+          where: { name: "Software & Engineering" },
         }))!.id,
       },
     ],
@@ -78,7 +79,6 @@ async function seedCandidates() {
         phone: "123-456-7891",
         email: "jsmithers@gmail.com",
         comments: "He does everything!",
-      },
       {
         address: "124 Main St",
         address_address1: "124 Main St",
@@ -166,3 +166,5 @@ async function seedCompanies() {
         state: "OK",
         billingPhone: "876-567-9876",
         companyURL: "pepsoda@gmail.com",
+        companyDescription: "Best at test",
+        numEmployees: 50,

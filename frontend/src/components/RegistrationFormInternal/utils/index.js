@@ -4,6 +4,7 @@ import LoadingSpinner from '../../LoadingSpinner';
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import * as ROUTES from '../../../routes';
 
+// Temp comment
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if ( submissionObject.loading ) {
     return <LoadingSpinner
@@ -59,6 +60,7 @@ export function renderHeader(addType) {
       </div>
     )
   }
+}
 
 export function inputValidation(formObj) {
   // Remove non-required properties

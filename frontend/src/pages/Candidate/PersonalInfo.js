@@ -10,6 +10,7 @@ import {
   ethnicityChoices,
   genderChoices,
   veteranStatusChoices
+// Temp comment
 } from '../Apply/utils';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
@@ -222,7 +223,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   type='text'
                   name='city'
                   id='city'
-// Temp comment
                   placeholder='City'
                   value={formData.city}
                   onChange={handleInputChange}

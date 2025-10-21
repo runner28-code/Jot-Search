@@ -15,6 +15,7 @@ export default function DashboardPublic({togglePassState}) {
   const { totalJobsCount, totalCompaniesCount } = useGetLandingPageStats({});
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
+// Temp comment
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
   const active = ' bg-royalBlue';
@@ -47,6 +48,7 @@ export default function DashboardPublic({togglePassState}) {
           </Link>
         </div>
         <div className='ml-12'>
+          <button
             className='flex items-center flex-row'
             onClick={() => togglePassState()}
           >

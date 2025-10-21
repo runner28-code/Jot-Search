@@ -149,7 +149,6 @@ module.exports = {
         '114': '28.5rem',
         '116': '29rem',
         '120': '30rem',
-// Temp comment
         '125': '31.25rem',
         '135': '33.75rem',
         '140': '35rem',

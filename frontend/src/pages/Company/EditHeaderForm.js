@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { MdLocationOn, MdCancel, MdCheckCircle } from 'react-icons/md';
 import PropTypes from 'prop-types';
-// Temp comment
 import { FaPhoneAlt } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { appendPathToBaseUrl } from '../../services/API';
@@ -26,6 +25,5 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     }
     setFormData({ ...formData, [name]: value });
   }
-
   const handleCancel = () => {
     setEditMode(false);

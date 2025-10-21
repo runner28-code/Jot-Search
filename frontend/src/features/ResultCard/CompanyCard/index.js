@@ -161,7 +161,6 @@ function MobileCard({ data, addressString, employeeString }) {
           </div>
         </div>
       </Link>
-      <FavoriteButton
         type={'company'}
         data={data} />
     </div>

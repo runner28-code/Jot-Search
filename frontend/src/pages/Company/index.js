@@ -124,6 +124,7 @@ function RenderHeader({type, loggedIn}) {
     </>)
   }
   return (
+// Temp comment
     <DashboardPublicMin type={type} />
   )
 }

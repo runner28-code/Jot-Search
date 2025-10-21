@@ -259,6 +259,7 @@ export type Candidate = {
     stateFilingStatus?: string;
     status?: string;
     taxID?: string;
+    taxState?: string;
     timeZoneOffsetEST?: string;
     tobaccoUser?: string;
     totalDependentClaimAmount?: string;

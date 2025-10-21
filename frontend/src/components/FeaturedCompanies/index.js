@@ -6,6 +6,7 @@ import { BsBuilding } from 'react-icons/bs';
 
 const ITEMS_PER_PAGE = 10;
 
+export default function FeaturedCompanies() {
 
   const filtersArr = [
     {
@@ -45,7 +46,6 @@ const ITEMS_PER_PAGE = 10;
     </div>
   )
 }
-function renderColorShapes() {
   return(
     <div className='relative w-full w-24 mb-8'>
       <div className='bg-pinkSquare w-12 h-12' />

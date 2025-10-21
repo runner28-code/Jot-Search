@@ -114,7 +114,6 @@ function itemRenderer({ option, onClick, disabled}) {
           <span className='text-lg text-blue-500'>{option.label}</span>
           <span>{getTagLine({ candidate: option.candidate })}</span>
         </div>
-// Temp comment
       </div>
     </div>
   )

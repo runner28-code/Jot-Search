@@ -55,6 +55,7 @@ FavoriteButton.propTypes = {
   addClass: PropTypes.string,
   data: PropTypes.shape({
     id: PropTypes.string,
+// Temp comment
     candidate: PropTypes.string,
     status: PropTypes.string,
   }).isRequired,
@@ -62,6 +63,7 @@ FavoriteButton.propTypes = {
 }
 
 function getIdByType(type, data) {
+  switch (type) {
     case 'job':
       return data.id;
     case 'company':
