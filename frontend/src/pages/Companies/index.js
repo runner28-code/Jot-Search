@@ -43,10 +43,8 @@ export default function Companies() {
           loggedIn={loggedIn}
           toggle={toggle}
           userType={userType}
-// Temp comment
         />
       </div>
-    </section>
   )
 }
 

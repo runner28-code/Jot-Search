@@ -859,3 +859,4 @@ export class BullhornService {
             Accept: "*/*",
           },
         });
+        if (res.status === 200) {

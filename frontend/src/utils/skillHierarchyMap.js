@@ -346,3 +346,4 @@ export const skills = [
   'Sales Process',
   'Sales Strategy',
   'Sales Tools',
+  'Sales Training',

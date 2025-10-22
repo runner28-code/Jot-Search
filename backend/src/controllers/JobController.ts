@@ -376,3 +376,4 @@ export class JobController {
   ) {
     const id = userId || authUser.id!;
 
+    if (!id) {

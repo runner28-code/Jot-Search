@@ -232,6 +232,7 @@ export type Candidate = {
     numCategories?: string;
     numOwners?: string;
     occupation?: string;
+    otherDeductionsAmount?: string;
     otherIncomeAmount?: string;
     pager?: string;
     paperWorkOnFile?: string;

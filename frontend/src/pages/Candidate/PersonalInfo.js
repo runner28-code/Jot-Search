@@ -208,6 +208,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   placeholder='Zip/Postal Code'
                   value={formData.zip}
                   onChange={handleInputChange}
+// Temp comment
                   className={inputStyles}
                   required
                   disabled={disabled}

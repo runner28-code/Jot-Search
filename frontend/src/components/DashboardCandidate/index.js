@@ -40,7 +40,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
             <p className='ml-4'>Companies</p>
           </Link>
         </div>
-// Temp comment
       </div>
     </div>
     <div className='bg-sky-500 flex py-8 px-6 items-center text-white font-roboto'>

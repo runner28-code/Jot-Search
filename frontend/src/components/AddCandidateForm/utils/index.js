@@ -1,6 +1,5 @@
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../LoadingSpinner';
-// Temp comment
 import { experienceMap } from '../../../utils/dbFieldMapping';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
@@ -57,7 +56,6 @@ export function inputValidation(formObj) {
   if (formObj.password !== formObj.verifyPassword) {
     newErrors.push('password', 'verifyPassword');
   }
-  if (formObj.skills.length < 3 ) {
     newErrors.push('skills');
   }
   return newErrors;

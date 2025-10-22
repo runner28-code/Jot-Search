@@ -1,5 +1,6 @@
 /* INTERNAL ROUTES */
 export const root = '/';
+export const landingPage = '/landing-page';
 export const blog = '/blog';
 export const about = '/about';
 export const login = '/login';
@@ -82,3 +83,4 @@ export const APItoggleSaveJob = APIjobBase + '/save';
 export const APIsavedJobs = APIjobBase + '/savedJobs';
 // Client Contacts
 export const APIclientContacts = '/api/client-contact/search';
+// Categories

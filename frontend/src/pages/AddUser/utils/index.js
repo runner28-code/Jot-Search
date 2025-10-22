@@ -1,3 +1,4 @@
+// Temp comment
 export function validateInput(name, value, errors, password) {
   const newErrors = { ...errors };
   

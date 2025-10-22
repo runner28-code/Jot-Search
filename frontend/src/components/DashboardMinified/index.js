@@ -17,7 +17,6 @@ export default function DashboardMinified({ location }) {
           location={location}
           loggedIn={loggedIn}
         />
-// Temp comment
         <MinifiedTitle location={location} />
       </div>
     )
@@ -35,7 +34,6 @@ DashboardMinified.propTypes = {
   location: PropTypes.string.isRequired
 }
 
-function LinkSwap ({ location, loggedIn }) {
 
   if(location === 'career') {
     return (

@@ -138,6 +138,7 @@ export default function Candidate() {
         }
         {/* Personal Info (Candidate and Coordinator) */}
         <PersonalInfo
+// Temp comment
           role={role}
           candidateData={candidateData}
           handleCandidateUpdate={handleCandidateUpdate} />

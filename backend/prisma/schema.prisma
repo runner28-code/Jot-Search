@@ -336,6 +336,7 @@ model Department {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
 enum Datasource {
   main
   bullhorn
@@ -648,3 +649,4 @@ model Candidate {
   password               String?
   payrollClientStartDate DateTime?
   payrollStatus          String?
+  phone                  String?

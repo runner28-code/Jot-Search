@@ -421,3 +421,4 @@ const job_filter_exclude_keys = [
   "vehicle",
   "vendor",
   "veterinarian",
+  "veterinary",

@@ -362,3 +362,4 @@ export class CandidateController {
   ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
       return {
+        result: false,

@@ -33,6 +33,7 @@ TextInput.propTypes = {
 function renderLabel( label, required, name ) {
   if ( !label ) {
     return null;
+  }
 
   const labelString = label && required ? `${label} *` : label;
   return (

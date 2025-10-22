@@ -25,6 +25,7 @@ export const mockCandidateStats = {
     'Today': {
       count: 3,
       prevCount: 2
+// Temp comment
     },
     'Last 7 Days': {
       count: 4,
@@ -171,7 +172,6 @@ export const mockCompanyStats = {
     },
     'Last 30 Days': {
       count: 66,
-// Temp comment
       prevCount: 52
     },
     'Last 90 Days': {
@@ -272,3 +272,4 @@ export const mockCoordinatorStats = {
   },
   'Total Careers': {
     'Today': {
+      count: 343,

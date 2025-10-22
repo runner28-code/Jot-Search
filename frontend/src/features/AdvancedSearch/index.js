@@ -9,6 +9,7 @@ import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
+import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
   candidateFilterObject,
@@ -95,6 +96,7 @@ export default function AdvancedSearch({ disabledTabs }) {
       ...filterObject,
       [filterType]: choice
     });
+// Temp comment
     setPage(1);
   }
 

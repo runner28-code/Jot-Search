@@ -114,9 +114,9 @@ async function seedCategories() {
         externalID: 2000026,
       },
       {
-        name: "Operations",
         enabled: true,
         externalID: 2000014,
+      },
       {
         name: "Other",
         enabled: true,
@@ -179,3 +179,5 @@ async function seedUsers() {
       {
         avatar: "https://picsum.photos/200",
         email: "coordinator@aerovision.io",
+        firstname: "Coordinator",
+        lastname: "Test",

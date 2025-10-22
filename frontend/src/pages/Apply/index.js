@@ -69,7 +69,6 @@ export default function Apply() {
         candidateData.workAuthorized = 'Yes';
       } else {
         candidateData.workAuthorized = 'No';
-// Temp comment
       }
       // Turn API IDs into appropriate values
       candidateData.ethnicity = ethnicityMap[candidateData.ethnicity || 'U']; // 'U' is default ("Prefer not to say")
@@ -140,7 +139,6 @@ export default function Apply() {
       updateCandidateIfNeeded(formattedObject, originalObject);
     }
 
-    const response = await applyToJob(jobId, formattedObject.id);
     return response
   }
 

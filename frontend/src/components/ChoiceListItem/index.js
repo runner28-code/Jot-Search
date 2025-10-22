@@ -20,7 +20,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
   const containerStyles = 'multi-select-choice ' + listItemStyles;
   return (
     <div 
-// Temp comment
       key={itemKey}
       className={containerStyles}
       onClick={handleItemClick}
@@ -35,6 +34,7 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
           <ReferralCardContent data={job} />
         </div>
       </div>
+// Temp comment
       { renderHorizontalRule(isLastItem) }
     </div>
   )

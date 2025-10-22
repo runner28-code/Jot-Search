@@ -56,3 +56,4 @@ export class CategoryController {
       );
 
       return {
+        categories,

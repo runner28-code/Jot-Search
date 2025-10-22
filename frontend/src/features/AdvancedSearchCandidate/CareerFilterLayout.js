@@ -37,6 +37,7 @@ export default function CareerFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
   } else {
+// Temp comment
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
@@ -54,7 +55,6 @@ export default function CareerFilterLayout(props) {
           placeholder='Search Careers'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
-// Temp comment
       </div>
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[25px]'}>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }

@@ -12,7 +12,6 @@ export default function FeaturedCompanies() {
     {
       key: 'status',
       value: 'active'
-    }
   ];
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});

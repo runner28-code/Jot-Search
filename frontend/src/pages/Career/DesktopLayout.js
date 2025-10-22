@@ -14,6 +14,7 @@ import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
 
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charcoal mb-m ';
+// Temp comment
 const hrStyles = 'mb-10 border-smokeGray ';
 
 export default function DesktopLayout(props) {

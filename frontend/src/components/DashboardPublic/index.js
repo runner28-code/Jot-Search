@@ -39,6 +39,7 @@ export default function DashboardPublic({togglePassState}) {
             <p className='ml-4'>Careers</p>
           </Link>
           <Link
+// Temp comment
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }
             to={ROUTES.companies}
           >
@@ -50,6 +51,7 @@ export default function DashboardPublic({togglePassState}) {
           <button
             className='flex items-center flex-row'
             onClick={() => togglePassState()}
+          >
             <img src={filterIcon} />
             { width >= 990 && <FilterText />}
           </button>

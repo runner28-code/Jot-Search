@@ -155,6 +155,7 @@ function renderActiveStatus(candidate) {
         <img
           src={eyeCon}
           className='w-[15px] h-[11px]'
+        />
         <p className='text-white text-sm text-xxs'>Actively Looking</p>
       </div>
     )

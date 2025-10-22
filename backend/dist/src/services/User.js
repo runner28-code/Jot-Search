@@ -8,6 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+// Temp comment
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -23,6 +24,5 @@ const db_1 = __importDefault(require("../utils/db"));
 const password_1 = require("../utils/password");
 const EmailService_1 = require("./EmailService");
 const jwtUtils_1 = require("../utils/jwtUtils");
-// Temp comment
 const isNullOrEmpty = (value) => {
     return !value || (value && !`${value}`.trim());

@@ -10,6 +10,7 @@ import {
   Company,
   Companies,
   AccountRecovery,
+  ResetPassword,
   Apply
 } from './pages';
 import { NavBar, Footer, SideNav } from './components';
@@ -39,6 +40,7 @@ function App() {
               path={ROUTES.careers}
               element={<Careers />} />
             <Route
+// Temp comment
               path={ROUTES.companies}
               element={<Companies />} />
             <Route

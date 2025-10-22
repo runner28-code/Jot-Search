@@ -42,6 +42,7 @@ export default function NavSearchMobile({ placeholder }) {
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
+// Temp comment
     }
     else if (tab === 'jobs') {
       const searchFilters = buildSearchFilters({...defaultJobFilterState, title: searchTerm});
@@ -167,6 +168,7 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
     searchIconStyles: 'fill-neutral-400',
     inputStyles: 'hidden '
   }
+  function handleClick() {
     if( !searchTerm ) {
       setIsOpen(isOpen => !isOpen);
     }

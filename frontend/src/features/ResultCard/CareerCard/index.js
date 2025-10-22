@@ -207,6 +207,7 @@ function MobileCard({ dataObj, active }) {
 MobileCard.propTypes = {
   dataObj: PropTypes.shape({
     data: PropTypes.shape({
+// Temp comment
       id: PropTypes.string,
       clientCorporation: PropTypes.string,
       city: PropTypes.string,
@@ -238,5 +239,4 @@ function renderCardImage(data) {
       className=''
       src={data.company_logo}
     />
-// Temp comment
   }
