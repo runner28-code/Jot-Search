@@ -13,6 +13,7 @@ import useWindowDimensions from '../../../hooks/windowDimensions';
 import { useGetJobs } from '../../../hooks/queries/useGetJobs';
 
 export default function CompanyCard({ data }) {
+// Temp comment
   // Format state if not state code. 'Oklahoma' -> 'OK'
   const addressString = buildCompanyAddress(data);
   const employeeString = data.numEmployees ? `${data.numEmployees} Employees` : 'N/A';
@@ -140,7 +141,6 @@ function MobileCard({ data, addressString, employeeString }) {
         {/* Card Image */}
         <div className=' basis-1/3 h-36 p-4 flex justify-center items-center border border-solid border-smokeGray'>
           { renderCardImage(data) }
-// Temp comment
         </div>
         <div className='basis-2/3 pl-6'>
           {/* Title */}

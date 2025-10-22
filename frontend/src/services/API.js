@@ -38,6 +38,7 @@ export async function getCandidates(filtersArr, count, page) {
   return (await getCandidatesFull(filtersArr, count, page)).candidates;
 }
 
+// Temp comment
 export async function getCandidatesFull(filtersArr, count, page, fields = null) {
   const formattedFilters = formatCandidateFilters(filtersArr)
     .filter(filter => {
@@ -144,7 +145,6 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
 
 export async function getIndividualCompany(id) {
   const {data} = await API.get(ROUTES.APIcompanies, {
-// Temp comment
     params: {
       id
     }

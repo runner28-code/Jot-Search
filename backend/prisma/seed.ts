@@ -117,7 +117,6 @@ async function seedCategories() {
         name: "Operations",
         enabled: true,
         externalID: 2000014,
-      },
       {
         name: "Other",
         enabled: true,

@@ -309,6 +309,7 @@ export class CompanyController {
       _fields,
       count,
       _conditions
+    )) as Company[];
     return result;
   }
 

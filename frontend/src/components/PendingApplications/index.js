@@ -38,7 +38,6 @@ export default function PendingApplications () {
       <div className='relative w-24 mb-8'>
         <div className='bg-red-500 w-12 h-12' />
         <div className='bg-orangeSquare  top-[-20px] right-[5px] absolute w-6 h-6' />
-      </div>
       <h2 className='font-spaceGrotesk text-h5 text-white mb-8 text-center'>My Pending Applications</h2>
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
@@ -65,7 +64,6 @@ export default function PendingApplications () {
           </div>
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Apply to an InTulsa Featured Career!</h3>
           <Link
-// Temp comment
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All

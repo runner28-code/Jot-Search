@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import { MultiSelect } from 'react-multi-select-component';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {
   defaultJobFilterState,
@@ -29,6 +30,7 @@ export default function InviteToCareer({ candidate }) {
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();
+// Temp comment
     setSelected(selected.filter(item => item.value !== value))
   }
 

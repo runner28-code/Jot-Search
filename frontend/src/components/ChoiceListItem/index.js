@@ -20,10 +20,10 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
   const containerStyles = 'multi-select-choice ' + listItemStyles;
   return (
     <div 
+// Temp comment
       key={itemKey}
       className={containerStyles}
       onClick={handleItemClick}
-// Temp comment
     >
       <div className='flex items-center'>
         <img 

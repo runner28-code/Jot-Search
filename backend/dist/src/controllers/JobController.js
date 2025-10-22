@@ -65,6 +65,7 @@ let JobController = class JobController {
                 console.error(err);
                 return null;
             }
+        });
     }
     runJob(body) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -77,7 +78,6 @@ let JobController = class JobController {
                 (0, utils_1.consoleLog)(error);
                 return { success: false, error };
             }
-        });
     }
     searchByFilter(body) {
         return __awaiter(this, void 0, void 0, function* () {

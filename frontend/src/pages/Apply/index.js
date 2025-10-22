@@ -68,6 +68,8 @@ export default function Apply() {
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';
       } else {
+        candidateData.workAuthorized = 'No';
+// Temp comment
       }
       // Turn API IDs into appropriate values
       candidateData.ethnicity = ethnicityMap[candidateData.ethnicity || 'U']; // 'U' is default ("Prefer not to say")

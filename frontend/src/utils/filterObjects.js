@@ -138,7 +138,6 @@ export function buildSearchFilters(filterObject) {
         value: filterObject[key],
       });
     }
-// Temp comment
   });
   return searchFilters
 }

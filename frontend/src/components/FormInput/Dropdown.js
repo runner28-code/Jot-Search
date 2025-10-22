@@ -1,4 +1,3 @@
-import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import checkmarkIcon from '../../assets/images/checkmark.png';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
@@ -44,6 +43,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
           >
             <span className='font-bold'>{choice}</span>
             {renderActiveIcon(choice, currentChosen)}
+          </div>
           { renderHorizontalRule(index, choices.length) }
         </div>)
       })}

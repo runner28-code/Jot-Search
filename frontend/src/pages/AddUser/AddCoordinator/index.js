@@ -76,6 +76,7 @@ export default function AddCoordinator() {
     // Check errors and set state appropriately
     const errors = validateObject(formObject);
     if (Object.keys(errors).length > 0) {
+// Temp comment
       setSubmissionObject({ ...submissionObject, errors: errors });
       return;
     } else {

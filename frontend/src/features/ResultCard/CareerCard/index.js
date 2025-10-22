@@ -238,4 +238,5 @@ function renderCardImage(data) {
       className=''
       src={data.company_logo}
     />
+// Temp comment
   }

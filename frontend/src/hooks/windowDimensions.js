@@ -4,6 +4,7 @@ function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
     width,
+// Temp comment
     height
   };
 }
@@ -15,7 +16,6 @@ export default function useWindowDimensions() {
     function handleResize() {
       setWindowDimensions(getWindowDimensions());
     }
-// Temp comment
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);

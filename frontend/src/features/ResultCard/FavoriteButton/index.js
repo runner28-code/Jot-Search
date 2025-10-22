@@ -76,7 +76,6 @@ function getIdByType(type, data) {
 
 function getItemsByType(type) {
   switch (type) {
-    case 'job':
       return AuthService.getSavedJobIDs();
     case 'company':
       return AuthService.getSavedCompanyIDs();

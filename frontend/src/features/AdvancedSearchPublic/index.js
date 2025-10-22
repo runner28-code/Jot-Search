@@ -128,7 +128,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       setFilterObject(defaultCandidateFilterState);
     }
     setActiveTab(tabChoice);
-// Temp comment
     setPage(1);
   }
 

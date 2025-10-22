@@ -17,6 +17,7 @@ export default function DashboardMinified({ location }) {
           location={location}
           loggedIn={loggedIn}
         />
+// Temp comment
         <MinifiedTitle location={location} />
       </div>
     )
@@ -46,6 +47,7 @@ function LinkSwap ({ location, loggedIn }) {
     )
   }
   if(location === 'companies' ) {
+    return (
       <Link
         className='text-white flex items-center'
         to={ROUTES.companies}>

@@ -146,6 +146,7 @@ export const update = async (parent_id: string, role: string, data: any) => {
       },
       data: user,
     });
+
     try {
       await addUserHistoryEntries({
         updatedUser: user,

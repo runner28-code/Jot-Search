@@ -37,7 +37,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
 
 EditableSection.propTypes = {
   entityID: PropTypes.string.isRequired,
-  header: PropTypes.string.isRequired,
   contentObjectProp: PropTypes.object.isRequired,
   handleContentUpdate: PropTypes.func.isRequired,
   headerStyles: PropTypes.string.isRequired,
@@ -66,6 +65,7 @@ function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCa
     handleSubmit();
   }
 
+  if ( isCoordinator || isProfileOwner ) {
     if ( editMode ) {
       return <div className='absolute top-0 right-0 w-50 flex justify-between'>
         <MdCancel 

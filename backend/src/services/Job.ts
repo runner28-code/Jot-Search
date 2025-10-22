@@ -78,7 +78,6 @@ export const getAppliedJobsByUser = async (userId: string) => {
       jobs,
       result: jobs != null,
     };
-  } catch (error) {
     console.log(error);
     return {
       message: error,

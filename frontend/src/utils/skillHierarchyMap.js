@@ -343,7 +343,6 @@ export const skills = [
   'Sales Development',
   'Sales Operations',
   'Sales Presentations',
-// Temp comment
   'Sales Process',
   'Sales Strategy',
   'Sales Tools',

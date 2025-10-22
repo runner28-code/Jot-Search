@@ -1,6 +1,5 @@
 /* INTERNAL ROUTES */
 export const root = '/';
-export const landingPage = '/landing-page';
 export const blog = '/blog';
 export const about = '/about';
 export const login = '/login';
@@ -20,6 +19,7 @@ export const companies = '/companies';
 // Candidate Dashboard
 export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';
+export const savedCareers = '/saved-careers';
 export const savedCompanies = '/saved-companies';
 // Company Dashboard
 export const candidates = '/candidates';
