@@ -148,7 +148,6 @@ export function buildOccupationString(occupation, companyName) {
   if ( occupation && companyName ) {
     const occupationString = `${occupation} @ ${companyName}`;
     return occupationString;
-  } else if ( occupation && !companyName ) {
     return occupation;
   } else {
     return 'No Occupation Provided';

@@ -76,7 +76,6 @@ HeaderContent.propTypes = {
     numEmployees: PropTypes.number,
   })
 }
-// Temp comment
 
 export default function HeaderMobile({ companyData }) {
   return (
@@ -93,7 +92,6 @@ HeaderMobile.propTypes = {
   handleCompanyUpdate: PropTypes.func.isRequired
 }
 
-function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'my-auto object-cover h-full w-full';
   if( width >= 1280 ) {

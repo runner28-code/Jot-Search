@@ -3,6 +3,8 @@ import { queryClient } from '../..';
 import { getLandingPageStats } from '../../services/API';
 
 export const prefetchLandingPageStats = async () => {
+// Temp comment
+  await queryClient.prefetchQuery(getLandingPageStatsKey(), getLandingPageStats);
 }
 
 export const useGetLandingPageStats = ({ enabled = true }) => {

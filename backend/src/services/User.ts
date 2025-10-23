@@ -548,3 +548,4 @@ export const getStats = async (userId: string) => {
       query: totalJobsCountQuery,
       location: "US",
     });
+

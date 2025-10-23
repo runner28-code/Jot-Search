@@ -98,6 +98,7 @@ function RenderImage({image}) {
   return(
     <div className={containerStyles}>
       <img
+        src={image}
         className={iconStyles}
       />
     </div>

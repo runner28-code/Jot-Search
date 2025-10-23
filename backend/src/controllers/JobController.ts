@@ -123,6 +123,7 @@ export class JobController {
       const datasourceToEnum: Dictionary<Datasource> = {
         main: Datasource.main,
         bullhorn: Datasource.bullhorn,
+        getro: Datasource.getro,
       };
 
       const _datasource = datasource ? datasourceToEnum[datasource] : undefined;
@@ -376,3 +377,4 @@ export class JobController {
     const id = userId || authUser.id!;
 
     if (!id) {
+      throw new Error("No user id provided");

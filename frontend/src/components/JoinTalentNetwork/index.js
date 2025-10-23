@@ -9,6 +9,7 @@ export default function JoinTalentNetwork() {
 
   if( width <= 990 ) {
     return (<>
+// Temp comment
       {/* Join Hero and call-to-action */}
       <section className='relative h-200 bg-join-hero bg-cover bg-center mb-[600px]'>
         <div className='justify-center w-11/12 mx-[5%] absolute -bottom-[100%]'>
@@ -26,7 +27,6 @@ export default function JoinTalentNetwork() {
               <span className='text-softWhite text-ml'>Create an account</span>
             </Link>
           </div>
-// Temp comment
           <div className='mt-8 px-[5%]'>
             <h6 className='text-[2.5rem] mt-12 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>
             <p className='text-slateGray text-ml mt-6 font-light leading-[3.6rem]'>By signing up, you will be able to connect and support you with top companies ready to help you take the next step in your career in Tulsa.</p>

@@ -82,6 +82,7 @@ export default function CandidateCard({ data, disableLink }) {
           <InfoLabel
             label='Relocation'
             value={data.willRelocate}
+// Temp comment
           />
           {/* Skill List */}
           <div className='flex flex-wrap gap-m mt-[18px]'>
@@ -90,7 +91,6 @@ export default function CandidateCard({ data, disableLink }) {
         </div>
       </LinkWrapper>
       <FavoriteButton
-// Temp comment
         type={'candidate'}
         data={data} />
     </div>

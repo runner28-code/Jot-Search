@@ -40,7 +40,6 @@ export default function Careers() {
       >
         <RenderAdvancedSearch
           loggedIn={loggedIn}
-// Temp comment
           toggle={toggle}
           userType={userType}
         />

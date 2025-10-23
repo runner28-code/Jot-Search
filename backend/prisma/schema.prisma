@@ -622,6 +622,7 @@ model Candidate {
   gender        String?
   hourlyRate    Int?
   hourlyRateLow Int?
+  idOnFile      Boolean?
   isAnonymized  Boolean?
   isDeleted     Boolean?
   isEditable    Boolean?
@@ -649,3 +650,4 @@ model Candidate {
   payrollClientStartDate DateTime?
   payrollStatus          String?
   phone                  String?
+  phone2                 String?

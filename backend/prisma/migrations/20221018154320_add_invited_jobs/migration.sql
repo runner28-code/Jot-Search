@@ -10,3 +10,4 @@ CREATE TABLE "CandidateJobInvites" (
 );
 
 -- AddForeignKey
+ALTER TABLE "CandidateJobInvites" ADD CONSTRAINT "CandidateJobInvites_candidateId_fkey" FOREIGN KEY ("candidateId") REFERENCES "Candidate"("id") ON DELETE RESTRICT ON UPDATE CASCADE;

@@ -25,7 +25,6 @@ export const roles = {
     'Product Marketing & Design'
   ],
   'Operations': [
-    'Business Operations & Strategy',
     'Client Success and Customer Service',
     'Operations Generalist',
     'Project and Program Management',
@@ -110,7 +109,6 @@ export const skills = [
   'Bootstrap',
   'Brand Awareness',
   'Brand Development',
-// Temp comment
   'Brand Marketing',
   'Branding',
   'Budget Management',

@@ -50,6 +50,7 @@ export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handl
       />
     )
   }
+}
 
 export function renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange) {
   if (!filterObject && !defaultFilterObject) {

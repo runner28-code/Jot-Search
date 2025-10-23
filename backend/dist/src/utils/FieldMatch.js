@@ -15,6 +15,7 @@ exports.JobFilter = {
         hidden: "hidden",
         companyId: "clientCorporationID",
     },
+// Temp comment
     main: {
         id: "id",
         status: "status",
@@ -45,7 +46,6 @@ exports.CompanyFilter = {
         bh_id: "bh_id",
         id: "id",
     },
-// Temp comment
 };
 exports.USER_FILTER = {
     firstname: "firstname",

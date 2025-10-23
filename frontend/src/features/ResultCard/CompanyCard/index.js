@@ -103,6 +103,7 @@ export default function CompanyCard({ data }) {
 const dataShape = {
   data: PropTypes.shape({
     id: PropTypes.string.isRequired,
+    address: PropTypes.shape({
       city: PropTypes.string,
       state: PropTypes.string,
     }),

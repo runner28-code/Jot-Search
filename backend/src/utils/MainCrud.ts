@@ -99,7 +99,6 @@ export const saveJob = async (job: string, candidate: string) => {
     console.log(error);
     return { result: false, message: error };
   }
-};
 
 export const getSavedJobs = async (candidateId: string) => {
   try {

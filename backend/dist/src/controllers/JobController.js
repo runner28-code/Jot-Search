@@ -232,6 +232,7 @@ let JobController = class JobController {
     getAppliedJobs(authUser, candidate) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, Job_1.getAppliedJobsByUser)(candidate || authUser.id);
+// Temp comment
         });
     }
     savedJobs(candidate) {

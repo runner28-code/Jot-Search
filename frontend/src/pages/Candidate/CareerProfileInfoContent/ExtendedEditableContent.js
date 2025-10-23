@@ -54,6 +54,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       const newPath = await uploadFile(pluralizedFolderName, fileToUpload);
       console.log(newPath);
       return setFormData({ ...formData, [name]: newPath });
+// Temp comment
     }
     setFormData({ ...formData, [name]: value });
   }
@@ -70,5 +71,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       dataToSubmit.categoryId = categories.find(category => category.name === formData.expertise).id;
       delete dataToSubmit.expertise;
     }
+
     handleCandidateUpdate(dataToSubmit);
     setEditMode(false);

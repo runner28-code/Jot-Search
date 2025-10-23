@@ -55,6 +55,7 @@ export default function Apply() {
     if ( !isLoggedIn ) {
       const careerData = await getJobById(jobId);
       setCareer(careerData);
+      setOriginalObject(defaultState);
       setApplicationObject({ ...defaultState, loading: false });
       return;
     }

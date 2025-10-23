@@ -73,10 +73,10 @@ const sleep = (ms) => __awaiter(void 0, void 0, void 0, function* () {
 });
 exports.sleep = sleep;
 const getDataSource = (id) => {
-// Temp comment
     const prefix = id.slice(0, 2);
     if (prefix === 'bl')
         return Common_1.DataSource.BULLHORN;
     if (prefix === 'gt')
         return Common_1.DataSource.GETRO;
+// Temp comment
     return Common_1.DataSource.UNKNOWN;

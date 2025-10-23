@@ -41,7 +41,6 @@ export class GetroService {
     async getNetworkID(): Promise<boolean> {
         try {
             console.log('\n***** getNetworkID *****');
-            const url = `${this.api_base_url_v2}/networks`;
 
             const res = await axios.get(url, this.getOptions());
             await sleep(2000); // https://developers.getro.com/#rate-limit
@@ -84,6 +83,7 @@ export class GetroService {
                     const { items, meta: { total: total } } = res.data;
                     if (!testMode) {
                         let result = [];
+                        for (const company of items) {
                             const detail = await this.getCompanyDetail(company.slug);
                             if (detail) {
                                 result.push(detail);
