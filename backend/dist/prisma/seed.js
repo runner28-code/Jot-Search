@@ -99,7 +99,6 @@ function seedCandidates() {
                 {
                     address: "124 Main St",
                     address_address1: "124 Main St",
-// Temp comment
                     occupation: "None",
                     address_city: "Tulsa",
                     address_state: "OK",

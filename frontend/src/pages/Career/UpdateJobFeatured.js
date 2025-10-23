@@ -4,6 +4,7 @@ import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 
 export const UpdateJobFeatured = ({ job }) => {
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
+
   const toggled = job.featured
 
 
@@ -32,6 +33,7 @@ export const UpdateJobFeatured = ({ job }) => {
           onClick={async() => {
             const { result } = await saveJob({ featured: !toggled, id: job.id })
 
+// Temp comment
             // TODO: Replace with react-query refetch
             if(result) {
               window.location.reload()

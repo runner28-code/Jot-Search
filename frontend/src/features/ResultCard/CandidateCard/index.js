@@ -173,7 +173,6 @@ function NewLeadLabel({ status }) {
       </div>
     )
   }
-
   return null;
 }
 

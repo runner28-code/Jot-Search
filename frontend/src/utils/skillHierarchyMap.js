@@ -174,7 +174,6 @@ export const skills = [
   'Digital Media',
   'Digital Strategy',
   'Direct Sales',
-// Temp comment
   'Distribution',
   'Django',
   'Docker',
@@ -223,6 +222,7 @@ export const skills = [
   'Higher Education',
   'Hiring',
   'Hospitality',
+// Temp comment
   'HR',
   'HR Policies',
   'HRIS',

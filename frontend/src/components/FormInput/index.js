@@ -11,7 +11,6 @@ const errorBorder = 'border-rose-500 ';
 const dropdownStyles = 'bg-lightGrey border border-midGrey border-solid rounded-b-lg overflow-y-auto z-10 ';
 const dropdownItemStyles = 'text-textBlack text-md pl-8 py-7 hover:bg-royalBlue hover:text-white ';
 export default function FormInput(props) {
-  const {
     type,
     dropdownType,
     name,
@@ -31,6 +30,7 @@ export default function FormInput(props) {
   componentStyles += disabled ? 'bg-grey300 cursor-not-allowed ' : 'bg-lightGrey ';
 
   const stylesObject = {
+    baseStyles: componentStyles,
     inputHeight: inputHeight,
     inputWidth: 'w-full',
     listStyles: dropdownStyles,

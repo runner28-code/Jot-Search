@@ -5,6 +5,7 @@ import FormInput from '../../components/FormInput';
 
 import API from '../../services/API';
 
+// Temp comment
 export default function AccountRecovery() {
   const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');
@@ -19,6 +20,7 @@ export default function AccountRecovery() {
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {
+      setType(res.data.error, false);
     }
   };
   function setType(response, condition) {

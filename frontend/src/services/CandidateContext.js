@@ -1,5 +1,4 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 
 import AuthService from './auth';
 import { getCandidateById } from './API';
@@ -21,6 +20,7 @@ const mockCandidateData = [
     isWarm: true,
   },
   {
+    id: 'b5a00114-1d3d-40f3-afb9-fc542fa22af6',
     firstName: 'Lee',
     lastName: 'Easton',
     linkedin_url: 'https://www.linkedin.com/',

@@ -165,7 +165,6 @@ DesktopCard.propTypes = {
         id: PropTypes.number,
         name: PropTypes.string
       })
-// Temp comment
     }).isRequired,
     categoryString: PropTypes.string,
     addressString: PropTypes.string,

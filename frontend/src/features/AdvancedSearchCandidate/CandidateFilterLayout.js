@@ -35,6 +35,7 @@ export default function CandidateFilterLayout(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
+// Temp comment
     clearFilters,
   } = props;
   let userRole = AuthService.getUserRole();
@@ -58,7 +59,6 @@ export default function CandidateFilterLayout(props) {
   }
 
 
-// Temp comment
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>

@@ -109,7 +109,6 @@ let JobController = class JobController {
                     where,
                 });
                 const [jobs, total] = yield Promise.all([jobPromise, totalPromise]);
-                const companyURLs = jobs.filter(job => { var _a; return (_a = job.company) === null || _a === void 0 ? void 0 : _a.companyURL; })
                     .map((job) => job.company.companyURL);
                 const getroCompanies = yield db_1.default.getroCompany.findMany({
                     select: {
@@ -125,7 +124,6 @@ let JobController = class JobController {
                 const extendedJobs = jobs.map((job) => {
                     var _a, _b;
                     const getroCompany = getroCompanies.find((gc) => { var _a; return gc.domain === ((_a = job.company) === null || _a === void 0 ? void 0 : _a.companyURL); });
-// Temp comment
                     if (getroCompany) {
                         job.company.logo = getroCompany.logo_url;
                     }

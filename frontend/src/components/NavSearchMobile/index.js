@@ -65,7 +65,6 @@ export default function NavSearchMobile({ placeholder }) {
     setSearchTerm( searchTerm );
     setForceHidden( false );
   }
-// Temp comment
 
   /* Clear state on page change */
   useEffect( () => {
@@ -89,6 +88,7 @@ export default function NavSearchMobile({ placeholder }) {
     total: totalJobs + totalCompanies + totalCandidates,
     forceHidden
   }
+// Temp comment
 
   /* STYLES & RENDER */
   const stylesObject = {

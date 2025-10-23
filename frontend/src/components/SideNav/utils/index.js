@@ -19,7 +19,6 @@ export const choices = {
   dashboard: {
     label: 'My Dashboard',
     icon: DashboardIcon,
-    link: ROUTES.dashboard,
   },
   profile: {
     label: 'My Profile',
@@ -65,6 +64,7 @@ export const choices = {
     label: 'Talent.InTulsa.com',
     icon: ContactIcon,
     link: ROUTES.talentInTulsa,
+  },
   logout: {
     label: 'Logout',
     icon: LogoutIcon,

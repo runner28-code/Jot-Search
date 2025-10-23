@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import LoadingSpinner from '../LoadingSpinner';
+import FilterSearch from '../FilterSearchLanding';
 import * as ROUTES from '../../routes';
 
 export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading }) {

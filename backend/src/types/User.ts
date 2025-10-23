@@ -37,7 +37,6 @@ export type User = {
   revenue?: string;
   dateFounded?: string;
 
-  employeeType?: string;
   experience?: string;
   hourlyRate?: string;
   willRelocate?: string;
@@ -51,6 +50,7 @@ export type User = {
 };
 
 export const IUSER = {
+  id: "",
   externalId: "",
   firstname: "",
   lastname: "",

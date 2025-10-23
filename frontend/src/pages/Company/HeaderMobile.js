@@ -61,7 +61,6 @@ function HeaderContent({ companyData }) {
 }
 
 HeaderContent.propTypes = {
-  companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,
@@ -111,6 +110,7 @@ function renderCompanyLogo(logoUrl, name) {
         className={logoStyles}
         src={logoUrl}
         alt={`${name} logo`}
+      />
     </div>
   )
 }
