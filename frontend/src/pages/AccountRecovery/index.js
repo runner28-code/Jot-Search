@@ -9,7 +9,6 @@ export default function AccountRecovery() {
   const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');
 
-  const handleSubmit = async (event) => {
     event.preventDefault();
     const { email } = event.target;
     const res = await API.post(ROUTES.APIaccountRecovery, {
@@ -22,7 +21,6 @@ export default function AccountRecovery() {
       setType(res.data.error, false);
     }
   };
-// Temp comment
   function setType(response, condition) {
     setCondition(condition);
     setResponse(response);

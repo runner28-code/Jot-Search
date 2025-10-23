@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import AssistanceCard from './AssistanceCard';
 import gaugeIcon from '../../../assets/icons/gauge.svg';
-import PageHeader from '../../../components/PageHeader';
-// Temp comment
 import AdvancedSearch from '../../../features/AdvancedSearch';
 import Stats from '../../../features/Stats';
 import AuthService from '../../../services/auth';

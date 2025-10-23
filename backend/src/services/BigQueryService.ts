@@ -8,6 +8,7 @@ export class BigQueryService {
     public static client: BigQuery | null = null;
 
     public static getClient() {
+        if (BigQueryService.client === null) {
             BigQueryService.client = new BigQuery();
         }
         return BigQueryService.client;
@@ -46,7 +47,6 @@ export class BigQueryService {
         }
         return null;
     }
-
     public static async insertQuery(dataset: string, table: string, data: any) {
         try {
             consoleLog(`BIGQUERY: INSERT QUERY = ${JSON.stringify(data)}`);
@@ -60,3 +60,4 @@ export class BigQueryService {
             `;
             console.log(query)
 
+            const options = {

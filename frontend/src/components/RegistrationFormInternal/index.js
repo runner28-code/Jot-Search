@@ -92,7 +92,6 @@ export default function RegistrationFormInternal(loggedIn) {
           success: false,
         });
         return;
-      }
       formObj.resume = resumeResponse;
 
       // Format formObj
@@ -134,6 +133,7 @@ export default function RegistrationFormInternal(loggedIn) {
   }, [submissionObject.success])
 
   async function handleSubmit(event) {
+    event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
     setErrors([]);

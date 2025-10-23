@@ -113,4 +113,3 @@ function renderCardImage(data) {
       className=''
       src={data.company?.logo}
     />
-  }

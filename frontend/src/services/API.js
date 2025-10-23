@@ -225,7 +225,6 @@ export async function getJobsFull(filters, count, operator, page) {
     'filters': formattedFilters,
     'count': count || 5,
     'page': page || null,
-    'operator': operator || 'AND'
   });
 
   return {

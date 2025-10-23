@@ -273,3 +273,4 @@ export const saveLeads = async (leads: any[]) => {
     console.log(error.message);
     return { result: false, error };
   }
+};

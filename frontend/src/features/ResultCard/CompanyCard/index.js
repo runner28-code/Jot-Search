@@ -31,6 +31,7 @@ export default function CompanyCard({ data }) {
   return (
     <div
       className='relative w-full'
+      key={data.id}
     >
       <Link
         to={`${ROUTES.companies}/${data.id}`}
@@ -102,7 +103,6 @@ export default function CompanyCard({ data }) {
 const dataShape = {
   data: PropTypes.shape({
     id: PropTypes.string.isRequired,
-    address: PropTypes.shape({
       city: PropTypes.string,
       state: PropTypes.string,
     }),

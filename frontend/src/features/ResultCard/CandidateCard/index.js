@@ -90,6 +90,7 @@ export default function CandidateCard({ data, disableLink }) {
         </div>
       </LinkWrapper>
       <FavoriteButton
+// Temp comment
         type={'candidate'}
         data={data} />
     </div>

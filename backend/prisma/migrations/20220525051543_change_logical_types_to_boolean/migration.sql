@@ -40,6 +40,7 @@ DROP COLUMN "veteran",
 ADD COLUMN     "veteran" BOOLEAN,
 DROP COLUMN "willRelocate",
 ADD COLUMN     "willRelocate" BOOLEAN,
+DROP COLUMN "workAuthorized",
 ADD COLUMN     "workAuthorized" BOOLEAN;
 
 -- AlterTable

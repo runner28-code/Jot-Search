@@ -96,7 +96,6 @@ export default function AdvancedSearch({ disabledTabs }) {
       ...filterObject,
       [filterType]: choice
     });
-// Temp comment
     setPage(1);
   }
 

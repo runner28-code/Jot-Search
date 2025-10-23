@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import UnlabeledContent from './UnlabeledContent';
 import Property from './Property';
-
 const UNLABELED_CONTENT_ARRAY = ['comments', 'primarySkills', 'expertise', 'resume'];
 
 export default function SectionContent({ contentObject }) {
@@ -14,6 +13,5 @@ export default function SectionContent({ contentObject }) {
       contentText={contentString} 
       propertyName={propertyName}
     />
-// Temp comment
   }
   return renderMultipleProperties(contentObject);

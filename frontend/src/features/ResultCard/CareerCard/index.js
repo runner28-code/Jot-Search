@@ -193,7 +193,6 @@ function MobileCard({ dataObj, active }) {
         <p className='text-xxs text-zinc-700 font-roboto mt-4'>{ data.clientCorporation }</p>
       </div>
       <div className='flex flex-col items-start justify-center '>
-        {/* Title */}
         <h6 className='text-[1.7rem] font-spaceGrotesk font-semibold text-charcoal leading-none mt-2'>{data.title}</h6>
         {/* First row icons */}
         <div className='w-full flex items-center'>
@@ -207,7 +206,6 @@ function MobileCard({ dataObj, active }) {
 MobileCard.propTypes = {
   dataObj: PropTypes.shape({
     data: PropTypes.shape({
-// Temp comment
       id: PropTypes.string,
       clientCorporation: PropTypes.string,
       city: PropTypes.string,

@@ -85,6 +85,7 @@ export default function Candidate() {
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 
   if (loading) { return <LoadingSpinner /> }
+// Temp comment
   return (
     <div className='flex flex-col space-y-16'>
       {/* "My Profile"/"Candidate Profile" Header */}
@@ -138,7 +139,6 @@ export default function Candidate() {
         }
         {/* Personal Info (Candidate and Coordinator) */}
         <PersonalInfo
-// Temp comment
           role={role}
           candidateData={candidateData}
           handleCandidateUpdate={handleCandidateUpdate} />

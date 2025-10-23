@@ -114,6 +114,7 @@ async function seedCategories() {
         externalID: 2000026,
       },
       {
+        name: "Operations",
         enabled: true,
         externalID: 2000014,
       },
@@ -181,3 +182,5 @@ async function seedUsers() {
         email: "coordinator@aerovision.io",
         firstname: "Coordinator",
         lastname: "Test",
+        /* Password: 123456 */
+        password:

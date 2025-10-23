@@ -50,7 +50,6 @@ export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handl
       />
     )
   }
-}
 
 export function renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange) {
   if (!filterObject && !defaultFilterObject) {
@@ -83,6 +82,7 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
 
   return Object.entries(defaultFilterObject).map(([key]) => {
     if (!filterObject[key]) {
+      return null;
     }
     const onFilterChange = (e) => {
       handleFilterChange(key, e.target.checked ? 'Yes' : 'No')

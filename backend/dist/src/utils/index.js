@@ -60,7 +60,6 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
     }
     catch (error) {
         console.log(error);
-// Temp comment
         return true;
     }
 });
@@ -74,6 +73,7 @@ const sleep = (ms) => __awaiter(void 0, void 0, void 0, function* () {
 });
 exports.sleep = sleep;
 const getDataSource = (id) => {
+// Temp comment
     const prefix = id.slice(0, 2);
     if (prefix === 'bl')
         return Common_1.DataSource.BULLHORN;

@@ -329,7 +329,6 @@ const job_filter_exclude_keys = [
     "record specialist",
     "recovery",
     "recreation",
-// Temp comment
     "recycling",
     "refrigeration",
     "refrigerator",

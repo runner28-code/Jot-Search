@@ -110,6 +110,7 @@ export const skills = [
   'Bootstrap',
   'Brand Awareness',
   'Brand Development',
+// Temp comment
   'Brand Marketing',
   'Branding',
   'Budget Management',

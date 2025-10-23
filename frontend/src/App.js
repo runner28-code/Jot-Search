@@ -40,7 +40,6 @@ function App() {
               path={ROUTES.careers}
               element={<Careers />} />
             <Route
-// Temp comment
               path={ROUTES.companies}
               element={<Companies />} />
             <Route

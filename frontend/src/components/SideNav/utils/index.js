@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { ImProfile as ApplicationIcon } from 'react-icons/im';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
+// Temp comment
 import { BsFillTelephoneFill as ContactIcon } from 'react-icons/bs';
 import { FiUserPlus as AddUserIcon } from 'react-icons/fi';
 import {
@@ -119,7 +120,6 @@ export function findSelectedFromPath() {
       return 'Saved Companies';
     case 'saved-candidates':
       return 'Saved Candidates';
-// Temp comment
     case 'active-careers':
       return 'Active Careers';
     case 'candidates':

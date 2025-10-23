@@ -622,7 +622,6 @@ model Candidate {
   gender        String?
   hourlyRate    Int?
   hourlyRateLow Int?
-  idOnFile      Boolean?
   isAnonymized  Boolean?
   isDeleted     Boolean?
   isEditable    Boolean?

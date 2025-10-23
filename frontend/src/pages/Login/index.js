@@ -14,6 +14,7 @@ export default function Login() {
     const { email, password } = event.target;
     const res = await API.post(ROUTES.APIlogin, {
       email: email.value,
+      password: password.value,
     });
 
     if ( res.data.result ) {

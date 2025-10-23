@@ -41,7 +41,6 @@ export default function Auth() {
         <Route
           path={ROUTES.favorites}
           element={<Favorites />} />
-// Temp comment
         <Route
           path={ROUTES.activeCareers}
           element={<ActiveCareers />} />

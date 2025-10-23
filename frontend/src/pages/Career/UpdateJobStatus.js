@@ -7,7 +7,6 @@ import { useState } from 'react';
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charcoal mb-m ';
 const hrStyles = 'mb-10 border-smokeGray ';
 
-// Temp comment
 export const UpdateJobStatus = ({ job }) => {
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
   const [updatedJob, setUpdatedJob] = useState(job)
@@ -35,6 +34,7 @@ export const UpdateJobStatus = ({ job }) => {
           placeholder={'TP Career Status'}
           handleChange={async(e) => {
             const { res } = await saveJob({ status: e.target.value, id: updatedJob.id })
+// Temp comment
             setUpdatedJob(res);
           }}
         />

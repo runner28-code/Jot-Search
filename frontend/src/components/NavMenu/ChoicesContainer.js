@@ -18,6 +18,7 @@ const spanStyles = 'text-xl font-bold font-spaceGrotesk ';
 const hrStyles = 'border-royalBlue ';
 const iconStyles = 'w-12 h-12 mr-4 ';
 
+const stylesObject = {
   baseLinkStyles,
   topLinkStyles,
   bottomLinkStyles,

@@ -187,6 +187,7 @@ export default function Footer() {
             rel='noreferrer'
           >
               Privacy Policy
+// Temp comment
           </a>
           <span> | </span>
           <a

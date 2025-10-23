@@ -116,7 +116,6 @@ let JobController = class JobController {
                         domain: true,
                         logo_url: true,
                     },
-// Temp comment
                     where: {
                         domain: {
                             in: companyURLs
