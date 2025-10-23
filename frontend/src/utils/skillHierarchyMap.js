@@ -25,6 +25,7 @@ export const roles = {
     'Product Marketing & Design'
   ],
   'Operations': [
+    'Business Operations & Strategy',
     'Client Success and Customer Service',
     'Operations Generalist',
     'Project and Program Management',
@@ -173,6 +174,7 @@ export const skills = [
   'Digital Media',
   'Digital Strategy',
   'Direct Sales',
+// Temp comment
   'Distribution',
   'Django',
   'Docker',

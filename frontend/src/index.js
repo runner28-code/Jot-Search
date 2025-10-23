@@ -13,7 +13,6 @@ import App from './App';
 import './index.css';
 
 export const queryClient = new QueryClient();
-// Temp comment
 const isDevelopment = window.location.hostname === 'localhost';
 
 ReactDOM.render(

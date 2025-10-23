@@ -21,7 +21,6 @@ const mockCandidateData = [
     isWarm: true,
   },
   {
-    id: 'b5a00114-1d3d-40f3-afb9-fc542fa22af6',
     firstName: 'Lee',
     lastName: 'Easton',
     linkedin_url: 'https://www.linkedin.com/',
@@ -43,6 +42,7 @@ const mockCandidateData = [
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/rachel_2_fekvfg.webp', // Missing from Bullhorn Schema
     occupation: 'Project Manager',
     companyName: 'Aerovision',
+    address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma',

@@ -31,7 +31,6 @@ export default function FormInput(props) {
   componentStyles += disabled ? 'bg-grey300 cursor-not-allowed ' : 'bg-lightGrey ';
 
   const stylesObject = {
-    baseStyles: componentStyles,
     inputHeight: inputHeight,
     inputWidth: 'w-full',
     listStyles: dropdownStyles,
@@ -81,7 +80,6 @@ export default function FormInput(props) {
         inputHeight={inputHeight}
         disabled={disabled}
       />
-// Temp comment
     case 'password': // fall through to default
     default: // type == 'text' || 'password'
       return <TextInput

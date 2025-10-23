@@ -328,6 +328,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
 }
 
 PersonalInfo.propTypes = {
+// Temp comment
   role: PropTypes.string.isRequired,
   candidateData: PropTypes.object.isRequired,
   handleCandidateUpdate: PropTypes.func.isRequired,

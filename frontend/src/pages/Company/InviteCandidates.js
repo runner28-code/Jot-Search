@@ -22,7 +22,6 @@ export default function InviteCandidates({ company }) {
       label: candidate.name,
       value: candidate.id,
       candidate
-// Temp comment
     }
   }) || [];
   

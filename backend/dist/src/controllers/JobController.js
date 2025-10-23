@@ -125,6 +125,7 @@ let JobController = class JobController {
                 const extendedJobs = jobs.map((job) => {
                     var _a, _b;
                     const getroCompany = getroCompanies.find((gc) => { var _a; return gc.domain === ((_a = job.company) === null || _a === void 0 ? void 0 : _a.companyURL); });
+// Temp comment
                     if (getroCompany) {
                         job.company.logo = getroCompany.logo_url;
                     }
@@ -232,7 +233,6 @@ let JobController = class JobController {
     getAppliedJobs(authUser, candidate) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, Job_1.getAppliedJobsByUser)(candidate || authUser.id);
-// Temp comment
         });
     }
     savedJobs(candidate) {

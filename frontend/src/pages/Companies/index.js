@@ -42,13 +42,13 @@ export default function Companies() {
         <RenderAdvancedSearch
           loggedIn={loggedIn}
           toggle={toggle}
+          userType={userType}
         />
       </div>
     </section>
   )
 }
 
-function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   const { width } = useWindowDimensions();
   if( width <= 990 && userType === 'candidate' ) {
     return (<>

@@ -5,6 +5,7 @@ import { MdLogout } from 'react-icons/md';
 import { FiEdit as ProfileIcon } from 'react-icons/fi';
 
 export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
+// Temp comment
   const linkStyles = stylesObject.baseLinkStyles + ' vw-1280:rounded-tl-xl';
   return (<>
     <Link 
@@ -24,5 +25,4 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
       <MdLogout className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Logout</span>
     </div>
-// Temp comment
   </>)

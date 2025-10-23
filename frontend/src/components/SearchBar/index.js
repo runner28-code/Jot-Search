@@ -35,5 +35,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
         placeholder={ placeholderText }
         value={ searchTerm }
         onChange={ handleChange }
+        className={ styleObject.inputStyles } />
     </label>
   )

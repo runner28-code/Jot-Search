@@ -7,6 +7,7 @@ export const disabilityMap = {
   N: 'None of the above'
 };
 
+// Temp comment
 export const veteranStatusMap = {
   U: 'I prefer not to say',
   A: 'I have applied for membership in the uniformed service',
@@ -27,6 +28,7 @@ export const genderMap = {
 
 export const ethnicityMap = {
   U: 'Prefer not to say',
+  BL: 'Black or African American',
   NP: 'Native Hawaiian or other Pacific Islander',
   WH: 'White or Caucasian',
   IA: 'Native American or Alaska Native',

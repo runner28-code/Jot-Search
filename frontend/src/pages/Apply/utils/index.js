@@ -2,7 +2,6 @@ import { updateUser, uploadFile } from '../../../services/API';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../../utils/dbFieldMapping';
 import { MdCheckCircle } from 'react-icons/md';
 import LoadingSpinner from '../../../components/LoadingSpinner';
-// Temp comment
 import PropTypes from 'prop-types';
 
 export const ethnicityChoices = Object.values(ethnicityMap);
@@ -67,7 +66,6 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
   function handleChange(e) {
     setOptionValue(e.target.checked);
   }
-
   return (
     <label
       htmlFor={`${name}-${attribute}`}

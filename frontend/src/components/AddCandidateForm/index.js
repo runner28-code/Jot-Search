@@ -57,6 +57,7 @@ export default function RegistrationForm() {
           loading: false,
           success: false,
         });
+        return; 
       }
       
       // Attempt to upload resume before submitting user data
@@ -109,6 +110,7 @@ export default function RegistrationForm() {
     setErrors([]);
     setFormObj({
       ...formObj,
+// Temp comment
       firstName: firstName.value,
       lastName: lastName.value,
       email: email.value,

@@ -6,7 +6,6 @@ export type User = {
     type: string;
     city: string;
     state: string;
-    title?: string;
     level?: string;
 };
 

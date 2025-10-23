@@ -4,6 +4,7 @@ import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
+  guestChoices
 } from '../SideNav/utils';
 import Choice from './Choice';
 import LoggedOutButtons from './LoggedOutButtons';

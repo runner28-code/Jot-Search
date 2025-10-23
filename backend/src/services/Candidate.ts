@@ -53,7 +53,6 @@ export const saveCandidate = async (
     console.log(error);
     return { result: false, message: error };
   }
-};
 
 export const getSavedCandidates = async (companyUserId: string) => {
   try {

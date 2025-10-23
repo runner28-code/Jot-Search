@@ -105,6 +105,7 @@ export const saveBullhornJobs = async (jobs: any[]) => {
     "startDate", //
     "skills",
   ];
+  try {
     for (const job of jobs) {
       try {
         console.log(`Savng job with ID = ${job.id}`);

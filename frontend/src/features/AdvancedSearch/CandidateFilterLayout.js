@@ -19,6 +19,7 @@ const dropdownFilters = [
   'Experience',
   'Remote Availability',
   'Employment Type',
+];
 const checkboxFiltersCoord = [
   'Authorized to work in the US',
   'Open to Relocation',
@@ -54,7 +55,6 @@ export default function CandidateFilterLayout(props) {
   } else {
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
-    });
     checkboxFilters.forEach(filter => {
       checkboxFilterObject[filter] = filterObject[filter];
     });

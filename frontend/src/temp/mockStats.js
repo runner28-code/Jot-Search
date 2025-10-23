@@ -274,5 +274,4 @@ export const mockCoordinatorStats = {
       count: 343,
       prevCount: 441
     },
-// Temp comment
     'Last 7 Days': {

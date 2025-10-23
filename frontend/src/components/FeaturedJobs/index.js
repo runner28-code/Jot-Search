@@ -74,7 +74,6 @@ export default function FeaturedJobs() {
     </section>
   )
 }
-
 function renderColorShapes() {
   return(
     <div className='relative w-24 mb-8'>

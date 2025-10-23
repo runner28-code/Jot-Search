@@ -60,10 +60,8 @@ class AuthService {
   }
 
   clearStorage() {
-    // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
     localStorage.removeItem('savedJobs');
-// Temp comment
     localStorage.removeItem('savedCompanies');
     localStorage.removeItem('savedCandidates');
   }

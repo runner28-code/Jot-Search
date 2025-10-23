@@ -121,7 +121,6 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
   }
 
   return (
-// Temp comment
     <div>
       {currentChosen.map(choice => {
         const isActive = currentChosen.includes(choice);

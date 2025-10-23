@@ -251,7 +251,6 @@ export class BullhornService {
             "feeArrangement",
             "funding",
             "industryList",
-            "name",
             "notes",
             "numEmployees",
             "numOffices",
