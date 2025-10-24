@@ -23,7 +23,6 @@ exports.JobFilter = {
         employmentType: "employmentType",
         onSite: "onSite",
         yearsRequired: "yearsRequired",
-        willRelocate: "willRelocate",
         city: "city",
         state: "state",
         isDeleted: "isDeleted",
@@ -55,7 +54,6 @@ exports.USER_FILTER = {
     state: "state",
     skills: "skills",
     skillSet: "skillSet",
-// Temp comment
     category: "category",
     status: "status",
     email: "email",

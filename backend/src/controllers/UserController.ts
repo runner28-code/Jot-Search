@@ -38,7 +38,6 @@ import db from "../utils/db";
 @Controller()
 export class UserController {
   @Post("/login")
-  async login(@Body() body: { email: string; password: string }) {
     const { email, password } = body;
     const { result, error, ...data } = await login(email, password);
 
@@ -202,3 +201,4 @@ export class UserController {
     let data = { ...user };
 
     if (authUser.role !== COORDINATOR) {
+      return {

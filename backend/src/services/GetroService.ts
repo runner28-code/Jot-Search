@@ -111,7 +111,6 @@ export class GetroService {
     async getCompanyDetail(slug: string): Promise<any> {
         console.log(`\n***** getCompanyDetail (${slug}) *****`);
         const query = queryString.stringify({
-            collection_id: this.networkId,
             detailed: true
         });
         const url = `${this.api_base_url_v1}/organizations/${slug}?${query}`;
@@ -253,3 +252,4 @@ export class GetroService {
                                 organization_name: item.organization?.name,
                                 organization_slug: item.organization?.slug,
                                 posted_at: new Date(item.posted_at),
+                                expires_at: new Date(item.expires_at),

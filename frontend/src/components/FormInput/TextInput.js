@@ -15,7 +15,6 @@ export default function TextInput({type, name, placeholder, label, value, requir
       { renderLabel( label, required, name ) }
       { renderInput( name, type, baseStyles, placeholder, value, onChange, handleChange, disabled ) }
     </div>
-// Temp comment
   )
 }
 

@@ -46,7 +46,6 @@ export default function Stats({ userType }) {
         'Company Favorites': { ...result.companyFavorites },
         'Active Career Post Favorites': { ...result.activeCareerPostFavorites },
         'Application Invitations Sent': { ...result.applicationInvitationsSent }                
-// Temp comment
       })
     }
     if (userType === 'coordinator') {
@@ -67,6 +66,7 @@ export default function Stats({ userType }) {
         <h5 className='text-lightGrey text-h5 mr-10'> Quick Stats</h5>
         <div
           id='dropdown-container'
+// Temp comment
           className='relative'
         >
           <TimeframeFilter

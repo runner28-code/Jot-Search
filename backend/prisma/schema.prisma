@@ -651,3 +651,5 @@ model Candidate {
   payrollStatus          String?
   phone                  String?
   phone2                 String?
+  phone3                 String?
+

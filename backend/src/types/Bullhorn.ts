@@ -8,6 +8,7 @@ export type Company = {
     annualRevenue?: string,
     billingAddress_address1?: string,
     billingAddress_address2?: string,
+    billingAddress_city?: string,
     billingAddress_state?: string,
     billingAddress_zip?: string,
     billingContact?: string,
@@ -269,7 +270,6 @@ export type Candidate = {
     userDateAdded?: string;
     username?: string;
     veteran?: string;
-    willRelocate?: string;
     workAuthorized?: string;
     workPhone?: string;
 };
@@ -288,3 +288,4 @@ export type Lead = {
     clientContacts?: string;
     clientCorporation?: string;
     comments?: string;
+    companyName?: string;

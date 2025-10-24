@@ -24,6 +24,7 @@ const defaultState = {
   roles: [],
   skills: [],
   experience: '',
+  employmentPreference: '',
   workspace: '',
   linkedin: '',
   referredBy: '',

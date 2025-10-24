@@ -23,6 +23,7 @@ exports.IUSER = {
     seniority: "",
     workspace: "",
     referredBy: "",
+    roles: "",
     description: "",
     phone: "",
     status: "",
@@ -40,3 +41,4 @@ exports.IUSER = {
     hourlyRate: "",
     willRelocate: "",
     willReceiveNotification: false,
+    ethnicity: "",

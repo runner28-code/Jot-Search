@@ -114,7 +114,6 @@ export type Job = {
     taxStatus?: string;
     title?: string;
     travelRequirements?: string;
-    type?: string;
     willRelocate?: string;
     yearsRequired?: string;
 };
@@ -289,3 +288,4 @@ export type Lead = {
     clientContacts?: string;
     clientCorporation?: string;
     comments?: string;
+    companyName?: string;

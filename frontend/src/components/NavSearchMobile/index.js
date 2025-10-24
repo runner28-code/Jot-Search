@@ -88,7 +88,6 @@ export default function NavSearchMobile({ placeholder }) {
     total: totalJobs + totalCompanies + totalCandidates,
     forceHidden
   }
-// Temp comment
 
   /* STYLES & RENDER */
   const stylesObject = {

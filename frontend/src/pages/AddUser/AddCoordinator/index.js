@@ -21,6 +21,7 @@ export default function AddCoordinator() {
         setSubmissionObject({
           loading: false,
           success: true,
+// Temp comment
           errors: {},
         });
       } else {
@@ -55,6 +56,7 @@ export default function AddCoordinator() {
     const newErrors = validateInput(
       name,
       value,
+      submissionObject.errors,
       formObject.password
     );
 

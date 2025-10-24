@@ -54,7 +54,6 @@ export default function RegistrationFormInternal(loggedIn) {
   const [errorBlock, setErrorBlock] = useState('');
   const [referralChoice, setReferralChoice] = useState(false);
   const [commObj, setCommObj] = useState(defaultCommunity);
-// Temp comment
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
@@ -115,6 +114,7 @@ export default function RegistrationFormInternal(loggedIn) {
         console.log('Error: ', result);
         setErrorBlock(result);
         setSubmissionObject({
+// Temp comment
           loading: false,
           success: false,
         });

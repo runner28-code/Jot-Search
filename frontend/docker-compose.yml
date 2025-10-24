@@ -8,3 +8,4 @@ services:
     image: intulsa_frontend
     container_name: intulsa_frontend
     ports:
+      - 80:3000

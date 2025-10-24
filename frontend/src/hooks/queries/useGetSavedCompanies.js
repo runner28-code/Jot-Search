@@ -8,9 +8,7 @@ export const prefetchSavedCompanies = async ({userId, count, page}) => {
 export const useGetSavedCompanies = ({ count, page, userId, enabled = true }) => {
   const { data, error, isLoading } = useQuery(
     getCompaniesKey({userId, count, page}),
-// Temp comment
     () => getSavedCompanies(userId, count, page),
     { enabled }
   );
 
-  return { savedCompanies: data, total: data?.total || 0, error, isLoading };

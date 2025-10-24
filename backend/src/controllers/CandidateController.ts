@@ -363,3 +363,4 @@ export class CandidateController {
     if (authUser.role !== COORDINATOR) {
       return {
         result: false,
+        error: "You should be a coordinator for sending jobs to candidates",

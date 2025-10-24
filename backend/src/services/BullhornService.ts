@@ -590,7 +590,6 @@ export class BullhornService {
   ): Promise<any> {
     console.log("\n***** getCandidates *****");
     let offset = 0;
-    let total = 100000;
     let repeatErr = 0;
 
     while (repeatErr < 3) {
@@ -862,3 +861,5 @@ export class BullhornService {
         if (res.status === 200) {
           const { data } = res.data;
           total = res.data.total;
+          const updatedData = data.map((d: any) => ({
+            ...d,

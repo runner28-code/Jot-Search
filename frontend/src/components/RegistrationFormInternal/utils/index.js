@@ -61,6 +61,7 @@ export function renderHeader(addType) {
   }
 }
 
+export function inputValidation(formObj) {
   // Remove non-required properties
 
   let newErrors = [];
@@ -76,6 +77,7 @@ export function renderHeader(addType) {
     }
   });
 
+// Temp comment
   if ( formObj.linkedin.slice(0, 8) !== 'https://' ) { // Ensure valid URL
     newErrors.push('linkedin');
   }

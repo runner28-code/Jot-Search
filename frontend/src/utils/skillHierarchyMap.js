@@ -222,7 +222,6 @@ export const skills = [
   'Higher Education',
   'Hiring',
   'Hospitality',
-// Temp comment
   'HR',
   'HR Policies',
   'HRIS',
@@ -348,3 +347,4 @@ export const skills = [
   'Sales Strategy',
   'Sales Tools',
   'Sales Training',
+  'Salesforce',

@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import PageHeader from '../../components/PageHeader';
 import {BsClipboardCheck} from 'react-icons/bs';
 import ResultContainer from '../../features/ResultContainer';
@@ -32,6 +33,7 @@ export default function Applications() {
   }, []);
 
   function handleCheckClick(careerId) {
+// Temp comment
     if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
     } else {

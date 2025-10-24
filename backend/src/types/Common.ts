@@ -38,6 +38,7 @@ export enum DataSource {
 export type DataSources = "bullhorn" | "getro" | "main" | "all";
 
 export type Operator = "AND" | "OR";
+
 export type FilterOption = {
   key: string;
   value: string;
@@ -122,3 +123,4 @@ export type CompanySearchByFilterResponse = {
 // Candidate Types
 export type CandidateSearchByIdResponse = {
   candidate?: User;
+  message?: any;

@@ -24,7 +24,6 @@ export default function CareerPage() {
   const isMobile = width < 768;
   const role = AuthService.getUserRole();
   /* STATE */
-  const { id } = useParams();
   const [careerData, setCareerData] = useState({});
 
   useEffect(async () => {
@@ -152,5 +151,4 @@ function MailButton({ text, email, company, id, add }) {
       className='rounded-xl bg-white border border-royalBlue p-4 mt-6 text-royalBlue inline-block'>
       {text}
     </a>
-// Temp comment
   </>)

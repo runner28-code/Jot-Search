@@ -1,3 +1,4 @@
+FROM node:16.13.1-alpine
 
 COPY . /usr/src/inTulsa-be
 COPY package-lock.json /usr/src/inTulsa-be
@@ -9,7 +10,6 @@ RUN apk update && apk --no-cache add --virtual native-deps g++ make cmake python
 RUN npm install
 
 RUN apk del native-deps
-
 RUN npm run build
 
 RUN npx prisma migrate deploy

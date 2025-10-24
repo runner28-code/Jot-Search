@@ -26,7 +26,6 @@ export default function MobileLayout(props) {
   } = props.data;
   const navigate = useNavigate();
   const skillList = careerData.skillList;
-
   return (<>
     <section className='relative bg-white max-w-400 px-xl py-xxl border-2 border-disabled border-solid rounded-3xl mb-26'>
       {/* Header */}
