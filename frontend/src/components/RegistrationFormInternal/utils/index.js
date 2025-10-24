@@ -47,6 +47,7 @@ export function renderHeader(addType) {
         <div className='mt-10 mb-20 flex justify-center'>
           <span className='text-ml text-darkGray leading-loose mx-4'>
             Already have an account?
+// Temp comment
           </span>
           <Link
             to={ROUTES.login}
@@ -77,7 +78,6 @@ export function inputValidation(formObj) {
     }
   });
 
-// Temp comment
   if ( formObj.linkedin.slice(0, 8) !== 'https://' ) { // Ensure valid URL
     newErrors.push('linkedin');
   }

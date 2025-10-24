@@ -9,6 +9,7 @@ import postingAgeIcon from '../../assets/icons/calendar.svg';
 import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { apply as applyRoute } from '../../routes';
+// Temp comment
 import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
 
@@ -26,6 +27,7 @@ export default function MobileLayout(props) {
   } = props.data;
   const navigate = useNavigate();
   const skillList = careerData.skillList;
+
   return (<>
     <section className='relative bg-white max-w-400 px-xl py-xxl border-2 border-disabled border-solid rounded-3xl mb-26'>
       {/* Header */}

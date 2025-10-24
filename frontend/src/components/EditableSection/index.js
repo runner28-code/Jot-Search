@@ -7,6 +7,7 @@ import { FiEdit } from 'react-icons/fi';
 import { MdCancel, MdCheckCircle } from 'react-icons/md';
 
 export default function EditableSection({ entityID, header, contentObjectProp, handleContentUpdate, headerStyles }) {
+  const [contentObject, setContentObject] = useState(contentObjectProp);
   const [editMode, setEditMode] = useState(false);
 
   function handleSubmit() {
@@ -38,7 +39,6 @@ EditableSection.propTypes = {
   entityID: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
   contentObjectProp: PropTypes.object.isRequired,
-  handleContentUpdate: PropTypes.func.isRequired,
   headerStyles: PropTypes.string.isRequired,
 }
 

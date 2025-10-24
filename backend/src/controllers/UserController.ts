@@ -38,6 +38,7 @@ import db from "../utils/db";
 @Controller()
 export class UserController {
   @Post("/login")
+  async login(@Body() body: { email: string; password: string }) {
     const { email, password } = body;
     const { result, error, ...data } = await login(email, password);
 
@@ -104,7 +105,6 @@ export class UserController {
     }
     
     const validRoles = [COORDINATOR, CANDIDATE, COMPANY]; 
-    if (!validRoles.includes(user.role)) {
       return {
         result: false,
         error: `Invalid role specified: ${user.role}`,

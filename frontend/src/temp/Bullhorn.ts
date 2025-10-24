@@ -114,6 +114,7 @@ export type Job = {
     taxStatus?: string;
     title?: string;
     travelRequirements?: string;
+    type?: string;
     willRelocate?: string;
     yearsRequired?: string;
 };

@@ -6,6 +6,7 @@ const defaultStylesObject = {
   searchIconStyles: 'h-16 w-16 vw-1024:h-24 vw-1024:w-24 vw-480:ml-6 mr-10 bg-royalBlue rounded-full flex justify-center items-center',
   inputStyles: 'flex-1 h-5/6 vw-480:placeholder:text-md vw-1024:placeholder:text-xl'
 }
+
 export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject }) {
   const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
   if ( marginBottom ) {

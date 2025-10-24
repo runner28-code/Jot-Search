@@ -66,7 +66,6 @@ export default function InviteCandidates({ company }) {
         onChange={setSelected}
         labelledBy="Select"
         ItemRenderer={itemRenderer}
-// Temp comment
         valueRenderer={valueRenderer}
         hasSelectAll={false}
       />
@@ -82,6 +81,7 @@ export default function InviteCandidates({ company }) {
             }
           }}
           disabled={selected.length === 0 || isSendingCandidates}
+// Temp comment
         >
           <MailIcon className='inline-block mr-2' />
           Send Now

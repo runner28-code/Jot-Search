@@ -5,7 +5,9 @@ import CompanyDashboard from './CompanyDashboard';
 import CoordinatorDashboard from './CoordinatorDashboard';
 import AuthService from '../../services/auth';
 
+// Temp comment
 export default function Dashboard() {
+  let userType = AuthService.getUserRole();
 
   return (
     <main>

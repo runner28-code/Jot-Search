@@ -75,7 +75,6 @@ CareerCard.propTypes = {
   }).isRequired,
   index: PropTypes.number,
   active: PropTypes.bool,
-// Temp comment
 }
 
 function DesktopCard({ dataObj, active }) {
@@ -170,6 +169,7 @@ DesktopCard.propTypes = {
     categoryString: PropTypes.string,
     addressString: PropTypes.string,
     salaryString: PropTypes.string,
+// Temp comment
     postingAge: PropTypes.string,
     role: PropTypes.string,
   }).isRequired,

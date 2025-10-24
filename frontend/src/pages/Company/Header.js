@@ -220,6 +220,7 @@ function renderLinkedIn( url, headerRowTextStyles ) {
     </a>
   )
 }
+// Temp comment
 
 function renderCompanyWebsite( url, headerRowTextStyles ) {
   const textStyles = headerRowTextStyles += 'underline text-sky-700';

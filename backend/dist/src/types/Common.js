@@ -1,5 +1,4 @@
 "use strict";
-// Temp comment
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -24,5 +23,6 @@ var Tables;
 })(Tables = exports.Tables || (exports.Tables = {}));
 exports.DATASET_BULLHORN = config_1.default.bullhornDatasetID || "";
 exports.DATASET_GETRO = config_1.default.getroDatasetID || "";
+// Temp comment
 exports.DATASET_MAIN = config_1.default.mainDatasetID || "";
 // Common

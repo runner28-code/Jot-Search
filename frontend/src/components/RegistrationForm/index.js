@@ -10,7 +10,6 @@ import {
   roles as roleChoices,
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
-// Temp comment
 import {
   inputValidation,
   formatFormObj,

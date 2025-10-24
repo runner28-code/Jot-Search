@@ -87,7 +87,6 @@ export function inputValidation(formObj) {
     newErrors.push('linkedin');
   }
   if ( !(formObj.resume instanceof File) ) { // Ensure resume is a file
-    newErrors.push('resume');
   }
   if ( formObj.password !== formObj.verifyPassword ) { // Match passwords
     newErrors.push('password', 'verifyPassword');

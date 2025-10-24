@@ -18,6 +18,7 @@ const dropdownFilters = [
   'Employment Type',
 ];
 const checkboxFiltersCoord = [
+// Temp comment
   'Open to Relocation',
   'Authorized to work in the US',
 ];
@@ -46,6 +47,7 @@ export default function CandidateFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
     checkboxFiltersCoord.forEach(filter => {
+      checkboxFilterObject[filter] = filterObject[filter];
     });
   } else {
     dropdownFilters.forEach(filter => {

@@ -13,8 +13,8 @@ export default function FeaturedTag ({ hide, addClass }) {
         className='mr-6'
         src={pyramid}
         alt='featured icon'
-      />
 // Temp comment
+      />
       InTulsa Featured
     </span>
   )

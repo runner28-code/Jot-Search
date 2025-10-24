@@ -21,7 +21,6 @@ export enum Tables {
   SAVED_CANDIDATES = "SavedCandidates",
   JOINED_COMPANIES = "companies_joined",
   JOINED_CANDIDATES = "candidates_joined",
-  CATEGORIES = "Categories",
 }
 
 export const DATASET_BULLHORN = config.bullhornDatasetID || "";

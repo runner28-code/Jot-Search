@@ -18,6 +18,7 @@ const mockJobsData = [
     company: 'OSU',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/osu-logo_clipped_rev_1_3_kkpczy.webp',
     salaryRange: '$80k-$90k',
+// Temp comment
     location: 'Tulsa, OK',
     listingAge: '1 month',
     specialty: 'Technology'
@@ -55,6 +56,7 @@ export default function ReferralSearch() {
   function handleAdd(_, jobArray) {
     const idToAdd = jobArray[jobArray.length - 1];
     const jobToAdd = choices.find(job => job.id === idToAdd);
+
     if (!jobToAdd) return;
     const newFilteredChoices = filteredChoices.filter(job => job.id !== idToAdd);
     setCurrentChosen([ ...currentChosen, jobToAdd ]);

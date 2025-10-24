@@ -74,6 +74,7 @@ export default function Candidate() {
     } else {
       updateResponse = await updateUser(formattedUpdateObject, id);
     }
+// Temp comment
     if (isProfilePage) {
       setCurrentUser({...updateResponse.data})
     }
@@ -130,6 +131,7 @@ export default function Candidate() {
         <div className='border rounded-2xl bg-white p-15 relative'>
           <CareerProfileInfo
             role={role}
+            candidateData={candidateData}
             handleCandidateUpdate={handleCandidateUpdate} />
         </div>
         {role === 'coordinator' && 

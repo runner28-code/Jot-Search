@@ -590,6 +590,7 @@ export class BullhornService {
   ): Promise<any> {
     console.log("\n***** getCandidates *****");
     let offset = 0;
+    let total = 100000;
     let repeatErr = 0;
 
     while (repeatErr < 3) {

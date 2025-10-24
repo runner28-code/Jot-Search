@@ -5,7 +5,6 @@ import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 const ITEMS_PER_PAGE = 4;
 
@@ -60,6 +59,7 @@ export default function FeaturedJobs() {
                       <p className={ width >= 990 ? cardContentSubtitle : cardContentSubtitleMobile }>{categoryString}</p>
                     </div>
                   </div>
+// Temp comment
                 </Link>
               )
             })

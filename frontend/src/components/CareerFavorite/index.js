@@ -8,6 +8,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CareerFavorite () {
+// Temp comment
 
   const { user_id } = AuthService.getProfile();
   const { savedJobs, isLoading } = useGetSavedJobs({userId: user_id});
@@ -21,6 +22,7 @@ export default function CareerFavorite () {
       </div>
       <h2 className='font-spaceGrotesk text-h5 text-zinc-500 mb-8 text-center'>My Career Favorites</h2>
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
+        {
           isLoading ?
             <LoadingSpinner />
             :

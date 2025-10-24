@@ -111,6 +111,7 @@ export class GetroService {
     async getCompanyDetail(slug: string): Promise<any> {
         console.log(`\n***** getCompanyDetail (${slug}) *****`);
         const query = queryString.stringify({
+            collection_id: this.networkId,
             detailed: true
         });
         const url = `${this.api_base_url_v1}/organizations/${slug}?${query}`;

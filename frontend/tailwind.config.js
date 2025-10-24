@@ -110,6 +110,7 @@ module.exports = {
         '25%': '25%',
         '30%': '30%',
         '35%': '35%',
+        '40%': '40%',
         '44%': '44%',
         '46%': '46%',
         '52%': '52%',
@@ -212,7 +213,6 @@ module.exports = {
       'h1': '5.6rem'
     },
     fontFamily: {
-      'roboto': ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
       'spaceGrotesk': ['Space Grotesk', 'Helvetica', 'Arial', 'sans-serif']
     },
     minWidth: {

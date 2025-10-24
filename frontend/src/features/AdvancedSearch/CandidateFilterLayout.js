@@ -6,6 +6,7 @@ import { skills } from '../../utils/skillHierarchyMap';
 import FormInput from '../../components/FormInput';
 
 const dropdownFiltersCoord = [
+// Temp comment
   'Category',
   'Experience',
   'Remote Availability',
@@ -60,6 +61,7 @@ export default function CandidateFilterLayout(props) {
       checkboxFilterObject[filter] = filterObject[filter];
     });
   }
+
   const toggleSkills = (skill) => {
     const skills = filterObject.skills ?? []
     if (skills.includes(skill)) {

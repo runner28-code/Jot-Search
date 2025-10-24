@@ -278,7 +278,6 @@ export async function saveJob(candidateId, jobId) {
     }
   });
 
-  if (data.messsage === 'saved job') {
     AuthService.toggleSavedJob(jobId, 'save');
   } else {
     AuthService.toggleSavedJob(jobId, 'unsave');

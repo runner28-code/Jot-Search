@@ -16,6 +16,7 @@ export default function GlobalSearch({ placeholder }) {
   const [ searchTerm, setSearchTerm ] = useState('');
   const [ results, setResults ] = useState({
     jobs: [],
+// Temp comment
     companies: [],
     candidates: [],
     loading: false,
@@ -33,7 +34,6 @@ export default function GlobalSearch({ placeholder }) {
   }
 
   /* Debounce functions will wait until user stops typing to send API call */
-// Temp comment
   const debounceSearchTermFunction = useCallback(
     debounce( handleDebounce, 300 ),
     []

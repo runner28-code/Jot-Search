@@ -19,7 +19,6 @@ const Common_1 = require("../types/Common");
 const constant_1 = require("../utils/constant");
 const utils_1 = require("../utils");
 const config_1 = __importDefault(require("../config"));
-// Temp comment
 const db_1 = __importDefault(require("../utils/db"));
 const password_1 = require("../utils/password");
 const EmailService_1 = require("./EmailService");

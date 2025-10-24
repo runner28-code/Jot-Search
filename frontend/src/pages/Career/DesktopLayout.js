@@ -196,7 +196,6 @@ function renderSkillsSection({ skillList }) {
 function SkillsList({ items }) {
   if (!items) {
     return (
-      <ul className='list-disc ml-8 mb-20'>
         <li>No skills listed.</li>
       </ul>
     )

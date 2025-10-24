@@ -23,6 +23,7 @@ exports.JobFilter = {
         employmentType: "employmentType",
         onSite: "onSite",
         yearsRequired: "yearsRequired",
+        willRelocate: "willRelocate",
         city: "city",
         state: "state",
         isDeleted: "isDeleted",
@@ -57,5 +58,4 @@ exports.USER_FILTER = {
     category: "category",
     status: "status",
     email: "email",
-    bh_email: "bh_email",
     companyName: "companyName",
