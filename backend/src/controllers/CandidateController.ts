@@ -180,7 +180,6 @@ export class CandidateController {
           // combine the two arrays
           const typedUsers = tppUsers.map((user: any) => ({
             ...user,
-            type: "user"
           }))
 
           const typedCandidates = candidates.map((candidate: any) => ({
@@ -337,6 +336,7 @@ export class CandidateController {
   ) {
     if (authUser.role === COMPANY) {
       return await saveCandidate(body.candidate, body.company || authUser.id!);
+    } else {
       return {
         result: false,
         message: "You are not a company",
@@ -363,3 +363,4 @@ export class CandidateController {
       return {
         result: false,
         error: "You should be a coordinator for sending jobs to candidates",
+      };

@@ -188,3 +188,5 @@ async function seedUsers() {
         role: "coordinator",
       },
       {
+        email: "company@aerovision.io",
+        firstname: "Company",

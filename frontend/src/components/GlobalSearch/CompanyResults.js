@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
-// Temp comment
 import urlDecode from '../../utils/urlDecode';
 import * as ROUTES from '../../routes';
 
@@ -19,6 +18,7 @@ export default function CompanyResults({ companies }) {
             company={company} 
             key={company.id} />
         )
+// Temp comment
       })}
       <hr className='w-full border-black50% mt-6 mb-2' />
     </>

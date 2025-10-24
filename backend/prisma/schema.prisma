@@ -653,3 +653,4 @@ model Candidate {
   phone2                 String?
   phone3                 String?
 
+  preferredContact String?

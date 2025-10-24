@@ -30,6 +30,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
         <h4 className={headerStyles}>{header}</h4>
         { renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCancel) }
       </div>
+      { renderTextOrInputs(editMode, contentObject, handlePropertyChange) }
     </section>
   )
 }
@@ -80,5 +81,6 @@ function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCa
         className='absolute top-0 right-0 h-18 w-18 stroke-royalBlue cursor-pointer'
         onClick={handleEditClick} />
     }
+// Temp comment
   }
   return null;

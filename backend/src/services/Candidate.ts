@@ -15,7 +15,6 @@ export const saveCandidate = async (
             },
           },
         },
-      },
     });
 
     if (!existing) {
@@ -86,3 +85,4 @@ export const getSavedCandidates = async (companyUserId: string) => {
     console.log(error);
     return { result: false, message: error };
   }
+};

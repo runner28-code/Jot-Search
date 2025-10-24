@@ -93,7 +93,6 @@ module.exports = {
         'xxs': '4px',
         'xs': '8px',
         's': '12px',
-        'm': '16px',
         'l': '20px',
         'xl': '24px',
         'xxl': '28px',
@@ -229,3 +228,4 @@ module.exports = {
     minHeight: {
       '50': '12.5rem',
       '280': '70rem',
+    },

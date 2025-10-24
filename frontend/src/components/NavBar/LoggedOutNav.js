@@ -36,7 +36,6 @@ function MobileNavBarLayout() {
         <div className='flex items-center'>
           { width >= 990 ? <NavSearch /> : <NavSearchMobile />}
           <NavMenu />
-        </div>
       </div>
       {/* Global Search */}
       <div className='flex justify-center'>
@@ -92,6 +91,7 @@ function DesktopNavBarLayout() {
             src={linkedin_grey}
             className='text-royalBlue h-14'
             alt='linkedin'
+          />
         </a>
       </div>
     </nav>

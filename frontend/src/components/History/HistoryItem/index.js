@@ -31,6 +31,7 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
     return `Today at ${timeWithoutSeconds}`;
   } else if ( isYesterday ) {
     return `Yesterday, ${timeWithoutSeconds}`;
+// Temp comment
   } else {
     const month = dateObj.toLocaleString('default', { month: 'long' });
     const day = dateObj.getDate();
@@ -68,7 +69,6 @@ function renderMessage(historyObj) {
         {messageSplit[0]}
         <Link 
           to={`/careers/${historyObj.careerId}`}
-// Temp comment
           className='text-royalBlue font-bold underline'
         >
           {historyObj.careerName}

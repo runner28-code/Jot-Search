@@ -3,7 +3,6 @@ import flagIcon from '../../../assets/icons/flag.svg';
 export default function AssistanceCard() {
   return (
     <div className='w-full bg-white border border-disabledGrey rounded-2xl px-xxl-3 py-xxl-2'>
-// Temp comment
       {/* Header */}
       <div className='flex'>
         <img
@@ -24,7 +23,6 @@ export default function AssistanceCard() {
         </ul>
       </div>
       {/* Button */}
-      <a
         href='mailto:talentnetwork@intulsa.com?subject=Talent Network Assistance'
         className='mt-10 mb-6 inline-block border-2 border-royalBlue px-xl py-[15.5px] leading-[1.37]  text-royalBlue text-ml rounded-lg'
         target='_blank'

@@ -146,7 +146,6 @@ function MailButton({ text, email, company, id, add }) {
   const mail = 'mailto:' + email + '?subject=';
   const subject = company + ' role ' + id + ' ' + add;
   const href = mail + subject;
-// Temp comment
   return (<>
     <a
       href={href}

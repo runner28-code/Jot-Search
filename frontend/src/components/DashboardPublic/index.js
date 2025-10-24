@@ -20,7 +20,6 @@ export default function DashboardPublic({togglePassState}) {
   const active = ' bg-royalBlue';
 
   const careerTitle = totalJobsCount + ' Open Careers';
-// Temp comment
   const companyTitle = totalCompaniesCount  + ' Companies';
 
   return (
@@ -53,7 +52,6 @@ export default function DashboardPublic({togglePassState}) {
             onClick={() => togglePassState()}
           >
             <img src={filterIcon} />
-            { width >= 990 && <FilterText />}
           </button>
         </div>
       </div>

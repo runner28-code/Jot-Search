@@ -61,6 +61,7 @@ export default function Login() {
           <FormInput
             type='text'
             name='email'
+            label='Login Email'
           />
           <FormInput
             type='password'
@@ -90,6 +91,7 @@ export default function Login() {
           >
             help@intulsa.com
           </a>
+// Temp comment
         </div>
       </div>
     </section>

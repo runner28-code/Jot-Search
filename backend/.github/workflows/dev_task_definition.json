@@ -70,7 +70,6 @@
                     "value": "{SECRET_BULLHORN_CLIENT_ID}"
                 },
                 {
-                    "name": "BULLHORN_CLIENT_SECRET", 
                     "value": "{SECRET_BULLHORN_CLIENT_SECRET}"
                 },
                 {
@@ -86,3 +85,4 @@
                     "value": "{SECRET_SENDGRID_KEY}"
                 },
                 {
+                    "name": "SENDGRID_SECRET", 

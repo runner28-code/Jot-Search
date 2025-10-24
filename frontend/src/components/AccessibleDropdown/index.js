@@ -74,7 +74,6 @@ AccessibleDropdown.defaultProps = {
 
 AccessibleDropdown.propTypes = {
   type: PropTypes.string,
-// Temp comment
   name: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
@@ -189,6 +188,7 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
     choiceObject = objectifiedChoices;
   }
   
+// Temp comment
   const objectLength = Object.keys(choiceObject).length;
   let listItemStyles = 'cursor-pointer flex items-center justify-between ';
   if ( stylesObject.listItemStyles ) {

@@ -107,6 +107,7 @@ export default function RegistrationForm(loggedIn) {
             success: true,
           })
         } else {
+          return navigate(ROUTES.login);
         }
       } else {
         console.log('Error: ', result);
@@ -162,7 +163,6 @@ export default function RegistrationForm(loggedIn) {
 
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
-      setReferralChoice(true);
     }
     if( value !== 'Community Partner' ) {
       setReferralChoice(false);

@@ -17,6 +17,7 @@ export default function InviteCandidates({ company }) {
 
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
 
+  const candidateOptions = candidates?.map(candidate => {
     return {
       label: candidate.name,
       value: candidate.id,
@@ -91,6 +92,7 @@ export default function InviteCandidates({ company }) {
     </section>
   )
 }
+// Temp comment
 
 function itemRenderer({ option, onClick, disabled}) {
   const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''

@@ -287,7 +287,6 @@ export class JobController {
       const _dataset = DATASET_BULLHORN;
       const _table = Tables.JOBS;
 
-      const _specialHandlers = {
         clientCorporationID: (key: string, value: string) =>
           `${key} = REPLACE("${value}", "bl-", "")`,
       };

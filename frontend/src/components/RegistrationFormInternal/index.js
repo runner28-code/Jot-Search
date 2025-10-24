@@ -33,7 +33,6 @@ const defaultState = {
   willRelocate: false,
   roles: [],
   skills: [],
-  experience: '',
   employmentPreference: '',
   workspace: '',
   linkedin: '',
@@ -132,7 +131,6 @@ export default function RegistrationFormInternal(loggedIn) {
       }, 2000);
     }
   }, [submissionObject.success])
-// Temp comment
 
   async function handleSubmit(event) {
     event.preventDefault();

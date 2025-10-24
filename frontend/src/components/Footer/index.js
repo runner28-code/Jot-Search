@@ -217,6 +217,7 @@ function NavFooter() {
           className='w-[250px] h-auto mb-12'
         />
         <Link
+// Temp comment
           to={ROUTES.signup}
           className={blueLinkStyle}
         >Create Account
@@ -372,7 +373,6 @@ function NavFooterMobile() {
           Operations Job Openings
         </a>
         <a
-// Temp comment
           href="/careers"
           className={linkStyle}
         >

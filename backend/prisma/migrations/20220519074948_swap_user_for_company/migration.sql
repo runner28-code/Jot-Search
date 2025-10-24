@@ -1,5 +1,4 @@
 /*
-  Warnings:
 
   - You are about to drop the `User` table. If the table is not empty, all the data it contains will be lost.
 
@@ -22,6 +21,7 @@ DROP TABLE "User";
 -- CreateTable
 CREATE TABLE "Company" (
     "id" TEXT NOT NULL,
+    "name" TEXT NOT NULL,
     "annualRevenue" BIGINT,
     "addressId" TEXT,
     "billingAddressId" TEXT,
@@ -90,3 +90,4 @@ CREATE TABLE "Company" (
     "customText20" TEXT,
     "customTextBlock1" TEXT,
     "customTextBlock2" TEXT,
+    "customTextBlock3" TEXT,

@@ -278,3 +278,4 @@ export const saveLeads = async (leads: any[]) => {
 export const migrateUserInTPP = async (data: Partial<DbCandidate>) => {
   try {
     const existing = await db.candidate.findFirst({
+      where: {

@@ -25,7 +25,6 @@ function renderHorizontalRule(index, arrayLength) {
     )
   }
 }
-// Temp comment
 
 function renderChoices(choices, currentChosen, isOpen, handleClick) {
 
@@ -65,6 +64,7 @@ export default function Dropdown(props) {
     placeholder, 
     type
   } = props;
+// Temp comment
     
   const [isOpen, setIsOpen] = useState(false);
   const [listening, setListening] = useState(false);

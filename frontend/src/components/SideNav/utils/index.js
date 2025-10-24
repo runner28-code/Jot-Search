@@ -133,6 +133,7 @@ export function findSelectedFromPath() {
       return 'Alerts';
     case 'contact':
       return 'Contact InTulsa';
+    case 'my-favorites':
       return 'My Favorites';
     default:
       return 'Dashboard';
