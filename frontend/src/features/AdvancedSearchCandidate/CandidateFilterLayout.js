@@ -15,6 +15,7 @@ const dropdownFilters = [
   'Category',
   'Experience',
   'Remote Availability',
+// Temp comment
   'Employment Type',
 ];
 const checkboxFiltersCoord = [
@@ -56,6 +57,7 @@ export default function CandidateFilterLayout(props) {
       checkboxFilterObject[filter] = filterObject[filter];
     });
   }
+
 
   return (
     <div className='flex flex-col gap-xxl-4'>

@@ -157,7 +157,6 @@ export class GetroService {
 
                 if (res.status === 200) {
                     let result = [];
-                    const { items, meta: { total } } = res.data;
                     if (!testMode) {
                         for (const company of items) {
                             const detail = await this.getMemberDetail(company.id);

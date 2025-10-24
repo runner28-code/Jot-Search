@@ -74,7 +74,6 @@ export default function Candidate() {
     } else {
       updateResponse = await updateUser(formattedUpdateObject, id);
     }
-// Temp comment
     if (isProfilePage) {
       setCurrentUser({...updateResponse.data})
     }
@@ -89,7 +88,6 @@ export default function Candidate() {
   return (
     <div className='flex flex-col space-y-16'>
       {/* "My Profile"/"Candidate Profile" Header */}
-      <PageHeader
         headerText={headerText}
         IconComponent={CandidatesIcon}
         classOverride='h-18 w-18'

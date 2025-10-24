@@ -7,6 +7,7 @@ export default function MobileHeader(props) {
     IconComponent,
     classOverride,
     colorizeStroke,
+  } = props;
   
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';

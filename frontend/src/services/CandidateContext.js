@@ -83,7 +83,6 @@ const mockCandidateData = [
   {
     id: '1ea36da6-8819-4617-8c09-5df46f1reg78',
     firstName: 'Lawrence',
-    lastName: 'MacAlpine',
     linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lawrence_1_szacre.webp', // Missing from Bullhorn Schema
     occupation: 'Compliance',

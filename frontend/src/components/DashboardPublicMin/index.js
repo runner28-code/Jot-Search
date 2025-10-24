@@ -60,6 +60,5 @@ export default function DashboardPublicMin({type}) {
             <p className='ml-4'>Companies</p>
           </Link>
         </div>
-      </div>
     </div>
   )

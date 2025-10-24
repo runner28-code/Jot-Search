@@ -58,4 +58,5 @@ exports.USER_FILTER = {
     category: "category",
     status: "status",
     email: "email",
+    bh_email: "bh_email",
     companyName: "companyName",

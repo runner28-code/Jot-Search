@@ -49,6 +49,7 @@ function LinkSwap ({ location, loggedIn }) {
     return (
       <Link
         className='text-white flex items-center'
+// Temp comment
         to={ROUTES.companies}>
         <span className='underline'>Back</span>
       </Link>

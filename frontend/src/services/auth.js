@@ -113,7 +113,6 @@ class AuthService {
     if ( action === 'save' ) {
       savedCompanies.push(companyID);
     } else {
-      savedCompanies.splice(savedCompanies.indexOf(companyID), 1);
     }
     localStorage.setItem('savedCompanies', JSON.stringify(savedCompanies));
   }

@@ -106,7 +106,6 @@ function StatCard({ stat, value }) {
   } else {
     numberStyles += ' text-error';
   }
-// Temp comment
   return (
     <div
       key={stat}

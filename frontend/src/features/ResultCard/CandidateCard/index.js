@@ -180,6 +180,7 @@ function NewLeadLabel({ status }) {
 NewLeadLabel.propTypes = {
   status: PropTypes.string,
 }
+
 function renderSkills(skillsString) {
   if ( !skillsString ) {
     return <SkillTag skill='No skills chosen' />

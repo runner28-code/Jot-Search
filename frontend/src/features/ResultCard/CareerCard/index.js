@@ -169,7 +169,6 @@ DesktopCard.propTypes = {
     categoryString: PropTypes.string,
     addressString: PropTypes.string,
     salaryString: PropTypes.string,
-// Temp comment
     postingAge: PropTypes.string,
     role: PropTypes.string,
   }).isRequired,

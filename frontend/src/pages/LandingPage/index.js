@@ -50,7 +50,6 @@ export default function LandingPage() {
 }
 
 function renderSearch() {
-  const { width } = useWindowDimensions();
   const { totalCompaniesCount, totalJobsCount, isLoading } = useGetLandingPageStats({});
 
   if( width <= 1024 ) {

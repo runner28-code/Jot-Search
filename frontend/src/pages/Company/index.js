@@ -114,7 +114,6 @@ export default function Company() {
   )
 }
 Company.propTypes = {
-  companyDescription: PropTypes.string
 }
 
 function RenderHeader({type, loggedIn}) {

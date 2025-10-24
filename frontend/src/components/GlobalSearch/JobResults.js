@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-// Temp comment
 import PropTypes from 'prop-types';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import urlDecode from '../../utils/urlDecode';
@@ -13,6 +12,7 @@ export default function JobResults({ jobs }) {
   return (
     <>
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Jobs</h6>
+// Temp comment
       { jobs.map(job => {
         return (
           <JobResult 

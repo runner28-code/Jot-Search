@@ -30,7 +30,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
         <h4 className={headerStyles}>{header}</h4>
         { renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCancel) }
       </div>
-      { renderTextOrInputs(editMode, contentObject, handlePropertyChange) }
     </section>
   )
 }
@@ -39,6 +38,7 @@ EditableSection.propTypes = {
   entityID: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
   contentObjectProp: PropTypes.object.isRequired,
+  handleContentUpdate: PropTypes.func.isRequired,
   headerStyles: PropTypes.string.isRequired,
 }
 

@@ -74,7 +74,6 @@ export class UserController {
         console.error("error syncing to BH");
         console.error(error);
       }
-      const { result, error } = await register(data);
       return {
         result,
         error,
@@ -105,6 +104,7 @@ export class UserController {
     }
     
     const validRoles = [COORDINATOR, CANDIDATE, COMPANY]; 
+    if (!validRoles.includes(user.role)) {
       return {
         result: false,
         error: `Invalid role specified: ${user.role}`,

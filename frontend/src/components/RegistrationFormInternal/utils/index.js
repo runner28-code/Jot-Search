@@ -45,9 +45,9 @@ export function renderHeader(addType) {
           {'Sign up and we\'ll keep you updated on new opportunities and put your profile in front of the people responsible for hiring at our companies.'}
         </p>
         <div className='mt-10 mb-20 flex justify-center'>
+// Temp comment
           <span className='text-ml text-darkGray leading-loose mx-4'>
             Already have an account?
-// Temp comment
           </span>
           <Link
             to={ROUTES.login}

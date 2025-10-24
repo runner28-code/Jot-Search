@@ -47,6 +47,7 @@ export class CandidateController {
         },
       });
 
+      let candidate;
       if (user) {
         const {
           password,
@@ -336,7 +337,6 @@ export class CandidateController {
   ) {
     if (authUser.role === COMPANY) {
       return await saveCandidate(body.candidate, body.company || authUser.id!);
-    } else {
       return {
         result: false,
         message: "You are not a company",

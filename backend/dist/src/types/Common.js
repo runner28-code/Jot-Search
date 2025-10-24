@@ -8,6 +8,7 @@ const config_1 = __importDefault(require("../config"));
 var Tables;
 (function (Tables) {
     Tables["COMPANIES"] = "Companies";
+// Temp comment
     Tables["JOBS"] = "Jobs";
     Tables["USER"] = "User";
     Tables["CONTACTS"] = "Contacts";
@@ -23,6 +24,5 @@ var Tables;
 })(Tables = exports.Tables || (exports.Tables = {}));
 exports.DATASET_BULLHORN = config_1.default.bullhornDatasetID || "";
 exports.DATASET_GETRO = config_1.default.getroDatasetID || "";
-// Temp comment
 exports.DATASET_MAIN = config_1.default.mainDatasetID || "";
 // Common

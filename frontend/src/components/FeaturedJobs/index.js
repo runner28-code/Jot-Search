@@ -50,6 +50,7 @@ export default function FeaturedJobs() {
                 <Link
                   to={`${ROUTES.careers}/${career.id}`}
                   key={index}
+// Temp comment
                   className={ width >= 990 ? linkStyles : linkStylesMobile }
                 >
                   <div className={ width >= 990 ? cardStyles : cardStylesMobile }>
@@ -59,7 +60,6 @@ export default function FeaturedJobs() {
                       <p className={ width >= 990 ? cardContentSubtitle : cardContentSubtitleMobile }>{categoryString}</p>
                     </div>
                   </div>
-// Temp comment
                 </Link>
               )
             })

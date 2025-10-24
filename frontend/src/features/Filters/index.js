@@ -19,6 +19,7 @@ export default function Filters(props) {
     filterContainerStyles += `mb-${marginBottom} `;
   }
   return (
+    <div className={filterContainerStyles}>
       <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}
       </div>
@@ -70,6 +71,7 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
         choices={choices}
         chosen={chosen}
         handleFilterChange={handleFilterChange}
+// Temp comment
       />
     )
   })

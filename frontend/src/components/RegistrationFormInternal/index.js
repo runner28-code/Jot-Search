@@ -132,6 +132,7 @@ export default function RegistrationFormInternal(loggedIn) {
       }, 2000);
     }
   }, [submissionObject.success])
+// Temp comment
 
   async function handleSubmit(event) {
     event.preventDefault();

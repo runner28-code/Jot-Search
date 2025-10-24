@@ -17,7 +17,6 @@ export default function InviteCandidates({ company }) {
 
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
 
-  const candidateOptions = candidates?.map(candidate => {
     return {
       label: candidate.name,
       value: candidate.id,
@@ -81,7 +80,6 @@ export default function InviteCandidates({ company }) {
             }
           }}
           disabled={selected.length === 0 || isSendingCandidates}
-// Temp comment
         >
           <MailIcon className='inline-block mr-2' />
           Send Now
