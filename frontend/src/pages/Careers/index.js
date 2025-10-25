@@ -36,6 +36,7 @@ export default function Careers() {
         className={width <= 990 && !loggedIn ? 'px-[5%]' 
           : !loggedIn ? 'px-[15%]' 
             : '' 
+        }
       >
         <RenderAdvancedSearch
           loggedIn={loggedIn}
@@ -66,7 +67,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
     return (<>
       <PageHeader
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
-        IconComponent={userType === 'coordinator' ? CareerIcon : SearchIcon}
         backButton={true}
       />
     </>)

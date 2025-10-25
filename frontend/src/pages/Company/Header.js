@@ -259,7 +259,6 @@ function isValidHttpUrl(string) {
 
 function renderIndustry(item, headerRowTextStyles) {
 
-// Temp comment
   if( !item ) {
     return (<>
       <p className={headerRowTextStyles}>Industry</p>

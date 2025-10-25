@@ -141,6 +141,7 @@ Notification.propTypes = {
   id: PropTypes.string,
   add: PropTypes.string
 }
+// Temp comment
 
 function MailButton({ text, email, company, id, add }) {
   const mail = 'mailto:' + email + '?subject=';

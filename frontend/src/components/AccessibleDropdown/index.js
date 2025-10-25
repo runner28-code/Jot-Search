@@ -72,7 +72,6 @@ AccessibleDropdown.defaultProps = {
   choices: [],
 };
 
-AccessibleDropdown.propTypes = {
   type: PropTypes.string,
   name: PropTypes.string,
   label: PropTypes.string,
@@ -183,6 +182,7 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
       } else {
         acc[choice.name] = choice.name;
       }
+      return acc;
     }, {});
     choiceObject = objectifiedChoices;
   }

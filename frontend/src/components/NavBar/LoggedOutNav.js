@@ -5,7 +5,6 @@ import GlobalSearch from '../GlobalSearch';
 import NavMenu from '../NavMenu';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import AuthService from '../../services/auth';
-import NavSearch from '../NavSearch';
 import NavSearchMobile from '../NavSearchMobile';
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -85,7 +84,6 @@ function DesktopNavBarLayout() {
         >
           <button className='bg-royalBlue rounded-md px-9 py-4'>
             <span className='text-white'>Create Account</span>
-// Temp comment
           </button>
         </Link>
         <a href={ROUTES.linkedin}>

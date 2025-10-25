@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 require("reflect-metadata");
 const dotenv_1 = __importDefault(require("dotenv"));
+const routing_controllers_1 = require("routing-controllers");
 const path_1 = __importDefault(require("path"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const cors_1 = __importDefault(require("cors"));
@@ -40,6 +41,7 @@ const multerStorage = multer_1.default.diskStorage({
     },
 });
 const upload = (0, multer_1.default)({ storage: multerStorage });
+// Temp comment
 const getActualRequestDurationInMs = (start) => {
     const NS_PER_SEC = 1e9;
     const NS_TO_MS = 1e6;

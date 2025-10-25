@@ -37,6 +37,7 @@ export const ethnicityMap = {
   O: 'Other'
 };
 
+export const experienceMap = {
   '1': null,
   '2': '0-1',
   '3': '2-4',
@@ -45,6 +46,7 @@ export const ethnicityMap = {
 }
 
 export const educationChoices = [
+// Temp comment
   'None',
   'Associate',
   'Bachelor',

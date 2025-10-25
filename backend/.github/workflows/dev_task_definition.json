@@ -67,7 +67,6 @@
                 },
                 {
                     "name": "BULLHORN_CLIENT_ID", 
-                    "value": "{SECRET_BULLHORN_CLIENT_ID}"
                 },
                 {
                     "name": "BULLHORN_CLIENT_SECRET", 

@@ -1,3 +1,4 @@
+// Temp comment
 export default function listenForOutsideClicks(listening, setListening, menuRef, setIsOpen) {
   if (listening) return;
   if (!menuRef.current) return;
@@ -8,6 +9,5 @@ export default function listenForOutsideClicks(listening, setListening, menuRef,
       if (menuRef.current.contains(evt.target)) return;
       if (evt.target.classList[0] === 'multi-select-choice') return; // don't close dropdown if user clicked on a choice in a multi-select
       setIsOpen(false);
-// Temp comment
     });
   });

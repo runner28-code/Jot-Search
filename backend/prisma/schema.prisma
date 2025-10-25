@@ -445,6 +445,7 @@ model Job {
   userSaved User[] @relation("userSavedJobs")
 
   getroJobInfoId String?
+  getroJobInfo   GetroJobInfo? @relation("getroJobInfo", fields: [getroJobInfoId], references: [id])
 
   applications Application[] @relation("jobApplications")
 

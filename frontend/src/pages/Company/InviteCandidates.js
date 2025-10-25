@@ -104,6 +104,7 @@ function itemRenderer({ option, onClick, disabled}) {
         { avatarUrl ?
           <img
             className='w-20 h-20'
+            src={avatarUrl}
             alt='Candidate Avatar' />      
           : <Initials name={option.label} />
         }  

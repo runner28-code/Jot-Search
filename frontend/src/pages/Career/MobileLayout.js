@@ -17,7 +17,6 @@ const hrStyles = 'mb-10 border-midGrey ';
 
 export default function MobileLayout(props) {
   const {
-// Temp comment
     careerData,
     categoryString,
     addressString,
@@ -182,7 +181,6 @@ function renderSkillsSection({skillList}) {
     <h4 className={sectionHeaderStyles}>Skills Required</h4>
     <SkillsList items={skillList} />
   </>)
-}
 function SkillsList({items}) {
   if( !items ) {
     return (

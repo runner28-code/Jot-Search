@@ -25,7 +25,6 @@ export default function FeaturedJobs() {
   const cardContentSubtitleMobile ='font-spaceGrotesk text-royalBlue text-xs uppercase';
   const viewAllStyles = 'text-center mt-48';
   const viewAllStylesMobile = 'text-center mt-12';
-// Temp comment
 
   const filtersArr = [
     {
@@ -92,7 +91,6 @@ function RenderImage({image}) {
   if( !image ) {
     return(<>
       <div className={ containerStyles + 'outline outline-1 outline-neutral-300 p-8' }>
-        <CareerIcon className={iconStyles + ' fill-royalBlue object-fill'} />
       </div>
     </>)
   }

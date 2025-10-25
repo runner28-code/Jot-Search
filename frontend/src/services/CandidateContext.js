@@ -25,6 +25,7 @@ const mockCandidateData = [
     firstName: 'Lee',
     lastName: 'Easton',
     linkedin_url: 'https://www.linkedin.com/',
+// Temp comment
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lee_5_swk4qj.webp', // Missing from Bullhorn Schema
     occupation: 'Owner / President',
     companyName: 'Aerovision',
@@ -67,7 +68,6 @@ const mockCandidateData = [
   },
   {
     id: 'ec0d90fb-f73c-4d4c-9e13-d720a14440f5',
-// Temp comment
     firstName: 'Donnie',
     lastName: 'Kim',
     linkedin_url: 'https://www.linkedin.com/',

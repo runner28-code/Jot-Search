@@ -28,6 +28,7 @@
 							"key": "email",
 							"value": "donnie@aerovision.io"
 						},
+						{
 							"key": "password",
 							"value": "123456"
 						}
@@ -54,7 +55,6 @@
 					"raw": "http://45.77.69.204:5000/register",
 					"protocol": "http",
 					"host": [
-						"45",
 						"77",
 						"69",
 						"204"

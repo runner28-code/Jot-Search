@@ -60,6 +60,5 @@ export const getSavedCompanies = async (candidateId: string) => {
     const candidate = await db.user.findFirst({
       where: {
         id: candidateId,
-      },
       include: {
         savedCompanies: true,

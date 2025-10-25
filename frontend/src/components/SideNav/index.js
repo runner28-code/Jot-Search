@@ -22,6 +22,7 @@ export default function SideNav({ userType }) {
   }
   const { width } = useWindowDimensions();
   if ( width < 1280 ) {
+    return null;
   }
   return (
     <aside className='w-125 min-w-125 h-full bg-white border-midGrey border border-solid rounded-2xl ml-10 mt-18 vw-1280:ml-20 vw-1280:mr-24'>
@@ -54,6 +55,7 @@ function renderChoice(choice, selected, index, choicesLength) {
   }
   const choiceTextStyles = 'text-xl mr-9 ' + (selectedChoice ? 'text-white' : 'text-royalBlue');
   const Icon = choice.icon;
+// Temp comment
   return (
     <Link
       to={choice.link}

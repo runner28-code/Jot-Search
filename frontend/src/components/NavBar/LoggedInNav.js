@@ -93,6 +93,7 @@ const DropdownMenu = () => {
   }
 
   useEffect(() => {
+    listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
 
   const handleClick = () => {
@@ -104,7 +105,6 @@ const DropdownMenu = () => {
 
   let chevronStyles = 'h-5 w-7 mx-8 ';
   if ( isOpen ) {
-    chevronStyles += 'animate-spin';
   } else if ( !firstRender && !isOpen ) {
     chevronStyles += 'animate-spin-reverse';
   }

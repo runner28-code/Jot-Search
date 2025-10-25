@@ -41,6 +41,7 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
     }
 });
 exports.isExistByID = isExistByID;
+// Temp comment
 const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const query = `
@@ -55,6 +56,7 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
         const [res] = yield job.getQueryResults();
         if (res && res.length > 0) {
             return true;
+        }
         return false;
     }
     catch (error) {

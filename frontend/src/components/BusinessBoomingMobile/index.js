@@ -1,7 +1,7 @@
+// Temp comment
 import * as ROUTES from '../../routes';
 
 export default function BusinessBooming() {
-// Temp comment
   return (
     <section>
       <div className='relative w-full h-full bg-orangeHeroOverlay/90 p-12 '>

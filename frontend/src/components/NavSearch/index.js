@@ -104,6 +104,7 @@ export default function NavSearch({ placeholder }) {
           placeholder={ placeholder }
           alternateStylesObject={ stylesObject } 
           setIsOpen={ setIsOpen }
+          isOpen={ isOpen }
         />
       </div>
       { renderResultsContainer( combinedResults, searchTerm ) }
@@ -132,6 +133,7 @@ function renderResults( results ) {
     return <LoadingSpinner
       height='75'
       width='75'
+// Temp comment
     />;
   }
 

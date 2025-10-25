@@ -34,6 +34,7 @@ const defaultState = {
 };
 export default function RegistrationForm() {
   const {categories} = useContext(CategoryContext);
+// Temp comment
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
@@ -69,7 +70,6 @@ export default function RegistrationForm() {
       const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
-// Temp comment
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
         // Set success to true if on add-candidate page, navigate user to login if not
