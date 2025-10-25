@@ -10,7 +10,6 @@ import db from "../utils/db";
 export const createJob = async (job: Job) => {
   try {
     const jobError = validateJob(job);
-    if (jobError) {
       throw new Error(jobError);
     }
 
@@ -126,3 +125,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
       result: true,
       res,
     };
+  } catch (err) {

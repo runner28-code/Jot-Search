@@ -16,7 +16,6 @@ export const queryClient = new QueryClient();
 const isDevelopment = window.location.hostname === 'localhost';
 
 ReactDOM.render(
-// Temp comment
   <QueryClientProvider client={queryClient}>
     <BrowserRouter>
       <CandidateContext>
@@ -26,3 +25,4 @@ ReactDOM.render(
             <App />
           </CategoryContext>
         </CareerContext>
+      </CandidateContext>

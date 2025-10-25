@@ -26,6 +26,7 @@ export class ClientContactController {
       });
 
       return {
+        contact: clearPassword(contact),
         message: !contact ? "No client contact with given ID" : undefined,
       };
     } catch (error) {

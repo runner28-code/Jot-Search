@@ -15,7 +15,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 require("reflect-metadata");
 const dotenv_1 = __importDefault(require("dotenv"));
-const routing_controllers_1 = require("routing-controllers");
 const path_1 = __importDefault(require("path"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const cors_1 = __importDefault(require("cors"));
@@ -38,7 +37,6 @@ const multerStorage = multer_1.default.diskStorage({
         console.log(file);
         const fileName = (0, utils_1.genUUID)() + path_1.default.extname(file.originalname);
         cb(null, fileName);
-// Temp comment
     },
 });
 const upload = (0, multer_1.default)({ storage: multerStorage });

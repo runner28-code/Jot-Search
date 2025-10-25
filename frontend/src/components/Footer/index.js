@@ -34,7 +34,6 @@ export default function Footer() {
         <a href={ROUTES.twitter}>
           <img
             src={twitter}
-            className={socialIconStyleMobile}
           />
         </a>
         <a href={ROUTES.facebook}>
@@ -217,7 +216,6 @@ function NavFooter() {
           className='w-[250px] h-auto mb-12'
         />
         <Link
-// Temp comment
           to={ROUTES.signup}
           className={blueLinkStyle}
         >Create Account

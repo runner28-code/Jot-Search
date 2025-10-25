@@ -183,12 +183,10 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
       } else {
         acc[choice.name] = choice.name;
       }
-      return acc;
     }, {});
     choiceObject = objectifiedChoices;
   }
   
-// Temp comment
   const objectLength = Object.keys(choiceObject).length;
   let listItemStyles = 'cursor-pointer flex items-center justify-between ';
   if ( stylesObject.listItemStyles ) {

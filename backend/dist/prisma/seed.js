@@ -146,6 +146,7 @@ function seedCategories() {
                     externalID: 2000043,
                 },
                 {
+                    name: "Software & Engineering",
                     enabled: true,
                     externalID: 2000101,
                 },

@@ -17,6 +17,7 @@ const hrStyles = 'mb-10 border-midGrey ';
 
 export default function MobileLayout(props) {
   const {
+// Temp comment
     careerData,
     categoryString,
     addressString,
@@ -68,6 +69,7 @@ export default function MobileLayout(props) {
               <img
                 src={postingAgeIcon}
                 className='h-11 mr-5' />
+              <p className='text-textBlack text-xs'>{postingAge}</p>
             </div>
             {/* Employement Type */}
             <div className='w-1/2 flex items-center'>

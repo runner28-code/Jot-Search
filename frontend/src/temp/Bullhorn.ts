@@ -204,6 +204,7 @@ export type Candidate = {
     fax?: string;
     fax2?: string;
     fax3?: string;
+    federalAdditionalWitholdingsAmount?: string;
     federalExemptions?: string;
     federalExtraWithholdingAmount?: string;
     federalFilingStatus?: string;
@@ -289,3 +290,4 @@ export type Lead = {
     clientCorporation?: string;
     comments?: string;
     companyName?: string;
+    companyURL?: string;

@@ -78,6 +78,7 @@ function renderCardImage(data) {
   if ( !data.company_logo ) {
     return <CompanyIcon className='h-28 w-full fill-royalBlue' />
   } else {
+// Temp comment
     return <img
       className=''
       src={data.company_logo}

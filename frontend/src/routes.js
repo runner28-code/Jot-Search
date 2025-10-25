@@ -36,7 +36,6 @@ export const softwareEngineering = '/software-engineering';
 export const salesBizDev = '/sales-business-development';
 export const operations = '/operations';
 export const coordinatorQuickStats = '/coordinator-stats';
-
 /* EXTERNAL LINKS */
 export const gMapsIntulsa = 'https://www.google.com/maps/place/36+E+Cameron+St,+Tulsa,+OK+74103,+USA';
 export const mailToIntulsa = 'mailto:info@intulsa.com?subject=Message%20from%20Talent%20InTulsa%20website';

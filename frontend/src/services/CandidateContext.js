@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import AuthService from './auth';
 import { getCandidateById } from './API';
 
-// Temp comment
 const mockCandidateData = [
   {
     id: 'cb4f35ed-db88-410f-beb0-a6a449135f75',
@@ -68,6 +67,7 @@ const mockCandidateData = [
   },
   {
     id: 'ec0d90fb-f73c-4d4c-9e13-d720a14440f5',
+// Temp comment
     firstName: 'Donnie',
     lastName: 'Kim',
     linkedin_url: 'https://www.linkedin.com/',

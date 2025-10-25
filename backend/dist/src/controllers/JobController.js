@@ -185,6 +185,7 @@ let JobController = class JobController {
             if (filters === null || filters === void 0 ? void 0 : filters.every((opt) => FieldMatch_1.JobFilter.bullhorn[opt.key] != null)) {
                 const _dataset = Common_1.DATASET_BULLHORN;
                 const _table = Common_1.Tables.JOBS;
+                const _specialHandlers = {
                     clientCorporationID: (key, value) => `${key} = REPLACE("${value}", "bl-", "")`,
                 };
                 const _filters = filters.map((filter) => ({
@@ -213,6 +214,7 @@ let JobController = class JobController {
             return yield (0, MainCrud_1.saveApplication)(job, candidate);
         });
     }
+// Temp comment
     getCandidates(job) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, MainCrud_1.getCandidatesOnJob)(job);

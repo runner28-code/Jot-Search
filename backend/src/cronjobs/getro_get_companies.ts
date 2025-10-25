@@ -1,5 +1,4 @@
 import { GetroService } from "../services/GetroService";
-import { consoleLog } from "../utils";
 const testMode = process.argv[2] === "test";
 
 (async () => {
@@ -8,3 +7,4 @@ const testMode = process.argv[2] === "test";
         await (await GetroService.getClient()).getCompanies(testMode, 50);
     } catch (error) {
         consoleLog(error);
+    }

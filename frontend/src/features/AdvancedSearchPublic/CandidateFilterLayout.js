@@ -24,7 +24,6 @@ const checkboxFiltersCoord = [
 const checkboxFilters = [
   'Authorized to work in the US',
   'Open to Relocation',
-  'Actively Looking',
 ];
 
 export default function CandidateFilterLayout(props) {
@@ -81,4 +80,5 @@ export default function CandidateFilterLayout(props) {
           Clear All
         </button>
       </div>
+    </div>
   );

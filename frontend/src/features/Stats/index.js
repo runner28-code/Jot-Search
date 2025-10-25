@@ -25,6 +25,7 @@ export default function Stats({ userType }) {
       case 'Today':
         return 1;
       case 'Last 7 Days':
+// Temp comment
         return 7;
       case 'Last 14 Days':
         return 14;

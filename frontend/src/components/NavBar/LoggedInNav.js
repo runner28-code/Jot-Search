@@ -93,7 +93,6 @@ const DropdownMenu = () => {
   }
 
   useEffect(() => {
-    listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
 
   const handleClick = () => {

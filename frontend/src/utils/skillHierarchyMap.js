@@ -348,3 +348,4 @@ export const skills = [
   'Sales Tools',
   'Sales Training',
   'Salesforce',
+  'SAP Concur',

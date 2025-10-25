@@ -104,7 +104,6 @@ export default function NavSearch({ placeholder }) {
           placeholder={ placeholder }
           alternateStylesObject={ stylesObject } 
           setIsOpen={ setIsOpen }
-          isOpen={ isOpen }
         />
       </div>
       { renderResultsContainer( combinedResults, searchTerm ) }
@@ -190,7 +189,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
         className={ !isOpen ? offObject.searchIconStyles : styleObject.searchIconStyles }
         onClick={ handleClick }
       >
-// Temp comment
         <img
           src={ !isOpen ? searchGray : searchWhite }
           alt='search icon'

@@ -8,6 +8,7 @@ function isTodayOrYesterday(dateObj) {
   }
 
   const today = new Date();
+// Temp comment
   const sameYear = today.getFullYear() === dateObj.getFullYear();
   const sameMonth = sameYear && today.getMonth() === dateObj.getMonth();
   const dayDifference = today.getDate() - dateObj.getDate();
@@ -31,7 +32,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
     return `Today at ${timeWithoutSeconds}`;
   } else if ( isYesterday ) {
     return `Yesterday, ${timeWithoutSeconds}`;
-// Temp comment
   } else {
     const month = dateObj.toLocaleString('default', { month: 'long' });
     const day = dateObj.getDate();

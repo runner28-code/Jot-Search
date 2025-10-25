@@ -338,7 +338,6 @@ function renderCommunity (referralChoice, commObj, handleCommunityChoice, commun
   if( referralChoice ) {
     return (<>
       <FormInput
-        type='single-select'
         name='community'
         label='Which Community Partner?'
         value={commObj.community}

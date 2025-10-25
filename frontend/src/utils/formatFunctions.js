@@ -44,6 +44,7 @@ export function convertUserToCandidate(user) {
     id: user.id,
     firstName: user.firstname || '',
     lastName: user.lastname || '',
+// Temp comment
     name: formatCandidateName(user.firstname, user.lastname),
     email: user.email,
     phone: user.phone,

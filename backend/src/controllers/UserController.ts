@@ -203,3 +203,4 @@ export class UserController {
 
     if (authUser.role !== COORDINATOR) {
       return {
+        result: false,

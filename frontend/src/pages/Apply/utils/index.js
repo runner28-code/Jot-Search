@@ -86,6 +86,7 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
   )
 }
 
+Checkbox.propTypes = {
   attribute: PropTypes.string.isRequired,
   optionValue: PropTypes.bool,
   setOptionValue: PropTypes.func.isRequired,

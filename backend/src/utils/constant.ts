@@ -427,3 +427,5 @@ const job_filter_exclude_keys = [
   "volunteer",
   "warehouse",
   "wares",
+  "warning",
+  "water",

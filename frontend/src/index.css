@@ -97,6 +97,7 @@ input[type=checkbox] {
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
+    font-style: normal;
     line-height: 1.6;
     letter-spacing: normal;
   }
@@ -176,3 +177,4 @@ input[type=checkbox] {
     font-family: Roboto;
     font-size: 12px;
     font-weight: normal;
+    font-stretch: normal;

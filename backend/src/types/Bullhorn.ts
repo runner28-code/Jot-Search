@@ -290,3 +290,4 @@ export type Lead = {
     clientCorporation?: string;
     comments?: string;
     companyName?: string;
+    companyURL?: string;

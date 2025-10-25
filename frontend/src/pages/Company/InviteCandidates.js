@@ -92,7 +92,6 @@ export default function InviteCandidates({ company }) {
     </section>
   )
 }
-// Temp comment
 
 function itemRenderer({ option, onClick, disabled}) {
   const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''
@@ -105,7 +104,6 @@ function itemRenderer({ option, onClick, disabled}) {
         { avatarUrl ?
           <img
             className='w-20 h-20'
-            src={avatarUrl}
             alt='Candidate Avatar' />      
           : <Initials name={option.label} />
         }  

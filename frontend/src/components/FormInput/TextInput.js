@@ -3,7 +3,6 @@ import PhoneInput from 'react-phone-number-input/input';
 
 export default function TextInput({type, name, placeholder, label, value, required, onChange, baseStyles, disabled}) {
   function handleChange(e) {
-// Temp comment
     if ( name !== 'phone' ) {
       onChange(name, e.target.value);
     } else {
@@ -22,7 +21,6 @@ export default function TextInput({type, name, placeholder, label, value, requir
 TextInput.propTypes = {
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  placeholder: PropTypes.string,
   label: PropTypes.string,
   value: PropTypes.string,
   required: PropTypes.bool,

@@ -64,7 +64,6 @@ export default function Dropdown(props) {
     placeholder, 
     type
   } = props;
-// Temp comment
     
   const [isOpen, setIsOpen] = useState(false);
   const [listening, setListening] = useState(false);

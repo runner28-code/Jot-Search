@@ -35,7 +35,6 @@ export default function Company() {
     sectionHeaderStylesMobile: 'font-bold text-[3rem] text-black70% mb-2 ',
     hrStyles: 'mb-16 '
   }
-// Temp comment
 
   // Format data
   companyData.name = urlDecode(companyData.name);
@@ -45,7 +44,6 @@ export default function Company() {
   if ( companyData.businessSectorList && companyData.businessSectorList.length > 0 ) {
     companyData.businessSectorList = companyData.businessSectorList.toString().replace(',', ', '); // Add space after commas
   }
-  companyData.address = buildCandidateAddress(companyData);
   companyData.employeeString = companyData.numEmployees ? `${companyData.numEmployees} Employees` : 'N/A';
   companyData.fundingString = companyData.funding === 'not applicable' ? 'Funding N/A' : companyData.funding;
   companyData.description = companyData.getro_description ? companyData.getro_description : companyData.bh_description;

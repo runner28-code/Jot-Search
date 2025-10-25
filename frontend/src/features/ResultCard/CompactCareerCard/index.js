@@ -44,6 +44,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
                 <p className='text-midGrey'>Applied</p>
                 <p className='text-midGrey text-xs'>{applicationAge}</p>
               </div>
+              :
               <div>
                 <p className='text-midGrey'>Posting Age</p>
                 <p className='text-midGrey text-xs'>{postingAge}</p>
@@ -99,6 +100,7 @@ CompactCareerCard.propTypes = {
   isFavoriteOverride: PropTypes.bool,
   selectableProps: PropTypes.shape({
     selectable: PropTypes.bool,
+// Temp comment
     selected: PropTypes.arrayOf(PropTypes.string),
     setSelected: PropTypes.func
   })

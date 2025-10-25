@@ -62,3 +62,4 @@ export class BigQueryService {
             console.log(query)
 
             const options = {
+                query,

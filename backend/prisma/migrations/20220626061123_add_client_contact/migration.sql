@@ -45,7 +45,6 @@ CREATE TABLE "ClientContact" (
     "middleName" TEXT,
     "mobile" TEXT,
     "name" TEXT,
-    "namePrefix" TEXT,
     "nameSuffix" TEXT,
     "nickName" TEXT,
     "numEmployees" TEXT,
@@ -53,3 +52,4 @@ CREATE TABLE "ClientContact" (
     "office" TEXT,
     "owner" TEXT,
     "pager" TEXT,
+    "password" TEXT,

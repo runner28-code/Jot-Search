@@ -254,3 +254,4 @@ export class GetroService {
                                 organization_slug: item.organization?.slug,
                                 posted_at: new Date(item.posted_at),
                                 expires_at: new Date(item.expires_at),
+                                deactivated_at: new Date(item.deactivated_at),

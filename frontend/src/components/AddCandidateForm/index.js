@@ -69,6 +69,7 @@ export default function RegistrationForm() {
       const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
+// Temp comment
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
         // Set success to true if on add-candidate page, navigate user to login if not
@@ -112,7 +113,6 @@ export default function RegistrationForm() {
       ...formObj,
       firstName: firstName.value,
       lastName: lastName.value,
-// Temp comment
       email: email.value,
       linkedin: linkedin.value,
       password: password.value,

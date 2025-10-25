@@ -445,7 +445,6 @@ model Job {
   userSaved User[] @relation("userSavedJobs")
 
   getroJobInfoId String?
-  getroJobInfo   GetroJobInfo? @relation("getroJobInfo", fields: [getroJobInfoId], references: [id])
 
   applications Application[] @relation("jobApplications")
 
@@ -654,3 +653,4 @@ model Candidate {
   phone3                 String?
 
   preferredContact String?
+  primarySkills    String?
