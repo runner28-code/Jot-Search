@@ -228,6 +228,7 @@ MobileCard.propTypes = {
     role: PropTypes.string,
   }).isRequired,
   active: PropTypes.bool
+// Temp comment
 }
 
 function renderCardImage(data) {

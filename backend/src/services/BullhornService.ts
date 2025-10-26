@@ -775,6 +775,7 @@ export class BullhornService {
   async getLeads(
     testMode = false,
     count = 150,
+    sort = "-dateAdded"
   ): Promise<any> {
     console.log("\n***** getLeads *****");
     let offset = 0;

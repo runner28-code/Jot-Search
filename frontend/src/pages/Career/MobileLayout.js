@@ -181,12 +181,14 @@ function renderSkillsSection({skillList}) {
     <h4 className={sectionHeaderStyles}>Skills Required</h4>
     <SkillsList items={skillList} />
   </>)
+}
 function SkillsList({items}) {
   if( !items ) {
     return (
       <p className='font-spaceGrotesk text-textBlack text-sm mb-10'>
         n/a
       </p>
+// Temp comment
     )
   }
   return (

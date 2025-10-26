@@ -32,6 +32,7 @@ export default function CareerFavorite () {
                   index={index}
                   data={company}
                   agoDate={company.agoDate}
+                />
               </>)
             })
         }

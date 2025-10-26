@@ -36,7 +36,6 @@ export default function Candidate() {
   }
 
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;
-// Temp comment
   const [candidateData, setCandidateData] = useState({});
   const [loading, setLoading] = useState(true);
 
@@ -68,7 +67,6 @@ export default function Candidate() {
 
     const formatUserObjectForRender = formatCandidateData({ ...candidateData, ...updatedDisplayObject });
     setCandidateData(formatUserObjectForRender);
-    let updateResponse = null;
     if (candidateData.sourceTable === 'Candidate') {
       const convertedCandidateObject = convertUserToCandidate(updateObject);
       updateResponse = await updateCandidate(convertedCandidateObject, id);

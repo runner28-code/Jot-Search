@@ -51,7 +51,6 @@ export default function DashboardPublic({togglePassState}) {
             className='flex items-center flex-row'
             onClick={() => togglePassState()}
           >
-// Temp comment
             <img src={filterIcon} />
             { width >= 990 && <FilterText />}
           </button>

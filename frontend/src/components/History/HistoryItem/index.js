@@ -49,6 +49,7 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
   }
 }
 
+// Temp comment
 function formatDateString(date) {
   const dateObj = new Date(date);
 

@@ -140,6 +140,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   required
                   disabled={disabled}
                 />
+// Temp comment
               </label>
             </div>
             <div className='vw-1280:flex gap-12'>
@@ -217,6 +218,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 htmlFor='city'
                 className={labelStyles}
               >
+                <p className={labelTextStyles}>City</p>
                 <input
                   type='text'
                   name='city'

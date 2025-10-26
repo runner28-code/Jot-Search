@@ -62,7 +62,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
         togglePassState={togglePassState} 
         toggle={toggle} 
       />
-// Temp comment
     </>)
   }  
   if( loggedIn ) {

@@ -133,7 +133,6 @@ function renderResults( results ) {
     return <LoadingSpinner
       height='75'
       width='75'
-// Temp comment
     />;
   }
 

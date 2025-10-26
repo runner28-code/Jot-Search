@@ -17,6 +17,7 @@ export default function FeaturedCompanies() {
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
+  return(
     <div className='py-48 px-[20%] flex flex-col items-center'>
       { renderColorShapes() }
       <h2 className='text-h4 font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
@@ -25,7 +26,6 @@ export default function FeaturedCompanies() {
           isLoading ?
             <LoadingSpinner />
             :
-            companies.map((company, index) =>
               <Link
                 to={`${ROUTES.companies}/${company.id}`}
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'

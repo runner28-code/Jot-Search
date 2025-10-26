@@ -1,4 +1,5 @@
 -- CreateTable
+CREATE TABLE "Job" (
     "id" TEXT NOT NULL,
     "externalId" TEXT,
     "description" TEXT,
@@ -18,7 +19,6 @@
     "companyId" TEXT,
     "interviews" TEXT,
     "onSite" TEXT,
-    "salary" TEXT,
     "salaryUnit" TEXT,
     "startDate" TIMESTAMP(3),
     "type" TEXT,

@@ -226,6 +226,7 @@ export const skills = [
   'HR Policies',
   'HRIS',
   'HTML',
+// Temp comment
   'HTTP',
   'Hydraulics',
   'Hyper-V',

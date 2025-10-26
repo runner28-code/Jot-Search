@@ -67,7 +67,6 @@ function seedJobs() {
                     onSite: "Hybrid",
                     description: "Come join our rockstar team for good money and learning",
                     datasource: client_1.Datasource.bullhorn,
-                    status: "active",
                     categoryId: (yield db_1.default.category.findFirst({
                         where: { name: "Software & Engineering" },
                     })).id,

@@ -11,7 +11,6 @@ CREATE TABLE "GetroCompany" (
     "instagram_url" TEXT,
     "jobs_count" INTEGER,
     "linkedin_url" TEXT,
-    "locations" TEXT,
     "logo_url" TEXT,
     "name" TEXT,
     "ocp_search_status" TEXT,

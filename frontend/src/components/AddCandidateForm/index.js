@@ -34,7 +34,6 @@ const defaultState = {
 };
 export default function RegistrationForm() {
   const {categories} = useContext(CategoryContext);
-// Temp comment
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
@@ -109,7 +108,6 @@ export default function RegistrationForm() {
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
     setErrors([]);
-    setFormObj({
       ...formObj,
       firstName: firstName.value,
       lastName: lastName.value,

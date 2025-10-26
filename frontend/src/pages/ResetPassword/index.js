@@ -17,7 +17,6 @@ export default function ResetPassword() {
   const token = queryParams.get('token');
 
   const handlePassword = (event) => {
-// Temp comment
     setPassword(event.target.value);
   }
   const handleConfirmPassword = (event) => {
@@ -62,10 +61,4 @@ export default function ResetPassword() {
           </Link>
         </div>
       )
-    }
-  }
-
-  const renderError = () => {
-    if ( error ) {
-      return ( <div className='text-error mb-4'>{error}</div> )
     }
