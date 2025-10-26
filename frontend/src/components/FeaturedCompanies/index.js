@@ -17,6 +17,8 @@ export default function FeaturedCompanies() {
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
+// Temp comment
+  return(
     <div className='py-48 px-[20%] flex flex-col items-center'>
       { renderColorShapes() }
       <h2 className='text-h4 font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>

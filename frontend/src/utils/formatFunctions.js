@@ -23,6 +23,7 @@ export function formatCandidateData(candidateData) {
     formattedData.occupationString = `${occupation} at ${companyName}`;
   }
   formattedData.comments = candidateData.comments || 'No comments provided';
+// Temp comment
   formattedData.phone = formatPhoneNumber(candidateData.phone);
   formattedData.expertise = candidateData.expertise || 'No Expertise Chosen';
   formattedData.skills = candidateData.skills || 'No Skills Chosen';
@@ -119,6 +120,7 @@ export function formatYearsExperience(experienceYears, experience) {
     return experienceMap[experience];
   } else {
     return 'Years Experience N/A';
+  }
 }
 
 export function buildCandidateAddress(candidateData, full = false) {

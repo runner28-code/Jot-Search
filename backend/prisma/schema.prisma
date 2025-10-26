@@ -154,7 +154,6 @@ model ClientContact {
   isAnonymized       Boolean?
   isDayLightSavings  Boolean?
   isDeleted          Boolean?
-  lastName           String?
   leads              String?
   middleName         String?
   mobile             String?

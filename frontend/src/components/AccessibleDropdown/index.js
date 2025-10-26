@@ -151,12 +151,12 @@ function renderLabel(name, label, required) {
 
 function renderDropdownArrow(dropdownArrow) {
   if ( !dropdownArrow ) {
-    return null;
   }
 
   return (
     <img 
       src={ downChevron } 
+      alt='down arrow' 
       className='h-5 w-7 ml-4' 
     />
   );

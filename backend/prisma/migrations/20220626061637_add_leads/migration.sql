@@ -39,6 +39,7 @@ CREATE TABLE "Lead" (
     "mobile" TEXT,
     "name" TEXT,
     "namePrefix" TEXT,
+    "nameSuffix" TEXT,
     "nickName" TEXT,
     "notes" TEXT,
     "numEmployees" TEXT,

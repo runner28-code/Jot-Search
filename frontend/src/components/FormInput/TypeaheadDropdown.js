@@ -85,6 +85,7 @@ TypeaheadDropdown.propTypes = {
   type: PropTypes.string.isRequired,
   dropdownType: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  label: PropTypes.string,
   required: PropTypes.bool,
   placeholder: PropTypes.string.isRequired,
   choices: PropTypes.array.isRequired,

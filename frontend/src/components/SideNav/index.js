@@ -62,7 +62,6 @@ function renderChoice(choice, selected, index, choicesLength) {
       key={choice.label}
     >
       <Icon
-        className={iconStyles} />
       <p className={choiceTextStyles}>{choice.label}</p>
     </Link>
   )

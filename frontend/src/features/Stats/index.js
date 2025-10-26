@@ -101,7 +101,6 @@ function StatCard({ stat, value }) {
   let numberStyles = 'text-h2 font-medium font-spaceGrotesk leading-tight';
   if (deviationPercentage > 0) {
     numberStyles += ' text-success';
-// Temp comment
   } else if (deviationPercentage === 0) {
     numberStyles += ' text-midGrey';
   } else {
@@ -132,6 +131,7 @@ StatCard.propTypes = {
 function renderDeviation(deviationPercentage) {
   return (
     <div className='flex items-center '>
+// Temp comment
       {renderStyledDeviation(deviationPercentage)}
     </div>
   )

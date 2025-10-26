@@ -68,7 +68,6 @@ export default function RegistrationForm(loggedIn) {
   useEffect(async () => { // Submit data
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
-// Temp comment
       // Validation
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
@@ -136,6 +135,7 @@ export default function RegistrationForm(loggedIn) {
   async function handleSubmit(event) {
     event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
+// Temp comment
     setErrorBlock('');
     setErrors([]);
     setFormObj({

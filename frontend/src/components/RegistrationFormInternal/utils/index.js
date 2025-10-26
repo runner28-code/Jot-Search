@@ -44,6 +44,7 @@ export function renderHeader(addType) {
         <p className='text-md text-center text-darkGray leading-loose'>
           {'Sign up and we\'ll keep you updated on new opportunities and put your profile in front of the people responsible for hiring at our companies.'}
         </p>
+// Temp comment
         <div className='mt-10 mb-20 flex justify-center'>
           <span className='text-ml text-darkGray leading-loose mx-4'>
             Already have an account?
@@ -89,7 +90,6 @@ export function inputValidation(formObj) {
   if ( formObj.skills.length < 3 ) { // Ensure at least 3 skills chosen
     newErrors.push('skills');
   }
-// Temp comment
 
   // Only need LinkedIn OR resume, not both.
   // If one is missing but the other is present, remove either from errors array.

@@ -107,6 +107,7 @@ CandidateCard.propTypes = {
     expertise: PropTypes.string,
     firstName: PropTypes.string,
     lastName: PropTypes.string,
+    occupation: PropTypes.string,
     skills: PropTypes.string,
     state: PropTypes.string,
     status: PropTypes.string,

@@ -8,10 +8,12 @@ const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charco
 const hrStyles = 'mb-10 border-smokeGray ';
 
 export const UpdateJobStatus = ({ job }) => {
+// Temp comment
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
   const [updatedJob, setUpdatedJob] = useState(job)
 
   return (
+    <div className='py-8 flex flex-col'>
       <hr className={`${hrStyles} bg-smokeGray h-2`} />
 
       <div className='flex flex-col'>

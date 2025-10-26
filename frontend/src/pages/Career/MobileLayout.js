@@ -55,7 +55,6 @@ export default function MobileLayout(props) {
               <p className='text-textBlack text-xs'>{addressString}</p>
             </div>
             {/* Remote/Onsite/Hybrid */}
-// Temp comment
             <div className='flex w-1/2 items-center'>
               <LaptopIcon
                 className='fill-midGrey h-8 w-8 mr-5' />
@@ -122,7 +121,6 @@ export default function MobileLayout(props) {
         <button
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
           onClick={() => navigate(-1)}
-        >
           Back
         </button>
       </div>

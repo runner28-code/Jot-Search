@@ -20,7 +20,6 @@ import {
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
-
 const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
 
@@ -45,7 +44,6 @@ function useTabState(disabledTabs, userType, pathname) {
   }
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');
 }
-// Temp comment
 
 export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const userType = AuthService.getUserRole();

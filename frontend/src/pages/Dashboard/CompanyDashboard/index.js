@@ -12,6 +12,7 @@ export default function CompanyDashboard({userType}) {
   return (
     <>
       <PageHeader
+        headerText={profile.firstname + ' Dashboard'}
         icon={gaugeIcon}
       />
       <Stats
@@ -22,4 +23,5 @@ export default function CompanyDashboard({userType}) {
       <h2 className='mt-22 font-spaceGrotesk font-semibold text-h5 text-charcoal'>Search</h2>
       <AdvancedSearch />
     </>
+// Temp comment
   )

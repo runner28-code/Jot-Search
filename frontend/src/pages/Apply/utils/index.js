@@ -24,7 +24,6 @@ export const defaultCareerState = {
   },
   loading: true,
 }
-// Temp comment
 
 export const defaultState = {
   firstname: '',
@@ -111,4 +110,5 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       type='submit'>
       {buttonString}
     </button>
+// Temp comment
   )

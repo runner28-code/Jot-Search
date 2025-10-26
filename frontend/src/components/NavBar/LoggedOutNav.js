@@ -62,7 +62,6 @@ function DesktopNavBarLayout() {
           <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Find Careers</span>
         </Link>
         <Link to={ROUTES.companies}>
-// Temp comment
           <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Browse Companies</span>
         </Link>
         <a

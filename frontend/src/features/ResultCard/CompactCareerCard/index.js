@@ -56,7 +56,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
       {
         selectableProps && selectableProps.selectable ?
           <Checkbox
-            id={data.id}
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
           />

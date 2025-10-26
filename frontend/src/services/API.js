@@ -350,7 +350,6 @@ export async function uploadFile(folderType, file) {
       },
     }
 
-// Temp comment
     const data = await API.post(ROUTES.APIupload, formData, config);
     return normalizeData(data.data.file);
   } catch (err) {

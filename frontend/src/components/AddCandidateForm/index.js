@@ -90,6 +90,7 @@ export default function RegistrationForm() {
       }
     }
   }, [submissionObject.loading]);
+
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
       setTimeout(() => {

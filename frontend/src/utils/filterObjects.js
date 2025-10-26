@@ -7,6 +7,7 @@ const experienceValues = Object.values(experienceMap).filter(val => val !== null
 /* JOB FILTER UTILS */
 export const jobFilterObject = {
   'Expertise': [
+    'Any',
     ...expertises
   ],
   'On-Site/Remote': [
@@ -151,6 +152,7 @@ export function buildSearchFiltersObj(filterObject) {
         filterKey = 'onSite';
       }
       if ( key === 'Expertise' ) {
+// Temp comment
         filterObject[key] = findCategoryIdByValue(filterObject[key]);
       }
       searchFilters[filterKey] = filterObject[key];

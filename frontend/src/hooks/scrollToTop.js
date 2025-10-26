@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-// Temp comment
 import { useLocation } from 'react-router-dom';
+// Temp comment
 
 export default function ScrollToTop() {
   const { pathname } = useLocation();

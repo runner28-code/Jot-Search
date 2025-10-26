@@ -104,23 +104,4 @@ export type GetCandidatesOnJobResponse = {
   candidates?: any[];
   result: boolean;
   message?: any;
-};
 
-// Company Types
-export type Company = BullhornCompany | GetroCompany;
-export type CompanySearchByID = {
-  company?: Company;
-  source: DataSource;
-  message?: string;
-};
-
-export type CompanySearchByFilterResponse = {
-  companies?: Company[];
-  total?: number;
-  message?: any;
-};
-
-// Candidate Types
-export type CandidateSearchByIdResponse = {
-  candidate?: User;
-  message?: any;

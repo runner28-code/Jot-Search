@@ -30,6 +30,7 @@ const routing_controllers_1 = require("routing-controllers");
 const BigQueryService_1 = require("../services/BigQueryService");
 const Job_1 = require("../services/Job");
 const Common_1 = require("../types/Common");
+const Getro_1 = require("../types/Getro");
 const Job_2 = require("../types/Job");
 const utils_1 = require("../utils");
 const db_1 = __importDefault(require("../utils/db"));
