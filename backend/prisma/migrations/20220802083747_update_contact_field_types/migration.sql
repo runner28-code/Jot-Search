@@ -6,4 +6,4 @@
 
 */
 -- AlterTable
-ALTER TABLE "ClientContact" DROP COLUMN "address_country_id",
+ADD COLUMN     "address_country_id" INTEGER,

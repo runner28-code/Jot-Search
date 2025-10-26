@@ -53,5 +53,4 @@ function LinkSwap ({ location, loggedIn }) {
         <span className='underline'>Back</span>
       </Link>
     )
-// Temp comment
   }

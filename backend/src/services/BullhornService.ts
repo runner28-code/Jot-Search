@@ -32,7 +32,6 @@ export class BullhornService {
       BullhornService.client = new BullhornService();
       await BullhornService.client.init(false);
     }
-    return BullhornService.client;
   }
 
   async init(invalid = true): Promise<boolean> {

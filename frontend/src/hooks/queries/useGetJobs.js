@@ -8,6 +8,7 @@ export const prefetchJobs = async ({filtersArr, count, operator, page}) => {
 
 export const useGetJobs = ({ count, page, filtersArr, operator, enabled = true }) => {
   formatFilters(filtersArr);
+// Temp comment
   const { data, error, isLoading } = useQuery(
     getJobsKey({filtersArr, count, operator, page}),
     () => getJobsFull(filtersArr, count, operator, page),
@@ -18,3 +19,4 @@ export const useGetJobs = ({ count, page, filtersArr, operator, enabled = true }
 }
 
 const getJobsKey = ({filtersArr, count, operator, page}) => {
+  return ['jobs', {filtersArr, count, operator, page}];

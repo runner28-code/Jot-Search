@@ -112,7 +112,6 @@ function itemRenderer({ option, onClick, disabled}) {
         }  
         <div className="flex flex-col">
           <span className='text-lg text-blue-500'>{option.label}</span>
-// Temp comment
           <span>{getTagLine({ candidate: option.candidate })}</span>
         </div>
       </div>

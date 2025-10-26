@@ -60,6 +60,7 @@ function renderSearch() {
         totalCompanies={totalCompaniesCount}
         loading={isLoading}
       />
+// Temp comment
     </>)
   }
   return (
@@ -105,4 +106,5 @@ function renderJoinTalent() {
       className={linkStyle}
     >
       <span className='text-white text-ml'>Join the InTulsa Talent Network</span>
+    </Link>
   )

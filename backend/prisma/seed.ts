@@ -160,6 +160,7 @@ async function seedCompanies() {
         annualRevenue: 20000,
         logo: "https://picsum.photos/200",
         businessSectorList: "SaaS,Fintech",
+        bh_description: "a good company",
         getro_description: "a fintech company",
         description: "testing a new description",
         city: "Tulsa",

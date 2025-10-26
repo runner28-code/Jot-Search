@@ -136,6 +136,7 @@ function renderResults( results ) {
     />;
   }
 
+// Temp comment
   const { jobs, companies, candidates } = results;
   if ( !jobs?.length && !companies?.length && !candidates?.length ) {
     return (

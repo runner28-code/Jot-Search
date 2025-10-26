@@ -9,12 +9,12 @@ export type Category = {
   _score?: number;
 };
 
-export const ALLOWED_CATEGORY_FILTER_KEYS = new Set<keyof Category>([
   "id",
   "dataAdded",
   "description",
   "enabled",
   "name",
+  "occupation",
   "type",
   "_score",
 ]);

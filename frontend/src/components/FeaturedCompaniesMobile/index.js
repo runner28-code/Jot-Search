@@ -39,6 +39,7 @@ export default function FeaturedCompaniesMobile() {
       <div className='text-center mt-24'>
         <Link
           to={ROUTES.companies}
+// Temp comment
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
         </Link>
@@ -49,6 +50,7 @@ export default function FeaturedCompaniesMobile() {
 function renderColorShapes() {
   return(
     <div className='relative w-full w-24 mb-8'>
+      <div className='bg-pinkSquare w-12 h-12' />
       <div className='bg-orangeSquare bg-pink-500 top-[-20px] right-[5px] absolute w-6 h-6' />
     </div>
   )

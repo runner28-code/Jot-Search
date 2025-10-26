@@ -7,6 +7,7 @@ import * as ROUTES from '../../../routes';
 export default function ResetForm({ candidateData, setType }) {
   const [formData, setFormData] = useState({
     id: candidateData.id,
+// Temp comment
     password: '',
     passwordConfirm: '',
   });
@@ -25,7 +26,6 @@ export default function ResetForm({ candidateData, setType }) {
       const res = await API.post(ROUTES.APIResetPassword, {
         new_password: password.value,
       });
-// Temp comment
 
       if ( res.data.result ) {
         setType('Password Reset Successfully', true);

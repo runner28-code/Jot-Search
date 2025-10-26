@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+// Temp comment
       animation: {
         'spin': 'spin .175s linear forwards',
         'spin-reverse': 'spin-reverse .175s linear forwards'

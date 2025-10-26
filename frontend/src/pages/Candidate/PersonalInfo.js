@@ -7,7 +7,6 @@ import { SwitchButton } from './PreferenceItem';
 import { FiEdit } from 'react-icons/fi';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
-  ethnicityChoices,
   genderChoices,
   veteranStatusChoices
 } from '../Apply/utils';
@@ -140,7 +139,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   required
                   disabled={disabled}
                 />
-// Temp comment
               </label>
             </div>
             <div className='vw-1280:flex gap-12'>

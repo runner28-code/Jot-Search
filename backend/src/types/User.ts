@@ -88,4 +88,5 @@ export const IUSER = {
   employeeType: "",
   experience: "",
   hourlyRate: "",
+  willRelocate: "",
   willReceiveNotification: false,

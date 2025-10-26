@@ -57,6 +57,7 @@ let JobController = class JobController {
                         job: Object.assign(Object.assign(Object.assign({}, ((job === null || job === void 0 ? void 0 : job.getroJobInfo) || {})), job), { clientCorporation: (_a = job.company) === null || _a === void 0 ? void 0 : _a.name }),
                     };
                 }
+                else {
                     return null;
                 }
             }
@@ -72,7 +73,6 @@ let JobController = class JobController {
                 (0, utils_1.consoleLog)("/// BULLHORN_GET_JOBS");
                 yield (yield BullhornService_1.BullhornService.getClient()).getJobs(false, 50);
                 return { success: true };
-            }
             catch (error) {
                 (0, utils_1.consoleLog)(error);
                 return { success: false, error };

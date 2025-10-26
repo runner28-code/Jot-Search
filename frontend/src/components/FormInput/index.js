@@ -25,6 +25,7 @@ export default function FormInput(props) {
     error,
     disabled
   } = props;
+// Temp comment
 
   let componentStyles = inputStyles;
   componentStyles += (error ? errorBorder : regularBorder);
@@ -32,7 +33,6 @@ export default function FormInput(props) {
 
   const stylesObject = {
     baseStyles: componentStyles,
-// Temp comment
     inputHeight: inputHeight,
     inputWidth: 'w-full',
     listStyles: dropdownStyles,

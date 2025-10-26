@@ -32,6 +32,7 @@ export default function SideNav({ userType }) {
 }
 
 SideNav.propTypes = {
+// Temp comment
   userType: PropTypes.string.isRequired
 }
 

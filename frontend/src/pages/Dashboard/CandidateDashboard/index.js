@@ -24,6 +24,7 @@ export default function CandidateDashboard() {
         <CompanyFavorite />
         <h1 className={headerStyles}>Search</h1>
         <AdvancedSearch />
+// Temp comment
       </div>
     </>
   )

@@ -14,6 +14,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
       key: 'status',
       value: ['Active', 'Open']
     },
+// Temp comment
     {
       key: 'companyId',
       value: companyId
@@ -43,6 +44,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
           return <CareerCard
             key={index}
             data={career}
+          />
         })
         }
         {/* Only show Pagination if total is greater than the amount we render on a single page */}

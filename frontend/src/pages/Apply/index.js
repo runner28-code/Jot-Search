@@ -83,7 +83,6 @@ export default function Apply() {
       if( candidateData.ethnicity === undefined ) {
         candidateData.ethnicity = 'Prefer not to say';
       }
-      const stateObject = {
         ...applicationObject,
         ...candidateData,
       };
@@ -146,7 +145,6 @@ export default function Apply() {
   function handleInputChange(e) {
     const { name, value } = e.target;
     setApplicationObject({ ...applicationObject, [name]: value });
-// Temp comment
   }
 
   function handleChange(name, value) {
