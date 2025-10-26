@@ -21,7 +21,6 @@
                 "options": { 
                    "awslogs-group" : "/ecs/dev-site-backend-task",
                    "awslogs-region": "us-east-1",
-                   "awslogs-stream-prefix": "ecs"
                 }
             },
             "environment": [
@@ -48,6 +47,7 @@
                 {
                     "name": "DATASET_GETRO", 
                     "value": "inTulsa_Getro"
+                },
                 {
                     "name": "DATASET_MAIN", 
                     "value": "inTulsa_Main"

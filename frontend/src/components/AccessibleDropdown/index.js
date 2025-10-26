@@ -65,7 +65,6 @@ export default function AccessibleDropdown(props) {
         </Menu>
       </Wrapper>
     </div>
-// Temp comment
   );
 }
 
@@ -158,7 +157,6 @@ function renderDropdownArrow(dropdownArrow) {
   return (
     <img 
       src={ downChevron } 
-      alt='down arrow' 
       className='h-5 w-7 ml-4' 
     />
   );

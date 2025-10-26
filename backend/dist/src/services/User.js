@@ -7,7 +7,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
-};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -18,7 +17,6 @@ const BigQueryService_1 = require("./BigQueryService");
 const Common_1 = require("../types/Common");
 const constant_1 = require("../utils/constant");
 const utils_1 = require("../utils");
-// Temp comment
 const config_1 = __importDefault(require("../config"));
 const db_1 = __importDefault(require("../utils/db"));
 const password_1 = require("../utils/password");

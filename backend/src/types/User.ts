@@ -80,7 +80,6 @@ export const IUSER = {
   logo: "",
   companyId: "",
   companyName: "",
-  annualRevenue: "",
   companyURL: "",
   numEmployees: "",
   revenue: "",

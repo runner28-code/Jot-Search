@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import MinifiedCompanyView from './MinifiedCompanyView';
 import ExtendedEditableContent from './ExtendedEditableContent';

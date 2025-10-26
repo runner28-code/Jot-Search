@@ -7,6 +7,7 @@ import { SwitchButton } from './PreferenceItem';
 import { FiEdit } from 'react-icons/fi';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
+  ethnicityChoices,
   genderChoices,
   veteranStatusChoices
 } from '../Apply/utils';
@@ -199,7 +200,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 htmlFor='zip'
                 className={labelStyles}
               >
-                <p className={labelTextStyles}>Zip/Postal Code</p>
                 <input
                   type='text'
                   name='zip'

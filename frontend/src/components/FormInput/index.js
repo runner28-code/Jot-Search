@@ -25,7 +25,6 @@ export default function FormInput(props) {
     error,
     disabled
   } = props;
-// Temp comment
 
   let componentStyles = inputStyles;
   componentStyles += (error ? errorBorder : regularBorder);

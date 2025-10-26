@@ -27,6 +27,7 @@ export default function DashboardPublicMin({type}) {
             >
             Back
             </button>
+          </div>
         </div>
       </div>
     )

@@ -21,6 +21,7 @@ export default function NavBar() {
 }
 
 function MobileNavBarLayout() {
+  const { width } = useWindowDimensions();
   return (
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50'>
       <div className='h-30 pl-4 pr-4 flex justify-between items-center relative'>
@@ -61,6 +62,7 @@ function DesktopNavBarLayout() {
           <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Find Careers</span>
         </Link>
         <Link to={ROUTES.companies}>
+// Temp comment
           <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Browse Companies</span>
         </Link>
         <a

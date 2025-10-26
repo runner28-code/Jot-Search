@@ -11,7 +11,6 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import {
   candidateChoices,
   companyChoices,
-// Temp comment
   coordinatorChoices,
   guestChoices,
   findSelectedFromPath
@@ -25,7 +24,6 @@ export default function NavBar() {
     return <NavBarLayout />
   } else {
     return <DesktopNavBarLayout />
-  }
 }
 
 function NavBarLayout() {

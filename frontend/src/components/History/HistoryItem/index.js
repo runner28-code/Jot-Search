@@ -66,7 +66,6 @@ function renderMessage(historyObj) {
     return (
       <p className='text-xl'>
         {messageSplit[0]}
-        <Link 
           to={`/careers/${historyObj.careerId}`}
           className='text-royalBlue font-bold underline'
         >

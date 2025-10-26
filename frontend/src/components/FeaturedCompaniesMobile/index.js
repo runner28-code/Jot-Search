@@ -39,7 +39,6 @@ export default function FeaturedCompaniesMobile() {
       <div className='text-center mt-24'>
         <Link
           to={ROUTES.companies}
-// Temp comment
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
         </Link>

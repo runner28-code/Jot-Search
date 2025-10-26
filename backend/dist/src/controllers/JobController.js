@@ -30,7 +30,6 @@ const routing_controllers_1 = require("routing-controllers");
 const BigQueryService_1 = require("../services/BigQueryService");
 const Job_1 = require("../services/Job");
 const Common_1 = require("../types/Common");
-const Getro_1 = require("../types/Getro");
 const Job_2 = require("../types/Job");
 const utils_1 = require("../utils");
 const db_1 = __importDefault(require("../utils/db"));
@@ -73,6 +72,7 @@ let JobController = class JobController {
                 (0, utils_1.consoleLog)("/// BULLHORN_GET_JOBS");
                 yield (yield BullhornService_1.BullhornService.getClient()).getJobs(false, 50);
                 return { success: true };
+            }
             catch (error) {
                 (0, utils_1.consoleLog)(error);
                 return { success: false, error };

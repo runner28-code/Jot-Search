@@ -115,6 +115,7 @@ export default function Candidate() {
             <PreferenceItem
               toggled={!!candidateData.willRelocate}
               fieldName='willRelocate'
+              label={PREFERENCE_ITEMS.willRelocate}
               onUpdate={handleCandidateUpdate} />
             <PreferenceItem
               toggled={!!candidateData.willReceiveNotification}

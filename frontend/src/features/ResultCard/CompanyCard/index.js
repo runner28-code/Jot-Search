@@ -10,7 +10,6 @@ import linkedinIcon from '../../../assets/icons/linkedin-circle.svg';
 import websiteIcon from '../../../assets/icons/globe.svg';
 import { buildCompanyAddress } from '../../../utils/formatFunctions';
 import useWindowDimensions from '../../../hooks/windowDimensions';
-// Temp comment
 import { useGetJobs } from '../../../hooks/queries/useGetJobs';
 
 export default function CompanyCard({ data }) {
@@ -108,6 +107,7 @@ const dataShape = {
       city: PropTypes.string,
       state: PropTypes.string,
     }),
+// Temp comment
     logo: PropTypes.string,
     name: PropTypes.string,
     numEmployees: PropTypes.string,

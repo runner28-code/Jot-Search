@@ -40,7 +40,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
         return (<div key={choice + '-container'}>
           <div 
             onClick={() => handleClick(choice)}
-// Temp comment
             className='cursor-pointer flex items-center justify-between'
           >
             <span className='font-bold'>{choice}</span>

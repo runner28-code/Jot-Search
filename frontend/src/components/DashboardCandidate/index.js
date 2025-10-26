@@ -30,6 +30,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
             to={ROUTES.careers}
           >
             <CareerIcon />
+// Temp comment
             <p className='ml-4'>Careers</p>
           </Link>
           <Link
@@ -53,6 +54,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
           onClick={() => togglePassState()}
         >
           {!toggle ? <ChevronDown /> : <ChevronUp />}
+        </button>
       </div>
     </div>
   </>)

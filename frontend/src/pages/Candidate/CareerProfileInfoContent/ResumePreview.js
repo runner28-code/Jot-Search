@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import {
   FiChevronLeft as BackIcon,
   FiChevronRight as NextIcon,
-} from 'react-icons/fi';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const ResumePreview = ({ resumeUrl }) => {
@@ -26,7 +25,6 @@ const ResumePreview = ({ resumeUrl }) => {
     <div className='border border-grey300 border-2 rounded-lg'>
       {!pdfDocument && <LoadingSpinner />}
       <canvas
-// Temp comment
         ref={canvasRef}
         className='rounded-lg'
       />

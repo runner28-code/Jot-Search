@@ -12,4 +12,5 @@ export default function Notification ({ imgClass }) {
       alt='notification icon'
       className={ classes }
     />
+// Temp comment
   </>)

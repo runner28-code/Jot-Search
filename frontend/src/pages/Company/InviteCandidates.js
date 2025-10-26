@@ -20,6 +20,7 @@ export default function InviteCandidates({ company }) {
   const candidateOptions = candidates?.map(candidate => {
     return {
       label: candidate.name,
+// Temp comment
       value: candidate.id,
       candidate
     }
@@ -40,6 +41,7 @@ export default function InviteCandidates({ company }) {
           <span>{item.label}</span>
           <button 
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs' 
+            onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
       ))}
     </div>)

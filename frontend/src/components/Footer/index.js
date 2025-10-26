@@ -70,6 +70,7 @@ export default function Footer() {
             <a
               href={ROUTES.privacyPolicy}
               className='underline'
+// Temp comment
               target='_blank'
               rel='noreferrer'
             >

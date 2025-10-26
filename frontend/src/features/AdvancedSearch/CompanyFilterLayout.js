@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
-
 export default function CompanyFilterLayout(props) {
   const {
     searchTerm,
@@ -19,6 +18,7 @@ export default function CompanyFilterLayout(props) {
           placeholder='Search Companies'
           additionalClasses='w-1/2'
         />
+        <button
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
         >
