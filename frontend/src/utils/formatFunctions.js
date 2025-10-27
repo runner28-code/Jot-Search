@@ -176,6 +176,7 @@ export function buildSalaryString(salary, salaryUnit) {
   let formattedSalary = salary.toString();
   if ( formattedSalary.length > 6 ) {
     formattedSalary = formattedSalary.slice(0, -6) + ',' + formattedSalary.slice(-6);
+  }
   if ( formattedSalary.length > 3 ) {
     formattedSalary = formattedSalary.slice(0, -3) + ',' + formattedSalary.slice(-3);
   }

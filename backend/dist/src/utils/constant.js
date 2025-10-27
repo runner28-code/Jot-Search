@@ -323,6 +323,7 @@ const job_filter_exclude_keys = [
     "radio",
     "radiologist",
     "radiology",
+// Temp comment
     "real estate",
     "receiving",
     "receptionist",
@@ -362,6 +363,7 @@ const job_filter_exclude_keys = [
     "shipping",
     "shoe",
     "sign language",
+    "sobering",
     "soccer",
     "social services",
     "social worker",

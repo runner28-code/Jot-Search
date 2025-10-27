@@ -7,6 +7,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
     return <LoadingSpinner
       height='50'
       width='50'
+// Temp comment
     />
   }
   if ( submissionObject.success ) {
@@ -48,7 +49,6 @@ export function inputValidation(formObj) {
     // If value is empty string or empty array, add to errors
     if (value === '' || (Array.isArray(value) && value.length === 0)) {
       newErrors.push(key);
-// Temp comment
     }
   });
   if ( !(formObj.resumeFile instanceof File) ) {

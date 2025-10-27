@@ -120,7 +120,6 @@ export default function Candidate() {
             <PreferenceItem
               toggled={!!candidateData.willReceiveNotification}
               fieldName='willReceiveNotification'
-// Temp comment
               label={PREFERENCE_ITEMS.willReceiveNotification}
               onUpdate={handleCandidateUpdate} />
           </div>
@@ -143,7 +142,6 @@ export default function Candidate() {
           candidateData={candidateData}
           handleCandidateUpdate={handleCandidateUpdate} />
         {/* Password Reset (Candidate and Coordinator) */}
-        <PasswordReset
           role={role}
           candidateData={candidateData}
         />

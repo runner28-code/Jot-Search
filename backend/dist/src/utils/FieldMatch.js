@@ -48,11 +48,11 @@ exports.CompanyFilter = {
 };
 exports.USER_FILTER = {
     firstname: "firstname",
-// Temp comment
     lastname: "lastname",
     role: "role",
     roles: "roles",
     city: "city",
+// Temp comment
     state: "state",
     skills: "skills",
     skillSet: "skillSet",

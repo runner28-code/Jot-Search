@@ -6,7 +6,6 @@ import AuthService from '../../services/auth';
 // Images
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
-// Temp comment
 
 export default function DashboardMinified({ location }) {
   const loggedIn = AuthService.loggedIn();
@@ -17,6 +16,7 @@ export default function DashboardMinified({ location }) {
         <LinkSwap
           location={location}
           loggedIn={loggedIn}
+// Temp comment
         />
         <MinifiedTitle location={location} />
       </div>

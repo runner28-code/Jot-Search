@@ -34,6 +34,7 @@ export const saveCompany = async (company: string, candidate: string) => {
       await db.user.update({
         where: {
           id: candidate,
+        },
         data: {
           savedCompanies: {
             connect: {

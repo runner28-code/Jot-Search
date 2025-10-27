@@ -91,7 +91,6 @@ TypeaheadDropdown.propTypes = {
   choices: PropTypes.array.isRequired,
   currentChosen: PropTypes.array.isRequired,
   onChange: PropTypes.func.isRequired,
-  baseStyles: PropTypes.string.isRequired,
   inputHeight: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
 }
@@ -125,7 +124,6 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
       {currentChosen.map(choice => {
         const isActive = currentChosen.includes(choice);
         const handleTagClick = () => {
-// Temp comment
           handleClick(choice);
         }
 

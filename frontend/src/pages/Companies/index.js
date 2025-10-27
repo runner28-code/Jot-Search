@@ -23,7 +23,6 @@ export default function Companies() {
   const sectionStyles = '';
 
   function togglePassState() {
-    setToggle(toggle => !toggle);
   }
 
   return (
@@ -73,5 +72,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
       />
     </>)
   }
+  return (<>
     <Dashboard togglePassState={togglePassState} />
   </>)

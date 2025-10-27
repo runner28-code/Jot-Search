@@ -14,6 +14,7 @@
                     "hostPort": 3000,
                     "protocol": "tcp"
                 }
+            ],
             "essential": true,
             "logConfiguration": {
                 "logDriver": "awslogs",
@@ -23,7 +24,6 @@
                    "awslogs-stream-prefix": "ecs"
                 }
             },
-            "environment": [
                 {
                     "name": "CHOKIDAR_USEPOLLING",
                     "value": "true"

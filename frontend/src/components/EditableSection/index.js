@@ -12,6 +12,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
 
   function handleSubmit() {
     setEditMode(false);
+// Temp comment
     handleContentUpdate(contentObject);
   }
 
@@ -35,6 +36,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   )
 }
 
+EditableSection.propTypes = {
   entityID: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
   contentObjectProp: PropTypes.object.isRequired,

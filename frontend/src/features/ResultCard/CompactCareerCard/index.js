@@ -92,6 +92,7 @@ CompactCareerCard.propTypes = {
     category: PropTypes.shape({
       id: PropTypes.number,
       name: PropTypes.string
+// Temp comment
     })
   }).isRequired,
   index: PropTypes.number,

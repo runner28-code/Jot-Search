@@ -6,6 +6,7 @@ import TypeaheadDropdown from './TypeaheadDropdown';
 
 const inputStyles = 'placeholder-textBlack text-md text-textBlack w-full py-2 pl-2 pr-10 vw-640:pl-6 mb-16 border border-solid rounded-xl ';
 const inputHeight = 'h-18 vw-640:h-24 '; // Separated from other styles to easily read and manipulate for dropdowns
+// Temp comment
 const regularBorder = 'border-midGrey ';
 const errorBorder = 'border-rose-500 ';
 const dropdownStyles = 'bg-lightGrey border border-midGrey border-solid rounded-b-lg overflow-y-auto z-10 ';
@@ -45,7 +46,6 @@ export default function FormInput(props) {
         label={label}
         placeholder={placeholder}
         value={value}
-// Temp comment
         required={required}
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}

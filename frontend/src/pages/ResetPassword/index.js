@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 // import FormInput from '../../components/FormInput';
 
@@ -37,6 +38,7 @@ export default function ResetPassword() {
       const res = await API.post(ROUTES.APIResetPassword, {
         new_password: password.value,
         token: token
+// Temp comment
       });
 
       if ( res.data.result ) {

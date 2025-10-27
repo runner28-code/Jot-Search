@@ -31,7 +31,6 @@ export default function InviteCandidates({ job }) {
   const [selected, setSelected] = useState([]);
   const deleteItem = (e, value) => {
     e.stopPropagation();
-    setSelected(selected.filter(item => item.value !== value))
   }
 
   const SelectedValues = () => {
@@ -92,7 +91,6 @@ export default function InviteCandidates({ job }) {
           onClick={() => setSelected([])}
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>
       </div>
-// Temp comment
     </section>
   )
 }

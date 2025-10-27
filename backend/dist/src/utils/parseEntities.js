@@ -1,4 +1,3 @@
-// Temp comment
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseGetroJobToMain = exports.parseBullhornJobToMain = exports.parseBullhornCompanyToUser = exports.parseBullhornCandidateToUser = void 0;
@@ -34,6 +33,7 @@ const parseBullhornCandidateToUser = (data) => {
         revenue: data.salary,
         dateFounded: data.dateAdded,
         employeeType: data.employeeType,
+// Temp comment
         experience: data.experience,
         hourlyRate: data.hourlyRate,
         willRelocate: data.willRelocate,

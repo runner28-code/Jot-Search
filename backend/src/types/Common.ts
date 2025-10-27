@@ -24,6 +24,7 @@ export enum Tables {
   CATEGORIES = "Categories",
 }
 
+export const DATASET_BULLHORN = config.bullhornDatasetID || "";
 export const DATASET_GETRO = config.getroDatasetID || "";
 export const DATASET_MAIN = config.mainDatasetID || "";
 
@@ -71,7 +72,6 @@ export type JobSearchByID = {
 };
 
 export type JobSearchByFilterResponse =
-  | {
       jobs?: Job[];
       total?: number;
       message?: any;
@@ -107,3 +107,4 @@ export type GetCandidatesOnJobResponse = {
 
 // Company Types
 export type Company = BullhornCompany | GetroCompany;
+export type CompanySearchByID = {

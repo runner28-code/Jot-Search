@@ -12,7 +12,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
     />
   }
   if ( submissionObject.success ) {
-// Temp comment
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
   }
   return (
@@ -38,6 +37,7 @@ export function renderErrorBlock(errorBlock) {
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (
+// Temp comment
       <div className='flex flex-col justify-center'>
         <h4 className='text-h4 text-center vw-768:text-h4 text-darkGray font-spaceGrotesk font-semibold mb-10'>
           Create an Account
