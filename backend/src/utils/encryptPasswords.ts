@@ -23,6 +23,7 @@ import { DATASET_MAIN, Tables } from "../types/Common";
         const [users] = await job.getQueryResults();
 
         if (users && users.length ) {
+          for(const user of users){
             if(!user.password){
               console.log(`user ${user.email} password is empty. Skipped.`);
               continue

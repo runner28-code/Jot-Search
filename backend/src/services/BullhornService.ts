@@ -802,7 +802,6 @@ export class BullhornService {
             "dateLastComment",
             "dateLastModified",
             "description",
-            "division",
             "email",
             "email2",
             "email3",

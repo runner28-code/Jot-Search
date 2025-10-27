@@ -13,7 +13,6 @@ const mockJobsData = [
     specialty: 'Technology'
   },
   {
-    id: '2cb874e2-0510-405e-9491-183d2e0e26d7',
     title: 'UI / UX Designer',
     company: 'OSU',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/osu-logo_clipped_rev_1_3_kkpczy.webp',
@@ -51,6 +50,7 @@ export default function ReferralSearch() {
   const [filteredChoices, setFilteredChoices] = useState(mockJobsData);
   const [currentChosen, setCurrentChosen] = useState([]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+
   function handleAdd(_, jobArray) {
     const idToAdd = jobArray[jobArray.length - 1];
     const jobToAdd = choices.find(job => job.id === idToAdd);

@@ -31,7 +31,6 @@ function main() {
             console.error(err);
             throw err;
         }
-    });
 }
 function seedJobs() {
     var _a, _b;
@@ -130,6 +129,7 @@ function seedCategories() {
                     enabled: true,
                     externalID: 2000026,
                 },
+                {
                     name: "Operations",
                     enabled: true,
                     externalID: 2000014,

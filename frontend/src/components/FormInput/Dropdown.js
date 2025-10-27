@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import checkmarkIcon from '../../assets/images/checkmark.png';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
-
 const MULTI_SELECT = 'multi-select';
 const SINGLE_SELECT = 'single-select';
 const YEARS_OF_EXPERIENCE = 'yearsExperience';
@@ -24,7 +23,6 @@ function renderHorizontalRule(index, arrayLength) {
       <hr className='border-royalBlue border-1.5 border-solid my-4' />
     )
   }
-// Temp comment
 }
 
 function renderChoices(choices, currentChosen, isOpen, handleClick) {

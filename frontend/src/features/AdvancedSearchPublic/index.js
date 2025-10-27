@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ResultContainer from '../../features/ResultContainer';
 import TabContainer from '../../components/TabContainer';
+import CandidateFilterLayout from './CandidateFilterLayout';
 import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
@@ -56,7 +57,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
   }
 
-  const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */

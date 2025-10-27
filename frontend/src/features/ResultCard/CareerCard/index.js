@@ -61,6 +61,7 @@ CareerCard.propTypes = {
     city: PropTypes.string,
     state: PropTypes.string,
     company_logo: PropTypes.string,
+    role: PropTypes.string,
     title: PropTypes.string,
     employmentType: PropTypes.string,
     onSite: PropTypes.string,

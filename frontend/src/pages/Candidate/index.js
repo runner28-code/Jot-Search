@@ -25,6 +25,7 @@ const PREFERENCE_ITEMS = {
 }
 
 export default function Candidate() {
+  // Redirect if userRole is 'candidate' unless it's their profile, candidates should not be able to see other candidates
   const role = AuthService.getUserRole();
   const { setCurrentUser } = useCandidateContext()
   const path = useLocation().pathname;
@@ -119,6 +120,7 @@ export default function Candidate() {
             <PreferenceItem
               toggled={!!candidateData.willReceiveNotification}
               fieldName='willReceiveNotification'
+// Temp comment
               label={PREFERENCE_ITEMS.willReceiveNotification}
               onUpdate={handleCandidateUpdate} />
           </div>

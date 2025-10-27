@@ -56,7 +56,6 @@ CREATE TABLE "Company" (
     "status" TEXT,
     "taxRate" DOUBLE PRECISION,
     "tickerSymbol" TEXT,
-    "trackTitle" TEXT,
     "twitterHandle" TEXT,
     "workWeekStart" INTEGER,
     "_score" DOUBLE PRECISION,

@@ -85,7 +85,6 @@ class AuthService {
   async refreshSavedCandidates() {
     try {
       const { user_id } = this.getProfile();
-      const candidates = await getSavedCandidates(user_id);
       const candidateIDs = candidates.map(candidate => candidate.id);
       localStorage.setItem('savedCandidates', JSON.stringify(candidateIDs));
     } catch(e) {

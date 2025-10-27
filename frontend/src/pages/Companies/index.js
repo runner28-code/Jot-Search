@@ -70,10 +70,8 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : SearchIcon}
         backButton={true}
-// Temp comment
       />
     </>)
   }
-  return (<>
     <Dashboard togglePassState={togglePassState} />
   </>)

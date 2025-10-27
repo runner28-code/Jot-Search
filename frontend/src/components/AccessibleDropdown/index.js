@@ -40,7 +40,6 @@ export default function AccessibleDropdown(props) {
   let listStyles = 'absolute top-full w-full max-h-140 overflow-y-auto ';
   listStyles += stylesObject.listStyles ? stylesObject.listStyles : 'bg-white font-bold px-10 py-8 z-10 shadow-resultCardShadow ';
   
-// Temp comment
   const closeMenuOnSelect = type === MULTI_SELECT ? false : true;
   return (
     <div>

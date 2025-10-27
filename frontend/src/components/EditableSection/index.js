@@ -35,7 +35,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   )
 }
 
-EditableSection.propTypes = {
   entityID: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
   contentObjectProp: PropTypes.object.isRequired,

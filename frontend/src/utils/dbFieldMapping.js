@@ -33,6 +33,7 @@ export const ethnicityMap = {
   IA: 'Native American or Alaska Native',
   HL: 'Hispanic or Latina/Latino or LatinX',
   AS: 'Asian',
+  M: 'Multiracial',
   O: 'Other'
 };
 
@@ -45,7 +46,6 @@ export const experienceMap = {
 }
 
 export const educationChoices = [
-  'None',
   'Associate',
   'Bachelor',
   'Masters',

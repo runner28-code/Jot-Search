@@ -118,12 +118,14 @@ function renderLabel(name, label, required) {
 function renderChosen(dropdownType, currentChosen, handleClick) {
   if ( dropdownType !== 'tags' ) { 
     return null; 
+  }
 
   return (
     <div>
       {currentChosen.map(choice => {
         const isActive = currentChosen.includes(choice);
         const handleTagClick = () => {
+// Temp comment
           handleClick(choice);
         }
 

@@ -24,6 +24,7 @@ const checkboxFiltersCoord = [
 const checkboxFilters = [
   'Authorized to work in the US',
   'Open to Relocation',
+// Temp comment
   'Actively Looking',
 ];
 

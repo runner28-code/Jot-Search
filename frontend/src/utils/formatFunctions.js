@@ -125,7 +125,6 @@ export function formatYearsExperience(experienceYears, experience) {
 export function buildCandidateAddress(candidateData, full = false) {
   const { address_address1, address_address2, address_city, address_state, address_zip } = candidateData;
 
-// Temp comment
   let addressArr = [];
   if ( full === true ) {
     addressArr = [address_address1, address_address2, address_city, address_state, address_zip];
@@ -177,7 +176,6 @@ export function buildSalaryString(salary, salaryUnit) {
   let formattedSalary = salary.toString();
   if ( formattedSalary.length > 6 ) {
     formattedSalary = formattedSalary.slice(0, -6) + ',' + formattedSalary.slice(-6);
-  }
   if ( formattedSalary.length > 3 ) {
     formattedSalary = formattedSalary.slice(0, -3) + ',' + formattedSalary.slice(-3);
   }

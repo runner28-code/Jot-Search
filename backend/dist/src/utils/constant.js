@@ -169,7 +169,6 @@ const job_filter_exclude_keys = [
     "giving",
     "goods",
     "governance",
-// Temp comment
     "grade",
     "graduate",
     "grants",
@@ -363,7 +362,6 @@ const job_filter_exclude_keys = [
     "shipping",
     "shoe",
     "sign language",
-    "sobering",
     "soccer",
     "social services",
     "social worker",

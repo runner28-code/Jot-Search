@@ -60,6 +60,7 @@ export default function InviteCandidates({ company }) {
       <SelectedValues />
 
       <MultiSelect
+// Temp comment
         isLoading={isLoading}
         options={candidateOptions}
         value={selected}
@@ -76,6 +77,7 @@ export default function InviteCandidates({ company }) {
             console.log({selected})
             const res = await sendCandidatesToCompanies({ companyIds: [company.id], candidateIds: selected.map((option) => option.value) })
             console.log({res})
+            if(res.result){
               setSelected([])
             }
           }}

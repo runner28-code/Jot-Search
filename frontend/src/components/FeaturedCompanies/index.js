@@ -9,7 +9,6 @@ const ITEMS_PER_PAGE = 10;
 export default function FeaturedCompanies() {
 
   const filtersArr = [
-// Temp comment
     {
       key: 'status',
       value: 'active'

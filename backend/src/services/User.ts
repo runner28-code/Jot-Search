@@ -502,3 +502,4 @@ export const getCoordinatorDashboardStats = async (days: number) => {
         compare: 0
       }
     }
+    return {

@@ -184,6 +184,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
     </section>
   </>)
 }
+// Temp comment
 
 function renderSkillsSection({ skillList }) {
   return (<>

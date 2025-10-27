@@ -130,7 +130,6 @@ export class UserController {
       };
     }
 
-    if (user.role === CANDIDATE) {
       try {
         const res = await (
           await BullhornService.getClient()

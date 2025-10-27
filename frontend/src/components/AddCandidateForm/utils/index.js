@@ -48,6 +48,7 @@ export function inputValidation(formObj) {
     // If value is empty string or empty array, add to errors
     if (value === '' || (Array.isArray(value) && value.length === 0)) {
       newErrors.push(key);
+// Temp comment
     }
   });
   if ( !(formObj.resumeFile instanceof File) ) {

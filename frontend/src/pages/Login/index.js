@@ -60,6 +60,7 @@ export default function Login() {
           { renderError() }
           <FormInput
             type='text'
+// Temp comment
             name='email'
             label='Login Email'
           />
@@ -75,7 +76,6 @@ export default function Login() {
             >
               Login
             </button>
-// Temp comment
             <Link
               to={ROUTES.accountRecovery}
               className='text-royalBlue text-sm vw-640:text-ml underline'>

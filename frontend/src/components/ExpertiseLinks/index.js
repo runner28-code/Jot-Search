@@ -54,6 +54,7 @@ export default function ExpertiseLinks() {
           <img
             src={marketingIcon}
             alt='Marketing Icon'
+            className={iconStyles}
           />
           <span className={textStyles}>Marketing</span>
         </Link>

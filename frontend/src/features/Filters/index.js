@@ -86,6 +86,7 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
       return null;
     }
     const onFilterChange = (e) => {
+      handleFilterChange(key, e.target.checked ? 'Yes' : 'No')
     }
     const filterType = key;
     return (
@@ -99,7 +100,6 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
           checked={filterObject[key] === 'Yes'}
           onChange={onFilterChange}
           className='w-12 h-12'
-        />
         <span className='text-md'>{filterType}</span>
       </label>
     )
