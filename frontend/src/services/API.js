@@ -270,7 +270,6 @@ export async function applyToJob(jobId, candidateId) {
   return normalizeData(data);
 }
 
-export async function saveJob(candidateId, jobId) {
   const { data } = await API.put(ROUTES.APItoggleSaveJob, null, {
     params: {
       'candidate': candidateId,

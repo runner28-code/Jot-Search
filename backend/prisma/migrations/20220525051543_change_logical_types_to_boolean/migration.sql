@@ -21,6 +21,7 @@
 */
 -- AlterTable
 ALTER TABLE "Candidate" DROP COLUMN "idOnFile",
+ADD COLUMN     "idOnFile" BOOLEAN,
 DROP COLUMN "isAnonymized",
 ADD COLUMN     "isAnonymized" BOOLEAN,
 DROP COLUMN "isDeleted",
@@ -45,4 +46,3 @@ ADD COLUMN     "workAuthorized" BOOLEAN;
 -- AlterTable
 ALTER TABLE "Job" DROP COLUMN "willRelocate",
 ADD COLUMN     "willRelocate" BOOLEAN,
-DROP COLUMN "onSite",

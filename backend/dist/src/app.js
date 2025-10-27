@@ -22,6 +22,7 @@ const cors_1 = __importDefault(require("cors"));
 const jwtUtils_1 = require("./utils/jwtUtils");
 const User_1 = require("./services/User");
 const multer_1 = __importDefault(require("multer"));
+const utils_1 = require("./utils");
 const fs_1 = __importDefault(require("fs"));
 dotenv_1.default.config();
 const ALLOWED_UPLOAD_FOLDERS = ["resumes", "avatars"];
@@ -40,6 +41,7 @@ const multerStorage = multer_1.default.diskStorage({
     },
 });
 const upload = (0, multer_1.default)({ storage: multerStorage });
+// Temp comment
 const getActualRequestDurationInMs = (start) => {
     const NS_PER_SEC = 1e9;
     const NS_TO_MS = 1e6;

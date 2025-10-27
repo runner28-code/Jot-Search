@@ -91,7 +91,6 @@ class AuthService {
     } catch(e) {
       console.log(e);
       localStorage.setItem('savedCandidates', JSON.stringify([]));
-// Temp comment
     }
   }
 

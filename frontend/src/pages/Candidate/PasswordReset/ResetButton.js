@@ -11,10 +11,10 @@ export default function ResetButton({ candidateData, setType }) {
     const { email } = candidateData;
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email
+// Temp comment
     });
 
     if ( res.data.result ) {
-// Temp comment
       setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);

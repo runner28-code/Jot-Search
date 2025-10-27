@@ -26,6 +26,7 @@ export default function Careers() {
   }
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
+      <RenderHeader
         loggedIn={loggedIn}
         userType={userType}
         togglePassState={togglePassState}
@@ -69,7 +70,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
         IconComponent={userType === 'coordinator' ? CareerIcon : SearchIcon}
         backButton={true}
       />
-    </>)
   }
   return (<>
     <Dashboard togglePassState={togglePassState} />

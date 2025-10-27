@@ -1,4 +1,3 @@
-"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -25,7 +24,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getJobsList = exports.updateJob = exports.inferDatasetById = exports.getAppliedJobsByUser = exports.createJob = void 0;
 const Common_1 = require("../types/Common");
-// Temp comment
 const Job_1 = require("../types/Job");
 const db_1 = __importDefault(require("../utils/db"));
 const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {

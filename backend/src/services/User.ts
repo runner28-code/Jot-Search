@@ -415,7 +415,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
   });
   const totalOpenJobsInPreviousPeriod = await db.job.count({
     where: {
-      status: {
         equals: 'active',
         mode: 'insensitive'
       },
@@ -503,3 +502,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
       }
     }
     return {
+      result: true,
+      data,
+      message: null,

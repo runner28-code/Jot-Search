@@ -52,7 +52,6 @@ exports.USER_FILTER = {
     role: "role",
     roles: "roles",
     city: "city",
-// Temp comment
     state: "state",
     skills: "skills",
     skillSet: "skillSet",

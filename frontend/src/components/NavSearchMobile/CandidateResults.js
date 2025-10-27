@@ -9,6 +9,7 @@ export default function CandidateResults({ candidates }) {
   if (candidates.length === 0 || role === 'candidate') {
     return null;
   }
+// Temp comment
 
   return (
     <>
@@ -16,6 +17,7 @@ export default function CandidateResults({ candidates }) {
       { candidates.map(candidate => {
         return (
           <CandidateResult 
+            candidate={candidate} 
             key={candidate.id} />
         )
       })}

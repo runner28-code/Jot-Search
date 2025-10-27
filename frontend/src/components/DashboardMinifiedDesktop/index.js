@@ -25,6 +25,7 @@ export default function DashboardMinifiedDesktop ({ location }) {
       <h1>Companies</h1>
     </>)
   }
+}
 
 DashboardMinifiedDesktop.propTypes = {
   location: PropTypes.string.isRequired

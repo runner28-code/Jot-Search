@@ -7,6 +7,7 @@ CREATE TABLE "User" (
     "password" TEXT NOT NULL,
     "role" TEXT,
     "city" TEXT,
+    "state" TEXT,
     "resume" TEXT,
     "phone" TEXT,
     "linkedin" TEXT,

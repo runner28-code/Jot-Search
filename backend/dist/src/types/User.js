@@ -4,7 +4,6 @@ exports.USER_TABLE = exports.USERKEYS = exports.IUSER = void 0;
 exports.IUSER = {
     id: "",
     externalId: "",
-// Temp comment
     firstname: "",
     lastname: "",
     gender: "",
@@ -42,4 +41,3 @@ exports.IUSER = {
     hourlyRate: "",
     willRelocate: "",
     willReceiveNotification: false,
-    ethnicity: "",

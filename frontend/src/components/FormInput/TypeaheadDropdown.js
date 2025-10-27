@@ -40,7 +40,6 @@ export default function TypeaheadDropdown(props) {
   }, [dropdownOpen]);
   
   /* Filter choices based on input */
-  useEffect(() => {
     if (dropdownType === 'tags') {
       setFilteredChoices(choices.filter(choice => choice.toLowerCase().includes(inputValue.toLowerCase())));
     }
@@ -91,6 +90,7 @@ TypeaheadDropdown.propTypes = {
   choices: PropTypes.array.isRequired,
   currentChosen: PropTypes.array.isRequired,
   onChange: PropTypes.func.isRequired,
+  baseStyles: PropTypes.string.isRequired,
   inputHeight: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
 }
@@ -125,15 +125,3 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
         const isActive = currentChosen.includes(choice);
         const handleTagClick = () => {
           handleClick(choice);
-        }
-
-        return (
-          <ChoiceTag 
-            label={choice} 
-            isActive={isActive} 
-            handleClick={handleTagClick}
-            key={choice} />
-        )
-      })}
-    </div>
-  )

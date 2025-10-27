@@ -22,7 +22,6 @@ export const createJob = async (job: Job) => {
         datasource: sanitizedJob?.datasource as any,
       },
     });
-
     return {
       result: true,
       data: newJob,

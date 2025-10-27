@@ -23,6 +23,7 @@ export default function Companies() {
   const sectionStyles = '';
 
   function togglePassState() {
+    setToggle(toggle => !toggle);
   }
 
   return (
@@ -52,6 +53,7 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   const { width } = useWindowDimensions();
   if( width <= 990 && userType === 'candidate' ) {
     return (<>
+// Temp comment
       <PageHeaderCandidate
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : CompanyIcon}

@@ -15,6 +15,7 @@ export default function ResetPassword() {
 
   const queryParams = new URLSearchParams(window.location.search);
   const token = queryParams.get('token');
+// Temp comment
 
   const handlePassword = (event) => {
     setPassword(event.target.value);
@@ -38,7 +39,6 @@ export default function ResetPassword() {
       const res = await API.post(ROUTES.APIResetPassword, {
         new_password: password.value,
         token: token
-// Temp comment
       });
 
       if ( res.data.result ) {

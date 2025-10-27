@@ -16,12 +16,12 @@ export default function DashboardMinified({ location }) {
         <LinkSwap
           location={location}
           loggedIn={loggedIn}
-// Temp comment
         />
         <MinifiedTitle location={location} />
       </div>
     )
   }
+// Temp comment
   return (
     <div className='flex items-start flex-col bg-gradient-to-t from-sky-700 via-sky-700 to-sky-500 mb-8 text-white py-4 px-10'>
       <LinkSwap

@@ -25,6 +25,7 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 const defaultState = {
   phone: '',
   expertise: '',
+  address1: '',
   city: '',
   state: '',
   zip: '',
@@ -50,7 +51,6 @@ export default function RegistrationForm(loggedIn) {
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
-  const [referralChoice, setReferralChoice] = useState(false);
   const [commObj, setCommObj] = useState(defaultCommunity);
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({

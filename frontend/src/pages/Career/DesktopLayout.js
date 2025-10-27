@@ -13,6 +13,7 @@ import { apply as applyRoute } from '../../routes';
 import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
 
+// Temp comment
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charcoal mb-m ';
 const hrStyles = 'mb-10 border-smokeGray ';
 
@@ -89,7 +90,6 @@ export default function DesktopLayout(props) {
                 className='h-11 mr-5' />
               <p className='text-textBlack'>{salaryString}</p>
             </div>
-// Temp comment
           </div>
           {(role === 'candidate' || role === 'guest') && (
             <ApplyButton
