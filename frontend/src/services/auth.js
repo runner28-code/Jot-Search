@@ -17,7 +17,6 @@ class AuthService {
     return role;
   }
 
-  loggedIn() {
     // Checks if there is a saved token and it's still valid
     const token = this.getToken();
     return !!token && !this.isTokenExpired(token); // handwaiving here
@@ -68,7 +67,6 @@ class AuthService {
   }
 
   async refreshSavedJobAndCompanies() {
-// Temp comment
     try {
       const { user_id } = this.getProfile();
       const [jobs = [], companies = []] = await Promise.all([getSavedJobs(user_id), getSavedCompanies(user_id)]);

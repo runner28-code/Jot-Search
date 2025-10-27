@@ -25,6 +25,7 @@ export default function DesktopLayout(props) {
     postingAge,
     role,
   } = props.data;
+  const navigate = useNavigate();
 
   const skillList = careerData.skillList;
 
@@ -198,7 +199,6 @@ function SkillsList({ items }) {
       <ul className='list-disc ml-8 mb-20'>
         <li>No skills listed.</li>
       </ul>
-    )
   }
   return (
     <ul className='list-disc ml-8 mb-20'>

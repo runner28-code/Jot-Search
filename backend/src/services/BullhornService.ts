@@ -207,6 +207,7 @@ export class BullhornService {
           await this.getNewAccessToken();
         }
       } catch (error: any) {
+        console.log(error.message);
         await sleep(1000);
         retryNo++;
         console.log("\nxxxxx login failed: retrying now");

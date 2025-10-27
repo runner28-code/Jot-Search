@@ -32,6 +32,7 @@ const availableTabChoicesByUserType = {
   guest: ['jobs', 'companies'],
 }
 
+// Temp comment
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
     switch (pathname) {
@@ -61,7 +62,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);
-// Temp comment
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {

@@ -2,9 +2,7 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CareerCard from '../ResultCard/CareerCard';
-// Temp comment
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
-import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 
 const ITEMS_PER_PAGE = 5;
 

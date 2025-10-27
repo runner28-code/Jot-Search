@@ -66,7 +66,6 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
   function handleChange(e) {
     setOptionValue(e.target.checked);
   }
-
   return (
     <label
       htmlFor={`${name}-${attribute}`}
@@ -110,5 +109,4 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       type='submit'>
       {buttonString}
     </button>
-// Temp comment
   )

@@ -20,7 +20,6 @@ export default function InviteCandidates({ job }) {
 
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
-  const candidateOptions = candidates?.map(candidate => {
     return {
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
       value: candidate.id,
@@ -102,6 +101,7 @@ function itemRenderer({ option, onClick, disabled }) {
     <div
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`}
       onClick={onClick}
+    >
       <div className="flex items-center space-x-4 pb-2 border-b-2 ">
         {avatarUrl ?
           <img

@@ -81,7 +81,6 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
     return null;
   }
 
-  return Object.entries(defaultFilterObject).map(([key]) => {
     if (!filterObject[key]) {
       return null;
     }

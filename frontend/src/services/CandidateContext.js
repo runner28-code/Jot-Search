@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import AuthService from './auth';
 import { getCandidateById } from './API';
 
-// Temp comment
 const mockCandidateData = [
   {
     id: 'cb4f35ed-db88-410f-beb0-a6a449135f75',
@@ -74,7 +73,6 @@ const mockCandidateData = [
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/donnie_1_l00n0o.webp', // Missing from Bullhorn Schema
     occupation: 'Softwware Engineer',
     companyName: 'Aerovision',
-    address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',

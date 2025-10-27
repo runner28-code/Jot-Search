@@ -12,6 +12,7 @@ export default function FeaturedCompaniesMobile() {
     {
       key: 'status',
       value: 'active'
+    }
   ];
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
@@ -21,7 +22,6 @@ export default function FeaturedCompaniesMobile() {
       { renderColorShapes() }
       <h2 className='text-h5 text-center font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
       <div className='flex flex-wrap mt-8 justify-center'>
-        {
           isLoading ?
             <LoadingSpinner />
             :

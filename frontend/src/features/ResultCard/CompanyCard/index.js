@@ -11,6 +11,7 @@ import websiteIcon from '../../../assets/icons/globe.svg';
 import { buildCompanyAddress } from '../../../utils/formatFunctions';
 import useWindowDimensions from '../../../hooks/windowDimensions';
 import { useGetJobs } from '../../../hooks/queries/useGetJobs';
+// Temp comment
 
 export default function CompanyCard({ data }) {
   // Format state if not state code. 'Oklahoma' -> 'OK'
@@ -75,6 +76,7 @@ export default function CompanyCard({ data }) {
                 href='#'
                 className='text-royalBlue underline'
               >
+                LinkedIn
               </a>
             </div>
             {/* Website */}

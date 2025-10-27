@@ -85,7 +85,6 @@ export const getAppliedJobsByUser = async (userId: string) => {
       result: false,
     };
   }
-};
 
 export const inferDatasetById = (id: string) => {
   if (id.startsWith("gt-")) {

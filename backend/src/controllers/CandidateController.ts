@@ -5,7 +5,6 @@ import {
   Put,
   QueryParam,
   JsonController,
-  Authorized,
   CurrentUser,
   Patch,
 } from "routing-controllers";
@@ -86,6 +85,7 @@ export class CandidateController {
       const { id, ...data } = body;
 
       if (authUser.role !== COORDINATOR) {
+        return { message: "You are not authorized to update candidate", result: false };
       }
 
       const candidate = await db.candidate.findFirst({

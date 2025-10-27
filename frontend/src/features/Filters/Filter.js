@@ -15,6 +15,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const [showDropdown, setShowDropdown] = useState(false);
   const [selected, setSelected] = useState(initialValue);
   const [listening, setListening] = useState(false);
+// Temp comment
 
   const menuRef = useRef(null);
 
@@ -23,6 +24,5 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   }
   function handleChoiceClick(choice) {
     setShowDropdown(false);
-// Temp comment
     setSelected(choice);
     handleFilterChange(filterType, choice);

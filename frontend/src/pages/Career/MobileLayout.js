@@ -81,7 +81,6 @@ export default function MobileLayout(props) {
           {/* Third row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
             {/* Salary */}
-            <div className='w-1/2 flex items-center pr-4'>
               <img
                 src={salaryIcon}
                 className='h-11 mr-5' />
@@ -121,6 +120,7 @@ export default function MobileLayout(props) {
         <button
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
           onClick={() => navigate(-1)}
+        >
           Back
         </button>
       </div>

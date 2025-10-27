@@ -21,7 +21,6 @@ export default function Stats({ userType }) {
   }
 
   function getDuration(timeFrame) {
-    switch (timeFrame) {
       case 'Today':
         return 1;
       case 'Last 7 Days':
@@ -131,7 +130,6 @@ StatCard.propTypes = {
 function renderDeviation(deviationPercentage) {
   return (
     <div className='flex items-center '>
-// Temp comment
       {renderStyledDeviation(deviationPercentage)}
     </div>
   )

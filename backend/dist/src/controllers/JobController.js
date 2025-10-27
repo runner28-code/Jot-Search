@@ -138,7 +138,6 @@ let JobController = class JobController {
                     total,
                     message: null,
                 };
-            }
             catch (error) {
                 console.error(error);
                 return {

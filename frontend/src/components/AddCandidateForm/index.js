@@ -37,7 +37,6 @@ export default function RegistrationForm() {
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
-  const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
   });

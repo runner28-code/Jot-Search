@@ -104,4 +104,5 @@ export type GetCandidatesOnJobResponse = {
   candidates?: any[];
   result: boolean;
   message?: any;
+};
 

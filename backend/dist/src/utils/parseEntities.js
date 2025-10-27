@@ -81,6 +81,7 @@ const parseBullhornCompanyToUser = (data) => {
     };
     return user;
 };
+exports.parseBullhornCompanyToUser = parseBullhornCompanyToUser;
 const parseBullhornJobToMain = (data) => {
     const job = {
         externalId: data.id,

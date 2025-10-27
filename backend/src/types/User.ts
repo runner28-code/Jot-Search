@@ -29,7 +29,6 @@ export type User = {
   username?: string;
   logo?: string;
 
-  companyId?: string;
   companyName?: string;
   annualRevenue?: string;
   companyURL?: string;
@@ -53,6 +52,7 @@ export type User = {
 export const IUSER = {
   id: "",
   externalId: "",
+  firstname: "",
   lastname: "",
   gender: "",
   email: "",
