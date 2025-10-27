@@ -9,6 +9,7 @@
   - The `numCategories` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `numOwners` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `salary` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
+  - The `salaryLow` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `timeZoneOffsetEST` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `travelLimit` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `address_country_id` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
@@ -28,7 +29,6 @@ DROP COLUMN "hourlyRate",
 ADD COLUMN     "hourlyRate" INTEGER,
 DROP COLUMN "hourlyRateLow",
 ADD COLUMN     "hourlyRateLow" INTEGER,
-DROP COLUMN "massMailOptOut",
 ADD COLUMN     "massMailOptOut" BOOLEAN,
 DROP COLUMN "numCategories",
 ADD COLUMN     "numCategories" INTEGER,

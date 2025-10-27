@@ -75,6 +75,7 @@ export default function Login() {
             >
               Login
             </button>
+// Temp comment
             <Link
               to={ROUTES.accountRecovery}
               className='text-royalBlue text-sm vw-640:text-ml underline'>
@@ -82,7 +83,6 @@ export default function Login() {
             </Link>
           </div>
         </form>
-// Temp comment
         {/* Assistance call-to-action */}
         <div className='text-sm vw-640:text-ml leading-relaxed mt-8'>
           <span>Need Help? Just ask </span>

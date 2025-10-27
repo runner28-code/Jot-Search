@@ -222,6 +222,7 @@ let JobController = class JobController {
     save(candidate, job) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, MainCrud_1.saveJob)(job, candidate);
+        });
     }
     update(body) {
         return __awaiter(this, void 0, void 0, function* () {

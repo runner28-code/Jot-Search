@@ -31,6 +31,7 @@ TextInput.propTypes = {
 }
 
 function renderLabel( label, required, name ) {
+  if ( !label ) {
     return null;
   }
 

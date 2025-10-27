@@ -30,7 +30,6 @@ export default function CareerPage() {
   useEffect(async () => {
     const career = await getJobById(id);
     // Decode url encoded properties on career
-    career.title = urlDecode(career.title);
     career.description = urlDecode(career.description);
 
     setCareerData({ ...career });

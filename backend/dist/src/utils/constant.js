@@ -169,6 +169,7 @@ const job_filter_exclude_keys = [
     "giving",
     "goods",
     "governance",
+// Temp comment
     "grade",
     "graduate",
     "grants",
@@ -340,7 +341,6 @@ const job_filter_exclude_keys = [
     "residence",
     "resident",
     "resident assistant",
-// Temp comment
     "respiratory",
     "retail",
     "revenue",

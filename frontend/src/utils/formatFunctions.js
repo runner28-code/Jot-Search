@@ -118,12 +118,14 @@ export function formatYearsExperience(experienceYears, experience) {
     }
     return experienceMap[experience];
   } else {
+    return 'Years Experience N/A';
   }
 }
 
 export function buildCandidateAddress(candidateData, full = false) {
   const { address_address1, address_address2, address_city, address_state, address_zip } = candidateData;
 
+// Temp comment
   let addressArr = [];
   if ( full === true ) {
     addressArr = [address_address1, address_address2, address_city, address_state, address_zip];

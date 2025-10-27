@@ -26,6 +26,7 @@ export default function Companies() {
     setToggle(toggle => !toggle);
   }
 
+  return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
         loggedIn={loggedIn}
@@ -69,6 +70,7 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : SearchIcon}
         backButton={true}
+// Temp comment
       />
     </>)
   }

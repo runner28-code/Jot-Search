@@ -29,7 +29,6 @@ export default function Filters(props) {
 }
 
 Filters.propTypes = {
-// Temp comment
   handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,
   defaultFilterObject: PropTypes.object, // Shape changes significantly
@@ -87,7 +86,6 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
       return null;
     }
     const onFilterChange = (e) => {
-      handleFilterChange(key, e.target.checked ? 'Yes' : 'No')
     }
     const filterType = key;
     return (

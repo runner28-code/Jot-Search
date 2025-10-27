@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import ExploreSearch from '../../components/ExploreSearch';
 import ExploreSearchMobile from '../../components/ExploreSearchMobile';
 import ExpertiseLinks from '../../components/ExpertiseLinks';
@@ -49,7 +50,6 @@ export default function LandingPage() {
 }
 
 function renderSearch() {
-  const { width } = useWindowDimensions();
   const { totalCompaniesCount, totalJobsCount, isLoading } = useGetLandingPageStats({});
 
   if( width <= 1024 ) {

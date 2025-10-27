@@ -33,7 +33,6 @@ export const ethnicityMap = {
   IA: 'Native American or Alaska Native',
   HL: 'Hispanic or Latina/Latino or LatinX',
   AS: 'Asian',
-  M: 'Multiracial',
   O: 'Other'
 };
 
@@ -42,7 +41,6 @@ export const experienceMap = {
   '2': '0-1',
   '3': '2-4',
   '4': '5-10',
-// Temp comment
   '5': '11+'
 }
 

@@ -4,7 +4,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 // TODO: Terms of Service?
 export default function SignUp() {
 
-// Temp comment
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {

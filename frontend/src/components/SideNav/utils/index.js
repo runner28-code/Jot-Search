@@ -17,7 +17,6 @@ import * as ROUTES from '../../../routes';
 
 export const choices = {
   dashboard: {
-// Temp comment
     label: 'My Dashboard',
     icon: DashboardIcon,
     link: ROUTES.dashboard,

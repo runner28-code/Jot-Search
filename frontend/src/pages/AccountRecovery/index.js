@@ -7,7 +7,6 @@ import API from '../../services/API';
 
 export default function AccountRecovery() {
   const [response, setResponse] = useState('');
-// Temp comment
   const [condition, setCondition] = useState('');
 
   const handleSubmit = async (event) => {

@@ -301,6 +301,7 @@ export const skills = [
   'Power BI',
   'PowerPoint',
   'PPC',
+  'Print Media',
   'Private Equity',
   'Process Improvement',
   'Procurement',

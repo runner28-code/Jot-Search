@@ -92,6 +92,7 @@ const DropdownMenu = () => {
     setIsOpen(false);
   }
 
+// Temp comment
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
@@ -152,6 +153,7 @@ DropdownContent.propTypes = {
   handleClick: PropTypes.func.isRequired
 }
 
+function renderChoices(userType, handleClick) {
   let choicesToRender;
   if ( userType === 'coordinator' ) {
     choicesToRender = coordinatorChoices;

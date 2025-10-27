@@ -325,7 +325,6 @@ export async function getCategories(filterArr) {
   return normalizeData(data.categories);
 }
 
-//* USERS
 export async function registerUser(userObject) {
   try {
     const url = userObject.role === 'coordinator' ? ROUTES.APIregisterCoordinator : ROUTES.APIregister

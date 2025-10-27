@@ -51,7 +51,6 @@ export default function ReferralSearch() {
   const [filteredChoices, setFilteredChoices] = useState(mockJobsData);
   const [currentChosen, setCurrentChosen] = useState([]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
   function handleAdd(_, jobArray) {
     const idToAdd = jobArray[jobArray.length - 1];
     const jobToAdd = choices.find(job => job.id === idToAdd);

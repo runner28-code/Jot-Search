@@ -3,7 +3,6 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   content: [
-// Temp comment
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
@@ -178,6 +177,7 @@ module.exports = {
         '500': '125rem',
         '660': '165rem'
       },
+// Temp comment
       borderWidth: {
         '1.5': '1.5px',
         '3': '3px',

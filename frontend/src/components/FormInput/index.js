@@ -42,7 +42,6 @@ export default function FormInput(props) {
       return <FileInput
         type={type}
         name={name}
-// Temp comment
         label={label}
         placeholder={placeholder}
         value={value}
@@ -88,7 +87,6 @@ export default function FormInput(props) {
         type={type}
         name={name}
         label={label}
-        required={required}
         placeholder={placeholder}
         value={value}
         onChange={onChange}

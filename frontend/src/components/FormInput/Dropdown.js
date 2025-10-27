@@ -24,6 +24,7 @@ function renderHorizontalRule(index, arrayLength) {
       <hr className='border-royalBlue border-1.5 border-solid my-4' />
     )
   }
+// Temp comment
 }
 
 function renderChoices(choices, currentChosen, isOpen, handleClick) {
@@ -43,7 +44,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
             className='cursor-pointer flex items-center justify-between'
           >
             <span className='font-bold'>{choice}</span>
-// Temp comment
             {renderActiveIcon(choice, currentChosen)}
           </div>
           { renderHorizontalRule(index, choices.length) }

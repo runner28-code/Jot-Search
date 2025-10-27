@@ -101,4 +101,5 @@ function RenderImage({image}) {
         src={image}
         className={iconStyles}
       />
+    </div>
   )

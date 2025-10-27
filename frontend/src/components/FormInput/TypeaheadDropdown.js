@@ -118,7 +118,6 @@ function renderLabel(name, label, required) {
 function renderChosen(dropdownType, currentChosen, handleClick) {
   if ( dropdownType !== 'tags' ) { 
     return null; 
-  }
 
   return (
     <div>
@@ -126,3 +125,15 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
         const isActive = currentChosen.includes(choice);
         const handleTagClick = () => {
           handleClick(choice);
+        }
+
+        return (
+          <ChoiceTag 
+            label={choice} 
+            isActive={isActive} 
+            handleClick={handleTagClick}
+            key={choice} />
+        )
+      })}
+    </div>
+  )

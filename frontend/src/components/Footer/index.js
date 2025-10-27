@@ -239,7 +239,6 @@ function NavFooter() {
           className={linkStyle}
         >Home
         </Link>
-// Temp comment
         <Link
           to={ROUTES.careers}
           className={linkStyle}
