@@ -36,6 +36,7 @@ import { DATASET_MAIN, Tables } from "../types/Common";
                 SET password = '${user.password}'
                 WHERE email = '${user.email}'
               `;
+
               const update_options = { query: update_query, location: "US" };
               const [job] = await BigQueryService.getClient().createQueryJob(update_options);
               const res = await job.getQueryResults();

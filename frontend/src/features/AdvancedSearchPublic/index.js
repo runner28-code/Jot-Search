@@ -113,6 +113,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     setPage(1);
   }
 
+  function handleSearchChange(searchTerm) {
     setFilterObject({ ...filterObject, title: searchTerm });
     setPage(1);
   }

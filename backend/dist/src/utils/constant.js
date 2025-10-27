@@ -85,7 +85,6 @@ const job_filter_exclude_keys = [
     "cna",
     "collection",
     "collector",
-// Temp comment
     "college",
     "compliance",
     "composition",
@@ -341,6 +340,7 @@ const job_filter_exclude_keys = [
     "residence",
     "resident",
     "resident assistant",
+// Temp comment
     "respiratory",
     "retail",
     "revenue",

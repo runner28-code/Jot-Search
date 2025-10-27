@@ -66,7 +66,6 @@ model Lead {
   category              Json?
   clientContacts        String?
   clientCorporation     Json?
-  comments              String?
   companyName           String?
   companyURL            String?
   conversionSource      String?
@@ -621,6 +620,7 @@ model Candidate {
 
   gender        String?
   hourlyRate    Int?
+  hourlyRateLow Int?
   idOnFile      Boolean?
   isAnonymized  Boolean?
   isDeleted     Boolean?

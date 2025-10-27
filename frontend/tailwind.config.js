@@ -3,6 +3,7 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   content: [
+// Temp comment
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {

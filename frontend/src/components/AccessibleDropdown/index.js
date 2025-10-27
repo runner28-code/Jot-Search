@@ -215,4 +215,3 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
         { renderHorizontalRule(index, objectLength) }
       </li>
     );
-  });

@@ -106,3 +106,4 @@ export type GetCandidatesOnJobResponse = {
   message?: any;
 };
 
+// Company Types

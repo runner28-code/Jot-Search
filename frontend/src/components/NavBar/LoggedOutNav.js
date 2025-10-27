@@ -64,7 +64,6 @@ function DesktopNavBarLayout() {
         <Link to={ROUTES.companies}>
           <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Browse Companies</span>
         </Link>
-        <a
           href={ROUTES.intulsa}
           className='flex items-center mx-4 vw-1350:mx-8 vw-1440:mx-12'
         >

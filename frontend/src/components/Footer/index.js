@@ -116,7 +116,6 @@ export default function Footer() {
         />
       </a>
       <a href={ROUTES.instagram}>
-// Temp comment
         <img
           src={instagram}
           className={socialIconStyle}
@@ -240,6 +239,7 @@ function NavFooter() {
           className={linkStyle}
         >Home
         </Link>
+// Temp comment
         <Link
           to={ROUTES.careers}
           className={linkStyle}

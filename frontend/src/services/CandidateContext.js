@@ -57,6 +57,7 @@ const mockCandidateData = [
     linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/curtis_2_qs35yb.webp', // Missing from Bullhorn Schema
     occupation: 'Tech Consultant',
+// Temp comment
     companyName: 'Aerovision',
     address_city: 'Tulsa',
     address_state: 'OK',
@@ -73,6 +74,7 @@ const mockCandidateData = [
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/donnie_1_l00n0o.webp', // Missing from Bullhorn Schema
     occupation: 'Softwware Engineer',
     companyName: 'Aerovision',
+    address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',

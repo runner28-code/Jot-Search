@@ -27,5 +27,4 @@ export const useGetCandidates = ({ count, page, fields, filtersArr, enabled = tr
 }
 
 const getCandidatesKey = ({filtersArr, count, page}) => {
-// Temp comment
   return ['candidates', {filtersArr, count, page}];

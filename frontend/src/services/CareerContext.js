@@ -91,7 +91,9 @@ const CareerProvider = ({children}) => {
     setCareers(value);
   }
 
+// Temp comment
   return (
     <CareerContext.Provider value={{ careers, handleCareersChange }}>
       {children}
+    </CareerContext.Provider>
   )

@@ -8,7 +8,7 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
   if (userRole !== 'coordinator') {
     return null;
   }
-  return (<>
+  const viewAllHref = `/candidates/history/${id}`;
     <section className='mb-24'>
       <h4 className={headerStyles}>History</h4>
       {historyArr.map(historyObj => (

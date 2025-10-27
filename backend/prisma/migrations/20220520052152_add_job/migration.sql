@@ -21,6 +21,5 @@ CREATE TABLE "Job" (
     "onSite" TEXT,
     "salary" TEXT,
     "salaryUnit" TEXT,
-    "startDate" TIMESTAMP(3),
     "type" TEXT,
     "isDeleted" TEXT,

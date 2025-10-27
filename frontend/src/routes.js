@@ -22,6 +22,7 @@ export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';
 export const savedCareers = '/saved-careers';
 export const savedCompanies = '/saved-companies';
+// Company Dashboard
 export const candidates = '/candidates';
 export const savedCandidates = '/saved-candidates';
 export const activeCareers = '/active-careers';
@@ -77,9 +78,3 @@ export const APIjobBase = '/api/job';
 export const APIjobs = APIjobBase + '/search';
 export const APIjobApply = APIjobBase + '/apply';
 export const APIappliedJobs = APIjobBase + '/applied';
-export const APIInvitedJobs = APIjobBase + '/invited';
-export const APItoggleSaveJob = APIjobBase + '/save';
-export const APIsavedJobs = APIjobBase + '/savedJobs';
-// Client Contacts
-export const APIclientContacts = '/api/client-contact/search';
-// Categories

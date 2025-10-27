@@ -10,6 +10,7 @@ export default function InvitationsToApply () {
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
     filteredJobs: [],
+    loading: true
   });
 
   useEffect( async () => {
