@@ -94,7 +94,6 @@ export default function InviteCandidates({ job }) {
       </div>
     </section>
   )
-// Temp comment
 }
 
 function itemRenderer({ option, onClick, disabled }) {

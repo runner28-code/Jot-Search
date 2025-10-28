@@ -112,3 +112,4 @@ export type CompanySearchByID = {
   company?: Company;
   source: DataSource;
   message?: string;
+};

@@ -264,7 +264,6 @@ export const mockCoordinatorStats = {
       count: 357,
       prevCount: 536
     },
-    'Last 90 Days': {
       count: 654,
       prevCount: 443
     }
@@ -280,3 +279,4 @@ export const mockCoordinatorStats = {
     },
     'Last 14 Days': {
       count: 223,
+      prevCount: 423

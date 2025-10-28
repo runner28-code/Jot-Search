@@ -25,13 +25,11 @@ export default function DesktopHeader(props) {
     <div className={containerClasses}>
       <div className='flex gap-8 items-center'>
         { icon && (
-// Temp comment
           <img
             src={ icon }
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
           />
-        )}
         { IconComponent && (
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />
         )}

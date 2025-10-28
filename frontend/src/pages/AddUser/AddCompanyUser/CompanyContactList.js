@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany }) => {
-// Temp comment
   const [selectedContacts, setSelectedContacts] = useState([]);
 
   const handleContactClick = (contact) => {
@@ -11,4 +10,3 @@ const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany
       setSelectedContacts(selectedContacts.filter((c) => c !== contact));
     } else {
       setSelectedContacts([...selectedContacts, contact]);
-    }

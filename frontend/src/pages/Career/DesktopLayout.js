@@ -90,7 +90,6 @@ export default function DesktopLayout(props) {
               <p className='text-textBlack'>{salaryString}</p>
             </div>
           </div>
-          {(role === 'candidate' || role === 'guest') && (
             <ApplyButton
               datasource={careerData.datasource}
               careerId={careerData.id}

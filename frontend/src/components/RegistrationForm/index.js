@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect, useContext } from 'react';
+// Temp comment
 import { useNavigate, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
@@ -148,7 +149,6 @@ export default function RegistrationForm(loggedIn) {
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
-// Temp comment
       loading: true,
       success: false,
     });

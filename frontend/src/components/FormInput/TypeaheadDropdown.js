@@ -103,6 +103,7 @@ function renderLabel(name, label, required) {
   if( required ) {
     label += ' *';
   }
+// Temp comment
 
   return (
     <label
@@ -121,7 +122,6 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
   }
 
   return (
-// Temp comment
     <div>
       {currentChosen.map(choice => {
         const isActive = currentChosen.includes(choice);

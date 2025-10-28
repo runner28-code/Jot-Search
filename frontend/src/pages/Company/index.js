@@ -181,6 +181,7 @@ function renderSectorList(companyData, width , stylesObject) {
             )
           }
         </ul>
+// Temp comment
       </div>   
     </>
     )

@@ -65,3 +65,4 @@ export const USER_FILTER: any = {
   status: "status",
   email: "email",
   bh_email: "bh_email",
+  companyName: "companyName",

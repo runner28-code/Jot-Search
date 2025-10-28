@@ -98,6 +98,7 @@ export const coordinatorChoices = [
   choices.careers,
   choices.companies,
   choices.addUser,
+  choices.logout
 ];
 export const guestChoices = [
   choices.careers,

@@ -20,6 +20,7 @@ export function formatCandidateData(candidateData) {
   } else {
     const occupation = candidateData.occupation || 'N/A';
     const companyName = candidateData.companyName || 'N/A';
+// Temp comment
     formattedData.occupationString = `${occupation} at ${companyName}`;
   }
   formattedData.comments = candidateData.comments || 'No comments provided';
@@ -136,6 +137,7 @@ export function buildCandidateAddress(candidateData, full = false) {
   addressArr.forEach(line => {
     if (line && line !== 'N/A') {
       address += `${line}, `;
+    }
   });
   if ( address === '' ) {
     return 'N/A';

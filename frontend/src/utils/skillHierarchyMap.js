@@ -92,6 +92,7 @@ export const skills = [
   'AR/VR',
   'Art',
   'Art Direction',
+// Temp comment
   'Asset Management',
   'Associates Degree',
   'ATS',
@@ -202,6 +203,7 @@ export const skills = [
   'Financial Reporting',
   'Financial Services',
   'Financial Statements',
+  'FinTech',
   'Flask',
   'Flume',
   'Forecasts',
@@ -348,3 +350,4 @@ export const skills = [
   'Sales Training',
   'Salesforce',
   'SAP Concur',
+  'SAS',

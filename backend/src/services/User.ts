@@ -12,7 +12,6 @@ import { User as dbUser, History as dbHistory } from "prisma/prisma-client";
 import {
   encryptPassword,
   checkPassword,
-  clearPassword,
 } from "../utils/password";
 import {
   sendUpdateUserNotification,
@@ -513,3 +512,8 @@ export const getCoordinatorDashboardStats = async (days: number) => {
       result: false,
       error: error,
     };
+  }
+}
+
+export const getStats = async (userId: string) => {
+  try {

@@ -41,7 +41,6 @@ EditableSection.propTypes = {
   contentObjectProp: PropTypes.object.isRequired,
   handleContentUpdate: PropTypes.func.isRequired,
   headerStyles: PropTypes.string.isRequired,
-// Temp comment
 }
 
 /* Render functions */
@@ -77,6 +76,7 @@ function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCa
           className='w-20 h-20 cursor-pointer fill-emerald-500'
           onClick={handleSave} />
       </div>
+// Temp comment
     } else {
       return <FiEdit 
         className='absolute top-0 right-0 h-18 w-18 stroke-royalBlue cursor-pointer'

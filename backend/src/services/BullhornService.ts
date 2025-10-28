@@ -357,7 +357,6 @@ export class BullhornService {
     }
   }
 
-  async getJobs(
     testMode = false,
     count = 1000,
     sort = "-dateAdded"
@@ -867,3 +866,5 @@ export class BullhornService {
             id: `bl-${d.id}`,
             address_address1: d.address?.address1 || null,
             address_address2: d.address?.address2 || null,
+            address_city: d.address?.city || null,
+            address_state: d.address?.state || null,

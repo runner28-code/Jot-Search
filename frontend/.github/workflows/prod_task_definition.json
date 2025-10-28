@@ -17,6 +17,7 @@
             ],
             "essential": true,
             "logConfiguration": {
+                "logDriver": "awslogs",
                 "options": {
                    "awslogs-group" : "/ecs/prod-site-frontend-task",
                    "awslogs-region": "us-east-1",
@@ -25,6 +26,5 @@
             },
             "environment": [
                 {
-                    "name": "CHOKIDAR_USEPOLLING",
                     "value": "true"
                 }

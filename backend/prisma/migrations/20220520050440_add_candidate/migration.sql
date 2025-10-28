@@ -88,3 +88,4 @@ CREATE TABLE "Candidate" (
     "totalDependentClaimAmount" TEXT,
     "travelLimit" TEXT,
     "travelMethod" TEXT,
+    "twoJobs" TEXT,

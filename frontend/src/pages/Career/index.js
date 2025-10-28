@@ -116,7 +116,6 @@ function Notification({title, content, text, email, company, id, add}) {
     <div className='rounded-2xl bg-sky-100 p-8 border border-neutral-300 mb-8'>
       <div className="flex items-center">
         <img
-          src={Flag}
           className='w-12 h-12'
         />
         <h3 className='font-spaceGrotesk text-royalBlue ml-4 text-lg'>{title}</h3>

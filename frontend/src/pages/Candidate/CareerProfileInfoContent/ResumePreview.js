@@ -14,7 +14,6 @@ const ResumePreview = ({ resumeUrl }) => {
   const { pdfDocument } = usePdf({
     file: resumeUrl,
     page,
-// Temp comment
     canvasRef,
   });
 

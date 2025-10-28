@@ -430,6 +430,7 @@ model Job {
   benefits           String?
   billRateCategoryID Int?
 
+  dateAdded         DateTime?
   dateClosed        DateTime?
   dateLastModified  DateTime?
   dateLastExported  DateTime?
@@ -654,3 +655,5 @@ model Candidate {
 
   preferredContact String?
   primarySkills    String?
+  recentClientList String[]
+  referredBy       String?

@@ -280,3 +280,5 @@ export const migrateUserInTPP = async (data: Partial<DbCandidate>) => {
     const existing = await db.candidate.findFirst({
       where: {
         externalId: data.externalId,
+      },
+    });

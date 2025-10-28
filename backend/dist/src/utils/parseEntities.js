@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseGetroJobToMain = exports.parseBullhornJobToMain = exports.parseBullhornCompanyToUser = exports.parseBullhornCandidateToUser = void 0;
 const parseBullhornCandidateToUser = (data) => {
-// Temp comment
     if (!data.email)
         return null;
     const user = {
@@ -51,6 +50,7 @@ const parseBullhornCompanyToUser = (data) => {
         externalId: data.id,
         email: data.email,
         role: "candidate",
+// Temp comment
         address1: data.address_address1,
         address2: data.address_address2,
         city: data.address_city,

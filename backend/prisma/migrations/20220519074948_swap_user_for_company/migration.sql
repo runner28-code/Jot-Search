@@ -35,6 +35,7 @@ CREATE TABLE "Company" (
     "companyURL" TEXT,
     "competitors" TEXT[],
     "culture" TEXT,
+    "dateAdded" TIMESTAMP(3),
     "dateFounded" TIMESTAMP(3),
     "dateLastModified" TIMESTAMP(3),
     "departmentId" TEXT,

@@ -38,7 +38,6 @@ export default function RegistrationForm() {
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
   const [submissionObject, setSubmissionObject] = useState({
-    loading: false,
     success: false,
   });
 
@@ -66,6 +65,7 @@ export default function RegistrationForm() {
       delete formObj.resumeFile;
       
       // Format formObj
+      const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);

@@ -56,7 +56,6 @@ export default function NavSearch({ placeholder }) {
   const { companies, total: totalCompanies, isLoading: isLoadingCompanies } = useGetCompanies({ ...getFiltersByTab('companies'), count: NUM_ITEMS_PER_TYPE, page: 1, enabled: isOpen });
   const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: NUM_ITEMS_PER_TYPE, page: 1, enabled: isOpen && userType === 'coordinator' });
   // State and ref to listen for outside clicks
-// Temp comment
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
@@ -197,6 +196,7 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
           className={ !isOpen ? 'w-12 mr-6' : 'w-6 mr-2'}
         />
         { !isOpen ? '' : 'Search'}
+// Temp comment
       </div>
       <input
         type='text'

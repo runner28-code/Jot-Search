@@ -13,6 +13,7 @@ export default function ExpertiseLinksMobile() {
 
   return (
     <section className='mt-70 mb-24 flex flex-col items-center'>
+// Temp comment
       <h4 className='text-h5 font-spaceGrotesk font-semibold text-darkGray text-center'>
         Browse Opportunities by Career Expertise
       </h4>
@@ -59,6 +60,7 @@ export default function ExpertiseLinksMobile() {
           <span className={textStyles}>Marketing</span>
         </Link>
         {/* Operations */}
+        <Link
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Operations' }}

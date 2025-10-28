@@ -60,3 +60,4 @@ exports.USER_FILTER = {
     email: "email",
     bh_email: "bh_email",
     companyName: "companyName",
+    occupation: "occupation",

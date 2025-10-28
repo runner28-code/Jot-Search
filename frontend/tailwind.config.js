@@ -66,6 +66,7 @@ module.exports = {
         cyanSquare: '#1ECADB',
         pinkSquare: '#EB4A87',
         orangeSquare: '#F2871F',
+// Temp comment
         darkBlue: '#001B3C',
         yellowSquare: '#F4D12E',
         green: '#5CCC6E',
@@ -110,7 +111,6 @@ module.exports = {
         '25%': '25%',
         '30%': '30%',
         '35%': '35%',
-// Temp comment
         '40%': '40%',
         '44%': '44%',
         '46%': '46%',
@@ -231,3 +231,4 @@ module.exports = {
       '50': '12.5rem',
       '280': '70rem',
     },
+    maxheight: {

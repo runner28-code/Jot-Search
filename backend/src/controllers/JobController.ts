@@ -380,3 +380,4 @@ export class JobController {
       throw new Error("No user id provided");
     }
 
+    const user = await db.user.findFirst({

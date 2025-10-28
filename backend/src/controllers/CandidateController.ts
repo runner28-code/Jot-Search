@@ -365,3 +365,4 @@ export class CandidateController {
         result: false,
         error: "You should be a coordinator for sending jobs to candidates",
       };
+    }

@@ -1,5 +1,6 @@
 /* INTERNAL ROUTES */
 export const root = '/';
+// Temp comment
 export const landingPage = '/landing-page';
 export const blog = '/blog';
 export const about = '/about';
@@ -79,3 +80,4 @@ export const APIjobs = APIjobBase + '/search';
 export const APIjobApply = APIjobBase + '/apply';
 export const APIappliedJobs = APIjobBase + '/applied';
 export const APIInvitedJobs = APIjobBase + '/invited';
+export const APItoggleSaveJob = APIjobBase + '/save';

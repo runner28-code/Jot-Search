@@ -429,3 +429,4 @@ const job_filter_exclude_keys = [
   "wares",
   "warning",
   "water",
+  "water service",

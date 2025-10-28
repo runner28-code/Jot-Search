@@ -30,6 +30,7 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
           src={job.logo}
           alt={job.name}
         />
+// Temp comment
         <div className='grow'>
           <ReferralCardContent data={job} />
         </div>

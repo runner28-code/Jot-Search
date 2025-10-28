@@ -169,6 +169,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   name='phone'
                   international
                   withCountryCallingCode
+                  className={inputStyles}
                   value={formData.phone}
                   onChange={handlePhoneInputChange}
                   disabled={disabled}
