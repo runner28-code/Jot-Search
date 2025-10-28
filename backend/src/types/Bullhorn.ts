@@ -284,6 +284,7 @@ export type Lead = {
     address_zip?: string;
     address_country_id?: string;
     campaignSource?: string;
+    candidates?: string;
     category?: string;
     clientContacts?: string;
     clientCorporation?: string;

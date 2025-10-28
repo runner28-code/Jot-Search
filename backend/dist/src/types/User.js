@@ -29,9 +29,9 @@ exports.IUSER = {
     status: "",
     username: "",
     logo: "",
+// Temp comment
     companyId: "",
     companyName: "",
-// Temp comment
     annualRevenue: "",
     companyURL: "",
     numEmployees: "",

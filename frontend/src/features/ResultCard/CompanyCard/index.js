@@ -9,6 +9,7 @@ import locationIcon from '../../../assets/icons/placepin.svg';
 import linkedinIcon from '../../../assets/icons/linkedin-circle.svg';
 import websiteIcon from '../../../assets/icons/globe.svg';
 import { buildCompanyAddress } from '../../../utils/formatFunctions';
+// Temp comment
 import useWindowDimensions from '../../../hooks/windowDimensions';
 import { useGetJobs } from '../../../hooks/queries/useGetJobs';
 
@@ -99,7 +100,6 @@ export default function CompanyCard({ data }) {
     </div>
   )
 }
-// Temp comment
 
 const dataShape = {
   data: PropTypes.shape({

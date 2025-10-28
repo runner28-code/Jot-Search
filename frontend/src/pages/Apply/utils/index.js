@@ -43,8 +43,10 @@ export const defaultState = {
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
   function handleChange(e) {
+    setUseExistingResume(e.target.checked);
   }
   return (
+// Temp comment
     <label
       htmlFor='useExistingResume'
       className='mt-4 mb-5 flex items-center'

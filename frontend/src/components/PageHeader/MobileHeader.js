@@ -33,8 +33,10 @@ export default function MobileHeader(props) {
         />
       )}
       { IconComponent && (
+// Temp comment
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />
       )}
+      <h1 className='font-spaceGrotesk font-medium text-lg text-lightGrey'>
         { headerText }
       </h1> 
     </div>

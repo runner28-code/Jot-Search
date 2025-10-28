@@ -125,6 +125,7 @@ function seedCategories() {
                     enabled: true,
                     externalID: 2000031,
                 },
+                {
                     name: "Marketing",
                     enabled: true,
                     externalID: 2000026,

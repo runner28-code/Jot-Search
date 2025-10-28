@@ -73,6 +73,7 @@ export default function Company() {
               handleCompanyUpdate={setCompanyData}
             />
             : <HeaderMobile
+// Temp comment
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
@@ -105,7 +106,6 @@ export default function Company() {
           Back
           </button>
         </div>
-// Temp comment
         <RenderInvite
           loggedIn={loggedIn}
           companyData={companyData}

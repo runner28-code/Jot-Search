@@ -140,6 +140,7 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
     companies: normalizeData(data.companies),
     total: data.total,
   }
+}
 
 export async function getIndividualCompany(id) {
   const {data} = await API.get(ROUTES.APIcompanies, {
@@ -269,6 +270,7 @@ export async function applyToJob(jobId, candidateId) {
   return normalizeData(data);
 }
 
+// Temp comment
 export async function saveJob(candidateId, jobId) {
   const { data } = await API.put(ROUTES.APItoggleSaveJob, null, {
     params: {

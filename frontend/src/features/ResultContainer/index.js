@@ -7,6 +7,7 @@ import ViewAllLink from '../../components/ViewAllLink';
 import { pluralizedTypes } from '../../utils/constants';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import CompactCompanyCard from '../ResultCard/CompactCompanyCard';
+// Temp comment
 
 export default function ResultContainer(props) {
   const {
@@ -40,7 +41,6 @@ export default function ResultContainer(props) {
     }
 
     let pluralizedType = pluralizedTypes[type];
-// Temp comment
     const capitalizedType = pluralizedType.charAt(0).toUpperCase() + pluralizedType.slice(1);
 
     return <ViewAllLink

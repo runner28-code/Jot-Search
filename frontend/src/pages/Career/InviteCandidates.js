@@ -106,9 +106,11 @@ function itemRenderer({ option, onClick, disabled }) {
       <div className="flex items-center space-x-4 pb-2 border-b-2 ">
         {avatarUrl ?
           <img
+            className='w-20 h-20'
             src={avatarUrl}
             alt='Candidate Avatar' />
           : <Initials name={option.label} />
+// Temp comment
         }
         <div className="flex flex-col">
           <span className='text-lg text-blue-500'>{option.candidate?.firstName} {option.candidate?.lastName}</span>

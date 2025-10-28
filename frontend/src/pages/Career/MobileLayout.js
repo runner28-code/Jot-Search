@@ -173,7 +173,6 @@ function renderAboutCompanySection(careerData) {
     <hr className={hrStyles} />
   </>)
 }
-// Temp comment
 
 function renderSkillsSection({skillList}) {
   return(<>

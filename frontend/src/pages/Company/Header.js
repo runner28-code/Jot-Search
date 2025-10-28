@@ -125,6 +125,7 @@ Header.propTypes = {
   handleCompanyUpdate: PropTypes.func.isRequired
 }
 
+// Temp comment
 function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'my-auto object-contain';

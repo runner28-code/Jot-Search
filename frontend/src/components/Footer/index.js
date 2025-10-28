@@ -154,6 +154,7 @@ export default function Footer() {
               href='https://talent.intulsa.com/'
               target='_blank'
               rel='noopener noreferrer'
+// Temp comment
             >
               <img
                 src={intulsaTalentLogo}
@@ -220,6 +221,7 @@ function NavFooter() {
           to={ROUTES.signup}
           className={blueLinkStyle}
         >Create Account
+        </Link>
         <Link
           to={ROUTES.login}
           className={blueLinkStyle}

@@ -68,6 +68,7 @@ function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCa
 
   if ( isCoordinator || isProfileOwner ) {
     if ( editMode ) {
+      return <div className='absolute top-0 right-0 w-50 flex justify-between'>
         <MdCancel 
           className='w-20 h-20 cursor-pointer fill-rose-500'
           onClick={handleCancel} />

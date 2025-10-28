@@ -72,7 +72,6 @@ const DesktopNavBarLayout = () => {
       </div>
     </nav>
   )
-}
 
 const DropdownMenu = () => {
   const [ isOpen, setIsOpen ] = useState(false);
@@ -124,6 +123,7 @@ const DropdownMenu = () => {
           alt='chevron'
           className={chevronStyles}
         />
+      </div>
       <DropdownContent
         isOpen={isOpen}
         handleClick={closeDropdown}

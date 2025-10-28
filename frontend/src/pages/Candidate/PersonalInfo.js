@@ -318,7 +318,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
           <button 
             className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
             onClick={submitData}
-          >
             <span>Save</span>
           </button>
         </div>}

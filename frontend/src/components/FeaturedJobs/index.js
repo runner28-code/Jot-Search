@@ -36,6 +36,7 @@ export default function FeaturedJobs() {
   const { jobs, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(
+    <section className='py-48 bg-neutral-100 flex flex-col flex-wrap items-center'>
       { renderColorShapes() }
       <h2 className={ width >= 990 ? titleStyles : titleStylesMoible }>Featured Opportunities</h2>
       <div className='flex mt-12 flex-wrap'>
@@ -57,6 +58,7 @@ export default function FeaturedJobs() {
                       <h5 className={ width >= 990 ? cardContentTitle : cardContentTitleMobile }>{career.title}</h5>
                       <p className={ width >= 990 ? cardContentSubtitle : cardContentSubtitleMobile }>{categoryString}</p>
                     </div>
+// Temp comment
                   </div>
                 </Link>
               )

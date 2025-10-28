@@ -66,6 +66,7 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
 exports.isExistByCondition = isExistByCondition;
 const consoleLog = (message, newLine = true) => {
     console.log(`${newLine ? '\n' : ''}${message}`);
+};
 exports.consoleLog = consoleLog;
 const sleep = (ms) => __awaiter(void 0, void 0, void 0, function* () {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -77,4 +78,5 @@ const getDataSource = (id) => {
         return Common_1.DataSource.BULLHORN;
     if (prefix === 'gt')
         return Common_1.DataSource.GETRO;
+// Temp comment
     return Common_1.DataSource.UNKNOWN;

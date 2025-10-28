@@ -212,7 +212,6 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
           <span>{value}</span>
           {renderActiveIcon(key, currentChosen)}
         </MenuItem>
-        { renderHorizontalRule(index, objectLength) }
       </li>
     );
   });

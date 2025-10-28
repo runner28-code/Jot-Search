@@ -12,7 +12,6 @@ CREATE TABLE "Candidate" (
     "dateAvailableEnd" TIMESTAMP(3),
     "dateI9Expiration" TIMESTAMP(3),
     "dateLastComment" TIMESTAMP(3),
-    "dateLastModified" TIMESTAMP(3),
     "dateNextCall" TIMESTAMP(3),
     "dateOfBirth" TEXT,
     "dayRate" TEXT,

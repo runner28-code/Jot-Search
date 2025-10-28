@@ -52,7 +52,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             }
           </div>
         </div>
-// Temp comment
       </Link>
       {
         selectableProps && selectableProps.selectable ?

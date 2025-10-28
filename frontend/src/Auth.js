@@ -7,7 +7,6 @@ import {
   Candidates,
   Dashboard,
   Favorites,
-  Logout,
   Profile,
 } from './pages';
 import AuthService from './services/auth';
@@ -50,5 +49,6 @@ export default function Auth() {
         <Route
           path={ROUTES.addUser}
           element={<AddUser />} />
+      </Routes>
     </div>
   )

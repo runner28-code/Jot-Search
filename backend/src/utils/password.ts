@@ -19,4 +19,3 @@ export const checkPassword = (encryptedPassword:string, password: string) => {
     const hash_in_db = encryptedPassword.substring(24);
 
     const hash = crypto.createHash('sha512');
-    hash.update(sr + password);

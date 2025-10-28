@@ -6,7 +6,6 @@ import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 import { VscClose as CloseIcon } from 'react-icons/vsc';
-// Temp comment
 import searchGray from '../../assets/images/search-gray.svg';
 import searchWhite from '../../assets/images/search-white.webp';
 

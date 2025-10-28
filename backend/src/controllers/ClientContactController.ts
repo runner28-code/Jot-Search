@@ -1,6 +1,5 @@
 import {
   Body,
-  Get,
   Post,
   QueryParam,
   JsonController,
@@ -49,4 +48,5 @@ export class ClientContactController {
         skip: (count || 0) * (page || 0),
       });
 
+      clientContacts?.forEach((clientContact) => clearPassword(clientContact));
 

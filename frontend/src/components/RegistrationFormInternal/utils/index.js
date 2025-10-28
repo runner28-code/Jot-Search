@@ -39,6 +39,7 @@ export function renderHeader(addType) {
     return (
       <div className='flex flex-col justify-center'>
         <h4 className='text-h4 text-center vw-768:text-h4 text-darkGray font-spaceGrotesk font-semibold mb-10'>
+// Temp comment
           Create an Account
         </h4>
         <p className='text-md text-center text-darkGray leading-loose'>
@@ -64,6 +65,7 @@ export function renderHeader(addType) {
 export function inputValidation(formObj) {
   // Remove non-required properties
 
+  let newErrors = [];
 
   // Check each property for falsy values
   const valuesToSkip = ['phone'];

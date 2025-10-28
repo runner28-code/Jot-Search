@@ -31,6 +31,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const handleFavoriteClick = async () => {
     setIsFavorite(isFavorite => !isFavorite);
     try {
+// Temp comment
       await saveItemByType(type, user_id, item_id);
     } catch (error) {
       console.log(error);

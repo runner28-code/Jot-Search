@@ -46,6 +46,7 @@ const mockCandidateData = [
     address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
+// Temp comment
     school: 'Oklahoma',
     isLooking: false,
     isWarm: false,
@@ -105,7 +106,6 @@ const CandidateProvider = ({children}) => {
   const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
 
   useEffect(() => {
-// Temp comment
     if (currentUser?.user_id) {
       getCandidateById(currentUser.user_id).then(user => {
         setCurrentUser(user);

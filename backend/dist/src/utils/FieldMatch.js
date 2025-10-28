@@ -52,5 +52,3 @@ exports.USER_FILTER = {
     role: "role",
     roles: "roles",
     city: "city",
-    state: "state",
-    skills: "skills",
