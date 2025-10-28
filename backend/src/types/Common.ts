@@ -111,3 +111,4 @@ export type Company = BullhornCompany | GetroCompany;
 export type CompanySearchByID = {
   company?: Company;
   source: DataSource;
+  message?: string;

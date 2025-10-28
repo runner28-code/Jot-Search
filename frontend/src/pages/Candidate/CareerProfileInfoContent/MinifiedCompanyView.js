@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import { appendPathToBaseUrl } from '../../../services/API';
 import ResumePreview from './ResumePreview';
@@ -15,7 +14,6 @@ export default function MinifiedCompanyView({ candidateData }) {
       <p className='text-lg text-black70% font-spaceGrotesk mt-6 mb-2'>Resume</p>
       {candidateData.resume ? <div className='border-dashed border-grey300 border-1.5 rounded-lg'>
         <ResumePreview resumeUrl={resumeUrl} /> 
-      </div>
         : <p>None provided</p>}
     </div>
   )

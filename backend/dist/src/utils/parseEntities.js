@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseGetroJobToMain = exports.parseBullhornJobToMain = exports.parseBullhornCompanyToUser = exports.parseBullhornCandidateToUser = void 0;
 const parseBullhornCandidateToUser = (data) => {
+// Temp comment
     if (!data.email)
         return null;
     const user = {

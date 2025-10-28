@@ -161,7 +161,6 @@ DesktopCard.propTypes = {
       salaryUnit: PropTypes.string,
       createdAt: PropTypes.string,
       featured: PropTypes.bool,
-      category: PropTypes.shape({
         id: PropTypes.number,
         name: PropTypes.string
       })
@@ -208,7 +207,6 @@ MobileCard.propTypes = {
   dataObj: PropTypes.shape({
     data: PropTypes.shape({
       id: PropTypes.string,
-// Temp comment
       clientCorporation: PropTypes.string,
       city: PropTypes.string,
       state: PropTypes.string,

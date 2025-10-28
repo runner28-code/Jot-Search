@@ -14,6 +14,7 @@ const ResumePreview = ({ resumeUrl }) => {
   const { pdfDocument } = usePdf({
     file: resumeUrl,
     page,
+// Temp comment
     canvasRef,
   });
 
@@ -28,7 +29,6 @@ const ResumePreview = ({ resumeUrl }) => {
       <canvas
         ref={canvasRef}
         className='rounded-lg'
-// Temp comment
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>

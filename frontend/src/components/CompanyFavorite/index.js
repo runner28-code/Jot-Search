@@ -1,3 +1,4 @@
+// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import { useGetSavedCompanies } from '../../hooks/queries/useGetSavedCompanies';
@@ -30,7 +31,6 @@ export default function CareerFavorite () {
                 <CompanyCard
                   key={company.id}
                   index={index}
-// Temp comment
                   data={company}
                   agoDate={company.agoDate}
                 />

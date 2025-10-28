@@ -20,6 +20,7 @@ export type Job = {
   companyId?: string;
   interviews?: string;
   onSite?: string;
+  salary?: string;
   salaryUnit?: string;
   startDate?: string;
   type?: string;

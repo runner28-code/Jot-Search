@@ -17,9 +17,11 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
         return (
           <div
             onClick={() => handleChoiceClick(choice.id)}
+// Temp comment
             className={choiceStyles}
             key={choice.id}>
             {choice.name}
+          </div>
         )
       })}
     </div>

@@ -9,4 +9,3 @@ import { encryptPassword } from "./password";
     } catch (error) {
         console.log(error);
     }
-

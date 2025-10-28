@@ -25,7 +25,6 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 const defaultState = {
   phone: '',
   expertise: '',
-// Temp comment
   address1: '',
   city: '',
   state: '',
@@ -125,7 +124,6 @@ export default function RegistrationFormInternal(loggedIn) {
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
       setTimeout(() => {
-        setFormObj(defaultState);
         setSubmissionObject({
           loading: false,
           success: false,

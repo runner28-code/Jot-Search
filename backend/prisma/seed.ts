@@ -134,7 +134,6 @@ async function seedCategories() {
         externalID: 2000101,
       },
     ],
-  });
 }
 
 async function seedCompanies() {

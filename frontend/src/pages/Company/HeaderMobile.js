@@ -150,5 +150,4 @@ function FillerIcon () {
       </div>
     )
   } else {
-    return null;
   }

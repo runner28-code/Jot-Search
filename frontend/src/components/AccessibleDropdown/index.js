@@ -151,7 +151,6 @@ function renderLabel(name, label, required) {
 
 function renderDropdownArrow(dropdownArrow) {
   if ( !dropdownArrow ) {
-// Temp comment
     return null;
   }
 

@@ -30,7 +30,6 @@ const job_filter_exclude_keys = [
     "athletics",
     "attorney",
     "auto",
-    "automation technician",
     "automotive",
     "bailiff",
     "barback",
@@ -154,7 +153,6 @@ const job_filter_exclude_keys = [
     "financial aid",
     "financial counselor",
     "fire",
-// Temp comment
     "fleet",
     "food",
     "forensic",

@@ -69,6 +69,7 @@ let JobController = class JobController {
     }
     runJob(body) {
         return __awaiter(this, void 0, void 0, function* () {
+            try {
                 (0, utils_1.consoleLog)("/// BULLHORN_GET_JOBS");
                 yield (yield BullhornService_1.BullhornService.getClient()).getJobs(false, 50);
                 return { success: true };
@@ -185,7 +186,6 @@ let JobController = class JobController {
                 const _dataset = Common_1.DATASET_BULLHORN;
                 const _table = Common_1.Tables.JOBS;
                 const _specialHandlers = {
-                    clientCorporationID: (key, value) => `${key} = REPLACE("${value}", "bl-", "")`,
                 };
                 const _filters = filters.map((filter) => ({
                     key: FieldMatch_1.JobFilter.bullhorn[filter.key],

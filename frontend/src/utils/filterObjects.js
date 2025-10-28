@@ -91,6 +91,7 @@ export const candidateFilterObject = {
   'Actively Looking': [
     'Any',
     'Yes',
+// Temp comment
     'No'
   ],
   'Degree': [
@@ -136,6 +137,7 @@ export function buildSearchFilters(filterObject) {
       searchFilters.push({
         key: filterKey,
         value: filterObject[key],
+      });
     }
   });
   return searchFilters

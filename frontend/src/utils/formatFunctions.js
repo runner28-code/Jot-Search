@@ -76,7 +76,6 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
     return avatarUrl;
   }
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;
-// Temp comment
 }
 
 export function formatPhoneNumber(phoneNumberString) {
@@ -137,7 +136,6 @@ export function buildCandidateAddress(candidateData, full = false) {
   addressArr.forEach(line => {
     if (line && line !== 'N/A') {
       address += `${line}, `;
-    }
   });
   if ( address === '' ) {
     return 'N/A';

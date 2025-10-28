@@ -7,6 +7,7 @@ import BackButton from '../BackButton';
 
 export default function DetailsHeader({ type, source }) {
   let Icon = undefined;
+// Temp comment
   switch(type) {
     case 'candidate':
       Icon = CandidatesIcon;

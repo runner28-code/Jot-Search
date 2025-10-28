@@ -126,6 +126,7 @@ model Lead {
 model ClientContact {
   id                 String    @id @default(uuid())
   address_address1   String?
+  address_address2   String?
   address_city       String?
   address_state      String?
   address_zip        String?
@@ -429,7 +430,6 @@ model Job {
   benefits           String?
   billRateCategoryID Int?
 
-  dateAdded         DateTime?
   dateClosed        DateTime?
   dateLastModified  DateTime?
   dateLastExported  DateTime?
