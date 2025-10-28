@@ -155,6 +155,7 @@ export const saveClientContacts = async (contacts: any[]) => {
     for (const contact of contacts) {
       try {
         console.log(`\nSavng ClientContact with ID = ${contact.id}`);
+        const existing = await db.clientContact.findFirst({
           where: {
             externalID: contact.id,
           },
@@ -195,7 +196,6 @@ export const saveCandidates = async (candidates: any[]) => {
   try {
     for (const candidate of candidates) {
       try {
-        console.log(`\n\nSavng Candidate with ID = ${candidate.id}`);
         const parsedUser = parseBullhornCandidateToUser(candidate) as any;
         if (parsedUser) {
           // await migrateUserInTPP(parsedUser);

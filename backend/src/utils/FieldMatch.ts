@@ -22,7 +22,6 @@ export const JobFilter: any = {
     employmentType: "employmentType",
     onSite: "onSite",
     yearsRequired: "yearsRequired",
-    willRelocate: "willRelocate",
     city: "city",
     state: "state",
     isDeleted: "isDeleted",

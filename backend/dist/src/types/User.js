@@ -37,7 +37,7 @@ exports.IUSER = {
     revenue: "",
     dateFounded: "",
     employeeType: "",
-    experience: "",
     hourlyRate: "",
     willRelocate: "",
     willReceiveNotification: false,
+    ethnicity: "",

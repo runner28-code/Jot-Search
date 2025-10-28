@@ -403,6 +403,7 @@ export class BullhornService {
       } catch (error: any) {
         console.log(error.message, "\nrepeatNumber =", repeatErr);
         await this.getNewAccessToken();
+        repeatErr++;
       }
     }
   }

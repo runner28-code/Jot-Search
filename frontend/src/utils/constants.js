@@ -43,7 +43,6 @@ export const stateCodeMap = {
   Missouri: 'MO',
   Montana: 'MT',
   Nebraska: 'NE',
-  Nevada: 'NV',
   'New Hampshire': 'NH',
   'New Jersey': 'NJ',
   'New Mexico': 'NM',

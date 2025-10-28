@@ -64,7 +64,6 @@ class AuthService {
     localStorage.removeItem('id_token');
     localStorage.removeItem('savedJobs');
     localStorage.removeItem('savedCompanies');
-    localStorage.removeItem('savedCandidates');
   }
 
   async refreshSavedJobAndCompanies() {

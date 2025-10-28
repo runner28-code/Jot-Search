@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+// Temp comment
 import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearch';
 import AccessibleDropdown from '../AccessibleDropdown';
@@ -33,7 +34,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     navigate(ROUTES.careers, { state: { ...params } });
   }
 
-// Temp comment
   function handleFilterChange(name, value) {
     setFilterState({
       ...filterState,

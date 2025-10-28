@@ -120,7 +120,6 @@ function renderResultsContainer( results, searchTerm ) {
   if ( !searchTerm || results.forceHidden ) { // if no searchTerm, no results to display
     return null;
   }
-// Temp comment
 
   return (
     <div className='absolute z-20 top-full w-full flex flex-col justify-center items-center min-h-50 px-6 py-4 rounded-2xl rounded shadow-resultCardShadow bg-white '>

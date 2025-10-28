@@ -18,6 +18,7 @@ export default function Filters(props) {
   if (marginBottom) {
     filterContainerStyles += `mb-${marginBottom} `;
   }
+  return (
     <div className={filterContainerStyles}>
       <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}

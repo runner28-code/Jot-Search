@@ -9,7 +9,6 @@ import { getAppliedJobs } from '../../services/API';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function PendingApplications () {
-  const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
@@ -72,7 +71,6 @@ export default function PendingApplications () {
         </div>
       </div>
       <div className='pt-24'>
-// Temp comment
         <Link
           to={ROUTES.applications}
           class='outline outline-2 outline-white text-white font-roboto py-8 px-14 rounded-lg text-md'>

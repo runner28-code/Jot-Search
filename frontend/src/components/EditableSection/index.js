@@ -47,7 +47,6 @@ EditableSection.propTypes = {
 
 function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
   if (editMode) {
-// Temp comment
     return <EditSectionForm 
       contentObject={contentObject} 
       handlePropertyChange={handlePropertyChange} />

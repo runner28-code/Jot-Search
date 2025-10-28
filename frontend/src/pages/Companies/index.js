@@ -42,6 +42,7 @@ export default function Companies() {
         <RenderAdvancedSearch
           loggedIn={loggedIn}
           toggle={toggle}
+// Temp comment
           userType={userType}
         />
       </div>
@@ -53,7 +54,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   const { width } = useWindowDimensions();
   if( width <= 990 && userType === 'candidate' ) {
     return (<>
-// Temp comment
       <PageHeaderCandidate
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : CompanyIcon}

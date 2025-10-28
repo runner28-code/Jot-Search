@@ -160,7 +160,6 @@ export default function Apply() {
   }
 
   function handleFileInputChange(e) {
-    const { name, files } = e.target;
     setApplicationObject({ ...applicationObject, [name]: files[0] });
     setUseExistingResume(false)
   }

@@ -69,7 +69,6 @@ let JobController = class JobController {
     }
     runJob(body) {
         return __awaiter(this, void 0, void 0, function* () {
-            try {
                 (0, utils_1.consoleLog)("/// BULLHORN_GET_JOBS");
                 yield (yield BullhornService_1.BullhornService.getClient()).getJobs(false, 50);
                 return { success: true };

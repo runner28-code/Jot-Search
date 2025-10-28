@@ -38,10 +38,10 @@ const multerStorage = multer_1.default.diskStorage({
         console.log(file);
         const fileName = (0, utils_1.genUUID)() + path_1.default.extname(file.originalname);
         cb(null, fileName);
+// Temp comment
     },
 });
 const upload = (0, multer_1.default)({ storage: multerStorage });
-// Temp comment
 const getActualRequestDurationInMs = (start) => {
     const NS_PER_SEC = 1e9;
     const NS_TO_MS = 1e6;

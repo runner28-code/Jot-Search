@@ -151,6 +151,7 @@ function renderLabel(name, label, required) {
 
 function renderDropdownArrow(dropdownArrow) {
   if ( !dropdownArrow ) {
+// Temp comment
     return null;
   }
 
@@ -195,6 +196,7 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
   }
 
   return Object.entries(choiceObject).map( ([key, value], index) => {
+    if ( !value ) {
       return null;
     }
 

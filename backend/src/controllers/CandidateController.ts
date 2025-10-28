@@ -239,6 +239,7 @@ export class CandidateController {
           }))
 
           console.log({ typedUsers, typedCandidates })
+          return [...typedUsers, ...typedCandidates];
         })
 
         totalPromise = Promise.all([db.user.count({ where: whereWithoutStatus }), db.candidate.count({ where })]).then(([tppUsers, candidates]) => tppUsers + candidates)
@@ -362,5 +363,4 @@ export class CandidateController {
     if (authUser.role !== COORDINATOR) {
       return {
         result: false,
-        error: "You should be a coordinator for sending jobs to candidates",
       };

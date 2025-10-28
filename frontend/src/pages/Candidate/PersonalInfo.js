@@ -231,6 +231,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 />
               </label>
             </div>
+// Temp comment
           </div>
           <div className="flex flex-col gap-xxs py-10">
             <span>Are you legally authorized to work in the US on a fulltime basis for any employer?</span>

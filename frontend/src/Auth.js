@@ -29,10 +29,10 @@ export default function Auth() {
         <Route
           path={ROUTES.profile}
           element={<Profile />} />
+        <Route
           path={ROUTES.logout}
           element={<Logout />} />
         <Route
-          path={`${ROUTES.candidates}/:id`}
           element={<Candidate />} />
         <Route
           path={ROUTES.applications}

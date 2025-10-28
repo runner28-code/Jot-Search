@@ -324,7 +324,6 @@ export const skills = [
   'R',
   'R Programming Language',
   'Rails',
-  'React',
   'React Native',
   'Real Estate',
   'Recruiting',

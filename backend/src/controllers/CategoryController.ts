@@ -32,7 +32,6 @@ export class CategoryController {
         category: category?.[0],
         message: null,
       };
-    } catch (error) {
       console.log(error);
       return {
         category: undefined,

@@ -40,7 +40,6 @@ export const sendResetPassword = async (to: string, name: string, token: string)
     await sendEmail(to, 'Reset your password!', 'reset-password', {
       url: `${base_url}/reset-password?token=${token}`,
       name: name,
-    });
     return true;
   } catch (error: any) {
     console.log('Error during sending invitation');

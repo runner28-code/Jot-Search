@@ -78,3 +78,4 @@ export const APIjobBase = '/api/job';
 export const APIjobs = APIjobBase + '/search';
 export const APIjobApply = APIjobBase + '/apply';
 export const APIappliedJobs = APIjobBase + '/applied';
+export const APIInvitedJobs = APIjobBase + '/invited';

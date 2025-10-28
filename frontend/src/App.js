@@ -8,7 +8,6 @@ import {
   Career,
   Careers,
   Company,
-// Temp comment
   Companies,
   AccountRecovery,
   ResetPassword,
