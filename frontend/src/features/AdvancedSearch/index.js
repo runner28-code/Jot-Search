@@ -12,6 +12,7 @@ import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGet
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import {
+  candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,

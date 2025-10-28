@@ -17,6 +17,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - No multi-line ternary operators
 - An `if` statement followed only by an `else` should be refactored to be just an `if` followed by a return statement of the other condition's logic without being in an `else`.
 
+## Available Scripts
 
 In the project directory, you can run:
 
@@ -43,7 +44,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run lint`
 
 Runs ESLint in the `src` directory. Configuration for ESLint is contained in `.eslintrc.json`
 

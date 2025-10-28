@@ -12,6 +12,7 @@ import { User as dbUser, History as dbHistory } from "prisma/prisma-client";
 import {
   encryptPassword,
   checkPassword,
+  clearPassword,
 } from "../utils/password";
 import {
   sendUpdateUserNotification,
@@ -47,7 +48,6 @@ const validateUser = ({
     // if (isNullOrEmpty(resume))
     //     return 'resume is required';
     // if (isNullOrEmpty(linkedin))
-    //     return 'linkedin is required';
     // if (isNullOrEmpty(skills))
     //     return 'skill is required';
     // if (isNullOrEmpty(category))

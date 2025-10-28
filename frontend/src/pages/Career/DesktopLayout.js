@@ -11,6 +11,7 @@ import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { apply as applyRoute } from '../../routes';
 import { UpdateJobStatus } from './UpdateJobStatus';
+// Temp comment
 import { UpdateJobFeatured } from './UpdateJobFeatured';
 
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charcoal mb-m ';
@@ -90,6 +91,7 @@ export default function DesktopLayout(props) {
               <p className='text-textBlack'>{salaryString}</p>
             </div>
           </div>
+          {(role === 'candidate' || role === 'guest') && (
             <ApplyButton
               datasource={careerData.datasource}
               careerId={careerData.id}

@@ -84,6 +84,7 @@ export default function CandidateFilterLayout(props) {
           required={true}
           value={filterObject.skills}
           onChange={toggleSkills}
+// Temp comment
           choices={skills}
         />
       </div>

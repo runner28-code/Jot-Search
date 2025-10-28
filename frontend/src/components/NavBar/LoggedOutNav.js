@@ -58,7 +58,6 @@ function DesktopNavBarLayout() {
       </Link>
       {/* Nav Menu */}
       <div className='flex items-center font-spaceGrotesk'>
-// Temp comment
         <Link to={ROUTES.careers}>
           <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Find Careers</span>
         </Link>

@@ -92,7 +92,6 @@ export const skills = [
   'AR/VR',
   'Art',
   'Art Direction',
-// Temp comment
   'Asset Management',
   'Associates Degree',
   'ATS',
@@ -114,7 +113,6 @@ export const skills = [
   'Brand Marketing',
   'Branding',
   'Budget Management',
-  'Budgeting',
   'Business Development',
   'Business Intelligence',
   'C#',

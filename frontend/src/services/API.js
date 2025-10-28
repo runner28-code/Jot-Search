@@ -140,7 +140,6 @@ export async function getCompaniesFull(filterValue, filterKey, count, page) {
     companies: normalizeData(data.companies),
     total: data.total,
   }
-}
 
 export async function getIndividualCompany(id) {
   const {data} = await API.get(ROUTES.APIcompanies, {

@@ -16,4 +16,3 @@ export default function AddUser() {
 
   const [formType, setFormType] = useState('Candidate');
   function handleDropdownChange(e) {
-    setFormType(e.target.value);

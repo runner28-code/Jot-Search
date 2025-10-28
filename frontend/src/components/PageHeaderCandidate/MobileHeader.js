@@ -5,7 +5,6 @@ export default function MobileHeader(props) {
     headerText,
     icon,
     IconComponent,
-    classOverride,
     colorizeStroke,
   } = props;
   
@@ -17,6 +16,7 @@ export default function MobileHeader(props) {
       { icon && (
         <img
           src={ icon }
+          alt='header icon'
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
       )}

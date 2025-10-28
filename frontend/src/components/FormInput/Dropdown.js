@@ -53,7 +53,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
 }
 
 export default function Dropdown(props) {
-// Temp comment
   const { 
     baseStyles, 
     marginBottom,

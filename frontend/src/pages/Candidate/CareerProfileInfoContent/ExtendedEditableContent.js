@@ -27,6 +27,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     city: candidateData.city || '',
     state: candidateData.state || '',
     zip: candidateData.zip || '',
+    phone: candidateData.phone || '',
     categoryId: candidateData.categoryId || null,
     expertise: categories.find(category => category.id === candidateData.categoryId)?.name || '',
     roles: Array.isArray(candidateData.roles) ? candidateData.roles : (candidateData?.roles?.split(', ') || []),

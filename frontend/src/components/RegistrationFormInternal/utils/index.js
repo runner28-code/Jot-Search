@@ -21,6 +21,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       {buttonString}
     </button>
   )
+}
 
 export function renderErrorBlock(errorBlock) {
 
@@ -63,7 +64,6 @@ export function renderHeader(addType) {
 export function inputValidation(formObj) {
   // Remove non-required properties
 
-  let newErrors = [];
 
   // Check each property for falsy values
   const valuesToSkip = ['phone'];

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
+// Temp comment
 
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
@@ -82,7 +83,6 @@ function CareerHeader ({ location }) {
       </div>
     </>)
   }
-// Temp comment
   return (<>
     <div className='mt-8'></div>
   </>)

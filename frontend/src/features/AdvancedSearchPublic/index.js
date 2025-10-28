@@ -94,6 +94,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     setFilterObject({ ...filterObject, title: '' });
     setPage(1);
   }, [activeTab]);
+
   useEffect(() => {
     const newState = { ...initialFilterState, ...state };
     if (state) {

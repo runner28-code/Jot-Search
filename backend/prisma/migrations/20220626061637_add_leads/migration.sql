@@ -40,6 +40,7 @@ CREATE TABLE "Lead" (
     "name" TEXT,
     "namePrefix" TEXT,
     "nameSuffix" TEXT,
+    "nickName" TEXT,
     "notes" TEXT,
     "numEmployees" TEXT,
     "occupation" TEXT,

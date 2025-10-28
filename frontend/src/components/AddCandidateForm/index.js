@@ -10,7 +10,6 @@ import {
 import {
   inputValidation,
   formatFormObj,
-  renderButtonOrLoading,
   renderErrorBlock,
   renderHeader
 } from './utils';
@@ -38,6 +37,7 @@ export default function RegistrationForm() {
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
   const [submissionObject, setSubmissionObject] = useState({
+    loading: false,
     success: false,
   });
 

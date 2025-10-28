@@ -196,7 +196,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
           className={ !isOpen ? 'w-12 mr-6' : 'w-6 mr-2'}
         />
         { !isOpen ? '' : 'Search'}
-// Temp comment
       </div>
       <input
         type='text'

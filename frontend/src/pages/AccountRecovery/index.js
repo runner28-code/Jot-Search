@@ -21,6 +21,7 @@ export default function AccountRecovery() {
     } else {
       setType(res.data.error, false);
     }
+// Temp comment
   };
   function setType(response, condition) {
     setCondition(condition);

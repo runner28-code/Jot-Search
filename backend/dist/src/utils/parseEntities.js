@@ -50,7 +50,6 @@ const parseBullhornCompanyToUser = (data) => {
         externalId: data.id,
         email: data.email,
         role: "candidate",
-// Temp comment
         address1: data.address_address1,
         address2: data.address_address2,
         city: data.address_city,
@@ -109,4 +108,3 @@ const parseBullhornJobToMain = (data) => {
         isDeleted: data.isDeleted,
         postedAt: data.date_added,
     };
-    return job;

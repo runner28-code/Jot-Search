@@ -151,7 +151,6 @@ LinkWrapper.propTypes = {
 function renderActiveStatus(candidate) {
   if (candidate.activelyLooking || candidate.user?.activelyLooking) {
     return (
-      <div className='flex items-center gap-[10px] px-s py-xxs bg-success rounded-full'>
         <img
           src={eyeCon}
           className='w-[15px] h-[11px]'

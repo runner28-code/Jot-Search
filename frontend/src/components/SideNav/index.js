@@ -1,7 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
-// Temp comment
   candidateChoices,
   companyChoices,
   coordinatorChoices,
@@ -33,6 +32,7 @@ export default function SideNav({ userType }) {
 }
 
 SideNav.propTypes = {
+// Temp comment
   userType: PropTypes.string.isRequired
 }
 

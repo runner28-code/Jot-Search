@@ -51,7 +51,6 @@ export default function Apply() {
     errorMessage: ''
   });
 
-  useEffect(async () => {
     if ( !isLoggedIn ) {
       const careerData = await getJobById(jobId);
       setCareer(careerData);
@@ -93,6 +92,7 @@ export default function Apply() {
       setApplicationObject({ ...stateObject, loading: false });
     } catch(e) {
       console.log('error', e);
+    }
   }, []);
   useEffect(async () => {
     if ( submissionObject.loading ) {

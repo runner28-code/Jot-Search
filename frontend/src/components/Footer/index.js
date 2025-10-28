@@ -220,7 +220,6 @@ function NavFooter() {
           to={ROUTES.signup}
           className={blueLinkStyle}
         >Create Account
-        </Link>
         <Link
           to={ROUTES.login}
           className={blueLinkStyle}

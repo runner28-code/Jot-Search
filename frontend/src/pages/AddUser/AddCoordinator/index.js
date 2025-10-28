@@ -46,7 +46,6 @@ export default function AddCoordinator() {
         });
       }, 2000);
     }
-// Temp comment
   }, [submissionObject.success]);
 
   function handleInputChange(e) {
@@ -68,6 +67,7 @@ export default function AddCoordinator() {
       });
     }
     // Update form object with new value
+// Temp comment
     setFormObject({ ...formObject, [name]: value });
   }
 

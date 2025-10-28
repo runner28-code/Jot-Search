@@ -48,7 +48,6 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
             WHERE ${condition}
         `;
         const options = {
-// Temp comment
             query: query,
             location: 'US',
         };
@@ -67,7 +66,6 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
 exports.isExistByCondition = isExistByCondition;
 const consoleLog = (message, newLine = true) => {
     console.log(`${newLine ? '\n' : ''}${message}`);
-};
 exports.consoleLog = consoleLog;
 const sleep = (ms) => __awaiter(void 0, void 0, void 0, function* () {
     return new Promise(resolve => setTimeout(resolve, ms));

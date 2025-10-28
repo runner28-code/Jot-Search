@@ -41,7 +41,6 @@ function App() {
               element={<Careers />} />
             <Route
               path={ROUTES.companies}
-              element={<Companies />} />
             <Route
               path={`${ROUTES.careers}/:id`}
               element={<Career />} />
@@ -53,6 +52,7 @@ function App() {
               element={<Company />} />
             <Route
               path={ROUTES.accountRecovery}
+              element={<AccountRecovery />} />
             <Route
               path={ROUTES.resetPassword}
               element={<ResetPassword />} />

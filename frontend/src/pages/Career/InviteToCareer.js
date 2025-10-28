@@ -62,12 +62,14 @@ export default function InviteToCareer({ candidate }) {
       <SelectedValues />
 
       <MultiSelect
+// Temp comment
         isLoading={isLoading}
         options={jobOptions}
         value={selected}
         onChange={setSelected}
         labelledBy="Select"
         ItemRenderer={itemRenderer}
+        valueRenderer={valueRenderer}
         hasSelectAll={false}
       />
       <div className='flex space-x-8'>

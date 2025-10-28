@@ -357,6 +357,7 @@ export class BullhornService {
     }
   }
 
+  async getJobs(
     testMode = false,
     count = 1000,
     sort = "-dateAdded"

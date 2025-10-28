@@ -35,6 +35,7 @@ const mockCandidateData = [
     isLooking: false,
     isWarm: true,
   },
+  {
     id: '53dde141-ac80-4eee-af38-5497ee1c85d5',
     firstName: 'Rachel',
     lastName: 'McAlpin',
@@ -104,6 +105,7 @@ const CandidateProvider = ({children}) => {
   const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
 
   useEffect(() => {
+// Temp comment
     if (currentUser?.user_id) {
       getCandidateById(currentUser.user_id).then(user => {
         setCurrentUser(user);

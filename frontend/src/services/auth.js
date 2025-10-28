@@ -57,7 +57,6 @@ class AuthService {
   logout() {
     this.clearStorage();
     window.location.assign('/landing-page');
-// Temp comment
   }
 
   clearStorage() {
@@ -108,7 +107,6 @@ class AuthService {
   getSavedJobIDs() {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }
-
   toggleSavedCompany(companyID, action) {
     const savedCompanies = this.getSavedCompanyIDs();
     if ( action === 'save' ) {

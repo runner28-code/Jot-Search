@@ -14,6 +14,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import Flag from '../../assets/icons/flag.svg';
 import PageHeader from '../../components/PageHeader';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
+// Temp comment
 import InviteCandidates from './InviteCandidates';
 
 export default function CareerPage() {
@@ -116,6 +117,7 @@ function Notification({title, content, text, email, company, id, add}) {
     <div className='rounded-2xl bg-sky-100 p-8 border border-neutral-300 mb-8'>
       <div className="flex items-center">
         <img
+          src={Flag}
           className='w-12 h-12'
         />
         <h3 className='font-spaceGrotesk text-royalBlue ml-4 text-lg'>{title}</h3>

@@ -107,6 +107,7 @@ const DropdownMenu = () => {
   if ( isOpen ) {
     chevronStyles += 'animate-spin';
   } else if ( !firstRender && !isOpen ) {
+    chevronStyles += 'animate-spin-reverse';
   }
   return (
     <div
@@ -123,7 +124,6 @@ const DropdownMenu = () => {
           alt='chevron'
           className={chevronStyles}
         />
-      </div>
       <DropdownContent
         isOpen={isOpen}
         handleClick={closeDropdown}

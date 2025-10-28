@@ -68,7 +68,6 @@ function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCa
 
   if ( isCoordinator || isProfileOwner ) {
     if ( editMode ) {
-      return <div className='absolute top-0 right-0 w-50 flex justify-between'>
         <MdCancel 
           className='w-20 h-20 cursor-pointer fill-rose-500'
           onClick={handleCancel} />
@@ -76,7 +75,6 @@ function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCa
           className='w-20 h-20 cursor-pointer fill-emerald-500'
           onClick={handleSave} />
       </div>
-// Temp comment
     } else {
       return <FiEdit 
         className='absolute top-0 right-0 h-18 w-18 stroke-royalBlue cursor-pointer'

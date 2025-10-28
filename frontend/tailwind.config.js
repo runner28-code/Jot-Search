@@ -66,7 +66,6 @@ module.exports = {
         cyanSquare: '#1ECADB',
         pinkSquare: '#EB4A87',
         orangeSquare: '#F2871F',
-// Temp comment
         darkBlue: '#001B3C',
         yellowSquare: '#F4D12E',
         green: '#5CCC6E',
@@ -108,7 +107,6 @@ module.exports = {
         '10%': '10%',
         '16%': '16%',
         '20%': '20%',
-        '25%': '25%',
         '30%': '30%',
         '35%': '35%',
         '40%': '40%',

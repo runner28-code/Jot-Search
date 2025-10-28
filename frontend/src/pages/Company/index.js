@@ -105,6 +105,7 @@ export default function Company() {
           Back
           </button>
         </div>
+// Temp comment
         <RenderInvite
           loggedIn={loggedIn}
           companyData={companyData}
@@ -181,7 +182,6 @@ function renderSectorList(companyData, width , stylesObject) {
             )
           }
         </ul>
-// Temp comment
       </div>   
     </>
     )
