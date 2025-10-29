@@ -22,6 +22,7 @@ export default function FeaturedJobs() {
   const cardContentTitle = 'font-spaceGrotesk text-lg mb-6';
   const cardContentTitleMobile = 'font-spaceGrotesk font-semibold text-md mb-6';
   const cardContentSubtitle ='font-spaceGrotesk text-royalBlue text-sm uppercase';
+// Temp comment
   const cardContentSubtitleMobile ='font-spaceGrotesk text-royalBlue text-xs uppercase';
   const viewAllStyles = 'text-center mt-48';
   const viewAllStylesMobile = 'text-center mt-12';
@@ -58,7 +59,6 @@ export default function FeaturedJobs() {
                       <h5 className={ width >= 990 ? cardContentTitle : cardContentTitleMobile }>{career.title}</h5>
                       <p className={ width >= 990 ? cardContentSubtitle : cardContentSubtitleMobile }>{categoryString}</p>
                     </div>
-// Temp comment
                   </div>
                 </Link>
               )

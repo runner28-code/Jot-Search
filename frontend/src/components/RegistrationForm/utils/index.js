@@ -63,7 +63,6 @@ export function renderHeader(addType) {
 
 export function inputValidation(formObj) {
   // Remove non-required properties
-// Temp comment
 
   let newErrors = [];
 

@@ -2,6 +2,7 @@
 // npm run build && GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' node ./dist/utils/encryptPasswords.js
 // change where condition in select for alter script scope
 
+import { encryptPassword } from "./password";
 import { User, USERKEYS } from "../types/User";
 import { BigQueryService } from "../services/BigQueryService";
 import { DATASET_MAIN, Tables } from "../types/Common";
@@ -22,7 +23,6 @@ import { DATASET_MAIN, Tables } from "../types/Common";
         const [users] = await job.getQueryResults();
 
         if (users && users.length ) {
-          for(const user of users){
             if(!user.password){
               console.log(`user ${user.email} password is empty. Skipped.`);
               continue

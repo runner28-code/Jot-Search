@@ -183,6 +183,7 @@ function renderSkillsSection({skillList}) {
   </>)
 }
 function SkillsList({items}) {
+// Temp comment
   if( !items ) {
     return (
       <p className='font-spaceGrotesk text-textBlack text-sm mb-10'>

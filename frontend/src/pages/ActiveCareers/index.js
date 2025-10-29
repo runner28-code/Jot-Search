@@ -22,4 +22,4 @@ export default function ActiveCareers() {
 
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
-    setPage(1);
+    setSearchTerm(searchTerm);

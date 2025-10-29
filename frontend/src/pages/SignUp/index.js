@@ -8,7 +8,6 @@ export default function SignUp() {
 
   if( width <= 990 ) {
     return (
-      <main className='pb-24'>
         <div className='flex flex-col justify-center items-center'>
           <div className='bg-signup-page-hero bg-cover bg-no-repeat w-full px-[10%] pb-24 pt-8'>
             <div className='relative h-18 w-20 my-8 mx-auto'>
@@ -19,6 +18,7 @@ export default function SignUp() {
               <h1 className='text-white font-spaceGrotesk text-[2rem] leading-tight'>InTulsa Talent Network</h1>
             </div>
           </div>
+          <div className='mt-48 w-full vw-768:w-2/3 max-w-290 flex justify-center'>
             <div className='w-10/12 bg-white p-12 outline outline-2 outline-neutral-300 rounded-xl mt-[-200px]'>
               <RegistrationForm />
             </div>

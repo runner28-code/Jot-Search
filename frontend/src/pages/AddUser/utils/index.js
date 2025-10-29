@@ -15,7 +15,6 @@ export function validateInput(name, value, errors, password) {
   else if ( name === 'verifyPassword' ) {
     if ( value !== password ) {
       newErrors[name] = 'Passwords do not match';
-// Temp comment
     } else {
       newErrors[name] = '';
     }

@@ -1,4 +1,5 @@
 import Dropdown from '../../UniversalDropdown';
+import PropTypes from 'prop-types';
 import { expertises as expertiseChoices } from '../../../utils/skillHierarchyMap';
 
 export default function EditExpertiseForm({ expertise, handleChange }) {
@@ -15,4 +16,3 @@ export default function EditExpertiseForm({ expertise, handleChange }) {
         optionStyles={'text-lg'}
       />
     </>
-  )

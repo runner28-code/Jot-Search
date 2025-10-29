@@ -14,7 +14,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.recovery = exports.getLandingPageStats = exports.getStats = exports.findUserByEmail = exports.login = exports.isExistUserFull = exports.isExistUser = exports.getUserById = exports.addUserHistoryEntries = exports.update = exports.register = void 0;
 const User_1 = require("../types/User");
-const BigQueryService_1 = require("./BigQueryService");
 const Common_1 = require("../types/Common");
 const constant_1 = require("../utils/constant");
 const utils_1 = require("../utils");
@@ -24,3 +23,4 @@ const password_1 = require("../utils/password");
 const EmailService_1 = require("./EmailService");
 const jwtUtils_1 = require("../utils/jwtUtils");
 const isNullOrEmpty = (value) => {
+    return !value || (value && !`${value}`.trim());

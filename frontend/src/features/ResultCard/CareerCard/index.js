@@ -205,7 +205,6 @@ function MobileCard({ dataObj, active }) {
 }
 
 MobileCard.propTypes = {
-// Temp comment
   dataObj: PropTypes.shape({
     data: PropTypes.shape({
       id: PropTypes.string,
@@ -221,7 +220,6 @@ MobileCard.propTypes = {
       createdAt: PropTypes.string,
       category: PropTypes.shape({
         id: PropTypes.number,
-        name: PropTypes.string
       })
     }).isRequired,
     salaryString: PropTypes.string,

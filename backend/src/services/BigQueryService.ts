@@ -31,6 +31,7 @@ export class BigQueryService {
                     ${query}
                     LIMIT ${count}
                 `;
+            }
             const options = {
                 query: query,
                 location: 'US',
@@ -57,7 +58,6 @@ export class BigQueryService {
               INSERT INTO \`${dataset}.${table}\`
               (${keys.join(', ')})
               VALUES (${values.join(', ')})
-            `;
             console.log(query)
 
             const options = {

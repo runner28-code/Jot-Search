@@ -49,7 +49,6 @@ export function inputValidation(formObj) {
     if (value === '' || (Array.isArray(value) && value.length === 0)) {
       newErrors.push(key);
     }
-// Temp comment
   });
   if ( !(formObj.resumeFile instanceof File) ) {
     newErrors.push('resumeFile');

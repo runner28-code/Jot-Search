@@ -270,7 +270,6 @@ export async function applyToJob(jobId, candidateId) {
   return normalizeData(data);
 }
 
-// Temp comment
 export async function saveJob(candidateId, jobId) {
   const { data } = await API.put(ROUTES.APItoggleSaveJob, null, {
     params: {
@@ -282,6 +281,7 @@ export async function saveJob(candidateId, jobId) {
   if (data.messsage === 'saved job') {
     AuthService.toggleSavedJob(jobId, 'save');
   } else {
+// Temp comment
     AuthService.toggleSavedJob(jobId, 'unsave');
   }
   return normalizeData(data);

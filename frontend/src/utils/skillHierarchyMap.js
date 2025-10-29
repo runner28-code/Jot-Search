@@ -234,7 +234,6 @@ export const skills = [
   'InDesign',
   'Infrastructure',
   'Interviewing',
-  'Inventory Control',
   'Investing',
   'Investments',
   'iOS',

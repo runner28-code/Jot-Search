@@ -26,7 +26,6 @@ function App() {
         <SideNav userType={userRole} />
         <div 
           className='grow min-h-280 pb-18'>
-          <Routes>
             <Route
               path={ROUTES.signup}
               element={<SignUp />} />
@@ -36,6 +35,7 @@ function App() {
             <Route
               path={ROUTES.landingPage}
               element={<LandingPage />} />
+            <Route
               path={ROUTES.careers}
               element={<Careers />} />
             <Route

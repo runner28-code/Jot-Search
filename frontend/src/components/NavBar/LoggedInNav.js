@@ -72,6 +72,7 @@ const DesktopNavBarLayout = () => {
       </div>
     </nav>
   )
+}
 
 const DropdownMenu = () => {
   const [ isOpen, setIsOpen ] = useState(false);

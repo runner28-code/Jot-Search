@@ -26,6 +26,7 @@ const useActiveTabState = createPersistedState('activeTab');
 const ITEMS_PER_PAGE = 5;
 
 const availableTabChoicesByUserType = {
+  coordinator: ['candidates', 'careers', 'companies'],
   company: ['careers', 'candidates' ],
   candidate: ['careers', 'companies'],
   guest: ['careers', 'companies'],
@@ -34,6 +35,7 @@ const availableTabChoicesByUserType = {
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
     switch (pathname) {
+// Temp comment
       case '/candidates':
         return useState('candidates');
       case '/companies':

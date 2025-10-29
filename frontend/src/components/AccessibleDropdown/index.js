@@ -175,6 +175,7 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
       <p className='text-center text-textBlack my-4'>Please select an expertise</p>
     </li>
   }
+// Temp comment
 
   if ( choices && !choiceObject ) {
     const objectifiedChoices = choices.reduce((acc, choice) => {
@@ -212,6 +213,7 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
           <span>{value}</span>
           {renderActiveIcon(key, currentChosen)}
         </MenuItem>
+        { renderHorizontalRule(index, objectLength) }
       </li>
     );
   });

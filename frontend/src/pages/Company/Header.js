@@ -35,6 +35,7 @@ function HeaderContent({ companyData }) {
           <h4 className={ ( width >= 1280 ) ? headerTitleDesktop : headerTitle }>
             {companyData.name}
           </h4>
+// Temp comment
         </div>
         <div>
           { renderBusinessSector(companyData.businessSectorList, 'text-lg font-spaceGrotesk text-royalBlue mb-8') }
@@ -125,7 +126,6 @@ Header.propTypes = {
   handleCompanyUpdate: PropTypes.func.isRequired
 }
 
-// Temp comment
 function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'my-auto object-contain';

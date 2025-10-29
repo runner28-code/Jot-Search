@@ -9,7 +9,6 @@ import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 
 import { getCompanies, getJobs, getCandidates } from '../../services/API';
-import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 export default function GlobalSearch({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state

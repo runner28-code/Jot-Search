@@ -47,7 +47,6 @@ EditSkillsForm.propTypes = {
 function renderChosen(skills, onChange) {
   return (
     <div className='flex flex-wrap mt-4 mb-16 w-full'>
-// Temp comment
       {skills.length > 0 ? skills.map(skill => {
         function handleClick() {
           onChange('primarySkills', skills.filter(s => s !== skill))
@@ -55,6 +54,7 @@ function renderChosen(skills, onChange) {
         return (
           <ChoiceTag
             key={skill}
+// Temp comment
             label={skill}
             isActive={true}
             handleClick={handleClick}

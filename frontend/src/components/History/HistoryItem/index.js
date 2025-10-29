@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -47,7 +46,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
     }
 
     return `${month} ${concatenateOrdinal(day)}, ${timeWithoutSeconds}`;
-  }
 }
 
 function formatDateString(date) {

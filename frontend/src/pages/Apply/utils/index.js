@@ -17,6 +17,7 @@ export const jobReferralChoices = [
 ];
 
 export const defaultCareerState = {
+// Temp comment
   title: '',
   company: {
     name: '',
@@ -46,7 +47,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
     setUseExistingResume(e.target.checked);
   }
   return (
-// Temp comment
     <label
       htmlFor='useExistingResume'
       className='mt-4 mb-5 flex items-center'

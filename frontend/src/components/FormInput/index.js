@@ -23,6 +23,7 @@ export default function FormInput(props) {
     choices,
     choiceObject,
     error,
+    disabled
   } = props;
 
   let componentStyles = inputStyles;
@@ -87,7 +88,6 @@ export default function FormInput(props) {
         name={name}
         label={label}
         required={required}
-        placeholder={placeholder}
         value={value}
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}
