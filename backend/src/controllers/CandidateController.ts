@@ -19,6 +19,7 @@ import db from "../utils/db";
 import { JobFilter, USER_FILTER } from "../utils/FieldMatch";
 import { getSavedJobs, saveJob } from "../utils/MainCrud";
 import { clearPassword } from "../utils/password";
+import { COORDINATOR } from "../utils/constant";
 import { sendEmail, sendJobsToCandidates } from "../services/EmailService";
 import { getJobsList } from "../services/Job";
 import { normalizeFilters } from "./JobController";
@@ -365,3 +366,6 @@ export class CandidateController {
         error: "You should be a coordinator for sending jobs to candidates",
       };
     }
+    try {
+      const jobsPromise = getJobsList(body.jobIds);
+      const candidatesPromise = db.candidate.findMany({

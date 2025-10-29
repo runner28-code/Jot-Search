@@ -5,6 +5,7 @@ import AuthService from '../../../services/auth';
 
 export default function HideButton({ type, data, setIsHidden }) {
   const role = AuthService.getUserRole();
+  if ( role !== 'coordinator' || type !== 'job' ) {
     return null;
   }
   
@@ -13,6 +14,7 @@ export default function HideButton({ type, data, setIsHidden }) {
     await toggleHideJob(data.id);
   }
 
+// Temp comment
   return (
     <BiHide 
       className='absolute top-2 right-2 h-12 w-12 fill-black50% cursor-pointer'

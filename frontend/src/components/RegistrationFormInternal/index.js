@@ -11,6 +11,7 @@ import {
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {
+  inputValidation,
   formatFormObj,
   renderButtonOrLoading,
   renderErrorBlock,
@@ -117,7 +118,6 @@ export default function RegistrationFormInternal(loggedIn) {
           success: false,
         });
       }
-    }
   }, [submissionObject.loading]);
 
   useEffect(async () => { // Clear state after a couple seconds

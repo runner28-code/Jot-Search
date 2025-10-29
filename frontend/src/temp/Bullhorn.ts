@@ -291,3 +291,6 @@ export type Lead = {
     comments?: string;
     companyName?: string;
     companyURL?: string;
+    conversionSource?: string;
+    dateAdded?: string;
+    dateLastComment?: string;

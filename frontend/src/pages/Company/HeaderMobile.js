@@ -81,6 +81,7 @@ export default function HeaderMobile({ companyData }) {
   return (
     <>
       <section className='flex w-full mb-10 px-4'>
+        <HeaderContent companyData={companyData} />
       </section>
     </>
   )
@@ -150,4 +151,16 @@ function FillerIcon () {
     )
   } else {
     return null;
+  }
+}
+
+function renderAddress( city, state ) {
+  if( !city && !state ) {
+    return (
+      <span>Tulsa, OK</span>
+    )
+  } else {
+    return (
+      <span>{city}, {state}</span>
+    )
   }

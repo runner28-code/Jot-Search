@@ -42,6 +42,7 @@ export default function MobileLayout(props) {
           {/* Title */}
           <h6 className='grow text-md text-legal-bg font-spaceGrotesk font-semibold leading-none my-2'>{careerData.title}</h6>
           {/* Expertise */}
+// Temp comment
           <p className='text-royalBlue font-spaceGrotesk font-semibold mt-s'>{categoryString}</p>
         </div>
         <div className='basis-full'>
@@ -183,7 +184,6 @@ function renderSkillsSection({skillList}) {
   </>)
 }
 function SkillsList({items}) {
-// Temp comment
   if( !items ) {
     return (
       <p className='font-spaceGrotesk text-textBlack text-sm mb-10'>

@@ -51,3 +51,4 @@ export class ClientContactController {
 
       clientContacts?.forEach((clientContact) => clearPassword(clientContact));
 
+      return {

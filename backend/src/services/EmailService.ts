@@ -1,4 +1,3 @@
-import path from 'path';
 import ejs from 'ejs';
 import sendgrid from '@sendgrid/mail';
 import config from '../config';
@@ -106,3 +105,4 @@ export const sendUpdateUserNotification = async (to: string, name: string) => {
     console.log('Error during sending update user notification');
     console.log(error);
     console.log(JSON.stringify(error.response.body));
+    throw error;

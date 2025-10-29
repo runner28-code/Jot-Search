@@ -79,7 +79,6 @@ export default function TypeaheadDropdown(props) {
       { renderDropdown(dropdownType, dropdownOpen, filteredChoices, currentChosen, handleChoiceClick) }
     </div>
   )
-}
 
 TypeaheadDropdown.propTypes = {
   type: PropTypes.string.isRequired,

@@ -231,3 +231,5 @@ module.exports = {
       '280': '70rem',
     },
     maxheight: {
+      '85%': '85%',
+    },

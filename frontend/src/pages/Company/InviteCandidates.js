@@ -22,6 +22,7 @@ export default function InviteCandidates({ company }) {
       label: candidate.name,
       value: candidate.id,
       candidate
+    }
   }) || [];
   
   const [ selected, setSelected ] = useState([]);
@@ -109,8 +110,21 @@ function itemRenderer({ option, onClick, disabled}) {
         }  
         <div className="flex flex-col">
           <span className='text-lg text-blue-500'>{option.candidate?.firstName} {option.candidate?.lastName}</span>
+// Temp comment
           <span>{getTagLine({ candidate: option.candidate })}</span>
         </div>
       </div>
     </div>
   )
+}
+
+function getTagLine({ candidate }) {
+  let tagLine = '';
+  if (candidate?.occupation && candidate?.companyName) {
+    tagLine = `${candidate.occupation} @ ${candidate.companyName}`
+  }else if (candidate?.occupation) {
+    tagLine = candidate.occupation
+  }else if (candidate?.companyName) {
+    tagLine = `@ ${candidate.companyName}`
+  }
+  return tagLine;

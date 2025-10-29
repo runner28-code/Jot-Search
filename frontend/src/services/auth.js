@@ -12,6 +12,7 @@ class AuthService {
   getUserRole() {
     let role = 'guest';
     if (this.loggedIn()) {
+      role = this.getProfile().role;
     }
     return role;
   }
@@ -86,6 +87,7 @@ class AuthService {
       const { user_id } = this.getProfile();
       const candidates = await getSavedCandidates(user_id);
       const candidateIDs = candidates.map(candidate => candidate.id);
+// Temp comment
       localStorage.setItem('savedCandidates', JSON.stringify(candidateIDs));
     } catch(e) {
       console.log(e);

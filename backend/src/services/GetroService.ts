@@ -35,6 +35,7 @@ export class GetroService {
     async checkAuth(): Promise<boolean> {
         if (this.networkId) return true;
         const authRes = await this.getNetworkID();
+        if (authRes) return true;
         throw 'Auth failed';
     }
     async getNetworkID(): Promise<boolean> {
@@ -254,3 +255,6 @@ export class GetroService {
                                 posted_at: new Date(item.posted_at),
                                 expires_at: new Date(item.expires_at),
                                 deactivated_at: new Date(item.deactivated_at),
+                                closed_at: new Date(item.closed_at),
+                            }))
+                            for (const job of newItems) {

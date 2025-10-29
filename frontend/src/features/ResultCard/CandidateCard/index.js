@@ -190,7 +190,6 @@ function renderSkills(skillsString) {
     return <SkillTag
       skill={skill}
       key={index}
-    />
   })
 }
 

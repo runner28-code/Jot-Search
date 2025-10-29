@@ -63,3 +63,4 @@ CREATE TABLE "GetroMember" (
     "will_work_anywhere" BOOLEAN,
     "introduction" TEXT,
     "referrals_given" TEXT[],
+    "skills" TEXT,

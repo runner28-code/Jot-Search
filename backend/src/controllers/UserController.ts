@@ -18,7 +18,6 @@ import { sendVerification } from "../services/EmailService";
 import {
   register,
   login,
-  update,
   recovery,
   getStats,
   getLandingPageStats,
@@ -204,3 +203,5 @@ export class UserController {
     if (authUser.role !== COORDINATOR) {
       return {
         result: false,
+        error:
+          "Only coordinators can make registration requests for other coordinators",

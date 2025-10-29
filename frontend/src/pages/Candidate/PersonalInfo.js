@@ -311,6 +311,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
             </div>
           )}
         </div>
+        {editMode && <div className='w-full flex justify-end gap-l mt-16'>
           <button 
             onClick={() => setEditMode(false)} 
             className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Cancel</button>

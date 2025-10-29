@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import TextInput from './TextInput';
 import FileInput from './FileInput';
 import AccessibleDropdown from '../AccessibleDropdown';
 import TypeaheadDropdown from './TypeaheadDropdown';
@@ -88,6 +87,7 @@ export default function FormInput(props) {
         name={name}
         label={label}
         required={required}
+        placeholder={placeholder}
         value={value}
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}

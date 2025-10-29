@@ -11,6 +11,7 @@ export default function DashboardPublicMin({type}) {
 
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
+  const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const active = ' bg-royalBlue';
   const { width } = useWindowDimensions();
 
@@ -51,7 +52,6 @@ export default function DashboardPublicMin({type}) {
             <CareerIcon />
             <p className='ml-4'>Careers</p>
           </Link>
-          <Link
             className={type === 'company' ? buttonStylesRight + active : buttonStylesRight }
             to={ROUTES.companies}
           >

@@ -40,7 +40,6 @@ export const CompanyFilter: TypedDictionary<
     name: "name",
     city: "address_city",
     industry: "industryList",
-  },
   getro: {
     name: "name",
     city: "locations",

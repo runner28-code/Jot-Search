@@ -463,6 +463,7 @@ model GetroJobInfo {
   compensation_period   String?
   compensation_public   Boolean?
   description           String?
+  discarded             Boolean?
   employment_types      String[]
   expires_at            DateTime?
   job_functions         String?
@@ -656,3 +657,8 @@ model Candidate {
   primarySkills    String?
   recentClientList String[]
   referredBy       String?
+  salary           BigInt?
+  salaryLow        BigInt?
+  secondarySkills  String?
+  skillSet         String?
+  smsOptIn         String?

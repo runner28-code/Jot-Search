@@ -17,7 +17,6 @@ export const jobReferralChoices = [
 ];
 
 export const defaultCareerState = {
-// Temp comment
   title: '',
   company: {
     name: '',
@@ -112,3 +111,18 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       {buttonString}
     </button>
   )
+}
+
+export function updateCandidateIfNeeded(applicationObject, originalObject) {
+  const valuesToUpdate = {};
+  for (let key in applicationObject) {
+    if (applicationObject[key] !== originalObject[key]) {
+      valuesToUpdate[key] = applicationObject[key];
+    }
+  }
+  if (Object.keys(valuesToUpdate).length > 0) {
+    console.log('Updating user with new values:', valuesToUpdate);
+    updateUser(valuesToUpdate) // Using .then vs await since the response isn't needed for functionality, no need to wait for it
+      .then(res => console.log('Updated user: ', res));
+  }
+  return;

@@ -11,6 +11,7 @@ import {
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
+// Temp comment
 
 export default function InviteToCareer({ candidate }) {
   const { jobs, isLoading } = useGetJobs({ filtersArr: buildSearchFilters({...defaultJobFilterState}), 
@@ -117,3 +118,15 @@ function itemRenderer({ option, onClick, disabled}) {
       </div>
     </div>
   )
+}
+
+function getTagLine({ candidate }) {
+  let tagLine = '';
+  if (candidate?.occupation && candidate?.companyName) {
+    tagLine = `${candidate.occupation} @ ${candidate.companyName}`
+  }else if (candidate?.occupation) {
+    tagLine = candidate.occupation
+  }else if (candidate?.companyName) {
+    tagLine = `@ ${candidate.companyName}`
+  }
+  return tagLine;

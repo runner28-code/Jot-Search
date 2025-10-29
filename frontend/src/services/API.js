@@ -38,7 +38,6 @@ export async function getCandidates(filtersArr, count, page) {
   return (await getCandidatesFull(filtersArr, count, page)).candidates;
 }
 
-export async function getCandidatesFull(filtersArr, count, page, fields = null) {
   const formattedFilters = formatCandidateFilters(filtersArr)
     .filter(filter => {
       if (['workAuthorized', 'willRelocate', 'activelyLooking'].includes(filter.key) && !filter.value) {
@@ -281,7 +280,6 @@ export async function saveJob(candidateId, jobId) {
   if (data.messsage === 'saved job') {
     AuthService.toggleSavedJob(jobId, 'save');
   } else {
-// Temp comment
     AuthService.toggleSavedJob(jobId, 'unsave');
   }
   return normalizeData(data);

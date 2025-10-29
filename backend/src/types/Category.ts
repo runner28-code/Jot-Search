@@ -7,7 +7,6 @@ export type Category = {
   occupation?: string;
   type?: string;
   _score?: number;
-};
 
 export const ALLOWED_CATEGORY_FILTER_KEYS = new Set<keyof Category>([
   "id",
@@ -20,3 +19,4 @@ export const ALLOWED_CATEGORY_FILTER_KEYS = new Set<keyof Category>([
   "_score",
 ]);
 
+export const CATEGORY_NON_STRING_FIELDS = new Set<keyof Category>([

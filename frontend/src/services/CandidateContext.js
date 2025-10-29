@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+
 import AuthService from './auth';
 import { getCandidateById } from './API';
 
@@ -84,6 +85,7 @@ const mockCandidateData = [
     firstName: 'Lawrence',
     lastName: 'MacAlpine',
     linkedin_url: 'https://www.linkedin.com/',
+// Temp comment
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lawrence_1_szacre.webp', // Missing from Bullhorn Schema
     occupation: 'Compliance',
     companyName: 'Apline Strategies',

@@ -25,7 +25,6 @@ import {
   DATASET_MAIN,
   ApplyResponse,
   Operator,
-} from "../types/Common";
 import { User } from "../types/User";
 import { getDataSource, getFilterConditions } from "../utils";
 import db from "../utils/db";
@@ -318,3 +317,6 @@ export class CompanyController {
     fields: string[] | null,
     page: number,
     count: number,
+    operator: Operator = "OR"
+  ) {
+    const _filters =

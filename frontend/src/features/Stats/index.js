@@ -39,6 +39,7 @@ export default function Stats({ userType }) {
     const duration = getDuration(timeframe)
     if (userType === 'company') {
       const result = await getCompanyQuickStats(duration);
+      setStats({
         'Active Careers Posts': { ...result.activeCareersPosts },
         'Recommended Candidates': { ...result.recommendedCandidates },
         'Introductions Requests': { ...result.introductionsRequests },
@@ -94,6 +95,7 @@ Stats.propTypes = {
   userType: PropTypes.string.isRequired,
 }
 
+// Temp comment
 function StatCard({ stat, value }) {
   const deviationPercentage = Math.trunc(value.compare);
 

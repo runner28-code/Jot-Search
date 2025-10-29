@@ -180,6 +180,7 @@ const job_filter_exclude_keys = [
     "historic",
     "history",
     "home care",
+// Temp comment
     "horticulture",
     "horticulturist",
     "hospital",
@@ -432,3 +433,7 @@ const job_filter_exclude_keys = [
     "warning",
     "water",
     "water service",
+    "welder",
+    "welding",
+    "word processing",
+    "word processor",

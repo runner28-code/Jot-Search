@@ -282,3 +282,6 @@ export const migrateUserInTPP = async (data: Partial<DbCandidate>) => {
         externalId: data.externalId,
       },
     });
+    if (existing) {
+      console.log(
+        `Migration Failed: Bullhorn User (bh_id=${data.externalId}) is already migratd`

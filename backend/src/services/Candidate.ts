@@ -33,6 +33,7 @@ export const saveCandidate = async (
       });
     } else {
       await db.user.update({
+        where: {
           id: companyUserId,
         },
         data: {
@@ -86,3 +87,4 @@ export const getSavedCandidates = async (companyUserId: string) => {
     return { result: false, message: error };
   }
 };
+

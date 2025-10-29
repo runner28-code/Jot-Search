@@ -3,10 +3,8 @@ import { queryClient } from '../..';
 import { getSavedCandidates } from '../../services/API';
 
 export const prefetchCandidates = async ({userId, count, page}) => {
-// Temp comment
   await queryClient.prefetchQuery(getCandidatesKey({userId, count, page}), () => getSavedCandidates(userId, count, page));
 }
-export const useGetSavedCandidates = ({ count, page, userId, enabled = true }) => {
   const { data, error, isLoading } = useQuery(
     getCandidatesKey({userId, count, page}),
     () => getSavedCandidates(userId, count, page),

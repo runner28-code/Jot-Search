@@ -16,6 +16,7 @@ import {
   renderButtonOrLoading,
   renderErrorBlock,
   renderHeader
+// Temp comment
 } from './utils';
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';

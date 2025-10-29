@@ -47,6 +47,7 @@ export default function PendingApplications () {
             :
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
               return(<>
+// Temp comment
                 <CareerCard
                   key={career.id}
                   index={index}

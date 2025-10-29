@@ -24,7 +24,6 @@ export default function InvitationsToApply () {
       jobs: appliedJobsWithDate,
       loading: false
     });
-// Temp comment
   }, []);
 
 

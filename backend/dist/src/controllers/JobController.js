@@ -7,7 +7,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
@@ -244,3 +243,106 @@ let JobController = class JobController {
             return yield (0, Job_1.createJob)(body);
         });
     }
+};
+__decorate([
+    (0, routing_controllers_1.Get)("/search"),
+    __param(0, (0, routing_controllers_1.QueryParam)("id")),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Promise)
+], JobController.prototype, "searchJobByID", null);
+__decorate([
+    (0, routing_controllers_1.Post)("/run-job"),
+    __param(0, (0, routing_controllers_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], JobController.prototype, "runJob", null);
+__decorate([
+    (0, routing_controllers_1.Post)("/search"),
+    __param(0, (0, routing_controllers_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], JobController.prototype, "searchByFilter", null);
+__decorate([
+    (0, routing_controllers_1.Authorized)(),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Array, Object, Object, String]),
+    __metadata("design:returntype", Promise)
+], JobController.prototype, "getJobsByFilterFromMain", null);
+__decorate([
+    (0, routing_controllers_1.Get)("/apply"),
+    __param(0, (0, routing_controllers_1.QueryParam)("candidate")),
+    __param(1, (0, routing_controllers_1.QueryParam)("job")),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, String]),
+    __metadata("design:returntype", Promise)
+], JobController.prototype, "apply", null);
+__decorate([
+    (0, routing_controllers_1.Authorized)(),
+    (0, routing_controllers_1.Get)("/candidates"),
+    __param(0, (0, routing_controllers_1.QueryParam)("job")),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Promise)
+], JobController.prototype, "getCandidates", null);
+__decorate([
+    (0, routing_controllers_1.Authorized)(),
+    (0, routing_controllers_1.Put)("/save"),
+    __param(0, (0, routing_controllers_1.QueryParam)("candidate")),
+    __param(1, (0, routing_controllers_1.QueryParam)("job")),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, String]),
+    __metadata("design:returntype", Promise)
+], JobController.prototype, "save", null);
+__decorate([
+    (0, routing_controllers_1.Authorized)(),
+    (0, routing_controllers_1.Patch)(),
+    __param(0, (0, routing_controllers_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], JobController.prototype, "update", null);
+__decorate([
+    (0, routing_controllers_1.Authorized)(),
+    (0, routing_controllers_1.Get)("/applied"),
+    __param(0, (0, routing_controllers_1.CurrentUser)()),
+    __param(1, (0, routing_controllers_1.QueryParam)("candidate")),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, String]),
+    __metadata("design:returntype", Promise)
+], JobController.prototype, "getAppliedJobs", null);
+__decorate([
+    (0, routing_controllers_1.Authorized)(),
+    (0, routing_controllers_1.Get)("/savedJobs"),
+    __param(0, (0, routing_controllers_1.QueryParam)("candidate")),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Promise)
+], JobController.prototype, "savedJobs", null);
+__decorate([
+    (0, routing_controllers_1.Authorized)(),
+    (0, routing_controllers_1.Put)(),
+    __param(0, (0, routing_controllers_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], JobController.prototype, "createJob", null);
+JobController = __decorate([
+    (0, routing_controllers_1.JsonController)("/api/job")
+], JobController);
+exports.JobController = JobController;
+const normalizeFilters = (filters) => {
+    const filterObj = {};
+    if (Array.isArray(filters)) {
+        filters.forEach(({ key, value }) => {
+            filterObj[key] = normalizeValue(value);
+        });
+    }
+    else {
+        Object.keys(filters).forEach((key) => {
+            filterObj[key] = normalizeValue(filters[key]);
+        });
+    }
+    return filterObj;

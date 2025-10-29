@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { appendPathToBaseUrl } from '../../services/API';
-// Temp comment
 
 export default function EditHeaderForm({ candidateData, handleCandidateUpdate, setEditMode, iconStyles }) {
   const [formData, setFormData] = useState({
@@ -15,6 +14,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     address2: candidateData.address2,
     city: candidateData.city,
     state: candidateData.state,
+// Temp comment
     zip: candidateData.zip,
   });
 

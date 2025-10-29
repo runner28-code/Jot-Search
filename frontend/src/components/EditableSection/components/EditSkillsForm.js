@@ -54,7 +54,6 @@ function renderChosen(skills, onChange) {
         return (
           <ChoiceTag
             key={skill}
-// Temp comment
             label={skill}
             isActive={true}
             handleClick={handleClick}

@@ -64,7 +64,6 @@ CompactCompanyCard.propTypes = {
   }).isRequired,
   index: PropTypes.number,
   active: PropTypes.bool,
-// Temp comment
   agoDate: PropTypes.string,
   isFavoriteOverride: PropTypes.bool,
   agoText: PropTypes.string,

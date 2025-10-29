@@ -41,6 +41,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
           <div 
             onClick={() => handleClick(choice)}
             className='cursor-pointer flex items-center justify-between'
+// Temp comment
           >
             <span className='font-bold'>{choice}</span>
             {renderActiveIcon(choice, currentChosen)}
@@ -80,3 +81,17 @@ export default function Dropdown(props) {
       setIsOpen(false);
       onChange(name, choice);
     }
+  }
+
+  useEffect(() => {
+    listenForOutsideClicks(listening, setListening, menuRef, setIsOpen);
+  }, [isOpen]);
+  
+  const renderValue = (type, name, currentChosen, placeholder) => {
+    if (type === MULTI_SELECT && currentChosen.length > 0) {
+      return currentChosen.join(', ');
+    } else if ( type === SINGLE_SELECT && currentChosen !== '' ) {
+      return currentChosen + suffix(name);
+    }
+
+    return placeholder;

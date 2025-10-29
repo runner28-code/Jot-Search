@@ -58,7 +58,9 @@ export class BigQueryService {
               INSERT INTO \`${dataset}.${table}\`
               (${keys.join(', ')})
               VALUES (${values.join(', ')})
+            `;
             console.log(query)
 
             const options = {
                 query,
+                location: 'US',

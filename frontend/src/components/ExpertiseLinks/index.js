@@ -17,6 +17,7 @@ export default function ExpertiseLinks() {
         Browse Opportunities by Career Expertise
       </h4>
       <div className='mt-20 flex'>
+// Temp comment
         {/* Software & Engineering */}
         <Link
           to={ROUTES.careers}
@@ -55,7 +56,6 @@ export default function ExpertiseLinks() {
             src={marketingIcon}
             alt='Marketing Icon'
             className={iconStyles}
-// Temp comment
           />
           <span className={textStyles}>Marketing</span>
         </Link>

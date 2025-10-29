@@ -126,3 +126,4 @@ export const getSavedJobs = async (candidateId: string) => {
 
 export const getCandidatesOnJob = async (jobId: string) => {
   try {
+    const job = await db.job.findFirst({
