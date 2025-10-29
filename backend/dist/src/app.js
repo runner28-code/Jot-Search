@@ -29,6 +29,7 @@ const ALLOWED_UPLOAD_FOLDERS = ["resumes", "avatars"];
 const multerStorage = multer_1.default.diskStorage({
     destination: (req, file, cb) => {
         const folder = req.body.type || "resumes";
+        const path = __dirname + `/../uploads/${folder}`;
         console.log("upload path: ", path);
         fs_1.default.mkdirSync(path, { recursive: true });
         cb(null, path);

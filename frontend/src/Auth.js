@@ -10,7 +10,6 @@ import {
   Logout,
   Profile,
 } from './pages';
-// Temp comment
 import AuthService from './services/auth';
 import * as ROUTES from './routes';
 

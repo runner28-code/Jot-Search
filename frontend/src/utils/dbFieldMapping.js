@@ -44,7 +44,6 @@ export const experienceMap = {
   '4': '5-10',
   '5': '11+'
 }
-
 export const educationChoices = [
   'None',
   'Associate',

@@ -20,6 +20,7 @@ import { CategoryContext } from '../../services/CategoryContext';
 import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
+  expertise: '',
   roles: [],
   skills: [],
   experience: '',
@@ -31,7 +32,6 @@ const defaultState = {
   password: '',
   verifyPassword: '',
 };
-export default function RegistrationForm() {
   const {categories} = useContext(CategoryContext);
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);

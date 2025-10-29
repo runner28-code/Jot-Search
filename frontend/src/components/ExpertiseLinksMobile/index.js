@@ -56,7 +56,6 @@ export default function ExpertiseLinksMobile() {
             alt='Marketing Icon'
             className={iconStyles}
           />
-// Temp comment
           <span className={textStyles}>Marketing</span>
         </Link>
         {/* Operations */}
@@ -87,4 +86,5 @@ export default function ExpertiseLinksMobile() {
         </Link>
       </div>
     </section>
+// Temp comment
   )

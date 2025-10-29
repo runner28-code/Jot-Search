@@ -25,7 +25,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })
   }
 
-// Temp comment
   const { PaginatedControls } = usePaginatedControls({ total, page, setPage, itemsPerPage: ITEMS_PER_PAGE, isLoading, prefetchFunc });
 
   const matchingCareerFound = (careers && careers.length > 0) && careers.some(job => job.externalId === currentCareerId);

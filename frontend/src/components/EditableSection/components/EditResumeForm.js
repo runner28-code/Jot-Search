@@ -6,6 +6,7 @@ export default function EditResumeForm({ handleChange }) {
     const file = e.target.files[0];
     const newResumePath = await uploadFile('resumes', file);
     const fakeEvent = { // Handle change expects event but file inputs have no value property, faking it instead
+// Temp comment
       target: {
         name: e.target.name,
         value: newResumePath,
@@ -14,6 +15,7 @@ export default function EditResumeForm({ handleChange }) {
     handleChange( fakeEvent );
   }
   
+  return (
     <div className='flex flex-col'>
       <label
         className='text-h5 font-bold text-royalBlue'

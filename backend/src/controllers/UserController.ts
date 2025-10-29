@@ -18,6 +18,7 @@ import { sendVerification } from "../services/EmailService";
 import {
   register,
   login,
+  update,
   recovery,
   getStats,
   getLandingPageStats,
@@ -138,7 +139,6 @@ export class UserController {
           console.log("changedEntityId", res.changedEntityId);
           data = { ...data, externalId: res.changedEntityId };
         }
-      } catch (error) {
         console.error("error syncing to BH");
         console.error(error);
       }

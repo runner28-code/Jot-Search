@@ -5,6 +5,7 @@ export default function TextInput({type, name, placeholder, label, value, requir
   function handleChange(e) {
     if ( name !== 'phone' ) {
       onChange(name, e.target.value);
+    } else {
       onChange(name, e);
     }
   }
@@ -17,7 +18,6 @@ export default function TextInput({type, name, placeholder, label, value, requir
   )
 }
 
-TextInput.propTypes = {
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,

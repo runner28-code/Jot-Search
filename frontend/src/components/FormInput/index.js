@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import TextInput from './TextInput';
 import FileInput from './FileInput';
 import AccessibleDropdown from '../AccessibleDropdown';
 import TypeaheadDropdown from './TypeaheadDropdown';
@@ -41,6 +42,7 @@ export default function FormInput(props) {
       return <FileInput
         type={type}
         name={name}
+// Temp comment
         label={label}
         placeholder={placeholder}
         value={value}

@@ -15,7 +15,6 @@ exports.IUSER = {
     city: "",
     state: "",
     zip: "",
-    resume: "",
     avatar: "",
     linkedin: "",
     skills: "",
@@ -40,4 +39,5 @@ exports.IUSER = {
     experience: "",
     hourlyRate: "",
     willRelocate: "",
+    willReceiveNotification: false,
     ethnicity: "",

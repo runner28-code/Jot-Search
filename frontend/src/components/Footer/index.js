@@ -320,7 +320,6 @@ function NavFooterMobile() {
         </Link>
         <Link
           to={ROUTES.login}
-          className={blueLinkStyle}
         >Login
         </Link>
         <a

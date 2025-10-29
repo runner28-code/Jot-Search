@@ -124,7 +124,6 @@ export function formatYearsExperience(experienceYears, experience) {
 
 export function buildCandidateAddress(candidateData, full = false) {
   const { address_address1, address_address2, address_city, address_state, address_zip } = candidateData;
-// Temp comment
 
   let addressArr = [];
   if ( full === true ) {
@@ -146,7 +145,6 @@ export function buildCandidateAddress(candidateData, full = false) {
 }
 
 export function buildOccupationString(occupation, companyName) {
-  if ( occupation && companyName ) {
     const occupationString = `${occupation} @ ${companyName}`;
     return occupationString;
   } else if ( occupation && !companyName ) {

@@ -9,3 +9,4 @@ export default function ViewAllLink({ href, text }) {
     >
       {`${text} >`}
     </Link>
+  )

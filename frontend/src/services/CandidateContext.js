@@ -24,7 +24,6 @@ const mockCandidateData = [
     id: 'b5a00114-1d3d-40f3-afb9-fc542fa22af6',
     firstName: 'Lee',
     lastName: 'Easton',
-    linkedin_url: 'https://www.linkedin.com/',
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lee_5_swk4qj.webp', // Missing from Bullhorn Schema
     occupation: 'Owner / President',
     companyName: 'Aerovision',
@@ -85,7 +84,6 @@ const mockCandidateData = [
     firstName: 'Lawrence',
     lastName: 'MacAlpine',
     linkedin_url: 'https://www.linkedin.com/',
-// Temp comment
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lawrence_1_szacre.webp', // Missing from Bullhorn Schema
     occupation: 'Compliance',
     companyName: 'Apline Strategies',

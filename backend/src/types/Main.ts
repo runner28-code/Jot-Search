@@ -21,11 +21,11 @@ export type Job = {
     state?: string;
     zip?: string;
     country_id?: string;
+    employmentType?: string;
     title?: string;
     willRelocate?: string;
     yearsRequired?: string;
     status?: string;
-    skillList?: string;
     locations?: string;
     companyId?: string;
     interviews?: string;

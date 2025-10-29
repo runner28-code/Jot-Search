@@ -9,12 +9,10 @@ export default function DetailsHeader({ type, source }) {
   let Icon = undefined;
   switch(type) {
     case 'candidate':
-      Icon = CandidatesIcon;
       break;
     case 'company':
       Icon = CompanyIcon;
       break;
-// Temp comment
     case 'career':
     default:
       Icon = CareerIcon;

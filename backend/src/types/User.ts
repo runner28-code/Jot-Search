@@ -34,6 +34,7 @@ export type User = {
   annualRevenue?: string;
   companyURL?: string;
   numEmployees?: string;
+  revenue?: string;
   dateFounded?: string;
 
   employeeType?: string;
@@ -80,7 +81,6 @@ export const IUSER = {
   companyId: "",
   companyName: "",
   annualRevenue: "",
-  companyURL: "",
   numEmployees: "",
   revenue: "",
   dateFounded: "",

@@ -16,6 +16,7 @@ function adjustJobFilterObject() {
   return adjustedJobFilterObject;
 }
 
+// Temp comment
 export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
   const filterObject = adjustJobFilterObject();
@@ -33,6 +34,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     navigate(ROUTES.careers, { state: { ...params } });
   }
 
+  function handleFilterChange(name, value) {
     setFilterState({
       ...filterState,
       [name]: value,
