@@ -213,7 +213,6 @@ export class CandidateController {
           orderBy: {
             firstname: "asc",
           },
-        });
         const candidateOnlyPromise = candidatesPromise = db.candidate.findMany({
           take: count || 100,
           skip: skip < 0 ? 0 : skip,

@@ -15,6 +15,7 @@ exports.IUSER = {
     city: "",
     state: "",
     zip: "",
+    resume: "",
     avatar: "",
     linkedin: "",
     skills: "",

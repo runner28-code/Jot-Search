@@ -259,6 +259,7 @@ function isValidHttpUrl(string) {
 
 function renderIndustry(item, headerRowTextStyles) {
 
+  if( !item ) {
     return (<>
       <p className={headerRowTextStyles}>Industry</p>
     </>)

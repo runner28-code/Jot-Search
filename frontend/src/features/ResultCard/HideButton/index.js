@@ -3,11 +3,11 @@ import { BiHide } from 'react-icons/bi';
 import { toggleHideJob } from '../../../services/API';
 import AuthService from '../../../services/auth';
 
-// Temp comment
 export default function HideButton({ type, data, setIsHidden }) {
   const role = AuthService.getUserRole();
   if ( role !== 'coordinator' || type !== 'job' ) {
     return null;
+// Temp comment
   }
   
   async function handleClick() {

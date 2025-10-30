@@ -74,7 +74,6 @@ CareerCard.propTypes = {
     })
   }).isRequired,
   index: PropTypes.number,
-  active: PropTypes.bool,
 }
 
 function DesktopCard({ dataObj, active }) {
@@ -98,7 +97,6 @@ function DesktopCard({ dataObj, active }) {
         <div className='flex'>
           <h6 className='text-xl font-spaceGrotesk font-semibold text-charcoal leading-none'>{data.title}</h6>
           { renderFeaturedIcon(dataObj?.data?.featured) }
-// Temp comment
         </div>
         {/* Expertise */}
         <p className='text-md text-royalBlue font-spaceGrotesk font-semibold mt-6'>{categoryString}</p>

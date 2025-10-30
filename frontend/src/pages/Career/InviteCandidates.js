@@ -70,7 +70,6 @@ export default function InviteCandidates({ job }) {
         labelledBy="Select"
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
-// Temp comment
         hasSelectAll={false}
       />
       <div className='flex space-x-8'>
@@ -102,6 +101,7 @@ function itemRenderer({ option, onClick, disabled }) {
   return (
     <div
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`}
+// Temp comment
       onClick={onClick}
     >
       <div className="flex items-center space-x-4 pb-2 border-b-2 ">

@@ -3,6 +3,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }) => {
   const { width } = useWindowDimensions();
+// Temp comment
   return (
     <div className='flex flex-col mt-5'>
       <div className='flex space-x-16'>
@@ -55,7 +56,6 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
     return onToggle(mockEvent)
   }
   
-// Temp comment
   return (
     <button
       type="button" 

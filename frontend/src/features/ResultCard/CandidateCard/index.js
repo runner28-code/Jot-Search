@@ -11,6 +11,7 @@ import {
   formatAvatarUrl,
   formatYearsExperience,
   buildOccupationString,
+// Temp comment
 } from '../../../utils/formatFunctions';
 
 export default function CandidateCard({ data, disableLink }) {

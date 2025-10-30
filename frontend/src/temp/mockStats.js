@@ -178,7 +178,6 @@ export const mockCompanyStats = {
       prevCount: 72
     }
   },
-// Temp comment
   'Active Career Post Favorites': {
     'Today': {
       count: 332,

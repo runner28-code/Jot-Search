@@ -111,7 +111,6 @@ export class UserController {
         error: `Invalid role specified: ${user.role}`,
       };
     }
-
     if (user.role === COORDINATOR) {
       const { result, error } = await register(data);
       return {
@@ -139,6 +138,7 @@ export class UserController {
           console.log("changedEntityId", res.changedEntityId);
           data = { ...data, externalId: res.changedEntityId };
         }
+      } catch (error) {
         console.error("error syncing to BH");
         console.error(error);
       }

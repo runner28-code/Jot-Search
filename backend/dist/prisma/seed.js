@@ -14,6 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const client_1 = require("@prisma/client");
 const db_1 = __importDefault(require("../src/utils/db"));
+// Temp comment
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
@@ -40,7 +41,6 @@ function seedJobs() {
             data: [
                 {
                     title: "Senior Software Engineer",
-// Temp comment
                     companyId: (_a = (yield db_1.default.company.findFirst())) === null || _a === void 0 ? void 0 : _a.id,
                     address1: "123 Job St",
                     city: "Tulsa",

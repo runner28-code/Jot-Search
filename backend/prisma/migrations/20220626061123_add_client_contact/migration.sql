@@ -47,5 +47,6 @@ CREATE TABLE "ClientContact" (
     "name" TEXT,
     "namePrefix" TEXT,
     "nameSuffix" TEXT,
+    "nickName" TEXT,
     "numEmployees" TEXT,
     "occupation" TEXT,

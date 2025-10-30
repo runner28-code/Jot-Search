@@ -114,7 +114,6 @@ export class JobController {
   }
 
   @Post("/search")
-  async searchByFilter(
     @Body() body: FilterBody & { datasource?: DataSources }
   ) {
     try {

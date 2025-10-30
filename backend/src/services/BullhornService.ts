@@ -45,7 +45,6 @@ export class BullhornService {
         this.access_token = access_token;
         this.refresh_token = refresh_token;
         this.BhRestToken = BhRestToken;
-        this.restUrl = restUrl;
         if (
           this.auth_code &&
           this.access_token &&

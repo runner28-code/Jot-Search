@@ -94,7 +94,6 @@ export const companyChoices = [
 ];
 export const coordinatorChoices = [
   choices.dashboard,
-  choices.candidates,
   choices.careers,
   choices.companies,
   choices.addUser,

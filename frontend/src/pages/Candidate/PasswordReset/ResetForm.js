@@ -35,6 +35,6 @@ export default function ResetForm({ candidateData, setType }) {
   };
 
   function handleChange(name, value) {
-      ...formData,
+    setFormData({
       [name]: value,
     });

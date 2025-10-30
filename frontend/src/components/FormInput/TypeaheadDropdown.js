@@ -94,7 +94,6 @@ TypeaheadDropdown.propTypes = {
   baseStyles: PropTypes.string.isRequired,
   inputHeight: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
-// Temp comment
 }
 
 function renderLabel(name, label, required) {
@@ -112,6 +111,7 @@ function renderLabel(name, label, required) {
     >
       {label}
     </label>
+// Temp comment
   )
 }
 

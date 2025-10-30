@@ -103,7 +103,6 @@ function renderNotification(activeData, careerData) {
         email='talentnetwork@intulsa.com'
         company={careerData.clientCorporation}
         id={careerData.title}
-        add='filled'
       />
     </>)
   }

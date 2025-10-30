@@ -42,7 +42,6 @@ export default function FormInput(props) {
       return <FileInput
         type={type}
         name={name}
-// Temp comment
         label={label}
         placeholder={placeholder}
         value={value}

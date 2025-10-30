@@ -20,9 +20,9 @@ ReactDOM.render(
     <BrowserRouter>
       <CandidateContext>
         <CareerContext>
+// Temp comment
           <CategoryContext>
             <ScrollToTop />
-// Temp comment
             <App />
           </CategoryContext>
         </CareerContext>
