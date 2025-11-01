@@ -31,6 +31,7 @@ export default function CareerFavorite () {
                   key={career.id}
                   index={index}
                   data={career}
+                  agoDate={career.createdAt}
                 />
               </>)
             })
@@ -51,6 +52,5 @@ export default function CareerFavorite () {
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
             View All
         </Link>
-      </div>
     </div>
   )

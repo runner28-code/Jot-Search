@@ -189,6 +189,7 @@ export type Candidate = {
     dateAvailableEnd?: string;
     dateI9Expiration?: string;
     dateLastComment?: string;
+    dateLastModified?: string;
     dateNextCall?: string;
     dateOfBirth?: string;
     dayRate?: string;

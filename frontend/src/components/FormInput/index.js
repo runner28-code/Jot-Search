@@ -54,6 +54,7 @@ export default function FormInput(props) {
     case 'multi-select':
       return <AccessibleDropdown
         type={type}
+// Temp comment
         name={name}
         label={label}
         placeholder={placeholder}
@@ -93,6 +94,5 @@ export default function FormInput(props) {
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}
-// Temp comment
       />
   }

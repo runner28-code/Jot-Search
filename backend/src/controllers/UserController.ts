@@ -117,7 +117,6 @@ export class UserController {
       return {
         result,
         error,
-      };
     }
     try {
       if (user.role === COMPANY)

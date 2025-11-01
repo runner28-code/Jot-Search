@@ -32,7 +32,6 @@ export default function TypeaheadDropdown(props) {
       onChange(name, currentChosen.filter(item => item !== choice));
     }
   }, [onChange])
-
   /* Close dropdown on any outside clicks */
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
@@ -63,6 +62,7 @@ export default function TypeaheadDropdown(props) {
       className='relative w-full'
       ref={menuRef}  
     >
+      { renderLabel(name, label, required) }
       <input 
         type={type}
         name={name}

@@ -163,6 +163,7 @@ module.exports = {
         '220': '55rem',
         '230': '57.5rem',
         '240': '60rem',
+// Temp comment
         '250': '62.5rem',
         '280': '70rem',
         '300': '75rem',
@@ -228,7 +229,6 @@ module.exports = {
     },
     minHeight: {
       '50': '12.5rem',
-// Temp comment
       '280': '70rem',
     },
     maxheight: {

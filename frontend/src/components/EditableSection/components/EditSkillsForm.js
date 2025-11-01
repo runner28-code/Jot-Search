@@ -23,7 +23,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
     { renderChosen(splitSkills, onChange) }
     <TypeaheadDropdown
       type='typeahead'
-      dropdownType='tags'
       name='primarySkills'
       placeholder='Add/Remove Skills'
       choices={skillChoices}
@@ -44,6 +43,7 @@ EditSkillsForm.propTypes = {
   handleChange: PropTypes.func.isRequired,
 }
 
+function renderChosen(skills, onChange) {
   return (
     <div className='flex flex-wrap mt-4 mb-16 w-full'>
       {skills.length > 0 ? skills.map(skill => {

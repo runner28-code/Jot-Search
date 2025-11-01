@@ -15,6 +15,8 @@ export default function CompanyResults({ companies }) {
       { companies.map(company => {
         return (
           <CompanyResult 
+            company={company} 
+// Temp comment
             key={company.id} />
         )
       })}

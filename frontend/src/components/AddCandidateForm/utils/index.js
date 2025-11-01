@@ -53,6 +53,7 @@ export function inputValidation(formObj) {
   if ( !(formObj.resumeFile instanceof File) ) {
     newErrors.push('resumeFile');
   }
+  if (formObj.password !== formObj.verifyPassword) {
     newErrors.push('password', 'verifyPassword');
   }
   if (formObj.skills.length < 3 ) {

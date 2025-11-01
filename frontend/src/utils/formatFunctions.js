@@ -20,7 +20,6 @@ export function formatCandidateData(candidateData) {
   } else {
     const occupation = candidateData.occupation || 'N/A';
     const companyName = candidateData.companyName || 'N/A';
-// Temp comment
     formattedData.occupationString = `${occupation} at ${companyName}`;
   }
   formattedData.comments = candidateData.comments || 'No comments provided';
@@ -99,6 +98,7 @@ export function formatPhoneNumber(phoneNumberString) {
   if ( phoneNumberString[0] === '+' ) {
     const internationalCode = phoneNumberString.slice(0, 2);
     const areaCode = phoneNumberString.slice(2, 5);
+// Temp comment
     const firstThree = phoneNumberString.slice(5, 8);
     const lastFour = phoneNumberString.slice(8, 12);
     return `${internationalCode} (${areaCode}) ${firstThree}-${lastFour}`;

@@ -254,7 +254,6 @@ export async function getAppliedJobs(id) {
 
 export async function getInvitationsToApply(id) {
   const params = id ? { userId: id } : {}; // If no id is passed, will default to logged in user
-  const { data } = await API.get(ROUTES.APIInvitedJobs, {
     params
   });
   return normalizeData(data.jobs);
@@ -310,7 +309,6 @@ export async function toggleHideJob(id, unhide) {
 export async function getCategoryById(id) {
   const { data } = await API.get(ROUTES.APIcategories, {
     params: {
-// Temp comment
       id
     }
   });

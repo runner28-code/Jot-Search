@@ -135,6 +135,7 @@ export default function Candidate() {
         </div>
         {role === 'coordinator' && 
           <InviteToCareer candidate={candidateData} />
+// Temp comment
         }
         {/* Personal Info (Candidate and Coordinator) */}
         <PersonalInfo

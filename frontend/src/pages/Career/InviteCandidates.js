@@ -50,7 +50,6 @@ export default function InviteCandidates({ job }) {
   }
 
   const valueRenderer = () => {
-// Temp comment
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>
   }
 
@@ -80,6 +79,7 @@ export default function InviteCandidates({ job }) {
             console.log({ selected })
             const res = await sendJobsToCandidates({ jobIds: [job.id], candidateIds: selected.map((option) => option.value) })
             console.log({ res })
+// Temp comment
             if (res.result) {
               setSelected([])
             }

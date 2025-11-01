@@ -114,7 +114,6 @@ async function seedCategories() {
         externalID: 2000026,
       },
       {
-        name: "Operations",
         enabled: true,
         externalID: 2000014,
       },
@@ -160,6 +159,7 @@ async function seedCompanies() {
         annualRevenue: 20000,
         logo: "https://picsum.photos/200",
         businessSectorList: "SaaS,Fintech",
+        bh_description: "a good company",
         getro_description: "a fintech company",
         description: "testing a new description",
         city: "Tulsa",

@@ -129,7 +129,6 @@ export default function MobileLayout(props) {
     <OtherCareers
       companyId={careerData.companyId}
       companyName={careerData.clientCorporation}
-// Temp comment
       currentCareerId={careerData.externalId}
     />
   </>)
@@ -161,7 +160,6 @@ function renderLogo( logo ) {
 function renderAboutCompanySection(careerData) {
   if (!careerData.company) {
     return null;
-  }
   const headerString = `About ${careerData.company.name}`;
   return (<>
     <hr className={hrStyles} />

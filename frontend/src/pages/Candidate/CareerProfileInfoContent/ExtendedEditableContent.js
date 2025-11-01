@@ -46,7 +46,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     });
   }
 
-// Temp comment
   const handleInputChange = async (event) => {
     const { name, value } = event.target;
     if (name === 'avatar' || name === 'resume') {
@@ -60,7 +59,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   }
 
   const handleCancel = () => {
-    setEditMode(false);
   }
   const handleSubmit = () => {
     let dataToSubmit = {};

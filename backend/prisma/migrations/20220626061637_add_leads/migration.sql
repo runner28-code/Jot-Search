@@ -57,4 +57,5 @@ CREATE TABLE "Lead" (
     "reportToPerson" TEXT,
     "role" TEXT,
     "salary" TEXT,
+    "salaryLow" TEXT,
     "secondarySkills" TEXT,

@@ -402,7 +402,6 @@ function BackToTop() {
     return null;
   }
   return(<>
-    <div className='text-center'>
       <button
         className='outline outline-2 focus:outline outline-royalBlue rounded-lg text-lg text-royalBlue py-6 px-12 mb-12'
         onClick={() => {
@@ -451,6 +450,7 @@ function SocialStyles() {
             />
           </a>
           <a
+            href='https://talent.intulsa.com/'
             target='_blank'
             rel='noopener noreferrer'
           >

@@ -17,6 +17,7 @@ export default function JoinTalentNetwork() {
               Join the InTulsa Talent Network
             </h1>
             <p className='text-sm leading-[3rem] text-softWhite mt-8'>
+// Temp comment
               Build your profile with the type of opportunity you want to attract and next exclusively with our network. Receive email alerts that make you first to know about relevant new opportunities, based on your preferences.
             </p>
             <Link
@@ -35,7 +36,6 @@ export default function JoinTalentNetwork() {
     </>)
   }
   return (<>
-// Temp comment
     {/* Join Hero and call-to-action */}
     <section className='relative h-300 bg-join-hero bg-cover bg-center'>
       <div className='absolute -bottom-100 flex justify-center w-full px-40'>

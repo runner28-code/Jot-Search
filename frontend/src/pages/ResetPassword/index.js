@@ -29,7 +29,6 @@ export default function ResetPassword() {
     event.preventDefault();
 
     if( password !== confirmPassword ) {
-      setMatch(false);
     }
 
     if( password === confirmPassword ) {
@@ -47,7 +46,6 @@ export default function ResetPassword() {
       }
     }
   };
-// Temp comment
 
   const renderSuccess = () => {
     if( success ) {

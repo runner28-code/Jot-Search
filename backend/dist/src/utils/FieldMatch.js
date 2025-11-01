@@ -12,7 +12,6 @@ exports.JobFilter = {
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
         status: "status",
-        hidden: "hidden",
         companyId: "clientCorporationID",
     },
     main: {

@@ -60,7 +60,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);
 
-// Temp comment
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
@@ -97,7 +96,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   }, [activeTab]);
 
   useEffect(() => {
-    const newState = { ...initialFilterState, ...state };
     if (state) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';

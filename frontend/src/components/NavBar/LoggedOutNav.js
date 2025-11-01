@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
 import linkedin_grey from '../../assets/images/social_linkedin_grey.svg';
+import GlobalSearch from '../GlobalSearch';
 import NavMenu from '../NavMenu';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import AuthService from '../../services/auth';
@@ -86,6 +87,7 @@ function DesktopNavBarLayout() {
             <span className='text-white'>Create Account</span>
           </button>
         </Link>
+// Temp comment
         <a href={ROUTES.linkedin}>
           <img
             src={linkedin_grey}

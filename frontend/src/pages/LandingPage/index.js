@@ -83,6 +83,7 @@ function renderLocation() {
     )
   }
 }
+
 function renderColorShapes()  {
   const { width } = useWindowDimensions();
 
@@ -95,6 +96,7 @@ function renderColorShapes()  {
   }
 }
 
+// Temp comment
 function renderJoinTalent() {
   let linkStyle = 'flex items-center justify-center h-18 vw-1024:h-24 bg-buttonLightBlue mt-12 px-16 rounded-lg';
 
