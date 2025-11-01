@@ -9,3 +9,4 @@ const testMode = process.argv[2] === "test";
         await (await BullhornService.getClient()).getCandidates(testMode, 50);
     } catch (error) {
         consoleLog(error);
+    }

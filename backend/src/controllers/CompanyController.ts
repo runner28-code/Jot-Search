@@ -144,7 +144,6 @@ export class CompanyController {
       };
     } catch (e) {
       console.log(e);
-      return { result: false, message: e };
     }
   }
 
@@ -321,3 +320,4 @@ export class CompanyController {
     operator: Operator = "OR"
   ) {
     const _filters =
+      filters?.filter(

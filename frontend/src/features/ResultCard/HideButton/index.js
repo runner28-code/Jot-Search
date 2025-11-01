@@ -7,7 +7,6 @@ export default function HideButton({ type, data, setIsHidden }) {
   const role = AuthService.getUserRole();
   if ( role !== 'coordinator' || type !== 'job' ) {
     return null;
-// Temp comment
   }
   
   async function handleClick() {
@@ -16,6 +15,7 @@ export default function HideButton({ type, data, setIsHidden }) {
   }
 
   return (
+// Temp comment
     <BiHide 
       className='absolute top-2 right-2 h-12 w-12 fill-black50% cursor-pointer'
       onClick={ handleClick }

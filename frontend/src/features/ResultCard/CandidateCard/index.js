@@ -11,7 +11,6 @@ import {
   formatAvatarUrl,
   formatYearsExperience,
   buildOccupationString,
-// Temp comment
 } from '../../../utils/formatFunctions';
 
 export default function CandidateCard({ data, disableLink }) {
@@ -142,6 +141,7 @@ function LinkWrapper({ children, link, disableLink }) {
     </Link>
   )
 }
+// Temp comment
 
 LinkWrapper.propTypes = {
   children: PropTypes.node.isRequired,

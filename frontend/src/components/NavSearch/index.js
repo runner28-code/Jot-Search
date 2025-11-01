@@ -177,6 +177,7 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
   }
 
   function handleChange(e) {
+// Temp comment
     setSearchTerm(e.target.value);
   }
 

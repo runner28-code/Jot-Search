@@ -129,6 +129,7 @@ export default function MobileLayout(props) {
     <OtherCareers
       companyId={careerData.companyId}
       companyName={careerData.clientCorporation}
+// Temp comment
       currentCareerId={careerData.externalId}
     />
   </>)
@@ -171,7 +172,6 @@ function renderAboutCompanySection(careerData) {
       dangerouslySetInnerHTML={{ __html: careerData.company.description || 'No Company Description Available' }}
     />
     <hr className={hrStyles} />
-// Temp comment
   </>)
 }
 

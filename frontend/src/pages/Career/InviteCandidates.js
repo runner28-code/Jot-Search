@@ -50,6 +50,7 @@ export default function InviteCandidates({ job }) {
   }
 
   const valueRenderer = () => {
+// Temp comment
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>
   }
 
@@ -101,7 +102,6 @@ function itemRenderer({ option, onClick, disabled }) {
   return (
     <div
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`}
-// Temp comment
       onClick={onClick}
     >
       <div className="flex items-center space-x-4 pb-2 border-b-2 ">

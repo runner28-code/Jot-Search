@@ -189,7 +189,6 @@ export type Candidate = {
     dateAvailableEnd?: string;
     dateI9Expiration?: string;
     dateLastComment?: string;
-    dateLastModified?: string;
     dateNextCall?: string;
     dateOfBirth?: string;
     dayRate?: string;
@@ -261,6 +260,7 @@ export type Candidate = {
     taxID?: string;
     taxState?: string;
     timeZoneOffsetEST?: string;
+    tobaccoUser?: string;
     totalDependentClaimAmount?: string;
     travelLimit?: string;
     travelMethod?: string;

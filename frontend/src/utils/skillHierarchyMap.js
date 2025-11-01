@@ -353,3 +353,4 @@ export const skills = [
   'Scheduling',
   'SDLC',
   'Security',
+  'SEO',

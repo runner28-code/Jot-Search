@@ -111,6 +111,7 @@ export class UserController {
         error: `Invalid role specified: ${user.role}`,
       };
     }
+
     if (user.role === COORDINATOR) {
       const { result, error } = await register(data);
       return {

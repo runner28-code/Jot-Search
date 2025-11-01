@@ -74,6 +74,7 @@ CareerCard.propTypes = {
     })
   }).isRequired,
   index: PropTypes.number,
+  active: PropTypes.bool,
 }
 
 function DesktopCard({ dataObj, active }) {
@@ -109,6 +110,7 @@ function DesktopCard({ dataObj, active }) {
               className='h-11 mr-5' />
             <p className='text-textBlack'>{addressString}</p>
           </div>
+// Temp comment
           {/* Remote/Onsite/Hybrid */}
           <div className='w-1/3 flex items-center pr-4'>
             <LaptopIcon

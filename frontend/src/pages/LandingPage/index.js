@@ -62,6 +62,7 @@ function renderSearch() {
       />
     </>)
   }
+  return (
     <ExploreSearch
       totalJobs={totalJobsCount}
       totalCompanies={totalCompaniesCount}
@@ -82,7 +83,6 @@ function renderLocation() {
     )
   }
 }
-
 function renderColorShapes()  {
   const { width } = useWindowDimensions();
 

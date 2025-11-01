@@ -208,6 +208,7 @@ module.exports = {
       'h6': '2.8rem',
       'h5': '3.2rem',
       'h4': '3.6rem',
+      'h3': '4.2rem',
       'h2': '4.8rem',
       'h1': '5.6rem'
     },
@@ -227,6 +228,7 @@ module.exports = {
     },
     minHeight: {
       '50': '12.5rem',
+// Temp comment
       '280': '70rem',
     },
     maxheight: {

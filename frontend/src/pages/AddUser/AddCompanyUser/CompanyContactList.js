@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany }) => {

@@ -1,7 +1,6 @@
 /*
   Warnings:
 
-  - You are about to drop the column `externalID` on the `Candidate` table. All the data in the column will be lost.
 
 */
 -- AlterTable
@@ -50,3 +49,4 @@ CREATE TABLE "ClientContact" (
     "nickName" TEXT,
     "numEmployees" TEXT,
     "occupation" TEXT,
+    "office" TEXT,

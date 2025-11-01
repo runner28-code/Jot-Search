@@ -160,7 +160,6 @@ async function seedCompanies() {
         annualRevenue: 20000,
         logo: "https://picsum.photos/200",
         businessSectorList: "SaaS,Fintech",
-        bh_description: "a good company",
         getro_description: "a fintech company",
         description: "testing a new description",
         city: "Tulsa",
@@ -168,6 +167,7 @@ async function seedCompanies() {
         billingPhone: "876-567-9876",
         companyURL: "pepsoda@gmail.com",
         companyDescription: "Best at test",
+        numEmployees: 50,
       },
     ],
   });

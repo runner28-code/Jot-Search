@@ -47,7 +47,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
       className={addClass ? styles + addClass : styles}
       onClick={handleFavoriteClick}
     />
-  )
 }
 
 FavoriteButton.propTypes = {

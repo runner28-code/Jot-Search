@@ -324,7 +324,6 @@ export const getCompanyDashboardStats = async (days: number) => {
 
     result = (await db.$queryRaw`
       SELECT COUNT(*) FROM "_userSavedCompanies"
-    `) as any;
     const companyFavoritesCurrentPeriod = result[0]?.count ?? 0;
 
     result = (await db.$queryRaw`
@@ -527,3 +526,7 @@ export const getStats = async (userId: string) => {
     const savedJobsCountQuery = `SELECT COUNT(*) as count FROM \`${DATASET_MAIN}.${Tables.SAVEDJOBS}\`
                                     WHERE candidate = '${userId}'`;
 
+    const totalJobsCountQuery = `SELECT COUNT(*) as count FROM \`${DATASET_BULLHORN}.${Tables.JOBS}\``;
+
+    const savedCompaniesCountQuery = `SELECT COUNT(*) as count FROM \`${DATASET_MAIN}.${Tables.SAVED_COMPANIES}\`
+                                        WHERE candidate = '${userId}'`;

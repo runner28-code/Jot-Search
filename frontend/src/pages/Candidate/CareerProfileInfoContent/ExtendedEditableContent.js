@@ -43,10 +43,10 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     setFormData({
       ...formData,
       [name]: value,
-// Temp comment
     });
   }
 
+// Temp comment
   const handleInputChange = async (event) => {
     const { name, value } = event.target;
     if (name === 'avatar' || name === 'resume') {

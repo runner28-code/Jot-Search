@@ -45,6 +45,7 @@ exports.CompanyFilter = {
         bh_id: "bh_id",
         id: "id",
     },
+};
 exports.USER_FILTER = {
     firstname: "firstname",
     lastname: "lastname",
@@ -53,3 +54,4 @@ exports.USER_FILTER = {
     city: "city",
     state: "state",
     skills: "skills",
+    skillSet: "skillSet",

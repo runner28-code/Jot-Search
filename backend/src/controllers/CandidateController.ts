@@ -213,6 +213,7 @@ export class CandidateController {
           orderBy: {
             firstname: "asc",
           },
+        });
         const candidateOnlyPromise = candidatesPromise = db.candidate.findMany({
           take: count || 100,
           skip: skip < 0 ? 0 : skip,
@@ -368,3 +369,4 @@ export class CandidateController {
     try {
       const jobsPromise = getJobsList(body.jobIds);
       const candidatesPromise = db.candidate.findMany({
+        where: {

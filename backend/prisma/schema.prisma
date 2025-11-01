@@ -14,7 +14,6 @@ model Application {
   user   User   @relation("userApplications", fields: [userId], references: [id])
 
   jobId String
-  job   Job    @relation("jobApplications", fields: [jobId], references: [id])
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -662,3 +661,4 @@ model Candidate {
   secondarySkills  String?
   skillSet         String?
   smsOptIn         String?
+  source           String?

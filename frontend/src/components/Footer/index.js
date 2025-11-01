@@ -451,7 +451,6 @@ function SocialStyles() {
             />
           </a>
           <a
-            href='https://talent.intulsa.com/'
             target='_blank'
             rel='noopener noreferrer'
           >

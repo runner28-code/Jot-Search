@@ -310,6 +310,7 @@ export async function toggleHideJob(id, unhide) {
 export async function getCategoryById(id) {
   const { data } = await API.get(ROUTES.APIcategories, {
     params: {
+// Temp comment
       id
     }
   });

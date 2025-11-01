@@ -28,6 +28,7 @@ CREATE TABLE "Lead" (
     "fax" TEXT,
     "fax2" TEXT,
     "fax3" TEXT,
+    "firstName" TEXT,
     "isAnonymized" BOOLEAN,
     "isDayLightSavingsTime" BOOLEAN,
     "isDeleted" BOOLEAN,
@@ -56,5 +57,4 @@ CREATE TABLE "Lead" (
     "reportToPerson" TEXT,
     "role" TEXT,
     "salary" TEXT,
-    "salaryLow" TEXT,
     "secondarySkills" TEXT,

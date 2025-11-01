@@ -12,7 +12,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
   const filtersArr = [
     {
       key: 'status',
-      value: ['Active', 'Open']
     },
     {
       key: 'companyId',
@@ -41,6 +40,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
             return null;
           }
           return <CareerCard
+            key={index}
             data={career}
           />
         })

@@ -43,7 +43,6 @@ export default function FeaturedCompanies() {
           Browse All
         </Link>
       </div>
-    </div>
   )
 }
 function renderColorShapes() {

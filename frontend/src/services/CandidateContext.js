@@ -13,13 +13,11 @@ const mockCandidateData = [
     avatar_url: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/zach_3_t1naqe.webp', // Missing from Bullhorn Schema
     occupation: 'Software Engineer',
     companyName: 'Aerovision',
-    address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
     isLooking: true,
     isWarm: true,
-// Temp comment
   },
   {
     id: 'b5a00114-1d3d-40f3-afb9-fc542fa22af6',

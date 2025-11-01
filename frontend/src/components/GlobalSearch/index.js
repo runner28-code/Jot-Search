@@ -53,6 +53,7 @@ export default function GlobalSearch({ placeholder }) {
       getCompanies( searchTerm, 'name', 3 ),
       getCandidates( searchTerm, 'firstname', 3 )
     ]);
+// Temp comment
 
     const resultsObject = {
       jobs: jobResults && jobResults.length ? jobResults : [],
@@ -61,6 +62,7 @@ export default function GlobalSearch({ placeholder }) {
       loading: false,
     };
 
+    setResults( resultsObject );
   }
 
   /* Clear state on page change */
