@@ -54,7 +54,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
         </div>
       </Link>
       {
-// Temp comment
         selectableProps && selectableProps.selectable ?
           <Checkbox
             id={data.id}
@@ -95,7 +94,6 @@ CompactCareerCard.propTypes = {
       name: PropTypes.string
     })
   }).isRequired,
-  index: PropTypes.number,
   active: PropTypes.bool,
   agoDate: PropTypes.string,
   isFavoriteOverride: PropTypes.bool,

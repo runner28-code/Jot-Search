@@ -15,6 +15,7 @@
                     "protocol": "tcp"
                 }
             ], 
+            "essential": true,
             "logConfiguration": { 
                 "logDriver": "awslogs",
                 "options": { 
@@ -46,7 +47,6 @@
                 },
                 {
                     "name": "DATASET_GETRO", 
-                    "value": "inTulsa_Getro"
                 },
                 {
                     "name": "DATASET_MAIN", 
@@ -87,3 +87,4 @@
                 {
                     "name": "SENDGRID_SECRET", 
                     "value": "{SECRET_SENDGRID_SECRET}"
+                },

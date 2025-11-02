@@ -658,6 +658,7 @@ model Candidate {
   recentClientList String[]
   referredBy       String?
   salary           BigInt?
+  salaryLow        BigInt?
   secondarySkills  String?
   skillSet         String?
   smsOptIn         String?
@@ -666,3 +667,5 @@ model Candidate {
   ssn              String?
 
   stateAdditionalWithholdingsAmount String?
+  stateExemptions                   String?
+  stateFilingStatus                 String?

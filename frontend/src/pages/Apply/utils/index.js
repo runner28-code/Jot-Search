@@ -68,7 +68,6 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
   }
 
   return (
-    <label
       htmlFor={`${name}-${attribute}`}
       className='mt-4 mb-5 flex items-center text-black'
     >
@@ -78,6 +77,7 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
         id={`${name}-${attribute}`}
         className='h-8 w-8 ml-2'
         checked={optionValue === true || optionValue === attribute}
+        onChange={handleChange}
         disabled={disabled}
       />
       <p className='text-md ml-2'>{attribute}</p>

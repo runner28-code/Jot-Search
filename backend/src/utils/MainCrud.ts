@@ -21,7 +21,6 @@ export const saveApplication = async (job: string, candidate: string) => {
           job: {
             connect: {
               id: job,
-            },
           }
         },
       });
@@ -128,3 +127,4 @@ export const getCandidatesOnJob = async (jobId: string) => {
   try {
     const job = await db.job.findFirst({
       where: {
+        id: jobId,

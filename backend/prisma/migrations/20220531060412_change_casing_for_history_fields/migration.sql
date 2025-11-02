@@ -7,4 +7,5 @@
 
 */
 -- AlterTable
+ALTER TABLE "History" DROP COLUMN "batch_id",
 DROP COLUMN "record_id",

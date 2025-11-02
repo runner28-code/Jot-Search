@@ -125,6 +125,7 @@ export class UserController {
       else await sendVerification(user.email, user.firstname || "");
     } catch (error) {
       return {
+        result: false,
         error: "Please check email, email maybe invalid one",
       };
     }
@@ -206,3 +207,4 @@ export class UserController {
         error:
           "Only coordinators can make registration requests for other coordinators",
       };
+    }

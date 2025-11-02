@@ -91,3 +91,4 @@ export const IUSER = {
   willRelocate: "",
   willReceiveNotification: false,
   ethnicity: "",
+  workAuthorized: "",

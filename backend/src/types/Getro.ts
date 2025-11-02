@@ -83,3 +83,4 @@ export type User = {
   avatar_url?: string;
   bio?: string;
   dribbble_url?: string;
+  email?: string;

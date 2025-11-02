@@ -129,6 +129,7 @@ export const saveBullhornJobs = async (jobs: any[]) => {
           if (excludeFields.includes(key)) {
             delete jobData[key];
           }
+        });
 
         const newJob = await db.job.create({
           data: jobData,
@@ -286,3 +287,5 @@ export const migrateUserInTPP = async (data: Partial<DbCandidate>) => {
         `Migration Failed: Bullhorn User (bh_id=${data.externalId}) is already migratd`
       );
       return;
+    }
+    await db.candidate.create({ data });

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+// Temp comment
 import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
 import linkedin_grey from '../../assets/images/social_linkedin_grey.svg';
 import GlobalSearch from '../GlobalSearch';
@@ -70,6 +71,7 @@ function DesktopNavBarLayout() {
         >
           <span className='text-ml text-black70%'>Our Website</span>
           <HiOutlineExternalLink className='stroke-smokeGray h-7 w-7 ml-3' />
+        </a>
         <Link
           to={ROUTES.login}
           className='ml-4 vw-1350:ml-8 mr-4'

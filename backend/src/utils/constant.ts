@@ -438,3 +438,5 @@ const job_filter_exclude_keys = [
   "worker ii",
   "write",
   "writer",
+  "x-ray",
+  "xray",

@@ -118,3 +118,4 @@ export type CompanySearchByFilterResponse = {
   companies?: Company[];
   total?: number;
   message?: any;
+};

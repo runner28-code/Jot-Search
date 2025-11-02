@@ -330,6 +330,7 @@ function NavFooterMobile() {
         </a>
         <Address />
       </div>
+      <div className='flex flex-col basis-6/12 px-8'>
         <Link
           to={ROUTES.landingPage}
           className={linkStyle}
@@ -398,7 +399,6 @@ function BackToTop() {
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {
-    return null;
   }
   return(<>
     <div className='text-center'>

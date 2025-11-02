@@ -19,7 +19,6 @@ export default function ResetPassword() {
   const handlePassword = (event) => {
     setPassword(event.target.value);
   }
-// Temp comment
   const handleConfirmPassword = (event) => {
     setConfirmPassword(event.target.value);
   }
@@ -62,4 +61,10 @@ export default function ResetPassword() {
           </Link>
         </div>
       )
+    }
+  }
+
+  const renderError = () => {
+    if ( error ) {
+      return ( <div className='text-error mb-4'>{error}</div> )
     }

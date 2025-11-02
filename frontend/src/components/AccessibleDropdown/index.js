@@ -129,6 +129,7 @@ function buttonText(name, placeholder, currentChosen) {
   }
   
   return buttonString;
+// Temp comment
 }
 
 function renderLabel(name, label, required) {
@@ -193,7 +194,6 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
   if ( stylesObject.listItemStyles ) {
     listItemStyles += stylesObject.listItemStyles;
   }
-// Temp comment
 
   return Object.entries(choiceObject).map( ([key, value], index) => {
     if ( !value ) {

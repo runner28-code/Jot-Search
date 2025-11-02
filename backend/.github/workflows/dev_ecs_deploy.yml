@@ -18,6 +18,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     environment: dev
+
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -74,3 +75,4 @@ jobs:
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
     - name: Fill in the new image ID in the Amazon ECS task definition
       id: task-def
+      uses: aws-actions/amazon-ecs-render-task-definition@v1

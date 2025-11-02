@@ -57,6 +57,7 @@ class AuthService {
   logout() {
     this.clearStorage();
     window.location.assign('/landing-page');
+  }
 
   clearStorage() {
     // Clear user token and profile data from localStorage

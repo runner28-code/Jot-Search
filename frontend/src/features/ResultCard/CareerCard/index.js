@@ -86,7 +86,6 @@ function DesktopCard({ dataObj, active }) {
       tabIndex='0'
       state={ active ? true : false }
     >
-      {/* Card Image */}
       <div className='flex flex-col'>
         <div className='h-62 w-62 p-4 mr-18 flex justify-center items-center border border-solid border-smokeGray'>
           { renderCardImage(data) }

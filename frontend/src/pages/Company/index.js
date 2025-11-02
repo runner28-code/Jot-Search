@@ -180,6 +180,7 @@ function renderSectorList(companyData, width , stylesObject) {
               <li key={index}>{sector}</li>
             )
           }
+// Temp comment
         </ul>
       </div>   
     </>

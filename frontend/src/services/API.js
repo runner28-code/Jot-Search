@@ -367,3 +367,88 @@ export async function getLandingPageStats() {
     console.log(err);
     return err;
   }
+}
+
+//* UTILITIES
+function formatCandidateFilters(filtersArr) {
+  // Remove any falsey values from filtersArr
+  const truthyFilters = filtersArr.filter(filter => {
+    return !!filter.value;
+  });
+
+  // Format filters
+  const formattedFilters = truthyFilters.map(filter => {
+    switch (filter.key) {
+      case 'experience': {
+        return filter
+      }
+      case 'open to relocation': {
+        const choiceBoolean = filter.value === 'No' ? false : true;
+        return {
+          key: 'willRelocate',
+          value: choiceBoolean
+        }
+      }
+      case 'authorized to work in the us': {
+        const choiceBoolean = filter.value === 'No' ? false : true;
+        return {
+          key: 'workAuthorized',
+          value: choiceBoolean
+        }
+      }
+      case 'actively looking': {
+        const choiceBoolean = filter.value === 'No' ? false : true;
+        return {
+          key: 'activelyLooking',
+          value: choiceBoolean
+        }
+      }
+      case 'category': {
+        const categories = JSON.parse(localStorage.getItem('categories'));
+        const categoryId = categories.find(category => category.name === filter.value).id;
+        return {
+          key: 'categoryId',
+          value: categoryId
+        }
+      }
+      case 'degree': {
+        return {
+          key: 'educationDegree',
+          value: filter.value
+        }
+      }
+      case 'Remote Availability': {
+        return {
+          key: 'employeeType',
+          value: {
+            hasSome: filter.value
+          }
+        }
+      }
+      case 'firstname': {
+        return {
+          key: 'firstName',
+          value: filter.value
+        }
+      }
+      case 'employment type': {
+        return {
+          key: 'employmentPreference',
+          value: 
+            filter.value
+          
+        }
+      }
+      default:
+        return filter;
+    }
+  });
+
+  // Add status filter before sending request if not already present
+  if (!formattedFilters.some(filter => filter.key === 'status')) {
+    formattedFilters.push({
+      key: 'status',
+      value: ACTIVE_STATUSES
+    });
+  }
+  return formattedFilters;

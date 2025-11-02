@@ -21,7 +21,6 @@ export default function InviteCandidates({ job }) {
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
   const candidateOptions = candidates?.map(candidate => {
-    return {
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
       value: candidate.id,
       candidate
@@ -54,6 +53,7 @@ export default function InviteCandidates({ job }) {
   }
 
   return (
+    <section className="flex flex-col space-y-8 bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4">
       <h2 className="text-h4">Send Candidates Invitations to apply to career</h2>
 
       {isSendingJob && <div className="text-center">Sending Invitations...</div>}

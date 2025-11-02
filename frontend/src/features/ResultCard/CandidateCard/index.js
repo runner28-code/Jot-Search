@@ -205,6 +205,7 @@ function SkillTag({ skill }) {
 SkillTag.propTypes = {
   skill: PropTypes.string.isRequired,
 }
+// Temp comment
 
 function InfoLabel({ label, value }) {
   return (

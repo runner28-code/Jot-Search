@@ -296,3 +296,4 @@ export type Lead = {
     dateLastComment?: string;
     dateLastModified?: string;
     dateLastVisited?: string;
+    description?: string;

@@ -10,3 +10,4 @@ CREATE TABLE "Address" (
     "countryCode" INTEGER NOT NULL,
     "countryName" TEXT NOT NULL,
     "countryID" INTEGER NOT NULL,
+

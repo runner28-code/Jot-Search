@@ -96,6 +96,7 @@ function seedCandidates() {
                     email: "jsmithers@gmail.com",
                     comments: "He does everything!",
                 },
+// Temp comment
                 {
                     address: "124 Main St",
                     address_address1: "124 Main St",

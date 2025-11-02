@@ -1,4 +1,4 @@
-ALTER TABLE "User" ADD COLUMN     "addressId" TEXT,
+-- AlterTable
 ADD COLUMN     "annualRevenue" BIGINT,
 ADD COLUMN     "billingAddressId" TEXT;
 

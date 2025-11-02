@@ -58,7 +58,6 @@ FavoriteButton.propTypes = {
     candidate: PropTypes.string,
     status: PropTypes.string,
   }).isRequired,
-  isFavoriteOverride: PropTypes.bool,
 }
 
 function getIdByType(type, data) {

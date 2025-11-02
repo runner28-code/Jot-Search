@@ -146,7 +146,6 @@ export function buildSearchFiltersObj(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = {};
   Object.keys(filterObject).forEach(key => {
-// Temp comment
     if ( !anyValues.includes(filterObject[key]) ) {
       let filterKey = key.toLowerCase();
       if ( key === 'remote' ) {

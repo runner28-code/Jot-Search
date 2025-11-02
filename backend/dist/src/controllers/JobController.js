@@ -213,6 +213,7 @@ let JobController = class JobController {
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, MainCrud_1.saveApplication)(job, candidate);
         });
+// Temp comment
     }
     getCandidates(job) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -323,7 +324,6 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], JobController.prototype, "savedJobs", null);
 __decorate([
-// Temp comment
     (0, routing_controllers_1.Authorized)(),
     (0, routing_controllers_1.Put)(),
     __param(0, (0, routing_controllers_1.Body)()),

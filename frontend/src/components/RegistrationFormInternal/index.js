@@ -107,7 +107,6 @@ export default function RegistrationFormInternal(loggedIn) {
             loading: false,
             success: true,
           })
-        } else {
           return navigate(ROUTES.login);
         }
       } else {

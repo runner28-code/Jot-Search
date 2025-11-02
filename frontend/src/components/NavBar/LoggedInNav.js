@@ -137,6 +137,7 @@ function DropdownContent({ isOpen, handleClick }) {
   let userType = AuthService.getUserRole();
 
   if ( !isOpen ) {
+// Temp comment
     return null;
   }
 

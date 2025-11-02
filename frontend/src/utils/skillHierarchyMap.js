@@ -33,7 +33,6 @@ export const roles = {
     'Executive Assistant',
     'Recruiting',
     'People Operations',
-    'Human Resources',
     'IT',
     'Entrepreneurship'
   ],
@@ -272,6 +271,7 @@ export const skills = [
   'MongoDB',
   'MS Office',
   'Multimedia',
+  'MVC',
   'MySQL',
   'Negotiation',
   'Network',
@@ -355,3 +355,4 @@ export const skills = [
   'SEO',
   'Series 6',
   'Series 63',
+  'Series 7',

@@ -1,4 +1,3 @@
-/*
   Warnings:
 
   - The `employment_types` column on the `GetroJobInfo` table would be dropped and recreated. This will lead to data loss if there is data in the column.
@@ -10,3 +9,4 @@ ALTER TABLE "GetroJobInfo" ADD COLUMN     "bounty" TEXT,
 ADD COLUMN     "closed_at" TIMESTAMP(3),
 ADD COLUMN     "deactivated_at" TIMESTAMP(3),
 DROP COLUMN "employment_types",
+ADD COLUMN     "employment_types" TEXT[],

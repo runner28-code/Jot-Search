@@ -79,9 +79,9 @@ export default function Candidate() {
     }
     if (updateResponse.result === false) {
       console.log('Error updating candidate: ', updateResponse.error);
+    }
   }
 
-  const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 
   if (loading) { return <LoadingSpinner /> }
   return (

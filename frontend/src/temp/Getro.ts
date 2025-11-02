@@ -43,13 +43,13 @@ export type Job = {
     liked?: string;
     locations?: string;
     organization_doman?: string;
+    organization_id?: string;
     organization_logo_url?: string;
     organization_name?: string;
     organization_slug?: string;
     passes_filter?: string;
     posted_at?: string;
     slug?: string;
-    source?: string;
     status?: string;
     title?: string;
     url?: string;

@@ -30,7 +30,6 @@ CREATE TABLE "Company" (
     "billingFrequency" TEXT,
     "billingPhone" TEXT,
     "branchId" TEXT,
-    "businessSectorList" TEXT[],
     "companyDescription" TEXT,
     "companyURL" TEXT,
     "competitors" TEXT[],
@@ -93,3 +92,4 @@ CREATE TABLE "Company" (
     "customTextBlock2" TEXT,
     "customTextBlock3" TEXT,
     "customTextBlock4" TEXT,
+    "customTextBlock5" TEXT,

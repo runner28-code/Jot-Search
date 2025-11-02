@@ -13,6 +13,7 @@ import {
 import {
   inputValidation,
   formatFormObj,
+  renderButtonOrLoading,
   renderErrorBlock,
   renderHeader
 } from './utils';
