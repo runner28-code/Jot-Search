@@ -77,7 +77,6 @@ HeaderContent.propTypes = {
   })
 }
 
-// Temp comment
 export default function HeaderMobile({ companyData }) {
   return (
     <>

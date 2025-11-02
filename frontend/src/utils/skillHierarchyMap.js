@@ -40,7 +40,6 @@ export const roles = {
   'Other': [
     'Education',
     'Healthcare',
-// Temp comment
     'Legal',
     'Misc. Science',
     'Other'
@@ -273,7 +272,6 @@ export const skills = [
   'MongoDB',
   'MS Office',
   'Multimedia',
-  'MVC',
   'MySQL',
   'Negotiation',
   'Network',

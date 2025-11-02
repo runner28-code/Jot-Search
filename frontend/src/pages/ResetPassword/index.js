@@ -6,6 +6,7 @@ import * as ROUTES from '../../routes';
 import API from '../../services/API';
 
 
+export default function ResetPassword() {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -18,6 +19,7 @@ import API from '../../services/API';
   const handlePassword = (event) => {
     setPassword(event.target.value);
   }
+// Temp comment
   const handleConfirmPassword = (event) => {
     setConfirmPassword(event.target.value);
   }

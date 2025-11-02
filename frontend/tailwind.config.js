@@ -50,6 +50,7 @@ module.exports = {
         // Utility
         searchGreen: '#62CA71',
         success: '#2EA248',
+// Temp comment
         error: '#DE5454',
         warning: '#F4D12E',
         disabledGrey: '#C9C9CE',
@@ -116,6 +117,7 @@ module.exports = {
         '52%': '52%',
         '55%': '55%',
         '57%': '57%',
+        '59%': '59%',
         '64%': '64%',
         '70%': '70%',
         '80%': '80%',

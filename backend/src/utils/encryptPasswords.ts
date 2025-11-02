@@ -4,7 +4,6 @@
 
 import { encryptPassword } from "./password";
 import { User, USERKEYS } from "../types/User";
-import { BigQueryService } from "../services/BigQueryService";
 import { DATASET_MAIN, Tables } from "../types/Common";
 
 (async () => {
@@ -32,6 +31,7 @@ import { DATASET_MAIN, Tables } from "../types/Common";
               user.password = encryptPassword(user.password);
 
               const update_query = `
+                UPDATE \`${DATASET_MAIN}.${Tables.USER}\`
                 SET password = '${user.password}'
                 WHERE email = '${user.email}'
               `;

@@ -79,7 +79,6 @@ export default function Apply() {
       if ( candidateData.resume ) {
         setUseExistingResume(true);
       }
-      // Adding default as profile doesn't have ethnicity to default to
       if( candidateData.ethnicity === undefined ) {
         candidateData.ethnicity = 'Prefer not to say';
       }
@@ -134,7 +133,6 @@ export default function Apply() {
   async function submitData() {
     // Format object for API
     const formattedObject = await formatApplicationObject(applicationObject, useExistingResume);
-// Temp comment
     if ( isLoggedIn ) {
       // Check if any values have changed, update user with new values if so
       updateCandidateIfNeeded(formattedObject, originalObject);

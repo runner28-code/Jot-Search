@@ -8,7 +8,6 @@ export default function TextInput({type, name, placeholder, label, value, requir
     } else {
       onChange(name, e);
     }
-  }
 
   return (
     <div className='w-full'>
@@ -37,6 +36,7 @@ function renderLabel( label, required, name ) {
 
   const labelString = label && required ? `${label} *` : label;
   return (
+    <label
       className={`block text-charcoal text-xs vw-640:text-base ml-xxs mb-xs`}
       htmlFor={ name }
     >

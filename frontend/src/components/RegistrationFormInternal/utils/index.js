@@ -50,6 +50,7 @@ export function renderHeader(addType) {
           </span>
           <Link
             to={ROUTES.login}
+            className='text-ml text-royalBlue leading-loose underline mx-4'
           >
             Log in here.
           </Link>

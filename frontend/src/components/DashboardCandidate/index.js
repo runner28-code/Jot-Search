@@ -20,6 +20,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   const active = ' bg-royalBlue';
   if( width >= 990 ) {
     return null;
+// Temp comment
   }
   return (<>
     <div className='bg-sky-500 border-b-2 border-white flex items-start justify-start text-white flex-col px-6 py-8'>
@@ -36,7 +37,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }
             to={ROUTES.companies}
           >
-// Temp comment
             <CompanyIcon />
             <p className='ml-4'>Companies</p>
           </Link>

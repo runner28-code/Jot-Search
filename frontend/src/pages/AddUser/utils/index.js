@@ -1,3 +1,4 @@
+// Temp comment
 export function validateInput(name, value, errors, password) {
   const newErrors = { ...errors };
   
@@ -15,6 +16,7 @@ export function validateInput(name, value, errors, password) {
   else if ( name === 'verifyPassword' ) {
     if ( value !== password ) {
       newErrors[name] = 'Passwords do not match';
+    } else {
       newErrors[name] = '';
     }
   } 

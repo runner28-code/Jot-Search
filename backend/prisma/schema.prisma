@@ -615,6 +615,7 @@ model Candidate {
 
   invitedJobs        CandidateJobInvites[]
   invitedCompanies   CompanyCandidateInvites[]
+
   firstName String?
   lastName  String?
 
@@ -657,7 +658,6 @@ model Candidate {
   recentClientList String[]
   referredBy       String?
   salary           BigInt?
-  salaryLow        BigInt?
   secondarySkills  String?
   skillSet         String?
   smsOptIn         String?

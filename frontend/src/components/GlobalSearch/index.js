@@ -25,6 +25,7 @@ export default function GlobalSearch({ placeholder }) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
+// Temp comment
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
@@ -32,6 +33,7 @@ export default function GlobalSearch({ placeholder }) {
     debounceSearchTermFunction( searchTerm );
   }
 
+  /* Debounce functions will wait until user stops typing to send API call */
   const debounceSearchTermFunction = useCallback(
     debounce( handleDebounce, 300 ),
     []

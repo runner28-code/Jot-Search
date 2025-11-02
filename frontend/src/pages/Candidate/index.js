@@ -79,7 +79,6 @@ export default function Candidate() {
     }
     if (updateResponse.result === false) {
       console.log('Error updating candidate: ', updateResponse.error);
-    }
   }
 
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
@@ -126,7 +125,6 @@ export default function Candidate() {
         </div>
       }
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}
-// Temp comment
       <div className='px-4'>
         <div className='border rounded-2xl bg-white p-15 relative'>
           <CareerProfileInfo

@@ -34,7 +34,6 @@ CREATE TABLE "Candidate" (
     "fax2" TEXT,
     "fax3" TEXT,
     "firstName" TEXT,
-    "lastName" TEXT,
     "gender" TEXT,
     "hourlyRate" TEXT,
     "hourlyRateLow" TEXT,

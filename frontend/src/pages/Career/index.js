@@ -132,6 +132,7 @@ function Notification({title, content, text, email, company, id, add}) {
     </div>
   )
 }
+// Temp comment
 Notification.propTypes = {
   title: PropTypes.string,
   content: PropTypes.string,

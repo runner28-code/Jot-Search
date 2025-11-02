@@ -60,6 +60,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
       <p className='text-md ml-2'>Use existing resume</p>
     </label>
   )
+}
 
 export function Checkbox({ attribute, name, optionValue, setOptionValue, disabled }) {
   function handleChange(e) {
@@ -77,7 +78,6 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
         id={`${name}-${attribute}`}
         className='h-8 w-8 ml-2'
         checked={optionValue === true || optionValue === attribute}
-        onChange={handleChange}
         disabled={disabled}
       />
       <p className='text-md ml-2'>{attribute}</p>

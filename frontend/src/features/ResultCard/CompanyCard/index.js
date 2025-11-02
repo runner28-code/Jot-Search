@@ -32,6 +32,7 @@ export default function CompanyCard({ data }) {
     <div
       className='relative w-full'
       key={data.id}
+// Temp comment
     >
       <Link
         to={`${ROUTES.companies}/${data.id}`}

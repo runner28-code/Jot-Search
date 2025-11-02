@@ -36,5 +36,4 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   function handleFilterChange(name, value) {
     setFilterState({
       ...filterState,
-      [name]: value,
     });

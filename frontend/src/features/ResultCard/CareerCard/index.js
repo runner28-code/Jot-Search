@@ -162,7 +162,6 @@ DesktopCard.propTypes = {
       createdAt: PropTypes.string,
       featured: PropTypes.bool,
       category: PropTypes.shape({
-// Temp comment
         id: PropTypes.number,
         name: PropTypes.string
       })

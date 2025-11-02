@@ -68,7 +68,6 @@ export default function AddCoordinator() {
     }
     // Update form object with new value
     setFormObject({ ...formObject, [name]: value });
-// Temp comment
   }
 
   function handleSubmit(e) {

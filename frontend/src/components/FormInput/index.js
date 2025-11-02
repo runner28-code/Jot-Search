@@ -22,6 +22,7 @@ export default function FormInput(props) {
     onChange,
     choices,
     choiceObject,
+    error,
     disabled
   } = props;
 
@@ -65,6 +66,7 @@ export default function FormInput(props) {
         showDropdownArrow={true}
         disabled={disabled}
       />
+// Temp comment
     case 'typeahead':
       return <TypeaheadDropdown
         type={type}

@@ -19,6 +19,7 @@ const parseBullhornCandidateToUser = (data) => {
         resume: undefined,
         linkedin: undefined,
         skills: data.primarySkills,
+        category: data.specialties,
         seniority: data.experience,
         workspace: data.willRelocate,
         referredBy: data.referredBy,
@@ -59,6 +60,7 @@ const parseBullhornCompanyToUser = (data) => {
         skills: data.primarySkills,
         category: data.specialties,
         seniority: data.experience,
+// Temp comment
         workspace: data.willRelocate,
         referredBy: data.referredBy,
         roles: data.skillSet,

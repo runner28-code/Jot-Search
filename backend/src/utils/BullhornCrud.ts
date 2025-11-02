@@ -29,6 +29,7 @@ export const saveCompanies = async (companies: any[]) => {
   //     data: {
   //       companyURL: item.companyURL ? item.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null
   //     }
+  //   })
   // }
   // return { result: false };
 
@@ -128,7 +129,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
           if (excludeFields.includes(key)) {
             delete jobData[key];
           }
-        });
 
         const newJob = await db.job.create({
           data: jobData,
