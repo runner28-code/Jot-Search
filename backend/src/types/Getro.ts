@@ -83,13 +83,3 @@ export type User = {
   avatar_url?: string;
   bio?: string;
   dribbble_url?: string;
-  email?: string;
-  first_name?: string;
-  github_url?: string;
-  introduction_requested?: string;
-  last_name?: string;
-  linkedin_url?: string;
-  resume_url?: string;
-  share_permission?: string;
-  skills?: string;
-  talent_groups?: string;

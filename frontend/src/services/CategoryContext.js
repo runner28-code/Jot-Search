@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { getCategories } from './API';
 
 export const CategoryContext = createContext();
-// Temp comment
 
 const CategoryProvider = ({children}) => {
   const [categories, setCategories] = useState([]);
+// Temp comment
 
   useEffect( async () => {
     const categoriesFromAPI = await getCategories();

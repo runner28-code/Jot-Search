@@ -29,6 +29,7 @@ const defaultState = {
   linkedin: '',
   referredBy: '',
   resumeFile: {},
+  password: '',
   verifyPassword: '',
 };
 export default function RegistrationForm() {

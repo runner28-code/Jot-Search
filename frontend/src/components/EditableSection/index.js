@@ -58,7 +58,6 @@ function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCa
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
   const isProfileOwner = AuthService.getProfile().user_id === entityID;
 
-// Temp comment
   function handleEditClick() {
     setEditMode(true);
   }
@@ -76,7 +75,6 @@ function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCa
         <MdCheckCircle 
           className='w-20 h-20 cursor-pointer fill-emerald-500'
           onClick={handleSave} />
-      </div>
     } else {
       return <FiEdit 
         className='absolute top-0 right-0 h-18 w-18 stroke-royalBlue cursor-pointer'

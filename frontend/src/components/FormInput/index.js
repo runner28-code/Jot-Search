@@ -22,7 +22,6 @@ export default function FormInput(props) {
     onChange,
     choices,
     choiceObject,
-    error,
     disabled
   } = props;
 
@@ -83,6 +82,7 @@ export default function FormInput(props) {
       />
     case 'password': // fall through to default
     default: // type == 'text' || 'password'
+      return <TextInput
         type={type}
         name={name}
         label={label}

@@ -53,7 +53,6 @@ export default function DashboardPublic({togglePassState}) {
           >
             <img src={filterIcon} />
             { width >= 990 && <FilterText />}
-          </button>
         </div>
       </div>
     </div>

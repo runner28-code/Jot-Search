@@ -58,7 +58,6 @@ export default function InviteCandidates({ job }) {
       <h2 className="text-h4">Send Candidates Invitations to apply to career</h2>
 
       {isSendingJob && <div className="text-center">Sending Invitations...</div>}
-// Temp comment
       {successfullySentJob && <div className="text-center">Invitations Sent!</div>}
 
       <SelectedValues />

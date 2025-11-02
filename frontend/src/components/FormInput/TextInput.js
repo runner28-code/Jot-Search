@@ -31,14 +31,12 @@ TextInput.propTypes = {
 }
 
 function renderLabel( label, required, name ) {
-// Temp comment
   if ( !label ) {
     return null;
   }
 
   const labelString = label && required ? `${label} *` : label;
   return (
-    <label
       className={`block text-charcoal text-xs vw-640:text-base ml-xxs mb-xs`}
       htmlFor={ name }
     >

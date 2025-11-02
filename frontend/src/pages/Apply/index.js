@@ -19,7 +19,6 @@ import {
   formatApplicationObject,
   updateCandidateIfNeeded,
   Checkbox
-// Temp comment
 } from './utils';
 import LoadingSpinner from '../../components/LoadingSpinner';
 
@@ -135,6 +134,7 @@ export default function Apply() {
   async function submitData() {
     // Format object for API
     const formattedObject = await formatApplicationObject(applicationObject, useExistingResume);
+// Temp comment
     if ( isLoggedIn ) {
       // Check if any values have changed, update user with new values if so
       updateCandidateIfNeeded(formattedObject, originalObject);

@@ -615,7 +615,6 @@ model Candidate {
 
   invitedJobs        CandidateJobInvites[]
   invitedCompanies   CompanyCandidateInvites[]
-
   firstName String?
   lastName  String?
 

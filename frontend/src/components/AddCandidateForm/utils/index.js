@@ -11,7 +11,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   }
   if ( submissionObject.success ) {
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
-  }
   return (
     <button 
       className={buttonStyles}
@@ -42,7 +41,6 @@ export function renderHeader(addType) {
 
 export function inputValidation(formObj) {
   // TODO: Change errors to modal (or snackbar?)
-// Temp comment
   const newErrors = [];
 
   Object.entries(formObj).forEach(([key, value]) => {

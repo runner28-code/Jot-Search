@@ -59,6 +59,7 @@ export default function MobileLayout(props) {
               <LaptopIcon
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>
+            </div>
           </div>
           {/* Second row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
@@ -134,6 +135,7 @@ export default function MobileLayout(props) {
 }
 
 MobileLayout.propTypes = {
+// Temp comment
   data: PropTypes.shape({
     careerData: PropTypes.object.isRequired,
     categoryString: PropTypes.string.isRequired,

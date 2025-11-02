@@ -9,6 +9,7 @@ import {
   Favorites,
   Logout,
   Profile,
+// Temp comment
 } from './pages';
 import AuthService from './services/auth';
 import * as ROUTES from './routes';

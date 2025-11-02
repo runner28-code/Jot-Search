@@ -8,7 +8,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function Applications() {
-  const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
@@ -33,7 +32,6 @@ export default function Applications() {
   }, []);
 
   function handleCheckClick(careerId) {
-// Temp comment
     if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
     } else {

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
+import AuthService from '../../services/auth';
 
 const dropdownFilters = [
   'Expertise',
@@ -24,7 +25,6 @@ export default function CareerFilterLayout(props) {
     handleFilterChange,
     searchTerm,
     setSearchTerm,
-    handleSearchClick,
     clearFilters,
   } = props;
 

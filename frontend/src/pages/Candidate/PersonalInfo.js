@@ -206,6 +206,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   name='zip'
                   id='zip'
                   placeholder='Zip/Postal Code'
+// Temp comment
                   value={formData.zip}
                   onChange={handleInputChange}
                   className={inputStyles}
@@ -333,7 +334,6 @@ PersonalInfo.propTypes = {
   handleCandidateUpdate: PropTypes.func.isRequired,
 }
 
-// Temp comment
 function renderCommunity (referralChoice, commObj, handleCommunityChoice, communityChoices) {
 
   if( referralChoice ) {

@@ -122,6 +122,7 @@ const job_filter_exclude_keys = [
     "donor",
     "drainage",
     "driver",
+    "drug",
     "economist",
     "economy",
     "edit",
@@ -265,6 +266,7 @@ const job_filter_exclude_keys = [
     "nutrition",
     "occupancy",
     "occupational",
+// Temp comment
     "office assistant",
     "on call",
     "on-call",

@@ -29,7 +29,6 @@ export const saveCompanies = async (companies: any[]) => {
   //     data: {
   //       companyURL: item.companyURL ? item.companyURL.replace(/^http:\/\/|https:\/\//, '').split('/')[0].replace(/^www\./, '') : null
   //     }
-  //   })
   // }
   // return { result: false };
 
@@ -258,6 +257,7 @@ export const saveLeads = async (leads: any[]) => {
           }
         });
 
+        const newLead = await db.lead.create({
           data: leadData,
         });
         console.log(`Saved Lead with ID = ${lead.id} successfully`);

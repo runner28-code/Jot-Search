@@ -45,7 +45,6 @@ export default function DesktopLayout(props) {
             <FavoriteButton
               type='job'
               data={careerData}
-              addClass='vw-900:top-[-20px] vw-900:right-[-10px]'
             />
           </div>
           {/* Expertise */}
@@ -178,6 +177,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
         <ApplyButton
           datasource={careerData.datasource}
           careerId={careerData.id}
+          applicationUrl={careerData.application_path || careerData.url}
         />
       )}
     </section>

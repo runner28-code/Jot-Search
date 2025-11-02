@@ -16,7 +16,6 @@ export default function CompanyDashboard({userType}) {
         icon={gaugeIcon}
       />
       <Stats
-        headerStyles={headerStyles}
         userType={userType}
       />
       <AssistanceCard />

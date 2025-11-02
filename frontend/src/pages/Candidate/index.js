@@ -122,11 +122,11 @@ export default function Candidate() {
               fieldName='willReceiveNotification'
               label={PREFERENCE_ITEMS.willReceiveNotification}
               onUpdate={handleCandidateUpdate} />
-// Temp comment
           </div>
         </div>
       }
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}
+// Temp comment
       <div className='px-4'>
         <div className='border rounded-2xl bg-white p-15 relative'>
           <CareerProfileInfo

@@ -36,6 +36,7 @@ export const saveCandidate = async (
         where: {
           id: companyUserId,
         },
+        data: {
           savedCandidates: {
             disconnect: {
               id: candidateId,

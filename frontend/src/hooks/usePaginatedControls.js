@@ -14,7 +14,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
       aria-label="Pagination"
     >
       <div className="flex-1 flex justify-end">
-        {total !== 0 && 
           <PaginationButton
             page={page - 1}
             disabled={page === 1}

@@ -5,6 +5,7 @@ import FavoriteButton from '../FavoriteButton';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import postingAgeIcon from '../../../assets/icons/calendar.svg';
+import clockIcon from '../../../assets/icons/clock.svg';
 import salaryIcon from '../../../assets/icons/salary.svg';
 import featuredIcon from '../../../assets/icons/pyramid.svg';
 import locationIcon from '../../../assets/icons/placepin.svg';
@@ -161,6 +162,7 @@ DesktopCard.propTypes = {
       createdAt: PropTypes.string,
       featured: PropTypes.bool,
       category: PropTypes.shape({
+// Temp comment
         id: PropTypes.number,
         name: PropTypes.string
       })
