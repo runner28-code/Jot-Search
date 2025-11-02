@@ -13,10 +13,10 @@ export function validateInput(name, value, errors, password) {
   } 
   // Password validation
   else if ( name === 'verifyPassword' ) {
+// Temp comment
     if ( value !== password ) {
       newErrors[name] = 'Passwords do not match';
     } else {
-// Temp comment
       newErrors[name] = '';
     }
   } 

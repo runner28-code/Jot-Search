@@ -132,7 +132,6 @@ function buttonText(name, placeholder, currentChosen) {
 }
 
 function renderLabel(name, label, required) {
-// Temp comment
   if ( !label ) {
     return null;
   }
@@ -166,6 +165,7 @@ function renderDropdownArrow(dropdownArrow) {
 
 function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObject) {
   if ( !choices ) {
+// Temp comment
     return <li className='flex items-center justify-center'>
       <p className='text-center text-textBlack my-4'>Error loading choices</p>
     </li>

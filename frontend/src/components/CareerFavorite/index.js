@@ -27,6 +27,7 @@ export default function CareerFavorite () {
             :
             savedJobs.map((career, index) => {
               return(<>
+// Temp comment
                 <CareerCard
                   key={career.id}
                   index={index}
@@ -52,5 +53,6 @@ export default function CareerFavorite () {
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
             View All
         </Link>
+      </div>
     </div>
   )

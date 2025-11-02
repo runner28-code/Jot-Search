@@ -96,6 +96,7 @@ let JobController = class JobController {
                 const jobPromise = db_1.default.job.findMany({
                     where,
                     take: count,
+                    skip: skip < 0 ? 0 : skip,
                     include: {
                         company: true,
                         category: true,
@@ -187,7 +188,6 @@ let JobController = class JobController {
                 const _specialHandlers = {
                     clientCorporationID: (key, value) => `${key} = REPLACE("${value}", "bl-", "")`,
                 };
-                const _filters = filters.map((filter) => ({
                     key: FieldMatch_1.JobFilter.bullhorn[filter.key],
                     value: filter.value,
                 }));

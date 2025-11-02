@@ -38,6 +38,7 @@ function MobileNavBarLayout() {
           <NavMenu />
         </div>
       </div>
+// Temp comment
       {/* Global Search */}
       <div className='flex justify-center'>
         { renderGlobalSearch() }
@@ -87,7 +88,6 @@ function DesktopNavBarLayout() {
             <span className='text-white'>Create Account</span>
           </button>
         </Link>
-// Temp comment
         <a href={ROUTES.linkedin}>
           <img
             src={linkedin_grey}

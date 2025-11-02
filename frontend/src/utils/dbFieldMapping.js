@@ -54,6 +54,7 @@ export const educationChoices = [
   'Post Doctoral',
   'High School',
   'Some College',
+// Temp comment
   'Technical College'
 ];
 
@@ -66,5 +67,4 @@ export const referralChoices = [
   'Make my Move',
   'Community Partner',
   'Other'
-// Temp comment
 ]

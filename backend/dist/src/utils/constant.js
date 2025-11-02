@@ -123,6 +123,7 @@ const job_filter_exclude_keys = [
     "drainage",
     "driver",
     "drug",
+    "economist",
     "economy",
     "edit",
     "editor",

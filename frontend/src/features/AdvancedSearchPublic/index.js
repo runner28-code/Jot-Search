@@ -96,6 +96,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   }, [activeTab]);
 
   useEffect(() => {
+    const newState = { ...initialFilterState, ...state };
     if (state) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';

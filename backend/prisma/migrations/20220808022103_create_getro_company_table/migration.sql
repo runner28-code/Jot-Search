@@ -10,6 +10,7 @@ CREATE TABLE "GetroCompany" (
     "id" TEXT NOT NULL,
     "instagram_url" TEXT,
     "jobs_count" INTEGER,
+    "linkedin_url" TEXT,
     "locations" TEXT,
     "logo_url" TEXT,
     "name" TEXT,

@@ -22,7 +22,6 @@ export default function MobileLayout(props) {
     addressString,
     salaryString,
     postingAge,
-    role
   } = props.data;
   const navigate = useNavigate();
   const skillList = careerData.skillList;
@@ -160,6 +159,7 @@ function renderLogo( logo ) {
 function renderAboutCompanySection(careerData) {
   if (!careerData.company) {
     return null;
+  }
   const headerString = `About ${careerData.company.name}`;
   return (<>
     <hr className={hrStyles} />

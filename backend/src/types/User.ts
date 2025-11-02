@@ -28,7 +28,6 @@ export type User = {
   status?: string;
   username?: string;
   logo?: string;
-
   companyId?: string;
   companyName?: string;
   annualRevenue?: string;

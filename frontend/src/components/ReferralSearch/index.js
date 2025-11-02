@@ -36,6 +36,7 @@ const mockJobsData = [
 
 function renderChosen(currentChosen, handleRemove) {
   return currentChosen.map(choice =>
+// Temp comment
     <div 
       key={choice.id}
       className='bg-royalBlue text-white py-2 px-4 rounded-lg mr-2 cursor-pointer hover:bg-rose-500'

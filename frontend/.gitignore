@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+.pnp.js
 
 # testing
 /coverage
@@ -17,4 +18,3 @@
 .env.test.local
 .env.production.local
 
-npm-debug.log*

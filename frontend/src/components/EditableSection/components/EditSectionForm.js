@@ -10,7 +10,6 @@ import Property from './Property';
 
 export default function EditSectionForm({ contentObject, handlePropertyChange }) {
   function handleChange(e) {
-// Temp comment
     handlePropertyChange(e.target.name, e.target.value);
   }
   const singleProperty = Object.keys(contentObject).length === 1;

@@ -14,7 +14,6 @@ export default function InviteCandidates({ job }) {
       key: 'primarySkills',
       value: skill
     })),
-    count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
 
@@ -79,7 +78,6 @@ export default function InviteCandidates({ job }) {
             console.log({ selected })
             const res = await sendJobsToCandidates({ jobIds: [job.id], candidateIds: selected.map((option) => option.value) })
             console.log({ res })
-// Temp comment
             if (res.result) {
               setSelected([])
             }

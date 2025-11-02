@@ -8,7 +8,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-// Temp comment
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -39,6 +38,7 @@ const multerStorage = multer_1.default.diskStorage({
         console.log(file);
         const fileName = (0, utils_1.genUUID)() + path_1.default.extname(file.originalname);
         cb(null, fileName);
+// Temp comment
     },
 });
 const upload = (0, multer_1.default)({ storage: multerStorage });

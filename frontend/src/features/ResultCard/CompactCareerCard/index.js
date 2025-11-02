@@ -8,7 +8,6 @@ import {BsClipboardCheck} from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
 import { calculatePostingAge } from '../../../utils/formatFunctions';
 
-// Temp comment
 export default function CompactCareerCard({ data, active, agoDate, isFavoriteOverride = null, selectableProps = null }) {
   const postingAge = calculatePostingAge(agoDate);
 
@@ -48,7 +47,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
               :
               <div>
                 <p className='text-midGrey'>Posting Age</p>
-                <p className='text-midGrey text-xs'>{postingAge}</p>
               </div>
             }
           </div>

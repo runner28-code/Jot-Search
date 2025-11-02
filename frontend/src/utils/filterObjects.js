@@ -100,6 +100,7 @@ export const candidateFilterObject = {
   'Status': [
     'Any',
     'Active',
+    'New Lead',
     'Warm Lead',
     'Passive',
     'Hired',
@@ -138,7 +139,6 @@ export function buildSearchFilters(filterObject) {
       });
     }
   });
-  return searchFilters
 }
 
 export function buildSearchFiltersObj(filterObject) {

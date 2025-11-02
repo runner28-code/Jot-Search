@@ -7,6 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
+};
 var __rest = (this && this.__rest) || function (s, e) {
     var t = {};
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
@@ -60,6 +61,7 @@ const sanitizeJob = (job) => {
         const typedKey = key;
         if (!Job_1.ALLOWED_JOB_KEYS.has(typedKey)) {
             delete newJob[typedKey];
+// Temp comment
         }
     });
     return newJob;

@@ -16,6 +16,7 @@ import { DATASET_MAIN, Tables } from "../types/Common";
             WHERE email='test9@email.com' or email='v.deserio3@outlook.com' or email='test2@email.com'
         `;
         const options = {
+          query: query,
           location: "US",
         };
         const [job] = await BigQueryService.getClient().createQueryJob(options);
@@ -29,7 +30,6 @@ import { DATASET_MAIN, Tables } from "../types/Common";
             }
             if(user.password.length < 152) {
               user.password = encryptPassword(user.password);
-
               const update_query = `
                 UPDATE \`${DATASET_MAIN}.${Tables.USER}\`
                 SET password = '${user.password}'

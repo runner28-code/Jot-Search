@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import TypeTabs from '../../components/TypeTabs';
 
+// Temp comment
 // Hooks
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -42,7 +43,6 @@ function CareerHeader ({ location }) {
     return (
       <div className='flex flex-col items-start py-14 px-8 '>
         <span className='flex flex-row text-lg items-center text-dply '>
-// Temp comment
           <CareerIcon className='mr-6 fill-royalBlue ' />
           <h2 className='font-spaceGrotesk text-royalBlue font-bold '>Career Details</h2>
         </span>
