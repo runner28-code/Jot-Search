@@ -24,6 +24,7 @@ export class GetroService {
     getOptions() {
         return {
             headers: {
+                'X-User-Email': this.email,
                 'X-User-Token': this.password,
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -257,3 +258,5 @@ export class GetroService {
                                 closed_at: new Date(item.closed_at),
                             }))
                             for (const job of newItems) {
+                                if (checkForJobFilter(job.title, job.locations)) {
+                                    await saveJobs([job]);

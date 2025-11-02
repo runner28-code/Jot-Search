@@ -262,7 +262,6 @@ export const login = async (email: string, password: string) => {
         user_id: existingUser.id,
       };
     } else {
-      console.log("no existing user");
       return { result: false, error: "wrong credential" };
     }
   } catch (error) {
@@ -458,6 +457,7 @@ export const getCoordinatorDashboardStats = async (days: number) => {
   });
   const newCandidatesCompare = (newCandidatesInCurrentPeriod - newCandidatesInPreviousPeriod) * 100 / newCandidatesInCurrentPeriod
 
+  const newApplicationsInCurrentPeriod = await db.application.count({
     where: {
       createdAt: {
         gte: moment().subtract(days - 1, 'days').startOf('day').toDate(),
@@ -530,3 +530,9 @@ export const getStats = async (userId: string) => {
 
     const savedCompaniesCountQuery = `SELECT COUNT(*) as count FROM \`${DATASET_MAIN}.${Tables.SAVED_COMPANIES}\`
                                         WHERE candidate = '${userId}'`;
+
+    const totalCompaniesCountQuery = `SELECT COUNT(*) as count FROM \`${DATASET_BULLHORN}.${Tables.COMPANIES}\``;
+
+    const applicationCountPromise = BigQueryService.getClient().query({
+      query: applicationCountQuery,
+      location: "US",

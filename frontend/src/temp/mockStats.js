@@ -21,7 +21,6 @@ export const mockCandidateStats = {
       prevCount: 7
     }
   },
-  'Invitations': {
     'Today': {
       count: 3,
       prevCount: 2
@@ -116,6 +115,7 @@ export const mockCompanyStats = {
     'Today': {
       count: 12,
       prevCount: 13
+    },
     'Last 7 Days': {
       count: 24,
       prevCount: 20
@@ -283,3 +283,5 @@ export const mockCoordinatorStats = {
     },
     'Last 30 Days': {
       count: 424,
+      prevCount: 223
+    },

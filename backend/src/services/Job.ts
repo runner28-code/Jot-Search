@@ -128,3 +128,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
     };
   } catch (err) {
     console.log(err);
+    return {

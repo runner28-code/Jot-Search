@@ -11,6 +11,7 @@ export const jobFilterObject = {
     ...expertises
   ],
   'On-Site/Remote': [
+// Temp comment
     'Any',
     'On-Site',
     'Remote',
@@ -139,6 +140,7 @@ export function buildSearchFilters(filterObject) {
       });
     }
   });
+  return searchFilters
 }
 
 export function buildSearchFiltersObj(filterObject) {

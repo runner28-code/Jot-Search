@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearchLanding';
@@ -22,7 +23,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     }
     if (filterState.expertise !== 'Any Expertise') {
       params.expertise = filterState.expertise;
-    }
     navigate(ROUTES.careers, { state: { ...params } });
   }
 

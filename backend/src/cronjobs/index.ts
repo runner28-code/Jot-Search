@@ -82,5 +82,5 @@ const setupCronJobs = async () => {
       await (await GetroService.getClient()).getMembers(false, 50);
     } catch (error) {
       consoleLog(error);
-    }
     consoleLog('/// CRON_JOB_ENDED: GETRO_GET_MEMBERS');
+  });

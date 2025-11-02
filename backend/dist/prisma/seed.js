@@ -60,7 +60,6 @@ function seedJobs() {
                     companyId: (_b = (yield db_1.default.company.findFirst())) === null || _b === void 0 ? void 0 : _b.id,
                     address1: "123 Job St",
                     city: "Tulsa",
-// Temp comment
                     state: "OK",
                     zip: "74008",
                     salary: 80000,
@@ -97,6 +96,7 @@ function seedCandidates() {
                     email: "jsmithers@gmail.com",
                     comments: "He does everything!",
                 },
+// Temp comment
                 {
                     address: "124 Main St",
                     address_address1: "124 Main St",

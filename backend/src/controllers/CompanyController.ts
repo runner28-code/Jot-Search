@@ -89,6 +89,7 @@ export class CompanyController {
       };
     }
     try {
+      const candidates_list = await getCandidatesList(body.candidates_ids);
       return {
         result: await sendCandidatesToEmployers(
           candidates_list,
@@ -321,3 +322,5 @@ export class CompanyController {
   ) {
     const _filters =
       filters?.filter(
+        (opt) => Object.keys(CompanyFilter.bullhorn).indexOf(opt.key) > -1
+      ) || [];

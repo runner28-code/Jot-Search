@@ -117,7 +117,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
         const existing = await db.job.findFirst({
           where: {
             externalId: `bl-${job.id}`,
-          },
         });
 
         if (existing) {
@@ -285,3 +284,5 @@ export const migrateUserInTPP = async (data: Partial<DbCandidate>) => {
     if (existing) {
       console.log(
         `Migration Failed: Bullhorn User (bh_id=${data.externalId}) is already migratd`
+      );
+      return;

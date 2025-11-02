@@ -37,7 +37,6 @@ export default function CareerFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
   } else {
-// Temp comment
     dropdownFilters.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
@@ -58,6 +57,7 @@ export default function CareerFilterLayout(props) {
           placeholder='Search Careers'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
+// Temp comment
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}

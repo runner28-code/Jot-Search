@@ -21,13 +21,13 @@ export default function CareerFavorite () {
       </div>
       <h2 className='font-spaceGrotesk text-h5 text-zinc-500 mb-8 text-center'>My Career Favorites</h2>
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
+// Temp comment
         {
           isLoading ?
             <LoadingSpinner />
             :
             savedJobs.map((career, index) => {
               return(<>
-// Temp comment
                 <CareerCard
                   key={career.id}
                   index={index}

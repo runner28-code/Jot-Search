@@ -94,6 +94,7 @@ Checkbox.propTypes = {
   disabled: PropTypes.bool
 }
 
+export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if (submissionObject.loading) {
     return <LoadingSpinner
       height='50'

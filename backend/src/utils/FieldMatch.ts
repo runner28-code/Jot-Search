@@ -66,3 +66,4 @@ export const USER_FILTER: any = {
   email: "email",
   bh_email: "bh_email",
   companyName: "companyName",
+  occupation: "occupation",

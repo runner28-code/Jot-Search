@@ -59,3 +59,4 @@ CREATE TABLE "Lead" (
     "salary" TEXT,
     "salaryLow" TEXT,
     "secondarySkills" TEXT,
+    "skillSet" TEXT,

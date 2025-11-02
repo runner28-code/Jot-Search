@@ -294,3 +294,5 @@ export type Lead = {
     conversionSource?: string;
     dateAdded?: string;
     dateLastComment?: string;
+    dateLastModified?: string;
+    dateLastVisited?: string;

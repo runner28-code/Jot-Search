@@ -206,3 +206,4 @@ export class UserController {
         result: false,
         error:
           "Only coordinators can make registration requests for other coordinators",
+      };

@@ -11,6 +11,7 @@ const config = {
 
   bullhornClientID: process.env.BULLHORN_CLIENT_ID,
   bullhornClientSecret: process.env.BULLHORN_CLIENT_SECRET,
+  bullhornApiUsername: process.env.BULLHORN_API_USERNAME,
   bullhornApiPassword: process.env.BULLHORN_API_PASSWORD,
 
   getroDatasetID: process.env.DATASET_GETRO,
@@ -21,3 +22,4 @@ const config = {
   sendgridSecret: process.env.SENDGRID_SECRET,
   mailSenderEmail: process.env.MAIL_SENDER_EMAIL,
   frontendUrl: process.env.FRONTEND_URL,
+

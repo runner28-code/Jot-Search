@@ -110,3 +110,4 @@ export const getFilterConditions = (
       }
     });
     return conditions.join(` ${operator} `);
+  };

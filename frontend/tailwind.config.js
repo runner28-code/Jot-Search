@@ -29,7 +29,6 @@ module.exports = {
           },
         },
       },
-// Temp comment
       boxShadow: {
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
@@ -66,7 +65,6 @@ module.exports = {
         indigoSquare: '#4A53A4',
         cyanSquare: '#1ECADB',
         pinkSquare: '#EB4A87',
-        orangeSquare: '#F2871F',
         darkBlue: '#001B3C',
         yellowSquare: '#F4D12E',
         green: '#5CCC6E',
@@ -234,3 +232,4 @@ module.exports = {
     maxheight: {
       '85%': '85%',
     },
+    screens: {

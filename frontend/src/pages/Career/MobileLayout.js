@@ -22,6 +22,7 @@ export default function MobileLayout(props) {
     addressString,
     salaryString,
     postingAge,
+    role
   } = props.data;
   const navigate = useNavigate();
   const skillList = careerData.skillList;
@@ -177,6 +178,7 @@ function renderSkillsSection({skillList}) {
   return(<>
     <hr className={hrStyles} />
     {/* Skills Required */}
+// Temp comment
     <h4 className={sectionHeaderStyles}>Skills Required</h4>
     <SkillsList items={skillList} />
   </>)

@@ -14,6 +14,7 @@ export default function InviteCandidates({ job }) {
       key: 'primarySkills',
       value: skill
     })),
+    count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
 
@@ -94,7 +95,6 @@ export default function InviteCandidates({ job }) {
     </section>
   )
 }
-
 function itemRenderer({ option, onClick, disabled }) {
   const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''
   return (

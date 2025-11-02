@@ -108,3 +108,4 @@ export const saveJobs = async (jobs: any[]) => {
 								Object.keys(jobData).forEach((key) => {
 									if (expludeFields.includes(key)) {
 										delete jobData[key];
+									}

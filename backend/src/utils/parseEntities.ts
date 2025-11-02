@@ -115,3 +115,4 @@ export const parseBullhornJobToMain = (data: BhJob) => {
     type: data.type,
     isDeleted: data.isDeleted,
     postedAt: data.date_added,
+  };

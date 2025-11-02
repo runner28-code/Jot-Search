@@ -877,3 +877,8 @@ export class BullhornService {
             clientContacts: d.clientContacts?.data
               .map((clientContact: any) => clientContact.id)
               .join(" | "),
+            primarySkills: d.primarySkills?.data
+              .map((skill: any) => skill.name)
+              .join(" | "),
+            secondarySkills: d.secondarySkills?.data
+              .map((skill: any) => skill.name)

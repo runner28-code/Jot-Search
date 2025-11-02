@@ -5,7 +5,6 @@ exports.JobFilter = {
     bullhorn: {
         jobs_id: "jobs.id",
         title: "title",
-        skill: "skillList",
         city: "address_city",
         employmentType: "employmentType",
         onSite: "onSite",
@@ -55,3 +54,4 @@ exports.USER_FILTER = {
     state: "state",
     skills: "skills",
     skillSet: "skillSet",
+    category: "category",

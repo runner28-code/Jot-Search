@@ -30,6 +30,7 @@ export default function ResultContainer(props) {
     if ( !header ) {
       return null;
     }
+// Temp comment
 
     return <h5 className={resultsHeaderStyles}>{header}</h5>;
   }
@@ -37,7 +38,6 @@ export default function ResultContainer(props) {
   function renderFooter() {
     if ( !limit ) {
       return null;
-// Temp comment
     }
 
     let pluralizedType = pluralizedTypes[type];

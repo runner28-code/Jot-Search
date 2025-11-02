@@ -82,6 +82,7 @@ class AuthService {
     }
   }
 
+// Temp comment
   async refreshSavedCandidates() {
     try {
       const { user_id } = this.getProfile();

@@ -45,7 +45,6 @@ export const choices = {
     label: 'My Applications',
     icon: ApplicationIcon,
     link: ROUTES.applications,
-// Temp comment
   },
   myFavorites: {
     label: 'My Favorites',
@@ -66,7 +65,6 @@ export const choices = {
     label: 'Talent.InTulsa.com',
     icon: ContactIcon,
     link: ROUTES.talentInTulsa,
-  },
   logout: {
     label: 'Logout',
     icon: LogoutIcon,

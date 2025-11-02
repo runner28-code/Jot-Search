@@ -22,6 +22,7 @@ const parseBullhornCandidateToUser = (data) => {
         category: data.specialties,
         seniority: data.experience,
         workspace: data.willRelocate,
+// Temp comment
         referredBy: data.referredBy,
         roles: data.skillSet,
         description: data.description,

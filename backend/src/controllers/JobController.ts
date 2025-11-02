@@ -385,3 +385,5 @@ export class JobController {
       include: {
         candidate: {
           include: {
+            invitedJobs: true
+          }
