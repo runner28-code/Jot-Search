@@ -21,7 +21,6 @@ API.interceptors.request.use(
   function (error) {
     return Promise.reject(error);
   }
-// Temp comment
 );
 
 export default API;
@@ -262,7 +261,6 @@ export async function getInvitationsToApply(id) {
 }
 
 export async function applyToJob(jobId, candidateId) {
-  const { data } = await API.get(ROUTES.APIjobApply, {
     params: {
       job: jobId,
       candidate: candidateId

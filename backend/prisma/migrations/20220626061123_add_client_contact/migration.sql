@@ -23,6 +23,7 @@ CREATE TABLE "ClientContact" (
     "comments" TEXT,
     "dateAdded" TIMESTAMP(3),
     "dateLastModified" TIMESTAMP(3),
+    "dateLastVisit" TIMESTAMP(3),
     "description" TEXT,
     "desiredCategories" TEXT,
     "desiredSkills" TEXT,

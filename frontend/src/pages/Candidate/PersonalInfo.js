@@ -333,6 +333,7 @@ PersonalInfo.propTypes = {
   handleCandidateUpdate: PropTypes.func.isRequired,
 }
 
+// Temp comment
 function renderCommunity (referralChoice, commObj, handleCommunityChoice, communityChoices) {
 
   if( referralChoice ) {

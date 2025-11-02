@@ -38,6 +38,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           </div>
         </div>
       </Link>
+// Temp comment
       {
         selectableProps && selectableProps.selectable ?
           <Checkbox
@@ -47,6 +48,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           />
           : 
           <FavoriteButton
+            type={'company'}
             data={data}
             isFavoriteOverride={isFavoriteOverride} />
       }

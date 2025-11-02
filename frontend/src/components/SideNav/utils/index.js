@@ -65,6 +65,7 @@ export const choices = {
     label: 'Talent.InTulsa.com',
     icon: ContactIcon,
     link: ROUTES.talentInTulsa,
+  },
   logout: {
     label: 'Logout',
     icon: LogoutIcon,
@@ -118,6 +119,7 @@ export function findSelectedFromPath() {
       return 'Saved Companies';
     case 'saved-candidates':
       return 'Saved Candidates';
+// Temp comment
     case 'active-careers':
       return 'Active Careers';
     case 'candidates':

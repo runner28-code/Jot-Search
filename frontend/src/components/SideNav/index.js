@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   candidateChoices,
+  companyChoices,
   coordinatorChoices,
   guestChoices,
   findSelectedFromPath
@@ -40,7 +41,6 @@ function renderChoice(choice, selected, index, choicesLength) {
   let selectedClass = ' bg-royalBlue text-white ';
   if (index === 0) selectedClass += ' rounded-t-xl '; // round top card if selected
   if (index === choicesLength - 1) {
-    selectedClass += ' rounded-b-2xl border-t border-solid border-midGrey'; // round bottom card if selected
     baseChoiceStyles += ' border-b-0'; // remove border if last card
   }
 

@@ -30,7 +30,6 @@ export default function ResultContainer(props) {
     if ( !header ) {
       return null;
     }
-// Temp comment
 
     return <h5 className={resultsHeaderStyles}>{header}</h5>;
   }
@@ -39,7 +38,6 @@ export default function ResultContainer(props) {
     if ( !limit ) {
       return null;
     }
-
     let pluralizedType = pluralizedTypes[type];
     const capitalizedType = pluralizedType.charAt(0).toUpperCase() + pluralizedType.slice(1);
 

@@ -262,6 +262,7 @@ export const login = async (email: string, password: string) => {
         user_id: existingUser.id,
       };
     } else {
+      console.log("no existing user");
       return { result: false, error: "wrong credential" };
     }
   } catch (error) {

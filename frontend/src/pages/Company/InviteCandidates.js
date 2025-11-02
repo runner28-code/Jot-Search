@@ -49,6 +49,7 @@ export default function InviteCandidates({ company }) {
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>
   }
+  
   return (
     <section className="flex flex-col space-y-8 bg-white p-xxl-4 border-2 border-disabled border-solid rounded-3xl mb-xxl-4">
       <h2 className="text-h4">Send Candidates to Company</h2>
@@ -107,7 +108,6 @@ function itemRenderer({ option, onClick, disabled}) {
             alt='Candidate Avatar' />      
           : <Initials name={option.label} />
         }  
-        <div className="flex flex-col">
           <span className='text-lg text-blue-500'>{option.candidate?.firstName} {option.candidate?.lastName}</span>
           <span>{getTagLine({ candidate: option.candidate })}</span>
         </div>

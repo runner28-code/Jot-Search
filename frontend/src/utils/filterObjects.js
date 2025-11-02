@@ -11,7 +11,6 @@ export const jobFilterObject = {
     ...expertises
   ],
   'On-Site/Remote': [
-// Temp comment
     'Any',
     'On-Site',
     'Remote',
@@ -129,7 +128,6 @@ export function buildSearchFilters(filterObject) {
   Object.keys(filterObject).forEach(key => {
     if ( !anyValues.includes(filterObject[key]) ) {
       let filterKey = key.toLowerCase();
-      if ( key === 'On-Site/Remote' ) {
         filterKey = 'onSite';
       } else if ( key === 'companyId' ) {
         filterKey = 'companyId';

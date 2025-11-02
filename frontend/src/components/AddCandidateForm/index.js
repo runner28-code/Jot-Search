@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
+import ChoiceTag from '../ChoiceTag';
 import { 
   roles as roleChoices,
   skills as skillChoices,
@@ -28,7 +29,6 @@ const defaultState = {
   linkedin: '',
   referredBy: '',
   resumeFile: {},
-  password: '',
   verifyPassword: '',
 };
 export default function RegistrationForm() {

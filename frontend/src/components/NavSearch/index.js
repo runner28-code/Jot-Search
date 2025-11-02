@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
-import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 import searchWhite from '../../assets/images/search-white.webp';
@@ -134,6 +133,7 @@ function renderResults( results ) {
       height='75'
       width='75'
     />;
+  }
 
   const { jobs, companies, candidates } = results;
   if ( !jobs?.length && !companies?.length && !candidates?.length ) {

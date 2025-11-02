@@ -35,11 +35,11 @@ exports.IUSER = {
     companyURL: "",
     numEmployees: "",
     revenue: "",
-// Temp comment
     dateFounded: "",
     employeeType: "",
     experience: "",
     hourlyRate: "",
     willRelocate: "",
+// Temp comment
     willReceiveNotification: false,
     ethnicity: "",

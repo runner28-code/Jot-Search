@@ -58,6 +58,7 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
   }
 
   return Object.entries(defaultFilterObject).map(([key, value]) => {
+// Temp comment
     if (!filterObject[key]) {
       return null;
     }

@@ -59,7 +59,6 @@ export default function MobileLayout(props) {
               <LaptopIcon
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>
-            </div>
           </div>
           {/* Second row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
@@ -178,7 +177,6 @@ function renderSkillsSection({skillList}) {
   return(<>
     <hr className={hrStyles} />
     {/* Skills Required */}
-// Temp comment
     <h4 className={sectionHeaderStyles}>Skills Required</h4>
     <SkillsList items={skillList} />
   </>)

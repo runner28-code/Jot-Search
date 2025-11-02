@@ -13,6 +13,7 @@ import PasswordReset from './PasswordReset';
 import { useCandidateContext } from '../../services/CandidateContext';
 import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
 import InviteToCareer from '../Career/InviteToCareer';
+import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 
@@ -121,6 +122,7 @@ export default function Candidate() {
               fieldName='willReceiveNotification'
               label={PREFERENCE_ITEMS.willReceiveNotification}
               onUpdate={handleCandidateUpdate} />
+// Temp comment
           </div>
         </div>
       }

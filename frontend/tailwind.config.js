@@ -65,6 +65,7 @@ module.exports = {
         indigoSquare: '#4A53A4',
         cyanSquare: '#1ECADB',
         pinkSquare: '#EB4A87',
+        orangeSquare: '#F2871F',
         darkBlue: '#001B3C',
         yellowSquare: '#F4D12E',
         green: '#5CCC6E',

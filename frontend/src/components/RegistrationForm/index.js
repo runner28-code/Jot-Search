@@ -1,3 +1,4 @@
+// Temp comment
 /* eslint-disable no-unused-vars */
 import { useState, useEffect, useContext } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -113,7 +114,6 @@ export default function RegistrationForm(loggedIn) {
         console.log('Error: ', result);
         setErrorBlock(result);
         setSubmissionObject({
-// Temp comment
           loading: false,
           success: false,
         });

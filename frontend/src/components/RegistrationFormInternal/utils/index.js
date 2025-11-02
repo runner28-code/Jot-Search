@@ -74,7 +74,6 @@ export function inputValidation(formObj) {
       if (!value || (Array.isArray(value) && value.length === 0)) {
         newErrors.push(key);
       }
-    }
   });
 
   if ( formObj.linkedin.slice(0, 8) !== 'https://' ) { // Ensure valid URL

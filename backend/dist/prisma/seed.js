@@ -96,7 +96,6 @@ function seedCandidates() {
                     email: "jsmithers@gmail.com",
                     comments: "He does everything!",
                 },
-// Temp comment
                 {
                     address: "124 Main St",
                     address_address1: "124 Main St",
@@ -110,7 +109,6 @@ function seedCandidates() {
                     firstName: "Bob",
                     lastName: "Tester",
                     phone: "987-654-3210",
-                    email: "bobtesting@gmail.com",
                     comments: "He does nothing...",
                 },
             ],

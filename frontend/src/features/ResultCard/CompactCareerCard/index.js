@@ -83,7 +83,6 @@ CompactCareerCard.propTypes = {
       createdAt: PropTypes.string
     })),
     role: PropTypes.string,
-    title: PropTypes.string,
     employmentType: PropTypes.string,
     onSite: PropTypes.string,
     salary: PropTypes.string,

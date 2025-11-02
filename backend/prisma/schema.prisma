@@ -346,6 +346,7 @@ enum Datasource {
 model CandidateJobInvites {
   id          String    @id @default(uuid())
   candidateId String
+  candidate   Candidate @relation(fields: [candidateId], references: [id])
   
   jobId       String
   job         Job       @relation(fields: [jobId], references: [id])

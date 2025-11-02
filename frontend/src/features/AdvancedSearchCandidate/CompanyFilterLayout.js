@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
-// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function CompanyFilterLayout(props) {
@@ -20,7 +19,6 @@ export default function CompanyFilterLayout(props) {
           handleSearchClick={handleSearchClick}
           placeholder='Search Companies'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
-        />
         <button
           className='text-white text-sm whitespace-nowrap'
           onClick={clearFilters}

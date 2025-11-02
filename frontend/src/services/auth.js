@@ -68,6 +68,7 @@ class AuthService {
   }
 
   async refreshSavedJobAndCompanies() {
+// Temp comment
     try {
       const { user_id } = this.getProfile();
       const [jobs = [], companies = []] = await Promise.all([getSavedJobs(user_id), getSavedCompanies(user_id)]);
@@ -82,7 +83,6 @@ class AuthService {
     }
   }
 
-// Temp comment
   async refreshSavedCandidates() {
     try {
       const { user_id } = this.getProfile();

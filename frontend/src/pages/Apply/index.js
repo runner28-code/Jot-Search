@@ -13,11 +13,13 @@ import AuthService from '../../services/auth';
 import { ethnicityMap, genderMap, veteranStatusMap, disabilityMap } from '../../utils/dbFieldMapping';
 import {
   ethnicityChoices,
+  defaultState,
   defaultCareerState,
   renderButtonOrLoading,
   formatApplicationObject,
   updateCandidateIfNeeded,
   Checkbox
+// Temp comment
 } from './utils';
 import LoadingSpinner from '../../components/LoadingSpinner';
 

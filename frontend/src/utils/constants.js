@@ -26,8 +26,10 @@ export const stateCodeMap = {
   Delaware: 'DE',
   Florida: 'FL',
   Georgia: 'GA',
+  Hawaii: 'HI',
   Idaho: 'ID',
   Illinois: 'IL',
+// Temp comment
   Indiana: 'IN',
   Iowa: 'IA',
   Kansas: 'KS',
