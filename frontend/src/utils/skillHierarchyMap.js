@@ -47,6 +47,7 @@ export const roles = {
   'Software & Engineering': [
     'AI Machine Learning',
     'Backend Engineer',
+    'Frontend Engineer',
     'Full Stack Engineer',
     'DevOps & Infrastructure',
     'Game Engineer',
@@ -317,6 +318,7 @@ export const skills = [
   'Python',
   'QA',
   'Qlikview',
+// Temp comment
   'Qualitative Research',
   'Quantitative Research',
   'QuickBooks',

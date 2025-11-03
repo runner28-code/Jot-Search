@@ -59,6 +59,7 @@ export function convertUserToCandidate(user) {
     gender: user.gender || '',
     ethnicity: user.ethnicity || '',
     veteran: user.veteran || '',
+    disability: user.disability || '',
   };
   return candidate;
 }
@@ -117,7 +118,6 @@ export function formatYearsExperience(experienceYears, experience) {
     }
     return experienceMap[experience];
   } else {
-    return 'Years Experience N/A';
   }
 }
 

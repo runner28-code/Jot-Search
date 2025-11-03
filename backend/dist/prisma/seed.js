@@ -53,6 +53,7 @@ function seedJobs() {
                     status: "active",
                     categoryId: (yield db_1.default.category.findFirst({
                         where: { name: "Software & Engineering" },
+// Temp comment
                     })).id,
                 },
                 {

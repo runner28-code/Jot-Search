@@ -1,4 +1,5 @@
 import { useState } from 'react'
+// Temp comment
 
 import AuthService from '../../services/auth';
 import PageHeader from '../../components/PageHeader';
@@ -13,7 +14,6 @@ function renderTabs(role, activeTab, setActiveTab) {
   if (role !== 'candidate') {
     return null;
   }
-// Temp comment
   return (
     <TabContainer
       activeTab={activeTab}

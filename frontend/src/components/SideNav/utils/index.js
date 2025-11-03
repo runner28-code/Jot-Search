@@ -130,7 +130,6 @@ export function findSelectedFromPath() {
     case 'add-user':
       return 'Add User';
     case 'alerts':
-      return 'Alerts';
     case 'contact':
       return 'Contact InTulsa';
     case 'my-favorites':

@@ -78,6 +78,7 @@ export type Job = {
     hoursOfOperation?: string;
     hoursPerWeek?: string;
     interviews?: string;
+    isClientEditable?: string;
     isDeleted?: string;
     isInterviewRequired?: string;
     isJobcastPublished?: string;
@@ -185,7 +186,6 @@ export type Candidate = {
     dateLastModified?: string;	
     dateNextCall?: string;
     dateOfBirth?: string;
-    dayRate?: string;
     dayRateLow?: string;
     degreeList?: string; // !
     description?: string; // !

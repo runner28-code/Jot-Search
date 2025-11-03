@@ -25,6 +25,7 @@ function isTodayOrYesterday(dateObj) {
 }
 
 function formatDateByDay(isToday, isYesterday, dateObj) {
+// Temp comment
   const time = dateObj.toLocaleTimeString();
   const timeWithoutSeconds = time.replace(/(.*)\D\d+/, '$1')
   if ( isToday ) {

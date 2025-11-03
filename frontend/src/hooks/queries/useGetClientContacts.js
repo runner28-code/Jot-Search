@@ -10,6 +10,8 @@ export const useGetClientContacts = ({ count, page, filterKey, filterValue, enab
   const { data, error, isLoading } = useQuery(
     getClientContactsKey({filterValue, filterKey, count, page}),
     () => getClientContacts(filterValue, filterKey, count, page),
+// Temp comment
+    { enabled }
   );
 
   return { clientContacts: data, total: data?.length || 0, error, isLoading };

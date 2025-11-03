@@ -38,6 +38,7 @@ export default function CareerCard({ data, active }) {
     >
       {
         width > 768 ?
+          <DesktopCard
             dataObj={dataObj}
             active={active}
           />
@@ -53,6 +54,7 @@ export default function CareerCard({ data, active }) {
     </div>
   )
 }
+// Temp comment
 
 CareerCard.propTypes = {
   data: PropTypes.shape({

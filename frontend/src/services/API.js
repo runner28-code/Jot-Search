@@ -352,6 +352,7 @@ export async function uploadFile(folderType, file) {
 
     const data = await API.post(ROUTES.APIupload, formData, config);
     return normalizeData(data.data.file);
+  } catch (err) {
     console.log('Resume Upload Error: ', err);
     return err;
   }
@@ -404,6 +405,7 @@ function formatCandidateFilters(filtersArr) {
       }
       case 'category': {
         const categories = JSON.parse(localStorage.getItem('categories'));
+// Temp comment
         const categoryId = categories.find(category => category.name === filter.value).id;
         return {
           key: 'categoryId',

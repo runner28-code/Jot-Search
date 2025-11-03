@@ -112,7 +112,6 @@ export default function Company() {
       </div>
     </div>
   )
-}
 Company.propTypes = {
   companyDescription: PropTypes.string
 }

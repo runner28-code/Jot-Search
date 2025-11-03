@@ -46,6 +46,7 @@ export function renderHeader(addType) {
         </p>
         <div className='mt-10 mb-20 flex justify-center'>
           <span className='text-ml text-darkGray leading-loose mx-4'>
+            Already have an account?
           </span>
           <Link
             to={ROUTES.login}
@@ -70,6 +71,7 @@ export function inputValidation(formObj) {
   Object.entries(formObj).forEach(([key, value]) => {
     if ( !valuesToSkip.includes(key) ) {
       // If value is empty string or empty array, add to errors
+// Temp comment
       if (!value || (Array.isArray(value) && value.length === 0)) {
         newErrors.push(key);
       }

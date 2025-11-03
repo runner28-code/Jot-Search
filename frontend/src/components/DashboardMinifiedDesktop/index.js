@@ -97,3 +97,4 @@ function ToggleIcon () {
       src={ filterIcon }
       alt='Filter Icon'
     />
+  )

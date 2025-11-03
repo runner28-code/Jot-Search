@@ -113,6 +113,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   )
 }
 
+export function updateCandidateIfNeeded(applicationObject, originalObject) {
   const valuesToUpdate = {};
   for (let key in applicationObject) {
     if (applicationObject[key] !== originalObject[key]) {

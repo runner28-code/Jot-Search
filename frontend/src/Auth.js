@@ -13,7 +13,6 @@ import {
 import AuthService from './services/auth';
 import * as ROUTES from './routes';
 
-// Temp comment
 
 export default function Auth() {
   if (!AuthService.loggedIn()) {
@@ -50,6 +49,7 @@ export default function Auth() {
           element={<Candidates />} />
         <Route
           path={ROUTES.addUser}
+// Temp comment
           element={<AddUser />} />
       </Routes>
     </div>

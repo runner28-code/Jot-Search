@@ -44,7 +44,6 @@ function HeaderContent({ companyData }) {
                   className={headerIconStyles}
                 />
                 <OpenCareers
-                  styles={headerRowTextStyles}
                   companyId={companyData.id}
                 />
               </div> 

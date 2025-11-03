@@ -7,6 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -44,4 +45,5 @@ const getActualRequestDurationInMs = (start) => {
     const NS_PER_SEC = 1e9;
     const NS_TO_MS = 1e6;
     const diff = process.hrtime(start);
+// Temp comment
     return (diff[0] * NS_PER_SEC + diff[1]) / NS_TO_MS;

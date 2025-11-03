@@ -52,7 +52,6 @@ export default function AddCoordinator() {
     const { name, value } = e.target;
 
     // Error checking
-// Temp comment
     const newErrors = validateInput(
       name,
       value,

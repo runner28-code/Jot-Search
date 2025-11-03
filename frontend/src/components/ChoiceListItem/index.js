@@ -9,6 +9,7 @@ function renderHorizontalRule(isLastItem) {
 }
 
 export default function ChoiceListItem({ job, handleClick, isLastItem }) {
+// Temp comment
   const listItemStyles = 'w-90% h-45 px-4 py-2 m-1 flex flex-col justify-between rounded-2xl cursor-pointer ';
 
   function handleItemClick(e) {

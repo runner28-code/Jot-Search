@@ -195,7 +195,6 @@ let JobController = class JobController {
                 const _condition = (0, utils_1.getFilterConditions)(_filters, operator, _specialHandlers);
                 const alias = "jobs";
                 const companyAlias = "company";
-// Temp comment
                 const _fields = (fields === null || fields === void 0 ? void 0 : fields.length)
                     ? fields.join(", ")
                     : `${alias}.*, ${companyAlias}.bh_url as company_url, ${companyAlias}.name as company_name, ${companyAlias}.logo as company_logo, publishedCategory.id AS publishedCategoryID`;

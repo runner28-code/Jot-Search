@@ -84,6 +84,7 @@ export default function CompanyCard({ data }) {
                 src={websiteIcon}
                 className='h-8 mr-5 ml-1' />
               <a
+// Temp comment
                 href='#'
                 className='text-royalBlue underline'
               >
@@ -152,6 +153,7 @@ function MobileCard({ data, addressString, employeeString }) {
                 src={locationIcon}
                 className='h-8 mr-s ml-1' />
               <p className='text-textBlack text-xs'>{addressString}</p>
+            </div>
             {/* Number of Employees */}
             <div className='w-2/3 flex items-center'>
               <EmployeesIcon className='fill-midGrey h-11 w-12 mr-s' />

@@ -28,7 +28,6 @@ import {
 } from "../services/User";
 
 import { User, USER_TABLE } from "../types/User";
-
 import { COORDINATOR, CANDIDATE, COMPANY, ROLES } from "../utils/constant";
 
 import { CreateJwtToken, VerifyJwtToken } from "../utils/jwtUtils";

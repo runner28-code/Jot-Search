@@ -240,7 +240,6 @@ export class GetroService {
                         const res = await axios.get(url, this.getOptions());
                         await sleep(2000); // https://developers.getro.com/#rate-limit
 
-                        const { items, meta: { total } } = res.data;
                         if (!testMode) {
                             const newItems = items.map((item: any) => ({
                                 ...item,
@@ -254,6 +253,7 @@ export class GetroService {
                                 organization_slug: item.organization?.slug,
                                 posted_at: new Date(item.posted_at),
                                 expires_at: new Date(item.expires_at),
+                                deactivated_at: new Date(item.deactivated_at),
                                 closed_at: new Date(item.closed_at),
                             }))
                             for (const job of newItems) {

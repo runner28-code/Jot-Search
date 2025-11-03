@@ -48,7 +48,6 @@ const defaultCommunity = {
   community: ''
 }
 export default function RegistrationFormInternal(loggedIn) {
-  const {categories} = useContext(CategoryContext);
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');
@@ -73,7 +72,6 @@ export default function RegistrationFormInternal(loggedIn) {
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
-// Temp comment
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({

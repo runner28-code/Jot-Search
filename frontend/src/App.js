@@ -31,7 +31,6 @@ function App() {
               path={ROUTES.signup}
               element={<SignUp />} />
             <Route
-              path={ROUTES.login}
               element={<Login />} />
             <Route
               path={ROUTES.landingPage}
@@ -52,7 +51,6 @@ function App() {
               path={`${ROUTES.companies}/:id`}
               element={<Company />} />
             <Route
-// Temp comment
               path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />
             <Route

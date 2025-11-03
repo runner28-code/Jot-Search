@@ -45,7 +45,6 @@ export default function InviteCandidates({ company }) {
       ))}
     </div>)
   }
-
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>
   }
@@ -124,7 +123,6 @@ function getTagLine({ candidate }) {
   }else if (candidate?.occupation) {
     tagLine = candidate.occupation
   }else if (candidate?.companyName) {
-// Temp comment
     tagLine = `@ ${candidate.companyName}`
   }
   return tagLine;

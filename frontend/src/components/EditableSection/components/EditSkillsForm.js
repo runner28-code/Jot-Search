@@ -48,7 +48,6 @@ function renderChosen(skills, onChange) {
   return (
     <div className='flex flex-wrap mt-4 mb-16 w-full'>
       {skills.length > 0 ? skills.map(skill => {
-        function handleClick() {
           onChange('primarySkills', skills.filter(s => s !== skill))
         }
         return (

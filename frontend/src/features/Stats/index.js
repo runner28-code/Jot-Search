@@ -98,7 +98,6 @@ Stats.propTypes = {
 function StatCard({ stat, value }) {
   const deviationPercentage = Math.trunc(value.compare);
 
-  let numberStyles = 'text-h2 font-medium font-spaceGrotesk leading-tight';
   if (deviationPercentage > 0) {
     numberStyles += ' text-success';
   } else if (deviationPercentage === 0) {
@@ -108,6 +107,7 @@ function StatCard({ stat, value }) {
   }
   return (
     <div
+      key={stat}
       className='flex flex-[1_1_31%] flex-col justify-between mr-5 mb-5 bg-white rounded-xl pl-4 vw-400:pl-8 pb-4 pt-8'
     >
       <div className='font-spaceGrotesk'>

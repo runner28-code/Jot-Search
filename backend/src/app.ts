@@ -102,7 +102,6 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
   next();
 };
 
-const app = express();
 const port = process.env.PORT || 3001;
 
 app.use(bodyParser.json());
@@ -117,6 +116,7 @@ app.get("/health", (req, res) => {
 });
 
 useExpressServer(app, {
+  controllers: [path.join(__dirname + "/controllers/*.ts")],
   authorizationChecker: async (action: Action) => {
     try {
       const token = action.request.headers.authorization.split(" ")[1];

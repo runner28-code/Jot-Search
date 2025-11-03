@@ -11,6 +11,7 @@ export default function Filters(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
+    marginBottom
   } = props;
 
   let filterContainerStyles = 'flex flex-col justify-between gap-xxl-4 pb-9 vw-768:px-14 ';
@@ -62,7 +63,6 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
     }
     const filterType = key;
     const choices = value;
-    const chosen = filterObject ? filterObject[filterType] : null;
     return (
       <Filter
         key={filterType}

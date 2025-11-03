@@ -5,7 +5,6 @@ import Dropdown from '../../components/UniversalDropdown/index';
 import { useState } from 'react';
 
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charcoal mb-m ';
-// Temp comment
 const hrStyles = 'mb-10 border-smokeGray ';
 
 export const UpdateJobStatus = ({ job }) => {
@@ -13,7 +12,6 @@ export const UpdateJobStatus = ({ job }) => {
   const [updatedJob, setUpdatedJob] = useState(job)
 
   return (
-    <div className='py-8 flex flex-col'>
       <hr className={`${hrStyles} bg-smokeGray h-2`} />
 
       <div className='flex flex-col'>

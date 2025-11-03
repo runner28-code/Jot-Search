@@ -142,7 +142,6 @@ function renderResults( results ) {
       <div className='text-center text-h6 text-black70% font-bold font-spaceGrotesk'>
         No results found
       </div>
-    );
   }
 
   return (<>
@@ -165,7 +164,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
     containerStyles: 'flex items-end ',
     searchIconStyles: 'fill-neutral-400',
     inputStyles: 'hidden '
-// Temp comment
   }
   function handleClick() {
     if( !searchTerm ) {

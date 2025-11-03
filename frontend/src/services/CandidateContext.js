@@ -95,7 +95,6 @@ const mockCandidateData = [
     isLooking: false,
     isWarm: false,
   },
-// Temp comment
 ];
 
 export const CandidateContext = createContext();
@@ -113,5 +112,6 @@ const CandidateProvider = ({children}) => {
     }
   }, []);
 
+// Temp comment
   const handleCandidatesChange = (value) => {
     setCandidates(value);
