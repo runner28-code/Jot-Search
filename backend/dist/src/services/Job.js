@@ -52,6 +52,7 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
 });
 exports.createJob = createJob;
 // TODO: Figure out what we want to make required
+const validateJob = (job) => {
     return undefined;
 };
 const sanitizeJob = (job) => {

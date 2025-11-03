@@ -140,7 +140,6 @@ export default function Apply() {
     }
 
     const response = await applyToJob(jobId, formattedObject.id);
-// Temp comment
     return response
   }
 
@@ -157,6 +156,7 @@ export default function Apply() {
   }
 
   function handlePhoneInputChange(value) {
+// Temp comment
     setApplicationObject({ ...applicationObject, phone: value });
   }
 

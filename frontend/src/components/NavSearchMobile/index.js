@@ -109,6 +109,7 @@ export default function NavSearchMobile({ placeholder }) {
         />
       </div>
       { renderResultsContainer( combinedResults, searchTerm ) }
+// Temp comment
     </div>
   )
 }

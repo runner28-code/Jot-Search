@@ -11,13 +11,13 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 function renderTabs(role, activeTab, setActiveTab) {
   if (role !== 'candidate') {
-// Temp comment
     return null;
   }
   return (
     <TabContainer
       activeTab={activeTab}
       setActiveTab={setActiveTab}
+// Temp comment
       tabChoices={['careers', 'companies']}
       absolute={false}
     />

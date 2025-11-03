@@ -17,6 +17,7 @@ export default function DashboardMinifiedDesktop ({ location }) {
 
   if( location === 'career' ) {
     return (
+      <CareerHeader location={location} />
     )
   }
   if( location === 'companies' ) {

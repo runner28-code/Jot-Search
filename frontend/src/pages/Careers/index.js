@@ -42,7 +42,6 @@ export default function Careers() {
           loggedIn={loggedIn}
           toggle={toggle}
           userType={userType}
-        />
       </div>
     </section>
   )

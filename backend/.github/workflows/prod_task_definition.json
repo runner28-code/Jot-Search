@@ -17,7 +17,6 @@
 //             ],
 //             "essential": true,
 //             "logConfiguration": {
-//                 "logDriver": "awslogs",
 //                 "options": {
 //                     "awslogs-group" : "/ecs/prod-site-backend-task",
 //                     "awslogs-region": "us-east-1",

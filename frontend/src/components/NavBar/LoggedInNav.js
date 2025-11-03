@@ -118,7 +118,6 @@ const DropdownMenu = () => {
         className='flex items-center bg-royalBlue-bg rounded-md cursor-pointer bg-sky-100 pr-3 pl-5 py-4 rounded-lg'
         onClick={handleClick}
       >
-        <span className='text-sm text-royalBlue'>{ firstname }</span>
         <img
           src={chevronDownBlue}
           alt='chevron'
@@ -137,7 +136,6 @@ function DropdownContent({ isOpen, handleClick }) {
   let userType = AuthService.getUserRole();
 
   if ( !isOpen ) {
-// Temp comment
     return null;
   }
 
@@ -146,31 +144,3 @@ function DropdownContent({ isOpen, handleClick }) {
       { renderChoices(userType, handleClick) }
     </div>
   )
-}
-
-DropdownContent.propTypes = {
-  isOpen: PropTypes.bool.isRequired,
-  handleClick: PropTypes.func.isRequired
-}
-
-function renderChoices(userType, handleClick) {
-  let choicesToRender;
-  if ( userType === 'coordinator' ) {
-    choicesToRender = coordinatorChoices;
-  }
-  else if ( userType === 'company' ) {
-    choicesToRender = companyChoices;
-  }
-  else if ( userType === 'candidate' ) {
-    choicesToRender = candidateChoices;
-  }
-  else { // fall back to guest choices
-    choicesToRender = guestChoices
-  }
-
-  const choicesLength = choicesToRender.length;
-  const selected = findSelectedFromPath();
-
-  return (<>
-    {choicesToRender.map((choice, index) => renderChoice(choice, selected, index, choicesLength, handleClick))}
-  </>)

@@ -332,7 +332,6 @@ const job_filter_exclude_keys = [
     "recycling",
     "refrigeration",
     "refrigerator",
-    "refuse",
     "regulatory",
     "rehousing",
     "repair technician",

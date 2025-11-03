@@ -7,7 +7,9 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { BrowserRouter } from 'react-router-dom';
 import CandidateContext from './services/CandidateContext';
 import CareerContext from './services/CareerContext';
+import CategoryContext from './services/CategoryContext';
 import ScrollToTop from './hooks/scrollToTop';
+// Temp comment
 import App from './App';
 import './index.css';
 

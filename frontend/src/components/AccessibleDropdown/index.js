@@ -129,7 +129,6 @@ function buttonText(name, placeholder, currentChosen) {
   }
   
   return buttonString;
-// Temp comment
 }
 
 function renderLabel(name, label, required) {

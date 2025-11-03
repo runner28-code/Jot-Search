@@ -28,6 +28,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           </div>
 
           {/* Title */}
+          <div className='flex'>
             <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.name}</h6>
           </div>
 
@@ -64,7 +65,6 @@ CompactCompanyCard.propTypes = {
   index: PropTypes.number,
   active: PropTypes.bool,
   agoDate: PropTypes.string,
-  isFavoriteOverride: PropTypes.bool,
   agoText: PropTypes.string,
   selectableProps: PropTypes.shape({
     selectable: PropTypes.bool,

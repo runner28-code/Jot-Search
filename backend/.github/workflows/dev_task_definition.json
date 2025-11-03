@@ -16,7 +16,6 @@
                 }
             ], 
             "essential": true,
-            "logConfiguration": { 
                 "logDriver": "awslogs",
                 "options": { 
                    "awslogs-group" : "/ecs/dev-site-backend-task",
@@ -47,6 +46,7 @@
                 },
                 {
                     "name": "DATASET_GETRO", 
+                    "value": "inTulsa_Getro"
                 },
                 {
                     "name": "DATASET_MAIN", 

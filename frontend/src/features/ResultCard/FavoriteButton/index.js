@@ -58,6 +58,7 @@ FavoriteButton.propTypes = {
     candidate: PropTypes.string,
     status: PropTypes.string,
   }).isRequired,
+  isFavoriteOverride: PropTypes.bool,
 }
 
 function getIdByType(type, data) {
@@ -67,6 +68,7 @@ function getIdByType(type, data) {
     case 'company':
       return data.id;
     case 'candidate':
+// Temp comment
       return data.id;
     default:
       return '';

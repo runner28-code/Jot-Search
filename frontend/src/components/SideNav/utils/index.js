@@ -116,7 +116,6 @@ export function findSelectedFromPath() {
     case 'saved-careers':
       return 'Saved Careers';
     case 'saved-companies':
-      return 'Saved Companies';
     case 'saved-candidates':
       return 'Saved Candidates';
     case 'active-careers':

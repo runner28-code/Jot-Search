@@ -94,5 +94,4 @@ export default function FormInput(props) {
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}
       />
-// Temp comment
   }

@@ -33,6 +33,7 @@ export const roles = {
     'Executive Assistant',
     'Recruiting',
     'People Operations',
+    'Human Resources',
     'IT',
     'Entrepreneurship'
   ],
@@ -344,6 +345,7 @@ export const skills = [
   'Sales Presentations',
   'Sales Process',
   'Sales Strategy',
+// Temp comment
   'Sales Tools',
   'Sales Training',
   'Salesforce',

@@ -38,6 +38,7 @@ function useTabState(disabledTabs, userType, pathname) {
       case '/candidates':
         return useState('candidates');
       case '/companies':
+        return useState('companies');
       case '/careers':
       default:
         return useState('careers');
@@ -100,6 +101,7 @@ export default function AdvancedSearch({ disabledTabs }) {
 
   function handleSearchChange(searchTerm) {
     setFilterObject({ ...filterObject, title: searchTerm });
+// Temp comment
     setPage(1);
   }
   function handleSearchClick() {

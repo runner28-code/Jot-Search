@@ -15,7 +15,6 @@ export const UpdateJobFeatured = ({ job }) => {
 
   const enabledToggleStyles = 'translate-x-12'
   const disabledToggleStyles = 'translate-x-0'
-
   const toggleStyles = toggled ? enabledToggleStyles : disabledToggleStyles
 
   return (
@@ -36,7 +35,6 @@ export const UpdateJobFeatured = ({ job }) => {
             // TODO: Replace with react-query refetch
             if(result) {
               window.location.reload()
-// Temp comment
             }
           }}>
           <span className="sr-only">inTulsa Featured</span>

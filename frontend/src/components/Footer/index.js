@@ -399,6 +399,7 @@ function BackToTop() {
   const { width } = useWindowDimensions();
 
   if( width <= 990 ) {
+    return null;
   }
   return(<>
     <div className='text-center'>

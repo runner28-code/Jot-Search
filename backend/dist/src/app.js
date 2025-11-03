@@ -24,13 +24,13 @@ const User_1 = require("./services/User");
 const multer_1 = __importDefault(require("multer"));
 const utils_1 = require("./utils");
 const fs_1 = __importDefault(require("fs"));
+// Temp comment
 dotenv_1.default.config();
 const ALLOWED_UPLOAD_FOLDERS = ["resumes", "avatars"];
 const multerStorage = multer_1.default.diskStorage({
     destination: (req, file, cb) => {
         const folder = req.body.type || "resumes";
         const path = __dirname + `/../uploads/${folder}`;
-// Temp comment
         console.log("upload path: ", path);
         fs_1.default.mkdirSync(path, { recursive: true });
         cb(null, path);

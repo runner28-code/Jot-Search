@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
@@ -15,7 +16,6 @@ const dropdownFilters = [
   'Experience',
   'Remote Availability',
   'Employment Type',
-];
 const checkboxFiltersCoord = [
   'Open to Relocation',
   'Authorized to work in the US',

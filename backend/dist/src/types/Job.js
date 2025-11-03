@@ -18,7 +18,6 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "status",
     "skillList",
     "locations",
-    "companyId",
     "interviews",
     "onSite",
     "salary",

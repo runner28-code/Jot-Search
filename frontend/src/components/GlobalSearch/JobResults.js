@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+import PropTypes from 'prop-types';
 import urlDecode from '../../utils/urlDecode';
 import * as ROUTES from '../../routes';
 

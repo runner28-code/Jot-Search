@@ -61,7 +61,6 @@ export default function RegistrationForm() {
       }
       
       // Attempt to upload resume before submitting user data
-// Temp comment
       const resumeURL = await uploadFile('resumes', formObj.resumeFile);
       formObj.resume = resumeURL;
       delete formObj.resumeFile;
@@ -115,7 +114,6 @@ export default function RegistrationForm() {
       lastName: lastName.value,
       email: email.value,
       linkedin: linkedin.value,
-      password: password.value,
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-// Temp comment
 import Dropdown from '../FilterDropdown';
+// Temp comment
 import chevronDownGray from '../../assets/icons/chevron-down-gray.svg';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 

@@ -25,7 +25,6 @@ export const useGetCandidates = ({ count, page, fields, filtersArr, enabled = tr
 
   return { candidates: data?.candidates, total: data?.total || 0, error, isLoading };
 }
-// Temp comment
 
 const getCandidatesKey = ({filtersArr, count, page}) => {
   return ['candidates', {filtersArr, count, page}];

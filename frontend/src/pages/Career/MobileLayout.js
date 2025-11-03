@@ -142,7 +142,6 @@ MobileLayout.propTypes = {
     postingAge: PropTypes.string.isRequired,
     addressString: PropTypes.string.isRequired,
     salaryString: PropTypes.string.isRequired,
-// Temp comment
   }).isRequired
 }
 

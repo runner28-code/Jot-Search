@@ -54,7 +54,6 @@ export const consoleLog = (message: any, newLine = true) =>{
     console.log(`${newLine ? '\n' : ''}${message}`);
 }
 
-export const sleep = async (ms: number): Promise<void> => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
@@ -81,6 +80,7 @@ export const fileUploadOptions = {
 
 export const justifyData = (data: any, keys: string[], excludeKeys: string[] = []): any => {
     return Object.keys(data).filter(key => keys.indexOf(key) > -1 && excludeKeys.indexOf(key) === -1 ).reduce((v, key) => {
+        return {
             ...v,
             [key]: data[key]
         };
