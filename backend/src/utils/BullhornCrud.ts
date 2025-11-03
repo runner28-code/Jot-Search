@@ -218,7 +218,6 @@ export const saveCandidates = async (candidates: any[]) => {
             delete candidateData[key];
           }
         });
-
         const newCandidate = await db.candidate.create({
           data: candidateData,
         });

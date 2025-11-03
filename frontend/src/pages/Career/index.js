@@ -43,7 +43,6 @@ export default function CareerPage() {
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
   const postingAge = calculatePostingAge(careerData.createdAt);
   const data = {
-// Temp comment
     careerData,
     categoryString,
     addressString,
@@ -142,6 +141,7 @@ Notification.propTypes = {
   id: PropTypes.string,
   add: PropTypes.string
 }
+// Temp comment
 
 function MailButton({ text, email, company, id, add }) {
   const mail = 'mailto:' + email + '?subject=';

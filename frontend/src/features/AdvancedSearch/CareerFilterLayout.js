@@ -20,6 +20,7 @@ export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
 
   const {
+    defaultFilterObject,
     filterObject,
     handleFilterChange,
     searchTerm,
@@ -27,7 +28,6 @@ export default function CareerFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
-
   const dropdownFilterObject = {};
   if( userType === 'candidate' ) {
     dropDownFiltersCandidate.forEach(filter => {

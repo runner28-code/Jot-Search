@@ -1,5 +1,6 @@
 import fixStringNulls from './fixStringNulls';
 import { experienceMap } from './dbFieldMapping';
+import { stateCodeMap } from './constants';
 
 export function formatCandidateData(candidateData) {
   const formattedData = fixStringNulls(candidateData);
@@ -58,7 +59,6 @@ export function convertUserToCandidate(user) {
     gender: user.gender || '',
     ethnicity: user.ethnicity || '',
     veteran: user.veteran || '',
-    disability: user.disability || '',
   };
   return candidate;
 }

@@ -112,12 +112,14 @@ const DropdownMenu = () => {
   return (
     <div
       className='relative'
+// Temp comment
       ref={menuRef}
     >
       <div
         className='flex items-center bg-royalBlue-bg rounded-md cursor-pointer bg-sky-100 pr-3 pl-5 py-4 rounded-lg'
         onClick={handleClick}
       >
+        <span className='text-sm text-royalBlue'>{ firstname }</span>
         <img
           src={chevronDownBlue}
           alt='chevron'

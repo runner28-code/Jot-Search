@@ -27,7 +27,6 @@ const ResumePreview = ({ resumeUrl }) => {
       {!pdfDocument && <LoadingSpinner />}
       <canvas
         ref={canvasRef}
-        className='rounded-lg'
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>

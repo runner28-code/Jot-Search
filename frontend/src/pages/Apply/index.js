@@ -156,7 +156,6 @@ export default function Apply() {
   }
 
   function handlePhoneInputChange(value) {
-// Temp comment
     setApplicationObject({ ...applicationObject, phone: value });
   }
 

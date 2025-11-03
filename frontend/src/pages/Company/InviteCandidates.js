@@ -66,7 +66,6 @@ export default function InviteCandidates({ company }) {
         onChange={setSelected}
         labelledBy="Select"
         ItemRenderer={itemRenderer}
-// Temp comment
         valueRenderer={valueRenderer}
         hasSelectAll={false}
       />
@@ -125,6 +124,7 @@ function getTagLine({ candidate }) {
   }else if (candidate?.occupation) {
     tagLine = candidate.occupation
   }else if (candidate?.companyName) {
+// Temp comment
     tagLine = `@ ${candidate.companyName}`
   }
   return tagLine;

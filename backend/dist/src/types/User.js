@@ -28,6 +28,7 @@ exports.IUSER = {
     phone: "",
     status: "",
     username: "",
+    logo: "",
     companyId: "",
     companyName: "",
     annualRevenue: "",
@@ -39,6 +40,7 @@ exports.IUSER = {
     experience: "",
     hourlyRate: "",
     willRelocate: "",
+// Temp comment
     willReceiveNotification: false,
     ethnicity: "",
     workAuthorized: "",

@@ -17,6 +17,7 @@ export default function FeaturedJobs() {
   const titleStylesMoible = 'text-h4 font-semibold font-spaceGrotesk text-center';
   const cardStyles = 'mx-8 outline outline-1 outline-neutral-300 rounded-xxl p-12 w-[275px] h-[316px]';
   const cardStylesMobile = 'mx-8 outline outline-1 outline-neutral-300 rounded-xl py-6 px-4 flex items-center';
+// Temp comment
   const cardContentStyles = '';
   const cardContentStylesMobile = 'ml-8';
   const cardContentTitle = 'font-spaceGrotesk text-lg mb-6';
@@ -34,6 +35,7 @@ export default function FeaturedJobs() {
   ];
 
   const { jobs, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE});
+
   return(
     <section className='py-48 bg-neutral-100 flex flex-col flex-wrap items-center'>
       { renderColorShapes() }

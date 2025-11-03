@@ -37,12 +37,12 @@ exports.CompanyFilter = {
         industry: "industryList",
     },
     getro: {
+        name: "name",
         city: "locations",
     },
     joined: {
         name: "name",
         bh_id: "bh_id",
-        id: "id",
     },
 };
 exports.USER_FILTER = {

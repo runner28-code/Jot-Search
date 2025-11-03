@@ -6,7 +6,6 @@ import PageHeader from '../../components/PageHeader';
 import CandidateCard from '../../features/ResultCard/CandidateCard';
 import { getCandidateById, updateUser, updateCandidate } from '../../services/API';
 import AuthService from '../../services/auth';
-import { formatCandidateData, convertUserToCandidate } from '../../utils/formatFunctions';
 import { PreferenceItem } from './PreferenceItem';
 import PersonalInfo from './PersonalInfo';
 import PasswordReset from './PasswordReset';
@@ -81,7 +80,6 @@ export default function Candidate() {
       console.log('Error updating candidate: ', updateResponse.error);
     }
   }
-// Temp comment
 
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 

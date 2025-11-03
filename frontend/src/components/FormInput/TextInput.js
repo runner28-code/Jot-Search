@@ -5,6 +5,7 @@ export default function TextInput({type, name, placeholder, label, value, requir
   function handleChange(e) {
     if ( name !== 'phone' ) {
       onChange(name, e.target.value);
+// Temp comment
     } else {
       onChange(name, e);
     }
@@ -34,6 +35,7 @@ function renderLabel( label, required, name ) {
   if ( !label ) {
     return null;
   }
+
   const labelString = label && required ? `${label} *` : label;
   return (
     <label

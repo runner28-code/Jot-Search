@@ -78,7 +78,6 @@ export type Job = {
     hoursOfOperation?: string;
     hoursPerWeek?: string;
     interviews?: string;
-    isClientEditable?: string;
     isDeleted?: string;
     isInterviewRequired?: string;
     isJobcastPublished?: string;

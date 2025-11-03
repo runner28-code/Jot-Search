@@ -562,7 +562,6 @@ export class BullhornService {
             dateAdded: new Date(d.dateAdded),
             dateLastModified: new Date(d.dateLastModified),
           }));
-          if (!testMode) {
             const res = await saveClientContacts(updatedData);
             if (res === -1) return;
           }

@@ -38,7 +38,6 @@ export default function CareerCard({ data, active }) {
     >
       {
         width > 768 ?
-          <DesktopCard
             dataObj={dataObj}
             active={active}
           />
@@ -166,7 +165,6 @@ DesktopCard.propTypes = {
         name: PropTypes.string
       })
     }).isRequired,
-// Temp comment
     categoryString: PropTypes.string,
     addressString: PropTypes.string,
     salaryString: PropTypes.string,

@@ -7,7 +7,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
-};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -24,7 +23,6 @@ const User_1 = require("./services/User");
 const multer_1 = __importDefault(require("multer"));
 const utils_1 = require("./utils");
 const fs_1 = __importDefault(require("fs"));
-// Temp comment
 dotenv_1.default.config();
 const ALLOWED_UPLOAD_FOLDERS = ["resumes", "avatars"];
 const multerStorage = multer_1.default.diskStorage({

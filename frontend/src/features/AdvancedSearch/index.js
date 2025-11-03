@@ -90,7 +90,6 @@ export default function AdvancedSearch({ disabledTabs }) {
     setFilterObject({ ...filterObject, title: '' });
     setPage(1);
   }, [activeTab]);
-
   function handleFilterChange(filterType, choice) {
     setFilterObject({
       ...filterObject,
@@ -101,7 +100,6 @@ export default function AdvancedSearch({ disabledTabs }) {
 
   function handleSearchChange(searchTerm) {
     setFilterObject({ ...filterObject, title: searchTerm });
-// Temp comment
     setPage(1);
   }
   function handleSearchClick() {

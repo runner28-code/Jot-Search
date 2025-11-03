@@ -162,7 +162,6 @@ export async function getClientContacts(filterValue, filterKey, count) {
       [filterKey || 'clientCorporation']: filterValue || '',
     },
     'count': count
-// Temp comment
   });
   return normalizeData(data.clientContacts)
 }
@@ -353,7 +352,6 @@ export async function uploadFile(folderType, file) {
 
     const data = await API.post(ROUTES.APIupload, formData, config);
     return normalizeData(data.data.file);
-  } catch (err) {
     console.log('Resume Upload Error: ', err);
     return err;
   }

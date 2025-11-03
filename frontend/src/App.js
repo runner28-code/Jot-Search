@@ -14,6 +14,7 @@ import {
   Apply
 } from './pages';
 import { NavBar, Footer, SideNav } from './components';
+import AuthService from './services/auth';
 
 function App() {
   let userRole = AuthService.getUserRole();
@@ -51,6 +52,7 @@ function App() {
               path={`${ROUTES.companies}/:id`}
               element={<Company />} />
             <Route
+// Temp comment
               path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />
             <Route
