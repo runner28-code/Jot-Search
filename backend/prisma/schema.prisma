@@ -652,6 +652,7 @@ model Candidate {
   phone                  String?
   phone2                 String?
   phone3                 String?
+
   preferredContact String?
   primarySkills    String?
   recentClientList String[]

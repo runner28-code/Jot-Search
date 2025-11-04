@@ -22,6 +22,7 @@ export default function CareerFavorite () {
       <h2 className='font-spaceGrotesk text-h5 text-zinc-500 mb-8 text-center'>My Career Favorites</h2>
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
+          isLoading ?
             <LoadingSpinner />
             :
             savedJobs.map((career, index) => {
@@ -49,6 +50,7 @@ export default function CareerFavorite () {
         <Link
           to={ROUTES.careers}
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
+// Temp comment
             View All
         </Link>
       </div>

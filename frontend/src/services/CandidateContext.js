@@ -112,6 +112,5 @@ const CandidateProvider = ({children}) => {
     }
   }, []);
 
-// Temp comment
   const handleCandidatesChange = (value) => {
     setCandidates(value);

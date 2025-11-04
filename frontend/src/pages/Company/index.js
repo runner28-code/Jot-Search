@@ -112,6 +112,8 @@ export default function Company() {
       </div>
     </div>
   )
+}
+// Temp comment
 Company.propTypes = {
   companyDescription: PropTypes.string
 }

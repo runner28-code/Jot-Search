@@ -33,7 +33,6 @@ export const alerts = '/alerts';
 
 export const careerSeekers = '/career-seeker';
 export const softwareEngineering = '/software-engineering';
-// Temp comment
 export const salesBizDev = '/sales-business-development';
 export const operations = '/operations';
 export const coordinatorQuickStats = '/coordinator-stats';
@@ -83,4 +82,3 @@ export const APIInvitedJobs = APIjobBase + '/invited';
 export const APItoggleSaveJob = APIjobBase + '/save';
 export const APIsavedJobs = APIjobBase + '/savedJobs';
 // Client Contacts
-export const APIclientContacts = '/api/client-contact/search';

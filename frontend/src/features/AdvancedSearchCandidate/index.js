@@ -67,7 +67,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,
-// Temp comment
         firstname: filterObject.title
       }
       delete modifiedFilterObject.title;

@@ -2,6 +2,7 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
+// Temp comment
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
   ],

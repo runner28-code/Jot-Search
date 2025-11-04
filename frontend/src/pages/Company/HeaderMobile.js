@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 
 // import FeaturedTag from '../../components/FeaturedTag';
@@ -44,6 +45,7 @@ function HeaderContent({ companyData }) {
                   className={headerIconStyles}
                 />
                 <OpenCareers
+                  styles={headerRowTextStyles}
                   companyId={companyData.id}
                 />
               </div> 

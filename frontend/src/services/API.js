@@ -156,6 +156,7 @@ export async function getCompanyById(id) {
   return company;
 }
 
+// Temp comment
 export async function getClientContacts(filterValue, filterKey, count) {
   const { data } = await API.post(ROUTES.APIclientContacts, {
     'filters': {
@@ -405,7 +406,6 @@ function formatCandidateFilters(filtersArr) {
       }
       case 'category': {
         const categories = JSON.parse(localStorage.getItem('categories'));
-// Temp comment
         const categoryId = categories.find(category => category.name === filter.value).id;
         return {
           key: 'categoryId',

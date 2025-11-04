@@ -18,7 +18,6 @@ import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
 import { experienceMap } from '../../utils/dbFieldMapping';
-// Temp comment
 
 const defaultState = {
   expertise: '',
@@ -58,7 +57,6 @@ export default function RegistrationForm() {
           loading: false,
           success: false,
         });
-        return; 
       }
       
       // Attempt to upload resume before submitting user data

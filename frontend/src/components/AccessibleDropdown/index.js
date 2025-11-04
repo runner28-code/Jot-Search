@@ -150,7 +150,6 @@ function renderLabel(name, label, required) {
 }
 
 function renderDropdownArrow(dropdownArrow) {
-  if ( !dropdownArrow ) {
     return null;
   }
 
@@ -209,7 +208,6 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
           className={ listItemStyles }
           value={key}
         >
-// Temp comment
           <span>{value}</span>
           {renderActiveIcon(key, currentChosen)}
         </MenuItem>

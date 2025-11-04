@@ -240,6 +240,7 @@ export class GetroService {
                         const res = await axios.get(url, this.getOptions());
                         await sleep(2000); // https://developers.getro.com/#rate-limit
 
+                        const { items, meta: { total } } = res.data;
                         if (!testMode) {
                             const newItems = items.map((item: any) => ({
                                 ...item,

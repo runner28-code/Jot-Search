@@ -318,7 +318,6 @@ export const skills = [
   'Python',
   'QA',
   'Qlikview',
-// Temp comment
   'Qualitative Research',
   'Quantitative Research',
   'QuickBooks',

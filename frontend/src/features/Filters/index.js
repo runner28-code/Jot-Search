@@ -63,6 +63,7 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
     }
     const filterType = key;
     const choices = value;
+    const chosen = filterObject ? filterObject[filterType] : null;
     return (
       <Filter
         key={filterType}
@@ -93,7 +94,6 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
         key={filterType}
         className='grow flex items-center gap-m'
       >
-        <input
           type='checkbox'
           name={filterType}
           checked={filterObject[key] === 'Yes'}

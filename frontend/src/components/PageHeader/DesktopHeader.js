@@ -45,7 +45,6 @@ export default function DesktopHeader(props) {
         <button
           className='text-md text-royalBlue underline mt-6'
           onClick={() => navigate(-1)}
-// Temp comment
         >
           {'< Go Back'}
         </button>

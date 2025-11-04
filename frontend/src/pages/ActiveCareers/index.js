@@ -10,6 +10,7 @@ import {
   buildSearchFilters
 } from '../../utils/filterObjects';
 import AuthService from '../../services/auth';
+// Temp comment
 
 const PLACE_HOLDER = 'Search active job title';
 const RESULT_CONTAINER_TYPE = 'active careers';
@@ -21,7 +22,6 @@ export default function ActiveCareers() {
   const [searchTerm, setSearchTerm] = useState('');
 
   /* EVENT HANDLERS */
-// Temp comment
   function handleSearchChange( searchTerm ) {
     setSearchTerm(searchTerm);
     setPage(1);

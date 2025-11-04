@@ -71,6 +71,7 @@ export class CandidateController {
         message: !candidate ? "No user with given ID" : undefined,
       };
     } catch (error) {
+      return { message: error };
     }
   }
 

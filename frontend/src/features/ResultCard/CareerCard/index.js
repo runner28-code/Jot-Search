@@ -34,7 +34,6 @@ export default function CareerCard({ data, active }) {
   return (
     <div
       className='relative w-full'
-      key={data.id}
     >
       {
         width > 768 ?
@@ -54,7 +53,6 @@ export default function CareerCard({ data, active }) {
     </div>
   )
 }
-// Temp comment
 
 CareerCard.propTypes = {
   data: PropTypes.shape({

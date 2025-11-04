@@ -114,5 +114,4 @@ export default function AdvancedSearch({ disabledTabs }) {
       setFilterObject(defaultCandidateFilterState);
     }
     setActiveTab(tabChoice);
-// Temp comment
     setPage(1);

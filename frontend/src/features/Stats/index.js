@@ -49,7 +49,6 @@ export default function Stats({ userType }) {
       })
     }
     if (userType === 'coordinator') {
-      const result = await getCoordinatorQuickStats(duration);
       setStats({
         'Total Companies': { ...result.totalCompanies },
         'Total Open Jobs': { ...result.totalOpenJobs },
@@ -98,6 +97,7 @@ Stats.propTypes = {
 function StatCard({ stat, value }) {
   const deviationPercentage = Math.trunc(value.compare);
 
+  let numberStyles = 'text-h2 font-medium font-spaceGrotesk leading-tight';
   if (deviationPercentage > 0) {
     numberStyles += ' text-success';
   } else if (deviationPercentage === 0) {

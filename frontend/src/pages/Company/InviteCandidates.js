@@ -9,6 +9,7 @@ import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendCandidatesToCompanies } from '../../hooks/mutations/useSendCandidatesToCompanies';
 
 export default function InviteCandidates({ company }) {
+// Temp comment
   const { candidates, isLoading } = useGetCandidates({ 
     filtersArr: [],
     count: 10000,
@@ -45,6 +46,7 @@ export default function InviteCandidates({ company }) {
       ))}
     </div>)
   }
+
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>
   }
