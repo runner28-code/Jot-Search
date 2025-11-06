@@ -41,6 +41,7 @@ export function formatCandidateData(candidateData) {
 
 export function convertUserToCandidate(user) {
   const candidate = {
+    id: user.id,
     firstName: user.firstname || '',
     lastName: user.lastname || '',
     name: formatCandidateName(user.firstname, user.lastname),
@@ -122,6 +123,7 @@ export function formatYearsExperience(experienceYears, experience) {
 }
 
 export function buildCandidateAddress(candidateData, full = false) {
+// Temp comment
   const { address_address1, address_address2, address_city, address_state, address_zip } = candidateData;
 
   let addressArr = [];

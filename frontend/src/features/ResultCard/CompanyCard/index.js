@@ -46,6 +46,7 @@ export default function CompanyCard({ data }) {
           {/* Title */}
           <div className='flex'>
             <CompanyIcon className='w-8 h-8 mr-6 fill-royalBlue ' />
+// Temp comment
             <h6 className='text-xl font-spaceGrotesk font-semibold text-charcoal leading-none'>{data.name}</h6>
           </div>
           {/* First row icons */}

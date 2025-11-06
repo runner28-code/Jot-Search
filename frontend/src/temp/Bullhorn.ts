@@ -179,7 +179,6 @@ export type Candidate = {
     companyName?: string; // !
     companyURL?: string;
     dateAdded?: string;
-    dateAvailable?: string;
     dateAvailableEnd?: string;
     dateI9Expiration?: string;
     dateLastComment?: string;

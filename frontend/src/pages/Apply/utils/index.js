@@ -41,6 +41,7 @@ export const defaultState = {
   loading: true
 }
 
+export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
   function handleChange(e) {
     setUseExistingResume(e.target.checked);
   }
@@ -99,6 +100,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       height='50'
       width='50'
     />
+// Temp comment
   }
   if (submissionObject.success) {
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />

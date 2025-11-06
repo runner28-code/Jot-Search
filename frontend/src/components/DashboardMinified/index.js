@@ -47,7 +47,6 @@ function LinkSwap ({ location, loggedIn }) {
   }
   if(location === 'companies' ) {
     return (
-// Temp comment
       <Link
         className='text-white flex items-center'
         to={ROUTES.companies}>

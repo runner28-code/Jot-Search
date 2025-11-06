@@ -116,6 +116,7 @@ export default function RegistrationFormInternal(loggedIn) {
         setSubmissionObject({
           loading: false,
           success: false,
+        });
       }
     }
   }, [submissionObject.loading]);
@@ -137,6 +138,7 @@ export default function RegistrationFormInternal(loggedIn) {
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
     setErrors([]);
+// Temp comment
     setFormObj({
       ...formObj,
       firstName: firstName.value,

@@ -13,7 +13,6 @@ export default function ResetPassword() {
   const [match, setMatch] = useState('');
   const [success, setSuccess] = useState('');
 
-  const queryParams = new URLSearchParams(window.location.search);
   const token = queryParams.get('token');
 
   const handlePassword = (event) => {
@@ -50,6 +49,7 @@ export default function ResetPassword() {
 
   const renderSuccess = () => {
     if( success ) {
+      return (
         <div className='mb-4 text-center'>
           <span className='text-success'>Reset Password Successful.</span>&nbsp;
           <Link

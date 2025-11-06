@@ -368,6 +368,7 @@ export class CandidateController {
     }
     try {
       const jobsPromise = getJobsList(body.jobIds);
+      const candidatesPromise = db.candidate.findMany({
         where: {
           id: {
             in: body.candidateIds,

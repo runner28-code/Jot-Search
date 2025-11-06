@@ -12,7 +12,6 @@ env:
   ECS_CLUSTER: 'intulsa-cluster-dev'
   ECS_TASK_DEFINITION: '.github/workflows/dev_task_definition.json'
   CONTAINER_NAME: 'intulsa-frontend-container-dev'
-
 jobs:
   deploy:
     name: Deploy
@@ -20,6 +19,7 @@ jobs:
     environment: dev
 
     steps:
+    - name: Checkout
       uses: actions/checkout@v3
 
     - name: Configure AWS credentials

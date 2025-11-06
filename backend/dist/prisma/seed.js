@@ -11,7 +11,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 const client_1 = require("@prisma/client");
 const db_1 = __importDefault(require("../src/utils/db"));
 function main() {
@@ -106,7 +105,6 @@ function seedCandidates() {
                     description: "Ehh...",
                     companyName: "Nowhere",
                     companyURL: "nowhere.com",
-// Temp comment
                     firstName: "Bob",
                     lastName: "Tester",
                     phone: "987-654-3210",

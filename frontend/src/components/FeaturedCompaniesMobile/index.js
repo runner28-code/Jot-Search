@@ -7,6 +7,7 @@ import { BsBuilding } from 'react-icons/bs';
 const ITEMS_PER_PAGE = 6;
 
 export default function FeaturedCompaniesMobile() {
+
   const filtersArr = [
     {
       key: 'status',
@@ -19,6 +20,7 @@ export default function FeaturedCompaniesMobile() {
   return(
     <div className='py-48 px-[5%] flex flex-col items-center'>
       { renderColorShapes() }
+// Temp comment
       <h2 className='text-h5 text-center font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
       <div className='flex flex-wrap mt-8 justify-center'>
         {

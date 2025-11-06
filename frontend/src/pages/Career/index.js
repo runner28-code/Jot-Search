@@ -15,6 +15,7 @@ import Flag from '../../assets/icons/flag.svg';
 import PageHeader from '../../components/PageHeader';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import InviteCandidates from './InviteCandidates';
+
 export default function CareerPage() {
   const { width } = useWindowDimensions();
   const location = useLocation();
@@ -135,6 +136,7 @@ Notification.propTypes = {
   title: PropTypes.string,
   content: PropTypes.string,
   text: PropTypes.string,
+// Temp comment
   email: PropTypes.string,
   company: PropTypes.string,
   id: PropTypes.string,

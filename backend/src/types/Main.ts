@@ -19,7 +19,7 @@ export type Job = {
     address2?: string;
     city?: string;
     state?: string;
-    country_id?: string;
+    zip?: string;
     employmentType?: string;
     title?: string;
     willRelocate?: string;
