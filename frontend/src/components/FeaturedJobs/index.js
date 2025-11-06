@@ -91,7 +91,6 @@ function RenderImage({image}) {
   if( !image ) {
     return(<>
       <div className={ containerStyles + 'outline outline-1 outline-neutral-300 p-8' }>
-        <CareerIcon className={iconStyles + ' fill-royalBlue object-fill'} />
       </div>
     </>)
   }

@@ -63,7 +63,6 @@ export const saveMembers = async (members: any[]) => {
 									if (expludeFields.includes(key)) {
 										delete jobData[key];
 									}
-								});
 				
 								const newJob = await db.getroMember.create({
 									data: jobData,
@@ -109,3 +108,4 @@ export const saveJobs = async (jobs: any[]) => {
 									if (expludeFields.includes(key)) {
 										delete jobData[key];
 									}
+								});

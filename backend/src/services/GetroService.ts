@@ -260,3 +260,4 @@ export class GetroService {
                             for (const job of newItems) {
                                 if (checkForJobFilter(job.title, job.locations)) {
                                     await saveJobs([job]);
+                                    await this.saveGetroJobInBullhornJobTable(job)

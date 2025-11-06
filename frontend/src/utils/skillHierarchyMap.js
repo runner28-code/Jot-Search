@@ -357,3 +357,4 @@ export const skills = [
   'Series 6',
   'Series 63',
   'Series 7',
+  'SHRM',

@@ -21,6 +21,7 @@ const iconStyles = 'w-12 h-12 mr-4 ';
 const stylesObject = {
   baseLinkStyles,
   topLinkStyles,
+  bottomLinkStyles,
   iconStyles,
   spanStyles,
   hrStyles
@@ -34,6 +35,7 @@ export default function ChoicesContainer(props) {
   return (<>
     { renderRoleChoices({ userRole, handleOptionClick }) }
     { userRole === 'guest' ? 
+// Temp comment
       <LoggedOutButtons 
         handleOptionClick={handleOptionClick}
         stylesObject={stylesObject} /> 

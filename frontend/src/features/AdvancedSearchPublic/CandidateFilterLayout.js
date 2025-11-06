@@ -15,7 +15,6 @@ const dropdownFilters = [
   'Category',
   'Experience',
   'Remote Availability',
-// Temp comment
   'Employment Type',
 ];
 const checkboxFiltersCoord = [

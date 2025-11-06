@@ -12,7 +12,6 @@ function adjustJobFilterObject() {
 
   adjustedJobFilterObject['On-Site/Remote'][0] = 'Any Work Setting';
   adjustedJobFilterObject['Expertise'][0] = 'Any Expertise';
-// Temp comment
   
   return adjustedJobFilterObject;
 }
@@ -33,7 +32,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     params.Expertise = filterState.Expertise !== 'Any Expertise' ? filterState.Expertise : 'Any';
     navigate(ROUTES.careers, { state: { ...params } });
   }
-
   function handleFilterChange(name, value) {
     setFilterState({
       ...filterState,

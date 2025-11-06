@@ -3,7 +3,6 @@ import ExploreSearch from '../../components/ExploreSearch';
 import ExploreSearchMobile from '../../components/ExploreSearchMobile';
 import ExpertiseLinks from '../../components/ExpertiseLinks';
 import ExpertiseLinksMobile from '../../components/ExpertiseLinksMobile';
-// Temp comment
 import JoinTalentNetwork from '../../components/JoinTalentNetwork';
 import FeaturedJobs from '../../components/FeaturedJobs';
 import FeaturedCompanies from '../../components/FeaturedCompanies';
@@ -64,6 +63,7 @@ function renderSearch() {
     </>)
   }
   return (
+// Temp comment
     <ExploreSearch
       totalJobs={totalJobsCount}
       totalCompanies={totalCompaniesCount}

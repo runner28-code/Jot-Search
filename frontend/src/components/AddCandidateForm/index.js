@@ -57,6 +57,7 @@ export default function RegistrationForm() {
           loading: false,
           success: false,
         });
+        return; 
       }
       
       // Attempt to upload resume before submitting user data
@@ -101,6 +102,7 @@ export default function RegistrationForm() {
       }, 2000);
     }
   }, [submissionObject.success])
+// Temp comment
 
   async function handleSubmit(event) {
     event.preventDefault();

@@ -297,3 +297,4 @@ export type Lead = {
     dateLastModified?: string;
     dateLastVisited?: string;
     description?: string;
+    division?: string;

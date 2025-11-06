@@ -29,7 +29,6 @@ export function renderErrorBlock(errorBlock) {
         <p className='text-rose-500 text-sm font-bold'>{ errorBlock.error || errorBlock }</p>
       </div>
     )
-  }
 }
 
 export function renderHeader(addType) {
@@ -45,6 +44,7 @@ export function inputValidation(formObj) {
   const newErrors = [];
 
   Object.entries(formObj).forEach(([key, value]) => {
+    // If value is empty string or empty array, add to errors
     if (value === '' || (Array.isArray(value) && value.length === 0)) {
       newErrors.push(key);
     }

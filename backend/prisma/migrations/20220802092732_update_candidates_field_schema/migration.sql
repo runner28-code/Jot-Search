@@ -50,3 +50,4 @@ ADD COLUMN     "address_country_id" INTEGER;
 ALTER TABLE "Lead" DROP COLUMN "salary",
 ADD COLUMN     "salary" BIGINT,
 DROP COLUMN "salaryLow",
+ADD COLUMN     "salaryLow" BIGINT,

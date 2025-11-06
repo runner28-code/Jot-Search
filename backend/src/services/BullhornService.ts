@@ -597,7 +597,6 @@ export class BullhornService {
       console.log(`\nBullhorn_GET_CANDIDATES: ${total} / ${offset}`);
       try {
         const query = queryString.stringify({
-          BhRestToken: this.BhRestToken,
           fields: [
             "id",
             "address",
@@ -885,3 +884,6 @@ export class BullhornService {
               .join(" | "),
             specialties: d.specialties?.data
               .map((specialty: any) => specialty.name)
+              .join(" | "),
+            dateAdded: new Date(d.dateAdded),
+            dateLastComment: new Date(d.dateLastComment),

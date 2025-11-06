@@ -2,7 +2,6 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-// Temp comment
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
   ],
@@ -174,7 +173,6 @@ module.exports = {
         '360': '90rem',
         '380': '95rem',
         '400': '100rem',
-        '420': '105rem',
         '500': '125rem',
         '660': '165rem'
       },
@@ -236,3 +234,4 @@ module.exports = {
     },
     screens: {
       'vw-400': '400px',
+      'vw-480': '480px',

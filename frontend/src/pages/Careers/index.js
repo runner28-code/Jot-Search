@@ -73,4 +73,5 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
     </>)
   }
   return (<>
+    <Dashboard togglePassState={togglePassState} />
   </>)

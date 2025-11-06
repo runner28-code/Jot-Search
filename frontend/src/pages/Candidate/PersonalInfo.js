@@ -346,4 +346,5 @@ function renderCommunity (referralChoice, commObj, handleCommunityChoice, commun
         choices={communityChoices}
       />
     </>)
+  }
   return

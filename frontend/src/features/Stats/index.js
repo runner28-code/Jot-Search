@@ -13,7 +13,6 @@ const statFilterChoices = [
 ];
 
 export default function Stats({ userType }) {
-  const [timeframe, setTimeframe] = useState(statFilterChoices[3]);
   const [stats, setStats] = useState({});
 
   function handleFilterChange(choice) {
@@ -49,6 +48,7 @@ export default function Stats({ userType }) {
       })
     }
     if (userType === 'coordinator') {
+      const result = await getCoordinatorQuickStats(duration);
       setStats({
         'Total Companies': { ...result.totalCompanies },
         'Total Open Jobs': { ...result.totalOpenJobs },

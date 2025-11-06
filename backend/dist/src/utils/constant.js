@@ -261,7 +261,6 @@ const job_filter_exclude_keys = [
     "nail tech",
     "neighborhood",
     "newspaper",
-    "nurse",
     "nursing",
     "nutrition",
     "occupancy",
@@ -440,3 +439,5 @@ const job_filter_exclude_keys = [
     "worker ii",
     "write",
     "writer",
+    "x-ray",
+    "xray",

@@ -8,7 +8,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 export default function Applications() {
-  const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
@@ -19,7 +18,6 @@ export default function Applications() {
 
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);
-// Temp comment
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,

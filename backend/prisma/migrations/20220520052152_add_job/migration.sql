@@ -20,7 +20,6 @@ CREATE TABLE "Job" (
     "interviews" TEXT,
     "onSite" TEXT,
     "salary" TEXT,
-    "salaryUnit" TEXT,
     "startDate" TIMESTAMP(3),
     "type" TEXT,
     "isDeleted" TEXT,

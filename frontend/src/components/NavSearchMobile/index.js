@@ -100,6 +100,7 @@ export default function NavSearchMobile({ placeholder }) {
     <div>
       <div ref={menuRef} >
         <NavSearchBar
+          searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }
           alternateStylesObject={ stylesObject } 
@@ -135,7 +136,6 @@ function renderResults( results ) {
       width='75'
     />;
   }
-
   const { jobs, companies, candidates } = results;
   if ( !jobs?.length && !companies?.length && !candidates?.length ) {
     return (

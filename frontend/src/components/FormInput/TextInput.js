@@ -17,7 +17,6 @@ export default function TextInput({type, name, placeholder, label, value, requir
     </div>
   )
 }
-// Temp comment
 
 TextInput.propTypes = {
   type: PropTypes.string.isRequired,
@@ -44,4 +43,5 @@ function renderLabel( label, required, name ) {
     >
       {labelString}
     </label>
+// Temp comment
   )

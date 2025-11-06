@@ -669,3 +669,6 @@ model Candidate {
   stateAdditionalWithholdingsAmount String?
   stateExemptions                   String?
   stateFilingStatus                 String?
+  status                            String?
+  taxID                             String?
+  taxState                          String?

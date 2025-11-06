@@ -125,7 +125,6 @@ async function seedCategories() {
       },
       {
         name: "Sales & Biz Dev",
-        enabled: true,
         externalID: 2000043,
       },
       {
@@ -199,3 +198,4 @@ async function seedUsers() {
         companyURL: "https://www.aerovision.io",
         annualRevenue: "1000000",
         numEmployees: "30",
+        avatar: "https://picsum.photos/200",

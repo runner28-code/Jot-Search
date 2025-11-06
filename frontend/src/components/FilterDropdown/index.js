@@ -20,9 +20,9 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
             className={choiceStyles}
             key={choice.id}>
             {choice.name}
+// Temp comment
           </div>
         )
       })}
     </div>
-// Temp comment
   )

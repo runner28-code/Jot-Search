@@ -60,7 +60,6 @@ export default function Candidate() {
     });
 
     const updatedDisplayObject = candidateData.sourceTable === 'Candidate' ? {
-// Temp comment
       ...updateObject,
       firstName: updateObject.firstname || candidateData.firstname,
       lastName: updateObject.lastname || candidateData.lastname,

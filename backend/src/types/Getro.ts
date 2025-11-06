@@ -85,3 +85,4 @@ export type User = {
   dribbble_url?: string;
   email?: string;
   first_name?: string;
+  github_url?: string;

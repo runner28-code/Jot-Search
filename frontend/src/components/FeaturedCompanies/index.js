@@ -33,6 +33,7 @@ export default function FeaturedCompanies() {
                 key={index}>
                 { renderLogo(company.logo) }
               </Link>
+// Temp comment
             )
         }
       </div>

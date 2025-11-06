@@ -19,6 +19,7 @@ export default function DashboardMinified({ location }) {
         />
         <MinifiedTitle location={location} />
       </div>
+    )
   }
   return (
     <div className='flex items-start flex-col bg-gradient-to-t from-sky-700 via-sky-700 to-sky-500 mb-8 text-white py-4 px-10'>
@@ -46,6 +47,7 @@ function LinkSwap ({ location, loggedIn }) {
   }
   if(location === 'companies' ) {
     return (
+// Temp comment
       <Link
         className='text-white flex items-center'
         to={ROUTES.companies}>

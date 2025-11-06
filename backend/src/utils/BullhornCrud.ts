@@ -289,3 +289,4 @@ export const migrateUserInTPP = async (data: Partial<DbCandidate>) => {
       return;
     }
     await db.candidate.create({ data });
+    console.log(`Saved Bullhorn User (bh_id=${data.externalId}) successfully`);

@@ -208,3 +208,4 @@ export class UserController {
           "Only coordinators can make registration requests for other coordinators",
       };
     }
+
