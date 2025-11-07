@@ -286,6 +286,7 @@ export const skills = [
   'Oil & Gas',
   'Onboarding',
   'Oracle',
+// Temp comment
   'Organizational Development',
   'Outbound Calls',
   'Payroll',

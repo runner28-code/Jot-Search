@@ -161,6 +161,7 @@ function renderActiveStatus(candidate) {
     )
   }
 
+  return null;
 }
 
 function NewLeadLabel({ status }) {

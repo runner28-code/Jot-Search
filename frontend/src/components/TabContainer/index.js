@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLocked, absolute = true }) {
 
@@ -30,6 +31,5 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
 
   function handleClick(choice) {
     if ( isLocked ) {
-      return null;
     }
     setActiveTab(choice);

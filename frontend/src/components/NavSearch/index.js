@@ -12,7 +12,6 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
-// Temp comment
 import AuthService from '../../services/auth';
 
 
@@ -144,7 +143,6 @@ function renderResults( results ) {
         No results found
       </div>
     );
-  }
 
   return (<>
     {candidates && <CandidateResults candidates={ candidates } /> }

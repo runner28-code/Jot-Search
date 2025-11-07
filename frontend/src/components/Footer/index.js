@@ -124,7 +124,6 @@ export default function Footer() {
       <a href={ROUTES.youtube}>
         <img
           src={youtube}
-// Temp comment
           className={socialIconStyle}
         />
       </a>
@@ -355,6 +354,7 @@ function NavFooterMobile() {
       </div>
       <div className='flex flex-col basis-full mt-12'>
         <a
+// Temp comment
           href="/careers"
           className={linkStyle}
         >

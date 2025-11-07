@@ -1,4 +1,3 @@
-import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
 import PropTypes from 'prop-types';
 import {
@@ -18,6 +17,7 @@ const ResumePreview = ({ resumeUrl }) => {
   });
 
   const buttonStyles = 'w-15 h-15 ';
+  const buttonStylesDisabled = 'w-15 h-15 opacity-50';
   const prevButtonDisabled = page === 1;
   const nextButtonDisabled = page === pdfDocument?.numPages;
 

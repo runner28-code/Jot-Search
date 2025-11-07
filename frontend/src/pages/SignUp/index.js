@@ -23,6 +23,7 @@ export default function SignUp() {
             <div className='w-10/12 bg-white p-12 outline outline-2 outline-neutral-300 rounded-xl mt-[-200px]'>
               <RegistrationForm />
             </div>
+          </div>
         </div>
       </main>      
     )
@@ -41,6 +42,7 @@ export default function SignUp() {
         <div className='mt-34 w-full vw-768:w-2/3 max-w-290 bg-white border border-midGrey border-solid rounded-2xl flex justify-center'>
           <RegistrationForm />
         </div>
+// Temp comment
       </div>
     </main>
   )

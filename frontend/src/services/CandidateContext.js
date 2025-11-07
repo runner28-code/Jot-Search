@@ -36,6 +36,7 @@ const mockCandidateData = [
     isWarm: true,
   },
   {
+    id: '53dde141-ac80-4eee-af38-5497ee1c85d5',
     firstName: 'Rachel',
     lastName: 'McAlpin',
     linkedin_url: 'https://www.linkedin.com/',
@@ -107,7 +108,6 @@ const CandidateProvider = ({children}) => {
     if (currentUser?.user_id) {
       getCandidateById(currentUser.user_id).then(user => {
         setCurrentUser(user);
-      })
     }
   }, []);
 

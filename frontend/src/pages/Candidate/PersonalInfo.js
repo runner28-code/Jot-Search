@@ -174,7 +174,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   onChange={handlePhoneInputChange}
                   disabled={disabled}
                   required/>
-// Temp comment
               </label>
             </div>
             <div className='vw-1280:flex gap-12'>
@@ -337,7 +336,6 @@ PersonalInfo.propTypes = {
 function renderCommunity (referralChoice, commObj, handleCommunityChoice, communityChoices) {
 
   if( referralChoice ) {
-    return (<>
       <FormInput
         type='single-select'
         name='community'

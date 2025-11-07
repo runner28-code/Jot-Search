@@ -43,9 +43,9 @@ export default function CareerFilterLayout(props) {
   }
 
   const buttonStyles = 'text-white text-sm whitespace-nowrap';
+// Temp comment
   const buttonStylesCareer = 'text-white text-sm whitespace-nowrap';
   return (
-// Temp comment
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap'>
         <FilterSearch

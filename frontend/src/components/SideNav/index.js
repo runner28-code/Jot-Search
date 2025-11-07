@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
+  coordinatorChoices,
   guestChoices,
   findSelectedFromPath
 } from './utils';
@@ -50,6 +51,7 @@ function renderChoice(choice, selected, index, choicesLength) {
   if ( selectedChoice ) {
     iconStyles += strokeIcons.includes(choice.label) ? 'stroke-white' : 'fill-white';
   } else {
+// Temp comment
     iconStyles += strokeIcons.includes(choice.label) ? 'stroke-royalBlue' : 'fill-royalBlue';
   }
   const choiceTextStyles = 'text-xl mr-9 ' + (selectedChoice ? 'text-white' : 'text-royalBlue');

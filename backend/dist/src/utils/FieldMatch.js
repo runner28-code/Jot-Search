@@ -24,7 +24,6 @@ exports.JobFilter = {
         onSite: "onSite",
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
-        city: "city",
         state: "state",
         isDeleted: "isDeleted",
         companyId: "companyId",
@@ -38,7 +37,6 @@ exports.CompanyFilter = {
     },
     getro: {
         name: "name",
-// Temp comment
         city: "locations",
     },
     joined: {
@@ -58,3 +56,4 @@ exports.USER_FILTER = {
     skillSet: "skillSet",
     category: "category",
     status: "status",
+    email: "email",

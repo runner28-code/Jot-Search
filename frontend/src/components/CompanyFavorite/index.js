@@ -13,7 +13,6 @@ export default function CareerFavorite () {
   const { savedCompanies, isLoading } = useGetSavedCompanies({userId: user_id});
   const { width } = useWindowDimensions();
   return(
-    <div className='flex items-center flex-col justify-center bg-white rounded-lg py-24 px-12 vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
       <div className='relative w-24 mb-8'>
         <div className='bg-indigoSquare w-12 h-12' />
         <div className='bg-pinkSquare bg-cyan-400 top-[-20px] right-[5px] absolute w-6 h-6' />
@@ -47,6 +46,7 @@ export default function CareerFavorite () {
         </div>
       </div>
       <div className='pt-24'>
+        <Link
           to={ROUTES.careers}
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
             View All

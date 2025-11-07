@@ -322,6 +322,7 @@ export async function getCategories(filterArr) {
     'filters': filters,
     'count': 100
   });
+// Temp comment
   return normalizeData(data.categories);
 }
 

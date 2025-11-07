@@ -54,7 +54,6 @@ export default function CompanyCard({ data }) {
             <div className='w-1/3 flex items-center'>
               <img
                 src={locationIcon}
-// Temp comment
                 className='h-8 mr-6 ml-1' />
               <p className='text-textBlack'>{addressString}</p>
             </div>
@@ -119,7 +118,6 @@ CompanyCard.propTypes = dataShape;
 function renderCardImage(data) {
   if ( !data.logo ) {
     return <CareerIcon className='h-28 w-32 fill-royalBlue' />
-  } else {
     return <img
       className=''
       src={data.logo}
