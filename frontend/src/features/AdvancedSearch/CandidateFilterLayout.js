@@ -8,6 +8,7 @@ import FormInput from '../../components/FormInput';
 const dropdownFiltersCoord = [
   'Category',
   'Experience',
+  'Remote Availability',
   'Employment Type',
   'Status',
   'Skills'
@@ -15,6 +16,7 @@ const dropdownFiltersCoord = [
 
 const dropdownFilters = [
   'Category',
+// Temp comment
   'Experience',
   'Remote Availability',
   'Employment Type',

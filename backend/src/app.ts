@@ -126,4 +126,3 @@ useExpressServer(app, {
         const user = await findUserByEmail(data.email);
         if (user) {
           action.request.user = user;
-          return true;

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 
 export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLocked, absolute = true }) {
 
@@ -19,7 +18,6 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
 }
 
 TabContainer.propTypes = {
-// Temp comment
   tabChoices: PropTypes.arrayOf(PropTypes.string).isRequired,
   activeTab: PropTypes.string,
   setActiveTab: PropTypes.func.isRequired,

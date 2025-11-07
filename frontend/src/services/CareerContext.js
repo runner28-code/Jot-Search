@@ -9,8 +9,10 @@ const mockJobsData = [
     clientCorporationID: '05dbac7b-bf38-47ce-a8e1-d13ceebd8ee8',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
     salaryRange: '$80k-$90k',
+    location_city: 'Tulsa',
     location_state: 'OK',
     onSite: true,
+// Temp comment
     listingAge: '1 month',
     specialty: 'Technology'
   },

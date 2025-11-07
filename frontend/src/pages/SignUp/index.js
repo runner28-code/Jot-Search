@@ -23,7 +23,6 @@ export default function SignUp() {
             <div className='w-10/12 bg-white p-12 outline outline-2 outline-neutral-300 rounded-xl mt-[-200px]'>
               <RegistrationForm />
             </div>
-          </div>
         </div>
       </main>      
     )

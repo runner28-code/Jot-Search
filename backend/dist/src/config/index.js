@@ -13,6 +13,7 @@ const config = {
     bullhornApiUsername: process.env.BULLHORN_API_USERNAME,
     bullhornApiPassword: process.env.BULLHORN_API_PASSWORD,
     getroDatasetID: process.env.DATASET_GETRO,
+    bullhornDatasetID: process.env.DATASET_BULLHORN,
     mainDatasetID: process.env.DATASET_MAIN,
     sendgridKey: process.env.SENDGRID_KEY,
     sendgridSecret: process.env.SENDGRID_SECRET,

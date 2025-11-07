@@ -136,7 +136,6 @@ Notification.propTypes = {
   title: PropTypes.string,
   content: PropTypes.string,
   text: PropTypes.string,
-// Temp comment
   email: PropTypes.string,
   company: PropTypes.string,
   id: PropTypes.string,

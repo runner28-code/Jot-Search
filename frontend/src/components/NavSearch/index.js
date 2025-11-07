@@ -12,6 +12,7 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
+// Temp comment
 import AuthService from '../../services/auth';
 
 
@@ -123,6 +124,7 @@ function renderResultsContainer( results, searchTerm ) {
 
   return (
     <div className='absolute z-20 top-full w-full flex flex-col justify-center items-center min-h-50 px-6 py-4 rounded-2xl rounded shadow-resultCardShadow bg-white '>
+      { renderResults( results ) }
     </div>
   )
 }

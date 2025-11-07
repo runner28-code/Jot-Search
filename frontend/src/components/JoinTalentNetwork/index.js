@@ -1,3 +1,4 @@
+// Temp comment
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import * as ROUTES from '../../routes';
@@ -35,7 +36,6 @@ export default function JoinTalentNetwork() {
     </>)
   }
   return (<>
-// Temp comment
     {/* Join Hero and call-to-action */}
     <section className='relative h-300 bg-join-hero bg-cover bg-center'>
       <div className='absolute -bottom-100 flex justify-center w-full px-40'>

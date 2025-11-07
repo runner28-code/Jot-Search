@@ -138,7 +138,6 @@ export default function RegistrationFormInternal(loggedIn) {
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
     setErrors([]);
-// Temp comment
     setFormObj({
       ...formObj,
       firstName: firstName.value,
@@ -172,7 +171,6 @@ export default function RegistrationFormInternal(loggedIn) {
       setCommObj({
         ...commObj,
         community: ''
-      });
     }
     handleChange(name, value);
   }

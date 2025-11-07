@@ -10,7 +10,6 @@ export const sendEmail = async (to: string|string[], subject: string, template: 
   let message = { from, to, subject, html };
   const msg = { ...message, text: 'iDENTIFY'};
 
-  try {
       await sendgrid.send(msg);
   } catch (error) {
       console.log(error);
@@ -46,6 +45,7 @@ export const sendResetPassword = async (to: string, name: string, token: string)
     console.log('Error during sending invitation');
     console.log(error);
     console.log(JSON.stringify(error.response.body));
+    throw error;
   }
 }
 

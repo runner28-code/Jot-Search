@@ -124,6 +124,7 @@ export default function Footer() {
       <a href={ROUTES.youtube}>
         <img
           src={youtube}
+// Temp comment
           className={socialIconStyle}
         />
       </a>
@@ -471,7 +472,6 @@ function SocialStyles() {
               alt='Intulsa Logo'
               className='w-auto h-auto'
             />
-// Temp comment
           </a>
         </div>
       </div>

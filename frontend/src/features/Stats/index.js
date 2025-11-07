@@ -73,6 +73,7 @@ export default function Stats({ userType }) {
             timeframe={timeframe}
             handleFilterChange={handleFilterChange}
           />
+        </div>
       </div>
       <div className='flex flex-wrap'>
         {Object.entries(stats).map(([stat, value]) => {

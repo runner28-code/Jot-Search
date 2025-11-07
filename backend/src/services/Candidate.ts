@@ -84,7 +84,6 @@ export const getSavedCandidates = async (companyUserId: string) => {
     };
   } catch (error) {
     console.log(error);
-    return { result: false, message: error };
   }
 };
 

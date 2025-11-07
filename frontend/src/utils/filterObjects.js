@@ -6,6 +6,7 @@ const experienceValues = Object.values(experienceMap).filter(val => val !== null
 
 /* JOB FILTER UTILS */
 export const jobFilterObject = {
+  'Expertise': [
     'Any',
     ...expertises
   ],
@@ -21,7 +22,6 @@ export const jobFilterObject = {
     ...experienceValues
   ],
   'Status': [
-    'Any',
     'Filled',
     'Open',
     'Closed',

@@ -54,7 +54,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
             <label 
               className='text-xl font-bold text-royalBlue'
               htmlFor={key}
-// Temp comment
             >
               {labelString}
             </label>

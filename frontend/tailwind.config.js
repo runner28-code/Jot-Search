@@ -185,7 +185,6 @@ module.exports = {
         '88': '22rem',
       },
       maxWidth: {
-        '100': '25rem',
         '140': '35rem',
         '208': '52rem',
         '240': '60rem',

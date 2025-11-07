@@ -72,7 +72,6 @@ function renderSearch() {
 }
 
 function renderLocation() {
-  const { width } = useWindowDimensions();
 
   if( width >= 1024 ) {
     return (

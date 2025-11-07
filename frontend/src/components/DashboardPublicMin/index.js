@@ -26,6 +26,7 @@ export default function DashboardPublicMin({type}) {
               onClick={() => navigate(-1)}
             >
             Back
+// Temp comment
             </button>
           </div>
         </div>
@@ -51,6 +52,7 @@ export default function DashboardPublicMin({type}) {
           >
             <CareerIcon />
             <p className='ml-4'>Careers</p>
+          </Link>
           <Link
             className={type === 'company' ? buttonStylesRight + active : buttonStylesRight }
             to={ROUTES.companies}

@@ -46,7 +46,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run lint`
 
-Runs ESLint in the `src` directory. Configuration for ESLint is contained in `.eslintrc.json`
 
 ### `npm run eject`
 
