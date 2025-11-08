@@ -45,6 +45,7 @@ function NavBarLayout() {
           </div>
           {/* Dropdown Menu */}
           <DropdownMenu />
+        </div>
       </div>
       {/* Nav Search */}
     </nav>
@@ -76,7 +77,6 @@ const DesktopNavBarLayout = () => {
 const DropdownMenu = () => {
   const [ isOpen, setIsOpen ] = useState(false);
   const [ firstRender, setFirstRender ] = useState(true);
-  const navigate = useNavigate();
   const [listening, setListening] = useState(false);
   const { currentUser } = useCandidateContext()
   const menuRef = useRef(null);

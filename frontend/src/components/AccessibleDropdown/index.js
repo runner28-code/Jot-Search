@@ -14,6 +14,7 @@ export default function AccessibleDropdown(props) {
     placeholder,
     required,
     onChange,
+    choices,
     choiceObject,
     currentChosen, 
     stylesObject,
@@ -126,7 +127,6 @@ function buttonText(name, placeholder, currentChosen) {
   } else { // no current chosen
     return buttonString
   }
-  
   return buttonString;
 }
 

@@ -5,7 +5,6 @@ import PageHeaderCandidate from '../../components/PageHeaderCandidate';
 import AdvancedSearch from '../../features/AdvancedSearch';
 import AdvancedSearchPublic from '../../features/AdvancedSearchPublic';
 import AdvancedSearchCandidate from '../../features/AdvancedSearchCandidate';
-// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdSearch as SearchIcon } from 'react-icons/md';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -63,6 +62,7 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
         togglePassState={togglePassState} 
         toggle={toggle} 
       />
+// Temp comment
     </>)
   }  
   if( loggedIn ) {

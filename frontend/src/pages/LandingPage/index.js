@@ -58,11 +58,9 @@ function renderSearch() {
       <ExploreSearchMobile
         totalJobs={totalJobsCount}
         totalCompanies={totalCompaniesCount}
-        loading={isLoading}
       />
     </>)
   }
-// Temp comment
   return (
     <ExploreSearch
       totalJobs={totalJobsCount}

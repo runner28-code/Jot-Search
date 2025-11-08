@@ -56,7 +56,6 @@ function renderChosen(skills, onChange) {
             key={skill}
             label={skill}
             isActive={true}
-// Temp comment
             handleClick={handleClick}
           />
         )

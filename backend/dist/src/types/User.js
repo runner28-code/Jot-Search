@@ -39,6 +39,7 @@ exports.IUSER = {
     employeeType: "",
     experience: "",
     hourlyRate: "",
+    willRelocate: "",
     willReceiveNotification: false,
     ethnicity: "",
     workAuthorized: "",

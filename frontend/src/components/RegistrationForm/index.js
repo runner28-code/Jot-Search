@@ -39,7 +39,6 @@ const defaultState = {
   referredBy: '',
   resume: {},
   password: '',
-  verifyPassword: '',
   terms: false
 };
 

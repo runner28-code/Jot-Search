@@ -261,6 +261,7 @@ export const skills = [
   'Market Analysis',
   'Market Strategy',
   'Marketing Campaigns',
+  'Marketing Research',
   'Masters Degree',
   'MBA',
   'Mechanical Engineering',

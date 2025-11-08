@@ -66,6 +66,7 @@ export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "employment_types",
   "expires_at",
   "job_functions",
+  "locations",
   "organization_id",
   "passes_filter",
   "posted_at",
@@ -86,3 +87,4 @@ export type User = {
   first_name?: string;
   github_url?: string;
   introduction_requested?: string;
+  last_name?: string;

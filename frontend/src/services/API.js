@@ -117,7 +117,6 @@ export async function updateJob({ id, status, featured }) {
     status,
     featured
   });
-  return normalizeData(data);
 }
 
 //* COMPANIES
@@ -226,7 +225,6 @@ export async function getJobsFull(filters, count, operator, page) {
     'count': count || 5,
     'page': page || null,
     'operator': operator || 'AND'
-// Temp comment
   });
 
   return {

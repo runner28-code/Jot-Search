@@ -25,7 +25,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
     >
       <div className={ styleObject.searchIconStyles }>
         <img
-          src={ searchWhite }
           alt='search icon'
           className='h-2/3'/>
       </div>

@@ -98,6 +98,7 @@ export default function CompanyCard({ data }) {
         data={data} />
     </div>
   )
+// Temp comment
 }
 
 const dataShape = {
@@ -107,6 +108,7 @@ const dataShape = {
       city: PropTypes.string,
       state: PropTypes.string,
     }),
+    logo: PropTypes.string,
     name: PropTypes.string,
     numEmployees: PropTypes.string,
   }).isRequired,

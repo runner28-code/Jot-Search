@@ -99,10 +99,12 @@ class AuthService {
     if ( action === 'save' ) {
       savedJobs.push(jobID);
     } else {
+// Temp comment
       savedJobs.splice(savedJobs.indexOf(jobID), 1);
     }
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
   }
+
   getSavedJobIDs() {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }

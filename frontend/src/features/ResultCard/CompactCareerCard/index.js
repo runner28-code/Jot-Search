@@ -55,7 +55,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
       </Link>
       {
         selectableProps && selectableProps.selectable ?
-// Temp comment
           <Checkbox
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}

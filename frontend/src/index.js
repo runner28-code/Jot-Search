@@ -18,7 +18,6 @@ const isDevelopment = window.location.hostname === 'localhost';
 ReactDOM.render(
   <QueryClientProvider client={queryClient}>
     <BrowserRouter>
-// Temp comment
       <CandidateContext>
         <CareerContext>
           <CategoryContext>

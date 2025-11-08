@@ -81,7 +81,6 @@ export class CompanyController {
   async send_candidates_to_employers(
     @CurrentUser() authUser: User,
     @Body() body: { candidates_ids: string[], employers_emails: string[] }
-  ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
       return {
         result: false,
@@ -114,6 +113,7 @@ export class CompanyController {
       return {
         result: false,
         error: "You should be a coordinator for creating a company",
+      };
     }
 
     const bullhornService = new BullhornService();

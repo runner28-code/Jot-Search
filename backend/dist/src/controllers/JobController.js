@@ -205,6 +205,7 @@ let JobController = class JobController {
           ON CONCAT("bl-", bh_jobs.id) = jobs.id
         `;
                 return yield BigQueryService_1.BigQueryService.selectQuery(_dataset, _table, _fields, count, _condition, _join, alias);
+            }
             throw "invalid filter options";
         });
     }
@@ -238,7 +239,6 @@ let JobController = class JobController {
             return yield (0, MainCrud_1.getSavedJobs)(candidate);
         });
     }
-    createJob(body) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, Job_1.createJob)(body);
         });

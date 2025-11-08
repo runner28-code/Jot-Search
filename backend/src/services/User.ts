@@ -551,3 +551,4 @@ export const getStats = async (userId: string) => {
 
     const savedCompaniesCountPromise = BigQueryService.getClient().query({
       query: savedCompaniesCountQuery,
+      location: "US",

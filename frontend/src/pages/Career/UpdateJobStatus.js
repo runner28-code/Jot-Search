@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 import Dropdown from '../../components/UniversalDropdown/index';
@@ -12,7 +11,6 @@ export const UpdateJobStatus = ({ job }) => {
   const [updatedJob, setUpdatedJob] = useState(job)
 
   return (
-// Temp comment
     <div className='py-8 flex flex-col'>
       <hr className={`${hrStyles} bg-smokeGray h-2`} />
 

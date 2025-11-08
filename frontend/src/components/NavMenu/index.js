@@ -1,3 +1,4 @@
+// Temp comment
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
@@ -11,6 +12,7 @@ export default function NavMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function handleMenuClick() {
+    setMenuOpen(menuOpen => !menuOpen);
   }
 
   function handleOptionClick(e) {

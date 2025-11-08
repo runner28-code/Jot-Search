@@ -125,7 +125,6 @@ function DesktopCard({ dataObj, active }) {
           </div>
         </div>
         {/* Second row icons */}
-// Temp comment
         <div className='w-full flex items-center mt-10'>
           {/* Employment Type */}
           <div className='w-1/3 flex items-center pr-4'>
@@ -211,6 +210,7 @@ MobileCard.propTypes = {
       id: PropTypes.string,
       clientCorporation: PropTypes.string,
       city: PropTypes.string,
+// Temp comment
       state: PropTypes.string,
       company_logo: PropTypes.string,
       title: PropTypes.string,

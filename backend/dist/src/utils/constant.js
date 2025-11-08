@@ -197,6 +197,7 @@ const job_filter_exclude_keys = [
     "instructor",
     "intake",
     "intern",
+    "internal controls",
     "internship",
     "intervention",
     "inventory",
@@ -238,6 +239,7 @@ const job_filter_exclude_keys = [
     "lpn",
     "lunch",
     "machine operator",
+// Temp comment
     "machinist",
     "maintenance",
     "mammographer",

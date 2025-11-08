@@ -73,6 +73,7 @@ module.exports = {
         softWhite: '#F6F5F6',
         smokeGray: '#DDDDDD',
         medGray: '#707070',
+// Temp comment
         slateGray: '#3C3C4B',
         charcoalGray: '#333332',
         darkGray: '#292938',
@@ -225,6 +226,7 @@ module.exports = {
       '120': '30rem',
       '350': '87.5rem',
       '400': '100rem',
+    },
     minHeight: {
       '50': '12.5rem',
       '280': '70rem',
