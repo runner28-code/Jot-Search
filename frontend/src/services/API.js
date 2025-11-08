@@ -322,7 +322,6 @@ export async function getCategories(filterArr) {
     'filters': filters,
     'count': 100
   });
-// Temp comment
   return normalizeData(data.categories);
 }
 
@@ -408,7 +407,6 @@ function formatCandidateFilters(filtersArr) {
         const categories = JSON.parse(localStorage.getItem('categories'));
         const categoryId = categories.find(category => category.name === filter.value).id;
         return {
-          key: 'categoryId',
           value: categoryId
         }
       }

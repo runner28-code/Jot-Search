@@ -73,6 +73,7 @@ CREATE TABLE "Candidate" (
     "salaryLow" TEXT,
     "secondarySkills" TEXT,
     "skillSet" TEXT,
+    "smsOptIn" TEXT,
     "source" TEXT,
     "specialities" TEXT,
     "ssn" TEXT,
@@ -81,3 +82,4 @@ CREATE TABLE "Candidate" (
     "stateFilingStatus" TEXT,
     "status" TEXT,
     "taxID" TEXT,
+    "taxState" TEXT,

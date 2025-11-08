@@ -128,7 +128,6 @@ DesktopLayout.propTypes = {
     postingAge: PropTypes.string.isRequired,
     salaryString: PropTypes.string.isRequired,
   }).isRequired
-// Temp comment
 }
 
 function renderLogo(logo) {

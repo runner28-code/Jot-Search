@@ -110,7 +110,6 @@ function buttonText(name, placeholder, currentChosen) {
   }
   if ( name === 'experience' && currentChosen ) { // Grab value from experienceMap
     if ( isNaN(currentChosen) ) {
-// Temp comment
       return currentChosen + 'years';
     }
     const experience = isNaN(currentChosen) ? currentChosen : experienceMap[currentChosen];
@@ -167,6 +166,7 @@ function renderDropdownArrow(dropdownArrow) {
 function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObject) {
   if ( !choices ) {
     return <li className='flex items-center justify-center'>
+// Temp comment
       <p className='text-center text-textBlack my-4'>Error loading choices</p>
     </li>
   }

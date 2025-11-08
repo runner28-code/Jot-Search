@@ -79,7 +79,6 @@ function renderColorShapes() {
   return(
     <div className='relative w-24 mb-8'>
       <div className='bg-indigoSquare w-12 h-12' />
-// Temp comment
       <div className='bg-cyanSquare bg-cyan-400 top-[-20px] right-[5px] absolute w-6 h-6' />
     </div>
   )

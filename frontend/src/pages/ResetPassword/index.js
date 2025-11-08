@@ -12,6 +12,7 @@ export default function ResetPassword() {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [match, setMatch] = useState('');
   const [success, setSuccess] = useState('');
+
   const queryParams = new URLSearchParams(window.location.search);
   const token = queryParams.get('token');
 
@@ -31,7 +32,6 @@ export default function ResetPassword() {
       setMatch(false);
     }
 
-    if( password === confirmPassword ) {
       setMatch(true);
       const { password } = event.target;
       const res = await API.post(ROUTES.APIResetPassword, {

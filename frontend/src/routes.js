@@ -1,4 +1,3 @@
-/* INTERNAL ROUTES */
 export const root = '/';
 export const landingPage = '/landing-page';
 export const blog = '/blog';
@@ -69,7 +68,6 @@ export const APIsavedCandidates = APIcandidateBase + '/saved';
 export const APIsendJobsToCandidates = APIcandidateBase + '/sendJobs';
 // Companies
 const APIcompanyBase = '/api/company';
-// Temp comment
 export const APIcompanies = APIcompanyBase + '/search';
 export const APItoggleSaveCompany = APIcompanyBase + '/save';
 export const APIsavedCompanies = APIcompanyBase + '/saved';

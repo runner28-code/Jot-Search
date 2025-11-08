@@ -71,7 +71,6 @@ exports.consoleLog = consoleLog;
 const sleep = (ms) => __awaiter(void 0, void 0, void 0, function* () {
     return new Promise(resolve => setTimeout(resolve, ms));
 });
-// Temp comment
 exports.sleep = sleep;
 const getDataSource = (id) => {
     const prefix = id.slice(0, 2);

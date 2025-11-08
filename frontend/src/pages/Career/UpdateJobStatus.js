@@ -12,6 +12,7 @@ export const UpdateJobStatus = ({ job }) => {
   const [updatedJob, setUpdatedJob] = useState(job)
 
   return (
+    <div className='py-8 flex flex-col'>
       <hr className={`${hrStyles} bg-smokeGray h-2`} />
 
       <div className='flex flex-col'>
@@ -38,4 +39,3 @@ export const UpdateJobStatus = ({ job }) => {
         />
       </div>
     </div>
-  )

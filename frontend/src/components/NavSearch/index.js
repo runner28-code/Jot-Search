@@ -134,6 +134,7 @@ function renderResults( results ) {
       height='75'
       width='75'
     />;
+// Temp comment
   }
 
   const { jobs, companies, candidates } = results;
@@ -143,6 +144,7 @@ function renderResults( results ) {
         No results found
       </div>
     );
+  }
 
   return (<>
     {candidates && <CandidateResults candidates={ candidates } /> }

@@ -77,6 +77,7 @@ module.exports = {
         charcoalGray: '#333332',
         darkGray: '#292938',
         'black70%': '#000000b3',
+        'black50%': '#00000080',
       },
       backgroundImage: {
         'tulsa-3': 'url(\'./assets/images/tulsa-3.webp\')',
@@ -87,7 +88,6 @@ module.exports = {
         'signup-page-hero': 'url(\'./assets/images/tulsanetwork.jpg\')',
         'login-page-hero': 'url(\'./assets/images/networklogin.jpg\')',
       },
-      spacing: {
         // Styleguide Spacing
         'xxs': '4px',
         'xs': '8px',

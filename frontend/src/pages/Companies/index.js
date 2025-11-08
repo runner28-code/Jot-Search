@@ -32,7 +32,6 @@ export default function Companies() {
         loggedIn={loggedIn}
         userType={userType}
         togglePassState={togglePassState}
-        toggle={toggle}
       />
       <div 
         className={ !loggedIn && width <= 990 ? 'px-[5%]' 

@@ -38,7 +38,6 @@ export default function InviteToCareer({ candidate }) {
       {selected?.map((item) => (
         <span 
           key={item.value} 
-          className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">
           <span>{item.label}</span>
           <button 
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs' 
@@ -102,6 +101,7 @@ function itemRenderer({ option, onClick, disabled}) {
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`} 
       onClick={onClick}
     >
+      <div className="flex items-center space-x-4 pb-2 border-b-2 ">
         { avatarUrl ?
           <img
             className='w-20 h-20'

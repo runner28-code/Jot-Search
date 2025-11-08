@@ -65,6 +65,7 @@ export default function InviteCandidates({ company }) {
         value={selected}
         onChange={setSelected}
         labelledBy="Select"
+        ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}
       />

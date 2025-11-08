@@ -271,7 +271,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                     currentChosen={ formData.gender }
                     handleChange={ handleInputChange }
                     inputStyles={ inputStyles }
-                    disabled={ disabled }
                   />
                 </label>
               </div>
@@ -336,6 +335,7 @@ PersonalInfo.propTypes = {
 function renderCommunity (referralChoice, commObj, handleCommunityChoice, communityChoices) {
 
   if( referralChoice ) {
+    return (<>
       <FormInput
         type='single-select'
         name='community'

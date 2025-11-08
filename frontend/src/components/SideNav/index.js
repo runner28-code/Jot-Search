@@ -7,6 +7,7 @@ import {
   guestChoices,
   findSelectedFromPath
 } from './utils';
+// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
 
@@ -51,7 +52,6 @@ function renderChoice(choice, selected, index, choicesLength) {
   if ( selectedChoice ) {
     iconStyles += strokeIcons.includes(choice.label) ? 'stroke-white' : 'fill-white';
   } else {
-// Temp comment
     iconStyles += strokeIcons.includes(choice.label) ? 'stroke-royalBlue' : 'fill-royalBlue';
   }
   const choiceTextStyles = 'text-xl mr-9 ' + (selectedChoice ? 'text-white' : 'text-royalBlue');

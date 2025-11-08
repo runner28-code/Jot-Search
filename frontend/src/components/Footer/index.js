@@ -354,7 +354,6 @@ function NavFooterMobile() {
       </div>
       <div className='flex flex-col basis-full mt-12'>
         <a
-// Temp comment
           href="/careers"
           className={linkStyle}
         >
