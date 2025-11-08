@@ -226,6 +226,7 @@ export async function getJobsFull(filters, count, operator, page) {
     'count': count || 5,
     'page': page || null,
     'operator': operator || 'AND'
+// Temp comment
   });
 
   return {
@@ -407,6 +408,7 @@ function formatCandidateFilters(filtersArr) {
         const categories = JSON.parse(localStorage.getItem('categories'));
         const categoryId = categories.find(category => category.name === filter.value).id;
         return {
+          key: 'categoryId',
           value: categoryId
         }
       }

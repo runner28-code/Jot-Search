@@ -85,5 +85,4 @@ export default function ExpertiseLinksMobile() {
           <span className={textStyles}>Finance</span>
         </Link>
       </div>
-    </section>
   )

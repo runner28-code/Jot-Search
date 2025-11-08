@@ -63,7 +63,6 @@ CompactCompanyCard.propTypes = {
     createdAt: PropTypes.string
   }).isRequired,
   index: PropTypes.number,
-  active: PropTypes.bool,
   agoDate: PropTypes.string,
   isFavoriteOverride: PropTypes.bool,
   agoText: PropTypes.string,

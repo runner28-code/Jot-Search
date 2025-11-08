@@ -31,7 +31,6 @@ export default function CareerFilterLayout(props) {
 
   const dropdownFilterObject = {};
   if( userType === 'candidate' ) {
-    dropDownFiltersCandidate.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
   } else {
@@ -39,6 +38,7 @@ export default function CareerFilterLayout(props) {
       dropdownFilterObject[filter] = filterObject[filter];
     });
   }
+
   const buttonStyles = 'text-royalBlue text-sm whitespace-nowrap';
   const buttonStylesCareer = 'text-white text-sm whitespace-nowrap';
   return (

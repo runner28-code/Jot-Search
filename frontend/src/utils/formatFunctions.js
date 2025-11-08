@@ -5,7 +5,6 @@ import { stateCodeMap } from './constants';
 export function formatCandidateData(candidateData) {
   const formattedData = fixStringNulls(candidateData);
 
-// Temp comment
   formattedData.sourceTable = candidateData.id.startsWith('bl-') ? 'Candidate' : 'User'; // Some features are only available to candidates who have been added to the platform (Users)
   if (formattedData.sourceTable === 'Candidate') {
     formattedData.address1 = candidateData.address_address1 || '';

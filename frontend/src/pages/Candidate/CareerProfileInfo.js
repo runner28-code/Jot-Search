@@ -16,7 +16,6 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         { (!editMode && role !== 'company') && 
           renderEditIcon(candidateData, setEditMode)
         }
-// Temp comment
       </div>
       <CareerProfileInfoContent
         candidateData={candidateData}

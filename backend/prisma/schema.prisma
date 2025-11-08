@@ -216,6 +216,7 @@ model Company {
   dateAdded        DateTime?
   dateFounded      DateTime?
   dateLastModified DateTime?
+
   departmentId String?
   department   Department? @relation("departmentUsers", fields: [departmentId], references: [id])
 
@@ -671,3 +672,7 @@ model Candidate {
   status                            String?
   taxID                             String?
   taxState                          String?
+
+  timeZoneOffsetEST         Int?
+  tobaccoUser               Boolean?
+  totalDependentClaimAmount String?

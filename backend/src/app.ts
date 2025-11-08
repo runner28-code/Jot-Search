@@ -127,3 +127,4 @@ useExpressServer(app, {
         if (user) {
           action.request.user = user;
           return true;
+        }

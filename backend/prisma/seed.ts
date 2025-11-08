@@ -127,6 +127,7 @@ async function seedCategories() {
         name: "Sales & Biz Dev",
         enabled: true,
         externalID: 2000043,
+      },
       {
         name: "Software & Engineering",
         enabled: true,
@@ -199,3 +200,5 @@ async function seedUsers() {
         annualRevenue: "1000000",
         numEmployees: "30",
         avatar: "https://picsum.photos/200",
+      },
+      {

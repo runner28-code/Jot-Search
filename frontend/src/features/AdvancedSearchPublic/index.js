@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ResultContainer from '../../features/ResultContainer';
-import TabContainer from '../../components/TabContainer';
 import CandidateFilterLayout from './CandidateFilterLayout';
 import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
@@ -40,6 +39,7 @@ function useTabState(disabledTabs, userType, pathname) {
         return useState('companies');
       case '/careers':
       default:
+        return useState('jobs');
     }
   }
   return useActiveTabState(userType === 'candidate' ? 'jobs' : 'candidates');

@@ -24,3 +24,4 @@ CREATE TABLE "GetroCompany" (
     "organization_careers_pages" TEXT[],
     "status" TEXT,
     "scraping_enabled" BOOLEAN NOT NULL,
+    "topics" TEXT[],

@@ -65,3 +65,4 @@
             {"property": "observer", "object": "<pragma>"} // sets `object` to whatever value `settings.react.pragma` is set to
         ],
         "formComponents": [
+          // Components used as alternatives to <form> for forms, eg. <Form endpoint={ url } />

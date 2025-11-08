@@ -45,6 +45,7 @@ DROP COLUMN "travelLimit",
 ADD COLUMN     "travelLimit" INTEGER,
 DROP COLUMN "address_country_id",
 ADD COLUMN     "address_country_id" INTEGER;
+
 -- AlterTable
 ALTER TABLE "Lead" DROP COLUMN "salary",
 ADD COLUMN     "salary" BIGINT,

@@ -271,6 +271,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                     currentChosen={ formData.gender }
                     handleChange={ handleInputChange }
                     inputStyles={ inputStyles }
+                    disabled={ disabled }
                   />
                 </label>
               </div>

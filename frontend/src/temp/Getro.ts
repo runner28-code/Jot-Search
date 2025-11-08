@@ -73,3 +73,4 @@ export type User = {
     talent_groups?: string;
     twitter_url?: string;
     verified?: string;
+    website_url?: string;

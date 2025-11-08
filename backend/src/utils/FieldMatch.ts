@@ -44,7 +44,6 @@ export const CompanyFilter: TypedDictionary<
   getro: {
     name: "name",
     city: "locations",
-  },
   joined: {
     name: "name",
     bh_id: "bh_id",
@@ -67,3 +66,4 @@ export const USER_FILTER: any = {
   bh_email: "bh_email",
   companyName: "companyName",
   occupation: "occupation",
+  workAuthorized: "workAuthorized",

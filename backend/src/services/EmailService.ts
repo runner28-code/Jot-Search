@@ -109,3 +109,4 @@ export const sendUpdateUserNotification = async (to: string, name: string) => {
     throw error;
   }
 }
+

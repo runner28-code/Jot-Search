@@ -22,6 +22,7 @@ CREATE TABLE "ClientContact" (
     "clientCorporation" TEXT,
     "comments" TEXT,
     "dateAdded" TIMESTAMP(3),
+    "dateLastModified" TIMESTAMP(3),
     "dateLastVisit" TIMESTAMP(3),
     "description" TEXT,
     "desiredCategories" TEXT,
@@ -51,3 +52,4 @@ CREATE TABLE "ClientContact" (
     "occupation" TEXT,
     "office" TEXT,
     "owner" TEXT,
+    "pager" TEXT,

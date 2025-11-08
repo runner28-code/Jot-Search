@@ -47,7 +47,6 @@ const sanitizeJob = (job: Job): Job => {
   Object.keys(newJob).forEach((key) => {
     const typedKey = key as keyof Job;
     if (!ALLOWED_JOB_KEYS.has(typedKey)) {
-      delete newJob[typedKey];
     }
   });
 
@@ -130,3 +129,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
     console.log(err);
     return {
       message: err,
+      result: false,

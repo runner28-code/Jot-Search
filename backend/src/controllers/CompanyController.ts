@@ -114,7 +114,6 @@ export class CompanyController {
       return {
         result: false,
         error: "You should be a coordinator for creating a company",
-      };
     }
 
     const bullhornService = new BullhornService();
@@ -326,3 +325,5 @@ export class CompanyController {
       ) || [];
     const _fields = fields ? fields.join(", ") : "*";
     const _dataset = DATASET_BULLHORN;
+    const _table = Tables.COMPANIES;
+    const _condition = _filters

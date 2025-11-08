@@ -107,7 +107,6 @@ const dataShape = {
       city: PropTypes.string,
       state: PropTypes.string,
     }),
-    logo: PropTypes.string,
     name: PropTypes.string,
     numEmployees: PropTypes.string,
   }).isRequired,

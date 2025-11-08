@@ -17,7 +17,6 @@ import { BullhornService } from "../services/BullhornService";
 import { sendVerification } from "../services/EmailService";
 import {
   register,
-  login,
   update,
   recovery,
   getStats,
@@ -209,3 +208,4 @@ export class UserController {
       };
     }
 
+    return await register(data);

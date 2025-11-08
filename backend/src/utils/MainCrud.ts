@@ -57,7 +57,6 @@ export const saveJob = async (job: string, candidate: string) => {
           savedJobs: {
             some: {
               id: job,
-            },
           },
         },
       },
@@ -83,6 +82,7 @@ export const saveJob = async (job: string, candidate: string) => {
         data: {
           savedJobs: {
             disconnect: {
+              id: job,
             },
           },
         },
@@ -128,3 +128,4 @@ export const getCandidatesOnJob = async (jobId: string) => {
     const job = await db.job.findFirst({
       where: {
         id: jobId,
+      },

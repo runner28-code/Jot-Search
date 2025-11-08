@@ -888,3 +888,9 @@ export class BullhornService {
               .join(" | "),
             dateAdded: new Date(d.dateAdded),
             dateLastComment: new Date(d.dateLastComment),
+            dateLastModified: new Date(d.dateLastModified),
+            clientCorporation: d.clientCorporation || undefined
+          }));
+          if (!testMode) {
+            console.log("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            const res = await saveLeads(updatedData);

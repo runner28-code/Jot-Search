@@ -66,7 +66,6 @@ CREATE TABLE "Candidate" (
     "phone2" TEXT,
     "phone3" TEXT,
     "preferredContact" TEXT,
-    "primarySkills" TEXT,
     "recentClientList" TEXT,
     "referredBy" TEXT,
     "salary" TEXT,
@@ -83,3 +82,4 @@ CREATE TABLE "Candidate" (
     "status" TEXT,
     "taxID" TEXT,
     "taxState" TEXT,
+    "timeZoneOffsetEST" TEXT,

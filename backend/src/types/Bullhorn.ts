@@ -298,3 +298,5 @@ export type Lead = {
     dateLastVisited?: string;
     description?: string;
     division?: string;
+    email?: string;
+    email2?: string;

@@ -90,6 +90,7 @@ function DesktopCard({ dataObj, active }) {
       <div className='flex flex-col'>
         <div className='h-62 w-62 p-4 mr-18 flex justify-center items-center border border-solid border-smokeGray'>
           { renderCardImage(data) }
+        </div>
         <p className='text-sm text-zinc-700 font-roboto mt-8'>{ data.clientCorporation }</p>
       </div>
       <div className='grow'>
@@ -124,6 +125,7 @@ function DesktopCard({ dataObj, active }) {
           </div>
         </div>
         {/* Second row icons */}
+// Temp comment
         <div className='w-full flex items-center mt-10'>
           {/* Employment Type */}
           <div className='w-1/3 flex items-center pr-4'>

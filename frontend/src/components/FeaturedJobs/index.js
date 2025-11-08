@@ -98,6 +98,7 @@ function RenderImage({image}) {
   return(
     <div className={containerStyles}>
       <img
+// Temp comment
         src={image}
         className={iconStyles}
       />

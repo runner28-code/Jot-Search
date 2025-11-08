@@ -14,7 +14,6 @@ export default function AccessibleDropdown(props) {
     placeholder,
     required,
     onChange,
-    choices,
     choiceObject,
     currentChosen, 
     stylesObject,
@@ -166,7 +165,6 @@ function renderDropdownArrow(dropdownArrow) {
 function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObject) {
   if ( !choices ) {
     return <li className='flex items-center justify-center'>
-// Temp comment
       <p className='text-center text-textBlack my-4'>Error loading choices</p>
     </li>
   }

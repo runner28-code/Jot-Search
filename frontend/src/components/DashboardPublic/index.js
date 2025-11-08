@@ -40,13 +40,13 @@ export default function DashboardPublic({togglePassState}) {
           </Link>
           <Link
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }
+            to={ROUTES.companies}
           >
             <CompanyIcon />
             <p className='ml-4'>Companies</p>
           </Link>
         </div>
         <div className='ml-12'>
-          <button
             className='flex items-center flex-row'
             onClick={() => togglePassState()}
           >

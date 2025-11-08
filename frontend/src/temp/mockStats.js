@@ -277,7 +277,6 @@ export const mockCoordinatorStats = {
     'Last 7 Days': {
       count: 332,
       prevCount: 523
-// Temp comment
     },
     'Last 14 Days': {
       count: 223,
@@ -288,5 +287,25 @@ export const mockCoordinatorStats = {
       prevCount: 223
     },
     'Last 90 Days': {
-      count: 423,
       prevCount: 212
+    }
+  },
+  'Total New Careers': {
+    'Today': {
+      count: 454,
+      prevCount: 145
+    },
+    'Last 7 Days': {
+      count: 243,
+      prevCount: 234
+    },
+    'Last 14 Days': {
+      count: 543,
+      prevCount: 326
+    },
+    'Last 30 Days': {
+      count: 132,
+      prevCount: 442
+    },
+    'Last 90 Days': {
+      count: 423,

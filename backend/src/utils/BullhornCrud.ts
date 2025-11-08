@@ -38,6 +38,7 @@ export const saveCompanies = async (companies: any[]) => {
     "billingAddress",
     "_score",
     "notes",
+    "dateAdded",
     "dateLastModified",
   ];
   try {
@@ -289,3 +290,5 @@ export const migrateUserInTPP = async (data: Partial<DbCandidate>) => {
     }
     await db.candidate.create({ data });
     console.log(`Saved Bullhorn User (bh_id=${data.externalId}) successfully`);
+  } catch (error: any) {
+    console.log(error.message);

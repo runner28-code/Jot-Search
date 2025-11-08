@@ -22,6 +22,7 @@ export class ClientContactController {
       const contact = await db.clientContact.findFirst({
         where: {
           id,
+        },
       });
 
       return {
@@ -51,3 +52,4 @@ export class ClientContactController {
       clientContacts?.forEach((clientContact) => clearPassword(clientContact));
 
       return {
+        clientContacts: clientContacts || [],

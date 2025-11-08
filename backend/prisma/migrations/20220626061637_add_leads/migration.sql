@@ -60,3 +60,4 @@ CREATE TABLE "Lead" (
     "salaryLow" TEXT,
     "secondarySkills" TEXT,
     "skillSet" TEXT,
+    "smsOptIn" BOOLEAN,

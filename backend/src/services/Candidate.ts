@@ -70,7 +70,6 @@ export const getSavedCandidates = async (companyUserId: string) => {
       },
     });
 
-    if (user && user.savedCandidates && user.savedCandidates.length > 0) {
       user.savedCandidates = user.savedCandidates.map(candidate => ({
         ...candidate,
         user: candidate.users?.[0]
@@ -86,5 +85,7 @@ export const getSavedCandidates = async (companyUserId: string) => {
     console.log(error);
     return { result: false, message: error };
   }
+};
 
 export const getCandidatesList = async (candidates_ids: string[]) => {
+  try {

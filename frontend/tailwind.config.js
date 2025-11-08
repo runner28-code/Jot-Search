@@ -88,6 +88,7 @@ module.exports = {
         'signup-page-hero': 'url(\'./assets/images/tulsanetwork.jpg\')',
         'login-page-hero': 'url(\'./assets/images/networklogin.jpg\')',
       },
+      spacing: {
         // Styleguide Spacing
         'xxs': '4px',
         'xs': '8px',
@@ -224,7 +225,6 @@ module.exports = {
       '120': '30rem',
       '350': '87.5rem',
       '400': '100rem',
-    },
     minHeight: {
       '50': '12.5rem',
       '280': '70rem',
@@ -235,3 +235,5 @@ module.exports = {
     screens: {
       'vw-400': '400px',
       'vw-480': '480px',
+      'vw-640': '640px',
+      'vw-768': '768px',

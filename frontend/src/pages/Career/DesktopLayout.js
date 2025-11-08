@@ -208,3 +208,21 @@ function SkillsList({ items }) {
       ))}
     </ul>
   )
+}
+SkillsList.propTypes = {
+  items: PropTypes.array
+}
+
+function renderFeaturedIcon(role, isFeatured) {
+  if (!isFeatured || role !== 'coordinator') {
+    return null;
+  } else {
+    return (
+      <div className='flex gap-[10px] items-center px-m py-xxs bg-searchGreen rounded-full'>
+        <img
+          src={featuredIcon}
+          alt='intulsa' />
+        <p className='text-sm font-bold text-white'>InTulsa Featured</p>
+      </div>
+    )
+  }

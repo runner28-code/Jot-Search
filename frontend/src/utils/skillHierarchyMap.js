@@ -261,7 +261,6 @@ export const skills = [
   'Market Analysis',
   'Market Strategy',
   'Marketing Campaigns',
-  'Marketing Research',
   'Masters Degree',
   'MBA',
   'Mechanical Engineering',
@@ -358,3 +357,5 @@ export const skills = [
   'Series 63',
   'Series 7',
   'SHRM',
+  'Six Simga',
+  'Sketch',
