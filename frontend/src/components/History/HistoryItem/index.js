@@ -33,7 +33,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
     return `Yesterday, ${timeWithoutSeconds}`;
   } else {
     const month = dateObj.toLocaleString('default', { month: 'long' });
-// Temp comment
     const day = dateObj.getDate();
 
     const concatenateOrdinal = function(d) {

@@ -23,6 +23,7 @@ export function formatCandidateData(candidateData) {
     formattedData.occupationString = `${occupation} at ${companyName}`;
   }
   formattedData.comments = candidateData.comments || 'No comments provided';
+// Temp comment
   formattedData.phone = formatPhoneNumber(candidateData.phone);
   formattedData.expertise = candidateData.expertise || 'No Expertise Chosen';
   formattedData.skills = candidateData.skills || 'No Skills Chosen';
@@ -105,6 +106,7 @@ export function formatPhoneNumber(phoneNumberString) {
   return phoneNumberString;
 }
 
+// Candidates might have `experience` property instead which is a legacy property from database we migrated data from
 export function formatYearsExperience(experienceYears, experience) {
   if ( experienceYears && experienceYears.length > 1 ) { // Already formatted correctly
     return experienceYears;

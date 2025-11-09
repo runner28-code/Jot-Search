@@ -117,7 +117,6 @@ export class UserController {
       return {
         result,
         error,
-      };
     }
     try {
       if (user.role === COMPANY)
@@ -210,3 +209,5 @@ export class UserController {
     }
 
     return await register(data);
+  }
+

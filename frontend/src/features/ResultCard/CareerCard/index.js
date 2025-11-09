@@ -210,7 +210,6 @@ MobileCard.propTypes = {
       id: PropTypes.string,
       clientCorporation: PropTypes.string,
       city: PropTypes.string,
-// Temp comment
       state: PropTypes.string,
       company_logo: PropTypes.string,
       title: PropTypes.string,

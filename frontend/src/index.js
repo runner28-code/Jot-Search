@@ -26,3 +26,4 @@ ReactDOM.render(
           </CategoryContext>
         </CareerContext>
       </CandidateContext>
+    </BrowserRouter>

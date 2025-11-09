@@ -8,7 +8,6 @@ on:
 env:
   AWS_REGION: 'us-east-1'
   ECR_REPOSITORY: 'site-backend'
-  ECS_SERVICE: 'intulsa-backend-service-dev'
   ECS_CLUSTER: 'intulsa-cluster-dev'
   ECS_TASK_DEFINITION: '.github/workflows/dev_task_definition.json'
   CONTAINER_NAME: 'intulsa-backend-container-dev'
@@ -76,3 +75,4 @@ jobs:
     - name: Fill in the new image ID in the Amazon ECS task definition
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
+      with:

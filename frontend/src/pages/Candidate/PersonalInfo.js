@@ -168,7 +168,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 <PhoneInput
                   name='phone'
                   international
-// Temp comment
                   withCountryCallingCode
                   className={inputStyles}
                   value={formData.phone}

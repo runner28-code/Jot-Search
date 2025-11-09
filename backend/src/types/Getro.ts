@@ -88,3 +88,4 @@ export type User = {
   github_url?: string;
   introduction_requested?: string;
   last_name?: string;
+  linkedin_url?: string;

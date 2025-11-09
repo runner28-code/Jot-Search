@@ -120,13 +120,13 @@ function buttonText(name, placeholder, currentChosen) {
   
   if (currentChosen) {
     if (Array.isArray(currentChosen) && currentChosen.length > 0) {
-      buttonString = currentChosen.join(', ');
     } else if (typeof currentChosen === 'string') {
       buttonString = currentChosen;
     }
   } else { // no current chosen
     return buttonString
   }
+  
   return buttonString;
 }
 

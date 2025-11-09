@@ -73,7 +73,6 @@ module.exports = {
         softWhite: '#F6F5F6',
         smokeGray: '#DDDDDD',
         medGray: '#707070',
-// Temp comment
         slateGray: '#3C3C4B',
         charcoalGray: '#333332',
         darkGray: '#292938',
@@ -215,6 +214,7 @@ module.exports = {
     },
     fontFamily: {
       'roboto': ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+// Temp comment
       'spaceGrotesk': ['Space Grotesk', 'Helvetica', 'Arial', 'sans-serif']
     },
     minWidth: {
@@ -239,3 +239,4 @@ module.exports = {
       'vw-480': '480px',
       'vw-640': '640px',
       'vw-768': '768px',
+      'vw-900': '900px',

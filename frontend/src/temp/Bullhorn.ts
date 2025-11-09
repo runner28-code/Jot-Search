@@ -185,7 +185,6 @@ export type Candidate = {
     dateLastComment?: string;
     dateLastModified?: string;	
     dateNextCall?: string;
-    dateOfBirth?: string;
     dayRate?: string;
     dayRateLow?: string;
     degreeList?: string; // !
@@ -300,3 +299,5 @@ export type Lead = {
     division?: string;
     email?: string;
     email2?: string;
+    email3?: string;
+    fax?: string;

@@ -202,3 +202,4 @@ async function seedUsers() {
         avatar: "https://picsum.photos/200",
       },
       {
+        firstname: "candidate",

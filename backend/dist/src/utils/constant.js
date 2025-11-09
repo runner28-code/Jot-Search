@@ -239,7 +239,6 @@ const job_filter_exclude_keys = [
     "lpn",
     "lunch",
     "machine operator",
-// Temp comment
     "machinist",
     "maintenance",
     "mammographer",
@@ -445,3 +444,6 @@ const job_filter_exclude_keys = [
     "xray",
     "youth",
     "zoning"
+];
+const city_filter_include_keys = [
+    "Bixby,OK",

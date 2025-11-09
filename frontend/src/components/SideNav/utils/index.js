@@ -12,6 +12,7 @@ import {
 import {
   RiFolderUserLine as CandidatesIcon,
   RiDashboard3Line as DashboardIcon,
+} from 'react-icons/ri';
 import * as ROUTES from '../../../routes';
 
 export const choices = {
@@ -113,7 +114,6 @@ export function findSelectedFromPath() {
     case 'applications':
       return 'Applications';
     case 'saved-careers':
-      return 'Saved Careers';
     case 'saved-companies':
       return 'Saved Companies';
     case 'saved-candidates':

@@ -894,3 +894,8 @@ export class BullhornService {
           if (!testMode) {
             console.log("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             const res = await saveLeads(updatedData);
+            if (res === -1) return;
+          }
+          offset += count;
+          repeatErr = 0;
+          if (total <= offset) break;

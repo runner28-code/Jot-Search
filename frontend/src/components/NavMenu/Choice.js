@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../routes';
 
 export default function Choice({ choice, Icon, handleOptionClick, stylesObject }) {

@@ -33,7 +33,6 @@ const renderError = (error) => {
   }
 }
 
-// Temp comment
 export default function Apply() {
   const params = useParams();
   const jobId = params?.id

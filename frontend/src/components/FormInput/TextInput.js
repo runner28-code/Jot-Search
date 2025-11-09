@@ -9,7 +9,6 @@ export default function TextInput({type, name, placeholder, label, value, requir
       onChange(name, e);
     }
   }
-
   return (
     <div className='w-full'>
       { renderLabel( label, required, name ) }

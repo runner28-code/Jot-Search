@@ -63,6 +63,7 @@ export default function InviteToCareer({ candidate }) {
 
       <MultiSelect
         isLoading={isLoading}
+        options={jobOptions}
         value={selected}
         onChange={setSelected}
         labelledBy="Select"

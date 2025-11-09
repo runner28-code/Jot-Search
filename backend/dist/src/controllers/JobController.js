@@ -239,6 +239,7 @@ let JobController = class JobController {
             return yield (0, MainCrud_1.getSavedJobs)(candidate);
         });
     }
+    createJob(body) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, Job_1.createJob)(body);
         });
@@ -277,7 +278,6 @@ __decorate([
     __param(1, (0, routing_controllers_1.QueryParam)("job")),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String, String]),
-    __metadata("design:returntype", Promise)
 ], JobController.prototype, "apply", null);
 __decorate([
     (0, routing_controllers_1.Authorized)(),

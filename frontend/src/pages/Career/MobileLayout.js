@@ -132,6 +132,7 @@ export default function MobileLayout(props) {
       currentCareerId={careerData.externalId}
     />
   </>)
+}
 
 MobileLayout.propTypes = {
   data: PropTypes.shape({

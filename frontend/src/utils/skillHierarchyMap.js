@@ -360,3 +360,5 @@ export const skills = [
   'SHRM',
   'Six Simga',
   'Sketch',
+  'Social and Digital Marketing Research',
+  'Social Media',

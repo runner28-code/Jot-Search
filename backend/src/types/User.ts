@@ -64,7 +64,6 @@ export const IUSER = {
   city: "",
   state: "",
   zip: "",
-  resume: "",
   avatar: "",
   linkedin: "",
   skills: "",
@@ -92,3 +91,4 @@ export const IUSER = {
   willReceiveNotification: false,
   ethnicity: "",
   workAuthorized: "",
+  disability: "",

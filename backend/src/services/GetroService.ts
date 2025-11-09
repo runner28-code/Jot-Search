@@ -26,7 +26,6 @@ export class GetroService {
             headers: {
                 'X-User-Email': this.email,
                 'X-User-Token': this.password,
-                'Content-Type': 'application/json',
                 'Accept': 'application/json'
             }
         };
@@ -263,3 +262,5 @@ export class GetroService {
                                     await this.saveGetroJobInBullhornJobTable(job)
                                 } else {
                                     console.log('JOB doesn\'t meet the qualification! Skipping...')
+                                }
+                            }

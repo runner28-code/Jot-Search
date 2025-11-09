@@ -26,4 +26,3 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
         )
       })}
     </select>
-  )

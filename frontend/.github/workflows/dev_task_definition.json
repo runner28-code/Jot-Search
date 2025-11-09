@@ -16,7 +16,6 @@
                 }
             ],
             "essential": true,
-            "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
                    "awslogs-group" : "/ecs/dev-site-frontend-task",
@@ -28,4 +27,5 @@
                 {
                     "name": "CHOKIDAR_USEPOLLING",
                     "value": "true"
+                }
             ]

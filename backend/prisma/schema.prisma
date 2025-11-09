@@ -676,3 +676,7 @@ model Candidate {
   timeZoneOffsetEST         Int?
   tobaccoUser               Boolean?
   totalDependentClaimAmount String?
+  travelLimit               Int?
+  travelMethod              String?
+  twoJobs                   Boolean?
+  type                      String?

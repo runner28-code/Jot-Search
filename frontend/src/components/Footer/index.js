@@ -271,7 +271,6 @@ function NavFooter() {
         <a
           href="/careers"
           className={linkStyle}
-// Temp comment
         >
           Operations Job Openings
         </a>
@@ -361,7 +360,6 @@ function NavFooterMobile() {
           Software & Enginering Job Openings
         </a>
         <a
-          href="/careers"
           className={linkStyle}
         >
           Sales & Business Developement Job Openings

@@ -81,6 +81,7 @@ export class CompanyController {
   async send_candidates_to_employers(
     @CurrentUser() authUser: User,
     @Body() body: { candidates_ids: string[], employers_emails: string[] }
+  ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
       return {
         result: false,
@@ -132,7 +133,6 @@ export class CompanyController {
 
   async getCompanyByIdFromBullhorn(id: string): Promise<any> {
     try {
-      const company = await db.company.findFirst({
         where: {
           id: id,
         },
@@ -327,3 +327,5 @@ export class CompanyController {
     const _dataset = DATASET_BULLHORN;
     const _table = Tables.COMPANIES;
     const _condition = _filters
+      .map(
+        (opt) =>

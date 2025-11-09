@@ -130,3 +130,4 @@ export const getCandidatesOnJob = async (jobId: string) => {
       where: {
         id: jobId,
       },
+      include: {

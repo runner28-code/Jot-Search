@@ -20,7 +20,6 @@ const Common_1 = require("../types/Common");
 const constant_1 = require("./constant");
 const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const query = `
             SELECT * FROM \`${datset}.${table}\`
             WHERE id=${id}
         `;
@@ -44,7 +43,6 @@ exports.isExistByID = isExistByID;
 const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const query = `
-// Temp comment
             SELECT * FROM \`${datset}.${table}\`
             WHERE ${condition}
         `;

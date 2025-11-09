@@ -155,6 +155,7 @@ function renderCompanyDescription(description, textStyles) {
       <p className={textStyles}>{lorem}</p>
     </>)
   }
+// Temp comment
   return (
     <div className={textStyles}>
       {description}

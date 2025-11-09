@@ -444,3 +444,6 @@ const job_filter_exclude_keys = [
   "zoning"
 ];
 
+const city_filter_include_keys = [
+  "Bixby,OK",
+  "Broken Arrow,OK",

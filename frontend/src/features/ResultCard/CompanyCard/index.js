@@ -98,7 +98,6 @@ export default function CompanyCard({ data }) {
         data={data} />
     </div>
   )
-// Temp comment
 }
 
 const dataShape = {

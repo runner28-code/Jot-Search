@@ -15,6 +15,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
       value: ['Active', 'Open']
     },
     {
+// Temp comment
       key: 'companyId',
       value: companyId
     }
@@ -39,7 +40,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
         {careers.map((career, index) => {
           if (career.externalId === currentCareerId) { // Don't show the current career
             return null;
-// Temp comment
           }
           return <CareerCard
             key={index}

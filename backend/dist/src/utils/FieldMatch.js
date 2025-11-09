@@ -26,7 +26,6 @@ exports.JobFilter = {
         willRelocate: "willRelocate",
         city: "city",
         state: "state",
-// Temp comment
         isDeleted: "isDeleted",
         companyId: "companyId",
     },
@@ -60,3 +59,4 @@ exports.USER_FILTER = {
     status: "status",
     email: "email",
     bh_email: "bh_email",
+    companyName: "companyName",
