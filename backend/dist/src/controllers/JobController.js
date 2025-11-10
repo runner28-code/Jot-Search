@@ -39,6 +39,7 @@ const MainCrud_1 = require("../utils/MainCrud");
 const BullhornService_1 = require("../services/BullhornService");
 let JobController = class JobController {
     searchJobByID(id) {
+// Temp comment
         var _a;
         return __awaiter(this, void 0, void 0, function* () {
             try {
@@ -278,6 +279,7 @@ __decorate([
     __param(1, (0, routing_controllers_1.QueryParam)("job")),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String, String]),
+    __metadata("design:returntype", Promise)
 ], JobController.prototype, "apply", null);
 __decorate([
     (0, routing_controllers_1.Authorized)(),

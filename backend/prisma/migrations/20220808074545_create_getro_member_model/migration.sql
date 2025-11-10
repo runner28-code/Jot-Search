@@ -65,3 +65,4 @@ CREATE TABLE "GetroMember" (
     "referrals_given" TEXT[],
     "skills" TEXT,
     "talent_groups" TEXT,
+    "referrals_received" TEXT[],

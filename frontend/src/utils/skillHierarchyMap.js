@@ -362,3 +362,5 @@ export const skills = [
   'Sketch',
   'Social and Digital Marketing Research',
   'Social Media',
+  'Software Design',
+  'Software Development',

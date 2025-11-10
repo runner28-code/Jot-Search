@@ -15,7 +15,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
       value: ['Active', 'Open']
     },
     {
-// Temp comment
       key: 'companyId',
       value: companyId
     }
@@ -33,7 +32,6 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
   const headerString = adjustedTotal + (companyName ? ` Other Careers open at ${companyName}` : ' Other open careers');
 
   return (<>
-    {isLoading && <LoadingSpinner />}
     {!isLoading && <h4 className='text-h4 font-spaceGrotesk text-charcoal font-semibold mb-xxl-2'>{headerString}</h4>}
     {careers && careers.length > 0 && (
       <>  

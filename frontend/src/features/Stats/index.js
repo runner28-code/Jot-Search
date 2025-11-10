@@ -105,7 +105,6 @@ function StatCard({ stat, value }) {
     numberStyles += ' text-midGrey';
   } else {
     numberStyles += ' text-error';
-  }
   return (
     <div
       key={stat}
@@ -118,6 +117,7 @@ function StatCard({ stat, value }) {
       {renderDeviation(deviationPercentage)}
     </div>
   )
+}
 
 StatCard.propTypes = {
   stat: PropTypes.string.isRequired,

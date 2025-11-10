@@ -214,7 +214,6 @@ module.exports = {
     },
     fontFamily: {
       'roboto': ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
-// Temp comment
       'spaceGrotesk': ['Space Grotesk', 'Helvetica', 'Arial', 'sans-serif']
     },
     minWidth: {
@@ -240,3 +239,4 @@ module.exports = {
       'vw-640': '640px',
       'vw-768': '768px',
       'vw-900': '900px',
+      'vw-990': '990px',

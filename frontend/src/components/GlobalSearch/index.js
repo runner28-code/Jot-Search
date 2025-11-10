@@ -1,6 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
-// Temp comment
 import PropTypes from 'prop-types';
 import debounce from 'lodash/debounce';
 import SearchBar from '../SearchBar';

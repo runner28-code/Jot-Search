@@ -51,7 +51,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
       className='mt-4 mb-5 flex items-center'
     >
       <input
-// Temp comment
         type='checkbox'
         name='useExistingResume'
         className='h-8 w-8 ml-2'

@@ -20,3 +20,4 @@ export const checkPassword = (encryptedPassword:string, password: string) => {
 
     const hash = crypto.createHash('sha512');
     hash.update(sr + password);
+    const calculated_hash = hash.digest('hex')

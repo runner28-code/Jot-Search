@@ -33,7 +33,6 @@ export default function Footer() {
         </a>
         <a href={ROUTES.twitter}>
           <img
-            src={twitter}
             className={socialIconStyleMobile}
           />
         </a>
@@ -360,6 +359,7 @@ function NavFooterMobile() {
           Software & Enginering Job Openings
         </a>
         <a
+          href="/careers"
           className={linkStyle}
         >
           Sales & Business Developement Job Openings

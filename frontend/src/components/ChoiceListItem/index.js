@@ -5,7 +5,6 @@ function renderHorizontalRule(isLastItem) {
   if (isLastItem) {
     return null;
   }
-// Temp comment
   return <hr className='w-full' />;
 }
 
@@ -26,6 +25,7 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
       onClick={handleItemClick}
     >
       <div className='flex items-center'>
+// Temp comment
         <img 
           className='object-contain h-35 w-35 ml-12 mr-16'
           src={job.logo}

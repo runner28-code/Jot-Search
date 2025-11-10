@@ -86,3 +86,4 @@ CREATE TABLE "Candidate" (
     "timeZoneOffsetEST" TEXT,
     "tobaccoUser" TEXT,
     "totalDependentClaimAmount" TEXT,
+    "travelLimit" TEXT,

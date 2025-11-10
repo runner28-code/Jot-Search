@@ -111,3 +111,4 @@ export const saveJobs = async (jobs: any[]) => {
 									}
 								});
 				
+								const newJob = await db.getroJobInfo.create({

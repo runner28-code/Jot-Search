@@ -133,6 +133,7 @@ export class CompanyController {
 
   async getCompanyByIdFromBullhorn(id: string): Promise<any> {
     try {
+      const company = await db.company.findFirst({
         where: {
           id: id,
         },
@@ -329,3 +330,4 @@ export class CompanyController {
     const _condition = _filters
       .map(
         (opt) =>
+          `LOWER(${CompanyFilter.bullhorn[opt.key]

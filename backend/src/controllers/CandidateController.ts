@@ -379,3 +379,5 @@ export class CandidateController {
       const [jobs, candidates] = await Promise.all([
         jobsPromise,
         candidatesPromise,
+      ]);
+

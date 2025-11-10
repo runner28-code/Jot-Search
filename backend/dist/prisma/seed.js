@@ -32,7 +32,6 @@ function main() {
             throw err;
         }
     });
-// Temp comment
 }
 function seedJobs() {
     var _a, _b;
@@ -62,7 +61,6 @@ function seedJobs() {
                     address1: "123 Job St",
                     city: "Tulsa",
                     state: "OK",
-                    zip: "74008",
                     salary: 80000,
                     employmentType: "fulltime",
                     onSite: "Hybrid",

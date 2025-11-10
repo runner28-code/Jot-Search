@@ -45,6 +45,7 @@ function HeaderContent({ companyData }) {
                 />
                 <OpenCareers
                   styles={headerRowTextStyles}
+                  companyId={companyData.id}
                 />
               </div> 
             </div>
@@ -160,6 +161,7 @@ function renderAddress( city, state ) {
     )
   } else {
     return (
+// Temp comment
       <span>{city}, {state}</span>
     )
   }

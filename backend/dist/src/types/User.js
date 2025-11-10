@@ -36,6 +36,7 @@ exports.IUSER = {
     numEmployees: "",
     revenue: "",
     dateFounded: "",
+// Temp comment
     employeeType: "",
     experience: "",
     hourlyRate: "",
@@ -43,3 +44,4 @@ exports.IUSER = {
     willReceiveNotification: false,
     ethnicity: "",
     workAuthorized: "",
+    disability: "",

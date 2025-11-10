@@ -11,7 +11,6 @@ export const UpdateJobFeatured = ({ job }) => {
   const enabledButtonStyle = 'bg-green text-white'
   const disabledButtonStyle = 'bg-grey300'
 
-// Temp comment
   const buttonStyles = toggled ? enabledButtonStyle : disabledButtonStyle
 
   const enabledToggleStyles = 'translate-x-12'
@@ -24,7 +23,6 @@ export const UpdateJobFeatured = ({ job }) => {
       {isLoading && <p>Loading...</p>}
       {isSuccess && <p>Success!</p>}
       
-      <div className='flex space-x-16'>
         <button
           type="button" 
           name="featured"

@@ -899,3 +899,7 @@ export class BullhornService {
           offset += count;
           repeatErr = 0;
           if (total <= offset) break;
+        } else if (res.status === 404) {
+          return [];
+        } else {
+          console.log(url);

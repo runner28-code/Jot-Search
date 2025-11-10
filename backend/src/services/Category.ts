@@ -12,3 +12,4 @@ export const getCategoriesByFilter = async (
     where: filters?.length ? filters : undefined,
     take: count,
   });
+

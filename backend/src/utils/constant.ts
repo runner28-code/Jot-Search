@@ -447,3 +447,5 @@ const job_filter_exclude_keys = [
 const city_filter_include_keys = [
   "Bixby,OK",
   "Broken Arrow,OK",
+  "Jenks,OK",
+  "Owasso,OK",

@@ -100,7 +100,6 @@ export const coordinatorChoices = [
   choices.addUser,
   choices.logout
 ];
-export const guestChoices = [
   choices.careers,
   choices.companies,
 ];
@@ -114,6 +113,7 @@ export function findSelectedFromPath() {
     case 'applications':
       return 'Applications';
     case 'saved-careers':
+      return 'Saved Careers';
     case 'saved-companies':
       return 'Saved Companies';
     case 'saved-candidates':

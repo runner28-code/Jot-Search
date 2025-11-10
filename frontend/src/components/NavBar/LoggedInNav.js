@@ -84,6 +84,7 @@ const DropdownMenu = () => {
   const profile = AuthService.getProfile();
   if ( !profile ) {
     navigate(ROUTES.login);
+// Temp comment
   }
 
   const firstname = currentUser?.firstname || '';

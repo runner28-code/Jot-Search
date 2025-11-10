@@ -40,7 +40,6 @@ export type Company = {
     revenue?: string,
     status?: string,
     taxRate?: string,
-    tickerSymbol?: string,
     workWeekStart?: string,
     address_country_id?: string,
     datedAdded?: string,
@@ -302,3 +301,4 @@ export type Lead = {
     email2?: string;
     email3?: string;
     fax?: string;
+    fax2?: string;

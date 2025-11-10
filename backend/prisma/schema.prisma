@@ -680,3 +680,6 @@ model Candidate {
   travelMethod              String?
   twoJobs                   Boolean?
   type                      String?
+
+  userDateAdded  DateTime?
+  username       String?

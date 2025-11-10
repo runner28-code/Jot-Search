@@ -85,6 +85,7 @@ function renderLocation() {
 }
 
 function renderColorShapes()  {
+// Temp comment
   const { width } = useWindowDimensions();
 
   if( width < 0 ) {

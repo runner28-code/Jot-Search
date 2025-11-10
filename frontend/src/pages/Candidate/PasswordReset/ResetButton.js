@@ -7,6 +7,7 @@ import useWindowDimensions from '../../../hooks/windowDimensions';
 export default function ResetButton({ candidateData, setType }) {
   const { width } = useWindowDimensions();
   const handleSubmit = async (event) => {
+    event.preventDefault();
     const { email } = candidateData;
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email

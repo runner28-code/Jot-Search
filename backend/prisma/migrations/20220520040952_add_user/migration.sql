@@ -39,4 +39,5 @@ CREATE TABLE "User" (
     "hourlyRate" TEXT,
     "willRelocate" TEXT,
     "ethnicity" TEXT,
+    "workAuthorized" TEXT,
     "disability" TEXT,

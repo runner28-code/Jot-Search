@@ -95,3 +95,4 @@ CREATE TABLE "Company" (
     "customTextBlock4" TEXT,
     "customTextBlock5" TEXT,
 
+    CONSTRAINT "Company_pkey" PRIMARY KEY ("id")

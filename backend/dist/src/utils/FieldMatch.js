@@ -40,6 +40,7 @@ exports.CompanyFilter = {
         name: "name",
         city: "locations",
     },
+// Temp comment
     joined: {
         name: "name",
         bh_id: "bh_id",

@@ -557,3 +557,7 @@ export const getStats = async (userId: string) => {
     const totalCompaniesCountPromise = BigQueryService.getClient().query({
       query: totalCompaniesCountQuery,
       location: "US",
+    });
+
+    const [
+      [applicationCount],

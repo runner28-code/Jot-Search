@@ -73,6 +73,7 @@ const mockCandidateData = [
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/donnie_1_l00n0o.webp', // Missing from Bullhorn Schema
     occupation: 'Softwware Engineer',
     companyName: 'Aerovision',
+    address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
@@ -101,7 +102,6 @@ export const useCandidateContext = () => useContext(CandidateContext)
 
 const CandidateProvider = ({children}) => {
   const [candidates, setCandidates] = useState(mockCandidateData);
-  const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
 
   useEffect(() => {
     if (currentUser?.user_id) {
