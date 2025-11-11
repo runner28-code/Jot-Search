@@ -68,7 +68,6 @@ export const register = async (data: User) => {
       return { result: false, error: validate };
     }
 
-    const user = justifyData(data, USERKEYS);
     const existing = await isExistUser("email", user.email);
 
     if (existing) {
@@ -561,3 +560,9 @@ export const getStats = async (userId: string) => {
 
     const [
       [applicationCount],
+      [savedJobsCount],
+      [totalJobsCount],
+      [savedCompaniesCount],
+      [totalCompaniesCount],
+    ] = await Promise.all([
+      applicationCountPromise,

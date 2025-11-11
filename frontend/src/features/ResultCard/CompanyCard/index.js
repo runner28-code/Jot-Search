@@ -123,6 +123,7 @@ function renderCardImage(data) {
       className=''
       src={data.logo}
     />
+  }
 }
 
 function MobileCard({ data, addressString, employeeString }) {

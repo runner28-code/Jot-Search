@@ -112,3 +112,4 @@ export const getFilterConditions = (
     return conditions.join(` ${operator} `);
   };
 
+export const determineCondition = (

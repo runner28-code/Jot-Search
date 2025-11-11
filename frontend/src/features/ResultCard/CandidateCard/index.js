@@ -69,7 +69,6 @@ export default function CandidateCard({ data, disableLink }) {
                 src={locationIcon}
                 className='h-8 mr-5' />
               <p className='text-charcoal'>{addressString}</p>
-            </div>
             {/* Years Experience */}
             <div className='w-1/3 flex items-center'>
               <img
@@ -213,3 +212,31 @@ function InfoLabel({ label, value }) {
       { renderText(label, value) }
     </div>
   )
+}
+
+InfoLabel.propTypes = {
+  label: PropTypes.string.isRequired,
+  value: PropTypes.bool.isRequired,
+}
+
+
+import { MdCommute, MdCardTravel } from 'react-icons/md';
+import { FaTruckMoving } from 'react-icons/fa';
+
+function renderIcon(label, value) {
+  let styles = 'h-8 w-8 mr-5 ';
+  if ( !value || (label !== 'Workspace' && value === 'false') ) {
+    styles += 'fill-midGrey';
+  } else {
+    styles += 'fill-success';
+  }
+  switch (label) {
+    case 'Workspace':
+      return <MdCommute className={styles} />
+    case 'US Auth':
+      return <MdCardTravel className={styles} />
+    case 'Relocation':
+      return <FaTruckMoving className={styles} />
+    default:
+      return null;
+  }

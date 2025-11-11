@@ -1,4 +1,5 @@
 /* INTERNAL ROUTES */
+// Temp comment
 export const root = '/';
 export const landingPage = '/landing-page';
 export const blog = '/blog';
@@ -86,3 +87,4 @@ export const APIclientContacts = '/api/client-contact/search';
 // Categories
 export const APIcategoryBase = '/api/category';
 export const APIcategories = APIcategoryBase + '/search';
+// Stats

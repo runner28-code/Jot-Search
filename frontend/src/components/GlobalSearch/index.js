@@ -91,7 +91,6 @@ export default function GlobalSearch({ placeholder }) {
         <SearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
-          placeholder={ placeholder } 
           alternateStylesObject={ stylesObject } />
       </div>
       { renderResultsContainer( results, searchTerm ) }

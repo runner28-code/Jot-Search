@@ -683,3 +683,8 @@ model Candidate {
 
   userDateAdded  DateTime?
   username       String?
+  veteran        String?
+  willRelocate   Boolean?
+  workAuthorized Boolean?
+
+  address_address1   String?

@@ -166,6 +166,7 @@ export class UserController {
     return await update(user.id, user.role, user);
   }
 
+  @Post("/account-recovery")
   async accountRecovery(@Body() body: { email: string }) {
     const { email } = body;
     return await recovery(email);
@@ -211,3 +212,5 @@ export class UserController {
     return await register(data);
   }
 
+  @Authorized()
+  @Post("/user/update")

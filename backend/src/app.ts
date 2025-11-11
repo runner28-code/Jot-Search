@@ -35,7 +35,6 @@ const uploadToS3 = async(req: any, res: any) => {
     return
   }
 
-  const form = new IncomingForm() as any
   form.uploadDir = path.join(__dirname, "..", "uploads");
   form.keepExtensions = true
   form.parse(req, async (err: any, fields: any, files: any) => {
@@ -129,3 +128,4 @@ useExpressServer(app, {
           return true;
         }
       }
+      return false;

@@ -449,3 +449,7 @@ const city_filter_include_keys = [
   "Broken Arrow,OK",
   "Jenks,OK",
   "Owasso,OK",
+  "Remote",
+  "Sapulpa,OK",
+  "Tulsa,OK"
+];

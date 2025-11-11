@@ -5,7 +5,7 @@ import { GetroService } from '../services/GetroService';
 export class GetroController {
   @Authorized()
   @Get('/getro/companies')
-    return await (await GetroService.getClient()).getCompanies();    
+  async getCompanies() {
   }
   
   @Authorized()

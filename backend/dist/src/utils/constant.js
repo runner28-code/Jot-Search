@@ -70,7 +70,6 @@ const job_filter_exclude_keys = [
     "casino",
     "chef",
     "chemical",
-// Temp comment
     "chemist",
     "child",
     "circulation",
@@ -450,3 +449,6 @@ const city_filter_include_keys = [
     "Bixby,OK",
     "Broken Arrow,OK",
     "Jenks,OK",
+    "Owasso,OK",
+    "Remote",
+    "Sapulpa,OK",

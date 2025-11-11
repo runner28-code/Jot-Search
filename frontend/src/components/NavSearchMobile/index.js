@@ -165,7 +165,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
   const offObject = {
     containerStyles: 'flex items-end ',
     searchIconStyles: 'fill-neutral-400',
-// Temp comment
     inputStyles: 'hidden '
   }
   function handleClick() {

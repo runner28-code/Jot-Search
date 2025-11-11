@@ -53,6 +53,7 @@ export class BigQueryService {
             consoleLog(`BIGQUERY: INSERT QUERY = ${JSON.stringify(data)}`);
             const keys = Object.keys(data)
             const values = keys.map(k => `"""${data[k]}"""`);
+          
             const query = `
               INSERT INTO \`${dataset}.${table}\`
               (${keys.join(', ')})
@@ -65,3 +66,4 @@ export class BigQueryService {
                 location: 'US',
             };
 
+            const [job] = await BigQueryService.getClient().createQueryJob(options);

@@ -40,12 +40,12 @@ exports.CompanyFilter = {
         name: "name",
         city: "locations",
     },
-// Temp comment
     joined: {
         name: "name",
         bh_id: "bh_id",
         id: "id",
     },
+// Temp comment
 };
 exports.USER_FILTER = {
     firstname: "firstname",
@@ -61,3 +61,4 @@ exports.USER_FILTER = {
     email: "email",
     bh_email: "bh_email",
     companyName: "companyName",
+    occupation: "occupation",

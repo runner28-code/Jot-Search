@@ -15,6 +15,7 @@ export default function AccountRecovery() {
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email.value
     });
+
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {

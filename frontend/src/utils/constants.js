@@ -35,7 +35,6 @@ export const stateCodeMap = {
   Kentucky: 'KY',
   Louisiana: 'LA',
   Maine: 'ME',
-// Temp comment
   Maryland: 'MD',
   Massachusetts: 'MA',
   Michigan: 'MI',
@@ -56,7 +55,6 @@ export const stateCodeMap = {
   Oregon: 'OR',
   Pennsylvania: 'PA',
   'Rhode Island': 'RI',
-  'South Carolina': 'SC',
   'South Dakota': 'SD',
   Tennessee: 'TN',
   Texas: 'TX',

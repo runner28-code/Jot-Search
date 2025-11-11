@@ -40,6 +40,7 @@ export function renderHeader(addType) {
   }
 }
 
+// Temp comment
 export function inputValidation(formObj) {
   // TODO: Change errors to modal (or snackbar?)
   const newErrors = [];

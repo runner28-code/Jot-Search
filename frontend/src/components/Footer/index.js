@@ -33,6 +33,7 @@ export default function Footer() {
         </a>
         <a href={ROUTES.twitter}>
           <img
+            src={twitter}
             className={socialIconStyleMobile}
           />
         </a>
@@ -469,7 +470,6 @@ function SocialStyles() {
               src={intulsaBusinessLogo}
               alt='Intulsa Logo'
               className='w-auto h-auto'
-            />
           </a>
         </div>
       </div>

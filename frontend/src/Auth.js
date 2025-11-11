@@ -46,6 +46,7 @@ export default function Auth() {
           element={<ActiveCareers />} />
         <Route
           path={ROUTES.candidates}
+          element={<Candidates />} />
         <Route
           path={ROUTES.addUser}
           element={<AddUser />} />

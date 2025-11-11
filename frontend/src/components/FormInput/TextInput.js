@@ -17,7 +17,6 @@ export default function TextInput({type, name, placeholder, label, value, requir
     </div>
   )
 }
-
 TextInput.propTypes = {
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,

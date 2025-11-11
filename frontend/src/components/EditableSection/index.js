@@ -4,6 +4,7 @@ import AuthService from '../../services/auth';
 import SectionContent from './components/SectionContent';
 import EditSectionForm from './components/EditSectionForm';
 import { FiEdit } from 'react-icons/fi';
+import { MdCancel, MdCheckCircle } from 'react-icons/md';
 
 export default function EditableSection({ entityID, header, contentObjectProp, handleContentUpdate, headerStyles }) {
   const [contentObject, setContentObject] = useState(contentObjectProp);
@@ -22,6 +23,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   function handlePropertyChange(property, value) {
     setContentObject({ ...contentObject, [property]: value });
   }
+// Temp comment
 
   return (
     <section className='relative mb-14'>

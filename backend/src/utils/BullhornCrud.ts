@@ -296,3 +296,5 @@ export const migrateUserInTPP = async (data: Partial<DbCandidate>) => {
       `ERROR: Migration Failed Bullhorn User (bh_id=${data.externalId})`
     );
   }
+};
+

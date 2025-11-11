@@ -19,7 +19,6 @@ CREATE TABLE "Candidate" (
     "dayRateLow" TEXT,
     "degreeList" TEXT,
     "description" TEXT,
-    "desiredLocations" TEXT,
     "disability" TEXT,
     "educationDegree" TEXT,
     "email" TEXT,
@@ -87,3 +86,4 @@ CREATE TABLE "Candidate" (
     "tobaccoUser" TEXT,
     "totalDependentClaimAmount" TEXT,
     "travelLimit" TEXT,
+    "travelMethod" TEXT,

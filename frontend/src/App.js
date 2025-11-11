@@ -45,7 +45,6 @@ function App() {
             <Route
               path={`${ROUTES.careers}/:id`}
               element={<Career />} />
-            <Route
               path={`${ROUTES.apply}/:id`}
               element={<Apply />} />
             <Route

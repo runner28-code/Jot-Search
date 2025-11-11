@@ -46,7 +46,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
       src={ isFavorite ? favoriteIconFilled : favoriteIconOutline }
       className={addClass ? styles + addClass : styles}
       onClick={handleFavoriteClick}
-// Temp comment
     />
   )
 }
@@ -85,4 +84,5 @@ function getItemsByType(type) {
       return AuthService.getSavedCandidateIDs();
     default:
       return [];
+// Temp comment
   }

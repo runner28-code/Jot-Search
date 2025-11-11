@@ -9,5 +9,6 @@ services:
     container_name: intulsa_backend
     volumes:
       - '/usr/src/inTulsa-be'
+      - '/usr/src/inTulsa-be/node_modules'
     ports:
       - 5000:5000

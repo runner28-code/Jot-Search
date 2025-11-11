@@ -122,6 +122,7 @@ async function seedCategories() {
         name: "Other",
         enabled: true,
         externalID: 2000001,
+      },
       {
         name: "Sales & Biz Dev",
         enabled: true,
@@ -173,7 +174,6 @@ async function seedCompanies() {
   });
 }
 
-async function seedUsers() {
   await db.user.createMany({
     data: [
       {
@@ -204,3 +204,4 @@ async function seedUsers() {
         firstname: "candidate",
         lastname: "test",
         email: "candidate@aerovision.io",
+        /* Password: 123456 */

@@ -318,7 +318,6 @@ export class BullhornService {
           Accept: "*/*",
         },
       });
-      if (res.status === 200) {
         console.log("insertCompany success");
         const bullhornId = res.data.changedEntityId;
         const newDbCompany = {
@@ -903,3 +902,10 @@ export class BullhornService {
           return [];
         } else {
           console.log(url);
+          throw "error";
+        }
+      } catch (error: any) {
+        console.log(error.message, "\nrepeatNumber =", repeatErr);
+        await this.getNewAccessToken();
+        repeatErr++;
+      }

@@ -59,3 +59,4 @@ export class CategoryController {
         categories,
         total: categories?.length,
         message: null,
+      };

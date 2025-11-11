@@ -90,3 +90,4 @@
                     "value": "{SECRET_SENDGRID_SECRET}"
                 },
                 {
+                    "name": "MAIL_SENDER_EMAIL", 

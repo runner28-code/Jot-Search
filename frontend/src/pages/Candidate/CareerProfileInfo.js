@@ -28,6 +28,7 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
     </>
   )
 }
+
 CareerProfileInfo.propTypes = {
   candidateData: PropTypes.object.isRequired,
   handleCandidateUpdate: PropTypes.func.isRequired,

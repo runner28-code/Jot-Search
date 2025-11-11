@@ -32,7 +32,6 @@ export default function ResetPassword() {
       setMatch(false);
     }
 
-    if( password === confirmPassword ) {
       setMatch(true);
       const { password } = event.target;
       const res = await API.post(ROUTES.APIResetPassword, {
@@ -63,7 +62,6 @@ export default function ResetPassword() {
       )
     }
   }
-// Temp comment
 
   const renderError = () => {
     if ( error ) {

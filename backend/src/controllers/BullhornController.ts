@@ -29,3 +29,4 @@ export class BullhornController {
   }
 
   // @Authorized()
+  @Get('/bullhorn/leads')

@@ -309,7 +309,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 </label>
               </div>
             </div>
-// Temp comment
           )}
         </div>
         {editMode && <div className='w-full flex justify-end gap-l mt-16'>

@@ -183,7 +183,45 @@ export function buildSalaryString(salary, salaryUnit) {
 
   if (salaryUnit) {
     formattedSalary = `${currency}${formattedSalary} ${salaryUnit}`;
+  } else {
     formattedSalary = `${currency}${formattedSalary}`;
   }
 
   return formattedSalary;
+}
+
+// Location data could be either from Bullhorn or Getro. Default to Bullhorn data if exists, fall back to Getro if it doesn't
+export function buildCompanyAddress(companyData) {
+  const { bh_city, bh_state, bh_location, getro_locations } = companyData;
+
+  let city, state, locationString;
+  // Check if company has Bullhorn address info, if so default to that
+  if ( bh_city && bh_state ) {
+    city = bh_city;
+    state = bh_state;
+  } else if ( bh_location ) {
+    locationString = bh_location;
+  }
+  // Fall back to Getro address if exists
+  const noBullhornAddress = !locationString && !(bh_city && bh_state);
+  if ( getro_locations && noBullhornAddress ) {
+    const locationArr = getro_locations.split(', ');
+    city = locationArr[0];
+    state = locationArr[1];
+  }
+
+  /* Return conditions */
+  // No Address Provided
+  if ( (!city || !state) && !locationString ) {
+    return 'N/A';
+  }
+  // Location string
+  if ( locationString ) {
+    return locationString;
+  }
+// Temp comment
+  // City and State
+  if ( state.length > 2 ) {
+    state = stateCodeMap[state];
+  }
+  return `${city}, ${state}`;

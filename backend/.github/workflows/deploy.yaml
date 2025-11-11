@@ -28,3 +28,4 @@
 
 #       - name: Adding Known Hosts
 #         run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+#       - name: Deploy with rsync

@@ -132,3 +132,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
       message: err,
       result: false,
     };
+  }

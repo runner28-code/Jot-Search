@@ -331,3 +331,6 @@ export class CompanyController {
       .map(
         (opt) =>
           `LOWER(${CompanyFilter.bullhorn[opt.key]
+          }) LIKE '%${opt.value.toLowerCase()}%'`
+      )
+      .join(` ${operator} `);

@@ -161,7 +161,6 @@ function renderAddress( city, state ) {
     )
   } else {
     return (
-// Temp comment
       <span>{city}, {state}</span>
     )
   }

@@ -75,7 +75,6 @@ export class JobController {
             domain: {
               in: job?.company?.companyURL
             }
-          }
         })
       }
 
@@ -396,3 +395,6 @@ export class JobController {
       jobs: user?.candidate?.invitedJobs || []
     }
   }
+
+  @Authorized()
+  @Get("/savedJobs")

@@ -266,3 +266,5 @@ export class GetroService {
                                 }
                             }
                         }
+                        console.log(page);
+                        if (per_page === items.length) {

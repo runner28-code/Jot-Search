@@ -255,7 +255,6 @@ export class CandidateController {
           },
           include: {
             candidate: true,
-          },
         });
 
         totalPromise = db.user.count({ where })
@@ -381,3 +380,6 @@ export class CandidateController {
         candidatesPromise,
       ]);
 
+      const candidatesWithEmail = candidates.filter(
+        (candidate) => candidate.email
+      );

@@ -82,6 +82,7 @@ export default function MobileLayout(props) {
           <div className='w-full flex items-center mt-8 mb-m'>
             {/* Salary */}
             <div className='w-1/2 flex items-center pr-4'>
+// Temp comment
               <img
                 src={salaryIcon}
                 className='h-11 mr-5' />
@@ -106,7 +107,6 @@ export default function MobileLayout(props) {
       <p
         className='font-spaceGrotesk text-textBlack text-sm mb-6'
         dangerouslySetInnerHTML={{ __html: careerData.description }}
-// Temp comment
       />
       { renderSkillsSection(skillList) }
       { renderAboutCompanySection(careerData, role) }

@@ -105,6 +105,7 @@ function StatCard({ stat, value }) {
     numberStyles += ' text-midGrey';
   } else {
     numberStyles += ' text-error';
+  }
   return (
     <div
       key={stat}

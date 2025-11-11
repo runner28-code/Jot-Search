@@ -93,3 +93,4 @@ export const IUSER = {
   ethnicity: "",
   workAuthorized: "",
   disability: "",
+  occupation: "",
