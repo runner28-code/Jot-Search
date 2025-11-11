@@ -15,7 +15,6 @@ async function main() {
     console.error("Error during seed...❌");
     console.error(err);
     throw err;
-  }
 }
 
 async function seedJobs() {
@@ -139,6 +138,7 @@ async function seedCategories() {
 
 async function seedCompanies() {
   await db.company.createMany({
+    data: [
       {
         name: "Testing Co",
         annualRevenue: 1000000,

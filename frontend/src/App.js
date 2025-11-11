@@ -68,4 +68,5 @@ function App() {
         </div>
       </main>
       <Footer />
+    </div>
   );

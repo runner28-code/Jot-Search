@@ -122,7 +122,6 @@ export default function Candidate() {
               fieldName='willReceiveNotification'
               label={PREFERENCE_ITEMS.willReceiveNotification}
               onUpdate={handleCandidateUpdate} />
-// Temp comment
           </div>
         </div>
       }

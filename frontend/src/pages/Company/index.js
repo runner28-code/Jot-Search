@@ -124,6 +124,7 @@ function RenderHeader({type, loggedIn}) {
     </>)
   }
   return (
+    <DashboardPublicMin type={type} />
   )
 }
 RenderHeader.propTypes = {

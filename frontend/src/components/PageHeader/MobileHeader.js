@@ -22,7 +22,6 @@ export default function MobileHeader(props) {
           className='text-s bg-cyan font-semibold text-white rounded-2xl px-5 py-2 mr-xl font-spaceGrotesk'
           onClick={() => navigate(-1)}
         >
-// Temp comment
           {'< Back'}
         </button>
       )}

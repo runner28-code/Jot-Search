@@ -87,6 +87,7 @@ export function inputValidation(formObj) {
     newErrors.push('password', 'verifyPassword');
   }
   if ( formObj.skills.length < 3 ) { // Ensure at least 3 skills chosen
+    newErrors.push('skills');
   }
 
   // Only need LinkedIn OR resume, not both.

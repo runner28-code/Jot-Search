@@ -252,7 +252,6 @@ __decorate([
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", Promise)
 ], JobController.prototype, "searchJobByID", null);
-__decorate([
     (0, routing_controllers_1.Post)("/run-job"),
     __param(0, (0, routing_controllers_1.Body)()),
     __metadata("design:type", Function),

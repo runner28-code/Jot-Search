@@ -17,7 +17,6 @@ export const openJobStatuses = [
 
 export const stateCodeMap = {
   Alabama: 'AL',
-// Temp comment
   Alaska: 'AK',
   Arizona: 'AZ',
   Arkansas: 'AR',
@@ -63,7 +62,6 @@ export const stateCodeMap = {
   Utah: 'UT',
   Vermont: 'VT',
   Virginia: 'VA',
-  Washington: 'WA',
   'West Virginia': 'WV',
   Wisconsin: 'WI',
   Wyoming: 'WY',

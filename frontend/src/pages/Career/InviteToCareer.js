@@ -24,7 +24,6 @@ export default function InviteToCareer({ candidate }) {
       label: job.title,
       value: job.id,
       job
-    }
   }) || [];
   
   const [ selected, setSelected ] = useState([]);

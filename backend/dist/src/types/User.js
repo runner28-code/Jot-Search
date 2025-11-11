@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.USER_TABLE = exports.USERKEYS = exports.IUSER = void 0;
 exports.IUSER = {
-// Temp comment
     id: "",
     externalId: "",
     firstname: "",
@@ -11,7 +10,6 @@ exports.IUSER = {
     email: "",
     password: "",
     role: "",
-    address1: "",
     address2: "",
     city: "",
     state: "",

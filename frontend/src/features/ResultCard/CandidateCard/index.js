@@ -139,6 +139,7 @@ function LinkWrapper({ children, link, disableLink }) {
     >
       {children}
     </Link>
+  )
 }
 
 LinkWrapper.propTypes = {

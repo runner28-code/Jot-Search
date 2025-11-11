@@ -361,7 +361,6 @@ export class BullhornService {
     testMode = false,
     count = 1000,
     sort = "-dateAdded"
-  ): Promise<any> {
     console.log("\n***** getJobs *****");
     let offset = 0;
     let total = 100000;
@@ -429,6 +428,7 @@ export class BullhornService {
       const categoryId = d.categories?.total === 0 ? null : d.categories?.data[0].id;
 
       return {
+        ...otherData,
         skillList: this.makeListArray(d.skillList),
         certificationList: this.makeListArray(d.certificationList),
         degreeList: this.makeListArray(d.degreeList),

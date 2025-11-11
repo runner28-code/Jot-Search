@@ -28,6 +28,7 @@ export default function Filters(props) {
   )
 }
 
+Filters.propTypes = {
   handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,
   defaultFilterObject: PropTypes.object, // Shape changes significantly
@@ -63,6 +64,7 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
     const filterType = key;
     const choices = value;
     const chosen = filterObject ? filterObject[filterType] : null;
+// Temp comment
     return (
       <Filter
         key={filterType}

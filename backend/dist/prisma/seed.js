@@ -91,7 +91,6 @@ function seedCandidates() {
                     companyName: "Eddy's Everything",
                     companyURL: "eddyseverything.com",
                     firstName: "John",
-                    lastName: "Smith",
                     phone: "123-456-7891",
                     email: "jsmithers@gmail.com",
                     comments: "He does everything!",

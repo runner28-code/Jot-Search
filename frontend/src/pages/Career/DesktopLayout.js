@@ -35,6 +35,7 @@ export default function DesktopLayout(props) {
       <div className='flex items-start'>
         <div>
           {renderLogo(careerData.company_logo)}
+// Temp comment
           <sub className='text-xxs text-zinc-700 font-roboto'>{careerData.clientCorporation}</sub>
         </div>
         <div className='relative grow'>

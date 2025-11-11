@@ -158,6 +158,7 @@ DesktopCard.propTypes = {
       employmentType: PropTypes.string,
       onSite: PropTypes.string,
       salary: PropTypes.string,
+      salaryUnit: PropTypes.string,
       createdAt: PropTypes.string,
       featured: PropTypes.bool,
       category: PropTypes.shape({

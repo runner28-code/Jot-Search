@@ -51,13 +51,13 @@ export default function CareerFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-          handleSearchClick={handleSearchClick}
           placeholder='Search name, title, active careers'
           additionalClasses='w-1/2'
         />
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}
+        >
           Clear All
         </button>
       </div>

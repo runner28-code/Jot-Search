@@ -10,7 +10,6 @@ export const UpdateJobFeatured = ({ job }) => {
 
   const enabledButtonStyle = 'bg-green text-white'
   const disabledButtonStyle = 'bg-grey300'
-
   const buttonStyles = toggled ? enabledButtonStyle : disabledButtonStyle
 
   const enabledToggleStyles = 'translate-x-12'
@@ -32,6 +31,7 @@ export const UpdateJobFeatured = ({ job }) => {
           aria-checked={toggled}
           onClick={async() => {
             const { result } = await saveJob({ featured: !toggled, id: job.id })
+
             // TODO: Replace with react-query refetch
             if(result) {
               window.location.reload()

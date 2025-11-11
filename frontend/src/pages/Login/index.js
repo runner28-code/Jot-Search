@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
@@ -12,7 +13,6 @@ export default function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email, password } = event.target;
-// Temp comment
     const res = await API.post(ROUTES.APIlogin, {
       email: email.value,
       password: password.value,

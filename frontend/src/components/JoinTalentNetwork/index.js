@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+// Temp comment
 import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -17,7 +18,6 @@ export default function JoinTalentNetwork() {
               Join the InTulsa Talent Network
             </h1>
             <p className='text-sm leading-[3rem] text-softWhite mt-8'>
-// Temp comment
               Build your profile with the type of opportunity you want to attract and next exclusively with our network. Receive email alerts that make you first to know about relevant new opportunities, based on your preferences.
             </p>
             <Link

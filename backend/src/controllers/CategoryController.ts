@@ -2,6 +2,7 @@ import {
   Body,
   Get,
   JsonController,
+  Post,
   QueryParam,
 } from "routing-controllers";
 import { getCategoriesByFilter } from "../services/Category";
@@ -36,7 +37,6 @@ export class CategoryController {
       return {
         category: undefined,
         message: error,
-      };
     }
   }
 

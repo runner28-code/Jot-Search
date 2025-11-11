@@ -96,6 +96,7 @@ export default function RegistrationForm() {
       setTimeout(() => {
         setFormObj(defaultState);
         setSubmissionObject({
+          loading: false,
           success: false,
         });
       }, 2000);

@@ -30,7 +30,6 @@ export default function InviteCandidates({ job }) {
 
   const [selected, setSelected] = useState([]);
   const deleteItem = (e, value) => {
-    e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }
 

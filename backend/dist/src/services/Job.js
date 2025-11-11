@@ -61,6 +61,5 @@ const sanitizeJob = (job) => {
         const typedKey = key;
         if (!Job_1.ALLOWED_JOB_KEYS.has(typedKey)) {
             delete newJob[typedKey];
-        }
     });
     return newJob;

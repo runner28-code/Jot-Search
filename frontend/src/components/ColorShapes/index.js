@@ -8,5 +8,6 @@ export default function ColorShapes () {
     <div className='relative w-full'>
       <div className='bg-blueSquare bg-amber-400 absolute bottom-[-72px] right-[72px] w-12 h-12' />
       <div className='bg-blueSquare bg-pink-500 absolute bottom-[-32px] right-[50px] w-6 h-6' />
+// Temp comment
     </div>
   </>)

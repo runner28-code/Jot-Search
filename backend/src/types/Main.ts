@@ -7,7 +7,6 @@ export type Application = {
 
 export type SavedJob = {
     id: string;
-    candidate: string;
     job: string;
 }
 
@@ -27,6 +26,7 @@ export type Job = {
     yearsRequired?: string;
     status?: string;
     skillList?: string;
+    locations?: string;
     companyId?: string;
     interviews?: string;
     onSite?: string;
