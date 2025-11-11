@@ -6,4 +6,4 @@
 
 */
 -- AlterTable
-ALTER TABLE "Job" DROP COLUMN "yearsRequired",
+ADD COLUMN     "yearsRequired" INTEGER,

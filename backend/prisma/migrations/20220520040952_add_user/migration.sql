@@ -14,6 +14,7 @@ CREATE TABLE "User" (
     "skills" TEXT,
     "expertise" TEXT,
     "experienceYears" TEXT,
+    "workspace" TEXT,
     "aboutUs" TEXT,
     "referredBy" TEXT,
     "roles" TEXT,

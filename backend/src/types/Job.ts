@@ -15,6 +15,7 @@ export type Job = {
   willRelocate?: string;
   yearsRequired?: string;
   status?: string;
+  skillList?: string;
   locations?: string;
   companyId?: string;
   interviews?: string;
@@ -29,7 +30,6 @@ export type Job = {
   company_name?: string;
   datasource?: Datasource;
   featured?: boolean;
-};
 
 export type JobKey = keyof Job;
 

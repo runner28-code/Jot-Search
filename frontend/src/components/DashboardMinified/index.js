@@ -8,6 +8,7 @@ import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
 export default function DashboardMinified({ location }) {
+  const loggedIn = AuthService.loggedIn();
 
   if( loggedIn ) {
     return (
@@ -49,7 +50,6 @@ function LinkSwap ({ location, loggedIn }) {
       <Link
         className='text-white flex items-center'
         to={ROUTES.companies}>
-        <span className='underline'>Back</span>
       </Link>
     )
   }

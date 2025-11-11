@@ -61,6 +61,7 @@ export default function NavSearch({ placeholder }) {
 
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
+// Temp comment
     setSearchTerm( searchTerm );
     setForceHidden( false );
   }
@@ -131,6 +132,7 @@ function renderResultsContainer( results, searchTerm ) {
 function renderResults( results ) {
   if ( results.loading ) {
     return <LoadingSpinner
+      height='75'
       width='75'
     />;
   }

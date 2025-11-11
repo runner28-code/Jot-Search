@@ -84,7 +84,6 @@ export default function Dropdown(props) {
 
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setIsOpen);
-  }, [isOpen]);
   
   const renderValue = (type, name, currentChosen, placeholder) => {
     if (type === MULTI_SELECT && currentChosen.length > 0) {

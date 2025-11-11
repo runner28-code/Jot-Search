@@ -296,6 +296,7 @@ export const skills = [
   'PHP',
   'PMP',
   'Policy Development',
+  'Portuguese',
   'PostgreSQL',
   'Power BI',
   'PowerPoint',

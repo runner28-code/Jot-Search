@@ -1,4 +1,5 @@
 import { Navigate } from 'react-router-dom';
+// Temp comment
 import headerIcon from '../../assets/icons/user-folder.png';
 import PageHeader from '../../components/PageHeader';
 import AdvancedSearch from '../../features/AdvancedSearch';
@@ -12,6 +13,7 @@ export default function Candidates() {
   }
 
   return (
+    <section className='mr-20'>
       <PageHeader
         headerText='Candidates List'
         icon={headerIcon}

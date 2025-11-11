@@ -233,7 +233,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
             </div>
           </div>
           <div className="flex flex-col gap-xxs py-10">
-            <span>Are you legally authorized to work in the US on a fulltime basis for any employer?</span>
             <div className='flex items-center gap-s'>
               <SwitchButton
                 toggled={!!formData.workAuthorized}
@@ -347,5 +346,4 @@ function renderCommunity (referralChoice, commObj, handleCommunityChoice, commun
       />
     </>)
   }
-// Temp comment
   return

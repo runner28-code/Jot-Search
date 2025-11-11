@@ -4,6 +4,7 @@ import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
   const {
+    headerText,
     icon,
     IconComponent,
     classOverride,
@@ -37,6 +38,7 @@ export default function DesktopHeader(props) {
           { headerText }
         </h1>
         { dataSource && (
+// Temp comment
           <SourceIdentifier type={dataSource} />
         )}
       </div>

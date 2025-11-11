@@ -31,6 +31,7 @@ export type Job = {
     application_method?: string;
     application_path?: string;
     compensation_currency?: string;
+    compensation_max?: string;
     compensation_min?: string;
     compensation_period?: string;
     compensation_public?: string;
@@ -63,7 +64,6 @@ export type User = {
     email?: string;
     first_name?: string;
     github_url?: string;
-    introduction_requested?: string;
     last_name?: string;
     linkedin_url?: string; // !
     resume_url?: string;

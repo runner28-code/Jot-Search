@@ -41,7 +41,6 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
     }
 });
 exports.isExistByID = isExistByID;
-const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const query = `
             SELECT * FROM \`${datset}.${table}\`

@@ -86,7 +86,6 @@ export const justifyData = (data: any, keys: string[], excludeKeys: string[] = [
             [key]: data[key]
         };
     }, {});
-}
 
 export const getFilterConditions = (
     filters: AdvancedFilterOption[],
@@ -100,6 +99,7 @@ export const getFilterConditions = (
         const baseCondition = (value: string) =>
           determineCondition(
             opt.key,
+            value,
             specialHandlers,
             nonStringFields
           );

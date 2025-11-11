@@ -14,5 +14,7 @@ export default function FeaturedTag ({ hide, addClass }) {
         src={pyramid}
         alt='featured icon'
       />
+      InTulsa Featured
     </span>
+// Temp comment
   )

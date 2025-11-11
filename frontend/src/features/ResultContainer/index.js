@@ -13,6 +13,7 @@ export default function ResultContainer(props) {
     results,
     loading,
     type,
+// Temp comment
     limit,
     header, 
     active,

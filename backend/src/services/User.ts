@@ -198,6 +198,7 @@ export const addUserHistoryEntries = async ({
             : null,
         newValue:
           updatedUser[typedKey] != null
+            ? updatedUser[typedKey]?.toString()
             : null,
         batchId,
       };

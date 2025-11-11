@@ -26,6 +26,7 @@ const utils_1 = require("./utils");
 const fs_1 = __importDefault(require("fs"));
 dotenv_1.default.config();
 const ALLOWED_UPLOAD_FOLDERS = ["resumes", "avatars"];
+const multerStorage = multer_1.default.diskStorage({
     destination: (req, file, cb) => {
         const folder = req.body.type || "resumes";
         const path = __dirname + `/../uploads/${folder}`;

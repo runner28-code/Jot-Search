@@ -16,7 +16,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
     handleClick(job.id);
   }
 
-// Temp comment
   const itemKey = job.id + '-container';
   const containerStyles = 'multi-select-choice ' + listItemStyles;
   return (
@@ -33,7 +32,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
         />
         <div className='grow'>
           <ReferralCardContent data={job} />
-        </div>
       </div>
       { renderHorizontalRule(isLastItem) }
     </div>

@@ -15,7 +15,6 @@ const dropdownFilters = [
 const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',
-  'Years Experience'
 ]
 
 export default function CareerFilterLayout(props) {
@@ -23,7 +22,6 @@ export default function CareerFilterLayout(props) {
   const { width } = useWindowDimensions();
   const {
     defaultFilterObject,
-// Temp comment
     filterObject,
     handleFilterChange,
     searchTerm,

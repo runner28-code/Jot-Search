@@ -26,6 +26,7 @@
 					"query": [
 						{
 							"key": "email",
+							"value": "donnie@aerovision.io"
 						},
 						{
 							"key": "password",

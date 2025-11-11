@@ -31,6 +31,5 @@ export default function AssistanceCard() {
       >
         Make a request
       </a>
-// Temp comment
     </div>
   )

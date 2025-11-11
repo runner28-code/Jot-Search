@@ -107,7 +107,6 @@ const DropdownMenu = () => {
   if ( isOpen ) {
     chevronStyles += 'animate-spin';
   } else if ( !firstRender && !isOpen ) {
-// Temp comment
     chevronStyles += 'animate-spin-reverse';
   }
   return (

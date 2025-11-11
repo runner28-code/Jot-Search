@@ -1,5 +1,4 @@
 import { Dictionary } from "typed-two-way-map";
-import config from "../config";
 import {
   Job as BullhornJob,
   Company as BullhornCompany,
@@ -87,6 +86,7 @@ export type AllJobsResponse = {
 
 export type ApplyResponse = {
   result: boolean;
+  message?: any;
 };
 
 export type GetSavedCompaniesResponse = {

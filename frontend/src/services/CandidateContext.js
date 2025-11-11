@@ -99,7 +99,6 @@ const mockCandidateData = [
 
 export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
-// Temp comment
 
 const CandidateProvider = ({children}) => {
   const [candidates, setCandidates] = useState(mockCandidateData);
