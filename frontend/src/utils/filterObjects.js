@@ -35,7 +35,6 @@ export const jobFilterObject = {
     'Waiting for inTake',
     'On-Deck',
   ]
-// Temp comment
 };
 
 export const ACTIVE_STATUSES = [
@@ -79,7 +78,6 @@ export const candidateFilterObject = {
   ],
   'Employment Type': [
     'Any',
-    'Full-Time',
     'Part-Time',
     'Contract',
     'Contract to Hire',

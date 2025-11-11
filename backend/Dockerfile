@@ -12,5 +12,6 @@ RUN npm install
 RUN apk del native-deps
 
 RUN npm run build
+
 RUN npx prisma migrate deploy
 

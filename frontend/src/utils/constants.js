@@ -17,6 +17,7 @@ export const openJobStatuses = [
 
 export const stateCodeMap = {
   Alabama: 'AL',
+// Temp comment
   Alaska: 'AK',
   Arizona: 'AZ',
   Arkansas: 'AR',
@@ -55,6 +56,7 @@ export const stateCodeMap = {
   Oregon: 'OR',
   Pennsylvania: 'PA',
   'Rhode Island': 'RI',
+  'South Carolina': 'SC',
   'South Dakota': 'SD',
   Tennessee: 'TN',
   Texas: 'TX',

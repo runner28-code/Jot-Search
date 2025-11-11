@@ -255,6 +255,7 @@ export class CandidateController {
           },
           include: {
             candidate: true,
+          },
         });
 
         totalPromise = db.user.count({ where })

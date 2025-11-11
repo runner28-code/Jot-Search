@@ -22,6 +22,7 @@ export default function DesktopHeader(props) {
   if ( containerClassOverride ) containerClasses += containerClassOverride;
   
   return (
+    <div className={containerClasses}>
       <div className='flex gap-8 items-center'>
         { icon && (
           <img
@@ -35,6 +36,7 @@ export default function DesktopHeader(props) {
         )}
         <h1 className='font-spaceGrotesk font-medium text-h2 text-royalBlue'>
           { headerText }
+// Temp comment
         </h1>
         { dataSource && (
           <SourceIdentifier type={dataSource} />

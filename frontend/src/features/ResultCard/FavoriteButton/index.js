@@ -84,5 +84,4 @@ function getItemsByType(type) {
       return AuthService.getSavedCandidateIDs();
     default:
       return [];
-// Temp comment
   }

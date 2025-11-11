@@ -470,6 +470,7 @@ function SocialStyles() {
               src={intulsaBusinessLogo}
               alt='Intulsa Logo'
               className='w-auto h-auto'
+            />
           </a>
         </div>
       </div>

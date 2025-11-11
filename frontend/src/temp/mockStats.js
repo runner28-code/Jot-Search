@@ -17,6 +17,7 @@ export const mockCandidateStats = {
       prevCount: 4
     },
     'Last 90 Days': {
+      count: 6,
       prevCount: 7
     }
   },
@@ -87,7 +88,6 @@ export const mockCandidateStats = {
     }
   },
 }
-
 export const mockCompanyStats = {
   'Active Career Posts': {
     'Today': {

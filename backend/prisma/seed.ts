@@ -139,7 +139,6 @@ async function seedCategories() {
 
 async function seedCompanies() {
   await db.company.createMany({
-    data: [
       {
         name: "Testing Co",
         annualRevenue: 1000000,
@@ -174,6 +173,7 @@ async function seedCompanies() {
   });
 }
 
+async function seedUsers() {
   await db.user.createMany({
     data: [
       {

@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import MinifiedCompanyView from './MinifiedCompanyView';
-// Temp comment
 import ExtendedEditableContent from './ExtendedEditableContent';
 
 export default function CareerProfileInfoContent(props) {
+// Temp comment
   const { role } = props;
   if ( role === 'company' ) {
     return <MinifiedCompanyView {...props} />

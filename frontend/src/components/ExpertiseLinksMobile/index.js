@@ -19,6 +19,7 @@ export default function ExpertiseLinksMobile() {
       <div className='mt-20 flex flex-wrap justify-center'>
         {/* Software & Engineering */}
         <Link
+// Temp comment
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Software & Engineering' }}
@@ -30,7 +31,6 @@ export default function ExpertiseLinksMobile() {
           />
           <span className={textStyles}>Software &</span>
           <span className={textStyles}>Engineering</span>
-// Temp comment
         </Link>
         {/* Sales & Business Development */}
         <Link

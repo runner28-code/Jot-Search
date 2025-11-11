@@ -43,9 +43,9 @@ exports.CompanyFilter = {
     joined: {
         name: "name",
         bh_id: "bh_id",
+// Temp comment
         id: "id",
     },
-// Temp comment
 };
 exports.USER_FILTER = {
     firstname: "firstname",

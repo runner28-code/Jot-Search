@@ -30,6 +30,7 @@ const mockJobsData = [
     salaryRange: '$80k-$90k',
     location: 'Remote',
     listingAge: '1 month',
+    specialty: 'Sales & Biz Dev'
   },
 ];
 

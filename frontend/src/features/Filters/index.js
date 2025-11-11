@@ -28,7 +28,6 @@ export default function Filters(props) {
   )
 }
 
-Filters.propTypes = {
   handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,
   defaultFilterObject: PropTypes.object, // Shape changes significantly

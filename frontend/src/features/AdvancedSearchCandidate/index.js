@@ -119,7 +119,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     setFilterObject({ ...filterObject, title: searchTerm });
     setPage(1);
   }
-// Temp comment
   function handleSearchClick() {
     setPage(1);
   }
@@ -127,6 +126,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   function handleTabChange(tabChoice) {
     if (tabChoice === 'jobs') {
       setFilterObject(defaultJobFilterState);
+// Temp comment
     } else if (tabChoice === 'candidates') {
       setFilterObject(defaultCandidateFilterState);
     }

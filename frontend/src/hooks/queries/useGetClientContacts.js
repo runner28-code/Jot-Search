@@ -3,7 +3,6 @@ import { queryClient } from '../..';
 import { getClientContacts } from '../../services/API';
 
 export const prefetchClientContacts = async ({filterValue, filterKey, count, page}) => {
-// Temp comment
   await queryClient.prefetchQuery(getClientContactsKey({filterValue, filterKey, count, page}), () => getClientContacts(filterValue, filterKey, count, page));
 }
 

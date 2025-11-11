@@ -203,6 +203,7 @@ export type Candidate = {
     email2?: string;
     email3?: string;
     employeeType?: string;
+    employmentPreference?: string;
     ethnicity?: string;
     experience?: string;
     externalID?: string;

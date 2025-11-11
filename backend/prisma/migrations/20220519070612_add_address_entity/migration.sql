@@ -1,4 +1,3 @@
--- CreateTable
 CREATE TABLE "Address" (
     "id" TEXT NOT NULL,
     "address1" TEXT NOT NULL,
@@ -9,4 +8,5 @@ CREATE TABLE "Address" (
     "timezone" TEXT,
     "countryCode" INTEGER NOT NULL,
     "countryName" TEXT NOT NULL,
+    "countryID" INTEGER NOT NULL,
 

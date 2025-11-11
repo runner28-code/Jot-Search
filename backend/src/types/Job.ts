@@ -22,7 +22,6 @@ export type Job = {
   onSite?: string;
   salary?: string;
   salaryUnit?: string;
-  startDate?: string;
   type?: string;
   isDeleted?: string;
   postedAt?: string;
@@ -52,6 +51,7 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "skillList",
   "locations",
   "companyId",
+  "interviews",
   "onSite",
   "salary",
   "salaryUnit",

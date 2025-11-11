@@ -334,7 +334,6 @@ export async function registerUser(userObject) {
   } catch (err) {
     console.log(err);
     throw err;
-// Temp comment
   }
 }
 //* UPLOAD RESUME/AVATAR

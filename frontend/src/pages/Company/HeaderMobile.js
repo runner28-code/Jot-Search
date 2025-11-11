@@ -49,7 +49,6 @@ function HeaderContent({ companyData }) {
                 />
               </div> 
             </div>
-          </div>
         </div>
 
         <FavoriteButton

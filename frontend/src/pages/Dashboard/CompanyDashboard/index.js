@@ -12,6 +12,7 @@ export default function CompanyDashboard({userType}) {
   return (
     <>
       <PageHeader
+        headerText={profile.firstname + ' Dashboard'}
         icon={gaugeIcon}
       />
       <Stats

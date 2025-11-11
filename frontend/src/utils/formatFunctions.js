@@ -197,7 +197,6 @@ export function buildCompanyAddress(companyData) {
   let city, state, locationString;
   // Check if company has Bullhorn address info, if so default to that
   if ( bh_city && bh_state ) {
-    city = bh_city;
     state = bh_state;
   } else if ( bh_location ) {
     locationString = bh_location;
@@ -219,7 +218,6 @@ export function buildCompanyAddress(companyData) {
   if ( locationString ) {
     return locationString;
   }
-// Temp comment
   // City and State
   if ( state.length > 2 ) {
     state = stateCodeMap[state];

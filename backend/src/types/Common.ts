@@ -30,6 +30,7 @@ export const DATASET_MAIN = config.mainDatasetID || "";
 
 // Common
 export enum DataSource {
+  BULLHORN = "bullhorn",
   GETRO = "getro",
   UNKNOWN = "unknown",
 }

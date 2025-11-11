@@ -113,6 +113,7 @@ export default function DesktopLayout(props) {
     {renderDescription(role, navigate, careerData.clientCorporation, skillList, careerData)}
     <OtherCareers
       companyId={careerData.companyId}
+      companyName={careerData.clientCorporation}
       currentCareerId={careerData.externalId}
     />
   </>)

@@ -310,7 +310,6 @@ const job_filter_exclude_keys = [
     "psychiatric",
     "psychiatrist",
     "psychiatry",
-    "psychologist",
     "psychology",
     "public facilities",
     "public safety",

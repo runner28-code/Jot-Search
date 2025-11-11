@@ -118,6 +118,7 @@ NavSearch.propTypes = {
 
 function renderResultsContainer( results, searchTerm ) {
   if ( !searchTerm || results.forceHidden ) { // if no searchTerm, no results to display
+    return null;
   }
 
   return (

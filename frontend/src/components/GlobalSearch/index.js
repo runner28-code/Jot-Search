@@ -1,4 +1,3 @@
-import { useState, useCallback, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import debounce from 'lodash/debounce';
@@ -91,6 +90,7 @@ export default function GlobalSearch({ placeholder }) {
         <SearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
+          placeholder={ placeholder } 
           alternateStylesObject={ stylesObject } />
       </div>
       { renderResultsContainer( results, searchTerm ) }

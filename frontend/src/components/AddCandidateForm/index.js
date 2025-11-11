@@ -40,7 +40,6 @@ export default function RegistrationForm() {
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
-// Temp comment
   });
 
   const navigate = useNavigate();
@@ -97,7 +96,6 @@ export default function RegistrationForm() {
       setTimeout(() => {
         setFormObj(defaultState);
         setSubmissionObject({
-          loading: false,
           success: false,
         });
       }, 2000);

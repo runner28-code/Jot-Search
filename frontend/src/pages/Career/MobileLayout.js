@@ -82,7 +82,6 @@ export default function MobileLayout(props) {
           <div className='w-full flex items-center mt-8 mb-m'>
             {/* Salary */}
             <div className='w-1/2 flex items-center pr-4'>
-// Temp comment
               <img
                 src={salaryIcon}
                 className='h-11 mr-5' />
@@ -92,7 +91,6 @@ export default function MobileLayout(props) {
         </div>
 
         {/* Coordinator Status */}
-        {
           role === 'coordinator' && (
             <div className='flex flex-col space-y-8'>
               <UpdateJobStatus job={careerData} />

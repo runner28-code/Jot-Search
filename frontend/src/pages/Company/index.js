@@ -85,6 +85,7 @@ export default function Company() {
           </div>
           { renderSectorList(companyData, width, stylesObject) } 
           <hr className={stylesObject.hrStyles + 'mt-4'} />
+          {/* Funding */}
           <div className='p-6'>
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>Funding</h4>
             { renderCompanyDescription(companyData.funding, 'text-md mb-10 leading-[32px]') }
@@ -123,7 +124,6 @@ function RenderHeader({type, loggedIn}) {
     </>)
   }
   return (
-    <DashboardPublicMin type={type} />
   )
 }
 RenderHeader.propTypes = {
