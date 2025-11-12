@@ -305,3 +305,5 @@ export type Lead = {
     fax2?: string;
     fax3?: string;
     firstName?: string;
+    isAnonymized?: string;
+    isDayLightSavingsTime?: string;

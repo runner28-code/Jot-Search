@@ -7,6 +7,7 @@
 
 */
 -- AlterTable
+ALTER TABLE "Job" DROP COLUMN "skillList",
 ADD COLUMN     "skillList" TEXT[],
 DROP COLUMN "degreeList",
 ADD COLUMN     "degreeList" TEXT[],

@@ -26,6 +26,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     }
     navigate(ROUTES.careers, { state: { ...params } });
   }
+
   function handleFilterChange(name, value) {
     setFilterState({
       ...filterState,

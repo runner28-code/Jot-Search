@@ -71,6 +71,7 @@ input[type=checkbox] {
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
+    line-height: normal;
     letter-spacing: normal;
   }
   .HeadersH5-or-Heading-small-15rem {
@@ -186,3 +187,4 @@ input[type=checkbox] {
     font-size: 12px;
     font-weight: normal;
     font-stretch: normal;
+    font-style: normal;

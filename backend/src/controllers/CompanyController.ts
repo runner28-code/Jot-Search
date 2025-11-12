@@ -100,7 +100,6 @@ export class CompanyController {
       return {
         result: false,
         error: "Please check email, email maybe invalid one",
-      };
     }
   }
 
@@ -334,3 +333,5 @@ export class CompanyController {
           }) LIKE '%${opt.value.toLowerCase()}%'`
       )
       .join(` ${operator} `);
+    const result = await BigQueryService.selectQuery(
+      _dataset,

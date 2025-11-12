@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
 export const ethnicityChoices = Object.values(ethnicityMap);
 export const genderChoices = Object.values(genderMap);
 export const veteranStatusChoices = Object.values(veteranStatusMap);
-export const disabilityChoices = Object.values(disabilityMap);
 export const jobReferralChoices = [
   'LinkedIn',
   'Indeed',
@@ -114,7 +113,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
 }
 
 export function updateCandidateIfNeeded(applicationObject, originalObject) {
-// Temp comment
   const valuesToUpdate = {};
   for (let key in applicationObject) {
     if (applicationObject[key] !== originalObject[key]) {

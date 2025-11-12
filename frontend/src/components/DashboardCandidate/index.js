@@ -42,6 +42,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
         </div>
       </div>
     </div>
+// Temp comment
     <div className='bg-sky-500 flex py-8 px-6 items-center text-white font-roboto'>
       <div className='flex items-center justify-start basis-5/6 gap-[10px]'>
         <img src={filterIcon} />
@@ -53,6 +54,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
           onClick={() => togglePassState()}
         >
           {!toggle ? <ChevronDown /> : <ChevronUp />}
+        </button>
       </div>
     </div>
   </>)

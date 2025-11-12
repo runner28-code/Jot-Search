@@ -5,6 +5,7 @@
     "containerDefinitions": [
         {
             "name": "intulsa-frontend-container-prod",
+            "image": "site-frontend:prod",
             "cpu": 1024,
             "memory": 2048,
             "portMappings": [
@@ -29,3 +30,4 @@
                     "value": "true"
                 }
             ]
+        }

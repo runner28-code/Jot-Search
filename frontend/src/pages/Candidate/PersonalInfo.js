@@ -102,7 +102,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
         <div className='flex justify-between items-center'>
           <h3 className='text-h5 font-medium mb-15 text-black70% font-spaceGrotesk'>Personal Info</h3>
           { !editMode && renderEditIcon(candidateData, setEditMode)}
-        </div>
         
         <div className='w-full px-l'>
           <div className='vw-1280:flex flex-col'>
@@ -233,6 +232,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
             </div>
           </div>
           <div className="flex flex-col gap-xxs py-10">
+            <span>Are you legally authorized to work in the US on a fulltime basis for any employer?</span>
             <div className='flex items-center gap-s'>
               <SwitchButton
                 toggled={!!formData.workAuthorized}

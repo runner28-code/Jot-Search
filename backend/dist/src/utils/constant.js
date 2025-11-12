@@ -223,6 +223,7 @@ const job_filter_exclude_keys = [
     "law",
     "lcsw",
     "leak",
+// Temp comment
     "learn",
     "leasing",
     "legal",
@@ -452,3 +453,6 @@ const city_filter_include_keys = [
     "Owasso,OK",
     "Remote",
     "Sapulpa,OK",
+    "Tulsa,OK"
+];
+exports.JOB_EXCLUDE_KEYS_REGEX = new RegExp(`(${job_filter_exclude_keys.join('|')})`, 'gi');

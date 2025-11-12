@@ -452,3 +452,28 @@ function formatCandidateFilters(filtersArr) {
     });
   }
   return formattedFilters;
+}
+
+export const sendJobsToCandidates = async ({ candidateIds, jobIds }) => {
+  const response = await API.post(ROUTES.APIsendJobsToCandidates, { candidateIds, jobIds });
+  if (response.result === false) {
+    throw new Error(response.error);
+  }
+  return response.data;
+}
+
+export const sendCandidatesToCompanies = async ({ candidateIds, companyIds }) => {
+  const response = await API.post(ROUTES.APIsendCandidatesToCompanies, { candidateIds, companyIds });
+  if (response.result === false) {
+    throw new Error(response.error);
+  }
+  return response.data;
+}
+
+export async function getCompanyQuickStats(duration) {
+  const { data } = await API.get(ROUTES.companyQuickStats, {
+    params: {
+      duration
+    }
+  });
+  return data.data;

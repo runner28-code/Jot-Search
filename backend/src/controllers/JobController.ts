@@ -183,7 +183,6 @@ export class JobController {
 
       // console.log({ jobs });
 
-      return {
         jobs: extendedJobs,
         total,
         message: null,
@@ -399,3 +398,5 @@ export class JobController {
 
   @Authorized()
   @Get("/savedJobs")
+  async savedJobs(@QueryParam("candidate") candidate: string) {
+    return await getSavedJobs(candidate);

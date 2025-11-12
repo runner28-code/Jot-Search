@@ -2,6 +2,7 @@ import { useLocation } from 'react-router-dom';
 // import { MdOutlineNotificationsActive as AlertIcon } from 'react-icons/md';
 import { ImProfile as ApplicationIcon } from 'react-icons/im';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { BsFillTelephoneFill as ContactIcon } from 'react-icons/bs';
 import { FiUserPlus as AddUserIcon } from 'react-icons/fi';
 import {
@@ -36,7 +37,6 @@ export const choices = {
     link: ROUTES.companies,
   },
   candidates: {
-    label: 'Candidates',
     icon: CandidatesIcon,
     link: ROUTES.candidates,
   },

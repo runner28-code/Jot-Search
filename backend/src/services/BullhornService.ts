@@ -724,7 +724,6 @@ export class BullhornService {
               address_city: d.address?.city || null,
               address_state: d.address?.state || null,
               address_zip: d.address?.zip || null,
-              address_country_id: d.address?.countryID || null,
               leads: d.leads?.data.map((lead: any) => lead.id).join(" | "),
               primarySkills: d.primarySkills?.data
                 .map((skill: any) => skill.name)
@@ -910,3 +909,8 @@ export class BullhornService {
         await this.getNewAccessToken();
         repeatErr++;
       }
+    }
+  }
+
+  async syncUserTppToBullhorn(user: User) {
+    console.log("\n***** Adding user on bullhorn *****");

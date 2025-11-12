@@ -20,6 +20,7 @@ export default function AccountRecovery() {
       setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);
+    }
   };
   function setType(response, condition) {
     setCondition(condition);

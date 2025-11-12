@@ -17,11 +17,9 @@ export default function MobileHeader(props) {
       { icon && (
         <img
           src={ icon }
-// Temp comment
           alt='header icon'
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
-      )}
       { IconComponent && (
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />
       )}

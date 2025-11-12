@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
@@ -17,6 +16,7 @@ export default function NavMenu() {
 
   function handleOptionClick(e) {
     setMenuOpen(false);
+// Temp comment
     if ( e.currentTarget.id === 'logout' ) {
       AuthService.logout();
     }

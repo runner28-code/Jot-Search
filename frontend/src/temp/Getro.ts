@@ -1,7 +1,6 @@
 export type Company = {
     id: string;
     angellist_url?: string;
-    approx_employees?: string;
     crunchbase_url?: string;
     description?: string;
     domain?: string;
@@ -64,6 +63,7 @@ export type User = {
     email?: string;
     first_name?: string;
     github_url?: string;
+    introduction_requested?: string;
     last_name?: string;
     linkedin_url?: string; // !
     resume_url?: string;
@@ -74,3 +74,4 @@ export type User = {
     verified?: string;
     website_url?: string;
     invited?: string;
+    invited_by?: string;

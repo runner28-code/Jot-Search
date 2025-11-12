@@ -28,7 +28,6 @@ export default function CompanyCard({ data }) {
       />
     )
   }
-  return (
     <div
       className='relative w-full'
       key={data.id}
@@ -93,7 +92,6 @@ export default function CompanyCard({ data }) {
           </div>
         </div>
       </Link>
-// Temp comment
       <FavoriteButton
         type={'company'}
         data={data} />

@@ -29,6 +29,7 @@ export default function AccessibleDropdown(props) {
       } else {
         onChange(name, [...currentChosen, choice]);
       }
+    } else { // single select
       onChange(name, choice);
     }
   }
@@ -70,7 +71,6 @@ export default function AccessibleDropdown(props) {
 AccessibleDropdown.defaultProps = {
   choices: [],
 };
-
 AccessibleDropdown.propTypes = {
   type: PropTypes.string,
   name: PropTypes.string,

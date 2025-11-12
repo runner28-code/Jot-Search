@@ -91,6 +91,7 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
     const filterType = key;
     return (
       <label
+        key={filterType}
         className='grow flex items-center gap-m'
       >
         <input

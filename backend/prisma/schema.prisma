@@ -352,7 +352,6 @@ model CandidateJobInvites {
   job         Job       @relation(fields: [jobId], references: [id])
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
-}
 
 model CompanyCandidateInvites {
   id          String    @id @default(uuid())
@@ -688,3 +687,6 @@ model Candidate {
   workAuthorized Boolean?
 
   address_address1   String?
+  address_address2   String?
+  address_city       String?
+  address_state      String?

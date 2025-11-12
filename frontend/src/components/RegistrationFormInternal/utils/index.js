@@ -14,6 +14,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   if ( submissionObject.success ) {
     return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
   }
+// Temp comment
   return (
     <button
       className={buttonStyles}
@@ -83,6 +84,7 @@ export function inputValidation(formObj) {
   if ( !(formObj.resume instanceof File) ) { // Ensure resume is a file
     newErrors.push('resume');
   }
+  if ( formObj.password !== formObj.verifyPassword ) { // Match passwords
     newErrors.push('password', 'verifyPassword');
   }
   if ( formObj.skills.length < 3 ) { // Ensure at least 3 skills chosen

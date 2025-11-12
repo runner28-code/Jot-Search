@@ -384,3 +384,5 @@ export class CandidateController {
       const candidatesWithEmail = candidates.filter(
         (candidate) => candidate.email
       );
+
+      let result;

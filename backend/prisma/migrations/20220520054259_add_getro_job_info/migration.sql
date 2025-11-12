@@ -39,3 +39,4 @@ CREATE TABLE "GetroJobInfo" (
     "title" TEXT,
     "url" TEXT,
     "hidden" BOOLEAN NOT NULL DEFAULT false,
+

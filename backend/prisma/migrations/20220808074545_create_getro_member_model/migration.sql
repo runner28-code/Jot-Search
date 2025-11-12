@@ -1,5 +1,4 @@
 -- CreateTable
-CREATE TABLE "UserTalentCollection" (
     "id" TEXT NOT NULL,
     "user_id" INTEGER,
     "collection_id" INTEGER,
@@ -66,3 +65,4 @@ CREATE TABLE "GetroMember" (
     "skills" TEXT,
     "talent_groups" TEXT,
     "referrals_received" TEXT[],
+    "locations" TEXT,

@@ -14,7 +14,6 @@ exports.JobFilter = {
         status: "status",
         hidden: "hidden",
         companyId: "clientCorporationID",
-    },
     main: {
         id: "id",
         status: "status",
@@ -61,3 +60,4 @@ exports.USER_FILTER = {
     bh_email: "bh_email",
     companyName: "companyName",
     occupation: "occupation",
+    workAuthorized: "workAuthorized",

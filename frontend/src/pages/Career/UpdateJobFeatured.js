@@ -23,7 +23,6 @@ export const UpdateJobFeatured = ({ job }) => {
       {isLoading && <p>Loading...</p>}
       {isSuccess && <p>Success!</p>}
       
-      <div className='flex space-x-16'>
         <button
           type="button" 
           name="featured"
@@ -46,6 +45,7 @@ export const UpdateJobFeatured = ({ job }) => {
         </button>
       
         <label 
+          htmlFor='featured' 
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured
         </label>

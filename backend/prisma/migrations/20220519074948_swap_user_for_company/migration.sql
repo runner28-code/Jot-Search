@@ -59,6 +59,7 @@ CREATE TABLE "Company" (
     "trackTitle" TEXT,
     "twitterHandle" TEXT,
     "workWeekStart" INTEGER,
+    "_score" DOUBLE PRECISION,
     "customDate1" TIMESTAMP(3),
     "customDate2" TIMESTAMP(3),
     "customDate3" TIMESTAMP(3),
@@ -69,7 +70,6 @@ CREATE TABLE "Company" (
     "customInt2" INTEGER,
     "customInt3" INTEGER,
     "customText1" TEXT,
-    "customText2" TEXT,
     "customText3" TEXT,
     "customText4" TEXT,
     "customText5" TEXT,
@@ -95,3 +95,4 @@ CREATE TABLE "Company" (
     "customTextBlock5" TEXT,
 
     CONSTRAINT "Company_pkey" PRIMARY KEY ("id")
+);

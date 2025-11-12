@@ -54,7 +54,6 @@
                     "value": "inTulsa_Main"
                 },
                 {
-                    "name": "AUTH_SECRET", 
                     "value": "{SECRET_AUTH_SECRET}"
                 },
                 {
@@ -91,3 +90,4 @@
                 },
                 {
                     "name": "MAIL_SENDER_EMAIL", 
+                    "value": "Support@iDENTIFY.tech"

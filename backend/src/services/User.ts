@@ -567,3 +567,7 @@ export const getStats = async (userId: string) => {
       [totalCompaniesCount],
     ] = await Promise.all([
       applicationCountPromise,
+      savedJobsCountPromise,
+      totalJobsCountPromise,
+      savedCompaniesCountPromise,
+      totalCompaniesCountPromise,
