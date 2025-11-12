@@ -19,7 +19,6 @@ export type Company = {
   topics?: string;
   twitter_url?: string;
   url?: string;
-  website_url?: string;
   managers?: string;
   network_id?: string;
   locations?: string;
@@ -83,6 +82,7 @@ export type User = {
   avatar_url?: string;
   bio?: string;
   dribbble_url?: string;
+  email?: string;
   first_name?: string;
   github_url?: string;
   introduction_requested?: string;
@@ -91,3 +91,4 @@ export type User = {
   resume_url?: string;
   share_permission?: string;
   skills?: string;
+  talent_groups?: string;

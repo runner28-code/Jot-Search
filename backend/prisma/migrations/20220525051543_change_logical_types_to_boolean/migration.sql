@@ -26,6 +26,7 @@ DROP COLUMN "isAnonymized",
 ADD COLUMN     "isAnonymized" BOOLEAN,
 DROP COLUMN "isDeleted",
 ADD COLUMN     "isDeleted" BOOLEAN,
+DROP COLUMN "isEditable",
 ADD COLUMN     "isEditable" BOOLEAN,
 DROP COLUMN "isExempt",
 ADD COLUMN     "isExempt" BOOLEAN,
@@ -44,7 +45,6 @@ ADD COLUMN     "workAuthorized" BOOLEAN;
 
 -- AlterTable
 ALTER TABLE "Job" DROP COLUMN "willRelocate",
-ADD COLUMN     "willRelocate" BOOLEAN,
 DROP COLUMN "onSite",
 ADD COLUMN     "onSite" BOOLEAN,
 DROP COLUMN "isDeleted",

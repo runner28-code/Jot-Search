@@ -90,6 +90,7 @@ export default function Stats({ userType }) {
 Stats.defaultProps = {
   userType: 'candidate',
 }
+
 Stats.propTypes = {
   userType: PropTypes.string.isRequired,
 }

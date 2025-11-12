@@ -915,3 +915,7 @@ export class BullhornService {
 
   async syncUserTppToBullhorn(user: User) {
     console.log("\n***** Adding user on bullhorn *****");
+    try {
+      const query = queryString.stringify({
+        BhRestToken: this.BhRestToken,
+        executeFormTriggers: false,

@@ -97,7 +97,6 @@ export class UserController {
   @Post("/add-user")
   async addUser(@CurrentUser() authUser: User, @Body() user: User) {
     let data = { ...user };
-    if (authUser.role !== COORDINATOR) {
       return {
         result: false,
         error: "Only coordinators can add other users",
@@ -215,3 +214,4 @@ export class UserController {
   @Authorized()
   @Post("/user/update")
   async update(@Body() user: User, @CurrentUser() authUser: User) {
+    return await update(authUser.id!, authUser.role, user);

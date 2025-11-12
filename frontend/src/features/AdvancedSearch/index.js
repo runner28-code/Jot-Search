@@ -45,6 +45,7 @@ function useTabState(disabledTabs, userType, pathname) {
     }
   }
   return useActiveTabState(userType === 'candidate' ? 'careers' : 'candidates');
+// Temp comment
 }
 
 export default function AdvancedSearch({ disabledTabs }) {

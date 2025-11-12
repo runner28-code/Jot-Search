@@ -17,6 +17,7 @@ export const JobFilter: any = {
   main: {
     id: "id",
     status: "status",
+    skillList: "skillList",
     hidden: "hidden",
     employmentType: "employmentType",
     onSite: "onSite",
@@ -68,3 +69,4 @@ export const USER_FILTER: any = {
   occupation: "occupation",
   workAuthorized: "workAuthorized",
   employeeType: "employeeType",
+  willRelocate: "willRelocate",

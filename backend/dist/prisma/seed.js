@@ -39,6 +39,7 @@ function seedJobs() {
         yield db_1.default.job.createMany({
             data: [
                 {
+// Temp comment
                     title: "Senior Software Engineer",
                     companyId: (_a = (yield db_1.default.company.findFirst())) === null || _a === void 0 ? void 0 : _a.id,
                     address1: "123 Job St",
@@ -149,6 +150,44 @@ function seedCategories() {
                     name: "Software & Engineering",
                     enabled: true,
                     externalID: 2000101,
+                },
+            ],
+        });
+    });
+}
+function seedCompanies() {
+    return __awaiter(this, void 0, void 0, function* () {
+        yield db_1.default.company.createMany({
+            data: [
+                {
+                    name: "Testing Co",
+                    annualRevenue: 1000000,
+                    logo: "https://picsum.photos/200",
+                    bh_description: "a company",
+                    getro_description: "a healthcare company",
+                    description: "Testing a new description",
+                    city: "Tulsa",
+                    state: "OK",
+                    businessSectorList: "Health Care,Virtual Health",
+                    billingPhone: "946-423-2341",
+                    companyURL: "testingco@gmail.com",
+                    companyDescription: "Best at testing",
+                    numEmployees: 50,
+                },
+                {
+                    name: "Pepsoda",
+                    annualRevenue: 20000,
+                    logo: "https://picsum.photos/200",
+                    businessSectorList: "SaaS,Fintech",
+                    bh_description: "a good company",
+                    getro_description: "a fintech company",
+                    description: "testing a new description",
+                    city: "Tulsa",
+                    state: "OK",
+                    billingPhone: "876-567-9876",
+                    companyURL: "pepsoda@gmail.com",
+                    companyDescription: "Best at test",
+                    numEmployees: 50,
                 },
             ],
         });

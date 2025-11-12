@@ -120,3 +120,4 @@ export const parseBullhornJobToMain = (data: BhJob) => {
 };
 
 export const parseGetroJobToMain = (data: GtJob) => {
+  const job: Job = {

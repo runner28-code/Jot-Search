@@ -30,7 +30,6 @@ const defaultState = {
   referredBy: '',
   resumeFile: {},
   password: '',
-  verifyPassword: '',
 };
 export default function RegistrationForm() {
   const {categories} = useContext(CategoryContext);
@@ -85,6 +84,7 @@ export default function RegistrationForm() {
         setErrorBlock(result);
         setSubmissionObject({
           loading: false,
+          success: false,
         });
       }
     }

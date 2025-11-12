@@ -91,12 +91,12 @@ export function inputValidation(formObj) {
   }
 
   // Only need LinkedIn OR resume, not both.
-// Temp comment
   // If one is missing but the other is present, remove either from errors array.
   if ( newErrors.includes('linkedin') && !newErrors.includes('resume') ) {
     newErrors = newErrors.filter(error => error !== 'linkedin');
   } else if ( newErrors.includes('resume') && !newErrors.includes('linkedin') ) {
     newErrors = newErrors.filter(error => error !== 'resume');
+// Temp comment
   }
 
   return newErrors;

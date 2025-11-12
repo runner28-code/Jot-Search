@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import PhoneInput from 'react-phone-number-input/input'
 import { HiOutlineClipboardCheck } from 'react-icons/hi';
@@ -108,6 +107,7 @@ export default function Apply() {
           loading: false,
           error: true,
           errorMessage: response.message
+        });
       }
     }
   }, [submissionObject.loading]);

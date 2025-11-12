@@ -42,6 +42,7 @@ const job_filter_exclude_keys = [
     "bilingual",
     "billing",
     "bim",
+    "bingo",
     "biologist",
     "biomed",
     "blender",
@@ -454,3 +455,5 @@ const city_filter_include_keys = [
     "Tulsa,OK"
 ];
 exports.JOB_EXCLUDE_KEYS_REGEX = new RegExp(`(${job_filter_exclude_keys.join('|')})`, 'gi');
+exports.CITY_INCLUDE_KEYS_REGEX = new RegExp(`(${city_filter_include_keys.join('|')})`, 'gi');
+exports.JOB_FIELDS = [

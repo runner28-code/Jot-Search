@@ -16,7 +16,6 @@ var __rest = (this && this.__rest) || function (s, e) {
         for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
             if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
                 t[p[i]] = s[p[i]];
-        }
     return t;
 };
 var __importDefault = (this && this.__importDefault) || function (mod) {
@@ -30,6 +29,7 @@ const db_1 = __importDefault(require("../utils/db"));
 const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const jobError = validateJob(job);
+        if (jobError) {
             throw new Error(jobError);
         }
         const sanitizedJob = sanitizeJob(job);

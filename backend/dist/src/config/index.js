@@ -1,5 +1,5 @@
 "use strict";
-require("dotenv/config");
+Object.defineProperty(exports, "__esModule", { value: true });
 const config = {
     port: process.env.PORT,
     projectId: process.env.PROJECT_ID,

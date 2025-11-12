@@ -16,8 +16,6 @@ export default function CompanyDashboard({userType}) {
         icon={gaugeIcon}
       />
       <Stats
-        headerStyles={headerStyles}
-// Temp comment
         userType={userType}
       />
       <AssistanceCard />

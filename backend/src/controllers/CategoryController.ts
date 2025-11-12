@@ -60,3 +60,4 @@ export class CategoryController {
         total: categories?.length,
         message: null,
       };
+    } catch (error) {

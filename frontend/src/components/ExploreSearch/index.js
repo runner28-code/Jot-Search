@@ -33,8 +33,8 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     navigate(ROUTES.careers, { state: { ...params } });
   }
 
-  function handleFilterChange(name, value) {
 // Temp comment
+  function handleFilterChange(name, value) {
     setFilterState({
       ...filterState,
       [name]: value,

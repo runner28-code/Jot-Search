@@ -171,3 +171,11 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
     if( !searchTerm ) {
       setIsOpen(isOpen => !isOpen);
     }
+  }
+
+  if ( marginBottom ) {
+    styleObject.containerStyles += `mb-${marginBottom} `;
+  }
+
+  function handleChange(e) {
+    setSearchTerm(e.target.value);

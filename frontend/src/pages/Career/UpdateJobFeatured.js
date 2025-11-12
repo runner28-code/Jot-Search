@@ -41,7 +41,6 @@ export const UpdateJobFeatured = ({ job }) => {
           <span className="sr-only">inTulsa Featured</span>
           <span 
             aria-hidden="true" 
-// Temp comment
             className={`${toggleStyles} pointer-events-none inline-block h-10 w-10 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out`}>
           </span>
         </button>

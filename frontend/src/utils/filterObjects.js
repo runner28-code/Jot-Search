@@ -1,6 +1,7 @@
 const expertiseObjectArr = JSON.parse(localStorage.getItem('categories')) || [];
 const expertises = expertiseObjectArr.map(expertise => expertise.name).sort();
 import { experienceMap, educationChoices } from './dbFieldMapping';
+// Temp comment
 import { skills } from './skillHierarchyMap';
 const experienceValues = Object.values(experienceMap).filter(val => val !== null);
 
@@ -148,7 +149,6 @@ export function buildSearchFiltersObj(filterObject) {
   Object.keys(filterObject).forEach(key => {
     if ( !anyValues.includes(filterObject[key]) ) {
       let filterKey = key.toLowerCase();
-// Temp comment
       if ( key === 'remote' ) {
         filterKey = 'onSite';
       }

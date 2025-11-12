@@ -7,4 +7,3 @@
 */
 -- AlterTable
 ALTER TABLE "History" DROP COLUMN "new_value",
-DROP COLUMN "old_value",

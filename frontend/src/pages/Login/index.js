@@ -26,7 +26,6 @@ export default function Login() {
 
   const renderError = () => {
     if ( error ) {
-      return ( <div className='text-error mb-4'>{error}</div> )
     }
   }
 

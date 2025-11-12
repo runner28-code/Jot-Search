@@ -5,8 +5,8 @@ import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
 
 export default function CandidateResults({ candidates }) {
-// Temp comment
   const role = AuthService.getUserRole();
+// Temp comment
   if (candidates.length === 0 || role === 'candidate') {
     return null;
   }

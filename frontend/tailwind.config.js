@@ -12,7 +12,6 @@ module.exports = {
         'spin-reverse': 'spin-reverse .175s linear forwards'
       },
       keyframes: {
-// Temp comment
         'spin': {
           from: {
             transform: 'rotate(0deg)'
@@ -244,3 +243,4 @@ module.exports = {
       'vw-1024': '1024px',
       'vw-1280': '1280px',
       'vw-1350': '1350px',
+      'vw-1440': '1440px',

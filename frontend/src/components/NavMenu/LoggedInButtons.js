@@ -21,8 +21,8 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
       onClick={handleOptionClick}
       className={stylesObject.bottomLinkStyles}
     >
-      <MdLogout className={stylesObject.iconStyles} />
 // Temp comment
+      <MdLogout className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Logout</span>
     </div>
   </>)

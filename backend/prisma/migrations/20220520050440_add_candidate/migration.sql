@@ -70,7 +70,6 @@ CREATE TABLE "Candidate" (
     "recentClientList" TEXT,
     "referredBy" TEXT,
     "salary" TEXT,
-    "salaryLow" TEXT,
     "secondarySkills" TEXT,
     "skillSet" TEXT,
     "smsOptIn" TEXT,
@@ -89,3 +88,4 @@ CREATE TABLE "Candidate" (
     "travelLimit" TEXT,
     "travelMethod" TEXT,
     "twoJobs" TEXT,
+    "type" TEXT,

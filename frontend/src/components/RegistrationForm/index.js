@@ -147,6 +147,7 @@ export default function RegistrationForm(loggedIn) {
       password: password.value,
       verifyPassword: verifyPassword.value,
     });
+// Temp comment
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
       success: false,
@@ -155,6 +156,7 @@ export default function RegistrationForm(loggedIn) {
   }
 
   function handleChange(name, value) {
+    setFormObj({
       ...formObj,
       [name]: value,
     });

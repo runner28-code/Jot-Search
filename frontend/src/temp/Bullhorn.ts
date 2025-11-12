@@ -258,6 +258,7 @@ export type Candidate = {
     smsOptIn?: string;
     source?: string;
     specialties?: string; // ?
+    ssn?: string;
     stateAddtionalWitholdingsAmount?: string;
     stateExemptions?: string;
     stateFilingStatus?: string;
@@ -306,3 +307,4 @@ export type Lead = {
     firstName?: string;
     isAnonymized?: string;
     isDayLightSavingsTime?: string;
+    isDeleted?: string;

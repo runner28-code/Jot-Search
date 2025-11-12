@@ -691,3 +691,6 @@ model Candidate {
   address_address2   String?
   address_city       String?
   address_state      String?
+  address_zip        String?
+  address_country_id Int?
+

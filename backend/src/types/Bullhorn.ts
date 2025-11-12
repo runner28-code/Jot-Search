@@ -307,3 +307,4 @@ export type Lead = {
     firstName?: string;
     isAnonymized?: string;
     isDayLightSavingsTime?: string;
+    isDeleted?: string;

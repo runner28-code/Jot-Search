@@ -22,7 +22,6 @@ export const genderMap = {
   M: 'Male',
   F: 'Female',
   N: 'Non-Binary',
-// Temp comment
   O: 'Other'
 };
 
@@ -70,4 +69,5 @@ export const referralChoices = [
 ]
 
 export const communityChoices = [
+// Temp comment
   'Atento Capital',

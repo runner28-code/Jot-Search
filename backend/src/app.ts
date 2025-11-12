@@ -130,3 +130,4 @@ useExpressServer(app, {
         }
       }
       return false;
+    } catch (error) {

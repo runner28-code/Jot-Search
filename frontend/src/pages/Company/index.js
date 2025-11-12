@@ -142,7 +142,6 @@ function RenderInvite(loggedIn, companyData) {
   return null
 }
 RenderInvite.propTypes = {
-  loggedIn: PropTypes.bool,
   companyData: PropTypes.object
 }
 

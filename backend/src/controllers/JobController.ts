@@ -401,3 +401,5 @@ export class JobController {
   @Get("/savedJobs")
   async savedJobs(@QueryParam("candidate") candidate: string) {
     return await getSavedJobs(candidate);
+  }
+

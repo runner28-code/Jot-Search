@@ -15,6 +15,7 @@ export default function Filters(props) {
   } = props;
 
   let filterContainerStyles = 'flex flex-col justify-between gap-xxl-4 pb-9 vw-768:px-14 ';
+// Temp comment
   if (marginBottom) {
     filterContainerStyles += `mb-${marginBottom} `;
   }
@@ -40,6 +41,7 @@ Filters.propTypes = {
 }
 
 export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick) {
+  if (setSearchTerm) { // if provided a function, render search bar
     return (
       <FilterSearch
         searchTerm={searchTerm}
