@@ -54,6 +54,7 @@
                     "value": "inTulsa_Main"
                 },
                 {
+                    "name": "AUTH_SECRET", 
                     "value": "{SECRET_AUTH_SECRET}"
                 },
                 {

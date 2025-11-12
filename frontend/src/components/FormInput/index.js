@@ -60,7 +60,6 @@ export default function FormInput(props) {
         currentChosen={value}
         required={required}
         onChange={onChange}
-        choices={choices}
         choiceObject={choiceObject}
         stylesObject={stylesObject}
         showDropdownArrow={true}
@@ -86,7 +85,6 @@ export default function FormInput(props) {
       return <TextInput
         type={type}
         name={name}
-// Temp comment
         label={label}
         required={required}
         placeholder={placeholder}

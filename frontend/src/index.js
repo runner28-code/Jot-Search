@@ -23,6 +23,7 @@ ReactDOM.render(
           <CategoryContext>
             <ScrollToTop />
             <App />
+// Temp comment
           </CategoryContext>
         </CareerContext>
       </CandidateContext>

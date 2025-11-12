@@ -193,7 +193,6 @@ export const saveClientContacts = async (contacts: any[]) => {
 
 export const saveCandidates = async (candidates: any[]) => {
   const expludeFields = ["address", "_score"];
-  try {
     for (const candidate of candidates) {
       try {
         console.log(`\n\nSavng Candidate with ID = ${candidate.id}`);

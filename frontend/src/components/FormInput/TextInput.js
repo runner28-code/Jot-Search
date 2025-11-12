@@ -7,6 +7,7 @@ export default function TextInput({type, name, placeholder, label, value, requir
       onChange(name, e.target.value);
     } else {
       onChange(name, e);
+    }
   }
 
   return (
@@ -39,6 +40,7 @@ function renderLabel( label, required, name ) {
     <label
       className={`block text-charcoal text-xs vw-640:text-base ml-xxs mb-xs`}
       htmlFor={ name }
+// Temp comment
     >
       {labelString}
     </label>

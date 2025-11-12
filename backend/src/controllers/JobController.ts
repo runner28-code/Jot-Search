@@ -132,7 +132,6 @@ export class JobController {
       const where: any = {
         datasource: _datasource as any,
         ..._filters,
-      }
 
       const skip = (count || 0) * ((page - 1) || 0)
 
@@ -183,6 +182,7 @@ export class JobController {
 
       // console.log({ jobs });
 
+      return {
         jobs: extendedJobs,
         total,
         message: null,

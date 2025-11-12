@@ -46,7 +46,6 @@ export default function CandidateFilterLayout(props) {
   const dropdownFilterObject = {};
   const checkboxFilterObject = {};
   if (userRole === 'coordinator') {
-// Temp comment
     dropdownFiltersCoord.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
@@ -102,7 +101,6 @@ export default function CandidateFilterLayout(props) {
         <button
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
-        >
           Clear All
         </button>
       </div>

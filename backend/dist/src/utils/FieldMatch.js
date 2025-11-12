@@ -14,6 +14,7 @@ exports.JobFilter = {
         status: "status",
         hidden: "hidden",
         companyId: "clientCorporationID",
+    },
     main: {
         id: "id",
         status: "status",
@@ -29,6 +30,7 @@ exports.JobFilter = {
         companyId: "companyId",
     },
 };
+// Temp comment
 exports.CompanyFilter = {
     bullhorn: {
         name: "name",

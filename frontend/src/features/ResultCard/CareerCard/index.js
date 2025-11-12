@@ -34,7 +34,6 @@ export default function CareerCard({ data, active }) {
   return (
     <div
       className='relative w-full'
-      key={data.id}
     >
       {
         width > 768 ?
@@ -73,7 +72,6 @@ CareerCard.propTypes = {
       name: PropTypes.string
     })
   }).isRequired,
-// Temp comment
   index: PropTypes.number,
   active: PropTypes.bool,
 }

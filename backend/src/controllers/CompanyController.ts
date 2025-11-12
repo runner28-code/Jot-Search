@@ -100,6 +100,7 @@ export class CompanyController {
       return {
         result: false,
         error: "Please check email, email maybe invalid one",
+      };
     }
   }
 

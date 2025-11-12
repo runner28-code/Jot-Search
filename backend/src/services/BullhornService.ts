@@ -266,7 +266,6 @@ export class BullhornService {
           count,
           sort,
         });
-        const url = `${this.restUrl}search/ClientCorporation?${query}`;
         const res = await axios.get(url, {
           headers: {
             "Content-Type": "application/json",
@@ -724,6 +723,7 @@ export class BullhornService {
               address_city: d.address?.city || null,
               address_state: d.address?.state || null,
               address_zip: d.address?.zip || null,
+              address_country_id: d.address?.countryID || null,
               leads: d.leads?.data.map((lead: any) => lead.id).join(" | "),
               primarySkills: d.primarySkills?.data
                 .map((skill: any) => skill.name)

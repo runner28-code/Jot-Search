@@ -38,7 +38,6 @@ class AuthService {
   getToken() {
     return localStorage.getItem('id_token');
   }
-
   async login(idToken) {
     localStorage.setItem('id_token', idToken);
     const role = this.getUserRole();
@@ -132,5 +131,6 @@ class AuthService {
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
   }
 
+  getSavedCandidateIDs() {
     return JSON.parse(localStorage.getItem('savedCandidates')) || [];
   }

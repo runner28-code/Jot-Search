@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
-// Temp comment
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
@@ -10,7 +9,6 @@ const dropdownFilters = [
   'Expertise',
   'On-Site/Remote',
   'Years Experience',
-  'Status',
 ];
 
 const dropDownFiltersCandidate = [

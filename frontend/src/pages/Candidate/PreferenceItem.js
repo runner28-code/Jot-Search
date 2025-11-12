@@ -29,7 +29,6 @@ PreferenceItem.propTypes = {
   label: PropTypes.string.isRequired,
   onUpdate: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
-// Temp comment
 }
 
 export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) {

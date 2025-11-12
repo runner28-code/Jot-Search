@@ -63,7 +63,6 @@ export const candidateFilterObject = {
   ],
   'Experience': [
     'Any',
-// Temp comment
     ...experienceValues
   ],
   'Open to Relocation': [
@@ -151,7 +150,6 @@ export function buildSearchFiltersObj(filterObject) {
       let filterKey = key.toLowerCase();
       if ( key === 'remote' ) {
         filterKey = 'onSite';
-      }
       if ( key === 'Expertise' ) {
         filterObject[key] = findCategoryIdByValue(filterObject[key]);
       }

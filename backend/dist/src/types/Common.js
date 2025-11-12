@@ -26,4 +26,3 @@ exports.DATASET_GETRO = config_1.default.getroDatasetID || "";
 exports.DATASET_MAIN = config_1.default.mainDatasetID || "";
 // Common
 var DataSource;
-(function (DataSource) {

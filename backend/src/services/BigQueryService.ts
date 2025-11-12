@@ -39,7 +39,6 @@ export class BigQueryService {
             consoleLog(`BIGQUERY: SELECT QUERY = ${query}`);
             const [job] = await BigQueryService.getClient().createQueryJob(options);
             const [res] = await job.getQueryResults();
-            if (res && res.length > 0) {
                 return res;
             }
         } catch (error) {

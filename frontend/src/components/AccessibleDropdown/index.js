@@ -71,6 +71,7 @@ export default function AccessibleDropdown(props) {
 AccessibleDropdown.defaultProps = {
   choices: [],
 };
+
 AccessibleDropdown.propTypes = {
   type: PropTypes.string,
   name: PropTypes.string,

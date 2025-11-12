@@ -40,6 +40,7 @@ export const saveApplication = async (job: string, candidate: string) => {
     }
   } catch (error) {
     console.log(error);
+    return { result: false, message: error };
   }
 };
 
@@ -124,7 +125,6 @@ export const getSavedJobs = async (candidateId: string) => {
 };
 
 export const getCandidatesOnJob = async (jobId: string) => {
-  try {
     const job = await db.job.findFirst({
       where: {
         id: jobId,

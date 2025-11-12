@@ -70,6 +70,7 @@ CREATE TABLE "Company" (
     "customInt2" INTEGER,
     "customInt3" INTEGER,
     "customText1" TEXT,
+    "customText2" TEXT,
     "customText3" TEXT,
     "customText4" TEXT,
     "customText5" TEXT,

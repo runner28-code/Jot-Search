@@ -56,7 +56,6 @@ export default function CareerPage() {
 
   const containerStyles = 'ml-10 mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
 
-// Temp comment
   return (<>
     <RenderHeader
       loggedIn={loggedIn}
@@ -134,7 +133,6 @@ function Notification({title, content, text, email, company, id, add}) {
   )
 }
 Notification.propTypes = {
-  title: PropTypes.string,
   content: PropTypes.string,
   text: PropTypes.string,
   email: PropTypes.string,

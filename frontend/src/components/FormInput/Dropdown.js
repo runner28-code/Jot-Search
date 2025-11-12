@@ -43,7 +43,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
             className='cursor-pointer flex items-center justify-between'
           >
             <span className='font-bold'>{choice}</span>
-            {renderActiveIcon(choice, currentChosen)}
           </div>
           { renderHorizontalRule(index, choices.length) }
         </div>)
@@ -87,7 +86,6 @@ export default function Dropdown(props) {
   }, [isOpen]);
   
   const renderValue = (type, name, currentChosen, placeholder) => {
-// Temp comment
     if (type === MULTI_SELECT && currentChosen.length > 0) {
       return currentChosen.join(', ');
     } else if ( type === SINGLE_SELECT && currentChosen !== '' ) {

@@ -205,7 +205,6 @@ export const skills = [
   'FinTech',
   'Flask',
   'Flume',
-// Temp comment
   'Forecasts',
   'Fraud',
   'French',

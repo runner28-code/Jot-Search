@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
-import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { VscChevronDown as ChevronDown } from 'react-icons/vsc';
 import { VscChevronUp as ChevronUp } from 'react-icons/vsc';
@@ -42,7 +41,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
         </div>
       </div>
     </div>
-// Temp comment
     <div className='bg-sky-500 flex py-8 px-6 items-center text-white font-roboto'>
       <div className='flex items-center justify-start basis-5/6 gap-[10px]'>
         <img src={filterIcon} />

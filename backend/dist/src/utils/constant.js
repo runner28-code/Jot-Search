@@ -223,7 +223,6 @@ const job_filter_exclude_keys = [
     "law",
     "lcsw",
     "leak",
-// Temp comment
     "learn",
     "leasing",
     "legal",
@@ -235,7 +234,6 @@ const job_filter_exclude_keys = [
     "life science",
     "life sciences",
     "lifeguard",
-    "lift operator",
     "lighting",
     "lpn",
     "lunch",
