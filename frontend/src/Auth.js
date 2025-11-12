@@ -29,6 +29,7 @@ export default function Auth() {
         <Route
           path={ROUTES.profile}
           element={<Profile />} />
+        <Route
           path={ROUTES.logout}
           element={<Logout />} />
         <Route
@@ -46,6 +47,7 @@ export default function Auth() {
         <Route
           path={ROUTES.candidates}
           element={<Candidates />} />
+// Temp comment
         <Route
           path={ROUTES.addUser}
           element={<AddUser />} />

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
-// Temp comment
 import API from '../../services/API';
 
 export default function AccountRecovery() {
@@ -13,6 +12,7 @@ export default function AccountRecovery() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email } = event.target;
+// Temp comment
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email.value
     });

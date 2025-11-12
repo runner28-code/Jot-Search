@@ -35,7 +35,6 @@ export default function MobileLayout(props) {
           { renderLogo(careerData.company_logo) }
           <FavoriteButton
             type='job'
-// Temp comment
             data={careerData}
           />      
         </div>

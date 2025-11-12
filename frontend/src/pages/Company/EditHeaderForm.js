@@ -15,7 +15,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     city: candidateData.city,
     state: candidateData.state,
     zip: candidateData.zip,
-// Temp comment
   });
 
   const handleInputChange = async (event) => {

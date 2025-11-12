@@ -52,7 +52,6 @@ export const roles = {
     'DevOps & Infrastructure',
     'Game Engineer',
     'QA Engineer',
-    'Data Analysis',
     'Systems Engineer',
     'Mobile Engineers',
     'Automation Engineer',

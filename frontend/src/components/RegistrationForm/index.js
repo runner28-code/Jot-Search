@@ -76,7 +76,6 @@ export default function RegistrationForm(loggedIn) {
         setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({
           loading: false,
-// Temp comment
           success: false,
         });
         return;
@@ -156,7 +155,6 @@ export default function RegistrationForm(loggedIn) {
   }
 
   function handleChange(name, value) {
-    setFormObj({
       ...formObj,
       [name]: value,
     });

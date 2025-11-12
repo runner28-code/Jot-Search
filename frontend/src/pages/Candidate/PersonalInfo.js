@@ -96,7 +96,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
 
   console.log({ isSourceUserTable })
 
-// Temp comment
   return (
     <div className='mb-9 border rounded-2xl bg-white p-12'>
       <form onSubmit={onSubmit}>
@@ -203,6 +202,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
               >
                 <p className={labelTextStyles}>Zip/Postal Code</p>
                 <input
+// Temp comment
                   type='text'
                   name='zip'
                   id='zip'

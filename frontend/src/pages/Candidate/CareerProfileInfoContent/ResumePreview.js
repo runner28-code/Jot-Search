@@ -36,7 +36,6 @@ const ResumePreview = ({ resumeUrl }) => {
               <button
                 disabled={prevButtonDisabled}
                 onClick={() => setPage(page - 1)}
-// Temp comment
               >
                 <BackIcon className={prevButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
@@ -53,5 +52,6 @@ const ResumePreview = ({ resumeUrl }) => {
           </ul>
         </nav>
       )}
+// Temp comment
     </div>
   );

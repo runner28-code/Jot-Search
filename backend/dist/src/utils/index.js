@@ -81,6 +81,7 @@ const getDataSource = (id) => {
     return Common_1.DataSource.UNKNOWN;
 };
 exports.getDataSource = getDataSource;
+const genUUID = () => (0, uuid_1.v4)();
 exports.genUUID = genUUID;
 const checkForJobFilter = (title, location) => {
     if (title.match(constant_1.JOB_EXCLUDE_KEYS_REGEX))

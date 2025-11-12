@@ -60,6 +60,7 @@ export function convertUserToCandidate(user) {
     ethnicity: user.ethnicity || '',
     veteran: user.veteran || '',
     disability: user.disability || '',
+  };
   return candidate;
 }
 
@@ -207,6 +208,7 @@ export function buildCompanyAddress(companyData) {
     const locationArr = getro_locations.split(', ');
     city = locationArr[0];
     state = locationArr[1];
+// Temp comment
   }
 
   /* Return conditions */

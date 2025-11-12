@@ -6,7 +6,6 @@ export const saveApplication = async (job: string, candidate: string) => {
     console.log({ job, candidate });
     const existing = await db.application.findFirst({
       where: {
-        jobId: job,
         userId: candidate,
       },
     });
@@ -125,6 +124,7 @@ export const getSavedJobs = async (candidateId: string) => {
 };
 
 export const getCandidatesOnJob = async (jobId: string) => {
+  try {
     const job = await db.job.findFirst({
       where: {
         id: jobId,

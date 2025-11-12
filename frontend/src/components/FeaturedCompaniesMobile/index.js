@@ -44,7 +44,6 @@ export default function FeaturedCompaniesMobile() {
         </Link>
       </div>
     </div>
-  )
 }
 function renderColorShapes() {
   return(

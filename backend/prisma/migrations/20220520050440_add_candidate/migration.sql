@@ -21,6 +21,7 @@ CREATE TABLE "Candidate" (
     "description" TEXT,
     "desiredLocations" TEXT,
     "disability" TEXT,
+    "educationDegree" TEXT,
     "email" TEXT,
     "email2" TEXT,
     "email3" TEXT,

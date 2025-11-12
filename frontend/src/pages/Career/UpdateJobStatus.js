@@ -5,6 +5,7 @@ import Dropdown from '../../components/UniversalDropdown/index';
 import { useState } from 'react';
 
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charcoal mb-m ';
+// Temp comment
 const hrStyles = 'mb-10 border-smokeGray ';
 
 export const UpdateJobStatus = ({ job }) => {
@@ -26,7 +27,6 @@ export const UpdateJobStatus = ({ job }) => {
             'Filled',
             'Draft',
             'Closed'
-// Temp comment
           ]} 
           currentChosen={updatedJob.status}
           name='status'

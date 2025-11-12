@@ -314,7 +314,6 @@ export class CandidateController {
         if (aFirstName === bFirstName) { // if first names are the same, sort by last name
           const aLastName = a.lastname || a.lastName;
           const bLastName = b.lastname || b.lastName;
-          return aLastName.localeCompare(bLastName);
         }
         return aFirstName.localeCompare(bFirstName);
       })

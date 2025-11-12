@@ -23,6 +23,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
 
 export function renderErrorBlock(errorBlock) {
   
+  if (errorBlock) {
     return (
       <div className='flex flex-col items-center justify-center w-full'>
         <p className='text-rose-500 text-sm font-bold'>{ errorBlock.error || errorBlock }</p>
@@ -53,7 +54,6 @@ export function inputValidation(formObj) {
     newErrors.push('resumeFile');
   }
   if (formObj.password !== formObj.verifyPassword) {
-    newErrors.push('password', 'verifyPassword');
   }
   if (formObj.skills.length < 3 ) {
     newErrors.push('skills');

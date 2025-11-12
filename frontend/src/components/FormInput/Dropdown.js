@@ -43,6 +43,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
             className='cursor-pointer flex items-center justify-between'
           >
             <span className='font-bold'>{choice}</span>
+            {renderActiveIcon(choice, currentChosen)}
           </div>
           { renderHorizontalRule(index, choices.length) }
         </div>)
@@ -56,7 +57,6 @@ export default function Dropdown(props) {
     baseStyles, 
     marginBottom,
     choices, 
-    currentChosen, 
     inputHeight,
     name, 
     onChange, 

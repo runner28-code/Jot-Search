@@ -177,6 +177,7 @@ function renderSectorList(companyData, width , stylesObject) {
         <ul>
           {
             business.map((sector, index) =>
+              <li key={index}>{sector}</li>
             )
           }
         </ul>

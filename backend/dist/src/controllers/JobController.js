@@ -143,7 +143,6 @@ let JobController = class JobController {
                 console.error(error);
                 return {
                     message: error,
-                };
             }
         });
     }

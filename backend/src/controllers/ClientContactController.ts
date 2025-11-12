@@ -4,6 +4,7 @@ import {
   Post,
   QueryParam,
   JsonController,
+  Authorized,
 } from "routing-controllers";
 import { FilterBody } from "../types/Common";
 
@@ -29,7 +30,6 @@ export class ClientContactController {
         message: !contact ? "No client contact with given ID" : undefined,
       };
     } catch (error) {
-      return { message: error };
     }
   }
 

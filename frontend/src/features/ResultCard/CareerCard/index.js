@@ -21,6 +21,7 @@ export default function CareerCard({ data, active }) {
   const role = AuthService.getUserRole();
 
   const { width } = useWindowDimensions();
+// Temp comment
 
   const dataObj = {
     data,
@@ -34,6 +35,7 @@ export default function CareerCard({ data, active }) {
   return (
     <div
       className='relative w-full'
+      key={data.id}
     >
       {
         width > 768 ?

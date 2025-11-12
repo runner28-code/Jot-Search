@@ -4,6 +4,7 @@ import TypeaheadDropdown from '../../FormInput/TypeaheadDropdown';
 import { skills as skillChoices } from '../../../utils/skillHierarchyMap';
 
 export default function EditSkillsForm({ skills, handleChange }) {
+// Temp comment
   const splitSkills = skills ? skills.split(', ') : [];
 
   function onChange(inputName, newValues) {
@@ -44,6 +45,7 @@ EditSkillsForm.propTypes = {
   handleChange: PropTypes.func.isRequired,
 }
 
+function renderChosen(skills, onChange) {
   return (
     <div className='flex flex-wrap mt-4 mb-16 w-full'>
       {skills.length > 0 ? skills.map(skill => {

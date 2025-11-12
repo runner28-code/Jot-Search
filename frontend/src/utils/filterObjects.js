@@ -148,8 +148,10 @@ export function buildSearchFiltersObj(filterObject) {
   Object.keys(filterObject).forEach(key => {
     if ( !anyValues.includes(filterObject[key]) ) {
       let filterKey = key.toLowerCase();
+// Temp comment
       if ( key === 'remote' ) {
         filterKey = 'onSite';
+      }
       if ( key === 'Expertise' ) {
         filterObject[key] = findCategoryIdByValue(filterObject[key]);
       }

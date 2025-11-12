@@ -28,7 +28,6 @@ function App() {
           className='grow min-h-280 pb-18'>
           <Routes>
             <Route
-              path={ROUTES.signup}
               element={<SignUp />} />
             <Route
               path={ROUTES.login}
@@ -42,7 +41,6 @@ function App() {
             <Route
               path={ROUTES.companies}
               element={<Companies />} />
-// Temp comment
             <Route
               path={`${ROUTES.careers}/:id`}
               element={<Career />} />

@@ -30,7 +30,6 @@ exports.JobFilter = {
         companyId: "companyId",
     },
 };
-// Temp comment
 exports.CompanyFilter = {
     bullhorn: {
         name: "name",
@@ -55,6 +54,7 @@ exports.USER_FILTER = {
     city: "city",
     state: "state",
     skills: "skills",
+// Temp comment
     skillSet: "skillSet",
     category: "category",
     status: "status",

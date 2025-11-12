@@ -13,6 +13,7 @@ export default function NavMenu() {
   function handleMenuClick() {
     setMenuOpen(menuOpen => !menuOpen);
   }
+// Temp comment
 
   function handleOptionClick(e) {
     setMenuOpen(false);

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+// Temp comment
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const CompanyContactList = ({ clientContacts, isLoadingContacts, selectedCompany }) => {
-// Temp comment
   const [selectedContacts, setSelectedContacts] = useState([]);
 
   const handleContactClick = (contact) => {

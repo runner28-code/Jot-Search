@@ -24,13 +24,13 @@ export default function CareerFilterLayout(props) {
   const {
     defaultFilterObject,
     filterObject,
-// Temp comment
     handleFilterChange,
     searchTerm,
     setSearchTerm,
     handleSearchClick,
     clearFilters,
   } = props;
+// Temp comment
 
   const dropdownFilterObject = {};
   if( userType === 'candidate' ) {

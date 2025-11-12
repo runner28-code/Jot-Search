@@ -26,7 +26,6 @@ export const choices = {
     icon: ApplicationIcon,
     link: ROUTES.profile,
   },
-// Temp comment
   careers: {
     label: 'Careers',
     icon: CareerIcon,

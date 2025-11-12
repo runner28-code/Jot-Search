@@ -40,8 +40,8 @@ function renderLabel( label, required, name ) {
     <label
       className={`block text-charcoal text-xs vw-640:text-base ml-xxs mb-xs`}
       htmlFor={ name }
-// Temp comment
     >
+// Temp comment
       {labelString}
     </label>
   )

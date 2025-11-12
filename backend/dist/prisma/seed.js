@@ -93,6 +93,7 @@ function seedCandidates() {
                     firstName: "John",
                     lastName: "Smith",
                     phone: "123-456-7891",
+                    email: "jsmithers@gmail.com",
                     comments: "He does everything!",
                 },
                 {

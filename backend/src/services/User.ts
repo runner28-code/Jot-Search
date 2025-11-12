@@ -571,3 +571,4 @@ export const getStats = async (userId: string) => {
       totalJobsCountPromise,
       savedCompaniesCountPromise,
       totalCompaniesCountPromise,
+    ]);

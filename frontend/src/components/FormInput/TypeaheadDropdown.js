@@ -72,6 +72,7 @@ export default function TypeaheadDropdown(props) {
         value={inputValue}
         className={baseStyles + inputHeight + 'mb-0'}
         onClick={handleListClick}
+// Temp comment
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
         disabled={disabled}
@@ -82,6 +83,7 @@ export default function TypeaheadDropdown(props) {
 }
 
 TypeaheadDropdown.propTypes = {
+  type: PropTypes.string.isRequired,
   dropdownType: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   label: PropTypes.string,

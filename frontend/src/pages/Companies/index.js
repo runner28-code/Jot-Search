@@ -11,7 +11,6 @@ import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import Dashboard from '../../components/DashboardPublic';
 import DashboardCandidate from '../../components/DashboardCandidate';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 import AuthService from '../../services/auth';
 

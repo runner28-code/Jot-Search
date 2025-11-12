@@ -127,7 +127,6 @@ Header.propTypes = {
 
 function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
-// Temp comment
   const logoStyles = 'my-auto object-contain';
   if( width >= 1280 ) {
     return null;
@@ -169,7 +168,6 @@ function renderDesktopLogo(logoUrl, name) {
         className={logoStyles}
         src={logoUrl}
         alt={`${name} logo`}
-      />
     </div>
   )
 }
