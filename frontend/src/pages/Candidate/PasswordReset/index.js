@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-// Temp comment
 import ResetButton from './ResetButton';
-import ResetForm from './ResetForm';
 
 export default function PasswordReset({role, candidateData}) {
   if ( role === 'company' || candidateData.sourceTable !== 'User' ) {

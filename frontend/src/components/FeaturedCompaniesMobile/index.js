@@ -27,7 +27,6 @@ export default function FeaturedCompaniesMobile() {
             <LoadingSpinner />
             :
             companies.map((company, index) =>
-// Temp comment
               <Link
                 to={`${ROUTES.companies}/${company.id}`}
                 className='my-8 outline outline-2 outline-neutral-100 p-8 w-32 mx-2'
@@ -43,6 +42,7 @@ export default function FeaturedCompaniesMobile() {
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
         </Link>
+// Temp comment
       </div>
     </div>
   )

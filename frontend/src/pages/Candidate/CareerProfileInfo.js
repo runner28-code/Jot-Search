@@ -32,6 +32,7 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
 CareerProfileInfo.propTypes = {
   candidateData: PropTypes.object.isRequired,
   handleCandidateUpdate: PropTypes.func.isRequired,
+  role: PropTypes.string.isRequired
 }
 
 function renderEditIcon(candidateData, setEditMode) {
@@ -52,6 +53,7 @@ function renderEditIcon(candidateData, setEditMode) {
         <FiEdit
           className='h-[3rem] w-[3rem] ml-4 stroke-royalBlue cursor-pointer'
         />
+// Temp comment
       </button>
     )
   }

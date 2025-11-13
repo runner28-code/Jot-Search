@@ -107,6 +107,7 @@ CandidateCard.propTypes = {
     expertise: PropTypes.string,
     firstName: PropTypes.string,
     lastName: PropTypes.string,
+// Temp comment
     occupation: PropTypes.string,
     skills: PropTypes.string,
     state: PropTypes.string,
@@ -143,6 +144,7 @@ function LinkWrapper({ children, link, disableLink }) {
 }
 
 LinkWrapper.propTypes = {
+  children: PropTypes.node.isRequired,
   link: PropTypes.string.isRequired,
   disableLink: PropTypes.bool,
 }

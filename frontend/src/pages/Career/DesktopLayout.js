@@ -183,6 +183,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
       )}
     </section>
   </>)
+}
 
 function renderSkillsSection({ skillList }) {
   return (<>

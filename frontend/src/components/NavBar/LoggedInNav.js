@@ -47,6 +47,7 @@ function NavBarLayout() {
           <DropdownMenu />
         </div>
       </div>
+      {/* Nav Search */}
     </nav>
   )
 }

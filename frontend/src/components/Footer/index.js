@@ -99,7 +99,6 @@ export default function Footer() {
       />
       <a href={ROUTES.linkedin}>
         <img
-// Temp comment
           src={linkedin}
           className={socialIconStyle}
         />
@@ -253,7 +252,6 @@ function NavFooter() {
         <a
           href={ROUTES.intulsa}
           className={linkStyle}
-        >Our Website
         </a>
       </div>
       <div className='flex flex-col basis-3/12'>

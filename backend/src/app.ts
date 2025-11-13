@@ -36,6 +36,7 @@ const uploadToS3 = async(req: any, res: any) => {
   }
 
   const form = new IncomingForm() as any
+  form.uploadDir = path.join(__dirname, "..", "uploads");
   form.keepExtensions = true
   form.parse(req, async (err: any, fields: any, files: any) => {
     const fileObject = await files.file
@@ -121,7 +122,6 @@ useExpressServer(app, {
     try {
       const token = action.request.headers.authorization.split(" ")[1];
       const data = VerifyJwtToken(token);
-      if (data && data.email) {
         const user = await findUserByEmail(data.email);
         if (user) {
           action.request.user = user;

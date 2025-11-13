@@ -65,6 +65,7 @@ function seedJobs() {
                     salary: 80000,
                     employmentType: "fulltime",
                     onSite: "Hybrid",
+// Temp comment
                     description: "Come join our rockstar team for good money and learning",
                     datasource: client_1.Datasource.bullhorn,
                     status: "active",
@@ -188,5 +189,6 @@ function seedCompanies() {
                     companyDescription: "Best at test",
                     numEmployees: 50,
                 },
+            ],
         });
     });

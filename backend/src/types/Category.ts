@@ -5,7 +5,6 @@ export type Category = {
   enabled?: boolean;
   name?: string;
   occupation?: string;
-  type?: string;
   _score?: number;
 };
 

@@ -117,7 +117,6 @@ export default function Header({ companyData }) {
         <HeaderContent companyData={companyData} />
       </section>
     </>
-  )
 }
 
 Header.propTypes = {

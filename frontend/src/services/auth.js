@@ -14,6 +14,7 @@ class AuthService {
     if (this.loggedIn()) {
       role = this.getProfile().role;
     }
+    return role;
   }
 
   loggedIn() {

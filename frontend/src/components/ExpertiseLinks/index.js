@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import softwareEngineeringIcon from '../../assets/images/Symbol_softwareengineering.svg';
 import salesAndBizDevIcon from '../../assets/images/Symbol_Salesbizdev.svg';
 import marketingIcon from '../../assets/images/Symbol_marketing.svg';
@@ -70,7 +71,6 @@ export default function ExpertiseLinks() {
           />
           <span className={textStyles}>Operations</span>
         </Link>
-        {/* Finance */}
         <Link
           to={ROUTES.careers}
           className={linkStyles}

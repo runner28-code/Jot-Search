@@ -3,13 +3,11 @@ import flagIcon from '../../../assets/icons/flag.svg';
 export default function AssistanceCard() {
   return (
     <div className='w-full bg-white border border-disabledGrey rounded-2xl px-xxl-3 py-xxl-2'>
-      {/* Header */}
       <div className='flex'>
         <img
           src={flagIcon}
           alt='Flag'
           className='w-auto h-auto'
-// Temp comment
         />
         <h5 className='text-h5 font-medium font-spaceGrotesk text-charcoal ml-8'>InTulsa assistance</h5>
       </div>

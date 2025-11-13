@@ -27,5 +27,6 @@ export class BullhornController {
   async getCandidates() {
     return await (await BullhornService.getClient()).getCandidates();
   }
+
   // @Authorized()
   @Get('/bullhorn/leads')

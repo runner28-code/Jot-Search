@@ -8,8 +8,8 @@ export class GetroController {
   async getCompanies() {
     return await (await GetroService.getClient()).getCompanies();    
   }
+  
   @Authorized()
-  @Get('/getro/members')
   async getMembers() {
     return await (await GetroService.getClient()).getMembers();    
   }

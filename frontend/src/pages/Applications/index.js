@@ -31,7 +31,6 @@ export default function Applications() {
       loading: false
     });
   }, []);
-// Temp comment
 
   function handleCheckClick(careerId) {
     if (selectedApplications.includes(careerId)) {

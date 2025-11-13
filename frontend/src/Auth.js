@@ -12,6 +12,7 @@ import {
 } from './pages';
 import AuthService from './services/auth';
 import * as ROUTES from './routes';
+// Temp comment
 
 
 export default function Auth() {
