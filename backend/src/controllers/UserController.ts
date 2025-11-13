@@ -157,7 +157,6 @@ export class UserController {
     const data = VerifyJwtToken(token);
 
     if (!data) return { result: false, error: "token is invalid" };
-
     const user = await findUserByEmail(data.email);
     if (!user) return { result: false, error: "User does not exist" };
 

@@ -145,7 +145,6 @@ export const skills = [
   'Copywriting',
   'Counseling',
   'CPA',
-// Temp comment
   'CPG',
   'Creative Writing',
   'CRM',

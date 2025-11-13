@@ -36,6 +36,7 @@ function HeaderContent({ companyData }) {
                 <img
                   src={PlacePin}
                   className={headerIconStyles}
+                />
                 <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
               </div>
               <div className={ headerGroupStyles }>

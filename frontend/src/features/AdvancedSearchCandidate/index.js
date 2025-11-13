@@ -120,7 +120,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     setPage(1);
   }
   function handleSearchClick() {
-// Temp comment
     setPage(1);
   }
 

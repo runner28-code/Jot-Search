@@ -24,6 +24,7 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
   phone: '',
+// Temp comment
   expertise: '',
   address1: '',
   city: '',
@@ -146,7 +147,6 @@ export default function RegistrationFormInternal(loggedIn) {
       willRelocate: relocate,
       linkedin: linkedin.value,
       password: password.value,
-// Temp comment
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect

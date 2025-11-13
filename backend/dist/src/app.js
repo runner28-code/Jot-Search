@@ -14,6 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 require("reflect-metadata");
+const dotenv_1 = __importDefault(require("dotenv"));
 const routing_controllers_1 = require("routing-controllers");
 const path_1 = __importDefault(require("path"));
 const body_parser_1 = __importDefault(require("body-parser"));
@@ -29,6 +30,7 @@ const multerStorage = multer_1.default.diskStorage({
     destination: (req, file, cb) => {
         const folder = req.body.type || "resumes";
         const path = __dirname + `/../uploads/${folder}`;
+// Temp comment
         console.log("upload path: ", path);
         fs_1.default.mkdirSync(path, { recursive: true });
         cb(null, path);

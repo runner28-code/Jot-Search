@@ -63,7 +63,6 @@ export default function AccessibleDropdown(props) {
             { renderMenuItems(choices, choiceObject, currentChosen, name, stylesObject) }
           </ul>
         </Menu>
-// Temp comment
       </Wrapper>
     </div>
   );
@@ -133,7 +132,6 @@ function buttonText(name, placeholder, currentChosen) {
 }
 
 function renderLabel(name, label, required) {
-  if ( !label ) {
     return null;
   }
 

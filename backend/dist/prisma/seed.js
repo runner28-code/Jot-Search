@@ -188,6 +188,5 @@ function seedCompanies() {
                     companyDescription: "Best at test",
                     numEmployees: 50,
                 },
-            ],
         });
     });

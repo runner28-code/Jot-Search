@@ -42,6 +42,7 @@
     "bullhorn_get_job_post_subscription": "npm run build && node ./dist/src/cronjobs/bullhorn_get_new_job_subscription",
     "getro_get_companies": "npm run build && node ./dist/src/cronjobs/getro_get_companies",
     "getro_get_jobs": "npm run build && node ./dist/src/cronjobs/getro_get_jobs",
+    "getro_get_members": "npm run build && node ./dist/src/cronjobs/getro_get_members",
     "bullhorn_get_companies_win": "npm run build-win && node ./dist/src/cronjobs/bullhorn_get_companies",
     "bullhorn_get_jobs_win": "npm run build-win && node ./dist/src/cronjobs/bullhorn_get_jobs",
     "bullhorn_get_contacts_win": "npm run build-win && node ./dist/src/cronjobs/bullhorn_get_contacts",
@@ -55,7 +56,6 @@
   "devDependencies": {
     "@google-cloud/bigquery": "^5.10.0",
     "@types/body-parser": "^1.19.2",
-    "@types/express": "^4.17.13",
     "@types/formidable": "^2.0.5",
     "@types/multer": "^1.4.7",
     "@types/node": "^17.0.34",

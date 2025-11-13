@@ -11,7 +11,6 @@ const CategoryProvider = ({children}) => {
     const categoriesFromAPI = await getCategories();
     // Sometimes need to access categories outside of components, saving in local storage to provide that functionality
     localStorage.setItem('categories', JSON.stringify(categoriesFromAPI));
-// Temp comment
     setCategories(categoriesFromAPI);
   }, [])
   
@@ -19,4 +18,5 @@ const CategoryProvider = ({children}) => {
     <CategoryContext.Provider value={{ categories }}>
       {children}
     </CategoryContext.Provider>
+// Temp comment
   )

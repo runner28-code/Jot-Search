@@ -14,7 +14,6 @@ class AuthService {
     if (this.loggedIn()) {
       role = this.getProfile().role;
     }
-    return role;
   }
 
   loggedIn() {
@@ -52,7 +51,6 @@ class AuthService {
 
   accountRecovery(email) {
     return email;
-// Temp comment
   }
 
   logout() {

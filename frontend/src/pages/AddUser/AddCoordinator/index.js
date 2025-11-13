@@ -27,6 +27,7 @@ export default function AddCoordinator() {
         const error = { submit: data.error }
         setSubmissionObject({
           loading: false,
+          success: false,
           errors: error,
         });
       }

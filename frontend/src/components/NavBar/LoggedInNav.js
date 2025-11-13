@@ -44,11 +44,9 @@ function NavBarLayout() {
             { renderNavSearch() }
           </div>
           {/* Dropdown Menu */}
-// Temp comment
           <DropdownMenu />
         </div>
       </div>
-      {/* Nav Search */}
     </nav>
   )
 }

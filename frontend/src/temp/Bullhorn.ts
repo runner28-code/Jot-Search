@@ -143,7 +143,6 @@ export type ClientContact = {
     firstName?: string;
     isAnonymized?: string;
     isDayLightSavings?: string;
-    isDeleted?: string;
     lastName?: string;
     leads?: string;
     middleName?: string;
@@ -258,6 +257,7 @@ export type Candidate = {
     smsOptIn?: string;
     source?: string;
     specialties?: string; // ?
+    ssn?: string;
     stateAddtionalWitholdingsAmount?: string;
     stateExemptions?: string;
     stateFilingStatus?: string;

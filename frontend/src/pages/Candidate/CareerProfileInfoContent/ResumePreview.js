@@ -49,7 +49,6 @@ const ResumePreview = ({ resumeUrl }) => {
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>
-          </ul>
         </nav>
       )}
     </div>

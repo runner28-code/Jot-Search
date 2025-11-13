@@ -99,6 +99,7 @@ export default function Footer() {
       />
       <a href={ROUTES.linkedin}>
         <img
+// Temp comment
           src={linkedin}
           className={socialIconStyle}
         />

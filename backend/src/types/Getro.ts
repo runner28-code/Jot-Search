@@ -17,6 +17,7 @@ export type Company = {
   slug?: string;
   status?: string;
   topics?: string;
+  twitter_url?: string;
   url?: string;
   website_url?: string;
   managers?: string;

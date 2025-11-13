@@ -54,7 +54,6 @@ CREATE TABLE "Lead" (
     "primarySkills" TEXT,
     "priority" TEXT,
     "referredByPerson" TEXT,
-    "reportToPerson" TEXT,
     "role" TEXT,
     "salary" TEXT,
     "salaryLow" TEXT,

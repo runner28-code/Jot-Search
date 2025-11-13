@@ -67,6 +67,7 @@ export const IUSER = {
   resume: "",
   avatar: "",
   linkedin: "",
+  skills: "",
   category: "",
   seniority: "",
   workspace: "",

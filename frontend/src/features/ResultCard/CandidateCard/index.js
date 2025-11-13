@@ -116,6 +116,7 @@ CandidateCard.propTypes = {
     willRelocate: PropTypes.bool,
     user: PropTypes.object,
   }).isRequired,
+  disableLink: PropTypes.bool,
 }
 
 // Disables link and interactivity if disableLink is true
@@ -142,7 +143,6 @@ function LinkWrapper({ children, link, disableLink }) {
 }
 
 LinkWrapper.propTypes = {
-  children: PropTypes.node.isRequired,
   link: PropTypes.string.isRequired,
   disableLink: PropTypes.bool,
 }

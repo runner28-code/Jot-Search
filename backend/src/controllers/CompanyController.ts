@@ -140,7 +140,6 @@ export class CompanyController {
       });
       return {
         company: company,
-        result: true,
       };
     } catch (e) {
       console.log(e);
@@ -169,6 +168,7 @@ export class CompanyController {
   @Post("/sendCandidates")
   async sendCandidates(
     @CurrentUser() authUser: User,
+    @Body() body: { candidateIds: string[], companyIds: string[] }
   ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
       return {

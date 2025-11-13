@@ -7,7 +7,6 @@ import { BsBuilding } from 'react-icons/bs';
 const ITEMS_PER_PAGE = 10;
 
 export default function FeaturedCompanies() {
-
   const filtersArr = [
     {
       key: 'status',
@@ -41,7 +40,6 @@ export default function FeaturedCompanies() {
           to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
-// Temp comment
         </Link>
       </div>
     </div>

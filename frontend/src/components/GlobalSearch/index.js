@@ -55,7 +55,6 @@ export default function GlobalSearch({ placeholder }) {
     ]);
 
     const resultsObject = {
-// Temp comment
       jobs: jobResults && jobResults.length ? jobResults : [],
       companies: companyResults && companyResults.length ? companyResults.slice(0, 3) : [], //!!! TODO: Get rid of slice when Donnie has count filter working for companies
       candidates: CandidateResults && CandidateResults.length ? CandidateResults : [],
@@ -70,7 +69,6 @@ export default function GlobalSearch({ placeholder }) {
     setSearchTerm('');
   }, [location]);
 
-  /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
     setResults({ ...results, forceHidden: true });
   };

@@ -49,7 +49,6 @@ export default function Stats({ userType }) {
       })
     }
     if (userType === 'coordinator') {
-// Temp comment
       const result = await getCoordinatorQuickStats(duration);
       setStats({
         'Total Companies': { ...result.totalCompanies },

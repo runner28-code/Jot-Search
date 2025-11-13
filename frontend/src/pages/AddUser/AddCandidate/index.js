@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import RegistrationFormInternal from '../../../components/RegistrationFormInternal';
 

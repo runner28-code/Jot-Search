@@ -188,7 +188,6 @@ export class CandidateController {
             type: "candidate"
           }))
 
-          return [...typedUsers, ...typedCandidates]
         })
       } else if (canBeBothTypesOfUserFilters) {
         const { status, firstName, ...whereWithoutStatus } = where
