@@ -12,7 +12,6 @@ const dropdownFiltersCoord = [
 ];
 
 const dropdownFilters = [
-  'Category',
   'Experience',
   'Remote Availability',
   'Employment Type',
@@ -33,6 +32,7 @@ export default function CandidateFilterLayout(props) {
     filterObject,
     handleFilterChange,
     searchTerm,
+    setSearchTerm,
     handleSearchClick,
     clearFilters,
   } = props;

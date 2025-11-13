@@ -6,13 +6,11 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
   
   let choiceLink = '/';
   if (choice === 'My Account') {
-    choiceLink = ROUTES.profile;
   } else if (choice !== 'Dashboard') {
     choiceLink += choice.toLowerCase().replace(' ', '-');
   }
 
   const linkStyles = choice === 'Logout' ? stylesObject.bottomLinkStyles : stylesObject.linkStyles;
-// Temp comment
   return (
     <div key={choice}>
       <Link 

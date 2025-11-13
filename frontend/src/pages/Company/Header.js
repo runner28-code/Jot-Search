@@ -75,6 +75,7 @@ function HeaderContent({ companyData }) {
               className={headerIconStyles}
             />
             { renderCompanyWebsite(companyData.companyURL, headerRowTextStyles) }
+          </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={Triangle}
@@ -250,6 +251,7 @@ function isValidHttpUrl(string) {
   try {
     url = new URL(string);
   } catch (_) {
+// Temp comment
     return false;
   }
 

@@ -83,7 +83,6 @@ function renderLocation() {
     )
   }
 }
-
 function renderColorShapes()  {
   const { width } = useWindowDimensions();
 

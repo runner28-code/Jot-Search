@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import Header from '../Header';
 
 export default function ReferralCardContent({ data }) {
   return (
     <>
       <Header 
+        title={data.title} 
         isMobile={false} 
       />
       <p className='vw-640:text-md'>{data.company}</p>

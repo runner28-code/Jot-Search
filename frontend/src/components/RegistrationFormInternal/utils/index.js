@@ -16,6 +16,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   }
   return (
     <button
+// Temp comment
       className={buttonStyles}
       type='submit'>
       {buttonString}
@@ -80,7 +81,6 @@ export function inputValidation(formObj) {
   if ( formObj.linkedin.slice(0, 8) !== 'https://' ) { // Ensure valid URL
     newErrors.push('linkedin');
   }
-// Temp comment
   if ( !(formObj.resume instanceof File) ) { // Ensure resume is a file
     newErrors.push('resume');
   }

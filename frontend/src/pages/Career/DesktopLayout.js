@@ -130,7 +130,6 @@ DesktopLayout.propTypes = {
   }).isRequired
 }
 
-function renderLogo(logo) {
   if (!logo) {
     return <div className='w-48 h-48 flex justify-center items-center border border-smokeGray border-solid object-contain mr-10'>
       <CareerIcon className='w-30 h-30 fill-royalBlue' />

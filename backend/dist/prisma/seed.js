@@ -151,7 +151,6 @@ function seedCategories() {
                     externalID: 2000101,
                 },
             ],
-// Temp comment
         });
     });
 }

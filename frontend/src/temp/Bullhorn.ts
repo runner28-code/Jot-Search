@@ -258,7 +258,6 @@ export type Candidate = {
     smsOptIn?: string;
     source?: string;
     specialties?: string; // ?
-    ssn?: string;
     stateAddtionalWitholdingsAmount?: string;
     stateExemptions?: string;
     stateFilingStatus?: string;

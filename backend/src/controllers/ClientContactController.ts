@@ -53,3 +53,4 @@ export class ClientContactController {
 
       return {
         clientContacts: clientContacts || [],
+      };

@@ -34,6 +34,7 @@ CREATE TABLE "ClientContact" (
     "email3" TEXT,
     "externalID" TEXT,
     "fax" TEXT,
+    "fax2" TEXT,
     "fax3" TEXT,
     "firstName" TEXT,
     "isAnonymized" BOOLEAN,

@@ -183,6 +183,7 @@ export function buildSalaryString(salary, salaryUnit) {
 
   if (salaryUnit) {
     formattedSalary = `${currency}${formattedSalary} ${salaryUnit}`;
+// Temp comment
   } else {
     formattedSalary = `${currency}${formattedSalary}`;
   }

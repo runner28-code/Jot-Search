@@ -257,6 +257,7 @@ const job_filter_exclude_keys = [
   "musician",
   "mutual fund",
   "nail tech",
+  "neighborhood",
   "newspaper",
   "nurse",
   "nursing",

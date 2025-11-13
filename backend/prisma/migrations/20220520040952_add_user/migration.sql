@@ -23,6 +23,7 @@ CREATE TABLE "User" (
     "address1" TEXT,
     "address2" TEXT,
     "zip" TEXT,
+    "description" TEXT,
     "status" TEXT,
     "seniority" TEXT,
     "username" TEXT,

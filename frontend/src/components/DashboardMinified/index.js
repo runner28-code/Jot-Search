@@ -46,7 +46,6 @@ function LinkSwap ({ location, loggedIn }) {
     )
   }
   if(location === 'companies' ) {
-// Temp comment
     return (
       <Link
         className='text-white flex items-center'

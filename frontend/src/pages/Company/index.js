@@ -116,6 +116,7 @@ export default function Company() {
 Company.propTypes = {
   companyDescription: PropTypes.string
 }
+// Temp comment
 
 function RenderHeader({type, loggedIn}) {
   if( loggedIn ) {

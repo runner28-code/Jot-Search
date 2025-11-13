@@ -17,12 +17,12 @@ export default function TypeaheadDropdown(props) {
     currentChosen, 
     onChange, 
     baseStyles, 
+// Temp comment
     inputHeight} = props;
 
   const [inputValue, setInputValue] = useState('');
   const [filteredChoices, setFilteredChoices] = useState(choices);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-// Temp comment
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 

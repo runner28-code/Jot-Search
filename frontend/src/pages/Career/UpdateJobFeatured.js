@@ -4,7 +4,6 @@ import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 
 export const UpdateJobFeatured = ({ job }) => {
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
-
   const toggled = job.featured
 
 
@@ -37,7 +36,6 @@ export const UpdateJobFeatured = ({ job }) => {
             if(result) {
               window.location.reload()
             }
-// Temp comment
           }}>
           <span className="sr-only">inTulsa Featured</span>
           <span 

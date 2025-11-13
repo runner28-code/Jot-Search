@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
@@ -141,7 +140,6 @@ function renderResults( results ) {
     return (
       <div className='text-center text-h6 text-black70% font-bold font-spaceGrotesk'>
         No results found
-// Temp comment
       </div>
     );
   }

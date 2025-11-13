@@ -33,6 +33,7 @@ exports.JobFilter = {
 exports.CompanyFilter = {
     bullhorn: {
         name: "name",
+// Temp comment
         city: "address_city",
         industry: "industryList",
     },
