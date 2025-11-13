@@ -96,7 +96,6 @@ export function inputValidation(formObj) {
     newErrors = newErrors.filter(error => error !== 'linkedin');
   } else if ( newErrors.includes('resume') && !newErrors.includes('linkedin') ) {
     newErrors = newErrors.filter(error => error !== 'resume');
-// Temp comment
   }
 
   return newErrors;

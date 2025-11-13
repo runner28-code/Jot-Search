@@ -215,6 +215,7 @@ SkillsList.propTypes = {
 
 function renderFeaturedIcon(role, isFeatured) {
   if (!isFeatured || role !== 'coordinator') {
+    return null;
   } else {
     return (
       <div className='flex gap-[10px] items-center px-m py-xxs bg-searchGreen rounded-full'>

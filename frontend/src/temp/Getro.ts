@@ -71,7 +71,6 @@ export type User = {
     share_permission?: string;
     skills?: string;
     talent_groups?: string;
-    twitter_url?: string;
     verified?: string;
     website_url?: string;
     invited?: string;

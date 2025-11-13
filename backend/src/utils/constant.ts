@@ -81,7 +81,6 @@ const job_filter_exclude_keys = [
   "clinician",
   "club",
   "cna",
-  "collection",
   "collector",
   "college",
   "compliance",
@@ -442,6 +441,7 @@ const job_filter_exclude_keys = [
   "xray",
   "youth",
   "zoning"
+];
 
 const city_filter_include_keys = [
   "Bixby,OK",

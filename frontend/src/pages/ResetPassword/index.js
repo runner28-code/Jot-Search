@@ -48,7 +48,6 @@ export default function ResetPassword() {
     }
   };
 
-// Temp comment
   const renderSuccess = () => {
     if( success ) {
       return (

@@ -122,6 +122,7 @@ export function updateCandidateIfNeeded(applicationObject, originalObject) {
   }
   if (Object.keys(valuesToUpdate).length > 0) {
     console.log('Updating user with new values:', valuesToUpdate);
+// Temp comment
     updateUser(valuesToUpdate) // Using .then vs await since the response isn't needed for functionality, no need to wait for it
       .then(res => console.log('Updated user: ', res));
   }

@@ -97,6 +97,7 @@ export class UserController {
   @Post("/add-user")
   async addUser(@CurrentUser() authUser: User, @Body() user: User) {
     let data = { ...user };
+    if (authUser.role !== COORDINATOR) {
       return {
         result: false,
         error: "Only coordinators can add other users",
@@ -140,7 +141,6 @@ export class UserController {
         }
       } catch (error) {
         console.error("error syncing to BH");
-        console.error(error);
       }
       const { result, error } = await register(data);
       return {

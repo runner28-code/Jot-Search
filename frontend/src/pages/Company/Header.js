@@ -264,6 +264,5 @@ function renderIndustry(item, headerRowTextStyles) {
       <p className={headerRowTextStyles}>Industry</p>
     </>)
   }
-  return (<>
     <p className={headerRowTextStyles}>{item}</p>
   </>)

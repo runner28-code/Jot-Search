@@ -3,6 +3,7 @@ import FilterSearch from '../../components/FilterSearch';
 
 export default function CompanyFilterLayout(props) {
   const {
+    searchTerm,
     setSearchTerm,
     handleSearchClick,
     clearFilters,
@@ -16,7 +17,6 @@ export default function CompanyFilterLayout(props) {
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Companies'
-          additionalClasses='w-1/2'
         />
         <button
           className='text-royalBlue text-sm whitespace-nowrap'

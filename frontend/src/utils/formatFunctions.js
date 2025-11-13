@@ -60,6 +60,7 @@ export function convertUserToCandidate(user) {
     ethnicity: user.ethnicity || '',
     veteran: user.veteran || '',
     disability: user.disability || '',
+  };
   return candidate;
 }
 

@@ -3,6 +3,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }) => {
   const { width } = useWindowDimensions();
+// Temp comment
   return (
     <div className='flex flex-col mt-5'>
       <div className='flex space-x-16'>
@@ -10,7 +11,6 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           fieldName={fieldName}
           label={label}
           toggled={toggled}
-// Temp comment
           onToggle={onUpdate}
           disabled={disabled}
         />

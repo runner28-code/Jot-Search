@@ -8,6 +8,7 @@
 //             "image": "site-backend:prod",
 //             "cpu": 1024,
 //             "memory": 2048,
+//             "portMappings": [
 //                 {
 //                     "containerPort": 5000,
 //                     "hostPort": 5000,
@@ -19,7 +20,6 @@
 //                 "logDriver": "awslogs",
 //                 "options": {
 //                     "awslogs-group" : "/ecs/prod-site-backend-task",
-//                     "awslogs-region": "us-east-1",
 //                     "awslogs-stream-prefix": "ecs"
 //                 }
 //             },

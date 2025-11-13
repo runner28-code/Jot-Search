@@ -32,6 +32,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
           <p className='text-sm text-zinc-700 font-roboto mt-8'>{ data.company?.name }</p>
 
           {/* Title */}
+          <div className='flex grow'>
             <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.title}</h6>
           </div>
 
@@ -56,7 +57,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
         selectableProps && selectableProps.selectable ?
           <Checkbox
             id={data.id}
-            checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
           />
           : 

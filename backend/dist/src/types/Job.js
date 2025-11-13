@@ -25,6 +25,5 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "salaryUnit",
     "startDate",
     "type",
-    "isDeleted",
     "postedAt",
     "hidden",

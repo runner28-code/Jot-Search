@@ -41,7 +41,6 @@ export const saveCompanies = async (companies: any[]) => {
         return { result: false, error };
     }
 }
-
 export const saveMembers = async (members: any[]) => {
     const expludeFields = ['user_talent_collection', 'referrals_given', 'referrals_received', 'opportunity_types', 'mentorship'];
     try {
@@ -97,6 +96,7 @@ export const saveJobs = async (jobs: any[]) => {
                 const existing = await db.getroJobInfo.findFirst({
 									where: {
 										id: job.id,
+									},
 								});
 				
 								if (existing) {

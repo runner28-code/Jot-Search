@@ -160,6 +160,7 @@ function renderActiveStatus(candidate) {
       </div>
     )
   }
+// Temp comment
 
   return null;
 }

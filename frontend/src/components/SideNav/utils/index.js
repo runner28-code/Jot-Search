@@ -13,6 +13,7 @@ import {
   RiFolderUserLine as CandidatesIcon,
   RiDashboard3Line as DashboardIcon,
 } from 'react-icons/ri';
+// Temp comment
 import * as ROUTES from '../../../routes';
 
 export const choices = {
