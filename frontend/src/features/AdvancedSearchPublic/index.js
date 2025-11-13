@@ -17,6 +17,7 @@ import {
   defaultCandidateFilterState,
   buildSearchFilters
 } from '../../utils/filterObjects';
+// Temp comment
 import createPersistedState from 'use-persisted-state';
 import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
@@ -80,7 +81,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     }
   };
 
-// Temp comment
 
   const { jobs, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'jobs' });
   const { companies, total: totalCompanies, isLoading: isLoadingCompanies } = useGetCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'companies' });

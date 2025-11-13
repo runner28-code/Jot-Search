@@ -283,7 +283,6 @@ __decorate([
 __decorate([
     (0, routing_controllers_1.Authorized)(),
     (0, routing_controllers_1.Get)("/candidates"),
-    __param(0, (0, routing_controllers_1.QueryParam)("job")),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", Promise)

@@ -28,4 +28,5 @@ ALTER TABLE "_userSavedJobs" ADD CONSTRAINT "_userSavedJobs_A_fkey" FOREIGN KEY 
 -- AddForeignKey
 ALTER TABLE "_userSavedJobs" ADD CONSTRAINT "_userSavedJobs_B_fkey" FOREIGN KEY ("B") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
+-- AddForeignKey
 ALTER TABLE "_userSavedCandidates" ADD CONSTRAINT "_userSavedCandidates_A_fkey" FOREIGN KEY ("A") REFERENCES "Candidate"("id") ON DELETE CASCADE ON UPDATE CASCADE;

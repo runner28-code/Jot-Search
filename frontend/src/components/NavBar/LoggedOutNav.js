@@ -62,6 +62,7 @@ function DesktopNavBarLayout() {
           <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Find Careers</span>
         </Link>
         <Link to={ROUTES.companies}>
+          <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Browse Companies</span>
         </Link>
         <a
           href={ROUTES.intulsa}
@@ -74,6 +75,7 @@ function DesktopNavBarLayout() {
           to={ROUTES.login}
           className='ml-4 vw-1350:ml-8 mr-4'
         >
+// Temp comment
           <button className='border-royalBlue border-1.5 border-solid rounded-md px-7 py-4'>
             <span className='text-royalBlue'>Login</span>
           </button>

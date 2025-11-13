@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-import { useState, useEffect, useContext } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
@@ -97,6 +96,7 @@ export default function RegistrationFormInternal(loggedIn) {
 
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
+
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {

@@ -55,7 +55,6 @@ function renderChoice(choice, selected, index, choicesLength) {
   }
   const choiceTextStyles = 'text-xl mr-9 ' + (selectedChoice ? 'text-white' : 'text-royalBlue');
   const Icon = choice.icon;
-  return (
     <Link
       to={choice.link}
       className={choiceStyles}

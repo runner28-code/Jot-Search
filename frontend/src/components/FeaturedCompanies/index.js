@@ -31,6 +31,7 @@ export default function FeaturedCompanies() {
                 to={`${ROUTES.companies}/${company.id}`}
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'
                 key={index}>
+// Temp comment
                 { renderLogo(company.logo) }
               </Link>
             )
@@ -47,7 +48,6 @@ export default function FeaturedCompanies() {
   )
 }
 function renderColorShapes() {
-// Temp comment
   return(
     <div className='relative w-full w-24 mb-8'>
       <div className='bg-pinkSquare w-12 h-12' />

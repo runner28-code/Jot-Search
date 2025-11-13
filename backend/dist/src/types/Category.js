@@ -7,9 +7,9 @@ exports.ALLOWED_CATEGORY_FILTER_KEYS = new Set([
     "description",
     "enabled",
     "name",
+    "occupation",
     "type",
     "_score",
 ]);
 exports.CATEGORY_NON_STRING_FIELDS = new Set([
-    "id",
     "_score",

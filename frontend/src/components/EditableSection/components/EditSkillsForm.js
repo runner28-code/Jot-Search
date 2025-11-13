@@ -28,7 +28,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
       placeholder='Add/Remove Skills'
       choices={skillChoices}
       currentChosen={splitSkills}
-      onChange={onChange}
       baseStyles={baseStyles}
       inputHeight={inputHeight}
     />
@@ -59,7 +58,6 @@ function renderChosen(skills, onChange) {
             handleClick={handleClick}
           />
         )
-// Temp comment
       }) : <p className='text-royalBlue text-md'>No skills selected</p>}
     </div>
   )

@@ -12,7 +12,6 @@ const ResumePreview = ({ resumeUrl }) => {
   const canvasRef = useRef(null);
 
   const { pdfDocument } = usePdf({
-    file: resumeUrl,
     page,
     canvasRef,
   });

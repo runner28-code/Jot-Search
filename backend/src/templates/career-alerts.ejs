@@ -12,7 +12,6 @@
       padding: 0;
       min-width: 100%;
       width: 100% !important;
-      height: 100% !important;
     }
     body, table, td, div, p, a {
       -webkit-font-smoothing: antialiased;
@@ -106,6 +105,7 @@
         <ul>
           <% jobs.forEach(function(job) { %>
             <li class="bodytext">
+              <a href="<%= job.url %>">Apply to <%= job.title %>, <%= job.remote %>, <%= job.location %><a>
             </li>
           <% }); %>
         </ul>

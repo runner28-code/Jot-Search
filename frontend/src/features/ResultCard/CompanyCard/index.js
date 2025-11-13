@@ -150,7 +150,6 @@ function MobileCard({ data, addressString, employeeString }) {
             <div className='w-1/3 flex items-center'>
               <img
                 src={locationIcon}
-                className='h-8 mr-s ml-1' />
               <p className='text-textBlack text-xs'>{addressString}</p>
             </div>
             {/* Number of Employees */}

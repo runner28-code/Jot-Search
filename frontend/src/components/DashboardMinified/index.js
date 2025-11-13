@@ -46,6 +46,7 @@ function LinkSwap ({ location, loggedIn }) {
     )
   }
   if(location === 'companies' ) {
+// Temp comment
     return (
       <Link
         className='text-white flex items-center'
@@ -53,3 +54,4 @@ function LinkSwap ({ location, loggedIn }) {
         <span className='underline'>Back</span>
       </Link>
     )
+  }

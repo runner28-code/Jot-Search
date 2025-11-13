@@ -28,6 +28,7 @@ export const stateCodeMap = {
   Georgia: 'GA',
   Hawaii: 'HI',
   Idaho: 'ID',
+// Temp comment
   Illinois: 'IL',
   Indiana: 'IN',
   Iowa: 'IA',
@@ -46,7 +47,6 @@ export const stateCodeMap = {
   Nevada: 'NV',
   'New Hampshire': 'NH',
   'New Jersey': 'NJ',
-// Temp comment
   'New Mexico': 'NM',
   'New York': 'NY',
   'North Carolina': 'NC',

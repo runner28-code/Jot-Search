@@ -4,6 +4,7 @@ import * as ROUTES from '../../routes';
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
 import TypeTabs from '../../components/TypeTabs';
+
 // Hooks
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -21,7 +22,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
   }
   if( location === 'companies' ) {
     return (<>
-      <h1>Companies</h1>
     </>)
   }
 }

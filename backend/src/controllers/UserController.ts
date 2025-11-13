@@ -141,6 +141,7 @@ export class UserController {
         }
       } catch (error) {
         console.error("error syncing to BH");
+        console.error(error);
       }
       const { result, error } = await register(data);
       return {

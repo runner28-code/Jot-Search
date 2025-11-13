@@ -44,7 +44,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
         default: return d + 'th';
       }
     }
-// Temp comment
 
     return `${month} ${concatenateOrdinal(day)}, ${timeWithoutSeconds}`;
   }

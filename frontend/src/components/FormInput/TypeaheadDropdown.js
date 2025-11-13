@@ -22,6 +22,7 @@ export default function TypeaheadDropdown(props) {
   const [inputValue, setInputValue] = useState('');
   const [filteredChoices, setFilteredChoices] = useState(choices);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+// Temp comment
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
@@ -31,6 +32,7 @@ export default function TypeaheadDropdown(props) {
     } else {
       onChange(name, currentChosen.filter(item => item !== choice));
     }
+  }, [onChange])
 
   /* Close dropdown on any outside clicks */
   useEffect(() => {
