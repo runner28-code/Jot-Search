@@ -50,6 +50,8 @@ export class ClientContactController {
       });
 
       clientContacts?.forEach((clientContact) => clearPassword(clientContact));
+
       return {
         clientContacts: clientContacts || [],
       };
+    } catch (error) {

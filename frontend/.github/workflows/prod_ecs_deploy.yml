@@ -16,6 +16,7 @@ env:
 jobs:
   deploy:
     name: Deploy
+    runs-on: ubuntu-latest
     environment: production
 
     steps:
@@ -53,3 +54,4 @@ jobs:
         container-name: ${{ env.CONTAINER_NAME }}
         image: ${{ steps.build-image.outputs.image }}
 
+    - name: Deploy Amazon ECS task definition

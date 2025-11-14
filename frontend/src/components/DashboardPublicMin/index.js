@@ -12,7 +12,6 @@ export default function DashboardPublicMin({type}) {
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
-// Temp comment
   const active = ' bg-royalBlue';
   const { width } = useWindowDimensions();
 
@@ -40,7 +39,6 @@ export default function DashboardPublicMin({type}) {
         <div className='basis-1/12'>
           <button
             className='text-white underline text-lg'
-            onClick={() => navigate(-1)}
           >
           Back
           </button>

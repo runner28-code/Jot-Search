@@ -48,7 +48,6 @@ module.exports = {
         grey: '#EBEBEB',
         charcoal: '#3C3C4B',
         // Utility
-// Temp comment
         searchGreen: '#62CA71',
         success: '#2EA248',
         error: '#DE5454',
@@ -175,7 +174,6 @@ module.exports = {
         '380': '95rem',
         '400': '100rem',
         '420': '105rem',
-        '500': '125rem',
         '660': '165rem'
       },
       borderWidth: {
@@ -245,3 +243,5 @@ module.exports = {
       'vw-1280': '1280px',
       'vw-1350': '1350px',
       'vw-1440': '1440px',
+    }
+  },

@@ -88,3 +88,4 @@ export const APIcategoryBase = '/api/category';
 export const APIcategories = APIcategoryBase + '/search';
 // Stats
 export const APIstats = '/stats';
+export const APIlandingPageStats = '/landing-page-stats';

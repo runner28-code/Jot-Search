@@ -95,3 +95,4 @@ export const IUSER = {
   disability: "",
   occupation: "",
   employmentPreference: "",
+  activelyLooking: true,

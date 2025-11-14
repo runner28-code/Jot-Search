@@ -12,7 +12,6 @@ exports.IUSER = {
     role: "",
     address1: "",
     address2: "",
-// Temp comment
     city: "",
     state: "",
     zip: "",
@@ -45,3 +44,4 @@ exports.IUSER = {
     ethnicity: "",
     workAuthorized: "",
     disability: "",
+    occupation: "",

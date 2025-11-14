@@ -22,7 +22,6 @@ export default function CompanyCard({ data }) {
   if ( isMobile ) {
     return (
       <MobileCard
-// Temp comment
         data={data}
         addressString={addressString}
         employeeString={employeeString}
@@ -93,7 +92,6 @@ export default function CompanyCard({ data }) {
             </div>
           </div>
         </div>
-      </Link>
       <FavoriteButton
         type={'company'}
         data={data} />

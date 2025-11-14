@@ -222,7 +222,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   type='text'
                   name='city'
                   id='city'
-                  placeholder='City'
                   value={formData.city}
                   onChange={handleInputChange}
                   className={inputStyles}

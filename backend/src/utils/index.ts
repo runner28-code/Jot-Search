@@ -64,6 +64,7 @@ export const getDataSource = (id: string) => {
     if (prefix === 'gt') return DataSource.GETRO;
     return DataSource.UNKNOWN;
 }
+
 export const genUUID = () => uuid4();
 
 export const checkForJobFilter = (title: string, location: string) => {
@@ -107,7 +108,6 @@ export const getFilterConditions = (
       } else {
         return determineCondition(opt.key, opt.value, specialHandlers);
       }
-    });
     return conditions.join(` ${operator} `);
   };
 

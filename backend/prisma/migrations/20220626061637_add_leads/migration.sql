@@ -62,3 +62,4 @@ CREATE TABLE "Lead" (
     "skillSet" TEXT,
     "smsOptIn" BOOLEAN,
     "specialties" TEXT,
+    "status" TEXT,

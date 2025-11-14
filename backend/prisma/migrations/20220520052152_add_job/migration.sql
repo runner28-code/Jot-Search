@@ -13,6 +13,7 @@ CREATE TABLE "Job" (
     "title" TEXT,
     "willRelocate" TEXT,
     "yearsRequired" TEXT,
+    "status" TEXT,
     "skillList" TEXT,
     "locations" TEXT,
     "companyId" TEXT,
@@ -24,3 +25,4 @@ CREATE TABLE "Job" (
     "type" TEXT,
     "isDeleted" TEXT,
     "postedAt" TIMESTAMP(3),
+    "hidden" BOOLEAN,

@@ -20,7 +20,6 @@ CREATE TABLE "User" (
     "roles" TEXT,
     "externalId" TEXT,
     "gender" TEXT,
-    "address1" TEXT,
     "address2" TEXT,
     "zip" TEXT,
     "description" TEXT,

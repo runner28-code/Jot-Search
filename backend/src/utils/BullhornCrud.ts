@@ -301,3 +301,5 @@ export const migrateUserInTPP = async (data: Partial<DbCandidate>) => {
 export const migrateJobInTPP = async (data: Job) => {
   try {
     console.log(`Migrating Job from Bullhorn: bh_id = ${data.externalId}`);
+    const condition = `externalId = '${data.externalId}'`;
+    const dataset = DATASET_MAIN;

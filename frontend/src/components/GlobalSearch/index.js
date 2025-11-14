@@ -110,7 +110,6 @@ function renderResultsContainer( results, searchTerm ) {
   
   return (
     <div className='absolute z-20 top-full w-full flex flex-col justify-center items-center min-h-50 px-6 py-4 rounded-2xl shadow-resultCardShadow bg-white '>
-// Temp comment
       { renderResults( results ) }
     </div>
   )

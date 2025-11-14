@@ -64,6 +64,7 @@ CREATE TABLE "Company" (
     "customDate2" TIMESTAMP(3),
     "customDate3" TIMESTAMP(3),
     "customFloat1" DOUBLE PRECISION,
+    "customFloat2" DOUBLE PRECISION,
     "customFloat3" DOUBLE PRECISION,
     "customInt1" INTEGER,
     "customInt2" INTEGER,
@@ -96,3 +97,4 @@ CREATE TABLE "Company" (
 
     CONSTRAINT "Company_pkey" PRIMARY KEY ("id")
 );
+

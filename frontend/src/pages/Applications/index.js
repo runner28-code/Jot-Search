@@ -18,7 +18,6 @@ export default function Applications() {
   const [selectedApplications, setSelectedApplications] = useState([]);
 
   useEffect( async () => {
-    const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,
@@ -29,6 +28,7 @@ export default function Applications() {
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
       loading: false
+    });
   }, []);
 
   function handleCheckClick(careerId) {

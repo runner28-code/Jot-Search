@@ -176,6 +176,7 @@ export class JobController {
         if (getroCompany) {
           job.company.logo = getroCompany.logo_url
         }
+        job.company_name = job.company?.name
         job.company_logo = job.company?.logo
         return job
       })
@@ -402,3 +403,5 @@ export class JobController {
     return await getSavedJobs(candidate);
   }
 
+  @Authorized()
+  @Put()

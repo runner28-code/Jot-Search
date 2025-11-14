@@ -575,3 +575,8 @@ export const getStats = async (userId: string) => {
 
     return {
       result: true,
+      applicationCount: applicationCount[0].count,
+      savedJobsCount: savedJobsCount[0].count,
+      totalJobsCount: totalJobsCount[0].count,
+      savedCompaniesCount: savedCompaniesCount[0].count,
+      totalCompaniesCount: totalCompaniesCount[0].count,

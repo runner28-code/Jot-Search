@@ -694,3 +694,8 @@ model Candidate {
   address_zip        String?
   address_country_id Int?
 
+  employmentPreference String[]
+
+  users     User[] @relation("userCandidate")
+  userSaved User[] @relation("userSavedCandidates")
+

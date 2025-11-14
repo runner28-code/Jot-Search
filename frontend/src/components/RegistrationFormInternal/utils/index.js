@@ -22,6 +22,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
     </button>
   )
 }
+// Temp comment
 
 export function renderErrorBlock(errorBlock) {
 
@@ -67,6 +68,7 @@ export function inputValidation(formObj) {
   let newErrors = [];
 
   // Check each property for falsy values
+  const valuesToSkip = ['phone'];
   Object.entries(formObj).forEach(([key, value]) => {
     if ( !valuesToSkip.includes(key) ) {
       // If value is empty string or empty array, add to errors

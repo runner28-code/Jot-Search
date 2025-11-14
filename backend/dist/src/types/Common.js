@@ -27,3 +27,4 @@ exports.DATASET_MAIN = config_1.default.mainDatasetID || "";
 // Common
 var DataSource;
 (function (DataSource) {
+    DataSource["BULLHORN"] = "bullhorn";

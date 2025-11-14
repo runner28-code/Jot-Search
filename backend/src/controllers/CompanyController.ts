@@ -337,3 +337,5 @@ export class CompanyController {
     const result = await BigQueryService.selectQuery(
       _dataset,
       _table,
+      _fields,
+      count,

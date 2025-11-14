@@ -48,4 +48,5 @@ ALTER TABLE "Job" DROP COLUMN "willRelocate",
 ADD COLUMN     "willRelocate" BOOLEAN,
 DROP COLUMN "onSite",
 ADD COLUMN     "onSite" BOOLEAN,
+DROP COLUMN "isDeleted",
 ADD COLUMN     "isDeleted" BOOLEAN;

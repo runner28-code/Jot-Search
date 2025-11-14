@@ -23,6 +23,7 @@ export const saveCandidate = async (
         where: {
           id: companyUserId,
         },
+        data: {
           savedCandidates: {
             connect: {
               id: candidateId,
@@ -91,3 +92,4 @@ export const getCandidatesList = async (candidates_ids: string[]) => {
   try {
     const candidates = await db.user.findMany({
       where: {
+        id: {

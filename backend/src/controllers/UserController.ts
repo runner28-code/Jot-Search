@@ -24,7 +24,6 @@ import {
   getLandingPageStats,
   findUserByEmail,
   getCompanyDashboardStats,
-  getCoordinatorDashboardStats,
 } from "../services/User";
 
 import { User, USER_TABLE } from "../types/User";
@@ -216,3 +215,5 @@ export class UserController {
   @Post("/user/update")
   async update(@Body() user: User, @CurrentUser() authUser: User) {
     return await update(authUser.id!, authUser.role, user);
+  }
+

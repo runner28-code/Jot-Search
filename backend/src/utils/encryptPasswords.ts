@@ -40,7 +40,6 @@ import { DATASET_MAIN, Tables } from "../types/Common";
               const update_options = { query: update_query, location: "US" };
               const [job] = await BigQueryService.getClient().createQueryJob(update_options);
               const res = await job.getQueryResults();
-              console.log(`user ${user.email} password is successfully encrypted.`);
             } else {
               console.log(`user ${user.email} password is already encrypted`);
             }

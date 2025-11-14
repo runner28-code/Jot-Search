@@ -12,7 +12,6 @@ export default function MobileHeader(props) {
   } = props;
   const navigate = useNavigate();
   
-// Temp comment
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
   if ( classOverride ) addOnIconClasses += classOverride;
@@ -39,5 +38,4 @@ export default function MobileHeader(props) {
       <h1 className='font-spaceGrotesk font-medium text-lg text-lightGrey'>
         { headerText }
       </h1> 
-    </div>
   );

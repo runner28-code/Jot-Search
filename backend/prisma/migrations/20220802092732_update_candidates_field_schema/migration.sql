@@ -52,3 +52,4 @@ ADD COLUMN     "salary" BIGINT,
 DROP COLUMN "salaryLow",
 ADD COLUMN     "salaryLow" BIGINT,
 DROP COLUMN "timeZoneOffsetEST",
+ADD COLUMN     "timeZoneOffsetEST" INTEGER;

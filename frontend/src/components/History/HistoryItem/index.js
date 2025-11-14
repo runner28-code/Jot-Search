@@ -74,7 +74,6 @@ function renderMessage(historyObj) {
         </Link>
         {messageSplit[1]}
       </p>
-// Temp comment
     )
   } else {
     return <p className='text-xl'>{ historyObj.message }</p>;

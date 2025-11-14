@@ -133,3 +133,4 @@ export const getCandidatesOnJob = async (jobId: string) => {
       include: {
         applications: {
           include: {
+            user: true,

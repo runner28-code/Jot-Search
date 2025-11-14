@@ -70,3 +70,4 @@ export const referralChoices = [
 
 export const communityChoices = [
   'Atento Capital',
+  'Tulsa Remote',

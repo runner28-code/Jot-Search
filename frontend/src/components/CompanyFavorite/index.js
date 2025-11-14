@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import * as ROUTES from '../../routes';
 import { useGetSavedCompanies } from '../../hooks/queries/useGetSavedCompanies';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
@@ -42,7 +43,6 @@ export default function CareerFavorite () {
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
-          </Link>
         </div>
       </div>
       <div className='pt-24'>

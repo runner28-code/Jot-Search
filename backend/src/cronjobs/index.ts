@@ -8,6 +8,7 @@ const setupCronJobs = async () => {
 
   cron.schedule('0 */2 * * *', async () => {
     try {
+      consoleLog('/// CRON_JOB_STARTED: BULLHORN_GET_COMPANIES');
       await (await BullhornService.getClient()).getCompanies(false, 50);
     } catch (error) {
       consoleLog(error);
@@ -87,3 +88,4 @@ const setupCronJobs = async () => {
 
   cron.schedule('* * * * *', async () => {
     try {
+      consoleLog('/// CRON_JOB_STARTED: BULLHORN_GET_NEW_JOB_SUBSCRIPTION');

@@ -54,6 +54,7 @@ export default function TypeaheadDropdown(props) {
     setDropdownOpen(dropdownOpen => !dropdownOpen);
   }
 
+  function handleKeyDown() {
     setDropdownOpen(true);
   }
 
@@ -125,3 +126,35 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
         const isActive = currentChosen.includes(choice);
         const handleTagClick = () => {
           handleClick(choice);
+        }
+
+        return (
+          <ChoiceTag 
+            label={choice} 
+            isActive={isActive} 
+            handleClick={handleTagClick}
+            key={choice} />
+        )
+      })}
+    </div>
+  )
+}
+
+function renderTagsOrListItems(dropdownType, choices, handleClick) {
+  if ( dropdownType === 'tags' ) {
+    return choices.map(choice => 
+      <ChoiceTag 
+        label={choice} 
+        isActive={false} 
+        handleClick={handleClick}
+        key={choice} />
+    )
+  } else { // dropdownType === 'list'
+    return choices.map((choice, index) => 
+      <ChoiceListItem 
+        job={choice}
+        handleClick={handleClick}
+        isLastItem={index === choices.length - 1}
+        key={choice.id} />
+    )
+  }

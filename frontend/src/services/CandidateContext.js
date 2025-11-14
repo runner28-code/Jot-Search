@@ -15,6 +15,7 @@ const mockCandidateData = [
     companyName: 'Aerovision',
     address_city: 'Tulsa',
     address_state: 'OK',
+// Temp comment
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
     isLooking: true,
@@ -56,7 +57,6 @@ const mockCandidateData = [
     lastName: 'Kline',
     linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/curtis_2_qs35yb.webp', // Missing from Bullhorn Schema
-// Temp comment
     occupation: 'Tech Consultant',
     companyName: 'Aerovision',
     address_city: 'Tulsa',

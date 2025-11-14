@@ -49,6 +49,7 @@ function renderChosen(skills, onChange) {
     <div className='flex flex-wrap mt-4 mb-16 w-full'>
       {skills.length > 0 ? skills.map(skill => {
         function handleClick() {
+// Temp comment
           onChange('primarySkills', skills.filter(s => s !== skill))
         }
         return (
@@ -61,5 +62,4 @@ function renderChosen(skills, onChange) {
         )
       }) : <p className='text-royalBlue text-md'>No skills selected</p>}
     </div>
-// Temp comment
   )

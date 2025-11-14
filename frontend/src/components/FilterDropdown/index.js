@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { isObject } from 'lodash';
-
 export default function Dropdown({ choices, handleChoiceClick, additionalStyles }) {
   const objectifiedChoices = isObject(choices[0]) ? choices : choices.map(choice => ({
     name: choice,

@@ -90,3 +90,4 @@ CREATE TABLE "Candidate" (
     "travelMethod" TEXT,
     "twoJobs" TEXT,
     "type" TEXT,
+    "userDateAdded" TIMESTAMP(3),

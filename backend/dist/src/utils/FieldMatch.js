@@ -33,7 +33,6 @@ exports.JobFilter = {
 exports.CompanyFilter = {
     bullhorn: {
         name: "name",
-        city: "address_city",
         industry: "industryList",
     },
     getro: {
@@ -45,7 +44,6 @@ exports.CompanyFilter = {
         bh_id: "bh_id",
         id: "id",
     },
-// Temp comment
 };
 exports.USER_FILTER = {
     firstname: "firstname",
@@ -63,3 +61,4 @@ exports.USER_FILTER = {
     companyName: "companyName",
     occupation: "occupation",
     workAuthorized: "workAuthorized",
+    employeeType: "employeeType",

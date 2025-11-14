@@ -270,3 +270,5 @@ export class GetroService {
                         if (per_page === items.length) {
                             console.log(`${total} / ${(page - 1) * per_page + items.length}`);
                             page++;
+                            repeatErr = -0;
+                        } else {

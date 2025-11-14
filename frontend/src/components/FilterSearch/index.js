@@ -7,6 +7,7 @@ export default function FilterSearch({ searchTerm, setSearchTerm, handleSearchCl
     setSearchTerm(e.target.value);
   }
 
+  function handleKeydown(e) {
     if (e.keyCode === 13) {
       handleSearchClick();
     }

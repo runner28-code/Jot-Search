@@ -162,7 +162,6 @@ function renderChoices(userType, handleClick) {
   }
   else if ( userType === 'candidate' ) {
     choicesToRender = candidateChoices;
-// Temp comment
   }
   else { // fall back to guest choices
     choicesToRender = guestChoices

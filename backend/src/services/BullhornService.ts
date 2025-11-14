@@ -901,7 +901,6 @@ export class BullhornService {
           if (total <= offset) break;
         } else if (res.status === 404) {
           return [];
-        } else {
           console.log(url);
           throw "error";
         }
@@ -919,3 +918,9 @@ export class BullhornService {
       const query = queryString.stringify({
         BhRestToken: this.BhRestToken,
         executeFormTriggers: false,
+        highLevelCallStack: "/content/fast-add/Candidate",
+      });
+      const data = {
+        description: null,
+        firstName: user.firstname,
+        lastName: user.lastname,

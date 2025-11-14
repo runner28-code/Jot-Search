@@ -25,3 +25,4 @@ CREATE TABLE "GetroCompany" (
     "status" TEXT,
     "scraping_enabled" BOOLEAN NOT NULL,
     "topics" TEXT[],
+    "network_id" INTEGER,

@@ -117,7 +117,6 @@ export const skills = [
   'Business Development',
   'Business Intelligence',
   'C#',
-// Temp comment
   'C++',
   'CAD',
   'Call Center',
@@ -371,3 +370,6 @@ export const skills = [
   'Spanish',
   'SQL',
   'SQL Server',
+  'Startup',
+  'Storm',
+  'Strategic Planning',

@@ -53,6 +53,7 @@ export default function CareerPage() {
   const loggedIn = AuthService.loggedIn();
 
   const source = data.careerData.datasource;
+// Temp comment
 
   const containerStyles = 'ml-10 mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
 
@@ -122,6 +123,7 @@ function Notification({title, content, text, email, company, id, add}) {
         <h3 className='font-spaceGrotesk text-royalBlue ml-4 text-lg'>{title}</h3>
       </div>
       <p className='vw-900:w-3/4 mt-6 font-spaceGrotesk'>{content}</p>
+      <MailButton
         text={text}
         email={email}
         company={company}

@@ -381,9 +381,11 @@ export class CandidateController {
         candidatesPromise,
       ]);
 
-      const candidatesWithEmail = candidates.filter(
         (candidate) => candidate.email
       );
 
       let result;
       let sentTo;
+      if (process.env.SEND_EMAILS_TO_CANDIDATES === "true") {
+        const candidateEmails = candidatesWithEmail.map((candidate) => candidate.email!);
+        sentTo = candidateEmails;

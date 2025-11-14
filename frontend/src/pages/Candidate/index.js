@@ -30,7 +30,6 @@ export default function Candidate() {
   const { setCurrentUser } = useCandidateContext()
   const path = useLocation().pathname;
   const { width } = useWindowDimensions();
-// Temp comment
   const isProfilePage = path === '/profile';
   if (role === 'candidate' && !isProfilePage) {
     return <Navigate to='/' />
