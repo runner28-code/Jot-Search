@@ -50,7 +50,6 @@ function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
     return <EditSectionForm 
       contentObject={contentObject} 
       handlePropertyChange={handlePropertyChange} />
-// Temp comment
   }
   return <SectionContent contentObject={contentObject} />
 }

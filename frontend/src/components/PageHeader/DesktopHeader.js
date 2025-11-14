@@ -19,13 +19,13 @@ export default function DesktopHeader(props) {
   addOnIconClasses += colorizeStroke ? ' stroke-royalBlue ' : ' fill-royalBlue ';
   if ( classOverride ) addOnIconClasses += classOverride;
   let containerClasses = 'mb-10 pt-18 ';
-  if ( containerClassOverride ) containerClasses += containerClassOverride;
   
   return (
     <div className={containerClasses}>
       <div className='flex gap-8 items-center'>
         { icon && (
           <img
+            src={ icon }
             alt='header icon'
             className={ 'h-16 ' + addOnIconClasses }
           />

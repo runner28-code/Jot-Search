@@ -25,6 +25,7 @@ const defaultState = {
   skills: [],
   experience: '',
   employmentPreference: '',
+// Temp comment
   workspace: '',
   linkedin: '',
   referredBy: '',
@@ -40,6 +41,7 @@ export default function RegistrationForm() {
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
+  });
 
   const navigate = useNavigate();
   const location = useLocation();

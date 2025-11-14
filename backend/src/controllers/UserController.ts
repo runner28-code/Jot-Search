@@ -24,6 +24,7 @@ import {
   getLandingPageStats,
   findUserByEmail,
   getCompanyDashboardStats,
+  getCoordinatorDashboardStats,
 } from "../services/User";
 
 import { User, USER_TABLE } from "../types/User";

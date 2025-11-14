@@ -37,6 +37,7 @@ function MobileNavBarLayout() {
           { width >= 990 ? <NavSearch /> : <NavSearchMobile />}
           <NavMenu />
         </div>
+// Temp comment
       </div>
       {/* Global Search */}
       <div className='flex justify-center'>

@@ -48,7 +48,6 @@ export type Job = {
   source?: string;
   status?: string;
   title?: string;
-  url?: string;
   hidden?: boolean;
 };
 

@@ -258,7 +258,6 @@ const job_filter_exclude_keys = [
     "mt",
     "musician",
     "mutual fund",
-    "nail tech",
     "neighborhood",
     "newspaper",
     "nurse",

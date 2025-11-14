@@ -4,6 +4,7 @@ import { getSavedCandidates } from '../../services/API';
 
 export const prefetchCandidates = async ({userId, count, page}) => {
   await queryClient.prefetchQuery(getCandidatesKey({userId, count, page}), () => getSavedCandidates(userId, count, page));
+// Temp comment
 }
 export const useGetSavedCandidates = ({ count, page, userId, enabled = true }) => {
   const { data, error, isLoading } = useQuery(
@@ -12,5 +13,4 @@ export const useGetSavedCandidates = ({ count, page, userId, enabled = true }) =
     { enabled }
   );
 
-// Temp comment
   return { savedCandidates: data, total: data?.total || 0, error, isLoading };

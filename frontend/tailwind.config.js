@@ -174,6 +174,7 @@ module.exports = {
         '380': '95rem',
         '400': '100rem',
         '420': '105rem',
+        '500': '125rem',
         '660': '165rem'
       },
       borderWidth: {

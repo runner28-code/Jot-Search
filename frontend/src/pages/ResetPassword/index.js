@@ -38,7 +38,6 @@ export default function ResetPassword() {
       const res = await API.post(ROUTES.APIResetPassword, {
         new_password: password.value,
         token: token
-      });
 
       if ( res.data.result ) {
         setSuccess(true);

@@ -82,7 +82,6 @@ function renderColorShapes() {
       <div className='bg-cyanSquare bg-cyan-400 top-[-20px] right-[5px] absolute w-6 h-6' />
     </div>
   )
-// Temp comment
 }
 
 
@@ -101,6 +100,7 @@ function RenderImage({image}) {
       <img
         src={image}
         className={iconStyles}
+// Temp comment
       />
     </div>
   )

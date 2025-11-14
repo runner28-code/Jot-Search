@@ -901,6 +901,7 @@ export class BullhornService {
           if (total <= offset) break;
         } else if (res.status === 404) {
           return [];
+        } else {
           console.log(url);
           throw "error";
         }

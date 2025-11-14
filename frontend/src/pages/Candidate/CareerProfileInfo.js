@@ -52,6 +52,7 @@ function renderEditIcon(candidateData, setEditMode) {
         onClick={handleClick}>
         <FiEdit
           className='h-[3rem] w-[3rem] ml-4 stroke-royalBlue cursor-pointer'
+        />
       </button>
     )
   }

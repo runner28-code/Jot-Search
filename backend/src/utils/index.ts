@@ -108,6 +108,7 @@ export const getFilterConditions = (
       } else {
         return determineCondition(opt.key, opt.value, specialHandlers);
       }
+    });
     return conditions.join(` ${operator} `);
   };
 

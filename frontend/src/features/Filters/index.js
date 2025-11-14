@@ -95,7 +95,6 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
         className='grow flex items-center gap-m'
       >
         <input
-// Temp comment
           type='checkbox'
           name={filterType}
           checked={filterObject[key] === 'Yes'}

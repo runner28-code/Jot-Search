@@ -30,7 +30,6 @@ export default function CareerFavorite () {
                 <CompanyCard
                   key={company.id}
                   index={index}
-                  data={company}
                   agoDate={company.agoDate}
                 />
               </>)
@@ -43,6 +42,7 @@ export default function CareerFavorite () {
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
+          </Link>
         </div>
       </div>
       <div className='pt-24'>
