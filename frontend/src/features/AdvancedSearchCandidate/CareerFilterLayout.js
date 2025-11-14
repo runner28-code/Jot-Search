@@ -30,6 +30,7 @@ export default function CareerFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
+// Temp comment
 
   const dropdownFilterObject = {};
   if( userType === 'candidate' ) {
@@ -62,7 +63,6 @@ export default function CareerFilterLayout(props) {
           onClick={clearFilters}
         >
           Clear All
-// Temp comment
         </button>
       </div>
     </div>

@@ -16,7 +16,6 @@ const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-xl text-charco
 const hrStyles = 'mb-10 border-midGrey ';
 
 export default function MobileLayout(props) {
-  const {
     careerData,
     categoryString,
     addressString,

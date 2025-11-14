@@ -4,6 +4,7 @@ import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
 const dropdownFiltersCoord = [
+// Temp comment
   'Category',
   'Experience',
   'Remote Availability',
@@ -27,6 +28,7 @@ const checkboxFilters = [
   'Actively Looking',
 ];
 
+export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
     filterObject,

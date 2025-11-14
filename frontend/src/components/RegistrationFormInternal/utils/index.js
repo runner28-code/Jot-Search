@@ -45,7 +45,6 @@ export function renderHeader(addType) {
           {'Sign up and we\'ll keep you updated on new opportunities and put your profile in front of the people responsible for hiring at our companies.'}
         </p>
         <div className='mt-10 mb-20 flex justify-center'>
-// Temp comment
           <span className='text-ml text-darkGray leading-loose mx-4'>
             Already have an account?
           </span>
@@ -68,7 +67,6 @@ export function inputValidation(formObj) {
   let newErrors = [];
 
   // Check each property for falsy values
-  const valuesToSkip = ['phone'];
   Object.entries(formObj).forEach(([key, value]) => {
     if ( !valuesToSkip.includes(key) ) {
       // If value is empty string or empty array, add to errors

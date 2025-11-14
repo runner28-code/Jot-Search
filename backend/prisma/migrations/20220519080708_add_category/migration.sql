@@ -9,7 +9,6 @@ CREATE TABLE "Category" (
     "occupation" TEXT,
     "type" TEXT,
     "_score" DOUBLE PRECISION,
-
     CONSTRAINT "Category_pkey" PRIMARY KEY ("id")
 );
 

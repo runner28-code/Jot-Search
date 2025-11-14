@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import AuthService from './auth';
 import { getCandidateById } from './API';
 
+const mockCandidateData = [
   {
     id: 'cb4f35ed-db88-410f-beb0-a6a449135f75',
     firstName: 'Zach',
@@ -55,6 +56,7 @@ import { getCandidateById } from './API';
     lastName: 'Kline',
     linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/curtis_2_qs35yb.webp', // Missing from Bullhorn Schema
+// Temp comment
     occupation: 'Tech Consultant',
     companyName: 'Aerovision',
     address_city: 'Tulsa',

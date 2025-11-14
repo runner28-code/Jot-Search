@@ -115,7 +115,6 @@ export function formatYearsExperience(experienceYears, experience) {
     // '1' is null (No experience selected)
     if ( experience === 1 ) {
       return 'Years Experience N/A';
-// Temp comment
     }
     return experienceMap[experience];
   } else {

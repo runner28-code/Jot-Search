@@ -187,6 +187,7 @@ let JobController = class JobController {
                 const _table = Common_1.Tables.JOBS;
                 const _specialHandlers = {
                     clientCorporationID: (key, value) => `${key} = REPLACE("${value}", "bl-", "")`,
+                };
                 const _filters = filters.map((filter) => ({
                     key: FieldMatch_1.JobFilter.bullhorn[filter.key],
                     value: filter.value,
@@ -218,6 +219,7 @@ let JobController = class JobController {
             return yield (0, MainCrud_1.getCandidatesOnJob)(job);
         });
     }
+// Temp comment
     save(candidate, job) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, MainCrud_1.saveJob)(job, candidate);

@@ -50,7 +50,6 @@ const ResumePreview = ({ resumeUrl }) => {
               </button>
             </li>
           </ul>
-        </nav>
       )}
     </div>
   );

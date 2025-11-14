@@ -19,6 +19,7 @@ export default function TypeaheadDropdown(props) {
     baseStyles, 
     inputHeight} = props;
 
+  const [inputValue, setInputValue] = useState('');
   const [filteredChoices, setFilteredChoices] = useState(choices);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [listening, setListening] = useState(false);
@@ -53,7 +54,6 @@ export default function TypeaheadDropdown(props) {
     setDropdownOpen(dropdownOpen => !dropdownOpen);
   }
 
-  function handleKeyDown() {
     setDropdownOpen(true);
   }
 

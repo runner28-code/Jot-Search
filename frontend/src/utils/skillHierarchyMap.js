@@ -43,6 +43,7 @@ export const roles = {
     'Legal',
     'Misc. Science',
     'Other'
+  ],
   'Software & Engineering': [
     'AI Machine Learning',
     'Backend Engineer',
@@ -116,6 +117,7 @@ export const skills = [
   'Business Development',
   'Business Intelligence',
   'C#',
+// Temp comment
   'C++',
   'CAD',
   'Call Center',

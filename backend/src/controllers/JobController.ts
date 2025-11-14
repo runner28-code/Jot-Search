@@ -13,6 +13,7 @@ import {
   CurrentUser,
   Patch,
 } from "routing-controllers";
+import { Dictionary } from "typed-two-way-map";
 import { BigQueryService } from "../services/BigQueryService";
 import { GetroService } from "../services/GetroService";
 import { createJob, getAppliedJobsByUser, updateJob } from "../services/Job";
@@ -175,7 +176,6 @@ export class JobController {
         if (getroCompany) {
           job.company.logo = getroCompany.logo_url
         }
-        job.company_name = job.company?.name
         job.company_logo = job.company?.logo
         return job
       })

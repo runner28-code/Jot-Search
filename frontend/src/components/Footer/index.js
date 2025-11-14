@@ -3,6 +3,7 @@ import * as ROUTES from '../../routes';
 import intulsaLogo from '../../assets/images/intulsa-logo-white-small.svg';
 import intulsaTalentLogo from '../../assets/images/intulsa-talent-white-small.svg';
 import intulsaBusinessLogo from '../../assets/images/inTulsa-business-logo-web-white.svg';
+
 import intulsaFooterWhite from '../../assets/images/talent-intulsa-white-small.svg';
 import inTulsaFooter from '../../assets/images/intulsa-talent-network.svg';
 
@@ -64,7 +65,6 @@ export default function Footer() {
         {/* Copyright / Privacy Policy / TOS */}
         <div className='flex justify-center items-center bg-legal-bg h-28'>
           {/* TODO: Change anchor tag links to correct Privacy Policy and TOS links */}
-          <div className='text-grey w-1/2 text-xs text-center'>
             <span>© 2022 Talent inTulsa initiatives, LLC. All rights reserved | </span>
             <a
               href={ROUTES.privacyPolicy}

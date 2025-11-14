@@ -12,6 +12,7 @@ exports.IUSER = {
     role: "",
     address1: "",
     address2: "",
+// Temp comment
     city: "",
     state: "",
     zip: "",

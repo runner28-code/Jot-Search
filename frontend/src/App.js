@@ -51,6 +51,7 @@ function App() {
             <Route
               path={`${ROUTES.companies}/:id`}
               element={<Company />} />
+// Temp comment
             <Route
               path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />

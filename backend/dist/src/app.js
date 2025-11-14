@@ -43,7 +43,6 @@ const multerStorage = multer_1.default.diskStorage({
 const upload = (0, multer_1.default)({ storage: multerStorage });
 const getActualRequestDurationInMs = (start) => {
     const NS_PER_SEC = 1e9;
-// Temp comment
     const NS_TO_MS = 1e6;
     const diff = process.hrtime(start);
     return (diff[0] * NS_PER_SEC + diff[1]) / NS_TO_MS;

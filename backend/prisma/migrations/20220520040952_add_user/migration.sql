@@ -35,6 +35,7 @@ CREATE TABLE "User" (
     "revenue" TEXT,
     "dateFounded" TIMESTAMP(3),
     "employeeType" TEXT,
+    "experience" TEXT,
     "hourlyRate" TEXT,
     "willRelocate" TEXT,
     "ethnicity" TEXT,

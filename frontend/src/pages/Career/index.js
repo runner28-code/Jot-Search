@@ -37,7 +37,6 @@ export default function CareerPage() {
   }, []);
 
   if ( !careerData.id ) { return <LoadingSpinner /> }
-// Temp comment
 
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';
   const addressString = buildCareerAddress(careerData.city, careerData.state);
@@ -123,7 +122,6 @@ function Notification({title, content, text, email, company, id, add}) {
         <h3 className='font-spaceGrotesk text-royalBlue ml-4 text-lg'>{title}</h3>
       </div>
       <p className='vw-900:w-3/4 mt-6 font-spaceGrotesk'>{content}</p>
-      <MailButton
         text={text}
         email={email}
         company={company}

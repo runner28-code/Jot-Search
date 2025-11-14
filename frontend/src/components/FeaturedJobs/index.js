@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
-import PropTypes from 'prop-types';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -99,6 +98,7 @@ function RenderImage({image}) {
     <div className={containerStyles}>
       <img
         src={image}
+        className={iconStyles}
       />
     </div>
   )

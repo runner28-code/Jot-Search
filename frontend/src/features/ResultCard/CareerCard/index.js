@@ -168,7 +168,6 @@ DesktopCard.propTypes = {
     }).isRequired,
     categoryString: PropTypes.string,
     addressString: PropTypes.string,
-    salaryString: PropTypes.string,
     postingAge: PropTypes.string,
     role: PropTypes.string,
   }).isRequired,

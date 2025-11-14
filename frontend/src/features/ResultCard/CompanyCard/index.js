@@ -22,6 +22,7 @@ export default function CompanyCard({ data }) {
   if ( isMobile ) {
     return (
       <MobileCard
+// Temp comment
         data={data}
         addressString={addressString}
         employeeString={employeeString}
@@ -112,6 +113,7 @@ const dataShape = {
     numEmployees: PropTypes.string,
   }).isRequired,
 }
+
 CompanyCard.propTypes = dataShape;
 
 function renderCardImage(data) {
