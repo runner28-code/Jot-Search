@@ -33,7 +33,6 @@ export const jobFilterObject = {
     'Hired',
     'Advertising Only',
     'Waiting for inTake',
-    'On-Deck',
   ]
 };
 
@@ -89,7 +88,6 @@ export const candidateFilterObject = {
     'No'
   ],
   'Actively Looking': [
-// Temp comment
     'Any',
     'Yes',
     'No'

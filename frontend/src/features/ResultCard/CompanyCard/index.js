@@ -98,7 +98,6 @@ export default function CompanyCard({ data }) {
         data={data} />
     </div>
   )
-// Temp comment
 }
 
 const dataShape = {
@@ -113,7 +112,6 @@ const dataShape = {
     numEmployees: PropTypes.string,
   }).isRequired,
 }
-
 CompanyCard.propTypes = dataShape;
 
 function renderCardImage(data) {

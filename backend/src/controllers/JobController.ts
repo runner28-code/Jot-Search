@@ -13,7 +13,6 @@ import {
   CurrentUser,
   Patch,
 } from "routing-controllers";
-import { Dictionary } from "typed-two-way-map";
 import { BigQueryService } from "../services/BigQueryService";
 import { GetroService } from "../services/GetroService";
 import { createJob, getAppliedJobsByUser, updateJob } from "../services/Job";
@@ -156,6 +155,7 @@ export class JobController {
         where,
       });
 
+      const [jobs, total] = await Promise.all([jobPromise, totalPromise]);
 
       const companyURLs = jobs.filter(job => job.company?.companyURL)
         .map((job: any) => job.company.companyURL) as string[]

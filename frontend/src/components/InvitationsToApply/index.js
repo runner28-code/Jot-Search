@@ -9,6 +9,7 @@ export default function InvitationsToApply () {
   const profile = AuthService.getProfile();
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
+// Temp comment
     filteredJobs: [],
     loading: true
   });
@@ -45,7 +46,6 @@ export default function InvitationsToApply () {
                     key={career.id}
                     index={index}
                     data={career}
-// Temp comment
                     agoDate={career.createdAt}
                   />
                 </>)

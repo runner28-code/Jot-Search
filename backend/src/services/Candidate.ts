@@ -40,7 +40,7 @@ export const saveCandidate = async (
           savedCandidates: {
             disconnect: {
               id: candidateId,
-          },
+            },
         },
       });
     }

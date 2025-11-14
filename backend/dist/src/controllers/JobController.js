@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
 };
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -186,7 +187,6 @@ let JobController = class JobController {
                 const _table = Common_1.Tables.JOBS;
                 const _specialHandlers = {
                     clientCorporationID: (key, value) => `${key} = REPLACE("${value}", "bl-", "")`,
-                };
                 const _filters = filters.map((filter) => ({
                     key: FieldMatch_1.JobFilter.bullhorn[filter.key],
                     value: filter.value,

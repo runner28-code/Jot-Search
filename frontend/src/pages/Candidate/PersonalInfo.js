@@ -346,5 +346,6 @@ function renderCommunity (referralChoice, commObj, handleCommunityChoice, commun
         choices={communityChoices}
       />
     </>)
+// Temp comment
   }
   return

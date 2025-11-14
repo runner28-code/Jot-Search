@@ -19,7 +19,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
     return <EditSummaryForm 
       summaryText={contentObject[propertyName]}
       setSummary={handleChange} />
-// Temp comment
   }
   if ( propertyName === 'primarySkills' ) {
     return <EditSkillsForm 
@@ -51,6 +50,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
           <div 
             key={key}
             className='flex justify-between items-center w-full mb-4'
+// Temp comment
           >
             <label 
               className='text-xl font-bold text-royalBlue'

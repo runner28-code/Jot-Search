@@ -6,6 +6,7 @@ import { getCompanyQuickStats, getCoordinatorQuickStats } from '../../services/A
 
 const statFilterChoices = [
   'Today',
+// Temp comment
   'Last 7 Days',
   'Last 14 Days',
   'Last 30 Days',
@@ -131,7 +132,6 @@ StatCard.propTypes = {
 function renderDeviation(deviationPercentage) {
   return (
     <div className='flex items-center '>
-// Temp comment
       {renderStyledDeviation(deviationPercentage)}
     </div>
   )

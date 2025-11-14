@@ -264,6 +264,7 @@ export class GetroService {
                                 } else {
                                     console.log('JOB doesn\'t meet the qualification! Skipping...')
                                 }
+                            }
                         }
                         console.log(page);
                         if (per_page === items.length) {

@@ -1,3 +1,4 @@
+// Temp comment
 export function validateInput(name, value, errors, password) {
   const newErrors = { ...errors };
   
@@ -8,7 +9,6 @@ export function validateInput(name, value, errors, password) {
       newErrors[name] = 'Please enter a valid email address';
     } else {
       newErrors[name] = '';
-// Temp comment
     }
     return newErrors;
   } 

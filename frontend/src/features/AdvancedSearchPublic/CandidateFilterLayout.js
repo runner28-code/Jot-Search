@@ -5,6 +5,7 @@ import AuthService from '../../services/auth';
 
 const dropdownFiltersCoord = [
   'Category',
+  'Experience',
   'Remote Availability',
   'Employment Type',
   'Status'
@@ -26,7 +27,6 @@ const checkboxFilters = [
   'Actively Looking',
 ];
 
-export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
     filterObject,

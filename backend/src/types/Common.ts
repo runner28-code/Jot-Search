@@ -69,7 +69,6 @@ export type JobSearchByID = {
   job?: Job;
   source: DataSource;
   message?: string;
-};
 
 export type JobSearchByFilterResponse =
   | {

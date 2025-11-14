@@ -64,6 +64,7 @@ export default function Apply() {
       const [careerData, candidateData] = await Promise.all([
         getJobById(jobId),
         getCandidateById(user_id),
+// Temp comment
       ]);
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';

@@ -3,7 +3,6 @@ import * as ROUTES from '../../routes';
 import intulsaLogo from '../../assets/images/intulsa-logo-white-small.svg';
 import intulsaTalentLogo from '../../assets/images/intulsa-talent-white-small.svg';
 import intulsaBusinessLogo from '../../assets/images/inTulsa-business-logo-web-white.svg';
-
 import intulsaFooterWhite from '../../assets/images/talent-intulsa-white-small.svg';
 import inTulsaFooter from '../../assets/images/intulsa-talent-network.svg';
 
@@ -252,6 +251,7 @@ function NavFooter() {
         <a
           href={ROUTES.intulsa}
           className={linkStyle}
+        >Our Website
         </a>
       </div>
       <div className='flex flex-col basis-3/12'>
