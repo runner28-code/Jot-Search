@@ -4,7 +4,6 @@
         "es2021": true
     },
     "extends": [
-        "eslint:recommended",
         "plugin:react/recommended",
         "plugin:react/jsx-runtime"
     ],
@@ -68,3 +67,4 @@
           // Components used as alternatives to <form> for forms, eg. <Form endpoint={ url } />
           "CustomForm",
           {"name": "Form", "formAttribute": "endpoint"}
+        ],

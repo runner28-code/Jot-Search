@@ -25,7 +25,6 @@ export const choices = {
     label: 'My Profile',
     icon: ApplicationIcon,
     link: ROUTES.profile,
-  },
   careers: {
     label: 'Careers',
     icon: CareerIcon,
@@ -70,7 +69,6 @@ export const choices = {
     label: 'Logout',
     icon: LogoutIcon,
     link: ROUTES.logout,
-// Temp comment
   },
 }
 

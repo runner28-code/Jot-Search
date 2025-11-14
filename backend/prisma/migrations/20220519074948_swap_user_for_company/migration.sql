@@ -98,3 +98,4 @@ CREATE TABLE "Company" (
     CONSTRAINT "Company_pkey" PRIMARY KEY ("id")
 );
 
+-- AddForeignKey

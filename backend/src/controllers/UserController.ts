@@ -218,3 +218,4 @@ export class UserController {
     return await update(authUser.id!, authUser.role, user);
   }
 
+  @Authorized()

@@ -100,7 +100,6 @@ function RenderImage({image}) {
       <img
         src={image}
         className={iconStyles}
-// Temp comment
       />
     </div>
   )

@@ -108,6 +108,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   function handleFilterChange(filterType, choice) {
     setFilterObject({
       ...filterObject,
+      [filterType]: choice
     });
     setPage(1);
   }
@@ -138,7 +139,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   // eslint-disable-next-line no-unused-vars
   const { Status, ...publicDropdownFilters } = jobFilterObject;
   const propsByTab = {
-    jobs: {
       filterTemplate: publicDropdownFilters,
       activeResults: jobs,
       totalResults: totalJobs,

@@ -27,7 +27,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
   }
 }
 
-DashboardMinifiedDesktop.propTypes = {
   location: PropTypes.string.isRequired
 }
 

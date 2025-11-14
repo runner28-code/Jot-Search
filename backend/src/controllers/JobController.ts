@@ -405,3 +405,6 @@ export class JobController {
 
   @Authorized()
   @Put()
+  async createJob(@Body() body: Job): Promise<ApplyResponse> {
+    return await createJob(body);
+  }

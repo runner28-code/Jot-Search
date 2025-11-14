@@ -11,7 +11,6 @@ export default function CompanyFilterLayout(props) {
 
   return (
     <div className='flex flex-col gap-xxl-4'>
-// Temp comment
       <div className='flex items-center gap-[65px]'>
         <FilterSearch
           searchTerm={searchTerm}
@@ -24,6 +23,7 @@ export default function CompanyFilterLayout(props) {
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
         >
+// Temp comment
           Clear All
         </button>
       </div>

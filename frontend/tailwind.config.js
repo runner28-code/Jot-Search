@@ -38,6 +38,7 @@ module.exports = {
         aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
         'legal-bg': '#23242D',
+// Temp comment
         // Neutrals
         powderBlue: '#E4F2FF',
         lightGrey: '#F6F5F6',
@@ -246,3 +247,5 @@ module.exports = {
       'vw-1440': '1440px',
     }
   },
+  plugins: [
+    require('@tailwindcss/line-clamp'),

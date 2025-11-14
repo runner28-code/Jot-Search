@@ -272,3 +272,5 @@ export class GetroService {
                             page++;
                             repeatErr = -0;
                         } else {
+                            break;
+                        }

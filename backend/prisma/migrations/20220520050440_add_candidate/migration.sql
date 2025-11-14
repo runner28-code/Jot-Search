@@ -49,7 +49,6 @@ CREATE TABLE "Candidate" (
     "middleName" TEXT,
     "mobile" TEXT,
     "name" TEXT,
-    "namePrefix" TEXT,
     "nameSuffix" TEXT,
     "nickName" TEXT,
     "numCategories" TEXT,
@@ -91,3 +90,4 @@ CREATE TABLE "Candidate" (
     "twoJobs" TEXT,
     "type" TEXT,
     "userDateAdded" TIMESTAMP(3),
+    "username" TEXT,

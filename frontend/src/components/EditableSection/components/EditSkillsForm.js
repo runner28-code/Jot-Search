@@ -52,7 +52,6 @@ function renderChosen(skills, onChange) {
           onChange('primarySkills', skills.filter(s => s !== skill))
         }
         return (
-// Temp comment
           <ChoiceTag
             key={skill}
             label={skill}

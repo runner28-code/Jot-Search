@@ -68,6 +68,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       const modifiedFilterObject = {
         ...filterObject,
         firstname: filterObject.title
+      }
       delete modifiedFilterObject.title;
 
       const searchFilters = buildSearchFilters(modifiedFilterObject);
@@ -112,6 +113,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       [filterType]: choice
     });
     setPage(1);
+// Temp comment
   }
 
   function handleSearchChange(searchTerm) {

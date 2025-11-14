@@ -25,6 +25,5 @@ export function validateInput(name, value, errors, password) {
     newErrors[name] = `${capitalizedName} is required`;
   } else if ( errors[name] ) { // Remove from errors if not empty
     newErrors[name] = '';
-  }
 
   return newErrors;

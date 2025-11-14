@@ -110,7 +110,6 @@ export default function Footer() {
         />
       </a>
       <a href={ROUTES.facebook}>
-        <img
           src={facebook}
           className={socialIconStyle}
         />
@@ -228,7 +227,6 @@ function NavFooter() {
         </Link>
         <a
           href={ROUTES.mailToIntulsa}
-// Temp comment
           className={addressLinkStyle}
         >info@talentintulsa.com
         </a>

@@ -177,3 +177,11 @@ export default function Apply() {
       });
     }
     handleChange(name, value);
+  }
+
+  function handleCommunityChoice(name, value) {
+    setApplicationObject({
+      ...applicationObject,
+      referredBy: value
+    })
+    setReferralChoice(false);

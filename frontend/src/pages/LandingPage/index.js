@@ -88,6 +88,7 @@ function renderColorShapes()  {
   const { width } = useWindowDimensions();
 
   if( width < 0 ) {
+// Temp comment
     return (
       <div className='w-full'>
         <ColorShapes />

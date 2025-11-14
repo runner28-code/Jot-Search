@@ -69,7 +69,6 @@ export class CandidateController {
       return {
         candidate: clearPassword(candidate),
         message: !candidate ? "No user with given ID" : undefined,
-      };
     } catch (error) {
       return { message: error };
     }
@@ -390,3 +389,6 @@ export class CandidateController {
       if (process.env.SEND_EMAILS_TO_CANDIDATES === "true") {
         const candidateEmails = candidatesWithEmail.map((candidate) => candidate.email!);
         sentTo = candidateEmails;
+        result = await sendJobsToCandidates(jobs, candidateEmails);
+      } else {
+        console.log("Sending emails to candidates is disabled");

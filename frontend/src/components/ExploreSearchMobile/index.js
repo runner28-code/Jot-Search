@@ -13,6 +13,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     expertise: 'Any Expertise',
   });
 
+// Temp comment
   function handleSearchClick() {
     const params = {};
     if (filterState.title) {
@@ -31,5 +32,4 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     setFilterState({
       ...filterState,
       [name]: value,
-// Temp comment
     });

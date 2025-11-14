@@ -303,3 +303,6 @@ export const migrateJobInTPP = async (data: Job) => {
     console.log(`Migrating Job from Bullhorn: bh_id = ${data.externalId}`);
     const condition = `externalId = '${data.externalId}'`;
     const dataset = DATASET_MAIN;
+    const table = Tables.JOBS;
+    const id = genUUID();
+    const existing = await isExistByCondition(condition, dataset, table);

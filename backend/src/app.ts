@@ -29,6 +29,7 @@ try {
 }
 
 const uploadToS3 = async(req: any, res: any) => {
+  console.log("uploading to s3");
   if(!process.env.S3_BUCKET) {
     res.status(500).send("S3_BUCKET not set")
     return
@@ -105,7 +106,6 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 app.use(bodyParser.json());
-app.use(logger);
 app.use(express.static("uploads"));
 app.use(cors());
 
@@ -131,3 +131,4 @@ useExpressServer(app, {
       return false;
     } catch (error) {
       return false;
+    }

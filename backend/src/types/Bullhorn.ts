@@ -310,3 +310,6 @@ export type Lead = {
     isDeleted?: string;
     lastName?: string;
     leadSource?: string;
+    massMailOptOut?: string;
+    middleName?: string;
+    mobile?: string;

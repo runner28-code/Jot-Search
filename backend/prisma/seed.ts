@@ -47,7 +47,6 @@ async function seedJobs() {
         city: "Tulsa",
         state: "OK",
         zip: "74008",
-        salary: 80000,
         employmentType: "fulltime",
         onSite: "Hybrid",
         description: "Come join our rockstar team for good money and learning",
@@ -211,3 +210,4 @@ async function seedUsers() {
         city: "aaa",
         state: "bbb",
         role: "candidate",
+        roles: "Accounting & Financial Planning, Accounts & Payroll",

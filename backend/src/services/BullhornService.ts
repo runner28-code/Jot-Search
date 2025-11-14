@@ -925,3 +925,10 @@ export class BullhornService {
         description: null,
         firstName: user.firstname,
         lastName: user.lastname,
+        email: user.email,
+        name: `${user.firstname} ${user.lastname}`,
+        owner: null,
+        source: "Other",
+        status: "New Lead",
+        address: {
+          countryID: 1,

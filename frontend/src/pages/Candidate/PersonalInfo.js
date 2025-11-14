@@ -153,6 +153,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   name='email'
                   id='email'
                   placeholder='Email'
+                  value={formData.email}
                   onChange={handleInputChange}
                   className={inputStyles}
                   required
@@ -347,3 +348,36 @@ function renderCommunity (referralChoice, commObj, handleCommunityChoice, commun
     </>)
   }
   return
+}
+
+function renderEditIcon(candidateData, setEditMode) {
+  const isProfileOwner = candidateData.id === AuthService.getProfile().user_id;
+  const isCoordinator = AuthService.getProfile().role === 'coordinator';
+  // Only show component if user is profile owner or coordinator
+  if ( !isProfileOwner && !isCoordinator ) {
+    return null;
+  }
+
+  const handleClick = () => {
+    setEditMode(true);
+  }
+  const { width } = useWindowDimensions();
+  if( width <= 990 ) {
+    return (
+      <button 
+        className='testspace-x-2 text-xl leading-none py-4 justify-center items-center text-royalBlue absolute top-0 right-0 px-4 pr-6 border-solid border-royalBlue'
+        onClick={handleClick}>
+        <FiEdit
+          className='h-[3rem] w-[3rem] ml-4 stroke-royalBlue cursor-pointer'
+        />
+      </button>
+    )
+  }
+  return (
+    <button  
+      className='flex space-x-2 text-xl leading-none py-4 justify-center items-center text-royalBlue border-1.5 rounded-lg px-4 pr-6 border-solid border-royalBlue'
+      onClick={handleClick}>
+      <FiEdit className='h-[3rem] w-[3rem] ml-4 stroke-royalBlue cursor-pointer' />
+      <span>Edit</span>
+    </button>
+  )

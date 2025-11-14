@@ -15,6 +15,7 @@ export default function PendingApplications () {
     jobs: [],
     filteredJobs: [],
     loading: true
+  });
 
   useEffect( async () => {
     const appliedJobs = await getAppliedJobs(profile.user_id);
@@ -46,7 +47,6 @@ export default function PendingApplications () {
             :
             appliedJobsObject.filteredJobs.slice(0, 2).map((career, index) => {
               return(<>
-                <CareerCard
                   key={career.id}
                   index={index}
                   data={career}

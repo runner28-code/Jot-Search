@@ -35,7 +35,6 @@ exports.CompanyFilter = {
         name: "name",
         city: "address_city",
         industry: "industryList",
-    },
     getro: {
         name: "name",
         city: "locations",
@@ -63,3 +62,4 @@ exports.USER_FILTER = {
     occupation: "occupation",
     workAuthorized: "workAuthorized",
     employeeType: "employeeType",
+    willRelocate: "willRelocate",

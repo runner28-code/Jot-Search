@@ -113,3 +113,4 @@ export const sendUpdateUserNotification = async (to: string, name: string) => {
 export const sendJobApplyNotification = async (to: string, name: string) => {
   try {
     const base_url = process.env.FRONTEND_URL || 'http://localhost:3000';
+    await sendEmail(to, 'Job has been applied!', 'apply-job-notification', {

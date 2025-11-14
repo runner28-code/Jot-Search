@@ -395,7 +395,6 @@ export const getCompanyDashboardStats = async (days: number) => {
     return {
       result: false,
       error: error,
-    };
   }
 }
 
@@ -523,6 +522,7 @@ export const getStats = async (userId: string) => {
                     ON \`${DATASET_MAIN}.${Tables.JOBS}\`.\`id\` = \`${DATASET_MAIN}.${Tables.APPLICATIONS}\`.\`job\`
                     OR \`${DATASET_MAIN}.${Tables.JOBS}\`.\`externalId\` = \`${DATASET_MAIN}.${Tables.APPLICATIONS}\`.\`job\`
                     WHERE \`${DATASET_MAIN}.${Tables.APPLICATIONS}\`.\`candidate\` = '${userId}'`;
+
     const savedJobsCountQuery = `SELECT COUNT(*) as count FROM \`${DATASET_MAIN}.${Tables.SAVEDJOBS}\`
                                     WHERE candidate = '${userId}'`;
 
@@ -579,3 +579,9 @@ export const getStats = async (userId: string) => {
       totalJobsCount: totalJobsCount[0].count,
       savedCompaniesCount: savedCompaniesCount[0].count,
       totalCompaniesCount: totalCompaniesCount[0].count,
+      message: null,
+    };
+  } catch (error) {
+    return {
+      result: false,
+      applicationCount: null,

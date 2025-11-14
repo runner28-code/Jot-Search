@@ -12,7 +12,6 @@ export class BigQueryService {
             BigQueryService.client = new BigQuery();
         }
         return BigQueryService.client;
-    }
 
     public static async selectQuery(datset: string, table: string, fields: string, count?: number, condition?: string, join?: string, fromAlias?: string) {
         try {
@@ -27,6 +26,7 @@ export class BigQueryService {
                 `;
             }
             if (count) {
+                query = `
                     ${query}
                     LIMIT ${count}
                 `;
@@ -67,3 +67,4 @@ export class BigQueryService {
 
             const [job] = await BigQueryService.getClient().createQueryJob(options);
             const res = await job.getQueryResults();
+

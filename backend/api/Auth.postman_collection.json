@@ -62,3 +62,4 @@
 					],
 					"port": "5000",
 					"path": [
+						"register"

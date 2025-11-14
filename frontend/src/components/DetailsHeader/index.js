@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -32,7 +31,6 @@ export default function DetailsHeader({ type, source }) {
       <Icon className='h-18 w-auto fill-royalBlue' />
       <h1 className='text-lg vw-480:text-h2 text-royalBlue font-spaceGrotesk font-bold flex items-center'>
         {headerText}
-        { renderSourceIdentifier(source) }
       </h1>
     </div>
     <BackButton />

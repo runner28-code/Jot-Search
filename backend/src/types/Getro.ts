@@ -48,6 +48,7 @@ export type Job = {
   source?: string;
   status?: string;
   title?: string;
+  url?: string;
   hidden?: boolean;
 };
 
@@ -93,3 +94,4 @@ export type User = {
   skills?: string;
   talent_groups?: string;
   twitter_url?: string;
+  verified?: string;

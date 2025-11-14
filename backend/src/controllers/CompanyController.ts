@@ -339,3 +339,6 @@ export class CompanyController {
       _table,
       _fields,
       count,
+      _condition
+    );
+    return result;

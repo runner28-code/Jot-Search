@@ -461,3 +461,6 @@ export const CITY_INCLUDE_KEYS_REGEX = new RegExp(`(${city_filter_include_keys.j
 export const JOB_FIELDS = [
   "id",
   "address",
+  "benefits",
+  "billRateCategoryID",
+  "bonusPackage",

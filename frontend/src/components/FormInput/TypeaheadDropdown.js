@@ -34,6 +34,7 @@ export default function TypeaheadDropdown(props) {
   }, [onChange])
 
   /* Close dropdown on any outside clicks */
+  useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
     if (!dropdownOpen) setInputValue('');
   }, [dropdownOpen]);
@@ -87,7 +88,6 @@ TypeaheadDropdown.propTypes = {
   label: PropTypes.string,
   required: PropTypes.bool,
   placeholder: PropTypes.string.isRequired,
-  choices: PropTypes.array.isRequired,
   currentChosen: PropTypes.array.isRequired,
   onChange: PropTypes.func.isRequired,
   baseStyles: PropTypes.string.isRequired,

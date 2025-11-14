@@ -8,7 +8,6 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "address1",
     "address2",
     "city",
-    "state",
     "zip",
     "country_id",
     "employmentType",
@@ -28,3 +27,4 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "isDeleted",
     "postedAt",
     "hidden",
+    "company_name",

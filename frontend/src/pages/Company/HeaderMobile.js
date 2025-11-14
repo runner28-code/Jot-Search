@@ -62,6 +62,7 @@ function HeaderContent({ companyData }) {
 
 HeaderContent.propTypes = {
   companyData: PropTypes.shape({
+// Temp comment
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,
@@ -88,6 +89,7 @@ export default function HeaderMobile({ companyData }) {
 }
 
 HeaderMobile.propTypes = {
+  companyData: PropTypes.object.isRequired,
   handleCompanyUpdate: PropTypes.func.isRequired
 }
 

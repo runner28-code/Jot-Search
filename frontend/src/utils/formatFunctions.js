@@ -11,7 +11,6 @@ export function formatCandidateData(candidateData) {
     formattedData.address2 = candidateData.address_address2 || '';
     formattedData.city = candidateData.address_city || '';
     formattedData.state = candidateData.address_state || '';
-    formattedData.zip = candidateData.address_zip || '';
   }
   formattedData.address = buildCandidateAddress(candidateData);
   formattedData.avatar = formatAvatarUrl(candidateData.avatar, candidateData.firstname, candidateData.lastname);
@@ -216,6 +215,7 @@ export function buildCompanyAddress(companyData) {
     return 'N/A';
   }
   // Location string
+  if ( locationString ) {
     return locationString;
   }
   // City and State

@@ -56,3 +56,4 @@ CREATE TABLE "ClientContact" (
     "password" TEXT,
     "phone" TEXT,
     "phone2" TEXT,
+    "phone3" TEXT,
