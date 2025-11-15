@@ -10,6 +10,7 @@ import {
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
 
+// Temp comment
 export default function SideNav({ userType }) {
   const { pathname } = useLocation();
   const hiddenPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage, ROUTES.resetPassword, ROUTES.accountRecovery ];
@@ -45,6 +46,7 @@ function renderChoice(choice, selected, index, choicesLength) {
     baseChoiceStyles += ' border-b-0'; // remove border if last card
   }
 
+  const choiceStyles = selectedChoice ? baseChoiceStyles + selectedClass : baseChoiceStyles;
   let iconStyles = 'w-14 h-14 mx-9 ';
   const strokeIcons = ['Add User', 'My Account']; // These icons use stroke, rest use fill
   if ( selectedChoice ) {

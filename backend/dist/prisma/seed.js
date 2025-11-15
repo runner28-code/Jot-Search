@@ -76,7 +76,6 @@ function seedJobs() {
         });
     });
 }
-// Temp comment
 function seedCandidates() {
     return __awaiter(this, void 0, void 0, function* () {
         yield db_1.default.candidate.createMany({

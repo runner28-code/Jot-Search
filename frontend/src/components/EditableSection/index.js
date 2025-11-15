@@ -53,6 +53,7 @@ function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
   }
   return <SectionContent contentObject={contentObject} />
 }
+// Temp comment
 
 function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCancel) {
   const isCoordinator = AuthService.getProfile().role === 'coordinator';

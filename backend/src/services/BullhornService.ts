@@ -506,6 +506,7 @@ export class BullhornService {
             "fax3",
             "firstName",
             "isAnonymized",
+            "isDayLightSavings",
             "isDeleted",
             "lastName",
             "leads",

@@ -46,7 +46,6 @@ export type User = {
   workAuthorized?: string;
   disability?: string;
   occupation?: string;
-
   employmentPreference?: string;
 };
 

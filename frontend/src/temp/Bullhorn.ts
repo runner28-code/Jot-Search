@@ -241,11 +241,11 @@ export type Candidate = {
     otherIncomeAmount?: string;
     pager?: string;
     paperWorkOnFile?: string;
-    password?: string;
     payrollClientStartDate?: string;
     payrollStatus?: string;
     phone?: string; // !
     phone2?: string;
+    phone3?: string;
     preferredContact?: string;
     primarySkills?: string; // ?
     recentClientList?: string;

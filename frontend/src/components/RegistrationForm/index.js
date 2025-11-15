@@ -14,6 +14,7 @@ import {
   inputValidation,
   formatFormObj,
   renderButtonOrLoading,
+// Temp comment
   renderErrorBlock,
   renderHeader
 } from './utils';
@@ -122,6 +123,7 @@ export default function RegistrationForm(loggedIn) {
 
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
+      setTimeout(() => {
         setFormObj(defaultState);
         setSubmissionObject({
           loading: false,

@@ -125,7 +125,6 @@ export default function MobileLayout(props) {
           Back
         </button>
       </div>
-    </section>
     <OtherCareers
       companyId={careerData.companyId}
       companyName={careerData.clientCorporation}

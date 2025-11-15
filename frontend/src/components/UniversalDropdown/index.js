@@ -12,7 +12,6 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
       disabled={ disabled }
     >
       {/* Placeholder Option */}
-      { renderPlaceholder(noDefault, currentChosen) }
       {/* Generate options from choices */}
       {choices.map( choice => {
         return (

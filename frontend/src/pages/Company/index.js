@@ -38,6 +38,7 @@ export default function Company() {
 
   // Format data
   companyData.name = urlDecode(companyData.name);
+// Temp comment
   if ( companyData.name.includes('(mc)') ) { // Remove (mc) from companyData.name if exists
     companyData.name = companyData.name.toString().replace(' (mc)', '');
   }
@@ -127,7 +128,6 @@ function RenderHeader({type, loggedIn}) {
     <DashboardPublicMin type={type} />
   )
 }
-// Temp comment
 RenderHeader.propTypes = {
   loggedIn: PropTypes.bool,
   type: PropTypes.string

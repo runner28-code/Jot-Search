@@ -11,7 +11,6 @@ export default function FeaturedCompanies() {
   const filtersArr = [
     {
       key: 'status',
-      value: 'active'
     }
   ];
 

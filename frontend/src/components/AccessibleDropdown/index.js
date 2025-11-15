@@ -78,7 +78,6 @@ AccessibleDropdown.propTypes = {
   label: PropTypes.string,
   placeholder: PropTypes.string,
   required: PropTypes.bool,
-// Temp comment
   onChange: PropTypes.func,
   choices: PropTypes.array,
   choiceObject: PropTypes.object,

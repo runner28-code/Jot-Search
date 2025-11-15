@@ -131,7 +131,6 @@ function MobileCard({ data, addressString, employeeString }) {
     <div
       className='relative w-full'
       key={data.id}
-// Temp comment
     >
       <Link
         to={`${ROUTES.companies}/${data.id}`}

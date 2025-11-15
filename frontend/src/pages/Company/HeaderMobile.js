@@ -50,7 +50,6 @@ function HeaderContent({ companyData }) {
               </div> 
             </div>
           </div>
-        </div>
 
         <FavoriteButton
           type={'company'}
@@ -66,7 +65,6 @@ HeaderContent.propTypes = {
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,
     businessSectorList: PropTypes.string,
-// Temp comment
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
     industryList: PropTypes.array,

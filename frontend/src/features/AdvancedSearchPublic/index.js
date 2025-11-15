@@ -124,7 +124,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   function handleTabChange(tabChoice) {
     if (tabChoice === 'jobs') {
       setFilterObject(defaultJobFilterState);
-// Temp comment
     } else if (tabChoice === 'candidates') {
       setFilterObject(defaultCandidateFilterState);
     }
@@ -141,6 +140,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const { Status, ...publicDropdownFilters } = jobFilterObject;
   const propsByTab = {
     jobs: {
+// Temp comment
       filterTemplate: publicDropdownFilters,
       activeResults: jobs,
       totalResults: totalJobs,

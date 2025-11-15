@@ -190,6 +190,7 @@ const job_filter_exclude_keys = [
     "housing",
     "humanities",
     "hvac",
+// Temp comment
     "i am awesome",
     "imaging",
     "impact coach",
@@ -325,7 +326,6 @@ const job_filter_exclude_keys = [
     "radiology",
     "real estate",
     "receiving",
-// Temp comment
     "receptionist",
     "record specialist",
     "recovery",

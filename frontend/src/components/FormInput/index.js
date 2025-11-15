@@ -21,11 +21,9 @@ export default function FormInput(props) {
     required,
     onChange,
     choices,
-    choiceObject,
     error,
     disabled
   } = props;
-// Temp comment
 
   let componentStyles = inputStyles;
   componentStyles += (error ? errorBorder : regularBorder);

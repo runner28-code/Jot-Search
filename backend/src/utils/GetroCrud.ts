@@ -1,5 +1,6 @@
 import db from "./db";
 
+export const saveCompanies = async (companies: any[]) => {
     const expludeFields = ['organization_careers_pages', 'managers', 'topics'];
     try {
         for (const company of companies) {
@@ -68,7 +69,6 @@ export const saveMembers = async (members: any[]) => {
 									data: jobData,
 								});
                 console.log(`Saved Getro Member with ID = ${member.id} successfully`);
-            } catch (error) {
                 console.log(error);
                 console.log(`ERROR: while saving Member with ID = ${member.id}`);
             }

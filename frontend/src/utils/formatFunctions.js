@@ -126,7 +126,6 @@ export function buildCandidateAddress(candidateData, full = false) {
   const { address_address1, address_address2, address_city, address_state, address_zip } = candidateData;
 
   let addressArr = [];
-  if ( full === true ) {
     addressArr = [address_address1, address_address2, address_city, address_state, address_zip];
   } else {
     addressArr = [address_city, address_state];
@@ -187,6 +186,7 @@ export function buildSalaryString(salary, salaryUnit) {
     formattedSalary = `${currency}${formattedSalary}`;
   }
 
+  return formattedSalary;
 }
 
 // Location data could be either from Bullhorn or Getro. Default to Bullhorn data if exists, fall back to Getro if it doesn't

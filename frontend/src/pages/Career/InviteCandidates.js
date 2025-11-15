@@ -71,7 +71,6 @@ export default function InviteCandidates({ job }) {
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}
-      />
       <div className='flex space-x-8'>
         <button
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
@@ -110,6 +109,7 @@ function itemRenderer({ option, onClick, disabled }) {
             src={avatarUrl}
             alt='Candidate Avatar' />
           : <Initials name={option.label} />
+        }
         <div className="flex flex-col">
           <span className='text-lg text-blue-500'>{option.candidate?.firstName} {option.candidate?.lastName}</span>
           <span>{getTagLine({ candidate: option.candidate })}</span>

@@ -25,7 +25,6 @@ const isNullOrEmpty = (value: any) => {
   return !value || (value && !`${value}`.trim());
 };
 
-const validateUser = ({
   firstname,
   lastname,
   email,

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
-// Temp comment
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -66,7 +65,6 @@ CompactCompanyCard.propTypes = {
   index: PropTypes.number,
   active: PropTypes.bool,
   agoDate: PropTypes.string,
-  isFavoriteOverride: PropTypes.bool,
   agoText: PropTypes.string,
   selectableProps: PropTypes.shape({
     selectable: PropTypes.bool,

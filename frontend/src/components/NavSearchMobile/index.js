@@ -33,6 +33,7 @@ export default function NavSearchMobile({ placeholder }) {
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
+// Temp comment
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
         firstname: splitName[0],
@@ -118,6 +119,7 @@ NavSearchMobile.propTypes = {
 }
 
 function renderResultsContainer( results, searchTerm ) {
+  if ( !searchTerm || results.forceHidden ) { // if no searchTerm, no results to display
     return null;
   }
 
