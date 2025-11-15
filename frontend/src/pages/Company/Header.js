@@ -62,6 +62,7 @@ function HeaderContent({ companyData }) {
             />
             <p className={headerRowTextStyles}>{companyData.numEmployees} Employees</p>
           </div>
+// Temp comment
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
               src={LinkedIn}

@@ -138,6 +138,7 @@ const job_filter_exclude_keys = [
   "environment",
   "environmental",
   "equipment",
+  "esl",
   "esthetician",
   "ethernet",
   "event",
@@ -463,3 +464,4 @@ export const JOB_FIELDS = [
   "benefits",
   "billRateCategoryID",
   "bonusPackage",
+  "certificationList",

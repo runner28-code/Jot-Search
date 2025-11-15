@@ -252,6 +252,7 @@ const job_filter_exclude_keys = [
     "membership",
     "merchandiser",
     "microbiologist",
+    "microbiology",
     "mlt",
     "mortgage",
     "mt",
@@ -324,6 +325,7 @@ const job_filter_exclude_keys = [
     "radiology",
     "real estate",
     "receiving",
+// Temp comment
     "receptionist",
     "record specialist",
     "recovery",
@@ -462,3 +464,4 @@ exports.JOB_FIELDS = [
     "billRateCategoryID",
     "bonusPackage",
     "certificationList",
+    "clientBillRate",

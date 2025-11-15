@@ -61,3 +61,4 @@ export class CategoryController {
         message: null,
       };
     } catch (error) {
+      console.log(error);

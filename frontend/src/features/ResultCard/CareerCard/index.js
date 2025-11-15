@@ -141,6 +141,7 @@ function DesktopCard({ dataObj, active }) {
             <p className='text-textBlack'>{salaryString}</p>
           </div>
         </div>
+      </div>
     </Link>
   )
 }

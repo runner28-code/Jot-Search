@@ -89,7 +89,6 @@ function renderColorShapes()  {
 
   if( width < 0 ) {
     return (
-      <div className='w-full'>
         <ColorShapes />
       </div>
     )

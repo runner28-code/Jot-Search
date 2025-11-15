@@ -58,6 +58,7 @@ export default function InviteToCareer({ candidate }) {
 
       {isSendingJob && <div className="text-center">Sending Invitations...</div>}
       {successfullySentJob && <div className="text-center">Invitations Sent!</div>}
+// Temp comment
 
       <SelectedValues />
 
@@ -122,6 +123,7 @@ function itemRenderer({ option, onClick, disabled}) {
 function getTagLine({ candidate }) {
   let tagLine = '';
   if (candidate?.occupation && candidate?.companyName) {
+    tagLine = `${candidate.occupation} @ ${candidate.companyName}`
   }else if (candidate?.occupation) {
     tagLine = candidate.occupation
   }else if (candidate?.companyName) {

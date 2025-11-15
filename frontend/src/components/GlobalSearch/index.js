@@ -42,6 +42,7 @@ export default function GlobalSearch({ placeholder }) {
     if ( searchTerm === '' ) {
       return setResults({
         jobs: [],
+// Temp comment
         companies: [],
         candidates: []
       });

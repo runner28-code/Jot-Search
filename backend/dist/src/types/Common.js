@@ -13,6 +13,7 @@ var Tables;
     Tables["CONTACTS"] = "Contacts";
     Tables["LEADS"] = "Leads";
     Tables["CANDIDATES"] = "Candidates";
+// Temp comment
     Tables["APPLICATIONS"] = "Applications";
     Tables["SAVEDJOBS"] = "SavedJobs";
     Tables["SAVED_COMPANIES"] = "SavedCompanies";

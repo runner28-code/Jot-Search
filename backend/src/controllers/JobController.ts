@@ -150,6 +150,7 @@ export class JobController {
           },
           { createdAt: 'desc' }
         ]
+      }); // TODO: assumes we are changing frontend to pass compatible fields and filters params
 
       const totalPromise = db.job.count({
         where,
@@ -407,3 +408,4 @@ export class JobController {
   async createJob(@Body() body: Job): Promise<ApplyResponse> {
     return await createJob(body);
   }
+}

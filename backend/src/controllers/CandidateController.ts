@@ -393,3 +393,4 @@ export class CandidateController {
         result = await sendJobsToCandidates(jobs, candidateEmails);
       } else {
         console.log("Sending emails to candidates is disabled");
+        console.log({ candidatesWithEmail });

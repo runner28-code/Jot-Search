@@ -130,3 +130,4 @@ export type CandidateSearchByFilterResponse = {
   candidates?: User[];
   total?: number;
   message?: any;
+};

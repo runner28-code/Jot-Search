@@ -40,7 +40,6 @@ export default function CandidateCard({ data, disableLink }) {
             />
           </div>
           <NewLeadLabel status={data.status} />
-// Temp comment
         </div>
         {/* Main Content */}
         <div className='relative grow'>
@@ -144,6 +143,7 @@ function LinkWrapper({ children, link, disableLink }) {
 }
 
 LinkWrapper.propTypes = {
+// Temp comment
   children: PropTypes.node.isRequired,
   link: PropTypes.string.isRequired,
   disableLink: PropTypes.bool,

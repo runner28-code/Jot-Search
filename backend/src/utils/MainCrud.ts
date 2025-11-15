@@ -42,6 +42,7 @@ export const saveApplication = async (job: string, candidate: string) => {
     console.log(error);
     return { result: false, message: error };
   }
+};
 
 export const saveJob = async (job: string, candidate: string) => {
   try {
@@ -130,7 +131,7 @@ export const getCandidatesOnJob = async (jobId: string) => {
         id: jobId,
       },
       include: {
-        applications: {
           include: {
             user: true,
           },
+        },

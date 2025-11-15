@@ -127,6 +127,7 @@ function RenderHeader({type, loggedIn}) {
     <DashboardPublicMin type={type} />
   )
 }
+// Temp comment
 RenderHeader.propTypes = {
   loggedIn: PropTypes.bool,
   type: PropTypes.string

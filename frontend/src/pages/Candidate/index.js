@@ -81,10 +81,10 @@ export default function Candidate() {
       console.log('Error updating candidate: ', updateResponse.error);
     }
   }
-// Temp comment
 
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 
+// Temp comment
   if (loading) { return <LoadingSpinner /> }
   return (
     <div className='flex flex-col space-y-16'>

@@ -63,6 +63,7 @@ input[type=checkbox] {
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
+    letter-spacing: normal;
   }
   .Mobile-HeadersMobile-heading-large {
     font-family: SpaceGrotesk;
@@ -190,3 +191,4 @@ input[type=checkbox] {
     line-height: 1.6;
     letter-spacing: normal;
   }
+  .Mobile-Body-textmobile-text-size-small {

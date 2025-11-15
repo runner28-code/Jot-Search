@@ -96,7 +96,6 @@ export class UserController {
   @Authorized()
   @Post("/add-user")
   async addUser(@CurrentUser() authUser: User, @Body() user: User) {
-    let data = { ...user };
     if (authUser.role !== COORDINATOR) {
       return {
         result: false,
@@ -219,3 +218,4 @@ export class UserController {
   }
 
   @Authorized()
+  @Get("/stats")

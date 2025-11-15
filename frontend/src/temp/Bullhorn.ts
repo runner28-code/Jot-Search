@@ -233,6 +233,7 @@ export type Candidate = {
     numCategories?: string;
     numOwners?: string;
     occupation?: string; // !
+    onboardingDocumentReceivedCount?: string;
     onboardingDocumentSentCount?: string;
     onboardingPercentComplete?: string;
     onboardingStatus?: string;
@@ -245,7 +246,6 @@ export type Candidate = {
     payrollStatus?: string;
     phone?: string; // !
     phone2?: string;
-    phone3?: string;
     preferredContact?: string;
     primarySkills?: string; // ?
     recentClientList?: string;

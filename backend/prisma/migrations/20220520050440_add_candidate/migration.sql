@@ -92,3 +92,4 @@ CREATE TABLE "Candidate" (
     "type" TEXT,
     "userDateAdded" TIMESTAMP(3),
     "username" TEXT,
+    "veteran" TEXT,

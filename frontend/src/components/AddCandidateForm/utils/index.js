@@ -15,6 +15,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   return (
     <button 
       className={buttonStyles}
+// Temp comment
       type='submit'>
       {buttonString}
     </button>
@@ -52,7 +53,6 @@ export function inputValidation(formObj) {
   });
   if ( !(formObj.resumeFile instanceof File) ) {
     newErrors.push('resumeFile');
-// Temp comment
   }
   if (formObj.password !== formObj.verifyPassword) {
     newErrors.push('password', 'verifyPassword');

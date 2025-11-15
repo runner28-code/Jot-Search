@@ -96,7 +96,6 @@ export default function InviteCandidates({ company }) {
 function itemRenderer({ option, onClick, disabled}) {
   const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''
   return (
-// Temp comment
     <div 
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`} 
       onClick={onClick}

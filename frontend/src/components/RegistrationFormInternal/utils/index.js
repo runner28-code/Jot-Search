@@ -31,7 +31,6 @@ export function renderErrorBlock(errorBlock) {
         <p className='text-rose-500 text-sm font-bold'>{ errorBlock.error || errorBlock }</p>
       </div>
     )
-  }
 }
 
 export function renderHeader(addType) {
@@ -48,6 +47,7 @@ export function renderHeader(addType) {
           <span className='text-ml text-darkGray leading-loose mx-4'>
             Already have an account?
           </span>
+          <Link
             to={ROUTES.login}
             className='text-ml text-royalBlue leading-loose underline mx-4'
           >

@@ -93,3 +93,4 @@ export const getCandidatesList = async (candidates_ids: string[]) => {
     const candidates = await db.user.findMany({
       where: {
         id: {
+          in: candidates_ids,

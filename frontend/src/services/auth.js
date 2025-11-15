@@ -105,7 +105,6 @@ class AuthService {
   }
 
   getSavedJobIDs() {
-// Temp comment
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }
 

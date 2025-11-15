@@ -1,6 +1,5 @@
 import db from "./db";
 
-export const saveCompanies = async (companies: any[]) => {
     const expludeFields = ['organization_careers_pages', 'managers', 'topics'];
     try {
         for (const company of companies) {
@@ -115,3 +114,4 @@ export const saveJobs = async (jobs: any[]) => {
 									data: jobData,
 								});
                 console.log(`Saved Getro Job with ID = ${job.id} successfully`);
+            } catch (error) {

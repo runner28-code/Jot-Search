@@ -332,7 +332,6 @@ export const skills = [
   'Regulatory Compliance',
   'Research',
   'REST',
-  'Retail',
   'Retail Clothing',
   'Risk Assessment',
   'Risk Management',

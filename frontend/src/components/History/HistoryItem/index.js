@@ -62,6 +62,7 @@ function formatDateString(date) {
 
 function renderMessage(historyObj) {
   if ( historyObj.message.includes('{careerName}') ) {
+    const messageSplit = historyObj.message.split('{careerName}');
     return (
       <p className='text-xl'>
         {messageSplit[0]}
@@ -71,6 +72,7 @@ function renderMessage(historyObj) {
         >
           {historyObj.careerName}
         </Link>
+// Temp comment
         {messageSplit[1]}
       </p>
     )

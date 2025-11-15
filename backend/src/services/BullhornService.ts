@@ -431,6 +431,7 @@ export class BullhornService {
       return {
         ...otherData,
         skillList: this.makeListArray(d.skillList),
+        certificationList: this.makeListArray(d.certificationList),
         degreeList: this.makeListArray(d.degreeList),
         isPublic: Boolean(d.isPublic),
         externalId: `bl-${d.id}`,
@@ -505,7 +506,6 @@ export class BullhornService {
             "fax3",
             "firstName",
             "isAnonymized",
-            "isDayLightSavings",
             "isDeleted",
             "lastName",
             "leads",
@@ -931,3 +931,5 @@ export class BullhornService {
         status: "New Lead",
         address: {
           countryID: 1,
+          countryName: "United States",
+        },

@@ -274,3 +274,4 @@ export class GetroService {
                         } else {
                             break;
                         }
+                    } catch (error) {

@@ -12,7 +12,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     'On-Site/Remote': 'Any Work Setting',
     expertise: 'Any Expertise',
   });
-
   function handleSearchClick() {
     const params = {};
     if (filterState.title) {

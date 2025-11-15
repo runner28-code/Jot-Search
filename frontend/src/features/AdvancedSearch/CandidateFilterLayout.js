@@ -72,7 +72,6 @@ export default function CandidateFilterLayout(props) {
   console.log(filterObject)
 
   return (
-// Temp comment
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange)}
@@ -103,6 +102,7 @@ export default function CandidateFilterLayout(props) {
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
         >
+// Temp comment
           Clear All
         </button>
       </div>

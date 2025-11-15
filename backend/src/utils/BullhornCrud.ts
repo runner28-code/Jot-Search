@@ -306,3 +306,4 @@ export const migrateJobInTPP = async (data: Job) => {
     const table = Tables.JOBS;
     const id = genUUID();
     const existing = await isExistByCondition(condition, dataset, table);
+    if (existing) {

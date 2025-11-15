@@ -28,7 +28,6 @@ export type Job = {
   postedAt?: string;
   hidden?: boolean;
   company_name?: string;
-  datasource?: Datasource;
   featured?: boolean;
 };
 
@@ -51,6 +50,7 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "status",
   "skillList",
   "locations",
+  "companyId",
   "interviews",
   "onSite",
   "salary",

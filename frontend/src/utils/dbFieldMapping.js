@@ -33,7 +33,6 @@ export const ethnicityMap = {
   IA: 'Native American or Alaska Native',
   HL: 'Hispanic or Latina/Latino or LatinX',
   AS: 'Asian',
-  M: 'Multiracial',
   O: 'Other'
 };
 
@@ -71,3 +70,4 @@ export const referralChoices = [
 export const communityChoices = [
   'Atento Capital',
   'Tulsa Remote',
+  'Teach for America',

@@ -187,7 +187,6 @@ export function buildSalaryString(salary, salaryUnit) {
     formattedSalary = `${currency}${formattedSalary}`;
   }
 
-  return formattedSalary;
 }
 
 // Location data could be either from Bullhorn or Getro. Default to Bullhorn data if exists, fall back to Getro if it doesn't

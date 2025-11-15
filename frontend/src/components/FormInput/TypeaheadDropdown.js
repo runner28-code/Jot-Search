@@ -76,6 +76,7 @@ export default function TypeaheadDropdown(props) {
         onKeyDown={handleKeyDown}
         disabled={disabled}
       />
+// Temp comment
       { renderDropdown(dropdownType, dropdownOpen, filteredChoices, currentChosen, handleChoiceClick) }
     </div>
   )
@@ -125,7 +126,6 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
       {currentChosen.map(choice => {
         const isActive = currentChosen.includes(choice);
         const handleTagClick = () => {
-// Temp comment
           handleClick(choice);
         }
 

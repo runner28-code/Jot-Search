@@ -21,6 +21,7 @@ model Application {
 }
 
 model Category {
+  id          Int       @id @default(autoincrement())
   name        String    @unique
   dateAdded   DateTime?
   description String?
@@ -703,3 +704,5 @@ model Candidate {
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+

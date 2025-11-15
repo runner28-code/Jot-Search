@@ -77,7 +77,6 @@ export const sendNewUserNotification = async (to: string, name: string) => {
     console.log(error);
     console.log(JSON.stringify(error.response.body));
     throw error;
-  }
 }
 
 export const sendJobsToCandidates = async (jobs: string[], candidates_emails: string[]) => {
@@ -114,3 +113,4 @@ export const sendJobApplyNotification = async (to: string, name: string) => {
   try {
     const base_url = process.env.FRONTEND_URL || 'http://localhost:3000';
     await sendEmail(to, 'Job has been applied!', 'apply-job-notification', {
+      name: name,

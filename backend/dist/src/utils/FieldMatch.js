@@ -47,6 +47,7 @@ exports.CompanyFilter = {
     },
 };
 exports.USER_FILTER = {
+    firstname: "firstname",
     lastname: "lastname",
     role: "role",
     roles: "roles",
@@ -56,6 +57,7 @@ exports.USER_FILTER = {
     skillSet: "skillSet",
     category: "category",
     status: "status",
+// Temp comment
     email: "email",
     bh_email: "bh_email",
     companyName: "companyName",
