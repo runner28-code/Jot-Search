@@ -13,7 +13,6 @@ function renderActiveIcon(choice, currentChosen) {
       <img 
         src={checkmarkIcon} 
         alt="checkmark" 
-// Temp comment
         className="w-8 h-8 mr-2" />
     )
   }
@@ -40,6 +39,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
       {choices.map((choice, index) => {
         return (<div key={choice + '-container'}>
           <div 
+// Temp comment
             onClick={() => handleClick(choice)}
             className='cursor-pointer flex items-center justify-between'
           >

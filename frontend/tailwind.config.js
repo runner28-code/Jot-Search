@@ -38,7 +38,6 @@ module.exports = {
         aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
         'legal-bg': '#23242D',
-// Temp comment
         // Neutrals
         powderBlue: '#E4F2FF',
         lightGrey: '#F6F5F6',
@@ -205,6 +204,7 @@ module.exports = {
       md: '1.8rem',
       ml: '2rem',
       lg: '2.2rem',
+// Temp comment
       xl: '2.4rem',
       'h6': '2.8rem',
       'h5': '3.2rem',

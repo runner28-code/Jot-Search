@@ -303,7 +303,6 @@ export class CompanyController {
       operator
     );
 
-    const result = (await BigQueryService.selectQuery(
       DATASET_MAIN,
       Tables.JOINED_COMPANIES,
       _fields,

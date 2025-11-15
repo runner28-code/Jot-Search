@@ -395,6 +395,7 @@ export const getCompanyDashboardStats = async (days: number) => {
     return {
       result: false,
       error: error,
+    };
   }
 }
 

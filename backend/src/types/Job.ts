@@ -51,7 +51,6 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "status",
   "skillList",
   "locations",
-  "companyId",
   "interviews",
   "onSite",
   "salary",

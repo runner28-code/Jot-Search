@@ -21,7 +21,6 @@ model Application {
 }
 
 model Category {
-  id          Int       @id @default(autoincrement())
   name        String    @unique
   dateAdded   DateTime?
   description String?
@@ -598,6 +597,7 @@ model Candidate {
   description        String?
   desiredLocations   String[]
   disability         String?
+  educationDegree    String?
   email              String?
   email2             String?
   email3             String?

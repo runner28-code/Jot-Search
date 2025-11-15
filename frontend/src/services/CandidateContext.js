@@ -16,7 +16,6 @@ const mockCandidateData = [
     address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
-// Temp comment
     school: 'Oklahoma State',
     isLooking: true,
     isWarm: true,
@@ -51,6 +50,7 @@ const mockCandidateData = [
     isLooking: false,
     isWarm: false,
   },
+// Temp comment
   {
     id: '04bd7f2a-2bcf-4d37-9f9b-3dbb8dd91672',
     firstName: 'Curtis',

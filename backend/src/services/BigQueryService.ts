@@ -12,6 +12,7 @@ export class BigQueryService {
             BigQueryService.client = new BigQuery();
         }
         return BigQueryService.client;
+    }
 
     public static async selectQuery(datset: string, table: string, fields: string, count?: number, condition?: string, join?: string, fromAlias?: string) {
         try {

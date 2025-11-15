@@ -49,6 +49,7 @@ CREATE TABLE "Candidate" (
     "middleName" TEXT,
     "mobile" TEXT,
     "name" TEXT,
+    "namePrefix" TEXT,
     "nameSuffix" TEXT,
     "nickName" TEXT,
     "numCategories" TEXT,

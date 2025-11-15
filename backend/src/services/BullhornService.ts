@@ -431,7 +431,6 @@ export class BullhornService {
       return {
         ...otherData,
         skillList: this.makeListArray(d.skillList),
-        certificationList: this.makeListArray(d.certificationList),
         degreeList: this.makeListArray(d.degreeList),
         isPublic: Boolean(d.isPublic),
         externalId: `bl-${d.id}`,

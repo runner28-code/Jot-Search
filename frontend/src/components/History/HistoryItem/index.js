@@ -62,7 +62,6 @@ function formatDateString(date) {
 
 function renderMessage(historyObj) {
   if ( historyObj.message.includes('{careerName}') ) {
-    const messageSplit = historyObj.message.split('{careerName}');
     return (
       <p className='text-xl'>
         {messageSplit[0]}

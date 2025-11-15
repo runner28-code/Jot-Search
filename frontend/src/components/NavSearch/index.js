@@ -165,7 +165,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
     containerStyles: 'flex items-end ',
     searchIconStyles: 'fill-neutral-400',
     inputStyles: 'hidden '
-  }
   function handleClick() {
     if( !searchTerm ) {
       setIsOpen(isOpen => !isOpen);

@@ -15,7 +15,6 @@ export default function FeaturedCompanies() {
     }
   ];
 
-  const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(
     <div className='py-48 px-[20%] flex flex-col items-center'>
@@ -40,7 +39,6 @@ export default function FeaturedCompanies() {
         <Link
           to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
-// Temp comment
           Browse All
         </Link>
       </div>

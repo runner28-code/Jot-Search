@@ -252,7 +252,6 @@ const job_filter_exclude_keys = [
     "membership",
     "merchandiser",
     "microbiologist",
-    "microbiology",
     "mlt",
     "mortgage",
     "mt",

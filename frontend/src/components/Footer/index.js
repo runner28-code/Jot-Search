@@ -110,6 +110,7 @@ export default function Footer() {
         />
       </a>
       <a href={ROUTES.facebook}>
+        <img
           src={facebook}
           className={socialIconStyle}
         />

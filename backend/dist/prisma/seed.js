@@ -73,6 +73,7 @@ function seedJobs() {
                     })).id,
                 },
             ],
+// Temp comment
         });
     });
 }
@@ -122,6 +123,7 @@ function seedCategories() {
             data: [
                 {
                     name: "Finance",
+                    enabled: true,
                     externalID: 2000031,
                 },
                 {

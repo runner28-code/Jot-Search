@@ -47,6 +47,7 @@ CREATE TABLE "GetroMember" (
     "website_url" TEXT,
     "share_permission" BOOLEAN,
     "current_location" TEXT,
+    "email" TEXT,
     "employment_types" TEXT,
     "opportunity_types" TEXT[],
     "invited" BOOLEAN,

@@ -109,6 +109,7 @@ export default function Company() {
           loggedIn={loggedIn}
           companyData={companyData}
         />
+      </div>
     </div>
   )
 }

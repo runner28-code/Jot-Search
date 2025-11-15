@@ -233,7 +233,6 @@ export type Candidate = {
     numCategories?: string;
     numOwners?: string;
     occupation?: string; // !
-    onboardingDocumentReceivedCount?: string;
     onboardingDocumentSentCount?: string;
     onboardingPercentComplete?: string;
     onboardingStatus?: string;

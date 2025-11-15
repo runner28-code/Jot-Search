@@ -196,6 +196,7 @@ let JobController = class JobController {
                 const alias = "jobs";
                 const companyAlias = "company";
                 const _fields = (fields === null || fields === void 0 ? void 0 : fields.length)
+// Temp comment
                     ? fields.join(", ")
                     : `${alias}.*, ${companyAlias}.bh_url as company_url, ${companyAlias}.name as company_name, ${companyAlias}.logo as company_logo, publishedCategory.id AS publishedCategoryID`;
                 const _join = `
@@ -281,6 +282,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], JobController.prototype, "apply", null);
 __decorate([
+    (0, routing_controllers_1.Authorized)(),
     (0, routing_controllers_1.Get)("/candidates"),
     __param(0, (0, routing_controllers_1.QueryParam)("job")),
     __metadata("design:type", Function),

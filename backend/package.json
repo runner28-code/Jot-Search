@@ -36,7 +36,6 @@
     "start": "cp -R ./src/templates ./dist && export GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' && ts-node src/app.ts",
     "bullhorn_get_companies": "npm run build && node ./dist/src/cronjobs/bullhorn_get_companies",
     "bullhorn_get_jobs": "npm run build && node ./dist/src/cronjobs/bullhorn_get_jobs",
-    "bullhorn_get_contacts": "npm run build && node ./dist/src/cronjobs/bullhorn_get_contacts",
     "bullhorn_get_candidates": "npm run build && node ./dist/src/cronjobs/bullhorn_get_candidates",
     "bullhorn_get_leads": "npm run build && node ./dist/src/cronjobs/bullhorn_get_leads",
     "bullhorn_get_job_post_subscription": "npm run build && node ./dist/src/cronjobs/bullhorn_get_new_job_subscription",
@@ -53,6 +52,7 @@
     "getro_get_members_win": "npm run build-win && node ./dist/src/cronjobs/getro_get_members",
     "start_all_cronjobs": "npm run build && cp -R ./src/templates ./dist/src && node ./dist/src/cronjobs/index"
   },
+  "devDependencies": {
     "@google-cloud/bigquery": "^5.10.0",
     "@types/body-parser": "^1.19.2",
     "@types/express": "^4.17.13",

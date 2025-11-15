@@ -92,7 +92,6 @@ export function inputValidation(formObj) {
   if ( formObj.password !== formObj.verifyPassword ) { // Match passwords
     newErrors.push('password', 'verifyPassword');
   }
-// Temp comment
   if ( formObj.skills.length < 3 ) { // Ensure at least 3 skills chosen
     newErrors.push('skills');
   }

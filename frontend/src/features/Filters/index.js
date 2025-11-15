@@ -27,7 +27,6 @@ export default function Filters(props) {
     </div>
   )
 }
-
 Filters.propTypes = {
   handleFilterChange: PropTypes.func,
   marginBottom: PropTypes.string,

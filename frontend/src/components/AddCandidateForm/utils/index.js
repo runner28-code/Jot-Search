@@ -52,6 +52,7 @@ export function inputValidation(formObj) {
   });
   if ( !(formObj.resumeFile instanceof File) ) {
     newErrors.push('resumeFile');
+// Temp comment
   }
   if (formObj.password !== formObj.verifyPassword) {
     newErrors.push('password', 'verifyPassword');

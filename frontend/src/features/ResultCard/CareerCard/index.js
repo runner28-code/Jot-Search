@@ -40,6 +40,7 @@ export default function CareerCard({ data, active }) {
         width > 768 ?
           <DesktopCard
             dataObj={dataObj}
+            active={active}
           />
           :
           <MobileCard
@@ -140,7 +141,6 @@ function DesktopCard({ dataObj, active }) {
             <p className='text-textBlack'>{salaryString}</p>
           </div>
         </div>
-      </div>
     </Link>
   )
 }

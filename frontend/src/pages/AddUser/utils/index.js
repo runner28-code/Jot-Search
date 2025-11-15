@@ -18,6 +18,7 @@ export function validateInput(name, value, errors, password) {
     } else {
       newErrors[name] = '';
     }
+// Temp comment
   } 
   // Generic validation
   else if ( value === '' ) { // Add to errors if empty
@@ -25,5 +26,6 @@ export function validateInput(name, value, errors, password) {
     newErrors[name] = `${capitalizedName} is required`;
   } else if ( errors[name] ) { // Remove from errors if not empty
     newErrors[name] = '';
+  }
 
   return newErrors;

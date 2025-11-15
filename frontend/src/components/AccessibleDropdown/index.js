@@ -104,7 +104,6 @@ function buildButtonStyles(stylesObject) {
   return buttonStyles
 }
 
-function buttonText(name, placeholder, currentChosen) {
   if ( !placeholder ) {
     return currentChosen;
   }
@@ -136,6 +135,7 @@ function renderLabel(name, label, required) {
     return null;
   }
 
+  if ( required ) {
     label += ' *';
   }
   return (

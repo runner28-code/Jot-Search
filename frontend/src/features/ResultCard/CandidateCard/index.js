@@ -40,6 +40,7 @@ export default function CandidateCard({ data, disableLink }) {
             />
           </div>
           <NewLeadLabel status={data.status} />
+// Temp comment
         </div>
         {/* Main Content */}
         <div className='relative grow'>
