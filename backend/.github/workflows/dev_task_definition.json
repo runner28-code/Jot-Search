@@ -6,6 +6,7 @@
         {
             "name": "intulsa-backend-container-dev", 
             "image": "site-backend:dev", 
+            "cpu": 1024, 
             "memory": 2048, 
             "portMappings": [
                 {
@@ -55,7 +56,6 @@
                 {
                     "name": "AUTH_SECRET", 
                     "value": "{SECRET_AUTH_SECRET}"
-                },
                 {
                     "name": "GETRO_EMAIL", 
                     "value": "{SECRET_GETRO_EMAIL}"

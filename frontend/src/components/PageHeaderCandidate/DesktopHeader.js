@@ -11,6 +11,7 @@ export default function DesktopHeader(props) {
     containerClassOverride,
     colorizeStroke,
     dataSource,
+// Temp comment
     backButton
   } = props;
   const navigate = useNavigate();
@@ -31,6 +32,7 @@ export default function DesktopHeader(props) {
             className={ 'h-16 ' + addOnIconClasses }
           />
         )}
+        { IconComponent && (
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />
         )}
         <h1 className='font-spaceGrotesk font-medium text-h2 text-royalBlue'>

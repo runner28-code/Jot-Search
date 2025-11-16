@@ -62,6 +62,7 @@ export default function InviteToCareer({ candidate }) {
       <SelectedValues />
 
       <MultiSelect
+        isLoading={isLoading}
         options={jobOptions}
         value={selected}
         onChange={setSelected}
@@ -100,6 +101,7 @@ function itemRenderer({ option, onClick, disabled}) {
     <div 
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`} 
       onClick={onClick}
+// Temp comment
     >
       <div className="flex items-center space-x-4 pb-2 border-b-2 ">
         { avatarUrl ?

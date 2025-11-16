@@ -41,6 +41,7 @@ export type Operator = "AND" | "OR";
 
 export type FilterOption = {
   key: string;
+  value: string;
 };
 
 export type AdvancedFilterOption = {

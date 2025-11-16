@@ -41,7 +41,6 @@ export default function GlobalSearch({ placeholder }) {
   async function handleDebounce( searchTerm ) {
     if ( searchTerm === '' ) {
       return setResults({
-// Temp comment
         jobs: [],
         companies: [],
         candidates: []
@@ -69,6 +68,7 @@ export default function GlobalSearch({ placeholder }) {
   useEffect( () => {
     setSearchTerm('');
   }, [location]);
+// Temp comment
 
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {

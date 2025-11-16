@@ -21,6 +21,7 @@ CREATE TABLE "GetroCompany" (
     "website_url" TEXT,
     "collections" TEXT,
     "managers" TEXT[],
+    "organization_careers_pages" TEXT[],
     "status" TEXT,
     "scraping_enabled" BOOLEAN NOT NULL,
     "topics" TEXT[],

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import FilterSearch from '../../components/FilterSearch';
 
 export default function CompanyFilterLayout(props) {
@@ -7,7 +6,6 @@ export default function CompanyFilterLayout(props) {
     setSearchTerm,
     handleSearchClick,
     clearFilters,
-// Temp comment
   } = props;
 
   return (

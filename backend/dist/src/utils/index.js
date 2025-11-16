@@ -38,7 +38,6 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
     catch (error) {
         console.log(error);
         return true;
-// Temp comment
     }
 });
 exports.isExistByID = isExistByID;
@@ -78,6 +77,7 @@ const getDataSource = (id) => {
     if (prefix === 'bl')
         return Common_1.DataSource.BULLHORN;
     if (prefix === 'gt')
+// Temp comment
         return Common_1.DataSource.GETRO;
     return Common_1.DataSource.UNKNOWN;
 };

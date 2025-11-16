@@ -32,6 +32,7 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
 CareerProfileInfo.propTypes = {
   candidateData: PropTypes.object.isRequired,
   handleCandidateUpdate: PropTypes.func.isRequired,
+// Temp comment
   role: PropTypes.string.isRequired
 }
 
@@ -54,6 +55,7 @@ function renderEditIcon(candidateData, setEditMode) {
           className='h-[3rem] w-[3rem] ml-4 stroke-royalBlue cursor-pointer'
         />
       </button>
+    )
   }
   return (
     <button 

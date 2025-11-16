@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-// Temp comment
 export default function ViewAllLink({ href, text }) {
   return (
     <Link 
@@ -10,4 +9,5 @@ export default function ViewAllLink({ href, text }) {
     >
       {`${text} >`}
     </Link>
+// Temp comment
   )

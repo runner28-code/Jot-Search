@@ -33,7 +33,6 @@ export default function LandingPage() {
           <p className='text-white font-spaceGrotesk font-semibold w-2/3 vw-1024:w-full text-[35.2px] vw-1024:text-[72px] text-center'>{'Find a Career You\'ll Love'}</p>
           { renderColorShapes() }
           { renderJoinTalent() }
-// Temp comment
         </div>
         { renderSearch() }
       </section>
@@ -47,7 +46,6 @@ export default function LandingPage() {
       { isDesktop && <JoinTalentNetwork /> }
       { isDesktop ? <BusinessBooming /> : <BusinessBoomingMobile />}
     </main>
-  )
 }
 
 function renderSearch() {

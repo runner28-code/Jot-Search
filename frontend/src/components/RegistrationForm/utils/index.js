@@ -46,6 +46,7 @@ export function renderHeader(addType) {
         </p>
         <div className='mt-10 mb-20 flex justify-center'>
           <span className='text-sm text-darkGray leading-loose mx-4'>
+// Temp comment
             Already have an account?
           </span>
           <Link
@@ -98,7 +99,6 @@ export function inputValidation(formObj) {
 
   // Only need LinkedIn OR resume, not both.
   // If one is missing but the other is present, remove either from errors array.
-// Temp comment
   if ( newErrors.includes('linkedin') && !newErrors.includes('resume') ) {
     newErrors = newErrors.filter(error => error !== 'linkedin');
   } else if ( newErrors.includes('resume') && !newErrors.includes('linkedin') ) {

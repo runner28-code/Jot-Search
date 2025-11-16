@@ -31,6 +31,7 @@ export const companyQuickStats = '/company-stats';
 export const addUser = '/add-user';
 export const alerts = '/alerts';
 
+// Temp comment
 export const careerSeekers = '/career-seeker';
 export const softwareEngineering = '/software-engineering';
 export const salesBizDev = '/sales-business-development';
@@ -45,7 +46,6 @@ export const exploreCareers = 'https://www.careers.intulsa.com/?utm_source=talen
 export const joinTalentNetwork = 'https://www.jobs.intulsa.com/talent-network?utm_source=talentwebsite&amp;utm_medium=web&amp;utm_campaign=footer';
 export const intulsa = 'https://www.intulsa.com';
 export const tulsaRemote = 'https://www.tulsaremote.com';
-// Temp comment
 export const campusTulsa = 'https://www.campustulsa.com';
 export const talentInTulsa = 'https://www.talent.intulsa.com/';
 export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';

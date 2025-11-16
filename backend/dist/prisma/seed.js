@@ -165,6 +165,7 @@ function seedCompanies() {
                     bh_description: "a company",
                     getro_description: "a healthcare company",
                     description: "Testing a new description",
+// Temp comment
                     city: "Tulsa",
                     state: "OK",
                     businessSectorList: "Health Care,Virtual Health",

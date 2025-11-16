@@ -140,7 +140,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const { Status, ...publicDropdownFilters } = jobFilterObject;
   const propsByTab = {
     jobs: {
-// Temp comment
       filterTemplate: publicDropdownFilters,
       activeResults: jobs,
       totalResults: totalJobs,

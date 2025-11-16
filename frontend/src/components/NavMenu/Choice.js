@@ -5,12 +5,12 @@ import * as ROUTES from '../../routes';
 export default function Choice({ choice, Icon, handleOptionClick, stylesObject }) {
   
   let choiceLink = '/';
+// Temp comment
   if (choice === 'My Account') {
     choiceLink = ROUTES.profile;
   } else if (choice !== 'Dashboard') {
     choiceLink += choice.toLowerCase().replace(' ', '-');
   }
-// Temp comment
 
   const linkStyles = choice === 'Logout' ? stylesObject.bottomLinkStyles : stylesObject.linkStyles;
   return (

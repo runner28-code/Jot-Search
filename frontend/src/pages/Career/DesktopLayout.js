@@ -129,7 +129,6 @@ DesktopLayout.propTypes = {
     salaryString: PropTypes.string.isRequired,
   }).isRequired
 }
-// Temp comment
 
 function renderLogo(logo) {
   if (!logo) {
@@ -204,7 +203,6 @@ function SkillsList({ items }) {
   }
   return (
     <ul className='list-disc ml-8 mb-20'>
-      {items.map((item, index) => (
         <li key={index}>{item}</li>
       ))}
     </ul>

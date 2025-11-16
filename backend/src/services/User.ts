@@ -25,6 +25,7 @@ const isNullOrEmpty = (value: any) => {
   return !value || (value && !`${value}`.trim());
 };
 
+const validateUser = ({
   firstname,
   lastname,
   email,
@@ -135,7 +136,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
       try {
         // TODO: add bullhorn api update here
       } catch (error) {
-        console.error("Could not update user in bullhorn", error);
       }
     }
 

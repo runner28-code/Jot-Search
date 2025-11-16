@@ -3,7 +3,6 @@
     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "containerDefinitions": [
-        {
             "name": "intulsa-frontend-container-dev",
             "image": "site-frontend:dev",
             "cpu": 1024,

@@ -8,7 +8,6 @@ export type User = {
   password?: string;
   role: string;
   address1?: string;
-  address2?: string;
   city?: string;
   state?: string;
   zip?: string;
@@ -46,6 +45,7 @@ export type User = {
   workAuthorized?: string;
   disability?: string;
   occupation?: string;
+
   employmentPreference?: string;
 };
 

@@ -71,7 +71,6 @@ const DesktopNavBarLayout = () => {
         <DropdownMenu />
       </div>
     </nav>
-  )
 }
 
 const DropdownMenu = () => {

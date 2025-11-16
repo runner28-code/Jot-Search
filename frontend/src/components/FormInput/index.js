@@ -21,6 +21,7 @@ export default function FormInput(props) {
     required,
     onChange,
     choices,
+    choiceObject,
     error,
     disabled
   } = props;
@@ -72,7 +73,6 @@ export default function FormInput(props) {
         name={name}
         label={label}
         placeholder={placeholder}
-        currentChosen={value}
         required={required}
         onChange={onChange}
         choices={choices}

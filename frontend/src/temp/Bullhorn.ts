@@ -241,6 +241,7 @@ export type Candidate = {
     otherIncomeAmount?: string;
     pager?: string;
     paperWorkOnFile?: string;
+    password?: string;
     payrollClientStartDate?: string;
     payrollStatus?: string;
     phone?: string; // !

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+// Temp comment
 import PropTypes from 'prop-types';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import Header from './Header';
@@ -38,7 +39,6 @@ export default function Company() {
 
   // Format data
   companyData.name = urlDecode(companyData.name);
-// Temp comment
   if ( companyData.name.includes('(mc)') ) { // Remove (mc) from companyData.name if exists
     companyData.name = companyData.name.toString().replace(' (mc)', '');
   }

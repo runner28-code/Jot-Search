@@ -71,6 +71,7 @@ export default function InviteCandidates({ job }) {
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}
+      />
       <div className='flex space-x-8'>
         <button
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
@@ -125,7 +126,6 @@ function getTagLine({ candidate }) {
     tagLine = `${candidate.occupation} @ ${candidate.companyName}`
   } else if (candidate?.occupation) {
     tagLine = candidate.occupation
-  } else if (candidate?.companyName) {
     tagLine = `@ ${candidate.companyName}`
   }
   return tagLine;

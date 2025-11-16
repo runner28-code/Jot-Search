@@ -123,7 +123,6 @@ export class BullhornService {
         client_id: config.bullhornClientID,
         client_secret: config.bullhornClientSecret,
         code: this.auth_code,
-      },
       { encode: false }
     );
     const url = `${this.oauth_url}/token?${query}`;

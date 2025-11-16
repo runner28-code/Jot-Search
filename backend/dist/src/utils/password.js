@@ -4,6 +4,7 @@ exports.checkPassword = exports.encryptPassword = exports.clearPassword = void 0
 const crypto = require('crypto');
 const clearPassword = (object) => {
     object === null || object === void 0 ? true : delete object.password;
+// Temp comment
     return object;
 };
 exports.clearPassword = clearPassword;
@@ -11,5 +12,4 @@ const encryptPassword = (password) => {
     const sr = crypto.randomBytes(12).toString('hex');
     const encrypted_password_hash = crypto.createHash('sha512');
     encrypted_password_hash.update(sr + password);
-// Temp comment
     return `${sr}${encrypted_password_hash.digest('hex')}`;
