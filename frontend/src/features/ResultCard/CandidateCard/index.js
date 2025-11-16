@@ -203,7 +203,6 @@ function SkillTag({ skill }) {
 }
 
 SkillTag.propTypes = {
-  skill: PropTypes.string.isRequired,
 }
 
 function InfoLabel({ label, value }) {

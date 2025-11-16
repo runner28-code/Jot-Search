@@ -41,6 +41,7 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
     }
 });
 exports.isExistByID = isExistByID;
+// Temp comment
 const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const query = `
@@ -77,7 +78,6 @@ const getDataSource = (id) => {
     if (prefix === 'bl')
         return Common_1.DataSource.BULLHORN;
     if (prefix === 'gt')
-// Temp comment
         return Common_1.DataSource.GETRO;
     return Common_1.DataSource.UNKNOWN;
 };

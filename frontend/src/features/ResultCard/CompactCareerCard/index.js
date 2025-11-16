@@ -105,7 +105,6 @@ CompactCareerCard.propTypes = {
   })
 }
 
-function renderCardImage(data) {
   if ( !data.company?.logo ) {
     return <CareerIcon className='h-28 w-full fill-royalBlue' />
   } else {

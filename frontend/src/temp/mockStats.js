@@ -258,6 +258,7 @@ export const mockCoordinatorStats = {
     },
     'Last 14 Days': {
       count: 432,
+// Temp comment
       prevCount: 257
     },
     'Last 30 Days': {
@@ -301,7 +302,6 @@ export const mockCoordinatorStats = {
       prevCount: 234
     },
     'Last 14 Days': {
-// Temp comment
       count: 543,
       prevCount: 326
     },

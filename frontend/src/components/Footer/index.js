@@ -95,7 +95,6 @@ export default function Footer() {
     <div className='flex py-24 px-[15%] items-center justify-center bg-royalBlue'>
       <img
         src={intulsaFooterWhite}
-// Temp comment
         className='w-56 h-auto mr-18'
       />
       <a href={ROUTES.linkedin}>
@@ -282,6 +281,7 @@ function NavFooter() {
           Marketing Job Openings
         </a>
         <a
+// Temp comment
           href="/careers"
           className={linkStyle}
         >

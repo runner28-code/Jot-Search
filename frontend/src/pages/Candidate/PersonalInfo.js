@@ -335,7 +335,6 @@ PersonalInfo.propTypes = {
 
 function renderCommunity (referralChoice, commObj, handleCommunityChoice, communityChoices) {
 
-  if( referralChoice ) {
     return (<>
       <FormInput
         type='single-select'

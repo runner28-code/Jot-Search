@@ -41,6 +41,7 @@ DROP COLUMN "salaryLow",
 ADD COLUMN     "salaryLow" BIGINT,
 DROP COLUMN "timeZoneOffsetEST",
 ADD COLUMN     "timeZoneOffsetEST" INTEGER,
+DROP COLUMN "travelLimit",
 ADD COLUMN     "travelLimit" INTEGER,
 DROP COLUMN "address_country_id",
 ADD COLUMN     "address_country_id" INTEGER;
@@ -52,3 +53,4 @@ DROP COLUMN "salaryLow",
 ADD COLUMN     "salaryLow" BIGINT,
 DROP COLUMN "timeZoneOffsetEST",
 ADD COLUMN     "timeZoneOffsetEST" INTEGER;
+

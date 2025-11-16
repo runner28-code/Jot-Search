@@ -18,7 +18,6 @@ export default function TextInput({type, name, placeholder, label, value, requir
   )
 }
 
-TextInput.propTypes = {
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,

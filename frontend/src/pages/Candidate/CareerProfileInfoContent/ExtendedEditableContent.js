@@ -21,7 +21,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     occupation: candidateData.occupation || '',
-// Temp comment
     companyName: candidateData.companyName || '',
     address1: candidateData.address1 || '',
     address2: candidateData.address2 || '',
@@ -54,7 +53,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       const pluralizedFolderName = name + 's';
       const newPath = await uploadFile(pluralizedFolderName, fileToUpload);
       console.log(newPath);
-      return setFormData({ ...formData, [name]: newPath });
     }
     setFormData({ ...formData, [name]: value });
   }

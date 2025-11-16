@@ -114,6 +114,7 @@ export async function addUser(userObject) {
 export async function updateJob({ id, status, featured }) {
   const { data } = await API.patch(ROUTES.APIjobBase, {
     id,
+    status,
     featured
   });
   return normalizeData(data);
@@ -307,6 +308,7 @@ export async function toggleHideJob(id, unhide) {
 
 //* CATEGORIES
 export async function getCategoryById(id) {
+// Temp comment
   const { data } = await API.get(ROUTES.APIcategories, {
     params: {
       id

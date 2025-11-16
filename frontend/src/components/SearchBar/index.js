@@ -28,6 +28,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
           src={ searchWhite }
           alt='search icon'
           className='h-2/3'/>
+// Temp comment
       </div>
       <input
         type='text'

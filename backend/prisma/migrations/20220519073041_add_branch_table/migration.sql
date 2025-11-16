@@ -1,4 +1,4 @@
 -- CreateTable
-    "id" TEXT NOT NULL,
+CREATE TABLE "Branch" (
 
     CONSTRAINT "Branch_pkey" PRIMARY KEY ("id")

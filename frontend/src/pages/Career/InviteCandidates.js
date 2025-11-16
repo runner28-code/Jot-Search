@@ -90,6 +90,7 @@ export default function InviteCandidates({ job }) {
         </button>
         <button
           onClick={() => setSelected([])}
+// Temp comment
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>
       </div>
     </section>
@@ -126,6 +127,7 @@ function getTagLine({ candidate }) {
     tagLine = `${candidate.occupation} @ ${candidate.companyName}`
   } else if (candidate?.occupation) {
     tagLine = candidate.occupation
+  } else if (candidate?.companyName) {
     tagLine = `@ ${candidate.companyName}`
   }
   return tagLine;

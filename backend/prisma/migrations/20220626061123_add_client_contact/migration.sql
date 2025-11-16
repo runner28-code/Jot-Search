@@ -11,7 +11,6 @@ ADD COLUMN     "externalId" TEXT;
 -- CreateTable
 CREATE TABLE "ClientContact" (
     "id" TEXT NOT NULL,
-    "address_address1" TEXT,
     "address_address2" TEXT,
     "address_city" TEXT,
     "address_state" TEXT,
@@ -30,6 +29,7 @@ CREATE TABLE "ClientContact" (
     "desiredSpecialties" TEXT,
     "division" TEXT,
     "email" TEXT,
+    "email2" TEXT,
     "email3" TEXT,
     "externalID" TEXT,
     "fax" TEXT,

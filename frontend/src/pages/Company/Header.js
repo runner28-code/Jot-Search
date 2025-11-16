@@ -54,7 +54,6 @@ function HeaderContent({ companyData }) {
             <OpenCareers
               styles={headerRowTextStyles}
               companyId={companyData.id}
-            />
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <FaUsers
@@ -140,6 +139,7 @@ function renderCompanyLogo(logoUrl, name) {
   }
   return (
     <div className='p-8 border border-slate-70/50 mr-8'>
+      <img
         className={logoStyles}
         src={logoUrl}
         alt={`${name} logo`}
@@ -265,4 +265,16 @@ function renderIndustry(item, headerRowTextStyles) {
   }
   return (<>
     <p className={headerRowTextStyles}>{item}</p>
+  </>)
+}
+
+function renderBusinessSector(item, textStyles) {
+
+  if( !item ) {
+    return(<>
+      <h5 className={textStyles}>Marketing</h5>
+    </>)
+  }
+  return (<>
+    <h5 className={textStyles}>{item}</h5>
   </>)

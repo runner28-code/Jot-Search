@@ -143,6 +143,7 @@ module.exports = {
         '90': '22.5rem',
         '92': '23rem',
         '100': '25rem',
+        '105': '26.25rem',
         '110': '27.5rem',
         '112': '28rem',
         '114': '28.5rem',
@@ -247,3 +248,4 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/line-clamp'),
+    plugin(function ({ addUtilities }) {

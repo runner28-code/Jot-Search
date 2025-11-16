@@ -82,6 +82,7 @@ function DesktopNavBarLayout() {
         <Link
           to={ROUTES.signup}
           className='ml-4 mr-6'
+// Temp comment
         >
           <button className='bg-royalBlue rounded-md px-9 py-4'>
             <span className='text-white'>Create Account</span>

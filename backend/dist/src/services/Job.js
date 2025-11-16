@@ -60,6 +60,7 @@ const sanitizeJob = (job) => {
     Object.keys(newJob).forEach((key) => {
         const typedKey = key;
         if (!Job_1.ALLOWED_JOB_KEYS.has(typedKey)) {
+// Temp comment
             delete newJob[typedKey];
         }
     });

@@ -213,3 +213,4 @@ async function seedUsers() {
         role: "candidate",
         roles: "Accounting & Financial Planning, Accounts & Payroll",
         resume: "resume",
+        seniority: "Mid",

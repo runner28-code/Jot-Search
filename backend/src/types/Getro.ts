@@ -69,6 +69,7 @@ export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "locations",
   "organization_id",
   "passes_filter",
+  "posted_at",
   "slug",
   "source",
   "status",
@@ -94,3 +95,4 @@ export type User = {
   talent_groups?: string;
   twitter_url?: string;
   verified?: string;
+  website_url?: string;

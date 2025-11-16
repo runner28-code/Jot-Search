@@ -60,7 +60,6 @@ export default function PendingApplications () {
           <div className='flex gap-[10px] items-center px-m py-xxs bg-searchGreen rounded-full'>
             <img
               src={featuredIcon}
-// Temp comment
               alt='intulsa' />
             <p className='text-sm font-bold text-white'>InTulsa Featured</p>
           </div>

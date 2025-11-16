@@ -13,6 +13,7 @@ CREATE TABLE "User" (
     "linkedin" TEXT,
     "skills" TEXT,
     "expertise" TEXT,
+    "experienceYears" TEXT,
     "workspace" TEXT,
     "aboutUs" TEXT,
     "referredBy" TEXT,
