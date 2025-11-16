@@ -27,7 +27,6 @@ export default function InviteCandidates({ job }) {
       candidate
     }
   }) || [];
-// Temp comment
 
   const [selected, setSelected] = useState([]);
   const deleteItem = (e, value) => {
@@ -113,6 +112,7 @@ function itemRenderer({ option, onClick, disabled }) {
           : <Initials name={option.label} />
         }
         <div className="flex flex-col">
+// Temp comment
           <span className='text-lg text-blue-500'>{option.candidate?.firstName} {option.candidate?.lastName}</span>
           <span>{getTagLine({ candidate: option.candidate })}</span>
         </div>

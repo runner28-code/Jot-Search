@@ -39,13 +39,11 @@ export default function FormInput(props) {
   };
   switch (type) {
     case 'file':
-      return <FileInput
         type={type}
         name={name}
         label={label}
         placeholder={placeholder}
         value={value}
-// Temp comment
         required={required}
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}

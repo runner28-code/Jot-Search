@@ -8,6 +8,7 @@ export const ethnicityChoices = Object.values(ethnicityMap);
 export const genderChoices = Object.values(genderMap);
 export const veteranStatusChoices = Object.values(veteranStatusMap);
 export const disabilityChoices = Object.values(disabilityMap);
+export const jobReferralChoices = [
   'LinkedIn',
   'Indeed',
   'Google',
@@ -64,6 +65,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
 export function Checkbox({ attribute, name, optionValue, setOptionValue, disabled }) {
   function handleChange(e) {
     setOptionValue(e.target.checked);
+// Temp comment
   }
 
   return (

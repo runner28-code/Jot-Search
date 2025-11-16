@@ -100,10 +100,12 @@ function renderLabel(name, label, required) {
   if ( !label ) {
     return null;
   }
+  if( required ) {
     label += ' *';
   }
 
   return (
+// Temp comment
     <label
       className='block text-textBlack mb-2.5'
       htmlFor={name}

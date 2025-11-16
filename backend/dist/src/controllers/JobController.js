@@ -161,6 +161,7 @@ let JobController = class JobController {
             };
             const condition = (0, utils_1.getFilterConditions)(_filters, operator, specialHandlers);
             const dataset = Common_1.DATASET_MAIN;
+// Temp comment
             const table = Common_1.Tables.JOBS;
             const _join = `
       LEFT JOIN \`${Common_1.DATASET_MAIN}.${Common_1.Tables.JOINED_COMPANIES}\` as ${companyAlias} 

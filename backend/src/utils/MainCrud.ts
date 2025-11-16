@@ -43,6 +43,7 @@ export const saveApplication = async (job: string, candidate: string) => {
     return { result: false, message: error };
   }
 };
+
 export const saveJob = async (job: string, candidate: string) => {
   try {
     console.log("saving job");

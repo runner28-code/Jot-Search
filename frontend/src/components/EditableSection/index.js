@@ -46,7 +46,6 @@ EditableSection.propTypes = {
 /* Render functions */
 
 function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
-  if (editMode) {
     return <EditSectionForm 
       contentObject={contentObject} 
       handlePropertyChange={handlePropertyChange} />
@@ -58,4 +57,5 @@ function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCa
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
   const isProfileOwner = AuthService.getProfile().user_id === entityID;
 
+  function handleEditClick() {
     setEditMode(true);

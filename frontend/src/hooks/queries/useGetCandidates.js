@@ -3,7 +3,6 @@ import { queryClient } from '../..';
 import { getCandidatesFull } from '../../services/API';
 
 export const prefetchCandidates = async ({filtersArr, count, page, fields}) => {
-// Temp comment
   await queryClient.prefetchQuery(getCandidatesKey({filtersArr, count, page}), () => getCandidatesFull(filtersArr, count, page, fields));
 }
 
@@ -16,6 +15,7 @@ export const prefetchAllSelectCandidates = async() => {
   await queryClient.prefetchQuery(getCandidatesKey(values), () => getCandidatesFull(values.filtersArr, values.count, undefined, values.fields));
 }
 
+// Temp comment
 export const useGetCandidates = ({ count, page, fields, filtersArr, enabled = true }) => {
   formatFilters(filtersArr)
   const { data, error, isLoading } = useQuery(

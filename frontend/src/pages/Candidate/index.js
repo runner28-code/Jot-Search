@@ -106,7 +106,6 @@ export default function Candidate() {
       {isProfilePage &&
         <div className='px-4'>
           <div className='border rounded-2xl bg-white p-12'>
-// Temp comment
             <h3 className={ width >= 990 ? 'text-h5 font-medium mb-15 text-black70% font-spaceGrotesk' : 'text-[2.5rem] font-medium mb-15 text-black70% font-spaceGrotesk'}>My Preferences</h3>
             <PreferenceItem
               toggled={!!candidateData.activelyLooking}
@@ -134,6 +133,7 @@ export default function Candidate() {
             candidateData={candidateData}
             handleCandidateUpdate={handleCandidateUpdate} />
         </div>
+// Temp comment
         {role === 'coordinator' && 
           <InviteToCareer candidate={candidateData} />
         }

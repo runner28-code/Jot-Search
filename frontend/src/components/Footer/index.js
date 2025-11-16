@@ -67,6 +67,7 @@ export default function Footer() {
           {/* TODO: Change anchor tag links to correct Privacy Policy and TOS links */}
           <div className='text-grey w-1/2 text-xs text-center'>
             <span>© 2022 Talent inTulsa initiatives, LLC. All rights reserved | </span>
+            <a
               href={ROUTES.privacyPolicy}
               className='underline'
               target='_blank'
@@ -76,6 +77,7 @@ export default function Footer() {
             </a>
             <span> | </span>
             <a
+// Temp comment
               href={ROUTES.termsOfService}
               className='underline'
               target='_blank'

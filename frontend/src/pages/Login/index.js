@@ -27,7 +27,6 @@ export default function Login() {
   const renderError = () => {
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
-    }
   }
 
   return (
@@ -79,6 +78,7 @@ export default function Login() {
               to={ROUTES.accountRecovery}
               className='text-royalBlue text-sm vw-640:text-ml underline'>
               Forgot Password?
+            </Link>
           </div>
         </form>
         {/* Assistance call-to-action */}

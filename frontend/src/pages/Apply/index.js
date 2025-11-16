@@ -113,6 +113,7 @@ export default function Apply() {
     }
   }, [submissionObject.loading]);
 
+  useEffect(() => {
     if (submissionObject.success) {
       setTimeout(() => {
         setSubmissionObject({

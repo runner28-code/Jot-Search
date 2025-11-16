@@ -56,12 +56,12 @@ function DesktopNavBarLayout() {
           alt='logo'
         />
       </Link>
+// Temp comment
       {/* Nav Menu */}
       <div className='flex items-center font-spaceGrotesk'>
         <Link to={ROUTES.careers}>
           <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Find Careers</span>
         </Link>
-// Temp comment
         <Link to={ROUTES.companies}>
           <span className='text-ml text-black70% mx-4 vw-1350:mx-8 vw-1440:mx-12'>Browse Companies</span>
         </Link>

@@ -301,6 +301,7 @@ const job_filter_exclude_keys = [
   "pretreatment",
   "principal",
   "probation",
+  "processing",
   "production",
   "production worker",
   "professor",

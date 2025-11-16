@@ -5,7 +5,6 @@ import CareerCard from '../ResultCard/CareerCard';
 import { prefetchJobs, useGetJobs } from '../../hooks/queries/useGetJobs';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 
-const ITEMS_PER_PAGE = 5;
 
 export default function OtherCareers({ companyId, companyName, currentCareerId }) {
   const [page, setPage] = useState(1);
@@ -36,6 +35,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
     {!isLoading && <h4 className='text-h4 font-spaceGrotesk text-charcoal font-semibold mb-xxl-2'>{headerString}</h4>}
     {careers && careers.length > 0 && (
       <>  
+        {careers.map((career, index) => {
           if (career.externalId === currentCareerId) { // Don't show the current career
             return null;
           }

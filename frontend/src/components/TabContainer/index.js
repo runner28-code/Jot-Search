@@ -33,5 +33,4 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
     if ( isLocked ) {
       return null;
     }
-// Temp comment
     setActiveTab(choice);

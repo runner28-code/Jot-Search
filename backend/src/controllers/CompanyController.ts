@@ -65,6 +65,7 @@ export class CompanyController {
         message: "unsupported id",
       };
     }
+  }
 
   @Authorized()
   @Put("/save")

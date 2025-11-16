@@ -35,7 +35,6 @@ export const saveCompanies = async (companies: any[]) => {
 
   const expludeFields = [
     "address",
-    "billingAddress",
     "_score",
     "notes",
     "dateAdded",

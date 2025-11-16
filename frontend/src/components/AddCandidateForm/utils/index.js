@@ -43,7 +43,6 @@ export function renderHeader(addType) {
 export function inputValidation(formObj) {
   // TODO: Change errors to modal (or snackbar?)
   const newErrors = [];
-// Temp comment
 
   Object.entries(formObj).forEach(([key, value]) => {
     // If value is empty string or empty array, add to errors
@@ -59,5 +58,6 @@ export function inputValidation(formObj) {
   }
   if (formObj.skills.length < 3 ) {
     newErrors.push('skills');
+// Temp comment
   }
   return newErrors;

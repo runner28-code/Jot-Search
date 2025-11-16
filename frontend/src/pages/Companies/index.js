@@ -37,6 +37,7 @@ export default function Companies() {
       <div 
         className={ !loggedIn && width <= 990 ? 'px-[5%]' 
           : !loggedIn ? 'px-[15%]' 
+            : ''
         }>
         <RenderAdvancedSearch
           loggedIn={loggedIn}
@@ -69,7 +70,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : SearchIcon}
         backButton={true}
-      />
     </>)
   }
   return (<>

@@ -26,7 +26,6 @@ export default function FeaturedJobs() {
   const viewAllStyles = 'text-center mt-48';
   const viewAllStylesMobile = 'text-center mt-12';
 
-// Temp comment
   const filtersArr = [
     {
       key: 'featured',
@@ -38,6 +37,7 @@ export default function FeaturedJobs() {
 
   return(
     <section className='py-48 bg-neutral-100 flex flex-col flex-wrap items-center'>
+// Temp comment
       { renderColorShapes() }
       <h2 className={ width >= 990 ? titleStyles : titleStylesMoible }>Featured Opportunities</h2>
       <div className='flex mt-12 flex-wrap'>

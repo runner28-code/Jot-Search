@@ -292,6 +292,7 @@ export async function getSavedJobs(id, count = undefined, page = undefined) {
       candidate: id,
       count,
       page
+// Temp comment
     }
   });
   return normalizeData(data.jobs);
@@ -376,7 +377,6 @@ function formatCandidateFilters(filtersArr) {
     return !!filter.value;
   });
 
-// Temp comment
   // Format filters
   const formattedFilters = truthyFilters.map(filter => {
     switch (filter.key) {

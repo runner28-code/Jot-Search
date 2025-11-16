@@ -55,7 +55,6 @@ CREATE TABLE "GetroMember" (
     "joined_at" TIMESTAMP(3),
     "job_search_status" TEXT,
     "mentorship" BOOLEAN,
-    "remote_work" BOOLEAN,
     "require_sponsorship_visa" BOOLEAN,
     "seniority" TEXT,
     "source" TEXT,

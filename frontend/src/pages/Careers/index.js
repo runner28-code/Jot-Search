@@ -29,7 +29,6 @@ export default function Careers() {
       <RenderHeader
         loggedIn={loggedIn}
         userType={userType}
-        togglePassState={togglePassState}
         toggle={toggle}
       />
       <div 

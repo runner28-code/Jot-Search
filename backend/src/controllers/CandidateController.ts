@@ -322,6 +322,7 @@ export class CandidateController {
       return {
         candidates: sortedCandidates,
         total,
+      };
     } catch (error) {
       console.log(error);
       return { message: error };

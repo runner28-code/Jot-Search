@@ -66,6 +66,7 @@ export default function InviteCandidates({ company }) {
         onChange={setSelected}
         labelledBy="Select"
         ItemRenderer={itemRenderer}
+// Temp comment
         valueRenderer={valueRenderer}
         hasSelectAll={false}
       />
@@ -92,6 +93,7 @@ export default function InviteCandidates({ company }) {
     </section>
   )
 }
+
 function itemRenderer({ option, onClick, disabled}) {
   const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''
   return (

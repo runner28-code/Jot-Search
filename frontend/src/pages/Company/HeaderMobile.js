@@ -54,7 +54,6 @@ function HeaderContent({ companyData }) {
 
         <FavoriteButton
           type={'company'}
-          data={companyData} />
       </div>
     </>
   )
@@ -77,6 +76,7 @@ HeaderContent.propTypes = {
   })
 }
 
+export default function HeaderMobile({ companyData }) {
   return (
     <>
       <section className='flex w-full mb-10 px-4'>

@@ -7,7 +7,6 @@ import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 import { VscClose as CloseIcon } from 'react-icons/vsc';
 import searchGray from '../../assets/images/search-gray.svg';
-import searchWhite from '../../assets/images/search-white.webp';
 
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';

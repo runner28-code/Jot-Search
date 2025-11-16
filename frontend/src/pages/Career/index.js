@@ -80,6 +80,7 @@ export default function CareerPage() {
     </div>
   </>)
 }
+// Temp comment
 CareerPage.propTypes = {
   active: PropTypes.bool
 }

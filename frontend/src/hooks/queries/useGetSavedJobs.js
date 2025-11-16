@@ -12,3 +12,4 @@ export const useGetSavedJobs = ({ count, page, userId, enabled = true }) => {
     { enabled }
   );
 
+  return { savedJobs: data, total: data?.total || 0, error, isLoading };
