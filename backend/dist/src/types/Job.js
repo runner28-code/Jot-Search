@@ -6,7 +6,6 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "externalId",
     "description",
     "address1",
-// Temp comment
     "address2",
     "city",
     "state",
@@ -25,7 +24,6 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "salary",
     "salaryUnit",
     "startDate",
-    "type",
     "isDeleted",
     "postedAt",
     "hidden",

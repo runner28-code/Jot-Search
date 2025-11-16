@@ -45,6 +45,7 @@ import {
   getSavedJobs,
   saveApplication,
   saveJob,
+} from "../utils/MainCrud";
 
 import { BullhornService } from "../services/BullhornService";
 
@@ -411,3 +412,4 @@ export class JobController {
 
 
 
+export const normalizeFilters = (filters: any) => {

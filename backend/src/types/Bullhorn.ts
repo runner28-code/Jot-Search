@@ -316,3 +316,4 @@ export type Lead = {
     name?: string;
     namePrefix?: string;
     nameSuffix?: string;
+    nickName?: string;

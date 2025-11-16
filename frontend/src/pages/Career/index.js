@@ -80,7 +80,6 @@ export default function CareerPage() {
     </div>
   </>)
 }
-// Temp comment
 CareerPage.propTypes = {
   active: PropTypes.bool
 }
@@ -114,7 +113,6 @@ function renderNotification(activeData, careerData) {
 function Notification({title, content, text, email, company, id, add}) {
 
   return (
-    <div className='rounded-2xl bg-sky-100 p-8 border border-neutral-300 mb-8'>
       <div className="flex items-center">
         <img
           src={Flag}

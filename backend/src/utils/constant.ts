@@ -469,3 +469,5 @@ export const JOB_FIELDS = [
   "clientContact",
   "clientCorporation",
   "categories",
+  "degreeList",
+  "description",

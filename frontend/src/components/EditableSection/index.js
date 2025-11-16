@@ -11,6 +11,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   const [editMode, setEditMode] = useState(false);
 
   function handleSubmit() {
+// Temp comment
     setEditMode(false);
     handleContentUpdate(contentObject);
   }
@@ -46,6 +47,7 @@ EditableSection.propTypes = {
 /* Render functions */
 
 function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
+  if (editMode) {
     return <EditSectionForm 
       contentObject={contentObject} 
       handlePropertyChange={handlePropertyChange} />

@@ -711,3 +711,6 @@ model GetroCompany {
   approx_employees           Int?
   crunchbase_url             String?
   description                String?
+  domain                     String?
+  facebook_url               String?
+  founded                    String?

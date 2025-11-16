@@ -53,7 +53,6 @@ export default function Candidate() {
     Object.keys(updateObject).forEach(key => {
       if (updateObject[key] === '') {
         updateObject[key] = null;
-      }
       if (updateObject[key] !== candidateData[key]) {
         formattedUpdateObject[key] = updateObject[key];
       }
@@ -133,7 +132,6 @@ export default function Candidate() {
             candidateData={candidateData}
             handleCandidateUpdate={handleCandidateUpdate} />
         </div>
-// Temp comment
         {role === 'coordinator' && 
           <InviteToCareer candidate={candidateData} />
         }

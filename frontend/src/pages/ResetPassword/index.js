@@ -6,6 +6,7 @@ import * as ROUTES from '../../routes';
 import API from '../../services/API';
 
 
+export default function ResetPassword() {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -53,6 +54,7 @@ import API from '../../services/API';
         <div className='mb-4 text-center'>
           <span className='text-success'>Reset Password Successful.</span>&nbsp;
           <Link
+// Temp comment
             to={ROUTES.login}
             className='underline block my-4 text-royalBlue'
           >

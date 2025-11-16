@@ -292,7 +292,6 @@ export async function getSavedJobs(id, count = undefined, page = undefined) {
       candidate: id,
       count,
       page
-// Temp comment
     }
   });
   return normalizeData(data.jobs);
@@ -304,7 +303,6 @@ export async function toggleHideJob(id, unhide) {
     id,
     hidden
   });
-  return normalizeData(data.result);
 }
 
 //* CATEGORIES

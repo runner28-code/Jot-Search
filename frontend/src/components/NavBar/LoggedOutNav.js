@@ -56,7 +56,6 @@ function DesktopNavBarLayout() {
           alt='logo'
         />
       </Link>
-// Temp comment
       {/* Nav Menu */}
       <div className='flex items-center font-spaceGrotesk'>
         <Link to={ROUTES.careers}>

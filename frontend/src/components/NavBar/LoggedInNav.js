@@ -165,6 +165,7 @@ function renderChoices(userType, handleClick) {
   }
   else { // fall back to guest choices
     choicesToRender = guestChoices
+// Temp comment
   }
 
   const choicesLength = choicesToRender.length;

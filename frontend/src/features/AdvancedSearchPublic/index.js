@@ -58,7 +58,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   }
 
   const [filterObject, setFilterObject] = useState(initialFilterState);
-  const [page, setPage] = useState(1);
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
@@ -109,7 +108,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     setFilterObject({
       ...filterObject,
       [filterType]: choice
-// Temp comment
     });
     setPage(1);
   }

@@ -30,7 +30,6 @@ export default function DesktopLayout(props) {
   const skillList = careerData.skillList;
 
   return (<>
-// Temp comment
     <section className='relative bg-white px-xxl-3 py-xxl-2 border-2 border-disabled border-solid rounded-3xl mb-xxl-4'>
       {/* Header */}
       <div className='flex items-start'>
@@ -178,7 +177,6 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
       {(role === 'candidate' || role === 'guest') && (
         <ApplyButton
           datasource={careerData.datasource}
-          careerId={careerData.id}
           applicationUrl={careerData.application_path || careerData.url}
         />
       )}

@@ -94,3 +94,4 @@ export const getCandidatesList = async (candidates_ids: string[]) => {
       where: {
         id: {
           in: candidates_ids,
+        },

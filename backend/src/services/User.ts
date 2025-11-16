@@ -593,3 +593,7 @@ export const getStats = async (userId: string) => {
       message: error,
     };
   }
+};
+
+export const getLandingPageStats = async () => {
+  const activeStatuses = ["Active", "Open"]

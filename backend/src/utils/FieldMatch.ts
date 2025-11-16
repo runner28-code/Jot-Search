@@ -71,3 +71,4 @@ export const USER_FILTER: any = {
   employeeType: "employeeType",
   willRelocate: "willRelocate",
   experienceYears: "experienceYears",
+  seniority: "seniority",

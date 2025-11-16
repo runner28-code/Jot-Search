@@ -96,3 +96,4 @@ export type User = {
   twitter_url?: string;
   verified?: string;
   website_url?: string;
+  invited?: string;

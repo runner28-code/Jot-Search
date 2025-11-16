@@ -21,3 +21,4 @@ jobs:
 
       - name: Deploy with rsync
         run: rsync -avz ./ ubuntu@${{ secrets.SSH_HOST }}:/opt/intulsa --delete
+

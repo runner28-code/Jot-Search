@@ -379,3 +379,5 @@ export const skills = [
   'Systems Administration',
   'Tableau',
   'Talent Acquisition',
+  'Tax',
+  'Teaching',

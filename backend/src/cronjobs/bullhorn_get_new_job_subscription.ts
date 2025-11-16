@@ -9,3 +9,4 @@ import { consoleLog } from "../utils";
         consoleLog(error);
     }
     consoleLog('/// CRON_JOB_ENDED: BULLHORN_GET_NEW_JOB_SUBSCRIPTION');
+    process.exit();

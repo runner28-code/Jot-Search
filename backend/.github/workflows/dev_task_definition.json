@@ -85,7 +85,6 @@
                     "name": "SENDGRID_KEY", 
                     "value": "{SECRET_SENDGRID_KEY}"
                 },
-                {
                     "name": "SENDGRID_SECRET", 
                     "value": "{SECRET_SENDGRID_SECRET}"
                 },
@@ -94,3 +93,4 @@
                     "value": "Support@iDENTIFY.tech"
                 },
                 {
+                    "name": "FRONTEND_URL", 

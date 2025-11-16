@@ -131,6 +131,5 @@ useExpressServer(app, {
       }
       return false;
     } catch (error) {
-      return false;
     }
   },

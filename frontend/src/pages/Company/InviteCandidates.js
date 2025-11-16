@@ -55,7 +55,6 @@ export default function InviteCandidates({ company }) {
       <h2 className="text-h4">Send Candidates to Company</h2>
 
       {isSendingCandidates && <div className="text-center">Sending Invitations...</div>}
-      {successfullySentCandidates && <div className="text-center">Invitations Sent!</div>}
 
       <SelectedValues />
 
@@ -66,7 +65,6 @@ export default function InviteCandidates({ company }) {
         onChange={setSelected}
         labelledBy="Select"
         ItemRenderer={itemRenderer}
-// Temp comment
         valueRenderer={valueRenderer}
         hasSelectAll={false}
       />

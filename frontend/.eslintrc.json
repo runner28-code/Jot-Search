@@ -69,3 +69,4 @@
           "CustomForm",
           {"name": "Form", "formAttribute": "endpoint"}
         ],
+        "linkComponents": [

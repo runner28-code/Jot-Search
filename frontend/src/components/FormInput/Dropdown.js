@@ -80,6 +80,7 @@ export default function Dropdown(props) {
       setIsOpen(false);
       onChange(name, choice);
     }
+  }
 
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setIsOpen);

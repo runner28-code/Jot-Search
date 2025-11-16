@@ -6,7 +6,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   if ( submissionObject.loading ) {
     return <LoadingSpinner
       height='50'
-      width='50'
     />
   }
   if ( submissionObject.success ) {
@@ -58,6 +57,5 @@ export function inputValidation(formObj) {
   }
   if (formObj.skills.length < 3 ) {
     newErrors.push('skills');
-// Temp comment
   }
   return newErrors;

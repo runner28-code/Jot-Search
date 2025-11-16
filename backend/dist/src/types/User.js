@@ -9,7 +9,6 @@ exports.IUSER = {
     gender: "",
     email: "",
     password: "",
-// Temp comment
     role: "",
     address1: "",
     address2: "",
@@ -34,7 +33,6 @@ exports.IUSER = {
     companyName: "",
     annualRevenue: "",
     companyURL: "",
-    numEmployees: "",
     revenue: "",
     dateFounded: "",
     employeeType: "",
@@ -46,3 +44,4 @@ exports.IUSER = {
     workAuthorized: "",
     disability: "",
     occupation: "",
+    employmentPreference: "",

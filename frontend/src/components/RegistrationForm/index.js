@@ -32,7 +32,6 @@ const defaultState = {
   willRelocate: false,
   roles: [],
   skills: [],
-  experience: '',
   employmentPreference: '',
   workspace: '',
   linkedin: '',

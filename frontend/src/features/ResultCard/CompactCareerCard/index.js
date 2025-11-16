@@ -73,7 +73,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
 CompactCareerCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
-    city: PropTypes.string,
     state: PropTypes.string,
     company: PropTypes.shape({
       name: PropTypes.string,
@@ -99,7 +98,6 @@ CompactCareerCard.propTypes = {
   agoDate: PropTypes.string,
   isFavoriteOverride: PropTypes.bool,
   selectableProps: PropTypes.shape({
-// Temp comment
     selectable: PropTypes.bool,
     selected: PropTypes.arrayOf(PropTypes.string),
     setSelected: PropTypes.func

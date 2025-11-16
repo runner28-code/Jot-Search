@@ -51,7 +51,6 @@ export default function Apply() {
     errorMessage: ''
   });
 
-  useEffect(async () => {
     if ( !isLoggedIn ) {
       const careerData = await getJobById(jobId);
       setCareer(careerData);

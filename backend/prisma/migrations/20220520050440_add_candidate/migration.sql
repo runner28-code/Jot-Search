@@ -94,3 +94,4 @@ CREATE TABLE "Candidate" (
     "username" TEXT,
     "veteran" TEXT,
     "willRelocate" TEXT,
+    "workAuthorized" TEXT,

@@ -54,7 +54,6 @@ jobs:
     
     - name: Add secrets to .env file for prisma
       uses: cschleiden/replace-tokens@v1
-      with:
         files: '.env'
         tokenPrefix: '{'
         tokenSuffix: '}'
@@ -80,3 +79,4 @@ jobs:
         task-definition: ${{ env.ECS_TASK_DEFINITION }}
         container-name: ${{ env.CONTAINER_NAME }}
         image: ${{ steps.build-image.outputs.image }}
+

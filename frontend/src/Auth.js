@@ -38,6 +38,7 @@ export default function Auth() {
         <Route
           path={ROUTES.applications}
           element={<Applications />} />
+        <Route
           path={ROUTES.favorites}
           element={<Favorites />} />
         <Route

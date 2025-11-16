@@ -32,6 +32,7 @@ const job_filter_exclude_keys = [
     "auto",
     "automation technician",
     "automotive",
+// Temp comment
     "bailiff",
     "barback",
     "bartender",
@@ -468,3 +469,5 @@ exports.JOB_FIELDS = [
     "clientCorporation",
     "categories",
     "degreeList",
+    "description",
+    "durationWeeks",

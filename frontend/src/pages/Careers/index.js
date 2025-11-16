@@ -29,7 +29,7 @@ export default function Careers() {
       <RenderHeader
         loggedIn={loggedIn}
         userType={userType}
-        toggle={toggle}
+        togglePassState={togglePassState}
       />
       <div 
         className={width <= 990 && !loggedIn ? 'px-[5%]' 

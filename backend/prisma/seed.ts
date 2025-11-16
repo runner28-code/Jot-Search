@@ -215,3 +215,4 @@ async function seedUsers() {
         resume: "resume",
         seniority: "Mid",
         linkedin: "linkedin",
+        workspace: "Hybrid",

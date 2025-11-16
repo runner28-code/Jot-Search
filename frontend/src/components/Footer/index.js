@@ -77,7 +77,6 @@ export default function Footer() {
             </a>
             <span> | </span>
             <a
-// Temp comment
               href={ROUTES.termsOfService}
               className='underline'
               target='_blank'

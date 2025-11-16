@@ -35,6 +35,7 @@ export const saveCompanies = async (companies: any[]) => {
 
   const expludeFields = [
     "address",
+    "billingAddress",
     "_score",
     "notes",
     "dateAdded",
@@ -308,3 +309,5 @@ export const migrateJobInTPP = async (data: Job) => {
     if (existing) {
       console.log(
         `Migration Failed: Bullhorn Job (bh_id=${data.externalId}) is already migrated`
+      );
+      return;

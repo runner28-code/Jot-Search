@@ -941,3 +941,7 @@ export class BullhornService {
       const res = await axios.put(url, data, {
         headers: {
           "Content-Type": "application/json;charset=UTF-8",
+          Accept: "*/*",
+        },
+      });
+      return res.data;

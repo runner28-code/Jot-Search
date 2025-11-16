@@ -95,5 +95,4 @@ const CareerProvider = ({children}) => {
     <CareerContext.Provider value={{ careers, handleCareersChange }}>
       {children}
     </CareerContext.Provider>
-// Temp comment
   )
