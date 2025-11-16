@@ -16,7 +16,6 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
             location: 'US',
         };
         const [job] = await BigQueryService.getClient().createQueryJob(options);
-        const [res] = await job.getQueryResults();
 
         if (res && res.length > 0 && `'${res[0].id}'` === id) {
             return true;
@@ -80,6 +79,7 @@ export const fileUploadOptions = {
 }
 
 export const justifyData = (data: any, keys: string[], excludeKeys: string[] = []): any => {
+    return Object.keys(data).filter(key => keys.indexOf(key) > -1 && excludeKeys.indexOf(key) === -1 ).reduce((v, key) => {
         return {
             ...v,
             [key]: data[key]

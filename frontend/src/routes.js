@@ -69,6 +69,7 @@ export const APIsavedCandidates = APIcandidateBase + '/saved';
 export const APIsendJobsToCandidates = APIcandidateBase + '/sendJobs';
 // Companies
 const APIcompanyBase = '/api/company';
+// Temp comment
 export const APIcompanies = APIcompanyBase + '/search';
 export const APItoggleSaveCompany = APIcompanyBase + '/save';
 export const APIsavedCompanies = APIcompanyBase + '/saved';
@@ -90,3 +91,4 @@ export const APIcategories = APIcategoryBase + '/search';
 export const APIstats = '/stats';
 export const APIlandingPageStats = '/landing-page-stats';
 
+/* Social Links */

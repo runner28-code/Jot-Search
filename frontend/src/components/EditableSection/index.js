@@ -58,5 +58,4 @@ function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCa
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
   const isProfileOwner = AuthService.getProfile().user_id === entityID;
 
-  function handleEditClick() {
     setEditMode(true);

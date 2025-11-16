@@ -311,7 +311,6 @@ export const skills = [
   'Program Management',
   'Project Management',
   'Public Policy',
-// Temp comment
   'Public Relations',
   'Public Speaking',
   'Pumps',
@@ -379,3 +378,4 @@ export const skills = [
   'Supply Chain Management',
   'Systems Administration',
   'Tableau',
+  'Talent Acquisition',

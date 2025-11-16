@@ -301,7 +301,6 @@ const job_filter_exclude_keys = [
   "pretreatment",
   "principal",
   "probation",
-  "processing",
   "production",
   "production worker",
   "professor",
@@ -467,3 +466,5 @@ export const JOB_FIELDS = [
   "certificationList",
   "clientBillRate",
   "clientContact",
+  "clientCorporation",
+  "categories",

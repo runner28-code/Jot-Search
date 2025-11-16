@@ -56,12 +56,11 @@ exports.USER_FILTER = {
     skills: "skills",
     skillSet: "skillSet",
     category: "category",
-// Temp comment
     status: "status",
     email: "email",
     bh_email: "bh_email",
     companyName: "companyName",
-    occupation: "occupation",
     workAuthorized: "workAuthorized",
     employeeType: "employeeType",
     willRelocate: "willRelocate",
+    experienceYears: "experienceYears",

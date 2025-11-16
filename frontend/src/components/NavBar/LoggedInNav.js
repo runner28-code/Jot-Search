@@ -173,3 +173,39 @@ function renderChoices(userType, handleClick) {
   return (<>
     {choicesToRender.map((choice, index) => renderChoice(choice, selected, index, choicesLength, handleClick))}
   </>)
+}
+
+function renderChoice(choice, selected, index, choicesLength, handleClick) {
+  let baseChoiceStyles = 'w-full h-20 flex items-center cursor-pointer hover:bg-sky-100 transition ease-in-out ';
+  const selectedChoice = choice.label === selected;
+  let selectedClass = ' bg-royalBlue text-white ';
+  if (index === 0) selectedClass += ' rounded-t-xl '; // round top card if selected
+  if (index === choicesLength - 1) {
+    selectedClass += ' rounded-b-2xl border-t border-solid border-midGrey'; // round bottom card if selected
+    baseChoiceStyles += ' border-b-0'; // remove border if last card
+  }
+
+  if( index === choicesLength - 2 ) baseChoiceStyles += 'border-t-4 border-smokeGray ';
+
+  const choiceStyles = selectedChoice ? baseChoiceStyles + selectedClass : baseChoiceStyles;
+  let iconStyles = 'w-10 h-10 mx-9 ';
+  const strokeIcons = ['Add User', 'My Account']; // These icons use stroke, rest use fill
+  if ( selectedChoice ) {
+    iconStyles += strokeIcons.includes(choice.label) ? 'stroke-white' : 'fill-white';
+  } else {
+    iconStyles += strokeIcons.includes(choice.label) ? 'stroke-royalBlue' : 'fill-royalBlue';
+  }
+  const choiceTextStyles = 'text-sm mr-9 ' + (selectedChoice ? 'text-white' : 'text-royalBlue');
+  const Icon = choice.icon;
+  return (
+    <Link
+      to={choice.link}
+      className={choiceStyles}
+      key={choice.label}
+      onClick={handleClick}
+    >
+      <Icon
+        className={iconStyles} />
+      <p className={choiceTextStyles}>{choice.label}</p>
+    </Link>
+  )

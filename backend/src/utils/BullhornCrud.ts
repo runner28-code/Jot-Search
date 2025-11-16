@@ -308,3 +308,4 @@ export const migrateJobInTPP = async (data: Job) => {
     const existing = await isExistByCondition(condition, dataset, table);
     if (existing) {
       console.log(
+        `Migration Failed: Bullhorn Job (bh_id=${data.externalId}) is already migrated`

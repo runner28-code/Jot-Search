@@ -115,3 +115,4 @@ export const sendJobApplyNotification = async (to: string, name: string) => {
     const base_url = process.env.FRONTEND_URL || 'http://localhost:3000';
     await sendEmail(to, 'Job has been applied!', 'apply-job-notification', {
       name: name,
+      url: `${base_url}/login`

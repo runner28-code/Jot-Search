@@ -123,3 +123,4 @@ export const parseGetroJobToMain = (data: GtJob) => {
   const job: Job = {
     externalId: data.id,
     description: data.description,
+    locations: data.locations,

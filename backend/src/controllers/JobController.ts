@@ -284,7 +284,6 @@ export class JobController {
     operator: Operator = "OR"
   ) {
     if (filters?.every((opt) => JobFilter.bullhorn[opt.key] != null)) {
-      const _dataset = DATASET_BULLHORN;
       const _table = Tables.JOBS;
 
       const _specialHandlers = {
@@ -409,5 +408,6 @@ export class JobController {
     return await createJob(body);
   }
 }
+
 
 

@@ -54,6 +54,7 @@ function HeaderContent({ companyData }) {
             <OpenCareers
               styles={headerRowTextStyles}
               companyId={companyData.id}
+            />
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <FaUsers
@@ -159,6 +160,7 @@ function renderDesktopLogo(logoUrl, name) {
       <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
         <BsBuilding className={logoStyles} />
       </div>
+// Temp comment
     )
   }
   return (

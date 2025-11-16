@@ -52,6 +52,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();
   const [activeTab, setActiveTab] = useTabState(disabledTabs, userType, pathname);
+  const initialFilterState = activeTab === 'jobs' ? defaultJobFilterState : { ...defaultCandidateFilterState, title: '' };
   if (state) {
     if (state.title) initialFilterState.title = state.title;
     if (state.expertise) initialFilterState.Expertise = state.expertise;
@@ -135,3 +136,94 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   function clearFilters() {
     setFilterObject(initialFilterState);
     setPage(1);
+  }
+
+  // eslint-disable-next-line no-unused-vars
+  const { Status, ...publicDropdownFilters } = jobFilterObject;
+  const propsByTab = {
+    jobs: {
+      filterTemplate: publicDropdownFilters,
+      activeResults: jobs,
+      totalResults: totalJobs,
+      isLoading: isLoadingJobs,
+      prefetchFunc: (page) => prefetchJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page })
+    },
+    candidates: {
+      filterTemplate: candidateFilterObject,
+      activeResults: candidates,
+      totalResults: totalCandidates,
+      isLoading: isLoadingCandidates,
+      prefetchFunc: (page) => prefetchCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page })
+    },
+    companies: {
+      filterTemplate: {},
+      activeResults: companies,
+      totalResults: totalCompanies,
+      isLoading: isLoadingCompanies,
+      prefetchFunc: (page) => prefetchCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page })
+    }
+  }
+
+  const { filterTemplate, activeResults, totalResults, isLoading, prefetchFunc } = propsByTab[activeTab];
+
+  const filterProps = {
+    handleFilterChange: handleFilterChange,
+    defaultFilterObject: filterTemplate,
+    filterObject: filterObject,
+    searchTerm: filterObject.title,
+    setSearchTerm: handleSearchChange,
+    handleSearchClick: handleSearchClick,
+    clearFilters: clearFilters,
+  };
+  const { PaginatedControls } = usePaginatedControls({ page, setPage, total: totalResults, itemsPerPage: ITEMS_PER_PAGE, prefetchFunc });
+  return (
+    <div className='w-full'>
+      <div className={ !toggle ? 'hidden' : 'relative'}>
+        <div className='relative w-full max-w-400 bg-sky-500 text-white border border-disabledGrey pt-12 px-xxl-4 pb-xxl'>
+          { /* Silence is bliss */}
+          <div className='hidden'>
+            <TabContainer
+              tabChoices={availableTabChoicesByUserType[userType]}
+              activeTab={activeTab}
+              setActiveTab={handleTabChange}
+              isLocked={!!disabledTabs}
+            />
+          </div>
+          <FilterLayout
+            activeTab={activeTab}
+            filterProps={filterProps}
+          />
+        </div>
+      </div>
+      <div className={ width >= 990 ? 'vw-990:px-0' : 'px-[5%] vw-990:px-0'}>
+        <ResultsHeader
+          total={totalResults}
+          type={activeTab}
+          loading={isLoading}
+        />
+        <ResultContainer
+          key={activeResults}
+          results={activeResults}
+          type={activeTab}
+          loading={isLoading} />
+        <PaginatedControls />
+      </div>
+    </div>
+  )
+}
+
+AdvancedSearchCandidate.propTypes = {
+  disabledTabs: PropTypes.bool,
+  toggle: PropTypes.bool
+}
+
+function FilterLayout({ activeTab, filterProps }) {
+  switch (activeTab) {
+    case 'candidates':
+    case 'jobs':
+      return <CareerFilterLayout {...filterProps} />
+    case 'companies':
+      return <CompanyFilterLayout {...filterProps} />
+    default:
+      return null;
+  }

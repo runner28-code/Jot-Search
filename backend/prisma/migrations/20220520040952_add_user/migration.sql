@@ -42,3 +42,4 @@ CREATE TABLE "User" (
     "workAuthorized" TEXT,
     "disability" TEXT,
     "avatar" TEXT,
+    "occupation" TEXT,

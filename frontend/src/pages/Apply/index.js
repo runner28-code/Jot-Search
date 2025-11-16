@@ -113,7 +113,6 @@ export default function Apply() {
     }
   }, [submissionObject.loading]);
 
-  useEffect(() => {
     if (submissionObject.success) {
       setTimeout(() => {
         setSubmissionObject({
@@ -140,7 +139,6 @@ export default function Apply() {
     }
 
     const response = await applyToJob(jobId, formattedObject.id);
-// Temp comment
     return response
   }
 

@@ -64,6 +64,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     }
     handleChange(name, value);
   }
+// Temp comment
 
   function handleCommunityChoice(name, value) {
     setFormData({
@@ -335,6 +336,7 @@ PersonalInfo.propTypes = {
 
 function renderCommunity (referralChoice, commObj, handleCommunityChoice, communityChoices) {
 
+  if( referralChoice ) {
     return (<>
       <FormInput
         type='single-select'

@@ -65,7 +65,6 @@ export class CompanyController {
         message: "unsupported id",
       };
     }
-  }
 
   @Authorized()
   @Put("/save")
@@ -344,3 +343,4 @@ export class CompanyController {
     return result;
   }
 
+  async getCompaniesByFilterFromGetro(

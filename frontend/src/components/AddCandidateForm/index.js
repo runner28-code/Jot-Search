@@ -60,6 +60,7 @@ export default function RegistrationForm() {
         return; 
       }
       
+// Temp comment
       // Attempt to upload resume before submitting user data
       const resumeURL = await uploadFile('resumes', formObj.resumeFile);
       formObj.resume = resumeURL;
@@ -102,7 +103,6 @@ export default function RegistrationForm() {
       }, 2000);
     }
   }, [submissionObject.success])
-// Temp comment
 
   async function handleSubmit(event) {
     event.preventDefault();

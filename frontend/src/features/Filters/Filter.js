@@ -14,6 +14,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const initialValue = chosen && chosen !== 'Any' ? chosen : formattedFilterType;
   const [showDropdown, setShowDropdown] = useState(false);
   const [selected, setSelected] = useState(initialValue);
+// Temp comment
   const [listening, setListening] = useState(false);
 
   const menuRef = useRef(null);
@@ -21,6 +22,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   function handleContainerClick() {
     setShowDropdown(showDropdown => !showDropdown);
   }
+  function handleChoiceClick(choice) {
     setShowDropdown(false);
     setSelected(choice);
     handleFilterChange(filterType, choice);

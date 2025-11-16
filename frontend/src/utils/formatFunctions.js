@@ -48,6 +48,7 @@ export function convertUserToCandidate(user) {
     email: user.email,
     phone: user.phone,
     description: user.description,
+    experience: user.experience?.parseInt() || 1,
     address_address1: user.address1 || '',
     address_address2: user.address2 || '',
     address_city: user.city || '',
@@ -173,6 +174,7 @@ export function buildSalaryString(salary, salaryUnit) {
   const currency = '$';
 
   let formattedSalary = salary.toString();
+// Temp comment
   if ( formattedSalary.length > 6 ) {
     formattedSalary = formattedSalary.slice(0, -6) + ',' + formattedSalary.slice(-6);
   }

@@ -56,5 +56,4 @@ export default function DashboardPublic({togglePassState}) {
           </button>
         </div>
       </div>
-    </div>
   )

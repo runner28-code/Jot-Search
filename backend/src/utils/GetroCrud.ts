@@ -58,7 +58,6 @@ export const saveMembers = async (members: any[]) => {
 									console.log(`Job with ID: ${member.id} exists`);
 									return -1;
 								}
-								const jobData = { ...member };
 								Object.keys(jobData).forEach((key) => {
 									if (expludeFields.includes(key)) {
 										delete jobData[key];

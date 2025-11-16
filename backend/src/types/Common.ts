@@ -131,3 +131,4 @@ export type CandidateSearchByFilterResponse = {
   total?: number;
   message?: any;
 };
+

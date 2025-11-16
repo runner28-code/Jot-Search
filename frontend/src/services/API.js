@@ -308,7 +308,6 @@ export async function toggleHideJob(id, unhide) {
 
 //* CATEGORIES
 export async function getCategoryById(id) {
-// Temp comment
   const { data } = await API.get(ROUTES.APIcategories, {
     params: {
       id
@@ -377,6 +376,7 @@ function formatCandidateFilters(filtersArr) {
     return !!filter.value;
   });
 
+// Temp comment
   // Format filters
   const formattedFilters = truthyFilters.map(filter => {
     switch (filter.key) {
@@ -473,6 +473,15 @@ export const sendCandidatesToCompanies = async ({ candidateIds, companyIds }) =>
 
 export async function getCompanyQuickStats(duration) {
   const { data } = await API.get(ROUTES.companyQuickStats, {
+    params: {
+      duration
+    }
+  });
+  return data.data;
+}
+
+export async function getCoordinatorQuickStats(duration) {
+  const { data } = await API.get(ROUTES.coordinatorQuickStats, {
     params: {
       duration
     }

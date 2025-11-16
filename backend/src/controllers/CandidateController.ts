@@ -322,7 +322,6 @@ export class CandidateController {
       return {
         candidates: sortedCandidates,
         total,
-      };
     } catch (error) {
       console.log(error);
       return { message: error };
@@ -395,3 +394,5 @@ export class CandidateController {
         console.log("Sending emails to candidates is disabled");
         console.log({ candidatesWithEmail });
         if (!process.env.TEST_SEND_EMAILS_TO) {
+          result = true
+        } else {

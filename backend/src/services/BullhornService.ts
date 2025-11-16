@@ -491,6 +491,7 @@ export class BullhornService {
             "comments",
             "dateAdded",
             "dateLastModified",
+            "dateLastVisit",
             "description",
             "desiredCategories",
             "desiredSkills",
@@ -936,3 +937,7 @@ export class BullhornService {
         employmentPreference: user.employmentPreference,
       };
       const url = `${this.restUrl}entity/Candidate?${query}`;
+      console.log(url);
+      const res = await axios.put(url, data, {
+        headers: {
+          "Content-Type": "application/json;charset=UTF-8",

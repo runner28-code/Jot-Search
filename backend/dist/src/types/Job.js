@@ -22,7 +22,6 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "interviews",
     "onSite",
     "salary",
-// Temp comment
     "salaryUnit",
     "startDate",
     "type",

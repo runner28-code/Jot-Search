@@ -77,3 +77,4 @@ export type User = {
     invited?: string;
     invited_by?: string;
     job_search_status?: string;
+    joined_at?: string;

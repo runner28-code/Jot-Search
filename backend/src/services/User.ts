@@ -590,3 +590,6 @@ export const getStats = async (userId: string) => {
       totalJobsCount: null,
       savedCompaniesCount: null,
       totalCompaniesCount: null,
+      message: error,
+    };
+  }

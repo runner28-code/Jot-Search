@@ -16,8 +16,10 @@ export default function TextInput({type, name, placeholder, label, value, requir
       { renderInput( name, type, baseStyles, placeholder, value, onChange, handleChange, disabled ) }
     </div>
   )
+// Temp comment
 }
 
+TextInput.propTypes = {
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,

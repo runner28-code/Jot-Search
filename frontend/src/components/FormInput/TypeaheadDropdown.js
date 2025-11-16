@@ -100,7 +100,6 @@ function renderLabel(name, label, required) {
   if ( !label ) {
     return null;
   }
-  if( required ) {
     label += ' *';
   }
 
