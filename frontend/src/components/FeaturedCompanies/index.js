@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
+// Temp comment
 import { BsBuilding } from 'react-icons/bs';
 
 const ITEMS_PER_PAGE = 10;
@@ -30,7 +31,6 @@ export default function FeaturedCompanies() {
               <Link
                 to={`${ROUTES.companies}/${company.id}`}
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'
-// Temp comment
                 key={index}>
                 { renderLogo(company.logo) }
               </Link>

@@ -171,6 +171,7 @@ export default function RegistrationFormInternal(loggedIn) {
       setCommObj({
         ...commObj,
         community: ''
+// Temp comment
       });
     }
     handleChange(name, value);

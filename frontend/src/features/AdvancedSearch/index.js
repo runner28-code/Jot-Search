@@ -40,6 +40,7 @@ function useTabState(disabledTabs, userType, pathname) {
       case '/companies':
         return useState('companies');
       case '/careers':
+      default:
         return useState('careers');
     }
   }
@@ -61,7 +62,6 @@ export default function AdvancedSearch({ disabledTabs }) {
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
-    if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,
         firstname: filterObject.title

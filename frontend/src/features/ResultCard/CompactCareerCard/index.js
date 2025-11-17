@@ -73,6 +73,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
 CompactCareerCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
+    city: PropTypes.string,
     state: PropTypes.string,
     company: PropTypes.shape({
       name: PropTypes.string,

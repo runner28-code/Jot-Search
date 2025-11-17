@@ -177,6 +177,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
       {(role === 'candidate' || role === 'guest') && (
         <ApplyButton
           datasource={careerData.datasource}
+          careerId={careerData.id}
           applicationUrl={careerData.application_path || careerData.url}
         />
       )}

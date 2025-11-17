@@ -32,6 +32,7 @@ const defaultState = {
   willRelocate: false,
   roles: [],
   skills: [],
+  experience: '',
   employmentPreference: '',
   workspace: '',
   linkedin: '',
@@ -99,6 +100,7 @@ export default function RegistrationForm(loggedIn) {
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
+// Temp comment
         // Set success to true if on add-user page, navigate user to login if not
         if ( addType === 'coordinator' ) {
           return setSubmissionObject({

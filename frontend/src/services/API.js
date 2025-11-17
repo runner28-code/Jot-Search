@@ -303,6 +303,7 @@ export async function toggleHideJob(id, unhide) {
     id,
     hidden
   });
+  return normalizeData(data.result);
 }
 
 //* CATEGORIES

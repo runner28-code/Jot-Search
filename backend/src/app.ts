@@ -129,7 +129,7 @@ useExpressServer(app, {
           return true;
         }
       }
-      return false;
     } catch (error) {
+      return false;
     }
   },

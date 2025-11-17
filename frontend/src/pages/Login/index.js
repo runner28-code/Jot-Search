@@ -58,6 +58,7 @@ export default function Login() {
             </Link>
           </div>
           { renderError() }
+          <FormInput
             type='text'
             name='email'
             label='Login Email'

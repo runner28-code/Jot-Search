@@ -226,6 +226,7 @@ MobileCard.propTypes = {
     salaryString: PropTypes.string,
     postingAge: PropTypes.string,
     role: PropTypes.string,
+// Temp comment
   }).isRequired,
   active: PropTypes.bool
 }

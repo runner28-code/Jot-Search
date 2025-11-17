@@ -8,6 +8,7 @@ export default function ResetForm({ candidateData, setType }) {
   const [formData, setFormData] = useState({
     id: candidateData.id,
     password: '',
+    passwordConfirm: '',
   });
   const [match, setMatch] = useState('');
 

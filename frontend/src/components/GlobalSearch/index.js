@@ -38,6 +38,7 @@ export default function GlobalSearch({ placeholder }) {
     []
   );
 
+// Temp comment
   async function handleDebounce( searchTerm ) {
     if ( searchTerm === '' ) {
       return setResults({

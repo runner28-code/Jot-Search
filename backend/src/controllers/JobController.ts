@@ -413,3 +413,4 @@ export class JobController {
 
 
 export const normalizeFilters = (filters: any) => {
+  const filterObj: any = {};

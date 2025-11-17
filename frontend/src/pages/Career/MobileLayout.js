@@ -192,7 +192,6 @@ function SkillsList({items}) {
   }
   return (
     <ul className='list-disc ml-8 mb-20'>
-      {items.map((item, index) => (
         <li key={index}>{item}</li>
       ))}
     </ul>

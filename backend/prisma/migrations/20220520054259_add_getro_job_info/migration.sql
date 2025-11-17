@@ -38,5 +38,6 @@ CREATE TABLE "GetroJobInfo" (
     "status" TEXT,
     "title" TEXT,
     "url" TEXT,
+    "hidden" BOOLEAN NOT NULL DEFAULT false,
 
     CONSTRAINT "GetroJobInfo_pkey" PRIMARY KEY ("id")

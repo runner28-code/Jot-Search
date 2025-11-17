@@ -95,8 +95,8 @@ export default function RegistrationForm() {
     if ( submissionObject.success ) {
       setTimeout(() => {
         setFormObj(defaultState);
-// Temp comment
         setSubmissionObject({
+// Temp comment
           loading: false,
           success: false,
         });

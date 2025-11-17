@@ -17,6 +17,7 @@ export default function CompanyCard({ data }) {
   const addressString = buildCompanyAddress(data);
   const employeeString = data.numEmployees ? `${data.numEmployees} Employees` : 'N/A';
 
+  const { width } = useWindowDimensions();
   const isMobile = width < 768;
   if ( isMobile ) {
     return (
@@ -155,6 +156,7 @@ function MobileCard({ data, addressString, employeeString }) {
             {/* Number of Employees */}
             <div className='w-2/3 flex items-center'>
               <EmployeesIcon className='fill-midGrey h-11 w-12 mr-s' />
+// Temp comment
               <p className='text-textBlack text-xs'>{employeeString}</p>
             </div>
           </div>

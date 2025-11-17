@@ -25,7 +25,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const isSaved = savedItems.includes(item_id);
   const { user_id } = AuthService.getProfile();
   const [isFavorite, setIsFavorite] = useState(isFavoriteOverride ?? isSaved);
-// Temp comment
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
 
@@ -77,7 +76,6 @@ function getIdByType(type, data) {
 
 function getItemsByType(type) {
   switch (type) {
-    case 'job':
       return AuthService.getSavedJobIDs();
     case 'company':
       return AuthService.getSavedCompanyIDs();

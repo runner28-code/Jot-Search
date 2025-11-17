@@ -51,6 +51,7 @@ export default function Apply() {
     errorMessage: ''
   });
 
+  useEffect(async () => {
     if ( !isLoggedIn ) {
       const careerData = await getJobById(jobId);
       setCareer(careerData);
@@ -161,7 +162,6 @@ export default function Apply() {
   function handleFileInputChange(e) {
     const { name, files } = e.target;
     setApplicationObject({ ...applicationObject, [name]: files[0] });
-    setUseExistingResume(false)
   }
 
   function handleReferralChoice(name, value) {

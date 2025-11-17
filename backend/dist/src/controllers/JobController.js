@@ -119,6 +119,7 @@ let JobController = class JobController {
                     where: {
                         domain: {
                             in: companyURLs
+                        }
                     }
                 });
                 const extendedJobs = jobs.map((job) => {

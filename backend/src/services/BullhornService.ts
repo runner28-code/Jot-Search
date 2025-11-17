@@ -854,7 +854,6 @@ export class BullhornService {
         const url = `${this.restUrl}search/Lead?${query}`;
         console.log(url);
         const res = await axios.get(url, {
-          headers: {
             "Content-Type": "application/json;charset=UTF-8",
             Accept: "*/*",
           },

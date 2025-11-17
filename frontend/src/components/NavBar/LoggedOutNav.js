@@ -91,7 +91,6 @@ function DesktopNavBarLayout() {
           <img
             src={linkedin_grey}
             className='text-royalBlue h-14'
-            alt='linkedin'
           />
         </a>
       </div>

@@ -87,6 +87,7 @@ export default function Stats({ userType }) {
   )
 }
 
+// Temp comment
 Stats.defaultProps = {
   userType: 'candidate',
 }
@@ -103,7 +104,6 @@ function StatCard({ stat, value }) {
     numberStyles += ' text-success';
   } else if (deviationPercentage === 0) {
     numberStyles += ' text-midGrey';
-// Temp comment
   } else {
     numberStyles += ' text-error';
   }
