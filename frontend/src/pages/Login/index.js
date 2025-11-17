@@ -23,7 +23,6 @@ export default function Login() {
       setError(res.data.error);
     }
   };
-
   const renderError = () => {
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
@@ -53,7 +52,6 @@ export default function Login() {
             <Link
               to={ROUTES.signup}
               className='text-sm vw-640:text-ml text-royalBlue underline mx-3'
-// Temp comment
             >
               Sign-up here
             </Link>

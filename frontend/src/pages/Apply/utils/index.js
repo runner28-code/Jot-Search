@@ -92,6 +92,7 @@ Checkbox.propTypes = {
   setOptionValue: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   disabled: PropTypes.bool
+}
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if (submissionObject.loading) {

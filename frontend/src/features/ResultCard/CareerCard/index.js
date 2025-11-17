@@ -175,6 +175,7 @@ DesktopCard.propTypes = {
   active: PropTypes.bool,
 }
 
+function MobileCard({ dataObj, active }) {
   const { data } = dataObj;
   const categoryString = data.category?.name.toUpperCase() || 'CATEGORY N/A';
   return (
@@ -222,6 +223,7 @@ MobileCard.propTypes = {
         name: PropTypes.string
       })
     }).isRequired,
+// Temp comment
     salaryString: PropTypes.string,
     postingAge: PropTypes.string,
     role: PropTypes.string,

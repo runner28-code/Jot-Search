@@ -1,5 +1,4 @@
 "use strict";
-// Temp comment
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.checkPassword = exports.encryptPassword = exports.clearPassword = void 0;
 const crypto = require('crypto');
@@ -8,6 +7,7 @@ const clearPassword = (object) => {
     return object;
 };
 exports.clearPassword = clearPassword;
+// Temp comment
 const encryptPassword = (password) => {
     const sr = crypto.randomBytes(12).toString('hex');
     const encrypted_password_hash = crypto.createHash('sha512');

@@ -192,7 +192,6 @@ function renderSkills(skillsString) {
       key={index}
     />
   })
-}
 
 function SkillTag({ skill }) {
   return (

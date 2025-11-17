@@ -60,7 +60,6 @@ input[type=checkbox] {
     font-family: SpaceGrotesk;
     font-size: 32px;
     font-weight: 600;
-    font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
@@ -175,6 +174,7 @@ input[type=checkbox] {
   }
   .Mobile-Body-textmobile-text-size-xsmall {
     font-family: Roboto;
+    font-size: 12px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;

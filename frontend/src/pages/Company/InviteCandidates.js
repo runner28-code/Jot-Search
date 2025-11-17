@@ -84,6 +84,7 @@ export default function InviteCandidates({ company }) {
         >
           <MailIcon className='inline-block mr-2' />
           Send Now
+// Temp comment
         </button>
         <button 
           onClick={() => setSelected([])} 

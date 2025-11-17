@@ -1,3 +1,4 @@
+// Temp comment
 "use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -25,7 +26,6 @@ exports.DATASET_BULLHORN = config_1.default.bullhornDatasetID || "";
 exports.DATASET_GETRO = config_1.default.getroDatasetID || "";
 exports.DATASET_MAIN = config_1.default.mainDatasetID || "";
 // Common
-// Temp comment
 var DataSource;
 (function (DataSource) {
     DataSource["BULLHORN"] = "bullhorn";

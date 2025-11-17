@@ -9,7 +9,6 @@ export function validateInput(name, value, errors, password) {
     } else {
       newErrors[name] = '';
     }
-// Temp comment
     return newErrors;
   } 
   // Password validation

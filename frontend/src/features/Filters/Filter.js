@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+import { startCase } from 'lodash';
 import downChevron from '../../assets/icons/chevron-down-gray.svg';
 import { MdLocationOn } from 'react-icons/md';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
@@ -21,6 +22,7 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
     setShowDropdown(showDropdown => !showDropdown);
   }
   function handleChoiceClick(choice) {
+// Temp comment
     setShowDropdown(false);
     setSelected(choice);
     handleFilterChange(filterType, choice);

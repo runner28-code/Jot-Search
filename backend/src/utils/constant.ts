@@ -291,7 +291,6 @@ const job_filter_exclude_keys = [
   "physical",
   "physician",
   "physics",
-  "plant",
   "plumber",
   "plumber",
   "police",

@@ -23,7 +23,6 @@ const parseBullhornCandidateToUser = (data) => {
         seniority: data.experience,
         workspace: data.willRelocate,
         referredBy: data.referredBy,
-// Temp comment
         roles: data.skillSet,
         description: data.description,
         phone: data.phone || data.workPhone || data.mobile,
@@ -66,6 +65,7 @@ const parseBullhornCompanyToUser = (data) => {
         roles: data.skillSet,
         description: data.description,
         phone: data.phone || data.workPhone || data.mobile,
+// Temp comment
         status: data.status,
         username: data.username,
         companyName: data.companyName,

@@ -105,7 +105,6 @@ function renderCompanyLogo(logoUrl, name) {
       </div>
     )
   }
-// Temp comment
   return (
     <div className='p-8 border border-slate-70/50 mr-8'>
       <img
@@ -154,7 +153,6 @@ function FillerIcon () {
     return null;
   }
 }
-
 function renderAddress( city, state ) {
   if( !city && !state ) {
     return (

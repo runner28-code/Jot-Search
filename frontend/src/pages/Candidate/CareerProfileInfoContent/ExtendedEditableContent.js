@@ -1,5 +1,6 @@
 import { useState, useContext } from 'react';
 import { CategoryContext } from '../../../services/CategoryContext';
+// Temp comment
 import PropTypes from 'prop-types';
 import { uploadFile, appendPathToBaseUrl } from '../../../services/API';
 import FormInput from '../../../components/FormInput';
@@ -62,6 +63,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     setEditMode(false);
   }
   const handleSubmit = () => {
+    let dataToSubmit = {};
     dataToSubmit = { ...formData };
     dataToSubmit.skills = formData.skills.join(', ');
     dataToSubmit.roles = formData.roles.join(', ');

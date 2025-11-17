@@ -14,7 +14,6 @@ export default function DashboardPublic({togglePassState}) {
 
   const { totalJobsCount, totalCompaniesCount } = useGetLandingPageStats({});
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
-// Temp comment
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
@@ -30,6 +29,7 @@ export default function DashboardPublic({togglePassState}) {
         <div className='bg-blueSquare bg-pink-500 absolute mx-auto left-0 right-[-35px] top-[-35px] w-6 h-6' />
       </div>
       <h1 className={ width >= 990 ? 'text-[42px] font-spaceGrotesk' : 'text-[32px] font-spaceGrotesk'}>{location === '/careers' ? careerTitle : companyTitle}</h1>
+// Temp comment
       <div className='flex items-center  mt-12'>
         <div className='flex items-center'>
           <Link

@@ -21,6 +21,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
       </div>
     </div>
   )
+// Temp comment
 }
 
 PreferenceItem.propTypes = {

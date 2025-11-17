@@ -4,7 +4,6 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
-// Temp comment
   ],
   theme: {
     extend: {
@@ -44,7 +43,6 @@ module.exports = {
         lightGrey: '#F6F5F6',
         footerGrey: '#EBEBEB',
         grey300: '#D0D5DD',
-        grey700: '#344054',
         midGrey: '#94949D',
         grey: '#EBEBEB',
         charcoal: '#3C3C4B',

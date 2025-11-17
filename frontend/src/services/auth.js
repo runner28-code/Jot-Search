@@ -15,6 +15,7 @@ class AuthService {
       role = this.getProfile().role;
     }
     return role;
+// Temp comment
   }
 
   loggedIn() {
@@ -105,7 +106,6 @@ class AuthService {
   }
 
   getSavedJobIDs() {
-// Temp comment
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }
 

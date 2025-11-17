@@ -26,6 +26,7 @@ export default function FeaturedCompanies() {
           isLoading ?
             <LoadingSpinner />
             :
+            companies.map((company, index) =>
               <Link
                 to={`${ROUTES.companies}/${company.id}`}
                 className='basis-1/6 mx-4 my-8 outline outline-2 outline-neutral-100 p-8'

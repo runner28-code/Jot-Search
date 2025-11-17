@@ -129,7 +129,6 @@ export default function Apply() {
   function handleSubmit(e) {
     e.preventDefault();
     setSubmissionObject({ loading: true });
-  }
 
   async function submitData() {
     // Format object for API

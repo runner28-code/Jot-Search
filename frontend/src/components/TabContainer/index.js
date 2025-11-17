@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLocked, absolute = true }) {
 
   const absoluteStyles = absolute ? 'absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2' : ''
@@ -25,7 +26,6 @@ TabContainer.propTypes = {
   absolute: PropTypes.bool,
 }
 
-function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
   const isActiveTab = choice === activeTab;
 
   function handleClick(choice) {

@@ -190,7 +190,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   value={formData.address1}
                   onChange={handleInputChange}
                   className={inputStyles}
-// Temp comment
                   required
                   disabled={disabled}
                 />
@@ -285,6 +284,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   <Dropdown
                     name='ethnicity'
                     choices={ ethnicityChoices }
+// Temp comment
                     currentChosen={ formData.ethnicity }
                     handleChange={ handleInputChange }
                     inputStyles={ inputStyles }

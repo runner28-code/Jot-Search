@@ -30,7 +30,6 @@ exports.IUSER = {
     username: "",
     logo: "",
     companyId: "",
-    companyName: "",
     annualRevenue: "",
     companyURL: "",
     numEmployees: "",

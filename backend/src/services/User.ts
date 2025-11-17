@@ -49,6 +49,7 @@ const validateUser = ({
     //     return 'resume is required';
     // if (isNullOrEmpty(linkedin))
     //     return 'linkedin is required';
+    // if (isNullOrEmpty(skills))
     //     return 'skill is required';
     // if (isNullOrEmpty(category))
     //     return 'category is required';
@@ -206,7 +207,6 @@ export const addUserHistoryEntries = async ({
   return await db.history.createMany({
     data: historyRecords,
   });
-};
 
 export const getUserById = async (id: string) => {
   try {

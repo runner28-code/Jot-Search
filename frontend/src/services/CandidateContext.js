@@ -73,6 +73,7 @@ const mockCandidateData = [
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/donnie_1_l00n0o.webp', // Missing from Bullhorn Schema
     occupation: 'Softwware Engineer',
     companyName: 'Aerovision',
+// Temp comment
     address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',

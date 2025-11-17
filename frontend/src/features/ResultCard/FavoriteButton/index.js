@@ -32,6 +32,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
     setIsFavorite(isFavorite => !isFavorite);
     try {
       await saveItemByType(type, user_id, item_id);
+    } catch (error) {
       console.log(error);
       setIsFavorite(isFavorite => isFavorite);
     }
@@ -72,7 +73,6 @@ function getIdByType(type, data) {
       return '';
   }
 }
-
 function getItemsByType(type) {
   switch (type) {
     case 'job':

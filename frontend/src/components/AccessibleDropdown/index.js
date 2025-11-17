@@ -143,7 +143,6 @@ function renderLabel(name, label, required) {
     <label
       htmlFor={ name }
       className='block text-textBlack mb-2.5'
-// Temp comment
     >
       { label }
     </label>
@@ -219,7 +218,6 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
   });
 }
 
-function renderActiveIcon(choice, currentChosen) {
   if (choice === currentChosen || currentChosen?.includes(choice)) {
     return(
       <img 

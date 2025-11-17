@@ -255,27 +255,3 @@ function isValidHttpUrl(string) {
   }
 
   return url.protocol === 'http:' || url.protocol === 'https:';
-}
-
-function renderIndustry(item, headerRowTextStyles) {
-
-  if( !item ) {
-    return (<>
-      <p className={headerRowTextStyles}>Industry</p>
-    </>)
-  }
-  return (<>
-    <p className={headerRowTextStyles}>{item}</p>
-  </>)
-}
-
-function renderBusinessSector(item, textStyles) {
-
-  if( !item ) {
-    return(<>
-      <h5 className={textStyles}>Marketing</h5>
-    </>)
-  }
-  return (<>
-    <h5 className={textStyles}>{item}</h5>
-  </>)

@@ -68,6 +68,7 @@ export default function TypeaheadDropdown(props) {
         type={type}
         name={name}
         id={name}
+        placeholder={placeholder}
         value={inputValue}
         className={baseStyles + inputHeight + 'mb-0'}
         onClick={handleListClick}
