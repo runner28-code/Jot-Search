@@ -609,6 +609,7 @@ model Candidate {
   externalId         String?
   fax                String?
   fax2               String?
+  fax3               String?
 
   title              String?
 

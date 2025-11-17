@@ -32,7 +32,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
     setIsFavorite(isFavorite => !isFavorite);
     try {
       await saveItemByType(type, user_id, item_id);
-    } catch (error) {
       console.log(error);
       setIsFavorite(isFavorite => isFavorite);
     }
@@ -76,6 +75,7 @@ function getIdByType(type, data) {
 
 function getItemsByType(type) {
   switch (type) {
+    case 'job':
       return AuthService.getSavedJobIDs();
     case 'company':
       return AuthService.getSavedCompanyIDs();

@@ -162,25 +162,4 @@ export default function Apply() {
   function handleFileInputChange(e) {
     const { name, files } = e.target;
     setApplicationObject({ ...applicationObject, [name]: files[0] });
-  }
-
-  function handleReferralChoice(name, value) {
-    if( value === 'Community Partner') {
-      setReferralChoice(true);
-    }
-    if( value !== 'Community Partner' ) {
-      setReferralChoice(false);
-      setApplicationObject({
-        ...applicationObject,
-        community: ''
-      });
-    }
-    handleChange(name, value);
-  }
-
-  function handleCommunityChoice(name, value) {
-    setApplicationObject({
-      ...applicationObject,
-      referredBy: value
-    })
-    setReferralChoice(false);
+    setUseExistingResume(false)

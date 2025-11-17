@@ -123,6 +123,7 @@ function getTagLine({ candidate }) {
     tagLine = `${candidate.occupation} @ ${candidate.companyName}`
   }else if (candidate?.occupation) {
     tagLine = candidate.occupation
+  }else if (candidate?.companyName) {
     tagLine = `@ ${candidate.companyName}`
   }
   return tagLine;

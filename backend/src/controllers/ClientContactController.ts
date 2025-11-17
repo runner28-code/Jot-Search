@@ -31,6 +31,7 @@ export class ClientContactController {
       };
     } catch (error) {
       return { message: error };
+    }
   }
 
   // @Authorized()

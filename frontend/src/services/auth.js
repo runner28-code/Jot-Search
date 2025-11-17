@@ -67,7 +67,6 @@ class AuthService {
     localStorage.removeItem('savedCandidates');
   }
 
-// Temp comment
   async refreshSavedJobAndCompanies() {
     try {
       const { user_id } = this.getProfile();
@@ -106,6 +105,7 @@ class AuthService {
   }
 
   getSavedJobIDs() {
+// Temp comment
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }
 

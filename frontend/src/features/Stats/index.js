@@ -47,7 +47,6 @@ export default function Stats({ userType }) {
         'Active Career Post Favorites': { ...result.activeCareerPostFavorites },
         'Application Invitations Sent': { ...result.applicationInvitationsSent }                
       })
-    }
     if (userType === 'coordinator') {
       const result = await getCoordinatorQuickStats(duration);
       setStats({
@@ -87,7 +86,6 @@ export default function Stats({ userType }) {
   )
 }
 
-// Temp comment
 Stats.defaultProps = {
   userType: 'candidate',
 }

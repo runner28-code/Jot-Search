@@ -115,6 +115,7 @@ export const getSavedJobs = async (candidateId: string) => {
     console.log({ candidate });
 
     return {
+      jobs: candidate?.savedJobs,
       result: true,
     };
   } catch (error) {

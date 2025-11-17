@@ -333,7 +333,6 @@ export class JobController {
     @QueryParam("candidate") candidate: string,
     @QueryParam("job") job: string
   ): Promise<ApplyResponse> {
-    return await saveApplication(job, candidate);
   }
 
   @Authorized()

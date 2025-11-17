@@ -1,6 +1,7 @@
 import { Controller, Param, Body, Get, Post, Put, Delete, QueryParam, Authorized } from 'routing-controllers';
 import { BullhornService } from '../services/BullhornService';
 
+@Controller()
 export class BullhornController {
   // @Authorized()
   @Get('/bullhorn/companies')
@@ -25,7 +26,6 @@ export class BullhornController {
   @Get('/bullhorn/candidates')
   async getCandidates() {
     return await (await BullhornService.getClient()).getCandidates();
-  }
 
   // @Authorized()
   @Get('/bullhorn/leads')

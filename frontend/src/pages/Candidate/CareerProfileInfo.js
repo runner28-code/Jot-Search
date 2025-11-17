@@ -26,6 +26,7 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         role={role}
       />
     </>
+  )
 }
 
 CareerProfileInfo.propTypes = {

@@ -270,7 +270,6 @@ export class CompanyController {
   }
 
   getConditionsFromFilters = (
-    filters: FilterOption[] | undefined,
     filterableKey: CompanyFilterKey,
     operator: Operator = "OR"
   ) => {
@@ -345,4 +344,5 @@ export class CompanyController {
   }
 
   async getCompaniesByFilterFromGetro(
+    filters: FilterOption[] | undefined,
     fields: string[] | null,

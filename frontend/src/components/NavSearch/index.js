@@ -104,7 +104,6 @@ export default function NavSearch({ placeholder }) {
           placeholder={ placeholder }
           alternateStylesObject={ stylesObject } 
           setIsOpen={ setIsOpen }
-// Temp comment
           isOpen={ isOpen }
         />
       </div>

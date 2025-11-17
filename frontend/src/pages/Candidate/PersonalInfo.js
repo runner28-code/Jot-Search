@@ -190,6 +190,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   value={formData.address1}
                   onChange={handleInputChange}
                   className={inputStyles}
+// Temp comment
                   required
                   disabled={disabled}
                 />

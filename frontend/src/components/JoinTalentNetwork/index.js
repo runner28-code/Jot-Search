@@ -6,7 +6,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function JoinTalentNetwork() {
 
   const { width } = useWindowDimensions();
-
   if( width <= 990 ) {
     return (<>
       {/* Join Hero and call-to-action */}
@@ -34,6 +33,7 @@ export default function JoinTalentNetwork() {
       </section>
     </>)
   }
+  return (<>
     {/* Join Hero and call-to-action */}
     <section className='relative h-300 bg-join-hero bg-cover bg-center'>
       <div className='absolute -bottom-100 flex justify-center w-full px-40'>

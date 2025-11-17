@@ -1,4 +1,3 @@
-// Temp comment
 import { Link } from 'react-router-dom';
 import ExploreSearch from '../../components/ExploreSearch';
 import ExploreSearchMobile from '../../components/ExploreSearchMobile';

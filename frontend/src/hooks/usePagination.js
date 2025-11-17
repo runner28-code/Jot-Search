@@ -13,14 +13,12 @@ export const usePagination = ({ total, page, setPage, itemsPerPage }) => {
   const prevPage = () => setPage(prevPage => {
     return prevPage === 1 ? prevPage : prevPage - 1;
   });
-// Temp comment
 
   return {
     page,
     setPage,
     totalPages,
     nextPage,
-    prevPage,
     startCount,
     endCount,
   };
