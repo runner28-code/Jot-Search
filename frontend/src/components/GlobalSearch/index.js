@@ -64,6 +64,7 @@ export default function GlobalSearch({ placeholder }) {
     setResults( resultsObject );
   }
 
+  /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');
   }, [location]);
@@ -92,6 +93,7 @@ export default function GlobalSearch({ placeholder }) {
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder } 
           alternateStylesObject={ stylesObject } />
+// Temp comment
       </div>
       { renderResultsContainer( results, searchTerm ) }
     </div>

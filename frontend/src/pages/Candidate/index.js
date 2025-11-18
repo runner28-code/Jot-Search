@@ -140,7 +140,6 @@ export default function Candidate() {
         <PersonalInfo
           role={role}
           candidateData={candidateData}
-          handleCandidateUpdate={handleCandidateUpdate} />
         {/* Password Reset (Candidate and Coordinator) */}
         <PasswordReset
           role={role}

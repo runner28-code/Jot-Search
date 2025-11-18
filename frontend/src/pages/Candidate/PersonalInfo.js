@@ -10,7 +10,6 @@ import {
   ethnicityChoices,
   genderChoices,
   veteranStatusChoices
-// Temp comment
 } from '../Apply/utils';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
 import AuthService from '../../services/auth';
@@ -309,6 +308,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   />
                 </label>
               </div>
+// Temp comment
             </div>
           )}
         </div>

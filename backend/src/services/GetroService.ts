@@ -187,6 +187,7 @@ export class GetroService {
         const query = queryString.stringify({
             collection_id: this.networkId,
         });
+        const url = `${this.api_base_url_v1}/members/${id}?${query}`;
 
         const res = await axios.get(url, this.getOptions());
         await sleep(2000); // https://developers.getro.com/#rate-limit

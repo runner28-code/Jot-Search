@@ -106,7 +106,6 @@ function itemRenderer({ option, onClick, disabled}) {
             className='w-20 h-20'
             src={avatarUrl}
             alt='Candidate Avatar' />      
-          : <Initials name={option.label} />
         }  
         <div className="flex flex-col">
           <span className='text-lg text-blue-500'>{option.candidate?.firstName} {option.candidate?.lastName}</span>

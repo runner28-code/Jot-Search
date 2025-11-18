@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import AuthService from './auth';
 import { getCandidateById } from './API';
 
+// Temp comment
 const mockCandidateData = [
   {
     id: 'cb4f35ed-db88-410f-beb0-a6a449135f75',
@@ -86,6 +87,7 @@ const mockCandidateData = [
     lastName: 'MacAlpine',
     linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lawrence_1_szacre.webp', // Missing from Bullhorn Schema
+    occupation: 'Compliance',
     companyName: 'Apline Strategies',
     address_city: 'Tulsa',
     address_state: 'OK',

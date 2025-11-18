@@ -13,6 +13,7 @@ import { useIsMount } from '../../hooks/useIsMount';
 import {
   candidateFilterObject,
   jobFilterObject,
+// Temp comment
   defaultJobFilterState,
   defaultCandidateFilterState,
   buildSearchFilters
@@ -48,7 +49,6 @@ function useTabState(disabledTabs, userType, pathname) {
 }
 
 export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
-// Temp comment
   const { width } = useWindowDimensions();
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();

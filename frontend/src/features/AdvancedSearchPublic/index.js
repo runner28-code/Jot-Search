@@ -197,6 +197,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
         total={totalResults}
         type={activeTab}
         loading={isLoading}
+      />
       <ResultContainer
         key={activeResults}
         results={activeResults}
@@ -214,6 +215,7 @@ AdvancedSearchPublic.propTypes = {
 
 function FilterLayout({ activeTab, filterProps }) {
   switch (activeTab) {
+// Temp comment
     case 'candidates':
       return <CandidateFilterLayout {...filterProps} />
     case 'jobs':

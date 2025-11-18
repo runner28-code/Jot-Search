@@ -50,6 +50,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   )
 }
 
+FavoriteButton.propTypes = {
   type: PropTypes.string.isRequired,
   addClass: PropTypes.string,
   data: PropTypes.shape({
@@ -71,6 +72,7 @@ function getIdByType(type, data) {
     default:
       return '';
   }
+// Temp comment
 }
 
 function getItemsByType(type) {

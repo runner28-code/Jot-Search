@@ -52,6 +52,7 @@ export const choices = {
     link: ROUTES.favorites,
   },
   addUser: {
+    label: 'Add User',
     icon: AddUserIcon,
     link: ROUTES.addUser,
   },
@@ -77,7 +78,6 @@ export const candidateChoices = [
   choices.dashboard,
   choices.profile,
   choices.myApplications,
-  choices.myFavorites,
   choices.careers,
   choices.companies,
   choices.talentInTulsa,

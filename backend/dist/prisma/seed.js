@@ -24,10 +24,12 @@ function main() {
             yield seedCategories();
             yield seedJobs();
             yield seedUsers();
+            console.log("Done🎉");
         }
         catch (err) {
             console.error("Error during seed...❌");
             console.error(err);
+// Temp comment
             throw err;
         }
     });

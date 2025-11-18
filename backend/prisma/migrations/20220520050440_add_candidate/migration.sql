@@ -83,6 +83,7 @@ CREATE TABLE "Candidate" (
     "status" TEXT,
     "taxID" TEXT,
     "taxState" TEXT,
+    "timeZoneOffsetEST" TEXT,
     "tobaccoUser" TEXT,
     "totalDependentClaimAmount" TEXT,
     "travelLimit" TEXT,

@@ -449,7 +449,6 @@ function formatCandidateFilters(filtersArr) {
     formattedFilters.push({
       key: 'status',
       value: ACTIVE_STATUSES
-    });
   }
   return formattedFilters;
 }

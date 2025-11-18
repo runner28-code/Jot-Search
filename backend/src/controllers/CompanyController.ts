@@ -289,7 +289,6 @@ export class CompanyController {
   getJoinedFields = (fields: string[] | null) => {
     return fields?.length ? fields.join(", ") : "*";
   };
-
   async getCompaniesFromJoinTable(
     filters: FilterOption[] | undefined,
     fields: string[] | null,

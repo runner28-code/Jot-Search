@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import ReferralCardContent from '../../features/ResultCard/ReferralContent';
+
 function renderHorizontalRule(isLastItem) {
   if (isLastItem) {
     return null;
@@ -23,7 +24,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
       className={containerStyles}
       onClick={handleItemClick}
     >
-      <div className='flex items-center'>
         <img 
           className='object-contain h-35 w-35 ml-12 mr-16'
           src={job.logo}

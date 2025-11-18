@@ -12,6 +12,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 function renderTabs(role, activeTab, setActiveTab) {
   if (role !== 'candidate') {
     return null;
+  }
   return (
     <TabContainer
       activeTab={activeTab}

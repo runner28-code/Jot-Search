@@ -252,6 +252,7 @@ export type Candidate = {
     recentClientList?: string;
     referredBy?: string;
     salary?: string;
+    salaryLow?: string;
     secondarySkills?: string;
     skillSet?: string;
     smsOptIn?: string;
@@ -283,3 +284,5 @@ export type Lead = {
     id: string;
     address?: string;
     campaignSource?: string;
+    candidates?: string;
+    category?: string;

@@ -31,7 +31,6 @@ export default function NavSearchMobile({ placeholder }) {
   const userType = AuthService.getUserRole();
 
   const getFiltersByTab = (tab) => {
-// Temp comment
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {

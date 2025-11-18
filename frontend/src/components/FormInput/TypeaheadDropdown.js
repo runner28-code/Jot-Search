@@ -148,6 +148,7 @@ function renderTagsOrListItems(dropdownType, choices, handleClick) {
         isActive={false} 
         handleClick={handleClick}
         key={choice} />
+    )
   } else { // dropdownType === 'list'
     return choices.map((choice, index) => 
       <ChoiceListItem 

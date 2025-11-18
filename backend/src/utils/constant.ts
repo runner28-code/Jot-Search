@@ -465,6 +465,7 @@ export const JOB_FIELDS = [
   "billRateCategoryID",
   "bonusPackage",
   "certificationList",
+  "clientBillRate",
   "clientContact",
   "clientCorporation",
   "categories",

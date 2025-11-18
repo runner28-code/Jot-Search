@@ -202,6 +202,7 @@ export const skills = [
   'Financial Reporting',
   'Financial Services',
   'Financial Statements',
+  'FinTech',
   'Flask',
   'Flume',
   'Forecasts',
@@ -313,6 +314,7 @@ export const skills = [
   'Public Relations',
   'Public Speaking',
   'Pumps',
+// Temp comment
   'Purchasing',
   'Python',
   'QA',

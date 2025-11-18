@@ -62,7 +62,6 @@ jobs:
         SECRET_DATABASE_URL: ${{ secrets.DEV_DATABASE_URL }}
         
     - name: Build, tag, and push image to Amazon ECR
-      id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         IMAGE_TAG: ${{ github.sha }}
