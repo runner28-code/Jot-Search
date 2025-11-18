@@ -129,7 +129,6 @@ function renderCompanyLogo(logoUrl, name) {
   const { width } = useWindowDimensions();
   const logoStyles = 'my-auto object-contain';
   if( width >= 1280 ) {
-    return null;
   }
   if (!logoUrl) {
     return (

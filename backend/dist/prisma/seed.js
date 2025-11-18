@@ -23,6 +23,7 @@ function main() {
             yield seedCompanies();
             yield seedCategories();
             yield seedJobs();
+            yield seedUsers();
             console.log("Done🎉");
         }
         catch (err) {
@@ -179,7 +180,6 @@ function seedCompanies() {
                     businessSectorList: "SaaS,Fintech",
                     bh_description: "a good company",
                     getro_description: "a fintech company",
-                    description: "testing a new description",
                     city: "Tulsa",
                     state: "OK",
                     billingPhone: "876-567-9876",

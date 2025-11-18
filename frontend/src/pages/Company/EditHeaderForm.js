@@ -16,7 +16,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     state: candidateData.state,
     zip: candidateData.zip,
   });
-
   const handleInputChange = async (event) => {
     const { name, value } = event.target;
     if ( name === 'avatar' ) {
@@ -27,3 +26,4 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
   }
 
   const handleCancel = () => {
+    setEditMode(false);

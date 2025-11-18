@@ -1,6 +1,7 @@
 /*
   Warnings:
 
+  - Made the column `hidden` on table `Job` required. This step will fail if there are existing NULL values in that column.
 
 */
 -- AlterTable
@@ -33,7 +34,6 @@ CREATE TABLE "GetroJobInfo" (
     "passes_filter" TEXT,
     "posted_at" TIMESTAMP(3),
     "slug" TEXT,
-    "source" TEXT,
     "status" TEXT,
     "title" TEXT,
     "url" TEXT,

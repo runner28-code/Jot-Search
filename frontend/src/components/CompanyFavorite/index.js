@@ -45,6 +45,7 @@ export default function CareerFavorite () {
               Browse All
           </Link>
         </div>
+      </div>
       <div className='pt-24'>
         <Link
           to={ROUTES.careers}

@@ -8,5 +8,4 @@
 ALTER TABLE "Address" ALTER COLUMN "countryCode" DROP NOT NULL,
 ALTER COLUMN "countryCode" SET DATA TYPE TEXT;
 
--- AlterTable
 ALTER TABLE "Candidate" DROP COLUMN "degreeList",

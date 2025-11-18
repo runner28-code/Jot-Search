@@ -77,6 +77,7 @@ export class UserController {
       const { result, error } = await register(data);
       return {
         result,
+        error,
       };
     } else {
       return {
@@ -221,3 +222,4 @@ export class UserController {
   @Get("/stats")
   async stats(@CurrentUser() authUser: User) {
     return await getStats(authUser.id!);
+  }

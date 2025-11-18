@@ -398,3 +398,4 @@ export class CandidateController {
           result = true
         } else {
           const testSendTo = process.env.TEST_SEND_EMAILS_TO.split(",")
+          sentTo = testSendTo;

@@ -14,7 +14,6 @@ import {
   Apply
 } from './pages';
 import { NavBar, Footer, SideNav } from './components';
-// Temp comment
 import AuthService from './services/auth';
 
 function App() {
@@ -44,6 +43,7 @@ function App() {
               path={ROUTES.companies}
               element={<Companies />} />
             <Route
+// Temp comment
               path={`${ROUTES.careers}/:id`}
               element={<Career />} />
             <Route

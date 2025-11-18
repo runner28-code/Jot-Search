@@ -15,7 +15,6 @@ class AuthService {
       role = this.getProfile().role;
     }
     return role;
-// Temp comment
   }
 
   loggedIn() {

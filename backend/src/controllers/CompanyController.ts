@@ -145,6 +145,7 @@ export class CompanyController {
     } catch (e) {
       console.log(e);
       return { result: false, message: e };
+    }
   }
 
   async getCompanyByIdFromGetro(id: string): Promise<any> {

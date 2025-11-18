@@ -129,6 +129,7 @@ export default function Apply() {
   function handleSubmit(e) {
     e.preventDefault();
     setSubmissionObject({ loading: true });
+  }
 
   async function submitData() {
     // Format object for API
@@ -162,3 +163,17 @@ export default function Apply() {
     const { name, files } = e.target;
     setApplicationObject({ ...applicationObject, [name]: files[0] });
     setUseExistingResume(false)
+  }
+
+  function handleReferralChoice(name, value) {
+    if( value === 'Community Partner') {
+      setReferralChoice(true);
+    }
+    if( value !== 'Community Partner' ) {
+      setReferralChoice(false);
+      setApplicationObject({
+        ...applicationObject,
+        community: ''
+      });
+    }
+    handleChange(name, value);

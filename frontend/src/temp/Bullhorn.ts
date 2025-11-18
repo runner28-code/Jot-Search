@@ -125,6 +125,7 @@ export type ClientContact = {
     certifications?: string;
     clientCorporation?: string;
     comments?: string;
+    dateAdded?: string;
     dateLastModified?: string;
     dateLastVisit?: string;
     description?: string;
@@ -272,3 +273,8 @@ export type Candidate = {
     twoJobs?: string;
     type?: string;
     userDateAdded?: string;
+    username?: string;
+    veteran?: string;
+    willRelocate?: string;
+    workAuthorized?: string;
+    workPhone?: string;

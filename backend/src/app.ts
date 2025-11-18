@@ -91,7 +91,6 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
     ":" +
     current_datetime.getMinutes() +
     ":" +
-    current_datetime.getSeconds();
   const method = req.method;
   const url = req.url;
   const status = -res.statusCode;

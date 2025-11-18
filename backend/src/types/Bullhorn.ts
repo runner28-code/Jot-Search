@@ -240,8 +240,8 @@ export type Candidate = {
     payrollClientStartDate?: string;
     payrollStatus?: string;
     phone?: string;
+    phone2?: string;
     phone3?: string;
-    preferredContact?: string;
     primarySkills?: string;
     recentClientList?: string;
     referredBy?: string;

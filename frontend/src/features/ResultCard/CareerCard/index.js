@@ -27,7 +27,6 @@ export default function CareerCard({ data, active }) {
     categoryString,
     addressString,
     salaryString,
-    postingAge,
     role
   };
 
@@ -223,7 +222,6 @@ MobileCard.propTypes = {
         name: PropTypes.string
       })
     }).isRequired,
-// Temp comment
     salaryString: PropTypes.string,
     postingAge: PropTypes.string,
     role: PropTypes.string,

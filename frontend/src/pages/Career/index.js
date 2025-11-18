@@ -70,6 +70,7 @@ export default function CareerPage() {
       { renderNotification(activeData, careerData) }
       {
         isMobile ?
+          <MobileLayout data={data} /> :
           <DesktopLayout data={data} />
       }
       {

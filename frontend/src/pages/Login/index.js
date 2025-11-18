@@ -23,6 +23,7 @@ export default function Login() {
       setError(res.data.error);
     }
   };
+
   const renderError = () => {
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )

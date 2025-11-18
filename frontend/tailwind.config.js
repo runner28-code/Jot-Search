@@ -43,6 +43,7 @@ module.exports = {
         lightGrey: '#F6F5F6',
         footerGrey: '#EBEBEB',
         grey300: '#D0D5DD',
+        grey700: '#344054',
         midGrey: '#94949D',
         grey: '#EBEBEB',
         charcoal: '#3C3C4B',
@@ -91,6 +92,7 @@ module.exports = {
         // Styleguide Spacing
         'xxs': '4px',
         'xs': '8px',
+// Temp comment
         's': '12px',
         'm': '16px',
         'l': '20px',
@@ -250,3 +252,4 @@ module.exports = {
     plugin(function ({ addUtilities }) {
       addUtilities({
         '.scrollbar-hide': {
+          /* IE and Edge */

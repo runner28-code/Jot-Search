@@ -159,7 +159,6 @@ export class GetroService {
                     let result = [];
                     const { items, meta: { total } } = res.data;
                     if (!testMode) {
-                        for (const company of items) {
                             const detail = await this.getMemberDetail(company.id);
                             if (detail) {
                                 result.push(detail);
@@ -246,6 +245,7 @@ export class GetroService {
                                 ...item,
                                 id: `gt-${item.id}`,
                                 job_functions: item.job_functions?.map((jf: any) => jf.name).join(' | '),
+                                locations: item.locations?.map((loc: any) => loc.name).join(' | '),
                                 organization_doman: item.organization?.domain,
                                 organization_id: item.organization?.id,
                                 organization_logo_url: item.organization?.logo_url,

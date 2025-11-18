@@ -73,6 +73,7 @@ function getIdByType(type, data) {
       return '';
   }
 }
+
 function getItemsByType(type) {
   switch (type) {
     case 'job':

@@ -8,7 +8,6 @@ export default function TextInput({type, name, placeholder, label, value, requir
     } else {
       onChange(name, e);
     }
-  }
 
   return (
     <div className='w-full'>
@@ -35,7 +34,6 @@ function renderLabel( label, required, name ) {
     return null;
   }
 
-// Temp comment
   const labelString = label && required ? `${label} *` : label;
   return (
     <label

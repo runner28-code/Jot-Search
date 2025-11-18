@@ -80,6 +80,7 @@ export const candidateFilterObject = {
     'Any',
     'Full-Time',
     'Part-Time',
+    'Contract',
     'Contract to Hire',
   ],
   'Authorized to work in the US': [

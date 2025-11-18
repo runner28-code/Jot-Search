@@ -207,6 +207,7 @@ export const addUserHistoryEntries = async ({
   return await db.history.createMany({
     data: historyRecords,
   });
+};
 
 export const getUserById = async (id: string) => {
   try {
@@ -596,3 +597,4 @@ export const getStats = async (userId: string) => {
 
 export const getLandingPageStats = async () => {
   const activeStatuses = ["Active", "Open"]
+  try {

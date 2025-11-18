@@ -92,7 +92,6 @@ export default function CandidateCard({ data, disableLink }) {
       <FavoriteButton
         type={'candidate'}
         data={data} />
-    </div>
   )
 }
 
@@ -192,6 +191,7 @@ function renderSkills(skillsString) {
       key={index}
     />
   })
+}
 
 function SkillTag({ skill }) {
   return (

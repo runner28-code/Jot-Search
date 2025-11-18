@@ -71,7 +71,6 @@ export default function RegistrationForm(loggedIn) {
       // Validation
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
-// Temp comment
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');

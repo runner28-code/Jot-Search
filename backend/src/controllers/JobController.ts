@@ -334,6 +334,7 @@ export class JobController {
     @QueryParam("job") job: string
   ): Promise<ApplyResponse> {
     return await saveApplication(job, candidate);
+  }
 
   @Authorized()
   @Get("/candidates")
@@ -413,3 +414,4 @@ export class JobController {
 
 export const normalizeFilters = (filters: any) => {
   const filterObj: any = {};
+  if (Array.isArray(filters)) {

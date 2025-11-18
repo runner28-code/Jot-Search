@@ -123,7 +123,6 @@ export default function Candidate() {
               label={PREFERENCE_ITEMS.willReceiveNotification}
               onUpdate={handleCandidateUpdate} />
           </div>
-// Temp comment
         </div>
       }
       {/* Career Profile Info (Only editable for Coordinators and Candidate) */}

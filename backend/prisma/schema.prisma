@@ -141,7 +141,6 @@ model ClientContact {
   description        String?
   desiredCategories  String?
   desiredSkills      String?
-  desiredSpecialties String?
   division           String?
   email              String?
   email2             String?
@@ -714,3 +713,4 @@ model GetroCompany {
   domain                     String?
   facebook_url               String?
   founded                    String?
+  id                         String   @id @default(uuid())

@@ -218,6 +218,7 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
   });
 }
 
+function renderActiveIcon(choice, currentChosen) {
   if (choice === currentChosen || currentChosen?.includes(choice)) {
     return(
       <img 
