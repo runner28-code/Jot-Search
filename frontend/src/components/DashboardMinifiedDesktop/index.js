@@ -37,10 +37,10 @@ function CareerHeader ({ location }) {
   let userRole = AuthService.getUserRole();
 
   const back = '< Go Back';
+// Temp comment
 
   if( userRole === 'candidate' || userRole === 'coordinator' ) {
     return (
-// Temp comment
       <div className='flex flex-col items-start py-14 px-8 '>
         <span className='flex flex-row text-lg items-center text-dply '>
           <CareerIcon className='mr-6 fill-royalBlue ' />

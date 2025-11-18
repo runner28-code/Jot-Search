@@ -4,6 +4,7 @@
     "networkMode": "awsvpc",
     "containerDefinitions": [
         {
+            "name": "intulsa-frontend-container-prod",
             "image": "site-frontend:prod",
             "cpu": 1024,
             "memory": 2048,
@@ -26,7 +27,6 @@
             "environment": [
                 {
                     "name": "CHOKIDAR_USEPOLLING",
-                    "value": "true"
                 }
             ]
         }

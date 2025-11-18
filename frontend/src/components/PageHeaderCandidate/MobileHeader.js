@@ -14,11 +14,13 @@ export default function MobileHeader(props) {
   if ( classOverride ) addOnIconClasses += classOverride;
   return (
     <div className='flex items-center border-b-2 border-white pl-l py-s bg-royalBlue'>
+      { icon && (
         <img
           src={ icon }
           alt='header icon'
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
+// Temp comment
       )}
       { IconComponent && (
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />

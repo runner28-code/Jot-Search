@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { renderButtonOrLoading } from '../../../components/RegistrationForm/utils';
-import { registerUser } from '../../../services/API';
 import { validateInput } from '../utils';
 
 export default function AddCoordinator() {
@@ -54,6 +53,7 @@ export default function AddCoordinator() {
     // Error checking
     const newErrors = validateInput(
       name,
+      value,
       submissionObject.errors,
       formObject.password
     );

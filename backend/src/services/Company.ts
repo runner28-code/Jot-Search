@@ -52,7 +52,6 @@ export const saveCompany = async (company: string, candidate: string) => {
   } catch (e) {
     console.log(e);
     return { result: false, message: e };
-  }
 };
 
 export const getSavedCompanies = async (candidateId: string) => {

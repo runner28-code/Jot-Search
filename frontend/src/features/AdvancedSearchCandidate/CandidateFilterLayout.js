@@ -27,7 +27,6 @@ const checkboxFilters = [
   'Actively Looking',
 ];
 
-export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
     filterObject,

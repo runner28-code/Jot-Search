@@ -39,6 +39,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     resume: candidateData?.resume || '',
   });
 
+  function handleChange(name, value) {
     setFormData({
       ...formData,
       [name]: value,

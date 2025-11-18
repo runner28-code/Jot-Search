@@ -7,6 +7,7 @@ import { useGetClientContacts } from '../../../hooks/queries/useGetClientContact
 import CompanyContactList from './CompanyContactList';
 
 const ITEMS_PER_PAGE = 10;
+
 export default function AddCompanyUser() {
   const [search, setSearch] = useState('');
   const [selectedCompany, setSelectedCompany] = useState(null);

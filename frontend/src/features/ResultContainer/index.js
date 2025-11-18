@@ -29,7 +29,6 @@ export default function ResultContainer(props) {
   function renderHeader() {
     if ( !header ) {
       return null;
-    }
 
     return <h5 className={resultsHeaderStyles}>{header}</h5>;
   }
@@ -44,6 +43,5 @@ export default function ResultContainer(props) {
 
     return <ViewAllLink
       href={`/${pluralizedType}`}
-// Temp comment
       text={`View All ${capitalizedType}`}
     />;

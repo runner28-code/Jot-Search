@@ -72,7 +72,6 @@ function getIdByType(type, data) {
     default:
       return '';
   }
-// Temp comment
 }
 
 function getItemsByType(type) {

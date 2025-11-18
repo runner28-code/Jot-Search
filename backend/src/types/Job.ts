@@ -26,6 +26,7 @@ export type Job = {
   type?: string;
   isDeleted?: string;
   postedAt?: string;
+  hidden?: boolean;
   company_name?: string;
   datasource?: Datasource;
   featured?: boolean;

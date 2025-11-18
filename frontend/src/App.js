@@ -3,7 +3,6 @@ import * as ROUTES from './routes';
 import Auth from './Auth';
 import {
   LandingPage,
-// Temp comment
   SignUp,
   Login,
   Career,
@@ -66,7 +65,6 @@ function App() {
               element={<Navigate to={ROUTES.landingPage} />}
             />
           </Routes>
-        </div>
       </main>
       <Footer />
     </div>

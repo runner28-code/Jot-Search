@@ -57,6 +57,7 @@ export default function InviteCandidates({ company }) {
       {isSendingCandidates && <div className="text-center">Sending Invitations...</div>}
       {successfullySentCandidates && <div className="text-center">Invitations Sent!</div>}
 
+// Temp comment
       <SelectedValues />
 
       <MultiSelect
@@ -106,6 +107,7 @@ function itemRenderer({ option, onClick, disabled}) {
             className='w-20 h-20'
             src={avatarUrl}
             alt='Candidate Avatar' />      
+          : <Initials name={option.label} />
         }  
         <div className="flex flex-col">
           <span className='text-lg text-blue-500'>{option.candidate?.firstName} {option.candidate?.lastName}</span>

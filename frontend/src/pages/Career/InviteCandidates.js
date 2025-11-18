@@ -22,7 +22,6 @@ export default function InviteCandidates({ job }) {
 
   const candidateOptions = candidates?.map(candidate => {
     return {
-// Temp comment
       label: candidate.name ? candidate.name : `${candidate.firstName} ${candidate.lastName}`,
       value: candidate.id,
       candidate

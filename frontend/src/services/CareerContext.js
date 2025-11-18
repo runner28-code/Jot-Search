@@ -21,7 +21,6 @@ const mockJobsData = [
     company: 'Kum N Go',
     clientCorporationID: '3b7bf6bc-16de-4014-92d6-d1cbee1bc4d5',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/kumgo_2_eqbzbl.webp',
-    salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
     location_state: 'OK',
     onSite: false,
@@ -70,6 +69,7 @@ const mockJobsData = [
   {
     id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',
     title: 'Lead Instructor',
+    company: 'Paycom', // ! Not in schema yet
     clientCorporationID: 'b0eda365-79b5-4e2b-8674-642f09f56eb2',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
     salaryRange: '$80k-$90k',

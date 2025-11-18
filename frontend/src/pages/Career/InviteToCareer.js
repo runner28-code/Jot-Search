@@ -67,7 +67,6 @@ export default function InviteToCareer({ candidate }) {
         value={selected}
         onChange={setSelected}
         labelledBy="Select"
-        ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}
       />

@@ -27,6 +27,7 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
         const options = {
             query: query,
             location: 'US',
+// Temp comment
         };
         const [job] = yield BigQueryService_1.BigQueryService.getClient().createQueryJob(options);
         const [res] = yield job.getQueryResults();
@@ -76,6 +77,7 @@ const getDataSource = (id) => {
     const prefix = id.slice(0, 2);
     if (prefix === 'bl')
         return Common_1.DataSource.BULLHORN;
+    if (prefix === 'gt')
         return Common_1.DataSource.GETRO;
     return Common_1.DataSource.UNKNOWN;
 };

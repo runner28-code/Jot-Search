@@ -55,6 +55,7 @@ export default function RegistrationFormInternal(loggedIn) {
   const [referralChoice, setReferralChoice] = useState(false);
   const [commObj, setCommObj] = useState(defaultCommunity);
   const [relocate, setRelocate] = useState(false);
+  const [submissionObject, setSubmissionObject] = useState({
     loading: false,
     success: false,
   });
@@ -81,7 +82,6 @@ export default function RegistrationFormInternal(loggedIn) {
         return;
       }
 
-      // Attempt to upload resume before submitting user data
       const resumeResponse = await uploadFile('resumes', formObj.resume);
       if ( resumeResponse.result === false ) {
         setErrors(['resume']);

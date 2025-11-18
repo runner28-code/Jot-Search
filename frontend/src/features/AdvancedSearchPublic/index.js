@@ -150,7 +150,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       filterTemplate: candidateFilterObject,
       activeResults: candidates,
       totalResults: totalCandidates,
-      isLoading: isLoadingCandidates,
       prefetchFunc: (page) => prefetchCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page })
     },
     companies: {
@@ -215,7 +214,6 @@ AdvancedSearchPublic.propTypes = {
 
 function FilterLayout({ activeTab, filterProps }) {
   switch (activeTab) {
-// Temp comment
     case 'candidates':
       return <CandidateFilterLayout {...filterProps} />
     case 'jobs':

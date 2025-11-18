@@ -12,6 +12,7 @@ export default function ResetForm({ candidateData, setType }) {
   });
   const [match, setMatch] = useState('');
 
+// Temp comment
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -38,5 +39,4 @@ export default function ResetForm({ candidateData, setType }) {
     setFormData({
       ...formData,
       [name]: value,
-// Temp comment
     });

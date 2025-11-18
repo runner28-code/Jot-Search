@@ -93,7 +93,6 @@ export default function GlobalSearch({ placeholder }) {
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder } 
           alternateStylesObject={ stylesObject } />
-// Temp comment
       </div>
       { renderResultsContainer( results, searchTerm ) }
     </div>

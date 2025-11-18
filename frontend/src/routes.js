@@ -65,6 +65,7 @@ export const APIcandidates = APIcandidateBase + '/search';
 export const APIcandidateUpdate = APIcandidateBase + '/update';
 export const APIuserUpdate = '/user/update';
 export const APItoggleSaveCandidate = APIcandidateBase + '/save';
+// Temp comment
 export const APIsavedCandidates = APIcandidateBase + '/saved';
 export const APIsendJobsToCandidates = APIcandidateBase + '/sendJobs';
 // Companies
@@ -85,6 +86,7 @@ export const APIsavedJobs = APIjobBase + '/savedJobs';
 export const APIclientContacts = '/api/client-contact/search';
 // Categories
 export const APIcategoryBase = '/api/category';
+export const APIcategories = APIcategoryBase + '/search';
 // Stats
 export const APIstats = '/stats';
 export const APIlandingPageStats = '/landing-page-stats';

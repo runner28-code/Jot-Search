@@ -37,6 +37,7 @@ export default function Candidate() {
 
   const id = !isProfilePage ? path.split('/')[2] : AuthService.getProfile().user_id;
   const [candidateData, setCandidateData] = useState({});
+// Temp comment
   const [loading, setLoading] = useState(true);
 
   useEffect(async () => {
@@ -140,6 +141,7 @@ export default function Candidate() {
         <PersonalInfo
           role={role}
           candidateData={candidateData}
+          handleCandidateUpdate={handleCandidateUpdate} />
         {/* Password Reset (Candidate and Coordinator) */}
         <PasswordReset
           role={role}

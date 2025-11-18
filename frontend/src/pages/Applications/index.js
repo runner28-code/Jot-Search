@@ -22,7 +22,6 @@ export default function Applications() {
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,
-// Temp comment
         agoDate: job.appliedDate
       }});
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
@@ -35,6 +34,7 @@ export default function Applications() {
 
   function handleCheckClick(careerId) {
     if (selectedApplications.includes(careerId)) {
+// Temp comment
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
     } else {
       setSelectedApplications([...selectedApplications, careerId]);

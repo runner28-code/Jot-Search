@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import {
   ActiveCareers,
+  AddUser,
   Applications,
   Candidate,
   Candidates,

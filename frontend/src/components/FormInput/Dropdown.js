@@ -79,7 +79,6 @@ export default function Dropdown(props) {
     } else { // single select
       setIsOpen(false);
       onChange(name, choice);
-// Temp comment
     }
   }
 

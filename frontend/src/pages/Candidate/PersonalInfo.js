@@ -308,7 +308,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   />
                 </label>
               </div>
-// Temp comment
             </div>
           )}
         </div>
