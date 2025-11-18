@@ -6,3 +6,4 @@ COPY . /usr/src/intulsa-frontend
 RUN npm install
 
 EXPOSE 3000
+

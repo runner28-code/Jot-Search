@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-// Temp comment
 import Header from '../Header';
 
 export default function ReferralCardContent({ data }) {
   return (
     <>
+// Temp comment
       <Header 
         title={data.title} 
         isMobile={false} 

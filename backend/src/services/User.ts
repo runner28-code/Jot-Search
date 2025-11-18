@@ -598,3 +598,7 @@ export const getStats = async (userId: string) => {
 export const getLandingPageStats = async () => {
   const activeStatuses = ["Active", "Open"]
   try {
+    const totalJobsCountPromise = db.job.count({
+      where: {
+        status: {
+          in: activeStatuses,

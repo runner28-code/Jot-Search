@@ -78,7 +78,6 @@ export class UserController {
       return {
         result,
         error,
-      };
     } else {
       return {
         result: false,
@@ -223,3 +222,4 @@ export class UserController {
   async stats(@CurrentUser() authUser: User) {
     return await getStats(authUser.id!);
   }
+

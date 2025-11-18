@@ -202,7 +202,6 @@ export const skills = [
   'Financial Reporting',
   'Financial Services',
   'Financial Statements',
-  'FinTech',
   'Flask',
   'Flume',
   'Forecasts',
@@ -381,3 +380,5 @@ export const skills = [
   'Talent Acquisition',
   'Tax',
   'Teaching',
+  'Team Management',
+  'Tech Sales',

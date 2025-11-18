@@ -347,3 +347,5 @@ export class CompanyController {
   async getCompaniesByFilterFromGetro(
     filters: FilterOption[] | undefined,
     fields: string[] | null,
+    page: number,
+    count: number,

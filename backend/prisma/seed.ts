@@ -103,7 +103,6 @@ async function seedCandidates() {
 async function seedCategories() {
   await db.category.createMany({
     data: [
-      {
         name: "Finance",
         enabled: true,
         externalID: 2000031,
@@ -216,3 +215,5 @@ async function seedUsers() {
         seniority: "Mid",
         linkedin: "linkedin",
         workspace: "Hybrid",
+        referredBy: "LinkedIn",
+        skills: "javascript, react.js, node.js",

@@ -44,7 +44,6 @@ exports.CompanyFilter = {
         name: "name",
         bh_id: "bh_id",
         id: "id",
-    },
 };
 exports.USER_FILTER = {
     firstname: "firstname",
@@ -65,3 +64,4 @@ exports.USER_FILTER = {
     employeeType: "employeeType",
     willRelocate: "willRelocate",
     experienceYears: "experienceYears",
+    seniority: "seniority",

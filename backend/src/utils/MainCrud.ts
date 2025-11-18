@@ -120,7 +120,6 @@ export const getSavedJobs = async (candidateId: string) => {
     };
   } catch (error) {
     console.log(error);
-    return { message: error, result: false };
   }
 };
 
@@ -138,3 +137,10 @@ export const getCandidatesOnJob = async (jobId: string) => {
         },
       },
     });
+
+    const candidates = job?.applications?.map((app) => app.user);
+    return {
+      candidates,
+      result: true,
+    };
+  } catch (error) {

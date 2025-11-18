@@ -71,6 +71,7 @@ export const sendNewUserNotification = async (to: string, name: string) => {
       name: name,
       url: `${base_url}/login`
     });
+    return true;
   } catch (error: any) {
     console.log('Error during sending new user notification');
     console.log(error);
@@ -115,3 +116,4 @@ export const sendJobApplyNotification = async (to: string, name: string) => {
     await sendEmail(to, 'Job has been applied!', 'apply-job-notification', {
       name: name,
       url: `${base_url}/login`
+    });

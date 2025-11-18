@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { startCase } from 'lodash';
 import EditSummaryForm from './EditSummaryForm';
 import EditSkillsForm from './EditSkillsForm';
@@ -49,6 +50,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         return (
           <div 
             key={key}
+            className='flex justify-between items-center w-full mb-4'
           >
             <label 
               className='text-xl font-bold text-royalBlue'

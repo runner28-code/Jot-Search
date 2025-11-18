@@ -242,6 +242,7 @@ export type Candidate = {
     phone?: string;
     phone2?: string;
     phone3?: string;
+    preferredContact?: string;
     primarySkills?: string;
     recentClientList?: string;
     referredBy?: string;
@@ -316,3 +317,5 @@ export type Lead = {
     namePrefix?: string;
     nameSuffix?: string;
     nickName?: string;
+    notes?: string;
+    numEmployees?: string;

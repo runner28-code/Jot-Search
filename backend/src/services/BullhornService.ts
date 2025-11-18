@@ -946,3 +946,8 @@ export class BullhornService {
       });
       return res.data;
     } catch (error: any) {
+      console.log(error.message);
+      return null;
+    }
+  }
+

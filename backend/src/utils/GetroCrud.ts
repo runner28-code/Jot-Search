@@ -87,6 +87,7 @@ export const getCompanies = async () => {
   return jobs;
 }
 
+export const saveJobs = async (jobs: any[]) => {
     const expludeFields = ['organization', 'employment_types', 'visibility'];
 		console.log('----- jobs', jobs);
     try {
@@ -99,7 +100,6 @@ export const getCompanies = async () => {
 									},
 								});
 				
-								if (existing) {
 									console.log(`Job with ID: ${job.id} exists`);
 									return -1;
 								}
@@ -116,3 +116,4 @@ export const getCompanies = async () => {
                 console.log(`Saved Getro Job with ID = ${job.id} successfully`);
             } catch (error) {
                 console.log(error);
+                console.log(`ERROR: while saving Job with ID = ${job.id}`);

@@ -52,7 +52,6 @@ export const choices = {
     link: ROUTES.favorites,
   },
   addUser: {
-    label: 'Add User',
     icon: AddUserIcon,
     link: ROUTES.addUser,
   },

@@ -88,7 +88,6 @@ export function inputValidation(formObj) {
   }
   if ( formObj.skills.length < 3 ) { // Ensure at least 3 skills chosen
     newErrors.push('skills');
-  }
 
   // Only need LinkedIn OR resume, not both.
   // If one is missing but the other is present, remove either from errors array.
@@ -96,7 +95,6 @@ export function inputValidation(formObj) {
     newErrors = newErrors.filter(error => error !== 'linkedin');
   } else if ( newErrors.includes('resume') && !newErrors.includes('linkedin') ) {
     newErrors = newErrors.filter(error => error !== 'resume');
-// Temp comment
   }
 
   return newErrors;

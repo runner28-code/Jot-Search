@@ -7,6 +7,7 @@ const config = {
     authSecret: process.env.AUTH_SECRET,
     fileUploadSize: process.env.FILE_UPLOAD_SIZE,
     getroEmail: process.env.GETRO_EMAIL,
+// Temp comment
     getroPassword: process.env.GETRO_PASSWORD,
     bullhornClientID: process.env.BULLHORN_CLIENT_ID,
     bullhornClientSecret: process.env.BULLHORN_CLIENT_SECRET,
@@ -15,7 +16,6 @@ const config = {
     getroDatasetID: process.env.DATASET_GETRO,
     bullhornDatasetID: process.env.DATASET_BULLHORN,
     mainDatasetID: process.env.DATASET_MAIN,
-// Temp comment
     sendgridKey: process.env.SENDGRID_KEY,
     sendgridSecret: process.env.SENDGRID_SECRET,
     mailSenderEmail: process.env.MAIL_SENDER_EMAIL,

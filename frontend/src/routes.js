@@ -2,6 +2,7 @@
 export const root = '/';
 export const landingPage = '/landing-page';
 export const blog = '/blog';
+export const about = '/about';
 export const login = '/login';
 export const logout = '/logout';
 export const profile = '/profile';
@@ -76,7 +77,6 @@ export const APIsendCandidatesToCompanies = APIcompanyBase + '/sendCandidates';
 export const APIjobBase = '/api/job';
 export const APIjobs = APIjobBase + '/search';
 export const APIjobApply = APIjobBase + '/apply';
-export const APIappliedJobs = APIjobBase + '/applied';
 export const APIInvitedJobs = APIjobBase + '/invited';
 export const APItoggleSaveJob = APIjobBase + '/save';
 export const APIsavedJobs = APIjobBase + '/savedJobs';
@@ -90,3 +90,4 @@ export const APIstats = '/stats';
 export const APIlandingPageStats = '/landing-page-stats';
 
 /* Social Links */
+export const linkedin = 'https://www.linkedin.com/company/talent-intulsa/?utm_source=talentwebsite&utm_medium=web&utm_campaign=footer-menu';

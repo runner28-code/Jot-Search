@@ -92,6 +92,7 @@ export default function CandidateCard({ data, disableLink }) {
       <FavoriteButton
         type={'candidate'}
         data={data} />
+    </div>
   )
 }
 

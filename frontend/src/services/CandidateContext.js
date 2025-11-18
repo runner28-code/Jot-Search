@@ -86,7 +86,6 @@ const mockCandidateData = [
     lastName: 'MacAlpine',
     linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/lawrence_1_szacre.webp', // Missing from Bullhorn Schema
-    occupation: 'Compliance',
     companyName: 'Apline Strategies',
     address_city: 'Tulsa',
     address_state: 'OK',
@@ -104,7 +103,6 @@ const CandidateProvider = ({children}) => {
   const [candidates, setCandidates] = useState(mockCandidateData);
   const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
 
-// Temp comment
   useEffect(() => {
     if (currentUser?.user_id) {
       getCandidateById(currentUser.user_id).then(user => {

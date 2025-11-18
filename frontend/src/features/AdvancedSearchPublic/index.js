@@ -197,7 +197,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
         total={totalResults}
         type={activeTab}
         loading={isLoading}
-      />
       <ResultContainer
         key={activeResults}
         results={activeResults}

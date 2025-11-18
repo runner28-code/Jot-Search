@@ -33,7 +33,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
       inputHeight={inputHeight}
     />
   </>
-}
 
 EditSkillsForm.defaultProps = {
   skills: '',

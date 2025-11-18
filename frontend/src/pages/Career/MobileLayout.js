@@ -173,7 +173,6 @@ function renderAboutCompanySection(careerData) {
     <hr className={hrStyles} />
   </>)
 }
-
 function renderSkillsSection({skillList}) {
   return(<>
     <hr className={hrStyles} />

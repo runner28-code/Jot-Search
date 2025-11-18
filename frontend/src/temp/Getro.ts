@@ -26,6 +26,7 @@ export type Company = {
     collections?: string;
 }
 
+export type Job = {
     id: string;
     application_method?: string;
     application_path?: string;
@@ -77,3 +78,4 @@ export type User = {
     invited_by?: string;
     job_search_status?: string;
     joined_at?: string;
+    remote_work?: string;

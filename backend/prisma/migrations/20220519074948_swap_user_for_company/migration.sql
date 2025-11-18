@@ -100,3 +100,4 @@ CREATE TABLE "Company" (
 
 -- AddForeignKey
 ALTER TABLE "Company" ADD CONSTRAINT "Company_addressId_fkey" FOREIGN KEY ("addressId") REFERENCES "Address"("id") ON DELETE SET NULL ON UPDATE CASCADE;
+

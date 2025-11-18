@@ -8,6 +8,7 @@ export default function CandidateResults({ candidates }) {
   const role = AuthService.getUserRole();
   if (candidates.length === 0 || role === 'candidate') {
     return null;
+// Temp comment
   }
 
   return (
@@ -17,7 +18,6 @@ export default function CandidateResults({ candidates }) {
         return (
           <CandidateResult 
             candidate={candidate} 
-// Temp comment
             key={candidate.id} />
         )
       })}

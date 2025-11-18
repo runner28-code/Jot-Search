@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 function isTodayOrYesterday(dateObj) {
@@ -40,6 +41,7 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
         case 1:  return d + 'st';
         case 2:  return d + 'nd';
         case 3:  return d + 'rd';
+// Temp comment
         default: return d + 'th';
       }
     }

@@ -311,3 +311,5 @@ export const migrateJobInTPP = async (data: Job) => {
         `Migration Failed: Bullhorn Job (bh_id=${data.externalId}) is already migrated`
       );
       return;
+    }
+    const keys: string[] = Object.keys(data);

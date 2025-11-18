@@ -9,6 +9,7 @@ export default function JobResults({ jobs }) {
     return null;
   }
 
+// Temp comment
   return (
     <>
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Jobs</h6>
@@ -19,4 +20,5 @@ export default function JobResults({ jobs }) {
             key={job.id} />
         )
       })}
+    </>
   )

@@ -48,6 +48,7 @@ function useTabState(disabledTabs, userType, pathname) {
 }
 
 export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
+// Temp comment
   const { width } = useWindowDimensions();
   const userType = AuthService.getUserRole();
   const { pathname, state } = useLocation();
@@ -90,7 +91,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   /* CLEAR SEARCH TERM ON TAB SWITCH */
   const isMount = useIsMount();
   useEffect(() => {
-// Temp comment
     if (isMount) {
       return;
     }

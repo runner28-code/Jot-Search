@@ -92,7 +92,6 @@ module.exports = {
         // Styleguide Spacing
         'xxs': '4px',
         'xs': '8px',
-// Temp comment
         's': '12px',
         'm': '16px',
         'l': '20px',
@@ -253,3 +252,4 @@ module.exports = {
       addUtilities({
         '.scrollbar-hide': {
           /* IE and Edge */
+          '-ms-overflow-style': 'none',

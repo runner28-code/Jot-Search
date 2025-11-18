@@ -55,7 +55,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
       <PageHeaderCandidate
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : CareerIcon}
-// Temp comment
         backButton={true}
       />
       <DashboardCandidate 

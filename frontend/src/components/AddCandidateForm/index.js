@@ -19,7 +19,6 @@ import { uploadFile, registerUser } from '../../services/API';
 import { CategoryContext } from '../../services/CategoryContext';
 import { experienceMap } from '../../utils/dbFieldMapping';
 
-const defaultState = {
   expertise: '',
   roles: [],
   skills: [],

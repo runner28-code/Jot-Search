@@ -18,7 +18,6 @@ export default function ExpertiseLinksMobile() {
       </h4>
       <div className='mt-20 flex flex-wrap justify-center'>
         {/* Software & Engineering */}
-        <Link
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Software & Engineering' }}

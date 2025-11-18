@@ -64,3 +64,4 @@ CREATE TABLE "Lead" (
     "specialties" TEXT,
     "status" TEXT,
     "timeZoneOffsetEST" TEXT,
+    "type" TEXT,
