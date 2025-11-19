@@ -24,6 +24,7 @@
     "react-phone-number-input": "^3.1.50",
     "react-router-dom": "^6.2.1",
     "react-scripts": "^5.0.0",
+    "use-persisted-state": "^0.3.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -50,7 +51,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
   "devDependencies": {
     "@tailwindcss/line-clamp": "^0.3.1",
     "autoprefixer": "^10.4.2",

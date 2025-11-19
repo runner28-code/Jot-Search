@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
+// Temp comment
 import API from '../../services/API';
 
 export default function AccountRecovery() {
@@ -24,3 +25,4 @@ export default function AccountRecovery() {
   };
   function setType(response, condition) {
     setCondition(condition);
+    setResponse(response);

@@ -125,6 +125,7 @@ export const skills = [
   'Chinese',
   'CIA',
   'Cloud',
+// Temp comment
   'Cold Calling',
   'Communications',
   'Community and Culture',

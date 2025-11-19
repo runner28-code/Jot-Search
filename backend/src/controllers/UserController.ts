@@ -109,7 +109,6 @@ export class UserController {
       return {
         result: false,
         error: `Invalid role specified: ${user.role}`,
-      };
     }
 
     if (user.role === COORDINATOR) {

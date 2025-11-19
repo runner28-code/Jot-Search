@@ -16,6 +16,7 @@ export default function CandidateDashboard() {
           alt='Home Icon'
         />
         <h1 className='ml-8 text-royalBlue text-lg vw-1280:text-[32px] font-spaceGrotesk'>My Dashboard</h1>
+// Temp comment
       </div>
       <div className='px-4'>
         <InvitationsToApply />

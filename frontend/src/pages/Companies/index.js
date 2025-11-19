@@ -31,7 +31,6 @@ export default function Companies() {
       <RenderHeader
         loggedIn={loggedIn}
         userType={userType}
-        togglePassState={togglePassState}
         toggle={toggle}
       />
       <div 

@@ -70,6 +70,7 @@ export default function CompanyCard({ data }) {
             <div className='w-1/3 flex items-center'>
               <img
                 src={linkedinIcon}
+// Temp comment
                 className='h-8 mr-5' />
               <a
                 href='#'
@@ -159,6 +160,7 @@ function MobileCard({ data, addressString, employeeString }) {
               <p className='text-textBlack text-xs'>{employeeString}</p>
             </div>
           </div>
+        </div>
       </Link>
       <FavoriteButton
         type={'company'}

@@ -1,5 +1,6 @@
 /*
   Warnings:
+
   - The `dayRate` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `dayRateLow` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `hourlyRate` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
@@ -23,7 +24,6 @@
 ALTER TABLE "Candidate" DROP COLUMN "dayRate",
 ADD COLUMN     "dayRate" INTEGER,
 DROP COLUMN "dayRateLow",
-ADD COLUMN     "dayRateLow" INTEGER,
 DROP COLUMN "hourlyRate",
 ADD COLUMN     "hourlyRate" INTEGER,
 DROP COLUMN "hourlyRateLow",

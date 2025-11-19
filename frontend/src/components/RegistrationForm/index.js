@@ -75,7 +75,6 @@ export default function RegistrationForm(loggedIn) {
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({
-          loading: false,
           success: false,
         });
         return;
@@ -107,7 +106,6 @@ export default function RegistrationForm(loggedIn) {
             success: true,
           })
         } else {
-// Temp comment
           return navigate(ROUTES.login);
         }
       } else {

@@ -4,7 +4,6 @@ import CandidateDashboard from './CandidateDashboard';
 import CompanyDashboard from './CompanyDashboard';
 import CoordinatorDashboard from './CoordinatorDashboard';
 import AuthService from '../../services/auth';
-
 export default function Dashboard() {
   let userType = AuthService.getUserRole();
 
@@ -12,3 +11,4 @@ export default function Dashboard() {
     <main>
       <DashboardType userType={userType} />
     </main>
+  )

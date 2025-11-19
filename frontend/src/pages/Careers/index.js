@@ -45,7 +45,6 @@ export default function Careers() {
         />
       </div>
     </section>
-  )
 }
 
 function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
@@ -64,6 +63,7 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
     </>)
   }
   if( loggedIn ) {
+    return (<>
       <PageHeader
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : SearchIcon}

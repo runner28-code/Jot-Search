@@ -156,6 +156,7 @@ export const saveClientContacts = async (contacts: any[]) => {
       try {
         console.log(`\nSavng ClientContact with ID = ${contact.id}`);
         const existing = await db.clientContact.findFirst({
+          where: {
             externalID: contact.id,
           },
         });
@@ -223,7 +224,6 @@ export const saveCandidates = async (candidates: any[]) => {
         });
         console.log(`Saved Candidate with ID = ${candidate.id} successfully`);
       } catch (error: any) {
-        console.log(error.message);
         console.log(`ERROR: while saving Candidate with ID = ${candidate.id}`);
       }
     }

@@ -111,6 +111,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       [filterType]: choice
     });
     setPage(1);
+// Temp comment
   }
 
   function handleSearchChange(searchTerm) {
@@ -150,6 +151,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       filterTemplate: candidateFilterObject,
       activeResults: candidates,
       totalResults: totalCandidates,
+      isLoading: isLoadingCandidates,
       prefetchFunc: (page) => prefetchCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page })
     },
     companies: {

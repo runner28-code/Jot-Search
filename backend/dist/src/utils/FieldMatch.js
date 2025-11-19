@@ -29,7 +29,6 @@ exports.JobFilter = {
         isDeleted: "isDeleted",
         companyId: "companyId",
     },
-};
 exports.CompanyFilter = {
     bullhorn: {
         name: "name",
@@ -47,6 +46,7 @@ exports.CompanyFilter = {
     },
 };
 exports.USER_FILTER = {
+    firstname: "firstname",
     lastname: "lastname",
     role: "role",
     roles: "roles",

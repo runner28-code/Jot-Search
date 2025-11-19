@@ -29,6 +29,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
       choices={skillChoices}
       currentChosen={splitSkills}
       onChange={onChange}
+// Temp comment
       baseStyles={baseStyles}
       inputHeight={inputHeight}
     />
@@ -54,6 +55,7 @@ function renderChosen(skills, onChange) {
         return (
           <ChoiceTag
             key={skill}
+            label={skill}
             isActive={true}
             handleClick={handleClick}
           />

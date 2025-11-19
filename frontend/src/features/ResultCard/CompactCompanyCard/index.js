@@ -71,7 +71,6 @@ CompactCompanyCard.propTypes = {
     selectable: PropTypes.bool,
     selected: PropTypes.arrayOf(PropTypes.string),
     setSelected: PropTypes.func
-  })
 }
 
 function renderCardImage(data) {

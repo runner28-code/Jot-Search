@@ -45,7 +45,6 @@ function HeaderContent({ companyData }) {
                 />
                 <OpenCareers
                   styles={headerRowTextStyles}
-                  companyId={companyData.id}
                 />
               </div> 
             </div>
@@ -81,7 +80,6 @@ export default function HeaderMobile({ companyData }) {
   return (
     <>
       <section className='flex w-full mb-10 px-4'>
-// Temp comment
         <HeaderContent companyData={companyData} />
       </section>
     </>

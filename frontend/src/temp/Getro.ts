@@ -53,7 +53,6 @@ export type Job = {
     source?: string;
     status?: string;
     title?: string;
-    url?: string;
 };
 
 export type User = {

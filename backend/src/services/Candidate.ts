@@ -40,7 +40,6 @@ export const saveCandidate = async (
           savedCandidates: {
             disconnect: {
               id: candidateId,
-            },
           },
         },
       });
@@ -66,6 +65,7 @@ export const getSavedCandidates = async (companyUserId: string) => {
           include: {
             users: true,
           }
+        },
       },
     });
 

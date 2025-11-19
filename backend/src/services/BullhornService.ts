@@ -106,6 +106,7 @@ export class BullhornService {
     if (res.status === 200) {
       const path = res.request.path;
       console.log("path =", path);
+      this.auth_code = path
         .slice(7, path.indexOf("&client"))
         .replace("%25", "%");
       console.log("Auth Code: ", this.auth_code);

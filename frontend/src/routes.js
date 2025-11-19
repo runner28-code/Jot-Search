@@ -65,7 +65,6 @@ export const APIcandidates = APIcandidateBase + '/search';
 export const APIcandidateUpdate = APIcandidateBase + '/update';
 export const APIuserUpdate = '/user/update';
 export const APItoggleSaveCandidate = APIcandidateBase + '/save';
-// Temp comment
 export const APIsavedCandidates = APIcandidateBase + '/saved';
 export const APIsendJobsToCandidates = APIcandidateBase + '/sendJobs';
 // Companies

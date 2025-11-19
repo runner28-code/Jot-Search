@@ -177,7 +177,6 @@ function renderChoices(userType, handleClick) {
 
 function renderChoice(choice, selected, index, choicesLength, handleClick) {
   let baseChoiceStyles = 'w-full h-20 flex items-center cursor-pointer hover:bg-sky-100 transition ease-in-out ';
-  const selectedChoice = choice.label === selected;
   let selectedClass = ' bg-royalBlue text-white ';
   if (index === 0) selectedClass += ' rounded-t-xl '; // round top card if selected
   if (index === choicesLength - 1) {

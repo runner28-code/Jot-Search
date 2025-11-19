@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import ReferralCardContent from '../../features/ResultCard/ReferralContent';
 
 function renderHorizontalRule(isLastItem) {
+// Temp comment
   if (isLastItem) {
     return null;
   }
@@ -31,7 +32,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
           alt={job.name}
         />
         <div className='grow'>
-// Temp comment
           <ReferralCardContent data={job} />
         </div>
       </div>
