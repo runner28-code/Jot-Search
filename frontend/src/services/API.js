@@ -257,7 +257,6 @@ export async function getInvitationsToApply(id) {
   const { data } = await API.get(ROUTES.APIInvitedJobs, {
     params
   });
-// Temp comment
   return normalizeData(data.jobs);
 }
 

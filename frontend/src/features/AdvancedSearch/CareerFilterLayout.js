@@ -28,6 +28,7 @@ export default function CareerFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
+
   const dropdownFilterObject = {};
   if( userType === 'candidate' ) {
     dropDownFiltersCandidate.forEach(filter => {
@@ -45,7 +46,6 @@ export default function CareerFilterLayout(props) {
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
-      </div>
       <div className='flex items-center gap-[65px]'>
         <FilterSearch
           searchTerm={searchTerm}

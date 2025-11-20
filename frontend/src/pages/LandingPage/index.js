@@ -61,7 +61,6 @@ function renderSearch() {
         loading={isLoading}
       />
     </>)
-  }
   return (
     <ExploreSearch
       totalJobs={totalJobsCount}

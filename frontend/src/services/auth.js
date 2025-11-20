@@ -1,4 +1,5 @@
 import decode from 'jwt-decode';
+import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
 
 class AuthService {
   getProfile() {
@@ -37,6 +38,7 @@ class AuthService {
   getToken() {
     return localStorage.getItem('id_token');
   }
+// Temp comment
 
   async login(idToken) {
     localStorage.setItem('id_token', idToken);

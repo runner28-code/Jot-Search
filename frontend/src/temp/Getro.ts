@@ -67,7 +67,6 @@ export type User = {
     introduction_requested?: string;
     last_name?: string;
     linkedin_url?: string; // !
-    resume_url?: string;
     share_permission?: string;
     skills?: string;
     talent_groups?: string;

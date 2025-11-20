@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
-import SourceIdentifier from '../SourceIdentifier';
 import BackButton from '../BackButton';
 
 export default function DetailsHeader({ type, source }) {
@@ -18,7 +17,6 @@ export default function DetailsHeader({ type, source }) {
     default:
       Icon = CareerIcon;
       break;
-// Temp comment
   }
   const titleCasedType = type.charAt(0).toUpperCase() + type.slice(1);
   let headerText

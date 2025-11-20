@@ -44,7 +44,6 @@
     "getro_get_jobs": "npm run build && node ./dist/src/cronjobs/getro_get_jobs",
     "getro_get_members": "npm run build && node ./dist/src/cronjobs/getro_get_members",
     "bullhorn_get_companies_win": "npm run build-win && node ./dist/src/cronjobs/bullhorn_get_companies",
-    "bullhorn_get_jobs_win": "npm run build-win && node ./dist/src/cronjobs/bullhorn_get_jobs",
     "bullhorn_get_contacts_win": "npm run build-win && node ./dist/src/cronjobs/bullhorn_get_contacts",
     "bullhorn_get_candidates_win": "npm run build-win && node ./dist/src/cronjobs/bullhorn_get_candidates",
     "bullhorn_get_leads_win": "npm run build-win && node ./dist/src/cronjobs/bullhorn_get_leads",

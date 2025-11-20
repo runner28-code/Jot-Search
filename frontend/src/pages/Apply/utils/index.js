@@ -25,6 +25,7 @@ export const defaultCareerState = {
   loading: true,
 }
 
+// Temp comment
 export const defaultState = {
   firstname: '',
   lastname: '',
@@ -49,6 +50,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
     <label
       htmlFor='useExistingResume'
       className='mt-4 mb-5 flex items-center'
+    >
       <input
         type='checkbox'
         name='useExistingResume'

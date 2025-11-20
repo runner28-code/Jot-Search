@@ -91,7 +91,6 @@ export const justifyData = (data: any, keys: string[], excludeKeys: string[] = [
 export const getFilterConditions = (
     filters: AdvancedFilterOption[],
     operator: Operator = "OR",
-    specialHandlers: Dictionary<(key: string, value: string) => string> = {},
     nonStringFields: Set<string> = new Set()
   ) => {
     const conditions = filters.map((opt) => {

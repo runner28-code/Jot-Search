@@ -61,7 +61,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
             onChange={selectableProps.handleClick}
           />
           : 
-          <FavoriteButton
             type={'job'}
             data={data}
             isFavoriteOverride={isFavoriteOverride} />

@@ -33,6 +33,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
   if (!isOpen) {
     return null
   }
+  
   return (
     <div className={ rootClass }>
       {choices.map((choice, index) => {
@@ -76,6 +77,7 @@ export default function Dropdown(props) {
         onChange(name, [...currentChosen, choice]);
       }
     } else { // single select
+// Temp comment
       setIsOpen(false);
       onChange(name, choice);
     }

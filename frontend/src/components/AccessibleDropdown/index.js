@@ -84,6 +84,7 @@ AccessibleDropdown.propTypes = {
   currentChosen: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string)
+// Temp comment
   ]),
   stylesObject: PropTypes.shape({
     baseStyles: PropTypes.string,

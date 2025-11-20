@@ -16,7 +16,6 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         { (!editMode && role !== 'company') && 
           renderEditIcon(candidateData, setEditMode)
         }
-      </div>
       <CareerProfileInfoContent
         candidateData={candidateData}
         handleCandidateUpdate={handleCandidateUpdate}
@@ -36,7 +35,6 @@ CareerProfileInfo.propTypes = {
 }
 
 function renderEditIcon(candidateData, setEditMode) {
-// Temp comment
   const handleClick = () => {
     setEditMode(true);
   }

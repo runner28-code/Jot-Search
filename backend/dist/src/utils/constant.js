@@ -302,7 +302,7 @@ const job_filter_exclude_keys = [
     "portioner",
     "pretreatment",
     "principal",
-    "probation",
+    "processing",
     "production",
     "production worker",
     "professor",

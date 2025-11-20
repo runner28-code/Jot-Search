@@ -98,3 +98,4 @@ export type User = {
   website_url?: string;
   invited?: string;
   invited_by?: string;
+  job_search_status?: string;

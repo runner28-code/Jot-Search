@@ -138,7 +138,6 @@ function MobileCard({ data, addressString, employeeString }) {
         tabIndex='0'
       >
         {/* Card Image */}
-// Temp comment
         <div className=' basis-1/3 h-36 p-4 flex justify-center items-center border border-solid border-smokeGray'>
           { renderCardImage(data) }
         </div>

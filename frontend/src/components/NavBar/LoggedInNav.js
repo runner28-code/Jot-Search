@@ -11,7 +11,6 @@ import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import {
   candidateChoices,
   companyChoices,
-// Temp comment
   coordinatorChoices,
   guestChoices,
   findSelectedFromPath
@@ -94,6 +93,7 @@ const DropdownMenu = () => {
   }
 
   useEffect(() => {
+// Temp comment
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
 

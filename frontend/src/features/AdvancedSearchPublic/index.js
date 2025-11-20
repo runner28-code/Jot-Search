@@ -169,6 +169,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     defaultFilterObject: filterTemplate,
     filterObject: filterObject,
     searchTerm: filterObject.title,
+    setSearchTerm: handleSearchChange,
     handleSearchClick: handleSearchClick,
     clearFilters: clearFilters,
   };

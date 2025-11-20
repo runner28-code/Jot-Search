@@ -140,6 +140,7 @@ export class UserController {
           data = { ...data, externalId: res.changedEntityId };
         }
       } catch (error) {
+        console.error("error syncing to BH");
         console.error(error);
       }
       const { result, error } = await register(data);
@@ -158,7 +159,6 @@ export class UserController {
     if (!data) return { result: false, error: "token is invalid" };
 
     const user = await findUserByEmail(data.email);
-    if (!user) return { result: false, error: "User does not exist" };
 
     user.password = new_password;
 

@@ -4,8 +4,8 @@ import Auth from './Auth';
 import {
   LandingPage,
   SignUp,
-// Temp comment
   Login,
+// Temp comment
   Career,
   Careers,
   Company,

@@ -15,7 +15,6 @@ const ResumePreview = ({ resumeUrl }) => {
     file: resumeUrl,
     page,
     canvasRef,
-  });
 
   const buttonStyles = 'w-15 h-15 ';
   const buttonStylesDisabled = 'w-15 h-15 opacity-50';
@@ -27,6 +26,7 @@ const ResumePreview = ({ resumeUrl }) => {
       {!pdfDocument && <LoadingSpinner />}
       <canvas
         ref={canvasRef}
+        className='rounded-lg'
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>

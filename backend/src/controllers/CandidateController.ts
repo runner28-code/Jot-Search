@@ -68,6 +68,7 @@ export class CandidateController {
 
       return {
         candidate: clearPassword(candidate),
+        message: !candidate ? "No user with given ID" : undefined,
       };
     } catch (error) {
       return { message: error };

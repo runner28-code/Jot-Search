@@ -54,7 +54,6 @@ export default function Company() {
   const navigate = useNavigate();
 
   if (loading) { return <LoadingSpinner /> }
-// Temp comment
   return (
     <div className={ loggedIn ? 'vw-1280:pr-12 mx-[5%]' : ''}>
       <RenderHeader
@@ -179,6 +178,7 @@ function renderSectorList(companyData, width , stylesObject) {
           {
             business.map((sector, index) =>
               <li key={index}>{sector}</li>
+// Temp comment
             )
           }
         </ul>

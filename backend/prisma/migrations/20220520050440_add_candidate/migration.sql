@@ -24,7 +24,6 @@ CREATE TABLE "Candidate" (
     "educationDegree" TEXT,
     "email" TEXT,
     "email2" TEXT,
-    "email3" TEXT,
     "employeeType" TEXT,
     "employeePreference" TEXT,
     "ethnicity" TEXT,
@@ -96,3 +95,4 @@ CREATE TABLE "Candidate" (
     "willRelocate" TEXT,
     "workAuthorized" TEXT,
     "address_address1" TEXT,
+    "address_address2" TEXT,

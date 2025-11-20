@@ -223,7 +223,6 @@ InfoLabel.propTypes = {
 
 import { MdCommute, MdCardTravel } from 'react-icons/md';
 import { FaTruckMoving } from 'react-icons/fa';
-// Temp comment
 
 function renderIcon(label, value) {
   let styles = 'h-8 w-8 mr-5 ';

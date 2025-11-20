@@ -113,6 +113,7 @@ function renderCompanyLogo(logoUrl, name) {
         alt={`${name} logo`}
       />
     </div>
+  )
 }
 
 function renderDesktopLogo(logoUrl, name) {

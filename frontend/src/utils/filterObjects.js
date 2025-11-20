@@ -102,7 +102,6 @@ export const candidateFilterObject = {
     'Active',
     'New Lead',
     'Warm Lead',
-    'Passive',
     'Hired',
   ],
   'Skills': [
