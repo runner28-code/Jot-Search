@@ -11,3 +11,4 @@ We use the GH Secrets feature and inject these values as env vars at build time.
     * The format should be `SECRET_{variable_name}: ${{ secrets.{environment}_{variable_name} }}`.
     * Example: `SECRET_TEST_VAR: ${{ secrets.DEV_TEST_VAR }}`
 3. In the `.github/workflows/{environment]_task_definition.yml` file, add variables to the `environment` section. 
+    * Example: `{"name": "variable_name", "value": "{SECRET_TEST_VAR"},`

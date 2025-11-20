@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import ReferralCardContent from '../../features/ResultCard/ReferralContent';
 
 function renderHorizontalRule(isLastItem) {
-// Temp comment
   if (isLastItem) {
     return null;
   }
@@ -28,6 +27,7 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
       <div className='flex items-center'>
         <img 
           className='object-contain h-35 w-35 ml-12 mr-16'
+// Temp comment
           src={job.logo}
           alt={job.name}
         />

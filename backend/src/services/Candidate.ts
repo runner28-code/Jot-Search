@@ -40,6 +40,7 @@ export const saveCandidate = async (
           savedCandidates: {
             disconnect: {
               id: candidateId,
+            },
           },
         },
       });
@@ -94,3 +95,4 @@ export const getCandidatesList = async (candidates_ids: string[]) => {
         id: {
           in: candidates_ids,
         },
+      },

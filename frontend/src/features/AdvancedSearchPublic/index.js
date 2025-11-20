@@ -111,7 +111,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       [filterType]: choice
     });
     setPage(1);
-// Temp comment
   }
 
   function handleSearchChange(searchTerm) {
@@ -170,7 +169,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     defaultFilterObject: filterTemplate,
     filterObject: filterObject,
     searchTerm: filterObject.title,
-    setSearchTerm: handleSearchChange,
     handleSearchClick: handleSearchClick,
     clearFilters: clearFilters,
   };

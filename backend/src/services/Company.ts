@@ -69,3 +69,4 @@ export const getSavedCompanies = async (candidateId: string) => {
     return {
       companies: candidate?.savedCompanies,
       result: true,
+    };

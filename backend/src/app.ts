@@ -135,3 +135,4 @@ useExpressServer(app, {
     }
   },
   currentUserChecker: (action: Action) => action.request.user,
+});

@@ -457,7 +457,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
     }
   });
   const newCandidatesCompare = (newCandidatesInCurrentPeriod - newCandidatesInPreviousPeriod) * 100 / newCandidatesInCurrentPeriod
-
   const newApplicationsInCurrentPeriod = await db.application.count({
     where: {
       createdAt: {
@@ -602,3 +601,6 @@ export const getLandingPageStats = async () => {
       where: {
         status: {
           in: activeStatuses,
+        }
+      }
+    });

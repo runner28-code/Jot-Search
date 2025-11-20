@@ -474,3 +474,6 @@ export const JOB_FIELDS = [
   "durationWeeks",
   "educationDegree",
   "employmentType",
+  "externalID",
+  "feeArrangement",
+  "hoursOfOperation",

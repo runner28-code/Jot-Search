@@ -45,6 +45,7 @@ export default function CandidateCard({ data, disableLink }) {
         <div className='relative grow'>
           {/* Name and Active Status */}
           <div className='flex gap-s items-center'>
+            <h5 className='text-h5 font-spaceGrotesk font-semibold text-charcoal leading-none'>{nameString}</h5>
             { renderActiveStatus(data) }
           </div>
           {/* Occupation */}
@@ -222,6 +223,7 @@ InfoLabel.propTypes = {
 
 import { MdCommute, MdCardTravel } from 'react-icons/md';
 import { FaTruckMoving } from 'react-icons/fa';
+// Temp comment
 
 function renderIcon(label, value) {
   let styles = 'h-8 w-8 mr-5 ';

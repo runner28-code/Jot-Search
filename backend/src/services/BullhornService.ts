@@ -636,7 +636,6 @@ export class BullhornService {
             "firstName",
             "gender",
             "hourlyRate",
-            "hourlyRateLow",
             // "i9OnFile",
             "isAnonymized",
             "isDeleted",
@@ -951,3 +950,8 @@ export class BullhornService {
     }
   }
 
+  async getJobPostSubscription(
+    maxEvents = 10,
+  ): Promise<any> {
+    console.log("\n***** NewJobOrderSubscription *****");
+    try {

@@ -43,6 +43,7 @@ export class ClientContactController {
       const wheres = normalizeFilters(filters)
 
       // TODO: assuming filters and fields format
+      const clientContacts = await db.clientContact.findMany({
         where: wheres,
         take: count || 100,
         skip: (count || 0) * (page || 0),
@@ -55,3 +56,4 @@ export class ClientContactController {
       };
     } catch (error) {
       console.log(error);
+      return { message: error };

@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import OtherCareers from '../../features/OtherCareers';
 import featuredIcon from '../../assets/icons/pyramid.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+// Temp comment
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import locationIcon from '../../assets/icons/placepin.svg';
 import clockIcon from '../../assets/icons/clock.svg';
@@ -82,7 +83,6 @@ export default function DesktopLayout(props) {
                 className='h-8 mr-5' />
               <p className='text-textBlack'>{careerData.employmentType}</p>
             </div>
-// Temp comment
             {/* Salary */}
             <div className='w-1/2 flex items-center pr-4'>
               <img

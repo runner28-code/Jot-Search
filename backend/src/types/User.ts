@@ -98,3 +98,4 @@ export const IUSER = {
   activelyLooking: true,
 };
 
+export const USERKEYS = Object.keys(IUSER);

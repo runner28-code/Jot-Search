@@ -41,7 +41,6 @@ export default function Stats({ userType }) {
       const result = await getCompanyQuickStats(duration);
       setStats({
         'Active Careers Posts': { ...result.activeCareersPosts },
-// Temp comment
         'Recommended Candidates': { ...result.recommendedCandidates },
         'Introductions Requests': { ...result.introductionsRequests },
         'Company Favorites': { ...result.companyFavorites },

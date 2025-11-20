@@ -349,3 +349,5 @@ export class CompanyController {
     fields: string[] | null,
     page: number,
     count: number,
+    operator: Operator = "OR"
+  ) {

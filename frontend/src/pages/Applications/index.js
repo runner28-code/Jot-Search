@@ -3,7 +3,6 @@ import PageHeader from '../../components/PageHeader';
 import {BsClipboardCheck} from 'react-icons/bs';
 import ResultContainer from '../../features/ResultContainer';
 import { getAppliedJobs } from '../../services/API';
-import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
@@ -34,7 +33,6 @@ export default function Applications() {
 
   function handleCheckClick(careerId) {
     if (selectedApplications.includes(careerId)) {
-// Temp comment
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
     } else {
       setSelectedApplications([...selectedApplications, careerId]);

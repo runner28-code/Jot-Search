@@ -125,3 +125,4 @@ export const parseGetroJobToMain = (data: GtJob) => {
     description: data.description,
     locations: data.locations,
     employmentType: data.employment_types,
+    title: data.title,

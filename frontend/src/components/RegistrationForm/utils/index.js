@@ -104,3 +104,4 @@ export function inputValidation(formObj) {
     newErrors = newErrors.filter(error => error !== 'resume');
   }
 
+  return newErrors;

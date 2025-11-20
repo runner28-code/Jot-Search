@@ -18,12 +18,14 @@ const config_1 = __importDefault(require("../config"));
 const BigQueryService_1 = require("../services/BigQueryService");
 const Common_1 = require("../types/Common");
 const constant_1 = require("./constant");
+// Temp comment
 const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const query = `
             SELECT * FROM \`${datset}.${table}\`
             WHERE id=${id}
         `;
+        const options = {
             query: query,
             location: 'US',
         };

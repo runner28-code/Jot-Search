@@ -60,7 +60,6 @@ CREATE TABLE "Lead" (
     "salaryLow" TEXT,
     "secondarySkills" TEXT,
     "skillSet" TEXT,
-    "smsOptIn" BOOLEAN,
     "specialties" TEXT,
     "status" TEXT,
     "timeZoneOffsetEST" TEXT,

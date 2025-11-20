@@ -248,7 +248,6 @@ export type Candidate = {
     referredBy?: string;
     salary?: string;
     salaryLow?: string;
-    secondarySkills?: string;
     skillSet?: string;
     smsOptIn?: string;
     source?: string;
@@ -319,3 +318,5 @@ export type Lead = {
     nickName?: string;
     notes?: string;
     numEmployees?: string;
+    occupation?: string;
+    owner?: string;

@@ -46,7 +46,6 @@ export default function InviteToCareer({ candidate }) {
         </span>
       ))}
     </div>)
-  }
 
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Careers' : 'Select Careers'}</div>

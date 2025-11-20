@@ -13,5 +13,6 @@ export {default as Favorites} from './Favorites';
 export {default as LandingPage} from './LandingPage';
 export {default as Login} from './Login';
 export {default as Logout} from './Logout';
+// Temp comment
 export {default as Profile} from './Profile';
 export {default as SignUp} from './SignUp';

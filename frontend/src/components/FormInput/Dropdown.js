@@ -33,7 +33,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
   if (!isOpen) {
     return null
   }
-  
   return (
     <div className={ rootClass }>
       {choices.map((choice, index) => {

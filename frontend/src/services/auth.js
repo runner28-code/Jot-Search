@@ -1,5 +1,4 @@
 import decode from 'jwt-decode';
-import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
 
 class AuthService {
   getProfile() {
@@ -58,6 +57,7 @@ class AuthService {
     this.clearStorage();
     window.location.assign('/landing-page');
   }
+
   clearStorage() {
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');

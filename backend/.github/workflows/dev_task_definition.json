@@ -3,6 +3,7 @@
     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole", 
     "networkMode": "awsvpc", 
     "containerDefinitions": [
+        {
             "name": "intulsa-backend-container-dev", 
             "image": "site-backend:dev", 
             "cpu": 1024, 
@@ -94,3 +95,4 @@
                 },
                 {
                     "name": "FRONTEND_URL", 
+                    "value": "http://localhost:3000"

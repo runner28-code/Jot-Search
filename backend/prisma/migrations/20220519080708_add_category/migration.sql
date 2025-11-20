@@ -13,3 +13,4 @@ CREATE TABLE "Category" (
     CONSTRAINT "Category_pkey" PRIMARY KEY ("id")
 );
 
+-- CreateIndex

@@ -109,6 +109,7 @@ export class UserController {
       return {
         result: false,
         error: `Invalid role specified: ${user.role}`,
+      };
     }
 
     if (user.role === COORDINATOR) {
@@ -139,7 +140,6 @@ export class UserController {
           data = { ...data, externalId: res.changedEntityId };
         }
       } catch (error) {
-        console.error("error syncing to BH");
         console.error(error);
       }
       const { result, error } = await register(data);
@@ -223,3 +223,4 @@ export class UserController {
     return await getStats(authUser.id!);
   }
 
+  @Get("/landing-page-stats")

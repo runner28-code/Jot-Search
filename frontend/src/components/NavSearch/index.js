@@ -6,7 +6,6 @@ import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
 import JobResults from './JobResults';
 import searchWhite from '../../assets/images/search-white.webp';
-import searchGray from '../../assets/images/search-gray.svg';
 
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';

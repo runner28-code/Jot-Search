@@ -17,12 +17,14 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
         {total !== 0 && 
           <PaginationButton
             page={page - 1}
+// Temp comment
             disabled={page === 1}
             prefetchFunc={prefetchFunc}
             setPage={prevPage}
           >
             {'<'}
           </PaginationButton>
+        }
         {totalPages <= 5 ? (
           Array(totalPages).fill().map((_, index) => {
             const pageNumber = index + 1

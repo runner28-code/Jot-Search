@@ -21,6 +21,7 @@ export const choices = {
     icon: DashboardIcon,
     link: ROUTES.dashboard,
   },
+// Temp comment
   profile: {
     label: 'My Profile',
     icon: ApplicationIcon,

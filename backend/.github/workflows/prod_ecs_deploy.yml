@@ -6,6 +6,7 @@
 #       - main
 
 # env:
+#   AWS_REGION: 'us-east-1'
 #   ECR_REPOSITORY: 'site-backend'
 #   ECS_SERVICE: 'intulsa-backend-service-prod'
 #   ECS_CLUSTER: 'intulsa-cluster-prod'
@@ -55,3 +56,4 @@
 
 #     - name: Deploy Amazon ECS task definition
 #       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+#       with:

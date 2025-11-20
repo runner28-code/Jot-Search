@@ -168,7 +168,6 @@ function seedCompanies() {
                     city: "Tulsa",
                     state: "OK",
                     businessSectorList: "Health Care,Virtual Health",
-// Temp comment
                     billingPhone: "946-423-2341",
                     companyURL: "testingco@gmail.com",
                     companyDescription: "Best at testing",

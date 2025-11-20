@@ -719,3 +719,6 @@ model GetroCompany {
   jobs_count                 Int?
   linkedin_url               String?
   locations                  String?
+  logo_url                   String?
+  name                       String?
+  ocp_search_status          String?

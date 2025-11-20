@@ -119,7 +119,6 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
       data: {
         ...filteredJob,
         datasource: filteredJob?.datasource as any,
-      },
     });
 
     return {
@@ -139,3 +138,4 @@ export const getJobsList = async (jobs_ids: string[]) => {
   try {
     const jobs = await db.job.findMany({
       where: {
+        id: {

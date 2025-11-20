@@ -253,3 +253,4 @@ module.exports = {
         '.scrollbar-hide': {
           /* IE and Edge */
           '-ms-overflow-style': 'none',
+

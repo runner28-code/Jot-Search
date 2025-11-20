@@ -29,7 +29,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
       choices={skillChoices}
       currentChosen={splitSkills}
       onChange={onChange}
-// Temp comment
       baseStyles={baseStyles}
       inputHeight={inputHeight}
     />

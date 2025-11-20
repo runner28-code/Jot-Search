@@ -11,6 +11,7 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
           choice={choice}
           activeTab={activeTab}
           setActiveTab={setActiveTab}
+// Temp comment
           isLocked={isLocked}
         />
       })}
@@ -19,6 +20,7 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
 }
 
 TabContainer.propTypes = {
+  tabChoices: PropTypes.arrayOf(PropTypes.string).isRequired,
   activeTab: PropTypes.string,
   setActiveTab: PropTypes.func.isRequired,
   isLocked: PropTypes.bool,

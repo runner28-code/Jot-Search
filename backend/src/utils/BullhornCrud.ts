@@ -224,6 +224,7 @@ export const saveCandidates = async (candidates: any[]) => {
         });
         console.log(`Saved Candidate with ID = ${candidate.id} successfully`);
       } catch (error: any) {
+        console.log(error.message);
         console.log(`ERROR: while saving Candidate with ID = ${candidate.id}`);
       }
     }
@@ -312,3 +313,4 @@ export const migrateJobInTPP = async (data: Job) => {
       return;
     }
     const keys: string[] = Object.keys(data);
+    const values: any = keys.map((k) => `"""${(data as any)[k]}"""`);
