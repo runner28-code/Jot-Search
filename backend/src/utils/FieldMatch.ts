@@ -19,6 +19,7 @@ export const JobFilter: any = {
     status: "status",
     skillList: "skillList",
     hidden: "hidden",
+    employmentType: "employmentType",
     onSite: "onSite",
     yearsRequired: "yearsRequired",
     willRelocate: "willRelocate",
@@ -29,7 +30,6 @@ export const JobFilter: any = {
   },
 };
 
-export type CompanyFilterKey = "bullhorn" | "getro" | "joined";
 
 export const CompanyFilter: TypedDictionary<
   CompanyFilterKey,

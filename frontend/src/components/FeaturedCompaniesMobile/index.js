@@ -14,6 +14,7 @@ export default function FeaturedCompaniesMobile() {
       value: 'active'
     }
   ];
+
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(

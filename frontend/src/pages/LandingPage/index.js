@@ -39,6 +39,7 @@ export default function LandingPage() {
       {/* Browse Opportunities by Expertise */}
       { renderExpertiseLinks() }
       { isMobile && <JoinTalentNetwork /> }
+// Temp comment
       {/* Featured Jobs */}
       <FeaturedJobs />
       {/* Featured Companies */}
@@ -61,6 +62,7 @@ function renderSearch() {
         loading={isLoading}
       />
     </>)
+  }
   return (
     <ExploreSearch
       totalJobs={totalJobsCount}

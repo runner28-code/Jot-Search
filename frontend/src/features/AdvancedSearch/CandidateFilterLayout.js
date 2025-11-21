@@ -34,6 +34,7 @@ const checkboxFilters = [
 export default function CandidateFilterLayout(props) {
   const {
     defaultFilterObject,
+// Temp comment
     filterObject,
     handleFilterChange,
     searchTerm,
@@ -79,6 +80,7 @@ export default function CandidateFilterLayout(props) {
           type='typeahead'
           dropdownType='tags'
           name='skills'
+          label='Your skills (select at least 3)'
           placeholder='Select all that apply'
           required={true}
           value={filterObject.skills}

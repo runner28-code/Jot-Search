@@ -5,6 +5,7 @@ function renderHorizontalRule(isLastItem) {
   if (isLastItem) {
     return null;
   }
+  return <hr className='w-full' />;
 }
 
 export default function ChoiceListItem({ job, handleClick, isLastItem }) {
@@ -32,7 +33,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
         <div className='grow'>
           <ReferralCardContent data={job} />
         </div>
-      </div>
       { renderHorizontalRule(isLastItem) }
     </div>
   )

@@ -23,6 +23,7 @@ CREATE TABLE "Job" (
     "salaryUnit" TEXT,
     "startDate" TIMESTAMP(3),
     "type" TEXT,
+    "isDeleted" TEXT,
     "postedAt" TIMESTAMP(3),
     "hidden" BOOLEAN,
 

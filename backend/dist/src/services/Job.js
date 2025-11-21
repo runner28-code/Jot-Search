@@ -25,6 +25,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getJobsList = exports.updateJob = exports.inferDatasetById = exports.getAppliedJobsByUser = exports.createJob = void 0;
 const Common_1 = require("../types/Common");
+const Job_1 = require("../types/Job");
 const db_1 = __importDefault(require("../utils/db"));
 const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
     try {
@@ -34,6 +35,7 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
         }
         const sanitizedJob = sanitizeJob(job);
         const newJob = yield db_1.default.job.create({
+// Temp comment
             data: Object.assign(Object.assign({}, sanitizedJob), { datasource: sanitizedJob === null || sanitizedJob === void 0 ? void 0 : sanitizedJob.datasource }),
         });
         return {

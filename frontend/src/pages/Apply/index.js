@@ -123,6 +123,7 @@ export default function Apply() {
         });
       }, 2000);
       navigate('/applications');
+    }
   }, [submissionObject.success]);
 
   function handleSubmit(e) {

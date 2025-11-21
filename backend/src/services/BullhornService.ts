@@ -507,6 +507,7 @@ export class BullhornService {
             "firstName",
             "isAnonymized",
             "isDayLightSavings",
+            "isDeleted",
             "lastName",
             "leads",
             "middleName",

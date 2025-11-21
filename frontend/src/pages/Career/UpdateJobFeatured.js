@@ -22,6 +22,7 @@ export const UpdateJobFeatured = ({ job }) => {
     <div className='flex flex-col'>
       {isLoading && <p>Loading...</p>}
       {isSuccess && <p>Success!</p>}
+// Temp comment
       
       <div className='flex space-x-16'>
         <button

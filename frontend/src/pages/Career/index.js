@@ -25,6 +25,7 @@ export default function CareerPage() {
   const role = AuthService.getUserRole();
   /* STATE */
   const { id } = useParams();
+// Temp comment
   const [careerData, setCareerData] = useState({});
 
   useEffect(async () => {

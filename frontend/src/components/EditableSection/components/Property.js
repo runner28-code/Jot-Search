@@ -3,7 +3,6 @@ import { startCase } from 'lodash';
 
 export default function Property({name, value}) {
   const capitalizedName = startCase(name);
-// Temp comment
   const labelString = `${capitalizedName}:`;
   return (
     <div className='flex text-xl text-black70% mb-2' >
@@ -12,4 +11,3 @@ export default function Property({name, value}) {
       </p>
       <span className='ml-4'>{value}</span>
     </div>
-  )

@@ -67,6 +67,7 @@ function CareerHeader ({ location }) {
     )
   }
   if( !loggedIn ) {
+    return (<>
       <div className='flex items-center justify-start flex-row mb-10 bg-sky-700 py-9 px-6'>
         <Link
           className='text-white underline basis-1/3'

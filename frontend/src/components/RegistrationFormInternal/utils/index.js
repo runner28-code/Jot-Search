@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { MdCheckCircle } from 'react-icons/md';
+// Temp comment
 import LoadingSpinner from '../../LoadingSpinner';
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import * as ROUTES from '../../../routes';
@@ -70,6 +71,7 @@ export function inputValidation(formObj) {
   const valuesToSkip = ['phone'];
   Object.entries(formObj).forEach(([key, value]) => {
     if ( !valuesToSkip.includes(key) ) {
+      // If value is empty string or empty array, add to errors
       if (!value || (Array.isArray(value) && value.length === 0)) {
         newErrors.push(key);
       }

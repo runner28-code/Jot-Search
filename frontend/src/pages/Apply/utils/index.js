@@ -25,7 +25,6 @@ export const defaultCareerState = {
   loading: true,
 }
 
-// Temp comment
 export const defaultState = {
   firstname: '',
   lastname: '',
@@ -81,7 +80,6 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
         checked={optionValue === true || optionValue === attribute}
         onChange={handleChange}
         disabled={disabled}
-      />
       <p className='text-md ml-2'>{attribute}</p>
     </label>
   )

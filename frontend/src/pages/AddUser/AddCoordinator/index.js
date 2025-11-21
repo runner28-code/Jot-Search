@@ -9,7 +9,6 @@ export default function AddCoordinator() {
     loading: false,
     success: false,
     errors: {},
-// Temp comment
   });
 
   // Submit form data when submissionObject.loading is set to true
@@ -62,6 +61,7 @@ export default function AddCoordinator() {
 
     // Add errors to state if there are any
     if (Object.keys(newErrors).length > 0) {
+// Temp comment
       setSubmissionObject({
         ...submissionObject,
         errors: newErrors,

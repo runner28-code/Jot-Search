@@ -73,6 +73,7 @@ export default function MobileLayout(props) {
             {/* Employement Type */}
             <div className='w-1/2 flex items-center'>
               <img
+// Temp comment
                 src={clockIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.employmentType}</p>
@@ -123,7 +124,6 @@ export default function MobileLayout(props) {
           onClick={() => navigate(-1)}
         >
           Back
-// Temp comment
         </button>
       </div>
     </section>

@@ -42,6 +42,7 @@ export default function FeaturedJobs() {
       <div className='flex mt-12 flex-wrap'>
         {
           isLoading ?
+// Temp comment
             <LoadingSpinner />
             :
             jobs.map((career, index) => {

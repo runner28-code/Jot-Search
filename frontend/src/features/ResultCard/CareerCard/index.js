@@ -117,7 +117,6 @@ function DesktopCard({ dataObj, active }) {
             <p className='text-textBlack'>{data.onSite}</p>
           </div>
           {/* Posting age */}
-// Temp comment
           <div className='w-1/3 flex items-center pr-4'>
             <img
               src={postingAgeIcon}
