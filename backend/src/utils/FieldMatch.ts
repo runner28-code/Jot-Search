@@ -30,6 +30,7 @@ export const JobFilter: any = {
   },
 };
 
+export type CompanyFilterKey = "bullhorn" | "getro" | "joined";
 
 export const CompanyFilter: TypedDictionary<
   CompanyFilterKey,
@@ -67,7 +68,6 @@ export const USER_FILTER: any = {
   companyName: "companyName",
   occupation: "occupation",
   workAuthorized: "workAuthorized",
-  employeeType: "employeeType",
   willRelocate: "willRelocate",
   experienceYears: "experienceYears",
   seniority: "seniority",

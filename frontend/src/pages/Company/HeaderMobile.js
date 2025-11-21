@@ -12,7 +12,6 @@ import PlacePin from '../../assets/icons/placepin.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding } from 'react-icons/bs';
 
-function HeaderContent({ companyData }) {
   const headerIconStyles = 'h-6 w-6 mr-3 fill-midGrey';
   const headerRowTextStyles = 'text-xs text-textBlack ';
   const headerGroupStyles = 'flex items-center flex-row basis-1/2 my-4';
@@ -65,6 +64,7 @@ HeaderContent.propTypes = {
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,
+    businessSectorList: PropTypes.string,
     linkedin_url: PropTypes.string,
     companyURL: PropTypes.string,
     industryList: PropTypes.array,

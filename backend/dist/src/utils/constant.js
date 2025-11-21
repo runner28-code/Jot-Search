@@ -402,7 +402,6 @@ const job_filter_exclude_keys = [
     "therapist",
     "tier i technician",
     "tier ii technician",
-    "tier iii technician",
     "title agent",
     "tooling",
     "traffic",

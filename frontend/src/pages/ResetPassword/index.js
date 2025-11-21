@@ -25,7 +25,6 @@ export default function ResetPassword() {
 
 
 
-// Temp comment
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -63,7 +62,6 @@ export default function ResetPassword() {
         </div>
       )
     }
-  }
 
   const renderError = () => {
     if ( error ) {

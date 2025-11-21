@@ -51,7 +51,6 @@ CREATE TABLE "Company" (
     "numEmployees" INTEGER,
     "numOffices" INTEGER,
     "ownership" TEXT,
-    "phone" TEXT,
     "revuenue" TEXT,
     "status" TEXT,
     "taxRate" DOUBLE PRECISION,

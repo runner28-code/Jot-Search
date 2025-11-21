@@ -26,7 +26,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           <div className='h-48 w-48 p-4 mr-18 flex justify-center items-center border border-solid border-smokeGray'>
             { renderCardImage(data) }
           </div>
-// Temp comment
 
           {/* Title */}
           <div className='flex'>
@@ -78,7 +77,6 @@ CompactCompanyCard.propTypes = {
 function renderCardImage(data) {
   if ( !data.company_logo ) {
     return <CompanyIcon className='h-28 w-full fill-royalBlue' />
-  } else {
     return <img
       className=''
       src={data.company_logo}

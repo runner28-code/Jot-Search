@@ -312,6 +312,7 @@ export const mockCoordinatorStats = {
       count: 423,
       prevCount: 237
     }
+  },
   'Alert Subscriptions': {
     'Today': {
       count: 42,

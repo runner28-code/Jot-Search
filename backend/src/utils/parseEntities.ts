@@ -46,7 +46,6 @@ export const parseBullhornCandidateToUser = (data: BhCandidate) => {
     disability: data.disability,
   };
   return user;
-};
 
 export const parseBullhornCompanyToUser = (data: BhCandidate) => {
   if (!data.email) return null;

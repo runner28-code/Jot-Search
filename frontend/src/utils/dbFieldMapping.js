@@ -65,7 +65,6 @@ export const referralChoices = [
   'Media and Advertising',
   'Make my Move',
   'Community Partner',
-// Temp comment
   'Other'
 ]
 

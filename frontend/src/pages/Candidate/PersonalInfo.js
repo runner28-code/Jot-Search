@@ -12,6 +12,7 @@ import {
   veteranStatusChoices
 } from '../Apply/utils';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
+import AuthService from '../../services/auth';
 
 const PREFERENCE_ITEMS = {
   workAuthorized: 'Are you legally authorized to work in the US on a fulltime basis for any employer?',
@@ -351,7 +352,6 @@ function renderCommunity (referralChoice, commObj, handleCommunityChoice, commun
 
 function renderEditIcon(candidateData, setEditMode) {
   const isProfileOwner = candidateData.id === AuthService.getProfile().user_id;
-  const isCoordinator = AuthService.getProfile().role === 'coordinator';
   // Only show component if user is profile owner or coordinator
   if ( !isProfileOwner && !isCoordinator ) {
     return null;

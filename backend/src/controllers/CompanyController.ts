@@ -28,6 +28,7 @@ import {
 } from "../types/Common";
 import { User } from "../types/User";
 import { getDataSource, getFilterConditions } from "../utils";
+import db from "../utils/db";
 
 import {
   CompanyFilter,

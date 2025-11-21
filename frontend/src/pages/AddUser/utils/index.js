@@ -1,3 +1,4 @@
+export function validateInput(name, value, errors, password) {
   const newErrors = { ...errors };
   
   // Email validation
@@ -15,7 +16,6 @@
     if ( value !== password ) {
       newErrors[name] = 'Passwords do not match';
     } else {
-      newErrors[name] = '';
     }
   } 
   // Generic validation

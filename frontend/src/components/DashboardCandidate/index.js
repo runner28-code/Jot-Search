@@ -9,6 +9,7 @@ import * as ROUTES from '../../routes';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 
+
 export default function DashboardCandidate({togglePassState, toggle}) {
   const { width } = useWindowDimensions();
 
@@ -46,6 +47,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
         <img src={filterIcon} />
         Search and Filter
       </div>
+// Temp comment
       <div className='basis-1/6'>
         <button
           className='flex items-center justify-end text-[3rem]'

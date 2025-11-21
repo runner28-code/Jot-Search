@@ -9,6 +9,7 @@ export default function DetailsHeader({ type, source }) {
   let Icon = undefined;
   switch(type) {
     case 'candidate':
+// Temp comment
       Icon = CandidatesIcon;
       break;
     case 'company':
@@ -16,6 +17,7 @@ export default function DetailsHeader({ type, source }) {
       break;
     case 'career':
     default:
+      Icon = CareerIcon;
       break;
   }
   const titleCasedType = type.charAt(0).toUpperCase() + type.slice(1);

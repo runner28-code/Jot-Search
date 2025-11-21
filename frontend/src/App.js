@@ -51,7 +51,6 @@ function App() {
             <Route
               path={`${ROUTES.companies}/:id`}
               element={<Company />} />
-            <Route
               path={ROUTES.accountRecovery}
               element={<AccountRecovery />} />
             <Route

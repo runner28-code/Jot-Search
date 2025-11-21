@@ -25,7 +25,6 @@ export default function CareerPage() {
   const role = AuthService.getUserRole();
   /* STATE */
   const { id } = useParams();
-// Temp comment
   const [careerData, setCareerData] = useState({});
 
   useEffect(async () => {
@@ -119,6 +118,7 @@ function Notification({title, content, text, email, company, id, add}) {
         <img
           src={Flag}
           className='w-12 h-12'
+// Temp comment
         />
         <h3 className='font-spaceGrotesk text-royalBlue ml-4 text-lg'>{title}</h3>
       </div>

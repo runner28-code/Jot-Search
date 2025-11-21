@@ -87,6 +87,7 @@ export async function getSavedCandidates() {
 }
 
 export async function saveCandidate(userId, candidateId) {
+  const { data } = await API.put(ROUTES.APItoggleSaveCandidate, {
     'company': userId,
     'candidate': candidateId,
   });

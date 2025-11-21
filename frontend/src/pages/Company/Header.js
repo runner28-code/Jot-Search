@@ -233,7 +233,6 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
       </a>
     </>)
   }
-// Temp comment
 
   let http = 'https://';
   return (<>

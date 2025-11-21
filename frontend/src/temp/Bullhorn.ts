@@ -231,7 +231,6 @@ export type Candidate = {
     nameSuffix?: string;
     nickName?: string;
     numCategories?: string;
-    numOwners?: string;
     occupation?: string; // !
     onboardingDocumentReceivedCount?: string;
     onboardingDocumentSentCount?: string;
@@ -296,3 +295,5 @@ export type Lead = {
     dateLastComment?: string;
     dateLastModified?: string;
     dateLastVisited?: string;
+    description?: string;
+    division?: string;

@@ -1,5 +1,4 @@
 import { useQuery } from '@tanstack/react-query';
-// Temp comment
 import { queryClient } from '../..';
 import { getCandidatesFull } from '../../services/API';
 
@@ -15,6 +14,7 @@ export const prefetchAllSelectCandidates = async() => {
   }
   await queryClient.prefetchQuery(getCandidatesKey(values), () => getCandidatesFull(values.filtersArr, values.count, undefined, values.fields));
 }
+// Temp comment
 
 export const useGetCandidates = ({ count, page, fields, filtersArr, enabled = true }) => {
   formatFilters(filtersArr)

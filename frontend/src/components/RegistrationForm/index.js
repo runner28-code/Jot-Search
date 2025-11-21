@@ -53,7 +53,6 @@ export default function RegistrationForm(loggedIn) {
   const [errorBlock, setErrorBlock] = useState('');
   const [referralChoice, setReferralChoice] = useState(false);
   const [commObj, setCommObj] = useState(defaultCommunity);
-// Temp comment
   const [relocate, setRelocate] = useState(false);
   const [submissionObject, setSubmissionObject] = useState({
     loading: false,
@@ -145,7 +144,6 @@ export default function RegistrationForm(loggedIn) {
       email: email.value,
       willRelocate: relocate,
       linkedin: linkedin.value,
-      password: password.value,
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect

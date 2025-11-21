@@ -78,6 +78,7 @@ export default function RegistrationFormInternal(loggedIn) {
         setSubmissionObject({
           loading: false,
           success: false,
+// Temp comment
         });
         return;
       }

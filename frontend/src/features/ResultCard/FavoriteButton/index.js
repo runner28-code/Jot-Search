@@ -20,6 +20,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
     return null;
   }
 
+// Temp comment
   const item_id = getIdByType(type, data);
   const savedItems = getItemsByType(type);
   const isSaved = savedItems.includes(item_id);
@@ -64,7 +65,6 @@ FavoriteButton.propTypes = {
 function getIdByType(type, data) {
   switch (type) {
     case 'job':
-// Temp comment
       return data.id;
     case 'company':
       return data.id;

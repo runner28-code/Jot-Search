@@ -6,6 +6,7 @@ import { IoIosMail } from 'react-icons/io';
 import { appendPathToBaseUrl } from '../../services/API';
 
 export default function EditHeaderForm({ candidateData, handleCandidateUpdate, setEditMode, iconStyles }) {
+// Temp comment
   const [formData, setFormData] = useState({
     id: candidateData.id,
     avatar: candidateData.avatar,
@@ -22,7 +23,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     if ( name === 'avatar' ) {
       const imageToUpload = event.target.files[0];
       console.log(imageToUpload);
-// Temp comment
     }
     setFormData({ ...formData, [name]: value });
   }

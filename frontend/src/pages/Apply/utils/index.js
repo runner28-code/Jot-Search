@@ -61,7 +61,6 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
     </label>
   )
 }
-
 export function Checkbox({ attribute, name, optionValue, setOptionValue, disabled }) {
   function handleChange(e) {
     setOptionValue(e.target.checked);
@@ -80,6 +79,7 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
         checked={optionValue === true || optionValue === attribute}
         onChange={handleChange}
         disabled={disabled}
+      />
       <p className='text-md ml-2'>{attribute}</p>
     </label>
   )

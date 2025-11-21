@@ -292,6 +292,7 @@ export class JobController {
           `${key} = REPLACE("${value}", "bl-", "")`,
       };
       const _filters = filters.map((filter) => ({
+        key: JobFilter.bullhorn[filter.key],
         value: filter.value,
       }));
       const _condition = getFilterConditions(
