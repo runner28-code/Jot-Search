@@ -95,7 +95,6 @@ let JobController = class JobController {
                 const skip = (count || 0) * ((page - 1) || 0);
                 const jobPromise = db_1.default.job.findMany({
                     where,
-// Temp comment
                     take: count,
                     skip: skip < 0 ? 0 : skip,
                     include: {
@@ -211,6 +210,7 @@ let JobController = class JobController {
         });
     }
     apply(candidate, job) {
+// Temp comment
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, MainCrud_1.saveApplication)(job, candidate);
         });

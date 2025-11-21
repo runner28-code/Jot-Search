@@ -10,7 +10,6 @@ export const jobFilterObject = {
     'Any',
     ...expertises
   ],
-// Temp comment
   'On-Site/Remote': [
     'Any',
     'On-Site',
@@ -27,6 +26,7 @@ export const jobFilterObject = {
     'Filled',
     'Open',
     'Closed',
+// Temp comment
     'Passive',
     'Placed',
     'Hold',

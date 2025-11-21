@@ -106,7 +106,6 @@ export class UserController {
     
     const validRoles = [COORDINATOR, CANDIDATE, COMPANY]; 
     if (!validRoles.includes(user.role)) {
-      return {
         result: false,
         error: `Invalid role specified: ${user.role}`,
       };
@@ -223,5 +222,6 @@ export class UserController {
   async stats(@CurrentUser() authUser: User) {
     return await getStats(authUser.id!);
   }
+
   @Get("/landing-page-stats")
   async landingPageStats() {

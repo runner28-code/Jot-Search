@@ -36,7 +36,6 @@ const renderError = (error) => {
 export default function Apply() {
   const params = useParams();
   const jobId = params?.id
-// Temp comment
   const navigate = useNavigate();
   const isLoggedIn = AuthService.loggedIn();
   // State
@@ -121,7 +120,6 @@ export default function Apply() {
           loading: false,
           success: false,
           errors: {},
-        });
       }, 2000);
       navigate('/applications');
     }

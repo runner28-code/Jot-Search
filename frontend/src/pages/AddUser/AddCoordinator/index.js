@@ -70,6 +70,7 @@ export default function AddCoordinator() {
     setFormObject({ ...formObject, [name]: value });
   }
 
+// Temp comment
   function handleSubmit(e) {
     e.preventDefault();
 

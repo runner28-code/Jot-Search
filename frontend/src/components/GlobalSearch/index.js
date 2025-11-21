@@ -98,6 +98,7 @@ export default function GlobalSearch({ placeholder }) {
     </div>
   )
 }
+// Temp comment
 
 GlobalSearch.propTypes = {
   placeholder: PropTypes.string

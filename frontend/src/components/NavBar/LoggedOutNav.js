@@ -15,6 +15,7 @@ export default function NavBar() {
 
   if ( width < 1280 ) {
     return <MobileNavBarLayout />
+  } else {
     return <DesktopNavBarLayout />
   }
 }
@@ -39,7 +40,6 @@ function MobileNavBarLayout() {
       </div>
       {/* Global Search */}
       <div className='flex justify-center'>
-        { renderGlobalSearch() }
       </div>
     </nav>
   )

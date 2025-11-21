@@ -15,6 +15,7 @@ var __rest = (this && this.__rest) || function (s, e) {
     if (s != null && typeof Object.getOwnPropertySymbols === "function")
         for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
             if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+// Temp comment
                 t[p[i]] = s[p[i]];
         }
     return t;
@@ -35,7 +36,6 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
         }
         const sanitizedJob = sanitizeJob(job);
         const newJob = yield db_1.default.job.create({
-// Temp comment
             data: Object.assign(Object.assign({}, sanitizedJob), { datasource: sanitizedJob === null || sanitizedJob === void 0 ? void 0 : sanitizedJob.datasource }),
         });
         return {

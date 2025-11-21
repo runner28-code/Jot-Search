@@ -6,6 +6,7 @@ import { getInvitationsToApply } from '../../services/API';
 
 
 export default function InvitationsToApply () {
+// Temp comment
   const profile = AuthService.getProfile();
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
@@ -16,6 +17,7 @@ export default function InvitationsToApply () {
   useEffect( async () => {
     const appliedJobs = await getInvitationsToApply(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
+      return {
         ...job,
         agoDate: job.appliedDate
       }});

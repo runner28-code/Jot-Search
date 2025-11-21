@@ -55,6 +55,7 @@ export default function PendingApplications () {
                 />
               </>)
             })
+// Temp comment
         }
         <div className='flex items-center text-center flex-col justify-center px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white rounded-3xl outline-dashed outline-neutral-300 bg-gray-200'>
           <div className='flex gap-[10px] items-center px-m py-xxs bg-searchGreen rounded-full'>
@@ -68,7 +69,6 @@ export default function PendingApplications () {
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
-// Temp comment
           </Link>
         </div>
       </div>

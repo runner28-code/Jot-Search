@@ -58,7 +58,6 @@ export default function InviteCandidates({ company }) {
       {successfullySentCandidates && <div className="text-center">Invitations Sent!</div>}
 
       <SelectedValues />
-
       <MultiSelect
         isLoading={isLoading}
         options={candidateOptions}
@@ -103,7 +102,6 @@ function itemRenderer({ option, onClick, disabled}) {
       <div className="flex items-center space-x-4 pb-2 border-b-2 ">
         { avatarUrl ?
           <img
-// Temp comment
             className='w-20 h-20'
             src={avatarUrl}
             alt='Candidate Avatar' />      

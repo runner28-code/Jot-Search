@@ -9,6 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 var __importDefault = (this && this.__importDefault) || function (mod) {
+// Temp comment
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -182,6 +183,7 @@ function seedCompanies() {
                     getro_description: "a fintech company",
                     description: "testing a new description",
                     city: "Tulsa",
+                    state: "OK",
                     billingPhone: "876-567-9876",
                     companyURL: "pepsoda@gmail.com",
                     companyDescription: "Best at test",

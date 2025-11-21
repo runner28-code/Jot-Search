@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearchLanding';
@@ -16,7 +15,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   function handleSearchClick() {
     const params = {};
     if (filterState.title) {
-// Temp comment
       params.title = filterState.title;
     }
     if (filterState['On-Site/Remote'] !== 'Any Work Setting') {

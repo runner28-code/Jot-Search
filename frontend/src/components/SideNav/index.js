@@ -31,7 +31,6 @@ export default function SideNav({ userType }) {
   )
 }
 
-SideNav.propTypes = {
   userType: PropTypes.string.isRequired
 }
 

@@ -12,6 +12,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
     />
   }
   if ( submissionObject.success ) {
+    return <MdCheckCircle className='w-30 h-30 fill-emerald-500' />
   }
   return (
     <button
@@ -61,6 +62,7 @@ export function renderHeader(addType) {
 }
 
 export function inputValidation(formObj) {
+// Temp comment
   // Remove non-required properties
 
   let newErrors = [];

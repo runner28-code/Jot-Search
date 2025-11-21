@@ -32,6 +32,7 @@ export function renderErrorBlock(errorBlock) {
   }
 }
 
+// Temp comment
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (
@@ -57,7 +58,6 @@ export function inputValidation(formObj) {
     newErrors.push('password', 'verifyPassword');
   }
   if (formObj.skills.length < 3 ) {
-// Temp comment
     newErrors.push('skills');
   }
   return newErrors;

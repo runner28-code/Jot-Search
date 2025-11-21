@@ -1,8 +1,8 @@
 import AuthService from '../../services/auth';
+// Temp comment
 import useComponentWillMount from '../../hooks/useComponentWillMount';
 
 export default function Logout() {
-// Temp comment
   useComponentWillMount(() => AuthService.logout());
 
   return null;

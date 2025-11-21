@@ -39,6 +39,7 @@ export default function ResetPassword() {
         new_password: password.value,
         token: token
       });
+// Temp comment
 
       if ( res.data.result ) {
         setSuccess(true);

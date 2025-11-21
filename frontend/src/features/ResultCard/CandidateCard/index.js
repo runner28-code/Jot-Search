@@ -104,6 +104,7 @@ CandidateCard.propTypes = {
     companyName: PropTypes.string,
     experienceYears: PropTypes.string,
     experience: PropTypes.number,
+// Temp comment
     expertise: PropTypes.string,
     firstName: PropTypes.string,
     lastName: PropTypes.string,
@@ -162,7 +163,6 @@ function renderActiveStatus(candidate) {
   }
 
   return null;
-// Temp comment
 }
 
 function NewLeadLabel({ status }) {

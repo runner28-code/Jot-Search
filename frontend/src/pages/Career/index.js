@@ -70,6 +70,7 @@ export default function CareerPage() {
       { renderNotification(activeData, careerData) }
       {
         isMobile ?
+          <MobileLayout data={data} /> :
           <DesktopLayout data={data} />
       }
       {
@@ -97,6 +98,7 @@ function renderNotification(activeData, careerData) {
       />
       <Notification
         title='Did this platform help you fill the role below?'
+// Temp comment
         content='Please let us know by sending a message'
         text='Notify Talent inTulsa by Email'
         email='talentnetwork@intulsa.com'

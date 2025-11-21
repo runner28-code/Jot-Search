@@ -57,10 +57,10 @@ export default function FeaturedJobs() {
                     <div className={width >= 990 ? cardContentStyles : cardContentStylesMobile}>
                       <h5 className={ width >= 990 ? cardContentTitle : cardContentTitleMobile }>{career.title}</h5>
                       <p className={ width >= 990 ? cardContentSubtitle : cardContentSubtitleMobile }>{categoryString}</p>
-                    </div>
                   </div>
                 </Link>
               )
+            })
         }
       </div>
       <div className={ width >= 990 ? viewAllStyles : viewAllStylesMobile }>

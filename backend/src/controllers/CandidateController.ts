@@ -342,7 +342,6 @@ export class CandidateController {
         result: false,
         message: "You are not a company",
       };
-    }
   }
 
   @Authorized()

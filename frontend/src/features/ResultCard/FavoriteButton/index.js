@@ -44,7 +44,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   return (
     <img
       src={ isFavorite ? favoriteIconFilled : favoriteIconOutline }
-// Temp comment
       className={addClass ? styles + addClass : styles}
       onClick={handleFavoriteClick}
     />
@@ -59,7 +58,6 @@ FavoriteButton.propTypes = {
     candidate: PropTypes.string,
     status: PropTypes.string,
   }).isRequired,
-  isFavoriteOverride: PropTypes.bool,
 }
 
 function getIdByType(type, data) {

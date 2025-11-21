@@ -27,7 +27,7 @@ const fs_1 = __importDefault(require("fs"));
 dotenv_1.default.config();
 const ALLOWED_UPLOAD_FOLDERS = ["resumes", "avatars"];
 const multerStorage = multer_1.default.diskStorage({
-        const folder = req.body.type || "resumes";
+    destination: (req, file, cb) => {
         const path = __dirname + `/../uploads/${folder}`;
         console.log("upload path: ", path);
         fs_1.default.mkdirSync(path, { recursive: true });

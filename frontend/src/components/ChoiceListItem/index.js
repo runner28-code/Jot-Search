@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import ReferralCardContent from '../../features/ResultCard/ReferralContent';
 
 function renderHorizontalRule(isLastItem) {
+  if (isLastItem) {
     return null;
   }
   return <hr className='w-full' />;
@@ -21,6 +22,7 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
     <div 
       key={itemKey}
       className={containerStyles}
+// Temp comment
       onClick={handleItemClick}
     >
       <div className='flex items-center'>

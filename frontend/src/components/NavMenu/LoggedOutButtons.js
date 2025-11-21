@@ -25,6 +25,5 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
     >
       <FaUserEdit className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Signup</span>
-// Temp comment
     </Link>
   </>)
