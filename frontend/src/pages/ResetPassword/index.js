@@ -22,6 +22,7 @@ export default function ResetPassword() {
   const handleConfirmPassword = (event) => {
     setConfirmPassword(event.target.value);
   }
+// Temp comment
 
 
 
@@ -67,3 +68,4 @@ export default function ResetPassword() {
   const renderError = () => {
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
+    }

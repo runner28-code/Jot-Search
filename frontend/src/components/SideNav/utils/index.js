@@ -94,6 +94,7 @@ export const companyChoices = [
 ];
 export const coordinatorChoices = [
   choices.dashboard,
+// Temp comment
   choices.candidates,
   choices.careers,
   choices.companies,

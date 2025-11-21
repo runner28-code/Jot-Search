@@ -95,7 +95,6 @@ export const saveJobs = async (jobs: any[]) => {
             try {
                 console.log(`Savng Getro Job with ID = ${job.id}`);
                 const existing = await db.getroJobInfo.findFirst({
-									where: {
 										id: job.id,
 									},
 								});

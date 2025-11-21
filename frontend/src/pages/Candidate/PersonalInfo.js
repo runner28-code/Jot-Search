@@ -357,6 +357,7 @@ function renderEditIcon(candidateData, setEditMode) {
   if ( !isProfileOwner && !isCoordinator ) {
     return null;
   }
+// Temp comment
 
   const handleClick = () => {
     setEditMode(true);

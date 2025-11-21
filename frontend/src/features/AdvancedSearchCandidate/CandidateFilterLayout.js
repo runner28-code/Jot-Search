@@ -60,6 +60,7 @@ export default function CandidateFilterLayout(props) {
 
   return (
     <div className='flex flex-col gap-xxl-4'>
+// Temp comment
       <div className='flex flex-wrap gap-xxl-4'>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
       </div>

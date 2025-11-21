@@ -35,7 +35,6 @@ export default function TypeaheadDropdown(props) {
 
   /* Close dropdown on any outside clicks */
   useEffect(() => {
-    listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
     if (!dropdownOpen) setInputValue('');
   }, [dropdownOpen]);
   
@@ -142,6 +141,7 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
 
 function renderTagsOrListItems(dropdownType, choices, handleClick) {
   if ( dropdownType === 'tags' ) {
+    return choices.map(choice => 
       <ChoiceTag 
         label={choice} 
         isActive={false} 

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Navigate } from 'react-router-dom';
 import Dropdown from '../../components/UniversalDropdown';
 import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
@@ -14,5 +15,6 @@ export default function AddUser() {
   }
 
   const [formType, setFormType] = useState('Candidate');
+// Temp comment
   function handleDropdownChange(e) {
     setFormType(e.target.value);

@@ -3,7 +3,7 @@ import { consoleLog } from "../utils";
 const testMode = process.argv[2] === "test";
 
 (async () => {
-        consoleLog('/// CRON_JOB_STARTED: BULLHORN_GET_JOBS');
+    try {
         await (await BullhornService.getClient()).getJobs(testMode, 50);
     } catch (error) {
         consoleLog(error);

@@ -18,7 +18,6 @@ export default function ResetButton({ candidateData, setType }) {
     } else {
       setType(res.data.error, false);
     }
-// Temp comment
   };
   if( width <= 990 ) {
     return (

@@ -300,3 +300,5 @@ export type Lead = {
     division?: string;
     email?: string;
     email2?: string;
+    email3?: string;
+    fax?: string;

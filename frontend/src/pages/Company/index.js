@@ -166,7 +166,6 @@ function renderSectorList(companyData, width , stylesObject) {
 
   const business = companyData.businessSectorList; 
   if( business == '' ) {
-// Temp comment
     return;
   }
   if( business == Array ) {

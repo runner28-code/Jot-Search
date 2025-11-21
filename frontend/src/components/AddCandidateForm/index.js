@@ -50,7 +50,6 @@ export default function RegistrationForm() {
     if ( submissionObject.loading ) {
       // Validation
       const newErrors = inputValidation(formObj);
-      // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setSubmissionObject({
@@ -117,6 +116,7 @@ export default function RegistrationForm() {
       password: password.value,
       verifyPassword: verifyPassword.value,
     });
+    setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
       success: false,
     });

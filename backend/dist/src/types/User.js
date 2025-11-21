@@ -24,7 +24,6 @@ exports.IUSER = {
     workspace: "",
     referredBy: "",
     roles: "",
-// Temp comment
     description: "",
     phone: "",
     status: "",

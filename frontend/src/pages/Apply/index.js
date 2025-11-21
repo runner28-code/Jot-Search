@@ -36,7 +36,6 @@ const renderError = (error) => {
 export default function Apply() {
   const params = useParams();
   const jobId = params?.id
-  const navigate = useNavigate();
   const isLoggedIn = AuthService.loggedIn();
   // State
   const [career, setCareer] = useState(defaultCareerState);
@@ -90,7 +89,6 @@ export default function Apply() {
 
       setCareer({ ...careerData, loading: false });
       setOriginalObject(stateObject);
-// Temp comment
       setApplicationObject({ ...stateObject, loading: false });
     } catch(e) {
       console.log('error', e);

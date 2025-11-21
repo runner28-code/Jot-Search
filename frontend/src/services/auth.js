@@ -56,6 +56,7 @@ class AuthService {
 
   logout() {
     this.clearStorage();
+    window.location.assign('/landing-page');
   }
 
   clearStorage() {
@@ -103,7 +104,6 @@ class AuthService {
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
   }
 
-  getSavedJobIDs() {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }
 

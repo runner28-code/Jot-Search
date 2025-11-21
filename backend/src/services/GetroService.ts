@@ -179,7 +179,6 @@ export class GetroService {
             } catch (error) {
                 repeatErr++;
             }
-        }
     }
 
     async getMemberDetail(id: string): Promise<any> {

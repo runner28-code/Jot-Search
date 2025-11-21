@@ -4,11 +4,11 @@ import AdvancedSearch from '../../../features/AdvancedSearch';
 import CareerFavorite from '../../../components/CareerFavorite';
 import CompanyFavorite from '../../../components/CompanyFavorite';
 import PendingApplications from '../../../components/PendingApplications';
+// Temp comment
 import InvitationsToApply from '../../../components/InvitationsToApply';
 
 export default function CandidateDashboard() {
   const headerStyles = 'font-spaceGrotesk font-bold text-h1 text-royalBlue ';
-// Temp comment
   return (
     <>
       <div className='flex items-center justify-start mb-12 pt-8 px-4'>

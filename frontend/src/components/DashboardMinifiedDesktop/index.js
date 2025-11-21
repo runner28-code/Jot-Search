@@ -53,6 +53,7 @@ function CareerHeader ({ location }) {
     )
   }
   if( userRole === 'company' ) {
+    return (
       <div className='flex flex-col items-start py-14 px-8 '>
         <span className='flex flex-row text-lg items-center text-dply '>
           <CareerIcon className='mr-6 fill-royalBlue ' />
@@ -67,6 +68,7 @@ function CareerHeader ({ location }) {
   }
   if( !loggedIn ) {
     return (<>
+// Temp comment
       <div className='flex items-center justify-start flex-row mb-10 bg-sky-700 py-9 px-6'>
         <Link
           className='text-white underline basis-1/3'

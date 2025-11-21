@@ -30,7 +30,6 @@ export default function CareerFavorite () {
                 <CareerCard
                   key={career.id}
                   index={index}
-// Temp comment
                   data={career}
                   agoDate={career.createdAt}
                 />
