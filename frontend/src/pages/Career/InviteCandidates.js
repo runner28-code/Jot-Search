@@ -13,6 +13,7 @@ export default function InviteCandidates({ job }) {
     filtersArr: job.skillList?.map(skill => ({
       key: 'primarySkills',
       value: skill
+    })),
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });

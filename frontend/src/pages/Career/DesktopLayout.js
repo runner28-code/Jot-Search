@@ -178,6 +178,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
         <ApplyButton
           datasource={careerData.datasource}
           careerId={careerData.id}
+          applicationUrl={careerData.application_path || careerData.url}
         />
       )}
     </section>

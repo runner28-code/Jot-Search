@@ -231,6 +231,7 @@ export type Candidate = {
     nameSuffix?: string;
     nickName?: string;
     numCategories?: string;
+    numOwners?: string;
     occupation?: string; // !
     onboardingDocumentReceivedCount?: string;
     onboardingDocumentSentCount?: string;

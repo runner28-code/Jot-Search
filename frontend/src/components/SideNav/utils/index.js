@@ -23,6 +23,7 @@ export const choices = {
   },
   profile: {
     label: 'My Profile',
+// Temp comment
     icon: ApplicationIcon,
     link: ROUTES.profile,
   },
@@ -115,6 +116,7 @@ export function findSelectedFromPath() {
       return 'Applications';
     case 'saved-careers':
       return 'Saved Careers';
+    case 'saved-companies':
       return 'Saved Companies';
     case 'saved-candidates':
       return 'Saved Candidates';

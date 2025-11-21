@@ -43,7 +43,6 @@ function LinkSwap ({ location, loggedIn }) {
         to={ROUTES.careers}>
         <span className={loggedIn ? '' : 'underline '}>Back</span>
       </Link>
-    )
   }
   if(location === 'companies' ) {
     return (

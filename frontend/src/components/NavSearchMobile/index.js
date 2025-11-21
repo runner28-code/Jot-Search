@@ -9,7 +9,6 @@ import { VscClose as CloseIcon } from 'react-icons/vsc';
 import searchGray from '../../assets/images/search-gray.svg';
 import searchWhite from '../../assets/images/search-white.webp';
 
-import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
@@ -30,7 +29,6 @@ export default function NavSearchMobile({ placeholder }) {
   const [forceHidden, setForceHidden] = useState(false);
   const userType = AuthService.getUserRole();
 
-// Temp comment
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const splitName = searchTerm.split(' ')

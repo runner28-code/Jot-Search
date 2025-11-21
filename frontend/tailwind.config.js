@@ -88,7 +88,6 @@ module.exports = {
         'signup-page-hero': 'url(\'./assets/images/tulsanetwork.jpg\')',
         'login-page-hero': 'url(\'./assets/images/networklogin.jpg\')',
       },
-      spacing: {
         // Styleguide Spacing
         'xxs': '4px',
         'xs': '8px',
@@ -110,6 +109,7 @@ module.exports = {
         '25%': '25%',
         '30%': '30%',
         '35%': '35%',
+        '40%': '40%',
         '44%': '44%',
         '46%': '46%',
         '52%': '52%',

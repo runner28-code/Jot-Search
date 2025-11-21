@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 import Dropdown from '../../components/UniversalDropdown/index';
+// Temp comment
 import { useState } from 'react';
 
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charcoal mb-m ';
@@ -36,6 +37,7 @@ export const UpdateJobStatus = ({ job }) => {
             const { res } = await saveJob({ status: e.target.value, id: updatedJob.id })
             setUpdatedJob(res);
           }}
+        />
       </div>
     </div>
   )

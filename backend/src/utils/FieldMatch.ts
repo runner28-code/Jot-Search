@@ -68,6 +68,7 @@ export const USER_FILTER: any = {
   companyName: "companyName",
   occupation: "occupation",
   workAuthorized: "workAuthorized",
+  employeeType: "employeeType",
   willRelocate: "willRelocate",
   experienceYears: "experienceYears",
   seniority: "seniority",

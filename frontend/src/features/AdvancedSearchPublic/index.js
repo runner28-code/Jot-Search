@@ -190,7 +190,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
           <FilterLayout
             activeTab={activeTab}
             filterProps={filterProps}
-// Temp comment
           />
         </div>
       </div>

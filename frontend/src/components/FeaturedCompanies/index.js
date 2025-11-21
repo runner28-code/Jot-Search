@@ -8,11 +8,13 @@ const ITEMS_PER_PAGE = 10;
 
 export default function FeaturedCompanies() {
 
+// Temp comment
   const filtersArr = [
     {
       key: 'status',
       value: 'active'
     }
+  ];
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 

@@ -85,6 +85,7 @@ export default function Footer() {
                 Terms of Service
             </a>
           </div>
+// Temp comment
         </div>
       </div>
     </>)

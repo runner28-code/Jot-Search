@@ -8,5 +8,4 @@ CREATE TABLE "Department" (
 
     CONSTRAINT "Department_pkey" PRIMARY KEY ("id")
 );
-
 -- AddForeignKey

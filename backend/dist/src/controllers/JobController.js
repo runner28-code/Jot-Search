@@ -35,7 +35,6 @@ const Job_2 = require("../types/Job");
 const utils_1 = require("../utils");
 const db_1 = __importDefault(require("../utils/db"));
 const FieldMatch_1 = require("../utils/FieldMatch");
-// Temp comment
 const MainCrud_1 = require("../utils/MainCrud");
 const BullhornService_1 = require("../services/BullhornService");
 let JobController = class JobController {
@@ -331,6 +330,7 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], JobController.prototype, "createJob", null);
+// Temp comment
 JobController = __decorate([
     (0, routing_controllers_1.JsonController)("/api/job")
 ], JobController);

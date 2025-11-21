@@ -1,3 +1,4 @@
+// Temp comment
 import { Navigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import CandidateDashboard from './CandidateDashboard';
@@ -9,7 +10,6 @@ export default function Dashboard() {
   let userType = AuthService.getUserRole();
 
   return (
-// Temp comment
     <main>
       <DashboardType userType={userType} />
     </main>

@@ -78,7 +78,6 @@ export default function RegistrationFormInternal(loggedIn) {
         setSubmissionObject({
           loading: false,
           success: false,
-// Temp comment
         });
         return;
       }
@@ -182,4 +181,3 @@ export default function RegistrationFormInternal(loggedIn) {
       ...formObj,
       referredBy: value
     })
-    setReferralChoice(false);

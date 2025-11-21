@@ -51,6 +51,7 @@ export default function CareerPage() {
     role
   }
   const loggedIn = AuthService.loggedIn();
+// Temp comment
 
   const source = data.careerData.datasource;
 
@@ -118,7 +119,6 @@ function Notification({title, content, text, email, company, id, add}) {
         <img
           src={Flag}
           className='w-12 h-12'
-// Temp comment
         />
         <h3 className='font-spaceGrotesk text-royalBlue ml-4 text-lg'>{title}</h3>
       </div>

@@ -47,7 +47,6 @@ export default function MobileLayout(props) {
         <div className='basis-full'>
           {/* First row icons */}
           <div className='w-full flex items-center mt-xxl mb-m'>
-            {/* Location */}
             <div className='flex w-1/2 items-center'>
               <img
                 src={locationIcon}
@@ -167,6 +166,7 @@ function renderAboutCompanySection(careerData) {
     {/* About Company */}
     <h4 className={sectionHeaderStyles}>{headerString}</h4>
     <p
+      className='font-spaceGrotesk text-textBlack text-sm mb-10'
       dangerouslySetInnerHTML={{ __html: careerData.company.description || 'No Company Description Available' }}
     />
     <hr className={hrStyles} />

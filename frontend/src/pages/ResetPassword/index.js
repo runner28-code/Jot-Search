@@ -62,6 +62,7 @@ export default function ResetPassword() {
         </div>
       )
     }
+  }
 
   const renderError = () => {
     if ( error ) {

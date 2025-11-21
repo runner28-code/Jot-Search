@@ -35,6 +35,7 @@ function MobileNavBarLayout() {
         {/* Nav Menu */}
         <div className='flex items-center'>
           { width >= 990 ? <NavSearch /> : <NavSearchMobile />}
+// Temp comment
           <NavMenu />
         </div>
       </div>
@@ -45,6 +46,7 @@ function MobileNavBarLayout() {
     </nav>
   )
 }
+
 function DesktopNavBarLayout() {
   return (
     <nav className='h-44 pl-14 pr-10 flex justify-between items-center shadow-md bg-white fixed top-0 left-0 right-0 z-50 '>
