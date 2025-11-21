@@ -12,7 +12,6 @@ function renderActiveIcon(choice, currentChosen) {
     return(
       <img 
         src={checkmarkIcon} 
-        alt="checkmark" 
         className="w-8 h-8 mr-2" />
     )
   }
@@ -72,7 +71,6 @@ export default function Dropdown(props) {
   const handleClick = (choice) => {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {
-// Temp comment
         onChange(name, currentChosen.filter(item => item !== choice));
       } else {
         onChange(name, [...currentChosen, choice]);

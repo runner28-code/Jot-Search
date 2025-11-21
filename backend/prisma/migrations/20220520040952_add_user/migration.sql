@@ -43,3 +43,4 @@ CREATE TABLE "User" (
     "disability" TEXT,
     "avatar" TEXT,
     "occupation" TEXT,
+    "employmentPreference" TEXT,

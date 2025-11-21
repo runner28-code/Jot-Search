@@ -218,7 +218,6 @@ function renderFeaturedIcon(role, isFeatured) {
     return null;
   } else {
     return (
-// Temp comment
       <div className='flex gap-[10px] items-center px-m py-xxs bg-searchGreen rounded-full'>
         <img
           src={featuredIcon}

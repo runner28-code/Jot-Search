@@ -321,3 +321,4 @@ export type Lead = {
     numEmployees?: string;
     occupation?: string;
     owner?: string;
+    ownerCorporation?: string;

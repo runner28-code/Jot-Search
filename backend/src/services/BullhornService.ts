@@ -956,3 +956,8 @@ export class BullhornService {
   ): Promise<any> {
     console.log("\n***** NewJobOrderSubscription *****");
     try {
+      const getQuery = queryString.stringify({
+        BhRestToken: this.BhRestToken,
+        maxEvents: maxEvents
+      });
+      const url = `${this.restUrl}event/subscription/jobOrderSubscription?${getQuery}`;

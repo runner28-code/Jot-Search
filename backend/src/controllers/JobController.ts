@@ -419,3 +419,5 @@ export const normalizeFilters = (filters: any) => {
       filterObj[key] = normalizeValue(key, value);
     });
   } else {
+    Object.keys(filters).forEach((key) => {
+      filterObj[key] = normalizeValue(key, filters[key]);

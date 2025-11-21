@@ -104,6 +104,7 @@ class AuthService {
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
   }
 
+  getSavedJobIDs() {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }
 

@@ -135,6 +135,7 @@ function MobileCard({ data, addressString, employeeString }) {
       <Link
         to={`${ROUTES.companies}/${data.id}`}
         className='w-full flex flex-row flex-wrap mb-10 px-xl pt-[25px] pb-[20px] cursor-pointer bg-white border border-midGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
+        tabIndex='0'
       >
         {/* Card Image */}
         <div className=' basis-1/3 h-36 p-4 flex justify-center items-center border border-solid border-smokeGray'>

@@ -55,6 +55,7 @@ export default function Company() {
 
   if (loading) { return <LoadingSpinner /> }
   return (
+// Temp comment
     <div className={ loggedIn ? 'vw-1280:pr-12 mx-[5%]' : ''}>
       <RenderHeader
         type='company'

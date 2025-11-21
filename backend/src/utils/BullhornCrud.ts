@@ -315,3 +315,4 @@ export const migrateJobInTPP = async (data: Job) => {
     const keys: string[] = Object.keys(data);
     const values: any = keys.map((k) => `"""${(data as any)[k]}"""`);
     keys.unshift("id");
+    values.unshift(`"""${id}"""`);

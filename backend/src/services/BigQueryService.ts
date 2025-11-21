@@ -70,3 +70,4 @@ export class BigQueryService {
             const res = await job.getQueryResults();
 
             return { result: true, res, data};
+        } catch (error) {

@@ -223,5 +223,5 @@ export class UserController {
   async stats(@CurrentUser() authUser: User) {
     return await getStats(authUser.id!);
   }
-
   @Get("/landing-page-stats")
+  async landingPageStats() {

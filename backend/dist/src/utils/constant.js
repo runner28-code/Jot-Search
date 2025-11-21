@@ -475,3 +475,6 @@ exports.JOB_FIELDS = [
     "externalID",
     "feeArrangement",
     "hoursOfOperation",
+    "hoursPerWeek",
+    "interviews",
+    "isClientEditable",

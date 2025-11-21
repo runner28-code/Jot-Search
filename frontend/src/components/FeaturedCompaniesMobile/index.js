@@ -1,3 +1,4 @@
+// Temp comment
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes'
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -48,6 +49,7 @@ export default function FeaturedCompaniesMobile() {
 }
 function renderColorShapes() {
   return(
+    <div className='relative w-full w-24 mb-8'>
       <div className='bg-pinkSquare w-12 h-12' />
       <div className='bg-orangeSquare bg-pink-500 top-[-20px] right-[5px] absolute w-6 h-6' />
     </div>

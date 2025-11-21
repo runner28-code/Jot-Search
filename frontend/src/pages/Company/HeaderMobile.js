@@ -133,7 +133,6 @@ function renderDesktopLogo(logoUrl, name) {
     <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
       <img
         className={logoStyles}
-// Temp comment
         src={logoUrl}
         alt={`${name} logo`}
       />

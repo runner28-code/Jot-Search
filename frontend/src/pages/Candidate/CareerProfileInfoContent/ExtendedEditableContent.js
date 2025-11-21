@@ -17,7 +17,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
 
   const [formData, setFormData] = useState({
     id: candidateData.id,
-// Temp comment
     avatar: candidateData.avatar || '',
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
@@ -71,6 +70,5 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       dataToSubmit.categoryId = categories.find(category => category.name === formData.expertise).id;
       delete dataToSubmit.expertise;
     }
-
     handleCandidateUpdate(dataToSubmit);
     setEditMode(false);

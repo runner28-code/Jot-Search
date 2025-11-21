@@ -61,3 +61,4 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "isDeleted",
   "postedAt",
   "hidden",
+  "company_name",

@@ -65,7 +65,6 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
 });
 exports.isExistByCondition = isExistByCondition;
 const consoleLog = (message, newLine = true) => {
-    console.log(`${newLine ? '\n' : ''}${message}`);
 };
 exports.consoleLog = consoleLog;
 const sleep = (ms) => __awaiter(void 0, void 0, void 0, function* () {
@@ -82,6 +81,7 @@ const getDataSource = (id) => {
 };
 exports.getDataSource = getDataSource;
 const genUUID = () => (0, uuid_1.v4)();
+exports.genUUID = genUUID;
 const checkForJobFilter = (title, location) => {
     if (title.match(constant_1.JOB_EXCLUDE_KEYS_REGEX))
         return false;

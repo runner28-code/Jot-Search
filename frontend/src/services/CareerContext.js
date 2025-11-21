@@ -62,6 +62,7 @@ const mockJobsData = [
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/holberton_clipped_rev_1_2_oefmoi.webp',
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
+// Temp comment
     location_state: 'OK',
     onSite: false,
     listingAge: '1 month',

@@ -140,3 +140,4 @@ export const getJobsList = async (jobs_ids: string[]) => {
     const jobs = await db.job.findMany({
       where: {
         id: {
+          in: jobs_ids,

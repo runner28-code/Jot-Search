@@ -606,3 +606,6 @@ export const getLandingPageStats = async () => {
       }
     });
 
+    const totalCompaniesCountPromise = db.company.count({
+      where: {
+        status: {

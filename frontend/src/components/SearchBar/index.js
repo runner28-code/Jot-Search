@@ -19,7 +19,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
 
   const placeholderText = placeholder || 'Search for companies or jobs...';
   return (
-    <label 
       className={ styleObject.containerStyles }
       htmlFor={ placeholder }
     >
@@ -30,7 +29,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
           className='h-2/3'/>
       </div>
       <input
-// Temp comment
         type='text'
         id={ placeholder }
         placeholder={ placeholderText }

@@ -5,6 +5,7 @@ const config = {
     port: process.env.PORT,
     projectId: process.env.PROJECT_ID,
     authSecret: process.env.AUTH_SECRET,
+// Temp comment
     fileUploadSize: process.env.FILE_UPLOAD_SIZE,
     getroEmail: process.env.GETRO_EMAIL,
     getroPassword: process.env.GETRO_PASSWORD,
@@ -16,7 +17,6 @@ const config = {
     bullhornDatasetID: process.env.DATASET_BULLHORN,
     mainDatasetID: process.env.DATASET_MAIN,
     sendgridKey: process.env.SENDGRID_KEY,
-// Temp comment
     sendgridSecret: process.env.SENDGRID_SECRET,
     mailSenderEmail: process.env.MAIL_SENDER_EMAIL,
     frontendUrl: process.env.FRONTEND_URL,

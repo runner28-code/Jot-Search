@@ -219,3 +219,4 @@ async function seedUsers() {
         referredBy: "LinkedIn",
         skills: "javascript, react.js, node.js",
         experience: 1,
+        categoryId: (await db.category.findFirst({

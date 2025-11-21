@@ -5,6 +5,7 @@ import { experienceMap } from '../../../utils/dbFieldMapping';
 import * as ROUTES from '../../../routes';
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
+  if ( submissionObject.loading ) {
     return <LoadingSpinner
       height='50'
       width='50'
@@ -49,7 +50,6 @@ export function renderHeader(addType) {
           </span>
           <Link
             to={ROUTES.login}
-            className='text-ml text-royalBlue leading-loose underline mx-4'
           >
             Log in here.
           </Link>

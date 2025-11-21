@@ -57,7 +57,6 @@ function CareerHeader ({ location }) {
       <div className='flex flex-col items-start py-14 px-8 '>
         <span className='flex flex-row text-lg items-center text-dply '>
           <CareerIcon className='mr-6 fill-royalBlue ' />
-          <h2 className='font-spaceGrotesk text-royalBlue font-bold '>Active Careers Details</h2>
         </span>
         <Link
           className='text-blue underline mt-6 text-blue-500 font-bold'
@@ -68,7 +67,6 @@ function CareerHeader ({ location }) {
   }
   if( !loggedIn ) {
     return (<>
-// Temp comment
       <div className='flex items-center justify-start flex-row mb-10 bg-sky-700 py-9 px-6'>
         <Link
           className='text-white underline basis-1/3'

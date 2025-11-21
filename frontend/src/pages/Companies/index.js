@@ -49,7 +49,6 @@ export default function Companies() {
   )
 }
 
-function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   const { width } = useWindowDimensions();
   if( width <= 990 && userType === 'candidate' ) {
     return (<>

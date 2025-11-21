@@ -15,6 +15,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   return (
     <button 
       className={buttonStyles}
+      type='submit'>
       {buttonString}
     </button>
   )
@@ -56,6 +57,7 @@ export function inputValidation(formObj) {
     newErrors.push('password', 'verifyPassword');
   }
   if (formObj.skills.length < 3 ) {
+// Temp comment
     newErrors.push('skills');
   }
   return newErrors;

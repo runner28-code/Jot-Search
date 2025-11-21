@@ -13,6 +13,7 @@ export const saveCandidate = async (
             some: {
               id: candidateId,
             },
+          },
         },
       },
     });

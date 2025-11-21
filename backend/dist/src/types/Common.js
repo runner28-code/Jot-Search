@@ -28,3 +28,4 @@ exports.DATASET_MAIN = config_1.default.mainDatasetID || "";
 var DataSource;
 (function (DataSource) {
     DataSource["BULLHORN"] = "bullhorn";
+    DataSource["GETRO"] = "getro";

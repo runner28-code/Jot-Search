@@ -44,7 +44,6 @@ export type Job = {
     locations?: string;
     organization_doman?: string;
     organization_id?: string;
-    organization_logo_url?: string;
     organization_name?: string;
     organization_slug?: string;
     passes_filter?: string;

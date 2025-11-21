@@ -86,7 +86,6 @@ AccessibleDropdown.propTypes = {
     PropTypes.arrayOf(PropTypes.string)
   ]),
   stylesObject: PropTypes.shape({
-    baseStyles: PropTypes.string,
     inputHeight: PropTypes.string,
     inputWidth: PropTypes.string,
     marginBottom: PropTypes.string,
@@ -112,7 +111,6 @@ function buttonText(name, placeholder, currentChosen) {
     if ( isNaN(currentChosen) ) {
       return currentChosen + 'years';
     }
-// Temp comment
     const experience = isNaN(currentChosen) ? currentChosen : experienceMap[currentChosen];
     return experience ? experience + ' years' : placeholder;
   }

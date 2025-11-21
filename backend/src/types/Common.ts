@@ -135,3 +135,4 @@ export type CandidateSearchByFilterResponse = {
 export type UpdateComapnyProfileResponse = {
   result: boolean;
   message?: any;
+};

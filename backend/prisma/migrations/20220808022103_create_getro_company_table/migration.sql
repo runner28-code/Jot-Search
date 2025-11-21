@@ -18,7 +18,6 @@ CREATE TABLE "GetroCompany" (
     "slug" TEXT,
     "twitter_url" TEXT,
     "url" TEXT,
-    "website_url" TEXT,
     "collections" TEXT,
     "managers" TEXT[],
     "organization_careers_pages" TEXT[],

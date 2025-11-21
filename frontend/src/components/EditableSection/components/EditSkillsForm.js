@@ -43,7 +43,6 @@ EditSkillsForm.propTypes = {
   skills: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired,
 }
-// Temp comment
 
 function renderChosen(skills, onChange) {
   return (

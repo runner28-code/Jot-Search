@@ -258,7 +258,6 @@ const job_filter_exclude_keys = [
   "mutual fund",
   "nail tech",
   "neighborhood",
-  "newspaper",
   "nurse",
   "nursing",
   "nutrition",
@@ -477,3 +476,5 @@ export const JOB_FIELDS = [
   "externalID",
   "feeArrangement",
   "hoursOfOperation",
+  "hoursPerWeek",
+  "interviews",

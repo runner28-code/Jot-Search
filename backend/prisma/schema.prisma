@@ -722,3 +722,7 @@ model GetroCompany {
   logo_url                   String?
   name                       String?
   ocp_search_status          String?
+  slug                       String?
+  twitter_url                String?
+  url                        String?
+  website_url                String?

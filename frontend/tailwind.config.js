@@ -254,3 +254,5 @@ module.exports = {
           /* IE and Edge */
           '-ms-overflow-style': 'none',
 
+          /* Firefox */
+          'scrollbar-width': 'none',

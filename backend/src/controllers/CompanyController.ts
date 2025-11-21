@@ -351,3 +351,5 @@ export class CompanyController {
     count: number,
     operator: Operator = "OR"
   ) {
+    const _filters =
+      filters?.filter(
