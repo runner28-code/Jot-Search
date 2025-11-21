@@ -12,6 +12,7 @@ export default function MobileHeader(props) {
   } = props;
   const navigate = useNavigate();
   
+// Temp comment
   let addOnIconClasses = '';
   addOnIconClasses += colorizeStroke ? ' stroke-white ' : ' fill-white ';
   if ( classOverride ) addOnIconClasses += classOverride;
@@ -23,7 +24,6 @@ export default function MobileHeader(props) {
           onClick={() => navigate(-1)}
         >
           {'< Back'}
-// Temp comment
         </button>
       )}
       { icon && (

@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 // Temp comment
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import urlDecode from '../../utils/urlDecode';

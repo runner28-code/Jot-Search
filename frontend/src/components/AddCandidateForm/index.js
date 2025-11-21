@@ -110,7 +110,6 @@ export default function RegistrationForm() {
     setErrors([]);
     setFormObj({
       ...formObj,
-// Temp comment
       firstName: firstName.value,
       lastName: lastName.value,
       email: email.value,
@@ -118,7 +117,6 @@ export default function RegistrationForm() {
       password: password.value,
       verifyPassword: verifyPassword.value,
     });
-    setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
       success: false,
     });

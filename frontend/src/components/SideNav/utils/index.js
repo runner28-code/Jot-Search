@@ -23,7 +23,6 @@ export const choices = {
   },
   profile: {
     label: 'My Profile',
-// Temp comment
     icon: ApplicationIcon,
     link: ROUTES.profile,
   },

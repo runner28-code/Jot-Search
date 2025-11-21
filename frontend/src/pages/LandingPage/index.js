@@ -3,6 +3,7 @@ import ExploreSearch from '../../components/ExploreSearch';
 import ExploreSearchMobile from '../../components/ExploreSearchMobile';
 import ExpertiseLinks from '../../components/ExpertiseLinks';
 import ExpertiseLinksMobile from '../../components/ExpertiseLinksMobile';
+// Temp comment
 import JoinTalentNetwork from '../../components/JoinTalentNetwork';
 import FeaturedJobs from '../../components/FeaturedJobs';
 import FeaturedCompanies from '../../components/FeaturedCompanies';
@@ -98,7 +99,6 @@ function renderColorShapes()  {
 
 function renderJoinTalent() {
   let linkStyle = 'flex items-center justify-center h-18 vw-1024:h-24 bg-buttonLightBlue mt-12 px-16 rounded-lg';
-// Temp comment
 
   return(
     <Link

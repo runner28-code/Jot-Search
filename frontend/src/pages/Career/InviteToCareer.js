@@ -97,6 +97,7 @@ export default function InviteToCareer({ candidate }) {
 
 function itemRenderer({ option, onClick, disabled}) {
   const avatarUrl = option.job.company_logo
+  return (
     <div 
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`} 
       onClick={onClick}

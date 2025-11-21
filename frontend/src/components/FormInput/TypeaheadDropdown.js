@@ -142,7 +142,6 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
 
 function renderTagsOrListItems(dropdownType, choices, handleClick) {
   if ( dropdownType === 'tags' ) {
-    return choices.map(choice => 
       <ChoiceTag 
         label={choice} 
         isActive={false} 

@@ -9,6 +9,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 
+// Temp comment
 export default function DashboardPublic({togglePassState}) {
   const { width } = useWindowDimensions();
 
@@ -56,4 +57,5 @@ export default function DashboardPublic({togglePassState}) {
           </button>
         </div>
       </div>
+    </div>
   )

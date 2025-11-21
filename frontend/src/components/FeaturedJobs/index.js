@@ -95,7 +95,6 @@ function RenderImage({image}) {
       </div>
     </>)
   }
-// Temp comment
   return(
     <div className={containerStyles}>
       <img

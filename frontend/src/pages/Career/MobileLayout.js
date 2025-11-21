@@ -47,6 +47,7 @@ export default function MobileLayout(props) {
         <div className='basis-full'>
           {/* First row icons */}
           <div className='w-full flex items-center mt-xxl mb-m'>
+            {/* Location */}
             <div className='flex w-1/2 items-center'>
               <img
                 src={locationIcon}
@@ -189,7 +190,6 @@ function SkillsList({items}) {
       </p>
     )
   }
-  return (
     <ul className='list-disc ml-8 mb-20'>
       {items.map((item, index) => (
         <li key={index}>{item}</li>

@@ -107,11 +107,11 @@ const CandidateProvider = ({children}) => {
   useEffect(() => {
     if (currentUser?.user_id) {
       getCandidateById(currentUser.user_id).then(user => {
-// Temp comment
         setCurrentUser(user);
       })
     }
   }, []);
 
   const handleCandidatesChange = (value) => {
+// Temp comment
     setCandidates(value);

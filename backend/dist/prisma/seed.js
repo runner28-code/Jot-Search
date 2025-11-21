@@ -56,6 +56,7 @@ function seedJobs() {
                     })).id,
                 },
                 {
+// Temp comment
                     title: "Junior Software Engineer",
                     companyId: (_b = (yield db_1.default.company.findFirst())) === null || _b === void 0 ? void 0 : _b.id,
                     address1: "123 Job St",
@@ -183,6 +184,7 @@ function seedCompanies() {
                     description: "testing a new description",
                     city: "Tulsa",
                     state: "OK",
+                    billingPhone: "876-567-9876",
                     companyURL: "pepsoda@gmail.com",
                     companyDescription: "Best at test",
                     numEmployees: 50,

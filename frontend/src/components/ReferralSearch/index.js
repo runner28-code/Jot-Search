@@ -9,6 +9,7 @@ const mockJobsData = [
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
     salaryRange: '$80k-$90k',
     location: 'Remote',
+    listingAge: '1 month',
     specialty: 'Technology'
   },
   {
@@ -49,7 +50,6 @@ export default function ReferralSearch() {
   const [choices, setChoices] = useState(mockJobsData);
   const [filteredChoices, setFilteredChoices] = useState(mockJobsData);
   const [currentChosen, setCurrentChosen] = useState([]);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   function handleAdd(_, jobArray) {
     const idToAdd = jobArray[jobArray.length - 1];

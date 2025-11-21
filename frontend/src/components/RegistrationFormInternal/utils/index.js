@@ -51,6 +51,7 @@ export function renderHeader(addType) {
           <Link
             to={ROUTES.login}
             className='text-ml text-royalBlue leading-loose underline mx-4'
+// Temp comment
           >
             Log in here.
           </Link>
@@ -81,7 +82,6 @@ export function inputValidation(formObj) {
     newErrors.push('linkedin');
   }
   if ( !(formObj.resume instanceof File) ) { // Ensure resume is a file
-// Temp comment
     newErrors.push('resume');
   }
   if ( formObj.password !== formObj.verifyPassword ) { // Match passwords

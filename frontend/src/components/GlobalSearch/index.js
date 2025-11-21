@@ -61,6 +61,7 @@ export default function GlobalSearch({ placeholder }) {
       loading: false,
     };
 
+    setResults( resultsObject );
   }
 
   /* Clear state on page change */

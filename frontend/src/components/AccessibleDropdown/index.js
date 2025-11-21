@@ -87,7 +87,6 @@ AccessibleDropdown.propTypes = {
   ]),
   stylesObject: PropTypes.shape({
     baseStyles: PropTypes.string,
-// Temp comment
     inputHeight: PropTypes.string,
     inputWidth: PropTypes.string,
     marginBottom: PropTypes.string,
@@ -134,7 +133,6 @@ function buttonText(name, placeholder, currentChosen) {
 
 function renderLabel(name, label, required) {
   if ( !label ) {
-    return null;
   }
 
   if ( required ) {

@@ -9,6 +9,5 @@ export type User = {
     title?: string;
     level?: string;
 };
-
 export type LoginInfo = {
     email: string;

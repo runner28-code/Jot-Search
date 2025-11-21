@@ -83,7 +83,6 @@ export function inputValidation(formObj) {
   if( formObj.zip.length !== 5 || isNaN(formObj.zip) ) {
     newErrors.push('zip');
   }
-  if ( formObj.linkedin.slice(0, 8) !== 'https://' ) { // Ensure valid URL
     newErrors.push('linkedin');
   }
   if ( !(formObj.resume instanceof File) ) { // Ensure resume is a file

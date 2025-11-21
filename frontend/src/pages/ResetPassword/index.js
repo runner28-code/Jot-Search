@@ -67,4 +67,3 @@ export default function ResetPassword() {
   const renderError = () => {
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
-    }

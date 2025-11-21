@@ -398,7 +398,6 @@ function formatCandidateFilters(filtersArr) {
       }
       case 'actively looking': {
         const choiceBoolean = filter.value === 'No' ? false : true;
-// Temp comment
         return {
           key: 'activelyLooking',
           value: choiceBoolean

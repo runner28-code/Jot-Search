@@ -330,7 +330,6 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], JobController.prototype, "createJob", null);
-// Temp comment
 JobController = __decorate([
     (0, routing_controllers_1.JsonController)("/api/job")
 ], JobController);
