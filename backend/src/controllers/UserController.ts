@@ -226,3 +226,4 @@ export class UserController {
 
   @Get("/landing-page-stats")
   async landingPageStats() {
+    return await getLandingPageStats();

@@ -220,3 +220,4 @@ async function seedUsers() {
         skills: "javascript, react.js, node.js",
         experience: 1,
         categoryId: (await db.category.findFirst({
+          where: { name: "Finance" },

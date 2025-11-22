@@ -7,7 +7,6 @@ export type Company = {
     domain?: string;
     facebook_url?: string;
     founded?: string;
-    instagram_url?: string;
     jobs_count?: string;
     linkedin_url?: string;
     logo_url?: string;
@@ -79,3 +78,4 @@ export type User = {
     job_search_status?: string;
     joined_at?: string;
     remote_work?: string;
+    require_sponsorship_visa?: string;

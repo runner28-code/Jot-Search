@@ -21,7 +21,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   )
 }
 
-// Temp comment
 export function renderErrorBlock(errorBlock) {
   
   if (errorBlock) {
@@ -51,7 +50,6 @@ export function inputValidation(formObj) {
       newErrors.push(key);
     }
   });
-  if ( !(formObj.resumeFile instanceof File) ) {
     newErrors.push('resumeFile');
   }
   if (formObj.password !== formObj.verifyPassword) {

@@ -374,7 +374,6 @@ const job_filter_exclude_keys = [
   "stock",
   "store",
   "storm",
-  "stormwater",
   "street",
   "student",
   "study",
@@ -479,3 +478,5 @@ export const JOB_FIELDS = [
   "hoursOfOperation",
   "hoursPerWeek",
   "interviews",
+  "isClientEditable",
+  "isDeleted",

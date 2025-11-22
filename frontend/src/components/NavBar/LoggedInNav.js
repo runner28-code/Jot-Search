@@ -156,7 +156,6 @@ function renderChoices(userType, handleClick) {
   let choicesToRender;
   if ( userType === 'coordinator' ) {
     choicesToRender = coordinatorChoices;
-  }
   else if ( userType === 'company' ) {
     choicesToRender = companyChoices;
   }

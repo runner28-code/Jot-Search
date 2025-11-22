@@ -18,6 +18,7 @@ export default function Filters(props) {
   if (marginBottom) {
     filterContainerStyles += `mb-${marginBottom} `;
   }
+// Temp comment
   return (
     <div className={filterContainerStyles}>
       <div className='flex flex-wrap gap-xxl-4'>
@@ -85,7 +86,6 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
     if (!filterObject[key]) {
       return null;
     }
-// Temp comment
     const onFilterChange = (e) => {
       handleFilterChange(key, e.target.checked ? 'Yes' : 'No')
     }

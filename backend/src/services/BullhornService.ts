@@ -232,7 +232,6 @@ export class BullhornService {
         const query = queryString.stringify({
           BhRestToken: this.BhRestToken,
           fields: [
-            "id",
             "address",
             "annualRevenue",
             "billingAddress",
@@ -961,3 +960,6 @@ export class BullhornService {
         maxEvents: maxEvents
       });
       const url = `${this.restUrl}event/subscription/jobOrderSubscription?${getQuery}`;
+      const { data } = await axios.get(url, {
+        headers: {
+          "Content-Type": "application/json;charset=UTF-8",

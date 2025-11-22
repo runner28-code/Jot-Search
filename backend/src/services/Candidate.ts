@@ -96,3 +96,4 @@ export const getCandidatesList = async (candidates_ids: string[]) => {
           in: candidates_ids,
         },
       },
+    });

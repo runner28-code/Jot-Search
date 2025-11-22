@@ -135,7 +135,6 @@ export function buildCandidateAddress(candidateData, full = false) {
   let address = '';
   addressArr.forEach(line => {
     if (line && line !== 'N/A') {
-// Temp comment
       address += `${line}, `;
     }
   });

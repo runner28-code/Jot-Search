@@ -118,3 +118,4 @@ export const determineCondition = (
     specialHandlers: Dictionary<(key: string, value: string) => string>,
     nonStringFields: Set<string> = new Set()
   ) => {
+    if (specialHandlers[key] != null) {

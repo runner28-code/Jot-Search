@@ -43,13 +43,13 @@ export const CompanyFilter: TypedDictionary<
   },
   getro: {
     name: "name",
+    city: "locations",
   },
   joined: {
     name: "name",
     bh_id: "bh_id",
     id: "id",
   },
-};
 
 export const USER_FILTER: any = {
   firstname: "firstname",

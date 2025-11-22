@@ -38,7 +38,6 @@ export default function FormInput(props) {
     listItemStyles: dropdownItemStyles
   };
   switch (type) {
-// Temp comment
     case 'file':
       return <FileInput
         type={type}
@@ -79,6 +78,7 @@ export default function FormInput(props) {
         onChange={onChange}
         choices={choices}
         baseStyles={componentStyles}
+// Temp comment
         inputHeight={inputHeight}
         disabled={disabled}
       />

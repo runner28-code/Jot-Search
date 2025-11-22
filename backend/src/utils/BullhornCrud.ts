@@ -193,6 +193,7 @@ export const saveClientContacts = async (contacts: any[]) => {
 
 export const saveCandidates = async (candidates: any[]) => {
   const expludeFields = ["address", "_score"];
+  try {
     for (const candidate of candidates) {
       try {
         console.log(`\n\nSavng Candidate with ID = ${candidate.id}`);
@@ -315,3 +316,4 @@ export const migrateJobInTPP = async (data: Job) => {
     const values: any = keys.map((k) => `"""${(data as any)[k]}"""`);
     keys.unshift("id");
     values.unshift(`"""${id}"""`);
+    const query = `

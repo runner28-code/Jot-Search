@@ -151,6 +151,7 @@ let JobController = class JobController {
         return __awaiter(this, void 0, void 0, function* () {
             const _filters = filters.filter((filter) => Job_2.ALLOWED_JOB_KEYS.has(filter.key));
             const filteredFields = fields === null || fields === void 0 ? void 0 : fields.filter((field) => Job_2.ALLOWED_JOB_KEYS.has(field));
+// Temp comment
             const alias = "main_jobs";
             const companyAlias = "company";
             const _fields = (filteredFields === null || filteredFields === void 0 ? void 0 : filteredFields.length)

@@ -1,6 +1,5 @@
 import { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
-// Temp comment
 
 const mockJobsData = [
   {
@@ -41,6 +40,7 @@ const mockJobsData = [
     onSite: true,
     listingAge: '1 month',
     specialty: 'Technology'
+// Temp comment
   },
   {
     id: '07caa54e-d5f4-4b2a-95a3-7eeca90c06f5',

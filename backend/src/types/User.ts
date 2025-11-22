@@ -64,7 +64,6 @@ export const IUSER = {
   city: "",
   state: "",
   zip: "",
-  resume: "",
   avatar: "",
   linkedin: "",
   skills: "",
@@ -99,3 +98,4 @@ export const IUSER = {
 };
 
 export const USERKEYS = Object.keys(IUSER);
+

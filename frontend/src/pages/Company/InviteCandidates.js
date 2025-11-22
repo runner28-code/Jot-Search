@@ -73,7 +73,6 @@ export default function InviteCandidates({ company }) {
         <button 
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
           onClick={async () => {
-// Temp comment
             console.log({selected})
             const res = await sendCandidatesToCompanies({ companyIds: [company.id], candidateIds: selected.map((option) => option.value) })
             console.log({res})
@@ -98,6 +97,7 @@ function itemRenderer({ option, onClick, disabled}) {
   const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''
   return (
     <div 
+// Temp comment
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`} 
       onClick={onClick}
     >

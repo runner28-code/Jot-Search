@@ -194,6 +194,7 @@ export async function getSavedCompanies(id, count = null, page = null) {
 }
 
 //* JOBS
+/**
  * example filtersArr:
  * [
  *  {

@@ -478,3 +478,4 @@ exports.JOB_FIELDS = [
     "hoursPerWeek",
     "interviews",
     "isClientEditable",
+    "isDeleted",

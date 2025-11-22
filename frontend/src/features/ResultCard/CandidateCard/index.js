@@ -175,7 +175,6 @@ function NewLeadLabel({ status }) {
   }
 
   return null;
-}
 
 NewLeadLabel.propTypes = {
   status: PropTypes.string,

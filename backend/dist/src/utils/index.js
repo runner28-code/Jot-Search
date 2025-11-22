@@ -39,6 +39,7 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
         console.log(error);
         return true;
     }
+// Temp comment
 });
 exports.isExistByID = isExistByID;
 const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
@@ -79,7 +80,6 @@ const getDataSource = (id) => {
     if (prefix === 'gt')
         return Common_1.DataSource.GETRO;
     return Common_1.DataSource.UNKNOWN;
-// Temp comment
 };
 exports.getDataSource = getDataSource;
 const genUUID = () => (0, uuid_1.v4)();

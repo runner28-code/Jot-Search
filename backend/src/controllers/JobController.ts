@@ -61,7 +61,6 @@ export class JobController {
         include: {
           getroJobInfo: true,
           company: true,
-        },
       });
 
       let getroCompany
@@ -421,3 +420,4 @@ export const normalizeFilters = (filters: any) => {
   } else {
     Object.keys(filters).forEach((key) => {
       filterObj[key] = normalizeValue(key, filters[key]);
+    });

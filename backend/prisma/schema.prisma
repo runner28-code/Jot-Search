@@ -726,3 +726,5 @@ model GetroCompany {
   twitter_url                String?
   url                        String?
   website_url                String?
+  collections                String?
+  managers                   String[]

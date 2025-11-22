@@ -212,7 +212,6 @@ export class CompanyController {
   async searchByFilter(@Body() body: FilterBody) {
     try {
       const { page, count, filters } = body;
-
       const wheres = normalizeFilters(filters)
 
       const skip = (count || 0) * ((page - 1) || 0)
@@ -353,3 +352,4 @@ export class CompanyController {
   ) {
     const _filters =
       filters?.filter(
+        (opt) => Object.keys(CompanyFilter.getro).indexOf(opt.key) > -1

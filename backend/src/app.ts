@@ -66,6 +66,7 @@ const uploadToS3 = async(req: any, res: any) => {
       res.status(500).send({
         result: false,
         error: e
+      })
     }
   });
 }
@@ -104,7 +105,6 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.use(bodyParser.json());
 app.use(logger);
 app.use(express.static("uploads"));
 app.use(cors());
@@ -135,3 +135,4 @@ useExpressServer(app, {
   },
   currentUserChecker: (action: Action) => action.request.user,
 });
+

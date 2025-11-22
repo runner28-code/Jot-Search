@@ -387,3 +387,4 @@ export const skills = [
   'Technical Support',
   'Telecommunications',
   'Testing',
+  'Training & Development',

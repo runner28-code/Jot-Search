@@ -21,6 +21,7 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
   return (
     <div 
       key={itemKey}
+      className={containerStyles}
       onClick={handleItemClick}
     >
       <div className='flex items-center'>
@@ -32,6 +33,7 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
         <div className='grow'>
           <ReferralCardContent data={job} />
         </div>
+// Temp comment
       </div>
       { renderHorizontalRule(isLastItem) }
     </div>

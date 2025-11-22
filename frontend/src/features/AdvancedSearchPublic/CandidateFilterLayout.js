@@ -22,7 +22,6 @@ const checkboxFiltersCoord = [
   'Authorized to work in the US',
 ];
 const checkboxFilters = [
-  'Authorized to work in the US',
   'Open to Relocation',
   'Actively Looking',
 ];
@@ -70,7 +69,6 @@ export default function CandidateFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-// Temp comment
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
           additionalClasses='w-1/2'

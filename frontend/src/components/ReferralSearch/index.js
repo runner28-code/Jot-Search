@@ -54,7 +54,6 @@ export default function ReferralSearch() {
 
   function handleAdd(_, jobArray) {
     const idToAdd = jobArray[jobArray.length - 1];
-// Temp comment
     const jobToAdd = choices.find(job => job.id === idToAdd);
 
     if (!jobToAdd) return;

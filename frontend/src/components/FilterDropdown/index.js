@@ -7,10 +7,10 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
     id: choice,
   }));
   const { color, textColor } = additionalStyles;
-// Temp comment
 
   return (
     <div
+// Temp comment
       id='dropdown-wrapper'
       className={'absolute z-10 top-full w-full border-solid border-x border-b rounded-b-lg cursor-pointer border-' + color}>
       {objectifiedChoices.map((choice, index) => {

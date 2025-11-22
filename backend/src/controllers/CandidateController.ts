@@ -402,3 +402,5 @@ export class CandidateController {
           result = await sendJobsToCandidates(jobs, testSendTo);
         }
       }
+
+      const candidateJobInvites = []

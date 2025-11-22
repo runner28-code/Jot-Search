@@ -10,7 +10,6 @@ export default function AccessibleDropdown(props) {
   const {
     type,
     name,
-// Temp comment
     label,
     placeholder,
     required,
@@ -142,6 +141,7 @@ function renderLabel(name, label, required) {
   }
   return (
     <label
+// Temp comment
       htmlFor={ name }
       className='block text-textBlack mb-2.5'
     >
