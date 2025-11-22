@@ -265,6 +265,7 @@ export const skills = [
   'Masters Degree',
   'MBA',
   'Mechanical Engineering',
+  'Media',
   'Media Relations',
   'MERN',
   'Microservices',
@@ -294,6 +295,7 @@ export const skills = [
   'Photoshop',
   'PHP',
   'PMP',
+// Temp comment
   'Policy Development',
   'Portuguese',
   'PostgreSQL',
@@ -390,3 +392,5 @@ export const skills = [
   'Troubleshooting',
   'TypeScript',
   'UI',
+  'UI/UX Design',
+  'Unity',

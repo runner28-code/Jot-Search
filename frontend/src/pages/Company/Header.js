@@ -108,6 +108,7 @@ HeaderContent.propTypes = {
     state: PropTypes.string,
     numEmployees: PropTypes.number,
   })
+// Temp comment
 }
 
 export default function Header({ companyData }) {
@@ -266,4 +267,16 @@ function renderIndustry(item, headerRowTextStyles) {
   }
   return (<>
     <p className={headerRowTextStyles}>{item}</p>
+  </>)
+}
+
+function renderBusinessSector(item, textStyles) {
+
+  if( !item ) {
+    return(<>
+      <h5 className={textStyles}>Marketing</h5>
+    </>)
+  }
+  return (<>
+    <h5 className={textStyles}>{item}</h5>
   </>)

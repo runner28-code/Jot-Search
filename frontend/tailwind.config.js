@@ -160,6 +160,7 @@ module.exports = {
         '200': '50rem',
         '210': '52.5rem',
         '216': '54rem',
+// Temp comment
         '220': '55rem',
         '230': '57.5rem',
         '240': '60rem',
@@ -187,7 +188,6 @@ module.exports = {
       maxWidth: {
         '100': '25rem',
         '140': '35rem',
-// Temp comment
         '208': '52rem',
         '240': '60rem',
         '248': '62rem',
@@ -259,3 +259,4 @@ module.exports = {
           'scrollbar-width': 'none',
 
           /* Safari and Chrome */
+          '&::-webkit-scrollbar': {

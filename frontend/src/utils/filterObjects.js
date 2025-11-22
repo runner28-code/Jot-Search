@@ -78,6 +78,7 @@ export const candidateFilterObject = {
   ],
   'Employment Type': [
     'Any',
+    'Full-Time',
     'Part-Time',
     'Contract',
     'Contract to Hire',
@@ -120,7 +121,6 @@ export const defaultCandidateFilterState = {
   ...convertedCandidateFilters
 };
 
-/* UTIL FUNCTIONS */
 export function buildSearchFilters(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = [];

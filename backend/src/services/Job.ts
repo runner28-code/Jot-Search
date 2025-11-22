@@ -50,6 +50,7 @@ const sanitizeJob = (job: Job): Job => {
       delete newJob[typedKey];
     }
   });
+
   return newJob;
 };
 
@@ -141,3 +142,4 @@ export const getJobsList = async (jobs_ids: string[]) => {
         id: {
           in: jobs_ids,
         },
+      },

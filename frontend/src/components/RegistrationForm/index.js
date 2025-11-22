@@ -28,6 +28,7 @@ const defaultState = {
   address1: '',
   city: '',
   state: '',
+  zip: '',
   willRelocate: false,
   roles: [],
   skills: [],
@@ -76,7 +77,6 @@ export default function RegistrationForm(loggedIn) {
         setSubmissionObject({
           loading: false,
           success: false,
-        });
         return;
       }
 

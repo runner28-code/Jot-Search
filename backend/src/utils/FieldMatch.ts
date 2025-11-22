@@ -25,6 +25,7 @@ export const JobFilter: any = {
     willRelocate: "willRelocate",
     city: "city",
     state: "state",
+    isDeleted: "isDeleted",
     companyId: "companyId",
   },
 };
@@ -72,3 +73,4 @@ export const USER_FILTER: any = {
   experienceYears: "experienceYears",
   seniority: "seniority",
   experience: "experience",
+  employmentPreference: "employmentPreference",

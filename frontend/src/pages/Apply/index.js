@@ -164,6 +164,7 @@ export default function Apply() {
     setApplicationObject({ ...applicationObject, [name]: files[0] });
     setUseExistingResume(false)
   }
+
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
       setReferralChoice(true);

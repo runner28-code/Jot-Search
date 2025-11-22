@@ -62,10 +62,10 @@ export default function NavSearch({ placeholder }) {
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
+// Temp comment
     setForceHidden( false );
   }
 
-// Temp comment
   /* Clear state on page change */
   useEffect( () => {
     setSearchTerm('');

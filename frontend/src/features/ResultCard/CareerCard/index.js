@@ -78,6 +78,7 @@ CareerCard.propTypes = {
 }
 
 function DesktopCard({ dataObj, active }) {
+  const { data, categoryString, addressString, salaryString, postingAge } = dataObj;
   return (
     <Link
       to={`${ROUTES.careers}/${data.id}`}
@@ -218,7 +219,6 @@ MobileCard.propTypes = {
       salaryUnit: PropTypes.string,
       createdAt: PropTypes.string,
       category: PropTypes.shape({
-        id: PropTypes.number,
         name: PropTypes.string
       })
     }).isRequired,

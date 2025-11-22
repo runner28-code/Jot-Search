@@ -67,3 +67,4 @@ exports.USER_FILTER = {
     experienceYears: "experienceYears",
     seniority: "seniority",
     experience: "experience",
+    employmentPreference: "employmentPreference",

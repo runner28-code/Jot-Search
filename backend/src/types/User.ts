@@ -31,7 +31,6 @@ export type User = {
 
   companyId?: string;
   companyName?: string;
-  annualRevenue?: string;
   companyURL?: string;
   numEmployees?: string;
   revenue?: string;
@@ -100,3 +99,4 @@ export const IUSER = {
 
 export const USERKEYS = Object.keys(IUSER);
 
+export type LoginInfo = {

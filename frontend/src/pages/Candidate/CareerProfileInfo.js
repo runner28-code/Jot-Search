@@ -5,7 +5,6 @@ import { FiEdit } from 'react-icons/fi';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 const iconStyles = 'w-12 h-12 mr-5 ';
-
 export default function CareerProfileInfo({ candidateData, handleCandidateUpdate, role }) {
   const [editMode, setEditMode] = useState(false);
   return (
@@ -21,7 +20,6 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         candidateData={candidateData}
         handleCandidateUpdate={handleCandidateUpdate}
         setEditMode={setEditMode}
-// Temp comment
         iconStyles={iconStyles}
         editMode={editMode}
         role={role}

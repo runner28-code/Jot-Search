@@ -29,6 +29,7 @@ const checkboxFilters = [
 
 export default function CandidateFilterLayout(props) {
   const {
+    defaultFilterObject,
     filterObject,
     handleFilterChange,
     searchTerm,
@@ -77,7 +78,6 @@ export default function CandidateFilterLayout(props) {
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
         >
-          Clear All
         </button>
       </div>
     </div>

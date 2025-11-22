@@ -137,3 +137,4 @@ export type UpdateComapnyProfileResponse = {
   message?: any;
 };
 
+// Category Types

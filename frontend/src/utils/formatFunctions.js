@@ -131,6 +131,7 @@ export function buildCandidateAddress(candidateData, full = false) {
   } else {
     addressArr = [address_city, address_state];
   }
+
   let address = '';
   addressArr.forEach(line => {
     if (line && line !== 'N/A') {
@@ -220,6 +221,5 @@ export function buildCompanyAddress(companyData) {
   }
   // City and State
   if ( state.length > 2 ) {
-    state = stateCodeMap[state];
   }
   return `${city}, ${state}`;

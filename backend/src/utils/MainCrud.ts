@@ -145,3 +145,4 @@ export const getCandidatesOnJob = async (jobId: string) => {
       result: true,
     };
   } catch (error) {
+    console.log(error);

@@ -37,7 +37,6 @@ CREATE TABLE "User" (
     "employeeType" TEXT,
     "experience" TEXT,
     "hourlyRate" TEXT,
-    "willRelocate" TEXT,
     "ethnicity" TEXT,
     "workAuthorized" TEXT,
     "disability" TEXT,

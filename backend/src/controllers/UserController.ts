@@ -212,7 +212,6 @@ export class UserController {
     return await register(data);
   }
 
-  @Authorized()
   @Post("/user/update")
   async update(@Body() user: User, @CurrentUser() authUser: User) {
     return await update(authUser.id!, authUser.role, user);
@@ -228,3 +227,5 @@ export class UserController {
   async landingPageStats() {
     return await getLandingPageStats();
   }
+
+  @Get("/company-stats")

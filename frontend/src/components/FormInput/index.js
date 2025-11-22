@@ -49,7 +49,6 @@ export default function FormInput(props) {
         onChange={onChange}
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}
-      />
     case 'single-select': // fall through
     case 'multi-select':
       return <AccessibleDropdown
@@ -68,6 +67,7 @@ export default function FormInput(props) {
       />
     case 'typeahead':
       return <TypeaheadDropdown
+        type={type}
         dropdownType={dropdownType}
         name={name}
         label={label}

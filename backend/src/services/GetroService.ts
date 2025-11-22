@@ -285,3 +285,5 @@ export class GetroService {
             console.log(error);
         }
     }
+
+    async saveGetroJobInBullhornJobTable(getroJob: any): Promise<any> {

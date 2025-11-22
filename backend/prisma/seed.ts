@@ -222,3 +222,4 @@ async function seedUsers() {
         categoryId: (await db.category.findFirst({
           where: { name: "Finance" },
         }))!.id,
+      },

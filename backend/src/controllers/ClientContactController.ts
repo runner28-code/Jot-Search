@@ -57,3 +57,4 @@ export class ClientContactController {
     } catch (error) {
       console.log(error);
       return { message: error };
+    }

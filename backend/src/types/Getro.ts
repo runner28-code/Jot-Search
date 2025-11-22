@@ -59,6 +59,7 @@ export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "compensation_currency",
   "compensation_max",
   "compensation_min",
+  "compensation_period",
   "compensation_public",
   "description",
   "discarded",
@@ -99,3 +100,4 @@ export type User = {
   invited_by?: string;
   job_search_status?: string;
   joined_at?: string;
+  remote_work?: string;

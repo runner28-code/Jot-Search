@@ -73,7 +73,6 @@ export default function RegistrationForm() {
       if ( result === true ) {
         // Set success to true if on add-candidate page, navigate user to login if not
         if ( location.pathname === '/add-candidate' ) {
-          return setSubmissionObject({
             loading: false,
             success: true,
           })
@@ -115,7 +114,6 @@ export default function RegistrationForm() {
       email: email.value,
       linkedin: linkedin.value,
       password: password.value,
-// Temp comment
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect

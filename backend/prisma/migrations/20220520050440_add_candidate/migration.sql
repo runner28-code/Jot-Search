@@ -19,7 +19,7 @@ CREATE TABLE "Candidate" (
     "dayRateLow" TEXT,
     "degreeList" TEXT,
     "description" TEXT,
-    "desiredLocations" TEXT,
+    "disability" TEXT,
     "educationDegree" TEXT,
     "email" TEXT,
     "email2" TEXT,
@@ -97,3 +97,4 @@ CREATE TABLE "Candidate" (
     "address_address1" TEXT,
     "address_address2" TEXT,
     "address_city" TEXT,
+    "address_state" TEXT,

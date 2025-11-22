@@ -30,7 +30,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
   if ( isToday ) {
     return `Today at ${timeWithoutSeconds}`;
   } else if ( isYesterday ) {
-// Temp comment
     return `Yesterday, ${timeWithoutSeconds}`;
   } else {
     const month = dateObj.toLocaleString('default', { month: 'long' });

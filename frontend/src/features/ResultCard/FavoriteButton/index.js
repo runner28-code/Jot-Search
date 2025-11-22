@@ -60,6 +60,7 @@ FavoriteButton.propTypes = {
   }).isRequired,
   isFavoriteOverride: PropTypes.bool,
 }
+
 function getIdByType(type, data) {
   switch (type) {
     case 'job':

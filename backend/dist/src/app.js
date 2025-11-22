@@ -20,7 +20,6 @@ const path_1 = __importDefault(require("path"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const cors_1 = __importDefault(require("cors"));
 const jwtUtils_1 = require("./utils/jwtUtils");
-const User_1 = require("./services/User");
 const multer_1 = __importDefault(require("multer"));
 const utils_1 = require("./utils");
 const fs_1 = __importDefault(require("fs"));
@@ -44,4 +43,5 @@ const upload = (0, multer_1.default)({ storage: multerStorage });
 const getActualRequestDurationInMs = (start) => {
     const NS_PER_SEC = 1e9;
     const NS_TO_MS = 1e6;
+    const diff = process.hrtime(start);
     return (diff[0] * NS_PER_SEC + diff[1]) / NS_TO_MS;

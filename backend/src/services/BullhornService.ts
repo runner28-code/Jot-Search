@@ -715,7 +715,6 @@ export class BullhornService {
             const {
               category,
               ...otherData
-            } = d;
             return {
               ...otherData,
               id: `bl-${d.id}`,
@@ -969,3 +968,8 @@ export class BullhornService {
       });
       const newCreatedJobs = data.events?.filter((event: any) => event.entityEventType === 'INSERTED' && event.entityName === 'JobOrder');
       if (newCreatedJobs.length) {
+        this.getJobs(false, 50);
+      }
+      for (const job of newCreatedJobs) {
+        const jobQuery = queryString.stringify({
+          BhRestToken: this.BhRestToken,

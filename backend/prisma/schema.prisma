@@ -733,3 +733,7 @@ model GetroCompany {
   scraping_enabled           Boolean
   topics                     String[]
   network_id                 Int?
+}
+
+model GetroMember {
+  id                       String    @id @default(uuid())

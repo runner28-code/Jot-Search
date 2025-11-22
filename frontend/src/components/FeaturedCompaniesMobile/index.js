@@ -45,7 +45,6 @@ export default function FeaturedCompaniesMobile() {
       </div>
     </div>
   )
-}
 function renderColorShapes() {
   return(
     <div className='relative w-full w-24 mb-8'>

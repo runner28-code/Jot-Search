@@ -406,3 +406,6 @@ export class CandidateController {
       const candidateJobInvites = []
 
       for (const candidate of candidatesWithEmail) {
+        for (const jobId of body.jobIds) {
+          candidateJobInvites.push({
+            candidateId: candidate.id,

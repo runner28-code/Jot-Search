@@ -120,3 +120,4 @@ export const saveJobs = async (jobs: any[]) => {
                 console.log(`ERROR: while saving Job with ID = ${job.id}`);
             }
         };
+

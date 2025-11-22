@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 
 export default function Checkbox({ id, checked, onChange, styles }) {
@@ -9,5 +8,4 @@ export default function Checkbox({ id, checked, onChange, styles }) {
       className={buttonStyles}
       checked={checked}
       onChange={() => onChange(id)}
-    />
   )

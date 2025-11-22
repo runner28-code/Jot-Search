@@ -252,7 +252,6 @@ export class CompanyController {
           company.logo = getroCompany.logo_url
           company.linkedin_url = getroCompany.linkedin_url
         }
-        return company
       })
 
       const response = {
@@ -356,3 +355,5 @@ export class CompanyController {
         (opt) => Object.keys(CompanyFilter.getro).indexOf(opt.key) > -1
       ) || [];
     const _fields = fields ? fields.join(", ") : "*";
+    const _dataset = DATASET_GETRO;
+    const _table = Tables.COMPANIES;

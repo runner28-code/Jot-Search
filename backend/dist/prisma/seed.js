@@ -166,7 +166,6 @@ function seedCompanies() {
                     getro_description: "a healthcare company",
                     description: "Testing a new description",
                     city: "Tulsa",
-// Temp comment
                     state: "OK",
                     businessSectorList: "Health Care,Virtual Health",
                     billingPhone: "946-423-2341",

@@ -119,3 +119,4 @@ export const determineCondition = (
     nonStringFields: Set<string> = new Set()
   ) => {
     if (specialHandlers[key] != null) {
+      return specialHandlers[key](key, value);

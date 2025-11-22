@@ -425,3 +425,5 @@ export const normalizeFilters = (filters: any) => {
   }
 
   return filterObj;
+};
+

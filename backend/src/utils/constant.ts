@@ -484,3 +484,5 @@ export const JOB_FIELDS = [
   "isInterviewRequired",
   "isJobcastPublished",
   "isOpen",
+  "isPublic",
+  "location",

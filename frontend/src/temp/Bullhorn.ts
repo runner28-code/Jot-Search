@@ -312,3 +312,6 @@ export type Lead = {
     leadSource?: string;
     massMailOptOut?: string;
     middleName?: string;
+    mobile?: string;
+    name?: string;
+    namePrefix?: string;
