@@ -28,7 +28,6 @@ const defaultState = {
   address1: '',
   city: '',
   state: '',
-  zip: '',
   willRelocate: false,
   roles: [],
   skills: [],

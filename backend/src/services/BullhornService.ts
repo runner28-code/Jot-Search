@@ -232,6 +232,7 @@ export class BullhornService {
         const query = queryString.stringify({
           BhRestToken: this.BhRestToken,
           fields: [
+            "id",
             "address",
             "annualRevenue",
             "billingAddress",
@@ -963,3 +964,8 @@ export class BullhornService {
       const { data } = await axios.get(url, {
         headers: {
           "Content-Type": "application/json;charset=UTF-8",
+          Accept: "*/*",
+        },
+      });
+      const newCreatedJobs = data.events?.filter((event: any) => event.entityEventType === 'INSERTED' && event.entityName === 'JobOrder');
+      if (newCreatedJobs.length) {

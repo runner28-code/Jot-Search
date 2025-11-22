@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import PageHeader from '../../components/PageHeader';
 import PhoneInput from 'react-phone-number-input/input'
+import { HiOutlineClipboardCheck } from 'react-icons/hi';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { AiFillFilePdf as PDFIcon } from 'react-icons/ai';
 import { BiUpload as UploadIcon } from 'react-icons/bi';
@@ -163,7 +164,6 @@ export default function Apply() {
     setApplicationObject({ ...applicationObject, [name]: files[0] });
     setUseExistingResume(false)
   }
-
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
       setReferralChoice(true);
@@ -176,3 +176,11 @@ export default function Apply() {
       });
     }
     handleChange(name, value);
+  }
+
+  function handleCommunityChoice(name, value) {
+    setApplicationObject({
+      ...applicationObject,
+      referredBy: value
+    })
+    setReferralChoice(false);

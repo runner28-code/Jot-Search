@@ -87,7 +87,6 @@ export default function RegistrationForm() {
           loading: false,
           success: false,
         });
-// Temp comment
       }
     }
   }, [submissionObject.loading]);
@@ -116,6 +115,7 @@ export default function RegistrationForm() {
       email: email.value,
       linkedin: linkedin.value,
       password: password.value,
+// Temp comment
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect

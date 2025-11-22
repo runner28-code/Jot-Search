@@ -317,3 +317,5 @@ export const migrateJobInTPP = async (data: Job) => {
     keys.unshift("id");
     values.unshift(`"""${id}"""`);
     const query = `
+            INSERT INTO \`${dataset}.${table}\` (${keys.join(", ")})
+            VALUES (${values.join(", ")})

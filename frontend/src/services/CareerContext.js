@@ -12,6 +12,7 @@ const mockJobsData = [
     location_city: 'Tulsa',
     location_state: 'OK',
     onSite: true,
+// Temp comment
     listingAge: '1 month',
     specialty: 'Technology'
   },
@@ -40,7 +41,6 @@ const mockJobsData = [
     onSite: true,
     listingAge: '1 month',
     specialty: 'Technology'
-// Temp comment
   },
   {
     id: '07caa54e-d5f4-4b2a-95a3-7eeca90c06f5',

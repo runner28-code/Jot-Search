@@ -611,3 +611,7 @@ export const getLandingPageStats = async () => {
         status: {
           in: activeStatuses,
         }
+      }
+    });
+
+    const [totalJobsCount, totalCompaniesCount] = await Promise.all([

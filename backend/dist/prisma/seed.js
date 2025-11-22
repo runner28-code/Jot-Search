@@ -142,7 +142,6 @@ function seedCategories() {
                 },
                 {
                     name: "Sales & Biz Dev",
-// Temp comment
                     enabled: true,
                     externalID: 2000043,
                 },
@@ -167,6 +166,7 @@ function seedCompanies() {
                     getro_description: "a healthcare company",
                     description: "Testing a new description",
                     city: "Tulsa",
+// Temp comment
                     state: "OK",
                     businessSectorList: "Health Care,Virtual Health",
                     billingPhone: "946-423-2341",

@@ -1,6 +1,7 @@
 import { Candidate as BhCandidate, Job as BhJob } from "../types/Bullhorn";
 import { User as GtCandidate, Job as GtJob } from "../types/Getro";
 import { Job } from "../types/Main";
+import { User } from "../types/User";
 
 export const parseBullhornCandidateToUser = (data: BhCandidate) => {
   if (!data.email) return null;
@@ -126,3 +127,4 @@ export const parseGetroJobToMain = (data: GtJob) => {
     employmentType: data.employment_types,
     title: data.title,
     status: data.status,
+    skillList: data.job_functions,

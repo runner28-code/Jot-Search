@@ -50,7 +50,6 @@ const sanitizeJob = (job: Job): Job => {
       delete newJob[typedKey];
     }
   });
-
   return newJob;
 };
 
@@ -113,6 +112,7 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
     });
 
     const res = await db.job.update({
+      where: {
         id,
       },
       data: {
@@ -140,3 +140,4 @@ export const getJobsList = async (jobs_ids: string[]) => {
       where: {
         id: {
           in: jobs_ids,
+        },

@@ -151,7 +151,6 @@ let JobController = class JobController {
         return __awaiter(this, void 0, void 0, function* () {
             const _filters = filters.filter((filter) => Job_2.ALLOWED_JOB_KEYS.has(filter.key));
             const filteredFields = fields === null || fields === void 0 ? void 0 : fields.filter((field) => Job_2.ALLOWED_JOB_KEYS.has(field));
-// Temp comment
             const alias = "main_jobs";
             const companyAlias = "company";
             const _fields = (filteredFields === null || filteredFields === void 0 ? void 0 : filteredFields.length)
@@ -170,7 +169,6 @@ let JobController = class JobController {
             return yield BigQueryService_1.BigQueryService.selectQuery(dataset, table, _fields, count, condition, _join, alias);
         });
     }
-    getJobsByFilterFromGetro(filters = [], fields, count, operator = "OR") {
         return __awaiter(this, void 0, void 0, function* () {
             const _filters = filters.filter((filter) => Getro_1.ALLOWED_GETRO_FILTERS.has(filter.key));
             const filteredFields = fields === null || fields === void 0 ? void 0 : fields.filter((field) => Getro_1.ALLOWED_GETRO_FILTERS.has(field));

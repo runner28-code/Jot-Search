@@ -74,6 +74,7 @@ export default function Company() {
             />
             : <HeaderMobile
               companyData={companyData}
+              handleCompanyUpdate={setCompanyData}
             />
           }
           <hr className={stylesObject.hrStyles + 'mt-4'} />
@@ -135,7 +136,6 @@ function RenderInvite(loggedIn, companyData) {
   const role = AuthService.getUserRole();
   if( loggedIn && role === 'coordinator' ) {
     return(<>
-      <InviteCandidates company={companyData} />
     </>)
   }
   return null

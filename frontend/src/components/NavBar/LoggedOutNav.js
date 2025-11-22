@@ -87,6 +87,7 @@ function DesktopNavBarLayout() {
             <span className='text-white'>Create Account</span>
           </button>
         </Link>
+// Temp comment
         <a href={ROUTES.linkedin}>
           <img
             src={linkedin_grey}

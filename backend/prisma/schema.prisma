@@ -728,3 +728,8 @@ model GetroCompany {
   website_url                String?
   collections                String?
   managers                   String[]
+  organization_careers_pages String[]
+  status                     String?
+  scraping_enabled           Boolean
+  topics                     String[]
+  network_id                 Int?

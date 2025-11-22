@@ -39,7 +39,6 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
         console.log(error);
         return true;
     }
-// Temp comment
 });
 exports.isExistByID = isExistByID;
 const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 0, void 0, function* () {

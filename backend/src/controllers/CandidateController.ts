@@ -404,3 +404,5 @@ export class CandidateController {
       }
 
       const candidateJobInvites = []
+
+      for (const candidate of candidatesWithEmail) {

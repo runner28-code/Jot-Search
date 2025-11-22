@@ -49,6 +49,7 @@ export const saveMembers = async (members: any[]) => {
             try {
                 console.log(`Savng Getro Member with ID = ${member.id}`);
                 const existing = await db.getroMember.findFirst({
+									where: {
 										id: member.id,
 									},
 								});
@@ -118,3 +119,4 @@ export const saveJobs = async (jobs: any[]) => {
                 console.log(error);
                 console.log(`ERROR: while saving Job with ID = ${job.id}`);
             }
+        };

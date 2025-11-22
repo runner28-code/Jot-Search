@@ -32,7 +32,6 @@ import { DATASET_MAIN, Tables } from "../types/Common";
               user.password = encryptPassword(user.password);
 
               const update_query = `
-                UPDATE \`${DATASET_MAIN}.${Tables.USER}\`
                 SET password = '${user.password}'
                 WHERE email = '${user.email}'
               `;
@@ -49,3 +48,4 @@ import { DATASET_MAIN, Tables } from "../types/Common";
     } catch (error) {
         console.log(error);
     }
+

@@ -65,3 +65,4 @@ CREATE TABLE "Lead" (
     "status" TEXT,
     "timeZoneOffsetEST" TEXT,
     "type" TEXT,
+    "willRelocate" BOOLEAN,

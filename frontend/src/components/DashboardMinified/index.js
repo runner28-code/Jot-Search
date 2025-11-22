@@ -9,7 +9,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 
 export default function DashboardMinified({ location }) {
   const loggedIn = AuthService.loggedIn();
-// Temp comment
 
   if( loggedIn ) {
     return (

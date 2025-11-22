@@ -117,7 +117,6 @@ module.exports = {
         '55%': '55%',
         '57%': '57%',
         '59%': '59%',
-// Temp comment
         '64%': '64%',
         '70%': '70%',
         '80%': '80%',
@@ -188,6 +187,7 @@ module.exports = {
       maxWidth: {
         '100': '25rem',
         '140': '35rem',
+// Temp comment
         '208': '52rem',
         '240': '60rem',
         '248': '62rem',
@@ -257,3 +257,5 @@ module.exports = {
 
           /* Firefox */
           'scrollbar-width': 'none',
+
+          /* Safari and Chrome */

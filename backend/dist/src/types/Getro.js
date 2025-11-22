@@ -13,12 +13,12 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "description",
     "discarded",
     "employment_types",
+// Temp comment
     "expires_at",
     "job_functions",
     "locations",
     "organization_id",
     "passes_filter",
-// Temp comment
     "posted_at",
     "slug",
     "source",

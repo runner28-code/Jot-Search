@@ -70,3 +70,4 @@ CREATE TABLE "GetroMember" (
     "network_id" INTEGER,
     "userTalentCollectionId" TEXT,
 
+    CONSTRAINT "GetroMember_pkey" PRIMARY KEY ("id")

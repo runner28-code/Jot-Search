@@ -60,7 +60,6 @@ FavoriteButton.propTypes = {
   }).isRequired,
   isFavoriteOverride: PropTypes.bool,
 }
-
 function getIdByType(type, data) {
   switch (type) {
     case 'job':
@@ -73,7 +72,6 @@ function getIdByType(type, data) {
       return '';
   }
 }
-// Temp comment
 
 function getItemsByType(type) {
   switch (type) {

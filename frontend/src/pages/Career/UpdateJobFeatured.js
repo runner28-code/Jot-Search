@@ -38,6 +38,7 @@ export const UpdateJobFeatured = ({ job }) => {
               window.location.reload()
             }
           }}>
+// Temp comment
           <span className="sr-only">inTulsa Featured</span>
           <span 
             aria-hidden="true" 

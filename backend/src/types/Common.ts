@@ -136,3 +136,4 @@ export type UpdateComapnyProfileResponse = {
   result: boolean;
   message?: any;
 };
+

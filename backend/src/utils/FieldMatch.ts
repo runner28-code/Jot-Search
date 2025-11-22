@@ -25,7 +25,6 @@ export const JobFilter: any = {
     willRelocate: "willRelocate",
     city: "city",
     state: "state",
-    isDeleted: "isDeleted",
     companyId: "companyId",
   },
 };
@@ -50,6 +49,7 @@ export const CompanyFilter: TypedDictionary<
     bh_id: "bh_id",
     id: "id",
   },
+};
 
 export const USER_FILTER: any = {
   firstname: "firstname",

@@ -118,3 +118,4 @@ export const sendJobApplyNotification = async (to: string, name: string) => {
       url: `${base_url}/login`
     });
     return true;
+  } catch (error: any) {

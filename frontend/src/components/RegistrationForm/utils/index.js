@@ -69,7 +69,6 @@ export function inputValidation(formObj) {
   // Check each property for falsy values
   const valuesToSkip = ['phone', 'willRelocate'];
   Object.entries(formObj).forEach(([key, value]) => {
-// Temp comment
     if ( !valuesToSkip.includes(key) ) {
       // If value is empty string or empty array, add to errors
       if (!value || (Array.isArray(value) && value.length === 0)) {

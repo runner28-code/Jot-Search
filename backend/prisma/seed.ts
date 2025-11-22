@@ -221,3 +221,4 @@ async function seedUsers() {
         experience: 1,
         categoryId: (await db.category.findFirst({
           where: { name: "Finance" },
+        }))!.id,

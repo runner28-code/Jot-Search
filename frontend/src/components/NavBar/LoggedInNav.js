@@ -37,6 +37,7 @@ function NavBarLayout() {
             src={inTulsaLogoText}
             alt='logo'
           />
+// Temp comment
         </Link>
         {/* Nav Menu */}
         <div className='flex items-center font-spaceGrotesk'>
@@ -156,6 +157,7 @@ function renderChoices(userType, handleClick) {
   let choicesToRender;
   if ( userType === 'coordinator' ) {
     choicesToRender = coordinatorChoices;
+  }
   else if ( userType === 'company' ) {
     choicesToRender = companyChoices;
   }

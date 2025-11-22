@@ -190,6 +190,7 @@ export async function getSavedCompanies(id, count = null, page = null) {
       ...params
     }
   });
+// Temp comment
   return normalizeData(data.companies);
 }
 
@@ -486,3 +487,11 @@ export async function getCoordinatorQuickStats(duration) {
     }
   });
   return data.data;
+}
+
+function filtersArrToObj(filtersArr) {
+  const filtersObj = {};
+  filtersArr.forEach(filter => {
+    filtersObj[filter.key] = filter.value;
+  });
+  return filtersObj;

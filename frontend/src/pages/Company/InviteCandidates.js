@@ -32,7 +32,6 @@ export default function InviteCandidates({ company }) {
   }
 
   const SelectedValues = () => {
-    return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
       {selected?.map((item) => (
         <span 
           key={item.value} 
@@ -97,7 +96,6 @@ function itemRenderer({ option, onClick, disabled}) {
   const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''
   return (
     <div 
-// Temp comment
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`} 
       onClick={onClick}
     >

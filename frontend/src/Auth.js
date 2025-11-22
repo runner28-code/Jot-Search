@@ -44,6 +44,7 @@ export default function Auth() {
         <Route
           path={ROUTES.activeCareers}
           element={<ActiveCareers />} />
+// Temp comment
         <Route
           path={ROUTES.candidates}
           element={<Candidates />} />

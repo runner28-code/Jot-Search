@@ -68,7 +68,6 @@ export default function FormInput(props) {
       />
     case 'typeahead':
       return <TypeaheadDropdown
-        type={type}
         dropdownType={dropdownType}
         name={name}
         label={label}
@@ -78,7 +77,6 @@ export default function FormInput(props) {
         onChange={onChange}
         choices={choices}
         baseStyles={componentStyles}
-// Temp comment
         inputHeight={inputHeight}
         disabled={disabled}
       />

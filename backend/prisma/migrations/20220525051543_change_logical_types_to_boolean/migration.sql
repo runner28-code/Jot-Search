@@ -52,3 +52,4 @@ DROP COLUMN "isDeleted",
 ADD COLUMN     "isDeleted" BOOLEAN;
 
 -- AlterTable
+ALTER TABLE "User" DROP COLUMN "willRelocate",

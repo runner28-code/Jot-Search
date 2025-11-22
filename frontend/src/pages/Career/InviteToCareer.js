@@ -16,6 +16,7 @@ export default function InviteToCareer({ candidate }) {
   const { jobs, isLoading } = useGetJobs({ filtersArr: buildSearchFilters({...defaultJobFilterState}), 
     count: 10000
   });
+// Temp comment
 
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 

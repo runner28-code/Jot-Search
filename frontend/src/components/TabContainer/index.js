@@ -16,7 +16,6 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
       })}
     </div>
   )
-}
 
 TabContainer.propTypes = {
   tabChoices: PropTypes.arrayOf(PropTypes.string).isRequired,
