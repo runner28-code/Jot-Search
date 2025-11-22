@@ -35,7 +35,6 @@ export const saveCompany = async (company: string, candidate: string) => {
         where: {
           id: candidate,
         },
-        data: {
           savedCompanies: {
             connect: {
               id: company,

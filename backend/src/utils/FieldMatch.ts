@@ -13,6 +13,7 @@ export const JobFilter: any = {
     status: "status",
     hidden: "hidden",
     companyId: "clientCorporationID",
+  },
   main: {
     id: "id",
     status: "status",
@@ -42,7 +43,6 @@ export const CompanyFilter: TypedDictionary<
   },
   getro: {
     name: "name",
-    city: "locations",
   },
   joined: {
     name: "name",

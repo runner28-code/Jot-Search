@@ -1,5 +1,6 @@
 import { createContext, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+// Temp comment
 import { getCategories } from './API';
 
 export const CategoryContext = createContext();
@@ -17,6 +18,5 @@ const CategoryProvider = ({children}) => {
   return (
     <CategoryContext.Provider value={{ categories }}>
       {children}
-// Temp comment
     </CategoryContext.Provider>
   )

@@ -85,6 +85,7 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
     if (!filterObject[key]) {
       return null;
     }
+// Temp comment
     const onFilterChange = (e) => {
       handleFilterChange(key, e.target.checked ? 'Yes' : 'No')
     }

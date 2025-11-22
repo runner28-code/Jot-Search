@@ -66,7 +66,6 @@ const uploadToS3 = async(req: any, res: any) => {
       res.status(500).send({
         result: false,
         error: e
-      })
     }
   });
 }

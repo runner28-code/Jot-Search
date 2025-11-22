@@ -15,6 +15,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     city: candidateData.city,
     state: candidateData.state,
     zip: candidateData.zip,
+  });
 
   const handleInputChange = async (event) => {
     const { name, value } = event.target;

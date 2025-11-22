@@ -1,4 +1,3 @@
-import jwt from 'jsonwebtoken';
 import { User as DbUser } from "prisma/prisma-client";
 import config from '../config';
 
@@ -19,3 +18,4 @@ export const VerifyJwtToken = (token: string) => {
     }
     return null;
   } catch (error) {
+    throw error;

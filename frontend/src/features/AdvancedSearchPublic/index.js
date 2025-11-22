@@ -221,7 +221,6 @@ function FilterLayout({ activeTab, filterProps }) {
       return <CareerFilterLayout {...filterProps} />
     case 'companies':
       return <CompanyFilterLayout {...filterProps} />
-// Temp comment
     default:
       return null;
   }

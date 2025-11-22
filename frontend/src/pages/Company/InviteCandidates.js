@@ -58,6 +58,7 @@ export default function InviteCandidates({ company }) {
       {successfullySentCandidates && <div className="text-center">Invitations Sent!</div>}
 
       <SelectedValues />
+
       <MultiSelect
         isLoading={isLoading}
         options={candidateOptions}
@@ -72,6 +73,7 @@ export default function InviteCandidates({ company }) {
         <button 
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
           onClick={async () => {
+// Temp comment
             console.log({selected})
             const res = await sendCandidatesToCompanies({ companyIds: [company.id], candidateIds: selected.map((option) => option.value) })
             console.log({res})

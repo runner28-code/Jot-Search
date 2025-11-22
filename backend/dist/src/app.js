@@ -12,7 +12,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = __importDefault(require("express"));
 require("reflect-metadata");
 const dotenv_1 = __importDefault(require("dotenv"));
 const routing_controllers_1 = require("routing-controllers");
@@ -28,6 +27,7 @@ dotenv_1.default.config();
 const ALLOWED_UPLOAD_FOLDERS = ["resumes", "avatars"];
 const multerStorage = multer_1.default.diskStorage({
     destination: (req, file, cb) => {
+        const folder = req.body.type || "resumes";
         const path = __dirname + `/../uploads/${folder}`;
         console.log("upload path: ", path);
         fs_1.default.mkdirSync(path, { recursive: true });

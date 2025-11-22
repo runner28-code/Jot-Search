@@ -26,7 +26,6 @@ export const jobFilterObject = {
     'Filled',
     'Open',
     'Closed',
-// Temp comment
     'Passive',
     'Placed',
     'Hold',
@@ -43,6 +42,7 @@ export const ACTIVE_STATUSES = [
   'Open',
   'Passive'
 ]
+// Temp comment
 
 // Create default filter state based on filterObject
 const convertedJobFilters = {};

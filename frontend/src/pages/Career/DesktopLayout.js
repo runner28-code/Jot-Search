@@ -74,7 +74,6 @@ export default function DesktopLayout(props) {
             </div>
           </div>
           {/* Second row icons */}
-// Temp comment
           <div className='w-full flex items-center mt-xl'>
             {/* Employment Type */}
             <div className='w-1/3 flex items-center'>
@@ -132,7 +131,6 @@ DesktopLayout.propTypes = {
 }
 
 function renderLogo(logo) {
-  if (!logo) {
     return <div className='w-48 h-48 flex justify-center items-center border border-smokeGray border-solid object-contain mr-10'>
       <CareerIcon className='w-30 h-30 fill-royalBlue' />
     </div>

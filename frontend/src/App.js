@@ -31,12 +31,12 @@ function App() {
               path={ROUTES.signup}
               element={<SignUp />} />
             <Route
-              path={ROUTES.login}
               element={<Login />} />
             <Route
               path={ROUTES.landingPage}
               element={<LandingPage />} />
             <Route
+              path={ROUTES.careers}
               element={<Careers />} />
             <Route
               path={ROUTES.companies}

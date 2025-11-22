@@ -112,6 +112,7 @@ function DesktopCard({ dataObj, active }) {
           </div>
           {/* Remote/Onsite/Hybrid */}
           <div className='w-1/3 flex items-center pr-4'>
+            <LaptopIcon
               className='fill-midGrey h-11 w-8 mr-5' />
             <p className='text-textBlack'>{data.onSite}</p>
           </div>
@@ -199,6 +200,7 @@ function MobileCard({ dataObj, active }) {
           <p className='text-[1.5rem] text-royalBlue font-spaceGrotesk font-semibold mt-2'>{categoryString}</p>
         </div>
       </div>
+// Temp comment
     </Link>
   )
 }

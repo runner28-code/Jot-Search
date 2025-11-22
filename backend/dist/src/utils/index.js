@@ -49,6 +49,7 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
         `;
         const options = {
             query: query,
+            location: 'US',
         };
         const [job] = yield BigQueryService_1.BigQueryService.getClient().createQueryJob(options);
         const [res] = yield job.getQueryResults();
@@ -78,6 +79,7 @@ const getDataSource = (id) => {
     if (prefix === 'gt')
         return Common_1.DataSource.GETRO;
     return Common_1.DataSource.UNKNOWN;
+// Temp comment
 };
 exports.getDataSource = getDataSource;
 const genUUID = () => (0, uuid_1.v4)();

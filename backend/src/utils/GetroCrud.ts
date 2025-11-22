@@ -72,7 +72,6 @@ export const saveMembers = async (members: any[]) => {
             } catch (error) {
                 console.log(error);
                 console.log(`ERROR: while saving Member with ID = ${member.id}`);
-            }
         };
 
         return { result: true };
@@ -107,6 +106,7 @@ export const saveJobs = async (jobs: any[]) => {
 								const jobData = { ...job };
 								Object.keys(jobData).forEach((key) => {
 									if (expludeFields.includes(key)) {
+										delete jobData[key];
 									}
 								});
 				

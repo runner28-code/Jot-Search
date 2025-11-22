@@ -194,7 +194,6 @@ export async function getSavedCompanies(id, count = null, page = null) {
 }
 
 //* JOBS
-/**
  * example filtersArr:
  * [
  *  {
@@ -232,7 +231,6 @@ export async function getJobsFull(filters, count, operator, page) {
     jobs: normalizeData(data.jobs),
     total: data.total,
   }
-// Temp comment
 }
 
 export async function getJobById(id) {

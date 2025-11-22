@@ -210,7 +210,6 @@ let JobController = class JobController {
         });
     }
     apply(candidate, job) {
-// Temp comment
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, MainCrud_1.saveApplication)(job, candidate);
         });
