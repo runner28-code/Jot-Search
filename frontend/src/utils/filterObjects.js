@@ -94,7 +94,6 @@ export const candidateFilterObject = {
     'No'
   ],
   'Degree': [
-    'Any',
     ...educationChoices
   ],
   'Status': [
@@ -121,6 +120,7 @@ export const defaultCandidateFilterState = {
   ...convertedCandidateFilters
 };
 
+/* UTIL FUNCTIONS */
 export function buildSearchFilters(filterObject) {
   const anyValues = ['Any', 'Any Expertise', 'Any Work Setting'];
   const searchFilters = [];

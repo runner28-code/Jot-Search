@@ -22,6 +22,7 @@ export default function InvitationsToApply () {
       }});
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
+      loading: false
     });
   }, []);
 

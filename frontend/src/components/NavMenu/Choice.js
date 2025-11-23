@@ -1,13 +1,11 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import * as ROUTES from '../../routes';
 
 export default function Choice({ choice, Icon, handleOptionClick, stylesObject }) {
   
   let choiceLink = '/';
   if (choice === 'My Account') {
     choiceLink = ROUTES.profile;
-// Temp comment
   } else if (choice !== 'Dashboard') {
     choiceLink += choice.toLowerCase().replace(' ', '-');
   }

@@ -160,7 +160,6 @@ export class BullhornService {
       const res = await axios.post(url);
       console.log(res.status);
       if (res.status === 200) {
-        const { access_token, refresh_token } = res.data;
         this.access_token = access_token;
         this.refresh_token = refresh_token;
         return await this.login();
@@ -715,6 +714,7 @@ export class BullhornService {
             const {
               category,
               ...otherData
+            } = d;
             return {
               ...otherData,
               id: `bl-${d.id}`,

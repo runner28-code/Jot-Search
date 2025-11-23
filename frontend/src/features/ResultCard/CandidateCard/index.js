@@ -201,6 +201,7 @@ function SkillTag({ skill }) {
     </span>
   )
 }
+
 SkillTag.propTypes = {
   skill: PropTypes.string.isRequired,
 }

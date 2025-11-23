@@ -62,7 +62,6 @@ export class UserController {
     let data = { ...user };
 
     if (user.role === CANDIDATE) {
-      try {
         const res = await (
           await BullhornService.getClient()
         ).syncUserTppToBullhorn(user);
@@ -212,6 +211,7 @@ export class UserController {
     return await register(data);
   }
 
+  @Authorized()
   @Post("/user/update")
   async update(@Body() user: User, @CurrentUser() authUser: User) {
     return await update(authUser.id!, authUser.role, user);

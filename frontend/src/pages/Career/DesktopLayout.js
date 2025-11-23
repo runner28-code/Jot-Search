@@ -107,7 +107,6 @@ export default function DesktopLayout(props) {
             <UpdateJobStatus job={careerData} />
             {careerData.datasource === 'bullhorn' && <UpdateJobFeatured job={careerData} />}
           </div>
-// Temp comment
         )
       }
     </section>
@@ -171,7 +170,6 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
       <p
         className='font-spaceGrotesk text-textBlack text-md mb-10'
         dangerouslySetInnerHTML={{ __html: careerData.description || 'No description listed' }}
-      />
       {renderSkillsSection(skillList)}
       {renderAboutCompanySection(careerData, companyName)}
       {/* Apply */}

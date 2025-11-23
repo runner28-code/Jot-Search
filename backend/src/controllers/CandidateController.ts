@@ -372,7 +372,6 @@ export class CandidateController {
         where: {
           id: {
             in: body.candidateIds,
-          },
         },
       });
 

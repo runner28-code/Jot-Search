@@ -13,6 +13,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   function handleSubmit() {
     setEditMode(false);
     handleContentUpdate(contentObject);
+  }
 
   function handleCancel() {
     setContentObject(contentObjectProp);
@@ -21,7 +22,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
 
   function handlePropertyChange(property, value) {
     setContentObject({ ...contentObject, [property]: value });
-  }
 
   return (
     <section className='relative mb-14'>

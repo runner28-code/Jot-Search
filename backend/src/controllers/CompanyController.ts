@@ -252,6 +252,7 @@ export class CompanyController {
           company.logo = getroCompany.logo_url
           company.linkedin_url = getroCompany.linkedin_url
         }
+        return company
       })
 
       const response = {

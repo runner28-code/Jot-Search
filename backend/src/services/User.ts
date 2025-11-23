@@ -471,6 +471,7 @@ export const getCoordinatorDashboardStats = async (days: number) => {
         gte: moment().subtract(days * 2 - 1, 'days').startOf('day').toDate(),
         lt: moment().subtract(days, 'days').endOf('day').toDate()
       }
+    }
   });
   const newApplicationsCompare = (newApplicationsInCurrentPeriod - newApplicationsInPreviousPeriod) * 100 / newApplicationsInCurrentPeriod
 

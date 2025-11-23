@@ -39,7 +39,6 @@ export default function FeaturedJobs() {
     <section className='py-48 bg-neutral-100 flex flex-col flex-wrap items-center'>
       { renderColorShapes() }
       <h2 className={ width >= 990 ? titleStyles : titleStylesMoible }>Featured Opportunities</h2>
-      <div className='flex mt-12 flex-wrap'>
         {
           isLoading ?
             <LoadingSpinner />
@@ -47,6 +46,7 @@ export default function FeaturedJobs() {
             jobs.map((career, index) => {
               const categoryString = career.category?.name.toUpperCase() || 'CATEGORY N/A';
               return(
+                <Link
                   to={`${ROUTES.careers}/${career.id}`}
                   key={index}
                   className={ width >= 990 ? linkStyles : linkStylesMobile }

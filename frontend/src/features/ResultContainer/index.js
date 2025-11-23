@@ -19,6 +19,7 @@ export default function ResultContainer(props) {
     compact = false,
     isFavoriteOverride = null,
     agoText = null,
+// Temp comment
     containerClass = undefined,
     selectableProps = null,
   } = props;
@@ -38,7 +39,6 @@ export default function ResultContainer(props) {
     if ( !limit ) {
       return null;
     }
-// Temp comment
 
     let pluralizedType = pluralizedTypes[type];
     const capitalizedType = pluralizedType.charAt(0).toUpperCase() + pluralizedType.slice(1);

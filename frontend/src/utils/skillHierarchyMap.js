@@ -113,7 +113,6 @@ export const skills = [
   'Brand Marketing',
   'Branding',
   'Budget Management',
-  'Budgeting',
   'Business Development',
   'Business Intelligence',
   'C#',
@@ -295,7 +294,6 @@ export const skills = [
   'Photoshop',
   'PHP',
   'PMP',
-// Temp comment
   'Policy Development',
   'Portuguese',
   'PostgreSQL',

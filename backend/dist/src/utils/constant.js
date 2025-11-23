@@ -289,6 +289,7 @@ const job_filter_exclude_keys = [
     "phlebotomist",
     "phone representative",
     "photographer",
+    "photography",
     "physical",
     "physician",
     "physics",

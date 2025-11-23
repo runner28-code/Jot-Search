@@ -11,3 +11,4 @@ CREATE TABLE "Address" (
     "countryName" TEXT NOT NULL,
     "countryID" INTEGER NOT NULL,
 
+    CONSTRAINT "Address_pkey" PRIMARY KEY ("id")

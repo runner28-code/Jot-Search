@@ -74,7 +74,6 @@ const job_filter_exclude_keys = [
   "claims",
   "class",
   "classroom",
-  "cleaner",
   "clerk",
   "clinic",
   "clinical",

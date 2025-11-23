@@ -108,7 +108,6 @@ HeaderContent.propTypes = {
     state: PropTypes.string,
     numEmployees: PropTypes.number,
   })
-// Temp comment
 }
 
 export default function Header({ companyData }) {

@@ -8,6 +8,7 @@ const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-h4 text-charco
 const hrStyles = 'mb-10 border-smokeGray ';
 
 export const UpdateJobStatus = ({ job }) => {
+// Temp comment
   const { saveJob, isLoading, isSuccess } = useUpdateJob()
   const [updatedJob, setUpdatedJob] = useState(job)
 
@@ -27,6 +28,7 @@ export const UpdateJobStatus = ({ job }) => {
             'Draft',
             'Closed'
           ]} 
+          currentChosen={updatedJob.status}
           name='status'
           inputStyles='w-100 vw-480:w-120 vw-640:w-140 border-lightGrey border-2 border-solid rounded-2xl p-4 vw-480:text-lg h-24 '
           optionStyles={'text-lg'}

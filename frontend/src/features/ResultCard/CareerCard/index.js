@@ -219,6 +219,7 @@ MobileCard.propTypes = {
       salaryUnit: PropTypes.string,
       createdAt: PropTypes.string,
       category: PropTypes.shape({
+        id: PropTypes.number,
         name: PropTypes.string
       })
     }).isRequired,

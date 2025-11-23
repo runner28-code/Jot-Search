@@ -24,6 +24,7 @@ export default function GlobalSearch({ placeholder }) {
   // State and ref to listen for outside clicks
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
+// Temp comment
 
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
@@ -91,6 +92,7 @@ export default function GlobalSearch({ placeholder }) {
         <SearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
+          placeholder={ placeholder } 
           alternateStylesObject={ stylesObject } />
       </div>
       { renderResultsContainer( results, searchTerm ) }

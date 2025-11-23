@@ -58,7 +58,6 @@ export default function CandidateFilterLayout(props) {
   }
 
 
-// Temp comment
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
@@ -75,6 +74,7 @@ export default function CandidateFilterLayout(props) {
           placeholder='Search Candidates'
           additionalClasses='w-1/2'
         />
+// Temp comment
         <button
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
