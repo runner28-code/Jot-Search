@@ -125,6 +125,7 @@ StatCard.propTypes = {
   value: PropTypes.shape({
     count: PropTypes.number.isRequired,
     compare: PropTypes.number.isRequired
+  }).isRequired
 }
 
 function renderDeviation(deviationPercentage) {

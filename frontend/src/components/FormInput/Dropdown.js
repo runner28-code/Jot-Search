@@ -38,7 +38,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
     <div className={ rootClass }>
       {choices.map((choice, index) => {
         return (<div key={choice + '-container'}>
-// Temp comment
           <div 
             onClick={() => handleClick(choice)}
             className='cursor-pointer flex items-center justify-between'

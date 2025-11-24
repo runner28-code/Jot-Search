@@ -10,7 +10,6 @@ export default function DetailsHeader({ type, source }) {
   switch(type) {
     case 'candidate':
       Icon = CandidatesIcon;
-// Temp comment
       break;
     case 'company':
       Icon = CompanyIcon;

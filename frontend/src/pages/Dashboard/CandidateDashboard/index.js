@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import Home from '../../../assets/icons/home.svg';
 import AdvancedSearch from '../../../features/AdvancedSearch';

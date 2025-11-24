@@ -70,7 +70,6 @@ export default function FormInput(props) {
       return <TypeaheadDropdown
         type={type}
         dropdownType={dropdownType}
-        name={name}
         label={label}
         placeholder={placeholder}
         currentChosen={value}
@@ -79,7 +78,6 @@ export default function FormInput(props) {
         choices={choices}
         baseStyles={componentStyles}
         inputHeight={inputHeight}
-// Temp comment
         disabled={disabled}
       />
     case 'password': // fall through to default

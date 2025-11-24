@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import CandidateCard from '../ResultCard/CandidateCard';
+import CompactCareerCard from '../ResultCard/CompactCareerCard';
 import CareerCard from '../ResultCard/CareerCard';
 import CompanyCard from '../ResultCard/CompanyCard';
 import ViewAllLink from '../../components/ViewAllLink';
@@ -16,7 +17,6 @@ export default function ResultContainer(props) {
     header, 
     active,
     compact = false,
-    isFavoriteOverride = null,
     agoText = null,
     containerClass = undefined,
     selectableProps = null,

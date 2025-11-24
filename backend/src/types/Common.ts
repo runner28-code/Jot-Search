@@ -75,7 +75,6 @@ export type JobSearchByFilterResponse =
   | {
       jobs?: Job[];
       total?: number;
-      message?: any;
     }
   | AllJobsResponse;
 

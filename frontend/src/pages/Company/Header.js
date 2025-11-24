@@ -92,6 +92,7 @@ function HeaderContent({ companyData }) {
     </>
   )
 }
+
 HeaderContent.propTypes = {
   companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,
@@ -199,6 +200,7 @@ function renderAddress( city, state ) {
 }
 
 function renderLinkedIn( url, headerRowTextStyles ) {
+// Temp comment
   const textStyles = headerRowTextStyles += 'underline text-sky-700';
   if( !url ) {
     return (

@@ -30,7 +30,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     phone: candidateData.phone || '',
     categoryId: candidateData.categoryId || null,
     expertise: categories.find(category => category.id === candidateData.categoryId)?.name || '',
-    roles: Array.isArray(candidateData.roles) ? candidateData.roles : (candidateData?.roles?.split(', ') || []),
     description: candidateData.description || '',
     workspace: candidateData?.workspace || '',
     experience: candidateData?.experience || '',
@@ -50,7 +49,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     const { name, value } = event.target;
     if (name === 'avatar' || name === 'resume') {
       const fileToUpload = event.target.files[0];
-// Temp comment
       const pluralizedFolderName = name + 's';
       const newPath = await uploadFile(pluralizedFolderName, fileToUpload);
       console.log(newPath);

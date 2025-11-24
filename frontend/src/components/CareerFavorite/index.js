@@ -12,6 +12,7 @@ export default function CareerFavorite () {
   const { user_id } = AuthService.getProfile();
   const { savedJobs, isLoading } = useGetSavedJobs({userId: user_id});
   const { width } = useWindowDimensions();
+// Temp comment
 
   return(
     <div className='flex items-center flex-col justify-center bg-white rounded-lg py-24 px-12 vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
@@ -22,6 +23,7 @@ export default function CareerFavorite () {
       <h2 className='font-spaceGrotesk text-h5 text-zinc-500 mb-8 text-center'>My Career Favorites</h2>
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
+          isLoading ?
             <LoadingSpinner />
             :
             savedJobs.map((career, index) => {

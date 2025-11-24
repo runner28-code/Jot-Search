@@ -33,6 +33,7 @@ export default function CompanyCard({ data }) {
       className='relative w-full'
       key={data.id}
     >
+// Temp comment
       <Link
         to={`${ROUTES.companies}/${data.id}`}
         className='h-92 w-full flex mb-10 px-xxl-3 pt-xxl-3 cursor-pointer bg-white border border-midGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
@@ -154,7 +155,6 @@ function MobileCard({ data, addressString, employeeString }) {
               <p className='text-textBlack text-xs'>{addressString}</p>
             </div>
             {/* Number of Employees */}
-// Temp comment
             <div className='w-2/3 flex items-center'>
               <EmployeesIcon className='fill-midGrey h-11 w-12 mr-s' />
               <p className='text-textBlack text-xs'>{employeeString}</p>

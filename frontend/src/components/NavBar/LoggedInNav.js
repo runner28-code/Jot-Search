@@ -61,6 +61,7 @@ const DesktopNavBarLayout = () => {
           src={inTulsaLogoText}
           alt='logo'
         />
+// Temp comment
       </Link>
       {/* Nav Menu */}
       <div className='flex items-center font-spaceGrotesk'>
@@ -151,6 +152,7 @@ DropdownContent.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   handleClick: PropTypes.func.isRequired
 }
+
 function renderChoices(userType, handleClick) {
   let choicesToRender;
   if ( userType === 'coordinator' ) {

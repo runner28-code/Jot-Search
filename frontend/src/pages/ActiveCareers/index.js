@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import PageHeader from '../../components/PageHeader';
 import ResultsHeader from '../../components/ResultsHeader';
 import FilterSearch from '../../components/FilterSearch';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -19,7 +18,6 @@ export default function ActiveCareers() {
   const { companyId } = AuthService.getProfile();
   const [page, setPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
-// Temp comment
 
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {

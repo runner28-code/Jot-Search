@@ -34,6 +34,7 @@ export default function ChoicesContainer(props) {
   
   return (<>
     { renderRoleChoices({ userRole, handleOptionClick }) }
+    { userRole === 'guest' ? 
       <LoggedOutButtons 
         handleOptionClick={handleOptionClick}
         stylesObject={stylesObject} /> 

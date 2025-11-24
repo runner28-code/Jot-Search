@@ -591,6 +591,7 @@ export const getStats = async (userId: string) => {
       savedCompaniesCount: null,
       totalCompaniesCount: null,
       message: error,
+    };
   }
 };
 

@@ -12,7 +12,6 @@
 ALTER TABLE "Candidate" DROP COLUMN "firstname",
 DROP COLUMN "lastname",
 ADD COLUMN     "firstName" TEXT,
-ADD COLUMN     "lastName" TEXT,
 DROP COLUMN "ethnicity",
 ADD COLUMN     "ethnicity" TEXT[],
 DROP COLUMN "experience",

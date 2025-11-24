@@ -19,7 +19,6 @@ const hrStyles = 'mb-10 border-smokeGray ';
 export default function DesktopLayout(props) {
   const {
     careerData,
-// Temp comment
     categoryString,
     addressString,
     salaryString,
@@ -152,7 +151,6 @@ function renderAboutCompanySection(careerData, companyName) {
     <hr className={hrStyles} />
     {/* About Company */}
     <h4 className={sectionHeaderStyles}>{headerString}</h4>
-    <p
       className='font-spaceGrotesk text-textBlack text-md mb-5'
       dangerouslySetInnerHTML={{ __html: careerData.company?.description || 'No Company Description Available' }}
     />

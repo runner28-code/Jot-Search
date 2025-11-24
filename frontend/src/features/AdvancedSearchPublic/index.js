@@ -154,7 +154,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       prefetchFunc: (page) => prefetchCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page })
     },
     companies: {
-// Temp comment
       filterTemplate: {},
       activeResults: companies,
       totalResults: totalCompanies,

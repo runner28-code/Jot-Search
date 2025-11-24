@@ -30,7 +30,6 @@ export default function ResetPassword() {
 
     if( password !== confirmPassword ) {
       setMatch(false);
-// Temp comment
     }
 
     if( password === confirmPassword ) {

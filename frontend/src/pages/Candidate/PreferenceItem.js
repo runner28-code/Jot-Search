@@ -44,7 +44,6 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
 
   const handleToggle = () => {
     if (disabled) {
-// Temp comment
       return null;
     }
     const mockEvent = {

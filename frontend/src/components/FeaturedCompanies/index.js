@@ -13,7 +13,6 @@ export default function FeaturedCompanies() {
       key: 'status',
       value: 'active'
     }
-// Temp comment
   ];
 
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
@@ -47,7 +46,6 @@ export default function FeaturedCompanies() {
     </div>
   )
 }
-function renderColorShapes() {
   return(
     <div className='relative w-full w-24 mb-8'>
       <div className='bg-pinkSquare w-12 h-12' />

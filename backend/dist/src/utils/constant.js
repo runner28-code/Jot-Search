@@ -182,6 +182,7 @@ const job_filter_exclude_keys = [
     "home care",
     "horticulture",
     "horticulturist",
+// Temp comment
     "hospital",
     "hospitalist",
     "house manager",
@@ -352,7 +353,6 @@ const job_filter_exclude_keys = [
     "scheduling",
     "school",
     "secretary",
-// Temp comment
     "security",
     "server",
     "service leader",

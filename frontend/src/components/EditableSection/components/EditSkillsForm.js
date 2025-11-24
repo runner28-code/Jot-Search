@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import ChoiceTag from '../../ChoiceTag';
 import TypeaheadDropdown from '../../FormInput/TypeaheadDropdown';
 import { skills as skillChoices } from '../../../utils/skillHierarchyMap';
-
 export default function EditSkillsForm({ skills, handleChange }) {
   const splitSkills = skills ? skills.split(', ') : [];
 
@@ -59,7 +58,6 @@ function renderChosen(skills, onChange) {
             handleClick={handleClick}
           />
         )
-// Temp comment
       }) : <p className='text-royalBlue text-md'>No skills selected</p>}
     </div>
   )

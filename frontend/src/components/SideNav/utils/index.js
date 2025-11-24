@@ -21,6 +21,7 @@ export const choices = {
     icon: DashboardIcon,
     link: ROUTES.dashboard,
   },
+  profile: {
     label: 'My Profile',
     icon: ApplicationIcon,
     link: ROUTES.profile,

@@ -31,7 +31,6 @@ DashboardMinifiedDesktop.propTypes = {
   location: PropTypes.string.isRequired
 }
 
-function CareerHeader ({ location }) {
   const loggedIn = AuthService.loggedIn();
 
   let userRole = AuthService.getUserRole();
@@ -44,6 +43,7 @@ function CareerHeader ({ location }) {
         <span className='flex flex-row text-lg items-center text-dply '>
           <CareerIcon className='mr-6 fill-royalBlue ' />
           <h2 className='font-spaceGrotesk text-royalBlue font-bold '>Career Details</h2>
+        </span>
         <Link
           className='text-blue underline text-royalBlue'
           to={ROUTES.careers}

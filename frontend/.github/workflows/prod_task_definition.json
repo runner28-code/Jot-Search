@@ -17,7 +17,7 @@
             ],
             "essential": true,
             "logConfiguration": {
-                "options": {
+                "logDriver": "awslogs",
                    "awslogs-group" : "/ecs/prod-site-frontend-task",
                    "awslogs-region": "us-east-1",
                    "awslogs-stream-prefix": "ecs"
