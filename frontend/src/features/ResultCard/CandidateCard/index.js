@@ -72,7 +72,6 @@ export default function CandidateCard({ data, disableLink }) {
             </div>
             {/* Years Experience */}
             <div className='w-1/3 flex items-center'>
-// Temp comment
               <img
                 src={experienceIcon}
                 className='h-8 mr-5' />
@@ -165,6 +164,7 @@ function renderActiveStatus(candidate) {
   return null;
 }
 
+// Temp comment
 function NewLeadLabel({ status }) {
   if (status === 'New Lead') {
     return (

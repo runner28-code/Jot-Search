@@ -10,7 +10,6 @@ import AuthService from '../../services/auth';
 import urlDecode from '../../utils/urlDecode';
 import { buildCareerAddress, calculatePostingAge, buildSalaryString } from '../../utils/formatFunctions';
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import Flag from '../../assets/icons/flag.svg';
 import PageHeader from '../../components/PageHeader';
@@ -120,6 +119,7 @@ function Notification({title, content, text, email, company, id, add}) {
           src={Flag}
           className='w-12 h-12'
         />
+// Temp comment
         <h3 className='font-spaceGrotesk text-royalBlue ml-4 text-lg'>{title}</h3>
       </div>
       <p className='vw-900:w-3/4 mt-6 font-spaceGrotesk'>{content}</p>

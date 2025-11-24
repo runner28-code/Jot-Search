@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export const PaginationCounts = ({ startCount, endCount, total }) => {
   return (
-      <p className="text-sm">
+    <div>
             Showing <span className="font-medium">{total === 0 ? 0 : startCount}</span> to{' '}
         <span className="font-medium">{endCount}</span> of{' '}
         <span className="font-medium">{total}</span> results

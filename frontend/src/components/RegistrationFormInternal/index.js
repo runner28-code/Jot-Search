@@ -135,7 +135,6 @@ export default function RegistrationFormInternal(loggedIn) {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
     setErrors([]);
     setFormObj({
@@ -177,7 +176,6 @@ export default function RegistrationFormInternal(loggedIn) {
   }
 
   function handleCommunityChoice(name, value) {
-// Temp comment
     setFormObj({
       ...formObj,
       referredBy: value

@@ -173,7 +173,6 @@ DesktopCard.propTypes = {
     role: PropTypes.string,
   }).isRequired,
   active: PropTypes.bool,
-}
 
 function MobileCard({ dataObj, active }) {
   const { data } = dataObj;

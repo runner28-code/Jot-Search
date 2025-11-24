@@ -60,7 +60,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   }
 
   const [filterObject, setFilterObject] = useState(initialFilterState);
-  const [page, setPage] = useState(1);
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
@@ -175,7 +174,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     handleSearchClick: handleSearchClick,
     clearFilters: clearFilters,
   };
-// Temp comment
   const { PaginatedControls } = usePaginatedControls({ page, setPage, total: totalResults, itemsPerPage: ITEMS_PER_PAGE, prefetchFunc });
   return (
     <div className='w-full'>

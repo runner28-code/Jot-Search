@@ -53,6 +53,7 @@ export default function ReferralSearch() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   function handleAdd(_, jobArray) {
+// Temp comment
     const idToAdd = jobArray[jobArray.length - 1];
     const jobToAdd = choices.find(job => job.id === idToAdd);
 

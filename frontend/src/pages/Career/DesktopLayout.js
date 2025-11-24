@@ -151,7 +151,9 @@ function renderAboutCompanySection(careerData, companyName) {
     <hr className={hrStyles} />
     {/* About Company */}
     <h4 className={sectionHeaderStyles}>{headerString}</h4>
+    <p
       className='font-spaceGrotesk text-textBlack text-md mb-5'
+// Temp comment
       dangerouslySetInnerHTML={{ __html: careerData.company?.description || 'No Company Description Available' }}
     />
   </>)

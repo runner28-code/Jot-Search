@@ -99,6 +99,7 @@ export async function saveCandidate(userId, candidateId) {
   }
   return normalizeData(data);
 }
+
 // COORDINATOR AUTH REQUIRED (handled on back-end), can be used to add any user type
 export async function addUser(userObject) {
   try {
@@ -176,7 +177,6 @@ export async function saveCompany(candidateId, companyId) {
     AuthService.toggleSavedCompany(companyId, 'save');
   } else {
     AuthService.toggleSavedCompany(companyId, 'unsave');
-  }
   return normalizeData(data);
 }
 

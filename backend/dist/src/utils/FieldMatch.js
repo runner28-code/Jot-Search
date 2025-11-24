@@ -56,6 +56,7 @@ exports.USER_FILTER = {
     skills: "skills",
     skillSet: "skillSet",
     category: "category",
+    status: "status",
     email: "email",
     bh_email: "bh_email",
     companyName: "companyName",

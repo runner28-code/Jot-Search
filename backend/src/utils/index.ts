@@ -104,7 +104,6 @@ export const getFilterConditions = (
             specialHandlers,
             nonStringFields
           );
-        return opt.value.map(baseCondition).join(` ${operator} `);
       } else {
         return determineCondition(opt.key, opt.value, specialHandlers);
       }

@@ -71,6 +71,7 @@ export default function InviteCandidates({ job }) {
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}
+      />
       <div className='flex space-x-8'>
         <button
           className='bg-blue-500 text-white text-lg rounded-md px-4 py-2 flex justify-center items-center'
@@ -102,7 +103,6 @@ function itemRenderer({ option, onClick, disabled }) {
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`}
       onClick={onClick}
     >
-      <div className="flex items-center space-x-4 pb-2 border-b-2 ">
         {avatarUrl ?
           <img
             className='w-20 h-20'

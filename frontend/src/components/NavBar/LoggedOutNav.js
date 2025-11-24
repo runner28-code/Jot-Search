@@ -42,7 +42,6 @@ function MobileNavBarLayout() {
       <div className='flex justify-center'>
         { renderGlobalSearch() }
       </div>
-    </nav>
   )
 }
 
@@ -69,7 +68,6 @@ function DesktopNavBarLayout() {
           className='flex items-center mx-4 vw-1350:mx-8 vw-1440:mx-12'
         >
           <span className='text-ml text-black70%'>Our Website</span>
-// Temp comment
           <HiOutlineExternalLink className='stroke-smokeGray h-7 w-7 ml-3' />
         </a>
         <Link

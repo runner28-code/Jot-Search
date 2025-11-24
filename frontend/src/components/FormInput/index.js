@@ -70,6 +70,7 @@ export default function FormInput(props) {
       return <TypeaheadDropdown
         type={type}
         dropdownType={dropdownType}
+        name={name}
         label={label}
         placeholder={placeholder}
         currentChosen={value}

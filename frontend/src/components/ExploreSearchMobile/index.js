@@ -1,4 +1,3 @@
-// Temp comment
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -19,6 +18,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     if (filterState.title) {
       params.title = filterState.title;
     }
+// Temp comment
     if (filterState['On-Site/Remote'] !== 'Any Work Setting') {
       params['On-Site/Remote'] = filterState['On-Site/Remote'];
     }

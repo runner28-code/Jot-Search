@@ -50,7 +50,6 @@ function HeaderContent({ companyData }) {
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <CareerIcon
               className={headerIconStyles}
-            />
             <OpenCareers
               styles={headerRowTextStyles}
               companyId={companyData.id}
@@ -200,7 +199,6 @@ function renderAddress( city, state ) {
 }
 
 function renderLinkedIn( url, headerRowTextStyles ) {
-// Temp comment
   const textStyles = headerRowTextStyles += 'underline text-sky-700';
   if( !url ) {
     return (

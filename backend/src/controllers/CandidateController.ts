@@ -356,7 +356,6 @@ export class CandidateController {
 
   @Authorized()
   @Post("/sendJobs")
-  async sendJobs(
     @CurrentUser() authUser: User,
     @Body() body: { jobIds: string[]; candidateIds: string[] }
   ): Promise<any> {

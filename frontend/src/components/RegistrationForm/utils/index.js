@@ -78,7 +78,6 @@ export function inputValidation(formObj) {
   });
 
   if( formObj.state.length !== 2 ) {
-// Temp comment
     newErrors.push('state');
   }
   if( formObj.zip.length !== 5 || isNaN(formObj.zip) ) {

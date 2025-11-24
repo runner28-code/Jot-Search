@@ -39,6 +39,7 @@ export default function Apply() {
   const navigate = useNavigate();
   const isLoggedIn = AuthService.loggedIn();
   // State
+// Temp comment
   const [career, setCareer] = useState(defaultCareerState);
   const [originalObject, setOriginalObject] = useState({});
   const [applicationObject, setApplicationObject] = useState(defaultState);

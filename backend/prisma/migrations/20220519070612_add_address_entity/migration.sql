@@ -9,5 +9,6 @@ CREATE TABLE "Address" (
     "timezone" TEXT,
     "countryCode" INTEGER NOT NULL,
     "countryName" TEXT NOT NULL,
+    "countryID" INTEGER NOT NULL,
 
     CONSTRAINT "Address_pkey" PRIMARY KEY ("id")

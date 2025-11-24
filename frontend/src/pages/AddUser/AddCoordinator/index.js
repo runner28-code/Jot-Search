@@ -45,7 +45,6 @@ export default function AddCoordinator() {
           errors: {},
         });
       }, 2000);
-// Temp comment
     }
   }, [submissionObject.success]);
 
@@ -71,6 +70,7 @@ export default function AddCoordinator() {
     setFormObject({ ...formObject, [name]: value });
   }
 
+// Temp comment
   function handleSubmit(e) {
     e.preventDefault();
 

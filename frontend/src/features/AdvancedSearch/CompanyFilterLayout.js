@@ -19,10 +19,10 @@ export default function CompanyFilterLayout(props) {
           placeholder='Search Companies'
           additionalClasses='w-1/2'
         />
-        <button
           className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
         >
+          Clear All
         </button>
       </div>
     </div>
