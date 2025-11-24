@@ -60,7 +60,6 @@ export class CategoryController {
         total: categories?.length,
         message: null,
       };
-    } catch (error) {
       console.log(error);
       return {
         message: error,

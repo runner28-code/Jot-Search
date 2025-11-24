@@ -73,7 +73,6 @@ export default function RegistrationForm(loggedIn) {
       // Return and Re-render with errors if any are found
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
-        setErrorBlock('Please fill out all required fields.');
         setSubmissionObject({
           loading: false,
           success: false,

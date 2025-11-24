@@ -21,7 +21,6 @@ export const choices = {
     icon: DashboardIcon,
     link: ROUTES.dashboard,
   },
-  profile: {
     label: 'My Profile',
     icon: ApplicationIcon,
     link: ROUTES.profile,
@@ -76,6 +75,7 @@ export const choices = {
 // Map choices to appropriate icons
 export const candidateChoices = [
   choices.dashboard,
+  choices.profile,
   choices.myApplications,
   choices.myFavorites,
   choices.careers,

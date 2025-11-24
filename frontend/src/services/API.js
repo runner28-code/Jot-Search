@@ -481,7 +481,6 @@ export async function getCompanyQuickStats(duration) {
 
 export async function getCoordinatorQuickStats(duration) {
   const { data } = await API.get(ROUTES.coordinatorQuickStats, {
-    params: {
       duration
     }
   });

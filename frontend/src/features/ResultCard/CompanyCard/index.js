@@ -89,6 +89,7 @@ export default function CompanyCard({ data }) {
               >
                 Company Website
               </a>
+            </div>
           </div>
         </div>
       </Link>
@@ -153,6 +154,7 @@ function MobileCard({ data, addressString, employeeString }) {
               <p className='text-textBlack text-xs'>{addressString}</p>
             </div>
             {/* Number of Employees */}
+// Temp comment
             <div className='w-2/3 flex items-center'>
               <EmployeesIcon className='fill-midGrey h-11 w-12 mr-s' />
               <p className='text-textBlack text-xs'>{employeeString}</p>

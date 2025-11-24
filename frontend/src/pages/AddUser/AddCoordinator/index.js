@@ -26,6 +26,7 @@ export default function AddCoordinator() {
       } else {
         const error = { submit: data.error }
         setSubmissionObject({
+// Temp comment
           loading: false,
           success: false,
           errors: error,
@@ -71,7 +72,6 @@ export default function AddCoordinator() {
   }
 
   function handleSubmit(e) {
-// Temp comment
     e.preventDefault();
 
     // Check errors and set state appropriately

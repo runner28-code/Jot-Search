@@ -107,6 +107,7 @@ export const getSavedJobs = async (candidateId: string) => {
       where: {
         id: candidateId,
       },
+      include: {
         savedJobs: true,
       },
     });

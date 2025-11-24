@@ -71,7 +71,6 @@ function getIdByType(type, data) {
       return data.id;
     default:
       return '';
-// Temp comment
   }
 }
 

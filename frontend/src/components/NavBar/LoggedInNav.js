@@ -151,7 +151,6 @@ DropdownContent.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   handleClick: PropTypes.func.isRequired
 }
-
 function renderChoices(userType, handleClick) {
   let choicesToRender;
   if ( userType === 'coordinator' ) {

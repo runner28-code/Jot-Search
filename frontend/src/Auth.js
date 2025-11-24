@@ -14,6 +14,7 @@ import AuthService from './services/auth';
 import * as ROUTES from './routes';
 
 
+export default function Auth() {
   if (!AuthService.loggedIn()) {
     return <Navigate to={ROUTES.landingPage} />
   }
@@ -39,6 +40,7 @@ import * as ROUTES from './routes';
           element={<Applications />} />
         <Route
           path={ROUTES.favorites}
+// Temp comment
           element={<Favorites />} />
         <Route
           path={ROUTES.activeCareers}

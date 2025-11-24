@@ -57,6 +57,5 @@ export function inputValidation(formObj) {
     newErrors.push('password', 'verifyPassword');
   }
   if (formObj.skills.length < 3 ) {
-    newErrors.push('skills');
   }
   return newErrors;

@@ -81,7 +81,6 @@ function renderLocation() {
         <span className='text-white text-lg tracking-wide'>Tulsa, OK</span>
       </div>
     )
-// Temp comment
   }
 }
 

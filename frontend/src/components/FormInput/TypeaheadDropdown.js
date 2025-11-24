@@ -132,7 +132,6 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
           <ChoiceTag 
             label={choice} 
             isActive={isActive} 
-// Temp comment
             handleClick={handleTagClick}
             key={choice} />
         )

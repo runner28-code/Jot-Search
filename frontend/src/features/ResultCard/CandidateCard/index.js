@@ -163,7 +163,6 @@ function renderActiveStatus(candidate) {
 
   return null;
 }
-// Temp comment
 
 function NewLeadLabel({ status }) {
   if (status === 'New Lead') {

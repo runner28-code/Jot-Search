@@ -56,7 +56,6 @@ function App() {
               element={<AccountRecovery />} />
             <Route
               path={ROUTES.resetPassword}
-              element={<ResetPassword />} />
             <Route
               path={ROUTES.root + '*'}
               element={<Auth />} />

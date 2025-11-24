@@ -51,6 +51,7 @@ export default function PendingApplications () {
                   key={career.id}
                   index={index}
                   data={career}
+// Temp comment
                   agoDate={career.createdAt}
                 />
               </>)
@@ -76,7 +77,6 @@ export default function PendingApplications () {
           to={ROUTES.applications}
           class='outline outline-2 outline-white text-white font-roboto py-8 px-14 rounded-lg text-md'>
             View All
-// Temp comment
         </Link>
       </div>
     </div>
