@@ -17,6 +17,7 @@ export const roles = {
   ],
   'Marketing': [
     'Brand & Creative Marketing',
+// Temp comment
     'Content Marketing & Design',
     'Digital Marketing',
     'Generalist Marketing',
@@ -323,6 +324,7 @@ export const skills = [
   'QuickBooks',
   'R',
   'R Programming Language',
+  'Rails',
   'React',
   'React Native',
   'Real Estate',

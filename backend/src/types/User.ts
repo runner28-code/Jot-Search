@@ -90,7 +90,6 @@ export const IUSER = {
   hourlyRate: "",
   willRelocate: "",
   willReceiveNotification: false,
-  ethnicity: "",
   workAuthorized: "",
   disability: "",
   occupation: "",

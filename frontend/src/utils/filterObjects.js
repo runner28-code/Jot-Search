@@ -40,7 +40,6 @@ export const jobFilterObject = {
 export const ACTIVE_STATUSES = [
   'Active',
   'Open',
-  'Passive'
 ]
 
 // Create default filter state based on filterObject
@@ -140,7 +139,6 @@ export function buildSearchFilters(filterObject) {
     }
   });
   return searchFilters
-// Temp comment
 }
 
 export function buildSearchFiltersObj(filterObject) {

@@ -168,7 +168,6 @@ function renderChoices(userType, handleClick) {
   }
 
   const choicesLength = choicesToRender.length;
-// Temp comment
   const selected = findSelectedFromPath();
 
   return (<>

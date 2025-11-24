@@ -33,7 +33,6 @@ export function renderErrorBlock(errorBlock) {
     )
   }
 }
-// Temp comment
 
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
@@ -52,7 +51,6 @@ export function renderHeader(addType) {
           <Link
             to={ROUTES.login}
             className='text-sm text-royalBlue leading-loose underline mx-4'
-          >
             Log in here.
           </Link>
         </div>

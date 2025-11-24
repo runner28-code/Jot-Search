@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ALLOWED_GETRO_FILTERS = void 0;
 exports.ALLOWED_GETRO_FILTERS = new Set([
     "id",
     "application_method",
@@ -10,7 +9,6 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "compensation_min",
     "compensation_period",
     "compensation_public",
-// Temp comment
     "description",
     "discarded",
     "employment_types",

@@ -100,7 +100,6 @@ const parseBullhornJobToMain = (data) => {
         skillList: data.skillList,
         companyId: `bh-${data.clientCorporationID}`,
         interviews: data.interviews,
-// Temp comment
         onSite: data.onSite,
         salary: data.salary,
         salaryUnit: data.salaryUnit,

@@ -42,6 +42,7 @@ export function renderHeader(addType) {
 
 export function inputValidation(formObj) {
   // TODO: Change errors to modal (or snackbar?)
+  const newErrors = [];
 
   Object.entries(formObj).forEach(([key, value]) => {
     // If value is empty string or empty array, add to errors

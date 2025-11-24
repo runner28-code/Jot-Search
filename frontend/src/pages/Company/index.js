@@ -128,6 +128,7 @@ function RenderHeader({type, loggedIn}) {
   )
 }
 RenderHeader.propTypes = {
+  loggedIn: PropTypes.bool,
   type: PropTypes.string
 }
 

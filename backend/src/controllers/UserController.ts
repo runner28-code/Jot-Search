@@ -191,6 +191,7 @@ export class UserController {
       console.error(err);
       return null;
     }
+  }
 
   @Authorized()
   @Post("/register_coordinator")

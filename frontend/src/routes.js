@@ -58,7 +58,6 @@ export const APIregisterCoordinator = '/register_coordinator';
 export const APIaddUser = '/add-user';
 export const APIupload = '/api/upload';
 export const APIaccountRecovery = '/account-recovery';
-// Temp comment
 export const APIResetPassword = '/reset-password';
 // Candidates
 const APIcandidateBase = '/api/candidate';

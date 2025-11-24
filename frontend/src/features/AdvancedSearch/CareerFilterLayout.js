@@ -4,7 +4,6 @@ import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
 const dropdownFilters = [
-  'Expertise',
   'On-Site/Remote',
   'Years Experience',
   'Status',
@@ -32,7 +31,6 @@ export default function CareerFilterLayout(props) {
   const dropdownFilterObject = {};
   if( userType === 'candidate' ) {
     dropDownFiltersCandidate.forEach(filter => {
-// Temp comment
       dropdownFilterObject[filter] = filterObject[filter];
     });
   } else {

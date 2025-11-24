@@ -19,6 +19,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
       value: companyId
     }
   ];
+
   const { careers, total, isLoading }= useGetJobs({ filtersArr, count: ITEMS_PER_PAGE, page});
   const prefetchFunc = (page) => {
     prefetchJobs({ filtersArr, count: ITEMS_PER_PAGE, page })

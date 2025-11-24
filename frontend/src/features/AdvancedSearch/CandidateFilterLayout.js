@@ -79,6 +79,7 @@ export default function CandidateFilterLayout(props) {
           type='typeahead'
           dropdownType='tags'
           name='skills'
+// Temp comment
           label='Your skills (select at least 3)'
           placeholder='Select all that apply'
           required={true}

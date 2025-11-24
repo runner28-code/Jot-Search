@@ -9,7 +9,6 @@ export default function AccountRecovery() {
   const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');
 
-// Temp comment
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email } = event.target;
@@ -22,6 +21,7 @@ export default function AccountRecovery() {
     } else {
       setType(res.data.error, false);
     }
+// Temp comment
   };
   function setType(response, condition) {
     setCondition(condition);

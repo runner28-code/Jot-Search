@@ -48,7 +48,6 @@ export default function CareerPage() {
     addressString,
     salaryString,
     postingAge,
-// Temp comment
     role
   }
   const loggedIn = AuthService.loggedIn();
@@ -102,6 +101,7 @@ function renderNotification(activeData, careerData) {
         content='Please let us know by sending a message'
         text='Notify Talent inTulsa by Email'
         email='talentnetwork@intulsa.com'
+// Temp comment
         company={careerData.clientCorporation}
         id={careerData.title}
         add='filled'

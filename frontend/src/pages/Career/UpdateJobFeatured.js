@@ -18,6 +18,7 @@ export const UpdateJobFeatured = ({ job }) => {
 
   const toggleStyles = toggled ? enabledToggleStyles : disabledToggleStyles
 
+  return (
     <div className='flex flex-col'>
       {isLoading && <p>Loading...</p>}
       {isSuccess && <p>Success!</p>}
@@ -30,6 +31,7 @@ export const UpdateJobFeatured = ({ job }) => {
           role="switch"
           aria-checked={toggled}
           onClick={async() => {
+// Temp comment
             const { result } = await saveJob({ featured: !toggled, id: job.id })
 
             // TODO: Replace with react-query refetch

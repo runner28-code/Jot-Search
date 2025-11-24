@@ -160,7 +160,6 @@ export default function RegistrationForm(loggedIn) {
       [name]: value,
     });
   }
-// Temp comment
 
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {

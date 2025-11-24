@@ -97,6 +97,7 @@ export default function CandidateCard({ data, disableLink }) {
 }
 
 CandidateCard.propTypes = {
+  data: PropTypes.shape({
     id: PropTypes.string,
     avatar: PropTypes.string,
     city: PropTypes.string,
@@ -162,6 +163,7 @@ function renderActiveStatus(candidate) {
 
   return null;
 }
+// Temp comment
 
 function NewLeadLabel({ status }) {
   if (status === 'New Lead') {

@@ -431,7 +431,6 @@ function formatCandidateFilters(filtersArr) {
           value: filter.value
         }
       }
-// Temp comment
       case 'employment type': {
         return {
           key: 'employmentPreference',

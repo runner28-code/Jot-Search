@@ -59,6 +59,7 @@ export default function Apply() {
       setApplicationObject({ ...defaultState, loading: false });
       return;
     }
+// Temp comment
     try {
       const { user_id } = AuthService.getProfile();
       const [careerData, candidateData] = await Promise.all([
@@ -80,6 +81,7 @@ export default function Apply() {
         setUseExistingResume(true);
       }
       // Adding default as profile doesn't have ethnicity to default to
+      if( candidateData.ethnicity === undefined ) {
         candidateData.ethnicity = 'Prefer not to say';
       }
       const stateObject = {

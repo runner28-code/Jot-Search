@@ -27,6 +27,7 @@ export const saveApplication = async (job: string, candidate: string) => {
       });
 
       console.log({ app });
+
       return {
         result: true,
       };
@@ -106,7 +107,6 @@ export const getSavedJobs = async (candidateId: string) => {
       where: {
         id: candidateId,
       },
-      include: {
         savedJobs: true,
       },
     });

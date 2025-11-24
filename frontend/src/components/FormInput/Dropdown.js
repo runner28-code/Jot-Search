@@ -33,6 +33,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
   if (!isOpen) {
     return null
   }
+  
   return (
     <div className={ rootClass }>
       {choices.map((choice, index) => {
@@ -41,7 +42,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
             onClick={() => handleClick(choice)}
             className='cursor-pointer flex items-center justify-between'
           >
-            <span className='font-bold'>{choice}</span>
             {renderActiveIcon(choice, currentChosen)}
           </div>
           { renderHorizontalRule(index, choices.length) }

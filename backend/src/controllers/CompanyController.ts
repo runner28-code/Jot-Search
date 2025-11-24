@@ -172,6 +172,7 @@ export class CompanyController {
     @Body() body: { candidateIds: string[], companyIds: string[] }
   ): Promise<any> {
     if (authUser.role !== COORDINATOR) {
+      return {
         result: false,
         error: "You should be a coordinator for sending candidates to employers",
       };
@@ -303,7 +304,6 @@ export class CompanyController {
     );
 
     const result = (await BigQueryService.selectQuery(
-      DATASET_MAIN,
       Tables.JOINED_COMPANIES,
       _fields,
       count,

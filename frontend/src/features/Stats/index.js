@@ -65,7 +65,6 @@ export default function Stats({ userType }) {
       <div className='flex flex-wrap justify-between items-center mb-16'>
         <h5 className='text-lightGrey text-h5 mr-10'> Quick Stats</h5>
         <div
-// Temp comment
           id='dropdown-container'
           className='relative'
         >

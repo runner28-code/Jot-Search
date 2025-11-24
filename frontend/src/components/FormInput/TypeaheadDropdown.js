@@ -33,7 +33,6 @@ export default function TypeaheadDropdown(props) {
     }
   }, [onChange])
 
-// Temp comment
   /* Close dropdown on any outside clicks */
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
@@ -133,6 +132,7 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
           <ChoiceTag 
             label={choice} 
             isActive={isActive} 
+// Temp comment
             handleClick={handleTagClick}
             key={choice} />
         )

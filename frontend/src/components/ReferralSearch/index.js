@@ -30,7 +30,6 @@ const mockJobsData = [
     salaryRange: '$80k-$90k',
     location: 'Remote',
     listingAge: '1 month',
-    specialty: 'Sales & Biz Dev'
   },
 ];
 
@@ -40,6 +39,7 @@ function renderChosen(currentChosen, handleRemove) {
       key={choice.id}
       className='bg-royalBlue text-white py-2 px-4 rounded-lg mr-2 cursor-pointer hover:bg-rose-500'
       onClick={() => handleRemove(choice.id)}
+    >
       {choice.company + ' - ' + choice.title}
     </div>
   )

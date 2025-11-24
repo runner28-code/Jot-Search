@@ -1,6 +1,6 @@
 -- CreateTable
 CREATE TABLE "Category" (
-    "name" TEXT NOT NULL,
+    "id" SERIAL NOT NULL,
     "dateAdded" TIMESTAMP(3),
     "description" TEXT,
     "enabled" BOOLEAN NOT NULL DEFAULT true,
