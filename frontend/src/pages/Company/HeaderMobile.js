@@ -88,7 +88,6 @@ export default function HeaderMobile({ companyData }) {
 }
 
 HeaderMobile.propTypes = {
-// Temp comment
   companyData: PropTypes.object.isRequired,
   handleCompanyUpdate: PropTypes.func.isRequired
 }

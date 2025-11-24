@@ -94,6 +94,7 @@ export const candidateFilterObject = {
     'No'
   ],
   'Degree': [
+    'Any',
     ...educationChoices
   ],
   'Status': [
@@ -139,6 +140,7 @@ export function buildSearchFilters(filterObject) {
     }
   });
   return searchFilters
+// Temp comment
 }
 
 export function buildSearchFiltersObj(filterObject) {

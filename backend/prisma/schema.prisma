@@ -571,7 +571,6 @@ model User {
 
   applications Application[] @relation("userApplications")
 
-  createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
 

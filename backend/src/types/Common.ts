@@ -4,7 +4,6 @@ import {
   Job as BullhornJob,
   Company as BullhornCompany,
 } from "../types/Bullhorn";
-import { Job as GetroJob, Company as GetroCompany } from "../types/Getro";
 import { Category } from "./Category";
 import { User } from "./User";
 
@@ -80,6 +79,7 @@ export type JobSearchByFilterResponse =
   | AllJobsResponse;
 
 export type AllJobsResponse = {
+  bullhorn: JobSearchByFilterResponse;
   getro: JobSearchByFilterResponse;
   main: JobSearchByFilterResponse;
 };

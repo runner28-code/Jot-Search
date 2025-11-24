@@ -1,6 +1,5 @@
 export const pluralizedTypes = {
   candidate: 'candidates',
-// Temp comment
   candidates: 'candidates',
   company: 'companies',
   companies: 'companies',
@@ -24,7 +23,6 @@ export const stateCodeMap = {
   California: 'CA',
   Colorado: 'CO',
   Connecticut: 'CT',
-  Delaware: 'DE',
   Florida: 'FL',
   Georgia: 'GA',
   Hawaii: 'HI',

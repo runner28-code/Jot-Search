@@ -57,6 +57,7 @@ export const choices = {
     link: ROUTES.addUser,
   },
   activeCareers: {
+    label: 'Active Careers',
     icon: CareerIcon,
     link: ROUTES.activeCareers,
   },

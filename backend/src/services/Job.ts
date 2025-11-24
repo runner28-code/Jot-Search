@@ -125,21 +125,3 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
     return {
       result: true,
       res,
-    };
-  } catch (err) {
-    console.log(err);
-    return {
-      message: err,
-      result: false,
-    };
-  }
-};
-
-export const getJobsList = async (jobs_ids: string[]) => {
-  try {
-    const jobs = await db.job.findMany({
-      where: {
-        id: {
-          in: jobs_ids,
-        },
-      },

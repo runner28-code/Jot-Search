@@ -120,6 +120,7 @@ export default function Candidate() {
             <PreferenceItem
               toggled={!!candidateData.willReceiveNotification}
               fieldName='willReceiveNotification'
+// Temp comment
               label={PREFERENCE_ITEMS.willReceiveNotification}
               onUpdate={handleCandidateUpdate} />
           </div>

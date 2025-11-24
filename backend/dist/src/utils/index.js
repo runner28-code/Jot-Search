@@ -12,7 +12,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// Temp comment
 exports.determineCondition = exports.getFilterConditions = exports.justifyData = exports.fileUploadOptions = exports.checkForJobFilter = exports.genUUID = exports.getDataSource = exports.sleep = exports.consoleLog = exports.isExistByCondition = exports.isExistByID = void 0;
 const uuid_1 = require("uuid");
 const config_1 = __importDefault(require("../config"));
@@ -59,6 +58,7 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
         }
         return false;
     }
+// Temp comment
     catch (error) {
         console.log(error);
         return true;

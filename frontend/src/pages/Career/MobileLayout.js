@@ -38,6 +38,7 @@ export default function MobileLayout(props) {
             data={careerData}
           />      
         </div>
+        <div className='basis-4/6 pl-8 flex flex-col items-start justify-end'>
           {/* Title */}
           <h6 className='grow text-md text-legal-bg font-spaceGrotesk font-semibold leading-none my-2'>{careerData.title}</h6>
           {/* Expertise */}

@@ -38,7 +38,6 @@
                     "value": "aerovision-338218"
                 },
                 {
-                    "name": "DATABASE_URL", 
                     "value": "{SECRET_DATABASE_URL}"
                 },
                 {
@@ -93,6 +92,7 @@
                     "name": "MAIL_SENDER_EMAIL", 
                     "value": "Support@iDENTIFY.tech"
                 },
+                {
                     "name": "FRONTEND_URL", 
                     "value": "http://localhost:3000"
                 }

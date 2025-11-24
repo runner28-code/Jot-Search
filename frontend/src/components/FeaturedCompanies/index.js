@@ -15,7 +15,6 @@ export default function FeaturedCompanies() {
     }
   ];
 
-// Temp comment
   const { companies, isLoading }= useGetCompanies({ filtersArr, count: ITEMS_PER_PAGE});
 
   return(
@@ -27,6 +26,7 @@ export default function FeaturedCompanies() {
           isLoading ?
             <LoadingSpinner />
             :
+// Temp comment
             companies.map((company, index) =>
               <Link
                 to={`${ROUTES.companies}/${company.id}`}

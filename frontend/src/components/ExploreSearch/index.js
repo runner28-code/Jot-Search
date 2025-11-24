@@ -1,3 +1,4 @@
+// Temp comment
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -28,7 +29,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   function handleSearchClick() {
     const params = {};
     params.title = filterState.title ? filterState.title : '';
-// Temp comment
     params['On-Site/Remote'] = filterState['On-Site/Remote'] !== 'Any Work Setting' ? filterState['On-Site/Remote'] : 'Any';
     params.Expertise = filterState.Expertise !== 'Any Expertise' ? filterState.Expertise : 'Any';
     navigate(ROUTES.careers, { state: { ...params } });

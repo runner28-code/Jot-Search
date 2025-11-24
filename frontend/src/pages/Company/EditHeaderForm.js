@@ -8,7 +8,6 @@ import { appendPathToBaseUrl } from '../../services/API';
 export default function EditHeaderForm({ candidateData, handleCandidateUpdate, setEditMode, iconStyles }) {
   const [formData, setFormData] = useState({
     id: candidateData.id,
-    avatar: candidateData.avatar,
     companyName: candidateData.companyName,
     address1: candidateData.address1,
     address2: candidateData.address2,
@@ -19,7 +18,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
 
   const handleInputChange = async (event) => {
     const { name, value } = event.target;
-// Temp comment
     if ( name === 'avatar' ) {
       const imageToUpload = event.target.files[0];
       console.log(imageToUpload);

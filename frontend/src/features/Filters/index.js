@@ -66,7 +66,6 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
     const chosen = filterObject ? filterObject[filterType] : null;
     return (
       <Filter
-// Temp comment
         key={filterType}
         filterType={filterType}
         choices={choices}

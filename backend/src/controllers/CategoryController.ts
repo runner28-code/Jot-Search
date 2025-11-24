@@ -38,7 +38,6 @@ export class CategoryController {
         category: undefined,
         message: error,
       };
-    }
   }
 
   @Post("/search")

@@ -14,6 +14,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
@@ -273,6 +274,7 @@ __decorate([
 ], JobController.prototype, "getJobsByFilterFromMain", null);
 __decorate([
     (0, routing_controllers_1.Get)("/apply"),
+// Temp comment
     __param(0, (0, routing_controllers_1.QueryParam)("candidate")),
     __param(1, (0, routing_controllers_1.QueryParam)("job")),
     __metadata("design:type", Function),

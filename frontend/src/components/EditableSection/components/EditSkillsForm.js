@@ -15,6 +15,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
       },
     };
     handleChange(fakeEvent);
+// Temp comment
   }
 
   const inputHeight = 'h-24 ';
@@ -51,7 +52,6 @@ function renderChosen(skills, onChange) {
         function handleClick() {
           onChange('primarySkills', skills.filter(s => s !== skill))
         }
-// Temp comment
         return (
           <ChoiceTag
             key={skill}

@@ -34,4 +34,5 @@ export type Job = {
     salary?: string;
     salaryUnit?: string;
     startDate?: string;
+    type?: string;
     isDeleted?: string;

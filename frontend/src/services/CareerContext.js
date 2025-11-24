@@ -57,7 +57,6 @@ const mockJobsData = [
   {
     id: 'c79462d2-1950-4cc0-ba31-a21a566c3c9d',
     title: 'Payroll Administrator',
-    company: 'Holberton',
     clientCorporationID: '36534b9b-c225-4a59-9286-8d4203d582db',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/holberton_clipped_rev_1_2_oefmoi.webp',
     salaryRange: '$80k-$90k',
@@ -73,7 +72,6 @@ const mockJobsData = [
     company: 'Paycom', // ! Not in schema yet
     clientCorporationID: 'b0eda365-79b5-4e2b-8674-642f09f56eb2',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
-// Temp comment
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
     location_state: 'OK',

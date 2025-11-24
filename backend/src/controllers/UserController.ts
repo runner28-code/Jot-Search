@@ -62,6 +62,7 @@ export class UserController {
     let data = { ...user };
 
     if (user.role === CANDIDATE) {
+      try {
         const res = await (
           await BullhornService.getClient()
         ).syncUserTppToBullhorn(user);
@@ -190,7 +191,6 @@ export class UserController {
       console.error(err);
       return null;
     }
-  }
 
   @Authorized()
   @Post("/register_coordinator")
