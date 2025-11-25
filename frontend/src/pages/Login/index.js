@@ -23,6 +23,7 @@ export default function Login() {
       setError(res.data.error);
     }
   };
+
   const renderError = () => {
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
@@ -59,6 +60,7 @@ export default function Login() {
           { renderError() }
           <FormInput
             type='text'
+// Temp comment
             name='email'
             label='Login Email'
           />

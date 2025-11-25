@@ -6,7 +6,6 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "application_method",
     "application_path",
     "compensation_currency",
-    "compensation_max",
     "compensation_min",
     "compensation_period",
     "compensation_public",
@@ -18,7 +17,6 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "locations",
     "organization_id",
     "passes_filter",
-// Temp comment
     "posted_at",
     "slug",
     "source",

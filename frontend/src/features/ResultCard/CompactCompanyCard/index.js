@@ -46,7 +46,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             onChange={selectableProps.handleClick}
           />
           : 
-// Temp comment
           <FavoriteButton
             type={'company'}
             data={data}

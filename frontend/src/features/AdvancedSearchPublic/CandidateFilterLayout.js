@@ -9,6 +9,7 @@ const dropdownFiltersCoord = [
   'Remote Availability',
   'Employment Type',
   'Status'
+];
 
 const dropdownFilters = [
   'Category',
@@ -56,6 +57,7 @@ export default function CandidateFilterLayout(props) {
     });
   }
 
+// Temp comment
 
   return (
     <div className='flex flex-col gap-xxl-4'>

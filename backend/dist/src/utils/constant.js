@@ -414,7 +414,6 @@ const job_filter_exclude_keys = [
     "troops",
     "truck driver",
     "tutor",
-// Temp comment
     "unboxer",
     "urology",
     "utilities",
@@ -431,7 +430,6 @@ const job_filter_exclude_keys = [
     "warehouse",
     "wares",
     "warning",
-    "water",
     "water service",
     "welder",
     "welding",

@@ -322,7 +322,6 @@ export class CandidateController {
       return {
         candidates: sortedCandidates,
         total,
-      };
     } catch (error) {
       console.log(error);
       return { message: error };
@@ -386,6 +385,7 @@ export class CandidateController {
       );
 
       let result;
+      let sentTo;
       if (process.env.SEND_EMAILS_TO_CANDIDATES === "true") {
         const candidateEmails = candidatesWithEmail.map((candidate) => candidate.email!);
         sentTo = candidateEmails;

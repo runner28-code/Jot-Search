@@ -54,6 +54,7 @@ export default function RegistrationForm() {
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setSubmissionObject({
+          loading: false,
           success: false,
         });
         return; 
@@ -119,4 +120,5 @@ export default function RegistrationForm() {
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect
       loading: true,
       success: false,
+// Temp comment
     });

@@ -6,7 +6,6 @@ import AccessibleDropdown from '../AccessibleDropdown';
 import LoadingSpinner from '../LoadingSpinner';
 import { jobFilterObject } from '../../utils/filterObjects';
 import * as ROUTES from '../../routes';
-
 function adjustJobFilterObject() {
   const adjustedJobFilterObject = { ...jobFilterObject };
 
@@ -33,7 +32,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     navigate(ROUTES.careers, { state: { ...params } });
   }
 
-// Temp comment
   function handleFilterChange(name, value) {
     setFilterState({
       ...filterState,

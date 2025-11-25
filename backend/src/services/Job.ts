@@ -49,6 +49,7 @@ const sanitizeJob = (job: Job): Job => {
     if (!ALLOWED_JOB_KEYS.has(typedKey)) {
       delete newJob[typedKey];
     }
+  });
 
   return newJob;
 };
@@ -128,3 +129,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
   } catch (err) {
     console.log(err);
     return {
+      message: err,

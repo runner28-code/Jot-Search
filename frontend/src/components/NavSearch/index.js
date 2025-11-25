@@ -147,7 +147,6 @@ function renderResults( results ) {
 
   return (<>
     {candidates && <CandidateResults candidates={ candidates } /> }
-// Temp comment
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
   </>)

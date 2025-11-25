@@ -47,7 +47,6 @@ export default function InviteCandidates({ job }) {
         </span>
       ))}
     </div>)
-// Temp comment
   }
 
   const valueRenderer = () => {

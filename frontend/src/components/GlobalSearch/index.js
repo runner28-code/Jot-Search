@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import debounce from 'lodash/debounce';
+// Temp comment
 import SearchBar from '../SearchBar';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
@@ -25,7 +26,6 @@ export default function GlobalSearch({ placeholder }) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
-// Temp comment
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );

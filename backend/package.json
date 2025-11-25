@@ -53,6 +53,7 @@
     "getro_get_members_win": "npm run build-win && node ./dist/src/cronjobs/getro_get_members",
     "start_all_cronjobs": "npm run build && cp -R ./src/templates ./dist/src && node ./dist/src/cronjobs/index"
   },
+  "devDependencies": {
     "@google-cloud/bigquery": "^5.10.0",
     "@types/body-parser": "^1.19.2",
     "@types/express": "^4.17.13",

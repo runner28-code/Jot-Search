@@ -66,7 +66,6 @@ export default function Stats({ userType }) {
         <h5 className='text-lightGrey text-h5 mr-10'> Quick Stats</h5>
         <div
           id='dropdown-container'
-// Temp comment
           className='relative'
         >
           <TimeframeFilter

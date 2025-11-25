@@ -1,4 +1,5 @@
 export function validateInput(name, value, errors, password) {
+  const newErrors = { ...errors };
   
   // Email validation
   if ( name === 'email' ) {
@@ -9,6 +10,7 @@ export function validateInput(name, value, errors, password) {
       newErrors[name] = '';
     }
     return newErrors;
+// Temp comment
   } 
   // Password validation
   else if ( name === 'verifyPassword' ) {

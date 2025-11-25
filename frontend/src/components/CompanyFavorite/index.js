@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
-import { useGetSavedCompanies } from '../../hooks/queries/useGetSavedCompanies';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CompanyCard from '../../features/ResultCard/CompactCompanyCard';
@@ -47,6 +46,7 @@ export default function CareerFavorite () {
         </div>
       </div>
       <div className='pt-24'>
+        <Link
           to={ROUTES.careers}
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
             View All

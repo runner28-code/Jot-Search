@@ -10,5 +10,4 @@ import { encryptPassword } from "./password";
         console.log(error);
     }
 
-    console.log('/// STOP ENCRYPT PASSWORD');
     process.exit();

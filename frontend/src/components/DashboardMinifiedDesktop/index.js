@@ -26,7 +26,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
     </>)
   }
 }
-// Temp comment
 
 DashboardMinifiedDesktop.propTypes = {
   location: PropTypes.string.isRequired
@@ -36,7 +35,6 @@ function CareerHeader ({ location }) {
   const loggedIn = AuthService.loggedIn();
 
   let userRole = AuthService.getUserRole();
-
   const back = '< Go Back';
 
   if( userRole === 'candidate' || userRole === 'coordinator' ) {

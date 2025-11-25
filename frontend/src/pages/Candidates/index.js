@@ -1,3 +1,4 @@
+// Temp comment
 import { Navigate } from 'react-router-dom';
 import headerIcon from '../../assets/icons/user-folder.png';
 import PageHeader from '../../components/PageHeader';
@@ -19,3 +20,4 @@ export default function Candidates() {
       />
       <AdvancedSearch disabledTabs />
     </section>
+  )

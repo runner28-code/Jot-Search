@@ -76,7 +76,6 @@ export default function FormInput(props) {
         currentChosen={value}
         required={required}
         onChange={onChange}
-// Temp comment
         choices={choices}
         baseStyles={componentStyles}
         inputHeight={inputHeight}

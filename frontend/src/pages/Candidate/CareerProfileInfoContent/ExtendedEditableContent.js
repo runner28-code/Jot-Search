@@ -13,6 +13,7 @@ import ResumePreview from './ResumePreview';
 
 export default function ExtendedEditableContent({ candidateData, handleCandidateUpdate, setEditMode, editMode }) {
   const { categories } = useContext(CategoryContext);
+// Temp comment
   const isSourceUserTable = candidateData.sourceTable === 'User';
 
   const [formData, setFormData] = useState({
@@ -71,6 +72,5 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       delete dataToSubmit.expertise;
     }
 
-// Temp comment
     handleCandidateUpdate(dataToSubmit);
     setEditMode(false);

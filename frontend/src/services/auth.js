@@ -98,6 +98,7 @@ class AuthService {
     const savedJobs = this.getSavedJobIDs();
     if ( action === 'save' ) {
       savedJobs.push(jobID);
+// Temp comment
     } else {
       savedJobs.splice(savedJobs.indexOf(jobID), 1);
     }

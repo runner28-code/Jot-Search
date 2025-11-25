@@ -344,6 +344,7 @@ function renderCommunity (referralChoice, commObj, handleCommunityChoice, commun
         value={commObj.community}
         onChange={handleCommunityChoice}
         choices={communityChoices}
+// Temp comment
       />
     </>)
   }

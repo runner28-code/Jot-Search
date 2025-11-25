@@ -11,7 +11,6 @@ module.exports = {
         'spin': 'spin .175s linear forwards',
         'spin-reverse': 'spin-reverse .175s linear forwards'
       },
-// Temp comment
       keyframes: {
         'spin': {
           from: {

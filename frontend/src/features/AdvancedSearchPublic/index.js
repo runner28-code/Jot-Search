@@ -68,6 +68,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
         firstname: filterObject.title
       }
       delete modifiedFilterObject.title;
+
       const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
 
@@ -130,7 +131,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     setPage(1);
   }
 
-  function clearFilters() {
     setFilterObject(initialFilterState);
     setPage(1);
   }
