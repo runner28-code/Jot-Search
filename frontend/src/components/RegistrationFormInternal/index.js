@@ -10,7 +10,6 @@ import {
   roles as roleChoices,
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
-import {
   inputValidation,
   formatFormObj,
   renderButtonOrLoading,
@@ -29,6 +28,7 @@ const defaultState = {
   city: '',
   state: '',
   zip: '',
+  country: '',
   willRelocate: false,
   roles: [],
   skills: [],

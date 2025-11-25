@@ -32,6 +32,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
 
   if (!isOpen) {
     return null
+// Temp comment
   }
   
   return (

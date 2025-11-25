@@ -103,7 +103,6 @@ let JobController = class JobController {
                     },
                     orderBy: {
                         createdAt: "desc",
-                    }
                 }); // TODO: assumes we are changing frontend to pass compatible fields and filters params
                 const totalPromise = db_1.default.job.count({
                     where,
@@ -243,7 +242,6 @@ let JobController = class JobController {
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, Job_1.createJob)(body);
         });
-// Temp comment
     }
 };
 __decorate([

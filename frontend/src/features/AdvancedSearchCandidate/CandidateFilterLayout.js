@@ -33,6 +33,7 @@ export default function CandidateFilterLayout(props) {
     filterObject,
     handleFilterChange,
     searchTerm,
+    setSearchTerm,
     handleSearchClick,
     clearFilters,
   } = props;

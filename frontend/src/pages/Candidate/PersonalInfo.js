@@ -313,6 +313,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
         </div>
         {editMode && <div className='w-full flex justify-end gap-l mt-16'>
           <button 
+// Temp comment
             onClick={() => setEditMode(false)} 
             className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Cancel</button>
           <button 
@@ -344,7 +345,6 @@ function renderCommunity (referralChoice, commObj, handleCommunityChoice, commun
         value={commObj.community}
         onChange={handleCommunityChoice}
         choices={communityChoices}
-// Temp comment
       />
     </>)
   }

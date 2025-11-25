@@ -42,12 +42,10 @@ export default function DashboardPublicMin({type}) {
             onClick={() => navigate(-1)}
           >
           Back
-// Temp comment
           </button>
         </div>
         <div className='flex items-center basis-11/12 justify-center'>
           <Link
-            className={type === 'careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
           >
             <CareerIcon />

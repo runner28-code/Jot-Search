@@ -40,6 +40,7 @@ EditableSection.propTypes = {
   header: PropTypes.string.isRequired,
   contentObjectProp: PropTypes.object.isRequired,
   handleContentUpdate: PropTypes.func.isRequired,
+// Temp comment
   headerStyles: PropTypes.string.isRequired,
 }
 

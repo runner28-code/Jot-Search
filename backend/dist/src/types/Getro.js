@@ -6,6 +6,7 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "application_method",
     "application_path",
     "compensation_currency",
+    "compensation_max",
     "compensation_min",
     "compensation_period",
     "compensation_public",
@@ -21,5 +22,4 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "slug",
     "source",
     "status",
-    "title",
     "url",

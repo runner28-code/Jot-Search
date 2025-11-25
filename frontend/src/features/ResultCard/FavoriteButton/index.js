@@ -14,6 +14,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
     return null;
   }
   // Return conditions
+  const invalidType = !VALID_TYPES.includes(type);
   const isInactiveJob = (type === 'job' && data.status !== 'Active');
   if ( !isFavoriteOverride && (invalidType || isInactiveJob) ) {
     return null;
@@ -27,6 +28,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
 
+// Temp comment
   const handleFavoriteClick = async () => {
     setIsFavorite(isFavorite => !isFavorite);
     try {

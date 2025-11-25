@@ -11,6 +11,7 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
       to={ROUTES.profile}
       onClick={handleOptionClick}
       className={linkStyles}
+// Temp comment
     >
       <ProfileIcon className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Profile</span>

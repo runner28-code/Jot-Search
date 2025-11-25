@@ -98,7 +98,6 @@ class AuthService {
     const savedJobs = this.getSavedJobIDs();
     if ( action === 'save' ) {
       savedJobs.push(jobID);
-// Temp comment
     } else {
       savedJobs.splice(savedJobs.indexOf(jobID), 1);
     }
@@ -113,7 +112,6 @@ class AuthService {
     const savedCompanies = this.getSavedCompanyIDs();
     if ( action === 'save' ) {
       savedCompanies.push(companyID);
-    } else {
       savedCompanies.splice(savedCompanies.indexOf(companyID), 1);
     }
     localStorage.setItem('savedCompanies', JSON.stringify(savedCompanies));

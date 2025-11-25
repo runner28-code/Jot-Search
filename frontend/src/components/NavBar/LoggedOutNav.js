@@ -20,11 +20,9 @@ export default function NavBar() {
   }
 }
 
-// Temp comment
 function MobileNavBarLayout() {
   const { width } = useWindowDimensions();
   return (
-    <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50'>
       <div className='h-30 pl-4 pr-4 flex justify-between items-center relative'>
         <Link to={ROUTES.root}>
           <img

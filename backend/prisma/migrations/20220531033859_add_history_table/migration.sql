@@ -7,3 +7,4 @@ CREATE TABLE "History" (
     "new_value" TEXT,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
+    CONSTRAINT "History_pkey" PRIMARY KEY ("id")

@@ -1,5 +1,4 @@
 // Replace password string on line 6
-// Run script
 import { encryptPassword } from "./password";
 
 (async () => {
@@ -10,4 +9,5 @@ import { encryptPassword } from "./password";
         console.log(error);
     }
 
+    console.log('/// STOP ENCRYPT PASSWORD');
     process.exit();

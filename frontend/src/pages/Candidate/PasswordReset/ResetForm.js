@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { useState } from 'react';
 import FormInput from '../../../components/FormInput';
 import API from '../../../services/API';
@@ -37,6 +38,5 @@ export default function ResetForm({ candidateData, setType }) {
   function handleChange(name, value) {
     setFormData({
       ...formData,
-// Temp comment
       [name]: value,
     });

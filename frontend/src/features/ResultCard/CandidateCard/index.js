@@ -158,7 +158,6 @@ function renderActiveStatus(candidate) {
         />
         <p className='text-white text-sm text-xxs'>Actively Looking</p>
       </div>
-    )
   }
 
   return null;

@@ -32,7 +32,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
         />
         <div className='grow'>
           <ReferralCardContent data={job} />
-// Temp comment
         </div>
       </div>
       { renderHorizontalRule(isLastItem) }

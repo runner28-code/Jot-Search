@@ -128,6 +128,7 @@ StatCard.propTypes = {
   }).isRequired
 }
 
+// Temp comment
 function renderDeviation(deviationPercentage) {
   return (
     <div className='flex items-center '>

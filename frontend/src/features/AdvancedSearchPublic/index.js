@@ -29,7 +29,6 @@ const availableTabChoicesByUserType = {
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
   guest: ['jobs', 'companies'],
-}
 
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
@@ -131,6 +130,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     setPage(1);
   }
 
+  function clearFilters() {
     setFilterObject(initialFilterState);
     setPage(1);
   }

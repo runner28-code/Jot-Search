@@ -230,7 +230,6 @@ export const skills = [
   'Hydraulics',
   'Hyper-V',
   'Implementation',
-  'Inbound Calls',
   'InDesign',
   'Infrastructure',
   'Interviewing',

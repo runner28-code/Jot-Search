@@ -19,12 +19,10 @@ export const UpdateJobFeatured = ({ job }) => {
   const toggleStyles = toggled ? enabledToggleStyles : disabledToggleStyles
 
   return (
-    <div className='flex flex-col'>
       {isLoading && <p>Loading...</p>}
       {isSuccess && <p>Success!</p>}
       
       <div className='flex space-x-16'>
-// Temp comment
         <button
           type="button" 
           name="featured"

@@ -57,7 +57,6 @@ export default function CareerPage() {
   const containerStyles = 'ml-10 mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
 
   return (<>
-    <RenderHeader
       loggedIn={loggedIn}
       role={role}
       source={source}
@@ -152,5 +151,4 @@ function MailButton({ text, email, company, id, add }) {
       className='rounded-xl bg-white border border-royalBlue p-4 mt-6 text-royalBlue inline-block'>
       {text}
     </a>
-// Temp comment
   </>)

@@ -391,6 +391,7 @@ export class JobController {
       }
     })
 
+    return {
       result: true,
       jobs: user?.candidate?.invitedJobs || []
     }

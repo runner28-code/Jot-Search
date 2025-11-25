@@ -226,6 +226,7 @@ function NavFooter() {
           className={blueLinkStyle}
         >Login
         </Link>
+// Temp comment
         <a
           href={ROUTES.mailToIntulsa}
           className={addressLinkStyle}

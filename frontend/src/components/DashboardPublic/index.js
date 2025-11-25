@@ -9,6 +9,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 
+export default function DashboardPublic({togglePassState}) {
   const { width } = useWindowDimensions();
 
   const { totalJobsCount, totalCompaniesCount } = useGetLandingPageStats({});
@@ -31,6 +32,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
       <div className='flex items-center  mt-12'>
         <div className='flex items-center'>
           <Link
+// Temp comment
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
           >
