@@ -77,7 +77,6 @@ CREATE TABLE "Company" (
     "customText6" TEXT,
     "customText7" TEXT,
     "customText8" TEXT,
-    "customText9" TEXT,
     "customText10" TEXT,
     "customText11" TEXT,
     "customText12" TEXT,
@@ -103,3 +102,4 @@ ALTER TABLE "Company" ADD CONSTRAINT "Company_addressId_fkey" FOREIGN KEY ("addr
 
 -- AddForeignKey
 ALTER TABLE "Company" ADD CONSTRAINT "Company_billingAddressId_fkey" FOREIGN KEY ("billingAddressId") REFERENCES "Address"("id") ON DELETE SET NULL ON UPDATE CASCADE;
+

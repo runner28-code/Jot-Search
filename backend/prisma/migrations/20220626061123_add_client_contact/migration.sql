@@ -60,3 +60,4 @@ CREATE TABLE "ClientContact" (
     "preferredContact" TEXT,
     "skills" TEXT,
     "source" TEXT,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,

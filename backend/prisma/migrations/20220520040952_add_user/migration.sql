@@ -44,3 +44,4 @@ CREATE TABLE "User" (
     "avatar" TEXT,
     "occupation" TEXT,
     "employmentPreference" TEXT,
+

@@ -71,5 +71,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       delete dataToSubmit.expertise;
     }
 
+// Temp comment
     handleCandidateUpdate(dataToSubmit);
     setEditMode(false);

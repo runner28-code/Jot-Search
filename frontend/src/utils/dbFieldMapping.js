@@ -27,6 +27,7 @@ export const genderMap = {
 
 export const ethnicityMap = {
   U: 'Prefer not to say',
+  BL: 'Black or African American',
   NP: 'Native Hawaiian or other Pacific Islander',
   WH: 'White or Caucasian',
   IA: 'Native American or Alaska Native',
@@ -52,6 +53,7 @@ export const educationChoices = [
   'Doctoral',
   'Post Doctoral',
   'High School',
+// Temp comment
   'Some College',
   'Technical College'
 ];

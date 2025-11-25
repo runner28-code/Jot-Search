@@ -42,3 +42,4 @@ CREATE TABLE "GetroJobInfo" (
 
     CONSTRAINT "GetroJobInfo_pkey" PRIMARY KEY ("id")
 );
+

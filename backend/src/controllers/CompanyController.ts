@@ -358,3 +358,4 @@ export class CompanyController {
     const _fields = fields ? fields.join(", ") : "*";
     const _dataset = DATASET_GETRO;
     const _table = Tables.COMPANIES;
+    const _condition = _filters

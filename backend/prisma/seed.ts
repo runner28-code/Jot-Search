@@ -223,3 +223,4 @@ async function seedUsers() {
           where: { name: "Finance" },
         }))!.id,
       },
+    ],

@@ -393,3 +393,5 @@ export const skills = [
   'UI',
   'UI/UX Design',
   'Unity',
+  'Unity 3D',
+  'UX Design',

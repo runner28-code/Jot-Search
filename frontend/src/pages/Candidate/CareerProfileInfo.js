@@ -20,7 +20,6 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
       <CareerProfileInfoContent
         candidateData={candidateData}
         handleCandidateUpdate={handleCandidateUpdate}
-        setEditMode={setEditMode}
         iconStyles={iconStyles}
         editMode={editMode}
         role={role}
@@ -38,6 +37,7 @@ CareerProfileInfo.propTypes = {
 function renderEditIcon(candidateData, setEditMode) {
   const handleClick = () => {
     setEditMode(true);
+  }
   const isProfileOwner = candidateData.id === AuthService.getProfile().user_id;
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
   if ( !isProfileOwner && !isCoordinator ) {

@@ -414,6 +414,7 @@ const job_filter_exclude_keys = [
     "troops",
     "truck driver",
     "tutor",
+// Temp comment
     "unboxer",
     "urology",
     "utilities",
@@ -485,3 +486,5 @@ exports.JOB_FIELDS = [
     "isPublic",
     "location",
     "markUpPercentage",
+    "numOpenings",
+    "onSite",

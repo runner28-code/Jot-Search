@@ -179,3 +179,56 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
 
   function handleChange(e) {
     setSearchTerm(e.target.value);
+  }
+
+  const placeholderText = placeholder || 'Search for companies or jobs...';
+  return (
+    <label
+      className={ !isOpen ? offObject.containerStyles : styleObject.containerStyles }
+      htmlFor={ placeholder }
+    >
+      <div
+        className={ !isOpen ? offObject.searchIconStyles : styleObject.searchIconStyles }
+        onClick={ handleClick }
+      >
+        {  !isOpen ? <RenderSearchIcon /> : <CloseIcon />}
+      </div>
+      <div className={ !isOpen ? 'hidden' : 'absolute top-[6.5rem] w-screen left-0 z-10 bg-sky-600 py-16' }>
+        <div className='w-3/4 mx-auto  flex items-center'>
+          <input
+            type='text'
+            id={ placeholder }
+            placeholder={ !isOpen ? '' : placeholderText  }
+            value={ searchTerm }
+            onChange={ handleChange }
+            className={ !isOpen ? offObject.inputStyles : styleObject.inputStyles } />
+          <div className='bg-searchGreen p-4 rounded-r-lg text-white'>
+            <img
+              src={ searchWhite }
+              alt='search icon'
+              className={'h-auto'}
+            />
+          </div>
+        </div>
+      </div>
+    </label>
+  )
+}
+NavSearchBar.propTypes = {
+  searchTerm: PropTypes.string.isRequired,
+  setSearchTerm: PropTypes.func.isRequired,
+  placeholder: PropTypes.string,
+  marginBottom: PropTypes.string,
+  alternateStylesObject: PropTypes.object,
+  isOpen: PropTypes.bool,
+  setIsOpen: PropTypes.func
+}
+
+function RenderSearchIcon() {
+  return(<>
+    <img
+      src={ searchGray }
+      alt='search icon'
+      className={'w-12 mr-6'}
+    />
+  </>)

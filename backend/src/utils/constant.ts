@@ -486,3 +486,6 @@ export const JOB_FIELDS = [
   "isOpen",
   "isPublic",
   "location",
+  "markUpPercentage",
+  "numOpenings",
+  "onSite",

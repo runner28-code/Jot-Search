@@ -30,7 +30,6 @@ export function formatCandidateData(candidateData) {
   if ( candidateData.experience && !isNaN(candidateData.experience) ) {
     formattedData.experience = candidateData.experience.toString();
   }
-// Temp comment
   // User table has firstname and lastname, Candidate table has firstName and lastName, make sure both exist until we normalize the tables
   if ( candidateData.firstName && !candidateData.firstname ) formattedData.firstname = candidateData.firstName;
   if ( candidateData.lastName && !candidateData.lastname ) formattedData.lastname = candidateData.lastName;
@@ -52,6 +51,7 @@ export function convertUserToCandidate(user) {
     experience: user.experience?.parseInt() || 1,
     address_address1: user.address1 || '',
     address_address2: user.address2 || '',
+// Temp comment
     address_city: user.city || '',
     address_state: user.state || '',
     address_zip: user.zip || '',

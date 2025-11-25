@@ -23,7 +23,6 @@ API.interceptors.request.use(
   }
 );
 
-export default API;
 
 export function appendPathToBaseUrl(path) {
   if (path.slice(0, 4) === 'http') {
@@ -177,6 +176,7 @@ export async function saveCompany(candidateId, companyId) {
     AuthService.toggleSavedCompany(companyId, 'save');
   } else {
     AuthService.toggleSavedCompany(companyId, 'unsave');
+  }
   return normalizeData(data);
 }
 

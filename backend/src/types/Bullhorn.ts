@@ -288,6 +288,7 @@ export type Lead = {
     category?: string;
     clientContacts?: string;
     clientCorporation?: string;
+    comments?: string;
     companyName?: string;
     companyURL?: string;
     conversionSource?: string;
@@ -326,3 +327,5 @@ export type Lead = {
     phone2?: string;
     phone3?: string;
     preferredContact?: string;
+    primarySkills?: string;
+    priority?: string;

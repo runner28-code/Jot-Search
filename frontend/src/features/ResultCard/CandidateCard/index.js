@@ -92,7 +92,6 @@ export default function CandidateCard({ data, disableLink }) {
       <FavoriteButton
         type={'candidate'}
         data={data} />
-    </div>
   )
 }
 
@@ -164,7 +163,6 @@ function renderActiveStatus(candidate) {
   return null;
 }
 
-// Temp comment
 function NewLeadLabel({ status }) {
   if (status === 'New Lead') {
     return (

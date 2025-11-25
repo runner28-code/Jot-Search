@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 
 // Images
@@ -9,7 +10,6 @@ export default function Notification ({ imgClass }) {
   return (<>
     <img
       src={ bell }
-// Temp comment
       alt='notification icon'
       className={ classes }
     />

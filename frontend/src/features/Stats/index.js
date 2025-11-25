@@ -8,7 +8,6 @@ const statFilterChoices = [
   'Today',
   'Last 7 Days',
   'Last 14 Days',
-// Temp comment
   'Last 30 Days',
   'Last 90 Days'
 ];
@@ -67,6 +66,7 @@ export default function Stats({ userType }) {
         <h5 className='text-lightGrey text-h5 mr-10'> Quick Stats</h5>
         <div
           id='dropdown-container'
+// Temp comment
           className='relative'
         >
           <TimeframeFilter

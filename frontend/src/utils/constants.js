@@ -23,7 +23,6 @@ export const stateCodeMap = {
   California: 'CA',
   Colorado: 'CO',
   Connecticut: 'CT',
-  Delaware: 'DE',
   Florida: 'FL',
   Georgia: 'GA',
   Hawaii: 'HI',

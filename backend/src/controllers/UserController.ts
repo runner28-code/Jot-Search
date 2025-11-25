@@ -91,6 +91,7 @@ export class UserController {
    * Coordinator-only route to add users depending on type
    * @param authUser 
    * @param user 
+   * @returns 
    */
   @Authorized()
   @Post("/add-user")
@@ -140,7 +141,6 @@ export class UserController {
         }
       } catch (error) {
         console.error("error syncing to BH");
-        console.error(error);
       }
       const { result, error } = await register(data);
       return {
@@ -229,3 +229,4 @@ export class UserController {
   }
 
   @Get("/company-stats")
+  async getCompanyStats(@QueryParams() queryParams: { duration: number }) {

@@ -287,3 +287,4 @@ export class GetroService {
     }
 
     async saveGetroJobInBullhornJobTable(getroJob: any): Promise<any> {
+        console.log('Saving Getro job in Bullhorn table: ', getroJob.id);

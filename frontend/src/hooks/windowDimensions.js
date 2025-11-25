@@ -8,7 +8,6 @@ function getWindowDimensions() {
   };
 }
 
-// Temp comment
 export default function useWindowDimensions() {
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
@@ -16,6 +15,7 @@ export default function useWindowDimensions() {
     function handleResize() {
       setWindowDimensions(getWindowDimensions());
     }
+// Temp comment
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);

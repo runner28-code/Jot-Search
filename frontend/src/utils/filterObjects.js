@@ -53,7 +53,6 @@ export const defaultJobFilterState = {
   title: '',
   status: ACTIVE_STATUSES,
   ...convertedJobFilters
-// Temp comment
 };
 
 /* CANDIDATE FILTER UTILS */

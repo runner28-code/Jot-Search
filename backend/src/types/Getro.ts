@@ -101,3 +101,4 @@ export type User = {
   job_search_status?: string;
   joined_at?: string;
   remote_work?: string;
+  require_sponsorship_visa?: string;

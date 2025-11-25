@@ -356,6 +356,7 @@ export class CandidateController {
 
   @Authorized()
   @Post("/sendJobs")
+  async sendJobs(
     @CurrentUser() authUser: User,
     @Body() body: { jobIds: string[]; candidateIds: string[] }
   ): Promise<any> {
@@ -385,7 +386,6 @@ export class CandidateController {
       );
 
       let result;
-      let sentTo;
       if (process.env.SEND_EMAILS_TO_CANDIDATES === "true") {
         const candidateEmails = candidatesWithEmail.map((candidate) => candidate.email!);
         sentTo = candidateEmails;
@@ -408,3 +408,5 @@ export class CandidateController {
         for (const jobId of body.jobIds) {
           candidateJobInvites.push({
             candidateId: candidate.id,
+            jobId: jobId,
+          })

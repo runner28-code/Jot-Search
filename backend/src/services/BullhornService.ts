@@ -974,3 +974,8 @@ export class BullhornService {
       for (const job of newCreatedJobs) {
         const jobQuery = queryString.stringify({
           BhRestToken: this.BhRestToken,
+          query: `id:${job.entityId}`,
+          fields: `${JOB_FIELDS.join(",")},skills`
+        });
+        const jobUrl = `${this.restUrl}search/JobOrder?${jobQuery}`;
+        const { data } = await axios.get(jobUrl, {

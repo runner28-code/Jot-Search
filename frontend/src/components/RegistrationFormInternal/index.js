@@ -135,6 +135,7 @@ export default function RegistrationFormInternal(loggedIn) {
 
   async function handleSubmit(event) {
     event.preventDefault();
+    const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
     setErrors([]);
     setFormObj({

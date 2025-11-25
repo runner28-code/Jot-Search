@@ -64,3 +64,4 @@ export class CategoryController {
       console.log(error);
       return {
         message: error,
+      };

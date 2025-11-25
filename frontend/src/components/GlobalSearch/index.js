@@ -25,6 +25,7 @@ export default function GlobalSearch({ placeholder }) {
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
+// Temp comment
   /* EVENT HANDLERS */
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
@@ -70,6 +71,7 @@ export default function GlobalSearch({ placeholder }) {
   }, [location]);
 
   /* Close dropdown on any outside clicks */
+  const closeDropdown = () => {
     setResults({ ...results, forceHidden: true });
   };
 

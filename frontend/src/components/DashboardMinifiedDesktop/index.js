@@ -18,7 +18,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
   if( location === 'career' ) {
     return (
       <CareerHeader location={location} />
-// Temp comment
     )
   }
   if( location === 'companies' ) {
@@ -27,6 +26,7 @@ export default function DashboardMinifiedDesktop ({ location }) {
     </>)
   }
 }
+// Temp comment
 
 DashboardMinifiedDesktop.propTypes = {
   location: PropTypes.string.isRequired

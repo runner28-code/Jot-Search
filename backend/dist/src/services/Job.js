@@ -46,7 +46,6 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
         console.error(err);
         return {
             result: false,
-            error: err,
         };
     }
 });

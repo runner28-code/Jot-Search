@@ -47,6 +47,7 @@ export default function InviteCandidates({ job }) {
         </span>
       ))}
     </div>)
+// Temp comment
   }
 
   const valueRenderer = () => {
@@ -103,6 +104,7 @@ function itemRenderer({ option, onClick, disabled }) {
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`}
       onClick={onClick}
     >
+      <div className="flex items-center space-x-4 pb-2 border-b-2 ">
         {avatarUrl ?
           <img
             className='w-20 h-20'

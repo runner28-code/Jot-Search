@@ -315,3 +315,6 @@ export type Lead = {
     mobile?: string;
     name?: string;
     namePrefix?: string;
+    nameSuffix?: string;
+    nickName?: string;
+    notes?: string;

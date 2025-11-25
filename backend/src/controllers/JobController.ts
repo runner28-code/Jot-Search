@@ -427,3 +427,5 @@ export const normalizeFilters = (filters: any) => {
   return filterObj;
 };
 
+const normalizeValue = (key: string, value: any) => {
+  if (typeof value === "string") {

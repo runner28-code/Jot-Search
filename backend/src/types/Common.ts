@@ -78,6 +78,7 @@ export type JobSearchByFilterResponse =
       message?: any;
     }
   | AllJobsResponse;
+
 export type AllJobsResponse = {
   bullhorn: JobSearchByFilterResponse;
   getro: JobSearchByFilterResponse;
@@ -137,3 +138,4 @@ export type UpdateComapnyProfileResponse = {
 };
 
 // Category Types
+export type CategorySearchByFilterResponse = {
