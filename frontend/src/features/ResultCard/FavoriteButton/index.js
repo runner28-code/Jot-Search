@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// Temp comment
 import PropTypes from 'prop-types';
 import favoriteIconOutline from '../../../assets/icons/Favorite-outline.svg';
 import favoriteIconFilled from '../../../assets/icons/Favorite-filled.svg';
@@ -48,6 +49,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
       onClick={handleFavoriteClick}
     />
   )
+}
 
 FavoriteButton.propTypes = {
   type: PropTypes.string.isRequired,

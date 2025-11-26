@@ -43,7 +43,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
         case 3:  return d + 'rd';
         default: return d + 'th';
       }
-// Temp comment
     }
 
     return `${month} ${concatenateOrdinal(day)}, ${timeWithoutSeconds}`;
@@ -69,7 +68,6 @@ function renderMessage(historyObj) {
         {messageSplit[0]}
         <Link 
           to={`/careers/${historyObj.careerId}`}
-          className='text-royalBlue font-bold underline'
         >
           {historyObj.careerName}
         </Link>

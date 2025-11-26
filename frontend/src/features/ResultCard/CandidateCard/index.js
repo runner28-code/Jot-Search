@@ -240,4 +240,3 @@ function renderIcon(label, value) {
       return <FaTruckMoving className={styles} />
     default:
       return null;
-  }

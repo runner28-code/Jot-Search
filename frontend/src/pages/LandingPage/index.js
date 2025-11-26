@@ -86,6 +86,7 @@ function renderLocation() {
 
 function renderColorShapes()  {
   const { width } = useWindowDimensions();
+
   if( width < 0 ) {
     return (
       <div className='w-full'>

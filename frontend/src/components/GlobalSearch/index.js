@@ -18,6 +18,7 @@ export default function GlobalSearch({ placeholder }) {
     jobs: [],
     companies: [],
     candidates: [],
+// Temp comment
     loading: false,
     forceHidden: true
   });
@@ -97,7 +98,6 @@ export default function GlobalSearch({ placeholder }) {
       { renderResultsContainer( results, searchTerm ) }
     </div>
   )
-// Temp comment
 }
 
 GlobalSearch.propTypes = {

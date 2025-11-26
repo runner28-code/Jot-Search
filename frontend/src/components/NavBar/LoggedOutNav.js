@@ -45,7 +45,6 @@ function MobileNavBarLayout() {
     </nav>
   )
 }
-
 function DesktopNavBarLayout() {
   return (
     <nav className='h-44 pl-14 pr-10 flex justify-between items-center shadow-md bg-white fixed top-0 left-0 right-0 z-50 '>
@@ -81,6 +80,7 @@ function DesktopNavBarLayout() {
         </Link>
         <Link
           to={ROUTES.signup}
+          className='ml-4 mr-6'
         >
           <button className='bg-royalBlue rounded-md px-9 py-4'>
             <span className='text-white'>Create Account</span>

@@ -353,6 +353,7 @@ function renderCommunity (referralChoice, commObj, handleCommunityChoice, commun
 function renderEditIcon(candidateData, setEditMode) {
   const isProfileOwner = candidateData.id === AuthService.getProfile().user_id;
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
+  // Only show component if user is profile owner or coordinator
   if ( !isProfileOwner && !isCoordinator ) {
     return null;
   }

@@ -20,7 +20,6 @@ export const stateCodeMap = {
   Alaska: 'AK',
   Arizona: 'AZ',
   Arkansas: 'AR',
-// Temp comment
   California: 'CA',
   Colorado: 'CO',
   Connecticut: 'CT',

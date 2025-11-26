@@ -106,7 +106,6 @@ export default function NavSearchMobile({ placeholder }) {
           alternateStylesObject={ stylesObject } 
           setIsOpen={ setIsOpen }
           isOpen={ isOpen }
-// Temp comment
         />
       </div>
       { renderResultsContainer( combinedResults, searchTerm ) }
@@ -211,6 +210,7 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
             />
           </div>
         </div>
+// Temp comment
       </div>
     </label>
   )

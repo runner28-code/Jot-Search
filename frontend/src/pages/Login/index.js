@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
+// Temp comment
 
 import API from '../../services/API';
 import AuthService from '../../services/auth';
@@ -67,6 +68,7 @@ export default function Login() {
             type='password'
             name='password'
             label='Password'
+          />
           <div className='flex justify-between items-center vw-640:items-end mb-22 gap-[10px]'>
             <button
               className='h-20 vw-640:h-24 bg-royalBlue text-center text-white text-xl tracking-wide px-14 rounded-lg'

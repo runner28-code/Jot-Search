@@ -16,7 +16,6 @@ function renderActiveIcon(choice, currentChosen) {
         className="w-8 h-8 mr-2" />
     )
   }
-// Temp comment
 }
 
 function renderHorizontalRule(index, arrayLength) {

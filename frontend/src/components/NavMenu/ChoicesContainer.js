@@ -13,7 +13,6 @@ import * as ROUTES from '../../routes';
 
 const baseLinkStyles = 'flex items-center w-full h-20 pl-6 bg-white hover:bg-royalBlue text-royalBlue hover:text-white cursor-pointer ';
 const topLinkStyles = baseLinkStyles + 'rounded-tl-xl ';
-// Temp comment
 const bottomLinkStyles = baseLinkStyles + 'rounded-b-xl ';
 const spanStyles = 'text-xl font-bold font-spaceGrotesk ';
 const hrStyles = 'border-royalBlue ';
@@ -24,6 +23,7 @@ const stylesObject = {
   topLinkStyles,
   bottomLinkStyles,
   iconStyles,
+// Temp comment
   spanStyles,
   hrStyles
 }

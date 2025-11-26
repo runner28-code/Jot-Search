@@ -60,6 +60,7 @@ export const saveMembers = async (members: any[]) => {
 								}
 								const jobData = { ...member };
 								Object.keys(jobData).forEach((key) => {
+									if (expludeFields.includes(key)) {
 										delete jobData[key];
 									}
 								});

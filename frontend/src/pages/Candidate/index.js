@@ -137,6 +137,7 @@ export default function Candidate() {
           <InviteToCareer candidate={candidateData} />
         }
         {/* Personal Info (Candidate and Coordinator) */}
+// Temp comment
         <PersonalInfo
           role={role}
           candidateData={candidateData}

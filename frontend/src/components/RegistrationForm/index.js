@@ -117,7 +117,6 @@ export default function RegistrationForm(loggedIn) {
           success: false,
         });
       }
-    }
   }, [submissionObject.loading]);
 
   useEffect(async () => { // Clear state after a couple seconds

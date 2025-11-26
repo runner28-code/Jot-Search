@@ -67,12 +67,12 @@ export const getSavedCandidates = async (companyUserId: string) => {
             users: true,
           }
         },
+      },
     });
 
     if (user && user.savedCandidates && user.savedCandidates.length > 0) {
       user.savedCandidates = user.savedCandidates.map(candidate => ({
         ...candidate,
-        user: candidate.users?.[0]
         })
       );
     }

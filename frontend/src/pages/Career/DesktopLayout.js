@@ -4,7 +4,6 @@ import OtherCareers from '../../features/OtherCareers';
 import featuredIcon from '../../assets/icons/pyramid.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
-// Temp comment
 import locationIcon from '../../assets/icons/placepin.svg';
 import clockIcon from '../../assets/icons/clock.svg';
 import postingAgeIcon from '../../assets/icons/calendar.svg';
@@ -154,6 +153,7 @@ function renderAboutCompanySection(careerData, companyName) {
     <h4 className={sectionHeaderStyles}>{headerString}</h4>
     <p
       className='font-spaceGrotesk text-textBlack text-md mb-5'
+// Temp comment
       dangerouslySetInnerHTML={{ __html: careerData.company?.description || 'No Company Description Available' }}
     />
   </>)

@@ -156,8 +156,8 @@ const defaultStylesObject = {
   containerStyles: 'flex items-center justify-evenly p-4 h-24 vw-480:w-160 vw-1024:h-36 vw-1024:w-210 bg-white border-solid border-2 border-lightGrey rounded-2xl ',
   searchIconStyles: 'h-16 w-16 vw-1024:h-24 vw-1024:w-24 vw-480:ml-6 mr-10 bg-royalBlue flex justify-center items-center',
   inputStyles: 'flex-1 h-8 bg-lightGrey vw-480:placeholder:text-md vw-1024:placeholder:text-xl px-5'
-}
 // Temp comment
+}
 
 
 function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject, isOpen, setIsOpen}) {

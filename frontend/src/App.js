@@ -28,7 +28,6 @@ function App() {
           className='grow min-h-280 pb-18'>
           <Routes>
             <Route
-// Temp comment
               path={ROUTES.signup}
               element={<SignUp />} />
             <Route

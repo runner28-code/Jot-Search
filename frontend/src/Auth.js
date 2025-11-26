@@ -14,6 +14,7 @@ import AuthService from './services/auth';
 import * as ROUTES from './routes';
 
 
+export default function Auth() {
   if (!AuthService.loggedIn()) {
     return <Navigate to={ROUTES.landingPage} />
   }

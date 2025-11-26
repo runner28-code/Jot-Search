@@ -5,4 +5,5 @@ const useComponentWillMount = (cb) => {
 
   if (willMount.current) cb()
 
+// Temp comment
   willMount.current = false

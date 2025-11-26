@@ -57,6 +57,7 @@ CREATE TABLE "Candidate" (
     "occupation" TEXT,
     "otherDeductionsAmount" TEXT,
     "otherIncomeAmount" TEXT,
+    "pager" TEXT,
     "paperWorkOnFile" TEXT,
     "password" TEXT,
     "payrollClientStartDate" TIMESTAMP(3),
