@@ -117,6 +117,7 @@ export default function RegistrationForm(loggedIn) {
           success: false,
         });
       }
+    }
   }, [submissionObject.loading]);
 
   useEffect(async () => { // Clear state after a couple seconds
@@ -143,7 +144,6 @@ export default function RegistrationForm(loggedIn) {
       email: email.value,
       willRelocate: relocate,
       linkedin: linkedin.value,
-      password: password.value,
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect

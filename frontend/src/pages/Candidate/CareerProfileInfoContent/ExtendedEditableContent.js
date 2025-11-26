@@ -44,7 +44,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       ...formData,
       [name]: value,
     });
-  }
 
   const handleInputChange = async (event) => {
     const { name, value } = event.target;

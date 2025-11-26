@@ -64,7 +64,6 @@ export function convertUserToCandidate(user) {
   return candidate;
 }
 
-export function formatCandidateName(firstName, lastName) {
   if ( !firstName && !lastName ) return '';
   if ( !firstName ) return lastName;
   if ( !lastName ) return firstName;
@@ -183,6 +182,7 @@ export function buildSalaryString(salary, salaryUnit) {
 
   if (salaryUnit) {
     formattedSalary = `${currency}${formattedSalary} ${salaryUnit}`;
+  } else {
     formattedSalary = `${currency}${formattedSalary}`;
   }
 

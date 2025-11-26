@@ -53,7 +53,6 @@ CREATE TABLE "ClientContact" (
     "office" TEXT,
     "owner" TEXT,
     "pager" TEXT,
-    "password" TEXT,
     "phone" TEXT,
     "phone2" TEXT,
     "phone3" TEXT,

@@ -101,7 +101,6 @@ function seedCandidates() {
                     address_address1: "124 Main St",
                     occupation: "None",
                     address_city: "Tulsa",
-                    address_state: "OK",
                     address_zip: "74008",
                     description: "Ehh...",
                     companyName: "Nowhere",

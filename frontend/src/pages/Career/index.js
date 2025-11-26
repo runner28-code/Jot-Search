@@ -16,7 +16,6 @@ import PageHeader from '../../components/PageHeader';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import InviteCandidates from './InviteCandidates';
 
-export default function CareerPage() {
   const { width } = useWindowDimensions();
   const location = useLocation();
   const activeData = location.state;
@@ -65,7 +64,6 @@ export default function CareerPage() {
     <div 
       className={ width <= 990 ? containerStyles
         : loggedIn ? containerStyles 
-// Temp comment
           : containerStyles + ' px-[15%]'}
     >
       { renderNotification(activeData, careerData) }

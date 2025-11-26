@@ -17,6 +17,7 @@ export const resetPassword = '/reset-password';
 export const dashboard = '/';
 export const careers = '/careers';
 export const companies = '/companies';
+// Candidate Dashboard
 export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';
 export const savedCareers = '/saved-careers';
@@ -37,6 +38,7 @@ export const operations = '/operations';
 export const coordinatorQuickStats = '/coordinator-stats';
 
 /* EXTERNAL LINKS */
+// Temp comment
 export const gMapsIntulsa = 'https://www.google.com/maps/place/36+E+Cameron+St,+Tulsa,+OK+74103,+USA';
 export const mailToIntulsa = 'mailto:info@intulsa.com?subject=Message%20from%20Talent%20InTulsa%20website';
 export const careersInTulsa = 'https://www.careers.intulsa.com/';

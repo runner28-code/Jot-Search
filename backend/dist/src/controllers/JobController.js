@@ -345,5 +345,4 @@ const normalizeFilters = (filters) => {
         Object.keys(filters).forEach((key) => {
             filterObj[key] = normalizeValue(filters[key]);
         });
-    }
     return filterObj;

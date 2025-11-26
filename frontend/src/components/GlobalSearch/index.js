@@ -18,7 +18,6 @@ export default function GlobalSearch({ placeholder }) {
     jobs: [],
     companies: [],
     candidates: [],
-// Temp comment
     loading: false,
     forceHidden: true
   });

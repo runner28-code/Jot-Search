@@ -14,9 +14,11 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   const { width } = useWindowDimensions();
 
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
+  const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
   const active = ' bg-royalBlue';
+// Temp comment
   if( width >= 990 ) {
     return null;
   }

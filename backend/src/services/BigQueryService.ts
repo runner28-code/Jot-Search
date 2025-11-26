@@ -32,6 +32,7 @@ export class BigQueryService {
                     LIMIT ${count}
                 `;
             }
+            const options = {
                 query: query,
                 location: 'US',
             };

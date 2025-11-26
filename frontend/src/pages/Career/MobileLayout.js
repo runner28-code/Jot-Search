@@ -87,7 +87,6 @@ export default function MobileLayout(props) {
                 className='h-11 mr-5' />
               <p className='text-textBlack text-xs'>{salaryString}</p>
             </div>
-// Temp comment
           </div>
         </div>
 
@@ -181,7 +180,6 @@ function renderSkillsSection({skillList}) {
     {/* Skills Required */}
     <h4 className={sectionHeaderStyles}>Skills Required</h4>
     <SkillsList items={skillList} />
-  </>)
 }
 function SkillsList({items}) {
   if( !items ) {

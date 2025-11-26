@@ -269,6 +269,7 @@ export class CandidateController {
           where,
           orderBy: {
             firstName: "asc",
+          }
         });
 
         totalPromise = db.candidate.count({ where })

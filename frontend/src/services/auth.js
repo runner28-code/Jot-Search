@@ -86,6 +86,7 @@ class AuthService {
     try {
       const { user_id } = this.getProfile();
       const candidates = await getSavedCandidates(user_id);
+      const candidateIDs = candidates.map(candidate => candidate.id);
       localStorage.setItem('savedCandidates', JSON.stringify(candidateIDs));
     } catch(e) {
       console.log(e);
@@ -127,7 +128,6 @@ class AuthService {
       savedCandidates.push(candidateID);
     } else {
       savedCandidates.splice(savedCandidates.indexOf(candidateID), 1);
-    }
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
   }
 

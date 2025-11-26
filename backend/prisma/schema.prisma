@@ -383,6 +383,7 @@ model Job {
   willRelocate        Boolean?
   yearsRequired       Int?
   status              String?
+  skillList           String[]
   locations           String?
   companyId           String?
   interviews          Int?

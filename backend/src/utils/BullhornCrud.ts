@@ -176,7 +176,6 @@ export const saveClientContacts = async (contacts: any[]) => {
           data: contactData,
         });
         console.log(`Saved ClientContact with ID = ${contact.id} successfully`);
-      } catch (error: any) {
         console.log(error.message);
         console.log(
           `ERROR: while saving ClientContact with ID = ${contact.id}`

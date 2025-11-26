@@ -102,6 +102,7 @@ module.exports = {
         'xxl-4': '40px',
         // General Spacing
         '3.5%': '3.5%',
+// Temp comment
         '5%': '5%',
         '9%': '9%',
         '10%': '10%',
@@ -175,7 +176,6 @@ module.exports = {
         '400': '100rem',
         '420': '105rem',
         '500': '125rem',
-// Temp comment
         '660': '165rem'
       },
       borderWidth: {

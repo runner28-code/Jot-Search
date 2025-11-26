@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import FormInput from '../FormInput';
 import ChoiceTag from '../ChoiceTag';
 import { 
+  roles as roleChoices,
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {

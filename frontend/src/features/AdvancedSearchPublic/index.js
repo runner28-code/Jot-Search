@@ -34,7 +34,6 @@ const availableTabChoicesByUserType = {
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
     switch (pathname) {
-// Temp comment
       case '/candidates':
         return useState('candidates');
       case '/companies':
@@ -187,7 +186,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
               setActiveTab={handleTabChange}
               isLocked={!!disabledTabs}
             />
-          </div>
           <FilterLayout
             activeTab={activeTab}
             filterProps={filterProps}

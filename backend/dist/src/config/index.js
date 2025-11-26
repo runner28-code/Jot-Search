@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 require("dotenv/config");
 const config = {
     port: process.env.PORT,
@@ -15,6 +14,7 @@ const config = {
     getroDatasetID: process.env.DATASET_GETRO,
     bullhornDatasetID: process.env.DATASET_BULLHORN,
     mainDatasetID: process.env.DATASET_MAIN,
+    sendgridKey: process.env.SENDGRID_KEY,
     sendgridSecret: process.env.SENDGRID_SECRET,
     mailSenderEmail: process.env.MAIL_SENDER_EMAIL,
     frontendUrl: process.env.FRONTEND_URL,

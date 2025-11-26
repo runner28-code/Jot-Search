@@ -554,6 +554,7 @@ export class BullhornService {
             address_state: d.address?.state || null,
             address_zip: d.address?.zip || null,
             address_country_id: d.address?.countryID || null,
+            category: `${d.category?.id}-${d.category?.name}`,
             clientCorporation: `${d.clientCorporation?.id}`,
             leads: d.leads?.data.map((lead: any) => lead.id).join(" | "),
             owner: `${d.owner?.id}`,

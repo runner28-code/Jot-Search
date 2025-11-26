@@ -10,12 +10,10 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   const [contentObject, setContentObject] = useState(contentObjectProp);
   const [editMode, setEditMode] = useState(false);
 
-  function handleSubmit() {
     setEditMode(false);
     handleContentUpdate(contentObject);
   }
 
-// Temp comment
   function handleCancel() {
     setContentObject(contentObjectProp);
     setEditMode(false);

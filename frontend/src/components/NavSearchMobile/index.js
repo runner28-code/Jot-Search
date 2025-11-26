@@ -210,7 +210,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
             />
           </div>
         </div>
-// Temp comment
       </div>
     </label>
   )

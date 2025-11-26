@@ -10,7 +10,6 @@ export const JobFilter: any = {
     onSite: "onSite",
     yearsRequired: "yearsRequired",
     willRelocate: "willRelocate",
-    status: "status",
     hidden: "hidden",
     companyId: "clientCorporationID",
   },

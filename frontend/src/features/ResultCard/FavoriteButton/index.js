@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// Temp comment
 import PropTypes from 'prop-types';
 import favoriteIconOutline from '../../../assets/icons/Favorite-outline.svg';
 import favoriteIconFilled from '../../../assets/icons/Favorite-filled.svg';
@@ -80,7 +79,6 @@ function getItemsByType(type) {
     case 'job':
       return AuthService.getSavedJobIDs();
     case 'company':
-      return AuthService.getSavedCompanyIDs();
     case 'candidate':
       return AuthService.getSavedCandidateIDs();
     default:

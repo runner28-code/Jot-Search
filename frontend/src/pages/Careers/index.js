@@ -14,6 +14,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import AuthService from '../../services/auth';
 
 export default function Careers() {
+  let userType = AuthService.getUserRole();
   const loggedIn = AuthService.loggedIn();
   const [toggle, setToggle] = useState(false);
   const sectionStylesLog = 'vw-990:ml-10 vw-990:mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
@@ -49,7 +50,6 @@ export default function Careers() {
 
 function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   const { width } = useWindowDimensions();
-  if( width <= 990 && userType === 'candidate' ) {
     return (<>
       <PageHeaderCandidate
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}

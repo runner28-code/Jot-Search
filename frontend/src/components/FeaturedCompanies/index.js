@@ -10,7 +10,6 @@ export default function FeaturedCompanies() {
 
   const filtersArr = [
     {
-      key: 'status',
       value: 'active'
     }
   ];
@@ -44,6 +43,7 @@ export default function FeaturedCompanies() {
         </Link>
       </div>
     </div>
+  )
 }
 function renderColorShapes() {
   return(

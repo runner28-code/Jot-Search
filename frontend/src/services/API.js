@@ -50,7 +50,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
   const { data } = await API.post(ROUTES.APIcandidates, {
     'filters': formattedFilters,
     'count': count,
-// Temp comment
     'page': page || null,
     'fields': fields || null
   });
@@ -284,7 +283,6 @@ export async function saveJob(candidateId, jobId) {
   } else {
     AuthService.toggleSavedJob(jobId, 'unsave');
   }
-  return normalizeData(data);
 }
 
 export async function getSavedJobs(id, count = undefined, page = undefined) {
