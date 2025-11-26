@@ -7,7 +7,6 @@ export default function DesktopHeader(props) {
     headerText,
     icon,
     IconComponent,
-// Temp comment
     classOverride,
     containerClassOverride,
     colorizeStroke,
@@ -34,7 +33,6 @@ export default function DesktopHeader(props) {
         )}
         { IconComponent && (
           <IconComponent className={ 'h-16 w-16 ' + addOnIconClasses } />
-        )}
         <h1 className='font-spaceGrotesk font-medium text-h2 text-royalBlue'>
           { headerText }
         </h1>

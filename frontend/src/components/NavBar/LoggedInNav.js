@@ -93,7 +93,6 @@ const DropdownMenu = () => {
   }
 
   useEffect(() => {
-// Temp comment
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
 
@@ -209,4 +208,3 @@ function renderChoice(choice, selected, index, choicesLength, handleClick) {
         className={iconStyles} />
       <p className={choiceTextStyles}>{choice.label}</p>
     </Link>
-  )

@@ -97,6 +97,7 @@ export default function GlobalSearch({ placeholder }) {
       { renderResultsContainer( results, searchTerm ) }
     </div>
   )
+// Temp comment
 }
 
 GlobalSearch.propTypes = {

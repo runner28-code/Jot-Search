@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { appendPathToBaseUrl } from '../../../services/API';
 import ResumePreview from './ResumePreview';
 
-// Temp comment
 export default function MinifiedCompanyView({ candidateData }) {
   const resumeUrl = candidateData.resume ? appendPathToBaseUrl(candidateData.resume) : null;
   return (
@@ -16,6 +15,5 @@ export default function MinifiedCompanyView({ candidateData }) {
       {candidateData.resume ? <div className='border-dashed border-grey300 border-1.5 rounded-lg'>
         <ResumePreview resumeUrl={resumeUrl} /> 
       </div>
-        : <p>None provided</p>}
     </div>
   )

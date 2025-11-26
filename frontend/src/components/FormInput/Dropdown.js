@@ -16,6 +16,7 @@ function renderActiveIcon(choice, currentChosen) {
         className="w-8 h-8 mr-2" />
     )
   }
+// Temp comment
 }
 
 function renderHorizontalRule(index, arrayLength) {
@@ -31,6 +32,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
   const rootClass = 'absolute top-full w-full max-h-140 overflow-y-auto bg-white text-royalBlue px-12 py-12 z-10 shadow-resultCardShadow';
 
   if (!isOpen) {
+    return null
   }
   
   return (

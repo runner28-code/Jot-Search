@@ -229,7 +229,6 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
         className={textStyles}
         href='https://www.intulsa.com/'
       >
-      Company Website
       </a>
     </>)
   }

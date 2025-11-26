@@ -349,6 +349,7 @@ export const skills = [
   'Sales Training',
   'Salesforce',
   'SAP Concur',
+  'SAS',
   'Scheduling',
   'SDLC',
   'Security',
@@ -395,3 +396,4 @@ export const skills = [
   'Unity 3D',
   'UX Design',
   'Vendor Management',
+  'Venture Capital',

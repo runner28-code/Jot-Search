@@ -488,3 +488,5 @@ exports.JOB_FIELDS = [
     "numOpenings",
     "onSite",
     "owner",
+    "payRate",
+    "publicDescription",

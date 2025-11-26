@@ -8,6 +8,7 @@ import BackButton from '../BackButton';
 export default function DetailsHeader({ type, source }) {
   let Icon = undefined;
   switch(type) {
+// Temp comment
     case 'candidate':
       Icon = CandidatesIcon;
       break;
@@ -36,3 +37,22 @@ export default function DetailsHeader({ type, source }) {
     </div>
     <BackButton />
   </>)
+}
+
+DetailsHeader.propTypes = {
+  type: PropTypes.string.isRequired,
+  source: PropTypes.string
+}
+
+function renderSourceIdentifier(source) {
+  if( source === 'bullhorn' ) {
+    return(
+      <SourceIdentifier type={source} />
+    )
+  }
+  if( source === 'getro' ) {
+    return (
+      <SourceIdentifier />
+    )
+  }
+  return null;

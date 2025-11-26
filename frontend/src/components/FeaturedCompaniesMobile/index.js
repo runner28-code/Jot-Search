@@ -41,7 +41,6 @@ export default function FeaturedCompaniesMobile() {
           to={ROUTES.companies}
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
-// Temp comment
         </Link>
       </div>
     </div>

@@ -277,7 +277,6 @@ const job_filter_exclude_keys = [
   "parking",
   "parks",
   "parmacist",
-  "patient",
   "pavement",
   "penetration",
   "permit",
@@ -490,3 +489,5 @@ export const JOB_FIELDS = [
   "numOpenings",
   "onSite",
   "owner",
+  "payRate",
+  "publicDescription",

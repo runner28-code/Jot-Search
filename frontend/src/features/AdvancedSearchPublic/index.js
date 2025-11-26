@@ -216,6 +216,7 @@ AdvancedSearchPublic.propTypes = {
 function FilterLayout({ activeTab, filterProps }) {
   switch (activeTab) {
     case 'candidates':
+      return <CandidateFilterLayout {...filterProps} />
     case 'jobs':
       return <CareerFilterLayout {...filterProps} />
     case 'companies':

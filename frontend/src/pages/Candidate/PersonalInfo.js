@@ -295,7 +295,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
               <div className='vw-1280:flex gap-12'>
                 <label
                   htmlFor='ethnicity'
-// Temp comment
                   className={labelStyles}
                 >
                   <p className={labelTextStyles}>Voluntary Self-ID of Veteran Status</p>
@@ -354,7 +353,6 @@ function renderCommunity (referralChoice, commObj, handleCommunityChoice, commun
 function renderEditIcon(candidateData, setEditMode) {
   const isProfileOwner = candidateData.id === AuthService.getProfile().user_id;
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
-  // Only show component if user is profile owner or coordinator
   if ( !isProfileOwner && !isCoordinator ) {
     return null;
   }

@@ -75,3 +75,4 @@ export const communityChoices = [
   'Bootup',
   'Tulsa Tomorrow',
   'Holberton',
+  'Campus Tulsa',

@@ -1,6 +1,5 @@
 /*
   Warnings:
-
   - The `interviews` column on the `Job` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `salary` column on the `Job` table would be dropped and recreated. This will lead to data loss if there is data in the column.
 
@@ -23,3 +22,4 @@ ADD COLUMN     "taxStatus" TEXT,
 DROP COLUMN "interviews",
 ADD COLUMN     "interviews" INTEGER,
 DROP COLUMN "salary",
+ADD COLUMN     "salary" BIGINT,

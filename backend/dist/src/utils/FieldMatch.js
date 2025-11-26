@@ -14,6 +14,7 @@ exports.JobFilter = {
         status: "status",
         hidden: "hidden",
         companyId: "clientCorporationID",
+// Temp comment
     },
     main: {
         id: "id",
@@ -68,3 +69,4 @@ exports.USER_FILTER = {
     seniority: "seniority",
     experience: "experience",
     employmentPreference: "employmentPreference",
+    educationDegree: "educationDegree",

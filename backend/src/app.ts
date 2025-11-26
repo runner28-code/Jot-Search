@@ -81,6 +81,7 @@ const getActualRequestDurationInMs = (start: any) => {
 const logger = (req: Request, res: Response, next: NextFunction) => {
   let current_datetime = new Date();
   let formatted_date =
+    current_datetime.getFullYear() +
     "-" +
     (current_datetime.getMonth() + 1) +
     "-" +
@@ -138,3 +139,4 @@ useExpressServer(app, {
 
 app.listen(port, function () {
   console.log(`App is listening on port ${port} !`);
+});

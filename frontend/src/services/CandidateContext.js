@@ -110,6 +110,7 @@ const CandidateProvider = ({children}) => {
         setCurrentUser(user);
       })
     }
+  }, []);
 
   const handleCandidatesChange = (value) => {
     setCandidates(value);

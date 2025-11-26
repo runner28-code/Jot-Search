@@ -14,7 +14,6 @@ import {
   RiDashboard3Line as DashboardIcon,
 } from 'react-icons/ri';
 import * as ROUTES from '../../../routes';
-
 export const choices = {
   dashboard: {
     label: 'My Dashboard',
@@ -129,6 +128,7 @@ export function findSelectedFromPath() {
       return 'Companies';
     case 'add-user':
       return 'Add User';
+    case 'alerts':
       return 'Alerts';
     case 'contact':
       return 'Contact InTulsa';

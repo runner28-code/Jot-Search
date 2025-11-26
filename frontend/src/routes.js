@@ -5,6 +5,7 @@ export const blog = '/blog';
 export const about = '/about';
 export const login = '/login';
 export const logout = '/logout';
+// Temp comment
 export const profile = '/profile';
 export const apply = '/apply';
 export const favorites = '/favorites';
@@ -54,7 +55,6 @@ export const search = '/search';
 // Auth
 export const APIlogin = '/login';
 export const APIregister = '/register';
-// Temp comment
 export const APIregisterCoordinator = '/register_coordinator';
 export const APIaddUser = '/add-user';
 export const APIupload = '/api/upload';
@@ -91,3 +91,4 @@ export const APIcategories = APIcategoryBase + '/search';
 export const APIstats = '/stats';
 export const APIlandingPageStats = '/landing-page-stats';
 
+/* Social Links */

@@ -312,6 +312,7 @@ export async function getCategoryById(id) {
     params: {
       id
     }
+  });
   return normalizeData(data.category);
 }
 

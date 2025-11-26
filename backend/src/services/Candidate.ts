@@ -67,7 +67,6 @@ export const getSavedCandidates = async (companyUserId: string) => {
             users: true,
           }
         },
-      },
     });
 
     if (user && user.savedCandidates && user.savedCandidates.length > 0) {

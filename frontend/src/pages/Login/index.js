@@ -30,7 +30,6 @@ export default function Login() {
     }
   }
 
-// Temp comment
   return (
     <section className='-mt-18 flex flex-col items-center pb-14 bg-login-page-hero bg-no-repeat bg-top bg-[length:auto_34rem] vw-640:bg-[length:auto_48rem] vw-900:bg-[length:100%_auto]'>
       <div className='w-full flex flex-col items-center'>
@@ -68,7 +67,6 @@ export default function Login() {
             type='password'
             name='password'
             label='Password'
-          />
           <div className='flex justify-between items-center vw-640:items-end mb-22 gap-[10px]'>
             <button
               className='h-20 vw-640:h-24 bg-royalBlue text-center text-white text-xl tracking-wide px-14 rounded-lg'

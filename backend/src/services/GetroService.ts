@@ -61,6 +61,7 @@ export class GetroService {
         }
         return false;
     };
+
     async getCompanies(testMode = false, per_page = 30): Promise<any> {
         console.log('\n***** getCompanies *****');
         let page = 1;
@@ -288,3 +289,4 @@ export class GetroService {
     async saveGetroJobInBullhornJobTable(getroJob: any): Promise<any> {
         console.log('Saving Getro job in Bullhorn table: ', getroJob.id);
         const data = {
+            externalId: getroJob.id,

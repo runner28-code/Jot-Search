@@ -431,3 +431,4 @@ const normalizeValue = (key: string, value: any) => {
   if (typeof value === "string") {
     if (key === 'companyId') {
       return {
+        equals: value,

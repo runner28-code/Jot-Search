@@ -25,7 +25,6 @@ function isTodayOrYesterday(dateObj) {
 }
 
 function formatDateByDay(isToday, isYesterday, dateObj) {
-// Temp comment
   const time = dateObj.toLocaleTimeString();
   const timeWithoutSeconds = time.replace(/(.*)\D\d+/, '$1')
   if ( isToday ) {
@@ -44,6 +43,7 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
         case 3:  return d + 'rd';
         default: return d + 'th';
       }
+// Temp comment
     }
 
     return `${month} ${concatenateOrdinal(day)}, ${timeWithoutSeconds}`;

@@ -25,3 +25,4 @@ const config = {
 
   enableCronJobs: process.env.ENABLE_CRON_JOBS,
 };
+

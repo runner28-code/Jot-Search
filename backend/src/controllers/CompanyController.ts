@@ -11,7 +11,6 @@ import {
 import { BigQueryService } from "../services/BigQueryService";
 import { BullhornService } from "../services/BullhornService";
 import { getSavedCompanies, saveCompany } from "../services/Company";
-import {
   DATASET_BULLHORN,
   DATASET_GETRO,
   FilterOption,
@@ -360,3 +359,5 @@ export class CompanyController {
     const _table = Tables.COMPANIES;
     const _condition = _filters
       .map(
+        (opt) =>
+          `LOWER(${CompanyFilter.getro[opt.key]

@@ -63,7 +63,6 @@ export class CandidateController {
           where: {
             id,
           },
-        });
       }
 
       return {
@@ -412,3 +411,5 @@ export class CandidateController {
             jobId: jobId,
           })
         }
+      }
+

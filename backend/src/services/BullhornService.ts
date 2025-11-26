@@ -505,7 +505,6 @@ export class BullhornService {
             "fax2",
             "fax3",
             "firstName",
-            "isAnonymized",
             "isDayLightSavings",
             "isDeleted",
             "lastName",
@@ -982,3 +981,7 @@ export class BullhornService {
           headers: {
             "Content-Type": "application/json;charset=UTF-8",
             Accept: "*/*",
+          },
+        });
+        if (data.data.length) {
+          const jobDetail = data.data[0];

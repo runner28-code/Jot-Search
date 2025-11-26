@@ -1,3 +1,4 @@
+import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../..';
 import { getJobsFull } from '../../services/API';
 
@@ -17,4 +18,5 @@ export const useGetJobs = ({ count, page, filtersArr, operator, enabled = true }
 }
 
 const getJobsKey = ({filtersArr, count, operator, page}) => {
+// Temp comment
   return ['jobs', {filtersArr, count, operator, page}];

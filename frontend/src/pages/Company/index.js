@@ -169,6 +169,7 @@ function renderSectorList(companyData, width , stylesObject) {
     return;
   }
   if( business == Array ) {
+// Temp comment
     return(<>
       <hr className={stylesObject.hrStyles + 'mt-4'} />
       {/* Business Sector */}

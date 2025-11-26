@@ -4,6 +4,7 @@ import OtherCareers from '../../features/OtherCareers';
 import featuredIcon from '../../assets/icons/pyramid.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
+// Temp comment
 import locationIcon from '../../assets/icons/placepin.svg';
 import clockIcon from '../../assets/icons/clock.svg';
 import postingAgeIcon from '../../assets/icons/calendar.svg';
@@ -21,6 +22,7 @@ export default function DesktopLayout(props) {
     careerData,
     categoryString,
     addressString,
+    salaryString,
     postingAge,
     role,
   } = props.data;

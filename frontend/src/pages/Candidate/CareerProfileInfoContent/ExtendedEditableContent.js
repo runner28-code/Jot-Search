@@ -72,3 +72,4 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     }
 
     handleCandidateUpdate(dataToSubmit);
+    setEditMode(false);

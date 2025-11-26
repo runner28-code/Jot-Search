@@ -624,3 +624,6 @@ export const getLandingPageStats = async () => {
       totalJobsCount,
       totalCompaniesCount,
       message: null,
+    };
+  } catch (error) {
+    return {

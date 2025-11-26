@@ -113,6 +113,7 @@ export default function Footer() {
         <img
           src={facebook}
           className={socialIconStyle}
+        />
       </a>
       <a href={ROUTES.instagram}>
         <img
@@ -331,7 +332,6 @@ function NavFooterMobile() {
       </div>
       <div className='flex flex-col basis-6/12 px-8'>
         <Link
-          to={ROUTES.landingPage}
           className={linkStyle}
         >Home
         </Link>

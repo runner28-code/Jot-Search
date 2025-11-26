@@ -320,3 +320,5 @@ export type Lead = {
     notes?: string;
     numEmployees?: string;
     occupation?: string;
+    owner?: string;
+    ownerCorporation?: string;

@@ -64,7 +64,6 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
     linkedin: undefined,
     skills: data.primarySkills,
     category: data.specialties,
-    seniority: data.experience,
     workspace: data.willRelocate,
     referredBy: data.referredBy,
     roles: data.skillSet,
@@ -129,3 +128,4 @@ export const parseGetroJobToMain = (data: GtJob) => {
     status: data.status,
     skillList: data.job_functions,
     companyId: `gt-${data.organization_id}`,
+    salary: `${data.compensation_min} - ${data.compensation_max}`,

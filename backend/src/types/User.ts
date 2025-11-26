@@ -101,3 +101,4 @@ export const IUSER = {
 export const USERKEYS = Object.keys(IUSER);
 
 export type LoginInfo = {
+  email: string;

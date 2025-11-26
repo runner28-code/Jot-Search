@@ -48,7 +48,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
       onClick={handleFavoriteClick}
     />
   )
-}
 
 FavoriteButton.propTypes = {
   type: PropTypes.string.isRequired,

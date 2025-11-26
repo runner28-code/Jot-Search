@@ -742,3 +742,6 @@ model GetroMember {
   dribbble_url             String?
   first_name               String?
   last_name                String?
+  github_url               String?
+  linkedin_url             String?
+  resume_url               String?
