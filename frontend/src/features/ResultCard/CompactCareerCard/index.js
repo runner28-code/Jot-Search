@@ -74,7 +74,6 @@ CompactCareerCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     city: PropTypes.string,
-// Temp comment
     state: PropTypes.string,
     company: PropTypes.shape({
       name: PropTypes.string,
@@ -96,7 +95,6 @@ CompactCareerCard.propTypes = {
     })
   }).isRequired,
   index: PropTypes.number,
-  active: PropTypes.bool,
   agoDate: PropTypes.string,
   isFavoriteOverride: PropTypes.bool,
   selectableProps: PropTypes.shape({

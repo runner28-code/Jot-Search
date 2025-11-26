@@ -17,6 +17,7 @@ exports.JobFilter = {
     },
     main: {
         id: "id",
+        status: "status",
         skillList: "skillList",
         hidden: "hidden",
         employmentType: "employmentType",
@@ -54,7 +55,6 @@ exports.USER_FILTER = {
     state: "state",
     skills: "skills",
     skillSet: "skillSet",
-    category: "category",
     status: "status",
     email: "email",
     bh_email: "bh_email",

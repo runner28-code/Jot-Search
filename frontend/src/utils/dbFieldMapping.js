@@ -59,7 +59,6 @@ export const educationChoices = [
 
 export const referralChoices = [
   'Web Search',
-// Temp comment
   'Social Media',
   'Career Fair',
   'Event',

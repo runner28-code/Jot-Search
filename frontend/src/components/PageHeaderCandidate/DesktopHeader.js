@@ -24,6 +24,7 @@ export default function DesktopHeader(props) {
   return (
     <div className={containerClasses}>
       <div className='flex gap-8 items-center'>
+        { icon && (
           <img
             src={ icon }
             alt='header icon'

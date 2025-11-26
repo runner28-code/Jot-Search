@@ -70,6 +70,7 @@ export default function Dropdown(props) {
   const menuRef = useRef(null);
 
   const handleClick = (choice) => {
+// Temp comment
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {
         onChange(name, currentChosen.filter(item => item !== choice));

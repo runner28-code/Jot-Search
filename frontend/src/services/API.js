@@ -283,6 +283,7 @@ export async function saveJob(candidateId, jobId) {
   } else {
     AuthService.toggleSavedJob(jobId, 'unsave');
   }
+  return normalizeData(data);
 }
 
 export async function getSavedJobs(id, count = undefined, page = undefined) {

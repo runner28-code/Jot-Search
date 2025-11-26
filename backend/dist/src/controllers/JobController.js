@@ -125,7 +125,6 @@ let JobController = class JobController {
                 const extendedJobs = jobs.map((job) => {
                     var _a, _b;
                     const getroCompany = getroCompanies.find((gc) => { var _a; return gc.domain === ((_a = job.company) === null || _a === void 0 ? void 0 : _a.companyURL); });
-                    if (getroCompany) {
                         job.company.logo = getroCompany.logo_url;
                     }
                     job.company_name = (_a = job.company) === null || _a === void 0 ? void 0 : _a.name;
@@ -345,4 +344,5 @@ const normalizeFilters = (filters) => {
         Object.keys(filters).forEach((key) => {
             filterObj[key] = normalizeValue(filters[key]);
         });
+    }
     return filterObj;

@@ -51,6 +51,7 @@ const job_filter_exclude_keys = [
     "budget",
     "builder",
     "building",
+    "buyer",
     "cafeteria",
     "cage",
     "call center",

@@ -9,9 +9,9 @@ export {default as Careers} from './Careers';
 export {default as Companies} from './Companies';
 export {default as Company} from './Company';
 export {default as Dashboard} from './Dashboard';
+// Temp comment
 export {default as Favorites} from './Favorites';
 export {default as LandingPage} from './LandingPage';
-// Temp comment
 export {default as Login} from './Login';
 export {default as Logout} from './Logout';
 export {default as Profile} from './Profile';

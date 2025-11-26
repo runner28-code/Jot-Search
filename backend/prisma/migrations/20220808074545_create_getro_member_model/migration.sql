@@ -39,7 +39,6 @@ CREATE TABLE "GetroMember" (
     "dribbble_url" TEXT,
     "first_name" TEXT,
     "last_name" TEXT,
-    "github_url" TEXT,
     "linkedin_url" TEXT,
     "resume_url" TEXT,
     "twitter_url" TEXT,

@@ -47,6 +47,7 @@ const mockCandidateData = [
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma',
+// Temp comment
     isLooking: false,
     isWarm: false,
   },
@@ -96,6 +97,7 @@ const mockCandidateData = [
     isWarm: false,
   },
 ];
+
 export const CandidateContext = createContext();
 export const useCandidateContext = () => useContext(CandidateContext)
 

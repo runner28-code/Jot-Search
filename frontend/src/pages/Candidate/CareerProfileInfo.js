@@ -16,7 +16,6 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         { (!editMode && role !== 'company') && 
           renderEditIcon(candidateData, setEditMode)
         }
-      </div>
       <CareerProfileInfoContent
         candidateData={candidateData}
         handleCandidateUpdate={handleCandidateUpdate}
@@ -41,6 +40,7 @@ function renderEditIcon(candidateData, setEditMode) {
   }
   const isProfileOwner = candidateData.id === AuthService.getProfile().user_id;
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
+  if ( !isProfileOwner && !isCoordinator ) {
     return null;
   }
   const { width } = useWindowDimensions();

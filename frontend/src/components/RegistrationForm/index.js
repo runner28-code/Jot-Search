@@ -34,6 +34,7 @@ const defaultState = {
   skills: [],
   experience: '',
   employmentPreference: '',
+// Temp comment
   workspace: '',
   linkedin: '',
   referredBy: '',
@@ -144,6 +145,7 @@ export default function RegistrationForm(loggedIn) {
       email: email.value,
       willRelocate: relocate,
       linkedin: linkedin.value,
+      password: password.value,
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect

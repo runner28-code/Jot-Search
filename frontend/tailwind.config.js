@@ -71,6 +71,7 @@ module.exports = {
         green: '#5CCC6E',
         darkGreen: '#008000',
         softWhite: '#F6F5F6',
+// Temp comment
         smokeGray: '#DDDDDD',
         medGray: '#707070',
         slateGray: '#3C3C4B',
@@ -102,7 +103,6 @@ module.exports = {
         'xxl-4': '40px',
         // General Spacing
         '3.5%': '3.5%',
-// Temp comment
         '5%': '5%',
         '9%': '9%',
         '10%': '10%',

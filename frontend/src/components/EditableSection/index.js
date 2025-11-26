@@ -10,6 +10,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
   const [contentObject, setContentObject] = useState(contentObjectProp);
   const [editMode, setEditMode] = useState(false);
 
+  function handleSubmit() {
     setEditMode(false);
     handleContentUpdate(contentObject);
   }
@@ -55,6 +56,7 @@ function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
 
 function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCancel) {
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
+// Temp comment
   const isProfileOwner = AuthService.getProfile().user_id === entityID;
 
   function handleEditClick() {

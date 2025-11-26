@@ -128,6 +128,7 @@ class AuthService {
       savedCandidates.push(candidateID);
     } else {
       savedCandidates.splice(savedCandidates.indexOf(candidateID), 1);
+    }
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
   }
 

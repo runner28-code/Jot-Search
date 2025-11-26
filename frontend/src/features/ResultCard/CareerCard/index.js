@@ -33,7 +33,6 @@ export default function CareerCard({ data, active }) {
 
   return (
     <div
-// Temp comment
       className='relative w-full'
       key={data.id}
     >

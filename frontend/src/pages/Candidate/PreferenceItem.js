@@ -6,6 +6,7 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
   return (
     <div className='flex flex-col mt-5'>
       <div className='flex space-x-16'>
+// Temp comment
         <SwitchButton
           fieldName={fieldName}
           label={label}
@@ -63,6 +64,7 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
       role="switch"
       aria-checked={toggled}
       onClick={handleToggle}
+    >
       <span className="sr-only">{label}</span>
       <span 
         aria-hidden="true" 

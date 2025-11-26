@@ -159,6 +159,7 @@ function renderAboutCompanySection(careerData, companyName) {
 }
 
 function renderDescription(role, navigate, companyName, skillList, careerData) {
+// Temp comment
 
   if (role === 'coordinator') {
     return null;

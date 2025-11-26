@@ -79,7 +79,6 @@ const parseBullhornCompanyToUser = (data) => {
         workAuthorized: data.workAuthorized,
         disability: data.disability,
     };
-    return user;
 };
 exports.parseBullhornCompanyToUser = parseBullhornCompanyToUser;
 const parseBullhornJobToMain = (data) => {

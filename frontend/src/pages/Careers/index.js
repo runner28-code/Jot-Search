@@ -9,7 +9,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdSearch as SearchIcon } from 'react-icons/md';
 import Dashboard from '../../components/DashboardPublic';
 import DashboardCandidate from '../../components/DashboardCandidate';
-import useWindowDimensions from '../../hooks/windowDimensions';
 
 import AuthService from '../../services/auth';
 
@@ -50,6 +49,7 @@ export default function Careers() {
 
 function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   const { width } = useWindowDimensions();
+  if( width <= 990 && userType === 'candidate' ) {
     return (<>
       <PageHeaderCandidate
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}

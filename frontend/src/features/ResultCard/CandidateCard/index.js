@@ -136,7 +136,6 @@ function LinkWrapper({ children, link, disableLink }) {
       to={link}
       className={linkStyles}
       tabIndex='0'
-// Temp comment
     >
       {children}
     </Link>
@@ -187,7 +186,6 @@ function renderSkills(skillsString) {
     return <SkillTag skill='No skills chosen' />
   }
   const skills = skillsString.split(',');
-  return skills.map((skill, index) => {
     return <SkillTag
       skill={skill}
       key={index}
