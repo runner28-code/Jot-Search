@@ -8,7 +8,6 @@ import { MdCancel, MdCheckCircle } from 'react-icons/md';
 
 export default function EditableSection({ entityID, header, contentObjectProp, handleContentUpdate, headerStyles }) {
   const [contentObject, setContentObject] = useState(contentObjectProp);
-  const [editMode, setEditMode] = useState(false);
 
   function handleSubmit() {
     setEditMode(false);
@@ -40,7 +39,6 @@ EditableSection.propTypes = {
   header: PropTypes.string.isRequired,
   contentObjectProp: PropTypes.object.isRequired,
   handleContentUpdate: PropTypes.func.isRequired,
-// Temp comment
   headerStyles: PropTypes.string.isRequired,
 }
 

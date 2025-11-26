@@ -32,7 +32,6 @@ export default function DashboardPublic({togglePassState}) {
       <div className='flex items-center  mt-12'>
         <div className='flex items-center'>
           <Link
-// Temp comment
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
           >
@@ -41,6 +40,7 @@ export default function DashboardPublic({togglePassState}) {
           </Link>
           <Link
             className={location === '/companies' ? buttonStylesRight + active : buttonStylesRight }
+// Temp comment
             to={ROUTES.companies}
           >
             <CompanyIcon />

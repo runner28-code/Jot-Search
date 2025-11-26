@@ -58,7 +58,6 @@ export default function FeaturedJobs() {
                       <h5 className={ width >= 990 ? cardContentTitle : cardContentTitleMobile }>{career.title}</h5>
                       <p className={ width >= 990 ? cardContentSubtitle : cardContentSubtitleMobile }>{categoryString}</p>
                     </div>
-// Temp comment
                   </div>
                 </Link>
               )
@@ -84,7 +83,6 @@ function renderColorShapes() {
     </div>
   )
 }
-
 
 function RenderImage({image}) {
   const containerStyles = 'w-48 h-48 mb-6 ';

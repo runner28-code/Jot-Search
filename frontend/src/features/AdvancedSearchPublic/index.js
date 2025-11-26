@@ -29,6 +29,7 @@ const availableTabChoicesByUserType = {
   company: ['candidates', 'jobs'],
   candidate: ['jobs', 'companies'],
   guest: ['jobs', 'companies'],
+}
 
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
@@ -215,7 +216,6 @@ AdvancedSearchPublic.propTypes = {
 function FilterLayout({ activeTab, filterProps }) {
   switch (activeTab) {
     case 'candidates':
-      return <CandidateFilterLayout {...filterProps} />
     case 'jobs':
       return <CareerFilterLayout {...filterProps} />
     case 'companies':

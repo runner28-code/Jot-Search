@@ -35,6 +35,7 @@ import { CreateJwtToken, VerifyJwtToken } from "../utils/jwtUtils";
 import { User as DbUser } from "prisma/prisma-client";
 import db from "../utils/db";
 
+@Controller()
 export class UserController {
   @Post("/login")
   async login(@Body() body: { email: string; password: string }) {

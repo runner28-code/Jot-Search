@@ -2,7 +2,6 @@
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
-// Temp comment
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
@@ -24,7 +23,6 @@ const jwtUtils_1 = require("./utils/jwtUtils");
 const User_1 = require("./services/User");
 const multer_1 = __importDefault(require("multer"));
 const utils_1 = require("./utils");
-const fs_1 = __importDefault(require("fs"));
 dotenv_1.default.config();
 const ALLOWED_UPLOAD_FOLDERS = ["resumes", "avatars"];
 const multerStorage = multer_1.default.diskStorage({

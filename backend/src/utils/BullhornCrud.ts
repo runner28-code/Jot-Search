@@ -322,3 +322,4 @@ export const migrateJobInTPP = async (data: Job) => {
         `;
     // console.log(query);
     const options = {
+      query: query,

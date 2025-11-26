@@ -51,7 +51,6 @@ Object.keys(jobFilterObject).forEach(key => {
 
 export const defaultJobFilterState = {
   title: '',
-// Temp comment
   status: ACTIVE_STATUSES,
   ...convertedJobFilters
 };
@@ -121,6 +120,7 @@ export const defaultCandidateFilterState = {
   firstname: '',
   ...convertedCandidateFilters
 };
+// Temp comment
 
 /* UTIL FUNCTIONS */
 export function buildSearchFilters(filterObject) {

@@ -23,6 +23,7 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
         setEditMode={setEditMode}
         iconStyles={iconStyles}
         editMode={editMode}
+// Temp comment
         role={role}
       />
     </>

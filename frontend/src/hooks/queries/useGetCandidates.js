@@ -15,10 +15,8 @@ export const prefetchAllSelectCandidates = async() => {
   await queryClient.prefetchQuery(getCandidatesKey(values), () => getCandidatesFull(values.filtersArr, values.count, undefined, values.fields));
 }
 
-// Temp comment
 export const useGetCandidates = ({ count, page, fields, filtersArr, enabled = true }) => {
   formatFilters(filtersArr)
-  const { data, error, isLoading } = useQuery(
     getCandidatesKey({filtersArr, count, page, fields}),
     () => getCandidatesFull(filtersArr, count, page, fields),
     { enabled }

@@ -158,6 +158,7 @@ function renderActiveStatus(candidate) {
         />
         <p className='text-white text-sm text-xxs'>Actively Looking</p>
       </div>
+    )
   }
 
   return null;
@@ -171,7 +172,6 @@ function NewLeadLabel({ status }) {
         <p className='text-grey700 text-sm font-semibold'>New Lead</p>
       </div>
     )
-  }
 
   return null;
 }

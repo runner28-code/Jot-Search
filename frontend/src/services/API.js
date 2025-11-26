@@ -312,7 +312,6 @@ export async function getCategoryById(id) {
     params: {
       id
     }
-  });
   return normalizeData(data.category);
 }
 
@@ -352,7 +351,6 @@ export async function uploadFile(folderType, file) {
 
     const data = await API.post(ROUTES.APIupload, formData, config);
     return normalizeData(data.data.file);
-// Temp comment
   } catch (err) {
     console.log('Resume Upload Error: ', err);
     return err;

@@ -46,3 +46,4 @@ exports.IUSER = {
     occupation: "",
     employmentPreference: "",
     activelyLooking: true,
+};

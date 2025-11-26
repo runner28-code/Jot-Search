@@ -359,3 +359,4 @@ export class CompanyController {
     const _dataset = DATASET_GETRO;
     const _table = Tables.COMPANIES;
     const _condition = _filters
+      .map(

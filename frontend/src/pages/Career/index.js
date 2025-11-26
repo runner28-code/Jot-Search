@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 import MobileLayout from './MobileLayout';
 import DesktopLayout from './DesktopLayout';
-import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import urlDecode from '../../utils/urlDecode';
 import { buildCareerAddress, calculatePostingAge, buildSalaryString } from '../../utils/formatFunctions';
@@ -57,6 +56,7 @@ export default function CareerPage() {
   const containerStyles = 'ml-10 mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
 
   return (<>
+    <RenderHeader
       loggedIn={loggedIn}
       role={role}
       source={source}

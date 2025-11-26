@@ -50,9 +50,11 @@ export const talentInTulsa = 'https://www.talent.intulsa.com/';
 export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';
 
 /* API Links */
+export const search = '/search';
 // Auth
 export const APIlogin = '/login';
 export const APIregister = '/register';
+// Temp comment
 export const APIregisterCoordinator = '/register_coordinator';
 export const APIaddUser = '/add-user';
 export const APIupload = '/api/upload';
@@ -88,3 +90,4 @@ export const APIcategories = APIcategoryBase + '/search';
 // Stats
 export const APIstats = '/stats';
 export const APIlandingPageStats = '/landing-page-stats';
+

@@ -93,6 +93,7 @@ export default function InviteCandidates({ job }) {
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>
       </div>
     </section>
+  )
 }
 
 function itemRenderer({ option, onClick, disabled }) {
@@ -120,6 +121,7 @@ function itemRenderer({ option, onClick, disabled }) {
 }
 
 function getTagLine({ candidate }) {
+// Temp comment
   let tagLine = '';
   if (candidate?.occupation && candidate?.companyName) {
     tagLine = `${candidate.occupation} @ ${candidate.companyName}`

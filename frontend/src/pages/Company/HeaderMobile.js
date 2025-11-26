@@ -24,7 +24,6 @@ function HeaderContent({ companyData }) {
       <div className='grow p-2'>
         <div className='flex flex-wrap items-center mb-4'>
           <div className='basis-2/6'>
-            { renderCompanyLogo(companyData.logo, companyData.name) }
             <FillerIcon />
           </div>
           <div className='basis-4/6'>
@@ -151,7 +150,6 @@ function FillerIcon () {
     )
   } else {
     return null;
-// Temp comment
   }
 }
 

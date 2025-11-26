@@ -93,6 +93,7 @@ const DropdownMenu = () => {
   }
 
   useEffect(() => {
+// Temp comment
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
 

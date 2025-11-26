@@ -71,3 +71,4 @@ CREATE TABLE "GetroMember" (
     "userTalentCollectionId" TEXT,
 
     CONSTRAINT "GetroMember_pkey" PRIMARY KEY ("id")
+);

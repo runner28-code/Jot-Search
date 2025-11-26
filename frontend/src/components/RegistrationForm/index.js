@@ -156,7 +156,6 @@ export default function RegistrationForm(loggedIn) {
 
   function handleChange(name, value) {
     setFormObj({
-// Temp comment
       ...formObj,
       [name]: value,
     });

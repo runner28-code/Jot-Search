@@ -375,7 +375,6 @@ const job_filter_exclude_keys = [
     "sterile",
     "stock",
     "store",
-// Temp comment
     "storm",
     "stormwater",
     "street",
@@ -488,3 +487,4 @@ exports.JOB_FIELDS = [
     "markUpPercentage",
     "numOpenings",
     "onSite",
+    "owner",

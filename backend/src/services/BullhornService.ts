@@ -979,3 +979,6 @@ export class BullhornService {
         });
         const jobUrl = `${this.restUrl}search/JobOrder?${jobQuery}`;
         const { data } = await axios.get(jobUrl, {
+          headers: {
+            "Content-Type": "application/json;charset=UTF-8",
+            Accept: "*/*",

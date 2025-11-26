@@ -113,7 +113,6 @@ export default function Footer() {
         <img
           src={facebook}
           className={socialIconStyle}
-        />
       </a>
       <a href={ROUTES.instagram}>
         <img
@@ -226,7 +225,6 @@ function NavFooter() {
           className={blueLinkStyle}
         >Login
         </Link>
-// Temp comment
         <a
           href={ROUTES.mailToIntulsa}
           className={addressLinkStyle}

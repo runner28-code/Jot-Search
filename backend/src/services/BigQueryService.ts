@@ -17,7 +17,6 @@ export class BigQueryService {
     public static async selectQuery(datset: string, table: string, fields: string, count?: number, condition?: string, join?: string, fromAlias?: string) {
         try {
             let query = `SELECT ${fields} FROM \`${datset}.${table}\` ${fromAlias ? `AS ${fromAlias}` : ''}`;
-            if(join){
                 query += ` ${join}`;
             }
             if (condition) {
@@ -55,6 +54,7 @@ export class BigQueryService {
             const values = keys.map(k => `"""${data[k]}"""`);
           
             const query = `
+              INSERT INTO \`${dataset}.${table}\`
               (${keys.join(', ')})
               VALUES (${values.join(', ')})
             `;
@@ -71,3 +71,4 @@ export class BigQueryService {
             return { result: true, res, data};
         } catch (error) {
             console.log(error);
+            return { result: false, message: error };

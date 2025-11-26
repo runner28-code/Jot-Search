@@ -16,6 +16,7 @@ const config = {
     bullhornDatasetID: process.env.DATASET_BULLHORN,
     mainDatasetID: process.env.DATASET_MAIN,
     sendgridKey: process.env.SENDGRID_KEY,
+// Temp comment
     sendgridSecret: process.env.SENDGRID_SECRET,
     mailSenderEmail: process.env.MAIL_SENDER_EMAIL,
     frontendUrl: process.env.FRONTEND_URL,

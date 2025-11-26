@@ -75,7 +75,6 @@ export default function NavSearchMobile({ placeholder }) {
   const closeDropdown = () => {
     setForceHidden(true);
   };
-// Temp comment
 
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
@@ -179,7 +178,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
   }
 
   function handleChange(e) {
-    setSearchTerm(e.target.value);
   }
 
   const placeholderText = placeholder || 'Search for companies or jobs...';

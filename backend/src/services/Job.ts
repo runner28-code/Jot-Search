@@ -67,6 +67,7 @@ export const getAppliedJobsByUser = async (userId: string) => {
       include: {
         company: true,
         applications: {
+          where: {
             userId,
           },
         },
@@ -129,3 +130,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
     console.log(err);
     return {
       message: err,
+      result: false,

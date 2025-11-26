@@ -318,3 +318,5 @@ export type Lead = {
     nameSuffix?: string;
     nickName?: string;
     notes?: string;
+    numEmployees?: string;
+    occupation?: string;

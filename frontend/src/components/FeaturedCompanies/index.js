@@ -22,7 +22,6 @@ export default function FeaturedCompanies() {
       { renderColorShapes() }
       <h2 className='text-h4 font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
       <div className='flex flex-wrap mt-8'>
-// Temp comment
         {
           isLoading ?
             <LoadingSpinner />
@@ -53,4 +52,5 @@ function renderColorShapes() {
       <div className='bg-pinkSquare w-12 h-12' />
       <div className='bg-orangeSquare bg-pink-500 top-[-20px] right-[5px] absolute w-6 h-6' />
     </div>
+// Temp comment
   )

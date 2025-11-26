@@ -28,7 +28,6 @@ export default function Applications() {
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
-      loading: false
     });
   }, []);
 

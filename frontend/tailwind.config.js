@@ -111,6 +111,7 @@ module.exports = {
         '30%': '30%',
         '35%': '35%',
         '40%': '40%',
+// Temp comment
         '44%': '44%',
         '46%': '46%',
         '52%': '52%',
@@ -260,3 +261,4 @@ module.exports = {
           /* Safari and Chrome */
           '&::-webkit-scrollbar': {
             display: 'none'
+          }

@@ -167,6 +167,7 @@ export class CandidateController {
           orderBy: {
             firstName: "asc",
           }
+        });
         const tppUserPromise = db.user.findMany({
           where,
           skip: skip < 0 ? 0 : skip,
@@ -410,3 +411,4 @@ export class CandidateController {
             candidateId: candidate.id,
             jobId: jobId,
           })
+        }

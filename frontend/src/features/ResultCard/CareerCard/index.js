@@ -23,7 +23,6 @@ export default function CareerCard({ data, active }) {
   const { width } = useWindowDimensions();
 
   const dataObj = {
-    data,
     categoryString,
     addressString,
     salaryString,
@@ -205,7 +204,6 @@ function MobileCard({ dataObj, active }) {
 }
 
 MobileCard.propTypes = {
-// Temp comment
   dataObj: PropTypes.shape({
     data: PropTypes.shape({
       id: PropTypes.string,

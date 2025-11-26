@@ -54,7 +54,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
     return (<>
       <PageHeaderCandidate
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
-        IconComponent={userType === 'coordinator' ? CareerIcon : CareerIcon}
         backButton={true}
       />
       <DashboardCandidate 
