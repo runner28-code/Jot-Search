@@ -15,7 +15,6 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
   }
   // Return conditions
   const invalidType = !VALID_TYPES.includes(type);
-// Temp comment
   const isInactiveJob = (type === 'job' && data.status !== 'Active');
   if ( !isFavoriteOverride && (invalidType || isInactiveJob) ) {
     return null;

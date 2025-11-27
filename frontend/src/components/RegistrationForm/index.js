@@ -158,7 +158,6 @@ export default function RegistrationForm(loggedIn) {
     setFormObj({
       ...formObj,
       [name]: value,
-// Temp comment
     });
   }
 

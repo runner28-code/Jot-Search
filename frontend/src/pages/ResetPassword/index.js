@@ -46,7 +46,6 @@ export default function ResetPassword() {
         setError(res.data.error);
       }
     }
-// Temp comment
   };
 
   const renderSuccess = () => {

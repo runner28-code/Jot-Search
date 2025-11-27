@@ -11,6 +11,7 @@ export const createJob = async (job: Job) => {
   try {
     const jobError = validateJob(job);
     if (jobError) {
+      throw new Error(jobError);
     }
 
     const sanitizedJob = sanitizeJob(job) as any;
@@ -92,7 +93,6 @@ export const inferDatasetById = (id: string) => {
   } else if (id.startsWith("bl-")) {
     return DATASET_BULLHORN;
   } else {
-    return DATASET_MAIN;
   }
 };
 

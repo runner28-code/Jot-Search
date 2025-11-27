@@ -40,7 +40,6 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
         return true;
     }
 });
-// Temp comment
 exports.isExistByID = isExistByID;
 const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
     try {
@@ -68,7 +67,6 @@ exports.isExistByCondition = isExistByCondition;
 const consoleLog = (message, newLine = true) => {
     console.log(`${newLine ? '\n' : ''}${message}`);
 };
-exports.consoleLog = consoleLog;
 const sleep = (ms) => __awaiter(void 0, void 0, void 0, function* () {
     return new Promise(resolve => setTimeout(resolve, ms));
 });

@@ -10,6 +10,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 export default function CareerFavorite () {
 
   const { user_id } = AuthService.getProfile();
+  const { savedJobs, isLoading } = useGetSavedJobs({userId: user_id});
   const { width } = useWindowDimensions();
 
   return(
@@ -49,6 +50,7 @@ export default function CareerFavorite () {
         <Link
           to={ROUTES.careers}
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
+// Temp comment
             View All
         </Link>
       </div>

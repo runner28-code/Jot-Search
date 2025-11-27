@@ -54,6 +54,7 @@ export const choices = {
   addUser: {
     label: 'Add User',
     icon: AddUserIcon,
+// Temp comment
     link: ROUTES.addUser,
   },
   activeCareers: {
@@ -88,6 +89,7 @@ export const candidateChoices = [
 export const companyChoices = [
   choices.dashboard,
   choices.candidates,
+  choices.myFavorites,
   choices.activeCareers,
   choices.logout
 ];

@@ -13,6 +13,7 @@ export const settings = '/settings';
 export const accountRecovery = '/account-recovery';
 export const resetPassword = '/reset-password';
 
+// Dashboard routes
 export const dashboard = '/';
 export const careers = '/careers';
 export const companies = '/companies';
@@ -85,7 +86,6 @@ export const APIclientContacts = '/api/client-contact/search';
 // Categories
 export const APIcategoryBase = '/api/category';
 export const APIcategories = APIcategoryBase + '/search';
-// Stats
 export const APIstats = '/stats';
 export const APIlandingPageStats = '/landing-page-stats';
 

@@ -1,7 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-// Temp comment
-import AuthService from '../../services/auth';
 import ChoicesContainer from './ChoicesContainer';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 

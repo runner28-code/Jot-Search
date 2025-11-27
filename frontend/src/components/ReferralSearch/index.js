@@ -38,7 +38,6 @@ function renderChosen(currentChosen, handleRemove) {
   return currentChosen.map(choice =>
     <div 
       key={choice.id}
-// Temp comment
       className='bg-royalBlue text-white py-2 px-4 rounded-lg mr-2 cursor-pointer hover:bg-rose-500'
       onClick={() => handleRemove(choice.id)}
     >
@@ -58,6 +57,5 @@ export default function ReferralSearch() {
     const jobToAdd = choices.find(job => job.id === idToAdd);
 
     if (!jobToAdd) return;
-    const newFilteredChoices = filteredChoices.filter(job => job.id !== idToAdd);
     setCurrentChosen([ ...currentChosen, jobToAdd ]);
     setFilteredChoices(newFilteredChoices);

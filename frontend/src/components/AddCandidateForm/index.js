@@ -81,7 +81,6 @@ export default function RegistrationForm() {
           return navigate(ROUTES.login);
         }
       } else {
-// Temp comment
         console.log('Error: ', result);
         setErrorBlock(result);
         setSubmissionObject({

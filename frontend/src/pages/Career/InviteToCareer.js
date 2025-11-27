@@ -12,7 +12,6 @@ import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
 
-// Temp comment
 export default function InviteToCareer({ candidate }) {
   const { jobs, isLoading } = useGetJobs({ filtersArr: buildSearchFilters({...defaultJobFilterState}), 
     count: 10000
@@ -50,6 +49,7 @@ export default function InviteToCareer({ candidate }) {
   }
 
   const valueRenderer = () => {
+// Temp comment
     return <div>{isLoading ? 'Loading Careers' : 'Select Careers'}</div>
   }
   

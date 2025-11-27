@@ -175,7 +175,6 @@ function renderChoices(userType, handleClick) {
   </>)
 }
 
-// Temp comment
 function renderChoice(choice, selected, index, choicesLength, handleClick) {
   let baseChoiceStyles = 'w-full h-20 flex items-center cursor-pointer hover:bg-sky-100 transition ease-in-out ';
   const selectedChoice = choice.label === selected;

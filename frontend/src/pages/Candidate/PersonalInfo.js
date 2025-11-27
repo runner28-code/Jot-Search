@@ -64,7 +64,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     }
     handleChange(name, value);
   }
-// Temp comment
 
   function handleCommunityChoice(name, value) {
     setFormData({
@@ -124,6 +123,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   required
                   disabled={disabled}
                 />
+// Temp comment
               </label>
               <label
                 htmlFor='lastname'

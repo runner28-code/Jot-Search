@@ -38,6 +38,7 @@ export const CompanyFilter: TypedDictionary<
 > = {
   bullhorn: {
     name: "name",
+    city: "address_city",
     industry: "industryList",
   },
   getro: {

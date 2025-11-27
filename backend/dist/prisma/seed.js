@@ -37,7 +37,6 @@ function seedJobs() {
     var _a, _b;
     return __awaiter(this, void 0, void 0, function* () {
         yield db_1.default.job.createMany({
-            data: [
                 {
                     title: "Senior Software Engineer",
                     companyId: (_a = (yield db_1.default.company.findFirst())) === null || _a === void 0 ? void 0 : _a.id,

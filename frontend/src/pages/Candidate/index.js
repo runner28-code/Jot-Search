@@ -31,7 +31,6 @@ export default function Candidate() {
   const path = useLocation().pathname;
   const { width } = useWindowDimensions();
   const isProfilePage = path === '/profile';
-  if (role === 'candidate' && !isProfilePage) {
     return <Navigate to='/' />
   }
 
@@ -84,6 +83,7 @@ export default function Candidate() {
 
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
 
+  if (loading) { return <LoadingSpinner /> }
   return (
     <div className='flex flex-col space-y-16'>
       {/* "My Profile"/"Candidate Profile" Header */}

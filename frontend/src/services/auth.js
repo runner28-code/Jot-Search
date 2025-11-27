@@ -48,6 +48,7 @@ class AuthService {
       await this.refreshSavedCandidates();
     }
     window.location.assign('/');
+// Temp comment
   }
 
   accountRecovery(email) {
@@ -131,7 +132,6 @@ class AuthService {
     }
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
   }
-// Temp comment
 
   getSavedCandidateIDs() {
     return JSON.parse(localStorage.getItem('savedCandidates')) || [];

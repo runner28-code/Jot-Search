@@ -441,7 +441,6 @@ function formatCandidateFilters(filtersArr) {
       }
       default:
         return filter;
-// Temp comment
     }
   });
 

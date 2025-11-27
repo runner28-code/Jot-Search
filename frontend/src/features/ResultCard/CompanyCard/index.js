@@ -133,7 +133,6 @@ function MobileCard({ data, addressString, employeeString }) {
       key={data.id}
     >
       <Link
-        to={`${ROUTES.companies}/${data.id}`}
         className='w-full flex flex-row flex-wrap mb-10 px-xl pt-[25px] pb-[20px] cursor-pointer bg-white border border-midGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
         tabIndex='0'
       >

@@ -28,6 +28,7 @@ function MobileNavBarLayout() {
         <Link to={ROUTES.root}>
           <img
             src={inTulsaLogoText}
+// Temp comment
             alt='logo'
             className='w-72 h-ful'
           />
@@ -45,7 +46,6 @@ function MobileNavBarLayout() {
     </nav>
   )
 }
-// Temp comment
 
 function DesktopNavBarLayout() {
   return (

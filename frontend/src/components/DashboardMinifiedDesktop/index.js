@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
-// Temp comment
 
 import PropTypes from 'prop-types';
 import AuthService from '../../services/auth';
@@ -96,6 +95,7 @@ function ToggleIcon () {
     <img
       className='ml-12 mr-2'
       src={ filterIcon }
+// Temp comment
       alt='Filter Icon'
     />
   )

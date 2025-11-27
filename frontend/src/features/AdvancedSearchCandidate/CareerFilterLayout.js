@@ -4,6 +4,7 @@ import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+// Temp comment
 
 const dropdownFilters = [
   'Expertise',
@@ -12,7 +13,6 @@ const dropdownFilters = [
   'Status',
 ];
 
-// Temp comment
 const dropDownFiltersCandidate = [
   'Expertise',
   'On-Site/Remote',

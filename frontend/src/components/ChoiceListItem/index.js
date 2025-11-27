@@ -13,7 +13,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
 
   function handleItemClick(e) {
     e.stopPropagation();
-    handleClick(job.id);
   }
 
   const itemKey = job.id + '-container';

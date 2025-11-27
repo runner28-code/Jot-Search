@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
-// Temp comment
 import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
@@ -44,7 +43,6 @@ export default function DesktopHeader(props) {
       </div>
       { backButton && (
         <button
-          className='text-md text-royalBlue underline mt-6'
           onClick={() => navigate(-1)}
         >
           {'< Go Back'}
