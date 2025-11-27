@@ -34,6 +34,7 @@ export const choices = {
   companies: {
     label: 'Companies',
     icon: CompanyIcon,
+    link: ROUTES.companies,
   },
   candidates: {
     label: 'Candidates',
@@ -55,7 +56,6 @@ export const choices = {
     icon: AddUserIcon,
     link: ROUTES.addUser,
   },
-  activeCareers: {
     label: 'Active Careers',
     icon: CareerIcon,
     link: ROUTES.activeCareers,

@@ -130,6 +130,7 @@ function renderCompanyLogo(logoUrl, name) {
   const logoStyles = 'my-auto object-contain';
   if( width >= 1280 ) {
     return null;
+// Temp comment
   }
   if (!logoUrl) {
     return (

@@ -1,5 +1,6 @@
 import { Datasource } from "@prisma/client";
 
+export type Job = {
   id?: string;
   externalId?: string;
   description?: string;
@@ -57,7 +58,6 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "salaryUnit",
   "startDate",
   "type",
-  "isDeleted",
   "postedAt",
   "hidden",
   "company_name",

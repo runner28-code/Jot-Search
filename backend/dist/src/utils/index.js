@@ -76,7 +76,6 @@ const getDataSource = (id) => {
     const prefix = id.slice(0, 2);
     if (prefix === 'bl')
         return Common_1.DataSource.BULLHORN;
-    if (prefix === 'gt')
         return Common_1.DataSource.GETRO;
     return Common_1.DataSource.UNKNOWN;
 };

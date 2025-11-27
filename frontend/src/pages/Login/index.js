@@ -61,8 +61,8 @@ export default function Login() {
           <FormInput
             type='text'
             name='email'
-            label='Login Email'
           />
+          <FormInput
             type='password'
             name='password'
             label='Password'

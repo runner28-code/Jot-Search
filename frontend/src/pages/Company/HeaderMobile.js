@@ -154,7 +154,6 @@ function FillerIcon () {
   }
 }
 
-// Temp comment
 function renderAddress( city, state ) {
   if( !city && !state ) {
     return (

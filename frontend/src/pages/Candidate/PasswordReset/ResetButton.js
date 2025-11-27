@@ -12,7 +12,6 @@ export default function ResetButton({ candidateData, setType }) {
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email
     });
-// Temp comment
 
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
@@ -23,6 +22,7 @@ export default function ResetButton({ candidateData, setType }) {
   if( width <= 990 ) {
     return (
       <button
+// Temp comment
         className='h-20 bg-royalBlue text-center text-white text-md px-12 rounded-lg'
         onClick={handleSubmit}
       >

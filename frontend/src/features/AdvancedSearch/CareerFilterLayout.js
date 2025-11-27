@@ -3,7 +3,6 @@ import { renderDropdownFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
 import AuthService from '../../services/auth';
 
-const dropdownFilters = [
   'Expertise',
   'On-Site/Remote',
   'Years Experience',

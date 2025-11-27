@@ -34,7 +34,6 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   }
 
   function handleFilterChange(name, value) {
-// Temp comment
     setFilterState({
       ...filterState,
       [name]: value,

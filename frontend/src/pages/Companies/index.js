@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import PageHeader from '../../components/PageHeader';
 import PageHeaderCandidate from '../../components/PageHeaderCandidate';
 import AdvancedSearch from '../../features/AdvancedSearch';
@@ -59,7 +60,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
       />
       <DashboardCandidate 
         togglePassState={togglePassState} 
-        toggle={toggle} 
       />
     </>)
   }  

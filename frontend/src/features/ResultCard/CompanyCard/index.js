@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
-// Temp comment
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
@@ -55,6 +54,7 @@ export default function CompanyCard({ data }) {
             <div className='w-1/3 flex items-center'>
               <img
                 src={locationIcon}
+// Temp comment
                 className='h-8 mr-6 ml-1' />
               <p className='text-textBlack'>{addressString}</p>
             </div>

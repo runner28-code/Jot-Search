@@ -13,7 +13,6 @@ import ResumePreview from './ResumePreview';
 
 export default function ExtendedEditableContent({ candidateData, handleCandidateUpdate, setEditMode, editMode }) {
   const { categories } = useContext(CategoryContext);
-  const isSourceUserTable = candidateData.sourceTable === 'User';
 
   const [formData, setFormData] = useState({
     id: candidateData.id,
@@ -21,6 +20,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     firstname: candidateData.firstname || '',
     lastname: candidateData.lastname || '',
     occupation: candidateData.occupation || '',
+    companyName: candidateData.companyName || '',
     address1: candidateData.address1 || '',
     address2: candidateData.address2 || '',
     city: candidateData.city || '',

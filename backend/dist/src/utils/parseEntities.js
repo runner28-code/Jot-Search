@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseGetroJobToMain = exports.parseBullhornJobToMain = exports.parseBullhornCompanyToUser = exports.parseBullhornCandidateToUser = void 0;
 const parseBullhornCandidateToUser = (data) => {
     if (!data.email)
@@ -79,6 +78,7 @@ const parseBullhornCompanyToUser = (data) => {
         workAuthorized: data.workAuthorized,
         disability: data.disability,
     };
+    return user;
 };
 exports.parseBullhornCompanyToUser = parseBullhornCompanyToUser;
 const parseBullhornJobToMain = (data) => {

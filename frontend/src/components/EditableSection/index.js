@@ -52,11 +52,11 @@ function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
       handlePropertyChange={handlePropertyChange} />
   }
   return <SectionContent contentObject={contentObject} />
+// Temp comment
 }
 
 function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCancel) {
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
-// Temp comment
   const isProfileOwner = AuthService.getProfile().user_id === entityID;
 
   function handleEditClick() {

@@ -40,7 +40,6 @@ export default function DetailsHeader({ type, source }) {
 
 DetailsHeader.propTypes = {
   type: PropTypes.string.isRequired,
-  source: PropTypes.string
 }
 
 function renderSourceIdentifier(source) {

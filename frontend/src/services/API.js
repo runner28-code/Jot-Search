@@ -315,7 +315,6 @@ export async function getCategoryById(id) {
   });
   return normalizeData(data.category);
 }
-
 export async function getCategories(filterArr) {
   const filters = filterArr ? filterArr : [];
   const { data } = await API.post(ROUTES.APIcategories, {

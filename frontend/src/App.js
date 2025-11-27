@@ -2,7 +2,6 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import * as ROUTES from './routes';
 import Auth from './Auth';
 import {
-// Temp comment
   LandingPage,
   SignUp,
   Login,
@@ -37,6 +36,7 @@ function App() {
             <Route
               path={ROUTES.landingPage}
               element={<LandingPage />} />
+// Temp comment
             <Route
               path={ROUTES.careers}
               element={<Careers />} />

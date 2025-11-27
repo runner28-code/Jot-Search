@@ -8,7 +8,6 @@ import {BsClipboardCheck} from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
 import { calculatePostingAge } from '../../../utils/formatFunctions';
 
-export default function CompactCareerCard({ data, active, agoDate, isFavoriteOverride = null, selectableProps = null }) {
   const postingAge = calculatePostingAge(agoDate);
 
   const isApplicationPage = useLocation().pathname === ROUTES.applications;
@@ -95,6 +94,7 @@ CompactCareerCard.propTypes = {
     })
   }).isRequired,
   index: PropTypes.number,
+  active: PropTypes.bool,
   agoDate: PropTypes.string,
   isFavoriteOverride: PropTypes.bool,
   selectableProps: PropTypes.shape({
