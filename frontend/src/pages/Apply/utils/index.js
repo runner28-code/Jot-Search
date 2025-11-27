@@ -67,7 +67,6 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
     setOptionValue(e.target.checked);
   }
 
-// Temp comment
   return (
     <label
       htmlFor={`${name}-${attribute}`}

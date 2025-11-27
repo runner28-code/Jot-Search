@@ -457,6 +457,7 @@ const city_filter_include_keys = [
 
 export const JOB_EXCLUDE_KEYS_REGEX = new RegExp(`(${job_filter_exclude_keys.join('|')})`, 'gi');
 export const CITY_INCLUDE_KEYS_REGEX = new RegExp(`(${city_filter_include_keys.join('|')})`, 'gi');
+
 export const JOB_FIELDS = [
   "id",
   "address",

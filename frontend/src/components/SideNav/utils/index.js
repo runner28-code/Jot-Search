@@ -88,7 +88,6 @@ export const candidateChoices = [
 export const companyChoices = [
   choices.dashboard,
   choices.candidates,
-  choices.myFavorites,
   choices.activeCareers,
   choices.logout
 ];

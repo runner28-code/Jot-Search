@@ -153,12 +153,12 @@ export default function RegistrationForm(loggedIn) {
     });
     console.log(formObj);
   }
-// Temp comment
 
   function handleChange(name, value) {
     setFormObj({
       ...formObj,
       [name]: value,
+// Temp comment
     });
   }
 

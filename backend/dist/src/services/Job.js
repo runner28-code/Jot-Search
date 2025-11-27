@@ -30,6 +30,7 @@ const db_1 = __importDefault(require("../utils/db"));
 const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const jobError = validateJob(job);
+        if (jobError) {
             throw new Error(jobError);
         }
         const sanitizedJob = sanitizeJob(job);

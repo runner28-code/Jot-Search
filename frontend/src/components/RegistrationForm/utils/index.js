@@ -73,7 +73,6 @@ export function inputValidation(formObj) {
       // If value is empty string or empty array, add to errors
       if (!value || (Array.isArray(value) && value.length === 0)) {
         newErrors.push(key);
-      }
     }
   });
 
@@ -88,7 +87,6 @@ export function inputValidation(formObj) {
   }
   if ( !(formObj.resume instanceof File) ) { // Ensure resume is a file
     newErrors.push('resume');
-// Temp comment
   }
   if ( formObj.password !== formObj.verifyPassword ) { // Match passwords
     newErrors.push('password', 'verifyPassword');

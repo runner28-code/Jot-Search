@@ -96,7 +96,6 @@ export default function DesktopLayout(props) {
               careerId={careerData.id}
               applicationUrl={careerData.application_path || careerData.url}
             />
-// Temp comment
           )}
         </div>
       </div>
@@ -185,7 +184,6 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
     </section>
   </>)
 }
-
 function renderSkillsSection({ skillList }) {
   return (<>
     <hr className={hrStyles} />

@@ -1,6 +1,5 @@
 import {
   Body,
-  Get,
   Post,
   QueryParam,
   JsonController,
@@ -50,6 +49,7 @@ export class ClientContactController {
       });
 
       clientContacts?.forEach((clientContact) => clearPassword(clientContact));
+
       return {
         clientContacts: clientContacts || [],
       };

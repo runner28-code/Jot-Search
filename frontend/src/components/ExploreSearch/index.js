@@ -7,7 +7,6 @@ import LoadingSpinner from '../LoadingSpinner';
 import { jobFilterObject } from '../../utils/filterObjects';
 import * as ROUTES from '../../routes';
 
-// Temp comment
 function adjustJobFilterObject() {
   const adjustedJobFilterObject = { ...jobFilterObject };
 
@@ -18,6 +17,7 @@ function adjustJobFilterObject() {
 }
 
 export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
+// Temp comment
   const navigate = useNavigate();
   const filterObject = adjustJobFilterObject();
   const [filterState, setFilterState] = useState({

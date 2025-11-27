@@ -25,7 +25,6 @@
     "query-string": "^7.1.0",
     "reflect-metadata": "^0.1.13",
     "routing-controllers": "^0.9.0",
-    "tsc-watch": "^4.6.0",
     "uuid": "^8.3.2"
   },
   "scripts": {
@@ -35,6 +34,7 @@
     "build-win": "tsc",
     "start": "cp -R ./src/templates ./dist && export GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' && ts-node src/app.ts",
     "bullhorn_get_companies": "npm run build && node ./dist/src/cronjobs/bullhorn_get_companies",
+    "bullhorn_get_jobs": "npm run build && node ./dist/src/cronjobs/bullhorn_get_jobs",
     "bullhorn_get_contacts": "npm run build && node ./dist/src/cronjobs/bullhorn_get_contacts",
     "bullhorn_get_candidates": "npm run build && node ./dist/src/cronjobs/bullhorn_get_candidates",
     "bullhorn_get_leads": "npm run build && node ./dist/src/cronjobs/bullhorn_get_leads",

@@ -92,7 +92,6 @@ export type ApplyResponse = {
 
 export type GetSavedCompaniesResponse = {
   companies?: Company[];
-} & ApplyResponse;
 
 export type GetSavedJobsResponse = {
   jobs?: Job[];

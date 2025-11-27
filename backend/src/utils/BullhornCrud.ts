@@ -172,7 +172,6 @@ export const saveClientContacts = async (contacts: any[]) => {
           }
         });
 
-        const newContact = await db.clientContact.create({
           data: contactData,
         });
         console.log(`Saved ClientContact with ID = ${contact.id} successfully`);
@@ -302,6 +301,7 @@ export const migrateJobInTPP = async (data: Job) => {
   try {
     console.log(`Migrating Job from Bullhorn: bh_id = ${data.externalId}`);
     const condition = `externalId = '${data.externalId}'`;
+    const dataset = DATASET_MAIN;
     const table = Tables.JOBS;
     const id = genUUID();
     const existing = await isExistByCondition(condition, dataset, table);

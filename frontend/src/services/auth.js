@@ -131,6 +131,7 @@ class AuthService {
     }
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
   }
+// Temp comment
 
   getSavedCandidateIDs() {
     return JSON.parse(localStorage.getItem('savedCandidates')) || [];

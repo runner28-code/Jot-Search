@@ -32,7 +32,6 @@ export default function Stats({ userType }) {
         return 90;
       default:
         return 30
-// Temp comment
     }
   }
 

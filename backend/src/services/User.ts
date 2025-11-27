@@ -172,7 +172,6 @@ export const update = async (parent_id: string, role: string, data: any) => {
 export const addUserHistoryEntries = async ({
   updatedUser,
   existingUser,
-}: {
   updatedUser: Partial<dbUser>;
   existingUser: dbUser;
 }) => {

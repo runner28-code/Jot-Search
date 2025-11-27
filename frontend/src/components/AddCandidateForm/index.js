@@ -66,6 +66,7 @@ export default function RegistrationForm() {
       delete formObj.resumeFile;
       
       // Format formObj
+      const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);
@@ -80,6 +81,7 @@ export default function RegistrationForm() {
           return navigate(ROUTES.login);
         }
       } else {
+// Temp comment
         console.log('Error: ', result);
         setErrorBlock(result);
         setSubmissionObject({

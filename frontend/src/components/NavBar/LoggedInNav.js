@@ -97,7 +97,6 @@ const DropdownMenu = () => {
   }, [closeDropdown]);
 
   const handleClick = () => {
-// Temp comment
     setIsOpen(isOpen => !isOpen);
     if ( firstRender ) {
       setFirstRender(false);
@@ -176,6 +175,7 @@ function renderChoices(userType, handleClick) {
   </>)
 }
 
+// Temp comment
 function renderChoice(choice, selected, index, choicesLength, handleClick) {
   let baseChoiceStyles = 'w-full h-20 flex items-center cursor-pointer hover:bg-sky-100 transition ease-in-out ';
   const selectedChoice = choice.label === selected;

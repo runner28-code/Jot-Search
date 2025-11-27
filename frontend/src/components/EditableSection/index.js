@@ -28,6 +28,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
     <section className='relative mb-14'>
       <div>
         <h4 className={headerStyles}>{header}</h4>
+// Temp comment
         { renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCancel) }
       </div>
       { renderTextOrInputs(editMode, contentObject, handlePropertyChange) }
@@ -44,6 +45,7 @@ EditableSection.propTypes = {
 }
 
 /* Render functions */
+
 function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
   if (editMode) {
     return <EditSectionForm 

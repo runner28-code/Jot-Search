@@ -162,6 +162,7 @@ export class BullhornService {
       if (res.status === 200) {
         const { access_token, refresh_token } = res.data;
         this.access_token = access_token;
+        this.refresh_token = refresh_token;
         return await this.login();
       }
       return await this.init();
@@ -389,7 +390,6 @@ export class BullhornService {
         if (res.status === 200) {
           const { data } = res.data;
           total = res.data.total;
-          this.saveJobFunc(data);
           if (total <= offset) break;
           offset += count;
           repeatErr = 0;

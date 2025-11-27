@@ -79,7 +79,6 @@ export default function ExpertiseLinksMobile() {
         >
           <img
             src={financeIcon}
-// Temp comment
             alt='Finance Icon'
             className={iconStyles}
           />

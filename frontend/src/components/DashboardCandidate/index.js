@@ -54,6 +54,7 @@ export default function DashboardCandidate({togglePassState, toggle}) {
         >
           {!toggle ? <ChevronDown /> : <ChevronUp />}
         </button>
+// Temp comment
       </div>
     </div>
   </>)

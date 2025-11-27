@@ -174,7 +174,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     clearFilters: clearFilters,
   };
   const { PaginatedControls } = usePaginatedControls({ page, setPage, total: totalResults, itemsPerPage: ITEMS_PER_PAGE, prefetchFunc });
-  return (
     <div className='w-full pt-2'>
       <div className={!toggle ? 'hidden' : 'relative'}>
         <div className='relative w-full max-w-400 bg-sky-600 text-white rounded-2xl border border-disabledGrey pt-28 px-xxl-4 pb-xxl'>

@@ -129,4 +129,3 @@ function getTagLine({ candidate }) {
   } else if (candidate?.companyName) {
     tagLine = `@ ${candidate.companyName}`
   }
-  return tagLine;
