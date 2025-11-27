@@ -290,3 +290,4 @@ export class GetroService {
         console.log('Saving Getro job in Bullhorn table: ', getroJob.id);
         const data = {
             externalId: getroJob.id,
+            description: getroJob.description,

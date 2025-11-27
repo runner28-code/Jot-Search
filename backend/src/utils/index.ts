@@ -121,3 +121,4 @@ export const determineCondition = (
     if (specialHandlers[key] != null) {
       return specialHandlers[key](key, value);
     } else if (nonStringFields.has(key) || typeof value !== "string") {
+      return `${key} = ${value}`;

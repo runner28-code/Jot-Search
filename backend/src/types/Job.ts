@@ -58,6 +58,7 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "salaryUnit",
   "startDate",
   "type",
+  "isDeleted",
   "postedAt",
   "hidden",
   "company_name",

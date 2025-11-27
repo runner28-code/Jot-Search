@@ -9,6 +9,7 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
         return <TabButton
           key={choice}
           choice={choice}
+          activeTab={activeTab}
           setActiveTab={setActiveTab}
           isLocked={isLocked}
         />
@@ -32,4 +33,3 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
     if ( isLocked ) {
       return null;
     }
-    setActiveTab(choice);

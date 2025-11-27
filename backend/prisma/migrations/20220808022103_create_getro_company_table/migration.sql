@@ -27,3 +27,4 @@ CREATE TABLE "GetroCompany" (
     "topics" TEXT[],
     "network_id" INTEGER,
 
+    CONSTRAINT "GetroCompany_pkey" PRIMARY KEY ("id")

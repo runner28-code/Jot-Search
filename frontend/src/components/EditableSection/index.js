@@ -52,7 +52,6 @@ function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
       handlePropertyChange={handlePropertyChange} />
   }
   return <SectionContent contentObject={contentObject} />
-// Temp comment
 }
 
 function renderEditIcons(editMode, setEditMode, entityID, handleSubmit, handleCancel) {

@@ -55,6 +55,7 @@ exports.createJob = createJob;
 const validateJob = (job) => {
     return undefined;
 };
+// Temp comment
 const sanitizeJob = (job) => {
     const newJob = Object.assign({}, job);
     Object.keys(newJob).forEach((key) => {

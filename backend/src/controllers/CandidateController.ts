@@ -414,3 +414,5 @@ export class CandidateController {
         }
       }
 
+      if (result && candidateJobInvites?.length) {
+        await db.candidateJobInvites.createMany({

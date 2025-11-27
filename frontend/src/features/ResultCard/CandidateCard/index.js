@@ -95,7 +95,6 @@ export default function CandidateCard({ data, disableLink }) {
     </div>
   )
 }
-
 CandidateCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
@@ -140,7 +139,6 @@ function LinkWrapper({ children, link, disableLink }) {
       {children}
     </Link>
   )
-// Temp comment
 }
 
 LinkWrapper.propTypes = {

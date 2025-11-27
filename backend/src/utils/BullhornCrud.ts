@@ -137,6 +137,7 @@ export const saveBullhornJobs = async (jobs: any[]) => {
 
         console.log(`Saved job with ID = ${job.externalId} successfully`);
       } catch (error: any) {
+        console.log(error.message);
         console.log(`ERROR: while saving job with ID = ${job.externalId}`);
       }
     }
@@ -272,7 +273,6 @@ export const saveLeads = async (leads: any[]) => {
     console.log(error.message);
     return { result: false, error };
   }
-};
 
 export const migrateUserInTPP = async (data: Partial<DbCandidate>) => {
   try {
@@ -324,3 +324,4 @@ export const migrateJobInTPP = async (data: Job) => {
       query: query,
       location: "US",
     };
+    const [bgJob] = await BigQueryService.getClient().createQueryJob(options);

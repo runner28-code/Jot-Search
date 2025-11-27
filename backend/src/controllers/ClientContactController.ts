@@ -58,3 +58,4 @@ export class ClientContactController {
       console.log(error);
       return { message: error };
     }
+  }

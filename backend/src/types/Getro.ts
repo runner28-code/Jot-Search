@@ -22,6 +22,7 @@ export type Company = {
   website_url?: string;
   managers?: string;
   network_id?: string;
+  locations?: string;
   collections?: string;
 };
 
@@ -101,3 +102,4 @@ export type User = {
   joined_at?: string;
   remote_work?: string;
   require_sponsorship_visa?: string;
+  seniority?: string;

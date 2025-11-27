@@ -89,7 +89,6 @@ export const getAppliedJobsByUser = async (userId: string) => {
 
 export const inferDatasetById = (id: string) => {
   if (id.startsWith("gt-")) {
-    return DATASET_GETRO;
   } else if (id.startsWith("bl-")) {
     return DATASET_BULLHORN;
   } else {
@@ -134,3 +133,5 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
     };
   }
 };
+
+export const getJobsList = async (jobs_ids: string[]) => {

@@ -986,3 +986,6 @@ export class BullhornService {
         });
         if (data.data.length) {
           const jobDetail = data.data[0];
+          // Send email based on skills
+          const skills = jobDetail.skills.data;
+          if (skills.length) {

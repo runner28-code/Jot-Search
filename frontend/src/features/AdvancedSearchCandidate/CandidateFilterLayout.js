@@ -6,13 +6,13 @@ import AuthService from '../../services/auth';
 const dropdownFiltersCoord = [
   'Category',
   'Experience',
+  'Remote Availability',
   'Employment Type',
   'Status'
 ];
 
 const dropdownFilters = [
   'Category',
-  'Experience',
   'Remote Availability',
   'Employment Type',
 ];

@@ -627,3 +627,5 @@ export const getLandingPageStats = async () => {
     };
   } catch (error) {
     return {
+      result: false,
+      totalJobsCount: null,

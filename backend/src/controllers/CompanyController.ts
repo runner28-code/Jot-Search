@@ -362,3 +362,4 @@ export class CompanyController {
       .map(
         (opt) =>
           `LOWER(${CompanyFilter.getro[opt.key]
+          }) LIKE '%${opt.value.toLowerCase()}%'`

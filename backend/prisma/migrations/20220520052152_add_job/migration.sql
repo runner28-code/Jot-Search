@@ -27,3 +27,4 @@ CREATE TABLE "Job" (
     "postedAt" TIMESTAMP(3),
     "hidden" BOOLEAN,
 
+    CONSTRAINT "Job_pkey" PRIMARY KEY ("id")

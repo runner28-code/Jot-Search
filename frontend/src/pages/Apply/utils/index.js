@@ -83,6 +83,7 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
       />
       <p className='text-md ml-2'>{attribute}</p>
     </label>
+  )
 }
 
 Checkbox.propTypes = {
@@ -115,7 +116,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
 export function updateCandidateIfNeeded(applicationObject, originalObject) {
   const valuesToUpdate = {};
   for (let key in applicationObject) {
-    if (applicationObject[key] !== originalObject[key]) {
       valuesToUpdate[key] = applicationObject[key];
     }
   }

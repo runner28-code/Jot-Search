@@ -89,7 +89,6 @@ export default function Dropdown(props) {
   const renderValue = (type, name, currentChosen, placeholder) => {
     if (type === MULTI_SELECT && currentChosen.length > 0) {
       return currentChosen.join(', ');
-// Temp comment
     } else if ( type === SINGLE_SELECT && currentChosen !== '' ) {
       return currentChosen + suffix(name);
     }

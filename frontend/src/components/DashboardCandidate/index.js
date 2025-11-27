@@ -18,7 +18,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const location = useLocation().pathname;
   const active = ' bg-royalBlue';
-  if( width >= 990 ) {
     return null;
   }
   return (<>
@@ -26,7 +25,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
       <div className='flex items-center'>
         <div className='flex items-center'>
           <Link
-// Temp comment
             className={location === '/careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
           >

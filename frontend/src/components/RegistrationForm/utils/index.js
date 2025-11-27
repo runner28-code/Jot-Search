@@ -80,7 +80,6 @@ export function inputValidation(formObj) {
   if( formObj.state.length !== 2 ) {
     newErrors.push('state');
   }
-  if( formObj.zip.length !== 5 || isNaN(formObj.zip) ) {
     newErrors.push('zip');
   }
   if ( formObj.linkedin.slice(0, 8) !== 'https://' ) { // Ensure valid URL

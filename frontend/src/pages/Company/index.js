@@ -113,6 +113,7 @@ export default function Company() {
     </div>
   )
 }
+// Temp comment
 Company.propTypes = {
   companyDescription: PropTypes.string
 }
@@ -167,7 +168,6 @@ function renderSectorList(companyData, width , stylesObject) {
   const business = companyData.businessSectorList; 
   if( business == '' ) {
     return;
-// Temp comment
   }
   if( business == Array ) {
     return(<>

@@ -102,7 +102,6 @@ function StatCard({ stat, value }) {
   if (deviationPercentage > 0) {
     numberStyles += ' text-success';
   } else if (deviationPercentage === 0) {
-    numberStyles += ' text-midGrey';
   } else {
     numberStyles += ' text-error';
   }

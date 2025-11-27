@@ -26,7 +26,6 @@ export default function DashboardPublicMin({type}) {
               onClick={() => navigate(-1)}
             >
             Back
-// Temp comment
             </button>
           </div>
         </div>

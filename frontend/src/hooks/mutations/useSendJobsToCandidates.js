@@ -1,4 +1,4 @@
-import { sendJobsToCandidates } from '../../services/API';
+import { useMutation } from '@tanstack/react-query';
 
 export const useSendJobsToCandidates = () => {
   const { mutateAsync, ...mutationData } = useMutation(sendJobsToCandidates, {});

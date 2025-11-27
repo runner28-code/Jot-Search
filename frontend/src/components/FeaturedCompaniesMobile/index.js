@@ -43,7 +43,6 @@ export default function FeaturedCompaniesMobile() {
           Browse All
         </Link>
       </div>
-    </div>
   )
 }
 function renderColorShapes() {

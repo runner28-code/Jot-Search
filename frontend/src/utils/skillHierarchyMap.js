@@ -397,3 +397,5 @@ export const skills = [
   'UX Design',
   'Vendor Management',
   'Venture Capital',
+  'Virtual Health',
+  'Vue',

@@ -140,3 +140,4 @@ export type UpdateComapnyProfileResponse = {
 // Category Types
 export type CategorySearchByFilterResponse = {
   categories?: Category[];
+} & CountFilterResponse;

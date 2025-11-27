@@ -745,3 +745,6 @@ model GetroMember {
   github_url               String?
   linkedin_url             String?
   resume_url               String?
+  twitter_url              String?
+  verified                 Boolean?
+  website_url              String?

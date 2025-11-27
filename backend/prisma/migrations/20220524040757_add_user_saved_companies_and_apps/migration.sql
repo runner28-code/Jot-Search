@@ -12,7 +12,6 @@ CREATE TABLE "_userSavedCompanies" (
     "A" TEXT NOT NULL,
     "B" TEXT NOT NULL
 );
-
 -- CreateIndex
 CREATE UNIQUE INDEX "_userSavedCompanies_AB_unique" ON "_userSavedCompanies"("A", "B");
 
@@ -28,3 +27,4 @@ ALTER TABLE "Application" ADD CONSTRAINT "Application_userId_fkey" FOREIGN KEY (
 -- AddForeignKey
 ALTER TABLE "_userSavedCompanies" ADD CONSTRAINT "_userSavedCompanies_A_fkey" FOREIGN KEY ("A") REFERENCES "Company"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
+-- AddForeignKey

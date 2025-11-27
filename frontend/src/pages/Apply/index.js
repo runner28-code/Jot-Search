@@ -99,6 +99,7 @@ export default function Apply() {
     if ( submissionObject.loading ) {
       const response = await submitData();
       if ( response.result === true ) {
+// Temp comment
         setSubmissionObject({
           loading: false,
           success: true,

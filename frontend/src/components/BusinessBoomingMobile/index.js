@@ -1,5 +1,5 @@
-import * as ROUTES from '../../routes';
 // Temp comment
+import * as ROUTES from '../../routes';
 
 export default function BusinessBooming() {
   return (

@@ -322,3 +322,5 @@ export type Lead = {
     occupation?: string;
     owner?: string;
     ownerCorporation?: string;
+    pager?: string;
+    phone?: string;

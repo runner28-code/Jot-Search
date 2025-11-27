@@ -4,7 +4,6 @@ import FilterSearch from '../../components/FilterSearch';
 export default function CompanyFilterLayout(props) {
   const {
     searchTerm,
-    setSearchTerm,
     handleSearchClick,
     clearFilters,
   } = props;
@@ -26,6 +25,5 @@ export default function CompanyFilterLayout(props) {
           Clear All
         </button>
       </div>
-// Temp comment
     </div>
   );

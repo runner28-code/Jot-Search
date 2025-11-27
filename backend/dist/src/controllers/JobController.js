@@ -45,7 +45,6 @@ let JobController = class JobController {
                 const job = yield db_1.default.job.findFirst({
                     where: {
                         id,
-                    },
                     include: {
                         getroJobInfo: true,
                         company: true,
@@ -128,7 +127,6 @@ let JobController = class JobController {
                     if (getroCompany) {
                         job.company.logo = getroCompany.logo_url;
                     }
-// Temp comment
                     job.company_name = (_a = job.company) === null || _a === void 0 ? void 0 : _a.name;
                     job.company_logo = (_b = job.company) === null || _b === void 0 ? void 0 : _b.logo;
                     return job;

@@ -31,7 +31,6 @@ export const companyQuickStats = '/company-stats';
 export const addUser = '/add-user';
 export const alerts = '/alerts';
 
-// Temp comment
 export const careerSeekers = '/career-seeker';
 export const softwareEngineering = '/software-engineering';
 export const salesBizDev = '/sales-business-development';
@@ -92,3 +91,4 @@ export const APIstats = '/stats';
 export const APIlandingPageStats = '/landing-page-stats';
 
 /* Social Links */
+export const linkedin = 'https://www.linkedin.com/company/talent-intulsa/?utm_source=talentwebsite&utm_medium=web&utm_campaign=footer-menu';

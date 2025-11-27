@@ -170,6 +170,7 @@ const job_filter_exclude_keys = [
     "goods",
     "governance",
     "grade",
+// Temp comment
     "graduate",
     "grants",
     "greenhouse",
@@ -490,3 +491,5 @@ exports.JOB_FIELDS = [
     "owner",
     "payRate",
     "publicDescription",
+    "publishedZip",
+    "reasonClosed",

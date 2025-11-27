@@ -121,3 +121,4 @@ export const sendJobApplyNotification = async (to: string, name: string) => {
   } catch (error: any) {
     console.log('Error during sending apply job notification');
     console.log(error);
+    console.log(JSON.stringify(error.response.body));

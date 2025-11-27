@@ -492,3 +492,5 @@ export const JOB_FIELDS = [
   "owner",
   "payRate",
   "publicDescription",
+  "publishedZip",
+  "reasonClosed",

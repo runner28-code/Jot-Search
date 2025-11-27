@@ -262,3 +262,4 @@ module.exports = {
             display: 'none'
           }
         },
+        '.scrollbar-minimal': {
