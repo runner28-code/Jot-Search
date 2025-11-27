@@ -273,6 +273,7 @@ export const saveLeads = async (leads: any[]) => {
     console.log(error.message);
     return { result: false, error };
   }
+};
 
 export const migrateUserInTPP = async (data: Partial<DbCandidate>) => {
   try {
@@ -301,7 +302,6 @@ export const migrateJobInTPP = async (data: Job) => {
   try {
     console.log(`Migrating Job from Bullhorn: bh_id = ${data.externalId}`);
     const condition = `externalId = '${data.externalId}'`;
-    const dataset = DATASET_MAIN;
     const table = Tables.JOBS;
     const id = genUUID();
     const existing = await isExistByCondition(condition, dataset, table);
@@ -325,3 +325,4 @@ export const migrateJobInTPP = async (data: Job) => {
       location: "US",
     };
     const [bgJob] = await BigQueryService.getClient().createQueryJob(options);
+    await bgJob.getQueryResults();

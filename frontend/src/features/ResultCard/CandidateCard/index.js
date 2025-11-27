@@ -95,6 +95,7 @@ export default function CandidateCard({ data, disableLink }) {
     </div>
   )
 }
+
 CandidateCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,

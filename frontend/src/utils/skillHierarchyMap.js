@@ -399,3 +399,4 @@ export const skills = [
   'Venture Capital',
   'Virtual Health',
   'Vue',
+  'Waterfall',

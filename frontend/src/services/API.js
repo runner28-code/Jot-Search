@@ -275,7 +275,6 @@ export async function saveJob(candidateId, jobId) {
     params: {
       'candidate': candidateId,
       'job': jobId
-    }
   });
 
   if (data.messsage === 'saved job') {

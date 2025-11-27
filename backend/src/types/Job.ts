@@ -63,3 +63,4 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "hidden",
   "company_name",
   "datasource",
+]);

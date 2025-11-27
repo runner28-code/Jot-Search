@@ -95,3 +95,4 @@ const setupCronJobs = async () => {
     }
     consoleLog('/// CRON_JOB_ENDED: BULLHORN_GET_NEW_JOB_SUBSCRIPTION');
   });
+

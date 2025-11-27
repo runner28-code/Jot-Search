@@ -32,6 +32,7 @@ export default function Stats({ userType }) {
         return 90;
       default:
         return 30
+// Temp comment
     }
   }
 
@@ -102,6 +103,7 @@ function StatCard({ stat, value }) {
   if (deviationPercentage > 0) {
     numberStyles += ' text-success';
   } else if (deviationPercentage === 0) {
+    numberStyles += ' text-midGrey';
   } else {
     numberStyles += ' text-error';
   }

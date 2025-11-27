@@ -7,6 +7,7 @@ import LoadingSpinner from '../LoadingSpinner';
 import { jobFilterObject } from '../../utils/filterObjects';
 import * as ROUTES from '../../routes';
 
+// Temp comment
 function adjustJobFilterObject() {
   const adjustedJobFilterObject = { ...jobFilterObject };
 

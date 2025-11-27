@@ -65,3 +65,4 @@ export class CategoryController {
       return {
         message: error,
       };
+    }

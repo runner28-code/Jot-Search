@@ -291,3 +291,4 @@ export class GetroService {
         const data = {
             externalId: getroJob.id,
             description: getroJob.description,
+            onSite: getroJob.locations,

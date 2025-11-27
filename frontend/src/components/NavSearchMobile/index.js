@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import LoadingSpinner from '../LoadingSpinner';
 import CandidateResults from './CandidateResults';
 import CompanyResults from './CompanyResults';
+import JobResults from './JobResults';
 import { VscClose as CloseIcon } from 'react-icons/vsc';
 import searchGray from '../../assets/images/search-gray.svg';
 import searchWhite from '../../assets/images/search-white.webp';
@@ -179,6 +180,7 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
   function handleChange(e) {
     setSearchTerm(e.target.value);
   }
+// Temp comment
 
   const placeholderText = placeholder || 'Search for companies or jobs...';
   return (

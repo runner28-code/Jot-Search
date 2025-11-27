@@ -9,3 +9,4 @@
 ALTER TABLE "ClientContact" DROP COLUMN "address_country_id",
 ADD COLUMN     "address_country_id" INTEGER,
 DROP COLUMN "numEmployees",
+ADD COLUMN     "numEmployees" INTEGER;

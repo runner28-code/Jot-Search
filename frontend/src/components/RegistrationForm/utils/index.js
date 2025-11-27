@@ -80,6 +80,7 @@ export function inputValidation(formObj) {
   if( formObj.state.length !== 2 ) {
     newErrors.push('state');
   }
+  if( formObj.zip.length !== 5 || isNaN(formObj.zip) ) {
     newErrors.push('zip');
   }
   if ( formObj.linkedin.slice(0, 8) !== 'https://' ) { // Ensure valid URL
@@ -87,6 +88,7 @@ export function inputValidation(formObj) {
   }
   if ( !(formObj.resume instanceof File) ) { // Ensure resume is a file
     newErrors.push('resume');
+// Temp comment
   }
   if ( formObj.password !== formObj.verifyPassword ) { // Match passwords
     newErrors.push('password', 'verifyPassword');

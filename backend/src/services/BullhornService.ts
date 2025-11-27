@@ -162,7 +162,6 @@ export class BullhornService {
       if (res.status === 200) {
         const { access_token, refresh_token } = res.data;
         this.access_token = access_token;
-        this.refresh_token = refresh_token;
         return await this.login();
       }
       return await this.init();
@@ -989,3 +988,6 @@ export class BullhornService {
           // Send email based on skills
           const skills = jobDetail.skills.data;
           if (skills.length) {
+            const whereQuery: any = [];
+            skills.forEach((skill: any) => {
+              whereQuery.push({

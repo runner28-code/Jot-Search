@@ -72,7 +72,6 @@ export default function GlobalSearch({ placeholder }) {
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
     setResults({ ...results, forceHidden: true });
-  };
 
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
@@ -105,7 +104,6 @@ GlobalSearch.propTypes = {
 
 function renderResultsContainer( results, searchTerm ) {
   if ( !searchTerm || results.forceHidden ) { // if no searchTerm, no results to display
-// Temp comment
     return null;
   }
   

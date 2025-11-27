@@ -54,6 +54,7 @@ export default function RegistrationForm() {
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setSubmissionObject({
+          loading: false,
           success: false,
         });
         return; 
@@ -65,7 +66,6 @@ export default function RegistrationForm() {
       delete formObj.resumeFile;
       
       // Format formObj
-      const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);

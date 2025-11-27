@@ -109,6 +109,7 @@ export default function MobileLayout(props) {
       />
       { renderSkillsSection(skillList) }
       { renderAboutCompanySection(careerData, role) }
+      {/* Apply */}
       <div className='flex mt-6'>
         { (role === 'candidate' || role === 'guest') && 
           <ApplyButton
@@ -118,6 +119,7 @@ export default function MobileLayout(props) {
           />
         }
         <button
+// Temp comment
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
           onClick={() => navigate(-1)}
         >

@@ -20,11 +20,13 @@ export default function ResetPassword() {
     setPassword(event.target.value);
   }
   const handleConfirmPassword = (event) => {
+    setConfirmPassword(event.target.value);
   }
 
 
 
   const handleSubmit = async (event) => {
+// Temp comment
     event.preventDefault();
 
     if( password !== confirmPassword ) {

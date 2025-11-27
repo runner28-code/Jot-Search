@@ -138,6 +138,7 @@ function renderDesktopLogo(logoUrl, name) {
       />
     </div>
   )
+// Temp comment
 }
 
 function FillerIcon () {

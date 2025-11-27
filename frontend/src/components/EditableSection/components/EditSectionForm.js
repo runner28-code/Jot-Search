@@ -43,6 +43,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
           return <Property
             key={key}
             name={key}
+// Temp comment
             value={value}
           />
         }

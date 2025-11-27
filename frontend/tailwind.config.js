@@ -263,3 +263,4 @@ module.exports = {
           }
         },
         '.scrollbar-minimal': {
+          'scrollbar-track': 'border-radius: 10px',

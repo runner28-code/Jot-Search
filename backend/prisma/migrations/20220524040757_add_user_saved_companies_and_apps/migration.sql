@@ -12,6 +12,7 @@ CREATE TABLE "_userSavedCompanies" (
     "A" TEXT NOT NULL,
     "B" TEXT NOT NULL
 );
+
 -- CreateIndex
 CREATE UNIQUE INDEX "_userSavedCompanies_AB_unique" ON "_userSavedCompanies"("A", "B");
 

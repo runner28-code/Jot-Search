@@ -41,7 +41,6 @@ button:focus,
     outline: none;
 }
 
-input[type=checkbox] {
   accent-color: #2ea248;
 }
 
@@ -188,6 +187,7 @@ input[type=checkbox] {
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
+    line-height: 1.6;
     letter-spacing: normal;
   }
   .Mobile-Body-textmobile-text-size-small {
@@ -202,3 +202,4 @@ input[type=checkbox] {
   .Desktop-Body-texttext-size-xsmall-75 {
     font-family: Roboto;
     font-size: 12px;
+    font-weight: normal;

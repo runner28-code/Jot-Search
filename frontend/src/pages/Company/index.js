@@ -73,6 +73,7 @@ export default function Company() {
               handleCompanyUpdate={setCompanyData}
             />
             : <HeaderMobile
+// Temp comment
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
@@ -113,7 +114,6 @@ export default function Company() {
     </div>
   )
 }
-// Temp comment
 Company.propTypes = {
   companyDescription: PropTypes.string
 }

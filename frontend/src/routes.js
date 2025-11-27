@@ -92,3 +92,4 @@ export const APIlandingPageStats = '/landing-page-stats';
 
 /* Social Links */
 export const linkedin = 'https://www.linkedin.com/company/talent-intulsa/?utm_source=talentwebsite&utm_medium=web&utm_campaign=footer-menu';
+export const twitter = 'https://twitter.com/talentintulsa?utm_source=talentwebsite&utm_medium=web&utm_campaign=footer-menu';

@@ -324,3 +324,5 @@ export type Lead = {
     ownerCorporation?: string;
     pager?: string;
     phone?: string;
+    phone2?: string;
+    phone3?: string;

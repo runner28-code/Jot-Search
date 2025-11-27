@@ -332,3 +332,4 @@ export type Lead = {
     referredByPerson?: string;
     reportToPerson?: string;
     role?: string;
+    salary?: string;

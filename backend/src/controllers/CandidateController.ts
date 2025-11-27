@@ -172,7 +172,6 @@ export class CandidateController {
           where,
           skip: skip < 0 ? 0 : skip,
           take: count,
-          orderBy: {
             firstname: "asc",
           }
         });
@@ -416,3 +415,4 @@ export class CandidateController {
 
       if (result && candidateJobInvites?.length) {
         await db.candidateJobInvites.createMany({
+          data: candidateJobInvites

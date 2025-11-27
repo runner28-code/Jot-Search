@@ -78,7 +78,6 @@ export default function AdvancedSearch({ disabledTabs }) {
     } else {
       return { filterKey: 'name', filterValue: filterObject.title }
     }
-  };
 
 
   const { careers, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('careers'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'careers' });
@@ -100,6 +99,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   }
 
   function handleSearchChange(searchTerm) {
+    setFilterObject({ ...filterObject, title: searchTerm });
     setPage(1);
   }
   function handleSearchClick() {

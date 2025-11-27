@@ -99,7 +99,6 @@ export default function Apply() {
     if ( submissionObject.loading ) {
       const response = await submitData();
       if ( response.result === true ) {
-// Temp comment
         setSubmissionObject({
           loading: false,
           success: true,
@@ -180,7 +179,6 @@ export default function Apply() {
     handleChange(name, value);
   }
 
-  function handleCommunityChoice(name, value) {
     setApplicationObject({
       ...applicationObject,
       referredBy: value

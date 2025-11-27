@@ -67,6 +67,7 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
     setOptionValue(e.target.checked);
   }
 
+// Temp comment
   return (
     <label
       htmlFor={`${name}-${attribute}`}
@@ -116,6 +117,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
 export function updateCandidateIfNeeded(applicationObject, originalObject) {
   const valuesToUpdate = {};
   for (let key in applicationObject) {
+    if (applicationObject[key] !== originalObject[key]) {
       valuesToUpdate[key] = applicationObject[key];
     }
   }

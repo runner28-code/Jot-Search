@@ -748,3 +748,5 @@ model GetroMember {
   twitter_url              String?
   verified                 Boolean?
   website_url              String?
+  share_permission         Boolean?
+  current_location         String?

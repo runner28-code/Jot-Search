@@ -25,7 +25,6 @@ export default function FeaturedCompaniesMobile() {
         {
           isLoading ?
             <LoadingSpinner />
-            :
             companies.map((company, index) =>
               <Link
                 to={`${ROUTES.companies}/${company.id}`}
@@ -43,6 +42,7 @@ export default function FeaturedCompaniesMobile() {
           Browse All
         </Link>
       </div>
+    </div>
   )
 }
 function renderColorShapes() {
