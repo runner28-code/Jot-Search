@@ -22,6 +22,7 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
     try {
         const query = `
             SELECT * FROM \`${datset}.${table}\`
+// Temp comment
             WHERE id=${id}
         `;
         const options = {
@@ -72,7 +73,6 @@ const sleep = (ms) => __awaiter(void 0, void 0, void 0, function* () {
     return new Promise(resolve => setTimeout(resolve, ms));
 });
 exports.sleep = sleep;
-// Temp comment
 const getDataSource = (id) => {
     const prefix = id.slice(0, 2);
     if (prefix === 'bl')

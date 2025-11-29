@@ -6,7 +6,6 @@ import FormInput from '../FormInput';
 import ChoiceTag from '../ChoiceTag';
 // import Dropdown from '../../components/UniversalDropdown';
 import { referralChoices, communityChoices } from '../../utils/dbFieldMapping';
-// Temp comment
 import {
   roles as roleChoices,
   skills as skillChoices,

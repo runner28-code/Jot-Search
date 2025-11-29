@@ -18,6 +18,7 @@ const config = {
     sendgridKey: process.env.SENDGRID_KEY,
     sendgridSecret: process.env.SENDGRID_SECRET,
     mailSenderEmail: process.env.MAIL_SENDER_EMAIL,
+// Temp comment
     frontendUrl: process.env.FRONTEND_URL,
     enableCronJobs: process.env.ENABLE_CRON_JOBS,
 };

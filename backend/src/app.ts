@@ -123,7 +123,6 @@ useExpressServer(app, {
       const token = action.request.headers.authorization.split(" ")[1];
       const data = VerifyJwtToken(token);
       if (data && data.email) {
-        const user = await findUserByEmail(data.email);
         if (user) {
           action.request.user = user;
           return true;

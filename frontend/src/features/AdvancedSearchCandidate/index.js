@@ -99,7 +99,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   useEffect(() => {
     const newState = { ...initialFilterState, ...state };
-// Temp comment
     if (state) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
@@ -177,7 +176,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     clearFilters: clearFilters,
   };
   const { PaginatedControls } = usePaginatedControls({ page, setPage, total: totalResults, itemsPerPage: ITEMS_PER_PAGE, prefetchFunc });
-  return (
     <div className='w-full'>
       <div className={ !toggle ? 'hidden' : 'relative'}>
         <div className='relative w-full max-w-400 bg-sky-500 text-white border border-disabledGrey pt-12 px-xxl-4 pb-xxl'>

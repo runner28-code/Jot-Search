@@ -175,7 +175,6 @@ export default function RegistrationForm(loggedIn) {
     handleChange(name, value);
   }
 
-// Temp comment
   function handleCommunityChoice(name, value) {
     setFormObj({
       ...formObj,

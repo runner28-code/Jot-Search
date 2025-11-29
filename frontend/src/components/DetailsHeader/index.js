@@ -6,7 +6,6 @@ import SourceIdentifier from '../SourceIdentifier';
 import BackButton from '../BackButton';
 
 export default function DetailsHeader({ type, source }) {
-  let Icon = undefined;
   switch(type) {
     case 'candidate':
       Icon = CandidatesIcon;
@@ -44,6 +43,7 @@ DetailsHeader.propTypes = {
 }
 
 function renderSourceIdentifier(source) {
+  if( source === 'bullhorn' ) {
     return(
       <SourceIdentifier type={source} />
     )

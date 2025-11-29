@@ -35,7 +35,6 @@ CREATE TABLE "GetroJobInfo" (
     "posted_at" TIMESTAMP(3),
     "slug" TEXT,
     "source" TEXT,
-    "status" TEXT,
     "title" TEXT,
     "url" TEXT,
     "hidden" BOOLEAN NOT NULL DEFAULT false,

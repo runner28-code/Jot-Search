@@ -108,7 +108,6 @@ export default function DesktopLayout(props) {
             {careerData.datasource === 'bullhorn' && <UpdateJobFeatured job={careerData} />}
           </div>
         )
-      }
     </section>
     {renderDescription(role, navigate, careerData.clientCorporation, skillList, careerData)}
     <OtherCareers

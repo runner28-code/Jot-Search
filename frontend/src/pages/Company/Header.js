@@ -66,6 +66,7 @@ function HeaderContent({ companyData }) {
             <img
               src={LinkedIn}
               className={headerIconStyles}
+            />
             { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
@@ -231,6 +232,7 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
       Company Website
       </a>
     </>)
+// Temp comment
   }
 
   let http = 'https://';

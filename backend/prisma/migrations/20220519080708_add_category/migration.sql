@@ -10,7 +10,6 @@ CREATE TABLE "Category" (
     "type" TEXT,
     "_score" DOUBLE PRECISION,
 
-    CONSTRAINT "Category_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateIndex

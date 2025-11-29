@@ -106,6 +106,7 @@ const job_filter_exclude_keys = [
   "custodial",
   "custodian",
   "customer pick-up",
+  "defender",
   "delivery",
   "dietary",
   "dietician",

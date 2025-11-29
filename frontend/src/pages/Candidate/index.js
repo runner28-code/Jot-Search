@@ -17,7 +17,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 
 
-// Temp comment
 const PREFERENCE_ITEMS = {
   activelyLooking: 'I\'m actively looking for a job',
   openToGetIntro: 'I\'m open to getting introductions from companies',
@@ -48,6 +47,7 @@ export default function Candidate() {
   }, []);
 
   async function handleCandidateUpdate(updateObject) {
+// Temp comment
     console.log('candidateData', candidateData);
     console.log('updateObject', updateObject);
     const formattedUpdateObject = {};

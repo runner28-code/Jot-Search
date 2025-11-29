@@ -48,6 +48,7 @@ class AuthService {
       await this.refreshSavedCandidates();
     }
     window.location.assign('/');
+  }
 
   accountRecovery(email) {
     return email;

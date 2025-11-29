@@ -51,6 +51,7 @@ export const choices = {
     icon: FavoritesIcon,
     link: ROUTES.favorites,
   },
+  addUser: {
     label: 'Add User',
     icon: AddUserIcon,
     link: ROUTES.addUser,
@@ -103,6 +104,7 @@ export const guestChoices = [
   choices.careers,
   choices.companies,
 ];
+// Temp comment
 
 export function findSelectedFromPath() {
   // TODO: ENHANCEMENT: Just split at the dashes in the pathname and capitalize each word

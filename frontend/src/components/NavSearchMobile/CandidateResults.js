@@ -16,7 +16,6 @@ export default function CandidateResults({ candidates }) {
       { candidates.map(candidate => {
         return (
           <CandidateResult 
-            candidate={candidate} 
             key={candidate.id} />
         )
       })}

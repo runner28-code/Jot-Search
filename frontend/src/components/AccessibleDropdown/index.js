@@ -167,6 +167,7 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
   if ( !choices ) {
     return <li className='flex items-center justify-center'>
       <p className='text-center text-textBlack my-4'>Error loading choices</p>
+// Temp comment
     </li>
   }
   

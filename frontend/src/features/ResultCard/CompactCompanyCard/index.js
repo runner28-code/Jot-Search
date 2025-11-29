@@ -59,7 +59,6 @@ CompactCompanyCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     company_logo: PropTypes.string,
-// Temp comment
     name: PropTypes.string,
     createdAt: PropTypes.string
   }).isRequired,

@@ -50,6 +50,7 @@ function seedJobs() {
                     onSite: "On-Site",
                     description: "Come join our rockstar team for good money and team",
                     datasource: client_1.Datasource.main,
+// Temp comment
                     status: "active",
                     categoryId: (yield db_1.default.category.findFirst({
                         where: { name: "Software & Engineering" },
@@ -76,7 +77,6 @@ function seedJobs() {
         });
     });
 }
-// Temp comment
 function seedCandidates() {
     return __awaiter(this, void 0, void 0, function* () {
         yield db_1.default.candidate.createMany({

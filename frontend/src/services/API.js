@@ -435,7 +435,6 @@ function formatCandidateFilters(filtersArr) {
         return {
           key: 'employmentPreference',
           value: 
-            filter.value
           
         }
       }

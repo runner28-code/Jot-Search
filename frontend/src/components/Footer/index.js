@@ -238,6 +238,7 @@ function NavFooter() {
           to={ROUTES.landingPage}
           className={linkStyle}
         >Home
+        </Link>
         <Link
           to={ROUTES.careers}
           className={linkStyle}

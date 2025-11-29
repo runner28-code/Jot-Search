@@ -7,7 +7,6 @@ import FormInput from '../../components/FormInput';
 
 const dropdownFiltersCoord = [
   'Category',
-// Temp comment
   'Experience',
   'Remote Availability',
   'Employment Type',
@@ -80,7 +79,6 @@ export default function CandidateFilterLayout(props) {
           type='typeahead'
           dropdownType='tags'
           name='skills'
-          label='Your skills (select at least 3)'
           placeholder='Select all that apply'
           required={true}
           value={filterObject.skills}

@@ -136,7 +136,6 @@ export class JobController {
 
       const skip = (count || 0) * ((page - 1) || 0)
 
-      const jobPromise = db.job.findMany({
         where,
         take: count,
         skip: skip < 0 ? 0 : skip,

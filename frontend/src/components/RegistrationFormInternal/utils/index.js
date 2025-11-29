@@ -30,10 +30,12 @@ export function renderErrorBlock(errorBlock) {
       <div className='flex flex-col items-center justify-center w-full'>
         <p className='text-rose-500 text-sm font-bold'>{ errorBlock.error || errorBlock }</p>
       </div>
+// Temp comment
     )
   }
 }
 
+export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (
       <div className='flex flex-col justify-center'>

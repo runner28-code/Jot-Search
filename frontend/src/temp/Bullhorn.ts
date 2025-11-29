@@ -287,7 +287,6 @@ export type Lead = {
     candidates?: string;
     category?: string;
     clientContacts?: string;
-    clientCorporation?: string;
     comments?: string;
     companyName?: string;
     companyURL?: string;

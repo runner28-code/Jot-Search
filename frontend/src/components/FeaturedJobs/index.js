@@ -75,7 +75,6 @@ export default function FeaturedJobs() {
   )
 }
 
-function renderColorShapes() {
   return(
     <div className='relative w-24 mb-8'>
       <div className='bg-indigoSquare w-12 h-12' />

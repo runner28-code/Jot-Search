@@ -39,7 +39,6 @@ export default function DashboardPublicMin({type}) {
         <div className='basis-1/12'>
           <button
             className='text-white underline text-lg'
-            onClick={() => navigate(-1)}
           >
           Back
           </button>

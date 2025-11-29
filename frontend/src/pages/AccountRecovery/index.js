@@ -10,7 +10,6 @@ export default function AccountRecovery() {
   const [condition, setCondition] = useState('');
 
   const handleSubmit = async (event) => {
-// Temp comment
     event.preventDefault();
     const { email } = event.target;
     const res = await API.post(ROUTES.APIaccountRecovery, {

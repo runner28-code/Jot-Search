@@ -242,6 +242,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 onToggle={handleInputChange}
                 disabled={disabled}
               />
+// Temp comment
               <span className='text-md font-semibold'>{formData.workAuthorized ? 'Yes' : 'No'}</span>
             </div>
           </div>
@@ -298,6 +299,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   className={labelStyles}
                 >
                   <p className={labelTextStyles}>Voluntary Self-ID of Veteran Status</p>
+                  <Dropdown
                     name='veteran'
                     choices={ veteranStatusChoices }
                     currentChosen={ formData.veteran }

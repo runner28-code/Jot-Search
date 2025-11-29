@@ -42,6 +42,7 @@ export default function InviteToCareer({ candidate }) {
           <span>{item.label}</span>
           <button 
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs' 
+            onClick={(e) => deleteItem(e, item.value)}>X</button>
         </span>
       ))}
     </div>)
