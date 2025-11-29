@@ -63,7 +63,6 @@ export default function Stats({ userType }) {
   return (
     <div className='mb-20 vw-640:mb-30 w-full bg-aquaBlue rounded-3xl border border-disabledGrey pt-14 px-12 pb-11'>
       <div className='flex flex-wrap justify-between items-center mb-16'>
-// Temp comment
         <h5 className='text-lightGrey text-h5 mr-10'> Quick Stats</h5>
         <div
           id='dropdown-container'
@@ -115,7 +114,6 @@ function StatCard({ stat, value }) {
       <div className='font-spaceGrotesk'>
         <h2 className={numberStyles}>{value.count}</h2>
         <p className='text-md text-charcoal'>{stat}</p>
-      </div>
       {renderDeviation(deviationPercentage)}
     </div>
   )

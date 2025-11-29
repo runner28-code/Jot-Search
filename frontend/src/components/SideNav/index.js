@@ -47,6 +47,7 @@ function renderChoice(choice, selected, index, choicesLength) {
 
   const choiceStyles = selectedChoice ? baseChoiceStyles + selectedClass : baseChoiceStyles;
   let iconStyles = 'w-14 h-14 mx-9 ';
+  const strokeIcons = ['Add User', 'My Account']; // These icons use stroke, rest use fill
   if ( selectedChoice ) {
     iconStyles += strokeIcons.includes(choice.label) ? 'stroke-white' : 'fill-white';
   } else {

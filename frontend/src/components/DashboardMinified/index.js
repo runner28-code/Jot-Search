@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
 
 // Images
@@ -51,7 +50,6 @@ function LinkSwap ({ location, loggedIn }) {
         className='text-white flex items-center'
         to={ROUTES.companies}>
         <span className='underline'>Back</span>
-// Temp comment
       </Link>
     )
   }

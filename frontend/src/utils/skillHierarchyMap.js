@@ -198,7 +198,6 @@ export const skills = [
   'Figma',
   'Financial Analysis',
   'Financial Modeling',
-// Temp comment
   'Financial Planning',
   'Financial Reporting',
   'Financial Services',

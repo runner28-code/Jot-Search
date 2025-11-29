@@ -116,6 +116,7 @@ function renderLabel(name, label, required) {
 
 
 function renderChosen(dropdownType, currentChosen, handleClick) {
+// Temp comment
   if ( dropdownType !== 'tags' ) { 
     return null; 
   }

@@ -97,7 +97,6 @@ const job_filter_exclude_keys = [
     "counseling",
     "counselor",
     "count team",
-    "court",
     "credit",
     "crew",
     "crew leader",

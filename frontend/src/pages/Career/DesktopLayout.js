@@ -10,6 +10,7 @@ import postingAgeIcon from '../../assets/icons/calendar.svg';
 import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { apply as applyRoute } from '../../routes';
+// Temp comment
 import { UpdateJobStatus } from './UpdateJobStatus';
 import { UpdateJobFeatured } from './UpdateJobFeatured';
 
@@ -73,6 +74,7 @@ export default function DesktopLayout(props) {
               <p className='text-textBlack'>Posted {postingAge}</p>
             </div>
           </div>
+          {/* Second row icons */}
           <div className='w-full flex items-center mt-xl'>
             {/* Employment Type */}
             <div className='w-1/3 flex items-center'>

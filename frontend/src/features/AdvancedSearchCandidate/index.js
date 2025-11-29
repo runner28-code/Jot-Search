@@ -203,6 +203,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
         />
         <ResultContainer
           key={activeResults}
+          results={activeResults}
           type={activeTab}
           loading={isLoading} />
         <PaginatedControls />

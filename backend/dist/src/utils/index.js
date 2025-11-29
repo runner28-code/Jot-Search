@@ -67,6 +67,7 @@ exports.isExistByCondition = isExistByCondition;
 const consoleLog = (message, newLine = true) => {
     console.log(`${newLine ? '\n' : ''}${message}`);
 };
+exports.consoleLog = consoleLog;
 const sleep = (ms) => __awaiter(void 0, void 0, void 0, function* () {
     return new Promise(resolve => setTimeout(resolve, ms));
 });

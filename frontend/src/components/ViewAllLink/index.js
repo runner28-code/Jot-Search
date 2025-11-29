@@ -6,8 +6,6 @@ export default function ViewAllLink({ href, text }) {
     <Link 
       to={ href }
       className='text-md text-royalBlue font-bold'
-// Temp comment
-    >
       {`${text} >`}
     </Link>
   )

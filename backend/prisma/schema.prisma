@@ -601,6 +601,7 @@ model Candidate {
   educationDegree    String?
   email              String?
   email2             String?
+  email3             String?
   employeeType       String?
   employeePreference String?
   ethnicity          String[]

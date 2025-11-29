@@ -59,6 +59,7 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
     <button
       type="button" 
       name={fieldName}
+// Temp comment
       className={`${buttonStyles} relative inline-flex h-12 w-24 flex-shrink-0 rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none`}
       role="switch"
       aria-checked={toggled}
@@ -66,6 +67,7 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
     >
       <span className="sr-only">{label}</span>
       <span 
+        aria-hidden="true" 
         className={`${toggleStyles} pointer-events-none inline-block h-10 w-10 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out`}>
       </span>
     </button>

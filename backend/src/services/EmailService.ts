@@ -64,7 +64,6 @@ export const sendCandidatesToEmployers = async (candidates: string[], employers_
   }
 }
 
-export const sendNewUserNotification = async (to: string, name: string) => {
   try {
     const base_url = process.env?.FRONTEND_URL || 'http://localhost:3000';
     await sendEmail(to, 'Welcome to inTulsa!', 'new-user-notification', {
@@ -104,6 +103,7 @@ export const sendUpdateUserNotification = async (to: string, name: string) => {
     return true;
   } catch (error: any) {
     console.log('Error during sending update user notification');
+    console.log(error);
     console.log(JSON.stringify(error.response.body));
     throw error;
   }

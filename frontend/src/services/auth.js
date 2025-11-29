@@ -48,7 +48,6 @@ class AuthService {
       await this.refreshSavedCandidates();
     }
     window.location.assign('/');
-// Temp comment
   }
 
   accountRecovery(email) {
@@ -63,7 +62,6 @@ class AuthService {
   clearStorage() {
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
-    localStorage.removeItem('savedJobs');
     localStorage.removeItem('savedCompanies');
     localStorage.removeItem('savedCandidates');
   }

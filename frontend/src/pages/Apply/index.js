@@ -88,7 +88,6 @@ export default function Apply() {
         ...candidateData,
       };
 
-      setCareer({ ...careerData, loading: false });
       setOriginalObject(stateObject);
       setApplicationObject({ ...stateObject, loading: false });
     } catch(e) {
@@ -146,7 +145,6 @@ export default function Apply() {
   function handleInputChange(e) {
     const { name, value } = e.target;
     setApplicationObject({ ...applicationObject, [name]: value });
-// Temp comment
   }
 
   function handleChange(name, value) {

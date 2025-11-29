@@ -244,7 +244,6 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
     </a>
   </>)
 }
-
 function isValidHttpUrl(string) {
   let url;
 

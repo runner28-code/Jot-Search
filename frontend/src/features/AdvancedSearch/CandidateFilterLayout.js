@@ -41,6 +41,7 @@ export default function CandidateFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
+  let userRole = AuthService.getUserRole();
 
   const dropdownFilterObject = {};
   const checkboxFilterObject = {};
@@ -95,7 +96,6 @@ export default function CandidateFilterLayout(props) {
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
-          additionalClasses='w-1/2'
         />
         <button
           className='text-royalBlue text-sm whitespace-nowrap'

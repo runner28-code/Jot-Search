@@ -64,12 +64,14 @@ export default function ExpertiseLinksMobile() {
           className={linkStyles}
           state={{ Expertise: 'Operations' }}
         >
+// Temp comment
           <img
             src={operationsIcon}
             alt='Operations Icon'
             className={iconStyles}
           />
           <span className={textStyles}>Operations</span>
+        </Link>
         {/* Finance */}
         <Link
           to={ROUTES.careers}

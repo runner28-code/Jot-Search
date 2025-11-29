@@ -7,7 +7,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 const iconStyles = 'w-12 h-12 mr-5 ';
 
 export default function CareerProfileInfo({ candidateData, handleCandidateUpdate, role }) {
-// Temp comment
   const [editMode, setEditMode] = useState(false);
   return (
     <>
@@ -50,7 +49,6 @@ function renderEditIcon(candidateData, setEditMode) {
     return (
       <button 
         className='testspace-x-2 text-xl leading-none py-4 justify-center items-center text-royalBlue absolute top-0 right-0 px-4 pr-6 border-solid border-royalBlue'
-        onClick={handleClick}>
         <FiEdit
           className='h-[3rem] w-[3rem] ml-4 stroke-royalBlue cursor-pointer'
         />

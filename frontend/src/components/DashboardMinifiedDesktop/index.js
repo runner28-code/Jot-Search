@@ -95,7 +95,6 @@ function ToggleIcon () {
     <img
       className='ml-12 mr-2'
       src={ filterIcon }
-// Temp comment
       alt='Filter Icon'
     />
   )

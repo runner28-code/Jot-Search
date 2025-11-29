@@ -20,7 +20,6 @@ export default function AddCoordinator() {
       if (data.result === true) {
         setSubmissionObject({
           loading: false,
-// Temp comment
           success: true,
           errors: {},
         });

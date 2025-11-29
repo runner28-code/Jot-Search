@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ResultContainer from '../../features/ResultContainer';
 import TabContainer from '../../components/TabContainer';
+// Temp comment
 import CandidateFilterLayout from './CandidateFilterLayout';
 import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
@@ -143,7 +144,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       filterTemplate: publicDropdownFilters,
       activeResults: jobs,
       totalResults: totalJobs,
-// Temp comment
       isLoading: isLoadingJobs,
       prefetchFunc: (page) => prefetchJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page })
     },
