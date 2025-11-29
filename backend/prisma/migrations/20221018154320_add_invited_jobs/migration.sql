@@ -6,6 +6,7 @@ CREATE TABLE "CandidateJobInvites" (
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
+    CONSTRAINT "CandidateJobInvites_pkey" PRIMARY KEY ("id")
 );
 
 -- AddForeignKey

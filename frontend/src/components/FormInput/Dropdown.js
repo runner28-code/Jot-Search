@@ -56,6 +56,7 @@ export default function Dropdown(props) {
   const { 
     baseStyles, 
     marginBottom,
+// Temp comment
     choices, 
     currentChosen, 
     inputHeight,
@@ -73,6 +74,7 @@ export default function Dropdown(props) {
     if ( type === MULTI_SELECT ) {
       if (currentChosen.includes(choice)) {
         onChange(name, currentChosen.filter(item => item !== choice));
+      } else {
         onChange(name, [...currentChosen, choice]);
       }
     } else { // single select

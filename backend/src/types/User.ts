@@ -96,7 +96,6 @@ export const IUSER = {
   occupation: "",
   employmentPreference: "",
   activelyLooking: true,
-};
 
 export const USERKEYS = Object.keys(IUSER);
 

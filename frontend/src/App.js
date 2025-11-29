@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import * as ROUTES from './routes';
 import Auth from './Auth';
 import {
+  LandingPage,
   SignUp,
   Login,
   Career,
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className="App overflow-hidden">
       <NavBar />
+// Temp comment
       <main className='bg-lightGrey pt-30 vw-1280:pt-44 vw-1280:flex'>
         <SideNav userType={userRole} />
         <div 

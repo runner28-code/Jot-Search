@@ -104,7 +104,6 @@ export const guestChoices = [
   choices.careers,
   choices.companies,
 ];
-// Temp comment
 
 export function findSelectedFromPath() {
   // TODO: ENHANCEMENT: Just split at the dashes in the pathname and capitalize each word
@@ -114,6 +113,7 @@ export function findSelectedFromPath() {
       return 'My Account';
     case 'applications':
       return 'Applications';
+// Temp comment
     case 'saved-careers':
       return 'Saved Careers';
     case 'saved-companies':

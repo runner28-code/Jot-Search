@@ -8,6 +8,7 @@ const API = axios.create({
   baseURL: 'https://intulsadev.com:5000',
   // baseURL: 'http://localhost:3001',
 });
+// Temp comment
 
 // Adds Bearer token to every request when it exists (i.e. user is logged in)
 API.interceptors.request.use(
@@ -435,6 +436,7 @@ function formatCandidateFilters(filtersArr) {
         return {
           key: 'employmentPreference',
           value: 
+            filter.value
           
         }
       }

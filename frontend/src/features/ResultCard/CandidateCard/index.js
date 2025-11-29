@@ -180,7 +180,6 @@ function NewLeadLabel({ status }) {
 NewLeadLabel.propTypes = {
   status: PropTypes.string,
 }
-// Temp comment
 
 function renderSkills(skillsString) {
   if ( !skillsString ) {
@@ -218,7 +217,6 @@ function InfoLabel({ label, value }) {
 
 InfoLabel.propTypes = {
   label: PropTypes.string.isRequired,
-  value: PropTypes.bool.isRequired,
 }
 
 

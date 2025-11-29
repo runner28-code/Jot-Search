@@ -17,7 +17,6 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           htmlFor='featured' 
           className={ width >= 990 ? 'text-lg font-roboto text-black70%' : 'text-sm font-roboto text-black70%'}>
           {label}
-        </label>
       </div>
     </div>
   )
@@ -65,7 +64,6 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
       onClick={handleToggle}
     >
       <span className="sr-only">{label}</span>
-// Temp comment
       <span 
         aria-hidden="true" 
         className={`${toggleStyles} pointer-events-none inline-block h-10 w-10 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out`}>

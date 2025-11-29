@@ -228,11 +228,11 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
       <a
         className={textStyles}
         href='https://www.intulsa.com/'
+// Temp comment
       >
       Company Website
       </a>
     </>)
-// Temp comment
   }
 
   let http = 'https://';

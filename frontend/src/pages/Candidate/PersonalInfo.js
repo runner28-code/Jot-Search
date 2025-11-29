@@ -242,7 +242,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 onToggle={handleInputChange}
                 disabled={disabled}
               />
-// Temp comment
               <span className='text-md font-semibold'>{formData.workAuthorized ? 'Yes' : 'No'}</span>
             </div>
           </div>

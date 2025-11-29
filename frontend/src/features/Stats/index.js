@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+// Temp comment
 import TimeframeFilter from '../../components/TimeframeFilter';
 import { BsArrowUpSquare, BsArrowDownSquare } from 'react-icons/bs';
 import { getCompanyQuickStats, getCoordinatorQuickStats } from '../../services/API';
@@ -64,6 +65,7 @@ export default function Stats({ userType }) {
     <div className='mb-20 vw-640:mb-30 w-full bg-aquaBlue rounded-3xl border border-disabledGrey pt-14 px-12 pb-11'>
       <div className='flex flex-wrap justify-between items-center mb-16'>
         <h5 className='text-lightGrey text-h5 mr-10'> Quick Stats</h5>
+        <div
           id='dropdown-container'
           className='relative'
         >

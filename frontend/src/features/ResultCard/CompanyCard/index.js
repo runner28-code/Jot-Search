@@ -86,6 +86,7 @@ export default function CompanyCard({ data }) {
               <a
                 href='#'
                 className='text-royalBlue underline'
+              >
                 Company Website
               </a>
             </div>

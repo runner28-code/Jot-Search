@@ -93,7 +93,6 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
     ":" +
     current_datetime.getSeconds();
   const method = req.method;
-  const url = req.url;
   const status = -res.statusCode;
   const start = process.hrtime();
   const durationInMs = getActualRequestDurationInMs(start);
@@ -123,6 +122,7 @@ useExpressServer(app, {
       const token = action.request.headers.authorization.split(" ")[1];
       const data = VerifyJwtToken(token);
       if (data && data.email) {
+        const user = await findUserByEmail(data.email);
         if (user) {
           action.request.user = user;
           return true;

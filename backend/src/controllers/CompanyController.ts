@@ -136,6 +136,7 @@ export class CompanyController {
       const company = await db.company.findFirst({
         where: {
           id: id,
+        },
       });
       return {
         company: company,

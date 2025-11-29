@@ -141,6 +141,7 @@ export default function RegistrationFormInternal(loggedIn) {
     setFormObj({
       ...formObj,
       firstName: firstName.value,
+// Temp comment
       lastName: lastName.value,
       email: email.value,
       willRelocate: relocate,

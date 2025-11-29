@@ -18,6 +18,7 @@ import {
   buildSearchFilters
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';
+import AuthService from '../../services/auth';
 import { useLocation } from 'react-router-dom';
 
 const useActiveTabState = createPersistedState('activeTab');
@@ -54,7 +55,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     if (state.title) initialFilterState.title = state.title;
     if (state.expertise) initialFilterState.Expertise = state.expertise;
     if (state['On-Site/Remote']) initialFilterState['On-Site/Remote'] = state['On-Site/Remote'];
-  }
 
   const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);

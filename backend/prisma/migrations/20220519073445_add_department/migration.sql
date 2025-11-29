@@ -1,5 +1,4 @@
 -- AlterTable
-ALTER TABLE "User" ADD COLUMN     "departmentId" TEXT;
 
 -- CreateTable
 CREATE TABLE "Department" (
@@ -8,4 +7,5 @@ CREATE TABLE "Department" (
 
     CONSTRAINT "Department_pkey" PRIMARY KEY ("id")
 );
+
 -- AddForeignKey

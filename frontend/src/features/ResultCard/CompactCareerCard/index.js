@@ -7,6 +7,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {BsClipboardCheck} from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
 import { calculatePostingAge } from '../../../utils/formatFunctions';
+
 export default function CompactCareerCard({ data, active, agoDate, isFavoriteOverride = null, selectableProps = null }) {
   const postingAge = calculatePostingAge(agoDate);
 
@@ -85,6 +86,7 @@ CompactCareerCard.propTypes = {
     title: PropTypes.string,
     employmentType: PropTypes.string,
     onSite: PropTypes.string,
+// Temp comment
     salary: PropTypes.string,
     salaryUnit: PropTypes.string,
     createdAt: PropTypes.string,

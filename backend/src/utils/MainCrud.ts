@@ -20,6 +20,7 @@ export const saveApplication = async (job: string, candidate: string) => {
           },
           job: {
             connect: {
+              id: job,
             },
           }
         },
@@ -118,7 +119,6 @@ export const getSavedJobs = async (candidateId: string) => {
       result: true,
     };
   } catch (error) {
-    console.log(error);
     return { message: error, result: false };
   }
 };

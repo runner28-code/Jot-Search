@@ -22,7 +22,6 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
     try {
         const query = `
             SELECT * FROM \`${datset}.${table}\`
-// Temp comment
             WHERE id=${id}
         `;
         const options = {
@@ -47,7 +46,6 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
         const query = `
             SELECT * FROM \`${datset}.${table}\`
             WHERE ${condition}
-        `;
         const options = {
             query: query,
             location: 'US',

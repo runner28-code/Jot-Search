@@ -21,6 +21,7 @@ export default function Companies() {
   const [toggle, setToggle] = useState(false);
   const sectionStylesLog = 'vw-990:ml-10 vw-990:mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
   const sectionStyles = '';
+
   function togglePassState() {
     setToggle(toggle => !toggle);
   }
@@ -65,7 +66,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   }  
   if( loggedIn ) {
     return (<>
-      <PageHeader
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : SearchIcon}
         backButton={true}

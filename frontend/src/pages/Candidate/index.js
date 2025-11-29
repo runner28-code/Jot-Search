@@ -47,7 +47,6 @@ export default function Candidate() {
   }, []);
 
   async function handleCandidateUpdate(updateObject) {
-// Temp comment
     console.log('candidateData', candidateData);
     console.log('updateObject', updateObject);
     const formattedUpdateObject = {};

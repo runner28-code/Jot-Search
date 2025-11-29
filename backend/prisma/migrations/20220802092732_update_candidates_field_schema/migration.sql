@@ -56,4 +56,3 @@ ADD COLUMN     "timeZoneOffsetEST" INTEGER;
 
 -- AlterTable
 ALTER TABLE "User" DROP COLUMN "hourlyRate",
-ADD COLUMN     "hourlyRate" INTEGER,

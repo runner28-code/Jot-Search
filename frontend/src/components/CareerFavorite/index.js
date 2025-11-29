@@ -40,6 +40,7 @@ export default function CareerFavorite () {
           <CareerIcon className='w-32 h-32 fill-royalBlue' />
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Find Careers to Favorite</h3>
           <Link
+// Temp comment
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
@@ -51,7 +52,6 @@ export default function CareerFavorite () {
           to={ROUTES.careers}
           class='outline outline-2 outline-royalBlue text-royalBlue font-roboto py-8 px-14 rounded-lg text-md'>
             View All
-// Temp comment
         </Link>
       </div>
     </div>

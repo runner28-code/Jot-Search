@@ -219,6 +219,7 @@ NavSearchBar.propTypes = {
   searchTerm: PropTypes.string.isRequired,
   setSearchTerm: PropTypes.func.isRequired,
   placeholder: PropTypes.string,
+  marginBottom: PropTypes.string,
   alternateStylesObject: PropTypes.object,
   isOpen: PropTypes.bool,
   setIsOpen: PropTypes.func

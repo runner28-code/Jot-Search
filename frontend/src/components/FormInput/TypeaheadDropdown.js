@@ -6,7 +6,6 @@ import ChoiceListItem from '../ChoiceListItem';
 
 export default function TypeaheadDropdown(props) {
   const {
-    type, 
     dropdownType, 
     disabled,
     name, 
@@ -130,6 +129,7 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
 
         return (
           <ChoiceTag 
+            label={choice} 
             isActive={isActive} 
             handleClick={handleTagClick}
             key={choice} />

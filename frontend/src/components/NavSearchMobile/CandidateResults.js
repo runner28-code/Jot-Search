@@ -5,6 +5,7 @@ import AuthService from '../../services/auth';
 import * as ROUTES from '../../routes';
 
 export default function CandidateResults({ candidates }) {
+// Temp comment
   const role = AuthService.getUserRole();
   if (candidates.length === 0 || role === 'candidate') {
     return null;
@@ -16,6 +17,7 @@ export default function CandidateResults({ candidates }) {
       { candidates.map(candidate => {
         return (
           <CandidateResult 
+            candidate={candidate} 
             key={candidate.id} />
         )
       })}

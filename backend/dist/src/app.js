@@ -19,7 +19,6 @@ const routing_controllers_1 = require("routing-controllers");
 const path_1 = __importDefault(require("path"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const cors_1 = __importDefault(require("cors"));
-const jwtUtils_1 = require("./utils/jwtUtils");
 const User_1 = require("./services/User");
 const multer_1 = __importDefault(require("multer"));
 const utils_1 = require("./utils");

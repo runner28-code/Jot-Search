@@ -96,6 +96,7 @@ CREATE TABLE "Candidate" (
     "willRelocate" TEXT,
     "workAuthorized" TEXT,
     "address_address1" TEXT,
+    "address_address2" TEXT,
     "address_city" TEXT,
     "address_state" TEXT,
     "address_zip" TEXT,

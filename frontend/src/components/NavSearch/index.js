@@ -159,7 +159,6 @@ const defaultStylesObject = {
 }
 
 
-// Temp comment
 function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject, isOpen, setIsOpen}) {
   const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
   const offObject = {

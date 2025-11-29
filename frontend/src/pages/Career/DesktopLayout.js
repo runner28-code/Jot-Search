@@ -102,12 +102,12 @@ export default function DesktopLayout(props) {
 
       {/* Coordinator Status */}
       {
-        role === 'coordinator' && (
           <div className='flex flex-col space-y-8'>
             <UpdateJobStatus job={careerData} />
             {careerData.datasource === 'bullhorn' && <UpdateJobFeatured job={careerData} />}
           </div>
         )
+      }
     </section>
     {renderDescription(role, navigate, careerData.clientCorporation, skillList, careerData)}
     <OtherCareers
