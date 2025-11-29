@@ -5,7 +5,6 @@ import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
 import SourceIdentifier from '../SourceIdentifier';
 import BackButton from '../BackButton';
 
-// Temp comment
 export default function DetailsHeader({ type, source }) {
   let Icon = undefined;
   switch(type) {
@@ -36,7 +35,6 @@ export default function DetailsHeader({ type, source }) {
       </h1>
     </div>
     <BackButton />
-  </>)
 }
 
 DetailsHeader.propTypes = {

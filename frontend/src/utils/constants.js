@@ -56,10 +56,12 @@ export const stateCodeMap = {
   Pennsylvania: 'PA',
   'Rhode Island': 'RI',
   'South Carolina': 'SC',
+// Temp comment
   'South Dakota': 'SD',
   Tennessee: 'TN',
   Texas: 'TX',
   Utah: 'UT',
+  Vermont: 'VT',
   Virginia: 'VA',
   Washington: 'WA',
   'West Virginia': 'WV',

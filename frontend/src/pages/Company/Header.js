@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 
 // import FeaturedTag from '../../components/FeaturedTag';
@@ -244,6 +245,7 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
     </a>
   </>)
 }
+
 function isValidHttpUrl(string) {
   let url;
 

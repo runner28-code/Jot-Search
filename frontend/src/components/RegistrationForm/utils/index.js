@@ -59,6 +59,7 @@ export function renderHeader(addType) {
       </div>
     )
   }
+// Temp comment
 }
 
 export function inputValidation(formObj) {

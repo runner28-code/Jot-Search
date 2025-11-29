@@ -67,6 +67,7 @@ const job_filter_exclude_keys = [
   "cashier",
   "casino",
   "chef",
+  "chemical",
   "chemist",
   "child",
   "circulation",
@@ -494,3 +495,4 @@ export const JOB_FIELDS = [
   "publishedZip",
   "reasonClosed",
   "reportTo",
+  "reportToClientContact",

@@ -116,7 +116,6 @@ function renderLabel(name, label, required) {
 
 
 function renderChosen(dropdownType, currentChosen, handleClick) {
-// Temp comment
   if ( dropdownType !== 'tags' ) { 
     return null; 
   }
@@ -136,7 +135,6 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
             handleClick={handleTagClick}
             key={choice} />
         )
-      })}
     </div>
   )
 }

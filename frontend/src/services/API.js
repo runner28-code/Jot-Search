@@ -317,6 +317,7 @@ export async function getCategoryById(id) {
 }
 
 export async function getCategories(filterArr) {
+  const filters = filterArr ? filterArr : [];
   const { data } = await API.post(ROUTES.APIcategories, {
     'filters': filters,
     'count': 100
@@ -493,3 +494,18 @@ function filtersArrToObj(filtersArr) {
     filtersObj[filter.key] = filter.value;
   });
   return filtersObj;
+}
+
+function formatFilters(filters, translatedKeys = {}) {
+  const formattedFilters = { ...filters }
+
+  Object.keys(formattedFilters).forEach(key => {
+    if (formattedFilters[key] == null || formattedFilters[key] === '') {
+      delete formattedFilters[key];
+    } else if (translatedKeys[key]) {
+      formattedFilters[translatedKeys[key]] = formattedFilters[key];
+      delete formattedFilters[key];
+    }
+  });
+
+  return formattedFilters;

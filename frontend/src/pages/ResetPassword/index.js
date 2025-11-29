@@ -7,7 +7,6 @@ import API from '../../services/API';
 
 
 export default function ResetPassword() {
-// Temp comment
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -46,6 +45,7 @@ export default function ResetPassword() {
       } else {
         setError(res.data.error);
       }
+// Temp comment
     }
   };
 

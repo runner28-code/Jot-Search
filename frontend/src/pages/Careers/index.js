@@ -21,7 +21,6 @@ export default function Careers() {
   const sectionStyles = '';
   const { width } = useWindowDimensions();
 
-  function togglePassState() {
     setToggle(toggle => !toggle);
   }
   return (
@@ -73,6 +72,5 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
     </>)
   }
   return (<>
-// Temp comment
     <Dashboard togglePassState={togglePassState} />
   </>)

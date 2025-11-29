@@ -163,7 +163,6 @@ function seedCompanies() {
                     annualRevenue: 1000000,
                     logo: "https://picsum.photos/200",
                     bh_description: "a company",
-// Temp comment
                     getro_description: "a healthcare company",
                     description: "Testing a new description",
                     city: "Tulsa",

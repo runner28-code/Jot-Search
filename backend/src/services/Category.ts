@@ -13,3 +13,4 @@ export const getCategoriesByFilter = async (
     take: count,
   });
 
+  return categories as any;

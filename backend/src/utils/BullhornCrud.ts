@@ -93,6 +93,7 @@ export const saveBullhornJobs = async (jobs: any[]) => {
   const excludeFields = [
     "address",
     "location",
+    "_score",
     "publicDescription", //
     "clientCorporation",
     "dateAdded",
@@ -311,7 +312,6 @@ export const migrateJobInTPP = async (data: Job) => {
       );
       return;
     }
-    const keys: string[] = Object.keys(data);
     const values: any = keys.map((k) => `"""${(data as any)[k]}"""`);
     keys.unshift("id");
     values.unshift(`"""${id}"""`);

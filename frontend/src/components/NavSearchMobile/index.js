@@ -85,7 +85,6 @@ export default function NavSearchMobile({ placeholder }) {
     companies: companies || [],
     candidates: candidates || [],
     loading: isLoadingJobs || isLoadingCompanies || (userType === 'coordinator' && isLoadingCandidates),
-    total: totalJobs + totalCompanies + totalCandidates,
     forceHidden
   }
 
@@ -160,6 +159,7 @@ const defaultStylesObject = {
 }
 
 
+function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject, isOpen, setIsOpen}) {
   const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
   const offObject = {
     containerStyles: 'flex items-end ',

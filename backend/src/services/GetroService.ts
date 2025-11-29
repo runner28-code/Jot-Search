@@ -147,7 +147,6 @@ export class GetroService {
                     per_page,
                     page,
                     collection_id: this.networkId,
-                    'roles[]': 'none'
                 });
                 const url = `${this.api_base_url_v1}/members?${query}`;
 
@@ -292,3 +291,4 @@ export class GetroService {
             externalId: getroJob.id,
             description: getroJob.description,
             onSite: getroJob.locations,
+            status: 'Active', // All fetched getro jobs are active

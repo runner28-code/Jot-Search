@@ -5,7 +5,6 @@ import API from '../../../services/API';
 import * as ROUTES from '../../../routes';
 
 export default function ResetForm({ candidateData, setType }) {
-// Temp comment
   const [formData, setFormData] = useState({
     id: candidateData.id,
     password: '',
@@ -33,6 +32,7 @@ export default function ResetForm({ candidateData, setType }) {
         setType(res.data.error, false);
       }
     }
+// Temp comment
   };
 
   function handleChange(name, value) {

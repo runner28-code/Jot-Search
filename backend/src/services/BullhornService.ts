@@ -992,3 +992,5 @@ export class BullhornService {
             const whereQuery: any = [];
             skills.forEach((skill: any) => {
               whereQuery.push({
+                skills: {
+                  contains: skill.name,

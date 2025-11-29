@@ -308,6 +308,7 @@ export type Lead = {
     isAnonymized?: string;
     isDayLightSavingsTime?: string;
     isDeleted?: string;
+    lastName?: string;
     leadSource?: string;
     massMailOptOut?: string;
     middleName?: string;

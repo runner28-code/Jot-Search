@@ -26,6 +26,7 @@ export const createJob = async (job: Job) => {
     return {
       result: true,
       data: newJob,
+    };
   } catch (err) {
     console.error(err);
     return {
@@ -136,3 +137,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
 
 export const getJobsList = async (jobs_ids: string[]) => {
   try {
+    const jobs = await db.job.findMany({

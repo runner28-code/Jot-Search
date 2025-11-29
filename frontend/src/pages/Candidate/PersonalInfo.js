@@ -153,7 +153,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   name='email'
                   id='email'
                   placeholder='Email'
-// Temp comment
                   value={formData.email}
                   onChange={handleInputChange}
                   className={inputStyles}

@@ -72,7 +72,6 @@ function renderMessage(historyObj) {
         >
           {historyObj.careerName}
         </Link>
-        {messageSplit[1]}
       </p>
     )
   } else {

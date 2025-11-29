@@ -125,6 +125,7 @@ function Notification({title, content, text, email, company, id, add}) {
       <MailButton
         text={text}
         email={email}
+        company={company}
         id={id}
         add={add}
       />

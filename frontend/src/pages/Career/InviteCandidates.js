@@ -87,6 +87,7 @@ export default function InviteCandidates({ job }) {
         >
           <MailIcon className='inline-block mr-2' />
           Send Now
+        </button>
         <button
           onClick={() => setSelected([])}
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>
@@ -104,7 +105,6 @@ function itemRenderer({ option, onClick, disabled }) {
     >
       <div className="flex items-center space-x-4 pb-2 border-b-2 ">
         {avatarUrl ?
-          <img
             className='w-20 h-20'
             src={avatarUrl}
             alt='Candidate Avatar' />

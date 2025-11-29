@@ -750,3 +750,4 @@ model GetroMember {
   website_url              String?
   share_permission         Boolean?
   current_location         String?
+  email                    String?

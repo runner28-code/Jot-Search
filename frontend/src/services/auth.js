@@ -62,6 +62,7 @@ class AuthService {
   clearStorage() {
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
+    localStorage.removeItem('savedJobs');
     localStorage.removeItem('savedCompanies');
     localStorage.removeItem('savedCandidates');
   }
@@ -70,6 +71,7 @@ class AuthService {
     try {
       const { user_id } = this.getProfile();
       const [jobs = [], companies = []] = await Promise.all([getSavedJobs(user_id), getSavedCompanies(user_id)]);
+// Temp comment
       const jobIDs = jobs.map(job => job.id);
       const companyIDs = companies.map(company => company.id);
       localStorage.setItem('savedJobs', JSON.stringify(jobIDs));

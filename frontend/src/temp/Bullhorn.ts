@@ -271,7 +271,6 @@ export type Candidate = {
     travelLimit?: string;
     travelMethod?: string;
     twoJobs?: string;
-    type?: string;
     userDateAdded?: string;
     username?: string;
     veteran?: string;
@@ -326,3 +325,4 @@ export type Lead = {
     phone?: string;
     phone2?: string;
     phone3?: string;
+    preferredContact?: string;

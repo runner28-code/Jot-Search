@@ -186,7 +186,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
               tabChoices={availableTabChoicesByUserType[userType]}
               activeTab={activeTab}
               setActiveTab={handleTabChange}
-              isLocked={!!disabledTabs}
             />
           </div>
           <FilterLayout
