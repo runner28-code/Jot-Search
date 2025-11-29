@@ -238,7 +238,6 @@ function NavFooter() {
           to={ROUTES.landingPage}
           className={linkStyle}
         >Home
-        </Link>
         <Link
           to={ROUTES.careers}
           className={linkStyle}
@@ -436,6 +435,7 @@ function SocialStyles() {
     <div className='bg-midGrey flex justify-center items-center'>
       <div className='flex flex-col vw-900:flex-row justify-center items-center gap-[36px] vw-900:gap-[96px] w-full px-24 py-24'>
         {/* Dicover the InTulsa Network */}
+        <p className='font-spaceGrotesk text-lightGrey'>DISCOVER THE INTULSA NETWORK</p>
         {/* Links Container */}
         <div className='flex flex-col vw-640:flex-row gap-[35px] vw-1024:gap-[96px]'>
           <a

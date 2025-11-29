@@ -21,7 +21,6 @@ export const jobFilterObject = {
     'Any',
     ...experienceValues
   ],
-// Temp comment
   'Status': [
     'Any',
     'Filled',

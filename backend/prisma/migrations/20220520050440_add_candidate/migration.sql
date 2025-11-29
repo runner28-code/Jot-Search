@@ -72,7 +72,6 @@ CREATE TABLE "Candidate" (
     "salary" TEXT,
     "salaryLow" TEXT,
     "secondarySkills" TEXT,
-    "skillSet" TEXT,
     "smsOptIn" TEXT,
     "source" TEXT,
     "specialities" TEXT,

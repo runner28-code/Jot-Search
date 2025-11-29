@@ -40,6 +40,7 @@ import { sendCandidatesToEmployers } from "../services/EmailService";
 import { getCandidatesList } from "../services/Candidate";
 import { normalizeFilters } from "./JobController";
 
+@JsonController("/api/company")
 export class CompanyController {
   @Get("/search")
   async searchJobByID(

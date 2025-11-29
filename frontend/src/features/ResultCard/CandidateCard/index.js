@@ -5,6 +5,7 @@ import FavoriteButton from '../FavoriteButton';
 import eyeCon from '../../../assets/icons/eye-con.svg'; // Get it? eyeCon instead of icon? It's funny.
 import linkedinIcon from '../../../assets/icons/linkedin-circle.svg';
 import locationIcon from '../../../assets/icons/placepin.svg';
+// Temp comment
 import experienceIcon from '../../../assets/icons/star-banner.svg';
 import {
   buildCandidateAddress,

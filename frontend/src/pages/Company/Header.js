@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 
 // import FeaturedTag from '../../components/FeaturedTag';
@@ -67,7 +66,6 @@ function HeaderContent({ companyData }) {
             <img
               src={LinkedIn}
               className={headerIconStyles}
-            />
             { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>

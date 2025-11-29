@@ -144,7 +144,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
 
     return { result: true };
   } catch (error: any) {
-    console.log(error.message);
     return { result: false, error };
   }
 };
@@ -312,6 +311,7 @@ export const migrateJobInTPP = async (data: Job) => {
       );
       return;
     }
+    const keys: string[] = Object.keys(data);
     const values: any = keys.map((k) => `"""${(data as any)[k]}"""`);
     keys.unshift("id");
     values.unshift(`"""${id}"""`);

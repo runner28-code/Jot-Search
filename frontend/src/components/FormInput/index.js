@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import TextInput from './TextInput';
 import FileInput from './FileInput';
 import AccessibleDropdown from '../AccessibleDropdown';

@@ -97,6 +97,7 @@ function DesktopCard({ dataObj, active }) {
         {/* Title */}
         <div className='flex'>
           <h6 className='text-xl font-spaceGrotesk font-semibold text-charcoal leading-none'>{data.title}</h6>
+          { renderFeaturedIcon(dataObj?.data?.featured) }
         </div>
         {/* Expertise */}
         <p className='text-md text-royalBlue font-spaceGrotesk font-semibold mt-6'>{categoryString}</p>
@@ -120,6 +121,7 @@ function DesktopCard({ dataObj, active }) {
             <img
               src={postingAgeIcon}
               className='h-11 mr-5' />
+// Temp comment
             <p className='text-textBlack'>Posted {postingAge}</p>
           </div>
         </div>

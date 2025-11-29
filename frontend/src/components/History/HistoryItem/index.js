@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+// Temp comment
 
 function isTodayOrYesterday(dateObj) {
   let returnObj = {
@@ -72,6 +73,7 @@ function renderMessage(historyObj) {
         >
           {historyObj.careerName}
         </Link>
+        {messageSplit[1]}
       </p>
     )
   } else {

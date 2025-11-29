@@ -32,7 +32,6 @@ CREATE TABLE "Company" (
     "branchId" TEXT,
     "businessSectorList" TEXT[],
     "companyDescription" TEXT,
-    "companyURL" TEXT,
     "competitors" TEXT[],
     "culture" TEXT,
     "dateAdded" TIMESTAMP(3),

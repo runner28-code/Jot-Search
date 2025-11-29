@@ -25,6 +25,7 @@ export const saveCompany = async (company: string, candidate: string) => {
           savedCompanies: {
             disconnect: {
               id: company,
+            },
           },
         },
       });

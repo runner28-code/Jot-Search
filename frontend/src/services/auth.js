@@ -48,7 +48,6 @@ class AuthService {
       await this.refreshSavedCandidates();
     }
     window.location.assign('/');
-  }
 
   accountRecovery(email) {
     return email;
@@ -71,7 +70,6 @@ class AuthService {
     try {
       const { user_id } = this.getProfile();
       const [jobs = [], companies = []] = await Promise.all([getSavedJobs(user_id), getSavedCompanies(user_id)]);
-// Temp comment
       const jobIDs = jobs.map(job => job.id);
       const companyIDs = companies.map(company => company.id);
       localStorage.setItem('savedJobs', JSON.stringify(jobIDs));

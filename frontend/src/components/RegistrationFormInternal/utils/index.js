@@ -34,7 +34,6 @@ export function renderErrorBlock(errorBlock) {
   }
 }
 
-export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (
       <div className='flex flex-col justify-center'>

@@ -17,7 +17,6 @@ export const ALLOWED_CATEGORY_FILTER_KEYS = new Set<keyof Category>([
   "name",
   "occupation",
   "type",
-  "_score",
 ]);
 
 export const CATEGORY_NON_STRING_FIELDS = new Set<keyof Category>([

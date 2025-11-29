@@ -35,6 +35,7 @@ export default function DetailsHeader({ type, source }) {
       </h1>
     </div>
     <BackButton />
+  </>)
 }
 
 DetailsHeader.propTypes = {
@@ -43,7 +44,6 @@ DetailsHeader.propTypes = {
 }
 
 function renderSourceIdentifier(source) {
-  if( source === 'bullhorn' ) {
     return(
       <SourceIdentifier type={source} />
     )

@@ -99,6 +99,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   useEffect(() => {
     const newState = { ...initialFilterState, ...state };
+// Temp comment
     if (state) {
       newState.title = state.title || '';
       newState.Expertise = state.Expertise || 'Any';
@@ -186,6 +187,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
               tabChoices={availableTabChoicesByUserType[userType]}
               activeTab={activeTab}
               setActiveTab={handleTabChange}
+              isLocked={!!disabledTabs}
             />
           </div>
           <FilterLayout

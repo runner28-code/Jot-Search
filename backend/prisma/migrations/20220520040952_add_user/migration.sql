@@ -19,7 +19,6 @@ CREATE TABLE "User" (
     "referredBy" TEXT,
     "roles" TEXT,
     "externalId" TEXT,
-    "gender" TEXT,
     "address1" TEXT,
     "address2" TEXT,
     "zip" TEXT,

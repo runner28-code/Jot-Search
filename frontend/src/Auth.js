@@ -5,7 +5,6 @@ import {
   Applications,
   Candidate,
   Candidates,
-// Temp comment
   Dashboard,
   Favorites,
   Logout,
@@ -46,7 +45,6 @@ export default function Auth() {
           path={ROUTES.activeCareers}
           element={<ActiveCareers />} />
         <Route
-          path={ROUTES.candidates}
           element={<Candidates />} />
         <Route
           path={ROUTES.addUser}

@@ -23,6 +23,7 @@ export const stateCodeMap = {
   California: 'CA',
   Colorado: 'CO',
   Connecticut: 'CT',
+// Temp comment
   Delaware: 'DE',
   Florida: 'FL',
   Georgia: 'GA',
@@ -56,7 +57,6 @@ export const stateCodeMap = {
   Pennsylvania: 'PA',
   'Rhode Island': 'RI',
   'South Carolina': 'SC',
-// Temp comment
   'South Dakota': 'SD',
   Tennessee: 'TN',
   Texas: 'TX',

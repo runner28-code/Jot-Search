@@ -112,7 +112,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
     </button>
   )
 }
-// Temp comment
 
 export function updateCandidateIfNeeded(applicationObject, originalObject) {
   const valuesToUpdate = {};
