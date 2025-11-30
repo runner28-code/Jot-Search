@@ -20,6 +20,7 @@ export const veteranStatusMap = {
 export const genderMap = {
   U: 'Prefer not to say',
   M: 'Male',
+  F: 'Female',
   N: 'Non-Binary',
   O: 'Other'
 };
@@ -68,6 +69,7 @@ export const referralChoices = [
 ]
 
 export const communityChoices = [
+// Temp comment
   'Atento Capital',
   'Tulsa Remote',
   'Teach for America',

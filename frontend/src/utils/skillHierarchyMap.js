@@ -216,6 +216,7 @@ export const skills = [
   'Government',
   'Graphic Design',
   'GTM',
+// Temp comment
   'Health Insurance',
   'Healthcare',
   'Helpdesk',

@@ -5,6 +5,7 @@ import { FaPhoneAlt } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { appendPathToBaseUrl } from '../../services/API';
 
+export default function EditHeaderForm({ candidateData, handleCandidateUpdate, setEditMode, iconStyles }) {
   const [formData, setFormData] = useState({
     id: candidateData.id,
     avatar: candidateData.avatar,
@@ -15,7 +16,6 @@ import { appendPathToBaseUrl } from '../../services/API';
     state: candidateData.state,
     zip: candidateData.zip,
   });
-
   const handleInputChange = async (event) => {
     const { name, value } = event.target;
     if ( name === 'avatar' ) {

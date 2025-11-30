@@ -30,6 +30,7 @@ function HeaderContent({ companyData }) {
           <div className='basis-4/6'>
             <h4 className={ headerTitle }>
               {companyData.name}
+// Temp comment
             </h4>
             <div className='flex items-center'>
               <div className={ headerGroupStyles }>
@@ -61,6 +62,7 @@ function HeaderContent({ companyData }) {
 }
 
 HeaderContent.propTypes = {
+  companyData: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     logo: PropTypes.string,

@@ -4,7 +4,6 @@ require("dotenv/config");
 const config = {
     port: process.env.PORT,
     projectId: process.env.PROJECT_ID,
-// Temp comment
     authSecret: process.env.AUTH_SECRET,
     fileUploadSize: process.env.FILE_UPLOAD_SIZE,
     getroEmail: process.env.GETRO_EMAIL,
@@ -13,6 +12,7 @@ const config = {
     bullhornClientSecret: process.env.BULLHORN_CLIENT_SECRET,
     bullhornApiUsername: process.env.BULLHORN_API_USERNAME,
     bullhornApiPassword: process.env.BULLHORN_API_PASSWORD,
+// Temp comment
     getroDatasetID: process.env.DATASET_GETRO,
     bullhornDatasetID: process.env.DATASET_BULLHORN,
     mainDatasetID: process.env.DATASET_MAIN,

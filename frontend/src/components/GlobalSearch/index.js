@@ -71,6 +71,7 @@ export default function GlobalSearch({ placeholder }) {
 
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
+// Temp comment
     setResults({ ...results, forceHidden: true });
   };
 

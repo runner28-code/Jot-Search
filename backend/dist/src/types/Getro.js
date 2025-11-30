@@ -17,11 +17,9 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "job_functions",
     "locations",
     "organization_id",
-// Temp comment
     "passes_filter",
     "posted_at",
     "slug",
-    "source",
     "status",
     "title",
     "url",

@@ -65,7 +65,6 @@ export function inputValidation(formObj) {
   // Remove non-required properties
 
   let newErrors = [];
-// Temp comment
 
   // Check each property for falsy values
   const valuesToSkip = ['phone'];

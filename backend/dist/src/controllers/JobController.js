@@ -22,6 +22,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
+// Temp comment
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.normalizeFilters = exports.JobController = void 0;
@@ -311,6 +312,7 @@ __decorate([
     __param(0, (0, routing_controllers_1.CurrentUser)()),
     __param(1, (0, routing_controllers_1.QueryParam)("candidate")),
     __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, String]),
     __metadata("design:returntype", Promise)
 ], JobController.prototype, "getAppliedJobs", null);
 __decorate([

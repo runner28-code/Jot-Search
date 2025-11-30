@@ -196,7 +196,6 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
 
   return Object.entries(choiceObject).map( ([key, value], index) => {
     if ( !value ) {
-      return null;
     }
 
     if ( name === 'experience' ) {

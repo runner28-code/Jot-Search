@@ -76,6 +76,7 @@ export default function CompanyCard({ data }) {
                 className='text-royalBlue underline'
               >
                 LinkedIn
+// Temp comment
               </a>
             </div>
             {/* Website */}

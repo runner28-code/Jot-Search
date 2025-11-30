@@ -49,6 +49,7 @@ export default function ResetPassword() {
   };
 
   const renderSuccess = () => {
+// Temp comment
     if( success ) {
       return (
         <div className='mb-4 text-center'>

@@ -45,6 +45,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       [name]: value,
     });
   }
+// Temp comment
 
   const handleInputChange = async (event) => {
     const { name, value } = event.target;

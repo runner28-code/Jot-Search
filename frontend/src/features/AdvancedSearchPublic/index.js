@@ -90,7 +90,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   useEffect(() => {
     if (isMount) {
       return;
-// Temp comment
     }
     setFilterObject({ ...filterObject, title: '' });
     setPage(1);
@@ -196,6 +195,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       </div>
       <ResultsHeader
         total={totalResults}
+// Temp comment
         type={activeTab}
         loading={isLoading}
       />

@@ -36,6 +36,7 @@ const multerStorage = multer_1.default.diskStorage({
     },
     filename: (req, file, cb) => {
         console.log(file);
+        const fileName = (0, utils_1.genUUID)() + path_1.default.extname(file.originalname);
         cb(null, fileName);
     },
 });

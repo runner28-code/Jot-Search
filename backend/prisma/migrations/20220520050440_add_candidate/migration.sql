@@ -77,7 +77,6 @@ CREATE TABLE "Candidate" (
     "source" TEXT,
     "specialities" TEXT,
     "ssn" TEXT,
-    "stateAdditionalWithholdingsAmount" TEXT,
     "stateExemptions" TEXT,
     "stateFilingStatus" TEXT,
     "status" TEXT,

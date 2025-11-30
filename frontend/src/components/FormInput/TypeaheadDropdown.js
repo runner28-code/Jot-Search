@@ -69,7 +69,6 @@ export default function TypeaheadDropdown(props) {
         name={name}
         id={name}
         placeholder={placeholder}
-        value={inputValue}
         className={baseStyles + inputHeight + 'mb-0'}
         onClick={handleListClick}
         onChange={handleInputChange}
@@ -103,7 +102,6 @@ function renderLabel(name, label, required) {
   if( required ) {
     label += ' *';
   }
-// Temp comment
 
   return (
     <label

@@ -60,6 +60,7 @@ CareerCard.propTypes = {
     id: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,
+// Temp comment
     company_logo: PropTypes.string,
     role: PropTypes.string,
     title: PropTypes.string,
@@ -196,6 +197,7 @@ function MobileCard({ dataObj, active }) {
         {/* Title */}
         <h6 className='text-[1.7rem] font-spaceGrotesk font-semibold text-charcoal leading-none mt-2'>{data.title}</h6>
         {/* First row icons */}
+        <div className='w-full flex items-center'>
           <p className='text-[1.5rem] text-royalBlue font-spaceGrotesk font-semibold mt-2'>{categoryString}</p>
         </div>
       </div>

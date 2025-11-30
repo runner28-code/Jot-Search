@@ -53,7 +53,6 @@ function formatDateString(date) {
   const dateObj = new Date(date);
 
   // Check if date is today or yesterday
-// Temp comment
   const { isToday, isYesterday } = isTodayOrYesterday(dateObj);
   
   // Format date
@@ -77,5 +76,4 @@ function renderMessage(historyObj) {
       </p>
     )
   } else {
-    return <p className='text-xl'>{ historyObj.message }</p>;
   }
