@@ -72,3 +72,4 @@ CREATE TABLE "GetroMember" (
 
     CONSTRAINT "GetroMember_pkey" PRIMARY KEY ("id")
 );
+

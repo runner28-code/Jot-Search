@@ -751,3 +751,5 @@ model GetroMember {
   share_permission         Boolean?
   current_location         String?
   email                    String?
+  employment_types         String?
+  opportunity_types        String[]

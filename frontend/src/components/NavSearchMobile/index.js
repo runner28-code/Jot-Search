@@ -151,7 +151,6 @@ function renderResults( results ) {
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
   </>)
-// Temp comment
 }
 
 const defaultStylesObject = {
@@ -164,6 +163,7 @@ const defaultStylesObject = {
 function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject, isOpen, setIsOpen}) {
   const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
   const offObject = {
+// Temp comment
     containerStyles: 'flex items-end ',
     searchIconStyles: 'fill-neutral-400',
     inputStyles: 'hidden '

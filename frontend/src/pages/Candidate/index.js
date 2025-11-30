@@ -101,7 +101,6 @@ export default function Candidate() {
           data={candidateData}
           disableLink
         />
-      }
       {/* My Preferences (Candidate Only) */}
       {isProfilePage &&
         <div className='px-4'>
@@ -110,6 +109,7 @@ export default function Candidate() {
             <PreferenceItem
               toggled={!!candidateData.activelyLooking}
               fieldName='activelyLooking'
+              label={PREFERENCE_ITEMS.activelyLooking}
               onUpdate={handleCandidateUpdate} />
             <PreferenceItem
               toggled={!!candidateData.willRelocate}

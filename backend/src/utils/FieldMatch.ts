@@ -75,3 +75,4 @@ export const USER_FILTER: any = {
   experience: "experience",
   employmentPreference: "employmentPreference",
   educationDegree: "educationDegree",
+  certifications: "certifications",

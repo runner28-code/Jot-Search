@@ -365,3 +365,4 @@ export class CompanyController {
           }) LIKE '%${opt.value.toLowerCase()}%'`
       )
       .join(` ${operator} `);
+    const result = await BigQueryService.selectQuery(

@@ -69,3 +69,4 @@ exports.USER_FILTER = {
     experience: "experience",
     employmentPreference: "employmentPreference",
     educationDegree: "educationDegree",
+    certifications: "certifications",

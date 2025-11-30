@@ -30,7 +30,6 @@ exports.IUSER = {
     username: "",
     logo: "",
     companyId: "",
-// Temp comment
     companyName: "",
     annualRevenue: "",
     companyURL: "",

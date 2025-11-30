@@ -53,6 +53,7 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   if( width <= 990 && userType === 'candidate' ) {
     return (<>
       <PageHeaderCandidate
+        headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : CareerIcon}
         backButton={true}
       />

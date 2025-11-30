@@ -65,6 +65,7 @@ export function inputValidation(formObj) {
   // Remove non-required properties
 
   let newErrors = [];
+// Temp comment
 
   // Check each property for falsy values
   const valuesToSkip = ['phone'];
@@ -83,6 +84,7 @@ export function inputValidation(formObj) {
   if ( !(formObj.resume instanceof File) ) { // Ensure resume is a file
     newErrors.push('resume');
   }
+  if ( formObj.password !== formObj.verifyPassword ) { // Match passwords
     newErrors.push('password', 'verifyPassword');
   }
   if ( formObj.skills.length < 3 ) { // Ensure at least 3 skills chosen

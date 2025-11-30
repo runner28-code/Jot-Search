@@ -20,6 +20,7 @@ const constant_1 = require("../utils/constant");
 const utils_1 = require("../utils");
 const config_1 = __importDefault(require("../config"));
 const db_1 = __importDefault(require("../utils/db"));
+const password_1 = require("../utils/password");
 const EmailService_1 = require("./EmailService");
 const jwtUtils_1 = require("../utils/jwtUtils");
 const isNullOrEmpty = (value) => {

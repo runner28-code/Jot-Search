@@ -129,7 +129,6 @@ export default function Footer() {
       </a>
     </div>
     <div
-// Temp comment
       id='footer'
       className='flex flex-col'
     >
@@ -426,7 +425,6 @@ function Address() {
       href={ROUTES.gMapsIntulsa}
       className={addressLinkStyle}
     >
-      <p>36 E Cameron St, Tulsa,</p>
       <p>OK, 74103, USA</p>
     </a>
   </>)

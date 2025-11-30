@@ -327,3 +327,5 @@ export type Lead = {
     phone2?: string;
     phone3?: string;
     preferredContact?: string;
+    primarySkills?: string;
+    priority?: string;

@@ -92,7 +92,6 @@ export default function DesktopLayout(props) {
           </div>
           {(role === 'candidate' || role === 'guest') && (
             <ApplyButton
-// Temp comment
               datasource={careerData.datasource}
               careerId={careerData.id}
               applicationUrl={careerData.application_path || careerData.url}

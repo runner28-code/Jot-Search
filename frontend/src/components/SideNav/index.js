@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
+// Temp comment
   candidateChoices,
   companyChoices,
   coordinatorChoices,
@@ -57,7 +58,6 @@ function renderChoice(choice, selected, index, choicesLength) {
   const Icon = choice.icon;
   return (
     <Link
-// Temp comment
       to={choice.link}
       className={choiceStyles}
       key={choice.label}

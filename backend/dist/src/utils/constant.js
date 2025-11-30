@@ -261,7 +261,6 @@ const job_filter_exclude_keys = [
     "nail tech",
     "neighborhood",
     "newspaper",
-    "nurse",
     "nursing",
     "nutrition",
     "occupancy",
@@ -352,7 +351,6 @@ const job_filter_exclude_keys = [
     "scheduling",
     "school",
     "secretary",
-// Temp comment
     "security",
     "server",
     "service leader",
@@ -495,3 +493,4 @@ exports.JOB_FIELDS = [
     "reasonClosed",
     "reportTo",
     "reportToClientContact",
+    "salary",

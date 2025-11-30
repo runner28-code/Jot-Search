@@ -401,3 +401,4 @@ export const skills = [
   'Vue',
   'Waterfall',
   'Web Design',
+  'Web Development',

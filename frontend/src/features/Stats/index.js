@@ -129,7 +129,6 @@ StatCard.propTypes = {
 }
 
 function renderDeviation(deviationPercentage) {
-  return (
     <div className='flex items-center '>
       {renderStyledDeviation(deviationPercentage)}
     </div>

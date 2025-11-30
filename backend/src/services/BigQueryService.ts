@@ -35,6 +35,7 @@ export class BigQueryService {
             const options = {
                 query: query,
                 location: 'US',
+            };
             consoleLog(`BIGQUERY: SELECT QUERY = ${query}`);
             const [job] = await BigQueryService.getClient().createQueryJob(options);
             const [res] = await job.getQueryResults();
@@ -47,7 +48,6 @@ export class BigQueryService {
         return null;
     }
 
-    public static async insertQuery(dataset: string, table: string, data: any) {
         try {
             consoleLog(`BIGQUERY: INSERT QUERY = ${JSON.stringify(data)}`);
             const keys = Object.keys(data)
@@ -72,3 +72,4 @@ export class BigQueryService {
         } catch (error) {
             console.log(error);
             return { result: false, message: error };
+        }

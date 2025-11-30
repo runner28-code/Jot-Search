@@ -223,6 +223,7 @@ export const mockCompanyStats = {
     }
   }
 }
+
 export const mockCoordinatorStats = {
   'New Companies': {
     'Today': {
@@ -297,7 +298,6 @@ export const mockCoordinatorStats = {
     },
     'Last 7 Days': {
       count: 243,
-      prevCount: 234
     },
     'Last 14 Days': {
       count: 543,
@@ -327,3 +327,4 @@ export const mockCoordinatorStats = {
     },
     'Last 30 Days': {
       count: 21,
+      prevCount: 34

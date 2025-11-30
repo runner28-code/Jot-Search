@@ -195,7 +195,6 @@ module.exports = {
         '332': '83rem',
         '400': '100rem',
       },
-// Temp comment
     },
     fontSize: {
       xxs: '0.9rem',
@@ -265,3 +264,4 @@ module.exports = {
         },
         '.scrollbar-minimal': {
           'scrollbar-track': 'border-radius: 10px',
+          'scrollbar-thumb': 'border-radius: 10px',

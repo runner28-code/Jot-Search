@@ -57,6 +57,7 @@ export default function Dropdown(props) {
     baseStyles, 
     marginBottom,
     choices, 
+    currentChosen, 
     inputHeight,
     name, 
     onChange, 
@@ -70,7 +71,6 @@ export default function Dropdown(props) {
 
   const handleClick = (choice) => {
     if ( type === MULTI_SELECT ) {
-      if (currentChosen.includes(choice)) {
         onChange(name, currentChosen.filter(item => item !== choice));
       } else {
         onChange(name, [...currentChosen, choice]);

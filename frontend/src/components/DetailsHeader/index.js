@@ -45,12 +45,12 @@ DetailsHeader.propTypes = {
 
 function renderSourceIdentifier(source) {
   if( source === 'bullhorn' ) {
-    return(
       <SourceIdentifier type={source} />
     )
   }
   if( source === 'getro' ) {
     return (
       <SourceIdentifier />
+    )
   }
   return null;

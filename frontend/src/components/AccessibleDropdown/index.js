@@ -112,7 +112,6 @@ function buttonText(name, placeholder, currentChosen) {
     if ( isNaN(currentChosen) ) {
       return currentChosen + 'years';
     }
-// Temp comment
     const experience = isNaN(currentChosen) ? currentChosen : experienceMap[currentChosen];
     return experience ? experience + ' years' : placeholder;
   }

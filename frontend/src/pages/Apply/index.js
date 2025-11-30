@@ -138,7 +138,6 @@ export default function Apply() {
       // Check if any values have changed, update user with new values if so
       updateCandidateIfNeeded(formattedObject, originalObject);
     }
-// Temp comment
 
     const response = await applyToJob(jobId, formattedObject.id);
     return response

@@ -4,6 +4,7 @@ require("dotenv/config");
 const config = {
     port: process.env.PORT,
     projectId: process.env.PROJECT_ID,
+// Temp comment
     authSecret: process.env.AUTH_SECRET,
     fileUploadSize: process.env.FILE_UPLOAD_SIZE,
     getroEmail: process.env.GETRO_EMAIL,
@@ -17,6 +18,7 @@ const config = {
     mainDatasetID: process.env.DATASET_MAIN,
     sendgridKey: process.env.SENDGRID_KEY,
     sendgridSecret: process.env.SENDGRID_SECRET,
+    mailSenderEmail: process.env.MAIL_SENDER_EMAIL,
     frontendUrl: process.env.FRONTEND_URL,
     enableCronJobs: process.env.ENABLE_CRON_JOBS,
 };

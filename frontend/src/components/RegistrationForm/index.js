@@ -122,6 +122,7 @@ export default function RegistrationForm(loggedIn) {
 
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
+// Temp comment
       setTimeout(() => {
         setFormObj(defaultState);
         setSubmissionObject({
@@ -145,7 +146,6 @@ export default function RegistrationForm(loggedIn) {
       willRelocate: relocate,
       linkedin: linkedin.value,
       password: password.value,
-// Temp comment
       verifyPassword: verifyPassword.value,
     });
     setSubmissionObject({ // Setting loading to true triggers register API call in useEffect

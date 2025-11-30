@@ -45,7 +45,6 @@ export type FilterOption = {
 };
 
 export type AdvancedFilterOption = {
-  key: string;
   value: string | string[];
   operator?: Operator;
 };
@@ -141,3 +140,4 @@ export type UpdateComapnyProfileResponse = {
 export type CategorySearchByFilterResponse = {
   categories?: Category[];
 } & CountFilterResponse;
+

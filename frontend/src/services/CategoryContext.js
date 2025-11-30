@@ -4,7 +4,6 @@ import { getCategories } from './API';
 
 export const CategoryContext = createContext();
 
-// Temp comment
 const CategoryProvider = ({children}) => {
   const [categories, setCategories] = useState([]);
 
@@ -13,7 +12,6 @@ const CategoryProvider = ({children}) => {
     // Sometimes need to access categories outside of components, saving in local storage to provide that functionality
     localStorage.setItem('categories', JSON.stringify(categoriesFromAPI));
     setCategories(categoriesFromAPI);
-  }, [])
   
   return (
     <CategoryContext.Provider value={{ categories }}>

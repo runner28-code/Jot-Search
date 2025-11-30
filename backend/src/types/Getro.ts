@@ -103,3 +103,4 @@ export type User = {
   remote_work?: string;
   require_sponsorship_visa?: string;
   seniority?: string;
+  employment_type?: string;

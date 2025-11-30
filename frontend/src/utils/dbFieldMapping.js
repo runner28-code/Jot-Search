@@ -20,7 +20,6 @@ export const veteranStatusMap = {
 export const genderMap = {
   U: 'Prefer not to say',
   M: 'Male',
-  F: 'Female',
   N: 'Non-Binary',
   O: 'Other'
 };
@@ -59,6 +58,7 @@ export const educationChoices = [
 
 export const referralChoices = [
   'Web Search',
+  'Social Media',
   'Career Fair',
   'Event',
   'Media and Advertising',
@@ -75,3 +75,4 @@ export const communityChoices = [
   'Tulsa Tomorrow',
   'Holberton',
   'Campus Tulsa',
+  'Tulsa Service Year',

@@ -496,3 +496,4 @@ export const JOB_FIELDS = [
   "reasonClosed",
   "reportTo",
   "reportToClientContact",
+  "salary",

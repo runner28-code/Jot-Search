@@ -29,7 +29,6 @@ export default function AssistanceCard() {
         target='_blank'
         rel='noopener noreferrer'
       >
-// Temp comment
         Make a request
       </a>
     </div>

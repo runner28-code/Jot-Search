@@ -280,6 +280,7 @@ __decorate([
     __metadata("design:paramtypes", [String, String]),
     __metadata("design:returntype", Promise)
 ], JobController.prototype, "apply", null);
+__decorate([
     (0, routing_controllers_1.Authorized)(),
     (0, routing_controllers_1.Get)("/candidates"),
     __param(0, (0, routing_controllers_1.QueryParam)("job")),
@@ -310,7 +311,6 @@ __decorate([
     __param(0, (0, routing_controllers_1.CurrentUser)()),
     __param(1, (0, routing_controllers_1.QueryParam)("candidate")),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, String]),
     __metadata("design:returntype", Promise)
 ], JobController.prototype, "getAppliedJobs", null);
 __decorate([

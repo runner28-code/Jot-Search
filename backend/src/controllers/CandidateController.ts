@@ -418,3 +418,4 @@ export class CandidateController {
         await db.candidateJobInvites.createMany({
           data: candidateJobInvites
         })
+      }

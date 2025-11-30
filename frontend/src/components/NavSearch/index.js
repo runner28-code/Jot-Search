@@ -39,7 +39,6 @@ export default function NavSearch({ placeholder }) {
       }
       delete modifiedFilterObject.title;
 
-      const searchFilters = buildSearchFilters(modifiedFilterObject);
       return { filtersArr: searchFilters };
     }
     else if (tab === 'jobs') {
@@ -150,7 +149,6 @@ function renderResults( results ) {
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
   </>)
-// Temp comment
 }
 
 const defaultStylesObject = {

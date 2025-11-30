@@ -5,6 +5,7 @@ import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { BsBuilding } from 'react-icons/bs';
 
 const ITEMS_PER_PAGE = 6;
+// Temp comment
 
 export default function FeaturedCompaniesMobile() {
 
@@ -43,7 +44,6 @@ export default function FeaturedCompaniesMobile() {
           Browse All
         </Link>
       </div>
-// Temp comment
     </div>
   )
 }
