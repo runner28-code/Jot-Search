@@ -129,6 +129,7 @@ export default function Footer() {
       </a>
     </div>
     <div
+// Temp comment
       id='footer'
       className='flex flex-col'
     >
@@ -452,7 +453,6 @@ function SocialStyles() {
           </a>
           <a
             href='https://talent.intulsa.com/'
-// Temp comment
             target='_blank'
             rel='noopener noreferrer'
           >

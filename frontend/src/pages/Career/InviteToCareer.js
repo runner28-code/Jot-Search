@@ -16,7 +16,6 @@ export default function InviteToCareer({ candidate }) {
   const { jobs, isLoading } = useGetJobs({ filtersArr: buildSearchFilters({...defaultJobFilterState}), 
     count: 10000
   });
-
   const { sendJobsToCandidates, isLoading: isSendingJob, isSuccess: successfullySentJob } = useSendJobsToCandidates()
 
   const jobOptions = jobs?.map(job => {
@@ -24,6 +23,7 @@ export default function InviteToCareer({ candidate }) {
       label: job.title,
       value: job.id,
       job
+    }
   }) || [];
   
   const [ selected, setSelected ] = useState([]);

@@ -17,7 +17,6 @@ import { sendEmail } from "./EmailService";
 import { JOB_FIELDS } from "../utils/constant";
 
 export class BullhornService {
-  public static client: BullhornService | null = null;
   private auth_code = null;
   private access_token = null;
   private refresh_token = null;
@@ -66,6 +65,7 @@ export class BullhornService {
     const targetFile = __dirname + "/../config/cookie.json";
     return new Promise((resolve) => {
       fs.readFile(targetFile, async function (err, data) {
+        if (err) {
           return resolve(null);
         }
         let cookies = JSON.parse(data.toString());

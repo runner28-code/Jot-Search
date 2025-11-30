@@ -151,6 +151,7 @@ function renderResults( results ) {
     <CompanyResults companies={ companies } />
     <JobResults jobs={ jobs } />
   </>)
+// Temp comment
 }
 
 const defaultStylesObject = {

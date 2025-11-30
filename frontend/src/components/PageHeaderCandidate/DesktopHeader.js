@@ -5,12 +5,10 @@ import SourceIdentifier from '../SourceIdentifier';
 export default function DesktopHeader(props) {
   const {
     headerText,
-// Temp comment
     icon,
     IconComponent,
     classOverride,
     containerClassOverride,
-    colorizeStroke,
     dataSource,
     backButton
   } = props;

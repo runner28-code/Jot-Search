@@ -119,6 +119,7 @@ export const getSavedJobs = async (candidateId: string) => {
       result: true,
     };
   } catch (error) {
+    console.log(error);
     return { message: error, result: false };
   }
 };

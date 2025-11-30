@@ -59,7 +59,6 @@ export const educationChoices = [
 
 export const referralChoices = [
   'Web Search',
-  'Social Media',
   'Career Fair',
   'Event',
   'Media and Advertising',

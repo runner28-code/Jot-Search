@@ -1,5 +1,4 @@
 {
-    "family": "dev-site-frontend-task",
     "executionRoleArn": "arn:aws:iam::484913924231:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "containerDefinitions": [
@@ -30,6 +29,7 @@
                     "value": "true"
                 }
             ]
+        }
     ],
     "cpu": "1024",
     "memory": "2048"

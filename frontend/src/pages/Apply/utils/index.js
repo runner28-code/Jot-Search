@@ -21,7 +21,6 @@ export const defaultCareerState = {
   company: {
     name: '',
     logo: '',
-  },
   loading: true,
 }
 

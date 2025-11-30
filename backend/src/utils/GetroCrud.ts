@@ -70,6 +70,7 @@ export const saveMembers = async (members: any[]) => {
 								});
                 console.log(`Saved Getro Member with ID = ${member.id} successfully`);
             } catch (error) {
+                console.log(error);
                 console.log(`ERROR: while saving Member with ID = ${member.id}`);
             }
         };

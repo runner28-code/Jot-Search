@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import inTulsaLogoText from '../../assets/images/intulsa-talent-careers.svg';
 import linkedin_grey from '../../assets/images/social_linkedin_grey.svg';
 import GlobalSearch from '../GlobalSearch';
-// Temp comment
 import NavMenu from '../NavMenu';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import AuthService from '../../services/auth';
@@ -26,6 +25,7 @@ function MobileNavBarLayout() {
   return (
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50'>
       <div className='h-30 pl-4 pr-4 flex justify-between items-center relative'>
+// Temp comment
         <Link to={ROUTES.root}>
           <img
             src={inTulsaLogoText}

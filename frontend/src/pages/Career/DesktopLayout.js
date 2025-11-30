@@ -92,6 +92,7 @@ export default function DesktopLayout(props) {
           </div>
           {(role === 'candidate' || role === 'guest') && (
             <ApplyButton
+// Temp comment
               datasource={careerData.datasource}
               careerId={careerData.id}
               applicationUrl={careerData.application_path || careerData.url}
@@ -102,6 +103,7 @@ export default function DesktopLayout(props) {
 
       {/* Coordinator Status */}
       {
+        role === 'coordinator' && (
           <div className='flex flex-col space-y-8'>
             <UpdateJobStatus job={careerData} />
             {careerData.datasource === 'bullhorn' && <UpdateJobFeatured job={careerData} />}

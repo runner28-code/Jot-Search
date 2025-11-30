@@ -15,6 +15,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import AuthService from '../../services/auth';
 
 export default function Companies() {
+// Temp comment
   const { width } = useWindowDimensions();
   let userType = AuthService.getUserRole();
   const loggedIn = AuthService.loggedIn();
@@ -66,6 +67,7 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   }  
   if( loggedIn ) {
     return (<>
+      <PageHeader
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : SearchIcon}
         backButton={true}

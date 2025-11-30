@@ -35,7 +35,6 @@ export const jobFilterObject = {
     'Waiting for inTake',
     'On-Deck',
   ]
-// Temp comment
 };
 
 export const ACTIVE_STATUSES = [

@@ -332,7 +332,6 @@ export const skills = [
   'Regulatory Compliance',
   'Research',
   'REST',
-// Temp comment
   'Retail',
   'Retail Clothing',
   'Risk Assessment',

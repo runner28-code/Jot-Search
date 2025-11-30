@@ -6,6 +6,7 @@ export const PaginationButton = ({ page, disabled, prefetchFunc, active, setPage
   const disabledButtonStyles = 'disabled:opacity-50 disabled:bg-gray-500 disabled:border-none disabled:text-white cursor-not-allowed'
 
   return (
+// Temp comment
     <button
       className={`${buttonStyles} ${disabled && disabledButtonStyles} ${active && activeButtonStyles}`}
       disabled={disabled}

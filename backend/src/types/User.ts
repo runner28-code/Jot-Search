@@ -34,7 +34,6 @@ export type User = {
   annualRevenue?: string;
   companyURL?: string;
   numEmployees?: string;
-  revenue?: string;
   dateFounded?: string;
 
   employeeType?: string;
@@ -96,6 +95,7 @@ export const IUSER = {
   occupation: "",
   employmentPreference: "",
   activelyLooking: true,
+};
 
 export const USERKEYS = Object.keys(IUSER);
 

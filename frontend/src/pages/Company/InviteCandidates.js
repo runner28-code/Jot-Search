@@ -33,7 +33,6 @@ export default function InviteCandidates({ company }) {
 
   const SelectedValues = () => {
     return (<div className='flex space-x-4 flex-wrap px-4 py-4 min-h-[65px] bg-grey300 rounded-3xl'>
-      {selected?.map((item) => (
         <span 
           key={item.value} 
           className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">
@@ -100,7 +99,6 @@ function itemRenderer({ option, onClick, disabled}) {
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`} 
       onClick={onClick}
     >
-// Temp comment
       <div className="flex items-center space-x-4 pb-2 border-b-2 ">
         { avatarUrl ?
           <img

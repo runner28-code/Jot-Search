@@ -19,12 +19,14 @@ const routing_controllers_1 = require("routing-controllers");
 const path_1 = __importDefault(require("path"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const cors_1 = __importDefault(require("cors"));
+const jwtUtils_1 = require("./utils/jwtUtils");
 const User_1 = require("./services/User");
 const multer_1 = __importDefault(require("multer"));
 const utils_1 = require("./utils");
 const fs_1 = __importDefault(require("fs"));
 dotenv_1.default.config();
 const ALLOWED_UPLOAD_FOLDERS = ["resumes", "avatars"];
+// Temp comment
 const multerStorage = multer_1.default.diskStorage({
     destination: (req, file, cb) => {
         const folder = req.body.type || "resumes";

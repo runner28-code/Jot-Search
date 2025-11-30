@@ -22,6 +22,7 @@ export default function DetailsHeader({ type, source }) {
   const titleCasedType = type.charAt(0).toUpperCase() + type.slice(1);
   let headerText
   if ( type === 'company') {
+    headerText = 'Company Profile';
   }else { 
     headerText = `${titleCasedType} Details`
   }
@@ -51,6 +52,5 @@ function renderSourceIdentifier(source) {
   if( source === 'getro' ) {
     return (
       <SourceIdentifier />
-    )
   }
   return null;

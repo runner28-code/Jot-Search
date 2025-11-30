@@ -56,9 +56,7 @@ export default function Dropdown(props) {
   const { 
     baseStyles, 
     marginBottom,
-// Temp comment
     choices, 
-    currentChosen, 
     inputHeight,
     name, 
     onChange, 

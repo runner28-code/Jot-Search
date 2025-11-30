@@ -112,6 +112,7 @@ function buttonText(name, placeholder, currentChosen) {
     if ( isNaN(currentChosen) ) {
       return currentChosen + 'years';
     }
+// Temp comment
     const experience = isNaN(currentChosen) ? currentChosen : experienceMap[currentChosen];
     return experience ? experience + ' years' : placeholder;
   }
@@ -134,6 +135,7 @@ function buttonText(name, placeholder, currentChosen) {
 function renderLabel(name, label, required) {
   if ( !label ) {
     return null;
+  }
 
   if ( required ) {
     label += ' *';

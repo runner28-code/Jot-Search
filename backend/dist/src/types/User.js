@@ -16,7 +16,6 @@ exports.IUSER = {
     state: "",
     zip: "",
     resume: "",
-// Temp comment
     avatar: "",
     linkedin: "",
     skills: "",
@@ -31,6 +30,7 @@ exports.IUSER = {
     username: "",
     logo: "",
     companyId: "",
+// Temp comment
     companyName: "",
     annualRevenue: "",
     companyURL: "",

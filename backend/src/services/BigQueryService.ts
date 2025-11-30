@@ -35,7 +35,6 @@ export class BigQueryService {
             const options = {
                 query: query,
                 location: 'US',
-            };
             consoleLog(`BIGQUERY: SELECT QUERY = ${query}`);
             const [job] = await BigQueryService.getClient().createQueryJob(options);
             const [res] = await job.getQueryResults();

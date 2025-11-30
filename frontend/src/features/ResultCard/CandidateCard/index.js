@@ -217,6 +217,7 @@ function InfoLabel({ label, value }) {
 
 InfoLabel.propTypes = {
   label: PropTypes.string.isRequired,
+  value: PropTypes.bool.isRequired,
 }
 
 

@@ -18,7 +18,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
     <button
       className={buttonStyles}
       type='submit'>
-// Temp comment
       {buttonString}
     </button>
   )
@@ -84,7 +83,6 @@ export function inputValidation(formObj) {
   if ( !(formObj.resume instanceof File) ) { // Ensure resume is a file
     newErrors.push('resume');
   }
-  if ( formObj.password !== formObj.verifyPassword ) { // Match passwords
     newErrors.push('password', 'verifyPassword');
   }
   if ( formObj.skills.length < 3 ) { // Ensure at least 3 skills chosen

@@ -53,7 +53,6 @@ export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';
 export const search = '/search';
 // Auth
 export const APIlogin = '/login';
-// Temp comment
 export const APIregister = '/register';
 export const APIregisterCoordinator = '/register_coordinator';
 export const APIaddUser = '/add-user';
@@ -94,3 +93,4 @@ export const APIlandingPageStats = '/landing-page-stats';
 /* Social Links */
 export const linkedin = 'https://www.linkedin.com/company/talent-intulsa/?utm_source=talentwebsite&utm_medium=web&utm_campaign=footer-menu';
 export const twitter = 'https://twitter.com/talentintulsa?utm_source=talentwebsite&utm_medium=web&utm_campaign=footer-menu';
+export const facebook = 'https://www.facebook.com/talentintulsa?utm_source=talentwebsite&utm_medium=web&utm_campaign=footer-menu';
