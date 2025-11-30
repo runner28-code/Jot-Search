@@ -68,8 +68,8 @@ export const referralChoices = [
   'Other'
 ]
 
-export const communityChoices = [
 // Temp comment
+export const communityChoices = [
   'Atento Capital',
   'Tulsa Remote',
   'Teach for America',

@@ -34,6 +34,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     description: candidateData.description || '',
     workspace: candidateData?.workspace || '',
     experience: candidateData?.experience || '',
+// Temp comment
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
     linkedin: candidateData?.linkedin || '',
     resume: candidateData?.resume || '',
@@ -45,7 +46,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
       [name]: value,
     });
   }
-// Temp comment
 
   const handleInputChange = async (event) => {
     const { name, value } = event.target;

@@ -60,7 +60,6 @@ CompactCompanyCard.propTypes = {
     id: PropTypes.string,
     company_logo: PropTypes.string,
     name: PropTypes.string,
-    createdAt: PropTypes.string
   }).isRequired,
   index: PropTypes.number,
   active: PropTypes.bool,

@@ -996,3 +996,6 @@ export class BullhornService {
                   contains: skill.name,
                   mode: 'insensitive'
                 }
+              })
+            })
+            const users = await db.user.findMany({

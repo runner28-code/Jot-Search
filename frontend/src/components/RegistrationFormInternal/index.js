@@ -128,7 +128,6 @@ export default function RegistrationFormInternal(loggedIn) {
         setSubmissionObject({
           loading: false,
           success: false,
-        });
       }, 2000);
     }
   }, [submissionObject.success])

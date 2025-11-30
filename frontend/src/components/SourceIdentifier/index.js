@@ -10,5 +10,18 @@ export default function SourceIdentifier( type ) {
       />
       <p className='text-sm text-zinc-700 font-roboto'>{ renderSwitch(type) }</p>
     </span>
-// Temp comment
   </>)
+}
+SourceIdentifier.propTypes = {
+  type: PropTypes.string
+}
+
+function renderSwitch(type) {
+  switch(type['type']) {
+    case 'getro':
+    case 'main':
+      return 'Getro Data';
+    case 'bullhorn':
+    default:
+      return 'Bullhorn Data';
+  }

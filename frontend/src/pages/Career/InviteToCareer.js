@@ -29,7 +29,6 @@ export default function InviteToCareer({ candidate }) {
   
   const [ selected, setSelected ] = useState([]);
   const deleteItem = (e, value) => {
-    e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
   }
 
@@ -63,6 +62,7 @@ export default function InviteToCareer({ candidate }) {
 
       <MultiSelect
         isLoading={isLoading}
+        options={jobOptions}
         value={selected}
         onChange={setSelected}
         labelledBy="Select"

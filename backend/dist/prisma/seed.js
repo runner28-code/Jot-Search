@@ -69,6 +69,7 @@ function seedJobs() {
                     datasource: client_1.Datasource.bullhorn,
                     status: "active",
                     categoryId: (yield db_1.default.category.findFirst({
+                        where: { name: "Software & Engineering" },
                     })).id,
                 },
             ],
@@ -132,7 +133,6 @@ function seedCategories() {
                 {
                     name: "Operations",
                     enabled: true,
-                    externalID: 2000014,
                 },
                 {
                     name: "Other",

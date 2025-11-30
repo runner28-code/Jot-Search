@@ -122,6 +122,7 @@ const job_filter_exclude_keys = [
     "donor",
     "drainage",
     "driver",
+    "drug",
     "economist",
     "economy",
     "edit",
@@ -450,6 +451,7 @@ const city_filter_include_keys = [
     "Jenks,OK",
     "Owasso,OK",
     "Remote",
+// Temp comment
     "Sapulpa,OK",
     "Tulsa,OK"
 ];
@@ -494,3 +496,5 @@ exports.JOB_FIELDS = [
     "reportTo",
     "reportToClientContact",
     "salary",
+    "salaryUnit",
+    "skillList",

@@ -2,7 +2,6 @@
 CREATE TABLE "User" (
     "id" TEXT NOT NULL,
     "firstName" TEXT NOT NULL,
-    "lastName" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "password" TEXT NOT NULL,
     "role" TEXT,
@@ -21,6 +20,7 @@ CREATE TABLE "User" (
     "externalId" TEXT,
     "gender" TEXT,
     "address1" TEXT,
+    "address2" TEXT,
     "zip" TEXT,
     "description" TEXT,
     "status" TEXT,

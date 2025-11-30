@@ -9,6 +9,7 @@ import db from "../utils/db";
 
 export const createJob = async (job: Job) => {
   try {
+    const jobError = validateJob(job);
     if (jobError) {
       throw new Error(jobError);
     }
@@ -139,3 +140,4 @@ export const getJobsList = async (jobs_ids: string[]) => {
     const jobs = await db.job.findMany({
       where: {
         id: {
+          in: jobs_ids,

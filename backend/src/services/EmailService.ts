@@ -2,6 +2,7 @@ import path from 'path';
 import ejs from 'ejs';
 import sendgrid from '@sendgrid/mail';
 import config from '../config';
+
 export const sendEmail = async (to: string|string[], subject: string, template: string, data: any) => {
   sendgrid.setApiKey(config.sendgridSecret || '');
   const from = config.mailSenderEmail || "donnie@aerovision.io";
@@ -121,3 +122,4 @@ export const sendJobApplyNotification = async (to: string, name: string) => {
     console.log('Error during sending apply job notification');
     console.log(error);
     console.log(JSON.stringify(error.response.body));
+    throw error;

@@ -43,7 +43,6 @@ function renderChoice(choice, selected, index, choicesLength) {
   if (index === choicesLength - 1) {
     selectedClass += ' rounded-b-2xl border-t border-solid border-midGrey'; // round bottom card if selected
     baseChoiceStyles += ' border-b-0'; // remove border if last card
-// Temp comment
   }
 
   const choiceStyles = selectedChoice ? baseChoiceStyles + selectedClass : baseChoiceStyles;

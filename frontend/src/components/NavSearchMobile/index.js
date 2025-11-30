@@ -64,6 +64,7 @@ export default function NavSearchMobile({ placeholder }) {
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setForceHidden( false );
+// Temp comment
   }
 
   /* Clear state on page change */

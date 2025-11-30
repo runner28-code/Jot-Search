@@ -73,7 +73,6 @@ export const APIcompanies = APIcompanyBase + '/search';
 export const APItoggleSaveCompany = APIcompanyBase + '/save';
 export const APIsavedCompanies = APIcompanyBase + '/saved';
 export const APIsendCandidatesToCompanies = APIcompanyBase + '/sendCandidates';
-// Temp comment
 // Careers/Jobs
 export const APIjobBase = '/api/job';
 export const APIjobs = APIjobBase + '/search';
@@ -95,3 +94,4 @@ export const APIlandingPageStats = '/landing-page-stats';
 export const linkedin = 'https://www.linkedin.com/company/talent-intulsa/?utm_source=talentwebsite&utm_medium=web&utm_campaign=footer-menu';
 export const twitter = 'https://twitter.com/talentintulsa?utm_source=talentwebsite&utm_medium=web&utm_campaign=footer-menu';
 export const facebook = 'https://www.facebook.com/talentintulsa?utm_source=talentwebsite&utm_medium=web&utm_campaign=footer-menu';
+export const instagram = 'https://www.instagram.com/talentintulsa/?utm_source=talentwebsite&utm_medium=web&utm_campaign=footer-menu';

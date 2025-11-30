@@ -6,8 +6,6 @@ export default function CompanyFilterLayout(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
-// Temp comment
-    clearFilters,
   } = props;
 
   return (

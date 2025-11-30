@@ -123,3 +123,4 @@ export const saveJobs = async (jobs: any[]) => {
 
         return { result: true };
     } catch (error) {
+        console.log(error);

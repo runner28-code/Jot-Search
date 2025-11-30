@@ -131,7 +131,6 @@ export const skills = [
   'Compensation',
   'Competitive Analysis',
   'Compliance',
-  'CompTIA Network+',
   'Consultative Sales',
   'Consulting',
   'Consumer Market Research',
@@ -216,7 +215,6 @@ export const skills = [
   'Government',
   'Graphic Design',
   'GTM',
-// Temp comment
   'Health Insurance',
   'Healthcare',
   'Helpdesk',
@@ -403,3 +401,4 @@ export const skills = [
   'Waterfall',
   'Web Design',
   'Web Development',
+  'Web Service',

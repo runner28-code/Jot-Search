@@ -60,7 +60,6 @@ CareerCard.propTypes = {
     id: PropTypes.string,
     city: PropTypes.string,
     state: PropTypes.string,
-// Temp comment
     company_logo: PropTypes.string,
     role: PropTypes.string,
     title: PropTypes.string,

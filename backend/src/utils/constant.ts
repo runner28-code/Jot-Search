@@ -497,3 +497,4 @@ export const JOB_FIELDS = [
   "reportTo",
   "reportToClientContact",
   "salary",
+  "salaryUnit",

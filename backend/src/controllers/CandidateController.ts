@@ -419,3 +419,4 @@ export class CandidateController {
           data: candidateJobInvites
         })
       }
+

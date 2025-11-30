@@ -9,6 +9,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
   function onChange(inputName, newValues) {
     // Handle change expects event object, make fake one
     const fakeEvent = {
+// Temp comment
       target: {
         name: inputName,
         value: newValues.join(', '),
@@ -61,5 +62,4 @@ function renderChosen(skills, onChange) {
         )
       }) : <p className='text-royalBlue text-md'>No skills selected</p>}
     </div>
-// Temp comment
   )

@@ -108,6 +108,7 @@ export async function addUser(userObject) {
   } catch (err) {
     console.log(err);
     return err;
+  }
 }
 
 export async function updateJob({ id, status, featured }) {

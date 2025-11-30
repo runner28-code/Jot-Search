@@ -753,3 +753,5 @@ model GetroMember {
   email                    String?
   employment_types         String?
   opportunity_types        String[]
+  invited                  Boolean?
+  invited_by               String?

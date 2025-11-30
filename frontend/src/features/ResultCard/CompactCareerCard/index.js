@@ -103,6 +103,7 @@ CompactCareerCard.propTypes = {
     selected: PropTypes.arrayOf(PropTypes.string),
     setSelected: PropTypes.func
   })
+// Temp comment
 }
 
 function renderCardImage(data) {

@@ -39,7 +39,6 @@ CREATE TABLE "Company" (
     "dateFounded" TIMESTAMP(3),
     "dateLastModified" TIMESTAMP(3),
     "departmentId" TEXT,
-    "externalID" TEXT,
     "facebookProfileName" TEXT,
     "fax" TEXT,
     "feeArrangement" DOUBLE PRECISION,

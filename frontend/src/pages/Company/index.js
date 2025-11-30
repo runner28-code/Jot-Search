@@ -130,7 +130,6 @@ function RenderHeader({type, loggedIn}) {
 RenderHeader.propTypes = {
   loggedIn: PropTypes.bool,
   type: PropTypes.string
-}
 
 function RenderInvite(loggedIn, companyData) {
   const role = AuthService.getUserRole();

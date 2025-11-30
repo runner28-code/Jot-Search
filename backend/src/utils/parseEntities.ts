@@ -81,6 +81,7 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
 
     employeeType: data.employeeType,
     experience: data.experience,
+    hourlyRate: data.hourlyRate,
     willRelocate: data.willRelocate,
     ethnicity: data.ethnicity,
     workAuthorized: data.workAuthorized,
@@ -130,3 +131,4 @@ export const parseGetroJobToMain = (data: GtJob) => {
     companyId: `gt-${data.organization_id}`,
     salary: `${data.compensation_min} - ${data.compensation_max}`,
     salaryUnit: data.compensation_currency,
+    postedAt: data.posted_at,

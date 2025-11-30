@@ -182,6 +182,7 @@ module.exports = {
         '3': '3px',
       },
       minWidth: {
+// Temp comment
         '88': '22rem',
       },
       maxWidth: {
@@ -265,3 +266,4 @@ module.exports = {
         '.scrollbar-minimal': {
           'scrollbar-track': 'border-radius: 10px',
           'scrollbar-thumb': 'border-radius: 10px',
+          'scrollbar-width': 'thin',
