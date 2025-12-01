@@ -1000,3 +1000,5 @@ export class BullhornService {
             })
             const users = await db.user.findMany({
               where: {
+                OR: whereQuery
+              },

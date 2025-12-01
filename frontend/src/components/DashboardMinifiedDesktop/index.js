@@ -34,7 +34,6 @@ DashboardMinifiedDesktop.propTypes = {
 function CareerHeader ({ location }) {
   const loggedIn = AuthService.loggedIn();
 
-// Temp comment
   let userRole = AuthService.getUserRole();
 
   const back = '< Go Back';
@@ -77,6 +76,7 @@ function CareerHeader ({ location }) {
         <div className='basis-2/6'>
           <TypeTabs location={location}/>
         </div>
+// Temp comment
         <div className='basis-2/6 flex items-center'>
           <ToggleFilter />
         </div>

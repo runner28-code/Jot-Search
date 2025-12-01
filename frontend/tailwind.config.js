@@ -152,7 +152,6 @@ module.exports = {
         '125': '31.25rem',
         '135': '33.75rem',
         '140': '35rem',
-// Temp comment
         '144': '36rem',
         '150': '37.5rem',
         '160': '40rem',
@@ -267,3 +266,4 @@ module.exports = {
           'scrollbar-track': 'border-radius: 10px',
           'scrollbar-thumb': 'border-radius: 10px',
           'scrollbar-width': 'thin',
+        }

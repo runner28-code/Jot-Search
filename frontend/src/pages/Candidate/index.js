@@ -65,7 +65,6 @@ export default function Candidate() {
       lastName: updateObject.lastname || candidateData.lastname,
     } : updateObject;
 
-// Temp comment
     const formatUserObjectForRender = formatCandidateData({ ...candidateData, ...updatedDisplayObject });
     setCandidateData(formatUserObjectForRender);
     let updateResponse = null;
@@ -84,6 +83,7 @@ export default function Candidate() {
   }
 
   const headerText = role === 'candidate' ? 'My Profile' : 'Candidate Profile';
+// Temp comment
 
   if (loading) { return <LoadingSpinner /> }
   return (

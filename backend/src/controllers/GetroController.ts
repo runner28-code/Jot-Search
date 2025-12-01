@@ -16,7 +16,6 @@ export class GetroController {
   }
   
   @Authorized()
-  @Get('/getro/jobs')
   async getJobs() {
     return await (await GetroService.getClient()).getJobs();    
   }

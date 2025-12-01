@@ -200,7 +200,6 @@ function renderAddress( city, state ) {
 }
 
 function renderLinkedIn( url, headerRowTextStyles ) {
-// Temp comment
   const textStyles = headerRowTextStyles += 'underline text-sky-700';
   if( !url ) {
     return (

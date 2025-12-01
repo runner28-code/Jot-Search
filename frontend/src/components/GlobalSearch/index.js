@@ -76,7 +76,6 @@ export default function GlobalSearch({ placeholder }) {
 
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
-// Temp comment
   }, [closeDropdown]);
   
   /* STYLES & RENDER */
@@ -89,6 +88,7 @@ export default function GlobalSearch({ placeholder }) {
   return (
     <div className='relative'>
       <div ref={menuRef} >
+// Temp comment
         <SearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }

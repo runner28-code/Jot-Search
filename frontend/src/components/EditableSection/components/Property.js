@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import { startCase } from 'lodash';
+// Temp comment
 
 export default function Property({name, value}) {
   const capitalizedName = startCase(name);

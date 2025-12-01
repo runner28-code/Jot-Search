@@ -438,3 +438,4 @@ const normalizeValue = (key: string, value: any) => {
       return {
         contains: value,
         mode: "insensitive",
+      };

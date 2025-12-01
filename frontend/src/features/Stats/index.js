@@ -18,7 +18,6 @@ export default function Stats({ userType }) {
 
   function handleFilterChange(choice) {
     setTimeframe(choice);
-// Temp comment
   }
 
   function getDuration(timeFrame) {
@@ -113,7 +112,6 @@ function StatCard({ stat, value }) {
       className='flex flex-[1_1_31%] flex-col justify-between mr-5 mb-5 bg-white rounded-xl pl-4 vw-400:pl-8 pb-4 pt-8'
     >
       <div className='font-spaceGrotesk'>
-        <h2 className={numberStyles}>{value.count}</h2>
         <p className='text-md text-charcoal'>{stat}</p>
       </div>
       {renderDeviation(deviationPercentage)}

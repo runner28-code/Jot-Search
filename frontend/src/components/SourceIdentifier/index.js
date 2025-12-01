@@ -15,12 +15,14 @@ export default function SourceIdentifier( type ) {
 SourceIdentifier.propTypes = {
   type: PropTypes.string
 }
+// Temp comment
 
 function renderSwitch(type) {
   switch(type['type']) {
     case 'getro':
     case 'main':
       return 'Getro Data';
+    case 'bullhorn':
     default:
       return 'Bullhorn Data';
   }

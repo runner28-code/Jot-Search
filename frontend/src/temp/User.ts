@@ -7,8 +7,8 @@ export type User = {
     city: string;
     state: string;
     title?: string;
-    level?: string;
 };
 
 export type LoginInfo = {
     email: string;
+    password: string;

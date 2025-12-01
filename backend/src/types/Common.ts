@@ -142,3 +142,4 @@ export type CategorySearchByFilterResponse = {
   categories?: Category[];
 } & CountFilterResponse;
 
+export type CategoryByIdResponse = {

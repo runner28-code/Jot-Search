@@ -636,3 +636,5 @@ export const getLandingPageStats = async () => {
 };
 
 export const recovery = async (email: string) => {
+  try {
+

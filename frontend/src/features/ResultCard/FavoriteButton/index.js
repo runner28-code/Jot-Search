@@ -75,7 +75,6 @@ function getIdByType(type, data) {
 }
 
 function getItemsByType(type) {
-// Temp comment
   switch (type) {
     case 'job':
       return AuthService.getSavedJobIDs();

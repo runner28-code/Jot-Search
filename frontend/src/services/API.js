@@ -367,6 +367,7 @@ export async function getLandingPageStats() {
     console.log(err);
     return err;
   }
+}
 
 //* UTILITIES
 function formatCandidateFilters(filtersArr) {

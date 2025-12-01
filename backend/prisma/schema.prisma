@@ -756,3 +756,4 @@ model GetroMember {
   invited                  Boolean?
   invited_by               String?
   joined_at                DateTime?
+  job_search_status        String?

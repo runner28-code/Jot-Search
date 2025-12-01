@@ -86,6 +86,7 @@ const job_filter_exclude_keys = [
     "collection",
     "collector",
     "college",
+    "compliance",
     "composition",
     "construction",
     "controller",
@@ -496,3 +497,4 @@ exports.JOB_FIELDS = [
     "salary",
     "salaryUnit",
     "skillList",
+    "source",

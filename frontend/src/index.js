@@ -28,6 +28,6 @@ ReactDOM.render(
       </CandidateContext>
     </BrowserRouter>
     {isDevelopment && <ReactQueryDevtools initialIsOpen={false} />}
-// Temp comment
   </QueryClientProvider>,
+// Temp comment
   document.getElementById('root')

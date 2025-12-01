@@ -51,6 +51,5 @@ const ResumePreview = ({ resumeUrl }) => {
             </li>
           </ul>
         </nav>
-      )}
     </div>
   );

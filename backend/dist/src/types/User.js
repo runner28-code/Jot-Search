@@ -16,7 +16,6 @@ exports.IUSER = {
     state: "",
     zip: "",
     resume: "",
-    avatar: "",
     linkedin: "",
     skills: "",
     category: "",
@@ -36,6 +35,7 @@ exports.IUSER = {
     numEmployees: "",
     revenue: "",
     dateFounded: "",
+    employeeType: "",
     experience: "",
     hourlyRate: "",
     willRelocate: "",
@@ -47,3 +47,4 @@ exports.IUSER = {
     employmentPreference: "",
     activelyLooking: true,
 };
+exports.USERKEYS = Object.keys(exports.IUSER);

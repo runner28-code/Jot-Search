@@ -499,3 +499,4 @@ export const JOB_FIELDS = [
   "salary",
   "salaryUnit",
   "skillList",
+  "source",

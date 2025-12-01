@@ -126,14 +126,12 @@ function renderResultsContainer( results, searchTerm ) {
       { renderResults( results ) }
     </div>
   )
-// Temp comment
 }
 
 function renderResults( results ) {
   if ( results.loading ) {
     return <LoadingSpinner
       height='75'
-      width='75'
     />;
   }
 

@@ -41,6 +41,7 @@ export type Company = {
     status?: string,
     taxRate?: string,
     tickerSymbol?: string,
+    workWeekStart?: string,
     address_country_id?: string,
     datedAdded?: string,
 };
@@ -127,7 +128,6 @@ export type ClientContact = {
     address_zip?: string;
     address_country_id?: string;
     category?: string;
-    certifications?: string;
     clientCorporation?: string;
     comments?: string;
     dateAdded?: string;

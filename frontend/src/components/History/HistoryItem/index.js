@@ -70,6 +70,7 @@ function renderMessage(historyObj) {
           to={`/careers/${historyObj.careerId}`}
           className='text-royalBlue font-bold underline'
         >
+          {historyObj.careerName}
         </Link>
         {messageSplit[1]}
       </p>

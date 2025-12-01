@@ -84,7 +84,6 @@ export default function InviteCandidates({ job }) {
             }
           }}
           disabled={selected.length === 0 || isSendingJob}
-        >
           <MailIcon className='inline-block mr-2' />
           Send Now
         </button>

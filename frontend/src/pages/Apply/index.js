@@ -135,7 +135,6 @@ export default function Apply() {
     // Format object for API
     const formattedObject = await formatApplicationObject(applicationObject, useExistingResume);
     if ( isLoggedIn ) {
-      // Check if any values have changed, update user with new values if so
       updateCandidateIfNeeded(formattedObject, originalObject);
     }
 

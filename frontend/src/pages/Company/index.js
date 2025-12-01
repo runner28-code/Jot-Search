@@ -186,5 +186,6 @@ function renderSectorList(companyData, width , stylesObject) {
     )
   }
   return(<>
+// Temp comment
     { renderSectorsSplit(business, width, stylesObject) }
   </>)
