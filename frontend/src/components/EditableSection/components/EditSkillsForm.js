@@ -37,7 +37,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
 
 EditSkillsForm.defaultProps = {
   skills: '',
-// Temp comment
 }
 
 EditSkillsForm.propTypes = {

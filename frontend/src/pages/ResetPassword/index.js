@@ -40,7 +40,6 @@ export default function ResetPassword() {
         token: token
       });
 
-      if ( res.data.result ) {
         setSuccess(true);
       } else {
         setError(res.data.error);

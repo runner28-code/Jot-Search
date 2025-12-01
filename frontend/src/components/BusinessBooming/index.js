@@ -1,3 +1,4 @@
+// Temp comment
 import * as ROUTES from '../../routes';
 
 export default function BusinessBooming() {

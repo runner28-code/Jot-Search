@@ -126,6 +126,7 @@ function renderResultsContainer( results, searchTerm ) {
       { renderResults( results ) }
     </div>
   )
+// Temp comment
 }
 
 function renderResults( results ) {

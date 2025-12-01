@@ -12,6 +12,7 @@ import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
 import {
   candidateFilterObject,
+// Temp comment
   jobFilterObject,
   defaultJobFilterState,
   defaultCandidateFilterState,
@@ -159,6 +160,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       filterTemplate: {},
       activeResults: companies,
       totalResults: totalCompanies,
+      isLoading: isLoadingCompanies,
       prefetchFunc: (page) => prefetchCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page })
     }
   }

@@ -291,6 +291,7 @@ function NavFooter() {
           className={linkStyle}
         >
           Tulsa Jobs
+        </a>
       </div>
     </div>
     <BackToTop />

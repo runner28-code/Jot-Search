@@ -4,6 +4,7 @@ export const saveCompanies = async (companies: any[]) => {
     const expludeFields = ['organization_careers_pages', 'managers', 'topics'];
     try {
         for (const company of companies) {
+            try {
 							console.log(`Savng company with ID = ${company.id}`);
 							const existing = await db.getroCompany.findFirst({
 								where: {
@@ -39,7 +40,6 @@ export const saveCompanies = async (companies: any[]) => {
         console.log(error);
         return { result: false, error };
     }
-}
 
 export const saveMembers = async (members: any[]) => {
     const expludeFields = ['user_talent_collection', 'referrals_given', 'referrals_received', 'opportunity_types', 'mentorship'];

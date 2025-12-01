@@ -172,6 +172,7 @@ export function buildSalaryString(salary, salaryUnit) {
   }
 
   const currency = '$';
+
   let formattedSalary = salary.toString();
   if ( formattedSalary.length > 6 ) {
     formattedSalary = formattedSalary.slice(0, -6) + ',' + formattedSalary.slice(-6);

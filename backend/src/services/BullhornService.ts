@@ -38,6 +38,7 @@ export class BullhornService {
   async init(invalid = true): Promise<boolean> {
     if (!invalid) {
       const cookie: any = await this.getCookie();
+      if (cookie !== null) {
         const { auth_code, access_token, refresh_token, BhRestToken, restUrl } =
           cookie;
         this.auth_code = auth_code;
@@ -998,3 +999,4 @@ export class BullhornService {
               })
             })
             const users = await db.user.findMany({
+              where: {

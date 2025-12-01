@@ -8,7 +8,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   if ( submissionObject.loading ) {
     return <LoadingSpinner
       height='50'
-// Temp comment
       width='50'
     />
   }
@@ -46,6 +45,7 @@ export function renderHeader(addType) {
           {'Sign up and we\'ll keep you updated on new opportunities and put your profile in front of the people responsible for hiring at our companies.'}
         </p>
         <div className='mt-10 mb-20 flex justify-center'>
+// Temp comment
           <span className='text-sm text-darkGray leading-loose mx-4'>
             Already have an account?
           </span>

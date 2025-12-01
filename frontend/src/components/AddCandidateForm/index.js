@@ -21,7 +21,6 @@ import { experienceMap } from '../../utils/dbFieldMapping';
 
 const defaultState = {
   expertise: '',
-// Temp comment
   roles: [],
   skills: [],
   experience: '',

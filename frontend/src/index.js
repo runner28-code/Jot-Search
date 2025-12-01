@@ -9,7 +9,6 @@ import CandidateContext from './services/CandidateContext';
 import CareerContext from './services/CareerContext';
 import CategoryContext from './services/CategoryContext';
 import ScrollToTop from './hooks/scrollToTop';
-// Temp comment
 import App from './App';
 import './index.css';
 
@@ -29,5 +28,6 @@ ReactDOM.render(
       </CandidateContext>
     </BrowserRouter>
     {isDevelopment && <ReactQueryDevtools initialIsOpen={false} />}
+// Temp comment
   </QueryClientProvider>,
   document.getElementById('root')

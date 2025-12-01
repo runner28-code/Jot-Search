@@ -149,6 +149,7 @@ export function buildSearchFiltersObj(filterObject) {
     if ( !anyValues.includes(filterObject[key]) ) {
       let filterKey = key.toLowerCase();
       if ( key === 'remote' ) {
+// Temp comment
         filterKey = 'onSite';
       }
       if ( key === 'Expertise' ) {

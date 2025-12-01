@@ -186,7 +186,6 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
 }
 
 function renderSkillsSection({ skillList }) {
-// Temp comment
   return (<>
     <hr className={hrStyles} />
     {/* Skills Required */}

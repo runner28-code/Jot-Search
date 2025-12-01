@@ -21,7 +21,6 @@ function renderSwitch(type) {
     case 'getro':
     case 'main':
       return 'Getro Data';
-    case 'bullhorn':
     default:
       return 'Bullhorn Data';
   }

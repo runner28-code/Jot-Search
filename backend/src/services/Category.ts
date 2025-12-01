@@ -6,6 +6,7 @@ export const getCategoriesByFilter = async (
   fields?: any,
   count?: number,
   operator: Operator = "OR"
+) => {
   // TODO: assumes format for fields and filters
   const categories = await db.category.findMany({
     where: filters?.length ? filters : undefined,

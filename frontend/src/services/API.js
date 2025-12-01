@@ -367,7 +367,6 @@ export async function getLandingPageStats() {
     console.log(err);
     return err;
   }
-}
 
 //* UTILITIES
 function formatCandidateFilters(filtersArr) {
@@ -386,6 +385,7 @@ function formatCandidateFilters(filtersArr) {
         const choiceBoolean = filter.value === 'No' ? false : true;
         return {
           key: 'willRelocate',
+          value: choiceBoolean
         }
       }
       case 'authorized to work in the us': {

@@ -14,7 +14,6 @@ export class BullhornController {
   async getJobs() {
     console.log('~~~~~~')
     return await (await BullhornService.getClient()).getJobs();
-  }
 
   // @Authorized()
   @Get('/bullhorn/clientContacts')
@@ -31,3 +30,4 @@ export class BullhornController {
   // @Authorized()
   @Get('/bullhorn/leads')
   async getLeads() {
+    return await (await BullhornService.getClient()).getLeads();

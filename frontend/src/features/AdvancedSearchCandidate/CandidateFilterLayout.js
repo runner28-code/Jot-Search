@@ -40,6 +40,7 @@ export default function CandidateFilterLayout(props) {
   let userRole = AuthService.getUserRole();
 
   const dropdownFilterObject = {};
+  const checkboxFilterObject = {};
   if( userRole === 'coordinator' ) {
     dropdownFiltersCoord.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
@@ -74,7 +75,6 @@ export default function CandidateFilterLayout(props) {
           additionalClasses='w-1/2'
         />
         <button
-          className='text-royalBlue text-sm whitespace-nowrap'
           onClick={clearFilters}
         >
           Clear All

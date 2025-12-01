@@ -41,7 +41,6 @@ export type Company = {
     status?: string,
     taxRate?: string,
     tickerSymbol?: string,
-    workWeekStart?: string,
     address_country_id?: string,
     datedAdded?: string,
 };
@@ -103,6 +102,7 @@ export type Job = {
     reasonClosed?: string;
     reportTo?: string;
     reportToClientContact?: string;
+    salary?: string;
     salaryUnit?: string;
     skillList?: string;
     source?: string;
@@ -334,3 +334,4 @@ export type Lead = {
     salary?: string;
     salaryLow?: string;
     secondarySkills?: string;
+    skillSet?: string;

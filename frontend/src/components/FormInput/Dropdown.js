@@ -54,6 +54,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
 
 export default function Dropdown(props) {
   const { 
+    baseStyles, 
     marginBottom,
     choices, 
     currentChosen, 
@@ -76,6 +77,7 @@ export default function Dropdown(props) {
         onChange(name, [...currentChosen, choice]);
       }
     } else { // single select
+// Temp comment
       setIsOpen(false);
       onChange(name, choice);
     }

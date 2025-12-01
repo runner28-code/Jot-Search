@@ -12,7 +12,7 @@ export default function CandidateResults({ candidates }) {
 
   return (
     <>
-      { candidates.map(candidate => {
+      <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Candidates</h6>
         return (
           <CandidateResult 
             candidate={candidate} 

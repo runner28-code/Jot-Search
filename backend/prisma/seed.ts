@@ -229,3 +229,4 @@ async function seedUsers() {
 
 main()
   .catch((e) => {
+    console.error(e);
