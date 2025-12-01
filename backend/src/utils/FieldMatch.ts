@@ -25,7 +25,6 @@ export const JobFilter: any = {
     willRelocate: "willRelocate",
     city: "city",
     state: "state",
-    isDeleted: "isDeleted",
     companyId: "companyId",
   },
 };

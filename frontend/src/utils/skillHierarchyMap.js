@@ -131,6 +131,7 @@ export const skills = [
   'Compensation',
   'Competitive Analysis',
   'Compliance',
+  'CompTIA Network+',
   'Consultative Sales',
   'Consulting',
   'Consumer Market Research',

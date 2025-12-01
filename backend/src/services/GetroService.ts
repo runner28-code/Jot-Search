@@ -3,7 +3,6 @@ import config from "../config";
 import queryString from 'query-string';
 import { getCompanies, saveCompanies, saveJobs, saveMembers } from '../utils/GetroCrud';
 import { saveBullhornJobs } from '../utils/BullhornCrud';
-import { checkForJobFilter, sleep } from '../utils';
 
 export class GetroService {
     public static client: GetroService | null = null;
@@ -82,6 +81,7 @@ export class GetroService {
 
                 if (res.status === 200) {
                     const { items, meta: { total: total } } = res.data;
+                    if (!testMode) {
                         let result = [];
                         for (const company of items) {
                             const detail = await this.getCompanyDetail(company.slug);

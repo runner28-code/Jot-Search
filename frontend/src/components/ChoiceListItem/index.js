@@ -11,6 +11,7 @@ function renderHorizontalRule(isLastItem) {
 export default function ChoiceListItem({ job, handleClick, isLastItem }) {
   const listItemStyles = 'w-90% h-45 px-4 py-2 m-1 flex flex-col justify-between rounded-2xl cursor-pointer ';
 
+  function handleItemClick(e) {
     e.stopPropagation();
     handleClick(job.id);
   }
@@ -26,6 +27,7 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
       <div className='flex items-center'>
         <img 
           className='object-contain h-35 w-35 ml-12 mr-16'
+// Temp comment
           src={job.logo}
           alt={job.name}
         />

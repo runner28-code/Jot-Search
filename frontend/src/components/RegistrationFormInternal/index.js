@@ -94,7 +94,6 @@ export default function RegistrationFormInternal(loggedIn) {
         return;
       }
       formObj.resume = resumeResponse;
-
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
 
@@ -128,6 +127,7 @@ export default function RegistrationFormInternal(loggedIn) {
         setSubmissionObject({
           loading: false,
           success: false,
+        });
       }, 2000);
     }
   }, [submissionObject.success])

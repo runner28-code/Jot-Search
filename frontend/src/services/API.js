@@ -386,7 +386,6 @@ function formatCandidateFilters(filtersArr) {
         const choiceBoolean = filter.value === 'No' ? false : true;
         return {
           key: 'willRelocate',
-          value: choiceBoolean
         }
       }
       case 'authorized to work in the us': {

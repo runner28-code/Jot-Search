@@ -19,7 +19,6 @@ export const choices = {
   dashboard: {
     label: 'My Dashboard',
     icon: DashboardIcon,
-// Temp comment
     link: ROUTES.dashboard,
   },
   profile: {
@@ -89,6 +88,7 @@ export const candidateChoices = [
 export const companyChoices = [
   choices.dashboard,
   choices.candidates,
+// Temp comment
   choices.myFavorites,
   choices.activeCareers,
   choices.logout

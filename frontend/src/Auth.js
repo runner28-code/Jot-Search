@@ -5,6 +5,7 @@ import {
   Applications,
   Candidate,
   Candidates,
+// Temp comment
   Dashboard,
   Favorites,
   Logout,

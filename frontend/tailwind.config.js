@@ -182,7 +182,6 @@ module.exports = {
         '3': '3px',
       },
       minWidth: {
-// Temp comment
         '88': '22rem',
       },
       maxWidth: {

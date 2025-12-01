@@ -73,6 +73,7 @@ function DesktopNavBarLayout() {
         </a>
         <Link
           to={ROUTES.login}
+          className='ml-4 vw-1350:ml-8 mr-4'
         >
           <button className='border-royalBlue border-1.5 border-solid rounded-md px-7 py-4'>
             <span className='text-royalBlue'>Login</span>

@@ -451,7 +451,6 @@ const city_filter_include_keys = [
     "Jenks,OK",
     "Owasso,OK",
     "Remote",
-// Temp comment
     "Sapulpa,OK",
     "Tulsa,OK"
 ];

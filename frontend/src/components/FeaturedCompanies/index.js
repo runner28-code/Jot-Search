@@ -23,6 +23,7 @@ export default function FeaturedCompanies() {
       <h2 className='text-h4 font-semibold font-spaceGrotesk'>InTulsa Featured Companies</h2>
       <div className='flex flex-wrap mt-8'>
         {
+// Temp comment
           isLoading ?
             <LoadingSpinner />
             :

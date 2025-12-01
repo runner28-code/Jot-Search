@@ -53,6 +53,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
 
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
+      setReferralChoice(true);
     }
     if( value !== 'Community Partner' ) {
       setReferralChoice(false);
@@ -167,6 +168,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 <PhoneInput
                   name='phone'
                   international
+// Temp comment
                   withCountryCallingCode
                   className={inputStyles}
                   value={formData.phone}

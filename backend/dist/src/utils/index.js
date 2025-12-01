@@ -59,6 +59,7 @@ const isExistByCondition = (condition, datset, table) => __awaiter(void 0, void 
         return false;
     }
     catch (error) {
+        console.log(error);
         return true;
     }
 });

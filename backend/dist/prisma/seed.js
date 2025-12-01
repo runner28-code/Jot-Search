@@ -133,6 +133,7 @@ function seedCategories() {
                 {
                     name: "Operations",
                     enabled: true,
+                    externalID: 2000014,
                 },
                 {
                     name: "Other",
@@ -169,6 +170,7 @@ function seedCompanies() {
                     businessSectorList: "Health Care,Virtual Health",
                     billingPhone: "946-423-2341",
                     companyURL: "testingco@gmail.com",
+// Temp comment
                     companyDescription: "Best at testing",
                     numEmployees: 50,
                 },

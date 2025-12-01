@@ -80,6 +80,7 @@ async function seedCandidates() {
         email: "jsmithers@gmail.com",
         comments: "He does everything!",
       },
+      {
         address: "124 Main St",
         address_address1: "124 Main St",
         occupation: "None",

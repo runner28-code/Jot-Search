@@ -19,7 +19,6 @@ export class BigQueryService {
             let query = `SELECT ${fields} FROM \`${datset}.${table}\` ${fromAlias ? `AS ${fromAlias}` : ''}`;
             if(join){
                 query += ` ${join}`;
-            }
             if (condition) {
                 query = `
                     ${query}
@@ -71,5 +70,6 @@ export class BigQueryService {
 
             return { result: true, res, data};
         } catch (error) {
+            console.log(error);
             return { result: false, message: error };
         }

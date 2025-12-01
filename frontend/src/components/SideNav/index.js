@@ -44,7 +44,6 @@ function renderChoice(choice, selected, index, choicesLength) {
     selectedClass += ' rounded-b-2xl border-t border-solid border-midGrey'; // round bottom card if selected
     baseChoiceStyles += ' border-b-0'; // remove border if last card
   }
-
   const choiceStyles = selectedChoice ? baseChoiceStyles + selectedClass : baseChoiceStyles;
   let iconStyles = 'w-14 h-14 mx-9 ';
   const strokeIcons = ['Add User', 'My Account']; // These icons use stroke, rest use fill

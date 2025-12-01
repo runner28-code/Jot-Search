@@ -60,6 +60,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   }
 
   const [filterObject, setFilterObject] = useState(initialFilterState);
+  const [page, setPage] = useState(1);
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
@@ -158,7 +159,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
       filterTemplate: {},
       activeResults: companies,
       totalResults: totalCompanies,
-      isLoading: isLoadingCompanies,
       prefetchFunc: (page) => prefetchCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page })
     }
   }

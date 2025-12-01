@@ -27,7 +27,6 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
   }
   if ( propertyName === 'expertise' ) {
     return <EditExpertiseForm 
-      expertise={contentObject[propertyName]}
       handleChange={handleChange} />
   }
   if ( propertyName === 'resume' ) {
@@ -41,6 +40,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         const labelString = `${capitalizedKey}:`;
         if ( key === 'email' ) {
           return <Property
+            key={key}
             name={key}
             value={value}
           />

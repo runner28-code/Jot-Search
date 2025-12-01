@@ -31,6 +31,7 @@ export default function CompanyCard({ data }) {
   return (
     <div
       className='relative w-full'
+      key={data.id}
     >
       <Link
         to={`${ROUTES.companies}/${data.id}`}
@@ -83,6 +84,7 @@ export default function CompanyCard({ data }) {
                 src={websiteIcon}
                 className='h-8 mr-5 ml-1' />
               <a
+// Temp comment
                 href='#'
                 className='text-royalBlue underline'
               >

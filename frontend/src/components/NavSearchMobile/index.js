@@ -64,7 +64,6 @@ export default function NavSearchMobile({ placeholder }) {
   function handleSearchChange( searchTerm ) {
     setSearchTerm( searchTerm );
     setForceHidden( false );
-// Temp comment
   }
 
   /* Clear state on page change */
@@ -80,7 +79,6 @@ export default function NavSearchMobile({ placeholder }) {
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, closeDropdown);
   }, [closeDropdown]);
-
   const combinedResults = {
     jobs: jobs || [],
     companies: companies || [],

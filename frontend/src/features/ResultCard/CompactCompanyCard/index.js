@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
+// Temp comment
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
 import {  calculatePostingAge } from '../../../utils/formatFunctions';
 
@@ -60,6 +61,7 @@ CompactCompanyCard.propTypes = {
     id: PropTypes.string,
     company_logo: PropTypes.string,
     name: PropTypes.string,
+    createdAt: PropTypes.string
   }).isRequired,
   index: PropTypes.number,
   active: PropTypes.bool,

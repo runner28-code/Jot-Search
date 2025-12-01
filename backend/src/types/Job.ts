@@ -16,6 +16,7 @@ export type Job = {
   yearsRequired?: string;
   status?: string;
   skillList?: string;
+  locations?: string;
   companyId?: string;
   interviews?: string;
   onSite?: string;
@@ -42,7 +43,6 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "city",
   "state",
   "zip",
-  "country_id",
   "employmentType",
   "title",
   "willRelocate",

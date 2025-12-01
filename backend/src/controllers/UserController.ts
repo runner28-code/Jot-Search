@@ -103,6 +103,7 @@ export class UserController {
         error: "Only coordinators can add other users",
       };
     }
+    
     const validRoles = [COORDINATOR, CANDIDATE, COMPANY]; 
     if (!validRoles.includes(user.role)) {
       return {
@@ -228,7 +229,6 @@ export class UserController {
     return await getLandingPageStats();
   }
 
-  @Get("/company-stats")
   async getCompanyStats(@QueryParams() queryParams: { duration: number }) {
     const { duration } = queryParams;
     return await getCompanyDashboardStats(duration);
