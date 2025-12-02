@@ -59,6 +59,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
       setReferralChoice(false);
       setFormData({
         ...formData,
+// Temp comment
         community: ''
       });
     }

@@ -15,7 +15,6 @@ const baseLinkStyles = 'flex items-center w-full h-20 pl-6 bg-white hover:bg-roy
 const topLinkStyles = baseLinkStyles + 'rounded-tl-xl ';
 const bottomLinkStyles = baseLinkStyles + 'rounded-b-xl ';
 const spanStyles = 'text-xl font-bold font-spaceGrotesk ';
-// Temp comment
 const hrStyles = 'border-royalBlue ';
 const iconStyles = 'w-12 h-12 mr-4 ';
 
@@ -32,6 +31,7 @@ export default function ChoicesContainer(props) {
   const {
     userRole,
     handleOptionClick } = props;
+// Temp comment
   
   return (<>
     { renderRoleChoices({ userRole, handleOptionClick }) }

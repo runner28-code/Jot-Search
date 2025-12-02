@@ -498,3 +498,4 @@ exports.JOB_FIELDS = [
     "salaryUnit",
     "skillList",
     "source",
+    "startDate",

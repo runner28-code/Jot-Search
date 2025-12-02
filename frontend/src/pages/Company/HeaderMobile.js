@@ -78,7 +78,6 @@ HeaderContent.propTypes = {
 }
 
 export default function HeaderMobile({ companyData }) {
-  return (
     <>
       <section className='flex w-full mb-10 px-4'>
         <HeaderContent companyData={companyData} />
@@ -134,7 +133,6 @@ function renderDesktopLogo(logoUrl, name) {
       <img
         className={logoStyles}
         src={logoUrl}
-// Temp comment
         alt={`${name} logo`}
       />
     </div>

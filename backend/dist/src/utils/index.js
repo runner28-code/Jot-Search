@@ -14,6 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.determineCondition = exports.getFilterConditions = exports.justifyData = exports.fileUploadOptions = exports.checkForJobFilter = exports.genUUID = exports.getDataSource = exports.sleep = exports.consoleLog = exports.isExistByCondition = exports.isExistByID = void 0;
 const uuid_1 = require("uuid");
+const config_1 = __importDefault(require("../config"));
 const BigQueryService_1 = require("../services/BigQueryService");
 const Common_1 = require("../types/Common");
 const constant_1 = require("./constant");
@@ -78,7 +79,6 @@ const getDataSource = (id) => {
     if (prefix === 'gt')
         return Common_1.DataSource.GETRO;
     return Common_1.DataSource.UNKNOWN;
-};
 exports.getDataSource = getDataSource;
 const genUUID = () => (0, uuid_1.v4)();
 exports.genUUID = genUUID;

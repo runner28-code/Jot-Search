@@ -54,3 +54,4 @@ ADD COLUMN     "isDeleted" BOOLEAN;
 -- AlterTable
 ALTER TABLE "User" DROP COLUMN "willRelocate",
 ADD COLUMN     "willRelocate" BOOLEAN,
+DROP COLUMN "workAuthorized",

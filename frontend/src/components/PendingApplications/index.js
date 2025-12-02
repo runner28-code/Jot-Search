@@ -22,6 +22,7 @@ export default function PendingApplications () {
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,
+// Temp comment
         agoDate: job.appliedDate
       }});
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));

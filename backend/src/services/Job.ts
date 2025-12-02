@@ -142,3 +142,4 @@ export const getJobsList = async (jobs_ids: string[]) => {
         id: {
           in: jobs_ids,
         },
+      },

@@ -55,6 +55,7 @@ export default function FeaturedJobs() {
                   <div className={ width >= 990 ? cardStyles : cardStylesMobile }>
                     { width >= 990 ? <RenderImage image={career.logo} /> : <RenderImageMobile image={career.logo} />}
                     <div className={width >= 990 ? cardContentStyles : cardContentStylesMobile}>
+// Temp comment
                       <h5 className={ width >= 990 ? cardContentTitle : cardContentTitleMobile }>{career.title}</h5>
                       <p className={ width >= 990 ? cardContentSubtitle : cardContentSubtitleMobile }>{categoryString}</p>
                     </div>
@@ -76,7 +77,6 @@ export default function FeaturedJobs() {
 }
 
 function renderColorShapes() {
-// Temp comment
   return(
     <div className='relative w-24 mb-8'>
       <div className='bg-indigoSquare w-12 h-12' />

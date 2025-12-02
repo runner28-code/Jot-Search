@@ -129,7 +129,6 @@ function Notification({title, content, text, email, company, id, add}) {
         id={id}
         add={add}
       />
-// Temp comment
     </div>
   )
 }

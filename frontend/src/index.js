@@ -19,7 +19,6 @@ ReactDOM.render(
   <QueryClientProvider client={queryClient}>
     <BrowserRouter>
       <CandidateContext>
-        <CareerContext>
           <CategoryContext>
             <ScrollToTop />
             <App />
@@ -29,5 +28,4 @@ ReactDOM.render(
     </BrowserRouter>
     {isDevelopment && <ReactQueryDevtools initialIsOpen={false} />}
   </QueryClientProvider>,
-// Temp comment
   document.getElementById('root')

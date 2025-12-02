@@ -1002,3 +1002,5 @@ export class BullhornService {
               where: {
                 OR: whereQuery
               },
+              select: {
+                email: true,

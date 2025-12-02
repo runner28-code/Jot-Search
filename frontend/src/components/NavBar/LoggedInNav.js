@@ -174,6 +174,7 @@ function renderChoices(userType, handleClick) {
     {choicesToRender.map((choice, index) => renderChoice(choice, selected, index, choicesLength, handleClick))}
   </>)
 }
+
 function renderChoice(choice, selected, index, choicesLength, handleClick) {
   let baseChoiceStyles = 'w-full h-20 flex items-center cursor-pointer hover:bg-sky-100 transition ease-in-out ';
   const selectedChoice = choice.label === selected;

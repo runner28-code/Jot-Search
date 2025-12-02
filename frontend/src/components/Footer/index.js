@@ -6,7 +6,6 @@ import intulsaBusinessLogo from '../../assets/images/inTulsa-business-logo-web-w
 
 import intulsaFooterWhite from '../../assets/images/talent-intulsa-white-small.svg';
 import inTulsaFooter from '../../assets/images/intulsa-talent-network.svg';
-// Temp comment
 
 // Social Icons
 import linkedin from '../../assets/icons/social/social_linkedin_grey.svg';
@@ -252,6 +251,7 @@ function NavFooter() {
         </Link>
         <a
           href={ROUTES.intulsa}
+// Temp comment
           className={linkStyle}
         >Our Website
         </a>

@@ -19,6 +19,7 @@ export type Company = {
   topics?: string;
   twitter_url?: string;
   url?: string;
+  website_url?: string;
   managers?: string;
   network_id?: string;
   locations?: string;
@@ -103,3 +104,4 @@ export type User = {
   require_sponsorship_visa?: string;
   seniority?: string;
   employment_type?: string;
+  will_work_anywhere?: string;

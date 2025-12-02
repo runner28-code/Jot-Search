@@ -32,6 +32,7 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
                 key={pageNumber}
                 page={pageNumber}
                 setPage={setPage}
+// Temp comment
                 prefetchFunc={pageNumber !== page && prefetchFunc}
                 active={pageNumber === page}
               >
@@ -93,7 +94,6 @@ export const usePaginatedControls = ({ total, page, setPage, itemsPerPage, isLoa
               key={totalPages}
               active={page === totalPages}
               page={totalPages}
-// Temp comment
               setPage={setPage}
               prefetchFunc={prefetchFunc}
             >

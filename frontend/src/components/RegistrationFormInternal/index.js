@@ -153,7 +153,6 @@ export default function RegistrationFormInternal(loggedIn) {
       success: false,
     });
     console.log(formObj);
-  }
 
   function handleChange(name, value) {
     setFormObj({
@@ -172,6 +171,7 @@ export default function RegistrationFormInternal(loggedIn) {
         ...commObj,
         community: ''
       });
+    }
     handleChange(name, value);
   }
 

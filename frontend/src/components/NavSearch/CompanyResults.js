@@ -8,6 +8,7 @@ export default function CompanyResults({ companies }) {
   if (companies.length === 0) {
     return null;
   }
+// Temp comment
 
   return (
     <>
@@ -15,7 +16,6 @@ export default function CompanyResults({ companies }) {
       { companies.map(company => {
         return (
           <CompanyResult 
-// Temp comment
             company={company} 
             key={company.id} />
         )

@@ -12,7 +12,6 @@ import { getCompanies, getJobs, getCandidates } from '../../services/API';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 
 export default function GlobalSearch({ placeholder }) {
-  const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
   const [ results, setResults ] = useState({
     jobs: [],
@@ -88,7 +87,6 @@ export default function GlobalSearch({ placeholder }) {
   return (
     <div className='relative'>
       <div ref={menuRef} >
-// Temp comment
         <SearchBar
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }

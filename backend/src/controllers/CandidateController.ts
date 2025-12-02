@@ -422,3 +422,4 @@ export class CandidateController {
 
       return {
         result
+      };

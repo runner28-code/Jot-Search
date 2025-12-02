@@ -30,6 +30,7 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
   const isActiveTab = choice === activeTab;
 
   function handleClick(choice) {
+// Temp comment
     if ( isLocked ) {
       return null;
     }

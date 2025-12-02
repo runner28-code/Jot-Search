@@ -638,3 +638,4 @@ export const getLandingPageStats = async () => {
 export const recovery = async (email: string) => {
   try {
 
+    const user = await findUserByEmail(email);

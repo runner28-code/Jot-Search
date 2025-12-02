@@ -46,7 +46,6 @@ DetailsHeader.propTypes = {
 function renderSourceIdentifier(source) {
   if( source === 'bullhorn' ) {
     return(
-// Temp comment
       <SourceIdentifier type={source} />
     )
   }

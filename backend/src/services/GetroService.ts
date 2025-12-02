@@ -238,6 +238,7 @@ export class GetroService {
                     const url = `${this.api_base_url_v1}/jobs?${query}`;
                     try {
                         const res = await axios.get(url, this.getOptions());
+                        await sleep(2000); // https://developers.getro.com/#rate-limit
 
                         const { items, meta: { total } } = res.data;
                         if (!testMode) {
@@ -294,3 +295,4 @@ export class GetroService {
             status: 'Active', // All fetched getro jobs are active
             title: getroJob.title,
             createdAt: getroJob.createdAt,
+            updatedAt: getroJob.updatedAt,

@@ -128,6 +128,7 @@ export type ClientContact = {
     address_zip?: string;
     address_country_id?: string;
     category?: string;
+    certifications?: string;
     clientCorporation?: string;
     comments?: string;
     dateAdded?: string;
@@ -335,3 +336,4 @@ export type Lead = {
     salaryLow?: string;
     secondarySkills?: string;
     skillSet?: string;
+    smsOptIn?: string;

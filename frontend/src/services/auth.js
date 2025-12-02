@@ -57,6 +57,7 @@ class AuthService {
   logout() {
     this.clearStorage();
     window.location.assign('/landing-page');
+// Temp comment
   }
 
   clearStorage() {
@@ -91,7 +92,6 @@ class AuthService {
     } catch(e) {
       console.log(e);
       localStorage.setItem('savedCandidates', JSON.stringify([]));
-// Temp comment
     }
   }
 

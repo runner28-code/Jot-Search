@@ -12,6 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+// Temp comment
 const express_1 = __importDefault(require("express"));
 require("reflect-metadata");
 const dotenv_1 = __importDefault(require("dotenv"));
@@ -22,7 +23,6 @@ const cors_1 = __importDefault(require("cors"));
 const jwtUtils_1 = require("./utils/jwtUtils");
 const User_1 = require("./services/User");
 const multer_1 = __importDefault(require("multer"));
-// Temp comment
 const utils_1 = require("./utils");
 const fs_1 = __importDefault(require("fs"));
 dotenv_1.default.config();

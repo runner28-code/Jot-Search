@@ -103,6 +103,7 @@ export default function NavSearch({ placeholder }) {
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder }
           alternateStylesObject={ stylesObject } 
+// Temp comment
           setIsOpen={ setIsOpen }
           isOpen={ isOpen }
         />
@@ -132,6 +133,7 @@ function renderResults( results ) {
   if ( results.loading ) {
     return <LoadingSpinner
       height='75'
+      width='75'
     />;
   }
 

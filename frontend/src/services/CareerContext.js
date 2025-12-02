@@ -13,7 +13,6 @@ const mockJobsData = [
     location_state: 'OK',
     onSite: true,
     listingAge: '1 month',
-// Temp comment
     specialty: 'Technology'
   },
   {
@@ -80,6 +79,7 @@ const mockJobsData = [
     onSite: true,
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
+// Temp comment
   },
 ];
 

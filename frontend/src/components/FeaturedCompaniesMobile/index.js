@@ -30,7 +30,6 @@ export default function FeaturedCompaniesMobile() {
               <Link
                 to={`${ROUTES.companies}/${company.id}`}
                 className='my-8 outline outline-2 outline-neutral-100 p-8 w-32 mx-2'
-// Temp comment
                 key={index}>
                 { renderLogo(company.logo) }
               </Link>
@@ -47,7 +46,6 @@ export default function FeaturedCompaniesMobile() {
     </div>
   )
 }
-function renderColorShapes() {
   return(
     <div className='relative w-full w-24 mb-8'>
       <div className='bg-pinkSquare w-12 h-12' />

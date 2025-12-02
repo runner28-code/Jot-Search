@@ -161,7 +161,6 @@ function renderCompanyDescription(description, textStyles) {
     </div>
   )
 }
-
 function renderSectorList(companyData, width , stylesObject) {
 
   const business = companyData.businessSectorList; 
@@ -186,6 +185,5 @@ function renderSectorList(companyData, width , stylesObject) {
     )
   }
   return(<>
-// Temp comment
     { renderSectorsSplit(business, width, stylesObject) }
   </>)

@@ -263,6 +263,7 @@ module.exports = {
           }
         },
         '.scrollbar-minimal': {
+// Temp comment
           'scrollbar-track': 'border-radius: 10px',
           'scrollbar-thumb': 'border-radius: 10px',
           'scrollbar-width': 'thin',

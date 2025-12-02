@@ -283,6 +283,7 @@ export type Candidate = {
 export type Lead = {
     id: string;
     address?: string;
+    campaignSource?: string;
     candidates?: string;
     category?: string;
     clientContacts?: string;
@@ -331,3 +332,4 @@ export type Lead = {
     referredByPerson?: string;
     reportToPerson?: string;
     role?: string;
+    salary?: string;

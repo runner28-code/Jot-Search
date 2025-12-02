@@ -33,6 +33,7 @@ const checkboxFilters = [
 
 export default function CandidateFilterLayout(props) {
   const {
+// Temp comment
     defaultFilterObject,
     filterObject,
     handleFilterChange,
@@ -83,6 +84,7 @@ export default function CandidateFilterLayout(props) {
           placeholder='Select all that apply'
           required={true}
           value={filterObject.skills}
+          onChange={toggleSkills}
           choices={skills}
         />
       </div>

@@ -71,6 +71,7 @@ export function inputValidation(formObj) {
   Object.entries(formObj).forEach(([key, value]) => {
     if ( !valuesToSkip.includes(key) ) {
       // If value is empty string or empty array, add to errors
+// Temp comment
       if (!value || (Array.isArray(value) && value.length === 0)) {
         newErrors.push(key);
       }
@@ -90,7 +91,6 @@ export function inputValidation(formObj) {
     newErrors.push('skills');
   }
 
-// Temp comment
   // Only need LinkedIn OR resume, not both.
   // If one is missing but the other is present, remove either from errors array.
   if ( newErrors.includes('linkedin') && !newErrors.includes('resume') ) {

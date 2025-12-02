@@ -45,4 +45,3 @@ CREATE TABLE "User" (
     "occupation" TEXT,
     "employmentPreference" TEXT,
 
-    CONSTRAINT "User_pkey" PRIMARY KEY ("id")

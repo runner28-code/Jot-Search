@@ -80,7 +80,6 @@ model Lead {
   email2                String?
   email3                String?
   fax                   String?
-  fax2                  String?
   fax3                  String?
   firstName             String?
   isAnonymized          Boolean?
@@ -757,3 +756,5 @@ model GetroMember {
   invited_by               String?
   joined_at                DateTime?
   job_search_status        String?
+  mentorship               Boolean?
+  remote_work              Boolean?

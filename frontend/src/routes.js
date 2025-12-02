@@ -31,6 +31,7 @@ export const companyQuickStats = '/company-stats';
 export const addUser = '/add-user';
 export const alerts = '/alerts';
 
+// Temp comment
 export const careerSeekers = '/career-seeker';
 export const softwareEngineering = '/software-engineering';
 export const salesBizDev = '/sales-business-development';
@@ -86,7 +87,6 @@ export const APIclientContacts = '/api/client-contact/search';
 // Categories
 export const APIcategoryBase = '/api/category';
 export const APIcategories = APIcategoryBase + '/search';
-// Temp comment
 // Stats
 export const APIstats = '/stats';
 export const APIlandingPageStats = '/landing-page-stats';
