@@ -81,7 +81,6 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
         onChange={handleChange}
         disabled={disabled}
       />
-// Temp comment
       <p className='text-md ml-2'>{attribute}</p>
     </label>
   )

@@ -6,6 +6,7 @@ export default function SignUp() {
 
   const { width } = useWindowDimensions();
 
+  if( width <= 990 ) {
     return (
       <main className='pb-24'>
         <div className='flex flex-col justify-center items-center'>
@@ -25,6 +26,7 @@ export default function SignUp() {
           </div>
         </div>
       </main>      
+// Temp comment
     )
   }
 

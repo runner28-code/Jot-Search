@@ -408,6 +408,7 @@ export class BullhornService {
     }
   }
 
+  makeListArray = (val: string | undefined) => {
     if (!val) return [];
     return val?.toString().replace(", ", ",").split(",");
   };

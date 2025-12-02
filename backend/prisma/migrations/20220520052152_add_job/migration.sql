@@ -21,7 +21,7 @@ CREATE TABLE "Job" (
     "onSite" TEXT,
     "salary" TEXT,
     "salaryUnit" TEXT,
-    "type" TEXT,
+    "startDate" TIMESTAMP(3),
     "isDeleted" TEXT,
     "postedAt" TIMESTAMP(3),
     "hidden" BOOLEAN,

@@ -2,7 +2,6 @@ import { BigQuery } from '@google-cloud/bigquery';
 import { config } from 'dotenv';
 import { Tables } from '../types/Common';
 import { User } from '../types/User';
-import { consoleLog } from '../utils';
 
 export class BigQueryService {
     public static client: BigQuery | null = null;
@@ -68,6 +67,7 @@ export class BigQueryService {
 
             const [job] = await BigQueryService.getClient().createQueryJob(options);
             const res = await job.getQueryResults();
+
             return { result: true, res, data};
         } catch (error) {
             console.log(error);

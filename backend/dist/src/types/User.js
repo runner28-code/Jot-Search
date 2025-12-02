@@ -38,14 +38,12 @@ exports.IUSER = {
     dateFounded: "",
     employeeType: "",
     experience: "",
-    hourlyRate: "",
     willRelocate: "",
     willReceiveNotification: false,
     ethnicity: "",
     workAuthorized: "",
     disability: "",
     occupation: "",
-// Temp comment
     employmentPreference: "",
     activelyLooking: true,
 };

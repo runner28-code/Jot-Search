@@ -10,9 +10,9 @@ export default function SourceIdentifier( type ) {
       />
       <p className='text-sm text-zinc-700 font-roboto'>{ renderSwitch(type) }</p>
     </span>
-  </>)
 }
 SourceIdentifier.propTypes = {
+  type: PropTypes.string
 }
 
 function renderSwitch(type) {

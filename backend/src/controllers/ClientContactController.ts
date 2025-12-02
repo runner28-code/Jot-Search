@@ -48,7 +48,6 @@ export class ClientContactController {
         take: count || 100,
         skip: (count || 0) * (page || 0),
       });
-
       clientContacts?.forEach((clientContact) => clearPassword(clientContact));
 
       return {

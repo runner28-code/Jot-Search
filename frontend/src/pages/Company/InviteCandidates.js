@@ -124,7 +124,6 @@ function getTagLine({ candidate }) {
   }else if (candidate?.occupation) {
     tagLine = candidate.occupation
   }else if (candidate?.companyName) {
-// Temp comment
     tagLine = `@ ${candidate.companyName}`
   }
   return tagLine;

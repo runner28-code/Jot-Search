@@ -11,6 +11,7 @@ import {
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {
+  inputValidation,
   formatFormObj,
   renderButtonOrLoading,
   renderErrorBlock,
@@ -47,6 +48,7 @@ const defaultCommunity = {
 }
 export default function RegistrationForm(loggedIn) {
   const {categories} = useContext(CategoryContext);
+// Temp comment
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');

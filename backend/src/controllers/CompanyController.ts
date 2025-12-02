@@ -214,7 +214,6 @@ export class CompanyController {
       const { page, count, filters } = body;
 
       const wheres = normalizeFilters(filters)
-
       const skip = (count || 0) * ((page - 1) || 0)
 
       const companiesPromise = db.company.findMany({

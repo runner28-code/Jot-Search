@@ -16,6 +16,7 @@ export default function SideNav({ userType }) {
   if ( hiddenPages.includes(pathname) ) {
     return null;
   }
+
   if( userType === 'guest' ) {
     return null;
   }
@@ -57,7 +58,6 @@ function renderChoice(choice, selected, index, choicesLength) {
   return (
     <Link
       to={choice.link}
-      className={choiceStyles}
       key={choice.label}
     >
       <Icon

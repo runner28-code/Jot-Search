@@ -25,6 +25,7 @@ export const genderMap = {
   O: 'Other'
 };
 
+export const ethnicityMap = {
   U: 'Prefer not to say',
   BL: 'Black or African American',
   NP: 'Native Hawaiian or other Pacific Islander',

@@ -46,6 +46,7 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
       }
       return true
     });
+
   const { data } = await API.post(ROUTES.APIcandidates, {
     'filters': formattedFilters,
     'count': count,

@@ -32,7 +32,6 @@ CREATE TABLE "Company" (
     "branchId" TEXT,
     "businessSectorList" TEXT[],
     "companyDescription" TEXT,
-    "companyURL" TEXT,
     "competitors" TEXT[],
     "culture" TEXT,
     "dateAdded" TIMESTAMP(3),
@@ -100,6 +99,7 @@ CREATE TABLE "Company" (
 
 -- AddForeignKey
 ALTER TABLE "Company" ADD CONSTRAINT "Company_addressId_fkey" FOREIGN KEY ("addressId") REFERENCES "Address"("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
 -- AddForeignKey
 ALTER TABLE "Company" ADD CONSTRAINT "Company_billingAddressId_fkey" FOREIGN KEY ("billingAddressId") REFERENCES "Address"("id") ON DELETE SET NULL ON UPDATE CASCADE;
 

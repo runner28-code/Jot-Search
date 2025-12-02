@@ -68,6 +68,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
       }
     </div>
   )
+// Temp comment
 }
 
 CompactCareerCard.propTypes = {

@@ -39,5 +39,6 @@ export default function ChoicesContainer(props) {
         handleOptionClick={handleOptionClick}
         stylesObject={stylesObject} /> 
       :
+      null
     }
   </>)

@@ -3,7 +3,6 @@ const crypto = require('crypto');
 export const clearPassword = (object: any) => {
     delete object?.password;
     return object;
-}
 
 export const encryptPassword = (password: string) => {
     const sr = crypto.randomBytes(12).toString('hex');
@@ -18,6 +17,7 @@ export const checkPassword = (encryptedPassword:string, password: string) => {
     const sr = encryptedPassword.substring(0,24);
     const hash_in_db = encryptedPassword.substring(24);
 
+    const hash = crypto.createHash('sha512');
     hash.update(sr + password);
     const calculated_hash = hash.digest('hex')
 

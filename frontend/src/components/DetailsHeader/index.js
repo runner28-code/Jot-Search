@@ -36,6 +36,7 @@ export default function DetailsHeader({ type, source }) {
     </div>
     <BackButton />
   </>)
+}
 
 DetailsHeader.propTypes = {
   type: PropTypes.string.isRequired,
@@ -48,6 +49,7 @@ function renderSourceIdentifier(source) {
       <SourceIdentifier type={source} />
     )
   }
+// Temp comment
   if( source === 'getro' ) {
     return (
       <SourceIdentifier />

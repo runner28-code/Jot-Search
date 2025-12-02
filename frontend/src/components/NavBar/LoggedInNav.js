@@ -30,6 +30,7 @@ export default function NavBar() {
 function NavBarLayout() {
   return (
     <nav className='shadow-md bg-white fixed top-0 left-0 right-0 z-50 '>
+// Temp comment
       <div className='h-30 px-8 flex justify-between items-center'>
         <Link to={ROUTES.root}>
           <img
@@ -187,6 +188,7 @@ function renderChoice(choice, selected, index, choicesLength, handleClick) {
 
   if( index === choicesLength - 2 ) baseChoiceStyles += 'border-t-4 border-smokeGray ';
 
+  const choiceStyles = selectedChoice ? baseChoiceStyles + selectedClass : baseChoiceStyles;
   let iconStyles = 'w-10 h-10 mx-9 ';
   const strokeIcons = ['Add User', 'My Account']; // These icons use stroke, rest use fill
   if ( selectedChoice ) {

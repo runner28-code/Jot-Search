@@ -46,7 +46,6 @@ export default function CareerPage() {
     careerData,
     categoryString,
     addressString,
-// Temp comment
     salaryString,
     postingAge,
     role

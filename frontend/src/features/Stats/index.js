@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import TimeframeFilter from '../../components/TimeframeFilter';
 import { BsArrowUpSquare, BsArrowDownSquare } from 'react-icons/bs';
 import { getCompanyQuickStats, getCoordinatorQuickStats } from '../../services/API';
@@ -26,6 +27,7 @@ export default function Stats({ userType }) {
       case 'Last 7 Days':
         return 7;
       case 'Last 14 Days':
+// Temp comment
         return 14;
       case 'Last 90 Days':
         return 90;

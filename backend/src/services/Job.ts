@@ -109,6 +109,7 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
 
     sanitizedKeys.forEach((key) => {
       const typedKey = key as JobKey;
+      filteredJob[typedKey] = job[typedKey] as any;
     });
 
     const res = await db.job.update({

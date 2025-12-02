@@ -28,6 +28,7 @@ export default function Applications() {
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
+      loading: false
     });
   }, []);
 
@@ -35,5 +36,6 @@ export default function Applications() {
     if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
     } else {
+// Temp comment
       setSelectedApplications([...selectedApplications, careerId]);
     }
