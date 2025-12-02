@@ -31,7 +31,6 @@ export default function ChoicesContainer(props) {
   const {
     userRole,
     handleOptionClick } = props;
-// Temp comment
   
   return (<>
     { renderRoleChoices({ userRole, handleOptionClick }) }
@@ -40,6 +39,5 @@ export default function ChoicesContainer(props) {
         handleOptionClick={handleOptionClick}
         stylesObject={stylesObject} /> 
       :
-      null
     }
   </>)

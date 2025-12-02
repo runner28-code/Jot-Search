@@ -11,8 +11,8 @@ import User from '../../assets/icons/add-new-user.svg';
 export default function AddUser() {
   // TODO: Add params to initiate with correct form when being routed from other page
   if ( AuthService.getUserRole() !== 'coordinator' ) {
-// Temp comment
     return <Navigate to={ROUTES.root} />
+// Temp comment
   }
 
   const [formType, setFormType] = useState('Candidate');

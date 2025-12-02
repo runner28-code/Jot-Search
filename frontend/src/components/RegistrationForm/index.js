@@ -11,7 +11,6 @@ import {
   skills as skillChoices,
 } from '../../utils/skillHierarchyMap';
 import {
-  inputValidation,
   formatFormObj,
   renderButtonOrLoading,
   renderErrorBlock,
@@ -130,6 +129,7 @@ export default function RegistrationForm(loggedIn) {
         });
       }, 2000);
     }
+  }, [submissionObject.success])
 
   async function handleSubmit(event) {
     event.preventDefault();

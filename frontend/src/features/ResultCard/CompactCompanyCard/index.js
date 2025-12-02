@@ -57,7 +57,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
 
 CompactCompanyCard.propTypes = {
   data: PropTypes.shape({
-// Temp comment
     id: PropTypes.string,
     company_logo: PropTypes.string,
     name: PropTypes.string,

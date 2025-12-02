@@ -175,7 +175,6 @@ export default function Apply() {
         ...applicationObject,
         community: ''
       });
-// Temp comment
     }
     handleChange(name, value);
   }

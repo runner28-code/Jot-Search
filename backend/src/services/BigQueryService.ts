@@ -68,7 +68,6 @@ export class BigQueryService {
 
             const [job] = await BigQueryService.getClient().createQueryJob(options);
             const res = await job.getQueryResults();
-
             return { result: true, res, data};
         } catch (error) {
             console.log(error);

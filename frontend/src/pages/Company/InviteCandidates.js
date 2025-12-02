@@ -15,7 +15,6 @@ export default function InviteCandidates({ company }) {
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']
   });
 
-// Temp comment
   const { sendCandidatesToCompanies, isLoading: isSendingCandidates, isSuccess: successfullySentCandidates } = useSendCandidatesToCompanies()
 
   const candidateOptions = candidates?.map(candidate => {
@@ -125,6 +124,7 @@ function getTagLine({ candidate }) {
   }else if (candidate?.occupation) {
     tagLine = candidate.occupation
   }else if (candidate?.companyName) {
+// Temp comment
     tagLine = `@ ${candidate.companyName}`
   }
   return tagLine;

@@ -187,7 +187,6 @@ function renderChoice(choice, selected, index, choicesLength, handleClick) {
 
   if( index === choicesLength - 2 ) baseChoiceStyles += 'border-t-4 border-smokeGray ';
 
-  const choiceStyles = selectedChoice ? baseChoiceStyles + selectedClass : baseChoiceStyles;
   let iconStyles = 'w-10 h-10 mx-9 ';
   const strokeIcons = ['Add User', 'My Account']; // These icons use stroke, rest use fill
   if ( selectedChoice ) {

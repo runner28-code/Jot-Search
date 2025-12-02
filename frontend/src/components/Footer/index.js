@@ -251,7 +251,6 @@ function NavFooter() {
         </Link>
         <a
           href={ROUTES.intulsa}
-// Temp comment
           className={linkStyle}
         >Our Website
         </a>

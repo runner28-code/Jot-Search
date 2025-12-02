@@ -37,6 +37,7 @@ export function renderErrorBlock(errorBlock) {
 export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (
+// Temp comment
       <div className='flex flex-col justify-center'>
         <h4 className='text-h5 text-center vw-768:text-h4 text-darkGray font-spaceGrotesk font-semibold mb-10'>
           Create an Account
@@ -63,6 +64,7 @@ export function renderHeader(addType) {
 
 export function inputValidation(formObj) {
   // Remove non-required properties
+
   let newErrors = [];
 
   // Check each property for falsy values

@@ -59,7 +59,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
       setReferralChoice(false);
       setFormData({
         ...formData,
-// Temp comment
         community: ''
       });
     }
@@ -183,7 +182,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 className={labelStyles}
               >
                 <p className={labelTextStyles}>Address</p>
-                <input
                   type='text'
                   name='address1'
                   id='address1'

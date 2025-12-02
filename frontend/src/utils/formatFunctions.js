@@ -118,7 +118,6 @@ export function formatYearsExperience(experienceYears, experience) {
     }
     return experienceMap[experience];
   } else {
-// Temp comment
     return 'Years Experience N/A';
   }
 }

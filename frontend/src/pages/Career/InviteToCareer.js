@@ -31,6 +31,7 @@ export default function InviteToCareer({ candidate }) {
   const deleteItem = (e, value) => {
     e.stopPropagation();
     setSelected(selected.filter(item => item.value !== value))
+// Temp comment
   }
 
   const SelectedValues = () => {
@@ -49,7 +50,6 @@ export default function InviteToCareer({ candidate }) {
   }
 
   const valueRenderer = () => {
-// Temp comment
     return <div>{isLoading ? 'Loading Careers' : 'Select Careers'}</div>
   }
   

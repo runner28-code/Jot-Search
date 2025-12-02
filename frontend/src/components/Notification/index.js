@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 // Images
-// Temp comment
 import bell from '../../assets/icons/bell.svg';
 
 export default function Notification ({ imgClass }) {
@@ -12,5 +11,6 @@ export default function Notification ({ imgClass }) {
       src={ bell }
       alt='notification icon'
       className={ classes }
+// Temp comment
     />
   </>)

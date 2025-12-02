@@ -22,7 +22,6 @@ export default function PendingApplications () {
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
         ...job,
-// Temp comment
         agoDate: job.appliedDate
       }});
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
@@ -66,6 +65,7 @@ export default function PendingApplications () {
           </div>
           <h3 className='text-lg text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Apply to an InTulsa Featured Career!</h3>
           <Link
+// Temp comment
             to={ROUTES.careers}
             className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All

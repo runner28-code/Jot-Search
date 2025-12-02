@@ -9,5 +9,6 @@ const testMode = process.argv[2] === "test";
     } catch (error) {
         consoleLog(error);
     }
+    consoleLog('/// CRON_JOB_ENDED: BULLHORN_GET_COMPANIES');
     process.exit();
 })();

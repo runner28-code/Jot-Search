@@ -8,6 +8,7 @@ import API from '../../services/API';
 
 export default function ResetPassword() {
   const [error, setError] = useState('');
+// Temp comment
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [match, setMatch] = useState('');
@@ -37,7 +38,6 @@ export default function ResetPassword() {
       const { password } = event.target;
       const res = await API.post(ROUTES.APIResetPassword, {
         new_password: password.value,
-// Temp comment
         token: token
       });
 

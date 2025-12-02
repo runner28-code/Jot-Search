@@ -3,13 +3,11 @@ import { useState, useEffect } from 'react';
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
-// Temp comment
     width,
     height
   };
 }
 
-export default function useWindowDimensions() {
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
   useEffect(() => {

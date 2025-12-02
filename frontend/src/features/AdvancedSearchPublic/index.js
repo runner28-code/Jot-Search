@@ -192,6 +192,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
             filterProps={filterProps}
           />
         </div>
+      </div>
       <ResultsHeader
         total={totalResults}
         type={activeTab}

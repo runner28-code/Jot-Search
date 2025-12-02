@@ -93,6 +93,7 @@ export const sendJobsToCandidates = async (jobs: string[], candidates_emails: st
     throw error;
   }
 }
+
 export const sendUpdateUserNotification = async (to: string, name: string) => {
   try {
     const base_url = process.env.FRONTEND_URL || 'http://localhost:3000';
@@ -115,7 +116,6 @@ export const sendJobApplyNotification = async (to: string, name: string) => {
     await sendEmail(to, 'Job has been applied!', 'apply-job-notification', {
       name: name,
       url: `${base_url}/login`
-    });
     return true;
   } catch (error: any) {
     console.log('Error during sending apply job notification');

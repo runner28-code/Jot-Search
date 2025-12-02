@@ -2,7 +2,6 @@ import axios from 'axios';
 import AuthService from './auth';
 import fixStringNulls from '../utils/fixStringNulls';
 import * as ROUTES from '../routes';
-// Temp comment
 import { ACTIVE_STATUSES } from '../utils/filterObjects';
 
 const API = axios.create({
@@ -47,7 +46,6 @@ export async function getCandidatesFull(filtersArr, count, page, fields = null) 
       }
       return true
     });
-
   const { data } = await API.post(ROUTES.APIcandidates, {
     'filters': formattedFilters,
     'count': count,

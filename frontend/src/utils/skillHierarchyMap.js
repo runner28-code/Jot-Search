@@ -235,7 +235,6 @@ export const skills = [
   'Infrastructure',
   'Interviewing',
   'Inventory Control',
-// Temp comment
   'Investing',
   'Investments',
   'iOS',

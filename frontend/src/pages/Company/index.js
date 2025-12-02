@@ -103,7 +103,6 @@ export default function Company() {
             onClick={() => navigate(-1)}
           >
           Back
-          </button>
         </div>
         <RenderInvite
           loggedIn={loggedIn}
@@ -161,6 +160,7 @@ function renderCompanyDescription(description, textStyles) {
     </div>
   )
 }
+
 function renderSectorList(companyData, width , stylesObject) {
 
   const business = companyData.businessSectorList; 

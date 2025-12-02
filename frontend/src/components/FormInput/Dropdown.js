@@ -46,6 +46,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
             {renderActiveIcon(choice, currentChosen)}
           </div>
           { renderHorizontalRule(index, choices.length) }
+// Temp comment
         </div>)
       })}
     </div>

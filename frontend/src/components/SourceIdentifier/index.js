@@ -13,7 +13,6 @@ export default function SourceIdentifier( type ) {
   </>)
 }
 SourceIdentifier.propTypes = {
-  type: PropTypes.string
 }
 
 function renderSwitch(type) {

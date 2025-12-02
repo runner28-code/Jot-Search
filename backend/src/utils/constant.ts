@@ -426,6 +426,7 @@ const job_filter_exclude_keys = [
   "volleyball",
   "volunteer",
   "warehouse",
+  "wares",
   "warning",
   "water",
   "water service",

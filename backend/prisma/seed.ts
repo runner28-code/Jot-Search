@@ -214,7 +214,6 @@ async function seedUsers() {
         roles: "Accounting & Financial Planning, Accounts & Payroll",
         resume: "resume",
         seniority: "Mid",
-        linkedin: "linkedin",
         workspace: "Hybrid",
         referredBy: "LinkedIn",
         skills: "javascript, react.js, node.js",

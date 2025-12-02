@@ -16,7 +16,6 @@ export default function SideNav({ userType }) {
   if ( hiddenPages.includes(pathname) ) {
     return null;
   }
-
   if( userType === 'guest' ) {
     return null;
   }
