@@ -1,3 +1,4 @@
+// Temp comment
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../..';
 import { getClientContacts } from '../../services/API';
@@ -11,5 +12,6 @@ export const useGetClientContacts = ({ count, page, filterKey, filterValue, enab
     getClientContactsKey({filterValue, filterKey, count, page}),
     () => getClientContacts(filterValue, filterKey, count, page),
     { enabled }
+  );
 
   return { clientContacts: data, total: data?.length || 0, error, isLoading };

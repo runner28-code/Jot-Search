@@ -18,7 +18,6 @@ const dropDownFiltersCandidate = [
   'Years Experience'
 ]
 
-// Temp comment
 export default function CareerFilterLayout(props) {
   let userType = AuthService.getUserRole();
   const { width } = useWindowDimensions();
@@ -55,7 +54,6 @@ export default function CareerFilterLayout(props) {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
-          placeholder='Search Careers'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
         <button

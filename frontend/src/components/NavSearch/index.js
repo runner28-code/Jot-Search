@@ -111,6 +111,7 @@ export default function NavSearch({ placeholder }) {
     </div>
   )
 }
+
 NavSearch.propTypes = {
   placeholder: PropTypes.string
 }

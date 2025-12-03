@@ -76,7 +76,6 @@ export function inputValidation(formObj) {
       }
     }
   });
-
   if ( formObj.linkedin.slice(0, 8) !== 'https://' ) { // Ensure valid URL
     newErrors.push('linkedin');
   }

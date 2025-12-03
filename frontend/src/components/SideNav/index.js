@@ -1,5 +1,4 @@
 import { Link, useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
@@ -58,6 +57,7 @@ function renderChoice(choice, selected, index, choicesLength) {
   return (
     <Link
       to={choice.link}
+      className={choiceStyles}
       key={choice.label}
     >
       <Icon

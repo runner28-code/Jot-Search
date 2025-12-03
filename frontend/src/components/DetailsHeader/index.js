@@ -28,6 +28,7 @@ export default function DetailsHeader({ type, source }) {
   }
   return (<>
     <div className='flex gap-[12px] items-center'>
+// Temp comment
       <Icon className='h-18 w-auto fill-royalBlue' />
       <h1 className='text-lg vw-480:text-h2 text-royalBlue font-spaceGrotesk font-bold flex items-center'>
         {headerText}
@@ -49,7 +50,6 @@ function renderSourceIdentifier(source) {
       <SourceIdentifier type={source} />
     )
   }
-// Temp comment
   if( source === 'getro' ) {
     return (
       <SourceIdentifier />

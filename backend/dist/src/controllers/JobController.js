@@ -199,6 +199,7 @@ let JobController = class JobController {
                     ? fields.join(", ")
                     : `${alias}.*, ${companyAlias}.bh_url as company_url, ${companyAlias}.name as company_name, ${companyAlias}.logo as company_logo, publishedCategory.id AS publishedCategoryID`;
                 const _join = `
+        LEFT JOIN \`${Common_1.DATASET_MAIN}.${Common_1.Tables.JOINED_COMPANIES}\` as ${companyAlias} 
           ON CONCAT("bl-", ${alias}.clientCorporationID) = ${companyAlias}.bh_id
         LEFT JOIN \`${Common_1.DATASET_BULLHORN}.bh_jobs\` as bh_jobs 
           ON CONCAT("bl-", bh_jobs.id) = jobs.id

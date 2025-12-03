@@ -94,6 +94,7 @@ const mockCandidateData = [
     school: 'Oklahoma State',
     isLooking: false,
     isWarm: false,
+  },
 ];
 
 export const CandidateContext = createContext();

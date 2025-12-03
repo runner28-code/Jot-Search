@@ -185,7 +185,6 @@ export class CompanyController {
     for (const companyId of body.companyIds) {
       for (const candidateId of body.candidateIds) {
         companyCandidateInvites.push({
-          companyId,
           candidateId,
         })
       }
@@ -214,6 +213,7 @@ export class CompanyController {
       const { page, count, filters } = body;
 
       const wheres = normalizeFilters(filters)
+
       const skip = (count || 0) * ((page - 1) || 0)
 
       const companiesPromise = db.company.findMany({

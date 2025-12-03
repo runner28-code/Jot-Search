@@ -38,6 +38,7 @@ exports.IUSER = {
     dateFounded: "",
     employeeType: "",
     experience: "",
+    hourlyRate: "",
     willRelocate: "",
     willReceiveNotification: false,
     ethnicity: "",
@@ -47,4 +48,3 @@ exports.IUSER = {
     employmentPreference: "",
     activelyLooking: true,
 };
-exports.USERKEYS = Object.keys(exports.IUSER);

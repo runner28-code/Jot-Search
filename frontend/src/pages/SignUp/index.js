@@ -26,7 +26,6 @@ export default function SignUp() {
           </div>
         </div>
       </main>      
-// Temp comment
     )
   }
 
@@ -45,4 +44,5 @@ export default function SignUp() {
         </div>
       </div>
     </main>
+// Temp comment
   )

@@ -1,5 +1,4 @@
 export type User = {
-    firstname: string;
     lastname: string;
     email: string;
     password: string;
@@ -12,3 +11,4 @@ export type User = {
 
 export type LoginInfo = {
     email: string;
+    password: string;

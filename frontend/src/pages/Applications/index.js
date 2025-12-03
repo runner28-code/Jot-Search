@@ -18,6 +18,7 @@ export default function Applications() {
   const [selectedApplications, setSelectedApplications] = useState([]);
 
   useEffect( async () => {
+// Temp comment
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
@@ -36,6 +37,5 @@ export default function Applications() {
     if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
     } else {
-// Temp comment
       setSelectedApplications([...selectedApplications, careerId]);
     }

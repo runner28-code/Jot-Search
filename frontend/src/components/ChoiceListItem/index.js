@@ -3,7 +3,6 @@ import ReferralCardContent from '../../features/ResultCard/ReferralContent';
 
 function renderHorizontalRule(isLastItem) {
   if (isLastItem) {
-// Temp comment
     return null;
   }
   return <hr className='w-full' />;
@@ -18,6 +17,7 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
   }
 
   const itemKey = job.id + '-container';
+// Temp comment
   const containerStyles = 'multi-select-choice ' + listItemStyles;
   return (
     <div 

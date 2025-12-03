@@ -21,13 +21,13 @@ const constant_1 = require("./constant");
 const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const query = `
+            SELECT * FROM \`${datset}.${table}\`
             WHERE id=${id}
         `;
         const options = {
             query: query,
             location: 'US',
         };
-        const [job] = yield BigQueryService_1.BigQueryService.getClient().createQueryJob(options);
         const [res] = yield job.getQueryResults();
         if (res && res.length > 0 && `'${res[0].id}'` === id) {
             return true;

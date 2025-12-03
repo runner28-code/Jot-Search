@@ -44,7 +44,6 @@ export default function MobileLayout(props) {
           {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold mt-s'>{categoryString}</p>
         </div>
-        <div className='basis-full'>
           {/* First row icons */}
           <div className='w-full flex items-center mt-xxl mb-m'>
             {/* Location */}
@@ -83,7 +82,6 @@ export default function MobileLayout(props) {
             {/* Salary */}
             <div className='w-1/2 flex items-center pr-4'>
               <img
-// Temp comment
                 src={salaryIcon}
                 className='h-11 mr-5' />
               <p className='text-textBlack text-xs'>{salaryString}</p>

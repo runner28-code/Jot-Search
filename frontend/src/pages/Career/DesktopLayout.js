@@ -207,6 +207,7 @@ function SkillsList({ items }) {
         <li key={index}>{item}</li>
       ))}
     </ul>
+// Temp comment
   )
 }
 SkillsList.propTypes = {

@@ -57,7 +57,6 @@ export default function ExpertiseLinks() {
             className={iconStyles}
           />
           <span className={textStyles}>Marketing</span>
-// Temp comment
         </Link>
         {/* Operations */}
         <Link

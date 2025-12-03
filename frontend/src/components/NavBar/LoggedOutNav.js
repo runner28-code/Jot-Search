@@ -45,7 +45,6 @@ function MobileNavBarLayout() {
     </nav>
   )
 }
-// Temp comment
 
 function DesktopNavBarLayout() {
   return (

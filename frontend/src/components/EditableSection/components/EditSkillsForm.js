@@ -25,6 +25,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
       type='typeahead'
       dropdownType='tags'
       name='primarySkills'
+      placeholder='Add/Remove Skills'
       choices={skillChoices}
       currentChosen={splitSkills}
       onChange={onChange}
@@ -41,7 +42,6 @@ EditSkillsForm.defaultProps = {
 EditSkillsForm.propTypes = {
   skills: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired,
-}
 
 function renderChosen(skills, onChange) {
   return (

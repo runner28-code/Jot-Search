@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// Temp comment
 import { Link, useLocation } from 'react-router-dom';
 import { MdLogin } from 'react-icons/md';
 import { FaUserEdit } from 'react-icons/fa';
@@ -25,6 +26,5 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
     >
       <FaUserEdit className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Signup</span>
-// Temp comment
     </Link>
   </>)

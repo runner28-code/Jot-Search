@@ -48,7 +48,6 @@ const defaultCommunity = {
 }
 export default function RegistrationForm(loggedIn) {
   const {categories} = useContext(CategoryContext);
-// Temp comment
   const [formObj, setFormObj] = useState(defaultState);
   const [errors, setErrors] = useState([]);
   const [errorBlock, setErrorBlock] = useState('');

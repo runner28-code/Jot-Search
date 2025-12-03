@@ -27,7 +27,6 @@ export default function Stats({ userType }) {
       case 'Last 7 Days':
         return 7;
       case 'Last 14 Days':
-// Temp comment
         return 14;
       case 'Last 90 Days':
         return 90;

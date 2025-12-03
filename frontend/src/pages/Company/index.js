@@ -88,7 +88,6 @@ export default function Company() {
           {/* Funding */}
           <div className='p-6'>
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>Funding</h4>
-// Temp comment
             { renderCompanyDescription(companyData.funding, 'text-md mb-10 leading-[32px]') }
           </div>          
         </div>
@@ -116,6 +115,7 @@ export default function Company() {
 }
 Company.propTypes = {
   companyDescription: PropTypes.string
+// Temp comment
 }
 
 function RenderHeader({type, loggedIn}) {

@@ -21,6 +21,8 @@ var Tables;
     Tables["JOINED_CANDIDATES"] = "candidates_joined";
     Tables["CATEGORIES"] = "Categories";
 })(Tables = exports.Tables || (exports.Tables = {}));
+exports.DATASET_BULLHORN = config_1.default.bullhornDatasetID || "";
+// Temp comment
 exports.DATASET_GETRO = config_1.default.getroDatasetID || "";
 exports.DATASET_MAIN = config_1.default.mainDatasetID || "";
 // Common

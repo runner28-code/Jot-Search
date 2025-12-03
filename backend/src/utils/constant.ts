@@ -479,6 +479,7 @@ export const JOB_FIELDS = [
   "hoursOfOperation",
   "hoursPerWeek",
   "interviews",
+  "isClientEditable",
   "isDeleted",
   "isInterviewRequired",
   "isJobcastPublished",

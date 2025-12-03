@@ -76,6 +76,7 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
     return avatarUrl;
   }
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;
+// Temp comment
 }
 
 export function formatPhoneNumber(phoneNumberString) {
@@ -95,7 +96,6 @@ export function formatPhoneNumber(phoneNumberString) {
     const lastFour = phoneNumberString.slice(6, 10);
     return `(${areaCode}) ${firstThree}-${lastFour}`;
   }
-// Temp comment
   if ( phoneNumberString[0] === '+' ) {
     const internationalCode = phoneNumberString.slice(0, 2);
     const areaCode = phoneNumberString.slice(2, 5);
