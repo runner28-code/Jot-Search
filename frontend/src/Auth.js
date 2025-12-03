@@ -9,7 +9,6 @@ import {
   Favorites,
   Logout,
   Profile,
-} from './pages';
 import AuthService from './services/auth';
 import * as ROUTES from './routes';
 

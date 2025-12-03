@@ -175,6 +175,7 @@ export class JobController {
         const getroCompany = getroCompanies.find((gc: any) => gc.domain === job.company?.companyURL)
         if (getroCompany) {
           job.company.logo = getroCompany.logo_url
+        }
         job.company_name = job.company?.name
         job.company_logo = job.company?.logo
         return job
@@ -271,7 +272,6 @@ export class JobController {
       table,
       _fields,
       count,
-      condition
     )) as Job[];
   }
 

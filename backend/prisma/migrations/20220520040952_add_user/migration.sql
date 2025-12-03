@@ -28,7 +28,6 @@ CREATE TABLE "User" (
     "seniority" TEXT,
     "username" TEXT,
     "logo" TEXT,
-    "companyName" TEXT,
     "annualRevenue" TEXT,
     "companyURL" TEXT,
     "numEmployees" TEXT,

@@ -44,7 +44,6 @@ export default function JoinTalentNetwork() {
           </h1>
           <p className='text-ml text-softWhite mt-18'>
             Build your profile with the type of opportunity you want to attract and next exclusively with our network. Receive email alerts that make you first to know about relevant new opportunities, based on your preferences.
-// Temp comment
           </p>
           <Link
             to={ROUTES.signup}

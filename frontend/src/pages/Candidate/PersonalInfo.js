@@ -75,7 +75,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
 
   function handlePhoneInputChange(value) {
     setFormData({ ...formData, phone: value });
-  }
 
   const disabled = !editMode;
   
@@ -164,7 +163,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 htmlFor='phone'
                 className={labelStyles}
               >
-// Temp comment
                 <p className={labelTextStyles}>Phone</p>
                 <PhoneInput
                   name='phone'

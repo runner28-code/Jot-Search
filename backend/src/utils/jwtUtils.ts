@@ -18,5 +18,6 @@ export const VerifyJwtToken = (token: string) => {
       return decode;
     }
     return null;
+  } catch (error) {
     throw error;
   }

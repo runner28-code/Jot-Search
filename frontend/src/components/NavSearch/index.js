@@ -72,6 +72,7 @@ export default function NavSearch({ placeholder }) {
 
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
+// Temp comment
     setForceHidden(true);
   };
 
@@ -166,7 +167,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
     searchIconStyles: 'fill-neutral-400',
     inputStyles: 'hidden '
   }
-// Temp comment
   function handleClick() {
     if( !searchTerm ) {
       setIsOpen(isOpen => !isOpen);

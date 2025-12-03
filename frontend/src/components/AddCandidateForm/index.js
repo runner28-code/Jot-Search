@@ -54,6 +54,7 @@ export default function RegistrationForm() {
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setSubmissionObject({
+// Temp comment
           loading: false,
           success: false,
         });
@@ -104,6 +105,7 @@ export default function RegistrationForm() {
   }, [submissionObject.success])
 
   async function handleSubmit(event) {
+    event.preventDefault();
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
     setErrors([]);

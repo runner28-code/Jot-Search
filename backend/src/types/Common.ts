@@ -15,7 +15,6 @@ export enum Tables {
   CONTACTS = "Contacts",
   LEADS = "Leads",
   CANDIDATES = "Candidates",
-  APPLICATIONS = "Applications",
   SAVEDJOBS = "SavedJobs",
   SAVED_COMPANIES = "SavedCompanies",
   SAVED_CANDIDATES = "SavedCandidates",
@@ -48,6 +47,7 @@ export type AdvancedFilterOption = {
   key: string;
   value: string | string[];
   operator?: Operator;
+};
 
 export type FilterBody = {
   filters?: any;

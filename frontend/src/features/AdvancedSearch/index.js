@@ -31,6 +31,8 @@ const availableTabChoicesByUserType = {
   candidate: ['careers', 'companies'],
   guest: ['careers', 'companies'],
 }
+// Temp comment
+
 function useTabState(disabledTabs, userType, pathname) {
   if (disabledTabs) {
     switch (pathname) {

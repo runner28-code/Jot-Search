@@ -52,7 +52,6 @@ export default function AccessibleDropdown(props) {
         <Button
           className={ `${buttonStyles} ${disabled ? 'disabled cursor-not-allowed' : ''}` }
           disabled={disabled}>
-// Temp comment
           <span>{ buttonText(name, placeholder, currentChosen) }</span>
           { renderDropdownArrow(showDropdownArrow) }
         </Button>
@@ -195,7 +194,6 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
     listItemStyles += stylesObject.listItemStyles;
   }
 
-  return Object.entries(choiceObject).map( ([key, value], index) => {
     if ( !value ) {
       return null;
     }

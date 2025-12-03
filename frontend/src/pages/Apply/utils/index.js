@@ -31,6 +31,7 @@ export const defaultState = {
   phone: '',
   willRelocate: true,
   referral: '',
+  resume: '',
   newResume: {},
   ethnicity: '',
   gender: '',
@@ -80,6 +81,7 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
         onChange={handleChange}
         disabled={disabled}
       />
+// Temp comment
       <p className='text-md ml-2'>{attribute}</p>
     </label>
   )

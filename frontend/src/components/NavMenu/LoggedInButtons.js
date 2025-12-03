@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
-import { MdLogout } from 'react-icons/md';
 import { FiEdit as ProfileIcon } from 'react-icons/fi';
 
 export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
@@ -13,7 +12,6 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
       className={linkStyles}
     >
       <ProfileIcon className={stylesObject.iconStyles} />
-// Temp comment
       <span className={stylesObject.spanStyles}>Profile</span>
     </Link>
     <hr className={stylesObject.hrStyles} />

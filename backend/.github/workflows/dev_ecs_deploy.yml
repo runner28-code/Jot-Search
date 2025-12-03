@@ -35,7 +35,6 @@ jobs:
       uses: aws-actions/amazon-ecr-login@v1
 
     - name: Add secrets to task definition
-      uses: cschleiden/replace-tokens@v1
       with:
         files: ${{ env.ECS_TASK_DEFINITION }}
         tokenPrefix: '{'
@@ -82,6 +81,7 @@ jobs:
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
+      uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: ${{ env.ECS_SERVICE }}

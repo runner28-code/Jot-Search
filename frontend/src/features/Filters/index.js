@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import Filter from './Filter';
 import FilterSearch from '../../components/FilterSearch';
 
-// Temp comment
 export default function Filters(props) {
   const {
     handleFilterChange,
@@ -58,6 +57,7 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
     return null;
   }
 
+// Temp comment
   return Object.entries(defaultFilterObject).map(([key, value]) => {
     if (!filterObject[key]) {
       return null;

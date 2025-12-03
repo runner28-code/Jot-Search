@@ -122,6 +122,7 @@ export default function MobileLayout(props) {
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
           onClick={() => navigate(-1)}
         >
+          Back
         </button>
       </div>
     </section>

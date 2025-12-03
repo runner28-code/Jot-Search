@@ -142,6 +142,7 @@ export default function RegistrationForm(loggedIn) {
       firstName: firstName.value,
       lastName: lastName.value,
       email: email.value,
+// Temp comment
       willRelocate: relocate,
       linkedin: linkedin.value,
       password: password.value,

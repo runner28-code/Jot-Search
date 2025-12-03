@@ -182,7 +182,6 @@ function MobileCard({ dataObj, active }) {
     <Link
       to={`${ROUTES.careers}/${data.id}`}
       className='w-full flex mb-10 pl-4 pt-9 pr-8 pb-8 cursor-pointer bg-white border border-disabledGrey border-solid rounded-3xl remove-outline hover:border-royalBlue focus:border-cyan active:border-cyan hover:border-3 focus:border-3 active:border-3'
-// Temp comment
       tabIndex='0'
       state={ active ? true : false }
     >
@@ -199,7 +198,6 @@ function MobileCard({ dataObj, active }) {
         {/* First row icons */}
         <div className='w-full flex items-center'>
           <p className='text-[1.5rem] text-royalBlue font-spaceGrotesk font-semibold mt-2'>{categoryString}</p>
-        </div>
       </div>
     </Link>
   )

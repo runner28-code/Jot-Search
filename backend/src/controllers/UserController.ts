@@ -208,32 +208,3 @@ export class UserController {
           "Only coordinators can make registration requests for other coordinators",
       };
     }
-
-    return await register(data);
-  }
-
-  @Authorized()
-  @Post("/user/update")
-  async update(@Body() user: User, @CurrentUser() authUser: User) {
-    return await update(authUser.id!, authUser.role, user);
-  }
-
-  @Authorized()
-  @Get("/stats")
-  async stats(@CurrentUser() authUser: User) {
-    return await getStats(authUser.id!);
-  }
-
-  @Get("/landing-page-stats")
-  async landingPageStats() {
-    return await getLandingPageStats();
-  }
-
-  @Get("/company-stats")
-  async getCompanyStats(@QueryParams() queryParams: { duration: number }) {
-    const { duration } = queryParams;
-    return await getCompanyDashboardStats(duration);
-  }
-
-  @Get("/coordinator-stats")
-  async getCoordinatorStats(@QueryParams() queryParams: { duration: number }) {

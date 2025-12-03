@@ -4,7 +4,6 @@ const config = {
   port: process.env.PORT,
   projectId: process.env.PROJECT_ID,
   authSecret: process.env.AUTH_SECRET,
-  fileUploadSize: process.env.FILE_UPLOAD_SIZE,
 
   getroEmail: process.env.GETRO_EMAIL,
   getroPassword: process.env.GETRO_PASSWORD,
@@ -22,6 +21,7 @@ const config = {
   sendgridSecret: process.env.SENDGRID_SECRET,
   mailSenderEmail: process.env.MAIL_SENDER_EMAIL,
   frontendUrl: process.env.FRONTEND_URL,
+
   enableCronJobs: process.env.ENABLE_CRON_JOBS,
 };
 

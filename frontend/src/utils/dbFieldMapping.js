@@ -9,6 +9,7 @@ export const disabilityMap = {
 
 export const veteranStatusMap = {
   U: 'I prefer not to say',
+  A: 'I have applied for membership in the uniformed service',
   R: 'I am present memeber of the uniformed service',
   S: 'I am a past member of the uniformed service',
   O: 'I am obligated to serve in the uniformed service',
@@ -31,7 +32,6 @@ export const ethnicityMap = {
   WH: 'White or Caucasian',
   IA: 'Native American or Alaska Native',
   HL: 'Hispanic or Latina/Latino or LatinX',
-  AS: 'Asian',
   M: 'Multiracial',
   O: 'Other'
 };

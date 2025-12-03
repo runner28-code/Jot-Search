@@ -82,6 +82,7 @@ class AuthService {
     }
   }
 
+  async refreshSavedCandidates() {
     try {
       const { user_id } = this.getProfile();
       const candidates = await getSavedCandidates(user_id);

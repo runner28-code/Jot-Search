@@ -123,7 +123,6 @@ function StatCard({ stat, value }) {
 StatCard.propTypes = {
   stat: PropTypes.string.isRequired,
   value: PropTypes.shape({
-    count: PropTypes.number.isRequired,
     compare: PropTypes.number.isRequired
   }).isRequired
 }
