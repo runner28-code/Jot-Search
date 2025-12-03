@@ -72,7 +72,6 @@ export default function NavSearch({ placeholder }) {
 
   /* Close dropdown on any outside clicks */
   const closeDropdown = () => {
-// Temp comment
     setForceHidden(true);
   };
 

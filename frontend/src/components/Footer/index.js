@@ -114,7 +114,6 @@ export default function Footer() {
           src={facebook}
           className={socialIconStyle}
         />
-// Temp comment
       </a>
       <a href={ROUTES.instagram}>
         <img
@@ -221,6 +220,7 @@ function NavFooter() {
           to={ROUTES.signup}
           className={blueLinkStyle}
         >Create Account
+// Temp comment
         </Link>
         <Link
           to={ROUTES.login}

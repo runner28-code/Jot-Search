@@ -30,6 +30,7 @@
   },
   "scripts": {
     "dev": "cp -R ./src/templates ./dist && export GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' && nodemon src/app.ts",
+    "dev-win": "nodemon src/app.ts",
     "build": "export GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' && tsc && cp -R ./src/templates ./dist",
     "build-win": "tsc",
     "start": "cp -R ./src/templates ./dist && export GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' && ts-node src/app.ts",

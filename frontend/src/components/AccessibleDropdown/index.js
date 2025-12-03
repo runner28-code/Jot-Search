@@ -194,6 +194,7 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
     listItemStyles += stylesObject.listItemStyles;
   }
 
+  return Object.entries(choiceObject).map( ([key, value], index) => {
     if ( !value ) {
       return null;
     }

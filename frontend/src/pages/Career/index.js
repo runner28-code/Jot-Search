@@ -110,6 +110,7 @@ function renderNotification(activeData, careerData) {
   return null
 }
 
+// Temp comment
 function Notification({title, content, text, email, company, id, add}) {
 
   return (

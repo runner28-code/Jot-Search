@@ -501,3 +501,4 @@ export const JOB_FIELDS = [
   "skillList",
   "source",
   "startDate",
+  "status",

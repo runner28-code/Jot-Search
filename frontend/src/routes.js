@@ -95,4 +95,3 @@ export const linkedin = 'https://www.linkedin.com/company/talent-intulsa/?utm_so
 export const twitter = 'https://twitter.com/talentintulsa?utm_source=talentwebsite&utm_medium=web&utm_campaign=footer-menu';
 export const facebook = 'https://www.facebook.com/talentintulsa?utm_source=talentwebsite&utm_medium=web&utm_campaign=footer-menu';
 export const instagram = 'https://www.instagram.com/talentintulsa/?utm_source=talentwebsite&utm_medium=web&utm_campaign=footer-menu';
-export const youtube = 'https://www.youtube.com/channel/UCkIjDMz9QaOBZgXVgwYoyNA/videos';

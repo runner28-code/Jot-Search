@@ -106,6 +106,7 @@ let JobController = class JobController {
                     }
                 }); // TODO: assumes we are changing frontend to pass compatible fields and filters params
                 const totalPromise = db_1.default.job.count({
+                    where,
                 });
                 const [jobs, total] = yield Promise.all([jobPromise, totalPromise]);
                 const companyURLs = jobs.filter(job => { var _a; return (_a = job.company) === null || _a === void 0 ? void 0 : _a.companyURL; })

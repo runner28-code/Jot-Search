@@ -12,7 +12,6 @@ export default function TextInput({type, name, placeholder, label, value, requir
 
   return (
     <div className='w-full'>
-// Temp comment
       { renderLabel( label, required, name ) }
       { renderInput( name, type, baseStyles, placeholder, value, onChange, handleChange, disabled ) }
     </div>
@@ -37,6 +36,7 @@ function renderLabel( label, required, name ) {
   }
 
   const labelString = label && required ? `${label} *` : label;
+// Temp comment
   return (
     <label
       className={`block text-charcoal text-xs vw-640:text-base ml-xxs mb-xs`}

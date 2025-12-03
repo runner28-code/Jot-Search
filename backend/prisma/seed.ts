@@ -170,7 +170,6 @@ async function seedCompanies() {
         companyDescription: "Best at test",
         numEmployees: 50,
       },
-    ],
   });
 }
 
@@ -230,3 +229,4 @@ async function seedUsers() {
 main()
   .catch((e) => {
     console.error(e);
+    process.exit(1);

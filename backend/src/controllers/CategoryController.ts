@@ -43,6 +43,7 @@ export class CategoryController {
 
   @Post("/search")
   async searchByFilter(
+    @Body() body: FilterBody
   ): Promise<CategorySearchByFilterResponse> {
     try {
       const { filters, fields, page, count, operator } = body;

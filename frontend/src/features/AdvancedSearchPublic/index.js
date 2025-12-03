@@ -112,7 +112,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
     });
     setPage(1);
   }
-// Temp comment
 
   function handleSearchChange(searchTerm) {
     setFilterObject({ ...filterObject, title: searchTerm });

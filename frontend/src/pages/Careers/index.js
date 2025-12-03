@@ -22,6 +22,7 @@ export default function Careers() {
   const { width } = useWindowDimensions();
 
   function togglePassState() {
+    setToggle(toggle => !toggle);
   }
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>

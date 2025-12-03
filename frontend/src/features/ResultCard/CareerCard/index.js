@@ -141,6 +141,7 @@ function DesktopCard({ dataObj, active }) {
             <p className='text-textBlack'>{salaryString}</p>
           </div>
         </div>
+// Temp comment
       </div>
     </Link>
   )
@@ -198,6 +199,7 @@ function MobileCard({ dataObj, active }) {
         {/* First row icons */}
         <div className='w-full flex items-center'>
           <p className='text-[1.5rem] text-royalBlue font-spaceGrotesk font-semibold mt-2'>{categoryString}</p>
+        </div>
       </div>
     </Link>
   )

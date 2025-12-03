@@ -639,3 +639,4 @@ export const recovery = async (email: string) => {
   try {
 
     const user = await findUserByEmail(email);
+    if (!user) return { result: false, error: "User does not exist" };

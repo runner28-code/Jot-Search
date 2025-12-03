@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
-// Temp comment
 import PropTypes from 'prop-types';
 import {
   FiChevronLeft as BackIcon,
@@ -48,7 +47,6 @@ const ResumePreview = ({ resumeUrl }) => {
                 onClick={() => setPage(page + 1)}
               >
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
-              </button>
             </li>
           </ul>
         </nav>

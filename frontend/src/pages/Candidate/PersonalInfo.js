@@ -75,6 +75,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
 
   function handlePhoneInputChange(value) {
     setFormData({ ...formData, phone: value });
+  }
 
   const disabled = !editMode;
   
@@ -241,6 +242,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 onToggle={handleInputChange}
                 disabled={disabled}
               />
+// Temp comment
               <span className='text-md font-semibold'>{formData.workAuthorized ? 'Yes' : 'No'}</span>
             </div>
           </div>

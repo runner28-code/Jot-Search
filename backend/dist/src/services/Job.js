@@ -57,7 +57,6 @@ const validateJob = (job) => {
 };
 const sanitizeJob = (job) => {
     const newJob = Object.assign({}, job);
-// Temp comment
     Object.keys(newJob).forEach((key) => {
         const typedKey = key;
         if (!Job_1.ALLOWED_JOB_KEYS.has(typedKey)) {

@@ -21,7 +21,6 @@ export default function InviteCandidates({ company }) {
     return {
       label: candidate.name,
       value: candidate.id,
-      candidate
     }
   }) || [];
   

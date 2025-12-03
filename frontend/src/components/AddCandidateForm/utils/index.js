@@ -33,7 +33,6 @@ export function renderErrorBlock(errorBlock) {
 }
 
 export function renderHeader(addType) {
-// Temp comment
   if ( addType === 'candidate' ) {
     return (
       <h2 className='text-h4 vw-768:text-h2 text-royalBlue font-bold mb-16 text-center'>{ 'Let\'s create your account' }</h2>
@@ -59,5 +58,4 @@ export function inputValidation(formObj) {
   }
   if (formObj.skills.length < 3 ) {
     newErrors.push('skills');
-  }
   return newErrors;

@@ -51,6 +51,7 @@ function renderSourceIdentifier(source) {
   }
   if( source === 'getro' ) {
     return (
+      <SourceIdentifier />
     )
   }
   return null;

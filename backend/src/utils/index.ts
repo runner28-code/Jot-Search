@@ -123,3 +123,4 @@ export const determineCondition = (
     } else if (nonStringFields.has(key) || typeof value !== "string") {
       return `${key} = ${value}`;
     } else {
+      return `LOWER(${key}) LIKE '%${value.toLowerCase()}%'`;

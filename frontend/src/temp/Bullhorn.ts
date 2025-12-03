@@ -333,3 +333,4 @@ export type Lead = {
     reportToPerson?: string;
     role?: string;
     salary?: string;
+    salaryLow?: string;

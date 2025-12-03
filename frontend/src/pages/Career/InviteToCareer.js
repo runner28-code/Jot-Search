@@ -10,6 +10,7 @@ import {
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
+import { useGetJobs } from '../../hooks/queries/useGetJobs';
 
 export default function InviteToCareer({ candidate }) {
   const { jobs, isLoading } = useGetJobs({ filtersArr: buildSearchFilters({...defaultJobFilterState}), 
@@ -23,7 +24,6 @@ export default function InviteToCareer({ candidate }) {
       label: job.title,
       value: job.id,
       job
-    }
   }) || [];
   
   const [ selected, setSelected ] = useState([]);

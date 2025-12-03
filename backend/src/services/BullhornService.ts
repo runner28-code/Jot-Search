@@ -814,7 +814,6 @@ export class BullhornService {
             "isDeleted",
             "lastName",
             "leadSource",
-            "massMailOptOut",
             "middleName",
             "mobile",
             "name",
@@ -1004,3 +1003,4 @@ export class BullhornService {
               },
               select: {
                 email: true,
+              }

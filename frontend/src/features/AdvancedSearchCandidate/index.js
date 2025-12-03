@@ -28,7 +28,6 @@ const ITEMS_PER_PAGE = 5;
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
-  candidate: ['jobs', 'companies'],
   guest: ['jobs', 'companies'],
 }
 
@@ -200,7 +199,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
           total={totalResults}
           type={activeTab}
           loading={isLoading}
-// Temp comment
         />
         <ResultContainer
           key={activeResults}

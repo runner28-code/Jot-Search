@@ -52,6 +52,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
     >
       <input
         type='checkbox'
+// Temp comment
         name='useExistingResume'
         className='h-8 w-8 ml-2'
         checked={useExistingResume}
@@ -81,7 +82,6 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
         onChange={handleChange}
         disabled={disabled}
       />
-// Temp comment
       <p className='text-md ml-2'>{attribute}</p>
     </label>
   )

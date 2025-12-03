@@ -37,6 +37,7 @@ export function appendPathToBaseUrl(path) {
 export async function getCandidates(filtersArr, count, page) {
   return (await getCandidatesFull(filtersArr, count, page)).candidates;
 }
+
 export async function getCandidatesFull(filtersArr, count, page, fields = null) {
   const formattedFilters = formatCandidateFilters(filtersArr)
     .filter(filter => {
@@ -97,6 +98,7 @@ export async function saveCandidate(userId, candidateId) {
     AuthService.toggleSavedCandidate(candidateId, 'unsave');
   }
   return normalizeData(data);
+// Temp comment
 }
 
 // COORDINATOR AUTH REQUIRED (handled on back-end), can be used to add any user type

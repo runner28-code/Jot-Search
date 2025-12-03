@@ -143,3 +143,4 @@ export const getJobsList = async (jobs_ids: string[]) => {
           in: jobs_ids,
         },
       },
+    });

@@ -204,6 +204,7 @@ export class CompanyController {
       return {
         result: false,
         error,
+      };
     }
   }
 
@@ -367,3 +368,4 @@ export class CompanyController {
     const result = await BigQueryService.selectQuery(
       _dataset,
       _table,
+      _fields,

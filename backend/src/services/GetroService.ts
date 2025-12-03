@@ -271,6 +271,7 @@ export class GetroService {
                             console.log(`${total} / ${(page - 1) * per_page + items.length}`);
                             page++;
                             repeatErr = -0;
+                        } else {
                             break;
                         }
                     } catch (error) {

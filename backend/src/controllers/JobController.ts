@@ -272,6 +272,7 @@ export class JobController {
       table,
       _fields,
       count,
+      condition
     )) as Job[];
   }
 
@@ -439,3 +440,4 @@ const normalizeValue = (key: string, value: any) => {
         mode: "insensitive",
       };
     }
+  } else if (Array.isArray(value)) {

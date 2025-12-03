@@ -759,3 +759,4 @@ model GetroMember {
   job_search_status        String?
   mentorship               Boolean?
   remote_work              Boolean?
+  require_sponsorship_visa Boolean?

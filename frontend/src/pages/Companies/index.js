@@ -27,7 +27,6 @@ export default function Companies() {
   }
 
   return (
-// Temp comment
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
         loggedIn={loggedIn}
@@ -41,7 +40,6 @@ export default function Companies() {
             : ''
         }>
         <RenderAdvancedSearch
-          loggedIn={loggedIn}
           toggle={toggle}
           userType={userType}
         />

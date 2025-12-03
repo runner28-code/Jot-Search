@@ -49,7 +49,6 @@ export function renderHeader(addType) {
             Already have an account?
           </span>
           <Link
-            to={ROUTES.login}
             className='text-ml text-royalBlue leading-loose underline mx-4'
           >
             Log in here.
@@ -65,7 +64,6 @@ export function inputValidation(formObj) {
   // Remove non-required properties
 
   let newErrors = [];
-// Temp comment
 
   // Check each property for falsy values
   const valuesToSkip = ['phone'];

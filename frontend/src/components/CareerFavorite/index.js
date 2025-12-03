@@ -19,7 +19,6 @@ export default function CareerFavorite () {
         <div className='bg-yellowSquare w-12 h-12' />
         <div className='bg-cyanSquare bg-cyan-400 top-[-20px] right-[5px] absolute w-6 h-6' />
       </div>
-// Temp comment
       <h2 className='font-spaceGrotesk text-h5 text-zinc-500 mb-8 text-center'>My Career Favorites</h2>
       <div className={ width >= 990 ? 'w-full max-w-400 py-5 grid grid-cols-3 gap-16' : 'flex flex-wrap flex-col gap-[15px]'}>
         {
@@ -31,7 +30,6 @@ export default function CareerFavorite () {
                 <CareerCard
                   key={career.id}
                   index={index}
-                  data={career}
                   agoDate={career.createdAt}
                 />
               </>)
