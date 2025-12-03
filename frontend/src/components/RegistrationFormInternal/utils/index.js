@@ -38,7 +38,6 @@ export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (
       <div className='flex flex-col justify-center'>
-        <h4 className='text-h4 text-center vw-768:text-h4 text-darkGray font-spaceGrotesk font-semibold mb-10'>
           Create an Account
         </h4>
         <p className='text-md text-center text-darkGray leading-loose'>
@@ -76,6 +75,7 @@ export function inputValidation(formObj) {
       }
     }
   });
+
   if ( formObj.linkedin.slice(0, 8) !== 'https://' ) { // Ensure valid URL
     newErrors.push('linkedin');
   }

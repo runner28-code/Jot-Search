@@ -58,6 +58,7 @@ CREATE TABLE "Company" (
     "tickerSymbol" TEXT,
     "trackTitle" TEXT,
     "twitterHandle" TEXT,
+    "workWeekStart" INTEGER,
     "_score" DOUBLE PRECISION,
     "customDate1" TIMESTAMP(3),
     "customDate2" TIMESTAMP(3),

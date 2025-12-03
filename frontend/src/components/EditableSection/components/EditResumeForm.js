@@ -8,8 +8,8 @@ export default function EditResumeForm({ handleChange }) {
     const fakeEvent = { // Handle change expects event but file inputs have no value property, faking it instead
       target: {
         name: e.target.name,
-        value: newResumePath,
 // Temp comment
+        value: newResumePath,
       },
     };
     handleChange( fakeEvent );

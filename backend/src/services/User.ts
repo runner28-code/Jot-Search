@@ -62,13 +62,13 @@ const validateUser = ({
 export const register = async (data: User) => {
   try {
     console.log("registering...");
+    const validate = validateUser(data);
     if (validate) {
       console.log("failed validation", validate);
       return { result: false, error: validate };
     }
 
     const user = justifyData(data, USERKEYS);
-    const existing = await isExistUser("email", user.email);
 
     if (existing) {
       console.log("user exists");

@@ -13,6 +13,7 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
       className={linkStyles}
     >
       <ProfileIcon className={stylesObject.iconStyles} />
+// Temp comment
       <span className={stylesObject.spanStyles}>Profile</span>
     </Link>
     <hr className={stylesObject.hrStyles} />

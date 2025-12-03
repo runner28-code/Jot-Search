@@ -50,6 +50,7 @@ export const choices = {
     label: 'My Favorites',
     icon: FavoritesIcon,
     link: ROUTES.favorites,
+  },
   addUser: {
     label: 'Add User',
     icon: AddUserIcon,

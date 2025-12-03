@@ -256,7 +256,6 @@ const job_filter_exclude_keys = [
     "mlt",
     "mortgage",
     "mt",
-    "musician",
     "mutual fund",
     "nail tech",
     "neighborhood",

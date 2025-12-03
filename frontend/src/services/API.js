@@ -19,7 +19,6 @@ API.interceptors.request.use(
     return config;
   },
   function (error) {
-// Temp comment
     return Promise.reject(error);
   }
 );

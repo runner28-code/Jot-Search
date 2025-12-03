@@ -19,6 +19,7 @@ export default function AddCoordinator() {
       const data = await registerUser(formObjectCopy);
       if (data.result === true) {
         setSubmissionObject({
+          loading: false,
           success: true,
           errors: {},
         });
@@ -31,7 +32,6 @@ export default function AddCoordinator() {
         });
       }
     }
-  }, [submissionObject.loading]);
 
   // Clear form and success icon after 2 seconds
   useEffect(() => {

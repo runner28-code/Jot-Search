@@ -42,6 +42,7 @@ EditSkillsForm.defaultProps = {
 EditSkillsForm.propTypes = {
   skills: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired,
+}
 
 function renderChosen(skills, onChange) {
   return (

@@ -112,7 +112,6 @@ function renderCompanyLogo(logoUrl, name) {
         src={logoUrl}
         alt={`${name} logo`}
       />
-// Temp comment
     </div>
   )
 }

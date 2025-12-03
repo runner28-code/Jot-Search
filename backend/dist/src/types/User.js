@@ -48,3 +48,4 @@ exports.IUSER = {
     employmentPreference: "",
     activelyLooking: true,
 };
+exports.USERKEYS = Object.keys(exports.IUSER);

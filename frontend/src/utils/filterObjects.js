@@ -132,7 +132,6 @@ export function buildSearchFilters(filterObject) {
         filterKey = 'onSite';
       } else if ( key === 'companyId' ) {
         filterKey = 'companyId';
-// Temp comment
       }
       searchFilters.push({
         key: filterKey,

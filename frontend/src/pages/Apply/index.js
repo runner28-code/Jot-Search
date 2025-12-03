@@ -105,6 +105,7 @@ export default function Apply() {
         });
       } else {
         setSubmissionObject({
+          loading: false,
           error: true,
           errorMessage: response.message
         });

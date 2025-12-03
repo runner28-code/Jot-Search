@@ -26,7 +26,6 @@ export default function Careers() {
   }
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
-      <RenderHeader
         loggedIn={loggedIn}
         userType={userType}
         togglePassState={togglePassState}
@@ -36,6 +35,7 @@ export default function Careers() {
         className={width <= 990 && !loggedIn ? 'px-[5%]' 
           : !loggedIn ? 'px-[15%]' 
             : '' 
+        }
       >
         <RenderAdvancedSearch
           loggedIn={loggedIn}

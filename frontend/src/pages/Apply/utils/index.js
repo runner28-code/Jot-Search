@@ -31,7 +31,6 @@ export const defaultState = {
   phone: '',
   willRelocate: true,
   referral: '',
-  resume: '',
   newResume: {},
   ethnicity: '',
   gender: '',

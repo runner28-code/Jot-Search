@@ -66,7 +66,6 @@ CREATE TABLE "GetroMember" (
     "skills" TEXT,
     "talent_groups" TEXT,
     "referrals_received" TEXT[],
-    "locations" TEXT,
     "network_id" INTEGER,
     "userTalentCollectionId" TEXT,
 

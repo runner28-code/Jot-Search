@@ -21,6 +21,7 @@ export const saveCompany = async (company: string, candidate: string) => {
         where: {
           id: candidate,
         },
+        data: {
           savedCompanies: {
             disconnect: {
               id: company,
@@ -68,3 +69,4 @@ export const getSavedCompanies = async (candidateId: string) => {
     return {
       companies: candidate?.savedCompanies,
       result: true,
+    };

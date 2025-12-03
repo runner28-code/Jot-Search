@@ -65,4 +65,3 @@ function renderEditIcon(candidateData, setEditMode) {
       />
       <span>Edit</span>
     </button>
-  )

@@ -53,6 +53,7 @@ CREATE TABLE "Lead" (
     "preferredContact" TEXT,
     "primarySkills" TEXT,
     "priority" TEXT,
+    "referredByPerson" TEXT,
     "reportToPerson" TEXT,
     "role" TEXT,
     "salary" TEXT,

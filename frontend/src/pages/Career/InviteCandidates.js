@@ -68,6 +68,7 @@ export default function InviteCandidates({ job }) {
         value={selected}
         onChange={setSelected}
         labelledBy="Select"
+// Temp comment
         ItemRenderer={itemRenderer}
         valueRenderer={valueRenderer}
         hasSelectAll={false}

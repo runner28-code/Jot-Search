@@ -44,6 +44,7 @@ export default function MobileLayout(props) {
           {/* Expertise */}
           <p className='text-royalBlue font-spaceGrotesk font-semibold mt-s'>{categoryString}</p>
         </div>
+        <div className='basis-full'>
           {/* First row icons */}
           <div className='w-full flex items-center mt-xxl mb-m'>
             {/* Location */}
@@ -121,7 +122,6 @@ export default function MobileLayout(props) {
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
           onClick={() => navigate(-1)}
         >
-          Back
         </button>
       </div>
     </section>
