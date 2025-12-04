@@ -78,6 +78,7 @@ export default function Footer() {
             <span> | </span>
             <a
               href={ROUTES.termsOfService}
+              className='underline'
               target='_blank'
               rel='noreferrer'
             >

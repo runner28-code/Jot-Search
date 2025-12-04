@@ -44,7 +44,6 @@ const ResumePreview = ({ resumeUrl }) => {
             <li className="next">
               <button
                 disabled={nextButtonDisabled}
-                onClick={() => setPage(page + 1)}
               >
                 <NextIcon className={nextButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>

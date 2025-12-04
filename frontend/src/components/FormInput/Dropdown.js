@@ -32,6 +32,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
 
   if (!isOpen) {
     return null
+// Temp comment
   }
   
   return (
@@ -68,7 +69,6 @@ export default function Dropdown(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
-// Temp comment
 
   const handleClick = (choice) => {
     if ( type === MULTI_SELECT ) {

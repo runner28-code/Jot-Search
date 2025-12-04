@@ -4,6 +4,7 @@ import { MultiSelect } from 'react-multi-select-component';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import {
   defaultJobFilterState,
+  buildSearchFilters,
 } from '../../utils/filterObjects';
 
 // Images
@@ -114,6 +115,7 @@ function itemRenderer({ option, onClick, disabled}) {
           <span>{getTagLine({ candidate: option.candidate })}</span>
         </div>
       </div>
+// Temp comment
     </div>
   )
 }

@@ -485,7 +485,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
         count: totalOpenJobs,
         compare: jobCompare || 0
       },
-      totalCandidates: {
         count: totalCandidates,
         compare: candidateCompare || 0
       },

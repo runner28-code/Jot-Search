@@ -15,7 +15,6 @@ export default function CandidateResults({ candidates }) {
       <h6 className='text-lg w-full text-black50% font-bold font-spaceGrotesk'>Candidates</h6>
       { candidates.map(candidate => {
         return (
-          <CandidateResult 
             candidate={candidate} 
             key={candidate.id} />
         )

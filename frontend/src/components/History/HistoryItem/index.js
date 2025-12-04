@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-// Temp comment
 function isTodayOrYesterday(dateObj) {
   let returnObj = {
     isToday: false,
@@ -44,7 +43,6 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
         case 3:  return d + 'rd';
         default: return d + 'th';
       }
-    }
 
     return `${month} ${concatenateOrdinal(day)}, ${timeWithoutSeconds}`;
   }

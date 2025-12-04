@@ -15,6 +15,7 @@ import {
   candidateFilterObject,
   jobFilterObject,
   defaultJobFilterState,
+  defaultCandidateFilterState,
   buildSearchFilters
 } from '../../utils/filterObjects';
 import createPersistedState from 'use-persisted-state';

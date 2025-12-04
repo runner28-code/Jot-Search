@@ -45,7 +45,6 @@ export const CompanyFilter: TypedDictionary<
     name: "name",
     city: "locations",
   },
-  joined: {
     name: "name",
     bh_id: "bh_id",
     id: "id",

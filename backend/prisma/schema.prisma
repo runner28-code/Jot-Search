@@ -356,7 +356,6 @@ model CandidateJobInvites {
 
 model CompanyCandidateInvites {
   id          String    @id @default(uuid())
-  candidateId String
   candidate   Candidate @relation(fields: [candidateId], references: [id])
   
   companyId   String

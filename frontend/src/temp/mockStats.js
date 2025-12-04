@@ -283,7 +283,6 @@ export const mockCoordinatorStats = {
       prevCount: 423
     },
     'Last 30 Days': {
-      count: 424,
       prevCount: 223
     },
     'Last 90 Days': {

@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
-import AuthService from '../../services/auth';
 
 const dropdownFiltersCoord = [
   'Category',
@@ -19,6 +18,7 @@ const dropdownFilters = [
 ];
 const checkboxFiltersCoord = [
   'Open to Relocation',
+  'Authorized to work in the US',
 ];
 const checkboxFilters = [
   'Authorized to work in the US',

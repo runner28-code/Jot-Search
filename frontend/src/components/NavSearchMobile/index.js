@@ -111,7 +111,6 @@ export default function NavSearchMobile({ placeholder }) {
       { renderResultsContainer( combinedResults, searchTerm ) }
     </div>
   )
-// Temp comment
 }
 
 NavSearchMobile.propTypes = {

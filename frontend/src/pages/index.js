@@ -1,7 +1,6 @@
 export {default as ActiveCareers} from './ActiveCareers';
 export {default as AddUser} from './AddUser';
 export {default as Applications} from './Applications';
-export {default as Apply} from './Apply';
 export {default as Candidate} from './Candidate';
 export {default as Candidates} from './Candidates';
 export {default as Career} from './Career';
@@ -12,6 +11,7 @@ export {default as Dashboard} from './Dashboard';
 export {default as Favorites} from './Favorites';
 export {default as LandingPage} from './LandingPage';
 export {default as Login} from './Login';
+export {default as Logout} from './Logout';
 export {default as Profile} from './Profile';
 export {default as SignUp} from './SignUp';
 export {default as ResetPassword} from './ResetPassword';

@@ -280,6 +280,7 @@ class GetroService {
             }
             catch (error) {
                 console.log(error);
+            }
         });
     }
     saveGetroJobInBullhornJobTable(getroJob) {

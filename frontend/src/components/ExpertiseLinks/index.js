@@ -17,6 +17,7 @@ export default function ExpertiseLinks() {
         Browse Opportunities by Career Expertise
       </h4>
       <div className='mt-20 flex'>
+        {/* Software & Engineering */}
         <Link
           to={ROUTES.careers}
           className={linkStyles}
@@ -41,7 +42,6 @@ export default function ExpertiseLinks() {
             alt='Sales & Biz Dev Icon'
             className={iconStyles}
           />
-          <span className={textStyles}>Sales & Business</span>
           <span className={textStyles}>Development</span>
         </Link>
         {/* Marketing */}

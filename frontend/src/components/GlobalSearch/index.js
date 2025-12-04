@@ -60,7 +60,6 @@ export default function GlobalSearch({ placeholder }) {
       candidates: CandidateResults && CandidateResults.length ? CandidateResults : [],
       loading: false,
     };
-// Temp comment
 
     setResults( resultsObject );
   }
@@ -93,7 +92,6 @@ export default function GlobalSearch({ placeholder }) {
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder } 
-          alternateStylesObject={ stylesObject } />
       </div>
       { renderResultsContainer( results, searchTerm ) }
     </div>

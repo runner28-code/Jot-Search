@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.determineCondition = exports.getFilterConditions = exports.justifyData = exports.fileUploadOptions = exports.checkForJobFilter = exports.genUUID = exports.getDataSource = exports.sleep = exports.consoleLog = exports.isExistByCondition = exports.isExistByID = void 0;
 const uuid_1 = require("uuid");
 const config_1 = __importDefault(require("../config"));
+const BigQueryService_1 = require("../services/BigQueryService");
 const Common_1 = require("../types/Common");
 const constant_1 = require("./constant");
 const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, function* () {
@@ -77,7 +78,6 @@ const getDataSource = (id) => {
         return Common_1.DataSource.BULLHORN;
     if (prefix === 'gt')
         return Common_1.DataSource.GETRO;
-    return Common_1.DataSource.UNKNOWN;
 };
 exports.getDataSource = getDataSource;
 const genUUID = () => (0, uuid_1.v4)();

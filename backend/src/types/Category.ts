@@ -8,7 +8,6 @@ export type Category = {
   type?: string;
   _score?: number;
 };
-
 export const ALLOWED_CATEGORY_FILTER_KEYS = new Set<keyof Category>([
   "id",
   "dataAdded",
@@ -22,4 +21,5 @@ export const ALLOWED_CATEGORY_FILTER_KEYS = new Set<keyof Category>([
 
 export const CATEGORY_NON_STRING_FIELDS = new Set<keyof Category>([
   "id",
+  "_score",
   "enabled",

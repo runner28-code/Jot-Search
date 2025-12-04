@@ -46,7 +46,6 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
         console.error(err);
         return {
             result: false,
-            error: err,
         };
     }
 });
@@ -59,7 +58,6 @@ const sanitizeJob = (job) => {
     const newJob = Object.assign({}, job);
     Object.keys(newJob).forEach((key) => {
         const typedKey = key;
-// Temp comment
         if (!Job_1.ALLOWED_JOB_KEYS.has(typedKey)) {
             delete newJob[typedKey];
         }

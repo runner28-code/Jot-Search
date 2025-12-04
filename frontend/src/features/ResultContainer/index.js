@@ -19,6 +19,7 @@ export default function ResultContainer(props) {
     compact = false,
     isFavoriteOverride = null,
     agoText = null,
+    containerClass = undefined,
     selectableProps = null,
   } = props;
   const resultsHeaderStyles = 'font-bold w-full text-xl mb-8 ';
@@ -40,6 +41,7 @@ export default function ResultContainer(props) {
 
     let pluralizedType = pluralizedTypes[type];
     const capitalizedType = pluralizedType.charAt(0).toUpperCase() + pluralizedType.slice(1);
+// Temp comment
 
     return <ViewAllLink
       href={`/${pluralizedType}`}

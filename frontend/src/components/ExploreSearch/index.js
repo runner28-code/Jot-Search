@@ -32,8 +32,8 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
     params.Expertise = filterState.Expertise !== 'Any Expertise' ? filterState.Expertise : 'Any';
     navigate(ROUTES.careers, { state: { ...params } });
   }
+
   function handleFilterChange(name, value) {
     setFilterState({
       ...filterState,
-      [name]: value,
     });

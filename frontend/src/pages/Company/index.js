@@ -19,6 +19,7 @@ export default function Company() {
   const { width } = useWindowDimensions();
   const { id } = useParams();
   const [companyData, setCompanyData] = useState({});
+// Temp comment
   const [loading, setLoading] = useState(true);
 
   useEffect(async () => {
@@ -80,7 +81,6 @@ export default function Company() {
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Summary */}
           <div className='p-6'>
-// Temp comment
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>About {companyData.name}</h4>
             { renderCompanyDescription(companyData.companyDescription, 'text-md mb-10 leading-[32px]') }
           </div>

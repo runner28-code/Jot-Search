@@ -251,7 +251,6 @@ function isValidHttpUrl(string) {
   try {
     url = new URL(string);
   } catch (_) {
-// Temp comment
     return false;
   }
 
@@ -263,7 +262,6 @@ function renderIndustry(item, headerRowTextStyles) {
   if( !item ) {
     return (<>
       <p className={headerRowTextStyles}>Industry</p>
-    </>)
   }
   return (<>
     <p className={headerRowTextStyles}>{item}</p>

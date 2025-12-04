@@ -44,6 +44,7 @@ EditSkillsForm.propTypes = {
   handleChange: PropTypes.func.isRequired,
 }
 
+// Temp comment
 function renderChosen(skills, onChange) {
   return (
     <div className='flex flex-wrap mt-4 mb-16 w-full'>

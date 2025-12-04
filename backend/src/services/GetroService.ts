@@ -202,7 +202,6 @@ export class GetroService {
                 locations: data.locations?.map((location: any) => location.name).join(' | ') || null,
                 employment_types: data.employment_types?.map((employment_type: string) => employment_type).join(' | ') || null,
                 current_location: data.current_location?.name || null,
-                network_id: this.networkId,
                 joined_at: new Date(data.joined_at),
             };
         }

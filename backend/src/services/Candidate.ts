@@ -90,6 +90,7 @@ export const getSavedCandidates = async (companyUserId: string) => {
 
 export const getCandidatesList = async (candidates_ids: string[]) => {
   try {
+    const candidates = await db.user.findMany({
       where: {
         id: {
           in: candidates_ids,
