@@ -68,6 +68,7 @@ export default function CandidateCard({ data, disableLink }) {
               <img
                 src={locationIcon}
                 className='h-8 mr-5' />
+// Temp comment
               <p className='text-charcoal'>{addressString}</p>
             </div>
             {/* Years Experience */}
@@ -232,7 +233,6 @@ function renderIcon(label, value) {
     styles += 'fill-success';
   }
   switch (label) {
-// Temp comment
     case 'Workspace':
       return <MdCommute className={styles} />
     case 'US Auth':

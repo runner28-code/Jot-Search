@@ -29,6 +29,7 @@ module.exports = {
           },
         },
       },
+// Temp comment
       boxShadow: {
         'resultCardShadow': '0px .4rem .4rem rgba(0, 0, 0, 0.25)',
       },
@@ -193,6 +194,7 @@ module.exports = {
         '290': '72.5rem',
         '300': '75rem',
         '332': '83rem',
+        '400': '100rem',
       },
     },
     fontSize: {

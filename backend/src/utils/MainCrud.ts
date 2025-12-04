@@ -63,6 +63,7 @@ export const saveJob = async (job: string, candidate: string) => {
       },
     });
     if (!existing) {
+      await db.user.update({
         where: {
           id: candidate,
         },
@@ -128,7 +129,6 @@ export const getCandidatesOnJob = async (jobId: string) => {
     const job = await db.job.findFirst({
       where: {
         id: jobId,
-      },
       include: {
         applications: {
           include: {

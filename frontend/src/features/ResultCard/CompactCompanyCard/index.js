@@ -70,7 +70,6 @@ CompactCompanyCard.propTypes = {
   selectableProps: PropTypes.shape({
     selectable: PropTypes.bool,
     selected: PropTypes.arrayOf(PropTypes.string),
-    setSelected: PropTypes.func
   })
 }
 

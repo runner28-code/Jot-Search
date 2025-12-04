@@ -51,7 +51,6 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 exports.createJob = createJob;
-// Temp comment
 // TODO: Figure out what we want to make required
 const validateJob = (job) => {
     return undefined;
@@ -60,7 +59,6 @@ const sanitizeJob = (job) => {
     const newJob = Object.assign({}, job);
     Object.keys(newJob).forEach((key) => {
         const typedKey = key;
-        if (!Job_1.ALLOWED_JOB_KEYS.has(typedKey)) {
             delete newJob[typedKey];
         }
     });

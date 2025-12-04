@@ -74,7 +74,6 @@ export default function Stats({ userType }) {
             handleFilterChange={handleFilterChange}
           />
         </div>
-// Temp comment
       </div>
       <div className='flex flex-wrap'>
         {Object.entries(stats).map(([stat, value]) => {

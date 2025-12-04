@@ -12,12 +12,10 @@ const config = {
     bullhornClientSecret: process.env.BULLHORN_CLIENT_SECRET,
     bullhornApiUsername: process.env.BULLHORN_API_USERNAME,
     bullhornApiPassword: process.env.BULLHORN_API_PASSWORD,
-// Temp comment
     getroDatasetID: process.env.DATASET_GETRO,
     bullhornDatasetID: process.env.DATASET_BULLHORN,
     mainDatasetID: process.env.DATASET_MAIN,
     sendgridKey: process.env.SENDGRID_KEY,
-    sendgridSecret: process.env.SENDGRID_SECRET,
     mailSenderEmail: process.env.MAIL_SENDER_EMAIL,
     frontendUrl: process.env.FRONTEND_URL,
     enableCronJobs: process.env.ENABLE_CRON_JOBS,

@@ -22,7 +22,6 @@ export default function EditSkillsForm({ skills, handleChange }) {
   return <>
     { renderChosen(splitSkills, onChange) }
     <TypeaheadDropdown
-// Temp comment
       type='typeahead'
       dropdownType='tags'
       name='primarySkills'

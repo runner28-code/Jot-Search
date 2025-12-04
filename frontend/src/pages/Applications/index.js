@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+// Temp comment
 import PageHeader from '../../components/PageHeader';
 import {BsClipboardCheck} from 'react-icons/bs';
 import ResultContainer from '../../features/ResultContainer';
@@ -9,6 +10,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function Applications() {
   const profile = AuthService.getProfile();
+  const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
     filteredJobs: [],

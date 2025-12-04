@@ -14,6 +14,7 @@ export type User = {
   zip?: string;
   resume?: string;
   avatar?: string;
+  linkedin?: string;
   skills?: string;
   category?: string;
   categoryId?: string | number;
@@ -73,7 +74,6 @@ export const IUSER = {
   referredBy: "",
   roles: "",
   description: "",
-  phone: "",
   status: "",
   username: "",
   logo: "",

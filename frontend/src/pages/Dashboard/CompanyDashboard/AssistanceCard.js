@@ -10,9 +10,11 @@ export default function AssistanceCard() {
           alt='Flag'
           className='w-auto h-auto'
         />
+// Temp comment
         <h5 className='text-h5 font-medium font-spaceGrotesk text-charcoal ml-8'>InTulsa assistance</h5>
       </div>
       {/* Body */}
+      <div className='text-black70%'>
         <p>Please email us to perform changes to your InTulsa Talent Network account</p>
         <ul className='mt-8'>
           <li className='list-disc ml-8'>Update company profile</li>

@@ -231,6 +231,7 @@ function NavFooter() {
           className={addressLinkStyle}
         >info@talentintulsa.com
         </a>
+// Temp comment
         <Address />
       </div>
       <div className='flex flex-col basis-3/12'>

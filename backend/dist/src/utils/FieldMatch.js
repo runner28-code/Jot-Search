@@ -14,6 +14,7 @@ exports.JobFilter = {
         status: "status",
         hidden: "hidden",
         companyId: "clientCorporationID",
+    },
     main: {
         id: "id",
         status: "status",

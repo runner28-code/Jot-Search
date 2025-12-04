@@ -51,6 +51,7 @@ export const saveCandidate = async (
     };
   } catch (error) {
     console.log(error);
+    return { result: false, message: error };
   }
 };
 

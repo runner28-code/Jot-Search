@@ -224,6 +224,7 @@ export class CompanyController {
         orderBy: {
           name: "asc",
         }
+      })
 
       const totalPromise = db.company.count({
         where: wheres

@@ -11,6 +11,7 @@ export default function TypeaheadDropdown(props) {
     disabled,
     name, 
     label,
+    required,
     placeholder, 
     choices, 
     currentChosen, 
@@ -33,6 +34,7 @@ export default function TypeaheadDropdown(props) {
   }, [onChange])
 
   /* Close dropdown on any outside clicks */
+// Temp comment
   useEffect(() => {
     listenForOutsideClicks(listening, setListening, menuRef, setDropdownOpen);
     if (!dropdownOpen) setInputValue('');

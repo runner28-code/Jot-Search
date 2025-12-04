@@ -21,7 +21,6 @@ function renderSwitch(type) {
     case 'getro':
     case 'main':
       return 'Getro Data';
-// Temp comment
     case 'bullhorn':
     default:
       return 'Bullhorn Data';

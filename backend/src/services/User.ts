@@ -323,7 +323,6 @@ export const getCompanyDashboardStats = async (days: number) => {
     const activeCareersCompare = (activeCareersPostsInCurrentPeriod - activeCareersPostsInPreviousPeriod) * 100 / activeCareersPostsInCurrentPeriod;
 
     result = (await db.$queryRaw`
-      SELECT COUNT(*) FROM "_userSavedCompanies"
     `) as any;
     const companyFavoritesCurrentPeriod = result[0]?.count ?? 0;
 

@@ -9,7 +9,6 @@ import {
 } from './utils';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
-
 export default function SideNav({ userType }) {
   const { pathname } = useLocation();
   const hiddenPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage, ROUTES.resetPassword, ROUTES.accountRecovery ];
@@ -35,7 +34,6 @@ SideNav.propTypes = {
   userType: PropTypes.string.isRequired
 }
 
-// Temp comment
 function renderChoice(choice, selected, index, choicesLength) {
   let baseChoiceStyles = 'w-full h-30 flex items-center cursor-pointer border-b border-solid border-smokeGray ';
   const selectedChoice = choice.label === selected;

@@ -25,6 +25,7 @@ export default function NavBar() {
   } else {
     return <DesktopNavBarLayout />
   }
+}
 
 function NavBarLayout() {
   return (

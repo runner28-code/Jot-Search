@@ -78,6 +78,7 @@ CareerCard.propTypes = {
 }
 
 function DesktopCard({ dataObj, active }) {
+// Temp comment
   const { data, categoryString, addressString, salaryString, postingAge } = dataObj;
   return (
     <Link

@@ -90,7 +90,6 @@ export type Job = {
     location_state?: string;
     location_state_id?: string;
     location_state_name?: string;
-    location_zip?: string;
     location_country_id?: string;
     location_country_name?: string;
     location_country_code?: string;
@@ -111,6 +110,7 @@ export type Job = {
     startDate?: string;
     status?: string;
     taxRate?: string;
+    taxStatus?: string;
     title?: string;
     travelRequirements?: string;
     type?: string;

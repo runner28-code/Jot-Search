@@ -95,7 +95,6 @@ export default function Candidate() {
         containerClassOverride='pt-2'
         backButton
       />
-      {/* Candidate Card (Company and Coordinator) */}
       {role !== 'candidate' && 
         <CandidateCard
           data={candidateData}

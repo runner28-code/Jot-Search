@@ -11,6 +11,7 @@ env:
   ECS_SERVICE: 'intulsa-frontend-service-dev'
   ECS_CLUSTER: 'intulsa-cluster-dev'
   ECS_TASK_DEFINITION: '.github/workflows/dev_task_definition.json'
+  CONTAINER_NAME: 'intulsa-frontend-container-dev'
 
 jobs:
   deploy:
@@ -50,7 +51,6 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: ${{ env.ECS_TASK_DEFINITION }}
-        container-name: ${{ env.CONTAINER_NAME }}
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
