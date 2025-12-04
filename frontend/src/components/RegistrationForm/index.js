@@ -32,7 +32,6 @@ const defaultState = {
   willRelocate: false,
   roles: [],
   skills: [],
-// Temp comment
   experience: '',
   employmentPreference: '',
   workspace: '',

@@ -16,4 +16,3 @@ RUN npm run build
 RUN npx prisma migrate deploy
 
 EXPOSE 5000
-

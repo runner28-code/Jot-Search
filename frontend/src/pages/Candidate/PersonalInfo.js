@@ -296,7 +296,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 <label
                   htmlFor='ethnicity'
                   className={labelStyles}
-// Temp comment
                 >
                   <p className={labelTextStyles}>Voluntary Self-ID of Veteran Status</p>
                   <Dropdown
@@ -337,7 +336,6 @@ PersonalInfo.propTypes = {
 function renderCommunity (referralChoice, commObj, handleCommunityChoice, communityChoices) {
 
   if( referralChoice ) {
-    return (<>
       <FormInput
         type='single-select'
         name='community'

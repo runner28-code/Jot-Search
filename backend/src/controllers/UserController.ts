@@ -162,6 +162,7 @@ export class UserController {
     if (!user) return { result: false, error: "User does not exist" };
 
     user.password = new_password;
+
     return await update(user.id, user.role, user);
   }
 

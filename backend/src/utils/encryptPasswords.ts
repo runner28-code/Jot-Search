@@ -4,7 +4,6 @@
 
 import { encryptPassword } from "./password";
 import { User, USERKEYS } from "../types/User";
-import { BigQueryService } from "../services/BigQueryService";
 import { DATASET_MAIN, Tables } from "../types/Common";
 
 (async () => {
@@ -24,6 +23,7 @@ import { DATASET_MAIN, Tables } from "../types/Common";
 
         if (users && users.length ) {
           for(const user of users){
+            if(!user.password){
               console.log(`user ${user.email} password is empty. Skipped.`);
               continue
             }

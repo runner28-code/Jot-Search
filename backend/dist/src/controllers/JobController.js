@@ -41,6 +41,7 @@ let JobController = class JobController {
     searchJobByID(id) {
         var _a;
         return __awaiter(this, void 0, void 0, function* () {
+            try {
                 const job = yield db_1.default.job.findFirst({
                     where: {
                         id,

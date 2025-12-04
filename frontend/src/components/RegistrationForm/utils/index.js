@@ -60,7 +60,6 @@ export function renderHeader(addType) {
     )
   }
 }
-
 export function inputValidation(formObj) {
   // Remove non-required properties
 
@@ -81,7 +80,6 @@ export function inputValidation(formObj) {
     newErrors.push('state');
   }
   if( formObj.zip.length !== 5 || isNaN(formObj.zip) ) {
-// Temp comment
     newErrors.push('zip');
   }
   if ( formObj.linkedin.slice(0, 8) !== 'https://' ) { // Ensure valid URL

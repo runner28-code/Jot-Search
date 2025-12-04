@@ -38,6 +38,7 @@ exports.IUSER = {
     dateFounded: "",
     employeeType: "",
     experience: "",
+// Temp comment
     hourlyRate: "",
     willRelocate: "",
     willReceiveNotification: false,

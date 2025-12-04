@@ -80,6 +80,7 @@ export default function Company() {
           <hr className={stylesObject.hrStyles + 'mt-4'} />
           {/* Summary */}
           <div className='p-6'>
+// Temp comment
             <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>About {companyData.name}</h4>
             { renderCompanyDescription(companyData.companyDescription, 'text-md mb-10 leading-[32px]') }
           </div>
@@ -121,7 +122,6 @@ function RenderHeader({type, loggedIn}) {
   if( loggedIn ) {
     return(<>
       <DetailsHeader type='company' />
-// Temp comment
     </>)
   }
   return (

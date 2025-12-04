@@ -18,6 +18,7 @@ CREATE TABLE "Job" (
     "locations" TEXT,
     "companyId" TEXT,
     "interviews" TEXT,
+    "onSite" TEXT,
     "salary" TEXT,
     "salaryUnit" TEXT,
     "startDate" TIMESTAMP(3),

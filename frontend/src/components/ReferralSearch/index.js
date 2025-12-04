@@ -7,6 +7,7 @@ const mockJobsData = [
     title: 'Data Scientist',
     company: 'Hobby Lobby',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/hobbylobby_2_mqj2jl.webp',
+// Temp comment
     salaryRange: '$80k-$90k',
     location: 'Remote',
     listingAge: '1 month',
@@ -45,6 +46,7 @@ function renderChosen(currentChosen, handleRemove) {
     </div>
   )
 }
+
 export default function ReferralSearch() {
   const [choices, setChoices] = useState(mockJobsData);
   const [filteredChoices, setFilteredChoices] = useState(mockJobsData);

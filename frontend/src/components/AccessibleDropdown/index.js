@@ -207,7 +207,6 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
       <li key={key}>
         <MenuItem 
           className={ listItemStyles }
-// Temp comment
           value={key}
         >
           <span>{value}</span>

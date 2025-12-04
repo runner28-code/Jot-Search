@@ -90,6 +90,7 @@ const mockCandidateData = [
     companyName: 'Apline Strategies',
     address_city: 'Tulsa',
     address_state: 'OK',
+// Temp comment
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
     isLooking: false,
@@ -102,6 +103,7 @@ export const useCandidateContext = () => useContext(CandidateContext)
 
 const CandidateProvider = ({children}) => {
   const [candidates, setCandidates] = useState(mockCandidateData);
+  const [currentUser, setCurrentUser] = useState(AuthService.getProfile());
 
   useEffect(() => {
     if (currentUser?.user_id) {

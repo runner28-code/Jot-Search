@@ -45,6 +45,7 @@ export function convertUserToCandidate(user) {
     firstName: user.firstname || '',
     lastName: user.lastname || '',
     name: formatCandidateName(user.firstname, user.lastname),
+    email: user.email,
     phone: user.phone,
     description: user.description,
     experience: user.experience?.parseInt() || 1,
@@ -69,6 +70,7 @@ export function formatCandidateName(firstName, lastName) {
   if ( !lastName ) return firstName;
   return `${firstName} ${lastName}`;
 }
+// Temp comment
 
 export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
   if ( avatarUrl ) {

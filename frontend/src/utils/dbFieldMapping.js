@@ -33,7 +33,6 @@ export const ethnicityMap = {
   IA: 'Native American or Alaska Native',
   HL: 'Hispanic or Latina/Latino or LatinX',
   AS: 'Asian',
-  M: 'Multiracial',
   O: 'Other'
 };
 
@@ -56,7 +55,6 @@ export const educationChoices = [
   'Some College',
   'Technical College'
 ];
-// Temp comment
 
 export const referralChoices = [
   'Web Search',

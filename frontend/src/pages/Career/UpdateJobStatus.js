@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 
-import { useUpdateJob } from '../../hooks/mutations/useUpdateJob'
 import Dropdown from '../../components/UniversalDropdown/index';
 import { useState } from 'react';
 
@@ -20,7 +19,6 @@ export const UpdateJobStatus = ({ job }) => {
         {isLoading && <p>Loading...</p>}
         {isSuccess && <p>Success!</p>}
         <Dropdown 
-// Temp comment
           choices={[
             'Active',
             'Inactive',

@@ -68,6 +68,7 @@ export default function Dropdown(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
+// Temp comment
 
   const handleClick = (choice) => {
     if ( type === MULTI_SELECT ) {

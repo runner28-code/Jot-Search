@@ -28,7 +28,6 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   }
 
   function handleFilterChange(name, value) {
-// Temp comment
     setFilterState({
       ...filterState,
       [name]: value,

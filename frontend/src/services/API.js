@@ -304,6 +304,7 @@ export async function toggleHideJob(id, unhide) {
     hidden
   });
   return normalizeData(data.result);
+}
 
 //* CATEGORIES
 export async function getCategoryById(id) {

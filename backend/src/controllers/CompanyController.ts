@@ -102,7 +102,6 @@ export class CompanyController {
         error: "Please check email, email maybe invalid one",
       };
     }
-  }
 
   @Authorized()
   @Put()

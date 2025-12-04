@@ -330,6 +330,7 @@ const job_filter_exclude_keys = [
     "recovery",
     "recreation",
     "recycling",
+    "refrigeration",
     "refrigerator",
     "refuse",
     "regulatory",

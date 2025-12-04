@@ -61,6 +61,7 @@ export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistin
     </label>
   )
 }
+
 export function Checkbox({ attribute, name, optionValue, setOptionValue, disabled }) {
   function handleChange(e) {
     setOptionValue(e.target.checked);
@@ -97,7 +98,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   if (submissionObject.loading) {
     return <LoadingSpinner
       height='50'
-      width='50'
     />
   }
   if (submissionObject.success) {

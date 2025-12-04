@@ -39,7 +39,6 @@ export default function Careers() {
         }
       >
         <RenderAdvancedSearch
-          loggedIn={loggedIn}
           toggle={toggle}
           userType={userType}
         />

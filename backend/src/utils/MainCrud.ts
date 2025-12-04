@@ -129,6 +129,7 @@ export const getCandidatesOnJob = async (jobId: string) => {
     const job = await db.job.findFirst({
       where: {
         id: jobId,
+      },
       include: {
         applications: {
           include: {

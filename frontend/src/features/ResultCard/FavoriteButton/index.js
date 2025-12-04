@@ -78,7 +78,6 @@ function getItemsByType(type) {
   switch (type) {
     case 'job':
       return AuthService.getSavedJobIDs();
-// Temp comment
     case 'company':
       return AuthService.getSavedCompanyIDs();
     case 'candidate':
