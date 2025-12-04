@@ -202,6 +202,7 @@ export class GetroService {
                 locations: data.locations?.map((location: any) => location.name).join(' | ') || null,
                 employment_types: data.employment_types?.map((employment_type: string) => employment_type).join(' | ') || null,
                 current_location: data.current_location?.name || null,
+                network_id: this.networkId,
                 joined_at: new Date(data.joined_at),
             };
         }
@@ -238,7 +239,6 @@ export class GetroService {
                     try {
                         const res = await axios.get(url, this.getOptions());
                         await sleep(2000); // https://developers.getro.com/#rate-limit
-
                         const { items, meta: { total } } = res.data;
                         if (!testMode) {
                             const newItems = items.map((item: any) => ({
@@ -295,3 +295,4 @@ export class GetroService {
             title: getroJob.title,
             createdAt: getroJob.createdAt,
             updatedAt: getroJob.updatedAt,
+            getroJobInfoId: getroJob.id,

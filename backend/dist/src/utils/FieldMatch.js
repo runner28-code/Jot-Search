@@ -12,6 +12,7 @@ exports.JobFilter = {
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
         status: "status",
+// Temp comment
         hidden: "hidden",
         companyId: "clientCorporationID",
     },
@@ -63,7 +64,6 @@ exports.USER_FILTER = {
     occupation: "occupation",
     workAuthorized: "workAuthorized",
     employeeType: "employeeType",
-// Temp comment
     willRelocate: "willRelocate",
     experienceYears: "experienceYears",
     seniority: "seniority",
@@ -71,3 +71,4 @@ exports.USER_FILTER = {
     employmentPreference: "employmentPreference",
     educationDegree: "educationDegree",
     certifications: "certifications",
+    workspace: "workspace",

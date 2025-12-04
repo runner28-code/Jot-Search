@@ -23,6 +23,7 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
         const query = `
             SELECT * FROM \`${datset}.${table}\`
             WHERE id=${id}
+// Temp comment
         `;
         const options = {
             query: query,
@@ -78,6 +79,7 @@ const getDataSource = (id) => {
         return Common_1.DataSource.BULLHORN;
     if (prefix === 'gt')
         return Common_1.DataSource.GETRO;
+    return Common_1.DataSource.UNKNOWN;
 };
 exports.getDataSource = getDataSource;
 const genUUID = () => (0, uuid_1.v4)();

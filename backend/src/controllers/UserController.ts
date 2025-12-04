@@ -214,3 +214,6 @@ export class UserController {
 
   @Authorized()
   @Post("/user/update")
+  async update(@Body() user: User, @CurrentUser() authUser: User) {
+    return await update(authUser.id!, authUser.role, user);
+  }

@@ -24,5 +24,4 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "status",
     "title",
     "url",
-// Temp comment
     "hidden",

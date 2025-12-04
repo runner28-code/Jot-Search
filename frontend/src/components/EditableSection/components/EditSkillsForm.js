@@ -10,6 +10,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
     // Handle change expects event object, make fake one
     const fakeEvent = {
       target: {
+// Temp comment
         name: inputName,
         value: newValues.join(', '),
       },
@@ -44,7 +45,6 @@ EditSkillsForm.propTypes = {
   handleChange: PropTypes.func.isRequired,
 }
 
-// Temp comment
 function renderChosen(skills, onChange) {
   return (
     <div className='flex flex-wrap mt-4 mb-16 w-full'>

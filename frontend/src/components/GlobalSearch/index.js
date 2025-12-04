@@ -41,7 +41,6 @@ export default function GlobalSearch({ placeholder }) {
   async function handleDebounce( searchTerm ) {
     if ( searchTerm === '' ) {
       return setResults({
-        jobs: [],
         companies: [],
         candidates: []
       });
@@ -92,6 +91,7 @@ export default function GlobalSearch({ placeholder }) {
           searchTerm={ searchTerm }
           setSearchTerm={ handleSearchChange }
           placeholder={ placeholder } 
+          alternateStylesObject={ stylesObject } />
       </div>
       { renderResultsContainer( results, searchTerm ) }
     </div>

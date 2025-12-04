@@ -9,7 +9,6 @@ export const JobFilter: any = {
     employmentType: "employmentType",
     onSite: "onSite",
     yearsRequired: "yearsRequired",
-    willRelocate: "willRelocate",
     status: "status",
     hidden: "hidden",
     companyId: "clientCorporationID",
@@ -45,6 +44,7 @@ export const CompanyFilter: TypedDictionary<
     name: "name",
     city: "locations",
   },
+  joined: {
     name: "name",
     bh_id: "bh_id",
     id: "id",
@@ -75,3 +75,4 @@ export const USER_FILTER: any = {
   employmentPreference: "employmentPreference",
   educationDegree: "educationDegree",
   certifications: "certifications",
+  workspace: "workspace",

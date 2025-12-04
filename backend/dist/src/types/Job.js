@@ -26,6 +26,7 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "startDate",
     "type",
     "isDeleted",
+    "postedAt",
     "hidden",
     "company_name",
     "datasource",

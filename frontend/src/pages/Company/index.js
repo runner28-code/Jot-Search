@@ -19,7 +19,6 @@ export default function Company() {
   const { width } = useWindowDimensions();
   const { id } = useParams();
   const [companyData, setCompanyData] = useState({});
-// Temp comment
   const [loading, setLoading] = useState(true);
 
   useEffect(async () => {
@@ -55,6 +54,7 @@ export default function Company() {
   const navigate = useNavigate();
 
   if (loading) { return <LoadingSpinner /> }
+// Temp comment
   return (
     <div className={ loggedIn ? 'vw-1280:pr-12 mx-[5%]' : ''}>
       <RenderHeader

@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-// Temp comment
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
@@ -33,6 +32,7 @@ const Job_1 = require("../services/Job");
 const Common_1 = require("../types/Common");
 const Getro_1 = require("../types/Getro");
 const Job_2 = require("../types/Job");
+// Temp comment
 const utils_1 = require("../utils");
 const db_1 = __importDefault(require("../utils/db"));
 const FieldMatch_1 = require("../utils/FieldMatch");

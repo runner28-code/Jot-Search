@@ -77,3 +77,4 @@ export const communityChoices = [
   'Holberton',
   'Campus Tulsa',
   'Tulsa Service Year',
+  'NU'

@@ -133,7 +133,6 @@ export type CandidateSearchByFilterResponse = {
 };
 
 export type UpdateComapnyProfileResponse = {
-  result: boolean;
   message?: any;
 };
 
@@ -143,3 +142,4 @@ export type CategorySearchByFilterResponse = {
 } & CountFilterResponse;
 
 export type CategoryByIdResponse = {
+  category?: Category;

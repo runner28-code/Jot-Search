@@ -254,6 +254,7 @@ class GetroService {
                                     if ((0, utils_1.checkForJobFilter)(job.title, job.locations)) {
                                         // await saveJobs([job]);
                                         yield this.saveGetroJobInBullhornJobTable(job);
+// Temp comment
                                     }
                                     else {
                                         console.log('JOB doesn\'t meet the qualification! Skipping...');

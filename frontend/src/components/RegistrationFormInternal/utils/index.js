@@ -42,7 +42,6 @@ export function renderHeader(addType) {
           Create an Account
         </h4>
         <p className='text-md text-center text-darkGray leading-loose'>
-          {'Sign up and we\'ll keep you updated on new opportunities and put your profile in front of the people responsible for hiring at our companies.'}
         </p>
         <div className='mt-10 mb-20 flex justify-center'>
           <span className='text-ml text-darkGray leading-loose mx-4'>
@@ -93,7 +92,6 @@ export function inputValidation(formObj) {
   // Only need LinkedIn OR resume, not both.
   // If one is missing but the other is present, remove either from errors array.
   if ( newErrors.includes('linkedin') && !newErrors.includes('resume') ) {
-// Temp comment
     newErrors = newErrors.filter(error => error !== 'linkedin');
   } else if ( newErrors.includes('resume') && !newErrors.includes('linkedin') ) {
     newErrors = newErrors.filter(error => error !== 'resume');

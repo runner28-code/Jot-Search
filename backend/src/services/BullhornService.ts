@@ -1007,3 +1007,4 @@ export class BullhornService {
               }
             })
             const emails = users.filter((user: any) => user.willReceiveNotification).map(user => user.email)
+            await sendEmail(emails, `New job "${jobDetail.title}" posted`, 'new-job-posted', { title: jobDetail.title });

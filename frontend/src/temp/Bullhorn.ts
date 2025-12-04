@@ -335,3 +335,4 @@ export type Lead = {
     salary?: string;
     salaryLow?: string;
     secondarySkills?: string;
+    skillSet?: string;

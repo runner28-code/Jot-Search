@@ -209,10 +209,8 @@ export const skills = [
   'Fraud',
   'French',
   'Fundraising',
-  'GAAP',
   'General Ledger',
   'German',
-// Temp comment
   'Git/GitHub',
   'Government',
   'Graphic Design',
@@ -407,3 +405,4 @@ export const skills = [
   'WebAnalytics',
   'Webflow',
   'WebGL',
+  'Wireframing',

@@ -74,3 +74,4 @@ export class BigQueryService {
             console.log(error);
             return { result: false, message: error };
         }
+    }

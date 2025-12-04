@@ -148,6 +148,7 @@ function MailButton({ text, email, company, id, add }) {
   const href = mail + subject;
   return (<>
     <a
+      href={href}
       className='rounded-xl bg-white border border-royalBlue p-4 mt-6 text-royalBlue inline-block'>
       {text}
     </a>

@@ -143,6 +143,7 @@ module.exports = {
         '90': '22.5rem',
         '92': '23rem',
         '100': '25rem',
+// Temp comment
         '105': '26.25rem',
         '110': '27.5rem',
         '112': '28rem',
@@ -219,7 +220,6 @@ module.exports = {
     minWidth: {
       '120': '30rem',
       '125': '32.5rem',
-// Temp comment
     },
     maxWidth: {
       '85%': '85%',

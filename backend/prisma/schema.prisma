@@ -356,6 +356,7 @@ model CandidateJobInvites {
 
 model CompanyCandidateInvites {
   id          String    @id @default(uuid())
+  candidateId String
   candidate   Candidate @relation(fields: [candidateId], references: [id])
   
   companyId   String
@@ -760,3 +761,4 @@ model GetroMember {
   remote_work              Boolean?
   require_sponsorship_visa Boolean?
   seniority                String?
+  source                   String?

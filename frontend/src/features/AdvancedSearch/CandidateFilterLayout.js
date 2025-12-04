@@ -41,7 +41,6 @@ export default function CandidateFilterLayout(props) {
     handleSearchClick,
     clearFilters,
   } = props;
-  let userRole = AuthService.getUserRole();
 
   const dropdownFilterObject = {};
   const checkboxFilterObject = {};
@@ -82,7 +81,6 @@ export default function CandidateFilterLayout(props) {
           label='Your skills (select at least 3)'
           placeholder='Select all that apply'
           required={true}
-// Temp comment
           value={filterObject.skills}
           onChange={toggleSkills}
           choices={skills}

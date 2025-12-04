@@ -120,6 +120,7 @@ export default function MobileLayout(props) {
         }
         <button
           className='text-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
+// Temp comment
           onClick={() => navigate(-1)}
         >
           Back
@@ -143,6 +144,7 @@ MobileLayout.propTypes = {
     addressString: PropTypes.string.isRequired,
     salaryString: PropTypes.string.isRequired,
   }).isRequired
+}
 
 function renderLogo( logo ) {
   if ( !logo ) {

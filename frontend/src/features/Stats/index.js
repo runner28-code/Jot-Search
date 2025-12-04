@@ -133,5 +133,4 @@ function renderDeviation(deviationPercentage) {
     <div className='flex items-center '>
       {renderStyledDeviation(deviationPercentage)}
     </div>
-// Temp comment
   )

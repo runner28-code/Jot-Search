@@ -22,6 +22,7 @@ export default function TypeaheadDropdown(props) {
   const [inputValue, setInputValue] = useState('');
   const [filteredChoices, setFilteredChoices] = useState(choices);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
   const handleChoiceClick = useCallback((choice) => {
@@ -123,7 +124,6 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
     <div>
       {currentChosen.map(choice => {
         const isActive = currentChosen.includes(choice);
-        const handleTagClick = () => {
           handleClick(choice);
         }
 

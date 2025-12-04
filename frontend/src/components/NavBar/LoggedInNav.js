@@ -48,7 +48,6 @@ function NavBarLayout() {
         </div>
       </div>
       {/* Nav Search */}
-    </nav>
   )
 }
 

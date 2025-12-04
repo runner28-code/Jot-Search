@@ -1,3 +1,4 @@
+// Temp comment
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
@@ -20,7 +21,6 @@ export default function AccountRecovery() {
       setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);
-// Temp comment
     }
   };
   function setType(response, condition) {

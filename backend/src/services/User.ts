@@ -23,7 +23,6 @@ import { CreateJwtToken } from "../utils/jwtUtils";
 
 const isNullOrEmpty = (value: any) => {
   return !value || (value && !`${value}`.trim());
-};
 
 const validateUser = ({
   firstname,
@@ -485,6 +484,7 @@ export const getCoordinatorDashboardStats = async (days: number) => {
         count: totalOpenJobs,
         compare: jobCompare || 0
       },
+      totalCandidates: {
         count: totalCandidates,
         compare: candidateCompare || 0
       },
@@ -640,3 +640,4 @@ export const recovery = async (email: string) => {
     const user = await findUserByEmail(email);
     if (!user) return { result: false, error: "User does not exist" };
 
+    const token = CreateJwtToken({ email: user.email });

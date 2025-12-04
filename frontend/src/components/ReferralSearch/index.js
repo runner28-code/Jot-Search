@@ -46,6 +46,7 @@ function renderChosen(currentChosen, handleRemove) {
   )
 }
 
+export default function ReferralSearch() {
   const [choices, setChoices] = useState(mockJobsData);
   const [filteredChoices, setFilteredChoices] = useState(mockJobsData);
   const [currentChosen, setCurrentChosen] = useState([]);

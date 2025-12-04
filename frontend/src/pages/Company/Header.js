@@ -46,6 +46,7 @@ function HeaderContent({ companyData }) {
               className={headerIconStyles}
             />
             <p className={headerRowTextStyles}>{ renderAddress(companyData.city, companyData.state) }</p>
+// Temp comment
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <CareerIcon
@@ -262,6 +263,7 @@ function renderIndustry(item, headerRowTextStyles) {
   if( !item ) {
     return (<>
       <p className={headerRowTextStyles}>Industry</p>
+    </>)
   }
   return (<>
     <p className={headerRowTextStyles}>{item}</p>

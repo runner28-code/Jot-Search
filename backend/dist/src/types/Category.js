@@ -14,4 +14,3 @@ exports.ALLOWED_CATEGORY_FILTER_KEYS = new Set([
 exports.CATEGORY_NON_STRING_FIELDS = new Set([
     "id",
     "_score",
-    "enabled",

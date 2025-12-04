@@ -85,7 +85,6 @@ export const justifyData = (data: any, keys: string[], excludeKeys: string[] = [
             ...v,
             [key]: data[key]
         };
-    }, {});
 }
 
 export const getFilterConditions = (

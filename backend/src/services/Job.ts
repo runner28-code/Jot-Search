@@ -135,3 +135,4 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
   }
 };
 
+export const getJobsList = async (jobs_ids: string[]) => {

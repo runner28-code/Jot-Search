@@ -43,6 +43,7 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
         case 3:  return d + 'rd';
         default: return d + 'th';
       }
+    }
 
     return `${month} ${concatenateOrdinal(day)}, ${timeWithoutSeconds}`;
   }
@@ -59,7 +60,6 @@ function formatDateString(date) {
   return formattedDate;
 }
 
-function renderMessage(historyObj) {
   if ( historyObj.message.includes('{careerName}') ) {
     const messageSplit = historyObj.message.split('{careerName}');
     return (

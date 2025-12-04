@@ -424,3 +424,4 @@ export class CandidateController {
         result
       };
     } catch (error) {
+      return {

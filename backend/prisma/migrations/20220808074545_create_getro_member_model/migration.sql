@@ -1,5 +1,6 @@
 -- CreateTable
 CREATE TABLE "UserTalentCollection" (
+    "id" TEXT NOT NULL,
     "user_id" INTEGER,
     "collection_id" INTEGER,
     "status" TEXT,
@@ -72,3 +73,4 @@ CREATE TABLE "GetroMember" (
     CONSTRAINT "GetroMember_pkey" PRIMARY KEY ("id")
 );
 
+-- AddForeignKey

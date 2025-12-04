@@ -8,9 +8,9 @@ import { appendPathToBaseUrl } from '../../services/API';
 export default function EditHeaderForm({ candidateData, handleCandidateUpdate, setEditMode, iconStyles }) {
   const [formData, setFormData] = useState({
     id: candidateData.id,
-// Temp comment
     avatar: candidateData.avatar,
     companyName: candidateData.companyName,
+// Temp comment
     address1: candidateData.address1,
     address2: candidateData.address2,
     city: candidateData.city,

@@ -138,6 +138,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     setPage(1);
   }
 
+// Temp comment
   // eslint-disable-next-line no-unused-vars
   const { Status, ...publicDropdownFilters } = jobFilterObject;
   const propsByTab = {
@@ -158,7 +159,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     companies: {
       filterTemplate: {},
       activeResults: companies,
-// Temp comment
       totalResults: totalCompanies,
       isLoading: isLoadingCompanies,
       prefetchFunc: (page) => prefetchCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page })

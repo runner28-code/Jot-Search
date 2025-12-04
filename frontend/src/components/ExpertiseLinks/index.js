@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import softwareEngineeringIcon from '../../assets/images/Symbol_softwareengineering.svg';
 import salesAndBizDevIcon from '../../assets/images/Symbol_Salesbizdev.svg';
 import marketingIcon from '../../assets/images/Symbol_marketing.svg';
@@ -42,6 +41,7 @@ export default function ExpertiseLinks() {
             alt='Sales & Biz Dev Icon'
             className={iconStyles}
           />
+          <span className={textStyles}>Sales & Business</span>
           <span className={textStyles}>Development</span>
         </Link>
         {/* Marketing */}

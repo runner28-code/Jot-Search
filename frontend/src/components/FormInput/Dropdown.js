@@ -32,7 +32,6 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
 
   if (!isOpen) {
     return null
-// Temp comment
   }
   
   return (
@@ -64,7 +63,6 @@ export default function Dropdown(props) {
     onChange, 
     placeholder, 
     type
-  } = props;
     
   const [isOpen, setIsOpen] = useState(false);
   const [listening, setListening] = useState(false);

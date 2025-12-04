@@ -322,7 +322,6 @@ export class CompanyController {
   ) {
     const _filters =
       filters?.filter(
-        (opt) => Object.keys(CompanyFilter.bullhorn).indexOf(opt.key) > -1
       ) || [];
     const _fields = fields ? fields.join(", ") : "*";
     const _dataset = DATASET_BULLHORN;

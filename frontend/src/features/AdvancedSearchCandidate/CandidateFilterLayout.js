@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
+import AuthService from '../../services/auth';
 
 const dropdownFiltersCoord = [
   'Category',
@@ -27,7 +28,6 @@ const checkboxFilters = [
 ];
 
 export default function CandidateFilterLayout(props) {
-  const {
     defaultFilterObject,
     filterObject,
     handleFilterChange,

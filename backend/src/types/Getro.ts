@@ -102,6 +102,5 @@ export type User = {
   joined_at?: string;
   remote_work?: string;
   require_sponsorship_visa?: string;
-  seniority?: string;
   employment_type?: string;
   will_work_anywhere?: string;
