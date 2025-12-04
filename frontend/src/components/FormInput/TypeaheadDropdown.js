@@ -11,7 +11,6 @@ export default function TypeaheadDropdown(props) {
     disabled,
     name, 
     label,
-    required,
     placeholder, 
     choices, 
     currentChosen, 
@@ -124,6 +123,7 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
     <div>
       {currentChosen.map(choice => {
         const isActive = currentChosen.includes(choice);
+        const handleTagClick = () => {
           handleClick(choice);
         }
 

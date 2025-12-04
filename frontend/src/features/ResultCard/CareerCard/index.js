@@ -160,7 +160,6 @@ DesktopCard.propTypes = {
       salary: PropTypes.string,
       salaryUnit: PropTypes.string,
       createdAt: PropTypes.string,
-// Temp comment
       featured: PropTypes.bool,
       category: PropTypes.shape({
         id: PropTypes.number,

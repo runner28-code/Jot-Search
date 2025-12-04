@@ -60,6 +60,7 @@ function formatDateString(date) {
   return formattedDate;
 }
 
+function renderMessage(historyObj) {
   if ( historyObj.message.includes('{careerName}') ) {
     const messageSplit = historyObj.message.split('{careerName}');
     return (

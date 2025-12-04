@@ -63,6 +63,7 @@ export default function Dropdown(props) {
     onChange, 
     placeholder, 
     type
+  } = props;
     
   const [isOpen, setIsOpen] = useState(false);
   const [listening, setListening] = useState(false);
@@ -75,6 +76,7 @@ export default function Dropdown(props) {
       } else {
         onChange(name, [...currentChosen, choice]);
       }
+// Temp comment
     } else { // single select
       setIsOpen(false);
       onChange(name, choice);

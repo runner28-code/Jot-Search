@@ -4,7 +4,6 @@ import LoadingSpinner from '../../LoadingSpinner';
 import { experienceMap } from '../../../utils/dbFieldMapping';
 import * as ROUTES from '../../../routes';
 
-export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if ( submissionObject.loading ) {
     return <LoadingSpinner
       height='50'
@@ -96,7 +95,6 @@ export function inputValidation(formObj) {
     newErrors.push('skills');
   }
 
-// Temp comment
   // Only need LinkedIn OR resume, not both.
   // If one is missing but the other is present, remove either from errors array.
   if ( newErrors.includes('linkedin') && !newErrors.includes('resume') ) {

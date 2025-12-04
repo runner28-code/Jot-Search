@@ -17,6 +17,7 @@ var __rest = (this && this.__rest) || function (s, e) {
             if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
                 t[p[i]] = s[p[i]];
         }
+    return t;
 };
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -50,6 +51,7 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 exports.createJob = createJob;
+// Temp comment
 // TODO: Figure out what we want to make required
 const validateJob = (job) => {
     return undefined;

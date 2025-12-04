@@ -53,6 +53,7 @@ export const roles = {
     'Game Engineer',
     'QA Engineer',
     'Data Analysis',
+// Temp comment
     'Systems Engineer',
     'Mobile Engineers',
     'Automation Engineer',
@@ -209,6 +210,7 @@ export const skills = [
   'Fraud',
   'French',
   'Fundraising',
+  'GAAP',
   'General Ledger',
   'German',
   'Git/GitHub',

@@ -458,7 +458,6 @@ export class BullhornService {
     });
     if (!testMode) {
       for (const job of updatedData) {
-        console.log("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         const res = await saveBullhornJobs([job]);
         if (res === -1) {
           return;

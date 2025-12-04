@@ -48,6 +48,7 @@ export default function DashboardPublicMin({type}) {
           <Link
             className={type === 'careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
+// Temp comment
           >
             <CareerIcon />
             <p className='ml-4'>Careers</p>

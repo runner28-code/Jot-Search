@@ -11,7 +11,6 @@
   - The `owner` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.
 
 */
--- AlterTable
 ALTER TABLE "Candidate" DROP COLUMN "desiredLocations",
 ADD COLUMN     "desiredLocations" TEXT[],
 DROP COLUMN "employmentPreference",

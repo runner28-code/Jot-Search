@@ -36,7 +36,6 @@ export const UpdateJobFeatured = ({ job }) => {
             // TODO: Replace with react-query refetch
             if(result) {
               window.location.reload()
-// Temp comment
             }
           }}>
           <span className="sr-only">inTulsa Featured</span>
@@ -51,6 +50,5 @@ export const UpdateJobFeatured = ({ job }) => {
           className='text-lg font-spaceGrotesk'>
           inTulsa Featured
         </label>
-      </div>
     </div>
   )

@@ -25,7 +25,6 @@ export default function NavBar() {
   } else {
     return <DesktopNavBarLayout />
   }
-}
 
 function NavBarLayout() {
   return (
@@ -48,6 +47,7 @@ function NavBarLayout() {
         </div>
       </div>
       {/* Nav Search */}
+    </nav>
   )
 }
 

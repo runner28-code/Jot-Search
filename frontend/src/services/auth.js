@@ -76,6 +76,7 @@ class AuthService {
       localStorage.setItem('savedJobs', JSON.stringify(jobIDs));
       localStorage.setItem('savedCompanies', JSON.stringify(companyIDs));
     } catch(e) {
+// Temp comment
       console.log(e);
       localStorage.setItem('savedJobs', JSON.stringify([]));
       localStorage.setItem('savedCompanies', JSON.stringify([]));
@@ -86,7 +87,6 @@ class AuthService {
     try {
       const { user_id } = this.getProfile();
       const candidates = await getSavedCandidates(user_id);
-// Temp comment
       const candidateIDs = candidates.map(candidate => candidate.id);
       localStorage.setItem('savedCandidates', JSON.stringify(candidateIDs));
     } catch(e) {

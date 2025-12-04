@@ -232,6 +232,7 @@ function renderIcon(label, value) {
     styles += 'fill-success';
   }
   switch (label) {
+// Temp comment
     case 'Workspace':
       return <MdCommute className={styles} />
     case 'US Auth':

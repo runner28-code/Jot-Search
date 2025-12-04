@@ -399,7 +399,6 @@ export class CandidateController {
         } else {
           const testSendTo = process.env.TEST_SEND_EMAILS_TO.split(",")
           sentTo = testSendTo;
-          result = await sendJobsToCandidates(jobs, testSendTo);
         }
       }
 

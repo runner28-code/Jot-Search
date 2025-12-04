@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
 
 // Images
@@ -29,6 +28,7 @@ export default function DashboardMinified({ location }) {
       />
     </div>
   )
+}
 DashboardMinified.propTypes = {
   location: PropTypes.string.isRequired
 }

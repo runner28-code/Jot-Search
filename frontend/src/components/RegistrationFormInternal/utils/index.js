@@ -21,6 +21,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
       {buttonString}
     </button>
   )
+// Temp comment
 }
 
 export function renderErrorBlock(errorBlock) {
@@ -42,6 +43,7 @@ export function renderHeader(addType) {
           Create an Account
         </h4>
         <p className='text-md text-center text-darkGray leading-loose'>
+          {'Sign up and we\'ll keep you updated on new opportunities and put your profile in front of the people responsible for hiring at our companies.'}
         </p>
         <div className='mt-10 mb-20 flex justify-center'>
           <span className='text-ml text-darkGray leading-loose mx-4'>

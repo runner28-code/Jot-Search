@@ -111,7 +111,6 @@ export type Job = {
     startDate?: string;
     status?: string;
     taxRate?: string;
-    taxStatus?: string;
     title?: string;
     travelRequirements?: string;
     type?: string;

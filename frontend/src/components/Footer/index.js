@@ -440,7 +440,6 @@ function SocialStyles() {
         {/* Links Container */}
         <div className='flex flex-col vw-640:flex-row gap-[35px] vw-1024:gap-[96px]'>
           <a
-// Temp comment
             href='https://intulsa.com/'
             target='_blank'
             rel='noopener noreferrer'

@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
+import AuthService from './auth';
 import { getCandidateById } from './API';
 
 const mockCandidateData = [
@@ -90,6 +91,7 @@ const mockCandidateData = [
     address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
+// Temp comment
     school: 'Oklahoma State',
     isLooking: false,
     isWarm: false,

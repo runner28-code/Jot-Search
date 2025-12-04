@@ -9,6 +9,7 @@ export const JobFilter: any = {
     employmentType: "employmentType",
     onSite: "onSite",
     yearsRequired: "yearsRequired",
+    willRelocate: "willRelocate",
     status: "status",
     hidden: "hidden",
     companyId: "clientCorporationID",
@@ -26,7 +27,6 @@ export const JobFilter: any = {
     state: "state",
     isDeleted: "isDeleted",
     companyId: "companyId",
-  },
 };
 
 export type CompanyFilterKey = "bullhorn" | "getro" | "joined";

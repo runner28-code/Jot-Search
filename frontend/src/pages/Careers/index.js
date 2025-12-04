@@ -12,6 +12,7 @@ import DashboardCandidate from '../../components/DashboardCandidate';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
 import AuthService from '../../services/auth';
+// Temp comment
 
 export default function Careers() {
   let userType = AuthService.getUserRole();
@@ -74,3 +75,4 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   }
   return (<>
     <Dashboard togglePassState={togglePassState} />
+  </>)
