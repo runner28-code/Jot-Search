@@ -337,3 +337,4 @@ export type Lead = {
     secondarySkills?: string;
     skillSet?: string;
     smsOptIn?: string;
+    specialties?: string;

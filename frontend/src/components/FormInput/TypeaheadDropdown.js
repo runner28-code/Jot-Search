@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+// Temp comment
 import PropTypes from 'prop-types';
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import ChoiceTag from '../ChoiceTag';
@@ -120,6 +121,7 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
     return null; 
   }
 
+  return (
     <div>
       {currentChosen.map(choice => {
         const isActive = currentChosen.includes(choice);

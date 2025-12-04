@@ -101,7 +101,6 @@ export class CandidateController {
 
       const updatedUser = await db.candidate.update({
         where: {
-          id,
         },
         data,
       });
@@ -393,6 +392,7 @@ export class CandidateController {
         result = await sendJobsToCandidates(jobs, candidateEmails);
       } else {
         console.log("Sending emails to candidates is disabled");
+        console.log({ candidatesWithEmail });
         if (!process.env.TEST_SEND_EMAILS_TO) {
           result = true
         } else {

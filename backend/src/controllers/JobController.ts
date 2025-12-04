@@ -441,3 +441,4 @@ const normalizeValue = (key: string, value: any) => {
       };
     }
   } else if (Array.isArray(value)) {
+    return {

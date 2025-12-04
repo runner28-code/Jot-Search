@@ -46,7 +46,6 @@ export default function GlobalSearch({ placeholder }) {
         candidates: []
       });
     }
-
     // TODO: API: Candidates if role === 'company' || 'coordinator'
     const [jobResults, companyResults, CandidateResults] = await Promise.all([
       getJobs( searchTerm, 'title', 3 ),
@@ -108,6 +107,7 @@ function renderResultsContainer( results, searchTerm ) {
     return null;
   }
   
+  return (
     <div className='absolute z-20 top-full w-full flex flex-col justify-center items-center min-h-50 px-6 py-4 rounded-2xl shadow-resultCardShadow bg-white '>
       { renderResults( results ) }
     </div>

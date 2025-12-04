@@ -118,7 +118,6 @@ class AuthService {
     localStorage.setItem('savedCompanies', JSON.stringify(savedCompanies));
   }
 
-// Temp comment
   getSavedCompanyIDs() {
     return JSON.parse(localStorage.getItem('savedCompanies')) || [];
   }

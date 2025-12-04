@@ -19,7 +19,6 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           {label}
         </label>
       </div>
-// Temp comment
     </div>
   )
 }
@@ -65,7 +64,6 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
       aria-checked={toggled}
       onClick={handleToggle}
     >
-      <span className="sr-only">{label}</span>
       <span 
         aria-hidden="true" 
         className={`${toggleStyles} pointer-events-none inline-block h-10 w-10 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out`}>

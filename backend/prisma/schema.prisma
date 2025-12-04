@@ -760,3 +760,4 @@ model GetroMember {
   mentorship               Boolean?
   remote_work              Boolean?
   require_sponsorship_visa Boolean?
+  seniority                String?

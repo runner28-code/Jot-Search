@@ -73,6 +73,7 @@ function CareerHeader ({ location }) {
           className='text-white underline basis-1/3'
           to={ROUTES.careers}
         >Back</Link>
+        <div className='basis-2/6'>
           <TypeTabs location={location}/>
         </div>
         <div className='basis-2/6 flex items-center'>

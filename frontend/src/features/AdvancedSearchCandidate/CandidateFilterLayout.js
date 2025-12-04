@@ -68,7 +68,7 @@ export default function CandidateFilterLayout(props) {
       </div>
       <div className='flex justify-between items-center gap-[65px]'>
         <FilterSearch
-          setSearchTerm={setSearchTerm}
+          searchTerm={searchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'
           additionalClasses='w-1/2'

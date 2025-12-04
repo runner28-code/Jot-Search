@@ -487,7 +487,6 @@ export const JOB_FIELDS = [
   "isPublic",
   "location",
   "markUpPercentage",
-  "numOpenings",
   "onSite",
   "owner",
   "payRate",
@@ -502,3 +501,4 @@ export const JOB_FIELDS = [
   "source",
   "startDate",
   "status",
+  "taxRate",

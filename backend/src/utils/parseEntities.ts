@@ -132,3 +132,4 @@ export const parseGetroJobToMain = (data: GtJob) => {
     salary: `${data.compensation_min} - ${data.compensation_max}`,
     salaryUnit: data.compensation_currency,
     postedAt: data.posted_at,
+  };

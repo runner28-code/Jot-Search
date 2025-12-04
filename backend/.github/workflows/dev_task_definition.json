@@ -92,7 +92,6 @@
                 {
                     "name": "MAIL_SENDER_EMAIL", 
                     "value": "Support@iDENTIFY.tech"
-                },
                 {
                     "name": "FRONTEND_URL", 
                     "value": "http://localhost:3000"

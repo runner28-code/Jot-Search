@@ -18,10 +18,10 @@ function adjustJobFilterObject() {
 
 export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
-// Temp comment
   const filterObject = adjustJobFilterObject();
   const [filterState, setFilterState] = useState({
     title: '',
+// Temp comment
     'On-Site/Remote': 'Any Work Setting',
     'Expertise': 'Any Expertise',
   });

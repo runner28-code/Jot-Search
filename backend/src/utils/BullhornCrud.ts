@@ -106,7 +106,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
     "skills",
   ];
   try {
-    for (const job of jobs) {
       try {
         console.log(`Savng job with ID = ${job.id}`);
         const parsedJob = parseBullhornJobToMain(job);
@@ -133,6 +132,7 @@ export const saveBullhornJobs = async (jobs: any[]) => {
 
         const newJob = await db.job.create({
           data: jobData,
+        });
 
         console.log(`Saved job with ID = ${job.externalId} successfully`);
       } catch (error: any) {
@@ -330,3 +330,4 @@ export const migrateJobInTPP = async (data: Job) => {
       `Migrated Bullhorn Job (bh_id=${data.externalId}) successfully`
     );
   } catch (error: any) {
+    console.log(error.message);

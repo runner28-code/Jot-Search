@@ -85,6 +85,7 @@ const DropdownMenu = () => {
   if ( !profile ) {
     navigate(ROUTES.login);
   }
+
   const firstname = currentUser?.firstname || '';
 
   const closeDropdown = () => {

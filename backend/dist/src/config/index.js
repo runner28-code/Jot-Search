@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 require("dotenv/config");
 const config = {
     port: process.env.PORT,
+// Temp comment
     projectId: process.env.PROJECT_ID,
     authSecret: process.env.AUTH_SECRET,
     fileUploadSize: process.env.FILE_UPLOAD_SIZE,
@@ -19,3 +20,4 @@ const config = {
     sendgridSecret: process.env.SENDGRID_SECRET,
     mailSenderEmail: process.env.MAIL_SENDER_EMAIL,
     frontendUrl: process.env.FRONTEND_URL,
+    enableCronJobs: process.env.ENABLE_CRON_JOBS,

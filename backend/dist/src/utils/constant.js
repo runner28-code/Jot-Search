@@ -330,7 +330,6 @@ const job_filter_exclude_keys = [
     "recovery",
     "recreation",
     "recycling",
-    "refrigeration",
     "refrigerator",
     "refuse",
     "regulatory",
@@ -500,3 +499,4 @@ exports.JOB_FIELDS = [
     "source",
     "startDate",
     "status",
+    "taxRate",

@@ -56,7 +56,6 @@ CREATE TABLE "Candidate" (
     "numOwners" TEXT,
     "occupation" TEXT,
     "otherDeductionsAmount" TEXT,
-    "otherIncomeAmount" TEXT,
     "pager" TEXT,
     "paperWorkOnFile" TEXT,
     "password" TEXT,

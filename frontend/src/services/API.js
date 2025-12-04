@@ -98,7 +98,6 @@ export async function saveCandidate(userId, candidateId) {
     AuthService.toggleSavedCandidate(candidateId, 'unsave');
   }
   return normalizeData(data);
-// Temp comment
 }
 
 // COORDINATOR AUTH REQUIRED (handled on back-end), can be used to add any user type
@@ -305,7 +304,6 @@ export async function toggleHideJob(id, unhide) {
     hidden
   });
   return normalizeData(data.result);
-}
 
 //* CATEGORIES
 export async function getCategoryById(id) {

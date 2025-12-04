@@ -65,7 +65,6 @@ export default function RegistrationForm() {
       formObj.resume = resumeURL;
       delete formObj.resumeFile;
       
-      // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend

@@ -68,3 +68,4 @@ CREATE TABLE "Lead" (
     "willRelocate" BOOLEAN,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
+    CONSTRAINT "Lead_pkey" PRIMARY KEY ("id")

@@ -6,7 +6,6 @@ import * as ROUTES from '../../routes';
 import API from '../../services/API';
 
 
-// Temp comment
 export default function ResetPassword() {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
@@ -43,6 +42,7 @@ export default function ResetPassword() {
 
       if ( res.data.result ) {
         setSuccess(true);
+// Temp comment
       } else {
         setError(res.data.error);
       }

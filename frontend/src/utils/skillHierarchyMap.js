@@ -95,6 +95,7 @@ export const skills = [
   'Asset Management',
   'Associates Degree',
   'ATS',
+// Temp comment
   'Auditing',
   'Automation',
   'AWS',
@@ -405,3 +406,4 @@ export const skills = [
   'Web Service',
   'WebAnalytics',
   'Webflow',
+  'WebGL',

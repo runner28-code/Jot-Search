@@ -129,7 +129,6 @@ export const getCandidatesOnJob = async (jobId: string) => {
     const job = await db.job.findFirst({
       where: {
         id: jobId,
-      },
       include: {
         applications: {
           include: {
@@ -147,3 +146,4 @@ export const getCandidatesOnJob = async (jobId: string) => {
   } catch (error) {
     console.log(error);
     return { message: error, result: false };
+  }

@@ -155,10 +155,8 @@ function renderDesktopLogo(logoUrl, name) {
   if( width < 1280 ) {
     return null;
   }
-  if (!logoUrl) {
     return (
       <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
-// Temp comment
         <BsBuilding className={logoStyles} />
       </div>
     )

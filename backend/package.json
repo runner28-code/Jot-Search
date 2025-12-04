@@ -26,7 +26,6 @@
     "reflect-metadata": "^0.1.13",
     "routing-controllers": "^0.9.0",
     "tsc-watch": "^4.6.0",
-    "uuid": "^8.3.2"
   },
   "scripts": {
     "dev": "cp -R ./src/templates ./dist && export GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' && nodemon src/app.ts",
@@ -70,3 +69,4 @@
     "ts-node": "^10.7.0",
     "typed-two-way-map": "^1.0.4",
     "typescript": "^4.6.4"
+  }

@@ -19,7 +19,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
   const location = useLocation().pathname;
   const active = ' bg-royalBlue';
   if( width >= 990 ) {
-// Temp comment
     return null;
   }
   return (<>

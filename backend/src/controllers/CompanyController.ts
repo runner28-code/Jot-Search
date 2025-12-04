@@ -369,3 +369,4 @@ export class CompanyController {
       _dataset,
       _table,
       _fields,
+      count,

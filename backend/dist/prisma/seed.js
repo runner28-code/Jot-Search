@@ -6,7 +6,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
 };
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -167,6 +166,7 @@ function seedCompanies() {
                     description: "Testing a new description",
                     city: "Tulsa",
                     state: "OK",
+                    businessSectorList: "Health Care,Virtual Health",
                     billingPhone: "946-423-2341",
                     companyURL: "testingco@gmail.com",
                     companyDescription: "Best at testing",

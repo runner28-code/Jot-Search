@@ -28,6 +28,7 @@ const ITEMS_PER_PAGE = 5;
 const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'jobs', 'companies'],
   company: ['candidates', 'jobs'],
+  candidate: ['jobs', 'companies'],
   guest: ['jobs', 'companies'],
 }
 
@@ -62,7 +63,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const [page, setPage] = useState(1);
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
-  const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,
