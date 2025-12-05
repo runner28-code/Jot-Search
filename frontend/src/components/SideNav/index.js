@@ -59,6 +59,7 @@ function renderChoice(choice, selected, index, choicesLength) {
     <Link
       to={choice.link}
       className={choiceStyles}
+      key={choice.label}
     >
       <Icon
         className={iconStyles} />

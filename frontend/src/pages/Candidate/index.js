@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { useLocation, Navigate } from 'react-router-dom';
 import CareerProfileInfo from './CareerProfileInfo';
 import LoadingSpinner from '../../components/LoadingSpinner';

@@ -41,5 +41,6 @@ CREATE TABLE "GetroJobInfo" (
     "hidden" BOOLEAN NOT NULL DEFAULT false,
 
     CONSTRAINT "GetroJobInfo_pkey" PRIMARY KEY ("id")
+);
 
 -- AddForeignKey

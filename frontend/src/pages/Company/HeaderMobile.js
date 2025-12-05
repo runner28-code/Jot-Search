@@ -57,7 +57,6 @@ function HeaderContent({ companyData }) {
           data={companyData} />
       </div>
     </>
-// Temp comment
   )
 }
 

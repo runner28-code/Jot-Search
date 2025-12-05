@@ -32,6 +32,7 @@ const defaultState = {
   country: '',
   willRelocate: false,
   roles: [],
+  skills: [],
   experience: '',
   employmentPreference: '',
   workspace: '',
@@ -79,6 +80,7 @@ export default function RegistrationFormInternal(loggedIn) {
           success: false,
         });
         return;
+// Temp comment
       }
 
       // Attempt to upload resume before submitting user data

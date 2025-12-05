@@ -64,7 +64,6 @@ class AuthService {
     localStorage.removeItem('id_token');
     localStorage.removeItem('savedJobs');
     localStorage.removeItem('savedCompanies');
-// Temp comment
     localStorage.removeItem('savedCandidates');
   }
 

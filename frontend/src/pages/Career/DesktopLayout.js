@@ -185,6 +185,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
   </>)
 }
 
+function renderSkillsSection({ skillList }) {
   return (<>
     <hr className={hrStyles} />
     {/* Skills Required */}
@@ -193,6 +194,7 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
   </>)
 }
 function SkillsList({ items }) {
+// Temp comment
   if (!items) {
     return (
       <ul className='list-disc ml-8 mb-20'>

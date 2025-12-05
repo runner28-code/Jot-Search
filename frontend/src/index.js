@@ -19,6 +19,7 @@ ReactDOM.render(
   <QueryClientProvider client={queryClient}>
     <BrowserRouter>
       <CandidateContext>
+        <CareerContext>
           <CategoryContext>
             <ScrollToTop />
             <App />

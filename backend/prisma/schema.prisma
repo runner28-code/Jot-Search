@@ -354,7 +354,6 @@ model CandidateJobInvites {
   updatedAt   DateTime  @updatedAt
 }
 
-model CompanyCandidateInvites {
   id          String    @id @default(uuid())
   candidateId String
   candidate   Candidate @relation(fields: [candidateId], references: [id])
@@ -605,6 +604,7 @@ model Candidate {
   employeeType       String?
   employeePreference String?
   ethnicity          String[]
+  experience         Int?
   externalId         String?
   fax                String?
   fax2               String?

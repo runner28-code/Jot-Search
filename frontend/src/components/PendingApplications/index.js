@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
+import LoadingSpinner from '../../components/LoadingSpinner';
 import AuthService from '../../services/auth';
 import CareerCard from '../../features/ResultCard/CompactCareerCard';
 import featuredIcon from '../../assets/icons/pyramid.svg';
@@ -73,7 +74,6 @@ export default function PendingApplications () {
       <div className='pt-24'>
         <Link
           to={ROUTES.applications}
-          class='outline outline-2 outline-white text-white font-roboto py-8 px-14 rounded-lg text-md'>
             View All
         </Link>
       </div>

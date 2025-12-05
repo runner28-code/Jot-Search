@@ -72,7 +72,6 @@ export default function Stats({ userType }) {
             choices={statFilterChoices}
             timeframe={timeframe}
             handleFilterChange={handleFilterChange}
-          />
         </div>
       </div>
       <div className='flex flex-wrap'>

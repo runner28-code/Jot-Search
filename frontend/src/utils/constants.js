@@ -1,7 +1,6 @@
 export const pluralizedTypes = {
   candidate: 'candidates',
   candidates: 'candidates',
-// Temp comment
   company: 'companies',
   companies: 'companies',
   career: 'careers',
@@ -36,6 +35,7 @@ export const stateCodeMap = {
   Kentucky: 'KY',
   Louisiana: 'LA',
   Maine: 'ME',
+// Temp comment
   Maryland: 'MD',
   Massachusetts: 'MA',
   Michigan: 'MI',

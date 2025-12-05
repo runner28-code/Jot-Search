@@ -37,7 +37,6 @@ export default function CareerPage() {
   }, []);
 
   if ( !careerData.id ) { return <LoadingSpinner /> }
-
   const categoryString = careerData.category?.name.toUpperCase() || 'CATEGORY N/A';
   const addressString = buildCareerAddress(careerData.city, careerData.state);
   const salaryString = buildSalaryString(careerData.salary, careerData.salaryUnit);
@@ -147,7 +146,6 @@ function MailButton({ text, email, company, id, add }) {
   const subject = company + ' role ' + id + ' ' + add;
   const href = mail + subject;
   return (<>
-// Temp comment
     <a
       href={href}
       className='rounded-xl bg-white border border-royalBlue p-4 mt-6 text-royalBlue inline-block'>

@@ -23,6 +23,7 @@ const stylesObject = {
   topLinkStyles,
   bottomLinkStyles,
   iconStyles,
+  spanStyles,
   hrStyles
 }
 

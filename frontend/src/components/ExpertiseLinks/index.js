@@ -33,10 +33,10 @@ export default function ExpertiseLinks() {
         </Link>
         {/* Sales & Business Development */}
         <Link
-// Temp comment
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Sales & Biz Dev' }}
+// Temp comment
         >
           <img
             src={salesAndBizDevIcon}

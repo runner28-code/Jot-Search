@@ -20,7 +20,6 @@ export default function FormInput(props) {
     value,
     required,
     onChange,
-// Temp comment
     choices,
     choiceObject,
     error,

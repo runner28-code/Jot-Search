@@ -8,7 +8,6 @@ export default function TextInput({type, name, placeholder, label, value, requir
     } else {
       onChange(name, e);
     }
-  }
 
   return (
     <div className='w-full'>
@@ -26,6 +25,7 @@ TextInput.propTypes = {
   value: PropTypes.string,
   required: PropTypes.bool,
   onChange: PropTypes.func,
+  baseStyles: PropTypes.string.isRequired,
   disabled: PropTypes.bool
 }
 

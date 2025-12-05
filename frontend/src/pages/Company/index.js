@@ -132,7 +132,6 @@ RenderHeader.propTypes = {
   type: PropTypes.string
 }
 
-// Temp comment
 function RenderInvite(loggedIn, companyData) {
   const role = AuthService.getUserRole();
   if( loggedIn && role === 'coordinator' ) {
@@ -158,7 +157,6 @@ function renderCompanyDescription(description, textStyles) {
   }
   return (
     <div className={textStyles}>
-      {description}
     </div>
   )
 }

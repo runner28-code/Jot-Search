@@ -17,7 +17,6 @@ const User_1 = require("../types/User");
 const BigQueryService_1 = require("./BigQueryService");
 const Common_1 = require("../types/Common");
 const constant_1 = require("../utils/constant");
-// Temp comment
 const utils_1 = require("../utils");
 const config_1 = __importDefault(require("../config"));
 const db_1 = __importDefault(require("../utils/db"));

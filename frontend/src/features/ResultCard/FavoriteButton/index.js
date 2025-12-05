@@ -48,6 +48,7 @@ export default function FavoriteButton({ type, data, addClass, isFavoriteOverrid
       onClick={handleFavoriteClick}
     />
   )
+// Temp comment
 }
 
 FavoriteButton.propTypes = {
@@ -68,7 +69,6 @@ function getIdByType(type, data) {
     case 'company':
       return data.id;
     case 'candidate':
-// Temp comment
       return data.id;
     default:
       return '';

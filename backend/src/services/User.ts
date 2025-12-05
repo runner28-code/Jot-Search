@@ -503,7 +503,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
       }
     }
     return {
-      result: true,
       data,
       message: null,
     };

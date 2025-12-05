@@ -80,7 +80,6 @@ function CareerHeader ({ location }) {
           <ToggleFilter />
         </div>
       </div>
-    </>)
   }
   return (<>
     <div className='mt-8'></div>

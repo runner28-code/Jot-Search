@@ -26,7 +26,6 @@ export default function CareerFilterLayout(props) {
     searchTerm,
     setSearchTerm,
     handleSearchClick,
-// Temp comment
     clearFilters,
   } = props;
 
@@ -50,6 +49,7 @@ export default function CareerFilterLayout(props) {
       </div>
       <div className='flex items-center gap-[65px]'>
         <FilterSearch
+// Temp comment
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}

@@ -39,7 +39,6 @@ const MainCrud_1 = require("../utils/MainCrud");
 const BullhornService_1 = require("../services/BullhornService");
 let JobController = class JobController {
     searchJobByID(id) {
-        var _a;
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const job = yield db_1.default.job.findFirst({
@@ -274,7 +273,6 @@ __decorate([
 ], JobController.prototype, "getJobsByFilterFromMain", null);
 __decorate([
     (0, routing_controllers_1.Get)("/apply"),
-// Temp comment
     __param(0, (0, routing_controllers_1.QueryParam)("candidate")),
     __param(1, (0, routing_controllers_1.QueryParam)("job")),
     __metadata("design:type", Function),

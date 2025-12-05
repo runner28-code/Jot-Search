@@ -66,7 +66,6 @@ const mockJobsData = [
     onSite: false,
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'
-// Temp comment
   },
   {
     id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',

@@ -700,7 +700,6 @@ export class BullhornService {
           start: offset,
           count,
           sort,
-        });
         const url = `${this.restUrl}search/Candidate?${query}`;
         const res = await axios.get(url, {
           headers: {

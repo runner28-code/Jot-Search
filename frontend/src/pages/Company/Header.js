@@ -150,7 +150,6 @@ function renderCompanyLogo(logoUrl, name) {
 }
 
 function renderDesktopLogo(logoUrl, name) {
-// Temp comment
   const { width } = useWindowDimensions();
   const logoStyles = 'object-contain w-full h-full';
   if( width < 1280 ) {
@@ -203,6 +202,7 @@ function renderAddress( city, state ) {
 function renderLinkedIn( url, headerRowTextStyles ) {
   const textStyles = headerRowTextStyles += 'underline text-sky-700';
   if( !url ) {
+// Temp comment
     return (
       <a
         className={textStyles}

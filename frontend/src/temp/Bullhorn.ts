@@ -33,7 +33,6 @@ export type Company = {
     industryList?: string,
     invoiceFormat?: string,
     name?: string,
-    notes?: string,
     numEmployees?: string,
     numOffices?: string,
     ownerShip?: string,
@@ -158,6 +157,7 @@ export type ClientContact = {
     owner?: string;
     pager?: string;
     password?: string;
+    phone?: string;
     phone2?: string;
     phone3?: string;
     preferredContact?: string;

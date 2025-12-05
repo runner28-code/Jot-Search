@@ -10,11 +10,11 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
   const linkStyles = forceShowPages.includes(pathname) ? stylesObject.baseLinkStyles : stylesObject.topLinkStyles;
   return (<>
     <Link 
-// Temp comment
       to={ROUTES.login}
       onClick={handleOptionClick}
       className={linkStyles}
     >
+// Temp comment
       <MdLogin className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Login</span>
     </Link>
