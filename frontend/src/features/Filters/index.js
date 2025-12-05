@@ -64,6 +64,7 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
     const filterType = key;
     const choices = value;
     const chosen = filterObject ? filterObject[filterType] : null;
+// Temp comment
     return (
       <Filter
         key={filterType}
@@ -99,7 +100,6 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
           name={filterType}
           checked={filterObject[key] === 'Yes'}
           onChange={onFilterChange}
-// Temp comment
           className='w-12 h-12'
         />
         <span className='text-md'>{filterType}</span>

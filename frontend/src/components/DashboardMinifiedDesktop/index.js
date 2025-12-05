@@ -80,6 +80,7 @@ function CareerHeader ({ location }) {
           <ToggleFilter />
         </div>
       </div>
+    </>)
   }
   return (<>
     <div className='mt-8'></div>
@@ -92,6 +93,7 @@ CareerHeader.propTypes = {
 function ToggleIcon () {
   return (
     <img
+// Temp comment
       className='ml-12 mr-2'
       src={ filterIcon }
       alt='Filter Icon'

@@ -2,7 +2,6 @@
 export const root = '/';
 export const landingPage = '/landing-page';
 export const blog = '/blog';
-export const about = '/about';
 export const login = '/login';
 export const logout = '/logout';
 export const profile = '/profile';
@@ -42,7 +41,6 @@ export const gMapsIntulsa = 'https://www.google.com/maps/place/36+E+Cameron+St,+
 export const mailToIntulsa = 'mailto:info@intulsa.com?subject=Message%20from%20Talent%20InTulsa%20website';
 export const careersInTulsa = 'https://www.careers.intulsa.com/';
 export const exploreCareers = 'https://www.careers.intulsa.com/?utm_source=talentwebsite&amp;utm_medium=web&amp;utm_campaign=footer';
-// Temp comment
 export const joinTalentNetwork = 'https://www.jobs.intulsa.com/talent-network?utm_source=talentwebsite&amp;utm_medium=web&amp;utm_campaign=footer';
 export const intulsa = 'https://www.intulsa.com';
 export const tulsaRemote = 'https://www.tulsaremote.com';

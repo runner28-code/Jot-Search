@@ -80,6 +80,7 @@ export function inputValidation(formObj) {
   if( formObj.state.length !== 2 ) {
     newErrors.push('state');
   }
+// Temp comment
   if( formObj.zip.length !== 5 || isNaN(formObj.zip) ) {
     newErrors.push('zip');
   }

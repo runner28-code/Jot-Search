@@ -42,7 +42,6 @@ export default function FeaturedJobs() {
       <div className='flex mt-12 flex-wrap'>
         {
           isLoading ?
-            <LoadingSpinner />
             :
             jobs.map((career, index) => {
               const categoryString = career.category?.name.toUpperCase() || 'CATEGORY N/A';

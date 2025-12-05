@@ -11,6 +11,7 @@ export default function ResetButton({ candidateData, setType }) {
     const { email } = candidateData;
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email
+// Temp comment
     });
 
     if ( res.data.result ) {

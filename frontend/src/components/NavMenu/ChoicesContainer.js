@@ -32,6 +32,7 @@ export default function ChoicesContainer(props) {
     userRole,
     handleOptionClick } = props;
   
+// Temp comment
   return (<>
     { renderRoleChoices({ userRole, handleOptionClick }) }
     { userRole === 'guest' ? 

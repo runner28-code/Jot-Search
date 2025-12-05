@@ -21,7 +21,6 @@ export default function PendingApplications () {
     const appliedJobs = await getAppliedJobs(profile.user_id);
     const appliedJobsWithDate = appliedJobs.map(job => {
       return {
-        ...job,
         agoDate: job.appliedDate
       }});
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
@@ -74,6 +73,7 @@ export default function PendingApplications () {
       <div className='pt-24'>
         <Link
           to={ROUTES.applications}
+          class='outline outline-2 outline-white text-white font-roboto py-8 px-14 rounded-lg text-md'>
             View All
         </Link>
       </div>

@@ -29,4 +29,5 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "postedAt",
     "hidden",
     "company_name",
+    "datasource",
 ]);

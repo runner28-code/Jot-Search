@@ -31,9 +31,9 @@ export class BigQueryService {
                     ${query}
                     LIMIT ${count}
                 `;
+            }
             const options = {
                 query: query,
-                location: 'US',
             };
             consoleLog(`BIGQUERY: SELECT QUERY = ${query}`);
             const [job] = await BigQueryService.getClient().createQueryJob(options);

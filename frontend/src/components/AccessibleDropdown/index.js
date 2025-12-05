@@ -91,6 +91,7 @@ AccessibleDropdown.propTypes = {
     inputWidth: PropTypes.string,
     marginBottom: PropTypes.string,
     listStyles: PropTypes.string,
+// Temp comment
     listItemStyles: PropTypes.string,
   }).isRequired,
   showDropdownArrow: PropTypes.bool,
@@ -218,7 +219,6 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
   });
 }
 
-// Temp comment
 function renderActiveIcon(choice, currentChosen) {
   if (choice === currentChosen || currentChosen?.includes(choice)) {
     return(

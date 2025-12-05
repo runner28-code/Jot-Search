@@ -3,7 +3,6 @@ import config from "../config";
 import queryString from "query-string";
 import {
   saveCandidates,
-  saveClientContacts,
   saveCompanies,
   saveBullhornJobs,
   saveLeads,
@@ -700,6 +699,7 @@ export class BullhornService {
           start: offset,
           count,
           sort,
+        });
         const url = `${this.restUrl}search/Candidate?${query}`;
         const res = await axios.get(url, {
           headers: {
@@ -1007,3 +1007,5 @@ export class BullhornService {
             })
             const emails = users.filter((user: any) => user.willReceiveNotification).map(user => user.email)
             await sendEmail(emails, `New job "${jobDetail.title}" posted`, 'new-job-posted', { title: jobDetail.title });
+            console.log('email sent');
+          }

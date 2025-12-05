@@ -80,7 +80,6 @@ export default function RegistrationFormInternal(loggedIn) {
           success: false,
         });
         return;
-// Temp comment
       }
 
       // Attempt to upload resume before submitting user data

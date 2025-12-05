@@ -35,7 +35,6 @@ export const stateCodeMap = {
   Kentucky: 'KY',
   Louisiana: 'LA',
   Maine: 'ME',
-// Temp comment
   Maryland: 'MD',
   Massachusetts: 'MA',
   Michigan: 'MI',

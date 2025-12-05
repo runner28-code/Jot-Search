@@ -25,11 +25,13 @@ export default function JoinTalentNetwork() {
             >
               <span className='text-softWhite text-ml'>Create an account</span>
             </Link>
+          </div>
           <div className='mt-8 px-[5%]'>
             <h6 className='text-[2.5rem] mt-12 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>
             <p className='text-slateGray text-ml mt-6 font-light leading-[3.6rem]'>By signing up, you will be able to connect and support you with top companies ready to help you take the next step in your career in Tulsa.</p>
           </div>
         </div>
+// Temp comment
       </section>
     </>)
   }

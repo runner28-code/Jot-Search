@@ -23,7 +23,6 @@ exports.JobFilter = {
         employmentType: "employmentType",
         onSite: "onSite",
         yearsRequired: "yearsRequired",
-// Temp comment
         willRelocate: "willRelocate",
         city: "city",
         state: "state",
@@ -33,6 +32,7 @@ exports.JobFilter = {
 };
 exports.CompanyFilter = {
     bullhorn: {
+// Temp comment
         name: "name",
         city: "address_city",
         industry: "industryList",

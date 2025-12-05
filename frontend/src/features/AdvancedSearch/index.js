@@ -29,6 +29,7 @@ const availableTabChoicesByUserType = {
   coordinator: ['candidates', 'careers', 'companies'],
   company: ['careers', 'candidates' ],
   candidate: ['careers', 'companies'],
+  guest: ['careers', 'companies'],
 }
 
 function useTabState(disabledTabs, userType, pathname) {
@@ -59,7 +60,6 @@ export default function AdvancedSearch({ disabledTabs }) {
   const [filterObject, setFilterObject] = useState(initialFilterState);
   const [page, setPage] = useState(1);
 
-  /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const modifiedFilterObject = {

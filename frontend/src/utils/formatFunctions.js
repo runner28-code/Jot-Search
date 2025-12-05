@@ -145,7 +145,6 @@ export function buildCandidateAddress(candidateData, full = false) {
 }
 
 export function buildOccupationString(occupation, companyName) {
-// Temp comment
   if ( occupation && companyName ) {
     const occupationString = `${occupation} @ ${companyName}`;
     return occupationString;

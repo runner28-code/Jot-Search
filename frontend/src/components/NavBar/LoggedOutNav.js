@@ -88,7 +88,6 @@ function DesktopNavBarLayout() {
           </button>
         </Link>
         <a href={ROUTES.linkedin}>
-          <img
             src={linkedin_grey}
             className='text-royalBlue h-14'
             alt='linkedin'

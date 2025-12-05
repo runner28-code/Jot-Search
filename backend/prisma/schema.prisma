@@ -354,6 +354,7 @@ model CandidateJobInvites {
   updatedAt   DateTime  @updatedAt
 }
 
+model CompanyCandidateInvites {
   id          String    @id @default(uuid())
   candidateId String
   candidate   Candidate @relation(fields: [candidateId], references: [id])
@@ -761,3 +762,4 @@ model GetroMember {
   require_sponsorship_visa Boolean?
   seniority                String?
   source                   String?
+  us_work_authorization    Boolean?

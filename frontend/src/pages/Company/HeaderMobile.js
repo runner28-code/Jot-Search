@@ -115,6 +115,7 @@ function renderCompanyLogo(logoUrl, name) {
     </div>
   )
 }
+// Temp comment
 
 function renderDesktopLogo(logoUrl, name) {
   const { width } = useWindowDimensions();

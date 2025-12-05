@@ -111,6 +111,7 @@ export default function DesktopLayout(props) {
       }
     </section>
     {renderDescription(role, navigate, careerData.clientCorporation, skillList, careerData)}
+// Temp comment
     <OtherCareers
       companyId={careerData.companyId}
       companyName={careerData.clientCorporation}
@@ -194,7 +195,6 @@ function renderSkillsSection({ skillList }) {
   </>)
 }
 function SkillsList({ items }) {
-// Temp comment
   if (!items) {
     return (
       <ul className='list-disc ml-8 mb-20'>

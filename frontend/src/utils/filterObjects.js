@@ -12,7 +12,6 @@ export const jobFilterObject = {
   ],
   'On-Site/Remote': [
     'Any',
-// Temp comment
     'On-Site',
     'Remote',
     'Hybrid',
@@ -48,6 +47,7 @@ export const ACTIVE_STATUSES = [
 const convertedJobFilters = {};
 Object.keys(jobFilterObject).forEach(key => {
   convertedJobFilters[key] = jobFilterObject[key][0];
+// Temp comment
 });
 
 export const defaultJobFilterState = {

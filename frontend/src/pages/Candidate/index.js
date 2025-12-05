@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { useLocation, Navigate } from 'react-router-dom';
 import CareerProfileInfo from './CareerProfileInfo';
 import LoadingSpinner from '../../components/LoadingSpinner';
@@ -68,6 +69,7 @@ export default function Candidate() {
     setCandidateData(formatUserObjectForRender);
     let updateResponse = null;
     if (candidateData.sourceTable === 'Candidate') {
+// Temp comment
       const convertedCandidateObject = convertUserToCandidate(updateObject);
       updateResponse = await updateCandidate(convertedCandidateObject, id);
     } else {

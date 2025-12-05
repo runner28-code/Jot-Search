@@ -503,3 +503,4 @@ export const JOB_FIELDS = [
   "startDate",
   "status",
   "taxRate",
+  "taxStatus",

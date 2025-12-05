@@ -503,6 +503,7 @@ export const getCoordinatorDashboardStats = async (days: number) => {
       }
     }
     return {
+      result: true,
       data,
       message: null,
     };
@@ -641,3 +642,4 @@ export const recovery = async (email: string) => {
     if (!user) return { result: false, error: "User does not exist" };
 
     const token = CreateJwtToken({ email: user.email });
+

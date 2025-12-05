@@ -31,10 +31,10 @@ function App() {
               path={ROUTES.signup}
               element={<SignUp />} />
             <Route
-// Temp comment
               path={ROUTES.login}
               element={<Login />} />
             <Route
+// Temp comment
               path={ROUTES.landingPage}
               element={<LandingPage />} />
             <Route

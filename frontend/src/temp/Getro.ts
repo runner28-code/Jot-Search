@@ -83,3 +83,4 @@ export type User = {
     seniority?: string;
     employment_type?: string;
     will_work_anywhere?: string;
+    us_work_authorization?: string;

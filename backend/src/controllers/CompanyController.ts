@@ -17,13 +17,13 @@ import {
   FilterOption,
   Job,
   FilterBody,
-  DataSource,
   Tables,
   Company,
   CompanySearchByID,
   CompanySearchByFilterResponse,
   DATASET_MAIN,
   ApplyResponse,
+  Operator,
 } from "../types/Common";
 import { User } from "../types/User";
 import { getDataSource, getFilterConditions } from "../utils";

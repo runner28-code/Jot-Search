@@ -23,6 +23,7 @@ export const genderMap = {
   F: 'Female',
   N: 'Non-Binary',
   O: 'Other'
+// Temp comment
 };
 
 export const ethnicityMap = {
@@ -59,7 +60,6 @@ export const educationChoices = [
 
 export const referralChoices = [
   'Web Search',
-// Temp comment
   'Social Media',
   'Career Fair',
   'Event',

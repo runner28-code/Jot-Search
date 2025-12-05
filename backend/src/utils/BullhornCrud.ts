@@ -332,3 +332,4 @@ export const migrateJobInTPP = async (data: Job) => {
     );
   } catch (error: any) {
     console.log(error.message);
+    console.log(

@@ -263,7 +263,9 @@ module.exports = {
           }
         },
         '.scrollbar-minimal': {
+          'scrollbar-track': 'border-radius: 10px',
           'scrollbar-thumb': 'border-radius: 10px',
           'scrollbar-width': 'thin',
         }
       }
+      )

@@ -221,3 +221,5 @@ export class UserController {
   @Authorized()
   @Get("/stats")
   async stats(@CurrentUser() authUser: User) {
+    return await getStats(authUser.id!);
+  }

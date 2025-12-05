@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { MdLocationOn, MdCancel, MdCheckCircle } from 'react-icons/md';
 import PropTypes from 'prop-types';
 import { FaPhoneAlt } from 'react-icons/fa';
@@ -23,6 +22,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
       const imageToUpload = event.target.files[0];
       console.log(imageToUpload);
     }
+    setFormData({ ...formData, [name]: value });
   }
 
   const handleCancel = () => {

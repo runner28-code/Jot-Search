@@ -49,6 +49,5 @@ import { DATASET_MAIN, Tables } from "../types/Common";
     } catch (error) {
         console.log(error);
     }
-
     console.log('/// STOP ENCRYPT ALL PASSWORDS');
     process.exit();
