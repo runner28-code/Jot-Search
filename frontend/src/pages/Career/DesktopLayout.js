@@ -185,7 +185,6 @@ function renderDescription(role, navigate, companyName, skillList, careerData) {
   </>)
 }
 
-function renderSkillsSection({ skillList }) {
   return (<>
     <hr className={hrStyles} />
     {/* Skills Required */}

@@ -32,6 +32,7 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
       </div>
       { renderTextOrInputs(editMode, contentObject, handlePropertyChange) }
     </section>
+// Temp comment
   )
 }
 

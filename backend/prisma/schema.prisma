@@ -605,7 +605,6 @@ model Candidate {
   employeeType       String?
   employeePreference String?
   ethnicity          String[]
-  experience         Int?
   externalId         String?
   fax                String?
   fax2               String?

@@ -9,6 +9,6 @@ export default function Notification ({ imgClass }) {
   return (<>
     <img
       src={ bell }
-      alt='notification icon'
       className={ classes }
     />
+  </>)

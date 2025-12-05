@@ -25,6 +25,7 @@ export default function AddCoordinator() {
         });
       } else {
         const error = { submit: data.error }
+// Temp comment
         setSubmissionObject({
           loading: false,
           success: false,

@@ -20,6 +20,7 @@ export default function ResetForm({ candidateData, setType }) {
     }
 
     if( formData.password === formData.confirmPassword ) {
+// Temp comment
       setMatch(true);
       const { password } = event.target;
       const res = await API.post(ROUTES.APIResetPassword, {
@@ -35,7 +36,6 @@ export default function ResetForm({ candidateData, setType }) {
   };
 
   function handleChange(name, value) {
-// Temp comment
     setFormData({
       ...formData,
       [name]: value,

@@ -56,6 +56,7 @@ export default function CandidateCard({ data, disableLink }) {
           <div className='w-full flex flex-wrap justify-between items-center mt-l'>
             {/* Linkedin */}
             <div className='w-1/3 flex items-center'>
+// Temp comment
               <img
                 src={linkedinIcon}
                 className='h-8 mr-5' />
@@ -68,7 +69,6 @@ export default function CandidateCard({ data, disableLink }) {
               <img
                 src={locationIcon}
                 className='h-8 mr-5' />
-// Temp comment
               <p className='text-charcoal'>{addressString}</p>
             </div>
             {/* Years Experience */}

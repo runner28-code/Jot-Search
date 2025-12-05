@@ -120,7 +120,6 @@ export default function RegistrationForm(loggedIn) {
     }
   }, [submissionObject.loading]);
 
-// Temp comment
   useEffect(async () => { // Clear state after a couple seconds
     if ( submissionObject.success ) {
       setTimeout(() => {

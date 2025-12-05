@@ -231,7 +231,6 @@ function NavFooter() {
           className={addressLinkStyle}
         >info@talentintulsa.com
         </a>
-// Temp comment
         <Address />
       </div>
       <div className='flex flex-col basis-3/12'>
@@ -365,7 +364,6 @@ function NavFooterMobile() {
           className={linkStyle}
         >
           Sales & Business Developement Job Openings
-        </a>
         <a
           href="/careers"
           className={linkStyle}

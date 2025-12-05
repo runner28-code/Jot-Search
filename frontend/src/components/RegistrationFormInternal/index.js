@@ -32,7 +32,6 @@ const defaultState = {
   country: '',
   willRelocate: false,
   roles: [],
-  skills: [],
   experience: '',
   employmentPreference: '',
   workspace: '',

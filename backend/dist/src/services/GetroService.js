@@ -43,6 +43,7 @@ class GetroService {
                 'X-User-Token': this.password,
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
+// Temp comment
             }
         };
     }

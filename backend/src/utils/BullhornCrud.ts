@@ -11,6 +11,7 @@ import {
 import db from "./db";
 import { Candidate as DbCandidate } from "prisma/prisma-client";
 
+export const saveCompanies = async (companies: any[]) => {
   // Update existing database to remove https and unneccessary route path.
   // Keep it for now.
   // const result = await db.company.findMany({
@@ -275,7 +276,6 @@ export const saveLeads = async (leads: any[]) => {
 };
 
 export const migrateUserInTPP = async (data: Partial<DbCandidate>) => {
-  try {
     const existing = await db.candidate.findFirst({
       where: {
         externalId: data.externalId,

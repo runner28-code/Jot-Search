@@ -13,6 +13,5 @@ export default function SectionContent({ contentObject }) {
     return <UnlabeledContent 
       contentText={contentString} 
       propertyName={propertyName}
-    />
   }
   return renderMultipleProperties(contentObject);

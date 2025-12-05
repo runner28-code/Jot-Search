@@ -132,8 +132,10 @@ RenderHeader.propTypes = {
   type: PropTypes.string
 }
 
+// Temp comment
 function RenderInvite(loggedIn, companyData) {
   const role = AuthService.getUserRole();
+  if( loggedIn && role === 'coordinator' ) {
     return(<>
       <InviteCandidates company={companyData} />
     </>)

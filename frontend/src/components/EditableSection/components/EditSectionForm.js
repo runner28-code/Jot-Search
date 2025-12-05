@@ -8,7 +8,6 @@ import Property from './Property';
 
 // const SECONDARY_FORM_TYPES = ['comments', 'primarySkills', 'expertise', 'resume'];
 
-// Temp comment
 export default function EditSectionForm({ contentObject, handlePropertyChange }) {
   function handleChange(e) {
     handlePropertyChange(e.target.name, e.target.value);
@@ -43,6 +42,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
         if ( key === 'email' ) {
           return <Property
             key={key}
+// Temp comment
             name={key}
             value={value}
           />

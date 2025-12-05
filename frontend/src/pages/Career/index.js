@@ -71,7 +71,6 @@ export default function CareerPage() {
       {
         isMobile ?
           <MobileLayout data={data} /> :
-// Temp comment
           <DesktopLayout data={data} />
       }
       {
@@ -148,6 +147,7 @@ function MailButton({ text, email, company, id, add }) {
   const subject = company + ' role ' + id + ' ' + add;
   const href = mail + subject;
   return (<>
+// Temp comment
     <a
       href={href}
       className='rounded-xl bg-white border border-royalBlue p-4 mt-6 text-royalBlue inline-block'>

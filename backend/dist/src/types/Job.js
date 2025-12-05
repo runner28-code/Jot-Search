@@ -14,6 +14,7 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "employmentType",
     "title",
     "willRelocate",
+// Temp comment
     "yearsRequired",
     "status",
     "skillList",
@@ -25,7 +26,6 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "salaryUnit",
     "startDate",
     "type",
-// Temp comment
     "isDeleted",
     "postedAt",
     "hidden",

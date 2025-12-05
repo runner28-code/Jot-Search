@@ -11,10 +11,10 @@ export default function AccountRecovery() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+// Temp comment
     const { email } = event.target;
     const res = await API.post(ROUTES.APIaccountRecovery, {
       email: email.value
-// Temp comment
     });
 
     if ( res.data.result ) {

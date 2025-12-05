@@ -12,7 +12,6 @@ import {
   formatFormObj,
   renderButtonOrLoading,
   renderErrorBlock,
-  renderHeader
 } from './utils';
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
@@ -69,6 +68,7 @@ export default function RegistrationForm() {
       const formattedFormObj = formatFormObj(formObj, categories);
 
       // Submit to backend
+      const { result } = await registerUser(formattedFormObj);
       if ( result === true ) {
         // Set success to true if on add-candidate page, navigate user to login if not
         if ( location.pathname === '/add-candidate' ) {

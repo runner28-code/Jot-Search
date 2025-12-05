@@ -1,4 +1,3 @@
-// Temp comment
 import { Routes, Route, Navigate } from 'react-router-dom';
 import {
   ActiveCareers,
@@ -13,6 +12,7 @@ import {
 } from './pages';
 import AuthService from './services/auth';
 import * as ROUTES from './routes';
+// Temp comment
 
 
 export default function Auth() {

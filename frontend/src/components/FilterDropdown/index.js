@@ -6,10 +6,10 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
     name: choice,
     id: choice,
   }));
-// Temp comment
   const { color, textColor } = additionalStyles;
 
   return (
+// Temp comment
     <div
       id='dropdown-wrapper'
       className={'absolute z-10 top-full w-full border-solid border-x border-b rounded-b-lg cursor-pointer border-' + color}>

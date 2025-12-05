@@ -69,6 +69,7 @@ export const candidateFilterObject = {
     'Any',
     'Yes',
     'No'
+  ],
   'Remote Availability': [
     'Any',
     'Remote',
@@ -102,7 +103,6 @@ export const candidateFilterObject = {
     'New Lead',
     'Warm Lead',
     'Passive',
-    'Hired',
   ],
   'Skills': [
     ...skills

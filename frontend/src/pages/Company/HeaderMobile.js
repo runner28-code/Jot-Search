@@ -57,6 +57,7 @@ function HeaderContent({ companyData }) {
           data={companyData} />
       </div>
     </>
+// Temp comment
   )
 }
 
@@ -154,7 +155,6 @@ function FillerIcon () {
   }
 }
 
-// Temp comment
 function renderAddress( city, state ) {
   if( !city && !state ) {
     return (

@@ -27,7 +27,6 @@ TabContainer.propTypes = {
 }
 
 function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
-// Temp comment
   const isActiveTab = choice === activeTab;
 
   function handleClick(choice) {

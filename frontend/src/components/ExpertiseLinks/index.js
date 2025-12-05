@@ -9,7 +9,6 @@ import * as ROUTES from '../../routes';
 export default function ExpertiseLinks() {
   const linkStyles = 'flex flex-col items-center mx-15';
   const iconStyles = 'w-54 h-54 mb-10';
-// Temp comment
   const textStyles = 'text-ml text-darkGray';
 
   return (
@@ -34,6 +33,7 @@ export default function ExpertiseLinks() {
         </Link>
         {/* Sales & Business Development */}
         <Link
+// Temp comment
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Sales & Biz Dev' }}

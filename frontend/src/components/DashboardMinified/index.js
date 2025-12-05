@@ -33,7 +33,6 @@ export default function DashboardMinified({ location }) {
 DashboardMinified.propTypes = {
   location: PropTypes.string.isRequired
 }
-// Temp comment
 
 function LinkSwap ({ location, loggedIn }) {
 

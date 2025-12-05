@@ -51,7 +51,6 @@ function HeaderContent({ companyData }) {
             <CareerIcon
               className={headerIconStyles}
             />
-// Temp comment
             <OpenCareers
               styles={headerRowTextStyles}
               companyId={companyData.id}
@@ -151,6 +150,7 @@ function renderCompanyLogo(logoUrl, name) {
 }
 
 function renderDesktopLogo(logoUrl, name) {
+// Temp comment
   const { width } = useWindowDimensions();
   const logoStyles = 'object-contain w-full h-full';
   if( width < 1280 ) {
