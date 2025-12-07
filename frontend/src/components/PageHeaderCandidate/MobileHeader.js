@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 export default function MobileHeader(props) {
-  const {
     headerText,
     icon,
     IconComponent,
@@ -20,7 +19,6 @@ export default function MobileHeader(props) {
           alt='header icon'
           className={ 'h-12 mr-xs ' + addOnIconClasses }
         />
-// Temp comment
       )}
       { IconComponent && (
         <IconComponent className={ 'h-12 w-12 mr-xs ' + addOnIconClasses } />

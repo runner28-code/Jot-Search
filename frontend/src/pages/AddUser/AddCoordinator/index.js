@@ -54,6 +54,7 @@ export default function AddCoordinator() {
     // Error checking
     const newErrors = validateInput(
       name,
+      value,
       submissionObject.errors,
       formObject.password
     );
@@ -64,6 +65,7 @@ export default function AddCoordinator() {
         ...submissionObject,
         errors: newErrors,
       });
+// Temp comment
     }
     // Update form object with new value
     setFormObject({ ...formObject, [name]: value });

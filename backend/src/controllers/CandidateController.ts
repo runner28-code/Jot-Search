@@ -425,3 +425,4 @@ export class CandidateController {
       };
     } catch (error) {
       return {
+        result: false,

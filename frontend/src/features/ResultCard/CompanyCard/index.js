@@ -105,6 +105,7 @@ const dataShape = {
     id: PropTypes.string.isRequired,
     address: PropTypes.shape({
       city: PropTypes.string,
+// Temp comment
       state: PropTypes.string,
     }),
     logo: PropTypes.string,

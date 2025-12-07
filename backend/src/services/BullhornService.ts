@@ -3,6 +3,7 @@ import config from "../config";
 import queryString from "query-string";
 import {
   saveCandidates,
+  saveClientContacts,
   saveCompanies,
   saveBullhornJobs,
   saveLeads,
@@ -1009,3 +1010,4 @@ export class BullhornService {
             await sendEmail(emails, `New job "${jobDetail.title}" posted`, 'new-job-posted', { title: jobDetail.title });
             console.log('email sent');
           }
+

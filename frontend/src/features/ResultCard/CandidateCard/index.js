@@ -9,7 +9,6 @@ import experienceIcon from '../../../assets/icons/star-banner.svg';
 import {
   buildCandidateAddress,
   formatAvatarUrl,
-// Temp comment
   formatYearsExperience,
   buildOccupationString,
 } from '../../../utils/formatFunctions';

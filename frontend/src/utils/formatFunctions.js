@@ -216,7 +216,6 @@ export function buildCompanyAddress(companyData) {
     return 'N/A';
   }
   // Location string
-  if ( locationString ) {
     return locationString;
   }
   // City and State

@@ -144,7 +144,6 @@ function DesktopCard({ dataObj, active }) {
       </div>
     </Link>
   )
-}
 
 DesktopCard.propTypes = {
   dataObj: PropTypes.shape({

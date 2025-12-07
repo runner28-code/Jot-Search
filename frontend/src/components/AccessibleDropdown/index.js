@@ -91,7 +91,6 @@ AccessibleDropdown.propTypes = {
     inputWidth: PropTypes.string,
     marginBottom: PropTypes.string,
     listStyles: PropTypes.string,
-// Temp comment
     listItemStyles: PropTypes.string,
   }).isRequired,
   showDropdownArrow: PropTypes.bool,

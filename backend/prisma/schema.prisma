@@ -763,3 +763,4 @@ model GetroMember {
   seniority                String?
   source                   String?
   us_work_authorization    Boolean?
+  will_work_anywhere       Boolean?

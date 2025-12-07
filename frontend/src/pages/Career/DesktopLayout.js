@@ -29,6 +29,7 @@ export default function DesktopLayout(props) {
 
   const skillList = careerData.skillList;
 
+// Temp comment
   return (<>
     <section className='relative bg-white px-xxl-3 py-xxl-2 border-2 border-disabled border-solid rounded-3xl mb-xxl-4'>
       {/* Header */}
@@ -111,7 +112,6 @@ export default function DesktopLayout(props) {
       }
     </section>
     {renderDescription(role, navigate, careerData.clientCorporation, skillList, careerData)}
-// Temp comment
     <OtherCareers
       companyId={careerData.companyId}
       companyName={careerData.clientCorporation}

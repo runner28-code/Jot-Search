@@ -47,6 +47,7 @@ const uploadToS3 = async(req: any, res: any) => {
 
     const params = {
       Key: uuid,
+      ContentType: fileObject.type,
       Body: buffer,
       Bucket: process.env.S3_BUCKET,
     }

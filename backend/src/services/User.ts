@@ -643,3 +643,4 @@ export const recovery = async (email: string) => {
 
     const token = CreateJwtToken({ email: user.email });
 
+    await sendResetPassword(email, user.firstname, token);

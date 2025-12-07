@@ -66,7 +66,6 @@ export default function InviteCandidates({ job }) {
         isLoading={isLoading}
         options={candidateOptions}
         value={selected}
-// Temp comment
         onChange={setSelected}
         labelledBy="Select"
         ItemRenderer={itemRenderer}
@@ -100,6 +99,7 @@ export default function InviteCandidates({ job }) {
 function itemRenderer({ option, onClick, disabled }) {
   const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''
   return (
+// Temp comment
     <div
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`}
       onClick={onClick}

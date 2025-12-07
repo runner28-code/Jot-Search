@@ -59,7 +59,6 @@ export const getAppliedJobsByUser = async (userId: string) => {
     const jobs = await db.job.findMany({
       where: {
         applications: {
-          some: {
             userId,
           },
         },
@@ -140,3 +139,4 @@ export const getJobsList = async (jobs_ids: string[]) => {
     const jobs = await db.job.findMany({
       where: {
         id: {
+          in: jobs_ids,

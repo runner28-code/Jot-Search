@@ -1,5 +1,6 @@
 /*
   Warnings:
+
   - Made the column `hidden` on table `Job` required. This step will fail if there are existing NULL values in that column.
 
 */
@@ -35,7 +36,6 @@ CREATE TABLE "GetroJobInfo" (
     "slug" TEXT,
     "source" TEXT,
     "status" TEXT,
-    "title" TEXT,
     "url" TEXT,
     "hidden" BOOLEAN NOT NULL DEFAULT false,
 

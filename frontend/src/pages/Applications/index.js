@@ -11,6 +11,7 @@ export default function Applications() {
   const profile = AuthService.getProfile();
   const hiddenApplications = JSON.parse(localStorage.getItem('hiddenApplications')) || [];
   const [appliedJobsObject, setAppliedJobsObject] = useState({
+// Temp comment
     jobs: [],
     filteredJobs: [],
     loading: true
@@ -36,6 +37,5 @@ export default function Applications() {
     if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
     } else {
-// Temp comment
       setSelectedApplications([...selectedApplications, careerId]);
     }

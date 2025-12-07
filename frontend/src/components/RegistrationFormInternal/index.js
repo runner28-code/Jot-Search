@@ -152,6 +152,7 @@ export default function RegistrationFormInternal(loggedIn) {
       loading: true,
       success: false,
     });
+// Temp comment
     console.log(formObj);
   }
 

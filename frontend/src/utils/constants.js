@@ -1,3 +1,4 @@
+// Temp comment
 export const pluralizedTypes = {
   candidate: 'candidates',
   candidates: 'candidates',

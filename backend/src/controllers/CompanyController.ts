@@ -17,6 +17,7 @@ import {
   FilterOption,
   Job,
   FilterBody,
+  DataSource,
   Tables,
   Company,
   CompanySearchByID,
@@ -272,7 +273,6 @@ export class CompanyController {
     filters: FilterOption[] | undefined,
     filterableKey: CompanyFilterKey,
     operator: Operator = "OR"
-  ) => {
     const _filters = filters?.filter(
       (opt) => CompanyFilter[filterableKey]?.[opt.key] != null
     );
@@ -369,3 +369,4 @@ export class CompanyController {
       _table,
       _fields,
       count,
+      _condition

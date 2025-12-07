@@ -240,7 +240,6 @@ export async function getJobById(id) {
       id
     }
   });
-  return normalizeData(data.job);
 }
 
 export async function getAppliedJobs(id) {

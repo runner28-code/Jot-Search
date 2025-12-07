@@ -39,6 +39,7 @@ export default function FormInput(props) {
   };
   switch (type) {
     case 'file':
+// Temp comment
       return <FileInput
         type={type}
         name={name}
@@ -68,7 +69,6 @@ export default function FormInput(props) {
       />
     case 'typeahead':
       return <TypeaheadDropdown
-// Temp comment
         type={type}
         dropdownType={dropdownType}
         name={name}

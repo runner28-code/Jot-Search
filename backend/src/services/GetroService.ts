@@ -297,3 +297,4 @@ export class GetroService {
             createdAt: getroJob.createdAt,
             updatedAt: getroJob.updatedAt,
             getroJobInfoId: getroJob.id,
+        }

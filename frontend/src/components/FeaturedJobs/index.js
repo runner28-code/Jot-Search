@@ -42,6 +42,7 @@ export default function FeaturedJobs() {
       <div className='flex mt-12 flex-wrap'>
         {
           isLoading ?
+            <LoadingSpinner />
             :
             jobs.map((career, index) => {
               const categoryString = career.category?.name.toUpperCase() || 'CATEGORY N/A';
@@ -77,7 +78,6 @@ export default function FeaturedJobs() {
 function renderColorShapes() {
   return(
     <div className='relative w-24 mb-8'>
-      <div className='bg-indigoSquare w-12 h-12' />
       <div className='bg-cyanSquare bg-cyan-400 top-[-20px] right-[5px] absolute w-6 h-6' />
     </div>
   )
