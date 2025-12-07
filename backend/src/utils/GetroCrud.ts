@@ -98,7 +98,6 @@ export const saveJobs = async (jobs: any[]) => {
 									where: {
 										id: job.id,
 									},
-								});
 				
 								if (existing) {
 									console.log(`Job with ID: ${job.id} exists`);

@@ -25,11 +25,11 @@ exports.IUSER = {
     referredBy: "",
     roles: "",
     description: "",
-// Temp comment
     phone: "",
     status: "",
     username: "",
     logo: "",
+// Temp comment
     companyId: "",
     companyName: "",
     annualRevenue: "",

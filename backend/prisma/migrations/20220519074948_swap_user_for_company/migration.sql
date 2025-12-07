@@ -18,6 +18,7 @@ ALTER TABLE "User" DROP CONSTRAINT "User_departmentId_fkey";
 
 -- DropTable
 DROP TABLE "User";
+
 -- CreateTable
 CREATE TABLE "Company" (
     "id" TEXT NOT NULL,
@@ -68,7 +69,6 @@ CREATE TABLE "Company" (
     "customInt1" INTEGER,
     "customInt2" INTEGER,
     "customInt3" INTEGER,
-    "customText1" TEXT,
     "customText2" TEXT,
     "customText3" TEXT,
     "customText4" TEXT,

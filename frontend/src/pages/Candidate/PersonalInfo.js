@@ -36,7 +36,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
   })
 
   const [editMode, setEditMode] = useState(false);
-// Temp comment
 
   const [referralChoice, setReferralChoice] = useState(false);
 
@@ -195,7 +194,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   disabled={disabled}
                 />
               </label>
-            </div>
             <div className='vw-1280:flex gap-12'>
               <label
                 htmlFor='zip'

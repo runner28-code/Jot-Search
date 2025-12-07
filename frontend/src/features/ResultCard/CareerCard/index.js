@@ -39,7 +39,6 @@ export default function CareerCard({ data, active }) {
       {
         width > 768 ?
           <DesktopCard
-            dataObj={dataObj}
             active={active}
           />
           :
@@ -144,6 +143,7 @@ function DesktopCard({ dataObj, active }) {
       </div>
     </Link>
   )
+}
 
 DesktopCard.propTypes = {
   dataObj: PropTypes.shape({

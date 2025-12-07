@@ -11,7 +11,6 @@ export const PreferenceItem = ({ toggled, label, fieldName, onUpdate, disabled }
           label={label}
           toggled={toggled}
           onToggle={onUpdate}
-          disabled={disabled}
         />
         <label 
           htmlFor='featured' 
@@ -50,6 +49,7 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
       target: {
         name: fieldName,
         value: !toggled,
+      }
     }
     return onToggle(mockEvent)
   }

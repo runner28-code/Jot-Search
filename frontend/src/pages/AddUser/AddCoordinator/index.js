@@ -45,7 +45,6 @@ export default function AddCoordinator() {
           errors: {},
         });
       }, 2000);
-    }
   }, [submissionObject.success]);
 
   function handleInputChange(e) {
@@ -65,7 +64,6 @@ export default function AddCoordinator() {
         ...submissionObject,
         errors: newErrors,
       });
-// Temp comment
     }
     // Update form object with new value
     setFormObject({ ...formObject, [name]: value });

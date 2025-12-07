@@ -359,7 +359,6 @@ model CompanyCandidateInvites {
   candidateId String
   candidate   Candidate @relation(fields: [candidateId], references: [id])
   
-  companyId   String
   company     Company   @relation(fields: [companyId], references: [id])
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt

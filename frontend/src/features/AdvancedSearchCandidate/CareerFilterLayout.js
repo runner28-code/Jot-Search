@@ -50,7 +50,6 @@ export default function CareerFilterLayout(props) {
         <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-// Temp comment
           handleSearchClick={handleSearchClick}
           placeholder='Search Careers'
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
@@ -60,7 +59,6 @@ export default function CareerFilterLayout(props) {
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
         <button
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
-          onClick={clearFilters}
         >
           Clear All
         </button>

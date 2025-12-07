@@ -261,7 +261,6 @@ const job_filter_exclude_keys = [
   "newspaper",
   "nurse",
   "nursing",
-  "nutrition",
   "occupancy",
   "occupational",
   "office assistant",

@@ -27,7 +27,6 @@ export const defaultCareerState = {
 
 export const defaultState = {
   firstname: '',
-// Temp comment
   lastname: '',
   phone: '',
   willRelocate: true,

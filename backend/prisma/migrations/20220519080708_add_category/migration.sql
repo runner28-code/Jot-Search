@@ -11,5 +11,6 @@ CREATE TABLE "Category" (
     "_score" DOUBLE PRECISION,
 
     CONSTRAINT "Category_pkey" PRIMARY KEY ("id")
+);
 
 -- CreateIndex

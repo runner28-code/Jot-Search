@@ -4,7 +4,6 @@ import { experienceMap, educationChoices } from './dbFieldMapping';
 import { skills } from './skillHierarchyMap';
 const experienceValues = Object.values(experienceMap).filter(val => val !== null);
 
-// Temp comment
 /* JOB FILTER UTILS */
 export const jobFilterObject = {
   'Expertise': [

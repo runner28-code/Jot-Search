@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
 
 export default function MobileHeader(props) {
+  const {
     headerText,
     icon,
     IconComponent,

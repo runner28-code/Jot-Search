@@ -267,7 +267,6 @@ const job_filter_exclude_keys = [
     "occupancy",
     "occupational",
     "office assistant",
-    "on call",
     "on-call",
     "optometrist",
     "ot",
@@ -454,7 +453,6 @@ const city_filter_include_keys = [
     "Sapulpa,OK",
     "Tulsa,OK"
 ];
-// Temp comment
 exports.JOB_EXCLUDE_KEYS_REGEX = new RegExp(`(${job_filter_exclude_keys.join('|')})`, 'gi');
 exports.CITY_INCLUDE_KEYS_REGEX = new RegExp(`(${city_filter_include_keys.join('|')})`, 'gi');
 exports.JOB_FIELDS = [

@@ -92,7 +92,6 @@ function renderNotification(activeData, careerData) {
         content='Please contact your inTulsa coordinator to provide status updates or if you notive anything incorrect.'
         text='Write to talentnetwork@intulsa.com'
         email='talentnetwork@intulsa.com'
-        company={careerData.clientCorporation}
         id={careerData.title}
         add='update request'
       />
@@ -106,7 +105,6 @@ function renderNotification(activeData, careerData) {
         add='filled'
       />
     </>)
-// Temp comment
   }
   return null
 }

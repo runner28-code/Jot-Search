@@ -67,6 +67,7 @@ function HeaderContent({ companyData }) {
               src={LinkedIn}
               className={headerIconStyles}
             />
+            { renderLinkedIn(companyData.linkedin_url, headerRowTextStyles) }
           </div>
           <div className={ (width >= 1280) ? headerGroupStylesDesktop : headerGroupStyles }>
             <img
@@ -158,6 +159,7 @@ function renderDesktopLogo(logoUrl, name) {
     return (
       <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
         <BsBuilding className={logoStyles} />
+// Temp comment
       </div>
     )
   }

@@ -18,4 +18,5 @@ export default function AddCompanyUser() {
 
   function handleCompanyClick(company) {
     setSelectedCompany(company);
+// Temp comment
     setSearch(company.name);

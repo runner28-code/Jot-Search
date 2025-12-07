@@ -76,6 +76,7 @@ export default function MobileLayout(props) {
                 src={clockIcon}
                 className='h-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.employmentType}</p>
+            </div>
           </div>
           {/* Third row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>
@@ -168,6 +169,7 @@ function renderAboutCompanySection(careerData) {
     <p
       className='font-spaceGrotesk text-textBlack text-sm mb-10'
       dangerouslySetInnerHTML={{ __html: careerData.company.description || 'No Company Description Available' }}
+// Temp comment
     />
     <hr className={hrStyles} />
   </>)

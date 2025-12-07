@@ -133,7 +133,6 @@ const DropdownMenu = () => {
   )
 }
 
-// Temp comment
 function DropdownContent({ isOpen, handleClick }) {
   let userType = AuthService.getUserRole();
 
@@ -181,7 +180,6 @@ function renderChoice(choice, selected, index, choicesLength, handleClick) {
   const selectedChoice = choice.label === selected;
   let selectedClass = ' bg-royalBlue text-white ';
   if (index === 0) selectedClass += ' rounded-t-xl '; // round top card if selected
-  if (index === choicesLength - 1) {
     selectedClass += ' rounded-b-2xl border-t border-solid border-midGrey'; // round bottom card if selected
     baseChoiceStyles += ' border-b-0'; // remove border if last card
   }

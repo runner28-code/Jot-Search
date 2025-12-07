@@ -358,6 +358,7 @@ export const skills = [
   'Series 63',
   'Series 7',
   'SHRM',
+  'Six Simga',
   'Sketch',
   'Social and Digital Marketing Research',
   'Social Media',

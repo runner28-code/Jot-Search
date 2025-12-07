@@ -50,6 +50,7 @@ let JobController = class JobController {
                         getroJobInfo: true,
                         company: true,
                     },
+// Temp comment
                 });
                 console.log({ job });
                 if (job) {

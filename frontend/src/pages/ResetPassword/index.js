@@ -39,6 +39,7 @@ export default function ResetPassword() {
         new_password: password.value,
         token: token
       });
+// Temp comment
 
       if ( res.data.result ) {
         setSuccess(true);
@@ -55,6 +56,7 @@ export default function ResetPassword() {
           <span className='text-success'>Reset Password Successful.</span>&nbsp;
           <Link
             to={ROUTES.login}
+            className='underline block my-4 text-royalBlue'
           >
             Login to your account
           </Link>

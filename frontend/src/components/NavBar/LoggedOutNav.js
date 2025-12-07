@@ -70,6 +70,7 @@ function DesktopNavBarLayout() {
         >
           <span className='text-ml text-black70%'>Our Website</span>
           <HiOutlineExternalLink className='stroke-smokeGray h-7 w-7 ml-3' />
+// Temp comment
         </a>
         <Link
           to={ROUTES.login}
