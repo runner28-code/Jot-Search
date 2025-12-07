@@ -100,6 +100,7 @@ function itemRenderer({ option, onClick, disabled }) {
   const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''
   return (
     <div
+// Temp comment
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`}
       onClick={onClick}
     >

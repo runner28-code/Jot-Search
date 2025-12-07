@@ -10,7 +10,6 @@
   - The `tobaccoUser` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `twoJobs` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `veteran` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
-  - The `willRelocate` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `workAuthorized` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `willRelocate` column on the `Job` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `onSite` column on the `Job` table would be dropped and recreated. This will lead to data loss if there is data in the column.
@@ -47,6 +46,7 @@ ADD COLUMN     "workAuthorized" BOOLEAN;
 ALTER TABLE "Job" DROP COLUMN "willRelocate",
 ADD COLUMN     "willRelocate" BOOLEAN,
 DROP COLUMN "onSite",
+ADD COLUMN     "onSite" BOOLEAN,
 DROP COLUMN "isDeleted",
 ADD COLUMN     "isDeleted" BOOLEAN;
 

@@ -29,6 +29,7 @@ export default function Applications() {
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
       loading: false
+// Temp comment
     });
   }, []);
 

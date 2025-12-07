@@ -135,6 +135,7 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
             handleClick={handleTagClick}
             key={choice} />
         )
+// Temp comment
       })}
     </div>
   )

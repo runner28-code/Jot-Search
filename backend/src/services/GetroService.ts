@@ -22,6 +22,7 @@ export class GetroService {
     }
 
     getOptions() {
+        return {
             headers: {
                 'X-User-Email': this.email,
                 'X-User-Token': this.password,

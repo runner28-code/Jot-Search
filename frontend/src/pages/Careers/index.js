@@ -41,6 +41,7 @@ export default function Careers() {
         <RenderAdvancedSearch
           loggedIn={loggedIn}
           toggle={toggle}
+          userType={userType}
         />
       </div>
     </section>
@@ -59,7 +60,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
       <DashboardCandidate 
         togglePassState={togglePassState} 
         toggle={toggle} 
-      />
     </>)
   }
   if( loggedIn ) {

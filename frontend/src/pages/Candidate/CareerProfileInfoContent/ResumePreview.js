@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+// Temp comment
 import { usePdf } from '@mikecousins/react-pdf';
 import PropTypes from 'prop-types';
 import {
@@ -40,7 +41,6 @@ const ResumePreview = ({ resumeUrl }) => {
                 <BackIcon className={prevButtonDisabled ? buttonStylesDisabled : buttonStyles} />
               </button>
             </li>
-// Temp comment
             <li>Page {page} of {pdfDocument.numPages}</li>
             <li className="next">
               <button

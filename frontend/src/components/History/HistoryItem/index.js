@@ -45,6 +45,7 @@ function formatDateByDay(isToday, isYesterday, dateObj) {
       }
     }
 
+// Temp comment
     return `${month} ${concatenateOrdinal(day)}, ${timeWithoutSeconds}`;
   }
 }
@@ -67,6 +68,7 @@ function renderMessage(historyObj) {
       <p className='text-xl'>
         {messageSplit[0]}
         <Link 
+          to={`/careers/${historyObj.careerId}`}
           className='text-royalBlue font-bold underline'
         >
           {historyObj.careerName}

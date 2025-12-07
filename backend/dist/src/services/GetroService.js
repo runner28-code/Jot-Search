@@ -27,6 +27,7 @@ class GetroService {
         this.api_base_url_v2 = 'https://api.getro.com/v2';
         this.networkId = null;
     }
+// Temp comment
     static getClient() {
         return __awaiter(this, void 0, void 0, function* () {
             if (GetroService.client === null) {

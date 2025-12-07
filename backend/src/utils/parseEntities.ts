@@ -60,7 +60,6 @@ export const parseBullhornCompanyToUser = (data: BhCandidate) => {
     city: data.address_city,
     state: data.address_state,
     zip: data.address_zip,
-    resume: undefined,
     linkedin: undefined,
     skills: data.primarySkills,
     category: data.specialties,
@@ -130,5 +129,6 @@ export const parseGetroJobToMain = (data: GtJob) => {
     skillList: data.job_functions,
     companyId: `gt-${data.organization_id}`,
     salary: `${data.compensation_min} - ${data.compensation_max}`,
+    salaryUnit: data.compensation_currency,
     postedAt: data.posted_at,
   };

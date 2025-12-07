@@ -14,7 +14,6 @@ import { useGetCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 import AuthService from '../../services/auth';
 
-
 import {
   defaultJobFilterState,
   buildSearchFilters,
@@ -27,7 +26,6 @@ export default function NavSearch({ placeholder }) {
   const location = useLocation(); // Used to detect page change to clear state
   const [ searchTerm, setSearchTerm ] = useState('');
   const [forceHidden, setForceHidden] = useState(false);
-// Temp comment
   const userType = AuthService.getUserRole();
 
   const getFiltersByTab = (tab) => {

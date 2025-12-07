@@ -57,10 +57,10 @@ export default function CandidateFilterLayout(props) {
     });
   }
 
+
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
-        { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
       </div>
       <div className='flex flex-wrap gap-xxl-4'>
         { renderCheckboxFilters(defaultFilterObject, checkboxFilterObject, handleFilterChange) }

@@ -44,6 +44,7 @@ export const choices = {
   myApplications: {
     label: 'My Applications',
     icon: ApplicationIcon,
+// Temp comment
     link: ROUTES.applications,
   },
   myFavorites: {
@@ -66,6 +67,7 @@ export const choices = {
     icon: ContactIcon,
     link: ROUTES.talentInTulsa,
   },
+  logout: {
     label: 'Logout',
     icon: LogoutIcon,
     link: ROUTES.logout,

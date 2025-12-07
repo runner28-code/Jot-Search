@@ -331,7 +331,6 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], JobController.prototype, "createJob", null);
 JobController = __decorate([
-// Temp comment
     (0, routing_controllers_1.JsonController)("/api/job")
 ], JobController);
 exports.JobController = JobController;

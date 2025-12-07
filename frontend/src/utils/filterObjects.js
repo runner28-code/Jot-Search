@@ -32,6 +32,7 @@ export const jobFilterObject = {
     'Active',
     'Hired',
     'Advertising Only',
+    'Waiting for inTake',
     'On-Deck',
   ]
 };

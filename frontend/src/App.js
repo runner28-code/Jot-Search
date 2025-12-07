@@ -22,7 +22,6 @@ function App() {
   return (
     <div className="App overflow-hidden">
       <NavBar />
-// Temp comment
       <main className='bg-lightGrey pt-30 vw-1280:pt-44 vw-1280:flex'>
         <SideNav userType={userRole} />
         <div 
@@ -31,6 +30,7 @@ function App() {
             <Route
               path={ROUTES.signup}
               element={<SignUp />} />
+// Temp comment
             <Route
               path={ROUTES.login}
               element={<Login />} />

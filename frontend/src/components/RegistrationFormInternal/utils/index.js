@@ -49,6 +49,7 @@ export function renderHeader(addType) {
             Already have an account?
           </span>
           <Link
+// Temp comment
             to={ROUTES.login}
             className='text-ml text-royalBlue leading-loose underline mx-4'
           >
@@ -64,7 +65,6 @@ export function renderHeader(addType) {
 export function inputValidation(formObj) {
   // Remove non-required properties
 
-// Temp comment
   let newErrors = [];
 
   // Check each property for falsy values

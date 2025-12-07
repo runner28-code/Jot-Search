@@ -6,6 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - TailwindCSS for styling
     - Base `rem` is set to 10px for easy calculation
     - Custom styles, breakpoints, etc are stored in `tailwind.config.js`
+    - Declare variables for reused styles
         - Leave trailing spaces for chaining styles
             ```
             const linkStyles = 'hover:text-royalBlue mt-3 ';
@@ -43,7 +44,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run lint`
 
 Runs ESLint in the `src` directory. Configuration for ESLint is contained in `.eslintrc.json`
 

@@ -54,6 +54,7 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
 TabButton.propTypes = {
   choice: PropTypes.string.isRequired,
   activeTab: PropTypes.string,
+  setActiveTab: PropTypes.func.isRequired,
   isLocked: PropTypes.bool,
 }
 

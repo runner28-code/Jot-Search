@@ -409,6 +409,7 @@ model Job {
   isOpen              Boolean?
   isInterviewRequired Boolean?
   hoursPerWeek        Int?
+  hoursOfOperation    String?
   durationWeeks       Int?
   publicDescription   String?
   reasonClosed        String?
@@ -536,7 +537,6 @@ model User {
   logo          String?
   companyName   String?
   annualRevenue String?
-  companyURL    String?
   numEmployees  String?
   revenue       String?
   dateFounded   DateTime?

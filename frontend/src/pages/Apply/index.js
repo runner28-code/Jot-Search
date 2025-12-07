@@ -40,6 +40,7 @@ export default function Apply() {
   const isLoggedIn = AuthService.loggedIn();
   // State
   const [career, setCareer] = useState(defaultCareerState);
+  const [originalObject, setOriginalObject] = useState({});
   const [applicationObject, setApplicationObject] = useState(defaultState);
   const [useExistingResume, setUseExistingResume] = useState(false);
   const [referralChoice, setReferralChoice] = useState(false);
@@ -109,6 +110,7 @@ export default function Apply() {
           errorMessage: response.message
         });
       }
+// Temp comment
     }
   }, [submissionObject.loading]);
 

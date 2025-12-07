@@ -16,6 +16,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
     };
     handleChange(fakeEvent);
   }
+
   const inputHeight = 'h-24 ';
   const baseStyles = 'w-100 vw-480:w-120 vw-640:w-140 border-lightGrey border-2 border-solid rounded-2xl p-4 vw-480:text-lg ' + inputHeight;
   return <>
@@ -48,7 +49,6 @@ function renderChosen(skills, onChange) {
     <div className='flex flex-wrap mt-4 mb-16 w-full'>
       {skills.length > 0 ? skills.map(skill => {
         function handleClick() {
-          onChange('primarySkills', skills.filter(s => s !== skill))
         }
         return (
           <ChoiceTag

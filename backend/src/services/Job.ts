@@ -97,6 +97,7 @@ export const inferDatasetById = (id: string) => {
   }
 };
 
+export const updateJob = async (job: Partial<Job> & { id: string }) => {
   try {
     const { id, ...jobData } = job;
 
@@ -114,7 +115,6 @@ export const inferDatasetById = (id: string) => {
     const res = await db.job.update({
       where: {
         id,
-      },
       data: {
         ...filteredJob,
         datasource: filteredJob?.datasource as any,

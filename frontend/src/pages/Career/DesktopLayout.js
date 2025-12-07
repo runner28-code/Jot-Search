@@ -190,6 +190,7 @@ function renderSkillsSection({ skillList }) {
     <hr className={hrStyles} />
     {/* Skills Required */}
     <h4 className={sectionHeaderStyles}>Skills Required</h4>
+    <SkillsList items={skillList} />
   </>)
 }
 function SkillsList({ items }) {

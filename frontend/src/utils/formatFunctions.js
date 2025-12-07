@@ -64,7 +64,6 @@ export function convertUserToCandidate(user) {
   return candidate;
 }
 
-export function formatCandidateName(firstName, lastName) {
   if ( !firstName && !lastName ) return '';
   if ( !firstName ) return lastName;
   if ( !lastName ) return firstName;

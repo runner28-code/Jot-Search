@@ -32,6 +32,7 @@ class AuthService {
       } else return false;
     } catch (err) {
       return false;
+    }
   }
 
   getToken() {
@@ -103,7 +104,6 @@ class AuthService {
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
   }
 
-  getSavedJobIDs() {
     return JSON.parse(localStorage.getItem('savedJobs')) || [];
   }
 
