@@ -1,5 +1,4 @@
 import { useState, useRef } from 'react';
-// Temp comment
 import { usePdf } from '@mikecousins/react-pdf';
 import PropTypes from 'prop-types';
 import {
@@ -8,7 +7,6 @@ import {
 } from 'react-icons/fi';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
-const ResumePreview = ({ resumeUrl }) => {
   const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
 

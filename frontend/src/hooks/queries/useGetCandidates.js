@@ -3,12 +3,10 @@ import { queryClient } from '../..';
 import { getCandidatesFull } from '../../services/API';
 
 export const prefetchCandidates = async ({filtersArr, count, page, fields}) => {
-// Temp comment
   await queryClient.prefetchQuery(getCandidatesKey({filtersArr, count, page}), () => getCandidatesFull(filtersArr, count, page, fields));
 }
 
 export const prefetchAllSelectCandidates = async() => {
-  const values = { 
     filtersArr: [],
     count: 10000,
     fields: ['firstName', 'lastName', 'name', 'occupation', 'companyName']

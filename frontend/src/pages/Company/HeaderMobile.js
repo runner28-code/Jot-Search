@@ -141,6 +141,7 @@ function renderDesktopLogo(logoUrl, name) {
 }
 
 function FillerIcon () {
+  const { width } = useWindowDimensions();
 
   if( width >= 1280 ) {
     return (
@@ -160,6 +161,7 @@ function renderAddress( city, state ) {
     )
   } else {
     return (
+// Temp comment
       <span>{city}, {state}</span>
     )
   }

@@ -133,7 +133,6 @@ model ClientContact {
   address_country_id Int?
   category           String?
   certifications     String?
-  clientCorporation  String?
   comments           String?
   dateAdded          DateTime?
   dateLastModified   DateTime?
@@ -537,6 +536,7 @@ model User {
   logo          String?
   companyName   String?
   annualRevenue String?
+  companyURL    String?
   numEmployees  String?
   revenue       String?
   dateFounded   DateTime?

@@ -8,6 +8,7 @@ import {
 import { getCategoriesByFilter } from "../services/Category";
 import {
   CategoryByIdResponse,
+  CategorySearchByFilterResponse,
   FilterBody,
 } from "../types/Common";
 
@@ -44,7 +45,6 @@ export class CategoryController {
   async searchByFilter(
     @Body() body: FilterBody
   ): Promise<CategorySearchByFilterResponse> {
-    try {
       const { filters, fields, page, count, operator } = body;
 
       const categories = await getCategoriesByFilter(

@@ -161,7 +161,6 @@ export default function RegistrationForm(loggedIn) {
     });
   }
 
-// Temp comment
   function handleReferralChoice(name, value) {
     if( value === 'Community Partner') {
       setReferralChoice(true);

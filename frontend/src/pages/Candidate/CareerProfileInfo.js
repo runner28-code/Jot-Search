@@ -38,11 +38,9 @@ CareerProfileInfo.propTypes = {
 function renderEditIcon(candidateData, setEditMode) {
   const handleClick = () => {
     setEditMode(true);
-// Temp comment
   }
   const isProfileOwner = candidateData.id === AuthService.getProfile().user_id;
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
-  if ( !isProfileOwner && !isCoordinator ) {
     return null;
   }
   const { width } = useWindowDimensions();

@@ -35,7 +35,6 @@ export default function NavSearchMobile({ placeholder }) {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
-        firstname: splitName[0],
         lastname: splitName?.[1]
       }
       delete modifiedFilterObject.title;
@@ -139,6 +138,7 @@ function renderResults( results ) {
 
   const { jobs, companies, candidates } = results;
   if ( !jobs?.length && !companies?.length && !candidates?.length ) {
+    return (
       <div className='text-center text-h6 text-black70% font-bold font-spaceGrotesk'>
         No results found
       </div>

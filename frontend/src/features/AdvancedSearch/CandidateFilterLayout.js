@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { renderDropdownFilters, renderCheckboxFilters } from '../Filters';
 import FilterSearch from '../../components/FilterSearch';
+// Temp comment
 import AuthService from '../../services/auth';
 import { skills } from '../../utils/skillHierarchyMap';
 import FormInput from '../../components/FormInput';

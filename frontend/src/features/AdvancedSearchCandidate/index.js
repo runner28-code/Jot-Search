@@ -82,6 +82,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     }
   };
 
+// Temp comment
 
   const { jobs, total: totalJobs, isLoading: isLoadingJobs } = useGetJobs({ ...getFiltersByTab('jobs'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'jobs' });
   const { companies, total: totalCompanies, isLoading: isLoadingCompanies } = useGetCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'companies' });
@@ -124,7 +125,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   }
 
   function handleTabChange(tabChoice) {
-// Temp comment
     if (tabChoice === 'jobs') {
       setFilterObject(defaultJobFilterState);
     } else if (tabChoice === 'candidates') {

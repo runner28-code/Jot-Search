@@ -2,7 +2,6 @@
 CREATE TABLE "Job" (
     "id" TEXT NOT NULL,
     "externalId" TEXT,
-    "description" TEXT,
     "address1" TEXT,
     "address2" TEXT,
     "city" TEXT,
@@ -21,6 +20,7 @@ CREATE TABLE "Job" (
     "onSite" TEXT,
     "salary" TEXT,
     "salaryUnit" TEXT,
+    "startDate" TIMESTAMP(3),
     "type" TEXT,
     "isDeleted" TEXT,
     "postedAt" TIMESTAMP(3),

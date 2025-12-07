@@ -36,7 +36,6 @@
                 {
                     "name": "PROJECT_ID", 
                     "value": "aerovision-338218"
-                },
                 {
                     "name": "DATABASE_URL", 
                     "value": "{SECRET_DATABASE_URL}"

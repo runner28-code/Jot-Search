@@ -60,6 +60,7 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
       <DashboardCandidate 
         togglePassState={togglePassState} 
         toggle={toggle} 
+      />
     </>)
   }
   if( loggedIn ) {

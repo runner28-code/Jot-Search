@@ -55,7 +55,6 @@ export default function MobileLayout(props) {
               <p className='text-textBlack text-xs'>{addressString}</p>
             </div>
             {/* Remote/Onsite/Hybrid */}
-            <div className='flex w-1/2 items-center'>
               <LaptopIcon
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>

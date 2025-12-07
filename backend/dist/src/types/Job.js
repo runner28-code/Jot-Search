@@ -27,8 +27,6 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "type",
     "isDeleted",
     "postedAt",
-    "hidden",
     "company_name",
     "datasource",
-// Temp comment
 ]);

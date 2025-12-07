@@ -149,6 +149,7 @@ function DesktopCard({ dataObj, active }) {
 DesktopCard.propTypes = {
   dataObj: PropTypes.shape({
     data: PropTypes.shape({
+      id: PropTypes.string,
       clientCorporation: PropTypes.string,
       city: PropTypes.string,
       state: PropTypes.string,

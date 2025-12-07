@@ -44,7 +44,6 @@ export const choices = {
   myApplications: {
     label: 'My Applications',
     icon: ApplicationIcon,
-// Temp comment
     link: ROUTES.applications,
   },
   myFavorites: {
@@ -97,7 +96,6 @@ export const coordinatorChoices = [
   choices.dashboard,
   choices.candidates,
   choices.careers,
-  choices.companies,
   choices.addUser,
   choices.logout
 ];

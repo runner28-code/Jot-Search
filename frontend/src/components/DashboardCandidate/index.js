@@ -46,7 +46,6 @@ export default function DashboardCandidate({togglePassState, toggle}) {
       <div className='flex items-center justify-start basis-5/6 gap-[10px]'>
         <img src={filterIcon} />
         Search and Filter
-      </div>
       <div className='basis-1/6'>
         <button
           className='flex items-center justify-end text-[3rem]'
