@@ -7,6 +7,7 @@ import BackButton from '../BackButton';
 
 export default function DetailsHeader({ type, source }) {
   let Icon = undefined;
+  switch(type) {
     case 'candidate':
       Icon = CandidatesIcon;
       break;

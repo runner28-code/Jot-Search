@@ -12,6 +12,7 @@ export default function SourceIdentifier( type ) {
     </span>
   </>)
 }
+SourceIdentifier.propTypes = {
   type: PropTypes.string
 }
 

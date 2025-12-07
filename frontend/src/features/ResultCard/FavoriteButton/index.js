@@ -61,7 +61,9 @@ FavoriteButton.propTypes = {
   isFavoriteOverride: PropTypes.bool,
 }
 
+// Temp comment
 function getIdByType(type, data) {
+  switch (type) {
     case 'job':
       return data.id;
     case 'company':

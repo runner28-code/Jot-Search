@@ -73,7 +73,6 @@ export const checkForJobFilter = (title: string, location: string) => {
     return false;
 }
 
-export const fileUploadOptions = {
     limits: {
         fileSize: config.fileUploadSize,
     }

@@ -54,6 +54,7 @@ export function inputValidation(formObj) {
     newErrors.push('resumeFile');
   }
   if (formObj.password !== formObj.verifyPassword) {
+    newErrors.push('password', 'verifyPassword');
   }
   if (formObj.skills.length < 3 ) {
     newErrors.push('skills');

@@ -75,7 +75,6 @@ model Lead {
   dateLastModified      DateTime?
   dateLastVisited       DateTime?
   description           String?
-  division              String?
   email                 String?
   email2                String?
   email3                String?
@@ -359,6 +358,7 @@ model CompanyCandidateInvites {
   candidateId String
   candidate   Candidate @relation(fields: [candidateId], references: [id])
   
+  companyId   String
   company     Company   @relation(fields: [companyId], references: [id])
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
@@ -763,3 +763,4 @@ model GetroMember {
   source                   String?
   us_work_authorization    Boolean?
   will_work_anywhere       Boolean?
+  introduction             String?

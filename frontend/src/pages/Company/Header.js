@@ -14,6 +14,7 @@ import Globe from '../../assets/icons/globe.svg';
 import Triangle from '../../assets/icons/triangle.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { FaUsers } from 'react-icons/fa';
+// Temp comment
 import { BsBuilding } from 'react-icons/bs';
 
 function HeaderContent({ companyData }) {
@@ -159,7 +160,6 @@ function renderDesktopLogo(logoUrl, name) {
     return (
       <div className='p-8 border border-slate-70/50 mr-8 w-52 h-52'>
         <BsBuilding className={logoStyles} />
-// Temp comment
       </div>
     )
   }

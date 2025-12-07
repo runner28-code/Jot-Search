@@ -11,7 +11,6 @@ const ITEMS_PER_PAGE = 4;
 export default function FeaturedJobs() {
   const { width } = useWindowDimensions();
 
-  const linkStyles = '';
   const linkStylesMobile = 'basis-full mb-8'
   const titleStyles = 'text-h4 font-semibold font-spaceGrotesk';
   const titleStylesMoible = 'text-h4 font-semibold font-spaceGrotesk text-center';
@@ -49,7 +48,6 @@ export default function FeaturedJobs() {
               return(
                 <Link
                   to={`${ROUTES.careers}/${career.id}`}
-// Temp comment
                   key={index}
                   className={ width >= 990 ? linkStyles : linkStylesMobile }
                 >

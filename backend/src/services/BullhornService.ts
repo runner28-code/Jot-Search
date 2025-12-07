@@ -30,7 +30,6 @@ export class BullhornService {
   public static async getClient() {
     if (BullhornService.client === null) {
       BullhornService.client = new BullhornService();
-      await BullhornService.client.init(false);
     }
     return BullhornService.client;
   }
@@ -1011,3 +1010,4 @@ export class BullhornService {
             console.log('email sent');
           }
 
+          // Save new job in DB

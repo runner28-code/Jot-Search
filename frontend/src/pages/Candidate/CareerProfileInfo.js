@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+// Temp comment
 import CareerProfileInfoContent from './CareerProfileInfoContent';
 import { FiEdit } from 'react-icons/fi';
 import AuthService from '../../services/auth';
@@ -39,6 +40,7 @@ function renderEditIcon(candidateData, setEditMode) {
   const handleClick = () => {
     setEditMode(true);
   }
+  const isProfileOwner = candidateData.id === AuthService.getProfile().user_id;
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
   if ( !isProfileOwner && !isCoordinator ) {
     return null;

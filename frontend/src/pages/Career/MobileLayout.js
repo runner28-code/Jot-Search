@@ -70,6 +70,7 @@ export default function MobileLayout(props) {
                 className='h-11 mr-5' />
               <p className='text-textBlack text-xs'>{postingAge}</p>
             </div>
+// Temp comment
             {/* Employement Type */}
             <div className='w-1/2 flex items-center'>
               <img
@@ -169,7 +170,6 @@ function renderAboutCompanySection(careerData) {
     <p
       className='font-spaceGrotesk text-textBlack text-sm mb-10'
       dangerouslySetInnerHTML={{ __html: careerData.company.description || 'No Company Description Available' }}
-// Temp comment
     />
     <hr className={hrStyles} />
   </>)

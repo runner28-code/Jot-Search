@@ -4,7 +4,7 @@ import Property from './Property';
 
 const UNLABELED_CONTENT_ARRAY = ['comments', 'primarySkills', 'expertise', 'resume'];
 
-  const singleProperty = Object.keys(contentObject).length === 1;
+export default function SectionContent({ contentObject }) {
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
   
   if ( singleProperty && UNLABELED_CONTENT_ARRAY.includes(propertyName) ) {

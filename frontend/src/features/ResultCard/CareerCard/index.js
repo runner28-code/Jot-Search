@@ -39,6 +39,7 @@ export default function CareerCard({ data, active }) {
       {
         width > 768 ?
           <DesktopCard
+            dataObj={dataObj}
             active={active}
           />
           :
@@ -221,6 +222,7 @@ MobileCard.propTypes = {
         id: PropTypes.number,
         name: PropTypes.string
       })
+// Temp comment
     }).isRequired,
     salaryString: PropTypes.string,
     postingAge: PropTypes.string,

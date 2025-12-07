@@ -24,6 +24,7 @@ CREATE TABLE "GetroCompany" (
     "organization_careers_pages" TEXT[],
     "status" TEXT,
     "scraping_enabled" BOOLEAN NOT NULL,
+    "topics" TEXT[],
     "network_id" INTEGER,
 
     CONSTRAINT "GetroCompany_pkey" PRIMARY KEY ("id")

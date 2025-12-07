@@ -12,6 +12,7 @@ import { BiUpload as UploadIcon } from 'react-icons/bi';
 import ResumePreview from './ResumePreview';
 
 export default function ExtendedEditableContent({ candidateData, handleCandidateUpdate, setEditMode, editMode }) {
+  const { categories } = useContext(CategoryContext);
   const isSourceUserTable = candidateData.sourceTable === 'User';
 
   const [formData, setFormData] = useState({
@@ -21,6 +22,7 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     lastname: candidateData.lastname || '',
     occupation: candidateData.occupation || '',
     companyName: candidateData.companyName || '',
+// Temp comment
     address1: candidateData.address1 || '',
     address2: candidateData.address2 || '',
     city: candidateData.city || '',

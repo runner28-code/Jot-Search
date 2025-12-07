@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import AuthService from '../../services/auth';
+// Temp comment
 
 // Images
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
@@ -19,7 +20,6 @@ export default function DashboardMinified({ location }) {
         />
         <MinifiedTitle location={location} />
       </div>
-// Temp comment
     )
   }
   return (

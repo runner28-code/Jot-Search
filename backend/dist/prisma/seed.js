@@ -169,7 +169,6 @@ function seedCompanies() {
                     state: "OK",
                     businessSectorList: "Health Care,Virtual Health",
                     billingPhone: "946-423-2341",
-                    companyURL: "testingco@gmail.com",
                     companyDescription: "Best at testing",
                     numEmployees: 50,
                 },

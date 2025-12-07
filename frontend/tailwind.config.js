@@ -252,7 +252,6 @@ module.exports = {
       addUtilities({
         '.scrollbar-hide': {
           /* IE and Edge */
-          '-ms-overflow-style': 'none',
 
           /* Firefox */
           'scrollbar-width': 'none',

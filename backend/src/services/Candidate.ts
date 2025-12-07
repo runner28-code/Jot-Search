@@ -101,3 +101,4 @@ export const getCandidatesList = async (candidates_ids: string[]) => {
   } catch (error) {
     console.log(error);
     throw error;
+  }

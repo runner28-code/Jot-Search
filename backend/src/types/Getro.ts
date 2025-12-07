@@ -77,7 +77,6 @@ export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "url",
   "hidden",
 ]);
-
 export type User = {
   id: string;
   avatar_url?: string;

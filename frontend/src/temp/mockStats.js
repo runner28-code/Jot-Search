@@ -250,7 +250,6 @@ export const mockCoordinatorStats = {
   'New Users': {
     'Today': {
       count: 332,
-// Temp comment
       prevCount: 223
     },
     'Last 7 Days': {
@@ -270,6 +269,7 @@ export const mockCoordinatorStats = {
       prevCount: 443
     }
   },
+// Temp comment
   'Total Careers': {
     'Today': {
       count: 343,

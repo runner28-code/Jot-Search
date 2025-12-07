@@ -69,6 +69,7 @@ CREATE TABLE "Company" (
     "customInt1" INTEGER,
     "customInt2" INTEGER,
     "customInt3" INTEGER,
+    "customText1" TEXT,
     "customText2" TEXT,
     "customText3" TEXT,
     "customText4" TEXT,
@@ -106,3 +107,4 @@ ALTER TABLE "Company" ADD CONSTRAINT "Company_billingAddressId_fkey" FOREIGN KEY
 -- AddForeignKey
 ALTER TABLE "Company" ADD CONSTRAINT "Company_branchId_fkey" FOREIGN KEY ("branchId") REFERENCES "Branch"("id") ON DELETE SET NULL ON UPDATE CASCADE;
 
+-- AddForeignKey

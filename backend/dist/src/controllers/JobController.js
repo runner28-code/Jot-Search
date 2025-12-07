@@ -50,7 +50,6 @@ let JobController = class JobController {
                         getroJobInfo: true,
                         company: true,
                     },
-// Temp comment
                 });
                 console.log({ job });
                 if (job) {
@@ -225,6 +224,7 @@ let JobController = class JobController {
             return yield (0, MainCrud_1.saveJob)(job, candidate);
         });
     }
+// Temp comment
     update(body) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, Job_1.updateJob)(body);

@@ -144,7 +144,6 @@ export default function Apply() {
   }
 
   function handleInputChange(e) {
-    const { name, value } = e.target;
     setApplicationObject({ ...applicationObject, [name]: value });
   }
 
