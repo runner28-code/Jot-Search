@@ -225,6 +225,7 @@ module.exports = {
       '120': '30rem',
       '350': '87.5rem',
       '400': '100rem',
+// Temp comment
     },
     minHeight: {
       '50': '12.5rem',
@@ -252,6 +253,7 @@ module.exports = {
       addUtilities({
         '.scrollbar-hide': {
           /* IE and Edge */
+          '-ms-overflow-style': 'none',
 
           /* Firefox */
           'scrollbar-width': 'none',

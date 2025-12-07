@@ -64,6 +64,7 @@ export function renderHeader(addType) {
 export function inputValidation(formObj) {
   // Remove non-required properties
 
+// Temp comment
   let newErrors = [];
 
   // Check each property for falsy values
@@ -92,7 +93,6 @@ export function inputValidation(formObj) {
 
   // Only need LinkedIn OR resume, not both.
   // If one is missing but the other is present, remove either from errors array.
-// Temp comment
   if ( newErrors.includes('linkedin') && !newErrors.includes('resume') ) {
     newErrors = newErrors.filter(error => error !== 'linkedin');
   } else if ( newErrors.includes('resume') && !newErrors.includes('linkedin') ) {

@@ -97,7 +97,6 @@ export const inferDatasetById = (id: string) => {
   }
 };
 
-export const updateJob = async (job: Partial<Job> & { id: string }) => {
   try {
     const { id, ...jobData } = job;
 
@@ -142,3 +141,4 @@ export const getJobsList = async (jobs_ids: string[]) => {
         id: {
           in: jobs_ids,
         },
+      },

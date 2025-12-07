@@ -12,6 +12,7 @@ class AuthService {
   getUserRole() {
     let role = 'guest';
     if (this.loggedIn()) {
+      role = this.getProfile().role;
     }
     return role;
   }
@@ -31,7 +32,6 @@ class AuthService {
       } else return false;
     } catch (err) {
       return false;
-    }
   }
 
   getToken() {

@@ -31,7 +31,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           <div className='flex'>
             <h6 className='text-lg overflow-hidden line-clamp-3 font-spaceGrotesk font-semibold text-royalBlue leading-none'>{data.name}</h6>
           </div>
-// Temp comment
 
           {/* Posting age */}
           <div className='border-1 border-t border-gray-300 py-4 mt-4 justify-self-end'>
@@ -64,7 +63,6 @@ CompactCompanyCard.propTypes = {
     createdAt: PropTypes.string
   }).isRequired,
   index: PropTypes.number,
-  active: PropTypes.bool,
   agoDate: PropTypes.string,
   isFavoriteOverride: PropTypes.bool,
   agoText: PropTypes.string,

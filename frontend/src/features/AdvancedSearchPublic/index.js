@@ -209,7 +209,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
 }
 
 AdvancedSearchPublic.propTypes = {
-  disabledTabs: PropTypes.bool,
   toggle: PropTypes.bool
 }
 

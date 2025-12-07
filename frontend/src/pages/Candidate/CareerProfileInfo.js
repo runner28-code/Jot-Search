@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-// Temp comment
 import CareerProfileInfoContent from './CareerProfileInfoContent';
 import { FiEdit } from 'react-icons/fi';
 import AuthService from '../../services/auth';
@@ -46,7 +45,6 @@ function renderEditIcon(candidateData, setEditMode) {
     return null;
   }
   const { width } = useWindowDimensions();
-  if( width <= 990 ) {
     return (
       <button 
         className='testspace-x-2 text-xl leading-none py-4 justify-center items-center text-royalBlue absolute top-0 right-0 px-4 pr-6 border-solid border-royalBlue'

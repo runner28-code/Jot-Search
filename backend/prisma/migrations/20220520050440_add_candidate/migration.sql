@@ -78,6 +78,7 @@ CREATE TABLE "Candidate" (
     "specialities" TEXT,
     "ssn" TEXT,
     "stateAdditionalWithholdingsAmount" TEXT,
+    "stateExemptions" TEXT,
     "stateFilingStatus" TEXT,
     "status" TEXT,
     "taxID" TEXT,
@@ -102,3 +103,4 @@ CREATE TABLE "Candidate" (
     "address_country_id" TEXT,
     "employmentPreference" TEXT,
 
+    CONSTRAINT "Candidate_pkey" PRIMARY KEY ("id")

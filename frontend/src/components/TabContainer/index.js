@@ -22,6 +22,7 @@ TabContainer.propTypes = {
   tabChoices: PropTypes.arrayOf(PropTypes.string).isRequired,
   activeTab: PropTypes.string,
   setActiveTab: PropTypes.func.isRequired,
+  isLocked: PropTypes.bool,
   absolute: PropTypes.bool,
 }
 
@@ -33,3 +34,34 @@ function TabButton({ choice, activeTab, setActiveTab, isLocked }) {
       return null;
     }
     setActiveTab(choice);
+  }
+
+  const titleCasedTab = choice.charAt(0).toUpperCase() + choice.slice(1);
+  let tabStyles = 'px-14 py-3 rounded-full cursor-pointer Mobile-Body-textmobile-text-size-large-2 ';
+  tabStyles += conditionalStyles(isActiveTab, isLocked);
+
+  return (
+    <button
+      key={choice}
+      className={tabStyles}
+      onClick={() => handleClick(choice)}
+    >
+      {titleCasedTab === 'Jobs' ? 'Careers' : titleCasedTab}
+    </button>
+  );
+}
+
+TabButton.propTypes = {
+  choice: PropTypes.string.isRequired,
+  activeTab: PropTypes.string,
+  isLocked: PropTypes.bool,
+}
+
+function conditionalStyles(isActiveTab, isLocked) {
+  if ( isActiveTab ) {
+    return 'bg-royalBlue text-white';
+  }
+  if ( isLocked ) {
+    return 'bg-grey300 text-royalBlue hover:cursor-not-allowed';
+  }
+  return 'bg-white text-royalBlue hover:bg-aquaBlue hover:text-white';

@@ -1,5 +1,6 @@
 import { Datasource } from "@prisma/client";
 import db from "../src/utils/db";
+
 async function main() {
   try {
     console.log("Seeding...🌱");
@@ -31,7 +32,6 @@ async function seedJobs() {
         salary: 160000,
         employmentType: "fulltime",
         onSite: "On-Site",
-        description: "Come join our rockstar team for good money and team",
         datasource: Datasource.main as any,
         status: "active",
         categoryId: (await db.category.findFirst({
@@ -231,3 +231,4 @@ main()
     console.error(e);
     process.exit(1);
   })
+  .finally(async () => {

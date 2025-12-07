@@ -269,7 +269,6 @@ export const mockCoordinatorStats = {
       prevCount: 443
     }
   },
-// Temp comment
   'Total Careers': {
     'Today': {
       count: 343,

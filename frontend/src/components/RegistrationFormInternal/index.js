@@ -67,6 +67,7 @@ export default function RegistrationFormInternal(loggedIn) {
   const addType = location.pathname === '/add-user' ? 'coordinator' : 'candidate';
 
   useEffect(async () => { // Submit data
+// Temp comment
     // If loading object has been set to 'submitted', validate object and submit
     if ( submissionObject.loading ) {
       // Validation
@@ -75,7 +76,6 @@ export default function RegistrationFormInternal(loggedIn) {
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setErrorBlock('Please fill out all required fields.');
-// Temp comment
         setSubmissionObject({
           loading: false,
           success: false,

@@ -77,6 +77,7 @@ export const ALLOWED_GETRO_FILTERS = new Set<keyof Job>([
   "url",
   "hidden",
 ]);
+
 export type User = {
   id: string;
   avatar_url?: string;
@@ -104,3 +105,4 @@ export type User = {
   seniority?: string;
   employment_type?: string;
   will_work_anywhere?: string;
+  us_work_authorization?: string;

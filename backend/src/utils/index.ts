@@ -23,7 +23,6 @@ export const isExistByID = async (id: string, datset: string, table: string) => 
         }
         return false;
     } catch (error) {
-        console.log(error);
         return true;
     }
 }
@@ -73,6 +72,7 @@ export const checkForJobFilter = (title: string, location: string) => {
     return false;
 }
 
+export const fileUploadOptions = {
     limits: {
         fileSize: config.fileUploadSize,
     }
@@ -123,3 +123,4 @@ export const determineCondition = (
       return `${key} = ${value}`;
     } else {
       return `LOWER(${key}) LIKE '%${value.toLowerCase()}%'`;
+    }

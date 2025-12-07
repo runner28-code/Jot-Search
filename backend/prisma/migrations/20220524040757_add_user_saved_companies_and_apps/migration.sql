@@ -19,7 +19,6 @@ CREATE UNIQUE INDEX "_userSavedCompanies_AB_unique" ON "_userSavedCompanies"("A"
 -- CreateIndex
 CREATE INDEX "_userSavedCompanies_B_index" ON "_userSavedCompanies"("B");
 
--- AddForeignKey
 ALTER TABLE "Application" ADD CONSTRAINT "Application_jobId_fkey" FOREIGN KEY ("jobId") REFERENCES "Job"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey

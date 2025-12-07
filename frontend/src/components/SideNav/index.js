@@ -16,7 +16,6 @@ export default function SideNav({ userType }) {
   if ( hiddenPages.includes(pathname) ) {
     return null;
   }
-
   if( userType === 'guest' ) {
     return null;
   }
@@ -35,7 +34,6 @@ SideNav.propTypes = {
   userType: PropTypes.string.isRequired
 }
 
-// Temp comment
 function renderChoice(choice, selected, index, choicesLength) {
   let baseChoiceStyles = 'w-full h-30 flex items-center cursor-pointer border-b border-solid border-smokeGray ';
   const selectedChoice = choice.label === selected;

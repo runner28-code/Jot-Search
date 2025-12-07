@@ -15,6 +15,7 @@ import { UpdateJobFeatured } from './UpdateJobFeatured';
 const sectionHeaderStyles = 'font-spaceGrotesk font-semibold text-xl text-charcoal mb-4 ';
 const hrStyles = 'mb-10 border-midGrey ';
 
+// Temp comment
 export default function MobileLayout(props) {
   const {
     careerData,
@@ -70,7 +71,6 @@ export default function MobileLayout(props) {
                 className='h-11 mr-5' />
               <p className='text-textBlack text-xs'>{postingAge}</p>
             </div>
-// Temp comment
             {/* Employement Type */}
             <div className='w-1/2 flex items-center'>
               <img

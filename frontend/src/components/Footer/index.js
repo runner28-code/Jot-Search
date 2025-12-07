@@ -46,7 +46,6 @@ export default function Footer() {
         <a href={ROUTES.instagram}>
           <img
             src={instagram}
-// Temp comment
             className={socialIconStyleMobile}
           />
         </a>

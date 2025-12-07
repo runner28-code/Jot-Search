@@ -14,7 +14,6 @@ import Globe from '../../assets/icons/globe.svg';
 import Triangle from '../../assets/icons/triangle.svg';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { FaUsers } from 'react-icons/fa';
-// Temp comment
 import { BsBuilding } from 'react-icons/bs';
 
 function HeaderContent({ companyData }) {
@@ -83,6 +82,7 @@ function HeaderContent({ companyData }) {
               className={headerIconStyles}
             />
             { renderIndustry(companyData.industryList[0], headerRowTextStyles) }
+// Temp comment
           </div>
         </div>
 

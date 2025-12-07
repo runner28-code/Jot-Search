@@ -66,7 +66,6 @@ export const choices = {
     icon: ContactIcon,
     link: ROUTES.talentInTulsa,
   },
-  logout: {
     label: 'Logout',
     icon: LogoutIcon,
     link: ROUTES.logout,

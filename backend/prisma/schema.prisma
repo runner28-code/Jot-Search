@@ -75,6 +75,7 @@ model Lead {
   dateLastModified      DateTime?
   dateLastVisited       DateTime?
   description           String?
+  division              String?
   email                 String?
   email2                String?
   email3                String?
@@ -408,7 +409,6 @@ model Job {
   isOpen              Boolean?
   isInterviewRequired Boolean?
   hoursPerWeek        Int?
-  hoursOfOperation    String?
   durationWeeks       Int?
   publicDescription   String?
   reasonClosed        String?

@@ -40,7 +40,6 @@ export default function Apply() {
   const isLoggedIn = AuthService.loggedIn();
   // State
   const [career, setCareer] = useState(defaultCareerState);
-  const [originalObject, setOriginalObject] = useState({});
   const [applicationObject, setApplicationObject] = useState(defaultState);
   const [useExistingResume, setUseExistingResume] = useState(false);
   const [referralChoice, setReferralChoice] = useState(false);
@@ -144,6 +143,7 @@ export default function Apply() {
   }
 
   function handleInputChange(e) {
+    const { name, value } = e.target;
     setApplicationObject({ ...applicationObject, [name]: value });
   }
 

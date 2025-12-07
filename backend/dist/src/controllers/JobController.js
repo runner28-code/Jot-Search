@@ -224,7 +224,6 @@ let JobController = class JobController {
             return yield (0, MainCrud_1.saveJob)(job, candidate);
         });
     }
-// Temp comment
     update(body) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, Job_1.updateJob)(body);
@@ -332,6 +331,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], JobController.prototype, "createJob", null);
 JobController = __decorate([
+// Temp comment
     (0, routing_controllers_1.JsonController)("/api/job")
 ], JobController);
 exports.JobController = JobController;

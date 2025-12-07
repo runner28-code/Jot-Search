@@ -414,6 +414,7 @@ const job_filter_exclude_keys = [
     "troops",
     "truck driver",
     "tutor",
+    "unboxer",
     "urology",
     "utilities",
     "utility",
@@ -502,3 +503,4 @@ exports.JOB_FIELDS = [
     "taxRate",
     "taxStatus",
     "title",
+    "travelRequirements",

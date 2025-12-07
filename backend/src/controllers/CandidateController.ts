@@ -426,3 +426,4 @@ export class CandidateController {
     } catch (error) {
       return {
         result: false,
+        error: "Please check email, jobIds and candidateIds",

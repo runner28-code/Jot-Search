@@ -130,6 +130,5 @@ export const parseGetroJobToMain = (data: GtJob) => {
     skillList: data.job_functions,
     companyId: `gt-${data.organization_id}`,
     salary: `${data.compensation_min} - ${data.compensation_max}`,
-    salaryUnit: data.compensation_currency,
     postedAt: data.posted_at,
   };

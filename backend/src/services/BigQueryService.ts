@@ -14,6 +14,7 @@ export class BigQueryService {
         return BigQueryService.client;
     }
 
+    public static async selectQuery(datset: string, table: string, fields: string, count?: number, condition?: string, join?: string, fromAlias?: string) {
         try {
             let query = `SELECT ${fields} FROM \`${datset}.${table}\` ${fromAlias ? `AS ${fromAlias}` : ''}`;
             if(join){
@@ -30,7 +31,6 @@ export class BigQueryService {
                     ${query}
                     LIMIT ${count}
                 `;
-            }
             const options = {
                 query: query,
                 location: 'US',

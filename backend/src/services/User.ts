@@ -495,7 +495,6 @@ export const getCoordinatorDashboardStats = async (days: number) => {
       },
       applicationsSubmitted: {
         count: newApplicationsInCurrentPeriod,
-        compare: newApplicationsCompare || 0
       },
       companyRequestIntroductions: {
         count: 0,
@@ -644,3 +643,4 @@ export const recovery = async (email: string) => {
     const token = CreateJwtToken({ email: user.email });
 
     await sendResetPassword(email, user.firstname, token);
+

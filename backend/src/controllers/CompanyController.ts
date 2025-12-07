@@ -371,3 +371,4 @@ export class CompanyController {
       _fields,
       count,
       _condition
+    );

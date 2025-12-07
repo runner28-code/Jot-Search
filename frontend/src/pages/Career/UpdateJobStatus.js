@@ -25,7 +25,6 @@ export const UpdateJobStatus = ({ job }) => {
             'Inactive',
             'Filled',
             'Draft',
-// Temp comment
             'Closed'
           ]} 
           currentChosen={updatedJob.status}
@@ -40,4 +39,5 @@ export const UpdateJobStatus = ({ job }) => {
         />
       </div>
     </div>
+// Temp comment
   )

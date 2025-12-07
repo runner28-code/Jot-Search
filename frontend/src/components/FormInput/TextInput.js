@@ -23,6 +23,7 @@ TextInput.propTypes = {
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   label: PropTypes.string,
+  value: PropTypes.string,
   required: PropTypes.bool,
   onChange: PropTypes.func,
   baseStyles: PropTypes.string.isRequired,

@@ -17,7 +17,6 @@ ADD COLUMN     "desiredLocations" TEXT[],
 DROP COLUMN "employmentPreference",
 ADD COLUMN     "employmentPreference" TEXT[];
 
--- AlterTable
 ALTER TABLE "Lead" DROP COLUMN "address_country_id",
 ADD COLUMN     "address_country_id" INTEGER,
 DROP COLUMN "category",
