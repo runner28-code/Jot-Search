@@ -7,6 +7,7 @@ import { consoleLog } from '../utils';
 export class BigQueryService {
     public static client: BigQuery | null = null;
 
+    public static getClient() {
         if (BigQueryService.client === null) {
             BigQueryService.client = new BigQuery();
         }
@@ -38,7 +39,6 @@ export class BigQueryService {
             consoleLog(`BIGQUERY: SELECT QUERY = ${query}`);
             const [job] = await BigQueryService.getClient().createQueryJob(options);
             const [res] = await job.getQueryResults();
-            if (res && res.length > 0) {
                 return res;
             }
         } catch (error) {

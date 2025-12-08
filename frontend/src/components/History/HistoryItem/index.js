@@ -10,6 +10,7 @@ function isTodayOrYesterday(dateObj) {
   const today = new Date();
   const sameYear = today.getFullYear() === dateObj.getFullYear();
   const sameMonth = sameYear && today.getMonth() === dateObj.getMonth();
+// Temp comment
   const dayDifference = today.getDate() - dateObj.getDate();
   
   // if year and month are the same, check if today or yesterday
@@ -61,7 +62,6 @@ function formatDateString(date) {
 }
 
 function renderMessage(historyObj) {
-// Temp comment
   if ( historyObj.message.includes('{careerName}') ) {
     const messageSplit = historyObj.message.split('{careerName}');
     return (

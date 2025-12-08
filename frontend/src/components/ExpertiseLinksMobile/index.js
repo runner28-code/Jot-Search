@@ -42,6 +42,7 @@ export default function ExpertiseLinksMobile() {
             alt='Sales & Biz Dev Icon'
             className={iconStyles}
           />
+          <span className={textStyles}>Sales & Business</span>
           <span className={textStyles}>Development</span>
         </Link>
         {/* Marketing */}
@@ -57,7 +58,6 @@ export default function ExpertiseLinksMobile() {
           />
           <span className={textStyles}>Marketing</span>
         </Link>
-        {/* Operations */}
         <Link
           to={ROUTES.careers}
           className={linkStyles}

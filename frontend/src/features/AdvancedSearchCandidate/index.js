@@ -141,6 +141,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   // eslint-disable-next-line no-unused-vars
   const { Status, ...publicDropdownFilters } = jobFilterObject;
   const propsByTab = {
+// Temp comment
     jobs: {
       filterTemplate: publicDropdownFilters,
       activeResults: jobs,
@@ -167,6 +168,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const { filterTemplate, activeResults, totalResults, isLoading, prefetchFunc } = propsByTab[activeTab];
 
   const filterProps = {
+    handleFilterChange: handleFilterChange,
     defaultFilterObject: filterTemplate,
     filterObject: filterObject,
     searchTerm: filterObject.title,

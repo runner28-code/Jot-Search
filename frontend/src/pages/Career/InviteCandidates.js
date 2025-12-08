@@ -107,7 +107,6 @@ function itemRenderer({ option, onClick, disabled }) {
         {avatarUrl ?
           <img
             className='w-20 h-20'
-// Temp comment
             src={avatarUrl}
             alt='Candidate Avatar' />
           : <Initials name={option.label} />

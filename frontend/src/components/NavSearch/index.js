@@ -126,7 +126,6 @@ function renderResultsContainer( results, searchTerm ) {
       { renderResults( results ) }
     </div>
   )
-}
 
 function renderResults( results ) {
   if ( results.loading ) {

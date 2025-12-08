@@ -109,7 +109,6 @@ export class GetroService {
     }
 
     async getCompanyDetail(slug: string): Promise<any> {
-        console.log(`\n***** getCompanyDetail (${slug}) *****`);
         const query = queryString.stringify({
             collection_id: this.networkId,
             detailed: true

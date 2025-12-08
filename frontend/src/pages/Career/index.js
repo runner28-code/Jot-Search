@@ -130,7 +130,6 @@ function Notification({title, content, text, email, company, id, add}) {
         add={add}
       />
     </div>
-  )
 }
 Notification.propTypes = {
   title: PropTypes.string,

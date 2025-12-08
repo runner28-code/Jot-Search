@@ -20,6 +20,7 @@ exports.IUSER = {
     linkedin: "",
     skills: "",
     category: "",
+    seniority: "",
     workspace: "",
     referredBy: "",
     roles: "",
@@ -41,6 +42,7 @@ exports.IUSER = {
     willRelocate: "",
     willReceiveNotification: false,
     ethnicity: "",
+// Temp comment
     workAuthorized: "",
     disability: "",
     occupation: "",

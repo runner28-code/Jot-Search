@@ -125,7 +125,6 @@ class AuthService {
   toggleSavedCandidate(candidateID, action) {
     const savedCandidates = this.getSavedCandidateIDs();
     if ( action === 'save' ) {
-      savedCandidates.push(candidateID);
     } else {
       savedCandidates.splice(savedCandidates.indexOf(candidateID), 1);
     }

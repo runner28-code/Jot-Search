@@ -7,7 +7,6 @@ import Stats from '../../../features/Stats';
 import AuthService from '../../../services/auth';
 
 export default function CompanyDashboard({userType}) {
-// Temp comment
   const profile = AuthService.getProfile();
   const headerStyles = 'font-spaceGrotesk font-bold text-h1 text-royalBlue ';
   return (
@@ -19,6 +18,7 @@ export default function CompanyDashboard({userType}) {
       <Stats
         headerStyles={headerStyles}
         userType={userType}
+// Temp comment
       />
       <AssistanceCard />
       <h2 className='mt-22 font-spaceGrotesk font-semibold text-h5 text-charcoal'>Search</h2>

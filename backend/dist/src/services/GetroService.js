@@ -147,7 +147,6 @@ class GetroService {
             return null;
         });
     }
-    /**
      * getMemebers
      */
     getMembers(testMode = false, per_page = 30) {

@@ -35,7 +35,6 @@ export const UpdateJobStatus = ({ job }) => {
           handleChange={async(e) => {
             const { res } = await saveJob({ status: e.target.value, id: updatedJob.id })
             setUpdatedJob(res);
-// Temp comment
           }}
         />
       </div>

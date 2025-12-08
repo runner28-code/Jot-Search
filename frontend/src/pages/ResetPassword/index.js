@@ -57,7 +57,6 @@ export default function ResetPassword() {
             to={ROUTES.login}
             className='underline block my-4 text-royalBlue'
           >
-            Login to your account
           </Link>
         </div>
       )

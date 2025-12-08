@@ -33,6 +33,7 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
         if (jobError) {
             throw new Error(jobError);
         }
+        const sanitizedJob = sanitizeJob(job);
         const newJob = yield db_1.default.job.create({
             data: Object.assign(Object.assign({}, sanitizedJob), { datasource: sanitizedJob === null || sanitizedJob === void 0 ? void 0 : sanitizedJob.datasource }),
         });
@@ -45,7 +46,6 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
         console.error(err);
         return {
             result: false,
-            error: err,
         };
     }
 });

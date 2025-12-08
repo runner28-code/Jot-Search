@@ -110,7 +110,6 @@ function renderLabel(name, label, required) {
       htmlFor={name}
     >
       {label}
-// Temp comment
     </label>
   )
 }

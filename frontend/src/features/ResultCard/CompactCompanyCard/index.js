@@ -5,7 +5,6 @@ import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 // import featuredIcon from '../../../assets/icons/pyramid.svg';
-// Temp comment
 import {  calculatePostingAge } from '../../../utils/formatFunctions';
 
 export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOverride = null, agoText = 'Saved', selectableProps = null }) {
@@ -42,6 +41,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
       {
         selectableProps && selectableProps.selectable ?
           <Checkbox
+// Temp comment
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}

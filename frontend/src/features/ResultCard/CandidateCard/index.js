@@ -135,7 +135,6 @@ function LinkWrapper({ children, link, disableLink }) {
     <Link 
       to={link}
       className={linkStyles}
-      tabIndex='0'
     >
       {children}
     </Link>

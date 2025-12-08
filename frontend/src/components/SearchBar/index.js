@@ -11,6 +11,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
   const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
   if ( marginBottom ) {
     styleObject.containerStyles += `mb-${marginBottom} `;
+  }
 
   function handleChange(e) {
     setSearchTerm(e.target.value);
@@ -28,7 +29,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
           alt='search icon'
           className='h-2/3'/>
       </div>
-      <input
         type='text'
         id={ placeholder }
         placeholder={ placeholderText }

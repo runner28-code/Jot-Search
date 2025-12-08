@@ -182,7 +182,6 @@ function seedCompanies() {
                     getro_description: "a fintech company",
                     description: "testing a new description",
                     city: "Tulsa",
-// Temp comment
                     state: "OK",
                     billingPhone: "876-567-9876",
                     companyURL: "pepsoda@gmail.com",

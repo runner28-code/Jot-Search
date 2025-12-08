@@ -37,7 +37,6 @@ function CareerHeader ({ location }) {
   let userRole = AuthService.getUserRole();
 
   const back = '< Go Back';
-
   if( userRole === 'candidate' || userRole === 'coordinator' ) {
     return (
       <div className='flex flex-col items-start py-14 px-8 '>

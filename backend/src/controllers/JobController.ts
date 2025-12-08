@@ -237,7 +237,6 @@ export class JobController {
       ON REPLACE(${alias}.companyId, "bh-", "bl-")  = ${companyAlias}.bh_id
       `;
 
-    return await BigQueryService.selectQuery(
       dataset,
       table,
       _fields,

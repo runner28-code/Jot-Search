@@ -168,7 +168,6 @@ export class CandidateController {
             firstName: "asc",
           }
         });
-        const tppUserPromise = db.user.findMany({
           where,
           skip: skip < 0 ? 0 : skip,
           take: count,

@@ -51,6 +51,7 @@ export default function RegistrationForm() {
       // Validation
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
+// Temp comment
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setSubmissionObject({

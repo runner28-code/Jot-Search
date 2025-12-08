@@ -143,6 +143,7 @@ function renderDesktopLogo(logoUrl, name) {
 function FillerIcon () {
   const { width } = useWindowDimensions();
 
+  if( width >= 1280 ) {
     return (
       <div>
         <BsBuilding className='w-16 h-16 fill-royalBlue basis-1/3 mr-8'/>

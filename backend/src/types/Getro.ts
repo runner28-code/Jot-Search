@@ -100,9 +100,3 @@ export type User = {
   invited_by?: string;
   job_search_status?: string;
   joined_at?: string;
-  remote_work?: string;
-  require_sponsorship_visa?: string;
-  seniority?: string;
-  employment_type?: string;
-  will_work_anywhere?: string;
-  us_work_authorization?: string;

@@ -73,6 +73,7 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
       />
     </>)
   }
+// Temp comment
   return (<>
     <Dashboard togglePassState={togglePassState} />
   </>)

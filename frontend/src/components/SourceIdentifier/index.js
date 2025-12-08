@@ -19,7 +19,6 @@ SourceIdentifier.propTypes = {
 function renderSwitch(type) {
   switch(type['type']) {
     case 'getro':
-    case 'main':
       return 'Getro Data';
     case 'bullhorn':
     default:

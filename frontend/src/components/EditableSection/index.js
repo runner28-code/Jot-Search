@@ -39,12 +39,12 @@ EditableSection.propTypes = {
   entityID: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
   contentObjectProp: PropTypes.object.isRequired,
-// Temp comment
   handleContentUpdate: PropTypes.func.isRequired,
   headerStyles: PropTypes.string.isRequired,
 }
 
 /* Render functions */
+// Temp comment
 
 function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
   if (editMode) {
