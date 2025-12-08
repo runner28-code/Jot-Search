@@ -21,7 +21,6 @@ function isTodayOrYesterday(dateObj) {
     }
   }
 
-// Temp comment
   return returnObj;
 }
 
@@ -62,6 +61,7 @@ function formatDateString(date) {
 }
 
 function renderMessage(historyObj) {
+// Temp comment
   if ( historyObj.message.includes('{careerName}') ) {
     const messageSplit = historyObj.message.split('{careerName}');
     return (

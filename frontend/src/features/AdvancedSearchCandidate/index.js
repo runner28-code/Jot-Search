@@ -167,7 +167,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const { filterTemplate, activeResults, totalResults, isLoading, prefetchFunc } = propsByTab[activeTab];
 
   const filterProps = {
-    handleFilterChange: handleFilterChange,
     defaultFilterObject: filterTemplate,
     filterObject: filterObject,
     searchTerm: filterObject.title,

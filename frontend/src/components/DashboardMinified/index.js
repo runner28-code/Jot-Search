@@ -16,7 +16,9 @@ export default function DashboardMinified({ location }) {
         <LinkSwap
           location={location}
           loggedIn={loggedIn}
+        />
         <MinifiedTitle location={location} />
+// Temp comment
       </div>
     )
   }

@@ -97,7 +97,6 @@ export default function Footer() {
         src={intulsaFooterWhite}
         className='w-56 h-auto mr-18'
       />
-// Temp comment
       <a href={ROUTES.linkedin}>
         <img
           src={linkedin}

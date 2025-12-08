@@ -82,10 +82,12 @@ export const APIInvitedJobs = APIjobBase + '/invited';
 export const APItoggleSaveJob = APIjobBase + '/save';
 export const APIsavedJobs = APIjobBase + '/savedJobs';
 // Client Contacts
+// Temp comment
 export const APIclientContacts = '/api/client-contact/search';
 // Categories
 export const APIcategoryBase = '/api/category';
 export const APIcategories = APIcategoryBase + '/search';
+// Stats
 export const APIstats = '/stats';
 export const APIlandingPageStats = '/landing-page-stats';
 

@@ -20,7 +20,6 @@ export default function DashboardPublic({togglePassState}) {
   const active = ' bg-royalBlue';
 
   const careerTitle = totalJobsCount + ' Open Careers';
-// Temp comment
   const companyTitle = totalCompaniesCount  + ' Companies';
 
   return (
@@ -45,6 +44,7 @@ export default function DashboardPublic({togglePassState}) {
           >
             <CompanyIcon />
             <p className='ml-4'>Companies</p>
+// Temp comment
           </Link>
         </div>
         <div className='ml-12'>

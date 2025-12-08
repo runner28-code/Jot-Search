@@ -74,7 +74,6 @@ const job_filter_exclude_keys = [
     "child",
     "circulation",
     "claims",
-// Temp comment
     "class",
     "classroom",
     "cleaner",
@@ -203,7 +202,6 @@ const job_filter_exclude_keys = [
     "intervention",
     "inventory",
     "investigator",
-    "jailer",
     "janitor",
     "janitorial",
     "job coach",

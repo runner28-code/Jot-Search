@@ -83,7 +83,6 @@ export default function HeaderMobile({ companyData }) {
       <section className='flex w-full mb-10 px-4'>
         <HeaderContent companyData={companyData} />
       </section>
-// Temp comment
     </>
   )
 }
@@ -144,7 +143,6 @@ function renderDesktopLogo(logoUrl, name) {
 function FillerIcon () {
   const { width } = useWindowDimensions();
 
-  if( width >= 1280 ) {
     return (
       <div>
         <BsBuilding className='w-16 h-16 fill-royalBlue basis-1/3 mr-8'/>

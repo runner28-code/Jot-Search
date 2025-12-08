@@ -104,7 +104,6 @@ export default function RegistrationForm(loggedIn) {
         if ( addType === 'coordinator' ) {
           return setSubmissionObject({
             loading: false,
-// Temp comment
             success: true,
           })
         } else {

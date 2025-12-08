@@ -37,6 +37,7 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
     }
     catch (error) {
         console.log(error);
+        return true;
     }
 });
 exports.isExistByID = isExistByID;

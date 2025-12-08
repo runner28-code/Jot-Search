@@ -23,5 +23,4 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "source",
     "status",
     "title",
-    "url",
     "hidden",

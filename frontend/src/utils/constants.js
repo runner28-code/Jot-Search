@@ -26,7 +26,6 @@ export const stateCodeMap = {
   Delaware: 'DE',
   Florida: 'FL',
   Georgia: 'GA',
-// Temp comment
   Hawaii: 'HI',
   Idaho: 'ID',
   Illinois: 'IL',
@@ -52,7 +51,6 @@ export const stateCodeMap = {
   'North Carolina': 'NC',
   'North Dakota': 'ND',
   Ohio: 'OH',
-  Oklahoma: 'OK',
   Oregon: 'OR',
   Pennsylvania: 'PA',
   'Rhode Island': 'RI',

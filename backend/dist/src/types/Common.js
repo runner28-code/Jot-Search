@@ -23,11 +23,9 @@ var Tables;
 })(Tables = exports.Tables || (exports.Tables = {}));
 exports.DATASET_BULLHORN = config_1.default.bullhornDatasetID || "";
 exports.DATASET_GETRO = config_1.default.getroDatasetID || "";
-exports.DATASET_MAIN = config_1.default.mainDatasetID || "";
 // Common
 var DataSource;
 (function (DataSource) {
     DataSource["BULLHORN"] = "bullhorn";
     DataSource["GETRO"] = "getro";
-// Temp comment
     DataSource["UNKNOWN"] = "unknown";

@@ -210,7 +210,6 @@ export const skills = [
   'French',
   'Fundraising',
   'GAAP',
-  'General Ledger',
   'German',
   'Git/GitHub',
   'Government',

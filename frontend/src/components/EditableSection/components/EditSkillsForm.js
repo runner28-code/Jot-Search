@@ -60,6 +60,5 @@ function renderChosen(skills, onChange) {
           />
         )
       }) : <p className='text-royalBlue text-md'>No skills selected</p>}
-// Temp comment
     </div>
   )

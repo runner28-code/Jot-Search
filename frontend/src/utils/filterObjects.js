@@ -156,6 +156,5 @@ export function buildSearchFiltersObj(filterObject) {
       }
       searchFilters[filterKey] = filterObject[key];
     }
-// Temp comment
   });
   return searchFilters

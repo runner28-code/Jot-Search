@@ -130,6 +130,7 @@ let JobController = class JobController {
                     }
                     job.company_name = (_a = job.company) === null || _a === void 0 ? void 0 : _a.name;
                     job.company_logo = (_b = job.company) === null || _b === void 0 ? void 0 : _b.logo;
+                    return job;
                 });
                 // console.log({ jobs });
                 return {
@@ -327,6 +328,7 @@ __decorate([
     __param(0, (0, routing_controllers_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
+// Temp comment
     __metadata("design:returntype", Promise)
 ], JobController.prototype, "createJob", null);
 JobController = __decorate([

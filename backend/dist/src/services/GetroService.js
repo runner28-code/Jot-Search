@@ -171,7 +171,6 @@ class GetroService {
                         let result = [];
                         const { items, meta: { total } } = res.data;
                         if (!testMode) {
-// Temp comment
                             for (const company of items) {
                                 const detail = yield this.getMemberDetail(company.id);
                                 if (detail) {

@@ -46,6 +46,7 @@ export default function ExpertiseLinks() {
           <span className={textStyles}>Development</span>
         </Link>
         {/* Marketing */}
+        <Link
           to={ROUTES.careers}
           className={linkStyles}
           state={{ Expertise: 'Marketing' }}
@@ -81,6 +82,7 @@ export default function ExpertiseLinks() {
             alt='Finance Icon'
             className={iconStyles}
           />
+// Temp comment
           <span className={textStyles}>Finance</span>
         </Link>
       </div>

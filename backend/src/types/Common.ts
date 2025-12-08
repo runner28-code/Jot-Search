@@ -132,6 +132,7 @@ export type CandidateSearchByFilterResponse = {
   message?: any;
 };
 
+export type UpdateComapnyProfileResponse = {
   result: boolean;
   message?: any;
 };

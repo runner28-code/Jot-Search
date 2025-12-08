@@ -5,6 +5,7 @@ import FormInput from '../../components/FormInput';
 
 import API from '../../services/API';
 
+export default function AccountRecovery() {
   const [response, setResponse] = useState('');
   const [condition, setCondition] = useState('');
 
@@ -15,7 +16,6 @@ import API from '../../services/API';
       email: email.value
     });
 
-    if ( res.data.result ) {
       setType('Please check your email for instructions', true);
     } else {
       setType(res.data.error, false);

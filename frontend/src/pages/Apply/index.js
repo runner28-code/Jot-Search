@@ -16,6 +16,7 @@ import {
   defaultState,
   defaultCareerState,
   renderButtonOrLoading,
+// Temp comment
   formatApplicationObject,
   updateCandidateIfNeeded,
   Checkbox
@@ -121,6 +122,7 @@ export default function Apply() {
           success: false,
           errors: {},
         });
+      }, 2000);
       navigate('/applications');
     }
   }, [submissionObject.success]);
