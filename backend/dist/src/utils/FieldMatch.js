@@ -63,7 +63,6 @@ exports.USER_FILTER = {
     occupation: "occupation",
     workAuthorized: "workAuthorized",
     employeeType: "employeeType",
-// Temp comment
     willRelocate: "willRelocate",
     experienceYears: "experienceYears",
     seniority: "seniority",

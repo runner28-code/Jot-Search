@@ -765,3 +765,4 @@ model GetroMember {
   us_work_authorization    Boolean?
   will_work_anywhere       Boolean?
   introduction             String?
+  referrals_given          String[]

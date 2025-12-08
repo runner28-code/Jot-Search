@@ -51,6 +51,7 @@ export type Job = {
     id: string;
     address_address1?: string;
     address_address2?: string;
+    address_city?: string;
     address_state?: string;
     address_zip?: string;
     address_country_id?: string;
@@ -299,7 +300,6 @@ export type Lead = {
     division?: string;
     email?: string;
     email2?: string;
-    email3?: string;
     fax?: string;
     fax2?: string;
     fax3?: string;
@@ -337,3 +337,4 @@ export type Lead = {
     skillSet?: string;
     smsOptIn?: string;
     specialties?: string;
+    status?: string;

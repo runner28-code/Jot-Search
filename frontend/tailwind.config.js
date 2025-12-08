@@ -20,7 +20,6 @@ module.exports = {
             transform: 'rotate(180deg)'
           },
         },
-        'spin-reverse': {
           from: {
             transform: 'rotate(180deg)'
           },
@@ -37,6 +36,7 @@ module.exports = {
         royalBlue: '#176AB9',
         aquaBlue: '#0E97CA',
         cyan: '#1ECADB',
+        'legal-bg': '#23242D',
         // Neutrals
         powderBlue: '#E4F2FF',
         lightGrey: '#F6F5F6',
@@ -268,3 +268,4 @@ module.exports = {
         }
       }
       )
+    })

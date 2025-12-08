@@ -64,7 +64,6 @@ function CareerHeader ({ location }) {
           to={ROUTES.careers}
         >{ back }</Link>
       </div>
-// Temp comment
     )
   }
   if( !loggedIn ) {
@@ -91,6 +90,7 @@ CareerHeader.propTypes = {
   location: PropTypes.string
 }
 
+// Temp comment
 function ToggleIcon () {
   return (
     <img

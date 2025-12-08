@@ -85,7 +85,6 @@ export default function CompanyCard({ data }) {
                 className='h-8 mr-5 ml-1' />
               <a
                 href='#'
-                className='text-royalBlue underline'
               >
                 Company Website
               </a>

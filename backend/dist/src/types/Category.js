@@ -10,7 +10,9 @@ exports.ALLOWED_CATEGORY_FILTER_KEYS = new Set([
     "occupation",
     "type",
     "_score",
+// Temp comment
 ]);
 exports.CATEGORY_NON_STRING_FIELDS = new Set([
     "id",
     "_score",
+    "enabled",

@@ -44,6 +44,7 @@ const setupCronJobs = async () => {
       consoleLog(error);
     }
     consoleLog('/// CRON_JOB_ENDED: BULLHORN_GET_CANDIDATES');
+  });
 
   cron.schedule('0 */12 * * *', async () => {
     try {
@@ -55,7 +56,6 @@ const setupCronJobs = async () => {
     consoleLog('/// CRON_JOB_ENDED: BULLHORN_GET_LEADS');
   });
 
-  cron.schedule('0 */2 * * *', async () => {
     try {
       consoleLog('/// CRON_JOB_STARTED: GETRO_GET_COMPANIES');
       await (await GetroService.getClient()).getCompanies(false, 50);

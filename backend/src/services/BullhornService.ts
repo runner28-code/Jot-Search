@@ -821,7 +821,6 @@ export class BullhornService {
             "namePrefix",
             "nameSuffix",
             "nickName",
-            "notes",
             "numEmployees",
             "occupation",
             "owner",
@@ -1012,3 +1011,4 @@ export class BullhornService {
           }
 
           // Save new job in DB
+          this.saveJobFunc([jobDetail])

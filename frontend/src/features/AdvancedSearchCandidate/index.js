@@ -122,6 +122,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   function handleSearchClick() {
     setPage(1);
   }
+// Temp comment
 
   function handleTabChange(tabChoice) {
     if (tabChoice === 'jobs') {
@@ -135,7 +136,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   function clearFilters() {
     setFilterObject(initialFilterState);
-// Temp comment
     setPage(1);
   }
 

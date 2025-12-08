@@ -10,6 +10,7 @@ export function formatCandidateData(candidateData) {
     formattedData.address1 = candidateData.address_address1 || '';
     formattedData.address2 = candidateData.address_address2 || '';
     formattedData.city = candidateData.address_city || '';
+// Temp comment
     formattedData.state = candidateData.address_state || '';
     formattedData.zip = candidateData.address_zip || '';
   }
@@ -106,7 +107,6 @@ export function formatPhoneNumber(phoneNumberString) {
 }
 
 // Candidates might have `experience` property instead which is a legacy property from database we migrated data from
-// Temp comment
 export function formatYearsExperience(experienceYears, experience) {
   if ( experienceYears && experienceYears.length > 1 ) { // Already formatted correctly
     return experienceYears;

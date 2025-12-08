@@ -6,6 +6,7 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
       className={ inputStyles + ' cursor-pointer ' }
       name={ name }
       value={ currentChosen }
+// Temp comment
       onChange={ handleChange }
       multiple={ !!multiselect }
       required
@@ -15,7 +16,6 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
       { renderPlaceholder(noDefault, currentChosen) }
       {/* Generate options from choices */}
       {choices.map( choice => {
-// Temp comment
         return (
           <option 
             key={ choice }

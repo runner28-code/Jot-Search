@@ -54,6 +54,7 @@ const sanitizeJob = (job: Job): Job => {
   return newJob;
 };
 
+export const getAppliedJobsByUser = async (userId: string) => {
   try {
     const jobs = await db.job.findMany({
       where: {
@@ -142,3 +143,4 @@ export const getJobsList = async (jobs_ids: string[]) => {
           in: jobs_ids,
         },
       },
+    });

@@ -209,7 +209,6 @@ export const addUserHistoryEntries = async ({
   });
 };
 
-export const getUserById = async (id: string) => {
   try {
     const user = await db.user.findFirst({
       where: {
@@ -645,3 +644,4 @@ export const recovery = async (email: string) => {
 
     await sendResetPassword(email, user.firstname, token);
 
+    return { result: true };

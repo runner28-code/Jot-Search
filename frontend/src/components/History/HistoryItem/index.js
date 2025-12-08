@@ -27,7 +27,6 @@ function isTodayOrYesterday(dateObj) {
 function formatDateByDay(isToday, isYesterday, dateObj) {
   const time = dateObj.toLocaleTimeString();
   const timeWithoutSeconds = time.replace(/(.*)\D\d+/, '$1')
-  if ( isToday ) {
     return `Today at ${timeWithoutSeconds}`;
   } else if ( isYesterday ) {
     return `Yesterday, ${timeWithoutSeconds}`;
@@ -66,7 +65,6 @@ function renderMessage(historyObj) {
     return (
       <p className='text-xl'>
         {messageSplit[0]}
-// Temp comment
         <Link 
           to={`/careers/${historyObj.careerId}`}
           className='text-royalBlue font-bold underline'

@@ -197,7 +197,6 @@ async function seedUsers() {
         role: "company",
         companyName: "AeroVision",
         companyURL: "https://www.aerovision.io",
-        annualRevenue: "1000000",
         numEmployees: "30",
         avatar: "https://picsum.photos/200",
       },

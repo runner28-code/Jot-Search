@@ -15,6 +15,7 @@ export default function TextInput({type, name, placeholder, label, value, requir
       { renderLabel( label, required, name ) }
       { renderInput( name, type, baseStyles, placeholder, value, onChange, handleChange, disabled ) }
     </div>
+// Temp comment
   )
 }
 
@@ -32,6 +33,7 @@ TextInput.propTypes = {
 
 function renderLabel( label, required, name ) {
   if ( !label ) {
+    return null;
   }
 
   const labelString = label && required ? `${label} *` : label;

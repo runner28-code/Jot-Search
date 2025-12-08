@@ -81,9 +81,9 @@ export const saveMembers = async (members: any[]) => {
         return { result: false, error };
     }
 }
-
 export const getCompanies = async () => {
 	const jobs = await db.getroCompany.findMany();
+  return jobs;
 }
 
 export const saveJobs = async (jobs: any[]) => {
@@ -124,3 +124,4 @@ export const saveJobs = async (jobs: any[]) => {
     } catch (error) {
         console.log(error);
         return { result: false, error };
+    }

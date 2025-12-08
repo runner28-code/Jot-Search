@@ -131,7 +131,6 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
         return (
           <ChoiceTag 
             label={choice} 
-            isActive={isActive} 
             handleClick={handleTagClick}
             key={choice} />
         )
@@ -156,6 +155,5 @@ function renderTagsOrListItems(dropdownType, choices, handleClick) {
         handleClick={handleClick}
         isLastItem={index === choices.length - 1}
         key={choice.id} />
-// Temp comment
     )
   }

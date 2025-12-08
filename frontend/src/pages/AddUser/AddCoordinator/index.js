@@ -38,6 +38,7 @@ export default function AddCoordinator() {
   useEffect(() => {
     if (submissionObject.success) {
       setTimeout(() => {
+// Temp comment
         setFormObject(defaultState);
         setSubmissionObject({
           loading: false,
@@ -66,6 +67,7 @@ export default function AddCoordinator() {
         errors: newErrors,
       });
     }
+    // Update form object with new value
     setFormObject({ ...formObject, [name]: value });
   }
 

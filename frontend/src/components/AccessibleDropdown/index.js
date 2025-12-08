@@ -128,7 +128,6 @@ function buttonText(name, placeholder, currentChosen) {
     return buttonString
   }
   
-  return buttonString;
 }
 
 function renderLabel(name, label, required) {

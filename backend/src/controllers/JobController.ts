@@ -13,7 +13,6 @@ import {
   CurrentUser,
   Patch,
 } from "routing-controllers";
-import { Dictionary } from "typed-two-way-map";
 import { BigQueryService } from "../services/BigQueryService";
 import { GetroService } from "../services/GetroService";
 import { createJob, getAppliedJobsByUser, updateJob } from "../services/Job";
@@ -306,6 +305,7 @@ export class JobController {
 
       const _fields = fields?.length
         ? fields.join(", ")
+        : `${alias}.*, ${companyAlias}.bh_url as company_url, ${companyAlias}.name as company_name, ${companyAlias}.logo as company_logo, publishedCategory.id AS publishedCategoryID`;
 
       const _join = `
         LEFT JOIN \`${DATASET_MAIN}.${Tables.JOINED_COMPANIES}\` as ${companyAlias} 

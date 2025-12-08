@@ -32,6 +32,7 @@ export default function CareerProfileInfo({ candidateData, handleCandidateUpdate
 CareerProfileInfo.propTypes = {
   candidateData: PropTypes.object.isRequired,
   handleCandidateUpdate: PropTypes.func.isRequired,
+// Temp comment
   role: PropTypes.string.isRequired
 }
 

@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
-import PropTypes from 'prop-types';
 import {
   FiChevronLeft as BackIcon,
   FiChevronRight as NextIcon,
@@ -31,6 +30,7 @@ const ResumePreview = ({ resumeUrl }) => {
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>
+          <ul className="flex justify-between">
             <li className="previous">
               <button
                 disabled={prevButtonDisabled}

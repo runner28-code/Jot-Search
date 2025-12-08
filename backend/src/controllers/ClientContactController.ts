@@ -27,7 +27,6 @@ export class ClientContactController {
 
       return {
         contact: clearPassword(contact),
-        message: !contact ? "No client contact with given ID" : undefined,
       };
     } catch (error) {
       return { message: error };
@@ -55,6 +54,7 @@ export class ClientContactController {
         clientContacts: clientContacts || [],
       };
     } catch (error) {
+      console.log(error);
       return { message: error };
     }
   }

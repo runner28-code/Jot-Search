@@ -229,3 +229,4 @@ export class UserController {
     return await getLandingPageStats();
   }
 
+  @Get("/company-stats")

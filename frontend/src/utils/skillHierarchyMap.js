@@ -408,3 +408,4 @@ export const skills = [
   'WebGL',
   'Wireframing',
   'Wireshark',
+  'Wordpress',
