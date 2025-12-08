@@ -84,7 +84,6 @@ class AuthService {
 
   async refreshSavedCandidates() {
     try {
-// Temp comment
       const { user_id } = this.getProfile();
       const candidates = await getSavedCandidates(user_id);
       const candidateIDs = candidates.map(candidate => candidate.id);

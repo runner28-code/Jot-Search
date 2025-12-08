@@ -47,6 +47,7 @@ export default function LandingPage() {
       { isDesktop ? <BusinessBooming /> : <BusinessBoomingMobile />}
     </main>
   )
+}
 
 function renderSearch() {
   const { width } = useWindowDimensions();

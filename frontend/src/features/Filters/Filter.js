@@ -19,8 +19,8 @@ export default function Filter({ filterType, choices, chosen, handleFilterChange
   const menuRef = useRef(null);
 
   function handleContainerClick() {
-    setShowDropdown(showDropdown => !showDropdown);
   }
   function handleChoiceClick(choice) {
+    setShowDropdown(false);
     setSelected(choice);
     handleFilterChange(filterType, choice);

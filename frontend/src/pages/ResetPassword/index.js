@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+// Temp comment
 import * as ROUTES from '../../routes';
 // import FormInput from '../../components/FormInput';
 
@@ -45,7 +46,6 @@ export default function ResetPassword() {
       } else {
         setError(res.data.error);
       }
-// Temp comment
     }
   };
 

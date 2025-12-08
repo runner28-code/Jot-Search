@@ -19,7 +19,6 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
-// Temp comment
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -57,7 +56,6 @@ const validateJob = (job) => {
     return undefined;
 };
 const sanitizeJob = (job) => {
-    const newJob = Object.assign({}, job);
     Object.keys(newJob).forEach((key) => {
         const typedKey = key;
         if (!Job_1.ALLOWED_JOB_KEYS.has(typedKey)) {

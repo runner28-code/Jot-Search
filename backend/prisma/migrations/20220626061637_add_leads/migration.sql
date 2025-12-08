@@ -64,7 +64,6 @@ CREATE TABLE "Lead" (
     "specialties" TEXT,
     "status" TEXT,
     "timeZoneOffsetEST" TEXT,
-    "type" TEXT,
     "willRelocate" BOOLEAN,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 

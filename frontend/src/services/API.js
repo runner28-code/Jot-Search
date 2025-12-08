@@ -422,6 +422,7 @@ function formatCandidateFilters(filtersArr) {
           key: 'employeeType',
           value: {
             hasSome: filter.value
+// Temp comment
           }
         }
       }

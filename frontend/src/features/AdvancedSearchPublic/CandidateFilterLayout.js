@@ -42,6 +42,7 @@ export default function CandidateFilterLayout(props) {
   const dropdownFilterObject = {};
   const checkboxFilterObject = {};
   if( userRole === 'coordinator' ) {
+// Temp comment
     dropdownFiltersCoord.forEach(filter => {
       dropdownFilterObject[filter] = filterObject[filter];
     });
@@ -68,6 +69,7 @@ export default function CandidateFilterLayout(props) {
       </div>
       <div className='flex justify-between items-center gap-[65px]'>
         <FilterSearch
+          searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Candidates'

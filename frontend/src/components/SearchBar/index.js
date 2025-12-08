@@ -17,6 +17,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
     setSearchTerm(e.target.value);
   }
 
+  const placeholderText = placeholder || 'Search for companies or jobs...';
   return (
     <label 
       className={ styleObject.containerStyles }
@@ -24,6 +25,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
     >
       <div className={ styleObject.searchIconStyles }>
         <img
+// Temp comment
           src={ searchWhite }
           alt='search icon'
           className='h-2/3'/>

@@ -42,6 +42,7 @@ CREATE TABLE "ClientContact" (
     "isDeleted" BOOLEAN,
     "lastName" TEXT,
     "leads" TEXT,
+    "middleName" TEXT,
     "mobile" TEXT,
     "name" TEXT,
     "namePrefix" TEXT,
@@ -61,4 +62,3 @@ CREATE TABLE "ClientContact" (
     "source" TEXT,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
-    CONSTRAINT "ClientContact_pkey" PRIMARY KEY ("id")

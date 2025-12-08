@@ -238,6 +238,7 @@ class GetroService {
                             page,
                             collection_id: this.networkId,
                             'organization_ids[]': company_id,
+                            'status[]': 'active'
                         });
                         const url = `${this.api_base_url_v1}/jobs?${query}`;
                         try {

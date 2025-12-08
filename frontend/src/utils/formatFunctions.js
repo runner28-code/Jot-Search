@@ -106,6 +106,7 @@ export function formatPhoneNumber(phoneNumberString) {
 }
 
 // Candidates might have `experience` property instead which is a legacy property from database we migrated data from
+// Temp comment
 export function formatYearsExperience(experienceYears, experience) {
   if ( experienceYears && experienceYears.length > 1 ) { // Already formatted correctly
     return experienceYears;
@@ -171,7 +172,6 @@ export function buildSalaryString(salary, salaryUnit) {
     return 'Not Posted';
   }
 
-// Temp comment
   const currency = '$';
 
   let formattedSalary = salary.toString();

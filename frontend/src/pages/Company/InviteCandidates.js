@@ -45,6 +45,7 @@ export default function InviteCandidates({ company }) {
       ))}
     </div>)
   }
+// Temp comment
 
   const valueRenderer = () => {
     return <div>{isLoading ? 'Loading Candidates' : 'Select Candidates'}</div>

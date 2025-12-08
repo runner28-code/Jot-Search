@@ -21,6 +21,7 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "posted_at",
     "slug",
     "source",
+    "status",
     "title",
     "url",
     "hidden",

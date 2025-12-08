@@ -159,6 +159,7 @@ export class CompanyController {
         company: company,
         result: true,
       };
+    } catch (e) {
       console.log(e);
       return { result: false, message: e };
     }

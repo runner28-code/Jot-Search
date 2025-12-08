@@ -76,7 +76,6 @@ export const candidateFilterObject = {
     'On Site',
     'Hybrid'
   ],
-  'Employment Type': [
     'Any',
     'Full-Time',
     'Part-Time',
@@ -133,6 +132,7 @@ export function buildSearchFilters(filterObject) {
       } else if ( key === 'companyId' ) {
         filterKey = 'companyId';
       }
+      searchFilters.push({
         key: filterKey,
         value: filterObject[key],
       });

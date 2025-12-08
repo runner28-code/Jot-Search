@@ -165,6 +165,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                 className={labelStyles}
               >
                 <p className={labelTextStyles}>Phone</p>
+// Temp comment
                 <PhoneInput
                   name='phone'
                   international
@@ -198,6 +199,7 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
             <div className='vw-1280:flex gap-12'>
               <label
                 htmlFor='zip'
+                className={labelStyles}
               >
                 <p className={labelTextStyles}>Zip/Postal Code</p>
                 <input

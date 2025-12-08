@@ -7,6 +7,7 @@ import {
 } from 'react-icons/fi';
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
+const ResumePreview = ({ resumeUrl }) => {
   const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
 
@@ -30,7 +31,6 @@ import LoadingSpinner from '../../../components/LoadingSpinner';
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (
         <nav>
-          <ul className="flex justify-between">
             <li className="previous">
               <button
                 disabled={prevButtonDisabled}

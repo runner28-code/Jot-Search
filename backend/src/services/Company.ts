@@ -72,3 +72,4 @@ export const getSavedCompanies = async (candidateId: string) => {
     };
   } catch (e) {
     console.log(e);
+    return { result: false, message: e };

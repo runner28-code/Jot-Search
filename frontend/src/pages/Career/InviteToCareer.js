@@ -127,5 +127,4 @@ function getTagLine({ candidate }) {
     tagLine = candidate.occupation
   }else if (candidate?.companyName) {
     tagLine = `@ ${candidate.companyName}`
-  }
   return tagLine;

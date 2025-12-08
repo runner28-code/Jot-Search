@@ -55,7 +55,6 @@ export class ClientContactController {
         clientContacts: clientContacts || [],
       };
     } catch (error) {
-      console.log(error);
       return { message: error };
     }
   }

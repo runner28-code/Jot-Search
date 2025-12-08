@@ -1,4 +1,3 @@
-// Temp comment
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -22,7 +21,6 @@ export default function GlobalSearch({ placeholder }) {
     loading: false,
     forceHidden: true
   });
-  // State and ref to listen for outside clicks
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 

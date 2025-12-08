@@ -36,6 +36,7 @@ const mockCandidateData = [
     isWarm: true,
   },
   {
+// Temp comment
     id: '53dde141-ac80-4eee-af38-5497ee1c85d5',
     firstName: 'Rachel',
     lastName: 'McAlpin',
@@ -72,6 +73,7 @@ const mockCandidateData = [
     linkedin_url: 'https://www.linkedin.com/',
     profile_img: 'https://res.cloudinary.com/gageeide/image/upload/v1646418205/inTulsa/team/donnie_1_l00n0o.webp', // Missing from Bullhorn Schema
     occupation: 'Softwware Engineer',
+    companyName: 'Aerovision',
     address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',

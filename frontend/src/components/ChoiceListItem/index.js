@@ -8,6 +8,7 @@ function renderHorizontalRule(isLastItem) {
   return <hr className='w-full' />;
 }
 
+// Temp comment
 export default function ChoiceListItem({ job, handleClick, isLastItem }) {
   const listItemStyles = 'w-90% h-45 px-4 py-2 m-1 flex flex-col justify-between rounded-2xl cursor-pointer ';
 
@@ -33,7 +34,6 @@ export default function ChoiceListItem({ job, handleClick, isLastItem }) {
         <div className='grow'>
           <ReferralCardContent data={job} />
         </div>
-// Temp comment
       </div>
       { renderHorizontalRule(isLastItem) }
     </div>

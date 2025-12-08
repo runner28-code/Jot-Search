@@ -81,7 +81,6 @@ export const saveCompanies = async (companies: any[]) => {
         console.log(`ERROR: while saving company with ID = ${company.id}`);
       }
     }
-
     return { result: true };
   } catch (error: any) {
     console.log(error.message);

@@ -25,7 +25,6 @@ export const genderMap = {
   O: 'Other'
 };
 
-// Temp comment
 export const ethnicityMap = {
   U: 'Prefer not to say',
   BL: 'Black or African American',
@@ -59,7 +58,6 @@ export const educationChoices = [
 ];
 
 export const referralChoices = [
-  'Web Search',
   'Social Media',
   'Career Fair',
   'Event',

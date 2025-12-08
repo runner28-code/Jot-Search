@@ -228,3 +228,4 @@ export class UserController {
   async landingPageStats() {
     return await getLandingPageStats();
   }
+

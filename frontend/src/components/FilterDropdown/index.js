@@ -24,4 +24,3 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
         )
       })}
     </div>
-  )

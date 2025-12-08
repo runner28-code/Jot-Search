@@ -117,7 +117,6 @@ export default function Apply() {
     if (submissionObject.success) {
       setTimeout(() => {
         setSubmissionObject({
-// Temp comment
           loading: false,
           success: false,
           errors: {},

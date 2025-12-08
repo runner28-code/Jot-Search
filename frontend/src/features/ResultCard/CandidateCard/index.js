@@ -202,6 +202,7 @@ function SkillTag({ skill }) {
   )
 }
 
+SkillTag.propTypes = {
   skill: PropTypes.string.isRequired,
 }
 

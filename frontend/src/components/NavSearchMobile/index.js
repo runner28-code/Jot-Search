@@ -8,6 +8,7 @@ import JobResults from './JobResults';
 import { VscClose as CloseIcon } from 'react-icons/vsc';
 import searchGray from '../../assets/images/search-gray.svg';
 import searchWhite from '../../assets/images/search-white.webp';
+// Temp comment
 
 import listenForOutsideClicks from '../../hooks/outsideClickWrapper';
 import { useGetJobs } from '../../hooks/queries/useGetJobs';
@@ -35,6 +36,7 @@ export default function NavSearchMobile({ placeholder }) {
       const splitName = searchTerm.split(' ')
       const modifiedFilterObject = {
         ...defaultCandidateFilterState,
+        firstname: splitName[0],
         lastname: splitName?.[1]
       }
       delete modifiedFilterObject.title;

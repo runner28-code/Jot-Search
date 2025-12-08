@@ -14,7 +14,6 @@ export default function Applications() {
     jobs: [],
     filteredJobs: [],
     loading: true
-  });
   const [selectedApplications, setSelectedApplications] = useState([]);
 
   useEffect( async () => {
@@ -28,7 +27,6 @@ export default function Applications() {
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
-// Temp comment
       loading: false
     });
   }, []);

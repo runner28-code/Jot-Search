@@ -14,6 +14,7 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
     address2: candidateData.address2,
     city: candidateData.city,
     state: candidateData.state,
+    zip: candidateData.zip,
   });
 
   const handleInputChange = async (event) => {
@@ -22,7 +23,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
       const imageToUpload = event.target.files[0];
       console.log(imageToUpload);
     }
-    setFormData({ ...formData, [name]: value });
   }
 
   const handleCancel = () => {

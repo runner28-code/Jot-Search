@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
 import Checkbox from '../Checkbox';
@@ -40,6 +41,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
       {
         selectableProps && selectableProps.selectable ?
           <Checkbox
+// Temp comment
             id={data.id}
             checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
