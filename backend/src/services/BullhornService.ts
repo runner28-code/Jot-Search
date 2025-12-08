@@ -122,7 +122,6 @@ export class BullhornService {
         grant_type: "authorization_code",
         client_id: config.bullhornClientID,
         client_secret: config.bullhornClientSecret,
-        code: this.auth_code,
       },
       { encode: false }
     );
@@ -821,6 +820,7 @@ export class BullhornService {
             "namePrefix",
             "nameSuffix",
             "nickName",
+            "notes",
             "numEmployees",
             "occupation",
             "owner",

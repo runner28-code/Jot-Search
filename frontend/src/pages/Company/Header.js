@@ -203,7 +203,6 @@ function renderLinkedIn( url, headerRowTextStyles ) {
   const textStyles = headerRowTextStyles += 'underline text-sky-700';
   if( !url ) {
     return (
-// Temp comment
       <a
         className={textStyles}
         href='https://www.linkedin.com/'

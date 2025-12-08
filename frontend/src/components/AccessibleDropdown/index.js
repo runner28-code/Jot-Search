@@ -128,6 +128,7 @@ function buttonText(name, placeholder, currentChosen) {
     return buttonString
   }
   
+  return buttonString;
 }
 
 function renderLabel(name, label, required) {
@@ -140,6 +141,7 @@ function renderLabel(name, label, required) {
   }
   return (
     <label
+// Temp comment
       htmlFor={ name }
       className='block text-textBlack mb-2.5'
     >

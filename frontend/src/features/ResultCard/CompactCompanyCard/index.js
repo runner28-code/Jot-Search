@@ -38,7 +38,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
           </div>
         </div>
       </Link>
-      {
         selectableProps && selectableProps.selectable ?
           <Checkbox
             id={data.id}

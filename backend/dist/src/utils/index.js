@@ -24,6 +24,7 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
             SELECT * FROM \`${datset}.${table}\`
             WHERE id=${id}
         `;
+        const options = {
             query: query,
             location: 'US',
         };
@@ -36,7 +37,6 @@ const isExistByID = (id, datset, table) => __awaiter(void 0, void 0, void 0, fun
     }
     catch (error) {
         console.log(error);
-        return true;
     }
 });
 exports.isExistByID = isExistByID;

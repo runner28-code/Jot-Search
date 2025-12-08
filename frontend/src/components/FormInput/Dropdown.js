@@ -66,7 +66,6 @@ export default function Dropdown(props) {
   } = props;
     
   const [isOpen, setIsOpen] = useState(false);
-  const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
 
   const handleClick = (choice) => {

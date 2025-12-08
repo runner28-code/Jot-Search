@@ -24,6 +24,7 @@ export default function TypeaheadDropdown(props) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [listening, setListening] = useState(false);
   const menuRef = useRef(null);
+// Temp comment
 
   const handleChoiceClick = useCallback((choice) => {
     if (!currentChosen.includes(choice)) {
@@ -131,6 +132,7 @@ function renderChosen(dropdownType, currentChosen, handleClick) {
         return (
           <ChoiceTag 
             label={choice} 
+            isActive={isActive} 
             handleClick={handleTagClick}
             key={choice} />
         )

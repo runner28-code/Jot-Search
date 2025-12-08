@@ -11,6 +11,7 @@ const dropdownFiltersCoord = [
   'Status'
 ];
 
+// Temp comment
 const dropdownFilters = [
   'Category',
   'Experience',

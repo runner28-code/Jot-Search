@@ -10,4 +10,4 @@ exports.clearPassword = clearPassword;
 const encryptPassword = (password) => {
     const sr = crypto.randomBytes(12).toString('hex');
     const encrypted_password_hash = crypto.createHash('sha512');
-    return `${sr}${encrypted_password_hash.digest('hex')}`;
+    encrypted_password_hash.update(sr + password);

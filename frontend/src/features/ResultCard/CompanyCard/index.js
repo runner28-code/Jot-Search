@@ -15,7 +15,6 @@ import { useGetJobs } from '../../../hooks/queries/useGetJobs';
 export default function CompanyCard({ data }) {
   // Format state if not state code. 'Oklahoma' -> 'OK'
   const addressString = buildCompanyAddress(data);
-  const employeeString = data.numEmployees ? `${data.numEmployees} Employees` : 'N/A';
 
   const { width } = useWindowDimensions();
   const isMobile = width < 768;
@@ -85,6 +84,7 @@ export default function CompanyCard({ data }) {
                 className='h-8 mr-5 ml-1' />
               <a
                 href='#'
+                className='text-royalBlue underline'
               >
                 Company Website
               </a>

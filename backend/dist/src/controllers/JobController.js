@@ -39,6 +39,7 @@ const MainCrud_1 = require("../utils/MainCrud");
 const BullhornService_1 = require("../services/BullhornService");
 let JobController = class JobController {
     searchJobByID(id) {
+        var _a;
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const job = yield db_1.default.job.findFirst({
@@ -129,7 +130,6 @@ let JobController = class JobController {
                     }
                     job.company_name = (_a = job.company) === null || _a === void 0 ? void 0 : _a.name;
                     job.company_logo = (_b = job.company) === null || _b === void 0 ? void 0 : _b.logo;
-                    return job;
                 });
                 // console.log({ jobs });
                 return {

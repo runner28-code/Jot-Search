@@ -27,6 +27,7 @@ PreferenceItem.propTypes = {
   toggled: PropTypes.bool.isRequired,
   fieldName: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
+  onUpdate: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
 }
 

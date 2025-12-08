@@ -122,7 +122,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                   className={inputStyles}
                   required
                   disabled={disabled}
-                />
               </label>
               <label
                 htmlFor='lastname'

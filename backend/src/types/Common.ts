@@ -85,6 +85,7 @@ export type AllJobsResponse = {
   main: JobSearchByFilterResponse;
 };
 
+export type ApplyResponse = {
   result: boolean;
   message?: any;
 };
@@ -131,7 +132,6 @@ export type CandidateSearchByFilterResponse = {
   message?: any;
 };
 
-export type UpdateComapnyProfileResponse = {
   result: boolean;
   message?: any;
 };

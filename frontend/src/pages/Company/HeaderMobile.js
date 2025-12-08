@@ -83,6 +83,7 @@ export default function HeaderMobile({ companyData }) {
       <section className='flex w-full mb-10 px-4'>
         <HeaderContent companyData={companyData} />
       </section>
+// Temp comment
     </>
   )
 }

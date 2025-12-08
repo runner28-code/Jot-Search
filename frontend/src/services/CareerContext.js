@@ -26,7 +26,6 @@ const mockJobsData = [
     location_state: 'OK',
     onSite: false,
     listingAge: '1 month',
-    specialty: 'Technology'
   },
   {
     id: '2cb874e2-0510-405e-9491-183d2e0e26d7',
@@ -63,7 +62,6 @@ const mockJobsData = [
     salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
     location_state: 'OK',
-// Temp comment
     onSite: false,
     listingAge: '1 month',
     specialty: 'Sales & Biz Dev'

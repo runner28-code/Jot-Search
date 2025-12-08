@@ -1,6 +1,6 @@
 import { Navigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import CompanyDashboard from './CompanyDashboard';
+import CandidateDashboard from './CandidateDashboard';
 import CoordinatorDashboard from './CoordinatorDashboard';
 import AuthService from '../../services/auth';
 

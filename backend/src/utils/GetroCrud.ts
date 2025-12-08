@@ -17,7 +17,6 @@ export const saveCompanies = async (companies: any[]) => {
 							}
 			
 							const companyData = { ...company };
-			
 							Object.keys(companyData).forEach((key) => {
 								if (expludeFields.includes(key)) {
 									delete companyData[key];
@@ -81,6 +80,7 @@ export const saveMembers = async (members: any[]) => {
         return { result: false, error };
     }
 }
+
 export const getCompanies = async () => {
 	const jobs = await db.getroCompany.findMany();
   return jobs;

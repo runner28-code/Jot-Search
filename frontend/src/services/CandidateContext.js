@@ -20,7 +20,6 @@ const mockCandidateData = [
     isLooking: true,
     isWarm: true,
   },
-  {
     id: 'b5a00114-1d3d-40f3-afb9-fc542fa22af6',
     firstName: 'Lee',
     lastName: 'Easton',

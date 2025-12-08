@@ -209,6 +209,7 @@ export const addUserHistoryEntries = async ({
   });
 };
 
+export const getUserById = async (id: string) => {
   try {
     const user = await db.user.findFirst({
       where: {

@@ -18,7 +18,6 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "status",
     "skillList",
     "locations",
-    "companyId",
     "interviews",
     "onSite",
     "salary",
@@ -28,7 +27,6 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "isDeleted",
     "postedAt",
     "hidden",
-// Temp comment
     "company_name",
     "datasource",
 ]);

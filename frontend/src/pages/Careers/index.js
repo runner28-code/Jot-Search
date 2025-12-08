@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import PageHeader from '../../components/PageHeader';
 import PageHeaderCandidate from '../../components/PageHeaderCandidate';
 import AdvancedSearch from '../../features/AdvancedSearch';
-import AdvancedSearchPublic from '../../features/AdvancedSearchPublic';
 import AdvancedSearchCandidate from '../../features/AdvancedSearchCandidate';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdSearch as SearchIcon } from 'react-icons/md';
@@ -18,6 +17,7 @@ export default function Careers() {
   const loggedIn = AuthService.loggedIn();
   const [toggle, setToggle] = useState(false);
   const sectionStylesLog = 'vw-990:ml-10 vw-990:mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
+  const sectionStyles = '';
   const { width } = useWindowDimensions();
 
   function togglePassState() {

@@ -200,6 +200,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       />
       <ResultContainer
         key={activeResults}
+        results={activeResults}
         type={activeTab}
         loading={isLoading} />
       <PaginatedControls />
