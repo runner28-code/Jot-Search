@@ -59,7 +59,6 @@ export default function CareerFilterLayout(props) {
           className={userType === 'candidate' && location.pathname === '/careers' ? buttonStylesCareer : buttonStyles }
           onClick={clearFilters}
         >
-          Clear All
         </button>
       </div>
     </div>

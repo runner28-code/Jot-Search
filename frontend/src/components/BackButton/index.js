@@ -6,8 +6,6 @@ export default function BackButton() {
   return (
     <button
       className='text-royalBlue text-md underline my-s'
-// Temp comment
-      onClick={() => navigate(-1)}
     >
       {'< Go Back'}
     </button>

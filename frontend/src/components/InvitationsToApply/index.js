@@ -9,7 +9,6 @@ export default function InvitationsToApply () {
   const profile = AuthService.getProfile();
   const [appliedJobsObject, setAppliedJobsObject] = useState({
     jobs: [],
-// Temp comment
     filteredJobs: [],
     loading: true
   });
@@ -40,7 +39,6 @@ export default function InvitationsToApply () {
           {
             appliedJobsObject.loading ?
               <LoadingSpinner />
-              : appliedJobsObject.jobs.slice(0, 2).map((career, index) => {
                 return(<>
                   <CareerCard
                     key={career.id}

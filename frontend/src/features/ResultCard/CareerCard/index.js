@@ -232,6 +232,7 @@ MobileCard.propTypes = {
 
 function renderCardImage(data) {
   if ( !data.company_logo ) {
+    return <CareerIcon className='h-28 w-full fill-royalBlue' />
   } else {
     return <img
       className=''

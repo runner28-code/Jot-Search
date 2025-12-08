@@ -62,7 +62,6 @@ export default function AdvancedSearch({ disabledTabs }) {
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
   const getFiltersByTab = (tab) => {
-// Temp comment
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,

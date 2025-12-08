@@ -49,6 +49,7 @@ export default function NavSearch({ placeholder }) {
       return { filterKey: 'name', filterValue: searchTerm }
     }
   };
+// Temp comment
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -126,6 +127,7 @@ function renderResultsContainer( results, searchTerm ) {
       { renderResults( results ) }
     </div>
   )
+}
 
 function renderResults( results ) {
   if ( results.loading ) {

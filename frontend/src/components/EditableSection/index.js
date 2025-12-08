@@ -14,7 +14,6 @@ export default function EditableSection({ entityID, header, contentObjectProp, h
     setEditMode(false);
     handleContentUpdate(contentObject);
   }
-
   function handleCancel() {
     setContentObject(contentObjectProp);
     setEditMode(false);
@@ -44,7 +43,6 @@ EditableSection.propTypes = {
 }
 
 /* Render functions */
-// Temp comment
 
 function renderTextOrInputs(editMode, contentObject, handlePropertyChange) {
   if (editMode) {

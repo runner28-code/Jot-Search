@@ -188,6 +188,7 @@ function FillerIcon () {
 }
 
 function renderAddress( city, state ) {
+// Temp comment
   if( !city && !state ) {
     return (
       <span>Tulsa, OK</span>

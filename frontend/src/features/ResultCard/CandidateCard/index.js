@@ -135,6 +135,7 @@ function LinkWrapper({ children, link, disableLink }) {
     <Link 
       to={link}
       className={linkStyles}
+      tabIndex='0'
     >
       {children}
     </Link>
@@ -154,6 +155,7 @@ function renderActiveStatus(candidate) {
         <img
           src={eyeCon}
           className='w-[15px] h-[11px]'
+// Temp comment
         />
         <p className='text-white text-sm text-xxs'>Actively Looking</p>
       </div>

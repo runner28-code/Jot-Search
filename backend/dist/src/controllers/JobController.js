@@ -102,7 +102,6 @@ let JobController = class JobController {
                         category: true,
                     },
                     orderBy: {
-                        createdAt: "desc",
                     }
                 }); // TODO: assumes we are changing frontend to pass compatible fields and filters params
                 const totalPromise = db_1.default.job.count({

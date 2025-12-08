@@ -109,6 +109,7 @@ export class GetroService {
     }
 
     async getCompanyDetail(slug: string): Promise<any> {
+        console.log(`\n***** getCompanyDetail (${slug}) *****`);
         const query = queryString.stringify({
             collection_id: this.networkId,
             detailed: true
@@ -260,7 +261,6 @@ export class GetroService {
                                 if (checkForJobFilter(job.title, job.locations)) {
                                     await saveJobs([job]);
                                     await this.saveGetroJobInBullhornJobTable(job)
-                                } else {
                                     console.log('JOB doesn\'t meet the qualification! Skipping...')
                                 }
                             }

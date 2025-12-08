@@ -51,7 +51,6 @@ export default function RegistrationForm() {
       // Validation
       const newErrors = inputValidation(formObj);
       // Return and Re-render with errors if any are found
-// Temp comment
       if ( newErrors.length > 0 ) {
         setErrors(newErrors);
         setSubmissionObject({
@@ -68,6 +67,7 @@ export default function RegistrationForm() {
       
       // Format formObj
       const formattedFormObj = formatFormObj(formObj, categories);
+// Temp comment
 
       // Submit to backend
       const { result } = await registerUser(formattedFormObj);

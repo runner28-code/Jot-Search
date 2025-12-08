@@ -9,7 +9,6 @@ export default function AddCoordinator() {
     loading: false,
     success: false,
     errors: {},
-// Temp comment
   });
 
   // Submit form data when submissionObject.loading is set to true
@@ -67,7 +66,6 @@ export default function AddCoordinator() {
         errors: newErrors,
       });
     }
-    // Update form object with new value
     setFormObject({ ...formObject, [name]: value });
   }
 

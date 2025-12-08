@@ -2,6 +2,7 @@ import AuthService from '../../services/auth';
 import LoggedInNav from './LoggedInNav';
 import LoggedOutNav from './LoggedOutNav';
 
+// Temp comment
 export default function NavBar() {
   const loggedIn = AuthService.loggedIn();
   

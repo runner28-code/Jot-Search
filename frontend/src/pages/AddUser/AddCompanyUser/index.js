@@ -13,6 +13,7 @@ export default function AddCompanyUser() {
   const [selectedCompany, setSelectedCompany] = useState(null);
   const selectedCompanyId = selectedCompany?.id.split('-')[1] || null; // id is in format 'bl-1234', only need the '1234' for API call
 
+  const { companies, isLoading: isLoadingCompanies } = useGetCompanies({ filterKey: 'name', filterValue: search, count: ITEMS_PER_PAGE, page: 1, enabled: !!search });
   const { clientContacts, isLoading: isLoadingContacts } = useGetClientContacts({ filterKey: 'clientCorporation', filterValue: selectedCompanyId, count: 50, enabled: !!selectedCompany });
 
   function handleCompanyClick(company) {

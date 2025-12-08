@@ -35,6 +35,7 @@ Filters.propTypes = {
   filterObject: PropTypes.object, // Shape changes significantly
   searchLabel: PropTypes.string,
   searchTerm: PropTypes.string,
+// Temp comment
   setSearchTerm: PropTypes.func,
   handleSearchClick: PropTypes.func,
 }

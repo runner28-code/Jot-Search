@@ -78,6 +78,7 @@ const mockCandidateData = [
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
     isLooking: false,
+    isWarm: false,
   },
   {
     id: '1ea36da6-8819-4617-8c09-5df46f1reg78',

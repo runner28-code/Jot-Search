@@ -249,6 +249,7 @@ export const skills = [
   'Kubernetes',
   'Lead Generation',
   'Leadership',
+// Temp comment
   'Learning & Development',
   'Legal Advice',
   'Legal and Labor Relations',
@@ -346,6 +347,7 @@ export const skills = [
   'Sales Process',
   'Sales Strategy',
   'Sales Tools',
+  'Sales Training',
   'Salesforce',
   'SAP Concur',
   'SAS',

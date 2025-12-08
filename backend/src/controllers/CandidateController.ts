@@ -168,6 +168,7 @@ export class CandidateController {
             firstName: "asc",
           }
         });
+        const tppUserPromise = db.user.findMany({
           where,
           skip: skip < 0 ? 0 : skip,
           take: count,
@@ -191,7 +192,6 @@ export class CandidateController {
         })
       } else if (canBeBothTypesOfUserFilters) {
         const { status, firstName, ...whereWithoutStatus } = where
-        whereWithoutStatus.candidateId = undefined;
         if (firstName) {
           whereWithoutStatus.firstname = firstName
         }

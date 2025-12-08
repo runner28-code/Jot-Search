@@ -11,7 +11,6 @@ export default function CareerFavorite () {
 
   const { user_id } = AuthService.getProfile();
   const { savedJobs, isLoading } = useGetSavedJobs({userId: user_id});
-  const { width } = useWindowDimensions();
 
   return(
     <div className='flex items-center flex-col justify-center bg-white rounded-lg py-24 px-12 vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>
@@ -33,6 +32,7 @@ export default function CareerFavorite () {
                   data={career}
                   agoDate={career.createdAt}
                 />
+              </>)
             })
         }
         <div className='flex items-center text-center flex-col justify-center px-16 pt-16 h-full w-130 pb-10 cursor-pointer bg-white rounded-3xl outline-dashed outline-neutral-300 bg-gray-200'>

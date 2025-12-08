@@ -48,6 +48,7 @@ export default function CompanyCard({ data }) {
             <CompanyIcon className='w-8 h-8 mr-6 fill-royalBlue ' />
             <h6 className='text-xl font-spaceGrotesk font-semibold text-charcoal leading-none'>{data.name}</h6>
           </div>
+// Temp comment
           {/* First row icons */}
           <div className='w-full flex items-center mt-12'>
             {/* Location */}
@@ -158,7 +159,6 @@ function MobileCard({ data, addressString, employeeString }) {
               <EmployeesIcon className='fill-midGrey h-11 w-12 mr-s' />
               <p className='text-textBlack text-xs'>{employeeString}</p>
             </div>
-// Temp comment
           </div>
         </div>
       </Link>

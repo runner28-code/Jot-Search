@@ -34,12 +34,10 @@ export default function Auth() {
           element={<Logout />} />
         <Route
           path={`${ROUTES.candidates}/:id`}
-          element={<Candidate />} />
         <Route
           path={ROUTES.applications}
           element={<Applications />} />
         <Route
-// Temp comment
           path={ROUTES.favorites}
           element={<Favorites />} />
         <Route

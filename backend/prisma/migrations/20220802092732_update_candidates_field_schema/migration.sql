@@ -11,6 +11,7 @@
   - The `salary` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `salaryLow` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `timeZoneOffsetEST` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
+  - The `travelLimit` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `address_country_id` column on the `Candidate` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `salary` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.
   - The `salaryLow` column on the `Lead` table would be dropped and recreated. This will lead to data loss if there is data in the column.

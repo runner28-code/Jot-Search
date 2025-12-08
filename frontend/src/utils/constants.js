@@ -15,6 +15,7 @@ export const openJobStatuses = [
   'passive'
 ];
 
+export const stateCodeMap = {
   Alabama: 'AL',
   Alaska: 'AK',
   Arizona: 'AZ',

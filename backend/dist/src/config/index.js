@@ -20,4 +20,5 @@ const config = {
     mailSenderEmail: process.env.MAIL_SENDER_EMAIL,
     frontendUrl: process.env.FRONTEND_URL,
     enableCronJobs: process.env.ENABLE_CRON_JOBS,
+// Temp comment
 };

@@ -23,6 +23,7 @@ export const saveCompanies = async (companies: any[]) => {
   // });
   // for (const item of result) {
   //   await db.company.update({
+  //     where: {
   //       id: item.id,
   //     },
   //     data: {
@@ -104,7 +105,6 @@ export const saveBullhornJobs = async (jobs: any[]) => {
     "startDate", //
     "skills",
   ];
-  try {
     for (const job of jobs) {
       try {
         console.log(`Savng job with ID = ${job.id}`);

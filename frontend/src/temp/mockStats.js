@@ -269,7 +269,6 @@ export const mockCoordinatorStats = {
       prevCount: 443
     }
   },
-  'Total Careers': {
     'Today': {
       count: 343,
       prevCount: 441

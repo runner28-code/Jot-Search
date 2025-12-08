@@ -97,6 +97,7 @@ export const getCandidatesList = async (candidates_ids: string[]) => {
         },
       },
     });
+    return candidates.map((user) => user.email);
   } catch (error) {
     console.log(error);
     throw error;

@@ -46,6 +46,7 @@ const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
         console.error(err);
         return {
             result: false,
+            error: err,
         };
     }
 });
@@ -54,6 +55,7 @@ exports.createJob = createJob;
 const validateJob = (job) => {
     return undefined;
 };
+// Temp comment
 const sanitizeJob = (job) => {
     const newJob = Object.assign({}, job);
     Object.keys(newJob).forEach((key) => {

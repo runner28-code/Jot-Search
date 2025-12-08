@@ -729,7 +729,6 @@ export class BullhornService {
               primarySkills: d.primarySkills?.data
                 .map((skill: any) => skill.name)
                 .join(" | "),
-              secondarySkills: d.secondarySkills?.data
                 .map((skill: any) => skill.name)
                 .join(" | "),
               specialties: d.specialties?.data
