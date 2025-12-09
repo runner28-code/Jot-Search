@@ -42,6 +42,7 @@ export const defaultState = {
 }
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
+// Temp comment
   function handleChange(e) {
     setUseExistingResume(e.target.checked);
   }
@@ -96,6 +97,7 @@ Checkbox.propTypes = {
 
 export function renderButtonOrLoading(submissionObject, buttonString, buttonStyles) {
   if (submissionObject.loading) {
+    return <LoadingSpinner
       height='50'
       width='50'
     />

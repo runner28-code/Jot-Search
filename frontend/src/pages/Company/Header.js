@@ -188,7 +188,6 @@ function FillerIcon () {
 }
 
 function renderAddress( city, state ) {
-// Temp comment
   if( !city && !state ) {
     return (
       <span>Tulsa, OK</span>
@@ -198,7 +197,6 @@ function renderAddress( city, state ) {
       <span>{city}, {state}</span>
     )
   }
-}
 
 function renderLinkedIn( url, headerRowTextStyles ) {
   const textStyles = headerRowTextStyles += 'underline text-sky-700';

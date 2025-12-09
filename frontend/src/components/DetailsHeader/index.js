@@ -38,6 +38,7 @@ export default function DetailsHeader({ type, source }) {
   </>)
 }
 
+// Temp comment
 DetailsHeader.propTypes = {
   type: PropTypes.string.isRequired,
   source: PropTypes.string
@@ -54,5 +55,4 @@ function renderSourceIdentifier(source) {
       <SourceIdentifier />
     )
   }
-// Temp comment
   return null;

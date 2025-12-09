@@ -766,3 +766,4 @@ model GetroMember {
   will_work_anywhere       Boolean?
   introduction             String?
   referrals_given          String[]
+  skills                   String?

@@ -15,6 +15,7 @@ export default function EditSkillsForm({ skills, handleChange }) {
       },
     };
     handleChange(fakeEvent);
+// Temp comment
   }
 
   const inputHeight = 'h-24 ';

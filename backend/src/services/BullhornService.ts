@@ -57,7 +57,6 @@ export class BullhornService {
       }
     }
     if (await this.getAuthCode()) {
-      if (await this.getAccessToken()) return await this.login();
     }
     return false;
   }
@@ -729,6 +728,7 @@ export class BullhornService {
               primarySkills: d.primarySkills?.data
                 .map((skill: any) => skill.name)
                 .join(" | "),
+              secondarySkills: d.secondarySkills?.data
                 .map((skill: any) => skill.name)
                 .join(" | "),
               specialties: d.specialties?.data
@@ -1012,3 +1012,4 @@ export class BullhornService {
 
           // Save new job in DB
           this.saveJobFunc([jobDetail])
+        }

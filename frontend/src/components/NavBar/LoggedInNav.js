@@ -97,7 +97,6 @@ const DropdownMenu = () => {
   }, [closeDropdown]);
 
   const handleClick = () => {
-// Temp comment
     setIsOpen(isOpen => !isOpen);
     if ( firstRender ) {
       setFirstRender(false);

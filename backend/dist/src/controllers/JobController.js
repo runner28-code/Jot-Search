@@ -24,6 +24,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+// Temp comment
 exports.normalizeFilters = exports.JobController = void 0;
 const client_1 = require("@prisma/client");
 const routing_controllers_1 = require("routing-controllers");
@@ -102,6 +103,7 @@ let JobController = class JobController {
                         category: true,
                     },
                     orderBy: {
+                        createdAt: "desc",
                     }
                 }); // TODO: assumes we are changing frontend to pass compatible fields and filters params
                 const totalPromise = db_1.default.job.count({

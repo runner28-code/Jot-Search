@@ -81,7 +81,6 @@ export const getSavedCandidates = async (companyUserId: string) => {
     return {
       result: true,
       candidates: user?.savedCandidates,
-    };
   } catch (error) {
     console.log(error);
     return { result: false, message: error };

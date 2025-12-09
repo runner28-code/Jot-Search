@@ -192,6 +192,7 @@ export class CandidateController {
         })
       } else if (canBeBothTypesOfUserFilters) {
         const { status, firstName, ...whereWithoutStatus } = where
+        whereWithoutStatus.candidateId = undefined;
         if (firstName) {
           whereWithoutStatus.firstname = firstName
         }
@@ -426,3 +427,4 @@ export class CandidateController {
       return {
         result: false,
         error: "Please check email, jobIds and candidateIds",
+      };

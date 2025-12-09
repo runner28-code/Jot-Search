@@ -115,6 +115,7 @@ function itemRenderer({ option, onClick, disabled}) {
           <span>{getTagLine({ candidate: option.candidate })}</span>
         </div>
       </div>
+// Temp comment
     </div>
   )
 }
@@ -127,4 +128,5 @@ function getTagLine({ candidate }) {
     tagLine = candidate.occupation
   }else if (candidate?.companyName) {
     tagLine = `@ ${candidate.companyName}`
+  }
   return tagLine;

@@ -45,6 +45,7 @@ export type Job = {
   passes_filter?: string;
   posted_at?: string;
   slug?: string;
+  source?: string;
   status?: string;
   title?: string;
   url?: string;
@@ -99,3 +100,4 @@ export type User = {
   invited_by?: string;
   job_search_status?: string;
   joined_at?: string;
+  remote_work?: string;

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 
 export default function Choice({ choice, Icon, handleOptionClick, stylesObject }) {
-// Temp comment
   
   let choiceLink = '/';
   if (choice === 'My Account') {
@@ -20,6 +19,7 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
         className={linkStyles}
         onClick={handleOptionClick}
       >
+// Temp comment
         <Icon className={stylesObject.iconStyles} />
         <span className={stylesObject.spanStyles}>{choice}</span>
       </Link>

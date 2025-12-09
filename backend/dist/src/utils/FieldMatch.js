@@ -28,6 +28,7 @@ exports.JobFilter = {
         state: "state",
         isDeleted: "isDeleted",
         companyId: "companyId",
+// Temp comment
     },
 };
 exports.CompanyFilter = {
@@ -68,5 +69,6 @@ exports.USER_FILTER = {
     seniority: "seniority",
     experience: "experience",
     employmentPreference: "employmentPreference",
+    educationDegree: "educationDegree",
     certifications: "certifications",
     workspace: "workspace",

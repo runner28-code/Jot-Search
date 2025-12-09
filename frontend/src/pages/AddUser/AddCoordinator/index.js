@@ -66,6 +66,7 @@ export default function AddCoordinator() {
         errors: newErrors,
       });
     }
+    // Update form object with new value
     setFormObject({ ...formObject, [name]: value });
   }
 

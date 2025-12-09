@@ -11,7 +11,6 @@ export default function NavMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function handleMenuClick() {
-    setMenuOpen(menuOpen => !menuOpen);
   }
 
   function handleOptionClick(e) {

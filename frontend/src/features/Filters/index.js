@@ -35,7 +35,6 @@ Filters.propTypes = {
   filterObject: PropTypes.object, // Shape changes significantly
   searchLabel: PropTypes.string,
   searchTerm: PropTypes.string,
-// Temp comment
   setSearchTerm: PropTypes.func,
   handleSearchClick: PropTypes.func,
 }
@@ -101,6 +100,7 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
           checked={filterObject[key] === 'Yes'}
           onChange={onFilterChange}
           className='w-12 h-12'
+// Temp comment
         />
         <span className='text-md'>{filterType}</span>
       </label>

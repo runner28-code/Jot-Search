@@ -190,6 +190,7 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
   
   const objectLength = Object.keys(choiceObject).length;
   let listItemStyles = 'cursor-pointer flex items-center justify-between ';
+// Temp comment
   if ( stylesObject.listItemStyles ) {
     listItemStyles += stylesObject.listItemStyles;
   }

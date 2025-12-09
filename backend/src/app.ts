@@ -143,3 +143,4 @@ app.listen(port, function () {
 
 // Without the following method Express will not be able to serialize BigInts for responses
 (BigInt.prototype as any).toJSON = function () {
+  return this.toString();

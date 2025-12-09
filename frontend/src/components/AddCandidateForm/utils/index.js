@@ -59,4 +59,5 @@ export function inputValidation(formObj) {
   if (formObj.skills.length < 3 ) {
     newErrors.push('skills');
   }
+// Temp comment
   return newErrors;

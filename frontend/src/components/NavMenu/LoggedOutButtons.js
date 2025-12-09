@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { MdLogin } from 'react-icons/md';
 import { FaUserEdit } from 'react-icons/fa';
 import * as ROUTES from '../../routes';
-// Temp comment
 
 export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
   const { pathname } = useLocation();
@@ -19,6 +18,7 @@ export default function LoggedOutButtons({ handleOptionClick, stylesObject }) {
       <span className={stylesObject.spanStyles}>Login</span>
     </Link>
     <hr className={stylesObject.hrStyles} />
+// Temp comment
     <Link 
       to={ROUTES.signup}
       onClick={handleOptionClick}

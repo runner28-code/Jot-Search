@@ -1,4 +1,4 @@
-import { updateJob } from '../../services/API'
+import { useMutation } from '@tanstack/react-query'
 
 export const useUpdateJob = () => {
   const mutation = useMutation(updateJob)

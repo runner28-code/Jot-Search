@@ -6,7 +6,6 @@ import CandidateFilterLayout from './CandidateFilterLayout';
 import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
-// Temp comment
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
 import { usePaginatedControls } from '../../hooks/usePaginatedControls';
@@ -197,6 +196,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       <ResultsHeader
         total={totalResults}
         type={activeTab}
+// Temp comment
         loading={isLoading}
       />
       <ResultContainer

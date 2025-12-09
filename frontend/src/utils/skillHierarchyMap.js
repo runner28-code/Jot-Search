@@ -249,7 +249,6 @@ export const skills = [
   'Kubernetes',
   'Lead Generation',
   'Leadership',
-// Temp comment
   'Learning & Development',
   'Legal Advice',
   'Legal and Labor Relations',
@@ -340,6 +339,7 @@ export const skills = [
   'Ruby',
   'Ruby on Rails',
   'SaaS',
+// Temp comment
   'Sales',
   'Sales Development',
   'Sales Operations',

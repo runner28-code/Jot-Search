@@ -102,7 +102,6 @@ export class GetroService {
                     if (items.length < per_page) break;
                 }
             } catch (error) {
-                console.log(error);
                 repeatErr++;
             }
         }
@@ -261,6 +260,7 @@ export class GetroService {
                                 if (checkForJobFilter(job.title, job.locations)) {
                                     await saveJobs([job]);
                                     await this.saveGetroJobInBullhornJobTable(job)
+                                } else {
                                     console.log('JOB doesn\'t meet the qualification! Skipping...')
                                 }
                             }
@@ -297,3 +297,4 @@ export class GetroService {
             updatedAt: getroJob.updatedAt,
             getroJobInfoId: getroJob.id,
         }
+        await saveBullhornJobs([data])

@@ -42,7 +42,6 @@ CREATE TABLE "User" (
     "workAuthorized" TEXT,
     "disability" TEXT,
     "avatar" TEXT,
-    "occupation" TEXT,
     "employmentPreference" TEXT,
 
     CONSTRAINT "User_pkey" PRIMARY KEY ("id")

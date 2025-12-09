@@ -54,7 +54,7 @@ export const IUSER = {
   id: "",
   externalId: "",
   firstname: "",
-  gender: "",
+  lastname: "",
   email: "",
   password: "",
   role: "",

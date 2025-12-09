@@ -20,9 +20,11 @@ const mockJobsData = [
     salaryRange: '$80k-$90k',
     location: 'Tulsa, OK',
     listingAge: '1 month',
+    specialty: 'Technology'
   },
   {
     id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',
+// Temp comment
     title: 'Outside Sales Executive',
     company: 'Paycom',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
