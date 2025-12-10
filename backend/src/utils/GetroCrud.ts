@@ -111,7 +111,6 @@ export const saveJobs = async (jobs: any[]) => {
 									}
 								});
 				
-								const newJob = await db.getroJobInfo.create({
 									data: jobData,
 								});
                 console.log(`Saved Getro Job with ID = ${job.id} successfully`);

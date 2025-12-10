@@ -67,13 +67,13 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   if( loggedIn ) {
     return (<>
       <PageHeader
-// Temp comment
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : SearchIcon}
         backButton={true}
       />
     </>)
   }
+// Temp comment
   return (<>
     <Dashboard togglePassState={togglePassState} />
   </>)

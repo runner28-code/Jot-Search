@@ -119,7 +119,6 @@ function itemRenderer({ option, onClick, disabled}) {
 
 function getTagLine({ candidate }) {
   let tagLine = '';
-// Temp comment
   if (candidate?.occupation && candidate?.companyName) {
     tagLine = `${candidate.occupation} @ ${candidate.companyName}`
   }else if (candidate?.occupation) {

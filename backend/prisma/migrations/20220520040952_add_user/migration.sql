@@ -8,7 +8,6 @@ CREATE TABLE "User" (
     "role" TEXT,
     "city" TEXT,
     "state" TEXT,
-    "resume" TEXT,
     "phone" TEXT,
     "linkedin" TEXT,
     "skills" TEXT,
@@ -42,6 +41,7 @@ CREATE TABLE "User" (
     "workAuthorized" TEXT,
     "disability" TEXT,
     "avatar" TEXT,
+    "occupation" TEXT,
     "employmentPreference" TEXT,
 
     CONSTRAINT "User_pkey" PRIMARY KEY ("id")

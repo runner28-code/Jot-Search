@@ -29,5 +29,4 @@ ReactDOM.render(
     </BrowserRouter>
     {isDevelopment && <ReactQueryDevtools initialIsOpen={false} />}
   </QueryClientProvider>,
-// Temp comment
   document.getElementById('root')

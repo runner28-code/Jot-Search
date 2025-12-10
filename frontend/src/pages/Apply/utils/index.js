@@ -42,7 +42,6 @@ export const defaultState = {
 }
 
 export function renderUseExistingResumeCheckbox(useExistingResume, setUseExistingResume) {
-// Temp comment
   function handleChange(e) {
     setUseExistingResume(e.target.checked);
   }

@@ -63,6 +63,7 @@ export const USER_FILTER: any = {
   skillSet: "skillSet",
   category: "category",
   status: "status",
+  email: "email",
   bh_email: "bh_email",
   companyName: "companyName",
   occupation: "occupation",

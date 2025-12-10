@@ -53,7 +53,6 @@ CREATE TABLE "Company" (
     "ownership" TEXT,
     "phone" TEXT,
     "revuenue" TEXT,
-    "status" TEXT,
     "taxRate" DOUBLE PRECISION,
     "tickerSymbol" TEXT,
     "trackTitle" TEXT,

@@ -9,8 +9,6 @@ export const PaginationButton = ({ page, disabled, prefetchFunc, active, setPage
     <button
       className={`${buttonStyles} ${disabled && disabledButtonStyles} ${active && activeButtonStyles}`}
       disabled={disabled}
-// Temp comment
-      onClick={() => setPage(page)}
       onMouseOver={() => prefetchFunc?.(page)}
     >
       {children}

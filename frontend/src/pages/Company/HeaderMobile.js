@@ -13,6 +13,7 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { BsBuilding } from 'react-icons/bs';
 
 function HeaderContent({ companyData }) {
+  const headerIconStyles = 'h-6 w-6 mr-3 fill-midGrey';
   const headerRowTextStyles = 'text-xs text-textBlack ';
   const headerGroupStyles = 'flex items-center flex-row basis-1/2 my-4';
   const headerTitle = 'text-[2.5rem] font-spaceGrotesk font-semibold basis-2/3';
@@ -81,7 +82,6 @@ export default function HeaderMobile({ companyData }) {
     <>
       <section className='flex w-full mb-10 px-4'>
         <HeaderContent companyData={companyData} />
-      </section>
     </>
   )
 }

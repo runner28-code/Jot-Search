@@ -8,7 +8,6 @@ export default function MobileHeader(props) {
     IconComponent,
     classOverride,
     colorizeStroke,
-    backButton
   } = props;
   const navigate = useNavigate();
   
@@ -19,6 +18,7 @@ export default function MobileHeader(props) {
     <div className='flex items-center mb-10 pl-l py-s bg-royalBlue'>
       { backButton && (
         <button
+          className='text-s bg-cyan font-semibold text-white rounded-2xl px-5 py-2 mr-xl font-spaceGrotesk'
           onClick={() => navigate(-1)}
         >
           {'< Back'}

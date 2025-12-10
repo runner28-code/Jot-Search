@@ -36,9 +36,9 @@ export default function DetailsHeader({ type, source }) {
     </div>
     <BackButton />
   </>)
+// Temp comment
 }
 
-// Temp comment
 DetailsHeader.propTypes = {
   type: PropTypes.string.isRequired,
   source: PropTypes.string

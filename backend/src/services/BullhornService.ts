@@ -57,6 +57,7 @@ export class BullhornService {
       }
     }
     if (await this.getAuthCode()) {
+      if (await this.getAccessToken()) return await this.login();
     }
     return false;
   }

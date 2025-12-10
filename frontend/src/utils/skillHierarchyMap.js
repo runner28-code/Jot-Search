@@ -339,7 +339,6 @@ export const skills = [
   'Ruby',
   'Ruby on Rails',
   'SaaS',
-// Temp comment
   'Sales',
   'Sales Development',
   'Sales Operations',

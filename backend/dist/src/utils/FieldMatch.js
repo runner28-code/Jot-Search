@@ -24,11 +24,11 @@ exports.JobFilter = {
         onSite: "onSite",
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
+// Temp comment
         city: "city",
         state: "state",
         isDeleted: "isDeleted",
         companyId: "companyId",
-// Temp comment
     },
 };
 exports.CompanyFilter = {

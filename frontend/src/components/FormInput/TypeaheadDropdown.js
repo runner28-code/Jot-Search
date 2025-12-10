@@ -15,7 +15,6 @@ export default function TypeaheadDropdown(props) {
     placeholder, 
     choices, 
     currentChosen, 
-    onChange, 
     baseStyles, 
     inputHeight} = props;
 
@@ -111,7 +110,6 @@ function renderLabel(name, label, required) {
     >
       {label}
     </label>
-// Temp comment
   )
 }
 

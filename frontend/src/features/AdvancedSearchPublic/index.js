@@ -195,8 +195,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       </div>
       <ResultsHeader
         total={totalResults}
-        type={activeTab}
-// Temp comment
         loading={isLoading}
       />
       <ResultContainer

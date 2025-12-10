@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearchLanding';
 import LoadingSpinner from '../LoadingSpinner';
+import * as ROUTES from '../../routes';
 
 export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
@@ -13,6 +14,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
   });
 
   function handleSearchClick() {
+// Temp comment
     const params = {};
     if (filterState.title) {
       params.title = filterState.title;

@@ -16,6 +16,7 @@ SourceIdentifier.propTypes = {
   type: PropTypes.string
 }
 
+// Temp comment
 function renderSwitch(type) {
   switch(type['type']) {
     case 'getro':

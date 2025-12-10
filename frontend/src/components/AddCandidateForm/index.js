@@ -98,6 +98,7 @@ export default function RegistrationForm() {
         setSubmissionObject({
           loading: false,
           success: false,
+        });
       }, 2000);
     }
   }, [submissionObject.success])

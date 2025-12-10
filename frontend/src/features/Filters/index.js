@@ -20,7 +20,6 @@ export default function Filters(props) {
   }
   return (
     <div className={filterContainerStyles}>
-      <div className='flex flex-wrap gap-xxl-4'>
         {renderDropdownFilters(defaultFilterObject, filterObject, handleFilterChange)}
       </div>
       {renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick)}
@@ -100,7 +99,6 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
           checked={filterObject[key] === 'Yes'}
           onChange={onFilterChange}
           className='w-12 h-12'
-// Temp comment
         />
         <span className='text-md'>{filterType}</span>
       </label>

@@ -45,7 +45,6 @@ export default function Footer() {
         </a>
         <a href={ROUTES.instagram}>
           <img
-            src={instagram}
             className={socialIconStyleMobile}
           />
         </a>
@@ -368,7 +367,6 @@ function NavFooterMobile() {
         <a
           href="/careers"
           className={linkStyle}
-// Temp comment
         >
           Operations Job Openings
         </a>

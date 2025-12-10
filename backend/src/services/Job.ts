@@ -49,7 +49,6 @@ const sanitizeJob = (job: Job): Job => {
     if (!ALLOWED_JOB_KEYS.has(typedKey)) {
       delete newJob[typedKey];
     }
-  });
 
   return newJob;
 };
@@ -144,3 +143,4 @@ export const getJobsList = async (jobs_ids: string[]) => {
         },
       },
     });
+    return jobs.map((job) => job.title!);

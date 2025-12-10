@@ -38,6 +38,7 @@ function App() {
               element={<LandingPage />} />
             <Route
               path={ROUTES.careers}
+// Temp comment
               element={<Careers />} />
             <Route
               path={ROUTES.companies}
@@ -53,7 +54,6 @@ function App() {
               element={<Company />} />
             <Route
               path={ROUTES.accountRecovery}
-// Temp comment
               element={<AccountRecovery />} />
             <Route
               path={ROUTES.resetPassword}

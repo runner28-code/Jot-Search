@@ -18,4 +18,3 @@ export const useGetJobs = ({ count, page, filtersArr, operator, enabled = true }
 }
 
 const getJobsKey = ({filtersArr, count, operator, page}) => {
-  return ['jobs', {filtersArr, count, operator, page}];

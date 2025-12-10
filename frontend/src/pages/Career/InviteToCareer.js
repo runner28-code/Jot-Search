@@ -38,7 +38,6 @@ export default function InviteToCareer({ candidate }) {
       {selected?.map((item) => (
         <span 
           key={item.value} 
-          className="flex space-x-2 text-white items-center justify-center rounded-full bg-aquaBlue p-2 m-2">
           <span>{item.label}</span>
           <button 
             className='rounded-full text-center h-8 w-8 text-aquaBlue bg-white text-xs' 
@@ -115,7 +114,6 @@ function itemRenderer({ option, onClick, disabled}) {
           <span>{getTagLine({ candidate: option.candidate })}</span>
         </div>
       </div>
-// Temp comment
     </div>
   )
 }

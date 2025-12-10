@@ -378,7 +378,6 @@ const job_filter_exclude_keys = [
   "street",
   "student",
   "study",
-  "subject matter",
   "substitute",
   "success coach",
   "supply",
