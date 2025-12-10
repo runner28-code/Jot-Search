@@ -16,7 +16,6 @@ import AuthService from '../../services/auth';
 export default function Careers() {
   let userType = AuthService.getUserRole();
   const loggedIn = AuthService.loggedIn();
-// Temp comment
   const [toggle, setToggle] = useState(false);
   const sectionStylesLog = 'vw-990:ml-10 vw-990:mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
   const sectionStyles = '';
@@ -41,6 +40,7 @@ export default function Careers() {
       >
         <RenderAdvancedSearch
           loggedIn={loggedIn}
+// Temp comment
           toggle={toggle}
           userType={userType}
         />

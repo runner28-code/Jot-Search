@@ -285,7 +285,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
                     name='ethnicity'
                     choices={ ethnicityChoices }
                     currentChosen={ formData.ethnicity }
-                    handleChange={ handleInputChange }
                     inputStyles={ inputStyles }
                     disabled={ disabled }
                   />

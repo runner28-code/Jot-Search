@@ -67,6 +67,7 @@ type CountFilterResponse = {
 export type Job = BullhornJob | GetroJob;
 export type JobSearchByID = {
   job?: Job;
+  source: DataSource;
   message?: string;
 };
 
@@ -143,3 +144,4 @@ export type CategorySearchByFilterResponse = {
 
 export type CategoryByIdResponse = {
   category?: Category;
+  message?: any;

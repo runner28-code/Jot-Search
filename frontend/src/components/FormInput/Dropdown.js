@@ -50,6 +50,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
       })}
     </div>
   )
+}
 
 export default function Dropdown(props) {
   const { 

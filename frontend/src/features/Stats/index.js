@@ -79,6 +79,7 @@ export default function Stats({ userType }) {
         {Object.entries(stats).map(([stat, value]) => {
           return <StatCard
             stat={stat}
+// Temp comment
             value={value}
             key={stat} />;
         })}

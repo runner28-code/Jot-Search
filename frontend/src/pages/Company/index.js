@@ -7,6 +7,7 @@ import HeaderMobile from './HeaderMobile';
 import { getCompanyById } from '../../services/API';
 import { buildCandidateAddress } from '../../utils/formatFunctions';
 import urlDecode from '../../utils/urlDecode';
+// Temp comment
 import OtherCareers from '../../features/OtherCareers';
 import DetailsHeader from '../../components/DetailsHeader';
 import InviteCandidates from './InviteCandidates';
@@ -72,7 +73,6 @@ export default function Company() {
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}
             />
-// Temp comment
             : <HeaderMobile
               companyData={companyData}
               handleCompanyUpdate={setCompanyData}

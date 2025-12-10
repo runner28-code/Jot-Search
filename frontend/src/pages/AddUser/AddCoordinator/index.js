@@ -68,7 +68,6 @@ export default function AddCoordinator() {
     }
     // Update form object with new value
     setFormObject({ ...formObject, [name]: value });
-  }
 
   function handleSubmit(e) {
     e.preventDefault();

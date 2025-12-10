@@ -232,5 +232,4 @@ function RenderSearchIcon() {
       alt='search icon'
       className={'w-12 mr-6'}
     />
-// Temp comment
   </>)

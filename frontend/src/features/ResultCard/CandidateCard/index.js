@@ -216,6 +216,7 @@ function InfoLabel({ label, value }) {
 }
 
 InfoLabel.propTypes = {
+// Temp comment
   label: PropTypes.string.isRequired,
   value: PropTypes.bool.isRequired,
 }

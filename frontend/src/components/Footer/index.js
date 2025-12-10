@@ -45,11 +45,11 @@ export default function Footer() {
         </a>
         <a href={ROUTES.instagram}>
           <img
+            src={instagram}
             className={socialIconStyleMobile}
           />
         </a>
         <a href={ROUTES.youtube}>
-          <img
             src={youtube}
             className={socialIconStyleMobile}
           />

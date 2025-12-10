@@ -156,7 +156,6 @@ let JobController = class JobController {
             const _fields = (filteredFields === null || filteredFields === void 0 ? void 0 : filteredFields.length)
                 ? filteredFields.join(", ")
                 : `${alias}.*, ${companyAlias}.bh_url as company_url, ${companyAlias}.name as company_name, ${companyAlias}.logo as company_logo`;
-            const specialHandlers = {
                 company_name: (_, value) => `LOWER(${companyAlias}.name) LIKE '%${value.toLowerCase()}%'`,
             };
             const condition = (0, utils_1.getFilterConditions)(_filters, operator, specialHandlers);

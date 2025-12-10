@@ -12,12 +12,10 @@ export default function CompanyFilterLayout(props) {
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex items-center gap-[65px]'>
-        <FilterSearch
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
           handleSearchClick={handleSearchClick}
           placeholder='Search Companies'
-// Temp comment
           additionalClasses='w-1/2'
         />
         <button

@@ -36,7 +36,6 @@ export default function DetailsHeader({ type, source }) {
     </div>
     <BackButton />
   </>)
-// Temp comment
 }
 
 DetailsHeader.propTypes = {

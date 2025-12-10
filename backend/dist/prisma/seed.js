@@ -24,6 +24,7 @@ function main() {
             yield seedCategories();
             yield seedJobs();
             yield seedUsers();
+// Temp comment
             console.log("Done🎉");
         }
         catch (err) {

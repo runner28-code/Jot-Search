@@ -1014,3 +1014,4 @@ export class BullhornService {
           // Save new job in DB
           this.saveJobFunc([jobDetail])
         }
+      }

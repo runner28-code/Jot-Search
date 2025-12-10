@@ -176,7 +176,6 @@ export const skills = [
   'Direct Sales',
   'Distribution',
   'Django',
-  'Docker',
   'Dojo',
   'Drone',
   'Dynamics NAV',

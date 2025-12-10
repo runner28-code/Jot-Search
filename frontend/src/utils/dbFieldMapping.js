@@ -72,7 +72,6 @@ export const communityChoices = [
   'Atento Capital',
   'Tulsa Remote',
   'Teach for America',
-  'Bootup',
   'Tulsa Tomorrow',
   'Holberton',
   'Campus Tulsa',

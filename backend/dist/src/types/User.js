@@ -41,6 +41,7 @@ exports.IUSER = {
     hourlyRate: "",
     willRelocate: "",
     willReceiveNotification: false,
+// Temp comment
     ethnicity: "",
     workAuthorized: "",
     disability: "",

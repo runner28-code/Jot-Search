@@ -7,7 +7,6 @@ import ChoiceListItem from '../ChoiceListItem';
 export default function TypeaheadDropdown(props) {
   const {
     type, 
-    dropdownType, 
     disabled,
     name, 
     label,
@@ -15,6 +14,7 @@ export default function TypeaheadDropdown(props) {
     placeholder, 
     choices, 
     currentChosen, 
+    onChange, 
     baseStyles, 
     inputHeight} = props;
 

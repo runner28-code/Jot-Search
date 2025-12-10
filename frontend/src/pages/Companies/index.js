@@ -41,6 +41,7 @@ export default function Companies() {
         }>
         <RenderAdvancedSearch
           loggedIn={loggedIn}
+// Temp comment
           toggle={toggle}
           userType={userType}
         />
@@ -73,7 +74,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
       />
     </>)
   }
-// Temp comment
   return (<>
     <Dashboard togglePassState={togglePassState} />
   </>)

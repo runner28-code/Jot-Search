@@ -340,3 +340,4 @@ export type Lead = {
     specialties?: string;
     status?: string;
     timeZoneOffsetEST?: string;
+    type?: string;

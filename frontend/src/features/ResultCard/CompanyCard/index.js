@@ -128,6 +128,7 @@ function renderCardImage(data) {
 
 function MobileCard({ data, addressString, employeeString }) {
   return (
+    <div
       className='relative w-full'
       key={data.id}
     >

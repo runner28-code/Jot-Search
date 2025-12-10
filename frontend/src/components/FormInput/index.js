@@ -17,7 +17,6 @@ export default function FormInput(props) {
     name,
     label,
     placeholder,
-    value,
     required,
     onChange,
     choices,
@@ -59,7 +58,6 @@ export default function FormInput(props) {
         placeholder={placeholder}
         currentChosen={value}
         required={required}
-// Temp comment
         onChange={onChange}
         choices={choices}
         choiceObject={choiceObject}

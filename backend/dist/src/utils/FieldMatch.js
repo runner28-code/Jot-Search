@@ -24,7 +24,6 @@ exports.JobFilter = {
         onSite: "onSite",
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
-// Temp comment
         city: "city",
         state: "state",
         isDeleted: "isDeleted",
@@ -50,7 +49,6 @@ exports.CompanyFilter = {
 exports.USER_FILTER = {
     firstname: "firstname",
     lastname: "lastname",
-    role: "role",
     roles: "roles",
     city: "city",
     state: "state",

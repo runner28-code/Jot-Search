@@ -191,7 +191,6 @@ export const saveClientContacts = async (contacts: any[]) => {
   }
 };
 
-export const saveCandidates = async (candidates: any[]) => {
   const expludeFields = ["address", "_score"];
   try {
     for (const candidate of candidates) {
@@ -334,3 +333,4 @@ export const migrateJobInTPP = async (data: Job) => {
     console.log(error.message);
     console.log(
       `ERROR: Migration Failed Bullhorn Job (bh_id=${data.externalId})`
+    );

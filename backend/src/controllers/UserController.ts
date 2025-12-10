@@ -232,3 +232,4 @@ export class UserController {
   @Get("/company-stats")
   async getCompanyStats(@QueryParams() queryParams: { duration: number }) {
     const { duration } = queryParams;
+    return await getCompanyDashboardStats(duration);

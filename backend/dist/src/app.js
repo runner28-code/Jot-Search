@@ -33,7 +33,6 @@ const multerStorage = multer_1.default.diskStorage({
         console.log("upload path: ", path);
         fs_1.default.mkdirSync(path, { recursive: true });
         cb(null, path);
-// Temp comment
     },
     filename: (req, file, cb) => {
         console.log(file);
@@ -42,6 +41,7 @@ const multerStorage = multer_1.default.diskStorage({
     },
 });
 const upload = (0, multer_1.default)({ storage: multerStorage });
+// Temp comment
 const getActualRequestDurationInMs = (start) => {
     const NS_PER_SEC = 1e9;
     const NS_TO_MS = 1e6;
