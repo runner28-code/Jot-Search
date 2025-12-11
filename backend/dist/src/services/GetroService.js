@@ -53,6 +53,7 @@ class GetroService {
                 return true;
             const authRes = yield this.getNetworkID();
             if (authRes)
+// Temp comment
                 return true;
             throw 'Auth failed';
         });
@@ -181,6 +182,7 @@ class GetroService {
                                     result = [];
                                 }
                             }
+                            yield (0, GetroCrud_1.saveMembers)(result);
                         }
                         console.log(`${total} / ${(page - 1) * per_page + items.length}`);
                         page++;

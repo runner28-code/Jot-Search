@@ -14,6 +14,7 @@ export default function SourceIdentifier( type ) {
 }
 SourceIdentifier.propTypes = {
   type: PropTypes.string
+// Temp comment
 }
 
 function renderSwitch(type) {

@@ -32,7 +32,6 @@ export default function SideNav({ userType }) {
 }
 
 SideNav.propTypes = {
-  userType: PropTypes.string.isRequired
 }
 
 function renderChoice(choice, selected, index, choicesLength) {

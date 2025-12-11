@@ -8,7 +8,6 @@ import { getInvitationsToApply } from '../../services/API';
 export default function InvitationsToApply () {
   const profile = AuthService.getProfile();
   const [appliedJobsObject, setAppliedJobsObject] = useState({
-    jobs: [],
     filteredJobs: [],
     loading: true
   });
@@ -25,6 +24,7 @@ export default function InvitationsToApply () {
       loading: false
     });
   }, []);
+
 
   return(
     <div className='flex items-center flex-col justify-center bg-white rounded-lg py-24 p-12 text-center vw-990:px-36 outline outline-1 outline-neutral-300 mb-12'>

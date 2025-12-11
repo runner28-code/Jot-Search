@@ -124,7 +124,6 @@ function RenderHeader({type, loggedIn}) {
     </>)
   }
   return (
-// Temp comment
     <DashboardPublicMin type={type} />
   )
 }
@@ -134,7 +133,6 @@ RenderHeader.propTypes = {
 }
 
 function RenderInvite(loggedIn, companyData) {
-  const role = AuthService.getUserRole();
   if( loggedIn && role === 'coordinator' ) {
     return(<>
       <InviteCandidates company={companyData} />

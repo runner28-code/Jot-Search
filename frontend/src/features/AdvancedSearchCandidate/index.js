@@ -8,6 +8,7 @@ import CareerFilterLayout from './CareerFilterLayout';
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
+import { usePaginatedControls } from '../../hooks/usePaginatedControls';
 import { useIsMount } from '../../hooks/useIsMount';
 import {
   candidateFilterObject,
@@ -210,7 +211,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     </div>
   )
 }
-
 AdvancedSearchCandidate.propTypes = {
   disabledTabs: PropTypes.bool,
   toggle: PropTypes.bool

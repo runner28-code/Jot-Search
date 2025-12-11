@@ -418,7 +418,6 @@ function Address() {
   const addressLinkStyle = 'text-md text-zinc-700 mb-6';
 
   if( width <= 990 ) {
-// Temp comment
     return null;
   }
   return (<>

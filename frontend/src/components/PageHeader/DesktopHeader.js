@@ -42,7 +42,6 @@ export default function DesktopHeader(props) {
         )}
       </div>
       { backButton && (
-// Temp comment
         <button
           className='text-md text-royalBlue underline mt-6'
           onClick={() => navigate(-1)}

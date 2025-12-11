@@ -380,7 +380,6 @@ export const skills = [
   'Tableau',
   'Talent Acquisition',
   'Tax',
-// Temp comment
   'Teaching',
   'Team Management',
   'Tech Sales',

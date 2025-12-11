@@ -358,6 +358,7 @@ function renderEditIcon(candidateData, setEditMode) {
     return null;
   }
 
+// Temp comment
   const handleClick = () => {
     setEditMode(true);
   }

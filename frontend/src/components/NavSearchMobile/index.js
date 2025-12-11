@@ -167,7 +167,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
     searchIconStyles: 'fill-neutral-400',
     inputStyles: 'hidden '
   }
-  function handleClick() {
     if( !searchTerm ) {
       setIsOpen(isOpen => !isOpen);
     }
@@ -232,5 +231,4 @@ function RenderSearchIcon() {
       alt='search icon'
       className={'w-12 mr-6'}
     />
-// Temp comment
   </>)

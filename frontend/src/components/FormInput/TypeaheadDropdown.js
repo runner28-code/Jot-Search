@@ -58,6 +58,7 @@ export default function TypeaheadDropdown(props) {
     setDropdownOpen(true);
   }
 
+  return (
     <div 
       className='relative w-full'
       ref={menuRef}  
@@ -72,6 +73,7 @@ export default function TypeaheadDropdown(props) {
         className={baseStyles + inputHeight + 'mb-0'}
         onClick={handleListClick}
         onChange={handleInputChange}
+// Temp comment
         onKeyDown={handleKeyDown}
         disabled={disabled}
       />

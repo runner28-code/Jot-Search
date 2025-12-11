@@ -38,7 +38,6 @@ export default function Careers() {
             : '' 
         }
       >
-// Temp comment
         <RenderAdvancedSearch
           loggedIn={loggedIn}
           toggle={toggle}

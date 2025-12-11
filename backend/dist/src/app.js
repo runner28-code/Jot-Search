@@ -2,7 +2,6 @@
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
-// Temp comment
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
@@ -43,7 +42,6 @@ const multerStorage = multer_1.default.diskStorage({
 });
 const upload = (0, multer_1.default)({ storage: multerStorage });
 const getActualRequestDurationInMs = (start) => {
-    const NS_PER_SEC = 1e9;
     const NS_TO_MS = 1e6;
     const diff = process.hrtime(start);
     return (diff[0] * NS_PER_SEC + diff[1]) / NS_TO_MS;

@@ -33,7 +33,6 @@ export class BigQueryService {
                 `;
             }
             const options = {
-                query: query,
                 location: 'US',
             };
             consoleLog(`BIGQUERY: SELECT QUERY = ${query}`);

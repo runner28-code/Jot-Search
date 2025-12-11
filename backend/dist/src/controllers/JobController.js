@@ -222,6 +222,7 @@ let JobController = class JobController {
     save(candidate, job) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield (0, MainCrud_1.saveJob)(job, candidate);
+        });
     }
     update(body) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -272,7 +273,6 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], JobController.prototype, "getJobsByFilterFromMain", null);
 __decorate([
-    (0, routing_controllers_1.Get)("/apply"),
     __param(0, (0, routing_controllers_1.QueryParam)("candidate")),
     __param(1, (0, routing_controllers_1.QueryParam)("job")),
     __metadata("design:type", Function),

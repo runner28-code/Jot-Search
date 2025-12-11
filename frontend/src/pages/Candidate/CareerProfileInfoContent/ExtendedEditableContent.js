@@ -37,7 +37,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
     skills: Array.isArray(candidateData.skills) ? candidateData.skills : (candidateData?.skills?.split(', ') || []),
     linkedin: candidateData?.linkedin || '',
     resume: candidateData?.resume || '',
-  });
 
   function handleChange(name, value) {
     setFormData({

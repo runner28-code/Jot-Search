@@ -45,6 +45,7 @@ exports.IUSER = {
     workAuthorized: "",
     disability: "",
     occupation: "",
+    employmentPreference: "",
     activelyLooking: true,
 };
 exports.USERKEYS = Object.keys(exports.IUSER);

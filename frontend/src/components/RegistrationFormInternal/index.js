@@ -14,6 +14,7 @@ import {
   inputValidation,
   formatFormObj,
   renderButtonOrLoading,
+  renderErrorBlock,
   renderHeader
 } from './utils';
 import * as ROUTES from '../../routes';
@@ -36,7 +37,6 @@ const defaultState = {
   employmentPreference: '',
   workspace: '',
   linkedin: '',
-  referredBy: '',
   resume: {},
   password: '',
   verifyPassword: '',

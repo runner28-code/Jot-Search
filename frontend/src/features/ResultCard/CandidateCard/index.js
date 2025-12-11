@@ -26,6 +26,7 @@ export default function CandidateCard({ data, disableLink }) {
     <div
       className='relative w-full'
       key={data.id}
+    >
       <LinkWrapper 
         link={link}
         disableLink={disableLink}
@@ -135,7 +136,6 @@ function LinkWrapper({ children, link, disableLink }) {
       to={link}
       className={linkStyles}
       tabIndex='0'
-    >
       {children}
     </Link>
   )

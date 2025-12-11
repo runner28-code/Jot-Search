@@ -1,3 +1,4 @@
+import { Link, useLocation } from 'react-router-dom';
 import * as ROUTES from '../../../routes';
 import PropTypes from 'prop-types';
 import FavoriteButton from '../FavoriteButton';
@@ -28,7 +29,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
           <div className='h-48 w-48 p-4 mr-18 flex justify-center items-center border border-solid border-smokeGray'>
             { renderCardImage(data) }
           </div>
-          <p className='text-sm text-zinc-700 font-roboto mt-8'>{ data.company?.name }</p>
 
           {/* Title */}
           <div className='flex grow'>

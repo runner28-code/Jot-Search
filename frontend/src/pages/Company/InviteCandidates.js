@@ -80,7 +80,6 @@ export default function InviteCandidates({ company }) {
               setSelected([])
             }
           }}
-          disabled={selected.length === 0 || isSendingCandidates}
         >
           <MailIcon className='inline-block mr-2' />
           Send Now
@@ -121,7 +120,6 @@ function getTagLine({ candidate }) {
   let tagLine = '';
   if (candidate?.occupation && candidate?.companyName) {
     tagLine = `${candidate.occupation} @ ${candidate.companyName}`
-// Temp comment
   }else if (candidate?.occupation) {
     tagLine = candidate.occupation
   }else if (candidate?.companyName) {

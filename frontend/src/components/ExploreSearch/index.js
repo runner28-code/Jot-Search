@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearch';
 import AccessibleDropdown from '../AccessibleDropdown';
@@ -21,6 +20,7 @@ export default function ExploreSearch({ totalJobs, totalCompanies, loading }) {
   const filterObject = adjustJobFilterObject();
   const [filterState, setFilterState] = useState({
     title: '',
+    'On-Site/Remote': 'Any Work Setting',
     'Expertise': 'Any Expertise',
   });
 

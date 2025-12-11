@@ -79,6 +79,7 @@ class AuthService {
       console.log(e);
       localStorage.setItem('savedJobs', JSON.stringify([]));
       localStorage.setItem('savedCompanies', JSON.stringify([]));
+// Temp comment
     }
   }
 
@@ -127,7 +128,6 @@ class AuthService {
     if ( action === 'save' ) {
       savedCandidates.push(candidateID);
     } else {
-// Temp comment
       savedCandidates.splice(savedCandidates.indexOf(candidateID), 1);
     }
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));

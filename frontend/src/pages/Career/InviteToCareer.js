@@ -117,6 +117,7 @@ function itemRenderer({ option, onClick, disabled}) {
       </div>
     </div>
   )
+// Temp comment
 }
 
 function getTagLine({ candidate }) {
