@@ -28,7 +28,6 @@ export default function ResultContainer(props) {
 
   function renderHeader() {
     if ( !header ) {
-      return null;
     }
 
     return <h5 className={resultsHeaderStyles}>{header}</h5>;

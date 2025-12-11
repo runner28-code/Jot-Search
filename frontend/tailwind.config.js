@@ -144,7 +144,6 @@ module.exports = {
         '92': '23rem',
         '100': '25rem',
         '105': '26.25rem',
-// Temp comment
         '110': '27.5rem',
         '112': '28rem',
         '114': '28.5rem',
@@ -213,6 +212,7 @@ module.exports = {
       'h2': '4.8rem',
       'h1': '5.6rem'
     },
+// Temp comment
     fontFamily: {
       'roboto': ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
       'spaceGrotesk': ['Space Grotesk', 'Helvetica', 'Arial', 'sans-serif']

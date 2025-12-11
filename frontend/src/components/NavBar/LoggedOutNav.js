@@ -19,7 +19,6 @@ export default function NavBar() {
     return <DesktopNavBarLayout />
   }
 }
-
 function MobileNavBarLayout() {
   const { width } = useWindowDimensions();
   return (
@@ -94,7 +93,6 @@ function DesktopNavBarLayout() {
             alt='linkedin'
           />
         </a>
-// Temp comment
       </div>
     </nav>
   )

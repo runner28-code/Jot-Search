@@ -49,6 +49,7 @@ exports.CompanyFilter = {
 exports.USER_FILTER = {
     firstname: "firstname",
     lastname: "lastname",
+    role: "role",
     roles: "roles",
     city: "city",
     state: "state",
@@ -63,7 +64,6 @@ exports.USER_FILTER = {
     workAuthorized: "workAuthorized",
     employeeType: "employeeType",
     willRelocate: "willRelocate",
-    experienceYears: "experienceYears",
     seniority: "seniority",
     experience: "experience",
     employmentPreference: "employmentPreference",

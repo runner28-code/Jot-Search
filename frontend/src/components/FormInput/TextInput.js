@@ -35,7 +35,6 @@ function renderLabel( label, required, name ) {
     return null;
   }
 
-// Temp comment
   const labelString = label && required ? `${label} *` : label;
   return (
     <label

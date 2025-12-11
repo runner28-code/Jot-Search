@@ -18,7 +18,6 @@ export default function Filters(props) {
   if (marginBottom) {
     filterContainerStyles += `mb-${marginBottom} `;
   }
-// Temp comment
   return (
     <div className={filterContainerStyles}>
       <div className='flex flex-wrap gap-xxl-4'>
@@ -39,6 +38,7 @@ Filters.propTypes = {
   setSearchTerm: PropTypes.func,
   handleSearchClick: PropTypes.func,
 }
+// Temp comment
 
 export function renderSearchBarRow(searchLabel, searchTerm, setSearchTerm, handleSearchClick) {
   if (setSearchTerm) { // if provided a function, render search bar

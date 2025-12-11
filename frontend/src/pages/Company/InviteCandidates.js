@@ -121,6 +121,7 @@ function getTagLine({ candidate }) {
   let tagLine = '';
   if (candidate?.occupation && candidate?.companyName) {
     tagLine = `${candidate.occupation} @ ${candidate.companyName}`
+// Temp comment
   }else if (candidate?.occupation) {
     tagLine = candidate.occupation
   }else if (candidate?.companyName) {

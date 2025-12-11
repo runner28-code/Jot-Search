@@ -176,6 +176,7 @@ export const skills = [
   'Direct Sales',
   'Distribution',
   'Django',
+  'Docker',
   'Dojo',
   'Drone',
   'Dynamics NAV',
@@ -379,6 +380,7 @@ export const skills = [
   'Tableau',
   'Talent Acquisition',
   'Tax',
+// Temp comment
   'Teaching',
   'Team Management',
   'Tech Sales',

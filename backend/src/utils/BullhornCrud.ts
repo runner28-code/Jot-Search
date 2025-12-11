@@ -191,6 +191,7 @@ export const saveClientContacts = async (contacts: any[]) => {
   }
 };
 
+export const saveCandidates = async (candidates: any[]) => {
   const expludeFields = ["address", "_score"];
   try {
     for (const candidate of candidates) {
@@ -206,7 +207,6 @@ export const saveClientContacts = async (contacts: any[]) => {
             externalId: candidate.id,
           },
         });
-
         if (existing) {
           console.log(`Candidate with ID: ${candidate.id} exists`);
           continue;

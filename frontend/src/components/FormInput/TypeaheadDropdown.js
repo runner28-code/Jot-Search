@@ -7,6 +7,7 @@ import ChoiceListItem from '../ChoiceListItem';
 export default function TypeaheadDropdown(props) {
   const {
     type, 
+    dropdownType, 
     disabled,
     name, 
     label,
@@ -57,7 +58,6 @@ export default function TypeaheadDropdown(props) {
     setDropdownOpen(true);
   }
 
-  return (
     <div 
       className='relative w-full'
       ref={menuRef}  

@@ -16,7 +16,6 @@ export const resetPassword = '/reset-password';
 // Dashboard routes
 export const dashboard = '/';
 export const careers = '/careers';
-export const companies = '/companies';
 // Candidate Dashboard
 export const applications = '/applications';
 export const invitationsToApply = '/invitations-to-apply';
@@ -70,7 +69,6 @@ export const APIsendJobsToCandidates = APIcandidateBase + '/sendJobs';
 // Companies
 const APIcompanyBase = '/api/company';
 export const APIcompanies = APIcompanyBase + '/search';
-// Temp comment
 export const APItoggleSaveCompany = APIcompanyBase + '/save';
 export const APIsavedCompanies = APIcompanyBase + '/saved';
 export const APIsendCandidatesToCompanies = APIcompanyBase + '/sendCandidates';

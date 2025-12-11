@@ -41,12 +41,10 @@ exports.IUSER = {
     hourlyRate: "",
     willRelocate: "",
     willReceiveNotification: false,
-// Temp comment
     ethnicity: "",
     workAuthorized: "",
     disability: "",
     occupation: "",
-    employmentPreference: "",
     activelyLooking: true,
 };
 exports.USERKEYS = Object.keys(exports.IUSER);

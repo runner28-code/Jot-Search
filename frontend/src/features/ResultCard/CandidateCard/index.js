@@ -26,7 +26,6 @@ export default function CandidateCard({ data, disableLink }) {
     <div
       className='relative w-full'
       key={data.id}
-    >
       <LinkWrapper 
         link={link}
         disableLink={disableLink}
@@ -216,7 +215,6 @@ function InfoLabel({ label, value }) {
 }
 
 InfoLabel.propTypes = {
-// Temp comment
   label: PropTypes.string.isRequired,
   value: PropTypes.bool.isRequired,
 }

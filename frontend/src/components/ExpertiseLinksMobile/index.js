@@ -15,7 +15,6 @@ export default function ExpertiseLinksMobile() {
     <section className='mt-70 mb-24 flex flex-col items-center'>
       <h4 className='text-h5 font-spaceGrotesk font-semibold text-darkGray text-center'>
         Browse Opportunities by Career Expertise
-      </h4>
       <div className='mt-20 flex flex-wrap justify-center'>
         {/* Software & Engineering */}
         <Link
@@ -81,7 +80,6 @@ export default function ExpertiseLinksMobile() {
             src={financeIcon}
             alt='Finance Icon'
             className={iconStyles}
-// Temp comment
           />
           <span className={textStyles}>Finance</span>
         </Link>

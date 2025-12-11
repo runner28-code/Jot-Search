@@ -11,6 +11,7 @@ const ResumePreview = ({ resumeUrl }) => {
   const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
 
+  const { pdfDocument } = usePdf({
     file: resumeUrl,
     page,
     canvasRef,
@@ -26,6 +27,7 @@ const ResumePreview = ({ resumeUrl }) => {
       {!pdfDocument && <LoadingSpinner />}
       <canvas
         ref={canvasRef}
+// Temp comment
         className='rounded-lg'
       />
       {Boolean(pdfDocument && pdfDocument.numPages) && (

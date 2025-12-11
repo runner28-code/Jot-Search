@@ -181,7 +181,6 @@ class GetroService {
                                     result = [];
                                 }
                             }
-                            yield (0, GetroCrud_1.saveMembers)(result);
                         }
                         console.log(`${total} / ${(page - 1) * per_page + items.length}`);
                         page++;

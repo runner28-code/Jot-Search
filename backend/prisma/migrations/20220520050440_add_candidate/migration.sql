@@ -76,7 +76,6 @@ CREATE TABLE "Candidate" (
     "smsOptIn" TEXT,
     "source" TEXT,
     "specialities" TEXT,
-    "ssn" TEXT,
     "stateAdditionalWithholdingsAmount" TEXT,
     "stateExemptions" TEXT,
     "stateFilingStatus" TEXT,

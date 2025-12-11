@@ -51,7 +51,6 @@ export const educationChoices = [
   'Bachelor',
   'Masters',
   'Doctoral',
-  'Post Doctoral',
   'High School',
   'Some College',
   'Technical College'
@@ -72,6 +71,7 @@ export const communityChoices = [
   'Atento Capital',
   'Tulsa Remote',
   'Teach for America',
+  'Bootup',
   'Tulsa Tomorrow',
   'Holberton',
   'Campus Tulsa',

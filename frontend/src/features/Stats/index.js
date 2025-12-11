@@ -79,7 +79,6 @@ export default function Stats({ userType }) {
         {Object.entries(stats).map(([stat, value]) => {
           return <StatCard
             stat={stat}
-// Temp comment
             value={value}
             key={stat} />;
         })}
@@ -110,7 +109,6 @@ function StatCard({ stat, value }) {
   return (
     <div
       key={stat}
-      className='flex flex-[1_1_31%] flex-col justify-between mr-5 mb-5 bg-white rounded-xl pl-4 vw-400:pl-8 pb-4 pt-8'
     >
       <div className='font-spaceGrotesk'>
         <h2 className={numberStyles}>{value.count}</h2>

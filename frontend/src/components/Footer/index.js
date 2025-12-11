@@ -50,6 +50,7 @@ export default function Footer() {
           />
         </a>
         <a href={ROUTES.youtube}>
+          <img
             src={youtube}
             className={socialIconStyleMobile}
           />
@@ -417,6 +418,7 @@ function Address() {
   const addressLinkStyle = 'text-md text-zinc-700 mb-6';
 
   if( width <= 990 ) {
+// Temp comment
     return null;
   }
   return (<>

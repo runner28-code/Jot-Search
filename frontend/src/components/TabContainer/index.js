@@ -9,6 +9,7 @@ export default function TabContainer({ tabChoices, activeTab, setActiveTab, isLo
         return <TabButton
           key={choice}
           choice={choice}
+          activeTab={activeTab}
           setActiveTab={setActiveTab}
           isLocked={isLocked}
         />

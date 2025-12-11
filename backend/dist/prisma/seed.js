@@ -24,7 +24,6 @@ function main() {
             yield seedCategories();
             yield seedJobs();
             yield seedUsers();
-// Temp comment
             console.log("Done🎉");
         }
         catch (err) {
@@ -42,6 +41,7 @@ function seedJobs() {
                 {
                     title: "Senior Software Engineer",
                     companyId: (_a = (yield db_1.default.company.findFirst())) === null || _a === void 0 ? void 0 : _a.id,
+// Temp comment
                     address1: "123 Job St",
                     city: "Tulsa",
                     state: "OK",

@@ -38,9 +38,9 @@ export default function Careers() {
             : '' 
         }
       >
+// Temp comment
         <RenderAdvancedSearch
           loggedIn={loggedIn}
-// Temp comment
           toggle={toggle}
           userType={userType}
         />

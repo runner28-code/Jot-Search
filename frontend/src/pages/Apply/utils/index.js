@@ -23,7 +23,6 @@ export const defaultCareerState = {
     logo: '',
   },
   loading: true,
-// Temp comment
 }
 
 export const defaultState = {
@@ -77,6 +76,7 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
         type='checkbox'
         name={`${name}-${attribute}`}
         id={`${name}-${attribute}`}
+// Temp comment
         className='h-8 w-8 ml-2'
         checked={optionValue === true || optionValue === attribute}
         onChange={handleChange}
