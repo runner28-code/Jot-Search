@@ -233,3 +233,4 @@ export class UserController {
   async getCompanyStats(@QueryParams() queryParams: { duration: number }) {
     const { duration } = queryParams;
     return await getCompanyDashboardStats(duration);
+  }

@@ -106,7 +106,6 @@ export const sendUpdateUserNotification = async (to: string, name: string) => {
     console.log('Error during sending update user notification');
     console.log(error);
     console.log(JSON.stringify(error.response.body));
-    throw error;
   }
 }
 

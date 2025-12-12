@@ -273,6 +273,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], JobController.prototype, "getJobsByFilterFromMain", null);
 __decorate([
+    (0, routing_controllers_1.Get)("/apply"),
     __param(0, (0, routing_controllers_1.QueryParam)("candidate")),
     __param(1, (0, routing_controllers_1.QueryParam)("job")),
     __metadata("design:type", Function),

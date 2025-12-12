@@ -37,6 +37,7 @@ const defaultState = {
   employmentPreference: '',
   workspace: '',
   linkedin: '',
+  referredBy: '',
   resume: {},
   password: '',
   verifyPassword: '',

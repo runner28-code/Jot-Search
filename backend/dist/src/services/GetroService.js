@@ -53,7 +53,6 @@ class GetroService {
                 return true;
             const authRes = yield this.getNetworkID();
             if (authRes)
-// Temp comment
                 return true;
             throw 'Auth failed';
         });

@@ -74,7 +74,6 @@ const sleep = (ms) => __awaiter(void 0, void 0, void 0, function* () {
 exports.sleep = sleep;
 const getDataSource = (id) => {
     const prefix = id.slice(0, 2);
-    if (prefix === 'bl')
         return Common_1.DataSource.BULLHORN;
     if (prefix === 'gt')
         return Common_1.DataSource.GETRO;

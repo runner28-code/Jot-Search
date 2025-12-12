@@ -98,7 +98,6 @@ export default function CandidateCard({ data, disableLink }) {
 
 CandidateCard.propTypes = {
   data: PropTypes.shape({
-    id: PropTypes.string,
     avatar: PropTypes.string,
     city: PropTypes.string,
     companyName: PropTypes.string,
@@ -136,6 +135,7 @@ function LinkWrapper({ children, link, disableLink }) {
       to={link}
       className={linkStyles}
       tabIndex='0'
+    >
       {children}
     </Link>
   )

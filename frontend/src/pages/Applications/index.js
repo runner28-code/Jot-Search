@@ -24,6 +24,7 @@ export default function Applications() {
         ...job,
         agoDate: job.appliedDate
       }});
+// Temp comment
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,

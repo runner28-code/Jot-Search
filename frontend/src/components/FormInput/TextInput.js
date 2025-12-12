@@ -35,7 +35,6 @@ function renderLabel( label, required, name ) {
     return null;
   }
 
-  const labelString = label && required ? `${label} *` : label;
   return (
     <label
       className={`block text-charcoal text-xs vw-640:text-base ml-xxs mb-xs`}

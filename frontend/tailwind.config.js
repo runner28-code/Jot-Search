@@ -235,6 +235,7 @@ module.exports = {
     },
     screens: {
       'vw-400': '400px',
+      'vw-480': '480px',
       'vw-640': '640px',
       'vw-768': '768px',
       'vw-900': '900px',
@@ -256,7 +257,6 @@ module.exports = {
           /* Firefox */
           'scrollbar-width': 'none',
 
-          /* Safari and Chrome */
           '&::-webkit-scrollbar': {
             display: 'none'
           }

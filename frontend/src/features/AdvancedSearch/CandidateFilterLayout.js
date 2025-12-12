@@ -71,7 +71,6 @@ export default function CandidateFilterLayout(props) {
   }
   console.log(filterObject)
 
-// Temp comment
   return (
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
@@ -85,7 +84,6 @@ export default function CandidateFilterLayout(props) {
           required={true}
           value={filterObject.skills}
           onChange={toggleSkills}
-          choices={skills}
         />
       </div>
       <div className='flex flex-wrap gap-xxl-4'>

@@ -68,6 +68,7 @@ export const getSavedCompanies = async (candidateId: string) => {
     console.log({ savedCompanies: candidate?.savedCompanies });
     return {
       companies: candidate?.savedCompanies,
+      result: true,
     };
   } catch (e) {
     console.log(e);

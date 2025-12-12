@@ -211,6 +211,7 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
     </div>
   )
 }
+
 AdvancedSearchCandidate.propTypes = {
   disabledTabs: PropTypes.bool,
   toggle: PropTypes.bool

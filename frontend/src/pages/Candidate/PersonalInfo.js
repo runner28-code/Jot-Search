@@ -69,7 +69,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
     setFormData({
       ...formData,
       referredBy: value
-    })
     setReferralChoice(false);
   }
 
@@ -358,7 +357,6 @@ function renderEditIcon(candidateData, setEditMode) {
     return null;
   }
 
-// Temp comment
   const handleClick = () => {
     setEditMode(true);
   }

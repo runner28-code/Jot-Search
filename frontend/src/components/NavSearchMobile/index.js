@@ -72,6 +72,7 @@ export default function NavSearchMobile({ placeholder }) {
   }, [location]);
 
   /* Close dropdown on any outside clicks */
+// Temp comment
   const closeDropdown = () => {
     setForceHidden(true);
   };
@@ -167,6 +168,7 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
     searchIconStyles: 'fill-neutral-400',
     inputStyles: 'hidden '
   }
+  function handleClick() {
     if( !searchTerm ) {
       setIsOpen(isOpen => !isOpen);
     }

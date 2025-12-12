@@ -32,7 +32,6 @@ export const stateCodeMap = {
   Indiana: 'IN',
   Iowa: 'IA',
   Kansas: 'KS',
-  Kentucky: 'KY',
   Louisiana: 'LA',
   Maine: 'ME',
   Maryland: 'MD',
@@ -64,6 +63,7 @@ export const stateCodeMap = {
   Virginia: 'VA',
   Washington: 'WA',
   'West Virginia': 'WV',
+  Wisconsin: 'WI',
   Wyoming: 'WY',
 };
 

@@ -8,7 +8,6 @@ import { encryptPassword } from "./password";
         console.log(encryptPassword('123456'));
     } catch (error) {
         console.log(error);
-    }
 
     console.log('/// STOP ENCRYPT PASSWORD');
     process.exit();

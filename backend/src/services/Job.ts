@@ -145,3 +145,4 @@ export const getJobsList = async (jobs_ids: string[]) => {
       },
     });
     return jobs.map((job) => job.title!);
+  } catch (error) {

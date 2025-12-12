@@ -1,3 +1,4 @@
+// Temp comment
 import PropTypes from 'prop-types';
 
 // Images

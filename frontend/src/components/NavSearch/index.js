@@ -134,6 +134,7 @@ function renderResults( results ) {
       height='75'
       width='75'
     />;
+  }
 
   const { jobs, companies, candidates } = results;
   if ( !jobs?.length && !companies?.length && !candidates?.length ) {

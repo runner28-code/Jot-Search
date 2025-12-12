@@ -2,7 +2,6 @@ export type Application = {
     id: string;
     candidate: string;
     job: string;
-    appliedOn: string;
 }
 
 export type SavedJob = {
@@ -35,4 +34,5 @@ export type Job = {
     salaryUnit?: string;
     startDate?: string;
     type?: string;
+    isDeleted?: string;
     postedAt?: string;

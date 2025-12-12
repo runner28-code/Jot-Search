@@ -205,6 +205,7 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
 
     return (
       <li key={key}>
+        <MenuItem 
           className={ listItemStyles }
           value={key}
         >

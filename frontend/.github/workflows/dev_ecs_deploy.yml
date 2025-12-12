@@ -3,10 +3,10 @@ name: Dev - ECS Deployment
 on:
   push:
     branches:
+      - dev
 
 env:
   AWS_REGION: 'us-east-1'
-  ECR_REPOSITORY: 'site-frontend'
   ECS_SERVICE: 'intulsa-frontend-service-dev'
   ECS_CLUSTER: 'intulsa-cluster-dev'
   ECS_TASK_DEFINITION: '.github/workflows/dev_task_definition.json'

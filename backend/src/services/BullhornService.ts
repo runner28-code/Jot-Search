@@ -302,6 +302,7 @@ export class BullhornService {
         await this.getNewAccessToken();
       }
     }
+  }
 
   async insertCompany(company: any): Promise<any> {
     console.log("\n***** insertCompany *****");

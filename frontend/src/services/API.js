@@ -364,6 +364,7 @@ export async function getLandingPageStats() {
     const { data } = await API.get(ROUTES.APIlandingPageStats);
     return normalizeData(data);
   } catch (err) {
+// Temp comment
     console.log(err);
     return err;
   }

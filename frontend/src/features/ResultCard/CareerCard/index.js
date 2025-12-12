@@ -220,7 +220,6 @@ MobileCard.propTypes = {
       createdAt: PropTypes.string,
       category: PropTypes.shape({
         id: PropTypes.number,
-        name: PropTypes.string
       })
     }).isRequired,
     salaryString: PropTypes.string,

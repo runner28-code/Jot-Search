@@ -9,6 +9,7 @@ import { DATASET_MAIN, Tables } from "../types/Common";
 
 (async () => {
     try {
+        console.log('/// START ENCRYPT ALL PASSWORDS');
 
         const query = `
             SELECT id,email,password FROM \`${DATASET_MAIN}.${Tables.USER}\`
