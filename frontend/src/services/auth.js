@@ -1,5 +1,4 @@
 import decode from 'jwt-decode';
-// Temp comment
 import { getSavedJobs, getSavedCompanies, getSavedCandidates } from './API';
 
 class AuthService {

@@ -5,7 +5,6 @@ import TabContainer from '../../components/TabContainer';
 import CandidateFilterLayout from './CandidateFilterLayout';
 import CompanyFilterLayout from './CompanyFilterLayout';
 import CareerFilterLayout from './CareerFilterLayout';
-// Temp comment
 import { useGetJobs, prefetchJobs } from '../../hooks/queries/useGetJobs';
 import { useGetCompanies, prefetchCompanies } from '../../hooks/queries/useGetCompanies';
 import { useGetCandidates, prefetchCandidates } from '../../hooks/queries/useGetCandidates';
@@ -166,7 +165,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
   const { filterTemplate, activeResults, totalResults, isLoading, prefetchFunc } = propsByTab[activeTab];
 
   const filterProps = {
-    handleFilterChange: handleFilterChange,
     defaultFilterObject: filterTemplate,
     filterObject: filterObject,
     searchTerm: filterObject.title,

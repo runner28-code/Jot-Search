@@ -25,6 +25,7 @@ export type Company = {
   locations?: string;
   collections?: string;
 };
+
 export type Job = {
   id: string;
   application_method?: string;

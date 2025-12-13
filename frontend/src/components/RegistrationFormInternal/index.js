@@ -138,7 +138,6 @@ export default function RegistrationFormInternal(loggedIn) {
     const { firstName, lastName, email, linkedin, password, verifyPassword } = event.target;
     setErrorBlock('');
     setErrors([]);
-    setFormObj({
       ...formObj,
       firstName: firstName.value,
       lastName: lastName.value,

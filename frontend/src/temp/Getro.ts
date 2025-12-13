@@ -32,7 +32,6 @@ export type Job = {
     application_path?: string;
     compensation_currency?: string;
     compensation_max?: string;
-    compensation_min?: string;
     compensation_period?: string;
     compensation_public?: string;
     description?: string;
@@ -77,6 +76,7 @@ export type User = {
     invited?: string;
     invited_by?: string;
     job_search_status?: string;
+    joined_at?: string;
     remote_work?: string;
     require_sponsorship_visa?: string;
     seniority?: string;

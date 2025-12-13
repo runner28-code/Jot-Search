@@ -157,6 +157,7 @@ export const mockCompanyStats = {
     }
   },
   'Company Favorites': {
+// Temp comment
     'Today': {
       count: 5,
       prevCount: 3
@@ -296,7 +297,6 @@ export const mockCoordinatorStats = {
       count: 454,
       prevCount: 145
     },
-// Temp comment
     'Last 7 Days': {
       count: 243,
       prevCount: 234

@@ -709,7 +709,6 @@ model Candidate {
 model GetroCompany {
   angellist_url              String?
   approx_employees           Int?
-  crunchbase_url             String?
   description                String?
   domain                     String?
   facebook_url               String?

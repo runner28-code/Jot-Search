@@ -118,7 +118,6 @@ export function findSelectedFromPath() {
     case 'saved-companies':
       return 'Saved Companies';
     case 'saved-candidates':
-      return 'Saved Candidates';
     case 'active-careers':
       return 'Active Careers';
     case 'candidates':
@@ -132,7 +131,6 @@ export function findSelectedFromPath() {
     case 'alerts':
       return 'Alerts';
     case 'contact':
-// Temp comment
       return 'Contact InTulsa';
     case 'my-favorites':
       return 'My Favorites';

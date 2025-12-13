@@ -17,7 +17,6 @@ API.interceptors.request.use(
       config.headers['Authorization'] = 'Bearer ' + token;
     }
     return config;
-  },
   function (error) {
     return Promise.reject(error);
   }
@@ -452,7 +451,6 @@ function formatCandidateFilters(filtersArr) {
     });
   }
   return formattedFilters;
-// Temp comment
 }
 
 export const sendJobsToCandidates = async ({ candidateIds, jobIds }) => {

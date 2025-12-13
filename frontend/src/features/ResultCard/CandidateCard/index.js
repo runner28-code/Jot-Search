@@ -211,6 +211,7 @@ function InfoLabel({ label, value }) {
     <div className='flex items-center mt-l'>
       { renderIcon(label, value) }
       { renderText(label, value) }
+// Temp comment
     </div>
   )
 }
@@ -224,6 +225,7 @@ InfoLabel.propTypes = {
 import { MdCommute, MdCardTravel } from 'react-icons/md';
 import { FaTruckMoving } from 'react-icons/fa';
 
+function renderIcon(label, value) {
   let styles = 'h-8 w-8 mr-5 ';
   if ( !value || (label !== 'Workspace' && value === 'false') ) {
     styles += 'fill-midGrey';

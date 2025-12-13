@@ -1015,3 +1015,4 @@ export class BullhornService {
           this.saveJobFunc([jobDetail])
         }
       }
+    } catch (error: any) {

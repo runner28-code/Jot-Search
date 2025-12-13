@@ -234,3 +234,4 @@ export class UserController {
     const { duration } = queryParams;
     return await getCompanyDashboardStats(duration);
   }
+

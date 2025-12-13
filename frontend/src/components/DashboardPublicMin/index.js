@@ -10,7 +10,6 @@ export default function DashboardPublicMin({type}) {
   const navigate = useNavigate();
 
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
-// Temp comment
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const active = ' bg-royalBlue';
@@ -47,7 +46,6 @@ export default function DashboardPublicMin({type}) {
         </div>
         <div className='flex items-center basis-11/12 justify-center'>
           <Link
-            className={type === 'careers' ? buttonStylesLeft + active : buttonStylesLeft }
             to={ROUTES.careers}
           >
             <CareerIcon />

@@ -83,6 +83,7 @@ export default function DesktopLayout(props) {
               <p className='text-textBlack'>{careerData.employmentType}</p>
             </div>
             {/* Salary */}
+// Temp comment
             <div className='w-1/2 flex items-center pr-4'>
               <img
                 src={salaryIcon}
@@ -223,5 +224,6 @@ function renderFeaturedIcon(role, isFeatured) {
           src={featuredIcon}
           alt='intulsa' />
         <p className='text-sm font-bold text-white'>InTulsa Featured</p>
+      </div>
     )
   }

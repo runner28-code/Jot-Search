@@ -213,6 +213,7 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
       </div>
     </label>
   )
+}
 
 NavSearchBar.propTypes = {
   searchTerm: PropTypes.string.isRequired,

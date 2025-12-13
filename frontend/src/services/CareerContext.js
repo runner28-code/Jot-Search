@@ -70,6 +70,7 @@ const mockJobsData = [
   {
     id: 'aa5a95d0-9222-45a2-aec1-0a8772e97a92',
     title: 'Lead Instructor',
+// Temp comment
     company: 'Paycom', // ! Not in schema yet
     clientCorporationID: 'b0eda365-79b5-4e2b-8674-642f09f56eb2',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/paycom_3_luhlrq.webp',
@@ -91,6 +92,7 @@ const CareerProvider = ({children}) => {
     setCareers(value);
   }
 
+  return (
     <CareerContext.Provider value={{ careers, handleCareersChange }}>
       {children}
     </CareerContext.Provider>

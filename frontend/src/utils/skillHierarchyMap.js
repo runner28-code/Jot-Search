@@ -409,3 +409,4 @@ export const skills = [
   'Wireframing',
   'Wireshark',
   'Wordpress',
+  'Writing',

@@ -111,7 +111,6 @@ function renderLabel(name, label, required) {
     >
       {label}
     </label>
-  )
 }
 
 

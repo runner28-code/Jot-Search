@@ -134,6 +134,7 @@ let JobController = class JobController {
                 });
                 // console.log({ jobs });
                 return {
+// Temp comment
                     jobs: extendedJobs,
                     total,
                     message: null,
@@ -343,7 +344,6 @@ const normalizeFilters = (filters) => {
     }
     else {
         Object.keys(filters).forEach((key) => {
-// Temp comment
             filterObj[key] = normalizeValue(filters[key]);
         });
     }

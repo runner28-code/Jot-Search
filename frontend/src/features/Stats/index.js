@@ -80,7 +80,6 @@ export default function Stats({ userType }) {
           return <StatCard
             stat={stat}
             value={value}
-            key={stat} />;
         })}
       </div>
     </div>
@@ -124,7 +123,6 @@ StatCard.propTypes = {
   stat: PropTypes.string.isRequired,
   value: PropTypes.shape({
     count: PropTypes.number.isRequired,
-// Temp comment
     compare: PropTypes.number.isRequired
   }).isRequired
 }

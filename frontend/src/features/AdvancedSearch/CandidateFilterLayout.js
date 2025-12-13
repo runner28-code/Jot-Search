@@ -64,7 +64,6 @@ export default function CandidateFilterLayout(props) {
   const toggleSkills = (skill) => {
     const skills = filterObject.skills ?? []
     if (skills.includes(skill)) {
-      handleFilterChange('skills', skills.filter(s => s !== skill))
     } else {
       handleFilterChange('skills', [...skills, skill])
     }
@@ -81,7 +80,6 @@ export default function CandidateFilterLayout(props) {
           name='skills'
           label='Your skills (select at least 3)'
           placeholder='Select all that apply'
-// Temp comment
           required={true}
           value={filterObject.skills}
           onChange={toggleSkills}

@@ -170,7 +170,6 @@ function renderChoices(userType, handleClick) {
   const choicesLength = choicesToRender.length;
   const selected = findSelectedFromPath();
 
-// Temp comment
   return (<>
     {choicesToRender.map((choice, index) => renderChoice(choice, selected, index, choicesLength, handleClick))}
   </>)

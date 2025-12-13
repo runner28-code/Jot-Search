@@ -50,7 +50,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
             type={'company'}
             data={data}
             isFavoriteOverride={isFavoriteOverride} />
-      }
     </div>
   )
 }
@@ -66,7 +65,6 @@ CompactCompanyCard.propTypes = {
   active: PropTypes.bool,
   agoDate: PropTypes.string,
   isFavoriteOverride: PropTypes.bool,
-// Temp comment
   agoText: PropTypes.string,
   selectableProps: PropTypes.shape({
     selectable: PropTypes.bool,

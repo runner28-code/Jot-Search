@@ -25,6 +25,7 @@ const parseBullhornCandidateToUser = (data) => {
         referredBy: data.referredBy,
         roles: data.skillSet,
         description: data.description,
+// Temp comment
         phone: data.phone || data.workPhone || data.mobile,
         status: data.status,
         username: data.username,
@@ -101,7 +102,6 @@ const parseBullhornJobToMain = (data) => {
         companyId: `bh-${data.clientCorporationID}`,
         interviews: data.interviews,
         onSite: data.onSite,
-// Temp comment
         salary: data.salary,
         salaryUnit: data.salaryUnit,
         startDate: data.startDate,
