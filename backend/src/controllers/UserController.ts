@@ -1,6 +1,5 @@
 import {
   Controller,
-  Param,
   Body,
   Get,
   Post,
@@ -235,3 +234,4 @@ export class UserController {
     return await getCompanyDashboardStats(duration);
   }
 
+  @Get("/coordinator-stats")

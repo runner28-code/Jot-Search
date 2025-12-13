@@ -70,7 +70,6 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
         filterType={filterType}
         choices={choices}
         chosen={chosen}
-// Temp comment
         handleFilterChange={handleFilterChange}
       />
     )
@@ -103,6 +102,7 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
           className='w-12 h-12'
         />
         <span className='text-md'>{filterType}</span>
+// Temp comment
       </label>
     )
   })

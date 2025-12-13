@@ -104,7 +104,6 @@ function itemRenderer({ option, onClick, disabled }) {
       onClick={onClick}
     >
       <div className="flex items-center space-x-4 pb-2 border-b-2 ">
-// Temp comment
         {avatarUrl ?
           <img
             className='w-20 h-20'

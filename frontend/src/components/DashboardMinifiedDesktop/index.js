@@ -20,7 +20,6 @@ export default function DashboardMinifiedDesktop ({ location }) {
       <CareerHeader location={location} />
     )
   }
-  if( location === 'companies' ) {
     return (<>
       <h1>Companies</h1>
     </>)
@@ -59,6 +58,7 @@ function CareerHeader ({ location }) {
           <CareerIcon className='mr-6 fill-royalBlue ' />
           <h2 className='font-spaceGrotesk text-royalBlue font-bold '>Active Careers Details</h2>
         </span>
+        <Link
           className='text-blue underline mt-6 text-blue-500 font-bold'
           to={ROUTES.careers}
         >{ back }</Link>

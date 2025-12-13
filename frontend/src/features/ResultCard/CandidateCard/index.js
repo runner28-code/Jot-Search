@@ -211,7 +211,6 @@ function InfoLabel({ label, value }) {
     <div className='flex items-center mt-l'>
       { renderIcon(label, value) }
       { renderText(label, value) }
-// Temp comment
     </div>
   )
 }

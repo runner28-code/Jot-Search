@@ -32,6 +32,7 @@ TextInput.propTypes = {
 
 function renderLabel( label, required, name ) {
   if ( !label ) {
+// Temp comment
     return null;
   }
 
@@ -41,7 +42,6 @@ function renderLabel( label, required, name ) {
       className={`block text-charcoal text-xs vw-640:text-base ml-xxs mb-xs`}
       htmlFor={ name }
     >
-// Temp comment
       {labelString}
     </label>
   )

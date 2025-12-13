@@ -83,6 +83,7 @@ export default function ExpertiseLinksMobile() {
             className={iconStyles}
           />
           <span className={textStyles}>Finance</span>
+// Temp comment
         </Link>
       </div>
     </section>

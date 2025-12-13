@@ -13,6 +13,7 @@
 */
 -- AlterTable
 ALTER TABLE "Candidate" DROP COLUMN "desiredLocations",
+ADD COLUMN     "desiredLocations" TEXT[],
 DROP COLUMN "employmentPreference",
 ADD COLUMN     "employmentPreference" TEXT[];
 
@@ -28,3 +29,4 @@ ADD COLUMN     "notes" JSONB,
 DROP COLUMN "numEmployees",
 ADD COLUMN     "numEmployees" INTEGER,
 DROP COLUMN "owner",
+ADD COLUMN     "owner" JSONB;

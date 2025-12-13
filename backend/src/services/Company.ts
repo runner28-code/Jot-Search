@@ -23,6 +23,7 @@ export const saveCompany = async (company: string, candidate: string) => {
         },
         data: {
           savedCompanies: {
+            disconnect: {
               id: company,
             },
           },
@@ -72,3 +73,4 @@ export const getSavedCompanies = async (candidateId: string) => {
   } catch (e) {
     console.log(e);
     return { result: false, message: e };
+  }

@@ -33,6 +33,7 @@ export default function Companies() {
         userType={userType}
         togglePassState={togglePassState}
         toggle={toggle}
+// Temp comment
       />
       <div 
         className={ !loggedIn && width <= 990 ? 'px-[5%]' 
@@ -54,7 +55,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   if( width <= 990 && userType === 'candidate' ) {
     return (<>
       <PageHeaderCandidate
-// Temp comment
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : CompanyIcon}
         backButton={true}

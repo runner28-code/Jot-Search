@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import FilterSearch from '../FilterSearchLanding';
 import LoadingSpinner from '../LoadingSpinner';
 import * as ROUTES from '../../routes';
-// Temp comment
 
 export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading }) {
   const navigate = useNavigate();
@@ -21,6 +20,7 @@ export default function ExploreSearchMobile({ totalJobs, totalCompanies, loading
     }
     if (filterState['On-Site/Remote'] !== 'Any Work Setting') {
       params['On-Site/Remote'] = filterState['On-Site/Remote'];
+// Temp comment
     }
     if (filterState.expertise !== 'Any Expertise') {
       params.expertise = filterState.expertise;

@@ -427,3 +427,4 @@ export class CandidateController {
       return {
         result: false,
         error: "Please check email, jobIds and candidateIds",
+      };

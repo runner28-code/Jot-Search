@@ -72,6 +72,7 @@ export default function CompanyCard({ data }) {
                 src={linkedinIcon}
                 className='h-8 mr-5' />
               <a
+// Temp comment
                 href='#'
                 className='text-royalBlue underline'
               >

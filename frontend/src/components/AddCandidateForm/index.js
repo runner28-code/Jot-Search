@@ -30,6 +30,7 @@ const defaultState = {
   referredBy: '',
   resumeFile: {},
   password: '',
+  verifyPassword: '',
 };
 export default function RegistrationForm() {
   const {categories} = useContext(CategoryContext);

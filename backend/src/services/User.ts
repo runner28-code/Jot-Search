@@ -526,7 +526,6 @@ export const getStats = async (userId: string) => {
 
     const savedJobsCountQuery = `SELECT COUNT(*) as count FROM \`${DATASET_MAIN}.${Tables.SAVEDJOBS}\`
                                     WHERE candidate = '${userId}'`;
-
     const totalJobsCountQuery = `SELECT COUNT(*) as count FROM \`${DATASET_BULLHORN}.${Tables.JOBS}\``;
 
     const savedCompaniesCountQuery = `SELECT COUNT(*) as count FROM \`${DATASET_MAIN}.${Tables.SAVED_COMPANIES}\`
@@ -647,3 +646,4 @@ export const recovery = async (email: string) => {
 
     return { result: true };
   } catch (error) {
+    console.log(error);

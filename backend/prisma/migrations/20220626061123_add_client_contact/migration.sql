@@ -63,3 +63,4 @@ CREATE TABLE "ClientContact" (
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "ClientContact_pkey" PRIMARY KEY ("id")
+);

@@ -14,9 +14,9 @@ export const useGetJobs = ({ count, page, filtersArr, operator, enabled = true }
     { enabled }
   );
 
-// Temp comment
   return { careers: data?.jobs, jobs: data?.jobs, total: data?.total || 0, error, isLoading };
 }
+// Temp comment
 
 const getJobsKey = ({filtersArr, count, operator, page}) => {
   return ['jobs', {filtersArr, count, operator, page}];

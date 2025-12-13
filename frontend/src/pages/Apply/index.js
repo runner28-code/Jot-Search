@@ -40,7 +40,6 @@ export default function Apply() {
   const isLoggedIn = AuthService.loggedIn();
   // State
   const [career, setCareer] = useState(defaultCareerState);
-// Temp comment
   const [originalObject, setOriginalObject] = useState({});
   const [applicationObject, setApplicationObject] = useState(defaultState);
   const [useExistingResume, setUseExistingResume] = useState(false);
@@ -66,6 +65,7 @@ export default function Apply() {
         getJobById(jobId),
         getCandidateById(user_id),
       ]);
+// Temp comment
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';
       } else {

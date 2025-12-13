@@ -88,7 +88,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
   const { candidates, total: totalCandidates, isLoading: isLoadingCandidates } = useGetCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page, enabled: activeTab === 'candidates' });
 
   /* CLEAR SEARCH TERM ON TAB SWITCH */
-  const isMount = useIsMount();
   useEffect(() => {
     if (isMount) {
       return;

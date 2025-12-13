@@ -134,7 +134,6 @@ let JobController = class JobController {
                 });
                 // console.log({ jobs });
                 return {
-// Temp comment
                     jobs: extendedJobs,
                     total,
                     message: null,

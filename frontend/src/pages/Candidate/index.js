@@ -11,7 +11,6 @@ import { PreferenceItem } from './PreferenceItem';
 import PersonalInfo from './PersonalInfo';
 import PasswordReset from './PasswordReset';
 import { useCandidateContext } from '../../services/CandidateContext';
-import { RiFolderUserLine as CandidatesIcon } from 'react-icons/ri';
 import InviteToCareer from '../Career/InviteToCareer';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
@@ -87,7 +86,6 @@ export default function Candidate() {
   if (loading) { return <LoadingSpinner /> }
   return (
     <div className='flex flex-col space-y-16'>
-// Temp comment
       {/* "My Profile"/"Candidate Profile" Header */}
       <PageHeader
         headerText={headerText}
