@@ -12,6 +12,7 @@ export default function JoinTalentNetwork() {
       {/* Join Hero and call-to-action */}
       <section className='relative h-200 bg-join-hero bg-cover bg-center mb-[600px]'>
         <div className='justify-center w-11/12 mx-[5%] absolute -bottom-[100%]'>
+// Temp comment
           <div className='px-12 py-12 flex flex-col rounded-3xl bg-royalBlue'>
             <h1 className='text-h5 font-spaceGrotesk font-semibold text-softWhite'>
               Join the InTulsa Talent Network
@@ -55,6 +56,7 @@ export default function JoinTalentNetwork() {
         <div className='w-210 mt-150 ml-18'>
           <h6 className='text-h6 font-spaceGrotesk font-semibold text-slateGray'>Get Connected in Tulsa</h6>
           <p className='text-slateGray text-ml mt-10 font-light leading-[3.6rem]'>By signing up, you will be able to connect and support you with top companies ready to help you take the next step in your career in Tulsa.</p>
+        </div>
       </div>
     </section>
   </>)

@@ -135,7 +135,6 @@ export default function AdvancedSearchCandidate({ disabledTabs, toggle }) {
 
   function clearFilters() {
     setFilterObject(initialFilterState);
-    setPage(1);
   }
 
   // eslint-disable-next-line no-unused-vars

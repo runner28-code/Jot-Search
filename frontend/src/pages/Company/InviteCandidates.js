@@ -80,7 +80,6 @@ export default function InviteCandidates({ company }) {
               setSelected([])
             }
           }}
-          disabled={selected.length === 0 || isSendingCandidates}
         >
           <MailIcon className='inline-block mr-2' />
           Send Now
@@ -101,6 +100,7 @@ function itemRenderer({ option, onClick, disabled}) {
       onClick={onClick}
     >
       <div className="flex items-center space-x-4 pb-2 border-b-2 ">
+        { avatarUrl ?
           <img
             className='w-20 h-20'
             src={avatarUrl}

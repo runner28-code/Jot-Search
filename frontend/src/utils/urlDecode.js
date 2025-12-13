@@ -1,5 +1,5 @@
-// Temp comment
 export default function urlDecode(decodeString) {
+// Temp comment
   if ( !decodeString ) {
     return '';
   }

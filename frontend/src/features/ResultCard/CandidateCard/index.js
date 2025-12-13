@@ -78,6 +78,7 @@ export default function CandidateCard({ data, disableLink }) {
               <p className='text-charcoal'>{experienceString}</p>
             </div>
           </div>
+          {/* Relocation */}
           <InfoLabel
             label='Relocation'
             value={data.willRelocate}
@@ -114,7 +115,6 @@ CandidateCard.propTypes = {
     workspace: PropTypes.string,
     willRelocate: PropTypes.bool,
     user: PropTypes.object,
-  }).isRequired,
   disableLink: PropTypes.bool,
 }
 

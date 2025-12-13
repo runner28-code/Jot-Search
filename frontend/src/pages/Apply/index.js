@@ -171,7 +171,6 @@ export default function Apply() {
     }
     if( value !== 'Community Partner' ) {
       setReferralChoice(false);
-// Temp comment
       setApplicationObject({
         ...applicationObject,
         community: ''

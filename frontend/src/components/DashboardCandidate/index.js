@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import { BsBuilding as CompanyIcon } from 'react-icons/bs';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
+import { VscChevronDown as ChevronDown } from 'react-icons/vsc';
 import { VscChevronUp as ChevronUp } from 'react-icons/vsc';
 import filterIcon from '../../assets/icons/filter-toggle.svg';
 import * as ROUTES from '../../routes';
@@ -11,7 +12,6 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 
 export default function DashboardCandidate({togglePassState, toggle}) {
   const { width } = useWindowDimensions();
-
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';

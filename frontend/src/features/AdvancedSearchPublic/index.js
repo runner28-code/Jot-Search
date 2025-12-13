@@ -126,7 +126,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       setFilterObject(defaultJobFilterState);
     } else if (tabChoice === 'candidates') {
       setFilterObject(defaultCandidateFilterState);
-    }
     setActiveTab(tabChoice);
     setPage(1);
   }
@@ -153,6 +152,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       isLoading: isLoadingCandidates,
       prefetchFunc: (page) => prefetchCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page })
     },
+    companies: {
       filterTemplate: {},
       activeResults: companies,
       totalResults: totalCompanies,

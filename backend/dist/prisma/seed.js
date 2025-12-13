@@ -10,6 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
+// Temp comment
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const client_1 = require("@prisma/client");
@@ -188,5 +189,6 @@ function seedCompanies() {
                     companyDescription: "Best at test",
                     numEmployees: 50,
                 },
+            ],
         });
     });

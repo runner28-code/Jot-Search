@@ -1,6 +1,5 @@
 import { User } from "../types/User";
 import { BigQueryService } from "../services/BigQueryService";
-import { DATASET_BULLHORN, DATASET_MAIN, Tables } from "../types/Common";
 import { genUUID, isExistByCondition, isExistByID } from "./";
 import { Candidate } from "../types/Bullhorn";
 import { Job } from "../types/Main";
@@ -329,6 +328,7 @@ export const migrateJobInTPP = async (data: Job) => {
     await bgJob.getQueryResults();
     console.log(
       `Migrated Bullhorn Job (bh_id=${data.externalId}) successfully`
+    );
   } catch (error: any) {
     console.log(error.message);
     console.log(

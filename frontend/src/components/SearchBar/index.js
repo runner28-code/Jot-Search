@@ -7,7 +7,6 @@ const defaultStylesObject = {
   inputStyles: 'flex-1 h-5/6 vw-480:placeholder:text-md vw-1024:placeholder:text-xl'
 }
 
-// Temp comment
 export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, alternateStylesObject }) {
   const styleObject = { ...defaultStylesObject, ...alternateStylesObject };
   if ( marginBottom ) {
@@ -17,6 +16,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
   function handleChange(e) {
     setSearchTerm(e.target.value);
   }
+// Temp comment
 
   const placeholderText = placeholder || 'Search for companies or jobs...';
   return (

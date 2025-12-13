@@ -30,5 +30,4 @@
 #         run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 #       - name: Deploy with rsync
 #         run: rsync -avz ./ ubuntu@${{ secrets.SSH_HOST }}:/opt/intulsa --delete
-
 #       - name: Run Docker Compose

@@ -172,6 +172,7 @@ export default function RegistrationForm(loggedIn) {
         community: ''
       });
     }
+    handleChange(name, value);
   }
 
   function handleCommunityChoice(name, value) {

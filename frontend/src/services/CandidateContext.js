@@ -15,6 +15,7 @@ const mockCandidateData = [
     companyName: 'Aerovision',
     address_city: 'Tulsa',
     address_state: 'OK',
+// Temp comment
     primarySkills: 'JavaScript, React, PHP, SQL',
     school: 'Oklahoma State',
     isLooking: true,
@@ -76,7 +77,6 @@ const mockCandidateData = [
     address_city: 'Tulsa',
     address_state: 'OK',
     primarySkills: 'JavaScript, React, PHP, SQL',
-// Temp comment
     school: 'Oklahoma State',
     isLooking: false,
     isWarm: false,

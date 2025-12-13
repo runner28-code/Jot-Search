@@ -8,12 +8,12 @@ function getWindowDimensions() {
   };
 }
 
+// Temp comment
 export default function useWindowDimensions() {
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
   useEffect(() => {
     function handleResize() {
-// Temp comment
       setWindowDimensions(getWindowDimensions());
     }
 

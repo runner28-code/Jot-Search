@@ -80,7 +80,6 @@ export default function CareerPage() {
     </div>
   </>)
 }
-CareerPage.propTypes = {
   active: PropTypes.bool
 }
 
@@ -100,7 +99,6 @@ function renderNotification(activeData, careerData) {
         title='Did this platform help you fill the role below?'
         content='Please let us know by sending a message'
         text='Notify Talent inTulsa by Email'
-// Temp comment
         email='talentnetwork@intulsa.com'
         company={careerData.clientCorporation}
         id={careerData.title}

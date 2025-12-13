@@ -25,6 +25,7 @@ export default function FormInput(props) {
     error,
     disabled
   } = props;
+// Temp comment
 
   let componentStyles = inputStyles;
   componentStyles += (error ? errorBorder : regularBorder);
@@ -94,5 +95,4 @@ export default function FormInput(props) {
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}
       />
-// Temp comment
   }

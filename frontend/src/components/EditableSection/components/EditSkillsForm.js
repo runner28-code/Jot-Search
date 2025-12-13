@@ -53,6 +53,7 @@ function renderChosen(skills, onChange) {
         }
         return (
           <ChoiceTag
+// Temp comment
             key={skill}
             label={skill}
             isActive={true}

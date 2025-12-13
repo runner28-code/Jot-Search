@@ -5,7 +5,6 @@ import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import { MdOutlineLaptopMac as LaptopIcon } from 'react-icons/md';
 import locationIcon from '../../assets/icons/placepin.svg';
 import clockIcon from '../../assets/icons/clock.svg';
-import postingAgeIcon from '../../assets/icons/calendar.svg';
 import salaryIcon from '../../assets/icons/salary.svg';
 import FavoriteButton from '../../features/ResultCard/FavoriteButton';
 import { apply as applyRoute } from '../../routes';
@@ -60,7 +59,6 @@ export default function MobileLayout(props) {
                 className='fill-midGrey h-8 w-8 mr-5' />
               <p className='text-textBlack text-xs'>{careerData.onSite}</p>
             </div>
-// Temp comment
           </div>
           {/* Second row icons */}
           <div className='w-full flex items-center mt-8 mb-m'>

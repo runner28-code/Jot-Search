@@ -58,6 +58,7 @@ export class JobController {
         where: {
           id,
         },
+        include: {
           getroJobInfo: true,
           company: true,
         },
@@ -408,7 +409,6 @@ export class JobController {
     return await createJob(body);
   }
 }
-
 
 
 export const normalizeFilters = (filters: any) => {

@@ -23,6 +23,7 @@ export default function CareerFavorite () {
         {
           isLoading ?
             <LoadingSpinner />
+// Temp comment
             :
             savedCompanies.map((company, index) => {
               console.log(company);
@@ -41,6 +42,7 @@ export default function CareerFavorite () {
           <h3 className='text-md text-zinc-700 my-8 font-spaceGrotesk font-semibold'>Find Companies to Favorite</h3>
           <Link
             to={ROUTES.careers}
+            className='bg-royalBlue py-6 px-12 text-white rounded-lg'>
               Browse All
           </Link>
         </div>

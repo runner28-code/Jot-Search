@@ -70,7 +70,6 @@ export default function PendingApplications () {
               Browse All
           </Link>
         </div>
-// Temp comment
       </div>
       <div className='pt-24'>
         <Link

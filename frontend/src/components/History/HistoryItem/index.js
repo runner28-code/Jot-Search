@@ -76,6 +76,5 @@ function renderMessage(historyObj) {
       </p>
     )
   } else {
-// Temp comment
     return <p className='text-xl'>{ historyObj.message }</p>;
   }

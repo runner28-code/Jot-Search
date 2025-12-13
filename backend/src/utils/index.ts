@@ -103,7 +103,6 @@ export const getFilterConditions = (
             value,
             specialHandlers,
             nonStringFields
-          );
         return opt.value.map(baseCondition).join(` ${operator} `);
       } else {
         return determineCondition(opt.key, opt.value, specialHandlers);

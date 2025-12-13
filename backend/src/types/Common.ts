@@ -137,6 +137,7 @@ export type UpdateComapnyProfileResponse = {
   message?: any;
 };
 
+// Category Types
 export type CategorySearchByFilterResponse = {
   categories?: Category[];
 } & CountFilterResponse;

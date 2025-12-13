@@ -235,6 +235,7 @@ function renderCompanyWebsite( url, headerRowTextStyles ) {
   }
 
   let http = 'https://';
+  return (<>
     <a
       className={textStyles}
       href={isValidHttpUrl(url) ? url : http += url }

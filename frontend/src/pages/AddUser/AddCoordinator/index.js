@@ -31,6 +31,7 @@ export default function AddCoordinator() {
           errors: error,
         });
       }
+    }
   }, [submissionObject.loading]);
 
   // Clear form and success icon after 2 seconds

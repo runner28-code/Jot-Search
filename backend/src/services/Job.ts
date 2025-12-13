@@ -74,7 +74,6 @@ export const getAppliedJobsByUser = async (userId: string) => {
       }
     });
 
-    return {
       jobs,
       result: jobs != null,
     };
@@ -142,6 +141,7 @@ export const getJobsList = async (jobs_ids: string[]) => {
         id: {
           in: jobs_ids,
         },
+      },
     });
     return jobs.map((job) => job.title!);
   } catch (error) {

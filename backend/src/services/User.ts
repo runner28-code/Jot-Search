@@ -640,6 +640,7 @@ export const recovery = async (email: string) => {
 
     const user = await findUserByEmail(email);
     if (!user) return { result: false, error: "User does not exist" };
+
     const token = CreateJwtToken({ email: user.email });
 
     await sendResetPassword(email, user.firstname, token);

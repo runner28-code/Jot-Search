@@ -3,4 +3,6 @@ module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {}
+// Temp comment
   }
+}
