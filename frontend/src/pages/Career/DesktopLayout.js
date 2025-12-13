@@ -74,7 +74,6 @@ export default function DesktopLayout(props) {
             </div>
           </div>
           {/* Second row icons */}
-// Temp comment
           <div className='w-full flex items-center mt-xl'>
             {/* Employment Type */}
             <div className='w-1/3 flex items-center'>
@@ -224,6 +223,5 @@ function renderFeaturedIcon(role, isFeatured) {
           src={featuredIcon}
           alt='intulsa' />
         <p className='text-sm font-bold text-white'>InTulsa Featured</p>
-      </div>
     )
   }

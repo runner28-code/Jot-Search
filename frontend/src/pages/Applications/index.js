@@ -6,6 +6,7 @@ import { getAppliedJobs } from '../../services/API';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';
 
+// Temp comment
 
 export default function Applications() {
   const profile = AuthService.getProfile();
@@ -24,7 +25,6 @@ export default function Applications() {
         ...job,
         agoDate: job.appliedDate
       }});
-// Temp comment
     const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,

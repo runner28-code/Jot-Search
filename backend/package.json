@@ -34,7 +34,6 @@
     "build": "export GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' && tsc && cp -R ./src/templates ./dist",
     "build-win": "tsc",
     "start": "cp -R ./src/templates ./dist && export GOOGLE_APPLICATION_CREDENTIALS='./src/config/service-account-file.json' && ts-node src/app.ts",
-    "bullhorn_get_companies": "npm run build && node ./dist/src/cronjobs/bullhorn_get_companies",
     "bullhorn_get_jobs": "npm run build && node ./dist/src/cronjobs/bullhorn_get_jobs",
     "bullhorn_get_contacts": "npm run build && node ./dist/src/cronjobs/bullhorn_get_contacts",
     "bullhorn_get_candidates": "npm run build && node ./dist/src/cronjobs/bullhorn_get_candidates",

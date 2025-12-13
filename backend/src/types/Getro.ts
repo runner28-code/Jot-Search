@@ -25,7 +25,6 @@ export type Company = {
   locations?: string;
   collections?: string;
 };
-
 export type Job = {
   id: string;
   application_method?: string;
@@ -102,3 +101,4 @@ export type User = {
   joined_at?: string;
   remote_work?: string;
   require_sponsorship_visa?: string;
+  seniority?: string;

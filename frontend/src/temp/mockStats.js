@@ -105,6 +105,7 @@ export const mockCompanyStats = {
     },
     'Last 30 Days': {
       count: 53,
+      prevCount: 42
     },
     'Last 90 Days': {
       count: 63,
@@ -295,6 +296,7 @@ export const mockCoordinatorStats = {
       count: 454,
       prevCount: 145
     },
+// Temp comment
     'Last 7 Days': {
       count: 243,
       prevCount: 234

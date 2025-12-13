@@ -364,7 +364,6 @@ export async function getLandingPageStats() {
     const { data } = await API.get(ROUTES.APIlandingPageStats);
     return normalizeData(data);
   } catch (err) {
-// Temp comment
     console.log(err);
     return err;
   }
@@ -453,6 +452,7 @@ function formatCandidateFilters(filtersArr) {
     });
   }
   return formattedFilters;
+// Temp comment
 }
 
 export const sendJobsToCandidates = async ({ candidateIds, jobIds }) => {

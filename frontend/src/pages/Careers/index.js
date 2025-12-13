@@ -64,7 +64,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
     </>)
   }
   if( loggedIn ) {
-    return (<>
       <PageHeader
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}
         IconComponent={userType === 'coordinator' ? CareerIcon : SearchIcon}

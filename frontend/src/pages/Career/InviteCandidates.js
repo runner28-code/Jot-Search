@@ -6,6 +6,7 @@ import { useGetCandidates } from '../../hooks/queries/useGetCandidates';
 
 // Images
 import { IoMailOpenOutline as MailIcon } from 'react-icons/io5';
+// Temp comment
 import { useSendJobsToCandidates } from '../../hooks/mutations/useSendJobsToCandidates';
 
 export default function InviteCandidates({ job }) {
@@ -87,6 +88,7 @@ export default function InviteCandidates({ job }) {
         >
           <MailIcon className='inline-block mr-2' />
           Send Now
+        </button>
         <button
           onClick={() => setSelected([])}
           className='bg-white text-blue-500 border-blue-500 border-1.5 text-lg  rounded-md px-4 py-2'>Clear all</button>

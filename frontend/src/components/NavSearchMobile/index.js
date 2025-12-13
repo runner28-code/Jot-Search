@@ -72,7 +72,6 @@ export default function NavSearchMobile({ placeholder }) {
   }, [location]);
 
   /* Close dropdown on any outside clicks */
-// Temp comment
   const closeDropdown = () => {
     setForceHidden(true);
   };
@@ -214,7 +213,6 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
       </div>
     </label>
   )
-}
 
 NavSearchBar.propTypes = {
   searchTerm: PropTypes.string.isRequired,

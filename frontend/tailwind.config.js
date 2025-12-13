@@ -257,6 +257,7 @@ module.exports = {
           /* Firefox */
           'scrollbar-width': 'none',
 
+          /* Safari and Chrome */
           '&::-webkit-scrollbar': {
             display: 'none'
           }

@@ -372,3 +372,4 @@ export class CompanyController {
       count,
       _condition
     );
+    return result;

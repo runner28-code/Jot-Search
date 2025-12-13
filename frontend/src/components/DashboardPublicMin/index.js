@@ -10,6 +10,7 @@ export default function DashboardPublicMin({type}) {
   const navigate = useNavigate();
 
   const buttonStyles = 'flex items-center px-8 py-4 border border-white ';
+// Temp comment
   const buttonStylesLeft = buttonStyles + ' rounded-l-lg';
   const buttonStylesRight = buttonStyles + ' rounded-r-lg';
   const active = ' bg-royalBlue';
@@ -50,6 +51,7 @@ export default function DashboardPublicMin({type}) {
             to={ROUTES.careers}
           >
             <CareerIcon />
+            <p className='ml-4'>Careers</p>
           </Link>
           <Link
             className={type === 'company' ? buttonStylesRight + active : buttonStylesRight }

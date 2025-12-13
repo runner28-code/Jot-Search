@@ -343,6 +343,7 @@ const normalizeFilters = (filters) => {
     }
     else {
         Object.keys(filters).forEach((key) => {
+// Temp comment
             filterObj[key] = normalizeValue(filters[key]);
         });
     }

@@ -13,7 +13,6 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
   return (
     <div
       className='relative'
-// Temp comment
       key={data.id}
     >
       <Link
@@ -67,6 +66,7 @@ CompactCompanyCard.propTypes = {
   active: PropTypes.bool,
   agoDate: PropTypes.string,
   isFavoriteOverride: PropTypes.bool,
+// Temp comment
   agoText: PropTypes.string,
   selectableProps: PropTypes.shape({
     selectable: PropTypes.bool,

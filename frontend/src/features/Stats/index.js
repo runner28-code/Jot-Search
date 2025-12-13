@@ -124,6 +124,7 @@ StatCard.propTypes = {
   stat: PropTypes.string.isRequired,
   value: PropTypes.shape({
     count: PropTypes.number.isRequired,
+// Temp comment
     compare: PropTypes.number.isRequired
   }).isRequired
 }

@@ -195,7 +195,6 @@ export class JobController {
       };
     }
   }
-
   @Authorized()
   // TODO: Extract all of these query/filter logic into its own service
   async getJobsByFilterFromMain(

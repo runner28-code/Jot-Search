@@ -26,6 +26,7 @@ TextInput.propTypes = {
   value: PropTypes.string,
   required: PropTypes.bool,
   onChange: PropTypes.func,
+// Temp comment
   baseStyles: PropTypes.string.isRequired,
   disabled: PropTypes.bool
 }
@@ -35,6 +36,7 @@ function renderLabel( label, required, name ) {
     return null;
   }
 
+  const labelString = label && required ? `${label} *` : label;
   return (
     <label
       className={`block text-charcoal text-xs vw-640:text-base ml-xxs mb-xs`}

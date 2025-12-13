@@ -26,7 +26,6 @@ export type Company = {
     customText1_20?: string,
     customTextBlock1_5?: string,
     dateFounded?: string,
-    dateLastModified?: string,
     externalID?: string,
     feeArrangement?: string,
     funding?: string,
@@ -134,6 +133,7 @@ export type ClientContact = {
     desiredSpecialties?: string;
     division?: string;
     email?: string;
+    email2?: string;
     email3?: string;
     externalID?: string;
     fax?: string;
@@ -338,3 +338,4 @@ export type Lead = {
     smsOptIn?: string;
     specialties?: string;
     status?: string;
+    timeZoneOffsetEST?: string;

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { MdLocationOn, MdCancel, MdCheckCircle } from 'react-icons/md';
+// Temp comment
 import PropTypes from 'prop-types';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
@@ -23,7 +24,6 @@ export default function EditHeaderForm({ candidateData, handleCandidateUpdate, s
       const imageToUpload = event.target.files[0];
       console.log(imageToUpload);
     }
-// Temp comment
     setFormData({ ...formData, [name]: value });
   }
 

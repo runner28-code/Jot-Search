@@ -49,6 +49,7 @@ export const campusTulsa = 'https://www.campustulsa.com';
 export const talentInTulsa = 'https://www.talent.intulsa.com/';
 export const lifeInTulsa = 'https://talent.intulsa.com/life-in-tulsa';
 
+/* API Links */
 export const search = '/search';
 // Auth
 export const APIlogin = '/login';
@@ -97,3 +98,4 @@ export const instagram = 'https://www.instagram.com/talentintulsa/?utm_source=ta
 export const youtube = 'https://www.youtube.com/channel/UCkIjDMz9QaOBZgXVgwYoyNA/videos';
 
 /* Privacy Policy and TOS */
+export const privacyPolicy = 'https://talent.intulsa.com/about/privacy-policy';

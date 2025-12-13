@@ -63,3 +63,4 @@ const sanitizeJob = (job) => {
             delete newJob[typedKey];
         }
     });
+    return newJob;

@@ -85,6 +85,7 @@ export type AllJobsResponse = {
   main: JobSearchByFilterResponse;
 };
 
+export type ApplyResponse = {
   result: boolean;
   message?: any;
 };
