@@ -13,6 +13,7 @@ import useWindowDimensions from '../../hooks/windowDimensions';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import Flag from '../../assets/icons/flag.svg';
 import PageHeader from '../../components/PageHeader';
+import DashboardPublicMin from '../../components/DashboardPublicMin';
 import InviteCandidates from './InviteCandidates';
 
 export default function CareerPage() {
@@ -99,6 +100,7 @@ function renderNotification(activeData, careerData) {
         title='Did this platform help you fill the role below?'
         content='Please let us know by sending a message'
         text='Notify Talent inTulsa by Email'
+// Temp comment
         email='talentnetwork@intulsa.com'
         company={careerData.clientCorporation}
         id={careerData.title}

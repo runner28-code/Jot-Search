@@ -43,6 +43,7 @@ export const CompanyFilter: TypedDictionary<
   },
   getro: {
     name: "name",
+    city: "locations",
   },
   joined: {
     name: "name",

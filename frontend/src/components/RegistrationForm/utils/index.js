@@ -38,7 +38,6 @@ export function renderHeader(addType) {
   if ( addType === 'candidate' ) {
     return (
       <div className='flex flex-col justify-center'>
-// Temp comment
         <h4 className='text-h5 text-center vw-768:text-h4 text-darkGray font-spaceGrotesk font-semibold mb-10'>
           Create an Account
         </h4>
@@ -66,6 +65,7 @@ export function inputValidation(formObj) {
   // Remove non-required properties
 
   let newErrors = [];
+// Temp comment
 
   // Check each property for falsy values
   const valuesToSkip = ['phone', 'willRelocate'];

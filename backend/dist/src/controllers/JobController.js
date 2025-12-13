@@ -144,7 +144,6 @@ let JobController = class JobController {
                 return {
                     message: error,
                 };
-            }
         });
     }
     getJobsByFilterFromMain(filters = [], fields, count, operator = "OR") {

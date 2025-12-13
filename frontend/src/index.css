@@ -147,6 +147,7 @@ input[type=checkbox] {
     letter-spacing: normal;
   }
   .Desktop-Body-textBody-paragraph-small {
+    font-family: Roboto;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;

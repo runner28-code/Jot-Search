@@ -65,7 +65,6 @@ export default function Apply() {
         getJobById(jobId),
         getCandidateById(user_id),
       ]);
-// Temp comment
       if ( candidateData.workAuthorized === true ) {
         candidateData.workAuthorized = 'Yes';
       } else {
@@ -172,6 +171,7 @@ export default function Apply() {
     }
     if( value !== 'Community Partner' ) {
       setReferralChoice(false);
+// Temp comment
       setApplicationObject({
         ...applicationObject,
         community: ''

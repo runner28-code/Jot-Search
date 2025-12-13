@@ -126,6 +126,7 @@ export const updateJob = async (job: Partial<Job> & { id: string }) => {
       result: true,
       res,
     };
+  } catch (err) {
     console.log(err);
     return {
       message: err,
@@ -141,7 +142,6 @@ export const getJobsList = async (jobs_ids: string[]) => {
         id: {
           in: jobs_ids,
         },
-      },
     });
     return jobs.map((job) => job.title!);
   } catch (error) {

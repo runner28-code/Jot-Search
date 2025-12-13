@@ -31,7 +31,6 @@ export default function AddCoordinator() {
           errors: error,
         });
       }
-    }
   }, [submissionObject.loading]);
 
   // Clear form and success icon after 2 seconds
@@ -50,6 +49,7 @@ export default function AddCoordinator() {
 
   function handleInputChange(e) {
     const { name, value } = e.target;
+
     // Error checking
     const newErrors = validateInput(
       name,

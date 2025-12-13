@@ -58,7 +58,6 @@ export class JobController {
         where: {
           id,
         },
-        include: {
           getroJobInfo: true,
           company: true,
         },

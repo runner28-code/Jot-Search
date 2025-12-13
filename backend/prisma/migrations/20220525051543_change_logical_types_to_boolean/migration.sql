@@ -23,6 +23,7 @@
 ALTER TABLE "Candidate" DROP COLUMN "idOnFile",
 ADD COLUMN     "idOnFile" BOOLEAN,
 DROP COLUMN "isAnonymized",
+ADD COLUMN     "isAnonymized" BOOLEAN,
 DROP COLUMN "isDeleted",
 ADD COLUMN     "isDeleted" BOOLEAN,
 DROP COLUMN "isEditable",
@@ -38,7 +39,6 @@ ADD COLUMN     "twoJobs" BOOLEAN,
 DROP COLUMN "veteran",
 ADD COLUMN     "veteran" BOOLEAN,
 DROP COLUMN "willRelocate",
-ADD COLUMN     "willRelocate" BOOLEAN,
 DROP COLUMN "workAuthorized",
 ADD COLUMN     "workAuthorized" BOOLEAN;
 

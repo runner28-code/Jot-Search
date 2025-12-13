@@ -10,7 +10,6 @@ import Choice from './Choice';
 import LoggedOutButtons from './LoggedOutButtons';
 import useWindowDimensions from '../../hooks/windowDimensions';
 import * as ROUTES from '../../routes';
-// Temp comment
 
 const baseLinkStyles = 'flex items-center w-full h-20 pl-6 bg-white hover:bg-royalBlue text-royalBlue hover:text-white cursor-pointer ';
 const topLinkStyles = baseLinkStyles + 'rounded-tl-xl ';
@@ -40,6 +39,7 @@ export default function ChoicesContainer(props) {
         handleOptionClick={handleOptionClick}
         stylesObject={stylesObject} /> 
       :
+// Temp comment
       null
     }
   </>)

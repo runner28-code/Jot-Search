@@ -17,11 +17,9 @@ export default function ResultContainer(props) {
     header, 
     active,
     compact = false,
-    isFavoriteOverride = null,
     agoText = null,
     containerClass = undefined,
     selectableProps = null,
-// Temp comment
   } = props;
   const resultsHeaderStyles = 'font-bold w-full text-xl mb-8 ';
   const baseStyles = 'w-full max-w-400 py-5'

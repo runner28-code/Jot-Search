@@ -21,6 +21,7 @@ const mockJobsData = [
     company: 'Kum N Go',
     clientCorporationID: '3b7bf6bc-16de-4014-92d6-d1cbee1bc4d5',
     logo: 'https://res.cloudinary.com/gageeide/image/upload/v1644949352/inTulsa/kumgo_2_eqbzbl.webp',
+    salaryRange: '$80k-$90k',
     location_city: 'Tulsa',
     location_state: 'OK',
     onSite: false,
@@ -81,7 +82,6 @@ const mockJobsData = [
   },
 ];
 
-export const CareerContext = createContext();
 
 const CareerProvider = ({children}) => {
   const [careers, setCareers] = useState(mockJobsData);

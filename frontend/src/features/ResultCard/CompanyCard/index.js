@@ -45,7 +45,6 @@ export default function CompanyCard({ data }) {
         <div className='grow'>
           {/* Title */}
           <div className='flex'>
-            <CompanyIcon className='w-8 h-8 mr-6 fill-royalBlue ' />
             <h6 className='text-xl font-spaceGrotesk font-semibold text-charcoal leading-none'>{data.name}</h6>
           </div>
           {/* First row icons */}
@@ -72,7 +71,6 @@ export default function CompanyCard({ data }) {
                 src={linkedinIcon}
                 className='h-8 mr-5' />
               <a
-// Temp comment
                 href='#'
                 className='text-royalBlue underline'
               >

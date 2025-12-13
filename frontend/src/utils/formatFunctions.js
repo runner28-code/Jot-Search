@@ -76,7 +76,6 @@ export function formatAvatarUrl(avatarUrl, firstName = 'A', lastName = 'A') {
     return avatarUrl;
   }
   return `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0D8ABC&color=fff&size=256`;
-}
 
 export function formatPhoneNumber(phoneNumberString) {
   if ( !phoneNumberString ) {

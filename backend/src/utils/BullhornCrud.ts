@@ -329,7 +329,6 @@ export const migrateJobInTPP = async (data: Job) => {
     await bgJob.getQueryResults();
     console.log(
       `Migrated Bullhorn Job (bh_id=${data.externalId}) successfully`
-    );
   } catch (error: any) {
     console.log(error.message);
     console.log(

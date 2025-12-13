@@ -83,7 +83,6 @@ const getDataSource = (id) => {
 exports.getDataSource = getDataSource;
 const genUUID = () => (0, uuid_1.v4)();
 exports.genUUID = genUUID;
-const checkForJobFilter = (title, location) => {
     if (title.match(constant_1.JOB_EXCLUDE_KEYS_REGEX))
         return false;
     if (location.replace(/\s+/g, '').match(constant_1.CITY_INCLUDE_KEYS_REGEX))

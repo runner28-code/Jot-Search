@@ -123,6 +123,7 @@ function DesktopCard({ dataObj, active }) {
               className='h-11 mr-5' />
             <p className='text-textBlack'>Posted {postingAge}</p>
           </div>
+// Temp comment
         </div>
         {/* Second row icons */}
         <div className='w-full flex items-center mt-10'>

@@ -102,7 +102,6 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
           className='w-12 h-12'
         />
         <span className='text-md'>{filterType}</span>
-// Temp comment
       </label>
     )
   })

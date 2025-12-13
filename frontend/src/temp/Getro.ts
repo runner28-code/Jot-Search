@@ -41,7 +41,6 @@ export type Job = {
     expires_at?: string;
     job_functions?: string;
     liked?: string;
-    locations?: string;
     organization_doman?: string;
     organization_id?: string;
     organization_logo_url?: string;

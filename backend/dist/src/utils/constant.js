@@ -83,6 +83,7 @@ const job_filter_exclude_keys = [
     "clinician",
     "club",
     "cna",
+    "collection",
     "collector",
     "college",
     "compliance",
@@ -455,7 +456,6 @@ const city_filter_include_keys = [
 ];
 exports.JOB_EXCLUDE_KEYS_REGEX = new RegExp(`(${job_filter_exclude_keys.join('|')})`, 'gi');
 exports.CITY_INCLUDE_KEYS_REGEX = new RegExp(`(${city_filter_include_keys.join('|')})`, 'gi');
-exports.JOB_FIELDS = [
     "id",
     "address",
     "benefits",
@@ -504,3 +504,4 @@ exports.JOB_FIELDS = [
     "title",
     "travelRequirements",
     "type",
+    "willRelocate",

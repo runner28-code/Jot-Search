@@ -48,7 +48,6 @@ const convertedJobFilters = {};
 Object.keys(jobFilterObject).forEach(key => {
   convertedJobFilters[key] = jobFilterObject[key][0];
 });
-// Temp comment
 
 export const defaultJobFilterState = {
   title: '',

@@ -233,3 +233,4 @@ main()
     process.exit(1);
   })
   .finally(async () => {
+    await db.$disconnect();

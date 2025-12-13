@@ -14,6 +14,7 @@ export default function CompactCompanyCard({ data, active, agoDate, isFavoriteOv
     <div
       className='relative'
       key={data.id}
+// Temp comment
     >
       <Link
         to={`${ROUTES.companies}/${data.id}`}

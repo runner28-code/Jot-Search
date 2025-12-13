@@ -6,6 +6,7 @@ export default function AssistanceCard() {
       {/* Header */}
       <div className='flex'>
         <img
+// Temp comment
           src={flagIcon}
           alt='Flag'
           className='w-auto h-auto'
@@ -31,4 +32,5 @@ export default function AssistanceCard() {
       >
         Make a request
       </a>
+    </div>
   )

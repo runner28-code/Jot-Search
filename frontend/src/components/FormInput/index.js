@@ -86,7 +86,6 @@ export default function FormInput(props) {
       return <TextInput
         type={type}
         name={name}
-// Temp comment
         label={label}
         required={required}
         placeholder={placeholder}
@@ -95,4 +94,5 @@ export default function FormInput(props) {
         baseStyles={componentStyles + inputHeight}
         disabled={disabled}
       />
+// Temp comment
   }
