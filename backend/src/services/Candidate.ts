@@ -61,6 +61,7 @@ export const getSavedCandidates = async (companyUserId: string) => {
       where: {
         id: companyUserId,
       },
+      include: {
         savedCandidates: {
           include: {
             users: true,

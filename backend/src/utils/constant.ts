@@ -27,6 +27,7 @@ const job_filter_exclude_keys = [
   "athletic",
   "athletics",
   "attorney",
+  "auto",
   "automation technician",
   "automotive",
   "bailiff",
@@ -450,7 +451,6 @@ const city_filter_include_keys = [
   "Owasso,OK",
   "Remote",
   "Sapulpa,OK",
-  "Tulsa,OK"
 ];
 
 

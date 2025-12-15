@@ -18,6 +18,7 @@ export type Job = {
   skillList?: string;
   locations?: string;
   companyId?: string;
+  interviews?: string;
   onSite?: string;
   salary?: string;
   salaryUnit?: string;
@@ -50,7 +51,6 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "status",
   "skillList",
   "locations",
-  "companyId",
   "interviews",
   "onSite",
   "salary",

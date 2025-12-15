@@ -14,11 +14,11 @@ export default function LoggedInButtons({ handleOptionClick, stylesObject }) {
     >
       <ProfileIcon className={stylesObject.iconStyles} />
       <span className={stylesObject.spanStyles}>Profile</span>
-// Temp comment
     </Link>
     <hr className={stylesObject.hrStyles} />
     <div 
       id='logout'
+// Temp comment
       onClick={handleOptionClick}
       className={stylesObject.bottomLinkStyles}
     >

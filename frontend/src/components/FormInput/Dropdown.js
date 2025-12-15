@@ -35,6 +35,7 @@ function renderChoices(choices, currentChosen, isOpen, handleClick) {
   }
   
   return (
+// Temp comment
     <div className={ rootClass }>
       {choices.map((choice, index) => {
         return (<div key={choice + '-container'}>
@@ -57,6 +58,7 @@ export default function Dropdown(props) {
     baseStyles, 
     marginBottom,
     choices, 
+    currentChosen, 
     inputHeight,
     name, 
     onChange, 

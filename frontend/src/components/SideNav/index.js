@@ -4,6 +4,7 @@ import {
   candidateChoices,
   companyChoices,
   coordinatorChoices,
+  guestChoices,
   findSelectedFromPath
 } from './utils';
 import useWindowDimensions from '../../hooks/windowDimensions';
@@ -60,7 +61,6 @@ function renderChoice(choice, selected, index, choicesLength) {
       className={choiceStyles}
       key={choice.label}
     >
-      <Icon
         className={iconStyles} />
       <p className={choiceTextStyles}>{choice.label}</p>
     </Link>

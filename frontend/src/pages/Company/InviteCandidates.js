@@ -76,10 +76,10 @@ export default function InviteCandidates({ company }) {
             console.log({selected})
             const res = await sendCandidatesToCompanies({ companyIds: [company.id], candidateIds: selected.map((option) => option.value) })
             console.log({res})
-            if(res.result){
               setSelected([])
             }
           }}
+          disabled={selected.length === 0 || isSendingCandidates}
         >
           <MailIcon className='inline-block mr-2' />
           Send Now

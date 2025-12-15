@@ -9,6 +9,7 @@ import { buildCandidateAddress } from '../../utils/formatFunctions';
 import urlDecode from '../../utils/urlDecode';
 import OtherCareers from '../../features/OtherCareers';
 import DetailsHeader from '../../components/DetailsHeader';
+import InviteCandidates from './InviteCandidates';
 import DashboardPublicMin from '../../components/DashboardPublicMin';
 import AuthService from '../../services/auth';
 import useWindowDimensions from '../../hooks/windowDimensions';

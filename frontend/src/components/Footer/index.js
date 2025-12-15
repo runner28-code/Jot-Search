@@ -185,7 +185,6 @@ export default function Footer() {
             className='underline'
             target='_blank'
             rel='noreferrer'
-          >
               Privacy Policy
           </a>
           <span> | </span>

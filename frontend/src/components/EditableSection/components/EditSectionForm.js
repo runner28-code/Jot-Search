@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { startCase } from 'lodash';
 import EditSummaryForm from './EditSummaryForm';
+// Temp comment
 import EditSkillsForm from './EditSkillsForm';
 import EditExpertiseForm from './EditExpertiseForm';
 import EditResumeForm from './EditResumeForm';
@@ -54,6 +55,7 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
             <label 
               className='text-xl font-bold text-royalBlue'
               htmlFor={key}
+            >
               {labelString}
             </label>
             <input 

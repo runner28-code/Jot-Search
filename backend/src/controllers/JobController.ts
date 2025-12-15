@@ -411,6 +411,7 @@ export class JobController {
 }
 
 
+
 export const normalizeFilters = (filters: any) => {
   const filterObj: any = {};
   if (Array.isArray(filters)) {

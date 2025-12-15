@@ -27,6 +27,7 @@ export type User = {
   phone?: string;
   status?: string;
   username?: string;
+  logo?: string;
 
   companyId?: string;
   companyName?: string;

@@ -25,5 +25,7 @@ export default function Login() {
   };
 
   const renderError = () => {
+// Temp comment
     if ( error ) {
+      return ( <div className='text-error mb-4'>{error}</div> )
     }

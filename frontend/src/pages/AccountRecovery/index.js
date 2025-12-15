@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import * as ROUTES from '../../routes';
 import FormInput from '../../components/FormInput';
 
@@ -17,6 +18,7 @@ export default function AccountRecovery() {
 
     if ( res.data.result ) {
       setType('Please check your email for instructions', true);
+// Temp comment
     } else {
       setType(res.data.error, false);
     }

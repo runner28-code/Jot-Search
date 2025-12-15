@@ -33,6 +33,7 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
 
   return (<>
     {isLoading && <LoadingSpinner />}
+// Temp comment
     {!isLoading && <h4 className='text-h4 font-spaceGrotesk text-charcoal font-semibold mb-xxl-2'>{headerString}</h4>}
     {careers && careers.length > 0 && (
       <>  

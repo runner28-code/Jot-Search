@@ -1,7 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import * as ROUTES from './routes';
 import Auth from './Auth';
-import {
   LandingPage,
   SignUp,
   Login,
@@ -56,7 +55,6 @@ function App() {
               element={<AccountRecovery />} />
             <Route
               path={ROUTES.resetPassword}
-// Temp comment
               element={<ResetPassword />} />
             <Route
               path={ROUTES.root + '*'}

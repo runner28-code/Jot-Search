@@ -43,7 +43,6 @@ export function convertUserToCandidate(user) {
   const candidate = {
     id: user.id,
     firstName: user.firstname || '',
-// Temp comment
     lastName: user.lastname || '',
     name: formatCandidateName(user.firstname, user.lastname),
     email: user.email,

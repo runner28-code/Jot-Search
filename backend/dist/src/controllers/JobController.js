@@ -206,6 +206,7 @@ let JobController = class JobController {
         `;
                 return yield BigQueryService_1.BigQueryService.selectQuery(_dataset, _table, _fields, count, _condition, _join, alias);
             }
+            throw "invalid filter options";
         });
     }
     apply(candidate, job) {

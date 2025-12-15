@@ -412,7 +412,6 @@ export class BullhornService {
     if (!val) return [];
     return val?.toString().replace(", ", ",").split(",");
   };
-
   async saveJobFunc (data: any, testMode = false) {
     const updatedData: Job[] = data.map((d: any) => {
       const {

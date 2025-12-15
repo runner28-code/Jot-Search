@@ -17,7 +17,6 @@ export default function NavBar() {
     return <MobileNavBarLayout />
   } else {
     return <DesktopNavBarLayout />
-  }
 }
 
 function MobileNavBarLayout() {

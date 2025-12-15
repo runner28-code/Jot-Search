@@ -181,7 +181,6 @@ function renderMenuItems(choices, choiceObject, currentChosen, name, stylesObjec
       if ( typeof choice === 'string' ) {
         acc[choice] = choice;
       } else {
-        acc[choice.name] = choice.name;
       }
       return acc;
     }, {});

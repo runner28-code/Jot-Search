@@ -9,13 +9,11 @@ const WIDE_MENU_WIDTH = 'w-110';
 
 export default function NavMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
-// Temp comment
 
   function handleMenuClick() {
     setMenuOpen(menuOpen => !menuOpen);
   }
 
-  function handleOptionClick(e) {
     setMenuOpen(false);
     if ( e.currentTarget.id === 'logout' ) {
       AuthService.logout();

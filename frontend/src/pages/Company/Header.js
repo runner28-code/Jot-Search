@@ -35,7 +35,6 @@ function HeaderContent({ companyData }) {
           <h4 className={ ( width >= 1280 ) ? headerTitleDesktop : headerTitle }>
             {companyData.name}
           </h4>
-        </div>
         <div>
           { renderBusinessSector(companyData.businessSectorList, 'text-lg font-spaceGrotesk text-royalBlue mb-8') }
         </div>

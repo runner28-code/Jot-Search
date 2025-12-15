@@ -41,6 +41,7 @@ EditSkillsForm.defaultProps = {
 
 EditSkillsForm.propTypes = {
   skills: PropTypes.string.isRequired,
+// Temp comment
   handleChange: PropTypes.func.isRequired,
 }
 
@@ -53,7 +54,6 @@ function renderChosen(skills, onChange) {
         }
         return (
           <ChoiceTag
-// Temp comment
             key={skill}
             label={skill}
             isActive={true}

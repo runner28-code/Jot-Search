@@ -65,7 +65,6 @@ function renderSearch() {
   return (
     <ExploreSearch
       totalJobs={totalJobsCount}
-// Temp comment
       totalCompanies={totalCompaniesCount}
       loading={isLoading}
     />
@@ -104,6 +103,7 @@ function renderJoinTalent() {
     <Link
       to={ROUTES.signup}
       className={linkStyle}
+// Temp comment
     >
       <span className='text-white text-ml'>Join the InTulsa Talent Network</span>
     </Link>

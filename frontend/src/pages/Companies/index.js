@@ -65,6 +65,7 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
     </>)
   }  
   if( loggedIn ) {
+// Temp comment
     return (<>
       <PageHeader
         headerText={userType === 'coordinator' ? 'Careers List' : 'Search Results'}

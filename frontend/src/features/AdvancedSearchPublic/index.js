@@ -126,6 +126,7 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       setFilterObject(defaultJobFilterState);
     } else if (tabChoice === 'candidates') {
       setFilterObject(defaultCandidateFilterState);
+    }
     setActiveTab(tabChoice);
     setPage(1);
   }
@@ -199,7 +200,6 @@ export default function AdvancedSearchPublic({ disabledTabs, toggle }) {
       />
       <ResultContainer
         key={activeResults}
-        results={activeResults}
         type={activeTab}
         loading={isLoading} />
       <PaginatedControls />

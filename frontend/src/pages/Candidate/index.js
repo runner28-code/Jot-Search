@@ -96,7 +96,6 @@ export default function Candidate() {
         backButton
       />
       {/* Candidate Card (Company and Coordinator) */}
-      {role !== 'candidate' && 
         <CandidateCard
           data={candidateData}
           disableLink
