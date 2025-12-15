@@ -75,3 +75,4 @@ export class BigQueryService {
             return { result: false, message: error };
         }
     }
+}

@@ -8,3 +8,13 @@ export default function CareerProfileInfoContent(props) {
     return <MinifiedCompanyView {...props} />
   }
   return <ExtendedEditableContent {...props} />
+}
+
+CareerProfileInfoContent.propTypes = {
+  candidateData: PropTypes.object.isRequired,
+  handleCandidateUpdate: PropTypes.func.isRequired,
+  setEditMode: PropTypes.func.isRequired,
+  iconStyles: PropTypes.string.isRequired,
+  editMode: PropTypes.bool.isRequired,
+  role: PropTypes.string.isRequired
+}

@@ -94,3 +94,46 @@ export default function Dropdown(props) {
     }
 
     return placeholder;
+  }
+
+  const suffix = (name) => {
+    if (name === YEARS_OF_EXPERIENCE) { 
+      return ' years of experience'
+    }
+
+    return ''
+  }
+
+  let containerStyles = 'flex items-center relative h-20 w-full ';
+  containerStyles += marginBottom ? marginBottom : 'mb-16 ';
+  return (
+    <div 
+      id={name}
+      ref={menuRef}
+      className={containerStyles}
+    >
+      <div
+        className={baseStyles + inputHeight + 'text-royalBlue mb-0 flex items-center cursor-pointer'}
+        onClick={() => setIsOpen(isOpen => !isOpen)}
+      >
+        { renderValue(type, name, currentChosen, placeholder) }
+      </div>
+      { renderChoices(choices, currentChosen, isOpen, handleClick) }
+    </div>
+  )
+}
+
+Dropdown.propTypes = {
+  type: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  choices: PropTypes.arrayOf(PropTypes.string).isRequired,
+  currentChosen: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string)
+  ]).isRequired,
+  onChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  baseStyles: PropTypes.string.isRequired,
+  marginBottom: PropTypes.string,
+  inputHeight: PropTypes.string.isRequired
+}

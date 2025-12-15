@@ -38,3 +38,12 @@ export default function SearchBar({ searchTerm, setSearchTerm, placeholder, marg
         className={ styleObject.inputStyles } />
     </label>
   )
+}
+
+SearchBar.propTypes = {
+  searchTerm: PropTypes.string.isRequired,
+  setSearchTerm: PropTypes.func.isRequired,
+  placeholder: PropTypes.string,
+  marginBottom: PropTypes.string,
+  alternateStylesObject: PropTypes.object,
+}

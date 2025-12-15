@@ -21,6 +21,7 @@ export default function CompanyFilterLayout(props) {
           additionalClasses={ width >= 990 ? 'w-1/2' : 'w-full'}
         />
         <button
+          className='text-white text-sm whitespace-nowrap'
           onClick={clearFilters}
         >
           Clear All
@@ -28,3 +29,11 @@ export default function CompanyFilterLayout(props) {
       </div>
     </div>
   );
+}
+
+CompanyFilterLayout.propTypes = {
+  searchTerm: PropTypes.string,
+  setSearchTerm: PropTypes.func,
+  handleSearchClick: PropTypes.func,
+  clearFilters: PropTypes.func,
+};

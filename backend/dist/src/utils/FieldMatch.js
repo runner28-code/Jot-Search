@@ -21,6 +21,7 @@ exports.JobFilter = {
         skillList: "skillList",
         hidden: "hidden",
         employmentType: "employmentType",
+        onSite: "onSite",
         yearsRequired: "yearsRequired",
         willRelocate: "willRelocate",
         city: "city",
@@ -70,3 +71,4 @@ exports.USER_FILTER = {
     educationDegree: "educationDegree",
     certifications: "certifications",
     workspace: "workspace",
+};

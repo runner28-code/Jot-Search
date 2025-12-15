@@ -40,7 +40,6 @@ exports.IUSER = {
     experience: "",
     hourlyRate: "",
     willRelocate: "",
-// Temp comment
     willReceiveNotification: false,
     ethnicity: "",
     workAuthorized: "",
@@ -50,3 +49,4 @@ exports.IUSER = {
     activelyLooking: true,
 };
 exports.USERKEYS = Object.keys(exports.IUSER);
+exports.USER_TABLE = "User";

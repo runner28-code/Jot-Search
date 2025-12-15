@@ -58,3 +58,14 @@ export default function DashboardPublic({togglePassState}) {
       </div>
     </div>
   )
+}
+
+DashboardPublic.propTypes = {
+  togglePassState: PropTypes.func
+}
+
+function FilterText() {
+  return(<>
+    <p className='text-md ml-2'>Filters</p>
+  </>)
+}

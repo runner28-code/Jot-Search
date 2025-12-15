@@ -25,3 +25,17 @@ export default function Dropdown({ choices, handleChoiceClick, additionalStyles 
       })}
     </div>
   )
+}
+
+Dropdown.defaultProps = {
+  additionalStyles: {
+    color: 'gray',
+    textColor: 'charcoal',
+  },
+}
+
+Dropdown.propTypes = {
+  choices: PropTypes.array.isRequired,
+  handleChoiceClick: PropTypes.func.isRequired,
+  additionalStyles: PropTypes.objectOf(PropTypes.string)
+}

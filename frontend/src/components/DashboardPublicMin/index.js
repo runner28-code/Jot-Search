@@ -26,6 +26,7 @@ export default function DashboardPublicMin({type}) {
               onClick={() => navigate(-1)}
             >
             Back
+            </button>
           </div>
         </div>
       </div>
@@ -62,3 +63,7 @@ export default function DashboardPublicMin({type}) {
       </div>
     </div>
   )
+}
+DashboardPublicMin.propTypes = {
+  type: PropTypes.string
+}

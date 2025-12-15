@@ -25,7 +25,6 @@ export const savedCompanies = '/saved-companies';
 // Company Dashboard
 export const candidates = '/candidates';
 export const savedCandidates = '/saved-candidates';
-// Temp comment
 export const activeCareers = '/active-careers';
 export const companyQuickStats = '/company-stats';
 // Coordinator Dashboard
@@ -100,3 +99,4 @@ export const youtube = 'https://www.youtube.com/channel/UCkIjDMz9QaOBZgXVgwYoyNA
 
 /* Privacy Policy and TOS */
 export const privacyPolicy = 'https://talent.intulsa.com/about/privacy-policy';
+export const termsOfService = 'https://talent.intulsa.com/about/terms-conditions';

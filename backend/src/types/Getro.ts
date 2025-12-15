@@ -104,3 +104,6 @@ export type User = {
   require_sponsorship_visa?: string;
   seniority?: string;
   employment_type?: string;
+  will_work_anywhere?: string;
+  us_work_authorization?: string;
+};

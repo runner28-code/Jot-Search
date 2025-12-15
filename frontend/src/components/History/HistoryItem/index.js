@@ -78,3 +78,23 @@ function renderMessage(historyObj) {
   } else {
     return <p className='text-xl'>{ historyObj.message }</p>;
   }
+}
+
+export default function HistoryItem({ historyObj }) {
+  return (
+    <article className='mb-10'>
+      <p className='text-md text-royalBlue font-bold'>{ formatDateString(historyObj.createdAt) }</p>
+      { renderMessage(historyObj) }
+    </article>
+  )
+}
+
+HistoryItem.propTypes = {
+  historyObj: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    createdAt: PropTypes.string.isRequired,
+    message: PropTypes.string.isRequired,
+    careerId: PropTypes.string,
+    careerName: PropTypes.string
+  })
+}

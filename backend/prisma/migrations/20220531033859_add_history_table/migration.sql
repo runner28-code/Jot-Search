@@ -8,3 +8,4 @@ CREATE TABLE "History" (
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "History_pkey" PRIMARY KEY ("id")
+);

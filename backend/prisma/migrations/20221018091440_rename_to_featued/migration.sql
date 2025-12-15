@@ -6,3 +6,4 @@
 */
 -- AlterTable
 ALTER TABLE "Job" DROP COLUMN "intulsaFeatured",
+ADD COLUMN     "featured" BOOLEAN DEFAULT false;

@@ -187,6 +187,7 @@ function SkillsList({items}) {
     return (
       <p className='font-spaceGrotesk text-textBlack text-sm mb-10'>
         n/a
+      </p>
     )
   }
   return (
@@ -196,3 +197,40 @@ function SkillsList({items}) {
       ))}
     </ul>
   )
+}
+SkillsList.propTypes = {
+  items: PropTypes.array
+}
+
+function ApplyButton({datasource, careerId, applicationUrl}) {
+  if (datasource === 'getro' || datasource === 'main') {
+    return (
+      <div className='flex align-end justify-end'>
+        <a
+          href={applicationUrl}
+          target='_blank'
+          rel='noreferrer noopener'
+          className='text-white bg-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
+        >
+          Apply
+        </a>
+      </div>
+    )
+  }
+  return (
+    <div className='flex align-end justify-end'>
+      <Link
+        to={`${applyRoute}/${careerId}`}
+        className='text-white bg-royalBlue text-lg border border-royalBlue border-solid px-14 py-6 rounded-lg ml-10'
+      >
+        Apply
+      </Link>
+    </div>
+  )
+}
+
+ApplyButton.propTypes = {
+  datasource: PropTypes.string.isRequired,
+  careerId: PropTypes.string.isRequired,
+  applicationUrl: PropTypes.string
+}

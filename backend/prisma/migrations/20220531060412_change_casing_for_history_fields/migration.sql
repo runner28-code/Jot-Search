@@ -10,3 +10,4 @@
 ALTER TABLE "History" DROP COLUMN "batch_id",
 DROP COLUMN "record_id",
 ADD COLUMN     "batchId" TEXT,
+ADD COLUMN     "recordId" TEXT NOT NULL;

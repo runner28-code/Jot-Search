@@ -12,3 +12,14 @@ export default function PageHeaderCandidate(props) {
   } else {
     return <DesktopHeader {...props} />
   }
+}
+
+PageHeaderCandidate.propTypes = {
+  headerText: PropTypes.string.isRequired,
+  icon: PropTypes.string,
+  IconComponent: PropTypes.elementType,
+  classOverride: PropTypes.string,
+  containerClassOverride: PropTypes.string,
+  colorizeStroke: PropTypes.bool,
+  backButton: PropTypes.bool
+}

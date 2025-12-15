@@ -15,3 +15,4 @@ ADD COLUMN     "compensation_public" BOOLEAN,
 DROP COLUMN "discarded",
 ADD COLUMN     "discarded" BOOLEAN,
 DROP COLUMN "liked",
+ADD COLUMN     "liked" BOOLEAN;

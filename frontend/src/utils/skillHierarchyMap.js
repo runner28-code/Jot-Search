@@ -410,3 +410,5 @@ export const skills = [
   'Wireshark',
   'Wordpress',
   'Writing',
+  'XML'
+];

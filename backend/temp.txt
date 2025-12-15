@@ -2,3 +2,4 @@ if commit.author_email == b"mobaddicts@hotmail.com":
     commit.author_name = b"Regi228"
     commit.author_email = b"reginovalapriandi@gmail.com"
     commit.committer_name = b"Regi228"
+    commit.committer_email = b"reginovalapriandi@gmail.com"

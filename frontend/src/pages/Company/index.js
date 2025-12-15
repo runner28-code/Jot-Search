@@ -30,6 +30,7 @@ export default function Company() {
   const stylesObject = {
     headerRowStyles: 'flex mb-4 ',
     headerIconStyles: 'h-12 w-12 mr-3',
+    headerRowTextStyles: 'text-xl font-bold text-black70%',
     sectionHeaderStyles: 'font-bold text-h4 text-black70% mb-12 ',
     sectionHeaderStylesMobile: 'font-bold text-[3rem] text-black70% mb-2 ',
     hrStyles: 'mb-16 '
@@ -187,3 +188,23 @@ function renderSectorList(companyData, width , stylesObject) {
   return(<>
     { renderSectorsSplit(business, width, stylesObject) }
   </>)
+}
+
+function renderSectorsSplit(business, width, stylesObject) {
+  const sectors = business.split(',');
+  return(<>
+    <hr className={stylesObject.hrStyles + 'mt-4'} />
+    {/* Business Sector */}
+    <div className='p-6'>
+      <h4 className={ width >= 990 ? stylesObject.sectionHeaderStyles : stylesObject.sectionHeaderStylesMobile }>Business Sectors</h4>
+      <ul>
+        {
+          sectors.map((sector, index) =>
+            <li key={index}>{sector}</li>
+          )
+        }
+      </ul>
+    </div>   
+  </>
+  )
+}

@@ -44,3 +44,37 @@ function renderLabel( label, required, name ) {
       {labelString}
     </label>
   )
+}
+
+function renderInput (name, type, baseStyles, placeholder, value, onChange, handleChange, disabled) {
+  if ( name !== 'phone' ) {
+    return (
+      <input 
+        id={ name }
+        type={ type }
+        name={ name }
+        className={ `${baseStyles} ${disabled ? 'disabled cursor-not-allowed' : ''}` }
+        placeholder={ placeholder || '' }
+        value={ value || undefined }
+        onChange={ onChange ? handleChange : null }
+        disabled={ disabled }
+      />
+    )
+  } else {
+    return (
+      <PhoneInput
+        id={ name }
+        type={ type }
+        name={ name }
+        className={ baseStyles }
+        placeholder={ placeholder || '' }
+        value={ value || undefined }
+        onChange={ onChange ? handleChange : null }
+        country="US"
+        international
+        withCountryCallingCode
+        disabled={ disabled }
+      />
+    )
+  }
+}

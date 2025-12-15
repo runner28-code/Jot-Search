@@ -126,3 +126,4 @@ export const saveJobs = async (jobs: any[]) => {
         console.log(error);
         return { result: false, error };
     }
+}

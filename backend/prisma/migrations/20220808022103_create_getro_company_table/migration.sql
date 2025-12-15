@@ -19,6 +19,7 @@ CREATE TABLE "GetroCompany" (
     "twitter_url" TEXT,
     "url" TEXT,
     "website_url" TEXT,
+    "collections" TEXT,
     "managers" TEXT[],
     "organization_careers_pages" TEXT[],
     "status" TEXT,
@@ -27,3 +28,4 @@ CREATE TABLE "GetroCompany" (
     "network_id" INTEGER,
 
     CONSTRAINT "GetroCompany_pkey" PRIMARY KEY ("id")
+);

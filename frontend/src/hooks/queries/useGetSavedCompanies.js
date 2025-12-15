@@ -13,3 +13,8 @@ export const useGetSavedCompanies = ({ count, page, userId, enabled = true }) =>
   );
 
   return { savedCompanies: data, total: data?.total || 0, error, isLoading };
+}
+
+const getCompaniesKey = ({count, userId, page}) => {
+  return ['savedCompanies', {count, userId, page}];
+}

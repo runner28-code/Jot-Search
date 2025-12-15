@@ -14,3 +14,10 @@ export default function ChoiceTag({ label, isActive, handleClick }) {
       <span className='multi-select-choice text-sm'>{label}</span>
     </div>
   )
+}
+
+ChoiceTag.propTypes = {
+  label: PropTypes.string.isRequired,
+  isActive: PropTypes.bool.isRequired,
+  handleClick: PropTypes.func.isRequired
+}

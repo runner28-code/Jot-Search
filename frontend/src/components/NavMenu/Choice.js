@@ -6,6 +6,7 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
   
   let choiceLink = '/';
   if (choice === 'My Account') {
+    choiceLink = ROUTES.profile;
   } else if (choice !== 'Dashboard') {
     choiceLink += choice.toLowerCase().replace(' ', '-');
   }
@@ -24,3 +25,11 @@ export default function Choice({ choice, Icon, handleOptionClick, stylesObject }
       <hr className={stylesObject.hrStyles} />
     </div>
   )
+}
+
+Choice.propTypes = {
+  choice: PropTypes.string.isRequired,
+  Icon: PropTypes.func.isRequired,
+  handleOptionClick: PropTypes.func.isRequired,
+  stylesObject: PropTypes.object.isRequired
+}

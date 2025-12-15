@@ -16,7 +16,6 @@ exports.GetroService = void 0;
 const axios_1 = __importDefault(require("axios"));
 const config_1 = __importDefault(require("../config"));
 const query_string_1 = __importDefault(require("query-string"));
-// Temp comment
 const GetroCrud_1 = require("../utils/GetroCrud");
 const BullhornCrud_1 = require("../utils/BullhornCrud");
 const utils_1 = require("../utils");
@@ -299,3 +298,6 @@ class GetroService {
             yield (0, BullhornCrud_1.saveBullhornJobs)([data]);
         });
     }
+}
+exports.GetroService = GetroService;
+GetroService.client = null;

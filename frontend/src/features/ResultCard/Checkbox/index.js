@@ -8,4 +8,13 @@ export default function Checkbox({ id, checked, onChange, styles }) {
       className={buttonStyles}
       checked={checked}
       onChange={() => onChange(id)}
+    />
   )
+}
+
+Checkbox.propTypes = {
+  id: PropTypes.string.isRequired,
+  checked: PropTypes.bool.isRequired,
+  onChange: PropTypes.func.isRequired,
+  styles: PropTypes.string,
+}

@@ -57,6 +57,7 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
         selectableProps && selectableProps.selectable ?
           <Checkbox
             id={data.id}
+            checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
           />
           : 
@@ -113,3 +114,19 @@ function renderCardImage(data) {
       src={data.company?.logo}
     />
   }
+}
+
+// function renderFeaturedIcon(isFeatured) {
+//   if (!isFeatured) {
+//     return null;
+//   } else {
+//     return (
+//       <div className='flex justify-center gap-[10px] items-center w-48 px-m py-xxs bg-searchGreen rounded-full ml-8'>
+//         <img
+//           src={featuredIcon}
+//           alt='intulsa' />
+//         <p className='text-sm font-bold text-white'>InTulsa Featured</p>
+//       </div>
+//     )
+//   }
+// }

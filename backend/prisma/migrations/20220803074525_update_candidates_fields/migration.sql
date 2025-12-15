@@ -19,3 +19,4 @@ DROP COLUMN "experience",
 ADD COLUMN     "experience" INTEGER,
 DROP COLUMN "recentClientList",
 ADD COLUMN     "recentClientList" TEXT[],
+ALTER COLUMN "veteran" SET DATA TYPE TEXT;

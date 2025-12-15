@@ -1017,3 +1017,7 @@ export class BullhornService {
       }
     } catch (error: any) {
       console.log(error.message, "\nrepeatNumber =");
+      await this.getNewAccessToken();
+    }
+  }
+}

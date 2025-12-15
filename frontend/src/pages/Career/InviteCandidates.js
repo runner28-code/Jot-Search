@@ -99,7 +99,6 @@ export default function InviteCandidates({ job }) {
 function itemRenderer({ option, onClick, disabled }) {
   const avatarUrl = option.candidate?.avatar ? appendPathToBaseUrl(option.candidate?.avatar) : ''
   return (
-// Temp comment
     <div
       className={`flex flex-col border-grey-200 ${disabled && 'disabled'}`}
       onClick={onClick}
@@ -131,3 +130,21 @@ function getTagLine({ candidate }) {
     tagLine = `@ ${candidate.companyName}`
   }
   return tagLine;
+}
+
+function Initials({ name }) {
+  const initials = name?.split(' ').map(name => name[0]).join('');
+  return (
+    <div className="flex items-center justify-center w-20 h-20 bg-midGrey text-white text-2xl rounded-md">
+      {initials}
+    </div>
+  )
+}
+
+InviteCandidates.propTypes = {
+  job: PropTypes.object.isRequired
+}
+
+Initials.propTypes = {
+  name: PropTypes.string
+}

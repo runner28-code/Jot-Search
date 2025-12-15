@@ -5,3 +5,4 @@
 
 */
 -- AlterTable
+ALTER TABLE "History" ADD COLUMN     "column" TEXT NOT NULL;

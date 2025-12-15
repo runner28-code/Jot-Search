@@ -58,7 +58,6 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
         IconComponent={userType === 'coordinator' ? CareerIcon : CompanyIcon}
         backButton={true}
       />
-// Temp comment
       <DashboardCandidate 
         togglePassState={togglePassState} 
         toggle={toggle} 
@@ -77,3 +76,39 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   return (<>
     <Dashboard togglePassState={togglePassState} />
   </>)
+}
+RenderHeader.propTypes = {
+  loggedIn: PropTypes.bool,
+  userType: PropTypes.string,
+  togglePassState: PropTypes.func,
+  toggle: PropTypes.bool
+}
+
+function RenderAdvancedSearch({loggedIn, toggle, userType}) {
+  const { width } = useWindowDimensions();
+  if( !loggedIn) {
+    return (<>
+      <AdvancedSearchPublic
+        disabledTabs
+        toggle={toggle}
+      />
+    </>)
+  }
+  if( userType === 'candidate' && width <= 990 ) {
+    return (<>
+      <AdvancedSearchCandidate
+        disabledTabs
+        toggle={toggle}
+        userType={userType}
+      />      
+    </>)
+  }    
+  return (<>
+    <AdvancedSearch disabledTabs />
+  </>)
+}
+RenderAdvancedSearch.propTypes = {
+  loggedIn: PropTypes.bool,
+  toggle: PropTypes.bool,
+  userType: PropTypes.string
+}

@@ -48,7 +48,6 @@ export default function CareerFilterLayout(props) {
     <div className='flex flex-col gap-xxl-4'>
       <div className='flex flex-wrap gap-xxl-4'>
         { renderDropdownFilters(defaultFilterObject, dropdownFilterObject, handleFilterChange) }
-// Temp comment
       </div>
       <div className={ width >= 990 ? 'flex items-center gap-[65px]' : 'flex flex-col items-center gap-[65px]'}>
         <FilterSearch
@@ -67,3 +66,14 @@ export default function CareerFilterLayout(props) {
       </div>
     </div>
   );
+}
+
+CareerFilterLayout.propTypes = {
+  defaultFilterObject: PropTypes.object,
+  filterObject: PropTypes.object,
+  handleFilterChange: PropTypes.func,
+  searchTerm: PropTypes.string,
+  setSearchTerm: PropTypes.func,
+  handleSearchClick: PropTypes.func,
+  clearFilters: PropTypes.func,
+};

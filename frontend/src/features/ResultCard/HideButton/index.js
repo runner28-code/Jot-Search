@@ -5,6 +5,7 @@ import AuthService from '../../../services/auth';
 
 export default function HideButton({ type, data, setIsHidden }) {
   const role = AuthService.getUserRole();
+  if ( role !== 'coordinator' || type !== 'job' ) {
     return null;
   }
   
@@ -19,3 +20,10 @@ export default function HideButton({ type, data, setIsHidden }) {
       onClick={ handleClick }
     />
   )
+}
+
+HideButton.propTypes = {
+  type: PropTypes.string.isRequired,
+  data: PropTypes.object,
+  setIsHidden: PropTypes.func,
+}

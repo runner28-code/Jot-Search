@@ -21,3 +21,4 @@ const config = {
     frontendUrl: process.env.FRONTEND_URL,
     enableCronJobs: process.env.ENABLE_CRON_JOBS,
 };
+exports.default = config;

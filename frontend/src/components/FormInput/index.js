@@ -95,3 +95,23 @@ export default function FormInput(props) {
         disabled={disabled}
       />
   }
+}
+
+FormInput.propTypes = {
+  type: PropTypes.string.isRequired,
+  dropdownType: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  value: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array,
+    PropTypes.object
+  ]),
+  required: PropTypes.bool,
+  onChange: PropTypes.func,
+  choices: PropTypes.array,
+  choiceObject: PropTypes.object,
+  error: PropTypes.bool,
+  disabled: PropTypes.bool
+}

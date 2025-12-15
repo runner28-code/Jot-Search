@@ -29,3 +29,12 @@ export default function MobileHeader(props) {
       </h1> 
     </div>
   );
+}
+
+MobileHeader.propTypes = {
+  headerText: PropTypes.string.isRequired,
+  icon: PropTypes.string,
+  IconComponent: PropTypes.elementType,
+  classOverride: PropTypes.string,
+  colorizeStroke: PropTypes.bool,
+}

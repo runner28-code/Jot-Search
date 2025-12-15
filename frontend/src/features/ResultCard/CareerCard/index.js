@@ -239,3 +239,19 @@ function renderCardImage(data) {
       src={data.company_logo}
     />
   }
+}
+
+function renderFeaturedIcon(isFeatured) {
+  if (!isFeatured) {
+    return null;
+  } else {
+    return (
+      <div className='flex gap-[10px] items-center px-m py-xxs bg-searchGreen rounded-full ml-8'>
+        <img
+          src={featuredIcon}
+          alt='intulsa' />
+        <p className='text-sm font-bold text-white'>InTulsa Featured</p>
+      </div>
+    )
+  }
+}

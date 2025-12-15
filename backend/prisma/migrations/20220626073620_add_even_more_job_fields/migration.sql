@@ -24,3 +24,4 @@ DROP COLUMN "interviews",
 ADD COLUMN     "interviews" INTEGER,
 DROP COLUMN "salary",
 ADD COLUMN     "salary" BIGINT,
+ALTER COLUMN "onSite" SET DATA TYPE TEXT;

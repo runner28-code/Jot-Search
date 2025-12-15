@@ -23,3 +23,13 @@ export default function History({ historyArr, id, headerStyles, hrStyles }) {
     </section>
     <hr className={hrStyles} />
   </>)
+}
+
+History.propTypes = {
+  historyArr: PropTypes.arrayOf(
+    PropTypes.object
+  ).isRequired,
+  id: PropTypes.string.isRequired,
+  headerStyles: PropTypes.string.isRequired,
+  hrStyles: PropTypes.string.isRequired,
+}

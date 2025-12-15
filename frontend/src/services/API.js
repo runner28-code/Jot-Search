@@ -253,7 +253,6 @@ export async function getAppliedJobs(id) {
 
 
 export async function getInvitationsToApply(id) {
-// Temp comment
   const params = id ? { userId: id } : {}; // If no id is passed, will default to logged in user
   const { data } = await API.get(ROUTES.APIInvitedJobs, {
     params
@@ -510,3 +509,12 @@ function formatFilters(filters, translatedKeys = {}) {
   });
 
   return formattedFilters;
+}
+
+function normalizeData(data) {
+  if (Array.isArray(data)) {
+    return data.map(fixStringNulls);
+  } else {
+    return fixStringNulls(data);
+  }
+}

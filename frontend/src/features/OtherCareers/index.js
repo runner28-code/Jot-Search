@@ -51,3 +51,10 @@ export default function OtherCareers({ companyId, companyName, currentCareerId }
       </>
     )}
   </>)
+}
+
+OtherCareers.propTypes = {
+  companyId: PropTypes.string.isRequired,
+  companyName: PropTypes.string,
+  currentCareerId: PropTypes.string
+}

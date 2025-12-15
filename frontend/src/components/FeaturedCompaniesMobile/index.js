@@ -9,7 +9,6 @@ const ITEMS_PER_PAGE = 6;
 export default function FeaturedCompaniesMobile() {
 
   const filtersArr = [
-// Temp comment
     {
       key: 'status',
       value: 'active'
@@ -54,3 +53,19 @@ function renderColorShapes() {
       <div className='bg-orangeSquare bg-pink-500 top-[-20px] right-[5px] absolute w-6 h-6' />
     </div>
   )
+}
+function renderLogo(logo) {
+
+  const styles = 'w-full h-full object-scale-down';
+  if( !logo ) {
+    return (<>
+      <BsBuilding className={styles} />
+    </>)
+  }
+  return(<>
+    <img
+      src={logo}
+      className={styles}
+    />
+  </>)
+}

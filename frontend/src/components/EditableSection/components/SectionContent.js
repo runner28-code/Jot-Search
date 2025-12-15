@@ -9,7 +9,6 @@ export default function SectionContent({ contentObject }) {
   const propertyName = singleProperty ? Object.keys(contentObject)[0] : '';
   
   if ( singleProperty && UNLABELED_CONTENT_ARRAY.includes(propertyName) ) {
-// Temp comment
     const contentString = !contentObject[propertyName] ? 'None provided' : contentObject[propertyName];
     return <UnlabeledContent 
       contentText={contentString} 
@@ -17,3 +16,23 @@ export default function SectionContent({ contentObject }) {
     />
   }
   return renderMultipleProperties(contentObject);
+}
+
+SectionContent.propTypes = {
+  contentObject: PropTypes.object.isRequired,
+}
+
+function renderMultipleProperties(contentObject) {
+  return (<>
+    { Object.entries(contentObject).map(([key, value]) => {
+      if ( !value ) {
+        return null;
+      }
+      return <Property
+        key={key}
+        name={key}
+        value={value}
+      />
+    }) }
+  </>)
+}

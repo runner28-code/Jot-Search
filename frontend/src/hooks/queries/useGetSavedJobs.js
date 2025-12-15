@@ -13,3 +13,8 @@ export const useGetSavedJobs = ({ count, page, userId, enabled = true }) => {
   );
 
   return { savedJobs: data, total: data?.total || 0, error, isLoading };
+}
+
+const getJobsKey = ({count, userId, page}) => {
+  return ['savedJobs', {count, userId, page}];
+}

@@ -27,3 +27,36 @@ export default function UniversalDropdown({ inputStyles, optionStyles, name, cho
       })}
     </select>
   )
+}
+
+UniversalDropdown.defaultProps = {
+  inputStyles: '',
+  optionStyles: '',
+}
+
+UniversalDropdown.propTypes = {
+  inputStyles: PropTypes.string.isRequired,
+  optionStyles: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  choices: PropTypes.array.isRequired,
+  currentChosen: PropTypes.string,
+  handleChange: PropTypes.func.isRequired,
+  multiselect: PropTypes.bool,
+  noDefault: PropTypes.bool,
+  disabled: PropTypes.bool
+}
+
+function renderPlaceholder(noDefault, currentChosen) {
+  if (noDefault) {
+    return null;
+  }
+  return (
+    <option
+      defaultValue=''
+      value={ currentChosen ? currentChosen : '' }
+      disabled={true}
+    >
+      {currentChosen ? currentChosen : 'Choose One...'}
+    </option>
+  )
+}

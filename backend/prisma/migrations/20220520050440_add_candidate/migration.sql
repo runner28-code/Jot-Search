@@ -104,3 +104,4 @@ CREATE TABLE "Candidate" (
     "employmentPreference" TEXT,
 
     CONSTRAINT "Candidate_pkey" PRIMARY KEY ("id")
+);

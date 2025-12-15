@@ -476,3 +476,54 @@ function SocialStyles() {
       </div>
     </div>
   )
+}
+function SocialStylesMobile() {
+  const socialStyles = 'basis-6/12 p-8 ';
+  return (
+    <div className='bg-midGrey flex justify-center items-center'>
+      <div className='flex flex-col vw-900:flex-row justify-center items-center w-full p-12'>
+        <div className='flex flex-row flex-wrap'>
+          <div className={socialStyles}>
+            <p className='font-spaceGrotesk text-lightGrey text-sm'>DISCOVER THE INTULSA NETWORK</p>
+          </div>
+          <div className={socialStyles}>
+            <a
+              href='https://intulsa.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                src={intulsaLogo}
+                alt='Intulsa'
+              />
+            </a>
+          </div>
+          <div className={socialStyles}>
+            <a
+              href='https://talent.intulsa.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                src={intulsaTalentLogo}
+                alt='Intulsa Talent'
+              />
+            </a>   
+          </div>
+          <div className={socialStyles}>
+            <a
+              href='https://business.intulsa.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                src={intulsaBusinessLogo}
+                alt='Intulsa Logo'
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}

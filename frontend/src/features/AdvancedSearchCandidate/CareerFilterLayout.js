@@ -66,3 +66,14 @@ export default function CareerFilterLayout(props) {
       </div>
     </div>
   );
+}
+
+CareerFilterLayout.propTypes = {
+  defaultFilterObject: PropTypes.object,
+  filterObject: PropTypes.object,
+  handleFilterChange: PropTypes.func,
+  searchTerm: PropTypes.string,
+  setSearchTerm: PropTypes.func,
+  handleSearchClick: PropTypes.func,
+  clearFilters: PropTypes.func,
+};

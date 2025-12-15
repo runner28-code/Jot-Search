@@ -66,3 +66,4 @@ function conditionalStyles(isActiveTab, isLocked) {
     return 'bg-grey300 text-royalBlue hover:cursor-not-allowed';
   }
   return 'bg-white text-royalBlue hover:bg-aquaBlue hover:text-white';
+}

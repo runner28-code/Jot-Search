@@ -48,6 +48,7 @@ CREATE TABLE "Lead" (
     "ownerCorporation" TEXT,
     "pager" TEXT,
     "phone" TEXT,
+    "phone2" TEXT,
     "phone3" TEXT,
     "preferredContact" TEXT,
     "primarySkills" TEXT,
@@ -68,3 +69,4 @@ CREATE TABLE "Lead" (
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "Lead_pkey" PRIMARY KEY ("id")
+);

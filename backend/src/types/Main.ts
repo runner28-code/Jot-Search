@@ -37,3 +37,4 @@ export type Job = {
     type?: string;
     isDeleted?: string;
     postedAt?: string;
+};

@@ -20,6 +20,7 @@ export default function DashboardMinified({ location }) {
         <MinifiedTitle location={location} />
       </div>
     )
+  }
   return (
     <div className='flex items-start flex-col bg-gradient-to-t from-sky-700 via-sky-700 to-sky-500 mb-8 text-white py-4 px-10'>
       <LinkSwap
@@ -53,3 +54,31 @@ function LinkSwap ({ location, loggedIn }) {
       </Link>
     )
   }
+}
+LinkSwap.propTypes = {
+  location: PropTypes.string.isRequired,
+  loggedIn: PropTypes.bool
+}
+
+function MinifiedTitle ({location}) {
+
+  if(location === 'career') {
+    return (
+      <div className='flex items-center text-xl ml-8'>
+        <CareerIcon />
+        <span className='ml-4'>Careers</span>
+      </div>
+    )
+  }
+  if(location === 'companies') {
+    return (
+      <div className='flex items-center text-xl ml-8'>
+        <CompanyIcon />
+        <span className='ml-4'>Companies</span>
+      </div>
+    )
+  }
+}
+MinifiedTitle.propTypes = {
+  location: PropTypes.string.isRequired
+}

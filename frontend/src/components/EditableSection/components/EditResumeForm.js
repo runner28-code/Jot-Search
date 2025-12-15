@@ -14,6 +14,7 @@ export default function EditResumeForm({ handleChange }) {
     handleChange( fakeEvent );
   }
   
+  return (
     <div className='flex flex-col'>
       <label
         className='text-h5 font-bold text-royalBlue'
@@ -30,3 +31,8 @@ export default function EditResumeForm({ handleChange }) {
       />
     </div>
   )
+}
+
+EditResumeForm.propTypes = {
+  handleChange: PropTypes.func.isRequired,
+}

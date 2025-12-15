@@ -6,6 +6,7 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   if ( submissionObject.loading ) {
     return <LoadingSpinner
       height='50'
+      width='50'
     />
   }
   if ( submissionObject.success ) {
@@ -59,3 +60,32 @@ export function inputValidation(formObj) {
     newErrors.push('skills');
   }
   return newErrors;
+}
+
+export function formatFormObj(formObj, categoriesArray) {
+  const newFormObj = { ...formObj };
+
+  delete newFormObj.verifyPassword;
+
+  newFormObj.firstname = newFormObj.firstName;
+  newFormObj.lastname = newFormObj.lastName;
+  delete newFormObj.firstName;
+  delete newFormObj.lastName;
+
+  newFormObj.roles = newFormObj.roles.join(', ');
+
+  newFormObj.skills = newFormObj.skills.join(', ');
+
+  newFormObj.role = 'candidate';
+
+  const categoryObjectFromName = categoriesArray.find(category => category.name === newFormObj.expertise);
+  newFormObj.expertise = categoryObjectFromName.id;
+
+  for(let [key, value] of Object.entries(experienceMap)) {
+    if ( newFormObj.experience === value ) {
+      newFormObj.experience = experienceMap[key];
+    }
+  }
+
+  return newFormObj;
+}

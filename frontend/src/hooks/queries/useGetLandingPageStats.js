@@ -14,3 +14,8 @@ export const useGetLandingPageStats = ({ enabled = true }) => {
   );
 
   return { totalJobsCount: data?.totalJobsCount, totalCompaniesCount: data?.totalCompaniesCount, error, isLoading };
+}
+
+const getLandingPageStatsKey = () => {
+  return ['landing-page-stats'];
+}

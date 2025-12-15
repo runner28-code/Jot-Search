@@ -78,3 +78,4 @@ export const communityChoices = [
   'Campus Tulsa',
   'Tulsa Service Year',
   'NU'
+]

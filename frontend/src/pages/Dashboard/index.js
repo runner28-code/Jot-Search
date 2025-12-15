@@ -10,5 +10,23 @@ export default function Dashboard() {
 
   return (
     <main>
+      <DashboardType userType={userType} />
     </main>
   )
+}
+
+function DashboardType({ userType }) {
+  if (userType === 'candidate') {
+    return <CandidateDashboard userType={userType} />
+  } else if (userType === 'company') {
+    return <CompanyDashboard userType={userType} />
+  } else if (userType === 'coordinator') {
+    return <CoordinatorDashboard userType={userType} />
+  } else {
+    return <Navigate to='/login' />
+  }
+}
+
+DashboardType.propTypes = {
+  userType: PropTypes.string.isRequired
+}

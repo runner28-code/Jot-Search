@@ -65,7 +65,6 @@ export function renderDropdownFilters(defaultFilterObject, filterObject, handleF
     const choices = value;
     const chosen = filterObject ? filterObject[filterType] : null;
     return (
-// Temp comment
       <Filter
         key={filterType}
         filterType={filterType}
@@ -106,3 +105,4 @@ export function renderCheckboxFilters(defaultFilterObject, filterObject, handleF
       </label>
     )
   })
+}

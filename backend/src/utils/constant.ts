@@ -184,6 +184,7 @@ const job_filter_exclude_keys = [
   "hospitalist",
   "house manager",
   "housekeeper",
+  "housekeeping",
   "housing",
   "humanities",
   "hvac",
@@ -507,3 +508,5 @@ export const JOB_FIELDS = [
   "travelRequirements",
   "type",
   "willRelocate",
+  "yearsRequired",
+]

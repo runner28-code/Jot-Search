@@ -5,3 +5,4 @@
 
 */
 -- CreateIndex
+CREATE UNIQUE INDEX "Job_Unique_ExternalId" ON "Job"("externalId");

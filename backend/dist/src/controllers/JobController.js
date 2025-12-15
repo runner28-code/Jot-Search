@@ -347,3 +347,21 @@ const normalizeFilters = (filters) => {
         });
     }
     return filterObj;
+};
+exports.normalizeFilters = normalizeFilters;
+const normalizeValue = (value) => {
+    if (typeof value === "string") {
+        return {
+            contains: value,
+            mode: "insensitive",
+        };
+    }
+    else if (Array.isArray(value)) {
+        return {
+            in: value,
+        };
+    }
+    else {
+        return value;
+    }
+};

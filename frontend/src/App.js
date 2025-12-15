@@ -43,6 +43,7 @@ function App() {
               path={ROUTES.companies}
               element={<Companies />} />
             <Route
+              path={`${ROUTES.careers}/:id`}
               element={<Career />} />
             <Route
               path={`${ROUTES.apply}/:id`}
@@ -69,3 +70,6 @@ function App() {
       <Footer />
     </div>
   );
+}
+
+export default App;

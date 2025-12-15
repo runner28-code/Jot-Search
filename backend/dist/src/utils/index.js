@@ -69,6 +69,7 @@ const consoleLog = (message, newLine = true) => {
 };
 exports.consoleLog = consoleLog;
 const sleep = (ms) => __awaiter(void 0, void 0, void 0, function* () {
+    return new Promise(resolve => setTimeout(resolve, ms));
 });
 exports.sleep = sleep;
 const getDataSource = (id) => {
@@ -88,3 +89,42 @@ const checkForJobFilter = (title, location) => {
     if (location.replace(/\s+/g, '').match(constant_1.CITY_INCLUDE_KEYS_REGEX))
         return true;
     return false;
+};
+exports.checkForJobFilter = checkForJobFilter;
+exports.fileUploadOptions = {
+    limits: {
+        fileSize: config_1.default.fileUploadSize,
+    }
+};
+const justifyData = (data, keys, excludeKeys = []) => {
+    return Object.keys(data).filter(key => keys.indexOf(key) > -1 && excludeKeys.indexOf(key) === -1).reduce((v, key) => {
+        return Object.assign(Object.assign({}, v), { [key]: data[key] });
+    }, {});
+};
+exports.justifyData = justifyData;
+const getFilterConditions = (filters, operator = "OR", specialHandlers = {}, nonStringFields = new Set()) => {
+    const conditions = filters.map((opt) => {
+        if (Array.isArray(opt.value)) {
+            const operator = opt.operator || "AND";
+            const baseCondition = (value) => (0, exports.determineCondition)(opt.key, value, specialHandlers, nonStringFields);
+            return opt.value.map(baseCondition).join(` ${operator} `);
+        }
+        else {
+            return (0, exports.determineCondition)(opt.key, opt.value, specialHandlers);
+        }
+    });
+    return conditions.join(` ${operator} `);
+};
+exports.getFilterConditions = getFilterConditions;
+const determineCondition = (key, value, specialHandlers, nonStringFields = new Set()) => {
+    if (specialHandlers[key] != null) {
+        return specialHandlers[key](key, value);
+    }
+    else if (nonStringFields.has(key) || typeof value !== "string") {
+        return `${key} = ${value}`;
+    }
+    else {
+        return `LOWER(${key}) LIKE '%${value.toLowerCase()}%'`;
+    }
+};
+exports.determineCondition = determineCondition;

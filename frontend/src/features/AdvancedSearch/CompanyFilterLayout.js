@@ -28,3 +28,11 @@ export default function CompanyFilterLayout(props) {
       </div>
     </div>
   );
+}
+
+CompanyFilterLayout.propTypes = {
+  searchTerm: PropTypes.string,
+  setSearchTerm: PropTypes.func,
+  handleSearchClick: PropTypes.func,
+  clearFilters: PropTypes.func,
+};

@@ -14,3 +14,7 @@ export default function SearchMinified ({ imgClass }) {
       className={ classes }
     />
   </>)
+}
+SearchMinified.propTypes = {
+  imgClass: PropTypes.string
+}

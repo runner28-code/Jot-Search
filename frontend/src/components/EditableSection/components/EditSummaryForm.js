@@ -6,3 +6,9 @@ export default function EditSummaryForm({ summaryText, setSummary }) {
     name='comments'
     onChange={setSummary}
     value={summaryText} />
+}
+
+EditSummaryForm.propTypes = {
+  summaryText: PropTypes.string.isRequired,
+  setSummary: PropTypes.func.isRequired,
+}

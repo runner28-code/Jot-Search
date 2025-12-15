@@ -11,6 +11,7 @@ const VALID_TYPES = ['job', 'company', 'candidate'];
 export default function FavoriteButton({ type, data, addClass, isFavoriteOverride = null }) {
   const role = AuthService.getUserRole();
   if ( !AuthService.loggedIn() || role === 'coordinator' ) {
+    return null;
   }
   // Return conditions
   const invalidType = !VALID_TYPES.includes(type);
@@ -84,3 +85,17 @@ function getItemsByType(type) {
     default:
       return [];
   }
+}
+
+async function saveItemByType(type, user_id, item_id) {
+  switch (type) {
+    case 'job':
+      return await saveJob(user_id, item_id);
+    case 'company':
+      return await saveCompany(user_id, item_id);
+    case 'candidate':
+      return await saveCandidate(user_id, item_id);
+    default:
+      return null;
+  }
+}

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { VscBriefcase as CareerIcon } from 'react-icons/vsc';
 import urlDecode from '../../utils/urlDecode';
 import * as ROUTES from '../../routes';
@@ -20,3 +21,39 @@ export default function JobResults({ jobs }) {
       })}
     </>
   )
+}
+
+JobResults.propTypes = {
+  jobs: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      title: PropTypes.string,
+    })
+  ).isRequired,
+}
+
+function JobResult({ job }) {
+  job.title = urlDecode(job.title);
+  const toLink = `${ROUTES.careers}/${job.id}`;
+  console.log({ job})
+  return (
+    <Link
+      to={toLink} 
+      className='flex w-full my-1'
+    >
+      <CareerIcon className='h-20 w-20 ml-2 mr-6 fill-black70%' />
+      <div className='flex flex-col font-bold'>
+        <p className='font-spaceGrotesk text-royalBlue text-md'>{ job.title }</p>
+        <p className='font-spaceGrotesk text-blue70% text-sm'>{ job.company_name }</p>
+      </div>
+    </Link>
+  )
+}
+
+JobResult.propTypes = {
+  job: PropTypes.shape({
+    id: PropTypes.string,
+    title: PropTypes.string,
+    company_name: PropTypes.string,
+  }).isRequired,
+}

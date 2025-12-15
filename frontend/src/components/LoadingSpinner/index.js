@@ -9,8 +9,17 @@ export default function LoadingSpinner({ height = '100', width = '100', color = 
     <div className={containerStyles}>
       <LoaderSpinner
         height={height}
+        width={width}
         color={color}
         ariaLabel='loading'
       />
     </div>
   )
+}
+
+LoadingSpinner.propTypes = {
+  height: PropTypes.string,
+  width: PropTypes.string,
+  color: PropTypes.string,
+  viewportCentered: PropTypes.bool
+}

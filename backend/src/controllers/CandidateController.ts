@@ -428,3 +428,6 @@ export class CandidateController {
         result: false,
         error: "Please check email, jobIds and candidateIds",
       };
+    }
+  }
+}

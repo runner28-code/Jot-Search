@@ -12,3 +12,4 @@ ADD COLUMN     "skillList" TEXT[],
 DROP COLUMN "degreeList",
 ADD COLUMN     "degreeList" TEXT[],
 DROP COLUMN "certificationList",
+ADD COLUMN     "certificationList" TEXT[];

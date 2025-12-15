@@ -10,7 +10,6 @@ export default function DesktopHeader(props) {
     classOverride,
     containerClassOverride,
     colorizeStroke,
-// Temp comment
     dataSource,
     backButton
   } = props;
@@ -52,3 +51,15 @@ export default function DesktopHeader(props) {
       )}
     </div>
   )
+}
+
+DesktopHeader.propTypes = {
+  headerText: PropTypes.string.isRequired,
+  icon: PropTypes.string,
+  IconComponent: PropTypes.elementType,
+  classOverride: PropTypes.string,
+  containerClassOverride: PropTypes.string,
+  colorizeStroke: PropTypes.bool,
+  dataSource: PropTypes.string,
+  backButton: PropTypes.bool
+}

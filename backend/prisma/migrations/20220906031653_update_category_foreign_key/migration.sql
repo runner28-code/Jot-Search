@@ -11,3 +11,4 @@ ALTER TABLE "Job" DROP CONSTRAINT "Job_categoryId_fkey";
 CREATE UNIQUE INDEX "Category_externalID_key" ON "Category"("externalID");
 
 -- AddForeignKey
+ALTER TABLE "Job" ADD CONSTRAINT "Job_categoryId_fkey" FOREIGN KEY ("categoryId") REFERENCES "Category"("externalID") ON DELETE SET NULL ON UPDATE CASCADE;

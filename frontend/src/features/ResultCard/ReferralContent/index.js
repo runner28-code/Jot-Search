@@ -11,3 +11,11 @@ export default function ReferralCardContent({ data }) {
       <p className='vw-640:text-md'>{data.company}</p>
     </>
   )
+}
+
+ReferralCardContent.propTypes = {
+  data: PropTypes.shape({
+    company: PropTypes.string,
+    title: PropTypes.string,
+  }).isRequired
+}

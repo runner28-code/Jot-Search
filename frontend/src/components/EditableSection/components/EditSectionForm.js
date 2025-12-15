@@ -69,3 +69,9 @@ export default function EditSectionForm({ contentObject, handlePropertyChange })
       })}
     </div>
   )
+}
+
+EditSectionForm.propTypes = {
+  contentObject: PropTypes.object.isRequired,
+  handlePropertyChange: PropTypes.func.isRequired,
+}

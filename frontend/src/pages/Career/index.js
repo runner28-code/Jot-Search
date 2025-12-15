@@ -51,6 +51,7 @@ export default function CareerPage() {
     role
   }
   const loggedIn = AuthService.loggedIn();
+
   const source = data.careerData.datasource;
 
   const containerStyles = 'ml-10 mr-10 vw-640:ml-20 vw-640:mr-20 vw-1280:ml-0';
@@ -152,3 +153,35 @@ function MailButton({ text, email, company, id, add }) {
       {text}
     </a>
   </>)
+}
+MailButton.propTypes = {
+  text: PropTypes.string,
+  email: PropTypes.string,
+  company: PropTypes.string,
+  id: PropTypes.string,
+  add: PropTypes.string
+}
+
+
+function RenderHeader({loggedIn, role, source}) {
+  if( loggedIn ) {
+    return (<>
+      <PageHeader
+        headerText='Career Details'
+        IconComponent={CareerIcon}
+        dataSource={role === 'coordinator' ? source : null}
+        backButton
+      />
+    </>)
+  }
+  return (<>
+    <DashboardPublicMin
+      type='careers'
+    />
+  </>)
+}
+RenderHeader.propTypes = {
+  loggedIn: PropTypes.bool,
+  role: PropTypes.string,
+  source: PropTypes.string
+}

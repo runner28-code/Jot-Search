@@ -103,3 +103,30 @@ function RenderImage({image}) {
       />
     </div>
   )
+}
+RenderImage.propTypes = {
+  image: PropTypes.string
+}
+
+function RenderImageMobile({image}) {
+  const containerStyles = 'w-28 flex ';
+  const iconStyles = 'w-full h-full ';
+  if( !image ) {
+    return(<>
+      <div className={ containerStyles + 'outline outline-1 outline-neutral-300 p-8' }>
+        <CareerIcon className={iconStyles + ' fill-royalBlue object-fill'} />
+      </div>
+    </>)
+  }
+  return(
+    <div className={containerStyles}>
+      <img
+        src={image}
+        className={iconStyles}
+      />
+    </div>
+  )
+}
+RenderImageMobile.propTypes = {
+  image: PropTypes.string
+}

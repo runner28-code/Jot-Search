@@ -279,3 +279,27 @@ function renderBusinessSector(item, textStyles) {
   return (<>
     <h5 className={textStyles}>{item}</h5>
   </>)
+}
+
+function OpenCareers({styles, companyId}) {
+
+  const filtersArr = [
+    {
+      key: 'status',
+      value: ['Active', 'Open']
+    },
+    {
+      key: 'companyId',
+      value: companyId
+    }
+  ];
+  const {total, isLoading} = useGetJobs({filtersArr});
+
+  return (<>
+    <p className={styles}>{isLoading ? <LoadingSpinner /> : total} Open Careers</p>
+  </>)
+}
+OpenCareers.propTypes = {
+  styles: PropTypes.string,
+  companyId: PropTypes.string
+}

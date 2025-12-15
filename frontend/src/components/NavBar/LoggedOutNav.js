@@ -97,3 +97,14 @@ function DesktopNavBarLayout() {
       </div>
     </nav>
   )
+}
+
+function renderGlobalSearch() {
+  const loggedIn = AuthService.loggedIn();
+
+  if ( loggedIn ) {
+    return <GlobalSearch
+      placeholder='Search...' />
+  }
+  return null;
+}

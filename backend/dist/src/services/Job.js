@@ -25,7 +25,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getJobsList = exports.updateJob = exports.inferDatasetById = exports.getAppliedJobsByUser = exports.createJob = void 0;
 const Common_1 = require("../types/Common");
-// Temp comment
 const Job_1 = require("../types/Job");
 const db_1 = __importDefault(require("../utils/db"));
 const createJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
@@ -65,3 +64,87 @@ const sanitizeJob = (job) => {
         }
     });
     return newJob;
+};
+const getAppliedJobsByUser = (userId) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const jobs = yield db_1.default.job.findMany({
+            where: {
+                applications: {
+                    some: {
+                        userId,
+                    },
+                },
+            },
+        });
+        return {
+            jobs,
+            result: jobs != null,
+        };
+    }
+    catch (error) {
+        console.log(error);
+        return {
+            message: error,
+            result: false,
+        };
+    }
+});
+exports.getAppliedJobsByUser = getAppliedJobsByUser;
+const inferDatasetById = (id) => {
+    if (id.startsWith("gt-")) {
+        return Common_1.DATASET_GETRO;
+    }
+    else if (id.startsWith("bl-")) {
+        return Common_1.DATASET_BULLHORN;
+    }
+    else {
+        return Common_1.DATASET_MAIN;
+    }
+};
+exports.inferDatasetById = inferDatasetById;
+const updateJob = (job) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const { id } = job, jobData = __rest(job, ["id"]);
+        const sanitizedKeys = Object.keys(jobData).filter((key) => Job_1.ALLOWED_JOB_KEYS_TO_UPDATE.has(key));
+        const filteredJob = {};
+        sanitizedKeys.forEach((key) => {
+            const typedKey = key;
+            filteredJob[typedKey] = job[typedKey];
+        });
+        const res = yield db_1.default.job.update({
+            where: {
+                id,
+            },
+            data: Object.assign(Object.assign({}, filteredJob), { datasource: filteredJob === null || filteredJob === void 0 ? void 0 : filteredJob.datasource }),
+        });
+        return {
+            result: true,
+            res,
+        };
+    }
+    catch (err) {
+        console.log(err);
+        return {
+            message: err,
+            result: false,
+        };
+    }
+});
+exports.updateJob = updateJob;
+const getJobsList = (jobs_ids) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const jobs = yield db_1.default.job.findMany({
+            where: {
+                id: {
+                    in: jobs_ids,
+                },
+            },
+        });
+        return jobs.map((job) => job.title);
+    }
+    catch (error) {
+        console.log(error);
+        throw error;
+    }
+});
+exports.getJobsList = getJobsList;

@@ -13,3 +13,7 @@ export default function Notification ({ imgClass }) {
       className={ classes }
     />
   </>)
+}
+Notification.propTypes = {
+  imgClass: PropTypes.string
+}

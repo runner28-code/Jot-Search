@@ -5,7 +5,14 @@ export default function ViewAllLink({ href, text }) {
   return (
     <Link 
       to={ href }
+      className='text-md text-royalBlue font-bold'
     >
       {`${text} >`}
     </Link>
   )
+}
+
+ViewAllLink.propTypes = {
+  href: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
+}

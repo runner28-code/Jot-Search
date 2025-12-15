@@ -12,3 +12,4 @@ ADD COLUMN     "deactivated_at" TIMESTAMP(3),
 DROP COLUMN "employment_types",
 ADD COLUMN     "employment_types" TEXT[],
 DROP COLUMN "passes_filter",
+ADD COLUMN     "passes_filter" BOOLEAN;

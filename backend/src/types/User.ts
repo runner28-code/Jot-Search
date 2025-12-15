@@ -105,3 +105,4 @@ export type LoginInfo = {
   password: string;
 };
 
+export const USER_TABLE = "User";

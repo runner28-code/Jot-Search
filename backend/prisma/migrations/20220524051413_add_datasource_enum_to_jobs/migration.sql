@@ -8,3 +8,4 @@
 CREATE TYPE "Datasource" AS ENUM ('main', 'bullhorn', 'getro');
 
 -- AlterTable
+ALTER TABLE "Job" ADD COLUMN     "datasource" "Datasource" NOT NULL;

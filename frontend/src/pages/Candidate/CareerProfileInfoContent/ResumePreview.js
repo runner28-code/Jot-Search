@@ -1,3 +1,4 @@
+import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
 import PropTypes from 'prop-types';
 import {
@@ -53,3 +54,10 @@ const ResumePreview = ({ resumeUrl }) => {
       )}
     </div>
   );
+};
+
+ResumePreview.propTypes = {
+  resumeUrl: PropTypes.string.isRequired,
+}
+
+export default ResumePreview;

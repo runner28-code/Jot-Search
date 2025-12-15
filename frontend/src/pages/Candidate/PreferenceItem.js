@@ -41,6 +41,7 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
   const toggleOffToggleStyles = 'translate-x-0'
 
   const toggleStyles = toggled ? toggleOnToggleStyles : toggleOffToggleStyles
+
   const handleToggle = () => {
     if (disabled) {
       return null;
@@ -70,3 +71,12 @@ export function SwitchButton({ fieldName, label, toggled, onToggle, disabled }) 
       </span>
     </button>
   )
+}
+
+SwitchButton.propTypes = {
+  fieldName: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  toggled: PropTypes.bool.isRequired,
+  onToggle: PropTypes.func.isRequired,
+  disabled: PropTypes.bool,
+}

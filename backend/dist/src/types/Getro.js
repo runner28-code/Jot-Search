@@ -25,3 +25,4 @@ exports.ALLOWED_GETRO_FILTERS = new Set([
     "title",
     "url",
     "hidden",
+]);

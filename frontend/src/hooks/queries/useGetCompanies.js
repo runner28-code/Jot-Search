@@ -14,3 +14,8 @@ export const useGetCompanies = ({ count, page, filterKey, filterValue, enabled =
   );
 
   return { companies: data?.companies, total: data?.total || 0, error, isLoading };
+}
+
+const getCompaniesKey = ({filterValue, filterKey, count, page}) => {
+  return ['companies', {filterValue, filterKey, count, page}];
+}

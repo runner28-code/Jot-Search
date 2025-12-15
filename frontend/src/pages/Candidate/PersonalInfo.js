@@ -145,7 +145,6 @@ export default function PersonalInfo({role, candidateData, handleCandidateUpdate
             <div className='vw-1280:flex gap-12'>
               <label
                 htmlFor='email'
-// Temp comment
                 className={labelStyles}
               >
                 <p className={labelTextStyles}>Email</p>
@@ -382,3 +381,4 @@ function renderEditIcon(candidateData, setEditMode) {
       <span>Edit</span>
     </button>
   )
+}

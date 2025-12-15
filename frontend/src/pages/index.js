@@ -16,3 +16,4 @@ export {default as Logout} from './Logout';
 export {default as Profile} from './Profile';
 export {default as SignUp} from './SignUp';
 export {default as ResetPassword} from './ResetPassword';
+export {default as AccountRecovery} from './AccountRecovery';

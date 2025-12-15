@@ -37,3 +37,9 @@ export default function ResetButton({ candidateData, setType }) {
       Request Password Reset
     </button>
   )
+}
+
+ResetButton.propTypes = {
+  candidateData: PropTypes.object.isRequired,
+  setType: PropTypes.func.isRequired
+};

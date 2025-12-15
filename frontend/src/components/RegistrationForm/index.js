@@ -41,6 +41,7 @@ const defaultState = {
   password: '',
   verifyPassword: '',
   terms: false
+};
 
 const defaultCommunity = {
   community: ''
@@ -180,3 +181,296 @@ export default function RegistrationForm(loggedIn) {
       referredBy: value
     })
     setReferralChoice(false);
+  }
+
+
+  // Alter header and pronoun based on who is registering the new user
+  const pronoun = addType === 'candidate' ? 'you' : 'they';
+  const buttonString = addType === 'candidate' ? 'Join' : 'Add Candidate';
+
+  // Conditional styles
+  const userRegisterStyles = 'flex flex-col items-center w-full max-w-208 font-spaceGrotesk vw-768:py-16 vw-1024:py-24'
+  const addCandidateStyles = 'flex flex-col items-center w-full font-spaceGrotesk'
+  const containerStyles = addType === 'candidate' ? userRegisterStyles : addCandidateStyles;
+  const midpointFlex = addType === 'candidate' ? 'w-full' : 'vw-900:flex justify-evenly w-full';
+  const flexWidth = addType === 'candidate' ? 'w-full' : 'vw-900:w-1/3';
+  const buttonBaseStyles = 'text-md bg-royalBlue font-semibold text-white rounded-2xl px-6 py-8 font-spaceGrotesk ';
+  const buttonStyles = buttonBaseStyles + (addType === 'candidate' ? 'w-full max-w-100 ' : 'w-100 ');
+  const inputStyles = 'block w-full bg-lightGrey leading-8 text-sm vw-768:text-base border border-solid border-charcoal rounded-xl px-4 py-s mb-8 mt-2 cursor-pointer disabled:bg-midGrey disabled:cursor-not-allowed ';
+  const hrStyles = 'mb-15 border-medGray border border-solid';
+  const relocateClass = ' transform translate-x-5';
+
+  return (
+    <form
+      className={containerStyles}
+      onSubmit={handleSubmit}>
+      { renderHeader(addType) }
+      <div className={midpointFlex}>
+        <div className={flexWidth}>
+          <FormInput
+            type='text'
+            name='firstName'
+            label='First Name'
+            required={true}
+            error={errors.includes('firstName')}
+          />
+          <FormInput
+            type='text'
+            name='lastName'
+            label='Last name'
+            required={true}
+            error={errors.includes('lastName')}
+          />
+          <FormInput
+            type='text'
+            name='email'
+            label='Email'
+            required={true}
+            error={errors.includes('email')}
+          />
+          <FormInput
+            type='text'
+            name='phone'
+            label='Phone'
+            value={formObj.phone}
+            onChange={handleChange}
+            error={errors.includes('phone')}
+          />
+          <hr className={hrStyles} />
+          <FormInput
+            type='text'
+            name='address1'
+            label='Address'
+            required={true}
+            value={formObj.address1}
+            onChange={handleChange}
+            error={errors.includes('address1')}
+          />
+          <FormInput
+            type='text'
+            name='city'
+            label='City'
+            required={true}
+            value={formObj.city}
+            onChange={handleChange}
+            error={errors.includes('city')}
+          />
+          <FormInput
+            type='text'
+            name='state'
+            label='State (Abbreviated)'
+            required={true}
+            value={formObj.state}
+            onChange={handleChange}
+            error={errors.includes('state')}
+          />
+          <FormInput
+            type='text'
+            name='zip'
+            label='Zip / Postal Code'
+            required={true}
+            value={formObj.zip}
+            onChange={handleChange}
+            error={errors.includes('zip')}
+          />
+          <hr className={hrStyles} />
+          {/* Open to Relocation */}
+          <div className='my-8'>
+            <label className='block text-textBlack mb-2.5'>Open to Relocation? *
+            </label>
+            <div
+              className="md:w-18 md:h-9 w-12 h-8 mt-4 flex items-center bg-lightGrey rounded-full p-1 cursor-pointer border border-solid border-midGrey"
+              onClick={() => {
+                setRelocate(!relocate);
+              }}
+            >
+              {/* Switch */}
+              <div
+                className={
+                  'bg-royalBlue md:w-6 md:h-6 h-5 w-5 rounded-full shadow-md transform duration-300 ease-in-out' +
+                  (relocate ? relocateClass : null )
+                }
+              ></div>
+            </div>
+          </div>
+          {/* Experience */}
+          <FormInput
+            type='single-select'
+            name='experience'
+            label='Years of Experience'
+            required={true}
+            placeholder='Select'
+            value={formObj.experience}
+            onChange={handleChange}
+            choiceObject={experienceMap}
+            error={errors.includes('experience')}
+          />
+          <FormInput
+            type='single-select'
+            name='expertise'
+            label='Expertise'
+            required={true}
+            placeholder='Select'
+            value={formObj.expertise}
+            onChange={handleChange}
+            choices={categories}
+            error={errors.includes('expertise')}
+          />
+          <FormInput
+            type='multi-select'
+            name='roles'
+            label={`What roles are ${pronoun} interested in?`}
+            required={true}
+            placeholder='Select'
+            value={formObj.roles}
+            onChange={handleChange}
+            choices={formObj.expertise ? roleChoices[formObj.expertise] : []}
+            error={errors.includes('roles')}
+          />
+          <FormInput
+            type='typeahead'
+            dropdownType='tags'
+            name='skills'
+            label='Your skills (select at least 3)'
+            placeholder='Select all that apply'
+            required={true}
+            value={formObj.skills}
+            onChange={handleChange}
+            choices={skillChoices}
+            error={errors.includes('skills')}
+          />
+          <div className='bg-lightGrey flex flex-wrap pl-4 py-9 mt-8 mb-16 w-full'>
+            {formObj.skills.length > 0 ? formObj.skills.map(skill =>
+              <ChoiceTag
+                key={skill}
+                label={skill}
+                isActive={true}
+                handleClick={() => handleChange('skills', formObj.skills.filter(s => s !== skill))}
+              />
+            ) : <p className='text-midGrey text-md'>No skills selected</p>}
+          </div>
+        </div>
+        <div className={flexWidth}>
+          <FormInput
+            type='text'
+            name='linkedin'
+            value={formObj.linkedin}
+            onChange={handleChange}
+            label='LinkedIn Profile link with https:// prefix'
+            error={errors.includes('linkedin')}
+          />
+          <FormInput
+            type='single-select'
+            name='employmentPreference'
+            label='Preferred Employment Type'
+            required={true}
+            placeholder='Select'
+            value={formObj.employmentPreference}
+            onChange={handleChange}
+            choices={['Any', 'Full-Time', 'Contract']}
+            error={errors.includes('employmentPreference')}
+          />
+          <FormInput
+            type='single-select'
+            name='workspace'
+            label='Work Setting Preference (Remote, Office)'
+            required={true}
+            placeholder='Select'
+            value={formObj.workspace}
+            onChange={handleChange}
+            choices={['Any', 'Remote', 'On Site', 'Hybrid']}
+            error={errors.includes('workspace')}
+          />
+          {/* File input for resume */}
+          <FormInput
+            type='file'
+            name='resume'
+            label='Upload Resume (2mb max / Format: pdf,doc,docx,rtf)'
+            placeholder='Select file...'
+            value={formObj.resume}
+            required={true}
+            onChange={handleChange}
+            error={errors.includes('resume')}
+          />
+          <hr className={hrStyles} />
+          <FormInput
+            type='password'
+            name='password'
+            label='Password'
+            required={true}
+            value={formObj.password}
+            onChange={handleChange}
+            error={errors.includes('password')}
+          />
+          <FormInput
+            type='password'
+            name='verifyPassword'
+            label='Verify Password'
+            required={true}
+            value={formObj.verifyPassword}
+            onChange={handleChange}
+            error={errors.includes('verifyPassword')}
+          />
+          <hr className={hrStyles} />
+          <FormInput
+            type='single-select'
+            name='referredBy'
+            label={`How did ${pronoun} hear about us?`}
+            value={formObj.referredBy}
+            onChange={handleReferralChoice}
+            required={true}
+            choices={referralChoices}
+            error={errors.includes('referredBy')}
+          />
+          { renderCommunity(referralChoice, commObj, handleCommunityChoice, communityChoices) }
+          {/* Terms and Conditions */}
+          <div className={`flex items-center mb-6 ${errors.includes('terms') ? 'border-rose-500 border-solid border rounded-md p-2' : ''}`}>
+            <input
+              type='checkbox'
+              name='terms'
+              id='terms'
+              value={formObj.terms}
+              onChange={(e) => handleChange(e.target.name, e.target.checked)}
+              className='mr-4 h-7 w-7'
+            />
+            <p>
+              <span>I have read and accept the </span>
+              <a
+                href={ROUTES.termsOfService}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-royalBlue underline'
+              >
+                Terms and Conditions
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      { renderErrorBlock(errorBlock) }
+      { renderButtonOrLoading(submissionObject, buttonString, buttonStyles) }
+    </form>
+  )
+}
+
+RegistrationForm.propTypes = {
+  header: PropTypes.string,
+  loggedIn: PropTypes.bool
+}
+
+function renderCommunity (referralChoice, commObj, handleCommunityChoice, communityChoices) {
+
+  if( referralChoice ) {
+    return (<>
+      <FormInput
+        type='single-select'
+        name='community'
+        label='Which Community Partner?'
+        value={commObj.community}
+        onChange={handleCommunityChoice}
+        choices={communityChoices}
+      />
+    </>)
+  }
+  return
+}

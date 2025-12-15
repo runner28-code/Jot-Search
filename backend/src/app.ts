@@ -104,6 +104,7 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
 
 const app = express();
 const port = process.env.PORT || 3001;
+
 app.use(bodyParser.json());
 app.use(logger);
 app.use(express.static("uploads"));
@@ -143,3 +144,4 @@ app.listen(port, function () {
 // Without the following method Express will not be able to serialize BigInts for responses
 (BigInt.prototype as any).toJSON = function () {
   return this.toString();
+};

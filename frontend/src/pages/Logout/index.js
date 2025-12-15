@@ -5,3 +5,4 @@ export default function Logout() {
   useComponentWillMount(() => AuthService.logout());
 
   return null;
+}

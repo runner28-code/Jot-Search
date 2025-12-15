@@ -170,3 +170,50 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
     if( !searchTerm ) {
       setIsOpen(isOpen => !isOpen);
     }
+  }
+
+  if ( marginBottom ) {
+    styleObject.containerStyles += `mb-${marginBottom} `;
+  }
+
+  function handleChange(e) {
+    setSearchTerm(e.target.value);
+  }
+
+  const placeholderText = placeholder || 'Search for companies or jobs...';
+  return (
+    <label
+      className={ !isOpen ? offObject.containerStyles : styleObject.containerStyles }
+      htmlFor={ placeholder }
+    >
+      <div
+        className={ !isOpen ? offObject.searchIconStyles : styleObject.searchIconStyles }
+        onClick={ handleClick }
+      >
+        <img
+          src={ !isOpen ? searchGray : searchWhite }
+          alt='search icon'
+          className={ !isOpen ? 'w-12 mr-6' : 'w-6 mr-2'}
+        />
+        { !isOpen ? '' : 'Search'}
+      </div>
+      <input
+        type='text'
+        id={ placeholder }
+        placeholder={ !isOpen ? '' : placeholderText  }
+        value={ searchTerm }
+        onChange={ handleChange }
+        className={ !isOpen ? offObject.inputStyles : styleObject.inputStyles } />
+    </label>
+  )
+}
+
+NavSearchBar.propTypes = {
+  searchTerm: PropTypes.string.isRequired,
+  setSearchTerm: PropTypes.func.isRequired,
+  placeholder: PropTypes.string,
+  marginBottom: PropTypes.string,
+  alternateStylesObject: PropTypes.object,
+  isOpen: PropTypes.bool,
+  setIsOpen: PropTypes.func
+}

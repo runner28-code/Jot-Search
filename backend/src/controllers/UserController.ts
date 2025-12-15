@@ -237,3 +237,7 @@ export class UserController {
 
   @Get("/coordinator-stats")
   async getCoordinatorStats(@QueryParams() queryParams: { duration: number }) {
+    const { duration } = queryParams;
+    return await getCoordinatorDashboardStats(duration);
+  }
+}

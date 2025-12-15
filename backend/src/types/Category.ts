@@ -4,6 +4,7 @@ export type Category = {
   description?: string;
   enabled?: boolean;
   name?: string;
+  occupation?: string;
   type?: string;
   _score?: number;
 };
@@ -23,3 +24,4 @@ export const CATEGORY_NON_STRING_FIELDS = new Set<keyof Category>([
   "id",
   "_score",
   "enabled",
+]);

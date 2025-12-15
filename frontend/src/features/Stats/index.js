@@ -134,3 +134,23 @@ function renderDeviation(deviationPercentage) {
       {renderStyledDeviation(deviationPercentage)}
     </div>
   )
+}
+
+function renderStyledDeviation(deviationPercentage) {
+  const textStyles = 'font-spaceGrotesk font-semibold text-md mr-2 ';
+  if (deviationPercentage > 0) {
+    return (<>
+      <BsArrowUpSquare className='w-6 h-6 mr-2 fill-success' />
+      <p className={textStyles + 'text-success'}>{Math.abs(deviationPercentage)}%</p>
+    </>)
+  } else if (deviationPercentage === 0) {
+    return (<>
+      <p className={textStyles + 'text-midGrey'}>N/A</p>
+    </>)
+  } else {
+    return (<>
+      <BsArrowDownSquare className='w-6 h-6 mr-2 fill-error' />
+      <p className={textStyles + 'text-error'}>{Math.abs(deviationPercentage)}%</p>
+    </>)
+  }
+}

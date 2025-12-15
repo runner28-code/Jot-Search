@@ -82,7 +82,6 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
         disabled={disabled}
       />
       <p className='text-md ml-2'>{attribute}</p>
-// Temp comment
     </label>
   )
 }
@@ -127,3 +126,37 @@ export function updateCandidateIfNeeded(applicationObject, originalObject) {
       .then(res => console.log('Updated user: ', res));
   }
   return;
+}
+
+export async function formatApplicationObject(applicationObject, useExistingResume) {
+  const formattedObject = {};
+  delete formattedObject.loading;
+  // Adjust relocation property to correct format
+  if (applicationObject.willRelocate === 'Yes' || applicationObject.willRelocate === true) {
+    formattedObject.willRelocate = true;
+  } else {
+    formattedObject.willRelocate = false;
+  }
+  // Adjust workAuthorized property to correct format
+  if (applicationObject.workAuthorized === 'Yes' || applicationObject.workAuthorized === true) {
+    formattedObject.workAuthorized = true;
+  } else {
+    formattedObject.workAuthorized = false;
+  }
+
+  // Get correct ID for race/ethnicity
+  formattedObject.ethnicity = Object.keys(ethnicityMap).find(key => ethnicityMap[key] === applicationObject.ethnicity);
+  // Get correct ID for gender
+  formattedObject.gender = Object.keys(genderMap).find(key => genderMap[key] === applicationObject.gender);
+  // Get correct ID for veteran
+  formattedObject.veteran = Object.keys(veteranStatusMap).find(key => veteranStatusMap[key] === applicationObject.veteran);
+  // Get correct ID for disability
+  formattedObject.disability = Object.keys(disabilityMap).find(key => disabilityMap[key] === applicationObject.disability);
+  // Upload new resume if useExistingResume is false
+  if (!useExistingResume) {
+    const newResumePath = await uploadFile('resumes', applicationObject.newResume);
+    formattedObject.resume = newResumePath;
+  }
+  delete applicationObject.newResume;
+  return { ...applicationObject, ...formattedObject };
+}

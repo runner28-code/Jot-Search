@@ -30,3 +30,4 @@ ReactDOM.render(
     {isDevelopment && <ReactQueryDevtools initialIsOpen={false} />}
   </QueryClientProvider>,
   document.getElementById('root')
+);

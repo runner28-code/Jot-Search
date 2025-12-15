@@ -5,3 +5,4 @@
 
 */
 -- AlterTable
+ALTER TABLE "User" ALTER COLUMN "role" SET NOT NULL;

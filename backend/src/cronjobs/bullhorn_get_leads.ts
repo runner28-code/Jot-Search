@@ -12,3 +12,4 @@ const testMode = process.argv[2] === "test";
     }
     consoleLog('/// CRON_JOB_ENDED: BULLHORN_GET_LEADS');
     process.exit();
+})();

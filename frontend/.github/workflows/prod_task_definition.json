@@ -12,6 +12,7 @@
                 {
                     "containerPort": 3000,
                     "hostPort": 3000,
+                    "protocol": "tcp"
                 }
             ],
             "essential": true,
@@ -33,3 +34,4 @@
     ],
     "cpu": "1024",
     "memory": "2048"
+}

@@ -10,3 +10,4 @@ ALTER COLUMN "countryCode" SET DATA TYPE TEXT;
 
 -- AlterTable
 ALTER TABLE "Candidate" DROP COLUMN "degreeList",
+ADD COLUMN     "degreeList" TEXT[];

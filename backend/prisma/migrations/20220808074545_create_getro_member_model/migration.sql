@@ -74,3 +74,4 @@ CREATE TABLE "GetroMember" (
 );
 
 -- AddForeignKey
+ALTER TABLE "GetroMember" ADD CONSTRAINT "GetroMember_userTalentCollectionId_fkey" FOREIGN KEY ("userTalentCollectionId") REFERENCES "UserTalentCollection"("id") ON DELETE SET NULL ON UPDATE CASCADE;

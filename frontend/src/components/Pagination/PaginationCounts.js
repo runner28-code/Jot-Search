@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 
 export const PaginationCounts = ({ startCount, endCount, total }) => {
@@ -11,3 +10,11 @@ export const PaginationCounts = ({ startCount, endCount, total }) => {
       </p>
     </div>
   )
+}
+
+
+PaginationCounts.propTypes = {
+  startCount: PropTypes.number.isRequired,
+  endCount: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+};

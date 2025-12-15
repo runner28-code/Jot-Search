@@ -66,3 +66,27 @@ function renderChoice(choice, selected, index, choicesLength) {
       <p className={choiceTextStyles}>{choice.label}</p>
     </Link>
   )
+}
+
+function renderChoices(userType) {
+  let choicesToRender;
+  if ( userType === 'coordinator' ) {
+    choicesToRender = coordinatorChoices;
+  }
+  else if ( userType === 'company' ) {
+    choicesToRender = companyChoices;
+  }
+  else if ( userType === 'candidate' ) {
+    choicesToRender = candidateChoices;
+  }
+  else { // fall back to guest choices
+    choicesToRender = guestChoices
+  }
+
+  const choicesLength = choicesToRender.length;
+  const selected = findSelectedFromPath();
+
+  return (<>
+    {choicesToRender.map((choice, index) => renderChoice(choice, selected, index, choicesLength))}
+  </>)
+}

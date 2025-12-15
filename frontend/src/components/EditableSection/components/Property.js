@@ -12,3 +12,9 @@ export default function Property({name, value}) {
       <span className='ml-4'>{value}</span>
     </div>
   )
+}
+
+Property.propTypes = {
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+}

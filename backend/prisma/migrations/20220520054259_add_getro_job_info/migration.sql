@@ -44,3 +44,4 @@ CREATE TABLE "GetroJobInfo" (
 );
 
 -- AddForeignKey
+ALTER TABLE "Job" ADD CONSTRAINT "Job_getroJobInfoId_fkey" FOREIGN KEY ("getroJobInfoId") REFERENCES "GetroJobInfo"("id") ON DELETE SET NULL ON UPDATE CASCADE;

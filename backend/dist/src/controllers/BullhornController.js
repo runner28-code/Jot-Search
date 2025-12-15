@@ -8,9 +8,83 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-// Temp comment
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.BullhornController = void 0;
+const routing_controllers_1 = require("routing-controllers");
+const BullhornService_1 = require("../services/BullhornService");
+let BullhornController = class BullhornController {
+    // @Authorized()
+    getCompanies() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield (yield BullhornService_1.BullhornService.getClient()).getCompanies();
+        });
+    }
+    // @Authorized()
+    getJobs() {
+        return __awaiter(this, void 0, void 0, function* () {
+            console.log('~~~~~~');
+            return yield (yield BullhornService_1.BullhornService.getClient()).getJobs();
+        });
+    }
+    // @Authorized()
+    getClientContacts() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield (yield BullhornService_1.BullhornService.getClient()).getClientContacts();
+        });
+    }
+    // @Authorized()
+    getCandidates() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield (yield BullhornService_1.BullhornService.getClient()).getCandidates();
+        });
+    }
+    // @Authorized()
+    getLeads() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield (yield BullhornService_1.BullhornService.getClient()).getLeads();
+        });
+    }
+};
+__decorate([
+    (0, routing_controllers_1.Get)('/bullhorn/companies'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], BullhornController.prototype, "getCompanies", null);
+__decorate([
+    (0, routing_controllers_1.Get)('/bullhorn/jobs'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], BullhornController.prototype, "getJobs", null);
+__decorate([
+    (0, routing_controllers_1.Get)('/bullhorn/clientContacts'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], BullhornController.prototype, "getClientContacts", null);
+__decorate([
+    (0, routing_controllers_1.Get)('/bullhorn/candidates'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], BullhornController.prototype, "getCandidates", null);
+__decorate([
+    (0, routing_controllers_1.Get)('/bullhorn/leads'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], BullhornController.prototype, "getLeads", null);
+BullhornController = __decorate([
+    (0, routing_controllers_1.Controller)()
+], BullhornController);
+exports.BullhornController = BullhornController;

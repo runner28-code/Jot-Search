@@ -21,3 +21,4 @@ export const VerifyJwtToken = (token: string) => {
   } catch (error) {
     throw error;
   }
+}

@@ -98,6 +98,7 @@ export const saveBullhornJobs = async (jobs: any[]) => {
     "clientCorporation",
     "dateAdded",
     "dateClosed",
+    "date_end",
     "dateLastExported",
     "dateLastModified",
     "dateLastPublished",
@@ -334,3 +335,5 @@ export const migrateJobInTPP = async (data: Job) => {
     console.log(
       `ERROR: Migration Failed Bullhorn Job (bh_id=${data.externalId})`
     );
+  }
+};

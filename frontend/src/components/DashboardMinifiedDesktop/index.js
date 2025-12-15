@@ -7,7 +7,6 @@ import TypeTabs from '../../components/TypeTabs';
 
 // Hooks
 import useWindowDimensions from '../../hooks/windowDimensions';
-// Temp comment
 
 // Images
 import filterIcon from '../../assets/images/filter-toggle.svg';
@@ -99,3 +98,19 @@ function ToggleIcon () {
       alt='Filter Icon'
     />
   )
+}
+
+function ToggleFilter() {
+  const { width } = useWindowDimensions();
+
+  if ( width >= 1280 ) {
+    return (<>
+      <ToggleIcon />
+      <p className='text-white'>Filters</p>
+    </>)
+  } else {
+    return (
+      <ToggleIcon />
+    )
+  }
+}

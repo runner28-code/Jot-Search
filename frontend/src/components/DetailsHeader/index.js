@@ -55,3 +55,4 @@ function renderSourceIdentifier(source) {
     )
   }
   return null;
+}

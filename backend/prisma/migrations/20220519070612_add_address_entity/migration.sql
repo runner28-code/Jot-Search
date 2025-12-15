@@ -12,3 +12,4 @@ CREATE TABLE "Address" (
     "countryID" INTEGER NOT NULL,
 
     CONSTRAINT "Address_pkey" PRIMARY KEY ("id")
+);

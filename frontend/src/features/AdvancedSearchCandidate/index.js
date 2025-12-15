@@ -228,3 +228,24 @@ function FilterLayout({ activeTab, filterProps }) {
     default:
       return null;
   }
+}
+
+FilterLayout.propTypes = {
+  activeTab: PropTypes.string.isRequired,
+  filterProps: PropTypes.object.isRequired
+}
+
+function ResultsHeader({ total, type, loading }) {
+  if (loading || loading === undefined) { // loading === undefined is for the initial render
+    return null;
+  }
+  return (
+    <h4 className='mt-22 text-h5 text-charcoal font-semibold font-spaceGrotesk'>{`Search ${total} ${type}`}</h4>
+  );
+}
+
+ResultsHeader.propTypes = {
+  total: PropTypes.number.isRequired,
+  type: PropTypes.string.isRequired,
+  loading: PropTypes.bool
+}

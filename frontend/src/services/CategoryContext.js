@@ -19,3 +19,10 @@ const CategoryProvider = ({children}) => {
       {children}
     </CategoryContext.Provider>
   )
+}
+
+CategoryProvider.propTypes = {
+  children: PropTypes.node.isRequired
+}
+
+export default CategoryProvider;

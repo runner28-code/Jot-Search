@@ -95,6 +95,7 @@ CREATE TABLE "Company" (
     "customTextBlock4" TEXT,
     "customTextBlock5" TEXT,
 
+    CONSTRAINT "Company_pkey" PRIMARY KEY ("id")
 );
 
 -- AddForeignKey
@@ -107,3 +108,4 @@ ALTER TABLE "Company" ADD CONSTRAINT "Company_billingAddressId_fkey" FOREIGN KEY
 ALTER TABLE "Company" ADD CONSTRAINT "Company_branchId_fkey" FOREIGN KEY ("branchId") REFERENCES "Branch"("id") ON DELETE SET NULL ON UPDATE CASCADE;
 
 -- AddForeignKey
+ALTER TABLE "Company" ADD CONSTRAINT "Company_departmentId_fkey" FOREIGN KEY ("departmentId") REFERENCES "Department"("id") ON DELETE SET NULL ON UPDATE CASCADE;

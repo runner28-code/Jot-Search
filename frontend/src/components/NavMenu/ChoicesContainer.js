@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import {
   candidateChoices,
   companyChoices,
@@ -41,3 +42,44 @@ export default function ChoicesContainer(props) {
       null
     }
   </>)
+}
+
+ChoicesContainer.propTypes = {
+  userRole: PropTypes.string.isRequired,
+  handleOptionClick: PropTypes.func.isRequired
+}
+
+function renderRoleChoices({ userRole, handleOptionClick }) {
+  let menuChoicesByRole = [];
+  if (userRole === 'candidate') {
+    menuChoicesByRole = candidateChoices;
+  } else if (userRole === 'company') {
+    menuChoicesByRole = companyChoices;
+  } else if (userRole === 'coordinator') {
+    menuChoicesByRole = coordinatorChoices;
+  } else {
+    menuChoicesByRole = guestChoices;
+  }
+
+  const { pathname } = useLocation();
+  const { width } = useWindowDimensions();
+
+  const forceShowPages = [ ROUTES.login, ROUTES.signup, ROUTES.landingPage ];
+  if ( width > 1280 && !forceShowPages.includes(pathname) ) {
+    return null;
+  }
+  return menuChoicesByRole.map( (choice, index) => {
+    const linkStyles = index === 0 ? topLinkStyles : baseLinkStyles;
+    const choiceStylesObject = {
+      ...stylesObject,
+      linkStyles
+    }
+    return <Choice
+      key={choice.label}
+      choice={choice.label}
+      Icon={choice.icon}
+      handleOptionClick={handleOptionClick}
+      stylesObject={choiceStylesObject}
+    />
+  })
+}

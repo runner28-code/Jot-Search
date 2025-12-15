@@ -113,3 +113,28 @@ function renderResultsContainer( results, searchTerm ) {
       { renderResults( results ) }
     </div>
   )
+}
+
+function renderResults( results ) {
+  if ( results.loading ) {
+    return <LoadingSpinner
+      height='75'
+      width='75' 
+    />;
+  }
+
+  const { jobs, companies, candidates } = results;
+  if ( !jobs.length && !companies.length && !candidates.length ) {
+    return (
+      <div className='text-center text-h6 text-black70% font-bold font-spaceGrotesk'>
+        No results found
+      </div>
+    );
+  }
+
+  return (<>
+    <CandidateResults candidates={ candidates } />
+    <CompanyResults companies={ companies } />
+    <JobResults jobs={ jobs } />
+  </>)
+}

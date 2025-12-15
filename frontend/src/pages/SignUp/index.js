@@ -25,6 +25,7 @@ export default function SignUp() {
             </div>
           </div>
         </div>
+      </main>      
     )
   }
 
@@ -44,3 +45,4 @@ export default function SignUp() {
       </div>
     </main>
   )
+}

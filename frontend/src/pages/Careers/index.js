@@ -27,7 +27,6 @@ export default function Careers() {
   return (
     <section className={ loggedIn ? sectionStylesLog : sectionStyles }>
       <RenderHeader
-// Temp comment
         loggedIn={loggedIn}
         userType={userType}
         togglePassState={togglePassState}
@@ -76,3 +75,38 @@ function RenderHeader({loggedIn, userType, togglePassState, toggle}) {
   return (<>
     <Dashboard togglePassState={togglePassState} />
   </>)
+}
+RenderHeader.propTypes = {
+  loggedIn: PropTypes.bool,
+  userType: PropTypes.string,
+  togglePassState: PropTypes.func, 
+  toggle: PropTypes.bool
+}
+
+function RenderAdvancedSearch({loggedIn, toggle, userType}) {
+  const { width } = useWindowDimensions();
+  if( !loggedIn) {
+    return (<>
+      <AdvancedSearchPublic
+        disabledTabs
+        toggle={toggle}
+      />
+    </>)
+  }
+  if( userType === 'candidate' && width <= 990 ) {
+    return (<>
+      <AdvancedSearchCandidate
+        disabledTabs
+        toggle={toggle}
+      />      
+    </>)
+  }  
+  return (<>
+    <AdvancedSearch disabledTabs />
+  </>)
+}
+RenderAdvancedSearch.propTypes = {
+  loggedIn: PropTypes.bool,
+  toggle: PropTypes.bool, 
+  userType: PropTypes.string
+}

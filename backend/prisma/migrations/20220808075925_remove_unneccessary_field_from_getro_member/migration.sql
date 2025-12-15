@@ -12,3 +12,4 @@ ALTER TABLE "GetroMember" DROP CONSTRAINT "GetroMember_userTalentCollectionId_fk
 ALTER TABLE "GetroMember" DROP COLUMN "userTalentCollectionId";
 
 -- DropTable
+DROP TABLE "UserTalentCollection";

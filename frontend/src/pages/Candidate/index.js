@@ -149,3 +149,4 @@ export default function Candidate() {
       </div>
     </div>
   )
+}

@@ -96,3 +96,10 @@ const CareerProvider = ({children}) => {
       {children}
     </CareerContext.Provider>
   )
+}
+
+CareerProvider.propTypes = {
+  children: PropTypes.node.isRequired
+}
+
+export default CareerProvider;

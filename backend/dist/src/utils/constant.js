@@ -506,3 +506,5 @@ exports.JOB_FIELDS = [
     "travelRequirements",
     "type",
     "willRelocate",
+    "yearsRequired",
+];

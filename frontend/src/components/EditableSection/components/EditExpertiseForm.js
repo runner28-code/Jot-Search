@@ -14,5 +14,12 @@ export default function EditExpertiseForm({ expertise, handleChange }) {
         placeholder='Change Expertise'
         inputStyles={inputStyles}
         optionStyles={'text-lg'}
+      />
     </>
   )
+}
+
+EditExpertiseForm.propTypes = {
+  expertise: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
+}

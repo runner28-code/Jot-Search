@@ -164,3 +164,28 @@ function renderAddress( city, state ) {
       <span>{city}, {state}</span>
     )
   }
+}
+
+
+function OpenCareers({styles, companyId}) {
+
+  const filtersArr = [
+    {
+      key: 'status',
+      value: ['Active', 'Open']
+    },
+    {
+      key: 'companyId',
+      value: companyId
+    }
+  ];
+  const {total, isLoading} = useGetJobs({filtersArr});
+
+  return (<>
+    <p className={styles}>{isLoading ? <LoadingSpinner /> : total} Open Careers</p>
+  </>)
+}
+OpenCareers.propTypes = {
+  styles: PropTypes.string,
+  companyId: PropTypes.string
+}

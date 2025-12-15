@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import ExploreSearch from '../../components/ExploreSearch';
 import ExploreSearchMobile from '../../components/ExploreSearchMobile';
 import ExpertiseLinks from '../../components/ExpertiseLinks';
+import ExpertiseLinksMobile from '../../components/ExpertiseLinksMobile';
 import JoinTalentNetwork from '../../components/JoinTalentNetwork';
 import FeaturedJobs from '../../components/FeaturedJobs';
 import FeaturedCompanies from '../../components/FeaturedCompanies';
@@ -106,3 +107,17 @@ function renderJoinTalent() {
       <span className='text-white text-ml'>Join the InTulsa Talent Network</span>
     </Link>
   )
+}
+
+function renderExpertiseLinks() {
+  const { width } = useWindowDimensions();
+
+  if( width >= 1024 ) {
+    return(<>
+      <ExpertiseLinks />
+    </>)
+  }
+  return(<>
+    <ExpertiseLinksMobile />
+  </>)
+}

@@ -118,6 +118,7 @@ function itemRenderer({ option, onClick, disabled}) {
     </div>
   )
 }
+
 function getTagLine({ candidate }) {
   let tagLine = '';
   if (candidate?.occupation && candidate?.companyName) {
@@ -128,3 +129,21 @@ function getTagLine({ candidate }) {
     tagLine = `@ ${candidate.companyName}`
   }
   return tagLine;
+}
+
+function Initials({ name }) {
+  const initials = name?.split(' ').map(name => name[0]).join('');
+  return (
+    <div className="flex items-center justify-center w-20 h-20 bg-midGrey text-white text-2xl rounded-md">
+      {initials}
+    </div>
+  )
+}
+
+InviteToCareer.propTypes = {
+  candidate: PropTypes.object.isRequired
+}
+
+Initials.propTypes = {
+  name: PropTypes.string
+}

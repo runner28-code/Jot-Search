@@ -210,6 +210,7 @@ export function buildCompanyAddress(companyData) {
     state = locationArr[1];
   }
 
+  /* Return conditions */
   // No Address Provided
   if ( (!city || !state) && !locationString ) {
     return 'N/A';
@@ -223,3 +224,28 @@ export function buildCompanyAddress(companyData) {
     state = stateCodeMap[state];
   }
   return `${city}, ${state}`;
+}
+
+export function calculatePostingAge(postingDate) {
+  const postingDateObj = new Date(postingDate);
+  const currentDate = new Date();
+  const diff = currentDate - postingDateObj;
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+  if ( days < 1 ) {
+    return 'Today';
+  } else if ( days < 31 ) { // Days
+    const plurality = days === 1 ? '' : 's';
+    return `${days} day${plurality} ago`;
+  } else if ( days < 365 ) { // Months
+    const months = Math.floor(days / 31);
+    const plurality = months === 1 ? '' : 's';
+    return `${months} month${plurality} ago`;
+  } else if ( days >= 365 ) { // Years
+    const years = Math.floor(days / 365);
+    const plurality = years === 1 ? '' : 's';
+    return `${years} year${plurality} ago`;
+  } else {
+    return 'N/A';
+  }
+}

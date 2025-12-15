@@ -135,3 +135,6 @@ class AuthService {
   getSavedCandidateIDs() {
     return JSON.parse(localStorage.getItem('savedCandidates')) || [];
   }
+}
+
+export default new AuthService();

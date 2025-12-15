@@ -186,7 +186,6 @@ function renderSkills(skillsString) {
     return <SkillTag skill='No skills chosen' />
   }
   const skills = skillsString.split(',');
-// Temp comment
   return skills.map((skill, index) => {
     return <SkillTag
       skill={skill}
@@ -242,3 +241,30 @@ function renderIcon(label, value) {
     default:
       return null;
   }
+}
+
+function renderText(label, value) {
+  if ( label === 'Workspace' ) {
+    //! Refactor after user schema is finalized
+    if ( value === 'true' ) {
+      value = 'On Site';
+    } else if ( value === 'false' ) {
+      value = 'Remote';
+    }
+    return <p className='text-charcoal'>{value}</p>
+  }
+  // Yes or No
+  let boolText = '';
+  if ( value && value !== 'false' ) {
+    boolText = 'Yes, ';
+  } else {
+    boolText = 'No, ';
+  }
+
+  const stringToRender = boolText + label;
+  return (
+    <p className='text-charcoal'>
+      {stringToRender}
+    </p>
+  )
+}

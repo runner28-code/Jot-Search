@@ -22,9 +22,12 @@ export default function CandidateDashboard() {
         <PendingApplications />
         <CareerFavorite />
         <CompanyFavorite />
-// Temp comment
         <h1 className={headerStyles}>Search</h1>
         <AdvancedSearch />
       </div>
     </>
   )
+}
+CandidateDashboard.propTypes = {
+  userType: PropTypes.string.isRequired
+}

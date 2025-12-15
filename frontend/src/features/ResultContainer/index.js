@@ -15,6 +15,7 @@ export default function ResultContainer(props) {
     type,
     limit,
     header, 
+    active,
     compact = false,
     isFavoriteOverride = null,
     agoText = null,
@@ -45,3 +46,109 @@ export default function ResultContainer(props) {
       href={`/${pluralizedType}`}
       text={`View All ${capitalizedType}`}
     />;
+  }
+
+  return (
+    <div className='w-full'>
+      { renderHeader() }
+      <div
+        className={`${baseStyles} ${resultsContainerStyles}`}>
+        { renderResults(results, loading, type, active, compact, isFavoriteOverride, agoText, selectableProps) }
+      </div>
+      { renderFooter() }
+    </div>
+  )
+}
+
+ResultContainer.defaultProps = {
+  results: []
+}
+
+ResultContainer.propTypes = {
+  results: PropTypes.arrayOf(PropTypes.object),
+  loading: PropTypes.bool.isRequired,
+  type: PropTypes.string.isRequired,
+  limit: PropTypes.number,
+  active: PropTypes.bool,
+  header: PropTypes.string,
+  compact: PropTypes.bool,
+  containerClass: PropTypes.string,
+  isFavoriteOverride: PropTypes.bool,
+  agoText: PropTypes.string,
+  selectableProps: PropTypes.shape({
+    selectable: PropTypes.bool,
+    selected: PropTypes.arrayOf(PropTypes.string),
+    handleClick: PropTypes.func
+  })
+}
+
+function renderResults(results, loading, type, active, compact = false, isFavoriteOverride = null, agoText = null, selectableProps = null) {
+  if ( loading ) {
+    return <div className='h-200'>
+      <LoadingSpinner />
+    </div>;
+  }
+
+  if ( !results || !results.length ) {
+    return <p className='text-center text-lightGrey'>No results found</p>;
+  }
+
+  switch (type) {
+    case 'candidates':
+      return results.map((result, index) =>
+        <CandidateCard
+          key={result.id}
+          type={type}
+          data={result}
+          index={index}
+        />
+      )
+    case 'companies':
+      return results.map((result, index) => {
+        return compact ?
+          <CompactCompanyCard
+            key={result.id}
+            type={type}
+            data={result}
+            index={index}
+            agoDate={result.agoDate}
+            active={active}
+            isFavoriteOverride={isFavoriteOverride}
+            agoText={agoText}
+            selectableProps={selectableProps}
+          /> :
+          <CompanyCard
+            key={result.id}
+            type={type}
+            data={result}
+            index={index}
+          />
+      }
+
+      )
+    case 'jobs':
+    default:
+      return results.map((result, index) => {
+        return compact ?
+          <CompactCareerCard
+            key={result.id}
+            type={type}
+            data={result}
+            index={index}
+            active={active}
+            agoDate={result.createdAt}
+            isFavoriteOverride={isFavoriteOverride}
+            agoText={agoText}
+            selectableProps={selectableProps}
+          /> :
+          <CareerCard
+            key={result.id}
+            type={type}
+            data={result}
+            index={index}
+            active={active}
+          />
+      }
+      )
+  }
+}

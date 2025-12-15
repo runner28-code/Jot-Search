@@ -57,3 +57,9 @@ export default function DashboardCandidate({togglePassState, toggle}) {
       </div>
     </div>
   </>)
+}
+
+DashboardCandidate.propTypes = {
+  togglePassState: PropTypes.func, 
+  toggle: PropTypes.bool
+}

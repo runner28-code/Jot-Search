@@ -17,3 +17,9 @@ export default function FeaturedTag ({ hide, addClass }) {
       InTulsa Featured
     </span>
   )
+}
+
+FeaturedTag.propTypes = {
+  hide: PropTypes.bool,
+  addClass: PropTypes.string
+}

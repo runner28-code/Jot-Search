@@ -134,3 +134,4 @@ export const parseGetroJobToMain = (data: GtJob) => {
     postedAt: data.posted_at,
   };
   return job;
+};

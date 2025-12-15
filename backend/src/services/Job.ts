@@ -84,6 +84,7 @@ export const getAppliedJobsByUser = async (userId: string) => {
       message: error,
       result: false,
     };
+  }
 };
 
 export const inferDatasetById = (id: string) => {
@@ -146,3 +147,6 @@ export const getJobsList = async (jobs_ids: string[]) => {
     return jobs.map((job) => job.title!);
   } catch (error) {
     console.log(error);
+    throw error;
+  }
+};

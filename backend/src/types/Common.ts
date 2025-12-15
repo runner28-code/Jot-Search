@@ -145,3 +145,4 @@ export type CategorySearchByFilterResponse = {
 export type CategoryByIdResponse = {
   category?: Category;
   message?: any;
+};

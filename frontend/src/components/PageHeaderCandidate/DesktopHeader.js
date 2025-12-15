@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
-// Temp comment
 import SourceIdentifier from '../SourceIdentifier';
 
 export default function DesktopHeader(props) {
@@ -52,3 +51,15 @@ export default function DesktopHeader(props) {
       )}
     </div>
   )
+}
+
+DesktopHeader.propTypes = {
+  headerText: PropTypes.string.isRequired,
+  icon: PropTypes.string,
+  IconComponent: PropTypes.elementType,
+  classOverride: PropTypes.string,
+  containerClassOverride: PropTypes.string,
+  colorizeStroke: PropTypes.bool,
+  dataSource: PropTypes.string,
+  backButton: PropTypes.bool
+}

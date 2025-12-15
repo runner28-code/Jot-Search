@@ -109,3 +109,22 @@ const parseBullhornJobToMain = (data) => {
         postedAt: data.date_added,
     };
     return job;
+};
+exports.parseBullhornJobToMain = parseBullhornJobToMain;
+const parseGetroJobToMain = (data) => {
+    const job = {
+        externalId: data.id,
+        description: data.description,
+        locations: data.locations,
+        employmentType: data.employment_types,
+        title: data.title,
+        status: data.status,
+        skillList: data.job_functions,
+        companyId: `gt-${data.organization_id}`,
+        salary: `${data.compensation_min} - ${data.compensation_max}`,
+        salaryUnit: data.compensation_currency,
+        postedAt: data.posted_at,
+    };
+    return job;
+};
+exports.parseGetroJobToMain = parseGetroJobToMain;

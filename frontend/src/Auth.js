@@ -6,6 +6,7 @@ import {
   Candidate,
   Candidates,
   Dashboard,
+  Favorites,
   Logout,
   Profile,
 } from './pages';
@@ -52,3 +53,4 @@ export default function Auth() {
       </Routes>
     </div>
   )
+}

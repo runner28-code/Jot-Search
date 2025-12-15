@@ -39,7 +39,6 @@ export default function FeaturedCompanies() {
       <div className='text-center mt-48'>
         <Link
           to={ROUTES.companies}
-// Temp comment
           className='bg-royalBlue rounded-lg text-lg text-white py-6 px-12'>
           Browse All
         </Link>
@@ -54,3 +53,19 @@ function renderColorShapes() {
       <div className='bg-orangeSquare bg-pink-500 top-[-20px] right-[5px] absolute w-6 h-6' />
     </div>
   )
+}
+function renderLogo(logo) {
+
+  const styles = 'w-full h-full object-scale-down';
+  if( !logo ) {
+    return (<>
+      <BsBuilding className={styles} />
+    </>)
+  }
+  return(<>
+    <img
+      src={logo}
+      className={styles}
+    />
+  </>)
+}

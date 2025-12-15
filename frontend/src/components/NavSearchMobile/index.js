@@ -233,3 +233,4 @@ function RenderSearchIcon() {
       className={'w-12 mr-6'}
     />
   </>)
+}

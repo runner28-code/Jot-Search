@@ -20,6 +20,7 @@ export const jobFilterObject = {
   'Years Experience': [
     'Any',
     ...experienceValues
+  ],
   'Status': [
     'Any',
     'Filled',
@@ -157,3 +158,13 @@ export function buildSearchFiltersObj(filterObject) {
     }
   });
   return searchFilters
+}
+
+
+function findCategoryIdByValue(value) {
+  if ( typeof value === 'number' ) { // If value is a number, it's an ID already
+    return value;
+  }
+  const category = expertiseObjectArr.find(expertise => expertise.name === value);
+  return category.id;
+}

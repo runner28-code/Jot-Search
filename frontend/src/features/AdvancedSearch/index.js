@@ -61,6 +61,7 @@ export default function AdvancedSearch({ disabledTabs }) {
   const [page, setPage] = useState(1);
 
   /* FILTER RESULTS BY SEARCH TERM ON TAB OR SEARCH TERM CHANGE */
+  const getFiltersByTab = (tab) => {
     if (tab === 'candidates') {
       const modifiedFilterObject = {
         ...filterObject,
@@ -119,3 +120,98 @@ export default function AdvancedSearch({ disabledTabs }) {
   function clearFilters() {
     setFilterObject(initialFilterState);
     setPage(1);
+  }
+
+  const propsByTab = {
+    careers: {
+      filterTemplate: jobFilterObject,
+      activeResults: careers,
+      totalResults: totalJobs,
+      isLoading: isLoadingJobs,
+      prefetchFunc: (page) => prefetchJobs({ ...getFiltersByTab('careers'), count: ITEMS_PER_PAGE, page })
+    },
+    candidates: {
+      filterTemplate: candidateFilterObject,
+      activeResults: candidates,
+      totalResults: totalCandidates,
+      isLoading: isLoadingCandidates,
+      prefetchFunc: (page) => prefetchCandidates({ ...getFiltersByTab('candidates'), count: ITEMS_PER_PAGE, page })
+    },
+    companies: {
+      filterTemplate: {},
+      activeResults: companies,
+      totalResults: totalCompanies,
+      isLoading: isLoadingCompanies,
+      prefetchFunc: (page) => prefetchCompanies({ ...getFiltersByTab('companies'), count: ITEMS_PER_PAGE, page })
+    }
+  }
+
+  const validActiveTab = activeTab === 'jobs' ? 'careers' : activeTab;
+  const { filterTemplate, activeResults, totalResults, isLoading, prefetchFunc } = propsByTab[validActiveTab];
+
+  const filterProps = {
+    handleFilterChange: handleFilterChange,
+    defaultFilterObject: filterTemplate,
+    filterObject: filterObject,
+    searchTerm: filterObject.title,
+    setSearchTerm: handleSearchChange,
+    handleSearchClick: handleSearchClick,
+    clearFilters: clearFilters
+  };
+  const { PaginatedControls } = usePaginatedControls({ page, setPage, total: totalResults, itemsPerPage: ITEMS_PER_PAGE, prefetchFunc });
+
+  const containerStyles = 'relative w-full max-w-400 bg-grey rounded-2xl border border-disabledGrey pt-28 px-xxl-4 pb-xxl';
+  const containerStylesCandidate = 'relative w-full max-w-400 bg-sky-600 text-white rounded-2xl border border-disabledGrey pt-28 px-xxl-4 pb-xxl';
+  const { width } = useWindowDimensions();
+  return (
+    <div className={ width >= 990 ? 'w-full pt-14' : 'w-full pt-14 px-8'}>
+      <div className={userType === 'candidate' && location.pathname === '/careers' ? containerStylesCandidate : containerStyles }>
+        <TabContainer
+          tabChoices={availableTabChoicesByUserType[userType]}
+          activeTab={activeTab}
+          setActiveTab={handleTabChange}
+          isLocked={!!disabledTabs}
+        />
+        <FilterLayout
+          activeTab={activeTab}
+          filterProps={filterProps}
+        />
+      </div>
+      <div className={ width >= 990 ? 'vw-990:px-0' : 'px-[5%] vw-990:px-0'}>
+        <ResultsHeader
+          total={totalResults}
+          type={activeTab}
+          loading={isLoading}
+        />
+        <ResultContainer
+          key={activeResults}
+          results={activeResults}
+          type={activeTab}
+          loading={isLoading} />
+        <PaginatedControls />
+      </div>
+    </div>
+  )
+}
+
+AdvancedSearch.propTypes = {
+  disabledTabs: PropTypes.bool
+}
+
+function FilterLayout({ activeTab, filterProps }) {
+  switch (activeTab) {
+    case 'candidates':
+      return <CandidateFilterLayout {...filterProps} />
+    case 'careers':
+      return <CareerFilterLayout {...filterProps} />
+    case 'companies':
+      return <CompanyFilterLayout {...filterProps} />
+    default:
+      return null;
+  }
+}
+
+FilterLayout.propTypes = {
+  activeTab: PropTypes.string.isRequired,
+  filterProps: PropTypes.object.isRequired
+}

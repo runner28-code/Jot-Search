@@ -64,3 +64,4 @@ ADD COLUMN     "taxRate" DOUBLE PRECISION,
 ADD COLUMN     "tickerSymbol" TEXT,
 ADD COLUMN     "trackTitle" TEXT,
 ADD COLUMN     "twitterHandle" TEXT,
+ADD COLUMN     "workWeekStart" INTEGER;

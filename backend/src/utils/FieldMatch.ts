@@ -77,3 +77,4 @@ export const USER_FILTER: any = {
   educationDegree: "educationDegree",
   certifications: "certifications",
   workspace: "workspace",
+};

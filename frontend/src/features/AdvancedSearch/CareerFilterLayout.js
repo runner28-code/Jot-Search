@@ -32,7 +32,6 @@ export default function CareerFilterLayout(props) {
   const dropdownFilterObject = {};
   if( userType === 'candidate' ) {
     dropDownFiltersCandidate.forEach(filter => {
-// Temp comment
       dropdownFilterObject[filter] = filterObject[filter];
     });
   } else {
@@ -65,3 +64,14 @@ export default function CareerFilterLayout(props) {
       </div>
     </div>
   );
+}
+
+CareerFilterLayout.propTypes = {
+  defaultFilterObject: PropTypes.object,
+  filterObject: PropTypes.object,
+  handleFilterChange: PropTypes.func,
+  searchTerm: PropTypes.string,
+  setSearchTerm: PropTypes.func,
+  handleSearchClick: PropTypes.func,
+  clearFilters: PropTypes.func,
+};

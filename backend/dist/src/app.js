@@ -1,4 +1,3 @@
-// Temp comment
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -47,3 +46,84 @@ const getActualRequestDurationInMs = (start) => {
     const NS_TO_MS = 1e6;
     const diff = process.hrtime(start);
     return (diff[0] * NS_PER_SEC + diff[1]) / NS_TO_MS;
+};
+const logger = (req, res, next) => {
+    let current_datetime = new Date();
+    let formatted_date = current_datetime.getFullYear() +
+        "-" +
+        (current_datetime.getMonth() + 1) +
+        "-" +
+        current_datetime.getDate() +
+        " " +
+        current_datetime.getHours() +
+        ":" +
+        current_datetime.getMinutes() +
+        ":" +
+        current_datetime.getSeconds();
+    const method = req.method;
+    const url = req.url;
+    const status = -res.statusCode;
+    const start = process.hrtime();
+    const durationInMs = getActualRequestDurationInMs(start);
+    const log = `[${formatted_date}] ${method}:${url} ${status} ${durationInMs.toLocaleString()} ms`;
+    console.log(log);
+    next();
+};
+const app = (0, express_1.default)();
+const port = process.env.PORT || 3001;
+app.use(body_parser_1.default.json());
+app.use(logger);
+app.use(express_1.default.static("uploads"));
+app.use((0, cors_1.default)());
+app.post("/api/upload", upload.single("file"), (req, res) => {
+    const folder = req.body.type || "resumes";
+    if (!ALLOWED_UPLOAD_FOLDERS.includes(folder)) {
+        res.status(400).send({
+            message: "Invalid folder",
+        });
+        return;
+    }
+    if (req.file) {
+        res.json({
+            result: true,
+            file: `/${folder}/${req.file.filename}`,
+        });
+        return;
+    }
+    else {
+        res.json({
+            result: false,
+        });
+    }
+});
+app.get("/health", (req, res) => {
+    res.status(200).send("Ok");
+});
+(0, routing_controllers_1.useExpressServer)(app, {
+    controllers: [path_1.default.join(__dirname + "/controllers/*.ts")],
+    authorizationChecker: (action) => __awaiter(void 0, void 0, void 0, function* () {
+        try {
+            const token = action.request.headers.authorization.split(" ")[1];
+            const data = (0, jwtUtils_1.VerifyJwtToken)(token);
+            if (data && data.email) {
+                const user = yield (0, User_1.findUserByEmail)(data.email);
+                if (user) {
+                    action.request.user = user;
+                    return true;
+                }
+            }
+            return false;
+        }
+        catch (error) {
+            return false;
+        }
+    }),
+    currentUserChecker: (action) => action.request.user,
+});
+app.listen(port, function () {
+    console.log(`App is listening on port ${port} !`);
+});
+// Without the following method Express will not be able to serialize BigInts for responses
+BigInt.prototype.toJSON = function () {
+    return this.toString();
+};

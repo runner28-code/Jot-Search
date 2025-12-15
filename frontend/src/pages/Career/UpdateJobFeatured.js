@@ -53,3 +53,8 @@ export const UpdateJobFeatured = ({ job }) => {
       </div>
     </div>
   )
+}
+
+UpdateJobFeatured.propTypes = {
+  job: PropTypes.object.isRequired
+}

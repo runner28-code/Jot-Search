@@ -158,3 +158,19 @@ function renderTagsOrListItems(dropdownType, choices, handleClick) {
         key={choice.id} />
     )
   }
+}
+
+function renderDropdown(dropdownType, dropdownOpen, choices, currentChosen, handleClick) {
+  const filteredChoices = choices.filter(choice => !currentChosen.includes(choice));
+  const containerStyles = ' flex flex-wrap overflow-y-auto w-full max-h-120 p-2 bg-white rounded-b-2xl left-0 top-full';
+  if (dropdownOpen) {
+    return (
+      <div className='absolute rounded-b-2xl border-x border-b border-midGrey border-solid overflow-auto z-10 '>
+        <div className={containerStyles}>
+          { renderChosen(dropdownType, currentChosen, handleClick) }
+          { renderTagsOrListItems(dropdownType, filteredChoices, handleClick) }
+        </div>
+      </div>
+    )
+  }
+}

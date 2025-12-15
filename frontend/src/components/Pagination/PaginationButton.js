@@ -15,3 +15,13 @@ export const PaginationButton = ({ page, disabled, prefetchFunc, active, setPage
       {children}
     </button>
   );
+}
+
+PaginationButton.propTypes = {
+  page: PropTypes.number.isRequired,
+  disabled: PropTypes.bool,
+  prefetchFunc: PropTypes.func,
+  active: PropTypes.bool,
+  setPage: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired,
+};

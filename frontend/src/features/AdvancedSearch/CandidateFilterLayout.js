@@ -37,7 +37,6 @@ export default function CandidateFilterLayout(props) {
     filterObject,
     handleFilterChange,
     searchTerm,
-// Temp comment
     setSearchTerm,
     handleSearchClick,
     clearFilters,
@@ -108,3 +107,14 @@ export default function CandidateFilterLayout(props) {
       </div>
     </div>
   );
+}
+
+CandidateFilterLayout.propTypes = {
+  defaultFilterObject: PropTypes.object,
+  filterObject: PropTypes.object,
+  handleFilterChange: PropTypes.func,
+  searchTerm: PropTypes.string,
+  setSearchTerm: PropTypes.func,
+  handleSearchClick: PropTypes.func,
+  clearFilters: PropTypes.func,
+};

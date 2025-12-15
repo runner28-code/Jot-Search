@@ -166,3 +166,36 @@ function MobileCard({ data, addressString, employeeString }) {
         data={data} />
     </div>
   )
+}
+
+MobileCard.propTypes = {
+  ...dataShape,
+  addressString: PropTypes.string.isRequired,
+  employeeString: PropTypes.string.isRequired,
+};
+
+function OpenCareers({companyId}) {
+
+  const filtersArr = [
+    {
+      key: 'status',
+      value: ['Active', 'Open']
+    },
+    {
+      key: 'companyId',
+      value: companyId
+    }
+  ];
+  const {total} = useGetJobs({filtersArr});
+
+  return(<>
+    {/* Number of Open Careers */}
+    <div className='w-1/3 flex items-center'>
+      <CareerIcon className='fill-midGrey h-11 w-12 mr-6' />
+      <p className='text-textBlack'>{total} Open Careers</p>
+    </div>
+  </>)
+}
+OpenCareers.propTypes = {
+  companyId: PropTypes.string
+}

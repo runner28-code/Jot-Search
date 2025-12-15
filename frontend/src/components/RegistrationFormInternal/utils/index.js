@@ -99,3 +99,37 @@ export function inputValidation(formObj) {
   }
 
   return newErrors;
+}
+
+export function formatFormObj(formObj, categoriesArray) {
+  const newFormObj = { ...formObj };
+
+  delete newFormObj.verifyPassword;
+
+  newFormObj.firstname = newFormObj.firstName;
+  newFormObj.lastname = newFormObj.lastName;
+  delete newFormObj.firstName;
+  delete newFormObj.lastName;
+  delete newFormObj.terms;
+
+  newFormObj.roles = newFormObj.roles.join(', ');
+
+  newFormObj.skills = newFormObj.skills.join(', ');
+
+  newFormObj.role = 'candidate';
+
+  const categoryObjectFromName = categoriesArray.find(category => category.name === newFormObj.expertise);
+  newFormObj.categoryId = categoryObjectFromName.id;
+  delete newFormObj.expertise;
+
+  for(let [key, value] of Object.entries(experienceMap)) {
+    if ( newFormObj.experience === value ) {
+      newFormObj.experience = experienceMap[key];
+    }
+  }
+
+  if ( newFormObj.linkedin && !newFormObj.resume ) { delete newFormObj.resume; }
+  if ( !newFormObj.linkedin && newFormObj.resume ) { delete newFormObj.linkedin; }
+
+  return newFormObj;
+}

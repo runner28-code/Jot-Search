@@ -7,7 +7,6 @@ import * as ROUTES from '../../routes';
 export default function JobResults({ jobs }) {
   if (jobs.length === 0) {
     return null;
-// Temp comment
   }
 
   return (
@@ -22,3 +21,37 @@ export default function JobResults({ jobs }) {
       })}
     </>
   )
+}
+
+JobResults.propTypes = {
+  jobs: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      title: PropTypes.string,
+    })
+  ).isRequired,
+}
+
+function JobResult({ job }) {
+  job.title = urlDecode(job.title);
+  const toLink = `${ROUTES.careers}/${job.id}`;
+  return (
+    <Link
+      to={toLink} 
+      className='flex w-full my-1'
+    >
+      <CareerIcon className='h-20 w-20 ml-2 mr-6 fill-black70%' />
+      <div className='flex flex-col font-bold'>
+        <p className='font-spaceGrotesk text-royalBlue text-md'>{ job.title }</p>
+        <p className='font-spaceGrotesk text-blue70% text-sm'>{ '{Company Name}' }</p>
+      </div>
+    </Link>
+  )
+}
+
+JobResult.propTypes = {
+  job: PropTypes.shape({
+    id: PropTypes.string,
+    title: PropTypes.string,
+  }).isRequired,
+}

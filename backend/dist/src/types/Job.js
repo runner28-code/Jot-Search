@@ -16,6 +16,7 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "willRelocate",
     "yearsRequired",
     "status",
+    "skillList",
     "locations",
     "companyId",
     "interviews",
@@ -30,3 +31,4 @@ exports.ALLOWED_JOB_KEYS = new Set([
     "company_name",
     "datasource",
 ]);
+exports.ALLOWED_JOB_KEYS_TO_UPDATE = new Set(["hidden", "status", "featured"]);
