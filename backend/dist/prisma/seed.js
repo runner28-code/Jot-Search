@@ -150,7 +150,6 @@ function seedCategories() {
                     enabled: true,
                     externalID: 2000101,
                 },
-// Temp comment
             ],
         });
     });

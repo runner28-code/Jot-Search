@@ -224,7 +224,6 @@ model Company {
 
   externalID String?
 
-  facebookProfileName String?
   fax                 String?
   feeArrangement      Float?
   funding             String?
@@ -712,3 +711,8 @@ model GetroCompany {
   crunchbase_url             String?
   description                String?
   domain                     String?
+  facebook_url               String?
+  founded                    String?
+  id                         String   @id @default(uuid())
+  instagram_url              String?
+  jobs_count                 Int?

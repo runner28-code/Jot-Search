@@ -29,3 +29,4 @@ ADD COLUMN     "notes" JSONB,
 DROP COLUMN "numEmployees",
 ADD COLUMN     "numEmployees" INTEGER,
 DROP COLUMN "owner",
+ADD COLUMN     "owner" JSONB;

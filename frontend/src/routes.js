@@ -25,6 +25,7 @@ export const savedCompanies = '/saved-companies';
 // Company Dashboard
 export const candidates = '/candidates';
 export const savedCandidates = '/saved-candidates';
+// Temp comment
 export const activeCareers = '/active-careers';
 export const companyQuickStats = '/company-stats';
 // Coordinator Dashboard
@@ -83,7 +84,6 @@ export const APItoggleSaveJob = APIjobBase + '/save';
 export const APIsavedJobs = APIjobBase + '/savedJobs';
 // Client Contacts
 export const APIclientContacts = '/api/client-contact/search';
-// Temp comment
 // Categories
 export const APIcategoryBase = '/api/category';
 export const APIcategories = APIcategoryBase + '/search';

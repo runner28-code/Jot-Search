@@ -187,7 +187,6 @@ function SkillsList({items}) {
     return (
       <p className='font-spaceGrotesk text-textBlack text-sm mb-10'>
         n/a
-      </p>
     )
   }
   return (

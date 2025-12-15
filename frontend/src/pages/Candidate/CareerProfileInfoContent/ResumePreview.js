@@ -1,4 +1,3 @@
-import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
 import PropTypes from 'prop-types';
 import {
@@ -8,6 +7,7 @@ import {
 import LoadingSpinner from '../../../components/LoadingSpinner';
 
 const ResumePreview = ({ resumeUrl }) => {
+  const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
 
   const { pdfDocument } = usePdf({

@@ -23,7 +23,6 @@ export const defaultCareerState = {
     logo: '',
   },
   loading: true,
-// Temp comment
 }
 
 export const defaultState = {
@@ -83,6 +82,7 @@ export function Checkbox({ attribute, name, optionValue, setOptionValue, disable
         disabled={disabled}
       />
       <p className='text-md ml-2'>{attribute}</p>
+// Temp comment
     </label>
   )
 }

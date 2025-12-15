@@ -6,7 +6,6 @@ import { useGetCompanies } from '../../../hooks/queries/useGetCompanies';
 import { useGetClientContacts } from '../../../hooks/queries/useGetClientContacts';
 import CompanyContactList from './CompanyContactList';
 
-// Temp comment
 const ITEMS_PER_PAGE = 10;
 
 export default function AddCompanyUser() {
@@ -19,4 +18,3 @@ export default function AddCompanyUser() {
 
   function handleCompanyClick(company) {
     setSelectedCompany(company);
-    setSearch(company.name);

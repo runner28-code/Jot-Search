@@ -210,6 +210,7 @@ function NavSearchBar({ searchTerm, setSearchTerm, placeholder, marginBottom, al
             />
           </div>
         </div>
+      </div>
     </label>
   )
 }

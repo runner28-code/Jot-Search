@@ -210,7 +210,6 @@ export function buildCompanyAddress(companyData) {
     state = locationArr[1];
   }
 
-  /* Return conditions */
   // No Address Provided
   if ( (!city || !state) && !locationString ) {
     return 'N/A';

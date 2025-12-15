@@ -24,6 +24,7 @@ export default function Applications() {
         ...job,
         agoDate: job.appliedDate
       }});
+    const filteredJobsByUnhidden = appliedJobsWithDate.filter(job => !hiddenApplications.includes(job.id));
     setAppliedJobsObject({
       jobs: appliedJobsWithDate,
       filteredJobs: filteredJobsByUnhidden,
@@ -34,6 +35,5 @@ export default function Applications() {
   function handleCheckClick(careerId) {
     if (selectedApplications.includes(careerId)) {
       setSelectedApplications(selectedApplications.filter(id => id !== careerId));
-    } else {
       setSelectedApplications([...selectedApplications, careerId]);
     }

@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import * as ROUTES from './routes';
 import Auth from './Auth';
+import {
   LandingPage,
   SignUp,
   Login,
@@ -42,7 +43,6 @@ function App() {
               path={ROUTES.companies}
               element={<Companies />} />
             <Route
-              path={`${ROUTES.careers}/:id`}
               element={<Career />} />
             <Route
               path={`${ROUTES.apply}/:id`}

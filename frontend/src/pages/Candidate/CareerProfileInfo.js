@@ -43,6 +43,7 @@ function renderEditIcon(candidateData, setEditMode) {
   const isCoordinator = AuthService.getProfile().role === 'coordinator';
   if ( !isProfileOwner && !isCoordinator ) {
     return null;
+  }
   const { width } = useWindowDimensions();
   if( width <= 990 ) {
     return (

@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { startCase } from 'lodash';
 import EditSummaryForm from './EditSummaryForm';
-// Temp comment
 import EditSkillsForm from './EditSkillsForm';
 import EditExpertiseForm from './EditExpertiseForm';
 import EditResumeForm from './EditResumeForm';

@@ -71,6 +71,7 @@ export type Job = {
     description?: string;
     durationWeeks?: string;
     educationDegree?: string;
+    employmentType?: string;
     externalID?: string;
     feeArrangement?: string;
     hoursOfOperation?: string;
@@ -85,7 +86,6 @@ export type Job = {
     location_address1?: string;
     location_address2?: string;
     location_city?: string;
-    location_state?: string;
     location_state_id?: string;
     location_state_name?: string;
     location_zip?: string;

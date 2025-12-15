@@ -6,7 +6,6 @@ import FormInput from '../../components/FormInput';
 import API from '../../services/API';
 import AuthService from '../../services/auth';
 
-export default function Login() {
   const [error, setError] = useState('');
 
   const handleSubmit = async (event) => {
@@ -25,7 +24,6 @@ export default function Login() {
   };
 
   const renderError = () => {
-// Temp comment
     if ( error ) {
       return ( <div className='text-error mb-4'>{error}</div> )
     }

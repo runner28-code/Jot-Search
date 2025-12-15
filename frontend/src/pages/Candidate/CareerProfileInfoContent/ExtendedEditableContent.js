@@ -47,7 +47,6 @@ export default function ExtendedEditableContent({ candidateData, handleCandidate
   }
 
   const handleInputChange = async (event) => {
-// Temp comment
     const { name, value } = event.target;
     if (name === 'avatar' || name === 'resume') {
       const fileToUpload = event.target.files[0];

@@ -48,7 +48,6 @@ CREATE TABLE "Lead" (
     "ownerCorporation" TEXT,
     "pager" TEXT,
     "phone" TEXT,
-    "phone2" TEXT,
     "phone3" TEXT,
     "preferredContact" TEXT,
     "primarySkills" TEXT,

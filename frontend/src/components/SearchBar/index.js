@@ -1,4 +1,3 @@
-// Temp comment
 import PropTypes from 'prop-types';
 import searchWhite from '../../assets/images/search-white.webp';
 

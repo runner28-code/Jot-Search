@@ -57,7 +57,6 @@ export default function CompactCareerCard({ data, active, agoDate, isFavoriteOve
         selectableProps && selectableProps.selectable ?
           <Checkbox
             id={data.id}
-            checked={selectableProps.selected?.includes(data.id)}
             onChange={selectableProps.handleClick}
           />
           : 
@@ -74,7 +73,6 @@ CompactCareerCard.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     city: PropTypes.string,
-// Temp comment
     state: PropTypes.string,
     company: PropTypes.shape({
       name: PropTypes.string,

@@ -254,6 +254,7 @@ const job_filter_exclude_keys = [
     "microbiologist",
     "microbiology",
     "mlt",
+    "mortgage",
     "mt",
     "musician",
     "mutual fund",

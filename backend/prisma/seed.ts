@@ -59,6 +59,7 @@ async function seedJobs() {
       },
     ],
   });
+}
 
 async function seedCandidates() {
   await db.candidate.createMany({

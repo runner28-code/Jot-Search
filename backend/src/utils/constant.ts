@@ -184,7 +184,6 @@ const job_filter_exclude_keys = [
   "hospitalist",
   "house manager",
   "housekeeper",
-  "housekeeping",
   "housing",
   "humanities",
   "hvac",
@@ -451,6 +450,7 @@ const city_filter_include_keys = [
   "Owasso,OK",
   "Remote",
   "Sapulpa,OK",
+  "Tulsa,OK"
 ];
 
 

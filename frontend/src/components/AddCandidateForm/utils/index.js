@@ -6,7 +6,6 @@ export function renderButtonOrLoading(submissionObject, buttonString, buttonStyl
   if ( submissionObject.loading ) {
     return <LoadingSpinner
       height='50'
-      width='50'
     />
   }
   if ( submissionObject.success ) {
@@ -45,6 +44,7 @@ export function inputValidation(formObj) {
   const newErrors = [];
 
   Object.entries(formObj).forEach(([key, value]) => {
+    // If value is empty string or empty array, add to errors
     if (value === '' || (Array.isArray(value) && value.length === 0)) {
       newErrors.push(key);
     }

@@ -136,7 +136,6 @@ export type ClientContact = {
     email?: string;
     email2?: string;
     email3?: string;
-    externalID?: string;
     fax?: string;
     fax2?: string;
     fax3?: string;
@@ -231,6 +230,7 @@ export type Candidate = {
     nameSuffix?: string;
     nickName?: string;
     numCategories?: string;
+    numOwners?: string;
     occupation?: string; // !
     onboardingDocumentReceivedCount?: string;
     onboardingDocumentSentCount?: string;

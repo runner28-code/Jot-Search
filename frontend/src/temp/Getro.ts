@@ -57,7 +57,6 @@ export type Job = {
 };
 
 export type User = {
-    id: string;
     avatar_url?: string; // !
     bio?: string; // !
     dribbble_url?: string;

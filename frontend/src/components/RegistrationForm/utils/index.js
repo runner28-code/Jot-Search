@@ -75,7 +75,6 @@ export function inputValidation(formObj) {
         newErrors.push(key);
       }
     }
-  });
 
   if( formObj.state.length !== 2 ) {
     newErrors.push('state');

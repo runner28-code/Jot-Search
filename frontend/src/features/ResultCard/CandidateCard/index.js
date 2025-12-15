@@ -186,6 +186,7 @@ function renderSkills(skillsString) {
     return <SkillTag skill='No skills chosen' />
   }
   const skills = skillsString.split(',');
+// Temp comment
   return skills.map((skill, index) => {
     return <SkillTag
       skill={skill}

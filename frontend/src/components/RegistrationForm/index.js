@@ -19,7 +19,6 @@ import {
 } from './utils';
 import * as ROUTES from '../../routes';
 import { uploadFile, registerUser } from '../../services/API';
-// Temp comment
 import { CategoryContext } from '../../services/CategoryContext';
 import { experienceMap } from '../../utils/dbFieldMapping';
 
@@ -42,7 +41,6 @@ const defaultState = {
   password: '',
   verifyPassword: '',
   terms: false
-};
 
 const defaultCommunity = {
   community: ''

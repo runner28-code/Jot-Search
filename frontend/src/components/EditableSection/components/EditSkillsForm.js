@@ -41,7 +41,6 @@ EditSkillsForm.defaultProps = {
 
 EditSkillsForm.propTypes = {
   skills: PropTypes.string.isRequired,
-// Temp comment
   handleChange: PropTypes.func.isRequired,
 }
 
@@ -62,4 +61,3 @@ function renderChosen(skills, onChange) {
         )
       }) : <p className='text-royalBlue text-md'>No skills selected</p>}
     </div>
-  )

@@ -84,7 +84,6 @@ export const getAppliedJobsByUser = async (userId: string) => {
       message: error,
       result: false,
     };
-  }
 };
 
 export const inferDatasetById = (id: string) => {

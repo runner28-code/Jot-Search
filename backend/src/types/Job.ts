@@ -6,7 +6,6 @@ export type Job = {
   description?: string;
   address1?: string;
   address2?: string;
-  city?: string;
   state?: string;
   zip?: string;
   country_id?: string;
@@ -51,6 +50,7 @@ export const ALLOWED_JOB_KEYS = new Set<JobKey>([
   "status",
   "skillList",
   "locations",
+  "companyId",
   "interviews",
   "onSite",
   "salary",
